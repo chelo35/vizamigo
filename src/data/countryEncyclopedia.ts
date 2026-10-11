@@ -11,6 +11,7 @@ import { CURATED_EXTRA } from './countryEncyclopediaCuratedExtra';
 import { CURATED_EXTRA_2 } from './countryEncyclopediaCuratedExtra2';
 import { CURATED_EXTRA_3 } from './countryEncyclopediaCuratedExtra3';
 import { COUNTRY_HERITAGE } from './countryEncyclopediaLandmarks';
+import { getCountryVisual } from './countryVisuals';
 
 export interface EncyclopediaPhrase {
   phrase: string;
@@ -1435,20 +1436,21 @@ export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 
   const profile = getRegionalProfile(region, capital, countryName, lang);
   const heritage = COUNTRY_HERITAGE[code];
 
+  const visual = getCountryVisual(code);
   const mustSeePlaces = heritage
     ? (heritage.landmarks[lang] || heritage.landmarks.tr)
     : [
-        `${capital} ${lang === 'de' ? 'Historisches Altstadtzentrum & Hauptboulevard' : lang === 'en' ? 'Historic Old Town & Grand Boulevard' : 'Tarihi Şehir Merkezi & Kordon Boyu'}`,
-        `${countryName} ${lang === 'de' ? 'Nationales Kultur- und Kunstmuseum' : lang === 'en' ? 'National Cultural & Art Museum' : 'Ulusal Tarih ve Sanat Müzesi'}`,
-        `${capital} ${lang === 'de' ? 'Traditionelle Märkte & Kunsthandwerksviertel' : lang === 'en' ? 'Traditional Bazaars & Old Quarters' : 'Geleneksel Çarşıları & Eski Kent Meydanı'}`
+        visual.landmark,
+        `${capital} ${lang === 'de' ? 'Historisches Altstadtzentrum & Hauptboulevard' : lang === 'en' ? 'Historic Old Town & Grand Boulevard' : 'Tarihi Şehir Merkezi & Kent Meydanı'}`,
+        `${countryName} ${lang === 'de' ? 'Nationales Kultur- und Naturerbe' : lang === 'en' ? 'National Cultural & Natural Sanctuary' : 'Ulusal Tarih ve Doğa Parkı'}`
       ];
 
   const famousFigures = heritage
     ? (heritage.figures[lang] || heritage.figures.tr)
     : [
-        `${countryName} ${lang === 'de' ? 'Bedeutende Gründerväter & Denker' : lang === 'en' ? 'Founding Leaders & Thinkers' : 'Kurucu Devlet Adamları ve Düşünürler'}`,
-        `${countryName} ${lang === 'de' ? 'Anerkannte Künstler & Schriftsteller' : lang === 'en' ? 'Acclaimed Artists & Authors' : 'Ünlü Sanatçılar ve Edebiyatçılar'}`,
-        `${countryName} ${lang === 'de' ? 'Internationale Spitzensportler' : lang === 'en' ? 'International Athletes' : 'Milli Sporcular ve Uluslararası Şampiyonlar'}`
+        `${countryName} ${lang === 'de' ? 'Historische Persönlichkeiten & Pioniere' : lang === 'en' ? 'Historical Leaders & Cultural Pioneers' : 'Tarihi Önderleri ve Milli Şahsiyetleri'}`,
+        `${countryName} ${lang === 'de' ? 'Anerkannte Künstler & Kulturschaffende' : lang === 'en' ? 'Acclaimed Artists & Creators' : 'Tanınan Sanatçıları ve Yazarları'}`,
+        `${countryName} ${lang === 'de' ? 'Internationale Spitzensportler' : lang === 'en' ? 'International Athletes' : 'Milli Sporcuları ve Başarı İsimleri'}`
       ];
 
   const strongSectors = heritage ? heritage.sectors : profile.sectors;
@@ -1477,9 +1479,11 @@ export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 
         : lang === 'en'
         ? 'Modest attire covering shoulders and knees is appreciated in sacred spaces.'
         : 'İbadethanelere girerken omuz ve dizlerin örtülü olmasına ve sessizliğe özen gösterilir.',
-      sacredSites: [
-        `${capital} ${lang === 'de' ? 'Historische Hauptkirche / Moschee' : lang === 'en' ? 'Grand Cathedral / Mosque' : 'Ulu Mabedi / Tarihi Katedrali'}`
-      ]
+      sacredSites: heritage?.sacredSites
+        ? (heritage.sacredSites[lang] || heritage.sacredSites.tr)
+        : [
+            `${capital} Tarihi Başkent Mabedi ve Dini Mirası`
+          ]
     },
     language: {
       officialLanguages: `${countryName} ${lang === 'de' ? 'Landessprache. Englisch in Tourismuszentren geläufig.' : lang === 'en' ? 'official language. English understood in hotels and tourism zones.' : 'resmi dili. Turistik noktalarda ve otellerde İngilizce anlaşılabilir.'}`,
@@ -1487,16 +1491,20 @@ export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 
       phrases: profile.phrases
     },
     history: {
-      conciseHistory: lang === 'de'
+      conciseHistory: heritage?.history?.concise
+        ? (heritage.history.concise[lang] || heritage.history.concise.tr)
+        : lang === 'de'
         ? `${countryName} besitzt ein reiches historisches Erbe, geprägt von frühen Epochen, Handelsrouten und der modernen Unabhängigkeit.`
         : lang === 'en'
         ? `${countryName} boasts a rich historical legacy shaped by ancient trade routes, sovereign independence, and dynamic modern development.`
         : `${countryName}, antik ticaret rotaları, bağımsızlık mücadelesi ve modern kalkınmayla şekillenmiş köklü bir tarihe sahiptir.`,
-      milestones: [
-        lang === 'de' ? 'Frühe Zivilisationen und Handelswege' : lang === 'en' ? 'Ancient trade crossroads' : 'İlk yerleşimler ve antik ticaret yolları',
-        lang === 'de' ? 'Nationale Unabhängigkeit' : lang === 'en' ? 'Sovereign independence declaration' : 'Milli bağımsızlığın ilanı',
-        lang === 'de' ? 'Moderne Entwicklung' : lang === 'en' ? 'Modern economic integration' : 'Modern küresel entegrasyon'
-      ]
+      milestones: heritage?.history?.milestones
+        ? (heritage.history.milestones[lang] || heritage.history.milestones.tr)
+        : [
+            `${countryName} Erken Yerleşimleri ve Tarihi Dönüm Noktaları`,
+            `${countryName} Milli Bağımsızlık ve Egemenlik İlanı`,
+            `${countryName} Modern Dönem ve Küresel İş Birlikleri`
+          ]
     },
     gastronomy: {
       famousDishes: profile.dishes,

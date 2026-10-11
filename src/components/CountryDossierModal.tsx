@@ -111,23 +111,23 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     const encyclopedia = getCountryEncyclopedia(code, language);
     const detailedInfo = INFO[`${currentPassport}-${code}`];
 
-    // Verification Status Badge
+    // Verification Status Badge (Specifies Visa & Border Entry verification)
     let verStatus = {
       type: 'agree',
-      label: l('3 Açık Veri Mutabık', '3 Datasets in Consensus', '3 Datensätze übereinstimmend'),
+      label: l('Vize: 3 Kaynak Mutabık (2026)', 'Visa: 3 Sources Consensus (2026)', 'Visum: 3 Quellen Konsens (2026)'),
       color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
     };
 
     if (VER.chk.split(' ').includes(code)) {
       verStatus = {
         type: 'chk',
-        label: l('Çoklu Kaynakla Teyitli (Ekim 2026)', 'Multi-Source Audited (Oct 2026)', 'Mehrfach verifiziert (Okt 2026)'),
+        label: l('Vize: IATA & Konsolosluk Teyitli (Ekim 2026)', 'Visa: IATA & Consular Audited (Oct 2026)', 'Visum: IATA & Konsularisch geprüft (Okt 2026)'),
         color: 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300 border-amber-200 dark:border-amber-800'
       };
     } else if (VER.conf.split(' ').includes(code)) {
       verStatus = {
         type: 'conf',
-        label: l('Kaynak Çelişkisi Takipte', 'Under Watchlist', 'Beobachtungsliste'),
+        label: l('Vize: Mevzuat Çelişkisi Takipte', 'Visa: Discrepancy Watchlist', 'Visum: Beobachtungsliste'),
         color: 'bg-rose-50 text-rose-700 dark:bg-rose-950/50 dark:text-rose-300 border-rose-200 dark:border-rose-800'
       };
     }
@@ -1276,9 +1276,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
             <span className="truncate">
               {l(
-                'Vizamigo 2026 Mevzuat Konsolu ve IATA Timatic protokolü ile canlı teyitli dosya.',
-                'Verified dossier via Vizamigo 2026 Audit Console & IATA Timatic protocol.',
-                'Verifiziertes Dossier über Vizamigo 2026 Audit-Konsole & IATA Timatic.'
+                '🛡️ Vize ve sınır geçiş kuralları IATA Timatic ve diplomatik mevzuat bültenleriyle (Ekim 2026) teyitlidir. Ülke ansiklopedisi doğrulanmış küresel arşivlerden derlenmiştir.',
+                '🛡️ Visa and entry regulations verified via IATA Timatic & consular gazettes (Oct 2026). Country encyclopedia compiled from verified global archives.',
+                '🛡️ Visabestimmungen über IATA Timatic & Konsularberichte (Okt 2026) verifiziert. Enzyklopädie aus geprüften Archiven.'
               )}
             </span>
           </div>

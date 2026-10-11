@@ -684,7 +684,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen')}
                         >
                           <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
-                          <span>{l('✓ 2026 Teyitli', '✓ 2026 Verified', '✓ 2026 Geprüft')}</span>
+                          <span>{l('✓ Vize: 2026 Teyitli', '✓ Visa: 2026 Verified', '✓ Visum: 2026 Geprüft')}</span>
                         </button>
                       </div>
 
