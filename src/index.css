@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-slate-750: #253146;
+  --color-slate-850: #141d2e;
+  --color-nubair-950: #070914;
+  --color-nubair-900: #090c1a;
+  --color-nubair-850: #0e1428;
+  --color-nubair-800: #131a38;
+  --color-nubair-750: #192348;
+  --color-nubair-700: #202e5c;
+  --color-nubair-blue: #38bdf8;
+  --color-nubair-periwinkle: #8e9dbe;
+  --color-luminous-bg: #f8fafc;
+  --color-luminous-obsidian: #0f172a;
+  --color-coral-500: #ff6b6b;
+  --color-coral-600: #fa5252;
+  --color-coral-400: #ff8787;
+  --color-ocean-500: #0284c7;
+  --color-ocean-400: #38bdf8;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #0f172a; /* Deep Charcoal / Obsidian Ink for Light Mode */
+    background-color: #f8fafc;
+  }
+
+  .dark body {
+    color: #ffffff;
+    background-color: #090c1a;
+  }
+
+  /* Editorial Travel Magazine Header Hierarchy */
+  h1, h2, h3, .font-heading {
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+
+  /* Analytical Data & Rule Labels Line-Height & Readability */
+  .data-metric, .rule-label, .analytics-cell, .stat-value {
+    line-height: 1.6;
+    font-weight: 500;
+  }
+}
+
+/* Glassmorphism & Ambient Luxury Utilities (Dual-Theme Tokens: Nubair & Social Media App) */
+.glass-card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.04), 0 2px 8px rgba(15, 23, 42, 0.02);
+}
+
+.dark .glass-card {
+  background: rgba(18, 26, 54, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 40px -10px rgba(5, 9, 24, 0.7);
+}
+
+/* Permanent Left Sidebar Glassmorphism */
+.sidebar-glass {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 4px 0 24px rgba(15, 23, 42, 0.02);
+}
+
+.dark .sidebar-glass {
+  background: rgba(11, 16, 36, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 4px 0 32px rgba(4, 7, 18, 0.6);
+}
+
+/* Top Context Bar Glassmorphism */
+.topbar-glass {
+  background: rgba(248, 250, 252, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.dark .topbar-glass {
+  background: rgba(11, 16, 36, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Dedicated CSS slot properties for 'country-thumbnail-images' on country directory list rows */
+.country-thumbnail-slot {
+  --thumbnail-radius: 1.25rem;
+  --thumbnail-aspect: 4 / 3;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--thumbnail-radius);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  background-color: rgba(15, 23, 42, 0.05);
+  flex-shrink: 0;
+  isolation: isolate;
+  display: block;
+}
+
+.dark .country-thumbnail-slot {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(11, 15, 25, 0.7);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.6);
+}
+
+.country-thumbnail-images,
+.country-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.78) contrast(1.06) saturate(1.08);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s ease;
+  will-change: transform, filter;
+}
+
+.group:hover .country-thumbnail-images,
+.group:hover .country-thumbnail-image {
+  transform: scale(1.08);
+  filter: brightness(0.9) contrast(1.1) saturate(1.18);
+}
+
+.country-thumbnail-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(11, 15, 25, 0.35) 50%, rgba(11, 15, 25, 0.88) 100%);
+  pointer-events: none;
+}
+
+/* 1px semi-transparent overlay border utility */
+.border-glass {
+  border: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.dark .border-glass {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Emergency / Crisis console: dark translucent glass with crimson neon glow or light pastel coral */
+.glass-crisis {
+  background: rgba(254, 242, 242, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(251, 113, 133, 0.25);
+  box-shadow: 0 10px 30px rgba(244, 63, 94, 0.06);
+}
+
+.dark .glass-crisis {
+  background: rgba(159, 18, 57, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.15);
+}
+
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
+}
+
+.dark .glass-panel {
+  background: rgba(15, 22, 46, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 45px -12px rgba(4, 7, 18, 0.8);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.dark .glass-pill {
+  background: rgba(20, 29, 60, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================================
+   Nubair & Social Media App: Button & Pill Harmonies
+   ======================================================== */
+
+/* Primary CTA Button:
+   - Light Mode: High-contrast Solid Obsidian Black pill (Social Media App "Start Exploring")
+   - Dark Mode: Luminous Midnight Sapphire pill with subtle inset highlight (Nubair "Book Now" / "View Itinerary")
+*/
+.btn-nubair-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: -0.01em;
+  background: #0b0f19;
+  color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.14);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-nubair-primary:hover {
+  background: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.22);
+}
+
+.dark .btn-nubair-primary {
+  background: linear-gradient(180deg, #22305e 0%, #172146 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px -4px rgba(10, 16, 40, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.dark .btn-nubair-primary:hover {
+  background: linear-gradient(180deg, #2b3d77 0%, #1d2a57 100%);
+  border-color: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 12px 28px -4px rgba(10, 16, 40, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Secondary Button: Clean frosted pill */
+.btn-nubair-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-nubair-secondary:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #000000;
+}
+
+.dark .btn-nubair-secondary {
+  background: rgba(22, 32, 64, 0.6);
+  color: #9fb0d4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.dark .btn-nubair-secondary:hover {
+  background: rgba(30, 42, 82, 0.85);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* Tab Pills / Filter Chips */
+.tab-chip-active {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+  border: 1px solid transparent;
+}
+
+.dark .tab-chip-active {
+  background: #202e5c;
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(10, 16, 40, 0.5);
+}
+
+.tab-chip-inactive {
+  background: #ffffff;
+  color: #64748b;
+  font-weight: 600;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.tab-chip-inactive:hover {
+  color: #0f172a;
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.dark .tab-chip-inactive {
+  background: rgba(19, 27, 56, 0.6);
+  color: #8e9dbe;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.dark .tab-chip-inactive:hover {
+  background: rgba(26, 38, 77, 0.8);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Glow effects for interactive lifestyle elements */
+.glow-coral {
+  box-shadow: 0 8px 24px -6px rgba(255, 107, 107, 0.35);
+}
+
+.glow-ocean {
+  box-shadow: 0 8px 24px -6px rgba(56, 189, 248, 0.3);
+}
+
+.glow-ambient {
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.12);
+}
+
+.dark .glow-ambient {
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
