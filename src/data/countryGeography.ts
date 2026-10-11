@@ -611,6 +611,26 @@ export const CURATED_GEOGRAPHY: Record<string, CuratedGeographyItem> = {
     timeZone: 'UTC+1 (GMT+1)',
     callingCode: '+212',
     plugTypes: 'C, E (220V, 50Hz)'
+  },
+
+  // İran
+  IR: {
+    majorCities: {
+      tr: ['Tahran', 'İsfahan', 'Şiraz', 'Tebriz', 'Meşhed', 'Yezd', 'Kiş Adası'],
+      en: ['Tehran', 'Isfahan', 'Shiraz', 'Tabriz', 'Mashhad', 'Yazd', 'Kish Island'],
+      de: ['Teheran', 'Isfahan', 'Schiras', 'Täbris', 'Maschhad', 'Jasd', 'Kisch-Insel']
+    },
+    touristRegions: {
+      tr: ['Nakş-ı Cihan Meydanı & Şeyh Lütfullah (İsfahan)', 'Persepolis Antik Kenti & Nakş-ı Rüstem (Şiraz)', 'Nasır el-Mülk Pembe Cami & Hafız Türbesi', 'Gülistan Sarayı & Kapalıçarşı (Tahran)', 'Yezd Tarihi Kerpiç Şehri & Zerdüşt Ateşgahı'],
+      en: ['Naqsh-e Jahan Square & Sheikh Lotfollah (Isfahan)', 'Persepolis Ancient Ruins & Naqsh-e Rustam (Shiraz)', 'Nasir al-Mulk Pink Mosque & Tomb of Hafez', 'Golestan Palace & Grand Bazaar (Tehran)', 'Historic City of Yazd & Zoroastrian Fire Temple'],
+      de: ['Naqsh-e-Dschahan-Platz (Isfahan)', 'Persepolis Ruinen & Naqsh-e Rostam (Schiras)', 'Rosa Moschee & Mausoleum von Hafis', 'Golestan-Palast (Teheran)', 'Altstadt von Yazd & Feuertempel']
+    },
+    currencyCode: 'IRR',
+    currencyName: { tr: 'İran Riyali / Tümen (IRR / Toman)', en: 'Iranian Rial / Toman (IRR)', de: 'Iranischer Rial / Toman (IRR)' },
+    currencySymbol: 'IRR',
+    timeZone: 'UTC+3:30 (IRST)',
+    callingCode: '+98',
+    plugTypes: 'C, F (230V, 50Hz)'
   }
 };
 
@@ -661,7 +681,7 @@ export function getCountryGeography(countryCode: string, lang: 'tr' | 'en' | 'de
 }
 
 // Kapsamlı Küresel Para Birimi, Sembol ve Priz Veri Tabanı
-const GLOBAL_CURRENCIES: Record<string, { code: string; name: { tr: string; en: string; de: string }; symbol: string; callingCode?: string; plug?: string }> = {
+export const GLOBAL_CURRENCIES: Record<string, { code: string; name: { tr: string; en: string; de: string }; symbol: string; callingCode?: string; plug?: string }> = {
   // Eurozone
   AT: { code: 'EUR', name: { tr: 'Euro', en: 'Euro', de: 'Euro' }, symbol: '€', callingCode: '+43', plug: 'C, F' },
   BE: { code: 'EUR', name: { tr: 'Euro', en: 'Euro', de: 'Euro' }, symbol: '€', callingCode: '+32', plug: 'C, E' },
@@ -797,6 +817,93 @@ const GLOBAL_CURRENCIES: Record<string, { code: string; name: { tr: string; en: 
   SC: { code: 'SCR', name: { tr: 'Seyşeller Rupisi', en: 'Seychellois Rupee', de: 'Seychellen-Rupie' }, symbol: 'SR', callingCode: '+248', plug: 'G' },
   TZ: { code: 'TZS', name: { tr: 'Tanzanya Şilini', en: 'Tanzanian Shilling', de: 'Tansania-Schilling' }, symbol: 'TSh', callingCode: '+255', plug: 'D, G' },
   ZA: { code: 'ZAR', name: { tr: 'Güney Afrika Randı', en: 'South African Rand', de: 'Südafrikanischer Rand' }, symbol: 'R', callingCode: '+27', plug: 'C, D, M, N' },
+
+  // Avrupa & Asya Ekleri
+  LI: { code: 'CHF', name: { tr: 'İsviçre Frangı', en: 'Swiss Franc', de: 'Schweizer Franken' }, symbol: 'CHF', callingCode: '+423', plug: 'C, J' },
+  AF: { code: 'AFN', name: { tr: 'Afgan Afganisi', en: 'Afghan Afghani', de: 'Afghani' }, symbol: '؋', callingCode: '+93', plug: 'C, F' },
+  KP: { code: 'KPW', name: { tr: 'Kuzey Kore Wonu', en: 'North Korean Won', de: 'Nordkoreanischer Won' }, symbol: '₩', callingCode: '+850', plug: 'C' },
+  TL: { code: 'USD', name: { tr: 'Amerikan Doları', en: 'US Dollar', de: 'US-Dollar' }, symbol: '$', callingCode: '+670', plug: 'C, E, F, I' },
+  PS: { code: 'ILS', name: { tr: 'İsrail Şekeli / Ürdün Dinarı', en: 'Israeli Shekel / JOD', de: 'Israelischer Schekel' }, symbol: '₪', callingCode: '+970', plug: 'C, H' },
+  SY: { code: 'SYP', name: { tr: 'Suriye Lirası', en: 'Syrian Pound', de: 'Syrisches Pfund' }, symbol: 'LS', callingCode: '+963', plug: 'C, E, L' },
+  YE: { code: 'YER', name: { tr: 'Yemen Riyali', en: 'Yemeni Rial', de: 'Jemen-Rial' }, symbol: '﷼', callingCode: '+967', plug: 'A, D, G' },
+
+  // Afrika Ekleri
+  AO: { code: 'AOA', name: { tr: 'Angola Kwanzası', en: 'Angolan Kwanza', de: 'Kwanza' }, symbol: 'Kz', callingCode: '+244', plug: 'C' },
+  BF: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+226', plug: 'C, E' },
+  BI: { code: 'BIF', name: { tr: 'Burundi Frangı', en: 'Burundian Franc', de: 'Burundi-Franc' }, symbol: 'FBu', callingCode: '+257', plug: 'C, E' },
+  BJ: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+229', plug: 'C, E' },
+  BW: { code: 'BWP', name: { tr: 'Botsvana Pulası', en: 'Botswana Pula', de: 'Botswanischer Pula' }, symbol: 'P', callingCode: '+267', plug: 'D, G' },
+  CD: { code: 'CDF', name: { tr: 'Kongo Frangı', en: 'Congolese Franc', de: 'Kongo-Franc' }, symbol: 'FC', callingCode: '+243', plug: 'C, D, E' },
+  CF: { code: 'XAF', name: { tr: 'Orta Afrika CFA Frangı', en: 'Central African CFA Franc', de: 'CFA-Franc BEAC' }, symbol: 'FCFA', callingCode: '+236', plug: 'C, E' },
+  CG: { code: 'XAF', name: { tr: 'Orta Afrika CFA Frangı', en: 'Central African CFA Franc', de: 'CFA-Franc BEAC' }, symbol: 'FCFA', callingCode: '+242', plug: 'C, E' },
+  CI: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+225', plug: 'C, E' },
+  CM: { code: 'XAF', name: { tr: 'Orta Afrika CFA Frangı', en: 'Central African CFA Franc', de: 'CFA-Franc BEAC' }, symbol: 'FCFA', callingCode: '+237', plug: 'C, E' },
+  CV: { code: 'CVE', name: { tr: 'Yeşil Burun Esküdosu', en: 'Cape Verdean Escudo', de: 'Kap-Verde-Escudo' }, symbol: 'Esc', callingCode: '+238', plug: 'C, F' },
+  DJ: { code: 'DJF', name: { tr: 'Cibuti Frangı', en: 'Djiboutian Franc', de: 'Dschibuti-Franc' }, symbol: 'Fdj', callingCode: '+253', plug: 'C, E' },
+  ER: { code: 'ERN', name: { tr: 'Eritre Nakfası', en: 'Eritrean Nakfa', de: 'Eritreischer Nakfa' }, symbol: 'Nfk', callingCode: '+291', plug: 'C, L' },
+  GA: { code: 'XAF', name: { tr: 'Orta Afrika CFA Frangı', en: 'Central African CFA Franc', de: 'CFA-Franc BEAC' }, symbol: 'FCFA', callingCode: '+241', plug: 'C' },
+  GM: { code: 'GMD', name: { tr: 'Gambiya Dalasisi', en: 'Gambian Dalasi', de: 'Dalasi' }, symbol: 'D', callingCode: '+220', plug: 'G' },
+  GN: { code: 'GNF', name: { tr: 'Gine Frangı', en: 'Guinean Franc', de: 'Guinea-Franc' }, symbol: 'FG', callingCode: '+224', plug: 'C, F, K' },
+  GQ: { code: 'XAF', name: { tr: 'Orta Afrika CFA Frangı', en: 'Central African CFA Franc', de: 'CFA-Franc BEAC' }, symbol: 'FCFA', callingCode: '+240', plug: 'C, E' },
+  GW: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+245', plug: 'C' },
+  KM: { code: 'KMF', name: { tr: 'Komor Frangı', en: 'Comorian Franc', de: 'Komoren-Franc' }, symbol: 'CF', callingCode: '+269', plug: 'C, E' },
+  LR: { code: 'LRD', name: { tr: 'Liberya Doları', en: 'Liberian Dollar', de: 'Liberianischer Dollar' }, symbol: 'L$', callingCode: '+231', plug: 'A, B' },
+  LS: { code: 'LSL', name: { tr: 'Lesotho Lotisi / ZAR', en: 'Lesotho Loti / ZAR', de: 'Lesothischer Loti' }, symbol: 'L', callingCode: '+266', plug: 'M' },
+  MG: { code: 'MGA', name: { tr: 'Madagaskar Ariarisi', en: 'Malagasy Ariary', de: 'Ariary' }, symbol: 'Ar', callingCode: '+261', plug: 'C, D, E, J, K' },
+  ML: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+223', plug: 'C, E' },
+  MR: { code: 'MRU', name: { tr: 'Moritanya Ouguiyası', en: 'Mauritanian Ouguiya', de: 'Ouguiya' }, symbol: 'UM', callingCode: '+222', plug: 'C' },
+  MW: { code: 'MWK', name: { tr: 'Malavi Kvaçası', en: 'Malawian Kwacha', de: 'Malawi-Kwacha' }, symbol: 'MK', callingCode: '+265', plug: 'G' },
+  MZ: { code: 'MZN', name: { tr: 'Mozambik Metikali', en: 'Mozambican Metical', de: 'Metical' }, symbol: 'MT', callingCode: '+258', plug: 'C, F, M' },
+  NA: { code: 'NAD', name: { tr: 'Namibya Doları / ZAR', en: 'Namibian Dollar / ZAR', de: 'Namibia-Dollar' }, symbol: 'N$', callingCode: '+264', plug: 'D, M' },
+  NE: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+227', plug: 'A, B, C, D, E, F' },
+  SD: { code: 'SDG', name: { tr: 'Sudan Lirası', en: 'Sudanese Pound', de: 'Sudanesisches Pfund' }, symbol: 'SDG', callingCode: '+249', plug: 'C, D' },
+  SL: { code: 'SLE', name: { tr: 'Sierra Leone Leonesi', en: 'Sierra Leonean Leone', de: 'Leone' }, symbol: 'Le', callingCode: '+232', plug: 'D, G' },
+  SN: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+221', plug: 'C, D, E, K' },
+  SO: { code: 'SOS', name: { tr: 'Somali Şilini', en: 'Somali Shilling', de: 'Somalia-Schilling' }, symbol: 'Sh.So.', callingCode: '+252', plug: 'C' },
+  SS: { code: 'SSP', name: { tr: 'Güney Sudan Lirası', en: 'South Sudanese Pound', de: 'Südsudanesisches Pfund' }, symbol: 'SS£', callingCode: '+211', plug: 'C, D' },
+  ST: { code: 'STN', name: { tr: 'São Tomé Dobrası', en: 'São Tomé Dobra', de: 'Dobra' }, symbol: 'Db', callingCode: '+239', plug: 'C, F' },
+  SZ: { code: 'SZL', name: { tr: 'Esvatini Lilangenisi / ZAR', en: 'Swazi Lilangeni / ZAR', de: 'Lilangeni' }, symbol: 'E', callingCode: '+268', plug: 'M' },
+  TD: { code: 'XAF', name: { tr: 'Orta Afrika CFA Frangı', en: 'Central African CFA Franc', de: 'CFA-Franc BEAC' }, symbol: 'FCFA', callingCode: '+235', plug: 'C, D, E, F' },
+  TG: { code: 'XOF', name: { tr: 'Batı Afrika CFA Frangı', en: 'West African CFA Franc', de: 'CFA-Franc' }, symbol: 'CFA', callingCode: '+228', plug: 'C' },
+  UG: { code: 'UGX', name: { tr: 'Uganda Şilini', en: 'Ugandan Shilling', de: 'Uganda-Schilling' }, symbol: 'USh', callingCode: '+256', plug: 'G' },
+  ZM: { code: 'ZMW', name: { tr: 'Zambiya Kvaçası', en: 'Zambian Kwacha', de: 'Sambischer Kwacha' }, symbol: 'ZK', callingCode: '+260', plug: 'C, D, G' },
+  ZW: { code: 'USD', name: { tr: 'Amerikan Doları / ZiG', en: 'US Dollar / ZiG', de: 'US-Dollar / ZiG' }, symbol: '$', callingCode: '+263', plug: 'D, G' },
+
+  // Karayipler & Orta Amerika Ekleri
+  AG: { code: 'XCD', name: { tr: 'Doğu Karayip Doları', en: 'East Caribbean Dollar', de: 'Ostkaribischer Dollar' }, symbol: 'EC$', callingCode: '+1-268', plug: 'A, B' },
+  BB: { code: 'BBD', name: { tr: 'Barbados Doları', en: 'Barbadian Dollar', de: 'Barbados-Dollar' }, symbol: 'Bds$', callingCode: '+1-246', plug: 'A, B' },
+  BS: { code: 'BSD', name: { tr: 'Bahama Doları', en: 'Bahamian Dollar', de: 'Bahama-Dollar' }, symbol: 'B$', callingCode: '+1-242', plug: 'A, B' },
+  BZ: { code: 'BZD', name: { tr: 'Belize Doları', en: 'Belize Dollar', de: 'Belize-Dollar' }, symbol: 'BZ$', callingCode: '+501', plug: 'A, B, G' },
+  DM: { code: 'XCD', name: { tr: 'Doğu Karayip Doları', en: 'East Caribbean Dollar', de: 'Ostkaribischer Dollar' }, symbol: 'EC$', callingCode: '+1-767', plug: 'D, G' },
+  GD: { code: 'XCD', name: { tr: 'Doğu Karayip Doları', en: 'East Caribbean Dollar', de: 'Ostkaribischer Dollar' }, symbol: 'EC$', callingCode: '+1-473', plug: 'G' },
+  HN: { code: 'HNL', name: { tr: 'Honduras Lempirası', en: 'Honduran Lempira', de: 'Lempira' }, symbol: 'L', callingCode: '+504', plug: 'A, B' },
+  HT: { code: 'HTG', name: { tr: 'Haiti Gurdu / USD', en: 'Haitian Gourde / USD', de: 'Gourde' }, symbol: 'G', callingCode: '+509', plug: 'A, B' },
+  JM: { code: 'JMD', name: { tr: 'Jamaika Doları', en: 'Jamaican Dollar', de: 'Jamaika-Dollar' }, symbol: 'J$', callingCode: '+1-876', plug: 'A, B' },
+  KN: { code: 'XCD', name: { tr: 'Doğu Karayip Doları', en: 'East Caribbean Dollar', de: 'Ostkaribischer Dollar' }, symbol: 'EC$', callingCode: '+1-869', plug: 'A, B, D, G' },
+  LC: { code: 'XCD', name: { tr: 'Doğu Karayip Doları', en: 'East Caribbean Dollar', de: 'Ostkaribischer Dollar' }, symbol: 'EC$', callingCode: '+1-758', plug: 'G' },
+  NI: { code: 'NIO', name: { tr: 'Nikaragua Kordobası', en: 'Nicaraguan Córdoba', de: 'Córdoba Oro' }, symbol: 'C$', callingCode: '+505', plug: 'A, B' },
+  SV: { code: 'USD', name: { tr: 'Amerikan Doları / Bitcoin', en: 'US Dollar / Bitcoin', de: 'US-Dollar' }, symbol: '$', callingCode: '+503', plug: 'A, B' },
+  TT: { code: 'TTD', name: { tr: 'Trinidad ve Tobago Doları', en: 'Trinidad and Tobago Dollar', de: 'Trinidad-und-Tobago-Dollar' }, symbol: 'TT$', callingCode: '+1-868', plug: 'A, B' },
+  VC: { code: 'XCD', name: { tr: 'Doğu Karayip Doları', en: 'East Caribbean Dollar', de: 'Ostkaribischer Dollar' }, symbol: 'EC$', callingCode: '+1-784', plug: 'A, B, G' },
+
+  // Güney Amerika Ekleri
+  GY: { code: 'GYD', name: { tr: 'Guyana Doları', en: 'Guyanese Dollar', de: 'Guyana-Dollar' }, symbol: 'G$', callingCode: '+592', plug: 'A, B, D, G' },
+  SR: { code: 'SRD', name: { tr: 'Surinam Doları', en: 'Surinamese Dollar', de: 'Suriname-Dollar' }, symbol: 'Sr$', callingCode: '+597', plug: 'A, B, C, F' },
+  VE: { code: 'VES', name: { tr: 'Venezuela Bolivarı / USD', en: 'Venezuelan Bolívar / USD', de: 'Bolívar Soberano' }, symbol: 'Bs.', callingCode: '+58', plug: 'A, B' },
+
+  // Okyanusya Ekleri
+  FJ: { code: 'FJD', name: { tr: 'Fiji Doları', en: 'Fijian Dollar', de: 'Fidschi-Dollar' }, symbol: 'FJ$', callingCode: '+679', plug: 'I' },
+  FM: { code: 'USD', name: { tr: 'Amerikan Doları', en: 'US Dollar', de: 'US-Dollar' }, symbol: '$', callingCode: '+691', plug: 'A, B' },
+  KI: { code: 'AUD', name: { tr: 'Avustralya Doları', en: 'Australian Dollar', de: 'Australischer Dollar' }, symbol: 'A$', callingCode: '+686', plug: 'I' },
+  MH: { code: 'USD', name: { tr: 'Amerikan Doları', en: 'US Dollar', de: 'US-Dollar' }, symbol: '$', callingCode: '+692', plug: 'A, B' },
+  NR: { code: 'AUD', name: { tr: 'Avustralya Doları', en: 'Australian Dollar', de: 'Australischer Dollar' }, symbol: 'A$', callingCode: '+674', plug: 'I' },
+  PG: { code: 'PGK', name: { tr: 'Papua Yeni Gine Kinası', en: 'Papua New Guinean Kina', de: 'Kina' }, symbol: 'K', callingCode: '+675', plug: 'I' },
+  PW: { code: 'USD', name: { tr: 'Amerikan Doları', en: 'US Dollar', de: 'US-Dollar' }, symbol: '$', callingCode: '+680', plug: 'A, B' },
+  SB: { code: 'SBD', name: { tr: 'Solomon Adaları Doları', en: 'Solomon Islands Dollar', de: 'Salomonen-Dollar' }, symbol: 'SI$', callingCode: '+677', plug: 'I, G' },
+  TO: { code: 'TOP', name: { tr: 'Tonga Paʻangası', en: 'Tongan Paʻanga', de: 'Paʻanga' }, symbol: 'T$', callingCode: '+676', plug: 'I' },
+  TV: { code: 'AUD', name: { tr: 'Avustralya Doları', en: 'Australian Dollar', de: 'Australischer Dollar' }, symbol: 'A$', callingCode: '+688', plug: 'I' },
+  VU: { code: 'VUV', name: { tr: 'Vanuatu Vatusu', en: 'Vanuatu Vatu', de: 'Vatu' }, symbol: 'VT', callingCode: '+678', plug: 'I' },
+  WS: { code: 'WST', name: { tr: 'Samoa Tâlası', en: 'Samoan Tālā', de: 'Tala' }, symbol: 'WS$', callingCode: '+685', plug: 'I' }
 };
 
 function getRegionalGeographyDefaults(code: string, capital: string, countryName: string, lang: 'tr' | 'en' | 'de') {

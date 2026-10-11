@@ -734,5 +734,316 @@ export const CURATED_EXTRA_3: Record<string, CuratedEntry> = {
         de: 'Traditionell nicht üblich, aber 20-50 THB Trinkgeld in Restaurants wird gern gesehen.'
       }
     }
+  },
+
+  // İran (Persia)
+  IR: {
+    culture: {
+      etiquette: {
+        tr: [
+          'Taarof geleneği: İranlılar nezaketen ödemeyi veya ikramı ilk teklifte geri çevirebilir; her zaman en az iki-üç kez ödemede ısrar edin.',
+          'Evlere ve kutsal türbelere girerken ayakkabılar kesinlikle çıkarılır.',
+          'Kamuya açık alanlarda kılık kıyafet kurallarına (kadınlar için başörtüsü/şal ve dökümlü giysiler, erkekler için uzun pantolon) uyulur.',
+          'Fotoğraf çekerken devlet daireleri, askeri bölgeler ve köprülerden kesinlikle uzak durulmalıdır.'
+        ],
+        en: [
+          'The art of Taarof: Locals politely refuse payments or gifts initially; always insist at least two to three times.',
+          'Shoes must always be removed before entering private homes and religious shrines.',
+          'Dress modestly in public spaces (headscarves/tunics for women, long trousers for men).',
+          'Never photograph government buildings, military sites, or infrastructure bridges.'
+        ],
+        de: [
+          'Das Ritual des Taarof: Höfliches anfängliches Ablehnen von Bezahlung ist Tradition; bestehen Sie mehrmals darauf.',
+          'Schuhe vor dem Betreten von Wohnungen und Heiligtümern stets ausziehen.',
+          'Respektieren Sie die Kleiderordnung in der Öffentlichkeit.',
+          'Fotografieren von Regierungsgebäuden und militärischen Anlagen ist streng verboten.'
+        ]
+      },
+      festivals: {
+        tr: [
+          'Nevruz (21 Mart - Fars Yeni Yılı ve Bahar Bayramı)',
+          'Şeb-i Yelda (Kış Ekinoksu - Nar, karpuz ve Hafız şiirleriyle kutlanan en uzun gece)',
+          'Çehârşenbe Sûrî (Yeni yıl öncesi son çarşamba ateş üzerinden atlama festivali)',
+          'Aşure ve Tasua (Muharrem anma törenleri ve geleneksel taziye tiyatrosu)'
+        ],
+        en: [
+          'Nowruz (March 21 - Persian New Year and Spring Equinox)',
+          'Shab-e Yalda (Winter Solstice - longest night celebrated with pomegranates & Hafez poetry)',
+          'Chaharshanbe Suri (Festival of Fire jumping prior to Nowruz)',
+          'Tasu\'a and Ashura (Sacred commemorations and Ta\'ziyeh theatrical traditions)'
+        ],
+        de: [
+          'Nouruz (21. März - Persisches Neujahrsfest)',
+          'Schab-e Yalda (Wintersonnenwende mit Granatäpfeln und Hafis-Gedichten)',
+          'Tschahar Schanbeh Suri (Feuerfest vor Nouruz)',
+          'Aschura & Trauerzeremonien'
+        ]
+      },
+      lifestyle: {
+        tr: 'İran toplumu dünyanın en sıcak ve misafirperver halklarındandır. Akşamları serinlikte parklarda aile boyu piknik yapmak, çayhanelerde nane çayı ve nargile eşliğinde sohbet etmek, Hafız ve Sadi şiirleri okumak günlük yaşamın ruhunu oluşturur.',
+        en: 'Iranian society is renowned for supreme hospitality. Evening picnics in public gardens, sipping saffron tea at historic teahouses, and reciting classical Persian poetry define the cultural spirit.',
+        de: 'Die iranische Gesellschaft zeichnet sich durch herzliche Gastfreundschaft aus. Familienpicknicks in Parks, Gespräche bei Safran-Tee und die Liebe zur klassischen Dichtung prägen den Alltag.'
+      }
+    },
+    tourism: {
+      mustSeePlaces: {
+        tr: [
+          'Persepolis & Nakş-ı Rüstem Antik Kaya Mezarları (Şiraz - Ahameniş Başkenti)',
+          'Nakş-ı Cihan Meydanı, Şeyh Lütfullah Camii & Ali Kapu Sarayı (İsfahan - UNESCO)',
+          'Nasır el-Mülk Pembe Camii & Hafız Türbesi (Şiraz)',
+          'Gülistan Sarayı & Tahran Kapalıçarşısı (Tahran)',
+          'Yezd Tarihi Kerpiç Şehri, Sessizlik Kuleleri & Zerdüşt Ateşgahı',
+          'Tebriz Tarihi Kapalı Çarşısı (UNESCO - Dünyanın en büyük kubbeli çarşı kompleksi)'
+        ],
+        en: [
+          'Persepolis Ruins & Naqsh-e Rustam Imperial Tombs (Shiraz - Achaemenid Capital)',
+          'Naqsh-e Jahan Square, Sheikh Lotfollah Mosque & Ali Qapu Palace (Isfahan - UNESCO)',
+          'Nasir al-Mulk Pink Mosque & Tomb of Hafez (Shiraz)',
+          'Golestan Palace & Grand Bazaar (Tehran)',
+          'Historic Mud-brick City of Yazd & Zoroastrian Fire Temple',
+          'Tabriz Historic Bazaar Complex (UNESCO)'
+        ],
+        de: [
+          'Persepolis & Felsengräber von Naqsh-e Rostam (Schiras)',
+          'Naqsh-e-Dschahan-Platz, Scheich-Lotfollah-Moschee & Ali Qapu (Isfahan)',
+          'Rosa Moschee & Mausoleum von Hafis (Schiras)',
+          'Golestan-Palast & Großer Basar (Teheran)',
+          'Lehmziegel-Altstadt von Yazd & Feuertempel',
+          'Historischer Basar von Täbris (UNESCO)'
+        ]
+      },
+      bestSeasons: {
+        tr: 'Mart - Mayıs (İlkbahar çiçekleri ve ılıman hava) ile Eylül - Kasım (Altın sonbahar) seyahat için en ideal dönemlerdir.',
+        en: 'March - May (Spring blossoms and pleasant weather) and September - November (Golden autumn) are the premier seasons.',
+        de: 'März bis Mai (Frühling) und September bis November (Herbst) bieten perfekte Reisebedingungen.'
+      },
+      travelStyleTip: {
+        tr: 'Tahran\'a indikten sonra İsfahan, Şiraz ve Yezd arasına uzanan "Klasik Kültür Rotası"nı konforlu VIP ekspres otobüsler veya tren hatlarıyla keşfedin.',
+        en: 'Follow the legendary cultural route linking Tehran, Isfahan, Yazd, and Shiraz using comfortable VIP sleeper coaches or trains.',
+        de: 'Bereisen Sie die klassische Kulturachse Teheran – Isfahan – Jasd – Schiras mit bequemen VIP-Bussen oder Zügen.'
+      }
+    },
+    religion: {
+      primaryReligions: {
+        tr: '%98 Müslüman (Ağırlıklı Şii İslam, %5-10 Sünni). Zerdüştlük, Ermeni Hristiyanlığı ve Musevilik anayasa güvencesindeki tarihi inanç topluluklarıdır.',
+        en: '98% Muslim (Predominantly Shia, 5-10% Sunni). Zoroastrianism, Armenian Christianity, and Judaism are officially protected ancient faiths.',
+        de: '98% Muslime (überwiegend Schiiten, 5-10% Sunniten). Parsen (Zoroastrier), armenische Christen und Juden bilden anerkannte Gemeinschaften.'
+      },
+      respectNorms: {
+        tr: 'Kutsal türbelerde (İmam Rıza Meşhed, Şah Çerağ Şiraz) kadınların çador giymesi zorunludur (girişte ücretsiz temin edilir). Ülke genelinde omuz ve bacakları örten kıyafetler giyilir.',
+        en: 'Women must wear a chador when entering major holy shrines (provided complimentary at entrances). Modest attire covering shoulders and legs is required nationwide.',
+        de: 'Beim Betreten heiliger Schreine tragen Frauen einen Tschador (am Eingang kostenlos bereitgestellt). Landesweit gilt dezente Kleidung.'
+      },
+      sacredSites: {
+        tr: [
+          'İmam Rıza Türbesi Kompleksi (Meşhed - Dünyanın en büyük cami kompleksi)',
+          'Şah Çerağ Türbesi (Şiraz - Göz alıcı aynalı tavan mozaiği)',
+          'Yezd Zerdüşt Ateşgahı (1.500 yıldır aralıksız yanan kutsal Zerdüşt ateşi)',
+          'Vank Katedrali (İsfahan - Yeni Culfa Ermeni Mahallesi)'
+        ],
+        en: [
+          'Imam Reza Shrine Complex (Mashhad - Largest mosque complex in the world)',
+          'Shah Cheragh Shrine (Shiraz - Dazzling mirror mosaics)',
+          'Yazd Zoroastrian Atash Behram (Sacred fire burning continuously since 470 AD)',
+          'Vank Cathedral (Isfahan - New Julfa Armenian Quarter)'
+        ],
+        de: [
+          'Imam-Reza-Schrein-Komplex (Maschhad)',
+          'Schah-Tscheragh-Heiligtum (Schiras)',
+          'Zoroastrischer Feuertempel von Yazd',
+          'Vank-Kathedrale (Isfahan)'
+        ]
+      }
+    },
+    language: {
+      officialLanguages: {
+        tr: 'Farsça (Resmi dil). Azerbaycan Türkçesi, Kürtçe, Gilaki ve Lurca yaygın olarak konuşulur. Turistik otellerde ve genç nüfusta İngilizce bilinir.',
+        en: 'Persian / Farsi (Official). Azerbaijani Turkish, Kurdish, and Gilaki are widely spoken. English is spoken by youth and hospitality staff.',
+        de: 'Persisch / Farsi (Amtssprache). Aserbaidschanisch, Kurdisch und Gilaki weit verbreitet. Englisch im Tourismussektor geläufig.'
+      },
+      englishProficiency: {
+        tr: 'Üniversite mezunları ve turistik esnaf arasında İngilizce iyi düzeydedir; Tebriz ve kuzeybatı genelinde Türkçe anadil gibi konuşulur.',
+        en: 'Good among academics, tour guides, and boutique hotels. Turkish is fluently spoken in Tabriz and the northwestern provinces.',
+        de: 'Gut bei jüngeren Generationen und Reiseleitern. In Täbris wird fließend Aserbaidschanisch/Türkisch gesprochen.'
+      },
+      phrases: [
+        { phrase: 'Salām (سلام)', meaningTr: 'Merhaba / Esenlikler', meaningEn: 'Hello / Peace', meaningDe: 'Hallo / Frieden', pronunciation: 'sa-lam' },
+        { phrase: 'Kheylī mamnūn (خیلی ممنون)', meaningTr: 'Çok teşekkür ederim', meaningEn: 'Thank you very much', meaningDe: 'Vielen Dank', pronunciation: 'hey-li mam-nun' },
+        { phrase: 'Khāhesh mikonam (خواهش می‌کنم)', meaningTr: 'Rica ederim', meaningEn: 'You are welcome', meaningDe: 'Bitte schön', pronunciation: 'ha-hesh mi-ko-nam' },
+        { phrase: 'Bebakhshīd (ببخشید)', meaningTr: 'Affedersiniz / Özür dilerim', meaningEn: 'Excuse me / Sorry', meaningDe: 'Entschuldigung', pronunciation: 'be-bah-shid' },
+        { phrase: 'Chetorī? (چطوری؟)', meaningTr: 'Nasılsın?', meaningEn: 'How are you?', meaningDe: 'Wie geht es dir?', pronunciation: 'che-to-ri' },
+        { phrase: 'Khodāhāfez (خداحافظ)', meaningTr: 'Hoşça kal / Allah\'a emanet ol', meaningEn: 'Goodbye', meaningDe: 'Auf Wiedersehen', pronunciation: 'ho-da-ha-fez' },
+        { phrase: 'Gheymat-e in chandeh? (قیمت این چنده؟)', meaningTr: 'Bunun fiyatı ne kadar?', meaningEn: 'How much is this?', meaningDe: 'Wie viel kostet das?', pronunciation: 'ghey-mat-e in chan-deh' }
+      ]
+    },
+    history: {
+      conciseHistory: {
+        tr: 'İran (Persia), 2.500 yılı aşkın kesintisiz tarihiyle dünya medeniyetinin temel taşlarındandır. M.Ö. 550\'de Büyük Kiros\'un tarihteki ilk insan hakları bildirgesi sayılan Kiros Silindiri ile kurduğu Ahameniş İmparatorluğu\'ndan Sasani dönemine, İslam Altın Çağı\'ndaki tıp ve matematik devriminden Safevilerin İsfahan\'daki muhteşem mimari rönesansına kadar uzanan eşsiz bir mirasa sahiptir.',
+        en: 'Iran (Persia) is one of the foundational cradles of human civilization. From Cyrus the Great founding the Achaemenid Empire in 550 BC with the Cyrus Cylinder (the first charter of human rights), through the Golden Age of science and philosophy to the Safavid architectural glory of Isfahan, Persia shaped world history.',
+        de: 'Iran (Persien) zählt zu den ältesten Hochkulturen der Menschheit. Von Kyros dem Großen und dem Achämenidenreich 550 v. Chr. mit dem Kyros-Zylinder über das wissenschaftliche Goldene Zeitalter bis zur Safawiden-Blütezeit in Isfahan prägte Persien die Weltgeschichte.'
+      },
+      milestones: {
+        tr: [
+          'M.Ö. 550: Büyük Kiros tarafından Ahameniş Pers İmparatorluğu\'nun kuruluşu ve Persepolis\'in inşası.',
+          'M.Ö. 330: Büyük İskender seferi; ardından Partlar ve Sasani İmparatorluğu dönemi.',
+          '8.-11. Yüzyıl: İslam Altın Çağı ve Fars Bilim Rönesansı (İbn-i Sina, Harizmi, Ömer Hayyam, Firdevsi).',
+          '1501: Safevi Hanedanı ve İsfahan\'ın başkent oluşu ("İsfahan Dünyanın Yarısıdır").',
+          '1979: İran İslam Devrimi ve modern cumhuriyet dönemi.'
+        ],
+        en: [
+          '550 BC: Cyrus the Great founds the Achaemenid Empire; Persepolis is constructed.',
+          '330 BC - 651 AD: Hellenistic, Parthian, and Sasanian imperial dynasties.',
+          '8th–11th Century: Golden Age of Science & Literature (Avicenna, Al-Khwarizmi, Omar Khayyam, Ferdowsi).',
+          '1501: Safavid Dynasty establishes Isfahan as cultural metropolis ("Isfahan is half the world").',
+          '1979: Iranian Revolution and modern sovereign republic.'
+        ],
+        de: [
+          '550 v. Chr.: Kyros der Große gründet das Achämenidenreich; Bau von Persepolis.',
+          '8.–11. Jahrhundert: Goldenes Zeitalter der persischen Wissenschaften (Avicenna, Al-Chwarizmi, Omar Chajjam).',
+          '1501: Safawiden-Dynastie und Aufstieg Isfahans zur Kulturmetropole.',
+          '1979: Islamische Revolution im Iran.'
+        ]
+      }
+    },
+    gastronomy: {
+      famousDishes: {
+        tr: [
+          'Çelo Kebap Kubideh (Safranlı basmati pirinci ve tereyağı eşliğinde zırh kıyması kebabı)',
+          'Ghormeh Sabzi (Kurutulmuş limon, taze yeşillikler, barbunya ve kuzu etiyle pişen milli güveç)',
+          'Fesenjan (Nar ekşisi ve öğütülmüş ceviz sosunda ağır ateşte pişen tavuk güveci)',
+          'Zereşk Polo ba Morgh (Kırmızı berberis ekşisi ve safranlı pilav ile pişen fırın tavuk)',
+          'Tahchin (Yoğurt, safran ve yumurta sarısıyla fırınlanan kıtır pirinç keki)'
+        ],
+        en: [
+          'Chelo Kabab Koobideh (Minced lamb kebab over saffron basmati rice with sumac & butter)',
+          'Ghormeh Sabzi (Herb, red kidney bean and dried black lime slow-cooked stew)',
+          'Fesenjan (Rich pomegranate molasses and crushed walnut stew with chicken)',
+          'Zereshk Polo ba Morgh (Jewelled barberry and saffron rice with braised chicken)',
+          'Tahchin (Crispy saffron and yogurt baked layered rice cake)'
+        ],
+        de: [
+          'Chelo Kabab Koobideh (Lammhackspieß auf persischem Safranreis)',
+          'Ghormeh Sabzi (Kräutereintopf mit Bohnen und getrockneter Limette)',
+          'Fesenjan (Geflügel in Granatapfel-Walnuss-Sauce)',
+          'Zereshk Polo (Berberitzen-Safranreis mit Huhn)',
+          'Tahchin (Knuspriger Reiskuchen mit Safran und Joghurt)'
+        ]
+      },
+      traditionalDrinks: {
+        tr: [
+          'Nanehli Doogh (Fars usulü taze nane ve gül yapraklı ayran)',
+          'Safranlı ve Nebat Şekerli İran Çayı (Cam bardakta demlenen bergamotlu çay)',
+          'Sekanjabin (Nane ve bal/sirke şerbeti)',
+          'Tokhm-e Sharbati (Gül suyu ve fesleğen tohumlu serinletici şerbet)'
+        ],
+        en: [
+          'Doogh (Sparkling mint and dried rose petal savory yogurt beverage)',
+          'Persian Saffron Tea with Rock Sugar Candy (Nabat)',
+          'Sekanjabin (Traditional mint-honey vinegar cordial)',
+          'Tokhm-e Sharbati (Rosewater and sweet basil seed cooler)'
+        ],
+        de: [
+          'Doogh (Erfrischendes Minz-Joghurtgetränk)',
+          'Persischer Schwarztee mit Safran-Kandis (Nabat)',
+          'Sekandjabin (Minz-Honig-Sirup)',
+          'Rosenwasser-Sharbat'
+        ]
+      },
+      streetFoodAndDesserts: {
+        tr: [
+          'Bastani Sonnati (Gül suyu, safran, Antep fıstığı ve donmuş kaymak parçalı geleneksel dondurma)',
+          'Gaz (İsfahan\'ın meşhur fıstıklı beyaz helvası / nuga)',
+          'Faloodeh Şirazi (Limon ve gül suyu şerbetinde dondurulmuş nişasta eriştesi)',
+          'Sohan (Kum şehrinin safranlı ve fıstıklı karamel şekeri)',
+          'Baklava Tebriz & Baklava Yezd'
+        ],
+        en: [
+          'Bastani Sonnati (Traditional saffron, rosewater, and pistachio ice cream with clotted cream chunks)',
+          'Gaz (Isfahan pistachio white nougat)',
+          'Faloodeh Shirazi (Rice vermicelli frozen with lime juice and rosewater syrup)',
+          'Sohan (Brittle saffron toffee from Qom)',
+          'Tabriz & Yazd Artisanal Baklava'
+        ],
+        de: [
+          'Bastani Sonnati (Safran-Pistazien-Eis mit Rosenwasser)',
+          'Gaz (Traditioneller Pistazien-Nougat aus Isfahan)',
+          'Faloodeh Schirasi (Kühles persisches Glasnudel-Dessert)',
+          'Sohan (Safran-Karamell aus Ghom)'
+        ]
+      }
+    },
+    achievements: {
+      famousFigures: {
+        tr: [
+          'Büyük Kiros (Cyrus the Great - M.Ö. 559; Ahameniş İmparatorluğu kurucusu & ilk İnsan Hakları Bildirgesi Kiros Silindiri)',
+          'İbn-i Sina (Avicenna - 980-1037; Tıp dehası & El-Kanun fi\'t-Tıbb eserinin yazarı)',
+          'Ömer Hayyam (1048-1131; Rubailer şairi, Celali takvimini oluşturan dahi matematikçi ve astronom)',
+          'Firdevsi (940-1020; Fars dilini ve kültürünü koruyan 60.000 beyitlik Şehname destanının şairi)',
+          'Hafız-ı Şirazi & Sadi-i Şirazi (Şiirleri Goethe ve Nietzsche\'ye ilham vermiş evrensel düşünürler)',
+          'Abbas Kiyarüstemi & Asghar Farhadi (Cannes Altın Palmiye ve iki kez Oscar kazanan dünyaca ünlü sinema yönetmenleri)',
+          'Ali Daei & Hadi Saei (Milli futbol tarihinin küresel gol rekortmeni & 2 kez Olimpiyat Şampiyonu tekvandocu)',
+          'Meryem Mirzahani (1977-2017; Matematik dünyasının Nobel\'i sayılan Fields Madalyası\'nı kazanan ilk kadın matematikçi)'
+        ],
+        en: [
+          'Cyrus the Great (Achaemenid founder; author of the Cyrus Cylinder—first charter of human rights)',
+          'Avicenna / Ibn Sina (Polymath whose Canon of Medicine guided world medicine for centuries)',
+          'Omar Khayyam (Mathematician, astronomer, and author of the Rubaiyat)',
+          'Ferdowsi (Author of the Shahnameh epic, preserving Persian language and heritage)',
+          'Hafez & Saadi Shirazi (Poets of universal love who inspired Goethe and world literature)',
+          'Abbas Kiarostami & Asghar Farhadi (Palme d\'Or and double Oscar-winning film directors)',
+          'Ali Daei & Hadi Saei (Legendary international goalscorer & dual Olympic Taekwondo champion)',
+          'Maryam Mirzakhani (First woman to receive the Fields Medal in mathematics)'
+        ],
+        de: [
+          'Kyros der Große (Staatsgründer & Verfasser des Kyros-Zylinders)',
+          'Avicenna / Ibn Sina (Universalgelehrter, Vater der modernen Medizin)',
+          'Omar Chajjam (Mathematiker, Astronom und Dichter der Rubaiyat)',
+          'Ferdowsi (Schöpfer des Nationalepos Schahname)',
+          'Hafis & Saadi von Schiras (Weltberühmte Dichter)',
+          'Abbas Kiarostami & Asghar Farhadi (Oscar- und Goldene-Palme-Gewinner)',
+          'Maryam Mirzakhani (Erste Frau mit der Fields-Medaille in Mathematik)'
+        ]
+      },
+      strongSectors: {
+        tr: [
+          'Dünya Safran Üretimi ve İhracatı (Küresel safran pazarının %90\'ından fazlasını tek başına karşılar)',
+          'El Dokuması İpek ve Yün İran Halısı (Dünya lideri, UNESCO Somut Olmayan Kültürel Miras)',
+          'Ham Petrol ve Doğal Gaz Rezervleri (Kanıtlanmış rezervlerde dünyada ilk 3 sırada)',
+          'Antep Fıstığı, Hurma ve Kuru Meyve İhracatı (Küresel ana tedarikçi)',
+          'Hassas Taş Sanayii, Firuze (Turkuaz) ve Petrokimya Endüstrisi'
+        ],
+        en: [
+          'Global Saffron Dominance (Produces over 90% of the world\'s saffron supply)',
+          'Hand-woven Persian Carpets & Silk Rugs (UNESCO Intangible Cultural Heritage)',
+          'Petroleum and Natural Gas Reserves (Top 3 proven global energy reserves)',
+          'Pistachio, Date, and Dried Fruit Global Exportation',
+          'Neyshabur Turquoise Mining & Petrochemical Refining'
+        ],
+        de: [
+          'Weltmarktführer für Safran (Über 90% der weltweiten Ernte)',
+          'Traditionelle handgeknüpfte Perserteppiche (UNESCO-Kulturerbe)',
+          'Erdöl- und Erdgasreserven (Top 3 weltweit)',
+          'Pistazien- und Dattel-Exporte',
+          'Petrochemie und Türkis-Edelsteinbergbau'
+        ]
+      }
+    },
+    economy: {
+      paymentCulture: {
+        tr: 'DİKKAT: Uluslararası bankacılık yaptırımları sebebiyle yabancı Visa, Mastercard ve uluslararası ATM kartları İran\'da ÇALIŞMAZ. Seyahat ederken yanınızda nakit USD veya EUR getirmelisiniz. Şehirlerdeki resmi döviz bürolarında (Sarrafi) bozdurabilir veya turistler için sunulan ön ödemeli MahCard / DaricCard temin ederek yerel POS cihazlarında temassız ödeme yapabilirsiniz. Fiyatlar çarşıda genellikle Tümen (1 Tümen = 10 Riyal) olarak söylenir.',
+        en: 'CRITICAL: Due to international banking sanctions, foreign Visa, Mastercard, and international ATM cards DO NOT work in Iran. Travelers must bring cash (USD or EUR). You can exchange cash at official Sarrafi exchange booths or obtain a tourist prepaid debit card (such as MahCard or DaricCard) to tap at local Iranian POS terminals. Iranians quote prices in Toman (1 Toman = 10 Rials).',
+        de: 'WICHTIG: Aufgrund internationaler Sanktionen funktionieren ausländische Visa-, Mastercard- und EC-Karten im Iran NICHT. Reisende müssen ausreichend Bargeld (USD oder EUR) mitführen und in offiziellen Wechselstuben (Sarrafi) in Rial/Toman tauschen oder eine Touristen-Prepaid-Karte (MahCard) erwerben. Preise werden meist in Toman (1 Toman = 10 Rial) angegeben.'
+      },
+      economicPillars: {
+        tr: 'Petrol ve doğal gaz üretimi, petrokimya endüstrisi, safran ve kuruyemiş ihracatı, madencilik ve el sanatları halıcılık.',
+        en: 'Petroleum and natural gas extraction, petrochemicals, agricultural exports (saffron, pistachios), metallurgy and carpet weaving.',
+        de: 'Erdöl- und Erdgasförderung, Petrochemie, Agrarausfuhren (Safran, Pistazien), Metallurgie und Teppichweberei.'
+      },
+      tippingCulture: {
+        tr: 'Restoranlarda bahşiş hesaba dahil edilmez; kaliteli servis için %10 civarında nakit bahşiş beklenir ve takdir edilir. Ayrıca geleneksel nezaket kuralı "Taarof" (ilk teklifte ücreti reddetme jesti) ile karşılaşıldığında ısrarla ödeme yapılmalıdır.',
+        en: 'Tipping is not included in restaurant bills; around 10% in cash is customary for good service. Beware of "Taarof" (cultural politeness ritual where merchants initially refuse payment)—you should always insist on paying.',
+        de: 'Trinkgeld ist auf Rechnungen meist nicht enthalten; ca. 10% in bar für guten Service sind üblich. Beachten Sie das Höflichkeitsritual "Taarof" – bestehen Sie stets darauf, die Rechnung zu begleichen.'
+      }
+    }
   }
 };

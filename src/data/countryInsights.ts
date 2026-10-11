@@ -5,6 +5,7 @@
  */
 
 import { getCountryName } from './passportData';
+import { GLOBAL_CURRENCIES } from './countryGeography';
 
 export interface CountrySafetyInfo {
   safetyScore: number; // 0-100 (100 en güvenli)
@@ -66,6 +67,58 @@ export interface CountryFullInsights {
 
 // Detaylı ve Gerçek Verilerle Doğrulanmış Örnek Ülkeler
 const CURATED_INSIGHTS: Record<string, Partial<CountryFullInsights>> = {
+  'IR': {
+    currency: 'IRR (İran Riyali / Tümen - Nakit USD/EUR Esastır)',
+    plugType: 'C, F (230V, 50Hz - Türkiye ile uyumlu)',
+    bestMonths: 'Mart - Mayıs & Eylül - Kasım (Ilıman Bahar Ayları)',
+    safety: {
+      safetyScore: 74,
+      safetyLevel: 'Güvenli (Temel Dikkat)',
+      badgeColor: 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60',
+      crimeRateSummary: 'Halkı son derece yardımsever ve misafirperverdir; şiddet suçları turistlere karşı oldukça nadirdir. Kalabalık çarşılarda yankesicilik ve trafikte motosikletlilere dikkat edilmelidir.',
+      commonScams: [
+        'Döviz bozdururken sokaktaki gayriresmi komisyoncuların eksik para veya geçersiz banknot vermesi',
+        'Taksi ve çarşı esnafıyla konuşurken Riyal ile Tümen (1 Tümen = 10 Riyal) farkının netleştirilmemesi',
+        'Taarof nezaket geleneğinde esnafın ilk teklifte hediye jestine kanıp ödeme yapmadan ayrılmak'
+      ],
+      safeTravelTips: [
+        'DİKKAT: Uluslararası yaptırımlar sebebiyle yabancı Visa ve Mastercard ÇALIŞMAZ. Mutlaka nakit USD veya EUR getirin.',
+        'Paranızı havalimanında veya caddedeki resmi Sarrafi döviz bürolarında bozdurun ya da turist MahCard temin edin.',
+        'Kamuya açık alanlarda kılık kıyafet kurallarına (kadınlar için başörtüsü ve dökümlü kıyafet, erkekler için pantolon) riayet edin.',
+        'Devlet binaları, askeri tesisler ve köprülerin fotoğrafını çekmekten kesinlikle kaçının.'
+      ],
+      emergencyNumbers: { police: '110', ambulance: '115', general: '110 (İtfaiye: 125)' }
+    },
+    internet: {
+      mobileSpeedMbps: 45,
+      broadbandSpeedMbps: 25,
+      networkCoverage: '%90 (4G LTE)',
+      costPerGbUsd: '~0.40 - 0.70 $ (Çok Ucuz)',
+      esimAvailability: 'Sınırlı (Havalimanında Fiziksel SIM: Irancell / MCI)',
+      bestCarriers: ['MTN Irancell', 'MCI (Hamrah-e Aval)', 'RighTel'],
+      vpnRequired: true,
+      vpnNote: 'Sosyal medya ve mesajlaşma servisleri kısıtlıdır; seyahatten ÖNCE güvenilir bağımsız VPN uygulamaları yükleyin.'
+    },
+    transport: {
+      transportQuality: 'Çok İyi (Gelişmiş Metro & Hızlı Otobüsler)',
+      costLevel: 'Çok Ucuz',
+      singleTicketUsd: '~0.10 $ (Tahran Metrosu)',
+      dailyPassUsd: '~0.50 $',
+      popularRideApps: ['Snapp!', 'Tapsi'],
+      taxiAdvice: 'Tahran ve İsfahan içinde Snapp! uygulaması hem sabit ücret güvencesi sunar hem de dil bariyerini aşmanızı sağlar.'
+    },
+    livingCosts: {
+      dailyBudgetBackpackerUsd: '15 - 25 $',
+      dailyBudgetMidrangeUsd: '35 - 55 $',
+      budgetMealUsd: '3 - 6 $ (Çelo Kebap + Doogh + Salata)',
+      coffeeUsd: '1.20 - 1.80 $',
+      waterBottleUsd: '0.20 $',
+      hostelDormUsd: '7 - 12 $',
+      hotel3StarUsd: '25 - 45 $',
+      flightCostIndex: 'Düşük (İstanbul/Ankara - Tahran direkt uçuş)',
+      flightTip: 'İstanbul’dan Tahran İmam Humeyni (IKA) Havalimanı’na günde çok sayıda direkt uçuş bulunmaktadır (yaklaşık 3 saat).'
+    }
+  },
   'GE': {
     currency: 'GEL (Gürcistan Larisi)',
     plugType: 'C, F (230V, Türkiye ile birebir uyumlu)',
@@ -1821,11 +1874,18 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       : `Şehir içi ulaşımda taksimetre pazarlığı yerine resmi araç çağırma uygulamaları (${popularRideApps.slice(0, 3).join(', ')}) sabit fiyat ve rota güvenliği sağlar.`
   );
 
+  const geoCurrencyMatch = GLOBAL_CURRENCIES[code];
+  const autoCurrencyName = geoCurrencyMatch
+    ? `${geoCurrencyMatch.name[lang as 'tr' | 'en' | 'de'] || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
+    : (isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
+
+  const autoPlugType = geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart');
+
   return {
     countryCode: code,
     countryName,
-    currency: cur?.currency || (isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Yerel Para Birimi'),
-    plugType: cur?.plugType || (isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart'),
+    currency: cur?.currency || autoCurrencyName,
+    plugType: cur?.plugType || autoPlugType,
     bestMonths: cur?.bestMonths || (isDe ? 'Frühlings- & Herbstmonate' : isEn ? 'Spring & Autumn months' : 'İlkbahar ve Sonbahar ayları'),
     safety: {
       safetyScore,

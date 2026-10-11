@@ -246,9 +246,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   <span className="font-mono text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold border border-slate-200 dark:border-slate-700">
                     {code}
                   </span>
-                  {geo?.capital && (
+                  {(geo?.capital || geography?.capital) && (
                     <span className="text-xs text-slate-500 dark:text-[#8E9DBE] font-medium">
-                      • {l('Başkent:', 'Capital:', 'Hauptstadt:')} <b>{geo.capital}</b>
+                      • {l('Başkent:', 'Capital:', 'Hauptstadt:')} <b className="text-slate-800 dark:text-slate-200">{geo?.capital || geography?.capital}</b>
                     </span>
                   )}
                   {geo?.mainHub && (

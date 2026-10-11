@@ -27,6 +27,18 @@
   --color-gold-400: #f1b952;
 }
 
+html, body {
+  min-height: 100%;
+}
+
+html {
+  background-color: #f8fafc;
+}
+
+html.dark {
+  background-color: #0c0f19;
+}
+
 @layer base {
   /* 1. GLOBAL TYPOGRAPHY: Strict Plus Jakarta Sans with Inter Fallback */
   body {
@@ -35,8 +47,10 @@
     -moz-osx-font-smoothing: grayscale;
     color: #1a1d20; /* Deep Charcoal for Light Mode */
     background-color: #f8fafc; /* Soothing Linen Off-White */
+    overflow-x: hidden;
   }
 
+  html.dark body,
   .dark body {
     color: #ffffff;
     background-color: #0c0f19; /* Midnight Velvet Obsidian */

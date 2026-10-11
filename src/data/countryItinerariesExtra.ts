@@ -497,5 +497,326 @@ export const CURATED_ITINERARIES_EXTRA: Record<string, any> = {
         ]
       }
     }
+  },
+
+  // İRAN (IR)
+  IR: {
+    routeName: {
+      tr: 'İran Masalsı Pers Mirası Rotası: Tahran, İsfahan, Yezd & Şiraz (Persepolis)',
+      en: 'Persian Heritage Grand Tour: Tehran, Isfahan, Yazd & Shiraz (Persepolis)',
+      de: 'Persisches Kulturerbe: Teheran, Isfahan, Jasd & Schiras (Persepolis)'
+    },
+    routeSummary: {
+      tr: 'Tahran’ın saraylarından başlayarak Şah Abbas’ın "Dünyanın Yarısı" İsfahan’ına, çölün kerpiç başkenti Yezd’den 2.500 yıllık Persepolis ve şairler kenti Şiraz’a uzanan 9 günlük büyüleyici Pers kültür yolculuğu.',
+      en: 'A legendary 9-day cultural journey through Iran: from royal Qajar palaces in Tehran to the turquoise domes of Isfahan, mudbrick desert alleys in Yazd, and 2,500-year-old Persepolis ruins in Shiraz.',
+      de: 'Eine 9-tägige Kulturreise durch den Iran: von Palästen in Teheran über die türkisfarbenen Kuppeln von Isfahan und die Wüstenstadt Jasd bis zum antiken Persepolis und Schiras.'
+    },
+    totalDays: 9,
+    idealDurationText: {
+      tr: '9 Günlük Pers Kültür Rotası',
+      en: '9-Day Persian Heritage Route',
+      de: '9-Tage Kulturrundreise'
+    },
+    bestSeason: {
+      tr: 'Mart - Mayıs (Bahar çiçekleri & ılıman iklim) veya Eylül - Kasım (Altın sonbahar)',
+      en: 'March - May (Spring blossoms & mild weather) or September - November (Autumn)',
+      de: 'März - Mai (Frühling) oder September - November (Herbst)'
+    },
+    transportMode: {
+      tr: 'VIP Klimalı Yataklı Şehirlerarası Otobüsler / Tren + Tahran ve İsfahan içinde Snapp! Araç Çağırma',
+      en: 'VIP intercity sleeper coaches/trains + Snapp! ride-hailing in cities',
+      de: 'VIP-Fernreisebusse / Züge + Snapp! Fahrtenvermittlung in Großstädten'
+    },
+    paceLevel: {
+      tr: 'Dengeli & Derin Kültürel',
+      en: 'Balanced & Cultural',
+      de: 'Ausgewogen & Kulturell'
+    },
+    stops: [
+      {
+        name: {
+          tr: '1. Durak: Tahran (Kaçar Sarayları & Canlı Başkent)',
+          en: 'Stop 1: Tehran (Qajar Palaces & Vibrant Capital)',
+          de: 'Stopp 1: Teheran (Golestan-Palast & Metropole)'
+        },
+        recommendedDuration: {
+          tr: '2 Gün (Saraylar, müzeler ve Kapalıçarşı)',
+          en: '2 Days (Museums, palaces & Grand Bazaar)',
+          de: '2 Tage (Paläste & Basar)'
+        },
+        durationBadge: { tr: '2 Gün', en: '2 Days', de: '2 Tage' },
+        highlights: {
+          tr: ['Gülistan Sarayı (UNESCO - Kaçar Hanedanı Şaheseri)', 'Tahran Kapalıçarşısı (Bozorg Bazaar baharat ve halı koridorları)', 'Tabiat Köprüsü & Su-Ateş Parkı', 'Ulusal Mücevher Müzesi (Tavuskuşu Tahtı & Derya-yı Nur Elması)'],
+          en: ['Golestan Palace (UNESCO Royal Qajar complex)', 'Tehran Grand Bazaar historic alleys', 'Tabiat Multi-tier Pedestrian Bridge', 'National Jewels Treasury (Daria-i-Noor Diamond)'],
+          de: ['Golestan-Palast (UNESCO)', 'Großer Basar von Teheran', 'Tabiat-Fußgängerbrücke', 'Nationales Juwelenmuseum']
+        },
+        activities: {
+          tr: [
+            'Gülistan Sarayı’nın rengarenk ayna işlemeli taht odalarında ve çinili bahçesinde yürüyün.',
+            'Tahran Kapalıçarşısı’nda taze safran, kuru meyveler ve el dokuma antika halıları inceleyin.',
+            'Akşam modern Tahran mimarisinin simgesi iki katlı Tabiat Köprüsü’nde çay içip manzarayı izleyin.'
+          ],
+          en: [
+            'Explore the ornate mirrored throne rooms and tiled courtyard of Golestan Palace.',
+            'Bargain for premium saffron, dried fruits, and Persian kilims in the Grand Bazaar.',
+            'Stroll across the striking Tabiat Bridge at sunset and take in Mount Damavand views.'
+          ],
+          de: [
+            'Die spiegelverzierten Prunksäle des Golestan-Palastes besichtigen.',
+            'Safran und handgeknüpfte Teppiche im Großen Basar entdecken.',
+            'Abendspaziergang auf der modernen Tabiat-Brücke mit Blick auf die Stadt.'
+          ]
+        },
+        foodAndDrinks: {
+          tr: ['Çelo Kebap Kubideh (Safranlı pirinç ve tereyağı)', 'Taze Demleme Bergamotlu Fars Çayı ve Nebat Şekeri', 'Bastani Sonnati (Safranlı kaymaklı dondurma)'],
+          en: ['Chelo Kabab Koobideh with saffron basmati rice', 'Persian black tea with saffron rock sugar', 'Bastani Sonnati traditional ice cream'],
+          de: ['Chelo Kabab mit Safranreis', 'Persischer Schwarztee mit Kandiszucker', 'Safran-Pistazien-Eis Bastani']
+        },
+        criticalTips: {
+          tr: [
+            'DİKKAT: Uluslararası Visa/Mastercard çalışmaz. İmam Humeyni (IKA) Havalimanı’nda dövizinizi resmi Sarrafi bürolarında bozdurun.',
+            'Şehir içi ulaşımda sokaktan taksi çevirmek yerine yerel Snapp! uygulamasını kullanın.'
+          ],
+          en: [
+            'CRITICAL: Foreign cards do not work. Exchange cash USD/EUR at official airport bureaus upon arrival.',
+            'Download and use Snapp! for hassle-free transport across Tehran.'
+          ],
+          de: [
+            'WICHTIG: Ausländische Kreditkarten funktionieren nicht. Bargeld in offiziellen Wechselstuben tauschen.',
+            'Nutzen Sie die App Snapp! für Fahrten in der Stadt.'
+          ]
+        },
+        mapsQuery: 'Golestan Palace, Tehran, Iran'
+      },
+      {
+        name: {
+          tr: '2. Durak: İsfahan ("Dünyanın Yarısı" & Turkuaz Kubbeler)',
+          en: 'Stop 2: Isfahan ("Half of the World" & Turquoise Domes)',
+          de: 'Stopp 2: Isfahan ("Die Hälfte der Welt" & Türkisene Kuppeln)'
+        },
+        recommendedDuration: {
+          tr: '3 Gün (UNESCO Meydanı, köprüler ve saraylar)',
+          en: '3 Days (UNESCO Square, bridges & palaces)',
+          de: '3 Tage (Königsplatz, Brücken & Paläste)'
+        },
+        durationBadge: { tr: '3 Gün', en: '3 Days', de: '3 Tage' },
+        highlights: {
+          tr: ['Nakş-ı Cihan Meydanı (Dünyanın en görkemli tarihi meydanlarından)', 'Şeyh Lütfullah Camii & İmam Camii (Turkuaz çini sanatı)', 'Ali Kapu Sarayı & Müzik Odası', 'Si-o-se-pol & Hacı Köprüleri (Gece ışıklandırması)', 'Yeni Culfa Ermeni Mahallesi & Vank Katedrali'],
+          en: ['Naqsh-e Jahan Square (One of the largest public squares on Earth)', 'Sheikh Lotfollah Mosque & Imam Mosque', 'Ali Qapu Palace & Acoustic Music Room', 'Si-o-se-pol & Khaju Illuminated Bridges', 'Vank Cathedral in the New Julfa Armenian Quarter'],
+          de: ['Naqsh-e-Dschahan-Platz (Königsplatz)', 'Scheich-Lotfollah-Moschee & Königsmoschee', 'Ali-Qapu-Palast mit Musiksaal', 'Si-o-se-pol und Khaju-Brücken', 'Vank-Kathedrale im armenischen Viertel']
+        },
+        activities: {
+          tr: [
+            'Nakş-ı Cihan Meydanı’nı fayton turuyla gezin ve Şeyh Lütfullah’ın kubbesindeki tavus kuşu ışık oyununu izleyin.',
+            'Akşam Zayendeh Nehri üzerindeki tarihi taş köprülerin kemerleri altında yerel halkın gazel ve türkü söyleyişini dinleyin.',
+            'Ermeni Mahallesi Yeni Culfa’daki nostaljik kafelerde dinlenip fresklerle bezeli Vank Katedrali’ni görün.'
+          ],
+          en: [
+            'Marvel at the light filtering through the dome of Sheikh Lotfollah Mosque.',
+            'Listen to traditional vocal melodies sung by locals beneath the arches of Khaju Bridge at dusk.',
+            'Visit the New Julfa quarter and admire the detailed biblical frescoes of Vank Cathedral.'
+          ],
+          de: [
+            'Den Naqsh-e-Dschahan-Platz und die Lichtspiele in den Kuppeln bewundern.',
+            'Abends den Gesängen der Einheimischen unter den Bögen der Khaju-Brücke lauschen.',
+            'Das armenische Viertel Neu-Dschulfa und die Vank-Kathedrale erkunden.'
+          ]
+        },
+        foodAndDrinks: {
+          tr: ['Beryani İsfahan (Kıymalı ve naneli geleneksel fırın kuzu yemeği)', 'Gaz İsfahan (Antep fıstıklı meşhur beyaz nuga tatlısı)', 'Nanehli Doogh ve Gül Şerbeti'],
+          en: ['Beryani Isfahan (Rich minced lamb served on flatbread)', 'Gaz (Traditional Isfahan pistachio nougat)', 'Doogh with dried rose petals'],
+          de: ['Beryani aus Isfahan (Würzfleisch auf Fladenbrot)', 'Gaz (Pistazien-Nougat aus Isfahan)', 'Minz-Doogh & Rosenwasser-Sharbat']
+        },
+        criticalTips: {
+          tr: [
+            'Meydandaki antika ve minyatür ustalarından hatıra alırken taarof nezaketine dikkat edin ve fiyatı teyit edin.',
+            'Tarihi köprüleri akşam saat 20:00 - 22:00 arasında aydınlatılmış halleriyle ziyaret edin.'
+          ],
+          en: [
+            'When purchasing hand-painted Persian miniatures, be mindful of the Taarof etiquette.',
+            'Visit the historical bridges after sunset when the arches are poetically illuminated.'
+          ],
+          de: [
+            'Kaufen Sie persische Miniaturen und beachten Sie dabei das Taarof-Ritual.',
+            'Besuchen Sie die beleuchteten Bogenbrücken am Abend.'
+          ]
+        },
+        mapsQuery: 'Naqsh-e Jahan Square, Isfahan, Iran'
+      },
+      {
+        name: {
+          tr: '3. Durak: Yezd (Kerpiç Çöl Şehri & Zerdüşt Ateşgahı)',
+          en: 'Stop 3: Yazd (Mud-brick Desert Oasis & Zoroastrian Fire)',
+          de: 'Stopp 3: Jasd (Lehmziegelstadt & Zoroastrischer Feuertempel)'
+        },
+        recommendedDuration: {
+          tr: '2 Gün (UNESCO Kerpiç Eski Şehir ve Sessizlik Kuleleri)',
+          en: '2 Days (Historic mudbrick labyrinth & desert architecture)',
+          de: '2 Tage (Altstadt & Schweigetürme)'
+        },
+        durationBadge: { tr: '2 Gün', en: '2 Days', de: '2 Tage' },
+        highlights: {
+          tr: ['Yezd Tarihi Kerpiç Eski Kenti & Badgir (Rüzgar Yakalayıcı Kuleler)', 'Zerdüşt Ateşgahı (Ateşkede - 1.500 yıldır yanan kutsal ateş)', 'Sessizlik Kuleleri (Dakhma - Çöl tepesindeki kadim gömü alanları)', 'Emir Çakmak Kompleksi & Tatlıcılar Çarşısı'],
+          en: ['Historic City of Yazd (UNESCO mudbrick alleys & windcatchers)', 'Zoroastrian Atash Behram (Sacred fire burning since 470 AD)', 'Towers of Silence (Ancient Zoroastrian sky burial structures)', 'Amir Chakhmaq Complex'],
+          de: ['Altstadt von Yazd mit Windtürmen (Badgir)', 'Zoroastrischer Feuertempel (brennt seit 470 n. Chr.)', 'Türme des Schweigens in der Wüste', 'Amir-Tschachmaq-Komplex']
+        },
+        activities: {
+          tr: [
+            'UNESCO korumasındaki kerpiç labirent sokaklarda kaybolup çatı kafelerinden rüzgar kuleleri silüetini izleyin.',
+            '1.500 yıldır aralıksız yanan Zerdüşt kutsal ateşini ziyaret edip kadim inancın felsefesini öğrenin.',
+            'Çölün ortasında Sessizlik Kuleleri’nin tepesine tırmanarak gün batımında sonsuz ufku seyredin.'
+          ],
+          en: [
+            'Wander through the cool subterranean mud-brick alleys and relax at rooftop cafes overlooking the wind towers.',
+            'Visit the Zoroastrian Fire Temple and view the flame that has been tended continuously since the 5th century.',
+            'Climb the Towers of Silence for a panoramic desert sunset.'
+          ],
+          de: [
+            'Durch die kühlen Lehmgassen spazieren und den Blick von Dachterrassen genießen.',
+            'Das ewige Feuer im zoroastrischen Feuertempel sehen.',
+            'Zu den Schweigetürmen aufsteigen und den Sonnenuntergang erleben.'
+          ]
+        },
+        foodAndDrinks: {
+          tr: ['Fesenjan (Nar ekşili ve cevizli enfes güveç)', 'Baklava Yezd & Paşmak (Fars pamuk helvası)', 'Tohum-u Şerbeti'],
+          en: ['Fesenjan (Chicken in pomegranate molasses and walnut stew)', 'Yazdi traditional baklava & Pashmak cotton candy', 'Tokhm-e Sharbati cooler'],
+          de: ['Fesenjan (Granatapfel-Walnuss-Eintopf)', 'Traditionelles Baklava aus Jasd & Pashmak', 'Basilikumsamen-Sharbat']
+        },
+        criticalTips: {
+          tr: [
+            'Çöl ikliminde gündüz ve gece sıcaklık farkı yüksektir; yanınızda ince bir rüzgarlık bulundurun.',
+            'Yezd’in geleneksel tatlıcılarından hediyelik safranlı şekerleme ve badem kurabiyesi alın.'
+          ],
+          en: [
+            'Desert nights cool down rapidly; carry a light jacket even in warmer months.',
+            'Purchase authentic almond cakes and saffron sweets directly from local sweet shops.'
+          ],
+          de: [
+            'Große Temperaturunterschiede zwischen Tag und Nacht; leichte Jacke mitnehmen.',
+            'Probieren Sie das traditionelle Mandelgebäck der Stadt.'
+          ]
+        },
+        mapsQuery: 'Historic City of Yazd, Iran'
+      },
+      {
+        name: {
+          tr: '4. Durak: Şiraz & Persepolis (Şiir, Güller & 2.500 Yıllık İmparatorluk)',
+          en: 'Stop 4: Shiraz & Persepolis (Poetry, Gardens & 2,500-Year Empire)',
+          de: 'Stopp 4: Schiras & Persepolis (Dichtung, Gärten & Weltwunder)'
+        },
+        recommendedDuration: {
+          tr: '2 Gün (Persepolis Antik Kenti ve Şiraz bahçeleri)',
+          en: '2 Days (Ancient Persepolis & poetic gardens of Shiraz)',
+          de: '2 Tage (Persepolis & Dichtergärten)'
+        },
+        durationBadge: { tr: '2 Gün', en: '2 Days', de: '2 Tage' },
+        highlights: {
+          tr: ['Persepolis Antik Kenti (UNESCO - Dünyanın en ihtişamlı imparatorluk kalıntısı)', 'Nakş-ı Rüstem (Büyük Darius ve Kserkses’in dev kaya mezarları)', 'Nasır el-Mülk Pembe Camii (Sabah güneşiyle renk cümbüşü)', 'Hafız & Sadi Türbeleri (Şiir bahçeleri)', 'Eram Bahçesi (UNESCO Pers Bahçesi)'],
+          en: ['Persepolis Ancient Ruins (UNESCO monumental ceremonial capital)', 'Naqsh-e Rustam (Rock-cut tombs of Darius the Great and Xerxes)', 'Nasir al-Mulk Pink Mosque (Morning stained glass kaleidoscope)', 'Tomb of Hafez & Saadi Gardens', 'Eram Persian Garden (UNESCO)'],
+          de: ['Persepolis (UNESCO-Weltwunder des Achämenidenreichs)', 'Felsengräber von Naqsh-e Rostam (Darius I. & Xerxes)', 'Rosa Moschee (Nasir al-Mulk am Morgen)', 'Mausoleum von Hafis & Saadi', 'Eram-Garten (UNESCO-Persergarten)']
+        },
+        activities: {
+          tr: [
+            'Sabah saat 08:00 - 09:30 arasında Pembe Cami’ye gidip rengarenk vitray pencerelerden halılara vuran ışık huzmelerini fotoğraflayın.',
+            'Şiraz’dan arabayla 50 km mesafedeki görkemli Persepolis sütunları ve Milletler Kapısı arasında antik tarihi soluyun.',
+            'Akşam Hafız Türbesi’nde yerel halkın Hafız Divanı açıp fal bakışına ve şiir okuyuşuna ortak olun.'
+          ],
+          en: [
+            'Arrive at the Pink Mosque early in the morning to witness colorful light streaming through the stained glass.',
+            'Walk among the colossal limestone columns and carved reliefs of Persepolis and the Gate of All Nations.',
+            'Join locals at the illuminated Tomb of Hafez as they recite verses under fragrant cypress trees.'
+          ],
+          de: [
+            'Früh morgens das faszinierende Farbenspiel in der Rosa Moschee erleben.',
+            'Die monumentalen Säulen und Reliefs der Kaiserstadt Persepolis besichtigen.',
+            'Am beleuchteten Grab von Hafis die persische Dichtkunst spüren.'
+          ]
+        },
+        foodAndDrinks: {
+          tr: ['Zereşk Polo ba Morgh (Safranlı berberisli tavuklu pilav)', 'Faloodeh Şirazi (Limon ve gül suyu şerbetinde buzlu pirinç nişastası tatlısı)', 'Şiraz Çayı & Taze Fıstık'],
+          en: ['Zereshk Polo ba Morgh (Barberry & saffron chicken pilaf)', 'Faloodeh Shirazi (Refreshing frozen lime & rosewater noodle dessert)', 'Shirazi tea & fresh pistachios'],
+          de: ['Zereshk Polo (Berberitzen-Hühnchen)', 'Faloodeh Schirasi (Kühles persisches Glasnudel-Dessert mit Limette)', 'Tee & frische Pistazien']
+        },
+        criticalTips: {
+          tr: [
+            'Persepolis ziyareti için güneş şapkası, bol su ve rahat yürüyüş ayakkabısı getirin; gölge alanlar sınırlıdır.',
+            'Şiraz Şehit Destgeyb Havalimanı’ndan (SYZ) İstanbul’a direkt dönüş uçuşu imkanını kullanarak zamandan kazanın.'
+          ],
+          en: [
+            'Wear a sun hat and sunscreen at Persepolis; there is very little shade across the ancient ruins.',
+            'Fly directly back from Shiraz International Airport (SYZ) to avoid backtracking to Tehran.'
+          ],
+          de: [
+            'Sonnenschutz und Kopfbedeckung für Persepolis einpacken.',
+            'Direktflug ab dem Flughafen Schiras (SYZ) für die Heimreise nutzen.'
+          ]
+        },
+        mapsQuery: 'Persepolis, Shiraz, Iran'
+      }
+    ],
+    signatureGastronomy: {
+      dishes: {
+        tr: ['Çelo Kebap Kubideh', 'Ghormeh Sabzi (Milli otlu kuzu güveci)', 'Fesenjan (Nar ekşili cevizli tavuk)', 'Zereşk Polo ba Morgh', 'Beryani İsfahan'],
+        en: ['Chelo Kabab Koobideh', 'Ghormeh Sabzi (Herb & dried lime stew)', 'Fesenjan (Pomegranate walnut chicken)', 'Zereshk Polo ba Morgh', 'Beryani Isfahan'],
+        de: ['Chelo Kabab Koobideh', 'Ghormeh Sabzi', 'Fesenjan', 'Zereshk Polo', 'Beryani']
+      },
+      drinks: {
+        tr: ['Safranlı ve Nebat Şekerli İran Çayı', 'Nanehli Doogh (Köpüklü ayran)', 'Sekanjabin (Nane ve bal şerbeti)', 'Tokhm-e Sharbati (Gül sulu fesleğen tohumu)'],
+        en: ['Persian Saffron Tea with Nabat', 'Mint Doogh yogurt drink', 'Sekanjabin honey mint cordial', 'Tokhm-e Sharbati rosewater cooler'],
+        de: ['Persischer Safran-Tee mit Kandis', 'Minz-Doogh', 'Sekandjabin', 'Rosenwasser-Sharbat']
+      },
+      streetFoods: {
+        tr: ['Bastani Sonnati (Gül suyu, safran ve donmuş kaymaklı dondurma)', 'Faloodeh Şirazi', 'Gaz İsfahan (Pistachio nougat)', 'Sohan Kum (Karamelli safran helvası)'],
+        en: ['Bastani Sonnati traditional ice cream', 'Faloodeh Shirazi', 'Gaz Isfahan pistachio nougat', 'Sohan saffron brittle'],
+        de: ['Bastani Sonnati Eis', 'Faloodeh Schirasi', 'Gaz aus Isfahan', 'Sohan']
+      },
+      diningAdvice: {
+        tr: 'İran’da yemekler son derece doyurucu ve aromatiktir. Restoranlarda servis personeline %10 civarında nakit bahşiş bırakmak büyük nezaket sayılır. Alışverişlerde esnafın ilk teklifte ücreti reddettiği "Taarof" jestiyle karşılaşıldığında her zaman ısrarla ödeme yapılmalıdır.',
+        en: 'Persian cuisine is rich, aromatic, and comforting. Leave around 10% cash gratuity for good service. If merchants engage in the "Taarof" ritual (politely declining payment at first), always insist politely on paying.',
+        de: 'Die persische Küche ist aromatisch und reichhaltig. Ca. 10 % Bargeld-Trinkgeld wird geschätzt. Bestehen Sie beim Höflichkeitsritual "Taarof" stets darauf, die Rechnung zu begleichen.'
+      }
+    },
+    packingAndPrecautions: {
+      essentials: {
+        tr: [
+          'DİKKAT: Yeterli miktarda nakit USD veya EUR (Uluslararası banka kartları yaptırımlar sebebiyle çalışmaz)',
+          'Kamuya açık alanlar için kıyafet kuralına uygun giysiler (kadınlar için başörtüsü/şal ve dökümlü kıyafet, erkekler için pantolon)',
+          'Güneş gözlüğü, güneş kremi ve şapka (Yezd ve Şiraz çöl güneşi için)',
+          'C ve F tipi priz (Türkiye prizleriyle birebir uyumlu - adaptör gerekmez)',
+          'Seyahat öncesi akıllı telefona indirilmiş bağımsız VPN uygulamaları'
+        ],
+        en: [
+          'CRITICAL: Sufficient cash in USD or EUR (International bank cards do not work due to sanctions)',
+          'Modest clothing complying with local dress codes (Headscarf & loose tunic for women, trousers for men)',
+          'Sunglasses and sunscreen for desert sites in Yazd and Persepolis',
+          'Standard European plug types C and F (230V)',
+          'Reliable VPN apps installed prior to entering the country'
+        ],
+        de: [
+          'WICHTIG: Ausreichend Bargeld in USD oder EUR (Internationale Karten funktionieren nicht)',
+          'Dezente Kleidung (Kopftuch/Tunika für Frauen, lange Hosen für Männer)',
+          'Sonnenschutz für Wüstenregionen und Persepolis',
+          'Standard-Eurostecker (Typ C/F)',
+          'Zuverlässige VPN-Apps vor Reiseantritt installieren'
+        ]
+      },
+      safetyAndEtiquette: {
+        tr: [
+          'Paranızı sokaktaki komisyonculardan değil, yalnızca cadde üzerindeki resmi "Sarrafi" döviz bürolarında bozdurun.',
+          'Kamu binaları, askeri tesisler, elçilikler ve köprülerin fotoğrafını kesinlikle çekmeyin.',
+          'Halk son derece misafirperverdir; ikramları ve sıcak sohbetleri güvenle kabul edebilirsiniz.'
+        ],
+        en: [
+          'Only exchange money at licensed official Sarrafi exchange offices, never with street touts.',
+          'Never photograph government buildings, military sites, checkpoints, or bridges.',
+          'Locals are exceptionally warm and welcoming; engage politely in conversation and tea invitations.'
+        ],
+        de: [
+          'Geld nur in lizenzierten Sarrafi-Wechselstuben tauschen, niemals auf der Straße.',
+          'Regierungsgebäude und militärische Anlagen keinesfalls fotografieren.',
+          'Die Menschen sind außerordentlich gastfreundlich; Einladungen zum Tee können sicher angenommen werden.'
+        ]
+      }
+    }
   }
 };

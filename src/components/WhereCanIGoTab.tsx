@@ -233,7 +233,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
             return (
               <div
                 key={item.c}
-                className="glass-card border border-slate-200/80 dark:border-white/[0.08] rounded-3xl p-4 sm:p-5 shadow-xs flex flex-col justify-between gap-4 hover:border-rose-500/30 dark:hover:border-rose-400/25 hover:shadow-2xl transition-all duration-300 group"
+                className="glass-card rounded-3xl p-4 sm:p-5 shadow-xs flex flex-col justify-between gap-4 hover:border-[#FF6B6B]/40 dark:hover:border-[#FF6B6B]/30 hover:shadow-2xl transition-all duration-300 group"
               >
                 <div className="flex items-center gap-4 min-w-0">
                   {/* Dedicated Scenic Thumbnail Slot */}
@@ -243,9 +243,14 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
                       alt={`${countryName} - ${visual.landmark}`}
                       className="country-thumbnail-image country-thumbnail-images"
                       loading="lazy"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        target.onerror = null;
+                        target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&q=80';
+                      }}
                     />
                     <div className="country-thumbnail-scrim" />
-                    <div className="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs shadow-sm">
+                    <div className="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-white/20 text-xs shadow-sm">
                       {getFlag(item.c)}
                     </div>
                     <div className="absolute bottom-1 left-2 right-2 text-[10px] font-semibold text-white/95 truncate">
@@ -255,7 +260,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
 
                   {/* Text Details with generous breathing whitespace */}
                   <div className="min-w-0 flex-1">
-                    <h4 className="font-extrabold text-slate-900 dark:text-white text-base group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors truncate">
+                    <h4 className="font-extrabold text-slate-900 dark:text-white text-base group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors truncate">
                       {countryName}
                     </h4>
                     <span className="text-xs text-slate-400 block truncate mt-0.5">

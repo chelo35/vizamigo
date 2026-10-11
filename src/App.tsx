@@ -86,7 +86,10 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] dark:bg-gradient-to-br dark:from-[#0C0F19] dark:via-[#111625] dark:to-[#161D30] text-[#1A1D20] dark:text-white flex font-sans selection:bg-[#FF6B6B] selection:text-white relative overflow-x-hidden transition-colors">
+    <div className="min-h-screen text-[#1A1D20] dark:text-white flex font-sans selection:bg-[#FF6B6B] selection:text-white relative overflow-x-hidden transition-colors">
+      {/* Permanent Fixed Fullscreen Dual-Theme Background (Zero white cutoffs on vertical scroll) */}
+      <div className="fixed inset-0 pointer-events-none -z-20 bg-[#F8FAFC] dark:bg-gradient-to-br dark:from-[#0C0F19] dark:via-[#111625] dark:to-[#161D30]" />
+
       {/* Ambient luxury background glow orbs (Nubair celestial midnight & Social Media App luminous atmosphere) */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
         <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-rose-500/[0.05] dark:bg-[#FF6B6B]/[0.04] rounded-full blur-[160px]" />
