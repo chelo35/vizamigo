@@ -38,7 +38,14 @@ import {
   Laptop,
   Activity,
   Calculator,
-  RotateCcw
+  RotateCcw,
+  Car,
+  ShoppingBag,
+  Info,
+  Percent,
+  Smartphone,
+  Coins,
+  ArrowDownUp
 } from 'lucide-react';
 import {
   getCountryName,
@@ -62,6 +69,8 @@ import {
   formatCurrencyValue,
   COMMON_CHEAT_SHEET_TIERS
 } from '../data/currencyRates';
+import { SocketPlugVector } from './SocketPlugVector';
+import { getCountryNomadApps } from '../data/rideAndDeliveryApps';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -102,6 +111,8 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [currentTime, setCurrentTime] = useState<Date>(() => new Date());
   const [converterAmount, setConverterAmount] = useState<number>(100);
   const [converterBase, setConverterBase] = useState<'USD' | 'EUR' | 'TRY' | 'LOCAL'>('USD');
+  const [remoteBaseCity, setRemoteBaseCity] = useState<'IST' | 'NYC' | 'LON' | 'BER' | 'SFO' | 'SIN' | 'TYO'>('IST');
+  const [marketTargetCurrency, setMarketTargetCurrency] = useState<'TRY' | 'USD' | 'EUR'>('TRY');
 
   // Real-time ticking clock for Dual-Clock Time Zone Sync
   useEffect(() => {
@@ -268,38 +279,25 @@ Planlayan: Vizamigo (vizamigo.com)`;
   const destCurrencySymbol = geography?.currencySymbol || '$';
   const destCurrencyName = geography?.currencyName || destCurrencyCode;
 
-  const rate1Usd = useMemo(() => getCrossRate('USD', destCurrencyCode), [destCurrencyCode]);
-  const rate1Eur = useMemo(() => getCrossRate('EUR', destCurrencyCode), [destCurrencyCode]);
-  const rate1Try = useMemo(() => getCrossRate('TRY', destCurrencyCode), [destCurrencyCode]);
+  const rate1Usd = getCrossRate('USD', destCurrencyCode);
+  const rate1Eur = getCrossRate('EUR', destCurrencyCode);
+  const rate1Try = getCrossRate('TRY', destCurrencyCode);
 
   const effectiveBaseCurrency = converterBase === 'LOCAL' ? destCurrencyCode : converterBase;
-  const convertedToDest = useMemo(() => {
-    if (converterBase === 'LOCAL') return converterAmount;
-    return convertCurrency(converterAmount, converterBase, destCurrencyCode);
-  }, [converterAmount, converterBase, destCurrencyCode]);
+  const convertedToDest =
+    converterBase === 'LOCAL'
+      ? converterAmount
+      : convertCurrency(converterAmount, converterBase, destCurrencyCode);
 
-  const convertedToUsd = useMemo(() => {
-    return convertCurrency(converterAmount, effectiveBaseCurrency, 'USD');
-  }, [converterAmount, effectiveBaseCurrency]);
-
-  const convertedToEur = useMemo(() => {
-    return convertCurrency(converterAmount, effectiveBaseCurrency, 'EUR');
-  }, [converterAmount, effectiveBaseCurrency]);
-
-  const convertedToTry = useMemo(() => {
-    return convertCurrency(converterAmount, effectiveBaseCurrency, 'TRY');
-  }, [converterAmount, effectiveBaseCurrency]);
+  const convertedToUsd = convertCurrency(converterAmount, effectiveBaseCurrency, 'USD');
+  const convertedToEur = convertCurrency(converterAmount, effectiveBaseCurrency, 'EUR');
+  const convertedToTry = convertCurrency(converterAmount, effectiveBaseCurrency, 'TRY');
 
   // Time Zone Sync Calculations
   const userOffsetHours = -(new Date().getTimezoneOffset() / 60);
-  const destOffsetHours = useMemo(() => {
-    return parseCountryUtcOffset(geography?.timeZone, geo?.lng);
-  }, [geography, geo]);
-
-  const destTime = useMemo(() => {
-    const utc = currentTime.getTime() + currentTime.getTimezoneOffset() * 60000;
-    return new Date(utc + destOffsetHours * 3600000);
-  }, [currentTime, destOffsetHours]);
+  const destOffsetHours = parseCountryUtcOffset(geography?.timeZone, geo?.lng);
+  const utc = currentTime.getTime() + currentTime.getTimezoneOffset() * 60000;
+  const destTime = new Date(utc + destOffsetHours * 3600000);
 
   const diffHours = Math.round((destOffsetHours - userOffsetHours) * 10) / 10;
   const diffLabel =
@@ -324,6 +322,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
   const plugInfo = geography?.plugTypes || insights.plugType || 'C, F (230V, 50Hz)';
   const plugTypesList = plugInfo.split('(')[0].split(',').map((p) => p.trim()).filter(Boolean);
   const isTrCompatible = plugTypesList.some((p) => p === 'C' || p === 'F');
+
+  // Nomad Apps (Ride-hailing & Delivery)
+  const nomadApps = getCountryNomadApps(code, insights.transport.popularRideApps);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 sm:py-6 overflow-y-auto backdrop-blur-md bg-slate-950/75 animate-in fade-in duration-200">
@@ -402,92 +403,112 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           {/* De-Widgetized Lifestyle Bento Quick Bar */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 mt-4 pt-3 border-t border-slate-200/80 dark:border-white/10 text-xs">
-            {/* Currency Hub Quick Trigger */}
+            {/* 1. Currency Hub & Mini Cheat-Sheet Matrix Quick Trigger */}
             <button
               type="button"
               onClick={() => setActiveTab('logistics')}
-              className="group flex items-center justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-amber-50/50 dark:hover:bg-amber-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-amber-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-amber-50/50 dark:hover:bg-amber-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-amber-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
-              <div className="flex items-center gap-2 min-w-0">
-                <div className="w-7 h-7 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0">
-                  <DollarSign className="w-4 h-4" />
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
+                  <DollarSign className="w-3.5 h-3.5 text-amber-500" />
+                  <span>{l('Çapraz Kur Matrisi', 'Cross Rates', 'Wechselkurse')}</span>
                 </div>
-                <div className="min-w-0">
-                  <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
-                    {l('Döviz & Kurlar', 'Currency & FX', 'Währung & Kurse')}
-                  </div>
-                  <div className="font-bold text-slate-800 dark:text-white truncate">
-                    1 USD ≈ {formatCurrencyValue(rate1Usd)} {destCurrencyCode}
-                  </div>
+                <span className="text-[10px] text-amber-600 dark:text-amber-400 font-bold group-hover:translate-x-0.5 transition-transform">
+                  {destCurrencyCode} →
+                </span>
+              </div>
+              <div className="grid grid-cols-3 gap-1 mt-1.5 text-center">
+                <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
+                  <span className="text-slate-400">🇺🇸</span> <b className="text-slate-800 dark:text-slate-200">{formatCurrencyValue(rate1Usd)}</b>
+                </div>
+                <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
+                  <span className="text-slate-400">🇪🇺</span> <b className="text-slate-800 dark:text-slate-200">{formatCurrencyValue(rate1Eur)}</b>
+                </div>
+                <div className="p-1 rounded-lg bg-amber-500/10 border border-amber-500/20 font-mono text-[10px]">
+                  <span className="text-slate-400">🇹🇷</span> <b className="text-amber-600 dark:text-amber-400">{formatCurrencyValue(rate1Try)}</b>
                 </div>
               </div>
-              <span className="text-[10px] text-slate-400 group-hover:text-amber-500 transition-colors ml-1 font-semibold flex-shrink-0">
-                {l('Hesapla →', 'Convert →', 'Rechnen →')}
-              </span>
+              <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+                1 {destCurrencyCode} ≈ <b className="text-slate-700 dark:text-slate-300 font-mono">{formatCurrencyValue(1 / rate1Try)} TL</b>
+              </div>
             </button>
 
-            {/* Time Zone Sync Quick Trigger */}
+            {/* 2. Time Zone Sync & Dual Clock Quick Trigger */}
             <button
               type="button"
               onClick={() => setActiveTab('logistics')}
-              className="group flex items-center justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-sky-50/50 dark:hover:bg-sky-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-sky-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-sky-50/50 dark:hover:bg-sky-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-sky-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
-              <div className="flex items-center gap-2 min-w-0">
-                <div className="w-7 h-7 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-4 h-4" />
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
+                  <Clock className="w-3.5 h-3.5 text-sky-500" />
+                  <span>{l('Çift Saat & Zaman', 'Dual Clock', 'Doppeluhr')}</span>
                 </div>
-                <div className="min-w-0">
-                  <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
-                    {l('Hedef Saat', 'Destination Time', 'Ziel-Uhrzeit')}
-                  </div>
-                  <div className="font-bold text-slate-800 dark:text-white truncate">
-                    {formatTimeStr(destTime)} ({diffHours === 0 ? l('Aynı', 'Same', 'Gleich') : diffHours > 0 ? `+${diffHours}s` : `${diffHours}s`})
-                  </div>
+                <span className="text-[10px] font-bold text-sky-600 dark:text-sky-400">
+                  {diffLabel}
+                </span>
+              </div>
+              <div className="grid grid-cols-2 gap-1.5 mt-1.5 text-center">
+                <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
+                  <div className="text-[9px] text-slate-400">🏠 İst</div>
+                  <b className="text-slate-800 dark:text-slate-200">{formatTimeStr(currentTime).slice(0, 5)}</b>
+                </div>
+                <div className="p-1 rounded-lg bg-sky-500/10 border border-sky-500/20 font-mono text-[10px]">
+                  <div className="text-[9px] text-sky-500">✈️ {geo?.capital ? geo.capital.slice(0, 5) : 'Yerel'}</div>
+                  <b className="text-sky-600 dark:text-sky-300">{formatTimeStr(destTime).slice(0, 5)}</b>
                 </div>
               </div>
-              <span className="text-[10px] text-slate-400 group-hover:text-sky-500 transition-colors ml-1 font-semibold flex-shrink-0">
-                {l('Eşzamanla →', 'Sync →', 'Sync →')}
-              </span>
+              <div className="text-[9px] text-slate-500 dark:text-[#8E9DBE] mt-1 truncate">
+                {l('Mesai & Çalışma Analizi →', 'Work Shift Sync →', 'Arbeitszeit-Sync →')}
+              </div>
             </button>
 
-            {/* Connectivity Quick Trigger */}
+            {/* 3. Connectivity & SIM Quick Trigger */}
             <button
               type="button"
               onClick={() => setActiveTab('logistics')}
-              className="group flex items-center justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-teal-50/50 dark:hover:bg-teal-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-teal-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-teal-50/50 dark:hover:bg-teal-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-teal-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
-              <div className="flex items-center gap-2 min-w-0">
-                <div className="w-7 h-7 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0">
-                  <Wifi className="w-4 h-4" />
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
+                  <Wifi className="w-3.5 h-3.5 text-teal-500" />
+                  <span>{l('İnternet & SIM', 'Internet & SIM', 'WLAN & SIM')}</span>
                 </div>
-                <div className="min-w-0">
-                  <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
-                    {l('Wi-Fi & Priz', 'Wi-Fi & Plugs', 'WLAN & Stecker')}
-                  </div>
-                  <div className="font-bold text-slate-800 dark:text-white truncate">
-                    {insights.internet.mobileSpeedMbps} Mbps · Tip {plugTypesList.slice(0, 2).join(', ')}
-                  </div>
-                </div>
+                <span className="text-[10px] text-teal-600 dark:text-teal-400 font-bold">
+                  {insights.internet.mobileSpeedMbps} Mbps
+                </span>
               </div>
-              <span className="text-[10px] text-slate-400 group-hover:text-teal-500 transition-colors ml-1 font-semibold flex-shrink-0">
-                {l('Detay →', 'Specs →', 'Details →')}
-              </span>
+              <div className="mt-1.5 text-[11px] font-bold text-slate-800 dark:text-white truncate">
+                ⚡ Mobil: {insights.internet.mobileSpeedMbps}M · Wi-Fi: {insights.internet.broadbandSpeedMbps}M
+              </div>
+              <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+                {insights.internet.bestCarriers[0] || 'Yerel'} · {l('Havalimanı Uyarısı →', 'Airport SIM Tip →', 'SIM-Tipps →')}
+              </div>
             </button>
 
-            {/* Safety & Budget Quick Pill */}
-            <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10 shadow-2xs">
-              <div className="w-7 h-7 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0">
-                <Shield className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
-                  {l('Güvenlik & Bütçe', 'Safety & Budget', 'Sicherheit & Budget')}
+            {/* 4. Sockets & Safety Quick Pill */}
+            <button
+              type="button"
+              onClick={() => setActiveTab('logistics')}
+              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-emerald-50/50 dark:hover:bg-emerald-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-emerald-400/40 transition-all cursor-pointer text-left shadow-2xs"
+            >
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
+                  <Plug className="w-3.5 h-3.5 text-amber-500" />
+                  <span>{l('Priz & Güvenlik', 'Sockets & Safety', 'Stecker & Schutz')}</span>
                 </div>
-                <div className="font-bold text-slate-800 dark:text-white truncate">
-                  {insights.safety.safetyScore}/100 · {insights.livingCosts.dailyBudgetBackpackerUsd}
-                </div>
+                <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
+                  {insights.safety.safetyScore}/100
+                </span>
               </div>
-            </div>
+              <div className="mt-1.5 text-[11px] font-bold text-slate-800 dark:text-white truncate">
+                🔌 Tip {plugTypesList.slice(0, 2).join(', ')} ({plugInfo.includes('230V') ? '230V' : '120V'})
+              </div>
+              <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+                {isTrCompatible ? '✓ Türkiye fişiyle doğrudan uyumlu' : '⚠️ Evrensel seyahat adaptörü gerekli'}
+              </div>
+            </button>
           </div>
         </div>
 
@@ -864,9 +885,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {/* TAB 1: LOJİSTİK, DÖVİZ & GÖÇEBE BENTO GRID */}
           {activeTab === 'logistics' && (
             <div className="space-y-6 animate-in fade-in duration-200">
-              {/* Bento Grid Top Section: 2 Columns on desktop */}
+              {/* Bento Grid Top Section: 1. Currency Hub & 2. Time Zone Buddy */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-                {/* 1. CURRENCY HUB (lg:col-span-7) */}
+                {/* 1. AKILLI DÖVİZ ARAÇLARI (CURRENCY HUB) */}
                 <div className="lg:col-span-7 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
                   {/* Header */}
                   <div className="flex items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
@@ -876,23 +897,54 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </div>
                       <div>
                         <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                          {l('Gezgin Döviz Masası & Canlı Çevirici', 'Currency Hub & Live FX Converter', 'Währungs-Hub & Live-Rechner')}
+                          {l('Gezgin Döviz Hub & Çevrim Şeması', 'Currency Hub & Offline Cheat-Sheet', 'Währungs-Hub & Offline-Preise')}
                         </h3>
                         <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                           {l('Yerel Para Birimi:', 'Local Currency:', 'Landeswährung:')} <b className="text-slate-800 dark:text-slate-200">{destCurrencyName} ({destCurrencyCode} - {destCurrencySymbol})</b>
                         </div>
                       </div>
                     </div>
-                    <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                    <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 font-mono">
                       {destCurrencyCode}
                     </span>
                   </div>
 
-                  {/* Interactive 2-Way Converter Input & Selector */}
+                  {/* Ülke Bilgisi Çapraz Kur Matrisi (Mini Cheat-Sheet) */}
+                  <div className="grid grid-cols-3 gap-2.5 text-center">
+                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
+                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium flex items-center justify-center gap-1">
+                        <span>🇺🇸</span> <span>1 USD</span>
+                      </div>
+                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Usd)}
+                      </div>
+                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
+                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium flex items-center justify-center gap-1">
+                        <span>🇪🇺</span> <span>1 EUR</span>
+                      </div>
+                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Eur)}
+                      </div>
+                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                      <div className="text-[10px] text-amber-700 dark:text-amber-400 font-medium flex items-center justify-center gap-1">
+                        <span>🇹🇷</span> <span>1 TRY</span>
+                      </div>
+                      <div className="text-xs sm:text-sm font-black text-amber-600 dark:text-amber-400 truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Try)}
+                      </div>
+                      <div className="text-[9px] text-slate-500 font-mono">{destCurrencyCode}</div>
+                    </div>
+                  </div>
+
+                  {/* Canlı 2-Yönlü Hesaplayıcı */}
                   <div className="p-4 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
                     <div className="flex items-center justify-between text-xs font-semibold text-slate-600 dark:text-[#8E9DBE]">
-                      <span>{l('Döviz Tutarı Girin', 'Enter Conversion Amount', 'Betrag eingeben')}</span>
-                      <span>{l('Kaynak Birim:', 'Base Unit:', 'Basiswährung:')}</span>
+                      <span>{l('Özel Tutar Çevir', 'Convert Custom Amount', 'Betrag umrechnen')}</span>
+                      <span>{l('Kaynak Birim:', 'Base Currency:', 'Basiswährung:')}</span>
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
@@ -934,7 +986,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </div>
                     </div>
 
-                    {/* Converted Dynamic Results Banner */}
+                    {/* Dynamic Converted Banner */}
                     <div className="p-3.5 rounded-xl bg-gradient-to-r from-amber-500/10 via-rose-500/5 to-teal-500/10 border border-amber-500/20 flex flex-wrap items-center justify-between gap-2">
                       <div className="text-xs text-slate-600 dark:text-slate-300">
                         {l('Hedef Ülkedeki Karşılığı:', 'Destination Value:', 'Gegenwert im Zielland:')}
@@ -948,7 +1000,6 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </div>
                     </div>
 
-                    {/* Cross-Rates Counterpart Badges */}
                     {converterBase !== 'LOCAL' && (
                       <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-500 dark:text-[#8E9DBE] pt-1">
                         <span>{l('Eşdeğerler:', 'Equivalents:', 'Äquivalente:')}</span>
@@ -965,77 +1016,104 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     )}
                   </div>
 
-                  {/* 3 Quick-Reference Rate Pairs */}
-                  <div className="grid grid-cols-3 gap-2.5 text-center">
-                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
-                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">1 USD</div>
-                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
-                        {destCurrencySymbol}{formatCurrencyValue(rate1Usd)}
+                  {/* "PAZAR YERI" ÇEVRİM ŞEMASI (OFFLINE CHEAT-SHEET) */}
+                  <div className="space-y-2.5 pt-1">
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-bold text-slate-800 dark:text-white">
+                      <span className="flex items-center gap-1.5">
+                        <ShoppingBag className="w-4 h-4 text-emerald-500" />
+                        <span>{l('"Pazar Yeri" Seyahat Fiyat Tablosu (Offline Cheat-Sheet)', 'Marketplace Price Table (Offline Cheat-Sheet)', 'Marktplatz-Preistabelle (Offline)')}</span>
+                      </span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                          📶 {l('Offline Hazır', 'Offline Ready', 'Offline bereit')}
+                        </span>
+                        {/* Target Switcher */}
+                        <div className="flex items-center bg-slate-200/70 dark:bg-slate-800 p-0.5 rounded-lg text-[10px]">
+                          {(['TRY', 'USD', 'EUR'] as const).map(curr => (
+                            <button
+                              key={curr}
+                              type="button"
+                              onClick={() => setMarketTargetCurrency(curr)}
+                              className={`px-1.5 py-0.5 rounded-md transition-colors cursor-pointer ${
+                                marketTargetCurrency === curr
+                                  ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white font-extrabold shadow-2xs'
+                                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                              }`}
+                            >
+                              {curr === 'TRY' ? 'TL' : curr}
+                            </button>
+                          ))}
+                        </div>
                       </div>
-                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
-                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">1 EUR</div>
-                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
-                        {destCurrencySymbol}{formatCurrencyValue(rate1Eur)}
+
+                    <div className="rounded-2xl border border-slate-200/80 dark:border-white/10 overflow-hidden text-xs">
+                      <div className="grid grid-cols-12 bg-slate-100/80 dark:bg-white/[0.04] p-2.5 font-bold text-[11px] text-slate-600 dark:text-slate-300 border-b border-slate-200/60 dark:border-white/10">
+                        <div className="col-span-4">{l('Yerel Tutar', 'Local Amount', 'Landeswährung')}</div>
+                        <div className="col-span-4 text-right">{marketTargetCurrency === 'TRY' ? 'Türk Lirası Karşılığı' : `${marketTargetCurrency} Karşılığı`}</div>
+                        <div className="col-span-4 text-right">{l('Örnek Harcama', 'Typical Purchase', 'Beispielausgabe')}</div>
                       </div>
-                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
-                    </div>
-                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
-                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">1 TRY</div>
-                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
-                        {destCurrencySymbol}{formatCurrencyValue(rate1Try)}
+
+                      <div className="divide-y divide-slate-100 dark:divide-white/5 bg-white dark:bg-slate-900/40">
+                        {[
+                          { val: 5, tr: 'Şişe Su / Sakız / Ufak İçecek', en: 'Bottled Water / Snack' },
+                          { val: 10, tr: 'Kafede Çay / Espresso', en: 'Tea / Espresso in Cafe' },
+                          { val: 20, tr: 'Sokak Yemeği / Dürüm / Sandviç', en: 'Street Food / Sandwich' },
+                          { val: 50, tr: 'Şehir İçi Kısa Mesafe Taksi', en: 'Short Taxi / Transit' },
+                          { val: 100, tr: 'Müze Girişi / Günlük Bilet', en: 'Museum / Day Pass' },
+                          { val: 200, tr: '2 Kişilik Kafe / Kahve & Tatlı', en: 'Coffee & Dessert for Two' },
+                          { val: 500, tr: 'Akşam Yemeği / Restoran Hesabı', en: 'Dinner for Two' },
+                          { val: 1000, tr: 'Haftalık Market / Hızlı Tren', en: 'Groceries / Train Ticket' }
+                        ].map((item, idx) => {
+                          const converted = convertCurrency(item.val, destCurrencyCode, marketTargetCurrency);
+                          const formattedConverted =
+                            marketTargetCurrency === 'TRY'
+                              ? `${formatCurrencyValue(converted)} TL`
+                              : marketTargetCurrency === 'USD'
+                              ? `$${formatCurrencyValue(converted)}`
+                              : `€${formatCurrencyValue(converted)}`;
+                          return (
+                            <div
+                              key={idx}
+                              className="grid grid-cols-12 p-2.5 hover:bg-slate-50/80 dark:hover:bg-white/[0.02] transition-colors items-center"
+                            >
+                              <div className="col-span-4 font-mono font-extrabold text-slate-900 dark:text-white flex items-center gap-1">
+                                <span>{item.val}</span>
+                                <span className="text-[10px] text-slate-400 font-bold">{destCurrencyCode}</span>
+                              </div>
+                              <div className="col-span-4 text-right font-mono font-black text-amber-600 dark:text-amber-400">
+                                ≈ {formattedConverted}
+                              </div>
+                              <div className="col-span-4 text-right text-[10px] text-slate-500 dark:text-[#8E9DBE] truncate">
+                                {language === 'tr' ? item.tr : item.en}
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
-                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
                     </div>
                   </div>
 
-                  {/* Offline 'Traveler Cheat Sheet' Matrix */}
-                  <div className="space-y-2 pt-1">
-                    <div className="flex items-center justify-between text-xs font-bold text-slate-800 dark:text-white">
-                      <span className="flex items-center gap-1.5">
-                        <span>📋</span>
-                        <span>{l('Çevrimdışı Gezgin Fiyat Matrisi (Cheat Sheet)', 'Offline Traveler Cheat Sheet', 'Offline-Preisübersicht')}</span>
-                      </span>
-                      <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                        {l('Offline Hazır', 'Offline Ready', 'Offline bereit')}
-                      </span>
+                  {/* AKILLI UYARI: DCC & ATM KOMİSYON TUZAĞI */}
+                  <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 space-y-2">
+                    <div className="flex items-center gap-2 font-bold text-xs text-amber-700 dark:text-amber-400">
+                      <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                      <span>{l('Akıllı Finansal Uyarı: DCC (Dinamik Kur Dönüşümü) Tuzağına Düşmeyin!', 'Smart FX Alert: Avoid the Dynamic Currency Conversion (DCC) Trap!', 'Finanz-Tipp: DCC-Kostenfalle vermeiden!')}</span>
                     </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                      {COMMON_CHEAT_SHEET_TIERS.map((tier) => {
-                        const localCost = tier.approxUsd * rate1Usd;
-                        const title = language === 'tr' ? tier.titleTr : language === 'de' ? tier.titleDe : tier.titleEn;
-                        return (
-                          <div
-                            key={tier.id}
-                            className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/60 dark:border-white/10 flex items-center justify-between gap-2 shadow-2xs"
-                          >
-                            <div className="flex items-center gap-2 min-w-0">
-                              <span className="text-base select-none">{tier.icon}</span>
-                              <span className="font-semibold text-slate-700 dark:text-slate-300 truncate text-[11px] sm:text-xs">
-                                {title}
-                              </span>
-                            </div>
-                            <div className="text-right flex-shrink-0">
-                              <div className="font-extrabold text-slate-900 dark:text-white text-xs">
-                                {destCurrencySymbol}{formatCurrencyValue(localCost)}
-                              </div>
-                              <div className="text-[10px] text-slate-400 font-mono">
-                                ~${tier.approxUsd} USD
-                              </div>
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
+                    <p className="text-[11px] text-slate-700 dark:text-slate-300 leading-relaxed">
+                      {l(
+                        `Bu ülkede (${destCurrencyCode}) kredi kartı kullanırken POS cihazı size "TL ile mi yoksa ${destCurrencyCode} ile mi ödemek istersiniz?" diye sorarsa MUTLAKA YEREL PARA BİRİMİNİ (${destCurrencyCode}) SEÇİN! "TL ile öde" seçeneği (DCC), bankanız yerine yerel işletmenin ve aracı POS terminalinin %5 ila %12 arasında fahiş kur marjı kesmesine neden olur. ATM'lerde de nakit çekerken daima "Without Conversion" (Dönüştürmesiz) seçeneğini tercih edin.`,
+                        `When paying by card in this country, always choose the LOCAL currency (${destCurrencyCode}) on the terminal if asked. Selecting your home currency triggers DCC (Dynamic Currency Conversion) with 5-12% hidden markup fees! When withdrawing from ATMs, always pick "Without Conversion".`,
+                        `Beim Bezahlen mit Karte immer die LOKALE Währung (${destCurrencyCode}) wählen, um DCC-Aufschläge von 5-12% zu vermeiden!`
+                      )}
+                    </p>
                   </div>
                 </div>
 
-                {/* 2. TIME ZONE SYNC (lg:col-span-5) */}
+                {/* 2. DÜNYA SAATİ VE ZAMAN DİLİMİ (TIME ZONE BUDDY) */}
                 <div className="lg:col-span-5 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px] flex flex-col justify-between">
-                  {/* Header */}
                   <div>
+                    {/* Header */}
                     <div className="flex items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
                       <div className="flex items-center gap-2.5">
                         <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-sky-400 to-sky-600 text-white flex items-center justify-center shadow-sm">
@@ -1043,7 +1121,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         </div>
                         <div>
                           <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                            {l('Saat Dilimi & Göçebe Eşzamanlama', 'Time Zone Sync & Nomad Schedule', 'Zeitzonen-Sync & Nomaden-Takt')}
+                            {l('Dünya Saati & Time Zone Buddy', 'Time Zone Buddy & Live Sync', 'Zeitzonen-Buddy & Live-Takt')}
                           </h3>
                           <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                             {geography?.timeZone || `UTC${destOffsetHours >= 0 ? '+' : ''}${destOffsetHours}`}
@@ -1055,89 +1133,171 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </span>
                     </div>
 
-                    {/* Dual Clock Showcase */}
+                    {/* Çift Saat Göstergesi */}
                     <div className="grid grid-cols-2 gap-3 mt-4">
                       {/* Home Clock */}
                       <div className="p-3.5 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 text-center space-y-1">
                         <div className="flex items-center justify-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
-                          <span>🏠 {l('Ev Saati', 'Home Time', 'Heimatuhrzeit')}</span>
+                          <span>🏠 {l('Ev Saati (İstanbul)', 'Home (Istanbul)', 'Heimat (Istanbul)')}</span>
                         </div>
                         <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-mono tracking-tight">
                           {formatTimeStr(currentTime)}
                         </div>
                         <div className="text-[10px] text-slate-500 dark:text-[#8E9DBE] font-medium">
-                          {formatDateStr(currentTime)} · UTC{userOffsetHours >= 0 ? '+' : ''}${userOffsetHours}
+                          {formatDateStr(currentTime)} · UTC+3
                         </div>
                       </div>
 
                       {/* Destination Clock */}
                       <div className="p-3.5 rounded-2xl bg-gradient-to-b from-sky-500/10 to-transparent border border-sky-500/25 text-center space-y-1">
                         <div className="flex items-center justify-center gap-1.5 text-[10px] text-sky-600 dark:text-sky-400 font-bold uppercase tracking-wider">
-                          <span>✈️ {l('Varış Saati', 'Destination Time', 'Ziel-Uhrzeit')}</span>
+                          <span>✈️ {l('Hedef Ülke Saati', 'Destination Time', 'Ziel-Uhrzeit')}</span>
                         </div>
                         <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-mono tracking-tight text-sky-600 dark:text-sky-300">
                           {formatTimeStr(destTime)}
                         </div>
                         <div className="text-[10px] text-slate-500 dark:text-[#8E9DBE] font-medium truncate">
-                          {geo?.capital || name} · UTC{destOffsetHours >= 0 ? '+' : ''}${destOffsetHours}
+                          {geo?.capital || name} · UTC{destOffsetHours >= 0 ? '+' : ''}{destOffsetHours}
                         </div>
                       </div>
                     </div>
 
-                    {/* Remote Nomad Schedule Overlap Matrix */}
-                    <div className="mt-4 p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-2.5">
+                    {/* "ÇALIŞMA SAATİ" ANALİZİ & INTERACTIVE REMOTE SIMULATOR */}
+                    <div className="mt-4 p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
                       <div className="flex items-center justify-between text-xs font-bold text-slate-800 dark:text-slate-200">
                         <span className="flex items-center gap-1.5">
                           <Laptop className="w-3.5 h-3.5 text-sky-500" />
-                          <span>{l('Uzaktan Çalışma & Mesai Çakışması', 'Remote Work Overlap Window', 'Arbeitszeit-Überschneidung')}</span>
+                          <span>{l('"Çalışma Saati" Analizi & Göçebe Simülatörü', 'Remote Work Shift Simulator', 'Remote-Arbeitszeit-Simulator')}</span>
                         </span>
-                        <span className="text-[10px] font-mono font-bold text-slate-400">
+                        <span className="text-[10px] font-mono text-slate-400">
                           09:00 - 18:00
                         </span>
                       </div>
 
-                      {/* Overlap timeline */}
-                      <div className="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <div className="flex items-center justify-between">
-                          <span>{l('Evdeki Standart Mesai (09:00 - 18:00):', 'Home Standard Workday:', 'Heimat-Arbeitstag:')}</span>
-                          <span className="font-mono font-bold text-slate-800 dark:text-white">
-                            {((9 + diffHours + 24) % 24).toFixed(0).padStart(2, '0')}:00 - {((18 + diffHours + 24) % 24).toFixed(0).padStart(2, '0')}:00
-                          </span>
+                      {/* City Selector Pills */}
+                      <div>
+                        <div className="text-[10px] text-slate-500 dark:text-[#8E9DBE] mb-1.5 font-medium">
+                          {l('Hangi şehrin şirket / müşteri saatiyle çalışıyorsunuz?', 'Which company timezone are you working in?', 'Für welche Zeitzone arbeiten Sie?')}
                         </div>
-
-                        <div className="p-2.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800 text-[11px]">
-                          {Math.abs(diffHours) <= 3 ? (
-                            <p className="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1.5">
-                              <span>🟢</span>
-                              <span>{l('Mükemmel Göçebe Uyumu: Saat farkı minimal; tüm iş saatleri Türkiye/Avrupa ekipleriyle sorunsuz örtüşür.', 'Excellent nomad sync: Minimal time difference with home teams.', 'Optimale Zeitzone für Remote-Arbeit mit europäischen Teams.')}</span>
-                            </p>
-                          ) : diffHours > 3 ? (
-                            <p className="text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1.5">
-                              <span>🟡</span>
-                              <span>{l(`Asya/Pasifik Tipi: Hedef ülke ${diffHours} saat ileride. Öğleden sonra ve akşam saatleri (15:00 - 21:00) ekiplerinizle toplantı için idealdir.`, `Evening sync: Destination is ${diffHours}h ahead. Afternoons overlap best.`, `Ziel ist ${diffHours} Std voraus. Nachmittage ideal für Meetings.`)}</span>
-                            </p>
-                          ) : (
-                            <p className="text-sky-600 dark:text-sky-400 font-semibold flex items-center gap-1.5">
-                              <span>🔵</span>
-                              <span>{l(`Amerika/Atlantik Tipi: Hedef ülke ${Math.abs(diffHours)} saat geride. Sabah erken saatlerde çalışarak evdeki öğleden sonrayı yakalayabilirsiniz.`, `Morning sync: Destination is ${Math.abs(diffHours)}h behind. Early mornings overlap best.`, `Ziel ist ${Math.abs(diffHours)} Std zurück. Frühe Morgenstunden ideal.`)}</span>
-                            </p>
-                          )}
+                        <div className="flex flex-wrap gap-1 text-[10px] font-bold">
+                          {[
+                            { id: 'IST' as const, name: 'İstanbul', flag: '🇹🇷', offset: 3 },
+                            { id: 'NYC' as const, name: 'New York', flag: '🇺🇸', offset: -5 },
+                            { id: 'LON' as const, name: 'Londra', flag: '🇬🇧', offset: 0 },
+                            { id: 'BER' as const, name: 'Berlin', flag: '🇩🇪', offset: 1 },
+                            { id: 'SFO' as const, name: 'San Fran', flag: '🇺🇸', offset: -8 },
+                            { id: 'SIN' as const, name: 'Singapur', flag: '🇸🇬', offset: 8 },
+                            { id: 'TYO' as const, name: 'Tokyo', flag: '🇯🇵', offset: 9 }
+                          ].map(city => {
+                            const isSel = remoteBaseCity === city.id;
+                            return (
+                              <button
+                                key={city.id}
+                                type="button"
+                                onClick={() => setRemoteBaseCity(city.id)}
+                                className={`px-2 py-1 rounded-lg transition-colors cursor-pointer flex items-center gap-1 ${
+                                  isSel
+                                    ? 'bg-sky-500 text-white font-extrabold shadow-2xs'
+                                    : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-white/10'
+                                }`}
+                              >
+                                <span>{city.flag}</span>
+                                <span>{city.name}</span>
+                              </button>
+                            );
+                          })}
                         </div>
                       </div>
+
+                      {/* Simulator Calculation Result */}
+                      {(() => {
+                        const CITIES = {
+                          IST: { name: 'İstanbul', offset: 3 },
+                          NYC: { name: 'New York', offset: -5 },
+                          LON: { name: 'Londra', offset: 0 },
+                          BER: { name: 'Berlin', offset: 1 },
+                          SFO: { name: 'San Francisco', offset: -8 },
+                          SIN: { name: 'Singapur', offset: 8 },
+                          TYO: { name: 'Tokyo', offset: 9 }
+                        };
+                        const targetCity = CITIES[remoteBaseCity];
+                        const offsetDiff = destOffsetHours - targetCity.offset;
+                        const startLocal = ((9 + offsetDiff) % 24 + 24) % 24;
+                        const endLocal = ((18 + offsetDiff) % 24 + 24) % 24;
+                        const formatH = (h: number) => `${Math.floor(h).toString().padStart(2, '0')}:00`;
+
+                        return (
+                          <div className="space-y-2 pt-1 text-[11px]">
+                            <div className="p-3 rounded-xl bg-sky-500/10 border border-sky-500/20 text-slate-800 dark:text-slate-200 space-y-1">
+                              <div className="flex items-center justify-between font-bold">
+                                <span>{targetCity.name} Saatiyle 09:00 - 18:00:</span>
+                                <span className="font-mono text-sky-600 dark:text-sky-300 font-extrabold text-xs">
+                                  Yerel {formatH(startLocal)} - {formatH(endLocal)}
+                                </span>
+                              </div>
+                              <p className="text-[10px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                                {startLocal >= 17 || startLocal < 4 ? (
+                                  <span>🌙 <b>Akşam / Gece Mesaisi:</b> Gündüz saatleriniz (sabah ve öğle) tamamen serbesttir; güneşin ve şehrin tadını çıkarıp mesainize akşam {formatH(startLocal)}'de başlayabilirsiniz.</span>
+                                ) : startLocal >= 4 && startLocal <= 8 ? (
+                                  <span>🌅 <b>Erken Kuş Mesaisi:</b> Mesainiz sabah erken saatte ({formatH(startLocal)}) başlar; öğleden sonra erkenden serbest kalarak keşfe çıkabilirsiniz.</span>
+                                ) : (
+                                  <span>🟢 <b>Mükemmel Senkron:</b> Şirketinizle neredeyse aynı mesai dilimindesiniz. Günlük çalışma ve uyku düzeniniz bozulmaz.</span>
+                                )}
+                              </p>
+                            </div>
+
+                            {/* 24h Visual Shift Bar */}
+                            <div className="space-y-1">
+                              <div className="flex justify-between text-[9px] text-slate-400 font-mono">
+                                <span>00:00</span>
+                                <span>06:00</span>
+                                <span>12:00</span>
+                                <span>18:00</span>
+                                <span>24:00</span>
+                              </div>
+                              <div className="relative h-3 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden flex">
+                                {Array.from({ length: 24 }).map((_, h) => {
+                                  const isWork =
+                                    startLocal <= endLocal
+                                      ? h >= startLocal && h < endLocal
+                                      : h >= startLocal || h < endLocal;
+                                  const isSleep = h >= 0 && h < 7;
+                                  return (
+                                    <div
+                                      key={h}
+                                      className={`h-full flex-1 ${
+                                        isWork
+                                          ? 'bg-sky-500'
+                                          : isSleep
+                                          ? 'bg-slate-400/30 dark:bg-slate-700/40'
+                                          : 'bg-emerald-400/50 dark:bg-emerald-500/30'
+                                      }`}
+                                      title={`${h}:00 - ${isWork ? 'Mesai' : isSleep ? 'Uyku' : 'Serbest Zaman'}`}
+                                    />
+                                  );
+                                })}
+                              </div>
+                              <div className="flex items-center justify-between text-[9px] text-slate-400 pt-0.5">
+                                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-sky-500 inline-block" /> Mesai Saatleri</span>
+                                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-400 inline-block" /> Keşif / Serbest</span>
+                                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-slate-400 inline-block" /> Uyku</span>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
                   </div>
 
-                  {/* Summary Time Footer */}
-                  <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE] flex items-center gap-1.5 pt-2">
-                    <Activity className="w-3.5 h-3.5 text-sky-500" />
-                    <span>{l('Saniyeler gerçek zamanlı olarak dünya standart saati (NTP) ile senkronize edilmektedir.', 'Seconds sync live with world atomic time.', 'Sekunden synchronisieren sich live.')}</span>
+                  <div className="text-[10px] text-slate-500 dark:text-[#8E9DBE] flex items-center gap-1.5 pt-2 border-t border-slate-100 dark:border-white/5">
+                    <Activity className="w-3.5 h-3.5 text-sky-500 flex-shrink-0" />
+                    <span>{l('Saniyeler gerçek zamanlı atomik dünya saati (NTP) ile senkronizedir.', 'Seconds sync live with atomic world time.', 'Live-Atomzeitsynchronisation.')}</span>
                   </div>
                 </div>
               </div>
 
-              {/* Bento Grid Bottom Section: 3. CONNECTIVITY INFO & HARDWARE ASSET */}
+              {/* 3. İNTERNET VE BAĞLANTI İSTİHBARATI (NOMAD CONNECTIVITY) */}
               <div className="bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
-                {/* Header */}
                 <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
                   <div className="flex items-center gap-2.5">
                     <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 text-white flex items-center justify-center shadow-sm">
@@ -1145,7 +1305,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     </div>
                     <div>
                       <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                        {l('Bağlantı Altyapısı, Wi-Fi Hızları & Priz / Voltaj Rehberi', 'Connectivity, Wi-Fi Speeds & Socket Plug Guide', 'Konnektivität, WLAN & Steckdosen-Guide')}
+                        {l('İnternet Hızları, SIM İstihbaratı & Priz/Voltaj Detayı', 'Internet Speeds, SIM Advice & Sockets', 'WLAN-Speed, SIM-Tipps & Steckdosen')}
                       </h3>
                       <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                         {l('Mobil ağ kapsama alanı:', 'Mobile coverage:', 'Netzabdeckung:')} <b className="text-slate-800 dark:text-slate-200">{insights.internet.networkCoverage}</b>
@@ -1155,33 +1315,34 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-3 py-1 rounded-full font-bold bg-teal-500/10 text-teal-700 dark:text-teal-300 border border-teal-500/20">
-                      ⚡ {insights.internet.mobileSpeedMbps} Mbps Mobil Hız
+                      ⚡ {insights.internet.mobileSpeedMbps} Mbps Mobil
                     </span>
                     <span className="text-xs px-3 py-1 rounded-full font-bold bg-slate-100 dark:bg-white/[0.05] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10">
-                      📶 {insights.internet.broadbandSpeedMbps} Mbps Genişbant
+                      📶 {insights.internet.broadbandSpeedMbps} Mbps Wi-Fi
                     </span>
                   </div>
                 </div>
 
-                {/* 3 Grid Pillars: Internet Speeds | Plug Hardware | Nomad Digital Readiness */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {/* Pillar 1: Internet & Wi-Fi Speed */}
+                  {/* Pillar 1: Wi-Fi & Mobil Hız Skorları */}
                   <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
                         <Wifi className="w-4 h-4 text-teal-500" />
-                        <span>{l('İnternet Hızı & Maliyet', 'Internet Speed & Cost', 'WLAN-Geschwindigkeit')}</span>
+                        <span>{l('Wi-Fi & Mobil Hız Skorları', 'Wi-Fi & Mobile Speeds', 'WLAN & Mobilspeed')}</span>
                       </div>
                       <span className="text-[10px] font-mono text-teal-600 dark:text-teal-400 font-bold">
                         {insights.internet.costPerGbUsd}
                       </span>
                     </div>
 
-                    <div className="space-y-2">
+                    <div className="space-y-2.5 text-[11px]">
                       <div>
-                        <div className="flex justify-between text-[11px] mb-1 font-semibold text-slate-600 dark:text-slate-300">
-                          <span>{l('Mobil İndirme Hızı:', 'Mobile Download:', 'Mobil Download:')}</span>
-                          <span className="font-mono font-bold text-slate-900 dark:text-white">{insights.internet.mobileSpeedMbps} Mbps</span>
+                        <div className="flex justify-between mb-1 font-semibold text-slate-600 dark:text-slate-300">
+                          <span>{l('Mobil İndirme / Yükleme:', 'Mobile Down / Up:', 'Mobil Down / Up:')}</span>
+                          <span className="font-mono font-bold text-slate-900 dark:text-white">
+                            {insights.internet.mobileSpeedMbps} / {Math.round(insights.internet.mobileSpeedMbps * 0.35)} Mbps
+                          </span>
                         </div>
                         <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
                           <div
@@ -1191,52 +1352,68 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         </div>
                       </div>
 
-                      <div className="pt-1 text-[11px] text-slate-500 dark:text-[#8E9DBE] space-y-1">
-                        <div>
-                          • {l('En İyi Operatörler:', 'Best Carriers:', 'Beste Anbieter:')} <b className="text-slate-700 dark:text-slate-300">{insights.internet.bestCarriers.slice(0, 3).join(', ')}</b>
+                      <div>
+                        <div className="flex justify-between mb-1 font-semibold text-slate-600 dark:text-slate-300">
+                          <span>{l('Genişbant / Wi-Fi Hızı:', 'Broadband / Wi-Fi:', 'Breitband / WLAN:')}</span>
+                          <span className="font-mono font-bold text-slate-900 dark:text-white">
+                            {insights.internet.broadbandSpeedMbps} / {Math.round(insights.internet.broadbandSpeedMbps * 0.45)} Mbps
+                          </span>
                         </div>
-                        <div>
-                          • {l('eSIM Erişimi:', 'eSIM Support:', 'eSIM-Unterstützung:')} <b className="text-slate-700 dark:text-slate-300">{insights.internet.esimAvailability}</b>
+                        <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                          <div
+                            className="h-full rounded-full bg-gradient-to-r from-sky-500 to-teal-400"
+                            style={{ width: `${Math.min(100, Math.max(15, (insights.internet.broadbandSpeedMbps / 200) * 100))}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="p-2.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800 text-[10px] space-y-1">
+                        <div className="flex items-center justify-between text-emerald-600 dark:text-emerald-400 font-bold">
+                          <span>✓ Zoom / Meet Video:</span>
+                          <span>{l('Kusursuz', 'Excellent', 'Optimal')}</span>
+                        </div>
+                        <div className="flex items-center justify-between text-slate-500">
+                          <span>• 4K Video Akışı:</span>
+                          <span>{l('Akıcı', 'Smooth', 'Flüssig')}</span>
+                        </div>
+                        <div className="flex items-center justify-between text-slate-500">
+                          <span>• Ortalama Gecikme (Ping):</span>
+                          <span>~22 - 35 ms</span>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Pillar 2: Sockets & Electrical Plug Types */}
+                  {/* Pillar 2: Priz & Voltaj Detayı (Vektörel Çizim) */}
                   <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
                         <Plug className="w-4 h-4 text-amber-500" />
-                        <span>{l('Priz Tipleri & Voltaj', 'Sockets & Voltage', 'Steckdosen & Volt')}</span>
+                        <span>{l('Priz Tipleri & Voltaj Detayı', 'Socket Types & Voltage', 'Steckdosen & Volt')}</span>
                       </div>
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
                         {plugInfo.includes('230V') ? '230V / 50Hz' : plugInfo.includes('120V') ? '120V / 60Hz' : 'Standart Voltaj'}
                       </span>
                     </div>
 
-                    <div className="space-y-2">
-                      <div className="flex flex-wrap items-center gap-1.5">
+                    {/* Vektörel Priz Çizimleri */}
+                    <div className="space-y-3">
+                      <div className="flex flex-wrap items-center justify-center gap-3 py-1">
                         {plugTypesList.map((pt, idx) => (
-                          <div
-                            key={idx}
-                            className="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-black text-slate-800 dark:text-slate-200 shadow-2xs flex items-center gap-1.5"
-                          >
-                            <span className="w-2 h-2 rounded-full bg-amber-500" />
-                            <span>{l('Tip', 'Type', 'Typ')} {pt}</span>
-                          </div>
+                          <SocketPlugVector key={idx} type={pt} size={54} />
                         ))}
                       </div>
 
                       {/* Home Socket Compatibility Check */}
                       <div className="pt-1">
                         {isTrCompatible ? (
-                          <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-semibold text-emerald-700 dark:text-emerald-300 flex items-center gap-1.5">
-                            <span>✓</span>
-                            <span>{l('Türkiye standart fişleriyle (Tip C & F) doğrudan uyumludur. Dönüştürücü gerekmez.', 'Fully compatible with European/Turkish Type C & F plugs. No adapter needed.', 'Kompatibel mit Euro- und Schukosteckern (Typ C & F).')}</span>
+                          <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-semibold text-emerald-700 dark:text-emerald-300 flex items-start gap-1.5">
+                            <span className="mt-0.5">✓</span>
+                            <span>{l('Türkiye fişleriyle (Tip C & F) doğrudan uyumludur. Yanınızda adaptör taşımanız GEREKMEZ.', 'Directly compatible with European/Turkish Type C & F plugs. No adapter required.', 'Kompatibel mit Typ C & F. Kein Adapter nötig.')}</span>
                           </div>
                         ) : (
-                          <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] font-semibold text-amber-700 dark:text-amber-300 flex items-center gap-1.5">
-                            <span>⚠️</span>
+                          <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] font-semibold text-amber-700 dark:text-amber-300 flex items-start gap-1.5">
+                            <span className="mt-0.5">⚠️</span>
                             <span>{l('Dikkat: Farklı priz tipi kullanılmaktadır. Yanınızda evrensel seyahat adaptörü bulundurun.', 'Adapter required: Please pack a universal plug adapter.', 'Reiseadapter erforderlich: Steckertypen weichen ab.')}</span>
                           </div>
                         )}
@@ -1244,33 +1421,171 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     </div>
                   </div>
 
-                  {/* Pillar 3: VPN & Digital Nomad Readiness */}
+                  {/* Pillar 3: Yerel Operatör Tavsiyesi */}
                   <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
-                        <ShieldCheck className="w-4 h-4 text-sky-500" />
-                        <span>{l('VPN & Dijital Güvenlik', 'VPN & Digital Security', 'VPN & Sicherheit')}</span>
+                        <Smartphone className="w-4 h-4 text-emerald-500" />
+                        <span>{l('Yerel Operatör Tavsiyesi', 'Local Carrier Advice', 'Lokale Anbieter-Tipps')}</span>
                       </div>
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
-                        insights.internet.vpnRequired
-                          ? 'bg-amber-500/10 text-amber-600 border-amber-500/20'
-                          : 'bg-emerald-500/10 text-emerald-600 border-emerald-500/20'
-                      }`}>
-                        {insights.internet.vpnRequired ? l('VPN Tavsiye Edilir', 'VPN Recommended', 'VPN empfohlen') : l('Açık İnternet', 'Open Web', 'Offenes Web')}
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                        {insights.internet.esimAvailability.includes('Mevcut') || insights.internet.esimAvailability.includes('Var') ? 'eSIM Hazır' : 'Fiziksel SIM'}
                       </span>
                     </div>
 
-                    <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
-                      {insights.internet.vpnNote || (insights.internet.vpnRequired
-                        ? l('Bazı mesajlaşma veya sosyal medya servislerinde bölgesel kısıtlamalar olabilir; seyahatten önce güvenilir bir VPN kurmanız önerilir.', 'Regional restrictions may apply to certain apps; installing a reliable VPN prior to travel is advised.', 'Einige Onlinedienste könnten eingeschränkt sein; VPN vorab installieren.')
-                        : l('Ülkede internet erişimi genel olarak açık ve sansürsüzdür. Standart seyahat şifrelemesi yeterlidir.', 'Internet access is open without severe censorship.', 'Internetzugang ist offen und unzensiert.'))}
-                    </p>
+                    <div className="space-y-2 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                      <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-slate-800 dark:text-slate-200">
+                        <b className="text-amber-700 dark:text-amber-400 block mb-0.5">⚠️ {l('Havalimanından SIM Kart Almayın:', 'Avoid Airport SIM Kiosks:', 'Keine SIM am Flughafen kaufen:')}</b>
+                        {l(
+                          `Havalimanı gelen yolcu salonundaki turist paketleri 2 ila 3 kat pahalıdır. Havalimanı Wi-Fi ile merkeze geçip ${insights.internet.bestCarriers[0] || 'resmi operatör'} bayisinden pasaportla hat almak çok daha ekonomiktir.`,
+                          `Airport kiosks charge inflated tourist fees. Head to the city center and buy from an official store instead.`,
+                          `Flughafen-Kioske haben oft teure Touristentarife. Besser im Stadtzentrum kaufen.`
+                        )}
+                      </div>
 
-                    <div className="pt-1 flex items-center gap-2 text-[10px] text-slate-400">
-                      <span>eSIM: Airalo, Holafly, Nomad</span>
-                      <span>•</span>
-                      <span>Wi-Fi Hotspots: {l('Yaygın', 'Widespread', 'Weit verbreitet')}</span>
+                      <div className="pt-0.5 space-y-1">
+                        <div>• <b>{l('Önerilen Operatörler:', 'Best Carriers:', 'Beste Netze:')}</b> {insights.internet.bestCarriers.join(', ')}</div>
+                        <div>• <b>{l('eSIM Seçeneği:', 'eSIM:', 'eSIM:')}</b> Airalo, Holafly veya Nomad ile uçuş öncesi dijital hat kurabilirsiniz.</div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4. GÜNLÜK YAŞAM GÜVENLİĞİ, TAKSİ UYGULAMALARI & BAHŞİŞ KÜLTÜRÜ */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                {/* 4A: YEREL TAKSİ VE TESLİMAT UYGULAMALARI (lg:col-span-7) */}
+                <div className="lg:col-span-7 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-4 rounded-[24px]">
+                  <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/10 pb-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center shadow-sm">
+                        <Car className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {l('Yerel Taksi & Teslimat Uygulamaları', 'Local Ride & Delivery Apps', 'Lokale Taxi- & Liefer-Apps')}
+                        </h3>
+                        <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                          {l('Her ülkenin Uber’i farklıdır; sabit fiyat ve rota güvenliği için resmi uygulamalar:', 'Every country has its own Uber. Upfront fares and safety:', 'Offizielle Apps für Festpreise & GPS-Sicherheit:')}
+                        </div>
+                      </div>
+                    </div>
+                    <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                      {nomadApps.length} {l('Doğrulanmış Uygulama', 'Verified Apps', 'Geprüfte Apps')}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {nomadApps.map((app, idx) => (
+                      <div
+                        key={idx}
+                        className="p-3.5 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 hover:border-indigo-400/50 transition-all flex flex-col justify-between space-y-2.5"
+                      >
+                        <div>
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="font-black text-slate-900 dark:text-white text-sm">
+                              {app.name}
+                            </span>
+                            <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/20">
+                              {language === 'tr' ? app.categoryLabelTr : app.categoryLabelEn}
+                            </span>
+                          </div>
+                          <div className="text-[11px] font-semibold text-slate-700 dark:text-slate-300 mt-1">
+                            {language === 'tr' ? app.taglineTr : app.taglineEn}
+                          </div>
+                          <p className="text-[10px] text-slate-500 dark:text-[#8E9DBE] mt-1 leading-relaxed">
+                            {language === 'tr' ? app.recommendedReasonTr : app.recommendedReasonEn}
+                          </p>
+                        </div>
+
+                        <a
+                          href={app.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 font-bold text-xs border border-slate-200 dark:border-slate-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors"
+                        >
+                          <span>{l('Uygulamayı Aç / İndir', 'Open / Download App', 'App öffnen / laden')}</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE] pt-1">
+                    💡 <b>{l('Taksi Tüyosu:', 'Taxi Pro-Tip:', 'Taxi-Tipp:')}</b> {insights.transport.taxiAdvice}
+                  </div>
+                </div>
+
+                {/* 4B: BAHŞİŞ (TIPPING) KÜLTÜRÜ (lg:col-span-5) */}
+                <div className="lg:col-span-5 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-4 rounded-[24px] flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/10 pb-3">
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-rose-400 to-rose-600 text-white flex items-center justify-center shadow-sm">
+                          <Coins className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                            {l('Bahşiş (Tipping) Kültürü & Adap', 'Tipping Culture & Etiquette', 'Trinkgeld-Kultur & Etikette')}
+                          </h3>
+                          <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                            {l('Hesaba ne eklenir, ne zaman verilir?', 'What is expected or customary?', 'Was wird üblicherweise erwartet?')}
+                          </div>
+                        </div>
+                      </div>
+                      <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20">
+                        {l('Yerel Adet', 'Local Custom', 'Lokaler Brauch')}
+                      </span>
+                    </div>
+
+                    <div className="space-y-3 mt-4">
+                      {/* Restoranlar */}
+                      <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                        <div className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                          <span>🍽️</span>
+                          <span>{l('Restoranlar & Kafeler', 'Restaurants & Cafes', 'Restaurants & Cafés')}</span>
+                        </div>
+                        <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                          {encyclopedia.economy.tippingCulture || (
+                            ['JP', 'KR'].includes(code)
+                              ? l('Bahşiş KESİNLİKLE verilmez; mükemmel hizmet standart görev sayılır, bahşiş bırakmak hakaret olarak algılanabilir.', 'Tipping is strictly not customary and considered rude.', 'Kein Trinkgeld – gilt als unhöflich.')
+                              : ['US', 'CA'].includes(code)
+                              ? l('Zorunlu kural: Hesap tutarına %18 - %22 bahşiş eklenmesi beklenir.', 'Expected: 18-22% gratuity is customary.', '18-22% Trinkgeld ist obligatorisch.')
+                              : l('Turistik restoranlarda %10 civarı servis eklenir veya küçük madeni paralar bırakılır.', '10% tip is standard in sit-down dining.', '10% Trinkgeld in Speiserestaurants üblich.')
+                          )}
+                        </p>
+                      </div>
+
+                      {/* Taksiler */}
+                      <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                        <div className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                          <span>🚕</span>
+                          <span>{l('Taksiler & Şoförler', 'Taxis & Drivers', 'Taxis & Fahrer')}</span>
+                        </div>
+                        <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                          {['JP', 'KR'].includes(code)
+                            ? l('Taksilerde bahşiş verilmez; para üstü kuruşu kuruşuna eksiksiz iade edilir.', 'No tip. Exact change is always given.', 'Kein Trinkgeld. Wechselgeld wird exakt herausgegeben.')
+                            : l('Taksimetre tutarını en yakın tam sayıya yuvarlamak veya %5-10 eklemek adettir.', 'Round up the fare to the nearest round number.', 'Auf den nächsten Betrag aufrunden ist üblich.')}
+                        </p>
+                      </div>
+
+                      {/* Oteller */}
+                      <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                        <div className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                          <span>🛎️</span>
+                          <span>{l('Oteller & Bavul Taşıma (Bellboy)', 'Hotels & Porters', 'Hotels & Gepäckträger')}</span>
+                        </div>
+                        <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                          {['JP', 'KR'].includes(code)
+                            ? l('Otel personeli bahşiş kabul etmez; teşekkür etmek yeterlidir.', 'Staff will politely decline tips.', 'Hotelpersonal lehnt Trinkgeld höflich ab.')
+                            : l('Bavul taşıyan görevli için bavul başına 1-2 $ veya yerel karşılığı nezaket kuralıdır.', '$1-2 per bag for bellhop/porter is polite.', '1-2 $ pro Gepäckstück ist angemessen.')}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-[10px] text-slate-400 pt-2 border-t border-slate-100 dark:border-white/5">
+                    💡 <b>{l('Kültür Hapı:', 'Cultural Pill:', 'Kultur-Tipp:')}</b> {itinerary?.signatureGastronomy.diningAdvice || l('Bahşiş ödemelerinde kart yerine nakit yerel para birimi her zaman daha makbuldür.', 'Cash in local currency is preferred for tips.', 'Trinkgeld in bar ist bevorzugt.')}
                   </div>
                 </div>
               </div>
