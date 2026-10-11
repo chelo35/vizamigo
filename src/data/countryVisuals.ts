@@ -1,11 +1,11 @@
 /**
  * Curated Scenic Landscape Photography Database for Vizamigo
- * Provides dimmed high-quality landscape thumbnails for destinations worldwide.
+ * Provides high-quality, authentic destination photography for countries worldwide.
  */
 
 // Curated high-res Unsplash landscape thumbnails optimized for travel apps
 const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = {
-  // Western Balkans & Mediterranean (User highlights: AL, BA)
+  // Western Balkans & Mediterranean (User highlights: AL, BA, ME, etc.)
   AL: {
     image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=480&q=80',
     landmark: 'Ksamil & Berat'
@@ -15,8 +15,8 @@ const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = 
     landmark: 'Mostar Stari Most'
   },
   ME: {
-    image: 'https://images.unsplash.com/photo-1555990538-1e4492bf35e8?auto=format&fit=crop&w=480&q=80',
-    landmark: 'Kotor Bay'
+    image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=480&q=80',
+    landmark: 'Kotor Bay & Adriatic'
   },
   RS: {
     image: 'https://images.unsplash.com/photo-1584448141569-69f342da535c?auto=format&fit=crop&w=480&q=80',
@@ -43,16 +43,22 @@ const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = 
     landmark: 'Cappadocia & Bosphorus'
   },
   GE: {
-    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=480&q=80',
-    landmark: 'Kazbegi Caucasus'
+    image: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=480&q=80',
+    landmark: 'Kazbegi Caucasus Mountains'
   },
   AM: {
     image: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=480&q=80',
     landmark: 'Mount Ararat & Sevan'
   },
   AZ: {
-    image: 'https://images.unsplash.com/photo-1583208573216-56ef58249a5b?auto=format&fit=crop&w=480&q=80',
-    landmark: 'Baku Flame Towers'
+    image: 'https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=480&q=80',
+    landmark: 'Baku Flame Towers & Caspian'
+  },
+
+  // Caribbean & Tropical (User highlights: BS - Bahamas)
+  BS: {
+    image: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=480&q=80',
+    landmark: 'Exuma Turquoise Waters'
   },
 
   // East & Southeast Asia
@@ -61,7 +67,7 @@ const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = 
     landmark: 'Mount Fuji & Kyoto'
   },
   TH: {
-    image: 'https://images.unsplash.com/photo-1506665531395-7d347d0af044?auto=format&fit=crop&w=480&q=80',
+    image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=480&q=80',
     landmark: 'Maya Bay & Phuket'
   },
   KR: {
@@ -93,11 +99,15 @@ const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = 
     landmark: 'Taipei 101 & Jiufen'
   },
   HK: {
-    image: 'https://images.unsplash.com/photo-1506970845346-22b9b7754b2d?auto=format&fit=crop&w=480&q=80',
-    landmark: 'Victoria Harbour'
+    image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=480&q=80',
+    landmark: 'Victoria Harbour & Skyline'
   },
 
-  // Europe Core
+  // Europe Core (User highlights: GB - UK)
+  GB: {
+    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=480&q=80',
+    landmark: 'London Big Ben & Thames'
+  },
   IT: {
     image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=480&q=80',
     landmark: 'Amalfi Coast & Rome'
@@ -123,16 +133,12 @@ const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = 
     landmark: 'Hallstatt & Vienna'
   },
   PT: {
-    image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd81?auto=format&fit=crop&w=480&q=80',
-    landmark: 'Lisbon & Algarve'
+    image: 'https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=480&q=80',
+    landmark: 'Lisbon & Algarve Coast'
   },
   NL: {
     image: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=480&q=80',
     landmark: 'Amsterdam Canals'
-  },
-  GB: {
-    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=480&q=80',
-    landmark: 'Big Ben & Highlands'
   },
   NO: {
     image: 'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?auto=format&fit=crop&w=480&q=80',
@@ -190,6 +196,9 @@ const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = 
   }
 };
 
+// Reliable high-resolution travel landscape fallback (Guaranteed 200 OK)
+export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&q=80';
+
 // Regional backup landscapes with elegant travel photography
 const REGIONAL_FALLBACKS: Record<string, { image: string; landmark: string }> = {
   europe: {
@@ -197,7 +206,7 @@ const REGIONAL_FALLBACKS: Record<string, { image: string; landmark: string }> = 
     landmark: 'European Heritage'
   },
   asia: {
-    image: 'https://images.unsplash.com/photo-1506665531395-7d347d0af044?auto=format&fit=crop&w=480&q=80',
+    image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=480&q=80',
     landmark: 'Asia-Pacific Panorama'
   },
   americas: {
@@ -213,7 +222,7 @@ const REGIONAL_FALLBACKS: Record<string, { image: string; landmark: string }> = 
     landmark: 'Oceanic Island Vistas'
   },
   default: {
-    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&q=80',
+    image: DEFAULT_TRAVEL_FALLBACK,
     landmark: 'Global Destination'
   }
 };
@@ -227,6 +236,5 @@ export function getCountryVisual(countryCode: string): { image: string; landmark
     return COUNTRY_LANDSCAPES[code];
   }
 
-  // Smart regional determination by ISO or default
   return REGIONAL_FALLBACKS.default;
 }

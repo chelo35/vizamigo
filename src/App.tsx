@@ -86,12 +86,12 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] dark:bg-gradient-to-br dark:from-[#090C1A] dark:via-[#0E1428] dark:to-[#131A38] text-slate-900 dark:text-white flex font-sans selection:bg-rose-500 selection:text-white relative overflow-x-hidden transition-colors">
+    <div className="min-h-screen bg-[#F8FAFC] dark:bg-gradient-to-br dark:from-[#0C0F19] dark:via-[#111625] dark:to-[#161D30] text-[#1A1D20] dark:text-white flex font-sans selection:bg-[#FF6B6B] selection:text-white relative overflow-x-hidden transition-colors">
       {/* Ambient luxury background glow orbs (Nubair celestial midnight & Social Media App luminous atmosphere) */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-sky-500/10 dark:bg-blue-600/[0.08] rounded-full blur-[150px]" />
-        <div className="absolute top-1/3 -right-20 w-[440px] h-[440px] bg-emerald-500/8 dark:bg-indigo-600/[0.07] rounded-full blur-[150px]" />
-        <div className="absolute -bottom-20 left-1/3 w-[520px] h-[520px] bg-amber-500/8 dark:bg-cyan-500/[0.04] rounded-full blur-[140px]" />
+        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-rose-500/[0.05] dark:bg-[#FF6B6B]/[0.04] rounded-full blur-[160px]" />
+        <div className="absolute top-1/3 -right-20 w-[440px] h-[440px] bg-sky-500/[0.06] dark:bg-blue-600/[0.05] rounded-full blur-[150px]" />
+        <div className="absolute -bottom-20 left-1/3 w-[520px] h-[520px] bg-amber-500/[0.05] dark:bg-[#E5A93C]/[0.03] rounded-full blur-[150px]" />
       </div>
 
       {/* ========================================================
@@ -108,9 +108,9 @@ function AppContent() {
       />
 
       {/* ========================================================
-          2. MAIN CONTENT AREA (OFFSET lg:pl-[260px])
+          2. MAIN CONTENT AREA (OFFSET lg:pl-[284px])
       ======================================================== */}
-      <div className="lg:pl-[260px] flex flex-col flex-1 min-h-screen w-full transition-all">
+      <div className="lg:pl-[284px] flex flex-col flex-1 min-h-screen w-full transition-all">
         {/* Clean Top Context Bar */}
         <Header
           currentPassport={currentPassport}
@@ -295,9 +295,9 @@ function AppContent() {
 
         {/* Sınırlı Reklam & Gezgin Sponsor Kartı */}
         {showPromoBanner && (
-          <div className="p-4 rounded-2xl glass-panel border border-rose-500/20 bg-gradient-to-r from-rose-500/10 via-orange-500/5 to-amber-500/10 flex items-center justify-between gap-3 text-xs shadow-sm">
+          <div className="p-4 rounded-3xl glass-panel border border-[#FF6B6B]/20 bg-gradient-to-r from-[#FF6B6B]/10 via-[#FF8E72]/5 to-transparent flex items-center justify-between gap-3 text-xs shadow-xs">
             <div className="flex items-center gap-3">
-              <span className="p-2 rounded-xl bg-gradient-to-tr from-rose-500 to-orange-500 text-white flex-shrink-0 shadow-xs">
+              <span className="p-2 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white flex-shrink-0 shadow-xs">
                 <Sparkles className="w-4 h-4" />
               </span>
               <span className="text-slate-700 dark:text-slate-300 font-medium">
@@ -308,14 +308,14 @@ function AppContent() {
               <button
                 type="button"
                 onClick={() => setActiveTab('profile')}
-                className="font-bold text-rose-600 dark:text-rose-400 hover:text-rose-500 hover:underline cursor-pointer"
+                className="font-bold text-[#FF6B6B] dark:text-[#FF7A59] hover:underline cursor-pointer"
               >
                 {t.promoBannerCta}
               </button>
               <button
                 type="button"
                 onClick={() => setShowPromoBanner(false)}
-                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-white/5 cursor-pointer transition-colors"
+                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-white/5 cursor-pointer transition-colors"
                 title={language === 'de' ? 'Schließen' : language === 'en' ? 'Dismiss' : 'Kapat'}
               >
                 <X className="w-4 h-4" />
@@ -328,7 +328,7 @@ function AppContent() {
         <footer className="mt-14 pt-8 border-t border-slate-200/80 dark:border-white/[0.08] text-xs text-slate-500 dark:text-slate-400 space-y-3 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="flex items-center gap-2.5 font-bold text-slate-800 dark:text-slate-200">
-              <div className="p-1 rounded-lg bg-gradient-to-tr from-rose-500 to-orange-500 text-white shadow-xs">
+              <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-xs">
                 <Compass className="w-3.5 h-3.5" />
               </div>
               <span className="tracking-tight">{t.appTitle} · {language === 'de' ? 'Ausgabe 2026' : language === 'en' ? '2026 Edition' : '2026 Sürümü'}</span>
@@ -336,7 +336,7 @@ function AppContent() {
             <button
               type="button"
               onClick={() => setIsLegalModalOpen(true)}
-              className="inline-flex items-center gap-1.5 text-rose-600 dark:text-rose-400 hover:text-rose-500 font-semibold cursor-pointer transition-colors"
+              className="inline-flex items-center gap-1.5 text-[#FF6B6B] dark:text-[#FF7A59] hover:underline font-semibold cursor-pointer transition-colors"
             >
               <ShieldCheck className="w-3.5 h-3.5" /> {t.securityDisclaimer}
             </button>

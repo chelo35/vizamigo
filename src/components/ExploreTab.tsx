@@ -225,15 +225,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
-      {/* View Switcher: Liste vs İnteraktif Harita */}
+      {/* View Switcher: Liste vs İnteraktif Harita (Pastel Sunset Coral Harmonies) */}
       <div className="flex items-center justify-between gap-1.5 p-1.5 glass-panel border border-slate-200/80 dark:border-white/10 rounded-full shadow-xs">
         <button
           type="button"
           onClick={() => setViewMode('list')}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-full text-xs font-bold transition-all cursor-pointer ${
             viewMode === 'list'
-              ? 'bg-gradient-to-r from-rose-500 to-orange-500 text-white shadow-sm'
-              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              ? 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
+              : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
           }`}
         >
           <List className="w-4 h-4" />
@@ -244,8 +244,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           onClick={() => setViewMode('map')}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-full text-xs font-bold transition-all cursor-pointer ${
             viewMode === 'map'
-              ? 'bg-gradient-to-r from-rose-500 to-orange-500 text-white shadow-sm'
-              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              ? 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
+              : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
           }`}
         >
           <Globe className="w-4 h-4" />
@@ -266,18 +266,18 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       ) : (
         <>
           {/* Hero Stats Card - Luxury Freedom & Mobility Experience */}
-          <section className="relative overflow-hidden glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-white/10 shadow-lg bg-gradient-to-br from-white/90 via-slate-50/80 to-rose-50/20 dark:from-[#0f172a]/90 dark:via-[#090d16]/95 dark:to-[#171226]/80">
+          <section className="relative overflow-hidden glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-white/10 shadow-lg bg-gradient-to-br from-white/95 via-slate-50/80 to-[#FF6B6B]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80">
             {/* Ambient decorative glow */}
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-br from-rose-500/15 via-orange-500/10 to-transparent rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-br from-[#FF6B6B]/15 via-[#FF8E72]/10 to-transparent rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 
             <div className="relative flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 dark:bg-rose-500/15 border border-rose-500/20 text-rose-700 dark:text-rose-300 text-xs font-bold mb-3 tracking-wide shadow-2xs">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FF6B6B]/10 dark:bg-[#FF6B6B]/15 border border-[#FF6B6B]/20 text-[#FF6B6B] dark:text-[#FF8E72] text-xs font-bold mb-3 tracking-wide shadow-2xs">
                   <span className="text-base select-none">{getFlag(currentPassport)}</span>
                   <span>{l(`${passportName} Vatandaşlığı & Küresel Mobilite`, `${passportName} Citizenship & Global Mobility`, `${passportName} Staatsbürgerschaft & Mobilität`)}</span>
                 </div>
                 <div className="flex items-baseline gap-3">
-                  <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500 bg-clip-text text-transparent">
+                  <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-[#FF6B6B] via-[#FF7A59] to-[#E5A93C] bg-clip-text text-transparent">
                     {stats.totalFreeOrId}
                   </span>
                   <span className="text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-200">
@@ -409,9 +409,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           <div className="space-y-3.5">
             {/* Prominent, Welcoming Search Bar Focal Point */}
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-rose-500/20 via-orange-500/20 to-sky-500/20 rounded-full blur-md opacity-40 group-focus-within:opacity-100 group-hover:opacity-75 transition duration-500 pointer-events-none" />
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B6B]/20 via-[#FF8E72]/15 to-[#38BDF8]/15 rounded-full blur-md opacity-40 group-focus-within:opacity-100 group-hover:opacity-75 transition duration-500 pointer-events-none" />
               <div className="relative flex items-center">
-                <div className="absolute left-4 flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-tr from-rose-500 to-orange-500 text-white shadow-md shadow-rose-500/20 pointer-events-none transition-transform group-focus-within:scale-105">
+                <div className="absolute left-4 flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 pointer-events-none transition-transform group-focus-within:scale-105">
                   <Search className="w-5 h-5" />
                 </div>
                 <input
@@ -426,7 +426,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     setSearch(e.target.value);
                     onSearchChange?.(e.target.value);
                   }}
-                  className="w-full pl-18 pr-16 py-4.5 sm:py-5 glass-card bg-white/90 dark:bg-slate-900/80 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-full text-sm sm:text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-rose-500/20 focus:border-rose-500/60 transition-all"
+                  className="w-full pl-18 pr-16 py-4.5 sm:py-5 glass-card bg-white/90 dark:bg-[#111625]/90 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-full text-sm sm:text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-[#FF6B6B]/20 focus:border-[#FF6B6B]/60 transition-all"
                 />
                 {search && (
                   <button
@@ -629,7 +629,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             return (
               <div
                 key={item.c}
-                className="glass-card border border-slate-200/80 dark:border-white/[0.08] rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-rose-500/30 dark:hover:border-rose-400/25 transition-all duration-300 group"
+                className="glass-card rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-[#FF6B6B]/30 dark:hover:border-[#FF6B6B]/25 transition-all duration-300 group"
               >
                 {/* Modern Card Summary with 25%+ increased breathing whitespace */}
                 <div className="w-full p-4 sm:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-5 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
@@ -637,18 +637,23 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
                     className="flex items-start sm:items-center gap-4 sm:gap-5 min-w-0 flex-1 cursor-pointer"
                   >
-                    {/* Dimmed Scenic Landscape Thumbnail on the Left (e.g., Albania Ksamil & Berat, Bosnia Mostar Stari Most) */}
+                    {/* Dimmed Scenic Landscape Thumbnail on the Left with Soft Blend Scrim */}
                     <div className="country-thumbnail-slot w-28 h-24 sm:w-36 sm:h-28 shadow-sm">
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
                         className="country-thumbnail-image country-thumbnail-images"
                         loading="lazy"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          target.onerror = null;
+                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&q=80';
+                        }}
                       />
                       <div className="country-thumbnail-scrim" />
 
                       {/* Floating Flag Badge Capsule in top-left */}
-                      <div className="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-sm sm:text-base shadow-sm flex items-center justify-center">
+                      <div className="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-white/20 text-sm sm:text-base shadow-sm flex items-center justify-center">
                         {getFlag(item.c)}
                       </div>
 
@@ -660,7 +665,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-extrabold text-slate-900 dark:text-white text-base sm:text-lg group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors truncate">
+                        <span className="font-extrabold text-slate-900 dark:text-white text-base sm:text-lg group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors truncate">
                           {countryName}
                         </span>
                         <span className="text-xs font-mono text-slate-400 font-medium">({item.c})</span>
@@ -815,9 +820,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
                     </div>
                     {/* Kapsamlı Ülke Dosyası & Kültür Ansiklopedisi Aç Butonu */}
-                    <div className="flex items-center justify-between p-5 rounded-3xl glass-panel border border-rose-500/25 bg-gradient-to-r from-rose-500/10 via-orange-500/5 to-amber-500/10 flex-wrap gap-4 shadow-sm">
+                    <div className="flex items-center justify-between p-5 rounded-3xl glass-panel border border-[#FF6B6B]/20 bg-gradient-to-r from-[#FF6B6B]/10 via-[#FF8E72]/5 to-transparent flex-wrap gap-4 shadow-sm">
                       <div className="flex items-center gap-3.5">
-                        <div className="p-3 rounded-2xl bg-gradient-to-tr from-rose-500 to-orange-500 text-white shadow-xs">
+                        <div className="p-3 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-xs">
                           <BookOpen className="w-5 h-5 flex-shrink-0" />
                         </div>
                         <div>
@@ -836,7 +841,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           setSelectedDossierCountry(item.c);
                           setIsDossierOpen(true);
                         }}
-                        className="px-5 py-2.5 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white text-xs font-bold shadow-xs transition-all cursor-pointer whitespace-nowrap"
+                        className="btn-nubair-primary px-5 py-2.5 text-xs font-bold shadow-xs whitespace-nowrap"
                       >
                         {l('Ayrıntılı Dosyayı Aç →', 'Open Detailed Dossier →', 'Dossier öffnen →')}
                       </button>

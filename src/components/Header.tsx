@@ -99,11 +99,11 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         </div>
 
-        {/* Center Section: Wide, Rounded Focal Search Bar (border-radius: 30px) */}
+        {/* Center Section: Thick, Inviting Concierge Search Bar Focal Point */}
         <div className="flex-1 max-w-xl mx-auto">
           <div className="relative group">
-            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-[#8E9DBE] group-focus-within:text-slate-900 dark:group-focus-within:text-white transition-colors pointer-events-none">
-              <Search className="w-4 h-4" />
+            <div className="absolute left-4.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-[#8E9DBE] group-focus-within:text-[#FF6B6B] transition-colors pointer-events-none">
+              <Search className="w-4.5 h-4.5" />
             </div>
             <input
               ref={searchInputRef}
@@ -111,13 +111,13 @@ export const Header: React.FC<HeaderProps> = ({
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full pl-11 pr-10 py-2.5 sm:py-3 text-xs sm:text-sm rounded-[30px] border border-slate-200/90 dark:border-white/10 bg-white dark:bg-[#141C3B]/80 text-[#0F172A] dark:text-white placeholder:text-slate-400 dark:placeholder:text-[#7A89A6] focus:outline-none focus:border-slate-400 dark:focus:border-white/25 focus:ring-4 focus:ring-slate-900/5 dark:focus:ring-white/5 shadow-xs hover:border-slate-300 dark:hover:border-white/20 transition-all"
+              className="w-full pl-12 pr-11 py-3 sm:py-3.5 text-xs sm:text-sm rounded-full border border-slate-200/90 dark:border-white/10 bg-white dark:bg-[#111625]/90 text-[#1A1D20] dark:text-white placeholder:text-slate-400 dark:placeholder:text-[#7A89A6] focus:outline-none focus:border-[#FF6B6B]/40 dark:focus:border-[#FF6B6B]/40 focus:ring-4 focus:ring-[#FF6B6B]/10 dark:focus:ring-[#FF6B6B]/15 shadow-sm hover:border-slate-300 dark:hover:border-white/20 transition-all font-medium"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => onSearchChange?.('')}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 rounded-full text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors cursor-pointer"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors cursor-pointer"
                 aria-label="Clear search"
               >
                 <X className="w-3.5 h-3.5" />

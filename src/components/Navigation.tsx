@@ -82,14 +82,14 @@ export const Navigation: React.FC<NavigationProps> = ({
   return (
     <>
       {/* ========================================================
-          1. PERMANENT LEFT SIDEBAR (DESKTOP: width 260px)
-          Glassmorphic blur effects on the sidebar container
+          1. FLOATING GLASSMORPHIC NAV CONSOLE (DESKTOP: width 252px)
+          Nubair luxury aesthetic with organic floating posture
       ======================================================== */}
-      <aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-[260px] z-40 sidebar-glass flex-col justify-between p-5 transition-all duration-300">
+      <aside className="hidden lg:flex fixed left-4 top-4 bottom-4 w-[252px] z-40 sidebar-glass rounded-[28px] flex-col justify-between p-5 transition-all duration-300">
         <div className="space-y-6">
           {/* Brand Logo & Editorial Header */}
           <div className="flex items-center gap-3 px-2 pt-1">
-            <div className="w-10 h-10 rounded-2xl bg-[#0F172A] text-white dark:bg-[#1E2B58] dark:border dark:border-white/20 flex items-center justify-center shadow-md flex-shrink-0 transition-transform hover:scale-105">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white flex items-center justify-center shadow-md shadow-[#FF6B6B]/20 flex-shrink-0 transition-transform hover:scale-105">
               <Compass className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -107,8 +107,8 @@ export const Navigation: React.FC<NavigationProps> = ({
             </div>
           </div>
 
-          {/* Active Citizenship Card Widget in Sidebar */}
-          <div className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/[0.08] shadow-xs space-y-2.5 transition-all">
+          {/* Active Citizenship Card Widget in Sidebar (De-Widgetized organic look) */}
+          <div className="p-3.5 rounded-[22px] glass-card shadow-xs space-y-2.5 transition-all">
             <div className="flex items-center justify-between">
               <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-[#7A89A6]">
                 {l('Aktif Pasaport', 'Active Citizenship', 'Aktiver Reisepass')}
@@ -116,7 +116,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               <button
                 type="button"
                 onClick={onOpenPassportSelector}
-                className="text-[11px] text-[#0F172A] dark:text-[#8E9DBE] hover:text-black dark:hover:text-white font-extrabold flex items-center gap-1 cursor-pointer"
+                className="text-[11px] text-[#FF6B6B] dark:text-[#FF7A59] hover:underline font-extrabold flex items-center gap-1 cursor-pointer"
                 title={l('Pasaport Değiştir', 'Change Passport', 'Pass Ändern')}
               >
                 <ArrowRightLeft className="w-3 h-3" />
@@ -125,7 +125,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             </div>
             <div
               onClick={onOpenPassportSelector}
-              className="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50/70 dark:hover:bg-white/[0.04] cursor-pointer transition-colors"
+              className="flex items-center gap-3 p-2 rounded-2xl hover:bg-black/[0.02] dark:hover:bg-white/[0.04] cursor-pointer transition-colors"
             >
               <span className="text-3xl leading-none flex-shrink-0 filter drop-shadow-xs">
                 {getFlag(currentPassport)}
@@ -154,11 +154,11 @@ export const Navigation: React.FC<NavigationProps> = ({
                   className={`w-full flex items-center justify-between px-3.5 py-3 rounded-2xl text-xs font-bold transition-all duration-200 cursor-pointer group ${
                     isActive
                       ? item.crisis
-                        ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30 shadow-xs'
-                        : 'bg-[#0F172A] text-white dark:bg-[#202E5C] dark:border dark:border-white/20 shadow-md shadow-slate-900/10 dark:shadow-indigo-950/50'
+                        ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] border border-[#FF6B6B]/30 shadow-xs'
+                        : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
                       : item.crisis
-                      ? 'text-rose-600 dark:text-rose-400 hover:bg-rose-500/10 border border-rose-500/15'
-                      : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-950 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/[0.05]'
+                      ? 'text-[#FF6B6B] dark:text-[#FF8E72] hover:bg-[#FF6B6B]/10 border border-[#FF6B6B]/15'
+                      : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-950 dark:hover:text-white hover:bg-black/[0.03] dark:hover:bg-white/[0.04]'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -166,10 +166,10 @@ export const Navigation: React.FC<NavigationProps> = ({
                       className={`w-4 h-4 transition-transform duration-200 ${
                         isActive
                           ? item.crisis
-                            ? 'text-rose-500'
+                            ? 'text-[#FF6B6B]'
                             : 'text-white scale-110'
                           : item.crisis
-                          ? 'text-rose-500'
+                          ? 'text-[#FF6B6B]'
                           : 'text-slate-400 dark:text-[#7A89A6] group-hover:text-slate-700 dark:group-hover:text-white'
                       }`}
                     />
@@ -189,7 +189,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   {isActive && !item.tag && (
                     <span
                       className={`w-1.5 h-1.5 rounded-full ${
-                        item.crisis ? 'bg-rose-500 animate-ping' : 'bg-white'
+                        item.crisis ? 'bg-[#FF6B6B] animate-ping' : 'bg-white'
                       }`}
                     />
                   )}
@@ -201,10 +201,10 @@ export const Navigation: React.FC<NavigationProps> = ({
 
         {/* Sidebar Footer: Verification & Consular Hotline Info */}
         <div className="space-y-3 pt-4 border-t border-slate-200/70 dark:border-white/[0.08]">
-          <div className="p-3.5 rounded-2xl glass-crisis border border-rose-500/20 text-xs space-y-1.5">
+          <div className="p-3.5 rounded-2xl glass-crisis border border-[#FF6B6B]/20 text-xs space-y-1.5">
             <div className="flex items-center justify-between">
-              <span className="font-extrabold text-[11px] text-rose-700 dark:text-rose-300 flex items-center gap-1.5">
-                <PhoneCall className="w-3.5 h-3.5 text-rose-500" />
+              <span className="font-extrabold text-[11px] text-[#FF6B6B] dark:text-[#FF8E72] flex items-center gap-1.5">
+                <PhoneCall className="w-3.5 h-3.5 text-[#FF6B6B]" />
                 <span>{l('Diplomatik Kriz Masası', 'Crisis Hotline', 'Konsular-Notruf')}</span>
               </span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -240,7 +240,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/[0.08]">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-rose-500 to-orange-500 flex items-center justify-center text-white shadow-xs">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] flex items-center justify-center text-white shadow-xs">
                     <Compass className="w-4 h-4" />
                   </div>
                   <span className="font-extrabold text-lg text-slate-900 dark:text-white">
@@ -262,7 +262,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   onOpenPassportSelector();
                   if (onToggleMobileDrawer) onToggleMobileDrawer();
                 }}
-                className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/[0.08] flex items-center justify-between cursor-pointer"
+                className="p-3.5 rounded-2xl glass-card flex items-center justify-between cursor-pointer"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{getFlag(currentPassport)}</span>
@@ -273,7 +273,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                     <div className="text-[10px] text-slate-400">{currentPassport}</div>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-rose-500">
+                <span className="text-xs font-bold text-[#FF6B6B]">
                   {l('Değiştir', 'Change', 'Ändern')}
                 </span>
               </div>
@@ -291,9 +291,9 @@ export const Navigation: React.FC<NavigationProps> = ({
                       className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all ${
                         isActive
                           ? item.crisis
-                            ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30'
-                            : 'bg-[#0F172A] text-white dark:bg-[#202E5C] dark:border dark:border-white/20 shadow-sm'
-                          : 'text-slate-600 dark:text-[#8E9DBE] hover:bg-slate-100/60 dark:hover:bg-white/[0.05]'
+                            ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] border border-[#FF6B6B]/30'
+                            : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-sm'
+                          : 'text-slate-600 dark:text-[#8E9DBE] hover:bg-black/[0.02] dark:hover:bg-white/[0.04]'
                       }`}
                     >
                       <div className="flex items-center gap-3">
@@ -323,7 +323,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       {/* ========================================================
           3. MOBILE SLEEK STICKY / FLOATING BOTTOM GLASS DOCK
       ======================================================== */}
-      <nav className="lg:hidden fixed bottom-4 left-4 right-4 z-40 max-w-lg mx-auto glass-card rounded-3xl p-2 shadow-2xl shadow-slate-950/20 dark:shadow-black/60 flex items-center justify-around transition-all border border-slate-200/80 dark:border-white/[0.08]">
+      <nav className="lg:hidden fixed bottom-4 left-4 right-4 z-40 max-w-lg mx-auto glass-card rounded-3xl p-2 shadow-2xl shadow-slate-950/20 dark:shadow-black/60 flex items-center justify-around transition-all">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeTab === item.key;
@@ -338,8 +338,8 @@ export const Navigation: React.FC<NavigationProps> = ({
               className={`relative flex flex-col items-center justify-center py-2 px-2.5 rounded-2xl transition-all cursor-pointer min-w-[56px] ${
                 isActive
                   ? item.crisis
-                    ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400 font-extrabold'
-                    : 'bg-[#0F172A] text-white dark:bg-[#202E5C] dark:text-white dark:border dark:border-white/20 font-extrabold shadow-sm'
+                    ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] font-extrabold'
+                    : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white font-extrabold shadow-sm'
                   : 'text-slate-500 dark:text-[#8E9DBE] hover:text-slate-800 dark:hover:text-white'
               }`}
             >

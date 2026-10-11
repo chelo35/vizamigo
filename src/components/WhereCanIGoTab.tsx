@@ -196,7 +196,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
       {/* Results Header */}
       <div className="flex items-center justify-between px-1">
         <div>
-          <span className="text-2xl font-black text-slate-900 dark:text-white font-mono bg-gradient-to-r from-rose-500 to-orange-500 bg-clip-text text-transparent">
+          <span className="text-2xl font-black text-slate-900 dark:text-white font-mono bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] bg-clip-text text-transparent">
             {results.length}
           </span>
           <span className="text-sm font-bold text-slate-600 dark:text-slate-300 ml-2">

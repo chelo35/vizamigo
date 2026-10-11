@@ -775,7 +775,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   const q = `${passEn} Embassy in ${destEn}`;
                   window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
                 }}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white font-bold text-xs transition-all shadow-xs cursor-pointer whitespace-nowrap"
+                className="btn-nubair-primary px-5 py-2.5 text-xs font-bold shadow-xs whitespace-nowrap"
               >
                 <Compass className="w-3.5 h-3.5" />
                 <span>{l('Google Haritalar’da Canlı Konumu Gör →', 'View on Google Maps →', 'Auf Google Maps ansehen →')}</span>
