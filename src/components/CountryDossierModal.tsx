@@ -110,9 +110,9 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [copiedItinerary, setCopiedItinerary] = useState<boolean>(false);
   const [currentTime, setCurrentTime] = useState<Date>(() => new Date());
   const [converterAmount, setConverterAmount] = useState<number>(100);
-  const [converterBase, setConverterBase] = useState<'USD' | 'EUR' | 'TRY' | 'LOCAL'>('USD');
+  const [converterBase, setConverterBase] = useState<'USD' | 'EUR' | 'GBP' | 'LOCAL'>('USD');
   const [remoteBaseCity, setRemoteBaseCity] = useState<'IST' | 'NYC' | 'LON' | 'BER' | 'SFO' | 'SIN' | 'TYO'>('IST');
-  const [marketTargetCurrency, setMarketTargetCurrency] = useState<'TRY' | 'USD' | 'EUR'>('TRY');
+  const [marketTargetCurrency, setMarketTargetCurrency] = useState<'GBP' | 'USD' | 'EUR'>('GBP');
 
   // Real-time ticking clock for Dual-Clock Time Zone Sync
   useEffect(() => {
@@ -281,7 +281,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
   const rate1Usd = getCrossRate('USD', destCurrencyCode);
   const rate1Eur = getCrossRate('EUR', destCurrencyCode);
-  const rate1Try = getCrossRate('TRY', destCurrencyCode);
+  const rate1Gbp = getCrossRate('GBP', destCurrencyCode);
 
   const effectiveBaseCurrency = converterBase === 'LOCAL' ? destCurrencyCode : converterBase;
   const convertedToDest =
@@ -291,7 +291,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
   const convertedToUsd = convertCurrency(converterAmount, effectiveBaseCurrency, 'USD');
   const convertedToEur = convertCurrency(converterAmount, effectiveBaseCurrency, 'EUR');
-  const convertedToTry = convertCurrency(converterAmount, effectiveBaseCurrency, 'TRY');
+  const convertedToGbp = convertCurrency(converterAmount, effectiveBaseCurrency, 'GBP');
 
   // Time Zone Sync Calculations
   const userOffsetHours = -(new Date().getTimezoneOffset() / 60);
@@ -425,12 +425,12 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
                   <span className="text-slate-400">🇪🇺</span> <b className="text-slate-800 dark:text-slate-200">{formatCurrencyValue(rate1Eur)}</b>
                 </div>
-                <div className="p-1 rounded-lg bg-amber-500/10 border border-amber-500/20 font-mono text-[10px]">
-                  <span className="text-slate-400">🇹🇷</span> <b className="text-amber-600 dark:text-amber-400">{formatCurrencyValue(rate1Try)}</b>
+                <div className="p-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 font-mono text-[10px]">
+                  <span>🇬🇧</span> <b className="text-indigo-600 dark:text-indigo-400">{formatCurrencyValue(rate1Gbp)}</b>
                 </div>
               </div>
               <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
-                1 {destCurrencyCode} ≈ <b className="text-slate-700 dark:text-slate-300 font-mono">{formatCurrencyValue(1 / rate1Try)} TL</b>
+                1 {destCurrencyCode} ≈ <b className="text-slate-700 dark:text-slate-300 font-mono">£{formatCurrencyValue(1 / rate1Gbp)} GBP</b>
               </div>
             </button>
 
@@ -929,12 +929,12 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </div>
                       <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                      <div className="text-[10px] text-amber-700 dark:text-amber-400 font-medium flex items-center justify-center gap-1">
-                        <span>🇹🇷</span> <span>1 TRY</span>
+                    <div className="p-2.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20">
+                      <div className="text-[10px] text-indigo-700 dark:text-indigo-400 font-medium flex items-center justify-center gap-1">
+                        <span>🇬🇧</span> <span>1 GBP</span>
                       </div>
-                      <div className="text-xs sm:text-sm font-black text-amber-600 dark:text-amber-400 truncate">
-                        {destCurrencySymbol}{formatCurrencyValue(rate1Try)}
+                      <div className="text-xs sm:text-sm font-black text-indigo-600 dark:text-indigo-400 truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Gbp)}
                       </div>
                       <div className="text-[9px] text-slate-500 font-mono">{destCurrencyCode}</div>
                     </div>
@@ -965,7 +965,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                       {/* Source Currency Toggle Pills */}
                       <div className="flex items-center gap-1 p-1 rounded-xl bg-slate-200/60 dark:bg-white/[0.05] border border-slate-200/50 dark:border-white/10 text-xs font-bold">
-                        {(['USD', 'EUR', 'TRY', 'LOCAL'] as const).map((curr) => {
+                        {(['USD', 'EUR', 'GBP', 'LOCAL'] as const).map((curr) => {
                           const label = curr === 'LOCAL' ? destCurrencyCode : curr;
                           const isSelected = converterBase === curr;
                           return (
@@ -1010,7 +1010,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           €{formatCurrencyValue(convertedToEur)} EUR
                         </span>
                         <span className="px-2 py-0.5 rounded-md bg-white dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10 font-mono">
-                          ₺{formatCurrencyValue(convertedToTry)} TRY
+                          £{formatCurrencyValue(convertedToGbp)} GBP
                         </span>
                       </div>
                     )}
@@ -1029,7 +1029,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         </span>
                         {/* Target Switcher */}
                         <div className="flex items-center bg-slate-200/70 dark:bg-slate-800 p-0.5 rounded-lg text-[10px]">
-                          {(['TRY', 'USD', 'EUR'] as const).map(curr => (
+                          {(['GBP', 'USD', 'EUR'] as const).map(curr => (
                             <button
                               key={curr}
                               type="button"
@@ -1040,7 +1040,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
                               }`}
                             >
-                              {curr === 'TRY' ? 'TL' : curr}
+                              {curr === 'GBP' ? '£ GBP' : curr}
                             </button>
                           ))}
                         </div>
@@ -1050,7 +1050,11 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     <div className="rounded-2xl border border-slate-200/80 dark:border-white/10 overflow-hidden text-xs">
                       <div className="grid grid-cols-12 bg-slate-100/80 dark:bg-white/[0.04] p-2.5 font-bold text-[11px] text-slate-600 dark:text-slate-300 border-b border-slate-200/60 dark:border-white/10">
                         <div className="col-span-4">{l('Yerel Tutar', 'Local Amount', 'Landeswährung')}</div>
-                        <div className="col-span-4 text-right">{marketTargetCurrency === 'TRY' ? 'Türk Lirası Karşılığı' : `${marketTargetCurrency} Karşılığı`}</div>
+                        <div className="col-span-4 text-right">
+                          {marketTargetCurrency === 'GBP'
+                            ? l('İngiliz Sterlini (£) Karşılığı', 'British Pound (£) Equivalent', 'Britisches Pfund (£)')
+                            : `${marketTargetCurrency} ${l('Karşılığı', 'Equivalent', 'Gegenwert')}`}
+                        </div>
                         <div className="col-span-4 text-right">{l('Örnek Harcama', 'Typical Purchase', 'Beispielausgabe')}</div>
                       </div>
 
@@ -1067,8 +1071,8 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         ].map((item, idx) => {
                           const converted = convertCurrency(item.val, destCurrencyCode, marketTargetCurrency);
                           const formattedConverted =
-                            marketTargetCurrency === 'TRY'
-                              ? `${formatCurrencyValue(converted)} TL`
+                            marketTargetCurrency === 'GBP'
+                              ? `£${formatCurrencyValue(converted)}`
                               : marketTargetCurrency === 'USD'
                               ? `$${formatCurrencyValue(converted)}`
                               : `€${formatCurrencyValue(converted)}`;

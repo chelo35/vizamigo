@@ -47,8 +47,12 @@ export function lText(
   lang: string,
   trText: string,
   enText: string,
-  deText?: string
+  deText?: string,
+  esText?: string,
+  ruText?: string
 ): string {
+  if (lang === 'es' && esText) return esText;
+  if (lang === 'ru' && ruText) return ruText;
   if (lang === 'de') return deText || enText || trText;
   if (lang === 'en') return enText || trText;
   return trText;
@@ -60,10 +64,10 @@ export interface I18nContextType {
   toggleLanguage: () => void;
   t: AppTranslations;
   languages: LanguageOption[];
-  l: (tr: string, en: string, de?: string) => string;
+  l: (tr: string, en: string, de?: string, es?: string, ru?: string) => string;
 }
 
-const defaultL = (tr: string, en: string, de?: string) => tr;
+const defaultL = (tr: string, en: string, de?: string, es?: string, ru?: string) => tr;
 
 const I18nContext = createContext<I18nContextType>({
   language: 'tr',
@@ -99,8 +103,8 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     }
   }, [language]);
 
-  const l = (trText: string, enText: string, deText?: string): string => {
-    return lText(language, trText, enText, deText);
+  const l = (trText: string, enText: string, deText?: string, esText?: string, ruText?: string): string => {
+    return lText(language, trText, enText, deText, esText, ruText);
   };
 
   const value: I18nContextType = {

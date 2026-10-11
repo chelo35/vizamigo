@@ -411,7 +411,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B6B]/20 via-[#FF8E72]/15 to-[#38BDF8]/15 rounded-full blur-md opacity-40 group-focus-within:opacity-100 group-hover:opacity-75 transition duration-500 pointer-events-none" />
               <div className="relative flex items-center">
-                <div className="absolute left-4 flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 pointer-events-none transition-transform group-focus-within:scale-105">
+                <div className="absolute left-3.5 sm:left-4.5 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 pointer-events-none transition-transform group-focus-within:scale-105">
                   <Search className="w-5 h-5" />
                 </div>
                 <input
@@ -426,7 +426,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     setSearch(e.target.value);
                     onSearchChange?.(e.target.value);
                   }}
-                  className="w-full pl-18 pr-16 py-4.5 sm:py-5 glass-card bg-white/90 dark:bg-[#111625]/90 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-full text-sm sm:text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-[#FF6B6B]/20 focus:border-[#FF6B6B]/60 transition-all"
+                  className="w-full pl-15 sm:pl-18 pr-20 py-4 sm:py-5 glass-card bg-white/95 dark:bg-[#111625]/95 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-2xl sm:rounded-full text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-[#FF6B6B]/20 focus:border-[#FF6B6B]/60 transition-all"
                 />
                 {search && (
                   <button
@@ -435,7 +435,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       setSearch('');
                       onSearchChange?.('');
                     }}
-                    className="absolute right-4 text-xs font-bold px-3 py-1.5 rounded-full bg-slate-100/90 dark:bg-slate-800/80 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-xs hover:scale-105"
+                    className="absolute right-3.5 sm:right-4 text-xs font-bold px-3 py-1.5 rounded-full bg-slate-100/90 dark:bg-slate-800/80 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-xs hover:scale-105"
                   >
                     {l('Temizle', 'Clear', 'Löschen')}
                   </button>
@@ -626,23 +626,47 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               ...((language === 'de' ? SPECIAL_CHECKLIST_DE : language === 'en' ? SPECIAL_CHECKLIST_EN : SPECIAL_CHECKLIST_TR)[item.cat] || [])
             ];
 
+            const travelerScore = (Math.min(9.9, Math.max(6.8, Math.round(((insights.safety.safetyScore * 0.6) + (Math.min(100, insights.internet.mobileSpeedMbps) * 0.4)) / 10 * 10) / 10))).toFixed(1);
+            const scoreLabel = parseFloat(travelerScore) >= 9.0
+              ? l('Harika', 'Exceptional', 'Hervorragend')
+              : parseFloat(travelerScore) >= 8.0
+              ? l('Çok İyi', 'Very Good', 'Sehr gut')
+              : l('İyi', 'Good', 'Gut');
+
+            const highlights: string[] = [];
+            if (item.cat === 'free' || item.id) {
+              highlights.push(item.id ? l('🪪 Kimlikle Giriş', '🪪 ID Card Entry', '🪪 Personalausweis') : l('⚡ Vizesiz Seyahat', '⚡ Visa-Free Entry', '⚡ Visumfrei'));
+            } else if (item.cat === 'evisa') {
+              highlights.push(l('💻 Kolay E-Vize', '💻 Instant eVisa', '💻 Einfaches eVisa'));
+            } else if (item.cat === 'voa') {
+              highlights.push(l('🛬 Kapıda Vize', '🛬 Visa on Arrival', '🛬 Visum b. Ankunft'));
+            }
+
+            if (insights.internet.mobileSpeedMbps >= 50) {
+              highlights.push(`📶 ${insights.internet.mobileSpeedMbps} Mbps ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz')}`);
+            }
+
+            if (insights.safety.safetyScore >= 75) {
+              highlights.push(l('🛡️ Güvenli Rota', '🛡️ High Safety', '🛡️ Hohe Sicherheit'));
+            }
+
             return (
               <div
                 key={item.c}
                 className="glass-card rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-[#FF6B6B]/30 dark:hover:border-[#FF6B6B]/25 transition-all duration-300 group"
               >
-                {/* Modern Card Summary with 25%+ increased breathing whitespace */}
-                <div className="w-full p-4 sm:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-5 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
+                {/* Modern Card Summary with ETS Tur & Booking aesthetics */}
+                <div className="w-full p-4 sm:p-6 lg:p-7 flex flex-col lg:flex-row lg:items-center justify-between gap-5 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
                   <div
                     onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                    className="flex items-start sm:items-center gap-4 sm:gap-5 min-w-0 flex-1 cursor-pointer"
+                    className="flex items-start sm:items-center gap-4 sm:gap-6 min-w-0 flex-1 cursor-pointer"
                   >
-                    {/* Dimmed Scenic Landscape Thumbnail on the Left with Soft Blend Scrim */}
-                    <div className="country-thumbnail-slot w-28 h-24 sm:w-36 sm:h-28 shadow-sm">
+                    {/* Scenic Landscape Landmark Thumbnail */}
+                    <div className="country-thumbnail-slot w-32 h-28 sm:w-44 sm:h-32 rounded-2xl shadow-sm flex-shrink-0">
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
-                        className="country-thumbnail-image country-thumbnail-images"
+                        className="country-thumbnail-image country-thumbnail-images group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         onError={(e) => {
                           const target = e.currentTarget;
@@ -653,23 +677,23 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       <div className="country-thumbnail-scrim" />
 
                       {/* Floating Flag Badge Capsule in top-left */}
-                      <div className="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-white/20 text-sm sm:text-base shadow-sm flex items-center justify-center">
+                      <div className="absolute top-2 left-2 px-2.5 py-1 rounded-full bg-slate-900/75 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
                         {getFlag(item.c)}
                       </div>
 
                       {/* Landmark Caption in bottom-left */}
-                      <div className="absolute bottom-1.5 left-2.5 right-2.5 text-[10px] sm:text-[11px] font-semibold text-white/95 truncate tracking-tight drop-shadow-sm">
+                      <div className="absolute bottom-2 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md">
                         {visual.landmark}
                       </div>
                     </div>
 
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-extrabold text-slate-900 dark:text-white text-base sm:text-lg group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors truncate">
+                    <div className="min-w-0 flex-1 space-y-2.5">
+                      <div className="flex items-center gap-2.5 flex-wrap">
+                        <span className="font-black text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors truncate">
                           {countryName}
                         </span>
-                        <span className="text-xs font-mono text-slate-400 font-medium">({item.c})</span>
-                        <span className={`text-xs px-3.5 py-1 rounded-full font-bold shadow-2xs ${badgeClass}`}>
+                        <span className="text-xs sm:text-sm font-mono text-slate-400 font-extrabold">({item.c})</span>
+                        <span className={`text-xs sm:text-sm px-4 py-1 rounded-full font-extrabold shadow-2xs ${badgeClass}`}>
                           {badgeText}
                         </span>
 
@@ -680,16 +704,30 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                             e.stopPropagation();
                             handleOpenAudit();
                           }}
-                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-bold text-[11px] bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25 hover:bg-emerald-500/20 transition-all shadow-2xs cursor-pointer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-bold text-xs bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25 hover:bg-emerald-500/20 transition-all shadow-2xs cursor-pointer"
                           title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen')}
                         >
-                          <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
-                          <span>{l('✓ Vize: 2026 Teyitli', '✓ Visa: 2026 Verified', '✓ Visum: 2026 Geprüft')}</span>
+                          <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                          <span>{l('✓ 2026 Teyitli', '✓ 2026 Verified', '✓ 2026 Geprüft')}</span>
                         </button>
                       </div>
 
-                      {/* Immediate Glance Badges: Capital, Currency, Safety, Internet Speed, Living Cost */}
-                      <div className="flex flex-wrap items-center gap-2 mt-3 text-[11px]">
+                      {/* ETS Tur Style Amenity & Highlight Tags */}
+                      {highlights.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                          {highlights.map((tag, idx) => (
+                            <span
+                              key={idx}
+                              className="inline-flex items-center text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-white/[0.06] text-slate-700 dark:text-slate-200 border border-slate-200/60 dark:border-white/10"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Immediate Glance Badges: Capital, Currency, Safety, Internet Speed, Living Cost (Scaled Up) */}
+                      <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm">
                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-semibold glass-panel border border-slate-200/70 dark:border-white/10 text-slate-700 dark:text-slate-300 shadow-2xs">
                           <span>🏛️</span>
                           <span>{geography.capital}</span>
@@ -714,8 +752,21 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     </div>
                   </div>
 
-                  {/* Actions & Chevron */}
-                  <div className="flex items-center justify-between lg:justify-end gap-2.5 flex-shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-slate-100 dark:border-white/10">
+                  {/* Right Section: ETS Tur Style Traveler Score Box & Quick Action Buttons */}
+                  <div className="flex items-center justify-between lg:justify-end gap-3 flex-shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-slate-100 dark:border-white/10">
+                    {/* ETS Tur & Booking Rating Score Pill */}
+                    <div className="hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-500/25 text-emerald-800 dark:text-emerald-300">
+                      <div className="text-right">
+                        <div className="text-xs font-black leading-tight">{scoreLabel}</div>
+                        <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
+                          {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung')}
+                        </div>
+                      </div>
+                      <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white font-mono font-black text-sm flex items-center justify-center shadow-xs">
+                        {travelerScore}
+                      </div>
+                    </div>
+
                     {/* Kapsamlı Gezi Planı ve 360° Rota Butonu */}
                     <button
                       type="button"
@@ -724,10 +775,10 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         setSelectedDossierCountry(item.c);
                         setIsDossierOpen(true);
                       }}
-                      className="btn-nubair-primary py-2 px-3.5 text-xs whitespace-nowrap shadow-sm"
+                      className="btn-nubair-primary py-2.5 px-4 text-xs sm:text-sm font-bold whitespace-nowrap shadow-sm"
                       title={l('Kapsamlı Ülke Dosyası ve Gezi Rotasını Aç', 'Open Full Country Dossier & Travel Itinerary', 'Länderdossier & Reiseroute öffnen')}
                     >
-                      <BookOpen className="w-3.5 h-3.5" />
+                      <BookOpen className="w-4 h-4" />
                       <span>{l('360° Gezi Rehberi', '360° Travel Guide', '360° Reiseführer')}</span>
                     </button>
 
@@ -737,7 +788,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         e.stopPropagation();
                         setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
                       }}
-                      className="btn-nubair-secondary py-2 px-3 text-xs"
+                      className="btn-nubair-secondary py-2.5 px-3 text-xs sm:text-sm"
                       title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden')}
                     >
                       <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
@@ -752,7 +803,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         const q = geo ? `${geo.capital}, ${countryName}` : countryName;
                         window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
                       }}
-                      className="btn-nubair-secondary py-2 px-3 text-xs"
+                      className="btn-nubair-secondary py-2.5 px-3 text-xs sm:text-sm"
                       title={l("Google Haritalar'da Canlı Aç", 'Open Live in Google Maps', 'Live auf Google Maps öffnen')}
                     >
                       <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
