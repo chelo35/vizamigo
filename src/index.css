@@ -81,16 +81,63 @@ html.dark {
    100% exact layout dimensions with 1px border preservation
    ======================================================== */
 
+/* Uniform Micro-Animation Utilities */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Global Uniform Transitions for Interactive Elements */
+button,
+a,
+input,
+select,
+textarea,
+[role="button"],
+.tab-chip-active,
+.tab-chip-inactive,
+.btn-nubair-primary,
+.btn-nubair-secondary,
+.btn-frosted-glass,
+.btn-glassmorphic,
+.btn-glass-subtle {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Native Smartphone App Haptic Feedback on Press */
+button:active,
+.btn-nubair-primary:active,
+.btn-nubair-secondary:active,
+.btn-frosted-glass:active,
+.btn-glassmorphic:active,
+.btn-glass-subtle:active,
+.tab-chip-active:active,
+.tab-chip-inactive:active,
+[role="button"]:active {
+  transform: scale(0.96) !important;
+  transition: transform 0.12s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
 /* De-Widgetized Organic Cards: strict minimum 24px corner radius */
-.glass-card {
+.glass-card,
+.country-card,
+.bento-card {
   background: #ffffff;
   border-radius: 24px;
   border: 1px solid transparent; /* Preserves 1px box-model dimension identically to dark mode */
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.015);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.015);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.dark .glass-card {
+/* Country Card Hover / Touch Parallax Float & Deep Shadow Softening */
+.glass-card:hover,
+.country-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.08), 0 0 25px rgba(255, 107, 107, 0.12);
+}
+
+.dark .glass-card,
+.dark .country-card,
+.dark .bento-card {
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -98,12 +145,19 @@ html.dark {
   box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.45);
 }
 
+.dark .glass-card:hover,
+.dark .country-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 65px -12px rgba(0, 0, 0, 0.7), 0 0 35px rgba(255, 107, 107, 0.18);
+  border-color: rgba(255, 107, 107, 0.25);
+}
+
 .glass-panel {
   background: #ffffff;
   border-radius: 24px;
   border: 1px solid rgba(226, 232, 240, 0.7);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .dark .glass-panel {
@@ -148,6 +202,7 @@ html.dark {
 
 /* ========================================================
    DESTINATION PHOTOGRAPHY WITH SOFT GRADIENT MASKS
+   Masked frame with 4% smooth scale-up parallax effect
    ======================================================== */
 
 .country-thumbnail-slot {
@@ -174,13 +229,16 @@ html.dark {
   object-fit: cover;
   display: block;
   filter: brightness(0.85) contrast(1.04) saturate(1.05);
-  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s ease;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.4s ease;
   will-change: transform, filter;
 }
 
+/* Country landscape zooms smoothly by 4% on hover */
 .group:hover .country-thumbnail-images,
-.group:hover .country-thumbnail-image {
-  transform: scale(1.07);
+.group:hover .country-thumbnail-image,
+.country-card:hover .country-thumbnail-image,
+.country-card:hover .country-thumbnail-images {
+  transform: scale(1.04);
   filter: brightness(0.92) contrast(1.08) saturate(1.12);
 }
 
@@ -196,16 +254,21 @@ html.dark {
    Eliminating solid black blocks and harsh oranges
    ======================================================== */
 
-/* Inactive button frosted glass style */
+/* Strict translucent glassmorphic button component:
+   background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); */
+.btn-glassmorphic,
+.btn-glass-subtle,
 .btn-frosted-glass {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(226, 232, 240, 0.85);
   color: #1a1d20;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.dark .btn-glassmorphic,
+.dark .btn-glass-subtle,
 .dark .btn-frosted-glass {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(12px);
@@ -214,25 +277,30 @@ html.dark {
   color: #ffffff;
 }
 
+.btn-glassmorphic:hover,
+.btn-glass-subtle:hover,
 .btn-frosted-glass:hover {
   background: rgba(255, 255, 255, 0.98);
   border-color: rgba(203, 213, 225, 1);
   box-shadow: 0 0 20px rgba(255, 107, 107, 0.15);
 }
 
+.dark .btn-glassmorphic:hover,
+.dark .btn-glass-subtle:hover,
 .dark .btn-frosted-glass:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.18);
   box-shadow: 0 0 20px rgba(255, 107, 107, 0.2);
 }
 
-/* Primary Action Pill (Pastel Sunset Coral or Luminous Acrylic) */
+/* Primary Action Pill (Pastel Sunset Coral) */
 .btn-nubair-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 0.65rem 1.4rem;
+  min-height: 40px;
   border-radius: 9999px;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -241,7 +309,7 @@ html.dark {
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 14px rgba(255, 107, 107, 0.25);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
 }
 
@@ -395,3 +463,29 @@ html.dark {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(148, 163, 184, 0.5);
 }
+
+/* ========================================================
+   GLOBALIZATION & MULTILINGUAL RESILIENCE (ES, RU, EN, TR)
+   No visual wrap distortion, optimal line-heights, fluid paddings
+   ======================================================== */
+
+.safe-text-wrap {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  line-height: 1.55;
+}
+
+/* Bento Grid Architecture: 24px rounded corners */
+.bento-grid-container {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.bento-cell {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+

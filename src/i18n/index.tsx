@@ -3,6 +3,8 @@ import { SupportedLanguage, LanguageOption, AppTranslations } from './types';
 import { tr } from './locales/tr';
 import { en } from './locales/en';
 import { de } from './locales/de';
+import { es } from './locales/es';
+import { ru } from './locales/ru';
 
 export type Language = SupportedLanguage;
 export type { AppTranslations };
@@ -10,13 +12,17 @@ export type { AppTranslations };
 export const SUPPORTED_LANGUAGES: LanguageOption[] = [
   { code: 'tr', name: 'Türkçe', flag: '🇹🇷', nativeName: 'Türkçe' },
   { code: 'en', name: 'English', flag: '🇬🇧', nativeName: 'English' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪', nativeName: 'Deutsch' }
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪', nativeName: 'Deutsch' },
+  { code: 'es', name: 'Español', flag: '🇪🇸', nativeName: 'Español' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺', nativeName: 'Русский' }
 ];
 
 export const LOCALES: Record<SupportedLanguage, AppTranslations> = {
   tr,
   en,
-  de
+  de,
+  es,
+  ru
 };
 
 export function getStoredLanguage(): SupportedLanguage {
@@ -81,8 +87,8 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   };
 
   const toggleLanguage = () => {
-    // Cycle through tr -> en -> de -> tr
-    const order: SupportedLanguage[] = ['tr', 'en', 'de'];
+    // Cycle through tr -> en -> de -> es -> ru -> tr
+    const order: SupportedLanguage[] = ['tr', 'en', 'de', 'es', 'ru'];
     const nextIdx = (order.indexOf(language) + 1) % order.length;
     setLanguage(order[nextIdx]);
   };

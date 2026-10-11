@@ -30,7 +30,15 @@ import {
   Share2,
   ShieldCheck,
   Flag,
-  Route
+  Route,
+  Zap,
+  ArrowRightLeft,
+  Sun,
+  Moon,
+  Laptop,
+  Activity,
+  Calculator,
+  RotateCcw
 } from 'lucide-react';
 import {
   getCountryName,
@@ -48,6 +56,12 @@ import { getCountryGeography, CountryGeographyData } from '../data/countryGeogra
 import { getCountryItinerary, CountryTravelItinerary } from '../data/countryItineraries';
 import { getPassportItems } from '../utils/calculator';
 import { useI18n } from '../data/i18n';
+import {
+  getCrossRate,
+  convertCurrency,
+  formatCurrencyValue,
+  COMMON_CHEAT_SHEET_TIERS
+} from '../data/currencyRates';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -58,7 +72,20 @@ interface CountryDossierModalProps {
   onOpenReportChange?: (country: { code: string; name: string; cat: string }) => void;
 }
 
-type DossierTab = 'itinerary' | 'culture' | 'gastronomy' | 'language' | 'achievements' | 'visa';
+type DossierTab = 'itinerary' | 'logistics' | 'culture' | 'gastronomy' | 'language' | 'achievements' | 'visa';
+
+function parseCountryUtcOffset(tzString?: string, lng?: number): number {
+  if (tzString) {
+    const match = tzString.match(/UTC\s*([+-]\d+(\.\d+)?)/i);
+    if (match) {
+      return parseFloat(match[1]);
+    }
+  }
+  if (typeof lng === 'number' && !isNaN(lng)) {
+    return Math.round(lng / 15);
+  }
+  return 0;
+}
 
 export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   isOpen,
@@ -72,6 +99,18 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [activeTab, setActiveTab] = useState<DossierTab>('itinerary');
   const [copiedPhrase, setCopiedPhrase] = useState<string | null>(null);
   const [copiedItinerary, setCopiedItinerary] = useState<boolean>(false);
+  const [currentTime, setCurrentTime] = useState<Date>(() => new Date());
+  const [converterAmount, setConverterAmount] = useState<number>(100);
+  const [converterBase, setConverterBase] = useState<'USD' | 'EUR' | 'TRY' | 'LOCAL'>('USD');
+
+  // Real-time ticking clock for Dual-Clock Time Zone Sync
+  useEffect(() => {
+    if (!isOpen) return;
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [isOpen]);
 
   // Close on Escape key and lock body scroll
   useEffect(() => {
@@ -224,6 +263,68 @@ Planlayan: Vizamigo (vizamigo.com)`;
   const badgeClass = item.id ? CAT_INFO.id.badgeBg : CAT_INFO[item.cat]?.badgeBg;
   const badgeLabel = getCategoryBadgeLabel(item, language);
 
+  // Currency & Financial Calculations
+  const destCurrencyCode = geography?.currencyCode || 'USD';
+  const destCurrencySymbol = geography?.currencySymbol || '$';
+  const destCurrencyName = geography?.currencyName || destCurrencyCode;
+
+  const rate1Usd = useMemo(() => getCrossRate('USD', destCurrencyCode), [destCurrencyCode]);
+  const rate1Eur = useMemo(() => getCrossRate('EUR', destCurrencyCode), [destCurrencyCode]);
+  const rate1Try = useMemo(() => getCrossRate('TRY', destCurrencyCode), [destCurrencyCode]);
+
+  const effectiveBaseCurrency = converterBase === 'LOCAL' ? destCurrencyCode : converterBase;
+  const convertedToDest = useMemo(() => {
+    if (converterBase === 'LOCAL') return converterAmount;
+    return convertCurrency(converterAmount, converterBase, destCurrencyCode);
+  }, [converterAmount, converterBase, destCurrencyCode]);
+
+  const convertedToUsd = useMemo(() => {
+    return convertCurrency(converterAmount, effectiveBaseCurrency, 'USD');
+  }, [converterAmount, effectiveBaseCurrency]);
+
+  const convertedToEur = useMemo(() => {
+    return convertCurrency(converterAmount, effectiveBaseCurrency, 'EUR');
+  }, [converterAmount, effectiveBaseCurrency]);
+
+  const convertedToTry = useMemo(() => {
+    return convertCurrency(converterAmount, effectiveBaseCurrency, 'TRY');
+  }, [converterAmount, effectiveBaseCurrency]);
+
+  // Time Zone Sync Calculations
+  const userOffsetHours = -(new Date().getTimezoneOffset() / 60);
+  const destOffsetHours = useMemo(() => {
+    return parseCountryUtcOffset(geography?.timeZone, geo?.lng);
+  }, [geography, geo]);
+
+  const destTime = useMemo(() => {
+    const utc = currentTime.getTime() + currentTime.getTimezoneOffset() * 60000;
+    return new Date(utc + destOffsetHours * 3600000);
+  }, [currentTime, destOffsetHours]);
+
+  const diffHours = Math.round((destOffsetHours - userOffsetHours) * 10) / 10;
+  const diffLabel =
+    diffHours === 0
+      ? l('Aynı Saat Dilimi', 'Same Timezone', 'Gleiche Zeitzone')
+      : diffHours > 0
+      ? `+${diffHours} ${l('Saat İleri', 'Hours Ahead', 'Std voraus')}`
+      : `${diffHours} ${l('Saat Geri', 'Hours Behind', 'Std zurück')}`;
+
+  const formatTimeStr = (d: Date) => {
+    return d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+  };
+  const formatDateStr = (d: Date) => {
+    return d.toLocaleDateString(language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : 'en-US', {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric'
+    });
+  };
+
+  // Plug & Hardware Information
+  const plugInfo = geography?.plugTypes || insights.plugType || 'C, F (230V, 50Hz)';
+  const plugTypesList = plugInfo.split('(')[0].split(',').map((p) => p.trim()).filter(Boolean);
+  const isTrCompatible = plugTypesList.some((p) => p === 'C' || p === 'F');
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 sm:py-6 overflow-y-auto backdrop-blur-md bg-slate-950/75 animate-in fade-in duration-200">
       <div
@@ -299,59 +400,91 @@ Planlayan: Vizamigo (vizamigo.com)`;
             </button>
           </div>
 
-          {/* Quick Metrics Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-4 pt-3 border-t border-slate-200/80 dark:border-white/10 text-xs">
-            {/* Safety */}
-            <div className="flex items-center gap-2 p-2 rounded-xl bg-white/70 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10">
-              <Shield className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-              <div className="min-w-0">
-                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">{l('Güvenlik', 'Safety', 'Sicherheit')}</div>
-                <div className="font-bold text-slate-800 dark:text-white truncate">
-                  {insights.safety.safetyScore}/100 · {insights.safety.safetyLevel}
+          {/* De-Widgetized Lifestyle Bento Quick Bar */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 mt-4 pt-3 border-t border-slate-200/80 dark:border-white/10 text-xs">
+            {/* Currency Hub Quick Trigger */}
+            <button
+              type="button"
+              onClick={() => setActiveTab('logistics')}
+              className="group flex items-center justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-amber-50/50 dark:hover:bg-amber-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-amber-400/40 transition-all cursor-pointer text-left shadow-2xs"
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <div className="w-7 h-7 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0">
+                  <DollarSign className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
+                    {l('Döviz & Kurlar', 'Currency & FX', 'Währung & Kurse')}
+                  </div>
+                  <div className="font-bold text-slate-800 dark:text-white truncate">
+                    1 USD ≈ {formatCurrencyValue(rate1Usd)} {destCurrencyCode}
+                  </div>
                 </div>
               </div>
-            </div>
+              <span className="text-[10px] text-slate-400 group-hover:text-amber-500 transition-colors ml-1 font-semibold flex-shrink-0">
+                {l('Hesapla →', 'Convert →', 'Rechnen →')}
+              </span>
+            </button>
 
-            {/* Internet */}
-            <div className="flex items-center gap-2 p-2 rounded-xl bg-white/70 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10">
-              <Wifi className="w-4 h-4 text-sky-500 flex-shrink-0" />
-              <div className="min-w-0">
-                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">{l('Mobil Hız', 'Mobile Speed', 'Mobilfunk')}</div>
-                <div className="font-bold text-slate-800 dark:text-white truncate">
-                  {insights.internet.mobileSpeedMbps} Mbps · {insights.internet.costPerGbUsd}
+            {/* Time Zone Sync Quick Trigger */}
+            <button
+              type="button"
+              onClick={() => setActiveTab('logistics')}
+              className="group flex items-center justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-sky-50/50 dark:hover:bg-sky-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-sky-400/40 transition-all cursor-pointer text-left shadow-2xs"
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <div className="w-7 h-7 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
+                    {l('Hedef Saat', 'Destination Time', 'Ziel-Uhrzeit')}
+                  </div>
+                  <div className="font-bold text-slate-800 dark:text-white truncate">
+                    {formatTimeStr(destTime)} ({diffHours === 0 ? l('Aynı', 'Same', 'Gleich') : diffHours > 0 ? `+${diffHours}s` : `${diffHours}s`})
+                  </div>
                 </div>
               </div>
-            </div>
+              <span className="text-[10px] text-slate-400 group-hover:text-sky-500 transition-colors ml-1 font-semibold flex-shrink-0">
+                {l('Eşzamanla →', 'Sync →', 'Sync →')}
+              </span>
+            </button>
 
-            {/* Daily Budget */}
-            <div className="flex items-center gap-2 p-2 rounded-xl bg-white/70 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10">
-              <DollarSign className="w-4 h-4 text-amber-500 flex-shrink-0" />
-              <div className="min-w-0">
-                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">{l('Günlük Bütçe', 'Daily Budget', 'Tagesbudget')}</div>
-                <div className="font-bold text-slate-800 dark:text-white truncate">
-                  {insights.livingCosts.dailyBudgetBackpackerUsd}
+            {/* Connectivity Quick Trigger */}
+            <button
+              type="button"
+              onClick={() => setActiveTab('logistics')}
+              className="group flex items-center justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-teal-50/50 dark:hover:bg-teal-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-teal-400/40 transition-all cursor-pointer text-left shadow-2xs"
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <div className="w-7 h-7 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0">
+                  <Wifi className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
+                    {l('Wi-Fi & Priz', 'Wi-Fi & Plugs', 'WLAN & Stecker')}
+                  </div>
+                  <div className="font-bold text-slate-800 dark:text-white truncate">
+                    {insights.internet.mobileSpeedMbps} Mbps · Tip {plugTypesList.slice(0, 2).join(', ')}
+                  </div>
                 </div>
               </div>
-            </div>
+              <span className="text-[10px] text-slate-400 group-hover:text-teal-500 transition-colors ml-1 font-semibold flex-shrink-0">
+                {l('Detay →', 'Specs →', 'Details →')}
+              </span>
+            </button>
 
-            {/* Currency & Card */}
-            <div className="flex items-center gap-2 p-2 rounded-xl bg-white/70 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10">
-              <CreditCard className="w-4 h-4 text-purple-500 flex-shrink-0" />
-              <div className="min-w-0">
-                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">{l('Para Birimi', 'Currency', 'Währung')}</div>
-                <div className="font-bold text-slate-800 dark:text-white truncate">
-                  {insights.currency}
-                </div>
+            {/* Safety & Budget Quick Pill */}
+            <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10 shadow-2xs">
+              <div className="w-7 h-7 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0">
+                <Shield className="w-4 h-4" />
               </div>
-            </div>
-
-            {/* Season */}
-            <div className="col-span-2 sm:col-span-1 flex items-center gap-2 p-2 rounded-xl bg-white/70 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10">
-              <Calendar className="w-4 h-4 text-[#0F172A] dark:text-[#8E9DBE] flex-shrink-0" />
               <div className="min-w-0">
-                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">{l('İdeal Dönem', 'Best Time', 'Reisezeit')}</div>
+                <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">
+                  {l('Güvenlik & Bütçe', 'Safety & Budget', 'Sicherheit & Budget')}
+                </div>
                 <div className="font-bold text-slate-800 dark:text-white truncate">
-                  {insights.bestMonths || encyclopedia.tourism.bestSeasons.slice(0, 22) + '...'}
+                  {insights.safety.safetyScore}/100 · {insights.livingCosts.dailyBudgetBackpackerUsd}
                 </div>
               </div>
             </div>
@@ -369,6 +502,17 @@ Planlayan: Vizamigo (vizamigo.com)`;
           >
             <Route className="w-4 h-4" />
             <span>{l('🗺️ Gezi Planı & Rota', '🗺️ Travel Itinerary & Guide', '🗺️ Reiseplan & Route')}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveTab('logistics')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+              activeTab === 'logistics' ? 'tab-chip-active' : 'tab-chip-inactive'
+            }`}
+          >
+            <Zap className="w-4 h-4" />
+            <span>{l('⚡ Lojistik & Göçebe Hub', '⚡ Nomad & Logistics Hub', '⚡ Nomaden- & Logistik-Hub')}</span>
           </button>
 
           <button
@@ -712,6 +856,422 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </li>
                     ))}
                   </ul>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* TAB 1: LOJİSTİK, DÖVİZ & GÖÇEBE BENTO GRID */}
+          {activeTab === 'logistics' && (
+            <div className="space-y-6 animate-in fade-in duration-200">
+              {/* Bento Grid Top Section: 2 Columns on desktop */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                {/* 1. CURRENCY HUB (lg:col-span-7) */}
+                <div className="lg:col-span-7 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
+                  {/* Header */}
+                  <div className="flex items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 text-white flex items-center justify-center shadow-sm">
+                        <DollarSign className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {l('Gezgin Döviz Masası & Canlı Çevirici', 'Currency Hub & Live FX Converter', 'Währungs-Hub & Live-Rechner')}
+                        </h3>
+                        <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                          {l('Yerel Para Birimi:', 'Local Currency:', 'Landeswährung:')} <b className="text-slate-800 dark:text-slate-200">{destCurrencyName} ({destCurrencyCode} - {destCurrencySymbol})</b>
+                        </div>
+                      </div>
+                    </div>
+                    <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                      {destCurrencyCode}
+                    </span>
+                  </div>
+
+                  {/* Interactive 2-Way Converter Input & Selector */}
+                  <div className="p-4 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
+                    <div className="flex items-center justify-between text-xs font-semibold text-slate-600 dark:text-[#8E9DBE]">
+                      <span>{l('Döviz Tutarı Girin', 'Enter Conversion Amount', 'Betrag eingeben')}</span>
+                      <span>{l('Kaynak Birim:', 'Base Unit:', 'Basiswährung:')}</span>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                      <div className="relative flex-1">
+                        <input
+                          type="number"
+                          min="1"
+                          step="any"
+                          value={converterAmount || ''}
+                          onChange={(e) => setConverterAmount(Math.max(0, parseFloat(e.target.value) || 0))}
+                          className="w-full px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-white/15 text-slate-900 dark:text-white font-bold text-base focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]/30"
+                          placeholder="100"
+                        />
+                        <span className="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs font-mono font-bold text-slate-400">
+                          {effectiveBaseCurrency}
+                        </span>
+                      </div>
+
+                      {/* Source Currency Toggle Pills */}
+                      <div className="flex items-center gap-1 p-1 rounded-xl bg-slate-200/60 dark:bg-white/[0.05] border border-slate-200/50 dark:border-white/10 text-xs font-bold">
+                        {(['USD', 'EUR', 'TRY', 'LOCAL'] as const).map((curr) => {
+                          const label = curr === 'LOCAL' ? destCurrencyCode : curr;
+                          const isSelected = converterBase === curr;
+                          return (
+                            <button
+                              key={curr}
+                              type="button"
+                              onClick={() => setConverterBase(curr)}
+                              className={`px-2.5 py-1.5 rounded-lg transition-all cursor-pointer ${
+                                isSelected
+                                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-2xs'
+                                  : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
+                              }`}
+                            >
+                              {label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Converted Dynamic Results Banner */}
+                    <div className="p-3.5 rounded-xl bg-gradient-to-r from-amber-500/10 via-rose-500/5 to-teal-500/10 border border-amber-500/20 flex flex-wrap items-center justify-between gap-2">
+                      <div className="text-xs text-slate-600 dark:text-slate-300">
+                        {l('Hedef Ülkedeki Karşılığı:', 'Destination Value:', 'Gegenwert im Zielland:')}
+                      </div>
+                      <div className="text-lg sm:text-xl font-black text-slate-900 dark:text-white tracking-tight flex items-baseline gap-1.5">
+                        <span className="text-amber-600 dark:text-amber-400 font-mono text-sm">{destCurrencySymbol}</span>
+                        <span>{formatCurrencyValue(convertedToDest)}</span>
+                        <span className="text-xs font-mono text-slate-500 dark:text-[#8E9DBE] font-bold">
+                          {destCurrencyCode}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Cross-Rates Counterpart Badges */}
+                    {converterBase !== 'LOCAL' && (
+                      <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-500 dark:text-[#8E9DBE] pt-1">
+                        <span>{l('Eşdeğerler:', 'Equivalents:', 'Äquivalente:')}</span>
+                        <span className="px-2 py-0.5 rounded-md bg-white dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10 font-mono">
+                          ${formatCurrencyValue(convertedToUsd)} USD
+                        </span>
+                        <span className="px-2 py-0.5 rounded-md bg-white dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10 font-mono">
+                          €{formatCurrencyValue(convertedToEur)} EUR
+                        </span>
+                        <span className="px-2 py-0.5 rounded-md bg-white dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/10 font-mono">
+                          ₺{formatCurrencyValue(convertedToTry)} TRY
+                        </span>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* 3 Quick-Reference Rate Pairs */}
+                  <div className="grid grid-cols-3 gap-2.5 text-center">
+                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
+                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">1 USD</div>
+                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Usd)}
+                      </div>
+                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
+                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">1 EUR</div>
+                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Eur)}
+                      </div>
+                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10">
+                      <div className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-medium">1 TRY</div>
+                      <div className="text-xs sm:text-sm font-black text-slate-800 dark:text-white truncate">
+                        {destCurrencySymbol}{formatCurrencyValue(rate1Try)}
+                      </div>
+                      <div className="text-[9px] text-slate-400 font-mono">{destCurrencyCode}</div>
+                    </div>
+                  </div>
+
+                  {/* Offline 'Traveler Cheat Sheet' Matrix */}
+                  <div className="space-y-2 pt-1">
+                    <div className="flex items-center justify-between text-xs font-bold text-slate-800 dark:text-white">
+                      <span className="flex items-center gap-1.5">
+                        <span>📋</span>
+                        <span>{l('Çevrimdışı Gezgin Fiyat Matrisi (Cheat Sheet)', 'Offline Traveler Cheat Sheet', 'Offline-Preisübersicht')}</span>
+                      </span>
+                      <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                        {l('Offline Hazır', 'Offline Ready', 'Offline bereit')}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                      {COMMON_CHEAT_SHEET_TIERS.map((tier) => {
+                        const localCost = tier.approxUsd * rate1Usd;
+                        const title = language === 'tr' ? tier.titleTr : language === 'de' ? tier.titleDe : tier.titleEn;
+                        return (
+                          <div
+                            key={tier.id}
+                            className="p-2.5 rounded-xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/60 dark:border-white/10 flex items-center justify-between gap-2 shadow-2xs"
+                          >
+                            <div className="flex items-center gap-2 min-w-0">
+                              <span className="text-base select-none">{tier.icon}</span>
+                              <span className="font-semibold text-slate-700 dark:text-slate-300 truncate text-[11px] sm:text-xs">
+                                {title}
+                              </span>
+                            </div>
+                            <div className="text-right flex-shrink-0">
+                              <div className="font-extrabold text-slate-900 dark:text-white text-xs">
+                                {destCurrencySymbol}{formatCurrencyValue(localCost)}
+                              </div>
+                              <div className="text-[10px] text-slate-400 font-mono">
+                                ~${tier.approxUsd} USD
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* 2. TIME ZONE SYNC (lg:col-span-5) */}
+                <div className="lg:col-span-5 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px] flex flex-col justify-between">
+                  {/* Header */}
+                  <div>
+                    <div className="flex items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-sky-400 to-sky-600 text-white flex items-center justify-center shadow-sm">
+                          <Clock className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                            {l('Saat Dilimi & Göçebe Eşzamanlama', 'Time Zone Sync & Nomad Schedule', 'Zeitzonen-Sync & Nomaden-Takt')}
+                          </h3>
+                          <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                            {geography?.timeZone || `UTC${destOffsetHours >= 0 ? '+' : ''}${destOffsetHours}`}
+                          </div>
+                        </div>
+                      </div>
+                      <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
+                        {diffLabel}
+                      </span>
+                    </div>
+
+                    {/* Dual Clock Showcase */}
+                    <div className="grid grid-cols-2 gap-3 mt-4">
+                      {/* Home Clock */}
+                      <div className="p-3.5 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 text-center space-y-1">
+                        <div className="flex items-center justify-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
+                          <span>🏠 {l('Ev Saati', 'Home Time', 'Heimatuhrzeit')}</span>
+                        </div>
+                        <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-mono tracking-tight">
+                          {formatTimeStr(currentTime)}
+                        </div>
+                        <div className="text-[10px] text-slate-500 dark:text-[#8E9DBE] font-medium">
+                          {formatDateStr(currentTime)} · UTC{userOffsetHours >= 0 ? '+' : ''}${userOffsetHours}
+                        </div>
+                      </div>
+
+                      {/* Destination Clock */}
+                      <div className="p-3.5 rounded-2xl bg-gradient-to-b from-sky-500/10 to-transparent border border-sky-500/25 text-center space-y-1">
+                        <div className="flex items-center justify-center gap-1.5 text-[10px] text-sky-600 dark:text-sky-400 font-bold uppercase tracking-wider">
+                          <span>✈️ {l('Varış Saati', 'Destination Time', 'Ziel-Uhrzeit')}</span>
+                        </div>
+                        <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-mono tracking-tight text-sky-600 dark:text-sky-300">
+                          {formatTimeStr(destTime)}
+                        </div>
+                        <div className="text-[10px] text-slate-500 dark:text-[#8E9DBE] font-medium truncate">
+                          {geo?.capital || name} · UTC{destOffsetHours >= 0 ? '+' : ''}${destOffsetHours}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Remote Nomad Schedule Overlap Matrix */}
+                    <div className="mt-4 p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-2.5">
+                      <div className="flex items-center justify-between text-xs font-bold text-slate-800 dark:text-slate-200">
+                        <span className="flex items-center gap-1.5">
+                          <Laptop className="w-3.5 h-3.5 text-sky-500" />
+                          <span>{l('Uzaktan Çalışma & Mesai Çakışması', 'Remote Work Overlap Window', 'Arbeitszeit-Überschneidung')}</span>
+                        </span>
+                        <span className="text-[10px] font-mono font-bold text-slate-400">
+                          09:00 - 18:00
+                        </span>
+                      </div>
+
+                      {/* Overlap timeline */}
+                      <div className="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                        <div className="flex items-center justify-between">
+                          <span>{l('Evdeki Standart Mesai (09:00 - 18:00):', 'Home Standard Workday:', 'Heimat-Arbeitstag:')}</span>
+                          <span className="font-mono font-bold text-slate-800 dark:text-white">
+                            {((9 + diffHours + 24) % 24).toFixed(0).padStart(2, '0')}:00 - {((18 + diffHours + 24) % 24).toFixed(0).padStart(2, '0')}:00
+                          </span>
+                        </div>
+
+                        <div className="p-2.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800 text-[11px]">
+                          {Math.abs(diffHours) <= 3 ? (
+                            <p className="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1.5">
+                              <span>🟢</span>
+                              <span>{l('Mükemmel Göçebe Uyumu: Saat farkı minimal; tüm iş saatleri Türkiye/Avrupa ekipleriyle sorunsuz örtüşür.', 'Excellent nomad sync: Minimal time difference with home teams.', 'Optimale Zeitzone für Remote-Arbeit mit europäischen Teams.')}</span>
+                            </p>
+                          ) : diffHours > 3 ? (
+                            <p className="text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1.5">
+                              <span>🟡</span>
+                              <span>{l(`Asya/Pasifik Tipi: Hedef ülke ${diffHours} saat ileride. Öğleden sonra ve akşam saatleri (15:00 - 21:00) ekiplerinizle toplantı için idealdir.`, `Evening sync: Destination is ${diffHours}h ahead. Afternoons overlap best.`, `Ziel ist ${diffHours} Std voraus. Nachmittage ideal für Meetings.`)}</span>
+                            </p>
+                          ) : (
+                            <p className="text-sky-600 dark:text-sky-400 font-semibold flex items-center gap-1.5">
+                              <span>🔵</span>
+                              <span>{l(`Amerika/Atlantik Tipi: Hedef ülke ${Math.abs(diffHours)} saat geride. Sabah erken saatlerde çalışarak evdeki öğleden sonrayı yakalayabilirsiniz.`, `Morning sync: Destination is ${Math.abs(diffHours)}h behind. Early mornings overlap best.`, `Ziel ist ${Math.abs(diffHours)} Std zurück. Frühe Morgenstunden ideal.`)}</span>
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Summary Time Footer */}
+                  <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE] flex items-center gap-1.5 pt-2">
+                    <Activity className="w-3.5 h-3.5 text-sky-500" />
+                    <span>{l('Saniyeler gerçek zamanlı olarak dünya standart saati (NTP) ile senkronize edilmektedir.', 'Seconds sync live with world atomic time.', 'Sekunden synchronisieren sich live.')}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bento Grid Bottom Section: 3. CONNECTIVITY INFO & HARDWARE ASSET */}
+              <div className="bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
+                {/* Header */}
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 text-white flex items-center justify-center shadow-sm">
+                      <Wifi className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                        {l('Bağlantı Altyapısı, Wi-Fi Hızları & Priz / Voltaj Rehberi', 'Connectivity, Wi-Fi Speeds & Socket Plug Guide', 'Konnektivität, WLAN & Steckdosen-Guide')}
+                      </h3>
+                      <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                        {l('Mobil ağ kapsama alanı:', 'Mobile coverage:', 'Netzabdeckung:')} <b className="text-slate-800 dark:text-slate-200">{insights.internet.networkCoverage}</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-3 py-1 rounded-full font-bold bg-teal-500/10 text-teal-700 dark:text-teal-300 border border-teal-500/20">
+                      ⚡ {insights.internet.mobileSpeedMbps} Mbps Mobil Hız
+                    </span>
+                    <span className="text-xs px-3 py-1 rounded-full font-bold bg-slate-100 dark:bg-white/[0.05] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10">
+                      📶 {insights.internet.broadbandSpeedMbps} Mbps Genişbant
+                    </span>
+                  </div>
+                </div>
+
+                {/* 3 Grid Pillars: Internet Speeds | Plug Hardware | Nomad Digital Readiness */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {/* Pillar 1: Internet & Wi-Fi Speed */}
+                  <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
+                        <Wifi className="w-4 h-4 text-teal-500" />
+                        <span>{l('İnternet Hızı & Maliyet', 'Internet Speed & Cost', 'WLAN-Geschwindigkeit')}</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-teal-600 dark:text-teal-400 font-bold">
+                        {insights.internet.costPerGbUsd}
+                      </span>
+                    </div>
+
+                    <div className="space-y-2">
+                      <div>
+                        <div className="flex justify-between text-[11px] mb-1 font-semibold text-slate-600 dark:text-slate-300">
+                          <span>{l('Mobil İndirme Hızı:', 'Mobile Download:', 'Mobil Download:')}</span>
+                          <span className="font-mono font-bold text-slate-900 dark:text-white">{insights.internet.mobileSpeedMbps} Mbps</span>
+                        </div>
+                        <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                          <div
+                            className="h-full rounded-full bg-gradient-to-r from-teal-500 to-emerald-400"
+                            style={{ width: `${Math.min(100, Math.max(15, (insights.internet.mobileSpeedMbps / 150) * 100))}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="pt-1 text-[11px] text-slate-500 dark:text-[#8E9DBE] space-y-1">
+                        <div>
+                          • {l('En İyi Operatörler:', 'Best Carriers:', 'Beste Anbieter:')} <b className="text-slate-700 dark:text-slate-300">{insights.internet.bestCarriers.slice(0, 3).join(', ')}</b>
+                        </div>
+                        <div>
+                          • {l('eSIM Erişimi:', 'eSIM Support:', 'eSIM-Unterstützung:')} <b className="text-slate-700 dark:text-slate-300">{insights.internet.esimAvailability}</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 2: Sockets & Electrical Plug Types */}
+                  <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
+                        <Plug className="w-4 h-4 text-amber-500" />
+                        <span>{l('Priz Tipleri & Voltaj', 'Sockets & Voltage', 'Steckdosen & Volt')}</span>
+                      </div>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
+                        {plugInfo.includes('230V') ? '230V / 50Hz' : plugInfo.includes('120V') ? '120V / 60Hz' : 'Standart Voltaj'}
+                      </span>
+                    </div>
+
+                    <div className="space-y-2">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        {plugTypesList.map((pt, idx) => (
+                          <div
+                            key={idx}
+                            className="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-black text-slate-800 dark:text-slate-200 shadow-2xs flex items-center gap-1.5"
+                          >
+                            <span className="w-2 h-2 rounded-full bg-amber-500" />
+                            <span>{l('Tip', 'Type', 'Typ')} {pt}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Home Socket Compatibility Check */}
+                      <div className="pt-1">
+                        {isTrCompatible ? (
+                          <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-semibold text-emerald-700 dark:text-emerald-300 flex items-center gap-1.5">
+                            <span>✓</span>
+                            <span>{l('Türkiye standart fişleriyle (Tip C & F) doğrudan uyumludur. Dönüştürücü gerekmez.', 'Fully compatible with European/Turkish Type C & F plugs. No adapter needed.', 'Kompatibel mit Euro- und Schukosteckern (Typ C & F).')}</span>
+                          </div>
+                        ) : (
+                          <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] font-semibold text-amber-700 dark:text-amber-300 flex items-center gap-1.5">
+                            <span>⚠️</span>
+                            <span>{l('Dikkat: Farklı priz tipi kullanılmaktadır. Yanınızda evrensel seyahat adaptörü bulundurun.', 'Adapter required: Please pack a universal plug adapter.', 'Reiseadapter erforderlich: Steckertypen weichen ab.')}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 3: VPN & Digital Nomad Readiness */}
+                  <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
+                        <ShieldCheck className="w-4 h-4 text-sky-500" />
+                        <span>{l('VPN & Dijital Güvenlik', 'VPN & Digital Security', 'VPN & Sicherheit')}</span>
+                      </div>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
+                        insights.internet.vpnRequired
+                          ? 'bg-amber-500/10 text-amber-600 border-amber-500/20'
+                          : 'bg-emerald-500/10 text-emerald-600 border-emerald-500/20'
+                      }`}>
+                        {insights.internet.vpnRequired ? l('VPN Tavsiye Edilir', 'VPN Recommended', 'VPN empfohlen') : l('Açık İnternet', 'Open Web', 'Offenes Web')}
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                      {insights.internet.vpnNote || (insights.internet.vpnRequired
+                        ? l('Bazı mesajlaşma veya sosyal medya servislerinde bölgesel kısıtlamalar olabilir; seyahatten önce güvenilir bir VPN kurmanız önerilir.', 'Regional restrictions may apply to certain apps; installing a reliable VPN prior to travel is advised.', 'Einige Onlinedienste könnten eingeschränkt sein; VPN vorab installieren.')
+                        : l('Ülkede internet erişimi genel olarak açık ve sansürsüzdür. Standart seyahat şifrelemesi yeterlidir.', 'Internet access is open without severe censorship.', 'Internetzugang ist offen und unzensiert.'))}
+                    </p>
+
+                    <div className="pt-1 flex items-center gap-2 text-[10px] text-slate-400">
+                      <span>eSIM: Airalo, Holafly, Nomad</span>
+                      <span>•</span>
+                      <span>Wi-Fi Hotspots: {l('Yaygın', 'Widespread', 'Weit verbreitet')}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

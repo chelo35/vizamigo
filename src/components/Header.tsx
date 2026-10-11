@@ -156,7 +156,7 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
 
             {langMenuOpen && (
-              <div className="absolute right-0 mt-2 w-40 glass-card bg-white/95 dark:bg-[#111833]/95 backdrop-blur-2xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl shadow-2xl py-1.5 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+              <div className="absolute right-0 mt-2 w-44 glass-card bg-white/95 dark:bg-[#111833]/95 backdrop-blur-2xl border border-slate-200/80 dark:border-white/[0.08] rounded-2xl shadow-2xl py-1.5 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
                 {SUPPORTED_LANGUAGES.map(opt => (
                   <button
                     key={opt.code}

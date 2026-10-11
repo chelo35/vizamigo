@@ -158,7 +158,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                         : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
                       : item.crisis
                       ? 'text-[#FF6B6B] dark:text-[#FF8E72] hover:bg-[#FF6B6B]/10 border border-[#FF6B6B]/15'
-                      : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-950 dark:hover:text-white hover:bg-black/[0.03] dark:hover:bg-white/[0.04]'
+                      : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-950 dark:hover:text-white hover:bg-slate-900/[0.03] dark:hover:bg-white/[0.04]'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -293,7 +293,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                           ? item.crisis
                             ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] border border-[#FF6B6B]/30'
                             : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-sm'
-                          : 'text-slate-600 dark:text-[#8E9DBE] hover:bg-black/[0.02] dark:hover:bg-white/[0.04]'
+                          : 'text-slate-600 dark:text-[#8E9DBE] hover:bg-slate-900/[0.03] dark:hover:bg-white/[0.04]'
                       }`}
                     >
                       <div className="flex items-center gap-3">
