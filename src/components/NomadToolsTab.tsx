@@ -48,6 +48,14 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
     return getConsularEmergencyInfo(currentPassport, language);
   }, [currentPassport, language]);
 
+  const getConsularText = (obj?: { tr: string; en: string; de: string }) => {
+    if (!obj) return '';
+    if (language === 'de') return obj.de || obj.en;
+    if (language === 'en') return obj.en || obj.tr;
+    if (language === 'tr') return obj.tr;
+    return obj.en || obj.tr;
+  };
+
   // Filtered Nomad Hubs
   const filteredNomadHubs = useMemo(() => {
     return NOMAD_HUBS.filter(hub => {
@@ -684,10 +692,10 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
 
             <div>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
-                {consularInfo.ministryName[language] || consularInfo.ministryName.tr}
+                {getConsularText(consularInfo.ministryName)}
               </h2>
               <h3 className="text-sm font-semibold text-rose-600 dark:text-rose-400 mt-1">
-                {consularInfo.crisisCenterTitle[language] || consularInfo.crisisCenterTitle.tr}
+                {getConsularText(consularInfo.crisisCenterTitle)}
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2.5 max-w-xl leading-relaxed">
                 {l(
@@ -796,7 +804,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                 )}
               </h3>
               <div className="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-500/10 px-3.5 py-1.5 rounded-full border border-rose-500/20 whitespace-nowrap self-start sm:self-auto">
-                📄 {consularInfo.emergencyDocName[language] || consularInfo.emergencyDocName.tr}
+                📄 {getConsularText(consularInfo.emergencyDocName)}
               </div>
             </div>
 
@@ -807,7 +815,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('Polis Karakoluna Gidin & Tutanak Alın', 'File Police Report at Local Station', 'Polizeiprotokoll anfordern')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {consularInfo.steps.policeReport[language] || consularInfo.steps.policeReport.tr}
+                  {getConsularText(consularInfo.steps.policeReport)}
                 </p>
               </div>
 
@@ -817,7 +825,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('Biyometrik Vesikalık Fotoğraf Çektirin', 'Obtain Compliant Passport Photos', 'Biometrische Passfotos erstellen')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {consularInfo.steps.photos[language] || consularInfo.steps.photos.tr}
+                  {getConsularText(consularInfo.steps.photos)}
                 </p>
               </div>
 
@@ -827,7 +835,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('En Yakın Diplomatik Misyonunuza Başvurun', 'Submit Case to Consular Mission', 'Zuständige Auslandsvertretung kontaktieren')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {consularInfo.steps.embassySubmission[language] || consularInfo.steps.embassySubmission.tr}
+                  {getConsularText(consularInfo.steps.embassySubmission)}
                 </p>
               </div>
 
@@ -837,10 +845,10 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('Geçici Seyahat Belgenizi Teslim Alın', 'Receive Emergency Return Certificate', 'Notreisedokument entgegennehmen')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {consularInfo.steps.travelDocIssuance[language] || consularInfo.steps.travelDocIssuance.tr}
+                  {getConsularText(consularInfo.steps.travelDocIssuance)}
                 </p>
                 <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 pt-1.5 border-t border-slate-200/50 dark:border-white/[0.06]">
-                  ⚠️ {consularInfo.emergencyDocValidity[language] || consularInfo.emergencyDocValidity.tr}
+                  ⚠️ {getConsularText(consularInfo.emergencyDocValidity)}
                 </div>
               </div>
             </div>

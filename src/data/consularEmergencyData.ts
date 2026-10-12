@@ -445,7 +445,7 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
  * Verilen pasaport koduna göre doğrulanmış kriz ve konsolosluk verisini döner.
  * Eğer özel kaydı yoksa o ülkenin Dışişleri Bakanlığı standart formatında üretir.
  */
-export function getConsularEmergencyInfo(passportCode: string, lang: 'tr' | 'en' | 'de' = 'tr'): ConsularEmergencyInfo {
+export function getConsularEmergencyInfo(passportCode: string, _lang: string = 'tr'): ConsularEmergencyInfo {
   const code = (passportCode || 'TR').toUpperCase();
   const found = CONSULAR_EMERGENCY_DATA[code];
   if (found) return found;

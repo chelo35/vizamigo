@@ -57,7 +57,7 @@ interface CuratedStopDef {
   mapsQuery: string;
 }
 
-interface CuratedItineraryDef {
+export interface CuratedItineraryDef {
   routeName: { tr: string; en: string; de: string };
   routeSummary: { tr: string; en: string; de: string };
   totalDays: number;
@@ -1926,13 +1926,14 @@ export function generateDynamicCountryItinerary(
  */
 export function getCountryItinerary(
   countryCode: string,
-  lang: 'tr' | 'en' | 'de' = 'tr'
+  lang: string = 'tr'
 ): CountryTravelItinerary {
   const code = countryCode.toUpperCase();
+  const normLang: 'tr' | 'en' | 'de' = lang === 'de' ? 'de' : lang === 'tr' ? 'tr' : 'en';
   const curated = CURATED_ITINERARIES[code] || CURATED_ITINERARIES_EXTRA[code];
 
   if (!curated) {
-    return generateDynamicCountryItinerary(code, lang);
+    return generateDynamicCountryItinerary(code, normLang);
   }
 
   const countryName = getCountryName(code, lang);
@@ -1940,33 +1941,33 @@ export function getCountryItinerary(
   return {
     countryCode: code,
     countryName,
-    routeName: curated.routeName[lang] || curated.routeName.tr,
-    routeSummary: curated.routeSummary[lang] || curated.routeSummary.tr,
+    routeName: curated.routeName[normLang] || curated.routeName.tr,
+    routeSummary: curated.routeSummary[normLang] || curated.routeSummary.tr,
     totalDays: curated.totalDays,
-    idealDurationText: curated.idealDurationText[lang] || curated.idealDurationText.tr,
-    bestSeason: curated.bestSeason[lang] || curated.bestSeason.tr,
-    transportMode: curated.transportMode[lang] || curated.transportMode.tr,
-    paceLevel: curated.paceLevel[lang] || curated.paceLevel.tr,
+    idealDurationText: curated.idealDurationText[normLang] || curated.idealDurationText.tr,
+    bestSeason: curated.bestSeason[normLang] || curated.bestSeason.tr,
+    transportMode: curated.transportMode[normLang] || curated.transportMode.tr,
+    paceLevel: curated.paceLevel[normLang] || curated.paceLevel.tr,
     stops: curated.stops.map(s => ({
       stopNumber: s.name.tr ? parseInt(s.name.tr.charAt(0)) || 1 : 1,
-      name: s.name[lang] || s.name.tr,
-      recommendedDuration: s.recommendedDuration[lang] || s.recommendedDuration.tr,
-      durationBadge: s.durationBadge[lang] || s.durationBadge.tr,
-      highlights: s.highlights[lang] || s.highlights.tr,
-      activities: s.activities[lang] || s.activities.tr,
-      foodAndDrinks: s.foodAndDrinks[lang] || s.foodAndDrinks.tr,
-      criticalTips: s.criticalTips[lang] || s.criticalTips.tr,
+      name: s.name[normLang] || s.name.tr,
+      recommendedDuration: s.recommendedDuration[normLang] || s.recommendedDuration.tr,
+      durationBadge: s.durationBadge[normLang] || s.durationBadge.tr,
+      highlights: s.highlights[normLang] || s.highlights.tr,
+      activities: s.activities[normLang] || s.activities.tr,
+      foodAndDrinks: s.foodAndDrinks[normLang] || s.foodAndDrinks.tr,
+      criticalTips: s.criticalTips[normLang] || s.criticalTips.tr,
       mapsQuery: s.mapsQuery
     })),
     signatureGastronomy: {
-      dishes: curated.signatureGastronomy.dishes[lang] || curated.signatureGastronomy.dishes.tr,
-      drinks: curated.signatureGastronomy.drinks[lang] || curated.signatureGastronomy.drinks.tr,
-      streetFoods: curated.signatureGastronomy.streetFoods[lang] || curated.signatureGastronomy.streetFoods.tr,
-      diningAdvice: curated.signatureGastronomy.diningAdvice[lang] || curated.signatureGastronomy.diningAdvice.tr
+      dishes: curated.signatureGastronomy.dishes[normLang] || curated.signatureGastronomy.dishes.tr,
+      drinks: curated.signatureGastronomy.drinks[normLang] || curated.signatureGastronomy.drinks.tr,
+      streetFoods: curated.signatureGastronomy.streetFoods[normLang] || curated.signatureGastronomy.streetFoods.tr,
+      diningAdvice: curated.signatureGastronomy.diningAdvice[normLang] || curated.signatureGastronomy.diningAdvice.tr
     },
     packingAndPrecautions: {
-      essentials: curated.packingAndPrecautions.essentials[lang] || curated.packingAndPrecautions.essentials.tr,
-      safetyAndEtiquette: curated.packingAndPrecautions.safetyAndEtiquette[lang] || curated.packingAndPrecautions.safetyAndEtiquette.tr
+      essentials: curated.packingAndPrecautions.essentials[normLang] || curated.packingAndPrecautions.essentials.tr,
+      safetyAndEtiquette: curated.packingAndPrecautions.safetyAndEtiquette[normLang] || curated.packingAndPrecautions.safetyAndEtiquette.tr
     }
   };
 }

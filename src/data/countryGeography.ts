@@ -639,22 +639,23 @@ export const CURATED_GEOGRAPHY: Record<string, CuratedGeographyItem> = {
  * 199 ülkenin tamamı için başkent, büyük şehirler, turistik bölgeler,
  * para birimi, priz tipi ve saat dilimi döndürür.
  */
-export function getCountryGeography(countryCode: string, lang: 'tr' | 'en' | 'de' = 'tr'): CountryGeographyData {
+export function getCountryGeography(countryCode: string, lang: string = 'tr'): CountryGeographyData {
   const code = countryCode.toUpperCase();
+  const normLang: 'tr' | 'en' | 'de' = lang === 'de' ? 'de' : lang === 'tr' ? 'tr' : 'en';
   const countryName = getCountryName(code, lang);
   const geo = GEO_DATA[code];
   const curated = CURATED_GEOGRAPHY[code];
-  const capital = geo ? geo.capital : (lang === 'de' ? 'Hauptstadt' : lang === 'en' ? 'Capital' : 'Başkent');
+  const capital = geo ? geo.capital : (normLang === 'de' ? 'Hauptstadt' : normLang === 'en' ? 'Capital' : 'Başkent');
 
   if (curated) {
     return {
       countryCode: code,
       countryName,
       capital,
-      majorCities: curated.majorCities[lang] || curated.majorCities.tr,
-      touristRegions: curated.touristRegions[lang] || curated.touristRegions.tr,
+      majorCities: curated.majorCities[normLang] || curated.majorCities.tr,
+      touristRegions: curated.touristRegions[normLang] || curated.touristRegions.tr,
       currencyCode: curated.currencyCode,
-      currencyName: curated.currencyName[lang] || curated.currencyName.tr,
+      currencyName: curated.currencyName[normLang] || curated.currencyName.tr,
       currencySymbol: curated.currencySymbol,
       timeZone: curated.timeZone,
       callingCode: curated.callingCode,
@@ -663,7 +664,7 @@ export function getCountryGeography(countryCode: string, lang: 'tr' | 'en' | 'de
   }
 
   // Bölgesel Otantik Harita ve Coğrafya Motoru
-  const regionalMeta = getRegionalGeographyDefaults(code, capital, countryName, lang);
+  const regionalMeta = getRegionalGeographyDefaults(code, capital, countryName, normLang);
 
   return {
     countryCode: code,

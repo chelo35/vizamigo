@@ -850,7 +850,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between flex-wrap gap-2">
                         <div>
                           <span className="text-[11px] font-bold uppercase tracking-wider text-white/70 block">
-                            {geography.region} · {geography.subRegion}
+                            {countryName} · {geography.capital}
                           </span>
                           <h3 className="text-xl sm:text-2xl font-black text-white drop-shadow-md">
                             {visual.landmark}

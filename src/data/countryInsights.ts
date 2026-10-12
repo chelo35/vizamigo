@@ -810,8 +810,6 @@ const REAL_RIDE_APPS: Record<string, string[]> = {
   TZ: ['Bolt', 'Uber', 'InDrive'],
   NG: ['Bolt', 'Uber', 'InDrive'],
   GH: ['Bolt', 'Uber', 'Yango'],
-  EG: ['InDrive', 'Uber', 'Careem'],
-  MA: ['Careem', 'Heetch', 'InDrive'],
   MU: ['Yugo', 'Ala-Lila', 'MoRide'],
 };
 

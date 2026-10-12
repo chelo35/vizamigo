@@ -1365,8 +1365,9 @@ function getRegionalProfile(region: string, capital: string, countryName: string
 /**
  * Ülke Ansiklopedisi Getirici
  */
-export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 'de'): CountryEncyclopediaData {
+export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr'): CountryEncyclopediaData {
   const code = countryCode.toUpperCase();
+  const normLang: 'tr' | 'en' | 'de' = lang === 'de' ? 'de' : lang === 'tr' ? 'tr' : 'en';
   const ALL_CURATED: Record<string, CuratedEntry> = {
     ...CURATED_ENCYCLOPEDIA,
     ...CURATED_EXTRA,
@@ -1383,47 +1384,47 @@ export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 
       countryCode: code,
       countryName,
       culture: {
-        etiquette: curated.culture.etiquette[lang] || curated.culture.etiquette.tr,
-        festivals: curated.culture.festivals[lang] || curated.culture.festivals.tr,
-        lifestyle: curated.culture.lifestyle[lang] || curated.culture.lifestyle.tr
+        etiquette: curated.culture.etiquette[normLang] || curated.culture.etiquette.tr,
+        festivals: curated.culture.festivals[normLang] || curated.culture.festivals.tr,
+        lifestyle: curated.culture.lifestyle[normLang] || curated.culture.lifestyle.tr
       },
       tourism: {
-        mustSeePlaces: curated.tourism.mustSeePlaces[lang] || curated.tourism.mustSeePlaces.tr,
-        bestSeasons: curated.tourism.bestSeasons[lang] || curated.tourism.bestSeasons.tr,
-        travelStyleTip: curated.tourism.travelStyleTip[lang] || curated.tourism.travelStyleTip.tr
+        mustSeePlaces: curated.tourism.mustSeePlaces[normLang] || curated.tourism.mustSeePlaces.tr,
+        bestSeasons: curated.tourism.bestSeasons[normLang] || curated.tourism.bestSeasons.tr,
+        travelStyleTip: curated.tourism.travelStyleTip[normLang] || curated.tourism.travelStyleTip.tr
       },
       religion: {
-        primaryReligions: curated.religion.primaryReligions[lang] || curated.religion.primaryReligions.tr,
-        respectNorms: curated.religion.respectNorms[lang] || curated.religion.respectNorms.tr,
-        sacredSites: curated.religion.sacredSites[lang] || curated.religion.sacredSites.tr
+        primaryReligions: curated.religion.primaryReligions[normLang] || curated.religion.primaryReligions.tr,
+        respectNorms: curated.religion.respectNorms[normLang] || curated.religion.respectNorms.tr,
+        sacredSites: curated.religion.sacredSites[normLang] || curated.religion.sacredSites.tr
       },
       language: {
-        officialLanguages: curated.language.officialLanguages[lang] || curated.language.officialLanguages.tr,
-        englishProficiency: curated.language.englishProficiency[lang] || curated.language.englishProficiency.tr,
+        officialLanguages: curated.language.officialLanguages[normLang] || curated.language.officialLanguages.tr,
+        englishProficiency: curated.language.englishProficiency[normLang] || curated.language.englishProficiency.tr,
         phrases: curated.language.phrases.map(p => ({
           phrase: p.phrase,
-          meaning: lang === 'de' ? p.meaningDe : lang === 'en' ? p.meaningEn : p.meaningTr,
-          translation: lang === 'de' ? p.meaningDe : lang === 'en' ? p.meaningEn : p.meaningTr,
+          meaning: normLang === 'de' ? p.meaningDe : normLang === 'en' ? p.meaningEn : p.meaningTr,
+          translation: normLang === 'de' ? p.meaningDe : normLang === 'en' ? p.meaningEn : p.meaningTr,
           pronunciation: p.pronunciation
         }))
       },
       history: {
-        conciseHistory: curated.history.conciseHistory[lang] || curated.history.conciseHistory.tr,
-        milestones: curated.history.milestones[lang] || curated.history.milestones.tr
+        conciseHistory: curated.history.conciseHistory[normLang] || curated.history.conciseHistory.tr,
+        milestones: curated.history.milestones[normLang] || curated.history.milestones.tr
       },
       gastronomy: {
-        famousDishes: curated.gastronomy.famousDishes[lang] || curated.gastronomy.famousDishes.tr,
-        traditionalDrinks: curated.gastronomy.traditionalDrinks[lang] || curated.gastronomy.traditionalDrinks.tr,
-        streetFoodAndDesserts: curated.gastronomy.streetFoodAndDesserts[lang] || curated.gastronomy.streetFoodAndDesserts.tr
+        famousDishes: curated.gastronomy.famousDishes[normLang] || curated.gastronomy.famousDishes.tr,
+        traditionalDrinks: curated.gastronomy.traditionalDrinks[normLang] || curated.gastronomy.traditionalDrinks.tr,
+        streetFoodAndDesserts: curated.gastronomy.streetFoodAndDesserts[normLang] || curated.gastronomy.streetFoodAndDesserts.tr
       },
       achievements: {
-        famousFigures: curated.achievements.famousFigures[lang] || curated.achievements.famousFigures.tr,
-        strongSectors: curated.achievements.strongSectors[lang] || curated.achievements.strongSectors.tr
+        famousFigures: curated.achievements.famousFigures[normLang] || curated.achievements.famousFigures.tr,
+        strongSectors: curated.achievements.strongSectors[normLang] || curated.achievements.strongSectors.tr
       },
       economy: {
-        paymentCulture: curated.economy.paymentCulture[lang] || curated.economy.paymentCulture.tr,
-        economicPillars: curated.economy.economicPillars[lang] || curated.economy.economicPillars.tr,
-        tippingCulture: curated.economy.tippingCulture[lang] || curated.economy.tippingCulture.tr
+        paymentCulture: curated.economy.paymentCulture[normLang] || curated.economy.paymentCulture.tr,
+        economicPillars: curated.economy.economicPillars[normLang] || curated.economy.economicPillars.tr,
+        tippingCulture: curated.economy.tippingCulture[normLang] || curated.economy.tippingCulture.tr
       }
     };
   }
@@ -1433,24 +1434,24 @@ export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 
   const hub = geo ? geo.mainHub : 'Havalimanı';
   const currency = insights.currency;
   const region = getCountryRegion(code);
-  const profile = getRegionalProfile(region, capital, countryName, lang);
+  const profile = getRegionalProfile(region, capital, countryName, normLang);
   const heritage = COUNTRY_HERITAGE[code];
 
   const visual = getCountryVisual(code);
   const mustSeePlaces = heritage
-    ? (heritage.landmarks[lang] || heritage.landmarks.tr)
+    ? (heritage.landmarks[normLang] || heritage.landmarks.tr)
     : [
         visual.landmark,
-        `${capital} ${lang === 'de' ? 'Historisches Altstadtzentrum & Hauptboulevard' : lang === 'en' ? 'Historic Old Town & Grand Boulevard' : 'Tarihi Şehir Merkezi & Kent Meydanı'}`,
-        `${countryName} ${lang === 'de' ? 'Nationales Kultur- und Naturerbe' : lang === 'en' ? 'National Cultural & Natural Sanctuary' : 'Ulusal Tarih ve Doğa Parkı'}`
+        `${capital} ${normLang === 'de' ? 'Historisches Altstadtzentrum & Hauptboulevard' : normLang === 'en' ? 'Historic Old Town & Grand Boulevard' : 'Tarihi Şehir Merkezi & Kent Meydanı'}`,
+        `${countryName} ${normLang === 'de' ? 'Nationales Kultur- und Naturerbe' : normLang === 'en' ? 'National Cultural & Natural Sanctuary' : 'Ulusal Tarih ve Doğa Parkı'}`
       ];
 
   const famousFigures = heritage
-    ? (heritage.figures[lang] || heritage.figures.tr)
+    ? (heritage.figures[normLang] || heritage.figures.tr)
     : [
-        `${countryName} ${lang === 'de' ? 'Historische Persönlichkeiten & Pioniere' : lang === 'en' ? 'Historical Leaders & Cultural Pioneers' : 'Tarihi Önderleri ve Milli Şahsiyetleri'}`,
-        `${countryName} ${lang === 'de' ? 'Anerkannte Künstler & Kulturschaffende' : lang === 'en' ? 'Acclaimed Artists & Creators' : 'Tanınan Sanatçıları ve Yazarları'}`,
-        `${countryName} ${lang === 'de' ? 'Internationale Spitzensportler' : lang === 'en' ? 'International Athletes' : 'Milli Sporcuları ve Başarı İsimleri'}`
+        `${countryName} ${normLang === 'de' ? 'Historische Persönlichkeiten & Pioniere' : normLang === 'en' ? 'Historical Leaders & Cultural Pioneers' : 'Tarihi Önderleri ve Milli Şahsiyetleri'}`,
+        `${countryName} ${normLang === 'de' ? 'Anerkannte Künstler & Kulturschaffende' : normLang === 'en' ? 'Acclaimed Artists & Creators' : 'Tanınan Sanatçıları ve Yazarları'}`,
+        `${countryName} ${normLang === 'de' ? 'Internationale Spitzensportler' : normLang === 'en' ? 'International Athletes' : 'Milli Sporcuları ve Başarı İsimleri'}`
       ];
 
   const strongSectors = heritage ? heritage.sectors : profile.sectors;
@@ -1480,26 +1481,26 @@ export function getCountryEncyclopedia(countryCode: string, lang: 'tr' | 'en' | 
         ? 'Modest attire covering shoulders and knees is appreciated in sacred spaces.'
         : 'İbadethanelere girerken omuz ve dizlerin örtülü olmasına ve sessizliğe özen gösterilir.',
       sacredSites: heritage?.sacredSites
-        ? (heritage.sacredSites[lang] || heritage.sacredSites.tr)
+        ? (heritage.sacredSites[normLang] || heritage.sacredSites.tr)
         : [
             `${capital} Tarihi Başkent Mabedi ve Dini Mirası`
           ]
     },
     language: {
-      officialLanguages: `${countryName} ${lang === 'de' ? 'Landessprache. Englisch in Tourismuszentren geläufig.' : lang === 'en' ? 'official language. English understood in hotels and tourism zones.' : 'resmi dili. Turistik noktalarda ve otellerde İngilizce anlaşılabilir.'}`,
-      englishProficiency: lang === 'de' ? 'Gut in Großstädten; Übersetzungs-Apps auf dem Land nützlich.' : lang === 'en' ? 'Good in major hubs; translation apps helpful in small towns.' : 'Büyük şehirlerde ve otellerde iyi; kırsal bölgelerde çeviri uygulamaları faydalıdır.',
+      officialLanguages: `${countryName} ${normLang === 'de' ? 'Landessprache. Englisch in Tourismuszentren geläufig.' : normLang === 'en' ? 'official language. English understood in hotels and tourism zones.' : 'resmi dili. Turistik noktalarda ve otellerde İngilizce anlaşılabilir.'}`,
+      englishProficiency: normLang === 'de' ? 'Gut in Großstädten; Übersetzungs-Apps auf dem Land nützlich.' : normLang === 'en' ? 'Good in major hubs; translation apps helpful in small towns.' : 'Büyük şehirlerde ve otellerde iyi; kırsal bölgelerde çeviri uygulamaları faydalıdır.',
       phrases: profile.phrases
     },
     history: {
       conciseHistory: heritage?.history?.concise
-        ? (heritage.history.concise[lang] || heritage.history.concise.tr)
-        : lang === 'de'
+        ? (heritage.history.concise[normLang] || heritage.history.concise.tr)
+        : normLang === 'de'
         ? `${countryName} besitzt ein reiches historisches Erbe, geprägt von frühen Epochen, Handelsrouten und der modernen Unabhängigkeit.`
-        : lang === 'en'
+        : normLang === 'en'
         ? `${countryName} boasts a rich historical legacy shaped by ancient trade routes, sovereign independence, and dynamic modern development.`
         : `${countryName}, antik ticaret rotaları, bağımsızlık mücadelesi ve modern kalkınmayla şekillenmiş köklü bir tarihe sahiptir.`,
       milestones: heritage?.history?.milestones
-        ? (heritage.history.milestones[lang] || heritage.history.milestones.tr)
+        ? (heritage.history.milestones[normLang] || heritage.history.milestones.tr)
         : [
             `${countryName} Erken Yerleşimleri ve Tarihi Dönüm Noktaları`,
             `${countryName} Milli Bağımsızlık ve Egemenlik İlanı`,
