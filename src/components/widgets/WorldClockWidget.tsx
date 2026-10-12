@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Search, X, Clock } from 'lucide-react';
+import { Search, X, Clock, Globe } from 'lucide-react';
 import { ALL_WORLD_HUBS } from '../../data/worldHubs';
 import { useI18n } from '../../data/i18n';
 
 interface Props {
   className?: string;
+  onOpenRadar?: (city?: string) => void;
 }
 
-export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
+export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar }) => {
   const { language, l } = useI18n();
   const [now, setNow] = useState<Date>(() => new Date());
   const [search, setSearch] = useState<string>('');
@@ -60,17 +61,31 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={() => {
-            setIsSearching(!isSearching);
-            if (isSearching) setSearch('');
-          }}
-          className="p-1.5 rounded-lg text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40 transition-colors cursor-pointer"
-          title={l('Şehir veya başkent ara', 'Search city or capital', 'Stadt oder Hauptstadt suchen', 'Buscar ciudad o capital', 'Поиск города или столицы')}
-        >
-          <Search className="w-3.5 h-3.5" />
-        </button>
+        <div className="flex items-center gap-1">
+          {onOpenRadar && (
+            <button
+              type="button"
+              onClick={() => onOpenRadar()}
+              className="flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold bg-teal-500/10 hover:bg-teal-500/20 text-teal-600 dark:text-teal-400 border border-teal-500/20 transition-all cursor-pointer"
+              title={l('Dünya Haritasında Aç', 'Open in World Map', 'In Weltkarte öffnen')}
+            >
+              <Globe className="w-3 h-3 animate-pulse" />
+              <span>{l('Haritada Aç', 'Radar Map', 'Radar')}</span>
+            </button>
+          )}
+
+          <button
+            type="button"
+            onClick={() => {
+              setIsSearching(!isSearching);
+              if (isSearching) setSearch('');
+            }}
+            className="p-1.5 rounded-lg text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40 transition-colors cursor-pointer"
+            title={l('Şehir veya başkent ara', 'Search city or capital', 'Stadt oder Hauptstadt suchen', 'Buscar ciudad o capital', 'Поиск города или столицы')}
+          >
+            <Search className="w-3.5 h-3.5" />
+          </button>
+        </div>
       </div>
 
       {/* Optional Search Bar */}
@@ -132,12 +147,14 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             return (
               <div
                 key={hub.city}
-                className="flex items-center justify-between px-2.5 py-1.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] hover:bg-slate-100 dark:hover:bg-white/[0.06] transition-colors border border-slate-100/80 dark:border-white/[0.04]"
+                onClick={() => onOpenRadar?.(hub.city)}
+                className="flex items-center justify-between px-2.5 py-1.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] hover:bg-teal-50/50 dark:hover:bg-teal-950/20 hover:border-teal-500/30 transition-all border border-slate-100/80 dark:border-white/[0.04] cursor-pointer group"
+                title={l(`${displayName} için Dünya Haritası ve Hava/Döviz Telemetrisini Aç`, `Open World Map telemetry for ${displayName}`, `Öffne Telemetrie für ${displayName}`)}
               >
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="text-base leading-none">{hub.flag}</span>
+                  <span className="text-base leading-none group-hover:scale-110 transition-transform">{hub.flag}</span>
                   <div className="min-w-0">
-                    <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
+                    <div className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                       {displayName}
                     </div>
                     <div className="text-[10px] text-slate-400 truncate">
@@ -150,7 +167,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
                   <span className="text-xs" title={isDay ? 'Gündüz' : 'Gece'}>
                     {isDay ? '☀️' : '🌙'}
                   </span>
-                  <span className="font-mono text-xs font-black text-slate-900 dark:text-white bg-white dark:bg-black/40 px-2 py-0.5 rounded-lg border border-slate-200/80 dark:border-white/10 shadow-2xs">
+                  <span className="font-mono text-xs font-black text-slate-900 dark:text-white bg-white dark:bg-black/40 px-2 py-0.5 rounded-lg border border-slate-200/80 dark:border-white/10 shadow-2xs group-hover:border-teal-500/40">
                     {hubTime}
                   </span>
                 </div>

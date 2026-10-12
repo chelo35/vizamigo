@@ -31,7 +31,8 @@ import {
   Route,
   Luggage,
   Coins,
-  Laptop
+  Laptop,
+  Radio
 } from 'lucide-react';
 import {
   CountryItem,
@@ -74,6 +75,7 @@ interface ExploreTabProps {
   onOpenPackingList?: () => void;
   onOpenTippingCalc?: () => void;
   onOpenTimezoneOverlap?: () => void;
+  onOpenGlobalRadar?: (mode?: 'all' | 'clock' | 'weather' | 'currency', city?: string) => void;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -636,9 +638,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       <section className="space-y-4 mb-6" aria-label="Travel Widgets and Tools">
         {/* Live Interactive Widgets: World Clock, Live Weather & FX Converter Side-by-Side */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <WorldClockWidget />
-          <WeatherWidget />
-          <CurrencyWidget />
+          <WorldClockWidget onOpenRadar={(city) => onOpenGlobalRadar?.('clock', city)} />
+          <WeatherWidget onOpenRadar={(city) => onOpenGlobalRadar?.('weather', city)} />
+          <CurrencyWidget onOpenRadar={() => onOpenGlobalRadar?.('currency')} />
         </div>
 
         {/* Quick Travel Tools (4 Symmetrical Interactive Cards) */}
@@ -733,8 +735,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </button>
           </div>
 
-          {/* Practical Traveler & Nomad Tools Row (Packing, Tipping, Timezone Overlap) */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+          {/* Practical Traveler & Nomad Tools Row (Packing, Tipping, Timezone Overlap, Global Radar) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
             {/* Tool Card 5: Akıllı Bavul Listesi */}
             <button
               type="button"
@@ -791,6 +793,26 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
                   {l('Göçebeler için altın çalışma saatleri', 'Golden work hours for nomads', 'Goldene Arbeitsstunden für Remote', 'Horas ideales para nómadas', 'Часы для созвонов')}
+                </p>
+              </div>
+            </button>
+
+            {/* Tool Card 8: Küresel Seyahat Radarı & Dünya Haritası */}
+            <button
+              type="button"
+              onClick={() => onOpenGlobalRadar?.('all')}
+              className="p-3.5 rounded-2xl glass-card border border-cyan-500/30 dark:border-cyan-500/25 bg-gradient-to-br from-cyan-500/5 via-transparent to-teal-500/5 hover:border-cyan-400 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-cyan-500/15 text-cyan-500 dark:text-cyan-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-xs">
+                <Radio className="w-5 h-5 animate-pulse" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Reiseradar-Karte', 'Radar de Viajes', 'Радар Путешествий')}</span>
+                  <span className="text-cyan-500 dark:text-cyan-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-cyan-700 dark:text-cyan-300 mt-0.5 truncate font-medium">
+                  {l('Canlı saat, hava ve döviz haritası', 'Live clock, weather & FX map', 'Echtzeit-Uhr, Wetter & Devisen', 'Reloj, clima y divisas en vivo', 'Карта времени, погоды и валют')}
                 </p>
               </div>
             </button>

@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { Search, X, CloudSun, Wind, Droplets } from 'lucide-react';
+import { Search, X, CloudSun, Wind, Droplets, Globe } from 'lucide-react';
 import { ALL_WORLD_HUBS } from '../../data/worldHubs';
 import { getHubWeather, HubWeather } from '../../data/weatherData';
 import { useI18n } from '../../data/i18n';
 
 interface Props {
   className?: string;
+  onOpenRadar?: (city?: string) => void;
 }
 
-export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
+export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) => {
   const { language, l } = useI18n();
   const [search, setSearch] = useState<string>('');
   const [isSearching, setIsSearching] = useState<boolean>(false);
@@ -71,6 +72,18 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
         </div>
 
         <div className="flex items-center gap-1.5">
+          {onOpenRadar && (
+            <button
+              type="button"
+              onClick={() => onOpenRadar()}
+              className="flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/20 transition-all cursor-pointer"
+              title={l('Hava Durumu Radar Haritasını Aç', 'Open Weather Radar Map', 'Wetter-Radar öffnen')}
+            >
+              <Globe className="w-3 h-3 animate-pulse" />
+              <span>{l('Haritada Aç', 'Radar Map', 'Radar')}</span>
+            </button>
+          )}
+
           {/* Unit Toggle (°C / °F) */}
           <button
             type="button"
@@ -143,12 +156,14 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
             return (
               <div
                 key={item.city}
-                className="flex items-center justify-between px-2.5 py-1.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] hover:bg-slate-100 dark:hover:bg-white/[0.06] transition-colors border border-slate-100/80 dark:border-white/[0.04]"
+                onClick={() => onOpenRadar?.(item.city)}
+                className="flex items-center justify-between px-2.5 py-1.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] hover:bg-amber-50/50 dark:hover:bg-amber-950/20 hover:border-amber-500/30 transition-all border border-slate-100/80 dark:border-white/[0.04] cursor-pointer group"
+                title={l(`${displayName} için Dünya Haritası ve Hava Telemetrisini Aç`, `Open World Map weather for ${displayName}`, `Öffne Wetter-Telemetrie für ${displayName}`)}
               >
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="text-base leading-none">{item.flag}</span>
+                  <span className="text-base leading-none group-hover:scale-110 transition-transform">{item.flag}</span>
                   <div className="min-w-0">
-                    <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
+                    <div className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                       {displayName}
                     </div>
                     <div className="text-[10px] text-slate-400 truncate flex items-center gap-1.5">

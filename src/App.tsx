@@ -30,6 +30,7 @@ import { GlobalFooter } from './components/footer/GlobalFooter';
 import { PackingListModal } from './components/tools/PackingListModal';
 import { TippingCalculatorModal } from './components/tools/TippingCalculatorModal';
 import { TimezoneOverlapModal } from './components/tools/TimezoneOverlapModal';
+import { GlobalRadarModal } from './components/tools/GlobalRadarModal';
 import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
@@ -93,6 +94,9 @@ function AppContent() {
   const [isPackingListOpen, setIsPackingListOpen] = useState<boolean>(false);
   const [isTippingCalcOpen, setIsTippingCalcOpen] = useState<boolean>(false);
   const [isTimezoneOverlapOpen, setIsTimezoneOverlapOpen] = useState<boolean>(false);
+  const [isRadarOpen, setIsRadarOpen] = useState<boolean>(false);
+  const [radarInitialMode, setRadarInitialMode] = useState<'all' | 'clock' | 'weather' | 'currency'>('all');
+  const [radarTargetCity, setRadarTargetCity] = useState<string | undefined>(undefined);
 
   // Theme
   const [isDark, setIsDark] = useState<boolean>(() => {
@@ -252,6 +256,11 @@ function AppContent() {
                   onOpenPackingList={() => setIsPackingListOpen(true)}
                   onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
                   onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                  onOpenGlobalRadar={(mode = 'all', city) => {
+                    setRadarInitialMode(mode);
+                    setRadarTargetCity(city);
+                    setIsRadarOpen(true);
+                  }}
                 />
               ) : (
                 <WhereCanIGoTab currentPassport={currentPassport} />
@@ -423,6 +432,11 @@ function AppContent() {
           onOpenPackingList={() => setIsPackingListOpen(true)}
           onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
           onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+          onOpenGlobalRadar={() => {
+            setRadarInitialMode('all');
+            setRadarTargetCity(undefined);
+            setIsRadarOpen(true);
+          }}
         />
       </main>
       </div>
@@ -480,6 +494,21 @@ function AppContent() {
       <TimezoneOverlapModal
         isOpen={isTimezoneOverlapOpen}
         onClose={() => setIsTimezoneOverlapOpen(false)}
+      />
+
+      {/* Global Travel Radar & Interactive World Map HUD Modal */}
+      <GlobalRadarModal
+        isOpen={isRadarOpen}
+        onClose={() => setIsRadarOpen(false)}
+        initialMode={radarInitialMode}
+        initialCity={radarTargetCity}
+        currentPassport={currentPassport}
+        onOpenCountryDossier={(code) => {
+          if (activeTab !== 'explore') {
+            setActiveTab('explore');
+          }
+          handleCountrySelect(code);
+        }}
       />
     </div>
   );

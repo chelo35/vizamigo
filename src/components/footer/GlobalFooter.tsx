@@ -27,6 +27,7 @@ interface Props {
   onOpenPackingList?: () => void;
   onOpenTippingCalc?: () => void;
   onOpenTimezoneOverlap?: () => void;
+  onOpenGlobalRadar?: () => void;
 }
 
 type PopularCategory = 'visa_free' | 'national_id' | 'schengen' | 'metropolises' | 'digital_nomad' | 'evisa';
@@ -459,6 +460,15 @@ export const GlobalFooter: React.FC<Props> = ({
                 className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-indigo-700 dark:text-indigo-300 font-semibold"
               >
                 ⚡ {l('Zaman Dilimi & Toplantı Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                onClick={onOpenGlobalRadar}
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-cyan-700 dark:text-cyan-300 font-semibold"
+              >
+                🛰️ {l('Küresel Seyahat Radarı & Dünya Haritası', 'Global Travel Radar & World Map', 'Reiseradar & Weltkarte', 'Radar de Viajes y Mapa', 'Глобальный Радар и Карта')}
               </button>
             </li>
           </ul>

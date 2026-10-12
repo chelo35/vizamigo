@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { ArrowRightLeft, DollarSign } from 'lucide-react';
+import { ArrowRightLeft, DollarSign, Globe } from 'lucide-react';
 import { POPULAR_CURRENCIES } from '../../data/worldHubs';
 import { convertCurrency, formatCurrencyValue, getCrossRate } from '../../data/currencyRates';
 import { useI18n } from '../../data/i18n';
 
 interface Props {
   className?: string;
+  onOpenRadar?: () => void;
 }
 
-export const CurrencyWidget: React.FC<Props> = ({ className = '' }) => {
+export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar }) => {
   const { l } = useI18n();
   const [amount, setAmount] = useState<number>(100);
   const [fromCode, setFromCode] = useState<string>('EUR');
@@ -42,9 +43,23 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '' }) => {
           </div>
         </div>
 
-        <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 font-bold px-2 py-0.5 rounded-full border border-teal-500/20">
-          1 {fromCode} = {crossRate.toFixed(2)} {toCode}
-        </span>
+        <div className="flex items-center gap-1.5">
+          {onOpenRadar && (
+            <button
+              type="button"
+              onClick={onOpenRadar}
+              className="flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 transition-all cursor-pointer"
+              title={l('Döviz Kurlarını Dünya Haritasında Gör', 'View FX on World Map', 'Währungskarte öffnen')}
+            >
+              <Globe className="w-3 h-3 animate-pulse" />
+              <span>{l('Haritada Gör', 'FX Map', 'Karte')}</span>
+            </button>
+          )}
+
+          <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 font-bold px-2 py-0.5 rounded-full border border-teal-500/20">
+            1 {fromCode} = {crossRate.toFixed(2)} {toCode}
+          </span>
+        </div>
       </div>
 
       {/* Input & Selector Grid */}
