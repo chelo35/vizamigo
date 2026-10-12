@@ -10,7 +10,6 @@ import {
   ChevronDown,
   Search,
   X,
-  Menu,
   Sparkles,
   Compass,
   Route,
@@ -40,14 +39,14 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({
   currentPassport,
   onOpenPassportSelector,
-  onOpenLegalModal,
+  onOpenLegalModal: _onOpenLegalModal,
   onOpenAuditConsole,
   isDark,
   onToggleTheme,
   onNavigateToProfile,
   searchQuery = '',
   onSearchChange,
-  onToggleMobileDrawer,
+  onToggleMobileDrawer: _onToggleMobileDrawer,
   activeTab = 'explore',
   onSelectTab
 }) => {
@@ -55,11 +54,9 @@ export const Header: React.FC<HeaderProps> = ({
   const { user, isAuthenticated, logout, openAuthModal } = useAuth();
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
-  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
   const langRef = useRef<HTMLDivElement>(null);
-  const mobileInputRef = useRef<HTMLInputElement>(null);
 
   // Click outside to close menus
   useEffect(() => {
@@ -76,13 +73,6 @@ export const Header: React.FC<HeaderProps> = ({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Auto focus on mobile search input when expanded
-  useEffect(() => {
-    if (mobileSearchOpen) {
-      setTimeout(() => mobileInputRef.current?.focus(), 50);
-    }
-  }, [mobileSearchOpen]);
-
   const searchPlaceholder = l(
     'Ülke, başkent veya vize kuralı ara (Japonya, Tayland, Balkanlar...)',
     'Search country, capital or visa rule (Japan, Thailand...)',
@@ -93,18 +83,9 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-slate-200/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/85 dark:bg-[#0c101d]/90">
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-3 sm:gap-6">
-        {/* Left Section: Brand Logo (and mobile drawer trigger on small screens only) */}
-        <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <button
-            type="button"
-            onClick={onToggleMobileDrawer}
-            className="hidden max-lg:inline-flex min-w-[40px] min-h-[40px] p-2 rounded-2xl border border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors shadow-2xs items-center justify-center touch-target-min"
-            aria-label="Toggle navigation drawer"
-          >
-            <Menu className="w-5 h-5" />
-          </button>
-
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2.5 sm:gap-6">
+        {/* Left Section: Brand Logo (Clean, no hamburger button) */}
+        <div className="flex items-center flex-shrink-0">
           {/* Vizamigo Brand Mascot Logo (Clicking reloads/resets to home) */}
           <button
             type="button"
@@ -112,36 +93,36 @@ export const Header: React.FC<HeaderProps> = ({
               onSelectTab?.('explore');
               window.location.href = `/${language}`;
             }}
-            className="flex items-center gap-2.5 cursor-pointer text-left group"
+            className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group"
             title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}
           >
             <img
               src="/logo.png"
               alt="Vizamigo"
-              className="w-10 h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
+              className="w-9 h-9 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
             />
-            <span className="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">
+            <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 dark:text-white">
               Vizamigo<span className="text-teal-500">.</span>
             </span>
           </button>
         </div>
 
-        {/* Center Section: Prominent, Unified Desktop Search Bar (Larger, Spacious, High Legibility) */}
-        <div className="hidden md:flex flex-1 max-w-xl xl:max-w-2xl mx-1 sm:mx-4">
+        {/* Center Section: The ONE and ONLY Prominent Search Bar (Full prominence, zero duplicates) */}
+        <div className="flex flex-1 max-w-xl xl:max-w-2xl mx-1.5 sm:mx-4">
           <label className="relative w-full flex items-center">
-            <Search className="w-4 h-4 text-teal-600 dark:text-teal-400 absolute left-4 pointer-events-none" />
+            <Search className="w-4 h-4 text-teal-600 dark:text-teal-400 absolute left-3.5 sm:left-4 pointer-events-none" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full h-11 sm:h-12 pl-11 pr-10 rounded-full text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-slate-900/80 border border-slate-200/90 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500/70 focus:bg-white dark:focus:bg-[#0c101d] shadow-2xs transition-all"
+              className="w-full h-10 sm:h-12 pl-10 sm:pl-11 pr-9 sm:pr-10 rounded-full text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-slate-900/80 border border-slate-200/90 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500/70 focus:bg-white dark:focus:bg-[#0c101d] shadow-2xs transition-all"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => onSearchChange?.('')}
-                className="absolute right-3.5 p-1 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xs font-bold cursor-pointer"
+                className="absolute right-3 sm:right-3.5 p-1 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xs font-bold cursor-pointer"
                 title={l('Aramayı Temizle', 'Clear Search', 'Suche löschen', 'Limpiar búsqueda', 'Очистить поиск')}
               >
                 <X className="w-4 h-4" />
@@ -150,35 +131,20 @@ export const Header: React.FC<HeaderProps> = ({
           </label>
         </div>
 
-        {/* Right Section: Passport, Audit, Language, Theme & Profile */}
+        {/* Right Section: Passport, Audit, Language, Theme & Profile (Zero extra search buttons) */}
         <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           {/* Active Citizenship Pill */}
           <button
             type="button"
             onClick={onOpenPassportSelector}
-            className="flex items-center gap-2 px-3 py-1.5 min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-teal-500/40 transition-all touch-target-min"
+            className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 min-h-[38px] sm:min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-teal-500/40 transition-all touch-target-min"
             title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
           >
-            <span className="text-xl sm:text-2xl leading-none">{getFlag(currentPassport)}</span>
+            <span className="text-lg sm:text-2xl leading-none">{getFlag(currentPassport)}</span>
             <span className="font-mono text-xs text-slate-600 dark:text-slate-300 font-extrabold">{currentPassport}</span>
             <span className="hidden xl:inline text-xs text-slate-500 dark:text-slate-400 font-semibold truncate max-w-[90px]">
               {getCountryName(currentPassport, language)}
             </span>
-          </button>
-
-          {/* Mobile Search Toggle Trigger (strictly mobile only, never visible on desktop md+) */}
-          <button
-            type="button"
-            onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
-            className={`hidden max-md:inline-flex min-w-[40px] min-h-[40px] p-2.5 rounded-full border transition-all cursor-pointer items-center justify-center touch-target-min ${
-              mobileSearchOpen || searchQuery
-                ? 'bg-teal-600 text-white border-teal-600 shadow-xs'
-                : 'border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300'
-            }`}
-            aria-label="Arama Çubuğu"
-            title="Arama"
-          >
-            <Search className="w-4 h-4" />
           </button>
 
           {/* Audit Console Button (Desktop) */}
@@ -200,7 +166,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="flex items-center gap-1.5 px-3 py-2 min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-all cursor-pointer shadow-2xs touch-target-min"
+              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-2 min-h-[38px] sm:min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-all cursor-pointer shadow-2xs touch-target-min"
               title={t.languageSelect}
             >
               <span>{SUPPORTED_LANGUAGES.find(l => l.code === language)?.flag || '🌐'}</span>
@@ -239,7 +205,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={onToggleTheme}
-            className="p-2.5 min-w-[40px] min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card hover:bg-slate-50 dark:hover:bg-white/[0.06] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs flex items-center justify-center touch-target-min"
+            className="p-2 sm:p-2.5 min-w-[38px] sm:min-w-[40px] min-h-[38px] sm:min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card hover:bg-slate-50 dark:hover:bg-white/[0.06] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs flex items-center justify-center touch-target-min"
             aria-label={t.themeToggle}
             title={t.themeToggle}
           >
@@ -348,43 +314,6 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </div>
       </nav>
-
-      {/* DEDICATED FULL-WIDTH MOBILE SEARCH ROW */}
-      {(mobileSearchOpen || searchQuery) && (
-        <div className="md:hidden px-3.5 pb-3 pt-1 border-t border-slate-100 dark:border-white/5 animate-in slide-in-from-top-1 duration-150">
-          <div className="relative w-full">
-            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-teal-600 dark:text-teal-400 pointer-events-none">
-              <Search className="w-5 h-5" />
-            </div>
-            <input
-              ref={mobileInputRef}
-              type="text"
-              value={searchQuery}
-              onChange={(e) => onSearchChange?.(e.target.value)}
-              placeholder={searchPlaceholder}
-              className="w-full pl-12 pr-11 py-3 text-base rounded-2xl border border-slate-300 dark:border-white/15 bg-white dark:bg-[#111625] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-teal-500/20 focus:border-teal-600 shadow-sm font-medium"
-            />
-            {searchQuery ? (
-              <button
-                type="button"
-                onClick={() => onSearchChange?.('')}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors"
-                aria-label="Aramayı Temizle"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={() => setMobileSearchOpen(false)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            )}
-          </div>
-        </div>
-      )}
     </header>
   );
 };

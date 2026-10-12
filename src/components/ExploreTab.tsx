@@ -724,7 +724,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     {/* 1. Landmark Scenic Thumbnail (Symmetrical full-height desktop image) */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-56 lg:w-64 min-h-[190px] md:min-h-full self-stretch rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-48 lg:w-52 min-h-[190px] md:min-h-full self-stretch rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
@@ -815,60 +815,66 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       )}
 
-                      {/* SYMMETRICAL INFO BOXES GRID (5 Key Travel Metrics in Symmetrical Columns, 100% Legible, Zero Truncation) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-2.5 mt-1.5">
-                        {/* 1. Başkent (Capital) */}
-                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/80">
-                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                            <span className="text-xs">🏛️</span>
-                            <span>{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
+                      {/* SYMMETRICAL INFO BOXES GRID (Balanced 6-Column Grid: 3 Top Boxes, 2 Bottom Boxes; 100% Legible in All Languages) */}
+                      <div className="grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-2.5 mt-2">
+                        {/* 1. Başkent (Capital) - 1/3 Width on desktop */}
+                        <div className="col-span-1 sm:col-span-2 flex flex-col justify-between p-2.5 rounded-xl bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/80">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            <span className="text-xs shrink-0">🏛️</span>
+                            <span className="truncate">{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-slate-100 mt-1 leading-snug">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-slate-100 mt-1 leading-snug truncate" title={geography.capital}>
                             {geography.capital}
                           </div>
                         </div>
 
-                        {/* 2. Para Birimi (Currency) */}
-                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-purple-50/60 dark:bg-purple-950/25 border border-purple-500/20 text-purple-900 dark:text-purple-200">
-                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-purple-700/80 dark:text-purple-300/80">
-                            <span className="text-xs">💰</span>
-                            <span>{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
+                        {/* 2. Para Birimi (Currency) - 1/3 Width on desktop */}
+                        <div className="col-span-1 sm:col-span-2 flex flex-col justify-between p-2.5 rounded-xl bg-purple-50/60 dark:bg-purple-950/25 border border-purple-500/20 text-purple-900 dark:text-purple-200">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-purple-700/80 dark:text-purple-300/80">
+                            <span className="text-xs shrink-0">💰</span>
+                            <span className="truncate">{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug">
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug truncate">
                             {geography.currencyCode} <span className="font-mono text-xs opacity-75 font-bold">({geography.currencySymbol})</span>
                           </div>
                         </div>
 
-                        {/* 3. Güvenlik (Safety) */}
-                        <div className={`flex flex-col justify-between p-2.5 rounded-xl border ${insights.safety.badgeColor}`}>
-                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider opacity-80">
-                            <Shield className="w-3.5 h-3.5 flex-shrink-0" />
-                            <span>{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
+                        {/* 3. Günlük Bütçe (Daily Budget) - 1/3 Width on desktop */}
+                        <div className="col-span-1 sm:col-span-2 flex flex-col justify-between p-2.5 rounded-xl bg-amber-50/60 dark:bg-amber-950/25 border border-amber-500/20 text-amber-900 dark:text-amber-200">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-700/80 dark:text-amber-300/80">
+                            <DollarSign className="w-3.5 h-3.5 shrink-0" />
+                            <span className="truncate">{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug">
-                            {insights.safety.safetyScore} / 100
-                          </div>
-                        </div>
-
-                        {/* 4. İnternet (Internet Speed) */}
-                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-sky-50/60 dark:bg-sky-950/25 border border-sky-500/20 text-sky-900 dark:text-sky-200">
-                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-sky-700/80 dark:text-sky-300/80">
-                            <Wifi className="w-3.5 h-3.5 flex-shrink-0" />
-                            <span>{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
-                          </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono">
-                            {insights.internet.mobileSpeedMbps} Mbps
-                          </div>
-                        </div>
-
-                        {/* 5. Günlük Bütçe (Daily Budget) */}
-                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-amber-50/60 dark:bg-amber-950/25 border border-amber-500/20 text-amber-900 dark:text-amber-200">
-                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-amber-700/80 dark:text-amber-300/80">
-                            <DollarSign className="w-3.5 h-3.5 flex-shrink-0" />
-                            <span>{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
-                          </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono">
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono whitespace-nowrap">
                             {insights.livingCosts.dailyBudgetBackpackerUsd.replace(/\s+/g, ' ').trim()}
+                          </div>
+                        </div>
+
+                        {/* 4. Güvenlik (Safety) - 1/2 Width on desktop */}
+                        <div className={`col-span-1 sm:col-span-3 flex flex-col justify-between p-2.5 rounded-xl border ${insights.safety.badgeColor}`}>
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider opacity-80">
+                            <Shield className="w-3.5 h-3.5 shrink-0" />
+                            <span className="truncate">{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug flex items-center gap-1.5">
+                            <span>{insights.safety.safetyScore} / 100</span>
+                            <span className="text-[11px] font-semibold opacity-80 truncate">· {insights.safety.safetyLevel}</span>
+                          </div>
+                        </div>
+
+                        {/* 5. İnternet (Internet Speed) - 1/2 Width on desktop */}
+                        <div className="col-span-2 sm:col-span-3 flex flex-col justify-between p-2.5 rounded-xl bg-sky-50/60 dark:bg-sky-950/25 border border-sky-500/20 text-sky-900 dark:text-sky-200">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-sky-700/80 dark:text-sky-300/80">
+                            <Wifi className="w-3.5 h-3.5 shrink-0" />
+                            <span className="truncate">{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono flex items-center gap-1.5">
+                            <span>{insights.internet.mobileSpeedMbps} Mbps</span>
+                            <span className="text-[11px] font-sans font-semibold text-sky-700/80 dark:text-sky-300/80 truncate">
+                              {insights.internet.mobileSpeedMbps >= 50
+                                ? `· ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz', 'Red rápida', 'Быстрый интернет')}`
+                                : `· ${l('Standart', 'Standard', 'Standard', 'Estándar', 'Стандарт')}`}
+                            </span>
                           </div>
                         </div>
                       </div>
