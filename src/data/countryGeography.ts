@@ -6,6 +6,7 @@
 
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
+import { lText } from '../i18n';
 
 export interface CountryGeographyData {
   countryCode: string;
@@ -641,21 +642,39 @@ export const CURATED_GEOGRAPHY: Record<string, CuratedGeographyItem> = {
  */
 export function getCountryGeography(countryCode: string, lang: string = 'tr'): CountryGeographyData {
   const code = countryCode.toUpperCase();
-  const normLang: 'tr' | 'en' | 'de' = lang === 'de' ? 'de' : lang === 'tr' ? 'tr' : 'en';
   const countryName = getCountryName(code, lang);
   const geo = GEO_DATA[code];
   const curated = CURATED_GEOGRAPHY[code];
-  const capital = geo ? geo.capital : (normLang === 'de' ? 'Hauptstadt' : normLang === 'en' ? 'Capital' : 'Başkent');
+  const capital = geo ? geo.capital : (lang === 'de' ? 'Hauptstadt' : lang === 'es' ? 'Capital' : lang === 'ru' ? 'Столица' : lang === 'tr' ? 'Başkent' : 'Capital');
 
   if (curated) {
+    const tField = (obj: { tr: string; en: string; de: string }): string => {
+      if (!obj) return '';
+      if (lang === 'tr') return obj.tr;
+      if (lang === 'de') return obj.de || obj.en;
+      if (lang === 'en') return obj.en || obj.tr;
+      return lText(lang, obj.tr, obj.en, obj.de);
+    };
+
+    const tArr = (obj: { tr: string[]; en: string[]; de: string[] }): string[] => {
+      if (!obj) return [];
+      if (lang === 'tr') return obj.tr;
+      if (lang === 'de') return obj.de || obj.en;
+      if (lang === 'en') return obj.en || obj.tr;
+      const trArr = obj.tr || [];
+      const enArr = obj.en || [];
+      const deArr = obj.de || [];
+      return trArr.map((trStr, i) => lText(lang, trStr, enArr[i] || trStr, deArr[i]));
+    };
+
     return {
       countryCode: code,
       countryName,
       capital,
-      majorCities: curated.majorCities[normLang] || curated.majorCities.tr,
-      touristRegions: curated.touristRegions[normLang] || curated.touristRegions.tr,
+      majorCities: tArr(curated.majorCities),
+      touristRegions: tArr(curated.touristRegions),
       currencyCode: curated.currencyCode,
-      currencyName: curated.currencyName[normLang] || curated.currencyName.tr,
+      currencyName: tField(curated.currencyName),
       currencySymbol: curated.currencySymbol,
       timeZone: curated.timeZone,
       callingCode: curated.callingCode,
@@ -664,7 +683,7 @@ export function getCountryGeography(countryCode: string, lang: string = 'tr'): C
   }
 
   // Bölgesel Otantik Harita ve Coğrafya Motoru
-  const regionalMeta = getRegionalGeographyDefaults(code, capital, countryName, normLang);
+  const regionalMeta = getRegionalGeographyDefaults(code, capital, countryName, lang);
 
   return {
     countryCode: code,
@@ -907,23 +926,30 @@ export const GLOBAL_CURRENCIES: Record<string, { code: string; name: { tr: strin
   WS: { code: 'WST', name: { tr: 'Samoa Tâlası', en: 'Samoan Tālā', de: 'Tala' }, symbol: 'WS$', callingCode: '+685', plug: 'I' }
 };
 
-function getRegionalGeographyDefaults(code: string, capital: string, countryName: string, lang: 'tr' | 'en' | 'de') {
+function getRegionalGeographyDefaults(code: string, capital: string, countryName: string, lang: string) {
   const match = GLOBAL_CURRENCIES[code];
+  const isTr = lang === 'tr';
+  const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
 
   if (match) {
+    const currName = (match.name as any)[lang] || (
+      isEs ? (match.name.en || match.name.tr) : isRu ? (match.name.en || match.name.tr) : match.name.tr
+    );
     return {
       majorCities: [
         capital,
-        `${capital} ${lang === 'de' ? 'Metropolregion' : lang === 'en' ? 'Metropolitan Area' : 'Metropol Bölgesi'}`,
-        `${countryName} ${lang === 'de' ? 'Wirtschaftszentrum' : lang === 'en' ? 'Commercial & Cultural Hub' : 'Ticaret ve Kültür Merkezi'}`
+        `${capital} ${isDe ? 'Metropolregion' : isEs ? 'Área Metropolitana' : isRu ? 'Метропольный регион' : isTr ? 'Metropol Bölgesi' : 'Metropolitan Area'}`,
+        `${countryName} ${isDe ? 'Wirtschaftszentrum' : isEs ? 'Centro Comercial y Cultural' : isRu ? 'Торгово-культурный центр' : isTr ? 'Ticaret ve Kültür Merkezi' : 'Commercial & Cultural Hub'}`
       ],
       touristRegions: [
-        `${capital} ${lang === 'de' ? 'Historisches Altstadtviertel & Museen' : lang === 'en' ? 'Historic Center & Heritage Sites' : 'Tarihi Şehir Merkezi & Müzeler'}`,
-        `${countryName} ${lang === 'de' ? 'UNESCO-Welterbestätten' : lang === 'en' ? 'UNESCO World Heritage Sites' : 'UNESCO Kültür Mirası Noktaları'}`,
-        `${countryName} ${lang === 'de' ? 'Nationalparks & Naturreservate' : lang === 'en' ? 'National Parks & Natural Landscapes' : 'Milli Parklar & Doğal Rotalar'}`
+        `${capital} ${isDe ? 'Historisches Altstadtviertel & Museen' : isEs ? 'Centro Histórico y Museos' : isRu ? 'Исторический центр и музеи' : isTr ? 'Tarihi Şehir Merkezi & Müzeler' : 'Historic Center & Heritage Sites'}`,
+        `${countryName} ${isDe ? 'UNESCO-Welterbestätten' : isEs ? 'Patrimonio de la Humanidad UNESCO' : isRu ? 'Объекты Всемирного наследия ЮНЕСКО' : isTr ? 'UNESCO Kültür Mirası Noktaları' : 'UNESCO World Heritage Sites'}`,
+        `${countryName} ${isDe ? 'Nationalparks & Naturreservate' : isEs ? 'Parques Nacionales y Naturaleza' : isRu ? 'Национальные парки и природные маршруты' : isTr ? 'Milli Parklar & Doğal Rotalar' : 'National Parks & Natural Landscapes'}`
       ],
       currencyCode: match.code,
-      currencyName: match.name[lang] || match.name.tr,
+      currencyName: currName,
       currencySymbol: match.symbol,
       timeZone: 'UTC+0 - UTC+4',
       callingCode: match.callingCode || '+..',
@@ -938,16 +964,16 @@ function getRegionalGeographyDefaults(code: string, capital: string, countryName
   return {
     majorCities: [
       capital,
-      `${capital} ${lang === 'de' ? 'Metropolregion' : lang === 'en' ? 'Metropolitan Area' : 'Metropol Bölgesi'}`,
-      `${countryName} ${lang === 'de' ? 'Hafenstadt' : lang === 'en' ? 'Coastal / Commercial Hub' : 'Ticaret ve Sanayi Kenti'}`
+      `${capital} ${isDe ? 'Metropolregion' : isEs ? 'Área Metropolitana' : isRu ? 'Метропольный регион' : isTr ? 'Metropol Bölgesi' : 'Metropolitan Area'}`,
+      `${countryName} ${isDe ? 'Hafenstadt' : isEs ? 'Centro Comercial e Industrial' : isRu ? 'Промышленный и торговый центр' : isTr ? 'Ticaret ve Sanayi Kenti' : 'Coastal / Commercial Hub'}`
     ],
     touristRegions: [
-      `${capital} ${lang === 'de' ? 'Historisches Altstadtviertel & Zitadelle' : lang === 'en' ? 'Historic Old Town & Citadel' : 'Tarihi Eski Şehir & Kalesi'}`,
-      `${countryName} ${lang === 'de' ? 'UNESCO-Weltkultur- & Naturerbe' : lang === 'en' ? 'National Parks & UNESCO Heritage' : 'Milli Parklar & UNESCO Doğal Mirası'}`,
-      `${countryName} ${lang === 'de' ? 'Küsten- & Seenlandschaft' : lang === 'en' ? 'Scenic Coastal & Lake Shores' : 'Gölleri ve Doğa Yürüyüş Rotaları'}`
+      `${capital} ${isDe ? 'Historisches Altstadtviertel & Zitadelle' : isEs ? 'Casco Antiguo y Ciudadela' : isRu ? 'Старый город и крепость' : isTr ? 'Tarihi Eski Şehir & Kalesi' : 'Historic Old Town & Citadel'}`,
+      `${countryName} ${isDe ? 'UNESCO-Weltkultur- & Naturerbe' : isEs ? 'Patrimonio de la Humanidad UNESCO' : isRu ? 'Объекты Всемирного наследия ЮНЕСКО' : isTr ? 'Milli Parklar & UNESCO Doğal Mirası' : 'National Parks & UNESCO Heritage'}`,
+      `${countryName} ${isDe ? 'Küsten- & Seenlandschaft' : isEs ? 'Lagos y Rutas de Senderismo' : isRu ? 'Озера и живописные маршруты' : isTr ? 'Gölleri ve Doğa Yürüyüş Rotaları' : 'Scenic Coastal & Lake Shores'}`
     ],
     currencyCode: isEuro ? 'EUR' : `${code}D`,
-    currencyName: isEuro ? 'Euro' : `${countryName} ${lang === 'de' ? 'Landeswährung' : lang === 'en' ? 'National Currency' : 'Milli Para Birimi'}`,
+    currencyName: isEuro ? (isRu ? 'Евро' : 'Euro') : `${countryName} ${isDe ? 'Landeswährung' : isEs ? 'Moneda Nacional' : isRu ? 'Национальная валюта' : isTr ? 'Milli Para Birimi' : 'National Currency'}`,
     currencySymbol: isEuro ? '€' : '$',
     timeZone: 'UTC+1 - UTC+3',
     callingCode: '+..',

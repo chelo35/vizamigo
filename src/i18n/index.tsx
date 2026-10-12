@@ -57,9 +57,22 @@ export function lText(
     if (esText) return esText;
     const lookup = AUTO_TRANSLATE_ES[trText] || AUTO_TRANSLATE_ES[enText];
     if (lookup) return lookup;
-    if (trText && trText.includes('Vatandaşlığı & Küresel Mobilite')) {
-      const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
-      return `Ciudadanía y Movilidad Global de ${country}`;
+    if (trText) {
+      if (trText.includes('Vatandaşlığı & Küresel Mobilite')) {
+        const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
+        return `Ciudadanía y Movilidad Global de ${country}`;
+      }
+      if (trText.includes('Saat İleri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `+${num} Horas Adelante`;
+      }
+      if (trText.includes('Saat Geri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `-${num} Horas Atrás`;
+      }
+      if (trText.includes('Aynı Saat Dilimi')) {
+        return 'Misma Zona Horaria';
+      }
     }
     return enText || trText;
   }
@@ -67,9 +80,22 @@ export function lText(
     if (ruText) return ruText;
     const lookup = AUTO_TRANSLATE_RU[trText] || AUTO_TRANSLATE_RU[enText];
     if (lookup) return lookup;
-    if (trText && trText.includes('Vatandaşlığı & Küresel Mobilite')) {
-      const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
-      return `Гражданство и глобальная мобильность: ${country}`;
+    if (trText) {
+      if (trText.includes('Vatandaşlığı & Küresel Mobilite')) {
+        const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
+        return `Гражданство и глобальная мобильность: ${country}`;
+      }
+      if (trText.includes('Saat İleri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `+${num} ч вперед`;
+      }
+      if (trText.includes('Saat Geri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `-${num} ч назад`;
+      }
+      if (trText.includes('Aynı Saat Dilimi')) {
+        return 'Тот же часовой пояс';
+      }
     }
     return enText || trText;
   }
@@ -77,6 +103,19 @@ export function lText(
     if (deText) return deText;
     const lookup = AUTO_TRANSLATE_DE[trText] || AUTO_TRANSLATE_DE[enText];
     if (lookup) return lookup;
+    if (trText) {
+      if (trText.includes('Saat İleri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `+${num} Std voraus`;
+      }
+      if (trText.includes('Saat Geri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `-${num} Std zurück`;
+      }
+      if (trText.includes('Aynı Saat Dilimi')) {
+        return 'Gleiche Zeitzone';
+      }
+    }
     return enText || trText;
   }
   if (lang === 'en') return enText || trText;

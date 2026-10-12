@@ -1516,14 +1516,28 @@ const REAL_COUNTRY_SAFETY_INTELLIGENCE: Record<string, SafetyIntelligenceItem> =
   }
 };
 
-function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', popularRideApps: string[]) {
+function getRegionalSafetyIntelligence(code: string, lang: string, popularRideApps: string[]) {
   const isEn = lang === 'en';
   const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
 
   // Doğu / Güneydoğu Asya
   if ('TH VN MY PH KH LA'.split(' ').includes(code)) {
     return {
-      scams: isDe
+      scams: isEs
+        ? [
+            'Negativa de usar taxímetro en muelles de ferris y salidas de aeropuertos exigiendo tarifas fijas abusivas',
+            'Extorsión por daños en alquiler de scooters reclamando dinero por arañazos preexistentes',
+            'Agencias piratas que venden billetes falsos para excursiones a islas o autobuses'
+          ]
+        : isRu
+        ? [
+            'Отказ включить таксометр у пирсов и в аэропортах с требованием завышенной фиксированной оплаты',
+            'Вымогательство за повреждения арендованных скутеров со ссылкой на старые царапины',
+            'Фальшивые экскурсионные бюро, продающие недействительные билеты на паромы и автобусы'
+          ]
+        : isDe
         ? [
             'Taxameter-Verweigerung an Flughäfen und Fähranlegern zugunsten von Pauschalpreisen',
             'Schadensforderungen bei gemieteten Motorrollern für Vorschäden',
@@ -1540,7 +1554,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
             'Kiralık motorsikletlerde önceden var olan hasarlar için yüksek tazminat şantajı',
             'Popüler ada turları ve otobüsler için sahte bilet satan korsan acenteler'
           ],
-      tips: isDe
+      tips: isEs
+        ? [
+            `Utilice aplicaciones locales verificadas (${popularRideApps.slice(0, 2).join('/')}) para trayectos con tarifa fija por GPS.`,
+            'Al alquilar un scooter, grabe un vídeo detallado del vehículo antes de salir y nunca deje su pasaporte original como depósito.',
+            'Consuma exclusivamente agua embotellada y precintada.'
+          ]
+        : isRu
+        ? [
+            `Используйте официальные приложения (${popularRideApps.slice(0, 2).join('/')}) с фиксированной оплатой и GPS-трекингом.`,
+            'При аренде скутера снимите подробное видео состояния до поездки и никогда не оставляйте паспорт в залог.',
+            'Употребляйте исключительно бутилированную воду из запечатанных бутылок.'
+          ]
+        : isDe
         ? [
             `Vor Ort geprüfte Fahrten-Apps (${popularRideApps.slice(0, 2).join('/')}) für planbare Tarife nutzen.`,
             'Beim Rollerverleih Fahrzeug vor Abfahrt detailliert filmen und Pass nie als Kaution abgeben.',
@@ -1563,7 +1589,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
   // Avrupa & İskandinavya
   if ('NO SE DK FI CH AT PT GR PL CZ HU RO BG'.split(' ').includes(code)) {
     return {
-      scams: isDe
+      scams: isEs
+        ? [
+            'Carteristas oportunistas en estaciones de tren muy concurridas y plazas históricas',
+            'Casas de cambio con comisiones y márgenes ocultos en avenidas turísticas principales',
+            'Suplementos de servicio abusivos no indicados en terrazas frente a monumentos emblemáticos'
+          ]
+        : isRu
+        ? [
+            'Карманники на оживленных вокзалах, в метро и на исторических площадях',
+            'Пункты обмена валют со скрытыми комиссиями на центральных туристических улицах',
+            'Завышенные счета и скрытые сервисные сборы в террасах прямо напротив достопримечательностей'
+          ]
+        : isDe
         ? [
             'Taschendiebstahl an stark frequentierten Bahnhöfen und Sehenswürdigkeiten',
             'Geldwechsel mit ungünstigen Wechselkursen an touristischen Prachtstraßen',
@@ -1580,7 +1618,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
             'Turistik ana caddelerdeki döviz bürolarında gizli marj ve komisyonlar',
             'Tarihi anıtların tam karşısındaki teras mekanlarda menü dışı ek servis bedelleri'
           ],
-      tips: isDe
+      tips: isEs
+        ? [
+            'Lleve cartera y teléfono en los bolsillos delanteros en zonas peatonales concurridas.',
+            'Priorice los pagos con tarjeta; prácticamente todo se puede pagar sin comisiones y sin cambiar efectivo.',
+            'Utilice pases oficiales diarios o turísticos de transporte público para ahorrar en metro y trenes.'
+          ]
+        : isRu
+        ? [
+            'В оживленных местах держите кошелек и смартфон во внутренних или передних карманах.',
+            'Расплачивайтесь банковской картой; безналичный расчет распространен повсеместно и избавляет от комиссий.',
+            'Покупайте официальные проездные на день для экономии на метро, трамваях и электричках.'
+          ]
+        : isDe
         ? [
             'Wertsachen in belebten Fußgängerzonen am Körper tragen.',
             'Kartenzahlung bevorzugen; fast alle Ausgaben können bargeldlos bezahlt werden.',
@@ -1603,7 +1653,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
   // Latin Amerika & Karayipler
   if ('AR CL PE UY CR PA DO EC GT'.split(' ').includes(code)) {
     return {
-      scams: isDe
+      scams: isEs
+        ? [
+            'Billetes falsos devueltos como cambio en taxis callejeros y pequeños quioscos',
+            'Tirones de bolsos colgados en el respaldo de sillas o en el suelo en restaurantes',
+            'Guías de senderismo y montaña clandestinos sin licencia ni equipos de comunicación'
+          ]
+        : isRu
+        ? [
+            'Фальшивые купюры при сдаче в уличных такси и небольших киосках',
+            'Кража сумок, оставленных на спинках стульев или на полу в ресторанах и кафе',
+            'Нелицензированные гиды на треккинговых маршрутах и в национальных парках'
+          ]
+        : isDe
         ? [
             'Falschgeld beim Wechselgeld in Taxis und kleinen Straßenmärkten',
             'Handtaschenraub bei unaufmerksamem Abstellen im Restaurant',
@@ -1620,7 +1682,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
             'Restoran ve kafelerde sandalyeye asılan veya yere konan çantaların aniden kapılması',
             'Trekking ve milli park rotalarında yetkisiz korsan rehberler'
           ],
-      tips: isDe
+      tips: isEs
+        ? [
+            `Utilice exclusivamente aplicaciones de transporte oficiales (${popularRideApps.slice(0, 2).join('/')}).`,
+            'Al recibir cambio en efectivo, verifique rápidamente la marca de agua en billetes grandes.',
+            'Evite calles desiertas tras el anochecer y guarde su pasaporte original en la caja fuerte del hotel.'
+          ]
+        : isRu
+        ? [
+            `Пользуйтесь только официальными приложениями для вызова авто (${popularRideApps.slice(0, 2).join('/')}).`,
+            'Проверяйте водяные знаки на крупных купюрах при получении сдачи.',
+            'Избегайте безлюдных улиц в темноте и храните паспорт в сейфе отеля.'
+          ]
+        : isDe
         ? [
             `Ausschließlich App-basierte Fahrdienste (${popularRideApps.slice(0, 2).join('/')}) nutzen.`,
             'Bargeld-Geldscheine bei der Herausgabe kurz auf Wasserzeichen prüfen.',
@@ -1642,7 +1716,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
 
   // Global Güvenli Varsayılan
   return {
-    scams: isDe
+    scams: isEs
+      ? [
+          'Precios abusivos de vehículos no oficiales sin taxímetro ni tarifas reguladas',
+          'Tácticas de distracción en nudos de transporte concurridos para robar pertenencias',
+          'Venta de billetes y excursiones sin licencia oficial de turismo'
+        ]
+      : isRu
+      ? [
+          'Завышенные цены у нелегальных перевозчиков без счетчика',
+          'Отвлекающие маневры в плотных пересадочных узлах для кражи смартфонов',
+          'Неофициальные продавцы экскурсий и туров без лицензии'
+        ]
+      : isDe
       ? [
           'Überhöhte Fahrpreise bei inoffiziellen Transporten ohne Taxameter',
           'Ablenkungsmanöver in dichten Menschenmengen zum Taschendiebstahl',
@@ -1659,7 +1745,19 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
           'Kalabalık transfer noktalarında dikkat dağıtma yoluyla cep telefonu çalma',
           'Resmi turizm lisansı bulunmayan yetkisiz tur ve transfer satıcıları'
         ],
-    tips: isDe
+    tips: isEs
+      ? [
+          `Reserve traslados mediante aplicaciones oficiales (${popularRideApps.slice(0, 2).join('/')}) o paradas verificadas.`,
+          'Lleve siempre una copia digital de su pasaporte guardada sin conexión en el móvil.',
+          'Contrate siempre un seguro médico internacional y de repatriación antes de viajar.'
+        ]
+      : isRu
+      ? [
+          `Заказывайте поездки через проверенные приложения (${popularRideApps.slice(0, 2).join('/')}) или на официальных стойках.`,
+          'Сохраните цифровую копию паспорта и страховки офлайн на телефоне.',
+          'Обязательно оформляйте международную медицинскую страховку перед поездкой.'
+        ]
+      : isDe
       ? [
           `Fahrten über lokale anerkannte Apps (${popularRideApps.slice(0, 2).join('/')}) oder offizielle Stände buchen.`,
           'Digitale Ausweiskopie stets offline auf dem Smartphone bereithalten.',
@@ -1686,6 +1784,8 @@ function getRegionalSafetyIntelligence(code: string, lang: 'tr' | 'en' | 'de', p
 export function getCountryInsights(countryCode: string, lang: string = 'tr'): CountryFullInsights {
   const isEn = lang === 'en';
   const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
   const code = countryCode.toUpperCase();
   const countryName = getCountryName(code, lang);
 
@@ -1748,14 +1848,14 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
 
   const safetyLevelText =
     safetyScore >= 85
-      ? (isDe ? 'Außergewöhnlich sicher' : isEn ? 'Exceptional Safety' : 'Olağanüstü Güvenli')
+      ? (isEs ? 'Excepcionalmente Seguro' : isRu ? 'Исключительно Безопасно' : isDe ? 'Außergewöhnlich sicher' : isEn ? 'Exceptional Safety' : 'Olağanüstü Güvenli')
       : safetyScore >= 75
-      ? (isDe ? 'Sehr sicher' : isEn ? 'Very Safe' : 'Çok Güvenli')
+      ? (isEs ? 'Muy Seguro' : isRu ? 'Очень Безопасно' : isDe ? 'Sehr sicher' : isEn ? 'Very Safe' : 'Çok Güvenli')
       : safetyScore >= 65
-      ? (isDe ? 'Sicher' : isEn ? 'Safe' : 'Güvenli')
+      ? (isEs ? 'Seguro' : isRu ? 'Безопасно' : isDe ? 'Sicher' : isEn ? 'Safe' : 'Güvenli')
       : safetyScore >= 50
-      ? (isDe ? 'Mäßiges Risiko' : isEn ? 'Moderate' : 'Orta Seviye')
-      : (isDe ? 'Erhöhte Vorsicht' : isEn ? 'Caution Advised' : 'Hassas / Tedbir Gerekir');
+      ? (isEs ? 'Riesgo Moderado' : isRu ? 'Умеренный Риск' : isDe ? 'Mäßiges Risiko' : isEn ? 'Moderate' : 'Orta Seviye')
+      : (isEs ? 'Precaución Aconsejada' : isRu ? 'Требуется Осторожность' : isDe ? 'Erhöhte Vorsicht' : isEn ? 'Caution Advised' : 'Hassas / Tedbir Gerekir');
 
   const safetyBadgeColor =
     safetyScore >= 75
@@ -1768,14 +1868,54 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
 
   const crimeRateSummary =
     safetyScore >= 85
-      ? (isDe ? 'Eines der sichersten Länder der Welt. Gewaltkriminalität ist quasi nicht existent; ideal für Alleinreisende.' : isEn ? 'One of the safest countries globally. Violent crime is near zero; highly recommended for solo travelers and night safety.' : 'Dünyanın en güvenli ülkelerindendir. Şiddet suçu yok denecek kadar azdır; kadın ve yalnız gezginler için son derece huzurludur.')
+      ? (isEs
+          ? 'Uno de los países más seguros del mundo. El delito violento es casi inexistente; excelente para viajeros en solitario y tranquilidad nocturna.'
+          : isRu
+          ? 'Одна из самых безопасных стран мира. Насильственная преступность практически отсутствует; крайне комфортно для соло-путешественников.'
+          : isDe
+          ? 'Eines der sichersten Länder der Welt. Gewaltkriminalität ist quasi nicht existent; ideal für Alleinreisende.'
+          : isEn
+          ? 'One of the safest countries globally. Violent crime is near zero; highly recommended for solo travelers and night safety.'
+          : 'Dünyanın en güvenli ülkelerindendir. Şiddet suçu yok denecek kadar azdır; kadın ve yalnız gezginler için son derece huzurludur.')
       : safetyScore >= 75
-      ? (isDe ? 'Sehr sicheres Reiseland. Sehr niedrige Kriminalitätsrate; grundlegende Sorgfalt an Sehenswürdigkeiten reicht völlig aus.' : isEn ? 'Very safe destination. Low crime index; basic personal vigilance at tourist spots is more than sufficient.' : 'Çok güvenli bir ülkedir. Suç oranları düşüktür; turistik noktalarda temel dikkat yeterlidir.')
+      ? (isEs
+          ? 'Destino muy seguro. Bajo índice de delincuencia; la precaución básica en puntos turísticos es suficiente.'
+          : isRu
+          ? 'Очень безопасное направление. Низкий уровень преступности; стандартной бдительности в туристических местах более чем достаточно.'
+          : isDe
+          ? 'Sehr sicheres Reiseland. Sehr niedrige Kriminalitätsrate; grundlegende Sorgfalt an Sehenswürdigkeiten reicht völlig aus.'
+          : isEn
+          ? 'Very safe destination. Low crime index; basic personal vigilance at tourist spots is more than sufficient.'
+          : 'Çok güvenli bir ülkedir. Suç oranları düşüktür; turistik noktalarda temel dikkat yeterlidir.')
       : safetyScore >= 65
-      ? (isDe ? 'Generell sicher. Hauptrisiko in Metropolen sind Taschendiebstahl und unachtsame Taschenaufbewahrung.' : isEn ? 'Generally safe. Primary concerns in metropolitan hubs are opportunistic pickpocketing and unattended bags.' : 'Genel olarak güvenlidir. Metropollerde yankesicilik ve çanta güvenliğine dikkat edilmesi önerilir.')
+      ? (isEs
+          ? 'Generalmente seguro. El principal riesgo en áreas metropolitanas son los carteristas y descuidos con las pertenencias.'
+          : isRu
+          ? 'В целом безопасно. Основное внимание в мегаполисах следует уделять карманникам и контролю за личными вещами.'
+          : isDe
+          ? 'Generell sicher. Hauptrisiko in Metropolen sind Taschendiebstahl und unachtsame Taschenaufbewahrung.'
+          : isEn
+          ? 'Generally safe. Primary concerns in metropolitan hubs are opportunistic pickpocketing and unattended bags.'
+          : 'Genel olarak güvenlidir. Metropollerde yankesicilik ve çanta güvenliğine dikkat edilmesi önerilir.')
       : safetyScore >= 50
-      ? (isDe ? 'Mäßige Sicherheitslage. Nach Einbruch der Dunkelheit und in belebten Vierteln erhöhte Wachsamkeit geboten.' : isEn ? 'Moderate safety index. Situational awareness is advised after dark and in dense commercial districts.' : 'Orta düzey güvenlik profili. Gece saatlerinde tenha sokaklardan kaçınılmalı, değerli eşyalar açıkta taşınmamalıdır.')
-      : (isDe ? 'Erhöhte Kriminalitätsrate. Offizielle Transporte nutzen, Wertgegenstände diskret halten und Sicherheitsratschläge strikt befolgen.' : isEn ? 'Elevated crime index. Use verified app-based transit, avoid showing valuables, and adhere to local safety advisories.' : 'Yüksek riskli güvenlik profili. Yalnızca onaylı araç çağırma uygulamaları kullanılmalı, lüks eşyalar gösterilmemeli ve turistik hatlarda kalınmalıdır.');
+      ? (isEs
+          ? 'Nivel de seguridad moderado. Se recomienda prudencia tras caer la noche y en calles comerciales muy concurridas.'
+          : isRu
+          ? 'Умеренный уровень безопасности. Избегайте безлюдных улиц в темное время суток и не держите ценности на виду.'
+          : isDe
+          ? 'Mäßige Sicherheitslage. Nach Einbruch der Dunkelheit und in belebten Vierteln erhöhte Wachsamkeit geboten.'
+          : isEn
+          ? 'Moderate safety index. Situational awareness is advised after dark and in dense commercial districts.'
+          : 'Orta düzey güvenlik profili. Gece saatlerinde tenha sokaklardan kaçınılmalı, değerli eşyalar açıkta taşınmamalıdır.')
+      : (isEs
+          ? 'Perfil de seguridad de mayor riesgo. Utilice únicamente aplicaciones de transporte verificadas y mantenga objetos de valor fuera de la vista.'
+          : isRu
+          ? 'Повышенный уровень риска. Пользуйтесь только проверенными приложениями такси, не демонстрируйте ценности и следуйте советам.'
+          : isDe
+          ? 'Erhöhte Kriminalitätsrate. Offizielle Transporte nutzen, Wertgegenstände diskret halten und Sicherheitsratschläge strikt befolgen.'
+          : isEn
+          ? 'Elevated crime index. Use verified app-based transit, avoid showing valuables, and adhere to local safety advisories.'
+          : 'Yüksek riskli güvenlik profili. Yalnızca onaylı araç çağırma uygulamaları kullanılmalı, lüks eşyalar gösterilmemeli ve turistik hatlarda kalınmalıdır.');
 
   // 5. Doğrulanmış İnternet Hızları
   const netRecord = REAL_INTERNET_DATA[code];
@@ -1856,16 +1996,20 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
 
   const transportQuality = cur?.transport?.transportQuality ?? (
     'CH JP KR SG DE FR NL'.split(' ').includes(code)
-      ? (isDe ? 'Hervorragend (Pünktliches Bahn-/Metronetz)' : isEn ? 'World-Class (High-Speed Rail & Metro)' : 'Kusursuz (Dünya Standartlarında Hızlı Tren/Metro)')
+      ? (isEs ? 'Excelente (Tren de alta velocidad / Metro puntual)' : isRu ? 'Превосходное (Скоростные поезда и метро мирового уровня)' : isDe ? 'Hervorragend (Pünktliches Bahn-/Metronetz)' : isEn ? 'World-Class (High-Speed Rail & Metro)' : 'Kusursuz (Dünya Standartlarında Hızlı Tren/Metro)')
       : 'GB ES IT AT SE NO DK'.split(' ').includes(code)
-      ? (isDe ? 'Sehr gut (Gefächertes ÖPNV-Netz)' : isEn ? 'Very Good (Extensive Rail & Transit)' : 'Çok İyi (Geniş Raylı Sistem)')
+      ? (isEs ? 'Muy Bueno (Amplia red de tren y transporte)' : isRu ? 'Очень Хорошее (Разветвленная сеть поездов и транспорта)' : isDe ? 'Sehr gut (Gefächertes ÖPNV-Netz)' : isEn ? 'Very Good (Extensive Rail & Transit)' : 'Çok İyi (Geniş Raylı Sistem)')
       : 'TR TH GE RS BA'.split(' ').includes(code)
-      ? (isDe ? 'Gut & Günstig (Metro/Bus/Fahrdienste)' : isEn ? 'Good & Affordable (Metro/Bus/Apps)' : 'İyi ve Ekonomik (Metro/Otobüs/Araç Çağırma)')
-      : (isDe ? 'Angemessen' : isEn ? 'Adequate' : 'Orta Düzey')
+      ? (isEs ? 'Bueno y Económico (Metro/Autobús/Apps de viaje)' : isRu ? 'Хорошее и Доступное (Метро/Автобус/Приложения)' : isDe ? 'Gut & Günstig (Metro/Bus/Fahrdienste)' : isEn ? 'Good & Affordable (Metro/Bus/Apps)' : 'İyi ve Ekonomik (Metro/Otobüs/Araç Çağırma)')
+      : (isEs ? 'Adecuado' : isRu ? 'Удовлетворительное' : isDe ? 'Angemessen' : isEn ? 'Adequate' : 'Orta Düzey')
   );
 
   const taxiAdvice = cur?.transport?.taxiAdvice ?? (
-    isDe
+    isEs
+      ? `En transporte urbano, las aplicaciones oficiales (${popularRideApps.slice(0, 3).join(', ')}) garantizan tarifa fija y seguimiento por GPS frente al regateo callejero.`
+      : isRu
+      ? `Для городских поездок официальные приложения вызова авто (${popularRideApps.slice(0, 3).join(', ')}) обеспечивают фиксированную цену и безопасность по GPS.`
+      : isDe
       ? `Für transparente Tarife und GPS-Sicherheit werden lokale Fahrdienst-Apps (${popularRideApps.slice(0, 3).join(', ')}) dringend empfohlen.`
       : isEn
       ? `Official app-based ride services (${popularRideApps.slice(0, 3).join(', ')}) provide upfront fares and verified GPS tracking over unmetered street cabs.`
@@ -1874,17 +2018,17 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
 
   const geoCurrencyMatch = GLOBAL_CURRENCIES[code];
   const autoCurrencyName = geoCurrencyMatch
-    ? `${geoCurrencyMatch.name[lang as 'tr' | 'en' | 'de'] || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
-    : (isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
+    ? `${(geoCurrencyMatch.name as any)[lang] || geoCurrencyMatch.name.en || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
+    : (isEs ? 'Moneda Local' : isRu ? 'Местная валюта' : isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
 
-  const autoPlugType = geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart');
+  const autoPlugType = geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isEs ? 'Tipo C, F o estándar regional' : isRu ? 'Тип C, F или региональный стандарт' : isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart');
 
   return {
     countryCode: code,
     countryName,
     currency: cur?.currency || autoCurrencyName,
     plugType: cur?.plugType || autoPlugType,
-    bestMonths: cur?.bestMonths || (isDe ? 'Frühlings- & Herbstmonate' : isEn ? 'Spring & Autumn months' : 'İlkbahar ve Sonbahar ayları'),
+    bestMonths: cur?.bestMonths || (isEs ? 'Meses de primavera y otoño' : isRu ? 'Весенние и осенние месяцы' : isDe ? 'Frühlings- & Herbstmonate' : isEn ? 'Spring & Autumn months' : 'İlkbahar ve Sonbahar ayları'),
     safety: {
       safetyScore,
       safetyLevel: safetyLevelText,
@@ -1892,13 +2036,25 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       crimeRateSummary,
       commonScams: cur?.safety?.commonScams || (
         REAL_COUNTRY_SAFETY_INTELLIGENCE[code]
-          ? (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams[lang as 'tr' | 'en' | 'de'] || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams.tr)
-          : getRegionalSafetyIntelligence(code, lang as 'tr' | 'en' | 'de', popularRideApps).scams
+          ? (
+              isEs
+                ? (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams.en || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams.tr)
+                : isRu
+                ? (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams.en || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams.tr)
+                : (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams[lang as 'tr' | 'en' | 'de'] || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].scams.tr)
+            )
+          : getRegionalSafetyIntelligence(code, lang, popularRideApps).scams
       ),
       safeTravelTips: cur?.safety?.safeTravelTips || (
         REAL_COUNTRY_SAFETY_INTELLIGENCE[code]
-          ? (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips[lang as 'tr' | 'en' | 'de'] || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips.tr)
-          : getRegionalSafetyIntelligence(code, lang as 'tr' | 'en' | 'de', popularRideApps).tips
+          ? (
+              isEs
+                ? (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips.en || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips.tr)
+                : isRu
+                ? (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips.en || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips.tr)
+                : (REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips[lang as 'tr' | 'en' | 'de'] || REAL_COUNTRY_SAFETY_INTELLIGENCE[code].tips.tr)
+            )
+          : getRegionalSafetyIntelligence(code, lang, popularRideApps).tips
       ),
       emergencyNumbers
     },
@@ -1907,14 +2063,14 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       broadbandSpeedMbps: broadbandSpeed,
       networkCoverage: cur?.internet?.networkCoverage || '%95+ (4G LTE / 5G)',
       costPerGbUsd: cur?.internet?.costPerGbUsd || (netRecord ? netRecord.costPerGb : '~0.80 - 1.80 $'),
-      esimAvailability: cur?.internet?.esimAvailability || (isDe ? 'Ausgezeichnet' : isEn ? 'Excellent' : 'Mükemmel'),
-      bestCarriers: cur?.internet?.bestCarriers || (isDe ? ['Führende nationale Netzbetreiber', 'Airalo / Maya Mobile eSIM'] : isEn ? ['Leading National Telecoms', 'Airalo / Maya Mobile eSIM'] : ['Yerel lider mobil operatörler', 'Airalo / Maya Mobile eSIM']),
+      esimAvailability: cur?.internet?.esimAvailability || (isEs ? 'Excelente' : isRu ? 'Отлично' : isDe ? 'Ausgezeichnet' : isEn ? 'Excellent' : 'Mükemmel'),
+      bestCarriers: cur?.internet?.bestCarriers || (isEs ? ['Principales operadores móviles nacionales', 'Airalo / Maya Mobile eSIM'] : isRu ? ['Ведущие национальные операторы связи', 'Airalo / Maya Mobile eSIM'] : isDe ? ['Führende nationale Netzbetreiber', 'Airalo / Maya Mobile eSIM'] : isEn ? ['Leading National Telecoms', 'Airalo / Maya Mobile eSIM'] : ['Yerel lider mobil operatörler', 'Airalo / Maya Mobile eSIM']),
       vpnRequired: cur?.internet?.vpnRequired ?? false,
       vpnNote: cur?.internet?.vpnNote
     },
     transport: {
       transportQuality,
-      costLevel: cur?.transport?.costLevel || (isDe ? 'Preiswert' : isEn ? 'Budget-Friendly' : 'Ekonomik'),
+      costLevel: cur?.transport?.costLevel || (isEs ? 'Económico' : isRu ? 'Бюджетно' : isDe ? 'Preiswert' : isEn ? 'Budget-Friendly' : 'Ekonomik'),
       singleTicketUsd: singleTicket,
       dailyPassUsd: cur?.transport?.dailyPassUsd || '3.50 - 6.00 $',
       popularRideApps,
@@ -1928,8 +2084,12 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       waterBottleUsd: cur?.livingCosts?.waterBottleUsd || '0.60 $',
       hostelDormUsd: cur?.livingCosts?.hostelDormUsd || '15 - 28 $',
       hotel3StarUsd: hotel3Star,
-      flightCostIndex: cur?.livingCosts?.flightCostIndex || (isDe ? 'Moderat' : isEn ? 'Moderate' : 'Orta Seviye'),
-      flightTip: cur?.livingCosts?.flightTip || (isDe
+      flightCostIndex: cur?.livingCosts?.flightCostIndex || (isEs ? 'Moderado' : isRu ? 'Умеренный' : isDe ? 'Moderat' : isEn ? 'Moderate' : 'Orta Seviye'),
+      flightTip: cur?.livingCosts?.flightTip || (isEs
+        ? `Reservar con anticipación y comparar vuelos directos hacia ${countryName} garantiza las tarifas más económicas.`
+        : isRu
+        ? `Раннее бронирование и сравнение прямых рейсов в ${countryName} позволяют найти самые выгодные билеты.`
+        : isDe
         ? `Frühzeitiges Buchen und Direktflug-Vergleiche nach ${countryName} sichern die günstigsten Reisetarife.`
         : isEn
         ? `Advance bookings and comparing direct flight options to ${countryName} guarantee optimal travel fares.`

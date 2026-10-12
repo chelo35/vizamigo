@@ -10,6 +10,7 @@ import { getCountryGeography } from './countryGeography';
 import { getCountryEncyclopedia } from './countryEncyclopedia';
 import { getCountryInsights } from './countryInsights';
 import { CURATED_ITINERARIES_EXTRA } from './countryItinerariesExtra';
+import { lText } from '../i18n';
 
 export interface ItineraryStop {
   stopNumber: number;
@@ -1724,7 +1725,7 @@ export const CURATED_ITINERARIES: Record<string, CuratedItineraryDef> = {
  */
 export function generateDynamicCountryItinerary(
   countryCode: string,
-  lang: 'tr' | 'en' | 'de' = 'tr'
+  lang: string = 'tr'
 ): CountryTravelItinerary {
   const code = countryCode.toUpperCase();
   const countryName = getCountryName(code, lang);
@@ -1744,38 +1745,99 @@ export function generateDynamicCountryItinerary(
   // Durakları oluştur
   const stops: ItineraryStop[] = [];
 
+  const isTr = lang === 'tr';
+  const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
+
   // Durak 1: Başkent & Tarihi Çekirdek
   const stop1Highlights = mustSee.slice(0, 2);
   stops.push({
     stopNumber: 1,
-    name: lang === 'tr' 
+    name: isTr 
       ? `1. Durak: ${capital} (Tarihi Merkez & Kültür Mirası)`
-      : lang === 'de'
+      : isDe
       ? `Stopp 1: ${capital} (Historisches Zentrum & Kultur)`
+      : isEs
+      ? `1.ª Parada: ${capital} (Centro Histórico y Patrimonio)`
+      : isRu
+      ? `Остановка 1: ${capital} (Исторический центр и наследие)`
       : `Stop 1: ${capital} (Historic Core & Heritage)`,
-    recommendedDuration: lang === 'tr' ? '2-3 Gün (Yeterli keşif için ideal)' : lang === 'de' ? '2-3 Tage (Ideal für Kultur)' : '2-3 Days (Ideal for core sights)',
-    durationBadge: lang === 'tr' ? '3 Gün' : lang === 'de' ? '3 Tage' : '3 Days',
-    highlights: stop1Highlights.length > 0 ? stop1Highlights : [`${capital} Şehir Meydanı & Ulusal Müze`],
+    recommendedDuration: isTr
+      ? '2-3 Gün (Yeterli keşif için ideal)'
+      : isDe
+      ? '2-3 Tage (Ideal für Kultur)'
+      : isEs
+      ? '2-3 Días (Ideal para explorar)'
+      : isRu
+      ? '2-3 дня (Идеально для первого знакомства)'
+      : '2-3 Days (Ideal for core sights)',
+    durationBadge: isTr ? '3 Gün' : isDe ? '3 Tage' : isEs ? '3 Días' : isRu ? '3 дня' : '3 Days',
+    highlights: stop1Highlights.length > 0 ? stop1Highlights : [
+      isTr
+        ? `${capital} Şehir Meydanı & Ulusal Müze`
+        : isDe
+        ? `${capital} Hauptplatz & Nationalmuseum`
+        : isEs
+        ? `${capital} Plaza Mayor y Museo Nacional`
+        : isRu
+        ? `${capital} Главная площадь и Национальный музей`
+        : `${capital} City Square & National Museum`
+    ],
     activities: [
-      lang === 'tr' ? `${capital} tarihi meydanında yürüyüş yapıp milli mimariyi keşfedin.` : lang === 'de' ? `Spaziergang über den Hauptplatz von ${capital}.` : `Walk through the historic center of ${capital} exploring national landmarks.`,
-      lang === 'tr' ? `Yerel çarşılarda geleneksel el sanatlarını ve hediyelikleri inceleyin.` : lang === 'de' ? `Erkundung traditioneller Handwerksmärkte.` : `Explore traditional bazaars and artisan craft markets.`,
-      lang === 'tr' ? `Akşamüstü panoramik bir seyir tepesinde gün batımını seyredin.` : lang === 'de' ? `Sonnenuntergang von einem Aussichtspunkt genießen.` : `Enjoy sunset views from a panoramic city lookout.`
+      isTr
+        ? `${capital} tarihi meydanında yürüyüş yapıp milli mimariyi keşfedin.`
+        : isDe
+        ? `Spaziergang über den Hauptplatz von ${capital}.`
+        : isEs
+        ? `Pasee por el centro histórico de ${capital} admirando la arquitectura y monumentos.`
+        : isRu
+        ? `Прогуляйтесь по историческому центру ${capital}, знакомясь с архитектурой и достопримечательностями.`
+        : `Walk through the historic center of ${capital} exploring national landmarks.`,
+      isTr
+        ? `Yerel çarşılarda geleneksel el sanatlarını ve hediyelikleri inceleyin.`
+        : isDe
+        ? `Erkundung traditioneller Handwerksmärkte.`
+        : isEs
+        ? `Explore los mercados tradicionales y tiendas de artesanía local.`
+        : isRu
+        ? `Посетите колоритные рынки традиционных ремесел и сувениров.`
+        : `Explore traditional bazaars and artisan craft markets.`,
+      isTr
+        ? `Akşamüstü panoramik bir seyir tepesinde gün batımını seyredin.`
+        : isDe
+        ? `Sonnenuntergang von einem Aussichtspunkt genießen.`
+        : isEs
+        ? `Disfrute de la puesta de sol desde un mirador panorámico de la ciudad.`
+        : isRu
+        ? `Встретьте закат на смотровой площадке с панорамным видом на город.`
+        : `Enjoy sunset views from a panoramic city lookout.`
     ],
     foodAndDrinks: [
-      famousDishes[0] || 'Geleneksel yemekler',
-      drinks[0] || 'Yerel içecekler',
-      streetFood[0] || 'Taze yerel tatlar'
+      famousDishes[0] || (isTr ? 'Geleneksel yemekler' : isDe ? 'Traditionelle Gerichte' : isEs ? 'Platos tradicionales' : isRu ? 'Традиционные блюда' : 'Traditional dishes'),
+      drinks[0] || (isTr ? 'Yerel içecekler' : isDe ? 'Lokale Getränke' : isEs ? 'Bebidas locales' : isRu ? 'Местные напитки' : 'Local drinks'),
+      streetFood[0] || (isTr ? 'Taze yerel tatlar' : isDe ? 'Frische Snacks' : isEs ? 'Bocados callejeros frescos' : isRu ? 'Свежие местные деликатесы' : 'Fresh local snacks')
     ],
     criticalTips: [
-      lang === 'tr' 
-        ? `${insights.transport?.taxiAdvice || 'Lisanslı taksileri veya güvenilir araç çağırma uygulamalarını tercih edin.'}`
-        : lang === 'de'
-        ? `${insights.transport?.taxiAdvice || 'Nutzen Sie lizenzierte Taxis oder Apps.'}`
-        : `${insights.transport?.taxiAdvice || 'Use licensed metered taxis or verified ride apps.'}`,
-      lang === 'tr'
+      insights.transport?.taxiAdvice || (
+        isTr
+          ? 'Lisanslı taksileri veya güvenilir araç çağırma uygulamalarını tercih edin.'
+          : isDe
+          ? 'Nutzen Sie lizenzierte Taxis oder Apps.'
+          : isEs
+          ? 'Utilice taxis oficiales con taxímetro o aplicaciones de transporte verificadas.'
+          : isRu
+          ? 'Пользуйтесь официальными такси со счетчиком или проверенными приложениями.'
+          : 'Use licensed metered taxis or verified ride apps.'
+      ),
+      isTr
         ? 'Müzeler ve anıtlar için mesai saatlerini önceden kontrol edin.'
-        : lang === 'de'
+        : isDe
         ? 'Öffnungszeiten von Museen und Sehenswürdigkeiten vorab prüfen.'
+        : isEs
+        ? 'Consulte con antelación los horarios de apertura de museos y monumentos.'
+        : isRu
+        ? 'Заранее уточняйте часы работы музеев и достопримечательностей.'
         : 'Check operating hours for museums and heritage monuments in advance.'
     ],
     mapsQuery: `${capital}, ${countryName}`
@@ -1786,33 +1848,79 @@ export function generateDynamicCountryItinerary(
   const stop2Highlights = mustSee.slice(2, 4);
   stops.push({
     stopNumber: 2,
-    name: lang === 'tr'
+    name: isTr
       ? `2. Durak: ${secondCity} (Kültür & Yerel Yaşam)`
-      : lang === 'de'
+      : isDe
       ? `Stopp 2: ${secondCity} (Kultur & Lebensart)`
+      : isEs
+      ? `2.ª Parada: ${secondCity} (Cultura y Vida Local)`
+      : isRu
+      ? `Остановка 2: ${secondCity} (Культура и местный колорит)`
       : `Stop 2: ${secondCity} (Culture & Local Life)`,
-    recommendedDuration: lang === 'tr' ? '2 Gün (Önemli noktalar için yeterli)' : lang === 'de' ? '2 Tage (Ausreichend für Highlights)' : '2 Days (Sufficient for highlights)',
-    durationBadge: lang === 'tr' ? '2 Gün' : lang === 'de' ? '2 Tage' : '2 Days',
-    highlights: stop2Highlights.length > 0 ? stop2Highlights : [`${secondCity} Tarihi Yapıları & Parkları`],
+    recommendedDuration: isTr
+      ? '2 Gün (Önemli noktalar için yeterli)'
+      : isDe
+      ? '2 Tage (Ausreichend für Highlights)'
+      : isEs
+      ? '2 Días (Suficiente para los puntos destacados)'
+      : isRu
+      ? '2 дня (Достаточно для главных мест)'
+      : '2 Days (Sufficient for highlights)',
+    durationBadge: isTr ? '2 Gün' : isDe ? '2 Tage' : isEs ? '2 Días' : isRu ? '2 дня' : '2 Days',
+    highlights: stop2Highlights.length > 0 ? stop2Highlights : [
+      isTr
+        ? `${secondCity} Tarihi Yapıları & Parkları`
+        : isDe
+        ? `${secondCity} Historische Bauten & Parks`
+        : isEs
+        ? `${secondCity} Monumentos Históricos y Parques`
+        : isRu
+        ? `${secondCity} Исторические здания и парки`
+        : `${secondCity} Historic Landmarks & Parks`
+    ],
     activities: [
-      lang === 'tr' ? `${secondCity} sokaklarında yerel kafelerde dinlenip şehrin ritmini hissedin.` : lang === 'de' ? `Atmosphäre in den Straßen von ${secondCity} genießen.` : `Absorb the local lifestyle and relaxing cafes in ${secondCity}.`,
-      lang === 'tr' ? `Bölgeye özgü anıtları ve tarihi yapıları fotoğraflayın.` : lang === 'de' ? `Fotostopps an den wichtigsten Sehenswürdigkeiten.` : `Photograph historic landmarks unique to this region.`
+      isTr
+        ? `${secondCity} sokaklarında yerel kafelerde dinlenip şehrin ritmini hissedin.`
+        : isDe
+        ? `Atmosphäre in den Straßen von ${secondCity} genießen.`
+        : isEs
+        ? `Sumérjase en el ambiente local en los cafés y calles de ${secondCity}.`
+        : isRu
+        ? `Почувствуйте ритм жизни в уютных кафе и на улочках ${secondCity}.`
+        : `Absorb the local lifestyle and relaxing cafes in ${secondCity}.`,
+      isTr
+        ? `Bölgeye özgü anıtları ve tarihi yapıları fotoğraflayın.`
+        : isDe
+        ? `Fotostopps an den wichtigsten Sehenswürdigkeiten.`
+        : isEs
+        ? `Fotografíe los monumentos y edificios emblemáticos propios de la región.`
+        : isRu
+        ? `Сфотографируйте уникальные региональные памятники и архитектуру.`
+        : `Photograph historic landmarks unique to this region.`
     ],
     foodAndDrinks: [
-      famousDishes[1] || famousDishes[0] || 'Bölgesel lezzetler',
-      drinks[1] || drinks[0] || 'Yerel içecekler',
-      streetFood[1] || streetFood[0] || 'Sokak tatlısı'
+      famousDishes[1] || famousDishes[0] || (isTr ? 'Bölgesel lezzetler' : isDe ? 'Regionale Spezialitäten' : isEs ? 'Especialidades regionales' : isRu ? 'Региональные блюда' : 'Regional dishes'),
+      drinks[1] || drinks[0] || (isTr ? 'Yerel içecekler' : isDe ? 'Lokale Getränke' : isEs ? 'Bebidas locales' : isRu ? 'Местные напитки' : 'Local drinks'),
+      streetFood[1] || streetFood[0] || (isTr ? 'Sokak tatlısı' : isDe ? 'Lokale Süßspeisen' : isEs ? 'Postres tradicionales' : isRu ? 'Традиционные сладости' : 'Street sweets')
     ],
     criticalTips: [
-      lang === 'tr'
+      isTr
         ? 'Şehirlerarası ulaşımda konforlu ekspres otobüs veya tren hatlarını tercih edin.'
-        : lang === 'de'
+        : isDe
         ? 'Für Überlandfahrten bequeme Fernbusse oder Züge wählen.'
+        : isEs
+        ? 'Opte por trenes expresos o autobuses cómodos para los desplazamientos entre ciudades.'
+        : isRu
+        ? 'Для междугородних поездок выбирайте скоростные поезда или комфортные автобусы.'
         : 'Choose intercity express trains or comfortable coaches for transfers.',
-      lang === 'tr'
+      isTr
         ? 'Kalabalık pazar alanlarında kişisel eşyalarınıza dikkat edin.'
-        : lang === 'de'
+        : isDe
         ? 'Auf belebten Märkten auf Wertsachen achten.'
+        : isEs
+        ? 'Preste atención a sus pertenencias en mercados y zonas concurridas.'
+        : isRu
+        ? 'Следите за личными вещами на оживленных рынках и площадях.'
         : 'Keep watchful care over personal items in crowded public markets.'
     ],
     mapsQuery: `${secondCity}, ${countryName}`
@@ -1823,57 +1931,117 @@ export function generateDynamicCountryItinerary(
   const stop3Highlights = mustSee.slice(4, 6);
   stops.push({
     stopNumber: 3,
-    name: lang === 'tr'
+    name: isTr
       ? `3. Durak: ${natureRegion} (Doğa, Manzaralar & Dinlenme)`
-      : lang === 'de'
+      : isDe
       ? `Stopp 3: ${natureRegion} (Natur & Erholung)`
+      : isEs
+      ? `3.ª Parada: ${natureRegion} (Naturaleza, Vistas y Descanso)`
+      : isRu
+      ? `Остановка 3: ${natureRegion} (Природа, пейзажи и отдых)`
       : `Stop 3: ${natureRegion} (Nature & Relaxation)`,
-    recommendedDuration: lang === 'tr' ? '2-3 Gün (Doğa ve manzara için ideal)' : lang === 'de' ? '2-3 Tage (Ideal für Natur)' : '2-3 Days (Ideal for nature)',
-    durationBadge: lang === 'tr' ? '2-3 Gün' : lang === 'de' ? '2-3 Tage' : '2-3 Days',
-    highlights: stop3Highlights.length > 0 ? stop3Highlights : [`${natureRegion} Doğal Seyir Alanları & Parklar`],
+    recommendedDuration: isTr
+      ? '2-3 Gün (Doğa ve manzara için ideal)'
+      : isDe
+      ? '2-3 Tage (Ideal für Natur)'
+      : isEs
+      ? '2-3 Días (Ideal para disfrutar de la naturaleza)'
+      : isRu
+      ? '2-3 дня (Идеально для природы и пейзажей)'
+      : '2-3 Days (Ideal for nature)',
+    durationBadge: isTr ? '2-3 Gün' : isDe ? '2-3 Tage' : isEs ? '2-3 Días' : isRu ? '2-3 дня' : '2-3 Days',
+    highlights: stop3Highlights.length > 0 ? stop3Highlights : [
+      isTr
+        ? `${natureRegion} Doğal Seyir Alanları & Parklar`
+        : isDe
+        ? `${natureRegion} Panoramablicke & Naturparks`
+        : isEs
+        ? `${natureRegion} Miradores Naturales y Parques`
+        : isRu
+        ? `${natureRegion} Панорамные смотровые площадки и парки`
+        : `${natureRegion} Scenic Viewpoints & Parks`
+    ],
     activities: [
-      lang === 'tr' ? `Temiz havada doğa yürüyüşü yapıp manzara noktalarını keşfedin.` : lang === 'de' ? `Wandern in der Natur und Panoramablicke genießen.` : `Hike scenic trails and take in panoramic vistas in the great outdoors.`,
-      lang === 'tr' ? `Bölgenin otantik lezzetlerini yerel bir restoranda deneyimleyin.` : lang === 'de' ? `Authentische regionale Spezialitäten probieren.` : `Sample regional specialties at an authentic countryside venue.`
+      isTr
+        ? `Temiz havada doğa yürüyüşü yapıp manzara noktalarını keşfedin.`
+        : isDe
+        ? `Wandern in der Natur und Panoramablicke genießen.`
+        : isEs
+        ? `Disfrute de rutas de senderismo y miradores con vistas panorámicas.`
+        : isRu
+        ? `Совершите пешие прогулки на свежем воздухе и насладитесь панорамами.`
+        : `Hike scenic trails and take in panoramic vistas in the great outdoors.`,
+      isTr
+        ? `Bölgenin otantik lezzetlerini yerel bir restoranda deneyimleyin.`
+        : isDe
+        ? `Authentische regionale Spezialitäten probieren.`
+        : isEs
+        ? `Pruebe los platos tradicionales en restaurantes rurales y auténticos.`
+        : isRu
+        ? `Попробуйте аутентичные блюда в традиционных местных тавернах.`
+        : `Sample regional specialties at an authentic countryside venue.`
     ],
     foodAndDrinks: [
-      famousDishes[2] || famousDishes[0] || 'Yöresel fırın yemekleri',
-      drinks[0] || 'Taze kaynak suları ve çaylar',
-      streetFood[0] || 'Doğal meyveler'
+      famousDishes[2] || famousDishes[0] || (isTr ? 'Yöresel fırın yemekleri' : isDe ? 'Regionale Spezialitäten' : isEs ? 'Guisos regionales tradicionales' : isRu ? 'Традиционные региональные блюда' : 'Regional oven-baked dishes'),
+      drinks[0] || (isTr ? 'Taze kaynak suları ve çaylar' : isDe ? 'Frisches Quellwasser & Tees' : isEs ? 'Infusiones y agua fresca de manantial' : isRu ? 'Свежая родниковая вода и чай' : 'Spring water & teas'),
+      streetFood[0] || (isTr ? 'Doğal meyveler' : isDe ? 'Frisches Obst' : isEs ? 'Frutas naturales y delicias locales' : isRu ? 'Свежие фрукты и местные угощения' : 'Local seasonal fruits')
     ],
     criticalTips: [
-      lang === 'tr'
+      isTr
         ? 'Doğa gezileri için mevsime uygun yürüyüş ayakkabısı ve koruyucu giysiler getirin.'
-        : lang === 'de'
+        : isDe
         ? 'Für Naturtouren festes Schuhwerk und wetterfeste Kleidung mitbringen.'
+        : isEs
+        ? 'Lleve calzado adecuado de montaña y ropa según la estación para las excursiones.'
+        : isRu
+        ? 'Для загородных поездок возьмите удобную треккинговую обувь и одежду по сезону.'
         : 'Bring suitable hiking footwear and weather-resistant gear for nature excursions.',
-      lang === 'tr'
+      isTr
         ? 'Hava koşullarını önceden kontrol edip seyahat planınızı buna göre ayarlayın.'
-        : lang === 'de'
+        : isDe
         ? 'Wetterbericht vor Ausflügen prüfen.'
+        : isEs
+        ? 'Consulte el pronóstico del tiempo antes de salir a la naturaleza.'
+        : isRu
+        ? 'Проверяйте прогноз погоды перед отправлением на природные локации.'
         : 'Monitor local weather forecasts prior to departures.'
     ],
     mapsQuery: `${natureRegion}, ${countryName}`
   });
 
   const totalDays = 7;
-  const routeName = lang === 'tr'
+  const routeName = isTr
     ? `${countryName} İkonik Keşif Rotası: ${capital}, ${secondCity} & ${natureRegion.split(' ')[0]}`
-    : lang === 'de'
+    : isDe
     ? `${countryName} Entdeckerroute: ${capital}, ${secondCity} & Natur`
+    : isEs
+    ? `Ruta Clásica por ${countryName}: ${capital}, ${secondCity} y Paisajes Naturales`
+    : isRu
+    ? `Классический маршрут по ${countryName}: ${capital}, ${secondCity} и природа`
     : `${countryName} Essential Highlights Route: ${capital}, ${secondCity} & Nature`;
 
-  const routeSummary = lang === 'tr'
+  const routeSummary = isTr
     ? `${countryName}’in tarihi başkenti ${capital}’den başlayıp kültürel merkezlere ve büyüleyici doğal alanlara uzanan, ülkenin en özel deneyimlerini bir araya getiren ${totalDays} günlük dengeli gezi rotası.`
-    : lang === 'de'
+    : isDe
     ? `Eine ausgewogene ${totalDays}-tägige Entdeckungsreise durch ${countryName}, von der Hauptstadt ${capital} bis zu malerischen Kultur- und Naturlandschaften.`
+    : isEs
+    ? `Un itinerario completo y equilibrado de ${totalDays} días por ${countryName}, desde la capital histórica de ${capital} hasta centros culturales y sobrecogedores paisajes naturales.`
+    : isRu
+    ? `Сбалансированный ${totalDays}-дневный маршрут по ${countryName}: от исторической столицы ${capital} до культурных центров и живописных природных ландшафтов.`
     : `A balanced ${totalDays}-day travel itinerary taking you from the historic capital of ${capital} through authentic cultural hubs and scenic natural landscapes in ${countryName}.`;
 
-  const bestSeason = encyclopedia.tourism.bestSeasons || (lang === 'tr' ? 'İlkbahar ve Sonbahar ayları' : lang === 'de' ? 'Frühling und Herbst' : 'Spring and Autumn months');
+  const bestSeason = encyclopedia.tourism.bestSeasons || (
+    isTr ? 'İlkbahar ve Sonbahar ayları' : isDe ? 'Frühling und Herbst' : isEs ? 'Meses de primavera y otoño' : isRu ? 'Весна и осень' : 'Spring and Autumn months'
+  );
 
-  const transportMode = lang === 'tr'
+  const transportMode = isTr
     ? `Şehirlerarası tren/otobüs ağı + ${capital} içinde metro ve taksi uygulamaları (${insights.transport?.popularRideApps?.join(', ') || 'Yerel Taksi'})`
-    : lang === 'de'
+    : isDe
     ? `Überlandbusse/Züge + Taxis/Apps (${insights.transport?.popularRideApps?.join(', ') || 'Lokale Taxis'})`
+    : isEs
+    ? `Red interurbana de trenes/autobuses + metro y apps de transporte en ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Taxi local'})`
+    : isRu
+    ? `Междугородние поезда/автобусы + городской транспорт и такси в ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Местное такси'})`
     : `Intercity rail/bus network + urban transit and ride apps (${insights.transport?.popularRideApps?.join(', ') || 'Local Taxis'})`;
 
   return {
@@ -1882,38 +2050,66 @@ export function generateDynamicCountryItinerary(
     routeName,
     routeSummary,
     totalDays,
-    idealDurationText: lang === 'tr' ? `${totalDays} Günlük Klasik Rota` : lang === 'de' ? `${totalDays}-Tage Entdeckerroute` : `${totalDays}-Day Signature Itinerary`,
+    idealDurationText: isTr
+      ? `${totalDays} Günlük Klasik Rota`
+      : isDe
+      ? `${totalDays}-Tage Entdeckerroute`
+      : isEs
+      ? `Ruta Clásica de ${totalDays} Días`
+      : isRu
+      ? `Классический маршрут на ${totalDays} дней`
+      : `${totalDays}-Day Signature Itinerary`,
     bestSeason,
     transportMode,
-    paceLevel: lang === 'tr' ? 'Dengeli (Kültür + Şehir + Doğa)' : lang === 'de' ? 'Ausgewogen (Kultur & Natur)' : 'Balanced (Culture & Nature)',
+    paceLevel: isTr
+      ? 'Dengeli (Kültür + Şehir + Doğa)'
+      : isDe
+      ? 'Ausgewogen (Kultur & Natur)'
+      : isEs
+      ? 'Equilibrado (Cultura, Ciudad y Naturaleza)'
+      : isRu
+      ? 'Сбалансированный (Культура, город и природа)'
+      : 'Balanced (Culture & Nature)',
     stops,
     signatureGastronomy: {
       dishes: famousDishes,
       drinks,
       streetFoods: streetFood,
-      diningAdvice: lang === 'tr'
+      diningAdvice: isTr
         ? (encyclopedia.economy.tippingCulture || 'Turistik restoranlarda %10 civarında bahşiş bırakmak nezaket kuralıdır.')
-        : lang === 'de'
+        : isDe
         ? (encyclopedia.economy.tippingCulture || 'Ein Trinkgeld von ca. 10 % in Restaurants ist üblich.')
+        : isEs
+        ? (encyclopedia.economy.tippingCulture || 'Es habitual dejar alrededor de un 10% de propina en restaurantes con servicio.')
+        : isRu
+        ? (encyclopedia.economy.tippingCulture || 'В ресторанах с обслуживанием принято оставлять около 10% чаевых.')
         : (encyclopedia.economy.tippingCulture || 'A 10% gratuity is customary and appreciated in sit-down restaurants.')
     },
     packingAndPrecautions: {
       essentials: [
-        lang === 'tr' ? 'Rahat yürüyüş ayakkabıları ve mevsime uygun giysiler' : lang === 'de' ? 'Bequeme Wanderschuhe' : 'Comfortable walking shoes',
-        lang === 'tr' ? `Seyahat priz adaptörü (${geography.plugTypes || 'Uluslararası adaptör'})` : lang === 'de' ? `Reiseadapter (${geography.plugTypes})` : `Plug adapter (${geography.plugTypes})`,
-        lang === 'tr' ? 'Taşınabilir şarj aleti (powerbank)' : lang === 'de' ? 'Powerbank' : 'Portable powerbank',
-        lang === 'tr' ? 'Güneş kremi ve su matarası' : lang === 'de' ? 'Sonnenschutz und Trinkflasche' : 'Sun protection and water bottle'
+        isTr ? 'Rahat yürüyüş ayakkabıları ve mevsime uygun giysiler' : isDe ? 'Bequeme Wanderschuhe' : isEs ? 'Calzado cómodo para caminar y ropa adecuada para la temporada' : isRu ? 'Удобная обувь для ходьбы и одежда по сезону' : 'Comfortable walking shoes',
+        isTr ? `Seyahat priz adaptörü (${geography.plugTypes || 'Uluslararası adaptör'})` : isDe ? `Reiseadapter (${geography.plugTypes})` : isEs ? `Adaptador de viaje (${geography.plugTypes || 'Adaptador universal'})` : isRu ? `Адаптер для розеток (${geography.plugTypes || 'Универсальный переходник'})` : `Plug adapter (${geography.plugTypes})`,
+        isTr ? 'Taşınabilir şarj aleti (powerbank)' : isDe ? 'Powerbank' : isEs ? 'Batería externa portátil (powerbank)' : isRu ? 'Портативный аккумулятор (пауэрбанк)' : 'Portable powerbank',
+        isTr ? 'Güneş kremi ve su matarası' : isDe ? 'Sonnenschutz und Trinkflasche' : isEs ? 'Protector solar y botella de agua reutilizable' : isRu ? 'Солнцезащитный крем и бутылка для воды' : 'Sun protection and water bottle'
       ],
       safetyAndEtiquette: [
-        lang === 'tr'
+        isTr
           ? (insights.safety.safeTravelTips?.[0] || 'Kalabalık alanlarda kişisel eşyalarınıza dikkat edin.')
-          : lang === 'de'
+          : isDe
           ? (insights.safety.safeTravelTips?.[0] || 'Auf Wertsachen in belebten Bereichen achten.')
+          : isEs
+          ? (insights.safety.safeTravelTips?.[0] || 'Cuide sus pertenencias personales en áreas concurridas.')
+          : isRu
+          ? (insights.safety.safeTravelTips?.[0] || 'Следите за личными вещами в местах скопления людей.')
           : (insights.safety.safeTravelTips?.[0] || 'Keep personal belongings secure in crowded public places.'),
-        lang === 'tr'
+        isTr
           ? (encyclopedia.culture.etiquette?.[0] || 'Yerel dini ve sosyal görgü kurallarına saygı gösterin.')
-          : lang === 'de'
+          : isDe
           ? (encyclopedia.culture.etiquette?.[0] || 'Lokale Traditionen und Bräuche respektieren.')
+          : isEs
+          ? (encyclopedia.culture.etiquette?.[0] || 'Respete las normas de etiqueta social y tradiciones locales.')
+          : isRu
+          ? (encyclopedia.culture.etiquette?.[0] || 'Уважайте местные культурные обычаи и религиозные нормы.')
           : (encyclopedia.culture.etiquette?.[0] || 'Respect local cultural customs and religious etiquette.')
       ]
     }
@@ -1929,45 +2125,63 @@ export function getCountryItinerary(
   lang: string = 'tr'
 ): CountryTravelItinerary {
   const code = countryCode.toUpperCase();
-  const normLang: 'tr' | 'en' | 'de' = lang === 'de' ? 'de' : lang === 'tr' ? 'tr' : 'en';
   const curated = CURATED_ITINERARIES[code] || CURATED_ITINERARIES_EXTRA[code];
 
   if (!curated) {
-    return generateDynamicCountryItinerary(code, normLang);
+    return generateDynamicCountryItinerary(code, lang);
   }
 
   const countryName = getCountryName(code, lang);
 
+  const tField = (obj: { tr: string; en: string; de: string }): string => {
+    if (!obj) return '';
+    if (lang === 'tr') return obj.tr;
+    if (lang === 'de') return obj.de || obj.en;
+    if (lang === 'en') return obj.en || obj.tr;
+    return lText(lang, obj.tr, obj.en, obj.de);
+  };
+
+  const tArr = (obj: { tr: string[]; en: string[]; de: string[] }): string[] => {
+    if (!obj) return [];
+    if (lang === 'tr') return obj.tr;
+    if (lang === 'de') return obj.de || obj.en;
+    if (lang === 'en') return obj.en || obj.tr;
+    const trArr = obj.tr || [];
+    const enArr = obj.en || [];
+    const deArr = obj.de || [];
+    return trArr.map((trStr, i) => lText(lang, trStr, enArr[i] || trStr, deArr[i]));
+  };
+
   return {
     countryCode: code,
     countryName,
-    routeName: curated.routeName[normLang] || curated.routeName.tr,
-    routeSummary: curated.routeSummary[normLang] || curated.routeSummary.tr,
+    routeName: tField(curated.routeName),
+    routeSummary: tField(curated.routeSummary),
     totalDays: curated.totalDays,
-    idealDurationText: curated.idealDurationText[normLang] || curated.idealDurationText.tr,
-    bestSeason: curated.bestSeason[normLang] || curated.bestSeason.tr,
-    transportMode: curated.transportMode[normLang] || curated.transportMode.tr,
-    paceLevel: curated.paceLevel[normLang] || curated.paceLevel.tr,
+    idealDurationText: tField(curated.idealDurationText),
+    bestSeason: tField(curated.bestSeason),
+    transportMode: tField(curated.transportMode),
+    paceLevel: tField(curated.paceLevel),
     stops: curated.stops.map(s => ({
       stopNumber: s.name.tr ? parseInt(s.name.tr.charAt(0)) || 1 : 1,
-      name: s.name[normLang] || s.name.tr,
-      recommendedDuration: s.recommendedDuration[normLang] || s.recommendedDuration.tr,
-      durationBadge: s.durationBadge[normLang] || s.durationBadge.tr,
-      highlights: s.highlights[normLang] || s.highlights.tr,
-      activities: s.activities[normLang] || s.activities.tr,
-      foodAndDrinks: s.foodAndDrinks[normLang] || s.foodAndDrinks.tr,
-      criticalTips: s.criticalTips[normLang] || s.criticalTips.tr,
+      name: tField(s.name),
+      recommendedDuration: tField(s.recommendedDuration),
+      durationBadge: tField(s.durationBadge),
+      highlights: tArr(s.highlights),
+      activities: tArr(s.activities),
+      foodAndDrinks: tArr(s.foodAndDrinks),
+      criticalTips: tArr(s.criticalTips),
       mapsQuery: s.mapsQuery
     })),
     signatureGastronomy: {
-      dishes: curated.signatureGastronomy.dishes[normLang] || curated.signatureGastronomy.dishes.tr,
-      drinks: curated.signatureGastronomy.drinks[normLang] || curated.signatureGastronomy.drinks.tr,
-      streetFoods: curated.signatureGastronomy.streetFoods[normLang] || curated.signatureGastronomy.streetFoods.tr,
-      diningAdvice: curated.signatureGastronomy.diningAdvice[normLang] || curated.signatureGastronomy.diningAdvice.tr
+      dishes: tArr(curated.signatureGastronomy.dishes),
+      drinks: tArr(curated.signatureGastronomy.drinks),
+      streetFoods: tArr(curated.signatureGastronomy.streetFoods),
+      diningAdvice: tField(curated.signatureGastronomy.diningAdvice)
     },
     packingAndPrecautions: {
-      essentials: curated.packingAndPrecautions.essentials[normLang] || curated.packingAndPrecautions.essentials.tr,
-      safetyAndEtiquette: curated.packingAndPrecautions.safetyAndEtiquette[normLang] || curated.packingAndPrecautions.safetyAndEtiquette.tr
+      essentials: tArr(curated.packingAndPrecautions.essentials),
+      safetyAndEtiquette: tArr(curated.packingAndPrecautions.safetyAndEtiquette)
     }
   };
 }

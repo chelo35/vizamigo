@@ -43,7 +43,7 @@ export function formatLocalizedDateReadable(dateOrIdx: string | number, lang: st
       if (!dateOrIdx) return '';
       dateObj = new Date(dateOrIdx + 'T12:00:00Z');
     }
-    const localeCode = lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
+    const localeCode = lang === 'es' ? 'es-ES' : lang === 'ru' ? 'ru-RU' : lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
     return dateObj.toLocaleDateString(localeCode, {
       day: 'numeric',
       month: 'short',
@@ -64,7 +64,7 @@ export function formatLocalizedDateFull(dateOrIdx: string | number, lang: string
       if (!dateOrIdx) return '';
       dateObj = new Date(dateOrIdx + 'T12:00:00Z');
     }
-    const localeCode = lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
+    const localeCode = lang === 'es' ? 'es-ES' : lang === 'ru' ? 'ru-RU' : lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
     return dateObj.toLocaleDateString(localeCode, {
       weekday: 'short',
       day: 'numeric',
@@ -395,6 +395,8 @@ export function validateRouteStop(
 ): RouteWarning[] {
   const isEn = lang === 'en';
   const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
   const warnings: RouteWarning[] = [];
   const inIdx = dateToDayIndex(stop.entryDate);
   const outIdx = dateToDayIndex(stop.exitDate);
@@ -402,7 +404,11 @@ export function validateRouteStop(
   if (outIdx < inIdx) {
     warnings.push({
       type: 'error',
-      message: isDe
+      message: isEs
+        ? 'La fecha de salida no puede ser anterior a la de entrada.'
+        : isRu
+        ? 'Дата выезда не может быть раньше даты въезда.'
+        : isDe
         ? 'Das Ausreisedatum kann nicht vor dem Einreisedatum liegen.'
         : isEn
         ? 'Exit date cannot be before entry date.'
@@ -418,7 +424,11 @@ export function validateRouteStop(
   if (!item) {
     warnings.push({
       type: 'warning',
-      message: isDe
+      message: isEs
+        ? 'No se encontraron datos de régimen de visados para este país.'
+        : isRu
+        ? 'Данные о визовом режиме для этой страны не найдены.'
+        : isDe
         ? 'Keine Visaregelungsdaten für dieses Land gefunden.'
         : isEn
         ? 'No passport visa regime data found for this country.'
@@ -433,7 +443,11 @@ export function validateRouteStop(
     if (daysPlanned > maxDays) {
       warnings.push({
         type: 'error',
-        message: isDe
+        message: isEs
+          ? `Los ${daysPlanned} días planificados exceden el límite sin visado (${maxDays} días) por ${daysPlanned - maxDays} días.`
+          : isRu
+          ? `Запланированные ${daysPlanned} дн. превышают разрешенный безвизовый срок (${maxDays} дн.) на ${daysPlanned - maxDays} дн.`
+          : isDe
           ? `Geplante ${daysPlanned} Tage überschreiten die visumfreie Dauer (${maxDays} Tage) um ${daysPlanned - maxDays} Tage.`
           : isEn
           ? `Planned ${daysPlanned} days exceeds allowed visa-free duration (${maxDays} days) by ${daysPlanned - maxDays} days.`
@@ -446,7 +460,11 @@ export function validateRouteStop(
   if (item.cat === 'visa' && !item.id) {
     warnings.push({
       type: 'warning',
-      message: isDe
+      message: isEs
+        ? 'Se requiere visado consular antes de la salida para este destino.'
+        : isRu
+        ? 'Для этой поездки требуется заранее оформить консульскую визу.'
+        : isDe
         ? 'Für dieses Reiseziel ist vor Abreise ein Konsularvisum erforderlich.'
         : isEn
         ? 'A consular visa is required prior to departure for this destination.'
@@ -455,7 +473,11 @@ export function validateRouteStop(
   } else if (item.cat === 'evisa') {
     warnings.push({
       type: 'info',
-      message: isDe
+      message: isEs
+        ? 'Se debe obtener una autorización de visado electrónico (eVisa) antes de viajar.'
+        : isRu
+        ? 'Перед вылетом необходимо оформить электронную визу (eVisa).'
+        : isDe
         ? 'Vor Reiseantritt muss eine Online-eVisa-Genehmigung eingeholt werden.'
         : isEn
         ? 'An online eVisa approval must be secured before travel.'
@@ -464,7 +486,11 @@ export function validateRouteStop(
   } else if (item.cat === 'eta') {
     warnings.push({
       type: 'info',
-      message: isDe
+      message: isEs
+        ? 'Se requiere autorización electrónica de viaje (ETA) antes del embarque.'
+        : isRu
+        ? 'Требуется электронное разрешение на въезд (ETA) до вылета.'
+        : isDe
         ? 'Elektronische Reisegenehmigung (ETA) vor Abflug erforderlich.'
         : isEn
         ? 'Electronic Travel Authorization (ETA) required before departure.'
@@ -473,7 +499,11 @@ export function validateRouteStop(
   } else if (item.cat === 'voa') {
     warnings.push({
       type: 'info',
-      message: isDe
+      message: isEs
+        ? 'El visado se tramita al llegar al puesto fronterizo.'
+        : isRu
+        ? 'Виза оформляется по прибытии на границе.'
+        : isDe
         ? 'Das Visum wird bei der Ankunft an der Grenze erteilt.'
         : isEn
         ? 'Visa is obtained on arrival at the border crossing.'
@@ -487,7 +517,11 @@ export function validateRouteStop(
     if (outIdx >= cutoff) {
       warnings.push({
         type: 'warning',
-        message: isDe
+        message: isEs
+          ? 'AVISO: Montenegro exige visado para ciudadanos turcos a partir del 1 de noviembre de 2026.'
+          : isRu
+          ? 'ВНИМАНИЕ: Черногория вводит визовый режим для граждан Турции с 1 ноября 2026 г.'
+          : isDe
           ? 'HINWEIS: Montenegro führt ab 1. Nov. 2026 eine Visumpflicht für türkische Staatsbürger ein.'
           : isEn
           ? 'NOTICE: Montenegro introduces visa requirements for Turkish passport holders starting Nov 1, 2026. Your travel is after this date.'
@@ -502,7 +536,11 @@ export function validateRouteStop(
     if (outIdx >= cutoff) {
       warnings.push({
         type: 'info',
-        message: isDe
+        message: isEs
+          ? 'AVISO: Tailandia limita la estancia sin visado a 30 días mediante la tarjeta digital TDAC (norma del 15 de septiembre de 2026).'
+          : isRu
+          ? 'ВНИМАНИЕ: Таиланд ограничивает безвизовое пребывание до 30 дней по цифровой карте TDAC (правило от 15 сентября 2026 г.).'
+          : isDe
           ? 'HINWEIS: Thailand beschränkt visumfreie Aufenthalte auf 30 Tage über digitale TDAC-Karten.'
           : isEn
           ? 'NOTICE: Thailand limits visa-free stays to 30 days via TDAC digital arrival cards (September 15, 2026 regulation).'
@@ -522,7 +560,11 @@ export function validateRouteStop(
   if (overlapping) {
     warnings.push({
       type: 'error',
-      message: isDe
+      message: isEs
+        ? 'Las fechas de esta parada se solapan con otra parada en la ruta.'
+        : isRu
+        ? 'Даты этой остановки пересекаются с другой остановкой в маршруте.'
+        : isDe
         ? 'Die Reisedaten dieses Aufenthalts überschneiden sich mit einem anderen Stopp.'
         : isEn
         ? 'Dates for this stop overlap with another stop on the route.'

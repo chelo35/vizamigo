@@ -134,7 +134,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                 {l(
                   `Her iki pasaportu bir arada kullanarak dünyada toplam ${comparison.combinedFreedomScore} ülkeye vizesiz veya kolayca girebilirsiniz!`,
                   `Combining both passports grants visa-free or streamlined access to a total of ${comparison.combinedFreedomScore} countries worldwide!`,
-                  `Die Kombination beider Pässe ermöglicht visumfreien oder unkomplizierten Zugang zu insgesamt ${comparison.combinedFreedomScore} Reisezielen weltweit!`
+                  `Die Kombination beider Pässe ermöglicht visumfreien oder unkomplizierten Zugang zu insgesamt ${comparison.combinedFreedomScore} Reisezielen weltweit!`,
+                  `¡Al combinar ambos pasaportes tiene acceso sin visado o simplificado a un total de ${comparison.combinedFreedomScore} destinos en todo el mundo!`,
+                  `Используя оба паспорта, вы получаете безвизовый или упрощенный доступ в ${comparison.combinedFreedomScore} стран мира!`
                 )}
               </p>
             </div>
@@ -216,7 +218,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             {l(
               `Yalnızca ${nameA} Üstün (${comparison.betterA.length})`,
               `Only ${nameA} Advantageous (${comparison.betterA.length})`,
-              `Nur ${nameA} vorteilhaft (${comparison.betterA.length})`
+              `Nur ${nameA} vorteilhaft (${comparison.betterA.length})`,
+              `Solo ${nameA} Ventajoso (${comparison.betterA.length})`,
+              `Только ${nameA} выгоднее (${comparison.betterA.length})`
             )}
           </button>
           <button
@@ -231,7 +235,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             {l(
               `Yalnızca ${nameB} Üstün (${comparison.betterB.length})`,
               `Only ${nameB} Advantageous (${comparison.betterB.length})`,
-              `Nur ${nameB} vorteilhaft (${comparison.betterB.length})`
+              `Nur ${nameB} vorteilhaft (${comparison.betterB.length})`,
+              `Solo ${nameB} Ventajoso (${comparison.betterB.length})`,
+              `Только ${nameB} выгоднее (${comparison.betterB.length})`
             )}
           </button>
           <button
@@ -246,7 +252,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             {l(
               `Ortak Kolay Giriş (${comparison.equalEasiness.length})`,
               `Both Accessible (${comparison.equalEasiness.length})`,
-              `Beide unkompliziert (${comparison.equalEasiness.length})`
+              `Beide unkompliziert (${comparison.equalEasiness.length})`,
+              `Acceso Fácil Común (${comparison.equalEasiness.length})`,
+              `Общий легкий доступ (${comparison.equalEasiness.length})`
             )}
           </button>
         </div>
@@ -274,14 +282,18 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                     {l(
                       `${nameA} Pasaportunu Kullanmanız Gerekenler (${comparison.betterA.length})`,
                       `Destinations where ${nameA} is Better (${comparison.betterA.length})`,
-                      `Ziele, an denen ${nameA} besser ist (${comparison.betterA.length})`
+                      `Ziele, an denen ${nameA} besser ist (${comparison.betterA.length})`,
+                      `Destinos donde conviene usar el pasaporte de ${nameA} (${comparison.betterA.length})`,
+                      `Страны, где выгоднее паспорт ${nameA} (${comparison.betterA.length})`
                     )}
                   </h3>
                   <p className="text-xs text-slate-400 mt-0.5">
                     {l(
                       `Bu ülkelerde ${nameA} pasaportu ${nameB} pasaportuna kıyasla daha kolay giriş sağlar.`,
                       `In these countries, ${nameA} passport provides easier access than ${nameB}.`,
-                      `In diesen Ländern bietet der Pass von ${nameA} einfacheren Zugang als ${nameB}.`
+                      `In diesen Ländern bietet der Pass von ${nameA} einfacheren Zugang als ${nameB}.`,
+                      `En estos destinos el pasaporte de ${nameA} ofrece un ingreso más fácil que el de ${nameB}.`,
+                      `В этих странах паспорт ${nameA} обеспечивает более удобный въезд, чем ${nameB}.`
                     )}
                   </p>
                 </div>
@@ -292,7 +304,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                     {l(
                       `${nameA} pasaportunun ${nameB} pasaportundan daha avantajlı olduğu ülke yok.`,
                       `No countries where ${nameA} has higher advantage than ${nameB}.`,
-                      `Keine Länder, in denen ${nameA} vorteilhafter als ${nameB} ist.`
+                      `Keine Länder, in denen ${nameA} vorteilhafter als ${nameB} ist.`,
+                      `No hay países donde el pasaporte de ${nameA} sea más ventajoso que el de ${nameB}.`,
+                      `Нет стран, где паспорт ${nameA} дает больше преимуществ, чем ${nameB}.`
                     )}
                   </div>
                 ) : (
@@ -322,14 +336,18 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                     {l(
                       `${nameB} Pasaportunu Kullanmanız Gerekenler (${comparison.betterB.length})`,
                       `Destinations where ${nameB} is Better (${comparison.betterB.length})`,
-                      `Ziele, an denen ${nameB} besser ist (${comparison.betterB.length})`
+                      `Ziele, an denen ${nameB} besser ist (${comparison.betterB.length})`,
+                      `Destinos donde conviene usar el pasaporte de ${nameB} (${comparison.betterB.length})`,
+                      `Страны, где выгоднее паспорт ${nameB} (${comparison.betterB.length})`
                     )}
                   </h3>
                   <p className="text-xs text-slate-400 mt-0.5">
                     {l(
                       `Bu ülkelerde ${nameB} pasaportu ${nameA} pasaportuna kıyasla daha kolay giriş sağlar.`,
                       `In these countries, ${nameB} passport provides easier access than ${nameA}.`,
-                      `In diesen Ländern bietet der Pass von ${nameB} einfacheren Zugang als ${nameA}.`
+                      `In diesen Ländern bietet der Pass von ${nameB} einfacheren Zugang als ${nameA}.`,
+                      `En estos destinos el pasaporte de ${nameB} ofrece un ingreso más fácil que el de ${nameA}.`,
+                      `В этих странах паспорт ${nameB} обеспечивает более удобный въезд, чем ${nameA}.`
                     )}
                   </p>
                 </div>
@@ -340,7 +358,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                     {l(
                       `${nameB} pasaportunun ${nameA} pasaportundan daha avantajlı olduğu ülke yok.`,
                       `No countries where ${nameB} has higher advantage than ${nameA}.`,
-                      `Keine Länder, in denen ${nameB} vorteilhafter als ${nameA} ist.`
+                      `Keine Länder, in denen ${nameB} vorteilhafter als ${nameA} ist.`,
+                      `No hay países donde el pasaporte de ${nameB} sea más ventajoso que el de ${nameA}.`,
+                      `Нет стран, где паспорт ${nameB} дает больше преимуществ, чем ${nameA}.`
                     )}
                   </div>
                 ) : (
@@ -370,7 +390,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             {l(
               `Yalnızca ${nameA} Pasaportunun Üstün Olduğu Ülkeler (${comparison.betterA.length})`,
               `Countries where only ${nameA} has advantage (${comparison.betterA.length})`,
-              `Länder, in denen nur ${nameA} vorteilhaft ist (${comparison.betterA.length})`
+              `Länder, in denen nur ${nameA} vorteilhaft ist (${comparison.betterA.length})`,
+              `Países donde solo el pasaporte de ${nameA} tiene ventaja (${comparison.betterA.length})`,
+              `Страны, где только паспорт ${nameA} имеет преимущество (${comparison.betterA.length})`
             )}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -395,7 +417,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             {l(
               `Yalnızca ${nameB} Pasaportunun Üstün Olduğu Ülkeler (${comparison.betterB.length})`,
               `Countries where only ${nameB} has advantage (${comparison.betterB.length})`,
-              `Länder, in denen nur ${nameB} vorteilhaft ist (${comparison.betterB.length})`
+              `Länder, in denen nur ${nameB} vorteilhaft ist (${comparison.betterB.length})`,
+              `Países donde solo el pasaporte de ${nameB} tiene ventaja (${comparison.betterB.length})`,
+              `Страны, где только паспорт ${nameB} имеет преимущество (${comparison.betterB.length})`
             )}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -420,7 +444,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             {l(
               `Her İki Pasaportla da Benzer Kolaylıkta Giriş Yapılabilen Ülkeler (${comparison.equalEasiness.length})`,
               `Destinations easily accessible with both passports (${comparison.equalEasiness.length})`,
-              `Ziele, die mit beiden Pässen gleichermaßen einfach erreichbar sind (${comparison.equalEasiness.length})`
+              `Ziele, die mit beiden Pässen gleichermaßen einfach erreichbar sind (${comparison.equalEasiness.length})`,
+              `Destinos accesibles con facilidad con ambos pasaportes (${comparison.equalEasiness.length})`,
+              `Направления с легким въездом по обоим паспортам (${comparison.equalEasiness.length})`
             )}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">

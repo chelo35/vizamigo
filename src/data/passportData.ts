@@ -622,6 +622,26 @@ export function getLocalizedPartner(partner: AffiliatePartner, lang: string) {
       url: partner.url
     };
   }
+  if (lang === 'es') {
+    return {
+      category: partner.categoryEn === 'Accommodation' ? 'Alojamiento' : partner.categoryEn === 'Flights' ? 'Vuelos' : partner.categoryEn === 'Travel Insurance' ? 'Seguro de Viaje' : (partner.categoryEn || partner.category),
+      title: partner.titleEn || partner.title,
+      desc: partner.descEn || partner.desc,
+      badge: partner.badgeEn || partner.badge,
+      linkText: partner.linkTextEn ? partner.linkTextEn.replace('Compare Deals', 'Comparar Ofertas').replace('Get Covered', 'Contratar Seguro').replace('Find Cheap Flights', 'Buscar Vuelos Baratos') : partner.linkText,
+      url: partner.url
+    };
+  }
+  if (lang === 'ru') {
+    return {
+      category: partner.categoryEn === 'Accommodation' ? 'Проживание' : partner.categoryEn === 'Flights' ? 'Авиабилеты' : partner.categoryEn === 'Travel Insurance' ? 'Туристическая Страховка' : (partner.categoryEn || partner.category),
+      title: partner.titleEn || partner.title,
+      desc: partner.descEn || partner.desc,
+      badge: partner.badgeEn || partner.badge,
+      linkText: partner.linkTextEn ? partner.linkTextEn.replace('Compare Deals', 'Сравнить Цены').replace('Get Covered', 'Оформить Страховку').replace('Find Cheap Flights', 'Найти Дешевые Билеты') : partner.linkText,
+      url: partner.url
+    };
+  }
   if (lang === 'en') {
     return {
       category: partner.categoryEn || partner.category,
@@ -854,7 +874,7 @@ function getDisplayNames(lang: string): Intl.DisplayNames {
 export function getCountryName(code: string, lang?: string): string {
   const currentLang = lang || (typeof localStorage !== 'undefined' ? localStorage.getItem('vr_lang') || 'tr' : 'tr');
   if (code === 'XK') return currentLang === 'tr' ? 'Kosova' : 'Kosovo';
-  if (code === 'PS') return currentLang === 'tr' ? 'Filistin' : currentLang === 'de' ? 'Palästina' : 'Palestine';
+  if (code === 'PS') return currentLang === 'tr' ? 'Filistin' : currentLang === 'de' ? 'Palästina' : currentLang === 'es' ? 'Palestina' : currentLang === 'ru' ? 'Палестина' : 'Palestine';
   if (code === 'TW') return currentLang === 'tr' ? 'Tayvan' : 'Taiwan';
   try {
     const dn = getDisplayNames(currentLang);
@@ -1259,19 +1279,21 @@ export interface CountryPracticalInfo {
 }
 
 export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPracticalInfo {
-  const isEn = lang !== 'tr';
+  const isEn = lang === 'en';
   const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
 
   const defaultInfo: CountryPracticalInfo = {
-    currency: isDe ? 'Lokale Währung' : isEn ? 'Local Currency' : 'Yerel döviz',
-    plugType: isDe ? 'Typ C / F (Eurostecker) oder lokaler Typ' : isEn ? 'Type C / F European standard or local type' : 'C / F genel Avrupa standardı veya yerel tip',
+    currency: isEs ? 'Moneda local' : isRu ? 'Местная валюта' : isDe ? 'Lokale Währung' : isEn ? 'Local Currency' : 'Yerel döviz',
+    plugType: isEs ? 'Tipo C / F estándar europeo o estándar local' : isRu ? 'Тип C / F европейский стандарт или местный тип' : isDe ? 'Typ C / F (Eurostecker) oder lokaler Typ' : isEn ? 'Type C / F European standard or local type' : 'C / F genel Avrupa standardı veya yerel tip',
     emergencyPhone: '112 / 911',
-    bestMonths: isDe ? 'Frühling und Herbst' : isEn ? 'Spring and Autumn months' : 'İlkbahar ve Sonbahar ayları',
-    esimTip: isDe ? 'Airalo oder Maya Mobile regionale eSIM-Pakete empfohlen.' : isEn ? 'Airalo or Maya Mobile regional eSIM packages recommended.' : 'Airalo veya Maya Mobile bölgesel eSIM paketleri önerilir.',
-    localEtiquette: isDe ? 'Örtliche Gesetze, religiöse Kleidervorschriften und Fotoverbote beachten.' : isEn ? 'Respect local customs, religious dress codes, and photography restrictions.' : 'Yerel yasalara, ibadethane giyim kurallarına ve fotoğraf çekme kısıtlamalarına uyunuz.'
+    bestMonths: isEs ? 'Meses de primavera y otoño' : isRu ? 'Весенние и осенние месяцы' : isDe ? 'Frühling und Herbst' : isEn ? 'Spring and Autumn months' : 'İlkbahar ve Sonbahar ayları',
+    esimTip: isEs ? 'Se recomiendan paquetes regionales eSIM de Airalo o Maya Mobile.' : isRu ? 'Рекомендуются региональные пакеты eSIM от Airalo или Maya Mobile.' : isDe ? 'Airalo oder Maya Mobile regionale eSIM-Pakete empfohlen.' : isEn ? 'Airalo or Maya Mobile regional eSIM packages recommended.' : 'Airalo veya Maya Mobile bölgesel eSIM paketleri önerilir.',
+    localEtiquette: isEs ? 'Respete las leyes locales, códigos de vestimenta religiosa y restricciones de fotografía.' : isRu ? 'Соблюдайте местные законы, дресс-код в религиозных местах и запреты на фотосъемку.' : isDe ? 'Örtliche Gesetze, religiöse Kleidervorschriften und Fotoverbote beachten.' : isEn ? 'Respect local customs, religious dress codes, and photography restrictions.' : 'Yerel yasalara, ibadethane giyim kurallarına ve fotoğraf çekme kısıtlamalarına uyunuz.'
   };
 
-  const map: Record<string, { tr: CountryPracticalInfo; en: CountryPracticalInfo; de: CountryPracticalInfo }> = {
+  const map: Record<string, { tr: CountryPracticalInfo; en: CountryPracticalInfo; de: CountryPracticalInfo; es: CountryPracticalInfo; ru: CountryPracticalInfo }> = {
     'GE': {
       tr: {
         currency: 'GEL (Gürcistan Larisi)',
@@ -1296,6 +1318,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Mai - Oktober (Sommer & Weinlese)',
         esimTip: 'Magti oder Silknet lokale Tarife sehr günstig; Airalo eSIM funktioniert reibungslos.',
         localEtiquette: 'In orthodoxen Kirchen wird dezente Kleidung erwartet. Für Taxis wird die Bolt-App empfohlen.'
+      },
+      es: {
+        currency: 'GEL (Lari Georgiano)',
+        plugType: 'C, F (230V, compatible con enchufe europeo)',
+        emergencyPhone: '112 (Policía, Bomberos, Ambulancia)',
+        bestMonths: 'Mayo - Octubre (Verano y temporada de vendimia)',
+        esimTip: 'Los paquetes eSIM locales de Magti o Silknet son económicos; Airalo funciona a la perfección.',
+        localEtiquette: 'En iglesias ortodoxas se espera que las mujeres se cubran la cabeza y vistan por debajo de las rodillas. Se recomienda Bolt para taxis.'
+      },
+      ru: {
+        currency: 'GEL (Грузинский лари)',
+        plugType: 'C, F (230В, совместимо с евророзетками)',
+        emergencyPhone: '112 (Полиция, Пожарные, Скорая)',
+        bestMonths: 'Май - Октябрь (Лето и сезон сбора винограда)',
+        esimTip: 'Местные пакеты eSIM от Magti или Silknet очень выгодны; Airalo также работает отлично.',
+        localEtiquette: 'В православных храмах женщинам рекомендуется покрывать голову и надевать одежду ниже колен. Для поездок на такси используйте Bolt.'
       }
     },
     'TH': {
@@ -1322,6 +1360,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'November - Februar (Kühle und trockene Jahreszeit)',
         esimTip: 'TrueMove H oder AIS Touristen-eSIMs online oder am Flughafen erhältlich.',
         localEtiquette: 'Strikte Majestätsbeleidigungsgesetze. In Tempeln Schultern und Knie bedecken.'
+      },
+      es: {
+        currency: 'THB (Baht Tailandés)',
+        plugType: 'A, B, C, O (Compatible con enchufe europeo C en la mayoría de hoteles)',
+        emergencyPhone: '191 (Policía), 1669 (Ambulancia), 1155 (Policía Turística - Inglés)',
+        bestMonths: 'Noviembre - Febrero (Temporada fresca y seca)',
+        esimTip: 'Las eSIM turísticas de TrueMove H o AIS son muy convenientes en el aeropuerto o en línea.',
+        localEtiquette: 'Estrictas leyes de lesa majestad protegen a la monarquía. Cúbrase hombros y rodillas al ingresar a templos budistas.'
+      },
+      ru: {
+        currency: 'THB (Тайский бат)',
+        plugType: 'A, B, C, O (В большинстве отелей подходит стандарт C)',
+        emergencyPhone: '191 (Полиция), 1669 (Скорая), 1155 (Туристическая полиция - на англ.)',
+        bestMonths: 'Ноябрь - Февраль (Прохладный и сухой сезон)',
+        esimTip: 'Туристические eSIM от TrueMove H или AIS удобно оформить онлайн или в аэропорту.',
+        localEtiquette: 'Строгие законы об оскорблении величества. При посещении буддийских храмов плечи и колени должны быть прикрыты.'
       }
     },
     'ME': {
@@ -1348,6 +1402,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Mai - September (Küste Kotor, Budva)',
         esimTip: 'One oder Telekom ME Touristen-eSIM-Pakete sehr beliebt.',
         localEtiquette: 'Trinkgeld ca. 10% in Restaurants üblich. Vorsicht auf schmalen Bergstraßen.'
+      },
+      es: {
+        currency: 'EUR (Euro - Moneda oficial aunque no es miembro de la UE)',
+        plugType: 'C, F (Estándar europeo)',
+        emergencyPhone: '112 (General), 122 (Policía), 124 (Ambulancia)',
+        bestMonths: 'Mayo - Septiembre (Zonas costeras de Kotor y Budva)',
+        esimTip: 'Los paquetes turísticos eSIM de One o Telekom ME (500GB ~15-20€) son muy populares.',
+        localEtiquette: 'La propina habitual en restaurantes turísticos ronda el 10%. Tenga precaución al conducir en carreteras estrechas de montaña.'
+      },
+      ru: {
+        currency: 'EUR (Евро - официальная валюта, несмотря на статус вне ЕС)',
+        plugType: 'C, F (Европейский стандарт)',
+        emergencyPhone: '112 (Единый), 122 (Полиция), 124 (Скорая)',
+        bestMonths: 'Май - Сентябрь (Побережье Котора и Будвы)',
+        esimTip: 'Туристические пакеты eSIM от One или Telekom ME (500 ГБ ~15-20€) очень популярны.',
+        localEtiquette: 'Чаевые в ресторанах около 10%. Будьте внимательны при вождении по узким горным серпантинам.'
       }
     },
     'RS': {
@@ -1374,6 +1444,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'April - Oktober',
         esimTip: 'Yettel oder A1 lokale Prepaid-eSIM-Karten.',
         localEtiquette: 'In Belgrad Yandex Go oder Pink Taxi Apps für faire Fahrpreise nutzen.'
+      },
+      es: {
+        currency: 'RSD (Dinar Serbio)',
+        plugType: 'C, F (Estándar europeo)',
+        emergencyPhone: '192 (Policía), 194 (Ambulancia)',
+        bestMonths: 'Abril - Octubre',
+        esimTip: 'Tarjetas eSIM prepago locales de Yettel o A1.',
+        localEtiquette: 'En Belgrado utilice las aplicaciones Pink Taxi o Yandex Go para asegurar tarifas justas.'
+      },
+      ru: {
+        currency: 'RSD (Сербский динар)',
+        plugType: 'C, F (Европейский стандарт)',
+        emergencyPhone: '192 (Полиция), 194 (Скорая)',
+        bestMonths: 'Апрель - Октябрь',
+        esimTip: 'Местные предоплаченные eSIM от Yettel или A1.',
+        localEtiquette: 'В Белграде используйте приложения Pink Taxi или Yandex Go, чтобы избежать завышенных цен.'
       }
     },
     'AZ': {
@@ -1400,6 +1486,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'April - Juni, September - Oktober',
         esimTip: 'Azercell oder Bakcell lokale eSIM.',
         localEtiquette: 'Fotografieren in der Metro Baku ist untersagt. Teekultur wird hochgeschätzt.'
+      },
+      es: {
+        currency: 'AZN (Manat Azerbaiyano)',
+        plugType: 'C, F (Estándar europeo)',
+        emergencyPhone: '102 (Policía), 103 (Ambulancia), 112 (Emergencias FHN)',
+        bestMonths: 'Abril - Junio, Septiembre - Octubre',
+        esimTip: 'eSIM locales de Azercell o Bakcell.',
+        localEtiquette: 'Está prohibido tomar fotografías dentro del metro de Bakú. La hospitalidad del té es una tradición fundamental.'
+      },
+      ru: {
+        currency: 'AZN (Азербайджанский манат)',
+        plugType: 'C, F (Европейский стандарт)',
+        emergencyPhone: '102 (Полиция), 103 (Скорая), 112 (МЧС)',
+        bestMonths: 'Апрель - Июнь, Сентябрь - Октябрь',
+        esimTip: 'Местные eSIM от Azercell или Bakcell.',
+        localEtiquette: 'Фотосъемка в метро Баку запрещена. Традиции чайного гостеприимства имеют первостепенное значение.'
       }
     },
     'AE': {
@@ -1426,6 +1528,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'November - März (Sommer oft über 45°C)',
         esimTip: 'Virgin Mobile oder Du Touristen-eSIM-Pakete.',
         localEtiquette: 'Öffentliche Zuneigungsbekundungen und Alkoholkonsum in der Öffentlichkeit meiden. Ramadan-Regeln beachten.'
+      },
+      es: {
+        currency: 'AED (Dírham de los EAU)',
+        plugType: 'Tipo G (3 clavijas estándar británico, requiere adaptador)',
+        emergencyPhone: '999 (Policía), 998 (Ambulancia)',
+        bestMonths: 'Noviembre - Marzo (Los meses de verano superan los 45°C)',
+        esimTip: 'Planes eSIM turísticos de Virgin Mobile o Du.',
+        localEtiquette: 'Las muestras públicas de afecto excesivo y la embriaguez pública están prohibidas. Respete las normas durante el Ramadán.'
+      },
+      ru: {
+        currency: 'AED (Дирхам ОАЭ)',
+        plugType: 'Тип G (Британский стандарт с 3 контактами, нужен адаптер)',
+        emergencyPhone: '999 (Полиция), 998 (Скорая)',
+        bestMonths: 'Ноябрь - Март (Летом температура выше 45°C)',
+        esimTip: 'Туристические eSIM от Virgin Mobile или Du.',
+        localEtiquette: 'Публичные проявления чувств и нетрезвое поведение в общественных местах запрещены. Соблюдайте правила в Рамадан.'
       }
     },
     'JP': {
@@ -1452,6 +1570,22 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'März - Mai (Kirschblüte) & Oktober - November (Herbstlaub)',
         esimTip: 'Ubigi oder Airalo Japan eSIMs bieten schnelles 5G.',
         localEtiquette: 'Keine Trinkgeldkultur. Essen im Gehen vermeiden und Abfall wieder mitnehmen.'
+      },
+      es: {
+        currency: 'JPY (Yen Japonés)',
+        plugType: 'Tipo A, B (100V, 2 clavijas planas, requiere adaptador)',
+        emergencyPhone: '110 (Policía), 119 (Ambulancia y Bomberos)',
+        bestMonths: 'Marzo - Mayo (Sakura) y Octubre - Noviembre (Follaje de otoño)',
+        esimTip: 'Las eSIM de Ubigi o Airalo para Japón ofrecen conectividad 5G de alta velocidad.',
+        localEtiquette: 'No existe cultura de propinas; dejar propina puede considerarse una ofensa. Evite comer mientras camina y lleve sus residuos a casa.'
+      },
+      ru: {
+        currency: 'JPY (Японская иена)',
+        plugType: 'Тип A, B (100В, 2 плоских контакта, нужен адаптер)',
+        emergencyPhone: '110 (Полиция), 119 (Скорая и Пожарные)',
+        bestMonths: 'Март - Май (Цветение сакуры) и Октябрь - Ноябрь (Осенние клены)',
+        esimTip: 'eSIM для Японии от Ubigi или Airalo обеспечивают скоростной 5G.',
+        localEtiquette: 'Чаевые оставлять не принято (это считается неуважением). Не принято есть на ходу; мусор уносят с собой.'
       }
     },
     'DE': {
@@ -1478,12 +1612,30 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Mai - September',
         esimTip: 'EU Roam Like at Home Roaming-Regeln gelten.',
         localEtiquette: 'Sonntagsruhe: Geschäfte geschlossen. Bei Rot an Fußgängerampeln stehen bleiben.'
+      },
+      es: {
+        currency: 'EUR (Euro)',
+        plugType: 'C, F (Estándar europeo)',
+        emergencyPhone: '112 (General y Ambulancia), 110 (Policía)',
+        bestMonths: 'Mayo - Septiembre',
+        esimTip: 'Se aplican las normas de Roaming de la UE (Roam Like at Home).',
+        localEtiquette: 'Las tiendas cierran los domingos. Cruzar en rojo como peatón está muy mal visto y puede ser multado.'
+      },
+      ru: {
+        currency: 'EUR (Евро)',
+        plugType: 'C, F (Европейский стандарт)',
+        emergencyPhone: '112 (Единый и Скорая), 110 (Полиция)',
+        bestMonths: 'Май - Сентябрь',
+        esimTip: 'Действуют правила роуминга ЕС (Roam Like at Home).',
+        localEtiquette: 'Магазины закрыты по воскресеньям. Переходить улицу на красный свет пешеходам строго не рекомендуется.'
       }
     }
   };
 
   const item = map[code];
   if (item) {
+    if (isEs) return item.es;
+    if (isRu) return item.ru;
     if (isDe) return item.de;
     if (isEn) return item.en;
     return item.tr;

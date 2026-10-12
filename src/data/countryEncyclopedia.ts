@@ -12,6 +12,7 @@ import { CURATED_EXTRA_2 } from './countryEncyclopediaCuratedExtra2';
 import { CURATED_EXTRA_3 } from './countryEncyclopediaCuratedExtra3';
 import { COUNTRY_HERITAGE } from './countryEncyclopediaLandmarks';
 import { getCountryVisual } from './countryVisuals';
+import { lText } from '../i18n';
 
 export interface EncyclopediaPhrase {
   phrase: string;
@@ -1367,7 +1368,6 @@ function getRegionalProfile(region: string, capital: string, countryName: string
  */
 export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr'): CountryEncyclopediaData {
   const code = countryCode.toUpperCase();
-  const normLang: 'tr' | 'en' | 'de' = lang === 'de' ? 'de' : lang === 'tr' ? 'tr' : 'en';
   const ALL_CURATED: Record<string, CuratedEntry> = {
     ...CURATED_ENCYCLOPEDIA,
     ...CURATED_EXTRA,
@@ -1380,78 +1380,127 @@ export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr')
   const insights = getCountryInsights(code, lang);
 
   if (curated) {
+    const tField = (obj: { tr: string; en: string; de: string }): string => {
+      if (!obj) return '';
+      if (lang === 'tr') return obj.tr;
+      if (lang === 'de') return obj.de || obj.en;
+      if (lang === 'en') return obj.en || obj.tr;
+      return lText(lang, obj.tr, obj.en, obj.de);
+    };
+
+    const tArr = (obj: { tr: string[]; en: string[]; de: string[] }): string[] => {
+      if (!obj) return [];
+      if (lang === 'tr') return obj.tr;
+      if (lang === 'de') return obj.de || obj.en;
+      if (lang === 'en') return obj.en || obj.tr;
+      const trArr = obj.tr || [];
+      const enArr = obj.en || [];
+      const deArr = obj.de || [];
+      return trArr.map((trStr, i) => lText(lang, trStr, enArr[i] || trStr, deArr[i]));
+    };
+
     return {
       countryCode: code,
       countryName,
       culture: {
-        etiquette: curated.culture.etiquette[normLang] || curated.culture.etiquette.tr,
-        festivals: curated.culture.festivals[normLang] || curated.culture.festivals.tr,
-        lifestyle: curated.culture.lifestyle[normLang] || curated.culture.lifestyle.tr
+        etiquette: tArr(curated.culture.etiquette),
+        festivals: tArr(curated.culture.festivals),
+        lifestyle: tField(curated.culture.lifestyle)
       },
       tourism: {
-        mustSeePlaces: curated.tourism.mustSeePlaces[normLang] || curated.tourism.mustSeePlaces.tr,
-        bestSeasons: curated.tourism.bestSeasons[normLang] || curated.tourism.bestSeasons.tr,
-        travelStyleTip: curated.tourism.travelStyleTip[normLang] || curated.tourism.travelStyleTip.tr
+        mustSeePlaces: tArr(curated.tourism.mustSeePlaces),
+        bestSeasons: tField(curated.tourism.bestSeasons),
+        travelStyleTip: tField(curated.tourism.travelStyleTip)
       },
       religion: {
-        primaryReligions: curated.religion.primaryReligions[normLang] || curated.religion.primaryReligions.tr,
-        respectNorms: curated.religion.respectNorms[normLang] || curated.religion.respectNorms.tr,
-        sacredSites: curated.religion.sacredSites[normLang] || curated.religion.sacredSites.tr
+        primaryReligions: tField(curated.religion.primaryReligions),
+        respectNorms: tField(curated.religion.respectNorms),
+        sacredSites: tArr(curated.religion.sacredSites)
       },
       language: {
-        officialLanguages: curated.language.officialLanguages[normLang] || curated.language.officialLanguages.tr,
-        englishProficiency: curated.language.englishProficiency[normLang] || curated.language.englishProficiency.tr,
-        phrases: curated.language.phrases.map(p => ({
-          phrase: p.phrase,
-          meaning: normLang === 'de' ? p.meaningDe : normLang === 'en' ? p.meaningEn : p.meaningTr,
-          translation: normLang === 'de' ? p.meaningDe : normLang === 'en' ? p.meaningEn : p.meaningTr,
-          pronunciation: p.pronunciation
-        }))
+        officialLanguages: tField(curated.language.officialLanguages),
+        englishProficiency: tField(curated.language.englishProficiency),
+        phrases: curated.language.phrases.map(p => {
+          const meaning = lang === 'tr' ? p.meaningTr : lang === 'de' ? p.meaningDe : lang === 'en' ? p.meaningEn : lText(lang, p.meaningTr, p.meaningEn, p.meaningDe);
+          return {
+            phrase: p.phrase,
+            meaning,
+            translation: meaning,
+            pronunciation: p.pronunciation
+          };
+        })
       },
       history: {
-        conciseHistory: curated.history.conciseHistory[normLang] || curated.history.conciseHistory.tr,
-        milestones: curated.history.milestones[normLang] || curated.history.milestones.tr
+        conciseHistory: tField(curated.history.conciseHistory),
+        milestones: tArr(curated.history.milestones)
       },
       gastronomy: {
-        famousDishes: curated.gastronomy.famousDishes[normLang] || curated.gastronomy.famousDishes.tr,
-        traditionalDrinks: curated.gastronomy.traditionalDrinks[normLang] || curated.gastronomy.traditionalDrinks.tr,
-        streetFoodAndDesserts: curated.gastronomy.streetFoodAndDesserts[normLang] || curated.gastronomy.streetFoodAndDesserts.tr
+        famousDishes: tArr(curated.gastronomy.famousDishes),
+        traditionalDrinks: tArr(curated.gastronomy.traditionalDrinks),
+        streetFoodAndDesserts: tArr(curated.gastronomy.streetFoodAndDesserts)
       },
       achievements: {
-        famousFigures: curated.achievements.famousFigures[normLang] || curated.achievements.famousFigures.tr,
-        strongSectors: curated.achievements.strongSectors[normLang] || curated.achievements.strongSectors.tr
+        famousFigures: tArr(curated.achievements.famousFigures),
+        strongSectors: tArr(curated.achievements.strongSectors)
       },
       economy: {
-        paymentCulture: curated.economy.paymentCulture[normLang] || curated.economy.paymentCulture.tr,
-        economicPillars: curated.economy.economicPillars[normLang] || curated.economy.economicPillars.tr,
-        tippingCulture: curated.economy.tippingCulture[normLang] || curated.economy.tippingCulture.tr
+        paymentCulture: tField(curated.economy.paymentCulture),
+        economicPillars: tField(curated.economy.economicPillars),
+        tippingCulture: tField(curated.economy.tippingCulture)
       }
     };
   }
 
   // Otantik Bölgesel ve Ülke Mirası Motoru
-  const capital = geo ? geo.capital : 'Başkent';
-  const hub = geo ? geo.mainHub : 'Havalimanı';
+  const isTr = lang === 'tr';
+  const isEn = lang === 'en';
+  const isDe = lang === 'de';
+  const isEs = lang === 'es';
+  const isRu = lang === 'ru';
+  const normLang: 'tr' | 'en' | 'de' = isDe ? 'de' : isTr ? 'tr' : 'en';
+
+  const capital = geo ? geo.capital : (isDe ? 'Hauptstadt' : isEs ? 'Capital' : isRu ? 'Столица' : isTr ? 'Başkent' : 'Capital');
+  const hub = geo ? geo.mainHub : (isDe ? 'Flughafen' : isEs ? 'Aeropuerto' : isRu ? 'Аэропорт' : isTr ? 'Havalimanı' : 'Airport');
   const currency = insights.currency;
   const region = getCountryRegion(code);
-  const profile = getRegionalProfile(region, capital, countryName, normLang);
+  const profileTr = getRegionalProfile(region, capital, countryName, 'tr');
+  const profileEn = getRegionalProfile(region, capital, countryName, 'en');
+  const profileDe = getRegionalProfile(region, capital, countryName, 'de');
+  const profile = isDe ? profileDe : isEn ? profileEn : isTr ? profileTr : profileTr;
+
+  const mapStr = (tr: string, en: string, de?: string) => lText(lang, tr, en, de);
+  const mapArr = (trArr: string[], enArr: string[], deArr?: string[]) =>
+    trArr.map((item, i) => lText(lang, item, enArr[i] || item, deArr?.[i]));
+
   const heritage = COUNTRY_HERITAGE[code];
 
   const visual = getCountryVisual(code);
   const mustSeePlaces = heritage
-    ? (heritage.landmarks[normLang] || heritage.landmarks.tr)
+    ? (isDe
+        ? heritage.landmarks.de
+        : isTr
+        ? heritage.landmarks.tr
+        : isEs || isRu
+        ? heritage.landmarks.tr.map((l, idx) => lText(lang, l, heritage.landmarks.en?.[idx] || l, heritage.landmarks.de?.[idx]))
+        : heritage.landmarks.en)
     : [
         visual.landmark,
-        `${capital} ${normLang === 'de' ? 'Historisches Altstadtzentrum & Hauptboulevard' : normLang === 'en' ? 'Historic Old Town & Grand Boulevard' : 'Tarihi Şehir Merkezi & Kent Meydanı'}`,
-        `${countryName} ${normLang === 'de' ? 'Nationales Kultur- und Naturerbe' : normLang === 'en' ? 'National Cultural & Natural Sanctuary' : 'Ulusal Tarih ve Doğa Parkı'}`
+        `${capital} ${isDe ? 'Historisches Altstadtzentrum & Hauptboulevard' : isEs ? 'Centro Histórico y Plaza Mayor' : isRu ? 'Исторический центр города и главная площадь' : isTr ? 'Tarihi Şehir Merkezi & Kent Meydanı' : 'Historic Old Town & Grand Boulevard'}`,
+        `${countryName} ${isDe ? 'Nationales Kultur- und Naturerbe' : isEs ? 'Patrimonio Cultural y Parque Nacional' : isRu ? 'Национальное историческое и природное святилище' : isTr ? 'Ulusal Tarih ve Doğa Parkı' : 'National Cultural & Natural Sanctuary'}`
       ];
 
   const famousFigures = heritage
-    ? (heritage.figures[normLang] || heritage.figures.tr)
+    ? (isDe
+        ? heritage.figures.de
+        : isTr
+        ? heritage.figures.tr
+        : isEs || isRu
+        ? heritage.figures.tr.map((f, idx) => lText(lang, f, heritage.figures.en?.[idx] || f, heritage.figures.de?.[idx]))
+        : heritage.figures.en)
     : [
-        `${countryName} ${normLang === 'de' ? 'Historische Persönlichkeiten & Pioniere' : normLang === 'en' ? 'Historical Leaders & Cultural Pioneers' : 'Tarihi Önderleri ve Milli Şahsiyetleri'}`,
-        `${countryName} ${normLang === 'de' ? 'Anerkannte Künstler & Kulturschaffende' : normLang === 'en' ? 'Acclaimed Artists & Creators' : 'Tanınan Sanatçıları ve Yazarları'}`,
-        `${countryName} ${normLang === 'de' ? 'Internationale Spitzensportler' : normLang === 'en' ? 'International Athletes' : 'Milli Sporcuları ve Başarı İsimleri'}`
+        `${countryName} ${isDe ? 'Historische Persönlichkeiten & Pioniere' : isEs ? 'Líderes Históricos y Pioneros' : isRu ? 'Исторические лидеры и национальные деятели' : isTr ? 'Tarihi Önderleri ve Milli Şahsiyetleri' : 'Historical Leaders & Cultural Pioneers'}`,
+        `${countryName} ${isDe ? 'Anerkannte Künstler & Kulturschaffende' : isEs ? 'Artistas y Escritores Destacados' : isRu ? 'Известные деятели культуры и искусства' : isTr ? 'Tanınan Sanatçıları ve Yazarları' : 'Acclaimed Artists & Creators'}`,
+        `${countryName} ${isDe ? 'Internationale Spitzensportler' : isEs ? 'Deportistas Destacados' : isRu ? 'Национальные спортсмены' : isTr ? 'Milli Sporcuları ve Başarı İsimleri' : 'International Athletes'}`
       ];
 
   const strongSectors = heritage ? heritage.sectors : profile.sectors;
@@ -1460,78 +1509,135 @@ export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr')
     countryCode: code,
     countryName,
     culture: {
-      etiquette: profile.etiquette,
-      festivals: profile.festivals,
-      lifestyle: profile.lifestyle
+      etiquette: isEs || isRu ? mapArr(profileTr.etiquette, profileEn.etiquette, profileDe.etiquette) : profile.etiquette,
+      festivals: isEs || isRu ? mapArr(profileTr.festivals, profileEn.festivals, profileDe.festivals) : profile.festivals,
+      lifestyle: isEs || isRu ? mapStr(profileTr.lifestyle, profileEn.lifestyle, profileDe.lifestyle) : profile.lifestyle
     },
     tourism: {
       mustSeePlaces,
-      bestSeasons: insights.bestMonths || (lang === 'de' ? 'Mai - Oktober für beste Reisebedingungen' : lang === 'en' ? 'May - October for best weather' : 'Mayıs - Ekim ayları en ideal seyahat dönemidir'),
-      travelStyleTip: lang === 'de'
+      bestSeasons: insights.bestMonths || (isDe ? 'Mai - Oktober für beste Reisebedingungen' : isEs ? 'Mayo - Octubre para el mejor clima' : isRu ? 'Май - октябрь для наилучшей погоды' : isTr ? 'Mayıs - Ekim ayları en ideal seyahat dönemidir' : 'May - October for best weather'),
+      travelStyleTip: isDe
         ? `Anreise über den internationalen Flughafen ${hub}. Nutzen Sie lokale Fahrdienste und Züge.`
-        : lang === 'en'
-        ? `Arrive via ${hub} international hub. Ride-hailing apps and local rail offer the best experience.`
-        : `${hub} havalimanı ana giriş kapısıdır. Şehir içinde araç çağırma uygulamaları ve trenler tercih edilebilir.`
+        : isEs
+        ? `Llegada a través del centro internacional de ${hub}. Se recomienda el uso de apps de viaje compartido y trenes.`
+        : isRu
+        ? `Прибытие через международный хаб ${hub}. Рекомендуется использовать сервисы такси и поезда.`
+        : isTr
+        ? `${hub} havalimanı ana giriş kapısıdır. Şehir içinde araç çağırma uygulamaları ve trenler tercih edilebilir.`
+        : `Arrive via ${hub} international hub. Ride-hailing apps and local rail offer the best experience.`
     },
     religion: {
-      primaryReligions: profile.religions,
-      respectNorms: lang === 'de'
+      primaryReligions: isEs || isRu ? mapStr(profileTr.religions, profileEn.religions, profileDe.religions) : profile.religions,
+      respectNorms: isDe
         ? 'In Gotteshäusern wird respektvolle Kleidung (Schultern und Knie bedecken) erwartet.'
-        : lang === 'en'
-        ? 'Modest attire covering shoulders and knees is appreciated in sacred spaces.'
-        : 'İbadethanelere girerken omuz ve dizlerin örtülü olmasına ve sessizliğe özen gösterilir.',
+        : isEs
+        ? 'En lugares sagrados y templos se espera vestimenta modesta (hombros y rodillas cubiertos) y respeto al silencio.'
+        : isRu
+        ? 'При посещении религиозных объектов требуется скромная одежда (закрытые плечи и колени) и соблюдение тишины.'
+        : isTr
+        ? 'İbadethanelere girerken omuz ve dizlerin örtülü olmasına ve sessizliğe özen gösterilir.'
+        : 'Modest attire covering shoulders and knees is appreciated in sacred spaces.',
       sacredSites: heritage?.sacredSites
-        ? (heritage.sacredSites[normLang] || heritage.sacredSites.tr)
+        ? (isDe
+            ? heritage.sacredSites.de
+            : isTr
+            ? heritage.sacredSites.tr
+            : isEs || isRu
+            ? heritage.sacredSites.tr.map((s, idx) => lText(lang, s, heritage?.sacredSites?.en?.[idx] || s, heritage?.sacredSites?.de?.[idx]))
+            : heritage.sacredSites.en)
         : [
-            `${capital} Tarihi Başkent Mabedi ve Dini Mirası`
+            isDe ? `${capital} Historische Kathedrale & Heiligtum` : isEs ? `${capital} Templo Histórico y Patrimonio Religioso` : isRu ? `${capital} Исторический собор и святыня` : isTr ? `${capital} Tarihi Başkent Mabedi ve Dini Mirası` : `${capital} Historic Sanctuary & Religious Heritage`
           ]
     },
     language: {
-      officialLanguages: `${countryName} ${normLang === 'de' ? 'Landessprache. Englisch in Tourismuszentren geläufig.' : normLang === 'en' ? 'official language. English understood in hotels and tourism zones.' : 'resmi dili. Turistik noktalarda ve otellerde İngilizce anlaşılabilir.'}`,
-      englishProficiency: normLang === 'de' ? 'Gut in Großstädten; Übersetzungs-Apps auf dem Land nützlich.' : normLang === 'en' ? 'Good in major hubs; translation apps helpful in small towns.' : 'Büyük şehirlerde ve otellerde iyi; kırsal bölgelerde çeviri uygulamaları faydalıdır.',
-      phrases: profile.phrases
+      officialLanguages: isDe
+        ? `${countryName} Landessprache. Englisch in Tourismuszentren geläufig.`
+        : isEs
+        ? `Idioma oficial de ${countryName}. El inglés es habitual en zonas turísticas.`
+        : isRu
+        ? `Государственный язык: ${countryName}. Английский понятен в туристических зонах.`
+        : isTr
+        ? `${countryName} resmi dili. Turistik noktalarda ve otellerde İngilizce anlaşılabilir.`
+        : `${countryName} official language. English understood in hotels and tourism zones.`,
+      englishProficiency: isDe
+        ? 'Gut in Großstädten; Übersetzungs-Apps auf dem Land nützlich.'
+        : isEs
+        ? 'Bueno en las principales ciudades; apps de traducción recomendadas en zonas rurales.'
+        : isRu
+        ? 'Хороший в крупных городах; в сельской местности полезны приложения-переводчики.'
+        : isTr
+        ? 'Büyük şehirlerde ve otellerde iyi; kırsal bölgelerde çeviri uygulamaları faydalıdır.'
+        : 'Good in major hubs; translation apps helpful in small towns.',
+      phrases: profile.phrases.map((p, i) => ({
+        ...p,
+        meaning: isEs || isRu
+          ? lText(lang, profileTr.phrases[i]?.meaning || p.meaning, profileEn.phrases[i]?.meaning || p.meaning, profileDe.phrases[i]?.meaning)
+          : p.meaning
+      }))
     },
     history: {
       conciseHistory: heritage?.history?.concise
-        ? (heritage.history.concise[normLang] || heritage.history.concise.tr)
-        : normLang === 'de'
+        ? (isDe ? heritage.history.concise.de : isTr ? heritage.history.concise.tr : isEs || isRu ? lText(lang, heritage.history.concise.tr, heritage.history.concise.en || heritage.history.concise.tr, heritage.history.concise.de) : heritage.history.concise.en)
+        : isDe
         ? `${countryName} besitzt ein reiches historisches Erbe, geprägt von frühen Epochen, Handelsrouten und der modernen Unabhängigkeit.`
-        : normLang === 'en'
-        ? `${countryName} boasts a rich historical legacy shaped by ancient trade routes, sovereign independence, and dynamic modern development.`
-        : `${countryName}, antik ticaret rotaları, bağımsızlık mücadelesi ve modern kalkınmayla şekillenmiş köklü bir tarihe sahiptir.`,
+        : isEs
+        ? `${countryName} cuenta con un rico legado histórico marcado por antiguas rutas comerciales, soberanía e independencia, y un dinámico desarrollo moderno.`
+        : isRu
+        ? `${countryName} обладает богатым историческим наследием, сформированным древними торговыми путями, независимостью и современным развитием.`
+        : isTr
+        ? `${countryName}, antik ticaret rotaları, bağımsızlık mücadelesi ve modern kalkınmayla şekillenmiş köklü bir tarihe sahiptir.`
+        : `${countryName} boasts a rich historical legacy shaped by ancient trade routes, sovereign independence, and dynamic modern development.`,
       milestones: heritage?.history?.milestones
-        ? (heritage.history.milestones[normLang] || heritage.history.milestones.tr)
+        ? (isDe
+            ? heritage.history.milestones.de
+            : isTr
+            ? heritage.history.milestones.tr
+            : isEs || isRu
+            ? heritage.history.milestones.tr.map((m, idx) => lText(lang, m, heritage?.history?.milestones?.en?.[idx] || m, heritage?.history?.milestones?.de?.[idx]))
+            : heritage.history.milestones.en)
         : [
-            `${countryName} Erken Yerleşimleri ve Tarihi Dönüm Noktaları`,
-            `${countryName} Milli Bağımsızlık ve Egemenlik İlanı`,
-            `${countryName} Modern Dönem ve Küresel İş Birlikleri`
+            isDe ? `${countryName} Frühe Siedlungen & Meilensteine` : isEs ? `Primeros Asentamientos e Hitos Históricos de ${countryName}` : isRu ? `Ранние поселения и исторические вехи: ${countryName}` : isTr ? `${countryName} Erken Yerleşimleri ve Tarihi Dönüm Noktaları` : `${countryName} Early Settlements & Historic Milestones`,
+            isDe ? `${countryName} Nationale Unabhängigkeit` : isEs ? `Declaración de Independencia y Soberanía de ${countryName}` : isRu ? `Провозглашение независимости и суверенитета: ${countryName}` : isTr ? `${countryName} Milli Bağımsızlık ve Egemenlik İlanı` : `${countryName} National Independence & Sovereignty`,
+            isDe ? `${countryName} Moderne Ära & Globale Kooperation` : isEs ? `Era Moderna y Alianzas Globales de ${countryName}` : isRu ? `Современная эпоха и глобальное партнерство: ${countryName}` : isTr ? `${countryName} Modern Dönem ve Küresel İş Birlikleri` : `${countryName} Modern Era & Global Partnerships`
           ]
     },
     gastronomy: {
-      famousDishes: profile.dishes,
-      traditionalDrinks: profile.drinks,
-      streetFoodAndDesserts: profile.desserts
+      famousDishes: isEs || isRu ? mapArr(profileTr.dishes, profileEn.dishes, profileDe.dishes) : profile.dishes,
+      traditionalDrinks: isEs || isRu ? mapArr(profileTr.drinks, profileEn.drinks, profileDe.drinks) : profile.drinks,
+      streetFoodAndDesserts: isEs || isRu ? mapArr(profileTr.desserts, profileEn.desserts, profileDe.desserts) : profile.desserts
     },
     achievements: {
       famousFigures,
-      strongSectors
+      strongSectors: isEs || isRu ? mapArr(strongSectors, strongSectors) : strongSectors
     },
     economy: {
-      paymentCulture: lang === 'de'
+      paymentCulture: isDe
         ? `Währung: ${currency}. Kartenzahlung in Städten verbreitet; etwas Bargeld für Märkte empfohlen.`
-        : lang === 'en'
-        ? `Official currency: ${currency}. Cards widely accepted in cities; carry cash for small markets.`
-        : `Resmi para birimi: ${currency}. Şehirlerde kart yaygındır; pazarlar ve küçük esnaf için nakit bulundurulmalıdır.`,
-      economicPillars: lang === 'de'
+        : isEs
+        ? `Moneda oficial: ${currency}. Las tarjetas son ampliamente aceptadas en ciudades; conviene llevar algo de efectivo para pequeños comercios.`
+        : isRu
+        ? `Официальная валюта: ${currency}. Банковские карты распространены в городах; рекомендуется иметь наличные для рынков.`
+        : isTr
+        ? `Resmi para birimi: ${currency}. Şehirlerde kart yaygındır; pazarlar ve küçük esnaf için nakit bulundurulmalıdır.`
+        : `Official currency: ${currency}. Cards widely accepted in cities; carry cash for small markets.`,
+      economicPillars: isDe
         ? 'Dienstleistungen, Tourismus, Außenhandel und lokale Industrie.'
-        : lang === 'en'
-        ? 'Services, tourism, export commerce, and regional manufacturing.'
-        : 'Hizmet sektörü, turizm, ticaret ve yerel imalat sanayii.',
-      tippingCulture: lang === 'de'
+        : isEs
+        ? 'Servicios, turismo, comercio exterior y manufactura regional.'
+        : isRu
+        ? 'Сфера услуг, туризм, экспортная торговля и региональная промышленность.'
+        : isTr
+        ? 'Hizmet sektörü, turizm, ticaret ve yerel imalat sanayii.'
+        : 'Services, tourism, export commerce, and regional manufacturing.',
+      tippingCulture: isDe
         ? 'Ca. 5-10% Trinkgeld im Restaurant ist üblich und wird geschätzt.'
-        : lang === 'en'
-        ? 'Around 5-10% tip in full-service dining is customary and appreciated.'
-        : 'Restoranlarda %5-10 civarında bahşiş bırakmak nezaket kuralıdır.'
+        : isEs
+        ? 'Se acostumbra dejar alrededor del 5-10% de propina en restaurantes con servicio.'
+        : isRu
+        ? 'В ресторанах с обслуживанием принято оставлять около 5-10% чаевых.'
+        : isTr
+        ? 'Restoranlarda %5-10 civarında bahşiş bırakmak nezaket kuralıdır.'
+        : 'Around 5-10% tip in full-service dining is customary and appreciated.'
     }
   };
 }

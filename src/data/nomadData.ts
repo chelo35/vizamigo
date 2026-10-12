@@ -6,6 +6,9 @@
  * Çok dilli (TR / EN / DE) tam desteklidir.
  */
 
+import { getCountryName } from './passportData';
+import { lText } from '../i18n';
+
 export interface DigitalNomadHub {
   id: string;
   countryCode: string;
@@ -873,6 +876,26 @@ export function getLocalizedNomadHub(hub: DigitalNomadHub, lang: string = 'tr'):
   }
   if (lang === 'en' && hub.en) {
     return { ...hub, ...hub.en };
+  }
+  if (lang === 'es' || lang === 'ru') {
+    const base = hub.en ? { ...hub, ...hub.en } : hub;
+    return {
+      ...base,
+      countryName: getCountryName(hub.countryCode, lang),
+      budgetLevel: (lText(lang, hub.budgetLevel, hub.en?.budgetLevel || hub.budgetLevel)) as any,
+      region: (lText(lang, hub.region, hub.en?.region || hub.region)) as any,
+      visaName: lText(lang, hub.visaName, hub.en?.visaName || hub.visaName),
+      monthlyLivingCost: lText(lang, hub.monthlyLivingCost, hub.en?.monthlyLivingCost || hub.monthlyLivingCost),
+      incomeRequired: lText(lang, hub.incomeRequired, hub.en?.incomeRequired || hub.incomeRequired),
+      duration: lText(lang, hub.duration, hub.en?.duration || hub.duration),
+      taxRegime: lText(lang, hub.taxRegime, hub.en?.taxRegime || hub.taxRegime),
+      residencePathway: lText(lang, hub.residencePathway, hub.en?.residencePathway || hub.residencePathway),
+      popularHubs: hub.popularHubs.map((hTr, i) => lText(lang, hTr, hub.en?.popularHubs?.[i] || hTr)),
+      internetAndCoworking: lText(lang, hub.internetAndCoworking, hub.en?.internetAndCoworking || hub.internetAndCoworking),
+      lifestyleVibe: lText(lang, hub.lifestyleVibe, hub.en?.lifestyleVibe || hub.lifestyleVibe),
+      processingTime: lText(lang, hub.processingTime, hub.en?.processingTime || hub.processingTime),
+      keyRequirements: hub.keyRequirements.map((rTr, i) => lText(lang, rTr, hub.en?.keyRequirements?.[i] || rTr))
+    };
   }
   return hub;
 }
