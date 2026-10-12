@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Search, X, CloudSun } from 'lucide-react';
-import { WORLD_WEATHER_DATA } from '../../data/weatherData';
+import { Search, X, CloudSun, Wind, Droplets } from 'lucide-react';
+import { ALL_WORLD_HUBS } from '../../data/worldHubs';
+import { getHubWeather, HubWeather } from '../../data/weatherData';
 import { useI18n } from '../../data/i18n';
 
 interface Props {
@@ -14,26 +15,35 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
   const [unit, setUnit] = useState<'C' | 'F'>('C');
 
   // Featured cities default list
-  const featuredCities = ['Istanbul', 'London', 'Tokyo', 'New York'];
+  const featuredCities = ['Istanbul', 'London', 'Tokyo', 'New York', 'Paris'];
 
-  const allWeatherList = Object.values(WORLD_WEATHER_DATA);
-
-  const filteredList = allWeatherList.filter((item) => {
+  // Search matches across ALL_WORLD_HUBS with fallback weather resolver
+  const filteredHubs = ALL_WORLD_HUBS.filter((hub) => {
     if (!search.trim()) return true;
     const q = search.toLowerCase().trim();
     return (
-      item.city.toLowerCase().includes(q) ||
-      item.country.tr.toLowerCase().includes(q) ||
-      item.country.en.toLowerCase().includes(q) ||
-      item.country.es.toLowerCase().includes(q) ||
-      item.country.ru.toLowerCase().includes(q) ||
-      item.country.de.toLowerCase().includes(q)
+      hub.city.toLowerCase().includes(q) ||
+      (hub.cityTr && hub.cityTr.toLowerCase().includes(q)) ||
+      hub.country.tr.toLowerCase().includes(q) ||
+      hub.country.en.toLowerCase().includes(q) ||
+      hub.country.es.toLowerCase().includes(q) ||
+      hub.country.ru.toLowerCase().includes(q) ||
+      hub.country.de.toLowerCase().includes(q)
     );
   });
 
-  const displayList = isSearching || search.trim()
-    ? filteredList.slice(0, 5)
-    : featuredCities.map((city) => WORLD_WEATHER_DATA[city]).filter(Boolean);
+  const displayWeatherList: { weather: HubWeather; cityTr?: string }[] = isSearching || search.trim()
+    ? filteredHubs.slice(0, 30).map((hub) => ({
+        weather: getHubWeather(hub.city, hub),
+        cityTr: hub.cityTr
+      }))
+    : featuredCities.map((city) => {
+        const hub = ALL_WORLD_HUBS.find((h) => h.city === city);
+        return {
+          weather: getHubWeather(city, hub),
+          cityTr: hub?.cityTr
+        };
+      });
 
   const formatTemp = (celsius: number) => {
     if (unit === 'F') {
@@ -55,7 +65,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
               {l('Canlı Dünya Hava Durumu', 'Live World Weather', 'Weltweites Wetter', 'Clima Mundial', 'Погода в мире')}
             </h4>
             <span className="text-[10px] text-slate-500 dark:text-slate-400">
-              {l('Küresel seyahat hava şartları', 'Global travel conditions', 'Globale Reisebedingungen', 'Condiciones de viaje', 'Условия для поездок')}
+              {l('Küresel başkentler & seyahat hava şartları', 'Global capitals & travel conditions', 'Globale Hauptstädte & Wetter', 'Capitales y condiciones climáticas', 'Столицы и погодные условия')}
             </span>
           </div>
         </div>
@@ -79,7 +89,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
               if (isSearching) setSearch('');
             }}
             className="p-1.5 rounded-lg text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40 transition-colors cursor-pointer"
-            title={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск')}
+            title={l('Başkent veya şehir ara', 'Search capital or city', 'Stadt suchen', 'Buscar capital o ciudad', 'Поиск')}
           >
             <Search className="w-3.5 h-3.5" />
           </button>
@@ -94,7 +104,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder={l('Şehir veya ülke ara...', 'Search city or country...', 'Stadt oder Land suchen...', 'Buscar ciudad o país...', 'Поиск города или страны...')}
+            placeholder={l('Başkent, şehir veya ülke ara... (örn: Viyana, Tokyo, Roma)', 'Search capital, city or country... (e.g. Vienna, Tokyo)', 'Stadt oder Land suchen...', 'Buscar ciudad o país...', 'Поиск города или страны...')}
             className="w-full pl-8 pr-7 py-1.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-teal-500"
             autoFocus
           />
@@ -102,7 +112,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
             <button
               type="button"
               onClick={() => setSearch('')}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5 cursor-pointer"
             >
               <X className="w-3 h-3" />
             </button>
@@ -110,16 +120,25 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
         </div>
       )}
 
+      {/* Result Counter if searching */}
+      {search.trim() && (
+        <div className="flex items-center justify-between text-[10px] text-slate-400 px-1 mb-1 font-semibold">
+          <span>{filteredHubs.length} {l('merkez bulundu', 'hubs found', 'Treffer gefunden', 'resultados encontrados', 'найдено')}</span>
+          <span>{l('Sıcaklık & Durum', 'Temp & Condition', 'Temperatur & Wetter', 'Temperatura', 'Температура')}</span>
+        </div>
+      )}
+
       {/* Weather List */}
-      <div className="space-y-1.5">
-        {displayList.length === 0 ? (
-          <p className="text-[11px] text-center text-slate-400 py-2">
-            {l('Sonuç bulunamadı', 'No weather data found', 'Keine Wetterdaten', 'Sin resultados', 'Не найдено')}
+      <div className={`space-y-1.5 ${isSearching || search.trim() ? 'max-h-64 overflow-y-auto pr-1' : ''}`}>
+        {displayWeatherList.length === 0 ? (
+          <p className="text-[11px] text-center text-slate-400 py-3">
+            {l('Eşleşen başkent veya şehir bulunamadı', 'No matching capitals or cities found', 'Keine Treffer gefunden', 'Sin resultados', 'Совпадений не найдено')}
           </p>
         ) : (
-          displayList.map((item) => {
+          displayWeatherList.map(({ weather: item, cityTr }) => {
             const countryName = item.country[language as 'tr' | 'en' | 'de' | 'es' | 'ru'] || item.city;
             const conditionText = item.condition[language as 'tr' | 'en' | 'de' | 'es' | 'ru'] || item.condition.en;
+            const displayName = language === 'tr' && cityTr ? cityTr : item.city;
 
             return (
               <div
@@ -130,21 +149,34 @@ export const WeatherWidget: React.FC<Props> = ({ className = '' }) => {
                   <span className="text-base leading-none">{item.flag}</span>
                   <div className="min-w-0">
                     <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
-                      {item.city}
+                      {displayName}
                     </div>
-                    <div className="text-[10px] text-slate-400 truncate">
-                      {countryName} · <span className="opacity-90">{conditionText}</span>
+                    <div className="text-[10px] text-slate-400 truncate flex items-center gap-1.5">
+                      <span>{countryName}</span>
+                      <span>·</span>
+                      <span className="text-teal-600 dark:text-teal-400 font-medium">{conditionText}</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1.5 flex-shrink-0">
-                  <span className="text-sm" title={conditionText}>
-                    {item.icon}
-                  </span>
-                  <span className="font-mono text-xs font-black text-slate-900 dark:text-white bg-white dark:bg-black/40 px-2 py-0.5 rounded-lg border border-slate-200/80 dark:border-white/10 shadow-2xs">
-                    {formatTemp(item.tempC)}
-                  </span>
+                <div className="flex items-center gap-2 flex-shrink-0">
+                  <div className="hidden sm:flex items-center gap-2 text-[10px] text-slate-400">
+                    <span className="flex items-center gap-0.5" title="Nem">
+                      <Droplets className="w-2.5 h-2.5" />
+                      {item.humidity}%
+                    </span>
+                    <span className="flex items-center gap-0.5" title="Rüzgar">
+                      <Wind className="w-2.5 h-2.5" />
+                      {item.windKmh}km/s
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-1">
+                    <span className="text-sm leading-none">{item.icon}</span>
+                    <span className="font-mono text-xs font-black text-slate-900 dark:text-white bg-white dark:bg-black/40 px-2 py-0.5 rounded-lg border border-slate-200/80 dark:border-white/10 shadow-2xs">
+                      {formatTemp(item.tempC)}
+                    </span>
+                  </div>
                 </div>
               </div>
             );

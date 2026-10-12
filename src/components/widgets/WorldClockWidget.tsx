@@ -22,13 +22,14 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
   }, []);
 
   // Top default featured cities
-  const featuredCities = ['London', 'Istanbul', 'Tokyo', 'New York'];
+  const featuredCities = ['London', 'Istanbul', 'Tokyo', 'New York', 'Paris'];
 
   const filteredHubs = ALL_WORLD_HUBS.filter((hub) => {
     if (!search.trim()) return true;
     const q = search.toLowerCase().trim();
     return (
       hub.city.toLowerCase().includes(q) ||
+      (hub.cityTr && hub.cityTr.toLowerCase().includes(q)) ||
       hub.country.tr.toLowerCase().includes(q) ||
       hub.country.en.toLowerCase().includes(q) ||
       hub.country.es.toLowerCase().includes(q) ||
@@ -38,7 +39,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
   });
 
   const displayHubs = isSearching || search.trim()
-    ? filteredHubs.slice(0, 5)
+    ? filteredHubs.slice(0, 30)
     : ALL_WORLD_HUBS.filter((h) => featuredCities.includes(h.city));
 
   return (
@@ -54,7 +55,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
               {l('Canlı Dünya Saatleri', 'Live World Clock', 'Weltzeituhr', 'Reloj Mundial', 'Мировое время')}
             </h4>
             <span className="text-[10px] text-slate-500 dark:text-slate-400">
-              {l('Küresel seyahat zaman dilimleri', 'Global travel timezones', 'Globale Zeitzonen', 'Zonas horarias', 'Часовые пояса')}
+              {l('Küresel başkentler & seyahat zaman dilimleri', 'Global capitals & travel timezones', 'Globale Hauptstädte & Zeitzonen', 'Capitales y zonas horarias', 'Столицы и часовые пояса')}
             </span>
           </div>
         </div>
@@ -66,7 +67,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             if (isSearching) setSearch('');
           }}
           className="p-1.5 rounded-lg text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40 transition-colors cursor-pointer"
-          title={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск')}
+          title={l('Şehir veya başkent ara', 'Search city or capital', 'Stadt oder Hauptstadt suchen', 'Buscar ciudad o capital', 'Поиск города или столицы')}
         >
           <Search className="w-3.5 h-3.5" />
         </button>
@@ -80,7 +81,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder={l('Şehir veya ülke ara...', 'Search city or country...', 'Stadt oder Land suchen...', 'Buscar ciudad o país...', 'Поиск города или страны...')}
+            placeholder={l('Başkent, şehir veya ülke ara... (örn: Viyana, Tokyo, Roma)', 'Search capital, city or country... (e.g. Vienna, Tokyo)', 'Hauptstadt, Stadt oder Land suchen...', 'Buscar capital, ciudad o país...', 'Поиск столицы, города или страны...')}
             className="w-full pl-8 pr-7 py-1.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-teal-500"
             autoFocus
           />
@@ -88,7 +89,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             <button
               type="button"
               onClick={() => setSearch('')}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5 cursor-pointer"
             >
               <X className="w-3 h-3" />
             </button>
@@ -96,11 +97,19 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
         </div>
       )}
 
+      {/* Result Counter if searching */}
+      {search.trim() && (
+        <div className="flex items-center justify-between text-[10px] text-slate-400 px-1 mb-1 font-semibold">
+          <span>{filteredHubs.length} {l('merkez bulundu', 'hubs found', 'Treffer gefunden', 'resultados encontrados', 'найдено')}</span>
+          <span>{l('Canlı Saat', 'Live Time', 'Echtzeit', 'Hora local', 'Текущее время')}</span>
+        </div>
+      )}
+
       {/* Clock List */}
-      <div className="space-y-1.5">
+      <div className={`space-y-1.5 ${isSearching || search.trim() ? 'max-h-64 overflow-y-auto pr-1' : ''}`}>
         {displayHubs.length === 0 ? (
-          <p className="text-[11px] text-center text-slate-400 py-2">
-            {l('Sonuç bulunamadı', 'No hubs found', 'Keine Treffer', 'Sin resultados', 'Не найдено')}
+          <p className="text-[11px] text-center text-slate-400 py-3">
+            {l('Eşleşen başkent veya şehir bulunamadı', 'No matching capitals or hubs found', 'Keine Treffer gefunden', 'No se encontraron resultados', 'Совпадений не найдено')}
           </p>
         ) : (
           displayHubs.map((hub) => {
@@ -118,6 +127,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             const isDay = hourOnly >= 6 && hourOnly < 20;
             const hubTime = timeFormatter.format(now);
             const countryName = hub.country[language as 'tr' | 'en' | 'de' | 'es' | 'ru'] || hub.city;
+            const displayName = language === 'tr' && hub.cityTr ? hub.cityTr : hub.city;
 
             return (
               <div
@@ -128,7 +138,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
                   <span className="text-base leading-none">{hub.flag}</span>
                   <div className="min-w-0">
                     <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
-                      {hub.city}
+                      {displayName}
                     </div>
                     <div className="text-[10px] text-slate-400 truncate">
                       {countryName}

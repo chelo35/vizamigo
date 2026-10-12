@@ -26,6 +26,7 @@ import { AuthProvider } from './context/AuthContext';
 import { AuthModal } from './components/AuthModal';
 import { RegulationAuditModal } from './components/RegulationAuditModal';
 import { ReportChangeModal } from './components/ReportChangeModal';
+import { GlobalFooter } from './components/footer/GlobalFooter';
 import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
@@ -400,31 +401,17 @@ function AppContent() {
           </div>
         )}
 
-        {/* Informative Footer */}
-        <footer className="mt-14 pt-8 border-t border-slate-200/80 dark:border-white/[0.08] text-xs text-slate-500 dark:text-slate-400 space-y-3 text-center sm:text-left">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div className="flex items-center gap-2.5 font-bold text-slate-800 dark:text-slate-200">
-              <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-xs">
-                <Compass className="w-3.5 h-3.5" />
-              </div>
-              <span className="tracking-tight">{t.appTitle} · {language === 'de' ? 'Ausgabe 2026' : language === 'en' ? '2026 Edition' : '2026 Sürümü'}</span>
-            </div>
-            <button
-              type="button"
-              onClick={() => setIsLegalModalOpen(true)}
-              className="inline-flex items-center gap-1.5 text-teal-600 dark:text-teal-400 hover:underline font-semibold cursor-pointer transition-colors"
-            >
-              <ShieldCheck className="w-3.5 h-3.5" /> {t.securityDisclaimer}
-            </button>
-          </div>
-          <p className="text-[11px] leading-relaxed text-slate-400 dark:text-slate-500">
-            {language === 'de'
-              ? 'Daten zusammengestellt aus offenen Passport-Index-Quellen und offiziellen Konsulatsmitteilungen. Grenzprotokolle und zwischenstaatliche Visaabkommen können sich kurzfristig ändern; bitte vor Abreise bei den zuständigen Behörden verifizieren.'
-              : language === 'en'
-              ? 'Data aggregated from open-source Passport Index repositories and official consular notices. Border protocols and bilateral visa agreements are subject to sudden changes; please verify with relevant ministries and immigration authorities before embarking.'
-              : 'Veriler açık kaynaklı Passport Index veri setinden ve konsolosluk duyurularından derlenmiştir. Sınır kapısı uygulamaları ve ikili vizeler her an değişebilir; seyahatten önce resmi göç idaresi ve dışişleri portallarından teyit ediniz.'}
-          </p>
-        </footer>
+        {/* Comprehensive Booking.com-Style Footer Suite */}
+        <GlobalFooter
+          onSelectCountry={(code) => {
+            if (activeTab !== 'explore') {
+              setActiveTab('explore');
+            }
+            handleCountrySelect(code);
+          }}
+          onOpenLegalModal={() => setIsLegalModalOpen(true)}
+          setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
+        />
       </main>
       </div>
 
