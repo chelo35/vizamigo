@@ -54,6 +54,8 @@ import { loadStoredChecklists, saveStoredChecklists } from '../utils/storage';
 import { useI18n } from '../data/i18n';
 import { getCountryVisual } from '../data/countryVisuals';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
+import { WorldClockWidget } from './widgets/WorldClockWidget';
+import { CurrencyWidget } from './widgets/CurrencyWidget';
 
 import { TabKey } from './Navigation';
 
@@ -718,11 +720,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               >
                 {/* Modern Symmetrical Country Card Layout */}
                 <div className="w-full p-4 sm:p-5 lg:p-6 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
-                  <div className="flex flex-col md:flex-row md:items-start gap-4 sm:gap-5">
-                    {/* 1. Landmark Scenic Thumbnail */}
+                  <div className="flex flex-col md:flex-row md:items-stretch gap-4 sm:gap-5">
+                    {/* 1. Landmark Scenic Thumbnail (Symmetrical full-height desktop image) */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-48 lg:w-56 h-36 md:h-36 aspect-[16/10] rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-56 lg:w-64 min-h-[190px] md:min-h-full self-stretch rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
@@ -741,12 +743,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       <div className="country-thumbnail-scrim" />
 
                       {/* Floating Flag Badge Capsule in top-left */}
-                      <div className="absolute top-2 left-2 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
+                      <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
                         {getFlag(item.c)}
                       </div>
 
                       {/* Landmark Caption in bottom */}
-                      <div className="absolute bottom-2 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md flex items-center gap-1">
+                      <div className="absolute bottom-2.5 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md flex items-center gap-1.5">
                         <span>📍</span>
                         <span className="truncate">{visual.landmark}</span>
                       </div>
@@ -813,76 +815,66 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       )}
 
-                      {/* SYMMETRICAL INFO BOXES GRID (5 Key Travel Metrics in Symmetrical Columns) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-2 mt-1">
+                      {/* SYMMETRICAL INFO BOXES GRID (5 Key Travel Metrics in Symmetrical Columns, 100% Legible, Zero Truncation) */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-2.5 mt-1.5">
                         {/* 1. Başkent (Capital) */}
-                        <div className="flex items-center gap-2 p-2 rounded-xl bg-slate-50/80 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800/80">
-                          <span className="text-base flex-shrink-0">🏛️</span>
-                          <div className="min-w-0 flex-1">
-                            <div className="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400">
-                              {l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}
-                            </div>
-                            <div className="text-xs font-bold text-slate-800 dark:text-slate-200 truncate" title={geography.capital}>
-                              {geography.capital}
-                            </div>
+                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/80">
+                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            <span className="text-xs">🏛️</span>
+                            <span>{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-slate-100 mt-1 leading-snug">
+                            {geography.capital}
                           </div>
                         </div>
 
                         {/* 2. Para Birimi (Currency) */}
-                        <div className="flex items-center gap-2 p-2 rounded-xl bg-purple-50/50 dark:bg-purple-950/20 border border-purple-500/20 text-purple-800 dark:text-purple-300">
-                          <span className="text-base flex-shrink-0">💰</span>
-                          <div className="min-w-0 flex-1">
-                            <div className="text-[10px] uppercase font-bold text-purple-700/80 dark:text-purple-300/80">
-                              {l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}
-                            </div>
-                            <div className="text-xs font-bold truncate" title={`${geography.currencyCode} (${geography.currencySymbol})`}>
-                              {geography.currencyCode} <span className="font-mono text-[11px] opacity-80">({geography.currencySymbol})</span>
-                            </div>
+                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-purple-50/60 dark:bg-purple-950/25 border border-purple-500/20 text-purple-900 dark:text-purple-200">
+                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-purple-700/80 dark:text-purple-300/80">
+                            <span className="text-xs">💰</span>
+                            <span>{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug">
+                            {geography.currencyCode} <span className="font-mono text-xs opacity-75 font-bold">({geography.currencySymbol})</span>
                           </div>
                         </div>
 
                         {/* 3. Güvenlik (Safety) */}
-                        <div className={`flex items-center gap-2 p-2 rounded-xl border ${insights.safety.badgeColor}`}>
-                          <Shield className="w-4 h-4 flex-shrink-0" />
-                          <div className="min-w-0 flex-1">
-                            <div className="text-[10px] uppercase font-bold opacity-80">
-                              {l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}
-                            </div>
-                            <div className="text-xs font-bold truncate" title={`${insights.safety.safetyScore}/100 ${insights.safety.safetyLevel}`}>
-                              {insights.safety.safetyScore}/100 <span className="text-[10px] font-medium opacity-80 hidden 2xl:inline">· {insights.safety.safetyLevel}</span>
-                            </div>
+                        <div className={`flex flex-col justify-between p-2.5 rounded-xl border ${insights.safety.badgeColor}`}>
+                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider opacity-80">
+                            <Shield className="w-3.5 h-3.5 flex-shrink-0" />
+                            <span>{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug">
+                            {insights.safety.safetyScore} / 100
                           </div>
                         </div>
 
                         {/* 4. İnternet (Internet Speed) */}
-                        <div className="flex items-center gap-2 p-2 rounded-xl bg-sky-50/50 dark:bg-sky-950/20 border border-sky-500/20 text-sky-800 dark:text-sky-300">
-                          <Wifi className="w-4 h-4 flex-shrink-0" />
-                          <div className="min-w-0 flex-1">
-                            <div className="text-[10px] uppercase font-bold text-sky-700/80 dark:text-sky-300/80">
-                              {l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}
-                            </div>
-                            <div className="text-xs font-bold truncate">
-                              {insights.internet.mobileSpeedMbps} Mbps
-                            </div>
+                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-sky-50/60 dark:bg-sky-950/25 border border-sky-500/20 text-sky-900 dark:text-sky-200">
+                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-sky-700/80 dark:text-sky-300/80">
+                            <Wifi className="w-3.5 h-3.5 flex-shrink-0" />
+                            <span>{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono">
+                            {insights.internet.mobileSpeedMbps} Mbps
                           </div>
                         </div>
 
                         {/* 5. Günlük Bütçe (Daily Budget) */}
-                        <div className="flex items-center gap-2 p-2 rounded-xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-500/20 text-amber-800 dark:text-amber-300">
-                          <DollarSign className="w-4 h-4 flex-shrink-0" />
-                          <div className="min-w-0 flex-1">
-                            <div className="text-[10px] uppercase font-bold text-amber-700/80 dark:text-amber-300/80">
-                              {l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}
-                            </div>
-                            <div className="text-xs font-bold truncate" title={insights.livingCosts.dailyBudgetBackpackerUsd}>
-                              {insights.livingCosts.dailyBudgetBackpackerUsd}
-                            </div>
+                        <div className="flex flex-col justify-between p-2.5 rounded-xl bg-amber-50/60 dark:bg-amber-950/25 border border-amber-500/20 text-amber-900 dark:text-amber-200">
+                          <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-amber-700/80 dark:text-amber-300/80">
+                            <DollarSign className="w-3.5 h-3.5 flex-shrink-0" />
+                            <span>{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
+                          </div>
+                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono">
+                            {insights.livingCosts.dailyBudgetBackpackerUsd.replace(/\s+/g, ' ').trim()}
                           </div>
                         </div>
                       </div>
 
-                      {/* Action Buttons Row */}
-                      <div className="flex items-center justify-between sm:justify-end gap-2 pt-2 border-t border-slate-100 dark:border-slate-800/80 mt-1">
+                      {/* Action Buttons Row (Symmetrical, Single Line) */}
+                      <div className="flex items-center justify-between gap-2 pt-3 border-t border-slate-100 dark:border-white/5 mt-1">
                         <div className="flex items-center gap-2 flex-wrap">
                           <button
                             type="button"
@@ -890,7 +882,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               e.stopPropagation();
                               openDossier(item.c);
                             }}
-                            className="btn-nubair-primary min-h-[44px] py-2 px-4 text-xs font-bold whitespace-nowrap shadow-xs touch-target-min flex items-center gap-1.5"
+                            className="btn-nubair-primary min-h-[40px] py-2 px-4 text-xs font-bold whitespace-nowrap shadow-xs cursor-pointer flex items-center gap-1.5"
                             title={l('Kapsamlı Ülke Dosyası ve Gezi Rotasını Aç', 'Open Full Country Dossier & Travel Itinerary', 'Länderdossier & Reiseroute öffnen', 'Abrir guía completa 360°', 'Открыть полное досье 360°')}
                           >
                             <BookOpen className="w-3.5 h-3.5" />
@@ -901,36 +893,36 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
-                              setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
-                            }}
-                            className="btn-nubair-secondary min-h-[44px] py-2 px-3.5 text-xs touch-target-min flex items-center gap-1.5"
-                            title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden', 'Informar cambio o error', 'Сообщить об ошибке')}
-                          >
-                            <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
-                            <span className="hidden sm:inline">{t.reportChange}</span>
-                          </button>
-
-                          <button
-                            type="button"
-                            onClick={(e) => {
-                              e.stopPropagation();
                               const geo = GEO_DATA[item.c];
                               const q = geo ? `${geo.capital}, ${countryName}` : countryName;
                               window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
                             }}
-                            className="btn-nubair-secondary min-h-[44px] py-2 px-3.5 text-xs touch-target-min flex items-center gap-1.5"
+                            className="btn-nubair-secondary min-h-[40px] py-2 px-3 text-xs cursor-pointer flex items-center gap-1.5"
                             title={l("Google Haritalar'da Canlı Aç", 'Open Live in Google Maps', 'Live auf Google Maps öffnen', 'Abrir en Google Maps', 'Открыть на Google Maps')}
                           >
                             <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
                             <span>{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</span>
                             <ExternalLink className="w-3 h-3 opacity-60" />
                           </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
+                            }}
+                            className="btn-nubair-secondary min-h-[40px] py-2 px-3 text-xs cursor-pointer flex items-center gap-1.5"
+                            title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden', 'Informar cambio o error', 'Сообщить об ошибке')}
+                          >
+                            <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
+                            <span className="hidden sm:inline">{t.reportChange}</span>
+                          </button>
                         </div>
 
                         <button
                           type="button"
                           onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                          className="min-w-[44px] min-h-[44px] p-2.5 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors flex items-center justify-center touch-target-min"
+                          className="min-w-[40px] min-h-[40px] p-2 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors flex items-center justify-center"
                           aria-label={l('Detayları aç', 'Toggle details', 'Details ein-/ausblenden', 'Ver detalles', 'Свернуть/Развернуть')}
                         >
                           <ChevronDown
@@ -1646,8 +1638,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
         )}
         </div>
 
-        {/* Right Column: Desktop Quick Tool Cards (Matching Mockup 'Masaüstü') */}
+        {/* Right Column: Desktop Quick Tool Cards & Interactive Widgets */}
         <aside className="hidden lg:flex lg:col-span-4 flex-col gap-3.5 sticky top-24">
+          {/* Live Interactive Widgets: World Clock & FX Converter */}
+          <WorldClockWidget />
+          <CurrencyWidget />
+
           <div className="p-1 rounded-2xl bg-slate-100/80 dark:bg-slate-900/40 border border-slate-200/80 dark:border-white/10 text-xs font-bold text-slate-500 dark:text-slate-400 px-3 py-1.5 flex items-center justify-between">
             <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
             <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 px-1.5 py-0.5 rounded font-bold">2026</span>

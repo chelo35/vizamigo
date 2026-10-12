@@ -18,7 +18,7 @@ interface Props {
   statValue?: number | string;
 }
 
-/** Dark hero + overlapping white search card (Booking / Skyscanner pattern). Mobile first. */
+/** Dark hero + overlapping search/filter bar (Unified desktop header search). */
 export const HomeHero: React.FC<Props> = ({
   title, subtitle, passportLabel, onPassportClick, mode, onModeChange, modeLabels,
   search, onSearchChange, searchLabel = 'Ülke ara', searchPlaceholder = 'Japonya, Tayland, Almanya…',
@@ -35,7 +35,7 @@ export const HomeHero: React.FC<Props> = ({
         <button
           type="button"
           onClick={onPassportClick}
-          className="min-h-[44px] rounded-full bg-teal-600 px-4 text-[13px] font-semibold text-white cursor-pointer"
+          className="min-h-[40px] rounded-full bg-teal-600 px-4 text-[13px] font-semibold text-white cursor-pointer"
         >
           {passportLabel}
         </button>
@@ -51,8 +51,8 @@ export const HomeHero: React.FC<Props> = ({
       </svg>
     </div>
 
-    {/* Floating Search & Filter Bar (Single Horizontal Row on Desktop, Matching Mockup) */}
-    <div className="relative -mt-12 sm:-mt-14 mx-4 sm:mx-6 rounded-2xl bg-white p-3 sm:p-4 shadow-xl shadow-slate-900/15 dark:bg-slate-850 border border-slate-100 dark:border-white/10 lg:flex lg:items-center lg:gap-4">
+    {/* Floating Action & Filter Bar (Single Horizontal Row on Desktop, Non-Duplicative) */}
+    <div className="relative -mt-12 sm:-mt-14 mx-4 sm:mx-6 rounded-2xl bg-white p-3 sm:p-4 shadow-xl shadow-slate-900/15 dark:bg-slate-850 border border-slate-100 dark:border-white/10 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3 lg:gap-4">
       {/* Mode Switcher Tabs */}
       <div role="tablist" className="flex gap-1.5 rounded-xl bg-slate-100 dark:bg-white/10 p-1 lg:w-auto shrink-0">
         {(['all', 'where'] as const).map((m) => (
@@ -73,8 +73,8 @@ export const HomeHero: React.FC<Props> = ({
         ))}
       </div>
 
-      {/* Search Input Box */}
-      <label className="mt-2.5 lg:mt-0 flex-1 flex items-center gap-2.5 rounded-xl border border-slate-200 dark:border-white/15 px-3.5 py-1.5 focus-within:border-teal-500 dark:focus-within:border-teal-400 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all bg-slate-50/50 dark:bg-white/[0.03]">
+      {/* Search Input Box: strictly mobile only (lg:hidden) to avoid duplicate search inputs on desktop */}
+      <label className="lg:hidden flex-1 flex items-center gap-2.5 rounded-xl border border-slate-200 dark:border-white/15 px-3.5 py-1.5 focus-within:border-teal-500 dark:focus-within:border-teal-400 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all bg-slate-50/50 dark:bg-white/[0.03]">
         <Search className="h-4 w-4 text-slate-400 shrink-0" aria-hidden="true" />
         <span className="sr-only">{searchLabel}</span>
         <input
@@ -94,9 +94,25 @@ export const HomeHero: React.FC<Props> = ({
         )}
       </label>
 
+      {/* On desktop: Active filter badge if user typed in top search bar */}
+      {search && (
+        <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-teal-50 dark:bg-teal-950/40 border border-teal-200/80 dark:border-teal-800/60 text-xs font-bold text-teal-800 dark:text-teal-300">
+          <Search className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+          <span>Filtre: "{search}"</span>
+          <button
+            type="button"
+            onClick={() => onSearchChange('')}
+            className="p-0.5 hover:text-rose-600 cursor-pointer font-bold text-sm ml-1"
+            title="Aramayı Temizle"
+          >
+            ✕
+          </button>
+        </div>
+      )}
+
       {/* Visa-free / ID counter on right (Mockup '[XX]' counter) */}
       {statValue !== undefined && (
-        <div className="mt-3 lg:mt-0 flex items-center justify-between lg:justify-end gap-2.5 shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-100 dark:border-white/5">
+        <div className="flex items-center justify-between lg:justify-end gap-2.5 shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-100 dark:border-white/5">
           <span className="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
             {statLabel || 'Vizesiz veya kimlikle'}:
           </span>
