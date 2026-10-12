@@ -31,9 +31,16 @@ export class ErrorBoundary extends Component<Props, State> {
             ⚠️
           </div>
           <h1 className="text-2xl font-black mb-2 tracking-tight">Beklenmeyen Bir Hata Oluştu</h1>
-          <p className="text-slate-400 text-sm max-w-md mb-6">
+          <p className="text-slate-400 text-sm max-w-md mb-4">
             Arayüz yüklenirken geçici bir hata meydana geldi. Sayfayı yenileyerek deneyebilirsiniz.
           </p>
+          {import.meta.env?.DEV && this.state.error && (
+            <pre id="error-details" className="text-xs text-rose-300 bg-black/60 border border-rose-500/30 p-4 rounded-xl max-w-2xl overflow-auto text-left mb-6 font-mono whitespace-pre-wrap">
+              {this.state.error.name}: {this.state.error.message}
+              {"\n"}
+              {this.state.error.stack}
+            </pre>
+          )}
           <button
             type="button"
             onClick={() => {

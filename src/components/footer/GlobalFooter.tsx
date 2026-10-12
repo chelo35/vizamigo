@@ -120,7 +120,8 @@ export const GlobalFooter: React.FC<Props> = ({
   setActiveTab,
   onOpenPackingList,
   onOpenTippingCalc,
-  onOpenTimezoneOverlap
+  onOpenTimezoneOverlap,
+  onOpenGlobalRadar
 }) => {
   const { language, l } = useI18n();
   const { user, isAuthenticated, openAuthModal } = useAuth();
