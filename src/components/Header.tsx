@@ -16,7 +16,10 @@ import {
   DollarSign,
   Globe,
   Sparkles,
-  Compass
+  Compass,
+  Route,
+  Calendar,
+  ShieldAlert
 } from 'lucide-react';
 import { getFlag, getCountryName } from '../data/passportData';
 import { useI18n, SUPPORTED_LANGUAGES } from '../data/i18n';
@@ -258,36 +261,29 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         </div>
 
-        {/* Center Section: Desktop Horizontal Navigation Links (Matching Mockup 'Masaüstü') */}
-        <nav className="hidden lg:flex items-center gap-1 xl:gap-2 mx-auto" aria-label="Desktop Navigation">
-          {[
-            { key: 'explore' as TabKey, label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны') },
-            { key: 'plan' as TabKey, label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты') },
-            { key: 'track' as TabKey, label: l('Schengen 90/180', 'Schengen 90/180', 'Tage-Tracker', 'Calculadora Schengen', 'Калькулятор Шенгена') },
-            { key: 'profile' as TabKey, label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек') },
-            { key: 'consular' as TabKey, label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'), crisis: true },
-          ].map((item) => {
-            const isActive = activeTab === item.key;
-            return (
+        {/* Center Section: Prominent, Clearly Visible Desktop Search Bar */}
+        <div className="hidden md:flex flex-1 max-w-md lg:max-w-xl xl:max-w-2xl mx-3 lg:mx-6">
+          <label className="relative w-full flex items-center">
+            <Search className="w-4 h-4 text-slate-400 absolute left-4 pointer-events-none" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => onSearchChange?.(e.target.value)}
+              placeholder={searchPlaceholder}
+              className="w-full pl-11 pr-10 py-2.5 rounded-full text-xs sm:text-sm font-medium bg-slate-100/90 dark:bg-slate-900/80 border border-slate-200/90 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500/70 focus:bg-white dark:focus:bg-[#0c101d] shadow-2xs transition-all"
+            />
+            {searchQuery && (
               <button
-                key={item.key}
                 type="button"
-                onClick={() => onSelectTab?.(item.key)}
-                className={`px-3.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-                  isActive
-                    ? item.crisis
-                      ? 'bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30 shadow-xs'
-                      : 'bg-teal-600 text-white shadow-xs'
-                    : item.crisis
-                    ? 'text-red-600/80 hover:text-red-600 hover:bg-red-500/10'
-                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-white/5'
-                }`}
+                onClick={() => onSearchChange?.('')}
+                className="absolute right-3.5 p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs font-bold cursor-pointer"
+                title={l('Aramayı Temizle', 'Clear Search', 'Suche löschen', 'Limpiar búsqueda', 'Очистить поиск')}
               >
-                {item.label}
+                <X className="w-3.5 h-3.5" />
               </button>
-            );
-          })}
-        </nav>
+            )}
+          </label>
+        </div>
 
         {/* Right Section: Global Tools, Language, Theme & Profile */}
         <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
@@ -758,6 +754,41 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Dedicated Desktop Sub-Header Navigation Row (Symmetrical, Spacious & Beautiful) */}
+      <nav className="hidden lg:flex w-full border-t border-slate-200/70 dark:border-white/[0.08] bg-slate-50/70 dark:bg-black/20" aria-label="Desktop Navigation">
+        <div className="w-full max-w-5xl mx-auto px-4 py-2 flex items-center justify-center gap-2 xl:gap-3">
+          {[
+            { key: 'explore' as TabKey, icon: Compass, label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны') },
+            { key: 'plan' as TabKey, icon: Route, label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты') },
+            { key: 'track' as TabKey, icon: Calendar, label: l('Schengen 90/180', 'Schengen 90/180', 'Tage-Tracker', 'Calculadora Schengen', 'Калькулятор Шенгена') },
+            { key: 'profile' as TabKey, icon: User, label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек') },
+            { key: 'consular' as TabKey, icon: ShieldAlert, label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'), crisis: true },
+          ].map((item) => {
+            const Icon = item.icon;
+            const isActive = activeTab === item.key;
+            return (
+              <button
+                key={item.key}
+                type="button"
+                onClick={() => onSelectTab?.(item.key)}
+                className={`flex items-center gap-2 px-4 xl:px-5 py-2 rounded-xl text-xs xl:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
+                  isActive
+                    ? item.crisis
+                      ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30 shadow-xs'
+                      : 'bg-teal-600 text-white shadow-xs'
+                    : item.crisis
+                    ? 'text-rose-600/80 hover:text-rose-600 hover:bg-rose-500/10'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-white/5'
+                }`}
+              >
+                <Icon className={`w-4 h-4 ${isActive ? (item.crisis ? 'text-rose-600 dark:text-rose-400' : 'text-white') : (item.crisis ? 'text-rose-500/70' : 'text-slate-400 dark:text-slate-500')}`} />
+                <span>{item.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </nav>
 
       {/* DEDICATED FULL-WIDTH MOBILE SEARCH ROW:
           Completely solves the cramped search issue where text was cut off on small screens */}
