@@ -55,6 +55,7 @@ import { useI18n } from '../data/i18n';
 import { getCountryVisual } from '../data/countryVisuals';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { WorldClockWidget } from './widgets/WorldClockWidget';
+import { WeatherWidget } from './widgets/WeatherWidget';
 import { CurrencyWidget } from './widgets/CurrencyWidget';
 
 import { TabKey } from './Navigation';
@@ -499,12 +500,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </div>
             )}
 
-            {/* Horizontal Filter Chips */}
-            <div className="flex items-center gap-2.5 overflow-x-auto pb-1 scrollbar-none">
+            {/* Horizontal Filter Chips (Mobile-First Smooth Scroll Strip, Zero Overlapping) */}
+            <div className="w-full max-w-full overflow-x-auto touch-pan-x flex items-center gap-2 pb-2 pt-0.5 scrollbar-none no-scrollbar">
               <button
                 type="button"
                 onClick={() => setFilter('all')}
-                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                   filter === 'all'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -516,7 +517,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('id')}
-                  className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                  className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                     filter === 'id'
                       ? 'tab-chip-active'
                       : 'tab-chip-inactive'
@@ -528,7 +529,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('free')}
-                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                   filter === 'free'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -539,7 +540,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('evisa')}
-                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                   filter === 'evisa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -550,7 +551,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('voa')}
-                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                   filter === 'voa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -562,7 +563,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('eta')}
-                  className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                  className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                     filter === 'eta'
                       ? 'tab-chip-active'
                       : 'tab-chip-inactive'
@@ -574,7 +575,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('visa')}
-                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
                   filter === 'visa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -622,11 +623,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </button>
           </div>
 
-      {/* Top Travel Command Suite: World Clock, FX Converter & Quick Tools */}
+      {/* Top Travel Command Suite: World Clock, Live Weather & FX Converter */}
       <section className="space-y-4 mb-6" aria-label="Travel Widgets and Tools">
-        {/* Live Interactive Widgets: World Clock & FX Converter Side-by-Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Live Interactive Widgets: World Clock, Live Weather & FX Converter Side-by-Side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <WorldClockWidget />
+          <WeatherWidget />
           <CurrencyWidget />
         </div>
 
@@ -822,15 +824,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 {/* Modern Symmetrical Country Card Layout */}
                 <div className="w-full p-4 sm:p-5 lg:p-6 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
                   <div className="flex flex-col md:flex-row md:items-stretch gap-4 sm:gap-5">
-                    {/* 1. Landmark Scenic Thumbnail (Symmetrical full-height desktop image) */}
+                    {/* 1. Landmark Scenic Thumbnail (Strictly uniform locked dimensions across all cards) */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-56 lg:w-64 min-h-[200px] md:min-h-full self-stretch rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-60 lg:w-64 h-52 md:h-[224px] self-start rounded-2xl shadow-xs shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
-                        className="country-thumbnail-image group-hover/thumb:scale-105 transition-transform duration-500 w-full h-full object-cover"
+                        className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500"
                         loading="lazy"
                         decoding="async"
                         width="480"
@@ -855,10 +857,10 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
                     </div>
 
-                    {/* 2. Main Details & Symmetrical Grid Area */}
-                    <div className="flex-1 min-w-0 flex flex-col justify-between gap-3">
+                    {/* 2. Main Details & Symmetrical Grid Area (Uniform locked height on desktop) */}
+                    <div className="flex-1 min-w-0 flex flex-col justify-between gap-2.5 md:h-[224px]">
                       {/* Top Header Row: Country Name + Badges + Traveler Score */}
-                      <div className="flex flex-wrap items-center justify-between gap-2.5">
+                      <div className="flex flex-wrap items-center justify-between gap-2">
                         <div
                           onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
                           className="flex flex-wrap items-center gap-2 sm:gap-2.5 cursor-pointer"
@@ -902,74 +904,78 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       </div>
 
-                      {/* Highlights Row (Tags) */}
-                      {highlights.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1.5">
-                          {highlights.map((tag, idx) => (
+                      {/* Highlights Row (Tags - Single clean non-wrapping row, fixed height) */}
+                      <div className="flex items-center gap-1.5 h-6 overflow-hidden">
+                        {highlights.length > 0 ? (
+                          highlights.map((tag, idx) => (
                             <span
                               key={idx}
-                              className="inline-flex items-center text-[11px] font-bold px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700/60"
+                              className="inline-flex items-center text-[11px] font-bold px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700/60 shrink-0 whitespace-nowrap"
                             >
                               {tag}
                             </span>
-                          ))}
-                        </div>
-                      )}
+                          ))
+                        ) : (
+                          <span className="text-[11px] font-medium text-slate-400 dark:text-slate-500 italic truncate">
+                            {l('Doğrulanmış küresel seyahat bilgileri', 'Verified global mobility specs', 'Verifizierte Reisedaten')}
+                          </span>
+                        )}
+                      </div>
 
-                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (Symmetrical 5-Column Grid, Zero Color Discordance) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3 mt-2">
+                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (Symmetrical 5-Column Grid, Locked Height) */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-2.5">
                         {/* 1. Başkent (Capital) */}
-                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <span className="text-xs shrink-0">🏛️</span>
                             <span className="truncate">{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug truncate" title={geography.capital}>
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug truncate" title={geography.capital}>
                             {geography.capital}
                           </div>
                         </div>
 
                         {/* 2. Para Birimi (Currency) */}
-                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <DollarSign className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug truncate">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug truncate">
                             {geography.currencyCode} <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">({geography.currencySymbol})</span>
                           </div>
                         </div>
 
                         {/* 3. Günlük Bütçe (Daily Budget) */}
-                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <CreditCard className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug font-mono whitespace-nowrap">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug font-mono whitespace-nowrap">
                             {insights.livingCosts.dailyBudgetBackpackerUsd.replace(/\s+/g, ' ').trim()}
                           </div>
                         </div>
 
                         {/* 4. Güvenlik (Safety) */}
-                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <Shield className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug flex items-center gap-1.5">
                             <span>{insights.safety.safetyScore} / 100</span>
                             <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate">· {insights.safety.safetyLevel}</span>
                           </div>
                         </div>
 
                         {/* 5. İnternet (Internet Speed) */}
-                        <div className="col-span-2 sm:col-span-2 lg:col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="col-span-2 sm:col-span-2 lg:col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <Wifi className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug font-mono flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug font-mono flex items-center gap-1.5">
                             <span>{insights.internet.mobileSpeedMbps} Mbps</span>
                             <span className="text-[11px] font-sans font-semibold text-slate-500 dark:text-slate-400 truncate">
                               {insights.internet.mobileSpeedMbps >= 50
