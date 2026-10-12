@@ -27,6 +27,9 @@ import { AuthModal } from './components/AuthModal';
 import { RegulationAuditModal } from './components/RegulationAuditModal';
 import { ReportChangeModal } from './components/ReportChangeModal';
 import { GlobalFooter } from './components/footer/GlobalFooter';
+import { PackingListModal } from './components/tools/PackingListModal';
+import { TippingCalculatorModal } from './components/tools/TippingCalculatorModal';
+import { TimezoneOverlapModal } from './components/tools/TimezoneOverlapModal';
 import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
@@ -87,6 +90,9 @@ function AppContent() {
   const [isLegalModalOpen, setIsLegalModalOpen] = useState<boolean>(false);
   const [isAuditModalOpen, setIsAuditModalOpen] = useState<boolean>(false);
   const [reportingModalData, setReportingModalData] = useState<{ code: string; name: string } | null>(null);
+  const [isPackingListOpen, setIsPackingListOpen] = useState<boolean>(false);
+  const [isTippingCalcOpen, setIsTippingCalcOpen] = useState<boolean>(false);
+  const [isTimezoneOverlapOpen, setIsTimezoneOverlapOpen] = useState<boolean>(false);
 
   // Theme
   const [isDark, setIsDark] = useState<boolean>(() => {
@@ -243,6 +249,9 @@ function AppContent() {
                     handleSelectTab(tab);
                     if (tab === 'plan') setPlanSubTab('route');
                   }}
+                  onOpenPackingList={() => setIsPackingListOpen(true)}
+                  onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                  onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
                 />
               ) : (
                 <WhereCanIGoTab currentPassport={currentPassport} />
@@ -411,6 +420,9 @@ function AppContent() {
           }}
           onOpenLegalModal={() => setIsLegalModalOpen(true)}
           setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
+          onOpenPackingList={() => setIsPackingListOpen(true)}
+          onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+          onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
         />
       </main>
       </div>
@@ -450,6 +462,24 @@ function AppContent() {
         defaultCountryCode={reportingModalData?.code}
         defaultCountryName={reportingModalData?.name}
         currentPassport={currentPassport}
+      />
+
+      {/* Smart Packing Checklist Modal */}
+      <PackingListModal
+        isOpen={isPackingListOpen}
+        onClose={() => setIsPackingListOpen(false)}
+      />
+
+      {/* Global Tipping & Bill Splitter Modal */}
+      <TippingCalculatorModal
+        isOpen={isTippingCalcOpen}
+        onClose={() => setIsTippingCalcOpen(false)}
+      />
+
+      {/* 24H Nomad Timezone Overlap Matrix Modal */}
+      <TimezoneOverlapModal
+        isOpen={isTimezoneOverlapOpen}
+        onClose={() => setIsTimezoneOverlapOpen(false)}
       />
     </div>
   );

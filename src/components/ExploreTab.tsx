@@ -28,7 +28,10 @@ import {
   Flag,
   ShieldCheck,
   BookOpen,
-  Route
+  Route,
+  Luggage,
+  Coins,
+  Laptop
 } from 'lucide-react';
 import {
   CountryItem,
@@ -68,6 +71,9 @@ interface ExploreTabProps {
   initialCountryCode?: string | null;
   onCountrySelect?: (code: string | null) => void;
   onNavigateTab?: (tab: TabKey) => void;
+  onOpenPackingList?: () => void;
+  onOpenTippingCalc?: () => void;
+  onOpenTimezoneOverlap?: () => void;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -125,7 +131,10 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   onSearchChange,
   initialCountryCode = null,
   onCountrySelect,
-  onNavigateTab
+  onNavigateTab,
+  onOpenPackingList,
+  onOpenTippingCalc,
+  onOpenTimezoneOverlap
 }) => {
   const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
@@ -719,6 +728,69 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 </div>
                 <p className="text-[11px] text-rose-700 dark:text-rose-300 mt-0.5 truncate">
                   {l('7/24 Acil kriz masası & pasaport', '24/7 Diplomatic crisis hotline', '24/7 Notfallkonsole', 'Línea de emergencia 24/7', 'Круглосуточная помощь')}
+                </p>
+              </div>
+            </button>
+          </div>
+
+          {/* Practical Traveler & Nomad Tools Row (Packing, Tipping, Timezone Overlap) */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+            {/* Tool Card 5: Akıllı Bavul Listesi */}
+            <button
+              type="button"
+              onClick={onOpenPackingList}
+              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Luggage className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Akıllı Bavul Listesi', 'Smart Packing List', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}</span>
+                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                  {l('Seyahat tipine özel liste & takip', 'Trip style packing checklist', 'Packliste nach Reisestil', 'Lista personalizada', 'Чек-лист для поездки')}
+                </p>
+              </div>
+            </button>
+
+            {/* Tool Card 6: Bahşiş & Masraf Bölüşücü */}
+            <button
+              type="button"
+              onClick={onOpenTippingCalc}
+              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-amber-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Coins className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Bahşiş & Masraf Bölüşücü', 'Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}</span>
+                  <span className="text-amber-600 dark:text-amber-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                  {l('Ülke kurallı bahşiş & kişi başı hesap', 'Country tipping etiquette & split', 'Trinkgeld-Etikette & Aufteilung', 'Propina y división de cuenta', 'Чаевые по странам')}
+                </p>
+              </div>
+            </button>
+
+            {/* Tool Card 7: Toplantı & Saat Çakışması */}
+            <button
+              type="button"
+              onClick={onOpenTimezoneOverlap}
+              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-indigo-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Laptop className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Toplantı Saat Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}</span>
+                  <span className="text-indigo-600 dark:text-indigo-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                  {l('Göçebeler için altın çalışma saatleri', 'Golden work hours for nomads', 'Goldene Arbeitsstunden für Remote', 'Horas ideales para nómadas', 'Часы для созвонов')}
                 </p>
               </div>
             </button>

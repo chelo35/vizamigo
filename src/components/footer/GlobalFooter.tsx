@@ -24,6 +24,9 @@ interface Props {
   onSelectCountry?: (countryCode: string) => void;
   onOpenLegalModal: () => void;
   setActiveTab?: (tab: string) => void;
+  onOpenPackingList?: () => void;
+  onOpenTippingCalc?: () => void;
+  onOpenTimezoneOverlap?: () => void;
 }
 
 type PopularCategory = 'visa_free' | 'national_id' | 'schengen' | 'metropolises' | 'digital_nomad' | 'evisa';
@@ -113,7 +116,10 @@ const POPULAR_DESTINATIONS: Record<PopularCategory, DestinationChip[]> = {
 export const GlobalFooter: React.FC<Props> = ({
   onSelectCountry,
   onOpenLegalModal,
-  setActiveTab
+  setActiveTab,
+  onOpenPackingList,
+  onOpenTippingCalc,
+  onOpenTimezoneOverlap
 }) => {
   const { language, l } = useI18n();
   const { user, isAuthenticated, openAuthModal } = useAuth();
@@ -426,6 +432,33 @@ export const GlobalFooter: React.FC<Props> = ({
                 className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors"
               >
                 {l('Pasaport Defterim & Seyahatlerim', 'My Passport Wallet & Trips', 'Mein Passetui & Reisen', 'Mi Cartera de Pasaportes', 'Мой паспортный кошелек')}
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                onClick={onOpenPackingList}
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-teal-700 dark:text-teal-300 font-semibold"
+              >
+                🎒 {l('Akıllı Bavul Hazırlık Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                onClick={onOpenTippingCalc}
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-amber-700 dark:text-amber-300 font-semibold"
+              >
+                💵 {l('Akıllı Bahşiş & Masraf Bölüşücü', 'Smart Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                onClick={onOpenTimezoneOverlap}
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-indigo-700 dark:text-indigo-300 font-semibold"
+              >
+                ⚡ {l('Zaman Dilimi & Toplantı Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}
               </button>
             </li>
           </ul>

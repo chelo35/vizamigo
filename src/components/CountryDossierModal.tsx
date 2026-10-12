@@ -45,7 +45,10 @@ import {
   Percent,
   Smartphone,
   Coins,
-  ArrowDownUp
+  ArrowDownUp,
+  Droplets,
+  ShieldAlert,
+  Receipt
 } from 'lucide-react';
 import {
   getCountryName,
@@ -58,6 +61,7 @@ import {
 } from '../data/passportData';
 import { GEO_DATA } from '../data/geoData';
 import { getCountryInsights } from '../data/countryInsights';
+import { getCountryTravelIntelligence } from '../data/countryTravelIntelligence';
 import { getCountryEncyclopedia, CountryEncyclopediaData } from '../data/countryEncyclopedia';
 import { getCountryGeography, CountryGeographyData } from '../data/countryGeography';
 import { getCountryItinerary, CountryTravelItinerary } from '../data/countryItineraries';
@@ -187,10 +191,12 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
 
     const geography = getCountryGeography(code, language);
     const itinerary = getCountryItinerary(code, language);
+    const countryName = getCountryName(code, language);
+    const travelIntel = getCountryTravelIntelligence(code, countryName);
 
     return {
       code,
-      name: getCountryName(code, language),
+      name: countryName,
       item,
       geo,
       insights,
@@ -198,13 +204,14 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
       detailedInfo,
       verStatus,
       geography,
-      itinerary
+      itinerary,
+      travelIntel
     };
   }, [countryCode, currentPassport, language, l]);
 
   if (!isOpen || !countryData) return null;
 
-  const { code, name, item, geo, insights, encyclopedia, detailedInfo, verStatus, geography, itinerary } = countryData;
+  const { code, name, item, geo, insights, encyclopedia, detailedInfo, verStatus, geography, itinerary, travelIntel } = countryData;
 
   const handleCopy = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
@@ -1636,6 +1643,156 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                   <div className="text-[10px] text-slate-400 pt-2 border-t border-slate-100 dark:border-white/5">
                     💡 <b>{l('Kültür Hapı:', 'Cultural Pill:', 'Kultur-Tipp:')}</b> {itinerary?.signatureGastronomy.diningAdvice || l('Bahşiş ödemelerinde kart yerine nakit yerel para birimi her zaman daha makbuldür.', 'Cash in local currency is preferred for tips.', 'Trinkgeld in bar ist bevorzugt.')}
+                  </div>
+                </div>
+              </div>
+
+              {/* 5. SAHA İSTİHBARATI: SU GÜVENLİĞİ, TAX-FREE & DOLANDIRICILIK RADARI */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 pt-2">
+                {/* 5A: MUSLUK SUYU & SAĞLIK GÜVENLİĞİ (lg:col-span-6) */}
+                <div className="lg:col-span-6 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-4 rounded-[24px]">
+                  <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/10 pb-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className={`w-8 h-8 rounded-xl flex items-center justify-center text-white shadow-sm ${
+                        travelIntel.waterAndHealth.tapWaterSafe
+                          ? 'bg-gradient-to-br from-emerald-500 to-teal-600'
+                          : 'bg-gradient-to-br from-amber-500 to-rose-600'
+                      }`}>
+                        <Droplets className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {l('Musluk Suyu & Sağlık Güvenliği', 'Tap Water & Health Security', 'Leitungswasser & Gesundheit')}
+                        </h3>
+                        <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                          {l('İçilebilirlik durumu, aşılar ve acil tıp', 'Drinkability, vaccines & emergency medical', 'Trinkbarkeit, Impfungen & Notfall')}
+                        </div>
+                      </div>
+                    </div>
+                    <span className={`text-xs px-2.5 py-1 rounded-full font-bold border ${
+                      travelIntel.waterAndHealth.tapWaterSafe
+                        ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20'
+                        : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20'
+                    }`}>
+                      {travelIntel.waterAndHealth.tapWaterSafe
+                        ? l('🚰 İçilebilir Musluk Suyu', '🚰 Safe Tap Water', '🚰 Trinkwasser')
+                        : l('🚱 Yalnızca Şişe Suyu', '🚱 Bottled Water Only', '🚱 Nur Flaschenwasser')}
+                    </span>
+                  </div>
+
+                  <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                    {travelIntel.waterAndHealth.tapWaterDesc}
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-2.5 pt-1 text-xs">
+                    <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                      <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">
+                        {l('Tavsiye Edilen Aşılar', 'Recommended Vaccines', 'Empfohlene Impfungen')}
+                      </span>
+                      <span className="font-semibold text-slate-800 dark:text-slate-200 text-[11px] leading-tight block">
+                        {travelIntel.waterAndHealth.vaccines.join(', ')}
+                      </span>
+                    </div>
+
+                    <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                      <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">
+                        {l('Acil Ambulans / Tıp', 'Emergency Medical', 'Notruf Krankenwagen')}
+                      </span>
+                      <span className="font-mono font-black text-rose-600 dark:text-rose-400 text-sm block">
+                        📞 {travelIntel.waterAndHealth.emergencyAmbulance}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 5B: TAX-FREE ALIŞVERİŞ & KDV İADESİ (lg:col-span-6) */}
+                <div className="lg:col-span-6 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-4 rounded-[24px]">
+                  <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/10 pb-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center shadow-sm">
+                        <Receipt className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {l('Tax-Free Alışveriş & KDV İadesi', 'Tax-Free Shopping & VAT Refund', 'Tax-Free & MwSt-Rückerstattung')}
+                        </h3>
+                        <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                          {l('Havalimanı iade oranları ve minimum harcama', 'Airport refund rates and minimum threshold', 'Flughafen-Rückerstattung & Schwellen')}
+                        </div>
+                      </div>
+                    </div>
+                    <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono">
+                      {travelIntel.taxFree.vatRefundPercent}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2.5 text-xs">
+                    <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                      <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">
+                        {l('Standart KDV İadesi', 'VAT Refund Rate', 'MwSt.-Satz')}
+                      </span>
+                      <span className="font-black text-slate-900 dark:text-white text-base font-mono block">
+                        {travelIntel.taxFree.vatRefundPercent}
+                      </span>
+                    </div>
+
+                    <div className="p-3 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-1">
+                      <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">
+                        {l('Min. Harcama Eşiği', 'Min. Spend Required', 'Mindestbetrag')}
+                      </span>
+                      <span className="font-bold text-slate-800 dark:text-slate-200 text-xs block">
+                        {travelIntel.taxFree.minSpend}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-[11px] text-blue-950 dark:text-blue-200 leading-relaxed">
+                    💡 <b>{l('Gümrük Hatırlatması:', 'Customs Reminder:', 'Zoll-Hinweis:')}</b> {travelIntel.taxFree.customsNote}
+                  </div>
+                </div>
+
+                {/* 5C: TURİST TUZAKLARI & DOLANDIRICILIK RADARI (lg:col-span-12) */}
+                <div className="lg:col-span-12 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-4 rounded-[24px]">
+                  <div className="flex items-center justify-between border-b border-slate-100 dark:border-white/10 pb-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-rose-500 to-red-600 text-white flex items-center justify-center shadow-sm">
+                        <ShieldAlert className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {name} {l('Turist Tuzakları & Dolandırıcılık Radarı', 'Tourist Scam Radar & Safety Alerts', 'Touristenfallen & Betrugs-Radar')}
+                        </h3>
+                        <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
+                          {l('Gezginlerin en çok karşılaştığı hileler ve korunma taktikleri', 'Most common tourist scams and how to protect yourself', 'Häufigste Betrugsmaschen & Schutztipps')}
+                        </div>
+                      </div>
+                    </div>
+                    <span className="text-xs px-2.5 py-1 rounded-full font-bold bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20">
+                      {travelIntel.touristScams.length} {l('Aktif Uyarı', 'Active Alerts', 'Aktive Warnungen')}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {travelIntel.touristScams.map((scam, idx) => (
+                      <div
+                        key={idx}
+                        className="p-4 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 hover:border-rose-400/50 transition-all space-y-2 flex flex-col justify-between"
+                      >
+                        <div className="space-y-1.5">
+                          <div className="flex items-center gap-2 font-black text-xs text-rose-700 dark:text-rose-400">
+                            <span>⚠️</span>
+                            <span>{scam.title}</span>
+                          </div>
+                          <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                            {scam.desc}
+                          </p>
+                        </div>
+
+                        <div className="pt-2 border-t border-slate-200/60 dark:border-white/5 text-[10px] text-emerald-700 dark:text-emerald-400 font-semibold bg-emerald-500/5 p-2 rounded-xl border border-emerald-500/15">
+                          🛡️ <b>{l('Nasıl Korunursunuz?', 'How to Avoid:', 'Schutzmaßnahme:')}</b> {scam.tip}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
