@@ -246,15 +246,21 @@ export const Header: React.FC<HeaderProps> = ({
             <Menu className="w-5 h-5" />
           </button>
 
-          {/* Vizamigo Brand Logo */}
+          {/* Vizamigo Brand Mascot Logo (Clicking reloads/resets to home) */}
           <button
             type="button"
-            onClick={() => onSelectTab?.('explore')}
-            className="flex items-center gap-2 cursor-pointer text-left group"
+            onClick={() => {
+              onSelectTab?.('explore');
+              window.location.href = `/${language}`;
+            }}
+            className="flex items-center gap-2.5 cursor-pointer text-left group"
+            title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}
           >
-            <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white flex items-center justify-center shadow-md shadow-[#0D9488]/20 flex-shrink-0 group-hover:scale-105 transition-transform">
-              <Compass className="w-5 h-5 text-white" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Vizamigo"
+              className="w-10 h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
+            />
             <span className="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">
               Vizamigo<span className="text-teal-500">.</span>
             </span>
@@ -761,7 +767,8 @@ export const Header: React.FC<HeaderProps> = ({
           {[
             { key: 'explore' as TabKey, icon: Compass, label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны') },
             { key: 'plan' as TabKey, icon: Route, label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты') },
-            { key: 'track' as TabKey, icon: Calendar, label: l('Schengen 90/180', 'Schengen 90/180', 'Tage-Tracker', 'Calculadora Schengen', 'Калькулятор Шенгена') },
+            { key: 'track' as TabKey, icon: Calendar, label: l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage- & Aufenthaltstracker', 'Control de Estancia y Días', 'Счетчик Дней и Пребывания') },
+            { key: 'nomad' as TabKey, icon: Sparkles, label: l('Dijital Göçebe', 'Digital Nomad', 'Digitale Nomaden', 'Nómada Digital', 'Цифровой Номад') },
             { key: 'profile' as TabKey, icon: User, label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек') },
             { key: 'consular' as TabKey, icon: ShieldAlert, label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'), crisis: true },
           ].map((item) => {

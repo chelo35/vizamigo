@@ -13,7 +13,7 @@ import { GEO_DATA } from '../data/geoData';
 export const BASE_URL = 'https://vizamigo.com';
 
 export const VALID_LANG_CODES = new Set(SUPPORTED_LANGUAGES.map(l => l.code));
-export const VALID_TABS = new Set<TabKey>(['explore', 'plan', 'track', 'profile', 'consular']);
+export const VALID_TABS = new Set<TabKey>(['explore', 'plan', 'track', 'nomad', 'profile', 'consular']);
 
 export interface ParsedRoute {
   language: SupportedLanguage;

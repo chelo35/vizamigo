@@ -84,6 +84,7 @@ export function generateSitemapXml(): string {
   const toolTabs: { tab: TabKey; priority: string; changefreq: 'daily' | 'weekly' }[] = [
     { tab: 'plan', priority: '0.85', changefreq: 'daily' },
     { tab: 'track', priority: '0.85', changefreq: 'daily' },
+    { tab: 'nomad', priority: '0.85', changefreq: 'daily' },
     { tab: 'consular', priority: '0.75', changefreq: 'weekly' },
     { tab: 'profile', priority: '0.60', changefreq: 'weekly' }
   ];

@@ -14,7 +14,7 @@ import {
 import { useI18n } from '../data/i18n';
 import { getFlag, getCountryName } from '../data/passportData';
 
-export type TabKey = 'explore' | 'plan' | 'track' | 'profile' | 'consular';
+export type TabKey = 'explore' | 'plan' | 'track' | 'nomad' | 'profile' | 'consular';
 
 interface NavigationProps {
   activeTab: TabKey;
@@ -53,13 +53,19 @@ export const Navigation: React.FC<NavigationProps> = ({
     },
     {
       key: 'track' as TabKey,
-      label: l('Schengen 90/180', 'Track 90/180', 'Tage-Tracker', 'Calculadora Schengen', 'Калькулятор Шенгена'),
-      shortLabel: t.navTrack,
+      label: l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage- & Aufenthaltstracker', 'Control de Estancia y Días', 'Счетчик Дней и Пребывания'),
+      shortLabel: l('Gün Sayacı', 'Tracker', 'Tage-Tracker', 'Estancia', 'Дни'),
       icon: Calendar
     },
     {
+      key: 'nomad' as TabKey,
+      label: l('Dijital Göçebe', 'Digital Nomad', 'Digitale Nomaden', 'Nómada Digital', 'Цифровой Номад'),
+      shortLabel: l('Göçebe', 'Nomad', 'Nomaden', 'Nómada', 'Номад'),
+      icon: Sparkles
+    },
+    {
       key: 'profile' as TabKey,
-      label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек'),
+      label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошеlek'),
       shortLabel: t.navProfile,
       icon: User
     },
@@ -96,14 +102,23 @@ export const Navigation: React.FC<NavigationProps> = ({
           <div className="relative w-72 max-w-[85vw] h-full sidebar-glass p-6 flex flex-col justify-between shadow-2xl z-10 animate-in slide-in-from-left duration-200">
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/[0.08]">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white shadow-xs">
-                    <Compass className="w-4 h-4" />
-                  </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    onSelectTab('explore');
+                    window.location.href = `/${language}`;
+                  }}
+                  className="flex items-center gap-2.5 cursor-pointer text-left group"
+                >
+                  <img
+                    src="/logo.png"
+                    alt="Vizamigo"
+                    className="w-9 h-9 object-contain rounded-full shadow-xs group-hover:scale-105 transition-transform"
+                  />
                   <span className="font-extrabold text-lg text-slate-900 dark:text-white">
                     Vizamigo<span className="text-teal-500">.</span>
                   </span>
-                </div>
+                </button>
                 <button
                   type="button"
                   onClick={onToggleMobileDrawer}

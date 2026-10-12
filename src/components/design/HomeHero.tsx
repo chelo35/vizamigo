@@ -28,7 +28,10 @@ export const HomeHero: React.FC<Props> = ({
     <div className="relative bg-slate-900 px-5 pt-6 pb-20 sm:pb-24 text-white">
       {/* Mobile Top Brand Row (hidden on desktop because main Header contains it) */}
       <div className="lg:hidden flex items-center justify-between gap-3">
-        <span className="text-xl font-extrabold tracking-tight">Vizamigo<span className="text-teal-400">.</span></span>
+        <div className="flex items-center gap-2">
+          <img src="/logo.png" alt="Vizamigo" className="w-8 h-8 object-contain rounded-full shadow-xs" />
+          <span className="text-xl font-extrabold tracking-tight">Vizamigo<span className="text-teal-400">.</span></span>
+        </div>
         <button
           type="button"
           onClick={onPassportClick}

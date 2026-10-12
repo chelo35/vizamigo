@@ -55,6 +55,8 @@ import { useI18n } from '../data/i18n';
 import { getCountryVisual } from '../data/countryVisuals';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 
+import { TabKey } from './Navigation';
+
 interface ExploreTabProps {
   currentPassport: string;
   onOpenAuditConsole?: () => void;
@@ -62,7 +64,7 @@ interface ExploreTabProps {
   onSearchChange?: (val: string) => void;
   initialCountryCode?: string | null;
   onCountrySelect?: (code: string | null) => void;
-  onNavigateTab?: (tab: 'plan' | 'track' | 'profile' | 'consular') => void;
+  onNavigateTab?: (tab: TabKey) => void;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -1673,7 +1675,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </div>
           </button>
 
-          {/* Tool Card 2: Schengen 90/180 */}
+          {/* Tool Card 2: Gün & Kalış Sayacı */}
           <button
             type="button"
             onClick={() => onNavigateTab?.('track')}
@@ -1685,20 +1687,20 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               </div>
               <div className="min-w-0 flex-1">
                 <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span>{l('Schengen 90/180 Sayacı', 'Schengen 90/180 Tracker', 'Schengen-Rechner', 'Calculadora Schengen', 'Шенген 90/180')}</span>
+                  <span>{l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage-Tracker', 'Control de Días', 'Счетчик Дней')}</span>
                   <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
-                  {l('Son 180 gündeki kalış süresi ve çıkış tarihi', 'Rolling 180-day window and safe exit date', 'Rollierende 180 Tage')}
+                  {l('90/180 gün kuralı, kalış süresi ve çıkış tarihi', 'Rolling 180-day window and safe exit date', 'Rollierende 180 Tage')}
                 </p>
               </div>
             </div>
           </button>
 
-          {/* Tool Card 3: Dijital Göçebe */}
+          {/* Tool Card 3: Dijital Göçebe (Direct Tab) */}
           <button
             type="button"
-            onClick={() => onNavigateTab?.('plan')}
+            onClick={() => onNavigateTab?.('nomad')}
             className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
           >
             <div className="flex items-center gap-3">

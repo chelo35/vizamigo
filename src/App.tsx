@@ -304,12 +304,17 @@ function AppContent() {
             </div>
           )}
 
-          {/* Tab Content: 3. TAKİP / TRACK */}
+          {/* Tab Content: 3. TAKİP / TRACK (GÜN & KALIŞ SAYACI) */}
           {activeTab === 'track' && (
             <DayCounterTab />
           )}
 
-          {/* Tab Content: 4. PROFİL & ARAÇLAR / PROFILE */}
+          {/* Tab Content: 4. DİJİTAL GÖÇEBE / NOMAD */}
+          {activeTab === 'nomad' && (
+            <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
+          )}
+
+          {/* Tab Content: 5. PROFİL & ARAÇLAR / PROFILE */}
           {activeTab === 'profile' && (
             <div className="space-y-6">
               {/* Profil Sub Tabs */}
