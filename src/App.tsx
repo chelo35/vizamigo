@@ -148,7 +148,7 @@ function AppContent() {
       </div>
 
       {/* ========================================================
-          1. PERMANENT LEFT SIDEBAR (DESKTOP: width 260px)
+          1. NAVIGATION (MOBILE DRAWER & BOTTOM BAR)
       ======================================================== */}
       <Navigation
         activeTab={activeTab}
@@ -161,10 +161,10 @@ function AppContent() {
       />
 
       {/* ========================================================
-          2. MAIN CONTENT AREA (OFFSET lg:pl-[284px])
+          2. MAIN CONTENT AREA (FULL-WIDTH LUXURY LAYOUT)
       ======================================================== */}
-      <div className="lg:pl-[284px] flex flex-col flex-1 min-h-screen w-full transition-all">
-        {/* Clean Top Context Bar */}
+      <div className="flex flex-col flex-1 min-h-screen w-full transition-all">
+        {/* Top Context & Navigation Bar (Mockup 'Masaüstü' Header) */}
         <Header
           currentPassport={currentPassport}
           onOpenPassportSelector={() => setIsPassportModalOpen(true)}
@@ -185,10 +185,11 @@ function AppContent() {
           }}
           onToggleMobileDrawer={() => setIsMobileDrawerOpen(!isMobileDrawerOpen)}
           activeTab={activeTab}
+          onSelectTab={handleSelectTab}
         />
 
-        {/* Content Body with 30%+ Increased Breathing Space */}
-        <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-8 py-6 sm:py-9 pb-32 lg:pb-16 space-y-8">
+        {/* Content Body Centered with Full Breathing Space */}
+        <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-32 lg:pb-16 space-y-6">
           {route.is404 ? (
             <NotFoundView
               language={language}

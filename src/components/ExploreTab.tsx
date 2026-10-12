@@ -246,32 +246,34 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
-      {/* View Switcher: Liste vs İnteraktif Harita (Pastel Sunset Coral Harmonies) */}
-      <div className="flex items-center justify-between gap-1.5 p-1.5 glass-panel border border-slate-200/80 dark:border-white/10 rounded-full shadow-xs">
-        <button
-          type="button"
-          onClick={() => setViewMode('list')}
-          className={`flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-full text-xs font-bold transition-all cursor-pointer ${
-            viewMode === 'list'
-              ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 border border-white/20'
-              : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
-          }`}
-        >
-          <List className="w-4 h-4" />
-          <span>{l('🗂️ Ülke Listesi & Detaylar', '🗂️ Country Directory & Details', '🗂️ Länderübersicht & Details', '🗂️ Directorio de Países y Detalles', '🗂️ Список Стран и Детали')}</span>
-        </button>
-        <button
-          type="button"
-          onClick={() => setViewMode('map')}
-          className={`flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-full text-xs font-bold transition-all cursor-pointer ${
-            viewMode === 'map'
-              ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 border border-white/20'
-              : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
-          }`}
-        >
-          <Globe className="w-4 h-4" />
-          <span>{l('🗺️ İnteraktif Dünya Haritası', '🗺️ Interactive World Map', '🗺️ Interaktive Weltkarte', '🗺️ Mapa Mundial Interactivo', '🗺️ Интерактивная Карта Мира')}</span>
-        </button>
+      {/* View Switcher: Liste vs İnteraktif Harita (Compact Pill Bar) */}
+      <div className="flex items-center justify-start gap-3">
+        <div className="inline-flex items-center gap-1 p-1 glass-panel border border-slate-200/80 dark:border-white/10 rounded-full shadow-2xs">
+          <button
+            type="button"
+            onClick={() => setViewMode('list')}
+            className={`flex items-center gap-2 py-1.5 px-3.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+              viewMode === 'list'
+                ? 'bg-teal-600 text-white shadow-xs'
+                : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
+            }`}
+          >
+            <List className="w-3.5 h-3.5" />
+            <span>{l('Ülke Listesi & Detaylar', 'Country Directory & Details', 'Länderübersicht', 'Directorio de Países', 'Список Стран')}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setViewMode('map')}
+            className={`flex items-center gap-2 py-1.5 px-3.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+              viewMode === 'map'
+                ? 'bg-teal-600 text-white shadow-xs'
+                : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
+            }`}
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span>{l('İnteraktif Dünya Haritası', 'Interactive World Map', 'Interaktive Weltkarte', 'Mapa Mundial', 'Интерактивная Карта')}</span>
+          </button>
+        </div>
       </div>
 
       {viewMode === 'map' ? (
@@ -810,15 +812,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       )}
 
                       {/* SYMMETRICAL INFO BOXES GRID (5 Key Travel Metrics in Symmetrical Columns) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 mt-1">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-2 mt-1">
                         {/* 1. Başkent (Capital) */}
                         <div className="flex items-center gap-2 p-2 rounded-xl bg-slate-50/80 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800/80">
                           <span className="text-base flex-shrink-0">🏛️</span>
-                          <div className="min-w-0">
-                            <div className="text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400">
+                          <div className="min-w-0 flex-1">
+                            <div className="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400">
                               {l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}
                             </div>
-                            <div className="text-xs font-bold text-slate-800 dark:text-slate-200 truncate">
+                            <div className="text-xs font-bold text-slate-800 dark:text-slate-200 truncate" title={geography.capital}>
                               {geography.capital}
                             </div>
                           </div>
@@ -827,12 +829,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         {/* 2. Para Birimi (Currency) */}
                         <div className="flex items-center gap-2 p-2 rounded-xl bg-purple-50/50 dark:bg-purple-950/20 border border-purple-500/20 text-purple-800 dark:text-purple-300">
                           <span className="text-base flex-shrink-0">💰</span>
-                          <div className="min-w-0">
+                          <div className="min-w-0 flex-1">
                             <div className="text-[10px] uppercase font-bold text-purple-700/80 dark:text-purple-300/80">
                               {l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}
                             </div>
-                            <div className="text-xs font-bold truncate">
-                              {geography.currencyCode} ({geography.currencySymbol})
+                            <div className="text-xs font-bold truncate" title={`${geography.currencyCode} (${geography.currencySymbol})`}>
+                              {geography.currencyCode} <span className="font-mono text-[11px] opacity-80">({geography.currencySymbol})</span>
                             </div>
                           </div>
                         </div>
@@ -840,12 +842,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         {/* 3. Güvenlik (Safety) */}
                         <div className={`flex items-center gap-2 p-2 rounded-xl border ${insights.safety.badgeColor}`}>
                           <Shield className="w-4 h-4 flex-shrink-0" />
-                          <div className="min-w-0">
+                          <div className="min-w-0 flex-1">
                             <div className="text-[10px] uppercase font-bold opacity-80">
                               {l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}
                             </div>
-                            <div className="text-xs font-bold truncate">
-                              {insights.safety.safetyScore}/100 {insights.safety.safetyLevel}
+                            <div className="text-xs font-bold truncate" title={`${insights.safety.safetyScore}/100 ${insights.safety.safetyLevel}`}>
+                              {insights.safety.safetyScore}/100 <span className="text-[10px] font-medium opacity-80 hidden 2xl:inline">· {insights.safety.safetyLevel}</span>
                             </div>
                           </div>
                         </div>
@@ -853,7 +855,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         {/* 4. İnternet (Internet Speed) */}
                         <div className="flex items-center gap-2 p-2 rounded-xl bg-sky-50/50 dark:bg-sky-950/20 border border-sky-500/20 text-sky-800 dark:text-sky-300">
                           <Wifi className="w-4 h-4 flex-shrink-0" />
-                          <div className="min-w-0">
+                          <div className="min-w-0 flex-1">
                             <div className="text-[10px] uppercase font-bold text-sky-700/80 dark:text-sky-300/80">
                               {l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}
                             </div>
@@ -866,11 +868,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         {/* 5. Günlük Bütçe (Daily Budget) */}
                         <div className="flex items-center gap-2 p-2 rounded-xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-500/20 text-amber-800 dark:text-amber-300">
                           <DollarSign className="w-4 h-4 flex-shrink-0" />
-                          <div className="min-w-0">
+                          <div className="min-w-0 flex-1">
                             <div className="text-[10px] uppercase font-bold text-amber-700/80 dark:text-amber-300/80">
                               {l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}
                             </div>
-                            <div className="text-xs font-bold truncate">
+                            <div className="text-xs font-bold truncate" title={insights.livingCosts.dailyBudgetBackpackerUsd}>
                               {insights.livingCosts.dailyBudgetBackpackerUsd}
                             </div>
                           </div>

@@ -25,8 +25,9 @@ export const HomeHero: React.FC<Props> = ({
   statLabel, statValue,
 }) => (
   <section aria-label={title} className="-mx-4 sm:mx-0 sm:rounded-3xl overflow-hidden">
-    <div className="relative bg-slate-900 px-5 pt-6 pb-24 text-white">
-      <div className="flex items-center justify-between gap-3">
+    <div className="relative bg-slate-900 px-5 pt-6 pb-20 sm:pb-24 text-white">
+      {/* Mobile Top Brand Row (hidden on desktop because main Header contains it) */}
+      <div className="lg:hidden flex items-center justify-between gap-3">
         <span className="text-xl font-extrabold tracking-tight">Vizamigo<span className="text-teal-400">.</span></span>
         <button
           type="button"
@@ -36,16 +37,21 @@ export const HomeHero: React.FC<Props> = ({
           {passportLabel}
         </button>
       </div>
-      <h1 className="mt-6 max-w-[16rem] text-[26px] font-extrabold leading-tight sm:max-w-xl sm:text-4xl">{title}</h1>
-      <p className="mt-2 max-w-[15rem] text-[13px] text-slate-300 sm:max-w-md sm:text-base">{subtitle}</p>
-      <svg className="pointer-events-none absolute right-4 top-24 h-16 w-28 sm:h-28 sm:w-72" viewBox="0 0 140 70" aria-hidden="true">
+
+      <h1 className="mt-4 lg:mt-2 max-w-[18rem] text-[26px] font-extrabold leading-tight sm:max-w-xl sm:text-4xl">{title}</h1>
+      <p className="mt-2 max-w-[17rem] text-[13px] text-slate-300 sm:max-w-md sm:text-base">{subtitle}</p>
+      
+      {/* Curved decorative dashed route arc (Mockup 'Masaüstü') */}
+      <svg className="pointer-events-none absolute right-4 top-16 sm:top-20 h-16 w-28 sm:h-28 sm:w-72" viewBox="0 0 140 70" aria-hidden="true">
         <path className="vz-route" d="M6 62 C 40 4, 100 4, 134 30" fill="none" stroke="#14B8A6" strokeWidth="2" strokeDasharray="6 6" />
         <circle className="vz-dot" cx="134" cy="30" r="5" fill="#14B8A6" />
       </svg>
     </div>
 
-    <div className="relative -mt-16 mx-4 rounded-2xl bg-white p-3.5 shadow-xl shadow-slate-900/15 dark:bg-slate-850 sm:mx-6">
-      <div role="tablist" className="flex gap-1.5 rounded-2xl bg-slate-200 p-1 dark:bg-white/10">
+    {/* Floating Search & Filter Bar (Single Horizontal Row on Desktop, Matching Mockup) */}
+    <div className="relative -mt-12 sm:-mt-14 mx-4 sm:mx-6 rounded-2xl bg-white p-3 sm:p-4 shadow-xl shadow-slate-900/15 dark:bg-slate-850 border border-slate-100 dark:border-white/10 lg:flex lg:items-center lg:gap-4">
+      {/* Mode Switcher Tabs */}
+      <div role="tablist" className="flex gap-1.5 rounded-xl bg-slate-100 dark:bg-white/10 p-1 lg:w-auto shrink-0">
         {(['all', 'where'] as const).map((m) => (
           <button
             key={m}
@@ -53,8 +59,10 @@ export const HomeHero: React.FC<Props> = ({
             aria-selected={mode === m}
             type="button"
             onClick={() => onModeChange(m)}
-            className={`min-h-[44px] flex-1 rounded-xl text-[13px] font-bold cursor-pointer transition-colors ${
-              mode === m ? 'bg-teal-600 text-white' : 'text-slate-700 dark:text-slate-300'
+            className={`min-h-[40px] px-4 rounded-lg text-xs font-bold cursor-pointer transition-all whitespace-nowrap ${
+              mode === m
+                ? 'bg-teal-600 text-white shadow-xs'
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             {modeLabels[m]}
@@ -62,21 +70,36 @@ export const HomeHero: React.FC<Props> = ({
         ))}
       </div>
 
-      <label className="mt-2.5 flex items-center gap-2 rounded-xl border border-slate-300 px-3.5 py-2 dark:border-white/15">
-        <Search className="h-4 w-4 text-slate-500" aria-hidden="true" />
+      {/* Search Input Box */}
+      <label className="mt-2.5 lg:mt-0 flex-1 flex items-center gap-2.5 rounded-xl border border-slate-200 dark:border-white/15 px-3.5 py-1.5 focus-within:border-teal-500 dark:focus-within:border-teal-400 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all bg-slate-50/50 dark:bg-white/[0.03]">
+        <Search className="h-4 w-4 text-slate-400 shrink-0" aria-hidden="true" />
         <span className="sr-only">{searchLabel}</span>
         <input
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder={searchPlaceholder}
-          className="w-full bg-transparent py-1 text-base font-semibold text-slate-900 outline-none dark:text-white"
+          className="w-full bg-transparent py-1.5 text-xs sm:text-sm font-semibold text-slate-900 outline-none dark:text-white placeholder:text-slate-400"
         />
+        {search && (
+          <button
+            type="button"
+            onClick={() => onSearchChange('')}
+            className="text-xs font-bold text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 px-1"
+          >
+            ✕
+          </button>
+        )}
       </label>
 
+      {/* Visa-free / ID counter on right (Mockup '[XX]' counter) */}
       {statValue !== undefined && (
-        <div className="mt-3 flex items-center justify-between">
-          <span className="text-[13px] text-slate-600 dark:text-slate-300">{statLabel}</span>
-          <span className="font-mono text-2xl font-bold text-emerald-600 dark:text-emerald-400">{statValue}</span>
+        <div className="mt-3 lg:mt-0 flex items-center justify-between lg:justify-end gap-2.5 shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-100 dark:border-white/5">
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
+            {statLabel || 'Vizesiz veya kimlikle'}:
+          </span>
+          <span className="font-mono text-base lg:text-lg font-black text-teal-600 dark:text-teal-400 px-2.5 py-0.5 rounded-lg bg-teal-50 dark:bg-teal-950/40 border border-teal-200/80 dark:border-teal-800/60 shadow-2xs">
+            {statValue}
+          </span>
         </div>
       )}
     </div>

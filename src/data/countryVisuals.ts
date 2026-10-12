@@ -91,7 +91,7 @@ export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: strin
   BN: { image: "https://images.unsplash.com/photo-1578895210405-907db486c111?auto=format&fit=crop&w=480&q=80", landmark: "Sultan Omar Ali Saifuddien Golden Mosque" },
   BT: { image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=480&q=80", landmark: "Paro Taktsang Tiger’s Nest Monastery" },
   CN: { image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=480&q=80", landmark: "Great Wall of China & Forbidden City" },
-  GE: { image: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=480&q=80", landmark: "Gergeti Trinity Church & Kazbegi Peak" },
+  GE: { image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=480&q=80", landmark: "Gergeti Trinity Church & Kazbegi Peak" },
   HK: { image: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=480&q=80", landmark: "Victoria Harbour Skyline & Star Ferry" },
   ID: { image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=480&q=80", landmark: "Bali Nusa Penida & Borobudur Temple" },
   IN: { image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=480&q=80", landmark: "Taj Mahal Agra & Ganges River" },

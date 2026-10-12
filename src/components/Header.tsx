@@ -15,7 +15,8 @@ import {
   ArrowRightLeft,
   DollarSign,
   Globe,
-  Sparkles
+  Sparkles,
+  Compass
 } from 'lucide-react';
 import { getFlag, getCountryName } from '../data/passportData';
 import { useI18n, SUPPORTED_LANGUAGES } from '../data/i18n';
@@ -35,6 +36,7 @@ interface HeaderProps {
   onSearchChange?: (val: string) => void;
   onToggleMobileDrawer?: () => void;
   activeTab?: TabKey;
+  onSelectTab?: (tab: TabKey) => void;
 }
 
 // Comprehensive global travel hubs for live world clock
@@ -139,7 +141,8 @@ export const Header: React.FC<HeaderProps> = ({
   searchQuery = '',
   onSearchChange,
   onToggleMobileDrawer,
-  activeTab = 'explore'
+  activeTab = 'explore',
+  onSelectTab
 }) => {
   const { language, setLanguage, l, t } = useI18n();
   const { user, isAuthenticated, logout, openAuthModal } = useAuth();
@@ -228,58 +231,79 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-slate-200/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/80 dark:bg-[#0c101d]/85">
-      <div className="w-full px-3 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-2.5 sm:gap-4">
-        {/* Left Section: Mobile Hamburger Drawer & Quick Passport Tag */}
-        <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-2.5 sm:gap-4">
+        {/* Left Section: Mobile Hamburger Drawer & Brand Logo */}
+        <div className="flex items-center gap-2.5 sm:gap-3 flex-shrink-0">
           <button
             type="button"
             onClick={onToggleMobileDrawer}
-            className="lg:hidden min-w-[48px] min-h-[48px] p-2.5 rounded-2xl border border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors shadow-2xs flex items-center justify-center touch-target-min"
+            className="lg:hidden min-w-[42px] min-h-[42px] p-2 rounded-2xl border border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors shadow-2xs flex items-center justify-center touch-target-min"
             aria-label="Toggle navigation drawer"
           >
             <Menu className="w-5 h-5" />
           </button>
 
+          {/* Vizamigo Brand Logo */}
+          <button
+            type="button"
+            onClick={() => onSelectTab?.('explore')}
+            className="flex items-center gap-2 cursor-pointer text-left group"
+          >
+            <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white flex items-center justify-center shadow-md shadow-[#0D9488]/20 flex-shrink-0 group-hover:scale-105 transition-transform">
+              <Compass className="w-5 h-5 text-white" />
+            </div>
+            <span className="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">
+              Vizamigo<span className="text-teal-500">.</span>
+            </span>
+          </button>
+        </div>
+
+        {/* Center Section: Desktop Horizontal Navigation Links (Matching Mockup 'Masaüstü') */}
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-2 mx-auto" aria-label="Desktop Navigation">
+          {[
+            { key: 'explore' as TabKey, label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны') },
+            { key: 'plan' as TabKey, label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты') },
+            { key: 'track' as TabKey, label: l('Schengen 90/180', 'Schengen 90/180', 'Tage-Tracker', 'Calculadora Schengen', 'Калькулятор Шенгена') },
+            { key: 'profile' as TabKey, label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек') },
+            { key: 'consular' as TabKey, label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'), crisis: true },
+          ].map((item) => {
+            const isActive = activeTab === item.key;
+            return (
+              <button
+                key={item.key}
+                type="button"
+                onClick={() => onSelectTab?.(item.key)}
+                className={`px-3.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                  isActive
+                    ? item.crisis
+                      ? 'bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30 shadow-xs'
+                      : 'bg-teal-600 text-white shadow-xs'
+                    : item.crisis
+                    ? 'text-red-600/80 hover:text-red-600 hover:bg-red-500/10'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-white/5'
+                }`}
+              >
+                {item.label}
+              </button>
+            );
+          })}
+        </nav>
+
+        {/* Right Section: Global Tools, Language, Theme & Profile */}
+        <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+          {/* Active Citizenship Pill (Mockup 'Masaüstü' Top-Right) */}
           <button
             type="button"
             onClick={onOpenPassportSelector}
-            className="flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-teal-500/40 transition-all touch-target-min"
+            className="flex items-center gap-2 px-3 py-1.5 min-h-[40px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-teal-500/40 transition-all touch-target-min"
             title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
           >
             <span className="text-xl sm:text-2xl leading-none">{getFlag(currentPassport)}</span>
             <span className="font-mono text-xs text-slate-600 dark:text-slate-300 font-extrabold">{currentPassport}</span>
+            <span className="hidden xl:inline text-xs text-slate-500 dark:text-slate-400 font-semibold truncate max-w-[90px]">
+              {getCountryName(currentPassport, language)}
+            </span>
           </button>
-        </div>
-
-        {/* Center Section: Desktop / Tablet Full Concierge Search Bar */}
-        <div className="hidden md:flex flex-1 max-w-xl mx-auto">
-          <div className="relative group w-full">
-            <div className="absolute left-4.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-[#8E9DBE] group-focus-within:text-teal-600 dark:group-focus-within:text-teal-400 transition-colors pointer-events-none">
-              <Search className="w-4.5 h-4.5" />
-            </div>
-            <input
-              ref={searchInputRef}
-              type="text"
-              value={searchQuery}
-              onChange={(e) => onSearchChange?.(e.target.value)}
-              placeholder={searchPlaceholder}
-              className="w-full pl-12 pr-11 py-3 text-sm rounded-full border border-slate-200/90 dark:border-white/10 bg-white dark:bg-[#111625]/90 text-[#1A1D20] dark:text-white placeholder:text-slate-400 dark:placeholder:text-[#7A89A6] focus:outline-none focus:border-teal-500/50 dark:focus:border-teal-400/50 focus:ring-4 focus:ring-teal-500/10 dark:focus:ring-teal-500/15 shadow-xs hover:border-slate-300 dark:hover:border-white/20 transition-all font-medium"
-            />
-            {searchQuery && (
-              <button
-                type="button"
-                onClick={() => onSearchChange?.('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors cursor-pointer"
-                aria-label="Clear search"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
-            )}
-          </div>
-        </div>
-
-        {/* Right Section: Global Tools, Language, Theme & Profile */}
-        <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           {/* Mobile Search Toggle Trigger (replaces crushed input on mobile) */}
           <button
             type="button"
