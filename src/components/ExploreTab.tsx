@@ -622,9 +622,110 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </button>
           </div>
 
-      {/* Destinations List & Desktop Companion Tools Grid (Redesign Layout) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        <div className="lg:col-span-8 space-y-3">
+      {/* Top Travel Command Suite: World Clock, FX Converter & Quick Tools */}
+      <section className="space-y-4 mb-6" aria-label="Travel Widgets and Tools">
+        {/* Live Interactive Widgets: World Clock & FX Converter Side-by-Side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <WorldClockWidget />
+          <CurrencyWidget />
+        </div>
+
+        {/* Quick Travel Tools (4 Symmetrical Interactive Cards) */}
+        <div>
+          <div className="p-1 rounded-2xl bg-slate-100/80 dark:bg-slate-900/40 border border-slate-200/80 dark:border-white/10 text-xs font-bold text-slate-500 dark:text-slate-400 px-3.5 py-1.5 flex items-center justify-between mb-3">
+            <span className="flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+              <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
+            </span>
+            <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 px-2 py-0.5 rounded-full font-bold">2026 Edition</span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {/* Tool Card 1: Rota & Sinerji */}
+            <button
+              type="button"
+              onClick={() => onNavigateTab?.('plan')}
+              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Route className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Rota & Sinerji', 'Route & Synergy', 'Route & Synergie', 'Ruta y Sinergia', 'Маршруты')}</span>
+                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                  {l('Çok ülkeli rota planlayıcı', 'Multi-country itinerary', 'Mehrländer-Planer', 'Planificador de ruta', 'Маршрут')}
+                </p>
+              </div>
+            </button>
+
+            {/* Tool Card 2: Gün & Kalış Sayacı */}
+            <button
+              type="button"
+              onClick={() => onNavigateTab?.('track')}
+              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-emerald-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Calendar className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage-Tracker', 'Control de Días', 'Счетчик')}</span>
+                  <span className="text-emerald-600 dark:text-emerald-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                  {l('90/180 gün kuralı & kalış', '90/180-day window & stay', 'Rollierende 180 Tage', 'Regla 90/180 días', 'Правило 90/180')}
+                </p>
+              </div>
+            </button>
+
+            {/* Tool Card 3: Dijital Göçebe */}
+            <button
+              type="button"
+              onClick={() => onNavigateTab?.('nomad')}
+              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-sky-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Dijital Göçebe', 'Digital Nomad Tools', 'Nomaden-Tools', 'Nómada Digital', 'Номады')}</span>
+                  <span className="text-sky-600 dark:text-sky-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                  {l('183 gün vergi & internet hızları', '183-day tax tracker & speeds', 'Steuer- & Internet-Tracker', 'Impuestos y velocidades', 'Налоги и скорость')}
+                </p>
+              </div>
+            </button>
+
+            {/* Tool Card 4: Konsolosluk Destek */}
+            <button
+              type="button"
+              onClick={() => onNavigateTab?.('consular')}
+              className="p-3.5 rounded-2xl glass-crisis border border-rose-500/25 dark:border-rose-500/20 hover:border-rose-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+            >
+              <div className="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <ShieldAlert className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span className="truncate">{l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульство')}</span>
+                  <span className="text-rose-600 dark:text-rose-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                </div>
+                <p className="text-[11px] text-rose-700 dark:text-rose-300 mt-0.5 truncate">
+                  {l('7/24 Acil kriz masası & pasaport', '24/7 Diplomatic crisis hotline', '24/7 Notfallkonsole', 'Línea de emergencia 24/7', 'Круглосуточная помощь')}
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Destinations List (Full-Width Symmetrical Layout) */}
+      <div className="w-full space-y-4">
         {filteredItems.length === 0 ? (
           <div className="text-center py-16 bg-white dark:bg-slate-800/40 rounded-2xl border border-slate-200 dark:border-slate-800 p-6">
             <p className="text-slate-500 dark:text-slate-400 text-sm">
@@ -724,7 +825,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     {/* 1. Landmark Scenic Thumbnail (Symmetrical full-height desktop image) */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-48 lg:w-52 min-h-[190px] md:min-h-full self-stretch rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-56 lg:w-64 min-h-[200px] md:min-h-full self-stretch rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
@@ -815,64 +916,64 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       )}
 
-                      {/* SYMMETRICAL INFO BOXES GRID (Balanced 6-Column Grid: 3 Top Boxes, 2 Bottom Boxes; 100% Legible in All Languages) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-2.5 mt-2">
-                        {/* 1. Başkent (Capital) - 1/3 Width on desktop */}
-                        <div className="col-span-1 sm:col-span-2 flex flex-col justify-between p-2.5 rounded-xl bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/80">
+                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (Symmetrical 5-Column Grid, Zero Color Discordance) */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3 mt-2">
+                        {/* 1. Başkent (Capital) */}
+                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <span className="text-xs shrink-0">🏛️</span>
                             <span className="truncate">{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-slate-100 mt-1 leading-snug truncate" title={geography.capital}>
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug truncate" title={geography.capital}>
                             {geography.capital}
                           </div>
                         </div>
 
-                        {/* 2. Para Birimi (Currency) - 1/3 Width on desktop */}
-                        <div className="col-span-1 sm:col-span-2 flex flex-col justify-between p-2.5 rounded-xl bg-purple-50/60 dark:bg-purple-950/25 border border-purple-500/20 text-purple-900 dark:text-purple-200">
-                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-purple-700/80 dark:text-purple-300/80">
-                            <span className="text-xs shrink-0">💰</span>
+                        {/* 2. Para Birimi (Currency) */}
+                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            <DollarSign className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug truncate">
-                            {geography.currencyCode} <span className="font-mono text-xs opacity-75 font-bold">({geography.currencySymbol})</span>
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug truncate">
+                            {geography.currencyCode} <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">({geography.currencySymbol})</span>
                           </div>
                         </div>
 
-                        {/* 3. Günlük Bütçe (Daily Budget) - 1/3 Width on desktop */}
-                        <div className="col-span-1 sm:col-span-2 flex flex-col justify-between p-2.5 rounded-xl bg-amber-50/60 dark:bg-amber-950/25 border border-amber-500/20 text-amber-900 dark:text-amber-200">
-                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-700/80 dark:text-amber-300/80">
-                            <DollarSign className="w-3.5 h-3.5 shrink-0" />
+                        {/* 3. Günlük Bütçe (Daily Budget) */}
+                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            <CreditCard className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono whitespace-nowrap">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug font-mono whitespace-nowrap">
                             {insights.livingCosts.dailyBudgetBackpackerUsd.replace(/\s+/g, ' ').trim()}
                           </div>
                         </div>
 
-                        {/* 4. Güvenlik (Safety) - 1/2 Width on desktop */}
-                        <div className={`col-span-1 sm:col-span-3 flex flex-col justify-between p-2.5 rounded-xl border ${insights.safety.badgeColor}`}>
-                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider opacity-80">
-                            <Shield className="w-3.5 h-3.5 shrink-0" />
+                        {/* 4. Güvenlik (Safety) */}
+                        <div className="col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            <Shield className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug flex items-center gap-1.5">
                             <span>{insights.safety.safetyScore} / 100</span>
-                            <span className="text-[11px] font-semibold opacity-80 truncate">· {insights.safety.safetyLevel}</span>
+                            <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate">· {insights.safety.safetyLevel}</span>
                           </div>
                         </div>
 
-                        {/* 5. İnternet (Internet Speed) - 1/2 Width on desktop */}
-                        <div className="col-span-2 sm:col-span-3 flex flex-col justify-between p-2.5 rounded-xl bg-sky-50/60 dark:bg-sky-950/25 border border-sky-500/20 text-sky-900 dark:text-sky-200">
-                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-sky-700/80 dark:text-sky-300/80">
-                            <Wifi className="w-3.5 h-3.5 shrink-0" />
+                        {/* 5. İnternet (Internet Speed) */}
+                        <div className="col-span-2 sm:col-span-2 lg:col-span-1 flex flex-col justify-between p-2.5 sm:p-3 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                          <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            <Wifi className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold mt-1 leading-snug font-mono flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white mt-1 leading-snug font-mono flex items-center gap-1.5">
                             <span>{insights.internet.mobileSpeedMbps} Mbps</span>
-                            <span className="text-[11px] font-sans font-semibold text-sky-700/80 dark:text-sky-300/80 truncate">
+                            <span className="text-[11px] font-sans font-semibold text-slate-500 dark:text-slate-400 truncate">
                               {insights.internet.mobileSpeedMbps >= 50
-                                ? `· ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz', 'Red rápida', 'Быстрый интернет')}`
+                                ? `· ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz', 'Red rápida', 'Быстрый')}`
                                 : `· ${l('Standart', 'Standard', 'Standard', 'Estándar', 'Стандарт')}`}
                             </span>
                           </div>
@@ -1642,107 +1743,6 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             );
           })
         )}
-        </div>
-
-        {/* Right Column: Desktop Quick Tool Cards & Interactive Widgets */}
-        <aside className="hidden lg:flex lg:col-span-4 flex-col gap-3.5 sticky top-24">
-          {/* Live Interactive Widgets: World Clock & FX Converter */}
-          <WorldClockWidget />
-          <CurrencyWidget />
-
-          <div className="p-1 rounded-2xl bg-slate-100/80 dark:bg-slate-900/40 border border-slate-200/80 dark:border-white/10 text-xs font-bold text-slate-500 dark:text-slate-400 px-3 py-1.5 flex items-center justify-between">
-            <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
-            <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 px-1.5 py-0.5 rounded font-bold">2026</span>
-          </div>
-
-          {/* Tool Card 1: Rota & Sinerji */}
-          <button
-            type="button"
-            onClick={() => onNavigateTab?.('plan')}
-            className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <Route className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span>{l('Rota & Sinerji', 'Route & Synergy', 'Route & Synergie', 'Ruta y Sinergia', 'Маршрут и Синергия')}</span>
-                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
-                  {l('Çok ülkeli rota planlayıcı ve ortak vize analizi', 'Multi-country itinerary and visa synergy', 'Mehrländer-Planer')}
-                </p>
-              </div>
-            </div>
-          </button>
-
-          {/* Tool Card 2: Gün & Kalış Sayacı */}
-          <button
-            type="button"
-            onClick={() => onNavigateTab?.('track')}
-            className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <Calendar className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span>{l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage-Tracker', 'Control de Días', 'Счетчик Дней')}</span>
-                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
-                  {l('90/180 gün kuralı, kalış süresi ve çıkış tarihi', 'Rolling 180-day window and safe exit date', 'Rollierende 180 Tage')}
-                </p>
-              </div>
-            </div>
-          </button>
-
-          {/* Tool Card 3: Dijital Göçebe (Direct Tab) */}
-          <button
-            type="button"
-            onClick={() => onNavigateTab?.('nomad')}
-            className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <Sparkles className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span>{l('Dijital Göçebe Araçları', 'Digital Nomad Tools', 'Nomaden-Tools', 'Herramientas Nómada', 'Для Номадов')}</span>
-                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
-                  {l('183 gün vergi mukimliği ve internet hızları', '183-day tax tracker, speeds & nomad visas', 'Steuer- & Internet-Tracker')}
-                </p>
-              </div>
-            </div>
-          </button>
-
-          {/* Tool Card 4: Konsolosluk Destek */}
-          <button
-            type="button"
-            onClick={() => onNavigateTab?.('consular')}
-            className="p-4 rounded-2xl glass-crisis border border-rose-500/25 dark:border-rose-500/20 hover:border-rose-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <ShieldAlert className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span>{l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульство')}</span>
-                  <span className="text-rose-600 dark:text-rose-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-                <p className="text-[11px] text-rose-700 dark:text-rose-300 mt-0.5 line-clamp-1">
-                  {l('7/24 Acil kriz masası & kayıp pasaport', '24/7 Diplomatic crisis hotline & lost passport', '24/7 Notfallkonsole')}
-                </p>
-              </div>
-            </div>
-          </button>
-        </aside>
       </div>
         </>
       )}

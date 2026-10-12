@@ -46,7 +46,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
       {/* Header Row */}
       <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-200/70 dark:border-white/10">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center">
+          <div className="w-7 h-7 rounded-lg bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center">
             <Clock className="w-4 h-4" />
           </div>
           <div>
@@ -65,7 +65,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             setIsSearching(!isSearching);
             if (isSearching) setSearch('');
           }}
-          className="p-1.5 rounded-lg text-slate-500 hover:text-sky-600 dark:hover:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-950/40 transition-colors cursor-pointer"
+          className="p-1.5 rounded-lg text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40 transition-colors cursor-pointer"
           title={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск')}
         >
           <Search className="w-3.5 h-3.5" />
@@ -81,7 +81,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '' }) => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder={l('Şehir veya ülke ara...', 'Search city or country...', 'Stadt oder Land suchen...', 'Buscar ciudad o país...', 'Поиск города или страны...')}
-            className="w-full pl-8 pr-7 py-1.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500"
+            className="w-full pl-8 pr-7 py-1.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-teal-500"
             autoFocus
           />
           {search && (
