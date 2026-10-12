@@ -1,13 +1,14 @@
 /**
  * Scalable International Multilingual SEO Routing Engine for Vizamigo
  * Provides clean URL path routing (e.g. /:lang, /:lang/:tab, /:lang/country/:code)
- * with zero-dependency HTML5 History API synchronization and full Mobile-First crawlability.
+ * with zero-dependency HTML5 History API synchronization, 404 validation, and full Mobile-First crawlability.
  */
 
 import { useState, useEffect, useCallback } from 'react';
 import { SupportedLanguage } from '../i18n/types';
 import { SUPPORTED_LANGUAGES, getStoredLanguage, saveStoredLanguage } from '../i18n';
 import { TabKey } from '../components/Navigation';
+import { GEO_DATA } from '../data/geoData';
 
 export const BASE_URL = 'https://vizamigo.com';
 
@@ -18,20 +19,17 @@ export interface ParsedRoute {
   language: SupportedLanguage;
   tab: TabKey;
   countryCode: string | null;
+  is404?: boolean;
 }
 
 /**
  * Parses window.location.pathname into clean route parameters.
- * Examples:
- *   /                     -> { language: 'tr', tab: 'explore', countryCode: null }
- *   /en                   -> { language: 'en', tab: 'explore', countryCode: null }
- *   /es/plan              -> { language: 'es', tab: 'plan', countryCode: null }
- *   /ru/country/JP        -> { language: 'ru', tab: 'explore', countryCode: 'JP' }
- *   /de/country/FR/       -> { language: 'de', tab: 'explore', countryCode: 'FR' }
+ * Validates country codes against GEO_DATA (199 destinations) and tabs against VALID_TABS.
+ * Flags is404=true for invalid countries or unknown paths to prevent Google Soft-404 indexation.
  */
 export function parseCurrentRoute(): ParsedRoute {
   if (typeof window === 'undefined') {
-    return { language: 'tr', tab: 'explore', countryCode: null };
+    return { language: 'tr', tab: 'explore', countryCode: null, is404: false };
   }
 
   const rawPath = window.location.pathname.replace(/\/+$/, '');
@@ -40,25 +38,42 @@ export function parseCurrentRoute(): ParsedRoute {
   let language: SupportedLanguage = getStoredLanguage();
   let tab: TabKey = 'explore';
   let countryCode: string | null = null;
+  let is404 = false;
 
   if (segments.length > 0) {
     const firstSegment = segments[0].toLowerCase();
     if (VALID_LANG_CODES.has(firstSegment as SupportedLanguage)) {
       language = firstSegment as SupportedLanguage;
       segments.shift();
+    } else if (firstSegment === 'country' || VALID_TABS.has(firstSegment as TabKey)) {
+      // Direct path without lang prefix (e.g. /country/AL or /plan) - keep default language
+    } else {
+      is404 = true;
     }
   }
 
   if (segments.length > 0) {
     const next = segments[0].toLowerCase();
-    if (next === 'country' && segments[1]) {
-      countryCode = segments[1].toUpperCase();
+    if (next === 'country') {
+      if (segments[1]) {
+        const potentialCode = segments[1].toUpperCase();
+        if (GEO_DATA[potentialCode]) {
+          countryCode = potentialCode;
+        } else {
+          is404 = true;
+          countryCode = potentialCode;
+        }
+      } else {
+        is404 = true;
+      }
     } else if (VALID_TABS.has(next as TabKey)) {
       tab = next as TabKey;
+    } else {
+      is404 = true;
     }
   }
 
-  return { language, tab, countryCode };
+  return { language, tab, countryCode, is404 };
 }
 
 /**
@@ -129,7 +144,8 @@ export function useSeoRouter() {
     setRoute({
       language: targetLang,
       tab: targetTab,
-      countryCode: targetCountry
+      countryCode: targetCountry,
+      is404: false
     });
     saveStoredLanguage(targetLang);
   }, [route]);

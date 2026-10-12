@@ -1,0 +1,48 @@
+# ==============================================================================
+# Vizamigo Mobile-First Robots.txt
+# Technical SEO, Crawl Budget Protection & Core Web Vitals Optimization
+# ==============================================================================
+
+User-agent: *
+
+# Explicitly Allow All Public Content & Mobile Rendering Assets
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.woff2$
+Allow: /manifest.json
+
+# Protect Mobile Crawl Budget - Disallow Technical, Internal & Temporary Paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /draft/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /*?*query=
+Disallow: /*?*filter=
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+
+# Major International Crawlers Explicit Identification
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Yandex
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Index Declaration
+Sitemap: https://vizamigo.com/sitemap.xml
+Host: https://vizamigo.com

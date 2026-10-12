@@ -29,6 +29,7 @@ import { ReportChangeModal } from './components/ReportChangeModal';
 import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
+import { NotFoundView } from './components/NotFoundView';
 
 function AppContent() {
   const { language, setLanguage, l, t } = useI18n();
@@ -120,6 +121,7 @@ function AppContent() {
         tab={activeTab}
         countryCode={selectedCountryCode}
         currentPassport={currentPassport}
+        is404={route.is404}
       />
 
       {/* Permanent Fixed Fullscreen Dual-Theme Background (Zero white cutoffs on vertical scroll) */}
@@ -174,8 +176,16 @@ function AppContent() {
 
         {/* Content Body with 30%+ Increased Breathing Space */}
         <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-8 py-6 sm:py-9 pb-32 lg:pb-16 space-y-8">
-          {/* Tab Content: 1. KEŞFET / EXPLORE */}
-          {activeTab === 'explore' && (
+          {route.is404 ? (
+            <NotFoundView
+              language={language}
+              requestedPath={typeof window !== 'undefined' ? window.location.pathname : undefined}
+              onGoHome={() => handleSelectTab('explore')}
+            />
+          ) : (
+            <>
+              {/* Tab Content: 1. KEŞFET / EXPLORE */}
+              {activeTab === 'explore' && (
             <div className="space-y-6">
               {/* Keşfet Sub Tabs */}
               <div className="flex items-center justify-start">
@@ -332,6 +342,8 @@ function AppContent() {
           {activeTab === 'consular' && (
             <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
           )}
+        </>
+      )}
 
         {/* Sınırlı Reklam & Gezgin Sponsor Kartı */}
         {showPromoBanner && (
