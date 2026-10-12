@@ -52,6 +52,7 @@ import { getPassportItems } from '../utils/calculator';
 import { loadStoredChecklists, saveStoredChecklists } from '../utils/storage';
 import { useI18n } from '../data/i18n';
 import { getCountryVisual } from '../data/countryVisuals';
+import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 
 interface ExploreTabProps {
   currentPassport: string;
@@ -299,6 +300,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     `Гражданство и глобальная мобильность: ${passportName}`
                   )}</span>
                 </div>
+                <h1 className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight mb-2">
+                  {l(
+                    `Vizamigo - ${passportName} Pasaportu ile 199 Ülke Vize Rejimi Rehberi`,
+                    `Vizamigo - Global Visa Policy & Passport Mobility Guide (${passportName})`,
+                    `Vizamigo - Weltweite Visabestimmungen & Pass-Guide (${passportName})`,
+                    `Vizamigo - Política Global de Visados y Guía de Pasaportes (${passportName})`,
+                    `Vizamigo - Глобальный визовый режим и гид по паспортам (${passportName})`
+                  )}
+                </h1>
                 <div className="flex items-baseline gap-3">
                   <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-[#FF6B6B] via-[#FF7A59] to-[#E5A93C] bg-clip-text text-transparent">
                     {stats.totalFreeOrId}
@@ -937,6 +947,14 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     {countryName} {l('ayrıntılı seyahat ve vize bilgileri', 'detailed travel and visa specifications', 'detaillierte Reise- und Visabestimmungen', 'información detallada de viaje y visado', 'подробная визовая и туристическая информация')}
                   </summary>
                   <div className="px-6 sm:px-8 pb-8 pt-5 border-t border-slate-100 dark:border-white/[0.08] space-y-6 text-sm text-slate-600 dark:text-slate-300 animate-in fade-in duration-200">
+                    {/* Mobile Rich Snippet TL;DR Box for Googlebot Featured Snippet Crawling */}
+                    <CountryRichSnippetSummary
+                      countryCode={item.c}
+                      currentPassport={currentPassport}
+                      language={language}
+                      variant="card"
+                    />
+
                     {/* Widescreen Scenic Landmark Hero Banner */}
                     <div className="relative h-44 sm:h-56 aspect-[16/9] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-white/[0.08] shadow-md group/hero">
                       <img

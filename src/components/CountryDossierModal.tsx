@@ -71,6 +71,8 @@ import {
 } from '../data/currencyRates';
 import { SocketPlugVector } from './SocketPlugVector';
 import { getCountryNomadApps } from '../data/rideAndDeliveryApps';
+import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
+import { getCountryNaturalH1 } from '../utils/schemaGenerator';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -342,11 +344,16 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </span>
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-                    {name}
-                  </h2>
                   <span className="font-mono text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold border border-slate-200 dark:border-slate-700">
                     {code}
+                  </span>
+                  <h1 className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
+                    {getCountryNaturalH1(name, language)}
+                  </h1>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 mt-1">
+                  <span className="text-xs text-slate-500 dark:text-[#8E9DBE] font-medium">
+                    • {l('Ülke:', 'Country:', 'Land:')} <b className="text-slate-800 dark:text-slate-200">{name}</b>
                   </span>
                   {(geo?.capital || geography?.capital) && (
                     <span className="text-xs text-slate-500 dark:text-[#8E9DBE] font-medium">
@@ -594,6 +601,14 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
         {/* Tab Content Body (Scrollable) */}
         <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
+          {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
+          <CountryRichSnippetSummary
+            countryCode={code}
+            currentPassport={currentPassport}
+            language={language}
+            variant="modal"
+          />
+
           {/* TAB 0: GEZİ PLANI & TURİSTİK ROTA */}
           {activeTab === 'itinerary' && itinerary && (
             <div className="space-y-6 animate-in fade-in duration-200">
@@ -615,9 +630,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       </span>
                     </div>
 
-                    <h3 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white tracking-tight">
-                      {itinerary.routeName}
-                    </h3>
+                    <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white tracking-tight">
+                      {name} · {itinerary.routeName}
+                    </h2>
                   </div>
 
                   {/* Actions: Copy & Maps */}
@@ -896,9 +911,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         <DollarSign className="w-4 h-4" />
                       </div>
                       <div>
-                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                          {l('Gezgin Döviz Hub & Çevrim Şeması', 'Currency Hub & Offline Cheat-Sheet', 'Währungs-Hub & Offline-Preise')}
-                        </h3>
+                        <h2 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {name} {l('Para Birimi ve Güncel Döviz Kurları (USD/EUR/TRY)', 'Currency & Live Exchange Rates (USD/EUR/GBP)', 'Währung & Wechselkurse (USD/EUR/GBP)', 'Moneda y Tipos de Cambio en Vivo', 'Валюта и актуальные курсы обмена')}
+                        </h2>
                         <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                           {l('Yerel Para Birimi:', 'Local Currency:', 'Landeswährung:')} <b className="text-slate-800 dark:text-slate-200">{destCurrencyName} ({destCurrencyCode} - {destCurrencySymbol})</b>
                         </div>
@@ -1124,9 +1139,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           <Clock className="w-4 h-4" />
                         </div>
                         <div>
-                          <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                            {l('Dünya Saati & Time Zone Buddy', 'Time Zone Buddy & Live Sync', 'Zeitzonen-Buddy & Live-Takt')}
-                          </h3>
+                          <h2 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                            {name} {l('Yerel Saati, Saat Dilimi ve Çalışma Saatleri (Dual Clock)', 'Local Time, Time Zone & Remote Work Sync', 'Ortszeit, Zeitzone & Remote-Arbeitszeit', 'Hora Local, Zona Horaria y Sincronización', 'Местное время, часовой пояс и рабочий график')}
+                          </h2>
                           <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                             {geography?.timeZone || `UTC${destOffsetHours >= 0 ? '+' : ''}${destOffsetHours}`}
                           </div>
@@ -1308,9 +1323,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       <Wifi className="w-4 h-4" />
                     </div>
                     <div>
-                      <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                        {l('İnternet Hızları, SIM İstihbaratı & Priz/Voltaj Detayı', 'Internet Speeds, SIM Advice & Sockets', 'WLAN-Speed, SIM-Tipps & Steckdosen')}
-                      </h3>
+                      <h2 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                        {name} {l('İnternet Hızı, eSIM ve Yerel Mobil Hatlar', 'Internet Speed, eSIM & Mobile Connectivity', 'WLAN-Speed, eSIM & Mobilfunk-Netze', 'Velocidad de Internet, eSIM y Conectividad Móvil', 'Скорость интернета, eSIM и мобильная связь')}
+                      </h2>
                       <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                         {l('Mobil ağ kapsama alanı:', 'Mobile coverage:', 'Netzabdeckung:')} <b className="text-slate-800 dark:text-slate-200">{insights.internet.networkCoverage}</b>
                       </div>
@@ -1466,9 +1481,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         <Car className="w-4 h-4" />
                       </div>
                       <div>
-                        <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
-                          {l('Yerel Taksi & Teslimat Uygulamaları', 'Local Ride & Delivery Apps', 'Lokale Taxi- & Liefer-Apps')}
-                        </h3>
+                        <h2 className="font-extrabold text-base text-slate-900 dark:text-white tracking-tight">
+                          {name} {l('Ulaşım, Taksi ve Araç Çağırma Uygulamaları', 'Transport, Taxi & Ride-Hailing Apps', 'Transport, Taxi & Fahrdienst-Apps', 'Transporte, Taxi y Apps de Movilidad', 'Транспорт, такси и сервисы заказа авто')}
+                        </h2>
                         <div className="text-[11px] text-slate-500 dark:text-[#8E9DBE]">
                           {l('Her ülkenin Uber’i farklıdır; sabit fiyat ve rota güvenliği için resmi uygulamalar:', 'Every country has its own Uber. Upfront fares and safety:', 'Offizielle Apps für Festpreise & GPS-Sicherheit:')}
                         </div>
@@ -1604,9 +1619,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-3">
                   <div className="flex items-center gap-2">
                     <Building className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                    <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-                      {l('Başkent, Büyük Şehirler ve Turistik Bölgeler', 'Capital, Major Cities & Tourist Regions', 'Hauptstadt, Großstädte & Regionen')}
-                    </h3>
+                    <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                      {name} {l('Kültürel Miras, Şehirler ve Gezilecek Yerler', 'Cultural Heritage, Cities & Sights', 'Kulturerbe, Städte & Sehenswürdigkeiten', 'Patrimonio Cultural, Ciudades y Lugares', 'Культурное наследие, города и достопримечательности')}
+                    </h2>
                   </div>
                   <span className="text-xs font-bold px-3 py-1 rounded-xl bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800 flex items-center gap-1.5">
                     <span>🏛️</span>
@@ -1778,9 +1793,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
               <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <Utensils className="w-5 h-5 text-amber-500" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-                    {l('İkonik Milli Yemekler', 'Iconic National Dishes', 'Traditionelle Nationalgerichte')}
-                  </h3>
+                  <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                    {name} {l('Meşhur Yemekleri, İçecekleri ve Mutfak Kültürü', 'Gastronomy, Famous Dishes & Culinary Guide', 'Kulinarik, berühmte Gerichte & Esskultur', 'Gastronomía, Platos Típicos y Guía Culinaria', 'Национальная кухня, популярные блюда и напитки')}
+                  </h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {encyclopedia.gastronomy.famousDishes.map((dish, idx) => (
@@ -1850,9 +1865,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <div className="flex items-center gap-2">
                     <Languages className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                    <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-                      {l('Pratik Hayat Kurtaran Gezgin Cümleleri', 'Survival Travel Phrases', 'Wichtige Reisewendungen')}
-                    </h3>
+                    <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                      {name} {l('Pratik Konuşma Kalıpları ve Yerel Dil Rehberi', 'Survival Travel Phrases & Local Language Guide', 'Wichtige Reiseredewendungen & Sprachführer', 'Frases Prácticas de Viaje y Guía de Idioma', 'Разговорник и полезные фразы для путешествия')}
+                    </h2>
                   </div>
                   <span className="text-xs text-slate-400 font-medium">
                     {l('Tıklayarak kopyalayın', 'Click to copy', 'Zum Kopieren klicken')}
@@ -1956,9 +1971,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
               <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <Trophy className="w-5 h-5 text-amber-500" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-                    {l('Dünya Çapında Tanınan Ünlü İsimler', 'World-Renowned Personalities', 'Berühmte Persönlichkeiten')}
-                  </h3>
+                  <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                    {name} {l('Küresel Başarılar, İnovasyon ve Dünya Sıralaması', 'Global Achievements, Figures & World Standing', 'Globale Erfolge, Persönlichkeiten & Rangliste', 'Logros Globales y Personalidades Célebres', 'Мировые достижения, известные личности и рейтинги')}
+                  </h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {encyclopedia.achievements.famousFigures.map((fig, idx) => (
@@ -2040,9 +2055,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="flex items-center justify-between gap-2 flex-wrap">
                   <div className="flex items-center gap-2">
                     <Plane className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                    <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-                      {l('Pasaport Giriş Rejimi ve Kalış Hakları', 'Passport Entry Regime & Stay Allowance', 'Einreiseregelung & Aufenthaltsdauer')}
-                    </h3>
+                    <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                      {name} {l('Giriş Şartları, Pasaport Geçerliliği ve Resmi Mevzuat', 'Entry Regulations, Passport Validity & Official Rules', 'Einreisebestimmungen, Passgültigkeit & offizielle Regeln', 'Requisitos de Entrada, Validez de Pasaporte y Normativas', 'Правила въезда, требования к паспорту и регламент')}
+                    </h2>
                   </div>
                   <span className={`px-3 py-1 rounded-full text-xs font-bold border ${badgeClass}`}>
                     {badgeLabel}
