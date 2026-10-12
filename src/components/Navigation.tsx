@@ -89,15 +89,15 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="space-y-6">
           {/* Brand Logo & Editorial Header */}
           <div className="flex items-center gap-3 px-2 pt-1">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white flex items-center justify-center shadow-md shadow-[#FF6B6B]/20 flex-shrink-0 transition-transform hover:scale-105">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white flex items-center justify-center shadow-md shadow-[#0D9488]/20 flex-shrink-0 transition-transform hover:scale-105">
               <Compass className="w-5 h-5 text-white" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">
-                  Vizamigo
+                  Vizamigo<span className="text-teal-500">.</span>
                 </span>
-                <span className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 dark:bg-white/[0.08] text-slate-800 dark:text-white border border-slate-200/80 dark:border-white/15">
+                <span className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-700 dark:text-teal-300 border border-teal-200/80 dark:border-teal-500/20">
                   PRO
                 </span>
               </div>
@@ -116,7 +116,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               <button
                 type="button"
                 onClick={onOpenPassportSelector}
-                className="text-[11px] text-[#FF6B6B] dark:text-[#FF7A59] hover:underline font-extrabold flex items-center gap-1 cursor-pointer"
+                className="text-[11px] text-teal-600 dark:text-teal-400 hover:underline font-extrabold flex items-center gap-1 cursor-pointer"
                 title={l('Pasaport Değiştir', 'Change Passport', 'Pass Ändern')}
               >
                 <ArrowRightLeft className="w-3 h-3" />
@@ -154,10 +154,10 @@ export const Navigation: React.FC<NavigationProps> = ({
                   className={`w-full flex items-center justify-between px-3.5 py-3 rounded-2xl text-xs font-bold transition-all duration-200 cursor-pointer group ${
                     isActive
                       ? item.crisis
-                        ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] border border-[#FF6B6B]/30 shadow-xs'
-                        : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
+                        ? 'bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30 shadow-xs'
+                        : 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 border border-white/20'
                       : item.crisis
-                      ? 'text-[#FF6B6B] dark:text-[#FF8E72] hover:bg-[#FF6B6B]/10 border border-[#FF6B6B]/15'
+                      ? 'text-red-600 dark:text-red-400 hover:bg-red-500/10 border border-red-500/15'
                       : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-950 dark:hover:text-white hover:bg-slate-900/[0.03] dark:hover:bg-white/[0.04]'
                   }`}
                 >
@@ -166,10 +166,10 @@ export const Navigation: React.FC<NavigationProps> = ({
                       className={`w-4 h-4 transition-transform duration-200 ${
                         isActive
                           ? item.crisis
-                            ? 'text-[#FF6B6B]'
+                            ? 'text-red-600 dark:text-red-400'
                             : 'text-white scale-110'
                           : item.crisis
-                          ? 'text-[#FF6B6B]'
+                          ? 'text-red-600 dark:text-red-400'
                           : 'text-slate-400 dark:text-[#7A89A6] group-hover:text-slate-700 dark:group-hover:text-white'
                       }`}
                     />
@@ -242,11 +242,11 @@ export const Navigation: React.FC<NavigationProps> = ({
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/[0.08]">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] flex items-center justify-center text-white shadow-xs">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white shadow-xs">
                     <Compass className="w-4 h-4" />
                   </div>
                   <span className="font-extrabold text-lg text-slate-900 dark:text-white">
-                    Vizamigo
+                    Vizamigo<span className="text-teal-500">.</span>
                   </span>
                 </div>
                 <button
@@ -275,7 +275,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                     <div className="text-[10px] text-slate-400">{currentPassport}</div>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-[#FF6B6B]">
+                <span className="text-xs font-bold text-teal-600 dark:text-teal-400">
                   {l('Değiştir', 'Change', 'Ändern')}
                 </span>
               </div>
@@ -293,8 +293,8 @@ export const Navigation: React.FC<NavigationProps> = ({
                       className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all ${
                         isActive
                           ? item.crisis
-                            ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] border border-[#FF6B6B]/30'
-                            : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-sm'
+                            ? 'bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30'
+                            : 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-sm'
                           : 'text-slate-600 dark:text-[#8E9DBE] hover:bg-slate-900/[0.03] dark:hover:bg-white/[0.04]'
                       }`}
                     >
@@ -323,9 +323,9 @@ export const Navigation: React.FC<NavigationProps> = ({
       )}
 
       {/* ========================================================
-          3. MOBILE SLEEK STICKY / FLOATING BOTTOM GLASS DOCK
+          3. MOBILE FULL-WIDTH BOTTOM TAB BAR (Vizamigo Redesign)
       ======================================================== */}
-      <nav className="lg:hidden fixed bottom-4 left-4 right-4 z-40 max-w-lg mx-auto glass-card rounded-3xl p-1.5 shadow-2xl shadow-slate-950/20 dark:shadow-black/60 flex items-center justify-around gap-1 transition-all" aria-label="Mobile Navigation">
+      <nav className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex items-stretch justify-around border-t border-slate-200/80 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur dark:border-white/10 dark:bg-[#0c1020]/95" aria-label="Mobile Navigation">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeTab === item.key;
@@ -337,22 +337,24 @@ export const Navigation: React.FC<NavigationProps> = ({
                 handleNavClick(item.key);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className={`relative flex flex-col items-center justify-center py-2 px-2 rounded-2xl transition-all cursor-pointer min-w-[52px] min-h-[48px] touch-target-min flex-1 ${
+              aria-current={isActive ? 'page' : undefined}
+              className={`relative flex min-h-[56px] min-w-[56px] flex-1 flex-col items-center justify-center gap-1 px-1 cursor-pointer transition-colors ${
                 isActive
                   ? item.crisis
-                    ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] font-extrabold'
-                    : 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white font-extrabold shadow-sm'
-                  : 'text-slate-500 dark:text-[#8E9DBE] hover:text-slate-800 dark:hover:text-white'
+                    ? 'text-red-600 dark:text-red-400 font-bold'
+                    : 'text-teal-600 dark:text-teal-400 font-bold'
+                  : 'text-slate-600 dark:text-slate-400 font-medium'
               }`}
             >
-              <Icon
-                className={`w-4.5 h-4.5 transition-transform duration-200 ${
-                  isActive ? 'scale-110' : ''
-                }`}
-              />
-              <span className="text-[10px] mt-1 font-bold tracking-tight leading-none truncate max-w-[62px]">
-                {item.shortLabel}
-              </span>
+              {isActive && (
+                <span
+                  className={`absolute inset-x-3 top-0 h-0.5 rounded-full ${
+                    item.crisis ? 'bg-red-600' : 'bg-teal-600'
+                  }`}
+                />
+              )}
+              <Icon className="h-5 w-5" />
+              <span className="max-w-[64px] truncate text-[11px] leading-none">{item.shortLabel}</span>
             </button>
           );
         })}

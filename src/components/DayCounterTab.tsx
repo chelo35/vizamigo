@@ -33,6 +33,7 @@ import {
 import { getCountryName, getFlag } from '../data/passportData';
 import { useI18n } from '../data/i18n';
 import { CustomDatePicker } from './CustomDatePicker';
+import { SchengenGauge } from './design/SchengenGauge';
 
 export const DayCounterTab: React.FC = () => {
   const { language, l } = useI18n();
@@ -286,6 +287,19 @@ export const DayCounterTab: React.FC = () => {
             </div>
           </form>
         )}
+
+        {/* Schengen Gauge Circular Animated Visualizer (Redesign Screen 4) */}
+        <div className="flex justify-center mb-6">
+          <div className="w-full max-w-md">
+            <SchengenGauge
+              used={calcResult.daysUsed}
+              total={currentRule.allowedDays}
+              remainingLabel={l('Kalan gün', 'Remaining days', 'Verbleibende Tage', 'Días restantes', 'Осталось дней')}
+              resetLabel={l('Sıfırlanma', 'Reset date', 'Rücksetzung', 'Fecha de reinicio', 'Сброс')}
+              resetValue={calcResult.safeExitDate ? formatLocalizedDate(dateToDayIndex(calcResult.safeExitDate), language) : l('Aktif', 'Active', 'Aktiv', 'Activo', 'Активно')}
+            />
+          </div>
+        </div>
 
         {/* Big Countdown Metric Card */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">

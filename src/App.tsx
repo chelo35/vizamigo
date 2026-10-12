@@ -30,6 +30,9 @@ import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
 import { NotFoundView } from './components/NotFoundView';
+import { HomeHero } from './components/design/HomeHero';
+import { getCountryName } from './data/passportData';
+import { getPassportItems } from './utils/calculator';
 
 function AppContent() {
   const { language, setLanguage, l, t } = useI18n();
@@ -45,6 +48,16 @@ function AppContent() {
   const [showPromoBanner, setShowPromoBanner] = useState<boolean>(true);
   const [globalSearchQuery, setGlobalSearchQuery] = useState<string>('');
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
+
+  // Dynamic visa-free & ID count for the active passport
+  const visaFreeCount = React.useMemo(() => {
+    try {
+      const items = getPassportItems(currentPassport);
+      return items.filter((it) => it.cat === 'free' || it.id).length;
+    } catch {
+      return 116;
+    }
+  }, [currentPassport]);
 
   // Sync tab and country with SEO history changes
   useEffect(() => {
@@ -114,7 +127,7 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen text-[#1A1D20] dark:text-white flex font-sans selection:bg-[#FF6B6B] selection:text-white relative overflow-x-hidden transition-colors">
+    <div className="min-h-screen text-[#1A1D20] dark:text-white flex font-sans selection:bg-teal-600 selection:text-white relative overflow-x-hidden transition-colors">
       {/* Dynamic Scalable Multilingual SEO Head (Canonical & 5-Language Hreflang Alternates + x-default) */}
       <SeoHead
         language={language}
@@ -129,7 +142,7 @@ function AppContent() {
 
       {/* Ambient luxury background glow orbs (Nubair celestial midnight & Social Media App luminous atmosphere) */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-rose-500/[0.05] dark:bg-[#FF6B6B]/[0.04] rounded-full blur-[160px]" />
+        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-teal-500/[0.05] dark:bg-teal-500/[0.04] rounded-full blur-[160px]" />
         <div className="absolute top-1/3 -right-20 w-[440px] h-[440px] bg-sky-500/[0.06] dark:bg-blue-600/[0.05] rounded-full blur-[150px]" />
         <div className="absolute -bottom-20 left-1/3 w-[520px] h-[520px] bg-amber-500/[0.05] dark:bg-[#E5A93C]/[0.03] rounded-full blur-[150px]" />
       </div>
@@ -187,33 +200,34 @@ function AppContent() {
               {/* Tab Content: 1. KEŞFET / EXPLORE */}
               {activeTab === 'explore' && (
             <div className="space-y-6">
-              {/* Keşfet Sub Tabs */}
-              <div className="flex items-center justify-start">
-                <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1">
-                  <button
-                    type="button"
-                    onClick={() => setExploreSubTab('all')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                      exploreSubTab === 'all'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
-                    }`}
-                  >
-                    {t.subTabAllCountries}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setExploreSubTab('where')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                      exploreSubTab === 'where'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
-                    }`}
-                  >
-                    {t.subTabWhereCanIGo}
-                  </button>
-                </div>
-              </div>
+              {/* Keşfet: hero + search card (Vizamigo redesign) */}
+              <HomeHero
+                title={l(
+                  '199 ülke, pasaportunla tek bakışta',
+                  '199 countries, one passport view',
+                  '199 Länder, ein Blick',
+                  '199 países, de un vistazo',
+                  '199 стран с первого взгляда'
+                )}
+                subtitle={l(
+                  'Vize, Schengen sayacı ve rota planı bir arada.',
+                  'Visas, Schengen tracker and route planner in one place.',
+                  'Visa, Schengen-Zähler und Routenplaner.',
+                  'Visados, Schengen y planificador de rutas.',
+                  'Визы, Шенген и маршруты в одном месте.'
+                )}
+                passportLabel={`${currentPassport} · ${getCountryName(currentPassport, language)}`}
+                onPassportClick={() => setIsPassportModalOpen(true)}
+                mode={exploreSubTab}
+                onModeChange={setExploreSubTab}
+                modeLabels={{ all: t.subTabAllCountries, where: t.subTabWhereCanIGo }}
+                search={globalSearchQuery}
+                onSearchChange={setGlobalSearchQuery}
+                searchLabel={l('Ülke ara', 'Search country', 'Land suchen', 'Buscar país', 'Поиск страны')}
+                searchPlaceholder={l('Japonya, Tayland, Almanya…', 'Japan, Thailand, Germany…', 'Japan, Thailand, Deutschland…', 'Japón, Tailandia, Alemania…', 'Япония, Таиланд, Германия…')}
+                statLabel={l('Vizesiz veya kimlikle giriş', 'Visa-free or ID card entry', 'Visumfrei oder mit Ausweis', 'Entrada sin visado o con DNI', 'Без визы или по удостоверению')}
+                statValue={visaFreeCount}
+              />
 
               {exploreSubTab === 'all' ? (
                 <ExploreTab
@@ -223,6 +237,10 @@ function AppContent() {
                   onSearchChange={setGlobalSearchQuery}
                   initialCountryCode={selectedCountryCode}
                   onCountrySelect={handleCountrySelect}
+                  onNavigateTab={(tab) => {
+                    handleSelectTab(tab);
+                    if (tab === 'plan') setPlanSubTab('route');
+                  }}
                 />
               ) : (
                 <WhereCanIGoTab currentPassport={currentPassport} />
@@ -347,9 +365,9 @@ function AppContent() {
 
         {/* Sınırlı Reklam & Gezgin Sponsor Kartı */}
         {showPromoBanner && (
-          <div className="p-4 rounded-3xl glass-panel border border-[#FF6B6B]/20 bg-gradient-to-r from-[#FF6B6B]/10 via-[#FF8E72]/5 to-transparent flex items-center justify-between gap-3 text-xs shadow-xs">
+          <div className="p-4 rounded-3xl glass-panel border border-teal-500/20 bg-gradient-to-r from-teal-500/10 via-teal-500/5 to-transparent flex items-center justify-between gap-3 text-xs shadow-xs">
             <div className="flex items-center gap-3">
-              <span className="p-2 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white flex-shrink-0 shadow-xs">
+              <span className="p-2 rounded-2xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white flex-shrink-0 shadow-xs">
                 <Sparkles className="w-4 h-4" />
               </span>
               <span className="text-slate-700 dark:text-slate-300 font-medium">
@@ -360,7 +378,7 @@ function AppContent() {
               <button
                 type="button"
                 onClick={() => setActiveTab('profile')}
-                className="font-bold text-[#FF6B6B] dark:text-[#FF7A59] hover:underline cursor-pointer"
+                className="font-bold text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
               >
                 {t.promoBannerCta}
               </button>
@@ -380,7 +398,7 @@ function AppContent() {
         <footer className="mt-14 pt-8 border-t border-slate-200/80 dark:border-white/[0.08] text-xs text-slate-500 dark:text-slate-400 space-y-3 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="flex items-center gap-2.5 font-bold text-slate-800 dark:text-slate-200">
-              <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-xs">
+              <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-xs">
                 <Compass className="w-3.5 h-3.5" />
               </div>
               <span className="tracking-tight">{t.appTitle} · {language === 'de' ? 'Ausgabe 2026' : language === 'en' ? '2026 Edition' : '2026 Sürümü'}</span>
@@ -388,7 +406,7 @@ function AppContent() {
             <button
               type="button"
               onClick={() => setIsLegalModalOpen(true)}
-              className="inline-flex items-center gap-1.5 text-[#FF6B6B] dark:text-[#FF7A59] hover:underline font-semibold cursor-pointer transition-colors"
+              className="inline-flex items-center gap-1.5 text-teal-600 dark:text-teal-400 hover:underline font-semibold cursor-pointer transition-colors"
             >
               <ShieldCheck className="w-3.5 h-3.5" /> {t.securityDisclaimer}
             </button>

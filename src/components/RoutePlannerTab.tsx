@@ -495,11 +495,11 @@ export const RoutePlannerTab: React.FC<RoutePlannerTabProps> = ({ currentPasspor
       />
 
       {/* Main Builder Form Card */}
-      <div className="glass-panel border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-lg space-y-6 bg-gradient-to-br from-white/95 via-slate-50/80 to-[#FF6B6B]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80 relative overflow-hidden">
+      <div className="glass-panel border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-lg space-y-6 bg-gradient-to-br from-white/95 via-slate-50/80 to-[#0D9488]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80 relative overflow-hidden">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/70 dark:border-white/10">
           <div>
             <div className="flex items-center gap-2.5">
-              <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-xs">
+              <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-xs">
                 <Route className="w-4 h-4" />
               </div>
               <h2 className="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight">

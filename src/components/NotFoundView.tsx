@@ -75,7 +75,7 @@ export const NotFoundView: React.FC<NotFoundViewProps> = ({
           <span>{content.badge}</span>
         </div>
 
-        <div className="w-20 h-20 mx-auto rounded-3xl bg-gradient-to-tr from-[#FF6B6B]/20 via-slate-100 to-[#FF8E72]/20 dark:from-[#FF6B6B]/30 dark:via-slate-800 dark:to-[#FF8E72]/20 flex items-center justify-center text-[#FF6B6B] shadow-inner mb-6">
+        <div className="w-20 h-20 mx-auto rounded-3xl bg-gradient-to-tr from-[#0D9488]/20 via-slate-100 to-[#14B8A6]/20 dark:from-[#0D9488]/30 dark:via-slate-800 dark:to-[#14B8A6]/20 flex items-center justify-center text-[#0D9488] shadow-inner mb-6">
           <Compass className="w-10 h-10 animate-spin-slow" />
         </div>
 
@@ -112,7 +112,7 @@ export const NotFoundView: React.FC<NotFoundViewProps> = ({
                   window.history.pushState({}, '', `/${language}/country/${code}`);
                   window.dispatchEvent(new PopStateEvent('popstate'));
                 }}
-                className="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-[#FF6B6B] hover:text-white dark:hover:bg-[#FF6B6B] font-bold transition-all shadow-2xs cursor-pointer"
+                className="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-teal-600 hover:text-white dark:hover:bg-teal-600 font-bold transition-all shadow-2xs cursor-pointer"
               >
                 {code}
               </a>

@@ -191,7 +191,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
       {/* Results Header */}
       <div className="flex items-center justify-between px-1">
         <div>
-          <span className="text-2xl font-black text-slate-900 dark:text-white font-mono bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] bg-clip-text text-transparent">
+          <span className="text-2xl font-black text-slate-900 dark:text-white font-mono bg-gradient-to-r from-[#0D9488] to-[#14B8A6] bg-clip-text text-transparent">
             {results.length}
           </span>
           <span className="text-sm font-bold text-slate-600 dark:text-slate-300 ml-2">
@@ -228,7 +228,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
             return (
               <div
                 key={item.c}
-                className="glass-card rounded-3xl p-4 sm:p-5 shadow-xs flex flex-col justify-between gap-4 hover:border-[#FF6B6B]/40 dark:hover:border-[#FF6B6B]/30 hover:shadow-2xl transition-all duration-300 group"
+                className="glass-card rounded-3xl p-4 sm:p-5 shadow-xs flex flex-col justify-between gap-4 hover:border-[#0D9488]/40 dark:hover:border-[#0D9488]/30 hover:shadow-2xl transition-all duration-300 group"
               >
                 <div className="flex items-center gap-4 min-w-0">
                   {/* Dedicated Scenic Thumbnail Slot */}
@@ -258,7 +258,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
 
                   {/* Text Details with generous breathing whitespace */}
                   <div className="min-w-0 flex-1">
-                    <h4 className="font-extrabold text-slate-900 dark:text-white text-base group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors truncate">
+                    <h4 className="font-extrabold text-slate-900 dark:text-white text-base group-hover:text-[#0D9488] dark:group-hover:text-[#14B8A6] transition-colors truncate">
                       {countryName}
                     </h4>
                     <span className="text-xs text-slate-400 block truncate mt-0.5">

@@ -27,7 +27,8 @@ import {
   List,
   Flag,
   ShieldCheck,
-  BookOpen
+  BookOpen,
+  Route
 } from 'lucide-react';
 import {
   CountryItem,
@@ -61,6 +62,7 @@ interface ExploreTabProps {
   onSearchChange?: (val: string) => void;
   initialCountryCode?: string | null;
   onCountrySelect?: (code: string | null) => void;
+  onNavigateTab?: (tab: 'plan' | 'track' | 'profile' | 'consular') => void;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -117,7 +119,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   externalSearch,
   onSearchChange,
   initialCountryCode = null,
-  onCountrySelect
+  onCountrySelect,
+  onNavigateTab
 }) => {
   const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
@@ -250,7 +253,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           onClick={() => setViewMode('list')}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-full text-xs font-bold transition-all cursor-pointer ${
             viewMode === 'list'
-              ? 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
+              ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 border border-white/20'
               : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
           }`}
         >
@@ -262,7 +265,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           onClick={() => setViewMode('map')}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-full text-xs font-bold transition-all cursor-pointer ${
             viewMode === 'map'
-              ? 'bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 border border-white/20'
+              ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 border border-white/20'
               : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
           }`}
         >
@@ -283,14 +286,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
         />
       ) : (
         <>
-          {/* Hero Stats Card - Luxury Freedom & Mobility Experience */}
-          <section className="relative overflow-hidden glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-white/10 shadow-lg bg-gradient-to-br from-white/95 via-slate-50/80 to-[#FF6B6B]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80">
+          {/* Hero Stats Card - Luxury Freedom & Mobility Experience (Hidden when HomeHero is active) */}
+          {externalSearch === undefined && (
+          <section className="relative overflow-hidden glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-white/10 shadow-lg bg-gradient-to-br from-white/95 via-slate-50/80 to-[#0D9488]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80">
             {/* Ambient decorative glow */}
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-br from-[#FF6B6B]/15 via-[#FF8E72]/10 to-transparent rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-br from-[#0D9488]/15 via-[#14B8A6]/10 to-transparent rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 
             <div className="relative flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FF6B6B]/10 dark:bg-[#FF6B6B]/15 border border-[#FF6B6B]/20 text-[#FF6B6B] dark:text-[#FF8E72] text-xs font-bold mb-3 tracking-wide shadow-2xs">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0D9488]/10 dark:bg-[#0D9488]/15 border border-[#0D9488]/20 text-[#0D9488] dark:text-[#14B8A6] text-xs font-bold mb-3 tracking-wide shadow-2xs">
                   <span className="text-base select-none">{getFlag(currentPassport)}</span>
                   <span>{l(
                     `${passportName} Vatandaşlığı & Küresel Mobilite`,
@@ -310,7 +314,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   )}
                 </h1>
                 <div className="flex items-baseline gap-3">
-                  <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-[#FF6B6B] via-[#FF7A59] to-[#E5A93C] bg-clip-text text-transparent">
+                  <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-[#0D9488] via-[#14B8A6] to-[#E5A93C] bg-clip-text text-transparent">
                     {stats.totalFreeOrId}
                   </span>
                   <span className="text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-200">
@@ -401,7 +405,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <div
                   style={{ width: `${(stats.counts.visa / stats.total) * 100}%` }}
                   className="bg-rose-500"
-                  title={`${l('Vize gerekli:', 'Visa Required:', 'Visumpflicht:', 'Visado necesario:', 'Нужна виза:')} ${stats.counts.visa}`}
+                  title={`${l('Vize gerekli:', 'Visa Required:', 'Visumpflicht:', 'Visado necesario:', 'Нужна виza:')} ${stats.counts.visa}`}
                 />
               )}
               {stats.counts.none > 0 && (
@@ -445,14 +449,16 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               </span>
             </div>
           </section>
+          )}
 
           {/* Focal Point Search & Filter Controls */}
           <div className="space-y-3.5">
-            {/* Prominent, Welcoming Search Bar Focal Point */}
+            {/* Prominent, Welcoming Search Bar Focal Point (Hidden when HomeHero is active) */}
+            {externalSearch === undefined && (
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B6B]/20 via-[#FF8E72]/15 to-[#38BDF8]/15 rounded-full blur-md opacity-40 group-focus-within:opacity-100 group-hover:opacity-75 transition duration-500 pointer-events-none" />
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#0D9488]/20 via-[#14B8A6]/15 to-[#38BDF8]/15 rounded-full blur-md opacity-40 group-focus-within:opacity-100 group-hover:opacity-75 transition duration-500 pointer-events-none" />
               <div className="relative flex items-center">
-                <div className="absolute left-3.5 sm:left-4.5 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-md shadow-[#FF6B6B]/25 pointer-events-none transition-transform group-focus-within:scale-105">
+                <div className="absolute left-3.5 sm:left-4.5 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 pointer-events-none transition-transform group-focus-within:scale-105">
                   <Search className="w-5 h-5" />
                 </div>
                 <input
@@ -469,7 +475,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     setSearch(e.target.value);
                     onSearchChange?.(e.target.value);
                   }}
-                  className="w-full pl-15 sm:pl-18 pr-20 py-4 sm:py-5 glass-card bg-white/95 dark:bg-[#111625]/95 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-2xl sm:rounded-full text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-[#FF6B6B]/20 focus:border-[#FF6B6B]/60 transition-all"
+                  className="w-full pl-15 sm:pl-18 pr-20 py-4 sm:py-5 glass-card bg-white/95 dark:bg-[#111625]/95 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-2xl sm:rounded-full text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-[#0D9488]/20 focus:border-[#0D9488]/60 transition-all"
                 />
                 {search && (
                   <button
@@ -485,6 +491,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 )}
               </div>
             </div>
+            )}
 
             {/* Horizontal Filter Chips */}
             <div className="flex items-center gap-2.5 overflow-x-auto pb-1 scrollbar-none">
@@ -609,8 +616,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </button>
           </div>
 
-      {/* Destinations List */}
-      <div className="space-y-3">
+      {/* Destinations List & Desktop Companion Tools Grid (Redesign Layout) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <div className="lg:col-span-8 space-y-3">
         {filteredItems.length === 0 ? (
           <div className="text-center py-16 bg-white dark:bg-slate-800/40 rounded-2xl border border-slate-200 dark:border-slate-800 p-6">
             <p className="text-slate-500 dark:text-slate-400 text-sm">
@@ -702,7 +710,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             return (
               <div
                 key={item.c}
-                className="glass-card rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-[#FF6B6B]/30 dark:hover:border-[#FF6B6B]/25 transition-all duration-300 group"
+                className="glass-card rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-[#0D9488]/30 dark:hover:border-[#0D9488]/25 transition-all duration-300 group"
               >
                 {/* Modern Symmetrical Country Card Layout */}
                 <div className="w-full p-4 sm:p-5 lg:p-6 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
@@ -748,7 +756,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
                           className="flex flex-wrap items-center gap-2 sm:gap-2.5 cursor-pointer"
                         >
-                          <h3 className="font-black text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors">
+                          <h3 className="font-black text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#0D9488] dark:group-hover:text-[#14B8A6] transition-colors">
                             {countryName}
                           </h3>
                           <span className="text-xs sm:text-sm font-mono text-slate-400 font-extrabold">({item.c})</span>
@@ -999,9 +1007,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
                     </div>
                     {/* Kapsamlı Ülke Dosyası & Kültür Ansiklopedisi Aç Butonu */}
-                    <div className="flex items-center justify-between p-5 rounded-3xl glass-panel border border-[#FF6B6B]/20 bg-gradient-to-r from-[#FF6B6B]/10 via-[#FF8E72]/5 to-transparent flex-wrap gap-4 shadow-sm">
+                    <div className="flex items-center justify-between p-5 rounded-3xl glass-panel border border-[#0D9488]/20 bg-gradient-to-r from-[#0D9488]/10 via-[#14B8A6]/5 to-transparent flex-wrap gap-4 shadow-sm">
                       <div className="flex items-center gap-3.5">
-                        <div className="p-3 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-xs">
+                        <div className="p-3 rounded-2xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-xs">
                           <BookOpen className="w-5 h-5 flex-shrink-0" />
                         </div>
                         <div>
@@ -1632,6 +1640,103 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             );
           })
         )}
+        </div>
+
+        {/* Right Column: Desktop Quick Tool Cards (Matching Mockup 'Masaüstü') */}
+        <aside className="hidden lg:flex lg:col-span-4 flex-col gap-3.5 sticky top-24">
+          <div className="p-1 rounded-2xl bg-slate-100/80 dark:bg-slate-900/40 border border-slate-200/80 dark:border-white/10 text-xs font-bold text-slate-500 dark:text-slate-400 px-3 py-1.5 flex items-center justify-between">
+            <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
+            <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 px-1.5 py-0.5 rounded font-bold">2026</span>
+          </div>
+
+          {/* Tool Card 1: Rota & Sinerji */}
+          <button
+            type="button"
+            onClick={() => onNavigateTab?.('plan')}
+            className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Route className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span>{l('Rota & Sinerji', 'Route & Synergy', 'Route & Synergie', 'Ruta y Sinergia', 'Маршрут и Синергия')}</span>
+                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
+                  {l('Çok ülkeli rota planlayıcı ve ortak vize analizi', 'Multi-country itinerary and visa synergy', 'Mehrländer-Planer')}
+                </p>
+              </div>
+            </div>
+          </button>
+
+          {/* Tool Card 2: Schengen 90/180 */}
+          <button
+            type="button"
+            onClick={() => onNavigateTab?.('track')}
+            className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Calendar className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span>{l('Schengen 90/180 Sayacı', 'Schengen 90/180 Tracker', 'Schengen-Rechner', 'Calculadora Schengen', 'Шенген 90/180')}</span>
+                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
+                  {l('Son 180 gündeki kalış süresi ve çıkış tarihi', 'Rolling 180-day window and safe exit date', 'Rollierende 180 Tage')}
+                </p>
+              </div>
+            </div>
+          </button>
+
+          {/* Tool Card 3: Dijital Göçebe */}
+          <button
+            type="button"
+            onClick={() => onNavigateTab?.('plan')}
+            className="p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span>{l('Dijital Göçebe Araçları', 'Digital Nomad Tools', 'Nomaden-Tools', 'Herramientas Nómada', 'Для Номадов')}</span>
+                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">
+                  {l('183 gün vergi mukimliği ve internet hızları', '183-day tax tracker, speeds & nomad visas', 'Steuer- & Internet-Tracker')}
+                </p>
+              </div>
+            </div>
+          </button>
+
+          {/* Tool Card 4: Konsolosluk Destek */}
+          <button
+            type="button"
+            onClick={() => onNavigateTab?.('consular')}
+            className="p-4 rounded-2xl glass-crisis border border-rose-500/25 dark:border-rose-500/20 hover:border-rose-500/50 hover:shadow-lg transition-all text-left group cursor-pointer"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <ShieldAlert className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-extrabold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                  <span>{l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульство')}</span>
+                  <span className="text-rose-600 dark:text-rose-400 text-xs group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <p className="text-[11px] text-rose-700 dark:text-rose-300 mt-0.5 line-clamp-1">
+                  {l('7/24 Acil kriz masası & kayıp pasaport', '24/7 Diplomatic crisis hotline & lost passport', '24/7 Notfallkonsole')}
+                </p>
+              </div>
+            </div>
+          </button>
+        </aside>
       </div>
         </>
       )}

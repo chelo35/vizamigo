@@ -73,6 +73,7 @@ import { SocketPlugVector } from './SocketPlugVector';
 import { getCountryNomadApps } from '../data/rideAndDeliveryApps';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { getCountryNaturalH1 } from '../utils/schemaGenerator';
+import { StatusBadge, VisaStatus } from './design/StatusBadge';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -275,6 +276,14 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
   const badgeClass = item.id ? CAT_INFO.id.badgeBg : CAT_INFO[item.cat]?.badgeBg;
   const badgeLabel = getCategoryBadgeLabel(item, language);
+  const visaStatus: VisaStatus = item.id
+    ? 'id'
+    : item.cat === 'none'
+    ? 'denied'
+    : item.cat === 'eta'
+    ? 'evisa'
+    : (item.cat as VisaStatus);
+  const userPassportName = getCountryName(currentPassport, language);
 
   // Currency & Financial Calculations
   const destCurrencyCode = geography?.currencyCode || 'USD';
@@ -406,6 +415,28 @@ Planlayan: Vizamigo (vizamigo.com)`;
             >
               <X className="w-5 h-5" />
             </button>
+          </div>
+
+          {/* Teal Status Band & Stay Limit Card (Redesign Screen 5) */}
+          <div className="mt-4 rounded-2xl bg-teal-600 p-4 text-white shadow-md">
+            <div className="flex items-center justify-between">
+              <StatusBadge status={visaStatus} label={badgeLabel} className="!bg-white !text-emerald-800 shadow-xs" />
+              <span className="text-xs font-semibold text-teal-100">{userPassportName}</span>
+            </div>
+            {item.v !== undefined && (
+              <div className="mt-2 font-mono text-3xl sm:text-4xl font-black">
+                {item.v} <span className="text-lg font-bold font-sans">{l('Gün', 'Days', 'Tage', 'Días', 'Дней')}</span>
+              </div>
+            )}
+            <div className="text-xs text-teal-50 mt-1">
+              {l(
+                `${userPassportName} pasaportu için kalış süresi`,
+                `Stay duration for ${userPassportName} passport holders`,
+                `Aufenthaltsdauer für Inhaber des ${userPassportName}-Passes`,
+                `Duración de estancia para titulares del pasaporte ${userPassportName}`,
+                `Срок пребывания для владельцев паспорта ${userPassportName}`
+              )}
+            </div>
           </div>
 
           {/* De-Widgetized Lifestyle Bento Quick Bar */}
@@ -970,7 +1001,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           step="any"
                           value={converterAmount || ''}
                           onChange={(e) => setConverterAmount(Math.max(0, parseFloat(e.target.value) || 0))}
-                          className="w-full px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-white/15 text-slate-900 dark:text-white font-bold text-base focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]/30"
+                          className="w-full px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-white/15 text-slate-900 dark:text-white font-bold text-base focus:outline-none focus:ring-2 focus:ring-teal-500/30"
                           placeholder="100"
                         />
                         <span className="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs font-mono font-bold text-slate-400">

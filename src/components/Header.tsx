@@ -243,7 +243,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={onOpenPassportSelector}
-            className="flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-[#FF6B6B]/40 transition-all touch-target-min"
+            className="flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-teal-500/40 transition-all touch-target-min"
             title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
           >
             <span className="text-xl sm:text-2xl leading-none">{getFlag(currentPassport)}</span>
@@ -254,7 +254,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Center Section: Desktop / Tablet Full Concierge Search Bar */}
         <div className="hidden md:flex flex-1 max-w-xl mx-auto">
           <div className="relative group w-full">
-            <div className="absolute left-4.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-[#8E9DBE] group-focus-within:text-[#FF6B6B] transition-colors pointer-events-none">
+            <div className="absolute left-4.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-[#8E9DBE] group-focus-within:text-teal-600 dark:group-focus-within:text-teal-400 transition-colors pointer-events-none">
               <Search className="w-4.5 h-4.5" />
             </div>
             <input
@@ -263,7 +263,7 @@ export const Header: React.FC<HeaderProps> = ({
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full pl-12 pr-11 py-3 text-sm rounded-full border border-slate-200/90 dark:border-white/10 bg-white dark:bg-[#111625]/90 text-[#1A1D20] dark:text-white placeholder:text-slate-400 dark:placeholder:text-[#7A89A6] focus:outline-none focus:border-[#FF6B6B]/40 dark:focus:border-[#FF6B6B]/40 focus:ring-4 focus:ring-[#FF6B6B]/10 dark:focus:ring-[#FF6B6B]/15 shadow-xs hover:border-slate-300 dark:hover:border-white/20 transition-all font-medium"
+              className="w-full pl-12 pr-11 py-3 text-sm rounded-full border border-slate-200/90 dark:border-white/10 bg-white dark:bg-[#111625]/90 text-[#1A1D20] dark:text-white placeholder:text-slate-400 dark:placeholder:text-[#7A89A6] focus:outline-none focus:border-teal-500/50 dark:focus:border-teal-400/50 focus:ring-4 focus:ring-teal-500/10 dark:focus:ring-teal-500/15 shadow-xs hover:border-slate-300 dark:hover:border-white/20 transition-all font-medium"
             />
             {searchQuery && (
               <button
@@ -286,7 +286,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
             className={`md:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-full border transition-all cursor-pointer flex items-center justify-center touch-target-min ${
               mobileSearchOpen || searchQuery
-                ? 'bg-[#FF6B6B] text-white border-[#FF6B6B] shadow-xs'
+                ? 'bg-teal-600 text-white border-teal-600 shadow-xs'
                 : 'border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300'
             }`}
             aria-label="Arama Çubuğu"
@@ -740,7 +740,7 @@ export const Header: React.FC<HeaderProps> = ({
       {(mobileSearchOpen || searchQuery) && (
         <div className="md:hidden px-3.5 pb-3 pt-1 border-t border-slate-100 dark:border-white/5 animate-in slide-in-from-top-1 duration-150">
           <div className="relative w-full">
-            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#FF6B6B] pointer-events-none">
+            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-teal-600 dark:text-teal-400 pointer-events-none">
               <Search className="w-5 h-5" />
             </div>
             <input
@@ -749,7 +749,7 @@ export const Header: React.FC<HeaderProps> = ({
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full pl-12 pr-11 py-3 text-base rounded-2xl border border-slate-300 dark:border-white/15 bg-white dark:bg-[#111625] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-[#FF6B6B]/20 focus:border-[#FF6B6B] shadow-sm font-medium"
+              className="w-full pl-12 pr-11 py-3 text-base rounded-2xl border border-slate-300 dark:border-white/15 bg-white dark:bg-[#111625] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-teal-500/20 focus:border-teal-600 shadow-sm font-medium"
             />
             {searchQuery ? (
               <button

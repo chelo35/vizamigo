@@ -42,10 +42,10 @@ export const CompareTab: React.FC<CompareTabProps> = ({
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
       {/* Selector Box */}
-      <div className="glass-panel border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-lg space-y-5 bg-gradient-to-br from-white/95 via-slate-50/80 to-[#FF6B6B]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80 relative overflow-hidden">
+      <div className="glass-panel border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-lg space-y-5 bg-gradient-to-br from-white/95 via-slate-50/80 to-[#0D9488]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80 relative overflow-hidden">
         <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/10">
           <div className="flex items-center gap-2.5">
-            <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white shadow-xs">
+            <div className="p-1.5 rounded-xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-xs">
               <Scale className="w-4 h-4" />
             </div>
             <h2 className="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight">
@@ -71,13 +71,13 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             <button
               type="button"
               onClick={() => setActiveModal('A')}
-              className="w-full flex items-center justify-between gap-3 text-left p-3 rounded-xl bg-white/90 dark:bg-[#111625]/90 border border-slate-200/80 dark:border-white/10 hover:border-[#FF6B6B]/50 transition-all shadow-2xs cursor-pointer group"
+              className="w-full flex items-center justify-between gap-3 text-left p-3 rounded-xl bg-white/90 dark:bg-[#111625]/90 border border-slate-200/80 dark:border-white/10 hover:border-[#0D9488]/50 transition-all shadow-2xs cursor-pointer group"
             >
               <div className="flex items-center gap-3">
                 <span className="text-3xl leading-none group-hover:scale-105 transition-transform">{getFlag(passportA)}</span>
                 <span className="font-bold text-base text-slate-900 dark:text-white">{nameA}</span>
               </div>
-              <span className="text-xs text-[#FF6B6B] dark:text-[#FF8E72] font-bold px-2.5 py-1 rounded-full bg-[#FF6B6B]/10 border border-[#FF6B6B]/20">
+              <span className="text-xs text-[#0D9488] dark:text-[#14B8A6] font-bold px-2.5 py-1 rounded-full bg-[#0D9488]/10 border border-[#0D9488]/20">
                 {l('Değiştir', 'Change', 'Ändern')}
               </span>
             </button>
@@ -88,7 +88,7 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             <button
               type="button"
               onClick={swapPassports}
-              className="p-3 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 hover:border-[#FF6B6B]/40 text-slate-600 dark:text-slate-300 hover:text-[#FF6B6B] shadow-sm transition-all cursor-pointer hover:rotate-180 duration-300"
+              className="p-3 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 hover:border-[#0D9488]/40 text-slate-600 dark:text-slate-300 hover:text-[#0D9488] shadow-sm transition-all cursor-pointer hover:rotate-180 duration-300"
               title={l('Pasaportların yerini değiştir', 'Swap passports', 'Pässe tauschen')}
             >
               <ArrowRightLeft className="w-4 h-4" />
@@ -107,13 +107,13 @@ export const CompareTab: React.FC<CompareTabProps> = ({
             <button
               type="button"
               onClick={() => setActiveModal('B')}
-              className="w-full flex items-center justify-between gap-3 text-left p-3 rounded-xl bg-white/90 dark:bg-[#111625]/90 border border-slate-200/80 dark:border-white/10 hover:border-[#FF6B6B]/50 transition-all shadow-2xs cursor-pointer group"
+              className="w-full flex items-center justify-between gap-3 text-left p-3 rounded-xl bg-white/90 dark:bg-[#111625]/90 border border-slate-200/80 dark:border-white/10 hover:border-[#0D9488]/50 transition-all shadow-2xs cursor-pointer group"
             >
               <div className="flex items-center gap-3">
                 <span className="text-3xl leading-none group-hover:scale-105 transition-transform">{getFlag(passportB)}</span>
                 <span className="font-bold text-base text-slate-900 dark:text-white">{nameB}</span>
               </div>
-              <span className="text-xs text-[#FF6B6B] dark:text-[#FF8E72] font-bold px-2.5 py-1 rounded-full bg-[#FF6B6B]/10 border border-[#FF6B6B]/20">
+              <span className="text-xs text-[#0D9488] dark:text-[#14B8A6] font-bold px-2.5 py-1 rounded-full bg-[#0D9488]/10 border border-[#0D9488]/20">
                 {l('Değiştir', 'Change', 'Ändern')}
               </span>
             </button>
@@ -121,9 +121,9 @@ export const CompareTab: React.FC<CompareTabProps> = ({
         </div>
 
         {/* Dual Citizen Super Power Banner */}
-        <div className="p-4 sm:p-5 rounded-3xl glass-panel border border-[#FF6B6B]/20 bg-gradient-to-r from-[#FF6B6B]/10 via-[#FF8E72]/5 to-transparent flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+        <div className="p-4 sm:p-5 rounded-3xl glass-panel border border-[#0D9488]/20 bg-gradient-to-r from-[#0D9488]/10 via-[#14B8A6]/5 to-transparent flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
           <div className="flex items-center gap-3.5">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#FF6B6B] to-[#FF8E72] text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white flex items-center justify-center flex-shrink-0 shadow-xs">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
@@ -141,8 +141,8 @@ export const CompareTab: React.FC<CompareTabProps> = ({
               </p>
             </div>
           </div>
-          <div className="text-center glass-panel px-5 py-2.5 rounded-2xl border border-[#FF6B6B]/30 shadow-xs">
-            <span className="text-3xl font-black font-mono bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] bg-clip-text text-transparent">
+          <div className="text-center glass-panel px-5 py-2.5 rounded-2xl border border-[#0D9488]/30 shadow-xs">
+            <span className="text-3xl font-black font-mono bg-gradient-to-r from-[#0D9488] to-[#14B8A6] bg-clip-text text-transparent">
               {comparison.combinedFreedomScore}
             </span>
             <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 block mt-0.5">
@@ -155,7 +155,7 @@ export const CompareTab: React.FC<CompareTabProps> = ({
       {/* Comparison Summary Score Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
         <div className="glass-panel border border-slate-200/80 dark:border-white/10 p-5 rounded-2xl sm:rounded-3xl text-center shadow-xs">
-          <span className="text-3xl font-black font-mono block bg-gradient-to-r from-[#FF6B6B] to-[#FF8E72] bg-clip-text text-transparent">
+          <span className="text-3xl font-black font-mono block bg-gradient-to-r from-[#0D9488] to-[#14B8A6] bg-clip-text text-transparent">
             {comparison.scoreA}
           </span>
           <span className="text-xs font-bold text-slate-800 dark:text-slate-200 block mt-1">
