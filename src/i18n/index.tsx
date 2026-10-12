@@ -43,6 +43,8 @@ export function saveStoredLanguage(lang: SupportedLanguage): void {
   } catch {}
 }
 
+import { AUTO_TRANSLATE_ES, AUTO_TRANSLATE_RU, AUTO_TRANSLATE_DE } from './autoTranslateMap';
+
 export function lText(
   lang: string,
   trText: string,
@@ -51,9 +53,32 @@ export function lText(
   esText?: string,
   ruText?: string
 ): string {
-  if (lang === 'es' && esText) return esText;
-  if (lang === 'ru' && ruText) return ruText;
-  if (lang === 'de') return deText || enText || trText;
+  if (lang === 'es') {
+    if (esText) return esText;
+    const lookup = AUTO_TRANSLATE_ES[trText] || AUTO_TRANSLATE_ES[enText];
+    if (lookup) return lookup;
+    if (trText && trText.includes('Vatandaşlığı & Küresel Mobilite')) {
+      const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
+      return `Ciudadanía y Movilidad Global de ${country}`;
+    }
+    return enText || trText;
+  }
+  if (lang === 'ru') {
+    if (ruText) return ruText;
+    const lookup = AUTO_TRANSLATE_RU[trText] || AUTO_TRANSLATE_RU[enText];
+    if (lookup) return lookup;
+    if (trText && trText.includes('Vatandaşlığı & Küresel Mobilite')) {
+      const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
+      return `Гражданство и глобальная мобильность: ${country}`;
+    }
+    return enText || trText;
+  }
+  if (lang === 'de') {
+    if (deText) return deText;
+    const lookup = AUTO_TRANSLATE_DE[trText] || AUTO_TRANSLATE_DE[enText];
+    if (lookup) return lookup;
+    return enText || trText;
+  }
   if (lang === 'en') return enText || trText;
   return trText;
 }

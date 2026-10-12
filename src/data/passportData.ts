@@ -670,47 +670,135 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
   const currentLang = lang || (typeof localStorage !== 'undefined' ? localStorage.getItem('vr_lang') || 'tr' : 'tr');
 
   if (!item) {
-    return currentLang === 'de' ? 'Visa-Info' : currentLang === 'en' ? 'Visa Info' : 'Vize Bilgisi';
+    if (currentLang === 'es') return 'Información de Visado';
+    if (currentLang === 'ru') return 'Информация о визе';
+    if (currentLang === 'de') return 'Visa-Info';
+    if (currentLang === 'en') return 'Visa Info';
+    return 'Vize Bilgisi';
   }
 
   if (item.id) {
-    return currentLang === 'de' ? 'Personalausweis-Einreise' : currentLang === 'en' ? 'National ID Entry' : 'Kimlikle Giriş';
+    if (currentLang === 'es') return 'Entrada con DNI';
+    if (currentLang === 'ru') return 'Въезд по ID-карте';
+    if (currentLang === 'de') return 'Personalausweis-Einreise';
+    if (currentLang === 'en') return 'National ID Entry';
+    return 'Kimlikle Giriş';
   }
   if (/^\d+$/.test(item.v)) {
-    return currentLang === 'de' ? `${item.v} Tage visumfrei` : currentLang === 'en' ? `${item.v} Days Visa-Free` : `${item.v} Gün Vizesiz`;
+    if (currentLang === 'es') return `${item.v} días sin visado`;
+    if (currentLang === 'ru') return `${item.v} дн. без визы`;
+    if (currentLang === 'de') return `${item.v} Tage visumfrei`;
+    if (currentLang === 'en') return `${item.v} Days Visa-Free`;
+    return `${item.v} Gün Vizesiz`;
   }
   if (item.v === 'vf') {
-    return currentLang === 'de' ? 'Unbegrenzt / Visumfrei' : currentLang === 'en' ? 'Indefinite / Visa-Free' : 'Süresiz / Vizesiz';
+    if (currentLang === 'es') return 'Sin límite / Sin visado';
+    if (currentLang === 'ru') return 'Бессрочно / Без визы';
+    if (currentLang === 'de') return 'Unbegrenzt / Visumfrei';
+    if (currentLang === 'en') return 'Indefinite / Visa-Free';
+    return 'Süresiz / Vizesiz';
   }
   switch (item.cat) {
-    case 'free': return currentLang === 'de' ? 'Visumfrei' : currentLang === 'en' ? 'Visa-Free' : 'Vizesiz';
-    case 'id': return currentLang === 'de' ? 'Personalausweis-Einreise' : currentLang === 'en' ? 'National ID Entry' : 'Kimlikle Giriş';
-    case 'evisa': return currentLang === 'de' ? 'e-Visum' : currentLang === 'en' ? 'eVisa' : 'E-vize';
-    case 'voa': return currentLang === 'de' ? 'Visum bei Ankunft' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
-    case 'eta': return currentLang === 'de' ? 'ETA-Genehmigung' : currentLang === 'en' ? 'ETA Authorization' : 'ETA İzni';
-    case 'visa': return currentLang === 'de' ? 'Visum erforderlich' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
-    case 'none': return currentLang === 'de' ? 'Keine Einreise' : currentLang === 'en' ? 'Admission Denied' : 'Giriş Yok';
-    default: return currentLang === 'de' ? 'Visum erforderlich' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
+    case 'free':
+      if (currentLang === 'es') return 'Sin Visado';
+      if (currentLang === 'ru') return 'Без Визы';
+      return currentLang === 'de' ? 'Visumfrei' : currentLang === 'en' ? 'Visa-Free' : 'Vizesiz';
+    case 'id':
+      if (currentLang === 'es') return 'Entrada con DNI';
+      if (currentLang === 'ru') return 'Въезд по ID-карте';
+      return currentLang === 'de' ? 'Personalausweis-Einreise' : currentLang === 'en' ? 'National ID Entry' : 'Kimlikle Giriş';
+    case 'evisa':
+      if (currentLang === 'es') return 'Visado Electrónico';
+      if (currentLang === 'ru') return 'Электронная Виза';
+      return currentLang === 'de' ? 'e-Visum' : currentLang === 'en' ? 'eVisa' : 'E-vize';
+    case 'voa':
+      if (currentLang === 'es') return 'Visado a la Llegada';
+      if (currentLang === 'ru') return 'Виза по Прибытии';
+      return currentLang === 'de' ? 'Visum bei Ankunft' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
+    case 'eta':
+      if (currentLang === 'es') return 'Autorización ETA';
+      if (currentLang === 'ru') return 'Разрешение ETA';
+      return currentLang === 'de' ? 'ETA-Genehmigung' : currentLang === 'en' ? 'ETA Authorization' : 'ETA İzni';
+    case 'visa':
+      if (currentLang === 'es') return 'Visado Obligatorio';
+      if (currentLang === 'ru') return 'Требуется Виза';
+      return currentLang === 'de' ? 'Visum erforderlich' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
+    case 'none':
+      if (currentLang === 'es') return 'Entrada Denegada';
+      if (currentLang === 'ru') return 'Въезд Запрещен';
+      return currentLang === 'de' ? 'Keine Einreise' : currentLang === 'en' ? 'Admission Denied' : 'Giriş Yok';
+    default:
+      if (currentLang === 'es') return 'Visado Obligatorio';
+      if (currentLang === 'ru') return 'Требуется Виза';
+      return currentLang === 'de' ? 'Visum erforderlich' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
   }
 }
 
 export function getCategoryShortLabel(cat: VisaCategory, lang?: string): string {
   const currentLang = lang || (typeof localStorage !== 'undefined' ? localStorage.getItem('vr_lang') || 'tr' : 'tr');
   switch (cat) {
-    case 'free': return currentLang === 'de' ? 'Visumfrei' : currentLang === 'en' ? 'Visa-Free' : 'Vizesiz';
-    case 'id': return currentLang === 'de' ? 'Ausweis' : currentLang === 'en' ? 'National ID' : 'Kimlikle';
-    case 'evisa': return currentLang === 'de' ? 'e-Visum' : currentLang === 'en' ? 'eVisa' : 'E-vize';
-    case 'voa': return currentLang === 'de' ? 'Visum b. Ank.' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
-    case 'eta': return currentLang === 'de' ? 'ETA' : currentLang === 'en' ? 'ETA' : 'ETA';
-    case 'visa': return currentLang === 'de' ? 'Visum nötig' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
-    case 'none': return currentLang === 'de' ? 'Kein Zutritt' : currentLang === 'en' ? 'No Entry' : 'Giriş Yok';
-    default: return currentLang === 'de' ? 'Visum' : currentLang === 'en' ? 'Visa' : 'Vize';
+    case 'free':
+      if (currentLang === 'es') return 'Sin visado';
+      if (currentLang === 'ru') return 'Без визы';
+      return currentLang === 'de' ? 'Visumfrei' : currentLang === 'en' ? 'Visa-Free' : 'Vizesiz';
+    case 'id':
+      if (currentLang === 'es') return 'DNI';
+      if (currentLang === 'ru') return 'ID-карта';
+      return currentLang === 'de' ? 'Ausweis' : currentLang === 'en' ? 'National ID' : 'Kimlikle';
+    case 'evisa':
+      if (currentLang === 'es') return 'E-visa';
+      if (currentLang === 'ru') return 'Э-виза';
+      return currentLang === 'de' ? 'e-Visum' : currentLang === 'en' ? 'eVisa' : 'E-vize';
+    case 'voa':
+      if (currentLang === 'es') return 'A la llegada';
+      if (currentLang === 'ru') return 'По приб.';
+      return currentLang === 'de' ? 'Visum b. Ank.' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
+    case 'eta':
+      return 'ETA';
+    case 'visa':
+      if (currentLang === 'es') return 'Visado req.';
+      if (currentLang === 'ru') return 'Нужна виза';
+      return currentLang === 'de' ? 'Visum nötig' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
+    case 'none':
+      if (currentLang === 'es') return 'Sin acceso';
+      if (currentLang === 'ru') return 'Нет въезда';
+      return currentLang === 'de' ? 'Kein Zutritt' : currentLang === 'en' ? 'No Entry' : 'Giriş Yok';
+    default:
+      return currentLang === 'de' ? 'Visum' : currentLang === 'en' ? 'Visa' : 'Vize';
   }
 }
 
 export function getRegionName(region: string, lang?: string): string {
   const currentLang = lang || (typeof localStorage !== 'undefined' ? localStorage.getItem('vr_lang') || 'tr' : 'tr');
   if (currentLang === 'tr') return region;
+  if (currentLang === 'es') {
+    switch (region) {
+      case 'Avrupa': return 'Europa';
+      case 'Asya': return 'Asia';
+      case 'Orta Doğu': return 'Oriente Medio';
+      case 'Afrika': return 'África';
+      case 'Kuzey & Orta Amerika': return 'América del Norte y Central';
+      case 'Güney Amerika': return 'América del Sur';
+      case 'Okyanusya': return 'Oceanía';
+      case 'Tüm Bölgeler': return 'Todas las Regiones';
+      case 'Diğer': return 'Otros';
+      default: return region;
+    }
+  }
+  if (currentLang === 'ru') {
+    switch (region) {
+      case 'Avrupa': return 'Европа';
+      case 'Asya': return 'Азия';
+      case 'Orta Doğu': return 'Ближний Восток';
+      case 'Afrika': return 'Африка';
+      case 'Kuzey & Orta Amerika': return 'Северная и Центральная Америка';
+      case 'Güney Amerika': return 'Южная Америка';
+      case 'Okyanusya': return 'Океания';
+      case 'Tüm Bölgeler': return 'Все Регионы';
+      case 'Diğer': return 'Другие';
+      default: return region;
+    }
+  }
   if (currentLang === 'de') {
     switch (region) {
       case 'Avrupa': return 'Europa';
@@ -752,7 +840,7 @@ export function resolveVisaCategory(val: string): VisaCategory {
 const displayNamesCache: Record<string, Intl.DisplayNames> = {};
 
 function getDisplayNames(lang: string): Intl.DisplayNames {
-  const norm = lang === 'en' ? 'en' : lang === 'de' ? 'de' : 'tr';
+  const norm = (lang === 'es' || lang === 'ru' || lang === 'de' || lang === 'en') ? lang : 'tr';
   if (!displayNamesCache[norm]) {
     try {
       displayNamesCache[norm] = new Intl.DisplayNames([norm], { type: 'region' });

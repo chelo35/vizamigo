@@ -20,12 +20,7 @@ interface WhereCanIGoTabProps {
 }
 
 export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport }) => {
-  const { language, t } = useI18n();
-  const l = (trText: string, enText: string, deText?: string): string => {
-    if (language === 'de') return deText || enText;
-    if (language === 'en') return enText;
-    return trText;
-  };
+  const { language, t, l } = useI18n();
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set(['free', 'id']));
   const [selectedRegion, setSelectedRegion] = useState<string>('all');
   const [minDays, setMinDays] = useState<number>(0);

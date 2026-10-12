@@ -40,33 +40,33 @@ export const Navigation: React.FC<NavigationProps> = ({
   const navItems = [
     {
       key: 'explore' as TabKey,
-      label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken'),
+      label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны'),
       shortLabel: t.navExplore,
       icon: Compass,
       tag: '199'
     },
     {
       key: 'plan' as TabKey,
-      label: l('Rota & Sinerji', 'Plan & Synergy', 'Routenplaner'),
+      label: l('Rota & Sinerji', 'Plan & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты'),
       shortLabel: t.navPlan,
       icon: Route
     },
     {
       key: 'track' as TabKey,
-      label: l('Schengen 90/180', 'Track 90/180', 'Tage-Tracker'),
+      label: l('Schengen 90/180', 'Track 90/180', 'Tage-Tracker', 'Calculadora Schengen', 'Калькулятор Шенгена'),
       shortLabel: t.navTrack,
       icon: Calendar
     },
     {
       key: 'profile' as TabKey,
-      label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil'),
+      label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек'),
       shortLabel: t.navProfile,
       icon: User
     },
     {
       key: 'consular' as TabKey,
-      label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe'),
-      shortLabel: l('Acil Destek', 'Crisis', 'Notfall'),
+      label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'),
+      shortLabel: l('Acil Destek', 'Crisis', 'Notfall', 'Emergencia', 'Помощь'),
       icon: ShieldAlert,
       crisis: true
     }
@@ -135,7 +135,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   {getCountryName(currentPassport, language)}
                 </div>
                 <div className="text-[11px] font-mono text-slate-400 dark:text-[#8E9DBE] font-medium">
-                  {currentPassport} · {l('Biyometrik', 'Biometric', 'Biometrisch')}
+                  {currentPassport} · {l('Biyometrik', 'Biometric', 'Biometrisch', 'Biométrico', 'Биометрический')}
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             <div className="flex items-center justify-between">
               <span className="font-extrabold text-[11px] text-[#FF6B6B] dark:text-[#FF8E72] flex items-center gap-1.5">
                 <PhoneCall className="w-3.5 h-3.5 text-[#FF6B6B]" />
-                <span>{l('Diplomatik Kriz Masası', 'Crisis Hotline', 'Konsular-Notruf')}</span>
+                <span>{l('Diplomatik Kriz Masası', 'Crisis Hotline', 'Konsular-Notruf', 'Mesa de Crisis Diplomática', 'Кризисный Центр')}</span>
               </span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             </div>
@@ -213,7 +213,9 @@ export const Navigation: React.FC<NavigationProps> = ({
               {l(
                 'Pasaport kaybı ve acil tahliye için 7/24 aktif resmi konsolosluk hattı.',
                 '24/7 emergency hotline for lost passports & evacuations.',
-                '24/7 Notruf für Passverlust & Evakuierung.'
+                '24/7 Notruf für Passverlust & Evakuierung.',
+                'Línea consular de emergencia 24/7 para pérdida de pasaportes y evacuaciones.',
+                'Круглосуточная горячая линия консульства для утери паспорта и эвакуации.'
               )}
             </p>
           </div>

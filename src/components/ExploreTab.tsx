@@ -114,12 +114,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   externalSearch,
   onSearchChange
 }) => {
-  const { language, t } = useI18n();
-  const l = (trText: string, enText: string, deText?: string): string => {
-    if (language === 'de') return deText || enText;
-    if (language === 'en') return enText;
-    return trText;
-  };
+  const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
   const [filter, setFilter] = useState<string>('all');
   const [search, setSearch] = useState<string>(() => externalSearch || '');
@@ -237,7 +232,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           }`}
         >
           <List className="w-4 h-4" />
-          <span>{l('🗂️ Ülke Listesi & Detaylar', '🗂️ Country Directory & Details', '🗂️ Länderübersicht & Details')}</span>
+          <span>{l('🗂️ Ülke Listesi & Detaylar', '🗂️ Country Directory & Details', '🗂️ Länderübersicht & Details', '🗂️ Directorio de Países y Detalles', '🗂️ Список Стран и Детали')}</span>
         </button>
         <button
           type="button"
@@ -249,7 +244,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           }`}
         >
           <Globe className="w-4 h-4" />
-          <span>{l('🗺️ İnteraktif Dünya Haritası', '🗺️ Interactive World Map', '🗺️ Interaktive Weltkarte')}</span>
+          <span>{l('🗺️ İnteraktif Dünya Haritası', '🗺️ Interactive World Map', '🗺️ Interaktive Weltkarte', '🗺️ Mapa Mundial Interactivo', '🗺️ Интерактивная Карта Мира')}</span>
         </button>
       </div>
 
@@ -274,24 +269,38 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FF6B6B]/10 dark:bg-[#FF6B6B]/15 border border-[#FF6B6B]/20 text-[#FF6B6B] dark:text-[#FF8E72] text-xs font-bold mb-3 tracking-wide shadow-2xs">
                   <span className="text-base select-none">{getFlag(currentPassport)}</span>
-                  <span>{l(`${passportName} Vatandaşlığı & Küresel Mobilite`, `${passportName} Citizenship & Global Mobility`, `${passportName} Staatsbürgerschaft & Mobilität`)}</span>
+                  <span>{l(
+                    `${passportName} Vatandaşlığı & Küresel Mobilite`,
+                    `${passportName} Citizenship & Global Mobility`,
+                    `${passportName} Staatsbürgerschaft & Mobilität`,
+                    `Ciudadanía y Movilidad Global de ${passportName}`,
+                    `Гражданство и глобальная мобильность: ${passportName}`
+                  )}</span>
                 </div>
                 <div className="flex items-baseline gap-3">
                   <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-[#FF6B6B] via-[#FF7A59] to-[#E5A93C] bg-clip-text text-transparent">
                     {stats.totalFreeOrId}
                   </span>
                   <span className="text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-200">
-                    {l('ülkeye vizesiz veya kimlikle giriş', 'destinations visa-free or with ID card', 'Länder visumfrei oder mit Personalausweis')}
+                    {l(
+                      'ülkeye vizesiz veya kimlikle giriş',
+                      'destinations visa-free or with ID card',
+                      'Länder visumfrei oder mit Personalausweis',
+                      'destinos sin visado o con DNI',
+                      'направлений без визы или по ID-карте'
+                    )}
                   </span>
                 </div>
                 <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-xl leading-relaxed">
                   {l(
                     `Toplam ${items.length} ülke ve bölge arasında e-vize ve kapıda vize dahil edildiğinde kolay erişim skoru: `,
                     `Out of ${items.length} destinations worldwide, easy access score including eVisa and Visa on Arrival is: `,
-                    `Von weltweit ${items.length} Zielen beträgt der einfache Zugangsscore inkl. eVisa und Visa bei Ankunft: `
+                    `Von weltweit ${items.length} Zielen beträgt der einfache Zugangsscore inkl. eVisa und Visa bei Ankunft: `,
+                    `De un total de ${items.length} destinos, la puntuación de acceso fácil con e-visa y visado a la llegada es: `,
+                    `Из ${items.length} направлений показатель легкого доступа с e-Visa и визой по прибытии: `
                   )}
                   <b className="text-slate-900 dark:text-white font-bold">
-                    {stats.totalEasyAccess} {l('ülke', 'countries', 'Länder')}
+                    {stats.totalEasyAccess} {l('ülke', 'countries', 'Länder', 'países', 'стран')}
                   </b>.
                 </p>
               </div>
@@ -301,19 +310,19 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <div className="p-1.5">
                   <div className="text-xl font-black text-emerald-600 dark:text-emerald-400 font-mono">{stats.counts.free + stats.counts.id}</div>
                   <div className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                    {l('Vizesiz/Kimlik', 'Visa-Free / ID', 'Visumfrei / Ausweis')}
+                    {l('Vizesiz/Kimlik', 'Visa-Free / ID', 'Visumfrei / Ausweis', 'Sin Visado / DNI', 'Без визы / ID')}
                   </div>
                 </div>
                 <div className="p-1.5 border-x border-slate-200/80 dark:border-white/10">
                   <div className="text-xl font-black text-sky-600 dark:text-sky-400 font-mono">{stats.counts.evisa + stats.counts.voa + stats.counts.eta}</div>
                   <div className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                    {l('E-vize / Kapı', 'eVisa / VoA', 'e-Visum / Ankunft')}
+                    {l('E-vize / Kapı', 'eVisa / VoA', 'e-Visum / Ankunft', 'E-visa / Llegada', 'Э-виза / По приб.')}
                   </div>
                 </div>
                 <div className="p-1.5">
                   <div className="text-xl font-black text-rose-500 font-mono">{stats.counts.visa}</div>
                   <div className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                    {l('Vize Gerekli', 'Visa Required', 'Visum nötig')}
+                    {l('Vize Gerekli', 'Visa Required', 'Visum nötig', 'Visado Obligatorio', 'Нужна Виза')}
                   </div>
                 </div>
               </div>
@@ -325,14 +334,14 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <div
                   style={{ width: `${(stats.counts.id / stats.total) * 100}%` }}
                   className="bg-emerald-600 rounded-l-full"
-                  title={`${l('Kimlikle:', 'National ID:', 'Mit Personalausweis:')} ${stats.counts.id}`}
+                  title={`${l('Kimlikle:', 'National ID:', 'Mit Personalausweis:', 'Con DNI:', 'По ID-карте:')} ${stats.counts.id}`}
                 />
               )}
               {stats.counts.free > 0 && (
                 <div
                   style={{ width: `${(stats.counts.free / stats.total) * 100}%` }}
                   className="bg-emerald-400"
-                  title={`${l('Vizesiz:', 'Visa-Free:', 'Visumfrei:')} ${stats.counts.free}`}
+                  title={`${l('Vizesiz:', 'Visa-Free:', 'Visumfrei:', 'Sin visado:', 'Без визы:')} ${stats.counts.free}`}
                 />
               )}
               {stats.counts.eta > 0 && (
@@ -346,28 +355,28 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <div
                   style={{ width: `${(stats.counts.evisa / stats.total) * 100}%` }}
                   className="bg-sky-400"
-                  title={`${l('E-vize:', 'eVisa:', 'e-Visum:')} ${stats.counts.evisa}`}
+                  title={`${l('E-vize:', 'eVisa:', 'e-Visum:', 'E-visa:', 'Э-виза:')} ${stats.counts.evisa}`}
                 />
               )}
               {stats.counts.voa > 0 && (
                 <div
                   style={{ width: `${(stats.counts.voa / stats.total) * 100}%` }}
                   className="bg-amber-400"
-                  title={`${l('Kapıda vize:', 'Visa on Arrival:', 'Visum bei Ankunft:')} ${stats.counts.voa}`}
+                  title={`${l('Kapıda vize:', 'Visa on Arrival:', 'Visum bei Ankunft:', 'A la llegada:', 'По прибытии:')} ${stats.counts.voa}`}
                 />
               )}
               {stats.counts.visa > 0 && (
                 <div
                   style={{ width: `${(stats.counts.visa / stats.total) * 100}%` }}
                   className="bg-rose-500"
-                  title={`${l('Vize gerekli:', 'Visa Required:', 'Visumpflicht:')} ${stats.counts.visa}`}
+                  title={`${l('Vize gerekli:', 'Visa Required:', 'Visumpflicht:', 'Visado necesario:', 'Нужна виза:')} ${stats.counts.visa}`}
                 />
               )}
               {stats.counts.none > 0 && (
                 <div
                   style={{ width: `${(stats.counts.none / stats.total) * 100}%` }}
                   className="bg-slate-400 rounded-r-full"
-                  title={`${l('Giriş yok:', 'No Entry:', 'Keine Einreise:')} ${stats.counts.none}`}
+                  title={`${l('Giriş yok:', 'No Entry:', 'Keine Einreise:', 'Sin entrada:', 'Въезд запрещен:')} ${stats.counts.none}`}
                 />
               )}
             </div>
@@ -377,20 +386,20 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               {stats.counts.id > 0 && (
                 <span className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 shadow-2xs" />
-                  {l('Kimlikle:', 'National ID:', 'Mit Personalausweis:')} <b>{stats.counts.id}</b>
+                  {l('Kimlikle:', 'National ID:', 'Mit Personalausweis:', 'Con DNI:', 'По ID-карте:')} <b>{stats.counts.id}</b>
                 </span>
               )}
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-2xs" />
-                {l('Vizesiz:', 'Visa-Free:', 'Visumfrei:')} <b>{stats.counts.free}</b>
+                {l('Vizesiz:', 'Visa-Free:', 'Visumfrei:', 'Sin visado:', 'Без визы:')} <b>{stats.counts.free}</b>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-sky-400 shadow-2xs" />
-                {l('E-vize:', 'eVisa:', 'e-Visum:')} <b>{stats.counts.evisa}</b>
+                {l('E-vize:', 'eVisa:', 'e-Visum:', 'E-visa:', 'Э-виза:')} <b>{stats.counts.evisa}</b>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-2xs" />
-                {l('Kapıda vize:', 'Visa on Arrival:', 'Visum bei Ankunft:')} <b>{stats.counts.voa}</b>
+                {l('Kapıda vize:', 'Visa on Arrival:', 'Visum bei Ankunft:', 'A la llegada:', 'По прибытии:')} <b>{stats.counts.voa}</b>
               </span>
               {stats.counts.eta > 0 && (
                 <span className="flex items-center gap-1.5">
@@ -400,7 +409,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               )}
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-2xs" />
-                {l('Vize gerekli:', 'Visa Required:', 'Visum erforderlich:')} <b>{stats.counts.visa}</b>
+                {l('Vize gerekli:', 'Visa Required:', 'Visum erforderlich:', 'Visado necesario:', 'Нужна виза:')} <b>{stats.counts.visa}</b>
               </span>
             </div>
           </section>
@@ -419,7 +428,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   placeholder={l(
                     '✨ Gitmek istediğiniz ülkeyi arayın... (Örn: Arnavutluk, Bosna Hersek, Japonya, Karadağ, Tayland...)',
                     '✨ Search any destination to explore... (e.g. Albania, Bosnia, Japan, Montenegro, Thailand...)',
-                    '✨ Reiseziel zum Erkunden suchen... (z. B. Albanien, Bosnien, Japan, Montenegro, Thailand...)'
+                    '✨ Reiseziel zum Erkunden suchen... (z. B. Albanien, Bosnien, Japan, Montenegro, Thailand...)',
+                    '✨ Busque cualquier destino... (Ej: Albania, Bosnia, Japón, Montenegro, Tailandia...)',
+                    '✨ Поиск направления... (Напр: Албания, Босния, Япония, Черногория, Таиланд...)'
                   )}
                   value={search}
                   onChange={(e) => {
@@ -437,7 +448,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     }}
                     className="absolute right-3.5 sm:right-4 text-xs font-bold px-3 py-1.5 rounded-full bg-slate-100/90 dark:bg-slate-800/80 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-xs hover:scale-105"
                   >
-                    {l('Temizle', 'Clear', 'Löschen')}
+                    {l('Temizle', 'Clear', 'Löschen', 'Limpiar', 'Очистить')}
                   </button>
                 )}
               </div>
@@ -454,7 +465,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     : 'tab-chip-inactive'
                 }`}
               >
-                {l('Tümü', 'All', 'Alle')} ({items.length})
+                {l('Tümü', 'All', 'Alle', 'Todos', 'Все')} ({items.length})
               </button>
               {stats.counts.id > 0 && (
                 <button
@@ -466,7 +477,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       : 'tab-chip-inactive'
                   }`}
                 >
-                  {l('Kimlikle Giriş', 'National ID', 'Personalausweis')} ({stats.counts.id})
+                  {l('Kimlikle Giriş', 'National ID', 'Personalausweis', 'Entrada con DNI', 'По ID-карте')} ({stats.counts.id})
                 </button>
               )}
               <button
@@ -478,7 +489,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     : 'tab-chip-inactive'
                 }`}
               >
-                {l('Vizesiz', 'Visa-Free', 'Visumfrei')} ({stats.counts.free})
+                {l('Vizesiz', 'Visa-Free', 'Visumfrei', 'Sin Visado', 'Без Визы')} ({stats.counts.free})
               </button>
               <button
                 type="button"
@@ -489,7 +500,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     : 'tab-chip-inactive'
                 }`}
               >
-                {l('E-vize', 'eVisa', 'e-Visum')} ({stats.counts.evisa})
+                {l('E-vize', 'eVisa', 'e-Visum', 'E-visa', 'Электронная Виза')} ({stats.counts.evisa})
               </button>
               <button
                 type="button"
@@ -500,7 +511,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     : 'tab-chip-inactive'
                 }`}
               >
-                {l('Kapıda Vize', 'Visa on Arrival', 'Visum b. Ankunft')} ({stats.counts.voa})
+                {l('Kapıda Vize', 'Visa on Arrival', 'Visum b. Ankunft', 'Visado a la Llegada', 'Виза по Прибытии')} ({stats.counts.voa})
               </button>
               {stats.counts.eta > 0 && (
                 <button
@@ -524,7 +535,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     : 'tab-chip-inactive'
                 }`}
               >
-                {l('Vize Gerekli', 'Visa Required', 'Visum erforderlich')} ({stats.counts.visa})
+                {l('Vize Gerekli', 'Visa Required', 'Visum erforderlich', 'Visado Requerido', 'Нужна Виза')} ({stats.counts.visa})
               </button>
             </div>
           </div>
@@ -533,20 +544,26 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 sm:p-5 rounded-3xl glass-panel border border-emerald-500/25 dark:border-emerald-500/20 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-sky-500/10 text-xs shadow-sm">
             <div className="flex items-center gap-3.5">
               <div className="w-11 h-11 rounded-2xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 shadow-2xs">
-                <ShieldCheck className="w-5 h-5" />
+                <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                   <span className="font-extrabold text-slate-900 dark:text-slate-100 text-sm">
                     {t.auditConsoleTitle}
                   </span>
                   <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500 text-white font-mono text-[10px] font-bold shadow-2xs">
                     <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-                    CANLI TEYİTLİ
+                    {l('CANLI TEYİTLİ', 'LIVE VERIFIED', 'LIVE GEPRÜFT', 'VERIFICADO EN VIVO', 'ПРОВЕРЕНО')}
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-                  {l('15 kritik destinasyon IATA Timatic ve konsolosluk genelgeleriyle taranıyor; %100 açık veri teyidi aktif.', '15 key destinations actively audited against IATA Timatic & consular decrees.', '15 Reiseziele aktiv mit IATA Timatic & Konsulatsbeschlüssen abgeglichen.')}
+                  {l(
+                    '15 kritik destinasyon IATA Timatic ve konsolosluk genelgeleriyle taranıyor; %100 açık veri teyidi aktif.',
+                    '15 key destinations actively audited against IATA Timatic & consular decrees.',
+                    '15 Reiseziele aktiv mit IATA Timatic & Konsulatsbeschlüssen abgeglichen.',
+                    '15 destinos clave auditados activamente según IATA Timatic y circulares consulares; 100% verificación de datos abiertos.',
+                    '15 ключевых направлений непрерывно сверяются с IATA Timatic и консульскими постановлениями; 100% открытая проверка данных.'
+                  )}
                 </p>
               </div>
             </div>
@@ -556,7 +573,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-xs transition-all cursor-pointer whitespace-nowrap self-stretch sm:self-auto justify-center"
             >
               <ShieldCheck className="w-4 h-4" />
-              <span>{l('Denetim Masasını Aç', 'Open Audit Console', 'Audit-Konsole öffnen')}</span>
+              <span>{l('Denetim Masasını Aç', 'Open Audit Console', 'Audit-Konsole öffnen', 'Abrir Panel de Auditoría', 'Открыть Панель Аудита')}</span>
             </button>
           </div>
 
@@ -655,18 +672,18 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 key={item.c}
                 className="glass-card rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-[#FF6B6B]/30 dark:hover:border-[#FF6B6B]/25 transition-all duration-300 group"
               >
-                {/* Modern Card Summary with ETS Tur & Booking aesthetics */}
-                <div className="w-full p-4 sm:p-6 lg:p-7 flex flex-col lg:flex-row lg:items-center justify-between gap-5 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
-                  <div
-                    onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                    className="flex items-start sm:items-center gap-4 sm:gap-6 min-w-0 flex-1 cursor-pointer"
-                  >
-                    {/* Scenic Landscape Landmark Thumbnail */}
-                    <div className="country-thumbnail-slot w-32 h-28 sm:w-44 sm:h-32 rounded-2xl shadow-sm flex-shrink-0">
+                {/* Modern Symmetrical Country Card Layout */}
+                <div className="w-full p-4 sm:p-5 lg:p-6 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
+                  <div className="flex flex-col md:flex-row md:items-start gap-4 sm:gap-5">
+                    {/* 1. Landmark Scenic Thumbnail */}
+                    <div
+                      onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
+                      className="country-thumbnail-slot w-full md:w-48 lg:w-56 h-36 md:h-36 rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                    >
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
-                        className="country-thumbnail-image country-thumbnail-images group-hover:scale-105 transition-transform duration-500"
+                        className="country-thumbnail-image group-hover/thumb:scale-105 transition-transform duration-500 w-full h-full object-cover"
                         loading="lazy"
                         onError={(e) => {
                           const target = e.currentTarget;
@@ -677,48 +694,71 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       <div className="country-thumbnail-scrim" />
 
                       {/* Floating Flag Badge Capsule in top-left */}
-                      <div className="absolute top-2 left-2 px-2.5 py-1 rounded-full bg-slate-900/75 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
+                      <div className="absolute top-2 left-2 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
                         {getFlag(item.c)}
                       </div>
 
-                      {/* Landmark Caption in bottom-left */}
-                      <div className="absolute bottom-2 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md">
-                        {visual.landmark}
+                      {/* Landmark Caption in bottom */}
+                      <div className="absolute bottom-2 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md flex items-center gap-1">
+                        <span>📍</span>
+                        <span className="truncate">{visual.landmark}</span>
                       </div>
                     </div>
 
-                    <div className="min-w-0 flex-1 space-y-2.5">
-                      <div className="flex items-center gap-2.5 flex-wrap">
-                        <span className="font-black text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors truncate">
-                          {countryName}
-                        </span>
-                        <span className="text-xs sm:text-sm font-mono text-slate-400 font-extrabold">({item.c})</span>
-                        <span className={`text-xs sm:text-sm px-4 py-1 rounded-full font-extrabold shadow-2xs ${badgeClass}`}>
-                          {badgeText}
-                        </span>
-
-                        {/* Şeffaf Teyit Rozeti */}
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleOpenAudit();
-                          }}
-                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-bold text-xs bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25 hover:bg-emerald-500/20 transition-all shadow-2xs cursor-pointer"
-                          title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen')}
+                    {/* 2. Main Details & Symmetrical Grid Area */}
+                    <div className="flex-1 min-w-0 flex flex-col justify-between gap-3">
+                      {/* Top Header Row: Country Name + Badges + Traveler Score */}
+                      <div className="flex flex-wrap items-center justify-between gap-2.5">
+                        <div
+                          onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
+                          className="flex flex-wrap items-center gap-2 sm:gap-2.5 cursor-pointer"
                         >
-                          <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
-                          <span>{l('✓ 2026 Teyitli', '✓ 2026 Verified', '✓ 2026 Geprüft')}</span>
-                        </button>
+                          <h3 className="font-black text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#FF6B6B] dark:group-hover:text-[#FF8E72] transition-colors">
+                            {countryName}
+                          </h3>
+                          <span className="text-xs sm:text-sm font-mono text-slate-400 font-extrabold">({item.c})</span>
+
+                          {/* Primary Visa Badge */}
+                          <span className={`text-xs px-3 py-1 rounded-full font-extrabold shadow-2xs ${badgeClass}`}>
+                            {badgeText}
+                          </span>
+
+                          {/* Audit Verification Badge */}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleOpenAudit();
+                            }}
+                            className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-bold text-xs bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25 hover:bg-emerald-500/20 transition-all shadow-2xs cursor-pointer"
+                            title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen', 'Ver información de verificación', 'Проверить нормативные данные')}
+                          >
+                            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                            <span>{l('✓ 2026 Teyitli', '✓ 2026 Verified', '✓ 2026 Geprüft', '✓ 2026 Verificado', '✓ Проверено 2026')}</span>
+                          </button>
+                        </div>
+
+                        {/* Traveler Score Pill (ETS Tur & Booking style) */}
+                        <div className="flex items-center gap-2 px-3 py-1 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-500/25 text-emerald-800 dark:text-emerald-300 flex-shrink-0">
+                          <div className="text-right">
+                            <div className="text-xs font-black leading-tight">{scoreLabel}</div>
+                            <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
+                              {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung', 'Puntaje de Viajero', 'Оценка')}
+                            </div>
+                          </div>
+                          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-emerald-600 text-white font-mono font-black text-xs sm:text-sm flex items-center justify-center shadow-xs">
+                            {travelerScore}
+                          </div>
+                        </div>
                       </div>
 
-                      {/* ETS Tur Style Amenity & Highlight Tags */}
+                      {/* Highlights Row (Tags) */}
                       {highlights.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                        <div className="flex flex-wrap items-center gap-1.5">
                           {highlights.map((tag, idx) => (
                             <span
                               key={idx}
-                              className="inline-flex items-center text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-white/[0.06] text-slate-700 dark:text-slate-200 border border-slate-200/60 dark:border-white/10"
+                              className="inline-flex items-center text-[11px] font-bold px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700/60"
                             >
                               {tag}
                             </span>
@@ -726,103 +766,135 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       )}
 
-                      {/* Immediate Glance Badges: Capital, Currency, Safety, Internet Speed, Living Cost (Scaled Up) */}
-                      <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm">
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-semibold glass-panel border border-slate-200/70 dark:border-white/10 text-slate-700 dark:text-slate-300 shadow-2xs">
-                          <span>🏛️</span>
-                          <span>{geography.capital}</span>
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-semibold glass-panel border border-purple-500/20 bg-purple-500/10 text-purple-700 dark:text-purple-300 shadow-2xs">
-                          <span>💰</span>
-                          <span>{geography.currencyCode} ({geography.currencySymbol})</span>
-                        </span>
-                        <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-semibold border shadow-2xs ${insights.safety.badgeColor}`}>
-                          <Shield className="w-3.5 h-3.5 flex-shrink-0" />
-                          <span>{insights.safety.safetyScore}/100 {insights.safety.safetyLevel}</span>
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-semibold glass-panel border border-sky-500/20 bg-sky-500/10 text-sky-700 dark:text-sky-300 shadow-2xs">
-                          <Wifi className="w-3.5 h-3.5 flex-shrink-0" />
-                          <span>{insights.internet.mobileSpeedMbps} Mbps</span>
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-semibold glass-panel border border-amber-500/20 bg-amber-500/10 text-amber-700 dark:text-amber-300 shadow-2xs">
-                          <DollarSign className="w-3.5 h-3.5 flex-shrink-0" />
-                          <span>{insights.livingCosts.dailyBudgetBackpackerUsd}</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                      {/* SYMMETRICAL INFO BOXES GRID (5 Key Travel Metrics in Symmetrical Columns) */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 mt-1">
+                        {/* 1. Başkent (Capital) */}
+                        <div className="flex items-center gap-2 p-2 rounded-xl bg-slate-50/80 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800/80">
+                          <span className="text-base flex-shrink-0">🏛️</span>
+                          <div className="min-w-0">
+                            <div className="text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400">
+                              {l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}
+                            </div>
+                            <div className="text-xs font-bold text-slate-800 dark:text-slate-200 truncate">
+                              {geography.capital}
+                            </div>
+                          </div>
+                        </div>
 
-                  {/* Right Section: ETS Tur Style Traveler Score Box & Quick Action Buttons */}
-                  <div className="flex items-center justify-between lg:justify-end gap-3 flex-shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-slate-100 dark:border-white/10">
-                    {/* ETS Tur & Booking Rating Score Pill */}
-                    <div className="hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-500/25 text-emerald-800 dark:text-emerald-300">
-                      <div className="text-right">
-                        <div className="text-xs font-black leading-tight">{scoreLabel}</div>
-                        <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
-                          {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung')}
+                        {/* 2. Para Birimi (Currency) */}
+                        <div className="flex items-center gap-2 p-2 rounded-xl bg-purple-50/50 dark:bg-purple-950/20 border border-purple-500/20 text-purple-800 dark:text-purple-300">
+                          <span className="text-base flex-shrink-0">💰</span>
+                          <div className="min-w-0">
+                            <div className="text-[10px] uppercase font-bold text-purple-700/80 dark:text-purple-300/80">
+                              {l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}
+                            </div>
+                            <div className="text-xs font-bold truncate">
+                              {geography.currencyCode} ({geography.currencySymbol})
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 3. Güvenlik (Safety) */}
+                        <div className={`flex items-center gap-2 p-2 rounded-xl border ${insights.safety.badgeColor}`}>
+                          <Shield className="w-4 h-4 flex-shrink-0" />
+                          <div className="min-w-0">
+                            <div className="text-[10px] uppercase font-bold opacity-80">
+                              {l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}
+                            </div>
+                            <div className="text-xs font-bold truncate">
+                              {insights.safety.safetyScore}/100 {insights.safety.safetyLevel}
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 4. İnternet (Internet Speed) */}
+                        <div className="flex items-center gap-2 p-2 rounded-xl bg-sky-50/50 dark:bg-sky-950/20 border border-sky-500/20 text-sky-800 dark:text-sky-300">
+                          <Wifi className="w-4 h-4 flex-shrink-0" />
+                          <div className="min-w-0">
+                            <div className="text-[10px] uppercase font-bold text-sky-700/80 dark:text-sky-300/80">
+                              {l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}
+                            </div>
+                            <div className="text-xs font-bold truncate">
+                              {insights.internet.mobileSpeedMbps} Mbps
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 5. Günlük Bütçe (Daily Budget) */}
+                        <div className="flex items-center gap-2 p-2 rounded-xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-500/20 text-amber-800 dark:text-amber-300">
+                          <DollarSign className="w-4 h-4 flex-shrink-0" />
+                          <div className="min-w-0">
+                            <div className="text-[10px] uppercase font-bold text-amber-700/80 dark:text-amber-300/80">
+                              {l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}
+                            </div>
+                            <div className="text-xs font-bold truncate">
+                              {insights.livingCosts.dailyBudgetBackpackerUsd}
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white font-mono font-black text-sm flex items-center justify-center shadow-xs">
-                        {travelerScore}
+
+                      {/* Action Buttons Row */}
+                      <div className="flex items-center justify-between sm:justify-end gap-2 pt-2 border-t border-slate-100 dark:border-slate-800/80 mt-1">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedDossierCountry(item.c);
+                              setIsDossierOpen(true);
+                            }}
+                            className="btn-nubair-primary py-1.5 px-3.5 text-xs font-bold whitespace-nowrap shadow-xs"
+                            title={l('Kapsamlı Ülke Dosyası ve Gezi Rotasını Aç', 'Open Full Country Dossier & Travel Itinerary', 'Länderdossier & Reiseroute öffnen', 'Abrir guía completa 360°', 'Открыть полное досье 360°')}
+                          >
+                            <BookOpen className="w-3.5 h-3.5" />
+                            <span>{l('360° Gezi Rehberi', '360° Travel Guide', '360° Reiseführer', 'Guía 360°', 'Гид 360°')}</span>
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
+                            }}
+                            className="btn-nubair-secondary py-1.5 px-3 text-xs"
+                            title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden', 'Informar cambio o error', 'Сообщить об ошибке')}
+                          >
+                            <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
+                            <span className="hidden sm:inline">{t.reportChange}</span>
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              const geo = GEO_DATA[item.c];
+                              const q = geo ? `${geo.capital}, ${countryName}` : countryName;
+                              window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
+                            }}
+                            className="btn-nubair-secondary py-1.5 px-3 text-xs"
+                            title={l("Google Haritalar'da Canlı Aç", 'Open Live in Google Maps', 'Live auf Google Maps öffnen', 'Abrir en Google Maps', 'Открыть на Google Maps')}
+                          >
+                            <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
+                            <span>{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</span>
+                            <ExternalLink className="w-3 h-3 opacity-60" />
+                          </button>
+                        </div>
+
+                        <button
+                          type="button"
+                          onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
+                          className="p-2 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors"
+                          aria-label={l('Detayları aç', 'Toggle details', 'Details ein-/ausblenden', 'Ver detalles', 'Свернуть/Развернуть')}
+                        >
+                          <ChevronDown
+                            className={`w-4 h-4 transition-transform duration-200 ${
+                              isExpanded ? 'rotate-180 text-rose-500' : ''
+                            }`}
+                          />
+                        </button>
                       </div>
                     </div>
-
-                    {/* Kapsamlı Gezi Planı ve 360° Rota Butonu */}
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedDossierCountry(item.c);
-                        setIsDossierOpen(true);
-                      }}
-                      className="btn-nubair-primary py-2.5 px-4 text-xs sm:text-sm font-bold whitespace-nowrap shadow-sm"
-                      title={l('Kapsamlı Ülke Dosyası ve Gezi Rotasını Aç', 'Open Full Country Dossier & Travel Itinerary', 'Länderdossier & Reiseroute öffnen')}
-                    >
-                      <BookOpen className="w-4 h-4" />
-                      <span>{l('360° Gezi Rehberi', '360° Travel Guide', '360° Reiseführer')}</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
-                      }}
-                      className="btn-nubair-secondary py-2.5 px-3 text-xs sm:text-sm"
-                      title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden')}
-                    >
-                      <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
-                      <span className="hidden sm:inline">{t.reportChange}</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        const geo = GEO_DATA[item.c];
-                        const q = geo ? `${geo.capital}, ${countryName}` : countryName;
-                        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
-                      }}
-                      className="btn-nubair-secondary py-2.5 px-3 text-xs sm:text-sm"
-                      title={l("Google Haritalar'da Canlı Aç", 'Open Live in Google Maps', 'Live auf Google Maps öffnen')}
-                    >
-                      <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
-                      <span>{l('Harita', 'Map', 'Karte')}</span>
-                      <ExternalLink className="w-3 h-3 opacity-60" />
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="p-2.5 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors"
-                      aria-label={l('Detayları aç', 'Toggle details', 'Details ein-/ausblenden')}
-                    >
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          isExpanded ? 'rotate-180 text-rose-500' : ''
-                        }`}
-                      />
-                    </button>
                   </div>
                 </div>
 

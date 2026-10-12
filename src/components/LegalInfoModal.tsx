@@ -24,12 +24,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
   onClose,
   onDataResetOrImported,
 }) => {
-  const { language } = useI18n();
-  const l = (trText: string, enText: string, deText?: string): string => {
-    if (language === 'de') return deText || enText;
-    if (language === 'en') return enText;
-    return trText;
-  };
+  const { language, l } = useI18n();
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [importStatus, setImportStatus] = useState<string>('');
