@@ -27,18 +27,45 @@ import { AuthModal } from './components/AuthModal';
 import { RegulationAuditModal } from './components/RegulationAuditModal';
 import { ReportChangeModal } from './components/ReportChangeModal';
 import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
+import { useSeoRouter } from './utils/seoRouter';
+import { SeoHead } from './components/SeoHead';
 
 function AppContent() {
   const { language, setLanguage, l, t } = useI18n();
+  const { route, navigate } = useSeoRouter();
+
   const [currentPassport, setCurrentPassport] = useState<string>(() => loadStoredPassport());
   const [secondaryPassport, setSecondaryPassport] = useState<string>(() => loadStoredSecondaryPassport());
-  const [activeTab, setActiveTab] = useState<TabKey>('explore');
+  const [activeTab, setActiveTab] = useState<TabKey>(() => route.tab || 'explore');
+  const [selectedCountryCode, setSelectedCountryCode] = useState<string | null>(() => route.countryCode);
   const [exploreSubTab, setExploreSubTab] = useState<'all' | 'where'>('all');
   const [planSubTab, setPlanSubTab] = useState<'route' | 'compare' | 'nomad'>('route');
   const [profileSubTab, setProfileSubTab] = useState<'profile' | 'emergency'>('profile');
   const [showPromoBanner, setShowPromoBanner] = useState<boolean>(true);
   const [globalSearchQuery, setGlobalSearchQuery] = useState<string>('');
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
+
+  // Sync tab and country with SEO history changes
+  useEffect(() => {
+    if (route.tab && route.tab !== activeTab) {
+      setActiveTab(route.tab);
+    }
+  }, [route.tab]);
+
+  useEffect(() => {
+    setSelectedCountryCode(route.countryCode);
+  }, [route.countryCode]);
+
+  const handleSelectTab = (tab: TabKey) => {
+    setActiveTab(tab);
+    setSelectedCountryCode(null);
+    navigate(language, tab, null);
+  };
+
+  const handleCountrySelect = (code: string | null) => {
+    setSelectedCountryCode(code);
+    navigate(language, activeTab, code);
+  };
 
   // Modals
   const [isPassportModalOpen, setIsPassportModalOpen] = useState<boolean>(false);
@@ -87,6 +114,14 @@ function AppContent() {
 
   return (
     <div className="min-h-screen text-[#1A1D20] dark:text-white flex font-sans selection:bg-[#FF6B6B] selection:text-white relative overflow-x-hidden transition-colors">
+      {/* Dynamic Scalable Multilingual SEO Head (Canonical & 5-Language Hreflang Alternates + x-default) */}
+      <SeoHead
+        language={language}
+        tab={activeTab}
+        countryCode={selectedCountryCode}
+        currentPassport={currentPassport}
+      />
+
       {/* Permanent Fixed Fullscreen Dual-Theme Background (Zero white cutoffs on vertical scroll) */}
       <div className="fixed inset-0 pointer-events-none -z-20 bg-[#F8FAFC] dark:bg-gradient-to-br dark:from-[#0C0F19] dark:via-[#111625] dark:to-[#161D30]" />
 
@@ -102,7 +137,7 @@ function AppContent() {
       ======================================================== */}
       <Navigation
         activeTab={activeTab}
-        onSelectTab={setActiveTab}
+        onSelectTab={handleSelectTab}
         currentPassport={currentPassport}
         onOpenPassportSelector={() => setIsPassportModalOpen(true)}
         onOpenAuditConsole={() => setIsAuditModalOpen(true)}
@@ -123,7 +158,7 @@ function AppContent() {
           isDark={isDark}
           onToggleTheme={() => setIsDark(!isDark)}
           onNavigateToProfile={() => {
-            setActiveTab('profile');
+            handleSelectTab('profile');
             setProfileSubTab('profile');
           }}
           searchQuery={globalSearchQuery}
@@ -176,6 +211,8 @@ function AppContent() {
                   onOpenAuditConsole={() => setIsAuditModalOpen(true)}
                   externalSearch={globalSearchQuery}
                   onSearchChange={setGlobalSearchQuery}
+                  initialCountryCode={selectedCountryCode}
+                  onCountrySelect={handleCountrySelect}
                 />
               ) : (
                 <WhereCanIGoTab currentPassport={currentPassport} />

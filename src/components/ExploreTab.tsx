@@ -58,6 +58,8 @@ interface ExploreTabProps {
   onOpenAuditConsole?: () => void;
   externalSearch?: string;
   onSearchChange?: (val: string) => void;
+  initialCountryCode?: string | null;
+  onCountrySelect?: (code: string | null) => void;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -112,7 +114,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   currentPassport,
   onOpenAuditConsole,
   externalSearch,
-  onSearchChange
+  onSearchChange,
+  initialCountryCode = null,
+  onCountrySelect
 }) => {
   const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
@@ -122,8 +126,26 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [checklists, setChecklists] = useState<Record<string, number[]>>(() => loadStoredChecklists());
   const [reportingCountry, setReportingCountry] = useState<{ code: string; name: string; cat: string } | null>(null);
   const [isLocalAuditOpen, setIsLocalAuditOpen] = useState<boolean>(false);
-  const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(null);
-  const [isDossierOpen, setIsDossierOpen] = useState<boolean>(false);
+  const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
+  const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
+
+  const openDossier = (code: string) => {
+    setSelectedDossierCountry(code);
+    setIsDossierOpen(true);
+    onCountrySelect?.(code);
+  };
+
+  const closeDossier = () => {
+    setIsDossierOpen(false);
+    onCountrySelect?.(null);
+  };
+
+  React.useEffect(() => {
+    if (initialCountryCode) {
+      setSelectedDossierCountry(initialCountryCode);
+      setIsDossierOpen(true);
+    }
+  }, [initialCountryCode]);
 
   React.useEffect(() => {
     if (externalSearch !== undefined && externalSearch !== search) {
@@ -455,11 +477,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </div>
 
             {/* Horizontal Filter Chips */}
-            <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+            <div className="flex items-center gap-2.5 overflow-x-auto pb-1 scrollbar-none">
               <button
                 type="button"
                 onClick={() => setFilter('all')}
-                className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                   filter === 'all'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -471,7 +493,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('id')}
-                  className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                  className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                     filter === 'id'
                       ? 'tab-chip-active'
                       : 'tab-chip-inactive'
@@ -483,7 +505,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('free')}
-                className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                   filter === 'free'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -494,7 +516,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('evisa')}
-                className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                   filter === 'evisa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -505,7 +527,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('voa')}
-                className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                   filter === 'voa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -517,7 +539,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('eta')}
-                  className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                  className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                     filter === 'eta'
                       ? 'tab-chip-active'
                       : 'tab-chip-inactive'
@@ -529,7 +551,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('visa')}
-                className={`px-4.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-4.5 py-2.5 min-h-[44px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min flex items-center justify-center ${
                   filter === 'visa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -678,17 +700,20 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     {/* 1. Landmark Scenic Thumbnail */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-48 lg:w-56 h-36 md:h-36 rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-48 lg:w-56 h-36 md:h-36 aspect-[16/10] rounded-2xl shadow-sm flex-shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
                         className="country-thumbnail-image group-hover/thumb:scale-105 transition-transform duration-500 w-full h-full object-cover"
                         loading="lazy"
+                        decoding="async"
+                        width="480"
+                        height="288"
                         onError={(e) => {
                           const target = e.currentTarget;
                           target.onerror = null;
-                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&q=80';
+                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&fm=webp&q=75';
                         }}
                       />
                       <div className="country-thumbnail-scrim" />
@@ -841,10 +866,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
-                              setSelectedDossierCountry(item.c);
-                              setIsDossierOpen(true);
+                              openDossier(item.c);
                             }}
-                            className="btn-nubair-primary py-1.5 px-3.5 text-xs font-bold whitespace-nowrap shadow-xs"
+                            className="btn-nubair-primary min-h-[44px] py-2 px-4 text-xs font-bold whitespace-nowrap shadow-xs touch-target-min flex items-center gap-1.5"
                             title={l('Kapsamlı Ülke Dosyası ve Gezi Rotasını Aç', 'Open Full Country Dossier & Travel Itinerary', 'Länderdossier & Reiseroute öffnen', 'Abrir guía completa 360°', 'Открыть полное досье 360°')}
                           >
                             <BookOpen className="w-3.5 h-3.5" />
@@ -857,7 +881,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               e.stopPropagation();
                               setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
                             }}
-                            className="btn-nubair-secondary py-1.5 px-3 text-xs"
+                            className="btn-nubair-secondary min-h-[44px] py-2 px-3.5 text-xs touch-target-min flex items-center gap-1.5"
                             title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden', 'Informar cambio o error', 'Сообщить об ошибке')}
                           >
                             <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
@@ -872,7 +896,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               const q = geo ? `${geo.capital}, ${countryName}` : countryName;
                               window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
                             }}
-                            className="btn-nubair-secondary py-1.5 px-3 text-xs"
+                            className="btn-nubair-secondary min-h-[44px] py-2 px-3.5 text-xs touch-target-min flex items-center gap-1.5"
                             title={l("Google Haritalar'da Canlı Aç", 'Open Live in Google Maps', 'Live auf Google Maps öffnen', 'Abrir en Google Maps', 'Открыть на Google Maps')}
                           >
                             <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
@@ -884,7 +908,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         <button
                           type="button"
                           onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                          className="p-2 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors"
+                          className="min-w-[44px] min-h-[44px] p-2.5 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors flex items-center justify-center touch-target-min"
                           aria-label={l('Detayları aç', 'Toggle details', 'Details ein-/ausblenden', 'Ver detalles', 'Свернуть/Развернуть')}
                         >
                           <ChevronDown
@@ -898,16 +922,31 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   </div>
                 </div>
 
-                {/* Expanded Drawer Details */}
-                {isExpanded && (
+                {/* Expanded Drawer Details inside Semantic HTML5 Details for Googlebot Crawlability */}
+                <details
+                  className="semantic-card-details group/details"
+                  open={isExpanded}
+                  onToggle={(e) => {
+                    const isOpen = (e.currentTarget as HTMLDetailsElement).open;
+                    if (isOpen !== isExpanded) {
+                      setExpandedCountry(isOpen ? item.c : null);
+                    }
+                  }}
+                >
+                  <summary className="sr-only">
+                    {countryName} {l('ayrıntılı seyahat ve vize bilgileri', 'detailed travel and visa specifications', 'detaillierte Reise- und Visabestimmungen', 'información detallada de viaje y visado', 'подробная визовая и туристическая информация')}
+                  </summary>
                   <div className="px-6 sm:px-8 pb-8 pt-5 border-t border-slate-100 dark:border-white/[0.08] space-y-6 text-sm text-slate-600 dark:text-slate-300 animate-in fade-in duration-200">
                     {/* Widescreen Scenic Landmark Hero Banner */}
-                    <div className="relative h-44 sm:h-56 rounded-3xl overflow-hidden border border-slate-200/80 dark:border-white/[0.08] shadow-md group/hero">
+                    <div className="relative h-44 sm:h-56 aspect-[16/9] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-white/[0.08] shadow-md group/hero">
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
                         className="w-full h-full object-cover brightness-[0.78] contrast-[1.06] group-hover/hero:scale-105 transition-transform duration-700"
                         loading="lazy"
+                        decoding="async"
+                        width="960"
+                        height="440"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/95 via-[#0B0F19]/35 to-transparent pointer-events-none" />
                       <div className="absolute top-4 left-4 flex items-center gap-2">
@@ -932,10 +971,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           type="button"
                           onClick={(e) => {
                             e.stopPropagation();
-                            setSelectedDossierCountry(item.c);
-                            setIsDossierOpen(true);
+                            openDossier(item.c);
                           }}
-                          className="px-4 py-2 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/25 text-white text-xs font-bold transition-all shadow-sm flex items-center gap-1.5 cursor-pointer"
+                          className="px-4 py-2 min-h-[44px] rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/25 text-white text-xs font-bold transition-all shadow-sm flex items-center gap-1.5 cursor-pointer touch-target-min"
                         >
                           <BookOpen className="w-3.5 h-3.5" />
                           <span>{l('360° Seyahat Rehberi', '360° Travel Guide', '360° Reiseführer')}</span>
@@ -961,10 +999,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         type="button"
                         onClick={(e) => {
                           e.stopPropagation();
-                          setSelectedDossierCountry(item.c);
-                          setIsDossierOpen(true);
+                          openDossier(item.c);
                         }}
-                        className="btn-nubair-primary px-5 py-2.5 text-xs font-bold shadow-xs whitespace-nowrap"
+                        className="btn-nubair-primary min-h-[44px] px-5 py-2.5 text-xs font-bold shadow-xs whitespace-nowrap touch-target-min"
                       >
                         {l('Ayrıntılı Dosyayı Aç →', 'Open Detailed Dossier →', 'Dossier öffnen →')}
                       </button>
@@ -1572,7 +1609,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
                     </div>
                   </div>
-                )}
+                </details>
               </div>
             );
           })
@@ -1604,7 +1641,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       {/* Country Cultural & Travel Dossier Modal */}
       <CountryDossierModal
         isOpen={isDossierOpen}
-        onClose={() => setIsDossierOpen(false)}
+        onClose={closeDossier}
         countryCode={selectedDossierCountry}
         currentPassport={currentPassport}
         onOpenAudit={handleOpenAudit}

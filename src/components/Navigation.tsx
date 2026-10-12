@@ -325,7 +325,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       {/* ========================================================
           3. MOBILE SLEEK STICKY / FLOATING BOTTOM GLASS DOCK
       ======================================================== */}
-      <nav className="lg:hidden fixed bottom-4 left-4 right-4 z-40 max-w-lg mx-auto glass-card rounded-3xl p-2 shadow-2xl shadow-slate-950/20 dark:shadow-black/60 flex items-center justify-around transition-all">
+      <nav className="lg:hidden fixed bottom-4 left-4 right-4 z-40 max-w-lg mx-auto glass-card rounded-3xl p-1.5 shadow-2xl shadow-slate-950/20 dark:shadow-black/60 flex items-center justify-around gap-1 transition-all" aria-label="Mobile Navigation">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeTab === item.key;
@@ -337,7 +337,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 handleNavClick(item.key);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className={`relative flex flex-col items-center justify-center py-2 px-2.5 rounded-2xl transition-all cursor-pointer min-w-[56px] ${
+              className={`relative flex flex-col items-center justify-center py-2 px-2 rounded-2xl transition-all cursor-pointer min-w-[52px] min-h-[48px] touch-target-min flex-1 ${
                 isActive
                   ? item.crisis
                     ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] dark:text-[#FF8E72] font-extrabold'
@@ -350,7 +350,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   isActive ? 'scale-110' : ''
                 }`}
               />
-              <span className="text-[10px] mt-1 font-bold tracking-tight leading-none truncate max-w-[58px]">
+              <span className="text-[10px] mt-1 font-bold tracking-tight leading-none truncate max-w-[62px]">
                 {item.shortLabel}
               </span>
             </button>

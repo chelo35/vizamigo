@@ -489,3 +489,54 @@ button:active,
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* ========================================================
+   MOBILE-FIRST INDEXING & TOUCH TARGET OPTIMIZATION (WCAG 2.5.5)
+   Guarantees minimum 48x48px touch targets and eliminating
+   Google Search Console "Touch targets too close together" errors.
+   ======================================================== */
+
+.touch-target-min {
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+@media (pointer: coarse), (max-width: 768px) {
+  /* Enforce touch-safe minimums on mobile interactive controls */
+  .mobile-touch-target {
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+/* ========================================================
+   SEMANTIC ACCESSIBLE ACCORDION (<details> & <summary>)
+   100% crawlable by Mobile Googlebot with zero display:none penalty
+   ======================================================== */
+
+details.semantic-card-details {
+  display: block;
+  width: 100%;
+}
+
+details.semantic-card-details > summary {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+details.semantic-card-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Strict Layout Dimension & Zero-CLS Image Containers */
+.aspect-thumbnail-container {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  height: auto;
+}
+
+

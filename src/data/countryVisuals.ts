@@ -6,7 +6,36 @@
 
 import { countryToRegion } from './passportData';
 
-export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=480&q=80';
+export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=480&fm=webp&q=75';
+
+/**
+ * Transforms image URLs to modern Next-Gen WebP format with optimal compression.
+ * Enforces WebP format and width constraints to minimize payload and layout shift.
+ */
+export function getOptimizedImageUrl(
+  rawUrl: string,
+  options?: { width?: number; format?: 'webp' | 'avif'; quality?: number }
+): string {
+  if (!rawUrl) return DEFAULT_TRAVEL_FALLBACK;
+  const width = options?.width || 480;
+  const format = options?.format || 'webp';
+  const quality = options?.quality || 75;
+
+  if (rawUrl.includes('images.unsplash.com')) {
+    try {
+      const url = new URL(rawUrl);
+      url.searchParams.set('auto', 'format');
+      url.searchParams.set('fit', 'crop');
+      url.searchParams.set('w', width.toString());
+      url.searchParams.set('fm', format);
+      url.searchParams.set('q', quality.toString());
+      return url.toString();
+    } catch {
+      return rawUrl.replace(/(\?|&)fm=[^&]*/g, '').replace(/(\?|&)q=[^&]*/g, '') + `&fm=${format}&q=${quality}`;
+    }
+  }
+  return rawUrl;
+}
 
 export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = {
   AD: { image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=480&q=80", landmark: "Pyrenees Valleys & Andorra la Vella" },
@@ -212,12 +241,16 @@ export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: strin
 
 export function getCountryVisual(countryCode: string): { image: string; landmark: string } {
   const code = (countryCode || '').toUpperCase();
-  if (COUNTRY_LANDSCAPES[code]) {
-    return COUNTRY_LANDSCAPES[code];
+  const raw = COUNTRY_LANDSCAPES[code];
+  if (raw) {
+    return {
+      image: getOptimizedImageUrl(raw.image),
+      landmark: raw.landmark
+    };
   }
   const reg = countryToRegion[code] || 'Otantik Rota';
   return {
-    image: DEFAULT_TRAVEL_FALLBACK,
+    image: getOptimizedImageUrl(DEFAULT_TRAVEL_FALLBACK),
     landmark: `${code} ${reg} Manzaraları`
   };
 }

@@ -234,7 +234,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={onToggleMobileDrawer}
-            className="lg:hidden p-2 rounded-2xl border border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors shadow-2xs"
+            className="lg:hidden min-w-[48px] min-h-[48px] p-2.5 rounded-2xl border border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors shadow-2xs flex items-center justify-center touch-target-min"
             aria-label="Toggle navigation drawer"
           >
             <Menu className="w-5 h-5" />
@@ -243,7 +243,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={onOpenPassportSelector}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-[#FF6B6B]/40 transition-all"
+            className="flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 shadow-2xs cursor-pointer hover:border-[#FF6B6B]/40 transition-all touch-target-min"
             title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
           >
             <span className="text-xl sm:text-2xl leading-none">{getFlag(currentPassport)}</span>
@@ -284,7 +284,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
-            className={`md:hidden p-2 rounded-full border transition-all cursor-pointer ${
+            className={`md:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-full border transition-all cursor-pointer flex items-center justify-center touch-target-min ${
               mobileSearchOpen || searchQuery
                 ? 'bg-[#FF6B6B] text-white border-[#FF6B6B] shadow-xs'
                 : 'border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-300'
@@ -303,7 +303,7 @@ export const Header: React.FC<HeaderProps> = ({
                 setClockOpen(!clockOpen);
                 setFxOpen(false);
               }}
-              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-2 rounded-full border transition-all cursor-pointer shadow-2xs ${
+              className={`flex items-center gap-1.5 px-3 py-2 min-h-[44px] rounded-full border transition-all cursor-pointer shadow-2xs touch-target-min ${
                 clockOpen
                   ? 'bg-sky-500 text-white border-sky-500 shadow-sm'
                   : 'border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/[0.06]'
@@ -437,7 +437,7 @@ export const Header: React.FC<HeaderProps> = ({
                 setFxOpen(!fxOpen);
                 setClockOpen(false);
               }}
-              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-2 rounded-full border transition-all cursor-pointer shadow-2xs ${
+              className={`flex items-center gap-1.5 px-3 py-2 min-h-[44px] rounded-full border transition-all cursor-pointer shadow-2xs touch-target-min ${
                 fxOpen
                   ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
                   : 'border-slate-200/80 dark:border-white/[0.08] glass-card text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/[0.06]'
@@ -622,7 +622,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-2 rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-all cursor-pointer shadow-2xs"
+              className="flex items-center gap-1.5 px-3 py-2 min-h-[44px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-all cursor-pointer shadow-2xs touch-target-min"
               title={t.languageSelect}
             >
               <span>{SUPPORTED_LANGUAGES.find(l => l.code === language)?.flag || '🌐'}</span>
@@ -640,7 +640,7 @@ export const Header: React.FC<HeaderProps> = ({
                       setLanguage(opt.code);
                       setLangMenuOpen(false);
                     }}
-                    className={`w-full text-left px-3.5 py-2 text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
+                    className={`w-full text-left px-3.5 py-2.5 min-h-[44px] text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer touch-target-min ${
                       language === opt.code
                         ? 'text-slate-950 dark:text-white font-bold bg-slate-100/70 dark:bg-slate-800'
                         : 'text-slate-700 dark:text-[#8E9DBE]'
@@ -661,7 +661,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={onToggleTheme}
-            className="p-2 sm:p-2.5 rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card hover:bg-slate-50 dark:hover:bg-white/[0.06] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs"
+            className="p-2.5 min-w-[44px] min-h-[44px] rounded-full border border-slate-200/80 dark:border-white/[0.08] glass-card hover:bg-slate-50 dark:hover:bg-white/[0.06] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs flex items-center justify-center touch-target-min"
             aria-label={t.themeToggle}
             title={t.themeToggle}
           >

@@ -232,16 +232,19 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
               >
                 <div className="flex items-center gap-4 min-w-0">
                   {/* Dedicated Scenic Thumbnail Slot */}
-                  <div className="country-thumbnail-slot w-24 h-20 sm:w-28 sm:h-24 shadow-sm flex-shrink-0">
+                  <div className="country-thumbnail-slot w-24 h-20 sm:w-28 sm:h-24 aspect-[16/10] shadow-sm flex-shrink-0">
                     <img
                       src={visual.image}
                       alt={`${countryName} - ${visual.landmark}`}
                       className="country-thumbnail-image country-thumbnail-images"
                       loading="lazy"
+                      decoding="async"
+                      width="240"
+                      height="160"
                       onError={(e) => {
                         const target = e.currentTarget;
                         target.onerror = null;
-                        target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&q=80';
+                        target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&fm=webp&q=75';
                       }}
                     />
                     <div className="country-thumbnail-scrim" />

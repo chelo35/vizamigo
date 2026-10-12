@@ -27,6 +27,12 @@ export const LOCALES: Record<SupportedLanguage, AppTranslations> = {
 
 export function getStoredLanguage(): SupportedLanguage {
   try {
+    if (typeof window !== 'undefined') {
+      const pathSeg = window.location.pathname.split('/')[1]?.toLowerCase();
+      if (pathSeg && LOCALES[pathSeg as SupportedLanguage]) {
+        return pathSeg as SupportedLanguage;
+      }
+    }
     if (typeof localStorage !== 'undefined') {
       const saved = localStorage.getItem('vr_lang') as SupportedLanguage;
       if (saved && LOCALES[saved]) return saved;
@@ -151,6 +157,20 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     saveStoredLanguage(lang);
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
+      try {
+        const rawPath = window.location.pathname.replace(/\/+$/, '');
+        const segs = rawPath.split('/').filter(Boolean);
+        if (segs.length > 0 && LOCALES[segs[0] as SupportedLanguage]) {
+          segs[0] = lang;
+        } else {
+          segs.unshift(lang);
+        }
+        const nextPath = '/' + segs.join('/');
+        const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+        if (nextPath !== currentPath) {
+          window.history.pushState({ lang }, '', nextPath);
+        }
+      } catch {}
     }
   };
 
@@ -160,6 +180,18 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const nextIdx = (order.indexOf(language) + 1) % order.length;
     setLanguage(order[nextIdx]);
   };
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handlePop = () => {
+      const pathSeg = window.location.pathname.split('/')[1]?.toLowerCase();
+      if (pathSeg && LOCALES[pathSeg as SupportedLanguage] && pathSeg !== language) {
+        setLanguageState(pathSeg as SupportedLanguage);
+      }
+    };
+    window.addEventListener('popstate', handlePop);
+    return () => window.removeEventListener('popstate', handlePop);
+  }, [language]);
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
