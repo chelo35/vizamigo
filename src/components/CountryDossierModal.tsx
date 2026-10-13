@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   X,
+  Square,
+  Maximize2,
+  Minimize2,
   Globe,
   MapPin,
   ExternalLink,
@@ -121,6 +124,7 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [converterBase, setConverterBase] = useState<'USD' | 'EUR' | 'GBP' | 'LOCAL'>('USD');
   const [remoteBaseCity, setRemoteBaseCity] = useState<'IST' | 'NYC' | 'LON' | 'BER' | 'SFO' | 'SIN' | 'TYO'>('IST');
   const [marketTargetCurrency, setMarketTargetCurrency] = useState<'GBP' | 'USD' | 'EUR'>('GBP');
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
 
   // Real-time ticking clock for Dual-Clock Time Zone Sync
   useEffect(() => {
@@ -131,10 +135,16 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     return () => clearInterval(timer);
   }, [isOpen]);
 
-  // Close on Escape key and lock body scroll
+  // Close or minimize on Escape key and lock body scroll
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') {
+        if (isFullscreen) {
+          setIsFullscreen(false);
+        } else {
+          onClose();
+        }
+      }
     };
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -144,14 +154,15 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
       document.body.style.overflow = 'auto';
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, isFullscreen, onClose]);
 
-  // Reset tab when country changes
+  // Reset tab and fullscreen mode when country changes
   useEffect(() => {
     if (isOpen) {
       setActiveTab('itinerary');
+      setIsFullscreen(false);
     }
-  }, [countryCode, isOpen]);
+  }, [isOpen, countryCode]);
 
   const countryData = useMemo(() => {
     if (!countryCode) return null;
@@ -346,11 +357,26 @@ Planlayan: Vizamigo (vizamigo.com)`;
   const nomadApps = getCountryNomadApps(code, insights.transport.popularRideApps);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 sm:py-6 overflow-y-auto backdrop-blur-md bg-slate-950/75 animate-in fade-in duration-200">
+    <div
+      className={`fixed inset-0 z-50 flex flex-col justify-end sm:justify-center sm:items-center ${
+        isFullscreen ? 'p-0' : 'p-0 sm:p-5 sm:py-6'
+      } overflow-y-auto backdrop-blur-md bg-slate-950/80 animate-in fade-in duration-200`}
+      onClick={() => {
+        if (isFullscreen) setIsFullscreen(false);
+        onClose();
+      }}
+    >
       <div
-        className="relative w-full max-w-5xl max-h-[92dvh] flex flex-col glass-panel rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
+        className={`${
+          isFullscreen
+            ? 'dossier-fullscreen-panel fixed inset-0 w-screen h-screen z-[99999] rounded-none max-w-none max-h-none flex flex-col glass-panel shadow-2xl transition-all duration-300'
+            : 'mobile-bottom-sheet-panel relative w-full sm:max-w-5xl h-[94dvh] sm:h-auto max-h-[94dvh] sm:max-h-[90vh] flex flex-col glass-panel rounded-t-[32px] sm:rounded-3xl rounded-b-none sm:rounded-b-3xl shadow-2xl transition-all duration-300'
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Mobile Bottom-Sheet Pull Handle Pill */}
+        <div className="w-12 h-1.5 rounded-full bg-slate-300/80 dark:bg-white/20 mx-auto mt-2.5 mb-1 sm:hidden shrink-0" aria-hidden="true" />
+
         {/* Top Header Banner */}
         <div className="relative p-5 sm:p-6 pb-4 bg-gradient-to-r from-teal-900/10 via-slate-900/5 to-slate-900/10 dark:from-teal-950/40 dark:via-slate-900/40 dark:to-slate-950/40 border-b border-slate-200/80 dark:border-white/10">
           <div className="flex items-start justify-between gap-4">
@@ -414,15 +440,43 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
             </div>
 
-            {/* Close Button */}
-            <button
-              type="button"
-              onClick={onClose}
-              className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/20 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white transition-all cursor-pointer flex-shrink-0"
-              aria-label="Close dossier"
-            >
-              <X className="w-5 h-5" />
-            </button>
+            {/* Desktop & Web Accessibility Control Bar (Expand, Minimize, Close) */}
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0 z-20">
+              {/* A. Expand Button - Kutu İkonu (Desktop) */}
+              {!isFullscreen ? (
+                <button
+                  type="button"
+                  onClick={() => setIsFullscreen(true)}
+                  className="hidden sm:inline-flex items-center justify-center p-2 rounded-full bg-slate-100 hover:bg-teal-50 dark:bg-white/10 dark:hover:bg-teal-500/20 text-slate-600 hover:text-teal-600 dark:text-slate-300 dark:hover:text-teal-300 transition-all cursor-pointer shadow-2xs hover:scale-105 active:scale-95"
+                  title={l('Tam Ekran Ansiklopedi Görünümüne Büyüt', 'Expand to Fullscreen Encyclopedia', 'Auf Vollbild vergrößern', 'Maximizar a pantalla completa', 'Развернуть на весь экран')}
+                  aria-label="Expand country dossier to full screen"
+                >
+                  <Square className="w-4 h-4" />
+                </button>
+              ) : (
+                /* B. Minimize Button */
+                <button
+                  type="button"
+                  onClick={() => setIsFullscreen(false)}
+                  className="hidden sm:inline-flex items-center justify-center p-2 rounded-full bg-teal-50 hover:bg-slate-100 dark:bg-teal-500/20 dark:hover:bg-white/10 text-teal-600 hover:text-slate-600 dark:text-teal-300 dark:hover:text-slate-300 transition-all cursor-pointer shadow-2xs hover:scale-105 active:scale-95"
+                  title={l('Varsayılan Boyuta Küçült', 'Restore to Modular Window', 'Auf Fenstergröße verkleinern', 'Restaurar tamaño modular', 'Свернуть в окно')}
+                  aria-label="Restore country dossier to default size"
+                >
+                  <Minimize2 className="w-4 h-4" />
+                </button>
+              )}
+
+              {/* C. Close Button (X) */}
+              <button
+                type="button"
+                onClick={onClose}
+                className="p-2 rounded-full bg-slate-100 hover:bg-rose-50 dark:bg-white/10 dark:hover:bg-rose-500/20 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-300 transition-all cursor-pointer flex-shrink-0 shadow-2xs hover:scale-105 active:scale-95"
+                title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
+                aria-label="Close dossier"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           {/* Teal Status Band & Stay Limit Card (Redesign Screen 5) */}
@@ -558,12 +612,12 @@ Planlayan: Vizamigo (vizamigo.com)`;
           </div>
         </div>
 
-        {/* Tab Navigation Navigation Bar */}
-        <div className="flex items-center gap-2 px-4 sm:px-6 py-2.5 bg-slate-50/60 dark:bg-white/[0.02] border-b border-slate-200/80 dark:border-white/10 overflow-x-auto scrollbar-none">
+        {/* Tab Navigation Bar (Horizontal Badge Slider) */}
+        <div className="horizontal-badge-slider flex items-center gap-2 px-4 sm:px-6 py-2.5 bg-slate-50/60 dark:bg-white/[0.02] border-b border-slate-200/80 dark:border-white/10 overflow-x-auto whitespace-nowrap scrollbar-none touch-pan-x">
           <button
             type="button"
             onClick={() => setActiveTab('itinerary')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'itinerary' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -574,7 +628,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
           <button
             type="button"
             onClick={() => setActiveTab('logistics')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'logistics' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -585,7 +639,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
           <button
             type="button"
             onClick={() => setActiveTab('culture')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'culture' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -596,7 +650,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
           <button
             type="button"
             onClick={() => setActiveTab('gastronomy')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'gastronomy' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -607,7 +661,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
           <button
             type="button"
             onClick={() => setActiveTab('language')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'language' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -618,7 +672,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
           <button
             type="button"
             onClick={() => setActiveTab('achievements')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'achievements' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -629,7 +683,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
           <button
             type="button"
             onClick={() => setActiveTab('visa')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'visa' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
@@ -638,10 +692,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
           </button>
         </div>
 
-        {/* Tab Content Body (Scrollable) */}
+        {/* Tab Content Body (Scrollable, Fluid Bottom-Sheet & Fullscreen) */}
         <div
-          className="dossier-scrollable-content flex-1 overflow-y-auto p-5 sm:p-6 space-y-6"
-          style={{ WebkitOverflowScrolling: 'touch', overflowY: 'auto', maxHeight: '85vh' }}
+          className="dossier-scrollable-content flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 space-y-6 overscroll-contain"
+          style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
         >
           {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
           <CountryRichSnippetSummary

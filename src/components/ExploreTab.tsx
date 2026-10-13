@@ -562,7 +562,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             )}
 
             {/* Horizontal Filter Chips (Mobile-First Smooth Scroll Strip, Strict 48px Touch Targets, Zero Overlapping) */}
-            <div className="w-full max-w-full overflow-x-auto touch-pan-x flex items-center gap-2.5 pb-2 pt-0.5 scrollbar-none no-scrollbar">
+            <div className="w-full max-w-full overflow-x-auto touch-pan-x flex items-center gap-2.5 pb-2 pt-0.5 scrollbar-none no-scrollbar horizontal-badge-slider no-scrollbar-slider">
               <button
                 type="button"
                 onClick={() => setFilter('all')}
@@ -1234,8 +1234,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   </summary>
                   {isExpanded && (
                   <div
-                    className="country-expanded-body country-scrollable-content px-6 sm:px-8 pb-8 pt-5 border-t border-slate-100 dark:border-white/[0.08] space-y-6 text-sm text-slate-600 dark:text-slate-300 animate-in fade-in duration-200"
-                    style={{ WebkitOverflowScrolling: 'touch', overflowY: 'auto', maxHeight: '85vh' }}
+                    className="country-expanded-body country-scrollable-content px-6 sm:px-8 pb-8 pt-5 border-t border-slate-100 dark:border-white/[0.08] space-y-6 text-sm text-slate-600 dark:text-slate-300 animate-in fade-in duration-200 h-auto"
+                    style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
                   >
                     {/* Country Detail Primary Semantic Header (H1) */}
                     <header className="space-y-1">

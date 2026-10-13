@@ -94,45 +94,146 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-slate-200/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/85 dark:bg-[#0c101d]/90">
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex flex-wrap md:flex-nowrap items-center justify-between gap-2 sm:gap-4">
-        {/* Left Section: Hamburger Menu (Mobile < 768px) + Brand Logo */}
-        <div className="flex items-center gap-2 flex-shrink-0">
-          {onToggleMobileDrawer && (
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-4">
+        {/* ROW 1: Brand Logo & Hamburger (Left) + Theme/Auth (Right on mobile, full controls on desktop) */}
+        <div className="w-full md:w-auto flex items-center justify-between gap-3">
+          {/* Brand Logo & Mobile Menu Drawer Trigger */}
+          <div className="flex items-center gap-2 flex-shrink-0">
+            {onToggleMobileDrawer && (
+              <button
+                type="button"
+                onClick={onToggleMobileDrawer}
+                className="md:hidden p-2 min-w-[40px] min-h-[40px] rounded-full glass-pill-control text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] flex items-center justify-center cursor-pointer transition-all touch-target-min"
+                aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+                title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+              >
+                <Menu className="w-5 h-5" />
+              </button>
+            )}
+
+            {/* Vizamigo Brand Mascot Logo */}
             <button
               type="button"
-              onClick={onToggleMobileDrawer}
-              className="md:hidden p-2 min-w-[40px] min-h-[40px] rounded-full glass-pill-control text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] flex items-center justify-center cursor-pointer transition-all"
-              aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
-              title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+              onClick={() => {
+                onSelectTab?.('explore');
+                window.location.href = `/${language}`;
+              }}
+              className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group"
+              title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}
             >
-              <Menu className="w-5 h-5" />
+              <img
+                src="/logo.png"
+                alt="Vizamigo"
+                className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
+              />
+              <span className="font-bold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">
+                Vizamigo<span className="text-[#2A8C82] dark:text-[#52B2A7]">.</span>
+              </span>
             </button>
-          )}
+          </div>
 
-          {/* Vizamigo Brand Mascot Logo (Clicking reloads/resets to home) */}
-          <button
-            type="button"
-            onClick={() => {
-              onSelectTab?.('explore');
-              window.location.href = `/${language}`;
-            }}
-            className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group"
-            title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}
-          >
-            <img
-              src="/logo.png"
-              alt="Vizamigo"
-              className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
-            />
-            <span className="font-bold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">
-              Vizamigo<span className="text-[#2A8C82] dark:text-[#52B2A7]">.</span>
-            </span>
-          </button>
+          {/* Mobile-Only Top Right Controls (Theme + Auth) */}
+          <div className="flex md:hidden items-center gap-2 flex-shrink-0">
+            <button
+              type="button"
+              onClick={onToggleTheme}
+              className="p-2 min-w-[38px] min-h-[38px] rounded-full glass-pill-control hover:bg-white dark:hover:bg-white/[0.08] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer flex items-center justify-center touch-target-min"
+              aria-label={t.themeToggle}
+              title={t.themeToggle}
+            >
+              {isDark ? <Sun className="w-4 h-4 text-[#E6B464]" /> : <Moon className="w-4 h-4 text-slate-700" />}
+            </button>
+
+            {isAuthenticated && user ? (
+              <button
+                type="button"
+                onClick={() => setUserMenuOpen(!userMenuOpen)}
+                className="flex items-center gap-1.5 p-1 rounded-full glass-pill-control"
+              >
+                <img
+                  src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
+                  alt={user.name}
+                  className="w-7 h-7 rounded-full object-cover border border-slate-300 dark:border-white/20"
+                />
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => openAuthModal('login')}
+                className="btn-nubair-primary py-1.5 px-3 text-xs font-bold"
+              >
+                <LogIn className="w-3.5 h-3.5" />
+                <span className="text-xs">{t.signIn}</span>
+              </button>
+            )}
+          </div>
         </div>
 
-        {/* Center Section: Top Global Search Bar (100% full width on mobile < 768px, never masked or compressed) */}
+        {/* MOBILE ROW 2: Dynamically Separated Passport Wallet & Language Selector (Zero visual intersection) */}
+        <div className="flex md:hidden items-center justify-between gap-2.5 w-full pt-0.5">
+          {/* Active Citizenship Pill */}
+          <button
+            type="button"
+            onClick={onOpenPassportSelector}
+            className="flex-1 min-w-0 flex items-center justify-between px-3.5 py-2 min-h-[42px] rounded-full glass-pill-control text-xs font-bold text-slate-800 dark:text-slate-200 cursor-pointer hover:border-[#2A8C82]/40 transition-all touch-target-min shadow-2xs"
+            title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
+          >
+            <div className="flex items-center gap-2 truncate">
+              <span className="text-xl leading-none shrink-0">{getFlag(currentPassport)}</span>
+              <span className="font-mono text-xs font-bold text-slate-900 dark:text-white">{currentPassport}</span>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate">
+                {getCountryName(currentPassport, language)}
+              </span>
+            </div>
+            <span className="text-[10px] uppercase font-bold text-[#2A8C82] dark:text-[#52B2A7] ml-1 shrink-0">
+              {l('Değiştir', 'Change', 'Ändern', 'Cambiar', 'Изм.')}
+            </span>
+          </button>
+
+          {/* Language Selector Dropdown on Mobile */}
+          <div className="relative shrink-0" ref={langRef}>
+            <button
+              type="button"
+              onClick={() => setLangMenuOpen(!langMenuOpen)}
+              className="flex items-center gap-1.5 px-3 py-2 min-h-[42px] rounded-full glass-pill-control text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] transition-all cursor-pointer touch-target-min shadow-2xs"
+              title={t.languageSelect}
+            >
+              <span>{SUPPORTED_LANGUAGES.find(l => l.code === language)?.flag || '🌐'}</span>
+              <span className="uppercase text-xs font-bold">{language}</span>
+              <ChevronDown className="w-3 h-3 text-slate-400" />
+            </button>
+
+            {langMenuOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-[#111625] border border-slate-200/80 dark:border-white/10 rounded-[20px] shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                {SUPPORTED_LANGUAGES.map(opt => (
+                  <button
+                    key={opt.code}
+                    type="button"
+                    onClick={() => {
+                      setLanguage(opt.code);
+                      setLangMenuOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-2.5 min-h-[44px] text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-colors cursor-pointer touch-target-min ${
+                      language === opt.code
+                        ? 'text-slate-950 dark:text-white font-bold bg-slate-100/70 dark:bg-white/[0.08]'
+                        : 'text-slate-700 dark:text-[#8E9DBE]'
+                    }`}
+                  >
+                    <span className="flex items-center gap-2">
+                      <span>{opt.flag}</span>
+                      <span>{opt.nativeName}</span>
+                    </span>
+                    {language === opt.code && <CheckCircle className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Global Search Bar: Full-width on mobile, centered flex-1 on desktop */}
         <div
-          className="global-search-bar-container order-last md:order-none w-full max-w-full md:flex-1 md:max-w-xl xl:max-w-2xl mt-1 md:mt-0 md:mx-4"
+          className="global-search-bar-container w-full max-w-full md:flex-1 md:max-w-xl xl:max-w-2xl md:mx-4"
           style={{ width: '100%', maxWidth: '100%', zIndex: 9999, position: 'relative' }}
         >
           <label className="relative w-full flex items-center">
@@ -157,16 +258,16 @@ export const Header: React.FC<HeaderProps> = ({
           </label>
         </div>
 
-        {/* Right Section: Passport, Audit, Language, Theme & Profile */}
-        <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+        {/* Desktop-Only Controls (Passport, Audit, Language, Theme, Auth) */}
+        <div className="hidden md:flex items-center gap-2 flex-shrink-0">
           {/* Active Citizenship Pill */}
           <button
             type="button"
             onClick={onOpenPassportSelector}
-            className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 min-h-[38px] sm:min-h-[40px] rounded-full glass-pill-control text-xs font-bold text-slate-800 dark:text-slate-200 cursor-pointer hover:border-[#2A8C82]/40 transition-all touch-target-min"
+            className="flex items-center gap-2 px-3.5 py-1.5 min-h-[40px] rounded-full glass-pill-control text-xs font-bold text-slate-800 dark:text-slate-200 cursor-pointer hover:border-[#2A8C82]/40 transition-all touch-target-min"
             title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
           >
-            <span className="text-lg sm:text-2xl leading-none">{getFlag(currentPassport)}</span>
+            <span className="text-xl leading-none">{getFlag(currentPassport)}</span>
             <span className="font-mono text-xs text-slate-600 dark:text-slate-300 font-bold">{currentPassport}</span>
             <span className="hidden xl:inline text-xs text-slate-500 dark:text-slate-400 font-semibold truncate max-w-[90px]">
               {getCountryName(currentPassport, language)}
@@ -187,12 +288,12 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           )}
 
-          {/* Language Selector */}
+          {/* Desktop Language Selector */}
           <div className="relative" ref={langRef}>
             <button
               type="button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="flex items-center gap-1.5 px-3 sm:px-3.5 py-2 min-h-[38px] sm:min-h-[40px] rounded-full glass-pill-control text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] transition-all cursor-pointer touch-target-min"
+              className="flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-full glass-pill-control text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] transition-all cursor-pointer touch-target-min"
               title={t.languageSelect}
             >
               <span>{SUPPORTED_LANGUAGES.find(l => l.code === language)?.flag || '🌐'}</span>
@@ -227,18 +328,18 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </div>
 
-          {/* Theme Toggle */}
+          {/* Desktop Theme Toggle */}
           <button
             type="button"
             onClick={onToggleTheme}
-            className="p-2 sm:p-2.5 min-w-[38px] sm:min-w-[40px] min-h-[38px] sm:min-h-[40px] rounded-full glass-pill-control hover:bg-white dark:hover:bg-white/[0.08] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer flex items-center justify-center touch-target-min"
+            className="p-2.5 min-w-[40px] min-h-[40px] rounded-full glass-pill-control hover:bg-white dark:hover:bg-white/[0.08] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer flex items-center justify-center touch-target-min"
             aria-label={t.themeToggle}
             title={t.themeToggle}
           >
             {isDark ? <Sun className="w-4 h-4 text-[#E6B464]" /> : <Moon className="w-4 h-4 text-slate-700" />}
           </button>
 
-          {/* User Auth */}
+          {/* Desktop User Auth */}
           <div className="relative" ref={menuRef}>
             {isAuthenticated && user ? (
               <div>
