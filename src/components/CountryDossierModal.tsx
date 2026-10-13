@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   X,
   Square,
@@ -82,6 +82,7 @@ import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { getCountryNaturalH1 } from '../utils/schemaGenerator';
 import { StatusBadge, VisaStatus } from './design/StatusBadge';
 import { TravelConciergeGrid } from './TravelConciergeGrid';
+import { EasyVacationAssistant } from './EasyVacationAssistant';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -92,7 +93,7 @@ interface CountryDossierModalProps {
   onOpenReportChange?: (country: { code: string; name: string; cat: string }) => void;
 }
 
-type DossierTab = 'itinerary' | 'logistics' | 'culture' | 'gastronomy' | 'language' | 'achievements' | 'visa';
+type DossierTab = 'itinerary' | 'concierge' | 'logistics' | 'culture' | 'gastronomy' | 'language' | 'achievements' | 'visa';
 
 function parseCountryUtcOffset(tzString?: string, lng?: number): number {
   if (tzString) {
@@ -117,6 +118,12 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
 }) => {
   const { language, t, l } = useI18n();
   const [activeTab, setActiveTab] = useState<DossierTab>('itinerary');
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  const handleTabChange = (tab: DossierTab) => {
+    setActiveTab(tab);
+    scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const [copiedPhrase, setCopiedPhrase] = useState<string | null>(null);
   const [copiedItinerary, setCopiedItinerary] = useState<boolean>(false);
   const [currentTime, setCurrentTime] = useState<Date>(() => new Date());
@@ -377,111 +384,112 @@ Planlayan: Vizamigo (vizamigo.com)`;
         {/* Mobile Bottom-Sheet Pull Handle Pill */}
         <div className="w-12 h-1.5 rounded-full bg-slate-300/80 dark:bg-white/20 mx-auto mt-2.5 mb-1 sm:hidden shrink-0" aria-hidden="true" />
 
-        {/* Top Header Banner */}
-        <div className="relative p-5 sm:p-6 pb-4 bg-gradient-to-r from-teal-900/10 via-slate-900/5 to-slate-900/10 dark:from-teal-950/40 dark:via-slate-900/40 dark:to-slate-950/40 border-b border-slate-200/80 dark:border-white/10">
-          <div className="flex items-start justify-between gap-4">
-            {/* Country Identity */}
-            <div className="flex items-center gap-3.5 sm:gap-4 min-w-0">
-              <span className="text-4xl sm:text-5xl leading-none filter drop-shadow-md select-none">
+        {/* Top Header Banner - Symmetrical & Compact Executive Travel Layout */}
+        <div className="relative px-5 py-3.5 sm:px-6 sm:py-4 bg-gradient-to-r from-teal-900/10 via-slate-900/5 to-slate-900/10 dark:from-teal-950/40 dark:via-slate-900/40 dark:to-slate-950/40 border-b border-slate-200/80 dark:border-white/10">
+          <div className="flex items-center justify-between gap-3">
+            {/* Left: Flag + Title + Code + Status */}
+            <div className="flex items-center gap-3 min-w-0">
+              <span className="text-3xl sm:text-4xl leading-none filter drop-shadow select-none shrink-0">
                 {getFlag(code)}
               </span>
               <div className="min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-mono text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold border border-slate-200 dark:border-slate-700">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <h1 className="text-base sm:text-xl font-black text-slate-900 dark:text-white tracking-tight truncate">
+                    {name}
+                  </h1>
+                  <span className="font-mono text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold border border-slate-200 dark:border-slate-700 shrink-0">
                     {code}
                   </span>
-                  <h1 className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-                    {getCountryNaturalH1(name, language)}
-                  </h1>
-                </div>
-                <div className="flex flex-wrap items-center gap-2 mt-1">
-                  <span className="text-xs text-slate-500 dark:text-[#8E9DBE] font-medium">
-                    • {l('Ülke:', 'Country:', 'Land:')} <b className="text-slate-800 dark:text-slate-200">{name}</b>
-                  </span>
-                  {(geo?.capital || geography?.capital) && (
-                    <span className="text-xs text-slate-500 dark:text-[#8E9DBE] font-medium">
-                      • {l('Başkent:', 'Capital:', 'Hauptstadt:')} <b className="text-slate-800 dark:text-slate-200">{geo?.capital || geography?.capital}</b>
-                    </span>
-                  )}
-                  {geo?.mainHub && (
-                    <span className="text-xs text-slate-500 dark:text-[#8E9DBE] font-medium">
-                      • IATA: <b className="font-mono text-slate-900 dark:text-white">{geo.mainHub}</b>
-                    </span>
-                  )}
-                </div>
-
-                {/* Sub Badges: Visa Status + Verification Badge */}
-                <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold border shadow-2xs ${badgeClass}`}>
-                    <Sparkles className="w-3.5 h-3.5" />
+                  <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold border shadow-2xs ${badgeClass} shrink-0`}>
+                    <Sparkles className="w-3 h-3" />
                     <span>{badgeLabel}</span>
                   </span>
-
-                  <button
-                    type="button"
-                    onClick={onOpenAudit}
-                    className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold border transition-colors cursor-pointer ${verStatus.color}`}
-                    title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
-                  >
-                    <ShieldCheck className="w-3.5 h-3.5 flex-shrink-0" />
-                    <span>✓ {verStatus.label}</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={openGoogleMaps}
-                    className="btn-nubair-secondary !py-1 !px-3 text-xs inline-flex items-center gap-1"
-                  >
-                    <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
-                    <span>Google Haritalar</span>
-                    <ExternalLink className="w-3 h-3 opacity-70" />
-                  </button>
+                </div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate mt-0.5">
+                  {getCountryNaturalH1(name, language)}
                 </div>
               </div>
             </div>
 
-            {/* Desktop & Web Accessibility Control Bar (Expand, Minimize, Close) */}
-            <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0 z-20">
-              {/* A. Expand Button - Kutu İkonu (Desktop) */}
+            {/* Right: Accessibility Controls (Desktop Expand/Minimize + Close) */}
+            <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 z-20">
+              {/* A. Expand Button - Desktop */}
               {!isFullscreen ? (
                 <button
                   type="button"
                   onClick={() => setIsFullscreen(true)}
                   className="hidden sm:inline-flex items-center justify-center p-2 rounded-full bg-slate-100 hover:bg-teal-50 dark:bg-white/10 dark:hover:bg-teal-500/20 text-slate-600 hover:text-teal-600 dark:text-slate-300 dark:hover:text-teal-300 transition-all cursor-pointer shadow-2xs hover:scale-105 active:scale-95"
-                  title={l('Tam Ekran Ansiklopedi Görünümüne Büyüt', 'Expand to Fullscreen Encyclopedia', 'Auf Vollbild vergrößern', 'Maximizar a pantalla completa', 'Развернуть на весь экран')}
+                  title={l('Tam Ekran Ansiklopedi Görünümüne Büyüt', 'Expand to Fullscreen Encyclopedia', 'Auf Vollbild vergrößern')}
                   aria-label="Expand country dossier to full screen"
                 >
                   <Square className="w-4 h-4" />
                 </button>
               ) : (
-                /* B. Minimize Button */
                 <button
                   type="button"
                   onClick={() => setIsFullscreen(false)}
                   className="hidden sm:inline-flex items-center justify-center p-2 rounded-full bg-teal-50 hover:bg-slate-100 dark:bg-teal-500/20 dark:hover:bg-white/10 text-teal-600 hover:text-slate-600 dark:text-teal-300 dark:hover:text-slate-300 transition-all cursor-pointer shadow-2xs hover:scale-105 active:scale-95"
-                  title={l('Varsayılan Boyuta Küçült', 'Restore to Modular Window', 'Auf Fenstergröße verkleinern', 'Restaurar tamaño modular', 'Свернуть в окно')}
-                  aria-label="Restore country dossier to default size"
+                  title={l('Varsayılan Boyuta Küçült', 'Restore to Modular Window', 'Auf Fenstergröße verkleinern')}
+                  aria-label="Restore default size"
                 >
                   <Minimize2 className="w-4 h-4" />
                 </button>
               )}
 
-              {/* C. Close Button (X) */}
+              {/* Close Button (X) */}
               <button
                 type="button"
                 onClick={onClose}
-                className="p-2 rounded-full bg-slate-100 hover:bg-rose-50 dark:bg-white/10 dark:hover:bg-rose-500/20 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-300 transition-all cursor-pointer flex-shrink-0 shadow-2xs hover:scale-105 active:scale-95"
-                title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
+                className="p-2 rounded-full bg-slate-100 hover:bg-rose-50 dark:bg-white/10 dark:hover:bg-rose-500/20 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-300 transition-all cursor-pointer shrink-0 shadow-2xs hover:scale-105 active:scale-95"
+                title={l('Kapat', 'Close', 'Schließen')}
                 aria-label="Close dossier"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
           </div>
+
+          {/* Symmetrical Row 2: Metadata & Verification Pill Strip */}
+          <div className="flex items-center gap-1.5 sm:gap-2 mt-2 pt-2 border-t border-slate-200/60 dark:border-white/5 overflow-x-auto scrollbar-none text-[11px]">
+            {(geo?.capital || geography?.capital) && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-semibold border border-slate-200/80 dark:border-white/5 shrink-0">
+                <span>🏛️</span>
+                <span>{l('Başkent:', 'Capital:', 'Hauptstadt:')} <b>{geo?.capital || geography?.capital}</b></span>
+              </span>
+            )}
+
+            {geo?.mainHub && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-semibold border border-slate-200/80 dark:border-white/5 shrink-0">
+                <span>✈️</span>
+                <span>IATA: <b className="font-mono text-teal-600 dark:text-teal-400">{geo.mainHub}</b></span>
+              </span>
+            )}
+
+            <button
+              type="button"
+              onClick={onOpenAudit}
+              className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg font-bold border transition-colors cursor-pointer shrink-0 ${verStatus.color}`}
+              title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
+            >
+              <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+              <span>✓ {verStatus.label}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={openGoogleMaps}
+              className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold border border-slate-200/80 dark:border-white/5 transition-colors cursor-pointer shrink-0 ml-auto"
+            >
+              <MapPin className="w-3 h-3 text-rose-500" />
+              <span>Google Haritalar</span>
+              <ExternalLink className="w-2.5 h-2.5 opacity-70" />
+            </button>
+          </div>
         </div>
 
         {/* Tab Content Body (Scrollable, Fluid Bottom-Sheet & Fullscreen) */}
         <div
+          ref={scrollContainerRef}
           className="dossier-scrollable-content flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 space-y-6 overscroll-contain"
           style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
         >
@@ -621,7 +629,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
         <div className="sticky top-0 z-20 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2.5 bg-white/95 dark:bg-[#0c101d]/95 backdrop-blur-xl border-y border-slate-200/80 dark:border-white/10 horizontal-badge-slider no-scrollbar-slider touch-pan-x flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none flex-nowrap">
           <button
             type="button"
-            onClick={() => setActiveTab('itinerary')}
+            onClick={() => handleTabChange('itinerary')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'itinerary' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -632,7 +640,18 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           <button
             type="button"
-            onClick={() => setActiveTab('logistics')}
+            onClick={() => handleTabChange('concierge')}
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+              activeTab === 'concierge' ? 'tab-chip-active' : 'tab-chip-inactive'
+            }`}
+          >
+            <Sparkles className="w-4 h-4 shrink-0 text-amber-400" />
+            <span>{l('🏖️ Kolay Tatil & 360° Asistan', '🏖️ Easy Vacation & Assistant', '🏖️ Urlaubs-Assistent')}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleTabChange('logistics')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'logistics' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -643,7 +662,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           <button
             type="button"
-            onClick={() => setActiveTab('culture')}
+            onClick={() => handleTabChange('culture')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'culture' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -654,7 +673,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           <button
             type="button"
-            onClick={() => setActiveTab('gastronomy')}
+            onClick={() => handleTabChange('gastronomy')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'gastronomy' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -665,7 +684,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           <button
             type="button"
-            onClick={() => setActiveTab('language')}
+            onClick={() => handleTabChange('language')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'language' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -676,7 +695,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           <button
             type="button"
-            onClick={() => setActiveTab('achievements')}
+            onClick={() => handleTabChange('achievements')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'achievements' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -687,7 +706,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
           <button
             type="button"
-            onClick={() => setActiveTab('visa')}
+            onClick={() => handleTabChange('visa')}
             className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'visa' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
@@ -696,20 +715,21 @@ Planlayan: Vizamigo (vizamigo.com)`;
             <span>{l('🛂 Vize & Güvenlik Kartı', '🛂 Visa & Travel Dossier', '🛂 Visum & Sicherheitskarte')}</span>
           </button>
         </div>
-          {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
-          <CountryRichSnippetSummary
-            countryCode={code}
-            currentPassport={currentPassport}
-            language={language}
-            variant="modal"
-          />
 
-          {/* Hyper-Localized Travel Concierge Engine (4-Stage Chronological Bento Grid) */}
-          <TravelConciergeGrid
-            countryCode={code}
-            originPassport={currentPassport}
-            variant="bento-full"
-          />
+        {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
+        <CountryRichSnippetSummary
+          countryCode={code}
+          currentPassport={currentPassport}
+          language={language}
+          variant="modal"
+        />
+
+        {/* TAB: KOLAY TATİL & 360° SEYAHAT ASİSTANI (GİDERKEN, GİDİNCE, DÖNERKEN TÜM UYGULAMA VE ORTAKLIKLAR) */}
+        {activeTab === 'concierge' && (
+          <div className="space-y-6 animate-in fade-in duration-200">
+            <EasyVacationAssistant countryCode={code} originPassport={currentPassport} />
+          </div>
+        )}
 
           {/* TAB 0: GEZİ PLANI & TURİSTİK ROTA */}
           {activeTab === 'itinerary' && itinerary && (

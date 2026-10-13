@@ -112,7 +112,10 @@ export const Navigation: React.FC<NavigationProps> = ({
                   type="button"
                   onClick={() => {
                     onSelectTab('explore');
-                    window.location.href = `/${language}`;
+                    if (window.location.pathname !== `/${language}`) {
+                      window.history.pushState({ lang: language, tab: 'explore' }, '', `/${language}`);
+                      window.dispatchEvent(new PopStateEvent('popstate'));
+                    }
                   }}
                   className="flex items-center gap-2.5 cursor-pointer text-left group"
                 >

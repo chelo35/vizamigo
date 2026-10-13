@@ -13,7 +13,13 @@ import {
   Radio,
   RefreshCw,
   MapPin,
-  Layers
+  Layers,
+  ArrowUp,
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  Maximize2,
+  Minimize2
 } from 'lucide-react';
 import { ALL_WORLD_HUBS, WorldHub, flagToIso } from '../../data/worldHubs';
 import { getHubWeather, useLiveWeather } from '../../data/weatherData';
@@ -162,6 +168,7 @@ export const GlobalRadarModal: React.FC<Props> = ({
   const [tempUnit, setTempUnit] = useState<'C' | 'F'>('C');
   const [activeContinent, setActiveContinent] = useState<string>('all');
   const [mapTheme, setMapTheme] = useState<'dark' | 'roadmap' | 'hybrid'>('dark');
+  const [isDetailsExpanded, setIsDetailsExpanded] = useState<boolean>(false);
 
   const [selectedHub, setSelectedHub] = useState<WorldHub>(() => {
     if (initialCity) {
@@ -655,6 +662,14 @@ export const GlobalRadarModal: React.FC<Props> = ({
     setPan({ x: 0, y: 0 });
   };
 
+  const handlePan = (dx: number, dy: number) => {
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.panBy(dx, dy);
+    } else {
+      setPan((prev) => ({ x: prev.x - dx, y: prev.y - dy }));
+    }
+  };
+
   const handleManualFxRefresh = async () => {
     setIsRefreshingFx(true);
     await refreshFx();
@@ -668,6 +683,17 @@ export const GlobalRadarModal: React.FC<Props> = ({
       className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-slate-950/85 backdrop-blur-xl animate-in fade-in duration-200"
       onMouseUp={() => setIsDragging(false)}
     >
+      {/* Top Floating High-Z-Index Close Button (Ensures user can ALWAYS close the modal from ANY viewport) */}
+      <button
+        type="button"
+        onClick={onClose}
+        className="fixed top-3 sm:top-5 right-3 sm:right-5 z-[9999] p-2.5 sm:p-3 rounded-full bg-slate-900/95 hover:bg-rose-600 text-white hover:text-white border-2 border-cyan-400/50 hover:border-rose-400 shadow-[0_0_30px_rgba(0,0,0,0.8)] backdrop-blur-2xl transition-all cursor-pointer flex items-center justify-center group active:scale-90"
+        title={l('Kapat / Geri Dön', 'Close / Exit', 'Schließen')}
+        aria-label="Close Global Radar"
+      >
+        <X className="w-5 h-5 sm:w-6 sm:h-6 group-hover:rotate-90 transition-transform text-cyan-200 group-hover:text-white" />
+      </button>
+
       {/* Main Container - Cyber Glass HUD */}
       <div className="relative w-full max-w-7xl h-[93vh] max-h-[920px] flex flex-col rounded-3xl bg-slate-900/95 border border-cyan-500/30 shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden text-slate-100">
         {/* ============================================================== */}
@@ -995,32 +1021,105 @@ export const GlobalRadarModal: React.FC<Props> = ({
               </div>
             )}
 
-            {/* Map Controls Floating Overlay (Zoom In, Zoom Out, Reset) */}
-            <div className="absolute bottom-4 left-4 flex flex-col gap-1.5 z-20">
+            {/* Touch guidance hint badge on top of map */}
+            <div className="absolute top-3 left-3 hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-950/80 border border-cyan-500/30 text-[10px] text-cyan-300/90 font-medium backdrop-blur-md pointer-events-none z-10">
+              <span>💡</span>
+              <span>{l('Yön tuşları veya haritayı sürükleyerek dünyayı keşfedin', 'Use arrow controls or drag to explore the globe', 'Mit Pfeiltasten oder Ziehen navigieren')}</span>
+            </div>
+
+            {/* Mobile View Switcher (Map Focus vs Read All Details) */}
+            <div className="lg:hidden absolute top-3 right-3 z-30">
               <button
                 type="button"
-                onClick={handleZoomIn}
-                className="w-9 h-9 rounded-xl bg-slate-900/95 hover:bg-slate-800 text-cyan-400 border border-cyan-500/40 flex items-center justify-center transition-all shadow-lg cursor-pointer"
-                title={l('Yakınlaştır', 'Zoom In', 'Heranzoomen')}
+                onClick={() => setIsDetailsExpanded(!isDetailsExpanded)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-600/95 hover:bg-cyan-500 text-white text-xs font-bold shadow-xl border border-cyan-300/50 backdrop-blur-md transition-all active:scale-95 cursor-pointer"
               >
-                <ZoomIn className="w-4 h-4" />
+                {isDetailsExpanded ? (
+                  <>
+                    <Minimize2 className="w-3.5 h-3.5" />
+                    <span>{l('🗺️ Haritayı Göster', '🗺️ Show Map', '🗺️ Karte')}</span>
+                  </>
+                ) : (
+                  <>
+                    <Maximize2 className="w-3.5 h-3.5" />
+                    <span>{l('📊 Bilgileri Genişlet', '📊 Expand Details', '📊 Details')}</span>
+                  </>
+                )}
               </button>
-              <button
-                type="button"
-                onClick={handleZoomOut}
-                className="w-9 h-9 rounded-xl bg-slate-900/95 hover:bg-slate-800 text-cyan-400 border border-cyan-500/40 flex items-center justify-center transition-all shadow-lg cursor-pointer"
-                title={l('Uzaklaştır', 'Zoom Out', 'Herauszoomen')}
-              >
-                <ZoomOut className="w-4 h-4" />
-              </button>
-              <button
-                type="button"
-                onClick={handleResetView}
-                className="w-9 h-9 rounded-xl bg-slate-900/95 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/15 flex items-center justify-center transition-all shadow-lg cursor-pointer"
-                title={l('Tüm Dünyayı Göster', 'Reset World View', 'Ansicht zurücksetzen')}
-              >
-                <RotateCcw className="w-4 h-4" />
-              </button>
+            </div>
+
+            {/* Map Controls Floating Overlay (D-Pad Pan + Zoom + Reset) */}
+            <div className="absolute bottom-4 left-4 flex flex-col gap-2 z-20">
+              {/* D-Pad Pan Navigation Buttons */}
+              <div className="bg-slate-900/95 p-1.5 rounded-2xl border border-cyan-500/40 shadow-xl flex flex-col items-center gap-1 backdrop-blur-md">
+                <button
+                  type="button"
+                  onClick={() => handlePan(0, -120)}
+                  className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-cyan-600 text-slate-300 hover:text-white flex items-center justify-center transition-all cursor-pointer shadow-sm active:scale-95"
+                  title={l('Yukarı Kaydır', 'Pan Up', 'Nach oben')}
+                  aria-label="Pan Up"
+                >
+                  <ArrowUp className="w-4 h-4" />
+                </button>
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    onClick={() => handlePan(-120, 0)}
+                    className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-cyan-600 text-slate-300 hover:text-white flex items-center justify-center transition-all cursor-pointer shadow-sm active:scale-95"
+                    title={l('Sola Kaydır', 'Pan Left', 'Nach links')}
+                    aria-label="Pan Left"
+                  >
+                    <ArrowLeft className="w-4 h-4" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleResetView}
+                    className="w-8 h-8 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-cyan-400 flex items-center justify-center transition-all cursor-pointer text-[10px] font-bold active:scale-95"
+                    title={l('Dünya Görünümünü Sıfırla', 'Reset World View', 'Ansicht zurücksetzen')}
+                    aria-label="Reset"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handlePan(120, 0)}
+                    className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-cyan-600 text-slate-300 hover:text-white flex items-center justify-center transition-all cursor-pointer shadow-sm active:scale-95"
+                    title={l('Sağa Kaydır', 'Pan Right', 'Nach rechts')}
+                    aria-label="Pan Right"
+                  >
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => handlePan(0, 120)}
+                  className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-cyan-600 text-slate-300 hover:text-white flex items-center justify-center transition-all cursor-pointer shadow-sm active:scale-95"
+                  title={l('Aşağı Kaydır', 'Pan Down', 'Nach unten')}
+                  aria-label="Pan Down"
+                >
+                  <ArrowDown className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Zoom In & Out */}
+              <div className="flex items-center justify-between gap-1 bg-slate-900/95 p-1 rounded-xl border border-cyan-500/40 shadow-xl backdrop-blur-md">
+                <button
+                  type="button"
+                  onClick={handleZoomIn}
+                  className="flex-1 w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 flex items-center justify-center transition-all cursor-pointer active:scale-95"
+                  title={l('Yakınlaştır', 'Zoom In', 'Heranzoomen')}
+                >
+                  <ZoomIn className="w-4 h-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={handleZoomOut}
+                  className="flex-1 w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 flex items-center justify-center transition-all cursor-pointer active:scale-95"
+                  title={l('Uzaklaştır', 'Zoom Out', 'Herauszoomen')}
+                >
+                  <ZoomOut className="w-4 h-4" />
+                </button>
+              </div>
             </div>
 
             {/* Telemetry Coordinate Tracker Overlay */}
@@ -1040,7 +1139,14 @@ export const GlobalRadarModal: React.FC<Props> = ({
           {/* ============================================================== */}
           {/* TARGET TELEMETRY HUD DRAWER (RIGHT PANEL)                      */}
           {/* ============================================================== */}
-          <aside className="w-full lg:w-[400px] flex-shrink-0 bg-slate-950/95 border-t lg:border-t-0 lg:border-l border-cyan-500/20 flex flex-col overflow-y-auto p-4 sm:p-5 space-y-3.5 shadow-2xl z-20 max-h-[48vh] lg:max-h-none">
+          <aside
+            className={`w-full lg:w-[420px] flex-shrink-0 bg-slate-950/95 border-t lg:border-t-0 lg:border-l border-cyan-500/20 flex flex-col overflow-y-auto p-4 sm:p-5 space-y-3.5 shadow-2xl z-20 transition-all duration-300 ${
+              isDetailsExpanded
+                ? 'h-[78vh] max-h-[78vh]'
+                : 'h-[44vh] max-h-[44vh] lg:h-auto lg:max-h-none'
+            }`}
+            style={{ WebkitOverflowScrolling: 'touch' }}
+          >
             {/* 1. Target Identity Header + Same-Country Tourist Cities Selector */}
             <div className="p-3.5 rounded-2xl bg-gradient-to-br from-cyan-950/40 via-slate-900 to-slate-950 border border-cyan-500/30 shadow-lg">
               <div className="flex items-start justify-between gap-3">
@@ -1281,6 +1387,31 @@ export const GlobalRadarModal: React.FC<Props> = ({
                 <ChevronRight className="w-4 h-4" />
               </button>
             )}
+
+            {/* Mobile Sticky Exit & Action Bar */}
+            <div className="lg:hidden sticky bottom-0 -mx-4 -mb-4 sm:-mx-5 sm:-mb-5 p-3 bg-slate-950/95 backdrop-blur-xl border-t border-cyan-500/30 flex items-center gap-2 z-30">
+              <button
+                type="button"
+                onClick={onClose}
+                className="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-rose-500/20 text-slate-200 hover:text-rose-300 font-bold text-xs flex items-center justify-center gap-2 border border-white/10 hover:border-rose-500/30 cursor-pointer active:scale-95 transition-all shadow-md"
+              >
+                <X className="w-4 h-4 text-rose-400" />
+                <span>{l('Kapat / Geri Dön', 'Close / Exit', 'Schließen')}</span>
+              </button>
+              {onOpenCountryDossier && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose();
+                    onOpenCountryDossier(targetIntel.countryCode);
+                  }}
+                  className="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md shadow-cyan-600/30 cursor-pointer active:scale-95 transition-all"
+                >
+                  <span>{l('Ülke Dosyası', 'Country Dossier', 'Länder-Dossier')}</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              )}
+            </div>
           </aside>
         </div>
       </div>

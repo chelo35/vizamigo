@@ -142,7 +142,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
       </div>
 
       {/* Quick Base Chips (Strict 48x48px Touch Targets with gap-2) */}
-      <div className="flex items-center gap-2 overflow-x-auto pt-2.5 border-t border-slate-100 dark:border-white/[0.06]">
+      <div className="flex items-center gap-2 overflow-x-auto pt-2.5 border-t border-slate-100 dark:border-white/[0.06] horizontal-badge-slider no-scrollbar-slider touch-pan-x flex-nowrap">
         <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider shrink-0 mr-1">
           {l('Hızlı', 'Quick', 'Schnell', 'Rápido', 'Быстро')}:
         </span>
@@ -151,7 +151,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             key={code}
             type="button"
             onClick={() => setFromCode(code)}
-            className={`min-h-[48px] min-w-[48px] px-3.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
+            className={`shrink-0 flex-shrink-0 min-h-[44px] min-w-[48px] px-3.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
               fromCode === code
                 ? 'tab-chip-active'
                 : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70'

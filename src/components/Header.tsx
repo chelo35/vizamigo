@@ -116,7 +116,10 @@ export const Header: React.FC<HeaderProps> = ({
               type="button"
               onClick={() => {
                 onSelectTab?.('explore');
-                window.location.href = `/${language}`;
+                if (window.location.pathname !== `/${language}`) {
+                  window.history.pushState({ lang: language, tab: 'explore' }, '', `/${language}`);
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                }
               }}
               className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group"
               title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}

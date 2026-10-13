@@ -9,6 +9,7 @@ import { SupportedLanguage } from '../i18n/types';
 import { SUPPORTED_LANGUAGES, getStoredLanguage, saveStoredLanguage } from '../i18n';
 import { TabKey } from '../components/Navigation';
 import { GEO_DATA } from '../data/geoData';
+import { D } from '../data/passportData';
 
 export const BASE_URL = 'https://vizamigo.com';
 
@@ -16,6 +17,43 @@ export const CORE_SEO_LANGUAGES: readonly SupportedLanguage[] = ['tr', 'en', 'de
 
 export const VALID_LANG_CODES = new Set(SUPPORTED_LANGUAGES.map(l => l.code));
 export const VALID_TABS = new Set<TabKey>(['explore', 'plan', 'track', 'nomad', 'profile', 'consular']);
+
+export const TAB_ALIASES: Record<string, TabKey> = {
+  explore: 'explore',
+  kesfet: 'explore',
+  home: 'explore',
+  radar: 'explore',
+  weather: 'explore',
+  clocks: 'explore',
+  currency: 'explore',
+
+  plan: 'plan',
+  rota: 'plan',
+  itinerary: 'plan',
+  compare: 'plan',
+
+  track: 'track',
+  schengen: 'track',
+  sayac: 'track',
+  calculator: 'track',
+  'schengen-calculator': 'track',
+
+  nomad: 'nomad',
+  'dijital-gocebe': 'nomad',
+  nomadhub: 'nomad',
+  tools: 'nomad',
+
+  profile: 'profile',
+  profil: 'profile',
+  cuzdan: 'profile',
+  wallet: 'profile',
+  emergency: 'profile',
+
+  consular: 'consular',
+  audit: 'consular',
+  mevzuat: 'consular',
+  konsolosluk: 'consular'
+};
 
 export interface ParsedRoute {
   language: SupportedLanguage;
@@ -40,8 +78,8 @@ const OG_LOCALE_BY_LANG: Record<SupportedLanguage, string> = {
 
 /**
  * Parses window.location.pathname into clean route parameters.
- * Validates country codes against GEO_DATA (199 destinations) and tabs against VALID_TABS.
- * Flags is404=true for invalid countries or unknown paths to prevent Google Soft-404 indexation.
+ * Validates country codes against GEO_DATA and D (199 destinations) and tabs against VALID_TABS/aliases.
+ * Gracefully ignores index.html, query remnants, and file extensions to prevent false 404s.
  */
 export function parseCurrentRoute(): ParsedRoute {
   if (typeof window === 'undefined') {
@@ -49,41 +87,57 @@ export function parseCurrentRoute(): ParsedRoute {
   }
 
   const rawPath = window.location.pathname.replace(/\/+$/, '');
-  const segments = rawPath.split('/').filter(Boolean);
+  const segments = rawPath
+    .split('/')
+    .map((s) => s.trim().replace(/\.(html|php|htm)$/i, ''))
+    .filter((s) => Boolean(s) && s.toLowerCase() !== 'index.html');
 
   let language: SupportedLanguage = getStoredLanguage();
   let tab: TabKey = 'explore';
   let countryCode: string | null = null;
   let is404 = false;
 
+  const isValidCountryCode = (c: string) => {
+    const upper = c.toUpperCase();
+    return Boolean(GEO_DATA[upper] || (D as Record<string, any>)[upper]);
+  };
+
   if (segments.length > 0) {
     const firstSegment = segments[0].toLowerCase();
     if (VALID_LANG_CODES.has(firstSegment as SupportedLanguage)) {
       language = firstSegment as SupportedLanguage;
       segments.shift();
-    } else if (firstSegment === 'country' || VALID_TABS.has(firstSegment as TabKey)) {
-      // Direct path without lang prefix (e.g. /country/AL or /plan) - keep default language
+    } else if (
+      firstSegment === 'country' ||
+      VALID_TABS.has(firstSegment as TabKey) ||
+      TAB_ALIASES[firstSegment] ||
+      isValidCountryCode(firstSegment)
+    ) {
+      // Direct path without lang prefix (e.g. /country/AL or /plan or /TH) - keep default language
     } else {
       is404 = true;
     }
   }
 
-  if (segments.length > 0) {
+  if (segments.length > 0 && !is404) {
     const next = segments[0].toLowerCase();
     if (next === 'country') {
       if (segments[1]) {
         const potentialCode = segments[1].toUpperCase();
-        if (GEO_DATA[potentialCode]) {
+        if (isValidCountryCode(potentialCode)) {
           countryCode = potentialCode;
         } else {
           is404 = true;
-          countryCode = potentialCode;
         }
       } else {
         is404 = true;
       }
     } else if (VALID_TABS.has(next as TabKey)) {
       tab = next as TabKey;
+    } else if (TAB_ALIASES[next]) {
+      tab = TAB_ALIASES[next];
+    } else if (isValidCountryCode(next)) {
+      countryCode = next.toUpperCase();
     } else {
       is404 = true;
     }
