@@ -5,6 +5,7 @@
  */
 
 import { countryToRegion } from './passportData';
+import { getVerifiedCountryVisual } from './verifiedCountryData';
 
 export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=480&fm=webp&q=75';
 
@@ -241,6 +242,13 @@ export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: strin
 
 export function getCountryVisual(countryCode: string): { image: string; landmark: string } {
   const code = (countryCode || '').toUpperCase();
+  const verified = getVerifiedCountryVisual(code);
+  if (verified) {
+    return {
+      image: getOptimizedImageUrl(verified.image),
+      landmark: verified.landmark
+    };
+  }
   const raw = COUNTRY_LANDSCAPES[code];
   if (raw) {
     return {

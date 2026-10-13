@@ -68,6 +68,7 @@ import { getCountryTravelIntelligence } from '../data/countryTravelIntelligence'
 import { getCountryEncyclopedia, CountryEncyclopediaData } from '../data/countryEncyclopedia';
 import { getCountryGeography, CountryGeographyData } from '../data/countryGeography';
 import { getCountryItinerary, CountryTravelItinerary } from '../data/countryItineraries';
+import { getVerifiedCountryRecord, VerifiedCountryRecord } from '../data/verifiedCountryData';
 import { getPassportItems } from '../utils/calculator';
 import { useI18n } from '../data/i18n';
 import {
@@ -197,6 +198,8 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     const encyclopedia = getCountryEncyclopedia(code, language);
     const detailedInfo = INFO[`${currentPassport}-${code}`];
 
+    const verifiedRecord = getVerifiedCountryRecord(code);
+
     // Verification Status Badge (Specifies Visa & Border Entry verification)
     let verStatus = {
       type: 'agree',
@@ -204,7 +207,17 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
       color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
     };
 
-    if (VER.chk.split(' ').includes(code)) {
+    if (verifiedRecord) {
+      verStatus = {
+        type: 'verified',
+        label: l(
+          `🛡️ Resmi Teyitli (${verifiedRecord.last_reviewed})`,
+          `🛡️ Official Audited (${verifiedRecord.last_reviewed})`,
+          `🛡️ Amtlich geprüft (${verifiedRecord.last_reviewed})`
+        ),
+        color: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700'
+      };
+    } else if (VER.chk.split(' ').includes(code)) {
       verStatus = {
         type: 'chk',
         label: l('Vize: Resmi Dışişleri & Göç Teyitli (2026)', 'Visa: Official MFA & Immigration Audited (2026)', 'Visum: Offiziell geprüft (2026)'),
@@ -234,13 +247,14 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
       verStatus,
       geography,
       itinerary,
-      travelIntel
+      travelIntel,
+      verifiedRecord
     };
   }, [countryCode, currentPassport, language, l]);
 
   if (!isOpen || !countryData) return null;
 
-  const { code, name, item, geo, insights, encyclopedia, detailedInfo, verStatus, geography, itinerary, travelIntel } = countryData;
+  const { code, name, item, geo, insights, encyclopedia, detailedInfo, verStatus, geography, itinerary, travelIntel, verifiedRecord } = countryData;
 
   const handleCopy = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
@@ -529,6 +543,83 @@ Planlayan: Vizamigo (vizamigo.com)`;
               )}
             </div>
           </div>
+
+          {/* Diplomatic Advisory Alert Banner (Tier 1 Verified Multi-Agency) */}
+          {verifiedRecord?.advisory && verifiedRecord.advisory.combined_level !== null && (
+            <div
+              className={`rounded-2xl p-4 border transition-all ${
+                verifiedRecord.advisory.combined_level >= 4
+                  ? 'bg-rose-500/10 border-rose-500/30 text-rose-950 dark:text-rose-100'
+                  : verifiedRecord.advisory.combined_level === 3
+                  ? 'bg-amber-500/10 border-amber-500/30 text-amber-950 dark:text-amber-100'
+                  : verifiedRecord.advisory.combined_level === 2
+                  ? 'bg-yellow-500/10 border-yellow-500/30 text-yellow-950 dark:text-yellow-100'
+                  : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-950 dark:text-emerald-100'
+              }`}
+            >
+              <div className="flex items-start gap-3">
+                <div className="text-2xl shrink-0 mt-0.5">
+                  {verifiedRecord.advisory.combined_level >= 4
+                    ? '🛑'
+                    : verifiedRecord.advisory.combined_level === 3
+                    ? '⚠️'
+                    : verifiedRecord.advisory.combined_level === 2
+                    ? '⚡'
+                    : '🛡️'}
+                </div>
+                <div className="space-y-1.5 flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span
+                      className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full ${
+                        verifiedRecord.advisory.combined_level >= 4
+                          ? 'bg-rose-600 text-white'
+                          : verifiedRecord.advisory.combined_level === 3
+                          ? 'bg-amber-600 text-white'
+                          : verifiedRecord.advisory.combined_level === 2
+                          ? 'bg-yellow-600 text-slate-900'
+                          : 'bg-emerald-600 text-white'
+                      }`}
+                    >
+                      {verifiedRecord.advisory.combined_level >= 4
+                        ? l('Seviye 4: Seyahat Etmeyiniz', 'Level 4: Do Not Travel', 'Stufe 4: Reisewarnung')
+                        : verifiedRecord.advisory.combined_level === 3
+                        ? l('Seviye 3: Seyahatinizi Yeniden Değerlendirin', 'Level 3: Reconsider Travel', 'Stufe 3: Reisen überdenken')
+                        : verifiedRecord.advisory.combined_level === 2
+                        ? l('Seviye 2: Yüksek Dikkat', 'Level 2: Exercise Increased Caution', 'Stufe 2: Erhöhte Vorsicht')
+                        : l('Seviye 1: Normal Önlemler', 'Level 1: Exercise Normal Precautions', 'Stufe 1: Normale Vorsicht')}
+                    </span>
+                    <span className="text-[10px] opacity-75 font-semibold">
+                      {l('Resmi Diplomatik Seyahat Uyarısı', 'Official Diplomatic Travel Advisory', 'Offizielle Reisehinweise')}
+                    </span>
+                  </div>
+                  {verifiedRecord.advisory.advisory_headline && (
+                    <p className="text-xs font-bold leading-snug">
+                      {(verifiedRecord.advisory.advisory_headline as Record<string, string>)[language] ||
+                        verifiedRecord.advisory.advisory_headline.tr ||
+                        verifiedRecord.advisory.advisory_headline.en}
+                    </p>
+                  )}
+                  {verifiedRecord.advisory.regional_warnings && verifiedRecord.advisory.regional_warnings.length > 0 && (
+                    <div className="pt-1 space-y-1">
+                      {verifiedRecord.advisory.regional_warnings.map((rw, idx) => (
+                        <div key={idx} className="text-[11px] opacity-90 flex items-start gap-1">
+                          <span>•</span>
+                          <span>
+                            <b>{rw.area}:</b> {rw.reason} (Level {rw.level})
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {verifiedRecord.advisory.sources && verifiedRecord.advisory.sources.length > 0 && (
+                    <div className="pt-1 flex items-center gap-2 text-[10px] opacity-75 flex-wrap">
+                      <span>🏛️ {verifiedRecord.advisory.sources.map(s => s.title).join(' • ')}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* De-Widgetized Lifestyle Bento Quick Bar */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 mt-4 pt-3 border-t border-slate-200/80 dark:border-white/10 text-xs">
@@ -1566,6 +1657,20 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           </div>
                         )}
                       </div>
+
+                      {verifiedRecord?.electricity?.voltage?.sources?.[0] && (
+                        <div className="pt-1 text-[10px] text-slate-400 dark:text-slate-500 flex items-center gap-1">
+                          <span>🏛️ {l('Resmi Standart:', 'Official Standard:', 'Offizieller Standard:')}</span>
+                          <a
+                            href={verifiedRecord.electricity.voltage.sources[0].url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-slate-600 dark:hover:text-slate-300"
+                          >
+                            {verifiedRecord.electricity.voltage.sources[0].title}
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
 
@@ -2426,7 +2531,25 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       <span>{l('Polis:', 'Police:', 'Polizei:')} <b>{insights.safety.emergencyNumbers.police}</b></span>
                       <span>{l('Ambulans:', 'Ambulance:', 'Krankenwagen:')} <b>{insights.safety.emergencyNumbers.ambulance}</b></span>
                       <span>{l('Genel:', 'General:', 'Allgemein:')} <b>{insights.safety.emergencyNumbers.general}</b></span>
+                      {verifiedRecord?.emergency?.tourist_police?.value && (
+                        <span className="text-emerald-700 dark:text-emerald-400 font-bold">
+                          {l('Turist Polisi:', 'Tourist Police:', 'Touristenpolizei:')} <b>{verifiedRecord.emergency.tourist_police.value}</b>
+                        </span>
+                      )}
                     </div>
+                    {verifiedRecord?.emergency?.police?.sources?.[0] && (
+                      <div className="text-[10px] text-slate-400 dark:text-slate-500 pt-1 flex items-center gap-1 flex-wrap">
+                        <span>🏛️ {l('Doğrulanmış Kaynak:', 'Verified Source:', 'Verifizierte Quelle:')}</span>
+                        <a
+                          href={verifiedRecord.emergency.police.sources[0].url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-slate-600 dark:hover:text-slate-300"
+                        >
+                          {verifiedRecord.emergency.police.sources[0].title}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
 

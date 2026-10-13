@@ -6,6 +6,7 @@
 
 import { getCountryName } from './passportData';
 import { GLOBAL_CURRENCIES } from './countryGeography';
+import { getVerifiedCountryRecord } from './verifiedCountryData';
 
 export interface CountrySafetyInfo {
   safetyScore: number; // 0-100 (100 en güvenli)
@@ -1797,11 +1798,18 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
   const code = countryCode.toUpperCase();
   const countryName = getCountryName(code, lang);
 
-  // 1. Curated kayıtlardan temel al
+  // 1. Curated kayıtlardan ve Doğrulanmış Şema Kayıtlarından temel al
   const cur = CURATED_INSIGHTS[code];
+  const verifiedRec = getVerifiedCountryRecord(code);
 
   // 2. Doğrulanmış acil durum numaraları
-  const emergencyNumbers = REAL_EMERGENCY_DATA[code] || (
+  const emergencyNumbers = verifiedRec
+    ? {
+        police: verifiedRec.emergency.police.value || '112',
+        ambulance: verifiedRec.emergency.ambulance.value || '112',
+        general: verifiedRec.emergency.general.value || verifiedRec.emergency.police.value || '112'
+      }
+    : (REAL_EMERGENCY_DATA[code] || (
     // Bölgesel gerçek acil durum fallback'leri
     'US CA MX'.split(' ').includes(code)
       ? { police: '911', ambulance: '911', general: '911' }
@@ -1820,10 +1828,12 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       : 'BR AR CL CO PE'.split(' ').includes(code)
       ? { police: '190 / 911', ambulance: '192 / 107', general: '123 / 911' }
       : { police: '112', ambulance: '112', general: '112 (Uluslararası Acil)' }
-  );
+  ));
 
   // 3. Doğrulanmış yerel araç çağırma (ride-hailing) uygulamaları
-  const popularRideApps = REAL_RIDE_APPS[code] || (
+  const popularRideApps = (verifiedRec && verifiedRec.local_apps.length > 0)
+    ? verifiedRec.local_apps.map(a => a.name)
+    : (REAL_RIDE_APPS[code] || (
     'TH VN MY SG ID PH KH LA'.split(' ').includes(code)
       ? (code === 'TH' ? ['Grab', 'Bolt', 'LINE MAN', 'InDrive'] : ['Grab', 'Gojek', 'InDrive'])
       : 'JP KR CN HK TW'.split(' ').includes(code)
@@ -1839,11 +1849,18 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       : 'RS BA ME AL MK'.split(' ').includes(code)
       ? ['Pink Taxi', 'MojTaxi', 'CarGo', 'Tesla Taxi']
       : ['Uber', 'Bolt', 'Resmi Lisanslı Duraklar']
-  );
+  ));
 
   // 4. Doğrulanmış Güvenlik ve Suç Endeksi
+  let verifiedSafetyScore: number | undefined;
+  if (verifiedRec?.advisory?.combined_level) {
+    if (verifiedRec.advisory.combined_level === 4) verifiedSafetyScore = 15;
+    else if (verifiedRec.advisory.combined_level === 3) verifiedSafetyScore = 40;
+    else if (verifiedRec.advisory.combined_level === 2) verifiedSafetyScore = 65;
+    else if (verifiedRec.advisory.combined_level === 1) verifiedSafetyScore = 85;
+  }
   const safetyRecord = REAL_SAFETY_SCORES[code];
-  const safetyScore = cur?.safety?.safetyScore ?? (safetyRecord ? safetyRecord.score : (
+  const safetyScore = verifiedSafetyScore ?? (cur?.safety?.safetyScore ?? (safetyRecord ? safetyRecord.score : (
     // Bölgesel gerçekçi ortalamalar
     'IS SG CH QA JP AE TW NO DK FI AT OM SI GE CZ KR PT HR EE'.split(' ').includes(code) ? 84
     : 'NL PL DE ES RO ME BA RS VN GR AL IT'.split(' ').includes(code) ? 74
@@ -1852,7 +1869,7 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
     : 'UA YE SY AF SD SO LY IR VE'.split(' ').includes(code) ? 15
     : 'CO MX BR ZA'.split(' ').includes(code) ? 46
     : 55 // Varsayılan: Temkinli / Bölgesel Teyit Önerilir (Asla körü körüne 'Güvenli' değil)
-  ));
+  )));
 
   const safetyLevelText =
     safetyScore < 25
@@ -1941,7 +1958,9 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
 
   // 5. Doğrulanmış İnternet Hızları
   const netRecord = REAL_INTERNET_DATA[code];
-  const mobileSpeed = cur?.internet?.mobileSpeedMbps ?? (netRecord ? netRecord.mobile : (
+  const mobileSpeed = (typeof verifiedRec?.connectivity?.mobile_down_mbps?.value === 'number')
+    ? verifiedRec.connectivity.mobile_down_mbps.value
+    : (cur?.internet?.mobileSpeedMbps ?? (netRecord ? netRecord.mobile : (
     'IS NO DK NL FI SE'.split(' ').includes(code) ? 145 :
     'AE QA KW SA'.split(' ').includes(code) ? 220 :
     'KR SG JP'.split(' ').includes(code) ? 130 :
@@ -1949,15 +1968,17 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
     'DE FR GB ES IT'.split(' ').includes(code) ? 75 :
     'TH VN MY'.split(' ').includes(code) ? 85 :
     52
-  ));
+  )));
 
-  const broadbandSpeed = cur?.internet?.broadbandSpeedMbps ?? (netRecord ? netRecord.broadband : (
+  const broadbandSpeed = (typeof verifiedRec?.connectivity?.fixed_down_mbps?.value === 'number')
+    ? verifiedRec.connectivity.fixed_down_mbps.value
+    : (cur?.internet?.broadbandSpeedMbps ?? (netRecord ? netRecord.broadband : (
     'SG HK TH US CL'.split(' ').includes(code) ? 220 :
     'FR ES NO DK CH'.split(' ').includes(code) ? 190 :
     'KR JP AE QA'.split(' ').includes(code) ? 170 :
     'DE GB IT PL'.split(' ').includes(code) ? 90 :
     55
-  ));
+  )));
 
   // 6. Doğrulanmış Yaşam ve Seyahat Maliyetleri
   const costRecord = REAL_COSTS_DATA[code];
@@ -2043,7 +2064,9 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
     ? `${(geoCurrencyMatch.name as any)[lang] || geoCurrencyMatch.name.en || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
     : (isEs ? 'Moneda Local' : isRu ? 'Местная валюта' : isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
 
-  const autoPlugType = geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isEs ? 'Tipo C, F o estándar regional' : isRu ? 'Тип C, F или региональный стандарт' : isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart');
+  const autoPlugType = verifiedRec
+    ? `Tip ${verifiedRec.electricity.plug_types.value.join(', ')} (${verifiedRec.electricity.voltage.value}, ${verifiedRec.electricity.frequency_hz.value}Hz)`
+    : (geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isEs ? 'Tipo C, F o estándar regional' : isRu ? 'Тип C, F или региональный стандарт' : isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart'));
 
   return {
     countryCode: code,
