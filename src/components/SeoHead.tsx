@@ -98,48 +98,48 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       switch (tab) {
         case 'plan':
           pageTitle = language === 'en'
-            ? 'Route Planner & Passport Comparison | Vizamigo'
+            ? 'Dual Passport Synergy & Global Route Planner | Vizamigo'
             : language === 'de'
-            ? 'Routenplaner & Passvergleich | Vizamigo'
+            ? 'Doppelpass-Synergie & Globaler Routenplaner | Vizamigo'
             : language === 'es'
-            ? 'Planificador de Rutas y Comparador de Pasaportes | Vizamigo'
+            ? 'Sinergia de Doble Pasaporte y Planificador de Rutas | Vizamigo'
             : language === 'ru'
-            ? 'Планировщик Маршрутов и Сравнение Паспортов | Vizamigo'
-            : 'Rota Planlayıcı, Sinerji & Pasaport Kıyaslama | Vizamigo';
+            ? 'Сравнение силы паспортов и планировщик маршрутов | Vizamigo'
+            : 'Çifte Pasaport Vize Gücü Kıyaslama & Seyahat Rota Planlayıcı | Vizamigo';
           break;
         case 'track':
           pageTitle = language === 'en'
-            ? 'Schengen 90/180 Day Calculator & Rule Tracker | Vizamigo'
+            ? 'Schengen 90/180 Day Rule Calculator (2026 Stay Tracker) | Vizamigo'
             : language === 'de'
-            ? 'Schengen 90/180 Tage-Rechner | Vizamigo'
+            ? 'Schengen 90/180-Tage-Rechner (2026 Aufenthaltsrechner) | Vizamigo'
             : language === 'es'
-            ? 'Calculadora Schengen 90/180 Días | Vizamigo'
+            ? 'Calculadora Regla Schengen 90/180 Días (2026) | Vizamigo'
             : language === 'ru'
-            ? 'Калькулятор Шенгена 90/180 Дней | Vizamigo'
-            : 'Schengen 90/180 Gün Sayacı & İhlal Takip Aracı | Vizamigo';
+            ? 'Калькулятор Шенген 90/180 дней (2026) | Vizamigo'
+            : 'Schengen 90/180 Gün Kuralı Hesaplayıcı (2026 Kalan Gün Sayacı) | Vizamigo';
           break;
         case 'nomad':
           pageTitle = language === 'en'
-            ? 'Digital Nomad Visas & Tax Intelligence | Vizamigo'
+            ? 'Digital Nomad Visas & Remote Work Income Guide (2026) | Vizamigo'
             : language === 'de'
-            ? 'Digitale Nomaden-Visa & Steuer-Guide | Vizamigo'
+            ? 'Digital-Nomaden-Visa & Einkommensanforderungen (2026) | Vizamigo'
             : language === 'es'
-            ? 'Visas para Nómadas Digitales e Impuestos | Vizamigo'
+            ? 'Visas para Nómadas Digitales y Requisitos de Ingresos (2026) | Vizamigo'
             : language === 'ru'
-            ? 'Визы для Цифровых Кочевников и Налоги | Vizamigo'
-            : 'Dijital Göçebe Vizeleri, Vergi & Uzaktan Çalışma Rehberi | Vizamigo';
+            ? 'Визы для цифровых кочевников и требования к доходу (2026) | Vizamigo'
+            : 'Dijital Göçebe Vizeleri & Uzaktan Çalışma Gelir Şartları (2026) | Vizamigo';
           break;
         case 'profile':
         case 'consular':
           pageTitle = language === 'en'
-            ? 'Consular Crisis Desk & Emergency Hotlines | Vizamigo'
+            ? 'Consular Emergency Crisis Desk & Lost Passport Hotline | Vizamigo'
             : language === 'de'
-            ? 'Konsularische Krisenhilfe & Notfallzentrale | Vizamigo'
+            ? 'Konsularischer Krisenstab & Notruf-Hotline | Vizamigo'
             : language === 'es'
             ? 'Mesa de Crisis Consular y Teléfonos de Emergencia | Vizamigo'
             : language === 'ru'
-            ? 'Консульская Помощь и Экстренные Службы | Vizamigo'
-            : 'Konsolosluk Acil Durum Kriz Masası & Gezgin Kasası | Vizamigo';
+            ? 'Консульский кризисный центр и экстренная помощь | Vizamigo'
+            : 'Konsolosluk Kriz Masası, Acil Yardım & Kayıp Pasaport Hattı | Vizamigo';
           break;
         default:
           pageTitle = language === 'en'

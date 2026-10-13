@@ -348,14 +348,14 @@ export function getMobileVoiceQuestion(
   switch (language) {
     case 'tr': {
       const nationalityTerm = currentPassport === 'TR' ? 'Türk Vatandaşlarından' : `${passportName} Vatandaşlarından`;
-      return `${countryName} ${nationalityTerm} Vize İstiyor mu? (2026 Kuralları)`;
+      return `${countryName} ${nationalityTerm} Vize İstiyor mu? (2026)`;
     }
     case 'en':
       return `Do I Need a Visa for ${countryName}? (2026 Entry Rules)`;
     case 'de':
-      return `Braucht man ein Visum für ${countryName}? (Einreisebestimmungen 2026)`;
+      return `Brauche ich ein Visum für ${countryName}? (2026 Einreisebestimmungen)`;
     case 'es':
-      return `¿Se necesita visa para ${countryName}? (Reglas de Entrada 2026)`;
+      return `¿Necesito Visa para ${countryName}? (Requisitos de Entrada 2026)`;
     case 'ru':
       return `Нужна ли виза в ${countryName}? (Правила въезда 2026)`;
   }
@@ -513,7 +513,7 @@ export function generateCountryJsonLd({
           {
             '@type': 'PropertyValue',
             name: 'eSIM Availability',
-            value: insights.internet.esimAvailable ? 'Available' : 'Local SIM Only'
+            value: insights.internet.esimAvailability || 'Local SIM Only'
           },
           {
             '@type': 'PropertyValue',

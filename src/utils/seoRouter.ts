@@ -1,7 +1,13 @@
 /**
  * Scalable International Multilingual SEO Routing Engine for Vizamigo
- * Provides clean sub-directory URL path routing (e.g. /tr, /en, /de, /ru, /es, /:lang/:tab, /:lang/country/:code)
- * with zero-dependency HTML5 History API synchronization, 404 validation, and full Mobile-First crawlability.
+ * 
+ * Provides clean, search-engine-optimized sub-directory URL path routing:
+ *   - Localized Country Dossiers: `/tr/arnavutluk`, `/en/albania`, `/de/albanien`, `/ru/albaniya`, `/es/albania`
+ *   - Localized Travel Tools: `/tr/plan`, `/en/track`, `/de/nomad`, etc.
+ *   - International Gateways: `/tr`, `/en`, `/de`, `/ru`, `/es`
+ * 
+ * Fully backwards-compatible with `/country/:code` and direct ISO-2 paths.
+ * Powers zero-dependency HTML5 History API synchronization, 404 validation, and Mobile-First crawling.
  */
 
 import { useState, useEffect, useCallback } from 'react';
@@ -10,12 +16,13 @@ import { SUPPORTED_LANGUAGES, getStoredLanguage, saveStoredLanguage } from '../i
 import { TabKey } from '../components/Navigation';
 import { GEO_DATA } from '../data/geoData';
 import { D } from '../data/passportData';
+import { getCountrySlug, getCountryCodeFromSlug } from './countrySlugs';
 
 export const BASE_URL = 'https://vizamigo.com';
 
 export const CORE_SEO_LANGUAGES: readonly SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es'] as const;
 
-export const VALID_LANG_CODES = new Set(SUPPORTED_LANGUAGES.map(l => l.code));
+export const VALID_LANG_CODES = new Set(SUPPORTED_LANGUAGES.map((l) => l.code));
 export const VALID_TABS = new Set<TabKey>(['explore', 'plan', 'track', 'nomad', 'profile', 'consular']);
 
 export const TAB_ALIASES: Record<string, TabKey> = {
@@ -77,9 +84,22 @@ const OG_LOCALE_BY_LANG: Record<SupportedLanguage, string> = {
 };
 
 /**
+ * Validates if an ISO-2 string exists in Vizamigo country records.
+ */
+export function isValidCountryCode(code: string): boolean {
+  if (!code || typeof code !== 'string') return false;
+  const upper = code.toUpperCase();
+  return Boolean(GEO_DATA[upper] || (D as Record<string, unknown>)[upper]);
+}
+
+/**
  * Parses window.location.pathname into clean route parameters.
- * Validates country codes against GEO_DATA and D (199 destinations) and tabs against VALID_TABS/aliases.
- * Gracefully ignores index.html, query remnants, and file extensions to prevent false 404s.
+ * Supports:
+ *   - `/:lang/:countrySlug` (e.g. `/tr/arnavutluk`, `/en/albania`, `/de/albanien`)
+ *   - `/:lang/country/:code` (legacy e.g. `/tr/country/AL`)
+ *   - `/:lang/:tab` (e.g. `/en/track`, `/tr/plan`)
+ *   - `/:lang` (e.g. `/tr`, `/en`)
+ *   - Root `/` fallback
  */
 export function parseCurrentRoute(): ParsedRoute {
   if (typeof window === 'undefined') {
@@ -97,11 +117,6 @@ export function parseCurrentRoute(): ParsedRoute {
   let countryCode: string | null = null;
   let is404 = false;
 
-  const isValidCountryCode = (c: string) => {
-    const upper = c.toUpperCase();
-    return Boolean(GEO_DATA[upper] || (D as Record<string, any>)[upper]);
-  };
-
   if (segments.length > 0) {
     const firstSegment = segments[0].toLowerCase();
     if (VALID_LANG_CODES.has(firstSegment as SupportedLanguage)) {
@@ -111,9 +126,10 @@ export function parseCurrentRoute(): ParsedRoute {
       firstSegment === 'country' ||
       VALID_TABS.has(firstSegment as TabKey) ||
       TAB_ALIASES[firstSegment] ||
-      isValidCountryCode(firstSegment)
+      isValidCountryCode(firstSegment) ||
+      getCountryCodeFromSlug(firstSegment)
     ) {
-      // Direct path without lang prefix (e.g. /country/AL or /plan or /TH) - keep default language
+      // Direct path without lang prefix (e.g. /albania or /plan) - keep stored/default language
     } else {
       is404 = true;
     }
@@ -121,25 +137,39 @@ export function parseCurrentRoute(): ParsedRoute {
 
   if (segments.length > 0 && !is404) {
     const next = segments[0].toLowerCase();
+
+    // 1. Check legacy `/country/:code`
     if (next === 'country') {
       if (segments[1]) {
         const potentialCode = segments[1].toUpperCase();
         if (isValidCountryCode(potentialCode)) {
           countryCode = potentialCode;
+          tab = 'explore';
         } else {
           is404 = true;
         }
       } else {
         is404 = true;
       }
-    } else if (VALID_TABS.has(next as TabKey)) {
+    }
+    // 2. Check tab name or alias (e.g. `track`, `plan`, `nomad`)
+    else if (VALID_TABS.has(next as TabKey)) {
       tab = next as TabKey;
     } else if (TAB_ALIASES[next]) {
       tab = TAB_ALIASES[next];
-    } else if (isValidCountryCode(next)) {
-      countryCode = next.toUpperCase();
-    } else {
-      is404 = true;
+    }
+    // 3. Check localized country slug (e.g. `arnavutluk`, `albania`, `albanien`, `tayland`)
+    else {
+      const resolvedFromSlug = getCountryCodeFromSlug(next, language);
+      if (resolvedFromSlug && isValidCountryCode(resolvedFromSlug)) {
+        countryCode = resolvedFromSlug;
+        tab = 'explore';
+      } else if (isValidCountryCode(next)) {
+        countryCode = next.toUpperCase();
+        tab = 'explore';
+      } else {
+        is404 = true;
+      }
     }
   }
 
@@ -147,10 +177,10 @@ export function parseCurrentRoute(): ParsedRoute {
 }
 
 /**
- * Builds a clean sub-directory localized relative path:
- *   - Home/Explore: `/tr`, `/en`, `/de`, `/ru`, `/es`
- *   - Tool Tabs: `/tr/plan`, `/en/track`, etc.
- *   - Country Dossier: `/tr/country/TH`, `/en/country/TH`, `/de/country/TH`, `/ru/country/TH`, `/es/country/TH`
+ * Builds a clean, localized search-engine-optimized relative path:
+ *   - Country Dossier: `/${lang}/${countrySlug}` (e.g. `/tr/arnavutluk`, `/en/albania`, `/de/albanien`)
+ *   - Tool Tab: `/${lang}/${tab}` (e.g. `/tr/track`, `/en/plan`)
+ *   - International Home: `/${lang}` (e.g. `/tr`, `/en`)
  */
 export function buildLocalizedPath(
   lang: SupportedLanguage,
@@ -158,7 +188,8 @@ export function buildLocalizedPath(
   countryCode: string | null = null
 ): string {
   if (countryCode) {
-    return `/${lang}/country/${countryCode.toUpperCase()}`;
+    const slug = getCountrySlug(countryCode, lang);
+    return `/${lang}/${slug}`;
   }
   if (tab !== 'explore') {
     return `/${lang}/${tab}`;
@@ -167,7 +198,7 @@ export function buildLocalizedPath(
 }
 
 /**
- * Builds absolute URL for canonical and hreflang links.
+ * Builds an absolute URL for canonical, hreflang, and sitemap entries.
  */
 export function buildAbsoluteLocalizedUrl(
   lang: SupportedLanguage,
@@ -180,8 +211,8 @@ export function buildAbsoluteLocalizedUrl(
 
 /**
  * Programmatically builds the complete set of 5 localized hreflang alternate links
- * (TR, EN, DE, RU, ES) plus the mandatory `x-default` international fallback tag
- * for any page or individual country dossier layout.
+ * (TR, EN, DE, RU, ES) plus the mandatory `x-default` international fallback tag.
+ * Cross-references precise sub-directory URLs (e.g. /tr/arnavutluk <-> /en/albania <-> /de/albanien).
  */
 export function getHreflangAlternatesForRoute(
   tab: TabKey = 'explore',
@@ -193,7 +224,7 @@ export function getHreflangAlternatesForRoute(
     ogLocale: OG_LOCALE_BY_LANG[code]
   }));
 
-  // Mandatory secure x-default fallback pointing to the international English path
+  // Mandatory x-default international fallback pointing to English path
   descriptors.push({
     hreflang: 'x-default',
     href: buildAbsoluteLocalizedUrl('en', tab, countryCode),

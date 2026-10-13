@@ -611,9 +611,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       ))}
                     </div>
                   )}
-                  {verifiedRecord.advisory.sources && verifiedRecord.advisory.sources.length > 0 && (
+                  {verifiedRecord.advisory.agencies && verifiedRecord.advisory.agencies.length > 0 && (
                     <div className="pt-1 flex items-center gap-2 text-[10px] opacity-75 flex-wrap">
-                      <span>🏛️ {verifiedRecord.advisory.sources.map(s => s.title).join(' • ')}</span>
+                      <span>🏛️ {verifiedRecord.advisory.agencies.map((a) => a.source.title).join(' • ')}</span>
                     </div>
                   )}
                 </div>

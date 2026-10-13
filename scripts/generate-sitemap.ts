@@ -1,8 +1,9 @@
 /**
  * Programmatic Multilingual Sitemap.xml & Robots.txt Engine for Vizamigo
- * Automatically generates Google Search Console & Mobile-First Indexing compliant sitemap.xml
- * with xhtml:link hreflang cross-references across all active languages (TR, EN, DE, RU, ES) + x-default.
- * Dynamically adapts in real-time whenever a new language or country node is added to the database.
+ * 
+ * Automatically compiles a 100% Google Search Console compliant, mobile-first indexable sitemap.xml.
+ * Maps precise localized sub-directory routes (e.g. /tr/arnavutluk, /en/albania, /de/albanien)
+ * and embeds bidirectional xhtml:link hreflang alternates (TR, EN, DE, RU, ES) + secure x-default fallback.
  */
 
 import fs from 'fs';
@@ -33,7 +34,6 @@ export interface SitemapUrlEntry {
 
 /**
  * Dynamically discovers all unique ISO-3166-1 alpha-2 country codes across Vizamigo datasets.
- * Adding a country to GEO_DATA or D automatically registers it in the sitemap.
  */
 export function getAllIndexedCountryCodes(): string[] {
   const codeSet = new Set<string>([
@@ -41,31 +41,32 @@ export function getAllIndexedCountryCodes(): string[] {
     ...Object.keys(D)
   ]);
   return Array.from(codeSet)
-    .map(c => c.toUpperCase())
-    .filter(c => /^[A-Z]{2}$/.test(c))
+    .map((c) => c.toUpperCase())
+    .filter((c) => /^[A-Z]{2}$/.test(c))
     .sort();
 }
 
 /**
- * Generates the complete X-Linked Multilingual Sitemap XML string.
+ * Generates the complete X-Linked Multilingual Sitemap XML string conforming strictly
+ * to Google Search Console and sitemaps.org 0.9 + xhtml namespace specifications.
  */
 export function generateSitemapXml(): string {
   const entries: SitemapUrlEntry[] = [];
-  const langCodes = SUPPORTED_LANGUAGES.map(l => l.code);
+  const langCodes = SUPPORTED_LANGUAGES.map((l) => l.code);
   const countryCodes = getAllIndexedCountryCodes();
 
   // 1. Root International Gateway & Localized Home Pages (/tr, /en, /de, /ru, /es)
   const homeAlternates = getHreflangAlternatesForRoute('explore', null);
 
   entries.push({
-    loc: `${BASE_URL}`,
+    loc: `${BASE_URL}/`,
     alternates: homeAlternates,
     lastmod: TODAY,
     changefreq: 'daily',
     priority: '1.0'
   });
 
-  langCodes.forEach(lang => {
+  langCodes.forEach((lang) => {
     const loc = buildAbsoluteLocalizedUrl(lang, 'explore', null);
     entries.push({
       loc,
@@ -76,18 +77,18 @@ export function generateSitemapXml(): string {
     });
   });
 
-  // 2. Core Travel & Visa Intelligence Tools (Schengen Calculator, Route Planner, Digital Nomad, Consular Desk, Profile)
+  // 2. Core Travel Intelligence & Mobility Tools
   const toolTabs: { tab: TabKey; priority: string; changefreq: 'daily' | 'weekly' }[] = [
     { tab: 'track', priority: '0.90', changefreq: 'daily' },    // Schengen 90/180 Calculator
-    { tab: 'plan', priority: '0.90', changefreq: 'daily' },     // Multi-Passport Synergy & Route Planner
-    { tab: 'nomad', priority: '0.85', changefreq: 'daily' },    // Digital Nomad Visa & Tax Hub
-    { tab: 'consular', priority: '0.80', changefreq: 'weekly' },// Consular Crisis Desk & Emergency Hotlines
+    { tab: 'plan', priority: '0.90', changefreq: 'daily' },     // Route Planner & Synergy
+    { tab: 'nomad', priority: '0.85', changefreq: 'daily' },    // Digital Nomad Visa Hub
+    { tab: 'consular', priority: '0.80', changefreq: 'weekly' },// Consular Emergency Hotlines
     { tab: 'profile', priority: '0.70', changefreq: 'weekly' }  // Traveler Vault
   ];
 
   toolTabs.forEach(({ tab, priority, changefreq }) => {
     const tabAlternates = getHreflangAlternatesForRoute(tab, null);
-    langCodes.forEach(lang => {
+    langCodes.forEach((lang) => {
       const loc = buildAbsoluteLocalizedUrl(lang, tab, null);
       entries.push({
         loc,
@@ -99,10 +100,10 @@ export function generateSitemapXml(): string {
     });
   });
 
-  // 3. All 199+ Country Dossiers & Visa Policy Pages across all 5 languages
-  countryCodes.forEach(code => {
+  // 3. Localized Country Dossiers & Visa Policy Nodes (/tr/arnavutluk, /en/albania, /de/albanien, etc.)
+  countryCodes.forEach((code) => {
     const countryAlternates = getHreflangAlternatesForRoute('explore', code);
-    langCodes.forEach(lang => {
+    langCodes.forEach((lang) => {
       const loc = buildAbsoluteLocalizedUrl(lang, 'explore', code);
       entries.push({
         loc,
@@ -114,15 +115,15 @@ export function generateSitemapXml(): string {
     });
   });
 
-  // Format XML with strict xmlns and xmlns:xhtml namespaces
+  // Format valid, indented XML with strict namespaces
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
   xml += `        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n`;
 
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     xml += `  <url>\n`;
     xml += `    <loc>${entry.loc}</loc>\n`;
-    entry.alternates.forEach(alt => {
+    entry.alternates.forEach((alt) => {
       xml += `    <xhtml:link rel="alternate" hreflang="${alt.hreflang}" href="${alt.href}" />\n`;
     });
     xml += `    <lastmod>${entry.lastmod}</lastmod>\n`;
@@ -137,14 +138,14 @@ export function generateSitemapXml(): string {
 }
 
 /**
- * Generates the Mobile-First Crawl-Budget Optimized robots.txt content.
+ * Generates Mobile-First Crawl-Budget Optimized robots.txt content.
  */
 export function generateRobotsTxt(): string {
-  const langAllowRules = SUPPORTED_LANGUAGES.map(l => `Allow: /${l.code}/`).join('\n');
+  const langAllowRules = SUPPORTED_LANGUAGES.map((l) => `Allow: /${l.code}/`).join('\n');
 
   return `# ==============================================================================
 # Vizamigo Mobile-First Indexing & Crawl Budget Optimization (robots.txt)
-# Active Languages: ${SUPPORTED_LANGUAGES.map(l => l.code.toUpperCase()).join(', ')} + x-default
+# Active Languages: ${SUPPORTED_LANGUAGES.map((l) => l.code.toUpperCase()).join(', ')} + x-default
 # ==============================================================================
 
 User-agent: *
@@ -162,7 +163,7 @@ Allow: /*.ico$
 Allow: /*.woff2$
 Allow: /manifest.json
 
-# Strictly Block Technical Backend Paths, Staging URLs, Mock Routes & Unfinished Scripts
+# Strictly Block Technical Backend Paths, Staging URLs & Unfinished Scripts
 Disallow: /api/
 Disallow: /backend/
 Disallow: /admin/
@@ -170,7 +171,6 @@ Disallow: /staging/
 Disallow: /mock/
 Disallow: /mock-data/
 Disallow: /scripts/
-Disallow: /unfinished/
 Disallow: /internal/
 Disallow: /dev/
 Disallow: /test/
@@ -190,7 +190,7 @@ Disallow: /*?*utm_*
 Disallow: /*?*fbclid=
 Disallow: /*?*gclid=
 
-# Dedicated Rules for Google Mobile & International Search Crawlers
+# Dedicated Rules for Googlebot Mobile
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
@@ -238,6 +238,5 @@ if (isMainModule) {
   console.log(`[Vizamigo Sitemap Engine] Successfully generated robots.txt at ${robotsPath}`);
   console.log(`[Vizamigo Sitemap Engine] Total URL nodes in sitemap: ${sitemapXml.match(/<url>/g)?.length || 0}`);
   console.log(`[Vizamigo Sitemap Engine] Countries indexed: ${getAllIndexedCountryCodes().length}`);
-  console.log(`[Vizamigo Sitemap Engine] Active Languages: ${SUPPORTED_LANGUAGES.map(l => l.code).join(', ')} + x-default`);
+  console.log(`[Vizamigo Sitemap Engine] Active Languages: ${SUPPORTED_LANGUAGES.map((l) => l.code).join(', ')} + x-default`);
 }
-

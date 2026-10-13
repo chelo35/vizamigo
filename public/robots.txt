@@ -22,7 +22,7 @@ Allow: /*.ico$
 Allow: /*.woff2$
 Allow: /manifest.json
 
-# Strictly Block Technical Backend Paths, Staging URLs, Mock Routes & Unfinished Scripts
+# Strictly Block Technical Backend Paths, Staging URLs & Unfinished Scripts
 Disallow: /api/
 Disallow: /backend/
 Disallow: /admin/
@@ -30,7 +30,6 @@ Disallow: /staging/
 Disallow: /mock/
 Disallow: /mock-data/
 Disallow: /scripts/
-Disallow: /unfinished/
 Disallow: /internal/
 Disallow: /dev/
 Disallow: /test/
@@ -50,7 +49,7 @@ Disallow: /*?*utm_*
 Disallow: /*?*fbclid=
 Disallow: /*?*gclid=
 
-# Dedicated Rules for Google Mobile & International Search Crawlers
+# Dedicated Rules for Googlebot Mobile
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
