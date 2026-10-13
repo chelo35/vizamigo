@@ -618,7 +618,7 @@ button:active,
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
-  overflow: hidden;
+  overflow-x: clip;
   line-height: 1.6;
 }
 
@@ -628,7 +628,6 @@ button:active,
   align-items: center;
   min-width: 0;
   word-break: break-word;
-  overflow: hidden;
 }
 
 .multilingual-grid-cell {
@@ -636,7 +635,7 @@ button:active,
   max-width: 100%;
   word-break: break-word;
   overflow-wrap: anywhere;
-  overflow: hidden;
+  overflow-x: clip;
   line-height: 1.6;
 }
 
@@ -661,7 +660,7 @@ button:active,
 
 .bento-cell {
   border-radius: 24px;
-  overflow: hidden;
+  overflow-x: clip;
   position: relative;
   min-width: 0;
   word-break: break-word;
@@ -693,6 +692,19 @@ button:active,
     min-width: 48px;
     min-height: 48px;
   }
+
+  /* Prevent hover transform repaints & GPU scroll jank on mobile touch devices */
+  .glass-card:hover,
+  .country-card:hover,
+  .dark .glass-card:hover,
+  .dark .country-card:hover {
+    transform: none !important;
+  }
+
+  .country-thumbnail-images,
+  .country-thumbnail-image {
+    will-change: auto;
+  }
 }
 
 /* Semantic HTML5 <details> & <summary> Accordions for Mobile-First Googlebot Indexing */
@@ -700,7 +712,8 @@ details.semantic-card-details,
 details.semantic-mobile-accordion {
   display: block;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
+  touch-action: pan-y;
 }
 
 details.semantic-card-details > summary,
@@ -714,6 +727,59 @@ details.semantic-mobile-accordion > summary {
 details.semantic-card-details > summary::-webkit-details-marker,
 details.semantic-mobile-accordion > summary::-webkit-details-marker {
   display: none;
+}
+
+/* ========================================================
+   MOBILE SCROLL UNLOCK, TOP SEARCH BAR & 100DVH VIEWPORT HOTFIXES
+   ======================================================== */
+
+/* 1. Smooth touch scrolling on all scrollable country content containers & modals */
+.country-card,
+.country-card-wrapper {
+  touch-action: pan-y;
+  overflow: visible;
+}
+
+.country-scrollable-content,
+.dossier-scrollable-content,
+details.semantic-card-details[open] > .country-expanded-body {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  max-height: 85vh;
+  max-height: 85dvh;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
+}
+
+/* 2. Top Global Search Bar Container visibility & 100% width protection */
+.global-search-bar-container {
+  width: 100%;
+  max-width: 100%;
+  z-index: 9999;
+  position: relative;
+}
+
+/* 3. Dynamic Viewport Dimension Fix (100dvh & -webkit-fill-available) */
+html,
+body,
+#root {
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-shell-viewport {
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+}
+
+.mobile-drawer-viewport {
+  height: 100dvh;
+  min-height: -webkit-fill-available;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  touch-action: pan-y;
 }
 
 .aspect-thumbnail-container {

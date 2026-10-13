@@ -348,7 +348,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 sm:py-6 overflow-y-auto backdrop-blur-md bg-slate-950/75 animate-in fade-in duration-200">
       <div
-        className="relative w-full max-w-5xl max-h-[92vh] flex flex-col glass-panel rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
+        className="relative w-full max-w-5xl max-h-[92dvh] flex flex-col glass-panel rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Header Banner */}
@@ -639,7 +639,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
         </div>
 
         {/* Tab Content Body (Scrollable) */}
-        <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
+        <div
+          className="dossier-scrollable-content flex-1 overflow-y-auto p-5 sm:p-6 space-y-6"
+          style={{ WebkitOverflowScrolling: 'touch', overflowY: 'auto', maxHeight: '85vh' }}
+        >
           {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
           <CountryRichSnippetSummary
             countryCode={code}

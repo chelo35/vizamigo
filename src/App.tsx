@@ -3,41 +3,79 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Header } from './components/Header';
 import { Navigation, TabKey } from './components/Navigation';
 import { ExploreTab } from './components/ExploreTab';
-import { WhereCanIGoTab } from './components/WhereCanIGoTab';
-import { CompareTab } from './components/CompareTab';
-import { RoutePlannerTab } from './components/RoutePlannerTab';
-import { DayCounterTab } from './components/DayCounterTab';
-import { NomadToolsTab } from './components/NomadToolsTab';
-import { ProfileTab } from './components/ProfileTab';
-import { PassportSelectModal } from './components/PassportSelectModal';
-import { LegalInfoModal } from './components/LegalInfoModal';
 import {
   loadStoredPassport,
   saveStoredPassport,
   loadStoredSecondaryPassport,
   saveStoredSecondaryPassport
 } from './utils/storage';
-import { LanguageProvider, useI18n, Language } from './data/i18n';
+import { LanguageProvider, useI18n } from './data/i18n';
 import { AuthProvider } from './context/AuthContext';
 import { AuthModal } from './components/AuthModal';
-import { RegulationAuditModal } from './components/RegulationAuditModal';
-import { ReportChangeModal } from './components/ReportChangeModal';
 import { GlobalFooter } from './components/footer/GlobalFooter';
-import { PackingListModal } from './components/tools/PackingListModal';
-import { TippingCalculatorModal } from './components/tools/TippingCalculatorModal';
-import { TimezoneOverlapModal } from './components/tools/TimezoneOverlapModal';
-import { GlobalRadarModal } from './components/tools/GlobalRadarModal';
-import { ShieldCheck, Compass, Sparkles, X } from 'lucide-react';
+import { Sparkles, X } from 'lucide-react';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
 import { NotFoundView } from './components/NotFoundView';
 import { HomeHero } from './components/design/HomeHero';
 import { getCountryName } from './data/passportData';
 import { getPassportItems } from './utils/calculator';
+
+// Code-split secondary tabs & modals for <0.5s instant initial render
+const WhereCanIGoTab = lazy(() =>
+  import('./components/WhereCanIGoTab').then(m => ({ default: m.WhereCanIGoTab }))
+);
+const CompareTab = lazy(() =>
+  import('./components/CompareTab').then(m => ({ default: m.CompareTab }))
+);
+const RoutePlannerTab = lazy(() =>
+  import('./components/RoutePlannerTab').then(m => ({ default: m.RoutePlannerTab }))
+);
+const DayCounterTab = lazy(() =>
+  import('./components/DayCounterTab').then(m => ({ default: m.DayCounterTab }))
+);
+const NomadToolsTab = lazy(() =>
+  import('./components/NomadToolsTab').then(m => ({ default: m.NomadToolsTab }))
+);
+const ProfileTab = lazy(() =>
+  import('./components/ProfileTab').then(m => ({ default: m.ProfileTab }))
+);
+const PassportSelectModal = lazy(() =>
+  import('./components/PassportSelectModal').then(m => ({ default: m.PassportSelectModal }))
+);
+const LegalInfoModal = lazy(() =>
+  import('./components/LegalInfoModal').then(m => ({ default: m.LegalInfoModal }))
+);
+const RegulationAuditModal = lazy(() =>
+  import('./components/RegulationAuditModal').then(m => ({ default: m.RegulationAuditModal }))
+);
+const ReportChangeModal = lazy(() =>
+  import('./components/ReportChangeModal').then(m => ({ default: m.ReportChangeModal }))
+);
+const PackingListModal = lazy(() =>
+  import('./components/tools/PackingListModal').then(m => ({ default: m.PackingListModal }))
+);
+const TippingCalculatorModal = lazy(() =>
+  import('./components/tools/TippingCalculatorModal').then(m => ({ default: m.TippingCalculatorModal }))
+);
+const TimezoneOverlapModal = lazy(() =>
+  import('./components/tools/TimezoneOverlapModal').then(m => ({ default: m.TimezoneOverlapModal }))
+);
+const GlobalRadarModal = lazy(() =>
+  import('./components/tools/GlobalRadarModal').then(m => ({ default: m.GlobalRadarModal }))
+);
+
+const TabLoadingSkeleton: React.FC = () => (
+  <div className="h-[360px] rounded-[24px] glass-card animate-pulse p-8 space-y-4">
+    <div className="h-6 w-48 rounded-full bg-slate-200/80 dark:bg-white/10" />
+    <div className="h-24 w-full rounded-[20px] bg-slate-100 dark:bg-white/[0.04]" />
+    <div className="h-32 w-full rounded-[20px] bg-slate-100 dark:bg-white/[0.04]" />
+  </div>
+);
 
 function AppContent() {
   const { language, setLanguage, l, t } = useI18n();
@@ -144,7 +182,7 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen text-[#1A1D20] dark:text-white flex font-sans selection:bg-teal-600 selection:text-white relative overflow-x-hidden transition-colors">
+    <div className="app-shell-viewport min-h-[100dvh] text-[#1A1D20] dark:text-white flex font-sans selection:bg-teal-600 selection:text-white relative overflow-x-hidden transition-colors">
       {/* Dynamic Scalable Multilingual SEO Head (Canonical & 5-Language Hreflang Alternates + x-default) */}
       <SeoHead
         language={language}
@@ -184,7 +222,7 @@ function AppContent() {
       {/* ========================================================
           2. MAIN CONTENT AREA (FULL-WIDTH LUXURY LAYOUT)
       ======================================================== */}
-      <div className="flex flex-col flex-1 min-h-screen w-full transition-all">
+      <div className="flex flex-col flex-1 app-shell-viewport min-h-[100dvh] w-full transition-all">
         {/* Top Context & Navigation Bar (Mockup 'Masaüstü' Header) */}
         <Header
           currentPassport={currentPassport}
@@ -222,7 +260,7 @@ function AppContent() {
               onGoHome={() => handleSelectTab('explore')}
             />
           ) : (
-            <>
+            <Suspense fallback={<TabLoadingSkeleton />}>
               {/* Tab Content: 1. KEŞFET / EXPLORE */}
               {activeTab === 'explore' && (
             <div className="space-y-6">
@@ -395,7 +433,7 @@ function AppContent() {
           {activeTab === 'consular' && (
             <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
           )}
-        </>
+        </Suspense>
       )}
 
         {/* Sınırlı Reklam & Gezgin Sponsor Kartı */}
@@ -447,75 +485,86 @@ function AppContent() {
       </main>
       </div>
 
-      {/* Passport Selector Modal */}
-      <PassportSelectModal
-        isOpen={isPassportModalOpen}
-        onClose={() => setIsPassportModalOpen(false)}
-        selectedPassport={currentPassport}
-        onSelect={handlePassportChange}
-      />
-
-      {/* Legal & Backup Modal */}
-      <LegalInfoModal
-        isOpen={isLegalModalOpen}
-        onClose={() => setIsLegalModalOpen(false)}
-        onDataResetOrImported={handleDataResetOrImported}
-      />
-
       {/* User Login & Registration Modal */}
       <AuthModal />
 
-      {/* Regulation Audit Console Modal */}
-      <RegulationAuditModal
-        isOpen={isAuditModalOpen}
-        onClose={() => setIsAuditModalOpen(false)}
-        onOpenReportModal={(code, name) => {
-          setIsAuditModalOpen(false);
-          setReportingModalData({ code, name });
-        }}
-      />
+      {/* Lazy-Loaded Modals (Only mounted when open) */}
+      <Suspense fallback={null}>
+        {isPassportModalOpen && (
+          <PassportSelectModal
+            isOpen={isPassportModalOpen}
+            onClose={() => setIsPassportModalOpen(false)}
+            selectedPassport={currentPassport}
+            onSelect={handlePassportChange}
+          />
+        )}
 
-      {/* Community Change Reporting Modal */}
-      <ReportChangeModal
-        isOpen={!!reportingModalData}
-        onClose={() => setReportingModalData(null)}
-        defaultCountryCode={reportingModalData?.code}
-        defaultCountryName={reportingModalData?.name}
-        currentPassport={currentPassport}
-      />
+        {isLegalModalOpen && (
+          <LegalInfoModal
+            isOpen={isLegalModalOpen}
+            onClose={() => setIsLegalModalOpen(false)}
+            onDataResetOrImported={handleDataResetOrImported}
+          />
+        )}
 
-      {/* Smart Packing Checklist Modal */}
-      <PackingListModal
-        isOpen={isPackingListOpen}
-        onClose={() => setIsPackingListOpen(false)}
-      />
+        {isAuditModalOpen && (
+          <RegulationAuditModal
+            isOpen={isAuditModalOpen}
+            onClose={() => setIsAuditModalOpen(false)}
+            onOpenReportModal={(code, name) => {
+              setIsAuditModalOpen(false);
+              setReportingModalData({ code, name });
+            }}
+          />
+        )}
 
-      {/* Global Tipping & Bill Splitter Modal */}
-      <TippingCalculatorModal
-        isOpen={isTippingCalcOpen}
-        onClose={() => setIsTippingCalcOpen(false)}
-      />
+        {reportingModalData && (
+          <ReportChangeModal
+            isOpen={!!reportingModalData}
+            onClose={() => setReportingModalData(null)}
+            defaultCountryCode={reportingModalData?.code}
+            defaultCountryName={reportingModalData?.name}
+            currentPassport={currentPassport}
+          />
+        )}
 
-      {/* 24H Nomad Timezone Overlap Matrix Modal */}
-      <TimezoneOverlapModal
-        isOpen={isTimezoneOverlapOpen}
-        onClose={() => setIsTimezoneOverlapOpen(false)}
-      />
+        {isPackingListOpen && (
+          <PackingListModal
+            isOpen={isPackingListOpen}
+            onClose={() => setIsPackingListOpen(false)}
+          />
+        )}
 
-      {/* Global Travel Radar & Interactive World Map HUD Modal */}
-      <GlobalRadarModal
-        isOpen={isRadarOpen}
-        onClose={() => setIsRadarOpen(false)}
-        initialMode={radarInitialMode}
-        initialCity={radarTargetCity}
-        currentPassport={currentPassport}
-        onOpenCountryDossier={(code) => {
-          if (activeTab !== 'explore') {
-            setActiveTab('explore');
-          }
-          handleCountrySelect(code);
-        }}
-      />
+        {isTippingCalcOpen && (
+          <TippingCalculatorModal
+            isOpen={isTippingCalcOpen}
+            onClose={() => setIsTippingCalcOpen(false)}
+          />
+        )}
+
+        {isTimezoneOverlapOpen && (
+          <TimezoneOverlapModal
+            isOpen={isTimezoneOverlapOpen}
+            onClose={() => setIsTimezoneOverlapOpen(false)}
+          />
+        )}
+
+        {isRadarOpen && (
+          <GlobalRadarModal
+            isOpen={isRadarOpen}
+            onClose={() => setIsRadarOpen(false)}
+            initialMode={radarInitialMode}
+            initialCity={radarTargetCity}
+            currentPassport={currentPassport}
+            onOpenCountryDossier={(code) => {
+              if (activeTab !== 'explore') {
+                setActiveTab('explore');
+              }
+              handleCountrySelect(code);
+            }}
+          />
+        )}
+      </Suspense>
     </div>
   );
 }

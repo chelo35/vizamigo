@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, Suspense, lazy, useEffect } from 'react';
 import {
   Search,
   CheckCircle2,
@@ -49,22 +49,52 @@ import {
 import { getCountryInsights } from '../data/countryInsights';
 import { getCountryGeography } from '../data/countryGeography';
 import { GEO_DATA } from '../data/geoData';
-import { InteractiveWorldMap } from './InteractiveWorldMap';
-import { ReportChangeModal } from './ReportChangeModal';
-import { RegulationAuditModal } from './RegulationAuditModal';
-import { CountryDossierModal } from './CountryDossierModal';
 import { getPassportItems } from '../utils/calculator';
 import { loadStoredChecklists, saveStoredChecklists } from '../utils/storage';
 import { useI18n } from '../data/i18n';
 import { getCountryVisual } from '../data/countryVisuals';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
-import { WorldClockWidget } from './widgets/WorldClockWidget';
-import { WeatherWidget } from './widgets/WeatherWidget';
-import { CurrencyWidget } from './widgets/CurrencyWidget';
 import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/schemaGenerator';
 
 import { TabKey } from './Navigation';
+
+// Code-split heavy visual nodes & live loop widgets for <0.5s instant initial paint
+const InteractiveWorldMap = lazy(() =>
+  import('./InteractiveWorldMap').then(m => ({ default: m.InteractiveWorldMap }))
+);
+const WorldClockWidget = lazy(() =>
+  import('./widgets/WorldClockWidget').then(m => ({ default: m.WorldClockWidget }))
+);
+const WeatherWidget = lazy(() =>
+  import('./widgets/WeatherWidget').then(m => ({ default: m.WeatherWidget }))
+);
+const CurrencyWidget = lazy(() =>
+  import('./widgets/CurrencyWidget').then(m => ({ default: m.CurrencyWidget }))
+);
+const ReportChangeModal = lazy(() =>
+  import('./ReportChangeModal').then(m => ({ default: m.ReportChangeModal }))
+);
+const RegulationAuditModal = lazy(() =>
+  import('./RegulationAuditModal').then(m => ({ default: m.RegulationAuditModal }))
+);
+const CountryDossierModal = lazy(() =>
+  import('./CountryDossierModal').then(m => ({ default: m.CountryDossierModal }))
+);
+
+const WidgetCardSkeleton: React.FC = () => (
+  <div className="h-[260px] rounded-[24px] glass-card p-6 animate-pulse flex flex-col justify-between border border-slate-200/60 dark:border-white/[0.06]">
+    <div className="flex items-center justify-between">
+      <div className="h-4 w-32 rounded-full bg-slate-200/80 dark:bg-white/10" />
+      <div className="h-6 w-16 rounded-full bg-slate-200/80 dark:bg-white/10" />
+    </div>
+    <div className="space-y-3">
+      <div className="h-12 w-full rounded-[20px] bg-slate-100 dark:bg-white/[0.04]" />
+      <div className="h-12 w-full rounded-[20px] bg-slate-100 dark:bg-white/[0.04]" />
+    </div>
+    <div className="h-3 w-24 rounded-full bg-slate-200/60 dark:bg-white/[0.06]" />
+  </div>
+);
 
 interface ExploreTabProps {
   currentPassport: string;
@@ -151,6 +181,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [isLocalAuditOpen, setIsLocalAuditOpen] = useState<boolean>(false);
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
+  const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
+
+  // Defer live clock, weather & currency widget hydration until after initial HTML/CSS paint (<0.5s FCP)
+  useEffect(() => {
+    const rafId = window.requestAnimationFrame(() => {
+      setWidgetsHydrated(true);
+    });
+    return () => window.cancelAnimationFrame(rafId);
+  }, []);
 
   const openDossier = (code: string) => {
     setSelectedDossierCountry(code);
@@ -296,15 +335,23 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       </div>
 
       {viewMode === 'map' ? (
-        <InteractiveWorldMap
-          currentPassport={currentPassport}
-          items={items}
-          onSelectCountry={(code) => {
-            setExpandedCountry(code);
-          }}
-          onOpenAuditConsole={handleOpenAudit}
-          onOpenReportChange={(c) => setReportingCountry(c)}
-        />
+        <Suspense
+          fallback={
+            <div className="h-[520px] rounded-[24px] glass-card animate-pulse flex items-center justify-center text-sm font-bold text-slate-400">
+              {l('İnteraktif Dünya Haritası Yükleniyor...', 'Loading Interactive World Map...', 'Interaktive Weltkarte wird geladen...')}
+            </div>
+          }
+        >
+          <InteractiveWorldMap
+            currentPassport={currentPassport}
+            items={items}
+            onSelectCountry={(code) => {
+              setExpandedCountry(code);
+            }}
+            onOpenAuditConsole={handleOpenAudit}
+            onOpenReportChange={(c) => setReportingCountry(c)}
+          />
+        </Suspense>
       ) : (
         <>
           {/* Hero Stats Card - Luxury Freedom & Mobility Experience (Hidden when HomeHero is active) */}
@@ -639,11 +686,27 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
       {/* Top Travel Command Suite: World Clock, Live Weather & FX Converter */}
       <section className="space-y-6 mb-9" aria-label="Travel Widgets and Tools">
-        {/* Live Interactive Widgets: World Clock, Live Weather & FX Converter Side-by-Side */}
+        {/* Live Interactive Widgets: World Clock, Live Weather & FX Converter Side-by-Side (Hydrated asynchronously after first paint) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <WorldClockWidget onOpenRadar={(city) => onOpenGlobalRadar?.('clock', city)} />
-          <WeatherWidget onOpenRadar={(city) => onOpenGlobalRadar?.('weather', city)} />
-          <CurrencyWidget onOpenRadar={() => onOpenGlobalRadar?.('currency')} />
+          {widgetsHydrated ? (
+            <>
+              <Suspense fallback={<WidgetCardSkeleton />}>
+                <WorldClockWidget onOpenRadar={(city) => onOpenGlobalRadar?.('clock', city)} />
+              </Suspense>
+              <Suspense fallback={<WidgetCardSkeleton />}>
+                <WeatherWidget onOpenRadar={(city) => onOpenGlobalRadar?.('weather', city)} />
+              </Suspense>
+              <Suspense fallback={<WidgetCardSkeleton />}>
+                <CurrencyWidget onOpenRadar={() => onOpenGlobalRadar?.('currency')} />
+              </Suspense>
+            </>
+          ) : (
+            <>
+              <WidgetCardSkeleton />
+              <WidgetCardSkeleton />
+              <WidgetCardSkeleton />
+            </>
+          )}
         </div>
 
         {/* Quick Travel Tools (4 Symmetrical Interactive Cards) */}
@@ -918,7 +981,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             return (
               <div
                 key={item.c}
-                className="glass-card country-card rounded-[24px] overflow-hidden transition-all duration-300 group"
+                className="glass-card country-card rounded-[24px] touch-pan-y transition-all duration-300 group"
               >
                 {/* Modern Symmetrical Country Card Layout (p-6 to p-8 generous breathing space) */}
                 <div className="w-full p-6 sm:p-7 lg:p-8 transition-colors">
@@ -1169,7 +1232,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   <summary className="sr-only">
                     {countryName} {l('ayrıntılı seyahat ve vize bilgileri', 'detailed travel and visa specifications', 'detaillierte Reise- und Visabestimmungen', 'información detallada de viaje y visado', 'подробная визовая и туристическая информация')}
                   </summary>
-                  <div className="px-6 sm:px-8 pb-8 pt-5 border-t border-slate-100 dark:border-white/[0.08] space-y-6 text-sm text-slate-600 dark:text-slate-300 animate-in fade-in duration-200">
+                  {isExpanded && (
+                  <div
+                    className="country-expanded-body country-scrollable-content px-6 sm:px-8 pb-8 pt-5 border-t border-slate-100 dark:border-white/[0.08] space-y-6 text-sm text-slate-600 dark:text-slate-300 animate-in fade-in duration-200"
+                    style={{ WebkitOverflowScrolling: 'touch', overflowY: 'auto', maxHeight: '85vh' }}
+                  >
                     {/* Country Detail Primary Semantic Header (H1) */}
                     <header className="space-y-1">
                       <h1 className="text-base sm:text-xl font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white leading-snug">
@@ -1885,6 +1952,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
                     </div>
                   </div>
+                  )}
                 </details>
               </div>
             );
@@ -1895,34 +1963,46 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       )}
 
       {/* Community Change Reporting Modal */}
-      <ReportChangeModal
-        isOpen={!!reportingCountry}
-        onClose={() => setReportingCountry(null)}
-        defaultCountryCode={reportingCountry?.code}
-        defaultCountryName={reportingCountry?.name}
-        currentPassport={currentPassport}
-        categoryHint={reportingCountry?.cat}
-      />
+      {reportingCountry && (
+        <Suspense fallback={null}>
+          <ReportChangeModal
+            isOpen={!!reportingCountry}
+            onClose={() => setReportingCountry(null)}
+            defaultCountryCode={reportingCountry?.code}
+            defaultCountryName={reportingCountry?.name}
+            currentPassport={currentPassport}
+            categoryHint={reportingCountry?.cat}
+          />
+        </Suspense>
+      )}
 
       {/* Regulation Audit Console Modal */}
-      <RegulationAuditModal
-        isOpen={isLocalAuditOpen}
-        onClose={() => setIsLocalAuditOpen(false)}
-        onOpenReportModal={(code, name) => {
-          setIsLocalAuditOpen(false);
-          setReportingCountry({ code, name, cat: 'vf' });
-        }}
-      />
+      {isLocalAuditOpen && (
+        <Suspense fallback={null}>
+          <RegulationAuditModal
+            isOpen={isLocalAuditOpen}
+            onClose={() => setIsLocalAuditOpen(false)}
+            onOpenReportModal={(code, name) => {
+              setIsLocalAuditOpen(false);
+              setReportingCountry({ code, name, cat: 'vf' });
+            }}
+          />
+        </Suspense>
+      )}
 
       {/* Country Cultural & Travel Dossier Modal */}
-      <CountryDossierModal
-        isOpen={isDossierOpen}
-        onClose={closeDossier}
-        countryCode={selectedDossierCountry}
-        currentPassport={currentPassport}
-        onOpenAudit={handleOpenAudit}
-        onOpenReportChange={(c) => setReportingCountry(c)}
-      />
+      {isDossierOpen && (
+        <Suspense fallback={null}>
+          <CountryDossierModal
+            isOpen={isDossierOpen}
+            onClose={closeDossier}
+            countryCode={selectedDossierCountry}
+            currentPassport={currentPassport}
+            onOpenAudit={handleOpenAudit}
+            onOpenReportChange={(c) => setReportingCountry(c)}
+          />
+        </Suspense>
+      )}
     </div>
   );
 };

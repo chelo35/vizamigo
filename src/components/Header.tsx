@@ -14,7 +14,8 @@ import {
   Compass,
   Route,
   Calendar,
-  ShieldAlert
+  ShieldAlert,
+  Menu
 } from 'lucide-react';
 import { QuickToolsStrip } from './QuickToolsStrip';
 import { getFlag, getCountryName } from '../data/passportData';
@@ -52,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({
   onNavigateToProfile,
   searchQuery = '',
   onSearchChange,
-  onToggleMobileDrawer: _onToggleMobileDrawer,
+  onToggleMobileDrawer,
   activeTab = 'explore',
   onSelectTab,
   onOpenPackingList,
@@ -93,9 +94,21 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-slate-200/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/85 dark:bg-[#0c101d]/90">
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2.5 sm:gap-6">
-        {/* Left Section: Brand Logo (Clean, no hamburger button) */}
-        <div className="flex items-center flex-shrink-0">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex flex-wrap md:flex-nowrap items-center justify-between gap-2 sm:gap-4">
+        {/* Left Section: Hamburger Menu (Mobile < 768px) + Brand Logo */}
+        <div className="flex items-center gap-2 flex-shrink-0">
+          {onToggleMobileDrawer && (
+            <button
+              type="button"
+              onClick={onToggleMobileDrawer}
+              className="md:hidden p-2 min-w-[40px] min-h-[40px] rounded-full glass-pill-control text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] flex items-center justify-center cursor-pointer transition-all"
+              aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+              title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+            >
+              <Menu className="w-5 h-5" />
+            </button>
+          )}
+
           {/* Vizamigo Brand Mascot Logo (Clicking reloads/resets to home) */}
           <button
             type="button"
@@ -109,30 +122,33 @@ export const Header: React.FC<HeaderProps> = ({
             <img
               src="/logo.png"
               alt="Vizamigo"
-              className="w-9 h-9 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
+              className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
             />
-            <span className="font-bold text-lg sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">
+            <span className="font-bold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">
               Vizamigo<span className="text-[#2A8C82] dark:text-[#52B2A7]">.</span>
             </span>
           </button>
         </div>
 
-        {/* Center Section: The ONE and ONLY Prominent Search Bar (Full prominence, zero duplicates) */}
-        <div className="flex flex-1 max-w-xl xl:max-w-2xl mx-1.5 sm:mx-4">
+        {/* Center Section: Top Global Search Bar (100% full width on mobile < 768px, never masked or compressed) */}
+        <div
+          className="global-search-bar-container order-last md:order-none w-full max-w-full md:flex-1 md:max-w-xl xl:max-w-2xl mt-1 md:mt-0 md:mx-4"
+          style={{ width: '100%', maxWidth: '100%', zIndex: 9999, position: 'relative' }}
+        >
           <label className="relative w-full flex items-center">
             <Search className="w-4 h-4 text-[#2A8C82] dark:text-[#52B2A7] absolute left-4 pointer-events-none" />
             <input
-              type="text"
+              type="search"
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full h-10 sm:h-12 pl-10 sm:pl-11 pr-9 sm:pr-10 rounded-full text-xs sm:text-sm font-semibold bg-slate-100/80 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/80 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/35 focus:border-[#2A8C82]/60 focus:bg-white dark:focus:bg-[#111625] transition-all"
+              className="w-full h-11 sm:h-12 pl-10 sm:pl-11 pr-9 sm:pr-10 rounded-full text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-white/[0.06] backdrop-blur-md border border-slate-200/90 dark:border-white/[0.12] text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/35 focus:border-[#2A8C82]/60 focus:bg-white dark:focus:bg-[#111625] transition-all shadow-xs"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => onSearchChange?.('')}
-                className="absolute right-3 sm:right-3.5 p-1 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xs font-bold cursor-pointer"
+                className="absolute right-3 sm:right-3.5 p-1.5 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xs font-bold cursor-pointer"
                 title={l('Aramayı Temizle', 'Clear Search', 'Suche löschen', 'Limpiar búsqueda', 'Очистить поиск')}
               >
                 <X className="w-4 h-4" />
@@ -141,7 +157,7 @@ export const Header: React.FC<HeaderProps> = ({
           </label>
         </div>
 
-        {/* Right Section: Passport, Audit, Language, Theme & Profile (Zero extra search buttons) */}
+        {/* Right Section: Passport, Audit, Language, Theme & Profile */}
         <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           {/* Active Citizenship Pill */}
           <button
