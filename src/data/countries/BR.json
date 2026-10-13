@@ -1,0 +1,413 @@
+{
+  "iso2": "BR",
+  "names": {
+    "tr": "Brezilya",
+    "en": "Brazil",
+    "de": "Brasilien",
+    "ru": "Бразилия",
+    "es": "Brasil"
+  },
+  "capital": {
+    "value": "Brasilia",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.br",
+        "tier": 1,
+        "title": "Governo Federal do Brasil (gov.br)"
+      }
+    ],
+    "evidence_quote": "Brasília é a capital federal do Brasil e sede do governo do Distrito Federal",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "BRL",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcb.gov.br",
+        "tier": 1,
+        "title": "Banco Central do Brasil"
+      }
+    ],
+    "evidence_quote": "O Real (BRL) é a moeda oficial do Brasil",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC-3 (Brasília)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.on.br",
+        "tier": 1,
+        "title": "Observatório Nacional (Hora Legal Brasileira)"
+      }
+    ],
+    "evidence_quote": "A Hora Oficial de Brasília corresponde ao fuso horário UTC-03:00",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "127V / 220V (Şehre göre değişir)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/aneel",
+          "tier": 1,
+          "title": "Agência Nacional de Energia Elétrica (ANEEL)"
+        }
+      ],
+      "evidence_quote": "A tensão nominal varia conforme a região: 127V no Rio/São Paulo e 220V em Brasília/Nordeste",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/aneel",
+          "tier": 1,
+          "title": "Agência Nacional de Energia Elétrica (ANEEL)"
+        }
+      ],
+      "evidence_quote": "A frequência padrão da rede elétrica brasileira é de 60 Hz em todo o território nacional",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["C", "N"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/inmetro",
+          "tier": 1,
+          "title": "INMETRO (Norma NBR 14136)"
+        }
+      ],
+      "evidence_quote": "O padrão brasileiro de plugues e tomadas segue a norma ABNT NBR 14136 tipo N",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "190",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/mj",
+          "tier": 1,
+          "title": "Ministério da Justiça e Segurança Pública (Polícia Militar 190)"
+        }
+      ],
+      "evidence_quote": "Ligue 190 para emergências policiais da Polícia Militar",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/saude",
+          "tier": 1,
+          "title": "Ministério da Saúde - SAMU 192"
+        }
+      ],
+      "evidence_quote": "O SAMU 192 realiza atendimento de urgência e emergência médica",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "193",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/mj",
+          "tier": 1,
+          "title": "Corpo de Bombeiros Militar 193"
+        }
+      ],
+      "evidence_quote": "Corpo de Bombeiros atende emergências de fogo e resgate pelo número 193",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    },
+    "tourist_police": {
+      "value": "DEAT (Rio): +55 21 2332 2924",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policiacivilrj.net.br",
+          "tier": 1,
+          "title": "Delegacia Especial de Apoio ao Turismo (DEAT RJ)"
+        }
+      ],
+      "evidence_quote": "DEAT delegacia especializada para atendimento bilíngue a turistas no Rio",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/brazil-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 2 - Exercise Increased Caution in Brazil"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "advisory",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/brazil",
+          "tier": 1,
+          "title": "UK FCDO: Travel Advice Brazil"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Artırılmış Tedbir: Büyükşehirlerde sokak suçlarına karşı uyanık olunmalı, favela (gecekondu) bölgelerine girilmemelidir",
+      "en": "Exercise Increased Caution: Street crime risk in metropolitan centers; do not enter informal settlements (favelas)",
+      "de": "Erhöhte Vorsicht: Straßenkriminalität in Großstädten; Favelas unbedingt meiden",
+      "ru": "Повышенная осторожность: Уличная преступность в мегаполисах; избегать фавел",
+      "es": "Mayor Precaución: Delincuencia callejera en centros urbanos; no ingrese a favelas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Favelas (Rio de Janeiro, São Paulo), Sınır Bölgeleri",
+        "level": 4,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/brazil-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept Favela & Border Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "medium",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 52.34,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/brazil",
+          "tier": 2,
+          "title": "Speedtest Global Index: Brazil"
+        }
+      ],
+      "evidence_quote": "Brazil median mobile download speed measured",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 149.88,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/brazil",
+          "tier": 2,
+          "title": "Speedtest Global Index: Brazil"
+        }
+      ],
+      "evidence_quote": "Brazil median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "Vivo, Claro ve TIM ana operatörlerdir; SIM kart aktivasyonunda yabancılar için CPF (vergi numarası) veya pasaport ibrazı istenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/anatel",
+          "tier": 1,
+          "title": "Agência Nacional de Telecomunicações (ANATEL)"
+        }
+      ],
+      "evidence_quote": "Cadastro obrigatório de linhas móveis pré-pagas mediante documento de identificação ou passaporte",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "99 (99App)",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://99app.com",
+        "tier": 2,
+        "title": "99 Táxi e Mobilidade Brasil"
+      }
+    },
+    {
+      "name": "iFood",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.ifood.com.br",
+        "tier": 2,
+        "title": "iFood Brasil Delivery"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/br/pt-br/",
+        "tier": 2,
+        "title": "Uber Brasil"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%50), Protestanlık/Evanjelizm (%31), Dinsiz (%10)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ibge.gov.br",
+          "tier": 1,
+          "title": "IBGE (Instituto Brasileiro de Geografia e Estatística)"
+        }
+      ],
+      "evidence_quote": "O catolicismo e o protestantismo evangélico representam a maioria expressiva da população",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Rio Karnavalı (Şubat/Mart), Festa Junina (Haziran), Reveillon Copacabana (Yılbaşı)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitbrasil.com",
+          "tier": 1,
+          "title": "Embratur (Agência Brasileira de Promoção Internacional do Turismo)"
+        }
+      ],
+      "evidence_quote": "O Carnaval do Brasil é a maior festa popular do mundo",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Plajlarda ve caddelerde değerli saat, takı veya pahalı telefon gösterişinden kaçınınız. Şehirler arası voltaj farklılığı (127V vs 220V) cihazlarınızı yakabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitbrasil.com",
+          "tier": 1,
+          "title": "Visit Brasil Dicas de Segurança"
+        }
+      ],
+      "evidence_quote": "Evite exibir joias caras, câmeras e celulares ostensivamente em locais de grande movimento",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesap pusulasına genellikle %10 servis ücreti (serviço) otomatik eklenir; ekstra bahşiş zorunlu değildir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.br/turismo",
+          "tier": 1,
+          "title": "Ministério do Turismo do Brasil"
+        }
+      ],
+      "evidence_quote": "A taxa de serviço de 10% incluída na conta é opcional conforme a legislação brasileira",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kurtarıcı İsa Heykeli (Cristo Redentor), Rio de Janeiro",
+        "en": "Christ the Redeemer, Rio de Janeiro",
+        "de": "Cristo Redentor, Rio de Janeiro",
+        "ru": "Статуя Христа-Искупителя в Рио-де-Жанейро",
+        "es": "Cristo Redentor, Río de Janeiro"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1100",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Rio de Janeiro: Carioca Landscapes"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Christ the Redeemer, Rio de Janeiro",
+        "license": "Unsplash",
+        "author": "Agustin Diaz Gargiulo",
+        "source_url": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Agustin Diaz Gargiulo on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.4 },
+        "alt": {
+          "tr": "Rio de Janeiro Corcovado Dağı üzerindeki ikonik Kurtarıcı İsa Heykeli",
+          "en": "Iconic Christ the Redeemer statue overlooking Rio de Janeiro from Corcovado",
+          "de": "Christusstatue Cristo Redentor auf dem Corcovado in Rio de Janeiro",
+          "ru": "Статуя Христа-Искупителя на вершине горы Корковаду в Рио-де-Жанейро",
+          "es": "Estatua del Cristo Redentor en la cima del cerro del Corcovado en Río de Janeiro"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "brezilya",
+      "en": "brazil",
+      "de": "brasilien",
+      "ru": "braziliya",
+      "es": "brasil"
+    },
+    "title": {
+      "tr": "Brezilya Vize, Güvenlik ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Brazil Visa, Safety & Travel Guide 2026 | Vizamigo",
+      "de": "Brasilien Visum, Sicherheit & Reiseführer 2026 | Vizamigo",
+      "ru": "Бразилия: виза, безопасность и гид для путешествий 2026 | Vizamigo",
+      "es": "Guía de Viaje, Seguridad y Visas de Brasil 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Brezilya vizesiz 90 gün kalış kuralı, şehirler arası voltaj farkları (127V/220V), acil durum hatları ve güvenlik tavsiyeleri.",
+      "en": "Brazil 90-day visa-free rules, dual voltage alert (127V/220V), emergency numbers, and urban safety guide.",
+      "de": "Brasilien Einreise 90 Tage visumfrei, duale Netzspannung (127V/220V), Notrufnummern und Sicherheitshinweise.",
+      "ru": "Правила безвизового въезда в Бразилию, особенности напряжения (127В/220В) и экстренные службы.",
+      "es": "Requisitos de entrada a Brasil sin visa, advertencia de doble voltaje (127V/220V) y números de emergencia."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

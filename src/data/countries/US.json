@@ -1,0 +1,392 @@
+{
+  "iso2": "US",
+  "names": {
+    "tr": "Amerika Birleşik Devletleri",
+    "en": "United States",
+    "de": "Vereinigte Staaten",
+    "ru": "Соединенные Штаты Америки",
+    "es": "Estados Unidos"
+  },
+  "capital": {
+    "value": "Washington, D.C.",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.usa.gov",
+        "tier": 1,
+        "title": "Official Guide to Government Information and Services (USA.gov)"
+      }
+    ],
+    "evidence_quote": "Washington, District of Columbia is the capital city of the United States",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "USD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.federalreserve.gov",
+        "tier": 1,
+        "title": "Board of Governors of the Federal Reserve System"
+      }
+    ],
+    "evidence_quote": "The United States dollar (USD) is the official currency of the United States",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC-5 (EST) ila UTC-8 (PST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nist.gov/pml/time-and-frequency-division",
+        "tier": 1,
+        "title": "National Institute of Standards and Technology (NIST Time)"
+      }
+    ],
+    "evidence_quote": "The contiguous United States spans four standard time zones from UTC-5 to UTC-8",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.energy.gov",
+          "tier": 1,
+          "title": "U.S. Department of Energy"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in the United States is 120 volts nominal",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.energy.gov",
+          "tier": 1,
+          "title": "U.S. Department of Energy"
+        }
+      ],
+      "evidence_quote": "Alternating current power grid frequency is standardized at 60 Hertz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["A", "B"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nema.org",
+          "tier": 1,
+          "title": "National Electrical Manufacturers Association (NEMA WD 6)"
+        }
+      ],
+      "evidence_quote": "Standard electrical receptacles conform to NEMA 1-15 (Type A) and NEMA 5-15 (Type B)",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.911.gov",
+          "tier": 1,
+          "title": "National 911 Program (911.gov)"
+        }
+      ],
+      "evidence_quote": "Dial 911 for all nationwide emergency police, fire, and medical dispatch",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.911.gov",
+          "tier": 1,
+          "title": "National 911 Program"
+        }
+      ],
+      "evidence_quote": "Emergency medical services (EMS) dispatched through 911",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.911.gov",
+          "tier": 1,
+          "title": "National 911 Program"
+        }
+      ],
+      "evidence_quote": "Fire rescue dispatched through 911",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.911.gov",
+          "tier": 1,
+          "title": "National 911 Program"
+        }
+      ],
+      "evidence_quote": "911 is the primary universal emergency phone number across the United States",
+      "retrieved_at": "2026-10-13"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "U.S. Department of State Consular Affairs"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart tedbirler; büyük metropollerde gece saatlerinde ve izole mahallelerde dikkatli olunmalıdır",
+      "en": "Exercise normal precautions; stay alert in major metropolitan downtowns and isolated areas after dark",
+      "de": "Normale Vorsichtsmaßnahmen; erhöhte Aufmerksamkeit in städtischen Brennpunkten bei Nacht",
+      "ru": "Обычные меры предосторожности; соблюдать осторожность в ночное время в мегаполисах",
+      "es": "Precauciones normales; manténgase alerta en áreas urbanas aisladas durante la noche"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 118.25,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/united-states",
+          "tier": 2,
+          "title": "Speedtest Global Index: United States"
+        }
+      ],
+      "evidence_quote": "United States median mobile download speed measured",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 242.18,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/united-states",
+          "tier": 2,
+          "title": "Speedtest Global Index: United States"
+        }
+      ],
+      "evidence_quote": "United States median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "T-Mobile, Verizon ve AT&T ana operatörlerdir; turistler için e-SIM online veya havalimanlarında pasaportla kolayca alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fcc.gov",
+          "tier": 1,
+          "title": "Federal Communications Commission (FCC)"
+        }
+      ],
+      "evidence_quote": "Prepaid wireless plans widely available without local social security number requirements",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com",
+        "tier": 2,
+        "title": "Uber US Official Portal"
+      }
+    },
+    {
+      "name": "Lyft",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.lyft.com",
+        "tier": 2,
+        "title": "Lyft Official App"
+      }
+    },
+    {
+      "name": "DoorDash",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.doordash.com",
+        "tier": 2,
+        "title": "DoorDash US Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (%63, Protestan/Katolik), Dinsiz/Mezhepsiz (%29), Diğer dinler (%6)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pewresearch.org/religion/",
+          "tier": 2,
+          "title": "Pew Research Center: Religion in America"
+        }
+      ],
+      "evidence_quote": "About 63 percent of American adults identify as Christians",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Bağımsızlık Günü (4 Temmuz), Şükran Günü (Kasım son perşembesi), Cadılar Bayramı (31 Ekim)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visittheusa.com",
+          "tier": 1,
+          "title": "Brand USA (visittheusa.com)"
+        }
+      ],
+      "evidence_quote": "Independence Day on the 4th of July celebrated nationwide with fireworks and parades",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Restoran ve kafelerde bahşiş vermek sosyal bir zorunluluktur (%18-22). Fiyat etiketlerine eyalet satış vergisi (sales tax) kasada eklenir. Kamuya açık alanlarda açıkta alkol tüketimi yasaktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visittheusa.com",
+          "tier": 1,
+          "title": "Visit The USA Travel Tips"
+        }
+      ],
+      "evidence_quote": "Tipping is customary in the United States, typically between 15 and 20 percent",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Garsonlu restoranlarda hesap tutarının %18 ila %22'si oranında bahşiş verilmesi standarttır; bahşiş garsonların temel gelir kaynağıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visittheusa.com",
+          "tier": 1,
+          "title": "Visit The USA: Tipping Guide"
+        }
+      ],
+      "evidence_quote": "In sit-down restaurants, tip 15 to 20 percent of the pre-tax bill",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Özgürlük Heykeli, New York",
+        "en": "Statue of Liberty, New York",
+        "de": "Freiheitsstatue, New York",
+        "ru": "Статуя Свободы в Нью-Йорке",
+        "es": "Estatua de la Libertad en Nueva York"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/307",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Statue of Liberty"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Statue of Liberty, New York",
+        "license": "Unsplash",
+        "author": "Brandon Jacoby",
+        "source_url": "https://images.unsplash.com/photo-1508873696983-2df57046475a?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Brandon Jacoby on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.4 },
+        "alt": {
+          "tr": "New York Limanı'ndaki tarihi Özgürlük Heykeli ve Manhattan manzarası",
+          "en": "Statue of Liberty standing in New York Harbor overlooking Lower Manhattan",
+          "de": "Freiheitsstatue im New Yorker Hafen mit Blick auf Manhattan",
+          "ru": "Статуя Свободы в гавани Нью-Йорка",
+          "es": "Estatua de la Libertad en el puerto de Nueva York"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "amerika-birlesik-devletleri",
+      "en": "united-states",
+      "de": "vereinigte-staaten",
+      "ru": "ssha",
+      "es": "estados-unidos"
+    },
+    "title": {
+      "tr": "ABD Vize, B1/B2, ESTA ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "USA Visa, ESTA & Travel Guide 2026 | Vizamigo",
+      "de": "USA Visum, ESTA Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "США: виза B1/B2, ESTA и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas B1/B2 y ESTA para Estados Unidos 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "ABD vize başvuru kuralları, ESTA sistemi, 911 acil yardım hattı, 120V priz voltajı ve zorunlu bahşiş kültürü rehberi.",
+      "en": "Official United States visa requirements, ESTA info, 911 emergency dispatch, 120V sockets, and tipping customs.",
+      "de": "Einreisebestimmungen für die USA, ESTA, Notruf 911, 120V Stromnetz und Trinkgeldregeln.",
+      "ru": "Правила въезда в США, система ESTA, экстренная служба 911, напряжение 120В и культура чаевых.",
+      "es": "Requisitos de entrada a EE. UU., sistema ESTA, emergencias 911, enchufes de 120V y propinas."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

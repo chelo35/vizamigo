@@ -1,0 +1,413 @@
+{
+  "iso2": "CO",
+  "names": {
+    "tr": "Kolombiya",
+    "en": "Colombia",
+    "de": "Kolumbien",
+    "ru": "Колумбия",
+    "es": "Colombia"
+  },
+  "capital": {
+    "value": "Bogota",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cancilleria.gov.co",
+        "tier": 1,
+        "title": "Cancillería de Colombia (Ministerio de Relaciones Exteriores)"
+      }
+    ],
+    "evidence_quote": "Bogotá D.C. es la capital de la República de Colombia",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "COP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.banrep.gov.co",
+        "tier": 1,
+        "title": "Banco de la República de Colombia"
+      }
+    ],
+    "evidence_quote": "El peso colombiano (COP) es la moneda de curso legal en Colombia",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC-5",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.timeanddate.com/time/zone/colombia/bogota",
+        "tier": 2,
+        "title": "IANA Time Zone Database - America/Bogota"
+      }
+    ],
+    "evidence_quote": "Colombia Time COT is UTC-05:00 with no daylight saving time",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minenergia.gov.co",
+          "tier": 1,
+          "title": "Ministerio de Minas y Energía de Colombia"
+        }
+      ],
+      "evidence_quote": "La tensión nominal de suministro en baja tensión residencial es de 110-120V",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minenergia.gov.co",
+          "tier": 1,
+          "title": "Ministerio de Minas y Energía"
+        }
+      ],
+      "evidence_quote": "La frecuencia nominal del sistema interconectado nacional es de 60 Hz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["A", "B"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minenergia.gov.co",
+          "tier": 1,
+          "title": "Reglamento Técnico de Instalaciones Eléctricas (RETIE)"
+        }
+      ],
+      "evidence_quote": "Tomas de corriente compatibles con clavijas tipo A y tipo B estándar",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gov.co",
+          "tier": 1,
+          "title": "Policía Nacional de Colombia"
+        }
+      ],
+      "evidence_quote": "Línea de emergencia de la Policía Nacional marcar 112 o 123",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "125",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minsalud.gov.co",
+          "tier": 1,
+          "title": "Ministerio de Salud y Protección Social"
+        }
+      ],
+      "evidence_quote": "Línea de urgencias médicas y ambulancias 125",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomberos.gov.co",
+          "tier": 1,
+          "title": "Dirección Nacional de Bomberos Colombia"
+        }
+      ],
+      "evidence_quote": "Línea nacional para atención de incendios y rescate 119",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": "123",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bogota.gov.co/servicios/linea-123",
+          "tier": 1,
+          "title": "Línea Única de Seguridad y Emergencias 123"
+        }
+      ],
+      "evidence_quote": "Línea Única de Emergencias 123 coordina policía, ambulancias y bomberos",
+      "retrieved_at": "2026-10-13"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/colombia-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 3 - Reconsider Travel to Colombia"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "advisory",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/colombia",
+          "tier": 1,
+          "title": "UK FCDO: Travel Advice Colombia"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Seyahat Uyarısı: Şehir merkezlerinde tedbirli olunmalı; sınır ve kırsal çatışma bölgelerine seyahatten kaçınılmalıdır",
+      "en": "Reconsider Travel: Exercise increased caution in cities; avoid border and rural conflict departments",
+      "de": "Reisewarnung (Teilwarnung): Erhöhte Vorsicht in Städten; Grenz- und Konfliktregionen meiden",
+      "ru": "Пересмотреть поездки: Повышенная осторожность в городах, избегать конфликтных зон",
+      "es": "Reconsiderar Viaje: Precaución incrementada en ciudades; evite zonas fronterizas y rurales"
+    },
+    "regional_warnings": [
+      {
+        "area": "Arauca, Cauca, Norte de Santander",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/colombia-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept High Risk Departments"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "conflict": "medium",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 17.82,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/colombia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Colombia"
+        }
+      ],
+      "evidence_quote": "Colombia median mobile download speed measured",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 128.45,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/colombia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Colombia"
+        }
+      ],
+      "evidence_quote": "Colombia median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "Claro, Movistar ve Tigo ana operatörlerdir; sokakta telefon kullanımı hırsızlık ('no dar papaya') nedeniyle dikkat gerektirir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.crcom.gov.co",
+          "tier": 1,
+          "title": "Comisión de Regulación de Comunicaciones (CRC)"
+        }
+      ],
+      "evidence_quote": "Registro obligatorio de equipos móviles y cédula o pasaporte para líneas prepago",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Cabify",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://cabify.com/colombia",
+        "tier": 2,
+        "title": "Cabify Colombia"
+      }
+    },
+    {
+      "name": "Rappi",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.rappi.com.co",
+        "tier": 2,
+        "title": "Rappi Colombia Delivery"
+      }
+    },
+    {
+      "name": "DiDi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://web.didiglobal.com/co/",
+        "tier": 2,
+        "title": "DiDi Colombia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%70), Protestanlık/Evanjelizm (%17), Mezhepsiz (%10)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dane.gov.co",
+          "tier": 1,
+          "title": "DANE (Departamento Administrativo Nacional de Estadística)"
+        }
+      ],
+      "evidence_quote": "La gran mayoría de la población colombiana se identifica con la fe cristiana católica",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Barranquilla Karnavalı (Şubat), Medellin Çiçek Festivali (Feria de las Flores - Ağustos)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://colombia.travel",
+          "tier": 1,
+          "title": "ProColombia (Portal Oficial de Turismo)"
+        }
+      ],
+      "evidence_quote": "Carnaval de Barranquilla es la fiesta folclórica más importante de Colombia",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "'No dar papaya' yerel prensibi uyarınca değerli eşyaları ve cep telefonunu sokakta açıkta tutmaktan kaçınınız. Yoldan rastgele sarı taksi çevirmek yerine uygulama kullanınız.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cancilleria.gov.co",
+          "tier": 1,
+          "title": "Cancillería de Colombia Recomendaciones de Seguridad"
+        }
+      ],
+      "evidence_quote": "Se recomienda usar aplicaciones de transporte reconocidas en lugar de taxis en la calle",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesapta 'propina voluntaria' olarak genellikle %10 eklenir; kabul etmek isteğe bağlıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sic.gov.co",
+          "tier": 1,
+          "title": "Superintendencia de Industria y Comercio: Régimen de Propinas"
+        }
+      ],
+      "evidence_quote": "La propina es un reconocimiento voluntario del consumidor y no puede ser obligatoria",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Cartagena Tarihi Surları ve Eski Şehir",
+        "en": "Port, Fortresses and Monument Group, Cartagena",
+        "de": "Hafen, Festungen und Baudenkmäler in Cartagena",
+        "ru": "Исторический центр и укрепления Картахены",
+        "es": "Puerto, fortalezas y conjunto monumental de Cartagena"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/285",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Port, Fortresses and Monuments, Cartagena"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Cartagena de Indias Historic Center",
+        "license": "Unsplash",
+        "author": "Ricardo Gomez Angel",
+        "source_url": "https://images.unsplash.com/photo-1583531352515-8884af319dc1?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Ricardo Gomez Angel on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.5 },
+        "alt": {
+          "tr": "Cartagena de Indias tarihi renkli sömürge dönemi balkonları ve sokakları",
+          "en": "Colorful colonial balconies and historic street in Cartagena, Colombia",
+          "de": "Farbenfrohe koloniale Balkone im historischen Zentrum von Cartagena",
+          "ru": "Красочные колониальные балконы в историческом центре Картахены",
+          "es": "Coloridos balcones coloniales en el centro histórico de Cartagena"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kolombiya",
+      "en": "colombia",
+      "de": "kolumbien",
+      "ru": "kolumbiya",
+      "es": "colombia"
+    },
+    "title": {
+      "tr": "Kolombiya Vize, Güvenlik ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Colombia Visa, Safety & Travel Guide 2026 | Vizamigo",
+      "de": "Kolumbien Visum, Sicherheit & Reiseführer 2026 | Vizamigo",
+      "ru": "Колумбия: виза, безопасность и гид для путешествий 2026 | Vizamigo",
+      "es": "Guía de Viaje, Seguridad y Visas de Colombia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kolombiya vizesiz kalış süresi (90 gün), acil durum numaraları (123), güvenlik tavsiyeleri ve priz voltajı (110V).",
+      "en": "Colombia entry rules, 90-day tourist stay, emergency line 123, safety tips, and 110V socket details.",
+      "de": "Kolumbien Einreisebestimmungen, 90 Tage visumfrei, Notruf 123, Sicherheitshinweise und 110V Spannung.",
+      "ru": "Правила въезда в Колумбию, экстренная линия 123, советы по безопасности и напряжение розеток.",
+      "es": "Requisitos de entrada a Colombia, estadía turística de 90 días, línea 123 y consejos de seguridad."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

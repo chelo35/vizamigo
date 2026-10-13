@@ -1,0 +1,402 @@
+{
+  "iso2": "JP",
+  "names": {
+    "tr": "Japonya",
+    "en": "Japan",
+    "de": "Japan",
+    "ru": "Япония",
+    "es": "Japón"
+  },
+  "capital": {
+    "value": "Tokyo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.japan.go.jp",
+        "tier": 1,
+        "title": "Government of Japan (japan.go.jp)"
+      }
+    ],
+    "evidence_quote": "Tokyo is the capital city of Japan and seat of the Government",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "JPY",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.boj.or.jp",
+        "tier": 1,
+        "title": "Bank of Japan"
+      }
+    ],
+    "evidence_quote": "The Japanese Yen (JPY) is the legal currency of Japan",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+9",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.timeanddate.com/time/zone/japan/tokyo",
+        "tier": 2,
+        "title": "IANA Time Zone Database - Asia/Tokyo"
+      }
+    ],
+    "evidence_quote": "Japan Standard Time JST is UTC+09:00 with no daylight saving time",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "100V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.meti.go.jp",
+          "tier": 1,
+          "title": "Ministry of Economy, Trade and Industry (METI)"
+        }
+      ],
+      "evidence_quote": "The standard domestic voltage throughout Japan is 100 volts",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": "50Hz (Doğu) / 60Hz (Batı)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tepco.co.jp",
+          "tier": 1,
+          "title": "Tokyo Electric Power Company (TEPCO)"
+        }
+      ],
+      "evidence_quote": "Frequency is 50 Hz in eastern Japan including Tokyo and 60 Hz in western Japan including Osaka",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["A", "B"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.meti.go.jp",
+          "tier": 1,
+          "title": "METI Electrical Appliance and Material Safety Act"
+        }
+      ],
+      "evidence_quote": "Power outlets use two-flat-pin Type A plugs and grounded Type B",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.npa.go.jp",
+          "tier": 1,
+          "title": "National Police Agency of Japan"
+        }
+      ],
+      "evidence_quote": "Dial 110 for police emergencies throughout Japan",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fdma.go.jp",
+          "tier": 1,
+          "title": "Fire and Disaster Management Agency (FDMA)"
+        }
+      ],
+      "evidence_quote": "Dial 119 for ambulance and fire department emergencies",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fdma.go.jp",
+          "tier": 1,
+          "title": "FDMA Japan"
+        }
+      ],
+      "evidence_quote": "Dial 119 for fires and rescue operations",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    },
+    "tourist_police": {
+      "value": "Japan Helpline: 0570-000-911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jnto.go.jp",
+          "tier": 1,
+          "title": "Japan National Tourism Organization (JNTO Tourist Hotline)"
+        }
+      ],
+      "evidence_quote": "JNTO Tourist Hotline operates 24/7 365 days in English, Chinese, Korean and Japanese",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/japan-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 1 - Exercise Normal Precautions in Japan"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "normal",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/japan",
+          "tier": 1,
+          "title": "UK FCDO: Travel Advice Japan"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart tedbirler; Japonya dünyanın en güvenli destinasyonlarından biridir",
+      "en": "Exercise normal precautions; Japan is one of the safest travel destinations globally",
+      "de": "Normale Vorsichtsmaßnahmen; Japan ist eines der sichersten Reiseländer weltweit",
+      "ru": "Обычные меры предосторожности; одно из самых безопасных направлений в мире",
+      "es": "Precauciones normales; Japón es uno de los destinos más seguros del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 46.85,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/japan",
+          "tier": 2,
+          "title": "Speedtest Global Index: Japan"
+        }
+      ],
+      "evidence_quote": "Japan median mobile download speed measured",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 178.64,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/japan",
+          "tier": 2,
+          "title": "Speedtest Global Index: Japan"
+        }
+      ],
+      "evidence_quote": "Japan median fixed broadband download speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "NTT Docomo, SoftBank ve au ağları mükemmel kapsama sunar; turist veri e-SIM'leri havaalanında veya online anında etkinleştirilebilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.soumu.go.jp",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs and Communications (MIC Japan)"
+        }
+      ],
+      "evidence_quote": "Data-only prepaid tourist SIM cards do not require voice identity verification under revised guidelines",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Japan Travel by NAVITIME",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.navitime.co.jp/lp/japantravel/",
+        "tier": 2,
+        "title": "NAVITIME Japan Transit App"
+      }
+    },
+    {
+      "name": "GO (JapanTaxi)",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://go.mo-t.com",
+        "tier": 2,
+        "title": "GO Taxi App Japan"
+      }
+    },
+    {
+      "name": "Suica / Pasmo (Apple Wallet / Google)",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.jreast.co.jp/e/pass/suica.html",
+        "tier": 1,
+        "title": "JR East Welcome Suica"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Şintoizm (%48), Budizm (%46), Hristiyanlık (%1.5)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bunka.go.jp",
+          "tier": 1,
+          "title": "Agency for Cultural Affairs of Japan (Shukyo Nenkan)"
+        }
+      ],
+      "evidence_quote": "Shinto and Buddhist traditions coexist harmoniously in Japanese spiritual culture",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Gion Matsuri (Kyoto - Temmuz), Kiraz Çiçeği (Sakura - Mart/Nisan), Obon (Ağustos)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.japan.travel",
+          "tier": 1,
+          "title": "JNTO Official Festivals Guide"
+        }
+      ],
+      "evidence_quote": "Gion Matsuri in Kyoto is designated an Important Intangible Folk Cultural Property",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Toplu taşımada telefonla konuşmak yasaktır. Bahşiş vermek saygısızlık olarak algılanır. Dövmesi olanlar bazı geleneksel onsenlere (kaplıca) kabul edilmeyebilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.japan.travel",
+          "tier": 1,
+          "title": "JNTO Japanese Manners and Etiquette Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in Japan and can cause confusion or be refused politely",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Kesinlikle bahşiş verilmez. Masa üzerinde bırakılan para unutulmuş sanılarak peşinizden getirilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.japan.travel",
+          "tier": 1,
+          "title": "JNTO Tipping Guide"
+        }
+      ],
+      "evidence_quote": "There is no tipping culture in Japan; excellent service is included in the price",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Fuji Dağı",
+        "en": "Mount Fuji",
+        "de": "Fuji-san",
+        "ru": "Гора Фудзи",
+        "es": "Monte Fuji"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1418",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Fujisan, sacred place and source of artistic inspiration"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Mount Fuji with Chureito Pagoda",
+        "license": "Unsplash",
+        "author": "Manuel Cosentino",
+        "source_url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Manuel Cosentino on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.45 },
+        "alt": {
+          "tr": "Kiraz çiçekleri arasında Chureito Pagodası ve karlı Fuji Dağı manzarası",
+          "en": "Chureito Pagoda framing snow-capped Mount Fuji surrounded by cherry blossoms",
+          "de": "Chureito-Pagode mit schneebedecktem Berg Fuji und Kirschblüten",
+          "ru": "Пагода Чурейто на фоне заснеженной горы Фудзи и сакуры",
+          "es": "Pagoda Chureito con vista al monte Fuji nevado y cerezos en flor"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "japonya",
+      "en": "japan",
+      "de": "japan",
+      "ru": "yaponiya",
+      "es": "japon"
+    },
+    "title": {
+      "tr": "Japonya Vize, Seyahat ve Kültür Rehberi 2026 | Vizamigo",
+      "en": "Japan Visa, Travel & Cultural Etiquette Guide 2026 | Vizamigo",
+      "de": "Japan Visum, Reiseführer & Knigge 2026 | Vizamigo",
+      "ru": "Япония: виза, правила въезда и этикет 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Etiqueta en Japón 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Türk vatandaşlarına 90 gün vizesiz Japonya seyahati, 100V elektrik voltajı, acil numaralar (110/119) ve bahşiş kuralları.",
+      "en": "Japan 90-day visa waiver rules, 100V voltage dual frequency, emergency numbers (110/119), and no-tipping culture.",
+      "de": "Japan 90 Tage visumfrei, 100V Netzspannung, Notruf 110/119 und Trinkgeld-Knigge.",
+      "ru": "Правила въезда в Японию, особенности розеток 100В, экстренные службы и правила этикета.",
+      "es": "Requisitos de entrada a Japón sin visa por 90 días, voltaje de 100V y guía de etiqueta cultural."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

@@ -1,0 +1,413 @@
+{
+  "iso2": "TH",
+  "names": {
+    "tr": "Tayland",
+    "en": "Thailand",
+    "de": "Thailand",
+    "ru": "Таиланд",
+    "es": "Tailandia"
+  },
+  "capital": {
+    "value": "Bangkok",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.thaigov.go.th",
+        "tier": 1,
+        "title": "Royal Thai Government Portal"
+      }
+    ],
+    "evidence_quote": "Bangkok is the capital and most populous city of Thailand",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "THB",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bot.or.th",
+        "tier": 1,
+        "title": "Bank of Thailand"
+      }
+    ],
+    "evidence_quote": "Thai Baht (THB) is the official currency of Thailand",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+7",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.timeanddate.com/time/zone/thailand/bangkok",
+        "tier": 2,
+        "title": "IANA Time Zone Database - Asia/Bangkok"
+      }
+    ],
+    "evidence_quote": "Indochina Time (ICT) is UTC+07:00 with no daylight saving time",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mea.or.th",
+          "tier": 1,
+          "title": "Metropolitan Electricity Authority of Thailand"
+        }
+      ],
+      "evidence_quote": "Standard voltage in Thailand is 220V at 50Hz frequency",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mea.or.th",
+          "tier": 1,
+          "title": "Metropolitan Electricity Authority of Thailand"
+        }
+      ],
+      "evidence_quote": "Alternating current frequency is 50 Hertz nationwide",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["A", "B", "C", "O"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tisi.go.th",
+          "tier": 1,
+          "title": "Thai Industrial Standards Institute (TISI 166-2549)"
+        }
+      ],
+      "evidence_quote": "Socket outlets support plug types A, B, C, and Type O ground pin",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.royalthaipolice.go.th",
+          "tier": 1,
+          "title": "Royal Thai Police Emergency Response"
+        }
+      ],
+      "evidence_quote": "Call 191 for nationwide emergency police dispatch",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "1669",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.niems.go.th",
+          "tier": 1,
+          "title": "National Institute for Emergency Medicine Thailand"
+        }
+      ],
+      "evidence_quote": "Emergency medical services hotline is 1669 operating 24 hours",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bangkok.go.th/fire",
+          "tier": 1,
+          "title": "Bangkok Fire and Rescue Department"
+        }
+      ],
+      "evidence_quote": "Dial 199 for fire emergencies and disaster rescue services",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    },
+    "tourist_police": {
+      "value": "1155",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.touristpolice.go.th",
+          "tier": 1,
+          "title": "Tourist Police Bureau of Thailand"
+        }
+      ],
+      "evidence_quote": "Tourist Police 24/7 multilingual assistance call 1155",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/thailand-travel-advisory.html",
+          "tier": 1,
+          "title": "U.S. Department of State: Thailand Travel Advisory"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "advisory",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/thailand",
+          "tier": 1,
+          "title": "Foreign, Commonwealth & Development Office: Thailand"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genel seyahat güvenli; güney sınır eyaletlerinde tedbir önerilir",
+      "en": "Exercise normal precautions; avoid southern border insurgent areas",
+      "de": "Normale Vorsichtsmaßnahmen; Südprovinzen meiden",
+      "ru": "Обычные меры предосторожности; избегайте южных приграничных зон",
+      "es": "Precauciones normales; evite provincias del extremo sur"
+    },
+    "regional_warnings": [
+      {
+        "area": "Yala, Pattani, Narathiwat, Songkhla",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/thailand-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept Southern Border Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "medium",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 134.45,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/thailand",
+          "tier": 2,
+          "title": "Speedtest Global Index: Thailand Median Speed"
+        }
+      ],
+      "evidence_quote": "Thailand median mobile download speed measured 134.45 Mbps",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 298.92,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/thailand",
+          "tier": 2,
+          "title": "Speedtest Global Index: Thailand Median Speed"
+        }
+      ],
+      "evidence_quote": "Thailand median fixed broadband speed measured 298.92 Mbps",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "AIS, TrueMove H ve DTAC havalimanında ve 7-Eleven mağazalarında pasaport kaydıyla anında alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nbtc.go.th",
+          "tier": 1,
+          "title": "National Broadcasting and Telecommunications Commission (NBTC)"
+        }
+      ],
+      "evidence_quote": "Mandatory passport biometric registration required for all tourist SIM cards",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/th/en/",
+        "tier": 2,
+        "title": "Grab Thailand Official Portal"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-th/",
+        "tier": 2,
+        "title": "Bolt Thailand Operations"
+      }
+    },
+    {
+      "name": "LINE MAN",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://lineman.line.me/",
+        "tier": 2,
+        "title": "LINE MAN Thailand Food Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Theravada Budizmi (%93)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nso.go.th",
+          "tier": 1,
+          "title": "National Statistical Office of Thailand"
+        }
+      ],
+      "evidence_quote": "Buddhism is practiced by over 93 percent of the Thai population",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Songkran (Nisan Su Festivali), Loy Krathong (Kasım Fener Festivali)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tourismthailand.org",
+          "tier": 1,
+          "title": "Tourism Authority of Thailand (TAT)"
+        }
+      ],
+      "evidence_quote": "Songkran Thai New Year celebrated annually April 13-15 nationwide",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kraliyete hakaret kanunu (Lèse-Majesté) çok katıdır; tapınaklarda omuz ve dizler örtülmelidir. Elektronik sigara (vape) bulundurmak yasaktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tourismthailand.org",
+          "tier": 1,
+          "title": "Tourism Authority of Thailand Travel Advice"
+        }
+      ],
+      "evidence_quote": "Vaping devices and e-cigarettes are strictly illegal in Thailand",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Zorunlu değildir; turistik restoranlarda %10 servis ücreti yoksa 20-50 THB bahşiş nezaketen bırakılır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tourismthailand.org",
+          "tier": 1,
+          "title": "TAT Etiquette Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in Thailand but widely appreciated in tourism",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Wat Arun (Şafak Tapınağı)",
+        "en": "Wat Arun (Temple of Dawn)",
+        "de": "Wat Arun",
+        "ru": "Ват Арун",
+        "es": "Wat Arun"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.tourismthailand.org",
+          "tier": 1,
+          "title": "TAT Wat Arun Guide"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Wat Arun, Bangkok",
+        "license": "Unsplash",
+        "author": "Aleksandar Pasaric",
+        "source_url": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Aleksandar Pasaric on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.45 },
+        "alt": {
+          "tr": "Bangkok'taki Wat Arun Şafak Tapınağı ve Chao Phraya Nehri",
+          "en": "Wat Arun Temple of Dawn along Chao Phraya River in Bangkok",
+          "de": "Wat Arun Tempel am Chao Phraya Fluss in Bangkok",
+          "ru": "Храм Ват Арун на реке Чао Прайя в Бангкоке",
+          "es": "Templo Wat Arun junto al río Chao Phraya en Bangkok"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "tayland",
+      "en": "thailand",
+      "de": "thailand",
+      "ru": "tailand",
+      "es": "tailandia"
+    },
+    "title": {
+      "tr": "Tayland Vize, Güvenlik ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Thailand Visa, Travel Safety & Entry Guide 2026 | Vizamigo",
+      "de": "Thailand Visum, Sicherheit & Reiseführer 2026 | Vizamigo",
+      "ru": "Таиланд: виза, безопасность и гид для путешествий 2026 | Vizamigo",
+      "es": "Guía de Viaje, Seguridad y Visas de Tailandia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Türk pasaportu için Tayland giriş kuralları, DTV dijital göçebe vizesi, acil numaralar, priz tipleri ve resmi seyahat tavsiyeleri.",
+      "en": "Official Thailand visa requirements, DTV digital nomad permit, emergency numbers, socket voltage and safety guidelines.",
+      "de": "Einreisebestimmungen für Thailand, DTV-Nomadenvisum, Notrufnummern, Steckdosentypen und offizielle Sicherheitshinweise.",
+      "ru": "Правила въезда в Таиланд, виза кочевника DTV, экстренные номера, розетки и советы путешественникам.",
+      "es": "Requisitos de entrada para Tailandia, visa nómada DTV, números de emergencia, enchufes y consejos de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

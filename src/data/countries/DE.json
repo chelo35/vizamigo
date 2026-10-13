@@ -1,0 +1,392 @@
+{
+  "iso2": "DE",
+  "names": {
+    "tr": "Almanya",
+    "en": "Germany",
+    "de": "Deutschland",
+    "ru": "Германия",
+    "es": "Alemania"
+  },
+  "capital": {
+    "value": "Berlin",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bundesregierung.de",
+        "tier": 1,
+        "title": "Bundesregierung Deutschland"
+      }
+    ],
+    "evidence_quote": "Berlin ist die Bundeshauptstadt und der Regierungssitz der Bundesrepublik Deutschland",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bundesbank.de",
+        "tier": 1,
+        "title": "Deutsche Bundesbank"
+      }
+    ],
+    "evidence_quote": "Der Euro ist die gesetzliche Währung in Deutschland",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ptb.de",
+        "tier": 1,
+        "title": "Physikalisch-Technische Bundesanstalt (PTB)"
+      }
+    ],
+    "evidence_quote": "Mitteleuropäische Zeit (MEZ) UTC+1 und Mitteleuropäische Sommerzeit (MESZ) UTC+2",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dke.de",
+          "tier": 1,
+          "title": "DKE Deutsche Kommission Elektrotechnik (DIN VDE 0100)"
+        }
+      ],
+      "evidence_quote": "Die Netzspannung im deutschen Niederspannungsnetz beträgt 230 Volt",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dke.de",
+          "tier": 1,
+          "title": "DKE DIN VDE"
+        }
+      ],
+      "evidence_quote": "Die Nennfrequenz des Stromnetzes beträgt 50 Hz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["C", "F"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dke.de",
+          "tier": 1,
+          "title": "DKE DIN 49440/49441 Schuko Standard"
+        }
+      ],
+      "evidence_quote": "Steckdosen entsprechen dem Schuko-System Typ F und Eurostecker Typ C",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.polizei.de",
+          "tier": 1,
+          "title": "Polizei Deutschland"
+        }
+      ],
+      "evidence_quote": "Polizeinotruf 110 rund um die Uhr bundesweit gebührenfrei",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bbk.bund.de",
+          "tier": 1,
+          "title": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK)"
+        }
+      ],
+      "evidence_quote": "Notruf 112 für Feuerwehr und Rettungsdienst europaweit",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.feuerwehrverband.de",
+          "tier": 1,
+          "title": "Deutscher Feuerwehrverband"
+        }
+      ],
+      "evidence_quote": "Feuerwehrnotruf 112 alarmiert die Einsatzleitstelle",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bmi.bund.de",
+          "tier": 1,
+          "title": "Bundesministerium des Innern: Euronotruf 112"
+        }
+      ],
+      "evidence_quote": "112 ist der europaweite einheitliche Notruf für lebensbedrohliche Lagen",
+      "retrieved_at": "2026-10-13"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/germany-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 1 - Exercise Normal Precautions in Germany"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart tedbirler; Almanya genelinde seyahat güvenliği çok yüksektir",
+      "en": "Exercise normal precautions; high public safety level across Germany",
+      "de": "Normale Vorsichtsmaßnahmen; hohes öffentliches Sicherheitsniveau",
+      "ru": "Обычные меры предосторожности; высокий уровень общественной безопасности",
+      "es": "Precauciones normales; alto nivel de seguridad pública en toda Alemania"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 72.18,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/germany",
+          "tier": 2,
+          "title": "Speedtest Global Index: Germany"
+        }
+      ],
+      "evidence_quote": "Germany median mobile download speed measured",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 94.62,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/germany",
+          "tier": 2,
+          "title": "Speedtest Global Index: Germany"
+        }
+      ],
+      "evidence_quote": "Germany median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "Telekom (T-Mobile), Vodafone ve O2 (Telefónica) ana ağlardır; ön ödemeli SIM kartlarda yasal kimlik/pasaport (Video-Ident) doğrulaması zorunludur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bundesnetzagentur.de",
+          "tier": 1,
+          "title": "Bundesnetzagentur: Identitätsprüfung bei Prepaid-Karten"
+        }
+      ],
+      "evidence_quote": "Gesetzliche Ausweispflicht und Identitätsprüfung vor Freischaltung von Prepaid-SIM-Karten",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "DB Navigator",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.bahn.de/service/ueber-uns/inside-bahn/tipps-tricks/db-navigator-app",
+        "tier": 1,
+        "title": "Deutsche Bahn DB Navigator Official App"
+      }
+    },
+    {
+      "name": "FREENOW",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.free-now.com/de/",
+        "tier": 2,
+        "title": "FREENOW Germany Mobility App"
+      }
+    },
+    {
+      "name": "Lieferando",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.lieferando.de",
+        "tier": 2,
+        "title": "Lieferando Deutschland Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Mezhepsiz (%44), Katolik Hristiyanlık (%25), Protestanlık/EKD (%23), İslam (%6)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.destatis.de",
+          "tier": 1,
+          "title": "Statistisches Bundesamt (Destatis)"
+        }
+      ],
+      "evidence_quote": "Rund die Hälfte der Bevölkerung gehört einer christlichen Kirche an",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Oktoberfest (Münih - Eylül/Ekim), Noel Pazarları (Weihnachtsmärkte - Aralık), Karneval (Köln - Şubat)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.germany.travel",
+          "tier": 1,
+          "title": "Deutsche Zentrale für Tourismus (DZT)"
+        }
+      ],
+      "evidence_quote": "Oktoberfest in München ist das größte Volksfest der Welt",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Pazar günleri mağazalar ve süpermarketler kanunen kapalıdır (Sonntagsruhe). Bisiklet yollarına yaya olarak girmeyiniz. Geri dönüşüm (Pfand) kuralları çok katıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bmas.de",
+          "tier": 1,
+          "title": "Bundesministerium für Arbeit und Soziales: Ladenschlussgesetz"
+        }
+      ],
+      "evidence_quote": "Der Sonntag ist als Tag der Arbeitsruhe verfassungsrechtlich geschützt",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesap tutarı %5 ila %10 arasında yukarı yuvarlanarak garsona söylenir (örn. 27€ yerine 'Stimmt so, 30€').",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.germany.travel",
+          "tier": 1,
+          "title": "DZT Reisetipps: Trinkgeld in Deutschland"
+        }
+      ],
+      "evidence_quote": "In Restaurants ist ein Trinkgeld von 5 bis 10 Prozent üblich",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Brandenburg Kapısı, Berlin",
+        "en": "Brandenburg Gate, Berlin",
+        "de": "Brandenburger Tor, Berlin",
+        "ru": "Бранденбургские ворота в Берлине",
+        "es": "Puerta de Brandeburgo en Berlín"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.berlin.de/sehenswuerdigkeiten/3560266-3558930-brandenburger-tor.html",
+          "tier": 1,
+          "title": "Berlin.de Offizielles Hauptstadtportal"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Brandenburg Gate, Berlin",
+        "license": "Unsplash",
+        "author": "Florian Wehde",
+        "source_url": "https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Florian Wehde on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.5 },
+        "alt": {
+          "tr": "Berlin'deki tarihi Brandenburg Kapısı ve Pariser Platz",
+          "en": "Historic Brandenburg Gate illuminated on Pariser Platz in Berlin",
+          "de": "Historisches Brandenburger Tor am Pariser Platz in Berlin",
+          "ru": "Исторические Бранденбургские ворота на Парижской площади в Берлине",
+          "es": "Histórica Puerta de Brandeburgo en la Pariser Platz de Berlín"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "almanya",
+      "en": "germany",
+      "de": "deutschland",
+      "ru": "germaniya",
+      "es": "alemania"
+    },
+    "title": {
+      "tr": "Almanya Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Germany Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Deutschland Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Германия: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas Schengen y Consejos para Alemania 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Almanya Schengen vize gereksinimleri, acil numaralar (110/112), priz tipleri (230V), Pazar günü kapanış kuralları ve bahşiş adabı.",
+      "en": "Germany entry rules, emergency numbers (110/112), 230V socket standards, Sunday closing laws, and tipping etiquette.",
+      "de": "Einreisebestimmungen für Deutschland, Notruf 110/112, 230V Steckdosen, Ladenschlussgesetz und Trinkgeld-Knigge.",
+      "ru": "Правила въезда в Германию, экстренные номера 110/112, розетки 230В и полезные советы путешественникам.",
+      "es": "Requisitos de entrada a Alemania, números 110/112, enchufes a 230V, horarios comerciales y propinas."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

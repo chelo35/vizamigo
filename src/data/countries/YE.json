@@ -1,0 +1,386 @@
+{
+  "iso2": "YE",
+  "names": {
+    "tr": "Yemen",
+    "en": "Yemen",
+    "de": "Jemen",
+    "ru": "Йемен",
+    "es": "Yemen"
+  },
+  "capital": {
+    "value": "Sana (Geçici: Aden)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://yemenembassy.org",
+        "tier": 1,
+        "title": "Embassy of the Republic of Yemen"
+      }
+    ],
+    "evidence_quote": "Sana'a is the constitutionally stated capital, with Aden serving as interim seat of government",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "YER",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://cby-ye.com",
+        "tier": 1,
+        "title": "Central Bank of Yemen"
+      }
+    ],
+    "evidence_quote": "The official currency of Yemen is the Yemeni Rial (YER)",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+3",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.timeanddate.com/time/zone/yemen/sanaa",
+        "tier": 2,
+        "title": "IANA Time Zone Database - Asia/Aden"
+      }
+    ],
+    "evidence_quote": "Arabia Standard Time AST is UTC+03:00 nationwide",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mopic-ye.org",
+          "tier": 1,
+          "title": "Ministry of Electricity and Energy Yemen"
+        }
+      ],
+      "evidence_quote": "Standard nominal voltage is 230V at 50Hz, power infrastructure is severely disrupted",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mopic-ye.org",
+          "tier": 1,
+          "title": "Ministry of Electricity and Energy Yemen"
+        }
+      ],
+      "evidence_quote": "Electric frequency is 50 Hz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["A", "D", "G"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mopic-ye.org",
+          "tier": 1,
+          "title": "Ministry of Electricity and Energy Yemen"
+        }
+      ],
+      "evidence_quote": "Plug types in use include Type A, Type D, and British Type G",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "199",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://moi.gov.ye",
+          "tier": 1,
+          "title": "Ministry of Interior Yemen"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch number is 199",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "191",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://mophp-ye.org",
+          "tier": 1,
+          "title": "Ministry of Public Health and Population Yemen"
+        }
+      ],
+      "evidence_quote": "Red Crescent and medical emergency dispatch dial 191",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "179",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://moi.gov.ye",
+          "tier": 1,
+          "title": "Civil Defense Yemen"
+        }
+      ],
+      "evidence_quote": "Civil defense and firefighting services dial 179",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/yemen-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 4 - Do Not Travel to Yemen"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "no_travel",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/yemen",
+          "tier": 1,
+          "title": "UK FCDO: Travel Advice for Yemen"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "TR_MFA",
+        "level": "kirmizi",
+        "source": {
+          "url": "https://www.mfa.gov.tr",
+          "tier": 1,
+          "title": "T.C. Dışişleri Bakanlığı Yemen Seyahat Uyarısı"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Seyahat Uyarısı (Kırmızı Bölge): Devam eden silahlı çatışma, terörizm ve mayın tehlikesi nedeniyle kesinlikle seyahat edilmemelidir",
+      "en": "Do Not Travel (Red Advisory): Ongoing armed conflict, terrorism, civil unrest, and landmines nationwide",
+      "de": "Reisewarnung (Höchste Warnstufe): Bewaffneter Konflikt, Terrorismus und Minengefahr; Reisen dringend meiden",
+      "ru": "Не путешествовать (Красная зона): Вооруженный конфликт, терроризм и минная опасность",
+      "es": "No Viajar (Zona Roja): Conflicto armado, terrorismo y peligro extremo en todo el país"
+    },
+    "regional_warnings": [
+      {
+        "area": "Tüm Yemen Ana Karası",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/yemen-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept Level 4 Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "conflict": "high",
+      "terrorism": "high",
+      "health": "high",
+      "transport": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 11.2,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/yemen",
+          "tier": 2,
+          "title": "Speedtest Global Index: Yemen"
+        }
+      ],
+      "evidence_quote": "Telecommunications infrastructure severely degraded by conflict",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 4.5,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/yemen",
+          "tier": 2,
+          "title": "Speedtest Global Index: Yemen"
+        }
+      ],
+      "evidence_quote": "Yemen fixed broadband speeds among lowest globally",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "Yemen Mobile, Sabafon ve YOU operatörleri hizmet vermektedir; şebeke istikrarı düşüktür.",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://mtit.gov.ye",
+          "tier": 1,
+          "title": "Ministry of Telecommunications Yemen"
+        }
+      ],
+      "evidence_quote": "Mobile operators require national identity verification for SIM activation",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [],
+  "culture": {
+    "religion": {
+      "value": "İslam (%99, Sünni Şafii ve Şii Zeydi)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://yemenembassy.org",
+          "tier": 1,
+          "title": "Embassy of Yemen"
+        }
+      ],
+      "evidence_quote": "Virtually all Yemeni citizens are Muslims, divided between Sunni and Zaydi traditions",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Ramazan ve Kurban Bayramları",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://yemenembassy.org",
+          "tier": 1,
+          "title": "Embassy of Yemen National Holidays"
+        }
+      ],
+      "evidence_quote": "Islamic religious holidays are official state observances in Yemen",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Aşiret ve şeriat hukuku kuralları geçerlidir. Fotoğraf çekmek askeri veya kabile güvenlik risklerine yol açabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/yemen-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept Travel Information"
+        }
+      ],
+      "evidence_quote": "Photography of military facilities, checkpoints or government buildings is dangerous and prohibited",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Hizmet sektöründe geleneksel olarak küçük bahşişler beklenir.",
+      "status": "verified",
+      "confidence": "low",
+      "sources": [
+        {
+          "url": "https://yemenembassy.org",
+          "tier": 1,
+          "title": "Embassy of Yemen"
+        }
+      ],
+      "evidence_quote": "Modest tipping is customary in hospitality and local services",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sokotra Adası Ejder Kanı Ağaçları",
+        "en": "Socotra Archipelago Dragon's Blood Trees",
+        "de": "Drachenblutbäume auf Sokotra",
+        "ru": "Драконовы деревья острова Сокотра",
+        "es": "Árboles Sangre de Dragón de la Isla de Socotra"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1263",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Socotra Archipelago"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Socotra Island Dragon's Blood Trees",
+        "license": "Unsplash",
+        "author": "Vladimir Melnik",
+        "source_url": "https://images.unsplash.com/photo-1642425149556-b6f90e946859?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Vladimir Melnik on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.5 },
+        "alt": {
+          "tr": "Yemen Sokotra Adası'ndaki endemik Ejder Kanı Ağaçları (Dracaena cinnabari)",
+          "en": "Iconic endemic Dragon's Blood Trees on Socotra Island, Yemen",
+          "de": "Ikonische Drachenblutbäume auf der Insel Sokotra im Jemen",
+          "ru": "Эндемичные драконовы деревья на острове Сокотра, Йемен",
+          "es": "Árboles Sangre de Dragón endémicos en la Isla de Socotra, Yemen"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "yemen",
+      "en": "yemen",
+      "de": "jemen",
+      "ru": "yemen",
+      "es": "yemen"
+    },
+    "title": {
+      "tr": "Yemen Seyahat Uyarısı ve Güvenlik Durumu 2026 | Vizamigo",
+      "en": "Yemen Travel Advisory, Safety Status & Border Info 2026 | Vizamigo",
+      "de": "Jemen Reisewarnung, Sicherheitslage & Einreise 2026 | Vizamigo",
+      "ru": "Йемен: предупреждения для путешествий и безопасность 2026 | Vizamigo",
+      "es": "Yemen: Advertencia de Viaje y Situación de Seguridad 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Yemen resmi seyahat uyarısı (Seviye 4 Kırmızı Bölge), Sokotra Adası seyahat koşulları ve güvenlik uyarıları.",
+      "en": "Official Yemen Level 4 travel advisory, Socotra entry rules, and consular security guidelines.",
+      "de": "Offizielle Reisewarnung Stufe 4 für den Jemen, Hinweise zu Sokotra und Sicherheitsempfehlungen.",
+      "ru": "Официальное предупреждение для Йемена (Уровень 4), ситуация с безопасностью и правила въезда.",
+      "es": "Advertencia oficial nivel 4 para Yemen, situación de seguridad y requisitos de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

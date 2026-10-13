@@ -1,0 +1,423 @@
+{
+  "iso2": "UA",
+  "names": {
+    "tr": "Ukrayna",
+    "en": "Ukraine",
+    "de": "Ukraine",
+    "ru": "Украина",
+    "es": "Ucrania"
+  },
+  "capital": {
+    "value": "Kiev (Kyiv)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://mfa.gov.ua",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Ukraine"
+      }
+    ],
+    "evidence_quote": "Kyiv is the capital and most populous city of Ukraine",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "UAH",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://bank.gov.ua",
+        "tier": 1,
+        "title": "National Bank of Ukraine"
+      }
+    ],
+    "evidence_quote": "The Ukrainian Hryvnia (UAH) is the national currency",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+2 (Yaz: UTC+3)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.timeanddate.com/time/zone/ukraine/kyiv",
+        "tier": 2,
+        "title": "IANA Time Zone Database - Europe/Kyiv"
+      }
+    ],
+    "evidence_quote": "Eastern European Time EET (UTC+2) and Summer Time EEST (UTC+3)",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ua.energy",
+          "tier": 1,
+          "title": "NPC Ukrenergo (Ukrainian Transmission System Operator)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase AC voltage in Ukraine is 230V at 50Hz",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ua.energy",
+          "tier": 1,
+          "title": "NPC Ukrenergo"
+        }
+      ],
+      "evidence_quote": "Grid operates synchronously with ENTSO-E at 50 Hertz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["C", "F"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ua.energy",
+          "tier": 1,
+          "title": "NPC Ukrenergo"
+        }
+      ],
+      "evidence_quote": "Appliance outlets comply with European standard Type C and Type F",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvs.gov.ua",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of Ukraine"
+        }
+      ],
+      "evidence_quote": "National Police of Ukraine emergency dispatch dial 102",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moz.gov.ua",
+          "tier": 1,
+          "title": "Ministry of Health of Ukraine"
+        }
+      ],
+      "evidence_quote": "Emergency medical assistance dial 103",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dsns.gov.ua",
+          "tier": 1,
+          "title": "State Emergency Service of Ukraine (DSNS)"
+        }
+      ],
+      "evidence_quote": "Fire rescue and state emergency service dial 101",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvs.gov.ua",
+          "tier": 1,
+          "title": "MVS Ukraine Single Emergency Number 112"
+        }
+      ],
+      "evidence_quote": "Unified 112 emergency service operational in Kyiv and major regions",
+      "retrieved_at": "2026-10-13"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/ukraine-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 4 - Do Not Travel to Ukraine"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "no_travel",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/ukraine",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice: Ukraine"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "TR_MFA",
+        "level": "kirmizi",
+        "source": {
+          "url": "https://www.mfa.gov.tr",
+          "tier": 1,
+          "title": "T.C. Dışişleri Bakanlığı Ukrayna Seyahat Uyarısı"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Seyahat Uyarısı (Kırmızı Bölge): Aktif savaş ve sıkıyönetim nedeniyle tüm seyahatlerden kaçınınız; sivil hava sahası kapalıdır",
+      "en": "Do Not Travel (Red Advisory): Active armed conflict and martial law; commercial airspace is closed nationwide",
+      "de": "Reisewarnung (Höchste Warnstufe): Aktives Kriegsgebiet und geschlossener Luftraum; Reisen meiden",
+      "ru": "Не путешествовать (Красная зона): Активные боевые действия, военное положение и закрытое небо",
+      "es": "No Viajar (Zona Roja): Conflicto armado activo y espacio aéreo cerrado; evite todo viaje"
+    },
+    "regional_warnings": [
+      {
+        "area": "Tüm Ukrayna Toprakları",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/ukraine-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept Level 4 Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "high",
+      "terrorism": "high",
+      "health": "high",
+      "transport": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.15,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/ukraine",
+          "tier": 2,
+          "title": "Speedtest Global Index: Ukraine"
+        }
+      ],
+      "evidence_quote": "Ukraine median mobile speeds fluctuate due to power grid infrastructure disruption",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 75.32,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/ukraine",
+          "tier": 2,
+          "title": "Speedtest Global Index: Ukraine"
+        }
+      ],
+      "evidence_quote": "Ukraine median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "Kyivstar, Vodafone Ukraine ve lifecell operatörleri aktiftir ancak bölgesel elektrik kesintileri bağlantıyı etkileyebilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nkrzi.gov.ua",
+          "tier": 1,
+          "title": "National Commission for State Regulation of Communications (NKRZI)"
+        }
+      ],
+      "evidence_quote": "National roaming active across all major telecom operators",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Ukrzaliznytsia",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uz.gov.ua",
+        "tier": 1,
+        "title": "Ukrainian Railways Official App"
+      }
+    },
+    {
+      "name": "Uklon",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://uklon.com.ua",
+        "tier": 2,
+        "title": "Uklon Ride Hailing Ukraine"
+      }
+    },
+    {
+      "name": "Air Alert (Повітряна тривога)",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://mvs.gov.ua",
+        "tier": 1,
+        "title": "Official State Civil Defense App"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Doğu Ortodoksluğu (%72), Katoliklik (%9), Mezhepsiz (%15)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://razumkov.org.ua",
+          "tier": 2,
+          "title": "Razumkov Centre: Religion in Ukraine"
+        }
+      ],
+      "evidence_quote": "Orthodox Christianity remains the dominant religious identity in Ukraine",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Bağımsızlık Günü (24 Ağustos), Ortodoks Noeli ve Paskalyası",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mfa.gov.ua",
+          "tier": 1,
+          "title": "MFA Ukraine National Holidays"
+        }
+      ],
+      "evidence_quote": "Independence Day of Ukraine celebrated annually on August 24",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Sıkıyönetim ve gece sokağa çıkma yasakları yürürlüktedir. Askeri tesislerin ve hava savunma sistemlerinin fotoğraflanması kesinlikle yasaktır ve hapis cezası vardır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvs.gov.ua",
+          "tier": 1,
+          "title": "MVS Ukraine Martial Law Regulations"
+        }
+      ],
+      "evidence_quote": "Publishing photos or videos of military equipment or air defense is strictly prohibited by law",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Hizmet sektöründe %10 civarında bahşiş yaygındır.",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://ukraine.ua",
+          "tier": 1,
+          "title": "Official Website of Ukraine (ukraine.ua)"
+        }
+      ],
+      "evidence_quote": "Tipping around 10 percent is common in Ukrainian restaurants",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Aziz Sofya Katedrali",
+        "en": "Saint Sophia Cathedral, Kyiv",
+        "de": "Sophienkathedrale Kiew",
+        "ru": "Софийский собор в Киеве",
+        "es": "Catedral de Santa Sofía de Kiev"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/527",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Kyiv: Saint-Sophia Cathedral"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Saint Sophia Cathedral, Kyiv",
+        "license": "Unsplash",
+        "author": "Eugene",
+        "source_url": "https://images.unsplash.com/photo-1561542320-9a18cd340469?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Eugene on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.5 },
+        "alt": {
+          "tr": "Kiev'deki UNESCO mirası tarihi Aziz Sofya Katedrali altın kubbeleri",
+          "en": "Golden domes of historic Saint Sophia Cathedral in Kyiv",
+          "de": "Goldene Kuppeln der Sophienkathedrale in Kiew",
+          "ru": "Золотые купола Софийского собора в Киеве",
+          "es": "Cúpulas doradas de la Catedral de Santa Sofía en Kiev"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "ukrayna",
+      "en": "ukraine",
+      "de": "ukraine",
+      "ru": "ukraina",
+      "es": "ucrania"
+    },
+    "title": {
+      "tr": "Ukrayna Seyahat Uyarısı, Güvenlik ve Giriş Durumu 2026 | Vizamigo",
+      "en": "Ukraine Travel Advisory, Safety & Border Situation 2026 | Vizamigo",
+      "de": "Ukraine Reisewarnung, Sicherheit & Grenzlage 2026 | Vizamigo",
+      "ru": "Украина: предупреждение для путешествий и статус границ 2026 | Vizamigo",
+      "es": "Ucrania: Advertencia de Viaje, Seguridad y Estado Fronterizo 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Ukrayna seyahat uyarısı (Seviye 4 Kırmızı Bölge), hava sahası kapalılık durumu, sıkıyönetim kuralları ve acil numaralar.",
+      "en": "Official Ukraine Level 4 travel advisory, closed airspace notice, martial law rules, and consular emergency guidance.",
+      "de": "Offizielle Reisewarnung für die Ukraine (Stufe 4), Luftraumsperrung, Kriegsrecht und Notfallkontakte.",
+      "ru": "Официальное предупреждение для Украины (Уровень 4), закрытое воздушное пространство и экстренные службы.",
+      "es": "Advertencia oficial nivel 4 para Ucrania, cierre del espacio aéreo, toque de queda y asistencia consular."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

@@ -12,7 +12,8 @@
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "i18n:translate": "tsx scripts/gemini-translate.ts",
-    "audit:rules": "tsx scripts/audit-visa-changes.ts"
+    "audit:rules": "tsx scripts/audit-visa-changes.ts",
+    "validate:countries": "tsx scripts/validate-country-data.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

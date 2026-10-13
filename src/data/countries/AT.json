@@ -1,0 +1,392 @@
+{
+  "iso2": "AT",
+  "names": {
+    "tr": "Avusturya",
+    "en": "Austria",
+    "de": "Österreich",
+    "ru": "Австрия",
+    "es": "Austria"
+  },
+  "capital": {
+    "value": "Viyana",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.oesterreich.gv.at",
+        "tier": 1,
+        "title": "Bundeskanzleramt Österreich (oesterreich.gv.at)"
+      }
+    ],
+    "evidence_quote": "Wien ist die Bundeshauptstadt der Republik Österreich",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.oenb.at",
+        "tier": 1,
+        "title": "Oesterreichische Nationalbank"
+      }
+    ],
+    "evidence_quote": "Der Euro ist die gesetzliche Währung in Österreich",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.met.gv.at",
+        "tier": 1,
+        "title": "Bundesamt für Eich- und Vermessungswesen"
+      }
+    ],
+    "evidence_quote": "Mitteleuropäische Zeit MEZ (UTC+1) und Sommerzeit MESZ (UTC+2)",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ove.at",
+          "tier": 1,
+          "title": "Österreichischer Verband für Elektrotechnik (OVE)"
+        }
+      ],
+      "evidence_quote": "Nennspannung im österreichischen Niederspannungsnetz beträgt 230 Volt",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ove.at",
+          "tier": 1,
+          "title": "Österreichischer Verband für Elektrotechnik (OVE)"
+        }
+      ],
+      "evidence_quote": "Netzfrequenz beträgt 50 Hz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["C", "F"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ove.at",
+          "tier": 1,
+          "title": "Österreichischer Verband für Elektrotechnik (OVE)"
+        }
+      ],
+      "evidence_quote": "Steckertypen C (Eurostecker) und F (Schuko)",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "133",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.polizei.gv.at",
+          "tier": 1,
+          "title": "Bundesministerium für Inneres - Polizei Notruf"
+        }
+      ],
+      "evidence_quote": "Polizei Notruf 133 in ganz Österreich rund um die Uhr",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "144",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.roteskreuz.at",
+          "tier": 1,
+          "title": "Österreichisches Rotes Kreuz"
+        }
+      ],
+      "evidence_quote": "Rettungsnotruf 144 für medizinische Notfälle",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.feuerwehr.at",
+          "tier": 1,
+          "title": "Österreichischer Bundesfeuerwehrverband"
+        }
+      ],
+      "evidence_quote": "Feuerwehr Notruf 122",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bmi.gv.at",
+          "tier": 1,
+          "title": "Bundesministerium für Inneres: Euronotruf 112"
+        }
+      ],
+      "evidence_quote": "Euronotruf 112 gebührenfrei erreichbar",
+      "retrieved_at": "2026-10-13"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Austria Travel Advisory"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart tedbirler; Avusturya genelinde güvenlik seviyesi çok yüksek",
+      "en": "Exercise normal precautions; high safety level throughout Austria",
+      "de": "Normale Vorsichtsmaßnahmen; sehr hohes Sicherheitsniveau in ganz Österreich",
+      "ru": "Обычные меры предосторожности; высокий уровень безопасности",
+      "es": "Precauciones normales; alto nivel de seguridad en toda Austria"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 98.42,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/austria",
+          "tier": 2,
+          "title": "Speedtest Global Index: Austria"
+        }
+      ],
+      "evidence_quote": "Austria median mobile download speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 112.56,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/austria",
+          "tier": 2,
+          "title": "Speedtest Global Index: Austria"
+        }
+      ],
+      "evidence_quote": "Austria median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "A1, Magenta Telekom ve Drei (3) ağları yaygındır; kimlik doğrulaması zorunludur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rtr.at",
+          "tier": 1,
+          "title": "Rundfunk und Telekom Regulierungs-GmbH (RTR)"
+        }
+      ],
+      "evidence_quote": "Registrierungspflicht für Wertkarten-SIM-Karten mit amtlichem Lichtbildausweis",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "WienMobil",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.wienerlinien.at/wienmobil-app",
+        "tier": 1,
+        "title": "Wiener Linien Official WienMobil App"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/at/de/",
+        "tier": 2,
+        "title": "Uber Austria"
+      }
+    },
+    {
+      "name": "ÖBB Scotty",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.oebb.at",
+        "tier": 1,
+        "title": "Österreichische Bundesbahnen"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%55), İslam (%8), Mezhepsiz (%25)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statistik.at",
+          "tier": 1,
+          "title": "Statistik Austria Religionsbekenntnisse"
+        }
+      ],
+      "evidence_quote": "Rund 55 Prozent der Wohnbevölkerung gehören der römisch-katholischen Kirche an",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Salzburg Festivali (Temmuz-Ağustos), Viyana Yılbaşı Konseri, Wiener Wiesn",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.austria.info",
+          "tier": 1,
+          "title": "Österreich Werbung (Austrian National Tourist Office)"
+        }
+      ],
+      "evidence_quote": "Salzburger Festspiele weltberühmtes Festival für klassische Musik",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Pazar günleri mağazalar ve süpermarketler kapalıdır (Ruhetag). Yaya geçitlerinde ve kırmızı ışıkta geçmek sıkı cezalandırılır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.wko.at",
+          "tier": 1,
+          "title": "Wirtschaftskammer Österreich: Öffnungszeiten"
+        }
+      ],
+      "evidence_quote": "Verkaufsstellen dürfen an Sonntagen grundsätzlich nicht offengehalten werden",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Hesap tutarının %5 ila %10'u kadar bahşiş (Trinkgeld) yuvarlanarak garsona doğrudan ödenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.austria.info",
+          "tier": 1,
+          "title": "Österreich Werbung: Trinkgeld-Knigge"
+        }
+      ],
+      "evidence_quote": "In der Gastronomie ist ein Trinkgeld von etwa 5 bis 10 Prozent üblich",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Schönbrunn Sarayı",
+        "en": "Schönbrunn Palace",
+        "de": "Schloss Schönbrunn",
+        "ru": "Дворец Шёнбрунн",
+        "es": "Palacio de Schönbrunn"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/786",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Palace and Gardens of Schönbrunn"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Hallstatt, Salzkammergut",
+        "license": "Unsplash",
+        "author": "Karlo Toth",
+        "source_url": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Karlo Toth on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.5 },
+        "alt": {
+          "tr": "Hallstatt göl kenarı tarihi ahşap evleri ve Alpler manzarası",
+          "en": "Historic Hallstatt village lakeside with alpine reflections",
+          "de": "Historisches Dorf Hallstatt am Seeufer im Salzkammergut",
+          "ru": "Историческая деревня Гальштат на берегу альпийского озера",
+          "es": "Pueblo histórico de Hallstatt a orillas del lago alpino"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "avusturya",
+      "en": "austria",
+      "de": "oesterreich",
+      "ru": "avstriya",
+      "es": "austria"
+    },
+    "title": {
+      "tr": "Avusturya Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Austria Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Österreich Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Австрия: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas Schengen y Consejos para Austria 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Avusturya Schengen vize gereksinimleri, acil numaralar, BMEIA konsolosluk hattı, priz tipi ve pazar günü kuralları.",
+      "en": "Austria entry requirements, emergency contacts, BMEIA consular hotline, socket voltage and etiquette advice.",
+      "de": "Einreisebestimmungen für Österreich, Notrufnummern, BMEIA-Notdienst, Steckdosentypen und Sonntagsöffnungszeiten.",
+      "ru": "Правила въезда в Австрию, экстренные службы, розетки и полезные советы путешественникам.",
+      "es": "Requisitos de entrada para Austria, números de emergencia, enchufes y consejos para viajeros."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}

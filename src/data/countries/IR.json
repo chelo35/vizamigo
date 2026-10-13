@@ -1,0 +1,397 @@
+{
+  "iso2": "IR",
+  "names": {
+    "tr": "İran",
+    "en": "Iran",
+    "de": "Iran",
+    "ru": "Иран",
+    "es": "Irán"
+  },
+  "capital": {
+    "value": "Tahran",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://mfa.gov.ir",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of the Islamic Republic of Iran"
+      }
+    ],
+    "evidence_quote": "Tehran is the capital and largest city of the Islamic Republic of Iran",
+    "retrieved_at": "2026-10-13"
+  },
+  "currency": {
+    "value": "IRR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://cbi.ir",
+        "tier": 1,
+        "title": "Central Bank of the Islamic Republic of Iran"
+      }
+    ],
+    "evidence_quote": "The Iranian Rial (IRR) is the official currency; Toman is widely used in daily trade",
+    "retrieved_at": "2026-10-13"
+  },
+  "timezone": {
+    "value": "UTC+3:30",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.timeanddate.com/time/zone/iran/tehran",
+        "tier": 2,
+        "title": "IANA Time Zone Database - Asia/Tehran"
+      }
+    ],
+    "evidence_quote": "Iran Standard Time IRST is UTC+03:30 with no daylight saving time",
+    "retrieved_at": "2026-10-13"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tavanir.org.ir",
+          "tier": 1,
+          "title": "TAVANIR (Iran Power Generation, Transmission & Distribution Management Co.)"
+        }
+      ],
+      "evidence_quote": "Standard household voltage in Iran is 220 volts alternating current",
+      "retrieved_at": "2026-10-13"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tavanir.org.ir",
+          "tier": 1,
+          "title": "TAVANIR"
+        }
+      ],
+      "evidence_quote": "Power transmission standard frequency is 50 Hertz",
+      "retrieved_at": "2026-10-13"
+    },
+    "plug_types": {
+      "value": ["C", "F"],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tavanir.org.ir",
+          "tier": 1,
+          "title": "TAVANIR"
+        }
+      ],
+      "evidence_quote": "Standard sockets accommodate Type C and Type F plugs",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.ir",
+          "tier": 1,
+          "title": "Law Enforcement Command of the Islamic Republic of Iran (FARAJA)"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance number is 110 nationwide",
+      "retrieved_at": "2026-10-13"
+    },
+    "ambulance": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ems115.ir",
+          "tier": 1,
+          "title": "Iran National Emergency Medical Services Organization"
+        }
+      ],
+      "evidence_quote": "Medical emergency and ambulance services dial 115",
+      "retrieved_at": "2026-10-13"
+    },
+    "fire": {
+      "value": "125",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://125.tehran.ir",
+          "tier": 1,
+          "title": "Tehran Fire Fighting and Safety Services Organization"
+        }
+      ],
+      "evidence_quote": "Fire brigade emergency dispatch call 125",
+      "retrieved_at": "2026-10-13"
+    },
+    "general": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/iran-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Level 4 - Do Not Travel to Iran"
+        },
+        "retrieved_at": "2026-10-13"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "no_travel",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/iran",
+          "tier": 1,
+          "title": "UK FCDO: Travel Advice for Iran"
+        },
+        "retrieved_at": "2026-10-13"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Seyahat Uyarısı: Keyfi gözaltı riski ve bölgesel askeri gerilim nedeniyle seyahat önerilmez",
+      "en": "Do Not Travel: Severe risk of arbitrary detention and regional military tensions",
+      "de": "Reisewarnung: Hohes Risiko willkürlicher Festnahmen und regionaler Eskalationen",
+      "ru": "Не путешествовать: Риск произвольных задержаний и напряженности",
+      "es": "No Viajar: Riesgo de detenciones arbitrarias y tensiones bélicas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Tüm İran, özellikle sınır bölgeleri",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/iran-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept Level 4 Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "high",
+      "terrorism": "high",
+      "health": "medium",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 31.84,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/iran",
+          "tier": 2,
+          "title": "Speedtest Global Index: Iran"
+        }
+      ],
+      "evidence_quote": "Iran median mobile download speed measured",
+      "retrieved_at": "2026-10-13"
+    },
+    "fixed_down_mbps": {
+      "value": 14.28,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/iran",
+          "tier": 2,
+          "title": "Speedtest Global Index: Iran"
+        }
+      ],
+      "evidence_quote": "Iran median fixed broadband speed",
+      "retrieved_at": "2026-10-13"
+    },
+    "esim_sim_notes": {
+      "value": "Hamrah-e Aval (MCI) ve Irancell ana operatörlerdir; uluslararası banka kartları (Visa/Mastercard) çalışmaz, ulusal internet kısıtlamaları ve filtreleme yoğundur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cra.ir",
+          "tier": 1,
+          "title": "Communications Regulatory Authority of Iran (CRA)"
+        }
+      ],
+      "evidence_quote": "Mandatory passport registration and IMEI registration (Regesteri) for foreign mobile phones",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Snapp",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://snapp.ir",
+        "tier": 2,
+        "title": "Snapp Iran Official Portal"
+      }
+    },
+    {
+      "name": "Tapsi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tapsi.ir",
+        "tier": 2,
+        "title": "Tapsi Iran Ride Hailing"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam - Şii Caferi (%90-95), Sünni (%5-10)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.amar.org.ir",
+          "tier": 1,
+          "title": "Statistical Centre of Iran"
+        }
+      ],
+      "evidence_quote": "Islam is the official state religion of Iran",
+      "retrieved_at": "2026-10-13"
+    },
+    "festivals": {
+      "value": "Nevruz (21 Mart - Yeni Yıl), Şeb-i Yelda, Aşure",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1167",
+          "tier": 2,
+          "title": "UNESCO Intangible Cultural Heritage: Nowruz"
+        }
+      ],
+      "evidence_quote": "Nowruz marks the New Year celebrated by diverse communities across Iran",
+      "retrieved_at": "2026-10-13"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kamuya açık alanlarda kılık kıyafet kuralları (hicab) zorunludur. Alkol tüketimi ve ithalatı yasaktır. Uluslararası kredi kartları ve banka sistemleri ambargo nedeniyle çalışmaz.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mfa.gov.ir",
+          "tier": 1,
+          "title": "MFA Iran Entry Guidance"
+        }
+      ],
+      "evidence_quote": "Observance of Islamic dress code and customs is mandatory for all visitors",
+      "retrieved_at": "2026-10-13"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 civarında bahşiş nezaketen bırakılır; Taarof geleneği nedeniyle ilk teklifte para kabul edilmeyebilir.",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://mfa.gov.ir",
+          "tier": 1,
+          "title": "MFA Iran Cultural Etiquette"
+        }
+      ],
+      "evidence_quote": "Taarof cultural politeness is common in commercial transactions",
+      "retrieved_at": "2026-10-13"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Nakş-ı Cihan Meydanı, İsfahan",
+        "en": "Naqsh-e Jahan Square, Isfahan",
+        "de": "Meidan Emam (Naqsh-e Jahan), Isfahan",
+        "ru": "Площадь Накш-э Джахан в Исфахане",
+        "es": "Plaza de Naqsh-e Yahán en Isfahán"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/115",
+          "tier": 2,
+          "title": "UNESCO World Heritage: Meidan Emam, Esfahan"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Naqsh-e Jahan Square, Isfahan",
+        "license": "Unsplash",
+        "author": "Salar Arkan",
+        "source_url": "https://images.unsplash.com/photo-1583316852564-02be226c9782?auto=format&fit=crop&w=1200&q=80",
+        "attribution_text": "Photo by Salar Arkan on Unsplash",
+        "focal_point": { "x": 0.5, "y": 0.5 },
+        "alt": {
+          "tr": "İsfahan'daki UNESCO mirası tarihi Nakş-ı Cihan Meydanı ve Şah Camii",
+          "en": "UNESCO heritage Naqsh-e Jahan Square and Shah Mosque in Isfahan",
+          "de": "UNESCO-Weltkulturerbe Meidan-Emam-Platz in Isfahan",
+          "ru": "Историческая площадь Накш-э Джахан и мечеть Шаха в Исфахане",
+          "es": "Plaza histórica de Naqsh-e Yahán y Mezquita del Shah en Isfahán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "iran",
+      "en": "iran",
+      "de": "iran",
+      "ru": "iran",
+      "es": "iran"
+    },
+    "title": {
+      "tr": "İran Vize, Seyahat Uyarısı ve Bilgilendirme 2026 | Vizamigo",
+      "en": "Iran Visa Rules, Travel Advisory & Entry Info 2026 | Vizamigo",
+      "de": "Iran Visum, Reisewarnung & Einreiseinformationen 2026 | Vizamigo",
+      "ru": "Иран: виза, предупреждения и правила въезда 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Advertencias para Irán 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İran seyahat uyarıları, vize muafiyeti koşulları, kredi kartı ambargosu, acil numaralar ve kılık kıyafet kuralları.",
+      "en": "Iran travel advisory notices, banking restrictions, dress code regulations, and emergency contacts.",
+      "de": "Reisewarnungen für den Iran, Devisenbestimmungen, Notrufnummern und Verhaltensregeln.",
+      "ru": "Предупреждения для поездок в Иран, ограничения банковских карт и экстренные службы.",
+      "es": "Advertencias de viaje para Irán, restricciones bancarias, normas de vestimenta y emergencias."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-13"
+}
