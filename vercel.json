@@ -81,19 +81,7 @@
   ],
   "rewrites": [
     {
-      "source": "/:lang(tr|en|de|ru|es)",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/:lang(tr|en|de|ru|es)/:tab(explore|plan|track|nomad|profile|consular)",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/:lang(tr|en|de|ru|es)/country/:code([A-Za-z]{2})",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/((?!assets/|.*\\..*).*)",
+      "source": "/((?!assets/|favicon\\.ico|robots\\.txt|sitemap\\.xml|manifest\\.json|.*\\..*).*)",
       "destination": "/index.html"
     }
   ]

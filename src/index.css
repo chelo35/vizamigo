@@ -476,54 +476,29 @@ html.dark {
   object-fit: cover;
   display: block;
   border-radius: 16px;
-  filter: brightness(0.90) contrast(1.02) saturate(0.92);
-  transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.45s ease;
-  will-change: transform, filter;
+  filter: brightness(0.96) contrast(1.04) saturate(1.05);
+  transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
 }
 
 .group:hover .country-thumbnail-images,
 .group:hover .country-thumbnail-image,
 .country-card:hover .country-thumbnail-image,
 .country-card:hover .country-thumbnail-images {
-  transform: scale(1.04);
-  filter: brightness(0.95) contrast(1.04) saturate(1.02);
+  transform: scale(1.05);
 }
 
-/* Elegant desaturated linear-gradient overlay mask blending thumbnail into card space */
+/* Clear subtle bottom gradient scrim only for caption legibility */
 .country-thumbnail-scrim {
   position: absolute;
   inset: 0;
   border-radius: 16px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(12, 15, 25, 0.04) 0%,
-      rgba(12, 15, 25, 0.12) 65%,
-      rgba(255, 255, 255, 0.22) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(12, 15, 25, 0.05) 0%,
-      rgba(12, 15, 25, 0.28) 55%,
-      rgba(12, 15, 25, 0.78) 100%
-    );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.25) 70%, rgba(0, 0, 0, 0.65) 100%);
   pointer-events: none;
 }
 
 .dark .country-thumbnail-scrim {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(12, 15, 25, 0.05) 0%,
-      rgba(17, 22, 37, 0.22) 65%,
-      rgba(17, 22, 37, 0.65) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(12, 15, 25, 0.04) 0%,
-      rgba(12, 15, 25, 0.34) 55%,
-      rgba(12, 15, 25, 0.86) 100%
-    );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.75) 100%);
 }
 
 /* Crisis console in soft Pastel Sunset Coral (#FF6B6B) tone */

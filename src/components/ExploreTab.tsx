@@ -1154,13 +1154,6 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       </div>
 
-                      {/* Hyper-Localized Travel Concierge Strip (Pre-rendered 4-Stage Chronological Slots - Zero CLS) */}
-                      <TravelConciergeGrid
-                        countryCode={item.c}
-                        originPassport={currentPassport}
-                        variant="compact-strip"
-                      />
-
                       {/* Action Buttons Row (Symmetrical, Strict 48x48px Touch Targets, Mobile Crawl-Accessible) */}
                       <div className="flex flex-wrap items-center justify-between gap-2.5 pt-3.5 border-t border-slate-100 dark:border-white/[0.06] mt-1">
                         <div className="flex items-center gap-2.5 flex-wrap">
