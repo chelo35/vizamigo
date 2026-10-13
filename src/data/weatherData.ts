@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ALL_WORLD_HUBS, WorldHub } from './worldHubs';
 
 export interface HubWeather {
@@ -1282,18 +1283,203 @@ export const WORLD_WEATHER_DATA: Record<string, HubWeather> = {
   }
 };
 
+const WEATHER_CACHE_KEY = 'vizamigo_live_weather_v1';
+const WEATHER_TTL_MS = 20 * 60 * 1000; // 20 minutes
+
+interface CachedWeatherEntry {
+  tempC: number;
+  feelsLikeC: number;
+  humidity: number;
+  windKmh: number;
+  code: number;
+  ts: number;
+}
+
+const liveCache: Record<string, CachedWeatherEntry> = {};
+const weatherListeners = new Set<() => void>();
+const pendingCities = new Set<string>();
+
+try {
+  if (typeof window !== 'undefined') {
+    const raw = localStorage.getItem(WEATHER_CACHE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw) as Record<string, CachedWeatherEntry>;
+      const now = Date.now();
+      Object.entries(parsed).forEach(([city, entry]) => {
+        if (entry && now - entry.ts < WEATHER_TTL_MS) {
+          liveCache[city] = entry;
+        }
+      });
+    }
+  }
+} catch {}
+
+function wmoCodeToCondition(code: number): { icon: string; condition: HubWeather['condition'] } {
+  if (code === 0) {
+    return {
+      icon: '☀️',
+      condition: { tr: 'Açık & Güneşli', en: 'Sunny & Clear', de: 'Sonnig & Klar', es: 'Soleado y despejado', ru: 'Ясно и солнечно' }
+    };
+  }
+  if (code === 1 || code === 2) {
+    return {
+      icon: '⛅',
+      condition: { tr: 'Parçalı Bulutlu', en: 'Partly Cloudy', de: 'Teils bewölkt', es: 'Parcialmente nublado', ru: 'Переменная облачность' }
+    };
+  }
+  if (code === 3) {
+    return {
+      icon: '☁️',
+      condition: { tr: 'Çok Bulutlu', en: 'Overcast', de: 'Bewölkt', es: 'Nublado', ru: 'Пасмурно' }
+    };
+  }
+  if (code === 45 || code === 48) {
+    return {
+      icon: '🌫️',
+      condition: { tr: 'Sisli & Puslu', en: 'Foggy', de: 'Neblig', es: 'Niebla', ru: 'Туман' }
+    };
+  }
+  if (code >= 51 && code <= 67) {
+    return {
+      icon: '🌧️',
+      condition: { tr: 'Yağmurlu', en: 'Rainy', de: 'Regnerisch', es: 'Lluvioso', ru: 'Дождливо' }
+    };
+  }
+  if (code >= 71 && code <= 77) {
+    return {
+      icon: '❄️',
+      condition: { tr: 'Kar Yağışlı', en: 'Snowy', de: 'Schneefall', es: 'Nevando', ru: 'Снег' }
+    };
+  }
+  if (code >= 80 && code <= 82) {
+    return {
+      icon: '🌦️',
+      condition: { tr: 'Sağanak Yağışlı', en: 'Rain Showers', de: 'Regenschauer', es: 'Chubascos', ru: 'Ливень' }
+    };
+  }
+  if (code >= 95) {
+    return {
+      icon: '⛈️',
+      condition: { tr: 'Fırtına & Gök Gürültülü', en: 'Thunderstorm', de: 'Gewitter', es: 'Tormenta', ru: 'Гроза' }
+    };
+  }
+  return {
+    icon: '🌤️',
+    condition: { tr: 'Açık & Ilık', en: 'Mild & Clear', de: 'Mild & Klar', es: 'Templado', ru: 'Ясно' }
+  };
+}
+
+function notifyWeatherListeners() {
+  weatherListeners.forEach((cb) => {
+    try {
+      cb();
+    } catch {}
+  });
+}
+
 /**
- * Fallback resolver: if a city from ALL_WORLD_HUBS is searched but isn't explicitly
- * listed above, generate a realistic weather observation based on its region and timezone.
- * Guarantees 100% coverage with zero blank results.
+ * Batch-fetches live current weather from Open-Meteo for the given hubs (up to 40 per request).
  */
+export async function fetchLiveWeatherForHubs(hubs: WorldHub[]): Promise<void> {
+  if (typeof window === 'undefined' || hubs.length === 0) return;
+
+  const now = Date.now();
+  const toFetch = hubs
+    .filter((h) => {
+      if (typeof h.lat !== 'number' || typeof h.lng !== 'number') return false;
+      if (pendingCities.has(h.city)) return false;
+      const cached = liveCache[h.city];
+      return !cached || now - cached.ts >= WEATHER_TTL_MS;
+    })
+    .slice(0, 40);
+
+  if (toFetch.length === 0) return;
+
+  toFetch.forEach((h) => pendingCities.add(h.city));
+
+  try {
+    const lats = toFetch.map((h) => h.lat!.toFixed(2)).join(',');
+    const lngs = toFetch.map((h) => h.lng!.toFixed(2)).join(',');
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${lngs}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code`;
+    const res = await fetch(url);
+    if (!res.ok) return;
+    const data = await res.json();
+    const list = Array.isArray(data) ? data : [data];
+
+    list.forEach((item, idx) => {
+      const hub = toFetch[idx];
+      if (!hub || !item || !item.current) return;
+      const cur = item.current;
+      liveCache[hub.city] = {
+        tempC: Math.round(cur.temperature_2m ?? 20),
+        feelsLikeC: Math.round(cur.apparent_temperature ?? cur.temperature_2m ?? 20),
+        humidity: Math.round(cur.relative_humidity_2m ?? 55),
+        windKmh: Math.round(cur.wind_speed_10m ?? 12),
+        code: Number(cur.weather_code ?? 0),
+        ts: Date.now()
+      };
+    });
+
+    try {
+      localStorage.setItem(WEATHER_CACHE_KEY, JSON.stringify(liveCache));
+    } catch {}
+    notifyWeatherListeners();
+  } catch {
+    // Silent fallback to baseline
+  } finally {
+    toFetch.forEach((h) => pendingCities.delete(h.city));
+  }
+}
+
+/**
+ * React hook that fetches live weather for the given hubs and re-renders when live observations arrive.
+ */
+export function useLiveWeather(hubs: WorldHub[]) {
+  const [, setTick] = useState(0);
+
+  useEffect(() => {
+    const onUpdate = () => setTick((t) => t + 1);
+    weatherListeners.add(onUpdate);
+    fetchLiveWeatherForHubs(hubs);
+    return () => {
+      weatherListeners.delete(onUpdate);
+    };
+  }, [hubs.map((h) => h.city).slice(0, 40).join(',')]);
+}
+
 export function getHubWeather(cityName: string, hub?: WorldHub): HubWeather {
-  if (WORLD_WEATHER_DATA[cityName]) {
-    return WORLD_WEATHER_DATA[cityName];
+  const targetHub =
+    hub ||
+    ALL_WORLD_HUBS.find(
+      (h) =>
+        h.city.toLowerCase() === cityName.toLowerCase() ||
+        (h.cityTr && h.cityTr.toLowerCase() === cityName.toLowerCase())
+    );
+
+  const canonicalCity = targetHub?.city || cityName;
+
+  // 1. Live Open-Meteo observation if available
+  const live = liveCache[canonicalCity];
+  if (live) {
+    const { icon, condition } = wmoCodeToCondition(live.code);
+    const base = WORLD_WEATHER_DATA[canonicalCity];
+    return {
+      city: canonicalCity,
+      flag: targetHub?.flag || base?.flag || '🌍',
+      country: targetHub?.country || base?.country || { tr: 'Dünya', en: 'Global', de: 'Weltweit', es: 'Global', ru: 'Мир' },
+      tempC: live.tempC,
+      feelsLikeC: live.feelsLikeC,
+      humidity: live.humidity,
+      windKmh: live.windKmh,
+      icon,
+      condition
+    };
   }
 
-  // Find matching hub if not provided
-  const targetHub = hub || ALL_WORLD_HUBS.find((h) => h.city.toLowerCase() === cityName.toLowerCase() || h.cityTr?.toLowerCase() === cityName.toLowerCase());
+  // 2. Curated baseline if present
+  if (WORLD_WEATHER_DATA[canonicalCity]) {
+    return WORLD_WEATHER_DATA[canonicalCity];
+  }
 
   if (!targetHub) {
     return {
@@ -1309,42 +1495,30 @@ export function getHubWeather(cityName: string, hub?: WorldHub): HubWeather {
     };
   }
 
-  // Determine realistic temperature and condition based on region
-  let tempC = 18;
+  // 3. Latitude & city-specific climate estimate before live fetch resolves
+  const absLat = Math.abs(targetHub.lat ?? 35);
+  let hash = 0;
+  for (let i = 0; i < targetHub.city.length; i++) {
+    hash = (hash * 31 + targetHub.city.charCodeAt(i)) % 97;
+  }
+  const offset = (hash % 5) - 2; // -2..+2 C city micro-variation
+  const baseTemp = Math.round(31 - absLat * 0.42 + offset);
+  const tempC = Math.max(-5, Math.min(36, baseTemp));
+
   let condition = { tr: 'Açık & Güneşli', en: 'Sunny & Clear', de: 'Sonnig & Klar', es: 'Soleado y despejado', ru: 'Ясно и солнечно' };
   let icon = '☀️';
-
-  switch (targetHub.region) {
-    case 'Middle East':
-      tempC = 29;
-      condition = { tr: 'Sıcak & Güneşli', en: 'Warm & Sunny', de: 'Warm & Sonnig', es: 'Cálido y soleado', ru: 'Тепло и солнечно' };
-      icon = '☀️';
-      break;
-    case 'Africa':
-      tempC = 26;
-      condition = { tr: 'Güneşli & Ilık', en: 'Sunny & Pleasant', de: 'Sonnig & Angenehm', es: 'Soleado y agradable', ru: 'Солнечно и приятно' };
-      icon = '🌤️';
-      break;
-    case 'Asia':
-      tempC = 23;
-      condition = { tr: 'Ilık & Parçalı', en: 'Mild & Partly Cloudy', de: 'Mild & Bewölkt', es: 'Templado y nublado', ru: 'Умеренно и облачно' };
-      icon = '⛅';
-      break;
-    case 'Americas':
-      tempC = 19;
-      condition = { tr: 'Açık & Ferah', en: 'Clear & Crisp', de: 'Klar & Frisch', es: 'Despejado y fresco', ru: 'Ясно и свежо' };
-      icon = '🌤️';
-      break;
-    case 'Europe':
-      tempC = 15;
-      condition = { tr: 'Serin & Açık', en: 'Cool & Clear', de: 'Kühl & Klar', es: 'Fresco y despejado', ru: 'Прохладно и ясно' };
-      icon = '🌤️';
-      break;
-    case 'Oceania':
-      tempC = 19;
-      condition = { tr: 'Ilık & Esintili', en: 'Mild & Breezy', de: 'Mild & Windig', es: 'Templado y ventoso', ru: 'Тепло и ветрено' };
-      icon = '🌤️';
-      break;
+  if (tempC >= 27) {
+    condition = { tr: 'Sıcak & Güneşli', en: 'Warm & Sunny', de: 'Warm & Sonnig', es: 'Cálido y soleado', ru: 'Тепло и солнечно' };
+    icon = '☀️';
+  } else if (tempC >= 20) {
+    condition = { tr: 'Güneşli & Ilık', en: 'Sunny & Pleasant', de: 'Sonnig & Angenehm', es: 'Soleado y agradable', ru: 'Солнечно и приятно' };
+    icon = '🌤️';
+  } else if (tempC >= 13) {
+    condition = { tr: 'Parçalı Bulutlu', en: 'Partly Cloudy', de: 'Teils bewölkt', es: 'Parcialmente nublado', ru: 'Переменная облачность' };
+    icon = '⛅';
+  } else {
+    condition = { tr: 'Serin & Bulutlu', en: 'Cool & Cloudy', de: 'Kühl & Bewölkt', es: 'Fresco y nublado', ru: 'Прохладно и облачно' };
+    icon = '☁️';
   }
 
   return {
@@ -1354,8 +1528,9 @@ export function getHubWeather(cityName: string, hub?: WorldHub): HubWeather {
     tempC,
     condition,
     icon,
-    feelsLikeC: tempC,
-    humidity: 55,
-    windKmh: 14
+    feelsLikeC: tempC + (hash % 2 === 0 ? 1 : 0),
+    humidity: 48 + (hash % 28),
+    windKmh: 9 + (hash % 15)
   };
 }
+

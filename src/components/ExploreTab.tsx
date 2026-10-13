@@ -136,7 +136,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   onNavigateTab,
   onOpenPackingList,
   onOpenTippingCalc,
-  onOpenTimezoneOverlap
+  onOpenTimezoneOverlap,
+  onOpenGlobalRadar
 }) => {
   const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');

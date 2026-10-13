@@ -9,26 +9,20 @@ import {
   ZoomIn,
   ZoomOut,
   RotateCcw,
-  Sparkles,
-  ExternalLink,
   ChevronRight,
-  Compass,
-  ArrowRightLeft,
-  Navigation,
-  Layers,
-  MapPin,
   Radio,
-  Eye,
-  Sliders
+  RefreshCw,
+  MapPin,
+  Layers
 } from 'lucide-react';
-import { ALL_WORLD_HUBS, WorldHub } from '../../data/worldHubs';
-import { getHubWeather, HubWeather } from '../../data/weatherData';
+import { ALL_WORLD_HUBS, WorldHub, flagToIso } from '../../data/worldHubs';
+import { getHubWeather, useLiveWeather } from '../../data/weatherData';
 import { getCountryGeography } from '../../data/countryGeography';
-import { getCrossRate, formatCurrencyValue, convertCurrency } from '../../data/currencyRates';
-import { GEO_DATA, CountryGeo } from '../../data/geoData';
-import { getCountryName, getFlag, CAT_INFO } from '../../data/passportData';
+import { getCrossRate, formatCurrencyValue, convertCurrency, useLiveCurrencyRates } from '../../data/currencyRates';
+import { GEO_DATA } from '../../data/geoData';
 import { getPassportItems } from '../../utils/calculator';
 import { useI18n } from '../../data/i18n';
+import { loadGoogleMaps, DARK_MAP_STYLES } from '../../utils/googleMapsLoader';
 
 interface Props {
   isOpen: boolean;
@@ -39,100 +33,117 @@ interface Props {
   onOpenCountryDossier?: (countryCode: string) => void;
 }
 
-// Exact geographical coordinates for major multi-city hubs to prevent pin stacking
-const SPECIAL_CITY_COORDS: Record<string, { lat: number; lng: number }> = {
-  Istanbul: { lat: 41.01, lng: 28.98 },
-  Ankara: { lat: 39.93, lng: 32.85 },
-  Antalya: { lat: 36.89, lng: 30.71 },
-  Frankfurt: { lat: 50.11, lng: 8.68 },
-  Munich: { lat: 48.14, lng: 11.58 },
-  Berlin: { lat: 52.52, lng: 13.40 },
-  Milan: { lat: 45.46, lng: 9.19 },
-  Rome: { lat: 41.90, lng: 12.50 },
-  Barcelona: { lat: 41.39, lng: 2.17 },
-  Madrid: { lat: 40.42, lng: -3.70 },
-  Zurich: { lat: 47.38, lng: 8.54 },
-  Geneva: { lat: 46.20, lng: 6.14 },
-  Bern: { lat: 46.95, lng: 7.45 },
-  Dubrovnik: { lat: 42.65, lng: 18.09 },
-  Zagreb: { lat: 45.81, lng: 15.98 },
-  Budva: { lat: 42.29, lng: 18.84 },
-  Podgorica: { lat: 42.43, lng: 19.26 },
-  Almaty: { lat: 43.24, lng: 76.91 },
-  Astana: { lat: 51.17, lng: 71.43 },
-  Samarkand: { lat: 39.65, lng: 66.96 },
-  Tashkent: { lat: 41.31, lng: 69.24 },
-  Jeddah: { lat: 21.54, lng: 39.17 },
-  Riyadh: { lat: 24.71, lng: 46.68 },
-  Dubai: { lat: 25.20, lng: 55.27 },
-  'Abu Dhabi': { lat: 24.45, lng: 54.38 },
-  Alexandria: { lat: 31.20, lng: 29.92 },
-  Cairo: { lat: 30.04, lng: 31.24 },
-  'Sharm El-Sheikh': { lat: 27.92, lng: 34.33 },
-  Hurghada: { lat: 27.26, lng: 33.81 },
-  Casablanca: { lat: 33.57, lng: -7.59 },
-  Marrakech: { lat: 31.63, lng: -8.01 },
-  Rabat: { lat: 34.02, lng: -6.83 },
-  Kyoto: { lat: 35.01, lng: 135.77 },
-  Osaka: { lat: 34.69, lng: 135.50 },
-  Tokyo: { lat: 35.68, lng: 139.77 },
-  Shanghai: { lat: 31.23, lng: 121.47 },
-  Beijing: { lat: 39.90, lng: 116.41 },
-  'Hong Kong': { lat: 22.32, lng: 114.17 },
-  Phuket: { lat: 7.88, lng: 98.39 },
-  'Chiang Mai': { lat: 18.79, lng: 98.98 },
-  Bangkok: { lat: 13.76, lng: 100.50 },
-  Bali: { lat: -8.41, lng: 115.19 },
-  Jakarta: { lat: -6.20, lng: 106.85 },
-  'Ho Chi Minh': { lat: 10.82, lng: 106.63 },
-  Hanoi: { lat: 21.03, lng: 105.83 },
-  Mumbai: { lat: 19.08, lng: 72.88 },
-  'New Delhi': { lat: 28.61, lng: 77.21 },
-  'New York': { lat: 40.71, lng: -74.01 },
-  'Los Angeles': { lat: 34.05, lng: -118.24 },
-  Chicago: { lat: 41.88, lng: -87.63 },
-  Miami: { lat: 25.76, lng: -80.19 },
-  'San Francisco': { lat: 37.77, lng: -122.42 },
-  Toronto: { lat: 43.65, lng: -79.38 },
-  Vancouver: { lat: 49.28, lng: -123.12 },
-  Montreal: { lat: 45.50, lng: -73.57 },
-  Ottawa: { lat: 45.42, lng: -75.70 },
-  Cancun: { lat: 21.16, lng: -86.85 },
-  'Mexico City': { lat: 19.43, lng: -99.13 },
-  Medellin: { lat: 6.24, lng: -75.58 },
-  Bogota: { lat: 4.71, lng: -74.07 },
-  'São Paulo': { lat: -23.55, lng: -46.63 },
-  'Rio de Janeiro': { lat: -22.91, lng: -43.17 },
-  Brasilia: { lat: -15.79, lng: -47.88 },
-  'Cape Town': { lat: -33.92, lng: 18.42 },
-  Johannesburg: { lat: -26.20, lng: 28.04 },
-  Pretoria: { lat: -25.75, lng: 28.19 },
-  Zanzibar: { lat: -6.16, lng: 39.20 },
-  Melbourne: { lat: -37.81, lng: 144.96 },
-  Sydney: { lat: -33.87, lng: 151.21 },
-  Auckland: { lat: -36.85, lng: 174.76 },
-  Wellington: { lat: -41.29, lng: 174.78 }
-};
-
-// Extracts 2-letter ISO country code from emoji flag (Unicode Regional Indicator symbols)
-function flagToCountryCode(flag: string): string {
-  const chars = [...flag];
-  if (chars.length < 2) return '';
-  const cp1 = chars[0].codePointAt(0);
-  const cp2 = chars[1].codePointAt(0);
-  if (!cp1 || !cp2) return '';
-  return String.fromCharCode(cp1 - 127397, cp2 - 127397);
+interface ContinentPreset {
+  id: string;
+  labelTr: string;
+  labelEn: string;
+  labelDe: string;
+  gCenter: { lat: number; lng: number };
+  gZoom: number;
+  svgCenter: { x: number; y: number };
+  svgScale: number;
+  filterFn: (hub: WorldHub) => boolean;
 }
 
-// Continent presets with zoom center and scale
-const CONTINENT_PRESETS = [
-  { id: 'all', labelTr: 'Tüm Dünya', labelEn: 'World', labelDe: 'Welt', center: { x: 500, y: 260 }, scale: 1 },
-  { id: 'europe', labelTr: 'Avrupa', labelEn: 'Europe', labelDe: 'Europa', center: { x: 540, y: 160 }, scale: 2.8 },
-  { id: 'asia', labelTr: 'Asya & Körfez', labelEn: 'Asia & Gulf', labelDe: 'Asien', center: { x: 720, y: 230 }, scale: 2.1 },
-  { id: 'americas', labelTr: 'Amerika', labelEn: 'Americas', labelDe: 'Amerika', center: { x: 260, y: 270 }, scale: 1.6 },
-  { id: 'africa', labelTr: 'Afrika', labelEn: 'Africa', labelDe: 'Afrika', center: { x: 530, y: 310 }, scale: 2.0 },
-  { id: 'oceania', labelTr: 'Okyanusya', labelEn: 'Oceania', labelDe: 'Ozeanien', center: { x: 860, y: 380 }, scale: 2.2 },
+const CONTINENT_PRESETS: ContinentPreset[] = [
+  {
+    id: 'all',
+    labelTr: '🌍 Tüm Dünya',
+    labelEn: '🌍 World',
+    labelDe: '🌍 Welt',
+    gCenter: { lat: 24, lng: 18 },
+    gZoom: 2,
+    svgCenter: { x: 500, y: 230 },
+    svgScale: 1,
+    filterFn: () => true
+  },
+  {
+    id: 'TR',
+    labelTr: '🇹🇷 Türkiye',
+    labelEn: '🇹🇷 Turkey',
+    labelDe: '🇹🇷 Türkei',
+    gCenter: { lat: 38.6, lng: 32.0 },
+    gZoom: 6,
+    svgCenter: { x: 589, y: 148 },
+    svgScale: 5.2,
+    filterFn: (h) => h.iso === 'TR' || h.flag === '🇹🇷'
+  },
+  {
+    id: 'TH',
+    labelTr: '🇹🇭 Tayland',
+    labelEn: '🇹🇭 Thailand',
+    labelDe: '🇹🇭 Thailand',
+    gCenter: { lat: 12.8, lng: 100.5 },
+    gZoom: 6,
+    svgCenter: { x: 779, y: 222 },
+    svgScale: 5.0,
+    filterFn: (h) => h.iso === 'TH' || h.flag === '🇹🇭'
+  },
+  {
+    id: 'europe',
+    labelTr: 'Avrupa',
+    labelEn: 'Europe',
+    labelDe: 'Europa',
+    gCenter: { lat: 47.5, lng: 15.0 },
+    gZoom: 4,
+    svgCenter: { x: 542, y: 122 },
+    svgScale: 2.8,
+    filterFn: (h) => h.region === 'Europe'
+  },
+  {
+    id: 'asia',
+    labelTr: 'Asya & Körfez',
+    labelEn: 'Asia & Gulf',
+    labelDe: 'Asien & Golf',
+    gCenter: { lat: 25.0, lng: 92.0 },
+    gZoom: 3,
+    svgCenter: { x: 755, y: 190 },
+    svgScale: 2.1,
+    filterFn: (h) => h.region === 'Asia' || h.region === 'Middle East'
+  },
+  {
+    id: 'americas',
+    labelTr: 'Amerika',
+    labelEn: 'Americas',
+    labelDe: 'Amerika',
+    gCenter: { lat: 14.0, lng: -82.0 },
+    gZoom: 3,
+    svgCenter: { x: 272, y: 220 },
+    svgScale: 1.7,
+    filterFn: (h) => h.region === 'Americas'
+  },
+  {
+    id: 'africa',
+    labelTr: 'Afrika',
+    labelEn: 'Africa',
+    labelDe: 'Afrika',
+    gCenter: { lat: 4.0, lng: 20.0 },
+    gZoom: 3,
+    svgCenter: { x: 555, y: 255 },
+    svgScale: 2.1,
+    filterFn: (h) => h.region === 'Africa'
+  },
+  {
+    id: 'oceania',
+    labelTr: 'Okyanusya',
+    labelEn: 'Oceania',
+    labelDe: 'Ozeanien',
+    gCenter: { lat: -26.0, lng: 145.0 },
+    gZoom: 4,
+    svgCenter: { x: 902, y: 335 },
+    svgScale: 2.4,
+    filterFn: (h) => h.region === 'Oceania'
+  }
 ];
+
+function getHubCoords(hub: WorldHub): { lat: number; lng: number } {
+  if (typeof hub.lat === 'number' && typeof hub.lng === 'number') {
+    return { lat: hub.lat, lng: hub.lng };
+  }
+  const code = hub.iso || flagToIso(hub.flag);
+  const geo = GEO_DATA[code];
+  return geo ? { lat: geo.lat, lng: geo.lng } : { lat: 41.01, lng: 28.98 };
+}
 
 export const GlobalRadarModal: React.FC<Props> = ({
   isOpen,
@@ -143,20 +154,28 @@ export const GlobalRadarModal: React.FC<Props> = ({
   onOpenCountryDossier
 }) => {
   const { language, l } = useI18n();
+  const { isLive: isFxLive, refresh: refreshFx } = useLiveCurrencyRates();
+  const [isRefreshingFx, setIsRefreshingFx] = useState(false);
 
   // Active Telemetry Mode
   const [telemetryMode, setTelemetryMode] = useState<'all' | 'clock' | 'weather' | 'currency'>(initialMode);
   const [tempUnit, setTempUnit] = useState<'C' | 'F'>('C');
   const [activeContinent, setActiveContinent] = useState<string>('all');
+  const [mapTheme, setMapTheme] = useState<'dark' | 'roadmap' | 'hybrid'>('dark');
+
   const [selectedHub, setSelectedHub] = useState<WorldHub>(() => {
     if (initialCity) {
-      const match = ALL_WORLD_HUBS.find((h) => h.city.toLowerCase() === initialCity.toLowerCase());
+      const match = ALL_WORLD_HUBS.find(
+        (h) =>
+          h.city.toLowerCase() === initialCity.toLowerCase() ||
+          (h.cityTr && h.cityTr.toLowerCase() === initialCity.toLowerCase())
+      );
       if (match) return match;
     }
-    return ALL_WORLD_HUBS.find((h) => h.city === 'Tokyo') || ALL_WORLD_HUBS[0];
+    return ALL_WORLD_HUBS.find((h) => h.city === 'Istanbul') || ALL_WORLD_HUBS[0];
   });
 
-  // Ticking time for live clocks
+  // Live ticking clock
   const [now, setNow] = useState<Date>(() => new Date());
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
@@ -165,26 +184,97 @@ export const GlobalRadarModal: React.FC<Props> = ({
   const [convertAmount, setConvertAmount] = useState<number>(100);
   const [convertFromCode, setConvertFromCode] = useState<'USD' | 'EUR' | 'GBP' | 'TRY'>('USD');
 
-  // Zoom & Pan for SVG map
+  // Google Maps refs & state
+  const googleMapContainerRef = useRef<HTMLDivElement | null>(null);
+  const mapInstanceRef = useRef<google.maps.Map | null>(null);
+  const markersRef = useRef<Map<string, google.maps.Marker>>(new Map());
+  const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
+  const [mapsLoaded, setMapsLoaded] = useState<boolean>(false);
+  const [mapsError, setMapsError] = useState<boolean>(false);
+  const [gZoomLevel, setGZoomLevel] = useState<number>(3);
+
+  // Fallback SVG zoom & pan (used only if Google Maps fails to load)
   const [scale, setScale] = useState<number>(1);
   const [pan, setPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const dragStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const panStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
+  // All hubs in the same country as selectedHub (for instant switching between e.g. Bangkok, Phuket, Pattaya, Koh Samui or Istanbul, Antalya, Muğla, Bodrum)
+  const siblingCountryHubs = useMemo(() => {
+    const code = selectedHub.iso || flagToIso(selectedHub.flag);
+    return ALL_WORLD_HUBS.filter((h) => (h.iso || flagToIso(h.flag)) === code);
+  }, [selectedHub]);
+
+  // Hubs matching the active continent/country filter chip
+  const filteredContinentHubs = useMemo(() => {
+    const preset = CONTINENT_PRESETS.find((p) => p.id === activeContinent) || CONTINENT_PRESETS[0];
+    return ALL_WORLD_HUBS.filter(preset.filterFn);
+  }, [activeContinent]);
+
+  // Fetch live Open-Meteo weather for the selected hub + its sibling cities in the same country + top visible hubs
+  const weatherTargetHubs = useMemo(() => {
+    const combined = [selectedHub, ...siblingCountryHubs, ...filteredContinentHubs.slice(0, 25)];
+    const seen = new Set<string>();
+    return combined.filter((h) => {
+      if (seen.has(h.city)) return false;
+      seen.add(h.city);
+      return true;
+    });
+  }, [selectedHub, siblingCountryHubs, filteredContinentHubs]);
+
+  useLiveWeather(isOpen ? weatherTargetHubs : []);
+
   // Update live clock every second
   useEffect(() => {
+    if (!isOpen) return;
     const timer = setInterval(() => setNow(new Date()), 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isOpen]);
+
+  // Load Google Maps when modal opens
+  useEffect(() => {
+    if (!isOpen) return;
+    let isMounted = true;
+    const onAuthFailure = () => {
+      if (isMounted) setMapsError(true);
+    };
+    window.addEventListener('vizamigo:gmaps-auth-failure', onAuthFailure);
+
+    loadGoogleMaps()
+      .then(() => {
+        if (!isMounted) return;
+        setMapsLoaded(true);
+      })
+      .catch(() => {
+        if (!isMounted) return;
+        setMapsError(true);
+      });
+
+    return () => {
+      isMounted = false;
+      window.removeEventListener('vizamigo:gmaps-auth-failure', onAuthFailure);
+    };
+  }, [isOpen]);
 
   // Sync initial parameters when opening
   useEffect(() => {
     if (isOpen) {
       if (initialMode) setTelemetryMode(initialMode);
       if (initialCity) {
-        const match = ALL_WORLD_HUBS.find((h) => h.city.toLowerCase() === initialCity.toLowerCase());
-        if (match) setSelectedHub(match);
+        const match = ALL_WORLD_HUBS.find(
+          (h) =>
+            h.city.toLowerCase() === initialCity.toLowerCase() ||
+            (h.cityTr && h.cityTr.toLowerCase() === initialCity.toLowerCase())
+        );
+        if (match) {
+          setSelectedHub(match);
+          const coords = getHubCoords(match);
+          if (mapInstanceRef.current) {
+            mapInstanceRef.current.panTo(coords);
+            mapInstanceRef.current.setZoom(6);
+          }
+        }
       }
     }
   }, [isOpen, initialMode, initialCity]);
@@ -211,8 +301,8 @@ export const GlobalRadarModal: React.FC<Props> = ({
 
   // Target intelligence for currently selected hub
   const targetIntel = useMemo(() => {
-    const countryCode = flagToCountryCode(selectedHub.flag);
-    const geo = SPECIAL_CITY_COORDS[selectedHub.city] || GEO_DATA[countryCode] || { lat: 0, lng: 0 };
+    const countryCode = selectedHub.iso || flagToIso(selectedHub.flag);
+    const geo = getHubCoords(selectedHub);
     const geography = getCountryGeography(countryCode, language);
     const weather = getHubWeather(selectedHub.city, selectedHub);
     const countryName = selectedHub.country[language as keyof typeof selectedHub.country] || selectedHub.country.tr;
@@ -254,7 +344,9 @@ export const GlobalRadarModal: React.FC<Props> = ({
         }).format(now),
         10
       );
-      const diff = localHour - trHour;
+      let diff = localHour - trHour;
+      if (diff > 12) diff -= 24;
+      if (diff < -12) diff += 24;
       if (diff === 0) {
         timeDiffText = l('İstanbul ile aynı saat', 'Same time as Istanbul', 'Gleiche Zeit wie Istanbul');
       } else if (diff > 0) {
@@ -271,10 +363,8 @@ export const GlobalRadarModal: React.FC<Props> = ({
     const rate1Gbp = getCrossRate('GBP', destCurrency);
     const rate1Try = getCrossRate('TRY', destCurrency);
 
-    // Live converted value from user input
     const convertedLocalAmount = convertCurrency(convertAmount, convertFromCode, destCurrency);
 
-    // Visa Status for user passport
     const visaItem = passportItems.find((it) => it.c === countryCode);
     const visaBadge = visaItem
       ? visaItem.id || visaItem.cat === 'free'
@@ -306,53 +396,173 @@ export const GlobalRadarModal: React.FC<Props> = ({
       convertedLocalAmount,
       visaBadge
     };
-  }, [selectedHub, now, language, convertAmount, convertFromCode, passportItems, l]);
+  }, [selectedHub, now, language, convertAmount, convertFromCode, passportItems, l, isFxLive]);
 
-  // Projected SVG Markers for all 154 hubs
+  // Initialize & Sync Live Google Map
+  useEffect(() => {
+    if (!isOpen || !mapsLoaded || mapsError || !googleMapContainerRef.current) return;
+    if (!window.google || !window.google.maps) return;
+
+    if (!mapInstanceRef.current) {
+      const initialCoords = getHubCoords(selectedHub);
+      const map = new google.maps.Map(googleMapContainerRef.current, {
+        center: initialCity ? initialCoords : { lat: 30, lng: 25 },
+        zoom: initialCity ? 6 : 3,
+        minZoom: 2,
+        maxZoom: 13,
+        mapTypeId: mapTheme === 'hybrid' ? 'hybrid' : 'roadmap',
+        styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [],
+        disableDefaultUI: true,
+        zoomControl: false,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false,
+        gestureHandling: 'greedy',
+        backgroundColor: '#070b14'
+      });
+
+      map.addListener('zoom_changed', () => {
+        const z = map.getZoom();
+        if (typeof z === 'number') setGZoomLevel(z);
+      });
+
+      mapInstanceRef.current = map;
+      infoWindowRef.current = new google.maps.InfoWindow();
+    }
+  }, [isOpen, mapsLoaded, mapsError]);
+
+  // Tear down map instance when modal closes so re-opening mounts cleanly
+  useEffect(() => {
+    if (!isOpen) {
+      markersRef.current.forEach((m) => m.setMap(null));
+      markersRef.current.clear();
+      mapInstanceRef.current = null;
+    }
+  }, [isOpen]);
+
+  // Update Google Map theme when toggled
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    if (!map) return;
+    map.setMapTypeId(mapTheme === 'hybrid' ? 'hybrid' : 'roadmap');
+    map.setOptions({ styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [] });
+  }, [mapTheme]);
+
+  // Create/update markers on Google Maps
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    if (!isOpen || !mapsLoaded || mapsError || !map) return;
+
+    // Clear previous markers
+    markersRef.current.forEach((m) => m.setMap(null));
+    markersRef.current.clear();
+
+    ALL_WORLD_HUBS.forEach((hub) => {
+      const coords = getHubCoords(hub);
+      const isSelected = hub.city === selectedHub.city;
+      const weather = getHubWeather(hub.city, hub);
+      const displayName = language === 'tr' && hub.cityTr ? hub.cityTr : hub.city;
+
+      // Determine marker color based on telemetryMode
+      let fillColor = '#06b6d4';
+      if (telemetryMode === 'weather') {
+        fillColor = weather.tempC >= 26 ? '#f97316' : weather.tempC >= 16 ? '#eab308' : '#38bdf8';
+      } else if (telemetryMode === 'currency') {
+        fillColor = '#10b981';
+      } else if (telemetryMode === 'clock') {
+        fillColor = '#38bdf8';
+      }
+      if (isSelected) {
+        fillColor = '#22d3ee';
+      }
+
+      const marker = new google.maps.Marker({
+        position: coords,
+        map,
+        title: `${hub.flag} ${displayName}`,
+        zIndex: isSelected ? 999 : 10,
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          fillColor,
+          fillOpacity: 0.95,
+          strokeColor: isSelected ? '#ffffff' : '#0f172a',
+          strokeWeight: isSelected ? 2.5 : 1.5,
+          scale: isSelected ? 9 : 6
+        }
+      });
+
+      marker.addListener('click', () => {
+        handleSelectHub(hub);
+      });
+
+      markersRef.current.set(hub.city, marker);
+    });
+  }, [isOpen, mapsLoaded, mapsError, selectedHub, telemetryMode, language]);
+
+  // Show sleek InfoWindow on the selected hub in Google Maps
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    const infoWindow = infoWindowRef.current;
+    if (!isOpen || !mapsLoaded || mapsError || !map || !infoWindow) return;
+
+    const marker = markersRef.current.get(selectedHub.city);
+    if (!marker) return;
+
+    const displayName = language === 'tr' && selectedHub.cityTr ? selectedHub.cityTr : selectedHub.city;
+    const tempStr =
+      tempUnit === 'F'
+        ? `${Math.round((targetIntel.weather.tempC * 9) / 5 + 32)}°F`
+        : `${targetIntel.weather.tempC}°C`;
+
+    const contentHtml = `
+      <div style="background:#0f172a;color:#f8fafc;padding:8px 12px;border-radius:12px;border:1px solid rgba(34,211,238,0.4);font-family:ui-sans-serif,system-ui,sans-serif;min-width:170px;box-shadow:0 10px 25px rgba(0,0,0,0.5);">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px;">
+          <span style="font-weight:800;font-size:13px;color:#fff;">${selectedHub.flag} ${displayName}</span>
+          <span style="font-family:monospace;font-size:11px;font-weight:700;color:#22d3ee;background:rgba(6,182,212,0.15);padding:2px 6px;border-radius:6px;">${targetIntel.localTimeString.slice(0, 5)}</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#cbd5e1;gap:8px;">
+          <span>${targetIntel.weather.icon} <b>${tempStr}</b></span>
+          <span style="color:#34d399;font-family:monospace;font-weight:700;">1$ = ${formatCurrencyValue(targetIntel.rate1Usd)} ${targetIntel.destCurrency}</span>
+        </div>
+      </div>
+    `;
+    infoWindow.setContent(contentHtml);
+    infoWindow.open({ map, anchor: marker, shouldFocus: false });
+  }, [
+    isOpen,
+    mapsLoaded,
+    mapsError,
+    selectedHub,
+    targetIntel.weather.tempC,
+    targetIntel.weather.icon,
+    targetIntel.rate1Usd,
+    targetIntel.destCurrency,
+    tempUnit,
+    language
+  ]);
+
+  // Projected SVG Markers (for fallback mode if Google Maps is blocked)
   const projectedMarkers = useMemo(() => {
     return ALL_WORLD_HUBS.map((hub) => {
-      const countryCode = flagToCountryCode(hub.flag);
-      const coords = SPECIAL_CITY_COORDS[hub.city] || GEO_DATA[countryCode] || { lat: 0, lng: 0 };
-      // Equirectangular projection: x: 0..1000, y: 0..520
+      const coords = getHubCoords(hub);
       const x = ((coords.lng + 180) / 360) * 1000;
       const y = ((90 - coords.lat) / 180) * 520;
       const isSelected = hub.city === selectedHub.city;
-
-      // Hub live weather & clock for badge indicators
       const weather = getHubWeather(hub.city, hub);
-      let isDay = true;
       let hubTimeShort = '';
       try {
-        const parts = new Intl.DateTimeFormat('en-US', {
+        hubTimeShort = new Intl.DateTimeFormat('en-GB', {
           timeZone: hub.tz,
           hour: '2-digit',
           minute: '2-digit',
           hour12: false
-        }).formatToParts(now);
-        const h = parts.find((p) => p.type === 'hour')?.value;
-        const m = parts.find((p) => p.type === 'minute')?.value;
-        if (h && m) {
-          hubTimeShort = `${h}:${m}`;
-          const hourNum = parseInt(h, 10);
-          isDay = hourNum >= 6 && hourNum < 19;
-        }
+        }).format(now);
       } catch {}
-
-      return {
-        hub,
-        countryCode,
-        coords,
-        x,
-        y,
-        isSelected,
-        weather,
-        isDay,
-        hubTimeShort
-      };
+      return { hub, coords, x, y, isSelected, weather, hubTimeShort };
     });
   }, [selectedHub, now]);
 
-  // Filtered search hubs
+  // Search autocomplete results across all 500+ hubs
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
     const q = searchQuery.toLowerCase().trim();
@@ -362,60 +572,93 @@ export const GlobalRadarModal: React.FC<Props> = ({
         (h.cityTr && h.cityTr.toLowerCase().includes(q)) ||
         h.country.tr.toLowerCase().includes(q) ||
         h.country.en.toLowerCase().includes(q) ||
-        h.country.de.toLowerCase().includes(q)
+        h.country.de.toLowerCase().includes(q) ||
+        h.country.es.toLowerCase().includes(q) ||
+        h.country.ru.toLowerCase().includes(q)
       );
-    }).slice(0, 8);
+    }).slice(0, 12);
   }, [searchQuery]);
 
-  // Handle Continent Quick Jump
-  const handleContinentClick = (preset: typeof CONTINENT_PRESETS[0]) => {
+  // Handle Continent / Country Quick Jump
+  const handleContinentClick = (preset: ContinentPreset) => {
     setActiveContinent(preset.id);
-    setScale(preset.scale);
-    // Pan offset to center the preset
-    const targetX = -(preset.center.x * preset.scale - 500);
-    const targetY = -(preset.center.y * preset.scale - 260);
-    setPan({ x: targetX, y: targetY });
+
+    // Focus Google Maps smoothly on the continent / country
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.panTo(preset.gCenter);
+      mapInstanceRef.current.setZoom(preset.gZoom);
+    }
+
+    // Also update fallback SVG pan/scale
+    setScale(preset.svgScale);
+    setPan({
+      x: (500 - preset.svgCenter.x) * preset.svgScale,
+      y: (260 - preset.svgCenter.y) * preset.svgScale
+    });
+
+    // If user clicked a specific country preset (e.g. Türkiye or Tayland), select its top hub if not already in that country
+    const firstMatch = ALL_WORLD_HUBS.find(preset.filterFn);
+    if (firstMatch && !preset.filterFn(selectedHub)) {
+      setSelectedHub(firstMatch);
+    }
   };
 
-  // Select hub and center map on it
+  // Select hub and fly map to it
   const handleSelectHub = (hub: WorldHub) => {
     setSelectedHub(hub);
     setSearchQuery('');
     setIsSearchOpen(false);
 
-    const countryCode = flagToCountryCode(hub.flag);
-    const coords = SPECIAL_CITY_COORDS[hub.city] || GEO_DATA[countryCode] || { lat: 0, lng: 0 };
+    const coords = getHubCoords(hub);
+
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.panTo(coords);
+      const currentZoom = mapInstanceRef.current.getZoom() || 3;
+      if (currentZoom < 6) {
+        mapInstanceRef.current.setZoom(6);
+      }
+    }
+
     const x = ((coords.lng + 180) / 360) * 1000;
     const y = ((90 - coords.lat) / 180) * 520;
-
-    // Smoothly focus on selected target
-    setScale((prev) => Math.max(prev, 1.8));
-    const targetScale = Math.max(scale, 1.8);
+    const targetScale = Math.max(scale, 2.4);
+    setScale(targetScale);
     setPan({
-      x: -(x * targetScale - 500),
-      y: -(y * targetScale - 260)
+      x: (500 - x) * targetScale,
+      y: (260 - y) * targetScale
     });
   };
 
-  // Mouse pan handlers
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setIsDragging(true);
-    dragStartRef.current = { x: e.clientX, y: e.clientY };
-    panStartRef.current = { ...pan };
+  const handleZoomIn = () => {
+    if (mapInstanceRef.current) {
+      const z = mapInstanceRef.current.getZoom() || 3;
+      mapInstanceRef.current.setZoom(Math.min(z + 1, 13));
+    }
+    setScale((s) => Math.min(s + 0.5, 6));
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-    const dx = e.clientX - dragStartRef.current.x;
-    const dy = e.clientY - dragStartRef.current.y;
-    setPan({
-      x: panStartRef.current.x + dx,
-      y: panStartRef.current.y + dy
-    });
+  const handleZoomOut = () => {
+    if (mapInstanceRef.current) {
+      const z = mapInstanceRef.current.getZoom() || 3;
+      mapInstanceRef.current.setZoom(Math.max(z - 1, 2));
+    }
+    setScale((s) => Math.max(s - 0.5, 1));
   };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
+  const handleResetView = () => {
+    setActiveContinent('all');
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.panTo({ lat: 24, lng: 18 });
+      mapInstanceRef.current.setZoom(2);
+    }
+    setScale(1);
+    setPan({ x: 0, y: 0 });
+  };
+
+  const handleManualFxRefresh = async () => {
+    setIsRefreshingFx(true);
+    await refreshFx();
+    setTimeout(() => setIsRefreshingFx(false), 350);
   };
 
   if (!isOpen) return null;
@@ -423,16 +666,14 @@ export const GlobalRadarModal: React.FC<Props> = ({
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-slate-950/85 backdrop-blur-xl animate-in fade-in duration-200"
-      onMouseUp={handleMouseUp}
+      onMouseUp={() => setIsDragging(false)}
     >
       {/* Main Container - Cyber Glass HUD */}
-      <div className="relative w-full max-w-7xl h-[92vh] max-h-[900px] flex flex-col rounded-3xl bg-slate-900/95 border border-cyan-500/30 shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden text-slate-100">
-        
+      <div className="relative w-full max-w-7xl h-[93vh] max-h-[920px] flex flex-col rounded-3xl bg-slate-900/95 border border-cyan-500/30 shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden text-slate-100">
         {/* ============================================================== */}
         {/* TOP TELEMETRY HUD BAR                                         */}
         {/* ============================================================== */}
-        <header className="flex-shrink-0 px-4 sm:px-6 py-3.5 bg-slate-950/90 border-b border-cyan-500/20 flex flex-wrap items-center justify-between gap-3">
-          
+        <header className="flex-shrink-0 px-4 sm:px-6 py-3 bg-slate-950/90 border-b border-cyan-500/20 flex flex-wrap items-center justify-between gap-3">
           {/* Left: Radar Live Ping & Brand */}
           <div className="flex items-center gap-3">
             <div className="relative flex items-center justify-center w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-500/40 text-cyan-400">
@@ -446,11 +687,15 @@ export const GlobalRadarModal: React.FC<Props> = ({
                   {l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Globaler Reiseradar', 'Radar de Viajes', 'Глобальный Радар')}
                 </h2>
                 <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider">
-                  HUD v3.4 · 154 HUBS
+                  GOOGLE MAPS · {ALL_WORLD_HUBS.length} MERKEZ
                 </span>
               </div>
               <p className="text-[10px] text-slate-400 font-mono">
-                {l('Canlı Dünya Saati · Meteoroloji · Çapraz Döviz Kurları', 'Live World Clock · Meteorology · Cross FX Rates', 'Echtzeit-Uhr · Wetter · Währungskurse')}
+                {l(
+                  'Canlı Dünya Saati · Open-Meteo Canlı Hava Durumu · Güncel Döviz Kurları',
+                  'Live World Clock · Open-Meteo Live Weather · Live FX Rates',
+                  'Echtzeit-Uhr · Live-Wetter · Aktuelle Wechselkurse'
+                )}
               </p>
             </div>
           </div>
@@ -507,8 +752,30 @@ export const GlobalRadarModal: React.FC<Props> = ({
             </button>
           </div>
 
-          {/* Right: Controls & Close */}
+          {/* Right: Map Theme, Temp Unit & Close */}
           <div className="flex items-center gap-2">
+            {/* Map Theme Switcher */}
+            <div className="hidden sm:flex items-center p-0.5 rounded-xl bg-slate-900 border border-white/10 text-[11px]">
+              {(
+                [
+                  { id: 'dark', label: l('Koyu', 'Dark', 'Dunkel') },
+                  { id: 'roadmap', label: l('Harita', 'Map', 'Karte') },
+                  { id: 'hybrid', label: l('Uydu', 'Satellite', 'Satellit') }
+                ] as const
+              ).map((tItem) => (
+                <button
+                  key={tItem.id}
+                  type="button"
+                  onClick={() => setMapTheme(tItem.id)}
+                  className={`px-2 py-1 rounded-lg font-bold transition-all cursor-pointer ${
+                    mapTheme === tItem.id ? 'bg-cyan-600 text-white' : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  {tItem.label}
+                </button>
+              ))}
+            </div>
+
             {/* Temp Unit Toggle */}
             <button
               type="button"
@@ -532,264 +799,256 @@ export const GlobalRadarModal: React.FC<Props> = ({
         </header>
 
         {/* ============================================================== */}
-        {/* SUBHEADER: CONTINENT CHIPS & SEARCH BAR                        */}
+        {/* SUBHEADER: CONTINENT CHIPS, QUICK CITY BAR & SEARCH            */}
         {/* ============================================================== */}
-        <div className="flex-shrink-0 px-4 sm:px-6 py-2 bg-slate-950/70 border-b border-cyan-500/10 flex items-center justify-between gap-3 text-xs">
-          
-          {/* Continent Quick Filter Chips */}
-          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5">
-            {CONTINENT_PRESETS.map((preset) => (
-              <button
-                key={preset.id}
-                type="button"
-                onClick={() => handleContinentClick(preset)}
-                className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer ${
-                  activeContinent === preset.id
-                    ? 'bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 shadow-xs'
-                    : 'bg-slate-800/50 border border-white/5 text-slate-400 hover:text-white hover:bg-slate-800'
-                }`}
-              >
-                {preset.labelTr}
-              </button>
-            ))}
+        <div className="flex-shrink-0 px-4 sm:px-6 py-2 bg-slate-950/80 border-b border-cyan-500/15 flex flex-col gap-2 text-xs">
+          <div className="flex items-center justify-between gap-3">
+            {/* Continent & Country Quick Focus Chips */}
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5">
+              {CONTINENT_PRESETS.map((preset) => (
+                <button
+                  key={preset.id}
+                  type="button"
+                  onClick={() => handleContinentClick(preset)}
+                  className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer ${
+                    activeContinent === preset.id
+                      ? 'bg-cyan-500/25 border border-cyan-400 text-cyan-200 shadow-xs'
+                      : 'bg-slate-800/60 border border-white/10 text-slate-300 hover:text-white hover:bg-slate-800'
+                  }`}
+                >
+                  {language === 'de' ? preset.labelDe : language === 'en' ? preset.labelEn : preset.labelTr}
+                </button>
+              ))}
+            </div>
+
+            {/* Fast Search Autocomplete */}
+            <div className="relative flex-shrink-0 w-48 sm:w-72">
+              <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-cyan-400" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setIsSearchOpen(true);
+                }}
+                onFocus={() => setIsSearchOpen(true)}
+                placeholder={l(
+                  'Şehir, tatil bölgesi veya ülke ara (Antalya, Pattaya, Phuket)...',
+                  'Search city, resort or country...',
+                  'Stadt oder Land suchen...'
+                )}
+                className="w-full pl-8 pr-7 py-1.5 text-xs rounded-xl bg-slate-900 border border-cyan-500/30 text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+              />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white cursor-pointer"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+
+              {/* Search Dropdown */}
+              {isSearchOpen && searchResults.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-1 py-1 rounded-xl bg-slate-900 border border-cyan-500/40 shadow-2xl z-30 max-h-64 overflow-y-auto">
+                  {searchResults.map((hub) => (
+                    <button
+                      key={`${hub.city}_${hub.iso || ''}`}
+                      type="button"
+                      onClick={() => handleSelectHub(hub)}
+                      className="w-full px-3 py-2 flex items-center justify-between text-left hover:bg-cyan-950/60 text-xs transition-colors cursor-pointer"
+                    >
+                      <div className="flex items-center gap-2 min-w-0">
+                        <span className="text-base">{hub.flag}</span>
+                        <span className="font-bold text-white truncate">
+                          {language === 'tr' && hub.cityTr ? hub.cityTr : hub.city}
+                        </span>
+                        <span className="text-[10px] text-slate-400 truncate">
+                          ({hub.country[language as keyof typeof hub.country] || hub.country.tr})
+                        </span>
+                      </div>
+                      <span className="text-[10px] font-mono text-cyan-400 ml-2 shrink-0">{hub.region}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
-          {/* Fast Search Autocomplete */}
-          <div className="relative flex-shrink-0 w-44 sm:w-64">
-            <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-cyan-400" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                setIsSearchOpen(true);
-              }}
-              onFocus={() => setIsSearchOpen(true)}
-              placeholder={l('Şehir veya ülke ara (örn: Tokyo, Roma)...', 'Search city or country...', 'Stadt oder Land suchen...')}
-              className="w-full pl-8 pr-3 py-1 text-xs rounded-xl bg-slate-950/90 border border-cyan-500/30 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-400 font-mono"
-            />
-            {/* Search Dropdown */}
-            {isSearchOpen && searchResults.length > 0 && (
-              <div className="absolute top-full left-0 right-0 mt-1 py-1 rounded-xl bg-slate-900 border border-cyan-500/40 shadow-xl z-30 max-h-56 overflow-y-auto">
-                {searchResults.map((hub) => (
-                  <button
-                    key={hub.city}
-                    type="button"
-                    onClick={() => handleSelectHub(hub)}
-                    className="w-full px-3 py-1.5 flex items-center justify-between text-left hover:bg-cyan-950/50 text-xs transition-colors cursor-pointer"
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="text-base">{hub.flag}</span>
-                      <span className="font-bold text-white">{hub.cityTr || hub.city}</span>
-                      <span className="text-[10px] text-slate-400">({hub.country[language as keyof typeof hub.country] || hub.country.tr})</span>
-                    </div>
-                    <span className="text-[10px] font-mono text-cyan-400">{hub.region}</span>
-                  </button>
-                ))}
-              </div>
-            )}
+          {/* Quick Scrollable City Strip for Active Region / Country */}
+          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-0.5">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-cyan-400/80 shrink-0 mr-1 flex items-center gap-1">
+              <MapPin className="w-3 h-3" />
+              {l('Popüler Noktalar:', 'Popular Hubs:', 'Beliebte Orte:')}
+            </span>
+            {filteredContinentHubs.slice(0, 45).map((hub) => {
+              const isSel = hub.city === selectedHub.city;
+              const label = language === 'tr' && hub.cityTr ? hub.cityTr : hub.city;
+              return (
+                <button
+                  key={`strip_${hub.city}_${hub.iso || ''}`}
+                  type="button"
+                  onClick={() => handleSelectHub(hub)}
+                  className={`px-2.5 py-0.5 rounded-lg text-[11px] font-semibold whitespace-nowrap transition-all cursor-pointer flex items-center gap-1 ${
+                    isSel
+                      ? 'bg-cyan-500 text-slate-950 font-black shadow-xs'
+                      : 'bg-slate-900/90 hover:bg-slate-800 text-slate-300 border border-white/5'
+                  }`}
+                >
+                  <span>{hub.flag}</span>
+                  <span>{label}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
         {/* ============================================================== */}
-        {/* INTERACTIVE RADAR WORKSPACE (MAP + HUD DRAWER)                */}
+        {/* INTERACTIVE RADAR WORKSPACE (GOOGLE MAPS + HUD DRAWER)         */}
         {/* ============================================================== */}
-        <div className="relative flex-1 flex overflow-hidden">
-          
+        <div className="relative flex-1 flex flex-col lg:flex-row overflow-hidden">
           {/* --- MAP CANVAS WRAPPER --- */}
-          <div
-            className="relative flex-1 h-full bg-[#070b14] overflow-hidden select-none cursor-grab active:cursor-grabbing"
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-          >
-            {/* High-tech Radar Grid & Background Glow */}
-            <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#06b6d4_1px,transparent_1px)] [background-size:24px_24px]" />
-            <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
+          <div className="relative flex-1 h-full min-h-[340px] bg-[#070b14] overflow-hidden">
+            {/* Live Google Maps Surface */}
+            {!mapsError && (
+              <div
+                ref={googleMapContainerRef}
+                className="w-full h-full"
+                style={{ minHeight: '340px' }}
+              />
+            )}
 
-            {/* Radar Sweep Beam Effect */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-15">
-              <div className="w-[200%] h-full bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent animate-[shimmer_8s_infinite_linear]" />
-            </div>
+            {/* Loading indicator while Google Maps initializes */}
+            {!mapsLoaded && !mapsError && (
+              <div className="absolute inset-0 flex items-center justify-center bg-slate-950/80 z-10">
+                <div className="flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-slate-900 border border-cyan-500/30 text-cyan-300 text-xs font-bold">
+                  <RefreshCw className="w-4 h-4 animate-spin" />
+                  <span>{l('Google Haritalar yükleniyor...', 'Loading Google Maps...', 'Google Maps wird geladen...')}</span>
+                </div>
+              </div>
+            )}
 
-            {/* SVG Interactive Map */}
-            <div
-              className="w-full h-full flex items-center justify-center transition-transform duration-100 ease-out"
-              style={{
-                transform: `translate(${pan.x}px, ${pan.y}px) scale(${scale})`,
-                transformOrigin: '500px 260px'
-              }}
-            >
-              <svg
-                viewBox="0 0 1000 520"
-                className="w-full h-full max-w-[1200px]"
-                xmlns="http://www.w3.org/2000/svg"
+            {/* Fallback Vector Map ONLY if Google Maps is blocked */}
+            {mapsError && (
+              <div
+                className="relative w-full h-full bg-[#070b14] overflow-hidden select-none cursor-grab active:cursor-grabbing"
+                onMouseDown={(e) => {
+                  setIsDragging(true);
+                  dragStartRef.current = { x: e.clientX, y: e.clientY };
+                  panStartRef.current = { ...pan };
+                }}
+                onMouseMove={(e) => {
+                  if (!isDragging) return;
+                  setPan({
+                    x: panStartRef.current.x + (e.clientX - dragStartRef.current.x),
+                    y: panStartRef.current.y + (e.clientY - dragStartRef.current.y)
+                  });
+                }}
               >
-                {/* Graticule Latitude & Longitude Lines */}
-                <g stroke="#0e2338" strokeWidth="0.5" strokeDasharray="3 3">
-                  {/* Equator & Tropics */}
-                  <line x1="0" y1="260" x2="1000" y2="260" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
-                  <line x1="0" y1="193" x2="1000" y2="193" /> {/* Tropic of Cancer */}
-                  <line x1="0" y1="327" x2="1000" y2="327" /> {/* Tropic of Capricorn */}
-                  {/* Prime Meridian */}
-                  <line x1="500" y1="0" x2="500" y2="520" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
-                  <line x1="250" y1="0" x2="250" y2="520" />
-                  <line x1="750" y1="0" x2="750" y2="520" />
-                </g>
-
-                {/* Continental Simplified Radar Silhouettes */}
-                <g fill="#10192e" stroke="#1e3a5f" strokeWidth="0.75" opacity="0.85">
-                  {/* North America */}
-                  <path d="M 120 70 L 220 50 L 320 60 L 310 110 L 250 140 L 270 200 L 230 250 L 190 220 L 140 160 L 100 110 Z" />
-                  {/* South America */}
-                  <path d="M 270 260 L 340 280 L 370 330 L 340 430 L 300 460 L 270 370 L 250 300 Z" />
-                  {/* Europe */}
-                  <path d="M 460 90 L 550 70 L 590 120 L 560 170 L 490 180 L 450 140 Z" />
-                  {/* Africa */}
-                  <path d="M 460 190 L 570 190 L 600 270 L 560 380 L 500 410 L 450 300 L 440 220 Z" />
-                  {/* Asia */}
-                  <path d="M 580 60 L 850 70 L 890 150 L 830 250 L 730 260 L 670 210 L 590 140 Z" />
-                  {/* Australia & Oceania */}
-                  <path d="M 780 340 L 880 340 L 890 410 L 810 420 L 770 370 Z" />
-                </g>
-
-                {/* Pinpoint Radar Markers for 154 Hubs */}
-                {projectedMarkers.map((marker) => {
-                  const { hub, x, y, isSelected, weather, isDay, hubTimeShort } = marker;
-                  
-                  // Color coding by active telemetry mode
-                  let pinColor = '#06b6d4'; // default cyan
-                  if (telemetryMode === 'clock') {
-                    pinColor = isDay ? '#38bdf8' : '#818cf8';
-                  } else if (telemetryMode === 'weather') {
-                    pinColor = weather.tempC >= 25 ? '#f97316' : weather.tempC >= 15 ? '#eab308' : '#06b6d4';
-                  } else if (telemetryMode === 'currency') {
-                    pinColor = '#10b981';
-                  }
-
-                  return (
-                    <g
-                      key={hub.city}
-                      transform={`translate(${x}, ${y})`}
-                      className="cursor-pointer transition-all duration-150"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleSelectHub(hub);
-                      }}
-                    >
-                      {/* Selected Reticle Target Ping */}
-                      {isSelected && (
-                        <g>
-                          <circle r="14" fill="none" stroke="#22d3ee" strokeWidth="1" strokeDasharray="3 3" className="animate-[spin_4s_linear_infinite]" />
-                          <circle r="9" fill="none" stroke="#06b6d4" strokeWidth="1.5" className="animate-ping" opacity="0.6" />
-                          <circle r="4" fill="#00ffff" />
-                        </g>
-                      )}
-
-                      {/* City Hub Point Node */}
-                      <circle
-                        r={isSelected ? 5 : 3.5}
-                        fill={pinColor}
-                        stroke="#0f172a"
-                        strokeWidth="1.5"
-                        className="hover:scale-150 transition-transform"
-                      />
-
-                      {/* Mode Badge Preview on Pin (Visible on Zoomed Map or Selected) */}
-                      {(scale >= 1.7 || isSelected) && (
-                        <g transform="translate(0, -9)">
-                          <rect
-                            x="-22"
-                            y="-11"
-                            width="44"
-                            height="12"
-                            rx="4"
-                            fill="#020617"
-                            fillOpacity="0.85"
-                            stroke={isSelected ? '#00ffff' : '#334155'}
-                            strokeWidth="0.8"
-                          />
+                <div
+                  className="w-full h-full flex items-center justify-center transition-transform duration-150 ease-out"
+                  style={{
+                    transform: `translate(${pan.x}px, ${pan.y}px) scale(${scale})`,
+                    transformOrigin: 'center center'
+                  }}
+                >
+                  <svg viewBox="0 0 1000 520" className="w-full h-full max-w-[1200px]" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#0e2338" strokeWidth="0.5" strokeDasharray="3 3">
+                      <line x1="0" y1="260" x2="1000" y2="260" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
+                      <line x1="500" y1="0" x2="500" y2="520" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
+                    </g>
+                    {projectedMarkers.map(({ hub, x, y, isSelected, weather, hubTimeShort }) => (
+                      <g
+                        key={`${hub.city}_${hub.iso || ''}`}
+                        transform={`translate(${x}, ${y})`}
+                        className="cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleSelectHub(hub);
+                        }}
+                      >
+                        <circle
+                          r={isSelected ? 6 / Math.sqrt(scale) : 3.5 / Math.sqrt(scale)}
+                          fill={isSelected ? '#00ffff' : '#06b6d4'}
+                          stroke="#0f172a"
+                          strokeWidth={1.2 / Math.sqrt(scale)}
+                        />
+                        {(scale >= 1.8 || isSelected) && (
                           <text
                             x="0"
-                            y="-2.5"
+                            y={-8 / Math.sqrt(scale)}
                             textAnchor="middle"
-                            fill={isSelected ? '#00ffff' : '#cbd5e1'}
-                            fontSize="7.5"
+                            fill={isSelected ? '#00ffff' : '#e2e8f0'}
+                            fontSize={9 / Math.sqrt(scale)}
                             fontFamily="monospace"
                             fontWeight="bold"
                           >
-                            {telemetryMode === 'weather'
-                              ? `${weather.tempC}°`
-                              : telemetryMode === 'currency'
-                              ? hub.flag
-                              : hubTimeShort || hub.city}
+                            {hub.flag} {language === 'tr' && hub.cityTr ? hub.cityTr : hub.city}{' '}
+                            {telemetryMode === 'weather' ? `${weather.tempC}°` : hubTimeShort}
                           </text>
-                        </g>
-                      )}
-                    </g>
-                  );
-                })}
-              </svg>
-            </div>
+                        )}
+                      </g>
+                    ))}
+                  </svg>
+                </div>
+              </div>
+            )}
 
             {/* Map Controls Floating Overlay (Zoom In, Zoom Out, Reset) */}
             <div className="absolute bottom-4 left-4 flex flex-col gap-1.5 z-20">
               <button
                 type="button"
-                onClick={() => setScale((s) => Math.min(s + 0.4, 4))}
-                className="w-8 h-8 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-cyan-400 border border-cyan-500/30 flex items-center justify-center transition-all shadow-md cursor-pointer"
+                onClick={handleZoomIn}
+                className="w-9 h-9 rounded-xl bg-slate-900/95 hover:bg-slate-800 text-cyan-400 border border-cyan-500/40 flex items-center justify-center transition-all shadow-lg cursor-pointer"
                 title={l('Yakınlaştır', 'Zoom In', 'Heranzoomen')}
               >
                 <ZoomIn className="w-4 h-4" />
               </button>
               <button
                 type="button"
-                onClick={() => setScale((s) => Math.max(s - 0.4, 0.8))}
-                className="w-8 h-8 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-cyan-400 border border-cyan-500/30 flex items-center justify-center transition-all shadow-md cursor-pointer"
+                onClick={handleZoomOut}
+                className="w-9 h-9 rounded-xl bg-slate-900/95 hover:bg-slate-800 text-cyan-400 border border-cyan-500/40 flex items-center justify-center transition-all shadow-lg cursor-pointer"
                 title={l('Uzaklaştır', 'Zoom Out', 'Herauszoomen')}
               >
                 <ZoomOut className="w-4 h-4" />
               </button>
               <button
                 type="button"
-                onClick={() => {
-                  setScale(1);
-                  setPan({ x: 0, y: 0 });
-                  setActiveContinent('all');
-                }}
-                className="w-8 h-8 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-400 hover:text-white border border-white/10 flex items-center justify-center transition-all shadow-md cursor-pointer"
-                title={l('Sıfırla', 'Reset View', 'Ansicht zurücksetzen')}
+                onClick={handleResetView}
+                className="w-9 h-9 rounded-xl bg-slate-900/95 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/15 flex items-center justify-center transition-all shadow-lg cursor-pointer"
+                title={l('Tüm Dünyayı Göster', 'Reset World View', 'Ansicht zurücksetzen')}
               >
-                <RotateCcw className="w-3.5 h-3.5" />
+                <RotateCcw className="w-4 h-4" />
               </button>
             </div>
 
             {/* Telemetry Coordinate Tracker Overlay */}
-            <div className="absolute bottom-4 right-4 hidden md:flex items-center gap-3 px-3 py-1.5 rounded-xl bg-slate-950/80 border border-cyan-500/20 text-[10px] font-mono text-cyan-400 shadow-md">
+            <div className="absolute bottom-4 right-4 hidden md:flex items-center gap-3 px-3 py-1.5 rounded-xl bg-slate-950/90 border border-cyan-500/30 text-[10px] font-mono text-cyan-400 shadow-lg z-20">
               <span className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>{selectedHub.city.toUpperCase()}</span>
+                <span>{(selectedHub.cityTr || selectedHub.city).toUpperCase()}</span>
               </span>
               <span className="text-slate-500">|</span>
               <span>LAT: {targetIntel.geo.lat.toFixed(2)}°</span>
               <span>LNG: {targetIntel.geo.lng.toFixed(2)}°</span>
               <span className="text-slate-500">|</span>
-              <span>MAG: {scale.toFixed(1)}x</span>
+              <span>ZOOM: {mapsError ? `${scale.toFixed(1)}x` : `${gZoomLevel}z`}</span>
             </div>
           </div>
 
           {/* ============================================================== */}
           {/* TARGET TELEMETRY HUD DRAWER (RIGHT PANEL)                      */}
           {/* ============================================================== */}
-          <aside className="w-full sm:w-96 flex-shrink-0 bg-slate-950/95 border-l border-cyan-500/20 flex flex-col overflow-y-auto p-4 sm:p-5 space-y-4 shadow-2xl z-20">
-            
-            {/* 1. Target Identity Header */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-cyan-950/40 via-slate-900 to-slate-950 border border-cyan-500/30 shadow-lg">
+          <aside className="w-full lg:w-[400px] flex-shrink-0 bg-slate-950/95 border-t lg:border-t-0 lg:border-l border-cyan-500/20 flex flex-col overflow-y-auto p-4 sm:p-5 space-y-3.5 shadow-2xl z-20 max-h-[48vh] lg:max-h-none">
+            {/* 1. Target Identity Header + Same-Country Tourist Cities Selector */}
+            <div className="p-3.5 rounded-2xl bg-gradient-to-br from-cyan-950/40 via-slate-900 to-slate-950 border border-cyan-500/30 shadow-lg">
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <span className="text-3xl select-none filter drop-shadow">{selectedHub.flag}</span>
                   <div>
                     <h3 className="text-base sm:text-lg font-black text-white leading-tight">
-                      {selectedHub.cityTr || selectedHub.city}
+                      {language === 'tr' && selectedHub.cityTr ? selectedHub.cityTr : selectedHub.city}
                     </h3>
                     <div className="text-xs text-cyan-300 font-medium">
                       {targetIntel.countryName} · <span className="font-mono text-[11px] text-slate-400">{targetIntel.countryCode}</span>
@@ -803,26 +1062,50 @@ export const GlobalRadarModal: React.FC<Props> = ({
                 </span>
               </div>
 
-              {/* Coordinates & Region strip */}
-              <div className="mt-3 pt-2 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
-                <span>📍 {selectedHub.region}</span>
-                <span>{targetIntel.geo.lat > 0 ? `${targetIntel.geo.lat}°N` : `${Math.abs(targetIntel.geo.lat)}°S`}, {targetIntel.geo.lng > 0 ? `${targetIntel.geo.lng}°E` : `${Math.abs(targetIntel.geo.lng)}°W`}</span>
-              </div>
+              {/* Other Popular Cities & Resorts in this Country */}
+              {siblingCountryHubs.length > 1 && (
+                <div className="mt-3 pt-2.5 border-t border-white/10">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center justify-between">
+                    <span>
+                      {targetIntel.countryName} — {l('Popüler Şehirler & Bölgeler', 'Popular Cities & Resorts', 'Beliebte Städte & Regionen')} ({siblingCountryHubs.length})
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap gap-1 max-h-24 overflow-y-auto pr-1">
+                    {siblingCountryHubs.map((cityHub) => {
+                      const active = cityHub.city === selectedHub.city;
+                      const cLabel = language === 'tr' && cityHub.cityTr ? cityHub.cityTr : cityHub.city;
+                      return (
+                        <button
+                          key={`sib_${cityHub.city}`}
+                          type="button"
+                          onClick={() => handleSelectHub(cityHub)}
+                          className={`px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                            active
+                              ? 'bg-cyan-500 text-slate-950 font-black shadow-xs'
+                              : 'bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-white/5'
+                          }`}
+                        >
+                          {cLabel}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* 2. BENTO 1: CANLI SAAT & ZAMAN DİLİMİ (WORLD CLOCK) */}
-            <div className="p-4 rounded-2xl bg-slate-900/80 border border-cyan-500/20 space-y-3">
+            <div className="p-3.5 rounded-2xl bg-slate-900/80 border border-cyan-500/20 space-y-2.5">
               <div className="flex items-center justify-between">
                 <span className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-cyan-400">
                   <Clock className="w-3.5 h-3.5" />
                   {l('Canlı Yerel Saat', 'Live Local Time', 'Lokale Echtzeit')}
                 </span>
                 <span className="px-2 py-0.5 rounded-md bg-cyan-950 text-[10px] font-mono text-cyan-300 font-bold border border-cyan-800">
-                  {selectedHub.tz.split('/')[1] || selectedHub.tz}
+                  {selectedHub.tz.split('/')[1]?.replace('_', ' ') || selectedHub.tz}
                 </span>
               </div>
 
-              {/* Big Glowing Digital Clock + Mini SVG Analog Clock */}
               <div className="flex items-center justify-between bg-slate-950/80 p-3 rounded-xl border border-white/5">
                 <div>
                   <div className="font-mono text-2xl sm:text-3xl font-black tracking-wider text-white drop-shadow-[0_0_10px_rgba(6,182,212,0.5)]">
@@ -836,22 +1119,18 @@ export const GlobalRadarModal: React.FC<Props> = ({
                 </div>
 
                 {/* Working Analog Mini Clock */}
-                <div className="w-14 h-14 rounded-full bg-slate-900 border-2 border-cyan-500/50 relative shadow-inner flex items-center justify-center flex-shrink-0">
-                  {/* Clock Center Pin */}
+                <div className="w-12 h-12 rounded-full bg-slate-900 border-2 border-cyan-500/50 relative shadow-inner flex items-center justify-center flex-shrink-0">
                   <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 z-10" />
-                  {/* Hour Hand */}
                   <div
-                    className="absolute w-0.5 h-4 bg-white rounded-full origin-bottom bottom-1/2 left-[calc(50%-1px)]"
+                    className="absolute w-0.5 h-3.5 bg-white rounded-full origin-bottom bottom-1/2 left-[calc(50%-1px)]"
                     style={{ transform: `rotate(${(targetIntel.localHour % 12) * 30 + targetIntel.localMinute * 0.5}deg)` }}
                   />
-                  {/* Minute Hand */}
                   <div
-                    className="absolute w-0.5 h-5 bg-cyan-300 rounded-full origin-bottom bottom-1/2 left-[calc(50%-1px)]"
+                    className="absolute w-0.5 h-4.5 bg-cyan-300 rounded-full origin-bottom bottom-1/2 left-[calc(50%-1px)]"
                     style={{ transform: `rotate(${targetIntel.localMinute * 6}deg)` }}
                   />
-                  {/* Second Hand */}
                   <div
-                    className="absolute w-px h-6 bg-rose-400 rounded-full origin-bottom bottom-1/2 left-[calc(50%-0.5px)]"
+                    className="absolute w-px h-5 bg-rose-400 rounded-full origin-bottom bottom-1/2 left-[calc(50%-0.5px)]"
                     style={{ transform: `rotate(${targetIntel.localSecond * 6}deg)` }}
                   />
                 </div>
@@ -859,7 +1138,7 @@ export const GlobalRadarModal: React.FC<Props> = ({
             </div>
 
             {/* 3. BENTO 2: CANLI METEOROLOJİ & HAVA DURUMU */}
-            <div className="p-4 rounded-2xl bg-slate-900/80 border border-amber-500/20 space-y-3">
+            <div className="p-3.5 rounded-2xl bg-slate-900/80 border border-amber-500/20 space-y-2.5">
               <div className="flex items-center justify-between">
                 <span className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-amber-400">
                   <CloudSun className="w-3.5 h-3.5" />
@@ -870,7 +1149,6 @@ export const GlobalRadarModal: React.FC<Props> = ({
                 </span>
               </div>
 
-              {/* Weather Stats Display */}
               <div className="flex items-center justify-between bg-slate-950/80 p-3 rounded-xl border border-white/5">
                 <div className="flex items-center gap-3">
                   <span className="text-3xl select-none">{targetIntel.weather.icon}</span>
@@ -899,23 +1177,34 @@ export const GlobalRadarModal: React.FC<Props> = ({
             </div>
 
             {/* 4. BENTO 3: CANLI DÖVİZ VE ÇAPRAZ KURLAR (FX MATRIX) */}
-            <div className="p-4 rounded-2xl bg-slate-900/80 border border-emerald-500/20 space-y-3">
+            <div className="p-3.5 rounded-2xl bg-slate-900/80 border border-emerald-500/20 space-y-2.5">
               <div className="flex items-center justify-between">
                 <span className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-emerald-400">
                   <DollarSign className="w-3.5 h-3.5" />
                   {l('Döviz & Çapraz Kurlar', 'FX & Cross Rates', 'Wechselkurse')}
                 </span>
-                <span className="px-2 py-0.5 rounded-md bg-emerald-950 text-[10px] font-mono text-emerald-300 font-bold border border-emerald-800">
-                  {targetIntel.destCurrency} ({targetIntel.geography.currencySymbol})
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={handleManualFxRefresh}
+                    className="p-1 rounded-md bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-700/50 cursor-pointer"
+                    title={l('Canlı Kurları Güncelle', 'Refresh Live Rates', 'Kurse aktualisieren')}
+                  >
+                    <RefreshCw className={`w-3 h-3 ${isRefreshingFx ? 'animate-spin' : ''}`} />
+                  </button>
+                  <span className="px-2 py-0.5 rounded-md bg-emerald-950 text-[10px] font-mono text-emerald-300 font-bold border border-emerald-800">
+                    {targetIntel.destCurrency} ({targetIntel.geography.currencySymbol})
+                  </span>
+                </div>
+              </div>
+
+              <div className="text-[11px] text-slate-300 font-medium flex items-center justify-between">
+                <span>💰 {targetIntel.geography.currencyName}</span>
+                <span className="text-[10px] font-mono text-emerald-400">
+                  {isFxLive ? '● Canlı Piyasa Kuru' : '● Güncel Kur'}
                 </span>
               </div>
 
-              {/* Currency Name Subtitle */}
-              <div className="text-[11px] text-slate-300 font-medium">
-                💰 {targetIntel.geography.currencyName}
-              </div>
-
-              {/* Live Cross Rates Grid */}
               <div className="grid grid-cols-2 gap-2 text-[11px] font-mono">
                 <div className="p-2 rounded-xl bg-slate-950/80 border border-white/5">
                   <div className="text-[9px] text-slate-400">1 USD (Dolar)</div>
@@ -950,7 +1239,7 @@ export const GlobalRadarModal: React.FC<Props> = ({
               <div className="p-2.5 rounded-xl bg-slate-950/90 border border-emerald-500/20 space-y-2">
                 <div className="flex items-center justify-between text-[10px] font-mono text-slate-400">
                   <span>{l('Canlı Hızlı Çevirici:', 'Instant Calculator:', 'Schnellrechner:')}</span>
-                  <span className="text-emerald-400 font-bold">2026 Live Baseline</span>
+                  <span className="text-emerald-400 font-bold">{isFxLive ? 'Canlı Kur Aktif' : 'Güncel Kur'}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <input

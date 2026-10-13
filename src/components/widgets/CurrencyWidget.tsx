@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { ArrowRightLeft, DollarSign, Globe } from 'lucide-react';
+import { ArrowRightLeft, DollarSign, Globe, RefreshCw } from 'lucide-react';
 import { POPULAR_CURRENCIES } from '../../data/worldHubs';
-import { convertCurrency, formatCurrencyValue, getCrossRate } from '../../data/currencyRates';
+import { convertCurrency, formatCurrencyValue, getCrossRate, useLiveCurrencyRates } from '../../data/currencyRates';
 import { useI18n } from '../../data/i18n';
 
 interface Props {
@@ -11,6 +11,8 @@ interface Props {
 
 export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar }) => {
   const { l } = useI18n();
+  const { isLive, refresh } = useLiveCurrencyRates();
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [amount, setAmount] = useState<number>(100);
   const [fromCode, setFromCode] = useState<string>('EUR');
   const [toCode, setToCode] = useState<string>('TRY');
@@ -19,6 +21,12 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
     const prev = fromCode;
     setFromCode(toCode);
     setToCode(prev);
+  };
+
+  const handleManualRefresh = async () => {
+    setIsRefreshing(true);
+    await refresh();
+    setTimeout(() => setIsRefreshing(false), 350);
   };
 
   const convertedValue = convertCurrency(amount, fromCode, toCode);
@@ -34,11 +42,17 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <DollarSign className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-slate-900 dark:text-white leading-tight">
-              {l('Hızlı Döviz Çevirici', 'Fast FX Converter', 'Währungsrechner', 'Conversor de Moneda', 'Конвертер валют')}
+            <h4 className="text-xs font-black text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
+              <span>{l('Hızlı Döviz Çevirici', 'Fast FX Converter', 'Währungsrechner', 'Conversor de Moneda', 'Конвертер валют')}</span>
+              <span
+                className={`inline-block w-1.5 h-1.5 rounded-full ${isLive ? 'bg-emerald-500 animate-pulse' : 'bg-amber-400'}`}
+                title={isLive ? l('Canlı Piyasa Kurları Aktif', 'Live Market Rates Active', 'Live-Kurse aktiv') : l('Baz Kur', 'Baseline Rate', 'Basiskurs')}
+              />
             </h4>
             <span className="text-[10px] text-slate-500 dark:text-slate-400">
-              {l('2026 Canlı Seyahat Kurları', '2026 Live Travel Rates', 'Live-Wechselkurse', 'Tipos de cambio', 'Курсы валют')}
+              {isLive
+                ? l('Canlı Güncel Piyasa Kurları', 'Live Market Exchange Rates', 'Aktuelle Live-Wechselkurse', 'Tipos de cambio en vivo', 'Актуальные курсы валют')
+                : l('2026 Canlı Seyahat Kurları', '2026 Live Travel Rates', 'Live-Wechselkurse', 'Tipos de cambio', 'Курсы валют')}
             </span>
           </div>
         </div>
@@ -56,9 +70,15 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             </button>
           )}
 
-          <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 font-bold px-2 py-0.5 rounded-full border border-teal-500/20">
-            1 {fromCode} = {crossRate.toFixed(2)} {toCode}
-          </span>
+          <button
+            type="button"
+            onClick={handleManualRefresh}
+            className="font-mono text-[10px] bg-teal-500/10 hover:bg-teal-500/20 text-teal-600 dark:text-teal-400 font-bold px-2 py-0.5 rounded-full border border-teal-500/20 flex items-center gap-1 cursor-pointer transition-colors"
+            title={l('Kurları Şimdi Güncelle', 'Refresh Live Rates', 'Kurse aktualisieren')}
+          >
+            <span>1 {fromCode} = {crossRate.toFixed(2)} {toCode}</span>
+            <RefreshCw className={`w-2.5 h-2.5 ${isRefreshing ? 'animate-spin' : ''}`} />
+          </button>
         </div>
       </div>
 

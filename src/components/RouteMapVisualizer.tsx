@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
+import { loadGoogleMaps, DARK_MAP_STYLES } from '../utils/googleMapsLoader';
 import {
   CountryItem,
   getCountryName,
@@ -38,76 +38,6 @@ import {
   Sliders
 } from 'lucide-react';
 
-const GOOGLE_MAPS_API_KEY =
-  (import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string) ||
-  'AIzaSyDHBETMPsuLR6sqrrZ1a888LWSHXKNz6kg';
-
-// Google Maps Night / Tactical Dark Palette
-const DARK_MAP_STYLES: google.maps.MapTypeStyle[] = [
-  { elementType: 'geometry', stylers: [{ color: '#161e2e' }] },
-  { elementType: 'labels.text.stroke', stylers: [{ color: '#0b0f17' }] },
-  { elementType: 'labels.text.fill', stylers: [{ color: '#94a3b8' }] },
-  {
-    featureType: 'administrative',
-    elementType: 'geometry',
-    stylers: [{ visibility: 'off' }]
-  },
-  {
-    featureType: 'administrative.country',
-    elementType: 'geometry.stroke',
-    stylers: [{ color: '#334155' }, { weight: 1.2 }]
-  },
-  {
-    featureType: 'administrative.locality',
-    elementType: 'labels.text.fill',
-    stylers: [{ color: '#cbd5e1' }]
-  },
-  {
-    featureType: 'poi',
-    elementType: 'labels.text.fill',
-    stylers: [{ color: '#64748b' }]
-  },
-  {
-    featureType: 'poi.park',
-    elementType: 'geometry',
-    stylers: [{ color: '#0e2b26' }]
-  },
-  {
-    featureType: 'road',
-    elementType: 'geometry',
-    stylers: [{ color: '#273449' }]
-  },
-  {
-    featureType: 'road',
-    elementType: 'geometry.stroke',
-    stylers: [{ color: '#182234' }]
-  },
-  {
-    featureType: 'road',
-    elementType: 'labels.text.fill',
-    stylers: [{ color: '#94a3b8' }]
-  },
-  {
-    featureType: 'road.highway',
-    elementType: 'geometry',
-    stylers: [{ color: '#0d9488' }]
-  },
-  {
-    featureType: 'transit',
-    elementType: 'geometry',
-    stylers: [{ color: '#1f293d' }]
-  },
-  {
-    featureType: 'water',
-    elementType: 'geometry',
-    stylers: [{ color: '#090d16' }]
-  },
-  {
-    featureType: 'water',
-    elementType: 'labels.text.fill',
-    stylers: [{ color: '#475569' }]
-  }
-];
 
 interface RouteMapVisualizerProps {
   stops: RouteStop[];
@@ -212,33 +142,19 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
 
   // Initialize Google Maps JavaScript API
   useEffect(() => {
-    if (!GOOGLE_MAPS_API_KEY) {
-      setMapsError('Google Maps API anahtarı yapılandırılmamış.');
-      return;
-    }
-
     let isMounted = true;
 
-    try {
-      setOptions({
-        key: GOOGLE_MAPS_API_KEY,
-        v: 'weekly'
+    loadGoogleMaps()
+      .then(() => {
+        if (!isMounted) return;
+        setMapsLoaded(true);
+        setMapsError(null);
+      })
+      .catch((err: unknown) => {
+        if (!isMounted) return;
+        console.warn('Google Maps JS API yüklenemedi:', err);
+        setMapsError('Google Maps yüklenemedi. Şematik radar harita aktif.');
       });
-
-      Promise.all([importLibrary('maps'), importLibrary('geometry')])
-        .then(() => {
-          if (!isMounted) return;
-          setMapsLoaded(true);
-          setMapsError(null);
-        })
-        .catch((err: unknown) => {
-          if (!isMounted) return;
-          console.warn('Google Maps JS API yüklenemedi:', err);
-          setMapsError('Google Maps yüklenemedi. Şematik radar harita aktif.');
-        });
-    } catch (err: unknown) {
-      console.warn('Google Maps init error:', err);
-    }
 
     return () => {
       isMounted = false;

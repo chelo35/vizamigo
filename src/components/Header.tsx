@@ -16,6 +16,7 @@ import {
   Calendar,
   ShieldAlert
 } from 'lucide-react';
+import { QuickToolsStrip } from './QuickToolsStrip';
 import { getFlag, getCountryName } from '../data/passportData';
 import { useI18n, SUPPORTED_LANGUAGES } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
@@ -34,6 +35,11 @@ interface HeaderProps {
   onToggleMobileDrawer?: () => void;
   activeTab?: TabKey;
   onSelectTab?: (tab: TabKey) => void;
+  // New quick travel tool callbacks
+  onOpenPackingList?: () => void;
+  onOpenTippingCalc?: () => void;
+  onOpenTimezoneOverlap?: () => void;
+  onOpenGlobalRadar?: (mode?: 'all' | 'clock' | 'weather' | 'currency', city?: string) => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -48,7 +54,11 @@ export const Header: React.FC<HeaderProps> = ({
   onSearchChange,
   onToggleMobileDrawer: _onToggleMobileDrawer,
   activeTab = 'explore',
-  onSelectTab
+  onSelectTab,
+  onOpenPackingList,
+  onOpenTippingCalc,
+  onOpenTimezoneOverlap,
+  onOpenGlobalRadar
 }) => {
   const { language, setLanguage, l, t } = useI18n();
   const { user, isAuthenticated, logout, openAuthModal } = useAuth();
@@ -314,6 +324,14 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </div>
       </nav>
+
+      {/* Always-visible quick tools strip (desktop + mobile) */}
+      <QuickToolsStrip
+        onOpenPackingList={onOpenPackingList}
+        onOpenTippingCalc={onOpenTippingCalc}
+        onOpenTimezoneOverlap={onOpenTimezoneOverlap}
+        onOpenGlobalRadar={onOpenGlobalRadar}
+      />
     </header>
   );
 };

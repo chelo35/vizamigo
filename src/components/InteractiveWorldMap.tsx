@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
+import { loadGoogleMaps } from '../utils/googleMapsLoader';
 import {
   CountryItem,
   getCountryName,
@@ -41,10 +41,6 @@ import {
   Sliders
 } from 'lucide-react';
 import { CountryDossierModal } from './CountryDossierModal';
-
-const GOOGLE_MAPS_API_KEY =
-  (import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string) ||
-  'AIzaSyDHBETMPsuLR6sqrrZ1a888LWSHXKNz6kg';
 
 // Google Maps Night / Tactical Dark Palette
 const DARK_MAP_STYLES: google.maps.MapTypeStyle[] = [
@@ -296,25 +292,16 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
   // Initialize Google Maps JavaScript API
   useEffect(() => {
     let isMounted = true;
-    try {
-      setOptions({
-        key: GOOGLE_MAPS_API_KEY,
-        v: 'weekly'
+    loadGoogleMaps()
+      .then(() => {
+        if (!isMounted) return;
+        setMapsLoaded(true);
+      })
+      .catch((err: unknown) => {
+        if (!isMounted) return;
+        console.warn('Google Maps JS API load error:', err);
+        setMapsError(true);
       });
-      Promise.all([importLibrary('maps'), importLibrary('geometry')])
-        .then(() => {
-          if (!isMounted) return;
-          setMapsLoaded(true);
-        })
-        .catch((err: unknown) => {
-          if (!isMounted) return;
-          console.warn('Google Maps JS API load error:', err);
-          setMapsError(true);
-        });
-    } catch (err: unknown) {
-      console.warn('Google Maps options error:', err);
-      setMapsError(true);
-    }
     return () => {
       isMounted = false;
     };

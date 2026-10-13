@@ -98,6 +98,12 @@ function AppContent() {
   const [radarInitialMode, setRadarInitialMode] = useState<'all' | 'clock' | 'weather' | 'currency'>('all');
   const [radarTargetCity, setRadarTargetCity] = useState<string | undefined>(undefined);
 
+  const openRadar = (mode: 'all' | 'clock' | 'weather' | 'currency' = 'all', city?: string) => {
+    setRadarInitialMode(mode);
+    setRadarTargetCity(city);
+    setIsRadarOpen(true);
+  };
+
   // Theme
   const [isDark, setIsDark] = useState<boolean>(() => {
     try {
@@ -169,6 +175,10 @@ function AppContent() {
         onOpenAuditConsole={() => setIsAuditModalOpen(true)}
         isMobileDrawerOpen={isMobileDrawerOpen}
         onToggleMobileDrawer={() => setIsMobileDrawerOpen(!isMobileDrawerOpen)}
+        onOpenPackingList={() => setIsPackingListOpen(true)}
+        onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+        onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+        onOpenGlobalRadar={openRadar}
       />
 
       {/* ========================================================
@@ -197,6 +207,10 @@ function AppContent() {
           onToggleMobileDrawer={() => setIsMobileDrawerOpen(!isMobileDrawerOpen)}
           activeTab={activeTab}
           onSelectTab={handleSelectTab}
+          onOpenPackingList={() => setIsPackingListOpen(true)}
+          onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+          onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+          onOpenGlobalRadar={openRadar}
         />
 
         {/* Content Body Centered with Full Breathing Space */}
@@ -256,11 +270,7 @@ function AppContent() {
                   onOpenPackingList={() => setIsPackingListOpen(true)}
                   onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
                   onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-                  onOpenGlobalRadar={(mode = 'all', city) => {
-                    setRadarInitialMode(mode);
-                    setRadarTargetCity(city);
-                    setIsRadarOpen(true);
-                  }}
+                  onOpenGlobalRadar={openRadar}
                 />
               ) : (
                 <WhereCanIGoTab currentPassport={currentPassport} />
@@ -432,11 +442,7 @@ function AppContent() {
           onOpenPackingList={() => setIsPackingListOpen(true)}
           onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
           onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-          onOpenGlobalRadar={() => {
-            setRadarInitialMode('all');
-            setRadarTargetCity(undefined);
-            setIsRadarOpen(true);
-          }}
+          onOpenGlobalRadar={() => openRadar('all')}
         />
       </main>
       </div>

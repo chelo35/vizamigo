@@ -13,10 +13,11 @@ import {
 } from 'lucide-react';
 import { useI18n } from '../data/i18n';
 import { getFlag, getCountryName } from '../data/passportData';
+import { useQuickTools, QuickToolHandlers } from './QuickToolsStrip';
 
 export type TabKey = 'explore' | 'plan' | 'track' | 'nomad' | 'profile' | 'consular';
 
-interface NavigationProps {
+interface NavigationProps extends QuickToolHandlers {
   activeTab: TabKey;
   onSelectTab: (tab: TabKey) => void;
   currentPassport: string;
@@ -33,9 +34,14 @@ export const Navigation: React.FC<NavigationProps> = ({
   onOpenPassportSelector,
   onOpenAuditConsole,
   isMobileDrawerOpen = false,
-  onToggleMobileDrawer
+  onToggleMobileDrawer,
+  onOpenPackingList,
+  onOpenTippingCalc,
+  onOpenTimezoneOverlap,
+  onOpenGlobalRadar
 }) => {
   const { language, l, t } = useI18n();
+  const quickTools = useQuickTools({ onOpenPackingList, onOpenTippingCalc, onOpenTimezoneOverlap, onOpenGlobalRadar });
 
   const navItems = [
     {
@@ -99,7 +105,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           />
 
           {/* Drawer Content */}
-          <div className="relative w-72 max-w-[85vw] h-full sidebar-glass p-6 flex flex-col justify-between shadow-2xl z-10 animate-in slide-in-from-left duration-200">
+          <div className="relative w-72 max-w-[85vw] h-full overflow-y-auto sidebar-glass p-6 flex flex-col justify-between gap-6 shadow-2xl z-10 animate-in slide-in-from-left duration-200">
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/[0.08]">
                 <button
@@ -181,6 +187,34 @@ export const Navigation: React.FC<NavigationProps> = ({
                   );
                 })}
               </nav>
+
+              {/* Mobile Drawer Quick Tools */}
+              <div>
+                <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 px-1">
+                  {l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструменты')}
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {quickTools.map((tool) => {
+                    const Icon = tool.icon;
+                    return (
+                      <button
+                        key={tool.id}
+                        type="button"
+                        onClick={() => {
+                          tool.onClick?.();
+                          onToggleMobileDrawer?.();
+                        }}
+                        className="flex items-center gap-2 p-2 rounded-xl text-[11px] font-bold text-slate-700 dark:text-slate-200 bg-slate-900/[0.03] dark:bg-white/[0.04] hover:bg-teal-500/10 transition-colors cursor-pointer"
+                      >
+                        <span className={`w-6 h-6 rounded-full bg-gradient-to-br ${tool.accent} text-white flex items-center justify-center shrink-0`}>
+                          <Icon className="w-3.5 h-3.5" />
+                        </span>
+                        <span className="truncate">{tool.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
 
             <div className="pt-4 border-t border-slate-200/70 dark:border-white/[0.08] text-center">
