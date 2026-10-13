@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vizamigo/country.schema.json",
+  "title": "Vizamigo ülke kaydı",
+  "description": "Her olgusal alan kaynaklı ve tarihli olmalıdır. Kaynak yoksa value null, status not_found olur.",
+  "type": "object",
+  "required": ["iso2", "names", "emergency", "advisory", "media", "last_reviewed"],
+  "additionalProperties": false,
+  "properties": {
+    "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "names": { "$ref": "#/$defs/i18nText" },
+    "capital": { "$ref": "#/$defs/sourced" },
+    "currency": { "$ref": "#/$defs/sourced" },
+    "timezone": { "$ref": "#/$defs/sourced" },
+    "electricity": {
+      "type": "object",
+      "properties": {
+        "voltage": { "$ref": "#/$defs/sourced" },
+        "frequency_hz": { "$ref": "#/$defs/sourced" },
+        "plug_types": { "$ref": "#/$defs/sourced" }
+      }
+    },
+    "emergency": {
+      "type": "object",
+      "properties": {
+        "police": { "$ref": "#/$defs/sourced" },
+        "ambulance": { "$ref": "#/$defs/sourced" },
+        "fire": { "$ref": "#/$defs/sourced" },
+        "general": { "$ref": "#/$defs/sourced" },
+        "tourist_police": { "$ref": "#/$defs/sourced" }
+      }
+    },
+    "advisory": {
+      "type": "object",
+      "required": ["agencies"],
+      "properties": {
+        "agencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["agency", "level", "source", "retrieved_at"],
+            "properties": {
+              "agency": { "enum": ["US_STATE", "UK_FCDO", "DE_AA", "CA_GAC", "AU_DFAT", "TR_MFA"] },
+              "level": { "type": ["integer", "string", "null"] },
+              "source": { "$ref": "#/$defs/source" },
+              "retrieved_at": { "type": "string", "format": "date" }
+            }
+          }
+        },
+        "combined_level": { "type": ["integer", "null"], "minimum": 1, "maximum": 4 },
+        "agencies_agree": { "type": ["boolean", "null"] },
+        "advisory_headline": { "$ref": "#/$defs/i18nText" },
+        "regional_warnings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["area", "level", "reason", "source"],
+            "properties": {
+              "area": { "type": "string" },
+              "level": { "type": "integer", "minimum": 1, "maximum": 4 },
+              "reason": { "enum": ["crime", "conflict", "terrorism", "natural_hazard", "health", "unrest", "transport"] },
+              "source": { "$ref": "#/$defs/source" }
+            }
+          }
+        },
+        "risk_categories": {
+          "type": "object",
+          "additionalProperties": { "enum": ["low", "medium", "high", null] }
+        }
+      }
+    },
+    "connectivity": {
+      "type": "object",
+      "properties": {
+        "mobile_down_mbps": { "$ref": "#/$defs/sourced" },
+        "fixed_down_mbps": { "$ref": "#/$defs/sourced" },
+        "esim_sim_notes": { "$ref": "#/$defs/sourced" }
+      }
+    },
+    "local_apps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "category", "available_in_country", "source"],
+        "properties": {
+          "name": { "type": "string" },
+          "category": { "enum": ["taxi", "food", "transport", "payments", "maps", "other"] },
+          "available_in_country": { "type": "boolean" },
+          "source": { "$ref": "#/$defs/source" }
+        }
+      }
+    },
+    "culture": {
+      "type": "object",
+      "properties": {
+        "religion": { "$ref": "#/$defs/sourced" },
+        "festivals": { "$ref": "#/$defs/sourced" },
+        "legal_cultural_warnings": { "$ref": "#/$defs/sourced" },
+        "tipping": { "$ref": "#/$defs/sourced" }
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "sources"],
+        "properties": {
+          "name": { "$ref": "#/$defs/i18nText" },
+          "type": { "enum": ["landmark", "nature", "city", "heritage", "food", "activity"] },
+          "sources": { "type": "array", "items": { "$ref": "#/$defs/source" }, "minItems": 1 }
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "required": ["images"],
+      "properties": {
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["role", "landmark", "license", "author", "source_url", "attribution_text", "focal_point", "alt"],
+            "properties": {
+              "role": { "enum": ["card", "hero", "og"] },
+              "landmark": { "type": "string" },
+              "license": { "enum": ["CC0", "CC-BY", "CC-BY-SA", "Unsplash", "Pexels", "permission"] },
+              "author": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri" },
+              "attribution_text": { "type": "string" },
+              "focal_point": { "type": "object", "properties": { "x": { "type": "number" }, "y": { "type": "number" } } },
+              "alt": { "$ref": "#/$defs/i18nText" },
+              "recognizability_checked": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "slug": { "$ref": "#/$defs/i18nText" },
+        "title": { "$ref": "#/$defs/i18nText" },
+        "meta_description": { "$ref": "#/$defs/i18nText" },
+        "faq": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "last_reviewed": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "i18nText": {
+      "type": "object",
+      "description": "Beş dil: tr, en, de, ru, es. Eksik dil varsa en'e düşülür ve raporlanır.",
+      "properties": {
+        "tr": { "type": "string" },
+        "en": { "type": "string" },
+        "de": { "type": "string" },
+        "ru": { "type": "string" },
+        "es": { "type": "string" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["url", "tier", "title"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "tier": { "enum": [1, 2, 3] },
+        "title": { "type": "string" }
+      }
+    },
+    "sourced": {
+      "type": "object",
+      "required": ["value", "status"],
+      "properties": {
+        "value": {},
+        "status": { "enum": ["verified", "conflict", "pending", "not_found"] },
+        "confidence": { "enum": ["high", "medium", "low", null] },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+        "evidence_quote": { "type": ["string", "null"], "maxLength": 120 },
+        "retrieved_at": { "type": ["string", "null"], "format": "date" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "verified" } } },
+          "then": { "required": ["sources", "evidence_quote", "retrieved_at", "confidence"], "properties": { "sources": { "minItems": 1 } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "not_found" } } },
+          "then": { "properties": { "value": { "const": null } } }
+        }
+      ]
+    }
+  }
+}

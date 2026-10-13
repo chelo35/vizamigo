@@ -1378,17 +1378,17 @@ export const CURATED_ITINERARIES: Record<string, CuratedItineraryDef> = {
         },
         activities: {
           tr: [
-            'Sürat teknesiyle Maya Bay’e gidip kireçtaşı kayalıklarıyla çevrili zümrüt lagünde yüzün.',
+            'Sürat teknesiyle Maya Bay’e gidip kireçtaşı kayalıklarıyla çevrili ikonik koyu fotoğraflayın (Mercan koruma kuralı uyarınca Maya Bay\'de yüzmek yasaktır, yüzme komşu Pileh Lagünü\'nde yapılır).',
             'Pileh Lagünü’nde tekneden berrak turkuaz sulara atlayın ve mercan resiflerinde şnorkelle rengarenk balıkları izleyin.',
             'Phuket Old Town’un rengarenk sokaklarında yürüyüp tarihi Çin-Portekiz evlerinde kahve için.'
           ],
           en: [
-            'Take an island speedboat tour into Maya Bay’s sheer limestone amphitheater.',
+            'Take an island speedboat tour into Maya Bay’s sheer limestone amphitheater (swimming inside Maya Bay is prohibited for coral & shark protection; swimming is done at Pileh Lagoon).',
             'Jump into the emerald waters of Pileh Lagoon and snorkel among clownfish.',
             'Wander pastel heritage shophouses and hip cafes in Phuket Old Town.'
           ],
           de: [
-            'Bootstour zur berühmten Maya Bay.',
+            'Bootstour zur berühmten Maya Bay (Baden in Maya Bay zum Korallenschutz verboten; Badestopp in der Pileh-Lagune).',
             'Schnorcheln in der smaragdgrünen Pileh-Lagune.',
             'Spaziergang durch die bunte Altstadt von Phuket.'
           ]
@@ -1400,16 +1400,19 @@ export const CURATED_ITINERARIES: Record<string, CuratedItineraryDef> = {
         },
         criticalTips: {
           tr: [
+            'Maya Bay\'de mercan resifleri ve resif köpekbalıklarını korumak için denize girmek/yüzmek kesinlikle yasaktır (sadece ayak bileği seviyesine kadar izin verilir); yüzme Pileh Lagünü\'nde yapılır.',
             'Pattaya ve Phuket sahillerinde Jet-ski kiralamayın (çizik ve sahte hasar şantajı çok yaygındır).',
             'Sürat motoru turlarında deniz tutmasına karşı yanınıza hareket hapı (dramamine) alın.',
             'Plajlarda kırmızı bayrak çekiliyse güçlü dip akıntıları (rip current) nedeniyle kesinlikle denize girmeyin.'
           ],
           en: [
+            'Swimming in Maya Bay is strictly prohibited to protect regenerating coral reefs and blacktip reef sharks (ankle-deep wading only); swimming takes place in Pileh Lagoon.',
             'Avoid renting jet-skis on tourist beaches due to notorious extortion scams regarding pre-existing scratches.',
             'Take seasickness medication before morning speedboat island crossings.',
             'Never swim when red flags are flying on west coast beaches due to hazardous rip currents.'
           ],
           de: [
+            'Baden in Maya Bay ist zum Schutz der Korallen und Riffhaie strengstens verboten (nur knöcheltiefes Waten); Schwimmen findet in der Pileh-Lagune statt.',
             'Keine Jetskis an Stränden mieten (Häufige Betrugsfälle mit angeblichen Schäden).',
             'Tabletten gegen Seekrankheit für Speedboot-Fahrten einpacken.',
             'Bei roter Flagge am Strand wegen starker Strömungen niemals ins Wasser gehen.'

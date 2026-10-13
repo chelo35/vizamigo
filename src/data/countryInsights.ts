@@ -872,9 +872,17 @@ const REAL_SAFETY_SCORES: Record<string, { score: number; level: { tr: string; e
   MX: { score: 46, level: { tr: 'Bölgesel Risk (Turist Bölgesi 65)', en: 'Caution Advised', de: 'Erhöhte Vorsicht' }, badgeColor: 'bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-950/40 dark:text-orange-300 dark:border-orange-900/60' },
   BR: { score: 45, level: { tr: 'Hassas (Gece & Favela Riski)', en: 'Caution Advised', de: 'Erhöhte Vorsicht' }, badgeColor: 'bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-950/40 dark:text-orange-300 dark:border-orange-900/60' },
 
-  // <40 (Yüksek Risk)
+  // <40 (Yüksek Risk & Resmi Seyahat Uyarıları / Kırmızı Bölgeler)
   ZA: { score: 38, level: { tr: 'Yüksek Risk (Sıkı Önlem)', en: 'High Risk (Strict vigilance)', de: 'Hohes Risiko' }, badgeColor: 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60' },
-  VE: { score: 32, level: { tr: 'Çok Yüksek Risk', en: 'Severe Risk', de: 'Sehr hohes Risiko' }, badgeColor: 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60' },
+  IR: { score: 30, level: { tr: 'Yüksek Risk / Zorunlu Olmadıkça Seyahat Önerilmez', en: 'Reconsider Travel / High Risk', de: 'Hohes Risiko / Reisewarnung' }, badgeColor: 'bg-rose-100 text-rose-800 border-rose-300 dark:bg-rose-950/60 dark:text-rose-200 dark:border-rose-800' },
+  VE: { score: 28, level: { tr: 'Çok Yüksek Risk (Seyahat Önerilmez)', en: 'Severe Risk / Do Not Travel', de: 'Sehr hohes Risiko' }, badgeColor: 'bg-rose-100 text-rose-800 border-rose-300 dark:bg-rose-950/60 dark:text-rose-200 dark:border-rose-800' },
+  UA: { score: 18, level: { tr: 'Seyahat Uyarısı: Aktif Çatışma / Kırmızı Bölge', en: 'Do Not Travel: Active Conflict / War Zone', de: 'Reisewarnung: Aktives Kriegsgebiet' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
+  YE: { score: 12, level: { tr: 'Seyahat Uyarısı: Aşırı Risk / Gitmeyiniz', en: 'Do Not Travel: Extreme Conflict Zone', de: 'Reisewarnung: Extremes Risiko' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
+  SY: { score: 10, level: { tr: 'Seyahat Uyarısı: Aktif Savaş / Gitmeyiniz', en: 'Do Not Travel: Active War Zone', de: 'Reisewarnung: Nicht einreisen' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
+  AF: { score: 10, level: { tr: 'Seyahat Uyarısı: Aşırı Risk / Gitmeyiniz', en: 'Do Not Travel: Extreme Risk', de: 'Reisewarnung: Nicht einreisen' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
+  SD: { score: 12, level: { tr: 'Seyahat Uyarısı: Aktif Çatışma / Gitmeyiniz', en: 'Do Not Travel: Active Conflict', de: 'Reisewarnung: Nicht einreisen' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
+  SO: { score: 10, level: { tr: 'Seyahat Uyarısı: Aşırı Risk / Gitmeyiniz', en: 'Do Not Travel: Extreme Risk', de: 'Reisewarnung: Nicht einreisen' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
+  LY: { score: 15, level: { tr: 'Seyahat Uyarısı: Yüksek Çatışma Riski', en: 'Do Not Travel: High Conflict Risk', de: 'Reisewarnung: Hohes Risiko' }, badgeColor: 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200' },
 };
 
 // Gerçek İnternet Hızları (Ookla Speedtest Global Index 2026)
@@ -1817,7 +1825,7 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
   // 3. Doğrulanmış yerel araç çağırma (ride-hailing) uygulamaları
   const popularRideApps = REAL_RIDE_APPS[code] || (
     'TH VN MY SG ID PH KH LA'.split(' ').includes(code)
-      ? ['Grab', 'Gojek', 'InDrive']
+      ? (code === 'TH' ? ['Grab', 'Bolt', 'LINE MAN', 'InDrive'] : ['Grab', 'Gojek', 'InDrive'])
       : 'JP KR CN HK TW'.split(' ').includes(code)
       ? ['Kakao T', 'GO Taxi', 'DiDi', 'Uber']
       : 'AE SA QA KW BH OM JO EG MA'.split(' ').includes(code)
@@ -1841,13 +1849,15 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
     : 'NL PL DE ES RO ME BA RS VN GR AL IT'.split(' ').includes(code) ? 74
     : 'GB TH TR MY ID FR MA CL'.split(' ').includes(code) ? 68
     : 'EG US AR PH IN'.split(' ').includes(code) ? 56
-    : 'CO MX BR'.split(' ').includes(code) ? 46
-    : 'ZA VE'.split(' ').includes(code) ? 35
-    : 70
+    : 'UA YE SY AF SD SO LY IR VE'.split(' ').includes(code) ? 15
+    : 'CO MX BR ZA'.split(' ').includes(code) ? 46
+    : 55 // Varsayılan: Temkinli / Bölgesel Teyit Önerilir (Asla körü körüne 'Güvenli' değil)
   ));
 
   const safetyLevelText =
-    safetyScore >= 85
+    safetyScore < 25
+      ? (isEs ? 'Zona de Conflicto (No Viajar)' : isRu ? 'Зона конфликта (Не въезжать)' : isDe ? 'Kriegsgebiet (Reisewarnung)' : isEn ? 'Do Not Travel (Conflict Zone)' : 'Seyahat Uyarısı (Kırmızı Bölge)')
+      : safetyScore >= 85
       ? (isEs ? 'Excepcionalmente Seguro' : isRu ? 'Исключительно Безопасно' : isDe ? 'Außergewöhnlich sicher' : isEn ? 'Exceptional Safety' : 'Olağanüstü Güvenli')
       : safetyScore >= 75
       ? (isEs ? 'Muy Seguro' : isRu ? 'Очень Безопасно' : isDe ? 'Sehr sicher' : isEn ? 'Very Safe' : 'Çok Güvenli')
@@ -1858,7 +1868,9 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       : (isEs ? 'Precaución Aconsejada' : isRu ? 'Требуется Осторожность' : isDe ? 'Erhöhte Vorsicht' : isEn ? 'Caution Advised' : 'Hassas / Tedbir Gerekir');
 
   const safetyBadgeColor =
-    safetyScore >= 75
+    safetyScore < 25
+      ? 'bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200'
+      : safetyScore >= 75
       ? 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60'
       : safetyScore >= 65
       ? 'bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60'
@@ -1867,7 +1879,17 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       : 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60';
 
   const crimeRateSummary =
-    safetyScore >= 85
+    safetyScore < 25
+      ? (isEs
+          ? 'Zona de conflicto activo o alto riesgo bélico. Todos los ministerios de exteriores desaconsejan cualquier viaje.'
+          : isRu
+          ? 'Зона активного конфликта или боевых действий. МИД настоятельно рекомендует воздержаться от любых поездок.'
+          : isDe
+          ? 'Aktives Kriegs- oder Krisengebiet. Es gilt eine offizielle Reisewarnung der Außenministerien; von allen Reisen wird dringend abgeraten.'
+          : isEn
+          ? 'Active war or high-risk conflict zone. Official foreign ministry travel advisories advise against all travel.'
+          : 'Aktif savaş veya yüksek çatışma bölgesi. Resmi Dışişleri Bakanlığı seyahat uyarıları kapsamında bu bölgeye seyahat edilmesi kesinlikle önerilmez.')
+      : safetyScore >= 85
       ? (isEs
           ? 'Uno de los países más seguros del mundo. El delito violento es casi inexistente; excelente para viajeros en solitario y tranquilidad nocturna.'
           : isRu

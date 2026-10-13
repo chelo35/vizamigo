@@ -180,6 +180,58 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
     }
   },
 
+  // Avusturya (BMEIA)
+  AT: {
+    passportCode: 'AT',
+    countryName: { tr: 'Avusturya', en: 'Austria', de: 'Österreich' },
+    ministryName: {
+      tr: 'Avusturya Avrupa ve Uluslararası İlişkiler Bakanlığı (BMEIA)',
+      en: 'Federal Ministry for European and International Affairs of Austria (BMEIA)',
+      de: 'Bundesministerium für europäische und internationale Angelegenheiten (BMEIA)'
+    },
+    crisisCenterTitle: {
+      tr: 'BMEIA 7/24 Acil Yardım ve Kriz Masası',
+      en: 'BMEIA 24/7 Citizen Crisis Support & Emergency Center',
+      de: 'BMEIA Bürgerservice & 24/7 Notrufzentrale'
+    },
+    hotline247: '+43 1 90 115 4411',
+    hotlineDomestic: '050 1150 4411 (Avusturya içi)',
+    officialPortalUrl: 'https://www.bmeia.gv.at',
+    officialPortalName: 'BMEIA Resmî Portalı (bmeia.gv.at)',
+    emergencyDocName: {
+      tr: 'Notpass (Acil Durum Pasaportu)',
+      en: 'Emergency Passport (Notpass)',
+      de: 'Notreisepass (Notpass)'
+    },
+    emergencyDocValidity: {
+      tr: 'Seyahat süresine göre azami 6 ay veya doğrudan tek yönlü dönüş için geçerlidir.',
+      en: 'Valid for the duration of travel up to a maximum of 6 months, or for direct repatriation.',
+      de: 'Gültig für die Dauer der Reise, längstens für einen Zeitraum von 6 Monaten.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Olay yerindeki polis merkezine gidip resmi "Kayıp / Çalınma Tutanağı" (Verlustanzeige / Police Report) alın.',
+        en: 'Obtain an official police report (Verlustanzeige / Theft Report) from the nearest police station.',
+        de: 'Erstatten Sie bei der örtlichen Polizeidienststelle eine Verlustanzeige und sichern Sie das offizielle Protokoll.'
+      },
+      photos: {
+        tr: '1 adet güncel ICAO standartlarında biyometrik pasaport fotoğrafı (35x45mm) hazırlayın.',
+        en: 'Prepare 1 recent biometric passport photograph (35x45mm) complying with ICAO standards.',
+        de: 'Beschaffen Sie 1 aktuelles biometrisches Passbild (35x45mm) nach ICAO-Kriterien.'
+      },
+      embassySubmission: {
+        tr: 'En yakın Avusturya Büyükelçiliği, Başkonsolosluğu veya Fahri Konsolosluğuna acil müracaatta bulunun.',
+        en: 'Contact the consular section of the nearest Austrian Embassy, Consulate General, or Honorary Consulate.',
+        de: 'Wenden Sie sich an die Konsularabteilung der nächsten österreichischen Botschaft oder des Generalkonsulats.'
+      },
+      travelDocIssuance: {
+        tr: 'Kimlik tespiti ve aciliyet incelemesinin ardından genellikle aynı gün Notpass (Acil Pasaport) düzenlenir.',
+        en: 'Following identity and citizenship verification, an emergency Notpass passport is typically issued within 24 hours.',
+        de: 'Nach Identitätsfeststellung wird in der Regel am selben Tag ein Notreisepass ausgestellt.'
+      }
+    }
+  },
+
   // Amerika Birleşik Devletleri
   US: {
     passportCode: 'US',
@@ -465,8 +517,8 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
       en: 'Citizen Crisis Center & Consular Assistance Hotline',
       de: 'Krisenstab & Konsularische Notrufhotline'
     },
-    hotline247: '+1 202 501 4444',
-    hotlineDomestic: 'Resmi Temsilcilik Hattı',
+    hotline247: 'Nöbetçi Konsolosluk & Diplomatik Kriz Masası',
+    hotlineDomestic: 'Yetkili Dış Temsilcilik Nöbetçi Hattı',
     officialPortalUrl: `https://www.google.com/search?q=${encodeURIComponent(`Ministry of Foreign Affairs of ${countryNameTr} consular services`)}`,
     officialPortalName: `${countryNameTr} Dışişleri Konsolosluk Portalı`,
     emergencyDocName: {

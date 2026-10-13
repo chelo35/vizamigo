@@ -200,14 +200,14 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     // Verification Status Badge (Specifies Visa & Border Entry verification)
     let verStatus = {
       type: 'agree',
-      label: l('Vize: 3 Kaynak Mutabık (2026)', 'Visa: 3 Sources Consensus (2026)', 'Visum: 3 Quellen Konsens (2026)'),
+      label: l('Vize: Resmi Kaynaklar Mutabık (2026)', 'Visa: Official Sources Consensus (2026)', 'Visum: Quellen Konsens (2026)'),
       color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
     };
 
     if (VER.chk.split(' ').includes(code)) {
       verStatus = {
         type: 'chk',
-        label: l('Vize: IATA & Konsolosluk Teyitli (Ekim 2026)', 'Visa: IATA & Consular Audited (Oct 2026)', 'Visum: IATA & Konsularisch geprüft (Okt 2026)'),
+        label: l('Vize: Resmi Dışişleri & Göç Teyitli (2026)', 'Visa: Official MFA & Immigration Audited (2026)', 'Visum: Offiziell geprüft (2026)'),
         color: 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300 border-amber-200 dark:border-amber-800'
       };
     } else if (VER.conf.split(' ').includes(code)) {
@@ -369,6 +369,11 @@ Planlayan: Vizamigo (vizamigo.com)`;
   const plugInfo = geography?.plugTypes || insights.plugType || 'C, F (230V, 50Hz)';
   const plugTypesList = plugInfo.split('(')[0].split(',').map((p) => p.trim()).filter(Boolean);
   const isTrCompatible = plugTypesList.some((p) => p === 'C' || p === 'F');
+  const voltageMatch = plugInfo.match(/(\d{3}V)/i);
+  const detectedVoltage = voltageMatch ? voltageMatch[1] : (plugInfo.includes('230V') ? '230V' : plugInfo.includes('220V') ? '220V' : plugInfo.includes('120V') ? '120V' : '230V');
+  const freqMatch = plugInfo.match(/(\d{2}Hz)/i);
+  const detectedFreq = freqMatch ? freqMatch[1] : (plugInfo.includes('60Hz') ? '60Hz' : '50Hz');
+  const voltageFreqLabel = `${detectedVoltage} / ${detectedFreq}`;
 
   // Nomad Apps (Ride-hailing & Delivery)
   const nomadApps = getCountryNomadApps(code, insights.transport.popularRideApps);
@@ -627,7 +632,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </span>
               </div>
               <div className="mt-1.5 text-[11px] font-bold text-slate-800 dark:text-white truncate">
-                🔌 Tip {plugTypesList.slice(0, 2).join(', ')} ({plugInfo.includes('230V') ? '230V' : '120V'})
+                🔌 Tip {plugTypesList.slice(0, 2).join(', ')} ({detectedVoltage})
               </div>
               <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
                 {isTrCompatible ? '✓ Türkiye fişiyle doğrudan uyumlu' : '⚠️ Evrensel seyahat adaptörü gerekli'}
@@ -1535,7 +1540,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         <span>{l('Priz Tipleri & Voltaj Detayı', 'Socket Types & Voltage', 'Steckdosen & Volt')}</span>
                       </div>
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
-                        {plugInfo.includes('230V') ? '230V / 50Hz' : plugInfo.includes('120V') ? '120V / 60Hz' : 'Standart Voltaj'}
+                        {voltageFreqLabel}
                       </span>
                     </div>
 

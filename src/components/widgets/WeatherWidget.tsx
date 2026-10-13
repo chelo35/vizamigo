@@ -204,7 +204,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
                     </span>
                     <span className="flex items-center gap-0.5" title="Rüzgar">
                       <Wind className="w-2.5 h-2.5" />
-                      {item.windKmh}km/s
+                      {item.windKmh} km/h
                     </span>
                   </div>
 

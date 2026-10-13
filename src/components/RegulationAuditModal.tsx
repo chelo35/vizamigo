@@ -307,7 +307,7 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
   const handleRunLiveAudit = () => {
     setIsScanning(true);
     setScanProgress(15);
-    setScanStep('IATA Timatic kuralları kontrol ediliyor...');
+    setScanStep('Resmi göç idareleri mevzuat ve vize rejimleri kontrol ediliyor...');
 
     setTimeout(() => {
       setScanProgress(45);
@@ -356,7 +356,7 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
     const lines = [
       `# 🛡️ Vizamigo Vize ve Mevzuat Denetim Raporu (Ekim 2026)`,
       ``,
-      `> **Denetim Motoru:** Vizamigo Diplomatik Teyit & IATA Timatic Doğrulama Motoru  `,
+      `> **Denetim Motoru:** Vizamigo Diplomatik Teyit & Resmi Göç İdareleri Doğrulama Motoru  `,
       `> **İncelenen Ülke:** 15 Kritik Destinasyon  `,
       `> **Özet:** ✅ ${matchCount} Tam Uyumlu · ⚠️ ${attentionCount} Dikkat Edilecek · 🚨 0 Hata  `,
       ``,

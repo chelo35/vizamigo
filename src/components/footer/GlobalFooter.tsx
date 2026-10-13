@@ -524,7 +524,7 @@ export const GlobalFooter: React.FC<Props> = ({
                 onClick={() => onOpenLegalModal()}
                 className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors"
               >
-                {l('IATA TIMATIC Uyum Bildirimi', 'IATA TIMATIC Compliance Statement', 'IATA TIMATIC Erklärung', 'Declaración IATA TIMATIC', 'Заявление IATA TIMATIC')}
+                {l('Resmi Mevzuat & Kaynak Bildirimi', 'Official Immigration & MFA Source Standards', 'Offizielle Einreisequellen & Standards', 'Estándares de Inmigración Oficial', 'Официальные стандарты иммиграции')}
               </button>
             </li>
           </ul>
@@ -632,9 +632,9 @@ export const GlobalFooter: React.FC<Props> = ({
 
         {/* Verification & Trust Standards */}
         <div className="flex flex-wrap items-center justify-center gap-4 text-[11px] font-bold text-slate-400 dark:text-slate-500">
-          <span className="flex items-center gap-1" title="IATA TIMATIC Uyumlu Veri Standartları">
+          <span className="flex items-center gap-1" title="Resmi Dışişleri ve Göçmenlik Veri Standartları">
             <FileCheck2 className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
-            <span>IATA TIMATIC Synced</span>
+            <span>Official Feeds Synced</span>
           </span>
           <span>·</span>
           <span className="flex items-center gap-1" title="Dışişleri Bakanlıkları Konsolosluk Duyuruları">
