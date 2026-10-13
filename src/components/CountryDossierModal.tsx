@@ -78,6 +78,7 @@ import { getCountryNomadApps } from '../data/rideAndDeliveryApps';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { getCountryNaturalH1 } from '../utils/schemaGenerator';
 import { StatusBadge, VisaStatus } from './design/StatusBadge';
+import { TravelConciergeGrid } from './TravelConciergeGrid';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -645,6 +646,13 @@ Planlayan: Vizamigo (vizamigo.com)`;
             currentPassport={currentPassport}
             language={language}
             variant="modal"
+          />
+
+          {/* Hyper-Localized Travel Concierge Engine (4-Stage Chronological Bento Grid) */}
+          <TravelConciergeGrid
+            countryCode={code}
+            originPassport={currentPassport}
+            variant="bento-full"
           />
 
           {/* TAB 0: GEZİ PLANI & TURİSTİK ROTA */}

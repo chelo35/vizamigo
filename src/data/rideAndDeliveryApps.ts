@@ -174,15 +174,27 @@ export const MASTER_APPS_DIRECTORY: Record<string, NomadAppInfo> = {
   }
 };
 
+// Countries where Uber permanently folded or does not operate (e.g. Southeast Asia, CIS, Balkans)
+const UBER_INACTIVE_COUNTRIES = new Set([
+  'TH', 'VN', 'ID', 'MY', 'SG', 'PH', 'KH', 'LA', 'MM', 'BN',
+  'CN', 'RU', 'BY', 'KZ', 'UZ', 'KG', 'TJ', 'TM', 'AZ', 'AM', 'GE', 'MD',
+  'AL', 'BA', 'ME', 'MK', 'XK', 'RS', 'BG', 'CY', 'IS'
+]);
+
 /**
  * Returns prioritized local apps for a given country code
  */
 export function getCountryNomadApps(code: string, knownRideApps: string[] = []): NomadAppInfo[] {
   const result: NomadAppInfo[] = [];
   const addedNames = new Set<string>();
+  const c = code.toUpperCase();
 
   // Helper to add from master directory
   const tryAdd = (key: string) => {
+    // Never add Uber if it has folded or does not operate in this country
+    if (key.toLowerCase().includes('uber') && UBER_INACTIVE_COUNTRIES.has(c)) {
+      return;
+    }
     // Exact or loose match
     for (const [dirKey, app] of Object.entries(MASTER_APPS_DIRECTORY)) {
       if (
@@ -191,6 +203,9 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
           dirKey.toLowerCase().includes(key.toLowerCase())) &&
         !addedNames.has(app.name)
       ) {
+        if (app.name.toLowerCase().includes('uber') && UBER_INACTIVE_COUNTRIES.has(c)) {
+          return;
+        }
         result.push(app);
         addedNames.add(app.name);
         return;
@@ -201,17 +216,18 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
   // 1. First add known ride apps passed from insights
   knownRideApps.forEach(appName => tryAdd(appName));
 
-  // 2. Add region-specific delivery apps
-  const c = code.toUpperCase();
+  // 2. Add region-specific delivery & ride apps
   if (['GE', 'AZ', 'KZ', 'PL', 'CZ', 'HU', 'HR', 'RS', 'GR', 'CY', 'IL', 'NO', 'SE', 'FI', 'DK', 'EE', 'LV', 'LT'].includes(c)) {
     tryAdd('Wolt');
   }
   if (['AE', 'SA', 'QA', 'KW', 'BH', 'OM', 'JO', 'EG'].includes(c)) {
+    tryAdd('Careem');
     tryAdd('Talabat');
   }
   if (['TH', 'VN', 'MY', 'SG', 'ID', 'PH'].includes(c)) {
     tryAdd('Grab');
-    tryAdd('Gojek');
+    if (c === 'TH') tryAdd('Bolt');
+    if (c === 'ID') tryAdd('Gojek');
   }
   if (['GB', 'FR', 'IT', 'BE', 'NL', 'IE'].includes(c)) {
     tryAdd('Deliveroo');
@@ -220,7 +236,11 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
   // 3. Fallbacks if list is too small
   if (result.length < 2) {
     tryAdd('Bolt');
-    tryAdd('Uber');
+    if (!UBER_INACTIVE_COUNTRIES.has(c)) {
+      tryAdd('Uber');
+    } else {
+      tryAdd('InDrive');
+    }
   }
 
   return result.slice(0, 4);

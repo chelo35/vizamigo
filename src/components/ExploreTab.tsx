@@ -61,6 +61,7 @@ import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { WorldClockWidget } from './widgets/WorldClockWidget';
 import { WeatherWidget } from './widgets/WeatherWidget';
 import { CurrencyWidget } from './widgets/CurrencyWidget';
+import { TravelConciergeGrid } from './TravelConciergeGrid';
 
 import { TabKey } from './Navigation';
 
@@ -1081,6 +1082,13 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       </div>
 
+                      {/* Hyper-Localized Travel Concierge Strip (Pre-rendered 4-Stage Chronological Slots - Zero CLS) */}
+                      <TravelConciergeGrid
+                        countryCode={item.c}
+                        originPassport={currentPassport}
+                        variant="compact-strip"
+                      />
+
                       {/* Action Buttons Row (Symmetrical, Single Line) */}
                       <div className="flex items-center justify-between gap-2 pt-3.5 border-t border-slate-100 dark:border-white/[0.06] mt-1">
                         <div className="flex items-center gap-2.5 flex-wrap">
@@ -1165,6 +1173,13 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       currentPassport={currentPassport}
                       language={language}
                       variant="card"
+                    />
+
+                    {/* Full 4-Stage Chronological Hyper-Localized Travel Concierge Bento Grid */}
+                    <TravelConciergeGrid
+                      countryCode={item.c}
+                      originPassport={currentPassport}
+                      variant="bento-full"
                     />
 
                     {/* Widescreen Scenic Landmark Hero Banner */}
