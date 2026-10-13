@@ -265,13 +265,13 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
     <div className="space-y-6 animate-in fade-in duration-300">
       {/* View Switcher: Liste vs İnteraktif Harita (Compact Pill Bar) */}
       <div className="flex items-center justify-start gap-3">
-        <div className="inline-flex items-center gap-1 p-1 glass-panel border border-slate-200/80 dark:border-white/10 rounded-full shadow-2xs">
+        <div className="inline-flex items-center gap-1.5 p-1.5 glass-panel rounded-full">
           <button
             type="button"
             onClick={() => setViewMode('list')}
-            className={`flex items-center gap-2 py-1.5 px-3.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+            className={`flex items-center gap-2 py-2 px-4 rounded-full text-xs font-bold tracking-[-0.02em] transition-all cursor-pointer ${
               viewMode === 'list'
-                ? 'bg-teal-600 text-white shadow-xs'
+                ? 'tab-chip-active'
                 : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
             }`}
           >
@@ -281,9 +281,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           <button
             type="button"
             onClick={() => setViewMode('map')}
-            className={`flex items-center gap-2 py-1.5 px-3.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+            className={`flex items-center gap-2 py-2 px-4 rounded-full text-xs font-bold tracking-[-0.02em] transition-all cursor-pointer ${
               viewMode === 'map'
-                ? 'bg-teal-600 text-white shadow-xs'
+                ? 'tab-chip-active'
                 : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
             }`}
           >
@@ -659,17 +659,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={() => onNavigateTab?.('plan')}
-              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Route className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Rota & Sinerji', 'Route & Synergy', 'Route & Synergie', 'Ruta y Sinergia', 'Маршруты')}</span>
-                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('Çok ülkeli rota planlayıcı', 'Multi-country itinerary', 'Mehrländer-Planer', 'Planificador de ruta', 'Маршрут')}
                 </p>
               </div>
@@ -679,17 +679,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={() => onNavigateTab?.('track')}
-              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-emerald-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Calendar className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage-Tracker', 'Control de Días', 'Счетчик')}</span>
-                  <span className="text-emerald-600 dark:text-emerald-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('90/180 gün kuralı & kalış', '90/180-day window & stay', 'Rollierende 180 Tage', 'Regla 90/180 días', 'Правило 90/180')}
                 </p>
               </div>
@@ -699,37 +699,37 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={() => onNavigateTab?.('nomad')}
-              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-sky-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#3A7CA5]/12 text-[#3A7CA5] dark:text-[#6DAEDB] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Sparkles className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Dijital Göçebe', 'Digital Nomad Tools', 'Nomaden-Tools', 'Nómada Digital', 'Номады')}</span>
-                  <span className="text-sky-600 dark:text-sky-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#3A7CA5] dark:text-[#6DAEDB] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('183 gün vergi & internet hızları', '183-day tax tracker & speeds', 'Steuer- & Internet-Tracker', 'Impuestos y velocidades', 'Налоги и скорость')}
                 </p>
               </div>
             </button>
 
-            {/* Tool Card 4: Konsolosluk Destek */}
+            {/* Tool Card 4: Konsolosluk Destek (Pastel Sunset Coral #FF6B6B) */}
             <button
               type="button"
               onClick={() => onNavigateTab?.('consular')}
-              className="p-3.5 rounded-2xl glass-crisis border border-rose-500/25 dark:border-rose-500/20 hover:border-rose-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-crisis hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#FF6B6B]/14 text-[#FF6B6B] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <ShieldAlert className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульство')}</span>
-                  <span className="text-rose-600 dark:text-rose-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#FF6B6B] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-rose-700 dark:text-rose-300 mt-0.5 truncate">
+                <p className="text-[11px] text-[#E05252] dark:text-[#FF8E8E] mt-0.5 truncate leading-[1.6]">
                   {l('7/24 Acil kriz masası & pasaport', '24/7 Diplomatic crisis hotline', '24/7 Notfallkonsole', 'Línea de emergencia 24/7', 'Круглосуточная помощь')}
                 </p>
               </div>
@@ -737,22 +737,22 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           </div>
 
           {/* Practical Traveler & Nomad Tools Row (Packing, Tipping, Timezone Overlap, Global Radar) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
             {/* Tool Card 5: Akıllı Bavul Listesi */}
             <button
               type="button"
               onClick={onOpenPackingList}
-              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-teal-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Luggage className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Akıllı Bavul Listesi', 'Smart Packing List', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}</span>
-                  <span className="text-teal-600 dark:text-teal-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('Seyahat tipine özel liste & takip', 'Trip style packing checklist', 'Packliste nach Reisestil', 'Lista personalizada', 'Чек-лист для поездки')}
                 </p>
               </div>
@@ -762,17 +762,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={onOpenTippingCalc}
-              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-amber-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#D9A14A]/12 text-[#D9A14A] dark:text-[#E6B464] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Coins className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Bahşiş & Masraf Bölüşücü', 'Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}</span>
-                  <span className="text-amber-600 dark:text-amber-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#D9A14A] dark:text-[#E6B464] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('Ülke kurallı bahşiş & kişi başı hesap', 'Country tipping etiquette & split', 'Trinkgeld-Etikette & Aufteilung', 'Propina y división de cuenta', 'Чаевые по странам')}
                 </p>
               </div>
@@ -782,17 +782,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={onOpenTimezoneOverlap}
-              className="p-3.5 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 hover:border-indigo-500/50 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#6C7A9C]/12 text-[#5A688A] dark:text-[#94A3C4] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Laptop className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Toplantı Saat Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}</span>
-                  <span className="text-indigo-600 dark:text-indigo-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#5A688A] dark:text-[#94A3C4] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('Göçebeler için altın çalışma saatleri', 'Golden work hours for nomads', 'Goldene Arbeitsstunden für Remote', 'Horas ideales para nómadas', 'Часы для созвонов')}
                 </p>
               </div>
@@ -802,17 +802,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={() => onOpenGlobalRadar?.('all')}
-              className="p-3.5 rounded-2xl glass-card border border-cyan-500/30 dark:border-cyan-500/25 bg-gradient-to-br from-cyan-500/5 via-transparent to-teal-500/5 hover:border-cyan-400 hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3"
+              className="p-5 rounded-[24px] glass-card bg-gradient-to-br from-[#2A8C82]/[0.05] via-transparent to-[#FF6B6B]/[0.04] hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-10 h-10 rounded-xl bg-cyan-500/15 text-cyan-500 dark:text-cyan-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-xs">
-                <Radio className="w-5 h-5 animate-pulse" />
+              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/14 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                <Radio className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Reiseradar-Karte', 'Radar de Viajes', 'Радар Путешествий')}</span>
-                  <span className="text-cyan-500 dark:text-cyan-400 text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-cyan-700 dark:text-cyan-300 mt-0.5 truncate font-medium">
+                <p className="text-[11px] text-[#2A8C82] dark:text-[#52B2A7] mt-0.5 truncate font-medium leading-[1.6]">
                   {l('Canlı saat, hava ve döviz haritası', 'Live clock, weather & FX map', 'Echtzeit-Uhr, Wetter & Devisen', 'Reloj, clima y divisas en vivo', 'Карта времени, погоды и валют')}
                 </p>
               </div>
