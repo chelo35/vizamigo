@@ -1077,25 +1077,25 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     )}
                   </div>
 
-                  {/* "PAZAR YERI" ÇEVRİM ŞEMASI (OFFLINE CHEAT-SHEET) */}
-                  <div className="space-y-2.5 pt-1">
-                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-bold text-slate-800 dark:text-white">
-                      <span className="flex items-center gap-1.5">
-                        <ShoppingBag className="w-4 h-4 text-emerald-500" />
-                        <span>{l('"Pazar Yeri" Seyahat Fiyat Tablosu (Offline Cheat-Sheet)', 'Marketplace Price Table (Offline Cheat-Sheet)', 'Marktplatz-Preistabelle (Offline)')}</span>
+                  {/* "PAZAR YERI" ÇEVRİM ŞEMASI (OFFLINE CHEAT-SHEET - Semantic HTML5 Details/Summary for Mobile Googlebot Crawlability) */}
+                  <details className="semantic-mobile-accordion space-y-2.5 pt-1" open>
+                    <summary className="flex flex-wrap items-center justify-between gap-2 text-xs font-bold text-slate-800 dark:text-white cursor-pointer py-1.5">
+                      <span className="flex items-center gap-1.5 safe-text-wrap">
+                        <ShoppingBag className="w-4 h-4 text-[#2A8C82] shrink-0" />
+                        <span>{l('"Pazar Yeri" Seyahat Fiyat Tablosu (Offline Cheat-Sheet)', 'Marketplace Price Table (Offline Cheat-Sheet)', 'Marktplatz-Preistabelle (Offline)', 'Tabla de Precios de Mercado (Offline)', 'Таблица цен (Офлайн-шпаргалка)')}</span>
                       </span>
-                      <div className="flex items-center gap-1.5">
-                        <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                      <div className="flex items-center gap-2 flex-wrap" onClick={(e) => e.stopPropagation()}>
+                        <span className="text-[10px] font-semibold text-[#2A8C82] dark:text-[#52B2A7] bg-[#2A8C82]/10 px-2.5 py-1 rounded-full border border-[#2A8C82]/20">
                           📶 {l('Offline Hazır', 'Offline Ready', 'Offline bereit')}
                         </span>
-                        {/* Target Switcher */}
-                        <div className="flex items-center bg-slate-200/70 dark:bg-slate-800 p-0.5 rounded-lg text-[10px]">
+                        {/* Target Switcher (Strict 48x48px Touch Targets) */}
+                        <div className="flex items-center gap-1.5 bg-slate-200/70 dark:bg-slate-800 p-1 rounded-full text-[11px]">
                           {(['GBP', 'USD', 'EUR'] as const).map(curr => (
                             <button
                               key={curr}
                               type="button"
                               onClick={() => setMarketTargetCurrency(curr)}
-                              className={`px-1.5 py-0.5 rounded-md transition-colors cursor-pointer ${
+                              className={`min-h-[48px] min-w-[48px] px-3 py-1.5 rounded-full transition-colors cursor-pointer inline-flex items-center justify-center touch-target-min ${
                                 marketTargetCurrency === curr
                                   ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white font-extrabold shadow-2xs'
                                   : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
@@ -1106,17 +1106,17 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           ))}
                         </div>
                       </div>
-                    </div>
+                    </summary>
 
-                    <div className="rounded-2xl border border-slate-200/80 dark:border-white/10 overflow-hidden text-xs">
-                      <div className="grid grid-cols-12 bg-slate-100/80 dark:bg-white/[0.04] p-2.5 font-bold text-[11px] text-slate-600 dark:text-slate-300 border-b border-slate-200/60 dark:border-white/10">
-                        <div className="col-span-4">{l('Yerel Tutar', 'Local Amount', 'Landeswährung')}</div>
-                        <div className="col-span-4 text-right">
+                    <div className="rounded-[20px] border border-slate-200/80 dark:border-white/10 overflow-hidden text-xs mt-2">
+                      <div className="grid grid-cols-12 bg-slate-100/80 dark:bg-white/[0.04] p-3 font-bold text-[11px] text-slate-600 dark:text-slate-300 border-b border-slate-200/60 dark:border-white/10 safe-text-wrap">
+                        <div className="col-span-4 break-words">{l('Yerel Tutar', 'Local Amount', 'Landeswährung')}</div>
+                        <div className="col-span-4 text-right break-words">
                           {marketTargetCurrency === 'GBP'
                             ? l('İngiliz Sterlini (£) Karşılığı', 'British Pound (£) Equivalent', 'Britisches Pfund (£)')
                             : `${marketTargetCurrency} ${l('Karşılığı', 'Equivalent', 'Gegenwert')}`}
                         </div>
-                        <div className="col-span-4 text-right">{l('Örnek Harcama', 'Typical Purchase', 'Beispielausgabe')}</div>
+                        <div className="col-span-4 text-right break-words">{l('Örnek Harcama', 'Typical Purchase', 'Beispielausgabe')}</div>
                       </div>
 
                       <div className="divide-y divide-slate-100 dark:divide-white/5 bg-white dark:bg-slate-900/40">
@@ -1140,16 +1140,16 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           return (
                             <div
                               key={idx}
-                              className="grid grid-cols-12 p-2.5 hover:bg-slate-50/80 dark:hover:bg-white/[0.02] transition-colors items-center"
+                              className="grid grid-cols-12 p-3 hover:bg-slate-50/80 dark:hover:bg-white/[0.02] transition-colors items-center gap-2 safe-text-wrap"
                             >
-                              <div className="col-span-4 font-mono font-extrabold text-slate-900 dark:text-white flex items-center gap-1">
+                              <div className="col-span-4 font-mono font-extrabold text-slate-900 dark:text-white flex flex-wrap items-center gap-1">
                                 <span>{item.val}</span>
                                 <span className="text-[10px] text-slate-400 font-bold">{destCurrencyCode}</span>
                               </div>
-                              <div className="col-span-4 text-right font-mono font-black text-amber-600 dark:text-amber-400">
+                              <div className="col-span-4 text-right font-mono font-black text-amber-600 dark:text-amber-400 break-words">
                                 ≈ {formattedConverted}
                               </div>
-                              <div className="col-span-4 text-right text-[10px] text-slate-500 dark:text-[#8E9DBE] truncate">
+                              <div className="col-span-4 text-right text-[10px] text-slate-500 dark:text-[#8E9DBE] break-words">
                                 {language === 'tr' ? item.tr : item.en}
                               </div>
                             </div>
@@ -1157,7 +1157,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         })}
                       </div>
                     </div>
-                  </div>
+                  </details>
 
                   {/* AKILLI UYARI: DCC & ATM KOMİSYON TUZAĞI */}
                   <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 space-y-2">

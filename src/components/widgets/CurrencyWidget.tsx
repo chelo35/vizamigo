@@ -57,15 +57,15 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
           </div>
         </div>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-2 flex-wrap">
           {onOpenRadar && (
             <button
               type="button"
               onClick={onOpenRadar}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer"
+              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer touch-target-min"
               title={l('Döviz Kurlarını Dünya Haritasında Gör', 'View FX on World Map', 'Währungskarte öffnen')}
             >
-              <Globe className="w-3.5 h-3.5" />
+              <Globe className="w-3.5 h-3.5 shrink-0" />
               <span>{l('Haritada Gör', 'FX Map', 'Karte')}</span>
             </button>
           )}
@@ -73,32 +73,32 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
           <button
             type="button"
             onClick={handleManualRefresh}
-            className="font-mono text-[10px] glass-pill-control text-[#2A8C82] dark:text-[#52B2A7] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 cursor-pointer transition-colors"
+            className="min-h-[48px] min-w-[48px] font-mono text-[10px] glass-pill-control text-[#2A8C82] dark:text-[#52B2A7] font-bold px-3 py-2 rounded-full flex items-center gap-1.5 cursor-pointer transition-colors touch-target-min"
             title={l('Kurları Şimdi Güncelle', 'Refresh Live Rates', 'Kurse aktualisieren')}
           >
             <span>1 {fromCode} = {crossRate.toFixed(2)} {toCode}</span>
-            <RefreshCw className={`w-2.5 h-2.5 ${isRefreshing ? 'animate-spin' : ''}`} />
+            <RefreshCw className={`w-3 h-3 shrink-0 ${isRefreshing ? 'animate-spin' : ''}`} />
           </button>
         </div>
       </div>
 
       {/* Input & Selector Grid */}
       <div className="space-y-3 mb-3.5">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
           <input
             type="number"
             min="0"
             value={amount || ''}
             onChange={(e) => setAmount(Math.max(0, parseFloat(e.target.value) || 0))}
             placeholder="100"
-            className="w-24 px-3 py-2 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white font-mono font-bold text-xs text-center focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30"
+            className="w-24 min-h-[48px] px-3 py-2.5 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white font-mono font-bold text-xs text-center focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30"
           />
 
-          <div className="flex-1 flex items-center gap-1.5 min-w-0">
+          <div className="flex-1 flex items-center gap-2 min-w-0">
             <select
               value={fromCode}
               onChange={(e) => setFromCode(e.target.value)}
-              className="flex-1 min-w-0 px-3 py-2 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
+              className="flex-1 min-w-0 min-h-[48px] px-3 py-2.5 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
             >
               {POPULAR_CURRENCIES.map((c) => (
                 <option key={`from-${c.code}`} value={c.code}>
@@ -110,16 +110,16 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <button
               type="button"
               onClick={handleSwap}
-              className="p-2 rounded-full glass-pill-control text-slate-600 dark:text-slate-300 hover:text-[#2A8C82] transition-colors cursor-pointer flex-shrink-0"
+              className="min-w-[48px] min-h-[48px] p-2.5 rounded-full glass-pill-control text-slate-600 dark:text-slate-300 hover:text-[#2A8C82] transition-colors cursor-pointer flex-shrink-0 flex items-center justify-center touch-target-min"
               title={l('Tersine çevir', 'Swap', 'Tauschen', 'Invertir', 'Поменять')}
             >
-              <ArrowRightLeft className="w-3.5 h-3.5" />
+              <ArrowRightLeft className="w-4 h-4" />
             </button>
 
             <select
               value={toCode}
               onChange={(e) => setToCode(e.target.value)}
-              className="flex-1 min-w-0 px-3 py-2 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
+              className="flex-1 min-w-0 min-h-[48px] px-3 py-2.5 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
             >
               {POPULAR_CURRENCIES.map((c) => (
                 <option key={`to-${c.code}`} value={c.code}>
@@ -131,7 +131,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
         </div>
 
         {/* Big Clean Converted Result Pill */}
-        <div className="flex items-center justify-between px-4 py-3 rounded-[20px] bg-gradient-to-r from-[#2A8C82]/10 via-[#2A8C82]/5 to-transparent border border-[#2A8C82]/20 leading-[1.6]">
+        <div className="flex items-center justify-between px-4 py-3 rounded-[20px] bg-gradient-to-r from-[#2A8C82]/10 via-[#2A8C82]/5 to-transparent border border-[#2A8C82]/20 leading-[1.6] safe-text-wrap">
           <span className="text-xs font-bold text-slate-600 dark:text-slate-400">
             {amount} {fromCode} =
           </span>
@@ -141,8 +141,8 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
         </div>
       </div>
 
-      {/* Quick Base Chips */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pt-2 border-t border-slate-100 dark:border-white/[0.06]">
+      {/* Quick Base Chips (Strict 48x48px Touch Targets with gap-2) */}
+      <div className="flex items-center gap-2 overflow-x-auto pt-2.5 border-t border-slate-100 dark:border-white/[0.06]">
         <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider shrink-0 mr-1">
           {l('Hızlı', 'Quick', 'Schnell', 'Rápido', 'Быстро')}:
         </span>
@@ -151,7 +151,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             key={code}
             type="button"
             onClick={() => setFromCode(code)}
-            className={`px-3 py-1 rounded-full text-[11px] font-bold transition-all cursor-pointer ${
+            className={`min-h-[48px] min-w-[48px] px-3.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
               fromCode === code
                 ? 'tab-chip-active'
                 : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70'

@@ -608,11 +608,50 @@ button:active,
   background: rgba(148, 163, 184, 0.45);
 }
 
-.safe-text-wrap {
+/* ========================================================
+   SCALE-READY MULTILINGUAL FLEXBOX & GRID WRAPPERS (RU/DE +30% Width)
+   ======================================================== */
+.safe-text-wrap,
+.multilingual-flex-wrap {
+  min-width: 0;
+  max-width: 100%;
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
+  overflow: hidden;
   line-height: 1.6;
+}
+
+.multilingual-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.multilingual-grid-cell {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+/* Ensure all country card text blocks and concierge nodes stretch gracefully for Russian & German */
+.country-card h3,
+.country-card p,
+.country-card span,
+.bento-card h2,
+.bento-card h3,
+.bento-card h4,
+.bento-card p,
+.country-metric-box {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 .bento-grid-container {
@@ -624,37 +663,56 @@ button:active,
   border-radius: 24px;
   overflow: hidden;
   position: relative;
+  min-width: 0;
+  word-break: break-word;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.touch-target-min {
+/* ========================================================
+   GOOGLE SEARCH CONSOLE 48x48PX TOUCH TARGET PROTECTION
+   ======================================================== */
+.touch-target-min,
+.touch-target-48,
+.btn-nubair-primary,
+.btn-nubair-secondary,
+.btn-audit-console,
+.tab-chip-active,
+.tab-chip-inactive {
   min-width: 48px;
   min-height: 48px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   touch-action: manipulation;
 }
 
 @media (pointer: coarse), (max-width: 768px) {
-  .mobile-touch-target {
+  .mobile-touch-target,
+  .btn-nubair-primary,
+  .btn-nubair-secondary,
+  .btn-audit-console,
+  .tab-chip-active,
+  .tab-chip-inactive {
     min-width: 48px;
     min-height: 48px;
   }
 }
 
-details.semantic-card-details {
+/* Semantic HTML5 <details> & <summary> Accordions for Mobile-First Googlebot Indexing */
+details.semantic-card-details,
+details.semantic-mobile-accordion {
   display: block;
   width: 100%;
+  overflow: hidden;
 }
 
-details.semantic-card-details > summary {
+details.semantic-card-details > summary,
+details.semantic-mobile-accordion > summary {
   list-style: none;
   cursor: pointer;
   outline: none;
+  touch-action: manipulation;
 }
 
-details.semantic-card-details > summary::-webkit-details-marker {
+details.semantic-card-details > summary::-webkit-details-marker,
+details.semantic-mobile-accordion > summary::-webkit-details-marker {
   display: none;
 }
 

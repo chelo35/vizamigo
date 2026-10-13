@@ -96,15 +96,15 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
           </div>
         </div>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-2 flex-wrap">
           {onOpenRadar && (
             <button
               type="button"
               onClick={() => onOpenRadar()}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] border border-[#FF6B6B]/20 transition-all cursor-pointer"
+              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] border border-[#FF6B6B]/20 transition-all cursor-pointer touch-target-min"
               title={l('Hava Durumu Radar Haritasını Aç', 'Open Weather Radar Map', 'Wetter-Radar öffnen')}
             >
-              <Globe className="w-3.5 h-3.5" />
+              <Globe className="w-3.5 h-3.5 shrink-0" />
               <span>{l('Haritada Aç', 'Radar Map', 'Radar')}</span>
             </button>
           )}
@@ -113,7 +113,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
           <button
             type="button"
             onClick={() => setUnit(unit === 'C' ? 'F' : 'C')}
-            className="px-2.5 py-1 rounded-full text-[11px] font-bold font-mono glass-pill-control text-slate-600 dark:text-slate-300 hover:text-[#FF6B6B] transition-colors cursor-pointer"
+            className="min-h-[48px] min-w-[48px] px-3 py-2 rounded-full text-xs font-bold font-mono glass-pill-control text-slate-600 dark:text-slate-300 hover:text-[#FF6B6B] transition-colors cursor-pointer touch-target-min"
             title={l('Birim değiştir', 'Toggle unit', 'Einheit wechseln', 'Cambiar unidad', 'Сменить единицу')}
           >
             °{unit}
@@ -123,27 +123,27 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
 
       {/* Always-visible Search Input */}
       <div className="relative mb-3">
-        <Search className="w-3.5 h-3.5 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+        <Search className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder={l('Şehir/bölge ara: Antalya, Muğla, Bodrum, Pattaya, Phuket...', 'Search city or resort (e.g. Phuket, Pattaya, Bodrum)...', 'Stadt oder Urlaubsort suchen...')}
-          className="w-full pl-9 pr-8 py-2 text-xs rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]/30"
+          className="w-full min-h-[48px] pl-10 pr-10 py-2.5 text-xs rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]/30"
         />
         {search && (
           <button
             type="button"
             onClick={() => setSearch('')}
-            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5 cursor-pointer"
+            className="absolute right-1.5 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center text-slate-400 hover:text-slate-600 cursor-pointer"
           >
-            <X className="w-3.5 h-3.5" />
+            <X className="w-4 h-4" />
           </button>
         )}
       </div>
 
-      {/* Quick Country / Region Filter Chips */}
-      <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-2.5 mb-2">
+      {/* Quick Country / Region Filter Chips (Strict 48px Touch Target) */}
+      <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2.5 mb-2">
         {filterChips.map((chip) => (
           <button
             key={chip.id}
@@ -152,7 +152,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
               setQuickFilter(chip.id);
               setSearch('');
             }}
-            className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`min-h-[48px] min-w-[48px] px-3.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
               !search && quickFilter === chip.id
                 ? 'bg-[#FF6B6B] text-white shadow-xs'
                 : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70 dark:hover:bg-white/[0.08]'
@@ -179,16 +179,16 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
               <div
                 key={`${item.city}_${iso || ''}`}
                 onClick={() => onOpenRadar?.(item.city)}
-                className="weather-info flex items-center justify-between px-3.5 py-2.5 rounded-[20px] bg-slate-50/70 dark:bg-white/[0.03] hover:bg-[#FF6B6B]/[0.05] dark:hover:bg-white/[0.06] transition-all border border-slate-100/80 dark:border-white/[0.06] cursor-pointer group"
+                className="weather-info min-h-[48px] flex flex-wrap items-center justify-between gap-2 px-3.5 py-2.5 rounded-[20px] bg-slate-50/70 dark:bg-white/[0.03] hover:bg-[#FF6B6B]/[0.05] dark:hover:bg-white/[0.06] transition-all border border-slate-100/80 dark:border-white/[0.06] cursor-pointer group safe-text-wrap"
                 title={l(`${displayName} için Dünya Haritası ve Hava Telemetrisini Aç`, `Open World Map weather for ${displayName}`, `Öffne Wetter-Telemetrie für ${displayName}`)}
               >
                 <div className="flex items-center gap-2.5 min-w-0">
                   <span className="text-base leading-none group-hover:scale-110 transition-transform">{item.flag}</span>
-                  <div className="min-w-0 leading-[1.6]">
-                    <div className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-[#FF6B6B] transition-colors">
+                  <div className="min-w-0 leading-[1.6] safe-text-wrap">
+                    <div className="text-xs font-bold text-slate-900 dark:text-white break-words group-hover:text-[#FF6B6B] transition-colors">
                       {displayName}
                     </div>
-                    <div className="text-[11px] text-slate-400 truncate flex items-center gap-1.5 leading-[1.6]">
+                    <div className="text-[11px] text-slate-400 flex flex-wrap items-center gap-1.5 leading-[1.6]">
                       <span>{countryName}</span>
                       <span>·</span>
                       <span className="text-[#2A8C82] dark:text-[#52B2A7] font-medium">{conditionText}</span>
@@ -197,7 +197,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
                 </div>
 
                 <div className="flex items-center gap-2 flex-shrink-0">
-                  <div className="hidden sm:flex items-center gap-2 text-[10px] text-slate-400">
+                  <div className="flex items-center gap-2 text-[10px] text-slate-400">
                     <span className="flex items-center gap-0.5" title="Nem">
                       <Droplets className="w-2.5 h-2.5" />
                       {item.humidity}%

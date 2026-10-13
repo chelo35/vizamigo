@@ -1,15 +1,17 @@
 /**
- * Dynamic Multilingual SEO Head Manager for Vizamigo
- * Automatically generates and maintains canonical tags, dynamic 5-language hreflang alternates,
- * x-default fallbacks, mobile voice search titles, intent-driven meta descriptions,
- * 404/noindex soft-404 protection, and Schema.org JSON-LD structured data in compliance with Google Search Console standards.
+ * Dynamic Head Manager for International SEO, Hreflang, Canonical & JSON-LD Schema
+ * Ensures Google Mobile-First Indexing crawls localized titles, descriptions,
+ * explicit <link rel="alternate" hreflang="..." href="..."> across all 5 languages (TR, EN, DE, RU, ES),
+ * <link rel="alternate" hreflang="x-default" href="..."> fallback, and 404 Soft-404 protection.
  */
 
 import React, { useEffect } from 'react';
 import { SupportedLanguage } from '../i18n/types';
-import { SUPPORTED_LANGUAGES } from '../i18n';
 import { TabKey } from './Navigation';
-import { buildAbsoluteLocalizedUrl, BASE_URL } from '../utils/seoRouter';
+import {
+  buildAbsoluteLocalizedUrl,
+  getHreflangAlternatesForRoute
+} from '../utils/seoRouter';
 import { getCountryName } from '../data/passportData';
 import { injectCountrySchema } from '../utils/schemaGenerator';
 
@@ -17,7 +19,7 @@ interface SeoHeadProps {
   language: SupportedLanguage;
   tab: TabKey;
   countryCode: string | null;
-  currentPassport?: string;
+  currentPassport: string;
   is404?: boolean;
 }
 
@@ -25,16 +27,15 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
   language,
   tab,
   countryCode,
-  currentPassport = 'TR',
+  currentPassport,
   is404 = false
 }) => {
   useEffect(() => {
-    if (typeof document === 'undefined') return;
-
-    // 1. Update HTML language and text direction attributes
+    // 1. Update HTML lang attribute for screen readers and Mobile Googlebot
     document.documentElement.lang = language;
     document.documentElement.dir = 'ltr';
 
+    // 2. Ensure Robots Meta Tag (Prevent Google Soft-404 on invalid routes)
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (!robotsMeta) {
       robotsMeta = document.createElement('meta');
@@ -42,18 +43,17 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       document.head.appendChild(robotsMeta);
     }
 
-    // 2. Handle 404 Route (Strict Noindex to prevent Google Soft-404 Errors)
     if (is404) {
       const notFoundTitle =
         language === 'en'
-          ? '404 - Page Not Found | Vizamigo'
+          ? '404 Destination Not Found | Vizamigo'
           : language === 'de'
-          ? '404 - Seite nicht gefunden | Vizamigo'
+          ? '404 Reiseziel Nicht Gefunden | Vizamigo'
           : language === 'es'
-          ? '404 - Página No Encontrada | Vizamigo'
+          ? '404 Destino No Encontrado | Vizamigo'
           : language === 'ru'
-          ? '404 - Страница не найдена | Vizamigo'
-          : '404 - Sayfa veya Ülke Bulunamadı | Vizamigo';
+          ? '404 Направление Не Найдено | Vizamigo'
+          : '404 Rota veya Ülke Bulunamadı | Vizamigo';
 
       const notFoundDesc =
         language === 'en'
@@ -69,13 +69,13 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       document.title = notFoundTitle;
       robotsMeta.setAttribute('content', 'noindex, follow');
 
-      let descMeta = document.querySelector('meta[name="description"]');
+      const descMeta = document.querySelector('meta[name="description"]');
       if (descMeta) {
         descMeta.setAttribute('content', notFoundDesc);
       }
 
-      // Clean up dynamic hreflang tags on 404
-      const existingHreflangs = document.querySelectorAll('link[rel="alternate"][data-dynamic-hreflang="true"]');
+      // Clean up all hreflang alternate tags on 404
+      const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]');
       existingHreflangs.forEach((el) => el.remove());
 
       // Fallback portal schema
@@ -136,6 +136,17 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
             ? 'Калькулятор Шенгена 90/180 Дней | Vizamigo'
             : 'Schengen 90/180 Gün Sayacı & İhlal Takip Aracı | Vizamigo';
           break;
+        case 'nomad':
+          pageTitle = language === 'en'
+            ? 'Digital Nomad Visas & Tax Intelligence | Vizamigo'
+            : language === 'de'
+            ? 'Digitale Nomaden-Visa & Steuer-Guide | Vizamigo'
+            : language === 'es'
+            ? 'Visas para Nómadas Digitales e Impuestos | Vizamigo'
+            : language === 'ru'
+            ? 'Визы для Цифровых Кочевников и Налоги | Vizamigo'
+            : 'Dijital Göçebe Vizeleri, Vergi & Uzaktan Çalışma Rehberi | Vizamigo';
+          break;
         case 'profile':
         case 'consular':
           pageTitle = language === 'en'
@@ -173,7 +184,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     }
     descMeta.setAttribute('content', metaDescription);
 
-    // 5. Update Canonical Tag
+    // 5. Update Canonical Tag & OpenGraph URL
     const currentCanonicalUrl = buildAbsoluteLocalizedUrl(language, tab, countryCode);
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
@@ -183,29 +194,25 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     }
     canonicalLink.setAttribute('href', currentCanonicalUrl);
 
-    // 6. Update or Inject Dynamic Multilingual Hreflang Alternates
-    const existingHreflangs = document.querySelectorAll('link[rel="alternate"][data-dynamic-hreflang="true"]');
+    const ogUrlMeta = document.querySelector('meta[property="og:url"]');
+    if (ogUrlMeta) {
+      ogUrlMeta.setAttribute('content', currentCanonicalUrl);
+    }
+
+    // 6. Replace ALL <link rel="alternate" hreflang="..."> tags in <head>
+    // so there are zero stale root tags when navigating to /tr/country/TH, /ru/country/TH, etc.
+    const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]');
     existingHreflangs.forEach((el) => el.remove());
 
-    // Loop through all supported languages
-    SUPPORTED_LANGUAGES.forEach((langOpt) => {
-      const altUrl = buildAbsoluteLocalizedUrl(langOpt.code, tab, countryCode);
+    const hreflangAlternates = getHreflangAlternatesForRoute(tab, countryCode);
+    hreflangAlternates.forEach((alt) => {
       const linkEl = document.createElement('link');
       linkEl.setAttribute('rel', 'alternate');
-      linkEl.setAttribute('hreflang', langOpt.code);
-      linkEl.setAttribute('href', altUrl);
+      linkEl.setAttribute('hreflang', alt.hreflang);
+      linkEl.setAttribute('href', alt.href);
       linkEl.setAttribute('data-dynamic-hreflang', 'true');
       document.head.appendChild(linkEl);
     });
-
-    // Default Fallback x-default (International English representation)
-    const xDefaultUrl = buildAbsoluteLocalizedUrl('en', tab, countryCode);
-    const xDefaultLink = document.createElement('link');
-    xDefaultLink.setAttribute('rel', 'alternate');
-    xDefaultLink.setAttribute('hreflang', 'x-default');
-    xDefaultLink.setAttribute('href', xDefaultUrl);
-    xDefaultLink.setAttribute('data-dynamic-hreflang', 'true');
-    document.head.appendChild(xDefaultLink);
 
     // 7. Inject or Update Schema.org (JSON-LD) Microdata
     injectCountrySchema(countryCode, language, currentPassport);

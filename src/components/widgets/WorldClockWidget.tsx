@@ -90,10 +90,10 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
             <button
               type="button"
               onClick={() => onOpenRadar()}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer"
+              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer touch-target-min"
               title={l('Dünya Haritasında Aç', 'Open in World Map', 'In Weltkarte öffnen')}
             >
-              <Globe className="w-3.5 h-3.5" />
+              <Globe className="w-3.5 h-3.5 shrink-0" />
               <span>{l('Haritada Aç', 'Radar Map', 'Radar')}</span>
             </button>
           )}
@@ -102,27 +102,27 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
 
       {/* Always-visible Search Input */}
       <div className="relative mb-3">
-        <Search className="w-3.5 h-3.5 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+        <Search className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder={l('Şehir/ülke ara: Antalya, Muğla, Pattaya, Phuket, Bali...', 'Search city or country (e.g. Phuket, Pattaya, Bodrum)...', 'Stadt oder Land suchen...')}
-          className="w-full pl-9 pr-8 py-2 text-xs rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30"
+          className="w-full min-h-[48px] pl-10 pr-10 py-2.5 text-xs rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30"
         />
         {search && (
           <button
             type="button"
             onClick={() => setSearch('')}
-            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5 cursor-pointer"
+            className="absolute right-1.5 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center text-slate-400 hover:text-slate-600 cursor-pointer"
           >
-            <X className="w-3.5 h-3.5" />
+            <X className="w-4 h-4" />
           </button>
         )}
       </div>
 
-      {/* Quick Country / Region Filter Chips */}
-      <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-2.5 mb-2">
+      {/* Quick Country / Region Filter Chips (Strict 48px Touch Target) */}
+      <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2.5 mb-2">
         {filterChips.map((chip) => (
           <button
             key={chip.id}
@@ -131,7 +131,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
               setQuickFilter(chip.id);
               setSearch('');
             }}
-            className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer ${
+            className={`min-h-[48px] min-w-[48px] px-3.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
               !search && quickFilter === chip.id
                 ? 'tab-chip-active'
                 : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70 dark:hover:bg-white/[0.08]'

@@ -513,12 +513,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </div>
             )}
 
-            {/* Horizontal Filter Chips (Mobile-First Smooth Scroll Strip, Zero Overlapping) */}
-            <div className="w-full max-w-full overflow-x-auto touch-pan-x flex items-center gap-2 pb-2 pt-0.5 scrollbar-none no-scrollbar">
+            {/* Horizontal Filter Chips (Mobile-First Smooth Scroll Strip, Strict 48px Touch Targets, Zero Overlapping) */}
+            <div className="w-full max-w-full overflow-x-auto touch-pan-x flex items-center gap-2.5 pb-2 pt-0.5 scrollbar-none no-scrollbar">
               <button
                 type="button"
                 onClick={() => setFilter('all')}
-                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                   filter === 'all'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -530,7 +530,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('id')}
-                  className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                  className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                     filter === 'id'
                       ? 'tab-chip-active'
                       : 'tab-chip-inactive'
@@ -542,7 +542,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('free')}
-                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                   filter === 'free'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -553,7 +553,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('evisa')}
-                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                   filter === 'evisa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -564,7 +564,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('voa')}
-                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                   filter === 'voa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -576,7 +576,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('eta')}
-                  className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                  className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                     filter === 'eta'
                       ? 'tab-chip-active'
                       : 'tab-chip-inactive'
@@ -588,7 +588,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('visa')}
-                className={`shrink-0 flex-shrink-0 min-w-fit px-4 py-2 min-h-[40px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center ${
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
                   filter === 'visa'
                     ? 'tab-chip-active'
                     : 'tab-chip-inactive'
@@ -1000,80 +1000,80 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
                       </div>
 
-                      {/* Highlights Row (Pill Tags 9999px) */}
-                      <div className="flex items-center gap-2 h-7 overflow-hidden">
+                      {/* Highlights Row (Scale-Ready Multilingual Flex Wrap - Pill Tags 9999px) */}
+                      <div className="flex flex-wrap items-center gap-2 min-h-[28px] overflow-hidden safe-text-wrap">
                         {highlights.length > 0 ? (
                           highlights.map((tag, idx) => (
                             <span
                               key={idx}
-                              className="inline-flex items-center text-[11px] font-bold px-3 py-0.5 rounded-full bg-slate-100/90 dark:bg-white/[0.04] text-slate-700 dark:text-slate-200 border border-slate-200/50 dark:border-white/[0.08] shrink-0 whitespace-nowrap"
+                              className="inline-flex items-center text-[11px] font-bold px-3 py-1 rounded-full bg-slate-100/90 dark:bg-white/[0.04] text-slate-700 dark:text-slate-200 border border-slate-200/50 dark:border-white/[0.08]"
                             >
                               {tag}
                             </span>
                           ))
                         ) : (
-                          <span className="text-[11px] font-medium text-slate-400 dark:text-slate-500 italic truncate">
+                          <span className="text-[11px] font-medium text-slate-400 dark:text-slate-500 italic break-words">
                             {l('Doğrulanmış küresel seyahat bilgileri', 'Verified global mobility specs', 'Verifizierte Reisedaten')}
                           </span>
                         )}
                       </div>
 
-                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (20px rounded corners, 1.6 line-height) */}
+                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (20px rounded corners, 1.6 line-height, Scale-Ready Multilingual Grid) */}
                       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
                         {/* 1. Başkent (Capital) */}
-                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
+                        <div className="country-metric-box multilingual-grid-cell col-span-1 min-h-[64px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <span className="text-xs shrink-0">🏛️</span>
-                            <span className="truncate">{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
+                            <span className="break-words">{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] truncate" title={geography.capital}>
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] break-words" title={geography.capital}>
                             {geography.capital}
                           </div>
                         </div>
 
                         {/* 2. Para Birimi (Currency) */}
-                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
+                        <div className="country-metric-box multilingual-grid-cell col-span-1 min-h-[64px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <DollarSign className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
-                            <span className="truncate">{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
+                            <span className="break-words">{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] truncate">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] break-words">
                             {geography.currencyCode} <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">({geography.currencySymbol})</span>
                           </div>
                         </div>
 
                         {/* 3. Günlük Bütçe (Daily Budget) */}
-                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
+                        <div className="country-metric-box multilingual-grid-cell col-span-1 min-h-[64px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <CreditCard className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
-                            <span className="truncate">{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
+                            <span className="break-words">{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] font-mono whitespace-nowrap">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] font-mono break-words">
                             {insights.livingCosts.dailyBudgetBackpackerUsd.replace(/\s+/g, ' ').trim()}
                           </div>
                         </div>
 
                         {/* 4. Güvenlik (Safety) */}
-                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
+                        <div className="country-metric-box multilingual-grid-cell col-span-1 min-h-[64px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <Shield className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
-                            <span className="truncate">{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
+                            <span className="break-words">{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] flex flex-wrap items-center gap-1">
                             <span>{insights.safety.safetyScore} / 100</span>
-                            <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate">· {insights.safety.safetyLevel}</span>
+                            <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 break-words">· {insights.safety.safetyLevel}</span>
                           </div>
                         </div>
 
                         {/* 5. İnternet (Internet Speed) */}
-                        <div className="country-metric-box col-span-2 sm:col-span-2 lg:col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
+                        <div className="country-metric-box multilingual-grid-cell col-span-2 sm:col-span-2 lg:col-span-1 min-h-[64px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <Wifi className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
-                            <span className="truncate">{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
+                            <span className="break-words">{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] font-mono flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] font-mono flex flex-wrap items-center gap-1">
                             <span>{insights.internet.mobileSpeedMbps} Mbps</span>
-                            <span className="text-[11px] font-sans font-semibold text-slate-500 dark:text-slate-400 truncate">
+                            <span className="text-[11px] font-sans font-semibold text-slate-500 dark:text-slate-400 break-words">
                               {insights.internet.mobileSpeedMbps >= 50
                                 ? `· ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz', 'Red rápida', 'Быстрый')}`
                                 : `· ${l('Standart', 'Standard', 'Standard', 'Estándar', 'Стандарт')}`}
@@ -1089,8 +1089,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         variant="compact-strip"
                       />
 
-                      {/* Action Buttons Row (Symmetrical, Single Line) */}
-                      <div className="flex items-center justify-between gap-2 pt-3.5 border-t border-slate-100 dark:border-white/[0.06] mt-1">
+                      {/* Action Buttons Row (Symmetrical, Strict 48x48px Touch Targets, Mobile Crawl-Accessible) */}
+                      <div className="flex flex-wrap items-center justify-between gap-2.5 pt-3.5 border-t border-slate-100 dark:border-white/[0.06] mt-1">
                         <div className="flex items-center gap-2.5 flex-wrap">
                           <button
                             type="button"
@@ -1098,10 +1098,10 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               e.stopPropagation();
                               openDossier(item.c);
                             }}
-                            className="btn-nubair-primary min-h-[40px] py-2 px-4 text-xs font-bold whitespace-nowrap shadow-xs cursor-pointer flex items-center gap-1.5"
+                            className="btn-nubair-primary min-h-[48px] min-w-[48px] py-2.5 px-4 text-xs font-bold shadow-xs cursor-pointer flex items-center gap-1.5 touch-target-min"
                             title={l('Kapsamlı Ülke Dosyası ve Gezi Rotasını Aç', 'Open Full Country Dossier & Travel Itinerary', 'Länderdossier & Reiseroute öffnen', 'Abrir guía completa 360°', 'Открыть полное досье 360°')}
                           >
-                            <BookOpen className="w-3.5 h-3.5" />
+                            <BookOpen className="w-4 h-4 shrink-0" />
                             <span>{l('360° Gezi Rehberi', '360° Travel Guide', '360° Reiseführer', 'Guía 360°', 'Гид 360°')}</span>
                           </button>
 
@@ -1113,12 +1113,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               const q = geo ? `${geo.capital}, ${countryName}` : countryName;
                               window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
                             }}
-                            className="btn-nubair-secondary min-h-[40px] py-2 px-3 text-xs cursor-pointer flex items-center gap-1.5"
+                            className="btn-nubair-secondary min-h-[48px] min-w-[48px] py-2.5 px-3.5 text-xs cursor-pointer flex items-center gap-1.5 touch-target-min"
                             title={l("Google Haritalar'da Canlı Aç", 'Open Live in Google Maps', 'Live auf Google Maps öffnen', 'Abrir en Google Maps', 'Открыть на Google Maps')}
                           >
-                            <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
+                            <MapPin className="w-4 h-4 text-slate-500 dark:text-[#8E9DBE] shrink-0" />
                             <span>{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</span>
-                            <ExternalLink className="w-3 h-3 opacity-60" />
+                            <ExternalLink className="w-3 h-3 opacity-60 shrink-0" />
                           </button>
 
                           <button
@@ -1127,23 +1127,23 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               e.stopPropagation();
                               setReportingCountry({ code: item.c, name: countryName, cat: item.cat });
                             }}
-                            className="btn-nubair-secondary min-h-[40px] py-2 px-3 text-xs cursor-pointer flex items-center gap-1.5"
+                            className="btn-nubair-secondary min-h-[48px] min-w-[48px] py-2.5 px-3.5 text-xs cursor-pointer flex items-center gap-1.5 touch-target-min"
                             title={l('Kural değişikliği veya hata bildir', 'Report rule change or error', 'Regeländerung oder Fehler melden', 'Informar cambio o error', 'Сообщить об ошибке')}
                           >
-                            <Flag className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" />
-                            <span className="hidden sm:inline">{t.reportChange}</span>
+                            <Flag className="w-4 h-4 text-slate-500 dark:text-[#8E9DBE] shrink-0" />
+                            <span>{t.reportChange}</span>
                           </button>
                         </div>
 
                         <button
                           type="button"
                           onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                          className="min-w-[40px] min-h-[40px] p-2 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors flex items-center justify-center"
+                          className="min-w-[48px] min-h-[48px] p-2.5 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors flex items-center justify-center touch-target-min"
                           aria-label={l('Detayları aç', 'Toggle details', 'Details ein-/ausblenden', 'Ver detalles', 'Свернуть/Развернуть')}
                         >
                           <ChevronDown
                             className={`w-4 h-4 transition-transform duration-200 ${
-                              isExpanded ? 'rotate-180 text-rose-500' : ''
+                              isExpanded ? 'rotate-180 text-[#FF6B6B]' : ''
                             }`}
                           />
                         </button>

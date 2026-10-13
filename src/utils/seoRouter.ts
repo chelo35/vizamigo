@@ -1,6 +1,6 @@
 /**
  * Scalable International Multilingual SEO Routing Engine for Vizamigo
- * Provides clean URL path routing (e.g. /:lang, /:lang/:tab, /:lang/country/:code)
+ * Provides clean sub-directory URL path routing (e.g. /tr, /en, /de, /ru, /es, /:lang/:tab, /:lang/country/:code)
  * with zero-dependency HTML5 History API synchronization, 404 validation, and full Mobile-First crawlability.
  */
 
@@ -12,6 +12,8 @@ import { GEO_DATA } from '../data/geoData';
 
 export const BASE_URL = 'https://vizamigo.com';
 
+export const CORE_SEO_LANGUAGES: readonly SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es'] as const;
+
 export const VALID_LANG_CODES = new Set(SUPPORTED_LANGUAGES.map(l => l.code));
 export const VALID_TABS = new Set<TabKey>(['explore', 'plan', 'track', 'nomad', 'profile', 'consular']);
 
@@ -21,6 +23,20 @@ export interface ParsedRoute {
   countryCode: string | null;
   is404?: boolean;
 }
+
+export interface HreflangAlternateDescriptor {
+  hreflang: SupportedLanguage | 'x-default';
+  href: string;
+  ogLocale: string;
+}
+
+const OG_LOCALE_BY_LANG: Record<SupportedLanguage, string> = {
+  tr: 'tr_TR',
+  en: 'en_US',
+  de: 'de_DE',
+  ru: 'ru_RU',
+  es: 'es_ES'
+};
 
 /**
  * Parses window.location.pathname into clean route parameters.
@@ -77,7 +93,10 @@ export function parseCurrentRoute(): ParsedRoute {
 }
 
 /**
- * Builds a clean localized relative path.
+ * Builds a clean sub-directory localized relative path:
+ *   - Home/Explore: `/tr`, `/en`, `/de`, `/ru`, `/es`
+ *   - Tool Tabs: `/tr/plan`, `/en/track`, etc.
+ *   - Country Dossier: `/tr/country/TH`, `/en/country/TH`, `/de/country/TH`, `/ru/country/TH`, `/es/country/TH`
  */
 export function buildLocalizedPath(
   lang: SupportedLanguage,
@@ -103,6 +122,31 @@ export function buildAbsoluteLocalizedUrl(
 ): string {
   const path = buildLocalizedPath(lang, tab, countryCode);
   return `${BASE_URL}${path}`;
+}
+
+/**
+ * Programmatically builds the complete set of 5 localized hreflang alternate links
+ * (TR, EN, DE, RU, ES) plus the mandatory `x-default` international fallback tag
+ * for any page or individual country dossier layout.
+ */
+export function getHreflangAlternatesForRoute(
+  tab: TabKey = 'explore',
+  countryCode: string | null = null
+): HreflangAlternateDescriptor[] {
+  const descriptors: HreflangAlternateDescriptor[] = CORE_SEO_LANGUAGES.map((code) => ({
+    hreflang: code,
+    href: buildAbsoluteLocalizedUrl(code, tab, countryCode),
+    ogLocale: OG_LOCALE_BY_LANG[code]
+  }));
+
+  // Mandatory secure x-default fallback pointing to the international English path
+  descriptors.push({
+    hreflang: 'x-default',
+    href: buildAbsoluteLocalizedUrl('en', tab, countryCode),
+    ogLocale: 'en_US'
+  });
+
+  return descriptors;
 }
 
 export function useSeoRouter() {
