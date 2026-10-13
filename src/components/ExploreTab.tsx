@@ -182,6 +182,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
+  const [visibleCount, setVisibleCount] = useState<number>(24);
+
+  // Reset pagination when search, filter or passport changes
+  useEffect(() => {
+    setVisibleCount(24);
+  }, [search, filter, currentPassport]);
 
   // Defer live clock, weather & currency widget hydration until after initial HTML/CSS paint (<0.5s FCP)
   useEffect(() => {
@@ -899,7 +905,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </p>
           </div>
         ) : (
-          filteredItems.map(item => {
+          filteredItems.slice(0, visibleCount).map(item => {
             const isExpanded = expandedCountry === item.c;
             const countryName = getCountryName(item.c, language);
             const badgeClass = item.id ? CAT_INFO.id.badgeBg : CAT_INFO[item.cat]?.badgeBg;
@@ -1957,6 +1963,35 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               </div>
             );
           })
+        )}
+
+        {/* Progressive Loading Sentinel / Button for Performance and Zero-Lag Mobile Safari */}
+        {filteredItems.length > visibleCount && (
+          <div className="flex flex-col items-center justify-center pt-6 pb-4 space-y-3">
+            <button
+              type="button"
+              onClick={() => setVisibleCount((prev) => Math.min(filteredItems.length, prev + 24))}
+              className="px-6 py-3.5 rounded-full bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center gap-2 touch-target-min hover:scale-105 active:scale-95"
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>
+                {l(
+                  `Daha Fazla Ülke Yükle (+24) · ${visibleCount} / ${filteredItems.length}`,
+                  `Load More Countries (+24) · ${visibleCount} / ${filteredItems.length}`,
+                  `Weitere Länder laden (+24) · ${visibleCount} / ${filteredItems.length}`,
+                  `Cargar más países (+24) · ${visibleCount} / ${filteredItems.length}`,
+                  `Загрузить еще (+24) · ${visibleCount} / ${filteredItems.length}`
+                )}
+              </span>
+            </button>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+              {l(
+                'Akıllı bellek koruyucu aktif · Web tarayıcınız maksimum hızda çalışır.',
+                'Smart memory optimization active · Keeps browser lightning fast.',
+                'Intelligente Speicheroptimierung aktiv.'
+              )}
+            </span>
+          </div>
         )}
       </div>
         </>

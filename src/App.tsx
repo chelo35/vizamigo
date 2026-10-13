@@ -284,7 +284,10 @@ function AppContent() {
                 onPassportClick={() => setIsPassportModalOpen(true)}
                 mode={exploreSubTab}
                 onModeChange={setExploreSubTab}
-                modeLabels={{ all: t.subTabAllCountries, where: t.subTabWhereCanIGo }}
+                modeLabels={{
+                  all: l('🌍 Tüm Ülkeler', '🌍 All Countries', '🌍 Alle Länder', '🌍 Todos los Países', '🌍 Все Страны'),
+                  where: l('🧭 Nereye Gidebilirim?', '🧭 Where Can I Go?', '🧭 Wohin kann ich?', '🧭 ¿A dónde ir?', '🧭 Куда поехать?')
+                }}
                 search={globalSearchQuery}
                 onSearchChange={setGlobalSearchQuery}
                 searchLabel={l('Ülke ara', 'Search country', 'Land suchen', 'Buscar país', 'Поиск страны')}

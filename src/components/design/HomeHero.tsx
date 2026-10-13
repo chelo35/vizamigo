@@ -45,7 +45,7 @@ export const HomeHero: React.FC<Props> = ({
     {/* Floating Action & Filter Bar */}
     <div className="relative -mt-6 sm:-mt-8 mx-3 sm:mx-6 rounded-[24px] glass-card p-3 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 h-auto shadow-md">
       {/* Mode Switcher Tabs (Horizontal Badge Slider) */}
-      <div role="tablist" className="horizontal-badge-slider flex gap-1.5 rounded-full bg-slate-100/80 dark:bg-white/[0.04] border border-transparent dark:border-white/[0.08] p-1 shrink-0 overflow-x-auto">
+      <div role="tablist" className="horizontal-badge-slider flex flex-nowrap items-center gap-1.5 rounded-full bg-slate-100/80 dark:bg-white/[0.04] border border-transparent dark:border-white/[0.08] p-1 shrink-0 flex-shrink-0 overflow-x-auto">
         {(['all', 'where'] as const).map((m) => (
           <button
             key={m}
@@ -53,7 +53,7 @@ export const HomeHero: React.FC<Props> = ({
             aria-selected={mode === m}
             type="button"
             onClick={() => onModeChange(m)}
-            className={`min-h-[40px] px-4 sm:px-5 rounded-full text-xs font-bold cursor-pointer transition-all whitespace-nowrap touch-target-min ${
+            className={`shrink-0 flex-shrink-0 min-h-[40px] px-3.5 sm:px-5 rounded-full text-xs font-bold cursor-pointer transition-all whitespace-nowrap touch-target-min ${
               mode === m
                 ? 'tab-chip-active'
                 : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'

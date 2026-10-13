@@ -133,6 +133,16 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [marketTargetCurrency, setMarketTargetCurrency] = useState<'GBP' | 'USD' | 'EUR'>('GBP');
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
 
+  const scrollToSection = (tab: DossierTab, targetId: string) => {
+    setActiveTab(tab);
+    setTimeout(() => {
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
   // Real-time ticking clock for Dual-Clock Time Zone Sync
   useEffect(() => {
     if (!isOpen) return;
@@ -491,7 +501,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
         <div
           ref={scrollContainerRef}
           className="dossier-scrollable-content flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 space-y-6 overscroll-contain"
-          style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
+          style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y pinch-zoom' }}
         >
           {/* Teal Status Band & Stay Limit Card (Redesign Screen 5) */}
           <div className="rounded-2xl bg-teal-600 p-4 text-white shadow-md">
@@ -520,7 +530,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
             {/* 1. Currency Hub & Mini Cheat-Sheet Matrix Quick Trigger */}
             <button
               type="button"
-              onClick={() => setActiveTab('logistics')}
+              onClick={() => scrollToSection('logistics', 'dossier-currency-matrix')}
               className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-amber-50/50 dark:hover:bg-amber-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-amber-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
               <div className="flex items-center justify-between w-full">
@@ -551,7 +561,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
             {/* 2. Time Zone Sync & Dual Clock Quick Trigger */}
             <button
               type="button"
-              onClick={() => setActiveTab('logistics')}
+              onClick={() => scrollToSection('logistics', 'dossier-dual-clock')}
               className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-sky-50/50 dark:hover:bg-sky-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-sky-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
               <div className="flex items-center justify-between w-full">
@@ -581,7 +591,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
             {/* 3. Connectivity & SIM Quick Trigger */}
             <button
               type="button"
-              onClick={() => setActiveTab('logistics')}
+              onClick={() => scrollToSection('logistics', 'dossier-internet-sim')}
               className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-teal-50/50 dark:hover:bg-teal-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-teal-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
               <div className="flex items-center justify-between w-full">
@@ -604,7 +614,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
             {/* 4. Sockets & Safety Quick Pill */}
             <button
               type="button"
-              onClick={() => setActiveTab('logistics')}
+              onClick={() => scrollToSection('logistics', 'dossier-sockets-safety')}
               className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-emerald-50/50 dark:hover:bg-emerald-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-emerald-400/40 transition-all cursor-pointer text-left shadow-2xs"
             >
               <div className="flex items-center justify-between w-full">
@@ -715,14 +725,6 @@ Planlayan: Vizamigo (vizamigo.com)`;
             <span>{l('🛂 Vize & Güvenlik Kartı', '🛂 Visa & Travel Dossier', '🛂 Visum & Sicherheitskarte')}</span>
           </button>
         </div>
-
-        {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
-        <CountryRichSnippetSummary
-          countryCode={code}
-          currentPassport={currentPassport}
-          language={language}
-          variant="modal"
-        />
 
         {/* TAB: KOLAY TATİL & 360° SEYAHAT ASİSTANI (GİDERKEN, GİDİNCE, DÖNERKEN TÜM UYGULAMA VE ORTAKLIKLAR) */}
         {activeTab === 'concierge' && (
@@ -1025,7 +1027,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
               {/* Bento Grid Top Section: 1. Currency Hub & 2. Time Zone Buddy */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
                 {/* 1. AKILLI DÖVİZ ARAÇLARI (CURRENCY HUB) */}
-                <div className="lg:col-span-7 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
+                <div id="dossier-currency-matrix" className="lg:col-span-7 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
                   {/* Header */}
                   <div className="flex items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
                     <div className="flex items-center gap-2.5">
@@ -1252,7 +1254,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 {/* 2. DÜNYA SAATİ VE ZAMAN DİLİMİ (TIME ZONE BUDDY) */}
-                <div className="lg:col-span-5 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px] flex flex-col justify-between">
+                <div id="dossier-dual-clock" className="lg:col-span-5 bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px] flex flex-col justify-between">
                   <div>
                     {/* Header */}
                     <div className="flex items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
@@ -1438,7 +1440,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* 3. İNTERNET VE BAĞLANTI İSTİHBARATI (NOMAD CONNECTIVITY) */}
-              <div className="bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
+              <div id="dossier-internet-sim" className="bento-card p-5 sm:p-6 bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 shadow-xs space-y-5 rounded-[24px]">
                 <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-white/10 pb-3.5">
                   <div className="flex items-center gap-2.5">
                     <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 text-white flex items-center justify-center shadow-sm">
@@ -1526,7 +1528,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   </div>
 
                   {/* Pillar 2: Priz & Voltaj Detayı (Vektörel Çizim) */}
-                  <div className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
+                  <div id="dossier-sockets-safety" className="p-4 rounded-2xl bg-slate-50/70 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 font-bold text-xs text-slate-900 dark:text-white">
                         <Plug className="w-4 h-4 text-amber-500" />
@@ -2322,6 +2324,14 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {/* TAB 5: VİZE & GÜVENLİK KARTI (UYGULAMADAKİ TÜM DETAYLAR) */}
           {activeTab === 'visa' && (
             <div className="space-y-6 animate-in fade-in duration-200">
+              {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
+              <CountryRichSnippetSummary
+                countryCode={code}
+                currentPassport={currentPassport}
+                language={language}
+                variant="modal"
+              />
+
               {/* Giriş Rejimi & Vize Şartları */}
               <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-4">
                 <div className="flex items-center justify-between gap-2 flex-wrap">

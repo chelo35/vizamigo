@@ -713,7 +713,7 @@ details.semantic-mobile-accordion {
   display: block;
   width: 100%;
   overflow: visible;
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
 }
 
 details.semantic-card-details > summary,
@@ -753,7 +753,7 @@ header,
   -webkit-overflow-scrolling: touch !important;
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
-  touch-action: pan-x !important;
+  touch-action: pan-x pinch-zoom !important;
 }
 
 .horizontal-badge-slider::-webkit-scrollbar,
@@ -766,7 +766,7 @@ header,
 /* 3. Smooth touch scrolling on all scrollable country content containers & modals */
 .country-card,
 .country-card-wrapper {
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
   overflow: visible;
   height: auto !important;
 }
@@ -775,7 +775,7 @@ header,
 .dossier-scrollable-content {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
   overscroll-behavior-y: contain;
 }
 
@@ -832,7 +832,7 @@ body,
 #root {
   min-height: 100dvh;
   min-height: -webkit-fill-available;
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -846,7 +846,7 @@ body,
   min-height: -webkit-fill-available;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
 }
 
 .aspect-thumbnail-container {

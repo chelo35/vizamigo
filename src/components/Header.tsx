@@ -67,7 +67,8 @@ export const Header: React.FC<HeaderProps> = ({
   const [langMenuOpen, setLangMenuOpen] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
-  const langRef = useRef<HTMLDivElement>(null);
+  const mobileLangRef = useRef<HTMLDivElement>(null);
+  const desktopLangRef = useRef<HTMLDivElement>(null);
 
   // Click outside to close menus
   useEffect(() => {
@@ -76,7 +77,9 @@ export const Header: React.FC<HeaderProps> = ({
       if (menuRef.current && !menuRef.current.contains(target)) {
         setUserMenuOpen(false);
       }
-      if (langRef.current && !langRef.current.contains(target)) {
+      const clickedInsideMobile = mobileLangRef.current && mobileLangRef.current.contains(target);
+      const clickedInsideDesktop = desktopLangRef.current && desktopLangRef.current.contains(target);
+      if (!clickedInsideMobile && !clickedInsideDesktop) {
         setLangMenuOpen(false);
       }
     };
@@ -194,7 +197,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {/* Language Selector Dropdown on Mobile */}
-          <div className="relative shrink-0" ref={langRef}>
+          <div className="relative shrink-0" ref={mobileLangRef}>
             <button
               type="button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
@@ -207,7 +210,7 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
 
             {langMenuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-[#111625] border border-slate-200/80 dark:border-white/10 rounded-[20px] shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-[#111625] border border-slate-200/80 dark:border-white/10 rounded-[20px] shadow-2xl py-2 z-[10000] animate-in fade-in slide-in-from-top-1 duration-150">
                 {SUPPORTED_LANGUAGES.map(opt => (
                   <button
                     key={opt.code}
@@ -215,6 +218,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => {
                       setLanguage(opt.code);
                       setLangMenuOpen(false);
+                      window.dispatchEvent(new PopStateEvent('popstate'));
                     }}
                     className={`w-full text-left px-4 py-2.5 min-h-[44px] text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-colors cursor-pointer touch-target-min ${
                       language === opt.code
@@ -292,7 +296,7 @@ export const Header: React.FC<HeaderProps> = ({
           )}
 
           {/* Desktop Language Selector */}
-          <div className="relative" ref={langRef}>
+          <div className="relative" ref={desktopLangRef}>
             <button
               type="button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
@@ -313,6 +317,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => {
                       setLanguage(opt.code);
                       setLangMenuOpen(false);
+                      window.dispatchEvent(new PopStateEvent('popstate'));
                     }}
                     className={`w-full text-left px-4 py-2.5 min-h-[44px] text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-colors cursor-pointer touch-target-min ${
                       language === opt.code
