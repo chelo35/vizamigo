@@ -13,7 +13,7 @@ import {
   getHreflangAlternatesForRoute
 } from '../utils/seoRouter';
 import { getCountryName } from '../data/passportData';
-import { injectCountrySchema } from '../utils/schemaGenerator';
+import { injectCountrySchema, getCountrySeoMeta } from '../utils/schemaGenerator';
 
 interface SeoHeadProps {
   language: SupportedLanguage;
@@ -91,27 +91,9 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     let metaDescription = '199 ülkenin güncel vize rejimleri, çifte pasaport mukayesesi, Schengen 90/180 gün kuralı hesaplayıcı, konsolosluk acil durum kriz masaları ve dijital göçebe rehberi.';
 
     if (countryCode) {
-      const code = countryCode.toUpperCase();
-      const countryName = getCountryName(code, language);
-      const passportName = getCountryName(currentPassport, language);
-
-      if (language === 'en') {
-        pageTitle = `Do I Need a Visa for ${countryName}? (2026 Entry Rules) | Vizamigo`;
-        metaDescription = `Do you need a visa for ${countryName} in 2026? Check official visa requirements, maximum stay duration, passport validity rules, and complete travel guide.`;
-      } else if (language === 'de') {
-        pageTitle = `Braucht man ein Visum für ${countryName}? (Einreisebestimmungen 2026) | Vizamigo`;
-        metaDescription = `Braucht man 2026 ein Visum für ${countryName}? Offizielle Visabestimmungen, maximale Aufenthaltsdauer, Gültigkeitsregeln für Reisepässe und Reiseführer.`;
-      } else if (language === 'es') {
-        pageTitle = `¿Se necesita visa para ${countryName}? (Reglas de Entrada 2026) | Vizamigo`;
-        metaDescription = `¿Se necesita visado para ${countryName} en 2026? Requisitos oficiales, duración máxima de estancia, validez del pasaporte y guía de viaje.`;
-      } else if (language === 'ru') {
-        pageTitle = `Нужна ли виза в ${countryName}? (Правила въезда 2026) | Vizamigo`;
-        metaDescription = `Нужна ли виза в ${countryName} в 2026 году? Актуальные правила въезда, разрешенный срок пребывания, требования к паспорту и гид.`;
-      } else {
-        const nationalityTerm = currentPassport === 'TR' ? 'Türk Vatandaşlarından' : `${passportName} Vatandaşlarından`;
-        pageTitle = `${countryName} ${nationalityTerm} Vize İstiyor mu? (2026 Kuralları) | Vizamigo`;
-        metaDescription = `2026 güncel kurallarıyla ${countryName} vize istiyor mu? Kalış süreleri, pasaport geçerlilik şartı, sınır kapısı kuralları ve 360° seyahat rehberi.`;
-      }
+      const seoMeta = getCountrySeoMeta(countryCode, language, currentPassport);
+      pageTitle = seoMeta.title;
+      metaDescription = seoMeta.description;
     } else {
       switch (tab) {
         case 'plan':

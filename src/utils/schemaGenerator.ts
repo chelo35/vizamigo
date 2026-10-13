@@ -198,17 +198,158 @@ export function generateDirectAnswerSnippet(
   }
 }
 
+export interface CountrySeoMeta {
+  title: string;
+  description: string;
+  h1: string;
+  voiceQuestion: string;
+}
+
+export interface CountrySectionHeadings {
+  h1: string;
+  currencyH2: string;
+  clockWeatherH2: string;
+  internetEsimH2: string;
+  transportTaxiH2: string;
+  itineraryRouteH2: string;
+  practicalEtiquetteH2: string;
+  budgetAccommodationH2: string;
+  transitRulesH2: string;
+  passportSynergyH2: string;
+  geographyMapH2: string;
+}
+
+/**
+ * Returns natural search H1, Title, and Meta Description for country detail across 5 languages
+ */
+export function getCountrySeoMeta(
+  countryCode: string,
+  language: SupportedLanguage,
+  currentPassport: string = 'TR'
+): CountrySeoMeta {
+  const code = countryCode.toUpperCase();
+  const countryName = getCountryName(code, language);
+  const passportName = getCountryName(currentPassport, language);
+  const voiceQuestion = getMobileVoiceQuestion(countryName, passportName, language);
+  const h1 = getCountryNaturalH1(countryName, language);
+
+  const passportItems = getPassportItems(currentPassport);
+  const item = passportItems.find(i => i.c === code) || { c: code, v: 'v', cat: 'visa' as const, id: false };
+  const stayDuration = getStayDurationText(item.v, item.cat, language);
+  const directAnswer = generateDirectAnswerSnippet(
+    countryName,
+    passportName,
+    item.cat,
+    stayDuration,
+    item.id,
+    language
+  );
+
+  return {
+    title: `${voiceQuestion} | Vizamigo`,
+    description: directAnswer,
+    h1,
+    voiceQuestion
+  };
+}
+
+/**
+ * Returns natural mobile question & search-intent H2 headings for all country detail widgets
+ */
+export function getCountrySectionHeadings(
+  countryName: string,
+  language: SupportedLanguage
+): CountrySectionHeadings {
+  const h1 = getCountryNaturalH1(countryName, language);
+
+  switch (language) {
+    case 'tr':
+      return {
+        h1,
+        currencyH2: `${countryName} Para Birimi ve Güncel Döviz Kurları (USD/EUR/TRY)`,
+        clockWeatherH2: `${countryName} Yerel Saati, Hava Durumu ve İklim Rehberi`,
+        internetEsimH2: `${countryName} İnternet Hızı, eSIM ve Mobil Hat Rehberi`,
+        transportTaxiH2: `${countryName} Ulaşım, Havalimanı Transferi ve Taksi Uygulamaları`,
+        itineraryRouteH2: `${countryName} Gezi Rotası, Popüler Şehirler ve Turistik Duraklar`,
+        practicalEtiquetteH2: `${countryName} Priz Tipi, Bahşiş Kültürü ve Yerel Kurallar`,
+        budgetAccommodationH2: `${countryName} Günlük Seyahat Bütçesi, Konaklama ve Uçuş Rehberi`,
+        transitRulesH2: `${countryName} Havalimanı Transit Geçiş ve Aktarma Vizesi Kuralları`,
+        passportSynergyH2: `${countryName} Vize Politikası ve Pasaport Karşılaştırma Matrisi`,
+        geographyMapH2: `${countryName} Coğrafi Konumu, Başkenti ve Harita Rehberi`
+      };
+    case 'de':
+      return {
+        h1,
+        currencyH2: `${countryName} Währung und Aktuelle Wechselkurse (USD/EUR/TRY)`,
+        clockWeatherH2: `${countryName} Ortszeit, Zeitzone und Aktuelles Wetter`,
+        internetEsimH2: `${countryName} Internetgeschwindigkeit, eSIM & Mobilfunk`,
+        transportTaxiH2: `${countryName} Transport, Flughafentransfer & Taxi-Apps`,
+        itineraryRouteH2: `${countryName} Reiseroute, Top-Städte & Sehenswürdigkeiten`,
+        practicalEtiquetteH2: `${countryName} Steckdosentyp, Trinkgeld & Lokale Etikette`,
+        budgetAccommodationH2: `${countryName} Reisebudget, Unterkunft & Flugoptionen`,
+        transitRulesH2: `${countryName} Flughafentransit & Umsteigebestimmungen`,
+        passportSynergyH2: `${countryName} Visapolitik & Reisepass-Vergleichsmatrix`,
+        geographyMapH2: `${countryName} Geografische Lage, Hauptstadt & Karte`
+      };
+    case 'es':
+      return {
+        h1,
+        currencyH2: `Moneda de ${countryName} y Tipos de Cambio Actuales (USD/EUR/TRY)`,
+        clockWeatherH2: `Hora Local, Zona Horaria y Clima en ${countryName}`,
+        internetEsimH2: `Velocidad de Internet, eSIM y Datos Móviles en ${countryName}`,
+        transportTaxiH2: `Transporte, Traslado al Aeropuerto y Apps de Taxi en ${countryName}`,
+        itineraryRouteH2: `Itinerario de Viaje, Ciudades Populares y Ruta por ${countryName}`,
+        practicalEtiquetteH2: `Enchufes, Propinas y Costumbres Locales en ${countryName}`,
+        budgetAccommodationH2: `Presupuesto Diario, Alojamiento y Vuelos a ${countryName}`,
+        transitRulesH2: `Reglas de Tránsito Aeroportuario y Escalas en ${countryName}`,
+        passportSynergyH2: `Política de Visados y Comparativa de Pasaportes para ${countryName}`,
+        geographyMapH2: `Ubicación Geográfica, Capital y Mapa de ${countryName}`
+      };
+    case 'ru':
+      return {
+        h1,
+        currencyH2: `Валюта ${countryName} и актуальные курсы обмена (USD/EUR/TRY)`,
+        clockWeatherH2: `Местное время, часовой пояс и погода в ${countryName}`,
+        internetEsimH2: `Скорость интернета, eSIM и мобильная связь в ${countryName}`,
+        transportTaxiH2: `Транспорт, трансфер из аэропорта и такси в ${countryName}`,
+        itineraryRouteH2: `Маршрут путешествия, популярные города и гид по ${countryName}`,
+        practicalEtiquetteH2: `Розетки, чаевые и местные правила в ${countryName}`,
+        budgetAccommodationH2: `Дневной бюджет, проживание и авиабилеты в ${countryName}`,
+        transitRulesH2: `Правила транзита в аэропорту и пересадки в ${countryName}`,
+        passportSynergyH2: `Визовая политика и сравнение паспортов для ${countryName}`,
+        geographyMapH2: `Географическое положение, столица и карта ${countryName}`
+      };
+    default:
+      return {
+        h1,
+        currencyH2: `${countryName} Currency & Live Exchange Rates (USD/EUR/TRY)`,
+        clockWeatherH2: `${countryName} Local Time, Timezone & Weather Guide`,
+        internetEsimH2: `${countryName} Internet Speed, eSIM & Mobile Connectivity`,
+        transportTaxiH2: `${countryName} Airport Transit, Ride-Hailing & Taxi Apps`,
+        itineraryRouteH2: `${countryName} Travel Itinerary, Popular Cities & Route Guide`,
+        practicalEtiquetteH2: `${countryName} Power Plugs, Tipping & Cultural Etiquette`,
+        budgetAccommodationH2: `${countryName} Daily Travel Costs, Hotels & Flights`,
+        transitRulesH2: `${countryName} Airport Transit & Layover Visa Rules`,
+        passportSynergyH2: `${countryName} Visa Policy & Passport Comparison Matrix`,
+        geographyMapH2: `${countryName} Geographic Location, Capital & Map Intelligence`
+      };
+  }
+}
+
 /**
  * Returns voice-intent mobile search question for country
  */
 export function getMobileVoiceQuestion(
   countryName: string,
   passportName: string,
-  language: SupportedLanguage
+  language: SupportedLanguage,
+  currentPassport: string = 'TR'
 ): string {
   switch (language) {
-    case 'tr':
-      return `${countryName} ${passportName} Vatandaşlarından Vize İstiyor mu? (2026 Kuralları)`;
+    case 'tr': {
+      const nationalityTerm = currentPassport === 'TR' ? 'Türk Vatandaşlarından' : `${passportName} Vatandaşlarından`;
+      return `${countryName} ${nationalityTerm} Vize İstiyor mu? (2026 Kuralları)`;
+    }
     case 'en':
       return `Do I Need a Visa for ${countryName}? (2026 Entry Rules)`;
     case 'de':
@@ -277,15 +418,16 @@ export function generateCountryJsonLd({
     item.id,
     language
   );
-  const voiceQuestion = getMobileVoiceQuestion(countryName, passportName, language);
+  const voiceQuestion = getMobileVoiceQuestion(countryName, passportName, language, currentPassport);
 
-  // Cross currency calculations
+  // Cross currency calculations (USD, EUR, TRY, GBP)
   const destCurrency = geography.currencyCode || 'USD';
   const rate1Usd = formatCurrencyValue(getCrossRate('USD', destCurrency));
   const rate1Eur = formatCurrencyValue(getCrossRate('EUR', destCurrency));
+  const rate1Try = formatCurrencyValue(getCrossRate('TRY', destCurrency));
   const rate1Gbp = formatCurrencyValue(getCrossRate('GBP', destCurrency));
 
-  // Itinerary stops
+  // Itinerary stops with geographic route order
   const itineraryListElements = itinerary.stops.map((stop, idx) => ({
     '@type': 'ListItem',
     position: idx + 1,
@@ -303,7 +445,7 @@ export function generateCountryJsonLd({
     }
   }));
 
-  // JSON-LD @graph definition
+  // JSON-LD @graph definition combining TouristDestination, TouristTrip, FAQPage & BreadcrumbList
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -330,6 +472,11 @@ export function generateCountryJsonLd({
           'InternationalTraveler'
         ],
         currencyAccepted: destCurrency,
+        includesAttraction: itinerary.stops.map(stop => ({
+          '@type': 'TouristAttraction',
+          name: stop.name,
+          description: stop.highlights.join(', ')
+        })),
         additionalProperty: [
           {
             '@type': 'PropertyValue',
@@ -338,8 +485,13 @@ export function generateCountryJsonLd({
           },
           {
             '@type': 'PropertyValue',
-            name: 'Permitted Stay Duration',
+            name: 'Visa Validity & Permitted Stay Period',
             value: stayDuration
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'National ID Card Entry',
+            value: item.id ? 'Supported' : 'Passport Required'
           },
           {
             '@type': 'PropertyValue',
@@ -360,6 +512,11 @@ export function generateCountryJsonLd({
           },
           {
             '@type': 'PropertyValue',
+            name: 'eSIM Availability',
+            value: insights.internet.esimAvailable ? 'Available' : 'Local SIM Only'
+          },
+          {
+            '@type': 'PropertyValue',
             name: 'Safety Score',
             value: `${insights.safety.safetyScore}`,
             minValue: '0',
@@ -374,6 +531,11 @@ export function generateCountryJsonLd({
             '@type': 'PropertyValue',
             name: 'Cross Currency EUR',
             value: `1 EUR = ${rate1Eur} ${destCurrency}`
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Cross Currency TRY',
+            value: `1 TRY = ${rate1Try} ${destCurrency}`
           },
           {
             '@type': 'PropertyValue',
@@ -393,18 +555,41 @@ export function generateCountryJsonLd({
         ]
       },
 
-      // 2. TouristTrip node
+      // 2. TouristTrip node (Geographic route order, visa validity & connectivity context)
       {
         '@type': 'TouristTrip',
         '@id': tripId,
         name: itinerary.routeName,
         description: itinerary.routeSummary,
-        touristType: 'InternationalTraveler',
+        url: localizedCountryUrl,
+        inLanguage: language,
+        touristType: [
+          'InternationalTraveler',
+          'DigitalNomad'
+        ],
         itinerary: {
           '@type': 'ItemList',
+          itemListOrder: 'https://schema.org/ItemListOrderAscending',
           numberOfItems: itineraryListElements.length,
           itemListElement: itineraryListElements
         },
+        additionalProperty: [
+          {
+            '@type': 'PropertyValue',
+            name: 'Visa Validity Period',
+            value: stayDuration
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Destination Currency Matrix',
+            value: `1 USD = ${rate1Usd} ${destCurrency} | 1 EUR = ${rate1Eur} ${destCurrency} | 1 TRY = ${rate1Try} ${destCurrency}`
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Local Connectivity Speed',
+            value: `${insights.internet.mobileSpeedMbps} Mbps Mobile / ${insights.internet.broadbandSpeedMbps} Mbps Broadband`
+          }
+        ],
         offers: {
           '@type': 'Offer',
           price: '0',
@@ -417,6 +602,7 @@ export function generateCountryJsonLd({
       {
         '@type': 'FAQPage',
         '@id': faqId,
+        inLanguage: language,
         mainEntity: [
           {
             '@type': 'Question',
@@ -429,17 +615,33 @@ export function generateCountryJsonLd({
           {
             '@type': 'Question',
             name: language === 'tr'
-              ? `${countryName} Para Birimi ve Güncel Döviz Kurları Nedir?`
+              ? `${countryName} Para Birimi ve Güncel Döviz Kurları (USD/EUR/TRY) Nedir?`
               : language === 'de'
-              ? `Welche Währung und Wechselkurse gelten in ${countryName}?`
+              ? `Welche Währung und Wechselkurse (USD/EUR/TRY) gelten in ${countryName}?`
               : language === 'es'
-              ? `¿Cuál es la moneda y el tipo de cambio en ${countryName}?`
+              ? `¿Cuál es la moneda y el tipo de cambio (USD/EUR/TRY) en ${countryName}?`
               : language === 'ru'
-              ? `Какая валюта и курсы обмена в ${countryName}?`
-              : `What is the currency and exchange rate in ${countryName}?`,
+              ? `Какая валюта и курсы обмена (USD/EUR/TRY) в ${countryName}?`
+              : `What is the currency and exchange rate (USD/EUR/TRY) in ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `${countryName} official currency is ${geography.currencyName} (${destCurrency} - ${geography.currencySymbol}). Live cross rates: 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
+              text: `${countryName} (${geography.currencyName}, ${destCurrency} ${geography.currencySymbol}): 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 TRY = ${rate1Try} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
+            }
+          },
+          {
+            '@type': 'Question',
+            name: language === 'tr'
+              ? `${countryName} İnternet Hızı, eSIM ve Önerilen Gezi Rotası Nasıldır?`
+              : language === 'de'
+              ? `Wie schnell ist das Internet in ${countryName} und welche Reiseroute wird empfohlen?`
+              : language === 'es'
+              ? `¿Cuál es la velocidad de internet en ${countryName} y qué ruta de viaje se recomienda?`
+              : language === 'ru'
+              ? `Какая скорость интернета в ${countryName} и какой маршрут рекомендуется?`
+              : `What is the internet speed in ${countryName} and recommended travel route?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `${countryName} connectivity: ${insights.internet.mobileSpeedMbps} Mbps mobile, ${insights.internet.broadbandSpeedMbps} Mbps broadband. Route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.`
             }
           }
         ]

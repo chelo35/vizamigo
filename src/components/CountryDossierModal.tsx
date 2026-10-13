@@ -725,12 +725,12 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-2">
                   <div className="flex items-center gap-2">
                     <Route className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                    <h4 className="font-extrabold text-base text-slate-900 dark:text-white">
-                      {l('Uğranması Gereken Duraklar & Günlük Gezi Planı', 'Must-Visit Stops & Day-by-Day Itinerary', 'Stopps & Detaillierter Tagesplan')}
-                    </h4>
+                    <h3 className="font-extrabold text-base text-slate-900 dark:text-white">
+                      {l('Uğranması Gereken Duraklar & Günlük Gezi Planı', 'Must-Visit Stops & Day-by-Day Itinerary', 'Stopps & Detaillierter Tagesplan', 'Paradas Imprescindibles e Itinerario Diario', 'Обязательные остановки и план по дням')}
+                    </h3>
                   </div>
                   <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-                    {itinerary.stops.length} {l('Ana Durak', 'Main Stops', 'Hauptstopps')}
+                    {itinerary.stops.length} {l('Ana Durak', 'Main Stops', 'Hauptstopps', 'Paradas Principales', 'Главных остановок')}
                   </span>
                 </div>
 
@@ -750,13 +750,13 @@ Planlayan: Vizamigo (vizamigo.com)`;
                               {sIdx + 1}
                             </span>
                             <div className="min-w-0">
-                              <h5 className="font-black text-sm sm:text-base text-slate-900 dark:text-white truncate">
+                              <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-white truncate">
                                 {stop.name}
-                              </h5>
+                              </h3>
                               <div className="flex items-center gap-2 mt-0.5">
                                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-teal-50 dark:bg-teal-950/70 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800 font-bold text-xs">
                                   <Clock className="w-3 h-3" />
-                                  <span>{l('Yeterli Ziyaret Süresi:', 'Duration:', 'Dauer:')} {stop.recommendedDuration}</span>
+                                  <span>{l('Yeterli Ziyaret Süresi:', 'Duration:', 'Dauer:', 'Duración:', 'Длительность:')} {stop.recommendedDuration}</span>
                                 </span>
                               </div>
                             </div>
@@ -768,7 +768,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-teal-50 dark:hover:bg-slate-800 text-teal-700 dark:text-teal-300 border border-slate-200 dark:border-slate-700 text-xs font-semibold shadow-2xs cursor-pointer transition-colors"
                           >
                             <MapPin className="w-3.5 h-3.5 text-teal-600" />
-                            <span>{l('Durağı Haritada Aç', 'View Stop on Maps', 'Auf Karte zeigen')}</span>
+                            <span>{l('Durağı Haritada Aç', 'View Stop on Maps', 'Auf Karte zeigen', 'Ver en el Mapa', 'Открыть на карте')}</span>
                             <ExternalLink className="w-3 h-3 opacity-60" />
                           </button>
                         </div>
@@ -777,7 +777,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         {stop.highlights.length > 0 && (
                           <div>
                             <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">
-                              {l('Görülmesi Gereken İkonik Noktalar:', 'Must-See Landmarks:', 'Wichtigste Sehenswürdigkeiten:')}
+                              {l('Görülmesi Gereken İkonik Noktalar:', 'Must-See Landmarks:', 'Wichtigste Sehenswürdigkeiten:', 'Lugares Emblemáticos:', 'Главные достопримечательности:')}
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {stop.highlights.map((h, hIdx) => (
@@ -796,7 +796,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         {/* Activities List */}
                         <div className="space-y-1.5 pt-1">
                           <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
-                            🏃 {l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:')}
+                            🏃 {l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:', 'Qué Hacer y Actividades:', 'Чем заняться и что посмотреть:')}
                           </div>
                           <ul className="space-y-1.5">
                             {stop.activities.map((act, aIdx) => (
@@ -812,7 +812,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         <div className="p-3 rounded-xl bg-orange-50/80 dark:bg-orange-950/30 border border-orange-200/80 dark:border-orange-800/60 space-y-1.5">
                           <div className="flex items-center gap-1.5 text-xs font-black text-orange-900 dark:text-orange-200">
                             <Utensils className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400" />
-                            <span>{l('🍲 Bu Durakta Ne Yenir & Ne İçilir?', '🍲 What to Eat & Drink at this Stop:', '🍲 Essen & Trinken an diesem Stopp:')}</span>
+                            <span>{l('🍲 Bu Durakta Ne Yenir & Ne İçilir?', '🍲 What to Eat & Drink at this Stop:', '🍲 Essen & Trinken an diesem Stopp:', '🍲 Qué Comer y Beber en esta Parada:', '🍲 Что поесть и выпить на этой остановке:')}</span>
                           </div>
                           <div className="flex flex-wrap gap-2 pt-0.5">
                             {stop.foodAndDrinks.map((fd, fIdx) => (
@@ -830,7 +830,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         <div className="p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/60 space-y-1.5">
                           <div className="flex items-center gap-1.5 text-xs font-black text-amber-900 dark:text-amber-200">
                             <AlertTriangle className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                            <span>{l('⚠️ Nelere Dikkat Edilir & Kritik İpuçları:', '⚠️ What to Watch Out for & Tips:', '⚠️ Wichtige Hinweise & Tipps:')}</span>
+                            <span>{l('⚠️ Nelere Dikkat Edilir & Kritik İpuçları:', '⚠️ What to Watch Out for & Tips:', '⚠️ Wichtige Hinweise & Tipps:', '⚠️ Precauciones y Consejos Clave:', '⚠️ На что обратить внимание и советы:')}</span>
                           </div>
                           <ul className="space-y-1">
                             {stop.criticalTips.map((tip, tIdx) => (
@@ -851,9 +851,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
               <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-4">
                 <div className="flex items-center gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-3">
                   <Utensils className="w-5 h-5 text-orange-600 dark:text-orange-400" />
-                  <h4 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
-                    {l('Mutfak Kültürü: Rotanın İmza Lezzetleri & İçecekleri', 'Culinary Culture: Signature Dishes & Drinks', 'Kulinarik: Typische Gerichte & Getränke')}
-                  </h4>
+                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                    {l('Mutfak Kültürü: Rotanın İmza Lezzetleri & İçecekleri', 'Culinary Culture: Signature Dishes & Drinks', 'Kulinarik: Typische Gerichte & Getränke', 'Cultura Culinaria: Platos y Bebidas Emblemáticas', 'Кулинарная культура: фирменные блюда и напитки')}
+                  </h3>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -861,7 +861,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-700/70 space-y-2">
                     <div className="text-xs font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍲</span>
-                      <span>{l('Öne Çıkan Yemekler', 'Signature Dishes', 'Typische Gerichte')}</span>
+                      <span>{l('Öne Çıkan Yemekler', 'Signature Dishes', 'Typische Gerichte', 'Platos Destacados', 'Фирменные блюда')}</span>
                     </div>
                     <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-300 font-medium">
                       {itinerary.signatureGastronomy.dishes.map((dish, idx) => (
@@ -874,7 +874,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-700/70 space-y-2">
                     <div className="text-xs font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍹</span>
-                      <span>{l('Geleneksel İçecekler', 'Traditional Drinks', 'Traditionelle Getränke')}</span>
+                      <span>{l('Geleneksel İçecekler', 'Traditional Drinks', 'Traditionelle Getränke', 'Bebidas Tradicionales', 'Традиционные напитки')}</span>
                     </div>
                     <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-300 font-medium">
                       {itinerary.signatureGastronomy.drinks.map((drink, idx) => (
@@ -887,7 +887,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-700/70 space-y-2">
                     <div className="text-xs font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍢</span>
-                      <span>{l('Sokak Lezzetleri & Tatlılar', 'Street Food & Sweets', 'Streetfood & Süßes')}</span>
+                      <span>{l('Sokak Lezzetleri & Tatlılar', 'Street Food & Sweets', 'Streetfood & Süßes', 'Comida Callejera y Postres', 'Уличная еда и сладости')}</span>
                     </div>
                     <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-300 font-medium">
                       {itinerary.signatureGastronomy.streetFoods.map((snack, idx) => (
@@ -898,7 +898,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 <div className="p-3 rounded-xl bg-teal-50/70 dark:bg-teal-950/40 border border-teal-200/70 dark:border-teal-800/60 text-xs text-teal-950 dark:text-teal-200 font-medium leading-relaxed">
-                  <b className="font-bold">💡 {l('Masa Kültürü & Bahşiş:', 'Dining Etiquette & Tipping:', 'Tischsitten & Trinkgeld:')}</b> {itinerary.signatureGastronomy.diningAdvice}
+                  <b className="font-bold">💡 {l('Masa Kültürü & Bahşiş:', 'Dining Etiquette & Tipping:', 'Tischsitten & Trinkgeld:', 'Etiqueta en la Mesa y Propinas:', 'Культура застолья и чаевые:')}</b> {itinerary.signatureGastronomy.diningAdvice}
                 </div>
               </div>
 
@@ -908,9 +908,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 sm:p-5 space-y-2.5">
                   <div className="flex items-center gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-2">
                     <span className="text-lg">🎒</span>
-                    <h5 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">
-                      {l('Yanınıza Almanız Gerekenler (Çanta)', 'Packing Essentials', 'Packliste & Must-Haves')}
-                    </h5>
+                    <h3 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">
+                      {l('Yanınıza Almanız Gerekenler (Çanta)', 'Packing Essentials', 'Packliste & Must-Haves', 'Imprescindibles en el Equipaje', 'Что взять с собой')}
+                    </h3>
                   </div>
                   <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
                     {itinerary.packingAndPrecautions.essentials.map((item, idx) => (
@@ -926,9 +926,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 sm:p-5 space-y-2.5">
                   <div className="flex items-center gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-2">
                     <Shield className="w-4 h-4 text-emerald-600" />
-                    <h5 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">
-                      {l('Güvenlik & Yerel Görgü Kuralları', 'Safety & Cultural Etiquette', 'Sicherheit & Verhaltensregeln')}
-                    </h5>
+                    <h3 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">
+                      {l('Güvenlik & Yerel Görgü Kuralları', 'Safety & Cultural Etiquette', 'Sicherheit & Verhaltensregeln', 'Seguridad y Etiqueta Cultural', 'Безопасность и местный этикет')}
+                    </h3>
                   </div>
                   <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
                     {itinerary.packingAndPrecautions.safetyAndEtiquette.map((rule, idx) => (
@@ -1944,9 +1944,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
                   <div className="flex items-center gap-2 mb-2.5">
                     <Sparkles className="w-4 h-4 text-amber-500" />
-                    <h4 className="font-bold text-sm text-slate-900 dark:text-slate-100">
-                      {l('Önemli Festivaller ve Etkinlikler', 'Major Festivals & Cultural Events', 'Bedeutende Feste & Kultur')}
-                    </h4>
+                    <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">
+                      {l('Önemli Festivaller ve Etkinlikler', 'Major Festivals & Cultural Events', 'Bedeutende Feste & Kultur', 'Festivales y Eventos Culturales', 'Главные фестивали и праздники')}
+                    </h3>
                   </div>
                   <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
                     {encyclopedia.culture.festivals.map((fest, idx) => (
@@ -1961,18 +1961,18 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 {/* Yaşam Tarzı ve Seyahat Tüyosu */}
                 <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-3">
                   <div>
-                    <div className="text-[11px] font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">
-                      {l('Sosyal Yaşam ve Ruh Hali', 'Social Vibe & Lifestyle', 'Lebensart')}
-                    </div>
+                    <h3 className="text-[11px] font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider m-0">
+                      {l('Sosyal Yaşam ve Ruh Hali', 'Social Vibe & Lifestyle', 'Lebensart', 'Estilo de Vida y Ambiente Social', 'Образ жизни и атмосфера')}
+                    </h3>
                     <p className="text-xs text-slate-700 dark:text-slate-300 mt-1 leading-relaxed">
                       {encyclopedia.culture.lifestyle}
                     </p>
                   </div>
 
                   <div className="pt-2 border-t border-slate-200 dark:border-slate-700/60">
-                    <div className="text-[11px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider">
-                      {l('Gezginler İçin Seyahat Tarzı Tüyosu', 'Travel Style Tip for Explorers', 'Reisetipp')}
-                    </div>
+                    <h3 className="text-[11px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider m-0">
+                      {l('Gezginler İçin Seyahat Tarzı Tüyosu', 'Travel Style Tip for Explorers', 'Reisetipp', 'Consejo para Viajeros', 'Совет для путешественников')}
+                    </h3>
                     <p className="text-xs text-slate-700 dark:text-slate-300 mt-1 leading-relaxed">
                       {encyclopedia.tourism.travelStyleTip}
                     </p>
@@ -2012,9 +2012,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-lg">☕</span>
-                    <h4 className="font-bold text-sm text-slate-900 dark:text-slate-100">
-                      {l('Geleneksel ve Popüler İçecekler', 'Traditional & Popular Drinks', 'Traditionelle Getränke')}
-                    </h4>
+                    <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">
+                      {l('Geleneksel ve Popüler İçecekler', 'Traditional & Popular Drinks', 'Traditionelle Getränke', 'Bebidas Tradicionales y Populares', 'Традиционные и популярные напитки')}
+                    </h3>
                   </div>
                   <div className="space-y-2">
                     {encyclopedia.gastronomy.traditionalDrinks.map((drink, idx) => (
@@ -2033,9 +2033,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-lg">🍰</span>
-                    <h4 className="font-bold text-sm text-slate-900 dark:text-slate-100">
-                      {l('Sokak Lezzetleri ve Tatlılar', 'Street Food & Iconic Desserts', 'Streetfood & Süßspeisen')}
-                    </h4>
+                    <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">
+                      {l('Sokak Lezzetleri ve Tatlılar', 'Street Food & Iconic Desserts', 'Streetfood & Süßspeisen', 'Comida Callejera y Postres', 'Уличная еда и десерты')}
+                    </h3>
                   </div>
                   <div className="space-y-2">
                     {encyclopedia.gastronomy.streetFoodAndDesserts.map((dessert, idx) => (
