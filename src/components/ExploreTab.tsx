@@ -992,15 +992,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 {/* Modern Symmetrical Country Card Layout (p-6 to p-8 generous breathing space) */}
                 <div className="w-full p-6 sm:p-7 lg:p-8 transition-colors">
                   <div className="flex flex-col md:flex-row md:items-stretch gap-5 sm:gap-6">
-                    {/* 1. Landmark Scenic Thumbnail (16px border radius + desaturated gradient mask) */}
+                    {/* 1. Landmark Scenic Thumbnail (Symmetrical full-height desktop image) */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-60 lg:w-64 h-52 md:h-[228px] self-start rounded-[16px] shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-52 lg:w-56 min-h-[200px] md:min-h-full self-stretch rounded-2xl shadow-sm shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
-                        className="country-thumbnail-image absolute inset-0 w-full h-full object-cover rounded-[16px]"
+                        className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500 rounded-2xl"
                         loading="lazy"
                         decoding="async"
                         width="480"
@@ -1013,13 +1013,13 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       />
                       <div className="country-thumbnail-scrim" />
 
-                      {/* Floating Flag Badge Capsule in top-left (Frosted glass instead of solid black) */}
-                      <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/20 dark:bg-white/10 backdrop-blur-md border border-white/25 text-base sm:text-lg shadow-xs flex items-center justify-center">
+                      {/* Floating Flag Badge Capsule in top-left */}
+                      <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
                         {getFlag(item.c)}
                       </div>
 
                       {/* Landmark Caption in bottom */}
-                      <div className="absolute bottom-3 left-3 right-3 text-xs font-bold text-white/95 truncate tracking-[-0.02em] drop-shadow-md flex items-center gap-1.5">
+                      <div className="absolute bottom-2.5 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md flex items-center gap-1.5">
                         <span>📍</span>
                         <span className="truncate">{visual.landmark}</span>
                       </div>

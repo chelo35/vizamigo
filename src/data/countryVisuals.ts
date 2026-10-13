@@ -41,7 +41,7 @@ export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: strin
   AD: { image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=480&q=80", landmark: "Pyrenees Valleys & Andorra la Vella" },
   AL: { image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=480&q=80", landmark: "Ksamil Coast & Berat Castle" },
   AT: { image: "https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=480&q=80", landmark: "Hallstatt Alpine Village & Vienna" },
-  BA: { image: "https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?auto=format&fit=crop&w=480&q=80", landmark: "Mostar Stari Most Bridge & Sarajevo" },
+  BA: { image: "https://images.unsplash.com/photo-1535627565086-13f55c100c0d?auto=format&fit=crop&w=480&q=80", landmark: "Mostar Stari Most Bridge & Sarajevo" },
   BE: { image: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=480&q=80", landmark: "Bruges Canals & Brussels Grand Place" },
   BG: { image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=480&q=80", landmark: "Rila Monastery & Black Sea" },
   BY: { image: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=480&q=80", landmark: "Mir Castle Complex & Minsk" },

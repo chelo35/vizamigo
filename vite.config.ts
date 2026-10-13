@@ -69,6 +69,7 @@ function vizamigoSeoEnginePlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
+    base: '/',
     plugins: [react(), tailwindcss(), vizamigoSeoEnginePlugin()],
     resolve: {
       alias: {
