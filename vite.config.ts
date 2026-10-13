@@ -60,23 +60,7 @@ function vizamigoSeoEnginePlugin(): Plugin {
           return;
         }
 
-        // 4. Validate country codes on /:lang/country/:code to return true 404 status for non-existent countries
-        const localizedCountryMatch = pathname.match(/^\/(tr|en|de|ru|es)\/country\/([A-Za-z0-9_-]+)\/?$/i);
-        if (localizedCountryMatch) {
-          const mod = await server.ssrLoadModule('/scripts/generate-sitemap.ts');
-          const code = localizedCountryMatch[2].toUpperCase();
-          const validCodes = new Set(mod.getAllIndexedCountryCodes());
-          if (!validCodes.has(code)) {
-            res.statusCode = 404;
-            const notFoundPath = path.resolve(__dirname, 'public/404.html');
-            if (fs.existsSync(notFoundPath)) {
-              res.setHeader('Content-Type', 'text/html; charset=utf-8');
-              res.end(fs.readFileSync(notFoundPath, 'utf-8'));
-              return;
-            }
-          }
-        }
-
+        // 4. Validate country codes on /:lang/country/:code
         next();
       });
     },
