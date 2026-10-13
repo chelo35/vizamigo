@@ -599,22 +599,22 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           </div>
 
           {/* Canlı Mevzuat Denetim & Teyit Konsolu Bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 sm:p-5 rounded-3xl glass-panel border border-emerald-500/25 dark:border-emerald-500/20 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-sky-500/10 text-xs shadow-sm">
-            <div className="flex items-center gap-3.5">
-              <div className="w-11 h-11 rounded-2xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 shadow-2xs">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-[24px] glass-panel bg-gradient-to-r from-[#2A8C82]/[0.07] via-[#2A8C82]/[0.03] to-transparent text-xs mb-8">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-[20px] bg-[#2A8C82]/12 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 flex items-center justify-center flex-shrink-0">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="font-extrabold text-slate-900 dark:text-slate-100 text-sm">
+              <div className="leading-[1.6]">
+                <div className="flex items-center gap-2.5 flex-wrap">
+                  <span className="font-bold tracking-[-0.02em] text-slate-900 dark:text-slate-100 text-sm">
                     {t.auditConsoleTitle}
                   </span>
-                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500 text-white font-mono text-[10px] font-bold shadow-2xs">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
+                  <span className="badge-live-verified inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full font-mono text-[10px] font-bold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                     {l('CANLI TEYİTLİ', 'LIVE VERIFIED', 'LIVE GEPRÜFT', 'VERIFICADO EN VIVO', 'ПРОВЕРЕНО')}
                   </span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-[1.6]">
                   {l(
                     '15 kritik destinasyon IATA Timatic ve konsolosluk genelgeleriyle taranıyor; %100 açık veri teyidi aktif.',
                     '15 key destinations actively audited against IATA Timatic & consular decrees.',
@@ -628,7 +628,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={handleOpenAudit}
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-xs transition-all cursor-pointer whitespace-nowrap self-stretch sm:self-auto justify-center"
+              className="btn-audit-console inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs transition-all cursor-pointer whitespace-nowrap self-stretch sm:self-auto justify-center"
             >
               <ShieldCheck className="w-4 h-4" />
               <span>{l('Denetim Masasını Aç', 'Open Audit Console', 'Audit-Konsole öffnen', 'Abrir Panel de Auditoría', 'Открыть Панель Аудита')}</span>
@@ -636,9 +636,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           </div>
 
       {/* Top Travel Command Suite: World Clock, Live Weather & FX Converter */}
-      <section className="space-y-4 mb-6" aria-label="Travel Widgets and Tools">
+      <section className="space-y-6 mb-9" aria-label="Travel Widgets and Tools">
         {/* Live Interactive Widgets: World Clock, Live Weather & FX Converter Side-by-Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <WorldClockWidget onOpenRadar={(city) => onOpenGlobalRadar?.('clock', city)} />
           <WeatherWidget onOpenRadar={(city) => onOpenGlobalRadar?.('weather', city)} />
           <CurrencyWidget onOpenRadar={() => onOpenGlobalRadar?.('currency')} />
@@ -646,15 +646,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
         {/* Quick Travel Tools (4 Symmetrical Interactive Cards) */}
         <div>
-          <div className="p-1 rounded-2xl bg-slate-100/80 dark:bg-slate-900/40 border border-slate-200/80 dark:border-white/10 text-xs font-bold text-slate-500 dark:text-slate-400 px-3.5 py-1.5 flex items-center justify-between mb-3">
+          <div className="rounded-full bg-white/80 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/[0.08] text-xs font-bold text-slate-500 dark:text-slate-400 px-4 py-2 flex items-center justify-between mb-4">
             <span className="flex items-center gap-2">
-              <Sparkles className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+              <Sparkles className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />
               <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
             </span>
-            <span className="font-mono text-[10px] bg-teal-500/10 text-teal-600 dark:text-teal-400 px-2 py-0.5 rounded-full font-bold">2026 Edition</span>
+            <span className="font-mono text-[10px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] px-2.5 py-0.5 rounded-full font-bold">2026 Edition</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Tool Card 1: Rota & Sinerji */}
             <button
               type="button"
@@ -821,11 +821,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
         </div>
       </section>
 
-      {/* Destinations List (Full-Width Symmetrical Layout) */}
-      <div className="w-full space-y-4">
+      {/* Destinations List (Full-Width Symmetrical Layout with 35% expanded breathing space) */}
+      <div className="w-full space-y-6">
         {filteredItems.length === 0 ? (
-          <div className="text-center py-16 bg-white dark:bg-slate-800/40 rounded-2xl border border-slate-200 dark:border-slate-800 p-6">
-            <p className="text-slate-500 dark:text-slate-400 text-sm">
+          <div className="text-center py-16 glass-card rounded-[24px] p-8">
+            <p className="text-slate-500 dark:text-slate-400 text-sm leading-[1.6]">
               {l(
                 'Arama veya filtre kriterlerinize uyan ülke bulunamadı.',
                 'No destinations match your search or filter criteria.',
@@ -914,20 +914,20 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             return (
               <div
                 key={item.c}
-                className="glass-card rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl hover:border-[#0D9488]/30 dark:hover:border-[#0D9488]/25 transition-all duration-300 group"
+                className="glass-card country-card rounded-[24px] overflow-hidden transition-all duration-300 group"
               >
-                {/* Modern Symmetrical Country Card Layout */}
-                <div className="w-full p-4 sm:p-5 lg:p-6 transition-colors hover:bg-slate-50/40 dark:hover:bg-white/[0.02]">
-                  <div className="flex flex-col md:flex-row md:items-stretch gap-4 sm:gap-5">
-                    {/* 1. Landmark Scenic Thumbnail (Strictly uniform locked dimensions across all cards) */}
+                {/* Modern Symmetrical Country Card Layout (p-6 to p-8 generous breathing space) */}
+                <div className="w-full p-6 sm:p-7 lg:p-8 transition-colors">
+                  <div className="flex flex-col md:flex-row md:items-stretch gap-5 sm:gap-6">
+                    {/* 1. Landmark Scenic Thumbnail (16px border radius + desaturated gradient mask) */}
                     <div
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                      className="country-thumbnail-slot w-full md:w-60 lg:w-64 h-52 md:h-[224px] self-start rounded-2xl shadow-xs shrink-0 cursor-pointer overflow-hidden relative group/thumb"
+                      className="country-thumbnail-slot w-full md:w-60 lg:w-64 h-52 md:h-[228px] self-start rounded-[16px] shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
                       <img
                         src={visual.image}
                         alt={`${countryName} - ${visual.landmark}`}
-                        className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500"
+                        className="country-thumbnail-image absolute inset-0 w-full h-full object-cover rounded-[16px]"
                         loading="lazy"
                         decoding="async"
                         width="480"
@@ -940,72 +940,72 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       />
                       <div className="country-thumbnail-scrim" />
 
-                      {/* Floating Flag Badge Capsule in top-left */}
-                      <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-white/20 text-base sm:text-lg shadow-sm flex items-center justify-center">
+                      {/* Floating Flag Badge Capsule in top-left (Frosted glass instead of solid black) */}
+                      <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/20 dark:bg-white/10 backdrop-blur-md border border-white/25 text-base sm:text-lg shadow-xs flex items-center justify-center">
                         {getFlag(item.c)}
                       </div>
 
                       {/* Landmark Caption in bottom */}
-                      <div className="absolute bottom-2.5 left-2.5 right-2.5 text-xs font-bold text-white/95 truncate tracking-tight drop-shadow-md flex items-center gap-1.5">
+                      <div className="absolute bottom-3 left-3 right-3 text-xs font-bold text-white/95 truncate tracking-[-0.02em] drop-shadow-md flex items-center gap-1.5">
                         <span>📍</span>
                         <span className="truncate">{visual.landmark}</span>
                       </div>
                     </div>
 
-                    {/* 2. Main Details & Symmetrical Grid Area (Uniform locked height on desktop) */}
-                    <div className="flex-1 min-w-0 flex flex-col justify-between gap-2.5 md:h-[224px]">
+                    {/* 2. Main Details & Symmetrical Grid Area */}
+                    <div className="flex-1 min-w-0 flex flex-col justify-between gap-3 md:min-h-[228px] leading-[1.6]">
                       {/* Top Header Row: Country Name + Badges + Traveler Score */}
-                      <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex flex-wrap items-center justify-between gap-2.5">
                         <div
                           onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
-                          className="flex flex-wrap items-center gap-2 sm:gap-2.5 cursor-pointer"
+                          className="flex flex-wrap items-center gap-2.5 cursor-pointer"
                         >
-                          <h3 className="font-black text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#0D9488] dark:group-hover:text-[#14B8A6] transition-colors">
+                          <h3 className="font-bold tracking-[-0.02em] text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#2A8C82] dark:group-hover:text-[#52B2A7] transition-colors">
                             {countryName}
                           </h3>
-                          <span className="text-xs sm:text-sm font-mono text-slate-400 font-extrabold">({item.c})</span>
+                          <span className="text-xs sm:text-sm font-mono text-slate-400 font-bold">({item.c})</span>
 
-                          {/* Primary Visa Badge */}
-                          <span className={`text-xs px-3 py-1 rounded-full font-extrabold shadow-2xs ${badgeClass}`}>
+                          {/* Primary Visa Badge (Pill 9999px) */}
+                          <span className={`text-xs px-3.5 py-1 rounded-full font-bold ${badgeClass}`}>
                             {badgeText}
                           </span>
 
-                          {/* Audit Verification Badge */}
+                          {/* Audit Verification Badge (Pill 9999px) */}
                           <button
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
                               handleOpenAudit();
                             }}
-                            className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-bold text-xs bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25 hover:bg-emerald-500/20 transition-all shadow-2xs cursor-pointer"
+                            className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold text-xs bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 hover:bg-[#2A8C82]/20 transition-all cursor-pointer"
                             title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen', 'Ver información de verificación', 'Проверить нормативные данные')}
                           >
-                            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                            <ShieldCheck className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7] flex-shrink-0" />
                             <span>{l('✓ 2026 Teyitli', '✓ 2026 Verified', '✓ 2026 Geprüft', '✓ 2026 Verificado', '✓ Проверено 2026')}</span>
                           </button>
                         </div>
 
-                        {/* Traveler Score Pill (ETS Tur & Booking style) */}
-                        <div className="flex items-center gap-2 px-3 py-1 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-500/25 text-emerald-800 dark:text-emerald-300 flex-shrink-0">
+                        {/* Traveler Score Pill */}
+                        <div className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-[20px] bg-[#2A8C82]/[0.08] dark:bg-[#2A8C82]/15 border border-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] flex-shrink-0">
                           <div className="text-right">
-                            <div className="text-xs font-black leading-tight">{scoreLabel}</div>
-                            <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
+                            <div className="text-xs font-bold leading-tight">{scoreLabel}</div>
+                            <div className="text-[10px] text-[#2A8C82]/80 dark:text-[#52B2A7]/80 font-bold">
                               {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung', 'Puntaje de Viajero', 'Оценка')}
                             </div>
                           </div>
-                          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-emerald-600 text-white font-mono font-black text-xs sm:text-sm flex items-center justify-center shadow-xs">
+                          <div className="w-8 h-8 rounded-[14px] bg-[#2A8C82] text-white font-mono font-bold text-xs sm:text-sm flex items-center justify-center">
                             {travelerScore}
                           </div>
                         </div>
                       </div>
 
-                      {/* Highlights Row (Tags - Single clean non-wrapping row, fixed height) */}
-                      <div className="flex items-center gap-1.5 h-6 overflow-hidden">
+                      {/* Highlights Row (Pill Tags 9999px) */}
+                      <div className="flex items-center gap-2 h-7 overflow-hidden">
                         {highlights.length > 0 ? (
                           highlights.map((tag, idx) => (
                             <span
                               key={idx}
-                              className="inline-flex items-center text-[11px] font-bold px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700/60 shrink-0 whitespace-nowrap"
+                              className="inline-flex items-center text-[11px] font-bold px-3 py-0.5 rounded-full bg-slate-100/90 dark:bg-white/[0.04] text-slate-700 dark:text-slate-200 border border-slate-200/50 dark:border-white/[0.08] shrink-0 whitespace-nowrap"
                             >
                               {tag}
                             </span>
@@ -1017,60 +1017,60 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         )}
                       </div>
 
-                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (Symmetrical 5-Column Grid, Locked Height) */}
-                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-2.5">
+                      {/* UNIFIED THEME-HARMONIOUS INFO BOXES GRID (20px rounded corners, 1.6 line-height) */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
                         {/* 1. Başkent (Capital) */}
-                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <span className="text-xs shrink-0">🏛️</span>
                             <span className="truncate">{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug truncate" title={geography.capital}>
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] truncate" title={geography.capital}>
                             {geography.capital}
                           </div>
                         </div>
 
                         {/* 2. Para Birimi (Currency) */}
-                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <DollarSign className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Para Birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug truncate">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] truncate">
                             {geography.currencyCode} <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">({geography.currencySymbol})</span>
                           </div>
                         </div>
 
                         {/* 3. Günlük Bütçe (Daily Budget) */}
-                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <CreditCard className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Günlük Bütçe', 'Daily Cost', 'Tagesbudget', 'Presupuesto', 'Бюджет/день')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug font-mono whitespace-nowrap">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] font-mono whitespace-nowrap">
                             {insights.livingCosts.dailyBudgetBackpackerUsd.replace(/\s+/g, ' ').trim()}
                           </div>
                         </div>
 
                         {/* 4. Güvenlik (Safety) */}
-                        <div className="col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="country-metric-box col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <Shield className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] flex items-center gap-1.5">
                             <span>{insights.safety.safetyScore} / 100</span>
                             <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate">· {insights.safety.safetyLevel}</span>
                           </div>
                         </div>
 
                         {/* 5. İnternet (Internet Speed) */}
-                        <div className="col-span-2 sm:col-span-2 lg:col-span-1 h-[58px] flex flex-col justify-between p-2 sm:p-2.5 rounded-xl bg-slate-50/80 dark:bg-white/[0.04] border border-slate-200/80 dark:border-white/10 transition-colors">
+                        <div className="country-metric-box col-span-2 sm:col-span-2 lg:col-span-1 h-[62px] flex flex-col justify-between p-3 rounded-[20px] bg-slate-50/80 dark:bg-white/[0.04] border border-slate-100 dark:border-white/[0.08] transition-colors">
                           <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                             <Wifi className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate">{l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет')}</span>
                           </div>
-                          <div className="text-xs sm:text-[13px] font-extrabold text-slate-900 dark:text-white leading-snug font-mono flex items-center gap-1.5">
+                          <div className="text-xs sm:text-[13px] font-bold text-slate-900 dark:text-white leading-[1.6] font-mono flex items-center gap-1.5">
                             <span>{insights.internet.mobileSpeedMbps} Mbps</span>
                             <span className="text-[11px] font-sans font-semibold text-slate-500 dark:text-slate-400 truncate">
                               {insights.internet.mobileSpeedMbps >= 50
@@ -1082,8 +1082,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
 
                       {/* Action Buttons Row (Symmetrical, Single Line) */}
-                      <div className="flex items-center justify-between gap-2 pt-3 border-t border-slate-100 dark:border-white/5 mt-1">
-                        <div className="flex items-center gap-2 flex-wrap">
+                      <div className="flex items-center justify-between gap-2 pt-3.5 border-t border-slate-100 dark:border-white/[0.06] mt-1">
+                        <div className="flex items-center gap-2.5 flex-wrap">
                           <button
                             type="button"
                             onClick={(e) => {

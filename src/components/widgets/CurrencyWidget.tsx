@@ -34,22 +34,22 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
   const toSymbol = POPULAR_CURRENCIES.find((c) => c.code === toCode)?.symbol || '';
 
   return (
-    <div className={`p-4 rounded-2xl glass-card border border-slate-200/80 dark:border-white/10 shadow-sm ${className}`}>
+    <div className={`p-6 rounded-[24px] glass-card currency-field leading-[1.6] ${className}`}>
       {/* Header */}
-      <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-200/70 dark:border-white/10">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+      <div className="flex items-center justify-between pb-3.5 mb-3.5 border-b border-slate-100 dark:border-white/[0.07]">
+        <div className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-[14px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center">
             <DollarSign className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
+            <h4 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
               <span>{l('Hızlı Döviz Çevirici', 'Fast FX Converter', 'Währungsrechner', 'Conversor de Moneda', 'Конвертер валют')}</span>
               <span
-                className={`inline-block w-1.5 h-1.5 rounded-full ${isLive ? 'bg-emerald-500 animate-pulse' : 'bg-amber-400'}`}
+                className={`inline-block w-1.5 h-1.5 rounded-full ${isLive ? 'bg-[#2A8C82]' : 'bg-[#D9A14A]'}`}
                 title={isLive ? l('Canlı Piyasa Kurları Aktif', 'Live Market Rates Active', 'Live-Kurse aktiv') : l('Baz Kur', 'Baseline Rate', 'Basiskurs')}
               />
             </h4>
-            <span className="text-[10px] text-slate-500 dark:text-slate-400">
+            <span className="text-[11px] text-slate-500 dark:text-slate-400 leading-[1.6]">
               {isLive
                 ? l('Canlı Güncel Piyasa Kurları', 'Live Market Exchange Rates', 'Aktuelle Live-Wechselkurse', 'Tipos de cambio en vivo', 'Актуальные курсы валют')
                 : l('2026 Canlı Seyahat Kurları', '2026 Live Travel Rates', 'Live-Wechselkurse', 'Tipos de cambio', 'Курсы валют')}
@@ -62,10 +62,10 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <button
               type="button"
               onClick={onOpenRadar}
-              className="flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer"
               title={l('Döviz Kurlarını Dünya Haritasında Gör', 'View FX on World Map', 'Währungskarte öffnen')}
             >
-              <Globe className="w-3 h-3 animate-pulse" />
+              <Globe className="w-3.5 h-3.5" />
               <span>{l('Haritada Gör', 'FX Map', 'Karte')}</span>
             </button>
           )}
@@ -73,7 +73,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
           <button
             type="button"
             onClick={handleManualRefresh}
-            className="font-mono text-[10px] bg-teal-500/10 hover:bg-teal-500/20 text-teal-600 dark:text-teal-400 font-bold px-2 py-0.5 rounded-full border border-teal-500/20 flex items-center gap-1 cursor-pointer transition-colors"
+            className="font-mono text-[10px] glass-pill-control text-[#2A8C82] dark:text-[#52B2A7] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 cursor-pointer transition-colors"
             title={l('Kurları Şimdi Güncelle', 'Refresh Live Rates', 'Kurse aktualisieren')}
           >
             <span>1 {fromCode} = {crossRate.toFixed(2)} {toCode}</span>
@@ -83,7 +83,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
       </div>
 
       {/* Input & Selector Grid */}
-      <div className="space-y-2 mb-2.5">
+      <div className="space-y-3 mb-3.5">
         <div className="flex items-center gap-2">
           <input
             type="number"
@@ -91,14 +91,14 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             value={amount || ''}
             onChange={(e) => setAmount(Math.max(0, parseFloat(e.target.value) || 0))}
             placeholder="100"
-            className="w-24 px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white font-mono font-black text-xs text-center focus:outline-none focus:ring-1 focus:ring-teal-500"
+            className="w-24 px-3 py-2 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white font-mono font-bold text-xs text-center focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30"
           />
 
-          <div className="flex-1 flex items-center gap-1 min-w-0">
+          <div className="flex-1 flex items-center gap-1.5 min-w-0">
             <select
               value={fromCode}
               onChange={(e) => setFromCode(e.target.value)}
-              className="flex-1 min-w-0 px-2 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-1 focus:ring-teal-500 cursor-pointer"
+              className="flex-1 min-w-0 px-3 py-2 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
             >
               {POPULAR_CURRENCIES.map((c) => (
                 <option key={`from-${c.code}`} value={c.code}>
@@ -110,7 +110,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <button
               type="button"
               onClick={handleSwap}
-              className="p-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-teal-600 hover:bg-teal-50 dark:hover:bg-teal-950/40 transition-colors cursor-pointer flex-shrink-0"
+              className="p-2 rounded-full glass-pill-control text-slate-600 dark:text-slate-300 hover:text-[#2A8C82] transition-colors cursor-pointer flex-shrink-0"
               title={l('Tersine çevir', 'Swap', 'Tauschen', 'Invertir', 'Поменять')}
             >
               <ArrowRightLeft className="w-3.5 h-3.5" />
@@ -119,7 +119,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <select
               value={toCode}
               onChange={(e) => setToCode(e.target.value)}
-              className="flex-1 min-w-0 px-2 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-1 focus:ring-teal-500 cursor-pointer"
+              className="flex-1 min-w-0 px-3 py-2 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
             >
               {POPULAR_CURRENCIES.map((c) => (
                 <option key={`to-${c.code}`} value={c.code}>
@@ -131,18 +131,18 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
         </div>
 
         {/* Big Clean Converted Result Pill */}
-        <div className="flex items-center justify-between px-3 py-2 rounded-xl bg-gradient-to-r from-teal-500/10 via-teal-500/5 to-transparent border border-teal-500/20">
-          <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400">
+        <div className="flex items-center justify-between px-4 py-3 rounded-[20px] bg-gradient-to-r from-[#2A8C82]/10 via-[#2A8C82]/5 to-transparent border border-[#2A8C82]/20 leading-[1.6]">
+          <span className="text-xs font-bold text-slate-600 dark:text-slate-400">
             {amount} {fromCode} =
           </span>
-          <span className="font-mono text-base font-black text-teal-700 dark:text-teal-300">
+          <span className="font-mono text-base font-bold text-[#2A8C82] dark:text-[#52B2A7]">
             {toSymbol} {formatCurrencyValue(convertedValue)} <span className="text-xs font-sans font-bold text-slate-600 dark:text-slate-400">{toCode}</span>
           </span>
         </div>
       </div>
 
       {/* Quick Base Chips */}
-      <div className="flex items-center gap-1 overflow-x-auto pt-1 border-t border-slate-100 dark:border-white/5">
+      <div className="flex items-center gap-1.5 overflow-x-auto pt-2 border-t border-slate-100 dark:border-white/[0.06]">
         <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider shrink-0 mr-1">
           {l('Hızlı', 'Quick', 'Schnell', 'Rápido', 'Быстро')}:
         </span>
@@ -151,10 +151,10 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             key={code}
             type="button"
             onClick={() => setFromCode(code)}
-            className={`px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${
+            className={`px-3 py-1 rounded-full text-[11px] font-bold transition-all cursor-pointer ${
               fromCode === code
-                ? 'bg-teal-600 text-white font-black shadow-2xs'
-                : 'bg-slate-100 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                ? 'tab-chip-active'
+                : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70'
             }`}
           >
             {code}

@@ -3,10 +3,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  /* 1. GLOBAL TYPOGRAPHY EVOLUTION: Override default system font stack */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
   --color-slate-750: #253146;
   --color-slate-850: #141d2e;
 
-  /* Luxury Obsidian Theme Palette (Nubair Reference) */
+  /* 4. Luxury Obsidian Dark Theme Palette (Nubair Reference) */
   --color-obsidian-950: #0c0f19;
   --color-obsidian-900: #111625;
   --color-obsidian-850: #161d30;
@@ -15,54 +20,129 @@
   --color-obsidian-700: #2c3858;
   --color-obsidian-periwinkle: #8e9dbe;
 
-  /* Soothing Linen Light Theme Palette (Social Media App Reference) */
+  /* 4. Soothing Linen Light Theme Palette (Social Media App Reference) */
   --color-linen-50: #f8fafc;
   --color-charcoal-ink: #1a1d20;
 
-  /* Pastel Sunset Coral & Warm Gold Accent Harmonies */
+  /* 2. Desaturated Accent Harmonies: Pastel Sunset Coral & Muted Horizon Teal */
   --color-coral-500: #ff6b6b;
-  --color-coral-400: #ff7a59;
-  --color-coral-300: #ff8e72;
-  --color-gold-500: #e5a93c;
-  --color-gold-400: #f1b952;
+  --color-coral-400: #ff7e7e;
+  --color-coral-300: #ff9494;
+  --color-horizon-teal-600: #2a8c82;
+  --color-horizon-teal-500: #389e93;
+  --color-horizon-teal-400: #52b2a7;
+  --color-gold-500: #d9a14a;
+  --color-gold-400: #e6b464;
 }
 
-html, body {
+/* ========================================================
+   DUAL-THEME CUSTOM PROPERTIES (ZERO LAYOUT SHIFT ENGINE)
+   ======================================================== */
+:root {
+  --bg-canvas: #F8FAFC;
+  --bg-canvas-gradient: linear-gradient(180deg, #F8FAFC 0%, #F3F6FA 100%);
+  --surface-card: #FFFFFF;
+  --surface-card-border: transparent;
+  --surface-card-shadow: 0 30px 60px rgba(0, 0, 0, 0.02);
+  --surface-card-hover-shadow: 0 34px 68px rgba(0, 0, 0, 0.045), 0 0 24px rgba(255, 107, 107, 0.08);
+  --surface-glass-control: rgba(255, 255, 255, 0.78);
+  --surface-glass-border: rgba(226, 232, 240, 0.75);
+  --text-primary: #1A1D20;
+  --text-secondary: #526071;
+  --text-muted: #7C8B9E;
+  --accent-coral: #FF6B6B;
+  --accent-horizon-teal: #2A8C82;
+  --accent-horizon-teal-soft: rgba(42, 140, 130, 0.10);
+  --accent-coral-soft: rgba(255, 107, 107, 0.10);
+}
+
+html.dark,
+.dark {
+  --bg-canvas: #0C0F19;
+  --bg-canvas-gradient: linear-gradient(180deg, #0C0F19 0%, #111625 100%);
+  --surface-card: rgba(255, 255, 255, 0.035);
+  --surface-card-border: rgba(255, 255, 255, 0.07);
+  --surface-card-shadow: 0 30px 60px rgba(0, 0, 0, 0.42);
+  --surface-card-hover-shadow: 0 34px 68px rgba(0, 0, 0, 0.62), 0 0 28px rgba(255, 107, 107, 0.14);
+  --surface-glass-control: rgba(255, 255, 255, 0.04);
+  --surface-glass-border: rgba(255, 255, 255, 0.08);
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --accent-coral: #FF6B6B;
+  --accent-horizon-teal: #52B2A7;
+  --accent-horizon-teal-soft: rgba(82, 178, 167, 0.14);
+  --accent-coral-soft: rgba(255, 107, 107, 0.14);
+}
+
+html,
+body {
   min-height: 100%;
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
 }
 
 html {
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
+  background-image: var(--bg-canvas-gradient);
 }
 
 html.dark {
-  background-color: #0c0f19;
+  background-color: #0C0F19;
+  background-image: linear-gradient(180deg, #0C0F19 0%, #111625 100%);
 }
 
 @layer base {
-  /* 1. GLOBAL TYPOGRAPHY: Strict Plus Jakarta Sans with Inter Fallback */
+  /* 1. GLOBAL TYPOGRAPHY EVOLUTION */
+  *,
+  *::before,
+  *::after {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
   body {
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #1a1d20; /* Deep Charcoal for Light Mode */
-    background-color: #f8fafc; /* Soothing Linen Off-White */
+    color: var(--text-primary);
+    background-color: #F8FAFC;
+    background-image: linear-gradient(180deg, #F8FAFC 0%, #F3F6FA 100%);
+    line-height: 1.6;
     overflow-x: hidden;
   }
 
   html.dark body,
   .dark body {
-    color: #ffffff;
-    background-color: #0c0f19; /* Midnight Velvet Obsidian */
+    color: #F8FAFC;
+    background-color: #0C0F19;
+    background-image: linear-gradient(180deg, #0C0F19 0%, #111625 100%);
   }
 
-  /* Editorial Travel Magazine Header Hierarchy */
-  h1, h2, h3, h4, h5, h6, .font-heading {
-    letter-spacing: -0.03em;
+  /* Primary Titles & Category Text Headers: strict letter-spacing: -0.02em; font-weight: 700; */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-heading,
+  .category-header,
+  .bento-title {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
     font-weight: 700;
   }
 
-  /* 1.6 Line-Height & 500 Medium Weight for Analytical/Visa/Passport Data */
+  /* 1.6 Line-Height Inside Data Cards, Currency Fields, and Weather Info */
+  .glass-card,
+  .country-card,
+  .bento-card,
+  .glass-panel,
   .data-metric,
   .rule-label,
   .analytics-cell,
@@ -70,23 +150,403 @@ html.dark {
   .passport-number,
   .visa-data,
   .calendar-rule,
-  [data-metric] {
+  .weather-info,
+  .currency-field,
+  .clock-row,
+  [data-metric],
+  p,
+  dd,
+  li {
     line-height: 1.6;
-    font-weight: 500;
   }
 }
 
 /* ========================================================
-   HIGH-FIDELITY DUAL-THEME ENGINE (ZERO LAYOUT DRIFT)
-   100% exact layout dimensions with 1px border preservation
+   2. FIXING COLOR INCONSISTENCIES (BUTTONS, ACCENTS, WARNINGS)
+   Eliminate raw #000000 black layers & soften high-saturation accents
    ======================================================== */
+
+/* Eliminate Inactive Pure Black Buttons / Badges -> Translucent Glassmorphic */
+.bg-black,
+.dark .dark\:bg-black,
+.dark .dark\:bg-black\/40,
+.dark .dark\:bg-black\/50,
+.dark .dark\:bg-slate-950,
+.glass-pill-control,
+.btn-glassmorphic,
+.btn-glass-subtle,
+.btn-frosted-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .bg-black,
+.dark .dark\:bg-black,
+.dark .dark\:bg-black\/40,
+.dark .dark\:bg-black\/50,
+.dark .glass-pill-control,
+.dark .btn-glassmorphic,
+.dark .btn-glass-subtle,
+.dark .btn-frosted-glass {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #F8FAFC;
+}
+
+/* Desaturated Muted Horizon Teal & Pastel Sunset Coral Accents */
+.btn-audit-console,
+.badge-live-verified {
+  background: linear-gradient(135deg, #2A8C82 0%, #3E9E94 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+  box-shadow: 0 10px 24px -6px rgba(42, 140, 130, 0.28);
+}
+
+.btn-audit-console:hover {
+  background: linear-gradient(135deg, #329B90 0%, #48ADA2 100%);
+  box-shadow: 0 14px 28px -6px rgba(42, 140, 130, 0.36);
+  transform: translateY(-1px);
+}
+
+.accent-sunset-coral {
+  background: rgba(255, 107, 107, 0.12);
+  color: #FF6B6B;
+  border: 1px solid rgba(255, 107, 107, 0.24);
+  border-radius: 9999px;
+}
+
+/* Primary Action Pill (Muted Horizon Teal / Pastel Sunset Coral Harmony) */
+.btn-nubair-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.45rem;
+  min-height: 42px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #2A8C82 0%, #3E9E94 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 22px -4px rgba(42, 140, 130, 0.25);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.btn-nubair-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px -4px rgba(42, 140, 130, 0.35);
+  filter: brightness(1.04);
+}
+
+.dark .btn-nubair-primary {
+  background: linear-gradient(135deg, rgba(42, 140, 130, 0.92) 0%, rgba(62, 158, 148, 0.88) 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 26px -4px rgba(42, 140, 130, 0.32);
+}
+
+/* Secondary Frosted Glass Pill */
+.btn-nubair-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: -0.01em;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #1a1d20;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-nubair-secondary:hover {
+  background: #ffffff;
+  border-color: rgba(42, 140, 130, 0.35);
+  color: #1a1d20;
+  box-shadow: 0 10px 24px rgba(42, 140, 130, 0.10);
+}
+
+.dark .btn-nubair-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.dark .btn-nubair-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+/* Tab Pills / Filter Chips (Strict Pill Radius 9999px) */
+.tab-chip-active {
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #2A8C82 0%, #3E9E94 100%);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  box-shadow: 0 8px 20px -4px rgba(42, 140, 130, 0.28);
+  border: 1px solid transparent;
+}
+
+.dark .tab-chip-active {
+  background: linear-gradient(135deg, rgba(42, 140, 130, 0.92) 0%, rgba(62, 158, 148, 0.88) 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 22px -4px rgba(42, 140, 130, 0.32);
+}
+
+.tab-chip-inactive {
+  border-radius: 9999px;
+  background: #FFFFFF;
+  color: #526071;
+  font-weight: 600;
+  border: 1px solid transparent;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+}
+
+.tab-chip-inactive:hover {
+  color: #1a1d20;
+  background: #ffffff;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+}
+
+.dark .tab-chip-inactive {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.dark .tab-chip-inactive:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* ========================================================
+   3. CONTAINER CORNER SMOOTHING & AIR OVERHAUL
+   4. DUAL-THEME ENGINE SPECIFICATIONS (ZERO LAYOUT SHIFTS)
+   ======================================================== */
+
+/* Soothing Linen Light Mode: Pure solid white (#FFFFFF), dropped visible borders,
+   ultra-soft diffused ambient shadow (0 30px 60px rgba(0, 0, 0, 0.02)), minimum 24px radius */
+.glass-card,
+.country-card,
+.bento-card {
+  background: #FFFFFF;
+  border-radius: 24px !important;
+  border: 1px solid transparent !important; /* Zero layout shift while visually borderless in Light Mode */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.02), 0 4px 16px rgba(0, 0, 0, 0.015);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-card:hover,
+.country-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 34px 68px rgba(0, 0, 0, 0.045), 0 0 24px rgba(255, 107, 107, 0.08);
+}
+
+/* Luxury Obsidian Dark Mode: Transparent frosted acrylic panels */
+.dark .glass-card,
+.dark .country-card,
+.dark .bento-card {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.42);
+}
+
+.dark .glass-card:hover,
+.dark .country-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 34px 68px rgba(0, 0, 0, 0.62), 0 0 28px rgba(255, 107, 107, 0.14);
+  border-color: rgba(255, 107, 107, 0.22) !important;
+}
+
+.glass-panel {
+  background: #FFFFFF;
+  border-radius: 24px !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark .glass-panel {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.38);
+}
+
+/* Inner Sub-Containers, Search Wrappers, Clock Rows & Currency Inputs: strict >= 20px radius */
+.bento-input-wrapper,
+.widget-row-item,
+.country-metric-box {
+  border-radius: 20px !important;
+  line-height: 1.6;
+}
+
+/* Expand structural vertical breathing space by 35% */
+.bento-section-spacing {
+  margin-bottom: 2.25rem;
+}
+
+/* Floating Glassmorphic Nav Console (Desktop Sidebar) */
+.sidebar-glass {
+  background: #FFFFFF;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid transparent;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.02);
+}
+
+.dark .sidebar-glass {
+  background: rgba(17, 22, 37, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.50);
+}
+
+/* Concierge Top Bar */
+.topbar-glass {
+  background: rgba(248, 250, 252, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.55);
+}
+
+.dark .topbar-glass {
+  background: rgba(12, 15, 25, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ========================================================
+   5. RELEVANT COUNTRY PHOTO BLENDING
+   Clean 16px border-radius + desaturated linear-gradient overlay mask
+   ======================================================== */
+
+.country-thumbnail-slot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px !important;
+  border: 1px solid transparent;
+  background-color: rgba(15, 23, 42, 0.04);
+  flex-shrink: 0;
+  isolation: isolate;
+  display: block;
+}
+
+.dark .country-thumbnail-slot {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(17, 22, 37, 0.6);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.38);
+}
+
+.country-thumbnail-images,
+.country-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  filter: brightness(0.90) contrast(1.02) saturate(0.92);
+  transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.45s ease;
+  will-change: transform, filter;
+}
+
+.group:hover .country-thumbnail-images,
+.group:hover .country-thumbnail-image,
+.country-card:hover .country-thumbnail-image,
+.country-card:hover .country-thumbnail-images {
+  transform: scale(1.04);
+  filter: brightness(0.95) contrast(1.04) saturate(1.02);
+}
+
+/* Elegant desaturated linear-gradient overlay mask blending thumbnail into card space */
+.country-thumbnail-scrim {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 15, 25, 0.04) 0%,
+      rgba(12, 15, 25, 0.12) 65%,
+      rgba(255, 255, 255, 0.22) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(12, 15, 25, 0.05) 0%,
+      rgba(12, 15, 25, 0.28) 55%,
+      rgba(12, 15, 25, 0.78) 100%
+    );
+  pointer-events: none;
+}
+
+.dark .country-thumbnail-scrim {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 15, 25, 0.05) 0%,
+      rgba(17, 22, 37, 0.22) 65%,
+      rgba(17, 22, 37, 0.65) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(12, 15, 25, 0.04) 0%,
+      rgba(12, 15, 25, 0.34) 55%,
+      rgba(12, 15, 25, 0.86) 100%
+    );
+}
+
+/* Crisis console in soft Pastel Sunset Coral (#FF6B6B) tone */
+.glass-crisis {
+  background: #FFFFFF;
+  border-radius: 24px !important;
+  border: 1px solid rgba(255, 107, 107, 0.18) !important;
+  box-shadow: 0 30px 60px rgba(255, 107, 107, 0.04);
+}
+
+.dark .glass-crisis {
+  background: rgba(255, 107, 107, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 107, 107, 0.18) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(255, 107, 107, 0.08);
+}
 
 /* Uniform Micro-Animation Utilities */
 .transition-smooth {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Global Uniform Transitions for Interactive Elements */
 button,
 a,
 input,
@@ -103,7 +563,6 @@ textarea,
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Native Smartphone App Haptic Feedback on Press */
 button:active,
 .btn-nubair-primary:active,
 .btn-nubair-secondary:active,
@@ -113,332 +572,17 @@ button:active,
 .tab-chip-active:active,
 .tab-chip-inactive:active,
 [role="button"]:active {
-  transform: scale(0.96) !important;
-  transition: transform 0.12s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-}
-
-/* De-Widgetized Organic Cards: strict minimum 24px corner radius */
-.glass-card,
-.country-card,
-.bento-card {
-  background: #ffffff;
-  border-radius: 24px;
-  border: 1px solid transparent; /* Preserves 1px box-model dimension identically to dark mode */
-  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.015);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* Country Card Hover / Touch Parallax Float & Deep Shadow Softening */
-.glass-card:hover,
-.country-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.08), 0 0 25px rgba(255, 107, 107, 0.12);
-}
-
-.dark .glass-card,
-.dark .country-card,
-.dark .bento-card {
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.45);
-}
-
-.dark .glass-card:hover,
-.dark .country-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 30px 65px -12px rgba(0, 0, 0, 0.7), 0 0 35px rgba(255, 107, 107, 0.18);
-  border-color: rgba(255, 107, 107, 0.25);
-}
-
-.glass-panel {
-  background: #ffffff;
-  border-radius: 24px;
-  border: 1px solid rgba(226, 232, 240, 0.7);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.dark .glass-panel {
-  background: rgba(255, 255, 255, 0.025);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-}
-
-/* Floating Glassmorphic Nav Console (Desktop Sidebar) */
-.sidebar-glass {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.03);
-}
-
-.dark .sidebar-glass {
-  background: rgba(17, 22, 37, 0.75);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.55);
-}
-
-/* Concierge Top Bar */
-.topbar-glass {
-  background: rgba(248, 250, 252, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
-}
-
-.dark .topbar-glass {
-  background: rgba(12, 15, 25, 0.8);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-/* ========================================================
-   DESTINATION PHOTOGRAPHY WITH SOFT GRADIENT MASKS
-   Masked frame with 4% smooth scale-up parallax effect
-   ======================================================== */
-
-.country-thumbnail-slot {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  background-color: rgba(15, 23, 42, 0.04);
-  flex-shrink: 0;
-  isolation: isolate;
-  display: block;
-}
-
-.dark .country-thumbnail-slot {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background-color: rgba(17, 22, 37, 0.6);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.country-thumbnail-images,
-.country-thumbnail-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.85) contrast(1.04) saturate(1.05);
-  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.4s ease;
-  will-change: transform, filter;
-}
-
-/* Country landscape zooms smoothly by 4% on hover */
-.group:hover .country-thumbnail-images,
-.group:hover .country-thumbnail-image,
-.country-card:hover .country-thumbnail-image,
-.country-card:hover .country-thumbnail-images {
-  transform: scale(1.04);
-  filter: brightness(0.92) contrast(1.08) saturate(1.12);
-}
-
-.country-thumbnail-scrim {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(12, 15, 25, 0.3) 50%, rgba(12, 15, 25, 0.85) 100%);
-  pointer-events: none;
-}
-
-/* ========================================================
-   FROSTED GLASS BUTTONS & SUNSET CORAL HARMONIES
-   Eliminating solid black blocks and harsh oranges
-   ======================================================== */
-
-/* Strict translucent glassmorphic button component:
-   background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); */
-.btn-glassmorphic,
-.btn-glass-subtle,
-.btn-frosted-glass {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.85);
-  color: #1a1d20;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.dark .btn-glassmorphic,
-.dark .btn-glass-subtle,
-.dark .btn-frosted-glass {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #ffffff;
-}
-
-.btn-glassmorphic:hover,
-.btn-glass-subtle:hover,
-.btn-frosted-glass:hover {
-  background: rgba(255, 255, 255, 0.98);
-  border-color: rgba(203, 213, 225, 1);
-  box-shadow: 0 0 20px rgba(255, 107, 107, 0.15);
-}
-
-.dark .btn-glassmorphic:hover,
-.dark .btn-glass-subtle:hover,
-.dark .btn-frosted-glass:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 0 20px rgba(255, 107, 107, 0.2);
-}
-
-/* Primary Action Pill (Pastel Sunset Coral) */
-.btn-nubair-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.65rem 1.4rem;
-  min-height: 40px;
-  border-radius: 9999px;
-  font-weight: 700;
-  font-size: 0.8125rem;
-  letter-spacing: -0.01em;
-  background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
-}
-
-.btn-nubair-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0 20px rgba(13, 148, 136, 0.35);
-  filter: brightness(1.04);
-}
-
-.dark .btn-nubair-primary {
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.9) 0%, rgba(20, 184, 166, 0.85) 100%);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.28);
-}
-
-.dark .btn-nubair-primary:hover {
-  box-shadow: 0 0 24px rgba(13, 148, 136, 0.45);
-}
-
-/* Secondary Frosted Glass Pill */
-.btn-nubair-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.55rem 1.15rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 0.75rem;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #1a1d20;
-  border: 1px solid rgba(226, 232, 240, 0.85);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.btn-nubair-secondary:hover {
-  background: #ffffff;
-  border-color: #cbd5e1;
-  color: #000000;
-  box-shadow: 0 0 16px rgba(13, 148, 136, 0.15);
-}
-
-.dark .btn-nubair-secondary {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #8e9dbe;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: none;
-}
-
-.dark .btn-nubair-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.18);
-  color: #ffffff;
-  box-shadow: 0 0 18px rgba(13, 148, 136, 0.2);
-}
-
-/* Tab Pills / Filter Chips */
-.tab-chip-active {
-  background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%);
-  color: #ffffff;
-  font-weight: 700;
-  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
-  border: 1px solid transparent;
-}
-
-.dark .tab-chip-active {
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.92) 0%, rgba(20, 184, 166, 0.88) 100%);
-  color: #ffffff;
-  font-weight: 700;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(13, 148, 136, 0.25);
-}
-
-.tab-chip-inactive {
-  background: rgba(255, 255, 255, 0.8);
-  color: #64748b;
-  font-weight: 600;
-  border: 1px solid rgba(226, 232, 240, 0.8);
-}
-
-.tab-chip-inactive:hover {
-  color: #1a1d20;
-  border-color: #cbd5e1;
-  background: #ffffff;
-}
-
-.dark .tab-chip-inactive {
-  background: rgba(255, 255, 255, 0.03);
-  color: #8e9dbe;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.dark .tab-chip-inactive:hover {
-  background: rgba(255, 255, 255, 0.07);
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.14);
+  transform: scale(0.97);
+  transition: transform 0.12s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* Ambient glow utilities */
 .glow-coral-ambient {
-  box-shadow: 0 0 20px rgba(255, 107, 107, 0.22);
+  box-shadow: 0 0 24px rgba(255, 107, 107, 0.20);
 }
 
 .glow-gold-ambient {
-  box-shadow: 0 0 20px rgba(229, 169, 60, 0.22);
-}
-
-/* Crisis console in soft coral tone */
-.glass-crisis {
-  background: rgba(255, 241, 242, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 107, 107, 0.25);
-  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.08);
-}
-
-.dark .glass-crisis {
-  background: rgba(255, 107, 107, 0.05);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 107, 107, 0.22);
-  box-shadow: 0 0 25px rgba(255, 107, 107, 0.12);
+  box-shadow: 0 0 24px rgba(217, 161, 74, 0.20);
 }
 
 /* Smooth custom scrollbars */
@@ -452,34 +596,28 @@ button:active,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.3);
+  background: rgba(148, 163, 184, 0.28);
   border-radius: 9999px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.5);
+  background: rgba(148, 163, 184, 0.45);
 }
-
-/* ========================================================
-   GLOBALIZATION & MULTILINGUAL RESILIENCE (ES, RU, EN, TR)
-   No visual wrap distortion, optimal line-heights, fluid paddings
-   ======================================================== */
 
 .safe-text-wrap {
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-/* Bento Grid Architecture: 24px rounded corners */
 .bento-grid-container {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .bento-cell {
@@ -488,12 +626,6 @@ button:active,
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
-/* ========================================================
-   MOBILE-FIRST INDEXING & TOUCH TARGET OPTIMIZATION (WCAG 2.5.5)
-   Guarantees minimum 48x48px touch targets and eliminating
-   Google Search Console "Touch targets too close together" errors.
-   ======================================================== */
 
 .touch-target-min {
   min-width: 48px;
@@ -505,17 +637,11 @@ button:active,
 }
 
 @media (pointer: coarse), (max-width: 768px) {
-  /* Enforce touch-safe minimums on mobile interactive controls */
   .mobile-touch-target {
     min-width: 48px;
     min-height: 48px;
   }
 }
-
-/* ========================================================
-   SEMANTIC ACCESSIBLE ACCORDION (<details> & <summary>)
-   100% crawlable by Mobile Googlebot with zero display:none penalty
-   ======================================================== */
 
 details.semantic-card-details {
   display: block;
@@ -532,7 +658,6 @@ details.semantic-card-details > summary::-webkit-details-marker {
   display: none;
 }
 
-/* Strict Layout Dimension & Zero-CLS Image Containers */
 .aspect-thumbnail-container {
   aspect-ratio: 16 / 10;
   width: 100%;
