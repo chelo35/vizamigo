@@ -69,12 +69,12 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
 
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
-      {/* Sub Tabs Pill Navigation */}
-      <div className="flex border-b border-slate-200/80 dark:border-white/10 gap-2 overflow-x-auto pb-2 scrollbar-none">
+      {/* Sub Tabs Pill Navigation (Mobile-First Smooth Scroll Strip, Strict Zero Overlap) */}
+      <div className="horizontal-badge-slider no-scrollbar-slider touch-pan-x flex items-center border-b border-slate-200/80 dark:border-white/10 gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-none flex-nowrap">
         <button
           type="button"
           onClick={() => setActiveSubSection('overview')}
-          className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
+          className={`shrink-0 flex-shrink-0 px-4 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap touch-target-min ${
             activeSubSection === 'overview' ? 'tab-chip-active' : 'tab-chip-inactive'
           }`}
         >
@@ -85,7 +85,7 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
         <button
           type="button"
           onClick={() => setActiveSubSection('alerts')}
-          className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
+          className={`shrink-0 flex-shrink-0 px-4 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap touch-target-min ${
             activeSubSection === 'alerts' ? 'tab-chip-active' : 'tab-chip-inactive'
           }`}
         >
@@ -96,7 +96,7 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
         <button
           type="button"
           onClick={() => setActiveSubSection('membership')}
-          className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
+          className={`shrink-0 flex-shrink-0 px-4 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap touch-target-min ${
             activeSubSection === 'membership' ? 'tab-chip-active' : 'tab-chip-inactive'
           }`}
         >
@@ -107,7 +107,7 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
         <button
           type="button"
           onClick={() => setActiveSubSection('affiliate')}
-          className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
+          className={`shrink-0 flex-shrink-0 px-4 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap touch-target-min ${
             activeSubSection === 'affiliate' ? 'tab-chip-active' : 'tab-chip-inactive'
           }`}
         >
@@ -118,7 +118,7 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
         <button
           type="button"
           onClick={() => setActiveSubSection('legal')}
-          className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
+          className={`shrink-0 flex-shrink-0 px-4 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap touch-target-min ${
             activeSubSection === 'legal' ? 'tab-chip-active' : 'tab-chip-inactive'
           }`}
         >

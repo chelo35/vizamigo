@@ -440,7 +440,7 @@ export const GlobalFooter: React.FC<Props> = ({
               <button
                 type="button"
                 onClick={onOpenPackingList}
-                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-teal-700 dark:text-teal-300 font-semibold"
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors"
               >
                 🎒 {l('Akıllı Bavul Hazırlık Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}
               </button>
@@ -449,7 +449,7 @@ export const GlobalFooter: React.FC<Props> = ({
               <button
                 type="button"
                 onClick={onOpenTippingCalc}
-                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-amber-700 dark:text-amber-300 font-semibold"
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors"
               >
                 💵 {l('Akıllı Bahşiş & Masraf Bölüşücü', 'Smart Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}
               </button>
@@ -458,7 +458,7 @@ export const GlobalFooter: React.FC<Props> = ({
               <button
                 type="button"
                 onClick={onOpenTimezoneOverlap}
-                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-indigo-700 dark:text-indigo-300 font-semibold"
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors"
               >
                 ⚡ {l('Zaman Dilimi & Toplantı Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}
               </button>
@@ -467,7 +467,7 @@ export const GlobalFooter: React.FC<Props> = ({
               <button
                 type="button"
                 onClick={onOpenGlobalRadar}
-                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors text-cyan-700 dark:text-cyan-300 font-semibold"
+                className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline text-left cursor-pointer transition-colors"
               >
                 🛰️ {l('Küresel Seyahat Radarı & Dünya Haritası', 'Global Travel Radar & World Map', 'Reiseradar & Weltkarte', 'Radar de Viajes y Mapa', 'Глобальный Радар и Карта')}
               </button>

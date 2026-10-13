@@ -385,12 +385,12 @@ function AppContent() {
           {activeTab === 'profile' && (
             <div className="space-y-6">
               {/* Profil Sub Tabs */}
-              <div className="flex items-center justify-start overflow-x-auto scrollbar-none pb-1">
-                <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1 whitespace-nowrap">
+              <div className="w-full max-w-full overflow-x-auto scrollbar-none horizontal-badge-slider no-scrollbar-slider touch-pan-x pb-2 mb-3">
+                <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1.5 whitespace-nowrap shrink-0">
                   <button
                     type="button"
                     onClick={() => setProfileSubTab('profile')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
                       profileSubTab === 'profile'
                         ? 'tab-chip-active'
                         : 'tab-chip-inactive'
@@ -401,7 +401,7 @@ function AppContent() {
                   <button
                     type="button"
                     onClick={() => setProfileSubTab('emergency')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
                       profileSubTab === 'emergency'
                         ? 'tab-chip-active'
                         : 'tab-chip-inactive'

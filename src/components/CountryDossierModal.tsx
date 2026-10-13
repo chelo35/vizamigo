@@ -478,9 +478,15 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </button>
             </div>
           </div>
+        </div>
 
+        {/* Tab Content Body (Scrollable, Fluid Bottom-Sheet & Fullscreen) */}
+        <div
+          className="dossier-scrollable-content flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 space-y-6 overscroll-contain"
+          style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
+        >
           {/* Teal Status Band & Stay Limit Card (Redesign Screen 5) */}
-          <div className="mt-4 rounded-2xl bg-teal-600 p-4 text-white shadow-md">
+          <div className="rounded-2xl bg-teal-600 p-4 text-white shadow-md">
             <div className="flex items-center justify-between">
               <StatusBadge status={visaStatus} label={badgeLabel} className="!bg-white !text-emerald-800 shadow-xs" />
               <span className="text-xs font-semibold text-teal-100">{userPassportName}</span>
@@ -610,93 +616,86 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
             </button>
           </div>
-        </div>
 
-        {/* Tab Navigation Bar (Horizontal Badge Slider) */}
-        <div className="horizontal-badge-slider flex items-center gap-2 px-4 sm:px-6 py-2.5 bg-slate-50/60 dark:bg-white/[0.02] border-b border-slate-200/80 dark:border-white/10 overflow-x-auto whitespace-nowrap scrollbar-none touch-pan-x">
+        {/* Sticky Tab Navigation Bar (Horizontal Badge Slider, Zero Overlap) */}
+        <div className="sticky top-0 z-20 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2.5 bg-white/95 dark:bg-[#0c101d]/95 backdrop-blur-xl border-y border-slate-200/80 dark:border-white/10 horizontal-badge-slider no-scrollbar-slider touch-pan-x flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none flex-nowrap">
           <button
             type="button"
             onClick={() => setActiveTab('itinerary')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'itinerary' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <Route className="w-4 h-4" />
+            <Route className="w-4 h-4 shrink-0" />
             <span>{l('🗺️ Gezi Planı & Rota', '🗺️ Travel Itinerary & Guide', '🗺️ Reiseplan & Route')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('logistics')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'logistics' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <Zap className="w-4 h-4" />
+            <Zap className="w-4 h-4 shrink-0" />
             <span>{l('⚡ Lojistik & Göçebe Hub', '⚡ Nomad & Logistics Hub', '⚡ Nomaden- & Logistik-Hub')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('culture')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'culture' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <Landmark className="w-4 h-4" />
+            <Landmark className="w-4 h-4 shrink-0" />
             <span>{l('🏛️ Kültür & Turizm', '🏛️ Culture & Sights', '🏛️ Kultur & Tourismus')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('gastronomy')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'gastronomy' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <Utensils className="w-4 h-4" />
+            <Utensils className="w-4 h-4 shrink-0" />
             <span>{l('🍲 Yemek & İçecek', '🍲 Gastronomy & Drinks', '🍲 Essen & Trinken')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('language')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'language' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <Languages className="w-4 h-4" />
+            <Languages className="w-4 h-4 shrink-0" />
             <span>{l('🗣️ Dil, Din & Tarih', '🗣️ Language, Faith & History', '🗣️ Sprache, Glaube & Geschichte')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('achievements')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'achievements' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <Trophy className="w-4 h-4" />
+            <Trophy className="w-4 h-4 shrink-0" />
             <span>{l('🏆 Ünlüler & Ekonomi', '🏆 Figures & Economy', '🏆 Persönlichkeiten & Wirtschaft')}</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('visa')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
+            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
               activeTab === 'visa' ? 'tab-chip-active' : 'tab-chip-inactive'
             }`}
           >
-            <FileCheck2 className="w-4 h-4" />
+            <FileCheck2 className="w-4 h-4 shrink-0" />
             <span>{l('🛂 Vize & Güvenlik Kartı', '🛂 Visa & Travel Dossier', '🛂 Visum & Sicherheitskarte')}</span>
           </button>
         </div>
-
-        {/* Tab Content Body (Scrollable, Fluid Bottom-Sheet & Fullscreen) */}
-        <div
-          className="dossier-scrollable-content flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 space-y-6 overscroll-contain"
-          style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
-        >
           {/* Multilingual Rich Snippet Summary Box (TL;DR for Google Featured Snippets) */}
           <CountryRichSnippetSummary
             countryCode={code}

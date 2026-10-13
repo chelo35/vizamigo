@@ -1067,7 +1067,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       </div>
 
                       {/* Highlights Row (Scale-Ready Multilingual Flex Wrap - Pill Tags 9999px) */}
-                      <div className="flex flex-wrap items-center gap-2 min-h-[28px] overflow-hidden safe-text-wrap">
+                      <div className="flex flex-wrap items-center gap-2 min-h-[28px] safe-text-wrap">
                         {highlights.length > 0 ? (
                           highlights.map((tag, idx) => (
                             <span

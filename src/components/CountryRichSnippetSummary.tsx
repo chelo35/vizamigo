@@ -296,7 +296,7 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
               {badgeLabel}
             </span>
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
             {statusSubLabel}
           </div>
         </div>
@@ -313,12 +313,12 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
             <span itemProp="name">{takeawayLabels.stay}</span>
           </dt>
           <dd
-            className="mt-1.5 m-0 font-black text-xs sm:text-sm text-slate-900 dark:text-white truncate"
+            className="mt-1.5 m-0 font-black text-xs sm:text-sm text-slate-900 dark:text-white break-words"
             itemProp="value"
           >
             {stayDuration}
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
             {staySubLabel}
           </div>
         </div>
@@ -335,12 +335,12 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
             <span itemProp="name">{takeawayLabels.passport}</span>
           </dt>
           <dd
-            className="mt-1.5 m-0 font-bold text-xs text-slate-900 dark:text-white truncate"
+            className="mt-1.5 m-0 font-bold text-xs text-slate-900 dark:text-white break-words"
             itemProp="value"
           >
             {passportDetail}
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
             {passportSubLabel}
           </div>
         </div>
@@ -357,12 +357,12 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
             <span itemProp="name">{takeawayLabels.fee}</span>
           </dt>
           <dd
-            className="mt-1.5 m-0 font-bold text-xs text-slate-900 dark:text-white truncate"
+            className="mt-1.5 m-0 font-bold text-xs text-slate-900 dark:text-white break-words"
             itemProp="value"
           >
             {feeDetail}
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
             {feeSubLabel}
           </div>
         </div>

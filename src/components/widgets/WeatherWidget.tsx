@@ -142,8 +142,8 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
         )}
       </div>
 
-      {/* Quick Country / Region Filter Chips (Strict 48px Touch Target) */}
-      <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2.5 mb-2">
+      {/* Quick Country / Region Filter Chips (Strict 48px Touch Target, Zero Overlap) */}
+      <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2.5 mb-2 horizontal-badge-slider no-scrollbar-slider touch-pan-x flex-nowrap">
         {filterChips.map((chip) => (
           <button
             key={chip.id}
@@ -152,7 +152,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
               setQuickFilter(chip.id);
               setSearch('');
             }}
-            className={`min-h-[48px] min-w-[48px] px-3.5 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
+            className={`shrink-0 flex-shrink-0 min-h-[44px] min-w-[48px] px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
               !search && quickFilter === chip.id
                 ? 'bg-[#FF6B6B] text-white shadow-xs'
                 : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70 dark:hover:bg-white/[0.08]'

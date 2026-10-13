@@ -91,6 +91,10 @@
     {
       "source": "/:lang(tr|en|de|ru|es)/country/:code([A-Za-z]{2})",
       "destination": "/index.html"
+    },
+    {
+      "source": "/((?!assets/|.*\\..*).*)",
+      "destination": "/index.html"
     }
   ]
 }
