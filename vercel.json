@@ -1,4 +1,6 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/sitemap.xml",
@@ -10,10 +12,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=43200"
-        },
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex"
         }
       ]
     },
@@ -40,9 +38,58 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "(?<lang>tr|en|de|ru|es)"
+        }
+      ],
+      "destination": "/:lang",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "hl",
+          "value": "(?<lang>tr|en|de|ru|es)"
+        }
+      ],
+      "destination": "/:lang",
+      "permanent": true
+    },
+    {
+      "source": "/(plan|track|nomad|profile|consular)",
+      "destination": "/en/$1",
+      "permanent": true
+    },
+    {
+      "source": "/country/:code([A-Za-z]{2})",
+      "destination": "/en/country/:code",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/:lang(tr|en|de|ru|es)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/:lang(tr|en|de|ru|es)/:tab(explore|plan|track|nomad|profile|consular)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/:lang(tr|en|de|ru|es)/country/:code([A-Za-z]{2})",
       "destination": "/index.html"
     }
   ]

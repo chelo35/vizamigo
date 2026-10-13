@@ -1,48 +1,76 @@
 # ==============================================================================
-# Vizamigo Mobile-First Robots.txt
-# Technical SEO, Crawl Budget Protection & Core Web Vitals Optimization
+# Vizamigo Mobile-First Indexing & Crawl Budget Optimization (robots.txt)
+# Active Languages: TR, EN, DE, ES, RU + x-default
 # ==============================================================================
 
 User-agent: *
 
-# Explicitly Allow All Public Content & Mobile Rendering Assets
+# Explicitly Allow Core Public Travel Content & Mobile Rendering Assets
 Allow: /
+Allow: /tr/
+Allow: /en/
+Allow: /de/
+Allow: /es/
+Allow: /ru/
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.webp$
 Allow: /*.png$
+Allow: /*.jpg$
 Allow: /*.svg$
 Allow: /*.ico$
 Allow: /*.woff2$
 Allow: /manifest.json
 
-# Protect Mobile Crawl Budget - Disallow Technical, Internal & Temporary Paths
+# Strictly Block Technical Backend Paths, Staging URLs, Mock Routes & Unfinished Scripts
 Disallow: /api/
+Disallow: /backend/
 Disallow: /admin/
 Disallow: /staging/
+Disallow: /mock/
+Disallow: /mock-data/
+Disallow: /scripts/
+Disallow: /unfinished/
+Disallow: /internal/
 Disallow: /dev/
 Disallow: /test/
 Disallow: /draft/
 Disallow: /temp/
+Disallow: /tmp/
 Disallow: /cache/
+Disallow: /debug/
 Disallow: /_next/
 Disallow: /private/
 Disallow: /*?*query=
 Disallow: /*?*filter=
+Disallow: /*?*mock=
+Disallow: /*?*preview=
+Disallow: /*?*debug=
 Disallow: /*?*utm_*
 Disallow: /*?*fbclid=
 Disallow: /*?*gclid=
 
-# Major International Crawlers Explicit Identification
+# Dedicated Rules for Google Mobile & International Search Crawlers
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /staging/
+Disallow: /mock/
+Disallow: /scripts/
+
 User-agent: Googlebot-Mobile
 Allow: /
-User-agent: Yandex
-Allow: /
+Disallow: /api/
+Disallow: /staging/
+Disallow: /mock/
+Disallow: /scripts/
+
 User-agent: Bingbot
 Allow: /
 
-# Sitemap Index Declaration
+User-agent: Yandex
+Allow: /
+
+# Dynamic Multilingual X-Linked Sitemap & Host Declarations
 Sitemap: https://vizamigo.com/sitemap.xml
 Host: https://vizamigo.com
