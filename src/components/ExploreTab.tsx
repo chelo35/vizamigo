@@ -52,7 +52,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getPassportItems } from '../utils/calculator';
 import { loadStoredChecklists, saveStoredChecklists } from '../utils/storage';
 import { useI18n } from '../data/i18n';
-import { getCountryVisual } from '../data/countryVisuals';
+import { getCountryVisual, getOptimizedSrcSet } from '../data/countryVisuals';
 import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/schemaGenerator';
@@ -182,11 +182,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
-  const [visibleCount, setVisibleCount] = useState<number>(24);
+  const [visibleCount, setVisibleCount] = useState<number>(16);
 
   // Reset pagination when search, filter or passport changes
   useEffect(() => {
-    setVisibleCount(24);
+    setVisibleCount(16);
   }, [search, filter, currentPassport]);
 
   // Defer live clock, weather & currency widget hydration until after initial HTML/CSS paint (<0.5s FCP)
@@ -905,8 +905,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </p>
           </div>
         ) : (
-          filteredItems.slice(0, visibleCount).map(item => {
+          filteredItems.slice(0, visibleCount).map((item, idx) => {
             const isExpanded = expandedCountry === item.c;
+            const isAboveFold = idx < 3;
             const countryName = getCountryName(item.c, language);
             const badgeClass = item.id ? CAT_INFO.id.badgeBg : CAT_INFO[item.cat]?.badgeBg;
             const badgeText = getBadgeLabel(item);
@@ -999,16 +1000,19 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     >
                       <img
                         src={visual.image}
+                        srcSet={getOptimizedSrcSet(visual.image)}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 220px, 240px"
                         alt={`${countryName} - ${visual.landmark}`}
                         className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500 rounded-2xl"
-                        loading="lazy"
+                        loading={isAboveFold ? 'eager' : 'lazy'}
+                        fetchPriority={isAboveFold ? 'high' : 'auto'}
                         decoding="async"
-                        width="480"
-                        height="288"
+                        width="240"
+                        height="200"
                         onError={(e) => {
                           const target = e.currentTarget;
                           target.onerror = null;
-                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&fm=webp&q=75';
+                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=360&fm=webp&q=65';
                         }}
                       />
                       <div className="country-thumbnail-scrim" />

@@ -18,9 +18,9 @@ export function getOptimizedImageUrl(
   options?: { width?: number; format?: 'webp' | 'avif'; quality?: number }
 ): string {
   if (!rawUrl) return DEFAULT_TRAVEL_FALLBACK;
-  const width = options?.width || 480;
+  const width = options?.width || 360;
   const format = options?.format || 'webp';
-  const quality = options?.quality || 75;
+  const quality = options?.quality || 65;
 
   if (rawUrl.includes('images.unsplash.com')) {
     try {
@@ -36,6 +36,11 @@ export function getOptimizedImageUrl(
     }
   }
   return rawUrl;
+}
+
+export function getOptimizedSrcSet(rawUrl: string, quality = 65): string {
+  if (!rawUrl || !rawUrl.includes('images.unsplash.com')) return '';
+  return `${getOptimizedImageUrl(rawUrl, { width: 240, quality })} 240w, ${getOptimizedImageUrl(rawUrl, { width: 360, quality })} 360w, ${getOptimizedImageUrl(rawUrl, { width: 480, quality })} 480w`;
 }
 
 export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = {

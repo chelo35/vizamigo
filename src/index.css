@@ -868,6 +868,16 @@ body,
 .vz-route { animation: vz-route 3s linear infinite; }
 .vz-dot { animation: vz-pulse 2s ease-in-out infinite; }
 .vz-ring { animation: vz-ring-grow 1.4s ease-out; }
-@media (prefers-reduced-motion: reduce) {
-  .vz-route, .vz-dot, .vz-ring { animation: none; }
+
+/* Turn off non-composited stroke animations on mobile and reduced motion */
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  .vz-route { animation: none; stroke-dashoffset: 0; }
+  .vz-ring { animation: none; }
 }
+
+/* DOM & Rendering Optimization for Country Cards */
+.country-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 320px;
+}
+
