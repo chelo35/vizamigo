@@ -68,7 +68,7 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
   };
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* Sub Tabs Pill Navigation (Mobile-First Smooth Scroll Strip, Strict Zero Overlap) */}
       <div className="horizontal-badge-slider no-scrollbar-slider touch-pan-x flex items-center border-b border-slate-200/80 dark:border-white/10 gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-none flex-nowrap">
         <button

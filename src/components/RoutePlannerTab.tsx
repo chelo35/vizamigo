@@ -478,7 +478,7 @@ export const RoutePlannerTab: React.FC<RoutePlannerTabProps> = ({ currentPasspor
   }, [currentPassport, language, stops, trips]);
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* Visual Journey Schematic Map & Line-Connected Timeline */}
       <RouteMapVisualizer
         stops={stops}

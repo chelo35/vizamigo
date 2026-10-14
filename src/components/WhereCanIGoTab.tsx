@@ -91,7 +91,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
   ];
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* Filter Box Card */}
       <div className="glass-panel border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-lg space-y-6 relative overflow-hidden">
         {/* Subtle decorative glow */}

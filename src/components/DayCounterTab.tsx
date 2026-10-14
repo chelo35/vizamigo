@@ -183,7 +183,7 @@ export const DayCounterTab: React.FC = () => {
   }, [trips, currentRule]);
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* Rule Selection and Big Gauge Card */}
       <div className="glass-panel rounded-3xl p-6 sm:p-8 space-y-6">
         {/* Rule Selector Header */}

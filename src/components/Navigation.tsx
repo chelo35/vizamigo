@@ -187,7 +187,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                         <span>{item.label}</span>
                       </div>
                       {item.tag && (
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-white/[0.06] text-slate-500 dark:text-[#8E9DBE]">
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-white/[0.06] text-slate-600 dark:text-[#8E9DBE]">
                           {item.tag}
                         </span>
                       )}

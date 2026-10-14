@@ -115,8 +115,17 @@ html.dark,
    WCAG AA 2.1 TEXT CONTRAST ENGINE (LIGHT-MODE SAFETY NET)
    Guarantees >= 4.5:1 normal text contrast on all surfaces
    ======================================================== */
-html:not(.dark) .text-slate-400 {
-  color: #475569; /* slate-600: 7.58:1 on white */
+html:not(.dark) .text-slate-400,
+html:not(.dark) .text-slate-500 {
+  color: #475569; /* slate-600: 7.58:1 on white, 6.92:1 on slate-100 */
+}
+
+html.dark .text-slate-500 {
+  color: #94A3B8; /* slate-400: 7.24:1 on dark canvas */
+}
+
+html:not(.dark) .text-\[\#0D9488\] {
+  color: #0F766E; /* teal-700: 5.47:1 on white, 4.90:1 on teal-pill */
 }
 
 html:not(.dark) .text-\[\#2A8C82\],

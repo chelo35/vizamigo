@@ -309,7 +309,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const passportName = getCountryName(currentPassport, language);
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* View Switcher: Liste vs İnteraktif Harita (Compact Pill Bar) */}
       <div className="flex items-center justify-start gap-3">
         <div className="inline-flex items-center gap-1.5 p-1.5 glass-panel rounded-full">
@@ -343,7 +343,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       {viewMode === 'map' ? (
         <Suspense
           fallback={
-            <div className="h-[520px] rounded-[24px] glass-card animate-pulse flex items-center justify-center text-sm font-bold text-slate-400">
+            <div className="h-[520px] rounded-[24px] glass-card flex items-center justify-center text-sm font-bold text-slate-600 dark:text-slate-300">
               {l('İnteraktif Dünya Haritası Yükleniyor...', 'Loading Interactive World Map...', 'Interaktive Weltkarte wird geladen...')}
             </div>
           }
@@ -368,7 +368,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
             <div className="relative flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0D9488]/10 dark:bg-[#0D9488]/15 border border-[#0D9488]/20 text-[#0D9488] dark:text-[#14B8A6] text-xs font-bold mb-3 tracking-wide shadow-2xs">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0D9488]/10 dark:bg-[#0D9488]/15 border border-[#0D9488]/20 text-[#0F766E] dark:text-[#14B8A6] text-xs font-bold mb-3 tracking-wide shadow-2xs">
                   <span className="text-base select-none">{getFlag(currentPassport)}</span>
                   <span>{l(
                     `${passportName} Vatandaşlığı & Küresel Mobilite`,

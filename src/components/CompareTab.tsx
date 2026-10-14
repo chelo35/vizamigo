@@ -40,7 +40,7 @@ export const CompareTab: React.FC<CompareTabProps> = ({
   };
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* Selector Box */}
       <div className="glass-panel border border-slate-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-lg space-y-5 bg-gradient-to-br from-white/95 via-slate-50/80 to-[#0D9488]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80 relative overflow-hidden">
         <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/10">
@@ -77,7 +77,7 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                 <span className="text-3xl leading-none group-hover:scale-105 transition-transform">{getFlag(passportA)}</span>
                 <span className="font-bold text-base text-slate-900 dark:text-white">{nameA}</span>
               </div>
-              <span className="text-xs text-[#0D9488] dark:text-[#14B8A6] font-bold px-2.5 py-1 rounded-full bg-[#0D9488]/10 border border-[#0D9488]/20">
+              <span className="text-xs text-[#0F766E] dark:text-[#14B8A6] font-bold px-2.5 py-1 rounded-full bg-[#0D9488]/10 border border-[#0D9488]/20">
                 {l('Değiştir', 'Change', 'Ändern')}
               </span>
             </button>
@@ -113,7 +113,7 @@ export const CompareTab: React.FC<CompareTabProps> = ({
                 <span className="text-3xl leading-none group-hover:scale-105 transition-transform">{getFlag(passportB)}</span>
                 <span className="font-bold text-base text-slate-900 dark:text-white">{nameB}</span>
               </div>
-              <span className="text-xs text-[#0D9488] dark:text-[#14B8A6] font-bold px-2.5 py-1 rounded-full bg-[#0D9488]/10 border border-[#0D9488]/20">
+              <span className="text-xs text-[#0F766E] dark:text-[#14B8A6] font-bold px-2.5 py-1 rounded-full bg-[#0D9488]/10 border border-[#0D9488]/20">
                 {l('Değiştir', 'Change', 'Ändern')}
               </span>
             </button>

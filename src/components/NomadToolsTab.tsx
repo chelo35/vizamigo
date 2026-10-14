@@ -100,7 +100,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
   ];
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-300">
+    <div className="space-y-6">
       {/* Sub Tabs Pill Navigation */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
         <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/70 dark:border-white/10 shadow-xs gap-1 whitespace-nowrap">
