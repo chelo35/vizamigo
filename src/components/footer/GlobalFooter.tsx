@@ -183,7 +183,7 @@ export const GlobalFooter: React.FC<Props> = ({
               <button
                 type="button"
                 onClick={() => setActiveTab && setActiveTab('profile')}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-white font-black text-xs sm:text-sm shadow-lg shadow-teal-500/25 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-teal-700 to-emerald-700 hover:from-teal-600 hover:to-emerald-600 text-white font-black text-xs sm:text-sm shadow-lg shadow-teal-700/25 transition-all transform hover:-translate-y-0.5 cursor-pointer"
               >
                 <BookmarkCheck className="w-4 h-4" />
                 <span>{l('Profilimi & Pasaportlarımı Gör', 'View My Profile & Passports', 'Mein Profil & Pässe', 'Ver Mi Perfil', 'Мой профиль и паспорта')}</span>
@@ -243,13 +243,13 @@ export const GlobalFooter: React.FC<Props> = ({
                 onClick={() => setSelectedCategory(cat.key)}
                 className={`shrink-0 flex items-center gap-2 px-4 py-2 rounded-2xl text-xs font-extrabold transition-all cursor-pointer ${
                   isActive
-                    ? 'bg-teal-600 dark:bg-teal-500 text-white shadow-md shadow-teal-500/20'
+                    ? 'bg-teal-700 dark:bg-teal-700 text-white shadow-md shadow-teal-700/20'
                     : 'bg-slate-100 dark:bg-white/[0.05] text-slate-600 dark:text-slate-300 hover:bg-slate-200/80 dark:hover:bg-white/[0.08]'
                 }`}
               >
                 <span>{labelText}</span>
                 <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold ${
-                  isActive ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-white/10 text-slate-500 dark:text-slate-400'
+                  isActive ? 'bg-black/25 text-white' : 'bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-slate-200'
                 }`}>
                   {cat.count}
                 </span>
@@ -302,25 +302,25 @@ export const GlobalFooter: React.FC<Props> = ({
         <div className="pt-4 border-t border-slate-200/60 dark:border-white/[0.06]">
           <p className="text-[11px] leading-relaxed text-slate-400 dark:text-slate-500 text-center sm:text-left flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-1">
             <span className="font-bold text-slate-600 dark:text-slate-400">{l('Popüler Rehberler:', 'Popular Guides:', 'Beliebte Ratgeber:', 'Guías Populares:', 'Популярные гиды:')}</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('GE')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Kimlikle Gürcistan', 'Georgia with National ID', 'Georgien mit Personalausweis', 'Georgia con DNI', 'Грузия по ID')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('GE')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Kimlikle Gürcistan', 'Georgia with National ID', 'Georgien mit Personalausweis', 'Georgia con DNI', 'Грузия по ID')}</button>
             <span>·</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('RS')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Sırbistan Vizesiz Seyahat', 'Serbia Visa-Free', 'Serbien Visafrei', 'Serbia Sin Visa', 'Сербия без визы')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('RS')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Sırbistan Vizesiz Seyahat', 'Serbia Visa-Free', 'Serbien Visafrei', 'Serbia Sin Visa', 'Сербия без визы')}</button>
             <span>·</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('BA')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Bosna-Hersek Rehberi', 'Bosnia Travel Guide', 'Bosnien Ratgeber', 'Guía Bosnia', 'Гид по Боснии')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('BA')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Bosna-Hersek Rehberi', 'Bosnia Travel Guide', 'Bosnien Ratgeber', 'Guía Bosnia', 'Гид по Боснии')}</button>
             <span>·</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('ME')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Karadağ Tatil Şartları', 'Montenegro Requirements', 'Montenegro Regeln', 'Condiciones Montenegro', 'Черногория правила')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('ME')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Karadağ Tatil Şartları', 'Montenegro Requirements', 'Montenegro Regeln', 'Condiciones Montenegro', 'Черногория правила')}</button>
             <span>·</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('JP')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Japonya 90 Gün Vizesiz', 'Japan 90-Day Free', 'Japan 90 Tage Visafrei', 'Japón 90 Días', 'Япония 90 дней')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('JP')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Japonya 90 Gün Vizesiz', 'Japan 90-Day Free', 'Japan 90 Tage Visafrei', 'Japón 90 Días', 'Япония 90 дней')}</button>
             <span>·</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('EG')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Mısır Kapıda Vize Şartları', 'Egypt Visa on Arrival', 'Ägypten Visum', 'Egipto Visa Llegada', 'Египет по прилету')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('EG')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Mısır Kapıda Vize Şartları', 'Egypt Visa on Arrival', 'Ägypten Visum', 'Egipto Visa Llegada', 'Египет по прилету')}</button>
             <span>·</span>
-            <button type="button" onClick={() => onSelectCountry && onSelectCountry('ID')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Bali Dijital Göçebe Vizesi', 'Bali Digital Nomad Visa', 'Bali Nomad Visum', 'Visa Nómada Bali', 'Виза кочевника Бали')}</button>
+            <button type="button" onClick={() => onSelectCountry && onSelectCountry('ID')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Bali Dijital Göçebe Vizesi', 'Bali Digital Nomad Visa', 'Bali Nomad Visum', 'Visa Nómada Bali', 'Виза кочевника Бали')}</button>
             <span>·</span>
-            <button type="button" onClick={() => setActiveTab && setActiveTab('plan')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Rota Maliyet Hesaplayıcı', 'Route Cost Calculator', 'Routenrechner', 'Calculadora de Rutas', 'Калькулятор маршрута')}</button>
+            <button type="button" onClick={() => setActiveTab && setActiveTab('plan')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Rota Maliyet Hesaplayıcı', 'Route Cost Calculator', 'Routenrechner', 'Calculadora de Rutas', 'Калькулятор маршрута')}</button>
             <span>·</span>
-            <button type="button" onClick={() => setActiveTab && setActiveTab('consular')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Konsolosluk Kriz Masası', 'Consular Crisis Desk', 'Krisenzentrum', 'Mesa de Crisis', 'Кризисный центр')}</button>
+            <button type="button" onClick={() => setActiveTab && setActiveTab('consular')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Konsolosluk Kriz Masası', 'Consular Crisis Desk', 'Krisenzentrum', 'Mesa de Crisis', 'Кризисный центр')}</button>
             <span>·</span>
-            <button type="button" onClick={() => setActiveTab && setActiveTab('nomad')} className="hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Tüm Dijital Göçebe Vizeleri', 'All Digital Nomad Visas', 'Alle Nomad-Visa', 'Todas las Visas Nómada', 'Все визы кочевников')}</button>
+            <button type="button" onClick={() => setActiveTab && setActiveTab('nomad')} className="min-h-[44px] inline-flex items-center px-1.5 py-2 hover:text-teal-600 dark:hover:text-teal-400 hover:underline cursor-pointer">{l('Tüm Dijital Göçebe Vizeleri', 'All Digital Nomad Visas', 'Alle Nomad-Visa', 'Todas las Visas Nómada', 'Все визы кочевников')}</button>
           </p>
         </div>
       </div>
@@ -331,10 +331,10 @@ export const GlobalFooter: React.FC<Props> = ({
       <div className="pt-10 border-t border-slate-200/80 dark:border-white/10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-xs text-slate-500 dark:text-slate-400">
         {/* Column 1: Destek & Acil Kriz */}
         <div className="space-y-3">
-          <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
+          <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
             <span>{l('Destek & Kriz Masası', 'Support & Crisis Desk', 'Support & Krisenhilfe', 'Soporte y Crisis', 'Поддержка и кризис')}</span>
-          </h4>
+          </h3>
           <ul className="space-y-2">
             <li>
               <button
@@ -386,10 +386,10 @@ export const GlobalFooter: React.FC<Props> = ({
 
         {/* Column 2: Gezgin Araçları & Keşif */}
         <div className="space-y-3">
-          <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
+          <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
             <Compass className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
             <span>{l('Keşfet & Gezgin Araçları', 'Explore & Travel Tools', 'Tools & Entdecken', 'Herramientas de Viaje', 'Инструменты')}</span>
-          </h4>
+          </h3>
           <ul className="space-y-2">
             <li>
               <button
@@ -477,10 +477,10 @@ export const GlobalFooter: React.FC<Props> = ({
 
         {/* Column 3: Şartlar ve Yasal Bildirimler */}
         <div className="space-y-3">
-          <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
+          <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
             <FileCheck2 className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
             <span>{l('Şartlar & Yasal Bilgiler', 'Terms & Legal Compliance', 'Rechtliches & Richtlinien', 'Términos y Legal', 'Условия и правила')}</span>
-          </h4>
+          </h3>
           <ul className="space-y-2">
             <li>
               <button
@@ -532,10 +532,10 @@ export const GlobalFooter: React.FC<Props> = ({
 
         {/* Column 4: Ortaklar & Ekosistem */}
         <div className="space-y-3">
-          <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
+          <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
             <Users className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
             <span>{l('Ortaklar & Topluluk', 'Partners & Community', 'Partner & Community', 'Socios y Comunidad', 'Партнеры и сообщество')}</span>
-          </h4>
+          </h3>
           <ul className="space-y-2">
             <li>
               <span className="hover:text-teal-600 dark:hover:text-teal-400 cursor-pointer transition-colors">
@@ -567,10 +567,10 @@ export const GlobalFooter: React.FC<Props> = ({
 
         {/* Column 5: Vizamigo Hakkında */}
         <div className="space-y-3">
-          <h4 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
+          <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
             <Award className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
             <span>{l('Vizamigo Hakkında', 'About Vizamigo', 'Über Vizamigo', 'Acerca de Vizamigo', 'О Vizamigo')}</span>
-          </h4>
+          </h3>
           <ul className="space-y-2">
             <li>
               <button

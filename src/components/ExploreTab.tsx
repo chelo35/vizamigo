@@ -1070,7 +1070,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung', 'Puntaje de Viajero', 'Оценка')}
                             </div>
                           </div>
-                          <div className="w-8 h-8 rounded-[14px] bg-[#2A8C82] text-white font-mono font-bold text-xs sm:text-sm flex items-center justify-center">
+                          <div className="w-8 h-8 rounded-[14px] bg-[#1E7168] text-white font-mono font-bold text-xs sm:text-sm flex items-center justify-center">
                             {travelerScore}
                           </div>
                         </div>
@@ -1968,7 +1968,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={() => setVisibleCount((prev) => Math.min(filteredItems.length, prev + 24))}
-              className="px-6 py-3.5 rounded-full bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center gap-2 touch-target-min hover:scale-105 active:scale-95"
+              className="px-6 py-3.5 rounded-full bg-teal-700 hover:bg-teal-600 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center gap-2 touch-target-min hover:scale-105 active:scale-95"
             >
               <Sparkles className="w-4 h-4" />
               <span>

@@ -86,10 +86,10 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
             <CloudSun className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
+            <h2 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
               <span>{l('Canlı Dünya Hava Durumu', 'Live World Weather', 'Weltweites Wetter', 'Clima Mundial', 'Погода в мире')}</span>
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#2A8C82]" title="Open-Meteo Canlı Meteoroloji" />
-            </h4>
+            </h2>
             <span className="text-[11px] text-slate-500 dark:text-slate-400 leading-[1.6]">
               {ALL_WORLD_HUBS.length}+ {l('turistik şehir & tatil bölgesi canlı hava', 'cities & resorts live weather', 'Städte & Urlaubsorte Live-Wetter', 'clima en vivo', 'погода в реальном времени')}
             </span>
@@ -154,7 +154,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
             }}
             className={`shrink-0 flex-shrink-0 min-h-[44px] min-w-[48px] px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer inline-flex items-center justify-center touch-target-min ${
               !search && quickFilter === chip.id
-                ? 'bg-[#FF6B6B] text-white shadow-xs'
+                ? 'bg-[#D63E3E] text-white shadow-xs'
                 : 'bg-slate-100/80 dark:bg-white/[0.04] text-slate-600 dark:text-slate-300 border border-transparent dark:border-white/[0.08] hover:bg-slate-200/70 dark:hover:bg-white/[0.08]'
             }`}
           >

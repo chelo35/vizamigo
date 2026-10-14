@@ -42,13 +42,13 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <DollarSign className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
+            <h2 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
               <span>{l('Hızlı Döviz Çevirici', 'Fast FX Converter', 'Währungsrechner', 'Conversor de Moneda', 'Конвертер валют')}</span>
               <span
                 className={`inline-block w-1.5 h-1.5 rounded-full ${isLive ? 'bg-[#2A8C82]' : 'bg-[#D9A14A]'}`}
                 title={isLive ? l('Canlı Piyasa Kurları Aktif', 'Live Market Rates Active', 'Live-Kurse aktiv') : l('Baz Kur', 'Baseline Rate', 'Basiskurs')}
               />
-            </h4>
+            </h2>
             <span className="text-[11px] text-slate-500 dark:text-slate-400 leading-[1.6]">
               {isLive
                 ? l('Canlı Güncel Piyasa Kurları', 'Live Market Exchange Rates', 'Aktuelle Live-Wechselkurse', 'Tipos de cambio en vivo', 'Актуальные курсы валют')
@@ -91,6 +91,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             value={amount || ''}
             onChange={(e) => setAmount(Math.max(0, parseFloat(e.target.value) || 0))}
             placeholder="100"
+            aria-label={l('Döviz Tutarı', 'Currency Amount', 'Währungsbetrag', 'Monto de Divisa', 'Сумма')}
             className="w-24 min-h-[48px] px-3 py-2.5 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white font-mono font-bold text-xs text-center focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30"
           />
 
@@ -98,6 +99,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <select
               value={fromCode}
               onChange={(e) => setFromCode(e.target.value)}
+              aria-label={l('Kaynak Para Birimi', 'Source Currency', 'Ausgangswährung', 'Moneda de Origen', 'Исходная валюта')}
               className="flex-1 min-w-0 min-h-[48px] px-3 py-2.5 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
             >
               {POPULAR_CURRENCIES.map((c) => (
@@ -110,6 +112,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <button
               type="button"
               onClick={handleSwap}
+              aria-label={l('Para birimlerini tersine çevir', 'Swap currencies', 'Währungen tauschen', 'Invertir monedas', 'Поменять валюты')}
               className="min-w-[48px] min-h-[48px] p-2.5 rounded-full glass-pill-control text-slate-600 dark:text-slate-300 hover:text-[#2A8C82] transition-colors cursor-pointer flex-shrink-0 flex items-center justify-center touch-target-min"
               title={l('Tersine çevir', 'Swap', 'Tauschen', 'Invertir', 'Поменять')}
             >
@@ -119,6 +122,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <select
               value={toCode}
               onChange={(e) => setToCode(e.target.value)}
+              aria-label={l('Hedef Para Birimi', 'Target Currency', 'Zielwährung', 'Moneda de Destino', 'Целевая валюта')}
               className="flex-1 min-w-0 min-h-[48px] px-3 py-2.5 rounded-[20px] bg-slate-50/90 dark:bg-white/[0.04] backdrop-blur-md border border-slate-200/70 dark:border-white/[0.08] text-slate-900 dark:text-white text-xs font-bold focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/30 cursor-pointer"
             >
               {POPULAR_CURRENCIES.map((c) => (

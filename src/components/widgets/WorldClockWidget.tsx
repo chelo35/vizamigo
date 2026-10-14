@@ -76,9 +76,9 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
             <Clock className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight">
+            <h2 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight">
               {l('Canlı Dünya Saatleri', 'Live World Clock', 'Weltzeituhr', 'Reloj Mundial', 'Мировое время')}
-            </h4>
+            </h2>
             <span className="text-[11px] text-slate-500 dark:text-slate-400 leading-[1.6]">
               {ALL_WORLD_HUBS.length}+ {l('turistik şehir, tatil bölgesi & başkent', 'tourist cities, resorts & capitals', 'Städte & Urlaubsorte', 'ciudades turísticas y capitales', 'городов и курортов')}
             </span>

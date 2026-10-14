@@ -330,20 +330,20 @@ html.dark {
 /* Tab Pills / Filter Chips (Strict Pill Radius 9999px) */
 .tab-chip-active {
   border-radius: 9999px;
-  background: linear-gradient(135deg, #2A8C82 0%, #3E9E94 100%);
+  background: linear-gradient(135deg, #1A6C62 0%, #227970 100%);
   color: #ffffff;
   font-weight: 700;
   letter-spacing: -0.02em;
-  box-shadow: 0 8px 20px -4px rgba(42, 140, 130, 0.28);
+  box-shadow: 0 8px 20px -4px rgba(26, 108, 98, 0.28);
   border: 1px solid transparent;
 }
 
 .dark .tab-chip-active {
-  background: linear-gradient(135deg, rgba(42, 140, 130, 0.92) 0%, rgba(62, 158, 148, 0.88) 100%);
+  background: linear-gradient(135deg, #18645B 0%, #1F736A 100%);
   color: #ffffff;
   font-weight: 700;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 22px -4px rgba(42, 140, 130, 0.32);
+  box-shadow: 0 8px 22px -4px rgba(24, 100, 91, 0.32);
 }
 
 .tab-chip-inactive {
