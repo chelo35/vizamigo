@@ -717,12 +717,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
         {/* Quick Travel Tools (4 Symmetrical Interactive Cards) */}
         <div>
-          <div className="rounded-full bg-white/80 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/[0.08] text-xs font-bold text-slate-500 dark:text-slate-400 px-4 py-2 flex items-center justify-between mb-4">
+          <div className="rounded-full bg-white/80 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/[0.08] text-xs font-bold text-slate-600 dark:text-slate-400 px-4 py-2 flex items-center justify-between mb-4">
             <span className="flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />
               <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
             </span>
-            <span className="font-mono text-[10px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] px-2.5 py-0.5 rounded-full font-bold">2026 Edition</span>
+            <span className="font-mono text-[10px] bg-[#2A8C82]/10 text-[#1E6F66] dark:text-[#52B2A7] px-2.5 py-0.5 rounded-full font-bold">2026 Edition</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -738,9 +738,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div className="min-w-0 flex-1">
                 <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Rota & Sinerji', 'Route & Synergy', 'Route & Synergie', 'Ruta y Sinergia', 'Маршруты')}</span>
-                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#1E6F66] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
+                <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('Çok ülkeli rota planlayıcı', 'Multi-country itinerary', 'Mehrländer-Planer', 'Planificador de ruta', 'Маршрут')}
                 </p>
               </div>
@@ -758,9 +758,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div className="min-w-0 flex-1">
                 <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage-Tracker', 'Control de Días', 'Счетчик')}</span>
-                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#1E6F66] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
+                <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('90/180 gün kuralı & kalış', '90/180-day window & stay', 'Rollierende 180 Tage', 'Regla 90/180 días', 'Правило 90/180')}
                 </p>
               </div>
@@ -772,15 +772,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               onClick={() => onNavigateTab?.('nomad')}
               className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
             >
-              <div className="w-11 h-11 rounded-[16px] bg-[#3A7CA5]/12 text-[#3A7CA5] dark:text-[#6DAEDB] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+              <div className="w-11 h-11 rounded-[16px] bg-[#3A7CA5]/12 text-[#235878] dark:text-[#6DAEDB] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Sparkles className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Dijital Göçebe', 'Digital Nomad Tools', 'Nomaden-Tools', 'Nómada Digital', 'Номады')}</span>
-                  <span className="text-[#3A7CA5] dark:text-[#6DAEDB] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#235878] dark:text-[#6DAEDB] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
+                <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
                   {l('183 gün vergi & internet hızları', '183-day tax tracker & speeds', 'Steuer- & Internet-Tracker', 'Impuestos y velocidades', 'Налоги и скорость')}
                 </p>
               </div>
@@ -798,9 +798,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div className="min-w-0 flex-1">
                 <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульство')}</span>
-                  <span className="text-[#FF6B6B] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#C0392B] dark:text-[#FF8E8E] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-[#E05252] dark:text-[#FF8E8E] mt-0.5 truncate leading-[1.6]">
+                <p className="text-[11px] text-[#C0392B] dark:text-[#FF8E8E] mt-0.5 truncate leading-[1.6]">
                   {l('7/24 Acil kriz masası & pasaport', '24/7 Diplomatic crisis hotline', '24/7 Notfallkonsole', 'Línea de emergencia 24/7', 'Круглосуточная помощь')}
                 </p>
               </div>
@@ -881,9 +881,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div className="min-w-0 flex-1">
                 <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
                   <span className="truncate">{l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Reiseradar-Karte', 'Radar de Viajes', 'Радар Путешествий')}</span>
-                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
+                  <span className="text-[#1E6F66] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
                 </div>
-                <p className="text-[11px] text-[#2A8C82] dark:text-[#52B2A7] mt-0.5 truncate font-medium leading-[1.6]">
+                <p className="text-[11px] text-[#1E6F66] dark:text-[#52B2A7] mt-0.5 truncate font-medium leading-[1.6]">
                   {l('Canlı saat, hava ve döviz haritası', 'Live clock, weather & FX map', 'Echtzeit-Uhr, Wetter & Devisen', 'Reloj, clima y divisas en vivo', 'Карта времени, погоды и валют')}
                 </p>
               </div>
@@ -1040,7 +1040,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           <h3 className="font-bold tracking-[-0.02em] text-slate-900 dark:text-white text-lg sm:text-2xl group-hover:text-[#2A8C82] dark:group-hover:text-[#52B2A7] transition-colors">
                             {countryName}
                           </h3>
-                          <span className="text-xs sm:text-sm font-mono text-slate-400 font-bold">({item.c})</span>
+                          <span className="text-xs sm:text-sm font-mono text-slate-600 dark:text-slate-400 font-bold">({item.c})</span>
 
                           {/* Primary Visa Badge (Pill 9999px) */}
                           <span className={`text-xs px-3.5 py-1 rounded-full font-bold ${badgeClass}`}>
@@ -1054,7 +1054,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                               e.stopPropagation();
                               handleOpenAudit();
                             }}
-                            className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold text-xs bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 hover:bg-[#2A8C82]/20 transition-all cursor-pointer"
+                            className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold text-xs bg-[#2A8C82]/10 text-[#1E6F66] dark:text-[#52B2A7] border border-[#2A8C82]/20 hover:bg-[#2A8C82]/20 transition-all cursor-pointer"
                             title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen', 'Ver información de verificación', 'Проверить нормативные данные')}
                           >
                             <ShieldCheck className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7] flex-shrink-0" />
@@ -1063,10 +1063,10 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         </div>
 
                         {/* Traveler Score Pill */}
-                        <div className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-[20px] bg-[#2A8C82]/[0.08] dark:bg-[#2A8C82]/15 border border-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] flex-shrink-0">
+                        <div className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-[20px] bg-[#2A8C82]/[0.08] dark:bg-[#2A8C82]/15 border border-[#2A8C82]/20 text-[#1E6F66] dark:text-[#52B2A7] flex-shrink-0">
                           <div className="text-right">
                             <div className="text-xs font-bold leading-tight">{scoreLabel}</div>
-                            <div className="text-[10px] text-[#2A8C82]/80 dark:text-[#52B2A7]/80 font-bold">
+                            <div className="text-[10px] text-[#1E6F66] dark:text-[#52B2A7] font-bold">
                               {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung', 'Puntaje de Viajero', 'Оценка')}
                             </div>
                           </div>

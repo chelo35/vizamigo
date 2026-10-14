@@ -66,7 +66,7 @@ export const HomeHero: React.FC<Props> = ({
 
       {/* Active filter badge if user typed in search bar */}
       {search && (
-        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#2A8C82]/10 border border-[#2A8C82]/20 text-xs font-bold text-[#2A8C82] dark:text-[#52B2A7] shrink-0">
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#2A8C82]/10 border border-[#2A8C82]/20 text-xs font-bold text-[#1E6F66] dark:text-[#52B2A7] shrink-0">
           <Search className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />
           <span className="truncate max-w-[160px]">"{search}"</span>
           <button
@@ -86,7 +86,7 @@ export const HomeHero: React.FC<Props> = ({
           <span className="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
             {statLabel || 'Vizesiz veya kimlikle'}:
           </span>
-          <span className="font-mono text-sm sm:text-base font-bold text-[#2A8C82] dark:text-[#52B2A7] px-3 py-1 rounded-full bg-[#2A8C82]/10 border border-[#2A8C82]/20">
+          <span className="font-mono text-sm sm:text-base font-bold text-[#1E6F66] dark:text-[#52B2A7] px-3 py-1 rounded-full bg-[#2A8C82]/10 border border-[#2A8C82]/20">
             {statValue}
           </span>
         </div>

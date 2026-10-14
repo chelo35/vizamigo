@@ -62,7 +62,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
             <button
               type="button"
               onClick={onOpenRadar}
-              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer touch-target-min"
+              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#1E6F66] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer touch-target-min"
               title={l('Döviz Kurlarını Dünya Haritasında Gör', 'View FX on World Map', 'Währungskarte öffnen')}
             >
               <Globe className="w-3.5 h-3.5 shrink-0" />
@@ -73,7 +73,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
           <button
             type="button"
             onClick={handleManualRefresh}
-            className="min-h-[48px] min-w-[48px] font-mono text-[10px] glass-pill-control text-[#2A8C82] dark:text-[#52B2A7] font-bold px-3 py-2 rounded-full flex items-center gap-1.5 cursor-pointer transition-colors touch-target-min"
+            className="min-h-[48px] min-w-[48px] font-mono text-[10px] glass-pill-control text-[#1E6F66] dark:text-[#52B2A7] font-bold px-3 py-2 rounded-full flex items-center gap-1.5 cursor-pointer transition-colors touch-target-min"
             title={l('Kurları Şimdi Güncelle', 'Refresh Live Rates', 'Kurse aktualisieren')}
           >
             <span>1 {fromCode} = {crossRate.toFixed(2)} {toCode}</span>
@@ -139,7 +139,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
           <span className="text-xs font-bold text-slate-600 dark:text-slate-400">
             {amount} {fromCode} =
           </span>
-          <span className="font-mono text-base font-bold text-[#2A8C82] dark:text-[#52B2A7]">
+          <span className="font-mono text-base font-bold text-[#1E6F66] dark:text-[#52B2A7]">
             {toSymbol} {formatCurrencyValue(convertedValue)} <span className="text-xs font-sans font-bold text-slate-600 dark:text-slate-400">{toCode}</span>
           </span>
         </div>
@@ -147,7 +147,7 @@ export const CurrencyWidget: React.FC<Props> = ({ className = '', onOpenRadar })
 
       {/* Quick Base Chips (Strict 48x48px Touch Targets with gap-2) */}
       <div className="flex items-center gap-2 overflow-x-auto pt-2.5 border-t border-slate-100 dark:border-white/[0.06] horizontal-badge-slider no-scrollbar-slider touch-pan-x flex-nowrap">
-        <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider shrink-0 mr-1">
+        <span className="text-[10px] text-slate-600 dark:text-slate-400 font-bold uppercase tracking-wider shrink-0 mr-1">
           {l('Hızlı', 'Quick', 'Schnell', 'Rápido', 'Быстро')}:
         </span>
         {(['EUR', 'USD', 'GBP', 'TRY'] as const).map((code) => (

@@ -454,14 +454,14 @@ function AppContent() {
               <button
                 type="button"
                 onClick={() => setActiveTab('profile')}
-                className="font-bold text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
+                className="font-bold text-teal-700 dark:text-teal-400 hover:underline cursor-pointer"
               >
                 {t.promoBannerCta}
               </button>
               <button
                 type="button"
                 onClick={() => setShowPromoBanner(false)}
-                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-white/5 cursor-pointer transition-colors"
+                className="text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-white/5 cursor-pointer transition-colors"
                 title={language === 'de' ? 'Schließen' : language === 'en' ? 'Dismiss' : 'Kapat'}
               >
                 <X className="w-4 h-4" />

@@ -85,6 +85,9 @@
   --accent-horizon-teal: #2A8C82;
   --accent-horizon-teal-soft: rgba(42, 140, 130, 0.10);
   --accent-coral-soft: rgba(255, 107, 107, 0.10);
+  /* WCAG AA High-Contrast Typography Tokens (>= 4.5:1 on light/dark surfaces) */
+  --teal-text: #1E6F66;
+  --coral-text: #C0392B;
 }
 
 html.dark,
@@ -104,6 +107,39 @@ html.dark,
   --accent-horizon-teal: #52B2A7;
   --accent-horizon-teal-soft: rgba(82, 178, 167, 0.14);
   --accent-coral-soft: rgba(255, 107, 107, 0.14);
+  --teal-text: #52B2A7;
+  --coral-text: #FF8E8E;
+}
+
+/* ========================================================
+   WCAG AA 2.1 TEXT CONTRAST ENGINE (LIGHT-MODE SAFETY NET)
+   Guarantees >= 4.5:1 normal text contrast on all surfaces
+   ======================================================== */
+html:not(.dark) .text-slate-400 {
+  color: #475569; /* slate-600: 7.58:1 on white */
+}
+
+html:not(.dark) .text-\[\#2A8C82\],
+html:not(.dark) .text-\[\#2A8C82\]\/80 {
+  color: #1E6F66; /* 5.96:1 on white, 5.32:1 on teal-pill */
+}
+
+html:not(.dark) .text-\[\#E05252\],
+html:not(.dark) .text-\[\#D95353\] {
+  color: #C0392B; /* 5.44:1 on white, 4.81:1 on coral-pill */
+}
+
+html:not(.dark) .text-teal-600 {
+  color: #0F766E; /* teal-700: 5.47:1 on white */
+}
+
+html:not(.dark) .text-\[\#3A7CA5\],
+html:not(.dark) .text-\[\#3B7699\] {
+  color: #235878; /* 6.59:1 on white */
+}
+
+html:not(.dark) .text-\[\#B88028\] {
+  color: #8C5E13; /* 5.08:1 on white */
 }
 
 html,
@@ -207,10 +243,10 @@ html.dark {
 .btn-glassmorphic,
 .btn-glass-subtle,
 .btn-frosted-glass {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.95);
 }
 
 .dark .bg-black,
@@ -228,19 +264,19 @@ html.dark {
   color: #F8FAFC;
 }
 
-/* Desaturated Muted Horizon Teal & Pastel Sunset Coral Accents */
+/* Desaturated Muted Horizon Teal & Pastel Sunset Coral Accents (WCAG AA Compliant >= 5.8:1) */
 .btn-audit-console,
 .badge-live-verified {
-  background: linear-gradient(135deg, #2A8C82 0%, #3E9E94 100%);
+  background: linear-gradient(135deg, #175C54 0%, #1E7168 100%);
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 9999px;
-  box-shadow: 0 10px 24px -6px rgba(42, 140, 130, 0.28);
+  box-shadow: 0 10px 24px -6px rgba(23, 92, 84, 0.28);
 }
 
 .btn-audit-console:hover {
-  background: linear-gradient(135deg, #329B90 0%, #48ADA2 100%);
-  box-shadow: 0 14px 28px -6px rgba(42, 140, 130, 0.36);
+  background: linear-gradient(135deg, #1E7168 0%, #2A8C82 100%);
+  box-shadow: 0 14px 28px -6px rgba(23, 92, 84, 0.36);
   transform: translateY(-1px);
 }
 

@@ -677,12 +677,12 @@ export function idEligibleSet(passport: string): Set<string> {
 }
 
 export const CAT_INFO: Record<VisaCategory, { label: string; color: string; badgeBg: string; badgeText: string }> = {
-  free: { label: 'Vizesiz', color: '#2A8C82', badgeBg: 'bg-[#2A8C82]/12 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/25 backdrop-blur-xs', badgeText: 'Vizesiz' },
-  id: { label: 'Kimlikle', color: '#3A7CA5', badgeBg: 'bg-[#3A7CA5]/12 text-[#3A7CA5] dark:text-[#6DAEDB] border border-[#3A7CA5]/25 backdrop-blur-xs', badgeText: 'Kimlikle Giriş' },
-  evisa: { label: 'E-vize', color: '#4A8BB2', badgeBg: 'bg-[#4A8BB2]/12 text-[#3B7699] dark:text-[#7BB8DB] border border-[#4A8BB2]/25 backdrop-blur-xs', badgeText: 'E-vize' },
-  voa: { label: 'Varışta vize', color: '#D9A14A', badgeBg: 'bg-[#D9A14A]/14 text-[#B88028] dark:text-[#E6B464] border border-[#D9A14A]/28 backdrop-blur-xs', badgeText: 'Kapıda Vize' },
-  eta: { label: 'ETA', color: '#7D6FA3', badgeBg: 'bg-[#7D6FA3]/14 text-[#695B8E] dark:text-[#A598C9] border border-[#7D6FA3]/25 backdrop-blur-xs', badgeText: 'ETA İzni' },
-  visa: { label: 'Vize gerekli', color: '#FF6B6B', badgeBg: 'bg-[#FF6B6B]/12 text-[#D95353] dark:text-[#FF8585] border border-[#FF6B6B]/25 backdrop-blur-xs', badgeText: 'Konsolosluk Vizesi' },
+  free: { label: 'Vizesiz', color: '#2A8C82', badgeBg: 'bg-[#2A8C82]/12 text-[#1E6F66] dark:text-[#52B2A7] border border-[#2A8C82]/25 backdrop-blur-xs', badgeText: 'Vizesiz' },
+  id: { label: 'Kimlikle', color: '#3A7CA5', badgeBg: 'bg-[#3A7CA5]/12 text-[#235878] dark:text-[#6DAEDB] border border-[#3A7CA5]/25 backdrop-blur-xs', badgeText: 'Kimlikle Giriş' },
+  evisa: { label: 'E-vize', color: '#4A8BB2', badgeBg: 'bg-[#4A8BB2]/12 text-[#235878] dark:text-[#7BB8DB] border border-[#4A8BB2]/25 backdrop-blur-xs', badgeText: 'E-vize' },
+  voa: { label: 'Varışta vize', color: '#D9A14A', badgeBg: 'bg-[#D9A14A]/14 text-[#8C5E13] dark:text-[#E6B464] border border-[#D9A14A]/28 backdrop-blur-xs', badgeText: 'Kapıda Vize' },
+  eta: { label: 'ETA', color: '#7D6FA3', badgeBg: 'bg-[#7D6FA3]/14 text-[#514373] dark:text-[#A598C9] border border-[#7D6FA3]/25 backdrop-blur-xs', badgeText: 'ETA İzni' },
+  visa: { label: 'Vize gerekli', color: '#FF6B6B', badgeBg: 'bg-[#FF6B6B]/12 text-[#C0392B] dark:text-[#FF8585] border border-[#FF6B6B]/25 backdrop-blur-xs', badgeText: 'Konsolosluk Vizesi' },
   none: { label: 'Kabul edilmiyor', color: '#94A3B8', badgeBg: 'bg-slate-500/10 text-slate-700 dark:text-slate-400 border border-slate-500/20 backdrop-blur-xs', badgeText: 'Giriş Yok' }
 };
 

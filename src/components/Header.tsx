@@ -291,7 +291,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={onOpenAuditConsole}
-              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#2A8C82]/25 bg-[#2A8C82]/10 hover:bg-[#2A8C82]/18 text-[#2A8C82] dark:text-[#52B2A7] text-xs font-bold transition-all cursor-pointer"
+              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#2A8C82]/25 bg-[#2A8C82]/10 hover:bg-[#2A8C82]/18 text-[#1E6F66] dark:text-[#52B2A7] text-xs font-bold transition-all cursor-pointer"
               title={t.auditConsoleTitle}
             >
               <ShieldCheck className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />

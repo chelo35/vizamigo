@@ -253,15 +253,15 @@ export const Navigation: React.FC<NavigationProps> = ({
               className={`relative flex min-h-[56px] min-w-[56px] flex-1 flex-col items-center justify-center gap-1 px-1 cursor-pointer transition-colors ${
                 isActive
                   ? item.crisis
-                    ? 'text-red-600 dark:text-red-400 font-bold'
-                    : 'text-teal-600 dark:text-teal-400 font-bold'
+                    ? 'text-red-700 dark:text-red-400 font-bold'
+                    : 'text-teal-700 dark:text-teal-400 font-bold'
                   : 'text-slate-600 dark:text-slate-400 font-medium'
               }`}
             >
               {isActive && (
                 <span
                   className={`absolute inset-x-3 top-0 h-0.5 rounded-full ${
-                    item.crisis ? 'bg-red-600' : 'bg-teal-600'
+                    item.crisis ? 'bg-red-700' : 'bg-teal-700'
                   }`}
                 />
               )}

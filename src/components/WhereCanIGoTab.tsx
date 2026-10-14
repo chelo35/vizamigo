@@ -261,7 +261,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
                     <h4 className="font-extrabold text-slate-900 dark:text-white text-base group-hover:text-[#0D9488] dark:group-hover:text-[#14B8A6] transition-colors truncate">
                       {countryName}
                     </h4>
-                    <span className="text-xs text-slate-400 block truncate mt-0.5">
+                    <span className="text-xs text-slate-600 dark:text-slate-400 block truncate mt-0.5">
                       {region}
                     </span>
                     <div className="mt-2.5">
@@ -273,7 +273,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
                 </div>
 
                 <div className="flex items-center justify-between pt-3 border-t border-slate-100 dark:border-white/[0.06] text-xs">
-                  <span className="text-[11px] font-mono text-slate-400 uppercase font-semibold">
+                  <span className="text-[11px] font-mono text-slate-600 dark:text-slate-400 uppercase font-semibold">
                     ISO: {item.c}
                   </span>
                   <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400">

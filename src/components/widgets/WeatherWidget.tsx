@@ -188,16 +188,16 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
                     <div className="text-xs font-bold text-slate-900 dark:text-white break-words group-hover:text-[#FF6B6B] transition-colors">
                       {displayName}
                     </div>
-                    <div className="text-[11px] text-slate-400 flex flex-wrap items-center gap-1.5 leading-[1.6]">
+                    <div className="text-[11px] text-slate-600 dark:text-slate-400 flex flex-wrap items-center gap-1.5 leading-[1.6]">
                       <span>{countryName}</span>
                       <span>·</span>
-                      <span className="text-[#2A8C82] dark:text-[#52B2A7] font-medium">{conditionText}</span>
+                      <span className="text-[#1E6F66] dark:text-[#52B2A7] font-medium">{conditionText}</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2 flex-shrink-0">
-                  <div className="flex items-center gap-2 text-[10px] text-slate-400">
+                  <div className="flex items-center gap-2 text-[10px] text-slate-600 dark:text-slate-400 font-medium">
                     <span className="flex items-center gap-0.5" title="Nem">
                       <Droplets className="w-2.5 h-2.5" />
                       {item.humidity}%
