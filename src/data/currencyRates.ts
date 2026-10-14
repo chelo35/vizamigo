@@ -265,14 +265,26 @@ export async function refreshCurrencyRates(force = false): Promise<boolean> {
   return inflightPromise;
 }
 
-// Defer background fetch to requestIdleCallback so initial paint (FCP/LCP) is NEVER delayed
-if (typeof window !== 'undefined') {
-  if ('requestIdleCallback' in window) {
-    (window as any).requestIdleCallback(() => refreshCurrencyRates(false), { timeout: 3500 });
+function scheduleDeferredNetworkTask(callback: () => void, timeout = 4000) {
+  if (typeof window === 'undefined') return;
+
+  const runTask = () => {
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(callback, { timeout });
+    } else {
+      setTimeout(callback, 2000);
+    }
+  };
+
+  if (document.readyState === 'complete') {
+    runTask();
   } else {
-    setTimeout(() => refreshCurrencyRates(false), 2500);
+    window.addEventListener('load', runTask, { once: true });
   }
 }
+
+// Defer background fetch to window load + requestIdleCallback so initial paint (FCP/LCP) is NEVER delayed
+scheduleDeferredNetworkTask(() => refreshCurrencyRates(false));
 
 export function getCurrencyMeta(): { isLive: boolean; updatedAt: number | null } {
   return { isLive: isLiveLoaded, updatedAt: lastUpdatedTimestamp };
@@ -287,7 +299,7 @@ export function useLiveCurrencyRates() {
   useEffect(() => {
     const handler = () => setTick((t) => t + 1);
     listeners.add(handler);
-    refreshCurrencyRates(false);
+    scheduleDeferredNetworkTask(() => refreshCurrencyRates(false));
     return () => {
       listeners.delete(handler);
     };

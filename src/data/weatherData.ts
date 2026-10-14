@@ -1431,6 +1431,24 @@ export async function fetchLiveWeatherForHubs(hubs: WorldHub[]): Promise<void> {
   }
 }
 
+function scheduleDeferredWeatherTask(callback: () => void, timeout = 4000) {
+  if (typeof window === 'undefined') return;
+
+  const runTask = () => {
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(callback, { timeout });
+    } else {
+      setTimeout(callback, 2000);
+    }
+  };
+
+  if (document.readyState === 'complete') {
+    runTask();
+  } else {
+    window.addEventListener('load', runTask, { once: true });
+  }
+}
+
 /**
  * React hook that fetches live weather for the given hubs and re-renders when live observations arrive.
  */
@@ -1440,7 +1458,7 @@ export function useLiveWeather(hubs: WorldHub[]) {
   useEffect(() => {
     const onUpdate = () => setTick((t) => t + 1);
     weatherListeners.add(onUpdate);
-    fetchLiveWeatherForHubs(hubs);
+    scheduleDeferredWeatherTask(() => fetchLiveWeatherForHubs(hubs));
     return () => {
       weatherListeners.delete(onUpdate);
     };

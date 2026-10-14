@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef, useEffect } from 'react';
+import React, { useState, useMemo, useRef, useEffect, lazy, Suspense } from 'react';
 import { loadGoogleMaps } from '../utils/googleMapsLoader';
 import {
   CountryItem,
@@ -40,7 +40,9 @@ import {
   Eye,
   Sliders
 } from 'lucide-react';
-import { CountryDossierModal } from './CountryDossierModal';
+const CountryDossierModal = lazy(() =>
+  import('./CountryDossierModal').then(m => ({ default: m.CountryDossierModal }))
+);
 
 // Google Maps Night / Tactical Dark Palette
 const DARK_MAP_STYLES: google.maps.MapTypeStyle[] = [
@@ -1419,14 +1421,18 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
       )}
 
       {/* Global Country Cultural & Travel Dossier Modal */}
-      <CountryDossierModal
-        isOpen={isDossierOpen}
-        onClose={() => setIsDossierOpen(false)}
-        countryCode={dossierCountry}
-        currentPassport={currentPassport}
-        onOpenAudit={onOpenAuditConsole}
-        onOpenReportChange={onOpenReportChange}
-      />
+      {isDossierOpen && (
+        <Suspense fallback={null}>
+          <CountryDossierModal
+            isOpen={isDossierOpen}
+            onClose={() => setIsDossierOpen(false)}
+            countryCode={dossierCountry}
+            currentPassport={currentPassport}
+            onOpenAudit={onOpenAuditConsole}
+            onOpenReportChange={onOpenReportChange}
+          />
+        </Suspense>
+      )}
     </div>
   );
 };

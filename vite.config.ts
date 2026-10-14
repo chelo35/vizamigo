@@ -98,18 +98,6 @@ export default defineConfig(() => {
             if (id.includes('node_modules/lucide-react')) {
               return 'vendor-icons';
             }
-            if (id.includes('src/data/countryEncyclopedia') || id.includes('src/data/countryHeritage')) {
-              return 'data-encyclopedia';
-            }
-            if (id.includes('src/data/countryItineraries')) {
-              return 'data-itineraries';
-            }
-            if (id.includes('src/data/countryInsights')) {
-              return 'data-insights';
-            }
-            if (id.includes('src/data/countryGeography')) {
-              return 'data-geography';
-            }
           }
         }
       }
