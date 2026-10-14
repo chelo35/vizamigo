@@ -170,10 +170,38 @@ export async function refreshCurrencyRates(force = false): Promise<boolean> {
   if (inflightPromise) return inflightPromise;
 
   inflightPromise = (async () => {
+    // 1. Try Same-Origin Edge Cache endpoint (/api/fx) to eliminate 924ms cross-origin DNS/SSL bottleneck
     try {
-      const res = await fetch('https://open.er-api.com/v6/latest/USD', {
-        cache: 'no-store'
-      });
+      const res = await fetch('/api/fx');
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.rates && typeof data.rates === 'object') {
+          Object.entries(data.rates as Record<string, number>).forEach(([code, val]) => {
+            if (typeof val === 'number' && val > 0) {
+              USD_RATES[code.toUpperCase()] = val;
+            }
+          });
+          isLiveLoaded = true;
+          lastUpdatedTimestamp = Date.now();
+          try {
+            localStorage.setItem(
+              STORAGE_KEY,
+              JSON.stringify({
+                rates: USD_RATES,
+                updatedAt: lastUpdatedTimestamp,
+                providerUpdatedAt: data.time_last_update_utc
+              } satisfies StoredFxPayload)
+            );
+          } catch {}
+          notifyListeners();
+          return true;
+        }
+      }
+    } catch {}
+
+    // 2. Direct upstream fallback: open.er-api.com
+    try {
+      const res = await fetch('https://open.er-api.com/v6/latest/USD');
       if (res.ok) {
         const data = await res.json();
         if (data && data.rates && typeof data.rates === 'object') {
@@ -237,9 +265,13 @@ export async function refreshCurrencyRates(force = false): Promise<boolean> {
   return inflightPromise;
 }
 
-// Kick off background fetch on module load in browser
+// Defer background fetch to requestIdleCallback so initial paint (FCP/LCP) is NEVER delayed
 if (typeof window !== 'undefined') {
-  refreshCurrencyRates(false);
+  if ('requestIdleCallback' in window) {
+    (window as any).requestIdleCallback(() => refreshCurrencyRates(false), { timeout: 3500 });
+  } else {
+    setTimeout(() => refreshCurrencyRates(false), 2500);
+  }
 }
 
 export function getCurrencyMeta(): { isLive: boolean; updatedAt: number | null } {

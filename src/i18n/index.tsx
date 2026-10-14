@@ -49,7 +49,24 @@ export function saveStoredLanguage(lang: SupportedLanguage): void {
   } catch {}
 }
 
-import { AUTO_TRANSLATE_ES, AUTO_TRANSLATE_RU, AUTO_TRANSLATE_DE } from './autoTranslateMap';
+let esMap: Record<string, string> | null = null;
+let ruMap: Record<string, string> | null = null;
+let deMap: Record<string, string> | null = null;
+
+export async function loadLanguageDictionary(lang: SupportedLanguage): Promise<void> {
+  try {
+    if (lang === 'es' && !esMap) {
+      const m = await import('./autoTranslateEs');
+      esMap = m.AUTO_TRANSLATE_ES;
+    } else if (lang === 'ru' && !ruMap) {
+      const m = await import('./autoTranslateRu');
+      ruMap = m.AUTO_TRANSLATE_RU;
+    } else if (lang === 'de' && !deMap) {
+      const m = await import('./autoTranslateDe');
+      deMap = m.AUTO_TRANSLATE_DE;
+    }
+  } catch {}
+}
 
 export function lText(
   lang: string,
@@ -61,7 +78,7 @@ export function lText(
 ): string {
   if (lang === 'es') {
     if (esText) return esText;
-    const lookup = AUTO_TRANSLATE_ES[trText] || AUTO_TRANSLATE_ES[enText];
+    const lookup = esMap ? (esMap[trText] || esMap[enText]) : null;
     if (lookup) return lookup;
     if (trText) {
       if (trText.includes('Vatandaşlığı & Küresel Mobilite')) {
@@ -84,7 +101,7 @@ export function lText(
   }
   if (lang === 'ru') {
     if (ruText) return ruText;
-    const lookup = AUTO_TRANSLATE_RU[trText] || AUTO_TRANSLATE_RU[enText];
+    const lookup = ruMap ? (ruMap[trText] || ruMap[enText]) : null;
     if (lookup) return lookup;
     if (trText) {
       if (trText.includes('Vatandaşlığı & Küresel Mobilite')) {
@@ -107,7 +124,7 @@ export function lText(
   }
   if (lang === 'de') {
     if (deText) return deText;
-    const lookup = AUTO_TRANSLATE_DE[trText] || AUTO_TRANSLATE_DE[enText];
+    const lookup = deMap ? (deMap[trText] || deMap[enText]) : null;
     if (lookup) return lookup;
     if (trText) {
       if (trText.includes('Saat İleri')) {
@@ -196,6 +213,16 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.documentElement.lang = language;
+    }
+  }, [language]);
+
+  const [, setDictLoaded] = useState<number>(0);
+
+  useEffect(() => {
+    if (language === 'es' || language === 'ru' || language === 'de') {
+      loadLanguageDictionary(language).then(() => {
+        setDictLoaded((v) => v + 1);
+      });
     }
   }, [language]);
 

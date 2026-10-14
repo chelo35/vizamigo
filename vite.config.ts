@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path from 'path';
 import {defineConfig, Plugin} from 'vite';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 function vizamigoSeoEnginePlugin(): Plugin {
   return {
@@ -70,10 +71,52 @@ function vizamigoSeoEnginePlugin(): Plugin {
 export default defineConfig(() => {
   return {
     base: '/',
-    plugins: [react(), tailwindcss(), vizamigoSeoEnginePlugin()],
+    plugins: [
+      react(),
+      tailwindcss(),
+      vizamigoSeoEnginePlugin(),
+      visualizer({
+        filename: 'dist/stats.html',
+        open: false,
+        gzipSize: true,
+        brotliSize: true,
+      }),
+      visualizer({
+        filename: 'dist/stats.json',
+        open: false,
+        json: true,
+      }),
+    ],
+    build: {
+      chunkSizeWarningLimit: 600,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/scheduler/')) {
+              return 'vendor-react';
+            }
+            if (id.includes('node_modules/lucide-react')) {
+              return 'vendor-icons';
+            }
+            if (id.includes('src/data/countryEncyclopedia') || id.includes('src/data/countryHeritage')) {
+              return 'data-encyclopedia';
+            }
+            if (id.includes('src/data/countryItineraries')) {
+              return 'data-itineraries';
+            }
+            if (id.includes('src/data/countryInsights')) {
+              return 'data-insights';
+            }
+            if (id.includes('src/data/countryGeography')) {
+              return 'data-geography';
+            }
+          }
+        }
+      }
+    },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname || '.', '.'),
       },
     },
     server: {

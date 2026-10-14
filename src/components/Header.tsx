@@ -127,11 +127,16 @@ export const Header: React.FC<HeaderProps> = ({
               className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group"
               title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}
             >
-              <img
-                src="/logo.png"
-                alt="Vizamigo"
-                className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
-              />
+              <picture>
+                <source srcSet="/logo.webp" type="image/webp" />
+                <img
+                  src="/logo.png"
+                  alt="Vizamigo"
+                  width="40"
+                  height="40"
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
+                />
+              </picture>
               <span className="font-bold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">
                 Vizamigo<span className="text-[#2A8C82] dark:text-[#52B2A7]">.</span>
               </span>

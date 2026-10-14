@@ -119,11 +119,16 @@ export const Navigation: React.FC<NavigationProps> = ({
                   }}
                   className="flex items-center gap-2.5 cursor-pointer text-left group"
                 >
-                  <img
-                    src="/logo.png"
-                    alt="Vizamigo"
-                    className="w-9 h-9 object-contain rounded-full shadow-xs group-hover:scale-105 transition-transform"
-                  />
+                  <picture>
+                    <source srcSet="/logo.webp" type="image/webp" />
+                    <img
+                      src="/logo.png"
+                      alt="Vizamigo"
+                      width="36"
+                      height="36"
+                      className="w-9 h-9 object-contain rounded-full shadow-xs group-hover:scale-105 transition-transform"
+                    />
+                  </picture>
                   <span className="font-extrabold text-lg text-slate-900 dark:text-white">
                     Vizamigo<span className="text-teal-500">.</span>
                   </span>
