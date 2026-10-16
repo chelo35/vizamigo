@@ -83,6 +83,78 @@ export const TippingCalculatorModal: React.FC<Props> = ({
   const perPersonTotal = splitCount > 0 ? Math.round((totalBill / splitCount) * 100) / 100 : totalBill;
   const perPersonTip = splitCount > 0 ? Math.round((tipAmount / splitCount) * 100) / 100 : tipAmount;
 
+  const handlePrintPdf = () => {
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) return;
+
+    const html = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8" />
+          <title>Vizamigo Bahşiş & Masraf Dökümü - ${currentCountry.name}</title>
+          <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 32px; color: #0f172a; line-height: 1.5; }
+            .header { border-bottom: 2px solid #0d9488; padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; }
+            .title { font-size: 22px; font-weight: 900; color: #042f2e; }
+            .meta { font-size: 12px; color: #64748b; margin-top: 4px; }
+            .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+            .card { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 16px; }
+            .card-title { font-size: 11px; text-transform: uppercase; color: #0d9488; font-weight: 800; margin-bottom: 6px; }
+            .card-val { font-size: 22px; font-weight: 900; color: #0f172a; }
+            .highlight { background: #f0fdf4; border: 2px solid #16a34a; }
+            .etiquette { background: #fefce8; border: 1px solid #fde047; border-radius: 12px; padding: 16px; margin-bottom: 24px; }
+            .footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #cbd5e1; font-size: 11px; color: #64748b; text-align: center; }
+            @media print {
+              body { padding: 16px; }
+            }
+          </style>
+        </head>
+        <body>
+          <div class="header">
+            <div>
+              <div class="title">🪙 Vizamigo Bahşiş & Masraf Hesap Çizelgesi</div>
+              <div class="meta">${currentCountry.name} (${currentCountry.code}) · Tarih: ${new Date().toLocaleDateString()}</div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <div class="card-title">Hesap / Fatura Tutarı</div>
+              <div class="card-val">${billAmount.toFixed(2)} ${currentCountry.symbol}</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Bahşiş Oranı (%${tipPercent})</div>
+              <div class="card-val">${tipAmount.toFixed(2)} ${currentCountry.symbol}</div>
+            </div>
+            <div class="card highlight">
+              <div class="card-title">Toplam Ödenecek</div>
+              <div class="card-val">${totalBill.toFixed(2)} ${currentCountry.symbol}</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Kişi Başı (${splitCount} Gezgin)</div>
+              <div class="card-val">${perPersonTotal.toFixed(2)} ${currentCountry.symbol}</div>
+            </div>
+          </div>
+
+          <div class="etiquette">
+            <div style="font-weight: 800; color: #854d0e; font-size: 13px; margin-bottom: 6px;">💡 Yerel Bahşiş Kültürü & Kuralları</div>
+            <div style="font-size: 12px; color: #713f12;">${intel?.tipping?.customAdvice || 'Standart hizmet bedeli hesaba dahildir veya %10-%15 makul görülür.'}</div>
+          </div>
+
+          <div class="footer">
+            Vizamigo Global Mobility Intelligence · 199 Ülke Doğrulanmış Vize & Seyahat Sistemi · vizamigo.com
+          </div>
+          <script>
+            window.onload = function() { window.print(); }
+          </script>
+        </body>
+      </html>
+    `;
+    printWindow.document.write(html);
+    printWindow.document.close();
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200">
       <div className="relative w-full max-w-xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden">
@@ -103,13 +175,23 @@ export const TippingCalculatorModal: React.FC<Props> = ({
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={onClose}
-              className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
-            >
-              <X className="w-5 h-5" />
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handlePrintPdf}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-black text-xs cursor-pointer shadow-xs transition-all"
+              >
+                <span>📄</span>
+                <span>PDF / Yazdır</span>
+              </button>
+              <button
+                type="button"
+                onClick={onClose}
+                className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
 

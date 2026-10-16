@@ -110,20 +110,8 @@ export const Header: React.FC<HeaderProps> = ({
             Right: Mobile Passport + Language + Theme + Auth
         ================================================================= */}
         <div className="flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4">
-          {/* Left: Mobile Menu + Logo + Desktop Passport Pill */}
+          {/* Left: Logo + Desktop Passport Pill */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0 justify-start">
-            {onToggleMobileDrawer && (
-              <button
-                type="button"
-                onClick={onToggleMobileDrawer}
-                className="lg:hidden p-1.5 sm:p-2 min-w-[36px] min-h-[36px] sm:min-w-[40px] sm:min-h-[40px] rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-white flex items-center justify-center cursor-pointer transition-all"
-                aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
-                title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
-              >
-                <Menu className="w-5 h-5 text-[#5EEAD4]" />
-              </button>
-            )}
-
             <button
               type="button"
               onClick={() => {
@@ -200,15 +188,15 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={onOpenPassportSelector}
-              className="xl:hidden flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 min-h-[32px] sm:min-h-[36px] rounded-full bg-[#0D9488]/30 hover:bg-[#0D9488]/50 border border-[#2DD4BF]/60 text-xs font-black text-white transition-all cursor-pointer shrink-0 shadow-xs"
+              className="xl:hidden flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 min-h-[34px] sm:min-h-[38px] rounded-full bg-[#0D9488]/40 hover:bg-[#0D9488]/60 border border-[#2DD4BF]/70 text-xs font-black text-white transition-all cursor-pointer shrink-0 shadow-sm"
               title={l('Aktif Pasaportu Değiştir', 'Change Active Passport')}
               aria-label={l('Aktif Pasaport Seçimi', 'Passport Selection')}
             >
               <span className="text-xs" aria-hidden="true">🛂</span>
-              <span className="text-sm leading-none">{getFlag(currentPassport)}</span>
+              <span className="text-sm sm:text-base leading-none">{getFlag(currentPassport)}</span>
               <span className="font-mono text-xs font-black">{currentPassport}</span>
               <span className="px-1.5 py-0.5 rounded-md bg-[#2DD4BF] text-[#042F2E] font-black text-[10px] sm:text-xs tabular-nums">
-                {visaFreeCount}
+                {visaFreeCount} {l('Vizesiz', 'Free')}
               </span>
             </button>
 
@@ -332,10 +320,22 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* =================================================================
-            ROW 2: Prominent Frosted Lagoon Search Bar right below Vizamigo Row
+            ROW 2: Prominent Frosted Lagoon Search Bar + Mobile Drawer Menu Button
         ================================================================= */}
-        <div className="w-full max-w-4xl mx-auto">
-          <label className="relative w-full flex items-center">
+        <div className="w-full max-w-4xl mx-auto flex items-center gap-2">
+          {onToggleMobileDrawer && (
+            <button
+              type="button"
+              onClick={onToggleMobileDrawer}
+              className="lg:hidden p-2.5 min-w-[44px] min-h-[44px] rounded-xl sm:rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/50 text-white flex items-center justify-center cursor-pointer transition-all shrink-0 shadow-md"
+              aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+              title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
+            >
+              <Menu className="w-5 h-5 text-[#5EEAD4]" />
+            </button>
+          )}
+
+          <label className="relative flex-1 flex items-center">
             <Search className="w-5 h-5 text-[#5EEAD4] absolute left-4 pointer-events-none" />
             <input
               type="search"

@@ -352,6 +352,100 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
     setTimeout(() => setCopied(false), 2500);
   };
 
+  const handlePrintPdf = () => {
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) return;
+
+    const html = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8" />
+          <title>Vizamigo Vize & Mevzuat Denetim Raporu (2026)</title>
+          <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 32px; color: #0f172a; line-height: 1.5; }
+            .header { border-bottom: 2px solid #0d9488; padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; }
+            .title { font-size: 22px; font-weight: 900; color: #042f2e; }
+            .meta { font-size: 12px; color: #64748b; margin-top: 4px; }
+            .summary-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 12px; padding: 16px; margin-bottom: 24px; display: flex; gap: 24px; }
+            .stat { font-weight: 800; font-size: 18px; color: #15803d; }
+            .stat-label { font-size: 11px; text-transform: uppercase; color: #166534; }
+            table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 12px; }
+            th { background: #0f766e; color: white; text-align: left; padding: 10px 12px; font-weight: 800; }
+            td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+            tr:nth-child(even) { background: #f8fafc; }
+            .badge-match { background: #dcfce7; color: #166534; padding: 3px 8px; border-radius: 6px; font-weight: 800; font-size: 11px; display: inline-block; }
+            .badge-attention { background: #fef3c7; color: #92400e; padding: 3px 8px; border-radius: 6px; font-weight: 800; font-size: 11px; display: inline-block; }
+            .footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #cbd5e1; font-size: 11px; color: #64748b; text-align: center; }
+            @media print {
+              body { padding: 16px; }
+              button { display: none; }
+            }
+          </style>
+        </head>
+        <body>
+          <div class="header">
+            <div>
+              <div class="title">🛡️ Vizamigo Vize ve Mevzuat Denetim Raporu</div>
+              <div class="meta">Resmi Göç İdareleri & Dışişleri Teyitli Denetim Çıktısı · Tarih: ${new Date().toLocaleDateString()}</div>
+            </div>
+          </div>
+
+          <div class="summary-box">
+            <div>
+              <div class="stat">${matchCount} / 15</div>
+              <div class="stat-label">Tam Uyumlu Ülke</div>
+            </div>
+            <div>
+              <div class="stat">${attentionCount}</div>
+              <div class="stat-label">Dönemsel Uyarı</div>
+            </div>
+            <div>
+              <div class="stat">0</div>
+              <div class="stat-label">Kritik Uyuşmazlık</div>
+            </div>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Ülke</th>
+                <th>Sistem Kuralı</th>
+                <th>Teyit Edilen Resmi Durum</th>
+                <th>Statü</th>
+                <th>Kaynak & Resmi Not</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${AUDIT_DATABASE.map(r => `
+                <tr>
+                  <td><strong>${r.nameTr} (${r.code})</strong></td>
+                  <td>${r.currentRule}</td>
+                  <td>${r.verifiedStatusTr}</td>
+                  <td>
+                    <span class="${r.status === 'MATCH' ? 'badge-match' : 'badge-attention'}">
+                      ${r.status === 'MATCH' ? '✅ UYUMLU' : '⚠️ DİKKAT'}
+                    </span>
+                  </td>
+                  <td>${r.noteTr} <br/><span style="color:#64748b;font-size:10px;">${r.sourceName}</span></td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+
+          <div class="footer">
+            Vizamigo Global Mobility Intelligence · 199 Ülke Doğrulanmış Vize & Seyahat Sistemi · vizamigo.com
+          </div>
+          <script>
+            window.onload = function() { window.print(); }
+          </script>
+        </body>
+      </html>
+    `;
+    printWindow.document.write(html);
+    printWindow.document.close();
+  };
+
   const handleDownloadReport = () => {
     const lines = [
       `# 🛡️ Vizamigo Vize ve Mevzuat Denetim Raporu (Ekim 2026)`,
@@ -434,6 +528,14 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
           </div>
 
           <div className="flex items-center gap-2 self-end sm:self-auto">
+            <button
+              type="button"
+              onClick={handlePrintPdf}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-black cursor-pointer shadow-xs transition-all"
+            >
+              <span>📄</span>
+              <span>PDF / Yazdır</span>
+            </button>
             <button
               type="button"
               onClick={handleCopyReport}

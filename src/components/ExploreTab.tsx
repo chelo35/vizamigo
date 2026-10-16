@@ -319,19 +319,41 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
     <div className="space-y-6">
       {/* =====================================================================
           1. PURE V2 LAGOON WIDGET DASHBOARD (HERO EXPERIENCE)
+          Automatically hidden during active search so countries show right at top!
       ===================================================================== */}
-      <Suspense fallback={<WidgetCardSkeleton />}>
-        <BentoDashboardGrid
-          currentPassport={currentPassport}
-          onOpenCountryDossier={(code) => openDossier(code)}
-          onSelectTab={(tab) => onNavigateTab?.(tab)}
-          onOpenPackingList={() => onOpenPackingList?.()}
-          onOpenTippingCalc={() => onOpenTippingCalc?.()}
-          onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
-          onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
-          onOpenAssistant={onOpenAssistant}
-        />
-      </Suspense>
+      {search.trim().length === 0 ? (
+        <Suspense fallback={<WidgetCardSkeleton />}>
+          <BentoDashboardGrid
+            currentPassport={currentPassport}
+            onOpenCountryDossier={(code) => openDossier(code)}
+            onSelectTab={(tab) => onNavigateTab?.(tab)}
+            onOpenPackingList={() => onOpenPackingList?.()}
+            onOpenTippingCalc={() => onOpenTippingCalc?.()}
+            onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
+            onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
+            onOpenAssistant={onOpenAssistant}
+          />
+        </Suspense>
+      ) : (
+        <div className="flex items-center justify-between p-4 rounded-2xl bg-[#0D9488]/15 border border-[#2DD4BF]/40">
+          <div className="flex items-center gap-2">
+            <span className="text-xl">🔍</span>
+            <span className="text-sm font-black text-[#042F2E] dark:text-white">
+              "{search}" {l('için sonuçlar', 'search results')} ({filteredItems.length} {l('Ülke', 'Countries')})
+            </span>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setSearch('');
+              onSearchChange?.('');
+            }}
+            className="px-3.5 py-1.5 rounded-xl text-xs font-black bg-[#2DD4BF] text-[#042F2E] hover:bg-white shadow-xs transition-all cursor-pointer"
+          >
+            {l('Panoya Dön ✕', 'Back to Dashboard ✕')}
+          </button>
+        </div>
+      )}
 
       {/* =====================================================================
           2. 199-COUNTRY DIRECTORY & INTERACTIVE MAP TOGGLE BAR

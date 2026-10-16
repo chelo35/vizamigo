@@ -207,28 +207,42 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const handleRunAgent = (agentType: 'schengen' | 'radar' | 'itinerary' | 'dossier') => {
     setIsTyping(true);
     setTimeout(() => {
-      let res: AgentResult;
-      if (agentType === 'schengen') {
-        res = runSchengenSentinel(currentPassport, 42, language);
-      } else if (agentType === 'radar') {
-        res = runVisaFreeRadar(currentPassport, language);
-      } else if (agentType === 'itinerary') {
-        res = runItineraryArchitect('TH', currentPassport, language);
-      } else {
-        res = runTripDossierAgent('TH', currentPassport, language);
+      try {
+        let res: AgentResult;
+        if (agentType === 'schengen') {
+          res = runSchengenSentinel(currentPassport, 42, language);
+        } else if (agentType === 'radar') {
+          res = runVisaFreeRadar(currentPassport, language);
+        } else if (agentType === 'itinerary') {
+          res = runItineraryArchitect('TH', currentPassport, language);
+        } else {
+          res = runTripDossierAgent('TH', currentPassport, language);
+        }
+
+        const agentMsg: AssistantMessage = {
+          id: `agent-${Date.now()}`,
+          sender: 'assistant',
+          text: `${res.summary}\n\n${res.details}`,
+          timestamp: new Date(),
+          actions: res.suggestedActions as any,
+          detectedLang: language
+        };
+
+        setMessages((prev) => [...prev, agentMsg]);
+      } catch (err) {
+        console.error('Agent execution error:', err);
+        const errorMsg: AssistantMessage = {
+          id: `agent-err-${Date.now()}`,
+          sender: 'assistant',
+          text: language === 'tr'
+            ? '⚠️ Bu ajan raporu hazırlanırken geçici bir bağlantı hatası oluştu. Lütfen tekrar deneyiniz.'
+            : '⚠️ Temporary error while generating agent report. Please try again.',
+          timestamp: new Date()
+        };
+        setMessages((prev) => [...prev, errorMsg]);
+      } finally {
+        setIsTyping(false);
       }
-
-      const agentMsg: AssistantMessage = {
-        id: `agent-${Date.now()}`,
-        sender: 'assistant',
-        text: `${res.summary}\n\n${res.details}`,
-        timestamp: new Date(),
-        actions: res.suggestedActions as any,
-        detectedLang: language
-      };
-
-      setMessages((prev) => [...prev, agentMsg]);
-      setIsTyping(false);
     }, 300);
   };
 
@@ -398,10 +412,10 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         role="dialog"
         aria-modal="true"
         aria-label={l('Vizamigo AI Seyahat Danışmanı', 'Vizamigo AI Travel Concierge')}
-        className={`pointer-events-auto w-full flex flex-col overflow-hidden bg-white/95 dark:bg-[#072630]/95 backdrop-blur-2xl border border-teal-500/30 shadow-2xl transition-all duration-300 ${
+        className={`pointer-events-auto w-full flex flex-col overflow-hidden bg-white dark:bg-[#072630] backdrop-blur-2xl border-t-2 sm:border-2 border-teal-500/40 shadow-2xl transition-all duration-300 ${
           isFullscreen
-            ? 'fixed inset-3 sm:inset-6 z-50 rounded-[28px]'
-            : 'sm:w-[480px] sm:h-[660px] max-h-[85vh] h-[85vh] sm:rounded-[30px] rounded-t-[26px]'
+            ? 'fixed inset-2 sm:inset-6 z-50 rounded-[28px]'
+            : 'sm:w-[490px] sm:h-[670px] h-[88dvh] max-h-[92dvh] sm:rounded-[30px] rounded-t-[26px]'
         }`}
       >
         {/* ===================================================================
@@ -842,15 +856,15 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             AUTONOMOUS AI AGENTS QUICK-LAUNCH DOCK
         =================================================================== */}
         {!showSettings && (
-          <div className="px-3.5 py-2 bg-gradient-to-r from-amber-500/10 via-teal-500/10 to-sky-500/10 border-t border-teal-500/20 flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
-            <span className="text-[11px] font-black uppercase text-amber-700 dark:text-amber-400 shrink-0 mr-1 flex items-center gap-1">
+          <div className="px-3.5 py-2.5 bg-slate-100/90 dark:bg-[#051c24] border-t border-slate-200 dark:border-teal-500/30 flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
+            <span className="text-[11px] font-black uppercase text-slate-800 dark:text-amber-300 shrink-0 mr-1 flex items-center gap-1">
               <span>🤖</span>
               <span>{l('AI Ajanları:', 'AI Agents:')}</span>
             </span>
             <button
               type="button"
               onClick={() => handleRunAgent('schengen')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-xs font-black text-amber-900 dark:text-amber-200 transition-all cursor-pointer shadow-xs flex items-center gap-1"
+              className="shrink-0 px-3 py-1.5 rounded-full bg-white dark:bg-amber-950/40 border border-amber-500/50 text-xs font-black text-amber-950 dark:text-amber-200 transition-all cursor-pointer shadow-xs flex items-center gap-1 hover:border-amber-600"
             >
               <span>🛡️</span>
               <span>{l('Schengen Nöbetçisi', 'Schengen Sentinel')}</span>
@@ -858,7 +872,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             <button
               type="button"
               onClick={() => handleRunAgent('radar')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-teal-500/15 hover:bg-teal-500/25 border border-teal-500/40 text-xs font-black text-teal-900 dark:text-teal-200 transition-all cursor-pointer shadow-xs flex items-center gap-1"
+              className="shrink-0 px-3 py-1.5 rounded-full bg-white dark:bg-teal-950/40 border border-teal-500/50 text-xs font-black text-teal-950 dark:text-teal-200 transition-all cursor-pointer shadow-xs flex items-center gap-1 hover:border-teal-600"
             >
               <span>🛰️</span>
               <span>{l('Vizesiz Rota Avcısı', 'Visa-Free Radar')}</span>
@@ -866,7 +880,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             <button
               type="button"
               onClick={() => handleRunAgent('itinerary')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/40 text-xs font-black text-sky-900 dark:text-sky-200 transition-all cursor-pointer shadow-xs flex items-center gap-1"
+              className="shrink-0 px-3 py-1.5 rounded-full bg-white dark:bg-sky-950/40 border border-sky-500/50 text-xs font-black text-sky-950 dark:text-sky-200 transition-all cursor-pointer shadow-xs flex items-center gap-1 hover:border-sky-600"
             >
               <span>🧭</span>
               <span>{l('Kişisel Rota Mimarı', 'Itinerary Architect')}</span>
@@ -874,7 +888,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             <button
               type="button"
               onClick={() => handleRunAgent('dossier')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer shadow-xs flex items-center gap-1"
+              className="shrink-0 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer shadow-xs flex items-center gap-1"
             >
               <span>🧳</span>
               <span>{l('Seyahat Dosyası & PDF', 'Trip Dossier & PDF')}</span>
@@ -886,42 +900,42 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             QUICK SUGGESTION CHIPS (Localized in all 5 languages)
         =================================================================== */}
         {!showSettings && (
-          <div className="px-3.5 py-2 border-t border-teal-500/15 bg-slate-50/70 dark:bg-white/[0.02] flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
-            <span className="text-xs font-bold text-slate-400 shrink-0 mr-1">
+          <div className="px-3.5 py-2 border-t border-slate-200 dark:border-teal-500/20 bg-slate-50 dark:bg-white/[0.02] flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
+            <span className="text-xs font-extrabold text-slate-500 dark:text-slate-400 shrink-0 mr-1">
               {l('Örnekler:', 'Suggestions:')}
             </span>
             <button
               type="button"
               onClick={() => handleSend(language === 'tr' ? 'Norveç vizesi nasıl?' : language === 'de' ? 'Visum Norwegen?' : language === 'es' ? '¿Visado para Noruega?' : language === 'ru' ? 'Виза в Норвегию?' : 'Norway visa rules?')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10 text-xs font-black text-slate-800 dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer shadow-xs"
             >
               🇳🇴 {l('Norveç Vizesi', 'Norway Visa')}
             </button>
             <button
               type="button"
               onClick={() => handleSend(language === 'tr' ? 'Japonya priz tipi nedir?' : language === 'de' ? 'Stecker Japan?' : language === 'es' ? '¿Enchufes en Japón?' : language === 'ru' ? 'Розетки в Японии?' : 'Japan plug type?')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10 text-xs font-black text-slate-800 dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer shadow-xs"
             >
               🔌 {l('Japonya Prizi', 'Japan Plugs')}
             </button>
             <button
               type="button"
               onClick={() => handleSend(language === 'tr' ? 'Tayland taksi uygulaması hangisi?' : language === 'de' ? 'Taxi App Thailand?' : language === 'es' ? '¿Apps taxi Tailandia?' : language === 'ru' ? 'Такси в Таиланде?' : 'Thailand taxi apps?')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10 text-xs font-black text-slate-800 dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer shadow-xs"
             >
               🚖 {l('Tayland Taksi', 'Thailand Taxi')}
             </button>
             <button
               type="button"
               onClick={() => handleSend(language === 'tr' ? 'İtalya 7 günlük rota hazırla' : language === 'de' ? 'Italien Reiseroute 7 Tage' : language === 'es' ? 'Ruta 7 días Italia' : language === 'ru' ? 'Маршрут по Италии на 7 дней' : '7-day Italy Itinerary')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10 text-xs font-black text-slate-800 dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer shadow-xs"
             >
               🗺️ {l('İtalya Rotası', 'Italy Route')}
             </button>
             <button
               type="button"
               onClick={() => handleSend(language === 'tr' ? 'Kimlikle hangi ülkelere gidilir?' : language === 'de' ? 'Reisen nur mit Personalausweis?' : language === 'es' ? '¿Viajar solo con DNI?' : language === 'ru' ? 'Куда можно без загранпаспорта?' : 'Countries with ID card only?')}
-              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10 text-xs font-black text-slate-800 dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer shadow-xs"
             >
               🆔 {l('Kimlikle Seyahat', 'ID-Card Travel')}
             </button>
@@ -929,10 +943,10 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         )}
 
         {/* ===================================================================
-            INPUT BAR: VOICE MIC, TEXT INPUT, SEND BUTTON
+            INPUT BAR: VOICE MIC, TEXT INPUT, SEND BUTTON (Safe Area Inset)
         =================================================================== */}
         {!showSettings && (
-          <div className="p-3 sm:p-4 border-t border-teal-500/20 bg-white dark:bg-[#072630] shrink-0">
+          <div className="p-3 sm:p-4 border-t border-slate-200 dark:border-teal-500/20 bg-white dark:bg-[#072630] shrink-0 pb-[max(env(safe-area-inset-bottom),14px)]">
             <form
               onSubmit={(e) => {
                 e.preventDefault();

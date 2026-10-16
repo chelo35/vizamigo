@@ -200,7 +200,17 @@ export function runItineraryArchitect(destinationCountry: string = 'TH', current
   const itinerary = getCountryItinerary(cCode, language);
   const geo = getCountryGeography(cCode, language);
   const insights = getCountryInsights(cCode, language);
-  const apps = getCountryNomadApps(cCode, insights?.transport?.popularRideApps);
+  const rawApps = getCountryNomadApps(cCode, insights?.transport?.popularRideApps) || [];
+  const rideApps = Array.isArray(rawApps) ? rawApps.filter(a => a.category === 'ride' || a.category === 'both') : [];
+  const recommendedTaxiText = rideApps.length > 0
+    ? rideApps.map(a => a.name).join(', ')
+    : rawApps.length > 0
+      ? rawApps.slice(0, 3).map(a => a.name).join(', ')
+      : isTr ? 'Yerel Taksi & Metro' : 'Local Taxi & Metro';
+
+  const currencyCode = geo?.currencyCode || 'USD';
+  const currencySymbol = geo?.currencySymbol || '$';
+  const dailyBudgetEst = Math.round(45 * getCrossRate('USD', currencyCode));
 
   const stops = itinerary?.stops || [
     { name: `${cName} Historic Capital`, recommendedDuration: '2 Days', highlights: ['City Center', 'Museums', 'Local Food Market'] },
@@ -215,13 +225,13 @@ export function runItineraryArchitect(destinationCountry: string = 'TH', current
     ? `**Gün Gün Optimize Gezi Planı:**\n\n` +
       stops.map((s, idx) => `**Durak ${idx + 1}: ${s.name} (${s.recommendedDuration})**\n• *Öne Çıkanlar:* ${s.highlights.join(' · ')}`).join('\n\n') +
       `\n\n**Ulaşım & Yerel Uygulamalar:**\n` +
-      `• **Önerilen Taksi/Ulaşım:** ${apps.rideHailing.map(a => a.name).join(', ') || 'Yerel Taksi & Metro'}\n` +
-      `• **Günlük Tahmini Bütçe:** ~${Math.round(45 * getCrossRate('USD', geo.currencyCode))} ${geo.currencySymbol} / gün (Ekonomik konaklama & yemek dahil)`
+      `• **Önerilen Taksi/Ulaşım:** ${recommendedTaxiText}\n` +
+      `• **Günlük Tahmini Bütçe:** ~${dailyBudgetEst} ${currencySymbol} / gün (Ekonomik konaklama & yemek dahil)`
     : `**Day-by-Day Optimized Travel Plan:**\n\n` +
       stops.map((s, idx) => `**Stop ${idx + 1}: ${s.name} (${s.recommendedDuration})**\n• *Highlights:* ${s.highlights.join(' · ')}`).join('\n\n') +
       `\n\n**Transport & Mobility Apps:**\n` +
-      `• **Recommended Taxi/Ride-Hailing:** ${apps.rideHailing.map(a => a.name).join(', ') || 'Local Taxi & Transit'}\n` +
-      `• **Estimated Daily Budget:** ~$45 / day (~${Math.round(45 * getCrossRate('USD', geo.currencyCode))} ${geo.currencySymbol})`;
+      `• **Recommended Taxi/Ride-Hailing:** ${recommendedTaxiText}\n` +
+      `• **Estimated Daily Budget:** ~$45 / day (~${dailyBudgetEst} ${currencySymbol})`;
 
   return {
     agentId: 'itinerary_architect',

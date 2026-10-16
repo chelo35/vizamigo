@@ -304,35 +304,29 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       </div>
 
       {/* =====================================================================
-          MAIN V2 LAGOON WIDGET GRID (MATCHES APPROVED WEB V2 & MOBILE V2 1:1)
+          MAIN V2 LAGOON WIDGET GRID (UNIFORM SQUARE 2-COLUMN BALANCED LAYOUT)
       ===================================================================== */}
-      <div className="grid grid-cols-2 lg:grid-cols-12 gap-3.5 sm:gap-5">
+      <div className="grid grid-cols-2 lg:grid-cols-2 gap-3.5 sm:gap-5">
         {/* -----------------------------------------------------------------
-            WIDGET 1: NEREYE GİDEBİLİRİM? (DÜNYA RADARI)
-            Full width on Mobile (col-span-2), 6 cols on Desktop (lg:col-span-6)
+            WIDGET 1: PASAPORTUMLA NEREYE GİDEBİLİRİM? (DÜNYA RADARI & 199 ÜLKE)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => {
-            const el = document.getElementById('vz-country-directory');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-            else openWidget('radar', 'map');
+            openWidget('radar', 'all');
           }}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              const el = document.getElementById('vz-country-directory');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else openWidget('radar', 'map');
-            }
+            if (e.key === 'Enter') openWidget('radar', 'all');
           }}
-          className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[26px] sm:rounded-[30px] border-2 border-[#5EEAD4]/60 shadow-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[210px] sm:min-h-[250px] flex flex-col justify-between p-5 sm:p-6"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] border-2 border-[#5EEAD4]/60 shadow-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between p-4 sm:p-5"
         >
           {/* Real Tropical Turquoise Island Lagoon Photo Background */}
           <img
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75"
             srcSet="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=480&fm=webp&q=75 480w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75 720w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&fm=webp&q=75 1000w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 684px"
+            sizes="(max-width: 768px) 50vw, 550px"
             alt={l('Turkuaz Lagün & Dünya Radarı', 'Turquoise Lagoon & World Radar')}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
@@ -342,72 +336,73 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             height={395}
           />
           {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0284C7]/85 via-[#0EA5E9]/65 to-[#0D9488]/75" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/75 to-[#0D9488]/85" />
 
-          {/* Content Layout */}
-          <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 h-full">
-            <div className="flex flex-col justify-between h-full space-y-3 sm:max-w-[54%]">
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-black text-white leading-[1.15] tracking-tight drop-shadow-md">
-                  {l('Pasaportumla Nereye Gidebilirim?', 'Where Can I Go With My Passport?')}
-                  <span className="block text-lg sm:text-xl text-[#BAE6FD] mt-0.5">
-                    {l('(Dünya Radarı & 199 Ülke)', '(World Radar & 199 Countries)')}
-                  </span>
-                </h2>
-              </div>
+          {/* Top Title & Quick Stats */}
+          <div className="relative z-10 space-y-2">
+            <h2 className="text-base sm:text-xl lg:text-2xl font-black text-white leading-tight tracking-tight drop-shadow-md">
+              {l('Pasaportumla Nereye Gidebilirim?', 'Where Can I Go?')}
+              <span className="block text-xs sm:text-sm text-[#BAE6FD] font-extrabold mt-0.5">
+                {l('(Dünya Radarı & 199 Ülke)', '(World Radar & 199 Countries)')}
+              </span>
+            </h2>
 
-              {/* Big High-Contrast Pills: 71 Vizesiz | 45 E-Vize */}
-              <div className="flex flex-wrap items-center gap-2 pt-1">
-                <span className="px-3.5 py-1.5 rounded-2xl text-xs sm:text-sm font-black bg-[#38BDF8] text-[#042637] shadow-lg">
-                  {stats.free} {l('Vizesiz', 'Visa-Free')}
-                </span>
-                <span className="px-3.5 py-1.5 rounded-2xl text-xs sm:text-sm font-black bg-[#5EEAD4] text-[#042F2E] shadow-lg">
-                  {stats.evisa} {l('E-Vize', 'eVisa')}
-                </span>
-              </div>
-
-              {/* Instant Action Direct Buttons */}
-              <div className="flex flex-wrap items-center gap-2 pt-1">
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    const el = document.getElementById('vz-country-directory');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                    else onSelectTab?.('explore');
-                  }}
-                  className="px-3.5 py-1.5 rounded-xl text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-md transition-all cursor-pointer flex items-center gap-1.5"
-                >
-                  <span>🌍</span>
-                  <span>{l('199 Ülke Listesini Aç', 'Open 199 Country List')}</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    openWidget('radar', 'map');
-                  }}
-                  className="px-3 py-1.5 rounded-xl text-xs font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer flex items-center gap-1"
-                >
-                  <span>🗺️</span>
-                  <span>{l('Radar', 'Radar')}</span>
-                </button>
-              </div>
+            <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+              <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-[#38BDF8] text-[#042637] shadow-sm">
+                {stats.free} {l('Vizesiz', 'Visa-Free')}
+              </span>
+              <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-[#5EEAD4] text-[#042F2E] shadow-sm">
+                {stats.evisa} {l('E-Vize', 'eVisa')}
+              </span>
             </div>
+          </div>
 
-            {/* 3D Glowing World Map with Colorful Flight Arcs */}
-            <div className="w-full sm:w-[46%] -my-2">
-              <WorldRadar3DIllustration />
-            </div>
+          {/* Center 3D Glowing World Icon */}
+          <div className="relative z-10 self-center -my-1 scale-90 sm:scale-100">
+            <WorldRadar3DIllustration />
+          </div>
+
+          {/* Bottom Action Buttons */}
+          <div className="relative z-10 flex flex-wrap items-center gap-2 pt-1">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                openWidget('radar', 'all');
+              }}
+              className="flex-1 min-w-[120px] px-3 py-1.5 rounded-xl text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-md transition-all cursor-pointer flex items-center justify-center gap-1.5"
+            >
+              <span>🌍</span>
+              <span>{l('199 Ülke Radarı →', '199 Country Radar →')}</span>
+            </button>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                const el = document.getElementById('vz-country-directory');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                else onSelectTab?.('explore');
+              }}
+              className="px-2.5 py-1.5 rounded-xl text-xs font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer"
+              title={l('Ülke Tablosuna İn', 'Scroll to Country Table')}
+            >
+              {l('Liste', 'List')}
+            </button>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 2: ÜLKE ARAŞTIRMA MERKEZİ (🇹🇭 TAYLAND & 199 ÜLKE)
-            Full width on Mobile (col-span-2), 6 cols on Desktop (lg:col-span-6)
+            WIDGET 2: ÜLKE ARAŞTIRMA MERKEZİ (199 ÜLKE REHBERİ)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
-          className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[26px] sm:rounded-[30px] border-2 border-[#5EEAD4]/60 shadow-2xl transition-all duration-300 hover:-translate-y-1 min-h-[210px] sm:min-h-[250px] flex flex-col justify-between p-5 sm:p-6"
+          onClick={() => openWidget('country_research', 'visa', researchCountry)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') openWidget('country_research', 'visa', researchCountry);
+          }}
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] border-2 border-[#5EEAD4]/60 shadow-2xl transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between p-4 sm:p-5 cursor-pointer"
         >
           {/* Real Tropical Limestone Lagoon Photo Background (Thailand / Selected Country) */}
           <img
@@ -416,12 +411,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                 ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=720&fm=webp&q=75'
                 : researchVisual.image
             }
-            srcSet={
-              researchCountry === 'TH'
-                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=480&fm=webp&q=75 480w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=720&fm=webp&q=75 720w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&fm=webp&q=75 1000w'
-                : undefined
-            }
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 584px"
+            sizes="(max-width: 768px) 50vw, 550px"
             alt={getCountryName(researchCountry, language)}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
@@ -430,92 +420,88 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             height={411}
           />
           {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0284C7]/85 via-[#0EA5E9]/60 to-[#0D9488]/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/70 to-[#0D9488]/85" />
 
           {/* Top Title & Country Selector Pill */}
-          <div className="relative z-10 space-y-3">
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <h2
-                onClick={() => openWidget('country_research', 'visa', researchCountry)}
-                className="text-2xl sm:text-3xl font-black text-white leading-tight tracking-tight drop-shadow-md cursor-pointer hover:text-[#5EEAD4] transition-colors"
-              >
-                {l('Ülke Araştırma Merkezi:', 'Country Research Hub:')}
-              </h2>
-            </div>
+          <div className="relative z-10 space-y-2">
+            <h2 className="text-base sm:text-xl lg:text-2xl font-black text-white leading-tight tracking-tight drop-shadow-md">
+              {l('Ülke Araştırma:', 'Country Research:')}
+            </h2>
 
             {/* Active Country Pill + Quick Country Switcher */}
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex items-center gap-1.5">
               <button
                 type="button"
-                onClick={() => openWidget('country_research', 'visa', researchCountry)}
-                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0F766E]/90 hover:bg-[#0D9488] text-white border-2 border-[#5EEAD4] text-base sm:text-lg font-black shadow-lg cursor-pointer transition-all"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowCountryPicker(!showCountryPicker);
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-black text-xs sm:text-sm border border-white/40 backdrop-blur-md transition-all cursor-pointer shadow-sm"
               >
-                <span className="text-xl">{getFlag(researchCountry)}</span>
-                <span>{getCountryName(researchCountry, language)}</span>
-                <ChevronRight className="w-4 h-4 text-[#5EEAD4]" />
+                <span className="text-sm sm:text-base leading-none">{getFlag(researchCountry)}</span>
+                <span className="truncate max-w-[110px] sm:max-w-[140px]">
+                  {getCountryName(researchCountry, language)}
+                </span>
+                <ChevronDown className="w-3.5 h-3.5 text-[#5EEAD4]" />
               </button>
 
-              <button
-                type="button"
-                onClick={() => setShowCountryPicker(!showCountryPicker)}
-                className="px-3 py-1.5 rounded-full text-xs sm:text-sm font-extrabold bg-white/20 hover:bg-white/30 text-white backdrop-blur-md border border-white/30 cursor-pointer transition-all"
-              >
-                {l('Ülke Değiştir ▾', 'Change Country ▾')}
-              </button>
+              {/* Country Picker Dropdown */}
+              {showCountryPicker && (
+                <div
+                  onClick={(e) => e.stopPropagation()}
+                  className="absolute left-4 top-20 z-50 w-56 max-h-64 overflow-y-auto bg-[#042637] border-2 border-[#2DD4BF] rounded-2xl shadow-2xl p-1.5 text-xs font-black text-white space-y-0.5"
+                >
+                  {POPULAR_RESEARCH_COUNTRIES.map((code) => (
+                    <button
+                      key={code}
+                      type="button"
+                      onClick={() => {
+                        setResearchCountry(code);
+                        setShowCountryPicker(false);
+                      }}
+                      className={`w-full text-left px-3 py-2 rounded-xl flex items-center gap-2 hover:bg-white/20 cursor-pointer ${
+                        researchCountry === code ? 'bg-[#0D9488] text-white' : 'text-slate-200'
+                      }`}
+                    >
+                      <span>{getFlag(code)}</span>
+                      <span>{getCountryName(code, language)}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
-
-            {showCountryPicker && (
-              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1">
-                {POPULAR_RESEARCH_COUNTRIES.map((code) => (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => {
-                      setResearchCountry(code);
-                      setShowCountryPicker(false);
-                    }}
-                    className={`px-3 py-1.5 rounded-full text-xs font-extrabold whitespace-nowrap cursor-pointer transition-all ${
-                      researchCountry === code
-                        ? 'bg-[#5EEAD4] text-[#042F2E] shadow-sm'
-                        : 'bg-[#042F2E]/80 text-white hover:bg-[#0D9488]'
-                    }`}
-                  >
-                    {getFlag(code)} {getCountryName(code, language)}
-                  </button>
-                ))}
-              </div>
-            )}
           </div>
 
-          {/* Bottom 5 Large Frosted Sub-Tab Buttons (Matching V2 Mockup 1:1) */}
-          <div className="relative z-10 flex items-center gap-2 overflow-x-auto no-scrollbar pt-3">
-            {[
-              {
-                key: 'visa',
-                label: researchCountryItem
-                  ? `🛂 ${getCategoryBadgeLabel(researchCountryItem, language)}`
-                  : l('🛂 Vize (60 Gün)', '🛂 Visa (60d)')
-              },
-              { key: 'practical', label: l('🔌 Pratik', '🔌 Practical') },
-              { key: 'safety', label: l('🛡️ Güvenlik', '🛡️ Safety') },
-              { key: 'apps', label: l('📲 Uygulamalar', '📲 Apps') },
-              { key: 'deals', label: l('🏨 Otel & Uçak', '🏨 Hotel & Flight') }
-            ].map((tab) => (
-              <button
-                key={tab.key}
-                type="button"
-                onClick={() => openWidget('country_research', tab.key, researchCountry)}
-                className="px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-extrabold whitespace-nowrap bg-[#0F766E]/80 hover:bg-[#2DD4BF] text-white hover:text-[#042F2E] border border-[#5EEAD4]/60 backdrop-blur-md shadow-md cursor-pointer transition-all"
-              >
-                {tab.label}
-              </button>
-            ))}
+          {/* Middle: Key Insights Badges */}
+          <div className="relative z-10 flex flex-wrap items-center gap-1.5 py-1">
+            <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-emerald-500/90 text-white shadow-sm flex items-center gap-1">
+              <span>{researchVisaBadge.icon}</span>
+              <span>{researchVisaBadge.text}</span>
+            </span>
+            <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-sky-500/90 text-white shadow-sm">
+              🔌 Tip {researchGeography.plugTypes.split(',')[0]}
+            </span>
+          </div>
+
+          {/* Bottom Action Button */}
+          <div className="relative z-10 flex items-center gap-2">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                openWidget('country_research', 'visa', researchCountry);
+              }}
+              className="flex-1 px-3.5 py-2 rounded-xl text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-md transition-all cursor-pointer flex items-center justify-center gap-1.5"
+            >
+              <span>{getFlag(researchCountry)}</span>
+              <span>{l('360° Rehberi Aç →', 'Open 360° Dossier →')}</span>
+            </button>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 3: PASAPORT KARŞILAŞTIR & SİNERJİ
-            1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => {
@@ -524,101 +510,100 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-3">
-            <div>
-              <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
-                {l('Pasaport Karşılaştır', 'Compare Passports')}
-                <span className="block text-xs sm:text-sm font-bold text-[#0D9488] dark:text-[#5EEAD4] mt-0.5">
-                  {l('& Güç Sinerjisi', '& Power Synergy')}
-                </span>
-              </h3>
-            </div>
-
-            <div>
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-2xl sm:text-4xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
-                  {synergyStats.combinedFree}
-                </span>
-                <span className="text-xs sm:text-sm font-extrabold text-[#042F2E] dark:text-teal-100 leading-tight">
-                  {l('Ülke Vizesiz', 'Visa-Free')}
-                </span>
-              </div>
-            </div>
-
-            <div>
-              <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
-                {l('Pasaport Karşılaştır →', 'Compare Passports →')}
+          <div className="space-y-1">
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
+              {l('Pasaport Karşılaştır', 'Compare Passports')}
+              <span className="block text-xs sm:text-sm font-bold text-[#0D9488] dark:text-[#5EEAD4] mt-0.5">
+                {l('& Güç Sinerjisi', '& Power Synergy')}
+              </span>
+            </h3>
+            <div className="flex items-baseline gap-1.5 pt-1">
+              <span className="text-2xl sm:text-3xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
+                {synergyStats.combinedFree}
+              </span>
+              <span className="text-xs sm:text-sm font-extrabold text-[#042F2E] dark:text-teal-100">
+                {l('Ülke Vizesiz', 'Visa-Free')}
               </span>
             </div>
           </div>
 
-          <div className="self-center sm:self-auto -my-2">
+          <div className="self-center -my-1 scale-90 sm:scale-100">
             <Passports3DIllustration
               codeA={currentPassport}
               codeB={effectiveSecondPassport}
               synergyCount={synergyStats.combinedFree}
             />
           </div>
+
+          <div>
+            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Pasaport Karşılaştır →', 'Compare Passports →')}
+            </span>
+          </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 4: DÜNYA GÜN SAYACI (TÜM DÜNYA & SCHENGEN)
-            1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('day_counter', 'schengen')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('day_counter', 'schengen')}
-          className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-4">
-            <div>
-              <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
-                {l('Dünya', 'World')}
-                <span className="block">{l('Gün Sayacı', 'Day Counter')}</span>
-              </h3>
-            </div>
-
-            <div className="pt-1">
-              <div className="text-base sm:text-2xl font-black text-[#042F2E] dark:text-[#5EEAD4] leading-tight">
+          <div className="space-y-1">
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
+              {l('Dünya', 'World')}
+              <span className="block">{l('Gün Sayacı', 'Day Counter')}</span>
+            </h3>
+            <div className="pt-0.5">
+              <div className="text-base sm:text-xl font-black text-[#042F2E] dark:text-[#5EEAD4] leading-tight">
                 {l('48 Gün Kaldı', '48 Days Left')}
               </div>
-              <div className="text-xs sm:text-sm font-extrabold text-[#064E3B] dark:text-teal-200 mt-0.5">
+              <div className="text-[11px] sm:text-xs font-extrabold text-[#064E3B] dark:text-teal-200">
                 {l('(Tüm Dünya & Schengen)', '(Global & Schengen)')}
               </div>
             </div>
           </div>
 
-          <div className="self-center sm:self-auto -my-2">
+          <div className="self-center -my-1 scale-90 sm:scale-100">
             <GlobalDayCounter3DIllustration daysLeft={48} />
+          </div>
+
+          <div>
+            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Sayacı Aç →', 'Open Counter →')}
+            </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 5: DÖVİZ & BÜTÇE
-            1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('currency', 'converter')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('currency', 'converter')}
-          className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-            <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
+          <div>
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
               {l('Döviz & Bütçe', 'Currency & Budget')}
             </h3>
-            <div className="self-center sm:self-auto -my-3 shrink-0">
-              <CurrencyCoins3DIllustration />
-            </div>
           </div>
 
-          <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight tabular-nums">
+          <div className="self-center -my-1 scale-90 sm:scale-100">
+            <CurrencyCoins3DIllustration />
+          </div>
+
+          <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
+            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 font-mono font-black text-xs sm:text-sm text-[#042F2E] dark:text-white tabular-nums">
               <span>{currencyDisplay.line1}</span>
               <span className="opacity-30">·</span>
               <span>{currencyDisplay.line2}</span>
@@ -628,36 +613,39 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
         {/* -----------------------------------------------------------------
             WIDGET 6: AKILLI BAVUL
-            1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('packing', 'documents')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('packing', 'documents')}
-          className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-4">
-            <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
+          <div className="space-y-1">
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
               {l('Akıllı', 'Smart')}
               <span className="block">{l('Bavul', 'Packing')}</span>
             </h3>
-
-            <div>
-              <span className="inline-block px-3 sm:px-4 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-lg lg:text-xl font-black shadow-md">
-                %75 {l('Hazır', 'Ready')}
-              </span>
-            </div>
+            <span className="inline-block px-2.5 py-1 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs">
+              %75 {l('Hazır', 'Ready')}
+            </span>
           </div>
 
-          <div className="self-center sm:self-auto -my-2">
+          <div className="self-center -my-1 scale-90 sm:scale-100">
             <Suitcases3DIllustration progress={75} />
+          </div>
+
+          <div>
+            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Bavul Listesini Aç →', 'Open Packing List →')}
+            </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 7: DÜNYA SAATİ & ROTA PLANLAYICI
-            1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => {
@@ -666,25 +654,24 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-            <div className="space-y-1">
-              <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
-                {l('Dünya Saati', 'World Clock')}
-                <span className="block">{l('& Rota Planı', '& Route Plan')}</span>
-              </h3>
-              <p className="text-xs sm:text-sm font-extrabold text-[#0D9488] dark:text-teal-200 truncate max-w-[150px] sm:max-w-none">
-                {getFlag(currentPassport)} {getCountryName(currentPassport, language)} ➔ TYO ➔ LON
-              </p>
-            </div>
-            <div className="self-center sm:self-auto -my-3">
-              <WorldClock3DIllustration />
-            </div>
+          <div className="space-y-1">
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
+              {l('Dünya Saati', 'World Clock')}
+              <span className="block">{l('& Rota Planı', '& Route Plan')}</span>
+            </h3>
+            <p className="text-xs font-extrabold text-[#0D9488] dark:text-teal-200 truncate">
+              {getFlag(currentPassport)} {getCountryName(currentPassport, language)} ➔ TYO ➔ LON
+            </p>
           </div>
 
-          <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between gap-2">
-            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-xs sm:text-sm text-[#042F2E] dark:text-white tracking-tight">
+          <div className="self-center -my-1 scale-90 sm:scale-100">
+            <WorldClock3DIllustration />
+          </div>
+
+          <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between gap-1.5">
+            <div className="flex flex-wrap items-baseline gap-x-2 font-mono font-black text-xs text-[#042F2E] dark:text-white">
               <LiveCityClock offsetHours={3} label="İST" />
               <span className="opacity-30">·</span>
               <LiveCityClock offsetHours={9} label="TYO" />
@@ -696,85 +683,104 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 8: TÜM TURİZM UYGULAMALARI (FLIGHTS, HOTELS, TRAINS, LUGGAGE, APPS)
-            1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
+            WIDGET 8: TÜM TURİZM UYGULAMALARI (SUPER-APPS)
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('local_apps', 'apps', appsCountry)}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'apps', appsCountry)}
-          className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-3">
-            <h3 className="text-base sm:text-2xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
+          <div className="space-y-1">
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
               {l('Tüm Seyahat', 'All Travel')}
-              <span className="block">{l('Uygulamaları', 'Super-Apps')}</span>
-              <span className="block text-xs font-bold text-[#0D9488] dark:text-[#5EEAD4] mt-0.5">
-                {l('Uçak · Otel · Tren · Bagaj · eSIM', 'Flights · Hotels · Rail · Luggage · eSIM')}
-              </span>
+              <span className="block">{l('Uygulamaları (30+)', 'Super-Apps (30+)')}</span>
             </h3>
-
-            <div>
-              <span className="inline-flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs sm:text-sm font-black shadow-md group-hover:scale-105 transition-transform">
-                {l('Tüm Uygulamaları Aç (30+) →', 'Open App Directory (30+) →')}
-              </span>
-            </div>
+            <p className="text-[11px] sm:text-xs font-bold text-[#0D9488] dark:text-[#5EEAD4]">
+              {l('Uçak · Otel · Tren · Bagaj · eSIM', 'Flights · Hotels · Rail · Luggage · eSIM')}
+            </p>
           </div>
 
-          <div className="self-center sm:self-auto -my-2">
+          <div className="self-center -my-1 scale-90 sm:scale-100">
             <LocalApps3DIllustration />
+          </div>
+
+          <div>
+            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs font-black shadow-xs group-hover:scale-105 transition-transform">
+              {l('Uygulamaları Aç →', 'Open Directory →')}
+            </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 9 & 10: DİJİTAL GÖÇEBE & ACİL KONSOLOSLUK (Mobile col-span-2, Desktop lg:col-span-6)
+            WIDGET 9: DİJİTAL GÖÇEBE ÜSLERİ
+            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('nomad', 'hubs')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('nomad', 'hubs')}
-          className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
           <div className="space-y-1.5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
               <Laptop className="w-3.5 h-3.5" />
-              {l('Uzaktan Çalışma & Hızlı Wi-Fi', 'Remote Work & Fast Wi-Fi')}
+              {l('Uzaktan Çalışma', 'Remote Work')}
             </span>
-            <h3 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white">
-              {l('Dijital Göçebe (Nomad) Üsleri', 'Digital Nomad Hubs')}
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Dijital Göçebe Üsleri', 'Digital Nomad Hubs')}
             </h3>
-            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200">
-              🌴 Bali · Bangkok · Lizbon · Tiflis · 185 Mbps
+            <p className="text-xs font-bold text-[#0D9488] dark:text-teal-200">
+              🌴 Bali · Bangkok · 185 Mbps
             </p>
           </div>
-          <div className="self-center sm:self-auto -my-2">
+
+          <div className="self-center -my-1 scale-90 sm:scale-100">
             <NomadIsland3DIllustration />
+          </div>
+
+          <div>
+            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Nomad Üslerini Aç →', 'Open Nomad Hubs →')}
+            </span>
           </div>
         </div>
 
+        {/* -----------------------------------------------------------------
+            WIDGET 10: ACİL KONSOLOSLUK & SOS KRİZ MASASI
+            1 col on Mobile & Desktop (Square Proportional Card)
+        ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('emergency', 'sos')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('emergency', 'sos')}
-          className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
         >
           <div className="space-y-1.5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-rose-600 text-white">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-black bg-rose-600 text-white shadow-xs">
               <PhoneCall className="w-3.5 h-3.5" />
-              {l('SOS 112 / 911 · 7/24 Kriz Masası', 'SOS 112 / 911 · 24/7 Consular Desk')}
+              {l('SOS 112 / 911', 'SOS 112 / 911')}
             </span>
-            <h3 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white">
-              {l(`Acil Yardım & ${getCountryName(currentPassport, language)} Temsilcilikleri`, `Emergency SOS & ${getCountryName(currentPassport, 'en')} Embassies`)}
+            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Konsolosluk & Kriz', 'Emergency & Embassies')}
             </h3>
-            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200">
-              {l('Kayıp Pasaport, Geçici Belge & Büyükelçilik Numaraları', 'Lost Passport, Emergency Travel Doc & Embassies')}
+            <p className="text-xs font-bold text-[#0D9488] dark:text-teal-200 truncate">
+              {l('7/24 Dış Temsilcilik Hatları', '24/7 Consular Hotlines')}
             </p>
           </div>
-          <div className="self-center sm:self-auto -my-2">
+
+          <div className="self-center -my-1 scale-90 sm:scale-100">
             <LifebuoySOS3DIllustration />
+          </div>
+
+          <div>
+            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-rose-600 text-white text-xs font-black shadow-xs group-hover:bg-rose-500 transition-all">
+              {l('Acil Hatları Gör →', 'View Emergency Hotlines →')}
+            </span>
           </div>
         </div>
       </div>
