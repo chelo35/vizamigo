@@ -85,12 +85,12 @@ export const TravelConciergeGrid: React.FC<TravelConciergeGridProps> = ({
             >
               <div
                 style={{ background: app.logoBg }}
-                className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-[11px] font-black text-white shadow-xs px-1 text-center leading-tight"
+                className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-xs font-black text-white shadow-xs px-1 text-center leading-tight"
               >
                 {app.logoText}
               </div>
               <div className="min-w-0 flex-1">
-                <div className="text-[11px] font-extrabold text-[#0F766E] dark:text-[#5EEAD4] truncate">
+                <div className="text-xs font-extrabold text-[#0F766E] dark:text-[#5EEAD4] truncate">
                   {isTr ? app.categoryLabelTr : app.categoryLabelEn}
                 </div>
                 <div className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white truncate">

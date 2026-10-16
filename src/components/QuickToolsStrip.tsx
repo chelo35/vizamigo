@@ -43,7 +43,7 @@ export const QuickToolsStrip: React.FC<QuickToolHandlers & { className?: string 
         role="toolbar"
         aria-label={l('Hızlı seyahat araçları', 'Quick travel tools', 'Reise-Tools', 'Herramientas', 'Инструменты')}
       >
-        <span className="hidden md:inline text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mr-1 shrink-0">
+        <span className="hidden md:inline text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mr-1 shrink-0">
           {l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструменты')}
         </span>
         {tools.map((tool) => {

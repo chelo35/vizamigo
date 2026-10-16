@@ -438,7 +438,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
               <div className="text-base sm:text-2xl font-black text-[#042F2E] dark:text-[#5EEAD4] leading-tight">
                 {l('48 Gün Kaldı', '48 Days Left')}
               </div>
-              <div className="text-[11px] sm:text-sm font-extrabold text-[#064E3B] dark:text-teal-200 mt-0.5">
+              <div className="text-xs sm:text-sm font-extrabold text-[#064E3B] dark:text-teal-200 mt-0.5">
                 {l('(Tüm Dünya & Schengen)', '(Global & Schengen)')}
               </div>
             </div>
@@ -524,7 +524,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                 {l('Dünya Saati', 'World Clock')}
                 <span className="block">{l('& Rota', '& Route')}</span>
               </h3>
-              <p className="text-[11px] sm:text-sm font-extrabold text-[#0D9488] dark:text-teal-200 truncate max-w-[150px] sm:max-w-none">
+              <p className="text-xs sm:text-sm font-extrabold text-[#0D9488] dark:text-teal-200 truncate max-w-[150px] sm:max-w-none">
                 İST ➔ ATN ➔ TYO
               </p>
             </div>
@@ -561,7 +561,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </h3>
 
             <div>
-              <span className="inline-flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-[11px] sm:text-sm font-black shadow-md group-hover:scale-105 transition-transform">
+              <span className="inline-flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs sm:text-sm font-black shadow-md group-hover:scale-105 transition-transform">
                 {l('Fırsatları Gör →', 'View Deals →')}
               </span>
             </div>
@@ -939,7 +939,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                           >
                             <div className="w-14 h-14 rounded-2xl bg-sky-50 dark:bg-sky-950/60 border border-sky-500/30 flex flex-col items-center justify-center text-base font-black text-sky-700 dark:text-sky-300 shadow-xs">
                               <span>agoda</span>
-                              <span className="text-[9px] tracking-widest text-rose-500">•••••</span>
+                              <span className="text-xs tracking-widest text-rose-500">•••••</span>
                             </div>
                             <div className="text-sm font-black text-[#042F2E] dark:text-white mt-2">
                               Agoda (Otel)
@@ -958,7 +958,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                           >
                             <div className="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-500/30 flex flex-col items-center justify-center text-sm font-black text-rose-600 dark:text-amber-300 shadow-xs">
                               <span>airalo</span>
-                              <span className="text-[10px] text-[#0F766E] font-extrabold">5G eSIM</span>
+                              <span className="text-xs text-[#0F766E] font-extrabold">5G eSIM</span>
                             </div>
                             <div className="text-sm font-black text-[#042F2E] dark:text-white mt-2">
                               Airalo (eSIM)

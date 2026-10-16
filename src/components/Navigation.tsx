@@ -133,10 +133,10 @@ export const Navigation: React.FC<NavigationProps> = ({
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{getFlag(currentPassport)}</span>
                   <div>
-                    <div className="font-extrabold text-xs text-slate-900 dark:text-white">
+                    <div className="font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white">
                       {getCountryName(currentPassport, language)}
                     </div>
-                    <div className="text-[10px] font-bold text-slate-500">{currentPassport}</div>
+                    <div className="text-xs font-bold text-slate-500">{currentPassport}</div>
                   </div>
                 </div>
                 <span className="text-xs font-extrabold text-[#0F766E] dark:text-[#2DD4BF]">
@@ -154,7 +154,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                       key={item.key}
                       type="button"
                       onClick={() => handleNavClick(item.key)}
-                      className={`w-full flex items-center gap-3 p-3 rounded-2xl text-xs font-extrabold transition-all cursor-pointer ${
+                      className={`w-full flex items-center gap-3 p-3 rounded-2xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                         isActive
                           ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-sm'
                           : 'text-slate-700 dark:text-slate-200 hover:bg-teal-500/10'
@@ -169,7 +169,7 @@ export const Navigation: React.FC<NavigationProps> = ({
 
               {/* Quick Tools */}
               <div>
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-[#0F766E] dark:text-[#2DD4BF] mb-2 px-1">
+                <div className="text-xs font-extrabold uppercase tracking-wider text-[#0F766E] dark:text-[#2DD4BF] mb-2 px-1">
                   {l('Hızlı Araçlar', 'Quick Tools')}
                 </div>
                 <div className="grid grid-cols-2 gap-2">
@@ -183,7 +183,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                           tool.onClick?.();
                           onToggleMobileDrawer?.();
                         }}
-                        className="flex items-center gap-2 p-2.5 rounded-xl text-[11px] font-bold text-slate-800 dark:text-slate-200 bento-lagoon-card cursor-pointer"
+                        className="flex items-center gap-2 p-2.5 rounded-xl text-xs font-bold text-slate-800 dark:text-slate-200 bento-lagoon-card cursor-pointer"
                       >
                         <Icon className="w-3.5 h-3.5 text-[#0F766E] dark:text-[#2DD4BF] shrink-0" />
                         <span className="truncate">{tool.label}</span>
@@ -195,7 +195,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             </div>
 
             <div className="pt-3 border-t border-teal-500/20 text-center">
-              <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">
+              <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
                 Vizamigo Crystal Lagoon · 2026
               </span>
             </div>
@@ -229,7 +229,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               }`}
             >
               <Icon className="h-4.5 w-4.5" />
-              <span className="max-w-[68px] truncate text-[11px] leading-tight">{item.shortLabel}</span>
+              <span className="max-w-[72px] truncate text-xs leading-tight">{item.shortLabel}</span>
             </button>
           );
         })}

@@ -251,7 +251,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
                     <div className="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-white/20 text-xs shadow-sm">
                       {getFlag(item.c)}
                     </div>
-                    <div className="absolute bottom-1 left-2 right-2 text-[10px] font-semibold text-white/95 truncate">
+                    <div className="absolute bottom-1 left-2 right-2 text-xs font-semibold text-white/95 truncate">
                       {visual.landmark}
                     </div>
                   </div>
@@ -265,7 +265,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
                       {region}
                     </span>
                     <div className="mt-2.5">
-                      <span className={`text-[11px] px-3 py-1 rounded-full font-bold shadow-2xs inline-block ${badgeClass}`}>
+                      <span className={`text-xs px-3 py-1 rounded-full font-bold shadow-2xs inline-block ${badgeClass}`}>
                         {badgeLabel}
                       </span>
                     </div>
@@ -273,10 +273,10 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
                 </div>
 
                 <div className="flex items-center justify-between pt-3 border-t border-slate-100 dark:border-white/[0.06] text-xs">
-                  <span className="text-[11px] font-mono text-slate-600 dark:text-slate-400 uppercase font-semibold">
+                  <span className="text-xs font-mono text-slate-600 dark:text-slate-400 uppercase font-semibold">
                     ISO: {item.c}
                   </span>
-                  <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
                     {item.v === 'vf' ? l('Süresiz', 'Indefinite', 'Unbegrenzt') : /^\d+$/.test(item.v) ? `${item.v} ${l('gün', 'days', 'Tage')}` : ''}
                   </span>
                 </div>

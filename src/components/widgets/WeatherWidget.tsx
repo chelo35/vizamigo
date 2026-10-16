@@ -90,7 +90,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
               <span>{l('Canlı Dünya Hava Durumu', 'Live World Weather', 'Weltweites Wetter', 'Clima Mundial', 'Погода в мире')}</span>
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#2A8C82]" title="Open-Meteo Canlı Meteoroloji" />
             </h2>
-            <span className="text-[11px] text-slate-500 dark:text-slate-400 leading-[1.6]">
+            <span className="text-xs text-slate-500 dark:text-slate-400 leading-[1.6]">
               {ALL_WORLD_HUBS.length}+ {l('turistik şehir & tatil bölgesi canlı hava', 'cities & resorts live weather', 'Städte & Urlaubsorte Live-Wetter', 'clima en vivo', 'погода в реальном времени')}
             </span>
           </div>
@@ -101,7 +101,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
             <button
               type="button"
               onClick={() => onOpenRadar()}
-              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] border border-[#FF6B6B]/20 transition-all cursor-pointer touch-target-min"
+              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold bg-[#FF6B6B]/10 hover:bg-[#FF6B6B]/20 text-[#FF6B6B] border border-[#FF6B6B]/20 transition-all cursor-pointer touch-target-min"
               title={l('Hava Durumu Radar Haritasını Aç', 'Open Weather Radar Map', 'Wetter-Radar öffnen')}
             >
               <Globe className="w-3.5 h-3.5 shrink-0" />
@@ -188,7 +188,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
                     <div className="text-xs font-bold text-slate-900 dark:text-white break-words group-hover:text-[#FF6B6B] transition-colors">
                       {displayName}
                     </div>
-                    <div className="text-[11px] text-slate-600 dark:text-slate-400 flex flex-wrap items-center gap-1.5 leading-[1.6]">
+                    <div className="text-xs text-slate-600 dark:text-slate-400 flex flex-wrap items-center gap-1.5 leading-[1.6]">
                       <span>{countryName}</span>
                       <span>·</span>
                       <span className="text-[#1E6F66] dark:text-[#52B2A7] font-medium">{conditionText}</span>
@@ -197,7 +197,7 @@ export const WeatherWidget: React.FC<Props> = ({ className = '', onOpenRadar }) 
                 </div>
 
                 <div className="flex items-center gap-2 flex-shrink-0">
-                  <div className="flex items-center gap-2 text-[10px] text-slate-600 dark:text-slate-400 font-medium">
+                  <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 font-medium">
                     <span className="flex items-center gap-0.5" title="Nem">
                       <Droplets className="w-2.5 h-2.5" />
                       {item.humidity}%

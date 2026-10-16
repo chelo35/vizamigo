@@ -41,7 +41,7 @@ export const HomeHero: React.FC<Props> = ({
       <div className="pointer-events-none absolute -bottom-16 left-1/3 w-72 h-40 rounded-full bg-emerald-300/15 blur-2xl" aria-hidden="true" />
 
       <div className="relative z-10 max-w-2xl">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[11px] font-extrabold tracking-wide text-teal-50 mb-2.5">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-xs font-extrabold tracking-wide text-teal-50 mb-2.5">
           <span>🌴</span>
           <span>VİZAMİGO AKILLI SEYAHAT & VİZE PANOSU · 2026</span>
         </div>
@@ -89,7 +89,7 @@ export const HomeHero: React.FC<Props> = ({
           <button
             type="button"
             onClick={() => onModeChange('where')}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-extrabold bg-emerald-500/15 text-emerald-900 dark:text-emerald-300 hover:bg-emerald-500/25 transition-all whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-emerald-500/15 text-emerald-900 dark:text-emerald-300 hover:bg-emerald-500/25 transition-all whitespace-nowrap cursor-pointer"
           >
             <Compass className="w-3.5 h-3.5" />
             <span>Vizesiz Keşfet</span>
@@ -97,7 +97,7 @@ export const HomeHero: React.FC<Props> = ({
           <button
             type="button"
             onClick={() => onQuickNavigate('plan')}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-extrabold bg-sky-500/15 text-sky-900 dark:text-sky-300 hover:bg-sky-500/25 transition-all whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-sky-500/15 text-sky-900 dark:text-sky-300 hover:bg-sky-500/25 transition-all whitespace-nowrap cursor-pointer"
           >
             <Route className="w-3.5 h-3.5" />
             <span>Rota Planla</span>
@@ -105,7 +105,7 @@ export const HomeHero: React.FC<Props> = ({
           <button
             type="button"
             onClick={() => onQuickNavigate('track')}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-extrabold bg-teal-500/15 text-[#0F766E] dark:text-[#2DD4BF] hover:bg-teal-500/25 transition-all whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-teal-500/15 text-[#0F766E] dark:text-[#2DD4BF] hover:bg-teal-500/25 transition-all whitespace-nowrap cursor-pointer"
           >
             <Calendar className="w-3.5 h-3.5" />
             <span>Gün Sayacı</span>
@@ -113,7 +113,7 @@ export const HomeHero: React.FC<Props> = ({
           <button
             type="button"
             onClick={() => onQuickNavigate('consular')}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-extrabold bg-rose-500/15 text-rose-900 dark:text-rose-300 hover:bg-rose-500/25 transition-all whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-rose-500/15 text-rose-900 dark:text-rose-300 hover:bg-rose-500/25 transition-all whitespace-nowrap cursor-pointer"
           >
             <ShieldAlert className="w-3.5 h-3.5" />
             <span>Acil Yardım</span>

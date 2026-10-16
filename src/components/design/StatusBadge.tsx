@@ -19,7 +19,7 @@ interface Props {
 
 /** Colour-coded visa status pill used in country rows and the country hero. */
 export const StatusBadge: React.FC<Props> = ({ status, label, className = '' }) => (
-  <span className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold ${STYLES[status]} ${className}`}>
+  <span className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold ${STYLES[status]} ${className}`}>
     {label}
   </span>
 );

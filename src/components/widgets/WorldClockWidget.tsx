@@ -79,7 +79,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
             <h2 className="text-sm font-bold tracking-[-0.02em] text-slate-900 dark:text-white leading-tight">
               {l('Canlı Dünya Saatleri', 'Live World Clock', 'Weltzeituhr', 'Reloj Mundial', 'Мировое время')}
             </h2>
-            <span className="text-[11px] text-slate-500 dark:text-slate-400 leading-[1.6]">
+            <span className="text-xs text-slate-500 dark:text-slate-400 leading-[1.6]">
               {ALL_WORLD_HUBS.length}+ {l('turistik şehir, tatil bölgesi & başkent', 'tourist cities, resorts & capitals', 'Städte & Urlaubsorte', 'ciudades turísticas y capitales', 'городов и курортов')}
             </span>
           </div>
@@ -90,7 +90,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
             <button
               type="button"
               onClick={() => onOpenRadar()}
-              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[11px] font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer touch-target-min"
+              className="min-h-[48px] min-w-[48px] flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold bg-[#2A8C82]/10 hover:bg-[#2A8C82]/20 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 transition-all cursor-pointer touch-target-min"
               title={l('Dünya Haritasında Aç', 'Open in World Map', 'In Weltkarte öffnen')}
             >
               <Globe className="w-3.5 h-3.5 shrink-0" />
@@ -184,7 +184,7 @@ export const WorldClockWidget: React.FC<Props> = ({ className = '', onOpenRadar 
                     <div className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-[#2A8C82] dark:group-hover:text-[#52B2A7] transition-colors">
                       {displayName}
                     </div>
-                    <div className="text-[11px] text-slate-400 truncate leading-[1.6]">
+                    <div className="text-xs text-slate-400 truncate leading-[1.6]">
                       {countryName}
                     </div>
                   </div>

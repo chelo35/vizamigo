@@ -263,7 +263,7 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
           </span>
           <span>{headingText}</span>
         </h2>
-        <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
+        <span className="text-xs uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
           2026 Official Rules
         </span>
       </div>
@@ -284,19 +284,19 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
           itemScope
           itemType="https://schema.org/PropertyValue"
         >
-          <dt className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+          <dt className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
             <span itemProp="name">{takeawayLabels.status}</span>
           </dt>
           <dd className="mt-1.5 m-0">
             <span
-              className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-extrabold border shadow-2xs ${badgeClass}`}
+              className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-extrabold border shadow-2xs ${badgeClass}`}
               itemProp="value"
             >
               {badgeLabel}
             </span>
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
+          <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 break-words">
             {statusSubLabel}
           </div>
         </div>
@@ -308,7 +308,7 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
           itemScope
           itemType="https://schema.org/PropertyValue"
         >
-          <dt className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+          <dt className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
             <Calendar className="w-3.5 h-3.5 text-sky-500 shrink-0" />
             <span itemProp="name">{takeawayLabels.stay}</span>
           </dt>
@@ -318,7 +318,7 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
           >
             {stayDuration}
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
+          <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 break-words">
             {staySubLabel}
           </div>
         </div>
@@ -330,17 +330,17 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
           itemScope
           itemType="https://schema.org/PropertyValue"
         >
-          <dt className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+          <dt className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
             <FileCheck2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
             <span itemProp="name">{takeawayLabels.passport}</span>
           </dt>
           <dd
-            className="mt-1.5 m-0 font-bold text-xs text-slate-900 dark:text-white break-words"
+            className="mt-1.5 m-0 font-bold text-xs sm:text-sm text-slate-900 dark:text-white break-words"
             itemProp="value"
           >
             {passportDetail}
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
+          <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 break-words">
             {passportSubLabel}
           </div>
         </div>
@@ -352,17 +352,17 @@ export const CountryRichSnippetSummary: React.FC<CountryRichSnippetSummaryProps>
           itemScope
           itemType="https://schema.org/PropertyValue"
         >
-          <dt className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+          <dt className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
             <DollarSign className="w-3.5 h-3.5 text-teal-500 shrink-0" />
             <span itemProp="name">{takeawayLabels.fee}</span>
           </dt>
           <dd
-            className="mt-1.5 m-0 font-bold text-xs text-slate-900 dark:text-white break-words"
+            className="mt-1.5 m-0 font-bold text-xs sm:text-sm text-slate-900 dark:text-white break-words"
             itemProp="value"
           >
             {feeDetail}
           </dd>
-          <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 break-words">
+          <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 break-words">
             {feeSubLabel}
           </div>
         </div>

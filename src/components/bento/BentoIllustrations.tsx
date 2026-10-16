@@ -28,17 +28,52 @@ export const WorldRadar3DIllustration: React.FC = () => (
         </linearGradient>
       </defs>
 
-      {/* Stylized 3D World Map Continents */}
-      <g fill="url(#v2ContinentGrad)" stroke="#99F6E4" strokeWidth="0.8" opacity="0.92">
-        {/* North & South America */}
-        <path d="M28 24 Q55 14 74 34 T64 72 Q46 78 36 58 Z" />
-        <path d="M64 80 Q82 86 76 118 T56 134 Q48 108 64 80 Z" />
-        {/* Europe & Africa */}
-        <path d="M138 22 Q168 14 186 30 T172 54 Q148 56 138 22 Z" />
-        <path d="M144 60 Q176 58 184 92 T162 128 Q142 106 144 60 Z" />
-        {/* Asia & Australia */}
-        <path d="M190 22 Q256 10 296 42 T268 86 Q218 82 190 22 Z" />
-        <path d="M264 98 Q298 94 306 118 T274 130 Z" />
+      {/* Clean Dotted World Map Grid */}
+      <g fill="url(#v2ContinentGrad)" opacity="0.88">
+        {/* North America */}
+        <circle cx="28" cy="24" r="1.8" /><circle cx="36" cy="24" r="1.8" /><circle cx="44" cy="22" r="1.8" /><circle cx="52" cy="20" r="1.8" /><circle cx="60" cy="20" r="1.8" /><circle cx="68" cy="22" r="1.8" /><circle cx="76" cy="26" r="1.8" /><circle cx="84" cy="26" r="1.8" />
+        <circle cx="24" cy="30" r="1.8" /><circle cx="32" cy="30" r="1.8" /><circle cx="40" cy="28" r="1.8" /><circle cx="48" cy="28" r="1.8" /><circle cx="56" cy="28" r="1.8" /><circle cx="64" cy="28" r="1.8" /><circle cx="72" cy="30" r="1.8" /><circle cx="80" cy="32" r="1.8" /><circle cx="88" cy="32" r="1.8" />
+        <circle cx="28" cy="38" r="1.8" /><circle cx="36" cy="36" r="1.8" /><circle cx="44" cy="36" r="1.8" /><circle cx="52" cy="36" r="1.8" /><circle cx="60" cy="36" r="1.8" /><circle cx="68" cy="38" r="1.8" /><circle cx="76" cy="38" r="1.8" /><circle cx="84" cy="40" r="1.8" />
+        <circle cx="36" cy="44" r="1.8" /><circle cx="44" cy="44" r="1.8" /><circle cx="52" cy="44" r="1.8" /><circle cx="60" cy="44" r="1.8" /><circle cx="68" cy="46" r="1.8" /><circle cx="74" cy="46" r="1.8" /><circle cx="80" cy="48" r="1.8" />
+        <circle cx="42" cy="52" r="1.8" /><circle cx="50" cy="52" r="1.8" /><circle cx="58" cy="52" r="1.8" /><circle cx="66" cy="54" r="1.8" /><circle cx="72" cy="56" r="1.8" />
+        <circle cx="48" cy="60" r="1.8" /><circle cx="56" cy="60" r="1.8" /><circle cx="62" cy="62" r="1.8" /><circle cx="58" cy="68" r="1.8" /><circle cx="64" cy="70" r="1.8" />
+        {/* South America */}
+        <circle cx="62" cy="76" r="1.8" /><circle cx="68" cy="76" r="1.8" /><circle cx="74" cy="76" r="1.8" /><circle cx="80" cy="78" r="1.8" />
+        <circle cx="60" cy="84" r="1.8" /><circle cx="66" cy="84" r="1.8" /><circle cx="72" cy="84" r="1.8" /><circle cx="78" cy="84" r="1.8" /><circle cx="84" cy="86" r="1.8" />
+        <circle cx="62" cy="92" r="1.8" /><circle cx="68" cy="92" r="1.8" /><circle cx="74" cy="92" r="1.8" /><circle cx="80" cy="92" r="1.8" /><circle cx="86" cy="92" r="1.8" />
+        <circle cx="64" cy="100" r="1.8" /><circle cx="70" cy="100" r="1.8" /><circle cx="76" cy="100" r="1.8" /><circle cx="82" cy="100" r="1.8" />
+        <circle cx="66" cy="108" r="1.8" /><circle cx="72" cy="108" r="1.8" /><circle cx="78" cy="106" r="1.8" />
+        <circle cx="68" cy="116" r="1.8" /><circle cx="74" cy="116" r="1.8" />
+        <circle cx="70" cy="124" r="1.8" /><circle cx="74" cy="124" r="1.8" /><circle cx="72" cy="132" r="1.8" />
+        {/* Europe */}
+        <circle cx="144" cy="22" r="1.8" /><circle cx="152" cy="22" r="1.8" /><circle cx="160" cy="20" r="1.8" /><circle cx="168" cy="20" r="1.8" /><circle cx="176" cy="22" r="1.8" /><circle cx="184" cy="22" r="1.8" />
+        <circle cx="140" cy="28" r="1.8" /><circle cx="148" cy="28" r="1.8" /><circle cx="156" cy="28" r="1.8" /><circle cx="164" cy="26" r="1.8" /><circle cx="172" cy="28" r="1.8" /><circle cx="180" cy="28" r="1.8" /><circle cx="188" cy="30" r="1.8" />
+        <circle cx="142" cy="36" r="1.8" /><circle cx="150" cy="34" r="1.8" /><circle cx="158" cy="34" r="1.8" /><circle cx="166" cy="34" r="1.8" /><circle cx="174" cy="36" r="1.8" /><circle cx="182" cy="36" r="1.8" />
+        <circle cx="146" cy="42" r="1.8" /><circle cx="154" cy="42" r="1.8" /><circle cx="162" cy="42" r="1.8" /><circle cx="170" cy="42" r="1.8" /><circle cx="178" cy="44" r="1.8" />
+        <circle cx="152" cy="48" r="1.8" /><circle cx="160" cy="48" r="1.8" /><circle cx="168" cy="48" r="1.8" />
+        {/* Africa */}
+        <circle cx="146" cy="56" r="1.8" /><circle cx="154" cy="54" r="1.8" /><circle cx="162" cy="54" r="1.8" /><circle cx="170" cy="54" r="1.8" /><circle cx="178" cy="54" r="1.8" /><circle cx="184" cy="56" r="1.8" />
+        <circle cx="142" cy="62" r="1.8" /><circle cx="150" cy="62" r="1.8" /><circle cx="158" cy="62" r="1.8" /><circle cx="166" cy="62" r="1.8" /><circle cx="174" cy="62" r="1.8" /><circle cx="182" cy="62" r="1.8" /><circle cx="190" cy="64" r="1.8" />
+        <circle cx="144" cy="70" r="1.8" /><circle cx="152" cy="70" r="1.8" /><circle cx="160" cy="70" r="1.8" /><circle cx="168" cy="70" r="1.8" /><circle cx="176" cy="70" r="1.8" /><circle cx="184" cy="70" r="1.8" /><circle cx="192" cy="72" r="1.8" />
+        <circle cx="148" cy="78" r="1.8" /><circle cx="156" cy="78" r="1.8" /><circle cx="164" cy="78" r="1.8" /><circle cx="172" cy="78" r="1.8" /><circle cx="180" cy="78" r="1.8" /><circle cx="186" cy="80" r="1.8" />
+        <circle cx="154" cy="86" r="1.8" /><circle cx="162" cy="86" r="1.8" /><circle cx="170" cy="86" r="1.8" /><circle cx="178" cy="86" r="1.8" /><circle cx="184" cy="88" r="1.8" />
+        <circle cx="158" cy="94" r="1.8" /><circle cx="166" cy="94" r="1.8" /><circle cx="174" cy="94" r="1.8" /><circle cx="180" cy="96" r="1.8" />
+        <circle cx="160" cy="102" r="1.8" /><circle cx="168" cy="102" r="1.8" /><circle cx="174" cy="102" r="1.8" /><circle cx="164" cy="110" r="1.8" /><circle cx="170" cy="110" r="1.8" /><circle cx="166" cy="118" r="1.8" />
+        {/* Asia */}
+        <circle cx="194" cy="20" r="1.8" /><circle cx="202" cy="20" r="1.8" /><circle cx="210" cy="18" r="1.8" /><circle cx="218" cy="18" r="1.8" /><circle cx="226" cy="18" r="1.8" /><circle cx="234" cy="18" r="1.8" /><circle cx="242" cy="20" r="1.8" /><circle cx="250" cy="20" r="1.8" /><circle cx="258" cy="22" r="1.8" /><circle cx="266" cy="24" r="1.8" /><circle cx="274" cy="26" r="1.8" /><circle cx="282" cy="28" r="1.8" />
+        <circle cx="196" cy="28" r="1.8" /><circle cx="204" cy="26" r="1.8" /><circle cx="212" cy="26" r="1.8" /><circle cx="220" cy="26" r="1.8" /><circle cx="228" cy="26" r="1.8" /><circle cx="236" cy="26" r="1.8" /><circle cx="244" cy="26" r="1.8" /><circle cx="252" cy="28" r="1.8" /><circle cx="260" cy="30" r="1.8" /><circle cx="268" cy="32" r="1.8" /><circle cx="276" cy="34" r="1.8" /><circle cx="284" cy="36" r="1.8" /><circle cx="292" cy="36" r="1.8" />
+        <circle cx="194" cy="36" r="1.8" /><circle cx="202" cy="34" r="1.8" /><circle cx="210" cy="34" r="1.8" /><circle cx="218" cy="34" r="1.8" /><circle cx="226" cy="34" r="1.8" /><circle cx="234" cy="34" r="1.8" /><circle cx="242" cy="34" r="1.8" /><circle cx="250" cy="36" r="1.8" /><circle cx="258" cy="38" r="1.8" /><circle cx="266" cy="40" r="1.8" /><circle cx="274" cy="42" r="1.8" /><circle cx="282" cy="44" r="1.8" />
+        <circle cx="198" cy="44" r="1.8" /><circle cx="206" cy="42" r="1.8" /><circle cx="214" cy="42" r="1.8" /><circle cx="222" cy="42" r="1.8" /><circle cx="230" cy="42" r="1.8" /><circle cx="238" cy="42" r="1.8" /><circle cx="246" cy="44" r="1.8" /><circle cx="254" cy="46" r="1.8" /><circle cx="262" cy="48" r="1.8" /><circle cx="270" cy="50" r="1.8" /><circle cx="278" cy="50" r="1.8" />
+        <circle cx="204" cy="52" r="1.8" /><circle cx="212" cy="50" r="1.8" /><circle cx="220" cy="50" r="1.8" /><circle cx="228" cy="50" r="1.8" /><circle cx="236" cy="50" r="1.8" /><circle cx="244" cy="52" r="1.8" /><circle cx="252" cy="54" r="1.8" /><circle cx="260" cy="56" r="1.8" /><circle cx="268" cy="58" r="1.8" />
+        <circle cx="214" cy="58" r="1.8" /><circle cx="222" cy="58" r="1.8" /><circle cx="230" cy="58" r="1.8" /><circle cx="238" cy="60" r="1.8" /><circle cx="246" cy="62" r="1.8" /><circle cx="254" cy="64" r="1.8" /><circle cx="262" cy="64" r="1.8" />
+        <circle cx="224" cy="66" r="1.8" /><circle cx="232" cy="66" r="1.8" /><circle cx="240" cy="68" r="1.8" /><circle cx="256" cy="72" r="1.8" /><circle cx="264" cy="72" r="1.8" />
+        <circle cx="244" cy="78" r="1.8" /><circle cx="252" cy="80" r="1.8" /><circle cx="260" cy="82" r="1.8" /><circle cx="248" cy="88" r="1.8" /><circle cx="256" cy="90" r="1.8" /><circle cx="266" cy="92" r="1.8" />
+        {/* Australia & Oceania */}
+        <circle cx="268" cy="102" r="1.8" /><circle cx="276" cy="100" r="1.8" /><circle cx="284" cy="100" r="1.8" /><circle cx="292" cy="102" r="1.8" />
+        <circle cx="264" cy="110" r="1.8" /><circle cx="272" cy="108" r="1.8" /><circle cx="280" cy="108" r="1.8" /><circle cx="288" cy="108" r="1.8" /><circle cx="296" cy="110" r="1.8" />
+        <circle cx="268" cy="118" r="1.8" /><circle cx="276" cy="116" r="1.8" /><circle cx="284" cy="116" r="1.8" /><circle cx="292" cy="118" r="1.8" />
+        <circle cx="274" cy="124" r="1.8" /><circle cx="282" cy="124" r="1.8" /><circle cx="290" cy="126" r="1.8" />
+        <circle cx="302" cy="128" r="1.8" /><circle cx="308" cy="134" r="1.8" />
       </g>
 
       {/* Glowing Multi-Color Flight Arcs */}

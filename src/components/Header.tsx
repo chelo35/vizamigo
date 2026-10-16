@@ -202,7 +202,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={onOpenPassportSelector}
-              className="xl:hidden flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1.5 min-h-[34px] sm:min-h-[36px] rounded-full bg-[#14B8A6]/20 border border-[#2DD4BF]/50 text-[11px] sm:text-xs font-black text-white hover:bg-[#14B8A6]/30 transition-all cursor-pointer"
+              className="xl:hidden flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1.5 min-h-[34px] sm:min-h-[36px] rounded-full bg-[#14B8A6]/20 border border-[#2DD4BF]/50 text-xs sm:text-sm font-black text-white hover:bg-[#14B8A6]/30 transition-all cursor-pointer"
               title={l('Aktif Pasaportu Değiştir', 'Change Active Passport')}
             >
               <span className="text-sm sm:text-base leading-none">{getFlag(currentPassport)}</span>
@@ -260,7 +260,7 @@ export const Header: React.FC<HeaderProps> = ({
               title={t.themeToggle}
             >
               <span className={isDark ? 'opacity-40' : 'opacity-100'}>☀️</span>
-              <span className="text-white/30 text-[10px]">/</span>
+              <span className="text-white/30 text-xs">/</span>
               <span className={isDark ? 'opacity-100' : 'opacity-40'}>🌙</span>
             </button>
 
@@ -284,8 +284,8 @@ export const Header: React.FC<HeaderProps> = ({
                   {userMenuOpen && (
                     <div className="absolute right-0 mt-2 w-52 bg-[#042637] dark:bg-[#021824] border-2 border-[#2DD4BF] rounded-2xl shadow-2xl p-2 z-50 space-y-1">
                       <div className="px-3 py-1.5 border-b border-white/15">
-                        <p className="text-xs font-extrabold text-white truncate">{user.name}</p>
-                        <p className="text-[11px] text-teal-200 truncate">{user.email}</p>
+                        <p className="text-xs sm:text-sm font-extrabold text-white truncate">{user.name}</p>
+                        <p className="text-xs text-teal-200 truncate">{user.email}</p>
                       </div>
                       <button
                         type="button"

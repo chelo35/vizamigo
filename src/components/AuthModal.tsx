@@ -175,7 +175,7 @@ export const AuthModal: React.FC = () => {
           {/* Divider */}
           <div className="relative flex items-center justify-center">
             <div className="border-t border-slate-200 dark:border-slate-800 w-full" />
-            <span className="bg-white dark:bg-slate-900 px-3 text-[11px] text-slate-400 uppercase font-medium">
+            <span className="bg-white dark:bg-slate-900 px-3 text-xs text-slate-400 uppercase font-medium">
               {t.orContinueWithEmail}
             </span>
           </div>
@@ -244,7 +244,7 @@ export const AuthModal: React.FC = () => {
                       setEmail('celebisahin1981@gmail.com');
                       setPassword('gezgin123');
                     }}
-                    className="text-[11px] text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
+                    className="text-xs text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
                   >
                     {l('Örnek bilgileri doldur', 'Quick demo fill', 'Demo-Daten ausfüllen')}
                   </button>
