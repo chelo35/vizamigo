@@ -171,6 +171,7 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
 
   // SVG Pan/Zoom Refs
   const containerRef = useRef<HTMLDivElement>(null);
+  const containerWidthRef = useRef<number>(1000);
   const dragStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const dragOriginRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const hasMovedRef = useRef<boolean>(false);
@@ -478,6 +479,9 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
     hasMovedRef.current = false;
     dragOriginRef.current = { x: e.clientX, y: e.clientY };
     dragStartRef.current = { x: e.clientX, y: e.clientY };
+    if (containerRef.current) {
+      containerWidthRef.current = containerRef.current.clientWidth || 1000;
+    }
   };
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -488,8 +492,8 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
     }
     const dx = e.clientX - dragStartRef.current.x;
     const dy = e.clientY - dragStartRef.current.y;
-    const rect = containerRef.current?.getBoundingClientRect();
-    const scaleRatio = rect && rect.width > 0 ? 1000 / rect.width : 1;
+    const width = containerWidthRef.current || 1000;
+    const scaleRatio = width > 0 ? 1000 / width : 1;
 
     setPanOffset(prev => {
       const maxPanX = Math.max(400, 600 * (zoomLevel - 0.3));
@@ -512,6 +516,9 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
       hasMovedRef.current = false;
       dragOriginRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
       dragStartRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      if (containerRef.current) {
+        containerWidthRef.current = containerRef.current.clientWidth || 1000;
+      }
     }
   };
 
@@ -523,8 +530,8 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
     }
     const dx = e.touches[0].clientX - dragStartRef.current.x;
     const dy = e.touches[0].clientY - dragStartRef.current.y;
-    const rect = containerRef.current?.getBoundingClientRect();
-    const scaleRatio = rect && rect.width > 0 ? 1000 / rect.width : 1;
+    const width = containerWidthRef.current || 1000;
+    const scaleRatio = width > 0 ? 1000 / width : 1;
 
     setPanOffset(prev => {
       const maxPanX = Math.max(400, 600 * (zoomLevel - 0.3));

@@ -199,64 +199,6 @@ export async function refreshCurrencyRates(force = false): Promise<boolean> {
       }
     } catch {}
 
-    // 2. Direct upstream fallback: open.er-api.com
-    try {
-      const res = await fetch('https://open.er-api.com/v6/latest/USD');
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.rates && typeof data.rates === 'object') {
-          Object.entries(data.rates as Record<string, number>).forEach(([code, val]) => {
-            if (typeof val === 'number' && val > 0) {
-              USD_RATES[code.toUpperCase()] = val;
-            }
-          });
-          isLiveLoaded = true;
-          lastUpdatedTimestamp = Date.now();
-          try {
-            localStorage.setItem(
-              STORAGE_KEY,
-              JSON.stringify({
-                rates: USD_RATES,
-                updatedAt: lastUpdatedTimestamp,
-                providerUpdatedAt: data.time_last_update_utc
-              } satisfies StoredFxPayload)
-            );
-          } catch {}
-          notifyListeners();
-          return true;
-        }
-      }
-    } catch {}
-
-    // Fallback: Frankfurter ECB API
-    try {
-      const res2 = await fetch('https://api.frankfurter.app/latest?from=USD');
-      if (res2.ok) {
-        const data2 = await res2.json();
-        if (data2 && data2.rates && typeof data2.rates === 'object') {
-          USD_RATES.USD = 1.0;
-          Object.entries(data2.rates as Record<string, number>).forEach(([code, val]) => {
-            if (typeof val === 'number' && val > 0) {
-              USD_RATES[code.toUpperCase()] = val;
-            }
-          });
-          isLiveLoaded = true;
-          lastUpdatedTimestamp = Date.now();
-          try {
-            localStorage.setItem(
-              STORAGE_KEY,
-              JSON.stringify({
-                rates: USD_RATES,
-                updatedAt: lastUpdatedTimestamp
-              } satisfies StoredFxPayload)
-            );
-          } catch {}
-          notifyListeners();
-          return true;
-        }
-      }
-    } catch {}
-
     return false;
   })().finally(() => {
     inflightPromise = null;

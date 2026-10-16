@@ -1,8 +1,7 @@
 import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
 
 export const GOOGLE_MAPS_API_KEY =
-  (import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string) ||
-  'AIzaSyDHBETMPsuLR6sqrrZ1a888LWSHXKNz6kg';
+  (import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string) || '';
 
 let loadPromise: Promise<void> | null = null;
 let optionsSet = false;

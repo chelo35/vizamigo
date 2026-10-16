@@ -15,12 +15,11 @@ export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-146985
  */
 export function getOptimizedImageUrl(
   rawUrl: string,
-  options?: { width?: number; format?: 'webp' | 'avif'; quality?: number }
+  options?: { width?: number; quality?: number }
 ): string {
   if (!rawUrl) return DEFAULT_TRAVEL_FALLBACK;
-  const width = options?.width || 320;
-  const format = options?.format || 'webp';
-  const quality = options?.quality || 58;
+  const width = options?.width || 360;
+  const quality = options?.quality || 50;
 
   if (rawUrl.includes('images.unsplash.com')) {
     try {
@@ -28,19 +27,19 @@ export function getOptimizedImageUrl(
       url.searchParams.set('auto', 'format');
       url.searchParams.set('fit', 'crop');
       url.searchParams.set('w', width.toString());
-      url.searchParams.set('fm', format);
+      url.searchParams.delete('fm');
       url.searchParams.set('q', quality.toString());
       return url.toString();
     } catch {
-      return rawUrl.replace(/(\?|&)fm=[^&]*/g, '').replace(/(\?|&)q=[^&]*/g, '') + `&fm=${format}&q=${quality}`;
+      return rawUrl.replace(/(\?|&)fm=[^&]*/g, '').replace(/(\?|&)q=[^&]*/g, '') + `&q=${quality}`;
     }
   }
   return rawUrl;
 }
 
-export function getOptimizedSrcSet(rawUrl: string, quality = 58): string {
+export function getOptimizedSrcSet(rawUrl: string, quality = 50): string {
   if (!rawUrl || !rawUrl.includes('images.unsplash.com')) return '';
-  return `${getOptimizedImageUrl(rawUrl, { width: 200, quality })} 200w, ${getOptimizedImageUrl(rawUrl, { width: 320, quality })} 320w, ${getOptimizedImageUrl(rawUrl, { width: 440, quality })} 440w`;
+  return `${getOptimizedImageUrl(rawUrl, { width: 240, quality })} 240w, ${getOptimizedImageUrl(rawUrl, { width: 360, quality })} 360w, ${getOptimizedImageUrl(rawUrl, { width: 440, quality })} 440w`;
 }
 
 export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = {

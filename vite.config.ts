@@ -68,6 +68,18 @@ function vizamigoSeoEnginePlugin(): Plugin {
   };
 }
 
+function vizamigoNonBlockingCssPlugin(): Plugin {
+  return {
+    name: 'vizamigo-non-blocking-css',
+    transformIndexHtml(html) {
+      return html.replace(
+        /<link\s+rel="stylesheet"\s+crossorigin\s+href="(\/assets\/index-[^"]+\.css)">/g,
+        '<link rel="preload" href="$1" as="style" onload="this.onload=null;this.rel=\'stylesheet\'"><noscript><link rel="stylesheet" href="$1"></noscript>'
+      );
+    }
+  };
+}
+
 export default defineConfig(() => {
   return {
     base: '/',
@@ -75,6 +87,7 @@ export default defineConfig(() => {
       react(),
       tailwindcss(),
       vizamigoSeoEnginePlugin(),
+      vizamigoNonBlockingCssPlugin(),
       visualizer({
         filename: 'dist/stats.html',
         open: false,
@@ -92,23 +105,32 @@ export default defineConfig(() => {
       rollupOptions: {
         output: {
           manualChunks(id) {
-            if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/scheduler/')) {
+            if (/[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/.test(id)) {
               return 'vendor-react';
             }
             if (id.includes('node_modules/lucide-react')) {
               return 'vendor-icons';
             }
-            if (id.includes('/data/passportData.ts')) {
+            if (id.includes('passportData.ts')) {
               return 'data-passports';
             }
-            if (id.includes('/data/countryGeography.ts') || id.includes('/data/geoData.ts')) {
+            if (id.includes('countryGeography.ts') || id.includes('geoData.ts')) {
               return 'data-geography';
             }
-            if (id.includes('/data/countryInsights.ts') || id.includes('/data/countryTravelIntelligence.ts')) {
+            if (id.includes('countryInsights.ts') || id.includes('countryTravelIntelligence.ts')) {
               return 'data-insights';
             }
-            if (id.includes('/data/countryVisuals.ts')) {
+            if (id.includes('countryVisuals.ts')) {
               return 'data-visuals';
+            }
+            if (id.includes('rideAndDeliveryApps.ts') || id.includes('travelConciergeEngine.ts')) {
+              return 'data-nomad-apps';
+            }
+            if (id.includes('BentoSubWidgetModal.tsx')) {
+              return 'bento-subwidgets-modal';
+            }
+            if (id.includes('BentoSecondaryWidgets.tsx')) {
+              return 'bento-secondary-widgets';
             }
           }
         }

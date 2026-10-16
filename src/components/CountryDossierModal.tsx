@@ -164,10 +164,12 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const scrollToSection = (tab: DossierTab, targetId: string) => {
     setActiveTab(tab);
     setTimeout(() => {
-      const el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      requestAnimationFrame(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
     }, 100);
   };
 

@@ -53,8 +53,14 @@ import { getPassportItems } from '../utils/calculator';
 import { loadStoredChecklists, saveStoredChecklists } from '../utils/storage';
 import { useI18n } from '../data/i18n';
 import { getCountryVisual, getOptimizedSrcSet } from '../data/countryVisuals';
-import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
-import { TravelConciergeGrid } from './TravelConciergeGrid';
+import { getFastCountryMetrics } from '../data/initialCountryIndex';
+
+const CountryRichSnippetSummary = lazy(() =>
+  import('./CountryRichSnippetSummary').then(m => ({ default: m.CountryRichSnippetSummary }))
+);
+const TravelConciergeGrid = lazy(() =>
+  import('./TravelConciergeGrid').then(m => ({ default: m.TravelConciergeGrid }))
+);
 import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/schemaGenerator';
 
 import { BentoDashboardGrid } from './bento/BentoDashboardGrid';
@@ -185,13 +191,26 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
-  const [visibleCount, setVisibleCount] = useState<number>(10);
+  const [visibleCount, setVisibleCount] = useState<number>(3);
   const [showDirectory, setShowDirectory] = useState<boolean>(true);
 
   // Reset pagination when search, filter or passport changes
   useEffect(() => {
-    setVisibleCount(10);
+    setVisibleCount(12);
   }, [search, filter, currentPassport]);
+
+  // Expand visible country cards during idle after initial paint
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      const handle = (window as any).requestIdleCallback(() => {
+        setVisibleCount(12);
+      });
+      return () => (window as any).cancelIdleCallback(handle);
+    } else {
+      const timer = setTimeout(() => setVisibleCount(12), 200);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   // Defer live clock, weather & currency widget hydration until after initial HTML/CSS paint (<0.5s FCP)
   useEffect(() => {
@@ -615,6 +634,10 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div
                 key={item.c}
                 className="glass-card country-card rounded-[24px] touch-pan-y transition-all duration-300 group"
+                style={{
+                  contentVisibility: isAboveFold ? 'visible' : 'auto',
+                  containIntrinsicSize: 'auto 260px'
+                }}
               >
                 {/* Modern Symmetrical Country Card Layout (p-6 to p-8 generous breathing space) */}
                 <div className="w-full p-6 sm:p-7 lg:p-8 transition-colors">
@@ -877,19 +900,23 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     </header>
 
                     {/* Mobile Rich Snippet TL;DR Box for Googlebot Featured Snippet Crawling */}
-                    <CountryRichSnippetSummary
-                      countryCode={item.c}
-                      currentPassport={currentPassport}
-                      language={language}
-                      variant="card"
-                    />
+                    <Suspense fallback={<div className="h-24 rounded-2xl bg-slate-100 dark:bg-white/5 animate-pulse" />}>
+                      <CountryRichSnippetSummary
+                        countryCode={item.c}
+                        currentPassport={currentPassport}
+                        language={language}
+                        variant="card"
+                      />
+                    </Suspense>
 
                     {/* Full 4-Stage Chronological Hyper-Localized Travel Concierge Bento Grid */}
-                    <TravelConciergeGrid
-                      countryCode={item.c}
-                      originPassport={currentPassport}
-                      variant="bento-full"
-                    />
+                    <Suspense fallback={<div className="h-48 rounded-2xl bg-slate-100 dark:bg-white/5 animate-pulse" />}>
+                      <TravelConciergeGrid
+                        countryCode={item.c}
+                        originPassport={currentPassport}
+                        variant="bento-full"
+                      />
+                    </Suspense>
 
                     {/* Widescreen Scenic Landmark Hero Banner */}
                     <div className="relative h-44 sm:h-56 aspect-[16/9] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-white/[0.08] shadow-md group/hero">

@@ -34,7 +34,7 @@ try {
 export function refreshLiveFx(force = false): Promise<void> {
   if (!force && fxUpdatedAt && Date.now() - fxUpdatedAt < FX_TTL_MS) return Promise.resolve();
   if (fxFetching) return fxFetching;
-  fxFetching = fetch('https://open.er-api.com/v6/latest/USD')
+  fxFetching = fetch('/api/fx')
     .then((r) => r.json())
     .then((data) => {
       if (data?.result === 'success' && data.rates) {
