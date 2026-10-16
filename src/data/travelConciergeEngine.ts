@@ -370,38 +370,53 @@ export function getCountryConciergePlan(
   const regionCluster = getRegionCluster(code);
 
   // ============================================================================
-  // STAGE 1: FLIGHT BOOKING (Skyscanner via Impact & WayAway via Travelpayouts)
+  // STAGE 1: FLIGHT, RAIL & FERRY BOOKING (WayAway, Aviasales, Trip.com & Omio)
   // ============================================================================
   const flightPartnersRaw: ConciergePartnerNode[] = [
     {
-      id: 'skyscanner',
-      brand: 'Skyscanner',
+      id: 'wayaway',
+      brand: 'WayAway & Aviasales',
       stage: 'flights',
-      badgeTr: 'Impact Doğrudan Uçuş',
-      badgeEn: 'Impact Flight Leader',
-      taglineTr: `${mainHub} Havalimanı En Ucuz Ay Boyu Uçuş Radarı`,
-      taglineEn: `Cheapest Month Radar to ${mainHub} (${capitalEn})`,
+      badgeTr: '%5 Nakit İadeli Uçuş',
+      badgeEn: '5% Cashback Flights',
+      taglineTr: `${mainHub} Havalimanı En Ucuz Ay Boyu Uçuş Radarı & Cashback`,
+      taglineEn: `Cheapest Month Radar & Cashback to ${mainHub} (${capitalEn})`,
       ctaTr: `${countryNameTr} Uçuşlarını Tara`,
       ctaEn: `Search ${countryNameEn} Flights`,
-      url: `https://www.skyscanner.com/transport/flights-to/${code.toLowerCase()}/?utm_source=vizamigo&utm_medium=impact_affiliate&utm_campaign=concierge_${code.toLowerCase()}`,
-      networkTag: 'Impact Network',
+      url: `https://wayaway.io/flights?destination=${encodeURIComponent(mainHub)}&utm_source=vizamigo&utm_medium=travelpayouts&utm_campaign=concierge_${code.toLowerCase()}`,
+      networkTag: 'Travelpayouts',
       priority: 1,
       accentTone: 'teal'
     },
     {
-      id: 'wayaway',
-      brand: 'WayAway',
+      id: 'tripcom',
+      brand: 'Trip.com (Uçuş & Hızlı Tren)',
       stage: 'flights',
-      badgeTr: 'Travelpayouts Cashback',
-      badgeEn: 'Travelpayouts Cashback',
-      taglineTr: `${mainHub} Biletlerinde %5 Nakit İade & Göçebe Rotası`,
-      taglineEn: `Up to 5% Cashback on ${mainHub} Flights`,
-      ctaTr: 'WayAway Fiyatlarını Gör',
-      ctaEn: 'Check WayAway Deals',
-      url: `https://wayaway.io/flights?destination=${encodeURIComponent(mainHub)}&utm_source=vizamigo&utm_medium=travelpayouts&utm_campaign=concierge_${code.toLowerCase()}`,
-      networkTag: 'Travelpayouts',
+      badgeTr: 'Uçak + Tren + Otel İndirimi',
+      badgeEn: 'Flight + Rail + Hotel Deals',
+      taglineTr: `${mainHub} direkt uçuşlar, hızlı tren biletleri ve VIP lounge ödülleri`,
+      taglineEn: `Direct flights, high-speed rail tickets & VIP lounge perks to ${mainHub}`,
+      ctaTr: 'Trip.com Fiyatlarını Gör',
+      ctaEn: 'Check Trip.com Deals',
+      url: `https://www.trip.com/flights/?utm_source=vizamigo&utm_campaign=concierge_${code.toLowerCase()}`,
+      networkTag: 'Trip.com Partner',
       priority: 2,
       accentTone: 'slate'
+    },
+    {
+      id: 'omio_ferry',
+      brand: 'Omio & Ferryhopper (Tren/Feribot)',
+      stage: 'flights',
+      badgeTr: 'Tren, Feribot & Otobüs',
+      badgeEn: 'Rail, Ferry & Coach',
+      taglineTr: `${countryNameTr} içi ve komşu ülkelerden hızlı tren, ada feribotu ve otobüs biletleri`,
+      taglineEn: `High-speed trains, island ferries & intercity buses across ${countryNameEn}`,
+      ctaTr: 'Tren & Feribot Biletleri',
+      ctaEn: 'Search Rail & Ferries',
+      url: `https://www.omio.com/?utm_source=vizamigo`,
+      networkTag: 'Omio Rail & Ferry',
+      priority: 3,
+      accentTone: 'coral'
     }
   ];
 

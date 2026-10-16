@@ -198,23 +198,23 @@ function AppContent() {
         is404={route.is404}
       />
 
-      {/* Permanent Fixed Fullscreen V2 Tropical Turquoise & Emerald Lagoon Background */}
-      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-br from-[#064E3B] via-[#0D9488] to-[#0284C7] dark:from-[#031B24] dark:via-[#062F3C] dark:to-[#042430]" />
+      {/* Permanent Fixed Fullscreen Luminous Ocean Blue & Turquoise Lagoon Background */}
+      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-br from-[#0284C7] via-[#0D9488] to-[#14B8A6] dark:from-[#042132] dark:via-[#063A4D] dark:to-[#032030]" />
 
-      {/* Ambient Tropical Lagoon Glows & Subtle Palm Leaf Silhouettes */}
+      {/* Lightweight GPU-Optimized Tropical Lagoon Ambient Glows */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-32 left-1/4 w-[560px] h-[560px] bg-[#5EEAD4]/[0.18] dark:bg-teal-500/[0.10] rounded-full blur-[160px]" />
-        <div className="absolute top-1/3 -right-20 w-[480px] h-[480px] bg-[#38BDF8]/[0.18] dark:bg-sky-500/[0.10] rounded-full blur-[150px]" />
-        <div className="absolute -bottom-20 left-1/3 w-[540px] h-[540px] bg-[#34D399]/[0.16] dark:bg-emerald-500/[0.08] rounded-full blur-[150px]" />
+        <div className="absolute -top-24 left-1/4 w-[480px] h-[480px] bg-[#5EEAD4]/20 dark:bg-teal-400/10 rounded-full blur-3xl transform-gpu" />
+        <div className="absolute top-1/3 -right-16 w-[420px] h-[420px] bg-[#38BDF8]/20 dark:bg-sky-400/10 rounded-full blur-3xl transform-gpu" />
+        <div className="absolute -bottom-16 left-1/3 w-[460px] h-[460px] bg-[#2DD4BF]/15 dark:bg-emerald-400/10 rounded-full blur-3xl transform-gpu" />
         {/* Top-Left Tropical Palm Frond Silhouette */}
-        <svg viewBox="0 0 260 260" className="w-64 h-64 absolute -top-8 -left-8 text-[#022C22]/25 dark:text-black/35">
+        <svg viewBox="0 0 260 260" className="w-56 h-56 absolute -top-8 -left-8 text-black/15 dark:text-black/30 pointer-events-none">
           <path
             fill="currentColor"
             d="M0,0 L160,30 Q110,45 55,40 L195,85 Q130,90 65,75 L210,145 Q140,140 70,115 L175,205 Q115,185 55,145 L110,245 Q65,210 25,160 Z"
           />
         </svg>
         {/* Top-Right Tropical Palm Frond Silhouette */}
-        <svg viewBox="0 0 260 260" className="w-64 h-64 absolute -top-8 -right-8 text-[#022C22]/25 dark:text-black/35 -scale-x-100">
+        <svg viewBox="0 0 260 260" className="w-56 h-56 absolute -top-8 -right-8 text-black/15 dark:text-black/30 -scale-x-100 pointer-events-none">
           <path
             fill="currentColor"
             d="M0,0 L160,30 Q110,45 55,40 L195,85 Q130,90 65,75 L210,145 Q140,140 70,115 L175,205 Q115,185 55,145 L110,245 Q65,210 25,160 Z"

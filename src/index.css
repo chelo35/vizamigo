@@ -71,41 +71,41 @@
    ======================================================== */
 :root {
   --bg-canvas: #0D9488;
-  --bg-canvas-gradient: linear-gradient(135deg, #064E3B 0%, #0D9488 50%, #0284C7 100%);
-  --surface-card: rgba(204, 251, 241, 0.92);
-  --surface-card-border: rgba(94, 234, 212, 0.65);
-  --surface-card-shadow: 0 20px 44px rgba(4, 47, 46, 0.25);
-  --surface-card-hover-shadow: 0 26px 56px rgba(4, 47, 46, 0.35), 0 0 24px rgba(94, 234, 212, 0.30);
-  --surface-glass-control: rgba(204, 251, 241, 0.85);
-  --surface-glass-border: rgba(94, 234, 212, 0.55);
+  --bg-canvas-gradient: linear-gradient(135deg, #0284C7 0%, #0D9488 50%, #14B8A6 100%);
+  --surface-card: rgba(204, 251, 241, 0.94);
+  --surface-card-border: rgba(45, 212, 191, 0.65);
+  --surface-card-shadow: 0 20px 44px rgba(4, 47, 46, 0.22);
+  --surface-card-hover-shadow: 0 26px 56px rgba(4, 47, 46, 0.32), 0 0 24px rgba(45, 212, 191, 0.30);
+  --surface-glass-control: rgba(204, 251, 241, 0.88);
+  --surface-glass-border: rgba(45, 212, 191, 0.55);
   --text-primary: #042F2E;
-  --text-secondary: #064E3B;
-  --text-muted: #0F766E;
-  --accent-coral: #0EA5E9;
+  --text-secondary: #0F766E;
+  --text-muted: #115E59;
+  --accent-coral: #0284C7;
   --accent-horizon-teal: #0D9488;
   --accent-horizon-teal-soft: rgba(13, 148, 136, 0.16);
-  --accent-coral-soft: rgba(14, 165, 233, 0.16);
+  --accent-coral-soft: rgba(2, 132, 199, 0.16);
   --teal-text: #0F766E;
   --coral-text: #0369A1;
 }
 
 html.dark,
 .dark {
-  --bg-canvas: #031B24;
-  --bg-canvas-gradient: linear-gradient(135deg, #031B24 0%, #062F3C 55%, #042430 100%);
-  --surface-card: rgba(10, 48, 62, 0.88);
-  --surface-card-border: rgba(94, 234, 212, 0.38);
+  --bg-canvas: #042132;
+  --bg-canvas-gradient: linear-gradient(135deg, #042132 0%, #063A4D 55%, #032030 100%);
+  --surface-card: rgba(6, 38, 52, 0.92);
+  --surface-card-border: rgba(45, 212, 191, 0.45);
   --surface-card-shadow: 0 24px 54px rgba(0, 0, 0, 0.50);
-  --surface-card-hover-shadow: 0 30px 64px rgba(0, 0, 0, 0.68), 0 0 28px rgba(45, 212, 191, 0.24);
-  --surface-glass-control: rgba(10, 48, 62, 0.80);
-  --surface-glass-border: rgba(94, 234, 212, 0.32);
+  --surface-card-hover-shadow: 0 30px 64px rgba(0, 0, 0, 0.68), 0 0 28px rgba(45, 212, 191, 0.28);
+  --surface-glass-control: rgba(6, 38, 52, 0.85);
+  --surface-glass-border: rgba(45, 212, 191, 0.38);
   --text-primary: #F8FAFC;
   --text-secondary: #CCFBF1;
   --text-muted: #99F6E4;
   --accent-coral: #38BDF8;
   --accent-horizon-teal: #2DD4BF;
-  --accent-horizon-teal-soft: rgba(45, 212, 191, 0.18);
-  --accent-coral-soft: rgba(56, 189, 248, 0.18);
+  --accent-horizon-teal-soft: rgba(45, 212, 191, 0.20);
+  --accent-coral-soft: rgba(56, 189, 248, 0.20);
   --teal-text: #2DD4BF;
   --coral-text: #7DD3FC;
 }

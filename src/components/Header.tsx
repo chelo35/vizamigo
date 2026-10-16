@@ -101,23 +101,26 @@ export const Header: React.FC<HeaderProps> = ({
   );
 
   return (
-    <header className="sticky top-0 z-30 transition-all w-full border-b border-[#5EEAD4]/35 backdrop-blur-2xl bg-[#064E3B]/85 dark:bg-[#041D29]/90 shadow-lg">
-      <div className="w-full max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-3 sm:py-3.5 space-y-3">
+    <header className="sticky top-0 z-30 transition-all w-full border-b border-[#2DD4BF]/30 backdrop-blur-2xl bg-[#042637]/90 dark:bg-[#021824]/95 shadow-xl shadow-cyan-950/20">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3.5 space-y-2.5 sm:space-y-3">
         {/* =================================================================
-            ROW 1: Vizamigo Logo (Left) + 5 Main Pill Tabs (Center Desktop) + Passport, Language (TR ▾), Theme (☀️/🌙) (Right)
+            ROW 1: Symmetrical 3-Column Header (Desktop) & Flowing Flex (Mobile)
+            Left: Mobile Menu + Vizamigo Logo + Desktop Passport Pill
+            Center: 5 Pill Navigation
+            Right: Mobile Passport + Language + Theme + Auth
         ================================================================= */}
-        <div className="flex items-center justify-between gap-2 sm:gap-4">
-          {/* Left: Mobile Menu + Vizamigo 3D Globe Brand Logo */}
-          <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4">
+          {/* Left: Mobile Menu + Logo + Desktop Passport Pill */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0 justify-start">
             {onToggleMobileDrawer && (
               <button
                 type="button"
                 onClick={onToggleMobileDrawer}
-                className="lg:hidden p-2 min-w-[42px] min-h-[42px] rounded-full bg-white/15 border border-white/25 text-white hover:bg-white/25 flex items-center justify-center cursor-pointer transition-all"
+                className="lg:hidden p-1.5 sm:p-2 min-w-[36px] min-h-[36px] sm:min-w-[40px] sm:min-h-[40px] rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-white flex items-center justify-center cursor-pointer transition-all"
                 aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
                 title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
               >
-                <Menu className="w-5 h-5" />
+                <Menu className="w-5 h-5 text-[#5EEAD4]" />
               </button>
             )}
 
@@ -130,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({
                   window.dispatchEvent(new PopStateEvent('popstate'));
                 }
               }}
-              className="flex items-center gap-2.5 sm:gap-3 cursor-pointer text-left group"
+              className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group shrink-0"
               title={l('Vizamigo Ana Sayfa', 'Vizamigo Home')}
             >
               <picture>
@@ -138,14 +141,33 @@ export const Header: React.FC<HeaderProps> = ({
                 <img
                   src="/logo.png"
                   alt="Vizamigo"
-                  width="44"
-                  height="44"
-                  className="w-9 h-9 sm:w-11 sm:h-11 object-contain rounded-full shadow-lg shadow-teal-400/30 border-2 border-[#5EEAD4]/70 group-hover:scale-105 transition-all"
+                  width="40"
+                  height="40"
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-lg shadow-teal-400/25 border-2 border-[#2DD4BF]/80 group-hover:scale-105 transition-all"
                 />
               </picture>
-              <span className="font-black text-2xl sm:text-3xl tracking-tight text-white drop-shadow-sm leading-none flex items-center gap-1">
+              <span className="font-black text-xl sm:text-2xl lg:text-3xl tracking-tight text-white drop-shadow-sm leading-none flex items-center gap-1">
                 Vizamigo
-                <span className="text-base sm:text-lg text-[#5EEAD4] -mt-2 select-none">✈️</span>
+                <span className="text-sm sm:text-base text-[#2DD4BF] -mt-1.5 select-none">✈️</span>
+              </span>
+            </button>
+
+            {/* Desktop Passport Pill docked beside Logo for balanced weight */}
+            <button
+              type="button"
+              onClick={onOpenPassportSelector}
+              className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] rounded-full bg-[#14B8A6]/15 hover:bg-[#14B8A6]/25 border border-[#2DD4BF]/45 text-xs font-black text-white transition-all cursor-pointer shadow-xs ml-1"
+              title={l('Aktif Pasaportu Değiştir', 'Change Active Passport')}
+            >
+              <span className="text-base leading-none">{getFlag(currentPassport)}</span>
+              <span className="truncate max-w-[120px]">
+                {currentPassport === 'TR'
+                  ? l('T.C. Pasaportu', 'TR Passport')
+                  : getCountryName(currentPassport, language)}
+              </span>
+              <span className="text-[#5EEAD4]">·</span>
+              <span className="text-[#5EEAD4] font-black">
+                {visaFreeCount} {l('Vizesiz', 'Free')}
               </span>
             </button>
           </div>
@@ -153,7 +175,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Center (Desktop): 5 Main Pill Tabs (Keşfet · Rota · Araçlar · Cüzdan · Profil) */}
           <nav
             aria-label="Main Navigation"
-            className="hidden lg:flex items-center gap-1.5 p-1.5 rounded-full bg-[#CCFBF1]/20 dark:bg-white/[0.08] border border-[#5EEAD4]/50 backdrop-blur-xl shadow-inner"
+            className="hidden lg:flex items-center justify-center gap-1 p-1 rounded-full bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/40 backdrop-blur-xl shadow-inner mx-auto"
           >
             {mainTabs.map((item) => {
               const isActive = activeTab === item.key || (activeTab === 'consular' && item.key === 'nomad');
@@ -162,10 +184,10 @@ export const Header: React.FC<HeaderProps> = ({
                   key={item.key}
                   type="button"
                   onClick={() => onSelectTab?.(item.key)}
-                  className={`flex items-center gap-2 px-5 py-2 rounded-full text-sm sm:text-base font-black transition-all cursor-pointer whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-black transition-all cursor-pointer whitespace-nowrap ${
                     isActive
-                      ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md'
-                      : 'text-white/95 hover:text-white hover:bg-white/15'
+                      ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-teal-900/30 ring-1 ring-[#5EEAD4]/60'
+                      : 'text-white/85 hover:text-white hover:bg-white/10'
                   }`}
                 >
                   <span>{item.label}</span>
@@ -174,56 +196,37 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Right: Active Passport Pill + Language Selector (TR ▾) + Theme Toggle (☀️/🌙) + Auth */}
-          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-            {/* Active Passport Pill ("🇹🇷 T.C. Pasaportu · 71 Vizesiz") */}
+          {/* Right: Mobile/Tablet Passport + Language (TR ▾) + Theme (☀️/🌙) + Auth */}
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 justify-end">
+            {/* Mobile & Laptop Passport Pill */}
             <button
               type="button"
               onClick={onOpenPassportSelector}
-              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 min-h-[40px] rounded-full bg-[#CCFBF1]/20 dark:bg-white/[0.08] border border-[#5EEAD4]/55 text-xs sm:text-sm font-black text-white hover:bg-[#CCFBF1]/30 transition-all cursor-pointer shadow-xs"
+              className="xl:hidden flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1.5 min-h-[34px] sm:min-h-[36px] rounded-full bg-[#14B8A6]/20 border border-[#2DD4BF]/50 text-[11px] sm:text-xs font-black text-white hover:bg-[#14B8A6]/30 transition-all cursor-pointer"
               title={l('Aktif Pasaportu Değiştir', 'Change Active Passport')}
             >
-              <span className="text-base sm:text-lg leading-none">{getFlag(currentPassport)}</span>
-              <span className="hidden md:inline truncate max-w-[140px]">
-                {currentPassport === 'TR'
-                  ? l('T.C. Pasaportu', 'TR Passport')
-                  : getCountryName(currentPassport, language)}
-              </span>
-              <span className="md:hidden font-mono">{currentPassport}</span>
-              <span className="text-[#99F6E4]">·</span>
+              <span className="text-sm sm:text-base leading-none">{getFlag(currentPassport)}</span>
+              <span className="hidden sm:inline font-mono">{currentPassport}</span>
               <span className="text-[#5EEAD4] font-black">
-                {visaFreeCount} {l('Vizesiz', 'Free')}
+                {visaFreeCount} <span className="hidden xs:inline">{l('Vizesiz', 'Free')}</span>
               </span>
             </button>
-
-            {/* Audit Verified Badge (XL Desktop) */}
-            {onOpenAuditConsole && (
-              <button
-                type="button"
-                onClick={onOpenAuditConsole}
-                className="hidden 2xl:inline-flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-full border border-[#5EEAD4]/50 bg-[#CCFBF1]/15 hover:bg-[#CCFBF1]/25 text-[#99F6E4] text-xs font-black transition-all cursor-pointer"
-                title={t.auditConsoleTitle}
-              >
-                <ShieldCheck className="w-4 h-4" />
-                <span>{t.auditVerifiedBadge}</span>
-              </button>
-            )}
 
             {/* Language Selector (TR ▾) */}
             <div className="relative" ref={langRef}>
               <button
                 type="button"
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center gap-1.5 px-3 sm:px-3.5 py-2 min-h-[40px] rounded-full bg-[#CCFBF1]/20 dark:bg-white/[0.08] border border-[#5EEAD4]/55 text-xs sm:text-sm font-black text-white hover:bg-[#CCFBF1]/30 transition-all cursor-pointer"
+                className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 min-h-[34px] sm:min-h-[36px] rounded-full bg-white/[0.08] hover:bg-white/15 border border-[#2DD4BF]/40 text-xs font-black text-white transition-all cursor-pointer"
                 title={t.languageSelect}
                 aria-label={t.languageSelect}
               >
                 <span className="uppercase font-black">{language}</span>
-                <ChevronDown className="w-3.5 h-3.5 opacity-90" />
+                <ChevronDown className="w-3 h-3 text-[#5EEAD4]" />
               </button>
 
               {langMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-[#064E3B] dark:bg-[#071E30] border-2 border-[#5EEAD4] rounded-2xl shadow-2xl py-1.5 z-50">
+                <div className="absolute right-0 mt-2 w-48 bg-[#042637] dark:bg-[#021824] border-2 border-[#2DD4BF] rounded-2xl shadow-2xl py-1.5 z-50">
                   {SUPPORTED_LANGUAGES.map((opt) => (
                     <button
                       key={opt.code}
@@ -252,13 +255,13 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={onToggleTheme}
-              className="px-3 py-2 min-h-[40px] rounded-full bg-[#CCFBF1]/20 dark:bg-white/[0.08] border border-[#5EEAD4]/55 text-xs sm:text-sm font-black text-white hover:bg-[#CCFBF1]/30 transition-all cursor-pointer flex items-center justify-center gap-1"
+              className="px-2 sm:px-2.5 py-1.5 min-h-[34px] sm:min-h-[36px] rounded-full bg-white/[0.08] hover:bg-white/15 border border-[#2DD4BF]/40 text-xs font-black text-white transition-all cursor-pointer flex items-center justify-center gap-0.5 sm:gap-1"
               aria-label={t.themeToggle}
               title={t.themeToggle}
             >
-              <span className={isDark ? 'opacity-50' : 'opacity-100'}>☀️</span>
-              <span className="text-white/50">/</span>
-              <span className={isDark ? 'opacity-100' : 'opacity-50'}>🌙</span>
+              <span className={isDark ? 'opacity-40' : 'opacity-100'}>☀️</span>
+              <span className="text-white/30 text-[10px]">/</span>
+              <span className={isDark ? 'opacity-100' : 'opacity-40'}>🌙</span>
             </button>
 
             {/* User Auth / Profile */}
@@ -268,18 +271,18 @@ export const Header: React.FC<HeaderProps> = ({
                   <button
                     type="button"
                     onClick={() => setUserMenuOpen(!userMenuOpen)}
-                    className="flex items-center gap-1.5 p-1 pr-2 rounded-full bg-[#CCFBF1]/20 border border-[#5EEAD4]/55 cursor-pointer"
+                    className="flex items-center gap-1 p-1 pr-1.5 rounded-full bg-[#14B8A6]/20 border border-[#2DD4BF]/50 cursor-pointer"
                   >
                     <img
                       src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
                       alt={user.name}
-                      className="w-7 h-7 rounded-full object-cover"
+                      className="w-6 h-6 rounded-full object-cover"
                     />
-                    <ChevronDown className="w-3.5 h-3.5 text-white" />
+                    <ChevronDown className="w-3 h-3 text-[#5EEAD4]" />
                   </button>
 
                   {userMenuOpen && (
-                    <div className="absolute right-0 mt-2 w-52 bg-[#064E3B] dark:bg-[#071E30] border-2 border-[#5EEAD4] rounded-2xl shadow-2xl p-2 z-50 space-y-1">
+                    <div className="absolute right-0 mt-2 w-52 bg-[#042637] dark:bg-[#021824] border-2 border-[#2DD4BF] rounded-2xl shadow-2xl p-2 z-50 space-y-1">
                       <div className="px-3 py-1.5 border-b border-white/15">
                         <p className="text-xs font-extrabold text-white truncate">{user.name}</p>
                         <p className="text-[11px] text-teal-200 truncate">{user.email}</p>
@@ -313,7 +316,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <button
                   type="button"
                   onClick={() => openAuthModal('login')}
-                  className="hidden xl:inline-flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-full text-xs font-black bg-[#2DD4BF] text-[#042F2E] shadow-sm hover:opacity-95 cursor-pointer"
+                  className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 min-h-[34px] sm:min-h-[36px] rounded-full text-xs font-black bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white hover:brightness-110 shadow-sm cursor-pointer"
                 >
                   <LogIn className="w-3.5 h-3.5" />
                   <span>{t.signIn}</span>
@@ -328,19 +331,19 @@ export const Header: React.FC<HeaderProps> = ({
         ================================================================= */}
         <div className="w-full max-w-4xl mx-auto">
           <label className="relative w-full flex items-center">
-            <Search className="w-5 h-5 text-white/90 absolute left-4.5 pointer-events-none" />
+            <Search className="w-5 h-5 text-[#5EEAD4] absolute left-4 pointer-events-none" />
             <input
               type="search"
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full h-12 sm:h-13 pl-12 pr-28 rounded-2xl sm:rounded-full text-sm sm:text-base font-bold bg-[#CCFBF1]/25 dark:bg-white/[0.10] border-2 border-[#5EEAD4]/60 text-white placeholder:text-white/85 focus:outline-none focus:ring-4 focus:ring-[#5EEAD4]/35 focus:bg-[#042F2E]/70 transition-all shadow-md"
+              className="w-full h-11 sm:h-12 pl-11 pr-24 sm:pr-28 rounded-xl sm:rounded-full text-xs sm:text-sm font-bold bg-white/10 dark:bg-white/[0.07] border border-[#2DD4BF]/50 text-white placeholder:text-white/75 focus:outline-none focus:ring-4 focus:ring-[#2DD4BF]/30 focus:bg-[#032030]/90 transition-all shadow-md"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => onSearchChange?.('')}
-                className="absolute right-22 p-1.5 text-white/80 hover:text-white cursor-pointer"
+                className="absolute right-20 sm:right-24 p-1.5 text-white/70 hover:text-white cursor-pointer"
                 title={l('Temizle', 'Clear')}
               >
                 <X className="w-4 h-4" />
@@ -353,7 +356,7 @@ export const Header: React.FC<HeaderProps> = ({
                 const dirEl = document.getElementById('vz-country-directory');
                 if (dirEl) dirEl.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="absolute right-2 px-5 sm:px-6 py-2 rounded-xl sm:rounded-full text-sm sm:text-base font-black bg-[#2DD4BF] hover:bg-[#5EEAD4] text-[#042F2E] shadow-md cursor-pointer transition-all"
+              className="absolute right-1.5 px-4 sm:px-5 py-1.5 rounded-lg sm:rounded-full text-xs sm:text-sm font-black bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:brightness-110 text-white shadow-md cursor-pointer transition-all"
             >
               {l('Ara', 'Search')}
             </button>

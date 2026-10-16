@@ -279,8 +279,8 @@ export const WalletTab: React.FC<WalletTabProps> = ({
               <a href="https://www.agoda.com" target="_blank" rel="noopener noreferrer" className="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-[#0D9488] text-white no-underline">
                 🏨 Agoda / Booking →
               </a>
-              <a href="https://www.skyscanner.com.tr" target="_blank" rel="noopener noreferrer" className="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-[#0EA5E9] text-white no-underline">
-                ✈️ Skyscanner →
+              <a href="https://wayaway.io" target="_blank" rel="noopener noreferrer" className="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-[#0EA5E9] text-white no-underline">
+                ✈️ WayAway / Trip.com →
               </a>
               <a href="https://kiwitaxi.com" target="_blank" rel="noopener noreferrer" className="px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-emerald-600 text-white no-underline">
                 🚕 Kiwitaxi →

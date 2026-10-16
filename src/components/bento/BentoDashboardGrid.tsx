@@ -456,7 +456,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           </div>
 
           <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="text-sm sm:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight font-mono">
+            <div className="text-xs sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight font-mono whitespace-nowrap overflow-hidden text-ellipsis">
               $1 = {usdTry}₺ · €1 = {eurTry}₺
             </div>
           </div>
@@ -473,14 +473,14 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           onKeyDown={(e) => e.key === 'Enter' && openWidget('packing', 'documents')}
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-3 sm:space-y-5">
+          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-4">
             <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
               {l('Akıllı', 'Smart')}
               <span className="block">{l('Bavul', 'Packing')}</span>
             </h3>
 
             <div>
-              <span className="inline-block px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-2xl bg-[#5EEAD4] text-[#042F2E] text-sm sm:text-2xl font-black shadow-md">
+              <span className="inline-block px-3 sm:px-4 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-lg lg:text-xl font-black shadow-md">
                 %75 {l('Hazır', 'Ready')}
               </span>
             </div>
@@ -503,13 +503,13 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col justify-between"
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-            <div className="space-y-1.5">
+            <div className="space-y-1">
               <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
                 {l('Dünya Saati', 'World Clock')}
                 <span className="block">{l('& Rota', '& Route')}</span>
               </h3>
-              <p className="text-xs sm:text-sm font-extrabold text-[#064E3B] dark:text-teal-200">
-                İstanbul ➔ Atina ➔ Tokyo
+              <p className="text-[11px] sm:text-sm font-extrabold text-[#0D9488] dark:text-teal-200 truncate max-w-[150px] sm:max-w-none">
+                İST ➔ ATN ➔ TYO
               </p>
             </div>
             <div className="self-center sm:self-auto -my-3">
@@ -518,7 +518,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           </div>
 
           <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="text-sm sm:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight font-mono">
+            <div className="text-xs sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight font-mono whitespace-nowrap overflow-hidden text-ellipsis">
               İST {formatCityTime(3)} · TYO {formatCityTime(9)}
             </div>
           </div>
@@ -535,7 +535,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'ride', appsCountry)}
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-2.5 sm:space-y-4">
+          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-3">
             <h3 className="text-base sm:text-2xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
               {l('Ülke', 'Country')}
               <span className="block">{l('Uygulamaları', 'Local Apps')}</span>
@@ -543,7 +543,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </h3>
 
             <div>
-              <span className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-2xl bg-gradient-to-r from-[#2DD4BF] to-[#38BDF8] text-[#042F2E] text-xs sm:text-base font-black shadow-md group-hover:scale-105 transition-transform">
+              <span className="inline-flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-[11px] sm:text-sm font-black shadow-md group-hover:scale-105 transition-transform">
                 {l('Fırsatları Gör →', 'View Deals →')}
               </span>
             </div>
@@ -555,24 +555,24 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 9 & 10: DİJİTAL GÖÇEBE & ACİL KONSOLOSLUK (6 + 6 cols)
+            WIDGET 9 & 10: DİJİTAL GÖÇEBE & ACİL KONSOLOSLUK (Mobile col-span-2, Desktop lg:col-span-6)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('nomad', 'hubs')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('nomad', 'hubs')}
-          className="col-span-1 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+          className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
         >
           <div className="space-y-1.5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#0F766E] text-white">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#0D9488] text-white">
               <Laptop className="w-3.5 h-3.5" />
               {l('Uzaktan Çalışma & Hızlı Wi-Fi', 'Remote Work & Fast Wi-Fi')}
             </span>
             <h3 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white">
               {l('Dijital Göçebe (Nomad) Üsleri', 'Digital Nomad Hubs')}
             </h3>
-            <p className="text-xs sm:text-sm font-bold text-[#064E3B] dark:text-teal-200">
+            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200">
               🌴 Bali · Bangkok · Lizbon · Tiflis · 185 Mbps
             </p>
           </div>
@@ -586,7 +586,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('emergency', 'sos')}
-          className="col-span-1 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+          className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
         >
           <div className="space-y-1.5">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-rose-600 text-white">
@@ -596,7 +596,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             <h3 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white">
               {l('Acil Yardım & T.C. Konsolosluklar', 'Emergency SOS & Embassies')}
             </h3>
-            <p className="text-xs sm:text-sm font-bold text-[#064E3B] dark:text-teal-200">
+            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200">
               {l('Kayıp Pasaport, Geçici Belge & Büyükelçilik Numaraları', 'Lost Passport, Emergency Travel Doc & Embassies')}
             </p>
           </div>
@@ -1008,12 +1008,12 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                         </div>
                       )}
 
-                      {/* 4. Bottom Full-Width Emerald-Lagoon Action Button (Matches Right Phone Screen 1:1) */}
+                      {/* 4. Bottom Full-Width Emerald-Lagoon Action Button */}
                       <a
-                        href="https://www.skyscanner.com.tr"
+                        href="https://wayaway.tp.st/zZ1G5N1A"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#0D9488] via-[#10B981] to-[#0D9488] hover:opacity-95 text-white font-black text-base sm:text-lg shadow-xl border-2 border-[#5EEAD4] flex items-center justify-center gap-2.5 no-underline transition-all"
+                        className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#0D9488] via-[#0284C7] to-[#0D9488] hover:brightness-110 text-white font-black text-base sm:text-lg shadow-xl border-2 border-[#5EEAD4] flex items-center justify-center gap-2.5 no-underline transition-all"
                       >
                         <Plane className="w-5 h-5" />
                         <span>

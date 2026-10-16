@@ -136,6 +136,7 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [remoteBaseCity, setRemoteBaseCity] = useState<'IST' | 'NYC' | 'LON' | 'BER' | 'SFO' | 'SIN' | 'TYO'>('IST');
   const [marketTargetCurrency, setMarketTargetCurrency] = useState<'GBP' | 'USD' | 'EUR'>('GBP');
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [dossierSearch, setDossierSearch] = useState<string>('');
 
   const handleDossierSearchChange = (q: string) => {
@@ -169,12 +170,12 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     }, 100);
   };
 
-  // Real-time ticking clock for Dual-Clock Time Zone Sync
+  // Real-time ticking clock for Dual-Clock Time Zone Sync (throttled to 30s to prevent mobile lag)
   useEffect(() => {
     if (!isOpen) return;
     const timer = setInterval(() => {
       setCurrentTime(new Date());
-    }, 1000);
+    }, 30000);
     return () => clearInterval(timer);
   }, [isOpen]);
 
@@ -417,6 +418,30 @@ Planlayan: Vizamigo (vizamigo.com)`;
   // Nomad Apps (Ride-hailing & Delivery)
   const nomadApps = getCountryNomadApps(code, insights.transport.popularRideApps);
 
+  if (isMinimized) {
+    return (
+      <div className="fixed bottom-20 lg:bottom-6 right-4 z-50 flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#042637] to-[#0D9488] text-white shadow-2xl border-2 border-[#2DD4BF] animate-in fade-in slide-in-from-bottom-4 duration-200">
+        <span className="text-xl">{getFlag(code)}</span>
+        <span className="text-sm font-black">{name} ({code})</span>
+        <button
+          type="button"
+          onClick={() => setIsMinimized(false)}
+          className="px-3 py-1 rounded-full bg-[#2DD4BF] text-[#042F2E] text-xs font-black cursor-pointer hover:bg-[#5EEAD4] transition-all"
+        >
+          {l('Büyüt ⛶', 'Restore ⛶')}
+        </button>
+        <button
+          type="button"
+          onClick={onClose}
+          className="p-1.5 rounded-full hover:bg-white/20 cursor-pointer"
+          title={l('Kapat', 'Close')}
+        >
+          <X className="w-4 h-4" />
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div
       className={`fixed inset-0 z-50 flex flex-col justify-end sm:justify-center sm:items-center ${
@@ -439,7 +464,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
         <div className="w-12 h-1.5 rounded-full bg-slate-300/80 dark:bg-white/20 mx-auto mt-2.5 mb-1 sm:hidden shrink-0" aria-hidden="true" />
 
         {/* Top Header Banner - Symmetrical & Compact Executive Travel Layout */}
-        <div className="relative px-4 py-3 sm:px-6 sm:py-4 bg-gradient-to-r from-[#0D9488]/15 via-[#0EA5E9]/10 to-[#10B981]/15 dark:from-[#0A2538] dark:via-[#071E30] dark:to-[#0A2538] border-b border-teal-500/20 dark:border-white/10">
+        <div className="relative px-4 py-3 sm:px-6 sm:py-4 bg-gradient-to-r from-[#042637] via-[#0E7490]/40 to-[#042637] border-b border-[#2DD4BF]/30">
           <div className="flex items-center justify-between gap-3">
             {/* Left: [ ← Geri ] + Flag + Title + Code + Status */}
             <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
@@ -480,7 +505,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 type="button"
                 onClick={() => {
                   if (isFullscreen) setIsFullscreen(false);
-                  else onClose();
+                  setIsMinimized(true);
                 }}
                 className="inline-flex items-center justify-center p-2 rounded-full bg-white/80 dark:bg-white/10 hover:bg-teal-500/20 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shadow-2xs"
                 title={l('Küçült', 'Minimize')}
@@ -576,6 +601,36 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </button>
             </div>
           </div>
+        </div>
+
+        {/* =====================================================================
+            FIXED TAB NAVIGATION BAR: Sits permanently below header, ZERO overlap with content!
+        ===================================================================== */}
+        <div className="shrink-0 px-3 sm:px-6 py-2 bg-[#042637] dark:bg-[#021824] border-b border-[#2DD4BF]/30 backdrop-blur-xl flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none">
+          {[
+            { key: 'itinerary', icon: Route, label: l('🗺️ Gezi Planı & Rota', '🗺️ Itinerary & Route', '🗺️ Reiseplan') },
+            { key: 'concierge', icon: Sparkles, label: l('🏖️ Kolay Tatil & Asistan', '🏖️ Easy Vacation & Hub', '🏖️ Urlaubs-Assistent') },
+            { key: 'logistics', icon: Zap, label: l('⚡ Lojistik & Göçebe Hub', '⚡ Nomad & Logistics', '⚡ Logistik-Hub') },
+            { key: 'culture', icon: Landmark, label: l('🏛️ Kültür & Turizm', '🏛️ Culture & Sights', '🏛️ Kultur') },
+            { key: 'gastronomy', icon: Utensils, label: l('🍲 Yemek & İçecek', '🍲 Food & Drinks', '🍲 Kulinarik') },
+            { key: 'language', icon: Languages, label: l('🗣️ Dil & Tarih', '🗣️ Language & History', '🗣️ Sprache & Geschichte') },
+            { key: 'achievements', icon: Trophy, label: l('🏆 Ünlüler & Ekonomi', '🏆 Figures & Economy', '🏆 Wirtschaft') },
+            { key: 'visa', icon: FileCheck2, label: l('🛂 Vize & Güvenlik', '🛂 Visa & Safety', '🛂 Visum & Schutz') }
+          ].map((tab) => (
+            <button
+              key={tab.key}
+              type="button"
+              onClick={() => handleTabChange(tab.key as DossierTab)}
+              className={`shrink-0 flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer ${
+                activeTab === tab.key
+                  ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-teal-900/30 border border-[#5EEAD4]/60'
+                  : 'bg-white/10 dark:bg-white/[0.08] text-teal-100 hover:text-white hover:bg-white/20 border border-[#2DD4BF]/30'
+              }`}
+            >
+              <tab.icon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${activeTab === tab.key ? 'text-[#5EEAD4]' : 'text-teal-300'}`} />
+              <span>{tab.label}</span>
+            </button>
+          ))}
         </div>
 
         {/* Tab Content Body (Scrollable, Fluid Bottom-Sheet & Fullscreen) */}
@@ -792,97 +847,6 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
             </button>
           </div>
-
-        {/* Sticky Tab Navigation Bar (Horizontal Badge Slider, Zero Overlap) */}
-        <div className="sticky top-0 z-20 -mx-4 sm:-mx-6 px-4 sm:px-6 py-2.5 bg-white/95 dark:bg-[#0c101d]/95 backdrop-blur-xl border-y border-slate-200/80 dark:border-white/10 horizontal-badge-slider no-scrollbar-slider touch-pan-x flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none flex-nowrap">
-          <button
-            type="button"
-            onClick={() => handleTabChange('itinerary')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'itinerary' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Route className="w-4 h-4 shrink-0" />
-            <span>{l('🗺️ Gezi Planı & Rota', '🗺️ Travel Itinerary & Guide', '🗺️ Reiseplan & Route')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('concierge')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'concierge' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Sparkles className="w-4 h-4 shrink-0 text-amber-400" />
-            <span>{l('🏖️ Kolay Tatil & 360° Asistan', '🏖️ Easy Vacation & Assistant', '🏖️ Urlaubs-Assistent')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('logistics')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'logistics' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Zap className="w-4 h-4 shrink-0" />
-            <span>{l('⚡ Lojistik & Göçebe Hub', '⚡ Nomad & Logistics Hub', '⚡ Nomaden- & Logistik-Hub')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('culture')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'culture' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Landmark className="w-4 h-4 shrink-0" />
-            <span>{l('🏛️ Kültür & Turizm', '🏛️ Culture & Sights', '🏛️ Kultur & Tourismus')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('gastronomy')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'gastronomy' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Utensils className="w-4 h-4 shrink-0" />
-            <span>{l('🍲 Yemek & İçecek', '🍲 Gastronomy & Drinks', '🍲 Essen & Trinken')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('language')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'language' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Languages className="w-4 h-4 shrink-0" />
-            <span>{l('🗣️ Dil, Din & Tarih', '🗣️ Language, Faith & History', '🗣️ Sprache, Glaube & Geschichte')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('achievements')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'achievements' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <Trophy className="w-4 h-4 shrink-0" />
-            <span>{l('🏆 Ünlüler & Ekonomi', '🏆 Figures & Economy', '🏆 Persönlichkeiten & Wirtschaft')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleTabChange('visa')}
-            className={`shrink-0 flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer touch-target-min ${
-              activeTab === 'visa' ? 'tab-chip-active' : 'tab-chip-inactive'
-            }`}
-          >
-            <FileCheck2 className="w-4 h-4 shrink-0" />
-            <span>{l('🛂 Vize & Güvenlik Kartı', '🛂 Visa & Travel Dossier', '🛂 Visum & Sicherheitskarte')}</span>
-          </button>
-        </div>
 
         {/* TAB: KOLAY TATİL & 360° SEYAHAT ASİSTANI (GİDERKEN, GİDİNCE, DÖNERKEN TÜM UYGULAMA VE ORTAKLIKLAR) */}
         {activeTab === 'concierge' && (
