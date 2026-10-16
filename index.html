@@ -126,142 +126,118 @@
         } catch {}
       })();
     </script>
-    <!-- Critical Inline Styles for Instant Hero LCP Paint (<300ms) -->
+    <!-- Critical Inline Styles for Instant Hero LCP Paint (<200ms) -->
     <style id="vz-critical-css">
-      body { margin: 0; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-      .hero-card-container { margin-left: -1rem; margin-right: -1rem; margin-bottom: 1rem; overflow: hidden; }
-      @media (min-width: 640px) {
-        .hero-card-container { margin-left: 0; margin-right: 0; border-radius: 24px; }
-      }
-      #vz-shell-title {
-        font-size: 1.5rem;
-        line-height: 1.25;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        color: #ffffff;
-        margin: 0;
-      }
-      @media (min-width: 640px) {
-        #vz-shell-title { font-size: 2.25rem; }
-      }
-      #vz-shell-subtitle {
-        margin-top: 0.5rem;
-        font-size: 0.75rem;
-        line-height: 1.6;
-        color: #cbd5e1;
-        max-width: 32rem;
-      }
-      @media (min-width: 640px) {
-        #vz-shell-subtitle { font-size: 1rem; }
-      }
+      body { margin: 0; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+      #vz-static-hero-shell { min-height: 100vh; }
     </style>
   </head>
   <body class="bg-[#F0FDFA] text-[#06283D] dark:bg-[#041421] dark:text-[#F8FAFC] antialiased">
     <div id="root">
       <!-- 
         ========================================================================
-        CRITICAL STATIC HERO SHELL (Zero-JS Instant Paint, Sub-Second LCP)
-        NOTE: Hero değişirse bu statik shell'i de güncelleyin!
-        React createRoot devreye girdiğinde bu markup kesintisiz devralınır.
+        CRITICAL STATIC BENTO HERO SHELL (Zero-JS Instant Paint, 0ms Element Render Delay)
+        Renders the exact LCP Turkuaz Lagün hero widget on initial HTML paint.
+        React createRoot seamlessly takes over when JS hydrates.
         ========================================================================
       -->
       <div id="vz-static-hero-shell" class="min-h-screen flex flex-col bg-[#F0FDFA] dark:bg-[#041421] text-[#06283D] dark:text-[#F8FAFC]">
         <!-- Static Topbar Glass Header -->
-        <header class="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-teal-500/20 dark:border-white/[0.08] backdrop-blur-2xl bg-white/88 dark:bg-[#051824]/92">
+        <header class="sticky top-0 z-30 w-full border-b border-teal-500/20 dark:border-white/[0.08] backdrop-blur-2xl bg-white/88 dark:bg-[#051824]/92">
           <div class="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2.5 sm:gap-4">
-            <div class="flex items-center gap-2 flex-shrink-0">
-              <div class="flex items-center gap-2 sm:gap-2.5 text-left">
-                <picture>
-                  <source srcset="/logo.webp" type="image/webp" />
-                  <img src="/logo.png" alt="Vizamigo" width="40" height="40" class="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20" />
-                </picture>
-                <span class="font-extrabold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">Vizamigo.</span>
-              </div>
+            <div class="flex items-center gap-2">
+              <picture>
+                <source srcset="/logo.webp" type="image/webp" />
+                <img src="/logo.png" alt="Vizamigo" width="40" height="40" class="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20" />
+              </picture>
+              <span class="font-extrabold text-base sm:text-xl tracking-tight text-slate-900 dark:text-white">Vizamigo.</span>
             </div>
           </div>
         </header>
 
         <!-- Static Main Container -->
-        <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 sm:pt-6 pb-24 md:pb-16 transition-all">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 sm:pt-4">
-            <!-- Hero Card Container -->
-            <section aria-label="Hero" class="hero-card-container -mx-4 sm:mx-0 sm:rounded-[28px] overflow-hidden mb-4 h-auto">
-              <div class="relative bg-gradient-to-br from-[#06283D] via-[#0D9488] to-[#0284C7] dark:from-[#041421] dark:via-[#082B3E] dark:to-[#0D9488] px-5 sm:px-8 pt-6 sm:pt-7 pb-14 sm:pb-16 text-white rounded-t-[28px] h-auto">
-                <div class="max-w-2xl">
-                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 border border-white/25 text-[11px] font-extrabold tracking-wide text-teal-50 mb-2.5">
-                    <span>🌴</span>
-                    <span>VİZAMİGO AKILLI SEYAHAT &amp; VİZE PANOSU · 2026</span>
-                  </div>
-                  <h1 id="vz-shell-title" class="text-2xl sm:text-4xl font-extrabold tracking-[-0.02em] leading-tight text-white h-auto">
-                    Valizini hazırla, vizeyi dert etme.
-                  </h1>
-                  <p id="vz-shell-subtitle" class="mt-2 text-xs sm:text-base text-teal-50/95 leading-[1.6] max-w-xl h-auto font-medium">
-                    199 ülke vize rehberi, dünya gün sayacı, rota planı ve yerel uygulamalar tek panoda.
-                  </p>
-                </div>
-                <!-- Curved decorative dashed route arc -->
-                <svg class="pointer-events-none absolute right-4 top-6 sm:top-8 h-16 w-28 sm:h-28 sm:w-64 opacity-80 sm:opacity-100" viewBox="0 0 160 80" aria-hidden="true">
-                  <path class="vz-route" d="M8 68 C 46 8, 112 8, 148 32" fill="none" stroke="#99F6E4" stroke-width="2.2" stroke-dasharray="5 5"></path>
-                  <circle class="vz-dot" cx="148" cy="32" r="5.5" fill="#34D399"></circle>
-                </svg>
-              </div>
+        <main class="flex-1 w-full max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-5">
+          <!-- Autonomous AI Agents Quick Dock Skeleton -->
+          <div class="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#021824] via-[#04283b] to-[#011420] border-2 border-[#2DD4BF]/50 shadow-lg overflow-x-auto no-scrollbar scrollbar-none">
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-gradient-to-r from-[#ea580c] to-[#e11d48] shrink-0 shadow-sm">
+              <span class="text-xs font-black text-white whitespace-nowrap">Otonom AI Ajanları</span>
+              <span class="text-[10px] font-black px-1.5 py-0.2 rounded-md bg-white text-[#ea580c]">4</span>
+            </div>
+            <div class="px-3 py-1.5 rounded-xl bg-[#032030] text-xs font-black text-white whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs">
+              <span>🛡️</span>
+              <span>Schengen Nöbetçisi</span>
+            </div>
+            <div class="px-3 py-1.5 rounded-xl bg-[#032030] text-xs font-black text-white whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs">
+              <span>🛰️</span>
+              <span>Konsolosluk Kriz Masası</span>
+            </div>
+          </div>
 
-              <!-- Filter Bar Placeholder Skeleton -->
-              <div class="relative -mt-6 sm:-mt-8 mx-3 sm:mx-6 rounded-[24px] glass-card p-3 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 h-auto shadow-md">
-                <div class="horizontal-badge-slider flex flex-nowrap items-center gap-1.5 rounded-full bg-teal-500/10 dark:bg-white/[0.06] border border-teal-500/20 dark:border-white/[0.08] p-1 shrink-0 flex-shrink-0">
-                  <div class="shrink-0 min-h-[38px] px-3.5 sm:px-4 rounded-full text-xs font-extrabold bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white flex items-center">
-                    <span>🌍 Tüm Ülkeler</span>
-                  </div>
-                  <div class="shrink-0 min-h-[38px] px-3.5 sm:px-4 rounded-full text-xs font-extrabold text-slate-700 dark:text-slate-200 flex items-center">
-                    <span>🧭 Nereye Gidebilirim?</span>
+          <!-- Top 2 Bento Widgets (Desktop 2-Col, Mobile 1-Col) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+            <!-- Widget 1: Instant LCP Hero Image -->
+            <div class="col-span-1 relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl min-h-[196px] sm:min-h-[216px] flex flex-col justify-between p-3 sm:p-4">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=420&fm=webp&q=65"
+                alt="Turkuaz Lagün &amp; Dünya Radarı"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+                width="420"
+                height="216"
+              />
+              <div class="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/75 to-[#0D9488]/85"></div>
+              <div class="relative z-10 space-y-1.5">
+                <h2 class="text-sm sm:text-base font-black text-white leading-tight tracking-tight drop-shadow-md">
+                  Pasaportumla Nereye Gidebilirim?
+                </h2>
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="px-2.5 py-0.5 rounded-lg text-xs sm:text-sm font-black bg-[#38BDF8] text-[#042637] shadow-xs">116 Vizesiz</span>
+                  <span class="px-2.5 py-0.5 rounded-lg text-xs sm:text-sm font-black bg-[#5EEAD4] text-[#042F2E] shadow-xs">28 E-Vize</span>
+                </div>
+              </div>
+              <div class="relative z-10 flex items-center gap-1.5 pt-1.5">
+                <span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-white text-[#042F2E] text-xs font-black shadow-md">
+                  🌍 199 Ülke Radarı →
+                </span>
+              </div>
+            </div>
+
+            <!-- Widget 2: Ülke Araştırma -->
+            <div class="col-span-1 relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl min-h-[196px] sm:min-h-[216px] flex flex-col justify-between p-3 sm:p-4">
+              <img
+                src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=360&fm=webp&q=60"
+                alt="Tayland"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
+                width="360"
+                height="216"
+              />
+              <div class="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/70 to-[#0D9488]/85"></div>
+              <div class="relative z-10 space-y-1.5">
+                <h2 class="text-sm sm:text-base font-black text-white leading-tight tracking-tight drop-shadow-md">
+                  Ülke Araştırma
+                </h2>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl sm:text-3xl">🇹🇭</span>
+                  <div>
+                    <span class="text-sm sm:text-base font-black text-white drop-shadow-md">Tayland</span>
+                    <span class="ml-1.5 px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-black bg-[#38BDF8] text-[#042637]">60 Gün Vizesiz</span>
                   </div>
                 </div>
               </div>
-            </section>
+              <div class="relative z-10 flex items-center gap-1.5 pt-1.5">
+                <span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-white text-[#042F2E] text-xs font-black shadow-md">
+                  Tüm Detaylar →
+                </span>
+              </div>
+            </div>
           </div>
         </main>
       </div>
     </div>
-
-    <!-- Route-Specific Shell Remover & Multilingual Dictionary Sync Script -->
-    <script>
-      (function() {
-        try {
-          var p = window.location.pathname.replace(/\/+$/, '') || '/';
-          var isHome = p === '/' || /^\/(tr|en|de|es|ru)$/.test(p);
-          var shell = document.getElementById('vz-static-hero-shell');
-          if (!isHome && shell) {
-            shell.remove();
-            return;
-          }
-
-          var lang = 'tr';
-          var pathLang = p.split('/')[1]?.toLowerCase();
-          if (['tr','en','de','es','ru'].indexOf(pathLang) !== -1) {
-            lang = pathLang;
-          } else {
-            var stored = localStorage.getItem('vr_lang');
-            if (stored && ['tr','en','de','es','ru'].indexOf(stored) !== -1) {
-              lang = stored;
-            }
-          }
-
-          var D = {
-            tr: { t: "Valizini hazırla, vizeyi dert etme.", s: "199 ülke vize rehberi, dünya gün sayacı, rota planı ve yerel uygulamalar tek panoda." },
-            en: { t: "Pack your bags, forget the visa stress.", s: "199-country visa guide, global day counter, route planner & local apps in one dashboard." },
-            de: { t: "Koffer packen, Visum-Stress vergessen.", s: "199 Länder Visaguide, Welt-Tagezähler, Routenplaner und lokale Apps in einem Dashboard." },
-            es: { t: "Prepara tu maleta, olvida el estrés del visado.", s: "Guía de 199 países, contador global de días, planificador de rutas y apps locales." },
-            ru: { t: "Собирайте чемодан, забудьте о визовом стрессе.", s: "Гид по 199 странам, глобальный счетчик дней, планировщик маршрутов и местные приложения." }
-          };
-
-          var item = D[lang] || D.tr;
-          var tEl = document.getElementById('vz-shell-title');
-          var sEl = document.getElementById('vz-shell-subtitle');
-          if (tEl) tEl.textContent = item.t;
-          if (sEl) sEl.textContent = item.s;
-        } catch(e) {}
-      })();
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

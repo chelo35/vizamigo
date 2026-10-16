@@ -283,15 +283,13 @@ function scheduleDeferredNetworkTask(callback: () => void, timeout = 4000) {
   }
 }
 
-// Defer background fetch to window load + requestIdleCallback so initial paint (FCP/LCP) is NEVER delayed
-scheduleDeferredNetworkTask(() => refreshCurrencyRates(false));
-
 export function getCurrencyMeta(): { isLive: boolean; updatedAt: number | null } {
   return { isLive: isLiveLoaded, updatedAt: lastUpdatedTimestamp };
 }
 
 /**
  * React hook that subscribes to live currency updates and triggers a re-render when rates arrive.
+ * Defers network fetch until idle and skips if cached rates are already fresh (<24h).
  */
 export function useLiveCurrencyRates() {
   const [, setTick] = useState(0);
@@ -299,7 +297,12 @@ export function useLiveCurrencyRates() {
   useEffect(() => {
     const handler = () => setTick((t) => t + 1);
     listeners.add(handler);
-    scheduleDeferredNetworkTask(() => refreshCurrencyRates(false));
+
+    // Only schedule network fetch if cache is absent or stale (>24 hours)
+    if (!isLiveLoaded || !lastUpdatedTimestamp || Date.now() - lastUpdatedTimestamp >= CACHE_TTL_MS) {
+      scheduleDeferredNetworkTask(() => refreshCurrencyRates(false), 5000);
+    }
+
     return () => {
       listeners.delete(handler);
     };
