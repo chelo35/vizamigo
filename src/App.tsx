@@ -74,6 +74,12 @@ const TimezoneOverlapModal = lazy(() =>
 const GlobalRadarModal = lazy(() =>
   import('./components/tools/GlobalRadarModal').then(m => ({ default: m.GlobalRadarModal }))
 );
+const VizamigoAssistantModal = lazy(() =>
+  import('./components/assistant/VizamigoAssistantModal').then(m => ({ default: m.VizamigoAssistantModal }))
+);
+const AssistantLauncherButton = lazy(() =>
+  import('./components/assistant/AssistantLauncherButton').then(m => ({ default: m.AssistantLauncherButton }))
+);
 
 const TabLoadingSkeleton: React.FC = () => (
   <div className="h-[360px] rounded-[24px] glass-card animate-pulse p-8 space-y-4">
@@ -147,6 +153,14 @@ function AppContent() {
   const [isRadarOpen, setIsRadarOpen] = useState<boolean>(false);
   const [radarInitialMode, setRadarInitialMode] = useState<'all' | 'clock' | 'weather' | 'currency'>('all');
   const [radarTargetCity, setRadarTargetCity] = useState<string | undefined>(undefined);
+  const [isAssistantOpen, setIsAssistantOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    (window as any).openVizamigoAssistant = () => setIsAssistantOpen(true);
+    return () => {
+      delete (window as any).openVizamigoAssistant;
+    };
+  }, []);
 
   const openRadar = (mode: 'all' | 'clock' | 'weather' | 'currency' = 'all', city?: string) => {
     setRadarInitialMode(mode);
@@ -587,6 +601,30 @@ function AppContent() {
               }
               handleCountrySelect(code);
             }}
+          />
+        )}
+
+        <AssistantLauncherButton
+          isOpen={isAssistantOpen}
+          onClick={() => setIsAssistantOpen(true)}
+        />
+
+        {isAssistantOpen && (
+          <VizamigoAssistantModal
+            isOpen={isAssistantOpen}
+            onClose={() => setIsAssistantOpen(false)}
+            currentPassport={currentPassport}
+            onOpenCountryDossier={(code) => {
+              if (activeTab !== 'explore') {
+                setActiveTab('explore');
+              }
+              handleCountrySelect(code);
+            }}
+            onSelectTab={handleSelectTab}
+            onOpenPackingList={() => setIsPackingListOpen(true)}
+            onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+            onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+            onOpenGlobalRadar={openRadar}
           />
         )}
       </Suspense>
