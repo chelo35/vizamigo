@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import {
   ShieldCheck,
   Moon,
@@ -10,15 +10,14 @@ import {
   ChevronDown,
   Search,
   X,
-  Sparkles,
   Compass,
   Route,
-  Calendar,
-  ShieldAlert,
+  Wrench,
+  Wallet,
   Menu
 } from 'lucide-react';
-import { QuickToolsStrip } from './QuickToolsStrip';
 import { getFlag, getCountryName } from '../data/passportData';
+import { getPassportItems } from '../utils/calculator';
 import { useI18n, SUPPORTED_LANGUAGES } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
 import { TabKey } from './Navigation';
@@ -36,7 +35,6 @@ interface HeaderProps {
   onToggleMobileDrawer?: () => void;
   activeTab?: TabKey;
   onSelectTab?: (tab: TabKey) => void;
-  // New quick travel tool callbacks
   onOpenPackingList?: () => void;
   onOpenTippingCalc?: () => void;
   onOpenTimezoneOverlap?: () => void;
@@ -55,11 +53,7 @@ export const Header: React.FC<HeaderProps> = ({
   onSearchChange,
   onToggleMobileDrawer,
   activeTab = 'explore',
-  onSelectTab,
-  onOpenPackingList,
-  onOpenTippingCalc,
-  onOpenTimezoneOverlap,
-  onOpenGlobalRadar
+  onSelectTab
 }) => {
   const { language, setLanguage, l, t } = useI18n();
   const { user, isAuthenticated, logout, openAuthModal } = useAuth();
@@ -67,19 +61,24 @@ export const Header: React.FC<HeaderProps> = ({
   const [langMenuOpen, setLangMenuOpen] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
-  const mobileLangRef = useRef<HTMLDivElement>(null);
-  const desktopLangRef = useRef<HTMLDivElement>(null);
+  const langRef = useRef<HTMLDivElement>(null);
 
-  // Click outside to close menus
+  const visaFreeCount = useMemo(() => {
+    try {
+      const items = getPassportItems(currentPassport);
+      return items.filter((it) => it.cat === 'free' || it.id).length;
+    } catch {
+      return 116;
+    }
+  }, [currentPassport]);
+
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as Node;
       if (menuRef.current && !menuRef.current.contains(target)) {
         setUserMenuOpen(false);
       }
-      const clickedInsideMobile = mobileLangRef.current && mobileLangRef.current.contains(target);
-      const clickedInsideDesktop = desktopLangRef.current && desktopLangRef.current.contains(target);
-      if (!clickedInsideMobile && !clickedInsideDesktop) {
+      if (langRef.current && !langRef.current.contains(target)) {
         setLangMenuOpen(false);
       }
     };
@@ -87,26 +86,36 @@ export const Header: React.FC<HeaderProps> = ({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const mainTabs: Array<{ key: TabKey; label: string; icon: React.ComponentType<{ className?: string }> }> = [
+    { key: 'explore', label: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'), icon: Compass },
+    { key: 'plan', label: l('Rota', 'Route', 'Route', 'Ruta', 'Маршрут'), icon: Route },
+    { key: 'nomad', label: l('Araçlar', 'Tools', 'Werkzeuge', 'Herramientas', 'Инструменты'), icon: Wrench },
+    { key: 'track', label: l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелек'), icon: Wallet },
+    { key: 'profile', label: l('Profil', 'Profile', 'Profil', 'Perfil', 'Профиль'), icon: User }
+  ];
+
   const searchPlaceholder = l(
-    'Ülke, başkent veya vize kuralı ara (Japonya, Tayland, Balkanlar...)',
-    'Search country, capital or visa rule (Japan, Thailand...)',
-    'Reiseziel, Hauptstadt oder Visabestimmung suchen...',
-    'Buscar país, capital o visado...',
-    'Поиск страны, столицы или визы...'
+    'Ülke, vize kuralı, rota veya soru ara (Japonya, Tayland, Balkanlar, Schengen...)',
+    'Search country, visa rule, route or question (Japan, Thailand, Schengen...)',
+    'Land, Visabestimmung oder Route suchen (Japan, Thailand, Schengen...)',
+    'Buscar país, visado o ruta (Japón, Tailandia, Schengen...)',
+    'Поиск страны, визы или маршрута (Япония, Таиланд, Шенген...)'
   );
 
   return (
-    <header className="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-slate-200/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/85 dark:bg-[#0c101d]/90">
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-4">
-        {/* ROW 1: Brand Logo & Hamburger (Left) + Theme/Auth (Right on mobile, full controls on desktop) */}
-        <div className="w-full md:w-auto flex items-center justify-between gap-3">
-          {/* Brand Logo & Mobile Menu Drawer Trigger */}
-          <div className="flex items-center gap-2 flex-shrink-0">
+    <header className="sticky top-0 z-30 topbar-glass transition-all w-full border-b border-teal-500/20 dark:border-white/[0.08] backdrop-blur-2xl bg-white/88 dark:bg-[#051824]/92">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 space-y-2.5">
+        {/* =================================================================
+            ROW 1: Vizamigo Logo (Left) + 5 Main Pill Tabs (Center Desktop) + Passport, Language (TR ▾), Theme (☀️/🌙), Auth (Right)
+        ================================================================= */}
+        <div className="flex items-center justify-between gap-2 sm:gap-4">
+          {/* Left: Mobile Menu + Brand Logo */}
+          <div className="flex items-center gap-2 shrink-0">
             {onToggleMobileDrawer && (
               <button
                 type="button"
                 onClick={onToggleMobileDrawer}
-                className="md:hidden p-2 min-w-[40px] min-h-[40px] rounded-full glass-pill-control text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] flex items-center justify-center cursor-pointer transition-all touch-target-min"
+                className="lg:hidden p-2 min-w-[40px] min-h-[40px] rounded-full glass-pill-control text-slate-700 dark:text-slate-200 hover:bg-teal-500/15 flex items-center justify-center cursor-pointer transition-all"
                 aria-label={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
                 title={l('Menüyü Aç', 'Open Menu', 'Menü öffnen', 'Abrir menú', 'Открыть меню')}
               >
@@ -114,7 +123,6 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             )}
 
-            {/* Vizamigo Brand Mascot Logo */}
             <button
               type="button"
               onClick={() => {
@@ -125,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({
                 }
               }}
               className="flex items-center gap-2 sm:gap-2.5 cursor-pointer text-left group"
-              title={l('Ana Sayfaya Dön ve Yenile', 'Go Home & Refresh', 'Zur Startseite & Neu laden', 'Ir al Inicio y Recargar', 'На Главную и Обновить')}
+              title={l('Vizamigo Ana Sayfa', 'Vizamigo Home')}
             >
               <picture>
                 <source srcSet="/logo.webp" type="image/webp" />
@@ -134,334 +142,230 @@ export const Header: React.FC<HeaderProps> = ({
                   alt="Vizamigo"
                   width="40"
                   height="40"
-                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all"
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full shadow-md shadow-teal-500/20 group-hover:scale-105 transition-all"
                 />
               </picture>
-              <span className="font-bold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white">
-                Vizamigo<span className="text-[#2A8C82] dark:text-[#52B2A7]">.</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="font-extrabold text-base sm:text-xl tracking-[-0.02em] text-slate-900 dark:text-white leading-none">
+                  Vizamigo<span className="text-[#0D9488] dark:text-[#2DD4BF]">.</span>
+                </span>
+                <span className="hidden sm:inline text-[10px] font-bold text-[#0F766E] dark:text-[#2DD4BF] tracking-wide">
+                  {l('Tatil & Vize Rehberi', 'Holiday & Visa Guide')}
+                </span>
+              </div>
             </button>
           </div>
 
-          {/* Mobile-Only Top Right Controls (Theme + Auth) */}
-          <div className="flex md:hidden items-center gap-2 flex-shrink-0">
+          {/* Center (Desktop): 5 Main Pill Tabs (Keşfet · Rota · Araçlar · Cüzdan · Profil) */}
+          <nav
+            aria-label="Main Navigation"
+            className="hidden lg:flex items-center gap-1 p-1 rounded-full bg-teal-500/[0.08] dark:bg-white/[0.05] border border-teal-500/20 dark:border-white/10"
+          >
+            {mainTabs.map((item) => {
+              const Icon = item.icon;
+              const isActive = activeTab === item.key || (activeTab === 'consular' && item.key === 'nomad');
+              return (
+                <button
+                  key={item.key}
+                  type="button"
+                  onClick={() => onSelectTab?.(item.key)}
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
+                    isActive
+                      ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-sm'
+                      : 'text-slate-700 dark:text-slate-200 hover:text-slate-950 dark:hover:text-white hover:bg-teal-500/10'
+                  }`}
+                >
+                  <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-[#0F766E] dark:text-[#2DD4BF]'}`} />
+                  <span>{item.label}</span>
+                </button>
+              );
+            })}
+          </nav>
+
+          {/* Right: Active Passport Pill + Language Selector (TR ▾) + Theme Toggle (☀️/🌙) + Auth */}
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Active Passport Pill */}
+            <button
+              type="button"
+              onClick={onOpenPassportSelector}
+              className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1.5 min-h-[38px] rounded-full bg-teal-500/10 dark:bg-white/[0.06] border border-teal-500/25 dark:border-white/15 text-xs font-extrabold text-slate-900 dark:text-white hover:border-[#0D9488] transition-all cursor-pointer"
+              title={l('Aktif Pasaportu Değiştir', 'Change Active Passport')}
+            >
+              <span className="text-lg leading-none">{getFlag(currentPassport)}</span>
+              <span className="hidden md:inline truncate max-w-[110px]">
+                {getCountryName(currentPassport, language)}
+              </span>
+              <span className="md:hidden font-mono">{currentPassport}</span>
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/20 text-emerald-900 dark:text-emerald-300">
+                {visaFreeCount} {l('Vizesiz', 'Free')}
+              </span>
+            </button>
+
+            {/* Audit Verified Badge (XL Desktop) */}
+            {onOpenAuditConsole && (
+              <button
+                type="button"
+                onClick={onOpenAuditConsole}
+                className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 min-h-[38px] rounded-full border border-teal-500/25 bg-teal-500/10 hover:bg-teal-500/20 text-[#0F766E] dark:text-[#2DD4BF] text-xs font-extrabold transition-all cursor-pointer"
+                title={t.auditConsoleTitle}
+              >
+                <ShieldCheck className="w-3.5 h-3.5" />
+                <span>{t.auditVerifiedBadge}</span>
+              </button>
+            )}
+
+            {/* Language Selector (TR ▾) */}
+            <div className="relative" ref={langRef}>
+              <button
+                type="button"
+                onClick={() => setLangMenuOpen(!langMenuOpen)}
+                className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 min-h-[38px] rounded-full bg-teal-500/10 dark:bg-white/[0.06] border border-teal-500/25 dark:border-white/15 text-xs font-extrabold text-slate-800 dark:text-slate-100 hover:bg-teal-500/20 transition-all cursor-pointer"
+                title={t.languageSelect}
+                aria-label={t.languageSelect}
+              >
+                <span>{SUPPORTED_LANGUAGES.find((opt) => opt.code === language)?.flag || '🌐'}</span>
+                <span className="uppercase text-[11px] font-extrabold">{language}</span>
+                <ChevronDown className="w-3 h-3 opacity-75" />
+              </button>
+
+              {langMenuOpen && (
+                <div className="absolute right-0 mt-2 w-44 bg-white dark:bg-[#071E30] border border-teal-500/25 dark:border-white/15 rounded-2xl shadow-2xl py-1.5 z-50">
+                  {SUPPORTED_LANGUAGES.map((opt) => (
+                    <button
+                      key={opt.code}
+                      type="button"
+                      onClick={() => {
+                        setLanguage(opt.code);
+                        setLangMenuOpen(false);
+                        window.dispatchEvent(new PopStateEvent('popstate'));
+                      }}
+                      className={`w-full text-left px-3.5 py-2 text-xs font-bold flex items-center justify-between hover:bg-teal-500/10 transition-colors cursor-pointer ${
+                        language === opt.code
+                          ? 'text-[#0F766E] dark:text-[#2DD4BF] bg-teal-500/10'
+                          : 'text-slate-700 dark:text-slate-200'
+                      }`}
+                    >
+                      <span className="flex items-center gap-2">
+                        <span>{opt.flag}</span>
+                        <span>{opt.nativeName}</span>
+                      </span>
+                      {language === opt.code && <CheckCircle className="w-3.5 h-3.5 text-[#0D9488] dark:text-[#2DD4BF]" />}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Light / Dark Mode Toggle (☀️ / 🌙) */}
             <button
               type="button"
               onClick={onToggleTheme}
-              className="p-2 min-w-[38px] min-h-[38px] rounded-full glass-pill-control hover:bg-white dark:hover:bg-white/[0.08] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer flex items-center justify-center touch-target-min"
+              className="p-2 min-w-[38px] min-h-[38px] rounded-full bg-teal-500/10 dark:bg-white/[0.06] border border-teal-500/25 dark:border-white/15 text-slate-800 dark:text-amber-300 hover:bg-teal-500/20 transition-all cursor-pointer flex items-center justify-center"
               aria-label={t.themeToggle}
               title={t.themeToggle}
             >
-              {isDark ? <Sun className="w-4 h-4 text-[#E6B464]" /> : <Moon className="w-4 h-4 text-slate-700" />}
+              {isDark ? <Sun className="w-4 h-4 text-amber-300" /> : <Moon className="w-4 h-4 text-[#0F766E]" />}
             </button>
 
-            {isAuthenticated && user ? (
-              <button
-                type="button"
-                onClick={() => setUserMenuOpen(!userMenuOpen)}
-                className="flex items-center gap-1.5 p-1 rounded-full glass-pill-control"
-              >
-                <img
-                  src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
-                  alt={user.name}
-                  className="w-7 h-7 rounded-full object-cover border border-slate-300 dark:border-white/20"
-                />
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={() => openAuthModal('login')}
-                className="btn-nubair-primary py-1.5 px-3 text-xs font-bold"
-              >
-                <LogIn className="w-3.5 h-3.5" />
-                <span className="text-xs">{t.signIn}</span>
-              </button>
-            )}
-          </div>
-        </div>
-
-        {/* MOBILE ROW 2: Dynamically Separated Passport Wallet & Language Selector (Zero visual intersection) */}
-        <div className="flex md:hidden items-center justify-between gap-2.5 w-full pt-0.5">
-          {/* Active Citizenship Pill */}
-          <button
-            type="button"
-            onClick={onOpenPassportSelector}
-            className="flex-1 min-w-0 flex items-center justify-between px-3.5 py-2 min-h-[42px] rounded-full glass-pill-control text-xs font-bold text-slate-800 dark:text-slate-200 cursor-pointer hover:border-[#2A8C82]/40 transition-all touch-target-min shadow-2xs"
-            title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
-          >
-            <div className="flex items-center gap-2 truncate">
-              <span className="text-xl leading-none shrink-0">{getFlag(currentPassport)}</span>
-              <span className="font-mono text-xs font-bold text-slate-900 dark:text-white">{currentPassport}</span>
-              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate">
-                {getCountryName(currentPassport, language)}
-              </span>
-            </div>
-            <span className="text-[10px] uppercase font-bold text-[#2A8C82] dark:text-[#52B2A7] ml-1 shrink-0">
-              {l('Değiştir', 'Change', 'Ändern', 'Cambiar', 'Изм.')}
-            </span>
-          </button>
-
-          {/* Language Selector Dropdown on Mobile */}
-          <div className="relative shrink-0" ref={mobileLangRef}>
-            <button
-              type="button"
-              onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="flex items-center gap-1.5 px-3 py-2 min-h-[42px] rounded-full glass-pill-control text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] transition-all cursor-pointer touch-target-min shadow-2xs"
-              title={t.languageSelect}
-            >
-              <span>{SUPPORTED_LANGUAGES.find(l => l.code === language)?.flag || '🌐'}</span>
-              <span className="uppercase text-xs font-bold">{language}</span>
-              <ChevronDown className="w-3 h-3 text-slate-400" />
-            </button>
-
-            {langMenuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-[#111625] border border-slate-200/80 dark:border-white/10 rounded-[20px] shadow-2xl py-2 z-[10000] animate-in fade-in slide-in-from-top-1 duration-150">
-                {SUPPORTED_LANGUAGES.map(opt => (
+            {/* User Auth / Profile */}
+            <div className="relative" ref={menuRef}>
+              {isAuthenticated && user ? (
+                <div>
                   <button
-                    key={opt.code}
                     type="button"
-                    onClick={() => {
-                      setLanguage(opt.code);
-                      setLangMenuOpen(false);
-                      window.dispatchEvent(new PopStateEvent('popstate'));
-                    }}
-                    className={`w-full text-left px-4 py-2.5 min-h-[44px] text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-colors cursor-pointer touch-target-min ${
-                      language === opt.code
-                        ? 'text-slate-950 dark:text-white font-bold bg-slate-100/70 dark:bg-white/[0.08]'
-                        : 'text-slate-700 dark:text-[#8E9DBE]'
-                    }`}
+                    onClick={() => setUserMenuOpen(!userMenuOpen)}
+                    className="flex items-center gap-1.5 p-1 pr-2 rounded-full bg-teal-500/10 dark:bg-white/[0.06] border border-teal-500/25 cursor-pointer"
                   >
-                    <span className="flex items-center gap-2">
-                      <span>{opt.flag}</span>
-                      <span>{opt.nativeName}</span>
-                    </span>
-                    {language === opt.code && <CheckCircle className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />}
+                    <img
+                      src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
+                      alt={user.name}
+                      className="w-6 h-6 rounded-full object-cover"
+                    />
+                    <ChevronDown className="w-3 h-3 text-slate-500" />
                   </button>
-                ))}
-              </div>
-            )}
+
+                  {userMenuOpen && (
+                    <div className="absolute right-0 mt-2 w-52 bg-white dark:bg-[#071E30] border border-teal-500/25 rounded-2xl shadow-2xl p-2 z-50 space-y-1">
+                      <div className="px-3 py-1.5 border-b border-slate-100 dark:border-white/10">
+                        <p className="text-xs font-extrabold text-slate-900 dark:text-white truncate">{user.name}</p>
+                        <p className="text-[11px] text-slate-500 truncate">{user.email}</p>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setUserMenuOpen(false);
+                          onNavigateToProfile?.();
+                        }}
+                        className="w-full text-left px-3 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-teal-500/10 flex items-center gap-2 cursor-pointer"
+                      >
+                        <User className="w-3.5 h-3.5" />
+                        <span>{t.myAccount}</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setUserMenuOpen(false);
+                          logout();
+                        }}
+                        className="w-full text-left px-3 py-2 rounded-xl text-xs font-bold text-rose-600 hover:bg-rose-500/10 flex items-center gap-2 cursor-pointer"
+                      >
+                        <LogOut className="w-3.5 h-3.5" />
+                        <span>{t.signOut}</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => openAuthModal('login')}
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 min-h-[38px] rounded-full text-xs font-extrabold bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs hover:opacity-95 cursor-pointer"
+                >
+                  <LogIn className="w-3.5 h-3.5" />
+                  <span>{t.signIn}</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Global Search Bar: Full-width on mobile, centered flex-1 on desktop */}
-        <div
-          className="global-search-bar-container w-full max-w-full md:flex-1 md:max-w-xl xl:max-w-2xl md:mx-4"
-          style={{ width: '100%', maxWidth: '100%', zIndex: 9999, position: 'relative' }}
-        >
+        {/* =================================================================
+            ROW 2: Prominent Site-Wide Search Bar right below Vizamigo Row
+        ================================================================= */}
+        <div className="w-full">
           <label className="relative w-full flex items-center">
-            <Search className="w-4 h-4 text-[#2A8C82] dark:text-[#52B2A7] absolute left-4 pointer-events-none" />
+            <Search className="w-4 h-4 text-[#0F766E] dark:text-[#2DD4BF] absolute left-4 pointer-events-none" />
             <input
               type="search"
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-full h-11 sm:h-12 pl-10 sm:pl-11 pr-9 sm:pr-10 rounded-full text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-white/[0.06] backdrop-blur-md border border-slate-200/90 dark:border-white/[0.12] text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2A8C82]/35 focus:border-[#2A8C82]/60 focus:bg-white dark:focus:bg-[#111625] transition-all shadow-xs"
+              className="w-full h-11 pl-11 pr-24 rounded-full text-xs sm:text-sm font-semibold bg-[#F0FDFA]/90 dark:bg-white/[0.06] border border-teal-500/30 dark:border-teal-400/20 text-slate-900 dark:text-white placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0D9488]/40 focus:bg-white dark:focus:bg-[#071E30] transition-all shadow-2xs"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => onSearchChange?.('')}
-                className="absolute right-3 sm:right-3.5 p-1.5 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xs font-bold cursor-pointer"
-                title={l('Aramayı Temizle', 'Clear Search', 'Suche löschen', 'Limpiar búsqueda', 'Очистить поиск')}
+                className="absolute right-18 p-1.5 text-slate-500 hover:text-slate-900 dark:hover:text-white cursor-pointer"
+                title={l('Temizle', 'Clear')}
               >
                 <X className="w-4 h-4" />
               </button>
             )}
+            <button
+              type="button"
+              onClick={() => {
+                if (activeTab !== 'explore') onSelectTab?.('explore');
+                const dirEl = document.getElementById('vz-country-directory');
+                if (dirEl) dirEl.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="absolute right-1.5 px-4 py-1.5 rounded-full text-xs font-extrabold bg-gradient-to-r from-[#0D9488] to-[#10B981] text-white shadow-2xs hover:opacity-95 cursor-pointer"
+            >
+              {l('Ara', 'Search')}
+            </button>
           </label>
         </div>
-
-        {/* Desktop-Only Controls (Passport, Audit, Language, Theme, Auth) */}
-        <div className="hidden md:flex items-center gap-2 flex-shrink-0">
-          {/* Active Citizenship Pill */}
-          <button
-            type="button"
-            onClick={onOpenPassportSelector}
-            className="flex items-center gap-2 px-3.5 py-1.5 min-h-[40px] rounded-full glass-pill-control text-xs font-bold text-slate-800 dark:text-slate-200 cursor-pointer hover:border-[#2A8C82]/40 transition-all touch-target-min"
-            title={l('Aktif Pasaportu Değiştir', 'Change Active Passport', 'Aktiven Reisepass ändern')}
-          >
-            <span className="text-xl leading-none">{getFlag(currentPassport)}</span>
-            <span className="font-mono text-xs text-slate-600 dark:text-slate-300 font-bold">{currentPassport}</span>
-            <span className="hidden xl:inline text-xs text-slate-500 dark:text-slate-400 font-semibold truncate max-w-[90px]">
-              {getCountryName(currentPassport, language)}
-            </span>
-          </button>
-
-          {/* Audit Console Button (Desktop - Muted Horizon Teal) */}
-          {onOpenAuditConsole && (
-            <button
-              type="button"
-              onClick={onOpenAuditConsole}
-              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#2A8C82]/25 bg-[#2A8C82]/10 hover:bg-[#2A8C82]/18 text-[#1E6F66] dark:text-[#52B2A7] text-xs font-bold transition-all cursor-pointer"
-              title={t.auditConsoleTitle}
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />
-              <span>{t.auditVerifiedBadge}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2A8C82] dark:bg-[#52B2A7] animate-pulse" />
-            </button>
-          )}
-
-          {/* Desktop Language Selector */}
-          <div className="relative" ref={desktopLangRef}>
-            <button
-              type="button"
-              onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-full glass-pill-control text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-white/[0.08] transition-all cursor-pointer touch-target-min"
-              title={t.languageSelect}
-            >
-              <span>{SUPPORTED_LANGUAGES.find(l => l.code === language)?.flag || '🌐'}</span>
-              <span className="uppercase text-[11px] font-bold">{language}</span>
-              <ChevronDown className="w-3 h-3 text-slate-400" />
-            </button>
-
-            {langMenuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-[#111625] border border-slate-200/80 dark:border-white/10 rounded-[20px] shadow-2xl py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
-                {SUPPORTED_LANGUAGES.map(opt => (
-                  <button
-                    key={opt.code}
-                    type="button"
-                    onClick={() => {
-                      setLanguage(opt.code);
-                      setLangMenuOpen(false);
-                      window.dispatchEvent(new PopStateEvent('popstate'));
-                    }}
-                    className={`w-full text-left px-4 py-2.5 min-h-[44px] text-xs font-semibold flex items-center justify-between hover:bg-slate-50 dark:hover:bg-white/[0.06] transition-colors cursor-pointer touch-target-min ${
-                      language === opt.code
-                        ? 'text-slate-950 dark:text-white font-bold bg-slate-100/70 dark:bg-white/[0.08]'
-                        : 'text-slate-700 dark:text-[#8E9DBE]'
-                    }`}
-                  >
-                    <span className="flex items-center gap-2">
-                      <span>{opt.flag}</span>
-                      <span>{opt.nativeName}</span>
-                    </span>
-                    {language === opt.code && <CheckCircle className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Desktop Theme Toggle */}
-          <button
-            type="button"
-            onClick={onToggleTheme}
-            className="p-2.5 min-w-[40px] min-h-[40px] rounded-full glass-pill-control hover:bg-white dark:hover:bg-white/[0.08] text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer flex items-center justify-center touch-target-min"
-            aria-label={t.themeToggle}
-            title={t.themeToggle}
-          >
-            {isDark ? <Sun className="w-4 h-4 text-[#E6B464]" /> : <Moon className="w-4 h-4 text-slate-700" />}
-          </button>
-
-          {/* Desktop User Auth */}
-          <div className="relative" ref={menuRef}>
-            {isAuthenticated && user ? (
-              <div>
-                <button
-                  type="button"
-                  onClick={() => setUserMenuOpen(!userMenuOpen)}
-                  className="flex items-center gap-1.5 p-1 pl-1.5 pr-2.5 rounded-full glass-pill-control hover:bg-white dark:hover:bg-white/[0.08] transition-all cursor-pointer"
-                >
-                  <img
-                    src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
-                    alt={user.name}
-                    className="w-6 h-6 rounded-full object-cover border border-slate-300 dark:border-white/20"
-                  />
-                  <span className="text-xs font-bold text-slate-900 dark:text-white max-w-[70px] truncate hidden sm:inline">
-                    {user.name}
-                  </span>
-                  <ChevronDown className="w-3 h-3 text-slate-400" />
-                </button>
-
-                {userMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-[#111625] border border-slate-200/80 dark:border-white/10 rounded-[20px] shadow-2xl p-2.5 z-50 animate-in fade-in duration-150 space-y-1">
-                    <div className="px-3 py-2 border-b border-slate-100 dark:border-white/10">
-                      <p className="text-xs font-bold text-slate-900 dark:text-white truncate">{user.name}</p>
-                      <p className="text-[11px] text-slate-500 dark:text-[#8E9DBE] truncate">{user.email}</p>
-                    </div>
-
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setUserMenuOpen(false);
-                        onNavigateToProfile?.();
-                      }}
-                      className="w-full text-left px-3 py-2 rounded-[14px] text-xs font-semibold text-slate-700 dark:text-[#8E9DBE] hover:bg-slate-50 dark:hover:bg-white/[0.05] hover:text-slate-900 dark:hover:text-white flex items-center gap-2 cursor-pointer"
-                    >
-                      <User className="w-3.5 h-3.5 text-slate-600 dark:text-white" />
-                      <span>{t.myAccount}</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setUserMenuOpen(false);
-                        logout();
-                      }}
-                      className="w-full text-left px-3 py-2 rounded-[14px] text-xs font-semibold text-[#FF6B6B] hover:bg-[#FF6B6B]/10 flex items-center gap-2 cursor-pointer"
-                    >
-                      <LogOut className="w-3.5 h-3.5" />
-                      <span>{t.signOut}</span>
-                    </button>
-                  </div>
-                )}
-              </div>
-            ) : (
-              <button
-                type="button"
-                onClick={() => openAuthModal('login')}
-                className="btn-nubair-primary py-2 px-3.5 sm:px-4 text-xs font-bold"
-              >
-                <LogIn className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">{t.signIn}</span>
-              </button>
-            )}
-          </div>
-        </div>
       </div>
-
-      {/* Dedicated Desktop Sub-Header Navigation Row (Symmetrical, Spacious & Glassmorphic) */}
-      <nav className="hidden lg:flex w-full border-t border-slate-200/60 dark:border-white/[0.06] bg-white/50 dark:bg-white/[0.02] backdrop-blur-md" aria-label="Desktop Navigation">
-        <div className="w-full max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 xl:gap-3">
-          {[
-            { key: 'explore' as TabKey, icon: Compass, label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны') },
-            { key: 'plan' as TabKey, icon: Route, label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты') },
-            { key: 'track' as TabKey, icon: Calendar, label: l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage- & Aufenthaltstracker', 'Control de Estancia y Días', 'Счетчик Дней и Пребывания') },
-            { key: 'nomad' as TabKey, icon: Sparkles, label: l('Dijital Göçebe', 'Digital Nomad', 'Digitale Nomaden', 'Nómada Digital', 'Цифровой Номад') },
-            { key: 'profile' as TabKey, icon: User, label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошелек') },
-            { key: 'consular' as TabKey, icon: ShieldAlert, label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'), crisis: true },
-          ].map((item) => {
-            const Icon = item.icon;
-            const isActive = activeTab === item.key;
-            return (
-              <button
-                key={item.key}
-                type="button"
-                onClick={() => onSelectTab?.(item.key)}
-                className={`flex items-center gap-2 px-4 xl:px-5 py-2 rounded-full text-xs xl:text-sm font-bold tracking-[-0.02em] transition-all cursor-pointer whitespace-nowrap ${
-                  isActive
-                    ? item.crisis
-                      ? 'bg-[#FF6B6B]/15 text-[#FF6B6B] border border-[#FF6B6B]/30 shadow-xs'
-                      : 'tab-chip-active'
-                    : item.crisis
-                    ? 'text-[#FF6B6B]/85 hover:text-[#FF6B6B] hover:bg-[#FF6B6B]/10'
-                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-white/[0.05]'
-                }`}
-              >
-                <Icon className={`w-4 h-4 ${isActive ? (item.crisis ? 'text-[#FF6B6B]' : 'text-white') : (item.crisis ? 'text-[#FF6B6B]/75' : 'text-slate-400 dark:text-slate-500')}`} />
-                <span>{item.label}</span>
-              </button>
-            );
-          })}
-        </div>
-      </nav>
-
-      {/* Always-visible quick tools strip (desktop + mobile) */}
-      <QuickToolsStrip
-        onOpenPackingList={onOpenPackingList}
-        onOpenTippingCalc={onOpenTippingCalc}
-        onOpenTimezoneOverlap={onOpenTimezoneOverlap}
-        onOpenGlobalRadar={onOpenGlobalRadar}
-      />
     </header>
   );
 };

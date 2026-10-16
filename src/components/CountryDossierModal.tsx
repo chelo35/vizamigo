@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   X,
+  ArrowLeft,
+  Minus,
+  Search,
   Square,
   Maximize2,
   Minimize2,
@@ -133,6 +136,28 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [remoteBaseCity, setRemoteBaseCity] = useState<'IST' | 'NYC' | 'LON' | 'BER' | 'SFO' | 'SIN' | 'TYO'>('IST');
   const [marketTargetCurrency, setMarketTargetCurrency] = useState<'GBP' | 'USD' | 'EUR'>('GBP');
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [dossierSearch, setDossierSearch] = useState<string>('');
+
+  const handleDossierSearchChange = (q: string) => {
+    setDossierSearch(q);
+    const low = q.trim().toLocaleLowerCase('tr');
+    if (!low) return;
+    if (low.includes('vize') || low.includes('pasaport') || low.includes('evrak') || low.includes('giriş')) {
+      setActiveTab('visa');
+    } else if (low.includes('taksi') || low.includes('priz') || low.includes('internet') || low.includes('kur') || low.includes('döviz') || low.includes('saat')) {
+      setActiveTab('logistics');
+    } else if (low.includes('otel') || low.includes('uçak') || low.includes('sigorta') || low.includes('esim') || low.includes('uygulama')) {
+      setActiveTab('concierge');
+    } else if (low.includes('yemek') || low.includes('mutfak') || low.includes('bahşiş') || low.includes('restoran')) {
+      setActiveTab('gastronomy');
+    } else if (low.includes('dil') || low.includes('kelime') || low.includes('tarih') || low.includes('din')) {
+      setActiveTab('language');
+    } else if (low.includes('kültür') || low.includes('müze') || low.includes('gezilecek')) {
+      setActiveTab('culture');
+    } else if (low.includes('rota') || low.includes('plan')) {
+      setActiveTab('itinerary');
+    }
+  };
 
   const scrollToSection = (tab: DossierTab, targetId: string) => {
     setActiveTab(tab);
@@ -414,10 +439,19 @@ Planlayan: Vizamigo (vizamigo.com)`;
         <div className="w-12 h-1.5 rounded-full bg-slate-300/80 dark:bg-white/20 mx-auto mt-2.5 mb-1 sm:hidden shrink-0" aria-hidden="true" />
 
         {/* Top Header Banner - Symmetrical & Compact Executive Travel Layout */}
-        <div className="relative px-5 py-3.5 sm:px-6 sm:py-4 bg-gradient-to-r from-teal-900/10 via-slate-900/5 to-slate-900/10 dark:from-teal-950/40 dark:via-slate-900/40 dark:to-slate-950/40 border-b border-slate-200/80 dark:border-white/10">
+        <div className="relative px-4 py-3 sm:px-6 sm:py-4 bg-gradient-to-r from-[#0D9488]/15 via-[#0EA5E9]/10 to-[#10B981]/15 dark:from-[#0A2538] dark:via-[#071E30] dark:to-[#0A2538] border-b border-teal-500/20 dark:border-white/10">
           <div className="flex items-center justify-between gap-3">
-            {/* Left: Flag + Title + Code + Status */}
-            <div className="flex items-center gap-3 min-w-0">
+            {/* Left: [ ← Geri ] + Flag + Title + Code + Status */}
+            <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+              <button
+                type="button"
+                onClick={onClose}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-white/90 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-[#0D9488] hover:text-white transition-all cursor-pointer shadow-2xs shrink-0"
+                title={l('Geri Dön', 'Go Back')}
+              >
+                <ArrowLeft className="w-3.5 h-3.5" />
+                <span className="hidden xs:inline">{l('Geri', 'Back')}</span>
+              </button>
               <span className="text-3xl sm:text-4xl leading-none filter drop-shadow select-none shrink-0">
                 {getFlag(code)}
               </span>
@@ -440,25 +474,37 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
             </div>
 
-            {/* Right: Accessibility Controls (Desktop Expand/Minimize + Close) */}
+            {/* Right: Window Controls ([ — ] [ ⛶ ] [ ✕ ]) */}
             <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 z-20">
-              {/* A. Expand Button - Desktop */}
+              <button
+                type="button"
+                onClick={() => {
+                  if (isFullscreen) setIsFullscreen(false);
+                  else onClose();
+                }}
+                className="inline-flex items-center justify-center p-2 rounded-full bg-white/80 dark:bg-white/10 hover:bg-teal-500/20 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shadow-2xs"
+                title={l('Küçült', 'Minimize')}
+                aria-label="Minimize window"
+              >
+                <Minus className="w-4 h-4" />
+              </button>
+
               {!isFullscreen ? (
                 <button
                   type="button"
                   onClick={() => setIsFullscreen(true)}
-                  className="hidden sm:inline-flex items-center justify-center p-2 rounded-full bg-slate-100 hover:bg-teal-50 dark:bg-white/10 dark:hover:bg-teal-500/20 text-slate-600 hover:text-teal-600 dark:text-slate-300 dark:hover:text-teal-300 transition-all cursor-pointer shadow-2xs hover:scale-105 active:scale-95"
-                  title={l('Tam Ekran Ansiklopedi Görünümüne Büyüt', 'Expand to Fullscreen Encyclopedia', 'Auf Vollbild vergrößern')}
+                  className="inline-flex items-center justify-center p-2 rounded-full bg-white/80 dark:bg-white/10 hover:bg-teal-500/20 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shadow-2xs"
+                  title={l('Ekranı Kapla', 'Fullscreen')}
                   aria-label="Expand country dossier to full screen"
                 >
-                  <Square className="w-4 h-4" />
+                  <Maximize2 className="w-4 h-4" />
                 </button>
               ) : (
                 <button
                   type="button"
                   onClick={() => setIsFullscreen(false)}
-                  className="hidden sm:inline-flex items-center justify-center p-2 rounded-full bg-teal-50 hover:bg-slate-100 dark:bg-teal-500/20 dark:hover:bg-white/10 text-teal-600 hover:text-slate-600 dark:text-teal-300 dark:hover:text-slate-300 transition-all cursor-pointer shadow-2xs hover:scale-105 active:scale-95"
-                  title={l('Varsayılan Boyuta Küçült', 'Restore to Modular Window', 'Auf Fenstergröße verkleinern')}
+                  className="inline-flex items-center justify-center p-2 rounded-full bg-teal-500/20 hover:bg-white/10 text-teal-700 dark:text-teal-300 transition-all cursor-pointer shadow-2xs"
+                  title={l('Varsayılan Boyuta Küçült', 'Restore Window')}
                   aria-label="Restore default size"
                 >
                   <Minimize2 className="w-4 h-4" />
@@ -469,50 +515,66 @@ Planlayan: Vizamigo (vizamigo.com)`;
               <button
                 type="button"
                 onClick={onClose}
-                className="p-2 rounded-full bg-slate-100 hover:bg-rose-50 dark:bg-white/10 dark:hover:bg-rose-500/20 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-300 transition-all cursor-pointer shrink-0 shadow-2xs hover:scale-105 active:scale-95"
+                className="p-2 rounded-full bg-rose-500/15 hover:bg-rose-500 text-rose-700 dark:text-rose-300 hover:text-white transition-all cursor-pointer shrink-0 shadow-2xs"
                 title={l('Kapat', 'Close', 'Schließen')}
                 aria-label="Close dossier"
               >
-                <X className="w-5 h-5" />
+                <X className="w-4 h-4" />
               </button>
             </div>
           </div>
 
-          {/* Symmetrical Row 2: Metadata & Verification Pill Strip */}
-          <div className="flex items-center gap-1.5 sm:gap-2 mt-2 pt-2 border-t border-slate-200/60 dark:border-white/5 overflow-x-auto scrollbar-none text-[11px]">
-            {(geo?.capital || geography?.capital) && (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-semibold border border-slate-200/80 dark:border-white/5 shrink-0">
-                <span>🏛️</span>
-                <span>{l('Başkent:', 'Capital:', 'Hauptstadt:')} <b>{geo?.capital || geography?.capital}</b></span>
-              </span>
-            )}
+          {/* Symmetrical Row 2: In-Dossier Search Bar + Metadata & Verification Pill Strip */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-2.5 pt-2.5 border-t border-teal-500/15 dark:border-white/10 text-[11px]">
+            <div className="relative w-full sm:w-80 shrink-0">
+              <Search className="w-3.5 h-3.5 text-[#0F766E] dark:text-[#2DD4BF] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="search"
+                value={dossierSearch}
+                onChange={(e) => handleDossierSearchChange(e.target.value)}
+                placeholder={l(
+                  `${name} içinde vize, taksi, priz, otel veya yemek ara...`,
+                  `Search visa, taxi, plug, hotel or food in ${name}...`
+                )}
+                className="w-full pl-8 pr-3 py-1.5 rounded-full text-xs font-semibold bg-white/95 dark:bg-white/[0.08] border border-teal-500/25 dark:border-white/15 text-slate-900 dark:text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-500/40"
+              />
+            </div>
 
-            {geo?.mainHub && (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-semibold border border-slate-200/80 dark:border-white/5 shrink-0">
-                <span>✈️</span>
-                <span>IATA: <b className="font-mono text-teal-600 dark:text-teal-400">{geo.mainHub}</b></span>
-              </span>
-            )}
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+              {(geo?.capital || geography?.capital) && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/80 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-bold border border-teal-500/15 shrink-0">
+                  <span>🏛️</span>
+                  <span>{l('Başkent:', 'Capital:', 'Hauptstadt:')} <b>{geo?.capital || geography?.capital}</b></span>
+                </span>
+              )}
 
-            <button
-              type="button"
-              onClick={onOpenAudit}
-              className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg font-bold border transition-colors cursor-pointer shrink-0 ${verStatus.color}`}
-              title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
-            >
-              <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-              <span>✓ {verStatus.label}</span>
-            </button>
+              {geo?.mainHub && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/80 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-bold border border-teal-500/15 shrink-0">
+                  <span>✈️</span>
+                  <span>IATA: <b className="font-mono text-[#0F766E] dark:text-[#2DD4BF]">{geo.mainHub}</b></span>
+                </span>
+              )}
 
-            <button
-              type="button"
-              onClick={openGoogleMaps}
-              className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold border border-slate-200/80 dark:border-white/5 transition-colors cursor-pointer shrink-0 ml-auto"
-            >
-              <MapPin className="w-3 h-3 text-rose-500" />
-              <span>Google Haritalar</span>
-              <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-            </button>
+              <button
+                type="button"
+                onClick={onOpenAudit}
+                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-bold border transition-colors cursor-pointer shrink-0 ${verStatus.color}`}
+                title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
+              >
+                <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                <span>✓ {verStatus.label}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={openGoogleMaps}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/80 hover:bg-teal-500/15 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-bold border border-teal-500/15 transition-colors cursor-pointer shrink-0"
+              >
+                <MapPin className="w-3 h-3 text-rose-500" />
+                <span>Harita</span>
+                <ExternalLink className="w-2.5 h-2.5 opacity-70" />
+              </button>
+            </div>
           </div>
         </div>
 

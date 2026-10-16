@@ -58,6 +58,7 @@ import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/schemaGenerator';
 
 import { TabKey } from './Navigation';
+import { BentoDashboardGrid } from './bento/BentoDashboardGrid';
 
 // Code-split heavy visual nodes & live loop widgets for <0.5s instant initial paint
 const InteractiveWorldMap = lazy(() =>
@@ -690,210 +691,21 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </button>
           </div>
 
-      {/* Top Travel Command Suite: World Clock, Live Weather & FX Converter */}
-      <section className="space-y-6 mb-9" aria-label="Travel Widgets and Tools">
-        {/* Live Interactive Widgets: World Clock, Live Weather & FX Converter Side-by-Side (Hydrated asynchronously after first paint) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {widgetsHydrated ? (
-            <>
-              <Suspense fallback={<WidgetCardSkeleton />}>
-                <WorldClockWidget onOpenRadar={(city) => onOpenGlobalRadar?.('clock', city)} />
-              </Suspense>
-              <Suspense fallback={<WidgetCardSkeleton />}>
-                <WeatherWidget onOpenRadar={(city) => onOpenGlobalRadar?.('weather', city)} />
-              </Suspense>
-              <Suspense fallback={<WidgetCardSkeleton />}>
-                <CurrencyWidget onOpenRadar={() => onOpenGlobalRadar?.('currency')} />
-              </Suspense>
-            </>
-          ) : (
-            <>
-              <WidgetCardSkeleton />
-              <WidgetCardSkeleton />
-              <WidgetCardSkeleton />
-            </>
-          )}
-        </div>
-
-        {/* Quick Travel Tools (4 Symmetrical Interactive Cards) */}
-        <div>
-          <div className="rounded-full bg-white/80 dark:bg-white/[0.04] border border-slate-200/60 dark:border-white/[0.08] text-xs font-bold text-slate-600 dark:text-slate-400 px-4 py-2 flex items-center justify-between mb-4">
-            <span className="flex items-center gap-2">
-              <Sparkles className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7]" />
-              <span>{l('Hızlı Gezgin Araçları', 'Quick Travel Tools', 'Reise-Werkzeuge', 'Herramientas de Viaje', 'Инструменты')}</span>
-            </span>
-            <span className="font-mono text-[10px] bg-[#2A8C82]/10 text-[#1E6F66] dark:text-[#52B2A7] px-2.5 py-0.5 rounded-full font-bold">2026 Edition</span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Tool Card 1: Rota & Sinerji */}
-            <button
-              type="button"
-              onClick={() => onNavigateTab?.('plan')}
-              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Route className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Rota & Sinerji', 'Route & Synergy', 'Route & Synergie', 'Ruta y Sinergia', 'Маршруты')}</span>
-                  <span className="text-[#1E6F66] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
-                  {l('Çok ülkeli rota planlayıcı', 'Multi-country itinerary', 'Mehrländer-Planer', 'Planificador de ruta', 'Маршрут')}
-                </p>
-              </div>
-            </button>
-
-            {/* Tool Card 2: Gün & Kalış Sayacı */}
-            <button
-              type="button"
-              onClick={() => onNavigateTab?.('track')}
-              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Calendar className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage-Tracker', 'Control de Días', 'Счетчик')}</span>
-                  <span className="text-[#1E6F66] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
-                  {l('90/180 gün kuralı & kalış', '90/180-day window & stay', 'Rollierende 180 Tage', 'Regla 90/180 días', 'Правило 90/180')}
-                </p>
-              </div>
-            </button>
-
-            {/* Tool Card 3: Dijital Göçebe */}
-            <button
-              type="button"
-              onClick={() => onNavigateTab?.('nomad')}
-              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#3A7CA5]/12 text-[#235878] dark:text-[#6DAEDB] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Sparkles className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Dijital Göçebe', 'Digital Nomad Tools', 'Nomaden-Tools', 'Nómada Digital', 'Номады')}</span>
-                  <span className="text-[#235878] dark:text-[#6DAEDB] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
-                  {l('183 gün vergi & internet hızları', '183-day tax tracker & speeds', 'Steuer- & Internet-Tracker', 'Impuestos y velocidades', 'Налоги и скорость')}
-                </p>
-              </div>
-            </button>
-
-            {/* Tool Card 4: Konsolosluk Destek (Pastel Sunset Coral #FF6B6B) */}
-            <button
-              type="button"
-              onClick={() => onNavigateTab?.('consular')}
-              className="p-5 rounded-[24px] glass-crisis hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#FF6B6B]/14 text-[#FF6B6B] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <ShieldAlert className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульство')}</span>
-                  <span className="text-[#C0392B] dark:text-[#FF8E8E] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-[#C0392B] dark:text-[#FF8E8E] mt-0.5 truncate leading-[1.6]">
-                  {l('7/24 Acil kriz masası & pasaport', '24/7 Diplomatic crisis hotline', '24/7 Notfallkonsole', 'Línea de emergencia 24/7', 'Круглосуточная помощь')}
-                </p>
-              </div>
-            </button>
-          </div>
-
-          {/* Practical Traveler & Nomad Tools Row (Packing, Tipping, Timezone Overlap, Global Radar) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-            {/* Tool Card 5: Akıllı Bavul Listesi */}
-            <button
-              type="button"
-              onClick={onOpenPackingList}
-              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/10 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Luggage className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Akıllı Bavul Listesi', 'Smart Packing List', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}</span>
-                  <span className="text-[#2A8C82] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
-                  {l('Seyahat tipine özel liste & takip', 'Trip style packing checklist', 'Packliste nach Reisestil', 'Lista personalizada', 'Чек-лист для поездки')}
-                </p>
-              </div>
-            </button>
-
-            {/* Tool Card 6: Bahşiş & Masraf Bölüşücü */}
-            <button
-              type="button"
-              onClick={onOpenTippingCalc}
-              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#D9A14A]/12 text-[#D9A14A] dark:text-[#E6B464] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Coins className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Bahşiş & Masraf Bölüşücü', 'Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}</span>
-                  <span className="text-[#D9A14A] dark:text-[#E6B464] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
-                  {l('Ülke kurallı bahşiş & kişi başı hesap', 'Country tipping etiquette & split', 'Trinkgeld-Etikette & Aufteilung', 'Propina y división de cuenta', 'Чаевые по странам')}
-                </p>
-              </div>
-            </button>
-
-            {/* Tool Card 7: Toplantı & Saat Çakışması */}
-            <button
-              type="button"
-              onClick={onOpenTimezoneOverlap}
-              className="p-5 rounded-[24px] glass-card hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#6C7A9C]/12 text-[#5A688A] dark:text-[#94A3C4] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Laptop className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Toplantı Saat Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}</span>
-                  <span className="text-[#5A688A] dark:text-[#94A3C4] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate leading-[1.6]">
-                  {l('Göçebeler için altın çalışma saatleri', 'Golden work hours for nomads', 'Goldene Arbeitsstunden für Remote', 'Horas ideales para nómadas', 'Часы для созвонов')}
-                </p>
-              </div>
-            </button>
-
-            {/* Tool Card 8: Küresel Seyahat Radarı & Dünya Haritası */}
-            <button
-              type="button"
-              onClick={() => onOpenGlobalRadar?.('all')}
-              className="p-5 rounded-[24px] glass-card bg-gradient-to-br from-[#2A8C82]/[0.05] via-transparent to-[#FF6B6B]/[0.04] hover:shadow-md transition-all text-left group cursor-pointer flex items-center gap-3.5 leading-[1.6]"
-            >
-              <div className="w-11 h-11 rounded-[16px] bg-[#2A8C82]/14 text-[#2A8C82] dark:text-[#52B2A7] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                <Radio className="w-5 h-5" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="font-bold tracking-[-0.02em] text-xs sm:text-sm text-slate-900 dark:text-white flex items-center justify-between">
-                  <span className="truncate">{l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Reiseradar-Karte', 'Radar de Viajes', 'Радар Путешествий')}</span>
-                  <span className="text-[#1E6F66] dark:text-[#52B2A7] text-xs group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">→</span>
-                </div>
-                <p className="text-[11px] text-[#1E6F66] dark:text-[#52B2A7] mt-0.5 truncate font-medium leading-[1.6]">
-                  {l('Canlı saat, hava ve döviz haritası', 'Live clock, weather & FX map', 'Echtzeit-Uhr, Wetter & Devisen', 'Reloj, clima y divisas en vivo', 'Карта времени, погоды и валют')}
-                </p>
-              </div>
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* 12-Card 3D Illustrated & Animated Bento Dashboard Grid (With Sub-Widget Drill-Down) */}
+      <div className="mb-8">
+        <BentoDashboardGrid
+          currentPassport={currentPassport}
+          onOpenCountryDossier={(code) => openDossier(code)}
+          onSelectTab={(tab) => onNavigateTab?.(tab)}
+          onOpenPackingList={() => onOpenPackingList?.()}
+          onOpenTippingCalc={() => onOpenTippingCalc?.()}
+          onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
+          onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
+        />
+      </div>
 
       {/* Destinations List (Full-Width Symmetrical Layout with 35% expanded breathing space) */}
-      <div className="w-full space-y-6">
+      <div id="vz-country-directory" className="w-full space-y-6">
         {filteredItems.length === 0 ? (
           <div className="text-center py-16 glass-card rounded-[24px] p-8">
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-[1.6]">

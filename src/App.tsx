@@ -44,6 +44,12 @@ const NomadToolsTab = lazy(() =>
 const ProfileTab = lazy(() =>
   import('./components/ProfileTab').then(m => ({ default: m.ProfileTab }))
 );
+const WalletTab = lazy(() =>
+  import('./components/WalletTab').then(m => ({ default: m.WalletTab }))
+);
+const BentoDashboardGrid = lazy(() =>
+  import('./components/bento/BentoDashboardGrid').then(m => ({ default: m.BentoDashboardGrid }))
+);
 const PassportSelectModal = lazy(() =>
   import('./components/PassportSelectModal').then(m => ({ default: m.PassportSelectModal }))
 );
@@ -192,14 +198,14 @@ function AppContent() {
         is404={route.is404}
       />
 
-      {/* Permanent Fixed Fullscreen Dual-Theme Background (Zero white cutoffs on vertical scroll) */}
-      <div className="fixed inset-0 pointer-events-none -z-20 bg-[#F8FAFC] dark:bg-gradient-to-br dark:from-[#0C0F19] dark:via-[#111625] dark:to-[#161D30]" />
+      {/* Permanent Fixed Fullscreen Dual-Theme Crystal Lagoon Background */}
+      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-b from-[#F0FDFA] via-[#E0F2FE]/60 to-[#ECFDF5] dark:from-[#041421] dark:via-[#071E30] dark:to-[#062235]" />
 
-      {/* Ambient luxury background glow orbs (Nubair celestial midnight & Social Media App luminous atmosphere) */}
+      {/* Ambient Tropical Lagoon & Ocean Breeze Orbs */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-teal-500/[0.05] dark:bg-teal-500/[0.04] rounded-full blur-[160px]" />
-        <div className="absolute top-1/3 -right-20 w-[440px] h-[440px] bg-sky-500/[0.06] dark:bg-blue-600/[0.05] rounded-full blur-[150px]" />
-        <div className="absolute -bottom-20 left-1/3 w-[520px] h-[520px] bg-amber-500/[0.05] dark:bg-[#E5A93C]/[0.03] rounded-full blur-[150px]" />
+        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-teal-400/[0.10] dark:bg-teal-500/[0.06] rounded-full blur-[160px]" />
+        <div className="absolute top-1/3 -right-20 w-[440px] h-[440px] bg-sky-400/[0.10] dark:bg-sky-500/[0.06] rounded-full blur-[150px]" />
+        <div className="absolute -bottom-20 left-1/3 w-[520px] h-[520px] bg-emerald-400/[0.08] dark:bg-emerald-500/[0.05] rounded-full blur-[150px]" />
       </div>
 
       {/* ========================================================
@@ -223,7 +229,7 @@ function AppContent() {
           2. MAIN CONTENT AREA (FULL-WIDTH LUXURY LAYOUT)
       ======================================================== */}
       <div className="flex flex-col flex-1 app-shell-viewport min-h-[100dvh] w-full transition-all">
-        {/* Top Context & Navigation Bar (Mockup 'Masaüstü' Header) */}
+        {/* Top Context & Navigation Bar */}
         <Header
           currentPassport={currentPassport}
           onOpenPassportSelector={() => setIsPassportModalOpen(true)}
@@ -252,7 +258,7 @@ function AppContent() {
         />
 
         {/* Content Body Centered with Full Breathing Space */}
-        <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-32 lg:pb-16 space-y-6">
+        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pb-32 lg:pb-16 space-y-6">
           {route.is404 ? (
             <NotFoundView
               language={language}
@@ -264,21 +270,21 @@ function AppContent() {
               {/* Tab Content: 1. KEŞFET / EXPLORE */}
               {activeTab === 'explore' && (
             <div className="space-y-6">
-              {/* Keşfet: hero + search card (Vizamigo redesign) */}
+              {/* Keşfet: Crystal Lagoon Hero + Quick Action Bar */}
               <HomeHero
                 title={l(
-                  '199 ülke, pasaportunla tek bakışta',
-                  '199 countries, one passport view',
-                  '199 Länder, ein Blick',
-                  '199 países, de un vistazo',
-                  '199 стран с первого взгляда'
+                  'Valizini hazırla, vizeyi dert etme.',
+                  'Pack your bags, forget the visa stress.',
+                  'Koffer packen, Visum-Stress vergessen.',
+                  'Prepara tu maleta, olvida el estrés del visado.',
+                  'Собирайте чемодан, забудьте о визовом стрессе.'
                 )}
                 subtitle={l(
-                  'Vize, Schengen sayacı ve rota planı bir arada.',
-                  'Visas, Schengen tracker and route planner in one place.',
-                  'Visa, Schengen-Zähler und Routenplaner.',
-                  'Visados, Schengen y planificador de rutas.',
-                  'Визы, Шенген и маршруты в одном месте.'
+                  '199 ülke vize rehberi, dünya gün sayacı, rota planı ve yerel uygulamalar tek panoda.',
+                  '199-country visa guide, global day counter, route planner & local apps in one dashboard.',
+                  '199 Länder Visaguide, Welt-Tagezähler, Routenplaner und lokale Apps in einem Dashboard.',
+                  'Guía de 199 países, contador global de días, planificador de rutas y apps locales.',
+                  'Гид по 199 странам, глобальный счетчик дней, планировщик маршрутов и местные приложения.'
                 )}
                 passportLabel={`${currentPassport} · ${getCountryName(currentPassport, language)}`}
                 onPassportClick={() => setIsPassportModalOpen(true)}
@@ -294,6 +300,7 @@ function AppContent() {
                 searchPlaceholder={l('Japonya, Tayland, Almanya…', 'Japan, Thailand, Germany…', 'Japan, Thailand, Deutschland…', 'Japón, Tailandia, Alemania…', 'Япония, Таиланд, Германия…')}
                 statLabel={l('Vizesiz veya kimlikle giriş', 'Visa-free or ID card entry', 'Visumfrei oder mit Ausweis', 'Entrada sin visado o con DNI', 'Без визы или по удостоверению')}
                 statValue={visaFreeCount}
+                onQuickNavigate={handleSelectTab}
               />
 
               {exploreSubTab === 'all' ? (
@@ -319,19 +326,18 @@ function AppContent() {
             </div>
           )}
 
-          {/* Tab Content: 2. PLANLA / PLAN */}
+          {/* Tab Content: 2. ROTA & SİNERJİ / PLAN */}
           {activeTab === 'plan' && (
             <div className="space-y-6">
-              {/* Planla Sub Tabs */}
               <div className="flex items-center justify-start overflow-x-auto scrollbar-none pb-1">
-                <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1 whitespace-nowrap">
+                <div className="inline-flex p-1 rounded-full bento-lagoon-card gap-1 whitespace-nowrap">
                   <button
                     type="button"
                     onClick={() => setPlanSubTab('route')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                       planSubTab === 'route'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
+                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
+                        : 'text-slate-700 dark:text-slate-200'
                     }`}
                   >
                     {t.subTabRoutePlanner}
@@ -339,10 +345,10 @@ function AppContent() {
                   <button
                     type="button"
                     onClick={() => setPlanSubTab('compare')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                       planSubTab === 'compare'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
+                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
+                        : 'text-slate-700 dark:text-slate-200'
                     }`}
                   >
                     {t.subTabComparePassports}
@@ -350,10 +356,10 @@ function AppContent() {
                   <button
                     type="button"
                     onClick={() => setPlanSubTab('nomad')}
-                    className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                       planSubTab === 'nomad'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
+                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
+                        : 'text-slate-700 dark:text-slate-200'
                     }`}
                   >
                     {t.subTabNomadHubs}
@@ -374,14 +380,42 @@ function AppContent() {
             </div>
           )}
 
-          {/* Tab Content: 3. TAKİP / TRACK (GÜN & KALIŞ SAYACI) */}
+          {/* Tab Content: 3. CÜZDAN & DÜNYA GÜN SAYACI / TRACK */}
           {activeTab === 'track' && (
-            <DayCounterTab />
+            <div className="space-y-8">
+              <WalletTab
+                currentPassport={currentPassport}
+                secondaryPassport={secondaryPassport}
+                onChangePassport={() => setIsPassportModalOpen(true)}
+                onSelectStayTracker={() => {
+                  const el = document.getElementById('vz-day-counter-section');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+              />
+              <div id="vz-day-counter-section">
+                <DayCounterTab />
+              </div>
+            </div>
           )}
 
-          {/* Tab Content: 4. DİJİTAL GÖÇEBE / NOMAD */}
+          {/* Tab Content: 4. GEZGİN ARAÇLARI & DİJİTAL GÖÇEBE / NOMAD */}
           {activeTab === 'nomad' && (
-            <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
+            <div className="space-y-8">
+              <BentoDashboardGrid
+                currentPassport={currentPassport}
+                secondaryPassport={secondaryPassport}
+                onOpenCountryDossier={(code) => {
+                  setActiveTab('explore');
+                  handleCountrySelect(code);
+                }}
+                onSelectTab={handleSelectTab}
+                onOpenPackingList={() => setIsPackingListOpen(true)}
+                onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                onOpenGlobalRadar={openRadar}
+              />
+              <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
+            </div>
           )}
 
           {/* Tab Content: 5. PROFİL & ARAÇLAR / PROFILE */}

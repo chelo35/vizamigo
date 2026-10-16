@@ -2,14 +2,10 @@ import React from 'react';
 import {
   Compass,
   Route,
-  Calendar,
+  Wrench,
+  Wallet,
   User,
-  ShieldAlert,
-  ArrowRightLeft,
-  PhoneCall,
-  Menu,
-  X,
-  Sparkles
+  X
 } from 'lucide-react';
 import { useI18n } from '../data/i18n';
 import { getFlag, getCountryName } from '../data/passportData';
@@ -32,7 +28,6 @@ export const Navigation: React.FC<NavigationProps> = ({
   onSelectTab,
   currentPassport,
   onOpenPassportSelector,
-  onOpenAuditConsole,
   isMobileDrawerOpen = false,
   onToggleMobileDrawer,
   onOpenPackingList,
@@ -40,47 +35,50 @@ export const Navigation: React.FC<NavigationProps> = ({
   onOpenTimezoneOverlap,
   onOpenGlobalRadar
 }) => {
-  const { language, l, t } = useI18n();
-  const quickTools = useQuickTools({ onOpenPackingList, onOpenTippingCalc, onOpenTimezoneOverlap, onOpenGlobalRadar });
+  const { language, l } = useI18n();
+  const quickTools = useQuickTools({
+    onOpenPackingList,
+    onOpenTippingCalc,
+    onOpenTimezoneOverlap,
+    onOpenGlobalRadar
+  });
 
-  const navItems = [
+  // 5 Main Tabs (Keşfet · Rota · Araçlar · Cüzdan · Profil)
+  const navItems: Array<{
+    key: TabKey;
+    label: string;
+    shortLabel: string;
+    icon: React.ComponentType<{ className?: string }>;
+  }> = [
     {
-      key: 'explore' as TabKey,
-      label: l('Keşfet & Vize', 'Explore Visas', 'Visa Entdecken', 'Explorar y Visados', 'Визы и Страны'),
-      shortLabel: t.navExplore,
-      icon: Compass,
-      tag: '199'
+      key: 'explore',
+      label: l('Keşfet & Pano', 'Explore & Dashboard', 'Entdecken', 'Explorar', 'Обзор'),
+      shortLabel: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'),
+      icon: Compass
     },
     {
-      key: 'plan' as TabKey,
-      label: l('Rota & Sinerji', 'Plan & Synergy', 'Routenplaner', 'Ruta y Sinergia', 'Маршруты'),
-      shortLabel: t.navPlan,
+      key: 'plan',
+      label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta', 'Маршрут'),
+      shortLabel: l('Rota', 'Route', 'Route', 'Ruta', 'Маршрут'),
       icon: Route
     },
     {
-      key: 'track' as TabKey,
-      label: l('Gün & Kalış Sayacı', 'Stay & Day Tracker', 'Tage- & Aufenthaltstracker', 'Control de Estancia y Días', 'Счетчик Дней и Пребывания'),
-      shortLabel: l('Gün Sayacı', 'Tracker', 'Tage-Tracker', 'Estancia', 'Дни'),
-      icon: Calendar
+      key: 'nomad',
+      label: l('Gezgin Araçları', 'Traveler Tools', 'Werkzeuge', 'Herramientas', 'Инструменты'),
+      shortLabel: l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструм.'),
+      icon: Wrench
     },
     {
-      key: 'nomad' as TabKey,
-      label: l('Dijital Göçebe', 'Digital Nomad', 'Digitale Nomaden', 'Nómada Digital', 'Цифровой Номад'),
-      shortLabel: l('Göçebe', 'Nomad', 'Nomaden', 'Nómada', 'Номад'),
-      icon: Sparkles
+      key: 'track',
+      label: l('Cüzdan & Gün Sayacı', 'Wallet & Day Counter', 'Wallet & Tage', 'Cartera', 'Кошелек'),
+      shortLabel: l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелек'),
+      icon: Wallet
     },
     {
-      key: 'profile' as TabKey,
-      label: l('Profil & Cüzdan', 'Profile & Vault', 'Mein Profil', 'Perfil y Cartera', 'Профиль и Кошеlek'),
-      shortLabel: t.navProfile,
+      key: 'profile',
+      label: l('Profil & Acil Yardım', 'Profile & SOS', 'Profil & SOS', 'Perfil', 'Профиль'),
+      shortLabel: l('Profil', 'Profile', 'Profil', 'Perfil', 'Профиль'),
       icon: User
-    },
-    {
-      key: 'consular' as TabKey,
-      label: l('Konsolosluk Destek', 'Consular Support', 'Konsular-Hilfe', 'Apoyo Consular', 'Консульская Помощь'),
-      shortLabel: l('Acil Destek', 'Crisis', 'Notfall', 'Emergencia', 'Помощь'),
-      icon: ShieldAlert,
-      crisis: true
     }
   ];
 
@@ -94,78 +92,60 @@ export const Navigation: React.FC<NavigationProps> = ({
   return (
     <>
       {/* ========================================================
-          1. MOBILE SLIDING DRAWER (HIDDEN HAMBURGER OVERLAY)
+          1. MOBILE SLIDING DRAWER (OPTIONAL QUICK DRAWER)
       ======================================================== */}
       {isMobileDrawerOpen && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
-          {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+            className="fixed inset-0 bg-slate-950/65 backdrop-blur-sm transition-opacity"
             onClick={onToggleMobileDrawer}
           />
-
-          {/* Drawer Content */}
-          <div className="relative w-72 max-w-[85vw] mobile-drawer-viewport h-[100dvh] overflow-y-auto sidebar-glass p-6 flex flex-col justify-between gap-6 shadow-2xl z-10 animate-in slide-in-from-left duration-200">
-            <div className="space-y-6">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-200/70 dark:border-white/[0.08]">
+          <div className="relative w-72 max-w-[85vw] h-[100dvh] overflow-y-auto bg-[#F0FDFA] dark:bg-[#051824] border-r border-teal-500/25 p-5 flex flex-col justify-between gap-6 shadow-2xl z-10">
+            <div className="space-y-5">
+              <div className="flex items-center justify-between pb-3 border-b border-teal-500/20 dark:border-white/10">
                 <button
                   type="button"
-                  onClick={() => {
-                    onSelectTab('explore');
-                    if (window.location.pathname !== `/${language}`) {
-                      window.history.pushState({ lang: language, tab: 'explore' }, '', `/${language}`);
-                      window.dispatchEvent(new PopStateEvent('popstate'));
-                    }
-                  }}
-                  className="flex items-center gap-2.5 cursor-pointer text-left group"
+                  onClick={() => handleNavClick('explore')}
+                  className="flex items-center gap-2 cursor-pointer text-left"
                 >
-                  <picture>
-                    <source srcSet="/logo.webp" type="image/webp" />
-                    <img
-                      src="/logo.png"
-                      alt="Vizamigo"
-                      width="36"
-                      height="36"
-                      className="w-9 h-9 object-contain rounded-full shadow-xs group-hover:scale-105 transition-transform"
-                    />
-                  </picture>
+                  <img src="/logo.png" alt="Vizamigo" width="34" height="34" className="w-8 h-8 rounded-full" />
                   <span className="font-extrabold text-lg text-slate-900 dark:text-white">
-                    Vizamigo<span className="text-teal-500">.</span>
+                    Vizamigo<span className="text-[#0D9488] dark:text-[#2DD4BF]">.</span>
                   </span>
                 </button>
                 <button
                   type="button"
                   onClick={onToggleMobileDrawer}
-                  className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-white/[0.08] text-slate-400"
+                  className="p-2 rounded-full hover:bg-teal-500/15 text-slate-600 dark:text-slate-300"
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
 
-              {/* Active Citizenship Mobile Card */}
+              {/* Active Citizenship Card */}
               <div
                 onClick={() => {
                   onOpenPassportSelector();
-                  if (onToggleMobileDrawer) onToggleMobileDrawer();
+                  onToggleMobileDrawer?.();
                 }}
-                className="p-3.5 rounded-2xl glass-card flex items-center justify-between cursor-pointer"
+                className="p-3.5 rounded-2xl bento-lagoon-card flex items-center justify-between cursor-pointer"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{getFlag(currentPassport)}</span>
                   <div>
-                    <div className="font-bold text-xs text-slate-900 dark:text-white">
+                    <div className="font-extrabold text-xs text-slate-900 dark:text-white">
                       {getCountryName(currentPassport, language)}
                     </div>
-                    <div className="text-[10px] text-slate-400">{currentPassport}</div>
+                    <div className="text-[10px] font-bold text-slate-500">{currentPassport}</div>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-teal-600 dark:text-teal-400">
-                  {l('Değiştir', 'Change', 'Ändern')}
+                <span className="text-xs font-extrabold text-[#0F766E] dark:text-[#2DD4BF]">
+                  {l('Değiştir', 'Change')}
                 </span>
               </div>
 
-              {/* Mobile Drawer Navigation List */}
-              <nav className="space-y-2">
+              {/* 5 Main Tabs */}
+              <nav className="space-y-1.5">
                 {navItems.map((item) => {
                   const Icon = item.icon;
                   const isActive = activeTab === item.key;
@@ -174,32 +154,23 @@ export const Navigation: React.FC<NavigationProps> = ({
                       key={item.key}
                       type="button"
                       onClick={() => handleNavClick(item.key)}
-                      className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all ${
+                      className={`w-full flex items-center gap-3 p-3 rounded-2xl text-xs font-extrabold transition-all cursor-pointer ${
                         isActive
-                          ? item.crisis
-                            ? 'bg-red-500/15 text-red-600 dark:text-red-400 border border-red-500/30'
-                            : 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-sm'
-                          : 'text-slate-600 dark:text-[#8E9DBE] hover:bg-slate-900/[0.03] dark:hover:bg-white/[0.04]'
+                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-sm'
+                          : 'text-slate-700 dark:text-slate-200 hover:bg-teal-500/10'
                       }`}
                     >
-                      <div className="flex items-center gap-3">
-                        <Icon className="w-4 h-4" />
-                        <span>{item.label}</span>
-                      </div>
-                      {item.tag && (
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-white/[0.06] text-slate-600 dark:text-[#8E9DBE]">
-                          {item.tag}
-                        </span>
-                      )}
+                      <Icon className="w-4 h-4" />
+                      <span>{item.label}</span>
                     </button>
                   );
                 })}
               </nav>
 
-              {/* Mobile Drawer Quick Tools */}
+              {/* Quick Tools */}
               <div>
-                <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 px-1">
-                  {l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструменты')}
+                <div className="text-[10px] font-extrabold uppercase tracking-wider text-[#0F766E] dark:text-[#2DD4BF] mb-2 px-1">
+                  {l('Hızlı Araçlar', 'Quick Tools')}
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {quickTools.map((tool) => {
@@ -212,11 +183,9 @@ export const Navigation: React.FC<NavigationProps> = ({
                           tool.onClick?.();
                           onToggleMobileDrawer?.();
                         }}
-                        className="flex items-center gap-2 p-2 rounded-xl text-[11px] font-bold text-slate-700 dark:text-slate-200 bg-slate-900/[0.03] dark:bg-white/[0.04] hover:bg-teal-500/10 transition-colors cursor-pointer"
+                        className="flex items-center gap-2 p-2.5 rounded-xl text-[11px] font-bold text-slate-800 dark:text-slate-200 bento-lagoon-card cursor-pointer"
                       >
-                        <span className={`w-6 h-6 rounded-full bg-gradient-to-br ${tool.accent} text-white flex items-center justify-center shrink-0`}>
-                          <Icon className="w-3.5 h-3.5" />
-                        </span>
+                        <Icon className="w-3.5 h-3.5 text-[#0F766E] dark:text-[#2DD4BF] shrink-0" />
                         <span className="truncate">{tool.label}</span>
                       </button>
                     );
@@ -225,9 +194,9 @@ export const Navigation: React.FC<NavigationProps> = ({
               </div>
             </div>
 
-            <div className="pt-4 border-t border-slate-200/70 dark:border-white/[0.08] text-center">
-              <span className="text-[10px] text-slate-400 dark:text-[#7A89A6] font-mono">
-                Vizamigo Mobility Platform · 2026
+            <div className="pt-3 border-t border-teal-500/20 text-center">
+              <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                Vizamigo Crystal Lagoon · 2026
               </span>
             </div>
           </div>
@@ -235,12 +204,15 @@ export const Navigation: React.FC<NavigationProps> = ({
       )}
 
       {/* ========================================================
-          3. MOBILE FULL-WIDTH BOTTOM TAB BAR (Vizamigo Redesign)
+          2. MOBILE FLOATING FROSTED-GLASS BOTTOM BAR (5 MAIN TABS)
       ======================================================== */}
-      <nav className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex items-stretch justify-around border-t border-slate-200/80 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur dark:border-white/10 dark:bg-[#0c1020]/95" aria-label="Mobile Navigation">
+      <nav
+        className="lg:hidden fixed inset-x-3 bottom-3 z-40 rounded-full border border-teal-500/30 dark:border-teal-400/25 bg-white/92 dark:bg-[#051824]/92 backdrop-blur-2xl shadow-xl px-2 py-1.5 flex items-center justify-around"
+        aria-label="Mobile Navigation"
+      >
         {navItems.map((item) => {
           const Icon = item.icon;
-          const isActive = activeTab === item.key;
+          const isActive = activeTab === item.key || (activeTab === 'consular' && item.key === 'nomad');
           return (
             <button
               key={item.key}
@@ -250,23 +222,14 @@ export const Navigation: React.FC<NavigationProps> = ({
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               aria-current={isActive ? 'page' : undefined}
-              className={`relative flex min-h-[56px] min-w-[56px] flex-1 flex-col items-center justify-center gap-1 px-1 cursor-pointer transition-colors ${
+              className={`relative flex min-h-[46px] flex-1 flex-col items-center justify-center gap-0.5 rounded-full px-1 py-1 cursor-pointer transition-all ${
                 isActive
-                  ? item.crisis
-                    ? 'text-red-700 dark:text-red-400 font-bold'
-                    : 'text-teal-700 dark:text-teal-400 font-bold'
-                  : 'text-slate-600 dark:text-slate-400 font-medium'
+                  ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white font-extrabold shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 font-bold hover:text-[#0F766E] dark:hover:text-[#2DD4BF]'
               }`}
             >
-              {isActive && (
-                <span
-                  className={`absolute inset-x-3 top-0 h-0.5 rounded-full ${
-                    item.crisis ? 'bg-red-700' : 'bg-teal-700'
-                  }`}
-                />
-              )}
-              <Icon className="h-5 w-5" />
-              <span className="max-w-[64px] truncate text-[11px] leading-none">{item.shortLabel}</span>
+              <Icon className="h-4 w-4" />
+              <span className="max-w-[64px] truncate text-[10px] leading-tight">{item.shortLabel}</span>
             </button>
           );
         })}
