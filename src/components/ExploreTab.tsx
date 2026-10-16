@@ -184,6 +184,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
   const [visibleCount, setVisibleCount] = useState<number>(16);
+  const [showDirectory, setShowDirectory] = useState<boolean>(false);
 
   // Reset pagination when search, filter or passport changes
   useEffect(() => {
@@ -311,272 +312,105 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
   return (
     <div className="space-y-6">
-      {/* View Switcher: Liste vs İnteraktif Harita (Compact Pill Bar) */}
-      <div className="flex items-center justify-start gap-3">
-        <div className="inline-flex items-center gap-1.5 p-1.5 glass-panel rounded-full">
-          <button
-            type="button"
-            onClick={() => setViewMode('list')}
-            className={`flex items-center gap-2 py-2 px-4 rounded-full text-xs font-bold tracking-[-0.02em] transition-all cursor-pointer ${
-              viewMode === 'list'
-                ? 'tab-chip-active'
-                : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
-            }`}
-          >
-            <List className="w-3.5 h-3.5" />
-            <span>{l('Ülke Listesi & Detaylar', 'Country Directory & Details', 'Länderübersicht', 'Directorio de Países', 'Список Стран')}</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => setViewMode('map')}
-            className={`flex items-center gap-2 py-2 px-4 rounded-full text-xs font-bold tracking-[-0.02em] transition-all cursor-pointer ${
-              viewMode === 'map'
-                ? 'tab-chip-active'
-                : 'text-slate-600 dark:text-[#8E9DBE] hover:text-slate-900 dark:hover:text-white'
-            }`}
-          >
-            <Globe className="w-3.5 h-3.5" />
-            <span>{l('İnteraktif Dünya Haritası', 'Interactive World Map', 'Interaktive Weltkarte', 'Mapa Mundial', 'Интерактивная Карта')}</span>
-          </button>
+      {/* =====================================================================
+          1. PURE V2 LAGOON WIDGET DASHBOARD (HERO EXPERIENCE)
+      ===================================================================== */}
+      <BentoDashboardGrid
+        currentPassport={currentPassport}
+        onOpenCountryDossier={(code) => openDossier(code)}
+        onSelectTab={(tab) => onNavigateTab?.(tab)}
+        onOpenPackingList={() => onOpenPackingList?.()}
+        onOpenTippingCalc={() => onOpenTippingCalc?.()}
+        onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
+        onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
+      />
+
+      {/* =====================================================================
+          2. 199-COUNTRY DIRECTORY & INTERACTIVE MAP TOGGLE BAR
+      ===================================================================== */}
+      <div id="vz-country-directory" className="bento-lagoon-card rounded-[26px] p-4 sm:p-6 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight">
+              🌍 {l(`Tüm ${items.length} Ülke Vize & Tatil Rehberi`, `All ${items.length} Countries Visa & Holiday Directory`)}
+            </h2>
+            <p className="text-xs sm:text-sm font-bold text-[#064E3B] dark:text-teal-200 mt-0.5">
+              {l(
+                `${stats.counts.free + stats.counts.id} Vizesiz/Kimlikle · ${stats.counts.evisa + stats.counts.voa + stats.counts.eta} E-Vize/Kapıda · 2026 Canlı Mevzuat Teyitli`,
+                `${stats.counts.free + stats.counts.id} Visa-Free/ID · ${stats.counts.evisa + stats.counts.voa + stats.counts.eta} eVisa/VoA · 2026 Live Verified`
+              )}
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setViewMode('list');
+                setShowDirectory(!showDirectory);
+              }}
+              className="px-4 py-2.5 rounded-full text-xs sm:text-sm font-black bg-[#0F766E] hover:bg-[#042F2E] text-white shadow-md cursor-pointer transition-all flex items-center gap-2"
+            >
+              <List className="w-4 h-4" />
+              <span>
+                {showDirectory || search.trim().length > 0
+                  ? l('Ülke Listesini Gizle ▲', 'Hide Country List ▲')
+                  : l('199 Ülke Tam Listeyi Aç ▼', 'Open Full 199 Country List ▼')}
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => {
+                setViewMode('map');
+                setShowDirectory(true);
+              }}
+              className="px-4 py-2.5 rounded-full text-xs sm:text-sm font-black bg-[#2DD4BF] hover:bg-[#5EEAD4] text-[#042F2E] shadow-md cursor-pointer transition-all flex items-center gap-2"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{l('İnteraktif Harita', 'Interactive Map')}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleOpenAudit}
+              className="px-3.5 py-2.5 rounded-full text-xs sm:text-sm font-black bg-white/60 dark:bg-white/10 text-[#042F2E] dark:text-white border border-[#0F766E]/30 cursor-pointer transition-all flex items-center gap-1.5"
+            >
+              <ShieldCheck className="w-4 h-4 text-[#0F766E] dark:text-[#5EEAD4]" />
+              <span>{l('Denetim Masası', 'Audit Console')}</span>
+            </button>
+          </div>
         </div>
       </div>
 
-      {viewMode === 'map' ? (
-        <Suspense
-          fallback={
-            <div className="h-[520px] rounded-[24px] glass-card flex items-center justify-center text-sm font-bold text-slate-600 dark:text-slate-300">
-              {l('İnteraktif Dünya Haritası Yükleniyor...', 'Loading Interactive World Map...', 'Interaktive Weltkarte wird geladen...')}
-            </div>
-          }
-        >
-          <InteractiveWorldMap
-            currentPassport={currentPassport}
-            items={items}
-            onSelectCountry={(code) => {
-              setExpandedCountry(code);
-            }}
-            onOpenAuditConsole={handleOpenAudit}
-            onOpenReportChange={(c) => setReportingCountry(c)}
-          />
-        </Suspense>
-      ) : (
-        <>
-          {/* Hero Stats Card - Luxury Freedom & Mobility Experience (Hidden when HomeHero is active) */}
-          {externalSearch === undefined && (
-          <section className="relative overflow-hidden glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-white/10 shadow-lg bg-gradient-to-br from-white/95 via-slate-50/80 to-[#0D9488]/5 dark:from-[#111625]/90 dark:via-[#0C0F19]/95 dark:to-[#161D30]/80">
-            {/* Ambient decorative glow */}
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-br from-[#0D9488]/15 via-[#14B8A6]/10 to-transparent rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
-
-            <div className="relative flex flex-col md:flex-row md:items-end justify-between gap-6">
-              <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0D9488]/10 dark:bg-[#0D9488]/15 border border-[#0D9488]/20 text-[#0F766E] dark:text-[#14B8A6] text-xs font-bold mb-3 tracking-wide shadow-2xs">
-                  <span className="text-base select-none">{getFlag(currentPassport)}</span>
-                  <span>{l(
-                    `${passportName} Vatandaşlığı & Küresel Mobilite`,
-                    `${passportName} Citizenship & Global Mobility`,
-                    `${passportName} Staatsbürgerschaft & Mobilität`,
-                    `Ciudadanía y Movilidad Global de ${passportName}`,
-                    `Гражданство и глобальная мобильность: ${passportName}`
-                  )}</span>
-                </div>
-                <h1 className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight mb-2">
-                  {l(
-                    `Vizamigo - ${passportName} Pasaportu ile 199 Ülke Vize Rejimi Rehberi`,
-                    `Vizamigo - Global Visa Policy & Passport Mobility Guide (${passportName})`,
-                    `Vizamigo - Weltweite Visabestimmungen & Pass-Guide (${passportName})`,
-                    `Vizamigo - Política Global de Visados y Guía de Pasaportes (${passportName})`,
-                    `Vizamigo - Глобальный визовый режим и гид по паспортам (${passportName})`
-                  )}
-                </h1>
-                <div className="flex items-baseline gap-3">
-                  <span className="text-6xl sm:text-7xl font-black tracking-tight font-mono bg-gradient-to-r from-[#0D9488] via-[#14B8A6] to-[#E5A93C] bg-clip-text text-transparent">
-                    {stats.totalFreeOrId}
-                  </span>
-                  <span className="text-lg sm:text-xl font-bold text-slate-700 dark:text-slate-200">
-                    {l(
-                      'ülkeye vizesiz veya kimlikle giriş',
-                      'destinations visa-free or with ID card',
-                      'Länder visumfrei oder mit Personalausweis',
-                      'destinos sin visado o con DNI',
-                      'направлений без визы или по ID-карте'
-                    )}
-                  </span>
-                </div>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-xl leading-relaxed">
-                  {l(
-                    `Toplam ${items.length} ülke ve bölge arasında e-vize ve kapıda vize dahil edildiğinde kolay erişim skoru: `,
-                    `Out of ${items.length} destinations worldwide, easy access score including eVisa and Visa on Arrival is: `,
-                    `Von weltweit ${items.length} Zielen beträgt der einfache Zugangsscore inkl. eVisa und Visa bei Ankunft: `,
-                    `De un total de ${items.length} destinos, la puntuación de acceso fácil con e-visa y visado a la llegada es: `,
-                    `Из ${items.length} направлений показатель легкого доступа с e-Visa и визой по прибытии: `
-                  )}
-                  <b className="text-slate-900 dark:text-white font-bold">
-                    {stats.totalEasyAccess} {l('ülke', 'countries', 'Länder', 'países', 'стран')}
-                  </b>.
-                </p>
+      {(showDirectory || search.trim().length > 0) && (
+        viewMode === 'map' ? (
+          <Suspense
+            fallback={
+              <div className="h-[520px] rounded-[24px] glass-card flex items-center justify-center text-sm font-bold text-slate-600 dark:text-slate-300">
+                {l('İnteraktif Dünya Haritası Yükleniyor...', 'Loading Interactive World Map...', 'Interaktive Weltkarte wird geladen...')}
               </div>
-
-              {/* Quick Stats Pills */}
-              <div className="grid grid-cols-3 sm:grid-cols-3 gap-2 text-center glass-panel p-3 rounded-2xl border border-slate-200/60 dark:border-white/10 shadow-xs">
-                <div className="p-1.5">
-                  <div className="text-xl font-black text-emerald-600 dark:text-emerald-400 font-mono">{stats.counts.free + stats.counts.id}</div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                    {l('Vizesiz/Kimlik', 'Visa-Free / ID', 'Visumfrei / Ausweis', 'Sin Visado / DNI', 'Без визы / ID')}
-                  </div>
-                </div>
-                <div className="p-1.5 border-x border-slate-200/80 dark:border-white/10">
-                  <div className="text-xl font-black text-sky-600 dark:text-sky-400 font-mono">{stats.counts.evisa + stats.counts.voa + stats.counts.eta}</div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                    {l('E-vize / Kapı', 'eVisa / VoA', 'e-Visum / Ankunft', 'E-visa / Llegada', 'Э-виза / По приб.')}
-                  </div>
-                </div>
-                <div className="p-1.5">
-                  <div className="text-xl font-black text-rose-500 font-mono">{stats.counts.visa}</div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                    {l('Vize Gerekli', 'Visa Required', 'Visum nötig', 'Visado Obligatorio', 'Нужна Виза')}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Visual Spectrum Bar */}
-            <div className="h-2.5 w-full bg-slate-200/70 dark:bg-slate-800/80 rounded-full overflow-hidden flex gap-0.5 mt-6 p-0.5 shadow-inner">
-              {stats.counts.id > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.id / stats.total) * 100}%` }}
-                  className="bg-emerald-600 rounded-l-full"
-                  title={`${l('Kimlikle:', 'National ID:', 'Mit Personalausweis:', 'Con DNI:', 'По ID-карте:')} ${stats.counts.id}`}
-                />
-              )}
-              {stats.counts.free > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.free / stats.total) * 100}%` }}
-                  className="bg-emerald-400"
-                  title={`${l('Vizesiz:', 'Visa-Free:', 'Visumfrei:', 'Sin visado:', 'Без визы:')} ${stats.counts.free}`}
-                />
-              )}
-              {stats.counts.eta > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.eta / stats.total) * 100}%` }}
-                  className="bg-purple-400"
-                  title={`ETA: ${stats.counts.eta}`}
-                />
-              )}
-              {stats.counts.evisa > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.evisa / stats.total) * 100}%` }}
-                  className="bg-sky-400"
-                  title={`${l('E-vize:', 'eVisa:', 'e-Visum:', 'E-visa:', 'Э-виза:')} ${stats.counts.evisa}`}
-                />
-              )}
-              {stats.counts.voa > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.voa / stats.total) * 100}%` }}
-                  className="bg-amber-400"
-                  title={`${l('Kapıda vize:', 'Visa on Arrival:', 'Visum bei Ankunft:', 'A la llegada:', 'По прибытии:')} ${stats.counts.voa}`}
-                />
-              )}
-              {stats.counts.visa > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.visa / stats.total) * 100}%` }}
-                  className="bg-rose-500"
-                  title={`${l('Vize gerekli:', 'Visa Required:', 'Visumpflicht:', 'Visado necesario:', 'Нужна виza:')} ${stats.counts.visa}`}
-                />
-              )}
-              {stats.counts.none > 0 && (
-                <div
-                  style={{ width: `${(stats.counts.none / stats.total) * 100}%` }}
-                  className="bg-slate-400 rounded-r-full"
-                  title={`${l('Giriş yok:', 'No Entry:', 'Keine Einreise:', 'Sin entrada:', 'Въезд запрещен:')} ${stats.counts.none}`}
-                />
-              )}
-            </div>
-
-            {/* Legend */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-4 text-xs text-slate-600 dark:text-slate-400 font-medium">
-              {stats.counts.id > 0 && (
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 shadow-2xs" />
-                  {l('Kimlikle:', 'National ID:', 'Mit Personalausweis:', 'Con DNI:', 'По ID-карте:')} <b>{stats.counts.id}</b>
-                </span>
-              )}
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-2xs" />
-                {l('Vizesiz:', 'Visa-Free:', 'Visumfrei:', 'Sin visado:', 'Без визы:')} <b>{stats.counts.free}</b>
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-sky-400 shadow-2xs" />
-                {l('E-vize:', 'eVisa:', 'e-Visum:', 'E-visa:', 'Э-виза:')} <b>{stats.counts.evisa}</b>
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-2xs" />
-                {l('Kapıda vize:', 'Visa on Arrival:', 'Visum bei Ankunft:', 'A la llegada:', 'По прибытии:')} <b>{stats.counts.voa}</b>
-              </span>
-              {stats.counts.eta > 0 && (
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-purple-400 shadow-2xs" />
-                  ETA: <b>{stats.counts.eta}</b>
-                </span>
-              )}
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-2xs" />
-                {l('Vize gerekli:', 'Visa Required:', 'Visum erforderlich:', 'Visado necesario:', 'Нужна виза:')} <b>{stats.counts.visa}</b>
-              </span>
-            </div>
-          </section>
-          )}
-
-          {/* Focal Point Search & Filter Controls */}
-          <div className="space-y-3.5">
-            {/* Prominent, Welcoming Search Bar Focal Point (Hidden when HomeHero is active) */}
-            {externalSearch === undefined && (
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#0D9488]/20 via-[#14B8A6]/15 to-[#38BDF8]/15 rounded-full blur-md opacity-40 group-focus-within:opacity-100 group-hover:opacity-75 transition duration-500 pointer-events-none" />
-              <div className="relative flex items-center">
-                <div className="absolute left-3.5 sm:left-4.5 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-[#0D9488]/25 pointer-events-none transition-transform group-focus-within:scale-105">
-                  <Search className="w-5 h-5" />
-                </div>
-                <input
-                  type="search"
-                  placeholder={l(
-                    '✨ Gitmek istediğiniz ülkeyi arayın... (Örn: Arnavutluk, Bosna Hersek, Japonya, Karadağ, Tayland...)',
-                    '✨ Search any destination to explore... (e.g. Albania, Bosnia, Japan, Montenegro, Thailand...)',
-                    '✨ Reiseziel zum Erkunden suchen... (z. B. Albanien, Bosnien, Japan, Montenegro, Thailand...)',
-                    '✨ Busque cualquier destino... (Ej: Albania, Bosnia, Japón, Montenegro, Tailandia...)',
-                    '✨ Поиск направления... (Напр: Албания, Босния, Япония, Черногория, Таиланд...)'
-                  )}
-                  value={search}
-                  onChange={(e) => {
-                    setSearch(e.target.value);
-                    onSearchChange?.(e.target.value);
-                  }}
-                  className="w-full pl-15 sm:pl-18 pr-20 py-4 sm:py-5 glass-card bg-white/95 dark:bg-[#111625]/95 backdrop-blur-2xl border border-slate-200/90 dark:border-white/[0.12] rounded-2xl sm:rounded-full text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-lg shadow-slate-900/5 dark:shadow-black/25 focus:outline-none focus:ring-4 focus:ring-[#0D9488]/20 focus:border-[#0D9488]/60 transition-all"
-                />
-                {search && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSearch('');
-                      onSearchChange?.('');
-                    }}
-                    className="absolute right-3.5 sm:right-4 text-xs font-bold px-3 py-1.5 rounded-full bg-slate-100/90 dark:bg-slate-800/80 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-xs hover:scale-105"
-                  >
-                    {l('Temizle', 'Clear', 'Löschen', 'Limpiar', 'Очистить')}
-                  </button>
-                )}
-              </div>
-            </div>
-            )}
-
-            {/* Horizontal Filter Chips (Mobile-First Smooth Scroll Strip, Strict 48px Touch Targets, Zero Overlapping) */}
+            }
+          >
+            <InteractiveWorldMap
+              currentPassport={currentPassport}
+              items={items}
+              onSelectCountry={(code) => {
+                setExpandedCountry(code);
+              }}
+              onOpenAuditConsole={handleOpenAudit}
+              onOpenReportChange={(c) => setReportingCountry(c)}
+            />
+          </Suspense>
+        ) : (
+          <>
+            {/* Horizontal Filter Chips */}
             <div className="w-full max-w-full overflow-x-auto touch-pan-x flex items-center gap-2.5 pb-2 pt-0.5 scrollbar-none no-scrollbar horizontal-badge-slider no-scrollbar-slider">
               <button
                 type="button"
                 onClick={() => setFilter('all')}
-                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'all'
-                    ? 'tab-chip-active'
-                    : 'tab-chip-inactive'
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                  filter === 'all' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                 }`}
               >
                 {l('Tümü', 'All', 'Alle', 'Todos', 'Все')} ({items.length})
@@ -585,10 +419,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('id')}
-                  className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                    filter === 'id'
-                      ? 'tab-chip-active'
-                      : 'tab-chip-inactive'
+                  className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                    filter === 'id' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                   }`}
                 >
                   {l('Kimlikle Giriş', 'National ID', 'Personalausweis', 'Entrada con DNI', 'По ID-карте')} ({stats.counts.id})
@@ -597,10 +429,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('free')}
-                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'free'
-                    ? 'tab-chip-active'
-                    : 'tab-chip-inactive'
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                  filter === 'free' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                 }`}
               >
                 {l('Vizesiz', 'Visa-Free', 'Visumfrei', 'Sin Visado', 'Без Визы')} ({stats.counts.free})
@@ -608,10 +438,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('evisa')}
-                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'evisa'
-                    ? 'tab-chip-active'
-                    : 'tab-chip-inactive'
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                  filter === 'evisa' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                 }`}
               >
                 {l('E-vize', 'eVisa', 'e-Visum', 'E-visa', 'Электронная Виза')} ({stats.counts.evisa})
@@ -619,10 +447,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('voa')}
-                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'voa'
-                    ? 'tab-chip-active'
-                    : 'tab-chip-inactive'
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                  filter === 'voa' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                 }`}
               >
                 {l('Kapıda Vize', 'Visa on Arrival', 'Visum b. Ankunft', 'Visado a la Llegada', 'Виза по Прибытии')} ({stats.counts.voa})
@@ -631,10 +457,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setFilter('eta')}
-                  className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                    filter === 'eta'
-                      ? 'tab-chip-active'
-                      : 'tab-chip-inactive'
+                  className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                    filter === 'eta' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                   }`}
                 >
                   ETA ({stats.counts.eta})
@@ -643,69 +467,16 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <button
                 type="button"
                 onClick={() => setFilter('visa')}
-                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'visa'
-                    ? 'tab-chip-active'
-                    : 'tab-chip-inactive'
+                className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
+                  filter === 'visa' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
                 }`}
               >
                 {l('Vize Gerekli', 'Visa Required', 'Visum erforderlich', 'Visado Requerido', 'Нужна Виза')} ({stats.counts.visa})
               </button>
             </div>
-          </div>
 
-          {/* Canlı Mevzuat Denetim & Teyit Konsolu Bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-[24px] glass-panel bg-gradient-to-r from-[#2A8C82]/[0.07] via-[#2A8C82]/[0.03] to-transparent text-xs mb-8">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-[20px] bg-[#2A8C82]/12 text-[#2A8C82] dark:text-[#52B2A7] border border-[#2A8C82]/20 flex items-center justify-center flex-shrink-0">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <div className="leading-[1.6]">
-                <div className="flex items-center gap-2.5 flex-wrap">
-                  <span className="font-bold tracking-[-0.02em] text-slate-900 dark:text-slate-100 text-sm">
-                    {t.auditConsoleTitle}
-                  </span>
-                  <span className="badge-live-verified inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full font-mono text-[10px] font-bold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                    {l('CANLI TEYİTLİ', 'LIVE VERIFIED', 'LIVE GEPRÜFT', 'VERIFICADO EN VIVO', 'ПРОВЕРЕНО')}
-                  </span>
-                </div>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-[1.6]">
-                  {l(
-                    '15 kritik destinasyon IATA Timatic ve konsolosluk genelgeleriyle taranıyor; %100 açık veri teyidi aktif.',
-                    '15 key destinations actively audited against IATA Timatic & consular decrees.',
-                    '15 Reiseziele aktiv mit IATA Timatic & Konsulatsbeschlüssen abgeglichen.',
-                    '15 destinos clave auditados activamente según IATA Timatic y circulares consulares; 100% verificación de datos abiertos.',
-                    '15 ключевых направлений непрерывно сверяются с IATA Timatic и консульскими постановлениями; 100% открытая проверка данных.'
-                  )}
-                </p>
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={handleOpenAudit}
-              className="btn-audit-console inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs transition-all cursor-pointer whitespace-nowrap self-stretch sm:self-auto justify-center"
-            >
-              <ShieldCheck className="w-4 h-4" />
-              <span>{l('Denetim Masasını Aç', 'Open Audit Console', 'Audit-Konsole öffnen', 'Abrir Panel de Auditoría', 'Открыть Панель Аудита')}</span>
-            </button>
-          </div>
-
-      {/* 12-Card 3D Illustrated & Animated Bento Dashboard Grid (With Sub-Widget Drill-Down) */}
-      <div className="mb-8">
-        <BentoDashboardGrid
-          currentPassport={currentPassport}
-          onOpenCountryDossier={(code) => openDossier(code)}
-          onSelectTab={(tab) => onNavigateTab?.(tab)}
-          onOpenPackingList={() => onOpenPackingList?.()}
-          onOpenTippingCalc={() => onOpenTippingCalc?.()}
-          onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
-          onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
-        />
-      </div>
-
-      {/* Destinations List (Full-Width Symmetrical Layout with 35% expanded breathing space) */}
-      <div id="vz-country-directory" className="w-full space-y-6">
+      {/* Destinations List */}
+      <div className="w-full space-y-6">
         {filteredItems.length === 0 ? (
           <div className="text-center py-16 glass-card rounded-[24px] p-8">
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-[1.6]">
@@ -1803,7 +1574,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           </div>
         )}
       </div>
-        </>
+          </>
+        )
       )}
 
       {/* Community Change Reporting Modal */}

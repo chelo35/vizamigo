@@ -198,14 +198,28 @@ function AppContent() {
         is404={route.is404}
       />
 
-      {/* Permanent Fixed Fullscreen Dual-Theme Crystal Lagoon Background */}
-      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-b from-[#F0FDFA] via-[#E0F2FE]/60 to-[#ECFDF5] dark:from-[#041421] dark:via-[#071E30] dark:to-[#062235]" />
+      {/* Permanent Fixed Fullscreen V2 Tropical Turquoise & Emerald Lagoon Background */}
+      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-br from-[#064E3B] via-[#0D9488] to-[#0284C7] dark:from-[#031B24] dark:via-[#062F3C] dark:to-[#042430]" />
 
-      {/* Ambient Tropical Lagoon & Ocean Breeze Orbs */}
+      {/* Ambient Tropical Lagoon Glows & Subtle Palm Leaf Silhouettes */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-teal-400/[0.10] dark:bg-teal-500/[0.06] rounded-full blur-[160px]" />
-        <div className="absolute top-1/3 -right-20 w-[440px] h-[440px] bg-sky-400/[0.10] dark:bg-sky-500/[0.06] rounded-full blur-[150px]" />
-        <div className="absolute -bottom-20 left-1/3 w-[520px] h-[520px] bg-emerald-400/[0.08] dark:bg-emerald-500/[0.05] rounded-full blur-[150px]" />
+        <div className="absolute -top-32 left-1/4 w-[560px] h-[560px] bg-[#5EEAD4]/[0.18] dark:bg-teal-500/[0.10] rounded-full blur-[160px]" />
+        <div className="absolute top-1/3 -right-20 w-[480px] h-[480px] bg-[#38BDF8]/[0.18] dark:bg-sky-500/[0.10] rounded-full blur-[150px]" />
+        <div className="absolute -bottom-20 left-1/3 w-[540px] h-[540px] bg-[#34D399]/[0.16] dark:bg-emerald-500/[0.08] rounded-full blur-[150px]" />
+        {/* Top-Left Tropical Palm Frond Silhouette */}
+        <svg viewBox="0 0 260 260" className="w-64 h-64 absolute -top-8 -left-8 text-[#022C22]/25 dark:text-black/35">
+          <path
+            fill="currentColor"
+            d="M0,0 L160,30 Q110,45 55,40 L195,85 Q130,90 65,75 L210,145 Q140,140 70,115 L175,205 Q115,185 55,145 L110,245 Q65,210 25,160 Z"
+          />
+        </svg>
+        {/* Top-Right Tropical Palm Frond Silhouette */}
+        <svg viewBox="0 0 260 260" className="w-64 h-64 absolute -top-8 -right-8 text-[#022C22]/25 dark:text-black/35 -scale-x-100">
+          <path
+            fill="currentColor"
+            d="M0,0 L160,30 Q110,45 55,40 L195,85 Q130,90 65,75 L210,145 Q140,140 70,115 L175,205 Q115,185 55,145 L110,245 Q65,210 25,160 Z"
+          />
+        </svg>
       </div>
 
       {/* ========================================================
@@ -258,7 +272,7 @@ function AppContent() {
         />
 
         {/* Content Body Centered with Full Breathing Space */}
-        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pb-32 lg:pb-16 space-y-6">
+        <main className="flex-1 w-full max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-6 pb-32 lg:pb-16 space-y-6">
           {route.is404 ? (
             <NotFoundView
               language={language}
@@ -267,64 +281,31 @@ function AppContent() {
             />
           ) : (
             <Suspense fallback={<TabLoadingSkeleton />}>
-              {/* Tab Content: 1. KEŞFET / EXPLORE */}
+              {/* Tab Content: 1. KEŞFET / EXPLORE (PURE V2 LAGOON WIDGET DASHBOARD) */}
               {activeTab === 'explore' && (
-            <div className="space-y-6">
-              {/* Keşfet: Crystal Lagoon Hero + Quick Action Bar */}
-              <HomeHero
-                title={l(
-                  'Valizini hazırla, vizeyi dert etme.',
-                  'Pack your bags, forget the visa stress.',
-                  'Koffer packen, Visum-Stress vergessen.',
-                  'Prepara tu maleta, olvida el estrés del visado.',
-                  'Собирайте чемодан, забудьте о визовом стрессе.'
-                )}
-                subtitle={l(
-                  '199 ülke vize rehberi, dünya gün sayacı, rota planı ve yerel uygulamalar tek panoda.',
-                  '199-country visa guide, global day counter, route planner & local apps in one dashboard.',
-                  '199 Länder Visaguide, Welt-Tagezähler, Routenplaner und lokale Apps in einem Dashboard.',
-                  'Guía de 199 países, contador global de días, planificador de rutas y apps locales.',
-                  'Гид по 199 странам, глобальный счетчик дней, планировщик маршрутов и местные приложения.'
-                )}
-                passportLabel={`${currentPassport} · ${getCountryName(currentPassport, language)}`}
-                onPassportClick={() => setIsPassportModalOpen(true)}
-                mode={exploreSubTab}
-                onModeChange={setExploreSubTab}
-                modeLabels={{
-                  all: l('🌍 Tüm Ülkeler', '🌍 All Countries', '🌍 Alle Länder', '🌍 Todos los Países', '🌍 Все Страны'),
-                  where: l('🧭 Nereye Gidebilirim?', '🧭 Where Can I Go?', '🧭 Wohin kann ich?', '🧭 ¿A dónde ir?', '🧭 Куда поехать?')
-                }}
-                search={globalSearchQuery}
-                onSearchChange={setGlobalSearchQuery}
-                searchLabel={l('Ülke ara', 'Search country', 'Land suchen', 'Buscar país', 'Поиск страны')}
-                searchPlaceholder={l('Japonya, Tayland, Almanya…', 'Japan, Thailand, Germany…', 'Japan, Thailand, Deutschland…', 'Japón, Tailandia, Alemania…', 'Япония, Таиланд, Германия…')}
-                statLabel={l('Vizesiz veya kimlikle giriş', 'Visa-free or ID card entry', 'Visumfrei oder mit Ausweis', 'Entrada sin visado o con DNI', 'Без визы или по удостоверению')}
-                statValue={visaFreeCount}
-                onQuickNavigate={handleSelectTab}
-              />
-
-              {exploreSubTab === 'all' ? (
-                <ExploreTab
-                  currentPassport={currentPassport}
-                  onOpenAuditConsole={() => setIsAuditModalOpen(true)}
-                  externalSearch={globalSearchQuery}
-                  onSearchChange={setGlobalSearchQuery}
-                  initialCountryCode={selectedCountryCode}
-                  onCountrySelect={handleCountrySelect}
-                  onNavigateTab={(tab) => {
-                    handleSelectTab(tab);
-                    if (tab === 'plan') setPlanSubTab('route');
-                  }}
-                  onOpenPackingList={() => setIsPackingListOpen(true)}
-                  onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
-                  onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-                  onOpenGlobalRadar={openRadar}
-                />
-              ) : (
-                <WhereCanIGoTab currentPassport={currentPassport} />
+                <div className="space-y-6">
+                  {exploreSubTab === 'all' ? (
+                    <ExploreTab
+                      currentPassport={currentPassport}
+                      onOpenAuditConsole={() => setIsAuditModalOpen(true)}
+                      externalSearch={globalSearchQuery}
+                      onSearchChange={setGlobalSearchQuery}
+                      initialCountryCode={selectedCountryCode}
+                      onCountrySelect={handleCountrySelect}
+                      onNavigateTab={(tab) => {
+                        handleSelectTab(tab);
+                        if (tab === 'plan') setPlanSubTab('route');
+                      }}
+                      onOpenPackingList={() => setIsPackingListOpen(true)}
+                      onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                      onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                      onOpenGlobalRadar={openRadar}
+                    />
+                  ) : (
+                    <WhereCanIGoTab currentPassport={currentPassport} />
+                  )}
+                </div>
               )}
-            </div>
-          )}
 
           {/* Tab Content: 2. ROTA & SİNERJİ / PLAN */}
           {activeTab === 'plan' && (

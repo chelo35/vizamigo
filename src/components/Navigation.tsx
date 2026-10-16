@@ -207,7 +207,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           2. MOBILE FLOATING FROSTED-GLASS BOTTOM BAR (5 MAIN TABS)
       ======================================================== */}
       <nav
-        className="lg:hidden fixed inset-x-3 bottom-3 z-40 rounded-full border border-teal-500/30 dark:border-teal-400/25 bg-white/92 dark:bg-[#051824]/92 backdrop-blur-2xl shadow-xl px-2 py-1.5 flex items-center justify-around"
+        className="lg:hidden fixed inset-x-3 bottom-3 z-40 rounded-full border-2 border-[#5EEAD4]/65 bg-[#0F766E]/92 dark:bg-[#041D29]/95 backdrop-blur-2xl shadow-2xl px-2 py-1.5 flex items-center justify-around"
         aria-label="Mobile Navigation"
       >
         {navItems.map((item) => {
@@ -222,14 +222,14 @@ export const Navigation: React.FC<NavigationProps> = ({
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               aria-current={isActive ? 'page' : undefined}
-              className={`relative flex min-h-[46px] flex-1 flex-col items-center justify-center gap-0.5 rounded-full px-1 py-1 cursor-pointer transition-all ${
+              className={`relative flex min-h-[48px] flex-1 flex-col items-center justify-center gap-0.5 rounded-full px-1.5 py-1 cursor-pointer transition-all ${
                 isActive
-                  ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white font-extrabold shadow-xs'
-                  : 'text-slate-700 dark:text-slate-300 font-bold hover:text-[#0F766E] dark:hover:text-[#2DD4BF]'
+                  ? 'bg-[#2DD4BF] text-[#042F2E] font-black shadow-md'
+                  : 'text-white/90 font-extrabold hover:text-[#5EEAD4]'
               }`}
             >
-              <Icon className="h-4 w-4" />
-              <span className="max-w-[64px] truncate text-[10px] leading-tight">{item.shortLabel}</span>
+              <Icon className="h-4.5 w-4.5" />
+              <span className="max-w-[68px] truncate text-[11px] leading-tight">{item.shortLabel}</span>
             </button>
           );
         })}
