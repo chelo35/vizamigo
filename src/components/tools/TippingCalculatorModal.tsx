@@ -139,7 +139,7 @@ export const TippingCalculatorModal: React.FC<Props> = ({
 
           <div class="etiquette">
             <div style="font-weight: 800; color: #854d0e; font-size: 13px; margin-bottom: 6px;">💡 Yerel Bahşiş Kültürü & Kuralları</div>
-            <div style="font-size: 12px; color: #713f12;">${intel?.tipping?.customAdvice || 'Standart hizmet bedeli hesaba dahildir veya %10-%15 makul görülür.'}</div>
+            <div style="font-size: 12px; color: #713f12;">${intel?.tipping?.note || intel?.tipping?.custom || 'Standart hizmet bedeli hesaba dahildir veya %10-%15 makul görülür.'}</div>
           </div>
 
           <div class="footer">

@@ -374,15 +374,15 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
 
         const badgeText = getCategoryBadgeLabel(m.item, language);
         const content = `
-          <div style="font-family: inherit; padding: 6px 8px; min-width: 170px; color: #0f172a; text-align: left;">
-            <div style="font-weight: 800; font-size: 13px; display: flex; align-items: center; gap: 6px;">
-              <span>${getFlag(m.geo.code)}</span>
+          <div style="font-family: inherit; padding: 12px 34px 12px 14px; min-width: 200px; color: #f8fafc; text-align: left; line-height: 1.4;">
+            <div style="font-weight: 900; font-size: 15px; display: flex; align-items: center; gap: 8px; color: #ffffff;">
+              <span style="font-size: 18px;">${getFlag(m.geo.code)}</span>
               <span>${m.label}</span>
             </div>
-            <div style="font-size: 11px; color: #64748b; margin-top: 3px;">
+            <div style="font-size: 12px; color: #94a3b8; margin-top: 4px; font-weight: 600;">
               🏛️ ${m.geo.capital} · ✈️ ${m.geo.mainHub}
             </div>
-            <div style="margin-top: 6px; display: inline-block; padding: 2px 7px; border-radius: 999px; font-size: 10px; font-weight: 700; background: ${m.color}20; color: ${m.color}; border: 1px solid ${m.color}40;">
+            <div style="margin-top: 8px; display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; background: ${m.color}25; color: ${m.color}; border: 1.5px solid ${m.color}60;">
               ${badgeText}
             </div>
           </div>

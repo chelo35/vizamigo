@@ -1509,8 +1509,8 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                               </h5>
                               <p className="text-sm font-bold text-[#042F2E] dark:text-white leading-relaxed">
                                 {l('Priz Tipi:', 'Plug Type:')} {geo?.plugTypes || insights.plugType} ·{' '}
-                                {l('Acil Numara:', 'Emergency:')} {insights.emergencyNumber} ·{' '}
-                                {l('En İyi Sezon:', 'Best Season:')} {insights.bestSeason}
+                                {l('Acil Numara:', 'Emergency:')} {insights.safety?.emergencyNumbers?.general || '112 / 911'} ·{' '}
+                                {l('En İyi Sezon:', 'Best Season:')} {insights.bestMonths || 'Ekim - Nisan'}
                               </p>
                             </div>
                           </div>

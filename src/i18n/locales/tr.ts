@@ -246,6 +246,7 @@ export const tr: AppTranslations = {
   registerTitle: 'Hesap Oluştur',
   registerSubtitle: 'Tüm seyahat planlarınızı güvenle saklayın ve cihazlar arasında senkronize edin.',
   continueWithGoogle: 'Google ile Devam Et',
+  continueWithFacebook: 'Facebook ile Devam Et',
   orContinueWithEmail: 'veya e-posta ile devam et',
   emailLabel: 'E-posta Adresi',
   emailPlaceholder: 'ornek@gezgin.com',

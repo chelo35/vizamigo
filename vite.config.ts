@@ -84,7 +84,7 @@ export default defineConfig(() => {
       visualizer({
         filename: 'dist/stats.json',
         open: false,
-        json: true,
+        template: 'raw-data',
       }),
     ],
     build: {
@@ -97,6 +97,18 @@ export default defineConfig(() => {
             }
             if (id.includes('node_modules/lucide-react')) {
               return 'vendor-icons';
+            }
+            if (id.includes('/data/passportData.ts')) {
+              return 'data-passports';
+            }
+            if (id.includes('/data/countryGeography.ts') || id.includes('/data/geoData.ts')) {
+              return 'data-geography';
+            }
+            if (id.includes('/data/countryInsights.ts') || id.includes('/data/countryTravelIntelligence.ts')) {
+              return 'data-insights';
+            }
+            if (id.includes('/data/countryVisuals.ts')) {
+              return 'data-visuals';
             }
           }
         }

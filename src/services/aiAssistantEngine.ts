@@ -858,7 +858,7 @@ export async function processAssistantQuery(
     };
     actions.push(consularAction);
 
-    const consular = getConsularEmergencyInfo(ctx.passportCode || 'TR', activeLang);
+    const consular = getConsularEmergencyInfo(currentPassport || 'TR', activeLang);
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
@@ -1111,8 +1111,8 @@ export async function processAssistantQuery(
       };
       actions.push(primaryDossierAction, routeAction);
 
-      const dishes = (itinerary?.signatureGastronomy?.dishes || []).slice(0, 4).map((d) => `• **${d.name}:** ${d.desc}`).join('\n');
-      const drinks = (itinerary?.signatureGastronomy?.drinks || []).slice(0, 2).map((d) => `• **${d.name}:** ${d.desc}`).join('\n');
+      const dishes = (itinerary?.signatureGastronomy?.dishes || []).slice(0, 4).map((d) => `• **${d}**`).join('\n');
+      const drinks = (itinerary?.signatureGastronomy?.drinks || []).slice(0, 2).map((d) => `• **${d}**`).join('\n');
 
       return {
         id: `msg-${Date.now()}`,
@@ -1122,7 +1122,7 @@ export async function processAssistantQuery(
           ? `🍜 **${flag} ${cName} Meşhur Lezzetleri & Mutfak Kültürü:**\n\n` +
             `${dishes ? `**Öne Çıkan Yemekler:**\n${dishes}\n\n` : ''}` +
             `${drinks ? `**Geleneksel İçecekler:**\n${drinks}\n\n` : ''}` +
-            `• *Gastronomi İpucu:* ${itinerary?.signatureGastronomy?.foodieTip || 'Yerel sokak pazarlarında taze lezzetleri deneyebilirsiniz.'}`
+            `• *Gastronomi İpucu:* ${itinerary?.signatureGastronomy?.diningAdvice || 'Yerel sokak pazarlarında taze lezzetleri deneyebilirsiniz.'}`
           : `🍜 **${flag} ${cName} Signature Gastronomy:**\n\n${dishes || 'Local specialties abound throughout the country.'}`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
@@ -1208,7 +1208,7 @@ export async function processAssistantQuery(
         sender: 'assistant',
         detectedCountry: { code: targetCountry, name: cName, flag },
         text: (() => {
-          const consular = getConsularEmergencyInfo(ctx.passportCode || 'TR', activeLang);
+          const consular = getConsularEmergencyInfo(currentPassport || 'TR', activeLang);
           return isTr
             ? `🛡️ **${flag} ${cName} Güvenlik & Acil Durum Bilgileri:**\n\n` +
               `• **Güvenlik Derecesi:** **${insights?.safety?.safetyLevel || 'Güvenli'}** (${safetyScore}/100)\n` +

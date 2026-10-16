@@ -131,7 +131,7 @@ export const GlobalFooter: React.FC<Props> = ({
 
     const visaFreeDests: DestinationChip[] = freeCodes.map((code) => {
       const it = itemMap.get(code);
-      const days = it?.days || parseInt(it?.v || '90', 10) || 90;
+      const days = parseInt(it?.v || '90', 10) || 90;
       return {
         city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
         country: getCountryName(code, language),
@@ -212,7 +212,7 @@ export const GlobalFooter: React.FC<Props> = ({
         ru: 'Нужна виза'
       };
       if (it?.cat === 'free') {
-        const days = it.days || 90;
+        const days = parseInt(it?.v || '90', 10) || 90;
         badgeLabel = {
           tr: `${days} Gün Vizesiz`,
           en: `${days} Days Visa-Free`,
@@ -268,6 +268,7 @@ export const GlobalFooter: React.FC<Props> = ({
     const evisaCodes = ['EG', 'AE', 'QA', 'OM', 'KE', 'ID', 'TZ', 'IN'].filter((c) => c !== currentPassport);
     const evisaDests: DestinationChip[] = evisaCodes.map((code) => {
       const it = itemMap.get(code);
+      const freeDays = parseInt(it?.v || '30', 10) || 30;
       return {
         city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
         country: getCountryName(code, language),
@@ -276,11 +277,11 @@ export const GlobalFooter: React.FC<Props> = ({
         badge:
           it?.cat === 'free'
             ? {
-                tr: `${it.days || 30} Gün Vizesiz`,
-                en: `${it.days || 30} Days Free`,
-                de: `${it.days || 30} Tage Visafrei`,
-                es: `${it.days || 30} Días Sin Visa`,
-                ru: `${it.days || 30} дней без визы`
+                tr: `${freeDays} Gün Vizesiz`,
+                en: `${freeDays} Days Free`,
+                de: `${freeDays} Tage Visafrei`,
+                es: `${freeDays} Días Sin Visa`,
+                ru: `${freeDays} дней без визы`
               }
             : {
                 tr: 'e-Vize / Kapıda Vize',

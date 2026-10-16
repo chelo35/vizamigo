@@ -253,6 +253,7 @@ export interface AppTranslations {
   registerTitle: string;
   registerSubtitle: string;
   continueWithGoogle: string;
+  continueWithFacebook: string;
   orContinueWithEmail: string;
   emailLabel: string;
   emailPlaceholder: string;

@@ -246,6 +246,7 @@ export const en: AppTranslations = {
   registerTitle: 'Create an Account',
   registerSubtitle: 'Securely store and synchronize your travel plans across all your devices.',
   continueWithGoogle: 'Continue with Google',
+  continueWithFacebook: 'Continue with Facebook',
   orContinueWithEmail: 'or continue with email',
   emailLabel: 'Email Address',
   emailPlaceholder: 'traveler@example.com',

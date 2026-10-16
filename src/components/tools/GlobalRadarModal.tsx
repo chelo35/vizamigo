@@ -522,14 +522,14 @@ export const GlobalRadarModal: React.FC<Props> = ({
         : `${targetIntel.weather.tempC}°C`;
 
     const contentHtml = `
-      <div style="background:#0f172a;color:#f8fafc;padding:8px 12px;border-radius:12px;border:1px solid rgba(34,211,238,0.4);font-family:ui-sans-serif,system-ui,sans-serif;min-width:170px;box-shadow:0 10px 25px rgba(0,0,0,0.5);">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px;">
-          <span style="font-weight:800;font-size:13px;color:#fff;">${selectedHub.flag} ${displayName}</span>
-          <span style="font-family:monospace;font-size:11px;font-weight:700;color:#22d3ee;background:rgba(6,182,212,0.15);padding:2px 6px;border-radius:6px;">${targetIntel.localTimeString.slice(0, 5)}</span>
+      <div style="color:#f8fafc;padding:14px 38px 14px 16px;font-family:ui-sans-serif,system-ui,sans-serif;min-width:230px;line-height:1.4;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;">
+          <span style="font-weight:900;font-size:16px;color:#ffffff;letter-spacing:-0.02em;">${selectedHub.flag} ${displayName}</span>
+          <span style="font-family:monospace;font-size:13px;font-weight:800;color:#2dd4bf;background:rgba(45,212,191,0.18);padding:3px 8px;border-radius:8px;border:1px solid rgba(45,212,191,0.35);">${targetIntel.localTimeString.slice(0, 5)}</span>
         </div>
-        <div style="display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#cbd5e1;gap:8px;">
-          <span>${targetIntel.weather.icon} <b>${tempStr}</b></span>
-          <span style="color:#34d399;font-family:monospace;font-weight:700;">1$ = ${formatCurrencyValue(targetIntel.rate1Usd)} ${targetIntel.destCurrency}</span>
+        <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#cbd5e1;gap:12px;">
+          <span style="font-weight:800;color:#f1f5f9;display:inline-flex;align-items:center;gap:4px;">${targetIntel.weather.icon} <b>${tempStr}</b></span>
+          <span style="color:#34d399;font-family:monospace;font-weight:800;font-size:13px;background:rgba(52,211,153,0.15);padding:3px 8px;border-radius:8px;border:1px solid rgba(52,211,153,0.3);">1$ = ${formatCurrencyValue(targetIntel.rate1Usd)} ${targetIntel.destCurrency}</span>
         </div>
       </div>
     `;

@@ -246,6 +246,7 @@ export const ru: AppTranslations = {
   registerTitle: 'Создать аккаунт',
   registerSubtitle: 'Безопасно сохраняйте планы путешествий и синхронизируйте их на всех устройствах.',
   continueWithGoogle: 'Продолжить с Google',
+  continueWithFacebook: 'Продолжить через Facebook',
   orContinueWithEmail: 'или войти по эл. почте',
   emailLabel: 'Адрес эл. почты',
   emailPlaceholder: 'traveler@example.com',

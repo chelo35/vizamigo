@@ -5,7 +5,7 @@ export interface AuthUser {
   email: string;
   name: string;
   avatar?: string;
-  provider: 'google' | 'email';
+  provider: 'google' | 'facebook' | 'email';
   isPro: boolean;
   createdAt: string;
   primaryPassport: string;
@@ -21,6 +21,7 @@ interface AuthContextType {
   user: AuthUser | null;
   isAuthenticated: boolean;
   loginWithGoogle: () => Promise<{ success: boolean; error?: string }>;
+  loginWithFacebook: () => Promise<{ success: boolean; error?: string }>;
   loginWithEmail: (email: string, password: string) => Promise<{ success: boolean; error?: string }>;
   registerWithEmail: (name: string, email: string, password: string) => Promise<{ success: boolean; error?: string }>;
   logout: () => void;
@@ -134,6 +135,29 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       return { success: true };
     } catch {
       return { success: false, error: 'Google authentication failed' };
+    }
+  };
+
+  const loginWithFacebook = async (): Promise<{ success: boolean; error?: string }> => {
+    try {
+      await new Promise(resolve => setTimeout(resolve, 500));
+      const fbUser: AuthUser = {
+        id: `usr_fb_${Date.now()}`,
+        email: 'facebook.user@vizamigo.com',
+        name: 'Gezgin (Facebook)',
+        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
+        provider: 'facebook',
+        isPro: true,
+        createdAt: new Date().toISOString(),
+        primaryPassport: 'TR'
+      };
+
+      setUser(fbUser);
+      localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(fbUser));
+      setIsAuthModalOpen(false);
+      return { success: true };
+    } catch {
+      return { success: false, error: 'Facebook authentication failed' };
     }
   };
 
@@ -256,6 +280,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         user,
         isAuthenticated: !!user,
         loginWithGoogle,
+        loginWithFacebook,
         loginWithEmail,
         registerWithEmail,
         logout,

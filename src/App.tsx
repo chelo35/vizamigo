@@ -6,7 +6,6 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Header } from './components/Header';
 import { Navigation, TabKey } from './components/Navigation';
-import { ExploreTab } from './components/ExploreTab';
 import {
   loadStoredPassport,
   saveStoredPassport,
@@ -16,7 +15,6 @@ import {
 import { LanguageProvider, useI18n } from './data/i18n';
 import { AuthProvider } from './context/AuthContext';
 import { AuthModal } from './components/AuthModal';
-import { GlobalFooter } from './components/footer/GlobalFooter';
 import { Sparkles, X } from 'lucide-react';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { useSeoRouter } from './utils/seoRouter';
@@ -26,7 +24,13 @@ import { HomeHero } from './components/design/HomeHero';
 import { getCountryName } from './data/passportData';
 import { getPassportItems } from './utils/calculator';
 
-// Code-split secondary tabs & modals for <0.5s instant initial render
+// Code-split primary and secondary tabs & components for <0.3s instant initial render
+const ExploreTab = lazy(() =>
+  import('./components/ExploreTab').then(m => ({ default: m.ExploreTab }))
+);
+const GlobalFooter = lazy(() =>
+  import('./components/footer/GlobalFooter').then(m => ({ default: m.GlobalFooter }))
+);
 const WhereCanIGoTab = lazy(() =>
   import('./components/WhereCanIGoTab').then(m => ({ default: m.WhereCanIGoTab }))
 );
@@ -304,7 +308,7 @@ function AppContent() {
             <Suspense fallback={<TabLoadingSkeleton />}>
               {/* Tab Content: 1. KEŞFET / EXPLORE (PURE V2 LAGOON WIDGET DASHBOARD) */}
               {activeTab === 'explore' && (
-                <ErrorBoundary isTabBoundary tabName={t.explore || 'Keşfet'}>
+                <ErrorBoundary isTabBoundary tabName={t.navExplore || 'Keşfet'}>
                   <div className="space-y-6">
                     {exploreSubTab === 'all' ? (
                       <ExploreTab
@@ -522,21 +526,23 @@ function AppContent() {
         )}
 
         {/* Comprehensive Booking.com-Style Footer Suite */}
-        <GlobalFooter
-          currentPassport={currentPassport}
-          onSelectCountry={(code) => {
-            if (activeTab !== 'explore') {
-              setActiveTab('explore');
-            }
-            handleCountrySelect(code);
-          }}
-          onOpenLegalModal={(tab) => openLegalModalWithTab(tab || 'terms')}
-          setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
-          onOpenPackingList={() => setIsPackingListOpen(true)}
-          onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
-          onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-          onOpenGlobalRadar={() => openRadar('all')}
-        />
+        <Suspense fallback={null}>
+          <GlobalFooter
+            currentPassport={currentPassport}
+            onSelectCountry={(code) => {
+              if (activeTab !== 'explore') {
+                setActiveTab('explore');
+              }
+              handleCountrySelect(code);
+            }}
+            onOpenLegalModal={(tab) => openLegalModalWithTab(tab || 'terms')}
+            setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
+            onOpenPackingList={() => setIsPackingListOpen(true)}
+            onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+            onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+            onOpenGlobalRadar={() => openRadar('all')}
+          />
+        </Suspense>
       </main>
       </div>
 

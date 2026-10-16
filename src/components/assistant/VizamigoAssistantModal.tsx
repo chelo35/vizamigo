@@ -94,7 +94,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         {
           id: 'init-where',
           type: 'switch_tab',
-          tabKey: 'where_can_i_go',
+          tabKey: 'explore',
           label: lang === 'tr' ? '🌍 Vizesiz Ülkeler Radarı' : '🌍 Visa-Free World Radar',
           accentTone: 'teal'
         },

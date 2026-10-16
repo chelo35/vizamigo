@@ -302,35 +302,35 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
         const visaLabel = getCategoryBadgeLabel(pItem, language);
 
         const infoContent = `
-          <div style="font-family:system-ui, sans-serif; color:#0f172a; min-width:220px; padding:4px;">
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-              <span style="font-size:22px; line-height:1;">${getFlag(item.stop.countryCode)}</span>
+          <div style="font-family:system-ui, sans-serif; color:#f8fafc; min-width:240px; padding:12px 34px 12px 14px; line-height:1.4;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="font-size:24px; line-height:1;">${getFlag(item.stop.countryCode)}</span>
               <div>
-                <strong style="font-size:14px; color:#0f172a; display:block;">
+                <strong style="font-size:15px; color:#ffffff; display:block; font-weight:900;">
                   ${index + 1}. ${getCountryName(item.stop.countryCode, language)}
                 </strong>
-                <span style="font-size:11px; color:#64748b;">
+                <span style="font-size:12px; color:#94a3b8; font-weight:600;">
                   ${item.geo.capital} · ${l('Merkez:', 'Hub:', 'Knotenpunkt:')} ${item.geo.mainHub}
                 </span>
               </div>
             </div>
-            <div style="background:#f1f5f9; padding:6px 8px; border-radius:8px; font-size:11px; margin-bottom:8px;">
-              <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
-                <span style="color:#64748b;">${l('Kalış Süresi:', 'Stay Duration:', 'Aufenthaltsdauer:')}</span>
-                <strong style="color:#0f766e;">${stayDays} ${l('Gün', 'Days', 'Tage')} (${formatLocalizedDate(inIdx, language)} – ${formatLocalizedDate(outIdx, language)})</strong>
+            <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); padding:8px 10px; border-radius:10px; font-size:12px; margin-bottom:8px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                <span style="color:#94a3b8;">${l('Kalış Süresi:', 'Stay Duration:', 'Aufenthaltsdauer:')}</span>
+                <strong style="color:#2dd4bf; font-weight:800;">${stayDays} ${l('Gün', 'Days', 'Tage')} (${formatLocalizedDate(inIdx, language)} – ${formatLocalizedDate(outIdx, language)})</strong>
               </div>
               <div style="display:flex; justify-content:space-between;">
-                <span style="color:#64748b;">${l('Vize Statüsü:', 'Visa Status:', 'Visumstatus:')}</span>
-                <strong style="color:${pinColor};">${visaLabel}</strong>
+                <span style="color:#94a3b8;">${l('Vize Statüsü:', 'Visa Status:', 'Visumstatus:')}</span>
+                <strong style="color:${pinColor}; font-weight:800;">${visaLabel}</strong>
               </div>
             </div>
             ${
               leg
-                ? `<div style="font-size:11px; color:#334155; border-top:1px dashed #cbd5e1; pt-2; margin-top:4px;">
-                    <span style="color:#64748b;">${l('Sonraki Durak', 'Next Destination', 'Nächstes Ziel')} (${getCountryName(nextStop!.stop.countryCode, language)}):</span><br/>
-                    <strong>${leg.modeIcon} ${leg.modeLabel}</strong> · ${leg.distanceKm} km · ~${leg.estimatedTransitHours} ${l('sa intikal', 'hrs transit', 'Std. Transit')}
+                ? `<div style="font-size:11px; color:#cbd5e1; border-top:1px dashed rgba(255,255,255,0.15); padding-top:6px; margin-top:6px;">
+                    <span style="color:#94a3b8;">${l('Sonraki Durak', 'Next Destination', 'Nächstes Ziel')} (${getCountryName(nextStop!.stop.countryCode, language)}):</span><br/>
+                    <strong style="color:#ffffff;">${leg.modeIcon} ${leg.modeLabel}</strong> · ${leg.distanceKm} km · ~${leg.estimatedTransitHours} ${l('sa intikal', 'hrs transit', 'Std. Transit')}
                    </div>`
-                : `<div style="font-size:11px; color:#10b981; font-weight:600;">${l('✓ Rotanın son varış noktası', '✓ Final destination of route', '✓ Endziel der Reiseroute')}</div>`
+                : `<div style="font-size:12px; color:#34d399; font-weight:700;">${l('✓ Rotanın son varış noktası', '✓ Final destination of route', '✓ Endziel der Reiseroute')}</div>`
             }
           </div>
         `;
