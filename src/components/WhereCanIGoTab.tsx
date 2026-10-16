@@ -13,7 +13,7 @@ import {
 } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { useI18n } from '../data/i18n';
-import { getCountryVisual } from '../data/countryVisuals';
+import { getCountryVisual, getOptimizedSrcSet } from '../data/countryVisuals';
 
 interface WhereCanIGoTabProps {
   currentPassport: string;
@@ -244,16 +244,18 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({
                   <div className="country-thumbnail-slot w-24 h-20 sm:w-28 sm:h-24 aspect-[16/10] shadow-sm flex-shrink-0">
                     <img
                       src={visual.image}
+                      srcSet={getOptimizedSrcSet(visual.image)}
+                      sizes="(max-width: 640px) 96px, 112px"
                       alt={`${countryName} - ${visual.landmark}`}
                       className="country-thumbnail-image country-thumbnail-images"
                       loading="lazy"
                       decoding="async"
-                      width="240"
-                      height="160"
+                      width="112"
+                      height="80"
                       onError={(e) => {
                         const target = e.currentTarget;
                         target.onerror = null;
-                        target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=480&fm=webp&q=75';
+                        target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=240&q=50';
                       }}
                     />
                     <div className="country-thumbnail-scrim" />

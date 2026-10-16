@@ -325,11 +325,15 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                         <img
                           src={
                             targetCode === 'TH'
-                              ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&fm=webp&q=80'
+                              ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=440&q=50'
                               : visual.image
                           }
                           alt={getCountryName(targetCode, language)}
                           className="w-full h-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                          width="440"
+                          height="240"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#042F2E]/85 via-transparent to-[#042F2E]/35" />
 

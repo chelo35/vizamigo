@@ -7,7 +7,7 @@
 import { countryToRegion } from './passportData';
 import { getVerifiedCountryVisual } from './verifiedCountryData';
 
-export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=480&fm=webp&q=75';
+export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=440&q=50';
 
 /**
  * Transforms image URLs to modern Next-Gen WebP format with optimal compression.
@@ -249,20 +249,20 @@ export function getCountryVisual(countryCode: string): { image: string; landmark
   const verified = getVerifiedCountryVisual(code);
   if (verified) {
     return {
-      image: getOptimizedImageUrl(verified.image, { width: 320, quality: 58 }),
+      image: getOptimizedImageUrl(verified.image, { width: 440, quality: 50 }),
       landmark: verified.landmark
     };
   }
   const raw = COUNTRY_LANDSCAPES[code];
   if (raw) {
     return {
-      image: getOptimizedImageUrl(raw.image, { width: 320, quality: 58 }),
+      image: getOptimizedImageUrl(raw.image, { width: 440, quality: 50 }),
       landmark: raw.landmark
     };
   }
   const reg = countryToRegion[code] || 'Otantik Rota';
   return {
-    image: getOptimizedImageUrl(DEFAULT_TRAVEL_FALLBACK, { width: 320, quality: 58 }),
+    image: getOptimizedImageUrl(DEFAULT_TRAVEL_FALLBACK, { width: 440, quality: 50 }),
     landmark: `${code} ${reg} Manzaraları`
   };
 }

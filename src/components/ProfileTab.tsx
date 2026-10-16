@@ -138,6 +138,10 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
                   <img
                     src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name || 'Gezgin')}`}
                     alt={user.name || 'User'}
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                    decoding="async"
                     className="w-14 h-14 rounded-2xl object-cover border-2 border-slate-300 dark:border-white/20 shadow-md"
                   />
                   <div>

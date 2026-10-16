@@ -650,18 +650,18 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       <img
                         src={visual.image}
                         srcSet={getOptimizedSrcSet(visual.image)}
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 200px, 220px"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 208px, 224px"
                         alt={`${countryName} - ${visual.landmark}`}
                         className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500 rounded-2xl"
                         loading="lazy"
                         fetchPriority="low"
                         decoding="async"
-                        width="240"
+                        width="224"
                         height="200"
                         onError={(e) => {
                           const target = e.currentTarget;
                           target.onerror = null;
-                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=360&fm=webp&q=65';
+                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=360&q=50';
                         }}
                       />
                       <div className="country-thumbnail-scrim" />
@@ -922,11 +922,13 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                     <div className="relative h-44 sm:h-56 aspect-[16/9] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-white/[0.08] shadow-md group/hero">
                       <img
                         src={visual.image}
+                        srcSet={getOptimizedSrcSet(visual.image)}
+                        sizes="(max-width: 640px) 100vw, 800px"
                         alt={`${countryName} - ${visual.landmark}`}
                         className="w-full h-full object-cover brightness-[0.78] contrast-[1.06] group-hover/hero:scale-105 transition-transform duration-700"
                         loading="lazy"
                         decoding="async"
-                        width="960"
+                        width="800"
                         height="440"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/95 via-[#0B0F19]/35 to-transparent pointer-events-none" />

@@ -269,6 +269,9 @@ export const Header: React.FC<HeaderProps> = ({
                     <img
                       src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
                       alt={user.name}
+                      width="24"
+                      height="24"
+                      decoding="async"
                       className="w-6 h-6 rounded-full object-cover"
                     />
                     <ChevronDown className="w-3 h-3 text-[#5EEAD4]" />
