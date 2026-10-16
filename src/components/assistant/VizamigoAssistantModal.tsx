@@ -12,11 +12,13 @@ import {
   Send,
   ExternalLink,
   ChevronRight,
-  MapPin,
-  Compass,
-  Briefcase,
-  ShieldCheck,
-  RefreshCw
+  Settings,
+  Play,
+  Check,
+  Info,
+  Shield,
+  Sliders,
+  HelpCircle
 } from 'lucide-react';
 import { useI18n } from '../../data/i18n';
 import { TabKey } from '../Navigation';
@@ -31,6 +33,13 @@ import {
   isSpeechRecognitionSupported,
   isSpeechSynthesisSupported
 } from '../../services/aiAssistantEngine';
+import {
+  getVoiceSettings,
+  saveVoiceSettings,
+  VoiceSettings,
+  playNaturalSpeech,
+  stopAllPlayback
+} from '../../services/aiVoiceService';
 
 interface VizamigoAssistantModalProps {
   isOpen: boolean;
@@ -57,58 +66,56 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 }) => {
   const { language, l } = useI18n();
 
-  const [messages, setMessages] = useState<AssistantMessage[]>(() => {
-    return [
-      {
-        id: 'welcome-msg',
-        sender: 'assistant',
-        text:
-          language === 'tr'
-            ? `Merhaba! Ben **Vizamigo AI Seyahat Danışmanınız** ✈️\n\nSitedeki tüm **199 ülke vize rejimlerine**, gün gün gezi rotalarına, priz/elektrik tiplerine ve seyahat uygulamalarına (eSIM, otel, tren, transfer) tam hakimim.\n\nİster yazın, ister **mikrofon simgesine basıp sesli konuşun**!`
-            : `Hello! I am your **Vizamigo AI Travel Concierge** ✈️\n\nI have complete command over **199 country visa requirements**, curated itineraries, power plugs, and verified travel tools.\n\nType your query or **tap the microphone to speak** in your native language!`,
-        timestamp: new Date(),
-        actions: [
-          {
-            id: 'init-th',
-            type: 'open_country',
-            countryCode: 'TH',
-            label: '🇹🇭 Tayland Vizesi & Rehberi',
-            accentTone: 'teal'
-          },
-          {
-            id: 'init-it',
-            type: 'open_country',
-            countryCode: 'IT',
-            label: '🇮🇹 İtalya 7 Günlük Gezi Rotası',
-            accentTone: 'sky'
-          },
-          {
-            id: 'init-esim',
-            type: 'affiliate',
-            url: 'https://www.airalo.com',
-            badge: '5G eSIM',
-            label: '📱 En Ucuz Yurt Dışı eSIM',
-            accentTone: 'coral'
-          },
-          {
-            id: 'init-packing',
-            type: 'open_tool',
-            toolKey: 'packing',
-            label: '🧳 Valiz Kontrol Listesi',
-            accentTone: 'amber'
-          }
-        ]
-      }
-    ];
-  });
+  const getWelcomeMessage = (): AssistantMessage => {
+    let welcomeText = '';
+    if (language === 'tr') {
+      welcomeText = `Merhaba! Ben **Vizamigo AI Seyahat Danışmanınız** ✈️\n\nSitedeki **199 ülkenin tamamına** (vize rejimleri, priz tipleri, taksi uygulamaları, bahşiş kuralları, acil durum hatları ve güncel döviz kurları) tam hakimim.\n\nİster yazın, ister **mikrofon simgesine basıp konuşun**!`;
+    } else if (language === 'de') {
+      welcomeText = `Hallo! Ich bin Ihr **Vizamigo AI Reiseassistent** ✈️\n\nIch kenne alle **199 Länder** auswendig: Visabestimmungen, Steckertypen, Taxi-Apps, Trinkgeldregeln und Live-Wechselkurse.\n\nSchreiben Sie Ihre Frage oder **tippen Sie auf das Mikrofon**, um zu sprechen!`;
+    } else if (language === 'es') {
+      welcomeText = `¡Hola! Soy tu **Asistente de Viaje Vizamigo AI** ✈️\n\nDomino los **199 países**: requisitos de visado, enchufes, aplicaciones de taxi, propinas y tipos de cambio.\n\nEscribe tu consulta o **pulsa el micrófono** para hablar.`;
+    } else if (language === 'ru') {
+      welcomeText = `Здравствуйте! Я ваш **ИИ-консультант Vizamigo** ✈️\n\nЯ знаю все **199 стран**: визовые правила, типы розеток, приложения такси, чаевые и курсы валют.\n\nНапишите вопрос или **нажмите на микрофон**, чтобы сказать голосом!`;
+    } else {
+      welcomeText = `Hello! I am your **Vizamigo AI Travel Concierge** ✈️\n\nI have complete mastery over all **199 countries**: visa rules, power plugs, taxi apps, tipping etiquette, itineraries, and live FX rates.\n\nType your inquiry or **tap the microphone to speak**!`;
+    }
 
+    return {
+      id: 'welcome-msg',
+      sender: 'assistant',
+      text: welcomeText,
+      timestamp: new Date(),
+      actions: [
+        {
+          id: 'init-where',
+          type: 'switch_tab',
+          tabKey: 'where_can_i_go',
+          label: language === 'tr' ? '🌍 Vizesiz Ülkeler Radarı' : '🌍 Visa-Free World Radar',
+          accentTone: 'teal'
+        },
+        {
+          id: 'init-th',
+          type: 'open_country',
+          countryCode: 'TH',
+          label: language === 'tr' ? '🇹🇭 Tayland Vizesi & Rehberi' : '🇹🇭 Thailand Visa Guide',
+          accentTone: 'sky'
+        }
+      ]
+    };
+  };
+
+  const [messages, setMessages] = useState<AssistantMessage[]>([getWelcomeMessage()]);
   const [inputValue, setInputValue] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(false);
-  const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
-  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false); // Muted by default: no unexpected mechanical voices!
+  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false);
   const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isTyping, setIsTyping] = useState<boolean>(false);
+  const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null);
+  const [showSettings, setShowSettings] = useState<boolean>(false);
+  const [voiceSettings, setVoiceSettingsState] = useState<VoiceSettings>(getVoiceSettings());
+  const [isTestingVoice, setIsTestingVoice] = useState<boolean>(false);
+  const [settingsSavedToast, setSettingsSavedToast] = useState<boolean>(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -120,13 +127,11 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   useEffect(() => {
     if (isOpen) {
       scrollToBottom();
-      if (!isMinimized) {
+      if (!isMinimized && !showSettings) {
         setTimeout(() => inputRef.current?.focus(), 250);
       }
     }
-  }, [isOpen, messages, isMinimized]);
-
-  const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null);
+  }, [isOpen, messages, isMinimized, showSettings]);
 
   // Clean up voice synthesis on unmount or close
   useEffect(() => {
@@ -168,20 +173,17 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     setMessages((prev) => [...prev, userMsg]);
     setIsTyping(true);
 
-    // Stop listening if user manually pressed send
     if (isListening) {
       stopVoiceRecognition();
       setIsListening(false);
     }
 
-    // Process intelligence query
     try {
       const response = await processAssistantQuery(textToSend, currentPassport, language);
       setIsTyping(false);
       setMessages((prev) => [...prev, response]);
 
-      // Read aloud if voice is enabled and user initiated via voice or voice is turned on
-      if (voiceEnabled && (isVoiceInput || isSpeaking)) {
+      if (voiceEnabled && (isVoiceInput || voiceSettings.autoSpeak)) {
         setSpeakingMsgId(response.id);
         speakResponse(response.spokenText || response.text, language, () => {
           setSpeakingMsgId(null);
@@ -217,12 +219,10 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         return;
       }
 
-      // Stop any current assistant speech
       stopSpeaking();
       setSpeakingMsgId(null);
-      setIsSpeaking(false);
-
       setIsListening(true);
+
       startVoiceRecognition({
         lang: language,
         onResult: (transcript, isFinal) => {
@@ -245,7 +245,6 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     if (voiceEnabled) {
       stopSpeaking();
       setSpeakingMsgId(null);
-      setIsSpeaking(false);
       setVoiceEnabled(false);
     } else {
       setVoiceEnabled(true);
@@ -265,6 +264,33 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     } else if (action.type === 'affiliate' && action.url) {
       window.open(action.url, '_blank', 'noopener,noreferrer');
     }
+  };
+
+  const handleTestVoice = async () => {
+    setIsTestingVoice(true);
+    const testPhrase =
+      language === 'tr'
+        ? 'Merhaba! Vizamigo AI seyahat danışmanınız hazır. 199 ülkenin tamamına hakimim.'
+        : language === 'de'
+        ? 'Hallo! Ihr Vizamigo Reiseberater ist bereit für 199 Länder weltweit.'
+        : language === 'es'
+        ? '¡Hola! Tu asistente de viajes Vizamigo está listo para 199 países.'
+        : language === 'ru'
+        ? 'Здравствуйте! Ваш консультант Vizamigo готов ответить по всем 199 странам.'
+        : 'Hello! Your Vizamigo AI travel concierge is ready for all 199 countries worldwide.';
+
+    await playNaturalSpeech(testPhrase, language, () => {
+      setIsTestingVoice(false);
+    });
+  };
+
+  const handleSaveSettings = () => {
+    saveVoiceSettings(voiceSettings);
+    setSettingsSavedToast(true);
+    setTimeout(() => {
+      setSettingsSavedToast(false);
+      setShowSettings(false);
+    }, 1000);
   };
 
   // Minimized floating bubble
@@ -305,11 +331,11 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         className={`pointer-events-auto w-full flex flex-col overflow-hidden bg-white/95 dark:bg-[#072630]/95 backdrop-blur-2xl border border-teal-500/30 shadow-2xl transition-all duration-300 ${
           isFullscreen
             ? 'fixed inset-3 sm:inset-6 z-50 rounded-[28px]'
-            : 'sm:w-[460px] sm:h-[650px] max-h-[85vh] h-[85vh] sm:rounded-[30px] rounded-t-[26px]'
+            : 'sm:w-[480px] sm:h-[660px] max-h-[85vh] h-[85vh] sm:rounded-[30px] rounded-t-[26px]'
         }`}
       >
         {/* ===================================================================
-            HEADER: AVATAR, TITLE, VOICE TOGGLE, WINDOW CONTROLS
+            HEADER: AVATAR, TITLE, VOICE TOGGLE, SETTINGS, WINDOW CONTROLS
         =================================================================== */}
         <div className="p-3.5 sm:p-4 border-b border-teal-500/20 bg-gradient-to-r from-teal-500/10 via-sky-500/10 to-transparent flex items-center justify-between gap-2 shrink-0">
           <div className="flex items-center gap-2.5 min-w-0">
@@ -324,17 +350,32 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
                   {l('Vizamigo AI Danışman', 'Vizamigo AI Concierge')}
                 </h3>
                 <span className="text-xs font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#5EEAD4]/20 text-[#0F766E] dark:text-[#5EEAD4] border border-[#5EEAD4]/40">
-                  {l('Canlı & Sesli', 'Live & Voice')}
+                  {l('199 Ülke', '199 Countries')}
                 </span>
               </div>
               <p className="text-xs font-bold text-slate-500 dark:text-teal-200/80 truncate mt-0.5">
-                {l('199 Ülke Vize, Rota & Rehber Uzmanı', '199 Countries Visa & Route Expert')}
+                {l('Vize, Rota, Priz & Seyahat Bilgisi', 'Visas, Routes, Plugs & Intelligence')}
               </p>
             </div>
           </div>
 
           {/* Window Action Controls */}
           <div className="flex items-center gap-1.5 shrink-0">
+            {/* Voice Settings & AI Training Toggle */}
+            <button
+              type="button"
+              onClick={() => setShowSettings(!showSettings)}
+              aria-label={l('Ses & AI Eğitimi Ayarları', 'Voice & AI Settings')}
+              title={l('Ses ve AI Eğitimi Ayarları', 'Voice Engine & AI Training Settings')}
+              className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
+                showSettings
+                  ? 'bg-[#0D9488] text-white border-teal-600 shadow-xs'
+                  : 'bg-white dark:bg-white/10 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-white/10 hover:text-slate-900'
+              }`}
+            >
+              <Settings className="w-4 h-4" />
+            </button>
+
             {/* Voice Mute/Unmute Toggle */}
             <button
               type="button"
@@ -383,218 +424,442 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         </div>
 
         {/* ===================================================================
-            MESSAGES FEED
+            VOICE & AI TRAINING SETTINGS DRAWER
         =================================================================== */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
-          {messages.map((msg) => {
-            const isUser = msg.sender === 'user';
-            return (
-              <div
-                key={msg.id}
-                className={`flex flex-col ${isUser ? 'items-end' : 'items-start'} space-y-2`}
+        {showSettings ? (
+          <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 bg-slate-50/90 dark:bg-slate-900/90">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-white/10">
+              <div className="flex items-center gap-2">
+                <Sliders className="w-5 h-5 text-[#0D9488]" />
+                <h4 className="text-sm font-black text-slate-900 dark:text-white">
+                  {l('Ses Motoru & AI Eğitimi', 'Voice Engine & AI Training')}
+                </h4>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowSettings(false)}
+                className="text-xs font-bold text-slate-500 hover:text-slate-800"
               >
+                {l('Geri Dön', 'Back')}
+              </button>
+            </div>
+
+            {/* Engine Selection */}
+            <div className="space-y-2">
+              <label className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                {l('Ses Tonu & Kalitesi', 'Voice Quality & Fidelity')}
+              </label>
+
+              <div className="grid grid-cols-1 gap-2.5">
+                {/* Option 1: Browser Natural */}
                 <div
-                  className={`max-w-[88%] p-3.5 sm:p-4 rounded-2xl sm:rounded-[22px] leading-relaxed text-xs sm:text-sm font-medium ${
-                    isUser
-                      ? 'bg-gradient-to-r from-[#0D9488] to-[#0284C7] text-white shadow-md rounded-br-xs'
-                      : 'bg-slate-100/90 dark:bg-slate-900/90 text-slate-900 dark:text-slate-100 border border-teal-500/20 shadow-xs rounded-bl-xs'
+                  onClick={() => setVoiceSettingsState({ ...voiceSettings, engine: 'browser' })}
+                  className={`p-3 rounded-2xl border-2 transition-all cursor-pointer ${
+                    voiceSettings.engine === 'browser'
+                      ? 'border-[#0D9488] bg-teal-50/50 dark:bg-teal-950/40 shadow-xs'
+                      : 'border-slate-200 dark:border-white/10 bg-white dark:bg-white/5'
                   }`}
                 >
-                  <div className="whitespace-pre-line break-words">{msg.text}</div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-slate-900 dark:text-white">
+                      {l('Cihaz Doğal Sesi (Ücretsiz & Hızlı)', 'Device Natural Voice (Free & Offline)')}
+                    </span>
+                    {voiceSettings.engine === 'browser' && <Check className="w-4 h-4 text-[#0D9488]" />}
+                  </div>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                    {l(
+                      'İşletim sisteminizdeki en doğal Microsoft Natural / Google Neural / Apple Siri ses profilini seçer. API anahtarı gerekmez.',
+                      'Uses the best Microsoft Natural, Google Neural, or Apple Siri voice built into your OS. No API key needed.'
+                    )}
+                  </p>
+                </div>
 
-                  {!isUser && (
-                    <div className="pt-2 mt-2 border-t border-slate-200/60 dark:border-white/10 flex items-center justify-between">
-                      <button
-                        type="button"
-                        onClick={() => playMessageAudio(msg)}
-                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                          speakingMsgId === msg.id
-                            ? 'bg-rose-500 text-white animate-pulse shadow-xs'
-                            : 'bg-white dark:bg-slate-800 hover:bg-teal-50 dark:hover:bg-teal-950/60 text-[#0F766E] dark:text-[#5EEAD4] border border-slate-200 dark:border-white/10'
-                        }`}
-                        title={speakingMsgId === msg.id ? l('Sesi Durdur', 'Stop Audio') : l('Sesli Dinle', 'Listen Aloud')}
-                      >
-                        {speakingMsgId === msg.id ? (
-                          <>
-                            <VolumeX className="w-3.5 h-3.5" />
-                            <span>{l('Durdur', 'Stop')}</span>
-                          </>
-                        ) : (
-                          <>
-                            <Volume2 className="w-3.5 h-3.5" />
-                            <span>{l('Sesli Dinle', 'Listen')}</span>
-                          </>
-                        )}
-                      </button>
+                {/* Option 2: ElevenLabs Studio Voice */}
+                <div
+                  onClick={() => setVoiceSettingsState({ ...voiceSettings, engine: 'elevenlabs' })}
+                  className={`p-3 rounded-2xl border-2 transition-all cursor-pointer ${
+                    voiceSettings.engine === 'elevenlabs'
+                      ? 'border-[#0D9488] bg-teal-50/50 dark:bg-teal-950/40 shadow-xs'
+                      : 'border-slate-200 dark:border-white/10 bg-white dark:bg-white/5'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-xs font-black text-slate-900 dark:text-white">
+                        ElevenLabs Studio AI Sesi
+                      </span>
+                      <span className="text-xs px-1.5 py-0.5 rounded bg-emerald-500 text-white font-black">
+                        {l('Önerilen', 'Pro')}
+                      </span>
+                    </div>
+                    {voiceSettings.engine === 'elevenlabs' && <Check className="w-4 h-4 text-[#0D9488]" />}
+                  </div>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                    {l(
+                      'Ultra-gerçekçi, insan duygusu, nefes alma ve 29 dilde kusursuz diksiyon. Robotik sesi %100 yok eder.',
+                      'Ultra-realistic human emotion, natural breathing, zero robotic tone in 29+ languages.'
+                    )}
+                  </p>
+
+                  {voiceSettings.engine === 'elevenlabs' && (
+                    <div className="mt-3 pt-3 border-t border-teal-500/20 space-y-2">
+                      <div>
+                        <label className="text-xs font-bold text-slate-600 dark:text-slate-300">
+                          ElevenLabs API Key:
+                        </label>
+                        <input
+                          type="password"
+                          value={voiceSettings.elevenLabsApiKey}
+                          onChange={(e) =>
+                            setVoiceSettingsState({ ...voiceSettings, elevenLabsApiKey: e.target.value })
+                          }
+                          placeholder="xi-..."
+                          className="w-full mt-1 px-3 py-1.5 rounded-xl text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold text-slate-600 dark:text-slate-300">
+                          Voice ID (Opsiyonel / Varsayılan Rachel):
+                        </label>
+                        <input
+                          type="text"
+                          value={voiceSettings.elevenLabsVoiceId}
+                          onChange={(e) =>
+                            setVoiceSettingsState({ ...voiceSettings, elevenLabsVoiceId: e.target.value })
+                          }
+                          placeholder="21m00Tcm4TlvDq8ikWAM"
+                          className="w-full mt-1 px-3 py-1.5 rounded-xl text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10"
+                        />
+                      </div>
                     </div>
                   )}
                 </div>
 
-                {/* Embedded Action Pills & Affiliate Badges */}
-                {msg.actions && msg.actions.length > 0 && (
-                  <div className="flex flex-wrap gap-2 pt-1 max-w-[95%]">
-                    {msg.actions.map((act) => {
-                      const isAffiliate = act.type === 'affiliate';
-                      return (
-                        <button
-                          key={act.id}
-                          type="button"
-                          onClick={() => handleActionClick(act)}
-                          className={`group/act inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-xs hover:-translate-y-0.5 active:translate-y-0 ${
-                            isAffiliate
-                              ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 border border-amber-500/40 hover:border-amber-500'
-                              : 'bg-teal-50 dark:bg-teal-950/60 text-[#0F766E] dark:text-[#5EEAD4] border border-teal-500/40 hover:border-teal-500'
-                          }`}
-                        >
-                          {act.badge && (
-                            <span className="text-xs font-black uppercase px-1.5 py-0.5 rounded bg-white/70 dark:bg-white/10">
-                              {act.badge}
-                            </span>
-                          )}
-                          <span>{act.label}</span>
-                          {isAffiliate ? (
-                            <ExternalLink className="w-3 h-3 text-amber-600 dark:text-amber-400 group-hover/act:translate-x-0.5 transition-transform" />
-                          ) : (
-                            <ChevronRight className="w-3 h-3 text-[#0D9488] dark:text-[#5EEAD4] group-hover/act:translate-x-0.5 transition-transform" />
-                          )}
-                        </button>
-                      );
-                    })}
+                {/* Option 3: OpenAI TTS */}
+                <div
+                  onClick={() => setVoiceSettingsState({ ...voiceSettings, engine: 'openai' })}
+                  className={`p-3 rounded-2xl border-2 transition-all cursor-pointer ${
+                    voiceSettings.engine === 'openai'
+                      ? 'border-[#0D9488] bg-teal-50/50 dark:bg-teal-950/40 shadow-xs'
+                      : 'border-slate-200 dark:border-white/10 bg-white dark:bg-white/5'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-slate-900 dark:text-white">
+                      OpenAI Audio TTS (Nova / Alloy / Shimmer)
+                    </span>
+                    {voiceSettings.engine === 'openai' && <Check className="w-4 h-4 text-[#0D9488]" />}
                   </div>
-                )}
-              </div>
-            );
-          })}
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                    {l(
+                      'OpenAI modelinin berrak ve akıcı insan sesi.',
+                      'Crisp, human-grade voice synthesis powered by OpenAI tts-1.'
+                    )}
+                  </p>
 
-          {/* Typing Indicator */}
-          {isTyping && (
-            <div className="flex items-center gap-2 p-3 rounded-2xl bg-slate-100 dark:bg-slate-900/80 border border-teal-500/20 w-fit">
-              <span className="w-2 h-2 rounded-full bg-[#0D9488] animate-bounce" />
-              <span className="w-2 h-2 rounded-full bg-[#0EA5E9] animate-bounce [animation-delay:0.2s]" />
-              <span className="w-2 h-2 rounded-full bg-[#5EEAD4] animate-bounce [animation-delay:0.4s]" />
-              <span className="text-xs text-slate-500 font-bold ml-1">
-                {l('Danışman yanıtlıyor...', 'Concierge is researching...')}
-              </span>
+                  {voiceSettings.engine === 'openai' && (
+                    <div className="mt-3 pt-3 border-t border-teal-500/20 space-y-2">
+                      <div>
+                        <label className="text-xs font-bold text-slate-600 dark:text-slate-300">
+                          OpenAI API Key:
+                        </label>
+                        <input
+                          type="password"
+                          value={voiceSettings.openAiApiKey}
+                          onChange={(e) =>
+                            setVoiceSettingsState({ ...voiceSettings, openAiApiKey: e.target.value })
+                          }
+                          placeholder="sk-..."
+                          className="w-full mt-1 px-3 py-1.5 rounded-xl text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold text-slate-600 dark:text-slate-300">
+                          Ses Profili:
+                        </label>
+                        <select
+                          value={voiceSettings.openAiVoice}
+                          onChange={(e) =>
+                            setVoiceSettingsState({
+                              ...voiceSettings,
+                              openAiVoice: e.target.value as any
+                            })
+                          }
+                          className="w-full mt-1 px-3 py-1.5 rounded-xl text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10"
+                        >
+                          <option value="nova">Nova (Sıcak & Samimi Kadın)</option>
+                          <option value="alloy">Alloy (Dengeli & Profesyonel)</option>
+                          <option value="shimmer">Shimmer (Berrak & Enerjik)</option>
+                          <option value="echo">Echo (Sakin Erkek)</option>
+                          <option value="onyx">Onyx (Derin Erkek)</option>
+                        </select>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
-          )}
 
-          {/* Voice Listening Active Audio Wave Indicator */}
-          {isListening && (
-            <div className="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-500/40 flex items-center justify-between gap-3 animate-pulse">
-              <div className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-rose-500 animate-ping" />
-                <span className="text-xs font-black text-rose-700 dark:text-rose-300">
-                  {l('Sizi dinliyorum, konuşun...', 'Listening to your voice...')}
-                </span>
-              </div>
+            {/* Test Voice Button */}
+            <div className="pt-2">
               <button
                 type="button"
-                onClick={handleToggleVoiceInput}
-                className="px-2.5 py-1 rounded-lg bg-rose-600 text-white text-xs font-bold cursor-pointer"
+                onClick={handleTestVoice}
+                disabled={isTestingVoice}
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-white/10 text-xs font-black text-[#0D9488] dark:text-[#5EEAD4] shadow-xs hover:border-[#0D9488] transition-all cursor-pointer"
               >
-                {l('Durdur', 'Stop')}
+                <Play className={`w-4 h-4 ${isTestingVoice ? 'animate-spin' : ''}`} />
+                <span>{isTestingVoice ? l('Ses Çalınıyor...', 'Playing audio...') : l('Seçili Sesi Canlı Test Et', 'Test Voice Sample')}</span>
               </button>
             </div>
-          )}
 
-          <div ref={messagesEndRef} />
-        </div>
+            {/* AI Training & Site Intelligence Info */}
+            <div className="p-3.5 rounded-2xl bg-teal-50/70 dark:bg-teal-950/30 border border-teal-500/30 space-y-2">
+              <div className="flex items-center gap-2">
+                <Shield className="w-4 h-4 text-[#0D9488]" />
+                <h5 className="text-xs font-black text-[#042F2E] dark:text-teal-200">
+                  {l('Vizamigo AI Nasıl Eğitildi?', 'How Vizamigo AI Is Trained')}
+                </h5>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-teal-100/90 leading-relaxed">
+                {l(
+                  'Asistanımız sitedeki tüm 199 ülkenin vize rejimlerini, 90/180 Schengen gün sayacını, priz tiplerini, taksi uygulamalarını, bahşiş kurallarını, canlı döviz kurlarını ve 24/7 kriz hatlarını doğrudan yerel hafızasından okur.',
+                  'Trained directly on all 199 countries, Schengen 90/180 day calculator, plug standards, ride-hailing apps, tipping etiquette, FX rates, and 24/7 consular hotlines.'
+                )}
+              </p>
+            </div>
+
+            {/* Save Button */}
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={handleSaveSettings}
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#0284C7] text-white text-xs font-black shadow-md cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-all"
+              >
+                <Check className="w-4 h-4" />
+                <span>{settingsSavedToast ? l('Kaydedildi!', 'Saved Successfully!') : l('Ayarları Kaydet', 'Save Settings')}</span>
+              </button>
+            </div>
+          </div>
+        ) : (
+          /* ===================================================================
+              MESSAGES FEED
+          =================================================================== */
+          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            {messages.map((msg) => {
+              const isUser = msg.sender === 'user';
+              return (
+                <div
+                  key={msg.id}
+                  className={`flex flex-col ${isUser ? 'items-end' : 'items-start'} space-y-2`}
+                >
+                  <div
+                    className={`max-w-[88%] p-3.5 sm:p-4 rounded-2xl sm:rounded-[22px] leading-relaxed text-xs sm:text-sm font-medium ${
+                      isUser
+                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0284C7] text-white shadow-md rounded-br-xs'
+                        : 'bg-slate-100/90 dark:bg-slate-900/90 text-slate-900 dark:text-slate-100 border border-teal-500/20 shadow-xs rounded-bl-xs'
+                    }`}
+                  >
+                    <div className="whitespace-pre-line break-words">{msg.text}</div>
+
+                    {!isUser && (
+                      <div className="pt-2 mt-2 border-t border-slate-200/60 dark:border-white/10 flex items-center justify-between">
+                        <button
+                          type="button"
+                          onClick={() => playMessageAudio(msg)}
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                            speakingMsgId === msg.id
+                              ? 'bg-rose-500 text-white animate-pulse shadow-xs'
+                              : 'bg-white dark:bg-slate-800 hover:bg-teal-50 dark:hover:bg-teal-950/60 text-[#0F766E] dark:text-[#5EEAD4] border border-slate-200 dark:border-white/10'
+                          }`}
+                          title={speakingMsgId === msg.id ? l('Sesi Durdur', 'Stop Audio') : l('Sesli Dinle', 'Listen Aloud')}
+                        >
+                          {speakingMsgId === msg.id ? (
+                            <>
+                              <VolumeX className="w-3.5 h-3.5" />
+                              <span>{l('Durdur', 'Stop')}</span>
+                            </>
+                          ) : (
+                            <>
+                              <Volume2 className="w-3.5 h-3.5" />
+                              <span>{l('Sesli Dinle', 'Listen')}</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Embedded Action Pills (Strictly max 2) */}
+                  {msg.actions && msg.actions.length > 0 && (
+                    <div className="flex flex-wrap gap-2 pt-1 max-w-[95%]">
+                      {msg.actions.slice(0, 2).map((act) => {
+                        const isAffiliate = act.type === 'affiliate';
+                        return (
+                          <button
+                            key={act.id}
+                            type="button"
+                            onClick={() => handleActionClick(act)}
+                            className={`group/act inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-xs hover:-translate-y-0.5 active:translate-y-0 ${
+                              isAffiliate
+                                ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 border border-amber-500/40 hover:border-amber-500'
+                                : 'bg-teal-50 dark:bg-teal-950/60 text-[#0F766E] dark:text-[#5EEAD4] border border-teal-500/40 hover:border-teal-500'
+                            }`}
+                          >
+                            {act.badge && (
+                              <span className="text-xs font-black uppercase px-1.5 py-0.5 rounded bg-white/70 dark:bg-white/10">
+                                {act.badge}
+                              </span>
+                            )}
+                            <span>{act.label}</span>
+                            {isAffiliate ? (
+                              <ExternalLink className="w-3 h-3 text-amber-600 dark:text-amber-400 group-hover/act:translate-x-0.5 transition-transform" />
+                            ) : (
+                              <ChevronRight className="w-3 h-3 text-[#0D9488] dark:text-[#5EEAD4] group-hover/act:translate-x-0.5 transition-transform" />
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
+            {/* Typing Indicator */}
+            {isTyping && (
+              <div className="flex items-center gap-2 p-3 rounded-2xl bg-slate-100 dark:bg-slate-900/80 border border-teal-500/20 w-fit">
+                <span className="w-2 h-2 rounded-full bg-[#0D9488] animate-bounce" />
+                <span className="w-2 h-2 rounded-full bg-[#0EA5E9] animate-bounce [animation-delay:0.2s]" />
+                <span className="w-2 h-2 rounded-full bg-[#5EEAD4] animate-bounce [animation-delay:0.4s]" />
+                <span className="text-xs text-slate-500 font-bold ml-1">
+                  {l('Danışman yanıtlıyor...', 'Concierge is researching...')}
+                </span>
+              </div>
+            )}
+
+            {/* Voice Listening Active Wave Indicator */}
+            {isListening && (
+              <div className="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-500/40 flex items-center justify-between gap-3 animate-pulse">
+                <div className="flex items-center gap-2">
+                  <span className="w-3 h-3 rounded-full bg-rose-500 animate-ping" />
+                  <span className="text-xs font-black text-rose-700 dark:text-rose-300">
+                    {l('Sizi dinliyorum, konuşun...', 'Listening to your voice...')}
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={handleToggleVoiceInput}
+                  className="px-2.5 py-1 rounded-lg bg-rose-600 text-white text-xs font-bold cursor-pointer"
+                >
+                  {l('Durdur', 'Stop')}
+                </button>
+              </div>
+            )}
+
+            <div ref={messagesEndRef} />
+          </div>
+        )}
 
         {/* ===================================================================
-            QUICK SUGGESTION CHIPS
+            QUICK SUGGESTION CHIPS (Localized in all 5 languages)
         =================================================================== */}
-        <div className="px-3.5 py-2 border-t border-teal-500/15 bg-slate-50/70 dark:bg-white/[0.02] flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
-          <span className="text-xs font-bold text-slate-400 shrink-0 mr-1">
-            {l('Örnekler:', 'Suggestions:')}
-          </span>
-          <button
-            type="button"
-            onClick={() => handleSend('Tayland vizesi nasıl?')}
-            className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
-          >
-            🇹🇭 Tayland Vizesi
-          </button>
-          <button
-            type="button"
-            onClick={() => handleSend('İtalya 7 günlük rota hazırla')}
-            className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
-          >
-            🗺️ İtalya Rotası
-          </button>
-          <button
-            type="button"
-            onClick={() => handleSend('Japonya priz tipi nedir?')}
-            className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
-          >
-            🔌 Japonya Prizi
-          </button>
-          <button
-            type="button"
-            onClick={() => handleSend('En ucuz yurt dışı eSIM hangisi?')}
-            className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
-          >
-            📱 Ucuz eSIM
-          </button>
-          <button
-            type="button"
-            onClick={() => handleSend('Döviz kurlarını göster')}
-            className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
-          >
-            💶 Canlı Döviz
-          </button>
-        </div>
+        {!showSettings && (
+          <div className="px-3.5 py-2 border-t border-teal-500/15 bg-slate-50/70 dark:bg-white/[0.02] flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
+            <span className="text-xs font-bold text-slate-400 shrink-0 mr-1">
+              {l('Örnekler:', 'Suggestions:')}
+            </span>
+            <button
+              type="button"
+              onClick={() => handleSend(language === 'tr' ? 'Norveç vizesi nasıl?' : language === 'de' ? 'Visum Norwegen?' : language === 'es' ? '¿Visado para Noruega?' : language === 'ru' ? 'Виза в Норвегию?' : 'Norway visa rules?')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+            >
+              🇳🇴 {l('Norveç Vizesi', 'Norway Visa')}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSend(language === 'tr' ? 'Japonya priz tipi nedir?' : language === 'de' ? 'Stecker Japan?' : language === 'es' ? '¿Enchufes en Japón?' : language === 'ru' ? 'Розетки в Японии?' : 'Japan plug type?')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+            >
+              🔌 {l('Japonya Prizi', 'Japan Plugs')}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSend(language === 'tr' ? 'Tayland taksi uygulaması hangisi?' : language === 'de' ? 'Taxi App Thailand?' : language === 'es' ? '¿Apps taxi Tailandia?' : language === 'ru' ? 'Такси в Таиланде?' : 'Thailand taxi apps?')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+            >
+              🚖 {l('Tayland Taksi', 'Thailand Taxi')}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSend(language === 'tr' ? 'İtalya 7 günlük rota hazırla' : language === 'de' ? 'Italien Reiseroute 7 Tage' : language === 'es' ? 'Ruta 7 días Italia' : language === 'ru' ? 'Маршрут по Италии на 7 дней' : '7-day Italy Itinerary')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+            >
+              🗺️ {l('İtalya Rotası', 'Italy Route')}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSend(language === 'tr' ? 'Kimlikle hangi ülkelere gidilir?' : language === 'de' ? 'Reisen nur mit Personalausweis?' : language === 'es' ? '¿Viajar solo con DNI?' : language === 'ru' ? 'Куда можно без загранпаспорта?' : 'Countries with ID card only?')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-xs font-bold text-[#0F766E] dark:text-[#5EEAD4] hover:border-teal-500 transition-colors cursor-pointer"
+            >
+              🆔 {l('Kimlikle Seyahat', 'ID-Card Travel')}
+            </button>
+          </div>
+        )}
 
         {/* ===================================================================
             INPUT BAR: VOICE MIC, TEXT INPUT, SEND BUTTON
         =================================================================== */}
-        <div className="p-3 sm:p-4 border-t border-teal-500/20 bg-white dark:bg-[#072630] shrink-0">
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              handleSend();
-            }}
-            className="flex items-center gap-2"
-          >
-            {/* Microphone Toggle (STT) */}
-            <button
-              type="button"
-              onClick={handleToggleVoiceInput}
-              aria-label={isListening ? l('Dinlemeyi Durdur', 'Stop Listening') : l('Sesli Konuş', 'Speak')}
-              title={isListening ? l('Dinlemeyi Durdur', 'Stop Listening') : l('Sesli Konuş', 'Speak with Mic')}
-              className={`p-3 rounded-2xl font-bold transition-all cursor-pointer border shrink-0 ${
-                isListening
-                  ? 'bg-rose-500 text-white border-rose-600 animate-pulse shadow-lg ring-4 ring-rose-500/30'
-                  : 'bg-teal-500/10 hover:bg-teal-500/20 text-[#0F766E] dark:text-[#5EEAD4] border-teal-500/30 shadow-xs'
-              }`}
+        {!showSettings && (
+          <div className="p-3 sm:p-4 border-t border-teal-500/20 bg-white dark:bg-[#072630] shrink-0">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSend();
+              }}
+              className="flex items-center gap-2"
             >
-              {isListening ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
-            </button>
+              {/* Microphone Toggle (STT) */}
+              <button
+                type="button"
+                onClick={handleToggleVoiceInput}
+                aria-label={isListening ? l('Dinlemeyi Durdur', 'Stop Listening') : l('Sesli Konuş', 'Speak')}
+                title={isListening ? l('Dinlemeyi Durdur', 'Stop Listening') : l('Sesli Konuş (Mikrofon)', 'Speak with Mic')}
+                className={`p-3 rounded-2xl font-bold transition-all cursor-pointer border shrink-0 ${
+                  isListening
+                    ? 'bg-rose-500 text-white border-rose-600 animate-pulse shadow-lg ring-4 ring-rose-500/30'
+                    : 'bg-teal-500/10 hover:bg-teal-500/20 text-[#0F766E] dark:text-[#5EEAD4] border-teal-500/30 shadow-xs'
+                }`}
+              >
+                {isListening ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
+              </button>
 
-            {/* Text Input */}
-            <input
-              ref={inputRef}
-              type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              placeholder={
-                isListening
-                  ? l('Konuşmanız dinleniyor...', 'Listening to speech...')
-                  : l('Bir soru sorun veya ülke adı yazın...', 'Ask anything or type a country...')
-              }
-              className="flex-1 min-w-0 px-4 py-3 rounded-2xl bg-slate-100/80 dark:bg-white/[0.06] text-slate-900 dark:text-white placeholder:text-slate-400 border border-slate-200 dark:border-white/10 text-xs sm:text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#0D9488]"
-            />
+              {/* Text Input */}
+              <input
+                ref={inputRef}
+                type="text"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                placeholder={
+                  isListening
+                    ? l('Konuşmanız dinleniyor...', 'Listening to speech...')
+                    : l('Bir soru sorun veya ülke adı yazın...', 'Ask anything or type a country...')
+                }
+                className="flex-1 min-w-0 px-4 py-3 rounded-2xl bg-slate-100/80 dark:bg-white/[0.06] text-slate-900 dark:text-white placeholder:text-slate-400 border border-slate-200 dark:border-white/10 text-xs sm:text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#0D9488]"
+              />
 
-            {/* Send Button */}
-            <button
-              type="submit"
-              disabled={!inputValue.trim()}
-              aria-label={l('Gönder', 'Send')}
-              className="p-3 rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#0284C7] text-white font-bold transition-all cursor-pointer shadow-md disabled:opacity-40 disabled:cursor-not-allowed hover:scale-105 active:scale-95 shrink-0"
-            >
-              <Send className="w-4 h-4" />
-            </button>
-          </form>
-        </div>
+              {/* Send Button */}
+              <button
+                type="submit"
+                disabled={!inputValue.trim()}
+                aria-label={l('Gönder', 'Send')}
+                className="p-3 rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#0284C7] text-white font-bold transition-all cursor-pointer shadow-md disabled:opacity-40 disabled:cursor-not-allowed hover:scale-105 active:scale-95 shrink-0"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </form>
+          </div>
+        )}
       </div>
     </div>
   );
