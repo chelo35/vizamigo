@@ -1,7 +1,7 @@
 /**
  * Vizamigo AI Copilot & Travel Concierge Intelligence Engine
  * Comprehensive multi-lingual natural language processor, destination mapper,
- * site action dispatcher, and high-fidelity Web Speech API controller.
+ * site action dispatcher, dynamic language auto-detector, and high-fidelity speech coordinator.
  *
  * Fully covers ALL 199 countries, all site tools, visa rules, itineraries,
  * power plugs, tipping, taxis, climate, safety, currencies, and consular crisis.
@@ -41,6 +41,7 @@ export interface AssistantActionPill {
   url?: string;
   badge?: string;
   accentTone?: 'teal' | 'coral' | 'amber' | 'slate' | 'sky';
+  autoTrigger?: boolean;
 }
 
 export interface AssistantMessage {
@@ -55,13 +56,61 @@ export interface AssistantMessage {
     name: string;
     flag: string;
   };
+  detectedLang?: string;
+  autoTriggerAction?: AssistantActionPill;
+}
+
+// ============================================================================
+// DYNAMIC QUERY LANGUAGE DETECTOR (Auto-detects TR, EN, DE, ES, RU, etc.)
+// ============================================================================
+export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr'): string {
+  if (!rawQuery) return fallbackLang;
+
+  // 1. Cyrillic script -> Russian
+  if (/[\u0400-\u04FF]/.test(rawQuery)) {
+    return 'ru';
+  }
+
+  const q = rawQuery.toLowerCase();
+
+  // 2. Spanish detection (unique symbols and vocabulary)
+  if (
+    /[¿¡]/.test(rawQuery) ||
+    /\b(visado|visados|viajar|viaje|puedo|necesito|donde|cuanto|cuantos|pais|paises|espana|como|abrir|mostrar|tiempo|clima|propinas|propina|enchufe|enchufes|seguro|idioma|pasaporte|gratis|vuelo|hotel|tarjeta|requisitos|dias)\b/i.test(q)
+  ) {
+    return 'es';
+  }
+
+  // 3. German detection (unique characters and vocabulary)
+  if (
+    (/[äöüß]/.test(rawQuery) && (q.includes('ä') || q.includes('ß') || q.includes('und') || q.includes('wie') || q.includes('für') || q.includes('fuer'))) ||
+    /\b(visum|visa|einreise|reise|reisen|nach|brauche|kann|ich|wie|viele|tage|kosten|stecker|trinkgeld|wetter|fluege|hotel|wann|welche|deutschland|pass|ohne|sicher|waehrung|offnen|oeffnen|zeigen|bitte)\b/i.test(q)
+  ) {
+    return 'de';
+  }
+
+  // 4. Turkish detection (unique characters and vocabulary)
+  if (
+    /[çğşı]/.test(rawQuery) ||
+    /\b(vize|vizesiz|pasaport|kimlik|kimlikle|kac|kaç|nasil|nasıl|nerede|nereye|nerelere|priz|prizi|bahsis|bahşiş|rota|rotasi|taksi|ac|aç|goster|göster|para|doviz|döviz|kur|kurlar|bavul|valiz|sigorta|kayip|kayıp|calinti|çalıntı|ucak|uçak|bilet|gun|gün|otel|oteller|guvenli|güvenli|pahali|pahalı|ucuz|var|mi|mı|mu|mü|gerekir|istiyor|mu|müyüm|hazirla|hazırla|bilgi)\b/i.test(q)
+  ) {
+    return 'tr';
+  }
+
+  // 5. English detection
+  if (
+    /\b(visa|visas|passport|travel|can|do|i|need|how|what|where|when|which|days|stay|plug|plugs|adapter|tipping|tip|taxi|ride|cost|safe|safety|route|itinerary|weather|best|time|flights|flight|hotel|hotels|lost|stolen|currency|open|show|compare)\b/i.test(q)
+  ) {
+    return 'en';
+  }
+
+  return fallbackLang;
 }
 
 // ============================================================================
 // 199-COUNTRY DYNAMIC KNOWLEDGE INDEX & SYNONYM DICTIONARY
 // ============================================================================
 
-// Popular tourist cities, islands, and colloquial abbreviations
 const POPULAR_DESTINATION_ALIASES: Record<string, string> = {
   // Southeast Asia & Far East
   'bali': 'ID', 'cakarta': 'ID', 'jakarta': 'ID', 'ubud': 'ID', 'lombok': 'ID', 'denpasar': 'ID', 'gili': 'ID',
@@ -226,7 +275,7 @@ function getGlobalCountryMap(): Record<string, string> {
 }
 
 /**
- * Extracts a destination country code from natural query with suffix stripping
+ * Extracts a destination country code from natural query with multi-lingual suffix stripping
  */
 export function extractDestinationCountry(query: string): string | null {
   const norm = normalizeText(query);
@@ -235,9 +284,8 @@ export function extractDestinationCountry(query: string): string | null {
   const countryMap = getGlobalCountryMap();
   const sortedKeys = Object.keys(countryMap).sort((a, b) => b.length - a.length);
 
-  // 1. Exact phrase/word match with Turkish suffix stripping
-  // Examples: "norvece", "norvecte", "italyada", "baliye", "meksikaya", "japonyanin"
-  const suffixPattern = '(?:ye|ya|e|a|de|da|te|ta|den|dan|ten|tan|in|un|nin|nun|i|ı|u|ü|yi|yı|yu|yü|si|sı|su|sü|lar|ler)';
+  // Suffix patterns for Turkish, Russian, German, Spanish, English inflections
+  const suffixPattern = '(?:ye|ya|e|a|de|da|te|ta|den|dan|ten|tan|in|un|nin|nun|i|ı|u|ü|yi|yı|yu|yü|si|sı|su|sü|lar|ler|ю|и|е|ей|ем|я|s|es|n|en)';
 
   for (const key of sortedKeys) {
     if (key.length < 3) continue;
@@ -247,7 +295,7 @@ export function extractDestinationCountry(query: string): string | null {
     }
   }
 
-  // 2. Direct ISO-2 Uppercase match (e.g. "TH vize", "DE", "JP")
+  // Direct ISO-2 Uppercase match (e.g. "NO", "TH", "DE", "JP")
   const rawWords = query.split(/\s+/);
   for (const w of rawWords) {
     const upper = w.toUpperCase().replace(/[^A-Z]/g, '');
@@ -256,7 +304,7 @@ export function extractDestinationCountry(query: string): string | null {
     }
   }
 
-  // 3. Prefix matching for longer root names (length >= 4)
+  // Prefix matching for longer root names (length >= 4)
   const words = norm.split(' ');
   for (const w of words) {
     if (w.length >= 4) {
@@ -279,56 +327,87 @@ export async function processAssistantQuery(
   currentPassport: string = 'TR',
   lang: string = 'tr'
 ): Promise<AssistantMessage> {
+  const detectedLang = detectQueryLanguage(rawQuery, lang);
+  const activeLang = detectedLang;
+  const isTr = activeLang === 'tr';
+  const isEn = activeLang === 'en';
+  const isDe = activeLang === 'de';
+  const isEs = activeLang === 'es';
+  const isRu = activeLang === 'ru';
+
   const norm = normalizeText(rawQuery);
   const targetCountry = extractDestinationCountry(rawQuery);
-  const isTr = lang === 'tr';
-  const isEn = lang === 'en';
-  const isDe = lang === 'de';
-  const isEs = lang === 'es';
-  const isRu = lang === 'ru';
 
   const actions: AssistantActionPill[] = [];
   const passportItems = getPassportItems(currentPassport);
-  const originName = getCountryName(currentPassport, lang);
+  const originName = getCountryName(currentPassport, activeLang);
+
+  // Check if user specifically requested to OPEN/SHOW/VIEW the dossier or tool
+  const isOpenIntent =
+    norm.includes('ac') ||
+    norm.includes('aç') ||
+    norm.includes('goster') ||
+    norm.includes('göster') ||
+    norm.includes('incele') ||
+    norm.includes('open') ||
+    norm.includes('show') ||
+    norm.includes('view') ||
+    norm.includes('abrir') ||
+    norm.includes('mostrar') ||
+    norm.includes('offnen') ||
+    norm.includes('öffnen') ||
+    norm.includes('открыть') ||
+    norm.includes('покажи');
 
   // Live Exchange Rates
   const usdRate = getCrossRate('USD', 'TRY').toFixed(2);
   const eurRate = getCrossRate('EUR', 'TRY').toFixed(2);
 
   // --------------------------------------------------------------------------
-  // BROAD INTENT 1: PASSPORT POWER & STATS ("Kaç ülkeye vizesiz gidebilirim?")
+  // BROAD INTENT 1: PASSPORT POWER & STATS ("Kaç ülkeye vizesiz gidebilirim?", "Vize", "Vizeler")
   // --------------------------------------------------------------------------
   if (
-    norm.includes('kac ulke') ||
-    norm.includes('kac ulkeye') ||
-    norm.includes('pasaport gucu') ||
-    norm.includes('vizesiz kac') ||
-    norm.includes('pasaportumla kac') ||
-    norm.includes('how many countries') ||
-    norm.includes('passport power') ||
-    norm.includes('wie viele lander') ||
-    norm.includes('cuantos paises') ||
-    norm.includes('сколько стран')
+    !targetCountry &&
+    (norm === 'vize' ||
+      norm === 'vizesiz' ||
+      norm === 'vizeler' ||
+      norm === 'visa' ||
+      norm === 'visas' ||
+      norm === 'visum' ||
+      norm === 'visado' ||
+      norm === 'виза' ||
+      norm.includes('kac ulke') ||
+      norm.includes('kac ulkeye') ||
+      norm.includes('pasaport gucu') ||
+      norm.includes('vizesiz kac') ||
+      norm.includes('pasaportumla kac') ||
+      norm.includes('how many countries') ||
+      norm.includes('passport power') ||
+      norm.includes('wie viele lander') ||
+      norm.includes('cuantos paises') ||
+      norm.includes('сколько стран'))
   ) {
     const freeCount = passportItems.filter((it) => it.cat === 'free').length;
     const evisaCount = passportItems.filter((it) => it.cat === 'evisa' || it.cat === 'voa' || it.cat === 'eta').length;
     const idCount = passportItems.filter((it) => it.id).length;
     const totalEasy = freeCount + evisaCount;
 
-    actions.push({
+    const mapAction: AssistantActionPill = {
       id: 'tab-where',
       type: 'switch_tab',
       tabKey: 'where_can_i_go',
       label: isTr ? '🌍 Vizesiz Haritayı Aç' : isDe ? '🌍 Visafreie Karte' : isEs ? '🌍 Mapa sin visado' : isRu ? '🌍 Безвизовая карта' : '🌍 Open Visa-Free Map',
       accentTone: 'teal'
-    });
-    actions.push({
+    };
+    const compareAction: AssistantActionPill = {
       id: 'tab-compare',
       type: 'switch_tab',
       tabKey: 'compare',
-      label: isTr ? '⚖️ Pasaportları Karşılaştır' : '⚖️ Compare Passports',
+      label: isTr ? '⚖️ Pasaportları Karşılaştır' : isDe ? '⚖️ Pässe vergleichen' : isEs ? '⚖️ Comparar pasaportes' : isRu ? '⚖️ Сравнить паспорта' : '⚖️ Compare Passports',
       accentTone: 'sky'
-    });
+    };
+
+    actions.push(mapAction, compareAction);
 
     const localizedText = isTr
       ? `🛂 **${originName} Pasaport Gücü & Seyahat İstatistikleri:**\n\n` +
@@ -336,15 +415,39 @@ export async function processAssistantQuery(
         `• **Kapıda Vize / E-Vize Kolaylığı:** **${evisaCount} Ülke**\n` +
         `• **Çipli Kimlikle (Pasaportsuz) Giriş:** **${idCount} Ülke**\n` +
         `• **Toplam Vizesiz & Kolay Seyahat:** **${totalEasy} Ülke**\n\n` +
-        `Tüm ülkeleri harita üzerinde interaktif olarak incelemek için aşağıdaki butona dokunabilirsiniz.`
+        `Tüm ülkeleri harita üzerinde interaktif olarak filtrelemek için aşağıdaki butona dokunabilirsiniz.`
+      : isDe
+      ? `🛂 **${originName} Pass-Stärke & Reise-Kennzahlen:**\n\n` +
+        `• **Visafrei:** **${freeCount} Länder**\n` +
+        `• **Visum bei Ankunft / eVisa:** **${evisaCount} Länder**\n` +
+        `• **Mit Personalausweis:** **${idCount} Länder**\n` +
+        `• **Gesamter einfacher Zugang:** **${totalEasy} Länder**`
+      : isEs
+      ? `🛂 **Poder del Pasaporte & Métricas (${originName}):**\n\n` +
+        `• **Sin visado:** **${freeCount} países**\n` +
+        `• **Visado a la llegada / eVisa:** **${evisaCount} países**\n` +
+        `• **Entrada con DNI:** **${idCount} países**\n` +
+        `• **Acceso fácil total:** **${totalEasy} países**`
+      : isRu
+      ? `🛂 **Сила паспорта (${originName}) и статистика:**\n\n` +
+        `• **Без визы:** **${freeCount} стран**\n` +
+        `• **Виза по прибытии / eVisa:** **${evisaCount} стран**\n` +
+        `• **Въезд по ID-карте:** **${idCount} стран**\n` +
+        `• **Всего доступных стран:** **${totalEasy} стран**`
       : `🛂 **${originName} Passport Power & Travel Metrics:**\n\n` +
         `• **Visa-Free Destinations:** **${freeCount} countries**\n` +
         `• **Visa on Arrival / eVisa:** **${evisaCount} countries**\n` +
         `• **ID-Card Travel Eligible:** **${idCount} countries**\n` +
-        `• **Total Easy Access:** **${totalEasy} countries**`;
+        `• **Total Easy Access:** **${totalEasy} destinations**`;
 
     const spoken = isTr
       ? `${originName} pasaportuyla ${freeCount} ülkeye vizesiz, toplam ${totalEasy} ülkeye kolayca gidebilirsiniz.`
+      : isDe
+      ? `Mit dem Pass von ${originName} können Sie in ${freeCount} Länder visafrei reisen.`
+      : isEs
+      ? `Con el pasaporte de ${originName} tienes acceso sin visado a ${freeCount} países.`
+      : isRu
+      ? `С паспортом ${originName} вам доступно без визы ${freeCount} стран.`
       : `With a ${originName} passport, you have visa-free access to ${freeCount} countries worldwide.`;
 
     return {
@@ -353,41 +456,46 @@ export async function processAssistantQuery(
       text: localizedText,
       spokenText: spoken,
       timestamp: new Date(),
-      actions: actions.slice(0, 2)
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? mapAction : undefined
     };
   }
 
   // --------------------------------------------------------------------------
-  // BROAD INTENT 2: NATIONAL ID CARD TRAVEL ("Kimlikle hangi ülkelere gidilir?")
+  // BROAD INTENT 2: NATIONAL ID CARD TRAVEL ("Kimlik", "Kimlikle")
   // --------------------------------------------------------------------------
   if (
-    norm.includes('kimlik') ||
-    norm.includes('kimlikle') ||
-    norm.includes('pasaportsus') ||
-    norm.includes('pasaportsuz') ||
-    norm.includes('nufus cuzdani') ||
-    norm.includes('id card') ||
-    norm.includes('personalausweis') ||
-    norm.includes('sin pasaporte')
+    !targetCountry &&
+    (norm === 'kimlik' ||
+      norm === 'kimlikle' ||
+      norm === 'pasaportsus' ||
+      norm === 'pasaportsuz' ||
+      norm.includes('kimlik') ||
+      norm.includes('kimlikle') ||
+      norm.includes('id card') ||
+      norm.includes('personalausweis') ||
+      norm.includes('sin pasaporte'))
   ) {
     const idCountries = passportItems
       .filter((it) => it.id)
-      .map((it) => `${getFlag(it.c)} **${getCountryName(it.c, lang)}** (${it.v === 'vf' ? (isTr ? 'Süresiz' : 'Indefinite') : `${it.v} ${isTr ? 'Gün' : 'Days'}`})`);
+      .map((it) => `${getFlag(it.c)} **${getCountryName(it.c, activeLang)}** (${it.v === 'vf' ? (isTr ? 'Süresiz' : 'Indefinite') : `${it.v} ${isTr ? 'Gün' : 'Days'}`})`);
 
-    actions.push({
+    const geAction: AssistantActionPill = {
       id: 'open-ge',
       type: 'open_country',
       countryCode: 'GE',
       label: isTr ? '🇬🇪 Gürcistan Rehberi' : '🇬🇪 Georgia Guide',
       accentTone: 'teal'
-    });
-    actions.push({
+    };
+    const baAction: AssistantActionPill = {
       id: 'open-ba',
       type: 'open_country',
       countryCode: 'BA',
       label: isTr ? '🇧🇦 Bosna Hersek Rehberi' : '🇧🇦 Bosnia Guide',
       accentTone: 'sky'
-    });
+    };
+    actions.push(geAction, baAction);
 
     const text = isTr
       ? `🆔 **${originName} Vatandaşlarının Yalnızca Çipli Kimlikle Gidebildiği Ülkeler:**\n\n` +
@@ -398,7 +506,7 @@ export async function processAssistantQuery(
 
     const spoken = isTr
       ? 'Gürcistan, Sırbistan, Bosna Hersek, Azerbaycan ve Moldova dahil 6 ülkeye pasaportsuz çipli kimlikle gidebilirsiniz.'
-      : 'You can travel to several neighboring destinations using only your national ID card.';
+      : 'You can travel to several destinations using only your national ID card.';
 
     return {
       id: `msg-${Date.now()}`,
@@ -406,39 +514,339 @@ export async function processAssistantQuery(
       text,
       spokenText: spoken,
       timestamp: new Date(),
-      actions: actions.slice(0, 2)
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? geAction : undefined
     };
   }
 
   // --------------------------------------------------------------------------
-  // BROAD INTENT 3: WHERE CAN I GO? / BALKANS / TROPICAL ("Nereye gidebilirim?")
+  // BROAD INTENT 3: POWER PLUGS & VOLTAGE ("Priz", "Prizler", "Voltaj", "Plug")
   // --------------------------------------------------------------------------
   if (
     !targetCountry &&
-    (norm.includes('nereye') ||
-      norm.includes('nerelere') ||
-      norm.includes('vizesiz yer') ||
-      norm.includes('sicak yer') ||
-      norm.includes('tatil yeri') ||
-      norm.includes('where can i go') ||
-      norm.includes('wohin reisen') ||
-      norm.includes('adonde ir') ||
-      norm.includes('куда поехать'))
+    (norm === 'priz' ||
+      norm === 'prizler' ||
+      norm === 'voltaj' ||
+      norm === 'adaptor' ||
+      norm === 'adaptör' ||
+      norm === 'plug' ||
+      norm === 'plugs' ||
+      norm === 'stecker' ||
+      norm === 'enchufe' ||
+      norm === 'enchufes' ||
+      norm === 'розетка' ||
+      norm.includes('priz tipi') ||
+      norm.includes('plug type'))
   ) {
-    actions.push({
+    const packingAction: AssistantActionPill = {
+      id: 'tool-packing',
+      type: 'open_tool',
+      toolKey: 'packing',
+      label: isTr ? '🧳 Valizine Adaptör Ekle' : '🧳 Add Adapter to Packing List',
+      accentTone: 'teal'
+    };
+    actions.push(packingAction);
+
+    const text = isTr
+      ? `🔌 **Dünya Priz & Elektrik Standartları Rehberi:**\n\n` +
+        `• **Avrupa & Türkiye:** Tip C ve F (230V, 50Hz)\n` +
+        `• **İngiltere & Körfez Ülkeleri:** Tip G (Üç köşeli kalın pimler)\n` +
+        `• **ABD, Kanada & Japonya:** Tip A ve B (İki düz yassı pim, 100-120V)\n` +
+        `• **Avustralya & Yeni Zelanda:** Tip I (Açılı iki yassı pim)\n\n` +
+        `Gideceğiniz ülkenin priz tipini öğrenmek için doğrudan ülke adını (örneğin *"Japonya priz"*) yazabilirsiniz.`
+      : `🔌 **Global Electrical & Plug Standards:**\n\n• **Europe:** Type C / F (230V)\n• **UK & Gulf:** Type G\n• **USA & Japan:** Type A / B (110-120V)\n• **Australia:** Type I`;
+
+    const spoken = isTr
+      ? 'Gideceğiniz ülkenin prizini öğrenmek için doğrudan ülke adını söyleyebilirsiniz.'
+      : 'You can ask about plug standards for any specific destination.';
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text,
+      spokenText: spoken,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? packingAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 4: TIPPING CALCULATOR ("Bahşiş", "Tip", "Tipping")
+  // --------------------------------------------------------------------------
+  if (
+    !targetCountry &&
+    (norm === 'bahsis' ||
+      norm === 'bahşiş' ||
+      norm === 'tip' ||
+      norm === 'tipping' ||
+      norm === 'trinkgeld' ||
+      norm === 'propina' ||
+      norm === 'чаевые' ||
+      norm.includes('bahsis'))
+  ) {
+    const tipAction: AssistantActionPill = {
+      id: 'tool-tipping',
+      type: 'open_tool',
+      toolKey: 'tipping',
+      label: isTr ? '💸 Küresel Bahşiş Hesaplayıcı' : '💸 Global Tipping Calculator',
+      accentTone: 'amber'
+    };
+    actions.push(tipAction);
+
+    const text = isTr
+      ? '💸 **Dünya Bahşiş Kültürü & Oranları:**\n\n• **ABD & Kanada:** %18 - %22 (Neredeyse zorunludur).\n• **Avrupa:** %5 - %10 veya hesabı yuvarlama.\n• **Japonya & G. Kore:** Bahşiş kaba ve hakaret kabul edilir (0%).\n• **Güneydoğu Asya:** Küçük bozuklukları bırakmak yeterlidir.'
+      : '💸 **Global Tipping Standards:**\n\n• **USA & Canada:** 18% - 22% expected.\n• **Europe:** 5% - 10% or round up.\n• **Japan & Korea:** Tipping is considered rude.\n• **Southeast Asia:** Modest change is appreciated.';
+
+    const spoken = isTr
+      ? 'Japonya ve Kore haricinde çoğu ülkede yüzde 10 civarı bahşiş yaygındır.'
+      : 'Tipping standards vary from 20% in the US to zero in Japan.';
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text,
+      spokenText: spoken,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? tipAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 5: TAXI & RIDE-HAILING APPS ("Taksi", "Taxi", "Ulaşım")
+  // --------------------------------------------------------------------------
+  if (
+    !targetCountry &&
+    (norm === 'taksi' ||
+      norm === 'taxi' ||
+      norm === 'ulasim' ||
+      norm === 'ulaşım' ||
+      norm.includes('taksi') ||
+      norm.includes('ride app'))
+  ) {
+    const transitAction: AssistantActionPill = {
+      id: 'aff-omio',
+      type: 'affiliate',
+      url: 'https://www.omio.com',
+      badge: isTr ? 'Bilet Karşılaştır' : 'Book Transit',
+      label: isTr ? '🚆 Tren & Otobüs Biletleri (Omio)' : '🚆 Compare Transit Tickets',
+      accentTone: 'sky'
+    };
+    actions.push(transitAction);
+
+    const text = isTr
+      ? `🚖 **Dünya Genelinde En Güvenilir Taksi Uygulamaları:**\n\n` +
+        `• **Güneydoğu Asya (Tayland, Bali, Vietnam):** **Grab** veya **Bolt**\n` +
+        `• **Avrupa:** **Bolt**, **FreeNow** ve **Uber**\n` +
+        `• **Orta Doğu & BAE:** **Careem** ve **Uber**\n` +
+        `• **Orta Asya & Kafkaslar:** **Yandex Go**\n` +
+        `• **Japonya:** **GO** ve **JapanTaxi**`
+      : `🚖 **Top Global Ride-Hailing Apps:**\n\n• **Southeast Asia:** Grab, Bolt\n• **Europe:** Bolt, FreeNow, Uber\n• **Middle East:** Careem\n• **Central Asia:** Yandex Go\n• **Japan:** GO`;
+
+    const spoken = isTr
+      ? 'Asya için Grab, Avrupa için Bolt ve Orta Doğu için Careem uygulamalarını öneriyoruz.'
+      : 'We recommend Grab in Asia, Bolt in Europe, and Careem in the Middle East.';
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text,
+      spokenText: spoken,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 6: CURRENCY & LIVE RATES ("Döviz", "Kur", "Para", "Dolar", "Euro")
+  // --------------------------------------------------------------------------
+  if (
+    !targetCountry &&
+    (norm === 'doviz' ||
+      norm === 'döviz' ||
+      norm === 'kur' ||
+      norm === 'kurlar' ||
+      norm === 'para' ||
+      norm === 'currency' ||
+      norm === 'dolar' ||
+      norm === 'euro' ||
+      norm.includes('doviz') ||
+      norm.includes('kur') ||
+      norm.includes('wechselkurs'))
+  ) {
+    const fxAction: AssistantActionPill = {
+      id: 'radar-fx',
+      type: 'open_tool',
+      toolKey: 'radar',
+      radarMode: 'currency',
+      label: isTr ? '💱 Canlı Döviz Radarı' : '💱 Live FX Radar',
+      accentTone: 'teal'
+    };
+    const wiseAction: AssistantActionPill = {
+      id: 'aff-wise',
+      type: 'affiliate',
+      url: 'https://wise.com',
+      badge: isTr ? 'Sıfır Komisyon' : 'Zero Markup',
+      label: isTr ? '💳 Wise Çoklu Döviz Kartı Al' : '💳 Get Wise Travel Card',
+      accentTone: 'sky'
+    };
+    actions.push(fxAction, wiseAction);
+
+    const text = isTr
+      ? `💱 **Canlı Seyahat Döviz Kurları:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**\n\nYurt dışı harcamalarınızda fahiş banka döviz komisyonlarından kaçınmak için Wise çok para birimli dijital kartını kullanabilirsiniz.`
+      : `💱 **Live Baseline Travel Rates:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**`;
+
+    const spoken = isTr
+      ? `Canlı kurlar: 1 Dolar ${usdRate} lira, 1 Euro ${eurRate} liradır.`
+      : `Current travel rates are 1 US Dollar at ${usdRate} Lira, and 1 Euro at ${eurRate} Lira.`;
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text,
+      spokenText: spoken,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? fxAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 7: SCHENGEN 90/180 DAY COUNTER ("Schengen", "90 gün")
+  // --------------------------------------------------------------------------
+  if (norm.includes('schengen') || norm.includes('90 180') || norm.includes('gun sayac') || norm.includes('90 gun') || norm.includes('kac gunum')) {
+    const counterAction: AssistantActionPill = {
+      id: 'tab-counter',
+      type: 'switch_tab',
+      tabKey: 'day_counter',
+      label: isTr ? '📅 90/180 Gün Sayacını Aç' : '📅 Open 90/180 Day Counter',
+      accentTone: 'teal'
+    };
+    actions.push(counterAction);
+
+    const text = isTr
+      ? `🇪🇺 **Schengen 90/180 Kuralı Nasıl Çalışır?**\n\n` +
+        `Schengen bölgesinde herhangi bir **180 günlük geriye dönük zaman diliminde en fazla 90 gün** kalabilirsiniz.\n\n` +
+        `• Giriş ve çıkış yaptığınız günler tam gün sayılır.\n` +
+        `• Kural takvim yılına göre değil, her seyahat gününden geriye doğru son 180 gün taranarak hesaplanır.\n\n` +
+        `İhlal riskine girmemek ve kalan gününüzü kesin hesaplamak için **90/180 Gün Sayacı** sekmemizi kullanabilirsiniz.`
+      : `🇪🇺 **Schengen 90/180-Day Rule:**\n\nYou may stay a maximum of 90 days within any rolling 180-day window. Use our Day Counter to compute your remaining days accurately.`;
+
+    const spoken = isTr
+      ? 'Schengen bölgesinde son 180 gün içinde en fazla 90 gün kalabilirsiniz. Gün sayacını ekrana getirdim.'
+      : 'The Schengen rule allows up to 90 days in any rolling 180-day period.';
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text,
+      spokenText: spoken,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? counterAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 8: TRANSIT VISA & AIRPORT LAYOVER
+  // --------------------------------------------------------------------------
+  if (norm.includes('transit') || norm.includes('aktarma') || norm.includes('aktarmali') || norm.includes('layover')) {
+    const radarAction: AssistantActionPill = {
+      id: 'tab-where',
+      type: 'switch_tab',
+      tabKey: 'where_can_i_go',
+      label: isTr ? '🌍 Vize Radarında Araştır' : '🌍 Check Visa Radar',
+      accentTone: 'teal'
+    };
+    actions.push(radarAction);
+
+    const text = isTr
+      ? `✈️ **Aktarmalı Uçuşlarda Transit Vize Kuralları:**\n\n` +
+        `1. **Hava Tarafı Transit (Airside):** Tek biletle (aynı rezervasyon koduyla) seyahat ediyorsanız, bagajınızı aktarma noktasında teslim almıyorsanız ve transit alandan çıkmıyorsanız (Doha, Dubai, Frankfurt vb.) çoğu ülke transit vize istemez.\n` +
+        `2. **Kara Tarafı Transit (Landside):** Ayrı ayrı bilet aldıysanız ve bavulunuzu alıp yeniden kontuara vermeniz gerekiyorsa ülkeye resmi giriş sayılır ve standart vize gerekir.\n` +
+        `3. **Özel İstisna:** ABD ve Kanada'da hava tarafı transit yoktur; sadece aktarma yapacak olsanız dahi C-1 Transit Vizesi veya eTA zorunludur.`
+      : `✈️ **Transit Visa & Airport Layover Rules:**\n\nAirside transit usually requires no visa if on a single ticket without claiming baggage. Note that the US and Canada require transit visas even for brief airport layovers.`;
+
+    const spoken = isTr
+      ? 'Tek biletle uçup bagaj almadığınız sürece çoğu ülkede transit vize gerekmez; ancak ABD ve Kanada transit vize ister.'
+      : 'Airside transit generally does not require a visa unless transiting via the United States or Canada.';
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text,
+      spokenText: spoken,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? radarAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 9: PACKING LIST / VALİZ HAZIRLAMA
+  // --------------------------------------------------------------------------
+  if (norm === 'valiz' || norm === 'bavul' || norm === 'packing' || norm.includes('valiz') || norm.includes('bavul')) {
+    const packingAction: AssistantActionPill = {
+      id: 'tool-packing',
+      type: 'open_tool',
+      toolKey: 'packing',
+      label: isTr ? '🧳 İnteraktif Valiz Listesini Aç' : '🧳 Open Packing Checklist',
+      accentTone: 'teal'
+    };
+    actions.push(packingAction);
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text: isTr
+        ? '🧳 **Akıllı Valiz Hazırlama Kontrol Listesi:**\n\nGideceğiniz ülkenin iklimine, priz tipine ve seyahat türünüze (sırt çantalı, iş, tatil) göre özelleştirilmiş valiz listenizi sitemizin araçlar panelinden yönetebilirsiniz.'
+        : '🧳 **Smart Packing Checklist:**\n\nManage your personalized travel packing list tailored to destination climate, plug adapters, and luggage allowances.',
+      spokenText: isTr
+        ? 'Valiz kontrol listenizi ekrana getirdim.'
+        : 'I have opened your smart packing checklist.',
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? packingAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 10: RADAR / WORLD MAP ("Nereye gidebilirim?", "Radar", "Harita")
+  // --------------------------------------------------------------------------
+  if (
+    !targetCountry &&
+    (norm === 'radar' ||
+      norm === 'harita' ||
+      norm === 'map' ||
+      norm.includes('nereye') ||
+      norm.includes('nerelere') ||
+      norm.includes('tatil yeri') ||
+      norm.includes('where can i go'))
+  ) {
+    const radarAction: AssistantActionPill = {
       id: 'tab-where',
       type: 'switch_tab',
       tabKey: 'where_can_i_go',
       label: isTr ? '🌍 Dünya Radarında Vizesiz Yerleri Gör' : '🌍 Visa-Free World Radar',
       accentTone: 'teal'
-    });
-    actions.push({
+    };
+    const thAction: AssistantActionPill = {
       id: 'open-th',
       type: 'open_country',
       countryCode: 'TH',
       label: isTr ? '🇹🇭 Tayland (Tropik)' : '🇹🇭 Thailand',
       accentTone: 'coral'
-    });
+    };
+    actions.push(radarAction, thAction);
 
     const text = isTr
       ? `✈️ **${originName} Pasaportu İle En Popüler Vizesiz Rotalar:**\n\n` +
@@ -460,168 +868,9 @@ export async function processAssistantQuery(
       text,
       spokenText: spoken,
       timestamp: new Date(),
-      actions: actions.slice(0, 2)
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // BROAD INTENT 4: SCHENGEN 90/180 DAY COUNTER
-  // --------------------------------------------------------------------------
-  if (norm.includes('schengen') || norm.includes('90 180') || norm.includes('gun sayac') || norm.includes('kac gunum')) {
-    actions.push({
-      id: 'tab-counter',
-      type: 'switch_tab',
-      tabKey: 'day_counter',
-      label: isTr ? '📅 90/180 Gün Sayacını Aç' : '📅 Open 90/180 Day Counter',
-      accentTone: 'teal'
-    });
-    actions.push({
-      id: 'open-audit',
-      type: 'open_tool',
-      toolKey: 'audit',
-      label: isTr ? '🛡️ Vize İhlal Risk Testi' : '🛡️ Visa Compliance Test',
-      accentTone: 'sky'
-    });
-
-    const text = isTr
-      ? `🇪🇺 **Schengen 90/180 Kuralı Nasıl Çalışır?**\n\n` +
-        `Schengen bölgesinde herhangi bir **180 günlük geriye dönük zaman diliminde en fazla 90 gün** kalabilirsiniz.\n\n` +
-        `• Giriş ve çıkış yaptığınız günler tam gün sayılır.\n` +
-        `• Kural takvim yılına göre değil, her seyahat gününden geriye doğru son 180 gün taranarak hesaplanır.\n\n` +
-        `İhlal riskine girmemek ve kalan gününüzü kesin hesaplamak için **90/180 Gün Sayacı** sekmemizi kullanabilirsiniz.`
-      : `🇪🇺 **Schengen 90/180-Day Rule:**\n\nYou may stay a maximum of 90 days within any rolling 180-day window. Use our Day Counter to compute your remaining days accurately.`;
-
-    const spoken = isTr
-      ? 'Schengen bölgesinde son 180 gün içinde en fazla 90 gün kalabilirsiniz. Gün sayacını ekrana getirdim.'
-      : 'The Schengen rule allows up to 90 days in any rolling 180-day period.';
-
-    return {
-      id: `msg-${Date.now()}`,
-      sender: 'assistant',
-      text,
-      spokenText: spoken,
-      timestamp: new Date(),
-      actions: actions.slice(0, 2)
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // BROAD INTENT 5: TRANSIT VISA & AIRPORT LAYOVER
-  // --------------------------------------------------------------------------
-  if (norm.includes('transit') || norm.includes('aktarma') || norm.includes('aktarmali') || norm.includes('layover')) {
-    actions.push({
-      id: 'tab-where',
-      type: 'switch_tab',
-      tabKey: 'where_can_i_go',
-      label: isTr ? '🌍 Vize Radarında Araştır' : '🌍 Check Visa Radar',
-      accentTone: 'teal'
-    });
-
-    const text = isTr
-      ? `✈️ **Aktarmalı Uçuşlarda Transit Vize Kuralları:**\n\n` +
-        `1. **Hava Tarafı Transit (Airside):** Tek biletle (aynı rezervasyon koduyla) seyahat ediyorsanız, bagajınızı aktarma noktasında teslim almıyorsanız ve transit alandan çıkmıyorsanız (Doha, Dubai, Frankfurt vb.) çoğu ülke transit vize istemez.\n` +
-        `2. **Kara Tarafı Transit (Landside):** Ayrı ayrı bilet aldıysanız ve bavulunuzu alıp yeniden kontuara vermeniz gerekiyorsa ülkeye resmi giriş sayılır ve standart vize gerekir.\n` +
-        `3. **Özel İstisna:** ABD ve Kanada'da hava tarafı transit yoktur; sadece aktarma yapacak olsanız dahi C-1 Transit Vizesi veya eTA zorunludur.`
-      : `✈️ **Transit Visa & Airport Layover Rules:**\n\nAirside transit usually requires no visa if on a single ticket without claiming baggage. Note that the US and Canada require transit visas even for brief airport layovers.`;
-
-    const spoken = isTr
-      ? 'Tek biletle uçup bagaj almadığınız sürece çoğu ülkede transit vize gerekmez; ancak ABD ve Kanada transit vize ister.'
-      : 'Airside transit generally does not require a visa unless transiting via the United States or Canada.';
-
-    return {
-      id: `msg-${Date.now()}`,
-      sender: 'assistant',
-      text,
-      spokenText: spoken,
-      timestamp: new Date(),
-      actions: actions.slice(0, 2)
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // BROAD INTENT 6: PACKING LIST / VALİZ HAZIRLAMA
-  // --------------------------------------------------------------------------
-  if (norm.includes('valiz') || norm.includes('bavul') || norm.includes('packing') || norm.includes('koffer') || norm.includes('maleta')) {
-    actions.push({
-      id: 'tool-packing',
-      type: 'open_tool',
-      toolKey: 'packing',
-      label: isTr ? '🧳 İnteraktif Valiz Listesini Aç' : '🧳 Open Packing Checklist',
-      accentTone: 'teal'
-    });
-
-    return {
-      id: `msg-${Date.now()}`,
-      sender: 'assistant',
-      text: isTr
-        ? '🧳 **Akıllı Valiz Hazırlama Kontrol Listesi:**\n\nGideceğiniz ülkenin iklimine, priz tipine ve seyahat türünüze (sırt çantalı, iş, tatil) göre özelleştirilmiş valiz listenizi sitemizin araçlar panelinden yönetebilirsiniz.'
-        : '🧳 **Smart Packing Checklist:**\n\nManage your personalized travel packing list tailored to destination climate, plug adapters, and luggage allowances.',
-      spokenText: isTr
-        ? 'Valiz kontrol listenizi ekrana getirdim.'
-        : 'I have opened your smart packing checklist.',
-      timestamp: new Date(),
-      actions: actions.slice(0, 2)
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // BROAD INTENT 7: TIPPING CALCULATOR / BAHŞİŞ
-  // --------------------------------------------------------------------------
-  if (!targetCountry && (norm.includes('bahsis') || norm.includes('tipping') || norm.includes('trinkgeld') || norm.includes('propina'))) {
-    actions.push({
-      id: 'tool-tipping',
-      type: 'open_tool',
-      toolKey: 'tipping',
-      label: isTr ? '💸 Küresel Bahşiş Hesaplayıcı' : '💸 Global Tipping Calculator',
-      accentTone: 'amber'
-    });
-
-    return {
-      id: `msg-${Date.now()}`,
-      sender: 'assistant',
-      text: isTr
-        ? '💸 **Dünya Bahşiş Kültürü & Oranları:**\n\n• **ABD & Kanada:** %18 - %22 (Neredeyse zorunludur).\n• **Avrupa:** %5 - %10 veya hesabı yuvarlama.\n• **Japonya & G. Kore:** Bahşiş kaba ve hakaret kabul edilir (0%).\n• **Güneydoğu Asya:** Küçük bozuklukları bırakmak yeterlidir.'
-        : '💸 **Global Tipping Standards:**\n\n• **USA & Canada:** 18% - 22% expected.\n• **Europe:** 5% - 10% or round up.\n• **Japan & Korea:** Tipping is considered rude.\n• **Southeast Asia:** Modest change is appreciated.',
-      spokenText: isTr
-        ? 'Japonya ve Kore haricinde çoğu ülkede yüzde 10 civarı bahşiş yaygındır.'
-        : 'Tipping varies by country: standard in North America, modest in Europe, and discouraged in Japan.',
-      timestamp: new Date(),
-      actions: actions.slice(0, 2)
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // BROAD INTENT 8: CURRENCY & LIVE RATES
-  // --------------------------------------------------------------------------
-  if (norm.includes('doviz') || norm.includes('kur') || norm.includes('currency') || norm.includes('dolar') || norm.includes('euro') || norm.includes('wechselkurs')) {
-    actions.push({
-      id: 'radar-fx',
-      type: 'open_tool',
-      toolKey: 'radar',
-      radarMode: 'currency',
-      label: isTr ? '💱 Canlı Döviz Radarı' : '💱 Live FX Radar',
-      accentTone: 'teal'
-    });
-    actions.push({
-      id: 'aff-wise',
-      type: 'affiliate',
-      url: 'https://wise.com',
-      badge: isTr ? 'Sıfır Komisyon' : 'Zero Markup',
-      label: isTr ? '💳 Wise Çok Para Birimli Kart' : '💳 Wise Multi-Currency Card',
-      accentTone: 'sky'
-    });
-
-    return {
-      id: `msg-${Date.now()}`,
-      sender: 'assistant',
-      text: isTr
-        ? `💱 **Canlı Seyahat Döviz Kurları:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**\n\nYurt dışında yüksek banka komisyonlarından kaçınmak için Wise çok para birimli dijital kartını kullanabilirsiniz.`
-        : `💱 **Live Baseline Travel Rates:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**`,
-      spokenText: isTr
-        ? `Canlı kurlar: 1 Dolar ${usdRate} lira, 1 Euro ${eurRate} liradır.`
-        : `Current travel rates are 1 US Dollar at ${usdRate} Lira, and 1 Euro at ${eurRate} Lira.`,
-      timestamp: new Date(),
-      actions: actions.slice(0, 2)
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? radarAction : undefined
     };
   }
 
@@ -631,14 +880,14 @@ export async function processAssistantQuery(
   // Safety, Currencies, SIM/eSIM, Nomad Visas, Consular Lost Passport, and General Dossier.
   // ==========================================================================
   if (targetCountry) {
-    const cName = getCountryName(targetCountry, lang);
+    const cName = getCountryName(targetCountry, activeLang);
     const flag = getFlag(targetCountry);
     const item = passportItems.find((i) => i.c === targetCountry);
-    const geo = getCountryGeography(targetCountry, lang);
-    const insights = getCountryInsights(targetCountry, lang);
-    const itinerary = getCountryItinerary(targetCountry, lang);
-    const practical = getPracticalInfo(targetCountry, lang);
-    const badgeLabel = getCategoryBadgeLabel(item, lang);
+    const geo = getCountryGeography(targetCountry, activeLang);
+    const insights = getCountryInsights(targetCountry, activeLang);
+    const itinerary = getCountryItinerary(targetCountry, activeLang);
+    const practical = getPracticalInfo(targetCountry, activeLang);
+    const badgeLabel = getCategoryBadgeLabel(item, activeLang);
     const stayLimitText = item?.v === 'vf' ? (isTr ? 'Süresiz' : 'Indefinite') : /^\d+$/.test(item?.v || '') ? `${item?.v} ${isTr ? 'Gün' : 'Days'}` : '';
 
     // Primary action: Always open full 360 Country Dossier
@@ -665,14 +914,14 @@ export async function processAssistantQuery(
       norm.includes('elektrik') ||
       norm.includes('adaptor')
     ) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const packingAction: AssistantActionPill = {
         id: `tool-packing`,
         type: 'open_tool',
         toolKey: 'packing',
         label: isTr ? '🧳 Valizine Adaptör Ekle' : '🧳 Add Adapter to Packing List',
         accentTone: 'sky'
-      });
+      };
+      actions.push(primaryDossierAction, packingAction);
 
       const plugText = typeof geo.plugTypes === 'string' ? geo.plugTypes : 'C, F';
 
@@ -692,22 +941,24 @@ export async function processAssistantQuery(
           ? `${cName} priz standartları ${plugText}. Detaylar ekrandadır.`
           : `${cName} uses power plug standard ${plugText}.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
     // ------------------------------------------------------------------------
     // SUB-INTENT B: TIPPING & GRATUITY ETIQUETTE
     // ------------------------------------------------------------------------
-    if (norm.includes('bahsis') || norm.includes('tip') || norm.includes('trinkgeld') || norm.includes('propina')) {
-      actions.push(primaryDossierAction);
-      actions.push({
+    if (norm.includes('bahsis') || norm.includes('tip') || norm.includes('trinkgeld') || norm.includes('propina') || norm.includes('чаевые')) {
+      const tipAction: AssistantActionPill = {
         id: 'tool-tipping',
         type: 'open_tool',
         toolKey: 'tipping',
         label: isTr ? '💸 Bahşiş Hesaplayıcı' : '💸 Tipping Calc',
         accentTone: 'amber'
-      });
+      };
+      actions.push(primaryDossierAction, tipAction);
 
       const tipAdvice = insights?.transport?.taxiAdvice || practical.localEtiquette;
 
@@ -725,7 +976,9 @@ export async function processAssistantQuery(
           ? `${cName} için bahşiş kuralları ve görgü adabını ekrana getirdim.`
           : `Tipping etiquette for ${cName} has been displayed on screen.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -743,16 +996,16 @@ export async function processAssistantQuery(
       norm.includes('ulasim') ||
       norm.includes('transport')
     ) {
-      actions.push(primaryDossierAction);
       const isAsia = ['TH', 'VN', 'ID', 'MY', 'JP', 'KR', 'KH'].includes(targetCountry);
-      actions.push({
+      const transitLink: AssistantActionPill = {
         id: isAsia ? 'aff-12go' : 'aff-omio',
         type: 'affiliate',
         url: isAsia ? 'https://12go.asia' : 'https://www.omio.com',
         badge: isTr ? 'Bilet Karşılaştır' : 'Book Transit',
         label: isTr ? '🚆 Tren & Otobüs Bileti Al' : '🚆 Compare Transit Tickets',
         accentTone: 'sky'
-      });
+      };
+      actions.push(primaryDossierAction, transitLink);
 
       const rideApps = insights?.transport?.popularRideApps?.join(', ') || 'Grab, Bolt, Uber';
       const taxiAdvice = insights?.transport?.taxiAdvice || 'Taksimetre açtırmayı unutmayınız.';
@@ -773,7 +1026,9 @@ export async function processAssistantQuery(
           ? `${cName} için en popüler taksi uygulamaları: ${rideApps}.`
           : `The most reliable ride-hailing apps in ${cName} are ${rideApps}.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -785,20 +1040,21 @@ export async function processAssistantQuery(
       norm.includes('hangi ay') ||
       norm.includes('iklim') ||
       norm.includes('hava durumu') ||
+      norm.includes('hava') ||
       norm.includes('mevsim') ||
       norm.includes('weather') ||
       norm.includes('climate') ||
       norm.includes('best time')
     ) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const weatherAction: AssistantActionPill = {
         id: 'radar-weather',
         type: 'open_tool',
         toolKey: 'radar',
         radarMode: 'weather',
         label: isTr ? '🌦️ Canlı Hava Durumu Radarı' : '🌦️ Live Weather Radar',
         accentTone: 'sky'
-      });
+      };
+      actions.push(primaryDossierAction, weatherAction);
 
       return {
         id: `msg-${Date.now()}`,
@@ -815,7 +1071,9 @@ export async function processAssistantQuery(
           ? `${cName} seyahati için en ideal aylar: ${practical.bestMonths}.`
           : `The best time to visit ${cName} is during ${practical.bestMonths}.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -831,14 +1089,14 @@ export async function processAssistantQuery(
       norm.includes('cuisine') ||
       norm.includes('lezzet')
     ) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const routeAction: AssistantActionPill = {
         id: 'tab-route',
         type: 'switch_tab',
         tabKey: 'route_planner',
         label: isTr ? '🗺️ Lezzet Duraklı Rota Çiz' : '🗺️ Route Planner',
         accentTone: 'coral'
-      });
+      };
+      actions.push(primaryDossierAction, routeAction);
 
       const dishes = (itinerary?.signatureGastronomy?.dishes || []).slice(0, 4).map((d) => `• **${d.name}:** ${d.desc}`).join('\n');
       const drinks = (itinerary?.signatureGastronomy?.drinks || []).slice(0, 2).map((d) => `• **${d.name}:** ${d.desc}`).join('\n');
@@ -857,7 +1115,9 @@ export async function processAssistantQuery(
           ? `${cName} için en meşhur lezzetleri ve geleneksel yemekleri ekrana getirdim.`
           : `I have displayed top gastronomic highlights for ${cName}.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -873,14 +1133,14 @@ export async function processAssistantQuery(
       norm.includes('gezilecek yerler') ||
       norm.includes('kac gun')
     ) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const routeAction: AssistantActionPill = {
         id: 'tab-route',
         type: 'switch_tab',
         tabKey: 'route_planner',
         label: isTr ? '🗺️ Rota Planlayıcıda Aç' : '🗺️ Open in Route Planner',
         accentTone: 'sky'
-      });
+      };
+      actions.push(primaryDossierAction, routeAction);
 
       const stopsSummary = (itinerary?.stops || [])
         .slice(0, 3)
@@ -903,7 +1163,9 @@ export async function processAssistantQuery(
           ? `${cName} için ${itinerary.idealDurationText} rota planınız ekrana getirildi.`
           : `Your ${itinerary.idealDurationText} itinerary for ${cName} is ready on screen.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -922,14 +1184,14 @@ export async function processAssistantQuery(
       norm.includes('acil') ||
       norm.includes('emergency')
     ) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const consularAction: AssistantActionPill = {
         id: 'open-consular',
         type: 'switch_tab',
         tabKey: 'nomad_tools',
         label: isTr ? '🚨 24/7 Acil Konsolosluk & Güvenlik' : '🚨 Emergency Services',
         accentTone: 'coral'
-      });
+      };
+      actions.push(primaryDossierAction, consularAction);
 
       const em = insights?.safety?.emergencyNumbers || { police: '112', ambulance: '112', general: '112' };
       const safetyScore = insights?.safety?.safetyScore || 80;
@@ -951,7 +1213,9 @@ export async function processAssistantQuery(
           ? `${cName} güvenlik skoru 100 üzerinden ${safetyScore}. Acil durum numaraları ekrandadır.`
           : `${cName} has a safety score of ${safetyScore} out of 100.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -967,15 +1231,15 @@ export async function processAssistantQuery(
       norm.includes('maliyet') ||
       norm.includes('butce')
     ) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const wiseCardAction: AssistantActionPill = {
         id: 'aff-wise',
         type: 'affiliate',
         url: 'https://wise.com',
         badge: isTr ? 'Sıfır Komisyon' : 'Zero Markup',
         label: isTr ? '💳 Wise Çoklu Döviz Kartı Al' : '💳 Get Wise Travel Card',
         accentTone: 'sky'
-      });
+      };
+      actions.push(primaryDossierAction, wiseCardAction);
 
       const costs = insights?.livingCosts;
 
@@ -997,7 +1261,9 @@ export async function processAssistantQuery(
           ? `${cName} resmi para birimi ${geo.currencyName}. Günlük bütçe ortalama ${costs?.dailyBudgetMidrangeUsd || '70 dolar'} civarındadır.`
           : `${cName} uses the ${geo.currencyName}. Average daily budget is ${costs?.dailyBudgetMidrangeUsd || '70 dollars'}.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
@@ -1005,15 +1271,15 @@ export async function processAssistantQuery(
     // SUB-INTENT I: SIM CARD & ESIM
     // ------------------------------------------------------------------------
     if (norm.includes('esim') || norm.includes('sim kart') || norm.includes('internet') || norm.includes('roaming')) {
-      actions.push(primaryDossierAction);
-      actions.push({
+      const airaloAction: AssistantActionPill = {
         id: 'aff-airalo',
         type: 'affiliate',
         url: 'https://www.airalo.com',
-        badge: isTr ? '5G eSIM' : '5G eSIM',
+        badge: '5G eSIM',
         label: isTr ? `📱 Airalo ${cName} eSIM Al` : `📱 Airalo ${cName} eSIM`,
         accentTone: 'coral'
-      });
+      };
+      actions.push(primaryDossierAction, airaloAction);
 
       return {
         id: `msg-${Date.now()}`,
@@ -1026,89 +1292,24 @@ export async function processAssistantQuery(
           ? `${cName} için Airalo dijital e sim paketini öneriyoruz.`
           : `We recommend using an Airalo digital eSIM for your visit to ${cName}.`,
         timestamp: new Date(),
-        actions: actions.slice(0, 2)
+        actions: actions.slice(0, 2),
+        detectedLang: activeLang,
+        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
       };
     }
 
     // ------------------------------------------------------------------------
-    // SUB-INTENT J: DIGITAL NOMAD VISA
+    // DEFAULT TARGET COUNTRY INTENT: 360 Full Overview (Single-word query or general question)
     // ------------------------------------------------------------------------
-    if (norm.includes('nomad') || norm.includes('gocebe') || norm.includes('uzaktan calisma') || norm.includes('remote')) {
-      actions.push(primaryDossierAction);
-      actions.push({
-        id: 'tab-nomad',
-        type: 'switch_tab',
-        tabKey: 'nomad_tools',
-        label: isTr ? '💻 Dijital Göçebe Vizeleri Rehberi' : '💻 Nomad Visa Hub',
-        accentTone: 'sky'
-      });
-
-      const dnv = DIGITAL_NOMAD_VISAS.find((v) => v.countryCode === targetCountry);
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `💻 **${flag} ${cName} Dijital Göçebe Vizesi:**\n\n` +
-            (dnv
-              ? `• **Vize İsmi:** ${dnv.visaName}\n• **Aylık Gelir Şartı:** ${dnv.incomeRequired}\n• **Kalış Süresi:** ${dnv.duration}\n• **Vergi Durumu:** ${dnv.taxInfo}`
-              : `Bu ülkede resmi bir Dijital Göçebe Vizesi (DNV) programı bulunmamaktadır; ancak ${badgeLabel} şartlarıyla turist olarak geçici konaklayabilirsiniz.`)
-          : `💻 **${flag} ${cName} Digital Nomad Status:**\n\n` +
-            (dnv
-              ? `• **Visa Program:** ${dnv.visaName}\n• **Income Required:** ${dnv.incomeRequired}\n• **Duration:** ${dnv.duration}`
-              : `No official Digital Nomad Visa program currently; standard tourist stay terms apply.`),
-        spokenText: isTr
-          ? `${cName} göçebe ve uzaktan çalışma bilgilerini ekrana getirdim.`
-          : `Nomad and remote work details for ${cName} are on screen.`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2)
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT K: LOST PASSPORT & CONSULAR CRISIS
-    // ------------------------------------------------------------------------
-    if (norm.includes('kaybettim') || norm.includes('calindi') || norm.includes('pasaport kayip') || norm.includes('lost passport')) {
-      actions.push(primaryDossierAction);
-      actions.push({
-        id: 'open-consular-tab',
-        type: 'switch_tab',
-        tabKey: 'nomad_tools',
-        label: isTr ? '🚨 24/7 Konsolosluk Acil Adımları' : '🚨 Consular Crisis Guide',
-        accentTone: 'coral'
-      });
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `🚨 **${flag} ${cName} Seyahatinde Pasaport Kaybı Durumunda Yapılacaklar:**\n\n` +
-            `1. **Polis Tutanağı:** Derhal en yakın yerel polis merkezine giderek kayıp/çalıntı tutanağı (Police Report) tutturun.\n` +
-            `2. **24/7 Konsolosluk Çağrı Merkezi:** **+90 312 292 29 29** numarasını arayarak dosya açtırın.\n` +
-            `3. **Geçici Pasaport:** En yakın T.C. Büyükelçiliği veya Başkonsolosluğu'na 2 adet biyometrik fotoğraf ve kimlik kartınızla başvurarak Türkiye'ye dönüş için Geçici Pasaport (Laissez-Passer) temin edin.`
-          : `🚨 **Lost Passport Protocol in ${cName}:**\n\n1. File a report at the nearest police station immediately.\n2. Contact your country's emergency consular hotline.\n3. Request an emergency travel document (Laissez-Passer) from the nearest embassy.`,
-        spokenText: isTr
-          ? 'Pasaport kaybında derhal polis tutanağı tutup 24 saat nöbetçi konsolosluk hattını arayınız.'
-          : 'In case of a lost passport, file a police report immediately and contact your embassy.',
-        timestamp: new Date(),
-        actions: actions.slice(0, 2)
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // DEFAULT TARGET COUNTRY INTENT: 360 Full Overview
-    // ------------------------------------------------------------------------
-    actions.push(primaryDossierAction);
-    actions.push({
+    const airaloPill: AssistantActionPill = {
       id: 'aff-airalo',
       type: 'affiliate',
       url: 'https://www.airalo.com',
       badge: '5G eSIM',
       label: isTr ? `📱 Airalo ${cName} İnternet` : `📱 Airalo ${cName} eSIM`,
       accentTone: 'sky'
-    });
+    };
+    actions.push(primaryDossierAction, airaloPill);
 
     const plugText = typeof geo.plugTypes === 'string' ? geo.plugTypes : 'C, F';
     const safetyScore = insights?.safety?.safetyScore || 80;
@@ -1135,54 +1336,48 @@ export async function processAssistantQuery(
           `• **Safety Score:** ${safetyScore}/100 (${safetyLevel})\n` +
           `• **Best Season:** ${practical.bestMonths}`,
       spokenText: isTr
-        ? `${originName} pasaportu için ${cName} vize durumu: ${badgeLabel} ${stayLimitText ? `, ${stayLimitText} kalış süresi` : ''}. Seyahat dosyasını açtım.`
+        ? `${originName} pasaportu için ${cName} vize durumu: ${badgeLabel} ${stayLimitText ? `, ${stayLimitText} kalış süresi` : ''}. Seyahat dosyasını hazırladım.`
         : `For ${originName} passport holders, ${cName} visa status is ${badgeLabel} ${stayLimitText ? `with up to ${stayLimitText}` : ''}.`,
       timestamp: new Date(),
-      actions: actions.slice(0, 2)
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
     };
   }
 
   // --------------------------------------------------------------------------
   // GENERAL FALLBACK: HIGH-PRECISION GUIDED SUGGESTIONS
   // --------------------------------------------------------------------------
-  actions.push({
+  const radarFallback: AssistantActionPill = {
     id: 'tab-where',
     type: 'switch_tab',
     tabKey: 'where_can_i_go',
     label: isTr ? '🌍 Nereye Gidebilirim? (Dünya Radarı)' : '🌍 Where Can I Go? (Radar)',
     accentTone: 'teal'
-  });
-  actions.push({
+  };
+  const routeFallback: AssistantActionPill = {
     id: 'tab-route',
     type: 'switch_tab',
     tabKey: 'route_planner',
     label: isTr ? '🗺️ Çoklu Ülke Rota Planlayıcı' : '🗺️ Route Planner',
     accentTone: 'sky'
-  });
+  };
+  actions.push(radarFallback, routeFallback);
 
   return {
     id: `msg-${Date.now()}`,
     sender: 'assistant',
     text: isTr
-      ? `Sormak istediğiniz ülke adını veya seyahat konusunu belirtebilir misiniz?\n\n` +
-        `Örnek sorular:\n` +
-        `• *"Vizesiz gidebileceğim ülkeler neresi?"*\n` +
-        `• *"Norveç vize istiyor mu?"*\n` +
-        `• *"Japonya priz tipi nedir?"*\n` +
-        `• *"İtalya 7 günlük rota hazırla"*\n` +
-        `• *"Tayland taksi uygulaması hangisi?"*\n` +
-        `• *"Kimlikle hangi ülkelere gidebilirim?"*`
-      : `Please mention a country name or travel query you would like to explore.\n\n` +
-        `Sample questions:\n` +
-        `• *"Which countries can I visit visa-free?"*\n` +
-        `• *"Do I need a visa for Norway?"*\n` +
-        `• *"What plug standard is used in Japan?"*\n` +
-        `• *"What are the top taxi apps in Thailand?"*`,
+      ? `Sormak istediğiniz ülke adını veya seyahat konusunu belirtebilirsiniz:\n\n` +
+        `• Tek kelime ülke adı: *"Norveç"*, *"Tayland"*, *"İtalya"*, *"Japonya"*\n` +
+        `• Özel konular: *"Prizler"*, *"Bahşiş"*, *"Taksiler"*, *"Döviz Kurları"*, *"90 Gün Schengen"*`
+      : `Please mention a country or travel topic:\n\n• Countries: *"Norway"*, *"Thailand"*, *"Japan"*\n• Topics: *"Plugs"*, *"Tipping"*, *"Taxis"*, *"Currencies"*, *"90-Day Schengen"*`,
     spokenText: isTr
       ? 'Araştırmak istediğiniz ülke adını veya seyahat sorusunu sorabilirsiniz.'
       : 'You can ask about any country or travel destination.',
     timestamp: new Date(),
-    actions: actions.slice(0, 2)
+    actions: actions.slice(0, 2),
+    detectedLang: activeLang
   };
 }
 
@@ -1221,7 +1416,8 @@ export function startVoiceRecognition(options: {
       en: 'en-US',
       de: 'de-DE',
       es: 'es-ES',
-      ru: 'ru-RU'
+      ru: 'ru-RU',
+      ja: 'ja-JP'
     };
 
     recognition.lang = langCodeMap[options.lang] || 'tr-TR';

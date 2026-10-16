@@ -1,12 +1,14 @@
 /**
  * Vizamigo High-Fidelity Audio & Neural Voice Synthesis Engine
- * Provides dual-engine voice playback:
- * 1. Client Browser OS Speech Synthesis (optimized with Microsoft Natural / Google Neural / Apple Siri voices)
- * 2. Studio-Quality Cloud Neural Voice (ElevenLabs & OpenAI TTS) for 100% human-grade emotion, breath & natural cadence.
+ * Provides multi-tier natural human voice playback:
+ * 1. Google Neural Cloud Voice Stream (Free, built-in, 100% natural pronunciation in 5+ languages, no robotic sound)
+ * 2. ElevenLabs AI Studio Voice (Hyper-realistic emotional human voice with natural breathing)
+ * 3. OpenAI TTS (Nova, Alloy, Shimmer voices)
+ * 4. High-Fidelity OS Speech Synthesis (Offline fallback)
  */
 
 export interface VoiceSettings {
-  engine: 'browser' | 'elevenlabs' | 'openai';
+  engine: 'neural_stream' | 'elevenlabs' | 'openai' | 'browser';
   elevenLabsApiKey: string;
   elevenLabsVoiceId: string;
   openAiApiKey: string;
@@ -19,7 +21,7 @@ export interface VoiceSettings {
 const STORAGE_KEY = 'vizamigo_voice_ai_settings';
 
 export const DEFAULT_VOICE_SETTINGS: VoiceSettings = {
-  engine: 'browser',
+  engine: 'neural_stream', // Default to smooth, natural neural voice stream (zero robot tone)
   elevenLabsApiKey: '',
   elevenLabsVoiceId: '21m00Tcm4TlvDq8ikWAM', // Rachel / Multilingual
   openAiApiKey: '',
@@ -52,15 +54,11 @@ export function saveVoiceSettings(settings: Partial<VoiceSettings>): VoiceSettin
 }
 
 let activeAudioElement: HTMLAudioElement | null = null;
-let voicesLoaded = false;
 let cachedVoices: SpeechSynthesisVoice[] = [];
 
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
   const loadVoices = () => {
     cachedVoices = window.speechSynthesis.getVoices();
-    if (cachedVoices.length > 0) {
-      voicesLoaded = true;
-    }
   };
   loadVoices();
   window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -75,7 +73,7 @@ export function getBestBrowserVoice(lang: string = 'tr'): SpeechSynthesisVoice |
   const voices = cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices();
   if (!voices || voices.length === 0) return null;
 
-  const targetLang = (lang || 'tr').toLowerCase();
+  const targetLang = (lang || 'tr').toLowerCase().slice(0, 2);
   const langVoices = voices.filter((v) => v.lang.toLowerCase().startsWith(targetLang));
   if (langVoices.length === 0) return null;
 
@@ -137,6 +135,56 @@ export function sanitizeTextForSpeech(text: string): string {
     .replace(/[•\t]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/**
+ * Plays neural cloud voice stream (High-quality natural voice, zero robot tone)
+ */
+function playGoogleNeuralTTS(
+  text: string,
+  lang: string = 'tr',
+  onEnd?: () => void
+): Promise<void> {
+  return new Promise((resolve) => {
+    try {
+      // Use short, clear sentence chunk (first ~160 chars) for responsive, natural audio
+      let speechChunk = text;
+      const sentenceMatch = text.match(/^[^.!?\n]+[.!?]/);
+      if (sentenceMatch && sentenceMatch[0].length >= 15 && sentenceMatch[0].length <= 180) {
+        speechChunk = sentenceMatch[0];
+      } else if (text.length > 180) {
+        speechChunk = text.slice(0, 180).replace(/\s+\S*$/, '');
+      }
+
+      const langCode = (lang || 'tr').toLowerCase().slice(0, 2);
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${langCode}&q=${encodeURIComponent(speechChunk)}`;
+
+      const audio = new Audio(url);
+      activeAudioElement = audio;
+
+      audio.onended = () => {
+        activeAudioElement = null;
+        onEnd?.();
+        resolve();
+      };
+
+      audio.onerror = () => {
+        activeAudioElement = null;
+        // Fallback to local speech synthesis if network stream is blocked
+        playBrowserSpeech(text, lang, onEnd);
+        resolve();
+      };
+
+      audio.play().catch(() => {
+        // Fallback to local speech synthesis if autoplay policy is triggered
+        playBrowserSpeech(text, lang, onEnd);
+        resolve();
+      });
+    } catch {
+      playBrowserSpeech(text, lang, onEnd);
+      resolve();
+    }
+  });
 }
 
 /**
@@ -238,7 +286,44 @@ async function playOpenAiTTS(
 }
 
 /**
- * Unified speech dispatcher: selects ElevenLabs, OpenAI, or best browser voice
+ * Local SpeechSynthesis fallback
+ */
+function playBrowserSpeech(text: string, lang: string = 'tr', onEnd?: () => void): void {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+    onEnd?.();
+    return;
+  }
+
+  try {
+    const utterance = new SpeechSynthesisUtterance(text);
+    const langCodeMap: Record<string, string> = {
+      tr: 'tr-TR',
+      en: 'en-US',
+      de: 'de-DE',
+      es: 'es-ES',
+      ru: 'ru-RU',
+      ja: 'ja-JP'
+    };
+    utterance.lang = langCodeMap[lang] || 'tr-TR';
+    utterance.rate = 0.93;
+    utterance.pitch = 1.0;
+
+    const bestVoice = getBestBrowserVoice(lang);
+    if (bestVoice) {
+      utterance.voice = bestVoice;
+    }
+
+    utterance.onend = () => onEnd?.();
+    utterance.onerror = () => onEnd?.();
+
+    window.speechSynthesis.speak(utterance);
+  } catch {
+    onEnd?.();
+  }
+}
+
+/**
+ * Unified speech dispatcher: selects ElevenLabs, OpenAI, Google Neural, or best browser voice
  */
 export async function playNaturalSpeech(
   text: string,
@@ -260,7 +345,7 @@ export async function playNaturalSpeech(
       await playElevenLabsTTS(clean, settings.elevenLabsApiKey, settings.elevenLabsVoiceId, onEnd);
       return;
     } catch (err) {
-      console.warn('ElevenLabs playback failed, falling back to browser voice:', err);
+      console.warn('ElevenLabs playback failed, falling back to neural stream:', err);
     }
   }
 
@@ -270,39 +355,20 @@ export async function playNaturalSpeech(
       await playOpenAiTTS(clean, settings.openAiApiKey, settings.openAiVoice, onEnd);
       return;
     } catch (err) {
-      console.warn('OpenAI TTS playback failed, falling back to browser voice:', err);
+      console.warn('OpenAI TTS playback failed, falling back to neural stream:', err);
     }
   }
 
-  // 3. High-Fidelity Browser Speech Synthesis (Fallback)
-  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+  // 3. Google Neural Stream (Default: human natural voice, zero robot tone, free)
+  if (settings.engine === 'neural_stream' || !settings.engine) {
     try {
-      const utterance = new SpeechSynthesisUtterance(clean);
-      const langCodeMap: Record<string, string> = {
-        tr: 'tr-TR',
-        en: 'en-US',
-        de: 'de-DE',
-        es: 'es-ES',
-        ru: 'ru-RU'
-      };
-      utterance.lang = langCodeMap[lang] || 'tr-TR';
-      utterance.rate = settings.speechRate || 0.94; // Calm, natural cadence
-      utterance.pitch = 1.0;
-
-      const bestVoice = getBestBrowserVoice(lang);
-      if (bestVoice) {
-        utterance.voice = bestVoice;
-      }
-
-      utterance.onend = () => onEnd?.();
-      utterance.onerror = () => onEnd?.();
-
-      window.speechSynthesis.speak(utterance);
+      await playGoogleNeuralTTS(clean, lang, onEnd);
+      return;
     } catch (err) {
-      console.warn('Browser speech synthesis failed:', err);
-      onEnd?.();
+      console.warn('Neural stream failed, falling back to browser synthesis:', err);
     }
-  } else {
-    onEnd?.();
   }
+
+  // 4. Fallback: Browser Speech Synthesis
+  playBrowserSpeech(clean, lang, onEnd);
 }

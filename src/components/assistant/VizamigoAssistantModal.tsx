@@ -15,10 +15,8 @@ import {
   Settings,
   Play,
   Check,
-  Info,
   Shield,
-  Sliders,
-  HelpCircle
+  Sliders
 } from 'lucide-react';
 import { useI18n } from '../../data/i18n';
 import { TabKey } from '../Navigation';
@@ -66,15 +64,15 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 }) => {
   const { language, l } = useI18n();
 
-  const getWelcomeMessage = (): AssistantMessage => {
+  const getWelcomeMessage = (lang: string = language): AssistantMessage => {
     let welcomeText = '';
-    if (language === 'tr') {
-      welcomeText = `Merhaba! Ben **Vizamigo AI Seyahat Danışmanınız** ✈️\n\nSitedeki **199 ülkenin tamamına** (vize rejimleri, priz tipleri, taksi uygulamaları, bahşiş kuralları, acil durum hatları ve güncel döviz kurları) tam hakimim.\n\nİster yazın, ister **mikrofon simgesine basıp konuşun**!`;
-    } else if (language === 'de') {
+    if (lang === 'tr') {
+      welcomeText = `Merhaba! Ben **Vizamigo AI Seyahat Danışmanınız** ✈️\n\nSitedeki **199 ülkenin tamamına** (vize rejimleri, priz tipleri, taksi uygulamaları, bahşiş kuralları, acil durum hatları ve canlı döviz kurları) tam hakimim.\n\nİster yazın, ister **mikrofon simgesine basıp konuşun**!`;
+    } else if (lang === 'de') {
       welcomeText = `Hallo! Ich bin Ihr **Vizamigo AI Reiseassistent** ✈️\n\nIch kenne alle **199 Länder** auswendig: Visabestimmungen, Steckertypen, Taxi-Apps, Trinkgeldregeln und Live-Wechselkurse.\n\nSchreiben Sie Ihre Frage oder **tippen Sie auf das Mikrofon**, um zu sprechen!`;
-    } else if (language === 'es') {
+    } else if (lang === 'es') {
       welcomeText = `¡Hola! Soy tu **Asistente de Viaje Vizamigo AI** ✈️\n\nDomino los **199 países**: requisitos de visado, enchufes, aplicaciones de taxi, propinas y tipos de cambio.\n\nEscribe tu consulta o **pulsa el micrófono** para hablar.`;
-    } else if (language === 'ru') {
+    } else if (lang === 'ru') {
       welcomeText = `Здравствуйте! Я ваш **ИИ-консультант Vizamigo** ✈️\n\nЯ знаю все **199 стран**: визовые правила, типы розеток, приложения такси, чаевые и курсы валют.\n\nНапишите вопрос или **нажмите на микрофон**, чтобы сказать голосом!`;
     } else {
       welcomeText = `Hello! I am your **Vizamigo AI Travel Concierge** ✈️\n\nI have complete mastery over all **199 countries**: visa rules, power plugs, taxi apps, tipping etiquette, itineraries, and live FX rates.\n\nType your inquiry or **tap the microphone to speak**!`;
@@ -90,14 +88,14 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
           id: 'init-where',
           type: 'switch_tab',
           tabKey: 'where_can_i_go',
-          label: language === 'tr' ? '🌍 Vizesiz Ülkeler Radarı' : '🌍 Visa-Free World Radar',
+          label: lang === 'tr' ? '🌍 Vizesiz Ülkeler Radarı' : '🌍 Visa-Free World Radar',
           accentTone: 'teal'
         },
         {
           id: 'init-th',
           type: 'open_country',
           countryCode: 'TH',
-          label: language === 'tr' ? '🇹🇭 Tayland Vizesi & Rehberi' : '🇹🇭 Thailand Visa Guide',
+          label: lang === 'tr' ? '🇹🇭 Tayland Vizesi & Rehberi' : '🇹🇭 Thailand Visa Guide',
           accentTone: 'sky'
         }
       ]
@@ -107,7 +105,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const [messages, setMessages] = useState<AssistantMessage[]>([getWelcomeMessage()]);
   const [inputValue, setInputValue] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(false);
-  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false);
+  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(true); // Voice enabled by default with natural neural stream
   const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isTyping, setIsTyping] = useState<boolean>(false);
@@ -123,6 +121,16 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  // Re-translate the initial welcome message whenever site language changes
+  useEffect(() => {
+    setMessages((prev) => {
+      if (prev.length <= 1 && prev[0]?.id === 'welcome-msg') {
+        return [getWelcomeMessage(language)];
+      }
+      return prev;
+    });
+  }, [language]);
 
   useEffect(() => {
     if (isOpen) {
@@ -151,9 +159,27 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     } else {
       stopSpeaking();
       setSpeakingMsgId(msg.id);
-      speakResponse(msg.spokenText || msg.text, language, () => {
+      speakResponse(msg.spokenText || msg.text, msg.detectedLang || language, () => {
         setSpeakingMsgId(null);
       });
+    }
+  };
+
+  const handleActionClick = (action: AssistantActionPill) => {
+    if (action.type === 'open_country' && action.countryCode) {
+      onOpenCountryDossier(action.countryCode);
+      setIsMinimized(true); // Auto-minimize so the country dossier is visible to user
+    } else if (action.type === 'switch_tab' && action.tabKey) {
+      onSelectTab(action.tabKey);
+      setIsMinimized(true); // Auto-minimize so the selected tab is visible to user
+    } else if (action.type === 'open_tool') {
+      if (action.toolKey === 'packing') onOpenPackingList();
+      else if (action.toolKey === 'tipping') onOpenTippingCalc();
+      else if (action.toolKey === 'overlap') onOpenTimezoneOverlap();
+      else if (action.toolKey === 'radar') onOpenGlobalRadar(action.radarMode || 'all');
+      setIsMinimized(true); // Auto-minimize so the tool modal is visible to user
+    } else if (action.type === 'affiliate' && action.url) {
+      window.open(action.url, '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -183,11 +209,20 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
       setIsTyping(false);
       setMessages((prev) => [...prev, response]);
 
+      const replyLang = response.detectedLang || language;
+
       if (voiceEnabled && (isVoiceInput || voiceSettings.autoSpeak)) {
         setSpeakingMsgId(response.id);
-        speakResponse(response.spokenText || response.text, language, () => {
+        speakResponse(response.spokenText || response.text, replyLang, () => {
           setSpeakingMsgId(null);
         });
+      }
+
+      // If user asked to open a specific country or tool, auto-trigger and minimize to background
+      if (response.autoTriggerAction) {
+        setTimeout(() => {
+          handleActionClick(response.autoTriggerAction!);
+        }, 750);
       }
     } catch (err) {
       console.error('Assistant query error:', err);
@@ -251,30 +286,15 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     }
   };
 
-  const handleActionClick = (action: AssistantActionPill) => {
-    if (action.type === 'open_country' && action.countryCode) {
-      onOpenCountryDossier(action.countryCode);
-    } else if (action.type === 'switch_tab' && action.tabKey) {
-      onSelectTab(action.tabKey);
-    } else if (action.type === 'open_tool') {
-      if (action.toolKey === 'packing') onOpenPackingList();
-      else if (action.toolKey === 'tipping') onOpenTippingCalc();
-      else if (action.toolKey === 'overlap') onOpenTimezoneOverlap();
-      else if (action.toolKey === 'radar') onOpenGlobalRadar(action.radarMode || 'all');
-    } else if (action.type === 'affiliate' && action.url) {
-      window.open(action.url, '_blank', 'noopener,noreferrer');
-    }
-  };
-
   const handleTestVoice = async () => {
     setIsTestingVoice(true);
     const testPhrase =
       language === 'tr'
-        ? 'Merhaba! Vizamigo AI seyahat danışmanınız hazır. 199 ülkenin tamamına hakimim.'
+        ? 'Merhaba! Vizamigo seyahat danışmanınız hazır. 199 ülkenin vize ve gezi bilgilerine hakimim.'
         : language === 'de'
-        ? 'Hallo! Ihr Vizamigo Reiseberater ist bereit für 199 Länder weltweit.'
+        ? 'Hallo! Ihr Vizamigo Reiseberater ist bereit für alle 199 Länder weltweit.'
         : language === 'es'
-        ? '¡Hola! Tu asistente de viajes Vizamigo está listo para 199 países.'
+        ? '¡Hola! Tu asistente de viajes Vizamigo está listo para los 199 países.'
         : language === 'ru'
         ? 'Здравствуйте! Ваш консультант Vizamigo готов ответить по всем 199 странам.'
         : 'Hello! Your Vizamigo AI travel concierge is ready for all 199 countries worldwide.';
@@ -447,29 +467,36 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             {/* Engine Selection */}
             <div className="space-y-2">
               <label className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                {l('Ses Tonu & Kalitesi', 'Voice Quality & Fidelity')}
+                {l('Ses Kalitesi & Motoru', 'Voice Quality Engine')}
               </label>
 
               <div className="grid grid-cols-1 gap-2.5">
-                {/* Option 1: Browser Natural */}
+                {/* Option 1: Neural Stream (Default & Human) */}
                 <div
-                  onClick={() => setVoiceSettingsState({ ...voiceSettings, engine: 'browser' })}
+                  onClick={() => setVoiceSettingsState({ ...voiceSettings, engine: 'neural_stream' })}
                   className={`p-3 rounded-2xl border-2 transition-all cursor-pointer ${
-                    voiceSettings.engine === 'browser'
+                    voiceSettings.engine === 'neural_stream' || !voiceSettings.engine
                       ? 'border-[#0D9488] bg-teal-50/50 dark:bg-teal-950/40 shadow-xs'
                       : 'border-slate-200 dark:border-white/10 bg-white dark:bg-white/5'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-black text-slate-900 dark:text-white">
-                      {l('Cihaz Doğal Sesi (Ücretsiz & Hızlı)', 'Device Natural Voice (Free & Offline)')}
-                    </span>
-                    {voiceSettings.engine === 'browser' && <Check className="w-4 h-4 text-[#0D9488]" />}
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-xs font-black text-slate-900 dark:text-white">
+                        {l('Google Neural Doğal Ses (Ücretsiz & Akıcı)', 'Google Neural Voice (Free & Natural)')}
+                      </span>
+                      <span className="text-xs px-1.5 py-0.5 rounded bg-teal-600 text-white font-black">
+                        {l('Varsayılan', 'Default')}
+                      </span>
+                    </div>
+                    {(voiceSettings.engine === 'neural_stream' || !voiceSettings.engine) && (
+                      <Check className="w-4 h-4 text-[#0D9488]" />
+                    )}
                   </div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
                     {l(
-                      'İşletim sisteminizdeki en doğal Microsoft Natural / Google Neural / Apple Siri ses profilini seçer. API anahtarı gerekmez.',
-                      'Uses the best Microsoft Natural, Google Neural, or Apple Siri voice built into your OS. No API key needed.'
+                      'Google bulut ses akışını kullanır. Robotik ses tonunu %100 ortadan kaldırır, 5 dilde insan gibi akıcı konuşur.',
+                      'Uses Google neural voice streaming. Completely removes robotic tone and speaks with natural human pronunciation in 5 languages.'
                     )}
                   </p>
                 </div>
@@ -489,15 +516,15 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
                         ElevenLabs Studio AI Sesi
                       </span>
                       <span className="text-xs px-1.5 py-0.5 rounded bg-emerald-500 text-white font-black">
-                        {l('Önerilen', 'Pro')}
+                        {l('Stüdyo', 'Studio')}
                       </span>
                     </div>
                     {voiceSettings.engine === 'elevenlabs' && <Check className="w-4 h-4 text-[#0D9488]" />}
                   </div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
                     {l(
-                      'Ultra-gerçekçi, insan duygusu, nefes alma ve 29 dilde kusursuz diksiyon. Robotik sesi %100 yok eder.',
-                      'Ultra-realistic human emotion, natural breathing, zero robotic tone in 29+ languages.'
+                      'Ultra-gerçekçi, insan duygusu, nefes alma ve kusursuz diksiyon.',
+                      'Hyper-realistic human emotion, natural breathing, and pristine studio cadence.'
                     )}
                   </p>
 
