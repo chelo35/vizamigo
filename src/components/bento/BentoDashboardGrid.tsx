@@ -12,7 +12,8 @@ import {
   Plane,
   Laptop,
   PhoneCall,
-  ChevronRight
+  ChevronRight,
+  ChevronDown
 } from 'lucide-react';
 import {
   WorldRadar3DIllustration,
@@ -217,6 +218,18 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
     () => getCountryConciergePlan(researchCountry, currentPassport),
     [researchCountry, currentPassport]
   );
+
+  const researchGeography = useMemo(
+    () => getCountryGeography(researchCountry, language),
+    [researchCountry, language]
+  );
+
+  const researchVisaBadge = useMemo(() => {
+    if (!researchCountryItem) return { icon: '🛂', text: l('Vize Gerekli', 'Visa Required') };
+    const label = getCategoryBadgeLabel(researchCountryItem, language);
+    const icon = researchCountryItem.cat === 'free' || researchCountryItem.id ? '✅' : researchCountryItem.cat === 'evisa' ? '💻' : '🛂';
+    return { icon, text: `${label} (${researchCountryItem.v} Gün)` };
+  }, [researchCountryItem, language, l]);
 
   // Open a sub-widget window
   const openWidget = (id: BentoWidgetId, subTab?: string, countryCode?: string) => {
