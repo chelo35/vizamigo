@@ -220,10 +220,16 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         >
           {/* Real Tropical Turquoise Island Lagoon Photo Background */}
           <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&fm=webp&q=80"
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75"
+            srcSet="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=480&fm=webp&q=75 480w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75 720w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&fm=webp&q=75 1000w"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 684px"
             alt={l('Turkuaz Lagün & Dünya Radarı', 'Turquoise Lagoon & World Radar')}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={684}
+            height={395}
           />
           {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0284C7]/85 via-[#0EA5E9]/65 to-[#0D9488]/75" />
@@ -269,12 +275,21 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           <img
             src={
               researchCountry === 'TH'
-                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&fm=webp&q=80'
+                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=720&fm=webp&q=75'
                 : researchVisual.image
             }
+            srcSet={
+              researchCountry === 'TH'
+                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=480&fm=webp&q=75 480w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=720&fm=webp&q=75 720w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&fm=webp&q=75 1000w'
+                : undefined
+            }
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 584px"
             alt={getCountryName(researchCountry, language)}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
+            decoding="async"
+            width={584}
+            height={411}
           />
           {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#0284C7]/85 via-[#0EA5E9]/60 to-[#0D9488]/80" />
@@ -568,7 +583,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[24px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
         >
           <div className="space-y-1.5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#0D9488] text-white">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
               <Laptop className="w-3.5 h-3.5" />
               {l('Uzaktan Çalışma & Hızlı Wi-Fi', 'Remote Work & Fast Wi-Fi')}
             </span>

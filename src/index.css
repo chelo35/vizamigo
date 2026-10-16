@@ -935,9 +935,13 @@ body,
 @keyframes vz-route { to { stroke-dashoffset: -48; } }
 @keyframes vz-pulse { 50% { opacity: .4; } }
 @keyframes vz-ring-grow { from { stroke-dashoffset: var(--vz-ring-from, 264); } }
-.vz-route { animation: vz-route 3s linear infinite; }
-.vz-dot { animation: vz-pulse 2s ease-in-out infinite; }
-.vz-ring { animation: vz-ring-grow 1.4s ease-out; }
+.vz-route {
+  animation: vz-route 3s linear infinite;
+  will-change: stroke-dashoffset;
+  transform: translateZ(0);
+}
+.vz-dot { animation: vz-pulse 2s ease-in-out infinite; will-change: opacity; }
+.vz-ring { animation: vz-ring-grow 1.4s ease-out; will-change: stroke-dashoffset; }
 
 /* Turn off non-composited stroke animations on mobile and reduced motion */
 @media (max-width: 768px), (prefers-reduced-motion: reduce) {
