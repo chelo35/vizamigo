@@ -33,6 +33,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getCountryItinerary } from '../data/countryItineraries';
 import { getCrossRate } from '../data/currencyRates';
 import { GEO_DATA } from '../data/geoData';
+import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { TabKey } from '../components/Navigation';
 import {
   playNaturalSpeech,
@@ -857,15 +858,16 @@ export async function processAssistantQuery(
     };
     actions.push(consularAction);
 
+    const consular = getConsularEmergencyInfo(ctx.passportCode || 'TR', activeLang);
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text: isTr
         ? `🚨 **Yurt Dışında Pasaport Kaybı & Acil Durum Adımları:**\n\n` +
-          `1. **Yerel Polis Tutanağı:** En yakın yerel polis karakoluna giderek derhal kayıp/çalıntı tutanağı (Police Report) tutturun.\n` +
-          `2. **24/7 Nöbetçi Konsolosluk Hattı:** T.C. Dışişleri Bakanlığı Konsolosluk Çağrı Merkezi'ni arayın: **+90 312 292 29 29**\n` +
-          `3. **Geçici Pasaport (Laissez-Passer):** 2 adet biyometrik fotoğraf ve kimlik kartınızla en yakın başkonsolosluğumuza başvurup Türkiye'ye dönüş belgenizi temin edin.`
-        : `🚨 **Lost Passport & Consular Emergency:**\n\n1. Obtain an official police report immediately.\n2. Call your country's emergency consular hotline.\n3. Apply for an emergency travel document (Laissez-Passer) at the nearest embassy.`,
+          `1. **Yerel Polis Tutanağı:** En yakın yerel polis karakoluna giderek derhal resmi kayıp/çalıntı tutanağı (Police Report) tutturun.\n` +
+          `2. **24/7 Nöbetçi Konsolosluk Hattı:** ${consular.ministryName.tr} ${consular.crisisCenterTitle.tr}: **${consular.hotline247}**\n` +
+          `3. **Geçici Seyahat Belgesi:** 2 adet biyometrik fotoğraf ve kimliğinizle en yakın ${consular.countryName.tr} temsilciliğine başvurup ülkenize dönüş belgenizi (${consular.emergencyDocName.tr}) temin edin.`
+        : `🚨 **Lost Passport & Consular Emergency:**\n\n1. Obtain an official Police Report from the nearest local police station.\n2. **24/7 Hotline (${consular.ministryName.en}):** **${consular.hotline247}**\n3. Apply for an Emergency Travel Document (${consular.emergencyDocName.en}) at your nearest embassy.`,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -1205,15 +1207,19 @@ export async function processAssistantQuery(
         id: `msg-${Date.now()}`,
         sender: 'assistant',
         detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `🛡️ **${flag} ${cName} Güvenlik & Acil Durum Bilgileri:**\n\n` +
-            `• **Güvenlik Derecesi:** **${insights?.safety?.safetyLevel || 'Güvenli'}** (${safetyScore}/100)\n` +
-            `• **Polis İmdat:** **${em.police}** | **Ambulans:** **${em.ambulance}** | **Genel Acil:** **${em.general}**\n` +
-            `• **Genel Durum:** ${insights?.safety?.crimeRateSummary || 'Temel seyahat kurallarına dikkat ediniz.'}\n\n` +
-            `🚨 *T.C. Dışişleri Bakanlığı 24/7 Konsolosluk Çağrı Merkezi:* **+90 312 292 29 29**`
-          : `🛡️ **${flag} ${cName} Safety & Emergency Numbers:**\n\n` +
-            `• **Safety Score:** ${safetyScore}/100 (${insights?.safety?.safetyLevel || 'Safe'})\n` +
-            `• **Police:** ${em.police} | **Ambulance:** ${em.ambulance} | **Emergency:** ${em.general}`,
+        text: (() => {
+          const consular = getConsularEmergencyInfo(ctx.passportCode || 'TR', activeLang);
+          return isTr
+            ? `🛡️ **${flag} ${cName} Güvenlik & Acil Durum Bilgileri:**\n\n` +
+              `• **Güvenlik Derecesi:** **${insights?.safety?.safetyLevel || 'Güvenli'}** (${safetyScore}/100)\n` +
+              `• **Polis İmdat:** **${em.police}** | **Ambulans:** **${em.ambulance}** | **Genel Acil:** **${em.general}**\n` +
+              `• **Genel Durum:** ${insights?.safety?.crimeRateSummary || 'Temel seyahat kurallarına dikkat ediniz.'}\n\n` +
+              `🚨 *${consular.ministryName.tr} 24/7 Konsolosluk Hattı:* **${consular.hotline247}**`
+            : `🛡️ **${flag} ${cName} Safety & Emergency Numbers:**\n\n` +
+              `• **Safety Score:** ${safetyScore}/100 (${insights?.safety?.safetyLevel || 'Safe'})\n` +
+              `• **Police:** ${em.police} | **Ambulance:** ${em.ambulance} | **Emergency:** ${em.general}\n\n` +
+              `🚨 *${consular.ministryName.en} 24/7 Emergency Consular Hotline:* **${consular.hotline247}**`;
+        })(),
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,

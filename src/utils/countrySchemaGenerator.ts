@@ -254,17 +254,49 @@ export function generateCountryJsonLd({
           {
             '@type': 'Question',
             name: language === 'tr'
-              ? `${countryName} Para Birimi ve Güncel Döviz Kurları (USD/EUR/TRY) Nedir?`
+              ? `${countryName} Para Birimi ve Güncel Döviz Kurları (USD/EUR/GBP) Nedir?`
               : language === 'de'
-              ? `Welche Währung und Wechselkurse (USD/EUR/TRY) gelten in ${countryName}?`
+              ? `Welche Währung und Wechselkurse (USD/EUR/GBP) gelten in ${countryName}?`
               : language === 'es'
-              ? `¿Cuál es la moneda y el tipo de cambio (USD/EUR/TRY) en ${countryName}?`
+              ? `¿Cuál es la moneda y el tipo de cambio (USD/EUR/GBP) en ${countryName}?`
               : language === 'ru'
-              ? `Какая валюта и курсы обмена (USD/EUR/TRY) в ${countryName}?`
-              : `What is the currency and exchange rate (USD/EUR/TRY) in ${countryName}?`,
+              ? `Какая валюта и курсы обмена (USD/EUR/GBP) в ${countryName}?`
+              : `What is the currency and exchange rate (USD/EUR/GBP) in ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `${countryName} (${geography.currencyName}, ${destCurrency} ${geography.currencySymbol}): 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 TRY = ${rate1Try} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
+              text: `${countryName} (${geography.currencyName}, ${destCurrency} ${geography.currencySymbol}): 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
+            }
+          },
+          {
+            '@type': 'Question',
+            name: language === 'tr'
+              ? `${countryName} Priz Tipi, Voltaj ve Elektrik Standartları Nelerdir?`
+              : language === 'de'
+              ? `Welche Steckertypen und Netzspannung werden in ${countryName} verwendet?`
+              : language === 'es'
+              ? `¿Qué tipo de enchufe y voltaje se utiliza en ${countryName}?`
+              : language === 'ru'
+              ? `Какие типы розеток и напряжение электросети в ${countryName}?`
+              : `What plug type and electrical voltage are used in ${countryName}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `${countryName} elektrik standartları: ${geography.plugTypes}. Seyahat adaptörü gereksinimlerinizi seyahat öncesinde kontrol ediniz.`
+            }
+          },
+          {
+            '@type': 'Question',
+            name: language === 'tr'
+              ? `${countryName} Seyahati İçin Pasaport Geçerlilik Süresi Ne Kadar Olmalıdır?`
+              : language === 'de'
+              ? `Wie lange muss der Reisepass für die Einreise nach ${countryName} noch gültig sein?`
+              : language === 'es'
+              ? `¿Cuánta validez de pasaporte se requiere para viajar a ${countryName}?`
+              : language === 'ru'
+              ? `Какой срок действия паспорта требуется для поездки в ${countryName}?`
+              : `How long must a passport be valid to enter ${countryName}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `${countryName} giriş kuralları uyarınca seyahat başlangıç tarihinden itibaren en az 6 ay geçerli pasaport ve en az 2 boş vize sayfası önerilir.`
             }
           },
           {

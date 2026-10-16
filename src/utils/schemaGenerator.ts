@@ -274,7 +274,7 @@ export function getCountrySectionHeadings(
     case 'de':
       return {
         h1,
-        currencyH2: `${countryName} Währung und Aktuelle Wechselkurse (USD/EUR/TRY)`,
+        currencyH2: `${countryName} Währung und Aktuelle Wechselkurse (USD/EUR/GBP)`,
         clockWeatherH2: `${countryName} Ortszeit, Zeitzone und Aktuelles Wetter`,
         internetEsimH2: `${countryName} Internetgeschwindigkeit, eSIM & Mobilfunk`,
         transportTaxiH2: `${countryName} Transport, Flughafentransfer & Taxi-Apps`,
@@ -288,7 +288,7 @@ export function getCountrySectionHeadings(
     case 'es':
       return {
         h1,
-        currencyH2: `Moneda de ${countryName} y Tipos de Cambio Actuales (USD/EUR/TRY)`,
+        currencyH2: `Moneda de ${countryName} y Tipos de Cambio Actuales (USD/EUR/GBP)`,
         clockWeatherH2: `Hora Local, Zona Horaria y Clima en ${countryName}`,
         internetEsimH2: `Velocidad de Internet, eSIM y Datos Móviles en ${countryName}`,
         transportTaxiH2: `Transporte, Traslado al Aeropuerto y Apps de Taxi en ${countryName}`,
@@ -302,7 +302,7 @@ export function getCountrySectionHeadings(
     case 'ru':
       return {
         h1,
-        currencyH2: `Валюта ${countryName} и актуальные курсы обмена (USD/EUR/TRY)`,
+        currencyH2: `Валюта ${countryName} и актуальные курсы обмена (USD/EUR/GBP)`,
         clockWeatherH2: `Местное время, часовой пояс и погода в ${countryName}`,
         internetEsimH2: `Скорость интернета, eSIM и мобильная связь в ${countryName}`,
         transportTaxiH2: `Транспорт, трансфер из аэропорта и такси в ${countryName}`,
@@ -316,7 +316,7 @@ export function getCountrySectionHeadings(
     default:
       return {
         h1,
-        currencyH2: `${countryName} Currency & Live Exchange Rates (USD/EUR/TRY)`,
+        currencyH2: `${countryName} Currency & Live Exchange Rates (USD/EUR/GBP)`,
         clockWeatherH2: `${countryName} Local Time, Timezone & Weather Guide`,
         internetEsimH2: `${countryName} Internet Speed, eSIM & Mobile Connectivity`,
         transportTaxiH2: `${countryName} Airport Transit, Ride-Hailing & Taxi Apps`,

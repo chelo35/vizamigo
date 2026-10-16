@@ -408,7 +408,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
   // Plug & Hardware Information
   const plugInfo = geography?.plugTypes || insights.plugType || 'C, F (230V, 50Hz)';
   const plugTypesList = plugInfo.split('(')[0].split(',').map((p) => p.trim()).filter(Boolean);
-  const isTrCompatible = plugTypesList.some((p) => p === 'C' || p === 'F');
+  const homeGeo = getCountryGeography(currentPassport || 'TR', language);
+  const homePlugs = (homeGeo?.plugTypes || 'C, F').split('(')[0].split(',').map((p) => p.trim()).filter(Boolean);
+  const isPlugCompatible = plugTypesList.some((p) => homePlugs.includes(p));
+  const homeCountryName = getCountryName(currentPassport || 'TR', language);
   const voltageMatch = plugInfo.match(/(\d{3}V)/i);
   const detectedVoltage = voltageMatch ? voltageMatch[1] : (plugInfo.includes('230V') ? '230V' : plugInfo.includes('220V') ? '220V' : plugInfo.includes('120V') ? '120V' : '230V');
   const freqMatch = plugInfo.match(/(\d{2}Hz)/i);
@@ -840,7 +843,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 🔌 Tip {plugTypesList.slice(0, 2).join(', ')} ({detectedVoltage})
               </div>
               <div className="text-xs text-slate-700 dark:text-slate-300 font-semibold mt-2 truncate">
-                {isTrCompatible ? '✓ Türkiye fişiyle doğrudan uyumlu' : '⚠️ Evrensel seyahat adaptörü gerekli'}
+                {isPlugCompatible
+                  ? `✓ ${homeCountryName} ${l('fişiyle uyumlu', 'plug compatible', 'Stecker kompatibel', 'compatible', 'совместимо')}`
+                  : l('⚠️ Adaptör gerekli', '⚠️ Adapter required', '⚠️ Adapter nötig', '⚠️ Requiere adaptador', '⚠️ Нужен адаптер')}
               </div>
             </button>
           </div>
@@ -1678,15 +1683,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                       {/* Home Socket Compatibility Check */}
                       <div className="pt-1">
-                        {isTrCompatible ? (
+                        {isPlugCompatible ? (
                           <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs sm:text-sm font-semibold text-emerald-700 dark:text-emerald-300 flex items-start gap-1.5">
                             <span className="mt-0.5">✓</span>
-                            <span>{l('Türkiye fişleriyle (Tip C & F) doğrudan uyumludur. Yanınızda adaptör taşımanız GEREKMEZ.', 'Directly compatible with European/Turkish Type C & F plugs. No adapter required.', 'Kompatibel mit Typ C & F. Kein Adapter nötig.')}</span>
+                            <span>{l(
+                              `${homeCountryName} fişlerinizle (Tip ${homePlugs.join(' & ')}) doğrudan uyumludur. Yanınızda adaptör taşımanız gerekmez.`,
+                              `Directly compatible with ${getCountryName(currentPassport || 'TR', 'en')} Type ${homePlugs.join(' & ')} plugs. No adapter required.`,
+                              `Direkt kompatibel mit Steckern aus ${getCountryName(currentPassport || 'TR', 'de')} (Typ ${homePlugs.join(' & ')}). Kein Adapter erforderlich.`,
+                              `Directamente compatible con enchufes de ${getCountryName(currentPassport || 'TR', 'es')} (Tipo ${homePlugs.join(' & ')}). No necesita adaptador.`,
+                              `Полностью совместимо со штекерами ${getCountryName(currentPassport || 'TR', 'ru')} (Тип ${homePlugs.join(' & ')}). Адаптер не требуется.`
+                            )}</span>
                           </div>
                         ) : (
                           <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs sm:text-sm font-semibold text-amber-700 dark:text-amber-300 flex items-start gap-1.5">
                             <span className="mt-0.5">⚠️</span>
-                            <span>{l('Dikkat: Farklı priz tipi kullanılmaktadır. Yanınızda evrensel seyahat adaptörü bulundurun.', 'Adapter required: Please pack a universal plug adapter.', 'Reiseadapter erforderlich: Steckertypen weichen ab.')}</span>
+                            <span>{l(
+                              `Dikkat: ${homeCountryName} priz standardınızdan (${homePlugs.join(', ')}) farklıdır. Yanınızda evrensel seyahat adaptörü bulundurun.`,
+                              `Adapter required: Socket types differ from your home standard (${homePlugs.join(', ')}). Please pack a universal plug adapter.`,
+                              `Reiseadapter erforderlich: Steckertypen weichen von Ihrem Heimatstandard (${homePlugs.join(', ')}) ab.`,
+                              `Adaptador necesario: Los enchufes difieren de su estándar de origen (${homePlugs.join(', ')}). Lleve un adaptador universal.`,
+                              `Внимание: Розетки отличаются от стандартов вашей страны (${homePlugs.join(', ')}). Возьмите универсальный адаптер.`
+                            )}</span>
                           </div>
                         )}
                       </div>

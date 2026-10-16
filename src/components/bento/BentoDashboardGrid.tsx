@@ -138,12 +138,16 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   }, [passportItems]);
 
   // Synergy stats between currentPassport and secondaryPassport
-  const effectiveSecondPassport =
-    secondaryPassport && secondaryPassport !== currentPassport
-      ? secondaryPassport
-      : currentPassport === 'TR'
-      ? 'DE'
-      : 'TR';
+  const effectiveSecondPassport = useMemo(() => {
+    if (secondaryPassport && secondaryPassport !== currentPassport) return secondaryPassport;
+    if (currentPassport === 'TR') return 'DE';
+    if (currentPassport === 'DE') return 'US';
+    if (currentPassport === 'US') return 'GB';
+    if (currentPassport === 'JP') return 'SG';
+    if (currentPassport === 'GB') return 'DE';
+    if (currentPassport === 'FR') return 'US';
+    return currentPassport === 'DE' ? 'US' : 'DE';
+  }, [currentPassport, secondaryPassport]);
 
   const synergyStats = useMemo(() => {
     try {
@@ -158,9 +162,45 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
     }
   }, [currentPassport, effectiveSecondPassport]);
 
-  // Live currency rates
-  const usdTry = useMemo(() => getCrossRate('USD', 'TRY').toFixed(2), []);
-  const eurTry = useMemo(() => getCrossRate('EUR', 'TRY').toFixed(2), []);
+  // Live currency rates based on traveler's active passport
+  const travelerGeo = useMemo(() => getCountryGeography(currentPassport, language), [currentPassport, language]);
+  const travelerCurr = travelerGeo?.currencyCode || 'USD';
+  const travelerSymbol = travelerGeo?.currencySymbol || travelerCurr;
+
+  const currencyDisplay = useMemo(() => {
+    if (travelerCurr === 'USD') {
+      const eurUsd = getCrossRate('EUR', 'USD').toFixed(2);
+      const gbpUsd = getCrossRate('GBP', 'USD').toFixed(2);
+      return {
+        line1: `€1 = $${eurUsd}`,
+        line2: `£1 = $${gbpUsd}`,
+        card1: { flag: '🇪🇺', code: 'EUR', name: 'Euro', value: `$${eurUsd}` },
+        card2: { flag: '🇬🇧', code: 'GBP', name: l('İngiliz Sterlini', 'British Pound'), value: `$${gbpUsd}` },
+        card3: { flag: '🇯🇵', code: 'JPY', name: l('Japon Yeni', 'Japanese Yen'), value: `$${(1 / getCrossRate('USD', 'JPY')).toFixed(4)}` }
+      };
+    }
+    if (travelerCurr === 'EUR') {
+      const usdEur = getCrossRate('USD', 'EUR').toFixed(2);
+      const gbpEur = getCrossRate('GBP', 'EUR').toFixed(2);
+      return {
+        line1: `$1 = €${usdEur}`,
+        line2: `£1 = €${gbpEur}`,
+        card1: { flag: '🇺🇸', code: 'USD', name: l('Amerikan Doları', 'US Dollar'), value: `€${usdEur}` },
+        card2: { flag: '🇬🇧', code: 'GBP', name: l('İngiliz Sterlini', 'British Pound'), value: `€${gbpEur}` },
+        card3: { flag: '🇨🇭', code: 'CHF', name: l('İsviçre Frangı', 'Swiss Franc'), value: `€${getCrossRate('CHF', 'EUR').toFixed(2)}` }
+      };
+    }
+    const usdRate = getCrossRate('USD', travelerCurr).toFixed(2);
+    const eurRate = getCrossRate('EUR', travelerCurr).toFixed(2);
+    const gbpRate = getCrossRate('GBP', travelerCurr).toFixed(2);
+    return {
+      line1: `$1 = ${usdRate}${travelerSymbol}`,
+      line2: `€1 = ${eurRate}${travelerSymbol}`,
+      card1: { flag: '🇺🇸', code: 'USD', name: l('Amerikan Doları', 'US Dollar'), value: `${travelerSymbol}${usdRate}` },
+      card2: { flag: '🇪🇺', code: 'EUR', name: 'Euro', value: `${travelerSymbol}${eurRate}` },
+      card3: { flag: '🇬🇧', code: 'GBP', name: l('İngiliz Sterlini', 'British Pound'), value: `${travelerSymbol}${gbpRate}` }
+    };
+  }, [travelerCurr, travelerSymbol, language]);
 
   // Selected research country details & visual
   const researchCountryItem = useMemo(
@@ -477,10 +517,10 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           </div>
 
           <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight">
-              <span>$1 = {usdTry}₺</span>
+            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight tabular-nums">
+              <span>{currencyDisplay.line1}</span>
               <span className="opacity-30">·</span>
-              <span>€1 = {eurTry}₺</span>
+              <span>{currencyDisplay.line2}</span>
             </div>
           </div>
         </div>
@@ -619,7 +659,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
               {l('SOS 112 / 911 · 7/24 Kriz Masası', 'SOS 112 / 911 · 24/7 Consular Desk')}
             </span>
             <h3 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white">
-              {l('Acil Yardım & T.C. Konsolosluklar', 'Emergency SOS & Embassies')}
+              {l(`Acil Yardım & ${getCountryName(currentPassport, language)} Temsilcilikleri`, `Emergency SOS & ${getCountryName(currentPassport, 'en')} Embassies`)}
             </h3>
             <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200">
               {l('Kayıp Pasaport, Geçici Belge & Büyükelçilik Numaraları', 'Lost Passport, Emergency Travel Doc & Embassies')}
@@ -1138,18 +1178,16 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                 <div className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div className="p-5 rounded-2xl bg-[#CCFBF1] text-[#042F2E] border border-[#5EEAD4]">
-                      <div className="text-sm font-extrabold">🇺🇸 1 USD (Amerikan Doları)</div>
-                      <div className="text-3xl font-black font-mono mt-1">₺{usdTry}</div>
+                      <div className="text-sm font-extrabold">{currencyDisplay.card1.flag} 1 {currencyDisplay.card1.code} ({currencyDisplay.card1.name})</div>
+                      <div className="text-3xl font-black font-mono mt-1 tabular-nums">{currencyDisplay.card1.value}</div>
                     </div>
                     <div className="p-5 rounded-2xl bg-[#CCFBF1] text-[#042F2E] border border-[#5EEAD4]">
-                      <div className="text-sm font-extrabold">🇪🇺 1 EUR (Euro)</div>
-                      <div className="text-3xl font-black font-mono mt-1">₺{eurTry}</div>
+                      <div className="text-sm font-extrabold">{currencyDisplay.card2.flag} 1 {currencyDisplay.card2.code} ({currencyDisplay.card2.name})</div>
+                      <div className="text-3xl font-black font-mono mt-1 tabular-nums">{currencyDisplay.card2.value}</div>
                     </div>
                     <div className="p-5 rounded-2xl bg-[#CCFBF1] text-[#042F2E] border border-[#5EEAD4]">
-                      <div className="text-sm font-extrabold">🇬🇧 1 GBP (İngiliz Sterlini)</div>
-                      <div className="text-3xl font-black font-mono mt-1">
-                        ₺{getCrossRate('GBP', 'TRY').toFixed(2)}
-                      </div>
+                      <div className="text-sm font-extrabold">{currencyDisplay.card3.flag} 1 {currencyDisplay.card3.code} ({currencyDisplay.card3.name})</div>
+                      <div className="text-3xl font-black font-mono mt-1 tabular-nums">{currencyDisplay.card3.value}</div>
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-3">

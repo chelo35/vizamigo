@@ -4,6 +4,8 @@
  * kendi Dışişleri Bakanlıklarına ve acil seyahat belgesi protokollerine erişimini sağlar.
  */
 
+import { getCountryName } from './passportData';
+
 export interface ConsularEmergencyInfo {
   passportCode: string;
   countryName: { tr: string; en: string; de: string };
@@ -503,14 +505,16 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
   if (found) return found;
 
   // Global standart diplomatik kriz şablonu (199 ülke için)
-  const countryNameTr = code;
+  const countryNameTr = getCountryName(code, 'tr');
+  const countryNameEn = getCountryName(code, 'en');
+  const countryNameDe = getCountryName(code, 'de');
   return {
     passportCode: code,
-    countryName: { tr: countryNameTr, en: countryNameTr, de: countryNameTr },
+    countryName: { tr: countryNameTr, en: countryNameEn, de: countryNameDe },
     ministryName: {
       tr: `${countryNameTr} Dışişleri Bakanlığı`,
-      en: `Ministry of Foreign Affairs of ${countryNameTr}`,
-      de: `Außenministerium von ${countryNameTr}`
+      en: `Ministry of Foreign Affairs of ${countryNameEn}`,
+      de: `Außenministerium von ${countryNameDe}`
     },
     crisisCenterTitle: {
       tr: 'Vatandaş Kriz Masası & Konsolosluk Acil Yardım Hattı',
@@ -519,7 +523,7 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
     },
     hotline247: 'Nöbetçi Konsolosluk & Diplomatik Kriz Masası',
     hotlineDomestic: 'Yetkili Dış Temsilcilik Nöbetçi Hattı',
-    officialPortalUrl: `https://www.google.com/search?q=${encodeURIComponent(`Ministry of Foreign Affairs of ${countryNameTr} consular services`)}`,
+    officialPortalUrl: `https://www.google.com/search?q=${encodeURIComponent(`Ministry of Foreign Affairs of ${countryNameEn} consular services`)}`,
     officialPortalName: `${countryNameTr} Dışişleri Konsolosluk Portalı`,
     emergencyDocName: {
       tr: 'Acil Geçici Seyahat Belgesi (Emergency Certificate / Laissez-Passer)',
@@ -544,8 +548,8 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
       },
       embassySubmission: {
         tr: `Bulunduğunuz ülkedeki ${countryNameTr} Büyükelçiliği veya Konsolosluğuna acil müracaatta bulunun.`,
-        en: `Proceed to the nearest Embassy or Consulate of ${countryNameTr} for emergency assistance.`,
-        de: `Suchen Sie die nächste Botschaft oder das Konsulat von ${countryNameTr} auf.`
+        en: `Proceed to the nearest Embassy or Consulate of ${countryNameEn} for emergency assistance.`,
+        de: `Suchen Sie die nächste Botschaft oder das Konsulat von ${countryNameDe} auf.`
       },
       travelDocIssuance: {
         tr: 'Konsolosluk, kimlik ve uçak bileti teyidinin ardından ülkenize dönüş için Acil Seyahat Belgesi tanzim eder.',
