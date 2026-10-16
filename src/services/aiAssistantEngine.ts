@@ -9,7 +9,6 @@ import { getPassportItems } from '../utils/calculator';
 import { getCountryGeography } from '../data/countryGeography';
 import { getCountryInsights } from '../data/countryInsights';
 import { getCountryItinerary } from '../data/countryItineraries';
-import { getCountryConciergePlan, ConciergePartnerNode } from '../data/travelConciergeEngine';
 import { getCrossRate } from '../data/currencyRates';
 import { TabKey } from '../components/Navigation';
 
@@ -31,6 +30,7 @@ export interface AssistantMessage {
   id: string;
   sender: 'user' | 'assistant';
   text: string;
+  spokenText?: string; // Concise, natural conversational summary for SpeechSynthesis
   timestamp: Date;
   actions?: AssistantActionPill[];
   detectedCountry?: {
@@ -45,17 +45,17 @@ export interface AssistantMessage {
 // ============================================================================
 const COUNTRY_NAME_SYNONYMS: Record<string, string> = {
   // Southeast Asia
-  'tayland': 'TH', 'thailand': 'TH', 'bangkok': 'TH', 'phuket': 'TH', 'chiang mai': 'TH', 'pattaya': 'TH',
+  'tayland': 'TH', 'thailand': 'TH', 'bangkok': 'TH', 'phuket': 'TH', 'chiang mai': 'TH', 'pattaya': 'TH', 'krabi': 'TH',
   'vietnam': 'VN', 'hanoi': 'VN', 'ho chi minh': 'VN', 'da nang': 'VN',
   'endonezya': 'ID', 'indonesia': 'ID', 'bali': 'ID', 'cakarta': 'ID', 'jakarta': 'ID', 'ubud': 'ID',
-  'malezya': 'MY', 'malaysia': 'MY', 'kuala lumpur': 'MY',
+  'malezya': 'MY', 'malaysia': 'MY', 'kuala lumpur': 'MY', 'penang': 'MY',
   'singapur': 'SG', 'singapore': 'SG',
   'filipinler': 'PH', 'philippines': 'PH', 'manila': 'PH', 'cebu': 'PH',
   'kambocya': 'KH', 'kamboçya': 'KH', 'cambodia': 'KH',
 
   // East Asia
   'japonya': 'JP', 'japan': 'JP', 'tokyo': 'JP', 'kyoto': 'JP', 'osaka': 'JP',
-  'guney kore': 'KR', 'güney kore': 'KR', 'south korea': 'KR', 'korea': 'KR', 'seul': 'KR', 'seoul': 'KR',
+  'guney kore': 'KR', 'güney kore': 'KR', 'south korea': 'KR', 'korea': 'KR', 'kore': 'KR', 'seul': 'KR', 'seoul': 'KR',
   'cin': 'CN', 'çin': 'CN', 'china': 'CN', 'pekin': 'CN', 'beijing': 'CN', 'sanghay': 'CN', 'shanghai': 'CN',
   'tayvan': 'TW', 'taiwan': 'TW', 'taipei': 'TW',
   'hong kong': 'HK',
@@ -88,7 +88,7 @@ const COUNTRY_NAME_SYNONYMS: Record<string, string> = {
   'katar': 'QA', 'qatar': 'QA', 'doha': 'QA',
   'suudi': 'SA', 'suudi arabistan': 'SA', 'saudi': 'SA', 'riyad': 'SA', 'cidde': 'SA',
   'umman': 'OM', 'oman': 'OM', 'maskat': 'OM',
-  'urfa': 'TR', 'turkiye': 'TR', 'türkiye': 'TR', 'turkey': 'TR', 'istanbul': 'TR', 'antalya': 'TR',
+  'turkiye': 'TR', 'türkiye': 'TR', 'turkey': 'TR', 'istanbul': 'TR', 'antalya': 'TR',
 
   // Americas
   'amerika': 'US', 'abd': 'US', 'usa': 'US', 'united states': 'US', 'new york': 'US', 'los angeles': 'US', 'miami': 'US',
@@ -100,11 +100,16 @@ const COUNTRY_NAME_SYNONYMS: Record<string, string> = {
 };
 
 function normalizeText(text: string): string {
+  if (!text) return '';
   return text
+    .replace(/İ/g, 'i')
+    .replace(/I/g, 'i')
+    .replace(/ı/g, 'i')
     .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
     .replace(/[ç]/g, 'c')
     .replace(/[ğ]/g, 'g')
-    .replace(/[ıİ]/g, 'i')
     .replace(/[ö]/g, 'o')
     .replace(/[ş]/g, 's')
     .replace(/[ü]/g, 'u')
@@ -121,7 +126,6 @@ export function extractDestinationCountry(query: string): string | null {
   const sortedKeys = Object.keys(COUNTRY_NAME_SYNONYMS).sort((a, b) => b.length - a.length);
   for (const key of sortedKeys) {
     const keyNorm = normalizeText(key);
-    // Boundary match
     const regex = new RegExp(`\\b${keyNorm}\\b`, 'i');
     if (regex.test(norm)) {
       return COUNTRY_NAME_SYNONYMS[key];
@@ -154,7 +158,6 @@ export async function processAssistantQuery(
   const norm = normalizeText(rawQuery);
   const targetCountry = extractDestinationCountry(rawQuery);
   const isTr = lang === 'tr';
-  const isDe = lang === 'de';
 
   const actions: AssistantActionPill[] = [];
 
@@ -179,6 +182,9 @@ export async function processAssistantQuery(
       text: isTr
         ? 'Seyahat valizinizi iklime, destinasyona ve seyahat sürenize göre eksiksiz hazırlamak için **Akıllı Valiz Kontrol Listesi** aracımızı kullanabilirsiniz.'
         : 'You can use our **Smart Packing List** tool to generate a tailored packing checklist based on climate, destination, and trip duration.',
+      spokenText: isTr
+        ? 'Seyahat valizinizi eksiksiz hazırlamak için Akıllı Valiz Listesi aracımızı ekrana getirdim.'
+        : 'I have opened the Smart Packing List tool to help you pack efficiently.',
       timestamp: new Date(),
       actions
     };
@@ -198,6 +204,9 @@ export async function processAssistantQuery(
       text: isTr
         ? 'Restoran, taksi ve otellerde ülkeye özgü bahşiş kurallarını ve faturaya eklenecek ideal tutarı hesaplamak için **Global Bahşiş Hesaplayıcı** emrinizde.'
         : 'Use our **Global Tipping Calculator** to calculate customary gratuity for dining, rides, and hotels according to local cultural norms.',
+      spokenText: isTr
+        ? 'Ülkeye özgü bahşiş standartlarını hesaplayabilmeniz için Bahşiş Hesaplayıcı hazır.'
+        : 'The Global Tipping Calculator is ready to help you with local gratuity customs.',
       timestamp: new Date(),
       actions
     };
@@ -225,6 +234,9 @@ export async function processAssistantQuery(
       text: isTr
         ? 'İki şehir arasındaki canlı saat farkını görmek, ortak online toplantı saati bulmak veya seyahat planlamak için zaman araçlarımız hazır:'
         : 'Explore live timezone differences between global hubs and coordinate overlapping meeting hours with our dedicated tools:',
+      spokenText: isTr
+        ? 'Şehirler arası saat farkını ve dünya saatlerini inceleyebileceğiniz zaman araçlarımızı ekrana getirdim.'
+        : 'I have opened the live world clock and timezone overlap tools for you.',
       timestamp: new Date(),
       actions
     };
@@ -253,6 +265,9 @@ export async function processAssistantQuery(
       text: isTr
         ? `Güncel canlı seyahat kurlarımız: **1 USD = ${usdRate} TRY** | **1 EUR = ${eurRate} TRY**.\n\nYurt dışı harcamalarınızda yüksek banka döviz komisyonlarından kaçınmak için Wise çok para birimli dijital kartını öneriyoruz.`
         : `Live baseline travel rates: **1 USD = ${usdRate} TRY** | **1 EUR = ${eurRate} TRY**.\n\nWe recommend a multi-currency travel debit card like Wise to avoid high ATM/foreign exchange markups.`,
+      spokenText: isTr
+        ? `Canlı seyahat kurlarımızda 1 Dolar ${usdRate} Lira, 1 Euro ${eurRate} Lira seviyesindedir.`
+        : `Current travel baseline rates are 1 US Dollar at ${usdRate} Turkish Lira, and 1 Euro at ${eurRate} Lira.`,
       timestamp: new Date(),
       actions
     };
@@ -269,7 +284,6 @@ export async function processAssistantQuery(
     const geo = getCountryGeography(targetCountry, lang);
     const insights = getCountryInsights(targetCountry, lang);
     const itinerary = getCountryItinerary(targetCountry, lang);
-    const concierge = getCountryConciergePlan(targetCountry, currentPassport);
     const practical = getPracticalInfo(targetCountry, lang);
     const originName = getCountryName(currentPassport, lang);
 
@@ -285,10 +299,10 @@ export async function processAssistantQuery(
     // Sub-intent: ITINERARY / ROUTE
     if (
       norm.includes('rota') ||
+      norm.includes('roto') ||
       norm.includes('gezi') ||
       norm.includes('itinerary') ||
       norm.includes('kac gun') ||
-      norm.includes('kaç gün') ||
       norm.includes('plan') ||
       norm.includes('durak') ||
       norm.includes('route')
@@ -332,7 +346,7 @@ export async function processAssistantQuery(
         accentTone: 'teal'
       });
 
-      const stopsSummary = itinerary.stops.slice(0, 3).map((s, idx) => `${idx + 1}. **${s.name}** (${s.durationBadge})`).join('\n');
+      const stopsSummary = (itinerary?.stops || []).slice(0, 3).map((s, idx) => `${idx + 1}. **${s.name}** (${s.durationBadge})`).join('\n');
 
       return {
         id: `msg-${Date.now()}`,
@@ -341,13 +355,24 @@ export async function processAssistantQuery(
         text: isTr
           ? `🗺️ **${flag} ${cName} İçin Önerilen Rota (${itinerary.idealDurationText}):**\n\n${itinerary.routeSummary}\n\n**Öne Çıkan Duraklar:**\n${stopsSummary}\n\n*İdeal Gezi Dönemi:* ${itinerary.bestSeason}\n*Ulaşım Şekli:* ${itinerary.transportMode}`
           : `🗺️ **${flag} Recommended ${cName} Itinerary (${itinerary.idealDurationText}):**\n\n${itinerary.routeSummary}\n\n**Key Stops:**\n${stopsSummary}\n\n*Best Months:* ${itinerary.bestSeason}\n*Transit Mode:* ${itinerary.transportMode}`,
+        spokenText: isTr
+          ? `${cName} için ${itinerary.idealDurationText} rota planınızı hazırladım. Durakları ve ulaşım seçeneklerini ekrandan inceleyebilirsiniz.`
+          : `I have prepared your ${itinerary.idealDurationText} itinerary for ${cName}. You can view the stops on your screen.`,
         timestamp: new Date(),
         actions
       };
     }
 
     // Sub-intent: PLUG / VOLTAGE / PRACTICAL
-    if (norm.includes('priz') || norm.includes('fis') || norm.includes('fiş') || norm.includes('voltaj') || norm.includes('plug') || norm.includes('stecker') || norm.includes('elektrik')) {
+    if (
+      norm.includes('priz') ||
+      norm.includes('fis') ||
+      norm.includes('fiş') ||
+      norm.includes('voltaj') ||
+      norm.includes('plug') ||
+      norm.includes('stecker') ||
+      norm.includes('elektrik')
+    ) {
       actions.push({
         id: `tool-packing`,
         type: 'open_tool',
@@ -356,13 +381,18 @@ export async function processAssistantQuery(
         accentTone: 'teal'
       });
 
+      const plugText = typeof geo.plugTypes === 'string' ? geo.plugTypes : 'Standart priz';
+
       return {
         id: `msg-${Date.now()}`,
         sender: 'assistant',
         detectedCountry: { code: targetCountry, name: cName, flag },
         text: isTr
-          ? `🔌 **${flag} ${cName} Elektrik & Priz Standartları:**\n\n- **Priz Tipleri:** ${geo.plugTypes.join(', ')}\n- **Voltaj & Frekans:** ${geo.voltage} / ${geo.frequency}\n- **Pratik Bilgi:** ${practical.plugType}\n\nTürkiye standart C/F tipi fişleriniz bazı ülkelerde doğrudan uymayabilir; üniversal priz adaptörü bulundurmanız önerilir.`
-          : `🔌 **${flag} ${cName} Electrical & Plug Standards:**\n\n- **Plug Types:** ${geo.plugTypes.join(', ')}\n- **Voltage & Frequency:** ${geo.voltage} / ${geo.frequency}\n- **Practical Guidance:** ${practical.plugType}`,
+          ? `🔌 **${flag} ${cName} Elektrik & Priz Standartları:**\n\n- **Priz Tipleri:** ${plugText}\n- **Pratik Bilgi:** ${practical.plugType}\n\nTürkiye standart C/F tipi fişleriniz bazı ülkelerde doğrudan uymayabilir; seyahatinizden önce üniversal bir priz adaptörü edinmeniz tavsiye edilir.`
+          : `🔌 **${flag} ${cName} Electrical & Plug Standards:**\n\n- **Plug Types:** ${plugText}\n- **Practical Guidance:** ${practical.plugType}`,
+        spokenText: isTr
+          ? `${cName} priz standartları: ${plugText}. Detayları ekranda görebilirsiniz.`
+          : `${cName} uses ${plugText}. You can review full plug specifications on screen.`,
         timestamp: new Date(),
         actions
       };
@@ -386,16 +416,19 @@ export async function processAssistantQuery(
         text: isTr
           ? `📱 **${flag} ${cName} İnternet & eSIM Önerisi:**\n\n${practical.esimTip}\n\nYurt dışı operatör dolaşım (roaming) ücretlerinden kaçınmak için Airalo yerel veya bölgesel eSIM paketini uçağa binmeden önce kurabilirsiniz.`
           : `📱 **${flag} ${cName} Mobile Internet & eSIM:**\n\n${practical.esimTip}\n\nAvoid expensive home-carrier roaming fees by setting up an Airalo digital eSIM before arrival.`,
+        spokenText: isTr
+          ? `${cName} için en ekonomik çözüm Airalo dijital e sim paketidir. İndirimli bağlantıyı ekrana bıraktım.`
+          : `For ${cName}, we recommend setting up an Airalo digital eSIM package. Link is available below.`,
         timestamp: new Date(),
         actions
       };
     }
 
-    // Default targetCountry intent: VISA & ESSENTIAL TRAVEL BRIEF
+    // Default targetCountry intent (VISA & ESSENTIAL TRAVEL BRIEF)
+    // Also handles speech recognition slips like "Tayland füzesi" -> "vizesi"
     const badgeLabel = getCategoryBadgeLabel(item, lang);
     const stayLimitText = item?.v === 'vf' ? (isTr ? 'Süresiz' : 'Indefinite') : /^\d+$/.test(item?.v || '') ? `${item?.v} ${isTr ? 'Gün' : 'Days'}` : '';
 
-    // Add relevant affiliate links
     actions.push({
       id: `aff-airalo`,
       type: 'affiliate',
@@ -423,6 +456,10 @@ export async function processAssistantQuery(
       accentTone: 'slate'
     });
 
+    const safetyScore = insights?.safety?.safetyScore || 80;
+    const safetyLevel = insights?.safety?.safetyLevel || 'Güvenli';
+    const plugText = typeof geo.plugTypes === 'string' ? geo.plugTypes : 'C, F';
+
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
@@ -431,19 +468,22 @@ export async function processAssistantQuery(
         ? `🌍 **${flag} ${cName} Vize & Seyahat Durumu (${originName} Pasaportu İle):**\n\n` +
           `• **Vize Durumu:** **${badgeLabel}** ${stayLimitText ? `(${stayLimitText})` : ''}\n` +
           `• **Başkent:** ${geo.capital}\n` +
-          `• **Para Birimi:** ${geo.currency} (${geo.currencyCode})\n` +
-          `• **Priz Tipi:** ${geo.plugTypes.join(', ')} (${geo.voltage})\n` +
-          `• **Güvenlik İndeksi:** ${insights.safetyRating.ratingText} (${insights.safetyRating.score}/100)\n` +
+          `• **Para Birimi:** ${geo.currencyName} (${geo.currencyCode})\n` +
+          `• **Priz Tipi:** ${plugText}\n` +
+          `• **Güvenlik İndeksi:** ${safetyLevel} (${safetyScore}/100)\n` +
           `• **İdeal Seyahat Zamanı:** ${practical.bestMonths}\n\n` +
-          `Aşağıdaki butonları kullanarak ülkenin 360° detaylı rehberini açabilir veya seyahat ihtiyaçlarınızı doğrudan temin edebilirsiniz:`
+          `Aşağıdaki butonları kullanarak ülkenin 360° detaylı rehberini açabilir veya seyahat ihtiyaçlarınızı temin edebilirsiniz:`
         : `🌍 **${flag} ${cName} Visa & Travel Brief (for ${originName} Passport):**\n\n` +
           `• **Visa Status:** **${badgeLabel}** ${stayLimitText ? `(${stayLimitText})` : ''}\n` +
           `• **Capital:** ${geo.capital}\n` +
-          `• **Currency:** ${geo.currency} (${geo.currencyCode})\n` +
-          `• **Power Plugs:** ${geo.plugTypes.join(', ')} (${geo.voltage})\n` +
-          `• **Safety Score:** ${insights.safetyRating.score}/100 (${insights.safetyRating.ratingText})\n` +
+          `• **Currency:** ${geo.currencyName} (${geo.currencyCode})\n` +
+          `• **Power Plugs:** ${plugText}\n` +
+          `• **Safety Score:** ${safetyScore}/100 (${safetyLevel})\n` +
           `• **Best Season:** ${practical.bestMonths}\n\n` +
           `Explore the buttons below to open the complete 360° dossier or book essential travel services:`,
+      spokenText: isTr
+        ? `${originName} pasaportu ile ${cName} için vize durumu: ${badgeLabel} ${stayLimitText ? `, ${stayLimitText} kalış süresi` : ''}. Tüm seyahat detaylarını ekranda hazırladım.`
+        : `For ${originName} passport holders, ${cName} visa status is ${badgeLabel} ${stayLimitText ? `with up to ${stayLimitText}` : ''}. Full details are displayed on screen.`,
       timestamp: new Date(),
       actions
     };
@@ -478,15 +518,18 @@ export async function processAssistantQuery(
     id: `msg-${Date.now()}`,
     sender: 'assistant',
     text: isTr
-      ? `Merhaba! Ben **Vizamigo AI Seyahat Danışmanınız**. ✈️\n\nSitedeki tüm **199 ülke vize şartlarına**, gün gün gezi rotalarına, priz/elektrik standartlarına, canlı döviz kurlarına ve taksi/eSIM uygulamalarına tam hakimim.\n\nBana mikrofondan konuşarak veya yazarak şu konularda soru sorabilirsiniz:\n- *"Tayland vizesi nasıl?"*\n- *"7 günlük İtalya rotası hazırla"*\n- *"Japonya priz tipi nedir?"*\n- *"En ucuz yurt dışı internetini nereden alırım?"*`
+      ? `Merhaba! Ben **Vizamigo AI Seyahat Danışmanınız**. ✈️\n\nSitedeki tüm **199 ülke vize şartlarına**, gün gün gezi rotalarına, priz/elektrik standartlarına, canlı döviz kurlarına ve seyahat uygulamalarına tam hakimim.\n\nBana mikrofondan konuşarak veya yazarak şu konularda soru sorabilirsiniz:\n- *"Tayland vizesi nasıl?"*\n- *"7 günlük İtalya rotası hazırla"*\n- *"Japonya priz tipi nedir?"*\n- *"En ucuz yurt dışı internetini nereden alırım?"*`
       : `Hello! I am your **Vizamigo AI Travel Concierge**. ✈️\n\nI have complete access to **199 country visa requirements**, curated multi-day itineraries, power plug types, live exchange rates, and local transit tools.\n\nYou can speak or type to ask me:\n- *"Do I need a visa for Thailand?"*\n- *"Plan a 7-day trip to Italy"*\n- *"What plug type does Japan use?"*\n- *"Where do I buy a cheap travel eSIM?"*`,
+    spokenText: isTr
+      ? 'Merhaba! Vizamigo Seyahat Danışmanınız hazır. Bir ülke adı söyleyerek vize, gezi rotası veya priz bilgilerini sorabilirsiniz.'
+      : 'Hello! I am your Vizamigo Travel Concierge. Feel free to ask about any country visa or itinerary.',
     timestamp: new Date(),
     actions
   };
 }
 
 // ============================================================================
-// WEB SPEECH API CONTROLLER (VOICE INPUT & OUTPUT)
+// WEB SPEECH API CONTROLLER (HIGH-FIDELITY VOICE INPUT & NATURAL TTS)
 // ============================================================================
 let activeSpeechRecognition: any = null;
 
@@ -498,6 +541,42 @@ export function isSpeechRecognitionSupported(): boolean {
 export function isSpeechSynthesisSupported(): boolean {
   if (typeof window === 'undefined') return false;
   return 'speechSynthesis' in window;
+}
+
+/**
+ * Searches for the most natural human voice available in the client browser
+ */
+function getBestVoiceForLanguage(lang: string): SpeechSynthesisVoice | null {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return null;
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices || voices.length === 0) return null;
+
+  const targetLang = (lang || 'tr').toLowerCase();
+  const langVoices = voices.filter((v) => v.lang.toLowerCase().startsWith(targetLang));
+  if (langVoices.length === 0) return null;
+
+  // Search for modern neural/natural high-fidelity voices
+  const preferredKeywords = [
+    'natural',
+    'google',
+    'premium',
+    'enhanced',
+    'siri',
+    'yelda',
+    'cem',
+    'filiz',
+    'ahmet',
+    'emel',
+    'online'
+  ];
+
+  for (const keyword of preferredKeywords) {
+    const match = langVoices.find((v) => v.name.toLowerCase().includes(keyword));
+    if (match) return match;
+  }
+
+  // Fallback to default or first voice for that language
+  return langVoices.find((v) => v.default) || langVoices[0];
 }
 
 export function startVoiceRecognition(options: {
@@ -573,13 +652,16 @@ export function stopVoiceRecognition(): void {
   }
 }
 
+/**
+ * Speaks a concise, warm conversational summary using the best available voice
+ */
 export function speakResponse(text: string, lang: string, onEnd?: () => void): void {
   if (!isSpeechSynthesisSupported()) return;
 
   try {
     window.speechSynthesis.cancel(); // Stop any pending speech
 
-    // Clean markdown asterisks and links before reading
+    // Ensure clean natural prose without markdown symbols
     const cleanedText = text
       .replace(/[*_#`~]/g, '')
       .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
@@ -596,8 +678,13 @@ export function speakResponse(text: string, lang: string, onEnd?: () => void): v
       ru: 'ru-RU'
     };
     utterance.lang = langCodeMap[lang] || 'tr-TR';
-    utterance.rate = 1.05; // Pleasant conversational speed
+    utterance.rate = 1.0; // Natural human cadence
     utterance.pitch = 1.0;
+
+    const bestVoice = getBestVoiceForLanguage(lang);
+    if (bestVoice) {
+      utterance.voice = bestVoice;
+    }
 
     if (onEnd) {
       utterance.onend = () => onEnd();

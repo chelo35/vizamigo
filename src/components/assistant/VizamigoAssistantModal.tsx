@@ -126,17 +126,33 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     }
   }, [isOpen, messages, isMinimized]);
 
+  const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null);
+
   // Clean up voice synthesis on unmount or close
   useEffect(() => {
     return () => {
       stopVoiceRecognition();
       stopSpeaking();
+      setSpeakingMsgId(null);
     };
   }, []);
 
   if (!isOpen) return null;
 
-  const handleSend = async (customText?: string) => {
+  const playMessageAudio = (msg: AssistantMessage) => {
+    if (speakingMsgId === msg.id) {
+      stopSpeaking();
+      setSpeakingMsgId(null);
+    } else {
+      stopSpeaking();
+      setSpeakingMsgId(msg.id);
+      speakResponse(msg.spokenText || msg.text, language, () => {
+        setSpeakingMsgId(null);
+      });
+    }
+  };
+
+  const handleSend = async (customText?: string, isVoiceInput: boolean = false) => {
     const textToSend = (customText || inputValue).trim();
     if (!textToSend) return;
 
@@ -164,14 +180,15 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
       setIsTyping(false);
       setMessages((prev) => [...prev, response]);
 
-      // Read aloud if voice is enabled
-      if (voiceEnabled) {
-        setIsSpeaking(true);
-        speakResponse(response.text, language, () => {
-          setIsSpeaking(false);
+      // Read aloud if voice is enabled and user initiated via voice or voice is turned on
+      if (voiceEnabled && (isVoiceInput || isSpeaking)) {
+        setSpeakingMsgId(response.id);
+        speakResponse(response.spokenText || response.text, language, () => {
+          setSpeakingMsgId(null);
         });
       }
-    } catch {
+    } catch (err) {
+      console.error('Assistant query error:', err);
       setIsTyping(false);
       const fallbackMsg: AssistantMessage = {
         id: `err-${Date.now()}`,
@@ -202,6 +219,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 
       // Stop any current assistant speech
       stopSpeaking();
+      setSpeakingMsgId(null);
       setIsSpeaking(false);
 
       setIsListening(true);
@@ -210,7 +228,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         onResult: (transcript, isFinal) => {
           setInputValue(transcript);
           if (isFinal) {
-            handleSend(transcript);
+            handleSend(transcript, true);
           }
         },
         onError: () => {
@@ -226,6 +244,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const handleToggleVoiceOutput = () => {
     if (voiceEnabled) {
       stopSpeaking();
+      setSpeakingMsgId(null);
       setIsSpeaking(false);
       setVoiceEnabled(false);
     } else {
@@ -382,6 +401,33 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
                   }`}
                 >
                   <div className="whitespace-pre-line break-words">{msg.text}</div>
+
+                  {!isUser && (
+                    <div className="pt-2 mt-2 border-t border-slate-200/60 dark:border-white/10 flex items-center justify-between">
+                      <button
+                        type="button"
+                        onClick={() => playMessageAudio(msg)}
+                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                          speakingMsgId === msg.id
+                            ? 'bg-rose-500 text-white animate-pulse shadow-xs'
+                            : 'bg-white dark:bg-slate-800 hover:bg-teal-50 dark:hover:bg-teal-950/60 text-[#0F766E] dark:text-[#5EEAD4] border border-slate-200 dark:border-white/10'
+                        }`}
+                        title={speakingMsgId === msg.id ? l('Sesi Durdur', 'Stop Audio') : l('Sesli Dinle', 'Listen Aloud')}
+                      >
+                        {speakingMsgId === msg.id ? (
+                          <>
+                            <VolumeX className="w-3.5 h-3.5" />
+                            <span>{l('Durdur', 'Stop')}</span>
+                          </>
+                        ) : (
+                          <>
+                            <Volume2 className="w-3.5 h-3.5" />
+                            <span>{l('Sesli Dinle', 'Listen')}</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  )}
                 </div>
 
                 {/* Embedded Action Pills & Affiliate Badges */}
