@@ -105,7 +105,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const [inputValue, setInputValue] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(false);
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
-  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(true);
+  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false); // Muted by default: no unexpected mechanical voices!
   const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isTyping, setIsTyping] = useState<boolean>(false);
@@ -339,12 +339,12 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             <button
               type="button"
               onClick={handleToggleVoiceOutput}
-              aria-label={voiceEnabled ? l('Sesi Kapat', 'Mute Voice') : l('Sesi Aç', 'Enable Voice')}
-              title={voiceEnabled ? l('Sesli Yanıtı Kapat', 'Mute Voice Responses') : l('Sesli Yanıtı Aç', 'Enable Voice Responses')}
+              aria-label={voiceEnabled ? l('Sesli Yanıtı Kapat', 'Mute Voice') : l('Sesli Yanıtı Aç', 'Enable Voice')}
+              title={voiceEnabled ? l('Sesli Yanıt Açık (Sessize almak için tıklayın)', 'Voice Output Active (Click to mute)') : l('Sesli Yanıt Kapalı (Açmak için tıklayın)', 'Voice Output Muted (Click to enable)')}
               className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
                 voiceEnabled
-                  ? 'bg-teal-500/15 text-[#0F766E] dark:text-[#5EEAD4] border-teal-500/30 shadow-xs'
-                  : 'bg-slate-100 dark:bg-white/10 text-slate-400 border-slate-200 dark:border-white/10'
+                  ? 'bg-emerald-500 text-white border-emerald-600 shadow-xs'
+                  : 'bg-white dark:bg-white/10 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-white/10 hover:text-slate-800'
               }`}
             >
               {voiceEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
