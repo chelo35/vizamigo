@@ -372,7 +372,7 @@ export const GlobalFooter: React.FC<Props> = ({
                 <button
                   type="button"
                   onClick={() => openAuthModal('login')}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-[#0D9488] hover:bg-[#14B8A6] text-white font-black text-xs sm:text-sm shadow-lg shadow-teal-700/25 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-[#0F766E] hover:bg-[#115E59] text-white font-black text-xs sm:text-sm shadow-lg shadow-teal-900/30 transition-all transform hover:-translate-y-0.5 cursor-pointer"
                 >
                   <Lock className="w-4 h-4" />
                   <span>{l('Giriş Yap', 'Sign In', 'Anmelden', 'Iniciar Sesión', 'Войти')}</span>

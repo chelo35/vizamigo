@@ -24,10 +24,8 @@ import { HomeHero } from './components/design/HomeHero';
 import { getCountryName } from './data/passportData';
 import { getPassportItems } from './utils/calculator';
 
-// Code-split primary and secondary tabs & components for <0.3s instant initial render
-const ExploreTab = lazy(() =>
-  import('./components/ExploreTab').then(m => ({ default: m.ExploreTab }))
-);
+// ExploreTab is imported directly to prevent CLS layout shift on initial home render
+import { ExploreTab } from './components/ExploreTab';
 const GlobalFooter = lazy(() =>
   import('./components/footer/GlobalFooter').then(m => ({ default: m.GlobalFooter }))
 );
@@ -52,9 +50,7 @@ const ProfileTab = lazy(() =>
 const WalletTab = lazy(() =>
   import('./components/WalletTab').then(m => ({ default: m.WalletTab }))
 );
-const BentoDashboardGrid = lazy(() =>
-  import('./components/bento/BentoDashboardGrid').then(m => ({ default: m.BentoDashboardGrid }))
-);
+import { BentoDashboardGrid } from './components/bento/BentoDashboardGrid';
 const PassportSelectModal = lazy(() =>
   import('./components/PassportSelectModal').then(m => ({ default: m.PassportSelectModal }))
 );
@@ -267,7 +263,7 @@ function AppContent() {
       {/* ========================================================
           2. MAIN CONTENT AREA (FULL-WIDTH LUXURY LAYOUT)
       ======================================================== */}
-      <div className="flex flex-col flex-1 app-shell-viewport min-h-[100dvh] w-full transition-all">
+      <div className="flex flex-col flex-1 app-shell-viewport min-h-[100dvh] w-full transition-colors duration-200">
         {/* Top Context & Navigation Bar */}
         <Header
           currentPassport={currentPassport}

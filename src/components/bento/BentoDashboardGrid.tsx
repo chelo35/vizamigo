@@ -291,7 +291,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#021824] via-[#04283b] to-[#011420] border-2 border-[#2DD4BF]/50 backdrop-blur-xl shadow-lg overflow-x-auto no-scrollbar scrollbar-none">
         {/* Left Label */}
         <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-gradient-to-r from-[#ea580c] to-[#e11d48] border border-[#f97316]/50 shrink-0 shadow-sm">
-          <Sparkles className="w-3.5 h-3.5 text-white animate-pulse" />
+          <Sparkles className="w-3.5 h-3.5 text-amber-200" />
           <span className="text-xs font-black text-white whitespace-nowrap">
             {l('Otonom AI Ajanları', 'AI Agents')}
           </span>
@@ -443,11 +443,14 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between p-3 sm:p-4"
         >
           <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75"
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&fm=webp&q=70"
             alt={l('Turkuaz Lagün & Dünya Radarı', 'Turquoise Lagoon & World Radar')}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
+            fetchPriority="high"
             decoding="async"
+            width="500"
+            height="216"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/75 to-[#0D9488]/85" />
 
@@ -506,13 +509,15 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           <img
             src={
               researchCountry === 'TH'
-                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=720&fm=webp&q=75'
+                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=500&fm=webp&q=70'
                 : researchVisual.image
             }
             alt={getCountryName(researchCountry, language)}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
             decoding="async"
+            width="500"
+            height="216"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/70 to-[#0D9488]/85" />
 
@@ -677,7 +682,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
               {l('Akıllı Bavul', 'Packing List')}
             </h3>
-            <span className="px-2.5 py-0.5 rounded-lg bg-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs">
+            <span className="px-2.5 py-0.5 rounded-lg bg-[#0F766E] text-white text-xs sm:text-sm font-black shadow-xs">
               %75 {l('Hazır', 'Ready')}
             </span>
           </div>

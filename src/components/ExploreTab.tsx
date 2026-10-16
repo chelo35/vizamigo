@@ -57,11 +57,8 @@ import { CountryRichSnippetSummary } from './CountryRichSnippetSummary';
 import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/schemaGenerator';
 
+import { BentoDashboardGrid } from './bento/BentoDashboardGrid';
 import { TabKey } from './Navigation';
-
-const BentoDashboardGrid = lazy(() =>
-  import('./bento/BentoDashboardGrid').then(m => ({ default: m.BentoDashboardGrid }))
-);
 
 // Code-split heavy visual nodes & live loop widgets for <0.5s instant initial paint
 const InteractiveWorldMap = lazy(() =>
@@ -188,7 +185,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
-  const [visibleCount, setVisibleCount] = useState<number>(16);
+  const [visibleCount, setVisibleCount] = useState<number>(12);
   const [showDirectory, setShowDirectory] = useState<boolean>(true);
 
   // Reset pagination when search, filter or passport changes
@@ -322,18 +319,16 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           Automatically hidden during active search so countries show right at top!
       ===================================================================== */}
       {search.trim().length === 0 ? (
-        <Suspense fallback={<WidgetCardSkeleton />}>
-          <BentoDashboardGrid
-            currentPassport={currentPassport}
-            onOpenCountryDossier={(code) => openDossier(code)}
-            onSelectTab={(tab) => onNavigateTab?.(tab)}
-            onOpenPackingList={() => onOpenPackingList?.()}
-            onOpenTippingCalc={() => onOpenTippingCalc?.()}
-            onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
-            onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
-            onOpenAssistant={onOpenAssistant}
-          />
-        </Suspense>
+        <BentoDashboardGrid
+          currentPassport={currentPassport}
+          onOpenCountryDossier={(code) => openDossier(code)}
+          onSelectTab={(tab) => onNavigateTab?.(tab)}
+          onOpenPackingList={() => onOpenPackingList?.()}
+          onOpenTippingCalc={() => onOpenTippingCalc?.()}
+          onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
+          onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
+          onOpenAssistant={onOpenAssistant}
+        />
       ) : (
         <div className="flex items-center justify-between p-4 rounded-2xl bg-[#0D9488]/15 border border-[#2DD4BF]/40">
           <div className="flex items-center gap-2">
@@ -635,8 +630,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 220px, 240px"
                         alt={`${countryName} - ${visual.landmark}`}
                         className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500 rounded-2xl"
-                        loading={isAboveFold ? 'eager' : 'lazy'}
-                        fetchPriority={isAboveFold ? 'high' : 'auto'}
+                        loading="lazy"
+                        fetchPriority="low"
                         decoding="async"
                         width="240"
                         height="200"
