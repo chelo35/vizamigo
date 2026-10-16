@@ -112,6 +112,7 @@ interface ExploreTabProps {
   onOpenTippingCalc?: () => void;
   onOpenTimezoneOverlap?: () => void;
   onOpenGlobalRadar?: (mode?: 'all' | 'clock' | 'weather' | 'currency', city?: string) => void;
+  onOpenAssistant?: () => void;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -173,7 +174,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   onOpenPackingList,
   onOpenTippingCalc,
   onOpenTimezoneOverlap,
-  onOpenGlobalRadar
+  onOpenGlobalRadar,
+  onOpenAssistant
 }) => {
   const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
@@ -327,6 +329,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           onOpenTippingCalc={() => onOpenTippingCalc?.()}
           onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
           onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
+          onOpenAssistant={onOpenAssistant}
         />
       </Suspense>
 

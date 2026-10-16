@@ -87,6 +87,7 @@ import { getCountryNaturalH1 } from '../utils/schemaGenerator';
 import { StatusBadge, VisaStatus } from './design/StatusBadge';
 import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { EasyVacationAssistant } from './EasyVacationAssistant';
+import { runTripDossierAgent } from '../services/aiAgentsEngine';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -515,6 +516,28 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 aria-label="Minimize window"
               >
                 <Minus className="w-4 h-4 text-slate-900" />
+              </button>
+
+              {/* Printable Travel Brief & PDF Export Button (Autonomous Agent 4) */}
+              <button
+                type="button"
+                onClick={() => {
+                  const res = runTripDossierAgent(code, currentPassport, language);
+                  if (res.printableHtml) {
+                    const printWin = window.open('', '_blank');
+                    if (printWin) {
+                      printWin.document.write(res.printableHtml);
+                      printWin.document.close();
+                      printWin.focus();
+                      setTimeout(() => printWin.print(), 350);
+                    }
+                  }
+                }}
+                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black bg-gradient-to-r from-[#F97316] to-[#FB7185] text-white hover:brightness-110 shadow-sm cursor-pointer shrink-0"
+                title={l('Seyahat Dosyasını Yazdır / PDF İndir', 'Print or Save Trip Dossier as PDF')}
+              >
+                <span>📄</span>
+                <span>{l('PDF / Yazdır', 'PDF / Print')}</span>
               </button>
 
               {!isFullscreen ? (

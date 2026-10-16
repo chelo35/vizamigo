@@ -75,6 +75,7 @@ interface BentoDashboardGridProps {
   onOpenTippingCalc: () => void;
   onOpenTimezoneOverlap: () => void;
   onOpenGlobalRadar: (mode?: 'all' | 'clock' | 'weather' | 'currency', city?: string) => void;
+  onOpenAssistant?: () => void;
 }
 
 const POPULAR_RESEARCH_COUNTRIES = ['TH', 'JP', 'IT', 'ES', 'GR', 'DE', 'AE', 'GE', 'RS', 'ME', 'GB', 'US', 'KR', 'ID', 'BR', 'EG'];
@@ -108,7 +109,8 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   onOpenPackingList,
   onOpenTippingCalc,
   onOpenTimezoneOverlap,
-  onOpenGlobalRadar
+  onOpenGlobalRadar,
+  onOpenAssistant
 }) => {
   const { language, l } = useI18n();
 
@@ -250,6 +252,56 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       aria-label={l('Vizamigo Akıllı Seyahat Panosu', 'Vizamigo Smart Travel Widget System')}
       className="space-y-4 sm:space-y-5"
     >
+      {/* =====================================================================
+          AUTONOMOUS AI TRAVEL AGENTS QUICK DOCK
+      ===================================================================== */}
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 p-2 sm:p-2.5 rounded-2xl sm:rounded-full bg-gradient-to-r from-[#032030]/90 via-[#0D9488]/20 to-[#0284C7]/20 border border-[#2DD4BF]/40 backdrop-blur-xl shadow-lg">
+        <div className="flex items-center gap-2 pl-2 sm:pl-3">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#F97316] to-[#FB7185] flex items-center justify-center text-white shadow-xs shrink-0">
+            <Sparkles className="w-4 h-4 text-white animate-pulse" />
+          </div>
+          <span className="text-xs sm:text-sm font-black text-white flex items-center gap-1.5 whitespace-nowrap">
+            <span>{l('Otonom AI Ajanları', 'Autonomous AI Agents')}</span>
+            <span className="text-[10px] uppercase font-black px-1.5 py-0.5 rounded-md bg-[#F97316] text-white">4 Ajan</span>
+          </span>
+        </div>
+
+        <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 sm:pb-0">
+          <button
+            type="button"
+            onClick={() => onOpenAssistant?.()}
+            className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          >
+            <span>🛡️</span>
+            <span>{l('Schengen Nöbetçisi', 'Schengen Sentinel')}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => onOpenAssistant?.()}
+            className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          >
+            <span>🛰️</span>
+            <span>{l('Vizesiz Fırsat Radarı', 'Visa-Free Radar')}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => onOpenAssistant?.()}
+            className="hidden md:flex px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap items-center gap-1.5 shrink-0"
+          >
+            <span>🧭</span>
+            <span>{l('Kişisel Rota Mimarı', 'Itinerary Architect')}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => onOpenAssistant?.()}
+            className="px-3 py-1.5 rounded-full bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shadow-xs shrink-0"
+          >
+            <span>🧳</span>
+            <span>{l('Seyahat Dosyası (PDF)', 'Trip Dossier (PDF)')}</span>
+          </button>
+        </div>
+      </div>
+
       {/* =====================================================================
           MAIN V2 LAGOON WIDGET GRID (MATCHES APPROVED WEB V2 & MOBILE V2 1:1)
       ===================================================================== */}

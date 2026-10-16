@@ -38,6 +38,13 @@ import {
   playNaturalSpeech,
   stopAllPlayback
 } from '../../services/aiVoiceService';
+import {
+  runSchengenSentinel,
+  runVisaFreeRadar,
+  runItineraryArchitect,
+  runTripDossierAgent,
+  AgentResult
+} from '../../services/aiAgentsEngine';
 
 interface VizamigoAssistantModalProps {
   isOpen: boolean;
@@ -165,11 +172,25 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     }
   };
 
-  const handleActionClick = (action: AssistantActionPill) => {
-    if (action.type === 'open_country' && action.countryCode) {
+  const handleActionClick = (action: AssistantActionPill | any) => {
+    if (action.actionType === 'print_dossier' || action.type === 'print_dossier') {
+      const html = action.payload || action.printableHtml;
+      if (html) {
+        const printWin = window.open('', '_blank');
+        if (printWin) {
+          printWin.document.write(html);
+          printWin.document.close();
+          printWin.focus();
+          setTimeout(() => printWin.print(), 350);
+        }
+      }
+      return;
+    }
+
+    if ((action.type === 'open_country' || action.actionType === 'open_country') && action.countryCode) {
       onOpenCountryDossier(action.countryCode);
       setIsMinimized(true); // Auto-minimize so the country dossier is visible to user
-    } else if (action.type === 'switch_tab' && action.tabKey) {
+    } else if ((action.type === 'switch_tab' || action.actionType === 'switch_tab') && action.tabKey) {
       onSelectTab(action.tabKey);
       setIsMinimized(true); // Auto-minimize so the selected tab is visible to user
     } else if (action.type === 'open_tool') {
@@ -181,6 +202,34 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     } else if (action.type === 'affiliate' && action.url) {
       window.open(action.url, '_blank', 'noopener,noreferrer');
     }
+  };
+
+  const handleRunAgent = (agentType: 'schengen' | 'radar' | 'itinerary' | 'dossier') => {
+    setIsTyping(true);
+    setTimeout(() => {
+      let res: AgentResult;
+      if (agentType === 'schengen') {
+        res = runSchengenSentinel(currentPassport, 42, language);
+      } else if (agentType === 'radar') {
+        res = runVisaFreeRadar(currentPassport, language);
+      } else if (agentType === 'itinerary') {
+        res = runItineraryArchitect('TH', currentPassport, language);
+      } else {
+        res = runTripDossierAgent('TH', currentPassport, language);
+      }
+
+      const agentMsg: AssistantMessage = {
+        id: `agent-${Date.now()}`,
+        sender: 'assistant',
+        text: `${res.summary}\n\n${res.details}`,
+        timestamp: new Date(),
+        actions: res.suggestedActions as any,
+        detectedLang: language
+      };
+
+      setMessages((prev) => [...prev, agentMsg]);
+      setIsTyping(false);
+    }, 300);
   };
 
   const handleSend = async (customText?: string, isVoiceInput: boolean = false) => {
@@ -786,6 +835,50 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             )}
 
             <div ref={messagesEndRef} />
+          </div>
+        )}
+
+        {/* ===================================================================
+            AUTONOMOUS AI AGENTS QUICK-LAUNCH DOCK
+        =================================================================== */}
+        {!showSettings && (
+          <div className="px-3.5 py-2 bg-gradient-to-r from-amber-500/10 via-teal-500/10 to-sky-500/10 border-t border-teal-500/20 flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
+            <span className="text-[11px] font-black uppercase text-amber-700 dark:text-amber-400 shrink-0 mr-1 flex items-center gap-1">
+              <span>🤖</span>
+              <span>{l('AI Ajanları:', 'AI Agents:')}</span>
+            </span>
+            <button
+              type="button"
+              onClick={() => handleRunAgent('schengen')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-xs font-black text-amber-900 dark:text-amber-200 transition-all cursor-pointer shadow-xs flex items-center gap-1"
+            >
+              <span>🛡️</span>
+              <span>{l('Schengen Nöbetçisi', 'Schengen Sentinel')}</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleRunAgent('radar')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-teal-500/15 hover:bg-teal-500/25 border border-teal-500/40 text-xs font-black text-teal-900 dark:text-teal-200 transition-all cursor-pointer shadow-xs flex items-center gap-1"
+            >
+              <span>🛰️</span>
+              <span>{l('Vizesiz Rota Avcısı', 'Visa-Free Radar')}</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleRunAgent('itinerary')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/40 text-xs font-black text-sky-900 dark:text-sky-200 transition-all cursor-pointer shadow-xs flex items-center gap-1"
+            >
+              <span>🧭</span>
+              <span>{l('Kişisel Rota Mimarı', 'Itinerary Architect')}</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleRunAgent('dossier')}
+              className="shrink-0 px-2.5 py-1 rounded-full bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer shadow-xs flex items-center gap-1"
+            >
+              <span>🧳</span>
+              <span>{l('Seyahat Dosyası & PDF', 'Trip Dossier & PDF')}</span>
+            </button>
           </div>
         )}
 

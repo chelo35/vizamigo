@@ -322,6 +322,7 @@ function AppContent() {
                         onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
                         onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
                         onOpenGlobalRadar={openRadar}
+                        onOpenAssistant={() => setIsAssistantOpen(true)}
                       />
                     ) : (
                       <WhereCanIGoTab currentPassport={currentPassport} />
@@ -422,6 +423,7 @@ function AppContent() {
                   onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
                   onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
                   onOpenGlobalRadar={openRadar}
+                  onOpenAssistant={() => setIsAssistantOpen(true)}
                 />
                 <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
               </div>

@@ -81,33 +81,35 @@
   --text-primary: #0F172A;
   --text-secondary: #0369A1;
   --text-muted: #0284C7;
-  --accent-coral: #0284C7;
+  --accent-coral: #F97316;
+  --accent-coral-glow: rgba(249, 115, 22, 0.25);
+  --accent-coral-soft: rgba(249, 115, 22, 0.12);
   --accent-horizon-teal: #0EA5E9;
   --accent-horizon-teal-soft: rgba(14, 165, 233, 0.12);
-  --accent-coral-soft: rgba(2, 132, 199, 0.12);
   --teal-text: #0369A1;
-  --coral-text: #0284C7;
+  --coral-text: #EA580C;
 }
 
 html.dark,
 .dark {
-  --bg-canvas: #042132;
-  --bg-canvas-gradient: linear-gradient(135deg, #042132 0%, #063A4D 55%, #032030 100%);
-  --surface-card: rgba(6, 38, 52, 0.92);
-  --surface-card-border: rgba(45, 212, 191, 0.45);
-  --surface-card-shadow: 0 24px 54px rgba(0, 0, 0, 0.50);
-  --surface-card-hover-shadow: 0 30px 64px rgba(0, 0, 0, 0.68), 0 0 28px rgba(45, 212, 191, 0.28);
-  --surface-glass-control: rgba(6, 38, 52, 0.85);
+  --bg-canvas: #02121D;
+  --bg-canvas-gradient: linear-gradient(135deg, #020F18 0%, #041E2D 55%, #010A10 100%);
+  --surface-card: rgba(4, 23, 33, 0.94);
+  --surface-card-border: rgba(45, 212, 191, 0.40);
+  --surface-card-shadow: 0 28px 60px rgba(0, 0, 0, 0.65);
+  --surface-card-hover-shadow: 0 32px 70px rgba(0, 0, 0, 0.80), 0 0 28px rgba(45, 212, 191, 0.30);
+  --surface-glass-control: rgba(4, 23, 33, 0.88);
   --surface-glass-border: rgba(45, 212, 191, 0.38);
   --text-primary: #F8FAFC;
   --text-secondary: #CCFBF1;
   --text-muted: #99F6E4;
-  --accent-coral: #38BDF8;
+  --accent-coral: #FB923C;
+  --accent-coral-glow: rgba(251, 146, 60, 0.30);
+  --accent-coral-soft: rgba(251, 146, 60, 0.18);
   --accent-horizon-teal: #2DD4BF;
   --accent-horizon-teal-soft: rgba(45, 212, 191, 0.20);
-  --accent-coral-soft: rgba(56, 189, 248, 0.20);
   --teal-text: #2DD4BF;
-  --coral-text: #7DD3FC;
+  --coral-text: #FDBA74;
 }
 
 .bento-lagoon-card {
@@ -125,15 +127,15 @@ html.dark,
 
 html.dark .bento-lagoon-card,
 .dark .bento-lagoon-card {
-  background: linear-gradient(145deg, rgba(7, 30, 48, 0.92) 0%, rgba(4, 21, 35, 0.96) 100%);
-  border: 2px solid rgba(56, 189, 248, 0.35);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.52);
+  background: linear-gradient(145deg, rgba(6, 26, 39, 0.94) 0%, rgba(3, 16, 25, 0.98) 100%);
+  border: 1.5px solid rgba(45, 212, 191, 0.35);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.58), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 html.dark .bento-lagoon-card:hover,
 .dark .bento-lagoon-card:hover {
-  border-color: rgba(56, 189, 248, 0.65);
-  box-shadow: 0 26px 58px rgba(0, 0, 0, 0.68), 0 0 26px rgba(56, 189, 248, 0.20);
+  border-color: rgba(94, 234, 212, 0.70);
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.72), 0 0 28px rgba(45, 212, 191, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 /* ========================================================
