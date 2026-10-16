@@ -440,7 +440,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('radar', 'all')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between p-2.5 sm:p-3.5"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between p-3 sm:p-4"
         >
           <img
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75"
@@ -451,28 +451,28 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/75 to-[#0D9488]/85" />
 
-          <div className="relative z-10 space-y-1">
-            <h2 className="text-xs sm:text-sm font-black text-white leading-tight tracking-tight drop-shadow-md">
+          <div className="relative z-10 space-y-1.5">
+            <h2 className="text-sm sm:text-base font-black text-white leading-tight tracking-tight drop-shadow-md">
               {l('Pasaportumla Nereye Gidebilirim?', 'Where Can I Go?')}
             </h2>
-            <div className="flex flex-wrap items-center gap-1">
-              <span className="px-2 py-0.5 rounded-lg text-[10px] sm:text-xs font-black bg-[#38BDF8] text-[#042637] shadow-xs">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="px-2.5 py-0.5 rounded-lg text-xs sm:text-sm font-black bg-[#38BDF8] text-[#042637] shadow-xs">
                 {stats.free} {l('Vizesiz', 'Free')}
               </span>
-              <span className="px-2 py-0.5 rounded-lg text-[10px] sm:text-xs font-black bg-[#5EEAD4] text-[#042F2E] shadow-xs">
+              <span className="px-2.5 py-0.5 rounded-lg text-xs sm:text-sm font-black bg-[#5EEAD4] text-[#042F2E] shadow-xs">
                 {stats.evisa} {l('E-Vize', 'eVisa')}
               </span>
             </div>
           </div>
 
-          <div className="relative z-10 flex items-center gap-1.5 pt-1">
+          <div className="relative z-10 flex items-center gap-1.5 pt-1.5">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 openWidget('radar', 'all');
               }}
-              className="flex-1 px-2.5 py-1 sm:py-1.5 rounded-xl text-[10px] sm:text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1"
+              className="flex-1 px-3 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1"
             >
               <span>🌍</span>
               <span className="truncate">{l('199 Ülke Radarı →', '199 Radar →')}</span>
@@ -485,7 +485,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
                 else onSelectTab?.('explore');
               }}
-              className="px-2 py-1 sm:py-1.5 rounded-xl text-[10px] sm:text-xs font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer shrink-0"
+              className="px-2.5 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer shrink-0"
               title={l('Ülke Tablosuna İn', 'Scroll to Country Table')}
             >
               {l('Liste', 'List')}
@@ -501,7 +501,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('country_research', 'visa', researchCountry)}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between p-2.5 sm:p-3.5 cursor-pointer"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between p-3 sm:p-4 cursor-pointer"
         >
           <img
             src={
@@ -516,9 +516,9 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/70 to-[#0D9488]/85" />
 
-          <div className="relative z-10 space-y-1">
+          <div className="relative z-10 space-y-1.5">
             <div className="flex items-center justify-between gap-1">
-              <h2 className="text-xs sm:text-sm font-black text-white leading-tight tracking-tight drop-shadow-md">
+              <h2 className="text-sm sm:text-base font-black text-white leading-tight tracking-tight drop-shadow-md">
                 {l('Ülke Araştırma', 'Country Research')}
               </h2>
               <button
@@ -527,32 +527,32 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                   e.stopPropagation();
                   setShowCountrySearchModal(true);
                 }}
-                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-white/25 hover:bg-white/40 text-white font-black text-[10px] sm:text-xs border border-white/40 backdrop-blur-md transition-all cursor-pointer shadow-xs"
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/25 hover:bg-white/40 text-white font-black text-xs sm:text-sm border border-white/40 backdrop-blur-md transition-all cursor-pointer shadow-xs"
               >
                 <span>{getFlag(researchCountry)}</span>
-                <span className="truncate max-w-[65px] sm:max-w-[90px]">{getCountryName(researchCountry, language)}</span>
-                <ChevronDown className="w-3 h-3 text-[#5EEAD4]" />
+                <span className="truncate max-w-[70px] sm:max-w-[100px]">{getCountryName(researchCountry, language)}</span>
+                <ChevronDown className="w-3.5 h-3.5 text-[#5EEAD4]" />
               </button>
             </div>
 
-            <div className="flex flex-wrap items-center gap-1 pt-0.5">
-              <span className="px-1.5 py-0.5 rounded-md text-[10px] sm:text-xs font-black bg-emerald-500/90 text-white shadow-xs">
+            <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+              <span className="px-2 py-0.5 rounded-md text-xs sm:text-sm font-black bg-emerald-500/90 text-white shadow-xs">
                 {researchVisaBadge.text}
               </span>
-              <span className="px-1.5 py-0.5 rounded-md text-[10px] sm:text-xs font-black bg-sky-500/90 text-white shadow-xs">
+              <span className="px-2 py-0.5 rounded-md text-xs sm:text-sm font-black bg-sky-500/90 text-white shadow-xs">
                 🔌 Tip {researchGeography.plugTypes.split(',')[0]}
               </span>
             </div>
           </div>
 
-          <div className="relative z-10 pt-1">
+          <div className="relative z-10 pt-1.5">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 openWidget('country_research', 'visa', researchCountry);
               }}
-              className="w-full px-2.5 py-1 sm:py-1.5 rounded-xl text-[10px] sm:text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1"
+              className="w-full px-3 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1"
             >
               <span>{getFlag(researchCountry)}</span>
               <span className="truncate">{l('360° Rehberi Aç →', 'Open Dossier →')}</span>
@@ -568,26 +568,26 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Pasaport Karşılaştır', 'Compare Passports')}
-              <span className="block text-[11px] font-bold text-[#0D9488] dark:text-[#5EEAD4]">
+              <span className="block text-xs sm:text-sm font-bold text-[#0D9488] dark:text-[#5EEAD4]">
                 {l('& Güç Sinerjisi', '& Power Synergy')}
               </span>
             </h3>
-            <div className="flex items-baseline gap-1 pt-0.5">
-              <span className="text-lg sm:text-xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
+            <div className="flex items-baseline gap-1.5 pt-0.5">
+              <span className="text-xl sm:text-2xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
                 {synergyStats.combinedFree}
               </span>
-              <span className="text-[10px] sm:text-xs font-extrabold text-[#042F2E] dark:text-teal-100">
+              <span className="text-xs sm:text-sm font-extrabold text-[#042F2E] dark:text-teal-100">
                 {l('Ülke Vizesiz', 'Visa-Free')}
               </span>
             </div>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <Passports3DIllustration
               codeA={currentPassport}
               codeB={effectiveSecondPassport}
@@ -596,7 +596,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           </div>
 
           <div>
-            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
               {l('Karşılaştır →', 'Compare →')}
             </span>
           </div>
@@ -610,26 +610,26 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('day_counter', 'schengen')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Dünya Gün Sayacı', 'Day Counter')}
             </h3>
-            <div className="text-sm sm:text-base font-black text-[#0D9488] dark:text-[#5EEAD4] leading-tight">
+            <div className="text-base sm:text-lg font-black text-[#0D9488] dark:text-[#5EEAD4] leading-tight">
               {l('48 Gün Kaldı', '48 Days Left')}
             </div>
-            <div className="text-[10px] font-bold text-[#064E3B] dark:text-teal-200">
+            <div className="text-xs sm:text-sm font-bold text-[#064E3B] dark:text-teal-200">
               {l('(Schengen & Küresel)', '(Schengen & Global)')}
             </div>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <GlobalDayCounter3DIllustration daysLeft={48} />
           </div>
 
           <div>
-            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
               {l('Sayacı Aç →', 'Open Counter →')}
             </span>
           </div>
@@ -643,20 +643,20 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('currency', 'converter')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div>
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Döviz & Bütçe', 'Currency & Budget')}
             </h3>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <CurrencyCoins3DIllustration />
           </div>
 
-          <div className="pt-1 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="flex flex-wrap items-baseline justify-between font-mono font-black text-[10px] sm:text-xs text-[#042F2E] dark:text-white tabular-nums">
+          <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
+            <div className="flex flex-wrap items-baseline justify-between font-mono font-black text-xs sm:text-sm text-[#042F2E] dark:text-white tabular-nums">
               <span>{currencyDisplay.line1}</span>
               <span>{currencyDisplay.line2}</span>
             </div>
@@ -671,23 +671,23 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('packing', 'documents')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="flex items-center justify-between">
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Akıllı Bavul', 'Packing List')}
             </h3>
-            <span className="px-2 py-0.5 rounded-lg bg-[#2DD4BF] text-[#042F2E] text-[10px] font-black shadow-xs">
+            <span className="px-2.5 py-0.5 rounded-lg bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs">
               %75 {l('Hazır', 'Ready')}
             </span>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <Suitcases3DIllustration progress={75} />
           </div>
 
           <div>
-            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
               {l('Bavul Listesi →', 'Packing List →')}
             </span>
           </div>
@@ -701,28 +701,28 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Dünya Saati & Rota', 'Clock & Routes')}
             </h3>
-            <p className="text-[10px] font-bold text-[#0D9488] dark:text-teal-200 truncate">
+            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200 truncate">
               {getFlag(currentPassport)} {currentPassport} ➔ TYO ➔ LON
             </p>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <WorldClock3DIllustration />
           </div>
 
-          <div className="pt-1 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between">
-            <div className="flex items-center gap-1.5 font-mono font-black text-[10px] sm:text-xs text-[#042F2E] dark:text-white">
+          <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between">
+            <div className="flex items-center gap-1.5 font-mono font-black text-xs sm:text-sm text-[#042F2E] dark:text-white">
               <LiveCityClock offsetHours={3} label="İST" />
               <span>·</span>
               <LiveCityClock offsetHours={9} label="TYO" />
             </div>
-            <span className="text-[10px] sm:text-xs font-black text-[#0D9488] dark:text-[#5EEAD4]">
+            <span className="text-xs sm:text-sm font-black text-[#0D9488] dark:text-[#5EEAD4]">
               {l('Planla →', 'Plan →')}
             </span>
           </div>
@@ -736,23 +736,23 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'apps', appsCountry)}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Tüm Uygulamalar (30+)', 'All Apps (30+)')}
             </h3>
-            <p className="text-[10px] font-bold text-[#0D9488] dark:text-[#5EEAD4] truncate">
+            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-[#5EEAD4] truncate">
               {l('Uçak · Otel · Taksi · eSIM', 'Flights · Hotels · Rail · eSIM')}
             </p>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <LocalApps3DIllustration />
           </div>
 
           <div>
-            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-[10px] sm:text-xs font-black shadow-xs">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs sm:text-sm font-black shadow-xs">
               {l('Uygulamaları Aç →', 'Open Apps →')}
             </span>
           </div>
@@ -766,27 +766,27 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('nomad', 'hubs')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
-              <Laptop className="w-3 h-3" />
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs sm:text-sm font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
+              <Laptop className="w-3.5 h-3.5" />
               {l('Uzaktan Çalışma', 'Remote')}
             </span>
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Dijital Göçebe Üsleri', 'Nomad Hubs')}
             </h3>
-            <p className="text-[10px] font-bold text-[#0D9488] dark:text-teal-200 truncate">
+            <p className="text-xs sm:text-sm font-bold text-[#0D9488] dark:text-teal-200 truncate">
               🌴 Bali · Bangkok · 185 Mbps
             </p>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <NomadIsland3DIllustration />
           </div>
 
           <div>
-            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
               {l('Nomad Üsleri →', 'Nomad Hubs →')}
             </span>
           </div>
@@ -800,27 +800,27 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('emergency', 'sos')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[160px] sm:min-h-[178px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-rose-600 text-white shadow-xs">
-              <PhoneCall className="w-3 h-3" />
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs sm:text-sm font-black bg-rose-600 text-white shadow-xs">
+              <PhoneCall className="w-3.5 h-3.5" />
               {l('SOS 112 / 911', 'SOS 112/911')}
             </span>
-            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Konsolosluk & Kriz', 'Emergency SOS')}
             </h3>
-            <p className="text-[10px] font-bold text-rose-600 dark:text-rose-400 truncate">
+            <p className="text-xs sm:text-sm font-bold text-rose-600 dark:text-rose-400 truncate">
               {l('7/24 Temsilcilik Hatları', '24/7 Hotlines')}
             </p>
           </div>
 
-          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
+          <div className="h-18 sm:h-22 flex items-center justify-center my-1">
             <LifebuoySOS3DIllustration />
           </div>
 
           <div>
-            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-rose-600 text-white text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-rose-500 transition-all">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-rose-600 text-white text-xs sm:text-sm font-black shadow-xs group-hover:bg-rose-500 transition-all">
               {l('Acil Hatlar →', 'Hotlines →')}
             </span>
           </div>

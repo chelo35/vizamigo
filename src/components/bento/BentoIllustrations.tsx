@@ -130,7 +130,7 @@ export const Passports3DIllustration: React.FC<{
   synergyCount?: number;
   className?: string;
 }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 180 140" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       <defs>
         <linearGradient id="v2RedPass" x1="0" y1="0" x2="1" y2="1">
@@ -217,7 +217,7 @@ export const GlobalDayCounter3DIllustration: React.FC<{
   daysLeft?: number;
   className?: string;
 }> = ({ daysLeft = 48, className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 160 140" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       <defs>
         <radialGradient id="v2EarthSphere" cx="35%" cy="30%" r="70%">
@@ -272,7 +272,7 @@ export const GlobalDayCounter3DIllustration: React.FC<{
 );
 
 export const RoutePlanner3DIllustration: React.FC<{ className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 160 140" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       {/* Outer Glow */}
       <circle cx="84" cy="70" r="52" fill="#5EEAD4" opacity="0.18" />
@@ -302,7 +302,7 @@ export const RoutePlanner3DIllustration: React.FC<{ className?: string }> = ({ c
 );
 
 export const CurrencyCoins3DIllustration: React.FC<{ className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 190 125" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       <defs>
         <linearGradient id="v2GoldCoinFace" x1="0" y1="0" x2="1" y2="1">
@@ -374,7 +374,7 @@ export const CurrencyCoins3DIllustration: React.FC<{ className?: string }> = ({ 
 );
 
 export const WorldClock3DIllustration: React.FC<{ className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 165 135" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       {/* Glowing Halo */}
       <circle cx="88" cy="66" r="52" fill="#5EEAD4" opacity="0.2" />
@@ -403,7 +403,7 @@ export const WorldClock3DIllustration: React.FC<{ className?: string }> = ({ cla
 );
 
 export const Suitcases3DIllustration: React.FC<{ progress?: number; className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 190 140" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       <defs>
         <linearGradient id="v2TealBag" x1="0" y1="0" x2="1" y2="1">
@@ -468,7 +468,7 @@ export const Suitcases3DIllustration: React.FC<{ progress?: number; className?: 
 );
 
 export const NomadIsland3DIllustration: React.FC<{ className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-13 sm:h-15 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-17 sm:h-21 w-auto'}`}>
     <svg viewBox="0 0 155 100" className="h-full w-auto max-h-full drop-shadow-md" aria-hidden="true">
       <ellipse cx="76" cy="82" rx="64" ry="14" fill="#2DD4BF" opacity="0.35" />
       <ellipse cx="76" cy="76" rx="48" ry="12" fill="#A7F3D0" />
@@ -486,7 +486,7 @@ export const NomadIsland3DIllustration: React.FC<{ className?: string }> = ({ cl
 );
 
 export const LifebuoySOS3DIllustration: React.FC<{ className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-13 sm:h-15 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-17 sm:h-21 w-auto'}`}>
     <svg viewBox="0 0 120 100" className="h-full w-auto max-h-full drop-shadow-md" aria-hidden="true">
       <circle cx="48" cy="52" r="34" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="2" />
       <path d="M36 20 A34 34 0 0 1 60 20 L55 34 A18 18 0 0 0 41 34 Z" fill="#EF4444" />
@@ -503,7 +503,7 @@ export const LifebuoySOS3DIllustration: React.FC<{ className?: string }> = ({ cl
 );
 
 export const LocalApps3DIllustration: React.FC<{ className?: string }> = ({ className }) => (
-  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-14 sm:h-16 w-auto'}`}>
+  <div className={`relative flex items-center justify-center shrink-0 ${className || 'h-18 sm:h-22 w-auto'}`}>
     <svg viewBox="0 0 185 140" className="h-full w-auto max-h-full drop-shadow-xl" aria-hidden="true">
       <defs>
         <linearGradient id="v2PhoneScreen" x1="0" y1="0" x2="1" y2="1">
