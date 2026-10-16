@@ -225,8 +225,8 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
           />
-          {/* Rich Lagoon Gradient Scrim for 100% Crisp White Text */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#042F2E]/90 via-[#0F766E]/70 to-[#042F2E]/85" />
+          {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0284C7]/85 via-[#0EA5E9]/65 to-[#0D9488]/75" />
 
           {/* Content Layout */}
           <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 h-full">
@@ -234,7 +234,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
               <div>
                 <h2 className="text-2xl sm:text-3xl font-black text-white leading-[1.15] tracking-tight drop-shadow-md">
                   {l('Nereye Gidebilirim?', 'Where Can I Go?')}
-                  <span className="block text-xl sm:text-2xl text-[#99F6E4] mt-0.5">
+                  <span className="block text-xl sm:text-2xl text-[#BAE6FD] mt-0.5">
                     {l('(Dünya Radarı)', '(World Radar)')}
                   </span>
                 </h2>
@@ -242,10 +242,10 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
               {/* Big High-Contrast Pills: 71 Vizesiz | 45 E-Vize */}
               <div className="flex flex-wrap items-center gap-2.5 pt-2">
-                <span className="px-4 py-2 rounded-2xl text-sm sm:text-base font-black bg-[#4ADE80] text-[#042F2E] shadow-lg">
+                <span className="px-4 py-2 rounded-2xl text-sm sm:text-base font-black bg-[#38BDF8] text-[#042637] shadow-lg">
                   {stats.free} {l('Vizesiz', 'Visa-Free')}
                 </span>
-                <span className="px-4 py-2 rounded-2xl text-sm sm:text-base font-black bg-[#5EEAD4] text-[#042F2E] shadow-lg">
+                <span className="px-4 py-2 rounded-2xl text-sm sm:text-base font-black bg-[#5EEAD4] text-[#042637] shadow-lg">
                   {stats.evisa} {l('E-Vize', 'eVisa')}
                 </span>
               </div>
@@ -276,8 +276,8 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
           />
-          {/* Rich Lagoon Scrim */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#042F2E]/85 via-[#064E3B]/60 to-[#042F2E]/90" />
+          {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0284C7]/85 via-[#0EA5E9]/60 to-[#0D9488]/80" />
 
           {/* Top Title & Country Selector Pill */}
           <div className="relative z-10 space-y-3">
@@ -446,18 +446,19 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col justify-between"
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-            <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
-              {l('Döviz &', 'Currency &')}
-              <span className="block">{l('Bütçe', 'Budget')}</span>
+            <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
+              {l('Döviz & Bütçe', 'Currency & Budget')}
             </h3>
-            <div className="self-center sm:self-auto -my-3">
+            <div className="self-center sm:self-auto -my-3 shrink-0">
               <CurrencyCoins3DIllustration />
             </div>
           </div>
 
           <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="text-xs sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight font-mono whitespace-nowrap overflow-hidden text-ellipsis">
-              $1 = {usdTry}₺ · €1 = {eurTry}₺
+            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight">
+              <span>$1 = {usdTry}₺</span>
+              <span className="opacity-30">·</span>
+              <span>€1 = {eurTry}₺</span>
             </div>
           </div>
         </div>
@@ -518,8 +519,10 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           </div>
 
           <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="text-xs sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white tracking-tight font-mono whitespace-nowrap overflow-hidden text-ellipsis">
-              İST {formatCityTime(3)} · TYO {formatCityTime(9)}
+            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight">
+              <span>İST {formatCityTime(3)}</span>
+              <span className="opacity-30">·</span>
+              <span>TYO {formatCityTime(9)}</span>
             </div>
           </div>
         </div>

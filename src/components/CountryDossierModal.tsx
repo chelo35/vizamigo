@@ -471,7 +471,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
               <button
                 type="button"
                 onClick={onClose}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-white/90 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-[#0D9488] hover:text-white transition-all cursor-pointer shadow-2xs shrink-0"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black bg-white/95 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-[#0D9488] hover:text-white transition-all cursor-pointer shadow-2xs shrink-0"
                 title={l('Geri Dön', 'Go Back')}
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
@@ -482,10 +482,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </span>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h1 className="text-base sm:text-xl font-black text-slate-900 dark:text-white tracking-tight truncate">
+                  <h1 className="text-base sm:text-xl font-black text-white tracking-tight truncate drop-shadow-sm">
                     {name}
                   </h1>
-                  <span className="font-mono text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold border border-slate-200 dark:border-slate-700 shrink-0">
+                  <span className="font-mono text-[11px] px-2 py-0.5 rounded-md bg-white/20 text-teal-200 font-extrabold border border-teal-400/40 shrink-0">
                     {code}
                   </span>
                   <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold border shadow-2xs ${badgeClass} shrink-0`}>
@@ -493,7 +493,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     <span>{badgeLabel}</span>
                   </span>
                 </div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate mt-0.5">
+                <div className="text-xs text-teal-100 font-semibold truncate mt-0.5 drop-shadow-xs">
                   {getCountryNaturalH1(name, language)}
                 </div>
               </div>
@@ -739,35 +739,35 @@ Planlayan: Vizamigo (vizamigo.com)`;
           )}
 
           {/* De-Widgetized Lifestyle Bento Quick Bar */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 mt-4 pt-3 border-t border-slate-200/80 dark:border-white/10 text-xs">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 mt-4 pt-3.5 border-t border-teal-500/20 dark:border-white/10 text-xs">
             {/* 1. Currency Hub & Mini Cheat-Sheet Matrix Quick Trigger */}
             <button
               type="button"
               onClick={() => scrollToSection('logistics', 'dossier-currency-matrix')}
-              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-amber-50/50 dark:hover:bg-amber-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-amber-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-3 sm:p-3.5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] hover:bg-amber-50/70 dark:hover:bg-amber-500/[0.08] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 hover:border-amber-400 transition-all cursor-pointer text-left shadow-xs"
             >
               <div className="flex items-center justify-between w-full">
-                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
-                  <DollarSign className="w-3.5 h-3.5 text-amber-500" />
+                <div className="flex items-center gap-1.5 text-xs text-slate-800 dark:text-slate-100 font-black uppercase tracking-wide">
+                  <DollarSign className="w-4 h-4 text-amber-500" />
                   <span>{l('Çapraz Kur Matrisi', 'Cross Rates', 'Wechselkurse')}</span>
                 </div>
-                <span className="text-[10px] text-amber-600 dark:text-amber-400 font-bold group-hover:translate-x-0.5 transition-transform">
+                <span className="text-xs text-amber-700 dark:text-amber-400 font-black group-hover:translate-x-0.5 transition-transform bg-amber-100/70 dark:bg-amber-900/40 px-2 py-0.5 rounded-md">
                   {destCurrencyCode} →
                 </span>
               </div>
-              <div className="grid grid-cols-3 gap-1 mt-1.5 text-center">
-                <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
-                  <span className="text-slate-400">🇺🇸</span> <b className="text-slate-800 dark:text-slate-200">{formatCurrencyValue(rate1Usd)}</b>
+              <div className="grid grid-cols-3 gap-1.5 mt-2 text-center">
+                <div className="p-1.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/60 dark:border-teal-700/50 font-mono text-xs shadow-2xs">
+                  <span className="text-slate-500">🇺🇸</span> <b className="text-slate-900 dark:text-slate-100">{formatCurrencyValue(rate1Usd)}</b>
                 </div>
-                <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
-                  <span className="text-slate-400">🇪🇺</span> <b className="text-slate-800 dark:text-slate-200">{formatCurrencyValue(rate1Eur)}</b>
+                <div className="p-1.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/60 dark:border-teal-700/50 font-mono text-xs shadow-2xs">
+                  <span className="text-slate-500">🇪🇺</span> <b className="text-slate-900 dark:text-slate-100">{formatCurrencyValue(rate1Eur)}</b>
                 </div>
-                <div className="p-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 font-mono text-[10px]">
-                  <span>🇬🇧</span> <b className="text-indigo-600 dark:text-indigo-400">{formatCurrencyValue(rate1Gbp)}</b>
+                <div className="p-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 font-mono text-xs shadow-2xs">
+                  <span>🇬🇧</span> <b className="text-indigo-700 dark:text-indigo-300">{formatCurrencyValue(rate1Gbp)}</b>
                 </div>
               </div>
-              <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
-                1 {destCurrencyCode} ≈ <b className="text-slate-700 dark:text-slate-300 font-mono">£{formatCurrencyValue(1 / rate1Gbp)} GBP</b>
+              <div className="text-xs text-slate-700 dark:text-slate-300 font-semibold mt-2 truncate">
+                1 {destCurrencyCode} ≈ <b className="text-slate-900 dark:text-white font-mono font-bold">£{formatCurrencyValue(1 / rate1Gbp)} GBP</b>
               </div>
             </button>
 
@@ -775,28 +775,28 @@ Planlayan: Vizamigo (vizamigo.com)`;
             <button
               type="button"
               onClick={() => scrollToSection('logistics', 'dossier-dual-clock')}
-              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-sky-50/50 dark:hover:bg-sky-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-sky-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-3 sm:p-3.5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] hover:bg-sky-50/70 dark:hover:bg-sky-500/[0.08] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 hover:border-sky-400 transition-all cursor-pointer text-left shadow-xs"
             >
               <div className="flex items-center justify-between w-full">
-                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
-                  <Clock className="w-3.5 h-3.5 text-sky-500" />
+                <div className="flex items-center gap-1.5 text-xs text-slate-800 dark:text-slate-100 font-black uppercase tracking-wide">
+                  <Clock className="w-4 h-4 text-sky-500" />
                   <span>{l('Çift Saat & Zaman', 'Dual Clock', 'Doppeluhr')}</span>
                 </div>
-                <span className="text-[10px] font-bold text-sky-600 dark:text-sky-400">
+                <span className="text-xs font-black text-sky-700 dark:text-sky-300 bg-sky-100/70 dark:bg-sky-900/40 px-2 py-0.5 rounded-md">
                   {diffLabel}
                 </span>
               </div>
-              <div className="grid grid-cols-2 gap-1.5 mt-1.5 text-center">
-                <div className="p-1 rounded-lg bg-slate-100/70 dark:bg-slate-800/60 font-mono text-[10px]">
-                  <div className="text-[9px] text-slate-400">🏠 İst</div>
-                  <b className="text-slate-800 dark:text-slate-200">{formatTimeStr(currentTime).slice(0, 5)}</b>
+              <div className="grid grid-cols-2 gap-1.5 mt-2 text-center">
+                <div className="p-1.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/60 dark:border-teal-700/50 font-mono text-xs shadow-2xs">
+                  <div className="text-[11px] text-slate-500 font-medium">🏠 İst</div>
+                  <b className="text-slate-900 dark:text-slate-100 text-xs sm:text-sm">{formatTimeStr(currentTime).slice(0, 5)}</b>
                 </div>
-                <div className="p-1 rounded-lg bg-sky-500/10 border border-sky-500/20 font-mono text-[10px]">
-                  <div className="text-[9px] text-sky-500">✈️ {geo?.capital ? geo.capital.slice(0, 5) : 'Yerel'}</div>
-                  <b className="text-sky-600 dark:text-sky-300">{formatTimeStr(destTime).slice(0, 5)}</b>
+                <div className="p-1.5 rounded-xl bg-sky-50 dark:bg-sky-950/60 border border-sky-300 dark:border-sky-700 font-mono text-xs shadow-2xs">
+                  <div className="text-[11px] text-sky-700 dark:text-sky-300 font-medium">✈️ {geo?.capital ? geo.capital.slice(0, 5) : 'Yerel'}</div>
+                  <b className="text-sky-800 dark:text-sky-200 text-xs sm:text-sm">{formatTimeStr(destTime).slice(0, 5)}</b>
                 </div>
               </div>
-              <div className="text-[9px] text-slate-500 dark:text-[#8E9DBE] mt-1 truncate">
+              <div className="text-xs text-slate-700 dark:text-slate-300 font-semibold mt-2 truncate">
                 {l('Mesai & Çalışma Analizi →', 'Work Shift Sync →', 'Arbeitszeit-Sync →')}
               </div>
             </button>
@@ -805,21 +805,21 @@ Planlayan: Vizamigo (vizamigo.com)`;
             <button
               type="button"
               onClick={() => scrollToSection('logistics', 'dossier-internet-sim')}
-              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-teal-50/50 dark:hover:bg-teal-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-teal-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-3 sm:p-3.5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] hover:bg-teal-50/70 dark:hover:bg-teal-500/[0.08] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 hover:border-teal-400 transition-all cursor-pointer text-left shadow-xs"
             >
               <div className="flex items-center justify-between w-full">
-                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
-                  <Wifi className="w-3.5 h-3.5 text-teal-500" />
+                <div className="flex items-center gap-1.5 text-xs text-slate-800 dark:text-slate-100 font-black uppercase tracking-wide">
+                  <Wifi className="w-4 h-4 text-teal-600" />
                   <span>{l('İnternet & SIM', 'Internet & SIM', 'WLAN & SIM')}</span>
                 </div>
-                <span className="text-[10px] text-teal-600 dark:text-teal-400 font-bold">
+                <span className="text-xs text-teal-800 dark:text-teal-300 font-black bg-teal-100/70 dark:bg-teal-900/40 px-2 py-0.5 rounded-md">
                   {insights.internet.mobileSpeedMbps} Mbps
                 </span>
               </div>
-              <div className="mt-1.5 text-[11px] font-bold text-slate-800 dark:text-white truncate">
+              <div className="mt-2 text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white truncate">
                 ⚡ Mobil: {insights.internet.mobileSpeedMbps}M · Wi-Fi: {insights.internet.broadbandSpeedMbps}M
               </div>
-              <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+              <div className="text-xs text-slate-700 dark:text-slate-300 font-semibold mt-2 truncate">
                 {insights.internet.bestCarriers[0] || 'Yerel'} · {l('Havalimanı Uyarısı →', 'Airport SIM Tip →', 'SIM-Tipps →')}
               </div>
             </button>
@@ -828,21 +828,21 @@ Planlayan: Vizamigo (vizamigo.com)`;
             <button
               type="button"
               onClick={() => scrollToSection('logistics', 'dossier-sockets-safety')}
-              className="group flex flex-col justify-between p-2.5 rounded-2xl bg-white/80 dark:bg-white/[0.04] hover:bg-emerald-50/50 dark:hover:bg-emerald-500/[0.08] border border-slate-200/60 dark:border-white/10 hover:border-emerald-400/40 transition-all cursor-pointer text-left shadow-2xs"
+              className="group flex flex-col justify-between p-3 sm:p-3.5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] hover:bg-emerald-50/70 dark:hover:bg-emerald-500/[0.08] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 hover:border-emerald-400 transition-all cursor-pointer text-left shadow-xs"
             >
               <div className="flex items-center justify-between w-full">
-                <div className="flex items-center gap-1.5 text-[10px] text-slate-400 dark:text-[#7A89A6] font-bold uppercase tracking-wider">
-                  <Plug className="w-3.5 h-3.5 text-amber-500" />
+                <div className="flex items-center gap-1.5 text-xs text-slate-800 dark:text-slate-100 font-black uppercase tracking-wide">
+                  <Plug className="w-4 h-4 text-amber-500" />
                   <span>{l('Priz & Güvenlik', 'Sockets & Safety', 'Stecker & Schutz')}</span>
                 </div>
-                <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
+                <span className="text-xs text-emerald-800 dark:text-emerald-300 font-black bg-emerald-100/70 dark:bg-emerald-900/40 px-2 py-0.5 rounded-md">
                   {insights.safety.safetyScore}/100
                 </span>
               </div>
-              <div className="mt-1.5 text-[11px] font-bold text-slate-800 dark:text-white truncate">
+              <div className="mt-2 text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white truncate">
                 🔌 Tip {plugTypesList.slice(0, 2).join(', ')} ({detectedVoltage})
               </div>
-              <div className="text-[9px] text-slate-500 dark:text-slate-400 mt-1 truncate">
+              <div className="text-xs text-slate-700 dark:text-slate-300 font-semibold mt-2 truncate">
                 {isTrCompatible ? '✓ Türkiye fişiyle doğrudan uyumlu' : '⚠️ Evrensel seyahat adaptörü gerekli'}
               </div>
             </button>
@@ -941,7 +941,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     return (
                       <div
                         key={sIdx}
-                        className="relative bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-4 sm:p-6 space-y-4 hover:border-[#5EEAD4] transition-all shadow-md backdrop-blur-md"
+                        className="relative bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/70 dark:border-[#2DD4BF]/40 rounded-2xl p-4 sm:p-6 space-y-4 shadow-sm"
                       >
                         {/* Stop Top Header */}
                         <div className="flex flex-wrap items-start justify-between gap-3">
@@ -950,12 +950,12 @@ Planlayan: Vizamigo (vizamigo.com)`;
                               {sIdx + 1}
                             </span>
                             <div className="min-w-0">
-                              <h3 className="font-black text-base sm:text-lg text-white tracking-tight truncate">
+                              <h3 className="font-black text-base sm:text-xl text-[#042F2E] dark:text-white tracking-tight truncate">
                                 {stop.name}
                               </h3>
                               <div className="flex items-center gap-2 mt-1">
-                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0D9488]/30 text-[#5EEAD4] border border-[#2DD4BF]/50 font-black text-xs sm:text-sm shadow-xs">
-                                  <Clock className="w-3.5 h-3.5 text-[#2DD4BF]" />
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100/90 dark:bg-teal-900/50 text-teal-950 dark:text-teal-200 border border-teal-300 dark:border-teal-700 font-extrabold text-xs sm:text-sm shadow-xs">
+                                  <Clock className="w-3.5 h-3.5 text-teal-700 dark:text-teal-300" />
                                   <span>{l('Yeterli Ziyaret Süresi:', 'Duration:', 'Dauer:', 'Duración:', 'Длительность:')} <b>{stop.recommendedDuration}</b></span>
                                 </span>
                               </div>
@@ -965,27 +965,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           <button
                             type="button"
                             onClick={() => window.open(stopMapsUrl, '_blank', 'noopener,noreferrer')}
-                            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-white border border-[#2DD4BF]/40 text-xs sm:text-sm font-black shadow-xs cursor-pointer transition-colors"
+                            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white dark:bg-slate-900 hover:bg-teal-50 dark:hover:bg-slate-800 text-teal-900 dark:text-teal-200 border border-teal-300 dark:border-teal-700 text-xs sm:text-sm font-black shadow-xs cursor-pointer transition-colors"
                           >
-                            <MapPin className="w-3.5 h-3.5 text-[#5EEAD4]" />
+                            <MapPin className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
                             <span>{l('Durağı Haritada Aç', 'View Stop on Maps', 'Auf Karte zeigen', 'Ver en el Mapa', 'Открыть на карте')}</span>
-                            <ExternalLink className="w-3 h-3 text-[#2DD4BF]" />
+                            <ExternalLink className="w-3 h-3 opacity-70" />
                           </button>
                         </div>
 
                         {/* Highlights Tags */}
                         {stop.highlights.length > 0 && (
                           <div className="space-y-1.5">
-                            <div className="text-xs font-black text-teal-200 uppercase tracking-wider">
+                            <div className="text-xs font-black text-teal-900 dark:text-teal-300 uppercase tracking-wider">
                               {l('Görülmesi Gereken İkonik Noktalar:', 'Must-See Landmarks:', 'Wichtigste Sehenswürdigkeiten:', 'Lugares Emblemáticos:', 'Главные достопримечательности:')}
                             </div>
                             <div className="flex flex-wrap gap-2">
                               {stop.highlights.map((h, hIdx) => (
                                 <span
                                   key={hIdx}
-                                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-white/10 dark:bg-white/[0.08] border border-[#2DD4BF]/40 text-white text-xs sm:text-sm font-bold shadow-xs"
+                                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-teal-700/60 text-slate-900 dark:text-white text-xs sm:text-sm font-bold shadow-2xs"
                                 >
-                                  <span className="w-2 h-2 rounded-full bg-[#2DD4BF]" />
+                                  <span className="w-2 h-2 rounded-full bg-teal-500" />
                                   <span>{h}</span>
                                 </span>
                               ))}
@@ -995,14 +995,14 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                         {/* Activities List */}
                         <div className="space-y-2 pt-1">
-                          <div className="text-xs font-black text-teal-200 uppercase tracking-wider flex items-center gap-1.5">
+                          <div className="text-xs font-black text-teal-900 dark:text-teal-300 uppercase tracking-wider flex items-center gap-1.5">
                             <span>🏃</span>
                             <span>{l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:', 'Qué Hacer y Actividades:', 'Чем заняться и что посмотреть:')}</span>
                           </div>
                           <ul className="space-y-1.5">
                             {stop.activities.map((act, aIdx) => (
-                              <li key={aIdx} className="text-xs sm:text-sm text-teal-50 dark:text-teal-100 flex items-start gap-2 font-medium leading-relaxed">
-                                <span className="text-[#5EEAD4] font-black flex-shrink-0">•</span>
+                              <li key={aIdx} className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 flex items-start gap-2 font-medium leading-relaxed">
+                                <span className="text-teal-600 dark:text-teal-400 font-black flex-shrink-0">•</span>
                                 <span>{act}</span>
                               </li>
                             ))}
@@ -1010,16 +1010,16 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         </div>
 
                         {/* Gastronomy Box for Stop - Harmonious Ocean Turquoise Glass */}
-                        <div className="p-3.5 sm:p-4 rounded-2xl bg-[#0F766E]/25 border border-[#2DD4BF]/40 space-y-2">
-                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-[#5EEAD4]">
-                            <Utensils className="w-4 h-4 text-[#2DD4BF]" />
+                        <div className="p-3.5 sm:p-4 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border border-emerald-300/80 dark:border-emerald-700/60 space-y-2">
+                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-emerald-900 dark:text-emerald-200">
+                            <Utensils className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                             <span>{l('🍲 Bu Durakta Ne Yenir & Ne İçilir?', '🍲 What to Eat & Drink at this Stop:', '🍲 Essen & Trinken an diesem Stopp:', '🍲 Qué Comer y Beber en esta Parada:', '🍲 Что поесть и выпить на этой остановке:')}</span>
                           </div>
                           <div className="flex flex-wrap gap-2 pt-0.5">
                             {stop.foodAndDrinks.map((fd, fIdx) => (
                               <span
                                 key={fIdx}
-                                className="px-3 py-1 rounded-xl bg-white/15 dark:bg-white/10 border border-[#2DD4BF]/40 text-xs sm:text-sm font-black text-white shadow-xs"
+                                className="px-3 py-1 rounded-xl bg-white dark:bg-slate-900 border border-emerald-200 dark:border-emerald-700 text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white shadow-2xs"
                               >
                                 {fd}
                               </span>
@@ -1028,15 +1028,15 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         </div>
 
                         {/* Critical Tips & Precautions for Stop - High-Contrast Lagoon Alert */}
-                        <div className="p-3.5 sm:p-4 rounded-2xl bg-[#032B3D]/70 border border-cyan-400/40 space-y-2">
+                        <div className="p-3.5 sm:p-4 rounded-2xl bg-[#042637] dark:bg-[#031E2C] border border-cyan-500/50 space-y-2 text-white shadow-sm">
                           <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-cyan-200">
-                            <AlertTriangle className="w-4 h-4 text-cyan-300" />
+                            <AlertTriangle className="w-4 h-4 text-amber-400" />
                             <span>{l('⚠️ Nelere Dikkat Edilir & Kritik İpuçları:', '⚠️ What to Watch Out for & Tips:', '⚠️ Wichtige Hinweise & Tipps:', '⚠️ Precauciones y Consejos Clave:', '⚠️ На что обратить внимание и советы:')}</span>
                           </div>
                           <ul className="space-y-1.5">
                             {stop.criticalTips.map((tip, tIdx) => (
-                              <li key={tIdx} className="text-xs sm:text-sm text-teal-50 dark:text-teal-100 font-medium flex items-start gap-2 leading-relaxed">
-                                <span className="text-[#5EEAD4] font-black flex-shrink-0">›</span>
+                              <li key={tIdx} className="text-xs sm:text-sm text-cyan-100 font-medium flex items-start gap-2 leading-relaxed">
+                                <span className="text-cyan-400 font-black flex-shrink-0">›</span>
                                 <span>{tip}</span>
                               </li>
                             ))}
@@ -1049,74 +1049,83 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* Signature Gastronomy Summary */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-4">
-                <div className="flex items-center gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-3">
-                  <Utensils className="w-5 h-5 text-orange-600 dark:text-orange-400" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 space-y-4 shadow-sm">
+                <div className="flex items-center gap-2.5 border-b border-teal-500/20 dark:border-slate-700/60 pb-3">
+                  <Utensils className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+                  <h3 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
                     {l('Mutfak Kültürü: Rotanın İmza Lezzetleri & İçecekleri', 'Culinary Culture: Signature Dishes & Drinks', 'Kulinarik: Typische Gerichte & Getränke', 'Cultura Culinaria: Platos y Bebidas Emblemáticas', 'Кулинарная культура: фирменные блюда и напитки')}
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
                   {/* Famous Dishes */}
-                  <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-700/70 space-y-2">
-                    <div className="text-xs font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 space-y-2 shadow-2xs">
+                    <div className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍲</span>
                       <span>{l('Öne Çıkan Yemekler', 'Signature Dishes', 'Typische Gerichte', 'Platos Destacados', 'Фирменные блюда')}</span>
                     </div>
-                    <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-300 font-medium">
+                    <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                       {itinerary.signatureGastronomy.dishes.map((dish, idx) => (
-                        <li key={idx}>• {dish}</li>
+                        <li key={idx} className="flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0" />
+                          <span>{dish}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* Drinks */}
-                  <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-700/70 space-y-2">
-                    <div className="text-xs font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 space-y-2 shadow-2xs">
+                    <div className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍹</span>
                       <span>{l('Geleneksel İçecekler', 'Traditional Drinks', 'Traditionelle Getränke', 'Bebidas Tradicionales', 'Традиционные напитки')}</span>
                     </div>
-                    <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-300 font-medium">
+                    <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                       {itinerary.signatureGastronomy.drinks.map((drink, idx) => (
-                        <li key={idx}>• {drink}</li>
+                        <li key={idx} className="flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-sky-500 flex-shrink-0" />
+                          <span>{drink}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* Street Food */}
-                  <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-700/70 space-y-2">
-                    <div className="text-xs font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 space-y-2 shadow-2xs">
+                    <div className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍢</span>
                       <span>{l('Sokak Lezzetleri & Tatlılar', 'Street Food & Sweets', 'Streetfood & Süßes', 'Comida Callejera y Postres', 'Уличная еда и сладости')}</span>
                     </div>
-                    <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-300 font-medium">
+                    <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                       {itinerary.signatureGastronomy.streetFoods.map((snack, idx) => (
-                        <li key={idx}>• {snack}</li>
+                        <li key={idx} className="flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
+                          <span>{snack}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
                 </div>
 
-                <div className="p-3 rounded-xl bg-teal-50/70 dark:bg-teal-950/40 border border-teal-200/70 dark:border-teal-800/60 text-xs text-teal-950 dark:text-teal-200 font-medium leading-relaxed">
-                  <b className="font-bold">💡 {l('Masa Kültürü & Bahşiş:', 'Dining Etiquette & Tipping:', 'Tischsitten & Trinkgeld:', 'Etiqueta en la Mesa y Propinas:', 'Культура застолья и чаевые:')}</b> {itinerary.signatureGastronomy.diningAdvice}
+                <div className="p-3.5 rounded-xl bg-teal-50 dark:bg-teal-950/50 border border-teal-300 dark:border-teal-800 text-xs sm:text-sm text-teal-950 dark:text-teal-200 font-medium leading-relaxed">
+                  <b className="font-black">💡 {l('Masa Kültürü & Bahşiş:', 'Dining Etiquette & Tipping:', 'Tischsitten & Trinkgeld:', 'Etiqueta en la Mesa y Propinas:', 'Культура застолья и чаевые:')}</b> {itinerary.signatureGastronomy.diningAdvice}
                 </div>
               </div>
 
               {/* Packing & Precautions Card */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Packing Essentials */}
-                <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 sm:p-5 space-y-2.5">
-                  <div className="flex items-center gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-2">
+                <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-4 sm:p-5 space-y-3 shadow-sm">
+                  <div className="flex items-center gap-2 border-b border-teal-500/20 dark:border-slate-700/60 pb-2.5">
                     <span className="text-lg">🎒</span>
-                    <h3 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">
+                    <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-slate-100">
                       {l('Yanınıza Almanız Gerekenler (Çanta)', 'Packing Essentials', 'Packliste & Must-Haves', 'Imprescindibles en el Equipaje', 'Что взять с собой')}
                     </h3>
                   </div>
-                  <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                     {itinerary.packingAndPrecautions.essentials.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-1.5">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-teal-600 flex-shrink-0 mt-0.5" />
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1124,17 +1133,17 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 {/* Safety & Etiquette */}
-                <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-4 sm:p-5 space-y-2.5">
-                  <div className="flex items-center gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-2">
-                    <Shield className="w-4 h-4 text-emerald-600" />
-                    <h3 className="font-extrabold text-sm text-slate-900 dark:text-slate-100">
+                <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-4 sm:p-5 space-y-3 shadow-sm">
+                  <div className="flex items-center gap-2 border-b border-teal-500/20 dark:border-slate-700/60 pb-2.5">
+                    <Shield className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                    <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-slate-100">
                       {l('Güvenlik & Yerel Görgü Kuralları', 'Safety & Cultural Etiquette', 'Sicherheit & Verhaltensregeln', 'Seguridad y Etiqueta Cultural', 'Безопасность и местный этикет')}
                     </h3>
                   </div>
-                  <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                     {itinerary.packingAndPrecautions.safetyAndEtiquette.map((rule, idx) => (
-                      <li key={idx} className="flex items-start gap-1.5">
-                        <AlertTriangle className="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" />
+                      <li key={idx} className="flex items-start gap-2">
+                        <AlertTriangle className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
                         <span>{rule}</span>
                       </li>
                     ))}
@@ -2201,10 +2210,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {activeTab === 'gastronomy' && (
             <div className="space-y-6 animate-in fade-in duration-200">
               {/* Meşhur Milli Yemekler */}
-              <div className="bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-5 sm:p-6 shadow-md backdrop-blur-md">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm">
                 <div className="flex items-center gap-2.5 mb-4">
-                  <Utensils className="w-5 h-5 text-[#5EEAD4]" />
-                  <h2 className="font-black text-base sm:text-xl text-white tracking-tight">
+                  <Utensils className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+                  <h2 className="font-black text-base sm:text-xl text-slate-900 dark:text-slate-100 tracking-tight">
                     {name} {l('Meşhur Yemekleri, İçecekleri ve Mutfak Kültürü', 'Gastronomy, Famous Dishes & Culinary Guide', 'Kulinarik, berühmte Gerichte & Esskultur', 'Gastronomía, Platos Típicos y Guía Culinaria', 'Национальная кухня, популярные блюда и напитки')}
                   </h2>
                 </div>
@@ -2212,7 +2221,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   {encyclopedia.gastronomy.famousDishes.map((dish, idx) => (
                     <div
                       key={idx}
-                      className="p-4 rounded-xl bg-white/[0.12] dark:bg-white/[0.07] border border-[#2DD4BF]/40 hover:border-[#5EEAD4] text-white font-bold text-sm sm:text-base flex items-center gap-3 shadow-sm transition-all"
+                      className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 hover:border-teal-400 text-slate-900 dark:text-white font-bold text-sm sm:text-base flex items-center gap-3 shadow-2xs transition-all"
                     >
                       <span className="text-2xl flex-shrink-0">🍲</span>
                       <span className="leading-snug">{dish}</span>
@@ -2224,10 +2233,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
               {/* İçecekler & Sokak Lezzetleri */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Geleneksel İçecekler */}
-                <div className="bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-5 shadow-md backdrop-blur-md">
+                <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 shadow-sm">
                   <div className="flex items-center gap-2 mb-3.5">
                     <span className="text-xl">☕</span>
-                    <h3 className="font-black text-sm sm:text-base text-white">
+                    <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-slate-100">
                       {l('Geleneksel ve Popüler İçecekler', 'Traditional & Popular Drinks', 'Traditionelle Getränke', 'Bebidas Tradicionales y Populares', 'Традиционные и популярные напитки')}
                     </h3>
                   </div>
@@ -2235,9 +2244,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     {encyclopedia.gastronomy.traditionalDrinks.map((drink, idx) => (
                       <div
                         key={idx}
-                        className="p-3 rounded-xl bg-white/[0.12] dark:bg-white/[0.07] border border-[#2DD4BF]/40 hover:border-[#5EEAD4] text-sm font-bold text-white flex items-center gap-2.5 transition-all"
+                        className="p-3.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 hover:border-teal-400 text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2.5 shadow-2xs transition-all"
                       >
-                        <span className="w-2 h-2 rounded-full bg-[#2DD4BF] flex-shrink-0" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-teal-500 flex-shrink-0" />
                         <span>{drink}</span>
                       </div>
                     ))}
@@ -2245,10 +2254,10 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 {/* Sokak Lezzetleri ve Tatlılar */}
-                <div className="bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-5 shadow-md backdrop-blur-md">
+                <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 shadow-sm">
                   <div className="flex items-center gap-2 mb-3.5">
                     <span className="text-xl">🍰</span>
-                    <h3 className="font-black text-sm sm:text-base text-white">
+                    <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-slate-100">
                       {l('Sokak Lezzetleri ve Tatlılar', 'Street Food & Iconic Desserts', 'Streetfood & Süßspeisen', 'Comida Callejera y Postres', 'Уличная еда и десерты')}
                     </h3>
                   </div>
@@ -2256,9 +2265,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     {encyclopedia.gastronomy.streetFoodAndDesserts.map((dessert, idx) => (
                       <div
                         key={idx}
-                        className="p-3 rounded-xl bg-white/[0.12] dark:bg-white/[0.07] border border-[#2DD4BF]/40 hover:border-[#5EEAD4] text-sm font-bold text-white flex items-center gap-2.5 transition-all"
+                        className="p-3.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 hover:border-teal-400 text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2.5 shadow-2xs transition-all"
                       >
-                        <span className="w-2 h-2 rounded-full bg-[#38BDF8] flex-shrink-0" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-sky-500 flex-shrink-0" />
                         <span>{dessert}</span>
                       </div>
                     ))}
