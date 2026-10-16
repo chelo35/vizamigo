@@ -885,8 +885,13 @@ export function getCountryName(code: string, lang?: string): string {
 }
 
 export function getFlag(code: string): string {
-  if (code === 'XK') return '🇽🇰';
-  return String.fromCodePoint(...[...code.toUpperCase()].map(c => 127397 + c.charCodeAt(0)));
+  if (!code || typeof code !== 'string') return '🏳️';
+  if (code.toUpperCase() === 'XK') return '🇽🇰';
+  try {
+    return String.fromCodePoint(...[...code.toUpperCase()].map(c => 127397 + c.charCodeAt(0)));
+  } catch {
+    return '🏳️';
+  }
 }
 
 export const REGIONS: Record<string, string[]> = {

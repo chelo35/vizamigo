@@ -142,8 +142,9 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
     }
     const q = countryPickerSearch.toLocaleLowerCase('tr').trim();
     return passportItems.filter((it: CountryItem) => {
-      const name = getCountryName(it.code, language).toLocaleLowerCase('tr');
-      return name.includes(q) || it.code.toLowerCase().includes(q);
+      const code = it.c || (it as any).code || '';
+      const name = getCountryName(code, language).toLocaleLowerCase('tr');
+      return name.includes(q) || code.toLowerCase().includes(q);
     });
   }, [passportItems, countryPickerSearch, language]);
 
@@ -287,21 +288,21 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       {/* =====================================================================
           ROW 1: AUTONOMOUS AI TRAVEL AGENTS QUICK DOCK (SINGLE SCROLLING ROW)
       ===================================================================== */}
-      <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#032030]/95 via-[#0D9488]/25 to-[#0284C7]/20 border border-[#2DD4BF]/40 backdrop-blur-xl shadow-md overflow-x-auto no-scrollbar scrollbar-none">
+      <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#021824] via-[#04283b] to-[#011420] border-2 border-[#2DD4BF]/50 backdrop-blur-xl shadow-lg overflow-x-auto no-scrollbar scrollbar-none">
         {/* Left Label */}
-        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-gradient-to-r from-[#F97316]/25 to-[#FB7185]/25 border border-[#F97316]/40 shrink-0">
-          <Sparkles className="w-3.5 h-3.5 text-[#F97316] animate-pulse" />
+        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-gradient-to-r from-[#ea580c] to-[#e11d48] border border-[#f97316]/50 shrink-0 shadow-sm">
+          <Sparkles className="w-3.5 h-3.5 text-white animate-pulse" />
           <span className="text-xs font-black text-white whitespace-nowrap">
             {l('Otonom AI Ajanları', 'AI Agents')}
           </span>
-          <span className="text-[10px] uppercase font-black px-1.5 py-0.2 rounded-md bg-[#F97316] text-white">4</span>
+          <span className="text-[10px] uppercase font-black px-1.5 py-0.2 rounded-md bg-white text-[#ea580c]">4</span>
         </div>
 
         {/* All 4 Agents in 1 row, horizontally swipeable and fully visible */}
         <button
           type="button"
           onClick={() => onOpenAssistant?.()}
-          className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#032030] hover:bg-[#06344d] border border-[#2DD4BF]/60 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🛡️</span>
           <span>{l('Schengen Nöbetçisi', 'Schengen Sentinel')}</span>
@@ -309,7 +310,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onOpenAssistant?.()}
-          className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#032030] hover:bg-[#06344d] border border-[#2DD4BF]/60 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🛰️</span>
           <span>{l('Vizesiz Fırsat Radarı', 'Visa-Free Radar')}</span>
@@ -317,7 +318,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onOpenAssistant?.()}
-          className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#032030] hover:bg-[#06344d] border border-[#2DD4BF]/60 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🧭</span>
           <span>{l('Kişisel Rota Mimarı', 'Itinerary Architect')}</span>
@@ -325,7 +326,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onOpenAssistant?.()}
-          className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shadow-xs shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#ea580c] to-[#e11d48] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shadow-xs shrink-0"
         >
           <span>🧳</span>
           <span>{l('Akıllı Bavul Stratejisti', 'Luggage Strategist')}</span>
@@ -335,11 +336,11 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       {/* =====================================================================
           ROW 2: TÜM SİTE ÖZELLİKLERİ TEK TIKLA KISAYOL BARI (INDEPENDENT PALETTE)
       ===================================================================== */}
-      <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#1E1B4B]/90 via-[#312E81]/35 to-[#4338CA]/25 border border-indigo-400/40 backdrop-blur-xl shadow-md overflow-x-auto no-scrollbar scrollbar-none">
+      <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#0f0c29] via-[#1b1744] to-[#24243e] border-2 border-indigo-500/50 backdrop-blur-xl shadow-lg overflow-x-auto no-scrollbar scrollbar-none">
         {/* Left Label */}
-        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-indigo-500/25 border border-indigo-400/40 shrink-0">
+        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-indigo-600/40 border border-indigo-400/50 shrink-0 shadow-sm">
           <span className="text-xs">⚡</span>
-          <span className="text-xs font-black text-indigo-200 whitespace-nowrap">
+          <span className="text-xs font-black text-indigo-100 whitespace-nowrap">
             {l('Hızlı Erişim', 'Shortcuts')}
           </span>
         </div>
@@ -348,7 +349,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => openWidget('radar', 'all')}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🌍</span>
           <span>{l('199 Ülke Radarı', '199 Country Radar')}</span>
@@ -356,7 +357,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onSelectTab?.('plan')}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🛂</span>
           <span>{l('Pasaport Karşılaştır', 'Compare Passports')}</span>
@@ -364,7 +365,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => openWidget('day_counter', 'schengen')}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>⏳</span>
           <span>{l('90/180 Gün Sayacı', 'Day Counter')}</span>
@@ -372,7 +373,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => openWidget('currency', 'converter')}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>💱</span>
           <span>{l('Döviz & Bütçe', 'Currency & Budget')}</span>
@@ -380,7 +381,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onOpenTimezoneOverlap?.()}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>⏰</span>
           <span>{l('Dünya Saatleri', 'World Clock')}</span>
@@ -388,7 +389,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onOpenPackingList?.()}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🧳</span>
           <span>{l('Akıllı Bavul', 'Packing List')}</span>
@@ -396,7 +397,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => openWidget('nomad', 'hubs')}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>💻</span>
           <span>{l('Dijital Göçebe', 'Digital Nomad')}</span>
@@ -404,7 +405,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => openWidget('local_apps', 'apps', appsCountry)}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>📱</span>
           <span>{l('Tüm Uygulamalar', 'All Apps')}</span>
@@ -412,7 +413,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => onOpenTippingCalc?.()}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>💵</span>
           <span>{l('Bahşiş Hesaplayıcı', 'Tipping Calc')}</span>
@@ -420,7 +421,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         <button
           type="button"
           onClick={() => openWidget('emergency', 'sos')}
-          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+          className="px-3 py-1.5 rounded-xl bg-[#13112c] hover:bg-[#1f1b4a] border border-indigo-400/50 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0 shadow-xs"
         >
           <span>🆘</span>
           <span>{l('Acil Kriz Masası', 'Emergency SOS')}</span>
@@ -586,7 +587,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </div>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <Passports3DIllustration
               codeA={currentPassport}
               codeB={effectiveSecondPassport}
@@ -623,7 +624,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </div>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <GlobalDayCounter3DIllustration daysLeft={48} />
           </div>
 
@@ -650,7 +651,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </h3>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <CurrencyCoins3DIllustration />
           </div>
 
@@ -681,7 +682,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </span>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <Suitcases3DIllustration progress={75} />
           </div>
 
@@ -711,7 +712,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </p>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <WorldClock3DIllustration />
           </div>
 
@@ -746,7 +747,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </p>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <LocalApps3DIllustration />
           </div>
 
@@ -780,7 +781,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </p>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <NomadIsland3DIllustration />
           </div>
 
@@ -814,7 +815,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </p>
           </div>
 
-          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
+          <div className="h-14 sm:h-16 flex items-center justify-center my-0.5">
             <LifebuoySOS3DIllustration />
           </div>
 
@@ -895,30 +896,33 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
             {/* Scrollable list of 199 countries */}
             <div className="overflow-y-auto space-y-1 pr-1 flex-1">
-              {allFilteredCountries.map((it: CountryItem) => (
-                <button
-                  key={it.code}
-                  type="button"
-                  onClick={() => {
-                    setResearchCountry(it.code);
-                    setShowCountrySearchModal(false);
-                  }}
-                  className={`w-full flex items-center justify-between p-2.5 rounded-xl text-left text-xs font-black transition-colors ${
-                    researchCountry === it.code
-                      ? 'bg-[#0D9488] text-white shadow-sm'
-                      : 'hover:bg-white/10 text-slate-100'
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span className="text-lg leading-none">{getFlag(it.code)}</span>
-                    <span>{getCountryName(it.code, language)}</span>
-                    <span className="text-[10px] text-slate-400">({it.code})</span>
-                  </div>
-                  <span className="text-[10px] px-2 py-0.5 rounded-md bg-white/15 text-[#5EEAD4]">
-                    {getCategoryBadgeLabel(it, language)}
-                  </span>
-                </button>
-              ))}
+              {allFilteredCountries.map((it: CountryItem) => {
+                const code = it.c || (it as any).code || '';
+                return (
+                  <button
+                    key={code}
+                    type="button"
+                    onClick={() => {
+                      setResearchCountry(code);
+                      setShowCountrySearchModal(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-2.5 rounded-xl text-left text-xs font-black transition-colors ${
+                      researchCountry === code
+                        ? 'bg-[#0D9488] text-white shadow-sm'
+                        : 'hover:bg-white/10 text-slate-100'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <span className="text-lg leading-none">{getFlag(code)}</span>
+                      <span>{getCountryName(code, language)}</span>
+                      <span className="text-[10px] text-slate-400">({code})</span>
+                    </div>
+                    <span className="text-[10px] px-2 py-0.5 rounded-md bg-white/15 text-[#5EEAD4]">
+                      {getCategoryBadgeLabel(it, language)}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -1124,11 +1128,14 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                             className="w-full px-4 py-2.5 rounded-2xl bg-[#042637] text-white border-2 border-[#2DD4BF] text-xs sm:text-sm font-black appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#5EEAD4] shadow-md pr-10"
                           >
                             <option value="" disabled>{l('Tüm 199 Ülke İçinden Seç...', 'Select from 199 Countries...')}</option>
-                            {passportItems.map((it: CountryItem) => (
-                              <option key={it.code} value={it.code} className="bg-[#042637] text-white">
-                                {getFlag(it.code)} {getCountryName(it.code, language)} ({it.code})
-                              </option>
-                            ))}
+                            {passportItems.map((it: CountryItem) => {
+                              const code = it.c || (it as any).code || '';
+                              return (
+                                <option key={code} value={code} className="bg-[#042637] text-white">
+                                  {getFlag(code)} {getCountryName(code, language)} ({code})
+                                </option>
+                              );
+                            })}
                           </select>
                           <ChevronDown className="w-4 h-4 text-[#5EEAD4] absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                         </div>
