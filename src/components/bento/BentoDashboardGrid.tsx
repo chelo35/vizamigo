@@ -79,7 +79,10 @@ interface BentoDashboardGridProps {
   onOpenAssistant?: () => void;
 }
 
-const POPULAR_RESEARCH_COUNTRIES = ['TH', 'JP', 'IT', 'ES', 'GR', 'DE', 'AE', 'GE', 'RS', 'ME', 'GB', 'US', 'KR', 'ID', 'BR', 'EG'];
+const POPULAR_RESEARCH_COUNTRIES = [
+  'TH', 'JP', 'IT', 'ES', 'GR', 'DE', 'AE', 'GE', 'RS', 'ME', 'GB', 'US', 'KR', 'ID', 'BR', 'EG',
+  'FR', 'NL', 'CH', 'PT', 'VN', 'SG', 'MY', 'MX', 'MA', 'AL', 'BA', 'AZ', 'QA', 'NO'
+];
 
 // Isolated self-updating live city clock component (prevents whole dashboard grid re-renders)
 const LiveCityClock: React.FC<{ offsetHours: number; label?: string }> = ({ offsetHours, label }) => {
@@ -122,13 +125,28 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   const [widgetSearch, setWidgetSearch] = useState<string>('');
   const [selectedAppCategory, setSelectedAppCategory] = useState<string>('all');
 
-  // Interactive card local states
+  // Interactive card local states & country search modal
   const [researchCountry, setResearchCountry] = useState<string>('TH');
   const [showCountryPicker, setShowCountryPicker] = useState<boolean>(false);
+  const [showCountrySearchModal, setShowCountrySearchModal] = useState<boolean>(false);
+  const [countryPickerSearch, setCountryPickerSearch] = useState<string>('');
   const [appsCountry, setAppsCountry] = useState<string>('TH');
 
   // Passport items & stats
   const passportItems = useMemo(() => getPassportItems(currentPassport), [currentPassport]);
+
+  // Real-time filtered countries for country search modal
+  const allFilteredCountries = useMemo(() => {
+    if (!countryPickerSearch.trim()) {
+      return passportItems;
+    }
+    const q = countryPickerSearch.toLocaleLowerCase('tr').trim();
+    return passportItems.filter((it: CountryItem) => {
+      const name = getCountryName(it.code, language).toLocaleLowerCase('tr');
+      return name.includes(q) || it.code.toLowerCase().includes(q);
+    });
+  }, [passportItems, countryPickerSearch, language]);
+
   const stats = useMemo(() => {
     let free = 0;
     let evisa = 0;
@@ -267,126 +285,196 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       className="space-y-4 sm:space-y-5"
     >
       {/* =====================================================================
-          AUTONOMOUS AI TRAVEL AGENTS QUICK DOCK
+          ROW 1: AUTONOMOUS AI TRAVEL AGENTS QUICK DOCK (SINGLE SCROLLING ROW)
       ===================================================================== */}
-      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 p-2 sm:p-2.5 rounded-2xl sm:rounded-full bg-gradient-to-r from-[#032030]/90 via-[#0D9488]/20 to-[#0284C7]/20 border border-[#2DD4BF]/40 backdrop-blur-xl shadow-lg">
-        <div className="flex items-center gap-2 pl-2 sm:pl-3">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#F97316] to-[#FB7185] flex items-center justify-center text-white shadow-xs shrink-0">
-            <Sparkles className="w-4 h-4 text-white animate-pulse" />
-          </div>
-          <span className="text-xs sm:text-sm font-black text-white flex items-center gap-1.5 whitespace-nowrap">
-            <span>{l('Otonom AI Ajanları', 'Autonomous AI Agents')}</span>
-            <span className="text-[10px] uppercase font-black px-1.5 py-0.5 rounded-md bg-[#F97316] text-white">4 Ajan</span>
+      <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#032030]/95 via-[#0D9488]/25 to-[#0284C7]/20 border border-[#2DD4BF]/40 backdrop-blur-xl shadow-md overflow-x-auto no-scrollbar scrollbar-none">
+        {/* Left Label */}
+        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-gradient-to-r from-[#F97316]/25 to-[#FB7185]/25 border border-[#F97316]/40 shrink-0">
+          <Sparkles className="w-3.5 h-3.5 text-[#F97316] animate-pulse" />
+          <span className="text-xs font-black text-white whitespace-nowrap">
+            {l('Otonom AI Ajanları', 'AI Agents')}
           </span>
+          <span className="text-[10px] uppercase font-black px-1.5 py-0.2 rounded-md bg-[#F97316] text-white">4</span>
         </div>
 
-        <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 sm:pb-0">
-          <button
-            type="button"
-            onClick={() => onOpenAssistant?.()}
-            className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
-          >
-            <span>🛡️</span>
-            <span>{l('Schengen Nöbetçisi', 'Schengen Sentinel')}</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => onOpenAssistant?.()}
-            className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
-          >
-            <span>🛰️</span>
-            <span>{l('Vizesiz Fırsat Radarı', 'Visa-Free Radar')}</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => onOpenAssistant?.()}
-            className="hidden md:flex px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap items-center gap-1.5 shrink-0"
-          >
-            <span>🧭</span>
-            <span>{l('Kişisel Rota Mimarı', 'Itinerary Architect')}</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => onOpenAssistant?.()}
-            className="px-3 py-1.5 rounded-full bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shadow-xs shrink-0"
-          >
-            <span>🧳</span>
-            <span>{l('Seyahat Dosyası (PDF)', 'Trip Dossier (PDF)')}</span>
-          </button>
-        </div>
+        {/* All 4 Agents in 1 row, horizontally swipeable and fully visible */}
+        <button
+          type="button"
+          onClick={() => onOpenAssistant?.()}
+          className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🛡️</span>
+          <span>{l('Schengen Nöbetçisi', 'Schengen Sentinel')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onOpenAssistant?.()}
+          className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🛰️</span>
+          <span>{l('Vizesiz Fırsat Radarı', 'Visa-Free Radar')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onOpenAssistant?.()}
+          className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-[#2DD4BF]/40 text-xs font-black text-white hover:text-[#5EEAD4] transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🧭</span>
+          <span>{l('Kişisel Rota Mimarı', 'Itinerary Architect')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onOpenAssistant?.()}
+          className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#F97316] to-[#FB7185] hover:brightness-110 text-white text-xs font-black transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shadow-xs shrink-0"
+        >
+          <span>🧳</span>
+          <span>{l('Akıllı Bavul Stratejisti', 'Luggage Strategist')}</span>
+        </button>
       </div>
 
       {/* =====================================================================
-          MAIN V2 LAGOON WIDGET GRID (UNIFORM SQUARE 2-COLUMN BALANCED LAYOUT)
+          ROW 2: TÜM SİTE ÖZELLİKLERİ TEK TIKLA KISAYOL BARI (INDEPENDENT PALETTE)
       ===================================================================== */}
-      <div className="grid grid-cols-2 lg:grid-cols-2 gap-3.5 sm:gap-5">
+      <div className="flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl bg-gradient-to-r from-[#1E1B4B]/90 via-[#312E81]/35 to-[#4338CA]/25 border border-indigo-400/40 backdrop-blur-xl shadow-md overflow-x-auto no-scrollbar scrollbar-none">
+        {/* Left Label */}
+        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-indigo-500/25 border border-indigo-400/40 shrink-0">
+          <span className="text-xs">⚡</span>
+          <span className="text-xs font-black text-indigo-200 whitespace-nowrap">
+            {l('Hızlı Erişim', 'Shortcuts')}
+          </span>
+        </div>
+
+        {/* 10 Feature Shortcuts */}
+        <button
+          type="button"
+          onClick={() => openWidget('radar', 'all')}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🌍</span>
+          <span>{l('199 Ülke Radarı', '199 Country Radar')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onSelectTab?.('plan')}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🛂</span>
+          <span>{l('Pasaport Karşılaştır', 'Compare Passports')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => openWidget('day_counter', 'schengen')}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>⏳</span>
+          <span>{l('90/180 Gün Sayacı', 'Day Counter')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => openWidget('currency', 'converter')}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>💱</span>
+          <span>{l('Döviz & Bütçe', 'Currency & Budget')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onOpenTimezoneOverlap?.()}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>⏰</span>
+          <span>{l('Dünya Saatleri', 'World Clock')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onOpenPackingList?.()}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🧳</span>
+          <span>{l('Akıllı Bavul', 'Packing List')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => openWidget('nomad', 'hubs')}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>💻</span>
+          <span>{l('Dijital Göçebe', 'Digital Nomad')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => openWidget('local_apps', 'apps', appsCountry)}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>📱</span>
+          <span>{l('Tüm Uygulamalar', 'All Apps')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => onOpenTippingCalc?.()}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>💵</span>
+          <span>{l('Bahşiş Hesaplayıcı', 'Tipping Calc')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => openWidget('emergency', 'sos')}
+          className="px-3 py-1.5 rounded-xl bg-indigo-950/60 hover:bg-indigo-900/80 border border-indigo-300/30 text-xs font-black text-indigo-100 hover:text-white transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 shrink-0"
+        >
+          <span>🆘</span>
+          <span>{l('Acil Kriz Masası', 'Emergency SOS')}</span>
+        </button>
+      </div>
+
+      {/* =====================================================================
+          MAIN V2 LAGOON WIDGET GRID (ALL 10 WIDGETS UNIFORM COMPACT HALF-HEIGHT)
+      ===================================================================== */}
+      <div className="grid grid-cols-2 lg:grid-cols-2 gap-2.5 sm:gap-4">
         {/* -----------------------------------------------------------------
-            WIDGET 1: PASAPORTUMLA NEREYE GİDEBİLİRİM? (DÜNYA RADARI & 199 ÜLKE)
-            1 col on Mobile & Desktop (Square Proportional Card)
+            WIDGET 1: PASAPORTUMLA NEREYE GİDEBİLİRİM?
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => {
-            openWidget('radar', 'all');
-          }}
+          onClick={() => openWidget('radar', 'all')}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') openWidget('radar', 'all');
-          }}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] border-2 border-[#5EEAD4]/60 shadow-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between p-4 sm:p-5"
+          onKeyDown={(e) => e.key === 'Enter' && openWidget('radar', 'all')}
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between p-2.5 sm:p-3.5"
         >
-          {/* Real Tropical Turquoise Island Lagoon Photo Background */}
           <img
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75"
-            srcSet="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=480&fm=webp&q=75 480w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=720&fm=webp&q=75 720w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&fm=webp&q=75 1000w"
-            sizes="(max-width: 768px) 50vw, 550px"
             alt={l('Turkuaz Lagün & Dünya Radarı', 'Turquoise Lagoon & World Radar')}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
-            fetchPriority="high"
             decoding="async"
-            width={684}
-            height={395}
           />
-          {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/75 to-[#0D9488]/85" />
 
-          {/* Top Title & Quick Stats */}
-          <div className="relative z-10 space-y-2">
-            <h2 className="text-base sm:text-xl lg:text-2xl font-black text-white leading-tight tracking-tight drop-shadow-md">
+          <div className="relative z-10 space-y-1">
+            <h2 className="text-xs sm:text-sm font-black text-white leading-tight tracking-tight drop-shadow-md">
               {l('Pasaportumla Nereye Gidebilirim?', 'Where Can I Go?')}
-              <span className="block text-xs sm:text-sm text-[#BAE6FD] font-extrabold mt-0.5">
-                {l('(Dünya Radarı & 199 Ülke)', '(World Radar & 199 Countries)')}
-              </span>
             </h2>
-
-            <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
-              <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-[#38BDF8] text-[#042637] shadow-sm">
-                {stats.free} {l('Vizesiz', 'Visa-Free')}
+            <div className="flex flex-wrap items-center gap-1">
+              <span className="px-2 py-0.5 rounded-lg text-[10px] sm:text-xs font-black bg-[#38BDF8] text-[#042637] shadow-xs">
+                {stats.free} {l('Vizesiz', 'Free')}
               </span>
-              <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-[#5EEAD4] text-[#042F2E] shadow-sm">
+              <span className="px-2 py-0.5 rounded-lg text-[10px] sm:text-xs font-black bg-[#5EEAD4] text-[#042F2E] shadow-xs">
                 {stats.evisa} {l('E-Vize', 'eVisa')}
               </span>
             </div>
           </div>
 
-          {/* Center 3D Glowing World Icon */}
-          <div className="relative z-10 self-center -my-1 scale-90 sm:scale-100">
-            <WorldRadar3DIllustration />
-          </div>
-
-          {/* Bottom Action Buttons */}
-          <div className="relative z-10 flex flex-wrap items-center gap-2 pt-1">
+          <div className="relative z-10 flex items-center gap-1.5 pt-1">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 openWidget('radar', 'all');
               }}
-              className="flex-1 min-w-[120px] px-3 py-1.5 rounded-xl text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-md transition-all cursor-pointer flex items-center justify-center gap-1.5"
+              className="flex-1 px-2.5 py-1 sm:py-1.5 rounded-xl text-[10px] sm:text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1"
             >
               <span>🌍</span>
-              <span>{l('199 Ülke Radarı →', '199 Country Radar →')}</span>
+              <span className="truncate">{l('199 Ülke Radarı →', '199 Radar →')}</span>
             </button>
             <button
               type="button"
@@ -396,7 +484,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
                 else onSelectTab?.('explore');
               }}
-              className="px-2.5 py-1.5 rounded-xl text-xs font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer"
+              className="px-2 py-1 sm:py-1.5 rounded-xl text-[10px] sm:text-xs font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer shrink-0"
               title={l('Ülke Tablosuna İn', 'Scroll to Country Table')}
             >
               {l('Liste', 'List')}
@@ -405,144 +493,100 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 2: ÜLKE ARAŞTIRMA MERKEZİ (199 ÜLKE REHBERİ)
-            1 col on Mobile & Desktop (Square Proportional Card)
+            WIDGET 2: ÜLKE ARAŞTIRMA MERKEZİ (SEARCH MODAL TRIGGER)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('country_research', 'visa', researchCountry)}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') openWidget('country_research', 'visa', researchCountry);
-          }}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] border-2 border-[#5EEAD4]/60 shadow-2xl transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between p-4 sm:p-5 cursor-pointer"
+          onKeyDown={(e) => e.key === 'Enter' && openWidget('country_research', 'visa', researchCountry)}
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between p-2.5 sm:p-3.5 cursor-pointer"
         >
-          {/* Real Tropical Limestone Lagoon Photo Background (Thailand / Selected Country) */}
           <img
             src={
               researchCountry === 'TH'
                 ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=720&fm=webp&q=75'
                 : researchVisual.image
             }
-            sizes="(max-width: 768px) 50vw, 550px"
             alt={getCountryName(researchCountry, language)}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
             decoding="async"
-            width={584}
-            height={411}
           />
-          {/* Luminous Ocean Blue & Lagoon Gradient Scrim */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/70 to-[#0D9488]/85" />
 
-          {/* Top Title & Country Selector Pill */}
-          <div className="relative z-10 space-y-2">
-            <h2 className="text-base sm:text-xl lg:text-2xl font-black text-white leading-tight tracking-tight drop-shadow-md">
-              {l('Ülke Araştırma:', 'Country Research:')}
-            </h2>
-
-            {/* Active Country Pill + Quick Country Switcher */}
-            <div className="flex items-center gap-1.5">
+          <div className="relative z-10 space-y-1">
+            <div className="flex items-center justify-between gap-1">
+              <h2 className="text-xs sm:text-sm font-black text-white leading-tight tracking-tight drop-shadow-md">
+                {l('Ülke Araştırma', 'Country Research')}
+              </h2>
               <button
                 type="button"
                 onClick={(e) => {
                   e.stopPropagation();
-                  setShowCountryPicker(!showCountryPicker);
+                  setShowCountrySearchModal(true);
                 }}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-black text-xs sm:text-sm border border-white/40 backdrop-blur-md transition-all cursor-pointer shadow-sm"
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-white/25 hover:bg-white/40 text-white font-black text-[10px] sm:text-xs border border-white/40 backdrop-blur-md transition-all cursor-pointer shadow-xs"
               >
-                <span className="text-sm sm:text-base leading-none">{getFlag(researchCountry)}</span>
-                <span className="truncate max-w-[110px] sm:max-w-[140px]">
-                  {getCountryName(researchCountry, language)}
-                </span>
-                <ChevronDown className="w-3.5 h-3.5 text-[#5EEAD4]" />
+                <span>{getFlag(researchCountry)}</span>
+                <span className="truncate max-w-[65px] sm:max-w-[90px]">{getCountryName(researchCountry, language)}</span>
+                <ChevronDown className="w-3 h-3 text-[#5EEAD4]" />
               </button>
+            </div>
 
-              {/* Country Picker Dropdown */}
-              {showCountryPicker && (
-                <div
-                  onClick={(e) => e.stopPropagation()}
-                  className="absolute left-4 top-20 z-50 w-56 max-h-64 overflow-y-auto bg-[#042637] border-2 border-[#2DD4BF] rounded-2xl shadow-2xl p-1.5 text-xs font-black text-white space-y-0.5"
-                >
-                  {POPULAR_RESEARCH_COUNTRIES.map((code) => (
-                    <button
-                      key={code}
-                      type="button"
-                      onClick={() => {
-                        setResearchCountry(code);
-                        setShowCountryPicker(false);
-                      }}
-                      className={`w-full text-left px-3 py-2 rounded-xl flex items-center gap-2 hover:bg-white/20 cursor-pointer ${
-                        researchCountry === code ? 'bg-[#0D9488] text-white' : 'text-slate-200'
-                      }`}
-                    >
-                      <span>{getFlag(code)}</span>
-                      <span>{getCountryName(code, language)}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
+            <div className="flex flex-wrap items-center gap-1 pt-0.5">
+              <span className="px-1.5 py-0.5 rounded-md text-[10px] sm:text-xs font-black bg-emerald-500/90 text-white shadow-xs">
+                {researchVisaBadge.text}
+              </span>
+              <span className="px-1.5 py-0.5 rounded-md text-[10px] sm:text-xs font-black bg-sky-500/90 text-white shadow-xs">
+                🔌 Tip {researchGeography.plugTypes.split(',')[0]}
+              </span>
             </div>
           </div>
 
-          {/* Middle: Key Insights Badges */}
-          <div className="relative z-10 flex flex-wrap items-center gap-1.5 py-1">
-            <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-emerald-500/90 text-white shadow-sm flex items-center gap-1">
-              <span>{researchVisaBadge.icon}</span>
-              <span>{researchVisaBadge.text}</span>
-            </span>
-            <span className="px-2.5 py-1 rounded-xl text-xs font-black bg-sky-500/90 text-white shadow-sm">
-              🔌 Tip {researchGeography.plugTypes.split(',')[0]}
-            </span>
-          </div>
-
-          {/* Bottom Action Button */}
-          <div className="relative z-10 flex items-center gap-2">
+          <div className="relative z-10 pt-1">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 openWidget('country_research', 'visa', researchCountry);
               }}
-              className="flex-1 px-3.5 py-2 rounded-xl text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-md transition-all cursor-pointer flex items-center justify-center gap-1.5"
+              className="w-full px-2.5 py-1 sm:py-1.5 rounded-xl text-[10px] sm:text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-sm transition-all cursor-pointer flex items-center justify-center gap-1"
             >
               <span>{getFlag(researchCountry)}</span>
-              <span>{l('360° Rehberi Aç →', 'Open 360° Dossier →')}</span>
+              <span className="truncate">{l('360° Rehberi Aç →', 'Open Dossier →')}</span>
             </button>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 3: PASAPORT KARŞILAŞTIR & SİNERJİ
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => {
-            onSelectTab?.('plan');
-          }}
+          onClick={() => onSelectTab?.('plan')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1">
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
+          <div className="space-y-0.5">
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Pasaport Karşılaştır', 'Compare Passports')}
-              <span className="block text-xs sm:text-sm font-bold text-[#0D9488] dark:text-[#5EEAD4] mt-0.5">
+              <span className="block text-[11px] font-bold text-[#0D9488] dark:text-[#5EEAD4]">
                 {l('& Güç Sinerjisi', '& Power Synergy')}
               </span>
             </h3>
-            <div className="flex items-baseline gap-1.5 pt-1">
-              <span className="text-2xl sm:text-3xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
+            <div className="flex items-baseline gap-1 pt-0.5">
+              <span className="text-lg sm:text-xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
                 {synergyStats.combinedFree}
               </span>
-              <span className="text-xs sm:text-sm font-extrabold text-[#042F2E] dark:text-teal-100">
+              <span className="text-[10px] sm:text-xs font-extrabold text-[#042F2E] dark:text-teal-100">
                 {l('Ülke Vizesiz', 'Visa-Free')}
               </span>
             </div>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <Passports3DIllustration
               codeA={currentPassport}
               codeB={effectiveSecondPassport}
@@ -551,44 +595,40 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
-              {l('Pasaport Karşılaştır →', 'Compare Passports →')}
+            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Karşılaştır →', 'Compare →')}
             </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 4: DÜNYA GÜN SAYACI (TÜM DÜNYA & SCHENGEN)
-            1 col on Mobile & Desktop (Square Proportional Card)
+            WIDGET 4: DÜNYA GÜN SAYACI
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('day_counter', 'schengen')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('day_counter', 'schengen')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1">
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
-              {l('Dünya', 'World')}
-              <span className="block">{l('Gün Sayacı', 'Day Counter')}</span>
+          <div className="space-y-0.5">
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Dünya Gün Sayacı', 'Day Counter')}
             </h3>
-            <div className="pt-0.5">
-              <div className="text-base sm:text-xl font-black text-[#042F2E] dark:text-[#5EEAD4] leading-tight">
-                {l('48 Gün Kaldı', '48 Days Left')}
-              </div>
-              <div className="text-[11px] sm:text-xs font-extrabold text-[#064E3B] dark:text-teal-200">
-                {l('(Tüm Dünya & Schengen)', '(Global & Schengen)')}
-              </div>
+            <div className="text-sm sm:text-base font-black text-[#0D9488] dark:text-[#5EEAD4] leading-tight">
+              {l('48 Gün Kaldı', '48 Days Left')}
+            </div>
+            <div className="text-[10px] font-bold text-[#064E3B] dark:text-teal-200">
+              {l('(Schengen & Küresel)', '(Schengen & Global)')}
             </div>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <GlobalDayCounter3DIllustration daysLeft={48} />
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
               {l('Sayacı Aç →', 'Open Counter →')}
             </span>
           </div>
@@ -596,29 +636,27 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
         {/* -----------------------------------------------------------------
             WIDGET 5: DÖVİZ & BÜTÇE
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('currency', 'converter')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('currency', 'converter')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
           <div>
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
               {l('Döviz & Bütçe', 'Currency & Budget')}
             </h3>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <CurrencyCoins3DIllustration />
           </div>
 
-          <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 font-mono font-black text-xs sm:text-sm text-[#042F2E] dark:text-white tabular-nums">
+          <div className="pt-1 border-t border-[#0F766E]/20 dark:border-white/15">
+            <div className="flex flex-wrap items-baseline justify-between font-mono font-black text-[10px] sm:text-xs text-[#042F2E] dark:text-white tabular-nums">
               <span>{currencyDisplay.line1}</span>
-              <span className="opacity-30">·</span>
               <span>{currencyDisplay.line2}</span>
             </div>
           </div>
@@ -626,177 +664,265 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
         {/* -----------------------------------------------------------------
             WIDGET 6: AKILLI BAVUL
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('packing', 'documents')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('packing', 'documents')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1">
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
-              {l('Akıllı', 'Smart')}
-              <span className="block">{l('Bavul', 'Packing')}</span>
+          <div className="flex items-center justify-between">
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Akıllı Bavul', 'Packing List')}
             </h3>
-            <span className="inline-block px-2.5 py-1 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs sm:text-sm font-black shadow-xs">
+            <span className="px-2 py-0.5 rounded-lg bg-[#2DD4BF] text-[#042F2E] text-[10px] font-black shadow-xs">
               %75 {l('Hazır', 'Ready')}
             </span>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <Suitcases3DIllustration progress={75} />
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
-              {l('Bavul Listesini Aç →', 'Open Packing List →')}
+            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Bavul Listesi →', 'Packing List →')}
             </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 7: DÜNYA SAATİ & ROTA PLANLAYICI
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => {
-            onSelectTab?.('plan');
-          }}
+          onClick={() => onSelectTab?.('plan')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1">
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
-              {l('Dünya Saati', 'World Clock')}
-              <span className="block">{l('& Rota Planı', '& Route Plan')}</span>
+          <div className="space-y-0.5">
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Dünya Saati & Rota', 'Clock & Routes')}
             </h3>
-            <p className="text-xs font-extrabold text-[#0D9488] dark:text-teal-200 truncate">
-              {getFlag(currentPassport)} {getCountryName(currentPassport, language)} ➔ TYO ➔ LON
+            <p className="text-[10px] font-bold text-[#0D9488] dark:text-teal-200 truncate">
+              {getFlag(currentPassport)} {currentPassport} ➔ TYO ➔ LON
             </p>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <WorldClock3DIllustration />
           </div>
 
-          <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between gap-1.5">
-            <div className="flex flex-wrap items-baseline gap-x-2 font-mono font-black text-xs text-[#042F2E] dark:text-white">
+          <div className="pt-1 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between">
+            <div className="flex items-center gap-1.5 font-mono font-black text-[10px] sm:text-xs text-[#042F2E] dark:text-white">
               <LiveCityClock offsetHours={3} label="İST" />
-              <span className="opacity-30">·</span>
+              <span>·</span>
               <LiveCityClock offsetHours={9} label="TYO" />
             </div>
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs shrink-0 group-hover:bg-[#5EEAD4] transition-all">
-              {l('Rota Planla →', 'Plan Route →')}
+            <span className="text-[10px] sm:text-xs font-black text-[#0D9488] dark:text-[#5EEAD4]">
+              {l('Planla →', 'Plan →')}
             </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 8: TÜM TURİZM UYGULAMALARI (SUPER-APPS)
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('local_apps', 'apps', appsCountry)}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'apps', appsCountry)}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1">
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight tracking-tight">
-              {l('Tüm Seyahat', 'All Travel')}
-              <span className="block">{l('Uygulamaları (30+)', 'Super-Apps (30+)')}</span>
+          <div className="space-y-0.5">
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Tüm Uygulamalar (30+)', 'All Apps (30+)')}
             </h3>
-            <p className="text-[11px] sm:text-xs font-bold text-[#0D9488] dark:text-[#5EEAD4]">
-              {l('Uçak · Otel · Tren · Bagaj · eSIM', 'Flights · Hotels · Rail · Luggage · eSIM')}
+            <p className="text-[10px] font-bold text-[#0D9488] dark:text-[#5EEAD4] truncate">
+              {l('Uçak · Otel · Taksi · eSIM', 'Flights · Hotels · Rail · eSIM')}
             </p>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <LocalApps3DIllustration />
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs font-black shadow-xs group-hover:scale-105 transition-transform">
-              {l('Uygulamaları Aç →', 'Open Directory →')}
+            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-[10px] sm:text-xs font-black shadow-xs">
+              {l('Uygulamaları Aç →', 'Open Apps →')}
             </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 9: DİJİTAL GÖÇEBE ÜSLERİ
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('nomad', 'hubs')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('nomad', 'hubs')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1.5">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
-              <Laptop className="w-3.5 h-3.5" />
-              {l('Uzaktan Çalışma', 'Remote Work')}
+          <div className="space-y-0.5">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-[#042637] dark:bg-[#031E2C] text-[#5EEAD4] border border-[#2DD4BF]/60 shadow-xs">
+              <Laptop className="w-3 h-3" />
+              {l('Uzaktan Çalışma', 'Remote')}
             </span>
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight">
-              {l('Dijital Göçebe Üsleri', 'Digital Nomad Hubs')}
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Dijital Göçebe Üsleri', 'Nomad Hubs')}
             </h3>
-            <p className="text-xs font-bold text-[#0D9488] dark:text-teal-200">
+            <p className="text-[10px] font-bold text-[#0D9488] dark:text-teal-200 truncate">
               🌴 Bali · Bangkok · 185 Mbps
             </p>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <NomadIsland3DIllustration />
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
-              {l('Nomad Üslerini Aç →', 'Open Nomad Hubs →')}
+            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+              {l('Nomad Üsleri →', 'Nomad Hubs →')}
             </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
             WIDGET 10: ACİL KONSOLOSLUK & SOS KRİZ MASASI
-            1 col on Mobile & Desktop (Square Proportional Card)
         ----------------------------------------------------------------- */}
         <div
           onClick={() => openWidget('emergency', 'sos')}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && openWidget('emergency', 'sos')}
-          className="col-span-1 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[260px] sm:min-h-[290px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-2.5 sm:p-3.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[148px] sm:min-h-[160px] flex flex-col justify-between"
         >
-          <div className="space-y-1.5">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-black bg-rose-600 text-white shadow-xs">
-              <PhoneCall className="w-3.5 h-3.5" />
-              {l('SOS 112 / 911', 'SOS 112 / 911')}
+          <div className="space-y-0.5">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black bg-rose-600 text-white shadow-xs">
+              <PhoneCall className="w-3 h-3" />
+              {l('SOS 112 / 911', 'SOS 112/911')}
             </span>
-            <h3 className="text-base sm:text-xl lg:text-2xl font-black text-[#042F2E] dark:text-white leading-tight">
-              {l('Konsolosluk & Kriz', 'Emergency & Embassies')}
+            <h3 className="text-xs sm:text-sm font-black text-[#042F2E] dark:text-white leading-tight">
+              {l('Konsolosluk & Kriz', 'Emergency SOS')}
             </h3>
-            <p className="text-xs font-bold text-[#0D9488] dark:text-teal-200 truncate">
-              {l('7/24 Dış Temsilcilik Hatları', '24/7 Consular Hotlines')}
+            <p className="text-[10px] font-bold text-rose-600 dark:text-rose-400 truncate">
+              {l('7/24 Temsilcilik Hatları', '24/7 Hotlines')}
             </p>
           </div>
 
-          <div className="self-center -my-1 scale-90 sm:scale-100">
+          <div className="h-9 sm:h-11 overflow-hidden flex items-center justify-center scale-65 sm:scale-75 origin-center -my-1">
             <LifebuoySOS3DIllustration />
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-rose-600 text-white text-xs font-black shadow-xs group-hover:bg-rose-500 transition-all">
-              {l('Acil Hatları Gör →', 'View Emergency Hotlines →')}
+            <span className="w-full inline-flex items-center justify-center gap-1 px-2.5 py-1 sm:py-1.5 rounded-xl bg-rose-600 text-white text-[10px] sm:text-xs font-black shadow-xs group-hover:bg-rose-500 transition-all">
+              {l('Acil Hatlar →', 'Hotlines →')}
             </span>
           </div>
         </div>
       </div>
+
+      {/* =====================================================================
+          POPUP MODAL: SEARCHABLE COUNTRY SELECTOR FOR 199 COUNTRIES
+      ===================================================================== */}
+      {showCountrySearchModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200"
+          onClick={() => setShowCountrySearchModal(false)}
+        >
+          <div
+            className="w-full max-w-md bg-[#042637] border-2 border-[#2DD4BF] rounded-3xl p-5 shadow-2xl space-y-4 max-h-[85vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-[#0D9488] flex items-center justify-center text-white">
+                  <Search className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="text-sm sm:text-base font-black text-white">
+                    {l('Ülke Araştırma Merkezi', 'Country Research Hub')}
+                  </h3>
+                  <p className="text-xs text-[#5EEAD4] font-bold">
+                    {l('199 Ülke İçinden Seçin veya Arayın', 'Search & Select from 199 Countries')}
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowCountrySearchModal(false)}
+                className="p-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Instant Search Input */}
+            <div className="relative">
+              <Search className="w-4 h-4 text-[#5EEAD4] absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                value={countryPickerSearch}
+                onChange={(e) => setCountryPickerSearch(e.target.value)}
+                placeholder={l('Ülke adı veya kodu yazın (örn: Japonya, Tayland, Brezilya)...', 'Type country name or code...')}
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white/10 border border-[#2DD4BF]/50 text-white placeholder-slate-400 text-xs sm:text-sm font-bold focus:outline-none focus:ring-2 focus:ring-[#2DD4BF]"
+                autoFocus
+              />
+            </div>
+
+            {/* Popular Quick Chips */}
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1">
+              {POPULAR_RESEARCH_COUNTRIES.slice(0, 8).map((code) => (
+                <button
+                  key={code}
+                  type="button"
+                  onClick={() => {
+                    setResearchCountry(code);
+                    setShowCountrySearchModal(false);
+                  }}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-black shrink-0 transition-all ${
+                    researchCountry === code ? 'bg-[#2DD4BF] text-[#042F2E]' : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
+                >
+                  {getFlag(code)} {getCountryName(code, language)}
+                </button>
+              ))}
+            </div>
+
+            {/* Scrollable list of 199 countries */}
+            <div className="overflow-y-auto space-y-1 pr-1 flex-1">
+              {allFilteredCountries.map((it: CountryItem) => (
+                <button
+                  key={it.code}
+                  type="button"
+                  onClick={() => {
+                    setResearchCountry(it.code);
+                    setShowCountrySearchModal(false);
+                  }}
+                  className={`w-full flex items-center justify-between p-2.5 rounded-xl text-left text-xs font-black transition-colors ${
+                    researchCountry === it.code
+                      ? 'bg-[#0D9488] text-white shadow-sm'
+                      : 'hover:bg-white/10 text-slate-100'
+                  }`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span className="text-lg leading-none">{getFlag(it.code)}</span>
+                    <span>{getCountryName(it.code, language)}</span>
+                    <span className="text-[10px] text-slate-400">({it.code})</span>
+                  </div>
+                  <span className="text-[10px] px-2 py-0.5 rounded-md bg-white/15 text-[#5EEAD4]">
+                    {getCategoryBadgeLabel(it, language)}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* =====================================================================
           MINIMIZED SUB-WIDGET DOCK BAR (When user clicks [ — Küçült ])
@@ -980,19 +1106,13 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
                   return (
                     <div className="space-y-5">
-                      {/* Quick Country Switcher Bar */}
-                      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
-                        {POPULAR_RESEARCH_COUNTRIES.filter(
-                          (c) =>
-                            !widgetSearch.trim() ||
-                            getCountryName(c, language)
-                              .toLocaleLowerCase('tr')
-                              .includes(widgetSearch.toLocaleLowerCase('tr'))
-                        ).map((c) => (
-                          <button
-                            key={c}
-                            type="button"
-                            onClick={() => {
+                      {/* Searchable Country Selector & Quick Switcher */}
+                      <div className="space-y-2.5">
+                        <div className="relative">
+                          <select
+                            value={targetCode}
+                            onChange={(e) => {
+                              const c = e.target.value;
                               setResearchCountry(c);
                               setAppsCountry(c);
                               setWidgetStack((prev) => {
@@ -1001,15 +1121,43 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                                 return copy;
                               });
                             }}
-                            className={`px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer transition-all ${
-                              targetCode === c
-                                ? 'bg-[#5EEAD4] text-[#042F2E] shadow-sm'
-                                : 'bg-white/15 text-white hover:bg-white/25'
-                            }`}
+                            className="w-full px-4 py-2.5 rounded-2xl bg-[#042637] text-white border-2 border-[#2DD4BF] text-xs sm:text-sm font-black appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#5EEAD4] shadow-md pr-10"
                           >
-                            {getFlag(c)} {getCountryName(c, language)}
-                          </button>
-                        ))}
+                            <option value="" disabled>{l('Tüm 199 Ülke İçinden Seç...', 'Select from 199 Countries...')}</option>
+                            {passportItems.map((it: CountryItem) => (
+                              <option key={it.code} value={it.code} className="bg-[#042637] text-white">
+                                {getFlag(it.code)} {getCountryName(it.code, language)} ({it.code})
+                              </option>
+                            ))}
+                          </select>
+                          <ChevronDown className="w-4 h-4 text-[#5EEAD4] absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        </div>
+
+                        {/* Quick Country Switcher Chips */}
+                        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1">
+                          {POPULAR_RESEARCH_COUNTRIES.map((c) => (
+                            <button
+                              key={c}
+                              type="button"
+                              onClick={() => {
+                                setResearchCountry(c);
+                                setAppsCountry(c);
+                                setWidgetStack((prev) => {
+                                  const copy = [...prev];
+                                  copy[copy.length - 1] = { ...copy[copy.length - 1], countryCode: c };
+                                  return copy;
+                                });
+                              }}
+                              className={`px-3 py-1.5 rounded-full text-xs font-black whitespace-nowrap cursor-pointer transition-all shrink-0 ${
+                                targetCode === c
+                                  ? 'bg-[#5EEAD4] text-[#042F2E] shadow-sm ring-2 ring-white/50'
+                                  : 'bg-white/15 text-white hover:bg-white/25 border border-white/20'
+                              }`}
+                            >
+                              {getFlag(c)} {getCountryName(c, language)}
+                            </button>
+                          ))}
+                        </div>
                       </div>
 
                       {/* 1. Large Scenic Tropical Lagoon Photo Header with Visa Badge */}

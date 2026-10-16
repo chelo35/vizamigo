@@ -381,8 +381,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               }}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-black shadow-md cursor-pointer transition-all flex items-center gap-2 ${
                 viewMode === 'list'
-                  ? 'bg-[#2DD4BF] text-[#042F2E]'
-                  : 'bg-white/10 hover:bg-white/20 text-white'
+                  ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-teal-900/20'
+                  : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/30 dark:border-teal-400/30'
               }`}
             >
               <List className="w-4 h-4" />
@@ -397,8 +397,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               }}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-black shadow-md cursor-pointer transition-all flex items-center gap-2 ${
                 viewMode === 'map'
-                  ? 'bg-[#2DD4BF] text-[#042F2E]'
-                  : 'bg-white/10 hover:bg-white/20 text-white'
+                  ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-teal-900/20'
+                  : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/30 dark:border-teal-400/30'
               }`}
             >
               <Globe className="w-4 h-4" />
@@ -408,9 +408,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             <button
               type="button"
               onClick={handleOpenAudit}
-              className="px-3.5 py-2.5 rounded-full text-xs sm:text-sm font-black bg-white/60 dark:bg-white/10 text-[#042F2E] dark:text-white border border-[#0F766E]/30 cursor-pointer transition-all flex items-center gap-1.5"
+              className="px-3.5 py-2.5 rounded-full text-xs sm:text-sm font-black bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white border border-teal-500/30 dark:border-teal-400/30 hover:bg-white cursor-pointer transition-all flex items-center gap-1.5 shadow-xs"
             >
-              <ShieldCheck className="w-4 h-4 text-[#0F766E] dark:text-[#5EEAD4]" />
+              <ShieldCheck className="w-4 h-4 text-[#0D9488] dark:text-[#5EEAD4]" />
               <span>{l('Denetim Masası', 'Audit Console')}</span>
             </button>
           </div>
@@ -444,7 +444,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 type="button"
                 onClick={() => setFilter('all')}
                 className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'all' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                  filter === 'all'
+                    ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                    : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                 }`}
               >
                 {l('Tümü', 'All', 'Alle', 'Todos', 'Все')} ({items.length})
@@ -454,7 +456,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   type="button"
                   onClick={() => setFilter('id')}
                   className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                    filter === 'id' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                    filter === 'id'
+                      ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                      : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                   }`}
                 >
                   {l('Kimlikle Giriş', 'National ID', 'Personalausweis', 'Entrada con DNI', 'По ID-карте')} ({stats.counts.id})
@@ -464,7 +468,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 type="button"
                 onClick={() => setFilter('free')}
                 className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'free' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                  filter === 'free'
+                    ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                    : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                 }`}
               >
                 {l('Vizesiz', 'Visa-Free', 'Visumfrei', 'Sin Visado', 'Без Визы')} ({stats.counts.free})
@@ -473,7 +479,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 type="button"
                 onClick={() => setFilter('evisa')}
                 className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'evisa' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                  filter === 'evisa'
+                    ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                    : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                 }`}
               >
                 {l('E-vize', 'eVisa', 'e-Visum', 'E-visa', 'Электронная Виза')} ({stats.counts.evisa})
@@ -482,7 +490,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 type="button"
                 onClick={() => setFilter('voa')}
                 className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'voa' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                  filter === 'voa'
+                    ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                    : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                 }`}
               >
                 {l('Kapıda Vize', 'Visa on Arrival', 'Visum b. Ankunft', 'Visado a la Llegada', 'Виза по Прибытии')} ({stats.counts.voa})
@@ -492,7 +502,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                   type="button"
                   onClick={() => setFilter('eta')}
                   className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                    filter === 'eta' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                    filter === 'eta'
+                      ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                      : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                   }`}
                 >
                   ETA ({stats.counts.eta})
@@ -502,7 +514,9 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 type="button"
                 onClick={() => setFilter('visa')}
                 className={`shrink-0 flex-shrink-0 min-w-[48px] px-4 py-2.5 min-h-[48px] rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer select-none inline-flex items-center justify-center touch-target-min ${
-                  filter === 'visa' ? 'bg-[#2DD4BF] text-[#042F2E] shadow-md' : 'bento-lagoon-card text-[#042F2E] dark:text-white'
+                  filter === 'visa'
+                    ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md'
+                    : 'bg-white/90 dark:bg-white/10 text-slate-800 dark:text-white hover:bg-white border border-teal-500/25 dark:border-teal-400/30 shadow-xs'
                 }`}
               >
                 {l('Vize Gerekli', 'Visa Required', 'Visum erforderlich', 'Visado Requerido', 'Нужна Виза')} ({stats.counts.visa})

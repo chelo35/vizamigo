@@ -523,6 +523,7 @@ function AppContent() {
 
         {/* Comprehensive Booking.com-Style Footer Suite */}
         <GlobalFooter
+          currentPassport={currentPassport}
           onSelectCountry={(code) => {
             if (activeTab !== 'explore') {
               setActiveTab('explore');

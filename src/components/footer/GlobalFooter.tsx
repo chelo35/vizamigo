@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   Compass,
   ShieldCheck,
@@ -19,8 +19,11 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useI18n } from '../../data/i18n';
+import { getPassportItems } from '../../utils/calculator';
+import { getCountryName, getFlag, CountryItem } from '../../data/passportData';
 
 interface Props {
+  currentPassport?: string;
   onSelectCountry?: (countryCode: string) => void;
   onOpenLegalModal: (tab?: string) => void;
   setActiveTab?: (tab: string) => void;
@@ -47,74 +50,62 @@ interface DestinationChip {
   highlight?: boolean;
 }
 
-const POPULAR_DESTINATIONS: Record<PopularCategory, DestinationChip[]> = {
-  visa_free: [
-    { city: 'Belgrad', country: 'Sırbistan', code: 'RS', flag: '🇷🇸', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' }, highlight: true },
-    { city: 'Saraybosna', country: 'Bosna-Hersek', code: 'BA', flag: '🇧🇦', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' }, highlight: true },
-    { city: 'Üsküp', country: 'Kuzey Makedonya', code: 'MK', flag: '🇲🇰', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } },
-    { city: 'Tiran', country: 'Arnavutluk', code: 'AL', flag: '🇦🇱', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } },
-    { city: 'Podgorica & Budva', country: 'Karadağ', code: 'ME', flag: '🇲🇪', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' }, highlight: true },
-    { city: 'Priştine', country: 'Kosova', code: 'XK', flag: '🇽🇰', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } },
-    { city: 'Kişinev', country: 'Moldova', code: 'MD', flag: '🇲🇩', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } },
-    { city: 'Beyrut', country: 'Lübnan', code: 'LB', flag: '🇱🇧', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } },
-    { city: 'Tunus', country: 'Tunus', code: 'TN', flag: '🇹🇳', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } },
-    { city: 'Şarm El-Şeyh', country: 'Mısır', code: 'EG', flag: '🇪🇬', badge: { tr: '15 Gün Sinai Vizesiz', en: '15 Days Sinai Visa-Free', de: '15 Tage Sinai Visafrei', es: '15 Días Sinaí Sin Visa', ru: '15 дней Синай без визы' }, highlight: true },
-    { city: 'Bangkok & Phuket', country: 'Tayland', code: 'TH', flag: '🇹🇭', badge: { tr: '30 Gün Vizesiz', en: '30 Days Visa-Free', de: '30 Tage Visafrei', es: '30 Días Sin Visa', ru: '30 дней без визы' } },
-    { city: 'Kuala Lumpur', country: 'Malezya', code: 'MY', flag: '🇲🇾', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' } }
-  ],
-  national_id: [
-    { city: 'Tiflis & Batum', country: 'Gürcistan', code: 'GE', flag: '🇬🇪', badge: { tr: 'Çipli Kimlikle Giriş', en: 'National ID Entry', de: 'Mit Personalausweis', es: 'Entrada con DNI', ru: 'Въезд по ID-карте' }, highlight: true },
-    { city: 'Bakü', country: 'Azerbaycan', code: 'AZ', flag: '🇦🇿', badge: { tr: 'Çipli Kimlikle Giriş', en: 'National ID Entry', de: 'Mit Personalausweis', es: 'Entrada con DNI', ru: 'Въезд по ID-карте' }, highlight: true },
-    { city: 'Lefkoşa & Girne', country: 'KKTC', code: 'CY', flag: '🇹🇷', badge: { tr: 'Çipli Kimlikle Giriş', en: 'National ID Entry', de: 'Mit Personalausweis', es: 'Entrada con DNI', ru: 'Въезд по ID-карте' }, highlight: true },
-    { city: 'Belgrad & Novi Sad', country: 'Sırbistan', code: 'RS', flag: '🇷🇸', badge: { tr: 'Protokol Hazır / Kimlik', en: 'ID Protocol Approved', de: 'ID-Protokoll Genehmigt', es: 'Protocolo DNI Aprobado', ru: 'Протокол по ID-карте' } },
-    { city: 'Saraybosna & Mostar', country: 'Bosna-Hersek', code: 'BA', flag: '🇧🇦', badge: { tr: 'Kimlikle Geçiş Anlaşması', en: 'ID Agreement Signed', de: 'ID-Abkommen Unterzeichnet', es: 'Acuerdo DNI Firmado', ru: 'Соглашение по ID' } },
-    { city: 'Kişinev', country: 'Moldova', code: 'MD', flag: '🇲🇩', badge: { tr: 'Çipli Kimlikle Giriş', en: 'National ID Entry', de: 'Mit Personalausweis', es: 'Entrada con DNI', ru: 'Въезд по ID-карте' } }
-  ],
-  schengen: [
-    { city: 'Roma & Floransa', country: 'İtalya', code: 'IT', flag: '🇮🇹', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' }, highlight: true },
-    { city: 'Paris & Nice', country: 'Fransa', code: 'FR', flag: '🇫🇷', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' } },
-    { city: 'Madrid & Barselona', country: 'İspanya', code: 'ES', flag: '🇪🇸', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' }, highlight: true },
-    { city: 'Berlin & Münih', country: 'Almanya', code: 'DE', flag: '🇩🇪', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виza' } },
-    { city: 'Amsterdam', country: 'Hollanda', code: 'NL', flag: '🇳🇱', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' } },
-    { city: 'Viyana', country: 'Avusturya', code: 'AT', flag: '🇦🇹', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' } },
-    { city: 'Prag', country: 'Çekya', code: 'CZ', flag: '🇨🇿', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' } },
-    { city: 'Atina & Rodos', country: 'Yunanistan', code: 'GR', flag: '🇬🇷', badge: { tr: 'Schengen / Kapıda Ada Vizesi', en: 'Schengen / Island VOA', de: 'Schengen / Insel-Visum', es: 'Schengen / Visa de Isla', ru: 'Шенген / Островная виза' }, highlight: true },
-    { city: 'Budapeşte', country: 'Macaristan', code: 'HU', flag: '🇭🇺', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' } },
-    { city: 'Lizbon & Porto', country: 'Portekiz', code: 'PT', flag: '🇵🇹', badge: { tr: 'Schengen Vizesi', en: 'Schengen Visa', de: 'Schengen-Visum', es: 'Visa Schengen', ru: 'Шенгенская виза' } }
-  ],
-  metropolises: [
-    { city: 'Londra', country: 'Birleşik Krallık', code: 'GB', flag: '🇬🇧', badge: { tr: 'Standart Ziyaretçi Vizesi', en: 'Standard Visitor Visa', de: 'Besuchervisum', es: 'Visa de Visitante', ru: 'Туристическая виза' }, highlight: true },
-    { city: 'Tokyo', country: 'Japonya', code: 'JP', flag: '🇯🇵', badge: { tr: '90 Gün Vizesiz', en: '90 Days Visa-Free', de: '90 Tage Visafrei', es: '90 Días Sin Visa', ru: '90 дней без визы' }, highlight: true },
-    { city: 'New York', country: 'Amerika Birleşik Devletleri', code: 'US', flag: '🇺🇸', badge: { tr: 'B1/B2 Vizesi (10 Yıl)', en: 'B1/B2 Visa (10 Years)', de: 'B1/B2 Visum', es: 'Visa B1/B2', ru: 'Виза B1/B2 (10 лет)' } },
-    { city: 'Dubai & Abu Dabi', country: 'Birleşik Arap Emirlikleri', code: 'AE', flag: '🇦🇪', badge: { tr: 'e-Vize Kolaylığı', en: 'Online eVisa', de: 'Online e-Visum', es: 'eVisa en Línea', ru: 'Электронная виза' }, highlight: true },
-    { city: 'Seul', country: 'Güney Kore', code: 'KR', flag: '🇰🇷', badge: { tr: 'K-ETA İzni', en: 'K-ETA Required', de: 'K-ETA Erforderlich', es: 'K-ETA Requerida', ru: 'Разрешение K-ETA' } },
-    { city: 'Singapur', country: 'Singapur', code: 'SG', flag: '🇸🇬', badge: { tr: '30 Gün Vizesiz / SGAC', en: '30 Days Visa-Free / SGAC', de: '30 Tage Visafrei', es: '30 Días Sin Visa', ru: '30 дней без визы' } },
-    { city: 'Toronto', country: 'Kanada', code: 'CA', flag: '🇨🇦', badge: { tr: 'Kanada Vizesi (10 Yıl)', en: 'Canada Visitor Visa', de: 'Kanada Visum', es: 'Visa de Canadá', ru: 'Виза в Канаду' } },
-    { city: 'Sidney', country: 'Avustralya', code: 'AU', flag: '🇦🇺', badge: { tr: 'eVisitor / Turist Vizesi', en: 'Visitor Visa (Subclass 600)', de: 'Besuchervisum 600', es: 'Visa de Turista 600', ru: 'Виза подкласс 600' } }
-  ],
-  digital_nomad: [
-    { city: 'Bali (Canggu & Ubud)', country: 'Endonezya', code: 'ID', flag: '🇮🇩', badge: { tr: 'E33G Dijital Göçebe Vizesi', en: 'Remote Worker Visa E33G', de: 'Remote-Worker-Visum', es: 'Visa Nómade Digital', ru: 'Виза цифрового кочевника' }, highlight: true },
-    { city: 'Lizbon & Madeira', country: 'Portekiz', code: 'PT', flag: '🇵🇹', badge: { tr: 'D8 Dijital Göçebe Vizesi', en: 'D8 Digital Nomad Visa', de: 'D8 Digital Nomad Visum', es: 'Visa D8 Nómada Digital', ru: 'D8 виза кочевника' }, highlight: true },
-    { city: 'Valensiya & Barselona', country: 'İspanya', code: 'ES', flag: '🇪🇸', badge: { tr: 'İspanya Göçebe Vizesi', en: 'Spain Nomad Visa', de: 'Spanien Nomad-Visum', es: 'Visa Nómada España', ru: 'Виза кочевника Испании' } },
-    { city: 'Tiflis', country: 'Gürcistan', code: 'GE', flag: '🇬🇪', badge: { tr: '365 Gün Vizesiz Kalış', en: '365 Days Visa-Free Stay', de: '365 Tage Visafrei', es: '365 Días Sin Visa', ru: '365 дней без визы' }, highlight: true },
-    { city: 'Bansko & Sofya', country: 'Bulgaristan', code: 'BG', flag: '🇧🇬', badge: { tr: 'Düşük Vergi & Hızlı İnternet', en: 'Low Tax & Fast Fiber', de: 'Niedrige Steuern', es: 'Impuestos Bajos', ru: 'Низкие налоги' } },
-    { city: 'Dubai', country: 'BAE', code: 'AE', flag: '🇦🇪', badge: { tr: '1 Yıllık Uzaktan Çalışma', en: '1-Year Remote Work', de: '1-Jahr Remote Work', es: '1 Año Trabajo Remoto', ru: '1 год удаленной работы' } },
-    { city: 'Medellin', country: 'Kolombiya', code: 'CO', flag: '🇨🇴', badge: { tr: 'V Nómadas Digitales', en: 'V Digital Nomad Visa', de: 'V Digital Nomad Visum', es: 'Visa V Nómada', ru: 'Виза кочевника V' } },
-    { city: 'Chiang Mai', country: 'Tayland', code: 'TH', flag: '🇹🇭', badge: { tr: 'DTV Göçebe Vizesi (5 Yıl)', en: 'DTV Nomad Visa (5 Years)', de: 'DTV Nomad Visum', es: 'Visa DTV Nómada (5 Años)', ru: 'DTV виза на 5 лет' }, highlight: true }
-  ],
-  evisa: [
-    { city: 'Kahire & Hurgada', country: 'Mısır', code: 'EG', flag: '🇪🇬', badge: { tr: 'Kapıda Vize / e-Vize 25$', en: 'VOA / eVisa $25', de: 'Visum bei Ankunft $25', es: 'Visa a la Llegada $25', ru: 'Виза по прилету $25' }, highlight: true },
-    { city: 'Dubai & Şarika', country: 'BAE', code: 'AE', flag: '🇦🇪', badge: { tr: 'Hızlı Online e-Vize', en: 'Fast Online eVisa', de: 'Schnelles e-Visum', es: 'eVisa Rápida Online', ru: 'Быстрая электронная виза' }, highlight: true },
-    { city: 'Doha', country: 'Katar', code: 'QA', flag: '🇶🇦', badge: { tr: '90 Gün Kapıda Ücretsiz Vize', en: '90 Days Free VOA', de: '90 Tage Kostenloses VOA', es: '90 Días Gratis Llegada', ru: '90 дней бесплатно по прилету' }, highlight: true },
-    { city: 'Muskat', country: 'Umman', code: 'OM', flag: '🇴🇲', badge: { tr: '14 Gün Vizesiz / e-Vize', en: '14 Days Visa-Free / eVisa', de: '14 Tage Visafrei', es: '14 Días Sin Visa', ru: '14 дней без визы' } },
-    { city: 'Nairobi', country: 'Kenya', code: 'KE', flag: '🇰🇪', badge: { tr: 'eTA Seyahat Yetkisi', en: 'eTA Authorization', de: 'eTA Reisegenehmigung', es: 'Autorización eTA', ru: 'Разрешение eTA' } },
-    { city: 'Cakarta & Bali', country: 'Endonezya', code: 'ID', flag: '🇮🇩', badge: { tr: 'e-VOA Kapıda Elektronik Vize', en: 'Electronic VOA (e-VOA)', de: 'Elektronisches VOA', es: 'e-VOA Electrónica', ru: 'Электронная e-VOA' } },
-    { city: 'Tanzanya & Zanzibar', country: 'Tanzanya', code: 'TZ', flag: '🇹🇿', badge: { tr: 'Kapıda Vize 50$', en: 'VOA $50', de: 'Visum bei Ankunft $50', es: 'Visa Llegada $50', ru: 'Виза по прилету $50' } },
-    { city: 'Yeni Delhi', country: 'Hindistan', code: 'IN', flag: '🇮🇳', badge: { tr: 'Hindistan e-Turist Vizesi', en: 'Indian e-Tourist Visa', de: 'Indisches e-Visum', es: 'eVisa India', ru: 'Индийская e-виза' } }
-  ]
+const WORLD_HUB_CITIES: Record<string, string> = {
+  IT: 'Roma & Floransa',
+  FR: 'Paris & Nice',
+  ES: 'Madrid & Barselona',
+  DE: 'Berlin & Münih',
+  NL: 'Amsterdam',
+  AT: 'Viyana',
+  CZ: 'Prag',
+  GR: 'Atina & Rodos',
+  HU: 'Budapeşte',
+  PT: 'Lizbon & Porto',
+  CH: 'Zürih & Cenevre',
+  BE: 'Brüksel & Brugge',
+  DK: 'Kopenhag',
+  SE: 'Stockholm',
+  NO: 'Oslo & Fiyortlar',
+  RS: 'Belgrad',
+  BA: 'Saraybosna',
+  MK: 'Üsküp',
+  AL: 'Tiran',
+  ME: 'Podgorica & Budva',
+  XK: 'Priştine',
+  MD: 'Kişinev',
+  GE: 'Tiflis & Batum',
+  AZ: 'Bakü',
+  JP: 'Tokyo & Kyoto',
+  TH: 'Bangkok & Phuket',
+  MY: 'Kuala Lumpur',
+  SG: 'Singapur',
+  KR: 'Seul & Busan',
+  ID: 'Bali & Cakarta',
+  AE: 'Dubai & Abu Dabi',
+  QA: 'Doha',
+  OM: 'Muskat',
+  VN: 'Hanoi & Da Nang',
+  PH: 'Manila & Boracay',
+  IN: 'Yeni Delhi & Goa',
+  US: 'New York & Los Angeles',
+  CA: 'Toronto & Vancouver',
+  BR: 'Rio de Janeiro & São Paulo',
+  CO: 'Medellin & Bogota',
+  MX: 'Cancun & Mexico City',
+  AR: 'Buenos Aires',
+  EG: 'Kahire & Şarm El-Şeyh',
+  MA: 'Marakeş & Kazablanka',
+  ZA: 'Cape Town & Johannesburg',
+  KE: 'Nairobi & Mombasa',
+  AU: 'Sidney & Melbourne',
+  NZ: 'Auckland & Queenstown',
+  GB: 'Londra & Edinburgh'
 };
 
+const SCHENGEN_CODES = ['IT', 'FR', 'ES', 'DE', 'NL', 'AT', 'CZ', 'GR', 'HU', 'PT', 'CH', 'BE', 'DK', 'SE', 'NO'];
+
 export const GlobalFooter: React.FC<Props> = ({
+  currentPassport = 'TR',
   onSelectCountry,
   onOpenLegalModal,
   setActiveTab,
@@ -127,16 +118,203 @@ export const GlobalFooter: React.FC<Props> = ({
   const { user, isAuthenticated, openAuthModal } = useAuth();
   const [selectedCategory, setSelectedCategory] = useState<PopularCategory>('visa_free');
 
-  const categories: { key: PopularCategory; label: { tr: string; en: string; de: string; es: string; ru: string }; count: number }[] = [
-    { key: 'visa_free', label: { tr: 'Vizesiz Rotalar', en: 'Visa-Free Routes', de: 'Visafreie Routen', es: 'Rutas Sin Visa', ru: 'Безвизовые маршруты' }, count: 12 },
-    { key: 'national_id', label: { tr: 'Kimlikle Giriş', en: 'National ID Entry', de: 'Mit Personalausweis', es: 'Entrada con DNI', ru: 'По ID-карте' }, count: 6 },
-    { key: 'schengen', label: { tr: 'Schengen & Avrupa', en: 'Schengen & Europe', de: 'Schengen & Europa', es: 'Schengen y Europa', ru: 'Шенген и Европа' }, count: 10 },
-    { key: 'metropolises', label: { tr: 'Küresel Metropoller', en: 'Global Metropolises', de: 'Weltmetropolen', es: 'Metrópolis Mundiales', ru: 'Мировые мегаполисы' }, count: 8 },
-    { key: 'digital_nomad', label: { tr: 'Dijital Göçebe Rotaları', en: 'Digital Nomad Hubs', de: 'Digital Nomad Hubs', es: 'Hubs Nómadas Digitales', ru: 'Для цифровых кочевников' }, count: 8 },
-    { key: 'evisa', label: { tr: 'e-Vize & Kapıda Vize', en: 'eVisa & Visa on Arrival', de: 'e-Visum & VOA', es: 'eVisa y Llegada', ru: 'e-Виза и по прилету' }, count: 8 }
-  ];
+  // Compute live dynamic popular destinations tailored strictly to currentPassport
+  const { dynamicDestinations, categories } = useMemo(() => {
+    const pItems = getPassportItems(currentPassport);
+    const itemMap = new Map<string, CountryItem>(pItems.map((it) => [it.c || (it as any).code, it]));
+    const isSchengenPassport = SCHENGEN_CODES.includes(currentPassport);
 
-  const currentDestinations = POPULAR_DESTINATIONS[selectedCategory];
+    // 1. Visa-free destinations
+    const freeCodes = ['RS', 'BA', 'ME', 'AL', 'MK', 'GE', 'TH', 'MY', 'JP', 'SG', 'BR', 'ID', 'KR', 'MX', 'AR']
+      .filter((code) => code !== currentPassport && (itemMap.get(code)?.cat === 'free' || itemMap.get(code)?.id))
+      .slice(0, 12);
+
+    const visaFreeDests: DestinationChip[] = freeCodes.map((code) => {
+      const it = itemMap.get(code);
+      const days = it?.days || parseInt(it?.v || '90', 10) || 90;
+      return {
+        city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
+        country: getCountryName(code, language),
+        code,
+        flag: getFlag(code),
+        badge: {
+          tr: `${days} Gün Vizesiz`,
+          en: `${days} Days Visa-Free`,
+          de: `${days} Tage Visafrei`,
+          es: `${days} Días Sin Visa`,
+          ru: `${days} дней без визы`
+        },
+        highlight: true
+      };
+    });
+
+    // 2. National ID entry
+    const idCandidates = pItems
+      .filter((it) => it.id && (it.c || (it as any).code) !== currentPassport)
+      .map((it) => it.c || (it as any).code)
+      .filter(Boolean)
+      .slice(0, 8);
+
+    const nationalIdDests: DestinationChip[] = (idCandidates.length > 0 ? idCandidates : ['GE', 'AZ', 'RS', 'BA', 'MD', 'ME']).map((code) => {
+      const it = itemMap.get(code);
+      return {
+        city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
+        country: getCountryName(code, language),
+        code,
+        flag: getFlag(code),
+        badge: {
+          tr: it?.id ? 'Çipli Kimlikle Giriş' : 'Vizesiz Sınır Geçişi',
+          en: it?.id ? 'National ID Entry' : 'Visa-Free Entry',
+          de: it?.id ? 'Mit Personalausweis' : 'Visafreie Einreise',
+          es: it?.id ? 'Entrada con DNI' : 'Entrada Sin Visa',
+          ru: it?.id ? 'По ID-карте' : 'Безвизовый въезд'
+        },
+        highlight: true
+      };
+    });
+
+    // 3. Schengen destinations
+    const schengenCodes = ['IT', 'FR', 'ES', 'DE', 'NL', 'AT', 'CZ', 'GR', 'HU', 'PT'].filter(
+      (c) => c !== currentPassport
+    );
+    const schengenDests: DestinationChip[] = schengenCodes.map((code) => ({
+      city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
+      country: getCountryName(code, language),
+      code,
+      flag: getFlag(code),
+      badge: isSchengenPassport
+        ? {
+            tr: 'Serbest Dolaşım / Kimlikle',
+            en: 'Free Movement / ID Entry',
+            de: 'Freizügigkeit / Ausweis',
+            es: 'Libre Circulación / DNI',
+            ru: 'Свободное перемещение'
+          }
+        : {
+            tr: 'Schengen Vizesi',
+            en: 'Schengen Visa',
+            de: 'Schengen-Visum',
+            es: 'Visa Schengen',
+            ru: 'Шенгенская виза'
+          },
+      highlight: isSchengenPassport
+    }));
+
+    // 4. Global Metropolises
+    const metroCodes = ['GB', 'JP', 'US', 'AE', 'KR', 'SG', 'CA', 'AU'].filter((c) => c !== currentPassport);
+    const metroDests: DestinationChip[] = metroCodes.map((code) => {
+      const it = itemMap.get(code);
+      let badgeLabel = {
+        tr: 'Vize Gerekli',
+        en: 'Visa Required',
+        de: 'Visum erforderlich',
+        es: 'Visa Requerida',
+        ru: 'Нужна виза'
+      };
+      if (it?.cat === 'free') {
+        const days = it.days || 90;
+        badgeLabel = {
+          tr: `${days} Gün Vizesiz`,
+          en: `${days} Days Visa-Free`,
+          de: `${days} Tage Visafrei`,
+          es: `${days} Días Sin Visa`,
+          ru: `${days} дней без визы`
+        };
+      } else if (it?.cat === 'eta') {
+        badgeLabel = {
+          tr: 'eTA Seyahat İzni',
+          en: 'eTA Authorization',
+          de: 'eTA Erforderlich',
+          es: 'Autorización eTA',
+          ru: 'Разрешение eTA'
+        };
+      } else if (it?.cat === 'evisa' || it?.cat === 'voa') {
+        badgeLabel = {
+          tr: 'Kolay e-Vize / Kapıda',
+          en: 'Online eVisa / VoA',
+          de: 'e-Visum / VoA',
+          es: 'eVisa en Línea',
+          ru: 'Электронная виза'
+        };
+      }
+      return {
+        city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
+        country: getCountryName(code, language),
+        code,
+        flag: getFlag(code),
+        badge: badgeLabel,
+        highlight: it?.cat === 'free'
+      };
+    });
+
+    // 5. Digital nomad hubs
+    const nomadCodes = ['ID', 'PT', 'ES', 'GE', 'BG', 'AE', 'CO', 'TH'].filter((c) => c !== currentPassport);
+    const nomadDests: DestinationChip[] = nomadCodes.map((code) => ({
+      city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
+      country: getCountryName(code, language),
+      code,
+      flag: getFlag(code),
+      badge: {
+        tr: 'Dijital Göçebe Rotası',
+        en: 'Digital Nomad Hub',
+        de: 'Digital Nomad Hub',
+        es: 'Hub Nómada Digital',
+        ru: 'Для кочевников'
+      },
+      highlight: true
+    }));
+
+    // 6. eVisa destinations
+    const evisaCodes = ['EG', 'AE', 'QA', 'OM', 'KE', 'ID', 'TZ', 'IN'].filter((c) => c !== currentPassport);
+    const evisaDests: DestinationChip[] = evisaCodes.map((code) => {
+      const it = itemMap.get(code);
+      return {
+        city: WORLD_HUB_CITIES[code] || getCountryName(code, language),
+        country: getCountryName(code, language),
+        code,
+        flag: getFlag(code),
+        badge:
+          it?.cat === 'free'
+            ? {
+                tr: `${it.days || 30} Gün Vizesiz`,
+                en: `${it.days || 30} Days Free`,
+                de: `${it.days || 30} Tage Visafrei`,
+                es: `${it.days || 30} Días Sin Visa`,
+                ru: `${it.days || 30} дней без визы`
+              }
+            : {
+                tr: 'e-Vize / Kapıda Vize',
+                en: 'Online eVisa / VoA',
+                de: 'e-Visum / VoA',
+                es: 'eVisa / Llegada',
+                ru: 'e-Виза / по прилету'
+              },
+        highlight: true
+      };
+    });
+
+    const destMap: Record<PopularCategory, DestinationChip[]> = {
+      visa_free: visaFreeDests,
+      national_id: nationalIdDests,
+      schengen: schengenDests,
+      metropolises: metroDests,
+      digital_nomad: nomadDests,
+      evisa: evisaDests
+    };
+
+    const catList: { key: PopularCategory; label: { tr: string; en: string; de: string; es: string; ru: string }; count: number }[] = [
+      { key: 'visa_free', label: { tr: 'Vizesiz Rotalar', en: 'Visa-Free Routes', de: 'Visafreie Routen', es: 'Rutas Sin Visa', ru: 'Безвизовые маршруты' }, count: visaFreeDests.length },
+      { key: 'national_id', label: { tr: 'Kimlikle Giriş', en: 'National ID Entry', de: 'Mit Personalausweis', es: 'Entrada con DNI', ru: 'По ID-карте' }, count: nationalIdDests.length },
+      { key: 'schengen', label: { tr: 'Schengen & Avrupa', en: 'Schengen & Europe', de: 'Schengen & Europa', es: 'Schengen y Europa', ru: 'Шенген и Европа' }, count: schengenDests.length },
+      { key: 'metropolises', label: { tr: 'Küresel Metropoller', en: 'Global Metropolises', de: 'Weltmetropolen', es: 'Metrópolis Mundiales', ru: 'Мировые мегаполисы' }, count: metroDests.length },
+      { key: 'digital_nomad', label: { tr: 'Dijital Göçebe Rotaları', en: 'Digital Nomad Hubs', de: 'Digital Nomad Hubs', es: 'Hubs Nómadas Digitales', ru: 'Для цифровых кочевников' }, count: nomadDests.length },
+      { key: 'evisa', label: { tr: 'e-Vize & Kapıda Vize', en: 'eVisa & Visa on Arrival', de: 'e-Visum & VOA', es: 'eVisa y Llegada', ru: 'e-Виза и по прилету' }, count: evisaDests.length }
+    ];
+
+    return { dynamicDestinations: destMap, categories: catList };
+  }, [currentPassport, language]);
+
+  const currentDestinations = dynamicDestinations[selectedCategory] || [];
 
   return (
     <footer className="mt-16 w-full space-y-10 rounded-3xl p-6 sm:p-10 bento-lagoon-card text-slate-800 dark:text-slate-100 shadow-xl backdrop-blur-2xl">
@@ -223,7 +401,7 @@ export const GlobalFooter: React.FC<Props> = ({
               <span>{l('Küresel Keşif & Rota Ağları', 'Global Discovery & Route Networks', 'Globale Entdeckung & Routen', 'Descubrimiento Global y Rutas', 'Глобальная сеть маршрутов')}</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-              {l("Türkiye'den ve Dünyadan Gezginler Arasında Popüler", 'Popular Among Global Travelers', 'Beliebt bei Reisenden weltweit', 'Popular entre los viajeros', 'Популярно среди путешественников')}
+              {l("Dünyadan Gezginler Arasında Popüler", 'Popular Among Global Travelers', 'Beliebt bei Reisenden weltweit', 'Popular entre los viajeros', 'Популярно среди путешественников')}
             </h2>
           </div>
           <span className="text-xs text-teal-800 dark:text-teal-200 font-bold">
@@ -442,7 +620,7 @@ export const GlobalFooter: React.FC<Props> = ({
                 onClick={onOpenPackingList}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
-                🎒 {l('Akıllı Bavul Hazırlık Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}
+                {l('Akıllı Bavul Hazırlık Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje', 'Список вещей')}
               </button>
             </li>
             <li>
@@ -451,7 +629,7 @@ export const GlobalFooter: React.FC<Props> = ({
                 onClick={onOpenTippingCalc}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
-                💵 {l('Akıllı Bahşiş & Masraf Bölüşücü', 'Smart Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}
+                {l('Akıllı Bahşiş & Masraf Bölüşücü', 'Smart Tipping & Bill Splitter', 'Trinkgeld-Rechner', 'Calculadora de Propinas', 'Расчет чаевых')}
               </button>
             </li>
             <li>
@@ -460,7 +638,7 @@ export const GlobalFooter: React.FC<Props> = ({
                 onClick={onOpenTimezoneOverlap}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
-                ⚡ {l('Zaman Dilimi & Toplantı Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}
+                {l('Zaman Dilimi & Toplantı Çakışması', 'Timezone Meeting Overlap', 'Meeting-Zeitzonen-Planer', 'Superposición Horaria', 'Совпадение времени')}
               </button>
             </li>
             <li>
@@ -469,7 +647,7 @@ export const GlobalFooter: React.FC<Props> = ({
                 onClick={onOpenGlobalRadar}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
-                🛰️ {l('Küresel Seyahat Radarı & Dünya Haritası', 'Global Travel Radar & World Map', 'Reiseradar & Weltkarte', 'Radar de Viajes y Mapa', 'Глобальный Радар и Карта')}
+                {l('Küresel Seyahat Radarı & Dünya Haritası', 'Global Travel Radar & World Map', 'Reiseradar & Weltkarte', 'Radar de Viajes y Mapa', 'Глобальный Радар и Карта')}
               </button>
             </li>
           </ul>
@@ -617,13 +795,8 @@ export const GlobalFooter: React.FC<Props> = ({
       {/* 4. BOTTOM BAR & TRUST BADGES */}
       {/* ======================================================== */}
       <div className="pt-6 pb-2 border-t border-teal-500/20 dark:border-[#2DD4BF]/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
-        {/* Currency / Language indicator badge */}
+        {/* Language indicator badge */}
         <div className="flex items-center gap-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-white/10 border border-teal-500/25 dark:border-[#2DD4BF]/40 font-black text-slate-800 dark:text-white shadow-xs">
-            <span>🇹🇷</span>
-            <span>TRY (₺)</span>
-          </div>
-
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-white/10 border border-teal-500/25 dark:border-[#2DD4BF]/40 font-bold text-slate-800 dark:text-white shadow-xs">
             <Globe className="w-3.5 h-3.5 text-teal-700 dark:text-[#5EEAD4]" />
             <span className="uppercase">{language}</span>
