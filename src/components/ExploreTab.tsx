@@ -355,16 +355,16 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               type="button"
               onClick={() => {
                 setViewMode('list');
-                setShowDirectory(!showDirectory);
+                setShowDirectory(true);
               }}
-              className="px-4 py-2.5 rounded-full text-xs sm:text-sm font-black bg-[#0F766E] hover:bg-[#042F2E] text-white shadow-md cursor-pointer transition-all flex items-center gap-2"
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-black shadow-md cursor-pointer transition-all flex items-center gap-2 ${
+                viewMode === 'list'
+                  ? 'bg-[#2DD4BF] text-[#042F2E]'
+                  : 'bg-white/10 hover:bg-white/20 text-white'
+              }`}
             >
               <List className="w-4 h-4" />
-              <span>
-                {showDirectory || search.trim().length > 0
-                  ? l('Ülke Listesini Gizle ▲', 'Hide Country List ▲')
-                  : l('199 Ülke Tam Listeyi Aç ▼', 'Open Full 199 Country List ▼')}
-              </span>
+              <span>{l('199 Ülke Listesi', '199 Countries List')}</span>
             </button>
 
             <button
@@ -373,7 +373,11 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                 setViewMode('map');
                 setShowDirectory(true);
               }}
-              className="px-4 py-2.5 rounded-full text-xs sm:text-sm font-black bg-[#2DD4BF] hover:bg-[#5EEAD4] text-[#042F2E] shadow-md cursor-pointer transition-all flex items-center gap-2"
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-black shadow-md cursor-pointer transition-all flex items-center gap-2 ${
+                viewMode === 'map'
+                  ? 'bg-[#2DD4BF] text-[#042F2E]'
+                  : 'bg-white/10 hover:bg-white/20 text-white'
+              }`}
             >
               <Globe className="w-4 h-4" />
               <span>{l('İnteraktif Harita', 'Interactive Map')}</span>

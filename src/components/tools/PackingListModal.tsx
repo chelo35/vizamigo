@@ -160,6 +160,87 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
     { key: 'clothes', label: { tr: '👕 Giyim & Aksesuar', en: '👕 Clothing & Gear' } }
   ];
 
+  const handlePrintPdf = () => {
+    const isTr = language === 'tr';
+    const styleLabels: Record<TripStyle, string> = {
+      beach: isTr ? 'Plaj & Deniz Tatili' : 'Beach & Resort',
+      winter: isTr ? 'Kış & Kayak Tatili' : 'Winter & Ski',
+      city: isTr ? 'Şehir Gezisi & Kültür' : 'City Break & Culture',
+      nomad: isTr ? 'Dijital Göçebe & Çalışma' : 'Digital Nomad & Work',
+      backpack: isTr ? 'Sırt Çantası & Macera' : 'Backpacking & Trekking'
+    };
+
+    const html = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vizamigo - ${isTr ? 'Akıllı Bavul Kontrol Listesi' : 'Smart Packing Checklist'}</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 36px; color: #0F172A; max-width: 820px; margin: 0 auto; line-height: 1.5; background: #FFF; }
+    .header { border-bottom: 3px solid #0D9488; padding-bottom: 18px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; }
+    .logo { font-size: 26px; font-weight: 900; color: #0D9488; letter-spacing: -0.5px; }
+    .title { font-size: 20px; font-weight: 800; margin: 4px 0 0; color: #042F2E; }
+    .meta { font-size: 13px; color: #64748B; margin-top: 6px; }
+    .badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold; background: #CCFBF1; color: #042F2E; }
+    .category { margin-top: 22px; margin-bottom: 8px; font-size: 14px; font-weight: 800; color: #0F766E; border-bottom: 1.5px solid #CCFBF1; padding-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .item { display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; font-size: 13px; border-bottom: 1px dashed #E2E8F0; }
+    .box { width: 15px; height: 15px; border: 2px solid #0D9488; border-radius: 4px; display: inline-block; margin-top: 2px; flex-shrink: 0; box-sizing: border-box; }
+    .checked .box { background: #0D9488; position: relative; }
+    .checked .box::after { content: '✓'; color: white; font-size: 11px; position: absolute; top: -3px; left: 2px; font-weight: bold; }
+    .text { flex: 1; font-weight: 500; }
+    .checked .text { color: #94A3B8; text-decoration: line-through; }
+    .notice { margin-top: 28px; padding: 14px 18px; background: #FEF3C7; border-left: 4px solid #F59E0B; border-radius: 8px; font-size: 12px; color: #92400E; }
+    @media print { body { padding: 16px; } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="logo">Vizamigo ✈️</div>
+      <div class="title">${isTr ? 'Akıllı Bavul Kontrol Listesi' : 'Smart Packing Checklist'}</div>
+      <div class="meta">${isTr ? 'Seyahat Stili:' : 'Trip Style:'} <strong>${styleLabels[activeStyle]}</strong> · ${isTr ? 'Durum:' : 'Status:'} <strong>${completedCount}/${activeItems.length} ${isTr ? 'Hazır' : 'Packed'} (%${progressPercent})</strong></div>
+    </div>
+    <div style="text-align: right;">
+      <span class="badge">${new Date().toLocaleDateString(isTr ? 'tr-TR' : 'en-US')}</span>
+    </div>
+  </div>
+
+  ${categories.map(cat => {
+    const catItems = activeItems.filter(i => i.category === cat.key);
+    if (catItems.length === 0) return '';
+    return `
+      <div class="category">${isTr ? cat.label.tr : cat.label.en}</div>
+      ${catItems.map(item => {
+        const isDone = checkedIds.has(item.id);
+        const itemText = isTr ? item.text.tr : item.text.en;
+        return `
+          <div class="item ${isDone ? 'checked' : ''}">
+            <div class="box"></div>
+            <div class="text">${itemText}</div>
+          </div>
+        `;
+      }).join('')}
+    `;
+  }).join('')}
+
+  <div class="notice">
+    <strong>⚠️ ${isTr ? 'Havacılık & Güvenlik Hatırlatmaları:' : 'Aviation & Baggage Regulations:'}</strong><br/>
+    • ${isTr ? 'Powerbank ve lityum piller kesinlikle uçak altı bagaja verilemez; kabin (el) bagajında taşınmalıdır (Maksimum 20.000 - 27.000 mAh).' : 'Powerbanks and lithium batteries must be kept in cabin hand luggage, never in checked baggage (Max 20,000-27,000 mAh).'}<br/>
+    • ${isTr ? 'Kabin bagajı sıvı kuralı: Her kap maksimum 100 ml olmalı ve şeffaf 1 litrelik kilitli torbaya sığmalıdır.' : 'Cabin liquid rule: Each container max 100ml, fitting in a single 1L transparent zip bag.'}<br/>
+    • ${isTr ? 'Pasaport geçerlilik süresi gidilecek ülkeye göre en az 6 ay olmalıdır.' : 'Passport must be valid for at least 6 months depending on destination entry rules.'}
+  </div>
+</body>
+</html>`;
+
+    const printWin = window.open('', '_blank');
+    if (printWin) {
+      printWin.document.write(html);
+      printWin.document.close();
+      printWin.focus();
+      setTimeout(() => printWin.print(), 350);
+    }
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200">
       <div className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden">
@@ -180,13 +261,26 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={onClose}
-              className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
-            >
-              <X className="w-5 h-5" />
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handlePrintPdf}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black bg-gradient-to-r from-[#F97316] to-[#FB7185] text-white hover:brightness-110 shadow-sm cursor-pointer transition-all"
+                title={l('PDF Olarak İndir / Yazdır', 'Print / Save as PDF')}
+              >
+                <span>📄</span>
+                <span>{l('PDF / Yazdır', 'PDF / Print')}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={onClose}
+                className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
+                title={l('Kapat', 'Close')}
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           {/* Trip Style Filters */}

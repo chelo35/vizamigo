@@ -195,34 +195,35 @@ export const Header: React.FC<HeaderProps> = ({
           </nav>
 
           {/* Right: Mobile/Tablet Passport + Language (TR ▾) + Theme (☀️/🌙) + Auth */}
-          <div className="flex items-center gap-1 sm:gap-2 shrink-0 justify-end">
-            {/* Mobile & Laptop Compact Passport Pill */}
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 justify-end">
+            {/* Mobile & Laptop Compact Passport Pill with clear Passport Identity */}
             <button
               type="button"
               onClick={onOpenPassportSelector}
-              className="xl:hidden flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 min-h-[32px] sm:min-h-[36px] rounded-full bg-[#14B8A6]/20 border border-[#2DD4BF]/50 text-xs sm:text-sm font-black text-white hover:bg-[#14B8A6]/30 transition-all cursor-pointer shrink-0"
+              className="xl:hidden flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 min-h-[32px] sm:min-h-[36px] rounded-full bg-[#0D9488]/30 hover:bg-[#0D9488]/50 border border-[#2DD4BF]/60 text-xs font-black text-white transition-all cursor-pointer shrink-0 shadow-xs"
               title={l('Aktif Pasaportu Değiştir', 'Change Active Passport')}
+              aria-label={l('Aktif Pasaport Seçimi', 'Passport Selection')}
             >
-              <span className="text-sm sm:text-base leading-none">{getFlag(currentPassport)}</span>
-              <span className="font-mono text-xs">{currentPassport}</span>
-              <span className="text-[#5EEAD4] font-black tabular-nums text-xs">
+              <span className="text-xs" aria-hidden="true">🛂</span>
+              <span className="text-sm leading-none">{getFlag(currentPassport)}</span>
+              <span className="font-mono text-xs font-black">{currentPassport}</span>
+              <span className="px-1.5 py-0.5 rounded-md bg-[#2DD4BF] text-[#042F2E] font-black text-[10px] sm:text-xs tabular-nums">
                 {visaFreeCount}
-              </span>
-              <span className="hidden md:inline text-xs text-[#5EEAD4]/90 font-medium">
-                {l('Vizesiz', 'Free')}
               </span>
             </button>
 
-            {/* Language Selector (TR ▾) */}
+            {/* Language Selector (🌐 Dil: TR ▾) */}
             <div className="relative shrink-0" ref={langRef}>
               <button
                 type="button"
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
-                className="flex items-center gap-0.5 sm:gap-1 px-2 sm:px-2.5 py-1 min-h-[32px] sm:min-h-[36px] rounded-full bg-white/[0.08] hover:bg-white/15 border border-[#2DD4BF]/40 text-xs font-black text-white transition-all cursor-pointer shrink-0"
+                className="flex items-center gap-1 px-2.5 sm:px-3 py-1 min-h-[32px] sm:min-h-[36px] rounded-full bg-white/10 hover:bg-white/20 border border-[#5EEAD4]/50 text-xs font-black text-white transition-all cursor-pointer shrink-0 shadow-xs"
                 title={t.languageSelect}
                 aria-label={t.languageSelect}
               >
-                <span className="uppercase font-black text-xs">{language}</span>
+                <span className="text-xs" aria-hidden="true">🌐</span>
+                <span className="hidden xs:inline text-[11px] text-teal-200">{l('Dil:', 'Lang:')}</span>
+                <span className="uppercase font-black text-xs text-[#5EEAD4]">{language}</span>
                 <ChevronDown className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#5EEAD4]" />
               </button>
 

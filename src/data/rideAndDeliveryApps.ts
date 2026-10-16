@@ -10,12 +10,14 @@ export type SuperAppCategory =
   | 'micromobility'
   | 'rail_ferry'
   | 'flights_hotels'
+  | 'car_rental'
   | 'fintech'
   | 'insurance'
   | 'esim_vpn'
   | 'social_dating'
   | 'language'
   | 'luggage_vip'
+  | 'navigation'
   | 'delivery'
   | 'both';
 
@@ -650,7 +652,7 @@ export const MASTER_APPS_DIRECTORY: Record<string, NomadAppInfo> = {
   DiscoverCars: {
     id: 'discovercars',
     name: 'DiscoverCars & EconomyBookings',
-    category: 'both',
+    category: 'car_rental',
     categoryLabelTr: 'Uluslararası Araç Kiralama',
     categoryLabelEn: 'Global Car Rental Comparison',
     url: 'https://www.discovercars.com',
@@ -660,6 +662,126 @@ export const MASTER_APPS_DIRECTORY: Record<string, NomadAppInfo> = {
     recommendedReasonEn: 'Full coverage insurance with no hidden fees and free cancellation.',
     logoText: 'Car 🚗',
     logoBg: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
+    logoColor: '#FFFFFF'
+  },
+  Rentalcars: {
+    id: 'rentalcars',
+    name: 'Rentalcars.com',
+    category: 'car_rental',
+    categoryLabelTr: 'Havalimanı Rent-a-Car',
+    categoryLabelEn: 'Airport Car Hire Global',
+    url: 'https://www.rentalcars.com',
+    taglineTr: 'Hertz, Avis, Sixt ve Enterprise Tek Ekranda En İyi Fiyat',
+    taglineEn: 'Compare Hertz, Avis, Sixt, Enterprise in One Place',
+    recommendedReasonTr: 'Uçaktan iner inmez terminalden araç teslimi, tam kasko seçenekleri ve esnek iade.',
+    recommendedReasonEn: 'Terminal pick-up at major airports with full protection and free cancellation.',
+    logoText: 'Rental 🚙',
+    logoBg: 'linear-gradient(135deg, #0284C7 0%, #0369A1 100%)',
+    logoColor: '#FFFFFF'
+  },
+  Turo: {
+    id: 'turo',
+    name: 'Turo & Getaround',
+    category: 'car_rental',
+    categoryLabelTr: 'Kişiden Kişiye Araç Paylaşımı',
+    categoryLabelEn: 'Peer-to-Peer Car Sharing',
+    url: 'https://turo.com',
+    taglineTr: 'Yerel Sahiplerden Özel Araç Kiralama (ABD, İngiltere, Avrupa)',
+    taglineEn: 'Rent Unique Cars from Trusted Local Hosts',
+    recommendedReasonTr: 'Klasik kiralama şirketlerinden %30 daha uygun; spor arabadan SUV ve elektrikliye geniş seçenek.',
+    recommendedReasonEn: 'Skip the rental counter and book unique cars directly from local hosts.',
+    logoText: 'Turo 🔑',
+    logoBg: 'linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%)',
+    logoColor: '#FFFFFF'
+  },
+  Skyscanner: {
+    id: 'skyscanner',
+    name: 'Skyscanner & Google Flights',
+    category: 'flights_hotels',
+    categoryLabelTr: 'Global Uçak Bileti & Fiyat Alarmı',
+    categoryLabelEn: 'Global Flights & Price Alerts',
+    url: 'https://www.skyscanner.com',
+    taglineTr: '1200+ Havayolu ve Acenteyi Tarar, En Ucuz Tarihleri Bulur',
+    taglineEn: 'Search 1,200+ Airlines & OTAs with Month View',
+    recommendedReasonTr: '"Her Yere" (Everywhere) arama özelliğiyle pasaportunuza en ucuz kaçış rotasını listeler.',
+    recommendedReasonEn: 'Explore Everywhere feature reveals the cheapest destinations from your home airport.',
+    logoText: 'Sky ✈️',
+    logoBg: 'linear-gradient(135deg, #0284C7 0%, #00B2D6 100%)',
+    logoColor: '#FFFFFF'
+  },
+  RadicalStorage: {
+    id: 'radical',
+    name: 'Radical Storage',
+    category: 'luggage_vip',
+    categoryLabelTr: 'Sabit Fiyatlı Bagaj Emaneti',
+    categoryLabelEn: 'Flat-Rate Luggage Storage',
+    url: 'https://radicalstorage.com',
+    taglineTr: 'Avrupa ve Asya’da Kafe/Otellerde Günlük 5€ Sabit Ücrete Emanet',
+    taglineEn: '5,000+ City Center Drop-Off Points at €5/day Flat Rate',
+    recommendedReasonTr: 'Bavul boyutu veya ağırlığı fark etmeksizin sabit fiyat ve 3.000€ sigorta güvencesi.',
+    recommendedReasonEn: 'No size or weight restrictions; flat daily fee with €3,000 guarantee per bag.',
+    logoText: 'Radical 🧳',
+    logoBg: 'linear-gradient(135deg, #F97316 0%, #C2410C 100%)',
+    logoColor: '#FFFFFF'
+  },
+  LuggageHero: {
+    id: 'luggagehero',
+    name: 'LuggageHero & Nannybag',
+    category: 'luggage_vip',
+    categoryLabelTr: 'Saatlik / Günlük Bagaj Kilidi',
+    categoryLabelEn: 'Hourly & Daily Luggage Lockers',
+    url: 'https://luggagehero.com',
+    taglineTr: 'Merkezi İstasyonlar ve Turistik Noktalarda Saatlik Güvenli Bırakma',
+    taglineEn: 'Certified Local Shops & Lockers Near Major Train Stations',
+    recommendedReasonTr: 'Sadece kaldığınız saat kadar ödeyin, güvenlik mührüyle kilitlenen bavulunuzu rahatça teslim edin.',
+    recommendedReasonEn: 'Pay by the hour or day; includes security seal and damage protection.',
+    logoText: 'Hero 🎒',
+    logoBg: 'linear-gradient(135deg, #E11D48 0%, #BE123C 100%)',
+    logoColor: '#FFFFFF'
+  },
+  MayaMobile: {
+    id: 'mayamobile',
+    name: 'Maya Mobile & Nomad eSIM',
+    category: 'esim_vpn',
+    categoryLabelTr: 'Sınırsız İnternet & Hotspot eSIM',
+    categoryLabelEn: 'Unlimited Data Travel eSIM with Hotspot',
+    url: 'https://maya.net',
+    taglineTr: '190+ Ülkede Sınırsız Veri Paketleri ve Ücretsiz Hotspot Paylaşımı',
+    taglineEn: 'High-Speed 5G Unlimited Travel Data with Tethering',
+    recommendedReasonTr: 'Laptop veya tabletinize sınırsız internet dağıtın (hotspot serbest), otomatik bağlantı sağlar.',
+    recommendedReasonEn: 'Keep all your travel devices connected with unlimited 5G plans and mobile hotspot.',
+    logoText: 'Maya 📶',
+    logoBg: 'linear-gradient(135deg, #8B5CF6 0%, #4C1D95 100%)',
+    logoColor: '#FFFFFF'
+  },
+  Citymapper: {
+    id: 'citymapper',
+    name: 'Citymapper & Maps.me',
+    category: 'navigation',
+    categoryLabelTr: 'Şehir İçi Metro, Otobüs & Çevrimdışı Harita',
+    categoryLabelEn: 'Live Transit & Offline Maps',
+    url: 'https://citymapper.com',
+    taglineTr: 'Metrolar, Aktarmalar ve İnternetsiz Detaylı Şehir Haritası',
+    taglineEn: 'The Ultimate Urban Transit & Offline Navigation Tool',
+    recommendedReasonTr: 'Hangi metro vagonuna binmeniz gerektiğini bile söyler; haritaları önceden indirip çevrimdışı gezin.',
+    recommendedReasonEn: 'Tells you which subway carriage to board and provides 100% offline navigation.',
+    logoText: 'Maps 🗺️',
+    logoBg: 'linear-gradient(135deg, #10B981 0%, #047857 100%)',
+    logoColor: '#FFFFFF'
+  },
+  Heymondo: {
+    id: 'heymondo',
+    name: 'Heymondo & Allianz Global',
+    category: 'insurance',
+    categoryLabelTr: '7/24 Doktorlu Seyahat Sağlık Sigortası',
+    categoryLabelEn: '24/7 App-Based Travel Medical Insurance',
+    url: 'https://heymondo.com',
+    taglineTr: 'Cepten 7/24 Canlı Doktor Görüşmesi & 10 Milyon €’ya Varan Teminat',
+    taglineEn: '24/7 In-App Medical Chat & Up to €10M Medical Coverage',
+    recommendedReasonTr: 'Önceden cebinizden para ödemeden hastane masraflarını karşılar; anında vize sertifikası üretir.',
+    recommendedReasonEn: 'Direct direct-billing medical network with instant PDF certificate for visa entry.',
+    logoText: 'Mondo 🩺',
+    logoBg: 'linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%)',
     logoColor: '#FFFFFF'
   }
 };
@@ -765,4 +887,50 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
   tryAdd('AirHelp');
 
   return result;
+}
+
+/**
+ * Returns travel & nomad apps filtered by category
+ */
+export function getAppsByCategory(
+  category: string,
+  countryCode?: string
+): NomadAppInfo[] {
+  const all = Object.values(MASTER_APPS_DIRECTORY);
+  if (!category || category === 'all') {
+    return countryCode ? getCountryNomadApps(countryCode) : all;
+  }
+  return all.filter((app) => {
+    if (category === 'flights' || category === 'flights_hotels') {
+      return app.category === 'flights_hotels';
+    }
+    if (category === 'hotels') {
+      return app.category === 'flights_hotels' && (app.id?.includes('agoda') || app.id?.includes('booking') || app.id?.includes('hostel') || app.id?.includes('trip'));
+    }
+    if (category === 'car_rental') {
+      return app.category === 'car_rental';
+    }
+    if (category === 'rail_ferry') {
+      return app.category === 'rail_ferry';
+    }
+    if (category === 'ride' || category === 'micromobility') {
+      return app.category === 'ride' || app.category === 'micromobility' || app.category === 'both';
+    }
+    if (category === 'luggage_vip') {
+      return app.category === 'luggage_vip';
+    }
+    if (category === 'insurance') {
+      return app.category === 'insurance';
+    }
+    if (category === 'esim_vpn') {
+      return app.category === 'esim_vpn';
+    }
+    if (category === 'navigation') {
+      return app.category === 'navigation';
+    }
+    if (category === 'delivery') {
+      return app.category === 'delivery' || app.category === 'both';
+    }
+    return app.category === category;
+  });
 }

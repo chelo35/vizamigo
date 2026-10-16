@@ -29,7 +29,7 @@ import { useI18n } from '../../data/i18n';
 import { getFlag, getCountryName, getCategoryBadgeLabel, CountryItem } from '../../data/passportData';
 import { getPassportItems, compareDualPassports } from '../../utils/calculator';
 import { getCrossRate } from '../../data/currencyRates';
-import { getCountryNomadApps, MASTER_APPS_DIRECTORY } from '../../data/rideAndDeliveryApps';
+import { getCountryNomadApps, getAppsByCategory, MASTER_APPS_DIRECTORY } from '../../data/rideAndDeliveryApps';
 import { getCountryConciergePlan } from '../../data/travelConciergeEngine';
 import { getCountryInsights } from '../../data/countryInsights';
 import { getCountryGeography } from '../../data/countryGeography';
@@ -105,7 +105,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   currentPassport,
   secondaryPassport = 'DE',
   onOpenCountryDossier,
-  onSelectTab: _onSelectTab,
+  onSelectTab,
   onOpenPackingList,
   onOpenTippingCalc,
   onOpenTimezoneOverlap,
@@ -119,6 +119,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [widgetSearch, setWidgetSearch] = useState<string>('');
+  const [selectedAppCategory, setSelectedAppCategory] = useState<string>('all');
 
   // Interactive card local states
   const [researchCountry, setResearchCountry] = useState<string>('TH');
@@ -311,10 +312,20 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             Full width on Mobile (col-span-2), 6 cols on Desktop (lg:col-span-6)
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => openWidget('radar', 'map')}
+          onClick={() => {
+            const el = document.getElementById('vz-country-directory');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            else openWidget('radar', 'map');
+          }}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => e.key === 'Enter' && openWidget('radar', 'map')}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              const el = document.getElementById('vz-country-directory');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else openWidget('radar', 'map');
+            }
+          }}
           className="col-span-2 lg:col-span-6 group relative overflow-hidden rounded-[26px] sm:rounded-[30px] border-2 border-[#5EEAD4]/60 shadow-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[210px] sm:min-h-[250px] flex flex-col justify-between p-5 sm:p-6"
         >
           {/* Real Tropical Turquoise Island Lagoon Photo Background */}
@@ -335,29 +346,57 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
           {/* Content Layout */}
           <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 h-full">
-            <div className="flex flex-col justify-between h-full space-y-4 sm:max-w-[52%]">
+            <div className="flex flex-col justify-between h-full space-y-3 sm:max-w-[54%]">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-black text-white leading-[1.15] tracking-tight drop-shadow-md">
-                  {l('Nereye Gidebilirim?', 'Where Can I Go?')}
-                  <span className="block text-xl sm:text-2xl text-[#BAE6FD] mt-0.5">
-                    {l('(Dünya Radarı)', '(World Radar)')}
+                  {l('Pasaportumla Nereye Gidebilirim?', 'Where Can I Go With My Passport?')}
+                  <span className="block text-lg sm:text-xl text-[#BAE6FD] mt-0.5">
+                    {l('(Dünya Radarı & 199 Ülke)', '(World Radar & 199 Countries)')}
                   </span>
                 </h2>
               </div>
 
               {/* Big High-Contrast Pills: 71 Vizesiz | 45 E-Vize */}
-              <div className="flex flex-wrap items-center gap-2.5 pt-2">
-                <span className="px-4 py-2 rounded-2xl text-sm sm:text-base font-black bg-[#38BDF8] text-[#042637] shadow-lg">
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <span className="px-3.5 py-1.5 rounded-2xl text-xs sm:text-sm font-black bg-[#38BDF8] text-[#042637] shadow-lg">
                   {stats.free} {l('Vizesiz', 'Visa-Free')}
                 </span>
-                <span className="px-4 py-2 rounded-2xl text-sm sm:text-base font-black bg-[#5EEAD4] text-[#042637] shadow-lg">
+                <span className="px-3.5 py-1.5 rounded-2xl text-xs sm:text-sm font-black bg-[#5EEAD4] text-[#042F2E] shadow-lg">
                   {stats.evisa} {l('E-Vize', 'eVisa')}
                 </span>
+              </div>
+
+              {/* Instant Action Direct Buttons */}
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const el = document.getElementById('vz-country-directory');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    else onSelectTab?.('explore');
+                  }}
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-black bg-[#2DD4BF] hover:bg-white text-[#042F2E] shadow-md transition-all cursor-pointer flex items-center gap-1.5"
+                >
+                  <span>🌍</span>
+                  <span>{l('199 Ülke Listesini Aç', 'Open 199 Country List')}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    openWidget('radar', 'map');
+                  }}
+                  className="px-3 py-1.5 rounded-xl text-xs font-black bg-white/20 hover:bg-white/35 text-white border border-white/30 backdrop-blur-md transition-all cursor-pointer flex items-center gap-1"
+                >
+                  <span>🗺️</span>
+                  <span>{l('Radar', 'Radar')}</span>
+                </button>
               </div>
             </div>
 
             {/* 3D Glowing World Map with Colorful Flight Arcs */}
-            <div className="w-full sm:w-[48%] -my-2">
+            <div className="w-full sm:w-[46%] -my-2">
               <WorldRadar3DIllustration />
             </div>
           </div>
@@ -475,33 +514,43 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 3: PASAPORT SİNERJİSİ / KARŞILAŞTIR
+            WIDGET 3: PASAPORT KARŞILAŞTIR & SİNERJİ
             1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => openWidget('synergy', 'overview')}
+          onClick={() => {
+            onSelectTab?.('plan');
+          }}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => e.key === 'Enter' && openWidget('synergy', 'overview')}
+          onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
         >
-          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-4">
+          <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-3">
             <div>
-              <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
-                {l('Pasaport', 'Passport')}
-                <span className="block">{l('Sinerjisi', 'Synergy')}</span>
+              <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
+                {l('Pasaport Karşılaştır', 'Compare Passports')}
+                <span className="block text-xs sm:text-sm font-bold text-[#0D9488] dark:text-[#5EEAD4] mt-0.5">
+                  {l('& Güç Sinerjisi', '& Power Synergy')}
+                </span>
               </h3>
             </div>
 
-            <div className="pt-1">
+            <div>
               <div className="flex items-baseline gap-1.5">
                 <span className="text-2xl sm:text-4xl font-black text-[#042F2E] dark:text-[#5EEAD4] tracking-tight">
                   {synergyStats.combinedFree}
                 </span>
-                <span className="text-xs sm:text-base font-extrabold text-[#042F2E] dark:text-teal-100 leading-tight">
+                <span className="text-xs sm:text-sm font-extrabold text-[#042F2E] dark:text-teal-100 leading-tight">
                   {l('Ülke Vizesiz', 'Visa-Free')}
                 </span>
               </div>
+            </div>
+
+            <div>
+              <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs group-hover:bg-[#5EEAD4] transition-all">
+                {l('Pasaport Karşılaştır →', 'Compare Passports →')}
+              </span>
             </div>
           </div>
 
@@ -607,24 +656,26 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 7: DÜNYA SAATİ & ROTA
+            WIDGET 7: DÜNYA SAATİ & ROTA PLANLAYICI
             1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => openWidget('world_clock', 'clocks')}
+          onClick={() => {
+            onSelectTab?.('plan');
+          }}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => e.key === 'Enter' && openWidget('world_clock', 'clocks')}
+          onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col justify-between"
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <div className="space-y-1">
-              <h3 className="text-lg sm:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
+              <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-[#042F2E] dark:text-white leading-[1.12] tracking-tight">
                 {l('Dünya Saati', 'World Clock')}
-                <span className="block">{l('& Rota', '& Route')}</span>
+                <span className="block">{l('& Rota Planı', '& Route Plan')}</span>
               </h3>
               <p className="text-xs sm:text-sm font-extrabold text-[#0D9488] dark:text-teal-200 truncate max-w-[150px] sm:max-w-none">
-                İST ➔ ATN ➔ TYO
+                {getFlag(currentPassport)} {getCountryName(currentPassport, language)} ➔ TYO ➔ LON
               </p>
             </div>
             <div className="self-center sm:self-auto -my-3">
@@ -632,36 +683,41 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </div>
           </div>
 
-          <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
-            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight">
+          <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15 flex items-center justify-between gap-2">
+            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-xs sm:text-sm text-[#042F2E] dark:text-white tracking-tight">
               <LiveCityClock offsetHours={3} label="İST" />
               <span className="opacity-30">·</span>
               <LiveCityClock offsetHours={9} label="TYO" />
             </div>
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#2DD4BF] text-[#042F2E] text-xs font-black shadow-xs shrink-0 group-hover:bg-[#5EEAD4] transition-all">
+              {l('Rota Planla →', 'Plan Route →')}
+            </span>
           </div>
         </div>
 
         {/* -----------------------------------------------------------------
-            WIDGET 8: ÜLKE UYGULAMALARI & FIRSATLAR (AFFILIATE & LOCAL APPS)
+            WIDGET 8: TÜM TURİZM UYGULAMALARI (FLIGHTS, HOTELS, TRAINS, LUGGAGE, APPS)
             1 col on Mobile (col-span-1), 4 cols on Desktop (lg:col-span-4)
         ----------------------------------------------------------------- */}
         <div
-          onClick={() => openWidget('local_apps', 'ride', appsCountry)}
+          onClick={() => openWidget('local_apps', 'apps', appsCountry)}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'ride', appsCountry)}
+          onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'apps', appsCountry)}
           className="col-span-1 lg:col-span-4 group relative overflow-hidden rounded-[24px] sm:rounded-[28px] bento-lagoon-card p-4 sm:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 min-h-[195px] sm:min-h-[225px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"
         >
           <div className="flex flex-col justify-between h-full z-10 space-y-2 sm:space-y-3">
             <h3 className="text-base sm:text-2xl font-black text-[#042F2E] dark:text-white leading-[1.15] tracking-tight">
-              {l('Ülke', 'Country')}
-              <span className="block">{l('Uygulamaları', 'Local Apps')}</span>
-              <span className="block">{l('& Fırsatlar', '& Deals')}</span>
+              {l('Tüm Seyahat', 'All Travel')}
+              <span className="block">{l('Uygulamaları', 'Super-Apps')}</span>
+              <span className="block text-xs font-bold text-[#0D9488] dark:text-[#5EEAD4] mt-0.5">
+                {l('Uçak · Otel · Tren · Bagaj · eSIM', 'Flights · Hotels · Rail · Luggage · eSIM')}
+              </span>
             </h3>
 
             <div>
               <span className="inline-flex items-center gap-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs sm:text-sm font-black shadow-md group-hover:scale-105 transition-transform">
-                {l('Fırsatları Gör →', 'View Deals →')}
+                {l('Tüm Uygulamaları Aç (30+) →', 'Open App Directory (30+) →')}
               </span>
             </div>
           </div>
@@ -978,150 +1034,354 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                         </div>
                       </div>
 
-                      {/* 2. "Tayland'da Geçerli Uygulamalar" Mint Card with 4 Big App Icons (Grab, Bolt, Agoda, Airalo) */}
-                      <div className="p-5 rounded-[24px] bg-[#CCFBF1] dark:bg-[#0B3B49] border-2 border-[#5EEAD4] shadow-lg space-y-4">
-                        <div className="flex items-center justify-between">
-                          <h4 className="text-base sm:text-xl font-black text-[#042F2E] dark:text-white">
-                            {l(
-                              `${getCountryName(targetCode, language)}'da Geçerli Uygulamalar`,
-                              `Valid Apps in ${getCountryName(targetCode, language)}`
-                            )}
-                          </h4>
-                          <span className="text-xs font-extrabold text-[#0F766E] dark:text-[#5EEAD4]">
-                            {l('İndirmek için dokunun', 'Tap to open')}
-                          </span>
-                        </div>
+                      {/* === SUB-TAB 1: ALL APPS & CATEGORIZED ECOSYSTEM === */}
+                      {(activeWidget.subTab === 'apps' || activeWidget.id === 'local_apps') && (
+                        <div className="space-y-4">
+                          {/* Horizontal Category Pill Bar */}
+                          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+                            {[
+                              { id: 'all', label: l('🌟 Tümü (30+)', '🌟 All Apps (30+)') },
+                              { id: 'flights_hotels', label: l('✈️ Uçak & Otel', '✈️ Flights & Hotels') },
+                              { id: 'car_rental', label: l('🚗 Araç Kiralama', '🚗 Car Rental') },
+                              { id: 'rail_ferry', label: l('🚆 Tren & Feribot', '🚆 Trains & Ferries') },
+                              { id: 'ride', label: l('🛵 Taksi & Scooter', '🛵 Taxi & Scooters') },
+                              { id: 'luggage_vip', label: l('🧳 Bagaj Emanet & VIP', '🧳 Luggage Storage & VIP') },
+                              { id: 'insurance', label: l('🛡️ Seyahat Sigortası', '🛡️ Travel Insurance') },
+                              { id: 'esim_vpn', label: l('📶 5G eSIM & İnternet', '📶 5G eSIM & Data') },
+                              { id: 'navigation', label: l('🗺️ Çevrimdışı Harita', '🗺️ Offline Navigation') },
+                              { id: 'delivery', label: l('🍽️ Yemek & Market', '🍽️ Food & Delivery') }
+                            ].map((cat) => (
+                              <button
+                                key={cat.id}
+                                type="button"
+                                onClick={() => setSelectedAppCategory(cat.id)}
+                                className={`px-3.5 py-1.5 rounded-full text-xs font-black whitespace-nowrap cursor-pointer transition-all ${
+                                  selectedAppCategory === cat.id
+                                    ? 'bg-[#2DD4BF] text-[#042F2E] shadow-sm'
+                                    : 'bg-white/15 text-white hover:bg-white/25 border border-white/20'
+                                }`}
+                              >
+                                {cat.label}
+                              </button>
+                            ))}
+                          </div>
 
-                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                          {/* App 1: Primary Ride App (e.g. Grab) */}
-                          <a
-                            href={apps[0]?.url || 'https://www.grab.com'}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3.5 rounded-2xl bg-white dark:bg-[#072630] border border-teal-500/25 shadow-sm hover:-translate-y-0.5 transition-all flex flex-col items-center text-center no-underline"
-                          >
-                            <div className="w-14 h-14 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-lg font-black text-emerald-600 dark:text-emerald-400 shadow-xs">
-                              {apps[0]?.name.slice(0, 6) || 'Grab'}
-                            </div>
-                            <div className="text-sm font-black text-[#042F2E] dark:text-white mt-2">
-                              {apps[0]?.name || 'Grab'}
-                            </div>
-                            <div className="text-xs font-bold text-[#0F766E] dark:text-teal-300">
-                              {l('Taksi & Ulaşım', 'Taxi & Ride')}
-                            </div>
-                          </a>
+                          {/* App Cards Grid */}
+                          {(() => {
+                            let list = getAppsByCategory(selectedAppCategory, targetCode);
+                            if (widgetSearch.trim()) {
+                              const q = widgetSearch.toLocaleLowerCase('tr');
+                              list = list.filter(
+                                (a) =>
+                                  a.name.toLocaleLowerCase('tr').includes(q) ||
+                                  a.taglineTr.toLocaleLowerCase('tr').includes(q) ||
+                                  a.taglineEn.toLocaleLowerCase('tr').includes(q) ||
+                                  a.categoryLabelTr.toLocaleLowerCase('tr').includes(q) ||
+                                  a.categoryLabelEn.toLocaleLowerCase('tr').includes(q)
+                              );
+                            }
 
-                          {/* App 2: Secondary Ride / Food App (e.g. Bolt) */}
-                          <a
-                            href={apps[1]?.url || 'https://bolt.eu'}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3.5 rounded-2xl bg-white dark:bg-[#072630] border border-teal-500/25 shadow-sm hover:-translate-y-0.5 transition-all flex flex-col items-center text-center no-underline"
-                          >
-                            <div className="w-14 h-14 rounded-2xl bg-[#10B981] flex items-center justify-center text-lg font-black text-white shadow-xs">
-                              {apps[1]?.name.slice(0, 6) || 'Bolt'}
-                            </div>
-                            <div className="text-sm font-black text-[#042F2E] dark:text-white mt-2">
-                              {apps[1]?.name || 'Bolt'}
-                            </div>
-                            <div className="text-xs font-bold text-[#0F766E] dark:text-teal-300">
-                              {l('Ekonomik Taksi', 'Ride-Hailing')}
-                            </div>
-                          </a>
-
-                          {/* App 3: Agoda / Booking (Hotel) */}
-                          <a
-                            href="https://www.agoda.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3.5 rounded-2xl bg-white dark:bg-[#072630] border border-teal-500/25 shadow-sm hover:-translate-y-0.5 transition-all flex flex-col items-center text-center no-underline"
-                          >
-                            <div className="w-14 h-14 rounded-2xl bg-sky-50 dark:bg-sky-950/60 border border-sky-500/30 flex flex-col items-center justify-center text-base font-black text-sky-700 dark:text-sky-300 shadow-xs">
-                              <span>agoda</span>
-                              <span className="text-xs tracking-widest text-rose-500">•••••</span>
-                            </div>
-                            <div className="text-sm font-black text-[#042F2E] dark:text-white mt-2">
-                              Agoda (Otel)
-                            </div>
-                            <div className="text-xs font-bold text-[#0F766E] dark:text-teal-300">
-                              {l('%35 İndirimli', 'Up to 35% Off')}
-                            </div>
-                          </a>
-
-                          {/* App 4: Airalo (eSIM) */}
-                          <a
-                            href="https://www.airalo.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3.5 rounded-2xl bg-white dark:bg-[#072630] border border-teal-500/25 shadow-sm hover:-translate-y-0.5 transition-all flex flex-col items-center text-center no-underline"
-                          >
-                            <div className="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-500/30 flex flex-col items-center justify-center text-sm font-black text-rose-600 dark:text-amber-300 shadow-xs">
-                              <span>airalo</span>
-                              <span className="text-xs text-[#0F766E] font-extrabold">5G eSIM</span>
-                            </div>
-                            <div className="text-sm font-black text-[#042F2E] dark:text-white mt-2">
-                              Airalo (eSIM)
-                            </div>
-                            <div className="text-xs font-bold text-[#0F766E] dark:text-teal-300">
-                              {l('Anında İnternet', 'Instant 5G')}
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      {/* 3. Sub-Tab Specific Cards (Visa / Practical / Deals / Insurance) */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="p-5 rounded-[22px] bg-[#CCFBF1]/95 dark:bg-white/[0.06] border border-[#5EEAD4] space-y-2">
-                          <h5 className="text-base font-black text-[#042F2E] dark:text-[#5EEAD4]">
-                            🛂 {l('Vize & Sınır Giriş Kuralları', 'Visa & Border Entry Rules')}
-                          </h5>
-                          <p className="text-sm font-bold text-[#042F2E] dark:text-white leading-relaxed">
-                            {l(
-                              'En az 6 ay geçerli pasaport, dönüş uçak bileti ve ilk konaklama adresinizin rezervasyon belgesi ile sorunsuz giriş yapabilirsiniz.',
-                              'Enter smoothly with at least 6 months passport validity, return flight ticket, and hotel booking.'
-                            )}
-                          </p>
-                        </div>
-
-                        <div className="p-5 rounded-[22px] bg-[#CCFBF1]/95 dark:bg-white/[0.06] border border-[#5EEAD4] space-y-2">
-                          <h5 className="text-base font-black text-[#042F2E] dark:text-[#5EEAD4]">
-                            🔌 {l('Pratik Bilgiler & Güvenlik', 'Practical Info & Safety')}
-                          </h5>
-                          <p className="text-sm font-bold text-[#042F2E] dark:text-white leading-relaxed">
-                            {l('Priz Tipi:', 'Plug Type:')} {geo?.plugTypes || insights.plugType} ·{' '}
-                            {l('Acil Numara:', 'Emergency:')} {insights.emergencyNumber} ·{' '}
-                            {l('En İyi Sezon:', 'Best Season:')} {insights.bestSeason}
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Additional Partner Stages if user clicked "Otel & Uçak" or "Sigorta" */}
-                      {(activeWidget.subTab === 'deals' || activeWidget.subTab === 'insurance') && (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                          {conciergePlan.stages.map((st) => (
-                            <a
-                              key={st.stage}
-                              href={st.primaryPartner.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="p-4 rounded-2xl bg-white/95 dark:bg-white/[0.08] border border-[#5EEAD4] flex items-center justify-between gap-3 no-underline"
-                            >
-                              <div>
-                                <div className="text-xs font-extrabold text-[#0F766E] dark:text-[#5EEAD4]">
-                                  {language === 'tr' ? st.titleTr : st.titleEn}
+                            if (list.length === 0) {
+                              return (
+                                <div className="p-8 text-center text-sm font-bold text-white/80 bg-white/10 rounded-2xl">
+                                  {l('Bu kategoride veya aramaya uygun uygulama bulunamadı.', 'No apps found matching this category or search.')}
                                 </div>
-                                <div className="text-lg font-black text-[#042F2E] dark:text-white">
-                                  {st.primaryPartner.brand}
-                                </div>
-                                <div className="text-xs font-bold text-slate-600 dark:text-slate-300">
-                                  {language === 'tr' ? st.primaryPartner.taglineTr : st.primaryPartner.taglineEn}
-                                </div>
+                              );
+                            }
+
+                            return (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                                {list.map((app) => (
+                                  <a
+                                    key={app.name}
+                                    href={app.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-4 rounded-2xl bg-white dark:bg-[#072630] border border-teal-500/25 shadow-sm hover:border-[#2DD4BF] hover:-translate-y-0.5 transition-all flex flex-col justify-between no-underline group"
+                                  >
+                                    <div className="flex items-start gap-3">
+                                      <div
+                                        style={{ background: app.logoBg, color: app.logoColor }}
+                                        className="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-xs shrink-0 shadow-sm"
+                                      >
+                                        {app.logoText}
+                                      </div>
+                                      <div className="space-y-0.5 min-w-0">
+                                        <div className="flex items-center gap-1.5 flex-wrap">
+                                          <h5 className="text-sm font-black text-[#042F2E] dark:text-white truncate">
+                                            {app.name}
+                                          </h5>
+                                          <span className="text-[10px] font-black px-1.5 py-0.5 rounded-md bg-[#CCFBF1] dark:bg-[#042F2E] text-[#0F766E] dark:text-[#5EEAD4]">
+                                            {language === 'tr' ? app.categoryLabelTr : app.categoryLabelEn}
+                                          </span>
+                                        </div>
+                                        <p className="text-xs font-semibold text-slate-600 dark:text-slate-300 line-clamp-2">
+                                          {language === 'tr' ? app.taglineTr : app.taglineEn}
+                                        </p>
+                                      </div>
+                                    </div>
+
+                                    <div className="mt-3 pt-2.5 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-xs">
+                                      <span className="text-[11px] font-bold text-[#0F766E] dark:text-teal-300 line-clamp-1">
+                                        💡 {language === 'tr' ? app.recommendedReasonTr : app.recommendedReasonEn}
+                                      </span>
+                                      <span className="shrink-0 font-black text-[#0D9488] dark:text-[#5EEAD4] group-hover:translate-x-0.5 transition-transform">
+                                        {l('Aç →', 'Open →')}
+                                      </span>
+                                    </div>
+                                  </a>
+                                ))}
                               </div>
-                              <span className="px-4 py-2 rounded-full text-xs font-black bg-[#0D9488] text-white shrink-0">
-                                {language === 'tr' ? st.primaryPartner.ctaTr : st.primaryPartner.ctaEn} →
-                              </span>
-                            </a>
-                          ))}
+                            );
+                          })()}
+                        </div>
+                      )}
+
+                      {/* === SUB-TAB 2: DEALS (OTEL & UÇAK FIRSATLARI) === */}
+                      {activeWidget.subTab === 'deals' && (
+                        <div className="space-y-4">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            {[
+                              {
+                                brand: 'WayAway & Aviasales',
+                                badge: l('%5 Nakit İade', '5% Cashback'),
+                                title: l('Nakit İadeli Uçak Bileti Radarı', 'Cashback Flight Search'),
+                                desc: l('Tüm havayollarını tarar, en ucuz tarihleri bulur ve nakit iade verir.', 'Compare 700+ airlines with instant cashback.'),
+                                cta: l('Uçuşları Karşılaştır →', 'Compare Flights →'),
+                                url: 'https://wayaway.io'
+                              },
+                              {
+                                brand: 'Skyscanner & Google Flights',
+                                badge: l('En Geniş Tarama', 'Cheapest Dates'),
+                                title: l('Global Uçak Bileti & Fiyat Alarmları', 'Global Flight Price Radar'),
+                                desc: l('"Her Yere" arama özelliğiyle en uygun rotayı ve promosyonlu günleri listeler.', 'Search everywhere to find the cheapest escape from your city.'),
+                                cta: l('Uçak Ara →', 'Search Flights →'),
+                                url: 'https://www.skyscanner.com'
+                              },
+                              {
+                                brand: 'Booking.com',
+                                badge: l('Ücretsiz İptal', 'Free Cancellation'),
+                                title: l('Vize Uyumlu Otel & Daire Rezervasyonu', 'Visa-Compliant Hotel Bookings'),
+                                desc: l('Ön ödemesiz, ücretsiz iptalli otel rezervasyonu çıktısıyla sınırdan rahat geçin.', 'Book now, pay at check-in with free cancellation.'),
+                                cta: l('Otelleri Gör →', 'View Hotels →'),
+                                url: 'https://www.booking.com'
+                              },
+                              {
+                                brand: 'Agoda',
+                                badge: l('%35 Mobil İndirim', 'Up to 35% Off'),
+                                title: l('Asya & Global Otel, Villa ve Tatil Köyleri', 'Hotels, Villas & Island Resorts'),
+                                desc: l('Güneydoğu Asya ve Avrupa resortlarında en agresif indirim kuponları.', 'Unbeatable secret prices on luxury and budget stays.'),
+                                cta: l('Fırsatları Yakala →', 'Get Secret Deals →'),
+                                url: 'https://www.agoda.com'
+                              },
+                              {
+                                brand: 'DiscoverCars & EconomyBookings',
+                                badge: l('Sıfır Gizli Ücret', 'Zero Hidden Fees'),
+                                title: l('150+ Ülkede Uluslararası Araç Kiralama', 'Global Car Rental Comparison'),
+                                desc: l('Havalimanı terminal teslim araçlar, ücretsiz iptal ve tam kasko güvencesi.', 'Compare 500+ car rental suppliers at airport terminals.'),
+                                cta: l('Araç Kirala →', 'Rent a Car →'),
+                                url: 'https://www.discovercars.com'
+                              },
+                              {
+                                brand: 'Hostelworld & Airbnb',
+                                badge: l('Sosyal Gezginler', 'Social Travelers'),
+                                title: l('Bütçe Dostu Hosteller & Şehir Daireleri', 'Hostels & Local Apartments'),
+                                desc: l('Rezervasyon yaptığınız anda aynı şehirdeki gezgin sohbet gruplarına katılın.', 'Meet solo travelers and book authentic local apartments.'),
+                                cta: l('Konaklama Bul →', 'Find Stays →'),
+                                url: 'https://www.hostelworld.com'
+                              }
+                            ].map((deal) => (
+                              <a
+                                key={deal.brand}
+                                href={deal.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 rounded-2xl bg-white dark:bg-[#072630] border-2 border-[#5EEAD4]/60 hover:border-[#5EEAD4] shadow-md flex flex-col justify-between gap-3 no-underline group"
+                              >
+                                <div>
+                                  <div className="flex items-center justify-between gap-2">
+                                    <span className="text-lg font-black text-[#042F2E] dark:text-white">
+                                      {deal.brand}
+                                    </span>
+                                    <span className="px-2 py-0.5 rounded-full text-[11px] font-black bg-[#CCFBF1] text-[#0F766E] dark:bg-[#0D9488] dark:text-white">
+                                      {deal.badge}
+                                    </span>
+                                  </div>
+                                  <h6 className="text-xs font-black text-[#0F766E] dark:text-[#5EEAD4] mt-1">
+                                    {deal.title}
+                                  </h6>
+                                  <p className="text-xs font-semibold text-slate-600 dark:text-slate-300 mt-1">
+                                    {deal.desc}
+                                  </p>
+                                </div>
+                                <div className="flex justify-end">
+                                  <span className="px-4 py-2 rounded-xl text-xs font-black bg-[#0D9488] text-white group-hover:bg-[#14B8A6] transition-all">
+                                    {deal.cta}
+                                  </span>
+                                </div>
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* === SUB-TAB 3: INSURANCE & ESIM (SİGORTA & ESIM) === */}
+                      {activeWidget.subTab === 'insurance' && (
+                        <div className="space-y-4">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            {[
+                              {
+                                brand: 'SafetyWing Nomad Insurance',
+                                badge: '30.000€ Vize Uyumlu',
+                                title: l('Global Seyahat Sağlık & Kaza Sigortası', 'Global Travel Medical Coverage'),
+                                desc: l('Schengen ve tüm dünya gümrüklerinde geçerli anında indirilebilir İngilizce poliçe.', 'Official visa-compliant policy accepted at worldwide borders.'),
+                                url: 'https://safetywing.com/nomad-insurance',
+                                cta: l('Poliçe Al →', 'Get Covered →')
+                              },
+                              {
+                                brand: 'Heymondo & Allianz',
+                                badge: '7/24 Canlı Doktor',
+                                title: l('Sıfır Ön Ödemeli Sağlık & İptal Teminatı', 'Zero Deductible Medical Care'),
+                                desc: l('Uygulama içinden 7/24 görüntülü doktor desteği ve doğrudan hastane ödemesi.', 'Direct billing hospital network with 24/7 in-app doctor chat.'),
+                                url: 'https://heymondo.com',
+                                cta: l('Sigortalan →', 'Check Plans →')
+                              },
+                              {
+                                brand: 'Airalo 5G eSIM',
+                                badge: '200+ Ülke',
+                                title: l('Fiziksel SIM Değiştirmeden Anında İnternet', 'Instant Travel eSIM'),
+                                desc: l('Uçaktan iner inmez QR kodla anında 5G/LTE bağlantı; sıfır dolaşım sürprizi.', 'Scan QR code and connect immediately upon landing.'),
+                                url: 'https://www.airalo.com',
+                                cta: l('eSIM Al →', 'Get eSIM →')
+                              },
+                              {
+                                brand: 'Maya Mobile & Nomad',
+                                badge: 'Sınırsız Veri & Hotspot',
+                                title: l('Laptop & Tablet İçin Sınırsız İnternet', 'Unlimited Data + Hotspot'),
+                                desc: l('Hotspot paylaşımı serbest; tüm cihazlarınızı tek eSIM üzerinden bağlayın.', 'Share unlimited 5G data across your laptop, phone, and tablet.'),
+                                url: 'https://maya.net',
+                                cta: l('Sınırsız eSIM →', 'Get Unlimited →')
+                              },
+                              {
+                                brand: 'AirHelp & Compensair',
+                                badge: '600€ Nakit Hak',
+                                title: l('Uçuş Rötar / İptal Yasal Tazminatı', 'Up to €600 Flight Delay Claim'),
+                                desc: l('Son 3 yılda geciken veya iptal edilen uçuşlarınız için ön ödemesiz nakit tazminat.', 'No win, no fee legal claim for delayed or cancelled flights.'),
+                                url: 'https://www.airhelp.com',
+                                cta: l('Tazminat Sorgula →', 'Claim €600 →')
+                              },
+                              {
+                                brand: 'Bounce & Radical Storage',
+                                badge: '7/24 Sigortalı Emanet',
+                                title: l('Güvenli Bagaj Emanet Noktaları', 'Insured Luggage Storage'),
+                                desc: l('Ağır bavulları istasyon ve şehir merkezinde emanete bırakıp eller serbest gezin.', 'Drop heavy bags after checkout with $10,000 protection.'),
+                                url: 'https://usebounce.com',
+                                cta: l('Bagaj Bırak →', 'Store Bags →')
+                              }
+                            ].map((item) => (
+                              <a
+                                key={item.brand}
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 rounded-2xl bg-white dark:bg-[#072630] border-2 border-[#5EEAD4]/60 hover:border-[#5EEAD4] shadow-md flex flex-col justify-between gap-3 no-underline group"
+                              >
+                                <div>
+                                  <div className="flex items-center justify-between gap-2">
+                                    <span className="text-lg font-black text-[#042F2E] dark:text-white">
+                                      {item.brand}
+                                    </span>
+                                    <span className="px-2 py-0.5 rounded-full text-[11px] font-black bg-[#CCFBF1] text-[#0F766E] dark:bg-[#0D9488] dark:text-white">
+                                      {item.badge}
+                                    </span>
+                                  </div>
+                                  <h6 className="text-xs font-black text-[#0F766E] dark:text-[#5EEAD4] mt-1">
+                                    {item.title}
+                                  </h6>
+                                  <p className="text-xs font-semibold text-slate-600 dark:text-slate-300 mt-1">
+                                    {item.desc}
+                                  </p>
+                                </div>
+                                <div className="flex justify-end">
+                                  <span className="px-4 py-2 rounded-xl text-xs font-black bg-[#0D9488] text-white group-hover:bg-[#14B8A6] transition-all">
+                                    {item.cta}
+                                  </span>
+                                </div>
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* === SUB-TAB 4 & 5: VISA & PRACTICAL (Default / Other) === */}
+                      {(activeWidget.subTab === 'visa' || activeWidget.subTab === 'practical') && (
+                        <div className="space-y-4">
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="p-5 rounded-[22px] bg-[#CCFBF1]/95 dark:bg-white/[0.06] border border-[#5EEAD4] space-y-2">
+                              <h5 className="text-base font-black text-[#042F2E] dark:text-[#5EEAD4]">
+                                🛂 {l('Vize & Sınır Giriş Kuralları', 'Visa & Border Entry Rules')}
+                              </h5>
+                              <p className="text-sm font-bold text-[#042F2E] dark:text-white leading-relaxed">
+                                {l(
+                                  'En az 6 ay geçerli pasaport, dönüş uçak bileti ve ilk konaklama adresinizin rezervasyon belgesi ile sorunsuz giriş yapabilirsiniz.',
+                                  'Enter smoothly with at least 6 months passport validity, return flight ticket, and hotel booking.'
+                                )}
+                              </p>
+                            </div>
+
+                            <div className="p-5 rounded-[22px] bg-[#CCFBF1]/95 dark:bg-white/[0.06] border border-[#5EEAD4] space-y-2">
+                              <h5 className="text-base font-black text-[#042F2E] dark:text-[#5EEAD4]">
+                                🔌 {l('Pratik Bilgiler & Güvenlik', 'Practical Info & Safety')}
+                              </h5>
+                              <p className="text-sm font-bold text-[#042F2E] dark:text-white leading-relaxed">
+                                {l('Priz Tipi:', 'Plug Type:')} {geo?.plugTypes || insights.plugType} ·{' '}
+                                {l('Acil Numara:', 'Emergency:')} {insights.emergencyNumber} ·{' '}
+                                {l('En İyi Sezon:', 'Best Season:')} {insights.bestSeason}
+                              </p>
+                            </div>
+                          </div>
+
+                          {/* Quick 4 App Icons Preview */}
+                          <div className="p-5 rounded-[24px] bg-[#CCFBF1] dark:bg-[#0B3B49] border-2 border-[#5EEAD4] shadow-lg space-y-3">
+                            <div className="flex items-center justify-between">
+                              <h5 className="text-sm sm:text-base font-black text-[#042F2E] dark:text-white">
+                                {l('Öne Çıkan Popüler Seyahat Uygulamaları', 'Featured Travel Apps')}
+                              </h5>
+                              <button
+                                type="button"
+                                onClick={() => setActiveSubTab('apps')}
+                                className="text-xs font-black text-[#0F766E] dark:text-[#5EEAD4] hover:underline cursor-pointer"
+                              >
+                                {l('Tümünü Gör (30+) →', 'View All (30+) →')}
+                              </button>
+                            </div>
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                              {apps.slice(0, 4).map((app) => (
+                                <a
+                                  key={app.name}
+                                  href={app.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="p-3 rounded-xl bg-white dark:bg-[#072630] border border-teal-500/25 flex items-center gap-2.5 no-underline shadow-xs hover:-translate-y-0.5 transition-transform"
+                                >
+                                  <div
+                                    style={{ background: app.logoBg, color: app.logoColor }}
+                                    className="w-9 h-9 rounded-xl flex items-center justify-center text-[10px] font-black shrink-0"
+                                  >
+                                    {app.logoText}
+                                  </div>
+                                  <div className="min-w-0">
+                                    <div className="text-xs font-black text-[#042F2E] dark:text-white truncate">
+                                      {app.name}
+                                    </div>
+                                    <div className="text-[10px] text-[#0F766E] dark:text-teal-300 truncate">
+                                      {language === 'tr' ? app.categoryLabelTr : app.categoryLabelEn}
+                                    </div>
+                                  </div>
+                                </a>
+                              ))}
+                            </div>
+                          </div>
                         </div>
                       )}
 

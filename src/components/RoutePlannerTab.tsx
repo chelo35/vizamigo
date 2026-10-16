@@ -434,6 +434,119 @@ export const RoutePlannerTab: React.FC<RoutePlannerTabProps> = ({ currentPasspor
     setTimeout(() => setCopiedSummary(false), 2500);
   };
 
+  const handlePrintRoutePdf = () => {
+    if (stops.length === 0) return;
+    const isTr = language === 'tr';
+    const html = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vizamigo - ${isTr ? 'Seyahat Rotası & Vize Planı' : 'Travel Route & Visa Itinerary'}</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 36px; color: #0F172A; max-width: 860px; margin: 0 auto; line-height: 1.5; background: #FFF; }
+    .header { border-bottom: 3px solid #0D9488; padding-bottom: 18px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; }
+    .logo { font-size: 26px; font-weight: 900; color: #0D9488; }
+    .title { font-size: 20px; font-weight: 800; margin: 4px 0 0; color: #042F2E; }
+    .meta { font-size: 13px; color: #64748B; margin-top: 6px; }
+    .badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold; background: #CCFBF1; color: #042F2E; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px; }
+    th { background: #0F766E; color: white; text-align: left; padding: 10px 12px; font-weight: 800; }
+    td { padding: 10px 12px; border-bottom: 1px solid #E2E8F0; }
+    tr:nth-child(even) td { background: #F8FAFC; }
+    .status-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: bold; }
+    .status-free { background: #DCFCE7; color: #166534; }
+    .status-evisa { background: #E0F2FE; color: #0369A1; }
+    .status-visa { background: #FEE2E2; color: #991B1B; }
+    .summary-box { margin-top: 24px; padding: 16px; background: #F0FDFA; border: 1.5px solid #5EEAD4; border-radius: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: center; }
+    .summary-num { font-size: 20px; font-weight: 900; color: #0F766E; }
+    .summary-lbl { font-size: 11px; font-weight: bold; color: #64748B; text-transform: uppercase; }
+    .schengen-alert { margin-top: 20px; padding: 12px 16px; background: #EFF6FF; border-left: 4px solid #3B82F6; border-radius: 8px; font-size: 12px; color: #1E40AF; }
+    @media print { body { padding: 16px; } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="logo">Vizamigo ✈️</div>
+      <div class="title">${isTr ? 'Resmi Seyahat Rotası & Vize Çizelgesi' : 'Official Travel Route & Visa Itinerary'}</div>
+      <div class="meta">${isTr ? 'Pasaport:' : 'Passport:'} <strong>${passportName} (${currentPassport})</strong> · ${isTr ? 'Toplam:' : 'Total:'} <strong>${stops.length} ${isTr ? 'Durak' : 'Stops'} · ${routeSummary?.cumulativeDays} ${isTr ? 'Gün Kalış' : 'Days'}</strong></div>
+    </div>
+    <div style="text-align: right;">
+      <span class="badge">${new Date().toLocaleDateString(isTr ? 'tr-TR' : 'en-US')}</span>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <div>
+      <div class="summary-num">${stops.length}</div>
+      <div class="summary-lbl">${isTr ? 'Toplam Durak' : 'Total Stops'}</div>
+    </div>
+    <div>
+      <div class="summary-num">${routeSummary?.cumulativeDays || 0} ${isTr ? 'Gün' : 'Days'}</div>
+      <div class="summary-lbl">${isTr ? 'Toplam Seyahat Süresi' : 'Trip Duration'}</div>
+    </div>
+    <div>
+      <div class="summary-num">~${routeSummary?.totalDistanceKm || 0} km</div>
+      <div class="summary-lbl">${isTr ? 'Tahmini Mesafe' : 'Est. Distance'}</div>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>${isTr ? 'Ülke / Şehir' : 'Country'}</th>
+        <th>${isTr ? 'Giriş Tarihi' : 'Entry Date'}</th>
+        <th>${isTr ? 'Çıkış Tarihi' : 'Exit Date'}</th>
+        <th>${isTr ? 'Süre' : 'Duration'}</th>
+        <th>${isTr ? 'Vize Durumu' : 'Visa Regime'}</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${stops.map((s, idx) => {
+        const pItem = passportItemsMap.get(s.countryCode);
+        const inIdx = dateToDayIndex(s.entryDate);
+        const outIdx = dateToDayIndex(s.exitDate);
+        const dur = Math.max(1, outIdx - inIdx + 1);
+        const status = getCategoryBadgeLabel(pItem, language);
+        const isFree = pItem?.cat === 'free' || pItem?.id;
+        const isEvisa = pItem?.cat === 'evisa' || pItem?.cat === 'voa' || pItem?.cat === 'eta';
+        const badgeCls = isFree ? 'status-free' : isEvisa ? 'status-evisa' : 'status-visa';
+
+        return `
+          <tr>
+            <td><strong>${idx + 1}</strong></td>
+            <td><strong>${getFlag(s.countryCode)} ${getCountryName(s.countryCode, language)}</strong></td>
+            <td>${formatLocalizedDate(inIdx, language)}</td>
+            <td>${formatLocalizedDate(outIdx, language)}</td>
+            <td><strong>${dur} ${isTr ? 'gün' : 'days'}</strong></td>
+            <td><span class="status-badge ${badgeCls}">${status}</span></td>
+          </tr>
+        `;
+      }).join('')}
+    </tbody>
+  </table>
+
+  ${routeSummary?.schengenAnalysis?.totalSchengenDays ? `
+    <div class="schengen-alert">
+      <strong>🛡️ ${isTr ? 'Schengen Alanı Uyarısı & 90/180 Gün Kuralı:' : 'Schengen Area & 90/180-Day Rule Analysis:'}</strong><br/>
+      ${isTr 
+        ? `Bu rota içinde toplam ${routeSummary.schengenAnalysis.totalSchengenDays} gün Schengen alanı ziyareti bulunmaktadır (180 günlük periyotta en yüksek kalış: ${routeSummary.schengenAnalysis.peak180Days}/90 gün).` 
+        : `This itinerary includes ${routeSummary.schengenAnalysis.totalSchengenDays} days in Schengen territory (Peak 180-day stay: ${routeSummary.schengenAnalysis.peak180Days}/90 days).`}
+    </div>
+  ` : ''}
+</body>
+</html>`;
+
+    const printWin = window.open('', '_blank');
+    if (printWin) {
+      printWin.document.write(html);
+      printWin.document.close();
+      printWin.focus();
+      setTimeout(() => printWin.print(), 350);
+    }
+  };
+
   // Route statistics and Schengen accumulation
   const routeSummary = useMemo(() => {
     if (stops.length === 0) return null;
@@ -517,22 +630,34 @@ export const RoutePlannerTab: React.FC<RoutePlannerTabProps> = ({ currentPasspor
 
           <div className="flex items-center gap-2">
             {stops.length > 0 && (
-              <button
-                type="button"
-                onClick={handleCopySummary}
-                className="btn-nubair-secondary py-1.5 px-3 text-xs"
-                title={l('Rotayı WhatsApp / Metin olarak kopyala', 'Copy route to clipboard', 'Route in Zwischenablage kopieren')}
-              >
-                {copiedSummary ? (
-                  <>
-                    <Check className="w-3.5 h-3.5 text-emerald-500" /> {l('Kopyalandı!', 'Copied!', 'Kopiert!')}
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" /> {l('Özeti Kopyala', 'Copy Summary', 'Zusammenfassung kopieren')}
-                  </>
-                )}
-              </button>
+              <>
+                <button
+                  type="button"
+                  onClick={handlePrintRoutePdf}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black bg-gradient-to-r from-[#F97316] to-[#FB7185] text-white hover:brightness-110 shadow-xs cursor-pointer transition-all"
+                  title={l('Rotayı PDF olarak yazdır veya kaydet', 'Print or save route as PDF', 'Route als PDF drucken oder speichern')}
+                >
+                  <FileText className="w-3.5 h-3.5 text-white" />
+                  <span>{l('PDF / Yazdır', 'PDF / Print')}</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleCopySummary}
+                  className="btn-nubair-secondary py-1.5 px-3 text-xs"
+                  title={l('Rotayı WhatsApp / Metin olarak kopyala', 'Copy route to clipboard', 'Route in Zwischenablage kopieren')}
+                >
+                  {copiedSummary ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-emerald-500" /> {l('Kopyalandı!', 'Copied!', 'Kopiert!')}
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" /> {l('Özeti Kopyala', 'Copy Summary', 'Zusammenfassung kopieren')}
+                    </>
+                  )}
+                </button>
+              </>
             )}
 
             <button
