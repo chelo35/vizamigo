@@ -270,11 +270,6 @@ html.dark {
    ======================================================== */
 
 /* Eliminate Inactive Pure Black Buttons / Badges -> Translucent Glassmorphic */
-.bg-black,
-.dark .dark\:bg-black,
-.dark .dark\:bg-black\/40,
-.dark .dark\:bg-black\/50,
-.dark .dark\:bg-slate-950,
 .glass-pill-control,
 .btn-glassmorphic,
 .btn-glass-subtle,
@@ -285,19 +280,67 @@ html.dark {
   border: 1px solid rgba(226, 232, 240, 0.95);
 }
 
-.dark .bg-black,
-.dark .dark\:bg-black,
-.dark .dark\:bg-black\/40,
-.dark .dark\:bg-black\/50,
 .dark .glass-pill-control,
 .dark .btn-glassmorphic,
 .dark .btn-glass-subtle,
 .dark .btn-frosted-glass {
-  background: rgba(255, 255, 255, 0.04) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #F8FAFC;
+}
+
+/* Mobile Compositor Optimization: Restrict active backdrop-filter layers to <= 2-3 on mobile screens */
+@media (max-width: 768px) {
+  .btn-nubair-secondary,
+  .dark .btn-nubair-secondary,
+  .tab-chip-inactive,
+  .dark .tab-chip-inactive,
+  .glass-pill-control,
+  .btn-glassmorphic,
+  .btn-glass-subtle,
+  .btn-frosted-glass,
+  .bento-lagoon-card,
+  .dark .bento-lagoon-card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* ========================================================
+   BASELINE BROWSER FEATURE FALLBACKS
+   ======================================================== */
+
+/* 1. background-clip: text fallback for constrained WebViews / Safari */
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .bg-clip-text {
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    color: #0d9488 !important;
+    -webkit-text-fill-color: #0d9488 !important;
+  }
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* 2. accent-color fallback for form controls */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #0d9488;
+}
+
+@supports not (accent-color: #0d9488) {
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    filter: saturate(1.5) hue-rotate(130deg);
+  }
 }
 
 /* Desaturated Muted Horizon Teal & Pastel Sunset Coral Accents (WCAG AA Compliant >= 5.8:1) */
