@@ -971,10 +971,10 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
 
             <div>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
-                {getConsularText(consularInfo.ministryName)}
+                {getConsularText(consularInfo?.ministryName)}
               </h2>
               <h3 className="text-sm font-semibold text-rose-600 dark:text-rose-400 mt-1">
-                {getConsularText(consularInfo.crisisCenterTitle)}
+                {getConsularText(consularInfo?.crisisCenterTitle)}
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2.5 max-w-xl leading-relaxed">
                 {l(
@@ -987,14 +987,14 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
 
             <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-3.5">
               <a
-                href={`tel:${consularInfo.hotline247.replace(/\s+/g, '')}`}
+                href={consularInfo?.hotline247 ? `tel:${consularInfo.hotline247.replace(/\s+/g, '')}` : '#'}
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-rose-500/90 via-rose-500 to-orange-500/90 text-white font-extrabold text-sm shadow-lg shadow-rose-500/20 hover:shadow-rose-500/35 hover:scale-[1.02] transition-all cursor-pointer border border-rose-400/30"
               >
                 <PhoneCall className="w-4 h-4 text-white" />
-                <span>{consularInfo.hotline247}</span>
+                <span>{consularInfo?.hotline247 || l('Nöbetçi Kriz Masası', 'Crisis Center', 'Krisenstab')}</span>
               </a>
               <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                ({l('Doğrudan Hat', 'Direct Line', 'Direkte Hotline')}: <b className="text-slate-700 dark:text-slate-200">{consularInfo.hotlineDomestic}</b>)
+                ({l('Doğrudan Hat', 'Direct Line', 'Direkte Hotline')}: <b className="text-slate-700 dark:text-slate-200">{consularInfo?.hotlineDomestic || '-'}</b>)
               </span>
             </div>
           </div>
@@ -1083,7 +1083,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                 )}
               </h3>
               <div className="text-xs font-bold text-rose-600 dark:text-rose-400 bg-rose-500/10 px-3.5 py-1.5 rounded-full border border-rose-500/20 whitespace-nowrap self-start sm:self-auto">
-                📄 {getConsularText(consularInfo.emergencyDocName)}
+                📄 {getConsularText(consularInfo?.emergencyDocName)}
               </div>
             </div>
 
@@ -1094,7 +1094,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('Polis Karakoluna Gidin & Tutanak Alın', 'File Police Report at Local Station', 'Polizeiprotokoll anfordern')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {getConsularText(consularInfo.steps.policeReport)}
+                  {getConsularText(consularInfo?.steps?.policeReport)}
                 </p>
               </div>
 
@@ -1104,7 +1104,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('Biyometrik Vesikalık Fotoğraf Çektirin', 'Obtain Compliant Passport Photos', 'Biometrische Passfotos erstellen')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {getConsularText(consularInfo.steps.photos)}
+                  {getConsularText(consularInfo?.steps?.photos)}
                 </p>
               </div>
 
@@ -1114,7 +1114,7 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('En Yakın Diplomatik Misyonunuza Başvurun', 'Submit Case to Consular Mission', 'Zuständige Auslandsvertretung kontaktieren')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {getConsularText(consularInfo.steps.embassySubmission)}
+                  {getConsularText(consularInfo?.steps?.embassySubmission)}
                 </p>
               </div>
 
@@ -1124,10 +1124,10 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                   {l('Geçici Seyahat Belgenizi Teslim Alın', 'Receive Emergency Return Certificate', 'Notreisedokument entgegennehmen')}
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xs">
-                  {getConsularText(consularInfo.steps.travelDocIssuance)}
+                  {getConsularText(consularInfo?.steps?.travelDocIssuance)}
                 </p>
                 <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 pt-1.5 border-t border-slate-200/50 dark:border-white/[0.06]">
-                  ⚠️ {getConsularText(consularInfo.emergencyDocValidity)}
+                  ⚠️ {getConsularText(consularInfo?.emergencyDocValidity)}
                 </div>
               </div>
             </div>
@@ -1135,12 +1135,12 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
             {/* Official Portal Link & International dispatch notice */}
             <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs">
               <a
-                href={consularInfo.officialPortalUrl}
+                href={consularInfo?.officialPortalUrl || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 font-bold text-rose-600 dark:text-rose-400 hover:underline"
               >
-                <span>🌐 {consularInfo.officialPortalName}</span>
+                <span>🌐 {consularInfo?.officialPortalName || l('Dışişleri Portalı', 'Foreign Affairs Portal')}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
               <span className="text-slate-400 text-[11px]">

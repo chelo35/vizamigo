@@ -17,9 +17,15 @@ import { getCountryVisual } from '../data/countryVisuals';
 
 interface WhereCanIGoTabProps {
   currentPassport: string;
+  externalSearch?: string;
+  embedded?: boolean;
 }
 
-export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport }) => {
+export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({
+  currentPassport,
+  externalSearch,
+  embedded = false
+}) => {
   const { language, t, l } = useI18n();
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set(['free', 'id']));
   const [selectedRegion, setSelectedRegion] = useState<string>('all');
@@ -42,7 +48,8 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
 
   const results = useMemo(() => {
     const locale = language === 'de' ? 'de' : language === 'en' ? 'en' : 'tr';
-    const q = search.trim().toLocaleLowerCase(locale);
+    const activeQuery = externalSearch !== undefined ? externalSearch : search;
+    const q = activeQuery.trim().toLocaleLowerCase(locale);
 
     return items.filter(item => {
       // Region filter
@@ -173,19 +180,21 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({ currentPassport 
           </div>
         </div>
 
-        {/* Search within filtered results */}
-        <div className="relative pt-1">
-          <div className="absolute left-3.5 top-1/2 -translate-y-1/2 mt-0.5 text-slate-400">
-            <Search className="w-4 h-4" />
+        {/* Search within filtered results (hidden when embedded in Bento widget) */}
+        {!embedded && externalSearch === undefined && (
+          <div className="relative pt-1">
+            <div className="absolute left-3.5 top-1/2 -translate-y-1/2 mt-0.5 text-slate-400">
+              <Search className="w-4 h-4" />
+            </div>
+            <input
+              type="search"
+              placeholder={l('Filtrelenen sonuçlar içinde ara...', 'Search within filtered results...', 'In gefilterten Ergebnissen suchen...')}
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full pl-10 pr-4 py-3 text-xs sm:text-sm bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-white/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-rose-500/20 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 shadow-2xs"
+            />
           </div>
-          <input
-            type="search"
-            placeholder={l('Filtrelenen sonuçlar içinde ara...', 'Search within filtered results...', 'In gefilterten Ergebnissen suchen...')}
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 text-xs sm:text-sm bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-white/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-rose-500/20 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 shadow-2xs"
-          />
-        </div>
+        )}
       </div>
 
       {/* Results Header */}

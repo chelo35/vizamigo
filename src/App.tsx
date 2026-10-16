@@ -18,6 +18,7 @@ import { AuthProvider } from './context/AuthContext';
 import { AuthModal } from './components/AuthModal';
 import { GlobalFooter } from './components/footer/GlobalFooter';
 import { Sparkles, X } from 'lucide-react';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { useSeoRouter } from './utils/seoRouter';
 import { SeoHead } from './components/SeoHead';
 import { NotFoundView } from './components/NotFoundView';
@@ -303,176 +304,189 @@ function AppContent() {
             <Suspense fallback={<TabLoadingSkeleton />}>
               {/* Tab Content: 1. KEŞFET / EXPLORE (PURE V2 LAGOON WIDGET DASHBOARD) */}
               {activeTab === 'explore' && (
-                <div className="space-y-6">
-                  {exploreSubTab === 'all' ? (
-                    <ExploreTab
-                      currentPassport={currentPassport}
-                      onOpenAuditConsole={() => setIsAuditModalOpen(true)}
-                      externalSearch={globalSearchQuery}
-                      onSearchChange={setGlobalSearchQuery}
-                      initialCountryCode={selectedCountryCode}
-                      onCountrySelect={handleCountrySelect}
-                      onNavigateTab={(tab) => {
-                        handleSelectTab(tab);
-                        if (tab === 'plan') setPlanSubTab('route');
-                      }}
-                      onOpenPackingList={() => setIsPackingListOpen(true)}
-                      onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
-                      onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-                      onOpenGlobalRadar={openRadar}
-                    />
-                  ) : (
-                    <WhereCanIGoTab currentPassport={currentPassport} />
-                  )}
-                </div>
+                <ErrorBoundary isTabBoundary tabName={t.explore || 'Keşfet'}>
+                  <div className="space-y-6">
+                    {exploreSubTab === 'all' ? (
+                      <ExploreTab
+                        currentPassport={currentPassport}
+                        onOpenAuditConsole={() => setIsAuditModalOpen(true)}
+                        externalSearch={globalSearchQuery}
+                        onSearchChange={setGlobalSearchQuery}
+                        initialCountryCode={selectedCountryCode}
+                        onCountrySelect={handleCountrySelect}
+                        onNavigateTab={(tab) => {
+                          handleSelectTab(tab);
+                          if (tab === 'plan') setPlanSubTab('route');
+                        }}
+                        onOpenPackingList={() => setIsPackingListOpen(true)}
+                        onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                        onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                        onOpenGlobalRadar={openRadar}
+                      />
+                    ) : (
+                      <WhereCanIGoTab currentPassport={currentPassport} />
+                    )}
+                  </div>
+                </ErrorBoundary>
               )}
 
           {/* Tab Content: 2. ROTA & SİNERJİ / PLAN */}
           {activeTab === 'plan' && (
-            <div className="space-y-6">
-              <div className="flex items-center justify-start overflow-x-auto scrollbar-none pb-1">
-                <div className="inline-flex p-1 rounded-full bento-lagoon-card gap-1 whitespace-nowrap">
-                  <button
-                    type="button"
-                    onClick={() => setPlanSubTab('route')}
-                    className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                      planSubTab === 'route'
-                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
-                        : 'text-slate-700 dark:text-slate-200'
-                    }`}
-                  >
-                    {t.subTabRoutePlanner}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setPlanSubTab('compare')}
-                    className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                      planSubTab === 'compare'
-                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
-                        : 'text-slate-700 dark:text-slate-200'
-                    }`}
-                  >
-                    {t.subTabComparePassports}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setPlanSubTab('nomad')}
-                    className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                      planSubTab === 'nomad'
-                        ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
-                        : 'text-slate-700 dark:text-slate-200'
-                    }`}
-                  >
-                    {t.subTabNomadHubs}
-                  </button>
+            <ErrorBoundary isTabBoundary tabName={t.subTabRoutePlanner || 'Rota & Sinerji'}>
+              <div className="space-y-6">
+                <div className="flex items-center justify-start overflow-x-auto scrollbar-none pb-1">
+                  <div className="inline-flex p-1 rounded-full bento-lagoon-card gap-1 whitespace-nowrap">
+                    <button
+                      type="button"
+                      onClick={() => setPlanSubTab('route')}
+                      className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
+                        planSubTab === 'route'
+                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
+                          : 'text-slate-700 dark:text-slate-200'
+                      }`}
+                    >
+                      {t.subTabRoutePlanner}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setPlanSubTab('compare')}
+                      className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
+                        planSubTab === 'compare'
+                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
+                          : 'text-slate-700 dark:text-slate-200'
+                      }`}
+                    >
+                      {t.subTabComparePassports}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setPlanSubTab('nomad')}
+                      className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
+                        planSubTab === 'nomad'
+                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
+                          : 'text-slate-700 dark:text-slate-200'
+                      }`}
+                    >
+                      {t.subTabNomadHubs}
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              {planSubTab === 'route' ? (
-                <RoutePlannerTab currentPassport={currentPassport} />
-              ) : planSubTab === 'compare' ? (
-                <CompareTab
-                  initialPassportA={currentPassport}
-                  initialPassportB={secondaryPassport}
-                />
-              ) : (
-                <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
-              )}
-            </div>
+                {planSubTab === 'route' ? (
+                  <RoutePlannerTab currentPassport={currentPassport} />
+                ) : planSubTab === 'compare' ? (
+                  <CompareTab
+                    initialPassportA={currentPassport}
+                    initialPassportB={secondaryPassport}
+                  />
+                ) : (
+                  <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
+                )}
+              </div>
+            </ErrorBoundary>
           )}
 
           {/* Tab Content: 3. CÜZDAN & DÜNYA GÜN SAYACI / TRACK */}
           {activeTab === 'track' && (
-            <div className="space-y-8">
-              <WalletTab
-                currentPassport={currentPassport}
-                secondaryPassport={secondaryPassport}
-                onChangePassport={() => setIsPassportModalOpen(true)}
-                onSelectStayTracker={() => {
-                  const el = document.getElementById('vz-day-counter-section');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }}
-              />
-              <div id="vz-day-counter-section">
-                <DayCounterTab />
+            <ErrorBoundary isTabBoundary tabName="Cüzdan & Gün Sayacı">
+              <div className="space-y-8">
+                <WalletTab
+                  currentPassport={currentPassport}
+                  secondaryPassport={secondaryPassport}
+                  onChangePassport={() => setIsPassportModalOpen(true)}
+                  onSelectStayTracker={() => {
+                    const el = document.getElementById('vz-day-counter-section');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                />
+                <div id="vz-day-counter-section">
+                  <DayCounterTab />
+                </div>
               </div>
-            </div>
+            </ErrorBoundary>
           )}
 
           {/* Tab Content: 4. GEZGİN ARAÇLARI & DİJİTAL GÖÇEBE / NOMAD */}
           {activeTab === 'nomad' && (
-            <div className="space-y-8">
-              <BentoDashboardGrid
-                currentPassport={currentPassport}
-                secondaryPassport={secondaryPassport}
-                onOpenCountryDossier={(code) => {
-                  setActiveTab('explore');
-                  handleCountrySelect(code);
-                }}
-                onSelectTab={handleSelectTab}
-                onOpenPackingList={() => setIsPackingListOpen(true)}
-                onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
-                onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-                onOpenGlobalRadar={openRadar}
-              />
-              <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
-            </div>
+            <ErrorBoundary isTabBoundary tabName="Gezgin Araçları & Göçebe">
+              <div className="space-y-8">
+                <BentoDashboardGrid
+                  currentPassport={currentPassport}
+                  secondaryPassport={secondaryPassport}
+                  onOpenCountryDossier={(code) => {
+                    setActiveTab('explore');
+                    handleCountrySelect(code);
+                  }}
+                  onSelectTab={handleSelectTab}
+                  onOpenPackingList={() => setIsPackingListOpen(true)}
+                  onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                  onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                  onOpenGlobalRadar={openRadar}
+                />
+                <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
+              </div>
+            </ErrorBoundary>
           )}
 
           {/* Tab Content: 5. PROFİL & ARAÇLAR / PROFILE */}
           {activeTab === 'profile' && (
-            <div className="space-y-6">
-              {/* Profil Sub Tabs */}
-              <div className="w-full max-w-full overflow-x-auto scrollbar-none horizontal-badge-slider no-scrollbar-slider touch-pan-x pb-2 mb-3">
-                <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1.5 whitespace-nowrap shrink-0">
-                  <button
-                    type="button"
-                    onClick={() => setProfileSubTab('profile')}
-                    className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
-                      profileSubTab === 'profile'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
-                    }`}
-                  >
-                    {t.subTabWalletAndPartners}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setProfileSubTab('emergency')}
-                    className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
-                      profileSubTab === 'emergency'
-                        ? 'tab-chip-active'
-                        : 'tab-chip-inactive'
-                    }`}
-                  >
-                    {t.subTabEmergencyDesk}
-                  </button>
+            <ErrorBoundary isTabBoundary tabName="Profil & Ayarlar">
+              <div className="space-y-6">
+                {/* Profil Sub Tabs */}
+                <div className="w-full max-w-full overflow-x-auto scrollbar-none horizontal-badge-slider no-scrollbar-slider touch-pan-x pb-2 mb-3">
+                  <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1.5 whitespace-nowrap shrink-0">
+                    <button
+                      type="button"
+                      onClick={() => setProfileSubTab('profile')}
+                      className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
+                        profileSubTab === 'profile'
+                          ? 'tab-chip-active'
+                          : 'tab-chip-inactive'
+                      }`}
+                    >
+                      {t.subTabWalletAndPartners}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setProfileSubTab('emergency')}
+                      className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
+                        profileSubTab === 'emergency'
+                          ? 'tab-chip-active'
+                          : 'tab-chip-inactive'
+                      }`}
+                    >
+                      {t.subTabEmergencyDesk}
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              {profileSubTab === 'profile' ? (
-                <ProfileTab
-                  currentPassport={currentPassport}
-                  secondaryPassport={secondaryPassport}
-                  onChangePassport={() => setIsPassportModalOpen(true)}
-                  language={language}
-                  onLanguageChange={(l) => {
-                    setLanguage(l);
-                  }}
-                  onOpenLegalModal={() => openLegalModalWithTab('backup')}
-                />
-              ) : (
-                <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
-              )}
-            </div>
+                {profileSubTab === 'profile' ? (
+                  <ProfileTab
+                    currentPassport={currentPassport}
+                    secondaryPassport={secondaryPassport}
+                    onChangePassport={() => setIsPassportModalOpen(true)}
+                    language={language}
+                    onLanguageChange={(l) => {
+                      setLanguage(l);
+                    }}
+                    onOpenLegalModal={() => openLegalModalWithTab('backup')}
+                  />
+                ) : (
+                  <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
+                )}
+              </div>
+            </ErrorBoundary>
           )}
 
           {/* Tab Content: 5. KONSOLOSLUK & DİPLOMATİK KRİZ MASASI / CONSULAR */}
           {activeTab === 'consular' && (
-            <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
+            <ErrorBoundary isTabBoundary tabName="Konsolosluk & Kriz Masası">
+              <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
+            </ErrorBoundary>
           )}
         </Suspense>
       )}
+
 
         {/* Sınırlı Reklam & Gezgin Sponsor Kartı */}
         {showPromoBanner && (

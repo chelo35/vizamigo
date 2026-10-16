@@ -58,7 +58,10 @@ import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/schemaGenerator';
 
 import { TabKey } from './Navigation';
-import { BentoDashboardGrid } from './bento/BentoDashboardGrid';
+
+const BentoDashboardGrid = lazy(() =>
+  import('./bento/BentoDashboardGrid').then(m => ({ default: m.BentoDashboardGrid }))
+);
 
 // Code-split heavy visual nodes & live loop widgets for <0.5s instant initial paint
 const InteractiveWorldMap = lazy(() =>
@@ -184,7 +187,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
   const [visibleCount, setVisibleCount] = useState<number>(16);
-  const [showDirectory, setShowDirectory] = useState<boolean>(false);
+  const [showDirectory, setShowDirectory] = useState<boolean>(true);
 
   // Reset pagination when search, filter or passport changes
   useEffect(() => {
@@ -315,15 +318,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
       {/* =====================================================================
           1. PURE V2 LAGOON WIDGET DASHBOARD (HERO EXPERIENCE)
       ===================================================================== */}
-      <BentoDashboardGrid
-        currentPassport={currentPassport}
-        onOpenCountryDossier={(code) => openDossier(code)}
-        onSelectTab={(tab) => onNavigateTab?.(tab)}
-        onOpenPackingList={() => onOpenPackingList?.()}
-        onOpenTippingCalc={() => onOpenTippingCalc?.()}
-        onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
-        onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
-      />
+      <Suspense fallback={<WidgetCardSkeleton />}>
+        <BentoDashboardGrid
+          currentPassport={currentPassport}
+          onOpenCountryDossier={(code) => openDossier(code)}
+          onSelectTab={(tab) => onNavigateTab?.(tab)}
+          onOpenPackingList={() => onOpenPackingList?.()}
+          onOpenTippingCalc={() => onOpenTippingCalc?.()}
+          onOpenTimezoneOverlap={() => onOpenTimezoneOverlap?.()}
+          onOpenGlobalRadar={(mode, city) => onOpenGlobalRadar?.(mode, city)}
+        />
+      </Suspense>
 
       {/* =====================================================================
           2. 199-COUNTRY DIRECTORY & INTERACTIVE MAP TOGGLE BAR

@@ -136,14 +136,14 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
               <>
                 <div className="flex items-center gap-4">
                   <img
-                    src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
-                    alt={user.name}
+                    src={user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name || 'Gezgin')}`}
+                    alt={user.name || 'User'}
                     className="w-14 h-14 rounded-2xl object-cover border-2 border-slate-300 dark:border-white/20 shadow-md"
                   />
                   <div>
                     <div className="flex items-center gap-2">
                       <h3 className="font-extrabold text-base text-slate-900 dark:text-white tracking-[-0.02em]">
-                        {user.name}
+                        {user.name || l('Gezgin Kullanıcı', 'Traveler User', 'Reisender')}
                       </h3>
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-800 dark:bg-white/10 dark:text-[#8E9DBE]">
                         {user.provider === 'google' ? 'Google' : l('E-posta', 'Email', 'E-Mail')}
@@ -155,7 +155,7 @@ export const ProfileTab: React.FC<ProfileTabProps> = ({
                       )}
                     </div>
                     <p className="text-xs text-slate-500 dark:text-[#8E9DBE] mt-0.5">
-                      {user.email} · {l('Bulut Senkronize', 'Cloud Synced', 'Cloud synchronisiert')}
+                      {user.email || ''} · {l('Bulut Senkronize', 'Cloud Synced', 'Cloud synchronisiert')}
                     </p>
                   </div>
                 </div>

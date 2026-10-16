@@ -79,6 +79,27 @@ interface BentoDashboardGridProps {
 
 const POPULAR_RESEARCH_COUNTRIES = ['TH', 'JP', 'IT', 'ES', 'GR', 'DE', 'AE', 'GE', 'RS', 'ME', 'GB', 'US', 'KR', 'ID', 'BR', 'EG'];
 
+// Isolated self-updating live city clock component (prevents whole dashboard grid re-renders)
+const LiveCityClock: React.FC<{ offsetHours: number; label?: string }> = ({ offsetHours, label }) => {
+  const [timeStr, setTimeStr] = useState<string>(() => {
+    const utc = Date.now() + new Date().getTimezoneOffset() * 60000;
+    const d = new Date(utc + offsetHours * 3600000);
+    return d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', hour12: false });
+  });
+
+  useEffect(() => {
+    const update = () => {
+      const utc = Date.now() + new Date().getTimezoneOffset() * 60000;
+      const d = new Date(utc + offsetHours * 3600000);
+      setTimeStr(d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', hour12: false }));
+    };
+    const timer = setInterval(update, 15000);
+    return () => clearInterval(timer);
+  }, [offsetHours]);
+
+  return <span>{label ? `${label} ` : ''}{timeStr}</span>;
+};
+
 export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   currentPassport,
   secondaryPassport = 'DE',
@@ -101,13 +122,6 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   const [researchCountry, setResearchCountry] = useState<string>('TH');
   const [showCountryPicker, setShowCountryPicker] = useState<boolean>(false);
   const [appsCountry, setAppsCountry] = useState<string>('TH');
-  const [now, setNow] = useState<Date>(() => new Date());
-
-  // Update live clock every 15 seconds
-  useEffect(() => {
-    const timer = setInterval(() => setNow(new Date()), 15000);
-    return () => clearInterval(timer);
-  }, []);
 
   // Passport items & stats
   const passportItems = useMemo(() => getPassportItems(currentPassport), [currentPassport]);
@@ -147,13 +161,6 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
   // Live currency rates
   const usdTry = useMemo(() => getCrossRate('USD', 'TRY').toFixed(2), []);
   const eurTry = useMemo(() => getCrossRate('EUR', 'TRY').toFixed(2), []);
-
-  // World clocks
-  const formatCityTime = (offsetHours: number) => {
-    const utc = now.getTime() + now.getTimezoneOffset() * 60000;
-    const d = new Date(utc + offsetHours * 3600000);
-    return d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', hour12: false });
-  };
 
   // Selected research country details & visual
   const researchCountryItem = useMemo(
@@ -535,9 +542,9 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
           <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
             <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 font-mono font-black text-sm sm:text-base lg:text-xl text-[#042F2E] dark:text-white tracking-tight">
-              <span>İST {formatCityTime(3)}</span>
+              <LiveCityClock offsetHours={3} label="İST" />
               <span className="opacity-30">·</span>
-              <span>TYO {formatCityTime(9)}</span>
+              <LiveCityClock offsetHours={9} label="TYO" />
             </div>
           </div>
         </div>
@@ -1099,7 +1106,11 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
               {activeWidget.id === 'radar' && (
                 <div className="bg-white/95 dark:bg-[#071E30] rounded-3xl p-4 sm:p-6">
                   <Suspense fallback={<div className="p-8 text-center text-base font-black">{l('Yükleniyor...', 'Loading...')}</div>}>
-                    <WhereCanIGoTab currentPassport={currentPassport} />
+                    <WhereCanIGoTab
+                      currentPassport={currentPassport}
+                      externalSearch={widgetSearch}
+                      embedded={true}
+                    />
                   </Suspense>
                 </div>
               )}
@@ -1185,7 +1196,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
                       >
                         <div className="text-sm font-extrabold">{city.name}</div>
                         <div className="text-2xl font-black font-mono mt-1">
-                          {formatCityTime(city.offset)}
+                          <LiveCityClock offsetHours={city.offset} />
                         </div>
                       </div>
                     ))}

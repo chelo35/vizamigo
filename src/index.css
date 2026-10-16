@@ -949,9 +949,10 @@ body,
   .vz-ring { animation: none; }
 }
 
-/* DOM & Rendering Optimization for Country Cards */
+/* DOM & Smooth Scroll Optimization for Country Cards (Eliminates CLS and scroll jitter) */
 .country-card {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 320px;
+  contain: layout paint;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
