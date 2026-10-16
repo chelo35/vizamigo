@@ -1010,7 +1010,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
                       {/* 4. Bottom Full-Width Emerald-Lagoon Action Button */}
                       <a
-                        href="https://wayaway.tp.st/zZ1G5N1A"
+                        href="https://wayaway.io"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#0D9488] via-[#0284C7] to-[#0D9488] hover:brightness-110 text-white font-black text-base sm:text-lg shadow-xl border-2 border-[#5EEAD4] flex items-center justify-center gap-2.5 no-underline transition-all"

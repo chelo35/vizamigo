@@ -941,22 +941,22 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     return (
                       <div
                         key={sIdx}
-                        className="relative bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 rounded-2xl p-4 sm:p-5 space-y-3.5 hover:border-teal-500/50 transition-all shadow-2xs"
+                        className="relative bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-4 sm:p-6 space-y-4 hover:border-[#5EEAD4] transition-all shadow-md backdrop-blur-md"
                       >
                         {/* Stop Top Header */}
-                        <div className="flex flex-wrap items-start justify-between gap-2.5">
+                        <div className="flex flex-wrap items-start justify-between gap-3">
                           <div className="flex items-center gap-3 min-w-0">
-                            <span className="w-7 h-7 rounded-full bg-teal-600 text-white font-black flex items-center justify-center text-xs flex-shrink-0 shadow-xs">
+                            <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white font-black flex items-center justify-center text-sm flex-shrink-0 shadow-md border border-[#5EEAD4]/60">
                               {sIdx + 1}
                             </span>
                             <div className="min-w-0">
-                              <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-white truncate">
+                              <h3 className="font-black text-base sm:text-lg text-white tracking-tight truncate">
                                 {stop.name}
                               </h3>
-                              <div className="flex items-center gap-2 mt-0.5">
-                                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-teal-50 dark:bg-teal-950/70 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800 font-bold text-xs">
-                                  <Clock className="w-3 h-3" />
-                                  <span>{l('Yeterli Ziyaret Süresi:', 'Duration:', 'Dauer:', 'Duración:', 'Длительность:')} {stop.recommendedDuration}</span>
+                              <div className="flex items-center gap-2 mt-1">
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0D9488]/30 text-[#5EEAD4] border border-[#2DD4BF]/50 font-black text-xs sm:text-sm shadow-xs">
+                                  <Clock className="w-3.5 h-3.5 text-[#2DD4BF]" />
+                                  <span>{l('Yeterli Ziyaret Süresi:', 'Duration:', 'Dauer:', 'Duración:', 'Длительность:')} <b>{stop.recommendedDuration}</b></span>
                                 </span>
                               </div>
                             </div>
@@ -965,27 +965,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           <button
                             type="button"
                             onClick={() => window.open(stopMapsUrl, '_blank', 'noopener,noreferrer')}
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-teal-50 dark:hover:bg-slate-800 text-teal-700 dark:text-teal-300 border border-slate-200 dark:border-slate-700 text-xs font-semibold shadow-2xs cursor-pointer transition-colors"
+                            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-white border border-[#2DD4BF]/40 text-xs sm:text-sm font-black shadow-xs cursor-pointer transition-colors"
                           >
-                            <MapPin className="w-3.5 h-3.5 text-teal-600" />
+                            <MapPin className="w-3.5 h-3.5 text-[#5EEAD4]" />
                             <span>{l('Durağı Haritada Aç', 'View Stop on Maps', 'Auf Karte zeigen', 'Ver en el Mapa', 'Открыть на карте')}</span>
-                            <ExternalLink className="w-3 h-3 opacity-60" />
+                            <ExternalLink className="w-3 h-3 text-[#2DD4BF]" />
                           </button>
                         </div>
 
                         {/* Highlights Tags */}
                         {stop.highlights.length > 0 && (
-                          <div>
-                            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">
+                          <div className="space-y-1.5">
+                            <div className="text-xs font-black text-teal-200 uppercase tracking-wider">
                               {l('Görülmesi Gereken İkonik Noktalar:', 'Must-See Landmarks:', 'Wichtigste Sehenswürdigkeiten:', 'Lugares Emblemáticos:', 'Главные достопримечательности:')}
                             </div>
-                            <div className="flex flex-wrap gap-1.5">
+                            <div className="flex flex-wrap gap-2">
                               {stop.highlights.map((h, hIdx) => (
                                 <span
                                   key={hIdx}
-                                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-xs font-bold shadow-2xs"
+                                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-white/10 dark:bg-white/[0.08] border border-[#2DD4BF]/40 text-white text-xs sm:text-sm font-bold shadow-xs"
                                 >
-                                  <span className="w-1.5 h-1.5 rounded-full bg-teal-500" />
+                                  <span className="w-2 h-2 rounded-full bg-[#2DD4BF]" />
                                   <span>{h}</span>
                                 </span>
                               ))}
@@ -994,31 +994,32 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         )}
 
                         {/* Activities List */}
-                        <div className="space-y-1.5 pt-1">
-                          <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
-                            🏃 {l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:', 'Qué Hacer y Actividades:', 'Чем заняться и что посмотреть:')}
+                        <div className="space-y-2 pt-1">
+                          <div className="text-xs font-black text-teal-200 uppercase tracking-wider flex items-center gap-1.5">
+                            <span>🏃</span>
+                            <span>{l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:', 'Qué Hacer y Actividades:', 'Чем заняться и что посмотреть:')}</span>
                           </div>
                           <ul className="space-y-1.5">
                             {stop.activities.map((act, aIdx) => (
-                              <li key={aIdx} className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 flex items-start gap-2 font-medium leading-relaxed">
-                                <span className="text-teal-600 dark:text-teal-400 font-bold flex-shrink-0">•</span>
+                              <li key={aIdx} className="text-xs sm:text-sm text-teal-50 dark:text-teal-100 flex items-start gap-2 font-medium leading-relaxed">
+                                <span className="text-[#5EEAD4] font-black flex-shrink-0">•</span>
                                 <span>{act}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
 
-                        {/* Gastronomy Box for Stop */}
-                        <div className="p-3 rounded-xl bg-orange-50/80 dark:bg-orange-950/30 border border-orange-200/80 dark:border-orange-800/60 space-y-1.5">
-                          <div className="flex items-center gap-1.5 text-xs font-black text-orange-900 dark:text-orange-200">
-                            <Utensils className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400" />
+                        {/* Gastronomy Box for Stop - Harmonious Ocean Turquoise Glass */}
+                        <div className="p-3.5 sm:p-4 rounded-2xl bg-[#0F766E]/25 border border-[#2DD4BF]/40 space-y-2">
+                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-[#5EEAD4]">
+                            <Utensils className="w-4 h-4 text-[#2DD4BF]" />
                             <span>{l('🍲 Bu Durakta Ne Yenir & Ne İçilir?', '🍲 What to Eat & Drink at this Stop:', '🍲 Essen & Trinken an diesem Stopp:', '🍲 Qué Comer y Beber en esta Parada:', '🍲 Что поесть и выпить на этой остановке:')}</span>
                           </div>
                           <div className="flex flex-wrap gap-2 pt-0.5">
                             {stop.foodAndDrinks.map((fd, fIdx) => (
                               <span
                                 key={fIdx}
-                                className="px-2.5 py-1 rounded-lg bg-white/90 dark:bg-slate-900/80 border border-orange-200 dark:border-orange-900/60 text-xs font-bold text-orange-950 dark:text-orange-200 shadow-2xs"
+                                className="px-3 py-1 rounded-xl bg-white/15 dark:bg-white/10 border border-[#2DD4BF]/40 text-xs sm:text-sm font-black text-white shadow-xs"
                               >
                                 {fd}
                               </span>
@@ -1026,16 +1027,16 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           </div>
                         </div>
 
-                        {/* Critical Tips & Precautions for Stop */}
-                        <div className="p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/60 space-y-1.5">
-                          <div className="flex items-center gap-1.5 text-xs font-black text-amber-900 dark:text-amber-200">
-                            <AlertTriangle className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                        {/* Critical Tips & Precautions for Stop - High-Contrast Lagoon Alert */}
+                        <div className="p-3.5 sm:p-4 rounded-2xl bg-[#032B3D]/70 border border-cyan-400/40 space-y-2">
+                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-cyan-200">
+                            <AlertTriangle className="w-4 h-4 text-cyan-300" />
                             <span>{l('⚠️ Nelere Dikkat Edilir & Kritik İpuçları:', '⚠️ What to Watch Out for & Tips:', '⚠️ Wichtige Hinweise & Tipps:', '⚠️ Precauciones y Consejos Clave:', '⚠️ На что обратить внимание и советы:')}</span>
                           </div>
-                          <ul className="space-y-1">
+                          <ul className="space-y-1.5">
                             {stop.criticalTips.map((tip, tIdx) => (
-                              <li key={tIdx} className="text-xs text-amber-950 dark:text-amber-200 font-medium flex items-start gap-1.5 leading-relaxed">
-                                <span className="text-amber-600 font-bold flex-shrink-0">›</span>
+                              <li key={tIdx} className="text-xs sm:text-sm text-teal-50 dark:text-teal-100 font-medium flex items-start gap-2 leading-relaxed">
+                                <span className="text-[#5EEAD4] font-black flex-shrink-0">›</span>
                                 <span>{tip}</span>
                               </li>
                             ))}
@@ -2025,15 +2026,15 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {activeTab === 'culture' && (
             <div className="space-y-6 animate-in fade-in duration-200">
               {/* Coğrafya, Başkent, Büyük Şehirler ve Turistik Bölgeler */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-4">
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/70 dark:border-slate-700/60 pb-3">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 space-y-5 shadow-sm">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#5EEAD4]/40 dark:border-teal-700/60 pb-3">
                   <div className="flex items-center gap-2">
                     <Building className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                    <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                    <h2 className="font-black text-base sm:text-lg text-[#042F2E] dark:text-white">
                       {name} {l('Kültürel Miras, Şehirler ve Gezilecek Yerler', 'Cultural Heritage, Cities & Sights', 'Kulturerbe, Städte & Sehenswürdigkeiten', 'Patrimonio Cultural, Ciudades y Lugares', 'Культурное наследие, города и достопримечательности')}
                     </h2>
                   </div>
-                  <span className="text-xs font-bold px-3 py-1 rounded-xl bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800 flex items-center gap-1.5">
+                  <span className="text-xs font-black px-3.5 py-1.5 rounded-xl bg-teal-100 dark:bg-teal-900/60 text-teal-900 dark:text-teal-100 border border-teal-300 dark:border-teal-700 flex items-center gap-1.5 shadow-2xs">
                     <span>🏛️</span>
                     <span>{l('Başkent:', 'Capital:', 'Hauptstadt:')} {geography.capital}</span>
                   </span>
@@ -2041,7 +2042,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                 {/* Büyük Şehirler */}
                 <div>
-                  <div className="text-xs font-bold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-1.5">
+                  <div className="text-xs font-black text-teal-900 dark:text-teal-200 mb-2 flex items-center gap-1.5">
                     <span>🏙️</span>
                     <span>{l('Başlıca Büyük Şehirler & Metropoller:', 'Major Metropolitan Cities:', 'Wichtigste Großstädte:')}</span>
                   </div>
@@ -2049,7 +2050,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     {geography.majorCities.map((city, idx) => (
                       <span
                         key={idx}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-2xs hover:border-teal-500 transition-colors"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-slate-700 text-xs sm:text-sm font-bold text-slate-900 dark:text-white shadow-2xs hover:border-teal-500 transition-colors"
                       >
                         <span className="w-2 h-2 rounded-full bg-teal-500" />
                         <span>{city}</span>
@@ -2060,7 +2061,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                 {/* Popüler Turistik Bölgeler */}
                 <div>
-                  <div className="text-xs font-bold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-1.5">
+                  <div className="text-xs font-black text-teal-900 dark:text-teal-200 mb-2 flex items-center gap-1.5">
                     <span>🏖️</span>
                     <span>{l('Öne Çıkan Popüler Turistik Bölgeler:', 'Top Touristic Regions & Destinations:', 'Beliebte Urlaubsregionen & Highlights:')}</span>
                   </div>
@@ -2068,7 +2069,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     {geography.touristRegions.map((region, idx) => (
                       <span
                         key={idx}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-50/70 dark:bg-teal-950/40 border border-teal-200/80 dark:border-teal-800/60 text-xs font-semibold text-teal-800 dark:text-teal-200 shadow-2xs"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-100/70 dark:bg-teal-950/60 border border-teal-300/80 dark:border-teal-800/80 text-xs sm:text-sm font-bold text-teal-950 dark:text-teal-100 shadow-2xs"
                       >
                         <span className="text-teal-600 dark:text-teal-400">📍</span>
                         <span>{region}</span>
@@ -2078,37 +2079,37 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 {/* Pratik Seyahat Parametreleri (Para Birimi, Saat Dilimi, Priz, Telefon Kodu) */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 border-t border-slate-200/60 dark:border-slate-700/60 text-xs">
-                  <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-700/60">
-                    <div className="text-[10px] text-slate-400 font-semibold">{l('Para Birimi & Sembolü', 'Currency & Symbol', 'Währung & Symbol')}</div>
-                    <div className="font-extrabold text-slate-900 dark:text-slate-100 mt-0.5 text-sm">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 border-t border-[#5EEAD4]/40 dark:border-teal-700/60 text-xs">
+                  <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-slate-700 shadow-2xs">
+                    <div className="text-xs text-teal-800 dark:text-teal-300 font-bold">{l('Para Birimi & Sembolü', 'Currency & Symbol', 'Währung & Symbol')}</div>
+                    <div className="font-black text-[#042F2E] dark:text-white mt-1 text-sm sm:text-base">
                       {geography.currencyCode} ({geography.currencySymbol})
                     </div>
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">{geography.currencyName}</div>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 truncate mt-0.5">{geography.currencyName}</div>
                   </div>
-                  <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-700/60">
-                    <div className="text-[10px] text-slate-400 font-semibold">{l('Saat Dilimi', 'Time Zone', 'Zeitzone')}</div>
-                    <div className="font-extrabold text-slate-900 dark:text-slate-100 mt-0.5 text-xs">{geography.timeZone}</div>
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400">{l('Yerel Saat Farkı', 'Local Difference', 'Zeitdifferenz')}</div>
+                  <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-slate-700 shadow-2xs">
+                    <div className="text-xs text-teal-800 dark:text-teal-300 font-bold">{l('Saat Dilimi', 'Time Zone', 'Zeitzone')}</div>
+                    <div className="font-black text-[#042F2E] dark:text-white mt-1 text-xs sm:text-sm">{geography.timeZone}</div>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">{l('Yerel Saat Farkı', 'Local Difference', 'Zeitdifferenz')}</div>
                   </div>
-                  <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-700/60">
-                    <div className="text-[10px] text-slate-400 font-semibold">{l('Priz Tipi & Voltaj', 'Plug & Voltage', 'Steckertyp')}</div>
-                    <div className="font-extrabold text-slate-900 dark:text-slate-100 mt-0.5 text-xs">{geography.plugTypes}</div>
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400">{l('Seyahat Adaptörü', 'Travel Adapter', 'Reiseadapter')}</div>
+                  <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-slate-700 shadow-2xs">
+                    <div className="text-xs text-teal-800 dark:text-teal-300 font-bold">{l('Priz Tipi & Voltaj', 'Plug & Voltage', 'Steckertyp')}</div>
+                    <div className="font-black text-[#042F2E] dark:text-white mt-1 text-xs sm:text-sm">{geography.plugTypes}</div>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">{l('Seyahat Adaptörü', 'Travel Adapter', 'Reiseadapter')}</div>
                   </div>
-                  <div className="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-700/60">
-                    <div className="text-[10px] text-slate-400 font-semibold">{l('Telefon Alan Kodu', 'Dialing Code', 'Ländervorwahl')}</div>
-                    <div className="font-extrabold text-slate-900 dark:text-slate-100 mt-0.5 font-mono text-sm">{geography.callingCode}</div>
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400">{l('Uluslararası Arama', 'Intl. Calling', 'Ländervorwahl')}</div>
+                  <div className="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-slate-700 shadow-2xs">
+                    <div className="text-xs text-teal-800 dark:text-teal-300 font-bold">{l('Telefon Alan Kodu', 'Dialing Code', 'Ländervorwahl')}</div>
+                    <div className="font-black text-[#042F2E] dark:text-white mt-1 font-mono text-sm sm:text-base">{geography.callingCode}</div>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">{l('Uluslararası Arama', 'Intl. Calling', 'Ländervorwahl')}</div>
                   </div>
                 </div>
               </div>
 
               {/* Toplumsal Görgü Kuralları */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <Heart className="w-5 h-5 text-rose-500" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                  <h3 className="font-black text-base sm:text-lg text-[#042F2E] dark:text-white">
                     {l('Toplumsal Görgü Kuralları ve Gelenekler', 'Social Etiquette & Traditions', 'Umgangsformen & Traditionen')}
                   </h3>
                 </div>
@@ -2116,9 +2117,9 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   {encyclopedia.culture.etiquette.map((tip, idx) => (
                     <div
                       key={idx}
-                      className="flex items-start gap-2.5 p-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs text-slate-700 dark:text-slate-300"
+                      className="flex items-start gap-3 p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-teal-100 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200"
                     >
-                      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-teal-100 dark:bg-teal-900/60 text-teal-800 dark:text-teal-300 flex items-center justify-center font-bold text-[10px]">
+                      <span className="shrink-0 w-6 h-6 rounded-full bg-teal-100 dark:bg-teal-900/60 text-teal-900 dark:text-teal-200 flex items-center justify-center font-black text-xs">
                         {idx + 1}
                       </span>
                       <span className="leading-relaxed">{tip}</span>
@@ -2128,7 +2129,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* Gezilecek Yerler & İkonik Rotalar */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm">
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <div className="flex items-center gap-2">
                     <Compass className="w-5 h-5 text-sky-500" />
@@ -2200,20 +2201,20 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {activeTab === 'gastronomy' && (
             <div className="space-y-6 animate-in fade-in duration-200">
               {/* Meşhur Milli Yemekler */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
-                <div className="flex items-center gap-2 mb-3">
-                  <Utensils className="w-5 h-5 text-amber-500" />
-                  <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+              <div className="bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-5 sm:p-6 shadow-md backdrop-blur-md">
+                <div className="flex items-center gap-2.5 mb-4">
+                  <Utensils className="w-5 h-5 text-[#5EEAD4]" />
+                  <h2 className="font-black text-base sm:text-xl text-white tracking-tight">
                     {name} {l('Meşhur Yemekleri, İçecekleri ve Mutfak Kültürü', 'Gastronomy, Famous Dishes & Culinary Guide', 'Kulinarik, berühmte Gerichte & Esskultur', 'Gastronomía, Platos Típicos y Guía Culinaria', 'Национальная кухня, популярные блюда и напитки')}
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   {encyclopedia.gastronomy.famousDishes.map((dish, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-3 shadow-2xs"
+                      className="p-4 rounded-xl bg-white/[0.12] dark:bg-white/[0.07] border border-[#2DD4BF]/40 hover:border-[#5EEAD4] text-white font-bold text-sm sm:text-base flex items-center gap-3 shadow-sm transition-all"
                     >
-                      <span className="text-xl">🍲</span>
+                      <span className="text-2xl flex-shrink-0">🍲</span>
                       <span className="leading-snug">{dish}</span>
                     </div>
                   ))}
@@ -2223,20 +2224,20 @@ Planlayan: Vizamigo (vizamigo.com)`;
               {/* İçecekler & Sokak Lezzetleri */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Geleneksel İçecekler */}
-                <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg">☕</span>
-                    <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">
+                <div className="bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-5 shadow-md backdrop-blur-md">
+                  <div className="flex items-center gap-2 mb-3.5">
+                    <span className="text-xl">☕</span>
+                    <h3 className="font-black text-sm sm:text-base text-white">
                       {l('Geleneksel ve Popüler İçecekler', 'Traditional & Popular Drinks', 'Traditionelle Getränke', 'Bebidas Tradicionales y Populares', 'Традиционные и популярные напитки')}
                     </h3>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2.5">
                     {encyclopedia.gastronomy.traditionalDrinks.map((drink, idx) => (
                       <div
                         key={idx}
-                        className="p-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs text-slate-700 dark:text-slate-300 flex items-center gap-2"
+                        className="p-3 rounded-xl bg-white/[0.12] dark:bg-white/[0.07] border border-[#2DD4BF]/40 hover:border-[#5EEAD4] text-sm font-bold text-white flex items-center gap-2.5 transition-all"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0" />
+                        <span className="w-2 h-2 rounded-full bg-[#2DD4BF] flex-shrink-0" />
                         <span>{drink}</span>
                       </div>
                     ))}
@@ -2244,20 +2245,20 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 {/* Sokak Lezzetleri ve Tatlılar */}
-                <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg">🍰</span>
-                    <h3 className="font-bold text-sm text-slate-900 dark:text-slate-100">
+                <div className="bg-white/[0.08] dark:bg-white/[0.05] border border-[#2DD4BF]/35 rounded-2xl p-5 shadow-md backdrop-blur-md">
+                  <div className="flex items-center gap-2 mb-3.5">
+                    <span className="text-xl">🍰</span>
+                    <h3 className="font-black text-sm sm:text-base text-white">
                       {l('Sokak Lezzetleri ve Tatlılar', 'Street Food & Iconic Desserts', 'Streetfood & Süßspeisen', 'Comida Callejera y Postres', 'Уличная еда и десерты')}
                     </h3>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2.5">
                     {encyclopedia.gastronomy.streetFoodAndDesserts.map((dessert, idx) => (
                       <div
                         key={idx}
-                        className="p-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs text-slate-700 dark:text-slate-300 flex items-center gap-2"
+                        className="p-3 rounded-xl bg-white/[0.12] dark:bg-white/[0.07] border border-[#2DD4BF]/40 hover:border-[#5EEAD4] text-sm font-bold text-white flex items-center gap-2.5 transition-all"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
+                        <span className="w-2 h-2 rounded-full bg-[#38BDF8] flex-shrink-0" />
                         <span>{dessert}</span>
                       </div>
                     ))}
@@ -2271,27 +2272,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {activeTab === 'language' && (
             <div className="space-y-6 animate-in fade-in duration-200">
               {/* Pratik Hayat Kurtaran Cümleler */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <div className="flex items-center gap-2">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm">
+                <div className="flex items-center justify-between gap-2 mb-4">
+                  <div className="flex items-center gap-2.5">
                     <Languages className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                    <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                    <h2 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
                       {name} {l('Pratik Konuşma Kalıpları ve Yerel Dil Rehberi', 'Survival Travel Phrases & Local Language Guide', 'Wichtige Reiseredewendungen & Sprachführer', 'Frases Prácticas de Viaje y Guía de Idioma', 'Разговорник и полезные фразы для путешествия')}
                     </h2>
                   </div>
-                  <span className="text-xs text-slate-400 font-medium">
+                  <span className="text-xs text-teal-700 dark:text-teal-300 font-semibold bg-teal-100/70 dark:bg-teal-900/40 px-2.5 py-1 rounded-full">
                     {l('Tıklayarak kopyalayın', 'Click to copy', 'Zum Kopieren klicken')}
                   </span>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
                   {encyclopedia.language.phrases.map((phraseItem, idx) => (
                     <div
                       key={idx}
                       onClick={() => handleCopy(phraseItem.phrase, `phrase-${idx}`)}
-                      className="p-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 hover:border-teal-500 dark:hover:border-teal-500 transition-all cursor-pointer shadow-2xs group relative"
+                      className="p-3.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-md transition-all cursor-pointer group relative"
                     >
                       <div className="flex items-start justify-between gap-2">
-                        <div className="font-bold text-sm text-slate-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                        <div className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                           {phraseItem.phrase}
                         </div>
                         <span className="text-slate-400 group-hover:text-teal-600 dark:group-hover:text-teal-400">
@@ -2302,12 +2303,12 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           )}
                         </span>
                       </div>
-                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                      <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium mt-1">
                         {phraseItem.meaning}
                       </div>
                       {phraseItem.pronunciation && (
-                        <div className="text-[11px] font-mono text-teal-600 dark:text-teal-400 mt-1">
-                          🗣️ {phraseItem.pronunciation}
+                        <div className="text-xs font-mono font-bold text-teal-700 dark:text-teal-300 mt-1.5 flex items-center gap-1">
+                          <span>🗣️</span> {phraseItem.pronunciation}
                         </div>
                       )}
                     </div>
@@ -2316,27 +2317,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* Dini Yapı & Saygı Normları */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-3">
-                <div className="flex items-center gap-2">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm space-y-3.5">
+                <div className="flex items-center gap-2.5">
                   <Landmark className="w-5 h-5 text-indigo-500" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                  <h3 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
                     {l('Dini Yapı & İbadethane Ziyaret Kuralları', 'Religion & Sacred Etiquette', 'Religion & Verhaltensregeln')}
                   </h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                  <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 space-y-1">
-                    <span className="text-[11px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 space-y-1.5">
+                    <span className="text-xs font-black text-indigo-700 dark:text-indigo-400 uppercase tracking-wider">
                       {l('Hakim Dini İnanışlar', 'Primary Faiths', 'Vorherrschende Religionen')}
                     </span>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
                       {encyclopedia.religion.primaryReligions}
                     </p>
                   </div>
-                  <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 space-y-1">
-                    <span className="text-[11px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
+                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 space-y-1.5">
+                    <span className="text-xs font-black text-amber-700 dark:text-amber-400 uppercase tracking-wider">
                       {l('Ziyaret Kuralları & Saygı Normları', 'Visitor Guidelines & Dress Code', 'Besuchsregeln')}
                     </span>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
                       {encyclopedia.religion.respectNorms}
                     </p>
                   </div>
@@ -2344,27 +2345,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* Kısa Öz Tarihçe & Dönüm Noktaları */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5 space-y-3">
-                <div className="flex items-center gap-2">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm space-y-3.5">
+                <div className="flex items-center gap-2.5">
                   <Clock className="w-5 h-5 text-purple-500" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                  <h3 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
                     {l('Kısa ve Öz Tarihçe', 'Concise Historical Overview', 'Kurze Geschichte')}
                   </h3>
                 </div>
-                <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed p-3.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60">
+                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium leading-relaxed p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50">
                   {encyclopedia.history.conciseHistory}
                 </p>
-                <div className="space-y-1.5 pt-1">
-                  <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase">
+                <div className="space-y-2 pt-1">
+                  <div className="text-xs font-black text-slate-700 dark:text-slate-300 uppercase tracking-wide">
                     {l('Tarihin Önemli Dönüm Noktaları', 'Historical Milestones', 'Historische Meilensteine')}
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {encyclopedia.history.milestones.map((milestone, idx) => (
                       <div
                         key={idx}
-                        className="p-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs text-slate-700 dark:text-slate-300 flex items-center gap-2"
+                        className="p-3 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium flex items-center gap-2.5"
                       >
-                        <span className="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-purple-500 flex-shrink-0" />
                         <span>{milestone}</span>
                       </div>
                     ))}
@@ -2378,20 +2379,20 @@ Planlayan: Vizamigo (vizamigo.com)`;
           {activeTab === 'achievements' && (
             <div className="space-y-6 animate-in fade-in duration-200">
               {/* Dünyaca Ünlü İsimler */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
-                <div className="flex items-center gap-2 mb-3">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm">
+                <div className="flex items-center gap-2.5 mb-4">
                   <Trophy className="w-5 h-5 text-amber-500" />
-                  <h2 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                  <h2 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
                     {name} {l('Küresel Başarılar, İnovasyon ve Dünya Sıralaması', 'Global Achievements, Figures & World Standing', 'Globale Erfolge, Persönlichkeiten & Rangliste', 'Logros Globales y Personalidades Célebres', 'Мировые достижения, известные личности и рейтинги')}
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
                   {encyclopedia.achievements.famousFigures.map((fig, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2.5 shadow-2xs"
+                      className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-3 shadow-2xs hover:border-amber-400 transition-colors"
                     >
-                      <span className="text-amber-500 font-bold">★</span>
+                      <span className="text-amber-500 font-black text-base">★</span>
                       <span className="leading-snug">{fig}</span>
                     </div>
                   ))}
@@ -2399,20 +2400,20 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* Dünyada Lider Olduğu Alanlar */}
-              <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-5">
-                <div className="flex items-center gap-2 mb-3">
+              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 shadow-sm">
+                <div className="flex items-center gap-2.5 mb-4">
                   <Building className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">
+                  <h3 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
                     {l('Dünyada Lider veya En Başarılı Olduğu Alanlar', 'Global Leadership & Strong Sectors', 'Führende Wirtschaftszweige')}
                   </h3>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   {encyclopedia.achievements.strongSectors.map((sector, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/60 text-xs font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2.5 shadow-2xs"
+                      className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-3 shadow-2xs hover:border-teal-400 transition-colors"
                     >
-                      <span className="w-2 h-2 rounded-full bg-teal-500 flex-shrink-0" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-teal-500 flex-shrink-0" />
                       <span className="leading-snug">{sector}</span>
                     </div>
                   ))}
@@ -2422,34 +2423,34 @@ Planlayan: Vizamigo (vizamigo.com)`;
               {/* Ekonomi, Ödeme Kültürü ve Bahşiş */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Ödeme Kültürü */}
-                <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-900 dark:text-slate-100">
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 space-y-2 shadow-sm">
+                  <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100">
                     <CreditCard className="w-4 h-4 text-purple-500" />
                     <span>{l('Kart vs. Nakit Kültürü', 'Cards vs. Cash', 'Zahlungskultur')}</span>
                   </div>
-                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
                     {encyclopedia.economy.paymentCulture}
                   </p>
                 </div>
 
                 {/* Bahşiş Kültürü */}
-                <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-900 dark:text-slate-100">
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 space-y-2 shadow-sm">
+                  <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100">
                     <DollarSign className="w-4 h-4 text-emerald-500" />
                     <span>{l('Bahşiş Teamülü', 'Tipping Culture', 'Trinkgeld')}</span>
                   </div>
-                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
                     {encyclopedia.economy.tippingCulture}
                   </p>
                 </div>
 
                 {/* Ekonomik Güç */}
-                <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-900 dark:text-slate-100">
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 space-y-2 shadow-sm">
+                  <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100">
                     <Building className="w-4 h-4 text-sky-500" />
                     <span>{l('Lokomotif Sektörler', 'Economic Pillars', 'Wirtschaftskraft')}</span>
                   </div>
-                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
                     {encyclopedia.economy.economicPillars}
                   </p>
                 </div>

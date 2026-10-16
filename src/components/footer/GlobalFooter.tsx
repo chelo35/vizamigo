@@ -22,7 +22,7 @@ import { useI18n } from '../../data/i18n';
 
 interface Props {
   onSelectCountry?: (countryCode: string) => void;
-  onOpenLegalModal: () => void;
+  onOpenLegalModal: (tab?: string) => void;
   setActiveTab?: (tab: string) => void;
   onOpenPackingList?: () => void;
   onOpenTippingCalc?: () => void;
@@ -348,7 +348,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('passport_lost')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Pasaport Kayıp / Çalıntı Kılavuzu', 'Lost/Stolen Passport Protocol', 'Pass verloren / gestohlen', 'Pasaporte Perdido o Robado', 'Утеря/кража паспорта')}
@@ -357,7 +357,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('crisis')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Acil Durum & Polis Numaraları', 'Emergency & Police Contacts', 'Notruf & Polizeinummern', 'Teléfonos de Emergencia', 'Экстренные службы')}
@@ -366,7 +366,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('appeals')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Vize Reddi İtiraz Prosedürü', 'Visa Refusal Appeal Guide', 'Visum-Ablehnung Einspruch', 'Apelación Denegación de Visa', 'Апелляция при отказе')}
@@ -375,7 +375,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('standards')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Güvenlik Kaynak Merkezi', 'Security Resource Center', 'Sicherheitszentrum', 'Centro de Recursos de Seguridad', 'Центр безопасности')}
@@ -485,7 +485,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('privacy')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Gizlilik & Çerez Politikası', 'Privacy Policy & Cookies', 'Datenschutz & Cookies', 'Política de Privacidad', 'Конфиденциальность')}
@@ -494,7 +494,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('terms')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Hizmet Kullanım Koşulları', 'Terms of Service', 'Nutzungsbedingungen', 'Términos de Servicio', 'Условия использования')}
@@ -503,7 +503,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('disclaimer')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Yasal Sorumluluk Reddi (Disclaimer)', 'Legal Disclaimer', 'Rechtlicher Haftungsausschluss', 'Descargo de Responsabilidad', 'Отказ от ответственности')}
@@ -512,7 +512,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('kvkk_gdpr')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('KVKK & GDPR Aydınlatma Beyanı', 'GDPR / KVKK Disclosure', 'DSGVO Erklärung', 'Declaración RGPD / KVKK', 'Положение о защите данных')}
@@ -521,7 +521,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('standards')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Resmi Mevzuat & Kaynak Bildirimi', 'Official Immigration & MFA Source Standards', 'Offizielle Einreisequellen & Standards', 'Estándares de Inmigración Oficial', 'Официальные стандарты иммиграции')}
@@ -575,7 +575,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('mission')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Vizamigo Misyonu & Hikayesi', 'Our Mission & Story', 'Unsere Mission & Geschichte', 'Nuestra Misión', 'Наша миссия')}
@@ -584,7 +584,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('standards')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Veri Doğrulama İlkelerimiz', 'Data Verification Principles', 'Verifizierungsprinzipien', 'Verificación de Datos', 'Принципы проверки данных')}
@@ -603,7 +603,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => onOpenLegalModal()}
+                onClick={() => onOpenLegalModal('press')}
                 className="text-teal-100 hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Basın Kiti & İletişim', 'Press Center & Contact', 'Pressezentrum & Kontakt', 'Centro de Prensa', 'Пресс-центр')}

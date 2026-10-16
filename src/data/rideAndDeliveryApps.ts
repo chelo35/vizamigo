@@ -631,6 +631,36 @@ export const MASTER_APPS_DIRECTORY: Record<string, NomadAppInfo> = {
     logoText: 'VIP 🚖',
     logoBg: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
     logoColor: '#FFFFFF'
+  },
+  GetYourGuide: {
+    id: 'getyourguide',
+    name: 'GetYourGuide & Tiqets',
+    category: 'luggage_vip',
+    categoryLabelTr: 'Şehir Turları & Müze Biletleri',
+    categoryLabelEn: 'Tours, Activities & Fast-Track Tickets',
+    url: 'https://www.getyourguide.com',
+    taglineTr: 'Sıra Beklemeden Müze Girişi, Tekne Turları & Günübirlik Geziler',
+    taglineEn: 'Skip-the-line museum tickets, day tours, and outdoor adventures',
+    recommendedReasonTr: 'Popüler saray ve müze sıralarını atlayın, yerel rehberli turlara anında rezervasyon yapın.',
+    recommendedReasonEn: 'Book fast-track museum entries and top-rated local guided experiences.',
+    logoText: 'Tur 🎟️',
+    logoBg: 'linear-gradient(135deg, #FF5533 0%, #E63946 100%)',
+    logoColor: '#FFFFFF'
+  },
+  DiscoverCars: {
+    id: 'discovercars',
+    name: 'DiscoverCars & EconomyBookings',
+    category: 'both',
+    categoryLabelTr: 'Uluslararası Araç Kiralama',
+    categoryLabelEn: 'Global Car Rental Comparison',
+    url: 'https://www.discovercars.com',
+    taglineTr: '150+ Ülkede 500+ Güvenilir Kiralama Şirketini Karşılaştırın',
+    taglineEn: 'Compare 500+ trusted rental companies across 150+ countries',
+    recommendedReasonTr: 'Havalimanında teslim araçlarda sıfır gizli masraf ve ücretsiz iptal güvencesi.',
+    recommendedReasonEn: 'Full coverage insurance with no hidden fees and free cancellation.',
+    logoText: 'Car 🚗',
+    logoBg: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
+    logoColor: '#FFFFFF'
   }
 };
 
@@ -721,10 +751,13 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
 
   // 3. Always enrich with essential cross-border services so every country card/modal shows the full ecosystem
   tryAdd('WayAway');
+  tryAdd('TripCom');
   tryAdd('Booking');
   tryAdd('Airalo');
   tryAdd('Wise');
   tryAdd('SafetyWing');
+  tryAdd('GetYourGuide');
+  tryAdd('DiscoverCars');
   tryAdd('BounceLuggage');
   tryAdd('MeetupSocial');
   tryAdd('PreplyLang');

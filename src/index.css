@@ -70,23 +70,23 @@
    DUAL-THEME CUSTOM PROPERTIES (ZERO LAYOUT SHIFT ENGINE)
    ======================================================== */
 :root {
-  --bg-canvas: #0D9488;
-  --bg-canvas-gradient: linear-gradient(135deg, #0284C7 0%, #0D9488 50%, #14B8A6 100%);
-  --surface-card: rgba(204, 251, 241, 0.94);
-  --surface-card-border: rgba(45, 212, 191, 0.65);
-  --surface-card-shadow: 0 20px 44px rgba(4, 47, 46, 0.22);
-  --surface-card-hover-shadow: 0 26px 56px rgba(4, 47, 46, 0.32), 0 0 24px rgba(45, 212, 191, 0.30);
-  --surface-glass-control: rgba(204, 251, 241, 0.88);
-  --surface-glass-border: rgba(45, 212, 191, 0.55);
-  --text-primary: #042F2E;
-  --text-secondary: #0F766E;
-  --text-muted: #115E59;
+  --bg-canvas: #F0F9FF;
+  --bg-canvas-gradient: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #CCFBF1 100%);
+  --surface-card: rgba(255, 255, 255, 0.95);
+  --surface-card-border: rgba(56, 189, 248, 0.40);
+  --surface-card-shadow: 0 16px 36px rgba(2, 132, 199, 0.08);
+  --surface-card-hover-shadow: 0 24px 48px rgba(2, 132, 199, 0.16), 0 0 20px rgba(56, 189, 248, 0.25);
+  --surface-glass-control: rgba(255, 255, 255, 0.92);
+  --surface-glass-border: rgba(56, 189, 248, 0.45);
+  --text-primary: #0F172A;
+  --text-secondary: #0369A1;
+  --text-muted: #0284C7;
   --accent-coral: #0284C7;
-  --accent-horizon-teal: #0D9488;
-  --accent-horizon-teal-soft: rgba(13, 148, 136, 0.16);
-  --accent-coral-soft: rgba(2, 132, 199, 0.16);
-  --teal-text: #0F766E;
-  --coral-text: #0369A1;
+  --accent-horizon-teal: #0EA5E9;
+  --accent-horizon-teal-soft: rgba(14, 165, 233, 0.12);
+  --accent-coral-soft: rgba(2, 132, 199, 0.12);
+  --teal-text: #0369A1;
+  --coral-text: #0284C7;
 }
 
 html.dark,
@@ -111,16 +111,16 @@ html.dark,
 }
 
 .bento-lagoon-card {
-  background: linear-gradient(145deg, rgba(153, 246, 228, 0.90) 0%, rgba(167, 243, 208, 0.88) 55%, rgba(125, 211, 252, 0.86) 100%);
-  border: 2px solid rgba(255, 255, 255, 0.65);
-  box-shadow: 0 20px 44px rgba(4, 47, 46, 0.26), inset 0 1px 1px rgba(255, 255, 255, 0.70);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(240, 249, 255, 0.94) 50%, rgba(224, 242, 254, 0.92) 100%);
+  border: 2px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 16px 36px rgba(2, 132, 199, 0.10), inset 0 1px 1px rgba(255, 255, 255, 0.90);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
 .bento-lagoon-card:hover {
-  border-color: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 26px 56px rgba(4, 47, 46, 0.36), 0 0 24px rgba(94, 234, 212, 0.35);
+  border-color: rgba(14, 165, 233, 0.65);
+  box-shadow: 0 22px 48px rgba(2, 132, 199, 0.18), 0 0 20px rgba(56, 189, 248, 0.28);
 }
 
 html.dark .bento-lagoon-card,

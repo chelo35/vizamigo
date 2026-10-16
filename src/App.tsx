@@ -133,8 +133,14 @@ function AppContent() {
   // Modals
   const [isPassportModalOpen, setIsPassportModalOpen] = useState<boolean>(false);
   const [isLegalModalOpen, setIsLegalModalOpen] = useState<boolean>(false);
+  const [legalInitialTab, setLegalInitialTab] = useState<string>('terms');
   const [isAuditModalOpen, setIsAuditModalOpen] = useState<boolean>(false);
   const [reportingModalData, setReportingModalData] = useState<{ code: string; name: string } | null>(null);
+
+  const openLegalModalWithTab = (tab: string = 'terms') => {
+    setLegalInitialTab(tab);
+    setIsLegalModalOpen(true);
+  };
   const [isPackingListOpen, setIsPackingListOpen] = useState<boolean>(false);
   const [isTippingCalcOpen, setIsTippingCalcOpen] = useState<boolean>(false);
   const [isTimezoneOverlapOpen, setIsTimezoneOverlapOpen] = useState<boolean>(false);
@@ -199,7 +205,7 @@ function AppContent() {
       />
 
       {/* Permanent Fixed Fullscreen Luminous Ocean Blue & Turquoise Lagoon Background */}
-      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-br from-[#0284C7] via-[#0D9488] to-[#14B8A6] dark:from-[#042132] dark:via-[#063A4D] dark:to-[#032030]" />
+      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-br from-[#E0F2FE] via-[#BAE6FD] to-[#CCFBF1] dark:from-[#042132] dark:via-[#063A4D] dark:to-[#032030]" />
 
       {/* Lightweight GPU-Optimized Tropical Lagoon Ambient Glows */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
@@ -247,7 +253,7 @@ function AppContent() {
         <Header
           currentPassport={currentPassport}
           onOpenPassportSelector={() => setIsPassportModalOpen(true)}
-          onOpenLegalModal={() => setIsLegalModalOpen(true)}
+          onOpenLegalModal={() => openLegalModalWithTab('terms')}
           onOpenAuditConsole={() => setIsAuditModalOpen(true)}
           isDark={isDark}
           onToggleTheme={() => setIsDark(!isDark)}
@@ -439,7 +445,7 @@ function AppContent() {
                   onLanguageChange={(l) => {
                     setLanguage(l);
                   }}
-                  onOpenLegalModal={() => setIsLegalModalOpen(true)}
+                  onOpenLegalModal={() => openLegalModalWithTab('backup')}
                 />
               ) : (
                 <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
@@ -493,7 +499,7 @@ function AppContent() {
             }
             handleCountrySelect(code);
           }}
-          onOpenLegalModal={() => setIsLegalModalOpen(true)}
+          onOpenLegalModal={(tab) => openLegalModalWithTab(tab || 'terms')}
           setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
           onOpenPackingList={() => setIsPackingListOpen(true)}
           onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
@@ -522,6 +528,7 @@ function AppContent() {
             isOpen={isLegalModalOpen}
             onClose={() => setIsLegalModalOpen(false)}
             onDataResetOrImported={handleDataResetOrImported}
+            initialTab={legalInitialTab}
           />
         )}
 

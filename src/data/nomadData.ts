@@ -9,6 +9,15 @@
 import { getCountryName } from './passportData';
 import { lText } from '../i18n';
 
+export interface NomadCostBreakdown {
+  rent1Bed: string;
+  foodDining: string;
+  coworking: string;
+  mobileSim: string;
+  localTransit: string;
+  coffeeOrBeer: string;
+}
+
 export interface DigitalNomadHub {
   id: string;
   countryCode: string;
@@ -28,6 +37,7 @@ export interface DigitalNomadHub {
   keyRequirements: string[];
   officialUrl: string;
   googleMapsQuery: string;
+  costBreakdown?: NomadCostBreakdown;
   // Multi-language overrides
   en?: Partial<DigitalNomadHub>;
   de?: Partial<DigitalNomadHub>;
@@ -41,8 +51,8 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     region: 'Güneydoğu Asya & Pasifik',
     visaName: 'Destination Thailand Visa (DTV) & 30 Gün Vizesiz',
     budgetLevel: 'Ultra Ekonomik (600-1100$)',
-    monthlyLivingCost: '750 - 1.300 $ / ay (Konaklama, yeme-içme ve coworking dahil)',
-    incomeRequired: 'Maaş şartı yok! Yalnızca bankada 500.000 THB (~13.500 $) bakiye gösterimi yeterlidir.',
+    monthlyLivingCost: '850 - 1.450 $ / ay (2026 Enflasyon güncel: Konaklama, beslenme ve coworking)',
+    incomeRequired: 'Aylık maaş şartı yok! Yalnızca bankada 500.000 THB (~14.000 $) bakiye gösterimi yeterlidir.',
     duration: '5 Yıl Geçerli (Her girişte 180 gün kalış + 180 gün uzatma = Yılda 360 gün!)',
     taxRegime: '180 günden fazla kalanlar vergi mukimi sayılır. 2024 Tayland Gelir İdaresi düzenlemesiyle ülkeye transfer edilen yurt dışı gelirler vergilendirilebilir; yerel vergi uzmanı rehberliği önerilir.',
     residencePathway: 'DTV e-vizesi online alınır; harç sadece ~10.000 THB (~300 $). Ayrıca Türk pasaportuna 30 gün vizesiz giriş (TDAC ile) hakkı mevcuttur.',
@@ -50,8 +60,16 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Ortalama 250+ Mbps fiber hız. Chiang Mai (Punspace, Yellow, Hub53), Ko Pha Ngan (Koh Space).',
     lifestyleVibe: 'Dünyanın en büyük dijital göçebe komünitesi, ucuz sokak lezzetleri, tapınaklar ve tropik ada yaşamı.',
     processingTime: '5-10 iş günü (Resmi Tayland E-Vize portalından)',
+    costBreakdown: {
+      rent1Bed: '380 - 650 $ (Modern 1+1 havuzlu kondominium)',
+      foodDining: '220 - 350 $ (Sokak lezzetleri ve yerel kafeler)',
+      coworking: '90 - 140 $ (Punspace / Yellow / Hub53)',
+      mobileSim: '12 - 20 $ (True / AIS 5G sınırsız paket)',
+      localTransit: '40 - 70 $ (Aylık scooter kiralama + benzin)',
+      coffeeOrBeer: '1.5 - 2.8 $ (Buzlu latte veya yerel bira)'
+    },
     keyRequirements: [
-      'Banka hesabında minimum 500.000 THB (~13.500 $) bakiye dökümü',
+      'Banka hesabında minimum 500.000 THB (~14.000 $) bakiye dökümü',
       'Uzaktan çalışma sözleşmesi, şirket evrağı veya dijital portföy',
       'Pasaportun en az 6 ay geçerli olması'
     ],
@@ -60,8 +78,8 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     en: {
       countryName: 'Thailand',
       visaName: 'Destination Thailand Visa (DTV) & 30-Day Visa-Free',
-      monthlyLivingCost: '$750 - $1,300 / mo (All-inclusive: rent, food, coworking)',
-      incomeRequired: 'No monthly salary threshold! Bank balance of 500,000 THB (~$13,500) required.',
+      monthlyLivingCost: '$850 - $1,450 / mo (Updated 2026: rent, food, coworking)',
+      incomeRequired: 'No monthly salary threshold! Bank balance of 500,000 THB (~$14,000) required.',
       duration: '5-Year Multi-Entry (180 days per entry + 180-day extension = up to 360 days/year!)',
       taxRegime: 'Stays >180 days trigger tax residency. Under 2024 Thai Revenue Dept rules, remitted foreign income may be taxable. Consult a tax professional.',
       residencePathway: 'Online DTV eVisa application (~$300 fee). 30 days visa-free entry (with TDAC) also available.',
@@ -101,8 +119,8 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     region: 'Güneydoğu Asya & Pasifik',
     visaName: 'E33G Uzaktan Çalışan Vizesi & B211A Ziyaretçi İzni',
     budgetLevel: 'Ekonomik (1100-1600$)',
-    monthlyLivingCost: '950 - 1.700 $ / ay (Havuzlu villa odası, kafe bütçesi dahil)',
-    incomeRequired: 'B211A/C1 için asgari gelir şartı aranmaz! E33G için yıllık 60.000 $ işveren geliri.',
+    monthlyLivingCost: '1.100 - 1.850 $ / ay (2026 Enflasyon güncel: Havuzlu villa odası, kafe & coworking)',
+    incomeRequired: 'B211A/C1 ziyaret izni için gelir şartı yok (2.000 $ bakiye yeterli); E33G için yıllık 60.000 $ işveren geliri.',
     duration: 'B211A ile 180 güne kadar (60 gün + 2x uzatma); E33G ile 1 tam yıl.',
     taxRegime: 'Endonezya kaynaklı olmayan yabancı gelirler için tam vergi muafiyeti.',
     residencePathway: 'C1/B211A turizm ve iş vizesi online alınarak Bali\'de 6 aya kadar yasal olarak kalınabilir.',
@@ -110,6 +128,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Canggu & Ubud genelinde 75-150 Mbps. Popüler mekanlar: Dojo Bali, Tropical Nomad, Outpost Ubud, BWork.',
     lifestyleVibe: 'Tropik sörf kültürü, sonsuz pirinç tarlaları, sağlıklı yaşam, smoothie bowllar ve yoğun expat ağı.',
     processingTime: '3-7 iş günü (Resmi Endonezya E-Vize portalı - evisa.imigrasi.go.id)',
+    costBreakdown: {
+      rent1Bed: '550 - 950 $ (Özel banyolu havuzlu villa odası)',
+      foodDining: '280 - 450 $ (Smoothie bowllar, warunglar ve kafeler)',
+      coworking: '120 - 190 $ (Dojo Bali / Tropical Nomad / BWork)',
+      mobileSim: '15 - 25 $ (Telkomsel 5G 50GB paket)',
+      localTransit: '70 - 120 $ (Aylık NMAX / Scoopy motor kiralama)',
+      coffeeOrBeer: '2.0 - 3.5 $ (Flat white veya soğuk Bintang)'
+    },
     keyRequirements: [
       'B211A için en az 2.000 $ banka bakiyesi ve dönüş bileti',
       'Pasaportun en az 6 ay geçerli olması',
@@ -161,7 +187,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     region: 'Güneydoğu Asya & Pasifik',
     visaName: '90 Günlük Çok Girişli E-Vize (Sınırsız Yenilenebilir)',
     budgetLevel: 'Ultra Ekonomik (600-1100$)',
-    monthlyLivingCost: '600 - 1.100 $ / ay (Dünyanın en ucuz yaşanabilir sahil şehirleri)',
+    monthlyLivingCost: '680 - 1.200 $ / ay (2026 Enflasyon güncel: Dünyanın en uygun sahil şehirleri)',
     incomeRequired: 'Asgari gelir veya banka şartı YOKTUR!',
     duration: '90 gün (Süre bitiminde komşu Laos/Tayland üzerinden hızlı çıkış-giriş ile yenilenir)',
     taxRegime: '90 güne kadar olan kalışlarda yerel vergi mükellefiyeti doğmaz.',
@@ -170,6 +196,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Dünyanın en hızlı ve ucuz fiber internetlerinden biri (100-200 Mbps). Enki Coworking, DNC Da Nang, The Workshop.',
     lifestyleVibe: 'Geleneksel Vietnam kahve kültürü (cà phê sữa đá), enfes sokak mutfağı (Phở, Bánh mì) ve tertemiz kumsallar.',
     processingTime: '3-5 iş günü',
+    costBreakdown: {
+      rent1Bed: '280 - 480 $ (Modern stüdyo veya deniz manzaralı daire)',
+      foodDining: '180 - 300 $ (Phở, Bánh mì ve taze deniz ürünleri)',
+      coworking: '60 - 95 $ (Enki Coworking / DNC Da Nang)',
+      mobileSim: '8 - 14 $ (Viettel sınırsız 4G/5G)',
+      localTransit: '40 - 65 $ (Scooter kiralama veya Grab)',
+      coffeeOrBeer: '1.0 - 2.0 $ (Geleneksel Cà phê trứng / Saigon bira)'
+    },
     keyRequirements: [
       'Resmi e-vize online başvuru formu ve 25 $ harç',
       'Pasaport fotoğrafı ve biyometrik fotoğraf'
@@ -179,7 +213,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     en: {
       countryName: 'Vietnam',
       visaName: '90-Day Multi-Entry eVisa (Renewable via Border Run)',
-      monthlyLivingCost: '$600 - $1,100 / mo (Among the world\'s most affordable beach cities)',
+      monthlyLivingCost: '$680 - $1,200 / mo (Updated 2026: Among world\'s most affordable beach cities)',
       incomeRequired: 'Zero minimum income or bank balance requirement!',
       duration: '90 Days (Easily renewed with quick border run to Laos or Thailand)',
       taxRegime: 'Stays under 90 days trigger no local tax residency liability.',
@@ -196,7 +230,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     de: {
       countryName: 'Vietnam',
       visaName: '90-Tage Mehrfacheinreise e-Visum (Verlängerbar)',
-      monthlyLivingCost: '600 - 1.100 $ / Monat (Eine der günstigsten Küstenstädte weltweit)',
+      monthlyLivingCost: '680 - 1.200 $ / Monat (Eine der günstigsten Küstenstädte weltweit)',
       incomeRequired: 'KEINE Mindesteinkommens- oder Bankauflagen!',
       duration: '90 Tage (Verlängerbar durch Visa-Run nach Laos oder Thailand)',
       taxRegime: 'Keine steuerliche Ansässigkeit bei Aufenthalten unter 90 Tagen.',
@@ -218,7 +252,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     region: 'Balkanlar & Kafkaslar',
     visaName: '365 Gün Vizesiz Kalış & Bireysel Girişimci %1 Vergi',
     budgetLevel: 'Ultra Ekonomik (600-1100$)',
-    monthlyLivingCost: '700 - 1.250 $ / ay (Tiflis ve Batum merkezde uygun kiralar)',
+    monthlyLivingCost: '800 - 1.380 $ / ay (2026 Enflasyon güncel: Tiflis ve Batum merkez kiraları)',
     incomeRequired: 'Vizesiz giriş için hiçbir gelir şartı yoktur! Dilediğiniz gibi yerleşebilirsiniz.',
     duration: '365 Gün (1 Tam Yıl Kesintisiz Vizesiz Kalış - Türk vatandaşlarına kimlikle giriş)',
     taxRegime: 'Küçük İşletme (Small Business Status) ile yıllık ~180.000 $\'a kadar olan ciroya SADECE %1 GELİR VERGİSİ!',
@@ -227,6 +261,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Magti ve Silknet fiber 50-100 Mbps. Fabrika Tbilisi, Terminal Coworking, DBlock.',
     lifestyleVibe: 'Tarihi kafeler, sıcak Kafkas misafirperverliği, leziz şarap ve mutfak kültürü, 2$ Bolt taksi konforu.',
     processingTime: 'Anında (Sınır kapısından doğrudan giriş)',
+    costBreakdown: {
+      rent1Bed: '400 - 680 $ (Tiflis Vera/Vake veya Saburtalo 1+1)',
+      foodDining: '220 - 360 $ (Haçapuri, hınkal ve Kafkas restoranları)',
+      coworking: '90 - 140 $ (Fabrika Tbilisi / Terminal / DBlock)',
+      mobileSim: '10 - 16 $ (Magti sınırsız internet paketi)',
+      localTransit: '30 - 50 $ (2$ Bolt taksi ve metro kartı)',
+      coffeeOrBeer: '1.8 - 2.8 $ (Özel kavrum kahve veya Gürcü şarabı)'
+    },
     keyRequirements: [
       'Yeni tip çipli T.C. kimlik kartı veya Türk pasaportu',
       '%1 vergi için Tiflis Adalet Sarayı\'nda bireysel girişimci kaydı (1 gün sürer)'
@@ -236,7 +278,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     en: {
       countryName: 'Georgia',
       visaName: '365-Day Visa-Free Stay & 1% Small Business Tax',
-      monthlyLivingCost: '$700 - $1,250 / mo (Affordable rentals in central Tbilisi & Batumi)',
+      monthlyLivingCost: '$800 - $1,380 / mo (Affordable rentals in central Tbilisi & Batumi)',
       incomeRequired: 'Zero income requirement for visa-free entry! Stay and work freely.',
       duration: '365 Days (1 Full Year Continuous Stay - ID card entry for Turkish citizens)',
       taxRegime: 'Small Business Status grants 1% flat turnover tax on up to ~$180,000/yr gross revenue!',
@@ -253,7 +295,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     de: {
       countryName: 'Georgien',
       visaName: '365 Tage visumfrei & 1% Kleinunternehmer-Steuer',
-      monthlyLivingCost: '700 - 1.250 $ / Monat (Günstige Mieten in Tiflis und Batumi)',
+      monthlyLivingCost: '800 - 1.380 $ / Monat (Günstige Mieten in Tiflis und Batumi)',
       incomeRequired: 'Keinerlei Einkommensnachweis für visumfreie Einreise!',
       duration: '365 Tage (1 ganzes Jahr ununterbrochener Aufenthalt ohne Visum)',
       taxRegime: 'Nur 1% Pauschalsteuer auf Umsätze bis zu ~180.000 $/Jahr mit Kleinunternehmer-Status!',
@@ -275,7 +317,7 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     region: 'Balkanlar & Kafkaslar',
     visaName: 'Dijital Göçebe İkamet İzni (Unique Permit)',
     budgetLevel: 'Ultra Ekonomik (600-1100$)',
-    monthlyLivingCost: '650 - 1.200 $ / ay (Avrupa\'nın en ucuz Akdeniz kıyısı)',
+    monthlyLivingCost: '750 - 1.300 $ / ay (2026 Enflasyon güncel: Avrupa\'nın en uygun Akdeniz kıyısı)',
     incomeRequired: 'Yıllık yaklaşık 9.800 $ (~aylık 800 $ gelir kanıtı)',
     duration: '1 Yıl Oturum İzni (Uzatılabilir); Türk vatandaşları 90 gün vizesiz girebilir.',
     taxRegime: 'İlk 12 ay boyunca yabancı kaynaklı gelirlerde gelir vergisi muafiyeti.',
@@ -284,6 +326,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Vodafone ve One Albania 4G/fiber 50-80 Mbps. Innospace Tirana, Coolab Coworking.',
     lifestyleVibe: 'İtalyan esintili Akdeniz mutfağı, turkuaz plajlar, son derece cana yakın halk ve çok ucuz yaşam.',
     processingTime: '3-4 hafta',
+    costBreakdown: {
+      rent1Bed: '350 - 600 $ (Tiran Blloku veya Saranda sahil dairesi)',
+      foodDining: '220 - 340 $ (İtalyan esintili taze Akdeniz mutfağı)',
+      coworking: '80 - 120 $ (Innospace Tirana / Coolab)',
+      mobileSim: '12 - 18 $ (Vodafone / One Albania 4G)',
+      localTransit: '30 - 55 $ (Şehir içi otobüs ve taksiler)',
+      coffeeOrBeer: '1.2 - 2.2 $ (Espresso veya yerel Korça bira)'
+    },
     keyRequirements: [
       'Yabancı şirket sözleşmesi veya uzaktan serbest çalışan sözleşmesi',
       'Arnavutluk\'ta geçerli kira sözleşmesi',
@@ -704,6 +754,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Movistar ve Orange fiber 300-600 Mbps. The House Gran Canaria, Wayco Valencia.',
     lifestyleVibe: 'Yıl boyu güneş, siesta kültürü, tapas barları, sörf ve binlerce Avrupalı göçebenin oluşturduğu dev komünite.',
     processingTime: '20 iş günü (İspanya içinden hızlı onay)',
+    costBreakdown: {
+      rent1Bed: '850 - 1.350 $ (Valensiya / Kanaryalar merkezi 1+1 daire)',
+      foodDining: '450 - 650 $ (Tapas, taze süpermarket ve kafeler)',
+      coworking: '140 - 220 $ (Wayco / The House Gran Canaria)',
+      mobileSim: '18 - 28 $ (Movistar / Orange 5G sınırsız)',
+      localTransit: '45 - 80 $ (Abono transporte metro/otobüs ve bisiklet)',
+      coffeeOrBeer: '1.8 - 3.2 $ (Café con leche veya yerel bira)'
+    },
     keyRequirements: [
       'En az 3 aydır uzaktan çalışılan sözleşme ve üniversite diploması veya 3 yıl iş tecrübesi',
       'İspanya\'da geçerli özel sağlık sigortası',
@@ -764,6 +822,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'MEO ve NOS 200-500 Mbps fiber. Digital Nomads Madeira Free Coworking, LACS Lisbon.',
     lifestyleVibe: 'Okyanus manzaralı uçurumlar, levada doğa yürüyüşleri, sörf ve dünyanın en organize göçebe ağı.',
     processingTime: '30-60 gün',
+    costBreakdown: {
+      rent1Bed: '800 - 1.300 $ (Madeira okyanus manzaralı daire)',
+      foodDining: '420 - 620 $ (Taze balık, pastel de nata ve market)',
+      coworking: '130 - 200 $ (Digital Nomads Madeira / Cowork Funchal)',
+      mobileSim: '18 - 26 $ (MEO / NOS 5G)',
+      localTransit: '40 - 75 $ (Ada içi araç kiralama veya otobüs)',
+      coffeeOrBeer: '1.5 - 2.8 $ (Bica espresso veya Super Bock)'
+    },
     keyRequirements: [
       'Son 3 aya ait aylık 3.280 € gelir bordrosu',
       'Portekiz NIF vergi numarası ve banka hesabı',
@@ -824,6 +890,14 @@ export const NOMAD_HUBS: DigitalNomadHub[] = [
     internetAndCoworking: 'Dünyanın en hızlı mobil ve sabit interneti (300+ Mbps). Astrolabs, Nasab, A4 Space.',
     lifestyleVibe: 'Sıfır suç, fütüristik gökdelenler, Michelin restoranları, lüks plaj kulüpleri ve küresel iş bağlantıları.',
     processingTime: '5-7 iş günü',
+    costBreakdown: {
+      rent1Bed: '1.400 - 2.400 $ (JLT / Business Bay modern stüdyo)',
+      foodDining: '600 - 950 $ (Restoranlar, Talabat ve gurme marketler)',
+      coworking: '220 - 380 $ (AstroLabs / Nasab / A4 Space)',
+      mobileSim: '35 - 55 $ (du / e& 5G yüksek hızlı paket)',
+      localTransit: '120 - 220 $ (Dubai Metro Nol Gold kart ve Careem)',
+      coffeeOrBeer: '5.0 - 9.0 $ (Specialty coffee)'
+    },
     keyRequirements: [
       'Son 1 yıllık uzaktan iş sözleşmesi ve son 3 aylık maaş bordrosu (3.500 $+)',
       'BAE\'de geçerli sağlık sigortası',
