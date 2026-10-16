@@ -443,13 +443,13 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between p-3 sm:p-4"
         >
           <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&fm=webp&q=70"
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=420&fm=webp&q=65"
             alt={l('Turkuaz Lagün & Dünya Radarı', 'Turquoise Lagoon & World Radar')}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width="500"
+            width="420"
             height="216"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/75 to-[#0D9488]/85" />
@@ -509,14 +509,14 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           <img
             src={
               researchCountry === 'TH'
-                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=500&fm=webp&q=70'
+                ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=360&fm=webp&q=60'
                 : researchVisual.image
             }
             alt={getCountryName(researchCountry, language)}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="eager"
             decoding="async"
-            width="500"
+            width="360"
             height="216"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0284C7]/90 via-[#0EA5E9]/70 to-[#0D9488]/85" />

@@ -25,7 +25,7 @@ export const AssistantLauncherButton: React.FC<AssistantLauncherButtonProps> = (
       >
         {/* Glowing Sparkle & Mic Badge */}
         <div className="relative flex items-center justify-center w-7 h-7 rounded-full bg-white/20 backdrop-blur-md">
-          <Sparkles className="w-4 h-4 text-[#5EEAD4] animate-spin [animation-duration:6s]" />
+          <Sparkles className="w-4 h-4 text-[#5EEAD4]" />
           <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-white" />
         </div>
 

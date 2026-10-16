@@ -462,7 +462,7 @@ html.dark {
   border-radius: 24px !important;
   border: 1px solid transparent !important; /* Zero layout shift while visually borderless in Light Mode */
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.02), 0 4px 16px rgba(0, 0, 0, 0.015);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-card:hover,
@@ -494,7 +494,7 @@ html.dark {
   border-radius: 24px !important;
   border: 1px solid transparent !important;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.02);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .dark .glass-panel {
@@ -622,7 +622,7 @@ html.dark {
 
 /* Uniform Micro-Animation Utilities */
 .transition-smooth {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button,
@@ -638,7 +638,7 @@ textarea,
 .btn-frosted-glass,
 .btn-glassmorphic,
 .btn-glass-subtle {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:active,

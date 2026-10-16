@@ -104,6 +104,20 @@ function AppContent() {
   const [showPromoBanner, setShowPromoBanner] = useState<boolean>(true);
   const [globalSearchQuery, setGlobalSearchQuery] = useState<string>('');
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
+  const [renderFooter, setRenderFooter] = useState<boolean>(false);
+
+  // Defer heavy footer suite to background idle time (avoids 1,200+ DOM nodes on critical paint)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if ('requestIdleCallback' in window) {
+        const handle = (window as any).requestIdleCallback(() => setRenderFooter(true), { timeout: 1500 });
+        return () => (window as any).cancelIdleCallback(handle);
+      } else {
+        const timer = setTimeout(() => setRenderFooter(true), 800);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, []);
 
   // Dynamic visa-free & ID count for the active passport
   const visaFreeCount = React.useMemo(() => {
@@ -521,24 +535,26 @@ function AppContent() {
           </div>
         )}
 
-        {/* Comprehensive Booking.com-Style Footer Suite */}
-        <Suspense fallback={null}>
-          <GlobalFooter
-            currentPassport={currentPassport}
-            onSelectCountry={(code) => {
-              if (activeTab !== 'explore') {
-                setActiveTab('explore');
-              }
-              handleCountrySelect(code);
-            }}
-            onOpenLegalModal={(tab) => openLegalModalWithTab(tab || 'terms')}
-            setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
-            onOpenPackingList={() => setIsPackingListOpen(true)}
-            onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
-            onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-            onOpenGlobalRadar={() => openRadar('all')}
-          />
-        </Suspense>
+        {/* Comprehensive Booking.com-Style Footer Suite (Deferred until idle to eliminate initial DOM bloat) */}
+        {renderFooter && (
+          <Suspense fallback={null}>
+            <GlobalFooter
+              currentPassport={currentPassport}
+              onSelectCountry={(code) => {
+                if (activeTab !== 'explore') {
+                  setActiveTab('explore');
+                }
+                handleCountrySelect(code);
+              }}
+              onOpenLegalModal={(tab) => openLegalModalWithTab(tab || 'terms')}
+              setActiveTab={(tab) => handleSelectTab(tab as TabKey)}
+              onOpenPackingList={() => setIsPackingListOpen(true)}
+              onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+              onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+              onOpenGlobalRadar={() => openRadar('all')}
+            />
+          </Suspense>
+        )}
       </main>
       </div>
 

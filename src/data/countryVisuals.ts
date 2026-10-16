@@ -18,9 +18,9 @@ export function getOptimizedImageUrl(
   options?: { width?: number; format?: 'webp' | 'avif'; quality?: number }
 ): string {
   if (!rawUrl) return DEFAULT_TRAVEL_FALLBACK;
-  const width = options?.width || 360;
+  const width = options?.width || 320;
   const format = options?.format || 'webp';
-  const quality = options?.quality || 65;
+  const quality = options?.quality || 58;
 
   if (rawUrl.includes('images.unsplash.com')) {
     try {
@@ -38,9 +38,9 @@ export function getOptimizedImageUrl(
   return rawUrl;
 }
 
-export function getOptimizedSrcSet(rawUrl: string, quality = 65): string {
+export function getOptimizedSrcSet(rawUrl: string, quality = 58): string {
   if (!rawUrl || !rawUrl.includes('images.unsplash.com')) return '';
-  return `${getOptimizedImageUrl(rawUrl, { width: 240, quality })} 240w, ${getOptimizedImageUrl(rawUrl, { width: 360, quality })} 360w, ${getOptimizedImageUrl(rawUrl, { width: 480, quality })} 480w`;
+  return `${getOptimizedImageUrl(rawUrl, { width: 200, quality })} 200w, ${getOptimizedImageUrl(rawUrl, { width: 320, quality })} 320w, ${getOptimizedImageUrl(rawUrl, { width: 440, quality })} 440w`;
 }
 
 export const COUNTRY_LANDSCAPES: Record<string, { image: string; landmark: string }> = {
@@ -250,20 +250,20 @@ export function getCountryVisual(countryCode: string): { image: string; landmark
   const verified = getVerifiedCountryVisual(code);
   if (verified) {
     return {
-      image: getOptimizedImageUrl(verified.image),
+      image: getOptimizedImageUrl(verified.image, { width: 320, quality: 58 }),
       landmark: verified.landmark
     };
   }
   const raw = COUNTRY_LANDSCAPES[code];
   if (raw) {
     return {
-      image: getOptimizedImageUrl(raw.image),
+      image: getOptimizedImageUrl(raw.image, { width: 320, quality: 58 }),
       landmark: raw.landmark
     };
   }
   const reg = countryToRegion[code] || 'Otantik Rota';
   return {
-    image: getOptimizedImageUrl(DEFAULT_TRAVEL_FALLBACK),
+    image: getOptimizedImageUrl(DEFAULT_TRAVEL_FALLBACK, { width: 320, quality: 58 }),
     landmark: `${code} ${reg} Manzaraları`
   };
 }

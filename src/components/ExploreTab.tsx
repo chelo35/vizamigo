@@ -185,12 +185,12 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
-  const [visibleCount, setVisibleCount] = useState<number>(12);
+  const [visibleCount, setVisibleCount] = useState<number>(10);
   const [showDirectory, setShowDirectory] = useState<boolean>(true);
 
   // Reset pagination when search, filter or passport changes
   useEffect(() => {
-    setVisibleCount(16);
+    setVisibleCount(10);
   }, [search, filter, currentPassport]);
 
   // Defer live clock, weather & currency widget hydration until after initial HTML/CSS paint (<0.5s FCP)
@@ -627,7 +627,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       <img
                         src={visual.image}
                         srcSet={getOptimizedSrcSet(visual.image)}
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 220px, 240px"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 200px, 220px"
                         alt={`${countryName} - ${visual.landmark}`}
                         className="country-thumbnail-image absolute inset-0 w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-500 rounded-2xl"
                         loading="lazy"
