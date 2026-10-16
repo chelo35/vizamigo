@@ -105,7 +105,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const [messages, setMessages] = useState<AssistantMessage[]>([getWelcomeMessage()]);
   const [inputValue, setInputValue] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(false);
-  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(true); // Voice enabled by default with natural neural stream
+  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false); // Muted by default: assistant presents info visually without talking out loud
   const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isTyping, setIsTyping] = useState<boolean>(false);
@@ -211,7 +211,8 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 
       const replyLang = response.detectedLang || language;
 
-      if (voiceEnabled && (isVoiceInput || voiceSettings.autoSpeak)) {
+      // Do not auto-speak: chatbot silently presents rich information on screen
+      if (voiceEnabled && voiceSettings.autoSpeak) {
         setSpeakingMsgId(response.id);
         speakResponse(response.spokenText || response.text, replyLang, () => {
           setSpeakingMsgId(null);

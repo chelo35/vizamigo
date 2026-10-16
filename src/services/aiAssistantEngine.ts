@@ -1,10 +1,22 @@
 /**
  * Vizamigo AI Copilot & Travel Concierge Intelligence Engine
  * Comprehensive multi-lingual natural language processor, destination mapper,
- * site action dispatcher, dynamic language auto-detector, and high-fidelity speech coordinator.
+ * site action dispatcher, dynamic language auto-detector, and speech recognition coordinator.
  *
- * Fully covers ALL 199 countries, all site tools, visa rules, itineraries,
- * power plugs, tipping, taxis, climate, safety, currencies, and consular crisis.
+ * 100% mapped to Vizamigo's real navigation tabs:
+ * - 'explore': Keşfet & Pano (Dashboard + Country Directory)
+ * - 'plan': Rota & Sinerji (Route Planner + Passport Comparator)
+ * - 'track': Cüzdan & Gün Sayacı (Wallet + 90/180 Day Counter)
+ * - 'nomad': Gezgin Araçları & Göçebe (Nomad Hubs & DNV Tools)
+ * - 'profile': Profil & SOS (Emergency Consular Support)
+ * - 'consular': Diplomatik Kriz Masası (Consular Emergency)
+ *
+ * 100% mapped to Vizamigo's real modals:
+ * - 'open_country': 360° Country Dossier Modal
+ * - 'packing': Packing List Modal
+ * - 'tipping': Tipping Calculator Modal
+ * - 'overlap': Timezone Overlap Modal
+ * - 'radar': Global Radar Modal ('all' | 'clock' | 'weather' | 'currency')
  */
 
 import {
@@ -13,7 +25,6 @@ import {
   getCategoryBadgeLabel,
   getPracticalInfo,
   REGIONS,
-  CountryItem,
   DIGITAL_NOMAD_VISAS
 } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
@@ -25,8 +36,7 @@ import { GEO_DATA } from '../data/geoData';
 import { TabKey } from '../components/Navigation';
 import {
   playNaturalSpeech,
-  stopAllPlayback,
-  getVoiceSettings
+  stopAllPlayback
 } from './aiVoiceService';
 
 export interface AssistantActionPill {
@@ -36,7 +46,7 @@ export interface AssistantActionPill {
   icon?: string;
   countryCode?: string;
   tabKey?: TabKey;
-  toolKey?: 'packing' | 'tipping' | 'overlap' | 'radar' | 'audit' | 'counter';
+  toolKey?: 'packing' | 'tipping' | 'overlap' | 'radar';
   radarMode?: 'all' | 'clock' | 'weather' | 'currency';
   url?: string;
   badge?: string;
@@ -48,7 +58,7 @@ export interface AssistantMessage {
   id: string;
   sender: 'user' | 'assistant';
   text: string;
-  spokenText?: string; // Short 1-sentence natural summary (never robotic wall of text)
+  spokenText?: string;
   timestamp: Date;
   actions?: AssistantActionPill[];
   detectedCountry?: {
@@ -61,7 +71,7 @@ export interface AssistantMessage {
 }
 
 // ============================================================================
-// DYNAMIC QUERY LANGUAGE DETECTOR (Auto-detects TR, EN, DE, ES, RU, etc.)
+// DYNAMIC QUERY LANGUAGE DETECTOR (Auto-detects TR, EN, DE, ES, RU)
 // ============================================================================
 export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr'): string {
   if (!rawQuery) return fallbackLang;
@@ -392,18 +402,21 @@ export async function processAssistantQuery(
     const idCount = passportItems.filter((it) => it.id).length;
     const totalEasy = freeCount + evisaCount;
 
+    // Correct valid site action: Opens Global Radar Modal
     const mapAction: AssistantActionPill = {
-      id: 'tab-where',
-      type: 'switch_tab',
-      tabKey: 'where_can_i_go',
-      label: isTr ? '🌍 Vizesiz Haritayı Aç' : isDe ? '🌍 Visafreie Karte' : isEs ? '🌍 Mapa sin visado' : isRu ? '🌍 Безвизовая карта' : '🌍 Open Visa-Free Map',
+      id: 'open-radar',
+      type: 'open_tool',
+      toolKey: 'radar',
+      radarMode: 'all',
+      label: isTr ? '🌍 Dünya Vize Radarı (Harita)' : '🌍 Open Visa-Free Map',
       accentTone: 'teal'
     };
+    // Correct valid site action: Switches to 'plan' tab (contains Passport Comparator)
     const compareAction: AssistantActionPill = {
-      id: 'tab-compare',
+      id: 'tab-plan-compare',
       type: 'switch_tab',
-      tabKey: 'compare',
-      label: isTr ? '⚖️ Pasaportları Karşılaştır' : isDe ? '⚖️ Pässe vergleichen' : isEs ? '⚖️ Comparar pasaportes' : isRu ? '⚖️ Сравнить паспорта' : '⚖️ Compare Passports',
+      tabKey: 'plan',
+      label: isTr ? '⚖️ Pasaportları Karşılaştır (Sinerji)' : '⚖️ Compare Passports',
       accentTone: 'sky'
     };
 
@@ -416,45 +429,16 @@ export async function processAssistantQuery(
         `• **Çipli Kimlikle (Pasaportsuz) Giriş:** **${idCount} Ülke**\n` +
         `• **Toplam Vizesiz & Kolay Seyahat:** **${totalEasy} Ülke**\n\n` +
         `Tüm ülkeleri harita üzerinde interaktif olarak filtrelemek için aşağıdaki butona dokunabilirsiniz.`
-      : isDe
-      ? `🛂 **${originName} Pass-Stärke & Reise-Kennzahlen:**\n\n` +
-        `• **Visafrei:** **${freeCount} Länder**\n` +
-        `• **Visum bei Ankunft / eVisa:** **${evisaCount} Länder**\n` +
-        `• **Mit Personalausweis:** **${idCount} Länder**\n` +
-        `• **Gesamter einfacher Zugang:** **${totalEasy} Länder**`
-      : isEs
-      ? `🛂 **Poder del Pasaporte & Métricas (${originName}):**\n\n` +
-        `• **Sin visado:** **${freeCount} países**\n` +
-        `• **Visado a la llegada / eVisa:** **${evisaCount} países**\n` +
-        `• **Entrada con DNI:** **${idCount} países**\n` +
-        `• **Acceso fácil total:** **${totalEasy} países**`
-      : isRu
-      ? `🛂 **Сила паспорта (${originName}) и статистика:**\n\n` +
-        `• **Без визы:** **${freeCount} стран**\n` +
-        `• **Виза по прибытии / eVisa:** **${evisaCount} стран**\n` +
-        `• **Въезд по ID-карте:** **${idCount} стран**\n` +
-        `• **Всего доступных стран:** **${totalEasy} стран**`
       : `🛂 **${originName} Passport Power & Travel Metrics:**\n\n` +
         `• **Visa-Free Destinations:** **${freeCount} countries**\n` +
         `• **Visa on Arrival / eVisa:** **${evisaCount} countries**\n` +
         `• **ID-Card Travel Eligible:** **${idCount} countries**\n` +
         `• **Total Easy Access:** **${totalEasy} destinations**`;
 
-    const spoken = isTr
-      ? `${originName} pasaportuyla ${freeCount} ülkeye vizesiz, toplam ${totalEasy} ülkeye kolayca gidebilirsiniz.`
-      : isDe
-      ? `Mit dem Pass von ${originName} können Sie in ${freeCount} Länder visafrei reisen.`
-      : isEs
-      ? `Con el pasaporte de ${originName} tienes acceso sin visado a ${freeCount} países.`
-      : isRu
-      ? `С паспортом ${originName} вам доступно без визы ${freeCount} стран.`
-      : `With a ${originName} passport, you have visa-free access to ${freeCount} countries worldwide.`;
-
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text: localizedText,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -504,15 +488,10 @@ export async function processAssistantQuery(
         `⚠️ **Önemli Not:** Seyahatte kimlik kartınızın yeni çipli ve fotoğraflı olması zorunludur. Eski nüfus cüzdanları geçerli değildir.`
       : `🆔 **Countries accessible with only your National ID Card:**\n\n${idCountries.join('\n')}`;
 
-    const spoken = isTr
-      ? 'Gürcistan, Sırbistan, Bosna Hersek, Azerbaycan ve Moldova dahil 6 ülkeye pasaportsuz çipli kimlikle gidebilirsiniz.'
-      : 'You can travel to several destinations using only your national ID card.';
-
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -543,7 +522,7 @@ export async function processAssistantQuery(
       id: 'tool-packing',
       type: 'open_tool',
       toolKey: 'packing',
-      label: isTr ? '🧳 Valizine Adaptör Ekle' : '🧳 Add Adapter to Packing List',
+      label: isTr ? '🧳 Akıllı Valiz Listesi (Adaptör Ekle)' : '🧳 Add Adapter to Packing List',
       accentTone: 'teal'
     };
     actions.push(packingAction);
@@ -551,21 +530,16 @@ export async function processAssistantQuery(
     const text = isTr
       ? `🔌 **Dünya Priz & Elektrik Standartları Rehberi:**\n\n` +
         `• **Avrupa & Türkiye:** Tip C ve F (230V, 50Hz)\n` +
-        `• **İngiltere & Körfez Ülkeleri:** Tip G (Üç köşeli kalın pimler)\n` +
-        `• **ABD, Kanada & Japonya:** Tip A ve B (İki düz yassı pim, 100-120V)\n` +
-        `• **Avustralya & Yeni Zelanda:** Tip I (Açılı iki yassı pim)\n\n` +
+        `• **İngiltere & Körfez Ülkeleri:** Tip G (Üç köşeli pimler)\n` +
+        `• **ABD, Kanada & Japonya:** Tip A ve B (İki düz pim, 100-120V)\n` +
+        `• **Avustralya & Yeni Zelanda:** Tip I (Açılı iki pim)\n\n` +
         `Gideceğiniz ülkenin priz tipini öğrenmek için doğrudan ülke adını (örneğin *"Japonya priz"*) yazabilirsiniz.`
       : `🔌 **Global Electrical & Plug Standards:**\n\n• **Europe:** Type C / F (230V)\n• **UK & Gulf:** Type G\n• **USA & Japan:** Type A / B (110-120V)\n• **Australia:** Type I`;
-
-    const spoken = isTr
-      ? 'Gideceğiniz ülkenin prizini öğrenmek için doğrudan ülke adını söyleyebilirsiniz.'
-      : 'You can ask about plug standards for any specific destination.';
 
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -600,15 +574,10 @@ export async function processAssistantQuery(
       ? '💸 **Dünya Bahşiş Kültürü & Oranları:**\n\n• **ABD & Kanada:** %18 - %22 (Neredeyse zorunludur).\n• **Avrupa:** %5 - %10 veya hesabı yuvarlama.\n• **Japonya & G. Kore:** Bahşiş kaba ve hakaret kabul edilir (0%).\n• **Güneydoğu Asya:** Küçük bozuklukları bırakmak yeterlidir.'
       : '💸 **Global Tipping Standards:**\n\n• **USA & Canada:** 18% - 22% expected.\n• **Europe:** 5% - 10% or round up.\n• **Japan & Korea:** Tipping is considered rude.\n• **Southeast Asia:** Modest change is appreciated.';
 
-    const spoken = isTr
-      ? 'Japonya ve Kore haricinde çoğu ülkede yüzde 10 civarı bahşiş yaygındır.'
-      : 'Tipping standards vary from 20% in the US to zero in Japan.';
-
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -647,15 +616,10 @@ export async function processAssistantQuery(
         `• **Japonya:** **GO** ve **JapanTaxi**`
       : `🚖 **Top Global Ride-Hailing Apps:**\n\n• **Southeast Asia:** Grab, Bolt\n• **Europe:** Bolt, FreeNow, Uber\n• **Middle East:** Careem\n• **Central Asia:** Yandex Go\n• **Japan:** GO`;
 
-    const spoken = isTr
-      ? 'Asya için Grab, Avrupa için Bolt ve Orta Doğu için Careem uygulamalarını öneriyoruz.'
-      : 'We recommend Grab in Asia, Bolt in Europe, and Careem in the Middle East.';
-
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang
@@ -698,18 +662,13 @@ export async function processAssistantQuery(
     actions.push(fxAction, wiseAction);
 
     const text = isTr
-      ? `💱 **Canlı Seyahat Döviz Kurları:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**\n\nYurt dışı harcamalarınızda fahiş banka döviz komisyonlarından kaçınmak için Wise çok para birimli dijital kartını kullanabilirsiniz.`
+      ? `💱 **Canlı Seyahat Döviz Kurları:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**\n\nYurt dışı harcamalarınızda yüksek banka döviz komisyonlarından kaçınmak için Wise çok para birimli dijital kartını kullanabilirsiniz.`
       : `💱 **Live Baseline Travel Rates:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**`;
-
-    const spoken = isTr
-      ? `Canlı kurlar: 1 Dolar ${usdRate} lira, 1 Euro ${eurRate} liradır.`
-      : `Current travel rates are 1 US Dollar at ${usdRate} Lira, and 1 Euro at ${eurRate} Lira.`;
 
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -721,10 +680,11 @@ export async function processAssistantQuery(
   // BROAD INTENT 7: SCHENGEN 90/180 DAY COUNTER ("Schengen", "90 gün")
   // --------------------------------------------------------------------------
   if (norm.includes('schengen') || norm.includes('90 180') || norm.includes('gun sayac') || norm.includes('90 gun') || norm.includes('kac gunum')) {
+    // Correct valid site action: switches to 'track' tab (contains DayCounterTab)
     const counterAction: AssistantActionPill = {
-      id: 'tab-counter',
+      id: 'tab-track',
       type: 'switch_tab',
-      tabKey: 'day_counter',
+      tabKey: 'track',
       label: isTr ? '📅 90/180 Gün Sayacını Aç' : '📅 Open 90/180 Day Counter',
       accentTone: 'teal'
     };
@@ -735,18 +695,13 @@ export async function processAssistantQuery(
         `Schengen bölgesinde herhangi bir **180 günlük geriye dönük zaman diliminde en fazla 90 gün** kalabilirsiniz.\n\n` +
         `• Giriş ve çıkış yaptığınız günler tam gün sayılır.\n` +
         `• Kural takvim yılına göre değil, her seyahat gününden geriye doğru son 180 gün taranarak hesaplanır.\n\n` +
-        `İhlal riskine girmemek ve kalan gününüzü kesin hesaplamak için **90/180 Gün Sayacı** sekmemizi kullanabilirsiniz.`
+        `İhlal riskine girmemek ve kalan gününüzü kesin hesaplamak için **Cüzdan & 90/180 Gün Sayacı** sekmemizi kullanabilirsiniz.`
       : `🇪🇺 **Schengen 90/180-Day Rule:**\n\nYou may stay a maximum of 90 days within any rolling 180-day window. Use our Day Counter to compute your remaining days accurately.`;
-
-    const spoken = isTr
-      ? 'Schengen bölgesinde son 180 gün içinde en fazla 90 gün kalabilirsiniz. Gün sayacını ekrana getirdim.'
-      : 'The Schengen rule allows up to 90 days in any rolling 180-day period.';
 
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -759,10 +714,11 @@ export async function processAssistantQuery(
   // --------------------------------------------------------------------------
   if (norm.includes('transit') || norm.includes('aktarma') || norm.includes('aktarmali') || norm.includes('layover')) {
     const radarAction: AssistantActionPill = {
-      id: 'tab-where',
-      type: 'switch_tab',
-      tabKey: 'where_can_i_go',
-      label: isTr ? '🌍 Vize Radarında Araştır' : '🌍 Check Visa Radar',
+      id: 'open-radar',
+      type: 'open_tool',
+      toolKey: 'radar',
+      radarMode: 'all',
+      label: isTr ? '🌍 Dünya Vize Radarı' : '🌍 Check Visa Radar',
       accentTone: 'teal'
     };
     actions.push(radarAction);
@@ -774,15 +730,10 @@ export async function processAssistantQuery(
         `3. **Özel İstisna:** ABD ve Kanada'da hava tarafı transit yoktur; sadece aktarma yapacak olsanız dahi C-1 Transit Vizesi veya eTA zorunludur.`
       : `✈️ **Transit Visa & Airport Layover Rules:**\n\nAirside transit usually requires no visa if on a single ticket without claiming baggage. Note that the US and Canada require transit visas even for brief airport layovers.`;
 
-    const spoken = isTr
-      ? 'Tek biletle uçup bagaj almadığınız sürece çoğu ülkede transit vize gerekmez; ancak ABD ve Kanada transit vize ister.'
-      : 'Airside transit generally does not require a visa unless transiting via the United States or Canada.';
-
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -809,9 +760,6 @@ export async function processAssistantQuery(
       text: isTr
         ? '🧳 **Akıllı Valiz Hazırlama Kontrol Listesi:**\n\nGideceğiniz ülkenin iklimine, priz tipine ve seyahat türünüze (sırt çantalı, iş, tatil) göre özelleştirilmiş valiz listenizi sitemizin araçlar panelinden yönetebilirsiniz.'
         : '🧳 **Smart Packing Checklist:**\n\nManage your personalized travel packing list tailored to destination climate, plug adapters, and luggage allowances.',
-      spokenText: isTr
-        ? 'Valiz kontrol listenizi ekrana getirdim.'
-        : 'I have opened your smart packing checklist.',
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -833,10 +781,11 @@ export async function processAssistantQuery(
       norm.includes('where can i go'))
   ) {
     const radarAction: AssistantActionPill = {
-      id: 'tab-where',
-      type: 'switch_tab',
-      tabKey: 'where_can_i_go',
-      label: isTr ? '🌍 Dünya Radarında Vizesiz Yerleri Gör' : '🌍 Visa-Free World Radar',
+      id: 'open-radar',
+      type: 'open_tool',
+      toolKey: 'radar',
+      radarMode: 'all',
+      label: isTr ? '🌍 Dünya Vize Radarı (Harita)' : '🌍 Visa-Free World Radar',
       accentTone: 'teal'
     };
     const thAction: AssistantActionPill = {
@@ -858,15 +807,10 @@ export async function processAssistantQuery(
         `🏰 **Balkans & Europe:** Montenegro, Serbia, Albania, Bosnia\n` +
         `🏔️ **Neighboring:** Georgia, Azerbaijan`;
 
-    const spoken = isTr
-      ? 'Balkanlar, Tayland, Gürcistan ve Karadağ dahil popüler vizesiz rotaları ekranda listeledim.'
-      : 'I have displayed popular visa-free destination options on your screen.';
-
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
       text,
-      spokenText: spoken,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -874,10 +818,89 @@ export async function processAssistantQuery(
     };
   }
 
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 11: TIMEZONE OVERLAP & WORLD CLOCK
+  // --------------------------------------------------------------------------
+  if (norm.includes('saat') || norm.includes('saat farki') || norm.includes('zaman') || norm.includes('timezone')) {
+    const overlapAction: AssistantActionPill = {
+      id: 'tool-overlap',
+      type: 'open_tool',
+      toolKey: 'overlap',
+      label: isTr ? '⏰ Saat Dilimi Çakışma Aracı' : '⏰ Timezone Overlap Tool',
+      accentTone: 'sky'
+    };
+    actions.push(overlapAction);
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text: isTr
+        ? '⏰ **Küresel Saat Farkı & İletişim Planlayıcı:**\n\nFarklı zaman dilimlerindeki seyahat duraklarınız ve uzaktaki sevdiklerinizle en uygun görüşme saatlerini bulmak için Saat Dilimi Çakışma aracımızı kullanabilirsiniz.'
+        : '⏰ **Timezone Overlap & World Clock:**\n\nFind mutually convenient hours across different world timezones for smooth calls and flight planning.',
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? overlapAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 12: CONSULAR EMERGENCY & LOST PASSPORT (General)
+  // --------------------------------------------------------------------------
+  if (norm.includes('kayip') || norm.includes('kayıp') || norm.includes('calinti') || norm.includes('çalıntı') || norm.includes('konsolosluk') || norm.includes('buyukelcilik') || norm.includes('kriz')) {
+    const consularAction: AssistantActionPill = {
+      id: 'tab-consular',
+      type: 'switch_tab',
+      tabKey: 'consular',
+      label: isTr ? '🚨 Diplomatik Kriz Masası & SOS' : '🚨 Consular Crisis Desk',
+      accentTone: 'coral'
+    };
+    actions.push(consularAction);
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text: isTr
+        ? `🚨 **Yurt Dışında Pasaport Kaybı & Acil Durum Adımları:**\n\n` +
+          `1. **Yerel Polis Tutanağı:** En yakın yerel polis karakoluna giderek derhal kayıp/çalıntı tutanağı (Police Report) tutturun.\n` +
+          `2. **24/7 Nöbetçi Konsolosluk Hattı:** T.C. Dışişleri Bakanlığı Konsolosluk Çağrı Merkezi'ni arayın: **+90 312 292 29 29**\n` +
+          `3. **Geçici Pasaport (Laissez-Passer):** 2 adet biyometrik fotoğraf ve kimlik kartınızla en yakın başkonsolosluğumuza başvurup Türkiye'ye dönüş belgenizi temin edin.`
+        : `🚨 **Lost Passport & Consular Emergency:**\n\n1. Obtain an official police report immediately.\n2. Call your country's emergency consular hotline.\n3. Apply for an emergency travel document (Laissez-Passer) at the nearest embassy.`,
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? consularAction : undefined
+    };
+  }
+
+  // --------------------------------------------------------------------------
+  // BROAD INTENT 13: DIGITAL NOMAD VISAS (General)
+  // --------------------------------------------------------------------------
+  if (norm.includes('nomad') || norm.includes('gocebe') || norm.includes('göçebe') || norm.includes('uzaktan calisma')) {
+    const nomadAction: AssistantActionPill = {
+      id: 'tab-nomad',
+      type: 'switch_tab',
+      tabKey: 'nomad',
+      label: isTr ? '💻 Gezgin & Nomad Araçları' : '💻 Nomad Tools Hub',
+      accentTone: 'teal'
+    };
+    actions.push(nomadAction);
+
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      text: isTr
+        ? '💻 **Dünya Dijital Göçebe Vizeleri (DNV) Rehberi:**\n\nAvrupa (İspanya, Portekiz, Yunanistan, Malta), Latin Amerika (Kosta Rika, Kolombiya) ve Asya\'da uzaktan çalışanlar için gelir şartları, vergi avantajları ve başvuru adımları sitemizin Göçebe Araçları sekmesinde listelenmiştir.'
+        : '💻 **Global Digital Nomad Visas Guide:**\n\nExplore income thresholds, tax perks, and official application portals for verified digital nomad visa destinations.',
+      timestamp: new Date(),
+      actions: actions.slice(0, 2),
+      detectedLang: activeLang,
+      autoTriggerAction: isOpenIntent ? nomadAction : undefined
+    };
+  }
+
   // ==========================================================================
   // TARGET COUNTRY FOUND (ANY OF 199 COUNTRIES)
-  // Handles all granular sub-intents: Plugs, Tipping, Taxis, Climate, Food, Itinerary,
-  // Safety, Currencies, SIM/eSIM, Nomad Visas, Consular Lost Passport, and General Dossier.
   // ==========================================================================
   if (targetCountry) {
     const cName = getCountryName(targetCountry, activeLang);
@@ -890,7 +913,7 @@ export async function processAssistantQuery(
     const badgeLabel = getCategoryBadgeLabel(item, activeLang);
     const stayLimitText = item?.v === 'vf' ? (isTr ? 'Süresiz' : 'Indefinite') : /^\d+$/.test(item?.v || '') ? `${item?.v} ${isTr ? 'Gün' : 'Days'}` : '';
 
-    // Primary action: Always open full 360 Country Dossier
+    // Primary action: Always opens full 360 Country Dossier Modal
     const primaryDossierAction: AssistantActionPill = {
       id: `open-${targetCountry}`,
       type: 'open_country',
@@ -937,9 +960,6 @@ export async function processAssistantQuery(
           : `🔌 **${flag} ${cName} Electrical & Plug Standards:**\n\n` +
             `• **Plug Types:** **${plugText}**\n` +
             `• **Practical Guide:** ${practical.plugType}`,
-        spokenText: isTr
-          ? `${cName} priz standartları ${plugText}. Detaylar ekrandadır.`
-          : `${cName} uses power plug standard ${plugText}.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -972,9 +992,6 @@ export async function processAssistantQuery(
             `• **Yerel Görgü Kuralı:** ${practical.localEtiquette}\n` +
             `• **Taksi & Ulaşım:** ${tipAdvice}`
           : `💸 **${flag} ${cName} Tipping Culture:**\n\n${practical.localEtiquette}`,
-        spokenText: isTr
-          ? `${cName} için bahşiş kuralları ve görgü adabını ekrana getirdim.`
-          : `Tipping etiquette for ${cName} has been displayed on screen.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1022,9 +1039,6 @@ export async function processAssistantQuery(
           : `🚖 **${flag} ${cName} Taxi & Transit Guide:**\n\n` +
             `• **Recommended Ride Apps:** **${rideApps}**\n` +
             `• **Local Taxi Advice:** ${taxiAdvice}`,
-        spokenText: isTr
-          ? `${cName} için en popüler taksi uygulamaları: ${rideApps}.`
-          : `The most reliable ride-hailing apps in ${cName} are ${rideApps}.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1067,9 +1081,6 @@ export async function processAssistantQuery(
           : `☀️ **${flag} Best Time to Visit ${cName}:**\n\n` +
             `• **Optimal Months:** **${practical.bestMonths}**\n` +
             `• **Season Advice:** ${itinerary?.bestSeason || 'Spring and Autumn offer the most pleasant weather.'}`,
-        spokenText: isTr
-          ? `${cName} seyahati için en ideal aylar: ${practical.bestMonths}.`
-          : `The best time to visit ${cName} is during ${practical.bestMonths}.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1090,10 +1101,10 @@ export async function processAssistantQuery(
       norm.includes('lezzet')
     ) {
       const routeAction: AssistantActionPill = {
-        id: 'tab-route',
+        id: 'tab-plan',
         type: 'switch_tab',
-        tabKey: 'route_planner',
-        label: isTr ? '🗺️ Lezzet Duraklı Rota Çiz' : '🗺️ Route Planner',
+        tabKey: 'plan',
+        label: isTr ? '🗺️ Rota & Sinerji Planlayıcı' : '🗺️ Route Planner',
         accentTone: 'coral'
       };
       actions.push(primaryDossierAction, routeAction);
@@ -1111,9 +1122,6 @@ export async function processAssistantQuery(
             `${drinks ? `**Geleneksel İçecekler:**\n${drinks}\n\n` : ''}` +
             `• *Gastronomi İpucu:* ${itinerary?.signatureGastronomy?.foodieTip || 'Yerel sokak pazarlarında taze lezzetleri deneyebilirsiniz.'}`
           : `🍜 **${flag} ${cName} Signature Gastronomy:**\n\n${dishes || 'Local specialties abound throughout the country.'}`,
-        spokenText: isTr
-          ? `${cName} için en meşhur lezzetleri ve geleneksel yemekleri ekrana getirdim.`
-          : `I have displayed top gastronomic highlights for ${cName}.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1134,9 +1142,9 @@ export async function processAssistantQuery(
       norm.includes('kac gun')
     ) {
       const routeAction: AssistantActionPill = {
-        id: 'tab-route',
+        id: 'tab-plan',
         type: 'switch_tab',
-        tabKey: 'route_planner',
+        tabKey: 'plan',
         label: isTr ? '🗺️ Rota Planlayıcıda Aç' : '🗺️ Open in Route Planner',
         accentTone: 'sky'
       };
@@ -1159,9 +1167,6 @@ export async function processAssistantQuery(
           : `🗺️ **${flag} ${cName} Itinerary Highlights (${itinerary.idealDurationText}):**\n\n` +
             `${itinerary.routeSummary}\n\n` +
             `**Key Stops:**\n${stopsSummary}`,
-        spokenText: isTr
-          ? `${cName} için ${itinerary.idealDurationText} rota planınız ekrana getirildi.`
-          : `Your ${itinerary.idealDurationText} itinerary for ${cName} is ready on screen.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1185,9 +1190,9 @@ export async function processAssistantQuery(
       norm.includes('emergency')
     ) {
       const consularAction: AssistantActionPill = {
-        id: 'open-consular',
+        id: 'tab-consular',
         type: 'switch_tab',
-        tabKey: 'nomad_tools',
+        tabKey: 'consular',
         label: isTr ? '🚨 24/7 Acil Konsolosluk & Güvenlik' : '🚨 Emergency Services',
         accentTone: 'coral'
       };
@@ -1209,9 +1214,6 @@ export async function processAssistantQuery(
           : `🛡️ **${flag} ${cName} Safety & Emergency Numbers:**\n\n` +
             `• **Safety Score:** ${safetyScore}/100 (${insights?.safety?.safetyLevel || 'Safe'})\n` +
             `• **Police:** ${em.police} | **Ambulance:** ${em.ambulance} | **Emergency:** ${em.general}`,
-        spokenText: isTr
-          ? `${cName} güvenlik skoru 100 üzerinden ${safetyScore}. Acil durum numaraları ekrandadır.`
-          : `${cName} has a safety score of ${safetyScore} out of 100.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1257,9 +1259,6 @@ export async function processAssistantQuery(
             `• **Currency:** **${geo.currencyName}** (${geo.currencyCode})\n` +
             `• **Daily Mid-range Budget:** ${costs?.dailyBudgetMidrangeUsd || '60 - 90 $'}\n` +
             `• **Meal Cost:** ${costs?.budgetMealUsd || '5 - 12 $'}`,
-        spokenText: isTr
-          ? `${cName} resmi para birimi ${geo.currencyName}. Günlük bütçe ortalama ${costs?.dailyBudgetMidrangeUsd || '70 dolar'} civarındadır.`
-          : `${cName} uses the ${geo.currencyName}. Average daily budget is ${costs?.dailyBudgetMidrangeUsd || '70 dollars'}.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1288,9 +1287,6 @@ export async function processAssistantQuery(
         text: isTr
           ? `📱 **${flag} ${cName} İnternet & eSIM Önerisi:**\n\n${practical.esimTip}\n\nYurt dışı operatör roaming faturalarından kaçınmak için Airalo eSIM paketini uçağa binmeden kurmanızı tavsiye ederiz.`
           : `📱 **${flag} ${cName} Mobile Internet & eSIM:**\n\n${practical.esimTip}`,
-        spokenText: isTr
-          ? `${cName} için Airalo dijital e sim paketini öneriyoruz.`
-          : `We recommend using an Airalo digital eSIM for your visit to ${cName}.`,
         timestamp: new Date(),
         actions: actions.slice(0, 2),
         detectedLang: activeLang,
@@ -1327,7 +1323,7 @@ export async function processAssistantQuery(
           `• **Priz & Voltaj:** ${plugText}\n` +
           `• **Güvenlik:** ${safetyLevel} (${safetyScore}/100)\n` +
           `• **İdeal Ziyaret Dönemi:** ${practical.bestMonths}\n\n` +
-          `Detaylı rehber ve harita için aşağıdaki butonları kullanabilirsiniz.`
+          `Aşağıdaki butonları kullanarak ülkenin 360° detaylı dosyasını açabilir veya eSIM temin edebilirsiniz:`
         : `🌍 **${flag} ${cName} Visa & Travel Brief (for ${originName} Passport):**\n\n` +
           `• **Visa Status:** **${badgeLabel}** ${stayLimitText ? `(${stayLimitText})` : ''}\n` +
           `• **Capital:** ${geo.capital}\n` +
@@ -1335,9 +1331,6 @@ export async function processAssistantQuery(
           `• **Power Plugs:** ${plugText}\n` +
           `• **Safety Score:** ${safetyScore}/100 (${safetyLevel})\n` +
           `• **Best Season:** ${practical.bestMonths}`,
-      spokenText: isTr
-        ? `${originName} pasaportu için ${cName} vize durumu: ${badgeLabel} ${stayLimitText ? `, ${stayLimitText} kalış süresi` : ''}. Seyahat dosyasını hazırladım.`
-        : `For ${originName} passport holders, ${cName} visa status is ${badgeLabel} ${stayLimitText ? `with up to ${stayLimitText}` : ''}.`,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -1349,17 +1342,18 @@ export async function processAssistantQuery(
   // GENERAL FALLBACK: HIGH-PRECISION GUIDED SUGGESTIONS
   // --------------------------------------------------------------------------
   const radarFallback: AssistantActionPill = {
-    id: 'tab-where',
-    type: 'switch_tab',
-    tabKey: 'where_can_i_go',
-    label: isTr ? '🌍 Nereye Gidebilirim? (Dünya Radarı)' : '🌍 Where Can I Go? (Radar)',
+    id: 'open-radar',
+    type: 'open_tool',
+    toolKey: 'radar',
+    radarMode: 'all',
+    label: isTr ? '🌍 Dünya Vize Radarı (Harita)' : '🌍 Where Can I Go? (Radar)',
     accentTone: 'teal'
   };
   const routeFallback: AssistantActionPill = {
-    id: 'tab-route',
+    id: 'tab-plan',
     type: 'switch_tab',
-    tabKey: 'route_planner',
-    label: isTr ? '🗺️ Çoklu Ülke Rota Planlayıcı' : '🗺️ Route Planner',
+    tabKey: 'plan',
+    label: isTr ? '🗺️ Rota & Sinerji Planlayıcı' : '🗺️ Route Planner',
     accentTone: 'sky'
   };
   actions.push(radarFallback, routeFallback);
@@ -1369,12 +1363,9 @@ export async function processAssistantQuery(
     sender: 'assistant',
     text: isTr
       ? `Sormak istediğiniz ülke adını veya seyahat konusunu belirtebilirsiniz:\n\n` +
-        `• Tek kelime ülke adı: *"Norveç"*, *"Tayland"*, *"İtalya"*, *"Japonya"*\n` +
-        `• Özel konular: *"Prizler"*, *"Bahşiş"*, *"Taksiler"*, *"Döviz Kurları"*, *"90 Gün Schengen"*`
+        `• **Tek Kelime Ülkeler:** *"Norveç"*, *"Tayland"*, *"İtalya"*, *"Japonya"*, *"Brezilya"*\n` +
+        `• **Site Konuları:** *"Prizler"*, *"Bahşiş"*, *"Taksiler"*, *"Döviz Kurları"*, *"90 Gün Schengen"*, *"Valiz"*`
       : `Please mention a country or travel topic:\n\n• Countries: *"Norway"*, *"Thailand"*, *"Japan"*\n• Topics: *"Plugs"*, *"Tipping"*, *"Taxis"*, *"Currencies"*, *"90-Day Schengen"*`,
-    spokenText: isTr
-      ? 'Araştırmak istediğiniz ülke adını veya seyahat sorusunu sorabilirsiniz.'
-      : 'You can ask about any country or travel destination.',
     timestamp: new Date(),
     actions: actions.slice(0, 2),
     detectedLang: activeLang
