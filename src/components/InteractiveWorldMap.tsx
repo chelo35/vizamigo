@@ -295,6 +295,14 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
   // Initialize Google Maps JavaScript API
   useEffect(() => {
     let isMounted = true;
+    const onAuthFailure = () => {
+      if (isMounted) {
+        console.warn('Google Maps auth failure caught in InteractiveWorldMap.');
+        setMapsError(true);
+      }
+    };
+    window.addEventListener('vizamigo:gmaps-auth-failure', onAuthFailure);
+
     loadGoogleMaps()
       .then(() => {
         if (!isMounted) return;
@@ -307,6 +315,7 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
       });
     return () => {
       isMounted = false;
+      window.removeEventListener('vizamigo:gmaps-auth-failure', onAuthFailure);
     };
   }, []);
 

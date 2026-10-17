@@ -6,6 +6,11 @@ export const GOOGLE_MAPS_API_KEY =
 
 let loadPromise: Promise<void> | null = null;
 let optionsSet = false;
+let authFailed = false;
+
+export function isGoogleMapsAuthFailed(): boolean {
+  return authFailed;
+}
 
 /**
  * Loads the Google Maps JS API exactly once and shares it across all map surfaces
@@ -13,6 +18,9 @@ let optionsSet = false;
  * Rejects if the key is invalid / referrer-restricted so callers can show a clear message.
  */
 export function loadGoogleMaps(): Promise<void> {
+  if (authFailed) {
+    return Promise.reject(new Error('Google Maps authentication failed (RefererNotAllowedMapError).'));
+  }
   if (typeof window !== 'undefined' && window.google?.maps?.Map) return Promise.resolve();
   if (loadPromise) return loadPromise;
 
@@ -24,10 +32,17 @@ export function loadGoogleMaps(): Promise<void> {
       }
       // Google calls this global when the key is rejected (e.g. RefererNotAllowedMapError)
       (window as unknown as { gm_authFailure?: () => void }).gm_authFailure = () => {
+        authFailed = true;
         window.dispatchEvent(new CustomEvent('vizamigo:gmaps-auth-failure'));
       };
       Promise.all([importLibrary('maps'), importLibrary('geometry')])
-        .then(() => resolve())
+        .then(() => {
+          if (authFailed) {
+            reject(new Error('Google Maps authentication failed (RefererNotAllowedMapError).'));
+          } else {
+            resolve();
+          }
+        })
         .catch((err: unknown) => {
           loadPromise = null;
           reject(err);

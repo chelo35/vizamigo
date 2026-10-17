@@ -144,6 +144,15 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
   useEffect(() => {
     let isMounted = true;
 
+    const onAuthFailure = () => {
+      if (isMounted) {
+        console.warn('Google Maps API auth failure (RefererNotAllowedMapError) caught in RouteMapVisualizer.');
+        setMapsError('Google Maps API anahtar yetkilendirme hatası. Şematik radar harita devrede.');
+        setViewMode('schematic');
+      }
+    };
+    window.addEventListener('vizamigo:gmaps-auth-failure', onAuthFailure);
+
     loadGoogleMaps()
       .then(() => {
         if (!isMounted) return;
@@ -154,10 +163,12 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
         if (!isMounted) return;
         console.warn('Google Maps JS API yüklenemedi:', err);
         setMapsError('Google Maps yüklenemedi. Şematik radar harita aktif.');
+        setViewMode('schematic');
       });
 
     return () => {
       isMounted = false;
+      window.removeEventListener('vizamigo:gmaps-auth-failure', onAuthFailure);
     };
   }, []);
 
@@ -175,8 +186,7 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
 
     // Instantiate Google Map if not created yet
     if (!mapInstanceRef.current) {
-      // Mandatory attribution tracking ID
-      const mapOptions: google.maps.MapOptions & { internalUsageAttributionIds?: string[] } = {
+      const mapOptions: google.maps.MapOptions = {
         center,
         zoom: 4,
         mapTypeId:
@@ -188,12 +198,16 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
         fullscreenControl: true,
         mapTypeControl: false,
         zoomControl: true,
-        gestureHandling: 'cooperative',
-        internalUsageAttributionIds: ['gmp_git_agentskills_v1']
+        gestureHandling: 'cooperative'
       };
 
       mapInstanceRef.current = new google.maps.Map(mapContainerRef.current, mapOptions);
       infoWindowRef.current = new google.maps.InfoWindow();
+      setTimeout(() => {
+        if (mapInstanceRef.current && window.google?.maps) {
+          google.maps.event.trigger(mapInstanceRef.current, 'resize');
+        }
+      }, 150);
     } else {
       // Update theme
       mapInstanceRef.current.setMapTypeId(

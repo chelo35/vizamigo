@@ -432,6 +432,18 @@ export const GlobalRadarModal: React.FC<Props> = ({
 
       mapInstanceRef.current = map;
       infoWindowRef.current = new google.maps.InfoWindow();
+
+      // Trigger resize after layout transitions so mobile displays full map immediately
+      setTimeout(() => {
+        if (mapInstanceRef.current && window.google?.maps) {
+          google.maps.event.trigger(mapInstanceRef.current, 'resize');
+        }
+      }, 150);
+      setTimeout(() => {
+        if (mapInstanceRef.current && window.google?.maps) {
+          google.maps.event.trigger(mapInstanceRef.current, 'resize');
+        }
+      }, 400);
     }
   }, [isOpen, mapsLoaded, mapsError]);
 
@@ -988,38 +1000,48 @@ export const GlobalRadarModal: React.FC<Props> = ({
                       <line x1="0" y1="260" x2="1000" y2="260" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
                       <line x1="500" y1="0" x2="500" y2="520" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
                     </g>
-                    {projectedMarkers.map(({ hub, x, y, isSelected, weather, hubTimeShort }) => (
-                      <g
-                        key={`${hub.city}_${hub.iso || ''}`}
-                        transform={`translate(${x}, ${y})`}
-                        className="cursor-pointer"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleSelectHub(hub);
-                        }}
-                      >
-                        <circle
-                          r={isSelected ? 6 / Math.sqrt(scale) : 3.5 / Math.sqrt(scale)}
-                          fill={isSelected ? '#00ffff' : '#06b6d4'}
-                          stroke="#0f172a"
-                          strokeWidth={1.2 / Math.sqrt(scale)}
-                        />
-                        {(scale >= 1.8 || isSelected) && (
-                          <text
-                            x="0"
-                            y={-8 / Math.sqrt(scale)}
-                            textAnchor="middle"
-                            fill={isSelected ? '#00ffff' : '#e2e8f0'}
-                            fontSize={9 / Math.sqrt(scale)}
-                            fontFamily="monospace"
-                            fontWeight="bold"
+                    {projectedMarkers
+                      .filter(({ hub }) => activePreset.id === 'all' || activePreset.filterFn(hub))
+                      .map(({ hub, x, y, isSelected, weather, hubTimeShort }) => {
+                        // Level-of-detail: only render labels for selected hub, or when filtered by regional preset, or top tier hubs at higher zoom
+                        const showLabel =
+                          isSelected ||
+                          (activePreset.id !== 'all' && scale >= 2.0) ||
+                          (scale >= 3.2 && (hub.tier === 1 || hub.city === 'Istanbul' || hub.city === 'Ankara' || hub.city === 'London' || hub.city === 'Tokyo' || hub.city === 'New York'));
+
+                        return (
+                          <g
+                            key={`${hub.city}_${hub.iso || ''}`}
+                            transform={`translate(${x}, ${y})`}
+                            className="cursor-pointer"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleSelectHub(hub);
+                            }}
                           >
-                            {hub.flag} {language === 'tr' && hub.cityTr ? hub.cityTr : hub.city}{' '}
-                            {telemetryMode === 'weather' ? `${weather.tempC}°` : hubTimeShort}
-                          </text>
-                        )}
-                      </g>
-                    ))}
+                            <circle
+                              r={isSelected ? 6 / Math.sqrt(scale) : 3.5 / Math.sqrt(scale)}
+                              fill={isSelected ? '#00ffff' : '#06b6d4'}
+                              stroke="#0f172a"
+                              strokeWidth={1.2 / Math.sqrt(scale)}
+                            />
+                            {showLabel && (
+                              <text
+                                x="0"
+                                y={-8 / Math.sqrt(scale)}
+                                textAnchor="middle"
+                                fill={isSelected ? '#00ffff' : '#e2e8f0'}
+                                fontSize={9 / Math.sqrt(scale)}
+                                fontFamily="monospace"
+                                fontWeight="bold"
+                              >
+                                {hub.flag} {language === 'tr' && hub.cityTr ? hub.cityTr : hub.city}{' '}
+                                {telemetryMode === 'weather' ? `${weather.tempC}°` : hubTimeShort}
+                              </text>
+                            )}
+                          </g>
+                        );
+                      })}
                   </svg>
                 </div>
               </div>
