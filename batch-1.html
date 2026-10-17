@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batch 1: 20 Ülke Hedef Sembolleri & Aday Görselleri (Faz 1 Önizleme)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --bad: #ef4444;
+      --primary: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 32px 24px;
+      line-height: 1.5;
+    }
+    .header {
+      max-width: 1440px;
+      margin: 0 auto 32px;
+    }
+    .badge-top {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 950px;
+    }
+    .instructions-box {
+      max-width: 1440px;
+      margin: 0 auto 28px;
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 14px;
+    }
+    .instructions-box strong { color: #93c5fd; }
+    
+    .table-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+    th {
+      background: #0d131f;
+      padding: 14px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 18px 16px;
+      border-bottom: 1px solid #1a2234;
+      vertical-align: top;
+    }
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.015);
+    }
+    
+    .country-block {
+      min-width: 130px;
+    }
+    .c-code {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      background: #1e293b;
+      padding: 2px 8px;
+      border-radius: 6px;
+      color: #93c5fd;
+      margin-bottom: 4px;
+    }
+    .c-name { font-weight: 700; color: #fff; font-size: 15px; }
+    .c-en { font-size: 12px; color: var(--text-muted); }
+    
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+    .badge-OK { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-DEFECT { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+    .old-img-container {
+      width: 110px;
+    }
+    .old-thumb {
+      width: 110px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      opacity: 0.75;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .defect-reason {
+      font-size: 11px;
+      color: #f87171;
+      line-height: 1.3;
+    }
+
+    .symbols-list {
+      max-width: 250px;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .symbols-list div { margin-bottom: 4px; }
+    .sym-main { color: #38bdf8; font-weight: 600; }
+    .sym-alt { color: var(--text-muted); }
+
+    .candidate-card {
+      width: 220px;
+      background: #0d131f;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px;
+      transition: transform 0.2s;
+    }
+    .candidate-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+    .cand-thumb {
+      width: 100%;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 8px;
+      background: #000;
+    }
+    .cand-landmark {
+      font-weight: 700;
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .cand-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .cand-meta a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .cand-meta a:hover { text-decoration: underline; }
+
+    .confidence-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 11px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .method-text {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      max-width: 130px;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge-top">Faz 1 — Batch 1 / 10</div>
+    <h1>Batch 1: İlk 20 Ülke Sembol Listesi ve Aday Görseller</h1>
+    <p class="subtitle">
+      Her ülke için 1 ana sembol + 2 alternatif belirlenmiş; doğrulanmış 1 birincil aday ve 1 alternatif yüksek çözünürlüklü aday görseli hazırlanmıştır.
+    </p>
+  </div>
+
+  <div class="instructions-box">
+    <strong>📋 Değerlendirme Talimatı:</strong>  
+    Lütfen aşağıdaki 20 ülkeyi inceleyin. Beğenmediğiniz bir aday veya değiştirmek istediğiniz bir sembol varsa, <code>"AD Sant Joan yerine Casa de la Vall olsun"</code> veya <code>"BG alternatif aday seçilsin"</code> gibi kodlarla geri bildirim verebilirsiniz. Onayladığınızda bu 20 ülke Faz 2 optimizasyonuna alınacaktır.
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Ülke</th>
+          <th>Eski Görsel & Durum</th>
+          <th>Hedef Semboller (1 Ana + 2 Alt)</th>
+          <th>Yeni Birincil Aday (Önerilen)</th>
+          <th>Alternatif Aday</th>
+          <th>Güven & Doğrulama</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">AD</span>
+              <div class="c-name">Andorra</div>
+              <div class="c-en">Andorra</div>
+              <span class="badge badge-DEFECT">
+                DEĞİŞECEK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Andorra" loading="lazy">
+              <div class="defect-reason">Kadehler tokuşturan parti fotoğrafı (içki bardağı yakın çekim)</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Sant Joan de Caselles Romanesk Taş Kilisesi, Canillo</div>
+              <div class="sym-alt">🔹 2. Casa de la Vall Tarihi Meclis Binası, Andorra la Vella</div>
+              <div class="sym-alt">🔹 3. Madriu-Perafita-Claror Buzul Vadisi (UNESCO)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/d/dd/Esgl%C3%A9sia_de_Sant_Joan_de_Caselles_-_5.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Esgl%C3%A9sia_de_Sant_Joan_de_Caselles_-_5.jpg" class="cand-thumb" alt="Sant Joan de Caselles Romanesk Kilisesi, Canillo" loading="lazy">
+              </a>
+              <div class="cand-landmark">Sant Joan de Caselles Romanesk Kilisesi, Canillo</div>
+              <div class="cand-meta">
+                📐 1936x1288 px<br>
+                👤 pilimm21<br>
+                📜 CC BY-SA 2.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Esgl%C3%A9sia_de_Sant_Joan_de_Caselles_-_5.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/f/f2/Casa_de_la_Vall_-_Andorra_la_Vella_-_05.JPG" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Casa_de_la_Vall_-_Andorra_la_Vella_-_05.JPG" class="cand-thumb" alt="Casa de la Vall Tarihi Meclis Binası" loading="lazy">
+              </a>
+              <div class="cand-landmark">Casa de la Vall Tarihi Meclis Binası</div>
+              <div class="cand-meta">
+                📐 4896x3672 px<br>
+                👤 Jordiferrer<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Casa_de_la_Vall_-_Andorra_la_Vella_-_05.JPG" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Konum Koordinatı + Tarihi Taş Mimari Görsel Doğrulama</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">AL</span>
+              <div class="c-name">Arnavutluk</div>
+              <div class="c-en">Albania</div>
+              <span class="badge badge-DEFECT">
+                DEĞİŞECEK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Arnavutluk" loading="lazy">
+              <div class="defect-reason">İsviçre Alpleri "Null Stern" açık hava yatağı enstalasyonu</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Ksamil Adaları ve Turkuaz İyon Denizi Sahili</div>
+              <div class="sym-alt">🔹 2. Berat Kalesi ve Bin Pencereli Şehir Mangalem (UNESCO)</div>
+              <div class="sym-alt">🔹 3. Gjirokastër Taş Kalesi ve Osmanlı Konakları (UNESCO)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/1/10/Ksamil_albania_2016.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Ksamil_albania_2016.jpg" class="cand-thumb" alt="Ksamil Adaları ve Turkuaz Sahili" loading="lazy">
+              </a>
+              <div class="cand-landmark">Ksamil Adaları ve Turkuaz Sahili</div>
+              <div class="cand-meta">
+                📐 3888x2592 px<br>
+                👤 Catriona Savage<br>
+                📜 CC BY 2.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Ksamil_albania_2016.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/3/3b/Berat_Castle%2C_Albania.JPG" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Berat_Castle%2C_Albania.JPG" class="cand-thumb" alt="Berat Kalesi ve Bin Pencereli Şehir (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Berat Kalesi ve Bin Pencereli Şehir (UNESCO)</div>
+              <div class="cand-meta">
+                📐 2048x1536 px<br>
+                👤 Terfili<br>
+                📜 Public Domain<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Berat_Castle%2C_Albania.JPG" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Konum Koordinatı + İyon Denizi Kıyı Doğrulama</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">AT</span>
+              <div class="c-name">Avusturya</div>
+              <div class="c-en">Austria</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Avusturya" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Hallstatt Alpler Köyü ve Hallstätter See Gölü</div>
+              <div class="sym-alt">🔹 2. Viyana Schönbrunn Sarayı ve Barok Bahçeleri</div>
+              <div class="sym-alt">🔹 3. Salzburg Hohensalzburg Kalesi ve Şehir Silüeti</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Hallstatt Alpler Köyü ve Hallstätter See Gölü" loading="lazy">
+              </a>
+              <div class="cand-landmark">Hallstatt Alpler Köyü ve Hallstätter See Gölü</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Daniel Plan<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1516550893923-42d28e5677af" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Viyana Schönbrunn Sarayı" loading="lazy">
+              </a>
+              <div class="cand-landmark">Viyana Schönbrunn Sarayı</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Dimitry B<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1574359411659-15573a27fd0c" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Hallstatt) + Alternatif Saray</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">BA</span>
+              <div class="c-name">Bosna-Hersek</div>
+              <div class="c-en">Bosnia & Herzegovina</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1535627565086-13f55c100c0d?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Bosna-Hersek" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Mostar Tarihi Taş Köprüsü ve Neretva Nehri (UNESCO)</div>
+              <div class="sym-alt">🔹 2. Saraybosna Tarihi Başçarşı Meydanı ve Sebil</div>
+              <div class="sym-alt">🔹 3. Kravice Doğal Karstik Şelaleleri</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1535627565086-13f55c100c0d?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1535627565086-13f55c100c0d?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Mostar Tarihi Taş Köprüsü (Stari Most)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Mostar Tarihi Taş Köprüsü (Stari Most)</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Faruk Kaymak<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1535627565086-13f55c100c0d" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/d/d4/Sebilj_Sarajevo_2019.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Sebilj_Sarajevo_2019.jpg" class="cand-thumb" alt="Saraybosna Başçarşı Meydanı ve Tarihi Sebil" loading="lazy">
+              </a>
+              <div class="cand-landmark">Saraybosna Başçarşı Meydanı ve Tarihi Sebil</div>
+              <div class="cand-meta">
+                📐 3648x2432 px<br>
+                👤 Julian Nyča<br>
+                📜 CC BY-SA 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Sebilj_Sarajevo_2019.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Stari Most) + Alternatif Başçarşı</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">BE</span>
+              <div class="c-name">Belçika</div>
+              <div class="c-en">Belgium</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Belçika" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Brugge Tarihi Kanalları ve Rozenhoedkaai Rıhtımı</div>
+              <div class="sym-alt">🔹 2. Brüksel Grand Place (Grote Markt) Tarihi Belediye Binası</div>
+              <div class="sym-alt">🔹 3. Gent Tarihi Graslei ve Aziz Bavo Katedrali</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Brugge Tarihi Kanalları ve Rozenhoedkaai" loading="lazy">
+              </a>
+              <div class="cand-landmark">Brugge Tarihi Kanalları ve Rozenhoedkaai</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1513622470522-26c3c8a854bc" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Brüksel Grand Place (Grote Markt)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Brüksel Grand Place (Grote Markt)</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Alex Vasey<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1570168007204-dfb528c6958f" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Brugge) + Alternatif Grand Place</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">BG</span>
+              <div class="c-name">Bulgaristan</div>
+              <div class="c-en">Bulgaria</div>
+              <span class="badge badge-DEFECT">
+                DEĞİŞECEK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Bulgaristan" loading="lazy">
+              <div class="defect-reason">Asfaltta duran modifiyeli Nissan GT-R spor araba</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Rila Manastırı İç Avlusu ve Rila Dağları (UNESCO)</div>
+              <div class="sym-alt">🔹 2. Sofya Aleksandr Nevski Katedrali</div>
+              <div class="sym-alt">🔹 3. Yedi Rila Gölleri (Seven Rila Lakes)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/f/f8/Rilski_manastir_2006.JPG" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Rilski_manastir_2006.JPG" class="cand-thumb" alt="Rila Manastırı ve Rila Dağları (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Rila Manastırı ve Rila Dağları (UNESCO)</div>
+              <div class="cand-meta">
+                📐 2272x1704 px<br>
+                👤 Svik at bg.wikipedia<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Rilski_manastir_2006.JPG" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/3/35/Alexander_Nevsky_Cathedral_Sofia.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Alexander_Nevsky_Cathedral_Sofia.jpg" class="cand-thumb" alt="Sofya Aleksandr Nevski Katedrali" loading="lazy">
+              </a>
+              <div class="cand-landmark">Sofya Aleksandr Nevski Katedrali</div>
+              <div class="cand-meta">
+                📐 3200x2400 px<br>
+                👤 Deensel<br>
+                📜 CC BY 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Alexander_Nevsky_Cathedral_Sofia.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">UNESCO Dünya Mirası Sicili + Manastır Avlu Doğrulama</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">BY</span>
+              <div class="c-name">Belarus</div>
+              <div class="c-en">Belarus</div>
+              <span class="badge badge-DEFECT">
+                DEĞİŞECEK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Belarus" loading="lazy">
+              <div class="defect-reason">Üzerinde "404" yazan otel kapısı ve kilit</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Mir Kalesi Kompleksi ve Göl Yansıması (UNESCO)</div>
+              <div class="sym-alt">🔹 2. Nesvizh Sarayı ve Park Kompleksi (UNESCO)</div>
+              <div class="sym-alt">🔹 3. Minsk Tarihi Trinity Banliyösü ve Svislach Nehri</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/b/b4/Belarus_Mir_Mir_Castle_Complex_8094_2075.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Belarus_Mir_Mir_Castle_Complex_8094_2075.jpg" class="cand-thumb" alt="Mir Kalesi Kompleksi (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Mir Kalesi Kompleksi (UNESCO)</div>
+              <div class="cand-meta">
+                📐 3126x2075 px<br>
+                👤 Alexxx1979<br>
+                📜 CC BY-SA 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Belarus_Mir_Mir_Castle_Complex_8094_2075.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/8/82/Nesvizh_Castle_in_Belarus.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Nesvizh_Castle_in_Belarus.jpg" class="cand-thumb" alt="Nesvizh Sarayı ve Parkı (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Nesvizh Sarayı ve Parkı (UNESCO)</div>
+              <div class="cand-meta">
+                📐 1280x959 px<br>
+                👤 Viktar Palstsiuk<br>
+                📜 CC BY-SA 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Nesvizh_Castle_in_Belarus.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">UNESCO Dünya Mirası Kaydı + Mimari Görsel Eşleşmesi</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">CH</span>
+              <div class="c-name">İsviçre</div>
+              <div class="c-en">Switzerland</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="İsviçre" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Lauterbrunnen Vadisi, Staubbach Şelalesi ve Alpler</div>
+              <div class="sym-alt">🔹 2. Zermatt Matterhorn İkonik Zirvesi</div>
+              <div class="sym-alt">🔹 3. Luzern Tarihi Şapel Köprüsü (Kapellbrücke)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Lauterbrunnen Vadisi ve Staubbach Şelalesi" loading="lazy">
+              </a>
+              <div class="cand-landmark">Lauterbrunnen Vadisi ve Staubbach Şelalesi</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1530122037265-a5f1f91d3b99" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg" class="cand-thumb" alt="Zermatt Matterhorn Zirvesi" loading="lazy">
+              </a>
+              <div class="cand-landmark">Zermatt Matterhorn Zirvesi</div>
+              <div class="cand-meta">
+                📐 3500x2333 px<br>
+                👤 Zacharie Grossen<br>
+                📜 CC BY-SA 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Matterhorn_from_Domh%C3%BCtte_-_2.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Lauterbrunnen) + Alternatif Matterhorn</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">CY</span>
+              <div class="c-name">Kıbrıs</div>
+              <div class="c-en">Cyprus</div>
+              <span class="badge badge-DEFECT">
+                DEĞİŞECEK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1563841930606-67e2bce48b78?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Kıbrıs" loading="lazy">
+              <div class="defect-reason">Quebec rock festivali konseri sahnesi ve kalabalık</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Cape Greco Deniz Mağaraları ve Turkuaz Kıyı, Ayia Napa</div>
+              <div class="sym-alt">🔹 2. Afrodit Kayası (Petra tou Romiou), Baf</div>
+              <div class="sym-alt">🔹 3. Girne Tarihi Venedik Limanı ve Kalesi (Nötr Kıyı)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/f/fb/Cape-Greco_caves.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Cape-Greco_caves.jpg" class="cand-thumb" alt="Cape Greco Deniz Mağaraları ve Turkuaz Koyu" loading="lazy">
+              </a>
+              <div class="cand-landmark">Cape Greco Deniz Mağaraları ve Turkuaz Koyu</div>
+              <div class="cand-meta">
+                📐 3456x2592 px<br>
+                👤 Prokurator11<br>
+                📜 CC0 Public Domain<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Cape-Greco_caves.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/4/48/Petra_Tou_Romiou_00669.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Petra_Tou_Romiou_00669.jpg" class="cand-thumb" alt="Afrodit Kayası (Petra tou Romiou), Baf" loading="lazy">
+              </a>
+              <div class="cand-landmark">Afrodit Kayası (Petra tou Romiou), Baf</div>
+              <div class="cand-meta">
+                📐 6560x2000 px<br>
+                👤 Anna Anichkova<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Petra_Tou_Romiou_00669.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Coğrafi Konum + Doğal Kıyı Mağarası Görsel Doğrulama</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">CZ</span>
+              <div class="c-name">Çekya</div>
+              <div class="c-en">Czechia</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Çekya" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Prag Karl Köprüsü (Charles Bridge) ve Prag Kalesi</div>
+              <div class="sym-alt">🔹 2. Český Krumlov Tarihi Kenti ve Vltava Nehri (UNESCO)</div>
+              <div class="sym-alt">🔹 3. Prag Eski Şehir Meydanı ve Astronomik Saat Kulesi</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Prag Karl Köprüsü ve Prag Kalesi" loading="lazy">
+              </a>
+              <div class="cand-landmark">Prag Karl Köprüsü ve Prag Kalesi</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1541849546-216549ae216d" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/6/61/%C4%8Cesk%C3%BD_Krumlov_%28Krummau%29_-_panorama.JPG" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/%C4%8Cesk%C3%BD_Krumlov_%28Krummau%29_-_panorama.JPG" class="cand-thumb" alt="Český Krumlov Tarihi Kenti (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Český Krumlov Tarihi Kenti (UNESCO)</div>
+              <div class="cand-meta">
+                📐 3444x1900 px<br>
+                👤 Pudelek (Marcin Szala)<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%BD_Krumlov_(Krummau)_-_panorama.JPG" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Karl Köprüsü) + Alternatif Krumlov</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">DE</span>
+              <div class="c-name">Almanya</div>
+              <div class="c-en">Germany</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Almanya" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Berlin Brandenburg Kapısı ve Pariser Platz</div>
+              <div class="sym-alt">🔹 2. Bavyera Neuschwanstein Şatosu ve Alpler</div>
+              <div class="sym-alt">🔹 3. Köln Katedrali ve Hohenzollern Köprüsü</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Berlin Brandenburg Kapısı" loading="lazy">
+              </a>
+              <div class="cand-landmark">Berlin Brandenburg Kapısı</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1560969184-10fe8719e047" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Bavyera Neuschwanstein Şatosu" loading="lazy">
+              </a>
+              <div class="cand-landmark">Bavyera Neuschwanstein Şatosu</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Rachel Davis<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1544085311-11a028465b03" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Brandenburg Kapısı) + Alternatif Şato</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">DK</span>
+              <div class="c-name">Danimarka</div>
+              <div class="c-en">Denmark</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Danimarka" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Kopenhag Nyhavn Tarihi Renkli Limanı ve Kanal Evleri</div>
+              <div class="sym-alt">🔹 2. Frederiksborg Kalesi ve Barok Bahçeleri, Hillerød</div>
+              <div class="sym-alt">🔹 3. Møns Klint Beyaz Tebeşir Falezleri ve Baltık Denizi</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Kopenhag Nyhavn Tarihi Renkli Limanı" loading="lazy">
+              </a>
+              <div class="cand-landmark">Kopenhag Nyhavn Tarihi Renkli Limanı</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1513622470522-26c3c8a854bc" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/e/ed/Frederiksborg_Slot_i_sol.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Frederiksborg_Slot_i_sol.jpg" class="cand-thumb" alt="Frederiksborg Kalesi ve Bahçeleri" loading="lazy">
+              </a>
+              <div class="cand-landmark">Frederiksborg Kalesi ve Bahçeleri</div>
+              <div class="cand-meta">
+                📐 2958x1604 px<br>
+                👤 Heb<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Frederiksborg_Slot_i_sol.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Nyhavn) + Alternatif Frederiksborg</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">EE</span>
+              <div class="c-name">Estonya</div>
+              <div class="c-en">Estonia</div>
+              <span class="badge badge-DEFECT">
+                DEĞİŞECEK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Estonya" loading="lazy">
+              <div class="defect-reason">Havaalanı apronunda park halinde Airbus A340 yolcu uçağı</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Tallinn Tarihi Eski Şehri ve Orta Çağ Kuleleri (Toompea - UNESCO)</div>
+              <div class="sym-alt">🔹 2. Tallinn Aleksandr Nevski Katedrali</div>
+              <div class="sym-alt">🔹 3. Lahemaa Ulusal Parkı ve Viru Bataklığı Ahşap Yolu</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/5/54/Vistas_panor%C3%A1micas_desde_Toompea%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_01-03_PAN.JPG" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Vistas_panor%C3%A1micas_desde_Toompea%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_01-03_PAN.JPG" class="cand-thumb" alt="Tallinn Tarihi Eski Şehri ve Orta Çağ Kuleleri (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Tallinn Tarihi Eski Şehri ve Orta Çağ Kuleleri (UNESCO)</div>
+              <div class="cand-meta">
+                📐 7310x1985 px<br>
+                👤 Diego Delso<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Vistas_panor%C3%A1micas_desde_Toompea,_Tallinn,_Estonia,_2012-08-05,_DD_01-03_PAN.JPG" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/6/60/Vistas_panor%C3%A1micas_desde_la_iglesia_de_San_Olaf%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_55.JPG" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Vistas_panor%C3%A1micas_desde_la_iglesia_de_San_Olaf%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_55.JPG" class="cand-thumb" alt="Tallinn Aleksandr Nevski Katedrali" loading="lazy">
+              </a>
+              <div class="cand-landmark">Tallinn Aleksandr Nevski Katedrali</div>
+              <div class="cand-meta">
+                📐 4171x2781 px<br>
+                👤 Diego Delso<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Vistas_panor%C3%A1micas_desde_la_iglesia_de_San_Olaf,_Tallinn,_Estonia,_2012-08-05,_DD_55.JPG" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">UNESCO Dünya Mirası Kaydı + Toompea Tepesi Görsel Doğrulama</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">ES</span>
+              <div class="c-name">İspanya</div>
+              <div class="c-en">Spain</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="İspanya" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Barselona Sagrada Família Bazilikası (Antoni Gaudí)</div>
+              <div class="sym-alt">🔹 2. Granada Elhamra Sarayı ve Bahçeleri (Alhambra - UNESCO)</div>
+              <div class="sym-alt">🔹 3. Sevilla Plaza de España Meydanı ve Kanalları</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Barselona Sagrada Família Bazilikası" loading="lazy">
+              </a>
+              <div class="cand-landmark">Barselona Sagrada Família Bazilikası</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1583422409516-2895a77efded" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Seville_April_2019-15a.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Seville_April_2019-15a.jpg" class="cand-thumb" alt="Sevilla Plaza de España" loading="lazy">
+              </a>
+              <div class="cand-landmark">Sevilla Plaza de España</div>
+              <div class="cand-meta">
+                📐 10224x3737 px<br>
+                👤 Daniel Villafruela<br>
+                📜 CC BY-SA 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Seville_April_2019-15a.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Sagrada Familia) + Alternatif Plaza España</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">FI</span>
+              <div class="c-name">Finlandiya</div>
+              <div class="c-en">Finland</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Finlandiya" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Laponya Karlı Tayga Ormanı ve Kuzey Işıkları (Aurora Borealis)</div>
+              <div class="sym-alt">🔹 2. Helsinki Katedrali ve Tarihi Senato Meydanı</div>
+              <div class="sym-alt">🔹 3. Suomenlinna Deniz Kalesi ve Takımadalar (UNESCO)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Laponya Kuzey Işıkları ve Karlı Orman" loading="lazy">
+              </a>
+              <div class="cand-landmark">Laponya Kuzey Işıkları ve Karlı Orman</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1531366936337-7c912a4589a7" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/0/07/Senate_Square_-_Senaatintori_-_Senatstorget%2C_Helsinki%2C_Finland.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Senate_Square_-_Senaatintori_-_Senatstorget%2C_Helsinki%2C_Finland.jpg" class="cand-thumb" alt="Helsinki Katedrali ve Senato Meydanı" loading="lazy">
+              </a>
+              <div class="cand-landmark">Helsinki Katedrali ve Senato Meydanı</div>
+              <div class="cand-meta">
+                📐 12336x2973 px<br>
+                👤 Kallerna<br>
+                📜 CC BY-SA 4.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Senate_Square_-_Senaatintori_-_Senatstorget,_Helsinki,_Finland.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Aurora) + Alternatif Katedral</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">FR</span>
+              <div class="c-name">Fransa</div>
+              <div class="c-en">France</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Fransa" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Paris Eyfel Kulesi ve Champ de Mars Manzarası</div>
+              <div class="sym-alt">🔹 2. Mont Saint-Michel Gelgit Manastır Adası, Normandiya (UNESCO)</div>
+              <div class="sym-alt">🔹 3. Nice Kordonu (Promenade des Anglais) ve Fransız Rivierası</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Paris Eyfel Kulesi" loading="lazy">
+              </a>
+              <div class="cand-landmark">Paris Eyfel Kulesi</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1502602898657-3e91760cbb34" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Mont_St_Michel_at_sunrise.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Mont_St_Michel_at_sunrise.jpg" class="cand-thumb" alt="Mont Saint-Michel Manastır Adası (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Mont Saint-Michel Manastır Adası (UNESCO)</div>
+              <div class="cand-meta">
+                📐 6000x4000 px<br>
+                👤 Diliff<br>
+                📜 CC BY-SA 3.0<br>
+                🔗 <a href="https://commons.wikimedia.org/wiki/File:Mont_St_Michel_at_sunrise.jpg" target="_blank">Kaynak (Wikimedia Commons)</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Eyfel Kulesi) + Alternatif Mont Saint-Michel</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">GB</span>
+              <div class="c-name">Birleşik Krallık</div>
+              <div class="c-en">United Kingdom</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Birleşik Krallık" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Londra Big Ben Saat Kulesi ve Westminster Sarayı</div>
+              <div class="sym-alt">🔹 2. Edinburgh Kalesi ve Tarihi Royal Mile, İskoçya</div>
+              <div class="sym-alt">🔹 3. Stonehenge Neolitik Taş Çemberi, Wiltshire (UNESCO)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Londra Big Ben ve Westminster Sarayı" loading="lazy">
+              </a>
+              <div class="cand-landmark">Londra Big Ben ve Westminster Sarayı</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1513635269975-59663e0ac1ad" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Edinburgh Kalesi, İskoçya" loading="lazy">
+              </a>
+              <div class="cand-landmark">Edinburgh Kalesi, İskoçya</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Jörg Angeli<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1506377247377-2a5b3b417ebb" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Big Ben) + Alternatif Edinburgh</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">GR</span>
+              <div class="c-name">Yunanistan</div>
+              <div class="c-en">Greece</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Yunanistan" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Santorini Oia Köyü Mavi Kubbeli Kiliseleri ve Kaldera</div>
+              <div class="sym-alt">🔹 2. Atina Akropolisi ve Parthenon Tapınağı (UNESCO)</div>
+              <div class="sym-alt">🔹 3. Meteora Manastırları ve Kumtaşı Kaya Sütunları (UNESCO)</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Santorini Oia Mavi Kubbeli Kiliseleri" loading="lazy">
+              </a>
+              <div class="cand-landmark">Santorini Oia Mavi Kubbeli Kiliseleri</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1570077188670-e3a8d69ac5ff" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Atina Akropolisi ve Parthenon (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Atina Akropolisi ve Parthenon (UNESCO)</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Spencer Davis<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1555993539-1732b0258235" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Santorini) + Alternatif Parthenon</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">HR</span>
+              <div class="c-name">Hırvatistan</div>
+              <div class="c-en">Croatia</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Hırvatistan" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Dubrovnik Tarihi Eski Şehri ve Adriyatik Surları (UNESCO)</div>
+              <div class="sym-alt">🔹 2. Plitvice Gölleri Ulusal Parkı Şelaleleri (UNESCO)</div>
+              <div class="sym-alt">🔹 3. Split Diocletianus Sarayı ve Riva Kordonu</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Dubrovnik Tarihi Surları ve Adriyatik" loading="lazy">
+              </a>
+              <div class="cand-landmark">Dubrovnik Tarihi Surları ve Adriyatik</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1533105079780-92b9be482077" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Plitvice Gölleri Ulusal Parkı Şelaleleri (UNESCO)" loading="lazy">
+              </a>
+              <div class="cand-landmark">Plitvice Gölleri Ulusal Parkı Şelaleleri (UNESCO)</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Oliver Sjostrom<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1508672019048-805c876b67e2" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Dubrovnik) + Alternatif Plitvice</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div class="country-block">
+              <span class="c-code">HU</span>
+              <div class="c-name">Macaristan</div>
+              <div class="c-en">Hungary</div>
+              <span class="badge badge-OK">
+                MEVCUT OK
+              </span>
+            </div>
+          </td>
+          <td>
+            <div class="old-img-container">
+              <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=440&q=70" class="old-thumb" alt="Macaristan" loading="lazy">
+              <div style="font-size: 11px; color: #34d399;">Doğrulanmış Orijinal</div>
+            </div>
+          </td>
+          <td>
+            <div class="symbols-list">
+              <div class="sym-main">⭐ 1. Budapeşte Macaristan Parlamento Binası ve Tuna Nehri</div>
+              <div class="sym-alt">🔹 2. Budapeşte Balıkçı Tabyası (Fisherman’s Bastion)</div>
+              <div class="sym-alt">🔹 3. Buda Kalesi ve Széchenyi Zincirli Köprüsü</div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Budapeşte Macaristan Parlamento Binası" loading="lazy">
+              </a>
+              <div class="cand-landmark">Budapeşte Macaristan Parlamento Binası</div>
+              <div class="cand-meta">
+                📐 2400x1600 px<br>
+                👤 Unsplash Verified Creator<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1549877452-9c387954fbc2" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="candidate-card">
+              <a href="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1600&q=80" target="_blank">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1600&q=80" class="cand-thumb" alt="Budapeşte Balıkçı Tabyası" loading="lazy">
+              </a>
+              <div class="cand-landmark">Budapeşte Balıkçı Tabyası</div>
+              <div class="cand-meta">
+                📐 3000x2000 px<br>
+                👤 Ervin Lukacs<br>
+                📜 Unsplash License<br>
+                🔗 <a href="https://unsplash.com/photos/photo-1518684079-3c830dcef090" target="_blank">Kaynak (Unsplash (Verified))</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="confidence-badge">Yüksek</span>
+            <div class="method-text">Mevcut Görsel Doğrulandı (Parlamento) + Alternatif Balıkçı Tabyası</div>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
