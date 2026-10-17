@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
+  ArrowLeft,
   Coins,
   Users,
   Percent,
@@ -167,59 +168,64 @@ export const TippingCalculatorModal: React.FC<Props> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
+      ref={modalRef}
+      role="region"
+      aria-labelledby="tipping-page-title"
+      tabIndex={-1}
+      className="fixed inset-0 z-50 bg-[#F8FAFC] dark:bg-[#0B0F17] flex flex-col overflow-hidden text-slate-900 dark:text-slate-100 animate-in fade-in duration-150"
     >
-      <div
-        ref={modalRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="tipping-modal-title"
-        tabIndex={-1}
-        className="relative w-full max-w-xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden outline-none"
-      >
-        {/* Header */}
-        <div className="p-5 sm:p-6 border-b border-slate-100 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02]">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center" aria-hidden="true">
+      {/* 1. Header with back button */}
+      <header className="sticky top-0 z-30 shrink-0 px-4 sm:px-8 py-3 bg-white/95 dark:bg-[#0B0F17]/95 border-b border-slate-200/80 dark:border-white/10 backdrop-blur-md">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+            <button
+              type="button"
+              onClick={onClose}
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
+              title={l("Geri", 'Back', 'Zurück')}
+            >
+              <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+              <span>{l("Geri", 'Back', 'Zurück')}</span>
+            </button>
+            <div className="flex items-center gap-2.5 min-w-0">
+              <div className="w-9 h-9 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
                 <Coins className="w-5 h-5" />
               </div>
-              <div>
-                <h3 id="tipping-modal-title" className="text-lg font-black text-slate-900 dark:text-white leading-tight">
+              <div className="min-w-0">
+                <h1 id="tipping-page-title" className="text-base sm:text-lg font-black text-slate-900 dark:text-white leading-tight truncate">
                   {l('Akıllı Bahşiş & Masraf Bölüşücü', 'Smart Tipping & Bill Splitter', 'Trinkgeld- & Rechnungsrechner', 'Calculadora de Propinas', 'Калькулятор чаевых')}
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  {l('Ülke kurallarına duyarlı bahşiş ve kişi başı hesap', 'Country-aware tipping etiquette & bill splitting', 'Landestypische Trinkgeldregeln & Aufteilung', 'Reglas locales y división por persona', 'С учетом местных традиций')}
+                </h1>
+                <p className="text-xs text-slate-500 dark:text-slate-400 truncate hidden sm:block">
+                  {l('Ülke kurallarına duyarlı bahşiş ve kişi başı hesap', 'Country-aware tipping etiquette & bill splitting')}
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={handlePrintPdf}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-black text-xs cursor-pointer shadow-xs transition-all"
-              >
-                <span aria-hidden="true">📄</span>
-                <span>PDF / Yazdır</span>
-              </button>
-              <button
-                type="button"
-                onClick={onClose}
-                aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
-                className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
-              >
-                <X className="w-5 h-5" aria-hidden="true" />
-              </button>
-            </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onClick={handlePrintPdf}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-black text-xs cursor-pointer shadow-xs transition-all"
+            >
+              <span aria-hidden="true">📄</span>
+              <span className="hidden sm:inline">PDF / Yazdır</span>
+            </button>
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
+              className="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/15 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer shrink-0 inline-flex items-center gap-1.5"
+            >
+              <X className="w-5 h-5" aria-hidden="true" />
+              <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close')}</span>
+            </button>
           </div>
         </div>
+      </header>
 
-        {/* Body Content */}
-        <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
+      {/* Body Content */}
+      <div className="flex-1 overflow-y-auto p-4 sm:p-8 max-w-3xl mx-auto w-full space-y-6">
           {/* 1. Country Selection */}
           <div className="space-y-2">
             <label className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
@@ -387,6 +393,5 @@ export const TippingCalculatorModal: React.FC<Props> = ({
           </div>
         </div>
       </div>
-    </div>
   );
 };

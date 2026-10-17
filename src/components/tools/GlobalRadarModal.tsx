@@ -689,41 +689,34 @@ export const GlobalRadarModal: React.FC<Props> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-slate-950/85 backdrop-blur-xl animate-in fade-in duration-200"
+      ref={modalRef}
+      role="region"
+      aria-labelledby="radar-modal-title"
+      tabIndex={-1}
+      className="fixed inset-0 z-50 bg-[#060D17] flex flex-col overflow-hidden text-slate-100 animate-in fade-in duration-150"
       onMouseUp={() => setIsDragging(false)}
     >
-      {/* Top Floating High-Z-Index Close Button (Ensures user can ALWAYS close the modal from ANY viewport) */}
-      <button
-        type="button"
-        onClick={onClose}
-        className="fixed top-3 sm:top-5 right-3 sm:right-5 z-[9999] p-2.5 sm:p-3 rounded-full bg-slate-900/95 hover:bg-rose-600 text-white hover:text-white border-2 border-cyan-400/50 hover:border-rose-400 shadow-[0_0_30px_rgba(0,0,0,0.8)] backdrop-blur-2xl transition-all cursor-pointer flex items-center justify-center group active:scale-90"
-        title={l('Kapat / Geri Dön', 'Close / Exit', 'Schließen')}
-        aria-label="Close Global Radar"
-      >
-        <X className="w-5 h-5 sm:w-6 sm:h-6 group-hover:rotate-90 transition-transform text-cyan-200 group-hover:text-white" />
-      </button>
-
-      {/* Main Container - Cyber Glass HUD */}
-      <div
-        ref={modalRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="radar-modal-title"
-        tabIndex={-1}
-        className="relative w-full max-w-7xl h-[93vh] max-h-[920px] flex flex-col rounded-3xl bg-slate-900/95 border border-cyan-500/30 shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden text-slate-100"
-      >
-        {/* ============================================================== */}
-        {/* TOP TELEMETRY HUD BAR                                         */}
-        {/* ============================================================== */}
-        <header className="flex-shrink-0 px-4 sm:px-6 py-3 bg-slate-950/90 border-b border-cyan-500/20 flex flex-wrap items-center justify-between gap-3">
-          {/* Left: Radar Live Ping & Brand */}
-          <div className="flex items-center gap-3">
-            <div className="relative flex items-center justify-center w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-500/40 text-cyan-400">
-              <Radio className="w-4 h-4 animate-pulse" />
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-500" />
-            </div>
-            <div>
+      {/* ============================================================== */}
+      {/* TOP TELEMETRY HUD BAR                                         */}
+      {/* ============================================================== */}
+      <header className="flex-shrink-0 px-4 sm:px-6 py-3 bg-slate-950/95 border-b border-cyan-500/20 flex flex-wrap items-center justify-between gap-3 backdrop-blur-md">
+        {/* Left: [ ← Geri ] + Radar Live Ping & Brand */}
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={onClose}
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white/10 hover:bg-white/15 text-slate-200 transition-all cursor-pointer shrink-0 mr-1"
+            title={l("Geri", 'Back', 'Zurück')}
+          >
+            <ArrowLeft className="w-4 h-4 text-slate-300" />
+            <span>{l("Geri", 'Back', 'Zurück')}</span>
+          </button>
+          <div className="relative flex items-center justify-center w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-500/40 text-cyan-400">
+            <Radio className="w-4 h-4 animate-pulse" />
+            <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
+            <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-500" />
+          </div>
+          <div>
               <div className="flex items-center gap-2">
                 <h2 id="radar-modal-title" className="text-sm sm:text-base font-black tracking-wider uppercase bg-gradient-to-r from-white via-cyan-200 to-teal-400 bg-clip-text text-transparent">
                   {l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Globaler Reiseradar', 'Radar de Viajes', 'Глобальный Радар')}
@@ -1441,6 +1434,5 @@ export const GlobalRadarModal: React.FC<Props> = ({
           </aside>
         </div>
       </div>
-    </div>
   );
 };

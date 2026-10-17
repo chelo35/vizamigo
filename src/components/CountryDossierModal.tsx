@@ -589,15 +589,6 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </span>
             )}
 
-            <button
-              type="button"
-              onClick={onOpenAudit}
-              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg font-bold border transition-colors cursor-pointer shrink-0 text-xs ${verStatus.color}`}
-              title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
-            >
-              <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-              <span>✓ {verStatus.label}</span>
-            </button>
           </div>
         </div>
       </header>
@@ -890,19 +881,6 @@ Planlayan: Vizamigo (vizamigo.com)`;
                       <MapPin className="w-4 h-4" />
                       <span>{l('Google Haritalar Rotası', 'Open Route in Google Maps', 'Route in Google Maps')}</span>
                       <ExternalLink className="w-3.5 h-3.5 opacity-80" />
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={handleCopyItinerary}
-                      className="btn-nubair-secondary !py-2 !px-3.5 text-xs inline-flex items-center justify-center gap-2"
-                    >
-                      {copiedItinerary ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
-                      <span>
-                        {copiedItinerary
-                          ? l('✓ Plan Panoya Kopyalandı!', '✓ Copied to Clipboard!', '✓ In Zwischenablage!')
-                          : l('Tüm Planı Kopyala', 'Copy Full Itinerary', 'Gesamten Plan kopieren')}
-                      </span>
                     </button>
                   </div>
                 </div>

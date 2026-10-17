@@ -192,26 +192,13 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   const [selectedDossierCountry, setSelectedDossierCountry] = useState<string | null>(() => initialCountryCode);
   const [isDossierOpen, setIsDossierOpen] = useState<boolean>(() => !!initialCountryCode);
   const [widgetsHydrated, setWidgetsHydrated] = useState<boolean>(false);
-  const [visibleCount, setVisibleCount] = useState<number>(3);
+  const [visibleCount, setVisibleCount] = useState<number>(4);
   const [showDirectory, setShowDirectory] = useState<boolean>(true);
 
   // Reset pagination when search, filter or passport changes
   useEffect(() => {
-    setVisibleCount(12);
+    setVisibleCount(4);
   }, [search, filter, currentPassport]);
-
-  // Expand visible country cards during idle after initial paint
-  useEffect(() => {
-    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-      const handle = (window as any).requestIdleCallback(() => {
-        setVisibleCount(12);
-      });
-      return () => (window as any).cancelIdleCallback(handle);
-    } else {
-      const timer = setTimeout(() => setVisibleCount(12), 200);
-      return () => clearTimeout(timer);
-    }
-  }, []);
 
   // Defer live clock, weather & currency widget hydration until after initial HTML/CSS paint (<0.5s FCP)
   useEffect(() => {
@@ -381,8 +368,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </h2>
             <p className="text-xs sm:text-sm font-bold text-[#064E3B] dark:text-teal-200 mt-0.5">
               {l(
-                `${stats.counts.free + stats.counts.id} Vizesiz/Kimlikle · ${stats.counts.evisa + stats.counts.voa + stats.counts.eta} E-Vize/Kapıda · 2026 Canlı Mevzuat Teyitli`,
-                `${stats.counts.free + stats.counts.id} Visa-Free/ID · ${stats.counts.evisa + stats.counts.voa + stats.counts.eta} eVisa/VoA · 2026 Live Verified`
+                `${stats.counts.free + stats.counts.id} Vizesiz/Kimlikle · ${stats.counts.evisa + stats.counts.voa + stats.counts.eta} E-Vize/Kapıda`,
+                `${stats.counts.free + stats.counts.id} Visa-Free/ID · ${stats.counts.evisa + stats.counts.voa + stats.counts.eta} eVisa/VoA`
               )}
             </p>
           </div>
@@ -686,20 +673,6 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           <span className={`text-xs px-3.5 py-1 rounded-full font-bold ${badgeClass}`}>
                             {badgeText}
                           </span>
-
-                          {/* Audit Verification Badge (Pill 9999px) */}
-                          <button
-                            type="button"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleOpenAudit();
-                            }}
-                            className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-bold text-xs bg-[#2A8C82]/10 text-[#1E6F66] dark:text-[#52B2A7] border border-[#2A8C82]/20 hover:bg-[#2A8C82]/20 transition-all cursor-pointer"
-                            title={l('Mevzuat Teyit Bilgisini İncele', 'View Regulation Verification Info', 'Regelüberprüfungs-Info anzeigen', 'Ver información de verificación', 'Проверить нормативные данные')}
-                          >
-                            <ShieldCheck className="w-3.5 h-3.5 text-[#2A8C82] dark:text-[#52B2A7] flex-shrink-0" />
-                            <span>{l('✓ 2026 Teyitli', '✓ 2026 Verified', '✓ 2026 Geprüft', '✓ 2026 Verificado', '✓ Проверено 2026')}</span>
-                          </button>
                         </div>
 
                         {/* Traveler Score Pill */}
@@ -1613,17 +1586,17 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           <div className="flex flex-col items-center justify-center pt-6 pb-4 space-y-3">
             <button
               type="button"
-              onClick={() => setVisibleCount((prev) => Math.min(filteredItems.length, prev + 24))}
+              onClick={() => setVisibleCount((prev) => Math.min(filteredItems.length, prev + 12))}
               className="px-6 py-3.5 rounded-full bg-teal-700 hover:bg-teal-600 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center gap-2 touch-target-min hover:scale-105 active:scale-95"
             >
               <Sparkles className="w-4 h-4" />
               <span>
                 {l(
-                  `Daha Fazla Ülke Yükle (+24) · ${visibleCount} / ${filteredItems.length}`,
-                  `Load More Countries (+24) · ${visibleCount} / ${filteredItems.length}`,
-                  `Weitere Länder laden (+24) · ${visibleCount} / ${filteredItems.length}`,
-                  `Cargar más países (+24) · ${visibleCount} / ${filteredItems.length}`,
-                  `Загрузить еще (+24) · ${visibleCount} / ${filteredItems.length}`
+                  `Daha Fazla Ülke Yükle (+12) · ${visibleCount} / ${filteredItems.length}`,
+                  `Load More Countries (+12) · ${visibleCount} / ${filteredItems.length}`,
+                  `Weitere Länder laden (+12) · ${visibleCount} / ${filteredItems.length}`,
+                  `Cargar más países (+12) · ${visibleCount} / ${filteredItems.length}`,
+                  `Загрузить еще (+12) · ${visibleCount} / ${filteredItems.length}`
                 )}
               </span>
             </button>

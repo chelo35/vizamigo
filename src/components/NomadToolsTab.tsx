@@ -328,10 +328,6 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                           </span>
                         </div>
                       </div>
-                      <span className="text-xs font-black px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 flex items-center gap-1 shrink-0">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                        <span>2026 {t.verifiedBadge}</span>
-                      </span>
                     </div>
 
                     {/* Monthly Cost & Budget Pill */}
@@ -475,10 +471,6 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                             </h1>
                             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800">
                               {loc.budgetLevel}
-                            </span>
-                            <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                              <span>2026 {t.verifiedBadge}</span>
                             </span>
                           </div>
                           <p className="text-xs font-semibold text-teal-700 dark:text-teal-400 truncate mt-0.5">

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useModalA11y } from '../../utils/useModalA11y';
 import {
   X,
+  ArrowLeft,
   Clock,
   Sparkles,
   ArrowRightLeft,
@@ -122,45 +123,55 @@ export const TimezoneOverlapModal: React.FC<Props> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200" onClick={onClose}>
-      <div
-        ref={modalRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="timezone-modal-title"
-        tabIndex={-1}
-        onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden"
-      >
-        {/* Header */}
-        <div className="p-5 sm:p-6 border-b border-slate-100 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02]">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center">
-                <Laptop className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 id="timezone-modal-title" className="text-lg font-black text-slate-900 dark:text-white leading-tight">
-                  {l('Zaman Dilimi & Toplantı Çakışma Planlayıcısı', 'Timezone Meeting Overlap Planner', 'Zeitzonen- & Meeting-Planer', 'Planificador de Superposición Horaria', 'Планировщик встреч по часовым поясам')}
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  {l('Uzaktan çalışanlar ve dijital göçebeler için altın çalışma saatleri', 'Golden working hours for remote teams and nomads', 'Goldene Arbeitsstunden für Remote-Teams', 'Horas ideales de trabajo para nómadas', 'Идеальные часы для созвонов')}
-                </p>
-              </div>
-            </div>
-
+    <div
+      ref={modalRef}
+      role="region"
+      aria-labelledby="timezone-page-title"
+      tabIndex={-1}
+      className="fixed inset-0 z-50 bg-[#F8FAFC] dark:bg-[#0B0F17] flex flex-col overflow-hidden text-slate-900 dark:text-slate-100 animate-in fade-in duration-150"
+    >
+      {/* 1. Header with back button */}
+      <header className="sticky top-0 z-30 shrink-0 px-4 sm:px-8 py-3 bg-white/95 dark:bg-[#0B0F17]/95 border-b border-slate-200/80 dark:border-white/10 backdrop-blur-md">
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
             <button
               type="button"
               onClick={onClose}
-              className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
+              title={l("Geri", 'Back', 'Zurück')}
             >
-              <X className="w-5 h-5" />
+              <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+              <span>{l("Geri", 'Back', 'Zurück')}</span>
             </button>
+            <div className="flex items-center gap-2.5 min-w-0">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+                <Laptop className="w-5 h-5" />
+              </div>
+              <div className="min-w-0">
+                <h1 id="timezone-page-title" className="text-base sm:text-lg font-black text-slate-900 dark:text-white leading-tight truncate">
+                  {l('Zaman Dilimi & Toplantı Çakışma Planlayıcısı', 'Timezone Meeting Overlap Planner', 'Zeitzonen- & Meeting-Planer', 'Planificador de Superposición Horaria', 'Планировщик встреч')}
+                </h1>
+                <p className="text-xs text-slate-500 dark:text-slate-400 truncate hidden sm:block">
+                  {l('Uzaktan çalışanlar ve dijital göçebeler için altın çalışma saatleri', 'Golden working hours for remote teams and nomads')}
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Body Content */}
-        <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/15 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer shrink-0 inline-flex items-center gap-1.5"
+            title={l('Kapat', 'Close')}
+          >
+            <X className="w-5 h-5" />
+            <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close')}</span>
+          </button>
+        </div>
+      </header>
+
+      {/* Body Content */}
+      <div className="flex-1 overflow-y-auto p-4 sm:p-8 max-w-4xl mx-auto w-full space-y-6">
           {/* 1. Dual City Selector Bento */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* City 1 (Home / Headquarters) */}
@@ -341,6 +352,5 @@ export const TimezoneOverlapModal: React.FC<Props> = ({ isOpen, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };

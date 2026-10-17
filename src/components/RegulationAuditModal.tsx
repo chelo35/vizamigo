@@ -296,7 +296,7 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
   const [searchTerm, setSearchTerm] = useState('');
   const [isScanning, setIsScanning] = useState(false);
   const [scanProgress, setScanProgress] = useState(100);
-  const [scanStep, setScanStep] = useState('15/15 Ülke Diplomatik Teyitli');
+  const [scanStep, setScanStep] = useState('15/15 Ülke Diplomatik İncelemesi Tamamlandı');
   const [copied, setCopied] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -728,10 +728,6 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
                           <AlertTriangle className="w-3 h-3 text-amber-500" />
                         )}
                         <span>{r.status === 'MATCH' ? t.auditAllMatched : t.auditAttention}</span>
-                      </span>
-
-                      <span className="text-[10px] text-slate-400 font-mono bg-slate-50 dark:bg-slate-800/80 px-2 py-0.5 rounded">
-                        Ekim 2026 Teyitli
                       </span>
                     </div>
                   </div>

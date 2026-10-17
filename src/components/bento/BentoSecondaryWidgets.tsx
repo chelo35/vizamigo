@@ -62,13 +62,13 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && openWidget('day_counter', 'schengen')}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div className="space-y-0.5">
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Dünya Gün Sayacı', 'Day Counter')}
           </h3>
-          <div className="text-base sm:text-lg font-black text-[#011a17] dark:text-[#5EEAD4] leading-tight">
+          <div className="text-base sm:text-lg lg:text-xl font-black text-[#011a17] dark:text-[#5EEAD4] leading-tight">
             {l('48 Gün Kaldı', '48 Days Left')}
           </div>
           <div className="text-xs sm:text-sm font-bold text-[#03443d] dark:text-teal-200">
@@ -76,12 +76,12 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
           </div>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <GlobalDayCounter3DIllustration daysLeft={48} />
         </div>
 
         <div>
-          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
+          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
             {l('Sayacı Aç →', 'Open Counter →')}
           </span>
         </div>
@@ -95,20 +95,20 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && openWidget('currency', 'converter')}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div>
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Döviz & Bütçe', 'Currency & Budget')}
           </h3>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <CurrencyCoins3DIllustration />
         </div>
 
-        <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
-          <div className="flex flex-wrap items-baseline justify-between font-mono font-black text-xs sm:text-sm text-[#011a17] dark:text-white tabular-nums">
+        <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
+          <div className="flex flex-wrap items-baseline justify-between font-mono font-black text-xs sm:text-sm lg:text-base text-[#011a17] dark:text-white tabular-nums">
             <span>{currencyDisplay.line1}</span>
             <span>{currencyDisplay.line2}</span>
           </div>
@@ -123,20 +123,20 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && openWidget('packing', 'documents')}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div>
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Akıllı Bavul', 'Smart Packing')}
           </h3>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <Suitcases3DIllustration />
         </div>
 
-        <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
-          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
+        <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
+          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
             {l('Bavulu Aç →', 'Open Packing →')}
           </span>
         </div>
@@ -150,13 +150,13 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && (onOpenGlobalRadar ? onOpenGlobalRadar('clock') : openWidget('world_clock', 'clocks'))}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div className="space-y-0.5">
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Dünya Saati', 'World Clock')}
           </h3>
-          <div className="flex flex-wrap items-center gap-2 font-mono font-bold text-xs text-[#011a17] dark:text-white">
+          <div className="flex flex-wrap items-center gap-2 font-mono font-bold text-xs sm:text-sm text-[#011a17] dark:text-white">
             <LiveCityClock offsetHours={3} label="IST" />
             <span>•</span>
             <LiveCityClock offsetHours={1} label="BER" />
@@ -165,18 +165,18 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
           </div>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <WorldClock3DIllustration />
         </div>
 
-        <div className="flex gap-1.5">
+        <div className="flex gap-2">
           <button
             type="button"
             onClick={(e) => {
               e.stopPropagation();
               onOpenTimezoneOverlap?.();
             }}
-            className="flex-1 px-2 py-1.5 rounded-xl bg-white/40 dark:bg-white/10 hover:bg-white/60 dark:hover:bg-white/20 text-[#011a17] dark:text-white text-[11px] font-black transition-all"
+            className="flex-1 px-2.5 py-1.5 sm:py-2 rounded-xl bg-white/50 dark:bg-white/10 hover:bg-white/70 dark:hover:bg-white/20 text-[#011a17] dark:text-white text-xs font-black transition-all cursor-pointer"
           >
             {l('Ortak Saat', 'Overlap')}
           </button>
@@ -186,7 +186,7 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
               e.stopPropagation();
               openWidget('route_planner', 'builder');
             }}
-            className="flex-1 px-2 py-1.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-[11px] font-black transition-all"
+            className="flex-1 px-2.5 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white text-xs font-black transition-all cursor-pointer"
           >
             {l('Rota Çiz →', 'Route →')}
           </button>
@@ -201,10 +201,10 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && openWidget('local_apps', 'apps', appsCountry)}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div>
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Turizm Uygulamaları', 'Local Super-Apps')}
           </h3>
           <p className="text-xs sm:text-sm font-bold text-[#03443d] dark:text-[#5EEAD4]">
@@ -212,12 +212,12 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
           </p>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <LocalApps3DIllustration />
         </div>
 
-        <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
-          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
+        <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
+          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
             {l('Uygulamaları Aç →', 'Open Apps →')}
           </span>
         </div>
@@ -231,10 +231,10 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && openWidget('nomad', 'hubs')}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div>
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Dijital Göçebe (Nomad)', 'Digital Nomad')}
           </h3>
           <p className="text-xs sm:text-sm font-bold text-[#03443d] dark:text-[#5EEAD4]">
@@ -242,12 +242,12 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
           </p>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <NomadIsland3DIllustration />
         </div>
 
-        <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
-          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
+        <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
+          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:from-[#0F766E] hover:to-[#0D9488] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
             {l('Göçebe Rehberi →', 'Nomad Guide →')}
           </span>
         </div>
@@ -261,10 +261,10 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && openWidget('emergency', 'sos')}
-        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+        className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
       >
         <div>
-          <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+          <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
             {l('Acil Konsolosluk & SOS', 'Emergency SOS')}
           </h3>
           <p className="text-xs sm:text-sm font-bold text-[#03443d] dark:text-[#5EEAD4]">
@@ -272,12 +272,12 @@ export const BentoSecondaryWidgets: React.FC<BentoSecondaryWidgetsProps> = ({
           </p>
         </div>
 
-        <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+        <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
           <LifebuoySOS3DIllustration />
         </div>
 
-        <div className="pt-1.5 border-t border-[#0F766E]/20 dark:border-white/15">
-          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#EA580C] to-[#E11D48] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
+        <div className="pt-2 border-t border-[#0F766E]/20 dark:border-white/15">
+          <span className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#EA580C] to-[#E11D48] text-white text-xs sm:text-sm font-black shadow-xs transition-all">
             {l('Acil Hattı Aç →', 'Open Emergency →')}
           </span>
         </div>

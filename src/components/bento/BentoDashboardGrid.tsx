@@ -459,17 +459,17 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && onSelectTab?.('plan')}
-          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-4 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between"
+          className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl bento-lagoon-card p-3 sm:p-5 lg:p-6 cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[220px] lg:min-h-[250px] flex flex-col justify-between"
         >
           <div className="space-y-0.5">
-            <h3 className="text-sm sm:text-base font-black text-[#011a17] dark:text-white leading-tight">
+            <h3 className="text-sm sm:text-base lg:text-lg font-black text-[#011a17] dark:text-white leading-tight">
               {l('Pasaport Karşılaştır', 'Compare Passports')}
               <span className="block text-xs sm:text-sm font-bold text-[#03443d] dark:text-[#5EEAD4]">
                 {l('& Güç Sinerjisi', '& Power Synergy')}
               </span>
             </h3>
             <div className="flex items-baseline gap-1.5 pt-0.5">
-              <span className="text-xl sm:text-2xl font-black text-[#011a17] dark:text-[#5EEAD4] tracking-tight">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-black text-[#011a17] dark:text-[#5EEAD4] tracking-tight">
                 {synergyStats.combinedFree}
               </span>
               <span className="text-xs sm:text-sm font-extrabold text-[#03443d] dark:text-teal-100">
@@ -478,7 +478,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
             </div>
           </div>
 
-          <div className="h-24 sm:h-28 flex items-center justify-center my-1.5">
+          <div className="h-24 sm:h-28 md:h-32 lg:h-36 flex items-center justify-center my-1.5">
             <Passports3DIllustration
               codeA={currentPassport}
               codeB={effectiveSecondPassport}

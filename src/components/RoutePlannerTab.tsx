@@ -640,23 +640,6 @@ export const RoutePlannerTab: React.FC<RoutePlannerTabProps> = ({ currentPasspor
                   <FileText className="w-3.5 h-3.5 text-white" />
                   <span>{l('PDF / Yazdır', 'PDF / Print')}</span>
                 </button>
-
-                <button
-                  type="button"
-                  onClick={handleCopySummary}
-                  className="btn-nubair-secondary py-1.5 px-3 text-xs"
-                  title={l('Rotayı WhatsApp / Metin olarak kopyala', 'Copy route to clipboard', 'Route in Zwischenablage kopieren')}
-                >
-                  {copiedSummary ? (
-                    <>
-                      <Check className="w-3.5 h-3.5 text-emerald-500" /> {l('Kopyalandı!', 'Copied!', 'Kopiert!')}
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-3.5 h-3.5 text-slate-500 dark:text-[#8E9DBE]" /> {l('Özeti Kopyala', 'Copy Summary', 'Zusammenfassung kopieren')}
-                    </>
-                  )}
-                </button>
               </>
             )}
 

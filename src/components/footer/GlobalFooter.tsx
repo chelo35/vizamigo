@@ -114,7 +114,7 @@ export const GlobalFooter: React.FC<Props> = ({
   onOpenTimezoneOverlap,
   onOpenGlobalRadar
 }) => {
-  const { language, l } = useI18n();
+  const { language, setLanguage, languages, l } = useI18n();
   const { user, isAuthenticated, openAuthModal } = useAuth();
   const [selectedCategory, setSelectedCategory] = useState<PopularCategory>('visa_free');
 
@@ -717,29 +717,49 @@ export const GlobalFooter: React.FC<Props> = ({
           </h3>
           <ul className="space-y-2">
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('partners')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Vize Danışmanlık Acenteleri Masası', 'Visa Agencies Portal', 'Agentur-Portal für Visa', 'Portal de Agencias de Visas', 'Портал визовых агентств')}
-              </span>
+              </button>
             </li>
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('airlines')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Havayolu & Sınır Entegrasyonu', 'Airline & Border Feeds', 'Airlines & Grenzkontrollen', 'Integración de Aerolíneas', 'Интеграция с авиакомпаниями')}
-              </span>
+              </button>
             </li>
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('insurance')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Seyahat Sağlık Sigortası Ortakları', 'Travel Health Insurance Partners', 'Reiseversicherungs-Partner', 'Seguro Médico de Viaje', 'Туристическая страховка')}
-              </span>
+              </button>
             </li>
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('community')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Gezgin Katkı & Kural Düzeltme', 'Community Contribution Desk', 'Gezgin-Korrekturportal', 'Reporte de Correcciones', 'Сообщество путешественников')}
-              </span>
+              </button>
             </li>
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('api')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Kurumsal API & Veri Lisansı', 'Enterprise API & Data Licensing', 'Enterprise API & Datenlizenz', 'API Corporativa', 'Корпоративный API')}
-              </span>
+              </button>
             </li>
           </ul>
         </div>
@@ -770,14 +790,22 @@ export const GlobalFooter: React.FC<Props> = ({
               </button>
             </li>
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('sustainability')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Sürdürülebilir Seyahat İlkeleri', 'Sustainable Travel Standards', 'Nachhaltiges Reisen', 'Viajes Sostenibles', 'Устойчивый туризм')}
-              </span>
+              </button>
             </li>
             <li>
-              <span className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] cursor-pointer transition-colors font-medium">
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('careers')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
                 {l('Kariyer & Ekip', 'Careers & Team', 'Karriere & Team', 'Carreras y Equipo', 'Карьера')}
-              </span>
+              </button>
             </li>
             <li>
               <button
@@ -796,12 +824,31 @@ export const GlobalFooter: React.FC<Props> = ({
       {/* 4. BOTTOM BAR & TRUST BADGES */}
       {/* ======================================================== */}
       <div className="pt-6 pb-2 border-t border-teal-500/20 dark:border-[#2DD4BF]/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
-        {/* Language indicator badge */}
-        <div className="flex items-center gap-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-white/10 border border-teal-500/25 dark:border-[#2DD4BF]/40 font-bold text-slate-800 dark:text-white shadow-xs">
-            <Globe className="w-3.5 h-3.5 text-teal-700 dark:text-[#5EEAD4]" />
-            <span className="uppercase">{language}</span>
+        {/* Interactive Multi-Language Switcher */}
+        <div className="flex items-center flex-wrap gap-1.5">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold text-slate-600 dark:text-teal-200 mr-1">
+            <Globe className="w-4 h-4 text-teal-700 dark:text-[#5EEAD4]" />
+            <span>{l('Dil / Language:', 'Language / Dil:', 'Sprache:', 'Idioma:', 'Язык:')}</span>
           </div>
+          {languages.map((langOpt) => {
+            const isActive = language === langOpt.code;
+            return (
+              <button
+                key={langOpt.code}
+                type="button"
+                onClick={() => setLanguage(langOpt.code as any)}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  isActive
+                    ? 'bg-teal-600 text-white shadow-xs ring-2 ring-teal-500/40 font-black'
+                    : 'bg-white dark:bg-white/10 border border-teal-500/20 dark:border-[#2DD4BF]/30 text-slate-700 dark:text-teal-100 hover:bg-teal-50 dark:hover:bg-white/20 hover:text-teal-900 dark:hover:text-white'
+                }`}
+                title={langOpt.name}
+              >
+                <span className="text-sm leading-none">{langOpt.flag}</span>
+                <span className="uppercase font-mono">{langOpt.code}</span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Verification & Trust Standards */}
