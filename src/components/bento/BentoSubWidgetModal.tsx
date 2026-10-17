@@ -1,4 +1,5 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, useRef, Suspense, lazy } from 'react';
+import { useModalA11y } from '../../utils/useModalA11y';
 import {
   Search,
   ArrowLeft,
@@ -110,6 +111,13 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
   const [widgetSearch, setWidgetSearch] = useState<string>('');
   const [selectedAppCategory, setSelectedAppCategory] = useState<string>('all');
 
+  const modalRef = useRef<HTMLDivElement>(null);
+  useModalA11y({
+    isOpen: !!activeWidget && !isMinimized,
+    onClose: closeAllWidgets,
+    modalRef
+  });
+
   if (!activeWidget || isMinimized) return null;
 
   return (
@@ -117,28 +125,33 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
       className={`fixed inset-0 z-50 flex flex-col justify-end sm:justify-center sm:items-center ${
         isFullscreen ? 'p-0' : 'p-0 sm:p-4 md:p-6'
       } bg-[#02181C]/80 backdrop-blur-md`}
-          onClick={closeAllWidgets}
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className={`${
-              isFullscreen
-                ? 'fixed inset-0 w-screen h-screen rounded-none max-w-none max-h-none'
-                : 'relative w-full sm:max-w-4xl h-[93dvh] sm:h-[88vh] rounded-t-[32px] sm:rounded-[32px]'
-            } flex flex-col overflow-hidden bg-gradient-to-b from-[#136F63] via-[#0D5C63] to-[#06373A] dark:from-[#072A36] dark:via-[#051F2B] dark:to-[#03131A] border-2 border-[#5EEAD4]/60 shadow-2xl transition-all`}
+      onClick={closeAllWidgets}
+    >
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="bento-modal-title"
+        tabIndex={-1}
+        onClick={(e) => e.stopPropagation()}
+        className={`${
+          isFullscreen
+            ? 'fixed inset-0 w-screen h-screen rounded-none max-w-none max-h-none'
+            : 'relative w-full sm:max-w-4xl h-[93dvh] sm:h-[88vh] rounded-t-[32px] sm:rounded-[32px]'
+        } flex flex-col overflow-hidden bg-gradient-to-b from-[#136F63] via-[#0D5C63] to-[#06373A] dark:from-[#072A36] dark:via-[#051F2B] dark:to-[#03131A] border-2 border-[#5EEAD4]/60 shadow-2xl transition-all`}
+      >
+        {/* 1. TOP WINDOW CONTROL BAR: [ ← Geri ] | Title | [ — ] [ ⛶ ] [ ✕ ] */}
+        <div className="px-4 sm:px-6 py-4 flex items-center justify-between gap-3 border-b border-white/15 shrink-0">
+          <button
+            type="button"
+            onClick={widgetStack.length > 1 ? goBackWidget : closeAllWidgets}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-black bg-white/20 hover:bg-[#5EEAD4] text-white hover:text-[#042F2E] border border-white/30 transition-all cursor-pointer shadow-sm shrink-0"
           >
-            {/* 1. TOP WINDOW CONTROL BAR: [ ← Geri ] | Title | [ — ] [ ⛶ ] [ ✕ ] */}
-            <div className="px-4 sm:px-6 py-4 flex items-center justify-between gap-3 border-b border-white/15 shrink-0">
-              <button
-                type="button"
-                onClick={widgetStack.length > 1 ? goBackWidget : closeAllWidgets}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-black bg-white/20 hover:bg-[#5EEAD4] text-white hover:text-[#042F2E] border border-white/30 transition-all cursor-pointer shadow-sm shrink-0"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <span>{l('Geri', 'Back')}</span>
-              </button>
+            <ArrowLeft className="w-4 h-4" />
+            <span>{l('Geri', 'Back')}</span>
+          </button>
 
-              <h2 className="text-lg sm:text-2xl font-black text-white truncate text-center">
+          <h2 id="bento-modal-title" className="text-lg sm:text-2xl font-black text-white truncate text-center">
                 {activeWidget.id === 'country_research' &&
                   `${getFlag(activeWidget.countryCode || researchCountry)} ${getCountryName(
                     activeWidget.countryCode || researchCountry,

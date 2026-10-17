@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { useI18n } from '../../data/i18n';
 import { TabKey } from '../Navigation';
+import { useModalA11y } from '../../utils/useModalA11y';
 import {
   AssistantMessage,
   AssistantActionPill,
@@ -124,6 +125,14 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const assistantContainerRef = useRef<HTMLDivElement>(null);
+
+  useModalA11y({
+    isOpen: isOpen && !isMinimized,
+    onClose,
+    modalRef: assistantContainerRef,
+    initialFocusRef: inputRef
+  });
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -409,10 +418,12 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 
       {/* Main Glassmorphic Assistant Container */}
       <div
+        ref={assistantContainerRef}
         role="dialog"
         aria-modal="true"
         aria-label={l('Vizamigo AI Seyahat Danışmanı', 'Vizamigo AI Travel Concierge')}
-        className={`pointer-events-auto w-full flex flex-col overflow-hidden bg-white dark:bg-[#072630] backdrop-blur-2xl border-t-2 sm:border-2 border-teal-500/40 shadow-2xl transition-all duration-300 ${
+        tabIndex={-1}
+        className={`pointer-events-auto w-full flex flex-col overflow-hidden bg-white dark:bg-[#072630] backdrop-blur-2xl border-t-2 sm:border-2 border-teal-500/40 shadow-2xl transition-all duration-300 outline-none ${
           isFullscreen
             ? 'fixed inset-2 sm:inset-6 z-50 rounded-[28px]'
             : 'sm:w-[490px] sm:h-[670px] h-[88dvh] max-h-[92dvh] sm:rounded-[30px] rounded-t-[26px]'

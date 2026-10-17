@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useModalA11y } from '../../utils/useModalA11y';
 import {
   X,
   Clock,
@@ -111,9 +112,26 @@ export const TimezoneOverlapModal: React.FC<Props> = ({ isOpen, onClose }) => {
   // Currently inspected hour calculation
   const inspectedHour2 = Math.floor((selectedHourCity1 + diffHours + 24) % 24);
 
+  const modalRef = useRef<HTMLDivElement>(null);
+  useModalA11y({
+    isOpen,
+    onClose,
+    modalRef
+  });
+
+  if (!isOpen) return null;
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200" onClick={onClose}>
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="timezone-modal-title"
+        tabIndex={-1}
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden"
+      >
         {/* Header */}
         <div className="p-5 sm:p-6 border-b border-slate-100 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02]">
           <div className="flex items-center justify-between gap-3">
@@ -122,7 +140,7 @@ export const TimezoneOverlapModal: React.FC<Props> = ({ isOpen, onClose }) => {
                 <Laptop className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-slate-900 dark:text-white leading-tight">
+                <h3 id="timezone-modal-title" className="text-lg font-black text-slate-900 dark:text-white leading-tight">
                   {l('Zaman Dilimi & Toplantı Çakışma Planlayıcısı', 'Timezone Meeting Overlap Planner', 'Zeitzonen- & Meeting-Planer', 'Planificador de Superposición Horaria', 'Планировщик встреч по часовым поясам')}
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">

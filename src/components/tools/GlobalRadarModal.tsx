@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { ALL_WORLD_HUBS, WorldHub, flagToIso } from '../../data/worldHubs';
 import { getHubWeather, useLiveWeather } from '../../data/weatherData';
+import { useModalA11y } from '../../utils/useModalA11y';
 import { getCountryGeography } from '../../data/countryGeography';
 import { getCrossRate, formatCurrencyValue, convertCurrency, useLiveCurrencyRates } from '../../data/currencyRates';
 import { GEO_DATA } from '../../data/geoData';
@@ -286,16 +287,12 @@ export const GlobalRadarModal: React.FC<Props> = ({
     }
   }, [isOpen, initialMode, initialCity]);
 
-  // Handle ESC key to close
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
+  const modalRef = useRef<HTMLDivElement>(null);
+  useModalA11y({
+    isOpen,
+    onClose,
+    modalRef
+  });
 
   // Passport visa item cache
   const passportItems = useMemo(() => {
@@ -695,7 +692,14 @@ export const GlobalRadarModal: React.FC<Props> = ({
       </button>
 
       {/* Main Container - Cyber Glass HUD */}
-      <div className="relative w-full max-w-7xl h-[93vh] max-h-[920px] flex flex-col rounded-3xl bg-slate-900/95 border border-cyan-500/30 shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden text-slate-100">
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="radar-modal-title"
+        tabIndex={-1}
+        className="relative w-full max-w-7xl h-[93vh] max-h-[920px] flex flex-col rounded-3xl bg-slate-900/95 border border-cyan-500/30 shadow-[0_0_50px_rgba(6,182,212,0.15)] overflow-hidden text-slate-100"
+      >
         {/* ============================================================== */}
         {/* TOP TELEMETRY HUD BAR                                         */}
         {/* ============================================================== */}
@@ -709,7 +713,7 @@ export const GlobalRadarModal: React.FC<Props> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-sm sm:text-base font-black tracking-wider uppercase bg-gradient-to-r from-white via-cyan-200 to-teal-400 bg-clip-text text-transparent">
+                <h2 id="radar-modal-title" className="text-sm sm:text-base font-black tracking-wider uppercase bg-gradient-to-r from-white via-cyan-200 to-teal-400 bg-clip-text text-transparent">
                   {l('Küresel Seyahat Radarı', 'Global Travel Radar', 'Globaler Reiseradar', 'Radar de Viajes', 'Глобальный Радар')}
                 </h2>
                 <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider">

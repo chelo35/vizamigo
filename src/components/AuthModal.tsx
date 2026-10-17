@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { X, Mail, Lock, User, Eye, EyeOff, CheckCircle2, AlertCircle, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useI18n } from '../i18n';
+import { useModalA11y } from '../utils/useModalA11y';
 
 export const AuthModal: React.FC = () => {
   const {
@@ -24,6 +25,13 @@ export const AuthModal: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useModalA11y({
+    isOpen: isAuthModalOpen,
+    onClose: closeAuthModal,
+    modalRef
+  });
 
   if (!isAuthModalOpen) return null;
 
@@ -100,17 +108,27 @@ export const AuthModal: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-md animate-in fade-in duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-md animate-in fade-in duration-200"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) closeAuthModal();
+      }}
+    >
       <div
-        className="glass-panel rounded-3xl w-full max-w-md shadow-2xl overflow-hidden relative"
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="auth-modal-title"
+        tabIndex={-1}
+        className="glass-panel rounded-3xl w-full max-w-md shadow-2xl overflow-hidden relative outline-none"
         onClick={e => e.stopPropagation()}
       >
         {/* Header Bar */}
         <div className="flex items-center justify-between p-5 pb-3 border-b border-slate-200/80 dark:border-white/10">
           <div className="flex items-center gap-2">
-            <span className="text-xl">✈️</span>
+            <span className="text-xl" aria-hidden="true">✈️</span>
             <div>
-              <h2 className="text-base font-bold text-slate-900 dark:text-white tracking-[-0.02em]">
+              <h2 id="auth-modal-title" className="text-base font-bold text-slate-900 dark:text-white tracking-[-0.02em]">
                 {authModalTab === 'login' ? t.loginTitle : t.registerTitle}
               </h2>
               <p className="text-xs text-slate-500 dark:text-[#8E9DBE]">
@@ -121,9 +139,10 @@ export const AuthModal: React.FC = () => {
           <button
             type="button"
             onClick={closeAuthModal}
+            aria-label={t.reportClose || 'Kapat'}
             className="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors cursor-pointer"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 

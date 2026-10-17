@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   X,
   Flag,
@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { useI18n } from '../i18n';
 import { getFlag, getCountryName, REGIONS } from '../data/passportData';
+import { useModalA11y } from '../utils/useModalA11y';
 
 export interface UserReportItem {
   id: string;
@@ -91,6 +92,13 @@ export const ReportChangeModal: React.FC<ReportChangeModalProps> = ({
   const [copied, setCopied] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<'form' | 'history'>('form');
   const [savedReports, setSavedReports] = useState<UserReportItem[]>([]);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useModalA11y({
+    isOpen,
+    onClose,
+    modalRef
+  });
 
   const allCountryCodes = useMemo(() => {
     const codes = Array.from(new Set(Object.values(REGIONS).flat()));
@@ -174,19 +182,29 @@ export const ReportChangeModal: React.FC<ReportChangeModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-md animate-in fade-in duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-md animate-in fade-in duration-200"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
       <div
-        className="w-full max-w-xl bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-2xl border border-slate-200/80 dark:border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="report-modal-title"
+        tabIndex={-1}
+        className="w-full max-w-xl bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-2xl border border-slate-200/80 dark:border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] outline-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="px-6 py-5 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-between bg-slate-50/70 dark:bg-white/[0.02]">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900 flex items-center justify-center text-rose-600 dark:text-rose-400">
+            <div className="w-9 h-9 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900 flex items-center justify-center text-rose-600 dark:text-rose-400" aria-hidden="true">
               <Flag className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-base text-slate-900 dark:text-slate-100 flex items-center gap-2">
+              <h3 id="report-modal-title" className="font-bold text-base text-slate-900 dark:text-slate-100 flex items-center gap-2">
                 <span>{t.reportChangeTitle}</span>
               </h3>
               <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -199,7 +217,7 @@ export const ReportChangeModal: React.FC<ReportChangeModalProps> = ({
             className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
             aria-label={t.reportClose}
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 

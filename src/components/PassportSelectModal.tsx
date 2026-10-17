@@ -1,7 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { Search, X, Check, Star } from 'lucide-react';
 import { D, getCountryName, getFlag } from '../data/passportData';
 import { useI18n } from '../data/i18n';
+import { useModalA11y } from '../utils/useModalA11y';
 
 interface PassportSelectModalProps {
   isOpen: boolean;
@@ -22,6 +23,13 @@ export const PassportSelectModal: React.FC<PassportSelectModalProps> = ({
 }) => {
   const { language, l } = useI18n();
   const [search, setSearch] = useState('');
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useModalA11y({
+    isOpen,
+    onClose,
+    modalRef
+  });
 
   const modalTitle = title || l(
     'Vatandaşlığınızı / Pasaportunuzu Seçin',
@@ -49,21 +57,34 @@ export const PassportSelectModal: React.FC<PassportSelectModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="glass-panel rounded-3xl w-full max-w-lg shadow-2xl flex flex-col max-h-[85vh] overflow-hidden">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md animate-in fade-in duration-200"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="passport-modal-title"
+        tabIndex={-1}
+        className="glass-panel rounded-3xl w-full max-w-lg shadow-2xl flex flex-col max-h-[85vh] overflow-hidden outline-none"
+      >
         {/* Header */}
         <div className="p-4 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-between">
           <div>
-            <h3 className="font-bold text-slate-900 dark:text-white text-base tracking-[-0.02em]">{modalTitle}</h3>
+            <h3 id="passport-modal-title" className="font-bold text-slate-900 dark:text-white text-base tracking-[-0.02em]">{modalTitle}</h3>
             <p className="text-xs text-slate-500 dark:text-[#8E9DBE]">
               {l('199 ülke ve bölge pasaportu', '199 national passports and territories', '199 Reisepässe und Gebiete')}
             </p>
           </div>
           <button
             onClick={onClose}
+            aria-label={l('Kapat', 'Close', 'Schließen')}
             className="p-1.5 rounded-full text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 

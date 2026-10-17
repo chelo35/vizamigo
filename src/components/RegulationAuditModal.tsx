@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   X,
   ShieldCheck,
@@ -17,6 +17,7 @@ import {
 import { useI18n } from '../i18n';
 import { getFlag } from '../data/passportData';
 import { loadUserReports } from './ReportChangeModal';
+import { useModalA11y } from '../utils/useModalA11y';
 
 export interface AuditRecord {
   code: string;
@@ -297,6 +298,13 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
   const [scanProgress, setScanProgress] = useState(100);
   const [scanStep, setScanStep] = useState('15/15 Ülke Diplomatik Teyitli');
   const [copied, setCopied] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useModalA11y({
+    isOpen,
+    onClose,
+    modalRef
+  });
 
   if (!isOpen) return null;
 
@@ -471,24 +479,34 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/75 backdrop-blur-md animate-in fade-in duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/75 backdrop-blur-md animate-in fade-in duration-200"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
       <div
-        className="w-full max-w-4xl bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-2xl border border-slate-200/80 dark:border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh]"
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="audit-modal-title"
+        tabIndex={-1}
+        className="w-full max-w-4xl bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-2xl border border-slate-200/80 dark:border-white/10 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] outline-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="px-6 py-4.5 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-between bg-gradient-to-r from-teal-500/10 via-emerald-500/10 to-transparent dark:from-teal-950/40 dark:via-emerald-950/30">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-teal-600 text-white flex items-center justify-center shadow-md shadow-teal-600/20 flex-shrink-0">
+            <div className="w-10 h-10 rounded-2xl bg-teal-600 text-white flex items-center justify-center shadow-md shadow-teal-600/20 flex-shrink-0" aria-hidden="true">
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
               <div className="flex items-center gap-2 flex-wrap">
-                <h3 className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-slate-100 tracking-tight">
+                <h3 id="audit-modal-title" className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-slate-100 tracking-tight">
                   {t.auditConsoleTitle}
                 </h3>
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500 text-white flex items-center gap-1 shadow-2xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" aria-hidden="true" />
                   <span>2026 CANLI TEYİTLİ</span>
                 </span>
               </div>
@@ -502,7 +520,7 @@ export const RegulationAuditModal: React.FC<RegulationAuditModalProps> = ({
             className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
             aria-label={t.reportClose}
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 

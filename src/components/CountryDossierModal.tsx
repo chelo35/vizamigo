@@ -88,6 +88,7 @@ import { StatusBadge, VisaStatus } from './design/StatusBadge';
 import { TravelConciergeGrid } from './TravelConciergeGrid';
 import { EasyVacationAssistant } from './EasyVacationAssistant';
 import { runTripDossierAgent } from '../services/aiAgentsEngine';
+import { useModalA11y } from '../utils/useModalA11y';
 
 interface CountryDossierModalProps {
   isOpen: boolean;
@@ -182,26 +183,28 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     return () => clearInterval(timer);
   }, [isOpen]);
 
-  // Close or minimize on Escape key and lock body scroll
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        if (isFullscreen) {
-          setIsFullscreen(false);
-        } else {
-          onClose();
-        }
+  const modalRef = useRef<HTMLDivElement>(null);
+  useModalA11y({
+    isOpen,
+    onClose: () => {
+      if (isFullscreen) {
+        setIsFullscreen(false);
+      } else {
+        onClose();
       }
-    };
+    },
+    modalRef
+  });
+
+  // Lock body scroll when modal is open
+  useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      window.addEventListener('keydown', handleKeyDown);
     }
     return () => {
       document.body.style.overflow = 'auto';
-      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen, isFullscreen, onClose]);
+  }, [isOpen]);
 
   // Reset tab and fullscreen mode when country changes
   useEffect(() => {
@@ -459,6 +462,11 @@ Planlayan: Vizamigo (vizamigo.com)`;
       }}
     >
       <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dossier-modal-title"
+        tabIndex={-1}
         className={`${
           isFullscreen
             ? 'dossier-fullscreen-panel fixed inset-0 w-screen h-screen z-[99999] rounded-none max-w-none max-h-none flex flex-col glass-panel shadow-2xl transition-all duration-300'
@@ -488,7 +496,7 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </span>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h1 className="text-base sm:text-xl font-black text-white tracking-tight truncate drop-shadow-sm">
+                  <h1 id="dossier-modal-title" className="text-base sm:text-xl font-black text-white tracking-tight truncate drop-shadow-sm">
                     {name}
                   </h1>
                   <span className="font-mono text-xs px-2.5 py-0.5 rounded-md bg-white text-slate-900 font-black border border-slate-200 shadow-xs shrink-0">

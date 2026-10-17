@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
   Coins,
@@ -13,6 +13,7 @@ import {
 import { useI18n } from '../../data/i18n';
 import { getCountryTravelIntelligence } from '../../data/countryTravelIntelligence';
 import { ALL_WORLD_HUBS } from '../../data/worldHubs';
+import { useModalA11y } from '../../utils/useModalA11y';
 
 interface Props {
   isOpen: boolean;
@@ -41,10 +42,17 @@ export const TippingCalculatorModal: React.FC<Props> = ({
   initialCountryCode = 'US'
 }) => {
   const { language, l } = useI18n();
+  const modalRef = useRef<HTMLDivElement>(null);
   const [selectedCountryCode, setSelectedCountryCode] = useState<string>(initialCountryCode);
   const [billAmount, setBillAmount] = useState<number>(100);
   const [tipPercent, setTipPercent] = useState<number>(18);
   const [splitCount, setSplitCount] = useState<number>(2);
+
+  useModalA11y({
+    isOpen,
+    onClose,
+    modalRef
+  });
 
   // Sync with initialCountryCode if provided
   useEffect(() => {
@@ -155,18 +163,32 @@ export const TippingCalculatorModal: React.FC<Props> = ({
     printWindow.document.close();
   };
 
+  if (!isOpen) return null;
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-in fade-in duration-200"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tipping-modal-title"
+        tabIndex={-1}
+        className="relative w-full max-w-xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-white/10 shadow-2xl flex flex-col overflow-hidden outline-none"
+      >
         {/* Header */}
         <div className="p-5 sm:p-6 border-b border-slate-100 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02]">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center" aria-hidden="true">
                 <Coins className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-slate-900 dark:text-white leading-tight">
+                <h3 id="tipping-modal-title" className="text-lg font-black text-slate-900 dark:text-white leading-tight">
                   {l('Akıllı Bahşiş & Masraf Bölüşücü', 'Smart Tipping & Bill Splitter', 'Trinkgeld- & Rechnungsrechner', 'Calculadora de Propinas', 'Калькулятор чаевых')}
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -181,15 +203,16 @@ export const TippingCalculatorModal: React.FC<Props> = ({
                 onClick={handlePrintPdf}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-black text-xs cursor-pointer shadow-xs transition-all"
               >
-                <span>📄</span>
+                <span aria-hidden="true">📄</span>
                 <span>PDF / Yazdır</span>
               </button>
               <button
                 type="button"
                 onClick={onClose}
+                aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
                 className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
               >
-                <X className="w-5 h-5" />
+                <X className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
           </div>
