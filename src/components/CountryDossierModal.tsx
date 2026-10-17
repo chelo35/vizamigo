@@ -223,32 +223,34 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
 
     // Verification Status Badge (Specifies Visa & Border Entry verification)
     let verStatus = {
-      type: 'agree',
-      label: l('Vize: Resmi Kaynaklar Mutabık (2026)', 'Visa: Official Sources Consensus (2026)', 'Visum: Quellen Konsens (2026)'),
-      color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+      type: 'open_data',
+      label: l('Açık Seyahat Verisi (Resmî Teyit Önerilir)', 'Open Travel Data (Verify with MFA)', 'Offene Reisedaten (Prüfung empfohlen)', 'Datos de viaje abiertos (Confirmar)', 'Открытые данные (Рекомендуется уточнение)'),
+      color: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-200 dark:border-slate-700'
     };
 
-    if (verifiedRecord) {
+    if (code === 'ME' && currentPassport === 'TR') {
+      verStatus = {
+        type: 'alert',
+        label: l(
+          '⚠️ 1 Kasım 2026’da Vize Başlıyor (31 Ekim’e kadar 30 gün vizesiz)',
+          '⚠️ Mandatory Visa Starts Nov 1, 2026 (30 days visa-free until Oct 31)',
+          '⚠️ Visumpflicht ab 1. Nov. 2026 (bis 31. Okt. 30 Tage visumfrei)',
+          '⚠️ Visado obligatorio desde 1 nov 2026 (sin visado hasta 31 oct)',
+          '⚠️ Виза с 1 ноября 2026 (до 31 октября 30 дней без визы)'
+        ),
+        color: 'bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-200 border-amber-300 dark:border-amber-700'
+      };
+    } else if (verifiedRecord) {
       verStatus = {
         type: 'verified',
         label: l(
-          `🛡️ Resmi Teyitli (${verifiedRecord.last_reviewed})`,
-          `🛡️ Official Audited (${verifiedRecord.last_reviewed})`,
-          `🛡️ Amtlich geprüft (${verifiedRecord.last_reviewed})`
+          `🛡️ Resmî Teyitli (${verifiedRecord.last_reviewed})`,
+          `🛡️ Officially Audited (${verifiedRecord.last_reviewed})`,
+          `🛡️ Amtlich geprüft (${verifiedRecord.last_reviewed})`,
+          `🛡️ Verificado oficialmente (${verifiedRecord.last_reviewed})`,
+          `🛡️ Официально проверено (${verifiedRecord.last_reviewed})`
         ),
         color: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700'
-      };
-    } else if (VER.chk.split(' ').includes(code)) {
-      verStatus = {
-        type: 'chk',
-        label: l('Vize: Resmi Dışişleri & Göç Teyitli (2026)', 'Visa: Official MFA & Immigration Audited (2026)', 'Visum: Offiziell geprüft (2026)'),
-        color: 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-300 border-amber-200 dark:border-amber-800'
-      };
-    } else if (VER.conf.split(' ').includes(code)) {
-      verStatus = {
-        type: 'conf',
-        label: l('Vize: Mevzuat Çelişkisi Takipte', 'Visa: Discrepancy Watchlist', 'Visum: Beobachtungsliste'),
-        color: 'bg-rose-50 text-rose-700 dark:bg-rose-950/50 dark:text-rose-300 border-rose-200 dark:border-rose-800'
       };
     }
 
@@ -2638,13 +2640,23 @@ Planlayan: Vizamigo (vizamigo.com)`;
       <footer className="shrink-0 px-4 sm:px-8 py-3 bg-white/95 dark:bg-[#0B0F17]/95 border-t border-slate-200/80 dark:border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+            <span className={`w-2 h-2 rounded-full shrink-0 ${verifiedRecord ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'}`} />
             <span className="truncate">
-              {l(
-                'Vize ve seyahat mevzuatı IATA Timatic ve resmi diplomatik bültenlerle (2026) teyitlidir.',
-                'Visa and travel regulations verified via IATA Timatic and official diplomatic gazettes (2026).',
-                'Visabestimmungen über IATA Timatic und offizielle Konsularberichte verifiziert.'
-              )}
+              {verifiedRecord
+                ? l(
+                    `Vize ve seyahat mevzuatı resmî dışişleri ve göç portallarıyla teyitlidir (Son Denetim: ${verifiedRecord.last_reviewed}).`,
+                    `Visa and travel regulations verified via official MFA & immigration portals (Last Audited: ${verifiedRecord.last_reviewed}).`,
+                    `Visabestimmungen über offizielle Ministeriums- und Migrationsportale verifiziert (Letzte Prüfung: ${verifiedRecord.last_reviewed}).`,
+                    `Normativa de visados verificada con portales oficiales de inmigración (Última auditoría: ${verifiedRecord.last_reviewed}).`,
+                    `Правила въезда проверены по официальным порталам МИД и иммиграции (Последний аудит: ${verifiedRecord.last_reviewed}).`
+                  )
+                : l(
+                    'Açık seyahat verisi derlemesidir; seyahat öncesi resmî dışişleri portalından teyit önerilir.',
+                    'Open travel data compilation; verify with official foreign ministry portal before departure.',
+                    'Offene Reisedaten; Prüfung über offizielle Ministeriumsportale vor Reiseantritt empfohlen.',
+                    'Recopilación de datos abiertos; confirme con el portal oficial antes de viajar.',
+                    'Сбор открытых данных; перед поездкой сверяйтесь с официальными порталами.'
+                  )}
             </span>
           </div>
 

@@ -415,7 +415,7 @@ export const GlobalFooter: React.FC<Props> = ({
             </h2>
           </div>
           <span className="text-xs text-teal-800 dark:text-teal-200 font-bold">
-            {l('2026 Resmî Konsolosluk & IATA Verileri', '2026 Official Consular & IATA Data', '2026 Offizielle IATA-Daten', 'Datos Oficiales Consulares 2026', 'Официальные данные IATA 2026')}
+            {l('2026 Resmî Konsolosluk & Açık Seyahat Verileri', '2026 Official Consular & Open Travel Data', '2026 Offizielle Konsular- & Reisedaten', 'Datos Oficiales Consulares y de Viaje 2026', 'Официальные консульские и туристические данные 2026')}
           </span>
         </div>
 

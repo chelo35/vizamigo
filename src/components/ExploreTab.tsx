@@ -54,6 +54,7 @@ import { loadStoredChecklists, saveStoredChecklists } from '../utils/storage';
 import { useI18n } from '../data/i18n';
 import { getCountryVisual, getOptimizedSrcSet } from '../data/countryVisuals';
 import { getFastCountryMetrics } from '../data/initialCountryIndex';
+import { getVerifiedCountryRecord, isVerifiedCountry } from '../data/verifiedCountryData';
 
 const CountryRichSnippetSummary = lazy(() =>
   import('./CountryRichSnippetSummary').then(m => ({ default: m.CountryRichSnippetSummary }))
@@ -553,33 +554,46 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
             const visual = getCountryVisual(item.c, language);
 
-            // Stage 0 Verification Status string
-            let verificationBadge = null;
-            if (currentPassport === 'TR') {
-              if (VER.chk.split(' ').includes(item.c)) {
-                verificationBadge = {
-                  type: 'chk',
-                  text: l('Çoklu kaynakla teyitli (Ekim 2026); resmi mevzuat takip ediliyor.', 'Verified with multiple official sources (October 2026); monitored actively.', 'Mit mehreren Quellen verifiziert (Oktober 2026); aktiv überwacht.'),
-                  color: 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-900/60'
-                };
-              } else if (VER.agree.split(' ').includes(item.c)) {
-                verificationBadge = {
-                  type: 'agree',
-                  text: l('3 bağımsız açık veri seti mutabık.', '3 independent open datasets in consensus.', '3 unabhängige offene Datensätze in Übereinstimmung.'),
-                  color: 'text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-900/60'
-                };
-              } else {
-                verificationBadge = {
-                  type: 'conf',
-                  text: l('Veri setleri çelişkisi tespit edildi; resmi dışişleri kaynağından teyit önerilir.', 'Dataset discrepancy detected; verify with official ministry portal.', 'Diskrepanz im Datensatz festgestellt; Überprüfung beim Ministerium empfohlen.'),
-                  color: 'text-rose-700 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-900/60'
-                };
-              }
+            // Verified pilot record (if country is part of audited pilot dataset)
+            const verifiedRecord = getVerifiedCountryRecord(item.c);
+
+            // Stage 0 Verification Status string & Passport-Adaptive Upcoming Rule Changes
+            let verificationBadge: { type: string; text: string; color: string } | null = null;
+            if (item.c === 'ME' && currentPassport === 'TR') {
+              verificationBadge = {
+                type: 'alert',
+                text: l(
+                  '⚠️ Mevzuat Değişikliği: 31 Ekim 2026’ya kadar 30 gün vizesiz; 1 Kasım 2026 itibarıyla konsolosluk vizesi zorunlu olacaktır.',
+                  '⚠️ Upcoming Policy Change: 30 days visa-free until Oct 31, 2026; mandatory consular visa required starting Nov 1, 2026.',
+                  '⚠️ Bevorstehende Regeländerung: Bis 31. Okt. 2026 30 Tage visumfrei; ab 1. Nov. 2026 gilt Konsularvisumpflicht.',
+                  '⚠️ Cambio normativo: 30 días sin visado hasta el 31 de oct. de 2026; visado consular obligatorio a partir del 1 de nov. de 2026.',
+                  '⚠️ Изменение правил: до 31 октября 2026 без визы (30 дней); с 1 ноября 2026 года требуется консульская виза.'
+                ),
+                color: 'text-amber-800 dark:text-amber-300 bg-amber-500/10 border-amber-500/30'
+              };
+            } else if (verifiedRecord) {
+              verificationBadge = {
+                type: 'official',
+                text: l(
+                  `Resmî Mevzuat Teyitli · Son Kontrol: ${verifiedRecord.last_reviewed}`,
+                  `Officially Audited · Last Reviewed: ${verifiedRecord.last_reviewed}`,
+                  `Amtlich geprüft · Letzte Prüfung: ${verifiedRecord.last_reviewed}`,
+                  `Verificado oficialmente · Última revisión: ${verifiedRecord.last_reviewed}`,
+                  `Официально проверено · Последняя проверка: ${verifiedRecord.last_reviewed}`
+                ),
+                color: 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10 border-emerald-500/25'
+              };
             } else {
               verificationBadge = {
-                type: 'agree',
-                text: l(`${passportName} pasaportu için karşılıklı uluslararası IATA/Göç veritabanıyla teyitli.`, `Verified against international IATA/Immigration datasets for ${passportName} passport.`, `Bestätigt anhand internationaler IATA-/Einreisedaten für den Pass von ${passportName}.`),
-                color: 'text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-900/60'
+                type: 'open_data',
+                text: l(
+                  'Açık Seyahat Verisi · Resmî dışişleri portalından teyit önerilir.',
+                  'Open Travel Dataset · Official ministry portal verification advised.',
+                  'Offener Reisedatensatz · Überprüfung auf Ministeriumsportalen empfohlen.',
+                  'Datos de viaje abiertos · Se aconseja verificar con el portal oficial.',
+                  'Открытые данные · Рекомендуется уточнять в официальных органах.'
+                ),
+                color: 'text-slate-600 dark:text-slate-400 bg-slate-500/5 border-slate-500/15'
               };
             }
 
@@ -591,28 +605,39 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               ...((language === 'de' ? SPECIAL_CHECKLIST_DE : language === 'en' ? SPECIAL_CHECKLIST_EN : SPECIAL_CHECKLIST_TR)[item.cat] || [])
             ];
 
-            const travelerScore = (Math.min(9.9, Math.max(6.8, Math.round(((insights.safety.safetyScore * 0.6) + (Math.min(100, insights.internet.mobileSpeedMbps) * 0.4)) / 10 * 10) / 10))).toFixed(1);
-            const scoreLabel = parseFloat(travelerScore) >= 9.0
-              ? l('Harika', 'Exceptional', 'Hervorragend')
-              : parseFloat(travelerScore) >= 8.0
-              ? l('Çok İyi', 'Very Good', 'Sehr gut')
-              : l('İyi', 'Good', 'Gut');
+            const isHighRisk = insights.safety.safetyScore < 40;
+            const rawScore = ((insights.safety.safetyScore * 0.6) + (Math.min(100, insights.internet.mobileSpeedMbps) * 0.4)) / 10;
+            const travelerScore = Math.min(9.9, Math.max(1.0, Math.round(rawScore * 10) / 10)).toFixed(1);
+            const parsedScore = parseFloat(travelerScore);
+            const scoreLabel = parsedScore >= 9.0
+              ? l('Harika', 'Exceptional', 'Hervorragend', 'Excelente', 'Отлично')
+              : parsedScore >= 8.0
+              ? l('Çok İyi', 'Very Good', 'Sehr gut', 'Muy Bueno', 'Очень хорошо')
+              : parsedScore >= 7.0
+              ? l('İyi', 'Good', 'Gut', 'Bueno', 'Хорошо')
+              : parsedScore >= 5.0
+              ? l('Orta', 'Moderate', 'Mäßig', 'Moderado', 'Умеренно')
+              : l('Dikkat', 'Caution', 'Vorsicht', 'Precaución', 'Внимание');
 
             const highlights: string[] = [];
-            if (item.cat === 'free' || item.id) {
-              highlights.push(item.id ? l('🪪 Kimlikle Giriş', '🪪 ID Card Entry', '🪪 Personalausweis') : l('⚡ Vizesiz Seyahat', '⚡ Visa-Free Entry', '⚡ Visumfrei'));
-            } else if (item.cat === 'evisa') {
-              highlights.push(l('💻 Kolay E-Vize', '💻 Instant eVisa', '💻 Einfaches eVisa'));
-            } else if (item.cat === 'voa') {
-              highlights.push(l('🛬 Kapıda Vize', '🛬 Visa on Arrival', '🛬 Visum b. Ankunft'));
-            }
+            if (isHighRisk) {
+              highlights.push(l('🚨 Yüksek Riskli Bölge', '🚨 High Risk Area', '🚨 Hohes Risiko', '🚨 Zona de alto riesgo', '🚨 Зона высокого риска'));
+            } else {
+              if (item.cat === 'free' || item.id) {
+                highlights.push(item.id ? l('🪪 Kimlikle Giriş', '🪪 ID Card Entry', '🪪 Personalausweis', '🪪 Con DNI', '🪪 По паспорту/ID') : l('⚡ Vizesiz Seyahat', '⚡ Visa-Free Entry', '⚡ Visumfrei', '⚡ Sin visado', '⚡ Без визы'));
+              } else if (item.cat === 'evisa') {
+                highlights.push(l('💻 Kolay E-Vize', '💻 Instant eVisa', '💻 Einfaches eVisa', '💻 Visado electrónico', '💻 Электронная виза'));
+              } else if (item.cat === 'voa') {
+                highlights.push(l('🛬 Kapıda Vize', '🛬 Visa on Arrival', '🛬 Visum b. Ankunft', '🛬 Visado a la llegada', '🛬 Виза по прибытии'));
+              }
 
-            if (insights.internet.mobileSpeedMbps >= 50) {
-              highlights.push(`📶 ${insights.internet.mobileSpeedMbps} Mbps ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz')}`);
-            }
+              if (insights.internet.mobileSpeedMbps >= 50) {
+                highlights.push(`📶 ${insights.internet.mobileSpeedMbps} Mbps ${l('Hızlı Net', 'Fast Net', 'Schnelles Netz', 'Internet Rápido', 'Быстрый интернет')}`);
+              }
 
-            if (insights.safety.safetyScore >= 75) {
-              highlights.push(l('🛡️ Güvenli Rota', '🛡️ High Safety', '🛡️ Hohe Sicherheit'));
+              if (insights.safety.safetyScore >= 75) {
+                highlights.push(l('🛡️ Güvenli Rota', '🛡️ High Safety', '🛡️ Hohe Sicherheit', '🛡️ Ruta Segura', '🛡️ Безопасный маршрут'));
+              }
             }
 
             const sectionHeadings = getCountrySectionHeadings(countryName, language);
@@ -675,18 +700,32 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                           </span>
                         </div>
 
-                        {/* Traveler Score Pill */}
-                        <div className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-[20px] bg-[#2A8C82]/[0.08] dark:bg-[#2A8C82]/15 border border-[#2A8C82]/20 text-[#1E6F66] dark:text-[#52B2A7] flex-shrink-0">
-                          <div className="text-right">
-                            <div className="text-xs font-bold leading-tight">{scoreLabel}</div>
-                            <div className="text-[10px] text-[#1E6F66] dark:text-[#52B2A7] font-bold">
-                              {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung', 'Puntaje de Viajero', 'Оценка')}
+                        {/* Traveler Score Pill or High Risk Warning */}
+                        {isHighRisk ? (
+                          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-[20px] bg-rose-500/10 dark:bg-rose-950/40 border border-rose-500/30 text-rose-700 dark:text-rose-400 flex-shrink-0">
+                            <ShieldAlert className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0 animate-pulse" />
+                            <div className="text-right">
+                              <div className="text-xs font-extrabold leading-tight text-rose-700 dark:text-rose-300">
+                                {l('Seyahat Uyarısı: Seviye 4', 'Travel Warning: Level 4', 'Reisewarnung: Stufe 4', 'Alerta: Nivel 4', 'Предупреждение: Уровень 4')}
+                              </div>
+                              <div className="text-[10px] text-rose-600 dark:text-rose-400 font-bold">
+                                {l('Seyahat Etmeyin', 'Do Not Travel', 'Reisen vermeiden', 'No viajar', 'Не путешествовать')}
+                              </div>
                             </div>
                           </div>
-                          <div className="w-8 h-8 rounded-[14px] bg-[#1E7168] text-white font-mono font-bold text-xs sm:text-sm flex items-center justify-center">
-                            {travelerScore}
+                        ) : (
+                          <div className="flex items-center gap-2.5 px-3.5 py-1.5 rounded-[20px] bg-[#2A8C82]/[0.08] dark:bg-[#2A8C82]/15 border border-[#2A8C82]/20 text-[#1E6F66] dark:text-[#52B2A7] flex-shrink-0">
+                            <div className="text-right">
+                              <div className="text-xs font-bold leading-tight">{scoreLabel}</div>
+                              <div className="text-[10px] text-[#1E6F66] dark:text-[#52B2A7] font-bold">
+                                {l('Gezgin Puanı', 'Traveler Score', 'Reisebewertung', 'Puntaje de Viajero', 'Оценка')}
+                              </div>
+                            </div>
+                            <div className="w-8 h-8 rounded-[14px] bg-[#1E7168] text-white font-mono font-bold text-xs sm:text-sm flex items-center justify-center">
+                              {travelerScore}
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
 
                       {/* Highlights Row (Scale-Ready Multilingual Flex Wrap - Pill Tags 9999px) */}
@@ -1166,11 +1205,15 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                             )}
                       </p>
 
-                      {/* Verification Status Banner (Stage 0) */}
+                      {/* Verification Status Banner */}
                       {verificationBadge && (
                         <div className={`mt-3 p-3 rounded-2xl border text-xs flex items-center gap-2.5 ${verificationBadge.color}`}>
-                          <FileCheck2 className="w-4 h-4 flex-shrink-0" />
-                          <span>{verificationBadge.text}</span>
+                          {verificationBadge.type === 'alert' ? (
+                            <AlertTriangle className="w-4 h-4 flex-shrink-0 text-amber-600 dark:text-amber-400" />
+                          ) : (
+                            <FileCheck2 className="w-4 h-4 flex-shrink-0" />
+                          )}
+                          <span className="font-medium">{verificationBadge.text}</span>
                         </div>
                       )}
                     </div>

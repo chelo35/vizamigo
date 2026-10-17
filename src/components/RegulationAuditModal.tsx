@@ -42,16 +42,16 @@ export const AUDIT_DATABASE: AuditRecord[] = [
     nameTr: 'Karadağ (Montenegro)',
     nameEn: 'Montenegro',
     nameDe: 'Montenegro',
-    currentRule: 'VF (90 gün)',
-    verifiedStatusTr: 'Vizesiz 90 gün (Kayan 180 günde 90 gün; dönemsel genelge uyarıları kontrol edilmeli)',
-    verifiedStatusEn: 'Visa-Free 90 days (90/180 rolling days; seasonal decree notices apply)',
-    verifiedStatusDe: 'Visumfrei 90 Tage (90/180 rollierende Tage; saisonale Erlasse beachten)',
+    currentRule: 'VF (30 gün)',
+    verifiedStatusTr: '30 Gün Vizesiz (31 Ekim 2026’ya kadar) · 1 Kasım 2026 İtibarıyla Vize Zorunlu',
+    verifiedStatusEn: '30 Days Visa-Free (Until Oct 31, 2026) · Mandatory Visa Starting Nov 1, 2026',
+    verifiedStatusDe: '30 Tage visumfrei (bis 31. Okt 2026) · Visumpflicht ab 1. Nov 2026',
     status: 'ATTENTION',
     sourceName: 'Karadağ Dışişleri / TC Podgoritsa Büyükelçiliği',
     sourceUrl: 'https://www.gov.me/en/mvp',
-    noteTr: 'Karadağ hükümeti bazı dönemlerde turizm sezonu dışı kalış sürelerine ilişkin düzenlemeler yapabilmektedir. Kayan 180 gün kuralı hesaplayıcıda aktiftir.',
-    noteEn: 'Seasonal tourism regulations may alter stay limits outside high season. Rolling 180-day rule active in calculator.',
-    noteDe: 'Saisonale Verordnungen können Aufenthaltsfristen außerhalb der Hochsaison anpassen. Rollierende 180-Tage-Regel im Rechner aktiv.'
+    noteTr: 'Karadağ hükümeti Türk vatandaşları için vizesiz rejimi sonlandırmaktadır. 31 Ekim 2026 tarihine kadar 30 gün vizesiz giriş geçerlidir; 1 Kasım 2026 itibarıyla konsolosluk vizesi zorunlu olacaktır. Çok girişli Schengen/ABD/İngiltere vizesi olanlar muaf tutulabilmektedir.',
+    noteEn: 'Montenegro is ending visa-free access for Turkish citizens. 30 days visa-free remains valid until Oct 31, 2026; starting Nov 1, 2026 an advance visa is mandatory. Valid multi-entry Schengen/US/UK visas may provide an exemption.',
+    noteDe: 'Montenegro beendet die Visafreiheit für türkische Staatsbürger. Bis 31. Oktober 2026 gilt 30 Tage visumfrei; ab 1. November 2026 gilt Visumpflicht. Gültige Mehrfach-Schengen-/US-/UK-Visa können befreien.'
   },
   {
     code: 'TH',
