@@ -54,7 +54,8 @@ import {
   ArrowDownUp,
   Droplets,
   ShieldAlert,
-  Receipt
+  Receipt,
+  Printer
 } from 'lucide-react';
 import {
   getCountryName,
@@ -137,8 +138,6 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const [converterBase, setConverterBase] = useState<'USD' | 'EUR' | 'GBP' | 'LOCAL'>('USD');
   const [remoteBaseCity, setRemoteBaseCity] = useState<'IST' | 'NYC' | 'LON' | 'BER' | 'SFO' | 'SIN' | 'TYO'>('IST');
   const [marketTargetCurrency, setMarketTargetCurrency] = useState<'GBP' | 'USD' | 'EUR'>('GBP');
-  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
-  const [isMinimized, setIsMinimized] = useState<boolean>(false);
   const [dossierSearch, setDossierSearch] = useState<string>('');
 
   const handleDossierSearchChange = (q: string) => {
@@ -186,17 +185,11 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
   const modalRef = useRef<HTMLDivElement>(null);
   useModalA11y({
     isOpen,
-    onClose: () => {
-      if (isFullscreen) {
-        setIsFullscreen(false);
-      } else {
-        onClose();
-      }
-    },
+    onClose,
     modalRef
   });
 
-  // Lock body scroll when modal is open
+  // Lock body scroll when page is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -206,11 +199,10 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     };
   }, [isOpen]);
 
-  // Reset tab and fullscreen mode when country changes
+  // Reset tab when country changes
   useEffect(() => {
     if (isOpen) {
       setActiveTab('itinerary');
-      setIsFullscreen(false);
     }
   }, [isOpen, countryCode]);
 
@@ -427,226 +419,143 @@ Planlayan: Vizamigo (vizamigo.com)`;
   // Nomad Apps (Ride-hailing & Delivery)
   const nomadApps = getCountryNomadApps(code, insights.transport.popularRideApps);
 
-  if (isMinimized) {
-    return (
-      <div className="fixed bottom-20 lg:bottom-6 right-4 z-50 flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#042637] to-[#0D9488] text-white shadow-2xl border-2 border-[#2DD4BF] animate-in fade-in slide-in-from-bottom-4 duration-200">
-        <span className="text-xl">{getFlag(code)}</span>
-        <span className="text-sm font-black">{name} ({code})</span>
-        <button
-          type="button"
-          onClick={() => setIsMinimized(false)}
-          className="px-3 py-1 rounded-full bg-[#2DD4BF] text-[#042F2E] text-xs font-black cursor-pointer hover:bg-[#5EEAD4] transition-all"
-        >
-          {l('Büyüt ⛶', 'Restore ⛶')}
-        </button>
-        <button
-          type="button"
-          onClick={onClose}
-          className="p-1.5 rounded-full hover:bg-white/20 cursor-pointer"
-          title={l('Kapat', 'Close')}
-        >
-          <X className="w-4 h-4" />
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div
-      className={`fixed inset-0 z-50 flex flex-col justify-end sm:justify-center sm:items-center ${
-        isFullscreen ? 'p-0' : 'p-0 sm:p-5 sm:py-6'
-      } overflow-y-auto backdrop-blur-md bg-slate-950/80 animate-in fade-in duration-200`}
-      onClick={() => {
-        if (isFullscreen) setIsFullscreen(false);
-        onClose();
-      }}
+      ref={modalRef}
+      role="region"
+      aria-labelledby="dossier-page-title"
+      tabIndex={-1}
+      className="fixed inset-0 z-50 bg-[#F8FAFC] dark:bg-[#0B0F17] flex flex-col overflow-hidden text-slate-900 dark:text-slate-100 animate-in fade-in duration-150"
     >
-      <div
-        ref={modalRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="dossier-modal-title"
-        tabIndex={-1}
-        className={`${
-          isFullscreen
-            ? 'dossier-fullscreen-panel fixed inset-0 w-screen h-screen z-[99999] rounded-none max-w-none max-h-none flex flex-col glass-panel shadow-2xl transition-all duration-300'
-            : 'mobile-bottom-sheet-panel relative w-full sm:max-w-5xl h-[94dvh] sm:h-auto max-h-[94dvh] sm:max-h-[90vh] flex flex-col glass-panel rounded-t-[32px] sm:rounded-3xl rounded-b-none sm:rounded-b-3xl shadow-2xl transition-all duration-300'
-        }`}
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Mobile Bottom-Sheet Pull Handle Pill */}
-        <div className="w-12 h-1.5 rounded-full bg-slate-300/80 dark:bg-white/20 mx-auto mt-2.5 mb-1 sm:hidden shrink-0" aria-hidden="true" />
+      {/* 1. TOP EXECUTIVE APP BAR (CLEAN AIRBNB / APPLE STYLE - ZERO WINDOW BUTTONS) */}
+      <header className="sticky top-0 z-30 shrink-0 px-4 sm:px-8 py-3 bg-white/95 dark:bg-[#0B0F17]/95 border-b border-slate-200/80 dark:border-white/10 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          {/* Left: [ ← Keşfet ] + Flag + Country Title + Code + Status */}
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+            <button
+              type="button"
+              onClick={onClose}
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
+              title={l('Keşfet\'e Dön', 'Back to Explore', 'Zurück')}
+            >
+              <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+              <span>{l('Keşfet\'e Dön', 'Explore', 'Zurück')}</span>
+            </button>
 
-        {/* Top Header Banner - Symmetrical & Compact Executive Travel Layout */}
-        <div className="relative px-4 py-3 sm:px-6 sm:py-4 bg-gradient-to-r from-[#042637] via-[#0E7490]/40 to-[#042637] border-b border-[#2DD4BF]/30">
-          <div className="flex items-center justify-between gap-3">
-            {/* Left: [ ← Geri ] + Flag + Title + Code + Status */}
-            <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
-              <button
-                type="button"
-                onClick={onClose}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black bg-white/95 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-[#0D9488] hover:text-white transition-all cursor-pointer shadow-2xs shrink-0"
-                title={l('Geri Dön', 'Go Back')}
-              >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span className="hidden xs:inline">{l('Geri', 'Back')}</span>
-              </button>
-              <span className="text-3xl sm:text-4xl leading-none filter drop-shadow select-none shrink-0">
+            <div className="flex items-center gap-2.5 min-w-0">
+              <span className="text-2xl sm:text-3xl leading-none select-none shrink-0">
                 {getFlag(code)}
               </span>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h1 id="dossier-modal-title" className="text-base sm:text-xl font-black text-white tracking-tight truncate drop-shadow-sm">
+                  <h1 id="dossier-page-title" className="text-base sm:text-xl font-extrabold text-slate-900 dark:text-white tracking-tight truncate">
                     {name}
                   </h1>
-                  <span className="font-mono text-xs px-2.5 py-0.5 rounded-md bg-white text-slate-900 font-black border border-slate-200 shadow-xs shrink-0">
+                  <span className="font-mono text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 font-bold shrink-0">
                     {code}
                   </span>
-                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-black bg-white text-slate-900 border border-slate-200 shadow-xs shrink-0">
-                    <Sparkles className="w-3 h-3 text-amber-500" />
-                    <span>{badgeLabel}</span>
-                  </span>
-                </div>
-                <div className="text-xs sm:text-sm text-teal-100 font-semibold truncate mt-0.5 drop-shadow-xs">
-                  {getCountryNaturalH1(name, language)}
+                  <StatusBadge status={visaStatus} label={badgeLabel} className="text-xs font-bold px-2.5 py-0.5 rounded-full shrink-0" />
                 </div>
               </div>
             </div>
-
-            {/* Right: Window Controls ([ — ] [ ⛶ ] [ ✕ ]) with High-Contrast White Background */}
-            <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 z-20">
-              <button
-                type="button"
-                onClick={() => {
-                  if (isFullscreen) setIsFullscreen(false);
-                  setIsMinimized(true);
-                }}
-                className="inline-flex items-center justify-center p-2 rounded-full bg-white text-slate-900 hover:bg-slate-100 border border-slate-200 transition-all cursor-pointer shadow-xs"
-                title={l('Küçült', 'Minimize')}
-                aria-label="Minimize window"
-              >
-                <Minus className="w-4 h-4 text-slate-900" />
-              </button>
-
-              {/* Printable Travel Brief & PDF Export Button (Autonomous Agent 4) */}
-              <button
-                type="button"
-                onClick={() => {
-                  const res = runTripDossierAgent(code, currentPassport, language);
-                  if (res.printableHtml) {
-                    const printWin = window.open('', '_blank');
-                    if (printWin) {
-                      printWin.document.write(res.printableHtml);
-                      printWin.document.close();
-                      printWin.focus();
-                      setTimeout(() => printWin.print(), 350);
-                    }
-                  }
-                }}
-                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black bg-gradient-to-r from-[#F97316] to-[#FB7185] text-white hover:brightness-110 shadow-sm cursor-pointer shrink-0"
-                title={l('Seyahat Dosyasını Yazdır / PDF İndir', 'Print or Save Trip Dossier as PDF')}
-              >
-                <span>📄</span>
-                <span>{l('PDF / Yazdır', 'PDF / Print')}</span>
-              </button>
-
-              {!isFullscreen ? (
-                <button
-                  type="button"
-                  onClick={() => setIsFullscreen(true)}
-                  className="inline-flex items-center justify-center p-2 rounded-full bg-white text-slate-900 hover:bg-slate-100 border border-slate-200 transition-all cursor-pointer shadow-xs"
-                  title={l('Ekranı Kapla', 'Fullscreen')}
-                  aria-label="Expand country dossier to full screen"
-                >
-                  <Maximize2 className="w-4 h-4 text-slate-900" />
-                </button>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => setIsFullscreen(false)}
-                  className="inline-flex items-center justify-center p-2 rounded-full bg-white text-slate-900 hover:bg-slate-100 border border-slate-200 transition-all cursor-pointer shadow-xs"
-                  title={l('Varsayılan Boyuta Küçült', 'Restore Window')}
-                  aria-label="Restore default size"
-                >
-                  <Minimize2 className="w-4 h-4 text-slate-900" />
-                </button>
-              )}
-
-              {/* Close Button (X) */}
-              <button
-                type="button"
-                onClick={onClose}
-                className="p-2 rounded-full bg-white text-rose-600 hover:bg-rose-50 border border-slate-200 transition-all cursor-pointer shrink-0 shadow-xs"
-                title={l('Kapat', 'Close', 'Schließen')}
-                aria-label="Close dossier"
-              >
-                <X className="w-4 h-4 text-rose-600" />
-              </button>
-            </div>
           </div>
 
-          {/* Symmetrical Row 2: In-Dossier Search Bar + Metadata & Verification Pill Strip */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-2.5 pt-2.5 border-t border-teal-500/15 dark:border-white/10 text-xs sm:text-sm">
-            <div className="relative w-full sm:w-80 shrink-0">
-              <Search className="w-3.5 h-3.5 text-[#0F766E] dark:text-[#2DD4BF] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-              <input
-                type="search"
-                value={dossierSearch}
-                onChange={(e) => handleDossierSearchChange(e.target.value)}
-                placeholder={l(
-                  `${name} içinde vize, taksi, priz, otel veya yemek ara...`,
-                  `Search visa, taxi, plug, hotel or food in ${name}...`
-                )}
-                className="w-full pl-8 pr-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/95 dark:bg-white/[0.08] border border-teal-500/25 dark:border-white/15 text-slate-900 dark:text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-500/40"
-              />
-            </div>
+          {/* Right Actions: PDF / Print + View on Maps + Close */}
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onClick={() => {
+                const res = runTripDossierAgent(code, currentPassport, language);
+                if (res.printableHtml) {
+                  const printWin = window.open('', '_blank');
+                  if (printWin) {
+                    printWin.document.write(res.printableHtml);
+                    printWin.document.close();
+                    printWin.focus();
+                    setTimeout(() => printWin.print(), 350);
+                  }
+                }
+              }}
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/10 transition-colors cursor-pointer shadow-2xs shrink-0"
+              title={l('Seyahat Dosyasını Yazdır / PDF İndir', 'Print or Save Trip Dossier as PDF')}
+            >
+              <Printer className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
+              <span>{l('PDF / Yazdır', 'PDF / Print')}</span>
+            </button>
 
-            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
-              {(geo?.capital || geography?.capital) && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/80 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-bold border border-teal-500/15 shrink-0 text-xs">
-                  <span>🏛️</span>
-                  <span>{l('Başkent:', 'Capital:', 'Hauptstadt:')} <b>{geo?.capital || geography?.capital}</b></span>
-                </span>
-              )}
+            <button
+              type="button"
+              onClick={openGoogleMaps}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/10 transition-colors cursor-pointer shadow-2xs shrink-0"
+              title={l('Haritada Aç', 'View on Maps')}
+            >
+              <MapPin className="w-3.5 h-3.5 text-[#0D9488]" />
+              <span className="hidden sm:inline">{l('Harita', 'Map')}</span>
+            </button>
 
-              {geo?.mainHub && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/80 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-bold border border-teal-500/15 shrink-0 text-xs">
-                  <span>✈️</span>
-                  <span>IATA: <b className="font-mono text-[#0F766E] dark:text-[#2DD4BF]">{geo.mainHub}</b></span>
-                </span>
-              )}
-
-              <button
-                type="button"
-                onClick={onOpenAudit}
-                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-bold border transition-colors cursor-pointer shrink-0 text-xs ${verStatus.color}`}
-                title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
-              >
-                <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-                <span>✓ {verStatus.label}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={openGoogleMaps}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/80 hover:bg-teal-500/15 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-bold border border-teal-500/15 transition-colors cursor-pointer shrink-0 text-xs"
-              >
-                <MapPin className="w-3 h-3 text-rose-500" />
-                <span>Harita</span>
-                <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={onClose}
+              className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer shrink-0"
+              title={l('Kapat', 'Close')}
+              aria-label="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
           </div>
         </div>
 
-        {/* =====================================================================
-            FIXED TAB NAVIGATION BAR: Sits permanently below header, ZERO overlap with content!
-        ===================================================================== */}
-        <div className="shrink-0 px-3 sm:px-6 py-2 bg-[#042637] dark:bg-[#021824] border-b border-[#2DD4BF]/30 backdrop-blur-xl flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none">
+        {/* Symmetrical Row 2: In-Dossier Search Bar + Metadata & Verification Pill Strip */}
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mt-2.5 pt-2.5 border-t border-slate-100 dark:border-white/5 text-xs sm:text-sm">
+          <div className="relative w-full sm:w-80 shrink-0">
+            <Search className="w-3.5 h-3.5 text-[#0D9488] dark:text-[#2DD4BF] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <input
+              type="search"
+              value={dossierSearch}
+              onChange={(e) => handleDossierSearchChange(e.target.value)}
+              placeholder={l(
+                `${name} içinde vize, priz, otel veya yemek ara...`,
+                `Search visa, plug, hotel or food in ${name}...`
+              )}
+              className="w-full pl-8 pr-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-50 dark:bg-white/[0.06] border border-slate-200/80 dark:border-white/10 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0D9488]/30"
+            />
+          </div>
+
+          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+            {(geo?.capital || geography?.capital) && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-semibold border border-slate-200/60 dark:border-white/5 shrink-0 text-xs">
+                <span>🏛️</span>
+                <span>{l('Başkent:', 'Capital:', 'Hauptstadt:')} <b>{geo?.capital || geography?.capital}</b></span>
+              </span>
+            )}
+
+            {geo?.mainHub && (
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-white/[0.06] text-slate-800 dark:text-slate-200 font-semibold border border-slate-200/60 dark:border-white/5 shrink-0 text-xs">
+                <span>✈️</span>
+                <span>IATA: <b className="font-mono text-[#0D9488] dark:text-[#2DD4BF]">{geo.mainHub}</b></span>
+              </span>
+            )}
+
+            <button
+              type="button"
+              onClick={onOpenAudit}
+              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg font-bold border transition-colors cursor-pointer shrink-0 text-xs ${verStatus.color}`}
+              title={l('Mevzuat Denetim Masasını Aç', 'Open Regulation Audit Console', 'Audit-Konsole öffnen')}
+            >
+              <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+              <span>✓ {verStatus.label}</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* 2. CATEGORY TABS BAR (APPLE / AIRBNB CLEAN UNDERLINE STYLE) */}
+      <nav className="sticky top-[105px] sm:top-[115px] z-20 shrink-0 bg-white/95 dark:bg-[#0B0F17]/95 border-b border-slate-200/80 dark:border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center gap-1 sm:gap-2 overflow-x-auto whitespace-nowrap scrollbar-none">
           {[
             { key: 'itinerary', icon: Route, label: l('Gezi Planı & Rota', 'Itinerary & Route', 'Reiseplan') },
-            { key: 'concierge', icon: Sparkles, label: l('Kolay Tatil & Asistan', 'Easy Vacation & Hub', 'Urlaubs-Assistent') },
-            { key: 'logistics', icon: Zap, label: l('Lojistik & Göçebe Hub', 'Nomad & Logistics', 'Logistik-Hub') },
+            { key: 'concierge', icon: Sparkles, label: l('Kolay Tatil & Asistan', 'Easy Vacation', 'Urlaubs-Assistent') },
+            { key: 'logistics', icon: Zap, label: l('Lojistik & Göçebe', 'Nomad & Logistics', 'Logistik-Hub') },
             { key: 'culture', icon: Landmark, label: l('Kültür & Turizm', 'Culture & Sights', 'Kultur') },
             { key: 'gastronomy', icon: Utensils, label: l('Yemek & İçecek', 'Food & Drinks', 'Kulinarik') },
             { key: 'language', icon: Languages, label: l('Dil & Tarih', 'Language & History', 'Sprache & Geschichte') },
@@ -657,24 +566,26 @@ Planlayan: Vizamigo (vizamigo.com)`;
               key={tab.key}
               type="button"
               onClick={() => handleTabChange(tab.key as DossierTab)}
-              className={`shrink-0 flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer ${
+              className={`py-3 sm:py-3.5 px-3 sm:px-4 text-xs sm:text-sm font-semibold border-b-2 transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 activeTab === tab.key
-                  ? 'bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white shadow-md shadow-teal-900/30 border border-[#5EEAD4]/60'
-                  : 'bg-white/10 dark:bg-white/[0.08] text-teal-100 hover:text-white hover:bg-white/20 border border-[#2DD4BF]/30'
+                  ? 'border-[#0D9488] text-[#0D9488] dark:border-[#2DD4BF] dark:text-[#2DD4BF] font-bold'
+                  : 'border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:border-slate-300'
               }`}
             >
-              <tab.icon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${activeTab === tab.key ? 'text-[#5EEAD4]' : 'text-teal-300'}`} />
+              <tab.icon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${activeTab === tab.key ? 'text-[#0D9488] dark:text-[#2DD4BF]' : 'text-slate-400'}`} />
               <span>{tab.label}</span>
             </button>
           ))}
         </div>
+      </nav>
 
-        {/* Tab Content Body (Scrollable, Fluid Bottom-Sheet & Fullscreen) */}
-        <div
-          ref={scrollContainerRef}
-          className="dossier-scrollable-content flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 space-y-6 overscroll-contain"
-          style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y pinch-zoom' }}
-        >
+      {/* 3. SCROLLABLE PAGE BODY */}
+      <div
+        ref={scrollContainerRef}
+        className="flex-1 min-h-0 overflow-y-auto overscroll-contain"
+        style={{ WebkitOverflowScrolling: 'touch' }}
+      >
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 py-6 space-y-6">
           {/* Teal Status Band & Stay Limit Card - Compact 2-column Layout */}
           <div className="rounded-2xl bg-gradient-to-r from-teal-600 to-[#0D9488] p-3 sm:p-4 text-white shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center gap-3">
@@ -976,22 +887,22 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     return (
                       <div
                         key={sIdx}
-                        className="relative bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/70 dark:border-[#2DD4BF]/40 rounded-2xl p-4 sm:p-6 space-y-4 shadow-sm"
+                        className="relative bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-white/10 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs"
                       >
                         {/* Stop Top Header */}
-                        <div className="flex flex-wrap items-start justify-between gap-3">
+                        <div className="flex flex-wrap items-start justify-between gap-3 pb-3 border-b border-slate-100 dark:border-white/5">
                           <div className="flex items-center gap-3 min-w-0">
-                            <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#0D9488] to-[#14B8A6] text-white font-black flex items-center justify-center text-sm flex-shrink-0 shadow-md border border-[#5EEAD4]/60">
+                            <span className="w-8 h-8 rounded-full bg-[#0D9488] text-white font-bold flex items-center justify-center text-sm shrink-0 shadow-xs">
                               {sIdx + 1}
                             </span>
                             <div className="min-w-0">
-                              <h3 className="font-black text-base sm:text-xl text-[#042F2E] dark:text-white tracking-tight truncate">
+                              <h3 className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white tracking-tight truncate">
                                 {stop.name}
                               </h3>
                               <div className="flex items-center gap-2 mt-1">
-                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100/90 dark:bg-teal-900/50 text-teal-950 dark:text-teal-200 border border-teal-300 dark:border-teal-700 font-extrabold text-xs sm:text-sm shadow-xs">
-                                  <Clock className="w-3.5 h-3.5 text-teal-700 dark:text-teal-300" />
-                                  <span>{l('Yeterli Ziyaret Süresi:', 'Duration:', 'Dauer:', 'Duración:', 'Длительность:')} <b>{stop.recommendedDuration}</b></span>
+                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-slate-100 dark:bg-white/5 text-slate-700 dark:text-slate-300 font-semibold text-xs">
+                                  <Clock className="w-3.5 h-3.5 text-[#0D9488] dark:text-[#2DD4BF]" />
+                                  <span>{l('Önerilen Süre:', 'Duration:', 'Dauer:', 'Duración:', 'Длительность:')} <b>{stop.recommendedDuration}</b></span>
                                 </span>
                               </div>
                             </div>
@@ -1000,27 +911,27 @@ Planlayan: Vizamigo (vizamigo.com)`;
                           <button
                             type="button"
                             onClick={() => window.open(stopMapsUrl, '_blank', 'noopener,noreferrer')}
-                            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white dark:bg-slate-900 hover:bg-teal-50 dark:hover:bg-slate-800 text-teal-900 dark:text-teal-200 border border-teal-300 dark:border-teal-700 text-xs sm:text-sm font-black shadow-xs cursor-pointer transition-colors"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-white/5 dark:hover:bg-white/10 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 text-xs font-semibold shadow-2xs cursor-pointer transition-colors"
                           >
-                            <MapPin className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
-                            <span>{l('Durağı Haritada Aç', 'View Stop on Maps', 'Auf Karte zeigen', 'Ver en el Mapa', 'Открыть на карте')}</span>
-                            <ExternalLink className="w-3 h-3 opacity-70" />
+                            <MapPin className="w-3.5 h-3.5 text-[#0D9488]" />
+                            <span>{l('Durağı Haritada Aç', 'View on Maps', 'Auf Karte zeigen', 'Ver en el Mapa', 'Открыть на карте')}</span>
+                            <ExternalLink className="w-3 h-3 opacity-60" />
                           </button>
                         </div>
 
                         {/* Highlights Tags */}
                         {stop.highlights.length > 0 && (
                           <div className="space-y-1.5">
-                            <div className="text-xs font-black text-teal-900 dark:text-teal-300 uppercase tracking-wider">
+                            <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                               {l('Görülmesi Gereken İkonik Noktalar:', 'Must-See Landmarks:', 'Wichtigste Sehenswürdigkeiten:', 'Lugares Emblemáticos:', 'Главные достопримечательности:')}
                             </div>
                             <div className="flex flex-wrap gap-2">
                               {stop.highlights.map((h, hIdx) => (
                                 <span
                                   key={hIdx}
-                                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-white dark:bg-slate-900 border border-teal-200 dark:border-teal-700/60 text-slate-900 dark:text-white text-xs sm:text-sm font-bold shadow-2xs"
+                                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-50 dark:bg-white/[0.04] border border-slate-200/70 dark:border-white/5 text-slate-800 dark:text-slate-200 text-xs font-medium"
                                 >
-                                  <span className="w-2 h-2 rounded-full bg-teal-500" />
+                                  <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
                                   <span>{h}</span>
                                 </span>
                               ))}
@@ -1030,53 +941,56 @@ Planlayan: Vizamigo (vizamigo.com)`;
 
                         {/* Activities List */}
                         <div className="space-y-2 pt-1">
-                          <div className="text-xs font-black text-teal-900 dark:text-teal-300 uppercase tracking-wider flex items-center gap-1.5">
-                            <span>🏃</span>
-                            <span>{l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:', 'Qué Hacer y Actividades:', 'Чем заняться и что посмотреть:')}</span>
+                          <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                            {l('Neler Yapılır & Nereler Gezilir?', 'What to Do & Activities:', 'Was man unternimmt & Aktivitäten:', 'Qué Hacer y Actividades:', 'Чем заняться и что посмотреть:')}
                           </div>
                           <ul className="space-y-1.5">
                             {stop.activities.map((act, aIdx) => (
-                              <li key={aIdx} className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 flex items-start gap-2 font-medium leading-relaxed">
-                                <span className="text-teal-600 dark:text-teal-400 font-black flex-shrink-0">•</span>
+                              <li key={aIdx} className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 flex items-start gap-2 font-medium leading-relaxed">
+                                <span className="text-[#0D9488] font-bold shrink-0">•</span>
                                 <span>{act}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
 
-                        {/* Gastronomy Box for Stop - Harmonious Ocean Turquoise Glass */}
-                        <div className="p-3.5 sm:p-4 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border border-emerald-300/80 dark:border-emerald-700/60 space-y-2">
-                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-emerald-900 dark:text-emerald-200">
-                            <Utensils className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                            <span>{l('🍲 Bu Durakta Ne Yenir & Ne İçilir?', '🍲 What to Eat & Drink at this Stop:', '🍲 Essen & Trinken an diesem Stopp:', '🍲 Qué Comer y Beber en esta Parada:', '🍲 Что поесть и выпить на этой остановке:')}</span>
+                        {/* Gastronomy Box for Stop - Clean Luxury Editorial Card */}
+                        {stop.foodAndDrinks.length > 0 && (
+                          <div className="p-4 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] border border-slate-200/70 dark:border-white/10 space-y-2">
+                            <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
+                              <Utensils className="w-4 h-4 text-[#0D9488] dark:text-[#2DD4BF]" />
+                              <span>{l('Bu Durakta Ne Yenir & Ne İçilir?', 'What to Eat & Drink:', 'Essen & Trinken:', 'Qué Comer y Beber:', 'Что поесть и выпить:')}</span>
+                            </div>
+                            <div className="flex flex-wrap gap-2 pt-0.5">
+                              {stop.foodAndDrinks.map((fd, fIdx) => (
+                                <span
+                                  key={fIdx}
+                                  className="px-3 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-white/10 text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-200 shadow-2xs"
+                                >
+                                  {fd}
+                                </span>
+                              ))}
+                            </div>
                           </div>
-                          <div className="flex flex-wrap gap-2 pt-0.5">
-                            {stop.foodAndDrinks.map((fd, fIdx) => (
-                              <span
-                                key={fIdx}
-                                className="px-3 py-1 rounded-xl bg-white dark:bg-slate-900 border border-emerald-200 dark:border-emerald-700 text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white shadow-2xs"
-                              >
-                                {fd}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
+                        )}
 
-                        {/* Critical Tips & Precautions for Stop - High-Contrast Lagoon Alert */}
-                        <div className="p-3.5 sm:p-4 rounded-2xl bg-[#042637] dark:bg-[#031E2C] border border-cyan-500/50 space-y-2 text-white shadow-sm">
-                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black text-cyan-200">
-                            <AlertTriangle className="w-4 h-4 text-amber-400" />
-                            <span>{l('⚠️ Nelere Dikkat Edilir & Kritik İpuçları:', '⚠️ What to Watch Out for & Tips:', '⚠️ Wichtige Hinweise & Tipps:', '⚠️ Precauciones y Consejos Clave:', '⚠️ На что обратить внимание и советы:')}</span>
+                        {/* Critical Tips & Precautions - Clean Amber Minimal Alert */}
+                        {stop.criticalTips.length > 0 && (
+                          <div className="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/70 dark:border-amber-800/40 space-y-2 text-amber-950 dark:text-amber-100">
+                            <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-900 dark:text-amber-300">
+                              <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                              <span>{l('Nelere Dikkat Edilmeli & Kritik İpuçları:', 'Important Tips & Precautions:', 'Wichtige Hinweise & Tipps:', 'Consejos Clave y Precauciones:', 'Важные советы и предостережения:')}</span>
+                            </div>
+                            <ul className="space-y-1.5 pl-1">
+                              {stop.criticalTips.map((tip, tIdx) => (
+                                <li key={tIdx} className="text-xs sm:text-sm text-amber-900/90 dark:text-amber-200/90 font-medium flex items-start gap-2 leading-relaxed">
+                                  <span className="text-amber-500 font-bold shrink-0">•</span>
+                                  <span>{tip}</span>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
-                          <ul className="space-y-1.5">
-                            {stop.criticalTips.map((tip, tIdx) => (
-                              <li key={tIdx} className="text-xs sm:text-sm text-cyan-100 font-medium flex items-start gap-2 leading-relaxed">
-                                <span className="text-cyan-400 font-black flex-shrink-0">›</span>
-                                <span>{tip}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                        )}
                       </div>
                     );
                   })}
@@ -1084,25 +998,25 @@ Planlayan: Vizamigo (vizamigo.com)`;
               </div>
 
               {/* Signature Gastronomy Summary */}
-              <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-5 sm:p-6 space-y-4 shadow-sm">
-                <div className="flex items-center gap-2.5 border-b border-teal-500/20 dark:border-slate-700/60 pb-3">
-                  <Utensils className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                  <h3 className="font-black text-base sm:text-lg text-slate-900 dark:text-slate-100">
+              <div className="bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-white/10 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs">
+                <div className="flex items-center gap-2.5 border-b border-slate-100 dark:border-white/5 pb-3">
+                  <Utensils className="w-5 h-5 text-[#0D9488] dark:text-[#2DD4BF]" />
+                  <h3 className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-slate-100">
                     {l('Mutfak Kültürü: Rotanın İmza Lezzetleri & İçecekleri', 'Culinary Culture: Signature Dishes & Drinks', 'Kulinarik: Typische Gerichte & Getränke', 'Cultura Culinaria: Platos y Bebidas Emblemáticas', 'Кулинарная культура: фирменные блюда и напитки')}
                   </h3>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
                   {/* Famous Dishes */}
-                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 space-y-2 shadow-2xs">
-                    <div className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <div className="p-4 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 space-y-2">
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍲</span>
                       <span>{l('Öne Çıkan Yemekler', 'Signature Dishes', 'Typische Gerichte', 'Platos Destacados', 'Фирменные блюда')}</span>
                     </div>
                     <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                       {itinerary.signatureGastronomy.dishes.map((dish, idx) => (
                         <li key={idx} className="flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488] shrink-0" />
                           <span>{dish}</span>
                         </li>
                       ))}
@@ -1110,15 +1024,15 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   </div>
 
                   {/* Drinks */}
-                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 space-y-2 shadow-2xs">
-                    <div className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <div className="p-4 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 space-y-2">
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍹</span>
                       <span>{l('Geleneksel İçecekler', 'Traditional Drinks', 'Traditionelle Getränke', 'Bebidas Tradicionales', 'Традиционные напитки')}</span>
                     </div>
                     <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                       {itinerary.signatureGastronomy.drinks.map((drink, idx) => (
                         <li key={idx} className="flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-sky-500 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0" />
                           <span>{drink}</span>
                         </li>
                       ))}
@@ -1126,15 +1040,15 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   </div>
 
                   {/* Street Food */}
-                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/60 space-y-2 shadow-2xs">
-                    <div className="text-xs sm:text-sm font-black text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <div className="p-4 rounded-xl bg-slate-50/80 dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 space-y-2">
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
                       <span>🍢</span>
                       <span>{l('Sokak Lezzetleri & Tatlılar', 'Street Food & Sweets', 'Streetfood & Süßes', 'Comida Callejera y Postres', 'Уличная еда и сладости')}</span>
                     </div>
                     <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
                       {itinerary.signatureGastronomy.streetFoods.map((snack, idx) => (
                         <li key={idx} className="flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
                           <span>{snack}</span>
                         </li>
                       ))}
@@ -1142,25 +1056,25 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-teal-50 dark:bg-teal-950/50 border border-teal-300 dark:border-teal-800 text-xs sm:text-sm text-teal-950 dark:text-teal-200 font-medium leading-relaxed">
-                  <b className="font-black">💡 {l('Masa Kültürü & Bahşiş:', 'Dining Etiquette & Tipping:', 'Tischsitten & Trinkgeld:', 'Etiqueta en la Mesa y Propinas:', 'Культура застолья и чаевые:')}</b> {itinerary.signatureGastronomy.diningAdvice}
+                <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
+                  <b className="font-bold text-slate-900 dark:text-white">💡 {l('Masa Kültürü & Bahşiş:', 'Dining Etiquette & Tipping:', 'Tischsitten & Trinkgeld:', 'Etiqueta en la Mesa y Propinas:', 'Культура застолья и чаевые:')}</b> {itinerary.signatureGastronomy.diningAdvice}
                 </div>
               </div>
 
               {/* Packing & Precautions Card */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Packing Essentials */}
-                <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-4 sm:p-5 space-y-3 shadow-sm">
-                  <div className="flex items-center gap-2 border-b border-teal-500/20 dark:border-slate-700/60 pb-2.5">
+                <div className="bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-white/10 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs">
+                  <div className="flex items-center gap-2 border-b border-slate-100 dark:border-white/5 pb-2.5">
                     <span className="text-lg">🎒</span>
-                    <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-slate-100">
+                    <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100">
                       {l('Yanınıza Almanız Gerekenler (Çanta)', 'Packing Essentials', 'Packliste & Must-Haves', 'Imprescindibles en el Equipaje', 'Что взять с собой')}
                     </h3>
                   </div>
-                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
+                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
                     {itinerary.packingAndPrecautions.essentials.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-[#0D9488] dark:text-[#2DD4BF] shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -1168,17 +1082,17 @@ Planlayan: Vizamigo (vizamigo.com)`;
                 </div>
 
                 {/* Safety & Etiquette */}
-                <div className="bg-[#F0FDFA] dark:bg-[#062634] border border-[#5EEAD4]/60 dark:border-[#2DD4BF]/40 rounded-2xl p-4 sm:p-5 space-y-3 shadow-sm">
-                  <div className="flex items-center gap-2 border-b border-teal-500/20 dark:border-slate-700/60 pb-2.5">
-                    <Shield className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                    <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-slate-100">
+                <div className="bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-white/10 rounded-2xl p-4 sm:p-5 space-y-3 shadow-xs">
+                  <div className="flex items-center gap-2 border-b border-slate-100 dark:border-white/5 pb-2.5">
+                    <Shield className="w-4 h-4 text-[#0D9488] dark:text-[#2DD4BF]" />
+                    <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100">
                       {l('Güvenlik & Yerel Görgü Kuralları', 'Safety & Cultural Etiquette', 'Sicherheit & Verhaltensregeln', 'Seguridad y Etiqueta Cultural', 'Безопасность и местный этикет')}
                     </h3>
                   </div>
-                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
+                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
                     {itinerary.packingAndPrecautions.safetyAndEtiquette.map((rule, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <AlertTriangle className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
                         <span>{rule}</span>
                       </li>
                     ))}
@@ -2656,39 +2570,41 @@ Planlayan: Vizamigo (vizamigo.com)`;
             </div>
           )}
         </div>
+      </div>
 
-        {/* Footer Actions */}
-        <div className="px-5 sm:px-6 py-3.5 bg-slate-50/60 dark:bg-white/[0.02] border-t border-slate-200/80 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="text-xs sm:text-sm text-slate-500 dark:text-[#8E9DBE] flex items-center gap-2 truncate">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
+      {/* 4. FOOTER ACTIONS */}
+      <footer className="shrink-0 px-4 sm:px-8 py-3 bg-white/95 dark:bg-[#0B0F17]/95 border-t border-slate-200/80 dark:border-white/10">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
             <span className="truncate">
               {l(
-                '🛡️ Vize ve sınır geçiş kuralları IATA Timatic ve diplomatik mevzuat bültenleriyle (Ekim 2026) teyitlidir. Ülke ansiklopedisi doğrulanmış küresel arşivlerden derlenmiştir.',
-                '🛡️ Visa and entry regulations verified via IATA Timatic & consular gazettes (Oct 2026). Country encyclopedia compiled from verified global archives.',
-                '🛡️ Visabestimmungen über IATA Timatic & Konsularberichte (Okt 2026) verifiziert. Enzyklopädie aus geprüften Archiven.'
+                'Vize ve seyahat mevzuatı IATA Timatic ve resmi diplomatik bültenlerle (2026) teyitlidir.',
+                'Visa and travel regulations verified via IATA Timatic and official diplomatic gazettes (2026).',
+                'Visabestimmungen über IATA Timatic und offizielle Konsularberichte verifiziert.'
               )}
             </span>
           </div>
 
-          <div className="flex items-center gap-2 self-end sm:self-auto">
+          <div className="flex items-center gap-2.5 self-end sm:self-auto shrink-0">
             <button
               type="button"
               onClick={openGoogleMaps}
-              className="btn-nubair-secondary text-xs"
+              className="px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer text-xs"
             >
-              {l('Haritada Gör', 'View on Maps', 'Auf Karte zeigen')}
+              {l('Haritada Aç', 'View on Maps', 'Auf Karte zeigen')}
             </button>
 
             <button
               type="button"
               onClick={onClose}
-              className="btn-nubair-primary text-xs"
+              className="px-4 py-1.5 rounded-xl bg-[#0D9488] hover:bg-[#0F766E] text-white font-semibold transition-colors cursor-pointer text-xs"
             >
-              {l('Kapat', 'Close', 'Schließen')}
+              {l('Keşfet\'e Dön', 'Back to Explore', 'Zurück')}
             </button>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 };
