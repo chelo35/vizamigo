@@ -997,8 +997,6 @@ body,
 /* DOM & Smooth Scroll Optimization for Country Cards (Eliminates CLS and scroll jitter) */
 .country-card {
   contain: layout paint;
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 /* ==========================================================================
