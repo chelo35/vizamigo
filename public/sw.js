@@ -1,5 +1,5 @@
 // Vizamigo Service Worker - Offline In-Flight / Airport Resiliency
-const CACHE_NAME = 'vizamigo-v2';
+const CACHE_NAME = 'vizamigo-v3';
 const PRECACHE_ASSETS = [
   '/',
   '/manifest.json',
