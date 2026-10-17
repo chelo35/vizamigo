@@ -15,6 +15,13 @@ import BR from './countries/BR.json';
 import JP from './countries/JP.json';
 import DE from './countries/DE.json';
 import US from './countries/US.json';
+import FR from './countries/FR.json';
+import ES from './countries/ES.json';
+import IT from './countries/IT.json';
+import TR from './countries/TR.json';
+import MX from './countries/MX.json';
+import GB from './countries/GB.json';
+import GR from './countries/GR.json';
 
 export interface VerifiedSource {
   url: string;
@@ -164,6 +171,13 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   JP: JP as unknown as VerifiedCountryRecord,
   DE: DE as unknown as VerifiedCountryRecord,
   US: US as unknown as VerifiedCountryRecord,
+  FR: FR as unknown as VerifiedCountryRecord,
+  ES: ES as unknown as VerifiedCountryRecord,
+  IT: IT as unknown as VerifiedCountryRecord,
+  TR: TR as unknown as VerifiedCountryRecord,
+  MX: MX as unknown as VerifiedCountryRecord,
+  GB: GB as unknown as VerifiedCountryRecord,
+  GR: GR as unknown as VerifiedCountryRecord,
 };
 
 /**

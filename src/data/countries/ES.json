@@ -1,0 +1,424 @@
+{
+  "iso2": "ES",
+  "names": {
+    "tr": "İspanya",
+    "en": "Spain",
+    "de": "Spanien",
+    "ru": "Испания",
+    "es": "España"
+  },
+  "capital": {
+    "value": "Madrid",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.lamoncloa.gob.es",
+        "tier": 1,
+        "title": "Gobierno de España - La Moncloa"
+      }
+    ],
+    "evidence_quote": "La capital del Estado español es la villa de Madrid según el artículo 5 de la Constitución",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bde.es",
+        "tier": 1,
+        "title": "Banco de España"
+      }
+    ],
+    "evidence_quote": "El euro es la moneda de curso legal en España desde enero de 2002",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2) / Kanarya: UTC+0",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ign.es",
+        "tier": 1,
+        "title": "Instituto Geográfico Nacional de España"
+      }
+    ],
+    "evidence_quote": "Hora oficial en la Península y Baleares UTC+1; en Canarias rige UTC+0",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ree.es",
+          "tier": 1,
+          "title": "Red Eléctrica de España"
+        }
+      ],
+      "evidence_quote": "La tensión nominal de la red eléctrica de baja tensión en España es de 230 voltios",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ree.es",
+          "tier": 1,
+          "title": "Red Eléctrica de España"
+        }
+      ],
+      "evidence_quote": "La frecuencia del sistema eléctrico peninsular español es de 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.une.org",
+          "tier": 1,
+          "title": "Asociación Española de Normalización (UNE 20315)"
+        }
+      ],
+      "evidence_quote": "Bases de enchufe de tipo C y tipo F (Schuko) normalizadas en España",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "091 / 092",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.es",
+          "tier": 1,
+          "title": "Policía Nacional de España (091)"
+        }
+      ],
+      "evidence_quote": "El 091 corresponde a la Policía Nacional y el 092 a la Policía Local",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "061",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mscbs.gob.es",
+          "tier": 1,
+          "title": "Ministerio de Sanidad: Urgencias Médicas 061"
+        }
+      ],
+      "evidence_quote": "El 061 es el número de emergencias sanitarias y ambulancias públicas",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "080 / 085",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interior.gob.es",
+          "tier": 1,
+          "title": "Ministerio del Interior: Bomberos"
+        }
+      ],
+      "evidence_quote": "El 080 corresponde a los servicios de extinción de incendios urbanos",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interior.gob.es",
+          "tier": 1,
+          "title": "Centro de Emergencias 112 España"
+        }
+      ],
+      "evidence_quote": "El 112 es el teléfono único de emergencias en todo el territorio español",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "902 102 112 (SATE)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.es/_es/sate.php",
+          "tier": 1,
+          "title": "Servicio de Atención al Turista Extranjero (SATE)"
+        }
+      ],
+      "evidence_quote": "El SATE presta atención policial especializada a turistas extranjeros en varios idiomas",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/spain-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Spain Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "Safe travel with caution",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/spain",
+          "tier": 1,
+          "title": "UK FCDO: Spain Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genel güvenlik çok yüksek; Barselona ve Madrid merkezinde yankesiciliğe karşı dikkatli olun",
+      "en": "Exercise normal precautions; high safety overall with vigilance advised for pickpockets in Barcelona & Madrid",
+      "de": "Normale Vorsichtsmaßnahmen; hohe Sicherheit, Taschendiebstahl in Barcelona und Madrid beachten",
+      "ru": "Обычные меры предосторожности; высокий уровень безопасности, внимание к карманникам",
+      "es": "Precauciones normales; alta seguridad general con vigilancia ante carteristas en zonas turísticas"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "low",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 84.7,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/spain",
+          "tier": 2,
+          "title": "Speedtest Global Index: Spain"
+        }
+      ],
+      "evidence_quote": "Spain median mobile download speed exceeds 80 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 182.3,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/spain",
+          "tier": 2,
+          "title": "Speedtest Global Index: Spain"
+        }
+      ],
+      "evidence_quote": "Spain high fiber optic penetration with median speed over 180 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Movistar, Vodafone, Orange ve MásMóvil ağları yaygındır; kimlik/pasaport kaydı mecburidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cnmc.es",
+          "tier": 1,
+          "title": "Comisión Nacional de los Mercados y la Competencia (CNMC)"
+        }
+      ],
+      "evidence_quote": "Identificación obligatoria de los usuarios de telefonía móvil de prepago en España",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Cabify",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://cabify.com/es",
+        "tier": 2,
+        "title": "Cabify España"
+      }
+    },
+    {
+      "name": "FreeNow",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.free-now.com/es/",
+        "tier": 2,
+        "title": "FreeNow Taxi Spain"
+      }
+    },
+    {
+      "name": "Renfe Cercanías",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.renfe.com",
+        "tier": 1,
+        "title": "Renfe Operadora Oficial"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/es/",
+        "tier": 2,
+        "title": "Glovo Delivery Spain"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%56), Dinsiz/Ateist (%39), Diğer dinler (%3)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cis.es",
+          "tier": 1,
+          "title": "Centro de Investigaciones Sociológicas (CIS)"
+        }
+      ],
+      "evidence_quote": "Barómetro del CIS sobre creencias y religiosidad en la sociedad española",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Semana Santa (Kutsal Hafta), Las Fallas (Valensiya), La Tomatina (Buñol), Feria de Abril",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.spain.info",
+          "tier": 1,
+          "title": "Turespaña - Portal Oficial de Turismo de España"
+        }
+      ],
+      "evidence_quote": "Fiestas de Interés Turístico Internacional reconocidas oficialmente en España",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Öğleden sonra 14:00-17:00 arası siesta nedeniyle küçük dükkanlar kapanabilir. Pazar günleri mağazalar kapalıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.spain.info",
+          "tier": 1,
+          "title": "Turespaña: Horarios comerciales y costumbres"
+        }
+      ],
+      "evidence_quote": "Horarios comerciales habituales y descanso dominical regulado por las comunidades",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş (propina) zorunlu değildir; memnun kalınan hizmet için %5-10 civarı madeni para bırakmak yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.spain.info",
+          "tier": 1,
+          "title": "Turespaña: Costumbres sobre propinas"
+        }
+      ],
+      "evidence_quote": "En España la propina no es obligatoria ya que el servicio está incluido en el precio",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Barselona Sagrada Família Bazilikası",
+        "en": "Basílica de la Sagrada Família",
+        "de": "Sagrada Família Basilika",
+        "ru": "Храм Святого Семейства (Саграда Фамилия)",
+        "es": "Basílica de la Sagrada Família"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/320",
+          "tier": 2,
+          "title": "UNESCO: Works of Antoni Gaudí"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Barselona Sagrada Família Bazilikası",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Daniel Corneschi on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Barselona Sagrada Família Bazilikası Gaudi mimarisi kuleleri",
+          "en": "Basílica de la Sagrada Família architectural towers in Barcelona",
+          "de": "Basílica de la Sagrada Família von Antoni Gaudí in Barcelona",
+          "ru": "Башни Саграда Фамилия работы Антонио Гауди в Барселоне",
+          "es": "Torres de la Basílica de la Sagrada Família en Barcelona"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "ispanya",
+      "en": "spain",
+      "de": "spanien",
+      "ru": "ispaniya",
+      "es": "espana"
+    },
+    "title": {
+      "tr": "İspanya Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Spain Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Spanien Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Испания: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visados y Requisitos para España 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İspanya Schengen vize kuralları, acil polis 091 numaraları, priz tipi, Madrid ve Barselona seyahat tavsiyeleri.",
+      "en": "Spain visa requirements, emergency contacts (091/112), plug types, transportation apps and safety guidance.",
+      "de": "Einreisebestimmungen für Spanien, Notrufnummern, Steckdosentypen und Tipps für Barcelona & Madrid.",
+      "ru": "Правила въезда в Испанию, экстренные службы, розетки и полезные советы путешественникам.",
+      "es": "Requisitos de entrada para España, teléfonos de emergencia, tipos de enchufe y consejos de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

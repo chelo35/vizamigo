@@ -1,0 +1,419 @@
+{
+  "iso2": "IT",
+  "names": {
+    "tr": "İtalya",
+    "en": "Italy",
+    "de": "Italien",
+    "ru": "Италия",
+    "es": "Italia"
+  },
+  "capital": {
+    "value": "Roma",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.governo.it",
+        "tier": 1,
+        "title": "Governo Italiano - Presidenza del Consiglio dei Ministri"
+      }
+    ],
+    "evidence_quote": "Roma è la capitale della Repubblica Italiana ai sensi della Costituzione",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bancaditalia.it",
+        "tier": 1,
+        "title": "Banca d'Italia"
+      }
+    ],
+    "evidence_quote": "L'euro è la valuta avente corso legale in Italia dal 1° gennaio 2002",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.inrim.it",
+        "tier": 1,
+        "title": "Istituto Nazionale di Ricerca Metrologica (INRiM)"
+      }
+    ],
+    "evidence_quote": "L'ora solare nazionale corrisponde al fuso UTC+1 e l'ora estiva a UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.arera.it",
+          "tier": 1,
+          "title": "ARERA - Autorità di Regolazione per Energia Reti e Ambiente"
+        }
+      ],
+      "evidence_quote": "La tensione nominale standard per l'erogazione di energia elettrica in bassa tensione è 230 V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.terna.it",
+          "tier": 1,
+          "title": "Terna Rete Elettrica Nazionale"
+        }
+      ],
+      "evidence_quote": "La frequenza nominale della rete elettrica italiana è di 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "L"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ceiweb.it",
+          "tier": 1,
+          "title": "Comitato Elettrotecnico Italiano (CEI)"
+        }
+      ],
+      "evidence_quote": "Presa tipo L a tre alveoli allineati, tipo C bipolare e tipo F Schuko",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "113 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.poliziadistato.it",
+          "tier": 1,
+          "title": "Polizia di Stato (113) & Carabinieri (112)"
+        }
+      ],
+      "evidence_quote": "Il 113 è il Soccorso Pubblico della Polizia di Stato e 112 per i Carabinieri",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.salute.gov.it",
+          "tier": 1,
+          "title": "Ministero della Salute: Emergenza Sanitaria 118"
+        }
+      ],
+      "evidence_quote": "Il 118 è il numero telefonico nazionale per l'emergenza sanitaria",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vigilfuoco.it",
+          "tier": 1,
+          "title": "Vigili del Fuoco (115)"
+        }
+      ],
+      "evidence_quote": "Il 115 è il numero d'emergenza del Corpo Nazionale dei Vigili del Fuoco",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interno.gov.it",
+          "tier": 1,
+          "title": "Ministero dell'Interno: Numero Unico Europeo 112"
+        }
+      ],
+      "evidence_quote": "Il Numero Unico Europeo 112 raggruppa tutti i servizi di pronto intervento",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/italy-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Italy Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/italien-node/italiensicherheit/211322",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Italien Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart seyahat güvenliği; tarihi merkezlerde (ZTL) sürüş kısıtlamalarına ve yankesiciliğe dikkat",
+      "en": "Exercise normal precautions; high safety with attention to ZTL limited traffic zones & crowded pickpockets",
+      "de": "Normale Vorsichtsmaßnahmen; ZTL-Verkehrsbeschränkungen und Taschendiebstahl beachten",
+      "ru": "Обычные меры предосторожности; ограничение движения в зонах ZTL и карманники",
+      "es": "Precauciones normales; prestar atención a las zonas de tráfico limitado (ZTL) y carteristas"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "low",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 78.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/italy",
+          "tier": 2,
+          "title": "Speedtest Global Index: Italy"
+        }
+      ],
+      "evidence_quote": "Italy median mobile download speed exceeds 75 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 128.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/italy",
+          "tier": 2,
+          "title": "Speedtest Global Index: Italy"
+        }
+      ],
+      "evidence_quote": "Italy median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "TIM, Vodafone Italia, WindTre ve Iliad 5G yaygındır; Codice Fiscale veya pasaportla aktivasyon zorunludur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.agcom.it",
+          "tier": 1,
+          "title": "AGCOM - Autorità per le Garanzie nelle Comunicazioni"
+        }
+      ],
+      "evidence_quote": "Identificazione anagrafica obbligatoria tramite documento d'identità valido per le SIM",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Trenitalia",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.trenitalia.com",
+        "tier": 1,
+        "title": "Trenitalia Gruppo FS Italiane"
+      }
+    },
+    {
+      "name": "Italo Treno",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.italotreno.it",
+        "tier": 2,
+        "title": "Italo Alta Velocità"
+      }
+    },
+    {
+      "name": "FreeNow",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.free-now.com/it/",
+        "tier": 2,
+        "title": "FreeNow Taxi Italy"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/it/",
+        "tier": 2,
+        "title": "Glovo Delivery Italia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%74), İnançsız/Ateist (%22), Diğer dinler (%4)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.istat.it",
+          "tier": 1,
+          "title": "ISTAT - Istituto Nazionale di Statistica"
+        }
+      ],
+      "evidence_quote": "Rapporto ISTAT sulla popolazione e l'appartenenza religiosa in Italia",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Venedik Karnavalı, Siena Palio At Yarışları, Ferragosto (15 Ağustos), Milano Moda Haftası",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.italia.it",
+          "tier": 1,
+          "title": "Ministero del Turismo - Italia.it"
+        }
+      ],
+      "evidence_quote": "Grandi eventi e manifestazioni storiche e culturali celebrate sul territorio italiano",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Restoranlarda kuver (Coperto) ücreti faturaya eklenir. Şehir merkezlerinde ZTL (Zona a Traffico Limitato) bölgelerine izinsiz araçla girmek ağır para cezasına tabidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mit.gov.it",
+          "tier": 1,
+          "title": "Ministero delle Infrastrutture e dei Trasporti: Norme ZTL"
+        }
+      ],
+      "evidence_quote": "Le Zone a Traffico Limitato (ZTL) vietano l'accesso ai non autorizzati sotto sanzione",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Coperto kuver ücreti hesaba yansıdığı için bahşiş zorunlu değildir; memnuniyet için masaya 1-2 € bırakılabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.italia.it",
+          "tier": 1,
+          "title": "Italia.it - Consigli pratici sul coperto e mance"
+        }
+      ],
+      "evidence_quote": "La mancia non è obbligatoria e il coperto è solitamente specificato nel menù",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Roma Kolezyum ve Antik Forum",
+        "en": "Colosseum and Roman Forum",
+        "de": "Kolosseum und Forum Romanum",
+        "ru": "Колизей и Римский форум",
+        "es": "Coliseo y Foro Romano"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/91",
+          "tier": 2,
+          "title": "UNESCO: Historic Centre of Rome"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Roma Kolezyum ve Antik Forum",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by David Köhler on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Roma Kolezyum Amfitiyatrosu gün batımı görünümü",
+          "en": "Historic Colosseum amphitheatre sunset in Rome",
+          "de": "Historisches Kolosseum-Amphitheater in Rom bei Sonnenuntergang",
+          "ru": "Римский Колизей на закате",
+          "es": "Coliseo de Roma al atardecer"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "italya",
+      "en": "italy",
+      "de": "italien",
+      "ru": "italiya",
+      "es": "italia"
+    },
+    "title": {
+      "tr": "İtalya Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Italy Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Italien Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Италия: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Italia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İtalya Schengen vize şartları, acil numaralar (112/118), priz tipleri C/F/L, Roma, Venedik ve Floransa seyahat tavsiyeleri.",
+      "en": "Italy visa guidelines, emergency numbers, C/F/L socket types, train booking apps, and local travel tips.",
+      "de": "Einreisebestimmungen für Italien, Notrufnummern, Steckdosentypen C/F/L und Reisetipps.",
+      "ru": "Правила въезда в Италию, экстренные номера, розетки C/F/L и полезные советы путешественникам.",
+      "es": "Requisitos de entrada para Italia, números de emergencia, enchufes y consejos para viajar a Roma y Florencia."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

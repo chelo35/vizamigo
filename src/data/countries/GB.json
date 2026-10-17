@@ -1,0 +1,417 @@
+{
+  "iso2": "GB",
+  "names": {
+    "tr": "Birleşik Krallık",
+    "en": "United Kingdom",
+    "de": "Vereinigtes Königreich",
+    "ru": "Великобритания",
+    "es": "Reino Unido"
+  },
+  "capital": {
+    "value": "Londra",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.uk",
+        "tier": 1,
+        "title": "GOV.UK Official Government Portal"
+      }
+    ],
+    "evidence_quote": "London is the capital city of the United Kingdom and seat of the Parliament",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "GBP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bankofengland.co.uk",
+        "tier": 1,
+        "title": "Bank of England"
+      }
+    ],
+    "evidence_quote": "The pound sterling is the official currency of the United Kingdom (GBP)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (Yaz: UTC+1 BST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.npl.co.uk",
+        "tier": 1,
+        "title": "National Physical Laboratory (NPL Time)"
+      }
+    ],
+    "evidence_quote": "Greenwich Mean Time (GMT) in winter and British Summer Time (BST / UTC+1) in summer",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nationalgrid.com",
+          "tier": 1,
+          "title": "National Grid Electricity Distribution"
+        }
+      ],
+      "evidence_quote": "Standard UK domestic electricity supply voltage is 230V AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nationalgrid.com",
+          "tier": 1,
+          "title": "National Grid ESO"
+        }
+      ],
+      "evidence_quote": "Nominal system frequency of the electricity transmission system is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bsigroup.com",
+          "tier": 1,
+          "title": "British Standards Institution (BS 1363)"
+        }
+      ],
+      "evidence_quote": "Standard UK Type G 3-pin rectangular blade plugs conforming to BS 1363",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999 / 101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.uk",
+          "tier": 1,
+          "title": "Police.uk: Emergency Services"
+        }
+      ],
+      "evidence_quote": "Call 999 for genuine emergencies and 101 for non-emergency police assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999 / 111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
+          "tier": 1,
+          "title": "NHS England: When to call 999"
+        }
+      ],
+      "evidence_quote": "Call 999 for medical emergencies and NHS 111 for urgent medical advice",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/fire-prevention-safety-and-wellbeing",
+          "tier": 1,
+          "title": "GOV.UK: Fire and Rescue Services"
+        }
+      ],
+      "evidence_quote": "Dial 999 to reach the Fire and Rescue Service in life-threatening emergencies",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.uk",
+          "tier": 1,
+          "title": "GOV.UK Emergency Services (999 and 112)"
+        }
+      ],
+      "evidence_quote": "Both 999 and 112 connect to UK emergency service dispatchers free of charge",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/united-kingdom-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: UK Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/grossbritannien-node/grossbritanniensicherheit/206408",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Großbritannien Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 2); Londra merkezinde telefon kapkaççılığına ve kalabalık metro istasyonlarına dikkat",
+      "en": "Exercise increased caution (Level 2); high safety overall with vigilance against phone snatches in London",
+      "de": "Normale Vorsichtsmaßnahmen; hohe Sicherheit, Aufmerksamkeit bei Telefondiebstahl in London",
+      "ru": "Повышенные меры предосторожности; высокая безопасность, внимание к кражам телефонов в Лондоне",
+      "es": "Precaución incrementada (Nivel 2); atención ante robos de teléfonos en zonas céntricas de Londres"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "low",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 72.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/united-kingdom",
+          "tier": 2,
+          "title": "Speedtest Global Index: United Kingdom"
+        }
+      ],
+      "evidence_quote": "United Kingdom median mobile download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 105.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/united-kingdom",
+          "tier": 2,
+          "title": "Speedtest Global Index: United Kingdom"
+        }
+      ],
+      "evidence_quote": "United Kingdom median fixed broadband speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "EE, O2, Vodafone UK ve Three 5G ağları yaygındır; süpermarket ve havaalanlarından kolayca SIM alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ofcom.org.uk",
+          "tier": 1,
+          "title": "Ofcom Communications Regulator"
+        }
+      ],
+      "evidence_quote": "Ofcom mobile market overview and prepaid SIM registration guidelines",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Citymapper",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://citymapper.com/london",
+        "tier": 2,
+        "title": "Citymapper London"
+      }
+    },
+    {
+      "name": "TfL Go",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tfl.gov.uk/maps/tfl-go",
+        "tier": 1,
+        "title": "Transport for London Official App"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/gb/en/",
+        "tier": 2,
+        "title": "Uber UK"
+      }
+    },
+    {
+      "name": "Trainline",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.thetrainline.com",
+        "tier": 2,
+        "title": "Trainline UK Rail Booking"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (%46 - Anglikan, Katolik), Dinsiz (%37), İslam (%6.5), Hindu (%1.7)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ons.gov.uk",
+          "tier": 1,
+          "title": "Office for National Statistics (ONS Census)"
+        }
+      ],
+      "evidence_quote": "Census data on religion across England and Wales published by ONS",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Edinburgh Fringe Festival, Notting Hill Karnavalı, Glastonbury Festivali, Guy Fawkes Gecesi",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitbritain.com",
+          "tier": 1,
+          "title": "VisitBritain Official Tourism Agency"
+        }
+      ],
+      "evidence_quote": "Major national festivals and cultural events celebrated across Great Britain",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Trafik soldan akar; karşıdan karşıya geçerken önce sağa bakın. Toplu taşımada ve yürüyen merdivenlerde sağda durun (Stand on the right).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tfl.gov.uk",
+          "tier": 1,
+          "title": "Transport for London: Commuter Etiquette"
+        }
+      ],
+      "evidence_quote": "Always stand on the right on Tube escalators to allow passengers to walk on the left",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesaba %12.5 'Optional Service Charge' eklenmesi yaygındır; pub'larda tezgaha bahşiş bırakılmaz.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitbritain.com",
+          "tier": 1,
+          "title": "VisitBritain: Tipping in the UK"
+        }
+      ],
+      "evidence_quote": "A discretionary service charge of 12.5% is often added to restaurant bills in London",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Big Ben ve Westminster Sarayı",
+        "en": "Big Ben and Palace of Westminster",
+        "de": "Big Ben und Palace of Westminster",
+        "ru": "Биг-Бен и Вестминстерский дворец",
+        "es": "Big Ben y Palacio de Westminster"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/426",
+          "tier": 2,
+          "title": "UNESCO: Palace of Westminster and Westminster Abbey"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Big Ben ve Westminster Sarayı",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Luke Stackpoole on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Londra Big Ben saat kulesi ve kırmızı otobüs",
+          "en": "Big Ben Elizabeth Tower with a red London bus on Westminster Bridge",
+          "de": "Big Ben Elizabeth Tower mit rotem Doppeldeckerbus in London",
+          "ru": "Биг-Бен и традиционный красный автобус в Лондоне",
+          "es": "Big Ben y el emblemático autobús rojo en Londres"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "birlesik-krallik",
+      "en": "united-kingdom",
+      "de": "grossbritannien",
+      "ru": "velikobritaniya",
+      "es": "reino-unido"
+    },
+    "title": {
+      "tr": "Birleşik Krallık Vize, Seyahat ve Tatil Rehberi 2026 | Vizamigo",
+      "en": "United Kingdom Visa, Entry & Travel Guide 2026 | Vizamigo",
+      "de": "Großbritannien Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "Великобритания: визы, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para el Reino Unido 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Birleşik Krallık vize gereksinimleri, ETA izinleri, 999 acil hatları, Tip G prizler ve Londra seyahat rehberi.",
+      "en": "UK visitor visa regulations, ETA requirements, 999 emergency dispatch, Type G plugs, and London travel tips.",
+      "de": "Einreisebestimmungen für das Vereinigte Königreich, ETA, Notruf 999, Steckdosentyp G und London-Tipps.",
+      "ru": "Правила въезда в Великобританию, визы, ETA, служба 999, розетки типа G и путеводитель по Лондону.",
+      "es": "Requisitos de entrada para el Reino Unido, ETA, teléfono de emergencia 999, enchufes tipo G y consejos de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,424 @@
+{
+  "iso2": "GR",
+  "names": {
+    "tr": "Yunanistan",
+    "en": "Greece",
+    "de": "Griechenland",
+    "ru": "Греция",
+    "es": "Grecia"
+  },
+  "capital": {
+    "value": "Atina",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.government.gov.gr",
+        "tier": 1,
+        "title": "Hellenic Republic Government Portal"
+      }
+    ],
+    "evidence_quote": "Athens is the historical and constitutional capital city of the Hellenic Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bankofgreece.gr",
+        "tier": 1,
+        "title": "Bank of Greece (Τράπεζα της Ελλάδος)"
+      }
+    ],
+    "evidence_quote": "The euro is the official legal tender currency in Greece since January 2001",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (Yaz: UTC+3)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eim.gr",
+        "tier": 1,
+        "title": "Hellenic Institute of Metrology (EIM)"
+      }
+    ],
+    "evidence_quote": "Eastern European Time (EET / UTC+2) and Eastern European Summer Time (EEST / UTC+3)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.deddie.gr",
+          "tier": 1,
+          "title": "Hellenic Electricity Distribution Network Operator (HEDNO)"
+        }
+      ],
+      "evidence_quote": "Nominal low voltage supply in Greece is 230V single phase AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.admie.gr",
+          "tier": 1,
+          "title": "Independent Power Transmission Operator (IPTO)"
+        }
+      ],
+      "evidence_quote": "The nominal operating frequency of the Greek interconnected electricity grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.elot.gr",
+          "tier": 1,
+          "title": "Hellenic Organization for Standardization (ELOT)"
+        }
+      ],
+      "evidence_quote": "Electrical sockets in Greece utilize standard Type C Europlug and Type F Schuko",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "100",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.astynomia.gr",
+          "tier": 1,
+          "title": "Hellenic Police (Ελληνική Αστυνομία - 100)"
+        }
+      ],
+      "evidence_quote": "Dial 100 for immediate police emergency response throughout Greece",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "166 (EKAB)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ekab.gr",
+          "tier": 1,
+          "title": "National Centre for Emergency Care (EKAB - 166)"
+        }
+      ],
+      "evidence_quote": "Dial 166 for national emergency ambulance and urgent medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fireservice.gr",
+          "tier": 1,
+          "title": "Hellenic Fire Service (Πυροσβεστικό Σώμα - 199)"
+        }
+      ],
+      "evidence_quote": "Dial 199 to report fires, forest fire alerts, and rescue emergencies",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://civilprotection.gov.gr/112",
+          "tier": 1,
+          "title": "General Secretariat for Civil Protection: 112 Greece"
+        }
+      ],
+      "evidence_quote": "112 is the European emergency number and natural disaster warning system in Greece",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1571",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.astynomia.gr/tourist-police/",
+          "tier": 1,
+          "title": "Hellenic Tourist Police: 1571 Multilingual Assistance"
+        }
+      ],
+      "evidence_quote": "Dial 1571 nationwide for 24/7 multilingual tourist police assistance and guidance",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/greece-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Greece Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/griechenland-node/griechenlandsicherheit/211534",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Griechenland Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 1); turizm adaları son derece güvenli, yaz aylarında orman yangını uyarılarını takip edin",
+      "en": "Exercise normal precautions (Level 1); high safety across islands with attention to summer wildfire alerts",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); Inseln sehr sicher, im Sommer Waldbrandwarnungen beachten",
+      "ru": "Обычные меры предосторожности (Уровень 1); высокая безопасность на островах, внимание к лесным пожарам",
+      "es": "Precauciones normales (Nivel 1); islas muy seguras, atención a alertas de incendios forestales en verano"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "natural_hazard": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 74.3,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/greece",
+          "tier": 2,
+          "title": "Speedtest Global Index: Greece"
+        }
+      ],
+      "evidence_quote": "Greece median mobile download speed with extensive 5G coverage across islands",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 49.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/greece",
+          "tier": 2,
+          "title": "Speedtest Global Index: Greece"
+        }
+      ],
+      "evidence_quote": "Greece median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Cosmote, Vodafone Greece ve Nova 5G yaygındır; pasaport ibrazı ile hat aktivasyonu zorunludur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eett.gr",
+          "tier": 1,
+          "title": "Hellenic Telecommunications and Post Commission (EETT)"
+        }
+      ],
+      "evidence_quote": "Mandatory passport identification for prepaid mobile SIM card activation in Greece",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Freenow Greece",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.free-now.com/gr/",
+        "tier": 2,
+        "title": "Freenow Taxi Greece"
+      }
+    },
+    {
+      "name": "OASA Telematics",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://telematics.oasa.gr",
+        "tier": 1,
+        "title": "Athens Urban Transport Organization"
+      }
+    },
+    {
+      "name": "Ferryhopper",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.ferryhopper.com",
+        "tier": 2,
+        "title": "Ferryhopper Greek Ferry Tickets"
+      }
+    },
+    {
+      "name": "Wolt Greece",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/grc",
+        "tier": 2,
+        "title": "Wolt Delivery Greece"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Doğu Ortodoks Hristiyanlık (%88), İnançsız/Ateist (%6), İslam (%2 - Batı Trakya)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statistics.gr",
+          "tier": 1,
+          "title": "Hellenic Statistical Authority (ELSTAT)"
+        }
+      ],
+      "evidence_quote": "Eastern Orthodox Church is recognized as the prevailing religion by the Greek Constitution",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Ortodoks Paskalyası (Pascha), Atina & Epidavros Festivali, Apokries Karnavalı, 25 Mart Bağımsızlık Günü",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitgreece.gr",
+          "tier": 1,
+          "title": "Greek National Tourism Organization (GNTO)"
+        }
+      ],
+      "evidence_quote": "Orthodox Easter and historic cultural festivals celebrated across the mainland and islands",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Tarihi ören yerlerinde topuklu ayakkabı giyilmesi mermerleri korumak için yasaktır. Kilise ziyaretlerinde saygılı giyim beklenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.culture.gov.gr",
+          "tier": 1,
+          "title": "Ministry of Culture and Sports: Archaeological Site Regulations"
+        }
+      ],
+      "evidence_quote": "Wearing high heels is prohibited on ancient monuments to protect delicate marble surfaces",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Taverna ve restoranlarda servis bedeli dahil olsa da, masaya %5 ila %10 oranında nakit bahşiş (filodorima) bırakmak adettir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitgreece.gr",
+          "tier": 1,
+          "title": "Visit Greece: Tipping Etiquette"
+        }
+      ],
+      "evidence_quote": "Tipping is customary in Greek dining, usually around 5-10% of the total bill",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Atina Akropolisi ve Parthenon",
+        "en": "Acropolis of Athens and Parthenon",
+        "de": "Akropolis von Athen und Parthenon",
+        "ru": "Афинский Акрополь и Парфенон",
+        "es": "Acrópolis de Atenas y Partenón"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/404",
+          "tier": 2,
+          "title": "UNESCO: Acropolis, Athens"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Santorini Oia Köyü Mavi Kubbeli Kiliseleri",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Matthew Waring on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Santorini Oia köyü mavi kubbeli kiliseleri ve Ege Denizi manzarası",
+          "en": "Santorini Oia village blue-domed church looking over Aegean Sea",
+          "de": "Blaukuppelkirchen im Dorf Oia auf Santorin mit Ägäis-Blick",
+          "ru": "Бело-голубые церкви деревни Ия на острове Санторини",
+          "es": "Iglesias de cúpulas azules en Oia, Santorini con vistas al mar Egeo"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "yunanistan",
+      "en": "greece",
+      "de": "griechenland",
+      "ru": "gretsiya",
+      "es": "grecia"
+    },
+    "title": {
+      "tr": "Yunanistan Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Greece Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Griechenland Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "Греция: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Grecia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Yunanistan kapı vizesi ve Schengen kuralları, 100/1571 acil hatları, feribot ulaşımı ve ada tatil rehberi.",
+      "en": "Greece entry requirements, island ferry transport, 112/1571 tourist police emergency hotlines, and travel advice.",
+      "de": "Einreisebestimmungen für Griechenland, Fähren, Notruf 112/1571 und Reisetipps für Inseln.",
+      "ru": "Правила въезда в Грецию, визы на острова, экстренная туристическая полиция 1571 и путеводитель.",
+      "es": "Requisitos de entrada para Grecia, ferris entre islas, teléfono de emergencia turística 1571 y consejos útiles."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

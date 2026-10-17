@@ -1,0 +1,435 @@
+{
+  "iso2": "MX",
+  "names": {
+    "tr": "Meksika",
+    "en": "Mexico",
+    "de": "Mexiko",
+    "ru": "Мексика",
+    "es": "México"
+  },
+  "capital": {
+    "value": "Meksiko (Ciudad de México)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gob.mx",
+        "tier": 1,
+        "title": "Gobierno de México"
+      }
+    ],
+    "evidence_quote": "La Ciudad de México es la capital de los Estados Unidos Mexicanos y sede de los Poderes de la Unión",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MXN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.banxico.org.mx",
+        "tier": 1,
+        "title": "Banco de México (Banxico)"
+      }
+    ],
+    "evidence_quote": "La unidad monetaria de los Estados Unidos Mexicanos es el peso mexicano (MXN)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (Zona Centro)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cenam.mx",
+        "tier": 1,
+        "title": "Centro Nacional de Metrología (CENAM)"
+      }
+    ],
+    "evidence_quote": "La mayor parte del territorio mexicano se rige por el huso horario UTC-6 (Tiempo del Centro)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "127V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cfe.mx",
+          "tier": 1,
+          "title": "Comisión Federal de Electricidad (CFE)"
+        }
+      ],
+      "evidence_quote": "El voltaje nominal del suministro residencial en México es de 127 voltios (+/- 10%)",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cfe.mx",
+          "tier": 1,
+          "title": "Comisión Federal de Electricidad (CFE)"
+        }
+      ],
+      "evidence_quote": "La frecuencia del sistema eléctrico nacional mexicano es de 60 Hertz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.mx/se",
+          "tier": 1,
+          "title": "Secretaría de Economía (Norma Oficial Mexicana NOM-003-SCFI)"
+        }
+      ],
+      "evidence_quote": "Clavijas y contactos de tipo A (dos clavijas planas) y tipo B con puesta a tierra",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.mx/sesnsp/acciones-y-programas/911-emergencias",
+          "tier": 1,
+          "title": "Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública: 911"
+        }
+      ],
+      "evidence_quote": "El 911 es el número único de emergencias médicas, seguridad y protección civil en México",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cruzrojamexicana.org.mx",
+          "tier": 1,
+          "title": "Cruz Roja Mexicana & 911"
+        }
+      ],
+      "evidence_quote": "Las ambulancias y emergencias médicas se canalizan a través del 911 a nivel nacional",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.mx/sesnsp",
+          "tier": 1,
+          "title": "Cuerpo de Bomberos & 911 México"
+        }
+      ],
+      "evidence_quote": "El servicio de bomberos se coordina de manera centralizada a través del 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.mx/sesnsp",
+          "tier": 1,
+          "title": "Número Único de Emergencias 911 México"
+        }
+      ],
+      "evidence_quote": "El 911 atiende de forma gratuita las 24 horas del día en toda la República Mexicana",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "078 (Ángeles Verdes)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.mx/sectur/acciones-y-programas/angeles-verdes",
+          "tier": 1,
+          "title": "Secretaría de Turismo: Corporación Ángeles Verdes (078)"
+        }
+      ],
+      "evidence_quote": "El número 078 brinda asistencia mecánica, orientación turística y auxilio vial en carreteras",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mexico-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Mexico Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/mexiko-node/mexikosicherheit/213648",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Mexiko Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Bölgesel değişkenlik gösteren güvenlik uyarısı; turizm merkezleri (Cancun, CDMX) güvenli, sınır eyaletlerine dikkat",
+      "en": "Exercise increased caution overall; major resort areas and Mexico City safe, high risks in specific northern states",
+      "de": "Erhöhte Vorsicht; Touristengebiete wie Cancún und CDMX sicher, bestimmte Bundesstaaten meiden",
+      "ru": "Повышенная осторожность; курорты и Мехико безопасны, избегать криминальных северных штатов",
+      "es": "Precaución incrementada; zonas turísticas como Cancún y CDMX seguras, precaución en estados del norte"
+    },
+    "regional_warnings": [
+      {
+        "area": "Sinaloa, Colima, Guerrero, Michoacán, Tamaulipas, Zacatecas",
+        "level": 4,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Level 4 State Advisories"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 38.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/mexico",
+          "tier": 2,
+          "title": "Speedtest Global Index: Mexico"
+        }
+      ],
+      "evidence_quote": "Mexico median mobile download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 68.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/mexico",
+          "tier": 2,
+          "title": "Speedtest Global Index: Mexico"
+        }
+      ],
+      "evidence_quote": "Mexico median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Telcel (América Móvil), AT&T Mexico ve Movistar yaygındır; OXXO mağazalarından kolayca SIM kart alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ift.org.mx",
+          "tier": 1,
+          "title": "Instituto Federal de Telecomunicaciones (IFT)"
+        }
+      ],
+      "evidence_quote": "Información regulatoria sobre adquisición de servicios móviles prepago en México",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "DiDi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://mexico.didiglobal.com",
+        "tier": 2,
+        "title": "DiDi México"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/mx/es-mx/",
+        "tier": 2,
+        "title": "Uber México"
+      }
+    },
+    {
+      "name": "Rappi",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.rappi.com.mx",
+        "tier": 2,
+        "title": "Rappi México"
+      }
+    },
+    {
+      "name": "MetroCDMX",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.metro.cdmx.gob.mx",
+        "tier": 1,
+        "title": "Sistema de Transporte Colectivo Metro CDMX"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%78), Protestan/Evanjelik (%11), Mezhepsiz/Ateist (%10)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.inegi.org.mx",
+          "tier": 1,
+          "title": "INEGI - Instituto Nacional de Estadística y Geografía"
+        }
+      ],
+      "evidence_quote": "Censo de Población y Vivienda del INEGI sobre religión en México",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Día de los Muertos (Ölüler Günü - 1-2 Kasım), Bağımsızlık Günü (16 Eylül), Guelaguetza (Oaxaca)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmexico.com",
+          "tier": 1,
+          "title": "Secretaría de Turismo - Visit México"
+        }
+      ],
+      "evidence_quote": "El Día de Muertos es una de las tradiciones culturales más emblemáticas de México, reconocida por la UNESCO",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Sokakta açık alkol tüketmek yasaktır. Havalimanlarında ve turistik bölgelerde yalnızca resmî 'Sitio' taksilerini veya uygulamaları kullanın.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.mx/segob",
+          "tier": 1,
+          "title": "Secretaría de Gobernación de México"
+        }
+      ],
+      "evidence_quote": "Se prohíbe el consumo de bebidas alcohólicas en la vía pública conforme a los reglamentos cívicos",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesap tutarının %10 ila %15'i oranında bahşiş (propina) bırakılması sosyal bir kural ve beklentidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.profeco.gob.mx",
+          "tier": 1,
+          "title": "PROFECO - Procuraduría Federal del Consumidor: Propinas"
+        }
+      ],
+      "evidence_quote": "La propina no puede ser obligatoria ni cargada automáticamente a la cuenta según PROFECO",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Chichén Itzá Maya Piramidi ve Kalıntıları",
+        "en": "Chichén Itzá Mayan Pyramid and Ruins",
+        "de": "Chichén Itzá Maya-Pyramide",
+        "ru": "Чичен-Ица пирамида майя",
+        "es": "Chichén Itzá Pirámide Maya"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/483",
+          "tier": 2,
+          "title": "UNESCO: Pre-Hispanic City of Chichen-Itza"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Chichén Itzá Maya Piramidi ve Kalıntıları",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Marv Watson on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Yucatan Chichén Itzá El Castillo antik Maya piramidi",
+          "en": "El Castillo pyramid at Chichen Itza ruins in Yucatan",
+          "de": "Kukulkan-Pyramide in Chichén Itzá, Yucatán",
+          "ru": "Пирамида Кукулькана в Чичен-Ице на полуострове Юкатан",
+          "es": "Pirámide de Kukulkán en Chichén Itzá, Yucatán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "meksika",
+      "en": "mexico",
+      "de": "mexiko",
+      "ru": "meksika",
+      "es": "mexico"
+    },
+    "title": {
+      "tr": "Meksika Vize, Seyahat ve Tatil Rehberi 2026 | Vizamigo",
+      "en": "Mexico Visa, Travel & Entry Guide 2026 | Vizamigo",
+      "de": "Mexiko Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "Мексика: виза, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para México 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Meksika SAE elektronik vize kuralları, 911 acil hatları, 127V priz tipleri A/B, Cancun ve Meksiko seyahat tavsiyeleri.",
+      "en": "Mexico entry guidelines, SAE electronic travel authorization, 911 emergency dispatch, and local travel safety advice.",
+      "de": "Einreisebestimmungen für Mexiko, 911-Notrufzentrale, Steckdosentypen A/B und Reisetipps.",
+      "ru": "Правила въезда в Мексику, электронное разрешение SAE, экстренная служба 911 и советы туристам.",
+      "es": "Requisitos de entrada para México, autorización electrónica SAE, teléfono de emergencia 911 y consejos útiles."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

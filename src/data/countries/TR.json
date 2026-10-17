@@ -1,0 +1,435 @@
+{
+  "iso2": "TR",
+  "names": {
+    "tr": "Türkiye",
+    "en": "Turkey",
+    "de": "Türkei",
+    "ru": "Турция",
+    "es": "Turquía"
+  },
+  "capital": {
+    "value": "Ankara",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mevzuat.gov.tr",
+        "tier": 1,
+        "title": "T.C. Anayasası Madde 3"
+      }
+    ],
+    "evidence_quote": "Türkiye Devletinin başkenti Ankara'dır",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TRY",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.tcmb.gov.tr",
+        "tier": 1,
+        "title": "Türkiye Cumhuriyet Merkez Bankası (TCMB)"
+      }
+    ],
+    "evidence_quote": "Türkiye Cumhuriyeti'nin para birimi Türk Lirası'dır (TRY)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (Sabit İleri Saat)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.resmigazete.gov.tr",
+        "tier": 1,
+        "title": "T.C. Resmî Gazete - İleri Saat Kararı"
+      }
+    ],
+    "evidence_quote": "Bütün yurtta yıl boyu uygulanan saat UTC+3 saat dilimidir",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tedas.gov.tr",
+          "tier": 1,
+          "title": "Türkiye Elektrik Dağıtım A.Ş. (TEDAŞ)"
+        }
+      ],
+      "evidence_quote": "Alçak gerilim elektrik şebekesinde anma gerilimi tek fazda 230 Volt'tur",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.teias.gov.tr",
+          "tier": 1,
+          "title": "Türkiye Elektrik İletim A.Ş. (TEİAŞ)"
+        }
+      ],
+      "evidence_quote": "Türkiye enterkonnekte elektrik iletim şebekesi frekansı 50 Hz'dir",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tse.org.tr",
+          "tier": 1,
+          "title": "Türk Standardları Enstitüsü (TS 40)"
+        }
+      ],
+      "evidence_quote": "Türkiye'de ev ve işyerlerinde Tip C ve topraklı Tip F priz ve fişler kullanılır",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.gov.tr",
+          "tier": 1,
+          "title": "T.C. İçişleri Bakanlığı 112 Acil Çağrı Merkezi"
+        }
+      ],
+      "evidence_quote": "112 Acil Çağrı Merkezi tüm acil numaraları (Emniyet, Jandarma vb.) tek çatı altında toplar",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.gov.tr",
+          "tier": 1,
+          "title": "T.C. Sağlık Bakanlığı Acil Sağlık Hizmetleri"
+        }
+      ],
+      "evidence_quote": "Ambulans ve acil sağlık yardımı için Türkiye genelinde 112 aranır",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.gov.tr",
+          "tier": 1,
+          "title": "T.C. İçişleri Bakanlığı İtfaiye Hizmetleri"
+        }
+      ],
+      "evidence_quote": "İtfaiye ve yangın ihbarları 112 Acil Çağrı Merkezi üzerinden yönlendirilir",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.gov.tr",
+          "tier": 1,
+          "title": "T.C. İçişleri Bakanlığı 112 Tek Acil Numara"
+        }
+      ],
+      "evidence_quote": "112, Türkiye Cumhuriyeti genelinde tüm acil durumlar için tek ve ücretsiz çağrı numarasıdır",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "112 (Yabancı Dil Destekli)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.gov.tr",
+          "tier": 1,
+          "title": "112 Çağrı Merkezleri Çok Dilli Hizmet (İngilizce/Almanca/Arapça/Rusça)"
+        }
+      ],
+      "evidence_quote": "112 çağrı merkezlerinde yabancı turistler için 4 dilde tercüman desteği sunulmaktadır",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkey-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Turkey Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/tuerkei-node/tuerkeisicherheit/201962",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Türkei Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik (Seviye 2); turizm kentlerinde güvenli, güneydoğu sınır hatlarında dikkatli olun",
+      "en": "Exercise increased caution (Level 2); major tourist hubs safe, exercise high caution near southeastern borders",
+      "de": "Erhöhte Vorsicht (Stufe 2); Tourismuszentren sicher, Vorsicht an den südöstlichen Grenzgebieten",
+      "ru": "Повышенные меры предосторожности (Уровень 2); курортные зоны безопасны",
+      "es": "Precaución incrementada (Nivel 2); centros turísticos seguros, atención en frontera sureste"
+    },
+    "regional_warnings": [
+      {
+        "area": "Suriye sınırına 10 km mesafe",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Border Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "medium",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 48.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/turkey",
+          "tier": 2,
+          "title": "Speedtest Global Index: Turkey"
+        }
+      ],
+      "evidence_quote": "Turkey median mobile download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 53.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/turkey",
+          "tier": 2,
+          "title": "Speedtest Global Index: Turkey"
+        }
+      ],
+      "evidence_quote": "Turkey median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Turkcell, Vodafone ve Türk Telekom 4.5G ağları yaygındır; yabancı pasaportla alınan turist hatları 90 gün geçerlidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.btk.gov.tr",
+          "tier": 1,
+          "title": "Bilgi Teknolojileri ve İletişim Kurumu (BTK)"
+        }
+      ],
+      "evidence_quote": "Yabancı kimlik veya pasaport ile açılan ön ödemeli hatlar mevzuat gereği kayıt altına alınır",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "BiTaksi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.bitaksi.com",
+        "tier": 2,
+        "title": "BiTaksi Türkiye"
+      }
+    },
+    {
+      "name": "Getir",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://getir.com",
+        "tier": 2,
+        "title": "Getir Türkiye"
+      }
+    },
+    {
+      "name": "İstanbulkart",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.istanbulkart.istanbul",
+        "tier": 1,
+        "title": "İstanbulkart Resmi Portalı"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/tr/tr/",
+        "tier": 2,
+        "title": "Uber Türkiye Sarı & Turkuaz Taksi"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Laik Devlet; Nüfusun çoğunluğu İslam dini mensubudur (Sünni, Alevi), gayrimüslim azınlıklar mevcuttur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.diyanet.gov.tr",
+          "tier": 1,
+          "title": "Diyanet İşleri Başkanlığı Bilgi Portalı"
+        }
+      ],
+      "evidence_quote": "Türkiye Cumhuriyeti Anayasası uyarınca laik bir hukuk devletidir",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "29 Ekim Cumhuriyet Bayramı, 23 Nisan, Ramazan ve Kurban Bayramları, İstanbul Kültür Sanat Festivalleri",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ktb.gov.tr",
+          "tier": 1,
+          "title": "T.C. Kültür ve Turizm Bakanlığı"
+        }
+      ],
+      "evidence_quote": "Türkiye genelinde kutlanan ulusal resmî bayramlar ve dini bayramlar kanunla belirlenmiştir",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Cami ziyaretlerinde omuz ve dizlerin örtülmesi, ayakkabıların çıkarılması gerekir. Bayrak ve ulusal değerlere saygı kanunla korunur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ktb.gov.tr",
+          "tier": 1,
+          "title": "Kültür ve Turizm Bakanlığı Ziyaretçi Kuralları"
+        }
+      ],
+      "evidence_quote": "Tarihi ve dini mekanların ziyaretinde edep ve kıyafet kurallarına uyulması esastır",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesap tutarının %10'u kadar bahşiş bırakmak yaygın ve nazik bir adettir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://goturkiye.com",
+          "tier": 1,
+          "title": "GoTürkiye Resmi Turizm Portalı"
+        }
+      ],
+      "evidence_quote": "In Turkish restaurants, leaving around 10% tip for good table service is standard custom",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Ayasofya-i Kebir Cami-i Şerifi ve Sultanahmet",
+        "en": "Hagia Sophia and Sultanahmet Historic District",
+        "de": "Hagia Sophia und historisches Sultanahmet",
+        "ru": "Собор Святой Софии (Айя-София)",
+        "es": "Santa Sofía y distrito histórico de Sultanahmet"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/356",
+          "tier": 2,
+          "title": "UNESCO: Historic Areas of Istanbul"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Ayasofya-i Kebir Cami-i Şerifi ve Sultanahmet Meydanı",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Alex Azabache on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "İstanbul Ayasofya-i Kebir Camii ve Sultanahmet Meydanı gün batımı",
+          "en": "Hagia Sophia Grand Mosque at dusk in Istanbul",
+          "de": "Hagia Sophia Moschee in Istanbul in der Abenddämmerung",
+          "ru": "Мечеть Айя-София в Стамбуле на закате",
+          "es": "Mezquita de Santa Sofía al atardecer en Estambul"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "turkiye",
+      "en": "turkey",
+      "de": "tuerkei",
+      "ru": "turtsiya",
+      "es": "turquia"
+    },
+    "title": {
+      "tr": "Türkiye Vize, Seyahat ve Giriş Rehberi 2026 | Vizamigo",
+      "en": "Turkey Visa, Travel & Entry Guide 2026 | Vizamigo",
+      "de": "Türkei Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "Турция: визы, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Turquía 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Türkiye giriş vize gereksinimleri, 112 acil hatları, 230V priz tipleri C/F, İstanbul ve Kapadokya seyahat bilgileri.",
+      "en": "Turkey entry regulations, 112 nationwide emergency dispatch, 230V sockets, transportation apps, and Istanbul travel tips.",
+      "de": "Einreisebestimmungen für die Türkei, 112-Notrufzentrale, Steckdosentypen C/F und Reisetipps.",
+      "ru": "Правила въезда в Турцию, единая служба спасения 112, розетки C/F и советы для туристов.",
+      "es": "Requisitos de entrada para Turquía, teléfono de emergencia 112, enchufes y recomendaciones de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

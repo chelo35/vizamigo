@@ -1,0 +1,418 @@
+{
+  "iso2": "FR",
+  "names": {
+    "tr": "Fransa",
+    "en": "France",
+    "de": "Frankreich",
+    "ru": "Франция",
+    "es": "Francia"
+  },
+  "capital": {
+    "value": "Paris",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gouvernement.fr",
+        "tier": 1,
+        "title": "Gouvernement de la République française"
+      }
+    ],
+    "evidence_quote": "Paris est la capitale et le siège des institutions de la République française",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.banque-france.fr",
+        "tier": 1,
+        "title": "Banque de France"
+      }
+    ],
+    "evidence_quote": "L'euro est la monnaie officielle de la France depuis le 1er janvier 2002",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr",
+        "tier": 1,
+        "title": "Légifrance - Décret heure légale en France"
+      }
+    ],
+    "evidence_quote": "L'heure légale en France métropolitaine est l'heure d'Europe centrale UTC+1",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enedis.fr",
+          "tier": 1,
+          "title": "Enedis Réseau de Distribution d'Électricité"
+        }
+      ],
+      "evidence_quote": "La tension nominale du réseau de distribution basse tension en France est de 230 V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enedis.fr",
+          "tier": 1,
+          "title": "Enedis Réseau Électrique"
+        }
+      ],
+      "evidence_quote": "La fréquence nominale du réseau électrique français est fixée à 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.afnor.org",
+          "tier": 1,
+          "title": "AFNOR - Norme NF C 15-100 prises électriques"
+        }
+      ],
+      "evidence_quote": "Prises murales normalisées de type E avec broche de terre et fiches compatibles C",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "17",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
+          "tier": 1,
+          "title": "Service-Public.fr: Numéros d'urgence"
+        }
+      ],
+      "evidence_quote": "Le 17 est le numéro d'urgence de la Police nationale et de la Gendarmerie",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "15",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
+          "tier": 1,
+          "title": "Service-Public.fr: SAMU 15"
+        }
+      ],
+      "evidence_quote": "Le 15 permet de joindre le SAMU pour toute urgence médicale grave",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "18",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
+          "tier": 1,
+          "title": "Service-Public.fr: Sapeurs-Pompiers 18"
+        }
+      ],
+      "evidence_quote": "Le 18 permet de joindre les sapeurs-pompiers pour incendies et secours",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
+          "tier": 1,
+          "title": "Service-Public.fr: Numéro d'urgence européen 112"
+        }
+      ],
+      "evidence_quote": "Le 112 est le numéro d'appel d'urgence européen gratuit et accessible partout",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/france-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: France Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/frankreich-node/frankreichsicherheit/209524",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Frankreich Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Artırılmış tedbir (Seviye 2); turistik noktalarda yankesicilik ve grev nöbetlerine dikkat",
+      "en": "Exercise increased caution (Level 2); stay vigilant in crowded tourist landmarks and transport hubs",
+      "de": "Erhöhte Aufmerksamkeit (Stufe 2); Taschendiebstahl an touristischen Schwerpunkten beachten",
+      "ru": "Повышенные меры предосторожности (Уровень 2); карманные кражи в людных местах",
+      "es": "Precaución incrementada (Nivel 2); atención a carteristas en zonas turísticas concurridas"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "low",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 105.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/france",
+          "tier": 2,
+          "title": "Speedtest Global Index: France"
+        }
+      ],
+      "evidence_quote": "France median mobile download speed exceeds 100 Mbps nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 165.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/france",
+          "tier": 2,
+          "title": "Speedtest Global Index: France"
+        }
+      ],
+      "evidence_quote": "France median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Orange, SFR, Bouygues Telecom ve Free Mobile 5G yaygındır; kimlik kaydı yasal zorunluluktur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.arcep.fr",
+          "tier": 1,
+          "title": "ARCEP - Autorité de régulation des communications électroniques"
+        }
+      ],
+      "evidence_quote": "Obligation légale d'identification de l'acheteur pour toute carte SIM prépayée",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Citymapper",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://citymapper.com/paris",
+        "tier": 2,
+        "title": "Citymapper Paris"
+      }
+    },
+    {
+      "name": "G7 Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.g7.fr",
+        "tier": 1,
+        "title": "Taxis G7 France"
+      }
+    },
+    {
+      "name": "SNCF Connect",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.sncf-connect.com",
+        "tier": 1,
+        "title": "SNCF Connect Réseau Ferroviaire"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/fr/",
+        "tier": 2,
+        "title": "Uber France"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Laik Cumhuriyet (Anayasa Madde 1); Katolik (%48), İnançsız (%34), İslam (%8)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.insee.fr",
+          "tier": 1,
+          "title": "INSEE - Institut national de la statistique et des études économiques"
+        }
+      ],
+      "evidence_quote": "La France est une République laïque assurant l'égalité devant la loi de tous les citoyens",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "14 Temmuz Bastille Günü, Cannes Film Festivali, Fête de la Musique (21 Haziran)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.france.fr",
+          "tier": 1,
+          "title": "Atout France - Agence de développement touristique de la France"
+        }
+      ],
+      "evidence_quote": "La fête nationale du 14 juillet est célébrée dans toute la France avec défilés et feux",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kamu binalarında ve sokakta maske/yüz kapatma kısıtlamaları mevcuttur. Restoranlarda 'Bonjour' nezaket selamı esastır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.diplomatie.gouv.fr",
+          "tier": 1,
+          "title": "Ministère de l'Europe et des Affaires étrangères"
+        }
+      ],
+      "evidence_quote": "L'usage du salut de politesse 'Bonjour' est un marqueur culturel fondamental en France",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Hizmet bedeli hesaba dahildir (%15 Service Compris); memnuniyet durumunda masaya 1-2 € bırakmak adettir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.economie.gouv.fr/particuliers/pourboire-restaurant-regles",
+          "tier": 1,
+          "title": "Ministère de l'Économie: Règles du pourboire en restauration"
+        }
+      ],
+      "evidence_quote": "Le service est obligatoirement inclus dans l'addition; le pourboire reste facultatif",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Eyfel Kulesi ve Champ de Mars",
+        "en": "Eiffel Tower & Champ de Mars",
+        "de": "Eiffelturm & Champ de Mars",
+        "ru": "Эйфелева башня",
+        "es": "Torre Eiffel"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/600",
+          "tier": 2,
+          "title": "UNESCO: Paris, Banks of the Seine"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Paris Eyfel Kulesi ve Champ de Mars",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Anthony Delanoix on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Paris Eyfel Kulesi ve Champ de Mars parkı manzarası",
+          "en": "Eiffel Tower viewed across Champ de Mars in Paris",
+          "de": "Eiffelturm mit Blick über das Champ de Mars in Paris",
+          "ru": "Вид на Эйфелеву башню и Марсово поле в Париже",
+          "es": "Torre Eiffel vista desde el Campo de Marte en París"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "fransa",
+      "en": "france",
+      "de": "frankreich",
+      "ru": "frantsiya",
+      "es": "francia"
+    },
+    "title": {
+      "tr": "Fransa Vize, Seyahat ve Tatil Rehberi 2026 | Vizamigo",
+      "en": "France Visa, Travel & Entry Guide 2026 | Vizamigo",
+      "de": "Frankreich Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "Франция: виза, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Francia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Fransa Schengen vize kuralları, Paris acil numaraları, priz tipi, TGV ulaşım ve seyahat tavsiyeleri.",
+      "en": "France entry requirements, Paris emergency hotlines, socket voltage, public transit, and travel safety advice.",
+      "de": "Einreisebestimmungen für Frankreich, Notrufnummern, Steckdosentypen und offizielle Reisetipps.",
+      "ru": "Правила въезда во Францию, экстренные службы в Париже, розетки и полезные советы.",
+      "es": "Requisitos de entrada para Francia, números de emergencia, enchufes y consejos para viajar a París."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
