@@ -112,33 +112,28 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex flex-col justify-end sm:justify-center sm:items-center p-0 sm:p-4 md:p-6 bg-slate-900/60 dark:bg-black/70 backdrop-blur-sm"
-      onClick={closeAllWidgets}
+      ref={modalRef}
+      role="region"
+      aria-labelledby="bento-modal-title"
+      tabIndex={-1}
+      className="fixed inset-0 z-50 bg-[#F8FAFC] dark:bg-[#0B0F17] flex flex-col overflow-hidden text-slate-900 dark:text-slate-100 animate-in fade-in duration-150"
     >
-      <div
-        ref={modalRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="bento-modal-title"
-        tabIndex={-1}
-        onClick={(e) => e.stopPropagation()}
-        className="relative w-full sm:max-w-4xl h-[92dvh] sm:h-[86vh] rounded-t-[32px] sm:rounded-[28px] flex flex-col overflow-hidden bg-slate-50 dark:bg-[#0B0F17] text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 shadow-2xl transition-all"
-      >
-        {/* 1. TOP HEADER: [ ← Geri ] | Title | [ ✕ ] */}
-        <div className="px-4 sm:px-6 py-3.5 flex items-center justify-between gap-3 border-b border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shrink-0">
-          <div className="flex items-center gap-2 min-w-0">
-            {widgetStack.length > 1 && (
-              <button
-                type="button"
-                onClick={goBackWidget}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
-              >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span>{l('Geri', 'Back')}</span>
-              </button>
-            )}
+      {/* 1. TOP EXECUTIVE APP BAR (100% FULL-WIDTH, REAL STANDALONE PAGE ARCHITECTURE) */}
+      <header className="sticky top-0 z-30 shrink-0 px-4 sm:px-8 py-3 bg-white/95 dark:bg-[#0B0F17]/95 border-b border-slate-200/80 dark:border-white/10 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          {/* Left: Back Button + Title */}
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+            <button
+              type="button"
+              onClick={widgetStack.length > 1 ? goBackWidget : closeAllWidgets}
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
+              title={widgetStack.length > 1 ? l('Geri', 'Back') : l('Keşfet\'e Dön', 'Back to Explore')}
+            >
+              <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+              <span>{widgetStack.length > 1 ? l('Geri', 'Back') : l('Keşfet\'e Dön', 'Keşfet\'e Dön')}</span>
+            </button>
 
-            <h2 id="bento-modal-title" className="text-base sm:text-lg font-black text-slate-900 dark:text-white truncate">
+            <h1 id="bento-modal-title" className="text-base sm:text-xl font-extrabold text-slate-900 dark:text-white tracking-tight truncate">
               {activeWidget.id === 'country_research' &&
                 `${getFlag(activeWidget.countryCode || researchCountry)} ${getCountryName(
                   activeWidget.countryCode || researchCountry,
@@ -159,23 +154,26 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                   language
                 )} ${l('Uygulamalar & Fırsatlar', 'Local Apps & Deals')}`}
               {activeWidget.id === 'affiliate_hub' && l('🏨 Otel, Uçak & Seyahat Fırsatları', '🏨 Flights, Hotels & Travel Deals')}
-            </h2>
+            </h1>
           </div>
 
-          {/* Clean Close Button [ ✕ ] */}
+          {/* Right: Close Button [ ✕ Kapat ] */}
           <button
             type="button"
             onClick={closeAllWidgets}
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400 flex items-center justify-center cursor-pointer transition-all shrink-0"
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 hover:text-rose-600 dark:hover:text-rose-400 transition-all cursor-pointer shrink-0"
             title={l('Kapat', 'Close')}
             aria-label={l('Kapat', 'Close')}
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4" />
+            <span className="hidden sm:inline">{l('Kapat', 'Close')}</span>
           </button>
         </div>
+      </header>
 
-        {/* 2. IN-WIDGET SEARCH BAR + SUB-TAB PILLS */}
-        <div className="px-4 sm:px-6 pt-3 pb-3 space-y-2.5 border-b border-slate-200/80 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shrink-0">
+      {/* 2. IN-PAGE SEARCH & SUB-TAB PILLS BAR (FULL-WIDTH 7XL CONTAINER) */}
+      <div className="shrink-0 bg-white/70 dark:bg-[#0B0F17]/70 border-b border-slate-200/80 dark:border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 py-3 space-y-3">
           {/* Neutral Sleek Search Bar */}
           <div className="relative flex items-center">
             <Search className="w-4 h-4 text-slate-400 absolute left-4 pointer-events-none" />
@@ -189,13 +187,13 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                       'içinde vize, uygulama, otel veya konu ara...',
                       'search visa, apps, hotel or topic...'
                     )}`
-                  : l('Bu bölüm içinde ara...', 'Search inside this section...')
+                  : l('Bu sayfa içinde ara...', 'Search inside this page...')
               }
-              className="w-full pl-11 pr-4 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800/80 text-slate-900 dark:text-white placeholder:text-slate-400 border border-slate-200 dark:border-slate-700/80 focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-xs"
+              className="w-full pl-11 pr-4 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-800/80 text-slate-900 dark:text-white placeholder:text-slate-400 border border-slate-200 dark:border-slate-700/80 focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-xs"
             />
           </div>
 
-          {/* Large Sub-Tab Pills */}
+          {/* Sub-Tab Pills */}
           {(activeWidget.id === 'country_research' ||
             activeWidget.id === 'local_apps' ||
             activeWidget.id === 'affiliate_hub') && (
@@ -227,9 +225,11 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
             </div>
           )}
         </div>
+      </div>
 
-        {/* 3. SUB-WIDGET SCROLLABLE BODY */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5">
+      {/* 3. SCROLLABLE PAGE BODY (MAX-W-7XL FULL-WIDTH REAL PAGE) */}
+      <main className="flex-1 overflow-y-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 py-6 space-y-6">
           {/* --- A. COUNTRY GUIDE / LOCAL APPS / AFFILIATE WINDOW --- */}
           {(activeWidget.id === 'country_research' ||
             activeWidget.id === 'local_apps' ||
@@ -243,7 +243,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
               const apps = getCountryNomadApps(targetCode, insights.transport.popularRideApps);
 
               return (
-                <div className="space-y-5">
+                <div className="space-y-6">
                   {/* Searchable Country Selector & Quick Switcher */}
                   <div className="space-y-2.5">
                     <div className="relative">
@@ -259,7 +259,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                             return copy;
                           });
                         }}
-                        className="w-full px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-bold appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-xs pr-10"
+                        className="w-full px-4 py-3 rounded-2xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-bold appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-xs pr-10"
                       >
                         <option value="" disabled>{l('Tüm 199 Ülke İçinden Seç...', 'Select from 199 Countries...')}</option>
                         {passportItems.map((it: CountryItem) => {
@@ -289,7 +289,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                               return copy;
                             });
                           }}
-                          className={`px-3 py-1.5 rounded-full text-xs font-bold whitespace-nowrap cursor-pointer transition-all shrink-0 ${
+                          className={`px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap cursor-pointer transition-all shrink-0 ${
                             targetCode === c
                               ? 'bg-teal-600 text-white shadow-xs'
                               : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700'
@@ -302,34 +302,34 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                   </div>
 
                   {/* 1. Large Scenic Photo Header with Visa Badge */}
-                  <div className="relative h-48 sm:h-56 w-full rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm">
+                  <div className="relative h-56 sm:h-72 w-full rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm">
                     <SafeImage
                       src={
                         targetCode === 'TH'
-                          ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=440&q=50'
+                          ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=70'
                           : visual.image
                       }
                       alt={getCountryName(targetCode, language)}
                       className="w-full h-full object-cover"
                       loading="lazy"
                       decoding="async"
-                      width="440"
-                      height="240"
+                      width="800"
+                      height="300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
 
                     {/* Top-Right Visa Status Pill */}
-                    <div className="absolute top-3.5 right-3.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 dark:bg-slate-950/80 backdrop-blur-md text-teal-300 text-xs font-black shadow-md border border-teal-500/30">
+                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-slate-900/80 dark:bg-slate-950/80 backdrop-blur-md text-teal-300 text-xs sm:text-sm font-black shadow-md border border-teal-500/30">
                       {item ? getCategoryBadgeLabel(item, language) : l('60 Gün Vizesiz Giriş', '60 Days Visa-Free')}
                     </div>
 
                     {/* Bottom-Left Country Summary & Full 360 Button */}
-                    <div className="absolute bottom-3.5 left-4 right-4 flex flex-wrap items-end justify-between gap-2">
+                    <div className="absolute bottom-4 left-5 right-5 flex flex-wrap items-end justify-between gap-3">
                       <div>
-                        <h3 className="text-xl sm:text-2xl font-black text-white drop-shadow-md">
+                        <h3 className="text-xl sm:text-3xl font-black text-white drop-shadow-md">
                           {getFlag(targetCode)} {getCountryName(targetCode, language)} · {visual.landmark}
                         </h3>
-                        <p className="text-xs sm:text-sm font-bold text-teal-200">
+                        <p className="text-xs sm:text-sm font-bold text-teal-200 mt-1">
                           {geo?.capital ? `${l('Başkent:', 'Capital:')} ${geo.capital}` : ''} · {geo?.currencyName || 'THB'} ({geo?.currencySymbol || '฿'})
                         </p>
                       </div>
@@ -339,7 +339,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                           closeAllWidgets();
                           onOpenCountryDossier(targetCode);
                         }}
-                        className="px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white shadow-sm cursor-pointer transition-all"
+                        className="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white shadow-sm cursor-pointer transition-all"
                       >
                         {l('360° Tam Ülke Dosyası →', 'Full 360° Dossier →')}
                       </button>
@@ -378,7 +378,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                         ))}
                       </div>
 
-                      {/* App Cards Grid */}
+                      {/* App Cards Grid: 3-column desktop layout */}
                       {(() => {
                         let list = getAppsByCategory(selectedAppCategory, targetCode);
                         if (widgetSearch.trim()) {
@@ -402,43 +402,43 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                         }
 
                         return (
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             {list.map((app) => (
                               <a
                                 key={app.name}
                                 href={app.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs hover:border-teal-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col justify-between no-underline group"
+                                className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs hover:border-teal-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col justify-between no-underline group"
                               >
-                                <div className="flex items-start gap-3">
+                                <div className="flex items-start gap-3.5">
                                   <div
                                     style={{ background: app.logoBg, color: app.logoColor }}
-                                    className="w-11 h-11 rounded-xl flex items-center justify-center font-black text-xs shrink-0 shadow-xs"
+                                    className="w-12 h-12 rounded-xl flex items-center justify-center font-black text-sm shrink-0 shadow-xs"
                                   >
                                     {app.logoText}
                                   </div>
-                                  <div className="space-y-0.5 min-w-0">
+                                  <div className="space-y-1 min-w-0">
                                     <div className="flex items-center gap-1.5 flex-wrap">
-                                      <h5 className="text-sm font-bold text-slate-900 dark:text-white truncate">
+                                      <h5 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
                                         {app.name}
                                       </h5>
                                       <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
                                         {language === 'tr' ? app.categoryLabelTr : app.categoryLabelEn}
                                       </span>
                                     </div>
-                                    <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
+                                    <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed">
                                       {language === 'tr' ? app.taglineTr : app.taglineEn}
                                     </p>
                                   </div>
                                 </div>
 
-                                <div className="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs">
+                                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs">
                                   <span className="text-[11px] font-medium text-teal-700 dark:text-teal-400 line-clamp-1">
                                     💡 {language === 'tr' ? app.recommendedReasonTr : app.recommendedReasonEn}
                                   </span>
                                   <span className="shrink-0 font-bold text-teal-600 dark:text-teal-400 group-hover:translate-x-0.5 transition-transform">
-                                    {l('Aç →', 'Open →')}
+                                    {l('İncele & İndir →', 'Open & Explore →')}
                                   </span>
                                 </div>
                               </a>
@@ -452,7 +452,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                   {/* === SUB-TAB 2: DEALS (OTEL & UÇAK FIRSATLARI) === */}
                   {activeWidget.subTab === 'deals' && (
                     <div className="space-y-4">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
                           {
                             brand: 'WayAway & Aviasales',
@@ -508,7 +508,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                             href={deal.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 hover:border-teal-500/60 shadow-xs flex flex-col justify-between gap-3 no-underline group transition-all"
+                            className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 hover:border-teal-500/60 shadow-xs flex flex-col justify-between gap-3.5 no-underline group transition-all"
                           >
                             <div>
                               <div className="flex items-center justify-between gap-2">
@@ -519,14 +519,14 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                                   {deal.badge}
                                 </span>
                               </div>
-                              <h6 className="text-xs font-bold text-teal-700 dark:text-teal-300 mt-1">
+                              <h6 className="text-xs font-bold text-teal-700 dark:text-teal-300 mt-1.5">
                                 {deal.title}
                               </h6>
-                              <p className="text-xs font-medium text-slate-600 dark:text-slate-400 mt-1">
+                              <p className="text-xs font-medium text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
                                 {deal.desc}
                               </p>
                             </div>
-                            <div className="flex justify-end">
+                            <div className="flex justify-end pt-2">
                               <span className="px-4 py-2 rounded-xl text-xs font-bold bg-teal-600 text-white group-hover:bg-teal-500 transition-all">
                                 {deal.cta}
                               </span>
@@ -540,7 +540,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                   {/* === SUB-TAB 3: INSURANCE & ESIM (SİGORTA & ESIM) === */}
                   {activeWidget.subTab === 'insurance' && (
                     <div className="space-y-4">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
                           {
                             brand: 'SafetyWing Nomad Insurance',
@@ -596,7 +596,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                             href={item.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 hover:border-teal-500/60 shadow-xs flex flex-col justify-between gap-3 no-underline group transition-all"
+                            className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 hover:border-teal-500/60 shadow-xs flex flex-col justify-between gap-3.5 no-underline group transition-all"
                           >
                             <div>
                               <div className="flex items-center justify-between gap-2">
@@ -607,14 +607,14 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                                   {item.badge}
                                 </span>
                               </div>
-                              <h6 className="text-xs font-bold text-teal-700 dark:text-teal-300 mt-1">
+                              <h6 className="text-xs font-bold text-teal-700 dark:text-teal-300 mt-1.5">
                                 {item.title}
                               </h6>
-                              <p className="text-xs font-medium text-slate-600 dark:text-slate-400 mt-1">
+                              <p className="text-xs font-medium text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
                                 {item.desc}
                               </p>
                             </div>
-                            <div className="flex justify-end">
+                            <div className="flex justify-end pt-2">
                               <span className="px-4 py-2 rounded-xl text-xs font-bold bg-teal-600 text-white group-hover:bg-teal-500 transition-all">
                                 {item.cta}
                               </span>
@@ -627,10 +627,10 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
                   {/* === SUB-TAB 4 & 5: VISA & PRACTICAL (Default / Other) === */}
                   {(activeWidget.subTab === 'visa' || activeWidget.subTab === 'practical') && (
-                    <div className="space-y-4">
+                    <div className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 space-y-2">
-                          <h5 className="text-sm sm:text-base font-black text-slate-900 dark:text-white">
+                        <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 space-y-2.5">
+                          <h5 className="text-base sm:text-lg font-black text-slate-900 dark:text-white">
                             🛂 {l('Vize & Sınır Giriş Kuralları', 'Visa & Border Entry Rules')}
                           </h5>
                           <p className="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -641,8 +641,8 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                           </p>
                         </div>
 
-                        <div className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 space-y-2">
-                          <h5 className="text-sm sm:text-base font-black text-slate-900 dark:text-white">
+                        <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 space-y-2.5">
+                          <h5 className="text-base sm:text-lg font-black text-slate-900 dark:text-white">
                             🔌 {l('Pratik Bilgiler & Güvenlik', 'Practical Info & Safety')}
                           </h5>
                           <p className="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -654,39 +654,39 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                       </div>
 
                       {/* Quick 4 App Icons Preview */}
-                      <div className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs space-y-3">
+                      <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs space-y-4">
                         <div className="flex items-center justify-between">
-                          <h5 className="text-xs sm:text-sm font-black text-slate-900 dark:text-white">
+                          <h5 className="text-sm sm:text-base font-black text-slate-900 dark:text-white">
                             {l('Öne Çıkan Popüler Seyahat Uygulamaları', 'Featured Travel Apps')}
                           </h5>
                           <button
                             type="button"
                             onClick={() => setActiveSubTab('apps')}
-                            className="text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
+                            className="text-xs sm:text-sm font-bold text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
                           >
                             {l('Tümünü Gör (30+) →', 'View All (30+) →')}
                           </button>
                         </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
                           {apps.slice(0, 4).map((app) => (
                             <a
                               key={app.name}
                               href={app.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200/60 dark:border-slate-600/60 flex items-center gap-2.5 no-underline shadow-xs hover:-translate-y-0.5 transition-transform"
+                              className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200/60 dark:border-slate-600/60 flex items-center gap-3 no-underline shadow-xs hover:-translate-y-0.5 transition-transform"
                             >
                               <div
                                 style={{ background: app.logoBg, color: app.logoColor }}
-                                className="w-9 h-9 rounded-xl flex items-center justify-center text-[10px] font-black shrink-0"
+                                className="w-10 h-10 rounded-xl flex items-center justify-center text-xs font-black shrink-0"
                               >
                                 {app.logoText}
                               </div>
                               <div className="min-w-0">
-                                <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
+                                <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">
                                   {app.name}
                                 </div>
-                                <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">
+                                <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
                                   {language === 'tr' ? app.categoryLabelTr : app.categoryLabelEn}
                                 </div>
                               </div>
@@ -702,7 +702,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                     href="https://wayaway.io"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 text-white font-black text-sm sm:text-base shadow-md flex items-center justify-center gap-2.5 no-underline transition-all"
+                    className="w-full py-4 px-8 rounded-2xl bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 text-white font-black text-sm sm:text-base shadow-md flex items-center justify-center gap-2.5 no-underline transition-all"
                   >
                     <Plane className="w-5 h-5" />
                     <span>
@@ -718,12 +718,12 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- B. PASSPORT SYNERGY & COMPARE SUB-WIDGET --- */}
           {activeWidget.id === 'synergy' && (
-            <div className="space-y-5">
-              <div className="p-4 rounded-2xl bg-teal-50 dark:bg-teal-950/40 text-teal-900 dark:text-teal-200 border border-teal-200 dark:border-teal-800 flex flex-wrap items-center justify-between gap-3">
+            <div className="space-y-6">
+              <div className="p-4 sm:p-5 rounded-2xl bg-teal-50 dark:bg-teal-950/40 text-teal-900 dark:text-teal-200 border border-teal-200 dark:border-teal-800 flex flex-wrap items-center justify-between gap-3">
                 <div className="text-xs sm:text-sm font-bold">
                   💡 {l(
-                    'Ülkeye tıklayarak doğrudan o ülkenin rehber penceresine geçebilirsiniz:',
-                    'Tap any country to open its guide window:'
+                    'Ülkeye tıklayarak doğrudan o ülkenin rehber sayfasına geçebilirsiniz:',
+                    'Tap any country to open its guide page:'
                   )}
                 </div>
                 <div className="flex items-center gap-1.5 flex-wrap">
@@ -732,7 +732,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                       key={c}
                       type="button"
                       onClick={() => openWidget('country_research', 'visa', c)}
-                      className="px-3 py-1.5 rounded-full text-xs font-bold bg-teal-600 text-white hover:bg-teal-700 transition-all cursor-pointer shadow-xs"
+                      className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-teal-600 text-white hover:bg-teal-700 transition-all cursor-pointer shadow-xs"
                     >
                       {getFlag(c)} {getCountryName(c, language)}
                     </button>
@@ -740,7 +740,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                 </div>
               </div>
 
-              <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800">
+              <div className="bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <Suspense fallback={<div className="p-8 text-center text-base font-bold">{l('Yükleniyor...', 'Loading...')}</div>}>
                   <CompareTab initialPassportA={currentPassport} initialPassportB={effectiveSecondPassport} />
                 </Suspense>
@@ -750,7 +750,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- C. WORLD DAY COUNTER SUB-WIDGET --- */}
           {activeWidget.id === 'day_counter' && (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
               <Suspense fallback={<div className="p-8 text-center text-base font-bold">{l('Yükleniyor...', 'Loading...')}</div>}>
                 <DayCounterTab />
               </Suspense>
@@ -759,7 +759,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- D. ROUTE PLANNER SUB-WIDGET --- */}
           {activeWidget.id === 'route_planner' && (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
               <Suspense fallback={<div className="p-8 text-center text-base font-bold">{l('Yükleniyor...', 'Loading...')}</div>}>
                 <RoutePlannerTab currentPassport={currentPassport} />
               </Suspense>
@@ -768,7 +768,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- E. WHERE CAN I GO RADAR SUB-WIDGET --- */}
           {activeWidget.id === 'radar' && (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
               <Suspense fallback={<div className="p-8 text-center text-base font-bold">{l('Yükleniyor...', 'Loading...')}</div>}>
                 <WhereCanIGoTab
                   currentPassport={currentPassport}
@@ -781,7 +781,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- F. DIGITAL NOMAD SUB-WIDGET --- */}
           {activeWidget.id === 'nomad' && (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
               <Suspense fallback={<div className="p-8 text-center text-base font-bold">{l('Yükleniyor...', 'Loading...')}</div>}>
                 <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
               </Suspense>
@@ -790,7 +790,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- G. EMERGENCY & CONSULAR SUB-WIDGET --- */}
           {activeWidget.id === 'emergency' && (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
               <Suspense fallback={<div className="p-8 text-center text-base font-bold">{l('Yükleniyor...', 'Loading...')}</div>}>
                 <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
               </Suspense>
@@ -799,19 +799,19 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
           {/* --- H. CURRENCY / WORLD CLOCK / PACKING QUICK LAUNCH --- */}
           {activeWidget.id === 'currency' && (
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
+                <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">{currencyDisplay.card1.flag} 1 {currencyDisplay.card1.code} ({currencyDisplay.card1.name})</div>
-                  <div className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white mt-1 tabular-nums">{currencyDisplay.card1.value}</div>
+                  <div className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white mt-1.5 tabular-nums">{currencyDisplay.card1.value}</div>
                 </div>
-                <div className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
+                <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">{currencyDisplay.card2.flag} 1 {currencyDisplay.card2.code} ({currencyDisplay.card2.name})</div>
-                  <div className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white mt-1 tabular-nums">{currencyDisplay.card2.value}</div>
+                  <div className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white mt-1.5 tabular-nums">{currencyDisplay.card2.value}</div>
                 </div>
-                <div className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
+                <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">{currencyDisplay.card3.flag} 1 {currencyDisplay.card3.code} ({currencyDisplay.card3.name})</div>
-                  <div className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white mt-1 tabular-nums">{currencyDisplay.card3.value}</div>
+                  <div className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white mt-1.5 tabular-nums">{currencyDisplay.card3.value}</div>
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -821,7 +821,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                     closeAllWidgets();
                     onOpenGlobalRadar('currency');
                   }}
-                  className="px-5 py-3 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white cursor-pointer shadow-sm transition-all"
+                  className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white cursor-pointer shadow-sm transition-all"
                 >
                   {l('Canlı Kur Hesaplayıcıyı Aç →', 'Open Currency Converter →')}
                 </button>
@@ -831,7 +831,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                     closeAllWidgets();
                     onOpenTippingCalc();
                   }}
-                  className="px-5 py-3 rounded-full text-xs sm:text-sm font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-all"
+                  className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-all"
                 >
                   {l('Ülkelere Göre Bahşiş Hesaplayıcı →', 'Tipping Calculator →')}
                 </button>
@@ -840,8 +840,8 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
           )}
 
           {activeWidget.id === 'world_clock' && (
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+            <div className="space-y-6">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {[
                   { name: '🇹🇷 İstanbul', offset: 3 },
                   { name: '🇬🇧 Londra', offset: 1 },
@@ -854,10 +854,10 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                 ].map((city) => (
                   <div
                     key={city.name}
-                    className="p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs"
+                    className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 shadow-xs"
                   >
                     <div className="text-xs font-bold text-slate-500 dark:text-slate-400">{city.name}</div>
-                    <div className="text-xl sm:text-2xl font-black font-mono text-slate-900 dark:text-white mt-1">
+                    <div className="text-xl sm:text-2xl font-black font-mono text-slate-900 dark:text-white mt-1.5">
                       <LiveCityClock offsetHours={city.offset} />
                     </div>
                   </div>
@@ -867,7 +867,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                 <button
                   type="button"
                   onClick={() => openWidget('route_planner', 'builder')}
-                  className="px-5 py-3 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white cursor-pointer shadow-sm transition-all"
+                  className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white cursor-pointer shadow-sm transition-all"
                 >
                   {l('🗺️ Çok Duraklı Rota Planlayıcıyı Aç →', '🗺️ Open Multi-Stop Route Planner →')}
                 </button>
@@ -877,7 +877,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                     closeAllWidgets();
                     onOpenTimezoneOverlap();
                   }}
-                  className="px-5 py-3 rounded-full text-xs sm:text-sm font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-all"
+                  className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-all"
                 >
                   {l('🕒 Mesai & Toplantı Saati Çakıştırma →', '🕒 Timezone Overlap Tool →')}
                 </button>
@@ -886,8 +886,8 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
           )}
 
           {activeWidget.id === 'packing' && (
-            <div className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   l('✓ En az 6 ay geçerli pasaport ve fotokopisi', '✓ Passport valid for at least 6 months'),
                   l('✓ Gidiş-dönüş uçak bileti ve otel rezervasyon çıktısı', '✓ Return flight ticket & hotel booking printout'),
@@ -898,7 +898,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                 ].map((itemText, idx) => (
                   <div
                     key={idx}
-                    className="p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-200 shadow-xs"
+                    className="p-5 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-200 shadow-xs"
                   >
                     {itemText}
                   </div>
@@ -910,14 +910,14 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
                   closeAllWidgets();
                   onOpenPackingList();
                 }}
-                className="px-5 py-3 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white cursor-pointer shadow-sm transition-all"
+                className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold bg-teal-600 hover:bg-teal-500 text-white cursor-pointer shadow-sm transition-all"
               >
                 {l('İnteraktif Bavul Sihirbazını Aç →', 'Open Interactive Packing Wizard →')}
               </button>
             </div>
           )}
         </div>
-      </div>
+      </main>
     </div>
   );
 };
