@@ -350,16 +350,16 @@ export const GlobalFooter: React.FC<Props> = ({
             <p className="text-xs sm:text-sm text-slate-600 dark:text-teal-100 font-medium leading-relaxed">
               {isAuthenticated ? (
                 <span>
-                  {l('Hoş geldiniz, seyahat profiliniz ve kayıtlı pasaportlarınız senkronize ediliyor.', 'Welcome back! Your traveler profile and saved passport routes are synced across devices.', 'Willkommen zurück! Ihr Reiseprofil und gespeicherte Routen sind synchronisiert.', '¡Bienvenido! Tu perfil y rutas guardadas están sincronizados.', 'Добро пожаловать! Ваш профиль и сохраненные маршруты синхронизированы.')}
+                  {l('Hoş geldiniz, seyahat profiliniz ve kayıtlı pasaport tercihleriniz aktif.', 'Welcome back! Your traveler profile and saved passport preferences are active.', 'Willkommen zurück! Ihr Reiseprofil und gespeicherte Pässe sind aktiv.', '¡Bienvenido! Tu perfil y preferencias de pasaporte están activos.', 'Добро пожаловать! Ваш профиль и настройки паспорта активны.')}
                 </span>
               ) : (
                 <span>
                   {l(
-                    'Giriş yapın veya ücretsiz hesap açın: Pasaportlarınızı güvenle kaydedin, vize bitiş alarmları alın, favori rotalarınızı tüm cihazlarınızda anında senkronize edin.',
-                    'Sign in or register for free: Securely store your passports, receive visa expiry reminders, and sync your favorite routes seamlessly across all devices.',
-                    'Anmelden oder kostenlos registrieren: Speichern Sie Ihre Pässe sicher, erhalten Sie Visa-Erinnerungen und synchronisieren Sie Ihre Routen.',
-                    'Inicia sesión o regístrate gratis: Guarda tus pasaportes de forma segura, recibe alertas de vencimiento de visa y sincroniza tus rutas.',
-                    'Войдите или зарегистрируйтесь бесплатно: сохраняйте паспорта, получайте уведомления об окончании виз и синхронизируйте маршруты.'
+                    'Kişisel Seyahat Profiliniz: Pasaport tercihlerinizi tarayıcınızda güvenle saklayın, seyahat hazırlık listelerinizi takip edin ve rotalarınızı tek tıkla yönetin.',
+                    'Your Personal Travel Profile: Securely save your passport preferences, track customized departure checklists, and manage your travel routes seamlessly.',
+                    'Ihr persönliches Reiseprofil: Speichern Sie Ihre Passpräferenzen sicher, verwalten Sie Checklisten und behalten Sie Reiserouten im Blick.',
+                    'Tu perfil de viaje personal: Guarda tus preferencias de pasaporte, sigue listas de preparación y organiza tus rutas fácilmente.',
+                    'Ваш личный профиль путешественника: сохраняйте настройки паспорта, управляйте чек-листами и планируйте маршруты в один клик.'
                   )}
                 </span>
               )}

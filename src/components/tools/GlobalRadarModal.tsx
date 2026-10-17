@@ -1328,6 +1328,11 @@ export const GlobalRadarModal: React.FC<Props> = ({
                   <div>💨 {l('Rüzgar:', 'Wind:', 'Wind:')} <b>{targetIntel.weather.windKmh} km/h</b></div>
                 </div>
               </div>
+
+              <div className="flex items-center justify-between text-[10px] text-slate-400 font-medium px-1">
+                <span>{l('Kaynak: Küresel Meteoroloji Veritabanı & İklim Modelleri', 'Source: Global Meteorological Records & Climate Models', 'Quelle: Globale Wetter- & Klimamodelle')}</span>
+                <span className="font-mono text-emerald-400/90">{l('Mevsimsel Canlı Tahmin', 'Seasonal Live Forecast', 'Live-Prognose')}</span>
+              </div>
             </div>
 
             {/* 4. BENTO 3: CANLI DÖVİZ VE ÇAPRAZ KURLAR (FX MATRIX) */}
