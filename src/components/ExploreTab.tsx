@@ -551,7 +551,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             const insights = getCountryInsights(item.c, language);
             const geography = getCountryGeography(item.c, language);
 
-            const visual = getCountryVisual(item.c);
+            const visual = getCountryVisual(item.c, language);
 
             // Stage 0 Verification Status string
             let verificationBadge = null;

@@ -22,11 +22,16 @@ import {
   HeartHandshake,
   Globe2,
   Leaf,
-  Code2
+  Code2,
+  Camera,
+  Search,
+  ExternalLink
 } from 'lucide-react';
 import { exportAppData, importAppData, clearAllAppData } from '../utils/storage';
 import { useI18n } from '../data/i18n';
 import { useModalA11y } from '../utils/useModalA11y';
+import { COUNTRY_VISUALS_LIST } from '../data/countryVisualsData';
+import { getFlag, getCountryName } from '../data/passportData';
 
 interface LegalInfoModalProps {
   isOpen: boolean;
@@ -46,6 +51,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
   const modalRef = useRef<HTMLDivElement>(null);
   const [importStatus, setImportStatus] = useState<string>('');
   const [activeTab, setActiveTab] = useState<string>(initialTab);
+  const [attributionSearch, setAttributionSearch] = useState<string>('');
 
   useModalA11y({
     isOpen,
@@ -127,6 +133,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
         { id: 'disclaimer', label: l('Sorumluluk Reddi', 'Disclaimer', 'Haftungsausschluss', 'Descargo', 'Отказ от ответственности'), icon: AlertTriangle },
         { id: 'kvkk_gdpr', label: l('KVKK & GDPR', 'GDPR / Privacy', 'DSGVO', 'RGPD', 'Защита данных'), icon: FileText },
         { id: 'standards', label: l('Mevzuat & Standartlar', 'Source Standards', 'Quellenstandards', 'Estándares', 'Стандарты'), icon: FileCheck },
+        { id: 'attributions', label: l('Görsel Lisansları & Atıflar', 'Photo Credits & Attributions', 'Bildnachweise & Lizenzen', 'Créditos de Fotos', 'Лицензии и авторство фото'), icon: Camera },
       ]
     },
     {
@@ -494,6 +501,117 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                     {l('Tayland E-Vize, Endonezya Göç, Şengen Sınır Kodu, ABD CBP ve Körfez E-Vize sistemleri.', 'Primary portals including Thai eVisa, Indonesia Immigration, Schengen border code, US CBP, and GCC eVisa feeds.')}
                   </p>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* TAB: PHOTO CREDITS & ATTRIBUTIONS */}
+          {activeTab === 'attributions' && (
+            <div className="space-y-6 animate-in fade-in duration-150">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-3 rounded-2xl bg-teal-500/10 text-teal-600 dark:text-teal-400 shrink-0">
+                    <Camera className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+                      {l('Görsel Lisansları & Fotoğrafçı Atıfları', 'Destination Photography & Creative Commons Attributions', 'Bildnachweise & Creative-Commons-Lizenzen', 'Créditos de Imágenes y Licencias', 'Лицензии и авторство фото')}
+                    </h2>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                      {l('199 Dünya Ülkesi · Creative Commons, Public Domain & Doğrulanmış Açık Lisans Envanteri', '199 World Destinations · CC-BY, CC-BY-SA, Public Domain & Verified Open Licenses')}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Filter / Search Bar */}
+                <div className="relative w-full sm:w-64 shrink-0">
+                  <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+                  <input
+                    type="text"
+                    value={attributionSearch}
+                    onChange={(e) => setAttributionSearch(e.target.value)}
+                    placeholder={l('Ülke veya fotoğrafçı ara...', 'Search destination or photographer...', 'Suchen...')}
+                    className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-800 dark:text-slate-100"
+                  />
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-teal-50 dark:bg-teal-950/20 border border-teal-200 dark:border-teal-900/40 text-xs sm:text-sm text-teal-900 dark:text-teal-200 space-y-2">
+                <p className="font-bold">
+                  {l('Lisanslama & Fikri Mülkiyet İlkeleri:', 'Licensing & Attribution Standards:')}
+                </p>
+                <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {l(
+                    'Vizamigo platformundaki tüm ülke tanıtım görselleri; Wikimedia Commons, CC-BY, CC-BY-SA ve Kamu Malı (Public Domain) lisans kuralları çerçevesinde derlenmiş ve doğrulanmıştır. Her bir eser sahibinin adı, orijinal kaynak sayfası ve geçerli lisans koşulları aşağıda eksiksiz listelenmiştir.',
+                    'All destination visuals on Vizamigo are curated from verified Creative Commons (CC BY, CC BY-SA), Public Domain, and open-access repositories. Every creator name, direct source repository page, and corresponding license terms are published below in compliance with Section 3(a)(1) of the Creative Commons Public License.'
+                  )}
+                </p>
+              </div>
+
+              {/* Responsive Grid of Countries */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[550px] overflow-y-auto pr-1">
+                {COUNTRY_VISUALS_LIST
+                  .filter((item) => {
+                    if (!attributionSearch.trim()) return true;
+                    const q = attributionSearch.toLowerCase();
+                    const countryName = getCountryName(item.code, language).toLowerCase();
+                    return (
+                      item.code.toLowerCase().includes(q) ||
+                      countryName.includes(q) ||
+                      item.author.toLowerCase().includes(q) ||
+                      item.landmark.toLowerCase().includes(q) ||
+                      (item.landmarkI18n?.en || '').toLowerCase().includes(q)
+                    );
+                  })
+                  .map((item) => {
+                    const countryName = getCountryName(item.code, language);
+                    const flag = getFlag(item.code);
+                    const localizedLandmark =
+                      item.landmarkI18n?.[language as keyof typeof item.landmarkI18n] ||
+                      item.landmark;
+
+                    return (
+                      <div
+                        key={item.code}
+                        className="flex items-center gap-3.5 p-3 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200/80 dark:border-white/10 hover:border-teal-500/40 transition-colors"
+                      >
+                        <img
+                          src={`/images/countries/${item.code.toLowerCase()}-240.webp`}
+                          alt={`${countryName} - ${localizedLandmark}`}
+                          className="w-16 h-14 rounded-xl object-cover shrink-0 border border-slate-200 dark:border-white/10"
+                          loading="lazy"
+                        />
+                        <div className="min-w-0 flex-1 space-y-1">
+                          <div className="flex items-center justify-between gap-1.5">
+                            <span className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white truncate">
+                              {flag} {countryName} ({item.code})
+                            </span>
+                            <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 shrink-0">
+                              {item.license}
+                            </span>
+                          </div>
+                          <div className="text-[11px] text-teal-700 dark:text-teal-300 font-medium truncate">
+                            📍 {localizedLandmark}
+                          </div>
+                          <div className="flex items-center justify-between gap-2 text-[10px] text-slate-500 dark:text-slate-400">
+                            <span className="truncate">
+                              📷 {item.author || 'Creative Commons Contributor'}
+                            </span>
+                            <a
+                              href={item.sourcePageUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-0.5 text-teal-600 dark:text-teal-400 hover:underline shrink-0 font-medium"
+                              title={l('Orijinal Kaynağı Görüntüle', 'View Original Source Page')}
+                            >
+                              <span>{l('Kaynak', 'Source')}</span>
+                              <ExternalLink className="w-2.5 h-2.5" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           )}
