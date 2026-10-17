@@ -1,0 +1,434 @@
+{
+  "iso2": "MY",
+  "names": {
+    "tr": "Malezya",
+    "en": "Malaysia",
+    "de": "Malaysia",
+    "ru": "Малайзия",
+    "es": "Malasia"
+  },
+  "capital": {
+    "value": "Kuala Lumpur (Putrajaya idari merkez)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.malaysia.gov.my",
+        "tier": 1,
+        "title": "Official Portal of the Government of Malaysia"
+      }
+    ],
+    "evidence_quote": "Kuala Lumpur is the national capital of Malaysia and Putrajaya is the federal administrative center",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MYR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bnm.gov.my",
+        "tier": 1,
+        "title": "Bank Negara Malaysia (Central Bank)"
+      }
+    ],
+    "evidence_quote": "The Malaysian Ringgit (MYR) is the legal tender currency of Malaysia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (MYT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.malaysia.gov.my",
+        "tier": 1,
+        "title": "Malaysian Standard Time (MST / UTC+8)"
+      }
+    ],
+    "evidence_quote": "Malaysian Standard Time is 8 hours ahead of Coordinated Universal Time (UTC+8)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.st.gov.my",
+          "tier": 1,
+          "title": "Energy Commission of Malaysia (Suruhanjaya Tenaga)"
+        }
+      ],
+      "evidence_quote": "Standard nominal voltage for single-phase alternating current in Malaysia is 230V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tnb.com.my",
+          "tier": 1,
+          "title": "Tenaga Nasional Berhad (TNB)"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid in Malaysia is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sirim.my",
+          "tier": 1,
+          "title": "SIRIM QAS International: BS 1363 Plug Standards"
+        }
+      ],
+      "evidence_quote": "Type G rectangular 3-pin plugs conforming to MS 589 (BS 1363) are standard in Malaysia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rmp.gov.my",
+          "tier": 1,
+          "title": "Royal Malaysia Police (Polis Diraja Malaysia)"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 112 from any mobile phone for emergency police dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.my",
+          "tier": 1,
+          "title": "Ministry of Health Malaysia: Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 999 to reach the Ministry of Health emergency medical and ambulance service",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "994",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomba.gov.my",
+          "tier": 1,
+          "title": "Fire and Rescue Department of Malaysia (Bomba)"
+        }
+      ],
+      "evidence_quote": "Dial 994 for fire emergencies and rescue operations by Jabatan Bomba",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.malaysia.gov.my",
+          "tier": 1,
+          "title": "Malaysian Emergency Response Services (MERS 999)"
+        }
+      ],
+      "evidence_quote": "MERS 999 integrates national police, hospital, and fire rescue emergency responses",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+60 3 2149 6590",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.malaysia.travel",
+          "tier": 1,
+          "title": "Tourism Malaysia: Tourist Police Unit Kuala Lumpur"
+        }
+      ],
+      "evidence_quote": "Enstek and Kuala Lumpur Tourist Police Unit provides specialized tourist security assistance",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/malaysia-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Malaysia Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "Safe travel with caution",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/malaysia",
+          "tier": 1,
+          "title": "UK FCDO: Malaysia Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 1); Kuala Lumpur ve Penang son derece güvenli, Doğu Sabah kıyılarına dikkat",
+      "en": "Exercise normal precautions (Level 1); very safe overall, exercise increased caution in coastal eastern Sabah",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); hohe Sicherheit, Vorsicht an der Ostküste von Sabah",
+      "ru": "Обычные меры предосторожности (Уровень 1); высокая безопасность, осторожность на восточном побережье Сабаха",
+      "es": "Precauciones normales (Nivel 1); país seguro en general, precaución en la costa este de Sabah"
+    },
+    "regional_warnings": [
+      {
+        "area": "Doğu Sabah kıyı şeridi",
+        "level": 2,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Sabah Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 78.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/malaysia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Malaysia"
+        }
+      ],
+      "evidence_quote": "Malaysia median mobile download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 114.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/malaysia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Malaysia Fixed"
+        }
+      ],
+      "evidence_quote": "Malaysia median fixed broadband speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "CelcomDigi, Maxis ve U Mobile 5G ağları yaygındır; pasaport kaydı ile havaalanından turist SIM alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mcmc.gov.my",
+          "tier": 1,
+          "title": "Malaysian Communications and Multimedia Commission (MCMC)"
+        }
+      ],
+      "evidence_quote": "Mandatory passport registration for prepaid SIM cards under MCMC telecommunications regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/my/",
+        "tier": 2,
+        "title": "Grab Malaysia"
+      }
+    },
+    {
+      "name": "Touch 'n Go eWallet",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.touchngo.com.my",
+        "tier": 1,
+        "title": "Touch 'n Go Digital Payment"
+      }
+    },
+    {
+      "name": "MyRapid PULSE",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://myrapid.com.my",
+        "tier": 1,
+        "title": "Rapid KL Public Transport App"
+      }
+    },
+    {
+      "name": "Foodpanda Malaysia",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodpanda.my",
+        "tier": 2,
+        "title": "Foodpanda Food Delivery Malaysia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (%63 - Resmî din), Budizm (%19), Hristiyanlık (%9), Hinduizm (%6)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dosm.gov.my",
+          "tier": 1,
+          "title": "Department of Statistics Malaysia (DOSM)"
+        }
+      ],
+      "evidence_quote": "Islam is the official religion of the Federation as stipulated in the Federal Constitution",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Hari Raya Aidilfitri, Çin Yeni Yılı, Deepavali, Merdeka Bağımsızlık Günü (31 Ağustos)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.malaysia.travel",
+          "tier": 1,
+          "title": "Tourism Malaysia: Multi-Ethnic Festival Calendar"
+        }
+      ],
+      "evidence_quote": "Malaysia celebrates nationwide public holidays for major Islamic, Chinese, and Hindu celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Yemek yerken ve eşya uzatırken sağ el kullanılır. Uyuşturucu kaçakçılığı için kanunlarda son derece ağır cezalar öngörülmüştür.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.malaysia.travel",
+          "tier": 1,
+          "title": "Tourism Malaysia Travel Guidelines"
+        }
+      ],
+      "evidence_quote": "Strict laws against illicit drugs carrying severe penalties under the Dangerous Drugs Act",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Otellerde ve restoranlarda hesaba %10 servis ücreti ve %6 vergi eklenir; ilave bahşiş zorunlu değildir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.malaysia.travel",
+          "tier": 1,
+          "title": "Tourism Malaysia: Tipping Advice"
+        }
+      ],
+      "evidence_quote": "A 10% service charge is normally included in restaurant bills; tipping is discretionary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Petronas İkiz Kuleleri ve KLCC",
+        "en": "Petronas Twin Towers and KLCC",
+        "de": "Petronas Twin Towers",
+        "ru": "Башни Петронас в Куала-Лумпуре",
+        "es": "Torres Petronas y KLCC"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.petronastwintowers.com.my",
+          "tier": 1,
+          "title": "Petronas Twin Towers Official Management"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kuala Lumpur Petronas İkiz Kuleleri",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Izuddin Helmi Adnan on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Kuala Lumpur Petronas İkiz Kuleleri gece aydınlatması ve KLCC parkı",
+          "en": "Petronas Twin Towers illuminated at night in central Kuala Lumpur",
+          "de": "Petronas Twin Towers bei Nacht beleuchtet in Kuala Lumpur",
+          "ru": "Башни Петронас в ночной подсветке в Куала-Лумпуре",
+          "es": "Torres Petronas iluminadas de noche en Kuala Lumpur"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "malezya",
+      "en": "malaysia",
+      "de": "malaysia",
+      "ru": "malayziya",
+      "es": "malasia"
+    },
+    "title": {
+      "tr": "Malezya Vize, Seyahat ve Tatil Rehberi 2026 | Vizamigo",
+      "en": "Malaysia Visa, Entry & Travel Guide 2026 | Vizamigo",
+      "de": "Malaysia Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "Малайзия: визы, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Malasia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Malezya vizesiz giriş kuralları (MDAC zorunlu), 999 acil hatları, 230V Tip G prizler, Grab taksi ve seyahat tavsiyeleri.",
+      "en": "Malaysia entry rules, digital arrival card (MDAC), 999 emergency numbers, Type G sockets, and travel guidance.",
+      "de": "Einreisebestimmungen für Malaysia, MDAC-Einreisekarte, Notruf 999, Steckdosentyp G und Reisetipps.",
+      "ru": "Правила въезда в Малайзию, карта прибытия MDAC, служба 999, розетки типа G и путеводитель.",
+      "es": "Requisitos de entrada para Malasia, registro digital MDAC, teléfono de emergencia 999, enchufes y consejos útiles."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,418 @@
+{
+  "iso2": "PL",
+  "names": {
+    "tr": "Polonya",
+    "en": "Poland",
+    "de": "Polen",
+    "ru": "Польша",
+    "es": "Polonia"
+  },
+  "capital": {
+    "value": "Varşova",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.pl",
+        "tier": 1,
+        "title": "Portal Gov.pl - Serwis Rzeczypospolitej Polskiej"
+      }
+    ],
+    "evidence_quote": "Warszawa jest stolicą Rzeczypospolitej Polskiej zgodnie z art. 29 Konstytucji",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "PLN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nbp.pl",
+        "tier": 1,
+        "title": "Narodowy Bank Polski (NBP)"
+      }
+    ],
+    "evidence_quote": "Złoty (PLN) jest oficjalnym znakiem pieniężnym Rzeczypospolitej Polskiej",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gum.gov.pl",
+        "tier": 1,
+        "title": "Główny Urząd Miar (GUM Time)"
+      }
+    ],
+    "evidence_quote": "Czas urzędowy w Polsce odpowiada czasowi środkowoeuropejskiemu UTC+1 i letniemu UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pse.pl",
+          "tier": 1,
+          "title": "Polskie Sieci Elektroenergetyczne (PSE)"
+        }
+      ],
+      "evidence_quote": "Napięcie znamionowe w sieci niskiego napięcia w Polsce wynosi 230 V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pse.pl",
+          "tier": 1,
+          "title": "PSE Częstotliwość Sieci"
+        }
+      ],
+      "evidence_quote": "Częstotliwość znamionowa krajowej sieci elektroenergetycznej wynosi 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pkn.pl",
+          "tier": 1,
+          "title": "Polski Komitet Normalizacyjny (PKN)"
+        }
+      ],
+      "evidence_quote": "Gniazda i wtyczki typu E z bolcem uziemiającym oraz wtyczki dwubiegunowe typu C",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "997",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policja.pl",
+          "tier": 1,
+          "title": "Policja: Numery alarmowe"
+        }
+      ],
+      "evidence_quote": "Numer 997 służy do bezpośredniego kontaktu z Policją w nagłych wypadkach",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.pl/web/zdrowie",
+          "tier": 1,
+          "title": "Ministerstwo Zdrowia: Pogotowie ratunkowe 999"
+        }
+      ],
+      "evidence_quote": "Zadzwoń pod 999 w sytuacjach bezpośredniego zagrożenia życia lub zdrowia",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "998",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.pl/web/kgpsp",
+          "tier": 1,
+          "title": "Państwowa Straż Pożarna (998)"
+        }
+      ],
+      "evidence_quote": "Numer 998 łączy ze stanowiskiem kierowania Państwowej Straży Pożarnej",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.pl/web/numer-alarmowy-112",
+          "tier": 1,
+          "title": "System Powiadamiania Ratunkowego 112"
+        }
+      ],
+      "evidence_quote": "112 to jednolity numer alarmowy obowiązujący na terenie całej Polski i UE",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/poland-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Poland Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/polen-node/polensicherheit/199124",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Polen Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 1); seyahat için son derece güvenli ve huzurlu bir ülkedir",
+      "en": "Exercise normal precautions (Level 1); very safe country with reliable transport and services",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); sehr hohes Sicherheitsniveau im ganzen Land",
+      "ru": "Обычные меры предосторожности (Уровень 1); высокий уровень безопасности в городах",
+      "es": "Precauciones normales (Nivel 1); país sumamente seguro con excelente infraestructura turística"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 68.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/poland",
+          "tier": 2,
+          "title": "Speedtest Global Index: Poland"
+        }
+      ],
+      "evidence_quote": "Poland median mobile download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 142.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/poland",
+          "tier": 2,
+          "title": "Speedtest Global Index: Poland Fixed"
+        }
+      ],
+      "evidence_quote": "Poland median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Orange Polska, Play, Plus ve T-Mobile 5G ağları yaygındır; kimlik veya pasaportla kayıt zorunludur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://uke.gov.pl",
+          "tier": 1,
+          "title": "Urząd Komunikacji Elektronicznej (UKE)"
+        }
+      ],
+      "evidence_quote": "Obowiązek rejestracji kart przedpłaconych (pre-paid) na podstawie dowodu tożsamości",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Jakdojade",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://jakdojade.pl",
+        "tier": 2,
+        "title": "Jakdojade Public Transport App Poland"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/pl/pl/",
+        "tier": 2,
+        "title": "Uber Poland"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/pl-pl/",
+        "tier": 2,
+        "title": "Bolt Poland"
+      }
+    },
+    {
+      "name": "Pyszne.pl",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pyszne.pl",
+        "tier": 2,
+        "title": "Pyszne.pl Food Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%71), İnançsız/Ateist (%7), Cevapsız (%20)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stat.gov.pl",
+          "tier": 1,
+          "title": "Główny Urząd Statystyczny (GUS Narodowy Spis Powszechny)"
+        }
+      ],
+      "evidence_quote": "Wyniki Narodowego Spisu Powszechnego dotyczące przynależności wyznaniowej w Polsce",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "3 Mayıs Anayasa Günü, 11 Kasım Bağımsızlık Günü, Kraków Yahudi Kültürü Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.polska.travel",
+          "tier": 1,
+          "title": "Polska Organizacja Turystyczna (Polish Tourism Organisation)"
+        }
+      ],
+      "evidence_quote": "Główne święta narodowe i tradycyjne festiwale kulturalne w Polsce",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Pazar günleri mağazaların kapalı olduğu 'Ticaret Yasağı Pazar Günleri' (Niedziele niehandlowe) uygulanır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pip.gov.pl",
+          "tier": 1,
+          "title": "Państwowa Inspekcja Pracy: Zakaz handlu w niedziele"
+        }
+      ],
+      "evidence_quote": "Ustawa o ograniczeniu handlu w niedziele i święta obowiązująca w placówkach handlowych",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda bahşiş (napiwek) zorunlu değildir; iyi hizmet durumunda hesap tutarının %10'u kadar bırakılır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.polska.travel",
+          "tier": 1,
+          "title": "Polska.travel: Practical Information"
+        }
+      ],
+      "evidence_quote": "Napiwek w wysokości około 10% rachunku jest powszechnie przyjęty jako wyraz zadowolenia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Krakow Tarihi Şehir Merkezi ve Wawel Kalesi",
+        "en": "Historic Centre of Kraków and Wawel Castle",
+        "de": "Historisches Zentrum von Krakau",
+        "ru": "Исторический центр Кракова и Вавельский замок",
+        "es": "Centro histórico de Cracovia y Castillo de Wawel"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/29",
+          "tier": 2,
+          "title": "UNESCO: Historic Centre of Kraków"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Krakow Ana Pazar Meydanı ve Meryem Ana Bazilikası",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Jacek Dylag on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Krakow Ana Pazar Meydanı Sukiennice Kumaş Pazarı ve tarihi binalar",
+          "en": "Krakow Main Market Square with historic Cloth Hall and St Mary Basilica",
+          "de": "Hauptmarkt in Krakau mit Tuchhallen und Marienkirche",
+          "ru": "Главная рыночная площадь в Кракове с Сукенницами и костелом Девы Марии",
+          "es": "Plaza del Mercado Principal de Cracovia con la Lonja de Paños"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "polonya",
+      "en": "poland",
+      "de": "polen",
+      "ru": "polsha",
+      "es": "polonia"
+    },
+    "title": {
+      "tr": "Polonya Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Poland Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Polen Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Польша: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Polonia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Polonya Schengen vize kuralları, 112/997 acil hatları, 230V Tip E prizler, Varşova ve Krakow seyahat rehberi.",
+      "en": "Poland entry regulations, 112 emergency services, Type E sockets, public transit apps, and travel advice.",
+      "de": "Einreisebestimmungen für Polen, Schengen, Notruf 112, Steckdosentyp E und Reisetipps.",
+      "ru": "Правила въезда в Польшу, шенген, экстренные службы 112, розетки типа E и путеводитель.",
+      "es": "Requisitos de entrada para Polonia, visa Schengen, teléfono 112, enchufes tipo E y recomendaciones."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

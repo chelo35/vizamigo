@@ -1,0 +1,436 @@
+{
+  "iso2": "CN",
+  "names": {
+    "tr": "Çin",
+    "en": "China",
+    "de": "China",
+    "ru": "Китай",
+    "es": "China"
+  },
+  "capital": {
+    "value": "Pekin (Beijing)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "http://english.www.gov.cn",
+        "tier": 1,
+        "title": "The State Council of the People's Republic of China"
+      }
+    ],
+    "evidence_quote": "Beijing is the capital of the People's Republic of China and political and cultural centre",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CNY",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "http://www.pbc.gov.cn",
+        "tier": 1,
+        "title": "People's Bank of China (PBOC)"
+      }
+    ],
+    "evidence_quote": "The Renminbi (RMB / Yuan / CNY) is the official legal tender currency of the PRC",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "http://english.www.gov.cn",
+        "tier": 1,
+        "title": "National Standard Time Beijing (UTC+8)"
+      }
+    ],
+    "evidence_quote": "The single nationwide official time observed throughout China is Beijing Time (UTC+8)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.sgcc.com.cn",
+          "tier": 1,
+          "title": "State Grid Corporation of China (SGCC)"
+        }
+      ],
+      "evidence_quote": "Standard residential low voltage single-phase supply across China is 220V AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.sgcc.com.cn",
+          "tier": 1,
+          "title": "SGCC Grid Frequency Standards"
+        }
+      ],
+      "evidence_quote": "Nominal frequency of China's national power grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "C",
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://openstd.samr.gov.cn",
+          "tier": 1,
+          "title": "National Standard GB 2099.1 & GB 1002"
+        }
+      ],
+      "evidence_quote": "National standard multi-functional sockets accommodate two-prong flat (A/C) and three-prong angled (I)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.mps.gov.cn",
+          "tier": 1,
+          "title": "Ministry of Public Security: 110 Police Emergency"
+        }
+      ],
+      "evidence_quote": "Dial 110 nationwide for immediate police emergency and reporting assistance in China",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "120",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.nhc.gov.cn",
+          "tier": 1,
+          "title": "National Health Commission: 120 Medical Emergency"
+        }
+      ],
+      "evidence_quote": "Dial 120 nationwide for public emergency medical response and hospital ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.mem.gov.cn",
+          "tier": 1,
+          "title": "Ministry of Emergency Management: 119 Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 119 for national fire rescue and accident emergency dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://english.www.gov.cn",
+          "tier": 1,
+          "title": "China Emergency Services (110, 120, 119)"
+        }
+      ],
+      "evidence_quote": "110 serves as the primary gateway for emergency response services across China",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "12301 (Turizm Şikayet & Destek)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.mct.gov.cn",
+          "tier": 1,
+          "title": "Ministry of Culture and Tourism: 12301 Hotline"
+        }
+      ],
+      "evidence_quote": "Dial 12301 or 12345 nationwide for tourist rights protection, complaints, and information",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/china-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: China Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/china-node/chinasicherheit/200466",
+          "tier": 1,
+          "title": "Auswärtiges Amt: China Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Seyahat uyarısı (Seviye 3); sokak suçları çok düşüktür ancak yerel yasalara, dijital denetimlere ve izinlere dikkat edilmelidir",
+      "en": "Reconsider travel / Exercise increased caution (Level 3); street crime very low, strict local legal regulations apply",
+      "de": "Reisehinweis (Stufe 3); sehr niedrige Kriminalität, strenge Gesetze und digitale Bestimmungen beachten",
+      "ru": "Предостережение о поездках (Уровень 3); низкий уровень уличной преступности, строгое соблюдение законов",
+      "es": "Reconsiderar viaje / Precaución incrementada (Nivel 3); delincuencia callejera baja, regulaciones estrictas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Sincan Uygur Özerk Bölgesi ve Tibet",
+        "level": 3,
+        "reason": "unrest",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Regional Notice"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 165.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/china",
+          "tier": 2,
+          "title": "Speedtest Global Index: China"
+        }
+      ],
+      "evidence_quote": "China median mobile download speed with extensive nationwide 5G coverage",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 224.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/china",
+          "tier": 2,
+          "title": "Speedtest Global Index: China Fixed"
+        }
+      ],
+      "evidence_quote": "China median fixed broadband speed exceeds 220 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "China Mobile, China Telecom ve China Unicom ağları bulunur; pasaportla kayıt şarttır, batılı servislere erişimde VPN/roaming eSIM gerekebilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://www.miit.gov.cn",
+          "tier": 1,
+          "title": "Ministry of Industry and Information Technology (MIIT)"
+        }
+      ],
+      "evidence_quote": "Real-name passport registration required for all mobile telecommunications users in China",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Alipay",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.alipay.com",
+        "tier": 2,
+        "title": "Alipay International Card Service"
+      }
+    },
+    {
+      "name": "WeChat",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.wechat.com",
+        "tier": 2,
+        "title": "WeChat Pay International"
+      }
+    },
+    {
+      "name": "DiDi Greater China",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.didiglobal.com",
+        "tier": 2,
+        "title": "DiDi Chuxing China"
+      }
+    },
+    {
+      "name": "Amap (Gaode)",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.amap.com",
+        "tier": 2,
+        "title": "Amap Gaode Maps China"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Resmî olarak seküler; Budizm, Taoizm, İslam ve Hristiyanlık devlet onaylı dernekler altında faaliyet gösterir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://english.www.gov.cn",
+          "tier": 1,
+          "title": "White Paper on Freedom of Religious Belief in China"
+        }
+      ],
+      "evidence_quote": "Citizens of the PRC enjoy freedom of religious belief under the Constitution",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bahar Festivali (Çin Yeni Yılı), Sonbahar Ortası Festivali (Mooncake), Ejderha Teknesi Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://english.www.gov.cn",
+          "tier": 1,
+          "title": "State Council: Public Holidays in China"
+        }
+      ],
+      "evidence_quote": "Spring Festival and Mid-Autumn Festival are the foremost traditional holidays celebrated nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Nakit para neredeyse kullanılmaz; ödemeler WeChat Pay veya Alipay QR kodları ile yapılır. Pasaportunuzu daima yanınızda bulundurun.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://english.www.gov.cn",
+          "tier": 1,
+          "title": "Travel in China: Payment Guidelines for Foreign Visitors"
+        }
+      ],
+      "evidence_quote": "Foreign cards can be linked directly to Alipay and WeChat Pay for convenient mobile transactions",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Çin'de geleneksel olarak bahşiş uygulaması yoktur ve restoran veya taksilerde bahşiş verilmesi beklenmez.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://english.www.gov.cn",
+          "tier": 1,
+          "title": "China Tourism: Etiquette Guidelines"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in China and can even be considered impolite in traditional venues",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Çin Seddi (Mutianyu ve Badaling)",
+        "en": "The Great Wall of China",
+        "de": "Chinesische Mauer",
+        "ru": "Великая Китайская стена",
+        "es": "La Gran Muralla China"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/438",
+          "tier": 2,
+          "title": "UNESCO: The Great Wall"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Çin Seddi Mutianyu Dağlık Bölümü",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Hanson Lu on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Çin Seddi Mutianyu dağ silsilesi boyunca uzanan tarihi kuleler",
+          "en": "The Great Wall of China winding across steep green mountains at Mutianyu",
+          "de": "Chinesische Mauer windet sich über die Berge bei Mutianyu",
+          "ru": "Великая Китайская стена на горных хребтах в Мутяньюй",
+          "es": "La Gran Muralla China serpenteando por las montañas en Mutianyu"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "cin",
+      "en": "china",
+      "de": "china",
+      "ru": "kitay",
+      "es": "china"
+    },
+    "title": {
+      "tr": "Çin Vize, Transit Vizesiz Geçiş ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "China Visa, 144-Hour Transit & Travel Guide 2026 | Vizamigo",
+      "de": "China Visum, 144-Stunden-Transit & Reiseführer 2026 | Vizamigo",
+      "ru": "Китай: виза, 144-часовой безвизовый транзит и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Tránsito sin Visado para China 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Çin vize kuralları, 144 saat transit vize muafiyeti, Alipay/WeChat Pay rehberi, 110 acil hatları ve Pekin gezi tavsiyeleri.",
+      "en": "China tourist visa requirements, 144-hour visa-free transit, mobile payments guide, 110 emergency, and travel advice.",
+      "de": "Einreisebestimmungen für China, 144-Stunden-Transit, Alipay-Zahlungen, Notruf 110 und Reisetipps.",
+      "ru": "Правила въезда в Китай, транзит 144 часа, оплата через Alipay/WeChat, служба 110 и советы туристам.",
+      "es": "Requisitos de entrada para China, tránsito sin visa de 144 horas, pagos móviles con Alipay y teléfono 110."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

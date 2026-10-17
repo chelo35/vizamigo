@@ -1,0 +1,435 @@
+{
+  "iso2": "ID",
+  "names": {
+    "tr": "Endonezya",
+    "en": "Indonesia",
+    "de": "Indonesien",
+    "ru": "Индонезия",
+    "es": "Indonesia"
+  },
+  "capital": {
+    "value": "Cakarta (Nusantara yeni başkent)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://indonesia.go.id",
+        "tier": 1,
+        "title": "Portal Resmi Pemerintah Republik Indonesia"
+      }
+    ],
+    "evidence_quote": "Jakarta adalah ibu kota Indonesia dan Nusantara dipersiapkan sebagai ibu kota masa depan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "IDR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bi.go.id",
+        "tier": 1,
+        "title": "Bank Indonesia (BI)"
+      }
+    ],
+    "evidence_quote": "Rupiah adalah mata uang resmi Negara Kesatuan Republik Indonesia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+7 (WIB) / Bali: UTC+8 (WITA)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bmkg.go.id",
+        "tier": 1,
+        "title": "Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)"
+      }
+    ],
+    "evidence_quote": "Indonesia terbagi tiga zona waktu: WIB (UTC+7), WITA (UTC+8) termasuk Bali, dan WIT (UTC+9)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://web.pln.co.id",
+          "tier": 1,
+          "title": "PT PLN (Persero) Perusahaan Listrik Negara"
+        }
+      ],
+      "evidence_quote": "Tegangan standar penyediaan listrik satu fasa di Indonesia adalah 230 volt",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://web.pln.co.id",
+          "tier": 1,
+          "title": "PT PLN Standar Frekuensi"
+        }
+      ],
+      "evidence_quote": "Frekuensi sistem tenaga listrik nasional Indonesia adalah 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bsn.go.id",
+          "tier": 1,
+          "title": "Badan Standardisasi Nasional (BSN / SNI)"
+        }
+      ],
+      "evidence_quote": "Standar Nasional Indonesia (SNI) menetapkan tusuk kontak tipe C dan tipe F (Schuko)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://polri.go.id",
+          "tier": 1,
+          "title": "Kepolisian Negara Republik Indonesia (Polri: 110)"
+        }
+      ],
+      "evidence_quote": "Layanan Call Center 110 Polri siap melayani laporan darurat kepolisian 24 jam",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "118 / 119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://kemkes.go.id",
+          "tier": 1,
+          "title": "Kementerian Kesehatan: SPGD 119"
+        }
+      ],
+      "evidence_quote": "Hubungi 119 untuk Sistem Penanggulangan Gawat Darurat Terpadu ambulans dan medis",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://indonesia.go.id",
+          "tier": 1,
+          "title": "Dinas Pemadam Kebakaran (113)"
+        }
+      ],
+      "evidence_quote": "Hubungi 113 untuk pemadam kebakaran dan pertolongan bencana darurat",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://layanan112.kominfo.go.id",
+          "tier": 1,
+          "title": "Kementerian Kominfo: Layanan Darurat 112"
+        }
+      ],
+      "evidence_quote": "Layanan Nomor Tunggal Panggilan Darurat 112 bebas pulsa di seluruh Indonesia",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "(0361) 754599 (Bali Turist Polisi)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bali.polri.go.id",
+          "tier": 1,
+          "title": "Polda Bali: Tourist Police Division Kuta"
+        }
+      ],
+      "evidence_quote": "Bali Tourist Police provides dedicated security and assistance to international tourists",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/indonesia-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Indonesia Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "AU_DFAT",
+        "level": "Exercise a high degree of caution",
+        "source": {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/indonesia",
+          "tier": 1,
+          "title": "Smartraveller Australia: Indonesia Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart seyahat dikkati (Seviye 2); Bali, Lombok ve turistik adalar son derece popüler ve güvenli, volkanik uyarılara dikkat",
+      "en": "Exercise increased caution (Level 2); Bali and resort islands very safe, monitor volcanic activity advisories",
+      "de": "Erhöhte Vorsicht (Stufe 2); Bali und touristische Inseln sicher, vulkanische Aktivitätswarnungen beachten",
+      "ru": "Повышенные меры предосторожности (Уровень 2); Бали и курорты безопасны, следить за активностью вулканов",
+      "es": "Precaución incrementada (Nivel 2); Bali e islas turísticas seguras, atención a avisos de actividad volcánica"
+    },
+    "regional_warnings": [
+      {
+        "area": "Papua ve Orta Sulawesi dağlık alanları",
+        "level": 3,
+        "reason": "unrest",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Papua Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "conflict": "low",
+      "terrorism": "medium",
+      "health": "medium",
+      "natural_hazard": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 34.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/indonesia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Indonesia"
+        }
+      ],
+      "evidence_quote": "Indonesia median mobile download speed with extensive 4G LTE and growing 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 38.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/indonesia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Indonesia Fixed"
+        }
+      ],
+      "evidence_quote": "Indonesia median fixed broadband speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Telkomsel, Indosat Ooredoo Hutchison ve XL Axiata yaygındır; yabancı telefonlar için 90 günü aşan kalışlarda IMEI kaydı gerekir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.kominfo.go.id",
+          "tier": 1,
+          "title": "Kementerian Kominfo: Registrasi IMEI dan SIM"
+        }
+      ],
+      "evidence_quote": "Wisatawan asing wajib mendaftarkan nomor paspor untuk aktivasi kartu perdana prabayar",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Gojek",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.gojek.com/id-id/",
+        "tier": 2,
+        "title": "Gojek Indonesia Superapp"
+      }
+    },
+    {
+      "name": "Grab Indonesia",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/id/",
+        "tier": 2,
+        "title": "Grab Indonesia"
+      }
+    },
+    {
+      "name": "Bluebird Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.bluebirdgroup.com",
+        "tier": 1,
+        "title": "Bluebird Group Official Taxi App"
+      }
+    },
+    {
+      "name": "Tokopedia",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.tokopedia.com",
+        "tier": 2,
+        "title": "Tokopedia Marketplace"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (%87 - Devlet geneli), Protestan/Katolik (%10.5), Hinduizm (%1.7 - Bali'de %86)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://kemenag.go.id",
+          "tier": 1,
+          "title": "Kementerian Agama Republik Indonesia"
+        }
+      ],
+      "evidence_quote": "Data resmi Kementerian Agama tentang keberagaman agama yang diakui di Indonesia",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Nyepi (Bali Sessizlik Günü), Galungan & Kuningan, İdül Fıtri (Ramazan Bayramı), Waisak (Borobudur)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.indonesia.travel",
+          "tier": 1,
+          "title": "Wonderful Indonesia: Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "Nyepi is Bali's sacred Day of Silence where all outdoor activity and flights cease for 24 hours",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Tapınak ziyaretlerinde sarong ve kuşak takmak zorunludur. Sol el ile bir şey uzatmak veya yemek yemek kaba kabul edilir. Uyuşturucuya sıfır tolerans uygulanır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.indonesia.travel",
+          "tier": 1,
+          "title": "Ministry of Tourism: Do's and Don'ts in Bali"
+        }
+      ],
+      "evidence_quote": "Modest attire with a sarong is mandatory when visiting sacred temples across Bali",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Turistik restoran ve otellerde %5 ila %10 servis ücreti eklenir; bahşiş zorunlu değildir ancak garson ve şoförlere 20.000-50.000 IDR takdir edilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.indonesia.travel",
+          "tier": 1,
+          "title": "Wonderful Indonesia: Practical Tipping"
+        }
+      ],
+      "evidence_quote": "Tipping is not mandatory in Indonesia but widely appreciated in tourist hubs like Bali",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Bali Ulun Danu Beratan Su Tapınağı",
+        "en": "Ulun Danu Beratan Water Temple, Bali",
+        "de": "Pura Ulun Danu Bratan Wassertempel auf Bali",
+        "ru": "Водный храм Улун Дану Братан на Бали",
+        "es": "Templo del agua Pura Ulun Danu Bratan en Bali"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1194",
+          "tier": 2,
+          "title": "UNESCO: Cultural Landscape of Bali Province"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bali Ulun Danu Beratan Su Tapınağı",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Nick Fewings on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Bali Beratan gölü üzerinde sisli dağlar önünde Ulun Danu Beratan tapınağı",
+          "en": "Pura Ulun Danu Beratan temple on Lake Beratan with mist and mountains in Bali",
+          "de": "Ulun Danu Beratan Tempel am Bratan-See mit Nebelbergen auf Bali",
+          "ru": "Храм Пура Улун Дану на озере Братан в тумане на Бали",
+          "es": "Templo Pura Ulun Danu Beratan en el lago entre montañas brumosas en Bali"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "endonezya",
+      "en": "indonesia",
+      "de": "indonesien",
+      "ru": "indoneziya",
+      "es": "indonesia"
+    },
+    "title": {
+      "tr": "Endonezya (Bali) Vize, e-VoA ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Indonesia (Bali) Visa, e-VoA & Travel Guide 2026 | Vizamigo",
+      "de": "Indonesien (Bali) Visum, e-VoA & Reiseführer 2026 | Vizamigo",
+      "ru": "Индонезия (Бали): визы, e-VoA и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas e-VoA y Consejos para Bali e Indonesia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Endonezya Kapıda Vize (VoA) ve e-VoA kuralları (evisa.imigrasi.go.id), 112/110 acil hatları, Bali seyahat ve priz tavsiyeleri.",
+      "en": "Indonesia e-VoA application rules, emergency numbers, Type C/F plugs, Gojek ride app, and Bali travel etiquette.",
+      "de": "Einreisebestimmungen für Bali und Indonesien, e-VoA, Notruf 112, Steckdosentypen C/F und Reisetipps.",
+      "ru": "Правила въезда на Бали и в Индонезию, электронная виза e-VoA, экстренные службы 112 и гид.",
+      "es": "Requisitos de entrada para Bali e Indonesia, visado e-VoA, teléfono de emergencia 112 y consejos prácticos."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

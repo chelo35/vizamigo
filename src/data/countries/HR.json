@@ -1,0 +1,418 @@
+{
+  "iso2": "HR",
+  "names": {
+    "tr": "Hırvatistan",
+    "en": "Croatia",
+    "de": "Kroatien",
+    "ru": "Хорватия",
+    "es": "Croacia"
+  },
+  "capital": {
+    "value": "Zagreb",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://vlada.gov.hr",
+        "tier": 1,
+        "title": "Vlada Republike Hrvatske (Government of Croatia)"
+      }
+    ],
+    "evidence_quote": "Zagreb je glavni grad Republike Hrvatske i sjedište državnih tijela",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hnb.hr",
+        "tier": 1,
+        "title": "Hrvatska narodna banka (HNB)"
+      }
+    ],
+    "evidence_quote": "Euro je službena valuta u Republici Hrvatskoj od 1. siječnja 2023. godine",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.dzm.hr",
+        "tier": 1,
+        "title": "Državni zavod za mjeriteljstvo"
+      }
+    ],
+    "evidence_quote": "U Republici Hrvatskoj primjenjuje se srednjoeuropsko vrijeme (UTC+1) i ljetno računanje vremena",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hep.hr",
+          "tier": 1,
+          "title": "Hrvatska elektroprivreda (HEP ODS)"
+        }
+      ],
+      "evidence_quote": "Nazivni napon niskonaponske distribucijske mreže u Hrvatskoj iznosi 230 V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hops.hr",
+          "tier": 1,
+          "title": "Hrvatski operator prijenosnog sustava (HOPS)"
+        }
+      ],
+      "evidence_quote": "Nazivna frekvencija prijenosnog elektroenergetskog sustava je 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hzn.hr",
+          "tier": 1,
+          "title": "Hrvatski zavod za norme (HZN)"
+        }
+      ],
+      "evidence_quote": "Standardne utičnice tipa C i tipa F (Schuko) s uzemljenjem",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mup.gov.hr",
+          "tier": 1,
+          "title": "Ministarstvo unutarnjih poslova: Policija 192"
+        }
+      ],
+      "evidence_quote": "Nazovite 192 za hitne policijske intervencije u cijeloj Hrvatskoj",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "194",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hzhm.hr",
+          "tier": 1,
+          "title": "Hrvatski zavod za hitnu medicinu (194)"
+        }
+      ],
+      "evidence_quote": "Broj 194 služi za hitnu medicinsku pomoć i pozive sanitetskih vozila",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "193",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://hvz.gov.hr",
+          "tier": 1,
+          "title": "Hrvatska vatrogasna zajednica (193)"
+        }
+      ],
+      "evidence_quote": "Nazovite 193 za vatrogasce u slučaju požara i spašavanja",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://civilna-zastita.gov.hr",
+          "tier": 1,
+          "title": "Ravnateljstvo civilne zaštite: Centar 112"
+        }
+      ],
+      "evidence_quote": "Jedinstveni europski broj za hitne službe 112 dostupan je bez naknade",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/croatia-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Croatia Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/kroatien-node/kroatiensicherheit/210072",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Kroatien Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 1); Adriyatik kıyıları son derece huzurlu, yazın yoğun feribot trafiğine dikkat",
+      "en": "Exercise normal precautions (Level 1); very safe country, plan for busy ferry schedules in high summer",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); sehr hohes Sicherheitsniveau, Fährverbindungen im Sommer beachten",
+      "ru": "Обычные меры предосторожности (Уровень 1); высокий уровень безопасности на побережье Адриатики",
+      "es": "Precauciones normales (Nivel 1); país sumamente seguro, alta afluencia de ferris en temporada de verano"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 91.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/croatia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Croatia"
+        }
+      ],
+      "evidence_quote": "Croatia median mobile download speed with extensive coastal 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 78.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/croatia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Croatia Fixed"
+        }
+      ],
+      "evidence_quote": "Croatia median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Hrvatski Telekom, A1 Hrvatska ve Telemach ağları adalar dahil etkindir; gazete bayilerinden turist SIM alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hakom.hr",
+          "tier": 1,
+          "title": "HAKOM Hrvatska regulatorna agencija za mrežne djelatnosti"
+        }
+      ],
+      "evidence_quote": "Regulativa o telekomunikacijskim uslugama i SIM karticama na području RH",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/hr-hr/",
+        "tier": 2,
+        "title": "Bolt Croatia"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/hr/hr/",
+        "tier": 2,
+        "title": "Uber Croatia"
+      }
+    },
+    {
+      "name": "Jadrolinija",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.jadrolinija.hr",
+        "tier": 1,
+        "title": "Jadrolinija National Ferry Company"
+      }
+    },
+    {
+      "name": "Wolt Croatia",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/hrv",
+        "tier": 2,
+        "title": "Wolt Delivery Croatia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%79), Ortodoks (%3.3), İslam (%1.3), Dinsiz/Ateist (%6)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dzs.gov.hr",
+          "tier": 1,
+          "title": "Državni zavod za statistiku (DZS Popis stanovništva)"
+        }
+      ],
+      "evidence_quote": "Popis stanovništva o vjerskoj pripadnosti stanovništva u Republici Hrvatskoj",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Dubrovnik Yaz Festivali, Ultra Europe Müzik Festivali (Split), Rijeka Karnavalı",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://croatia.hr",
+          "tier": 1,
+          "title": "Hrvatska turistička zajednica (Croatian National Tourist Board)"
+        }
+      ],
+      "evidence_quote": "Glavne kulturne i glazbene manifestacije tijekom ljetne turističke sezone u Hrvatskoj",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Dubrovnik ve Split tarihi şehir merkezlerinde mayo/bikini ile sokakta dolaşmak para cezasına tabidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dubrovnik.hr",
+          "tier": 1,
+          "title": "Grad Dubrovnik: Odluka o komunalnom redu"
+        }
+      ],
+      "evidence_quote": "Zabranjeno je hodanje u kupaćem kostimu kroz povijesnu jezgru grada pod prijetnjom novčane kazne",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda bahşiş hesaba dahil değildir; memnuniyet için hesap tutarının %10'u kadar nakit bırakmak gelenektir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://croatia.hr",
+          "tier": 1,
+          "title": "Croatia.hr: Tipping Customs"
+        }
+      ],
+      "evidence_quote": "Leaving approximately 10% tip in restaurants is common and appreciated for good service",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Dubrovnik Tarihi Eski Şehir ve Surları",
+        "en": "Old City of Dubrovnik",
+        "de": "Altstadt von Dubrovnik",
+        "ru": "Старый город Дубровника",
+        "es": "Ciudad vieja de Dubrovnik"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/95",
+          "tier": 2,
+          "title": "UNESCO: Old City of Dubrovnik"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Dubrovnik Tarihi Şehir Surları ve Adriyatik",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Sorin Sîrbu on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Dubrovnik surları kiremit çatılı tarihi taş evleri ve mavi Adriyatik Denizi",
+          "en": "Dubrovnik red-tiled old town medieval ramparts on the Adriatic Sea",
+          "de": "Mittelalterliche Stadtmauer von Dubrovnik an der Adria",
+          "ru": "Крепостные стены старого города Дубровника на берегу Адриатики",
+          "es": "Murallas medievales y tejados rojos de Dubrovnik junto al mar Adriático"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "hirvatistan",
+      "en": "croatia",
+      "de": "kroatien",
+      "ru": "khorvatiya",
+      "es": "croacia"
+    },
+    "title": {
+      "tr": "Hırvatistan Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Croatia Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Kroatien Visum, Schengen-Regeln & Reiseführer 2026 | Vizamigo",
+      "ru": "Хорватия: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas Schengen y Consejos para Croacia 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Hırvatistan Schengen vize şartları, 192/112 acil hatları, 230V C/F prizler, Dubrovnik ve Split seyahat tavsiyeleri.",
+      "en": "Croatia Schengen visa requirements, 112 emergency services, Type C/F plugs, ferry transport, and travel tips.",
+      "de": "Einreisebestimmungen für Kroatien, Schengen, Notruf 112, Steckdosentypen C/F und Reisetipps.",
+      "ru": "Правила въезда в Хорватию, шенген, служба спасения 112, розетки C/F и путеводитель по Дубровнику.",
+      "es": "Requisitos de entrada para Croacia, zona Schengen, teléfono de emergencia 112, enchufes y recomendaciones."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

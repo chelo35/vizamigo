@@ -1,0 +1,419 @@
+{
+  "iso2": "VN",
+  "names": {
+    "tr": "Vietnam",
+    "en": "Vietnam",
+    "de": "Vietnam",
+    "ru": "Вьетнам",
+    "es": "Vietnam"
+  },
+  "capital": {
+    "value": "Hanoi",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://chinhphu.vn",
+        "tier": 1,
+        "title": "Cổng Thông tin điện tử Chính phủ (Government of Vietnam)"
+      }
+    ],
+    "evidence_quote": "Hà Nội là thủ đô của nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "VND",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sbv.gov.vn",
+        "tier": 1,
+        "title": "State Bank of Vietnam (Ngân hàng Nhà nước Việt Nam)"
+      }
+    ],
+    "evidence_quote": "Đồng Việt Nam (VND) là đơn vị tiền tệ chính thức của nước CHXHCN Việt Nam",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+7 (ICT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://chinhphu.vn",
+        "tier": 1,
+        "title": "Giờ chuẩn Việt Nam (Indochina Time UTC+7)"
+      }
+    ],
+    "evidence_quote": "Giờ chính thức tại Việt Nam là Giờ Đông Dương (UTC+7)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.evn.com.vn",
+          "tier": 1,
+          "title": "Tập đoàn Điện lực Việt Nam (EVN)"
+        }
+      ],
+      "evidence_quote": "Điện áp danh định mạng hạ áp tại Việt Nam là 220V xoay chiều một pha",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.evn.com.vn",
+          "tier": 1,
+          "title": "EVN Tần số lưới điện"
+        }
+      ],
+      "evidence_quote": "Tần số danh định của hệ thống điện quốc gia là 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tcvn.gov.vn",
+          "tier": 1,
+          "title": "Tổng cục Tiêu chuẩn Đo lường Chất lượng (TCVN)"
+        }
+      ],
+      "evidence_quote": "Tiêu chuẩn quốc gia TCVN áp dụng ổ cắm và phích cắm loại A hai chấu dẹt và loại C/F hai chấu tròn",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://bocongan.gov.vn",
+          "tier": 1,
+          "title": "Bộ Công an: Tổng đài Cảnh sát 113"
+        }
+      ],
+      "evidence_quote": "Gọi 113 để báo tin khẩn cấp về an ninh trật tự cho lực lượng Cảnh sát phản ứng nhanh",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moh.gov.vn",
+          "tier": 1,
+          "title": "Bộ Y tế: Cấp cứu y tế 115"
+        }
+      ],
+      "evidence_quote": "Gọi 115 khi cần cấp cứu y tế và xe cứu thương khẩn cấp trên toàn quốc",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://canhsatpccc.gov.vn",
+          "tier": 1,
+          "title": "Cục Cảnh sát PCCC và CNCH (114)"
+        }
+      ],
+      "evidence_quote": "Gọi 114 để báo cháy, nổ và yêu cầu cứu nạn cứu hộ khẩn cấp",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://chinhphu.vn",
+          "tier": 1,
+          "title": "Tổng đài tìm kiếm cứu nạn và thiên tai 112"
+        }
+      ],
+      "evidence_quote": "Gọi 112 để yêu cầu trợ giúp tìm kiếm cứu nạn và ứng phó thiên tai",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/vietnam-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Vietnam Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "Safe travel with caution",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/vietnam",
+          "tier": 1,
+          "title": "UK FCDO: Vietnam Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart seyahat dikkati (Seviye 1); son derece güvenli ve misafirperver, motosiklet trafiğinde karşıdan karşıya geçerken dikkat edin",
+      "en": "Exercise normal precautions (Level 1); very safe country, exercise caution when crossing dense motorbike traffic",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); sehr sicheres Reiseland, Vorsicht im dichten Motorradverkehr",
+      "ru": "Обычные меры предостроительности (Уровень 1); высокая безопасность, осторожность при переходе дорог",
+      "es": "Precauciones normales (Nivel 1); país sumamente seguro, precaución al cruzar calles con denso tráfico de motos"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 49.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/vietnam",
+          "tier": 2,
+          "title": "Speedtest Global Index: Vietnam"
+        }
+      ],
+      "evidence_quote": "Vietnam median mobile download speed with extensive 4G and pilot 5G in cities",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 108.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/vietnam",
+          "tier": 2,
+          "title": "Speedtest Global Index: Vietnam Fixed"
+        }
+      ],
+      "evidence_quote": "Vietnam high-speed optical fiber median broadband speed exceeds 100 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Viettel, Vinaphone ve MobiFone ağları çok yaygındır; havalimanında pasaportla ucuz ve hızlı turist SIM alınabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mic.gov.vn",
+          "tier": 1,
+          "title": "Bộ Thông tin và Truyền thông (MIC Vietnam)"
+        }
+      ],
+      "evidence_quote": "Quy định đăng ký thông tin thuê bao di động trả trước bằng hộ chiếu bagi du khách quốc tế",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab Vietnam",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/vn/en/",
+        "tier": 2,
+        "title": "Grab Vietnam Superapp"
+      }
+    },
+    {
+      "name": "Be",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://be.com.vn",
+        "tier": 2,
+        "title": "Be Ride Hailing Vietnam"
+      }
+    },
+    {
+      "name": "ShopeeFood Vietnam",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://shopeefood.vn",
+        "tier": 2,
+        "title": "ShopeeFood Delivery"
+      }
+    },
+    {
+      "name": "ZaloPay",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://zalopay.vn",
+        "tier": 2,
+        "title": "ZaloPay Digital Wallet"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Halk inançları ve atalara saygı (%73), Budizm (%15), Katolik Hristiyanlık (%7), Protestanlık (%1)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gso.gov.vn",
+          "tier": 1,
+          "title": "Tổng cục Thống kê (General Statistics Office of Vietnam)"
+        }
+      ],
+      "evidence_quote": "Số liệu điều tra dân số về tôn giáo và tín ngưỡng truyền thống của người dân Việt Nam",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Tết Nguyên Đán (Vietnam Ay Yeni Yılı), Tết Trung Thu (Sonbahar Ortası Festivali), Ulusal Bağımsızlık Günü (2 Eylül)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://vietnam.travel",
+          "tier": 1,
+          "title": "Vietnam National Administration of Tourism (VNAT)"
+        }
+      ],
+      "evidence_quote": "Tết is the most significant and sacred traditional festival celebrated across Vietnam",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Karşıdan karşıya geçerken motosiklet trafiğine karşı durmadan sabit adımlarla yürüyün (sürücüler etrafınızdan dolaşır). Tapınaklarda omuz ve dizler örtülmelidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://vietnam.travel",
+          "tier": 1,
+          "title": "Vietnam Tourism Travel Etiquette"
+        }
+      ],
+      "evidence_quote": "Cross streets at a steady, predictable pace allowing scooter drivers to anticipate your movement",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş Vietnam'da geleneksel değildir; ancak turistik restoranlarda, masaj salonlarında ve tur rehberlerine 20.000-50.000 VND takdir edilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://vietnam.travel",
+          "tier": 1,
+          "title": "Vietnam Tourism: Tipping Practice"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in Vietnam but appreciated in tourism and hospitality services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Hạ Long Körfezi Zümrüt Karstik Adaları",
+        "en": "Ha Long Bay and Cat Ba Archipelago",
+        "de": "Ha-Long-Bucht",
+        "ru": "Бухта Халонг",
+        "es": "Bahía de Ha-Long"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/672",
+          "tier": 2,
+          "title": "UNESCO: Ha Long Bay - Cat Ba Archipelago"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Hạ Long Körfezi Zümrüt Karstik Adaları",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Ammie Ngo on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Hạ Long Körfezi zümrüt suları üzerinde yükselen karstik kireçtaşı adacıkları",
+          "en": "Ha Long Bay emerald green waters and dramatic limestone karst islands in Vietnam",
+          "de": "Smaragdgrünes Wasser und Kalksteininseln in der Ha-Long-Bucht in Vietnam",
+          "ru": "Бухта Халонг с изумрудной водой и известняковыми островами во Вьетнаме",
+          "es": "Aguas esmeralda e islas kársticas de piedra caliza en la bahía de Ha Long, Vietnam"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "vietnam",
+      "en": "vietnam",
+      "de": "vietnam",
+      "ru": "vetnam",
+      "es": "vietnam"
+    },
+    "title": {
+      "tr": "Vietnam Vize, E-Vize ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Vietnam Visa, eVisa & Travel Guide 2026 | Vizamigo",
+      "de": "Vietnam Visum, e-Visum & Reiseführer 2026 | Vizamigo",
+      "ru": "Вьетнам: виза, электронная виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas Electrónicas y Consejos para Vietnam 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Vietnam 90 günlük online e-vize şartları, 113 acil hatları, 220V prizler, Grab taksi, Hanoi ve Da Nang rehberi.",
+      "en": "Vietnam 90-day online eVisa rules, 113 emergency numbers, Type A/C/F sockets, Grab app, and travel tips.",
+      "de": "Einreisebestimmungen für Vietnam, 90-Tage-e-Visum, Notruf 113, Steckdosentypen A/C/F und Reisetipps.",
+      "ru": "Правила въезда во Вьетнам, 90-дневная электронная виза, экстренная служба 113, розетки и путеводитель.",
+      "es": "Requisitos de visado electrónico de 90 días para Vietnam, teléfono 113, enchufes y consejos para viajar."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

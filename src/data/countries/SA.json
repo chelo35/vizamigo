@@ -1,0 +1,434 @@
+{
+  "iso2": "SA",
+  "names": {
+    "tr": "Suudi Arabistan",
+    "en": "Saudi Arabia",
+    "de": "Saudi-Arabien",
+    "ru": "Саудовская Аравия",
+    "es": "Arabia Saudita"
+  },
+  "capital": {
+    "value": "Riyad",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.my.gov.sa",
+        "tier": 1,
+        "title": "Saudi Unified National Platform"
+      }
+    ],
+    "evidence_quote": "Riyadh is the capital of the Kingdom of Saudi Arabia and seat of the royal government",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "SAR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sama.gov.sa",
+        "tier": 1,
+        "title": "Saudi Central Bank (SAMA)"
+      }
+    ],
+    "evidence_quote": "The Saudi Riyal (SAR) is the official monetary currency of the Kingdom of Saudi Arabia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.my.gov.sa",
+        "tier": 1,
+        "title": "Saudi Arabia Standard Time"
+      }
+    ],
+    "evidence_quote": "The standard time across Saudi Arabia is Arabia Standard Time (AST / UTC+3)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.saso.gov.sa",
+          "tier": 1,
+          "title": "Saudi Standards, Metrology and Quality Organization (SASO)"
+        }
+      ],
+      "evidence_quote": "SASO standard specifies 230V nominal low voltage for single phase power distribution",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.se.com.sa",
+          "tier": 1,
+          "title": "Saudi Electricity Company (SEC)"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid in Saudi Arabia is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.saso.gov.sa",
+          "tier": 1,
+          "title": "SASO Mandatory Plug Standard (SASO 2203)"
+        }
+      ],
+      "evidence_quote": "Type G three-pin plugs conforming to SASO standards are the national mandatory standard",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911 / 999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moi.gov.sa",
+          "tier": 1,
+          "title": "Ministry of Interior: Unified Emergency 911"
+        }
+      ],
+      "evidence_quote": "Call 911 (Unified Operations Centre) or 999 for national police emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "997",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.srca.org.sa",
+          "tier": 1,
+          "title": "Saudi Red Crescent Authority (997)"
+        }
+      ],
+      "evidence_quote": "Call 997 for Saudi Red Crescent emergency medical and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "998",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://998.gov.sa",
+          "tier": 1,
+          "title": "General Directorate of Civil Defence (998)"
+        }
+      ],
+      "evidence_quote": "Call 998 for Civil Defence fire rescue services across the Kingdom",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moi.gov.sa",
+          "tier": 1,
+          "title": "National Unified Emergency 911 Centre"
+        }
+      ],
+      "evidence_quote": "The 911 unified security operations centre serves nationwide emergency calls",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "930 (Turizm Hattı)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitsaudi.com",
+          "tier": 1,
+          "title": "Saudi Tourism Authority Tourist Care 930"
+        }
+      ],
+      "evidence_quote": "Dial 930 for tourist care, guidance, and assistance inside the Kingdom",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/saudi-arabia-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Saudi Arabia Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/saudiarabien-node/saudiarabiensicherheit/202262",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Saudi-Arabien Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik (Seviye 2); Riyad, Cidde ve tarihi turizm bölgeleri güvenli, güney sınırına dikkat",
+      "en": "Exercise increased caution (Level 2); major tourism cities safe, avoid proximity to southern border regions",
+      "de": "Erhöhte Vorsicht (Stufe 2); Großstädte und Touristenzentren sicher, Grenzregion zu Jemen meiden",
+      "ru": "Повышенные меры предосторожности (Уровень 2); туристические города безопасны, южная граница не рекомендуется",
+      "es": "Precaución incrementada (Nivel 2); ciudades principales seguras, evitar zonas cercanas a la frontera sur"
+    },
+    "regional_warnings": [
+      {
+        "area": "Yemen sınırına 50 km mesafe",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Border Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "medium",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 112.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/saudi-arabia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Saudi Arabia"
+        }
+      ],
+      "evidence_quote": "Saudi Arabia median mobile download speed exceeds 110 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 126.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/saudi-arabia",
+          "tier": 2,
+          "title": "Speedtest Global Index: Saudi Arabia Fixed"
+        }
+      ],
+      "evidence_quote": "Saudi Arabia median fixed broadband speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "stc, Mobily ve Zain 5G ağları çok gelişmiştir; havalimanında pasaport ve vize QR kodu ile anında hat alınır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cst.gov.sa",
+          "tier": 1,
+          "title": "Communications, Space and Technology Commission (CST)"
+        }
+      ],
+      "evidence_quote": "Regulations for tourist SIM registration linked to visitor passport and visa records",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Careem",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.careem.com",
+        "tier": 2,
+        "title": "Careem KSA"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/sa/en/",
+        "tier": 2,
+        "title": "Uber Saudi Arabia"
+      }
+    },
+    {
+      "name": "Hungerstation",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hungerstation.com",
+        "tier": 2,
+        "title": "Hungerstation KSA Delivery"
+      }
+    },
+    {
+      "name": "Tawakkalna",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tawakkalna.sdaia.gov.sa",
+        "tier": 1,
+        "title": "SDAIA: Official Tawakkalna Services"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (Devletin resmî dini; Mekke ve Medine kutsal şehirleri Krallık sınırları içerisindedir).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.my.gov.sa",
+          "tier": 1,
+          "title": "Basic Law of Governance: Article 1"
+        }
+      ],
+      "evidence_quote": "The Kingdom of Saudi Arabia is a sovereign Arab Islamic State with Islam as its religion",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Ramazan ve Kurban Bayramı, Hac Mevsimi, Suudi Kuruluş Günü (22 Şubat), Riyad Sezonu Festivalleri",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitsaudi.com",
+          "tier": 1,
+          "title": "Visit Saudi Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "Celebration of Saudi Founding Day, National Day, and historic religious feasts",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kamuya açık alanlarda mütevazı giyim beklenir. Alkol ve domuz eti ürünleri ithalatı ve tüketimi tamamen yasaktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitsaudi.com",
+          "tier": 1,
+          "title": "Visit Saudi: Public Decency Regulations"
+        }
+      ],
+      "evidence_quote": "Public decency regulations govern attire, respectful behavior, and alcohol prohibition",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda hesap tutarının %10 ila %15'i oranında bahşiş bırakmak memnuniyet göstergesi olarak kabul görür.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitsaudi.com",
+          "tier": 1,
+          "title": "Visit Saudi: Travel Guidelines"
+        }
+      ],
+      "evidence_quote": "Tipping between 10% and 15% is standard practice in hospitality across Saudi Arabia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Al-Ula Hegra Antik Kaya Mezarları",
+        "en": "Hegra Archaeological Site (Al-Hijr), AlUla",
+        "de": "Hegra archäologische Stätte, AlUla",
+        "ru": "Хегра (Мадаин-Салих) в Аль-Уле",
+        "es": "Sitio arqueológico de Hegra en AlUla"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1293",
+          "tier": 2,
+          "title": "UNESCO: Hegra Archaeological Site"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "AlUla Hegra Antik Kaya Mezarları (UNESCO)",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by NEOM on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "AlUla çöl kanyonunda Nebati antik kaya mezarları Hegra",
+          "en": "Hegra ancient Nabataean rock-cut monumental tomb in AlUla desert",
+          "de": "Monumentales Felsengrab von Hegra in der Wüste von AlUla",
+          "ru": "Древние набатейские скальные гробницы в Хегре (Аль-Ула)",
+          "es": "Monumento funerario nabateo tallado en la roca en Hegra, AlUla"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "suudi-arabistan",
+      "en": "saudi-arabia",
+      "de": "saudi-arabien",
+      "ru": "saudovskaya-araviya",
+      "es": "arabia-saudita"
+    },
+    "title": {
+      "tr": "Suudi Arabistan Vize, E-Vize ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Saudi Arabia Visa, eVisa & Travel Guide 2026 | Vizamigo",
+      "de": "Saudi-Arabien Visum, eVisum & Reiseführer 2026 | Vizamigo",
+      "ru": "Саудовская Аравия: виза, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Arabia Saudita 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Suudi Arabistan turistik e-vize şartları, 911 acil hatları, 230V Tip G prizler, Riyad ve AlUla seyahat rehberi.",
+      "en": "Saudi tourist eVisa regulations, 911 emergency services, 230V Type G sockets, and travel etiquette guidance.",
+      "de": "Einreisebestimmungen für Saudi-Arabien, eVisum, Notruf 911, Steckdosentyp G und Reisetipps.",
+      "ru": "Правила въезда в Саудовскую Аравию, электронная виза, экстренная служба 911 и путеводитель.",
+      "es": "Requisitos de visa para Arabia Saudita, teléfono 911, enchufes tipo G y consejos de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

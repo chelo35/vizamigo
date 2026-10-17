@@ -1,0 +1,423 @@
+{
+  "iso2": "AE",
+  "names": {
+    "tr": "Birleşik Arap Emirlikleri",
+    "en": "United Arab Emirates",
+    "de": "Vereinigte Arabische Emirate",
+    "ru": "Объединенные Арабские Эмираты",
+    "es": "Emiratos Árabes Unidos"
+  },
+  "capital": {
+    "value": "Abu Dabi",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://u.ae",
+        "tier": 1,
+        "title": "The Official Portal of the UAE Government"
+      }
+    ],
+    "evidence_quote": "Abu Dhabi is the federal capital of the United Arab Emirates",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "AED",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbank.ae",
+        "tier": 1,
+        "title": "Central Bank of the UAE"
+      }
+    ],
+    "evidence_quote": "The UAE Dirham is the official national currency of the United Arab Emirates",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (GST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://u.ae",
+        "tier": 1,
+        "title": "UAE Government Time Information"
+      }
+    ],
+    "evidence_quote": "The standard time observed across all seven emirates is Gulf Standard Time (UTC+4)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dewa.gov.ae",
+          "tier": 1,
+          "title": "Dubai Electricity and Water Authority (DEWA)"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity supply voltage in the UAE is 230V single-phase AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dewa.gov.ae",
+          "tier": 1,
+          "title": "DEWA Power Specifications"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the UAE electrical network is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moiat.gov.ae",
+          "tier": 1,
+          "title": "Ministry of Industry and Advanced Technology (MoIAT)"
+        }
+      ],
+      "evidence_quote": "Type G rectangular three-pin plugs (BS 1363 standard) are mandatory throughout the UAE",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/emergencies",
+          "tier": 1,
+          "title": "UAE Government Emergency Numbers"
+        }
+      ],
+      "evidence_quote": "Call 999 for Police emergencies anywhere in the UAE",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "998",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/emergencies",
+          "tier": 1,
+          "title": "UAE Government Emergency Numbers"
+        }
+      ],
+      "evidence_quote": "Call 998 for national ambulance and urgent medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "997",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/emergencies",
+          "tier": 1,
+          "title": "Civil Defence UAE (997)"
+        }
+      ],
+      "evidence_quote": "Call 997 for Civil Defence and fire rescue operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://u.ae",
+          "tier": 1,
+          "title": "UAE National Emergency Dispatch"
+        }
+      ],
+      "evidence_quote": "Dial 999 for comprehensive emergency assistance across all emirates",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "901",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dubaipolice.gov.ae",
+          "tier": 1,
+          "title": "Dubai Police Non-Emergency and Tourist Line (901)"
+        }
+      ],
+      "evidence_quote": "Dial 901 for Dubai Tourist Police assistance and non-emergency inquiries",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/united-arab-emirates-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: UAE Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": "Safe travel with caution",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates",
+          "tier": 1,
+          "title": "UK FCDO: UAE Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genel güvenlik seviyesi olağanüstü yüksek; yerel yasa ve ahlak kurallarına sıkı uyum gereklidir",
+      "en": "Extremely high public safety; strict adherence to local laws, customs and digital conduct required",
+      "de": "Sehr hohe öffentliche Sicherheit; strikte Beachtung der lokalen Gesetze und Verhaltensregeln",
+      "ru": "Чрезвычайно высокая безопасность; строгое соблюдение местных законов и норм поведения",
+      "es": "Seguridad pública sumamente alta; cumplimiento riguroso de las leyes locales y normas cívicas"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "medium",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 315.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/united-arab-emirates",
+          "tier": 2,
+          "title": "Speedtest Global Index: UAE"
+        }
+      ],
+      "evidence_quote": "UAE ranks #1 globally in mobile internet speeds exceeding 300 Mbps median",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 248.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/united-arab-emirates",
+          "tier": 2,
+          "title": "Speedtest Global Index: UAE Fixed"
+        }
+      ],
+      "evidence_quote": "UAE median fixed broadband speed exceeds 240 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "e& (Etisalat) ve du 5G ağları her yerde aktiftir; havaalanında pasaportla ücretsiz turist eSIM verilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tdra.gov.ae",
+          "tier": 1,
+          "title": "Telecommunications and Digital Government Regulatory Authority (TDRA)"
+        }
+      ],
+      "evidence_quote": "Free tourist SIM cards issued upon arrival at UAE immigration checkpoints with biometric verification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Careem",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.careem.com",
+        "tier": 2,
+        "title": "Careem Everything App UAE"
+      }
+    },
+    {
+      "name": "Dubai Taxi (DTC)",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.dubaitaxi.ae",
+        "tier": 1,
+        "title": "Dubai Taxi Corporation Official App"
+      }
+    },
+    {
+      "name": "S'hail RTA",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.rta.ae",
+        "tier": 1,
+        "title": "Dubai RTA Public Transit App S'hail"
+      }
+    },
+    {
+      "name": "Talabat",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.talabat.com/uae",
+        "tier": 2,
+        "title": "Talabat Delivery UAE"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Resmî din İslam (%76); çok kültürlü gurbetçi nüfus nedeniyle Hristiyan, Hindu ve Budist topluluklar mevcuttur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://u.ae",
+          "tier": 1,
+          "title": "UAE Government: Freedom of Religion"
+        }
+      ],
+      "evidence_quote": "Islam is the official religion of the UAE; the state guarantees freedom of worship",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "BAE Ulusal Günü (2 Aralık), Ramazan ve Kurban Bayramı, Dubai Alışveriş Festivali (DSF)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitdubai.com",
+          "tier": 1,
+          "title": "Dubai Tourism: Calendar of Events"
+        }
+      ],
+      "evidence_quote": "Annual calendar of major cultural, shopping, and national celebrations across the UAE",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Alkol yalnızca ruhsatlı otel ve mekanlarda tüketilebilir. İzin almadan insanların veya resmî binaların fotoğrafını çekmek ağır cezaya tabidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://u.ae",
+          "tier": 1,
+          "title": "UAE Cybercrime & Privacy Laws"
+        }
+      ],
+      "evidence_quote": "Strict laws govern photography of individuals and official sites without consent in the UAE",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Hesaplara genellikle %10 servis ücreti eklenir; memnuniyet durumunda personele doğrudan %10-15 bahşiş bırakmak yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitdubai.com",
+          "tier": 1,
+          "title": "Visit Dubai: Tipping Customs"
+        }
+      ],
+      "evidence_quote": "Tipping between 10% to 15% is customary and widely appreciated across UAE restaurants",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Burj Khalifa ve Dubai Alışveriş Merkezi",
+        "en": "Burj Khalifa and The Dubai Mall",
+        "de": "Burj Khalifa und Dubai Mall",
+        "ru": "Бурдж-Халифа",
+        "es": "Burj Khalifa y Dubai Mall"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.visitdubai.com",
+          "tier": 1,
+          "title": "Dubai Department of Economy and Tourism"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Burj Khalifa ve Dubai Şehir Manzarası",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by ZQ Lee on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Dubai Burj Khalifa gökdeleni ve modern fütüristik şehir silueti",
+          "en": "Burj Khalifa tower and Downtown Dubai futuristic skyline",
+          "de": "Burj Khalifa Hochhaus und Skyline von Downtown Dubai",
+          "ru": "Небоскреб Бурдж-Халифа в Даунтауне Дубая",
+          "es": "Torre Burj Khalifa y el horizonte futurista del centro de Dubái"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "birlesik-arap-emirlikleri",
+      "en": "united-arab-emirates",
+      "de": "vae",
+      "ru": "oae",
+      "es": "emiratos-arabes-unidos"
+    },
+    "title": {
+      "tr": "Birleşik Arap Emirlikleri (Dubai) Vize, Seyahat ve Tatil Rehberi 2026 | Vizamigo",
+      "en": "United Arab Emirates (Dubai) Visa, Travel & Entry Guide 2026 | Vizamigo",
+      "de": "VAE (Dubai) Visum, Einreise & Reiseführer 2026 | Vizamigo",
+      "ru": "ОАЭ (Дубай): визы, правила въезда и гид 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Dubái y EAU 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Dubai ve BAE vize gereksinimleri, 999 acil numaraları, Tip G prizler, Careem ulaşım ve seyahat tavsiyeleri.",
+      "en": "UAE entry visa requirements, Dubai emergency contacts, Type G sockets, local ride apps, and safety rules.",
+      "de": "Einreisebestimmungen für Dubai und die VAE, Notrufnummern, Steckdosentyp G und Tipps.",
+      "ru": "Правила въезда в Дубай и ОАЭ, экстренные службы, розетки типа G и путеводитель.",
+      "es": "Requisitos de entrada para Dubái y los EAU, teléfonos de emergencia, enchufes y consejos útiles."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

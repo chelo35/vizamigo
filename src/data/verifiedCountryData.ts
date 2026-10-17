@@ -22,6 +22,16 @@ import TR from './countries/TR.json';
 import MX from './countries/MX.json';
 import GB from './countries/GB.json';
 import GR from './countries/GR.json';
+import AE from './countries/AE.json';
+import SA from './countries/SA.json';
+import PT from './countries/PT.json';
+import NL from './countries/NL.json';
+import MY from './countries/MY.json';
+import HR from './countries/HR.json';
+import PL from './countries/PL.json';
+import CN from './countries/CN.json';
+import ID from './countries/ID.json';
+import VN from './countries/VN.json';
 
 export interface VerifiedSource {
   url: string;
@@ -178,6 +188,16 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   MX: MX as unknown as VerifiedCountryRecord,
   GB: GB as unknown as VerifiedCountryRecord,
   GR: GR as unknown as VerifiedCountryRecord,
+  AE: AE as unknown as VerifiedCountryRecord,
+  SA: SA as unknown as VerifiedCountryRecord,
+  PT: PT as unknown as VerifiedCountryRecord,
+  NL: NL as unknown as VerifiedCountryRecord,
+  MY: MY as unknown as VerifiedCountryRecord,
+  HR: HR as unknown as VerifiedCountryRecord,
+  PL: PL as unknown as VerifiedCountryRecord,
+  CN: CN as unknown as VerifiedCountryRecord,
+  ID: ID as unknown as VerifiedCountryRecord,
+  VN: VN as unknown as VerifiedCountryRecord,
 };
 
 /**

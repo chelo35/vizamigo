@@ -1,0 +1,424 @@
+{
+  "iso2": "PT",
+  "names": {
+    "tr": "Portekiz",
+    "en": "Portugal",
+    "de": "Portugal",
+    "ru": "Португалия",
+    "es": "Portugal"
+  },
+  "capital": {
+    "value": "Lizbon",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.portugal.gov.pt",
+        "tier": 1,
+        "title": "Governo da República Portuguesa"
+      }
+    ],
+    "evidence_quote": "Lisboa é a capital e sede do Governo da República Portuguesa",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bportugal.pt",
+        "tier": 1,
+        "title": "Banco de Portugal"
+      }
+    ],
+    "evidence_quote": "O euro é a moeda com curso legal em Portugal desde janeiro de 2002",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (Yaz: UTC+1 WET) / Azorlar: UTC-1",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://oal.ul.pt",
+        "tier": 1,
+        "title": "Observatório Astronómico de Lisboa (Hora Legal)"
+      }
+    ],
+    "evidence_quote": "A hora legal em Portugal Continental e Madeira é UTC+0 e Açores UTC-1",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.e-redes.pt",
+          "tier": 1,
+          "title": "E-REDES Distribuição de Eletricidade"
+        }
+      ],
+      "evidence_quote": "A tensão nominal de fornecimento em baixa tensão é de 230 V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ren.pt",
+          "tier": 1,
+          "title": "Redes Energéticas Nacionais (REN)"
+        }
+      ],
+      "evidence_quote": "A frequência nominal do sistema elétrico nacional é de 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ipq.pt",
+          "tier": 1,
+          "title": "Instituto Português da Qualidade (IPQ)"
+        }
+      ],
+      "evidence_quote": "Tomadas elétricas padronizadas de tipo C e tipo F (Schuko)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112 / (PSP)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.psp.pt",
+          "tier": 1,
+          "title": "Polícia de Segurança Pública (PSP)"
+        }
+      ],
+      "evidence_quote": "O 112 é o número único para contacto com a Polícia e serviços de socorro",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112 (INEM)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.inem.pt",
+          "tier": 1,
+          "title": "Instituto Nacional de Emergência Médica (INEM)"
+        }
+      ],
+      "evidence_quote": "O INEM é acionado através do Número Europeu de Emergência 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.prociv.pt",
+          "tier": 1,
+          "title": "Autoridade Nacional de Emergência e Proteção Civil"
+        }
+      ],
+      "evidence_quote": "Ligue 112 para acionar os Bombeiros e Proteção Civil em Portugal",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.portugal.gov.pt",
+          "tier": 1,
+          "title": "Número Europeu de Emergência 112 Portugal"
+        }
+      ],
+      "evidence_quote": "O 112 centraliza todas as chamadas de urgência médica, policial e de incêndio",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "213 421 634 (PSP Turismo)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.psp.pt",
+          "tier": 1,
+          "title": "PSP Esquadra de Turismo Lisboa e Porto"
+        }
+      ],
+      "evidence_quote": "Esquadras de Turismo da PSP dedicadas ao atendimento multilingue de turistas",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/portugal-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Portugal Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/portugal-node/portugalsicherheit/210996",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Portugal Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 1); dünyanın en huzurlu ülkelerinden biridir, Lizbon tramvaylarında yankesiciliğe dikkat edin",
+      "en": "Exercise normal precautions (Level 1); exceptionally safe nation, watch for pickpockets on historic Lisbon trams",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); sehr hohes Sicherheitsniveau, Vorsicht vor Taschendiebstahl in der Tram 28",
+      "ru": "Обычные меры предосторожности (Уровень 1); высокий уровень безопасности, внимание в трамвае 28 в Лиссабоне",
+      "es": "Precauciones normales (Nivel 1); país sumamente seguro, atención ante carteristas en el tranvía 28 de Lisboa"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 94.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/portugal",
+          "tier": 2,
+          "title": "Speedtest Global Index: Portugal"
+        }
+      ],
+      "evidence_quote": "Portugal median mobile download speed exceeds 90 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 168.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/portugal",
+          "tier": 2,
+          "title": "Speedtest Global Index: Portugal Fixed"
+        }
+      ],
+      "evidence_quote": "Portugal high-speed fiber broadband median speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "MEO, Vodafone Portugal ve NOS 5G ağları çok yaygındır; dijital göçebeler için eSIM kolayca temin edilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.anacom.pt",
+          "tier": 1,
+          "title": "ANACOM Autoridade Nacional de Comunicações"
+        }
+      ],
+      "evidence_quote": "Regulamentação sobre telecomunicações e registo de cartões pré-pagos em Portugal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/pt-pt/",
+        "tier": 2,
+        "title": "Bolt Portugal"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/pt/pt/",
+        "tier": 2,
+        "title": "Uber Portugal"
+      }
+    },
+    {
+      "name": "CP Comboios",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.cp.pt",
+        "tier": 1,
+        "title": "Comboios de Portugal Official Rail App"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/pt/",
+        "tier": 2,
+        "title": "Glovo Delivery Portugal"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katolik Hristiyanlık (%80), İnançsız/Ateist (%14), Diğer Hristiyan ve diğer dinler (%6)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.pt",
+          "tier": 1,
+          "title": "Instituto Nacional de Estatística (Censos INE)"
+        }
+      ],
+      "evidence_quote": "Dados do Censos sobre afiliação religiosa da população em Portugal",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Festas de Santo António (Lizbon - 12-13 Haziran), Festa de São João (Porto), Web Summit",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com",
+          "tier": 1,
+          "title": "Turismo de Portugal Official Calendar"
+        }
+      ],
+      "evidence_quote": "As Festas Populares de Lisboa e Porto são as maiores celebrações culturais do país",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Sokakta uyuşturucu satmaya çalışan sahte satıcılardan uzak durun (dolandırıcılıktır). Pazar günleri küçük işletmeler dinlenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com",
+          "tier": 1,
+          "title": "Visit Portugal Travel Safety"
+        }
+      ],
+      "evidence_quote": "Ignore street vendors attempting to sell fake substances in historic tourist squares",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş (gorjeta) zorunlu değildir; memnun kalınan servis için kafelerde yuvarlama, restoranlarda %5-10 bırakmak nazik bir davranıştır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com",
+          "tier": 1,
+          "title": "Visit Portugal: Practical Tips"
+        }
+      ],
+      "evidence_quote": "A gorjeta é facultativa mas comummente deixada quando o serviço é apreciado (5-10%)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Lizbon Belém Kulesi ve Jerónimos Manastırı",
+        "en": "Belém Tower and Jerónimos Monastery",
+        "de": "Torre de Belém und Hieronymitenkloster",
+        "ru": "Башня Торри-ди-Белен и монастырь Жеронимуш",
+        "es": "Torre de Belém y Monasterio de los Jerónimos"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/263",
+          "tier": 2,
+          "title": "UNESCO: Monastery of the Hieronymites and Tower of Belém"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Lizbon Belém Kulesi ve Tejo Nehri",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Aayush Gupta on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Lizbon Belém Kulesi Tejo Nehri kıyısında tarihi Manuelin mimarisi",
+          "en": "Belém Tower historic Manueline fortification on the Tagus River in Lisbon",
+          "de": "Torre de Belém am Ufer des Tejo in Lissabon",
+          "ru": "Башня Белен в стиле мануэлино на берегу реки Тежу в Лиссабоне",
+          "es": "Torre de Belém a orillas del río Tajo en Lisboa"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "portekiz",
+      "en": "portugal",
+      "de": "portugal",
+      "ru": "portugaliya",
+      "es": "portugal"
+    },
+    "title": {
+      "tr": "Portekiz Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Portugal Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Portugal Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Португалия: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para Portugal 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Portekiz Schengen vize şartları, D8 dijital göçebe vizesi, 112 acil numaraları, priz tipleri C/F, Lizbon ve Porto rehberi.",
+      "en": "Portugal visa rules, digital nomad D8 permit, 112 emergency dispatch, Type C/F plugs, and travel advice.",
+      "de": "Einreisebestimmungen für Portugal, D8-Nomadenvisum, Notruf 112, Steckdosentypen C/F und Reisetipps.",
+      "ru": "Правила въезда в Португалию, шенген, виза D8, служба 112, розетки C/F и путеводитель по Лиссабону.",
+      "es": "Requisitos de entrada para Portugal, visa nómada D8, teléfono 112, enchufes C/F y consejos para Lisboa y Oporto."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

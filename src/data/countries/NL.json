@@ -1,0 +1,418 @@
+{
+  "iso2": "NL",
+  "names": {
+    "tr": "Hollanda",
+    "en": "Netherlands",
+    "de": "Niederlande",
+    "ru": "Нидерланды",
+    "es": "Países Bajos"
+  },
+  "capital": {
+    "value": "Amsterdam",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rijksoverheid.nl",
+        "tier": 1,
+        "title": "Rijksoverheid (Government of the Netherlands)"
+      }
+    ],
+    "evidence_quote": "Amsterdam is de grondwettelijke hoofdstad van het Koninkrijk der Nederlanden",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.dnb.nl",
+        "tier": 1,
+        "title": "De Nederlandsche Bank (DNB)"
+      }
+    ],
+    "evidence_quote": "De euro is de wettige munteenheid in Nederland sinds 2002",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (Yaz: UTC+2)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rijksoverheid.nl",
+        "tier": 1,
+        "title": "Wettelijke tijd in Nederland"
+      }
+    ],
+    "evidence_quote": "Midden-Europese Tijd (MET / UTC+1) en Zomertijd (MEZT / UTC+2)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.netbeheernederland.nl",
+          "tier": 1,
+          "title": "Netbeheer Nederland"
+        }
+      ],
+      "evidence_quote": "De nominale netspanning voor laagspanning in Nederland is 230 volt",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tennet.eu",
+          "tier": 1,
+          "title": "TenneT TSO"
+        }
+      ],
+      "evidence_quote": "De nominale frequentie van het Nederlandse elektriciteitsnet is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nen.nl",
+          "tier": 1,
+          "title": "NEN - Koninklijk Nederlands Normalisatie Instituut"
+        }
+      ],
+      "evidence_quote": "Type C tweepolige eurostekkers en type F randaardestekkers (Schuko)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112 / 0900-8844",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.politie.nl",
+          "tier": 1,
+          "title": "Politie Nederland (112 en 0900-8844)"
+        }
+      ],
+      "evidence_quote": "Bel 112 bij spoed en 0900-8844 voor geen spoed wel politie",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ambulancezorg.nl",
+          "tier": 1,
+          "title": "Ambulancezorg Nederland (112)"
+        }
+      ],
+      "evidence_quote": "Bel direct 112 voor acute medische noodgevallen en ambulances",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.brandweer.nl",
+          "tier": 1,
+          "title": "Brandweer Nederland (112)"
+        }
+      ],
+      "evidence_quote": "Bel 112 voor de brandweer bij brand of levensbedreigende situaties",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rijksoverheid.nl",
+          "tier": 1,
+          "title": "Rijksoverheid: Alarmnummer 112"
+        }
+      ],
+      "evidence_quote": "Het alarmnummer 112 is gratis bereikbaar voor spoedeisende hulp in Nederland",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/netherlands-travel-advisory.html",
+          "tier": 1,
+          "title": "US State Dept: Netherlands Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": "Reisehinweis",
+        "source": {
+          "url": "https://www.auswaertiges-amt.de/de/service/laender/niederlande-node/niederlandesicherheit/211084",
+          "tier": 1,
+          "title": "Auswärtiges Amt: Niederlande Sicherheit"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart güvenlik seviyesi (Seviye 1); son derece güvenli ülke, Amsterdam merkezinde bisiklet yollarına dikkat edin",
+      "en": "Exercise normal precautions (Level 1); very safe nation, stay alert on dedicated red cycle tracks in Amsterdam",
+      "de": "Normale Vorsichtsmaßnahmen (Stufe 1); sehr sicher, auf rote Fahrradwege in Amsterdam achten",
+      "ru": "Обычные меры предосторожности (Уровень 1); высокая безопасность, осторожно на велосипедных дорожках",
+      "es": "Precauciones normales (Nivel 1); país sumamente seguro, precaución en los carriles bici en Ámsterdam"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "conflict": "low",
+      "terrorism": "low",
+      "health": "low",
+      "transport": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 118.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/netherlands",
+          "tier": 2,
+          "title": "Speedtest Global Index: Netherlands"
+        }
+      ],
+      "evidence_quote": "Netherlands median mobile download speed exceeds 115 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 154.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/netherlands",
+          "tier": 2,
+          "title": "Speedtest Global Index: Netherlands Fixed"
+        }
+      ],
+      "evidence_quote": "Netherlands median fixed broadband download speed",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "KPN, VodafoneZiggo ve Odido 5G ağları mükemmel kapsama sunar; süpermarketlerden SIM kart temin edilebilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.acm.nl",
+          "tier": 1,
+          "title": "Autoriteit Consument & Markt (ACM)"
+        }
+      ],
+      "evidence_quote": "Telecom toezicht en mobiele markt richtlijnen in Nederland",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "9292",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://9292.nl",
+        "tier": 1,
+        "title": "9292 Reizen met het OV"
+      }
+    },
+    {
+      "name": "NS App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.ns.nl",
+        "tier": 1,
+        "title": "Nederlandse Spoorwegen Official App"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/nl/nl/",
+        "tier": 2,
+        "title": "Uber Netherlands"
+      }
+    },
+    {
+      "name": "Thuisbezorgd.nl",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.thuisbezorgd.nl",
+        "tier": 2,
+        "title": "Thuisbezorgd Food Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Dinsiz/Seküler (%57), Katolik (%18), Protestan (%14), İslam (%5)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cbs.nl",
+          "tier": 1,
+          "title": "Centraal Bureau voor de Statistiek (CBS)"
+        }
+      ],
+      "evidence_quote": "CBS statistieken over religieuze betrokkenheid van de Nederlandse bevolking",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Koningsdag (Kral Günü - 27 Nisan), Amsterdam Dance Event (ADE), Keukenhof Lale Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.holland.com",
+          "tier": 1,
+          "title": "Netherlands Board of Tourism & Conventions"
+        }
+      ],
+      "evidence_quote": "Koningsdag is the nationwide orange celebration marking the King's birthday",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kırmızı bisiklet yollarında kesinlikle yürümeyin (bisikletlilerin geçiş üstünlüğü vardır). Kamusal alanda uyuşturucu tüketimi yasaktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iamsterdam.com",
+          "tier": 1,
+          "title": "I amsterdam: Bike Rules and Etiquette"
+        }
+      ],
+      "evidence_quote": "Never walk in the cycle lanes designated in red asphalt to prevent collisions",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Hizmet bedeli faturaya dahildir; iyi hizmet için %5 ila %10 yuvarlama yapmak yaygın ve takdir edilen bir alışkanlıktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.holland.com",
+          "tier": 1,
+          "title": "Holland.com: Tipping in the Netherlands"
+        }
+      ],
+      "evidence_quote": "Tipping is not compulsory in the Netherlands, but rounding up 5-10% is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Amsterdam Kanalları ve Tarihi Taş Evleri",
+        "en": "Seventeenth-Century Canal Ring Area of Amsterdam",
+        "de": "Amsterdamer Grachtengürtel",
+        "ru": "Каналы Амстердама XVII века",
+        "es": "Anillo de canales del siglo XVII de Ámsterdam"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1349",
+          "tier": 2,
+          "title": "UNESCO: Seventeenth-Century Canal Ring Area of Amsterdam"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Amsterdam Kanalları ve Tarihi Tuğla Evleri",
+        "license": "Unsplash License",
+        "author": "Unsplash Verified Creator",
+        "source_url": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1600&q=80",
+        "attribution_text": "Photo by Chaitanya Tvs on Unsplash",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "alt": {
+          "tr": "Amsterdam kanal kenarında bisikletler ve tarihi Hollanda konutları",
+          "en": "Amsterdam canal view with bicycles parked along historic gabled canal houses",
+          "de": "Amsterdamer Grachtenblick mit Fahrrädern vor historischen Grachtenhäusern",
+          "ru": "Вид на каналы Амстердама с припаркованными велосипедами и историческими домами",
+          "es": "Vista del canal de Ámsterdam con bicicletas y casas tradicionales a orillas del agua"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "hollanda",
+      "en": "netherlands",
+      "de": "niederlande",
+      "ru": "niderlandy",
+      "es": "paises-bajos"
+    },
+    "title": {
+      "tr": "Hollanda Vize, Schengen ve Seyahat Rehberi 2026 | Vizamigo",
+      "en": "Netherlands Visa, Schengen Rules & Travel Guide 2026 | Vizamigo",
+      "de": "Niederlande Visum, Einreisebestimmungen & Reiseführer 2026 | Vizamigo",
+      "ru": "Нидерланды: шенгенская виза и путеводитель 2026 | Vizamigo",
+      "es": "Guía de Viaje, Visas y Consejos para los Países Bajos 2026 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Hollanda Schengen vize kuralları, 112 acil numaraları, 230V C/F prizler, Amsterdam tren ulaşımı ve gezi tavsiyeleri.",
+      "en": "Netherlands visa regulations, 112 emergency services, Type C/F plugs, public transit apps, and cycling etiquette.",
+      "de": "Einreisebestimmungen für die Niederlande, Notruf 112, Steckdosentypen C/F und Reisetipps.",
+      "ru": "Правила въезда в Нидерланды, служба 112, розетки C/F и путеводитель по Амстердаму.",
+      "es": "Requisitos de entrada para los Países Bajos, teléfono 112, enchufes C/F y consejos para viajar a Ámsterdam."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
