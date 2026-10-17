@@ -992,9 +992,9 @@ body,
   .vz-ring { animation: none; }
 }
 
-/* DOM & Smooth Scroll Optimization for Country Cards (Eliminates CLS and scroll jitter) */
+/* DOM & Smooth Scroll Optimization for Country Cards */
 .country-card {
-  contain: layout paint;
+  contain: layout;
 }
 
 /* ==========================================================================
