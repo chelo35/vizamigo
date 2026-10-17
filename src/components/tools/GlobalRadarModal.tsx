@@ -18,8 +18,8 @@ import {
   ArrowDown,
   ArrowLeft,
   ArrowRight,
-  Maximize2,
-  Minimize2
+  Map,
+  BarChart3
 } from 'lucide-react';
 import { ALL_WORLD_HUBS, WorldHub, flagToIso } from '../../data/worldHubs';
 import { getHubWeather, useLiveWeather } from '../../data/weatherData';
@@ -1062,12 +1062,12 @@ export const GlobalRadarModal: React.FC<Props> = ({
               >
                 {isDetailsExpanded ? (
                   <>
-                    <Minimize2 className="w-3.5 h-3.5" />
+                    <Map className="w-3.5 h-3.5" />
                     <span>{l('🗺️ Haritayı Göster', '🗺️ Show Map', '🗺️ Karte')}</span>
                   </>
                 ) : (
                   <>
-                    <Maximize2 className="w-3.5 h-3.5" />
+                    <BarChart3 className="w-3.5 h-3.5" />
                     <span>{l('📊 Bilgileri Genişlet', '📊 Expand Details', '📊 Details')}</span>
                   </>
                 )}

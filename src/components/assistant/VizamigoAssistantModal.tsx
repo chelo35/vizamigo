@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   Sparkles,
   X,
-  Minus,
-  Maximize2,
-  Minimize2,
   Mic,
   MicOff,
   Volume2,
@@ -114,8 +111,6 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const [inputValue, setInputValue] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(false);
   const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false); // Muted by default: assistant presents info visually without talking out loud
-  const [isMinimized, setIsMinimized] = useState<boolean>(false);
-  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [isTyping, setIsTyping] = useState<boolean>(false);
   const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null);
   const [showSettings, setShowSettings] = useState<boolean>(false);
@@ -128,7 +123,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   const assistantContainerRef = useRef<HTMLDivElement>(null);
 
   useModalA11y({
-    isOpen: isOpen && !isMinimized,
+    isOpen,
     onClose,
     modalRef: assistantContainerRef,
     initialFocusRef: inputRef
@@ -151,11 +146,11 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
   useEffect(() => {
     if (isOpen) {
       scrollToBottom();
-      if (!isMinimized && !showSettings) {
+      if (!showSettings) {
         setTimeout(() => inputRef.current?.focus(), 250);
       }
     }
-  }, [isOpen, messages, isMinimized, showSettings]);
+  }, [isOpen, messages, showSettings]);
 
   // Clean up voice synthesis on unmount or close
   useEffect(() => {
@@ -386,28 +381,6 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
     }, 1000);
   };
 
-  // Minimized floating bubble
-  if (isMinimized) {
-    return (
-      <div
-        onClick={() => setIsMinimized(false)}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => e.key === 'Enter' && setIsMinimized(false)}
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-2.5 rounded-full bg-[#0F766E] text-white shadow-2xl border-2 border-[#5EEAD4] cursor-pointer hover:scale-105 transition-transform"
-        aria-label={l('Vizamigo Asistanını Genişlet', 'Expand Vizamigo Assistant')}
-      >
-        <div className="relative">
-          <Sparkles className="w-5 h-5 text-[#5EEAD4] animate-pulse" />
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-white" />
-        </div>
-        <span className="text-xs font-black tracking-wide">
-          {l('Vizamigo AI Asistanı', 'Vizamigo AI Copilot')}
-        </span>
-      </div>
-    );
-  }
-
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-end sm:p-5 pointer-events-none">
       {/* Dark overlay backdrop on mobile */}
@@ -423,14 +396,10 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
         aria-modal="true"
         aria-label={l('Vizamigo AI Seyahat Danışmanı', 'Vizamigo AI Travel Concierge')}
         tabIndex={-1}
-        className={`pointer-events-auto w-full flex flex-col overflow-hidden bg-white dark:bg-[#072630] backdrop-blur-2xl border-t-2 sm:border-2 border-teal-500/40 shadow-2xl transition-all duration-300 outline-none ${
-          isFullscreen
-            ? 'fixed inset-2 sm:inset-6 z-50 rounded-[28px]'
-            : 'sm:w-[490px] sm:h-[670px] h-[88dvh] max-h-[92dvh] sm:rounded-[30px] rounded-t-[26px]'
-        }`}
+        className="pointer-events-auto w-full flex flex-col overflow-hidden bg-white dark:bg-[#072630] backdrop-blur-2xl border-t sm:border border-slate-200 dark:border-teal-500/30 shadow-2xl transition-all duration-300 outline-none sm:w-[490px] sm:h-[670px] h-[88dvh] max-h-[92dvh] sm:rounded-[28px] rounded-t-[28px]"
       >
         {/* ===================================================================
-            HEADER: AVATAR, TITLE, VOICE TOGGLE, SETTINGS, WINDOW CONTROLS
+            HEADER: AVATAR, TITLE, VOICE TOGGLE, SETTINGS, CLOSE BUTTON
         =================================================================== */}
         <div className="p-3.5 sm:p-4 border-b border-teal-500/20 bg-gradient-to-r from-teal-500/10 via-sky-500/10 to-transparent flex items-center justify-between gap-2 shrink-0">
           <div className="flex items-center gap-2.5 min-w-0">
@@ -454,7 +423,7 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
             </div>
           </div>
 
-          {/* Window Action Controls */}
+          {/* Action Controls: Settings, Voice Output & Close */}
           <div className="flex items-center gap-1.5 shrink-0">
             {/* Voice Settings & AI Training Toggle */}
             <button
@@ -486,34 +455,14 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
               {voiceEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
             </button>
 
-            {/* Minimize */}
-            <button
-              type="button"
-              onClick={() => setIsMinimized(true)}
-              aria-label={l('Simge durumuna küçült', 'Minimize')}
-              className="p-2 rounded-xl bg-white text-slate-900 border border-slate-200 shadow-xs hover:bg-slate-50 transition-colors cursor-pointer"
-            >
-              <Minus className="w-3.5 h-3.5" />
-            </button>
-
-            {/* Maximize / Restore */}
-            <button
-              type="button"
-              onClick={() => setIsFullscreen(!isFullscreen)}
-              aria-label={isFullscreen ? l('Normal Boyuta Getir', 'Restore') : l('Tam Ekran', 'Fullscreen')}
-              className="hidden sm:inline-flex p-2 rounded-xl bg-white text-slate-900 border border-slate-200 shadow-xs hover:bg-slate-50 transition-colors cursor-pointer"
-            >
-              {isFullscreen ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
-            </button>
-
             {/* Close */}
             <button
               type="button"
               onClick={onClose}
               aria-label={l('Kapat', 'Close')}
-              className="p-2 rounded-xl bg-white text-slate-900 border border-slate-200 shadow-xs hover:bg-rose-50 hover:text-rose-600 transition-colors cursor-pointer"
+              className="p-2 rounded-xl bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-xs hover:bg-rose-50 dark:hover:bg-rose-950/40 hover:text-rose-600 transition-colors cursor-pointer"
             >
-              <X className="w-3.5 h-3.5" />
+              <X className="w-4 h-4" />
             </button>
           </div>
         </div>

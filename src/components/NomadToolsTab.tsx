@@ -14,8 +14,6 @@ import {
   Wifi,
   Compass,
   Flag,
-  Maximize2,
-  Minimize2,
   X,
   Coins,
   Building2,
@@ -53,7 +51,6 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
   const [selectedRegion, setSelectedRegion] = useState<string>('all');
   const [selectedBudget, setSelectedBudget] = useState<string>('all');
   const [activeModalHub, setActiveModalHub] = useState<DigitalNomadHub | null>(null);
-  const [isModalFullscreen, setIsModalFullscreen] = useState<boolean>(false);
   const [locatorCountry, setLocatorCountry] = useState<string>('TH');
 
   const consularInfo = useMemo(() => {
@@ -392,17 +389,13 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
                       <b>{l('💰 Vergi Rejimi:', '💰 Tax Regime:', '💰 Steuersystem:')}</b> {loc.taxRegime}
                     </div>
 
-                    {/* Primary Button: Open Fullscreen Detailed Info Card */}
+                    {/* Primary Button: Open Detailed Info Card */}
                     <button
                       type="button"
-                      onClick={() => {
-                        setActiveModalHub(hub);
-                        setIsModalFullscreen(false);
-                      }}
+                      onClick={() => setActiveModalHub(hub)}
                       className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-teal-600 via-sky-600 to-teal-600 hover:brightness-110 text-white font-black text-xs flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer"
                     >
-                      <Maximize2 className="w-3.5 h-3.5" />
-                      <span>{l('Tam Ekran Bilgi Kartı & 2026 Bütçe Dökümü →', 'Fullscreen Guide & 2026 Cost Breakdown →', 'Vollbildkarte & 2026 Budget →')}</span>
+                      <span>{l('Detaylı Rehber & 2026 Bütçe Dökümü →', 'Detailed Guide & 2026 Cost Breakdown →', 'Detaillierter Leitfaden & 2026 Budget →')}</span>
                     </button>
                   </div>
 
@@ -445,59 +438,47 @@ export const NomadToolsTab: React.FC<NomadToolsTabProps> = ({ defaultSubTab = 'n
             })}
           </div>
 
-          {/* Fullscreen / Scalable Interactive Nomad Info Modal */}
+          {/* Interactive Nomad Info Modal */}
           {activeModalHub && (() => {
             const loc = getLocalizedNomadHub(activeModalHub, language);
             return (
-              <div className={`fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex transition-all ${
-                isModalFullscreen ? 'p-0' : 'p-3 sm:p-6 items-center justify-center'
-              }`}>
-                <div className={`bg-[#F0FDFA] dark:bg-[#062634] border-2 border-[#5EEAD4] dark:border-[#2DD4BF]/50 shadow-2xl flex flex-col overflow-hidden transition-all text-slate-800 dark:text-slate-100 ${
-                  isModalFullscreen
-                    ? 'w-full h-full rounded-none'
-                    : 'w-full max-w-4xl max-h-[92vh] rounded-3xl'
-                }`}>
+              <div className="fixed inset-0 z-50 bg-slate-900/60 dark:bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 md:p-6 transition-all" onClick={() => setActiveModalHub(null)}>
+                <div
+                  className="bg-slate-50 dark:bg-[#0B0F17] border border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col overflow-hidden transition-all text-slate-800 dark:text-slate-100 w-full sm:max-w-4xl h-[92dvh] sm:h-[86vh] rounded-t-[32px] sm:rounded-[28px]"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   {/* Modal Header */}
-                  <div className="p-4 sm:p-6 border-b border-[#5EEAD4]/40 dark:border-[#2DD4BF]/30 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md flex items-center justify-between gap-3">
+                  <div className="p-4 sm:p-5 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md flex items-center justify-between gap-3">
                     <div className="flex items-center gap-3 min-w-0">
                       <span className="text-3xl sm:text-4xl shrink-0">{getFlag(activeModalHub.countryCode)}</span>
                       <div className="min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <h2 className="text-lg sm:text-2xl font-black text-[#042F2E] dark:text-white truncate">
+                          <h2 className="text-base sm:text-xl font-black text-slate-900 dark:text-white truncate">
                             {getCountryName(activeModalHub.countryCode, language) || loc.countryName}
                           </h2>
-                          <span className="px-2.5 py-0.5 rounded-full text-xs font-black bg-teal-100 dark:bg-teal-900/60 text-teal-800 dark:text-teal-200 border border-teal-300 dark:border-teal-700">
+                          <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800">
                             {loc.budgetLevel}
                           </span>
-                          <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 flex items-center gap-1">
+                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1">
                             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                             <span>2026 {t.verifiedBadge}</span>
                           </span>
                         </div>
-                        <p className="text-xs sm:text-sm font-bold text-teal-700 dark:text-teal-300 truncate mt-0.5">
+                        <p className="text-xs sm:text-sm font-semibold text-teal-700 dark:text-teal-400 truncate mt-0.5">
                           {loc.visaName}
                         </p>
                       </div>
                     </div>
 
-                    {/* Header Actions (Fullscreen Toggle + Close) */}
-                    <div className="flex items-center gap-2 shrink-0">
-                      <button
-                        type="button"
-                        onClick={() => setIsModalFullscreen(!isModalFullscreen)}
-                        className="p-2 rounded-xl bg-teal-50 dark:bg-slate-800 text-teal-700 dark:text-teal-300 hover:bg-teal-100 dark:hover:bg-slate-700 transition-colors cursor-pointer"
-                        title={isModalFullscreen ? l('Küçült', 'Minimize', 'Verkleinern') : l('Tam Ekran', 'Fullscreen', 'Vollbild')}
-                      >
-                        {isModalFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setActiveModalHub(null)}
-                        className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-800 dark:hover:text-white hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors cursor-pointer"
-                      >
-                        <X className="w-5 h-5" />
-                      </button>
-                    </div>
+                    {/* Header Action: Close Button [ ✕ ] */}
+                    <button
+                      type="button"
+                      onClick={() => setActiveModalHub(null)}
+                      className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400 transition-colors cursor-pointer flex items-center justify-center shrink-0"
+                      title={l('Kapat', 'Close')}
+                    >
+                      <X className="w-5 h-5" />
+                    </button>
                   </div>
 
                   {/* Modal Body */}

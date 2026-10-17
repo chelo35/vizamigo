@@ -2,11 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   X,
   ArrowLeft,
-  Minus,
   Search,
-  Square,
-  Maximize2,
-  Minimize2,
   Globe,
   MapPin,
   ExternalLink,

@@ -31,7 +31,7 @@ import {
   ChevronRight,
   Info,
   Globe,
-  Maximize2,
+  Scan,
   RefreshCw,
   ExternalLink,
   Eye,
@@ -575,7 +575,7 @@ export const RouteMapVisualizer: React.FC<RouteMapVisualizerProps> = ({
                 onClick={handleFitAllStops}
                 className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-teal-900/40 hover:bg-teal-900/60 text-teal-300 border border-teal-700/50 text-xs font-semibold cursor-pointer transition-all"
               >
-                <Maximize2 className="w-3 h-3" />
+                <Scan className="w-3 h-3" />
                 <span>{t.fitRouteBounds}</span>
               </button>
               <span className="text-[10px] text-slate-500">

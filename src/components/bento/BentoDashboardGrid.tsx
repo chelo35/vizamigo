@@ -82,8 +82,6 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
   // Sub-widget modal stack state
   const [widgetStack, setWidgetStack] = useState<Array<{ id: BentoWidgetId; subTab?: string; countryCode?: string }>>([]);
-  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
-  const [isMinimized, setIsMinimized] = useState<boolean>(false);
 
   // Interactive card local states & country search modal
   const [researchCountry, setResearchCountry] = useState<string>('TH');
@@ -617,45 +615,14 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
       )}
 
       {/* =====================================================================
-          MINIMIZED SUB-WIDGET DOCK BAR (When user clicks [ — Küçült ])
+          EXPANDABLE CARD / SUB-WIDGET MODAL (LAZY-LOADED)
       ===================================================================== */}
-      {activeWidget && isMinimized && (
-        <div className="fixed bottom-20 lg:bottom-6 right-4 z-50 flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#042F2E] to-[#0D9488] text-white shadow-2xl border-2 border-[#5EEAD4]">
-          <Sparkles className="w-4 h-4 text-[#5EEAD4]" />
-          <span className="text-sm font-black">
-            {l('Açık Pencere:', 'Active Window:')} {activeWidget.id.toUpperCase()}
-          </span>
-          <button
-            type="button"
-            onClick={() => setIsMinimized(false)}
-            className="px-3 py-1 rounded-full bg-[#5EEAD4] text-[#042F2E] text-xs font-black cursor-pointer"
-          >
-            {l('Büyüt ⛶', 'Restore ⛶')}
-          </button>
-          <button
-            type="button"
-            onClick={closeAllWidgets}
-            className="p-1.5 rounded-full hover:bg-white/20 cursor-pointer"
-            title={l('Kapat', 'Close')}
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-      )}
-
-      {/* =====================================================================
-          EXPANDABLE CARD / SUB-WIDGET WINDOW MODAL (LAZY-LOADED)
-      ===================================================================== */}
-      {activeWidget && !isMinimized && (
+      {activeWidget && (
         <Suspense fallback={null}>
           <BentoSubWidgetModal
             activeWidget={activeWidget}
             widgetStack={widgetStack}
             setWidgetStack={setWidgetStack}
-            isMinimized={isMinimized}
-            isFullscreen={isFullscreen}
-            setIsFullscreen={setIsFullscreen}
-            setIsMinimized={setIsMinimized}
             closeAllWidgets={closeAllWidgets}
             goBackWidget={goBackWidget}
             openWidget={openWidget}
