@@ -51,26 +51,26 @@ const BATCH_1_DATA: BatchCountryCandidate[] = [
       alt2: 'Madriu-Perafita-Claror Buzul Vadisi (UNESCO)'
     },
     candidatePrimary: {
-      title: 'Església de Sant Joan de Caselles',
-      landmark: 'Sant Joan de Caselles Romanesk Kilisesi, Canillo',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Esgl%C3%A9sia_de_Sant_Joan_de_Caselles_-_5.jpg',
-      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Esgl%C3%A9sia_de_Sant_Joan_de_Caselles_-_5.jpg',
-      artist: 'pilimm21',
-      license: 'CC BY-SA 2.0',
-      dimensions: '1936x1288',
+      title: 'Sant Joan de Caselles, Canillo',
+      landmark: 'Sant Joan de Caselles Romanesk Taş Kilisesi ve Pirene Dağları',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Sant_Joan_de_Caselles-3.jpg',
+      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Sant_Joan_de_Caselles-3.jpg',
+      artist: 'Luis Miguel Bugallo Sánchez',
+      license: 'CC BY-SA 3.0',
+      dimensions: '4437x2958',
       source: 'Wikimedia Commons'
     },
     candidateAlt: {
-      title: 'Casa de la Vall, Andorra la Vella',
-      landmark: 'Casa de la Vall Tarihi Meclis Binası',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Casa_de_la_Vall_-_Andorra_la_Vella_-_05.JPG',
-      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Casa_de_la_Vall_-_Andorra_la_Vella_-_05.JPG',
-      artist: 'Jordiferrer',
-      license: 'CC BY-SA 3.0',
-      dimensions: '4896x3672',
+      title: 'Mirador del Roc del Quer, Canillo',
+      landmark: 'Roc del Quer Panoramik Pirene Seyir Terası',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Mirador_del_Roc_del_Quer_%2843598753911%29.jpg',
+      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Mirador_del_Roc_del_Quer_(43598753911).jpg',
+      artist: 'Kent Wang',
+      license: 'CC BY-SA 2.0',
+      dimensions: '5472x3648',
       source: 'Wikimedia Commons'
     },
-    verificationMethod: 'Konum Koordinatı + Tarihi Taş Mimari Görsel Doğrulama',
+    verificationMethod: 'Konum Koordinatı + Tarihi Taş Mimari ve Pirene Doğrulama',
     confidence: 'Yüksek'
   },
   {
@@ -168,14 +168,14 @@ const BATCH_1_DATA: BatchCountryCandidate[] = [
     candidateAlt: {
       title: 'Sebilj in Baščaršija, Sarajevo',
       landmark: 'Saraybosna Başçarşı Meydanı ve Tarihi Sebil',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Sebilj_Sarajevo_2019.jpg',
-      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Sebilj_Sarajevo_2019.jpg',
-      artist: 'Julian Nyča',
-      license: 'CC BY-SA 4.0',
-      dimensions: '3648x2432',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Sebilj_in_Sarajevo_%288269348990%29.jpg',
+      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Sebilj_in_Sarajevo_(8269348990).jpg',
+      artist: 'xiquinhosilva',
+      license: 'CC BY 2.0',
+      dimensions: '1370x2048',
       source: 'Wikimedia Commons'
     },
-    verificationMethod: 'Mevcut Görsel Doğrulandı (Stari Most) + Alternatif Başçarşı',
+    verificationMethod: 'Mevcut Görsel Doğrulandı (Stari Most) + Alternatif Başçarşı Sebil',
     confidence: 'Yüksek'
   },
   {
