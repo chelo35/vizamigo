@@ -233,14 +233,8 @@ function AppContent() {
         is404={route.is404}
       />
 
-      {/* Permanent Fixed Fullscreen Luminous Ocean Blue & Turquoise Lagoon Background */}
-      <div className="fixed inset-0 pointer-events-none -z-20 bg-gradient-to-br from-[#E0F2FE] via-[#BAE6FD] to-[#CCFBF1] dark:from-[#042132] dark:via-[#063A4D] dark:to-[#032030]" />
-
-      {/* Lightweight GPU-Optimized Tropical Lagoon Ambient Glows */}
+      {/* Lightweight Fixed Palm Frond Silhouettes (Zero GPU Blurs) */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-24 left-1/4 w-[480px] h-[480px] bg-[#5EEAD4]/20 dark:bg-teal-400/10 rounded-full blur-3xl transform-gpu" />
-        <div className="absolute top-1/3 -right-16 w-[420px] h-[420px] bg-[#38BDF8]/20 dark:bg-sky-400/10 rounded-full blur-3xl transform-gpu" />
-        <div className="absolute -bottom-16 left-1/3 w-[460px] h-[460px] bg-[#2DD4BF]/15 dark:bg-emerald-400/10 rounded-full blur-3xl transform-gpu" />
         {/* Top-Left Tropical Palm Frond Silhouette */}
         <svg viewBox="0 0 260 260" className="w-56 h-56 absolute -top-8 -left-8 text-black/15 dark:text-black/30 pointer-events-none">
           <path

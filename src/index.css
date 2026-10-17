@@ -71,7 +71,11 @@
    ======================================================== */
 :root {
   --bg-canvas: #F0F9FF;
-  --bg-canvas-gradient: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #CCFBF1 100%);
+  --bg-canvas-gradient: 
+    radial-gradient(circle at 25% 10%, rgba(94, 234, 212, 0.22) 0%, transparent 40%),
+    radial-gradient(circle at 85% 35%, rgba(56, 189, 248, 0.20) 0%, transparent 35%),
+    radial-gradient(circle at 35% 85%, rgba(45, 212, 191, 0.16) 0%, transparent 40%),
+    linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #CCFBF1 100%);
   --surface-card: rgba(255, 255, 255, 0.95);
   --surface-card-border: rgba(56, 189, 248, 0.40);
   --surface-card-shadow: 0 16px 36px rgba(2, 132, 199, 0.08);
@@ -93,7 +97,11 @@
 html.dark,
 .dark {
   --bg-canvas: #02121D;
-  --bg-canvas-gradient: linear-gradient(135deg, #020F18 0%, #041E2D 55%, #010A10 100%);
+  --bg-canvas-gradient: 
+    radial-gradient(circle at 25% 10%, rgba(45, 212, 191, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 35%, rgba(56, 189, 248, 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 35% 85%, rgba(16, 185, 129, 0.06) 0%, transparent 40%),
+    linear-gradient(135deg, #031B24 0%, #062F3C 55%, #042430 100%);
   --surface-card: rgba(4, 23, 33, 0.94);
   --surface-card-border: rgba(45, 212, 191, 0.40);
   --surface-card-shadow: 0 28px 60px rgba(0, 0, 0, 0.65);
