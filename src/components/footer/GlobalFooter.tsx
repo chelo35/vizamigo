@@ -118,6 +118,15 @@ export const GlobalFooter: React.FC<Props> = ({
   const { user, isAuthenticated, openAuthModal } = useAuth();
   const [selectedCategory, setSelectedCategory] = useState<PopularCategory>('visa_free');
 
+  const handleTabClick = (tab: string) => {
+    try {
+      if (setActiveTab) {
+        setActiveTab(tab);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch {}
+  };
+
   // Compute live dynamic popular destinations tailored strictly to currentPassport
   const { dynamicDestinations, categories } = useMemo(() => {
     const pItems = getPassportItems(currentPassport);
@@ -361,7 +370,7 @@ export const GlobalFooter: React.FC<Props> = ({
             {isAuthenticated ? (
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('profile')}
+                onClick={() => handleTabClick('profile')}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-[#0D9488] to-[#14B8A6] hover:brightness-110 text-white font-black text-xs sm:text-sm shadow-lg shadow-teal-900/30 transition-all transform hover:-translate-y-0.5 cursor-pointer"
               >
                 <BookmarkCheck className="w-4 h-4" />
@@ -518,7 +527,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('consular')}
+                onClick={() => handleTabClick('consular')}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Konsolosluk Kriz Masası', 'Consular Crisis Desk', 'Konsularische Krisenhilfe', 'Mesa de Crisis Consular', 'Консульский кризисный стол')}
@@ -565,15 +574,19 @@ export const GlobalFooter: React.FC<Props> = ({
 
         {/* Column 2: Gezgin Araçları & Keşif */}
         <div className="space-y-3">
-          <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => handleTabClick('explore')}
+            className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5 hover:text-teal-600 dark:hover:text-teal-400 transition-colors text-left cursor-pointer"
+          >
             <Compass className="w-4 h-4 text-[#0D9488] dark:text-[#2DD4BF]" />
             <span>{l('Keşfet & Gezgin Araçları', 'Explore & Travel Tools', 'Tools & Entdecken', 'Herramientas de Viaje', 'Инструменты')}</span>
-          </h3>
+          </button>
           <ul className="space-y-2">
             <li>
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('explore')}
+                onClick={() => handleTabClick('explore')}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('199 Ülke Pasaport Güç Endeksi', '199 Passports Power Index', '199 Pässe Macht-Index', 'Índice de Poder de Pasaportes', 'Индекс силы паспортов')}
@@ -582,7 +595,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('plan')}
+                onClick={() => handleTabClick('plan')}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Rota & Bütçe Planlayıcı', 'Route & Budget Planner', 'Routen- & Budgetplaner', 'Planificador de Rutas', 'Планировщик маршрута')}
@@ -591,7 +604,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('nomad')}
+                onClick={() => handleTabClick('nomad')}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Dijital Göçebe Vize Veritabanı', 'Digital Nomad Visa Database', 'Digital Nomad Datenbank', 'Base de Visas Nómada', 'База виз кочевников')}
@@ -600,7 +613,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('track')}
+                onClick={() => handleTabClick('track')}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Schengen 90/180 Gün Takibi', 'Schengen 90/180 Day Tracker', 'Schengen 90/180 Tage Tracker', 'Calculadora Schengen 90/180', 'Калькулятор Шенгена 90/180')}
@@ -609,7 +622,7 @@ export const GlobalFooter: React.FC<Props> = ({
             <li>
               <button
                 type="button"
-                onClick={() => setActiveTab && setActiveTab('profile')}
+                onClick={() => handleTabClick('profile')}
                 className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
               >
                 {l('Pasaport Defterim & Seyahatlerim', 'My Passport Wallet & Trips', 'Mein Passetui & Reisen', 'Mi Cartera de Pasaportes', 'Мой паспортный кошелек')}

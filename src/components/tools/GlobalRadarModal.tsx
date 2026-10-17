@@ -18,7 +18,7 @@ import {
   ArrowDown,
   ArrowLeft,
   ArrowRight,
-  Map,
+  Map as MapIcon,
   BarChart3
 } from 'lucide-react';
 import { ALL_WORLD_HUBS, WorldHub, flagToIso } from '../../data/worldHubs';
@@ -407,61 +407,76 @@ export const GlobalRadarModal: React.FC<Props> = ({
     if (!isOpen || !mapsLoaded || mapsError || !googleMapContainerRef.current) return;
     if (!window.google || !window.google.maps) return;
 
-    if (!mapInstanceRef.current) {
-      const initialCoords = getHubCoords(selectedHub);
-      const map = new google.maps.Map(googleMapContainerRef.current, {
-        center: initialCity ? initialCoords : { lat: 30, lng: 25 },
-        zoom: initialCity ? 6 : 3,
-        minZoom: 2,
-        maxZoom: 13,
-        mapTypeId: mapTheme === 'hybrid' ? 'hybrid' : 'roadmap',
-        styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [],
-        disableDefaultUI: true,
-        zoomControl: false,
-        mapTypeControl: false,
-        streetViewControl: false,
-        fullscreenControl: false,
-        gestureHandling: 'greedy',
-        backgroundColor: '#070b14'
-      });
+    try {
+      if (!mapInstanceRef.current) {
+        const initialCoords = getHubCoords(selectedHub);
+        const map = new google.maps.Map(googleMapContainerRef.current, {
+          center: initialCity ? initialCoords : { lat: 30, lng: 25 },
+          zoom: initialCity ? 6 : 3,
+          minZoom: 2,
+          maxZoom: 13,
+          mapTypeId: mapTheme === 'hybrid' ? 'hybrid' : 'roadmap',
+          styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [],
+          disableDefaultUI: true,
+          zoomControl: false,
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
+          gestureHandling: 'greedy',
+          backgroundColor: '#070b14'
+        });
 
-      map.addListener('zoom_changed', () => {
-        const z = map.getZoom();
-        if (typeof z === 'number') setGZoomLevel(z);
-      });
+        map.addListener('zoom_changed', () => {
+          try {
+            const z = map.getZoom();
+            if (typeof z === 'number') setGZoomLevel(z);
+          } catch {}
+        });
 
-      mapInstanceRef.current = map;
-      infoWindowRef.current = new google.maps.InfoWindow();
+        mapInstanceRef.current = map;
+        infoWindowRef.current = new google.maps.InfoWindow();
 
-      // Trigger resize after layout transitions so mobile displays full map immediately
-      setTimeout(() => {
-        if (mapInstanceRef.current && window.google?.maps) {
-          google.maps.event.trigger(mapInstanceRef.current, 'resize');
-        }
-      }, 150);
-      setTimeout(() => {
-        if (mapInstanceRef.current && window.google?.maps) {
-          google.maps.event.trigger(mapInstanceRef.current, 'resize');
-        }
-      }, 400);
+        // Trigger resize after layout transitions so mobile displays full map immediately
+        setTimeout(() => {
+          try {
+            if (mapInstanceRef.current && window.google?.maps) {
+              google.maps.event.trigger(mapInstanceRef.current, 'resize');
+            }
+          } catch {}
+        }, 150);
+        setTimeout(() => {
+          try {
+            if (mapInstanceRef.current && window.google?.maps) {
+              google.maps.event.trigger(mapInstanceRef.current, 'resize');
+            }
+          } catch {}
+        }, 400);
+      }
+    } catch (err) {
+      console.warn('Google Maps init failed, falling back to vector radar:', err);
+      setMapsError(true);
     }
   }, [isOpen, mapsLoaded, mapsError]);
 
   // Tear down map instance when modal closes so re-opening mounts cleanly
   useEffect(() => {
     if (!isOpen) {
-      markersRef.current.forEach((m) => m.setMap(null));
-      markersRef.current.clear();
+      try {
+        markersRef.current.forEach((m) => m.setMap(null));
+        markersRef.current.clear();
+      } catch {}
       mapInstanceRef.current = null;
     }
   }, [isOpen]);
 
   // Update Google Map theme when toggled
   useEffect(() => {
-    const map = mapInstanceRef.current;
-    if (!map) return;
-    map.setMapTypeId(mapTheme === 'hybrid' ? 'hybrid' : 'roadmap');
-    map.setOptions({ styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [] });
+    try {
+      const map = mapInstanceRef.current;
+      if (!map) return;
+      map.setMapTypeId(mapTheme === 'hybrid' ? 'hybrid' : 'roadmap');
+      map.setOptions({ styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [] });
+    } catch {}
   }, [mapTheme]);
 
   // Create/update markers on Google Maps
@@ -469,50 +484,56 @@ export const GlobalRadarModal: React.FC<Props> = ({
     const map = mapInstanceRef.current;
     if (!isOpen || !mapsLoaded || mapsError || !map) return;
 
-    // Clear previous markers
-    markersRef.current.forEach((m) => m.setMap(null));
-    markersRef.current.clear();
+    try {
+      // Clear previous markers
+      markersRef.current.forEach((m) => {
+        try { m.setMap(null); } catch {}
+      });
+      markersRef.current.clear();
 
-    ALL_WORLD_HUBS.forEach((hub) => {
-      const coords = getHubCoords(hub);
-      const isSelected = hub.city === selectedHub.city;
-      const weather = getHubWeather(hub.city, hub);
-      const displayName = language === 'tr' && hub.cityTr ? hub.cityTr : hub.city;
+      ALL_WORLD_HUBS.forEach((hub) => {
+        const coords = getHubCoords(hub);
+        const isSelected = hub.city === selectedHub.city;
+        const weather = getHubWeather(hub.city, hub);
+        const displayName = language === 'tr' && hub.cityTr ? hub.cityTr : hub.city;
 
-      // Determine marker color based on telemetryMode
-      let fillColor = '#06b6d4';
-      if (telemetryMode === 'weather') {
-        fillColor = weather.tempC >= 26 ? '#f97316' : weather.tempC >= 16 ? '#eab308' : '#38bdf8';
-      } else if (telemetryMode === 'currency') {
-        fillColor = '#10b981';
-      } else if (telemetryMode === 'clock') {
-        fillColor = '#38bdf8';
-      }
-      if (isSelected) {
-        fillColor = '#22d3ee';
-      }
-
-      const marker = new google.maps.Marker({
-        position: coords,
-        map,
-        title: `${hub.flag} ${displayName}`,
-        zIndex: isSelected ? 999 : 10,
-        icon: {
-          path: google.maps.SymbolPath.CIRCLE,
-          fillColor,
-          fillOpacity: 0.95,
-          strokeColor: isSelected ? '#ffffff' : '#0f172a',
-          strokeWeight: isSelected ? 2.5 : 1.5,
-          scale: isSelected ? 9 : 6
+        // Determine marker color based on telemetryMode
+        let fillColor = '#06b6d4';
+        if (telemetryMode === 'weather') {
+          fillColor = weather.tempC >= 26 ? '#f97316' : weather.tempC >= 16 ? '#eab308' : '#38bdf8';
+        } else if (telemetryMode === 'currency') {
+          fillColor = '#10b981';
+        } else if (telemetryMode === 'clock') {
+          fillColor = '#38bdf8';
         }
-      });
+        if (isSelected) {
+          fillColor = '#22d3ee';
+        }
 
-      marker.addListener('click', () => {
-        handleSelectHub(hub);
-      });
+        const marker = new google.maps.Marker({
+          position: coords,
+          map,
+          title: `${hub.flag} ${displayName}`,
+          zIndex: isSelected ? 999 : 10,
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor,
+            fillOpacity: 0.95,
+            strokeColor: isSelected ? '#ffffff' : '#0f172a',
+            strokeWeight: isSelected ? 2.5 : 1.5,
+            scale: isSelected ? 9 : 6
+          }
+        });
 
-      markersRef.current.set(hub.city, marker);
-    });
+        marker.addListener('click', () => {
+          handleSelectHub(hub);
+        });
+
+        markersRef.current.set(hub.city, marker);
+      });
+    } catch (err) {
+      console.warn('Google Maps markers failed:', err);
+    }
   }, [isOpen, mapsLoaded, mapsError, selectedHub, telemetryMode, language]);
 
   // Show sleek InfoWindow on the selected hub in Google Maps
@@ -521,29 +542,33 @@ export const GlobalRadarModal: React.FC<Props> = ({
     const infoWindow = infoWindowRef.current;
     if (!isOpen || !mapsLoaded || mapsError || !map || !infoWindow) return;
 
-    const marker = markersRef.current.get(selectedHub.city);
-    if (!marker) return;
+    try {
+      const marker = markersRef.current.get(selectedHub.city);
+      if (!marker) return;
 
-    const displayName = language === 'tr' && selectedHub.cityTr ? selectedHub.cityTr : selectedHub.city;
-    const tempStr =
-      tempUnit === 'F'
-        ? `${Math.round((targetIntel.weather.tempC * 9) / 5 + 32)}°F`
-        : `${targetIntel.weather.tempC}°C`;
+      const displayName = language === 'tr' && selectedHub.cityTr ? selectedHub.cityTr : selectedHub.city;
+      const tempStr =
+        tempUnit === 'F'
+          ? `${Math.round((targetIntel.weather.tempC * 9) / 5 + 32)}°F`
+          : `${targetIntel.weather.tempC}°C`;
 
-    const contentHtml = `
-      <div style="color:#f8fafc;padding:14px 38px 14px 16px;font-family:ui-sans-serif,system-ui,sans-serif;min-width:230px;line-height:1.4;">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;">
-          <span style="font-weight:900;font-size:16px;color:#ffffff;letter-spacing:-0.02em;">${selectedHub.flag} ${displayName}</span>
-          <span style="font-family:monospace;font-size:13px;font-weight:800;color:#2dd4bf;background:rgba(45,212,191,0.18);padding:3px 8px;border-radius:8px;border:1px solid rgba(45,212,191,0.35);">${targetIntel.localTimeString.slice(0, 5)}</span>
+      const contentHtml = `
+        <div style="color:#f8fafc;padding:14px 38px 14px 16px;font-family:ui-sans-serif,system-ui,sans-serif;min-width:230px;line-height:1.4;">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;">
+            <span style="font-weight:900;font-size:16px;color:#ffffff;letter-spacing:-0.02em;">${selectedHub.flag} ${displayName}</span>
+            <span style="font-family:monospace;font-size:13px;font-weight:800;color:#2dd4bf;background:rgba(45,212,191,0.18);padding:3px 8px;border-radius:8px;border:1px solid rgba(45,212,191,0.35);">${targetIntel.localTimeString.slice(0, 5)}</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#cbd5e1;gap:12px;">
+            <span style="font-weight:800;color:#f1f5f9;display:inline-flex;align-items:center;gap:4px;">${targetIntel.weather.icon} <b>${tempStr}</b></span>
+            <span style="color:#34d399;font-family:monospace;font-weight:800;font-size:13px;background:rgba(52,211,153,0.15);padding:3px 8px;border-radius:8px;border:1px solid rgba(52,211,153,0.3);">1$ = ${formatCurrencyValue(targetIntel.rate1Usd)} ${targetIntel.destCurrency}</span>
+          </div>
         </div>
-        <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#cbd5e1;gap:12px;">
-          <span style="font-weight:800;color:#f1f5f9;display:inline-flex;align-items:center;gap:4px;">${targetIntel.weather.icon} <b>${tempStr}</b></span>
-          <span style="color:#34d399;font-family:monospace;font-weight:800;font-size:13px;background:rgba(52,211,153,0.15);padding:3px 8px;border-radius:8px;border:1px solid rgba(52,211,153,0.3);">1$ = ${formatCurrencyValue(targetIntel.rate1Usd)} ${targetIntel.destCurrency}</span>
-        </div>
-      </div>
-    `;
-    infoWindow.setContent(contentHtml);
-    infoWindow.open({ map, anchor: marker, shouldFocus: false });
+      `;
+      infoWindow.setContent(contentHtml);
+      infoWindow.open({ map, anchor: marker, shouldFocus: false });
+    } catch (err) {
+      console.warn('Google Maps infoWindow failed:', err);
+    }
   }, [
     isOpen,
     mapsLoaded,
@@ -1055,7 +1080,7 @@ export const GlobalRadarModal: React.FC<Props> = ({
               >
                 {isDetailsExpanded ? (
                   <>
-                    <Map className="w-3.5 h-3.5" />
+                    <MapIcon className="w-3.5 h-3.5" />
                     <span>{l('🗺️ Haritayı Göster', '🗺️ Show Map', '🗺️ Karte')}</span>
                   </>
                 ) : (

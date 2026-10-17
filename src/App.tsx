@@ -144,6 +144,9 @@ function AppContent() {
     setActiveTab(tab);
     setSelectedCountryCode(null);
     navigate(language, tab, null);
+    try {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    } catch {}
   };
 
   const handleCountrySelect = (code: string | null) => {
@@ -618,19 +621,21 @@ function AppContent() {
         )}
 
         {isRadarOpen && (
-          <GlobalRadarModal
-            isOpen={isRadarOpen}
-            onClose={() => setIsRadarOpen(false)}
-            initialMode={radarInitialMode}
-            initialCity={radarTargetCity}
-            currentPassport={currentPassport}
-            onOpenCountryDossier={(code) => {
-              if (activeTab !== 'explore') {
-                setActiveTab('explore');
-              }
-              handleCountrySelect(code);
-            }}
-          />
+          <ErrorBoundary isTabBoundary tabName="Küresel Seyahat Radarı" onReset={() => setIsRadarOpen(false)}>
+            <GlobalRadarModal
+              isOpen={isRadarOpen}
+              onClose={() => setIsRadarOpen(false)}
+              initialMode={radarInitialMode}
+              initialCity={radarTargetCity}
+              currentPassport={currentPassport}
+              onOpenCountryDossier={(code) => {
+                if (activeTab !== 'explore') {
+                  setActiveTab('explore');
+                }
+                handleCountrySelect(code);
+              }}
+            />
+          </ErrorBoundary>
         )}
 
         <AssistantLauncherButton
