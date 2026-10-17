@@ -1,0 +1,479 @@
+{
+  "iso2": "IN",
+  "names": {
+    "tr": "Hindistan",
+    "en": "India",
+    "de": "Indien",
+    "ru": "Индия",
+    "es": "India"
+  },
+  "capital": {
+    "value": "Yeni Delhi",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.india.gov.in",
+        "tier": 1,
+        "title": "National Portal of India"
+      }
+    ],
+    "evidence_quote": "New Delhi is the official national capital of the Republic of India",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "INR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rbi.org.in",
+        "tier": 1,
+        "title": "Reserve Bank of India"
+      }
+    ],
+    "evidence_quote": "The Indian Rupee (INR) is the legal tender currency across India",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5:30 (IST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nplindia.org",
+        "tier": 1,
+        "title": "National Physical Laboratory Timekeeper"
+      }
+    ],
+    "evidence_quote": "Indian Standard Time is maintained at UTC+5:30 across the entire nation",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cea.nic.in",
+          "tier": 1,
+          "title": "Central Electricity Authority of India"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase voltage in Indian residential networks is 230V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cea.nic.in",
+          "tier": 1,
+          "title": "Central Electricity Authority of India"
+        }
+      ],
+      "evidence_quote": "Grid frequency across India is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bis.gov.in",
+          "tier": 1,
+          "title": "Bureau of Indian Standards (IS 1293)"
+        }
+      ],
+      "evidence_quote": "Standard IS 1293 regulates 3-pin round plugs Type D and Type M alongside 2-pin Type C",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.in",
+          "tier": 1,
+          "title": "Emergency Response Support System (ERSS) India"
+        }
+      ],
+      "evidence_quote": "Pan-India unified emergency number 112 connects directly to police and first responders",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "102 / 108",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mohfw.gov.in",
+          "tier": 1,
+          "title": "Ministry of Health and Family Welfare India"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance services operate on hotlines 108 and 102 across Indian states",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.in",
+          "tier": 1,
+          "title": "National Emergency Services India"
+        }
+      ],
+      "evidence_quote": "Fire emergency service is reached via traditional hotline 101 or unified 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.in",
+          "tier": 1,
+          "title": "ERSS 112 India"
+        }
+      ],
+      "evidence_quote": "112 is the single unified emergency contact number for all citizen emergencies in India",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1363",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.incredibleindia.org",
+          "tier": 1,
+          "title": "Ministry of Tourism 24/7 Tourist Infoline"
+        }
+      ],
+      "evidence_quote": "Ministry of Tourism operates 24x7 multi-lingual tourist helpline 1363 across India",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept India Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/india",
+          "tier": 1,
+          "title": "UK FCDO India Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Başlıca turistik merkezler açık, sınır bölgelerinden kaçının",
+      "en": "Exercise Increased Caution: Main cultural circuits safe, avoid border regions",
+      "de": "Erhöhte Vorsicht: Touristenzentren sicher, Grenzgebiete meiden",
+      "ru": "Повышенная осторожность: основные туристические зоны безопасны, избегайте границы",
+      "es": "Mayor precaución: circuitos turísticos principales seguros, evite zonas fronterizas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Jammu & Kashmir (except Ladakh) and India-Pakistan border",
+        "level": 4,
+        "reason": "Terrorism and cross-border military tensions",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 105.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/india",
+          "tier": 2,
+          "title": "Ookla Speedtest India"
+        }
+      ],
+      "evidence_quote": "India average mobile download speed exceeds 105.4 Mbps driven by massive 5G expansion",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 60.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/india",
+          "tier": 2,
+          "title": "Ookla Speedtest India"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in India averages 60.1 Mbps across metropolitan networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Jio and Airtel. Tourist physical SIMs require passport verification and passport photos at airport telecom counters.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dot.gov.in",
+          "tier": 1,
+          "title": "Department of Telecommunications (DoT) India"
+        }
+      ],
+      "evidence_quote": "Foreign tourist SIM cards require passport and visa documentation under DoT KYC rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/in/en/",
+        "tier": 1,
+        "title": "Uber India"
+      }
+    },
+    {
+      "name": "Ola",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.olacabs.com",
+        "tier": 1,
+        "title": "Ola Cabs India"
+      }
+    },
+    {
+      "name": "Zomato",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.zomato.com",
+        "tier": 1,
+        "title": "Zomato Food Delivery"
+      }
+    },
+    {
+      "name": "Swiggy",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.swiggy.com",
+        "tier": 1,
+        "title": "Swiggy India Food & Groceries"
+      }
+    },
+    {
+      "name": "IRCTC Rail",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.irctc.co.in",
+        "tier": 1,
+        "title": "Indian Railway Catering and Tourism Corporation"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hinduizm (~80%), İslam (~14%), Hristiyanlık (~2.3%), Sihizm (~1.7%), Budizm (~0.7%), Caynizm (~0.4%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://censusindia.gov.in",
+          "tier": 1,
+          "title": "Census of India Religious Demographics"
+        }
+      ],
+      "evidence_quote": "India is the birthplace of major world religions with Hinduism forming the majority demographic",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Diwali (Işık Festivali), Holi (Renkler Festivali), Ramazan Bayramı (Eid), Bağımsızlık Günü (15 Ağustos), Cumhuriyet Bayramı (26 Ocak)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.incredibleindia.org",
+          "tier": 1,
+          "title": "Incredible India Festival Calendar"
+        }
+      ],
+      "evidence_quote": "Diwali, Holi, and national observances are celebrated with tremendous vitality nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Musluk suyu kesinlikle İÇİLMEZ; mühürlü şişe su veya filtrelenmiş su için. Tapınaklara girerken ayakkabı çıkarılmalı ve mütevazı giyinilmelidir. Uydu telefonu (Thuraya, Iridium) taşımak yasa dışıdır ve gözaltı nedenidir. UPI One World ile yabancı turistler QR ile ödeme yapabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.incredibleindia.org",
+          "tier": 1,
+          "title": "Incredible India Travel Guidelines"
+        }
+      ],
+      "evidence_quote": "Satellite phones are strictly prohibited without government license; temple etiquette mandates removing shoes",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %7-10 bahşiş teamüldür (servis bedeli eklenmemişse). Otel çalışanları ve rehberler için 50-100 INR bahşiş uygundur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.incredibleindia.org",
+          "tier": 1,
+          "title": "Incredible India Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping between 5 to 10 percent in restaurants is customary when service charge is excluded",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Tac Mahal Beyaz Mermer Mozolesi",
+        "en": "Taj Mahal White Marble Mausoleum",
+        "de": "Taj Mahal Weißes Marmormausoleum",
+        "ru": "Тадж-Махал из белого мрамора",
+        "es": "Taj Mahal Mausoleo de Mármol Blanco"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/252",
+          "tier": 1,
+          "title": "UNESCO Taj Mahal Agra"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Amber Kalesi (Jaipur)",
+        "en": "Amber Fort (Jaipur)",
+        "de": "Amber-Festung (Jaipur)",
+        "ru": "Форт Амбер (Джайпур)",
+        "es": "Fuerte Amber (Jaipur)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/247",
+          "tier": 1,
+          "title": "UNESCO Hill Forts of Rajasthan"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Varanasi Ganj Nehri Kutsal Ghatları",
+        "en": "Varanasi Ganges River Sacred Ghats",
+        "de": "Heilige Ghats von Varanasi am Ganges",
+        "ru": "Священные гхаты Варанаси на реке Ганг",
+        "es": "Ghats Sagrados de Benarés en el Río Ganges"
+      },
+      "type": "spiritual_heritage",
+      "sources": [
+        {
+          "url": "https://www.incredibleindia.org",
+          "tier": 1,
+          "title": "Incredible India Varanasi"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Tac Mahal Beyaz Mermer Mozolesi ve Havuzu, Agra",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/in-480.webp",
+        "attribution_text": "Taj Mahal and Reflecting Pool, Agra, India. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Tac Mahal Beyaz Mermer Mozolesi ve Havuzu, Agra, Hindistan",
+          "en": "Taj Mahal White Marble Mausoleum and Pool, Agra, India",
+          "de": "Taj Mahal Marmormausoleum und Wasserbecken, Agra, Indien",
+          "ru": "Тадж-Махал и отражающий бассейн, Агра, Индия",
+          "es": "Mausoleo del Taj Mahal y estanque, Agra, India"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "hindistan",
+      "en": "india",
+      "de": "indien",
+      "ru": "indiya",
+      "es": "india"
+    },
+    "title": {
+      "tr": "Hindistan e-Vize Rehberi, Güvenlik ve Seyahat Bilgileri | Vizamigo",
+      "en": "India e-Visa Guide, Safety Advice & Travel Essentials | Vizamigo",
+      "de": "Indien e-Visum-Leitfaden, Sicherheit & Reisetipps | Vizamigo",
+      "ru": "Электронная виза в Индию (e-Visa), безопасность и советы | Vizamigo",
+      "es": "Guía de Visa Electrónica de la India, Seguridad y Viajes | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Hindistan e-vize başvuru rehberi, Tac Mahal, su güvenliği, priz tipleri (D, M), UPI ödemeleri ve tren biletleri.",
+      "en": "India e-Visa application rules, Taj Mahal visit, safe water advice, Type D/M plugs, UPI tourist payments, and IRCTC trains.",
+      "de": "Indien e-Visabestimmungen, Taj Mahal, Trinkwassersicherheit, Typ-D/M-Stecker, UPI-Zahlungen und Bahnreisen.",
+      "ru": "Правила оформления e-Visa в Индию, Тадж-Махал, советы по воде, розетки D и M, платежи UPI и поезда IRCTC.",
+      "es": "Requisitos de e-Visa para India, Taj Mahal, agua potable, enchufes D y M, pagos UPI y billetes de tren IRCTC."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,456 @@
+{
+  "iso2": "SG",
+  "names": {
+    "tr": "Singapur",
+    "en": "Singapore",
+    "de": "Singapur",
+    "ru": "Сингапур",
+    "es": "Singapur"
+  },
+  "capital": {
+    "value": "Singapur",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.sg",
+        "tier": 1,
+        "title": "Singapore Government Official Portal"
+      }
+    ],
+    "evidence_quote": "Singapore is an island city-state and sovereign republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "SGD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg",
+        "tier": 1,
+        "title": "Monetary Authority of Singapore (MAS)"
+      }
+    ],
+    "evidence_quote": "The Singapore Dollar (SGD) is the official currency of Singapore",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (SGT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nea.gov.sg",
+        "tier": 1,
+        "title": "National Environment Agency Singapore Time"
+      }
+    ],
+    "evidence_quote": "Singapore Standard Time maintains a constant offset of UTC+8 without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ema.gov.sg",
+          "tier": 1,
+          "title": "Energy Market Authority (EMA) Singapore"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity in Singapore is delivered at 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ema.gov.sg",
+          "tier": 1,
+          "title": "EMA Singapore"
+        }
+      ],
+      "evidence_quote": "The Singapore national electrical grid frequency is standardized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ema.gov.sg",
+          "tier": 1,
+          "title": "EMA Electrical Installations Standard"
+        }
+      ],
+      "evidence_quote": "Singapore electrical wall sockets adhere to British Type G 3-pin rectangular plug standards",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.sg",
+          "tier": 1,
+          "title": "Singapore Police Force"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch hotline in Singapore is 999",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "995",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.scdf.gov.sg",
+          "tier": 1,
+          "title": "Singapore Civil Defence Force (SCDF)"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance and fire dispatch is operated through 995",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "995",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.scdf.gov.sg",
+          "tier": 1,
+          "title": "Singapore Civil Defence Force"
+        }
+      ],
+      "evidence_quote": "SCDF firefighting emergency services respond to 995",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.sg",
+          "tier": 1,
+          "title": "Singapore Police Force"
+        }
+      ],
+      "evidence_quote": "Main emergency line 999 coordinates urgent inter-agency responses",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1800-736-2000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitsingapore.com",
+          "tier": 1,
+          "title": "Singapore Tourism Board Tourist Hotline"
+        }
+      ],
+      "evidence_quote": "Singapore Tourism Board operates toll-free tourist hotline 1800 736 2000",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Singapore Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/singapore",
+          "tier": 1,
+          "title": "UK FCDO Singapore Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Singapur dünyanın en güvenli ve düzenli ülkelerindendir",
+      "en": "Normal Precautions: Singapore is one of the safest cities in the world",
+      "de": "Normale Vorsicht: Singapur gehört zu den sichersten Metropolen weltweit",
+      "ru": "Обычные меры: Сингапур один из самых безопасных городов в мире",
+      "es": "Precauciones normales: Singapur es una de las ciudades más seguras del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 112.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/singapore",
+          "tier": 2,
+          "title": "Ookla Speedtest Singapore"
+        }
+      ],
+      "evidence_quote": "Singapore mobile speeds average 112.5 Mbps with extensive nationwide standalone 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 310.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/singapore",
+          "tier": 2,
+          "title": "Ookla Speedtest Singapore Fixed"
+        }
+      ],
+      "evidence_quote": "Singapore ranks globally number one in fixed broadband speed averaging 310.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is readily available. Singtel, StarHub, and M1 offer tourist eSIMs and physical SIMs at Changi Airport with mandatory passport registration under IMDA regulations.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.imda.gov.sg",
+          "tier": 1,
+          "title": "Infocomm Media Development Authority (IMDA)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM buyers must produce valid original passports under IMDA regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/sg/",
+        "tier": 1,
+        "title": "Grab Singapore Superapp"
+      }
+    },
+    {
+      "name": "CDG Zig",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.cdgzig.com",
+        "tier": 1,
+        "title": "ComfortDelGro CDG Zig Taxi"
+      }
+    },
+    {
+      "name": "Foodpanda",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodpanda.sg",
+        "tier": 1,
+        "title": "Foodpanda Singapore"
+      }
+    },
+    {
+      "name": "SimplyGo",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.simplygo.com.sg",
+        "tier": 1,
+        "title": "LTA SimplyGo Public Transport"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Budizm (~31%), Hristiyanlık (~19%), İslam (~15%), Taoizm (~9%), Hinduizm (~5%), Dinsiz (~20%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.singstat.gov.sg",
+          "tier": 1,
+          "title": "Singapore Department of Statistics Census"
+        }
+      ],
+      "evidence_quote": "Singapore is a harmonious multi-religious society officially recognizing diverse cultural traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Çin Yeni Yılı, Hari Raya Puasa, Deepavali, Singapur Ulusal Günü (9 Ağustos), Vesak Günü",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mom.gov.sg",
+          "tier": 1,
+          "title": "Ministry of Manpower Public Holidays"
+        }
+      ],
+      "evidence_quote": "National Day on August 9 and multicultural public holidays are celebrated nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Sakız ithalatı ve satışı yasaktır. Yere çöp atma, metroda yeme-içme ve sigara yasakları binlerce SGD para cezasına tabidir. Uyuşturucu kaçakçılığı için ölüm cezası uygulanır. Prizler İngiliz Tipi G'dir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.customs.gov.sg",
+          "tier": 1,
+          "title": "Singapore Customs Prohibited Items"
+        }
+      ],
+      "evidence_quote": "Chewing gum is prohibited from import; strict fines apply to public cleanliness infractions",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 servis ücreti ve GST hesaba otomatik eklenir, ekstra bahşiş beklenmez. Hawker merkezlerinde bahşiş bırakılmaz.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitsingapore.com",
+          "tier": 1,
+          "title": "Visit Singapore Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary as restaurants add a 10 percent service charge to bills",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Marina Bay Sands ve Gardens by the Bay",
+        "en": "Marina Bay Sands and Gardens by the Bay",
+        "de": "Marina Bay Sands und Gardens by the Bay",
+        "ru": "Марина Бэй Сэндс и Сады у залива",
+        "es": "Marina Bay Sands y Gardens by the Bay"
+      },
+      "type": "architectural_wonder",
+      "sources": [
+        {
+          "url": "https://www.visitsingapore.com",
+          "tier": 1,
+          "title": "Visit Singapore Marina Bay"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Singapur Botanik Bahçeleri (UNESCO)",
+        "en": "Singapore Botanic Gardens",
+        "de": "Botanischer Garten Singapur",
+        "ru": "Сингапурский ботанический сад",
+        "es": "Jardines Botánicos de Singapur"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1483",
+          "tier": 1,
+          "title": "UNESCO Singapore Botanic Gardens"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Sentosa Adası",
+        "en": "Sentosa Island",
+        "de": "Insel Sentosa",
+        "ru": "Остров Сентоза",
+        "es": "Isla Sentosa"
+      },
+      "type": "resort_island",
+      "sources": [
+        {
+          "url": "https://www.sentosa.com.sg",
+          "tier": 1,
+          "title": "Sentosa Official Guide"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Marina Bay Sands ve Gardens by the Bay",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/sg-480.webp",
+        "attribution_text": "Marina Bay Sands and Gardens by the Bay, Singapore. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Marina Bay Sands ve Gardens by the Bay, Singapur",
+          "en": "Marina Bay Sands and Gardens by the Bay, Singapore",
+          "de": "Marina Bay Sands und Gardens by the Bay, Singapur",
+          "ru": "Марина Бэй Сэндс и Сады у залива, Сингапур",
+          "es": "Marina Bay Sands y Gardens by the Bay, Singapur"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "singapur",
+      "en": "singapore",
+      "de": "singapur",
+      "ru": "singapur",
+      "es": "singapur"
+    },
+    "title": {
+      "tr": "Singapur Vize Rehberi, SG Arrival Card ve Seyahat | Vizamigo",
+      "en": "Singapore Visa Guide, SG Arrival Card & Travel Tips | Vizamigo",
+      "de": "Singapur Visum-Leitfaden, SG Arrival Card & Reisetipps | Vizamigo",
+      "ru": "Виза в Сингапур, карта прибытия SG Arrival Card | Vizamigo",
+      "es": "Guía de Visa de Singapur, SG Arrival Card y Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Singapur elektronik varış kartı (SGAC), Grab kullanımı, priz tipi G, sakız yasağı ve Marina Bay rehberi.",
+      "en": "Singapore electronic arrival card (SGAC), Grab ride-hailing, Type G plugs, chewing gum laws, and verified travel essentials.",
+      "de": "Singapur elektronische Einreisekarte SGAC, Grab-App, Typ-G-Stecker, Kaugummiverbot und Marina Bay Tipps.",
+      "ru": "Электронная карта SG Arrival Card, поездки на Grab, розетки типа G, законы о чистоте и гид по Сингапуру.",
+      "es": "Tarjeta de llegada electrónica SGAC, app Grab, enchufes tipo G, leyes de chicle y guía de Marina Bay."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

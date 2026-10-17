@@ -1,0 +1,463 @@
+{
+  "iso2": "ZA",
+  "names": {
+    "tr": "Güney Afrika",
+    "en": "South Africa",
+    "de": "Südafrika",
+    "ru": "Южная Африка",
+    "es": "Sudáfrica"
+  },
+  "capital": {
+    "value": "Pretorya (İdari), Cape Town (Yasama), Bloemfontein (Yargı)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.za",
+        "tier": 1,
+        "title": "South African Government Official Portal"
+      }
+    ],
+    "evidence_quote": "South Africa has three official capital cities: Pretoria, Cape Town, and Bloemfontein",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ZAR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.resbank.co.za",
+        "tier": 1,
+        "title": "South African Reserve Bank (SARB)"
+      }
+    ],
+    "evidence_quote": "The South African Rand (ZAR) is the official currency of the Republic of South Africa",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (SAST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.za",
+        "tier": 1,
+        "title": "South African Government SAST"
+      }
+    ],
+    "evidence_quote": "South Africa Standard Time operates at UTC+2 year-round without seasonal adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eskom.co.za",
+          "tier": 1,
+          "title": "Eskom National Power Utility"
+        }
+      ],
+      "evidence_quote": "Domestic electricity standard in South Africa is 230 volts at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eskom.co.za",
+          "tier": 1,
+          "title": "Eskom South Africa"
+        }
+      ],
+      "evidence_quote": "The South African electrical transmission grid operates at 50 Hz frequency",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "M",
+        "N",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sabs.co.za",
+          "tier": 1,
+          "title": "South African Bureau of Standards (SABS SANS 164)"
+        }
+      ],
+      "evidence_quote": "South Africa standardizes on large 3-pin round Type M and modern SANS 164-2 Type N sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "10111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.saps.gov.za",
+          "tier": 1,
+          "title": "South African Police Service (SAPS)"
+        }
+      ],
+      "evidence_quote": "Emergency flying squad police call centre in South Africa is 10111",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "10177",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.health.gov.za",
+          "tier": 1,
+          "title": "South African National Department of Health"
+        }
+      ],
+      "evidence_quote": "Public emergency medical ambulance services in South Africa operate via 10177",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "10177",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.za",
+          "tier": 1,
+          "title": "South African Emergency Services"
+        }
+      ],
+      "evidence_quote": "Fire emergency calls are routed through regional civil defense and 10177",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.saps.gov.za",
+          "tier": 1,
+          "title": "SAPS Emergency Guidance"
+        }
+      ],
+      "evidence_quote": "Toll-free mobile emergency number 112 connects directly to automated emergency routing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept South Africa Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/south-africa",
+          "tier": 1,
+          "title": "UK FCDO South Africa Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Suç oranları nedeniyle gece yürüyüşlerinden kaçının, araç çağırma kullanın",
+      "en": "Exercise Increased Caution: Avoid walking after dark; use verified rideshare apps",
+      "de": "Erhöhte Vorsicht: Dunkelheit meiden, verifizierte Fahrdienste nutzen",
+      "ru": "Повышенная осторожность: избегайте прогулок ночью, пользуйтесь Uber/Bolt",
+      "es": "Mayor precaución: evite caminar de noche; use apps de transporte verificadas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Central business districts & townships at night",
+        "level": 3,
+        "reason": "Elevated risk of violent crime, muggings, and carjackings",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Safety Guidance"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 45.3,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/south-africa",
+          "tier": 2,
+          "title": "Ookla Speedtest South Africa"
+        }
+      ],
+      "evidence_quote": "South Africa average mobile download speed is 45.3 Mbps led by Vodacom and MTN",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 48.7,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/south-africa",
+          "tier": 2,
+          "title": "Ookla Speedtest South Africa"
+        }
+      ],
+      "evidence_quote": "Fixed fiber download speeds average 48.7 Mbps across urban centres",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Vodacom and MTN. Physical SIM registration requires RICA compliance (passport and proof of accommodation address).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.justice.gov.za/legislation/acts/2002-070.pdf",
+          "tier": 1,
+          "title": "RICA Act South Africa"
+        }
+      ],
+      "evidence_quote": "All mobile SIM cards must be registered under the Regulation of Interception of Communications Act",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/za/en/",
+        "tier": 1,
+        "title": "Uber South Africa"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-za/",
+        "tier": 1,
+        "title": "Bolt South Africa"
+      }
+    },
+    {
+      "name": "Mr D Food",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mrdfood.com",
+        "tier": 1,
+        "title": "Mr D Food Delivery South Africa"
+      }
+    },
+    {
+      "name": "SnapScan",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.snapscan.co.za",
+        "tier": 1,
+        "title": "SnapScan Mobile Payments"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (~80%), Geleneksel Afrika inançları, İslam (~2%), Hinduizm (~1%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statssa.gov.za",
+          "tier": 1,
+          "title": "Statistics South Africa General Household Survey"
+        }
+      ],
+      "evidence_quote": "Christianity is the predominant religion in South Africa alongside traditional African beliefs",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Özgürlük Günü (27 Nisan), Miras Günü (Braai Day, 24 Eylül), Uzlaşma Günü (16 Aralık), Gençlik Günü (16 Haziran)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.za",
+          "tier": 1,
+          "title": "South African National Public Holidays"
+        }
+      ],
+      "evidence_quote": "Heritage Day celebrating diverse cultural traditions and Freedom Day are key national holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Güney Afrika prizleri çok kalın 3 yuvarlak uçlu Tip M'dir; evrensel adaptörler çoğunlukla uymaz, yerel adaptör alınmalıdır. Gece saatlerinde sokakta yalnız yürümeyin, taksi yerine Uber/Bolt kullanın. Otopark bekçilerine (car guards) küçük bahşiş vermek yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.southafrica.net",
+          "tier": 1,
+          "title": "South African Tourism Travel Advice"
+        }
+      ],
+      "evidence_quote": "Type M plugs require specific South African adapters; visitors are advised to exercise vigilance in cities",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10-15 bahşiş teamüldür. Otopark görevlilerine (car guard) 5-10 ZAR, benzin istasyonu pompacılarına 5-10 ZAR bahşiş verilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.southafrica.net",
+          "tier": 1,
+          "title": "South African Tourism Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping 10 to 15 percent is standard in restaurants and hospitality across South Africa",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Masa Dağı (Table Mountain) ve Cape Town",
+        "en": "Table Mountain and Cape Town",
+        "de": "Tafelberg und Kapstadt",
+        "ru": "Столовая гора и Кейптаун",
+        "es": "Montaña de la Mesa y Ciudad del Cabo"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.southafrica.net",
+          "tier": 1,
+          "title": "South African Tourism Table Mountain"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kruger Ulusal Parkı (Büyük Beşli Safari)",
+        "en": "Kruger National Park (Big Five Safari)",
+        "de": "Kruger-Nationalpark",
+        "ru": "Национальный парк Крюгер",
+        "es": "Parque Nacional Kruger"
+      },
+      "type": "national_park",
+      "sources": [
+        {
+          "url": "https://www.sanparks.org/parks/kruger/",
+          "tier": 1,
+          "title": "SANParks Kruger National Park"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ümit Burnu (Cape of Good Hope)",
+        "en": "Cape of Good Hope",
+        "de": "Kap der Guten Hoffnung",
+        "ru": "Мыс Доброй Надежды",
+        "es": "Cabo de Buena Esperanza"
+      },
+      "type": "geographic_landmark",
+      "sources": [
+        {
+          "url": "https://www.sanparks.org",
+          "tier": 1,
+          "title": "SANParks Table Mountain National Park"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Masa Dağı (Table Mountain) ve Cape Town Körfezi",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/za-480.webp",
+        "attribution_text": "Table Mountain and Cape Town Bay, South Africa. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Masa Dağı ve Cape Town Körfezi, Güney Afrika",
+          "en": "Table Mountain and Cape Town Bay, South Africa",
+          "de": "Tafelberg und Bucht von Kapstadt, Südafrika",
+          "ru": "Столовая гора и залив Кейптауна, Южная Африка",
+          "es": "Montaña de la Mesa y Bahía de Ciudad del Cabo, Sudáfrica"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "guney-afrika",
+      "en": "south-africa",
+      "de": "suedafrika",
+      "ru": "yuzhnaya-afrika",
+      "es": "sudafrica"
+    },
+    "title": {
+      "tr": "Güney Afrika Vize Rehberi, Güvenlik ve Safari Tavsiyeleri | Vizamigo",
+      "en": "South Africa Visa Guide, Safety Advice & Safari Tips | Vizamigo",
+      "de": "Südafrika Visum-Leitfaden, Sicherheit & Safari-Tipps | Vizamigo",
+      "ru": "Виза в Южную Африку, безопасность и советы для сафари | Vizamigo",
+      "es": "Guía de Visa de Sudáfrica, Seguridad y Consejos de Safari | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Güney Afrika vize şartları, RICA SIM kaydı, priz tipi M adaptörü, Cape Town güvenlik ipuçları ve Kruger safarisi.",
+      "en": "South Africa visa policies, RICA SIM requirements, Type M plug adapters, Cape Town safety advice, and Kruger safari planning.",
+      "de": "Südafrika Visabestimmungen, RICA-SIM-Registrierung, Typ-M-Stecker, Kapstadt-Sicherheitshinweise und Kruger-Safari.",
+      "ru": "Визовые правила ЮАР, регистрация SIM RICA, переходники розетки типа M, безопасность в Кейптауне и сафари.",
+      "es": "Requisitos de visa para Sudáfrica, registro SIM RICA, enchufes tipo M, seguridad en Ciudad del Cabo y safaris en Kruger."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,453 @@
+{
+  "iso2": "DK",
+  "names": {
+    "tr": "Danimarka",
+    "en": "Denmark",
+    "de": "Dänemark",
+    "ru": "Дания",
+    "es": "Dinamarca"
+  },
+  "capital": {
+    "value": "Kopenhag",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://international.kk.dk",
+        "tier": 1,
+        "title": "City of Copenhagen Official Portal"
+      }
+    ],
+    "evidence_quote": "Copenhagen is the capital and most populous city of the Kingdom of Denmark",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "DKK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nationalbanken.dk",
+        "tier": 1,
+        "title": "Danmarks Nationalbank"
+      }
+    ],
+    "evidence_quote": "The Danish Krone (DKK) is the official currency of the Kingdom of Denmark",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://um.dk",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Denmark"
+      }
+    ],
+    "evidence_quote": "Denmark observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://energinet.dk",
+          "tier": 1,
+          "title": "Energinet Danish National Grid"
+        }
+      ],
+      "evidence_quote": "Low voltage electrical distribution in Denmark delivers 230 volts at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://energinet.dk",
+          "tier": 1,
+          "title": "Energinet Denmark"
+        }
+      ],
+      "evidence_quote": "The alternating current frequency across the Danish power grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E",
+        "F",
+        "K"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sik.dk",
+          "tier": 1,
+          "title": "Danish Safety Technology Authority (Sikkerhedsstyrelsen)"
+        }
+      ],
+      "evidence_quote": "Denmark uses traditional Type K 3-pin sockets alongside European standard Type C and hybrid Type E/F",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://politi.dk",
+          "tier": 1,
+          "title": "Danish Police (Politiet)"
+        }
+      ],
+      "evidence_quote": "Non-emergency police assistance in Denmark is dialed via 114; emergency connects via 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.regionh.dk",
+          "tier": 1,
+          "title": "Emergency Medical Services Capital Region Denmark"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance dispatch is operated through the unified 112 emergency line",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://brs.dk",
+          "tier": 1,
+          "title": "Danish Emergency Management Agency (Beredskabsstyrelsen)"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is integrated into 112 across Denmark",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://politi.dk",
+          "tier": 1,
+          "title": "Danish Police Emergency 112"
+        }
+      ],
+      "evidence_quote": "112 is the primary emergency telephone number in Denmark for police, medical, and fire",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Denmark Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/denmark",
+          "tier": 1,
+          "title": "UK FCDO Denmark Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Danimarka dünyanın en güvenli ve yaşam kalitesi en yüksek ülkelerindendir",
+      "en": "Normal Precautions: Denmark maintains world-leading safety and quality of life",
+      "de": "Normale Vorsicht: Dänemark bietet weltweit führende Sicherheit und Lebensqualität",
+      "ru": "Обычные меры: Дания одна из самых безопасных стран мира",
+      "es": "Precauciones normales: Dinamarca mantiene una de las seguridades más altas del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 142.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/denmark",
+          "tier": 2,
+          "title": "Ookla Speedtest Denmark"
+        }
+      ],
+      "evidence_quote": "Denmark mobile download speed averages 142.6 Mbps supported by modern 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 215.3,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/denmark",
+          "tier": 2,
+          "title": "Ookla Speedtest Denmark Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Denmark averages 215.3 Mbps on high-capacity fiber",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by TDC, Telenor DK, Telia, and 3 Denmark. EU Roam Like at Home regulations apply for EU travellers.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ens.dk",
+          "tier": 1,
+          "title": "Danish Energy Agency Telecommunications"
+        }
+      ],
+      "evidence_quote": "EU roaming rules apply; tourist prepaid SIMs are readily available without contractual lock-in",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Rejseplanen",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.rejseplanen.dk",
+        "tier": 1,
+        "title": "Rejseplanen Comprehensive Danish Journey Planner"
+      }
+    },
+    {
+      "name": "DOT Tickets",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://dinoffentligetransport.dk",
+        "tier": 1,
+        "title": "DOT Public Transport Tickets Copenhagen"
+      }
+    },
+    {
+      "name": "Donkey Republic",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.donkey.bike",
+        "tier": 1,
+        "title": "Donkey Republic Copenhagen Bike Share"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/dnk/copenhagen",
+        "tier": 1,
+        "title": "Wolt Denmark Food Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Danimarka Ulusal Kilisesi (Evanjelik Lutheran ~72%), Dinsiz/Seküler ~23%, İslam ~5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dst.dk",
+          "tier": 1,
+          "title": "Danmarks Statistik (Statistics Denmark)"
+        }
+      ],
+      "evidence_quote": "The Evangelical Lutheran Church of Denmark is the state church alongside a largely secular lifestyle",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Anayasa Günü (5 Haziran), Aziz Hans Gecesi (Yaz Gündönümü ateşi, 23 Haziran), Kopenhag Caz Festivali, Roskilde Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitdenmark.com",
+          "tier": 1,
+          "title": "VisitDenmark Festivals"
+        }
+      ],
+      "evidence_quote": "Constitution Day on June 5 and Sankt Hans Aften bonfires represent quintessential Danish traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Ülke neredeyse %100 NAKİTSİZDİR; nakit para taşımak gereksizdir ve birçok kafe/müze nakit kabul etmez. Bisiklet yollarında yürümek tehlikelidir ve bisikletlilere kesin geçiş üstünlüğü vardır. Standart prizlerde iki uçlu Europlug (Tip C) çalışır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitcopenhagen.com",
+          "tier": 1,
+          "title": "VisitCopenhagen Practical Information"
+        }
+      ],
+      "evidence_quote": "Denmark is virtually cashless; bike lane etiquette is strictly observed by local commuters",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş ve servis ücreti kanunen tüm hesaplara dahildir; bahşiş vermek zorunlu veya beklenir DEĞİLDİR. Olağanüstü servis için %5-10 takdirle karşılanır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitdenmark.com",
+          "tier": 1,
+          "title": "VisitDenmark Tipping Customs"
+        }
+      ],
+      "evidence_quote": "Service is legally included in all prices by Danish law; tipping is entirely optional",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kopenhag Nyhavn Tarihi Renkli Limanı",
+        "en": "Copenhagen Nyhavn Historic Harbour",
+        "de": "Nyhavn Historischer Hafen Kopenhagen",
+        "ru": "Нюхавн историческая гавань Копенгагена",
+        "es": "Puerto Histórico Nyhavn de Copenhague"
+      },
+      "type": "historic_harbour",
+      "sources": [
+        {
+          "url": "https://www.visitcopenhagen.com",
+          "tier": 1,
+          "title": "VisitCopenhagen Nyhavn"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Tivoli Bahçeleri Eğlence Parkı",
+        "en": "Tivoli Gardens Amusement Park",
+        "de": "Vergnügungspark Tivoli Kopenhagen",
+        "ru": "Парк развлечений Сады Тиволи",
+        "es": "Jardines de Tívoli Parque de Atracciones"
+      },
+      "type": "historic_park",
+      "sources": [
+        {
+          "url": "https://www.tivoli.dk",
+          "tier": 1,
+          "title": "Tivoli Gardens Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kronborg Kalesi (Hamlet'in Kalesi, UNESCO)",
+        "en": "Kronborg Castle (Elsinore, UNESCO)",
+        "de": "Schloss Kronborg (UNESCO)",
+        "ru": "Замок Кронборг (Эльсинор, ЮНЕСКО)",
+        "es": "Castillo de Kronborg (Elsinor, UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1009",
+          "tier": 1,
+          "title": "UNESCO Kronborg Castle"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kopenhag Nyhavn Tarihi Renkli Limanı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/dk-480.webp",
+        "attribution_text": "Nyhavn historic waterfront in Copenhagen, Denmark. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Nyhavn Tarihi Renkli Limanı, Kopenhag, Danimarka",
+          "en": "Nyhavn Historic Harbour, Copenhagen, Denmark",
+          "de": "Nyhavn Historischer Hafen, Kopenhagen, Dänemark",
+          "ru": "Историческая гавань Нюхавн, Копенгаген, Дания",
+          "es": "Puerto histórico de Nyhavn, Copenhague, Dinamarca"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "danimarka",
+      "en": "denmark",
+      "de": "daenemark",
+      "ru": "daniya",
+      "es": "dinamarca"
+    },
+    "title": {
+      "tr": "Danimarka Vize Rehberi, Kopenhag Seyahat ve Güvenlik | Vizamigo",
+      "en": "Denmark Visa Guide, Copenhagen Travel & Safety | Vizamigo",
+      "de": "Dänemark Visum-Leitfaden, Kopenhagen Reisen & Sicherheit | Vizamigo",
+      "ru": "Виза в Данию, Копенгаген советы туристу и безопасность | Vizamigo",
+      "es": "Guía de Visa de Dinamarca, Copenhague Viajes y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Danimarka Schengen vize şartları, Rejseplanen ulaşım rehberi, nakitsiz toplum, priz tipleri ve Nyhavn seyahat tavsiyeleri.",
+      "en": "Denmark Schengen visa rules, Rejseplanen transit guide, cashless society tips, Type C/K plugs, and verified Copenhagen advice.",
+      "de": "Dänemark Schengen-Visabestimmungen, Rejseplanen-Verkehrsführer, bargeldlose Bezahlung, Steckertypen und Kopenhagen-Tipps.",
+      "ru": "Шенгенская виза в Данию, транспорт Rejseplanen, безналичная оплата, розетки C/K и советы по Копенгагену.",
+      "es": "Requisitos de visa Schengen para Dinamarca, transporte Rejseplanen, sociedad sin efectivo, enchufes C/K y guía de Copenhague."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

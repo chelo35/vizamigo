@@ -1,0 +1,451 @@
+{
+  "iso2": "HU",
+  "names": {
+    "tr": "Macaristan",
+    "en": "Hungary",
+    "de": "Ungarn",
+    "ru": "Венгрия",
+    "es": "Hungría"
+  },
+  "capital": {
+    "value": "Budapeşte",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.budapest.hu",
+        "tier": 1,
+        "title": "Budapest City Administration"
+      }
+    ],
+    "evidence_quote": "Budapest is the capital city and cultural centre of Hungary",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "HUF",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mnb.hu",
+        "tier": 1,
+        "title": "Magyar Nemzeti Bank (Hungarian National Bank)"
+      }
+    ],
+    "evidence_quote": "The Hungarian Forint (HUF) is the legal currency of Hungary",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kormany.hu",
+        "tier": 1,
+        "title": "Hungarian Government Official Portal"
+      }
+    ],
+    "evidence_quote": "Hungary operates on Central European Time (UTC+1) and Daylight Saving Time (UTC+2)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mvm.hu",
+          "tier": 1,
+          "title": "MVM Group Hungarian Energy"
+        }
+      ],
+      "evidence_quote": "Standard residential mains electricity in Hungary is supplied at 230V single-phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mvm.hu",
+          "tier": 1,
+          "title": "MVM Group Hungary"
+        }
+      ],
+      "evidence_quote": "Frequency throughout the Hungarian national transmission grid is standardized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mvm.hu",
+          "tier": 1,
+          "title": "MVM Hungarian Electrical Standard"
+        }
+      ],
+      "evidence_quote": "Hungary uses European standard Type C Europlug and Type F Schuko grounded plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "107",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.hu",
+          "tier": 1,
+          "title": "Hungarian National Police (Rendőrség)"
+        }
+      ],
+      "evidence_quote": "Hungarian police national emergency response line is 107",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "104",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mentok.hu",
+          "tier": 1,
+          "title": "Országos Mentőszolgálat (National Ambulance Service)"
+        }
+      ],
+      "evidence_quote": "National ambulance service dispatch in Hungary is operated through 104",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "105",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://katasztrofavedelem.hu",
+          "tier": 1,
+          "title": "National Directorate General for Disaster Management"
+        }
+      ],
+      "evidence_quote": "Fire brigade emergency dispatch operates via 105",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.hu",
+          "tier": 1,
+          "title": "Police Hungary Emergency 112"
+        }
+      ],
+      "evidence_quote": "European unified emergency service 112 functions 24/7 in Hungary with multilingual support",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Hungary Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/hungary",
+          "tier": 1,
+          "title": "UK FCDO Hungary Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Macaristan güvenli bir Avrupa Birliği ve Schengen üyesidir",
+      "en": "Normal Precautions: Hungary is a safe Central European destination",
+      "de": "Normale Vorsicht: Ungarn ist ein sicheres Reiseziel in Mitteleuropa",
+      "ru": "Обычные меры: Венгрия безопасная страна в Центральной Европе",
+      "es": "Precauciones normales: Hungría es un destino seguro de Europa Central"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 62.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/hungary",
+          "tier": 2,
+          "title": "Ookla Speedtest Hungary"
+        }
+      ],
+      "evidence_quote": "Hungary mobile download speeds average 62.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 164.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/hungary",
+          "tier": 2,
+          "title": "Ookla Speedtest Hungary Fixed"
+        }
+      ],
+      "evidence_quote": "Hungary fixed broadband speeds average 164.8 Mbps ranking among Europe's fastest",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Magyar Telekom, Yettel, and Vodafone/One HU. EU Roam Like at Home regulations apply across Hungary for EU SIM cards.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nmhh.hu",
+          "tier": 1,
+          "title": "National Media and Infocommunications Authority (NMHH)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid identity document under Hungarian law",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "BudapestGO",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bkk.hu/en/tickets-and-passes/budapestgo/",
+        "tier": 1,
+        "title": "BKK BudapestGO Public Transport"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-hu/",
+        "tier": 1,
+        "title": "Bolt Hungary Taxi"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/hun/budapest",
+        "tier": 1,
+        "title": "Wolt Hungary Food Delivery"
+      }
+    },
+    {
+      "name": "Foodora",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodora.hu",
+        "tier": 1,
+        "title": "Foodora Hungary"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (Katolik ~39%, Kalvinist/Reform ~12%, Lutheran ~2%, Dinsiz ~40%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ksh.hu",
+          "tier": 1,
+          "title": "Hungarian Central Statistical Office (KSH)"
+        }
+      ],
+      "evidence_quote": "Catholicism forms the traditional religious heritage alongside prominent Reformed communities",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Aziz Stephen Günü (20 Ağustos), 1848 Devrimi Anma Günü (15 Mart), 1956 İhtilali Günü (23 Ekim), Sziget Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visithungary.com",
+          "tier": 1,
+          "title": "Visit Hungary Events"
+        }
+      ],
+      "evidence_quote": "St. Stephen's Day on August 20 is Hungary's official state foundation holiday celebrated with Danube fireworks",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Budapeşte toplu taşımasında (BKK) bilet doğrulaması zorunludur; metro girişlerinde ve tramvaylarda bilet okutmayanlara yerinde ağır para cezası kesilir. Restoranlarda sahte hesaplara dikkat edilmeli ve Euronet ATM'lerinin fahiş kur çevriminden kaçınılmalıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bkk.hu",
+          "tier": 1,
+          "title": "BKK Ticket Validation Rules"
+        }
+      ],
+      "evidence_quote": "Passengers must validate single tickets immediately upon boarding to avoid strict inspection penalties",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Hesaba servis ücreti (%10-12 szervizdíj) eklenmemişse %10 bahşiş bırakmak adettendir. Hesaba dahilse ekstra bahşiş zorunlu değildir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visithungary.com",
+          "tier": 1,
+          "title": "Visit Hungary Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent is customary in Hungarian restaurants when service is not included",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Budapeşte Macaristan Parlamento Binası ve Tuna",
+        "en": "Hungarian Parliament Building and Danube",
+        "de": "Ungarisches Parlamentsgebäude und Donau",
+        "ru": "Здание венгерского парламента и Дунай",
+        "es": "Edificio del Parlamento de Hungría y Danubio"
+      },
+      "type": "architectural_wonder",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/400",
+          "tier": 1,
+          "title": "UNESCO Budapest, including the Banks of the Danube"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Buda Kalesi ve Balıkçı Tabyası",
+        "en": "Buda Castle and Fisherman's Bastion",
+        "de": "Budaer Burg und Fischerbastei",
+        "ru": "Будайская крепость и Рыбацкий бастион",
+        "es": "Castillo de Buda y Bastión de los Pescadores"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/400",
+          "tier": 1,
+          "title": "UNESCO Buda Castle Quarter"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Széchenyi Termal Hamamı",
+        "en": "Széchenyi Thermal Bath",
+        "de": "Széchenyi-Heilbad",
+        "ru": "Купальня Сеченьи",
+        "es": "Baños Termales Széchenyi"
+      },
+      "type": "historic_bath",
+      "sources": [
+        {
+          "url": "https://www.szechenyibath.hu",
+          "tier": 1,
+          "title": "Széchenyi Bath Official"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Budapeşte Macaristan Parlamento Binası ve Tuna",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/hu-480.webp",
+        "attribution_text": "Hungarian Parliament Building on the Danube River, Budapest. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Macaristan Parlamento Binası ve Tuna Nehri, Budapeşte",
+          "en": "Hungarian Parliament Building and Danube River, Budapest",
+          "de": "Ungarisches Parlamentsgebäude und Donau, Budapest",
+          "ru": "Здание венгерского парламента и река Дунай, Будапешт",
+          "es": "Edificio del Parlamento Húngaro y río Danubio, Budapest"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "macaristan",
+      "en": "hungary",
+      "de": "ungarn",
+      "ru": "vengriya",
+      "es": "hungria"
+    },
+    "title": {
+      "tr": "Macaristan Vize Rehberi, Budapeşte Seyahat ve Güvenlik | Vizamigo",
+      "en": "Hungary Visa Guide, Budapest Travel & Safety Essentials | Vizamigo",
+      "de": "Ungarn Visum-Leitfaden, Budapest Reisen & Sicherheit | Vizamigo",
+      "ru": "Виза в Венгрию, Будапешт советы туристу и безопасность | Vizamigo",
+      "es": "Guía de Visa de Hungría, Budapest Consejos y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Macaristan Schengen vize şartları, BudapestGO uygulaması, termal hamamlar, forint para birimi ve priz tipleri.",
+      "en": "Hungary Schengen visa requirements, BudapestGO transit app, thermal baths, forint currency, and Type C/F plugs.",
+      "de": "Ungarn Schengen-Visabestimmungen, BudapestGO-App, Thermalbäder, Forint-Währung und Steckertypen.",
+      "ru": "Шенгенская виза в Венгрию, транспортное приложение BudapestGO, купальни, форинты и розетки C/F.",
+      "es": "Requisitos de visa Schengen para Hungría, app BudapestGO, baños termales, moneda florín y enchufes C/F."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

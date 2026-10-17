@@ -32,6 +32,18 @@ import PL from './countries/PL.json';
 import CN from './countries/CN.json';
 import ID from './countries/ID.json';
 import VN from './countries/VN.json';
+import EG from './countries/EG.json';
+import MA from './countries/MA.json';
+import CH from './countries/CH.json';
+import KR from './countries/KR.json';
+import SG from './countries/SG.json';
+import ZA from './countries/ZA.json';
+import IN from './countries/IN.json';
+import HU from './countries/HU.json';
+import CZ from './countries/CZ.json';
+import BE from './countries/BE.json';
+import DK from './countries/DK.json';
+import SE from './countries/SE.json';
 
 export interface VerifiedSource {
   url: string;
@@ -198,6 +210,18 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   CN: CN as unknown as VerifiedCountryRecord,
   ID: ID as unknown as VerifiedCountryRecord,
   VN: VN as unknown as VerifiedCountryRecord,
+  EG: EG as unknown as VerifiedCountryRecord,
+  MA: MA as unknown as VerifiedCountryRecord,
+  CH: CH as unknown as VerifiedCountryRecord,
+  KR: KR as unknown as VerifiedCountryRecord,
+  SG: SG as unknown as VerifiedCountryRecord,
+  ZA: ZA as unknown as VerifiedCountryRecord,
+  IN: IN as unknown as VerifiedCountryRecord,
+  HU: HU as unknown as VerifiedCountryRecord,
+  CZ: CZ as unknown as VerifiedCountryRecord,
+  BE: BE as unknown as VerifiedCountryRecord,
+  DK: DK as unknown as VerifiedCountryRecord,
+  SE: SE as unknown as VerifiedCountryRecord,
 };
 
 /**

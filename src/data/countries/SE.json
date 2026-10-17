@@ -1,0 +1,461 @@
+{
+  "iso2": "SE",
+  "names": {
+    "tr": "İsveç",
+    "en": "Sweden",
+    "de": "Schweden",
+    "ru": "Швеция",
+    "es": "Suecia"
+  },
+  "capital": {
+    "value": "Stockholm",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://start.stockholm",
+        "tier": 1,
+        "title": "City of Stockholm Official Portal"
+      }
+    ],
+    "evidence_quote": "Stockholm is the capital and largest city of the Kingdom of Sweden",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "SEK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.riksbank.se",
+        "tier": 1,
+        "title": "Sveriges Riksbank (Central Bank of Sweden)"
+      }
+    ],
+    "evidence_quote": "The Swedish Krona (SEK) is the official currency of Sweden",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.government.se",
+        "tier": 1,
+        "title": "Government Offices of Sweden"
+      }
+    ],
+    "evidence_quote": "Sweden observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.svk.se",
+          "tier": 1,
+          "title": "Svenska kraftnät Electricity Transmission"
+        }
+      ],
+      "evidence_quote": "Standard residential mains electricity in Sweden is 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.svk.se",
+          "tier": 1,
+          "title": "Svenska kraftnät Sweden"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout the Swedish power transmission network is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.elsakerhetsverket.se",
+          "tier": 1,
+          "title": "National Electrical Safety Board (Elsäkerhetsverket)"
+        }
+      ],
+      "evidence_quote": "Sweden uses European standard Type C Europlug and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "114 14",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://polisen.se",
+          "tier": 1,
+          "title": "Swedish Police Authority (Polisen)"
+        }
+      ],
+      "evidence_quote": "Non-emergency police matters in Sweden are handled via 114 14; urgent calls dial 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sosalarm.se",
+          "tier": 1,
+          "title": "SOS Alarm Sweden Emergency Operations"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue operates through nationwide 112 dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sosalarm.se",
+          "tier": 1,
+          "title": "SOS Alarm Sweden"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency calls are dispatched through 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sosalarm.se",
+          "tier": 1,
+          "title": "SOS Alarm 112 Sweden"
+        }
+      ],
+      "evidence_quote": "112 is the primary national emergency number in Sweden operated 24/7 by SOS Alarm",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Sweden Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/sweden",
+          "tier": 1,
+          "title": "UK FCDO Sweden Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: İskandinav bölgesinde yükseltilen terör tehdit seviyesi nedeniyle kalabalık yerlerde dikkatli olun",
+      "en": "Exercise Increased Caution: Maintain vigilance in public venues due to elevated regional security alerts",
+      "de": "Erhöhte Vorsicht: Wachsamkeit an öffentlichen Orten aufgrund erhöhter Sicherheitslage",
+      "ru": "Повышенная осторожность: сохраняйте бдительность в общественных местах",
+      "es": "Mayor precaución: mantenga vigilancia en lugares públicos debido a alertas de seguridad"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "medium",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 128.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/sweden",
+          "tier": 2,
+          "title": "Ookla Speedtest Sweden"
+        }
+      ],
+      "evidence_quote": "Sweden mobile download speeds average 128.4 Mbps with comprehensive nationwide 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 185.7,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/sweden",
+          "tier": 2,
+          "title": "Ookla Speedtest Sweden Fixed"
+        }
+      ],
+      "evidence_quote": "Sweden fixed broadband speeds average 185.7 Mbps over universal fiber networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Telia, Tele2, Telenor Sverige, and Tre (3). EU Roam Like at Home regulations apply for EU travellers.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pts.se",
+          "tier": 1,
+          "title": "Swedish Post and Telecom Authority (PTS)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires identity verification under Swedish electronic communications laws",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "SL",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://sl.se/en/in-english",
+        "tier": 1,
+        "title": "SL Stockholm Public Transport App"
+      }
+    },
+    {
+      "name": "SJ",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.sj.se/en/",
+        "tier": 1,
+        "title": "SJ Swedish Railways"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-se/",
+        "tier": 1,
+        "title": "Bolt Sweden"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/se/en/",
+        "tier": 1,
+        "title": "Uber Sweden"
+      }
+    },
+    {
+      "name": "Foodora",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodora.se",
+        "tier": 1,
+        "title": "Foodora Sweden"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İsveç Kilisesi (Lutheran ~53%), Dinsiz/Seküler ~38%, İslam ~6%, Katoliklik ~2%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.scb.se",
+          "tier": 1,
+          "title": "Statistics Sweden (SCB)"
+        }
+      ],
+      "evidence_quote": "The Church of Sweden represents traditional heritage alongside high levels of modern secularism",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Yaz Ortası Gecesi (Midsommar), Azize Lucia Günü (13 Aralık), İsveç Ulusal Günü (6 Haziran), Walpurgis Gecesi (Valborg, 30 Nisan)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitsweden.com",
+          "tier": 1,
+          "title": "Visit Sweden Celebrations"
+        }
+      ],
+      "evidence_quote": "Midsommar in late June and Saint Lucia in December are core cultural highlights of Swedish life",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "İsveç neredeyse tamamen NAKİTSİZDİR (Kontantfri); otobüsler, kafeler, müzeler ve mağazalar nakit para kabul etmez, temassız kart veya Apple/Google Pay gereklidir. Doğada 'Herkesin Hakkı' (Allemansrätten) kuralı uyarınca serbestçe gezilebilir ancak çöpleri toplamak ve doğayı korumak şarttır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitsweden.com",
+          "tier": 1,
+          "title": "Visit Sweden Allemansrätten & Practical"
+        }
+      ],
+      "evidence_quote": "Sweden is predominantly cashless; the Right of Public Access allows free nature exploration responsibly",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş fiyata dahildir ve beklenmez; akşam yemeklerinde iyi servis için hesabı %5-10 yukarı yuvarlamak kibar bir jesttir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitsweden.com",
+          "tier": 1,
+          "title": "Visit Sweden Tipping"
+        }
+      ],
+      "evidence_quote": "Tipping is never compulsory in Sweden; rounding up slightly on evening meals is appreciated",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Stockholm Gamla Stan Tarihi Renkli Meydanı",
+        "en": "Stockholm Gamla Stan Historic Stortorget",
+        "de": "Gamla Stan Historischer Stortorget Stockholm",
+        "ru": "Гамла Стан историческая площадь Сторторгет в Стокгольме",
+        "es": "Gamla Stan Histórica Plaza Stortorget de Estocolmo"
+      },
+      "type": "historic_old_town",
+      "sources": [
+        {
+          "url": "https://www.visitstockholm.com",
+          "tier": 1,
+          "title": "Visit Stockholm Gamla Stan"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Vasa Müzesi (17. Yüzyıl Kraliyet Gemisi)",
+        "en": "Vasa Museum (17th Century Warship)",
+        "de": "Vasa-Museum",
+        "ru": "Музей корабля Васа",
+        "es": "Museo Vasa"
+      },
+      "type": "maritime_museum",
+      "sources": [
+        {
+          "url": "https://www.vasamuseet.se",
+          "tier": 1,
+          "title": "Vasa Museum Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Drottningholm Kraliyet Sarayı (UNESCO)",
+        "en": "Drottningholm Royal Palace (UNESCO)",
+        "de": "Königliches Schloss Drottningholm",
+        "ru": "Королевский дворец Дроттнингхольм",
+        "es": "Palacio Real de Drottningholm"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/559",
+          "tier": 1,
+          "title": "UNESCO Royal Domain of Drottningholm"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Stockholm Gamla Stan Tarihi Renkli Meydanı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/se-480.webp",
+        "attribution_text": "Gamla Stan historic square in Stockholm, Sweden. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Gamla Stan Tarihi Eski Şehri ve Meydanı, Stockholm, İsveç",
+          "en": "Gamla Stan Historic Old Town Square, Stockholm, Sweden",
+          "de": "Gamla Stan Historische Altstadt, Stockholm, Schweden",
+          "ru": "Исторический старый город Гамла Стан, Стокгольм, Швеция",
+          "es": "Casco antiguo de Gamla Stan, Estocolmo, Suecia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "isvec",
+      "en": "sweden",
+      "de": "schweden",
+      "ru": "shvetsiya",
+      "es": "suecia"
+    },
+    "title": {
+      "tr": "İsveç Vize Rehberi, Stockholm Seyahat ve Güvenlik Bilgileri | Vizamigo",
+      "en": "Sweden Visa Guide, Stockholm Travel & Safety Essentials | Vizamigo",
+      "de": "Schweden Visum-Leitfaden, Stockholm Reisen & Sicherheit | Vizamigo",
+      "ru": "Виза в Швецию, Стокгольм советы туристу и безопасность | Vizamigo",
+      "es": "Guía de Visa de Suecia, Estocolmo Viajes y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İsveç Schengen vize kuralları, SL Stockholm ulaşımı, nakitsiz yaşam, doğa hakkı (Allemansrätten) ve priz tipleri.",
+      "en": "Sweden Schengen visa rules, SL Stockholm transit, cashless society tips, Allemansrätten nature rights, and Type C/F plugs.",
+      "de": "Schweden Schengen-Visabestimmungen, SL-Verkehr Stockholm, bargeldlose Gesellschaft, Jedermannsrecht und Steckertypen.",
+      "ru": "Шенгенская виза в Швецию, транспорт SL в Стокгольме, безналичная оплата, право на природу и розетки C/F.",
+      "es": "Requisitos de visa Schengen para Suecia, transporte SL de Estocolmo, vida sin efectivo, derecho de acceso público y enchufes C/F."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,472 @@
+{
+  "iso2": "BE",
+  "names": {
+    "tr": "Belçika",
+    "en": "Belgium",
+    "de": "Belgien",
+    "ru": "Бельгия",
+    "es": "Bélgica"
+  },
+  "capital": {
+    "value": "Brüksel",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.brussels.be",
+        "tier": 1,
+        "title": "City of Brussels"
+      }
+    ],
+    "evidence_quote": "Brussels is the capital of the Kingdom of Belgium and administrative seat of the European Union",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nbb.be",
+        "tier": 1,
+        "title": "National Bank of Belgium (NBB)"
+      }
+    ],
+    "evidence_quote": "The Euro is the official currency of Belgium as an early founding member of the Eurozone",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.belgium.be",
+        "tier": 1,
+        "title": "Belgian Federal Government"
+      }
+    ],
+    "evidence_quote": "Belgium operates on Central European Time (UTC+1) and Daylight Saving Time (UTC+2)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.elia.be",
+          "tier": 1,
+          "title": "Elia Belgian Electricity Transmission"
+        }
+      ],
+      "evidence_quote": "The nominal low-voltage domestic electricity network in Belgium is 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.elia.be",
+          "tier": 1,
+          "title": "Elia Grid System"
+        }
+      ],
+      "evidence_quote": "Standard operating frequency across the Belgian power grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://economie.fgov.be",
+          "tier": 1,
+          "title": "FPS Economy Energy Belgium"
+        }
+      ],
+      "evidence_quote": "Belgian domestic sockets are standardized on French Type E with an earthing pin and compatible Type C",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.be",
+          "tier": 1,
+          "title": "Federal Police of Belgium"
+        }
+      ],
+      "evidence_quote": "Urgent police assistance in Belgium is accessible nationwide via 101",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.be",
+          "tier": 1,
+          "title": "Federal Public Service Home Affairs Emergency 112"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue operates directly under 112 and 100",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.be",
+          "tier": 1,
+          "title": "FPS Home Affairs Belgium 112"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency calls are dispatched through unified emergency service 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.be",
+          "tier": 1,
+          "title": "FPS Home Affairs Belgium"
+        }
+      ],
+      "evidence_quote": "112 is the primary emergency telephone number in Belgium for all medical, fire, and police emergencies",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Belgium Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/belgium",
+          "tier": 1,
+          "title": "UK FCDO Belgium Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Önlem: Brüksel ve Brugge gibi turizm merkezleri güvenlidir; tren garlarında yankesiciliğe dikkat edin",
+      "en": "Exercise Increased Caution: Main cities safe; stay vigilant around major railway stations",
+      "de": "Erhöhte Vorsicht: Touristenzentren sicher; Wachsamkeit an Hauptbahnhöfen",
+      "ru": "Повышенная осторожность: туристические города безопасны, следите за вещами на вокзалах",
+      "es": "Mayor precaución: ciudades turísticas seguras; mantenga vigilancia en estaciones de tren"
+    },
+    "regional_warnings": [
+      {
+        "area": "Brussels South (Midi) & North railway station perimeters at night",
+        "level": 2,
+        "reason": "Petty theft, luggage snatching, and occasional pickpocketing",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Railway Station Guidance"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "medium",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 89.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/belgium",
+          "tier": 2,
+          "title": "Ookla Speedtest Belgium"
+        }
+      ],
+      "evidence_quote": "Belgium average mobile download speed is 89.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 142.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/belgium",
+          "tier": 2,
+          "title": "Ookla Speedtest Belgium"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Belgium averages 142.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Proximus, Orange Belgium, and BASE (Telenet). Prepaid SIM registration requires ID/passport verification under Belgian anti-terrorism legislation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bipt.be",
+          "tier": 1,
+          "title": "Belgian Institute for Postal Services and Telecommunications (BIPT)"
+        }
+      ],
+      "evidence_quote": "Mandatory identification is required prior to activation of any prepaid SIM card in Belgium",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "SNCB/NMBS",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.belgiantrain.be/en/travel-info/prepare-your-journey/sncb-app",
+        "tier": 1,
+        "title": "SNCB/NMBS Official Belgian Railway App"
+      }
+    },
+    {
+      "name": "STIB/MIVB",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.stib-mivb.be",
+        "tier": 1,
+        "title": "STIB/MIVB Brussels Metro, Tram and Bus"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/be/en/",
+        "tier": 1,
+        "title": "Uber Belgium"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-be/",
+        "tier": 1,
+        "title": "Bolt Belgium"
+      }
+    },
+    {
+      "name": "Deliveroo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://deliveroo.be",
+        "tier": 1,
+        "title": "Deliveroo Belgium"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (Katolik ~54%, Protestan/Ortodoks ~3%, Dinsiz/Seküler ~35%, İslam ~7%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statbel.fgov.be",
+          "tier": 1,
+          "title": "Statbel Belgian Federal Statistics"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism represents the historic traditional faith alongside growing secular demographics",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Belçika Ulusal Günü (21 Temmuz), Gentse Feesten, Binche Karnavalı (UNESCO), Tomorrowland Müzik Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitbelgium.com",
+          "tier": 1,
+          "title": "Visit Belgium Festivals"
+        }
+      ],
+      "evidence_quote": "Belgian National Day on July 21 commemorates the swearing-in of King Leopold I",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Brüksel Midi (Güney) tren garı çevresinde bagaj ve telefon hırsızlığına dikkat edin. Prizler Fransız standardı Tip E'dir (topraklama pimi dışarı doğrudur). Ülkede Felemenkçe, Fransızca ve Almanca olmak üzere 3 resmi dil konuşulur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.belgium.be",
+          "tier": 1,
+          "title": "Belgian Official Portal Linguistic & Safety Guide"
+        }
+      ],
+      "evidence_quote": "Belgium has three official languages: Dutch in Flanders, French in Wallonia, and German in East Cantons",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Hizmet bedeli ve KDV kanunen restoran ve otel fiyatlarına dahildir. Çok iyi servis için hesabı yukarı yuvarlamak veya 1-2 EUR bırakmak nezakettir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitbelgium.com",
+          "tier": 1,
+          "title": "Visit Belgium Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Service charges are legally included in all bills; additional tipping is entirely discretionary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Brugge Tarihi Kanalları ve Rozenhoedkaai",
+        "en": "Historic Canals of Bruges and Rozenhoedkaai",
+        "de": "Historische Kanäle von Brügge und Rozenhoedkaai",
+        "ru": "Исторические каналы Брюгге и набережная Розенхудкая",
+        "es": "Canales Históricos de Brujas y Rozenhoedkaai"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/996",
+          "tier": 1,
+          "title": "UNESCO Historic Centre of Brugge"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Brüksel Grand-Place (Grote Markt)",
+        "en": "Brussels Grand-Place (Grote Markt)",
+        "de": "Grand-Place Brüssel (Grote Markt)",
+        "ru": "Гранд-Плас в Брюсселе (Гроте-Маркт)",
+        "es": "Grand-Place de Bruselas (Grote Markt)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/857",
+          "tier": 1,
+          "title": "UNESCO La Grand-Place, Brussels"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Gent Gravensteen Kontlar Kalesi",
+        "en": "Ghent Gravensteen Castle of the Counts",
+        "de": "Gravensteen Burg der Grafen in Gent",
+        "ru": "Замок графов Фландрии Гравенстен в Генте",
+        "es": "Castillo de los Condes de Gante (Gravensteen)"
+      },
+      "type": "historic_castle",
+      "sources": [
+        {
+          "url": "https://visit.gent.be",
+          "tier": 1,
+          "title": "Visit Gent Gravensteen"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Brugge Tarihi Kanalları ve Rozenhoedkaai",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/be-480.webp",
+        "attribution_text": "Canals of Bruges at Rozenhoedkaai, Belgium. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Brugge Tarihi Kanalları ve Rozenhoedkaai, Belçika",
+          "en": "Canals of Bruges at Rozenhoedkaai, Belgium",
+          "de": "Kanäle von Brügge am Rozenhoedkaai, Belgien",
+          "ru": "Каналы Брюгге и набережная Розенхудкая, Бельгия",
+          "es": "Canales de Brujas en Rozenhoedkaai, Bélgica"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "belcika",
+      "en": "belgium",
+      "de": "belgien",
+      "ru": "belgiya",
+      "es": "belgica"
+    },
+    "title": {
+      "tr": "Belçika Vize Rehberi, Brugge ve Brüksel Seyahat Bilgileri | Vizamigo",
+      "en": "Belgium Visa Guide, Bruges & Brussels Travel Essentials | Vizamigo",
+      "de": "Belgien Visum-Leitfaden, Brügge & Brüssel Reiseführer | Vizamigo",
+      "ru": "Виза в Бельгию, Брюгге и Брюссель советы туристу | Vizamigo",
+      "es": "Guía de Visa de Bélgica, Brujas y Bruselas Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Belçika Schengen vizesi, SNCB tren uygulaması, Brugge kanalları, priz tipi E ve Brüksel seyahat tavsiyeleri.",
+      "en": "Belgium Schengen visa rules, SNCB train travel, Bruges canals, Type E plugs, and verified Brussels security tips.",
+      "de": "Belgien Schengen-Visabestimmungen, SNCB-Bahnreisen, Grachten von Brügge, Typ-E-Stecker und Brüssel-Reisetipps.",
+      "ru": "Шенгенская виза в Бельгию, поезда SNCB, каналы Брюгге, розетки типа E и советы по безопасности в Брюсселе.",
+      "es": "Requisitos de visa Schengen para Bélgica, trenes SNCB, canales de Brujas, enchufes tipo E y consejos de Bruselas."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

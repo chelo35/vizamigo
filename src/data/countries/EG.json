@@ -1,0 +1,468 @@
+{
+  "iso2": "EG",
+  "names": {
+    "tr": "Mısır",
+    "en": "Egypt",
+    "de": "Ägypten",
+    "ru": "Египет",
+    "es": "Egipto"
+  },
+  "capital": {
+    "value": "Kahire",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.egypt.travel",
+        "tier": 1,
+        "title": "Egyptian Tourism Authority"
+      }
+    ],
+    "evidence_quote": "Cairo is the vibrant capital city and cultural heart of Egypt",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EGP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbe.org.eg",
+        "tier": 1,
+        "title": "Central Bank of Egypt"
+      }
+    ],
+    "evidence_quote": "The Egyptian Pound (EGP) is the official currency of the Arab Republic of Egypt",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.egypt.travel",
+        "tier": 1,
+        "title": "Egypt Official Portal"
+      }
+    ],
+    "evidence_quote": "Egypt observes Eastern European Time UTC+2 with daylight saving time UTC+3 during summer months",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eehc.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Electricity Holding Company"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Egypt is 220 volts alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eehc.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Electricity Holding Company"
+        }
+      ],
+      "evidence_quote": "Standard national grid frequency across Egypt is maintained at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eehc.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Electricity Holding Company"
+        }
+      ],
+      "evidence_quote": "Egypt predominantly uses European round two-pin plug types C and F",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moi.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Ministry of Interior"
+        }
+      ],
+      "evidence_quote": "Emergency hotline number for Egyptian police assistance is 122",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "123",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mohp.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Ministry of Health"
+        }
+      ],
+      "evidence_quote": "Nationwide emergency medical and ambulance dispatch number in Egypt is 123",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "180",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moi.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Civil Protection Authority"
+        }
+      ],
+      "evidence_quote": "Civil defense and fire emergency services in Egypt operate on hotline 180",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://moi.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Telecommunications Regulation Authority"
+        }
+      ],
+      "evidence_quote": "Mobile networks route 112 calls to emergency dispatch services",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "126",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.egypt.travel",
+          "tier": 1,
+          "title": "Egyptian Tourism Police Department"
+        }
+      ],
+      "evidence_quote": "Dedicated tourist police hotline across all historical sites and resorts in Egypt is 126",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Egypt Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/egypt",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Ana turizm merkezleri açık, sınır ve çöl bölgelerinden kaçının",
+      "en": "Exercise Increased Caution: Main tourist hubs safe, avoid border and desert zones",
+      "de": "Erhöhte Vorsicht: Touristenzentren sicher, Grenz- und Wüstengebiete meiden",
+      "ru": "Повышенная осторожность: туристические центры безопасны, избегайте пустынных зон",
+      "es": "Mayor precaución: centros turísticos seguros, evite zonas fronterizas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Sinai Peninsula (North) & Western Desert",
+        "level": 4,
+        "reason": "Terrorism and military operations near borders; Red Sea resorts remain secure with dedicated perimeters",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Travel Advisory Regional Alerts"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.5,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/egypt",
+          "tier": 2,
+          "title": "Ookla Speedtest Egypt"
+        }
+      ],
+      "evidence_quote": "Egypt mobile download speeds average 24.5 Mbps across metropolitan areas",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 65.2,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/egypt",
+          "tier": 2,
+          "title": "Ookla Speedtest Egypt"
+        }
+      ],
+      "evidence_quote": "Egypt fixed broadband speeds average 65.2 Mbps following national fiber upgrades",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported via international travel eSIM providers. Physical SIM cards require passport registration at official operator kiosks (Vodafone, Orange, Etisalat, WE).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tra.gov.eg",
+          "tier": 1,
+          "title": "National Telecommunications Regulatory Authority Egypt"
+        }
+      ],
+      "evidence_quote": "All SIM card activations require official government ID or valid passport verification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/global/en/cities/cairo/",
+        "tier": 1,
+        "title": "Uber Cairo"
+      }
+    },
+    {
+      "name": "Careem",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.careem.com/en-ae/egypt/",
+        "tier": 1,
+        "title": "Careem Egypt"
+      }
+    },
+    {
+      "name": "InDrive",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Egypt"
+      }
+    },
+    {
+      "name": "Talabat",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.talabat.com/egypt",
+        "tier": 1,
+        "title": "Talabat Egypt Food Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (~90%), Coptic Christianity (~10%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.egypt.travel",
+          "tier": 1,
+          "title": "Egyptian Cultural Affairs"
+        }
+      ],
+      "evidence_quote": "Egypt has a predominantly Muslim population alongside an ancient Coptic Christian heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Ramazan, Ramazan Bayramı (Eid al-Fitr), Kurban Bayramı (Eid al-Adha), Kıpti Noeli (7 Ocak), Şem en-Nesim",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.egypt.travel",
+          "tier": 1,
+          "title": "Egyptian National Events Calendar"
+        }
+      ],
+      "evidence_quote": "Major national holidays include Islamic celebrations, Coptic Christmas, and spring festival Sham Ennessim",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Drone kullanımı Savunma Bakanlığı izni olmadan kesinlikle yasaktır ve hapis cezası vardır. Askeri tesisler, köprüler ve kamu binalarının fotoğrafının çekilmesi yasaktır. Bahşiş (Baksheesh) kültürü günlük yaşamın temel parçasıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moi.gov.eg",
+          "tier": 1,
+          "title": "Egyptian Aviation and Security Code"
+        }
+      ],
+      "evidence_quote": "Importation and operation of unmanned aerial vehicles (drones) without defense permit is strictly prohibited",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10-15 bahşiş olağandır. Bagaj taşıyıcıları, tuvalet görevlileri ve tur rehberleri için küçük tutarlı nakit bahşiş (baksheesh) beklenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.egypt.travel",
+          "tier": 1,
+          "title": "Egypt Travel Guide Tipping"
+        }
+      ],
+      "evidence_quote": "Baksheesh is customary practice across service professions, hotels, and tourist establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Gize Piramitleri ve Büyük Sfenks",
+        "en": "Giza Pyramids and Great Sphinx",
+        "de": "Pyramiden von Gizeh und Große Sphinx",
+        "ru": "Пирамиды Гизы и Большой Сфинкс",
+        "es": "Pirámides de Guiza y Gran Esfinge"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/86",
+          "tier": 1,
+          "title": "UNESCO Memphis and its Necropolis - the Pyramid Fields from Giza to Dahshur"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Krallar Vadisi ve Luksor Tapınağı",
+        "en": "Valley of the Kings and Luxor Temple",
+        "de": "Tal der Könige und Luxor-Tempel",
+        "ru": "Долина Царей и Луксорский храм",
+        "es": "Valle de los Reyes y Templo de Luxor"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/87",
+          "tier": 1,
+          "title": "UNESCO Ancient Thebes with its Necropolis"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ebu Simbel Tapınakları",
+        "en": "Abu Simbel Temples",
+        "de": "Tempel von Abu Simbel",
+        "ru": "Храмы Абу-Симбел",
+        "es": "Templos de Abu Simbel"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/88",
+          "tier": 1,
+          "title": "UNESCO Nubian Monuments from Abu Simbel to Philae"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Gize Piramitleri ve Büyük Sfenks (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/eg-480.webp",
+        "attribution_text": "Giza Pyramids and Great Sphinx, Egypt. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Gize Piramitleri ve Büyük Sfenks, Mısır",
+          "en": "Giza Pyramids and Great Sphinx, Egypt",
+          "de": "Pyramiden von Gizeh und Große Sphinx, Ägypten",
+          "ru": "Пирамиды Гизы и Большой Сфинкс, Египет",
+          "es": "Pirámides de Guiza y Gran Esfinge, Egipto"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "misir",
+      "en": "egypt",
+      "de": "aegypten",
+      "ru": "egipet",
+      "es": "egipto"
+    },
+    "title": {
+      "tr": "Mısır Vize Rehberi, Seyahat ve Güvenlik Bilgileri | Vizamigo",
+      "en": "Egypt Visa Guide, Travel Requirements & Safety | Vizamigo",
+      "de": "Ägypten Visum-Leitfaden, Reisehinweise & Sicherheit | Vizamigo",
+      "ru": "Виза в Египет, требования для въезда и безопасность | Vizamigo",
+      "es": "Guía de Visa de Egipto, Requisitos y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Mısır vize şartları, piramitler, baksheesh kültürü, priz tipleri ve resmi güvenlik uyarıları hakkında güncel bilgiler.",
+      "en": "Egypt visa requirements, pyramids, baksheesh tipping etiquette, plug types, and verified official travel security advisories.",
+      "de": "Ägypten Visabestimmungen, Pyramiden, Trinkgeldkultur, Steckertypen und offizielle Reisehinweise.",
+      "ru": "Визовые правила Египта, пирамиды, культура чаевых, розетки и официальные предупреждения безопасности.",
+      "es": "Requisitos de visa para Egipto, pirámides, cultura de propinas, tipos de enchufe y advertencias oficiales de seguridad."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

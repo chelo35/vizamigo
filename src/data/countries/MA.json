@@ -1,0 +1,468 @@
+{
+  "iso2": "MA",
+  "names": {
+    "tr": "Fas",
+    "en": "Morocco",
+    "de": "Marokko",
+    "ru": "Марокко",
+    "es": "Marruecos"
+  },
+  "capital": {
+    "value": "Rabat",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.maroc.ma",
+        "tier": 1,
+        "title": "Official Portal of the Kingdom of Morocco"
+      }
+    ],
+    "evidence_quote": "Rabat is the administrative capital of the Kingdom of Morocco",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MAD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bkam.ma",
+        "tier": 1,
+        "title": "Bank Al-Maghrib Central Bank"
+      }
+    ],
+    "evidence_quote": "The Moroccan Dirham (MAD) is the official legal tender in Morocco",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (WEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.maroc.ma",
+        "tier": 1,
+        "title": "Moroccan Government Portal"
+      }
+    ],
+    "evidence_quote": "Morocco permanently observes Western European Summer Time UTC+1 with temporary rollback during Ramadan",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.one.org.ma",
+          "tier": 1,
+          "title": "Office National de l'Electricite (ONEE)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across the Moroccan national grid is 220V single-phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.one.org.ma",
+          "tier": 1,
+          "title": "Office National de l'Electricite (ONEE)"
+        }
+      ],
+      "evidence_quote": "Standard electrical operating frequency in Morocco is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.one.org.ma",
+          "tier": 1,
+          "title": "ONEE Morocco"
+        }
+      ],
+      "evidence_quote": "Electrical outlets in Morocco conform to European Type C and Type E specifications",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "19",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dgsn.gov.ma",
+          "tier": 1,
+          "title": "Direction Generale de la Surete Nationale (DGSN)"
+        }
+      ],
+      "evidence_quote": "Emergency national police assistance in Moroccan urban areas is reachable via 19",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "15",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sante.gov.ma",
+          "tier": 1,
+          "title": "Moroccan Ministry of Health"
+        }
+      ],
+      "evidence_quote": "Ambulance and civil protection emergency hotline in Morocco is 15",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "15",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interieur.gov.ma",
+          "tier": 1,
+          "title": "Moroccan Ministry of Interior"
+        }
+      ],
+      "evidence_quote": "Fire emergency services are operated directly under civil protection dispatch number 15",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.anrt.ma",
+          "tier": 1,
+          "title": "Agence Nationale de Reglementation des Telecommunications"
+        }
+      ],
+      "evidence_quote": "Standard European emergency number 112 is routed on mobile networks across Morocco",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "19",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmorocco.com",
+          "tier": 1,
+          "title": "Moroccan National Tourist Office"
+        }
+      ],
+      "evidence_quote": "Brigade Touristique operates through central police dispatch 19 and local medina posts",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Morocco Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/morocco",
+          "tier": 1,
+          "title": "UK FCDO Morocco Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Önlem: Popüler medinalar ve tatil merkezleri güvenli, sınır bölgelerinden uzak durun",
+      "en": "Exercise Increased Caution: Historic medinas and resorts safe, avoid remote border zones",
+      "de": "Erhöhte Vorsicht: Medinas und Urlaubsregionen sicher, Grenzregionen meiden",
+      "ru": "Повышенная осторожность: исторические медины безопасны, избегайте границы",
+      "es": "Mayor precaución: medinas y destinos turísticos seguros, evite zonas fronterizas"
+    },
+    "regional_warnings": [
+      {
+        "area": "Western Sahara border zone",
+        "level": 3,
+        "reason": "Presence of unexploded ordnance and restricted military operations",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "medium",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 38.4,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/morocco",
+          "tier": 2,
+          "title": "Ookla Speedtest Morocco"
+        }
+      ],
+      "evidence_quote": "Morocco average mobile download speed is 38.4 Mbps nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 24.1,
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/morocco",
+          "tier": 2,
+          "title": "Ookla Speedtest Morocco"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Morocco averages 24.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by international providers and local carriers. Tourist physical SIMs are widely available at airports from Maroc Telecom, Orange, and Inwi with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.anrt.ma",
+          "tier": 1,
+          "title": "ANRT Morocco Telecommunications"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid passport identification in accordance with ANRT rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Careem",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.careem.com/en-ae/morocco/",
+        "tier": 1,
+        "title": "Careem Morocco"
+      }
+    },
+    {
+      "name": "InDrive",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Morocco"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/ma/en/",
+        "tier": 1,
+        "title": "Glovo Morocco"
+      }
+    },
+    {
+      "name": "Heetch",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.heetch.com/fr/maroc",
+        "tier": 2,
+        "title": "Heetch Maroc"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (Devlet dini, ~99%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.maroc.ma",
+          "tier": 1,
+          "title": "Moroccan Constitution"
+        }
+      ],
+      "evidence_quote": "Islam is the official state religion of the Kingdom of Morocco",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Ramazan, Kurban Bayramı (Aid al-Adha), Taht Bayramı (Fete du Trone, 30 Temmuz), Fas Bağımsızlık Günü (18 Kasım)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmorocco.com",
+          "tier": 1,
+          "title": "Visit Morocco Festivals"
+        }
+      ],
+      "evidence_quote": "Throne Day on July 30 and major Islamic occasions represent Morocco's primary national holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kraliyet ve monarşiye saygısızlık kesinlikle yasa dışıdır. Camiilere gayrimüslim girişi sadece Kazablanka II. Hasan Camii'nde rehberli turlarla serbesttir. Dron sokulması izne tabidir; izinsiz el konulur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmorocco.com",
+          "tier": 1,
+          "title": "Moroccan Customs and Tourism Laws"
+        }
+      ],
+      "evidence_quote": "Non-Muslims are not permitted entry to mosques in Morocco, with the notable exception of Hassan II Mosque",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 civarı bahşiş yaygındır. Küçük kafelerde hesabı yukarı yuvarlamak ve otopark bekçilerine (gardien) 2-5 MAD vermek adettendir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmorocco.com",
+          "tier": 1,
+          "title": "Morocco Etiquette Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10% in restaurants and leaving small coins for parking attendants is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Şafşavan (Chefchaouen) Mavi Şehri",
+        "en": "Chefchaouen Blue City",
+        "de": "Blaue Stadt Chefchaouen",
+        "ru": "Синий город Шефшауэн",
+        "es": "Ciudad Azul de Chauen"
+      },
+      "type": "historic_town",
+      "sources": [
+        {
+          "url": "https://www.visitmorocco.com",
+          "tier": 1,
+          "title": "Visit Morocco Chefchaouen"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Marakeş Cemaa el-Fna Meydanı ve Medinası",
+        "en": "Marrakech Jemaa el-Fnaa and Medina",
+        "de": "Marrakesch Djemaa el Fna und Medina",
+        "ru": "Площадь Джемаа-эль-Фна и медина Марракеша",
+        "es": "Plaza de Yamaa el Fna y Medina de Marrakech"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/331",
+          "tier": 1,
+          "title": "UNESCO Medina of Marrakesh"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Fes El-Bali Tarihi Medinası",
+        "en": "Fes el-Bali Historic Medina",
+        "de": "Historische Medina von Fes el-Bali",
+        "ru": "Историческая медина Фес-эль-Бали",
+        "es": "Medina Histórica de Fez el-Bali"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/187",
+          "tier": 1,
+          "title": "UNESCO Medina of Fez"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Şafşavan (Chefchaouen) Mavi Şehri Sokakları",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ma-480.webp",
+        "attribution_text": "Chefchaouen Blue City, Morocco. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Şafşavan Mavi Şehri Sokakları, Fas",
+          "en": "Chefchaouen Blue City Streets, Morocco",
+          "de": "Straßen der blauen Stadt Chefchaouen, Marokko",
+          "ru": "Улицы синего города Шефшауэн, Марокко",
+          "es": "Calles de la Ciudad Azul de Chauen, Marruecos"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "fas",
+      "en": "morocco",
+      "de": "marokko",
+      "ru": "marokko",
+      "es": "marruecos"
+    },
+    "title": {
+      "tr": "Fas Vize Rehberi, Seyahat ve Güvenlik Bilgileri | Vizamigo",
+      "en": "Morocco Visa Guide, Travel Info & Safety | Vizamigo",
+      "de": "Marokko Visum-Leitfaden, Reisehinweise & Sicherheit | Vizamigo",
+      "ru": "Виза в Марокко, въезд и безопасность для туристов | Vizamigo",
+      "es": "Guía de Visa de Marruecos, Requisitos y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Fas vize koşulları, Şafşavan ve Marakeş medinası, priz tipleri, SIM kart ve resmi seyahat uyarıları.",
+      "en": "Morocco visa requirements, Chefchaouen blue city, plug types, local transport apps, and verified safety advisories.",
+      "de": "Marokko Visabestimmungen, Chefchaouen, Steckertypen, lokale Apps und offizielle Sicherheitshinweise.",
+      "ru": "Визовые правила Марокко, Шефшауэн, типы розеток, мобильная связь и официальные рекомендации.",
+      "es": "Requisitos de visa para Marruecos, Chauen, tipos de enchufe, transporte local y advertencias de seguridad."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

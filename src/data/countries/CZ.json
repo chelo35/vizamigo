@@ -1,0 +1,467 @@
+{
+  "iso2": "CZ",
+  "names": {
+    "tr": "Çekya",
+    "en": "Czech Republic",
+    "de": "Tschechien",
+    "ru": "Чехия",
+    "es": "Chequia"
+  },
+  "capital": {
+    "value": "Prag",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.praha.eu",
+        "tier": 1,
+        "title": "City of Prague Official Portal"
+      }
+    ],
+    "evidence_quote": "Prague is the historic capital and largest city of the Czech Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CZK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cnb.cz",
+        "tier": 1,
+        "title": "Czech National Bank (ČNB)"
+      }
+    ],
+    "evidence_quote": "The Czech Koruna (CZK) is the official currency of the Czech Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cmi.cz",
+        "tier": 1,
+        "title": "Czech Metrology Institute"
+      }
+    ],
+    "evidence_quote": "The Czech Republic observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ceps.cz",
+          "tier": 1,
+          "title": "ČEPS Czech Electricity Transmission System"
+        }
+      ],
+      "evidence_quote": "The low voltage distribution grid in the Czech Republic operates at 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ceps.cz",
+          "tier": 1,
+          "title": "ČEPS Czech Republic"
+        }
+      ],
+      "evidence_quote": "Nominal power grid frequency in the Czech Republic is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ceps.cz",
+          "tier": 1,
+          "title": "ČEPS Plug Standards"
+        }
+      ],
+      "evidence_quote": "Czech electrical outlets follow French Type E standards featuring an earth pin, compatible with Type C",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "158",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policie.cz",
+          "tier": 1,
+          "title": "Police of the Czech Republic (Policie ČR)"
+        }
+      ],
+      "evidence_quote": "State police emergency telephone number in the Czech Republic is 158",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "155",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zzshmp.cz",
+          "tier": 1,
+          "title": "Medical Rescue Service Prague"
+        }
+      ],
+      "evidence_quote": "Medical rescue and ambulance emergency number across Czechia is 155",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "150",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hzscr.cz",
+          "tier": 1,
+          "title": "Fire Rescue Service of the Czech Republic"
+        }
+      ],
+      "evidence_quote": "Fire brigade emergency dispatch operates directly on hotline 150",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hzscr.cz",
+          "tier": 1,
+          "title": "Czech Integrated Rescue System 112"
+        }
+      ],
+      "evidence_quote": "The 112 European emergency call line is operated by the Fire Rescue Service with multi-language dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "156",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mpprague.cz",
+          "tier": 1,
+          "title": "Prague Municipal Police (Městská policie)"
+        }
+      ],
+      "evidence_quote": "Municipal police handling city patrols and public order in tourist areas is reached at 156",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Czechia Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/czech-republic",
+          "tier": 1,
+          "title": "UK FCDO Czech Republic Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Çekya dünyanın en barışçıl ve güvenli 10 ülkesi arasındadır",
+      "en": "Normal Precautions: Czechia consistently ranks among the top 10 most peaceful nations",
+      "de": "Normale Vorsicht: Tschechien gehört zu den zehn friedlichsten Ländern der Welt",
+      "ru": "Обычные меры: Чехия входит в десятку самых мирных стран мира",
+      "es": "Precauciones normales: Chequia se ubica entre las 10 naciones más pacíficas del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 72.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/czech-republic",
+          "tier": 2,
+          "title": "Ookla Speedtest Czech Republic"
+        }
+      ],
+      "evidence_quote": "Czech mobile download speeds average 72.1 Mbps with robust nationwide 4G and 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 92.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/czech-republic",
+          "tier": 2,
+          "title": "Ookla Speedtest Czech Republic"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Czechia averages 92.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by T-Mobile CZ, O2, and Vodafone CZ. EU Roam Like at Home applies for EU travellers. Prepaid SIMs are widely sold at newsagents (Trafika) and airports.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ctu.eu",
+          "tier": 1,
+          "title": "Czech Telecommunication Office (ČTÚ)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM cards are available without contract; EU roaming regulations protect consumers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "PID Lítačka",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://app.pidlitacka.cz",
+        "tier": 1,
+        "title": "PID Lítačka Prague Integrated Transport"
+      }
+    },
+    {
+      "name": "Mapy.cz",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://en.mapy.cz",
+        "tier": 1,
+        "title": "Mapy.cz Exceptional Czech Offline Maps"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-cz/",
+        "tier": 1,
+        "title": "Bolt Czechia"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/cz/en/",
+        "tier": 1,
+        "title": "Uber Prague"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/cze",
+        "tier": 1,
+        "title": "Wolt Czech Republic"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Seküler/Dinsiz (~70%), Roma Katolikliği (~10%), Protestanlık (~1%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.czso.cz",
+          "tier": 1,
+          "title": "Czech Statistical Office Census"
+        }
+      ],
+      "evidence_quote": "The Czech Republic has one of the least religious and most secular populations in the world",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bağımsız Çekoslovakya Günü (28 Ekim), Kadife Devrim Günü (17 Kasım), Paskalya (Velikonoce), Prag Baharı Uluslararası Müzik Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitczechia.com",
+          "tier": 1,
+          "title": "Visit Czechia Holidays"
+        }
+      ],
+      "evidence_quote": "October 28 celebrating the founding of Czechoslovakia and November 17 are key national holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Sokakta döviz bozdurmak kesinlikle yasaktır ve sahte para dolandırıcılığıdır; resmi döviz büroları veya banka ATM'leri kullanılmalıdır. Euronet ATM'lerinin 'Dinamik Kur Dönüşümü' (DCC) tuzağından kaçının. Prag Karl Köprüsü ve Astronomik Saat çevresinde yankesicilere dikkat edin.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cnb.cz",
+          "tier": 1,
+          "title": "Czech National Bank Currency Warning"
+        }
+      ],
+      "evidence_quote": "Street currency exchange is illegal; always use certified bureau de change or reputable bank ATMs",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda memnun kalındığında hesabı %10 civarında yukarı yuvarlamak teamüldür. Garsona nakit olarak elden verilmesi veya karta ekletilmesi yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitczechia.com",
+          "tier": 1,
+          "title": "Visit Czechia Etiquette"
+        }
+      ],
+      "evidence_quote": "Rounding up the bill to roughly 10 percent is polite custom in Czech restaurants",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Prag Karl Köprüsü ve Prag Kalesi",
+        "en": "Charles Bridge and Prague Castle",
+        "de": "Karlsbrücke und Prager Burg",
+        "ru": "Карлов мост и Пражский град",
+        "es": "Puente de Carlos y Castillo de Praga"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/616",
+          "tier": 1,
+          "title": "UNESCO Historic Centre of Prague"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Eski Şehir Meydanı ve Astronomik Saat",
+        "en": "Old Town Square and Astronomical Clock",
+        "de": "Altstädter Ring und Astronomische Uhr",
+        "ru": "Староместская площадь и Астрономические часы",
+        "es": "Plaza de la Ciudad Vieja y Reloj Astronómico"
+      },
+      "type": "historic_monument",
+      "sources": [
+        {
+          "url": "https://www.visitczechia.com",
+          "tier": 1,
+          "title": "Visit Czechia Old Town"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Český Krumlov Tarihi Merkezi",
+        "en": "Historic Centre of Český Krumlov",
+        "de": "Historisches Zentrum von Krumau",
+        "ru": "Исторический центр Чески-Крумлова",
+        "es": "Centro Histórico de Český Krumlov"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/617",
+          "tier": 1,
+          "title": "UNESCO Historic Centre of Cesky Krumlov"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Prag Karl Köprüsü ve Prag Kalesi",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/cz-480.webp",
+        "attribution_text": "Charles Bridge and Prague Castle, Czechia. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Karl Köprüsü ve Prag Kalesi, Çekya",
+          "en": "Charles Bridge and Prague Castle, Czechia",
+          "de": "Karlsbrücke und Prager Burg, Tschechien",
+          "ru": "Карлов мост и Пражский град, Чехия",
+          "es": "Puente de Carlos y Castillo de Praga, Chequia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "cekya",
+      "en": "czech-republic",
+      "de": "tschechien",
+      "ru": "chekhiya",
+      "es": "chequia"
+    },
+    "title": {
+      "tr": "Çekya Vize Rehberi, Prag Seyahat ve Güvenlik Bilgileri | Vizamigo",
+      "en": "Czech Republic Visa Guide, Prague Travel & Safety | Vizamigo",
+      "de": "Tschechien Visum-Leitfaden, Prag Reiseführer & Sicherheit | Vizamigo",
+      "ru": "Виза в Чехию, Прага советы туристам и безопасность | Vizamigo",
+      "es": "Guía de Visa de Chequia, Praga Consejos y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Çekya Schengen vize şartları, PID Lítačka biletleri, Mapy.cz çevrimdışı haritası, döviz dolandırıcılığı uyarıları ve Prag rehberi.",
+      "en": "Czechia Schengen visa rules, PID Lítačka transport, Mapy.cz offline mapping, exchange scam warnings, and verified Prague advice.",
+      "de": "Tschechien Schengen-Visaregeln, PID Lítačka Tickets, Mapy.cz Offline-Karten, Geldwechsel-Warnungen und Prag-Tipps.",
+      "ru": "Шенгенская виза в Чехию, билеты PID Lítačka, карты Mapy.cz, предостережения об обменниках и гид по Праге.",
+      "es": "Requisitos de visa Schengen para Chequia, billetes PID Lítačka, mapas Mapy.cz, avisos de cambio de divisas y guía de Praga."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

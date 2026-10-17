@@ -1,0 +1,451 @@
+{
+  "iso2": "CH",
+  "names": {
+    "tr": "İsviçre",
+    "en": "Switzerland",
+    "de": "Schweiz",
+    "ru": "Швейцария",
+    "es": "Suiza"
+  },
+  "capital": {
+    "value": "Bern",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.admin.ch",
+        "tier": 1,
+        "title": "The Federal Council of Switzerland"
+      }
+    ],
+    "evidence_quote": "Bern is the federal city and seat of the government of Switzerland",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CHF",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.snb.ch",
+        "tier": 1,
+        "title": "Swiss National Bank (SNB)"
+      }
+    ],
+    "evidence_quote": "The Swiss Franc (CHF) is the official currency of Switzerland and Liechtenstein",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.metas.ch",
+        "tier": 1,
+        "title": "Federal Institute of Metrology (METAS)"
+      }
+    ],
+    "evidence_quote": "Switzerland observes Central European Time (UTC+1) and Daylight Saving Time (UTC+2)",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.estit.ch",
+          "tier": 1,
+          "title": "Federal Inspectorate for Heavy Current Installations (ESTI)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical voltage in Switzerland is 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.estit.ch",
+          "tier": 1,
+          "title": "ESTI Switzerland"
+        }
+      ],
+      "evidence_quote": "Electrical frequency throughout the Swiss grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "J",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.estit.ch",
+          "tier": 1,
+          "title": "ESTI Swiss Plugs Standard SN 441011"
+        }
+      ],
+      "evidence_quote": "Switzerland uses Type J 3-pin plugs; standard 2-pin Europlug Type C fits Swiss sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fedpol.admin.ch",
+          "tier": 1,
+          "title": "Federal Office of Police (fedpol)"
+        }
+      ],
+      "evidence_quote": "Swiss police emergency number nationwide is 117",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "144",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bag.admin.ch",
+          "tier": 1,
+          "title": "Federal Office of Public Health (FOPH)"
+        }
+      ],
+      "evidence_quote": "Emergency medical rescue and ambulance in Switzerland is reached via 144",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.feuerwehr-koordination.ch",
+          "tier": 1,
+          "title": "Swiss Fire Service Coordination"
+        }
+      ],
+      "evidence_quote": "Fire brigade emergency dispatch number across Switzerland is 118",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bakom.admin.ch",
+          "tier": 1,
+          "title": "Federal Office of Communications (OFCOM)"
+        }
+      ],
+      "evidence_quote": "The European emergency number 112 connects directly to cantonal emergency dispatchers",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Switzerland Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/switzerland",
+          "tier": 1,
+          "title": "UK FCDO Switzerland Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: İsviçre dünyanın en güvenli ülkelerinden biridir",
+      "en": "Normal Precautions: Switzerland is one of the safest countries globally",
+      "de": "Normale Vorsicht: Die Schweiz ist eines der sichersten Länder weltweit",
+      "ru": "Обычные меры предосторожности: Швейцария одна из самых безопасных стран мира",
+      "es": "Precauciones normales: Suiza es uno de los países más seguros del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 142.3,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/switzerland",
+          "tier": 2,
+          "title": "Ookla Speedtest Switzerland"
+        }
+      ],
+      "evidence_quote": "Switzerland mobile download speed averages 142.3 Mbps supported by extensive 5G coverage",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 235.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/switzerland",
+          "tier": 2,
+          "title": "Ookla Speedtest Switzerland"
+        }
+      ],
+      "evidence_quote": "Swiss fixed broadband download speed averages 235.1 Mbps on high-speed fiber",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is widely supported. Swisscom, Sunrise, and Salt offer prepaid tourist SIMs. Note that Switzerland is not in the EU, so EU roaming rules may not apply on some home carrier packages.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bakom.admin.ch",
+          "tier": 1,
+          "title": "OFCOM Mobile Roaming Regulations"
+        }
+      ],
+      "evidence_quote": "Switzerland is not bound by EU Roam Like at Home regulations; verify provider roaming rates",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "SBB Mobile",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.sbb.ch/en/timetable/mobile-apps/sbb-mobile.html",
+        "tier": 1,
+        "title": "SBB Mobile Swiss Federal Railways"
+      }
+    },
+    {
+      "name": "Twint",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.twint.ch",
+        "tier": 1,
+        "title": "TWINT Swiss Payment App"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/ch/en/",
+        "tier": 1,
+        "title": "Uber Switzerland"
+      }
+    },
+    {
+      "name": "Just Eat CH",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.just-eat.ch",
+        "tier": 1,
+        "title": "Just Eat Switzerland"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (Katolik ~34%, Protestan/Reform ~22%, Dinsiz ~34%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bfs.admin.ch",
+          "tier": 1,
+          "title": "Federal Statistical Office FSO Switzerland"
+        }
+      ],
+      "evidence_quote": "Switzerland reflects a diverse religious landscape alongside growing secular demographics",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "İsviçre Ulusal Günü (1 Ağustos), Basel Karnavalı (Fasnacht), Zürih Sechseläuten, Cenevre Escalade",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.myswitzerland.com",
+          "tier": 1,
+          "title": "Switzerland Tourism Events"
+        }
+      ],
+      "evidence_quote": "Swiss National Day on August 1 is celebrated across all 26 cantons with fireworks and bonfires",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "İsviçre Priz Tipi J standardındadır; Schuko kalın topraklı fişler adaptörsüz girmez. Pazar günleri ve saat 22:00'den sonra sessizlik kuralları (Ruhezeit) çok sıkı uygulanır. Çöplerin geri dönüşüm kurallarına ayrılması zorunludur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ch.ch",
+          "tier": 1,
+          "title": "Swiss Authorities Living Guide"
+        }
+      ],
+      "evidence_quote": "Cantonal quiet hours and comprehensive waste recycling regulations are strictly enforced",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Servis ücreti kanunen restoran ve otel fiyatlarına dahildir. İyi servis için hesabı yukarı yuvarlamak (%5-10) nezaket gereğidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.myswitzerland.com",
+          "tier": 1,
+          "title": "Switzerland Tourism Tipping"
+        }
+      ],
+      "evidence_quote": "Service is legally included in all prices by Swiss federal law; tipping is voluntary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Lauterbrunnen Vadisi ve Staubbach Şelalesi",
+        "en": "Lauterbrunnen Valley and Staubbach Falls",
+        "de": "Lauterbrunnental und Staubbachfall",
+        "ru": "Долина Лаутербруннен и водопад Штауббах",
+        "es": "Valle de Lauterbrunnen y Cascadas de Staubbach"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.myswitzerland.com",
+          "tier": 1,
+          "title": "Switzerland Tourism Lauterbrunnen"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Matterhorn Dağı ve Zermatt",
+        "en": "Matterhorn Peak and Zermatt",
+        "de": "Matterhorn und Zermatt",
+        "ru": "Пик Маттерхорн и Церматт",
+        "es": "Pico Cervino (Matterhorn) y Zermatt"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.myswitzerland.com",
+          "tier": 1,
+          "title": "Switzerland Tourism Matterhorn"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Luzern Şapel Köprüsü (Kapellbrücke)",
+        "en": "Lucerne Chapel Bridge (Kapellbrücke)",
+        "de": "Luzerner Kapellbrücke",
+        "ru": "Часовенный мост Капелльбрюкке в Люцерне",
+        "es": "Puente de la Capilla de Lucerna (Kapellbrücke)"
+      },
+      "type": "historic_monument",
+      "sources": [
+        {
+          "url": "https://www.myswitzerland.com",
+          "tier": 1,
+          "title": "Switzerland Tourism Lucerne"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Lauterbrunnen Vadisi ve Staubbach Şelalesi",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ch-480.webp",
+        "attribution_text": "Lauterbrunnen Valley and Staubbach Falls, Switzerland. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Lauterbrunnen Vadisi ve Staubbach Şelalesi, İsviçre",
+          "en": "Lauterbrunnen Valley and Staubbach Falls, Switzerland",
+          "de": "Lauterbrunnental und Staubbachfall, Schweiz",
+          "ru": "Долина Лаутербруннен и водопад Штауббах, Швейцария",
+          "es": "Valle de Lauterbrunnen y cascada Staubbach, Suiza"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "isvicre",
+      "en": "switzerland",
+      "de": "schweiz",
+      "ru": "shveytsariya",
+      "es": "suiza"
+    },
+    "title": {
+      "tr": "İsviçre Vize Rehberi, Seyahat ve Güvenlik Bilgileri | Vizamigo",
+      "en": "Switzerland Visa Guide, Travel Pass & Safety | Vizamigo",
+      "de": "Schweiz Visum-Leitfaden, Reisen & Sicherheit | Vizamigo",
+      "ru": "Виза в Швейцарию, требования к въезду и безопасность | Vizamigo",
+      "es": "Guía de Visa de Suiza, Requisitos y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İsviçre Schengen vize şartları, SBB tren uygulaması, priz tipi J, roaming kuralları ve Lauterbrunnen seyahat rehberi.",
+      "en": "Switzerland Schengen visa rules, SBB train travel, Type J plugs, non-EU roaming tips, and verified safety information.",
+      "de": "Schweiz Schengen-Visabestimmungen, SBB-Bahnreisen, Typ-J-Stecker, Roaming-Hinweise und verifizierte Sicherheitsdaten.",
+      "ru": "Шенгенская виза в Швейцарию, поезда SBB, розетки типа J, особенности роуминга и информация о безопасности.",
+      "es": "Requisitos de visa Schengen para Suiza, viajes en tren SBB, enchufes tipo J, consejos de roaming e información verificada."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,457 @@
+{
+  "iso2": "KR",
+  "names": {
+    "tr": "Güney Kore",
+    "en": "South Korea",
+    "de": "Südkorea",
+    "ru": "Южная Корея",
+    "es": "Corea del Sur"
+  },
+  "capital": {
+    "value": "Seul",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://english.seoul.go.kr",
+        "tier": 1,
+        "title": "Seoul Metropolitan Government"
+      }
+    ],
+    "evidence_quote": "Seoul is the capital city and economic hub of the Republic of Korea",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "KRW",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bok.or.kr",
+        "tier": 1,
+        "title": "Bank of Korea"
+      }
+    ],
+    "evidence_quote": "The Korean Won (KRW) is the national legal tender of South Korea",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+9 (KST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.kriss.re.kr",
+        "tier": 1,
+        "title": "Korea Research Institute of Standards and Science"
+      }
+    ],
+    "evidence_quote": "Korea Standard Time is nine hours ahead of UTC without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://home.kepco.co.kr",
+          "tier": 1,
+          "title": "Korea Electric Power Corporation (KEPCO)"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity in Korea is supplied at 220 volts",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://home.kepco.co.kr",
+          "tier": 1,
+          "title": "KEPCO Korea"
+        }
+      ],
+      "evidence_quote": "Power grid frequency across South Korea operates at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://home.kepco.co.kr",
+          "tier": 1,
+          "title": "KEPCO Plug Standard"
+        }
+      ],
+      "evidence_quote": "South Korea utilizes European-style Type C and Type F round two-pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.go.kr",
+          "tier": 1,
+          "title": "Korean National Police Agency"
+        }
+      ],
+      "evidence_quote": "Emergency police telephone number in South Korea is 112 with translation service",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nfa.go.kr",
+          "tier": 1,
+          "title": "National Fire Agency South Korea"
+        }
+      ],
+      "evidence_quote": "Emergency medical and ambulance rescue in South Korea is operated through 119",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nfa.go.kr",
+          "tier": 1,
+          "title": "National Fire Agency South Korea"
+        }
+      ],
+      "evidence_quote": "Fire response and emergency rescue calls are dispatched via 119",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.go.kr",
+          "tier": 1,
+          "title": "Korean National Police Agency"
+        }
+      ],
+      "evidence_quote": "Central emergency dispatch coordination connects through 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1330",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Korea Tourism Organization 1330 Helpline"
+        }
+      ],
+      "evidence_quote": "Korea Travel Hotline 1330 provides 24/7 tourist assistance and interpretation in multiple languages",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept South Korea Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/south-korea",
+          "tier": 1,
+          "title": "UK FCDO South Korea Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Güney Kore dünyanın en güvenli ülkelerindendir",
+      "en": "Normal Precautions: South Korea maintains exceptional public safety",
+      "de": "Normale Vorsicht: Südkorea hat ein weltweit führendes Sicherheitsniveau",
+      "ru": "Обычные меры: Южная Корея одна из самых безопасных стран мира",
+      "es": "Precauciones normales: Corea del Sur mantiene una seguridad pública excepcional"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 145.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/south-korea",
+          "tier": 2,
+          "title": "Ookla Speedtest South Korea"
+        }
+      ],
+      "evidence_quote": "South Korea mobile 5G download speed averages 145.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 162.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/south-korea",
+          "tier": 2,
+          "title": "Ookla Speedtest South Korea"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Korea averages 162.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is fully supported by SK Telecom, KT, and LG U+. Incheon Airport has dedicated 24/7 pickup desks for unlimited tourist data SIMs and Wi-Fi egg routers.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Visit Korea SIM & Wi-Fi Guide"
+        }
+      ],
+      "evidence_quote": "Airport telecommunication counters offer prepaid SIMs and pocket Wi-Fi with passport verification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Kakao T",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.kakaomobility.com",
+        "tier": 1,
+        "title": "Kakao Mobility Kakao T"
+      }
+    },
+    {
+      "name": "Naver Map",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://map.naver.com",
+        "tier": 1,
+        "title": "Naver Map (Google Maps driving navigation is restricted)"
+      }
+    },
+    {
+      "name": "KakaoMap",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://map.kakao.com",
+        "tier": 1,
+        "title": "KakaoMap Korea"
+      }
+    },
+    {
+      "name": "Baemin",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.baemin.com",
+        "tier": 1,
+        "title": "Baedal Minjok Korea"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Dinsiz/Seküler (~50%), Protestanlık (~20%), Budizm (~16%), Katoliklik (~8%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://kostat.go.kr",
+          "tier": 1,
+          "title": "Statistics Korea Census"
+        }
+      ],
+      "evidence_quote": "South Korean religious demographics show a prominent secular segment alongside Christian and Buddhist traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Chuseok (Kore Şükran Günü), Seollal (Ay Takvimi Yeni Yılı), Lotus Fener Festivali, Boryeong Çamur Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Visit Korea Festivals"
+        }
+      ],
+      "evidence_quote": "Chuseok and Seollal are the two most important traditional family holidays in South Korea",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Bahşiş kültürü KESİNLİKLE YOKTUR; bahşiş bırakmak kaba ve garip karşılanabilir. Google Haritalar ulusal güvenlik yasaları nedeniyle araç navigasyonunda sınırlıdır; Naver Map veya KakaoMap kullanın. Uyuşturucuya sıfır tolerans vardır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Visit Korea Etiquette"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in South Korea and may be politely declined; spatial data laws restrict foreign map navigation",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş beklenmez ve verilmez. Fiyatlara tüm vergiler dahildir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Korea Tourism Organization Tipping"
+        }
+      ],
+      "evidence_quote": "There is no tipping culture in South Korea across restaurants, taxis, or hotels",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Gyeongbokgung Sarayı ve Gwanghwamun Kapısı",
+        "en": "Gyeongbokgung Palace and Gwanghwamun",
+        "de": "Gyeongbokgung-Palast und Gwanghwamun-Tor",
+        "ru": "Дворец Кёнбоккун и ворота Кванхвамун",
+        "es": "Palacio Gyeongbokgung y Puerta Gwanghwamun"
+      },
+      "type": "historic_palace",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Visit Korea Gyeongbokgung"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "N Seul Kulesi ve Namsan Parkı",
+        "en": "N Seoul Tower and Namsan Park",
+        "de": "N Seoul Tower und Namsan-Park",
+        "ru": "Башня N Seoul и парк Намсан",
+        "es": "Torre N de Seúl y Parque Namsan"
+      },
+      "type": "city_landmark",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Visit Korea N Seoul Tower"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Bukchon Hanok Köyü",
+        "en": "Bukchon Hanok Village",
+        "de": "Bukchon Hanok-Dorf",
+        "ru": "Деревня Букчон Ханок",
+        "es": "Aldea Hanok de Bukchon"
+      },
+      "type": "cultural_heritage",
+      "sources": [
+        {
+          "url": "https://english.visitkorea.or.kr",
+          "tier": 1,
+          "title": "Visit Korea Bukchon Hanok"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Gyeongbokgung Sarayı Gwanghwamun Kapısı ve Dağlar, Seul",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/kr-480.webp",
+        "attribution_text": "Gyeongbokgung Palace Gwanghwamun, Seoul, South Korea. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Gyeongbokgung Sarayı ve Gwanghwamun Kapısı, Seul, Güney Kore",
+          "en": "Gyeongbokgung Palace and Gwanghwamun Gate, Seoul, South Korea",
+          "de": "Gyeongbokgung-Palast und Gwanghwamun-Tor, Seoul, Südkorea",
+          "ru": "Дворец Кёнбоккун и ворота Кванхвамун, Сеул, Южная Корея",
+          "es": "Palacio Gyeongbokgung y Puerta Gwanghwamun, Seúl, Corea del Sur"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "guney-kore",
+      "en": "south-korea",
+      "de": "suedkorea",
+      "ru": "yuzhnaya-koreya",
+      "es": "corea-del-sur"
+    },
+    "title": {
+      "tr": "Güney Kore Vize Rehberi, K-ETA ve Seyahat Bilgileri | Vizamigo",
+      "en": "South Korea Visa Guide, K-ETA & Travel Information | Vizamigo",
+      "de": "Südkorea Visum-Leitfaden, K-ETA & Reisehinweise | Vizamigo",
+      "ru": "Виза в Южную Корею, K-ETA и советы путешественникам | Vizamigo",
+      "es": "Guía de Visa de Corea del Sur, K-ETA y Viajes | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Güney Kore K-ETA şartları, Naver Map kullanımı, bahşiş kuralları, priz tipleri ve Seul seyahat rehberi.",
+      "en": "South Korea K-ETA entry rules, Naver Map guidance, no-tipping etiquette, plug types, and verified Seoul travel insights.",
+      "de": "Südkorea K-ETA-Bestimmungen, Naver Map Leitfaden, Trinkgeldverzicht, Steckertypen und Seoul-Reiseführer.",
+      "ru": "Правила въезда K-ETA в Южную Корею, навигация Naver Map, отсутствие чаевых, розетки и гид по Сеулу.",
+      "es": "Requisitos de entrada K-ETA para Corea del Sur, navegación con Naver Map, etiqueta sin propinas y guía de Seúl."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
