@@ -492,6 +492,474 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
         de: 'Bei Vorlage des Flugtickets wird das vorläufige Reisedokument (ETD) ausgestellt.'
       }
     }
+  },
+
+  // Kanada (Global Affairs Canada)
+  CA: {
+    passportCode: 'CA',
+    countryName: { tr: 'Kanada', en: 'Canada', de: 'Kanada' },
+    ministryName: {
+      tr: 'Kanada Küresel İlişkiler Bakanlığı (Global Affairs Canada)',
+      en: 'Global Affairs Canada (Affaires mondiales Canada)',
+      de: 'Global Affairs Canada'
+    },
+    crisisCenterTitle: {
+      tr: 'Acil İzleme ve Müdahale Merkezi (EWRC 24/7)',
+      en: 'Emergency Watch and Response Centre (EWRC 24/7)',
+      de: 'Notfall- und Krisenreaktionszentrum (EWRC 24/7)'
+    },
+    hotline247: '+1 613 996 8885',
+    hotlineDomestic: '1-800-387-3124 (Kanada & ABD)',
+    officialPortalUrl: 'https://travel.gc.ca',
+    officialPortalName: 'Travel.gc.ca (Resmî Kanada Seyahat Portalı)',
+    emergencyDocName: {
+      tr: 'Geçici Seyahat Belgesi (Emergency Travel Document / ETD)',
+      en: 'Emergency Travel Document (ETD) / Special Passport',
+      de: 'Notreisedokument (Emergency Travel Document)'
+    },
+    emergencyDocValidity: {
+      tr: 'Doğrudan Kanada’ya tek yönlü dönüş için azami süreli geçerlidir.',
+      en: 'Valid exclusively for urgent travel or direct repatriation to Canada.',
+      de: 'Gültig ausschließlich für die direkte Rückreise nach Kanada.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerel polise kayıp/çalıntı bildirimi yaparak vaka numarası ve tutanak alın.',
+        en: 'File an official police report immediately and obtain a case incident number.',
+        de: 'Erstatten Sie bei der örtlichen Polizei eine Verlustanzeige und sichern Sie das Aktenzeichen.'
+      },
+      photos: {
+        tr: 'Kanada pasaport standartlarına uygun 2 adet fotoğraf edinin.',
+        en: 'Obtain 2 recent passport photos conforming to Canadian passport specifications.',
+        de: 'Halten Sie 2 aktuelle Passfotos nach kanadischen Vorgaben bereit.'
+      },
+      embassySubmission: {
+        tr: 'En yakın Kanada Büyükelçiliği veya Başkonsolosluğu ile irtibata geçin.',
+        en: 'Proceed to the nearest Canadian Embassy, High Commission, or Consulate.',
+        de: 'Suchen Sie die nächste kanadische Botschaft oder das Generalkonsulat auf.'
+      },
+      travelDocIssuance: {
+        tr: 'Güvenlik incelemesinin ardından tek yönlü dönüş için Acil Seyahat Belgesi verilir.',
+        en: 'Following identity and security verification, an Emergency Travel Document is issued.',
+        de: 'Nach Identitätsprüfung wird ein Notreisedokument für den Rückflug ausgestellt.'
+      }
+    }
+  },
+
+  // Avustralya (DFAT)
+  AU: {
+    passportCode: 'AU',
+    countryName: { tr: 'Avustralya', en: 'Australia', de: 'Australien' },
+    ministryName: {
+      tr: 'Avustralya Dışişleri ve Ticaret Bakanlığı (DFAT)',
+      en: 'Department of Foreign Affairs and Trade (DFAT)',
+      de: 'Ministerium für Auswärtige Angelegenheiten und Handel (DFAT)'
+    },
+    crisisCenterTitle: {
+      tr: 'Konsolosluk Acil Durum Merkezi (CEC 24/7)',
+      en: 'Consular Emergency Centre (CEC 24/7)',
+      de: 'Konsularisches Notfallzentrum (CEC 24/7)'
+    },
+    hotline247: '+61 2 6261 3305',
+    hotlineDomestic: '1300 555 135 (Avustralya içi)',
+    officialPortalUrl: 'https://www.smartraveller.gov.au',
+    officialPortalName: 'Smartraveller (smartraveller.gov.au)',
+    emergencyDocName: {
+      tr: 'Acil Pasaport (Emergency Passport / Provisional Travel Document)',
+      en: 'Emergency Passport (EP)',
+      de: 'Notfallreisepass (Emergency Passport)'
+    },
+    emergencyDocValidity: {
+      tr: 'Genellikle 7 ay veya seyahat ihtiyacına göre azami 12 ay sürelidir.',
+      en: 'Usually valid for 7 months (up to 12 months) for urgent travel.',
+      de: 'In der Regel 7 Monate gültig für dringende Reisezwecke.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerel polis merkezinden resmi kayıp/çalıntı tutanağı (Police Report) temin edin.',
+        en: 'Report the theft or loss to local police and secure a written report.',
+        de: 'Melden Sie den Verlust der Polizei und fordern Sie einen schriftlichen Bericht an.'
+      },
+      photos: {
+        tr: 'Avustralya standartlarında 2 adet biyometrik vesikalık fotoğraf hazırlayın.',
+        en: 'Provide 2 Australian standard passport photographs.',
+        de: 'Halten Sie 2 Passfotos nach australischem Standard bereit.'
+      },
+      embassySubmission: {
+        tr: 'En yakın Avustralya Büyükelçiliği veya Yüksek Komiserliğine müracaat edin.',
+        en: 'Contact the nearest Australian Embassy, High Commission, or Consulate.',
+        de: 'Wenden Sie sich an die nächste australische Auslandsvertretung.'
+      },
+      travelDocIssuance: {
+        tr: 'Başvuru onaylandıktan sonra havalimanı için Acil Pasaport düzenlenir.',
+        en: 'An Emergency Passport is produced to facilitate urgent departure.',
+        de: 'Ein Notpass wird für die Weiter- oder Heimreise ausgehändigt.'
+      }
+    }
+  },
+
+  // İsviçre (EDA / DFAE)
+  CH: {
+    passportCode: 'CH',
+    countryName: { tr: 'İsviçre', en: 'Switzerland', de: 'Schweiz' },
+    ministryName: {
+      tr: 'İsviçre Federal Dışişleri Bakanlığı (EDA / DFAE)',
+      en: 'Federal Department of Foreign Affairs (FDFA / EDA)',
+      de: 'Eidgenössisches Departement für auswärtige Angelegenheiten (EDA)'
+    },
+    crisisCenterTitle: {
+      tr: 'EDA Yardım Hattı & Konsolosluk Kriz Masası (7/24)',
+      en: 'FDFA Helpline & Consular Crisis Operations (24/7)',
+      de: 'EDA-Helpline & Konsularischer Krisenstab (24/7)'
+    },
+    hotline247: '+41 800 24 7 365',
+    hotlineDomestic: '0800 24 7 365 (İsviçre içi)',
+    officialPortalUrl: 'https://www.eda.admin.ch',
+    officialPortalName: 'EDA Helpline Portalı (eda.admin.ch)',
+    emergencyDocName: {
+      tr: 'Geçici Pasaport (Notpass / Passeport d’urgence)',
+      en: 'Provisional Passport (Emergency Passport / Notpass)',
+      de: 'Provisorischer Pass (Notpass)'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca planlanan seyahat süresince, azami 12 ay geçerlidir.',
+      en: 'Valid exclusively for the planned trip, maximum 12 months.',
+      de: 'Gültig ausschließlich für die geplante Reise, maximal 12 Monate.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Olay yerindeki polisten resmi kayıp/çalıntı tutanağı alın.',
+        en: 'Obtain an official loss or theft certificate from local police authorities.',
+        de: 'Erstatten Sie bei der örtlichen Polizei eine Verlustmeldung.'
+      },
+      photos: {
+        tr: 'İsviçre normlarına uygun 1 adet güncel pasaport fotoğrafı getirin.',
+        en: 'Provide 1 recent passport photo complying with Swiss biometric standards.',
+        de: 'Halten Sie 1 Passfoto nach Schweizer Kriterien bereit.'
+      },
+      embassySubmission: {
+        tr: 'En yakın İsviçre Temsilciliğine (Botschaft / Konsulat) başvurun.',
+        en: 'Visit the nearest Swiss representation (Embassy or Consulate General).',
+        de: 'Suchen Sie die nächste Schweizer Vertretung (Botschaft/Konsulat) auf.'
+      },
+      travelDocIssuance: {
+        tr: 'Temsilcilik acil seyahat için Geçici Pasaport düzenler.',
+        en: 'The Swiss mission issues a provisional emergency passport.',
+        de: 'Die Vertretung stellt einen provisorischen Notpass aus.'
+      }
+    }
+  },
+
+  // Hollanda (Ministerie van Buitenlandse Zaken)
+  NL: {
+    passportCode: 'NL',
+    countryName: { tr: 'Hollanda', en: 'Netherlands', de: 'Niederlande' },
+    ministryName: {
+      tr: 'Hollanda Dışişleri Bakanlığı (BZ)',
+      en: 'Ministry of Foreign Affairs of the Netherlands (BZ)',
+      de: 'Niederländisches Außenministerium (BZ)'
+    },
+    crisisCenterTitle: {
+      tr: '7/24 BZ İletişim Merkezi & Konsolosluk Kriz Masası',
+      en: '24/7 BZ Contact Centre & Consular Crisis Hub',
+      de: '24/7 BZ-Kontaktzentrum & Konsularischer Krisenstab'
+    },
+    hotline247: '+31 247 247 247',
+    hotlineDomestic: '0247 247 247 (Hollanda içi)',
+    officialPortalUrl: 'https://www.nederlandwereldwijd.nl',
+    officialPortalName: 'Nederland Wereldwijd (nederlandwereldwijd.nl)',
+    emergencyDocName: {
+      tr: 'Acil Pasaport / Laissez-Passer (Noodpaspoort)',
+      en: 'Emergency Passport (Noodpaspoort) / Laissez-passer',
+      de: 'Notpass (Noodpaspoort) / Laissez-Passer'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca acil seyahatin gerçekleştirilmesi için sınırlı sürelidir.',
+      en: 'Valid strictly for the duration of the emergency journey home.',
+      de: 'Gültig nur für die Dauer der unaufschiebbaren Reise.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerel polisten resmi tutanak (Politierapport) alın.',
+        en: 'Request an official police report from the local law enforcement station.',
+        de: 'Fordern Sie ein offizielles Polizeiprotokoll an.'
+      },
+      photos: {
+        tr: 'Hollanda standartlarına uygun 2 adet pasaport fotoğrafı bulundurun.',
+        en: 'Supply 2 recent photographs meeting Dutch passport criteria.',
+        de: 'Halten Sie 2 Passbilder nach niederländischer Passnorm bereit.'
+      },
+      embassySubmission: {
+        tr: 'Hollanda Büyükelçiliği veya Başkonsolosluğu ile randevulaşın/başvurun.',
+        en: 'Proceed to the nearest Dutch Embassy or Consulate General.',
+        de: 'Wenden Sie sich an die niederländische Botschaft oder das Generalkonsulat.'
+      },
+      travelDocIssuance: {
+        tr: 'Şartlar karşılandığında Noodpaspoort teslim edilir.',
+        en: 'An emergency passport (Noodpaspoort) is issued upon verification.',
+        de: 'Nach Prüfung wird ein Noodpaspoort ausgestellt.'
+      }
+    }
+  },
+
+  // İspanya (MAEC)
+  ES: {
+    passportCode: 'ES',
+    countryName: { tr: 'İspanya', en: 'Spain', de: 'Spanien' },
+    ministryName: {
+      tr: 'İspanya Dışişleri, AB ve İşbirliği Bakanlığı (MAEC)',
+      en: 'Ministry of Foreign Affairs, European Union and Cooperation (MAEC)',
+      de: 'Ministerium für Auswärtige Angelegenheiten (MAEC)'
+    },
+    crisisCenterTitle: {
+      tr: 'Konsolosluk Acil Durum Birimi (UEC 7/24)',
+      en: 'Consular Emergency Unit (Unidad de Emergencia Consular 24/7)',
+      de: 'Konsularische Notfalleinheit (UEC 24/7)'
+    },
+    hotline247: '+34 91 379 97 00',
+    hotlineDomestic: '91 379 97 00',
+    officialPortalUrl: 'https://www.exteriores.gob.es',
+    officialPortalName: 'MAEC Portal Consular (exteriores.gob.es)',
+    emergencyDocName: {
+      tr: 'Salvoconducto (İspanya’ya Dönüş Seyahat Belgesi)',
+      en: 'Emergency Travel Document (Salvoconducto)',
+      de: 'Notfall-Reisedokument (Salvoconducto)'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca İspanya’ya doğrudan tek yönlü dönüş için (azami 48-72 saat) geçerlidir.',
+      en: 'Valid exclusively for direct single-entry return to Spain (usually 48-72 hours).',
+      de: 'Gültig ausschließlich für die direkte Rückreise nach Spanien.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerel polise başvurarak kayıp/hırsızlık şikayet tutanağı (Denuncia) çıkartın.',
+        en: 'Report the incident at the nearest police station and request a Denuncia.',
+        de: 'Erstatten Sie bei der örtlichen Polizei eine Diebstahl- oder Verlustanzeige.'
+      },
+      photos: {
+        tr: 'Açık fonlu 2 adet vesikalık fotoğraf hazırlayın.',
+        en: 'Carry 2 standard passport photographs with a light background.',
+        de: 'Halten Sie 2 biometrische Passfotos bereit.'
+      },
+      embassySubmission: {
+        tr: 'En yakın İspanya Büyükelçiliği veya Başkonsolosluğu acil servisine başvurun.',
+        en: 'Head directly to the Spanish Embassy or Consulate General consular desk.',
+        de: 'Sprechen Sie beim spanischen Konsulat oder der Botschaft vor.'
+      },
+      travelDocIssuance: {
+        tr: 'Uçak biletiniz doğrulanarak derhal "Salvoconducto" tanzim edilir.',
+        en: 'Following airline booking confirmation, a Salvoconducto is issued immediately.',
+        de: 'Nach Vorlage des Tickets wird das Salvoconducto unverzüglich ausgestellt.'
+      }
+    }
+  },
+
+  // İsveç (UD)
+  SE: {
+    passportCode: 'SE',
+    countryName: { tr: 'İsveç', en: 'Sweden', de: 'Schweden' },
+    ministryName: {
+      tr: 'İsveç Dışişleri Bakanlığı (Utrikesdepartementet - UD)',
+      en: 'Ministry for Foreign Affairs of Sweden (UD)',
+      de: 'Schwedisches Außenministerium (UD)'
+    },
+    crisisCenterTitle: {
+      tr: 'UD-Jouren (7/24 Konsolosluk Kriz Masası)',
+      en: 'UD-Jouren (24/7 Consular Crisis & Emergency Desk)',
+      de: 'UD-Jouren (24/7 Konsularischer Notdienst)'
+    },
+    hotline247: '+46 8 405 50 05',
+    hotlineDomestic: '08-405 50 05 (İsveç içi)',
+    officialPortalUrl: 'https://www.regeringen.se/ud',
+    officialPortalName: 'Sweden Abroad (swedenabroad.se)',
+    emergencyDocName: {
+      tr: 'Provisoriskt Pass (Geçici Acil Pasaport)',
+      en: 'Provisional Passport (Provisoriskt pass)',
+      de: 'Provisorischer Pass (Provisoriskt pass)'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca acil seyahat veya doğrudan İsveç’e dönüş süresince geçerlidir.',
+      en: 'Valid exclusively for the duration of the emergency trip home.',
+      de: 'Gültig ausschließlich für die Dauer der unaufschiebbaren Reise.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerel polisten resmi kayıp tutanağı (Polisanmälan) alın.',
+        en: 'File a police report and obtain a copy of the official loss notification.',
+        de: 'Erstatten Sie bei der örtlichen Polizei eine Verlustanzeige.'
+      },
+      photos: {
+        tr: '2 adet güncel vesikalık fotoğraf temin edin.',
+        en: 'Supply 2 recent biometric photos.',
+        de: 'Halten Sie 2 aktuelle Passfotos bereit.'
+      },
+      embassySubmission: {
+        tr: 'İsveç Büyükelçiliği veya Başkonsolosluğu ile temas kurun.',
+        en: 'Visit the nearest Swedish Embassy or Consulate.',
+        de: 'Suchen Sie die schwedische Vertretung auf.'
+      },
+      travelDocIssuance: {
+        tr: 'Temsilcilik acil dönüş için Provisoriskt Pass düzenler.',
+        en: 'The mission produces a provisional passport for your repatriation.',
+        de: 'Die Vertretung stellt einen provisorischen Pass für die Heimreise aus.'
+      }
+    }
+  },
+
+  // Norveç (UD)
+  NO: {
+    passportCode: 'NO',
+    countryName: { tr: 'Norveç', en: 'Norway', de: 'Norwegen' },
+    ministryName: {
+      tr: 'Norveç Dışişleri Bakanlığı (Utenriksdepartementet - UD)',
+      en: 'Ministry of Foreign Affairs of Norway (UD)',
+      de: 'Norwegisches Außenministerium (UD)'
+    },
+    crisisCenterTitle: {
+      tr: 'UD Operasyon Merkezi & Kriz Destek Hattı (7/24)',
+      en: 'UD 24/7 Operations Centre & Consular Crisis Unit',
+      de: 'UD 24/7 Notfallzentrum & Konsularischer Krisendienst'
+    },
+    hotline247: '+47 23 95 00 00',
+    hotlineDomestic: '23 95 00 00 (Norveç içi)',
+    officialPortalUrl: 'https://www.regjeringen.no/ud',
+    officialPortalName: 'Reiseklar UD (regjeringen.no/ud)',
+    emergencyDocName: {
+      tr: 'Nødpass (Acil Durum Pasaportu)',
+      en: 'Emergency Passport (Nødpass)',
+      de: 'Notpass (Nødpass)'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca tek bir seyahat için geçerli olup dönüşte polise teslim edilmelidir.',
+      en: 'Valid exclusively for a single journey; must be surrendered on arrival.',
+      de: 'Gültig nur für eine einzige Reise; muss bei Rückkehr abgegeben werden.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerel polise başvurarak kayıp belgesi alın.',
+        en: 'Obtain an official loss receipt from local police.',
+        de: 'Sichern Sie sich eine polizeiliche Verlustbestätigung.'
+      },
+      photos: {
+        tr: '2 adet onaylı biyometrik fotoğraf hazırlayın.',
+        en: 'Prepare 2 passport photos according to Norwegian standards.',
+        de: 'Halten Sie 2 vorschriftsmäßige Passfotos bereit.'
+      },
+      embassySubmission: {
+        tr: 'En yakın Norveç Büyükelçiliğine başvurun.',
+        en: 'Contact the nearest Norwegian Embassy or Consulate.',
+        de: 'Wenden Sie sich an die norwegische Auslandsvertretung.'
+      },
+      travelDocIssuance: {
+        tr: 'Nødpass belgesi düzenlenerek teslim edilir.',
+        en: 'An emergency passport (Nødpass) is prepared for repatriation.',
+        de: 'Ein Nødpass wird für die Rückkehr ausgestellt.'
+      }
+    }
+  },
+
+  // Brezilya (Itamaraty)
+  BR: {
+    passportCode: 'BR',
+    countryName: { tr: 'Brezilya', en: 'Brazil', de: 'Brasilien' },
+    ministryName: {
+      tr: 'Brezilya Dışişleri Bakanlığı (Itamaraty)',
+      en: 'Ministry of Foreign Affairs of Brazil (Itamaraty)',
+      de: 'Brasilianisches Außenministerium (Itamaraty)'
+    },
+    crisisCenterTitle: {
+      tr: 'Vatandaş Yardım Merkezi & Konsolosluk Nöbeti (7/24)',
+      en: 'Consular Assistance & Emergency Duty Desk (Plantão Consular 24/7)',
+      de: 'Konsularischer Bereitschaftsdienst (Plantão Consular 24/7)'
+    },
+    hotline247: '+55 61 98260 0610',
+    hotlineDomestic: '(61) 98260-0610 (Brezilya içi)',
+    officialPortalUrl: 'https://www.gov.br/mre',
+    officialPortalName: 'Portal Consular Itamaraty (gov.br/mre)',
+    emergencyDocName: {
+      tr: 'Brezilya’ya Dönüş İzni (Autorização de Retorno ao Brasil - ARB)',
+      en: 'Authorization of Return to Brazil (ARB) / Emergency Passport',
+      de: 'Rückreisegenehmigung nach Brasilien (ARB) / Notpass'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca Brezilya’ya tek yönlü doğrudan dönüş için geçerlidir.',
+      en: 'Valid solely for direct one-way return to Brazilian territory.',
+      de: 'Gültig ausschließlich für die direkte Rückreise nach Brasilien.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Olay yerindeki polisten resmi şikayet tutanağı (Boletim de Ocorrência / Police Report) alın.',
+        en: 'Request an official police report (Police Report) from local police.',
+        de: 'Erstatten Sie Anzeige bei der örtlichen Polizei.'
+      },
+      photos: {
+        tr: '2 adet güncel vesikalık fotoğraf hazırlayın.',
+        en: 'Prepare 2 recent passport-format photos.',
+        de: 'Halten Sie 2 aktuelle Passfotos bereit.'
+      },
+      embassySubmission: {
+        tr: 'Brezilya Büyükelçiliği veya Başkonsolosluğuna acil müracaat edin.',
+        en: 'Present your case to the Brazilian Embassy or Consulate General.',
+        de: 'Sprechen Sie beim brasilianischen Konsulat oder der Botschaft vor.'
+      },
+      travelDocIssuance: {
+        tr: 'Uçuşunuz teyit edildikten sonra ücretsiz ARB belgesi tanzim edilir.',
+        en: 'Upon flight verification, the ARB document is issued free of charge.',
+        de: 'Nach Ticketprüfung wird das ARB-Dokument kostenfrei ausgestellt.'
+      }
+    }
+  },
+
+  // Azerbaycan (XİN)
+  AZ: {
+    passportCode: 'AZ',
+    countryName: { tr: 'Azerbaycan', en: 'Azerbaijan', de: 'Aserbaidschan' },
+    ministryName: {
+      tr: 'Azerbaycan Cumhuriyeti Dışişleri Bakanlığı (XİN)',
+      en: 'Ministry of Foreign Affairs of the Republic of Azerbaijan',
+      de: 'Außenministerium der Republik Aserbaidschan'
+    },
+    crisisCenterTitle: {
+      tr: 'Konsulluk İdarəsi Qaynar Xətti (7/24)',
+      en: 'MFA Consular Department Emergency Hotline (24/7)',
+      de: 'Konsularische Notrufhotline des Außenministeriums (24/7)'
+    },
+    hotline247: '+994 12 596 90 00',
+    hotlineDomestic: '(012) 596 90 00 (Bakü)',
+    officialPortalUrl: 'https://mfa.gov.az',
+    officialPortalName: 'XİN Konsulluq Xidməti (mfa.gov.az)',
+    emergencyDocName: {
+      tr: 'Qayıdış Şəhadətnaməsi (Azerbaycan’a Dönüş Belgesi)',
+      en: 'Certificate of Return to Azerbaijan (Qayıdış Şəhadətnaməsi)',
+      de: 'Rückkehrbescheinigung nach Aserbaidschan'
+    },
+    emergencyDocValidity: {
+      tr: 'Yalnızca Azerbaycan’a tek yönlü doğrudan dönüş için 15-30 gün geçerlidir.',
+      en: 'Valid exclusively for direct return travel to Azerbaijan within 15-30 days.',
+      de: 'Gültig ausschließlich für die direkte Rückreise nach Aserbaidschan.'
+    },
+    steps: {
+      policeReport: {
+        tr: 'Yerli polis orqanından pasportun itməsi/oğurlanması barədə arayış alın.',
+        en: 'Obtain an official certificate of passport loss from local police.',
+        de: 'Fordern Sie bei der örtlichen Polizei eine Verlustbescheinigung an.'
+      },
+      photos: {
+        tr: 'Ağ fonda çəkilmiş 2 ədəd biometrik fotoşəkil hazırlayın.',
+        en: 'Provide 2 recent biometric photos with a white background.',
+        de: 'Halten Sie 2 biometrische Passfotos bereit.'
+      },
+      embassySubmission: {
+        tr: 'Ən yaxın Azərbaycan Səfirliyinə və ya Baş Konsulluğuna müraciət edin.',
+        en: 'Contact the nearest Embassy or Consulate General of Azerbaijan.',
+        de: 'Wenden Sie sich an die aserbaidschanische Botschaft oder das Konsulat.'
+      },
+      travelDocIssuance: {
+        tr: 'Təcili qayıdış üçün rəsmi "Qayıdış Şəhadətnaməsi" təqdim olunur.',
+        en: 'A Certificate of Return is issued to enable prompt travel back to Azerbaijan.',
+        de: 'Eine Rückkehrbescheinigung wird für die Heimreise ausgestellt.'
+      }
+    }
   }
 };
 
