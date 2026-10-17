@@ -55,7 +55,8 @@ import {
   Droplets,
   ShieldAlert,
   Receipt,
-  Printer
+  Printer,
+  Volume2
 } from 'lucide-react';
 import {
   getCountryName,
@@ -285,6 +286,62 @@ export const CountryDossierModal: React.FC<CountryDossierModalProps> = ({
     setCopiedPhrase(id);
     setTimeout(() => setCopiedPhrase(null), 2000);
   };
+
+  const [speakingPhraseIdx, setSpeakingPhraseIdx] = useState<number | null>(null);
+
+  const handleSpeak = (text: string, idx: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSpeakingPhraseIdx(idx);
+
+    const cleanText = text.split('/')[0].trim();
+
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      try {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(cleanText);
+        utterance.rate = 0.85;
+        utterance.onend = () => setSpeakingPhraseIdx(null);
+        utterance.onerror = () => setSpeakingPhraseIdx(null);
+        window.speechSynthesis.speak(utterance);
+        return;
+      } catch {
+        // Fallback
+      }
+    }
+
+    try {
+      const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=${encodeURIComponent(cleanText)}&tl=auto`;
+      const audio = new Audio(audioUrl);
+      audio.onended = () => setSpeakingPhraseIdx(null);
+      audio.onerror = () => setSpeakingPhraseIdx(null);
+      audio.play().catch(() => setSpeakingPhraseIdx(null));
+    } catch {
+      setSpeakingPhraseIdx(null);
+    }
+  };
+
+  const normalizedPhrases = useMemo(() => {
+    const list = [...(encyclopedia?.language?.phrases || [])];
+    if (list.length === 5) {
+      list.push({
+        phrase: ['RS', 'BA', 'ME', 'AL', 'MK', 'XK', 'BG', 'HR', 'SI'].includes(code)
+          ? 'Doviđenja / Mirupafshim'
+          : ['IT', 'ES', 'PT', 'GR'].includes(code)
+          ? 'Arrivederci / Ciao / Adiós'
+          : ['FR', 'BE', 'CH'].includes(code)
+          ? 'Au revoir / À bientôt'
+          : ['DE', 'AT'].includes(code)
+          ? 'Auf Wiedersehen / Tschüss'
+          : ['JP', 'KR', 'CN'].includes(code)
+          ? 'Sayonara / Annyeong'
+          : l('Güle güle / Hoşça kalın', 'Goodbye / Farewell', 'Auf Wiedersehen', 'Adiós', 'До свидания'),
+        meaning: l('Hoşça kalın / Güle güle', 'Goodbye / See you', 'Auf Wiedersehen', 'Adiós / Hasta luego', 'До свидания'),
+        translation: l('Hoşça kalın', 'Goodbye', 'Tschüss'),
+        pronunciation: l('Güle güle', 'Gud-bay', 'Auf vi-der-ze-hen')
+      });
+    }
+    return list;
+  }, [encyclopedia?.language?.phrases, code, language]);
 
   const handleCopyItinerary = () => {
     if (!itinerary) return;
@@ -1798,25 +1855,25 @@ Planlayan: Vizamigo (vizamigo.com)`;
                   </span>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {nomadApps.map((app, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-2xl bg-slate-50/80 dark:bg-white/[0.02] border border-slate-200/70 dark:border-white/10 hover:border-indigo-400/50 transition-all flex flex-col justify-between space-y-2.5"
+                      className="p-4 rounded-2xl bg-white dark:bg-white/[0.03] border border-slate-200/80 dark:border-white/10 hover:border-slate-300 dark:hover:border-white/20 transition-all flex flex-col justify-between space-y-3.5 shadow-2xs"
                     >
                       <div>
                         <div className="flex items-center justify-between gap-2">
-                          <span className="font-black text-slate-900 dark:text-white text-sm">
+                          <span className="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base">
                             {app.name}
                           </span>
-                          <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/20">
+                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/20">
                             {language === 'tr' ? app.categoryLabelTr : app.categoryLabelEn}
                           </span>
                         </div>
-                        <div className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 mt-1">
+                        <div className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 mt-1.5">
                           {language === 'tr' ? app.taglineTr : app.taglineEn}
                         </div>
-                        <p className="text-xs sm:text-sm text-slate-500 dark:text-[#8E9DBE] mt-1 leading-relaxed">
+                        <p className="text-xs sm:text-sm text-slate-500 dark:text-[#8E9DBE] mt-1.5 leading-relaxed">
                           {language === 'tr' ? app.recommendedReasonTr : app.recommendedReasonEn}
                         </p>
                       </div>
@@ -1825,10 +1882,16 @@ Planlayan: Vizamigo (vizamigo.com)`;
                         href={app.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 font-bold text-xs border border-slate-200 dark:border-slate-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors"
+                        className="inline-flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-900 dark:bg-white/10 text-white font-bold text-xs hover:bg-[#0D9488] dark:hover:bg-[#0D9488] transition-all shadow-2xs group/btn cursor-pointer"
                       >
-                        <span>{l('Uygulamayı Aç / İndir', 'Open / Download App', 'App öffnen / laden')}</span>
-                        <ExternalLink className="w-3 h-3" />
+                        <span className="flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          <span>{l('İndirimli Rezervasyon & İncele', 'Book Deal & Open App', 'Günstig Buchen & Öffnen')}</span>
+                        </span>
+                        <span className="flex items-center gap-1 font-mono text-[11px] text-teal-300 dark:text-teal-400 group-hover/btn:translate-x-0.5 transition-transform">
+                          <span>{app.name}</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </span>
                       </a>
                     </div>
                   ))}
@@ -2253,31 +2316,57 @@ Planlayan: Vizamigo (vizamigo.com)`;
                     {l('Tıklayarak kopyalayın', 'Click to copy', 'Zum Kopieren klicken')}
                   </span>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
-                  {encyclopedia.language.phrases.map((phraseItem, idx) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                  {normalizedPhrases.map((phraseItem, idx) => (
                     <div
                       key={idx}
                       onClick={() => handleCopy(phraseItem.phrase, `phrase-${idx}`)}
-                      className="p-3.5 rounded-xl bg-white dark:bg-slate-900/90 border border-teal-200/80 dark:border-teal-700/50 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-md transition-all cursor-pointer group relative"
+                      className="p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200/80 dark:border-white/10 hover:border-[#0D9488] dark:hover:border-[#2DD4BF] hover:shadow-xs transition-all cursor-pointer group relative flex flex-col justify-between"
                     >
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                          {phraseItem.phrase}
+                      <div>
+                        <div className="flex items-start justify-between gap-2">
+                          <div className="font-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-[#0D9488] dark:group-hover:text-[#2DD4BF] transition-colors leading-snug">
+                            {phraseItem.phrase}
+                          </div>
+                          <div className="flex items-center gap-1 shrink-0">
+                            <button
+                              type="button"
+                              onClick={(e) => handleSpeak(phraseItem.phrase, idx, e)}
+                              className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
+                                speakingPhraseIdx === idx
+                                  ? 'bg-teal-500/20 text-[#0D9488] dark:text-[#2DD4BF] animate-pulse'
+                                  : 'text-slate-400 hover:text-[#0D9488] dark:hover:text-[#2DD4BF] hover:bg-slate-100 dark:hover:bg-white/10'
+                              }`}
+                              title={l('Google Sesli Telaffuz Dinle', 'Listen Google Voice Pronunciation', 'Aussprache anhören')}
+                              aria-label="Pronounce"
+                            >
+                              <Volume2 className="w-4 h-4" />
+                            </button>
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleCopy(phraseItem.phrase, `phrase-${idx}`);
+                              }}
+                              className="p-1.5 rounded-lg text-slate-400 hover:text-[#0D9488] dark:hover:text-[#2DD4BF] hover:bg-slate-100 dark:hover:bg-white/10 transition-colors cursor-pointer"
+                              title={l('Kopyala', 'Copy', 'Kopieren')}
+                              aria-label="Copy"
+                            >
+                              {copiedPhrase === `phrase-${idx}` ? (
+                                <Check className="w-4 h-4 text-emerald-500" />
+                              ) : (
+                                <Copy className="w-4 h-4" />
+                              )}
+                            </button>
+                          </div>
                         </div>
-                        <span className="text-slate-400 group-hover:text-teal-600 dark:group-hover:text-teal-400">
-                          {copiedPhrase === `phrase-${idx}` ? (
-                            <Check className="w-4 h-4 text-emerald-500" />
-                          ) : (
-                            <Copy className="w-4 h-4 opacity-70" />
-                          )}
-                        </span>
-                      </div>
-                      <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium mt-1">
-                        {phraseItem.meaning}
+                        <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium mt-1">
+                          {phraseItem.meaning}
+                        </div>
                       </div>
                       {phraseItem.pronunciation && (
-                        <div className="text-xs font-mono font-bold text-teal-700 dark:text-teal-300 mt-1.5 flex items-center gap-1">
-                          <span>🗣️</span> {phraseItem.pronunciation}
+                        <div className="text-xs font-mono font-medium text-teal-700 dark:text-teal-400 mt-2.5 pt-1.5 border-t border-slate-100 dark:border-white/5 flex items-center gap-1">
+                          <span>🗣️</span> <span>{phraseItem.pronunciation}</span>
                         </div>
                       )}
                     </div>
