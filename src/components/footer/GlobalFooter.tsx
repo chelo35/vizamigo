@@ -719,6 +719,15 @@ export const GlobalFooter: React.FC<Props> = ({
                 {l('Resmi Mevzuat & Kaynak Bildirimi', 'Official Immigration & MFA Source Standards', 'Offizielle Einreisequellen & Standards', 'Estándares de Inmigración Oficial', 'Официальные стандарты иммиграции')}
               </button>
             </li>
+            <li>
+              <button
+                type="button"
+                onClick={() => onOpenLegalModal('attributions')}
+                className="text-slate-600 dark:text-teal-100 hover:text-teal-800 dark:hover:text-[#5EEAD4] hover:underline text-left cursor-pointer transition-colors font-medium"
+              >
+                {l('Görsel Lisansları & Atıflar', 'Photo Credits & Attributions', 'Bildnachweise & Lizenzen', 'Créditos de Imágenes y Licencias', 'Лицензии и авторство фото')}
+              </button>
+            </li>
           </ul>
         </div>
 

@@ -1019,13 +1019,17 @@ export const GlobalRadarModal: React.FC<Props> = ({
                       <line x1="500" y1="0" x2="500" y2="520" stroke="#00ffff" strokeWidth="0.8" strokeOpacity="0.3" />
                     </g>
                     {projectedMarkers
-                      .filter(({ hub }) => activePreset.id === 'all' || activePreset.filterFn(hub))
+                      .filter(({ hub }) => {
+                        const activePreset = CONTINENT_PRESETS.find((p) => p.id === activeContinent) || CONTINENT_PRESETS[0];
+                        return activePreset.id === 'all' || activePreset.filterFn(hub);
+                      })
                       .map(({ hub, x, y, isSelected, weather, hubTimeShort }) => {
+                        const activePreset = CONTINENT_PRESETS.find((p) => p.id === activeContinent) || CONTINENT_PRESETS[0];
                         // Level-of-detail: only render labels for selected hub, or when filtered by regional preset, or top tier hubs at higher zoom
                         const showLabel =
                           isSelected ||
                           (activePreset.id !== 'all' && scale >= 2.0) ||
-                          (scale >= 3.2 && (hub.tier === 1 || hub.city === 'Istanbul' || hub.city === 'Ankara' || hub.city === 'London' || hub.city === 'Tokyo' || hub.city === 'New York'));
+                          (scale >= 3.2 && (hub.city === 'Istanbul' || hub.city === 'Ankara' || hub.city === 'London' || hub.city === 'Tokyo' || hub.city === 'New York'));
 
                         return (
                           <g

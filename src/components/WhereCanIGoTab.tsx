@@ -233,7 +233,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({
             const badgeLabel = getCategoryBadgeLabel(item, language);
             const rawRegion = countryToRegion[item.c] || 'Diğer';
             const region = getRegionName(rawRegion, language);
-            const visual = getCountryVisual(item.c);
+            const visual = getCountryVisual(item.c, language);
 
             return (
               <div
