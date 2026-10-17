@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2E" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#02202E" />
+    </linearGradient>
+    <linearGradient id="mountGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#042F2E" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="mountGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0D9488" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+
+  <!-- Subtle Sun / Compass Circle -->
+  <circle cx="400" cy="190" r="85" fill="url(#sunGrad)" />
+  <circle cx="400" cy="190" r="110" fill="none" stroke="#2DD4BF" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 6" />
+
+  <!-- Distant Mountain Peaks -->
+  <polygon points="120,380 290,210 440,380" fill="url(#mountGrad1)" />
+  <polygon points="340,380 500,175 690,380" fill="url(#mountGrad1)" />
+
+  <!-- Foreground Mountain Ridge -->
+  <polygon points="0,500 210,265 470,500" fill="url(#mountGrad2)" />
+  <polygon points="360,500 580,240 800,480 800,500" fill="url(#mountGrad2)" />
+
+  <!-- Bottom Horizon Vignette -->
+  <rect y="440" width="800" height="60" fill="#041B26" fill-opacity="0.75" />
+
+  <!-- Center Travel Pin Icon & Text -->
+  <g transform="translate(400, 240)">
+    <!-- Pin Icon -->
+    <path d="M0 -30 C-14 -30 -24 -20 -24 -6 C-24 12 0 32 0 32 C0 32 24 12 24 -6 C24 -20 14 -30 0 -30 Z" fill="#2DD4BF" opacity="0.95" />
+    <circle cx="0" cy="-6" r="8" fill="#042F2E" />
+  </g>
+  <text x="400" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#99F6E4" text-anchor="middle" letter-spacing="1">VIZAMIGO SCENIC VIEW</text>
+</svg>

@@ -65,6 +65,7 @@ import { getCountrySectionHeadings, getMobileVoiceQuestion } from '../utils/sche
 
 import { BentoDashboardGrid } from './bento/BentoDashboardGrid';
 import { TabKey } from './Navigation';
+import { SafeImage } from './common/SafeImage';
 
 // Code-split heavy visual nodes & live loop widgets for <0.5s instant initial paint
 const InteractiveWorldMap = lazy(() =>
@@ -647,7 +648,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                       onClick={() => setExpandedCountry(isExpanded ? null : item.c)}
                       className="country-thumbnail-slot w-full md:w-52 lg:w-56 min-h-[200px] md:min-h-full self-stretch rounded-2xl shadow-sm shrink-0 cursor-pointer overflow-hidden relative group/thumb"
                     >
-                      <img
+                      <SafeImage
                         src={visual.image}
                         srcSet={getOptimizedSrcSet(visual.image)}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 208px, 224px"
@@ -658,11 +659,6 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
                         decoding="async"
                         width="224"
                         height="200"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          target.onerror = null;
-                          target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=360&q=50';
-                        }}
                       />
                       <div className="country-thumbnail-scrim" />
 
@@ -920,7 +916,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
                     {/* Widescreen Scenic Landmark Hero Banner */}
                     <div className="relative h-44 sm:h-56 aspect-[16/9] rounded-3xl overflow-hidden border border-slate-200/80 dark:border-white/[0.08] shadow-md group/hero">
-                      <img
+                      <SafeImage
                         src={visual.image}
                         srcSet={getOptimizedSrcSet(visual.image)}
                         sizes="(max-width: 640px) 100vw, 800px"

@@ -27,6 +27,7 @@ import { getCountryInsights } from '../../data/countryInsights';
 import { getCountryGeography } from '../../data/countryGeography';
 import { getCountryVisual } from '../../data/countryVisuals';
 import { POPULAR_RESEARCH_COUNTRIES } from '../../data/initialCountryIndex';
+import { SafeImage } from '../common/SafeImage';
 
 const CompareTab = lazy(() =>
   import('../CompareTab').then(m => ({ default: m.CompareTab }))
@@ -335,7 +336,7 @@ export const BentoSubWidgetModal: React.FC<BentoSubWidgetModalProps> = ({
 
                       {/* 1. Large Scenic Tropical Lagoon Photo Header with Visa Badge */}
                       <div className="relative h-48 sm:h-60 w-full rounded-[24px] overflow-hidden border-2 border-[#5EEAD4]/60 shadow-xl">
-                        <img
+                        <SafeImage
                           src={
                             targetCode === 'TH'
                               ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=440&q=50'

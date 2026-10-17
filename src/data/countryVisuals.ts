@@ -7,7 +7,7 @@
 import { countryToRegion } from './passportData';
 import { getVerifiedCountryVisual } from './verifiedCountryData';
 
-export const DEFAULT_TRAVEL_FALLBACK = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=440&q=50';
+export const DEFAULT_TRAVEL_FALLBACK = '/placeholder-landscape.svg';
 
 /**
  * Transforms image URLs to modern Next-Gen WebP format with optimal compression.

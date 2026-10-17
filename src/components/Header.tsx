@@ -338,9 +338,11 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           )}
 
-          <label className="relative flex-1 flex items-center">
+          <label htmlFor="vz-global-search" className="relative flex-1 flex items-center">
             <Search className="w-5 h-5 text-[#5EEAD4] absolute left-4 pointer-events-none" />
             <input
+              id="vz-global-search"
+              name="vzGlobalSearch"
               type="search"
               value={searchQuery}
               onChange={(e) => onSearchChange?.(e.target.value)}

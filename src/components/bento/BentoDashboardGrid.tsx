@@ -13,6 +13,7 @@ import { getCrossRate } from '../../data/currencyRates';
 import { getCountryVisual } from '../../data/countryVisuals';
 import { getFastCountryMetrics, POPULAR_RESEARCH_COUNTRIES } from '../../data/initialCountryIndex';
 import { TabKey } from '../Navigation';
+import { SafeImage } from '../common/SafeImage';
 
 const BentoSecondaryWidgets = lazy(() =>
   import('./BentoSecondaryWidgets').then((m) => ({ default: m.BentoSecondaryWidgets }))
@@ -353,7 +354,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           onKeyDown={(e) => e.key === 'Enter' && openWidget('radar', 'all')}
           className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between p-3 sm:p-4"
         >
-          <img
+          <SafeImage
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=420&q=50"
             alt={l('Turkuaz Lagün & Dünya Radarı', 'Turquoise Lagoon & World Radar')}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -396,7 +397,7 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
           onKeyDown={(e) => e.key === 'Enter' && openWidget('country_research', 'visa', researchCountry)}
           className="col-span-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#5EEAD4]/60 shadow-xl transition-all duration-300 hover:-translate-y-0.5 min-h-[196px] sm:min-h-[216px] flex flex-col justify-between p-3 sm:p-4 cursor-pointer"
         >
-          <img
+          <SafeImage
             src={
               researchCountry === 'TH'
                 ? 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=360&q=50'

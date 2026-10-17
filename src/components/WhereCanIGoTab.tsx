@@ -14,6 +14,7 @@ import {
 import { getPassportItems } from '../utils/calculator';
 import { useI18n } from '../data/i18n';
 import { getCountryVisual, getOptimizedSrcSet } from '../data/countryVisuals';
+import { SafeImage } from './common/SafeImage';
 
 interface WhereCanIGoTabProps {
   currentPassport: string;
@@ -242,7 +243,7 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({
                 <div className="flex items-center gap-4 min-w-0">
                   {/* Dedicated Scenic Thumbnail Slot */}
                   <div className="country-thumbnail-slot w-24 h-20 sm:w-28 sm:h-24 aspect-[16/10] shadow-sm flex-shrink-0">
-                    <img
+                    <SafeImage
                       src={visual.image}
                       srcSet={getOptimizedSrcSet(visual.image)}
                       sizes="(max-width: 640px) 96px, 112px"
@@ -252,11 +253,6 @@ export const WhereCanIGoTab: React.FC<WhereCanIGoTabProps> = ({
                       decoding="async"
                       width="112"
                       height="80"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        target.onerror = null;
-                        target.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=240&q=50';
-                      }}
                     />
                     <div className="country-thumbnail-scrim" />
                     <div className="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-white/20 text-xs shadow-sm">
