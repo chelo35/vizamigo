@@ -436,14 +436,14 @@ const BATCH_1_DATA: BatchCountryCandidate[] = [
       alt2: 'Møns Klint Beyaz Tebeşir Falezleri ve Baltık Denizi'
     },
     candidatePrimary: {
-      title: 'Nyhavn Waterfront, Copenhagen (Verified Unsplash)',
-      landmark: 'Kopenhag Nyhavn Tarihi Renkli Limanı',
-      url: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1600&q=80',
-      sourcePageUrl: 'https://unsplash.com/photos/photo-1513622470522-26c3c8a854bc',
-      artist: 'Unsplash Verified Creator',
-      license: 'Unsplash License',
-      dimensions: '2400x1600',
-      source: 'Unsplash (Verified)'
+      title: 'Nyhavn, Copenhagen, 20220618 1728 7354.jpg',
+      landmark: 'Kopenhag Nyhavn Tarihi Renkli Limanı ve Kanal Evleri',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Nyhavn%2C_Copenhagen%2C_20220618_1728_7354.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original',
+      sourcePageUrl: 'https://commons.wikimedia.org/wiki/File:Nyhavn,_Copenhagen,_20220618_1728_7354.jpg',
+      artist: 'Jakub Hałun',
+      license: 'CC BY-SA 4.0',
+      dimensions: '5860x3172',
+      source: 'Wikimedia Commons'
     },
     candidateAlt: {
       title: 'Frederiksborg Slot, Hillerød',
