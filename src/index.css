@@ -215,8 +215,9 @@ html.dark {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--text-primary);
-    background-color: #0D9488;
-    background-image: linear-gradient(135deg, #064E3B 0%, #0D9488 50%, #0284C7 100%);
+    background-color: #E0F2FE;
+    background-image: var(--bg-canvas-gradient);
+    background-attachment: fixed;
     line-height: 1.6;
     overflow-x: hidden;
   }
@@ -224,8 +225,9 @@ html.dark {
   html.dark body,
   .dark body {
     color: #F8FAFC;
-    background-color: #031B24;
+    background-color: #042132;
     background-image: linear-gradient(135deg, #031B24 0%, #062F3C 55%, #042430 100%);
+    background-attachment: fixed;
   }
 
   /* Primary Titles & Category Text Headers: strict letter-spacing: -0.02em; font-weight: 700; */
@@ -626,7 +628,6 @@ input[type="radio"] {
   border-radius: 16px;
   filter: brightness(0.96) contrast(1.04) saturate(1.05);
   transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
-  will-change: transform;
 }
 
 .group:hover .country-thumbnail-images,
@@ -822,11 +823,6 @@ button:active,
   .dark .glass-card:hover,
   .dark .country-card:hover {
     transform: none !important;
-  }
-
-  .country-thumbnail-images,
-  .country-thumbnail-image {
-    will-change: auto;
   }
 }
 
