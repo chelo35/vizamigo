@@ -199,14 +199,11 @@ export const BentoDashboardGrid: React.FC<BentoDashboardGridProps> = ({
 
   // Open a sub-widget window
   const openWidget = (id: BentoWidgetId, subTab?: string, countryCode?: string) => {
-    setIsMinimized(false);
     setWidgetStack((prev) => [...prev, { id, subTab, countryCode }]);
   };
 
   const closeAllWidgets = () => {
     setWidgetStack([]);
-    setIsMinimized(false);
-    setIsFullscreen(false);
   };
 
   const goBackWidget = () => {

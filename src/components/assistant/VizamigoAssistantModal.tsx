@@ -193,16 +193,16 @@ export const VizamigoAssistantModal: React.FC<VizamigoAssistantModalProps> = ({
 
     if ((action.type === 'open_country' || action.actionType === 'open_country') && action.countryCode) {
       onOpenCountryDossier(action.countryCode);
-      setIsMinimized(true); // Auto-minimize so the country dossier is visible to user
+      onClose(); // Auto-close assistant so the country dossier is visible to user
     } else if ((action.type === 'switch_tab' || action.actionType === 'switch_tab') && action.tabKey) {
       onSelectTab(action.tabKey);
-      setIsMinimized(true); // Auto-minimize so the selected tab is visible to user
+      onClose(); // Auto-close assistant so the selected tab is visible to user
     } else if (action.type === 'open_tool') {
       if (action.toolKey === 'packing') onOpenPackingList();
       else if (action.toolKey === 'tipping') onOpenTippingCalc();
       else if (action.toolKey === 'overlap') onOpenTimezoneOverlap();
       else if (action.toolKey === 'radar') onOpenGlobalRadar(action.radarMode || 'all');
-      setIsMinimized(true); // Auto-minimize so the tool modal is visible to user
+      onClose(); // Auto-close assistant so the tool modal is visible to user
     } else if (action.type === 'affiliate' && action.url) {
       window.open(action.url, '_blank', 'noopener,noreferrer');
     }
