@@ -551,9 +551,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
             </p>
           </div>
         ) : (
-          filteredItems.slice(0, visibleCount).map((item, idx) => {
+          filteredItems.slice(0, visibleCount).map((item) => {
             const isExpanded = expandedCountry === item.c;
-            const isAboveFold = idx < 3;
             const countryName = getCountryName(item.c, language);
             const badgeClass = item.id ? CAT_INFO.id.badgeBg : CAT_INFO[item.cat]?.badgeBg;
             const badgeText = getBadgeLabel(item);
@@ -635,10 +634,6 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
               <div
                 key={item.c}
                 className="glass-card country-card rounded-[24px] touch-pan-y transition-all duration-300 group"
-                style={{
-                  contentVisibility: isAboveFold ? 'visible' : 'auto',
-                  containIntrinsicSize: 'auto 260px'
-                }}
               >
                 {/* Modern Symmetrical Country Card Layout (p-6 to p-8 generous breathing space) */}
                 <div className="w-full p-6 sm:p-7 lg:p-8 transition-colors">
