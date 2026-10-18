@@ -1,0 +1,451 @@
+{
+  "iso2": "BB",
+  "names": {
+    "tr": "Barbados",
+    "en": "Barbados",
+    "de": "Barbados",
+    "ru": "Барбадос",
+    "es": "Barbados"
+  },
+  "capital": {
+    "value": "Bridgetown",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.bb",
+        "tier": 1,
+        "title": "Government of Barbados"
+      }
+    ],
+    "evidence_quote": "Bridgetown is the capital and primary commercial seaport of the Republic of Barbados",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BBD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbank.org.bb",
+        "tier": 1,
+        "title": "Central Bank of Barbados"
+      }
+    ],
+    "evidence_quote": "The Barbados Dollar (BBD) is pegged to the US Dollar at 2 BBD = 1 USD; USD is accepted everywhere",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.barbadosweather.org",
+        "tier": 1,
+        "title": "Barbados Meteorological Services"
+      }
+    ],
+    "evidence_quote": "Barbados observes Atlantic Standard Time UTC-4 year-round with no seasonal daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "115V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.blpc.com.bb",
+          "tier": 1,
+          "title": "Barbados Light & Power Company"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Barbados is 115V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.blpc.com.bb",
+          "tier": 1,
+          "title": "Barbados Light & Power"
+        }
+      ],
+      "evidence_quote": "Alternating current grid frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "North American Type A and Type B plugs with two flat pins are universally used in Barbados",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "211",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bps.gov.bb",
+          "tier": 1,
+          "title": "The Barbados Police Service"
+        }
+      ],
+      "evidence_quote": "Dial 211 for emergency police response across Barbados",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "511",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://qeh.gov.bb",
+          "tier": 1,
+          "title": "Queen Elizabeth Hospital Emergency Ambulance Service"
+        }
+      ],
+      "evidence_quote": "Call 511 for emergency medical services and QEH ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "311",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bfs.gov.bb",
+          "tier": 1,
+          "title": "Barbados Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 311 for fire and rescue emergency services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "211",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bps.gov.bb",
+          "tier": 1,
+          "title": "The Barbados Police Service"
+        }
+      ],
+      "evidence_quote": "211 is the central emergency operations number in Barbados",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "211",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bps.gov.bb",
+          "tier": 1,
+          "title": "Barbados Police Special Operations"
+        }
+      ],
+      "evidence_quote": "Tourist precinct patrols along the South and West coasts coordinate via 211",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/barbados",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Barbados Karayipler'in en güvenli ve istikrarlı ada ülkelerinden biridir; standart seyahat önlemleri yeterlidir.",
+      "en": "Barbados is one of the safest and most developed Caribbean nations; exercise standard travel precautions.",
+      "de": "Barbados ist eines der sichersten Reiseziele der Karibik; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Барбадос — один из самых безопасных и развитых карибских курортов; действуют обычные меры предосторожности.",
+      "es": "Barbados es uno de los destinos más seguros y estables del Caribe; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 48.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/barbados",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Barbados reach approximately 48.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 115.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/barbados",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Barbados exceed 115.0 Mbps with fiber-optic rollout",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Flow and Digicel provide high-speed 4G LTE tourist eSIMs at Grantley Adams International Airport (BGI). Arriving passengers must submit the online Immigration/Customs form at travelform.gov.bb prior to arrival.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://travelform.gov.bb",
+          "tier": 1,
+          "title": "Barbados Customs and Immigration Portal"
+        }
+      ],
+      "evidence_quote": "All arriving passengers must complete the online digital immigration form within 72 hours of travel",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "PickUP Barbados",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://pickupbarbados.com",
+        "tier": 2,
+        "title": "PickUP Barbados App"
+      }
+    },
+    {
+      "name": "BeepCab",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://beepcab.com",
+        "tier": 2,
+        "title": "BeepCab Barbados"
+      }
+    },
+    {
+      "name": "Hopscotch Delivery",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hopscotchfetch.com",
+        "tier": 2,
+        "title": "Hopscotch Barbados"
+      }
+    },
+    {
+      "name": "Barbados Transport Board App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://transportboard.gov.bb",
+        "tier": 1,
+        "title": "Transport Board Barbados"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 75%, predominantly Anglican, Pentecostal, and Adventist)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stats.gov.bb",
+          "tier": 1,
+          "title": "Barbados Statistical Service"
+        }
+      ],
+      "evidence_quote": "Anglicanism represents the historic church of Barbados alongside vibrant evangelical congregations",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Crop Over Festival (climaxing with Grand Kadooment in August), Oistins Fish Festival, Barbados Food and Rum Festival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitbarbados.org",
+          "tier": 1,
+          "title": "Barbados Tourism Marketing Inc. (BTMI)"
+        }
+      ],
+      "evidence_quote": "Crop Over celebrates the historic sugarcane harvest with six weeks of soca music and masquerade bands",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage clothing of any style is strictly illegal in Barbados for civilians and tourists; camouflage gear is reserved exclusively for the Barbados Defence Force. Nudism and topless sunbathing are prohibited on all public beaches.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bps.gov.bb",
+          "tier": 1,
+          "title": "The Barbados Police Service Law Bulletin"
+        }
+      ],
+      "evidence_quote": "It is a serious statutory offence under Barbadian law for non-military persons to wear camouflage clothing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually included on restaurant and hotel bills; leaving an extra 5-10% for exceptional dining service is customary.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitbarbados.org",
+          "tier": 1,
+          "title": "BTMI Travel Tips"
+        }
+      ],
+      "evidence_quote": "Most bills include a 10% service charge; an additional modest tip is appreciated for good service",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Carlisle Körfezi ve Deniz Kaplumbağaları Sahili",
+        "en": "Carlisle Bay & Sea Turtle Marine Park",
+        "de": "Carlisle Bay & Meeresschildkröten-Bucht",
+        "ru": "Бухта Карлайл и морской заповедник черепах",
+        "es": "Bahía de Carlisle y Parque Marino de Tortugas"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.visitbarbados.org",
+          "tier": 1,
+          "title": "BTMI Barbados"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Tarihi Bridgetown ve Askeri Garnizonu",
+        "en": "Historic Bridgetown & its Garrison",
+        "de": "Historisches Bridgetown & Militär-Garnison",
+        "ru": "Исторический Бриджтаун и его гарнизон",
+        "es": "Centro Histórico de Bridgetown y su Guarnición"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1376",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Carlisle Körfezi Turkuaz Sahili ve Tekneler, Bridgetown",
+        "license": "CC0",
+        "author": "Pontificalibus",
+        "source_url": "/images/countries/bb-480.webp",
+        "attribution_text": "Carlisle Bay turquoise beach and boats in Bridgetown, Barbados. Pontificalibus, CC0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Carlisle Körfezi Turkuaz Sahili ve Tekneler, Bridgetown, Barbados",
+          "en": "Carlisle Bay Turquoise Beach & Boats, Bridgetown, Barbados",
+          "de": "Carlisle Bay Türkisstrand & Boote, Bridgetown, Barbados",
+          "ru": "Бирюзовый пляж бухты Карлайл и лодки, Бриджтаун, Барбадос",
+          "es": "Playa Turquesa de Bahía Carlisle y Barcos, Bridgetown, Barbados"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "barbados",
+      "en": "barbados",
+      "de": "barbados",
+      "ru": "barbados",
+      "es": "barbados"
+    },
+    "title": {
+      "tr": "Barbados Vize Rehberi, 90 Gün Vizesiz Giriş, Kamuflaj Yasağı ve Carlisle Bay | Vizamigo",
+      "en": "Barbados Visa Guide, 90-Day Visa-Free Rules, Camo Ban & Travel | Vizamigo",
+      "de": "Barbados Visum-Leitfaden, 90 Tage visafrei, Camouflage-Verbot & Reisetipps | Vizamigo",
+      "ru": "Виза на Барбадос, 90 дней без визы, запрет камуфляжа и бухта Карлайл | Vizamigo",
+      "es": "Guía de Visa de Barbados, 90 Días sin Visa, Prohibición de Camuflaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Barbados Türk pasaportuna 90 gün vizesiz giriş, sıkı kamuflaj kıyafet yasağı, sabit Amerikan Doları kuru, Tip A/B prizler ve Carlisle Körfezi gezi rehberi.",
+      "en": "Barbados 90-day visa-free rules, strict military camouflage ban warning, 2:1 USD currency peg, Type A/B plugs, and Carlisle Bay guide.",
+      "de": "Barbados 90 Tage visafreie Einreise, striktes Camouflage-Kleidungsverbot, fester US-Dollar-Wechselkurs und Reiseführer Carlisle Bay.",
+      "ru": "Правила въезда на Барбадос на 90 дней без визы, строгий запрет камуфляжной одежды, доллар США по курсу 2:1 и бухта Карлайл.",
+      "es": "Requisitos de entrada sin visa a Barbados (90 días), prohibición estricta de ropa de camuflaje y guía de Carlisle Bay."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,462 @@
+{
+  "iso2": "TT",
+  "names": {
+    "tr": "Trinidad ve Tobago",
+    "en": "Trinidad and Tobago",
+    "de": "Trinidad und Tobago",
+    "ru": "Тринидад и Тобаго",
+    "es": "Trinidad y Tobago"
+  },
+  "capital": {
+    "value": "Port of Spain",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://citycorporationpos.gov.tt",
+        "tier": 1,
+        "title": "Port of Spain Corporation"
+      }
+    ],
+    "evidence_quote": "Port of Spain is the capital city and main administrative hub of Trinidad and Tobago",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TTD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.central-bank.org.tt",
+        "tier": 1,
+        "title": "Central Bank of Trinidad and Tobago"
+      }
+    ],
+    "evidence_quote": "The Trinidad and Tobago Dollar (TTD, TT$) is the official currency; floats at approx. 6.8 TT$ to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.metoffice.gov.tt",
+        "tier": 1,
+        "title": "Trinidad and Tobago Meteorological Service"
+      }
+    ],
+    "evidence_quote": "Trinidad and Tobago observes Atlantic Standard Time UTC-4 year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "115V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ttec.co.tt",
+          "tier": 1,
+          "title": "Trinidad and Tobago Electricity Commission (T&TEC)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase electricity across the nation is 115V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ttec.co.tt",
+          "tier": 1,
+          "title": "T&TEC"
+        }
+      ],
+      "evidence_quote": "Alternating current power grid operating frequency is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Wall outlets standardly accept North American Type A and Type B plugs with two flat pins",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ttps.gov.tt",
+          "tier": 1,
+          "title": "Trinidad and Tobago Police Service (TTPS)"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 555 for emergency police response across Trinidad and Tobago",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "811",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.tt",
+          "tier": 1,
+          "title": "Ministry of Health Trinidad and Tobago"
+        }
+      ],
+      "evidence_quote": "Call 811 for emergency medical services and national ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "990",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nationalsecurity.gov.tt",
+          "tier": 1,
+          "title": "Trinidad and Tobago Fire Service (TTFS)"
+        }
+      ],
+      "evidence_quote": "Dial 990 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ttps.gov.tt",
+          "tier": 1,
+          "title": "TTPS Emergency Dispatch"
+        }
+      ],
+      "evidence_quote": "999 coordinates central emergency dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ttps.gov.tt",
+          "tier": 1,
+          "title": "TTPS Tourism Oriented Policing Section (TOPS)"
+        }
+      ],
+      "evidence_quote": "TOPS tourist police officers patrol Maracas Bay, Port of Spain, and Tobago beaches via 999",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/trinidad-and-tobago",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Port of Spain ve Laventille bölgelerinde suç oranları nedeniyle dikkatli olunmalıdır; Tobago adası tatil köyleri huzurlu ve güvenlidir.",
+      "en": "Exercise increased caution due to violent crime in Port of Spain; resort areas on Tobago are much safer.",
+      "de": "Erhöhte Vorsicht wegen Kriminalität in Port of Spain; die Ferienregionen auf Tobago sind deutlich sicherer.",
+      "ru": "Проявляйте повышенную осторожность в Порт-оф-Спейн; курортные зоны острова Тобаго спокойны и безопасны.",
+      "es": "Actúe con mayor cautela en Puerto España por delincuencia; la isla de Tobago es un destino vacacional tranquilo."
+    },
+    "regional_warnings": [
+      {
+        "area": "Laventille, Beetham, Sea Lots, and Morvant in Port of Spain",
+        "level": 3,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 42.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/trinidad-and-tobago",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Trinidad and Tobago reach approximately 42.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 98.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/trinidad-and-tobago",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds exceed 98.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "bmobile (TSTT) and Digicel provide 4G/LTE prepaid SIMs at Piarco International Airport (POS). Inter-island ferries and flights (Caribbean Airlines) connect Trinidad and Tobago multiple times daily.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tatt.org.tt",
+          "tier": 1,
+          "title": "Telecommunications Authority of Trinidad and Tobago (TATT)"
+        }
+      ],
+      "evidence_quote": "Prepaid cellular registration requires valid passport verification under national telecom regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "TT RideShare",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ttrideshare.com",
+        "tier": 2,
+        "title": "TT RideShare App"
+      }
+    },
+    {
+      "name": "DeliverMe TT",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://delivermett.com",
+        "tier": 2,
+        "title": "DeliverMe TT"
+      }
+    },
+    {
+      "name": "FoodDrop TT",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://fooddrop.co",
+        "tier": 2,
+        "title": "FoodDrop Trinidad"
+      }
+    },
+    {
+      "name": "WiPay",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wipaycaribbean.com",
+        "tier": 2,
+        "title": "WiPay Caribbean"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 55%), Hinduism (approx. 18%), and Islam (approx. 5%) reflecting Afro-Trinidadian and Indo-Trinidadian heritage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cso.gov.tt",
+          "tier": 1,
+          "title": "Central Statistical Office Trinidad and Tobago"
+        }
+      ],
+      "evidence_quote": "Trinidad blends Afro-Caribbean traditions with Indo-Caribbean Hindu and Muslim heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Trinidad Carnival (legendary pre-Lenten carnival), Divali (Festival of Lights), Eid-ul-Fitr, Tobago Heritage Festival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visittrinidad.tt",
+          "tier": 1,
+          "title": "Tourism Trinidad Limited"
+        }
+      ],
+      "evidence_quote": "Trinidad Carnival is globally famous for calypso, soca music, steelpan orchestra, and masquerade (mas)",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage patterns or military-style clothing is strictly illegal for civilians and tourists under the Summary Offences Act. Avoid unmetered street taxis; use TT RideShare or hotel-arranged transport. English is the official language.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ttps.gov.tt",
+          "tier": 1,
+          "title": "TTPS Public Advisory"
+        }
+      ],
+      "evidence_quote": "The importation and wearing of camouflage material is prohibited under the Defence Act",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in restaurants when service is not included in the bill. Tipping taxi drivers is not expected.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visittrinidad.tt",
+          "tier": 1,
+          "title": "Tourism Trinidad Tips"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in hospitality establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Pigeon Point Saman Çatılı İskele ve Turkuaz Sahil",
+        "en": "Pigeon Point Heritage Park & Thatched Jetty",
+        "de": "Pigeon Point Heritage Park & Strohdach-Steg",
+        "ru": "Пляж Пиджен-Пойнт и соломенный пирс",
+        "es": "Parque Patrimonial Pigeon Point y Muelle de Paja"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://visittobago.gov.tt",
+          "tier": 1,
+          "title": "Tobago Tourism Agency"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Pitch Lake Doğal Asfalt Gölü",
+        "en": "Pitch Lake Natural Asphalt Lake",
+        "de": "Pitch Lake Natur-Asphaltsee",
+        "ru": "Природное асфальтовое озеро Пич-Лейк",
+        "es": "Lago de Asfalto Natural Pitch Lake"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://visittrinidad.tt",
+          "tier": 1,
+          "title": "Tourism Trinidad Limited"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Pigeon Point Saman Çatılı İskele ve Turkuaz Sahil, Tobago",
+        "license": "CC-BY-SA",
+        "author": "Kalamazadkhan",
+        "source_url": "/images/countries/tt-480.webp",
+        "attribution_text": "Pigeon Point thatched roof jetty on turquoise waters in Tobago. Kalamazadkhan, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Pigeon Point Saman Çatılı İskele ve Turkuaz Sahil, Tobago, Trinidad ve Tobago",
+          "en": "Pigeon Point Thatched Jetty & Turquoise Beach, Tobago, Trinidad and Tobago",
+          "de": "Pigeon Point Strohdach-Steg & Türkisstrand, Tobago, Trinidad und Tobago",
+          "ru": "Соломенный пирс и бирюзовый пляж Пиджен-Пойнт, Тобаго, Тринидад и Тобаго",
+          "es": "Muelle con Techo de Paja de Pigeon Point y Playa Turquesa, Tobago, Trinidad y Tobago"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "trinidad-ve-tobago",
+      "en": "trinidad-and-tobago",
+      "de": "trinidad-und-tobago",
+      "ru": "trinidad-i-tobago",
+      "es": "trinidad-y-tobago"
+    },
+    "title": {
+      "tr": "Trinidad ve Tobago Vize Rehberi, 90 Gün Vizesiz Giriş, Kamuflaj Yasağı ve Karnaval | Vizamigo",
+      "en": "Trinidad and Tobago Visa Guide, 90-Day Visa-Free Rules, Camo Ban | Vizamigo",
+      "de": "Trinidad und Tobago Visum-Leitfaden, 90 Tage visafrei & Karneval | Vizamigo",
+      "ru": "Виза в Тринидад и Тобаго, 90 дней без визы, карнавал и пляж Пиджен-Пойнт | Vizamigo",
+      "es": "Guía de Visa de Trinidad y Tobago, 90 Días sin Visa y Carnaval | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Trinidad ve Tobago Türk pasaportuna 90 gün vizesiz giriş, katı kamuflaj giysi yasağı, Karnaval rehberi, Tip A/B prizler ve Tobago Pigeon Point rehberi.",
+      "en": "Trinidad and Tobago 90-day visa-free rules, strict camouflage clothing ban, Carnival guide, Type A/B sockets, and Tobago Pigeon Point.",
+      "de": "Trinidad und Tobago 90 Tage visafreie Einreise, Verbot von Camouflage-Kleidung, Karnevalsführer und Reisetipps Pigeon Point Tobago.",
+      "ru": "Правила въезда в Тринидад и Тобаго на 90 дней без визы, запрет камуфляжа, карибский карнавал, розетки Type A/B и Тобаго.",
+      "es": "Requisitos de entrada sin visa a Trinidad y Tobago (90 días), prohibición de ropa de camuflaje, Carnaval y Pigeon Point en Tobago."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,461 @@
+{
+  "iso2": "PY",
+  "names": {
+    "tr": "Paraguay",
+    "en": "Paraguay",
+    "de": "Paraguay",
+    "ru": "Парагвай",
+    "es": "Paraguay"
+  },
+  "capital": {
+    "value": "Asunción",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.asuncion.gov.py",
+        "tier": 1,
+        "title": "Municipalidad de Asunción"
+      }
+    ],
+    "evidence_quote": "Asunción is the capital and largest city of the Republic of Paraguay",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "PYG",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcp.gov.py",
+        "tier": 1,
+        "title": "Banco Central del Paraguay"
+      }
+    ],
+    "evidence_quote": "The Paraguayan Guaraní (PYG, ₲) is the official currency of Paraguay",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (PYT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.meteorologia.gov.py",
+        "tier": 1,
+        "title": "Dirección de Meteorología e Hidrología Paraguay"
+      }
+    ],
+    "evidence_quote": "Paraguay Standard Time operates on UTC-4, advancing to UTC-3 in summer months",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ande.gov.py",
+          "tier": 1,
+          "title": "Administración Nacional de Electricidad (ANDE)"
+        }
+      ],
+      "evidence_quote": "Standard residential alternating current across Paraguay is supplied at 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ande.gov.py",
+          "tier": 1,
+          "title": "ANDE Paraguay"
+        }
+      ],
+      "evidence_quote": "The national electrical power grid operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European standard Type C round two-pin outlets are universal in Paraguay",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policianacional.gov.py",
+          "tier": 1,
+          "title": "Policía Nacional del Paraguay"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police response across all departments",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "141",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mspbs.gov.py",
+          "tier": 1,
+          "title": "Servicio de Emergencias Médicas Extrahospitalarias (SEME)"
+        }
+      ],
+      "evidence_quote": "Call 141 for SEME emergency medical dispatch and hospital transport",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "132",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomberosdelparaguay.org.py",
+          "tier": 1,
+          "title": "Cuerpo de Bomberos Voluntarios del Paraguay (CBVP)"
+        }
+      ],
+      "evidence_quote": "Dial 132 for emergency fire and rescue operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policianacional.gov.py",
+          "tier": 1,
+          "title": "Policía Nacional"
+        }
+      ],
+      "evidence_quote": "911 coordinates unified national emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://senatur.gov.py",
+          "tier": 1,
+          "title": "Policía Urbana y Turística Paraguay"
+        }
+      ],
+      "evidence_quote": "Policía Urbana y Turística patrols historic Asunción and Jesuit missions reachable via 911",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/paraguay",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Paraguay genel olarak huzurlu bir seyahat ülkesidir; Brezilya sınırındaki Ciudad del Este bölgesinde standart dikkat gereklidir.",
+      "en": "Paraguay is generally peaceful; exercise normal precautions, with vigilance around Ciudad del Este border zones.",
+      "de": "Paraguay ist weitgehend friedlich; normale Vorsichtsmaßnahmen, erhöht im Grenzgebiet Ciudad del Este.",
+      "ru": "Парагвай в целом спокоен; соблюдайте обычные правила, проявляя бдительность в приграничном Сьюдад-дель-Эсте.",
+      "es": "Paraguay es generalmente tranquilo; aplican precauciones normales con cautela en Ciudad del Este."
+    },
+    "regional_warnings": [
+      {
+        "area": "Amambay, San Pedro, and Canindeyú border departments",
+        "level": 2,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 30.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/paraguay",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Paraguay reach approximately 30.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 74.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/paraguay",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds across Asunción measure 74.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Tigo and Claro provide 4G tourist SIMs with rapid registration in Asunción (ASU airport). Drinking iced tereré (herbal yerba mate with cold water) is the defining social ritual across the country.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.conatel.gov.py",
+          "tier": 1,
+          "title": "Comisión Nacional de Telecomunicaciones (CONATEL)"
+        }
+      ],
+      "evidence_quote": "Passport presentation is standard for prepaid SIM card activation",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt Paraguay",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/es-py/",
+        "tier": 2,
+        "title": "Bolt Paraguay"
+      }
+    },
+    {
+      "name": "MUV",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://muvapp.com",
+        "tier": 2,
+        "title": "MUV Paraguay"
+      }
+    },
+    {
+      "name": "PedidosYa Paraguay",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.py",
+        "tier": 2,
+        "title": "PedidosYa Paraguay"
+      }
+    },
+    {
+      "name": "Bancard Pago Móvil",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.bancard.com.py",
+        "tier": 1,
+        "title": "Bancard Paraguay"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 88%) with deep bilingual Spanish and Guaraní national identity",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gov.py",
+          "tier": 1,
+          "title": "INE Paraguay"
+        }
+      ],
+      "evidence_quote": "Catholicism is the predominant faith; Guaraní is co-official and spoken by over 80% of the population",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Virgen de Caacupé Pilgrimage (December 8), San Juan Ára fire-walking festival, Asunción Carnival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://senatur.gov.py",
+          "tier": 1,
+          "title": "Secretaría Nacional de Turismo (SENATUR)"
+        }
+      ],
+      "evidence_quote": "The annual pilgrimage to the Basilica of Caacupé is the largest religious event in Paraguay",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Never refuse an invitation to share tereré (cold yerba mate) as it is considered an important gesture of friendship and warmth. Police checkpoints outside major cities are routine; carry passport and international driving permit.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://senatur.gov.py",
+          "tier": 1,
+          "title": "SENATUR Cultural Guide"
+        }
+      ],
+      "evidence_quote": "Tereré culture (UNESCO Intangible Cultural Heritage) is the core social connector in Paraguay",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in restaurants and cafés. Tipping taxi drivers is not customary, though rounding up the meter is appreciated.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://senatur.gov.py",
+          "tier": 1,
+          "title": "SENATUR Travel Guide"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in restaurants when service is not included",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "La Santísima Trinidad de Paraná Cizvit Misyonu",
+        "en": "Jesuit Missions of La Santísima Trinidad de Paraná",
+        "de": "Jesuitenmissionen von La Santísima Trinidad de Paraná",
+        "ru": "Иезуитские миссии Ла-Сантисима-Тринидад-де-Парана",
+        "es": "Misiones Jesuíticas de la Santísima Trinidad de Paraná"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/648",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Itaipu Hidroelektrik Barajı",
+        "en": "Itaipu Hydroelectric Dam",
+        "de": "Itaipu-Wasserkraftwerk",
+        "ru": "Гидроэлектростанция Итайпу",
+        "es": "Represa Hidroeléctrica de Itaipú"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.itaipu.gov.py",
+          "tier": 1,
+          "title": "Itaipu Binacional"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "La Santísima Trinidad de Paraná Cizvit Misyonu Harabeleri (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Josep M. Gracia",
+        "source_url": "/images/countries/py-480.webp",
+        "attribution_text": "Jesuit Missions of La Santísima Trinidad de Paraná in Paraguay. Josep M. Gracia, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "La Santísima Trinidad de Paraná Cizvit Misyonu Harabeleri (UNESCO), Paraguay",
+          "en": "Jesuit Missions of La Santísima Trinidad de Paraná (UNESCO), Paraguay",
+          "de": "Jesuitenmissionen von La Santísima Trinidad de Paraná (UNESCO), Paraguay",
+          "ru": "Руины иезуитских миссий Ла-Сантисима-Тринидад-де-Парана (ЮНЕСКО), Парагвай",
+          "es": "Ruinas de las Misiones Jesuíticas de la Santísima Trinidad de Paraná (UNESCO), Paraguay"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "paraguay",
+      "en": "paraguay",
+      "de": "paraguay",
+      "ru": "paragvay",
+      "es": "paraguay"
+    },
+    "title": {
+      "tr": "Paraguay Vize Rehberi, 90 Gün Vizesiz Giriş ve Cizvit Misyonları | Vizamigo",
+      "en": "Paraguay Visa Guide, 90-Day Visa-Free Rules & Travel Guide | Vizamigo",
+      "de": "Paraguay Visum-Leitfaden, 90 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Парагвай, 90 дней без визы и миссии иезуитов | Vizamigo",
+      "es": "Guía de Visa de Paraguay, 90 Días sin Visa y Misiones Jesuíticas | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Paraguay Türk pasaportuna 90 gün vizesiz giriş, tereré kültürü, Bolt taksi kullanımı, Tip C prizler ve Cizvit Misyonları gezi rehberi.",
+      "en": "Paraguay 90-day visa-free rules, tereré tea etiquette, Bolt ride-hailing tips, Type C sockets, and Jesuit Missions guide.",
+      "de": "Paraguay 90 Tage visafreie Einreise, Tereré-Teeritual, Bolt-Taxi, Steckdosentyp C und Reisetipps Jesuitenmissionen.",
+      "ru": "Правила въезда в Парагвай на 90 дней без визы, чай терере, такси Bolt, европейские розетки Type C и миссии иезуитов.",
+      "es": "Requisitos de entrada sin visa a Paraguay (90 días), tradición del tereré, aplicación Bolt, enchufes Tipo C y misiones jesuíticas."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

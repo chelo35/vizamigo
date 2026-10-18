@@ -1,0 +1,463 @@
+{
+  "iso2": "BZ",
+  "names": {
+    "tr": "Belize",
+    "en": "Belize",
+    "de": "Belize",
+    "ru": "Белиз",
+    "es": "Belice"
+  },
+  "capital": {
+    "value": "Belmopan",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.belmopancitycouncil.org",
+        "tier": 1,
+        "title": "Belmopan City Council"
+      }
+    ],
+    "evidence_quote": "Belmopan is the purpose-built capital city of Belize, established after Hurricane Hattie",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BZD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbank.org.bz",
+        "tier": 1,
+        "title": "Central Bank of Belize"
+      }
+    ],
+    "evidence_quote": "The Belize Dollar (BZD) is pegged to the US Dollar at exactly 2 BZD = 1 USD; USD is accepted everywhere",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hydromet.gov.bz",
+        "tier": 1,
+        "title": "National Meteorological Service of Belize"
+      }
+    ],
+    "evidence_quote": "Belize operates year-round on Central Standard Time UTC-6 without daylight saving changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V/220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bel.com.bz",
+          "tier": 1,
+          "title": "Belize Electricity Limited (BEL)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply across Belize is 110V/220V dual voltage 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bel.com.bz",
+          "tier": 1,
+          "title": "Belize Electricity Limited"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Belize is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Outlets accommodate US Type A and B plugs, with British Type G three-pin sockets in older establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.bz",
+          "tier": 1,
+          "title": "Belize Police Department"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police assistance throughout Belize",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.bz",
+          "tier": 1,
+          "title": "Ministry of Health & Wellness Belize"
+        }
+      ],
+      "evidence_quote": "Call 911 or BERT (Belize Emergency Response Team) +501 223-3292 for medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.belize.gov.bz",
+          "tier": 1,
+          "title": "National Fire Service of Belize"
+        }
+      ],
+      "evidence_quote": "Dial 911 or local fire station numbers for emergency fire services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.belize.gov.bz",
+          "tier": 1,
+          "title": "Government of Belize Emergency Services"
+        }
+      ],
+      "evidence_quote": "911 is the central emergency number operational nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+501 227-2420",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.travelbelize.org",
+          "tier": 1,
+          "title": "Belize Tourism Board (BTB)"
+        }
+      ],
+      "evidence_quote": "Tourism Police Unit (TPU) headquarters in Belize City operates at +501 227-2420",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/belize",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Belize City güney kesiminde çete suçları nedeniyle dikkatli olunmalıdır; Ambergris Caye, Caye Caulker ve Placencia tatil adaları son derece güvenlidir.",
+      "en": "Exercise increased caution due to gang activity in south Belize City; the Cayes and reef resort areas are very safe.",
+      "de": "Erhöhte Vorsicht im Süden von Belize City; die Cayes (Caye Caulker, San Pedro) sind sichere Urlaubsinseln.",
+      "ru": "Проявляйте осмотрительность в Белиз-Сити; курортные острова Амбергрис-Кей и Кей-Колкер спокойны и безопасны.",
+      "es": "Actúe con mayor cautela en el sur de Ciudad de Belice; los Cayos y arrecifes son zonas turísticas muy seguras."
+    },
+    "regional_warnings": [
+      {
+        "area": "Belize City south side (south of Haulover Creek Canal)",
+        "level": 3,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 34.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/belize",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Belize reach approximately 34.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 55.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/belize",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in tourist towns measure 55.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digi (BTL) and SMART provide 4G mobile data packages. English is the official language. US dollars are universally accepted at the fixed exchange rate of 1 USD = 2 BZD everywhere in Belize.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.travelbelize.org",
+          "tier": 1,
+          "title": "Belize Tourism Board"
+        }
+      ],
+      "evidence_quote": "US dollars are accepted across the nation at the official fixed 2:1 peg",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Belize Travel Guide (BTB)",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.travelbelize.org",
+        "tier": 1,
+        "title": "Belize Tourism Board"
+      }
+    },
+    {
+      "name": "Tropic Air App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.tropicair.com",
+        "tier": 2,
+        "title": "Tropic Air Belize"
+      }
+    },
+    {
+      "name": "Belize Bank Mobile",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.belizebank.com",
+        "tier": 1,
+        "title": "The Belize Bank Limited"
+      }
+    },
+    {
+      "name": "Maya Island Air App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mayaislandair.com",
+        "tier": 2,
+        "title": "Maya Island Air"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 40%), Protestantism (approx. 32%), with Garifuna and Maya cultural heritage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sib.org.bz",
+          "tier": 1,
+          "title": "Statistical Institute of Belize"
+        }
+      ],
+      "evidence_quote": "Belize is multicultural with English as the official language and rich Garifuna drumming traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Garifuna Settlement Day (Nov 19), September Celebrations & Carnival, San Pedro Lobster Fest",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.travelbelize.org",
+          "tier": 1,
+          "title": "BTB Festivals Calendar"
+        }
+      ],
+      "evidence_quote": "Garifuna Settlement Day marks the 1832 arrival of the Garinagu people with drumming and parades",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Touching or standing on living coral reefs in the Belize Barrier Reef reserve is strictly prohibited and subject to marine conservation fines. Sunscreen used when snorkeling must be biodegradable/reef-safe. English is universally spoken.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://fisheries.gov.bz",
+          "tier": 1,
+          "title": "Belize Fisheries Department"
+        }
+      ],
+      "evidence_quote": "Damaging or harvesting coral in marine protected areas is prohibited under the Fisheries Act",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10-15% is customary in restaurants and resorts. Boat captains and diving instructors are typically tipped $10-20 per person per excursion.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.travelbelize.org",
+          "tier": 1,
+          "title": "BTB Visitor Guide"
+        }
+      ],
+      "evidence_quote": "A 10-15% gratuity is standard for good restaurant and guide service",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Great Blue Hole Dev Deniz Çukuru",
+        "en": "Great Blue Hole Marine Sinkhole",
+        "de": "Great Blue Hole Meeresdoline",
+        "ru": "Большая голубая дыра",
+        "es": "Gran Agujero Azul Cenote Marino"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/764",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Caye Caulker ve Bariyer Resifi",
+        "en": "Caye Caulker & Barrier Reef",
+        "de": "Caye Caulker & Barrieredriff",
+        "ru": "Остров Кей-Колкер и Барьерный риф",
+        "es": "Cayo Caulker y Arrecife de Barrera"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/764",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Great Blue Hole Dev Deniz Çukuru ve Resif (UNESCO)",
+        "license": "CC-BY",
+        "author": "dronepicr",
+        "source_url": "/images/countries/bz-480.webp",
+        "attribution_text": "Great Blue Hole marine sinkhole in Belize. dronepicr, CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Great Blue Hole Dev Deniz Çukuru ve Resif (UNESCO), Belize",
+          "en": "Great Blue Hole Marine Sinkhole & Coral Reef (UNESCO), Belize",
+          "de": "Great Blue Hole Meeresdoline & Korallenriff (UNESCO), Belize",
+          "ru": "Большая голубая дыра и коралловый риф (ЮНЕСКО), Белиз",
+          "es": "Gran Agujero Azul Cenote Marino y Arrecife de Coral (UNESCO), Belice"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "belize",
+      "en": "belize",
+      "de": "belize",
+      "ru": "beliz",
+      "es": "belice"
+    },
+    "title": {
+      "tr": "Belize Vize Rehberi, 30 Gün Vizesiz Giriş ve Great Blue Hole | Vizamigo",
+      "en": "Belize Visa Guide, 30-Day Visa-Free Rules & Great Blue Hole | Vizamigo",
+      "de": "Belize Visum-Leitfaden, 30 Tage visafrei & Great Blue Hole | Vizamigo",
+      "ru": "Виза в Белиз, 30 дней без визы и Большая голубая дыра | Vizamigo",
+      "es": "Guía de Visa de Belice, 30 Días sin Visa y Gran Agujero Azul | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Belize Türk pasaportuna 30 gün vizesiz giriş, sabit Amerikan Doları kuru, resif dalış kuralları, Tip A/B/G prizler ve Great Blue Hole rehberi.",
+      "en": "Belize 30-day visa-free rules, 2:1 fixed US Dollar peg, coral protection laws, Type A/B/G sockets, and Great Blue Hole diving guide.",
+      "de": "Belize 30 Tage visafreie Einreise, fester US-Dollar-Wechselkurs, Riffschutzregeln, Steckdosentyp A/B/G und Great Blue Hole.",
+      "ru": "Правила въезда в Белиз на 30 дней без визы, доллар США по курсу 2:1, дайвинг на Большой голубой дыре, розетки Type A/B/G.",
+      "es": "Requisitos de entrada sin visa a Belice (30 días), paridad fija del dólar estadounidense, buceo en el Gran Agujero Azul."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

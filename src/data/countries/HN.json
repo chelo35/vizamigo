@@ -1,0 +1,462 @@
+{
+  "iso2": "HN",
+  "names": {
+    "tr": "Honduras",
+    "en": "Honduras",
+    "de": "Honduras",
+    "ru": "Гондурас",
+    "es": "Honduras"
+  },
+  "capital": {
+    "value": "Tegucigalpa",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://amdc.hn",
+        "tier": 1,
+        "title": "Alcaldía Municipal del Distrito Central (Tegucigalpa)"
+      }
+    ],
+    "evidence_quote": "Tegucigalpa is the constitutional capital and seat of government of Honduras",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "HNL",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bch.hn",
+        "tier": 1,
+        "title": "Banco Central de Honduras"
+      }
+    ],
+    "evidence_quote": "The Honduran Lempira (HNL, L) is the legal tender currency of the Republic of Honduras",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.goascoran.com",
+        "tier": 1,
+        "title": "Comisión Permanente de Contingencias (COPECO)"
+      }
+    ],
+    "evidence_quote": "Honduras operates on Central Standard Time UTC-6 with no daylight saving time adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enee.hn",
+          "tier": 1,
+          "title": "Empresa Nacional de Energía Eléctrica (ENEE)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Honduras is 110V/120V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enee.hn",
+          "tier": 1,
+          "title": "ENEE Honduras"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Standard wall sockets accommodate US Type A and Type B plugs with two flat parallel pins",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policianacional.gob.hn",
+          "tier": 1,
+          "title": "Policía Nacional de Honduras"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police response throughout Honduras",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "195",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cruzroja.org.hn",
+          "tier": 1,
+          "title": "Cruz Roja Hondureña"
+        }
+      ],
+      "evidence_quote": "Call 195 for Cruz Roja ambulance dispatch and emergency medical assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "198",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bomberos.gob.hn",
+          "tier": 1,
+          "title": "Benemérito Cuerpo de Bomberos de Honduras"
+        }
+      ],
+      "evidence_quote": "Dial 198 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://911.gob.hn",
+          "tier": 1,
+          "title": "Sistema Nacional de Emergencias 911 Honduras"
+        }
+      ],
+      "evidence_quote": "911 is the central emergency dispatch center operational 24/7",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://iht.hn",
+          "tier": 1,
+          "title": "Instituto Hondureño de Turismo - Policía Turística"
+        }
+      ],
+      "evidence_quote": "Policía Turística patrols Roatán, Utila, and Copán Ruinas coordinating via 911",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 3,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/honduras",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "San Pedro Sula ve Tegucigalpa'da yüksek suç oranları nedeniyle seyahat planları gözden geçirilmelidir; Roatán ve Copán turistik bölgeleri güvenlidir.",
+      "en": "Reconsider travel to mainland cities due to crime; Roatan, Bay Islands, and Copan Ruinas are safe with standard caution.",
+      "de": "Reisen auf das Festland sorgfältig abwägen; die Bay Islands (Roatán) und Copán sind touristisch gut abgesichert.",
+      "ru": "Рекомендуется пересмотреть поездки на материк; острова Роатан и руины Копан безопасны при обычных мерах.",
+      "es": "Reconsidere viajar a ciudades del interior por delincuencia; Roatán y Copán son destinos turísticos seguros."
+    },
+    "regional_warnings": [
+      {
+        "area": "Gracias a Dios Department (Mosquito Coast)",
+        "level": 4,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 32.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/honduras",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Honduras reach approximately 32.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 48.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/honduras",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 48.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Claro and Tigo are the principal carriers with 4G coverage. Arriving visitors must complete the digital customs declaration (prechequeo.inm.gob.hn). Roatán is internationally famed for Caribbean scuba diving.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://inm.gob.hn",
+          "tier": 1,
+          "title": "Instituto Nacional de Migración de Honduras (INM)"
+        }
+      ],
+      "evidence_quote": "Pre-check electronic registration is mandatory for all travelers entering or leaving Honduras",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber Honduras",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/hn/es/",
+        "tier": 2,
+        "title": "Uber Honduras"
+      }
+    },
+    {
+      "name": "Hugo Honduras",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hugoapp.com",
+        "tier": 2,
+        "title": "Hugo Central America"
+      }
+    },
+    {
+      "name": "PedidosYa Honduras",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.hn",
+        "tier": 2,
+        "title": "PedidosYa Honduras"
+      }
+    },
+    {
+      "name": "Waze Honduras",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.waze.com",
+        "tier": 2,
+        "title": "Waze Navigation"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 46%) and Evangelical Protestantism (approx. 41%) with Garifuna heritage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://iht.hn",
+          "tier": 1,
+          "title": "Instituto Hondureño de Turismo"
+        }
+      ],
+      "evidence_quote": "Catholicism and Protestantism coexist alongside Afro-indigenous Garifuna spiritual rituals",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Feria Isidra Carnival in La Ceiba, Holy Week (Semana Santa) in Comayagua, Guancasco reconciliation ceremonies",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://iht.hn",
+          "tier": 1,
+          "title": "IHT Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "The Grand International Carnival of Friendship in La Ceiba is the premier annual cultural celebration",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Avoid walking alone after dark in San Pedro Sula and Tegucigalpa; use radio taxis or Uber. Never drink untreated tap water. Under the CA-4 agreement, a 90-day visa permits travel between Honduras, Guatemala, El Salvador, and Nicaragua.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://inm.gob.hn",
+          "tier": 1,
+          "title": "INM Honduras"
+        }
+      ],
+      "evidence_quote": "CA-4 border convention allows 90 days of combined travel across the four signatory republics",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in restaurants. In beach dive resorts in Roatán and Utila, tipping dive masters and boat crew ($5-10 per day) is standard practice.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://iht.hn",
+          "tier": 1,
+          "title": "IHT Travel Guide"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in hospitality and diving services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Copán Antik Maya Harabeleri ve Akropol",
+        "en": "Copán Mayan Archaeological Site & Acropolis",
+        "de": "Maya-Ruinen von Copán & Akropolis",
+        "ru": "Руины майя в Копане и Акрополь",
+        "es": "Sitio Arqueológico Maya de Copán y Acrópolis"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/129",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Roatán Adası ve Karayip Mercan Resifleri",
+        "en": "Roatan Island & Caribbean Barrier Reef",
+        "de": "Insel Roatán & Karibisches Barrieredriff",
+        "ru": "Остров Роатан и коралловый барьерный риф",
+        "es": "Isla de Roatán y Arrecife de Coral Caribeño"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://iht.hn",
+          "tier": 1,
+          "title": "Instituto Hondureño de Turismo"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Copán Antik Maya Arkeolojik Harabeleri ve Akropol (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Mónica J. Mora",
+        "source_url": "/images/countries/hn-480.webp",
+        "attribution_text": "Copán Mayan Archaeological Ruins in Honduras. Mónica J. Mora, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Copán Antik Maya Arkeolojik Harabeleri ve Akropol (UNESCO), Honduras",
+          "en": "Copán Mayan Archaeological Ruins & Acropolis (UNESCO), Honduras",
+          "de": "Maya-Ruinen von Copán und Akropolis (UNESCO), Honduras",
+          "ru": "Археологические руины майя в Копане и Акрополь (ЮНЕСКО), Гондурас",
+          "es": "Ruinas Arqueológicas Mayas de Copán y Acrópolis (UNESCO), Honduras"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "honduras",
+      "en": "honduras",
+      "de": "honduras",
+      "ru": "gonnduras",
+      "es": "honduras"
+    },
+    "title": {
+      "tr": "Honduras Vize Rehberi, 90 Gün Vizesiz Giriş, Roatán ve Copán | Vizamigo",
+      "en": "Honduras Visa Guide, 90-Day Visa-Free Rules & Roatan Travel | Vizamigo",
+      "de": "Honduras Visum-Leitfaden, 90 Tage visafrei & Roatán Reisetipps | Vizamigo",
+      "ru": "Виза в Гондурас, 90 дней без визы, дайвинг на Роатане и Копан | Vizamigo",
+      "es": "Guía de Visa de Honduras, 90 Días sin Visa, Roatán y Copán | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Honduras Türk pasaportuna 90 gün vizesiz giriş (CA-4), prechequeo formu, Roatán dalış rehberi, Tip A/B prizler ve Copán Maya harabeleri rehberi.",
+      "en": "Honduras 90-day visa-free CA-4 rules, prechequeo online form, Roatan scuba diving tips, Type A/B sockets, and Copan Mayan ruins.",
+      "de": "Honduras 90 Tage visafreie Einreise (CA-4), Online-Prechequeo, Roatán-Tauchurlaub, Steckdosentyp A/B und Copán-Ruinen.",
+      "ru": "Правила въезда в Гондурас на 90 дней без визы по соглашению CA-4, дайвинг на Роатане, розетки Type A/B и руины майя Копан.",
+      "es": "Requisitos de entrada sin visa a Honduras (90 días CA-4), prechequeo migratorio, buceo en Roatán y ruinas mayas de Copán."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

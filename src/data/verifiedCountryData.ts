@@ -118,6 +118,14 @@ import RU from './countries/RU.json';
 import IL from './countries/IL.json';
 import VA from './countries/VA.json';
 import SV from './countries/SV.json';
+import BO from './countries/BO.json';
+import PY from './countries/PY.json';
+import HN from './countries/HN.json';
+import NI from './countries/NI.json';
+import BZ from './countries/BZ.json';
+import BB from './countries/BB.json';
+import TT from './countries/TT.json';
+import LC from './countries/LC.json';
 
 export interface VerifiedSource {
   url: string;
@@ -370,6 +378,14 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   IL: IL as unknown as VerifiedCountryRecord,
   VA: VA as unknown as VerifiedCountryRecord,
   SV: SV as unknown as VerifiedCountryRecord,
+  BO: BO as unknown as VerifiedCountryRecord,
+  PY: PY as unknown as VerifiedCountryRecord,
+  HN: HN as unknown as VerifiedCountryRecord,
+  NI: NI as unknown as VerifiedCountryRecord,
+  BZ: BZ as unknown as VerifiedCountryRecord,
+  BB: BB as unknown as VerifiedCountryRecord,
+  TT: TT as unknown as VerifiedCountryRecord,
+  LC: LC as unknown as VerifiedCountryRecord,
 };
 
 /**

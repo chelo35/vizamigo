@@ -1,0 +1,450 @@
+{
+  "iso2": "LC",
+  "names": {
+    "tr": "Saint Lucia",
+    "en": "Saint Lucia",
+    "de": "St. Lucia",
+    "ru": "Сент-Люсия",
+    "es": "Santa Lucía"
+  },
+  "capital": {
+    "value": "Castries",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.govt.lc",
+        "tier": 1,
+        "title": "Government of Saint Lucia"
+      }
+    ],
+    "evidence_quote": "Castries is the capital city and main commercial seaport of Saint Lucia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XCD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eccb-centralbank.org",
+        "tier": 1,
+        "title": "Eastern Caribbean Central Bank (ECCB)"
+      }
+    ],
+    "evidence_quote": "The Eastern Caribbean Dollar (XCD, EC$) is pegged to USD at 2.70 XCD = 1 USD; USD is widely accepted",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.slumet.gov.lc",
+        "tier": 1,
+        "title": "Saint Lucia Meteorological Services"
+      }
+    ],
+    "evidence_quote": "Saint Lucia operates on Atlantic Standard Time UTC-4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.lucelec.com",
+          "tier": 1,
+          "title": "St. Lucia Electricity Services Limited (LUCELEC)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase electricity across Saint Lucia is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.lucelec.com",
+          "tier": 1,
+          "title": "LUCELEC Saint Lucia"
+        }
+      ],
+      "evidence_quote": "The national electric power grid operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "British standard Type G rectangular three-pin plugs and wall sockets are universal across Saint Lucia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rslpf.com",
+          "tier": 1,
+          "title": "Royal Saint Lucia Police Force (RSLPF)"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency police assistance throughout Saint Lucia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.slufs.gov.lc",
+          "tier": 1,
+          "title": "Saint Lucia Fire and Ambulance Service"
+        }
+      ],
+      "evidence_quote": "Call 911 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.slufs.gov.lc",
+          "tier": 1,
+          "title": "Saint Lucia Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rslpf.com",
+          "tier": 1,
+          "title": "Royal Saint Lucia Police Force"
+        }
+      ],
+      "evidence_quote": "999 coordinates unified emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 758 456 3865",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stlucia.org",
+          "tier": 1,
+          "title": "Saint Lucia Tourism Authority (SLTA)"
+        }
+      ],
+      "evidence_quote": "Special Operations and Tourist Police Units patrol Rodney Bay and Soufrière at +1 758 456 3865",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/saint-lucia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Saint Lucia Karayipler'in en huzurlu ve romantik ada destinasyonlarındandır; standart seyahat önlemleri yeterlidir.",
+      "en": "Saint Lucia is a safe and tranquil Caribbean island; exercise normal travel precautions.",
+      "de": "St. Lucia ist eine friedliche und sichere Karibikinsel; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Сент-Люсия — один из самых романтичных и безопасных карибских курортов; действуют стандартные правила.",
+      "es": "Santa Lucía es un destino caribeño pacífico y seguro; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 38.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/saint-lucia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Saint Lucia reach approximately 38.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 72.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/saint-lucia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Saint Lucia measure 72.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel and Flow offer 4G tourist SIMs at Hewanorra International Airport (UVF) in the south and George F.L. Charles Airport (SLU) near Castries. Travelers must complete the digital immigration card at stlucia.org/enter before boarding.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stlucia.org",
+          "tier": 1,
+          "title": "Saint Lucia Tourism Authority"
+        }
+      ],
+      "evidence_quote": "All visitors must submit the official digital Saint Lucia Immigration and Customs form prior to arrival",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Saint Lucia Travel Guide",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.stlucia.org",
+        "tier": 1,
+        "title": "Saint Lucia Tourism Authority"
+      }
+    },
+    {
+      "name": "Payce Digital",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://paycedigital.com",
+        "tier": 2,
+        "title": "Payce Digital Caribbean"
+      }
+    },
+    {
+      "name": "758 Taxi St. Lucia",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://758taxi.com",
+        "tier": 2,
+        "title": "758 Taxi Service"
+      }
+    },
+    {
+      "name": "Lucian Express",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://lucianexpress.com",
+        "tier": 2,
+        "title": "Lucian Express Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 61%) and Protestantism (approx. 25%) with rich Anglo-French Creole traditions",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stats.gov.lc",
+          "tier": 1,
+          "title": "The Central Statistical Office of Saint Lucia"
+        }
+      ],
+      "evidence_quote": "Catholicism is the predominant faith; Saint Lucian French Creole (Kwéyòl) is spoken universally alongside English",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Saint Lucia Jazz & Arts Festival in May, Saint Lucia Carnival in July, Jounen Kwéyòl (Creole Heritage Day in October)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stlucia.org",
+          "tier": 1,
+          "title": "SLTA Events Calendar"
+        }
+      ],
+      "evidence_quote": "Saint Lucia Jazz & Arts Festival is the Caribbean's premier musical and cultural gathering",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage clothing of any color or style is strictly illegal for civilians and tourists under Saint Lucian law. Do not touch or harvest sea turtle eggs. British three-pin Type G plugs are standard; bring adapters for European or American appliances.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rslpf.com",
+          "tier": 1,
+          "title": "Royal Saint Lucia Police Force Legal Bulletin"
+        }
+      ],
+      "evidence_quote": "Civilian possession or wearing of camouflage material is prohibited by statute",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually included on restaurant and hotel bills; leaving an extra 5-10% in cash for staff is appreciated.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stlucia.org",
+          "tier": 1,
+          "title": "SLTA Traveler Guide"
+        }
+      ],
+      "evidence_quote": "A 10% service charge is standard in restaurants and hospitality bills",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "İkiz Pitonlar (Gros Piton & Petit Piton) Volkanik Zirveleri",
+        "en": "The Pitons Volcanic Spire Peaks",
+        "de": "Vulkan-Zwillinge The Pitons",
+        "ru": "Вулканические пики Питоны",
+        "es": "Picos Volcánicos Los Pitones"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1143",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Soufrière Arabayla Girilen Volkan ve Kükürtlü Kaplıcalar",
+        "en": "Soufrière Drive-in Volcano & Sulphur Springs",
+        "de": "Soufrière Drive-in-Vulkan & Schwefelquellen",
+        "ru": "Вулкан Суфриер и серные источники",
+        "es": "Volcán Soufrière y Aguas Termales de Azufre"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.stlucia.org",
+          "tier": 1,
+          "title": "Saint Lucia Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "İkiz Pitonlar (Gros Piton & Petit Piton) Volkanik Zirveleri (UNESCO)",
+        "license": "CC-BY",
+        "author": "DavidMPyle",
+        "source_url": "/images/countries/lc-480.webp",
+        "attribution_text": "The Pitons volcanic spires in Saint Lucia. DavidMPyle, CC BY 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "İkiz Pitonlar (Gros Piton & Petit Piton) Volkanik Zirveleri (UNESCO), Saint Lucia",
+          "en": "The Pitons (Gros Piton & Petit Piton) Volcanic Spires (UNESCO), Saint Lucia",
+          "de": "Vulkan-Zwillinge The Pitons (Gros Piton & Petit Piton) (UNESCO), St. Lucia",
+          "ru": "Вулканические пики Питоны (Гро-Питон и Пти-Питон) (ЮНЕСКО), Сент-Люсия",
+          "es": "Picos Volcánicos Los Pitones (Gros Piton y Petit Piton) (UNESCO), Santa Lucía"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "saint-lucia",
+      "en": "saint-lucia",
+      "de": "st-lucia",
+      "ru": "sent-lyusiya",
+      "es": "santa-lucia"
+    },
+    "title": {
+      "tr": "Saint Lucia Vize Rehberi, 42 Gün Vizesiz Giriş, Kamuflaj Yasağı ve Pitonlar | Vizamigo",
+      "en": "Saint Lucia Visa Guide, 42-Day Visa-Free Rules, Camo Ban & Pitons | Vizamigo",
+      "de": "St. Lucia Visum-Leitfaden, 42 Tage visafrei, Camouflage-Verbot & Pitons | Vizamigo",
+      "ru": "Виза в Сент-Люсию, 42 дня без визы, запрет камуфляжа и пики Питоны | Vizamigo",
+      "es": "Guía de Visa de Santa Lucía, 42 Días sin Visa y Picos Pitones | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Saint Lucia Türk pasaportuna 42 gün vizesiz giriş, sıkı kamuflaj giysisi yasağı, Tip G prizler, Doğu Karayip Doları ve Piton volkanları rehberi.",
+      "en": "Saint Lucia 42-day visa-free rules, strict military camouflage ban, Type G British sockets, XCD currency, and Pitons travel guide.",
+      "de": "St. Lucia 42 Tage visafreie Einreise, Verbot von Camouflage-Kleidung, Steckdosentyp G und Reiseführer Vulkan-Picks Pitons.",
+      "ru": "Правила въезда в Сент-Люсию на 42 дня без визы, строгий запрет камуфляжа, розетки Type G и вулканические пики Питоны.",
+      "es": "Requisitos de entrada sin visa a Santa Lucía (42 días), prohibición de ropa de camuflaje, enchufes Tipo G y picos Pitones."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

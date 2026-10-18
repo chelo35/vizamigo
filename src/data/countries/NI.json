@@ -1,0 +1,451 @@
+{
+  "iso2": "NI",
+  "names": {
+    "tr": "Nikaragua",
+    "en": "Nicaragua",
+    "de": "Nicaragua",
+    "ru": "Никарагуа",
+    "es": "Nicaragua"
+  },
+  "capital": {
+    "value": "Managua",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.managua.gob.ni",
+        "tier": 1,
+        "title": "Alcaldía de Managua"
+      }
+    ],
+    "evidence_quote": "Managua is the capital and largest urban center of the Republic of Nicaragua",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "NIO",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcn.gob.ni",
+        "tier": 1,
+        "title": "Banco Central de Nicaragua"
+      }
+    ],
+    "evidence_quote": "The Nicaraguan Córdoba (NIO, C$) is the official legal tender currency",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ineter.gob.ni",
+        "tier": 1,
+        "title": "Instituto Nicaragüense de Estudios Territoriales (INETER)"
+      }
+    ],
+    "evidence_quote": "Nicaragua observes Central Standard Time UTC-6 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gob.ni",
+          "tier": 1,
+          "title": "Instituto Nicaragüense de Energía (INE)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Nicaragua is 120V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gob.ni",
+          "tier": 1,
+          "title": "INE Nicaragua"
+        }
+      ],
+      "evidence_quote": "National alternating current grid frequency is standard 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "North American Type A and Type B two-flat-pin sockets are standard throughout Nicaragua",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gob.ni",
+          "tier": 1,
+          "title": "Policía Nacional de Nicaragua"
+        }
+      ],
+      "evidence_quote": "Dial 118 for emergency police response throughout Nicaragua",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "128",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cruzrojanicaraguense.org.ni",
+          "tier": 1,
+          "title": "Cruz Roja Nicaragüense"
+        }
+      ],
+      "evidence_quote": "Call 128 for emergency medical response and Cruz Roja ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.migob.gob.ni",
+          "tier": 1,
+          "title": "Dirección General de Bomberos de Nicaragua"
+        }
+      ],
+      "evidence_quote": "Dial 115 for national emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gob.ni",
+          "tier": 1,
+          "title": "Policía Nacional"
+        }
+      ],
+      "evidence_quote": "118 serves as the primary national emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.intur.gob.ni",
+          "tier": 1,
+          "title": "Instituto Nicaragüense de Turismo (INTUR)"
+        }
+      ],
+      "evidence_quote": "Policía Turística patrols Granada, San Juan del Sur, and León coordinating through 118",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/nicaragua",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Nikaragua'da keyfi gözaltı ve yerel yasaların sert uygulanması riski bulunmaktadır; siyasi yorumlardan ve gösterilerden kesinlikle kaçınılmalıdır.",
+      "en": "Exercise increased caution due to arbitrary enforcement of local laws; strictly avoid political protests and political commentary.",
+      "de": "Erhöhte Vorsicht wegen willkürlicher Rechtsanwendung; meiden Sie politische Äußerungen und Demonstrationen.",
+      "ru": "Проявляйте повышенную осторожность ввиду строгого правоприменения; избегайте политических дискуссий и митингов.",
+      "es": "Actúe con mayor cautela debido a la aplicación estricta de leyes; evite terminantemente cualquier actividad política."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "high",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/nicaragua",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Nicaragua reach approximately 24.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 42.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/nicaragua",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 42.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Claro and Tigo operate 4G networks. Arriving international passengers must pay a US$10 Tourist Card cash fee upon arrival at Managua (MGA). Drones are strictly prohibited and will be confiscated at customs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.migob.gob.ni",
+          "tier": 1,
+          "title": "Dirección General de Migración y Extranjería Nicaragua"
+        }
+      ],
+      "evidence_quote": "Tourists must purchase a US$10 Tourist Card upon entry; bringing unauthorized drones into Nicaragua is illegal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Ray Nicaragua",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://rayapp.lat",
+        "tier": 2,
+        "title": "Ray Ride Hailing Nicaragua"
+      }
+    },
+    {
+      "name": "Aventón",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://aventon.app",
+        "tier": 2,
+        "title": "Aventón Nicaragua"
+      }
+    },
+    {
+      "name": "PedidosYa Nicaragua",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.ni",
+        "tier": 2,
+        "title": "PedidosYa Nicaragua"
+      }
+    },
+    {
+      "name": "Waze Nicaragua",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.waze.com",
+        "tier": 2,
+        "title": "Waze Navigation"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 50%) and Evangelical Protestantism (approx. 37%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.inide.gob.ni",
+          "tier": 1,
+          "title": "INIDE Nicaragua"
+        }
+      ],
+      "evidence_quote": "Catholic and Protestant faiths shape deeply traditional community festivities across Nicaragua",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "La Purísima (Feast of the Immaculate Conception on Dec 7), Santo Domingo de Guzmán in Managua, Toro Guaco in Diriamba",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.intur.gob.ni",
+          "tier": 1,
+          "title": "INTUR Cultural Traditions"
+        }
+      ],
+      "evidence_quote": "La Gritería on December 7 is the most joyous nationwide Catholic street celebration",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Bringing camera drones into Nicaragua is illegal and results in confiscation at airport customs. Foreigners are prohibited from engaging in political activities, demonstrations, or social media activism under Nicaraguan sovereignty laws. CA-4 visa allows 90 combined days in the region.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dga.gob.ni",
+          "tier": 1,
+          "title": "Dirección General de Servicios Aduaneros (DGA)"
+        }
+      ],
+      "evidence_quote": "Unlicensed importation of aerial drones is strictly prohibited under aeronautical customs decrees",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in sit-down restaurants; check if 'propina voluntaria' is already included on the bill before paying.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.intur.gob.ni",
+          "tier": 1,
+          "title": "INTUR Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10% voluntary tip is standard across dining and hotel services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Granada Katedrali ve Kolonyal Tarihi Merkez",
+        "en": "Granada Cathedral & Colonial Historic Center",
+        "de": "Kathedrale von Granada & Kolonialzentrum",
+        "ru": "Кафедральный собор Гранады и колониальный центр",
+        "es": "Catedral de Granada y Centro Histórico Colonial"
+      },
+      "type": "city",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/1802/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ometepe Adası İkiz Volkanları",
+        "en": "Ometepe Island Twin Volcanoes",
+        "de": "Zwillingsvulkane der Insel Ometepe",
+        "ru": "Остров двух вулканов Ометепе",
+        "es": "Isla de Ometepe Volcanes Gemelos"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.intur.gob.ni",
+          "tier": 1,
+          "title": "INTUR Nicaragua"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Granada Katedrali Sarı Neoklasik Cephesi ve Meydanı",
+        "license": "CC-BY-SA",
+        "author": "Sebastian Scheper",
+        "source_url": "/images/countries/ni-480.webp",
+        "attribution_text": "Granada Cathedral yellow neoclassical facade in Nicaragua. Sebastian Scheper, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Granada Katedrali Sarı Neoklasik Cephesi ve Meydanı, Nikaragua",
+          "en": "Granada Cathedral Yellow Neoclassical Facade & Plaza, Nicaragua",
+          "de": "Gelbe neoklassizistische Fassade der Kathedrale von Granada, Nicaragua",
+          "ru": "Жёлтый фасад собора Гранады и центральная площадь, Никарагуа",
+          "es": "Catedral de Granada Fachada Neoclásica Amarilla y Plaza, Nicaragua"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "nikaragua",
+      "en": "nicaragua",
+      "de": "nicaragua",
+      "ru": "nikaragua",
+      "es": "nicaragua"
+    },
+    "title": {
+      "tr": "Nikaragua Vize Rehberi, 90 Gün Vizesiz Giriş, Dron Yasağı ve Granada | Vizamigo",
+      "en": "Nicaragua Visa Guide, 90-Day Visa-Free Rules, Drone Ban & Granada | Vizamigo",
+      "de": "Nicaragua Visum-Leitfaden, 90 Tage visafrei, Drohnenverbot & Granada | Vizamigo",
+      "ru": "Виза в Никарагуа, 90 дней без визы, запрет дронов и Гранада | Vizamigo",
+      "es": "Guía de Visa de Nicaragua, 90 Días sin Visa, Prohibición de Drones y Granada | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Nikaragua Türk pasaportuna 90 gün vizesiz giriş (CA-4), 10$ turist kartı, kesin dron ithalat yasağı, Tip A/B prizler ve Granada gezi rehberi.",
+      "en": "Nicaragua 90-day visa-free CA-4 rules, $10 tourist card, strict drone ban warning, Type A/B sockets, and Granada colonial guide.",
+      "de": "Nicaragua 90 Tage visafreie Einreise (CA-4), 10$ Touristenkarte, striktes Drohnenverbot, Steckdosentyp A/B und Reiseführer Granada.",
+      "ru": "Правила въезда в Никарагуа на 90 дней без визы по CA-4, туристическая карта $10, запрет дронов, розетки Type A/B и Гранада.",
+      "es": "Requisitos de entrada sin visa a Nicaragua (90 días CA-4), tarjeta de turista de $10, prohibición de drones y guía de Granada."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,462 @@
+{
+  "iso2": "BO",
+  "names": {
+    "tr": "Bolivya",
+    "en": "Bolivia",
+    "de": "Bolivien",
+    "ru": "Боливия",
+    "es": "Bolivia"
+  },
+  "capital": {
+    "value": "Sucre / La Paz",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bolivia.gob.bo",
+        "tier": 1,
+        "title": "Gobierno del Estado Plurinacional de Bolivia"
+      }
+    ],
+    "evidence_quote": "Sucre is the constitutional capital; La Paz is the seat of the executive and legislative branches",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BOB",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcb.gob.bo",
+        "tier": 1,
+        "title": "Banco Central de Bolivia"
+      }
+    ],
+    "evidence_quote": "The Bolivian Boliviano (BOB, Bs) is the official currency of the Plurinational State of Bolivia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (BOT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.senamhi.gob.bo",
+        "tier": 1,
+        "title": "SENAMHI Bolivia"
+      }
+    ],
+    "evidence_quote": "Bolivia operates year-round on Bolivia Time UTC-4 without daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.delapaz.bo",
+          "tier": 1,
+          "title": "DELAPAZ - Distribuidora de Electricidad La Paz"
+        }
+      ],
+      "evidence_quote": "Standard domestic electric supply across Bolivia is 230V 50 Hz (with 115V in limited older La Paz zones)",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.delapaz.bo",
+          "tier": 1,
+          "title": "DELAPAZ Bolivia"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Bolivia is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Wall outlets generally accept flat two-pin Type A and round two-pin Type C plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.bo",
+          "tier": 1,
+          "title": "Policía Boliviana"
+        }
+      ],
+      "evidence_quote": "Dial 110 for Radio Patrulla emergency police assistance across Bolivia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minsalud.gob.bo",
+          "tier": 1,
+          "title": "Ministerio de Salud y Deportes Bolivia"
+        }
+      ],
+      "evidence_quote": "Call 118 for emergency medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.bo",
+          "tier": 1,
+          "title": "Dirección Nacional de Bomberos Bolivia"
+        }
+      ],
+      "evidence_quote": "Dial 119 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.bo",
+          "tier": 1,
+          "title": "Policía Boliviana"
+        }
+      ],
+      "evidence_quote": "911 operates as an integrated dispatch number in departmental capitals",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.bo",
+          "tier": 1,
+          "title": "Policía Turística Bolivia (POLTUR)"
+        }
+      ],
+      "evidence_quote": "POLTUR provides dedicated visitor protection in La Paz and major archaeological centers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/bolivia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Bolivya'da periyodik protestolar ve yol barikatları (bloqueos) görülebilir; seyahat rotaları önceden teyit edilmelidir.",
+      "en": "Exercise increased caution in Bolivia due to potential civil unrest, strikes, and highway roadblocks.",
+      "de": "Erhöhte Vorsicht wegen gelegentlicher Streiks, politischer Kundgebungen und Straßenblockaden.",
+      "ru": "Проявляйте повышенную осторожность из-за периодических забастовок и перекрытий междугородных трасс.",
+      "es": "Actúe con mayor cautela debido a bloqueos de carreteras y manifestaciones sociales periódicas."
+    },
+    "regional_warnings": [
+      {
+        "area": "Chapare region (Cochabamba tropics)",
+        "level": 3,
+        "reason": "unrest",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "high",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 26.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bolivia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Bolivia reach approximately 26.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 34.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bolivia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 34.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Entel (state telecom) has by far the widest rural and Altiplano coverage, essential for Uyuni expeditions. Tigo is popular in Santa Cruz. Altitude sickness (soroche) pills should be taken upon arrival in La Paz (3,640m).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.entel.bo",
+          "tier": 1,
+          "title": "Entel Bolivia"
+        }
+      ],
+      "evidence_quote": "Entel provides the most comprehensive cellular network reach across remote Bolivian tourist circuits",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Mi Teleférico",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.miteleferico.bo",
+        "tier": 1,
+        "title": "Empresa Estatal de Transporte por Cable Mi Teleférico"
+      }
+    },
+    {
+      "name": "InDrive Bolivia",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Bolivia"
+      }
+    },
+    {
+      "name": "Yaigo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://yaigoapp.com",
+        "tier": 2,
+        "title": "Yaigo Delivery Bolivia"
+      }
+    },
+    {
+      "name": "Uber Bolivia",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/bo/es/",
+        "tier": 2,
+        "title": "Uber Bolivia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism syncretized with indigenous Andean beliefs (Pachamama veneration)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gob.bo",
+          "tier": 1,
+          "title": "Instituto Nacional de Estadística Bolivia"
+        }
+      ],
+      "evidence_quote": "Catholic ceremonies are interwoven with Andean offerings to Mother Earth (Pachamama)",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Carnaval de Oruro (UNESCO Masterpiece of Heritage), Gran Poder in La Paz, Fiesta de la Candelaria in Copacabana",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1000",
+          "tier": 1,
+          "title": "UNESCO Intangible Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "The Carnival of Oruro showcases iconic Diablada dances and centuries of indigenous folklore",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Coca leaves are legally chewed (acullico) for altitude sickness in Bolivia, but taking coca leaves or coca tea bags out of the country on international flights is strictly illegal under international narcotics conventions. Roadblocks can halt intercity buses unexpectedly.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.aduana.gob.bo",
+          "tier": 1,
+          "title": "Aduana Nacional de Bolivia"
+        }
+      ],
+      "evidence_quote": "Exporting unprocessed coca leaves across international borders is prohibited by international treaties",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is modest; leaving 5-10% in sit-down restaurants is customary. In casual comedores or market stalls, tipping is not practiced.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.viceministerioturismo.gob.bo",
+          "tier": 1,
+          "title": "Viceministerio de Turismo Bolivia"
+        }
+      ],
+      "evidence_quote": "A 10% gratuity is standard in mid-range and fine dining establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Salar de Uyuni Tuz Çölü",
+        "en": "Salar de Uyuni Salt Flats",
+        "de": "Salar de Uyuni Salzsee",
+        "ru": "Солончак Уюни",
+        "es": "Salar de Uyuni Desierto de Sal"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.viceministerioturismo.gob.bo",
+          "tier": 1,
+          "title": "Viceministerio de Turismo"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Titicaca Gölü ve Güneş Adası",
+        "en": "Lake Titicaca & Isla del Sol",
+        "de": "Titicacasee & Sonneninsel",
+        "ru": "Озеро Титикака и остров Солнца",
+        "es": "Lago Titicaca e Isla del Sol"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/1814/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Salar de Uyuni Sonsuz Tuz Çölü ve Ayna Yansıması Günbatımı",
+        "license": "CC-BY-SA",
+        "author": "Luca Galuzzi (Lucag)",
+        "source_url": "/images/countries/bo-480.webp",
+        "attribution_text": "Salar de Uyuni salt flats sunset mirror reflection in Bolivia. Luca Galuzzi (Lucag), CC BY-SA 2.5.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Salar de Uyuni Sonsuz Tuz Çölü ve Ayna Yansıması Günbatımı, Bolivya",
+          "en": "Salar de Uyuni Endless Salt Flats & Sunset Mirror Reflection, Bolivia",
+          "de": "Salar de Uyuni Salzwüste mit Sonnenuntergangs-Spiegelung, Bolivien",
+          "ru": "Бескрайний солончак Уюни и зеркальное отражение заката, Боливия",
+          "es": "Salar de Uyuni Espejo Infinito de Sal y Reflejo al Atardecer, Bolivia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "bolivya",
+      "en": "bolivia",
+      "de": "bolivien",
+      "ru": "boliviya",
+      "es": "bolivia"
+    },
+    "title": {
+      "tr": "Bolivya Vize Rehberi, 90 Gün Vizesiz Giriş ve Salar de Uyuni | Vizamigo",
+      "en": "Bolivia Visa Guide, 90-Day Visa-Free Rules & Uyuni Travel Tips | Vizamigo",
+      "de": "Bolivien Visum-Leitfaden, 90 Tage visafrei & Salar de Uyuni | Vizamigo",
+      "ru": "Виза в Боливию, 90 дней без визы и солончак Уюни | Vizamigo",
+      "es": "Guía de Visa de Bolivia, 90 Días sin Visa y Salar de Uyuni | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Bolivya Türk pasaportuna 90 gün vizesiz giriş, koka yaprağı seyahat uyarıları, irtifa hastalığı, Tip A/C prizler ve Salar de Uyuni gezi rehberi.",
+      "en": "Bolivia 90-day visa-free rules, altitude sickness tips, coca leaf warnings, Type A/C plugs, and Salar de Uyuni travel guide.",
+      "de": "Bolivien 90 Tage visafreie Einreise, Höhenkrankheitstipps, Koka-Warnung, Steckdosentyp A/C und Salar de Uyuni Reiseführer.",
+      "ru": "Правила въезда в Боливию на 90 дней без визы, горная болезнь, запрет вывоза коки, розетки Type A/C и солончак Уюни.",
+      "es": "Requisitos de entrada sin visa a Bolivia (90 días), mal de altura, advertencias sobre hoja de coca y Salar de Uyuni."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
