@@ -1,0 +1,443 @@
+{
+  "iso2": "JM",
+  "names": {
+    "tr": "Jamaika",
+    "en": "Jamaica",
+    "de": "Jamaika",
+    "ru": "Ямайка",
+    "es": "Jamaica"
+  },
+  "capital": {
+    "value": "Kingston",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ksamc.gov.jm",
+        "tier": 1,
+        "title": "Kingston & St. Andrew Municipal Corporation"
+      }
+    ],
+    "evidence_quote": "Kingston is the capital and largest city of Jamaica",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "JMD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://boj.org.jm",
+        "tier": 1,
+        "title": "Bank of Jamaica"
+      }
+    ],
+    "evidence_quote": "The Jamaican Dollar (JMD) is the official currency; US dollars are accepted widely in tourist areas",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (EST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://opm.gov.jm",
+        "tier": 1,
+        "title": "Office of the Prime Minister of Jamaica"
+      }
+    ],
+    "evidence_quote": "Jamaica observes Eastern Standard Time UTC-5 year-round with no daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jpsco.com",
+          "tier": 1,
+          "title": "Jamaica Public Service Company (JPS)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Jamaica is 110V nominal single-phase alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jpsco.com",
+          "tier": 1,
+          "title": "Jamaica Public Service Company (JPS)"
+        }
+      ],
+      "evidence_quote": "Jamaica operates an alternating electrical grid frequency of 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Wall sockets across Jamaica utilize North American Type A and grounded Type B plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://jcf.gov.jm",
+          "tier": 1,
+          "title": "Jamaica Constabulary Force (JCF)"
+        }
+      ],
+      "evidence_quote": "Dial 119 for emergency police assistance across Jamaica",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.jm",
+          "tier": 1,
+          "title": "Ministry of Health and Wellness of Jamaica"
+        }
+      ],
+      "evidence_quote": "Call 110 for emergency ambulance and fire rescue services in Jamaica",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://jfb.gov.jm",
+          "tier": 1,
+          "title": "Jamaica Fire Brigade"
+        }
+      ],
+      "evidence_quote": "Dial 110 for Jamaica Fire Brigade emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://jcf.gov.jm",
+          "tier": 1,
+          "title": "Jamaica Constabulary Force"
+        }
+      ],
+      "evidence_quote": "119 acts as the primary emergency operator contact point",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 876 952 2241",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitjamaica.com",
+          "tier": 1,
+          "title": "Jamaica Tourist Board"
+        }
+      ],
+      "evidence_quote": "Tourist courtesy officers and specialized JCF resort patrols operate across Montego Bay and Ocho Rios",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/jamaica",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Montego Bay, Negril ve Ocho Rios tatil köyleri güvenlidir; Kingston ve kırsal kenar mahallelerde dikkatli olunmalıdır.",
+      "en": "Resort areas like Montego Bay and Negril are secure; avoid certain high-crime downtown Kingston areas.",
+      "de": "Resortgebiete wie Montego Bay und Negril sind sicher; bestimmte Stadtteile von Kingston meiden.",
+      "ru": "Курортные зоны Монтего-Бей и Негрил безопасны; избегайте неблагополучных районов Кингстона.",
+      "es": "Las zonas de resorts como Montego Bay y Negril son seguras; evite barrios periféricos de Kingston."
+    },
+    "regional_warnings": [
+      {
+        "area": "Downtown Kingston (West Kingston, Trench Town, Denham Town)",
+        "level": 3,
+        "reason": "Gang violence and elevated violent crime rates; avoid non-essential night visits.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 43.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/jamaica",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Jamaica measure approximately 43.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 68.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/jamaica",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Jamaica reach 68.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All inbound air passengers must complete the online Jamaica C5 Immigration and Customs Form prior to landing. Flow and Digicel provide 4G/LTE prepaid tourist eSIMs with reliable resort corridor coverage.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://enterjamaica.com",
+          "tier": 1,
+          "title": "Jamaica C5 Online Declaration Portal"
+        }
+      ],
+      "evidence_quote": "Submission of the online C5 immigration and customs declaration is mandatory",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "7Krave",
+      "category": "food",
+      "popular": true,
+      "description": "Leading Jamaican food delivery app serving Kingston, Montego Bay, and Portmore."
+    },
+    {
+      "name": "Knutsford Express",
+      "category": "transport",
+      "popular": true,
+      "description": "Reliable, air-conditioned intercity coach booking service connecting Kingston, Montego Bay, and Negril."
+    },
+    {
+      "name": "OnTime Taxi",
+      "category": "taxi",
+      "popular": true,
+      "description": "Established licensed radio-dispatched taxi service in Kingston and tourism corridors."
+    },
+    {
+      "name": "EnterJamaica",
+      "category": "other",
+      "popular": true,
+      "description": "Official portal app for filling out the mandatory C5 immigration and customs arrival card."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri turistik amaçlı seyahatlerde 90 güne kadar vizeden muaftır. Online C5 formu zorunludur.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.pica.gov.jm",
+        "tier": 1,
+        "title": "Passport, Immigration and Citizenship Agency of Jamaica (PICA)"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Jamaica visa-free for tourism or business stays of up to 90 days with confirmed return tickets.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.pica.gov.jm",
+        "tier": 1,
+        "title": "PICA Jamaica"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not need a visa for tourist visits of up to 90 days in Jamaica.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.pica.gov.jm",
+        "tier": 1,
+        "title": "PICA Jamaica"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens do not require a visa to visit Jamaica for tourism stays of up to 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/jamaica/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать на Ямайку без визы на срок до 90 дней в течение одного календарного года.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.pica.gov.jm",
+        "tier": 1,
+        "title": "Иммиграционная служба Ямайки"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Fill the online C5 form before boarding",
+        "description": "Complete the digital C5 card on enterjamaica.com before arriving at the airport to breeze through customs."
+      },
+      {
+        "title": "Use red-plate licensed taxis (JUTA)",
+        "description": "Always choose taxis with red license plates ('PPV' - Public Passenger Vehicle) or JUTA tour operator shuttles."
+      },
+      {
+        "title": "Try Jamaican Jerk Chicken and patties",
+        "description": "Savor authentic jerk chicken cooked over sweet pimento wood at Boston Bay or Scotchies."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't wear camouflage clothing",
+        "description": "Wearing military camouflage clothing or accessories is strictly illegal for civilians in Jamaica."
+      },
+      {
+        "title": "Don't accept unsolicited street guides",
+        "description": "Politely decline persistent street touts offering unofficial tours around beaches and craft markets with a firm 'No, thank you'."
+      }
+    ],
+    "tipping": "Tipping 10-15% is customary in sit-down restaurants and for tour drivers; all-inclusive resorts may have differing tip policies."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Dunn's River Şelalesi Doğal Kireçtaşı Terasları, Ocho Rios",
+        "license": "CC BY-SA 3.0",
+        "author": "Breakyunit at English Wikipedia",
+        "source_url": "/images/countries/jm-480.webp",
+        "attribution_text": "Dunn's River Falls terraced limestone cascades and rainforest in Ocho Rios, Jamaica. Breakyunit, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Dunn's River Şelalesi Doğal Kireçtaşı Terasları, Jamaika",
+          "en": "Dunn's River Falls Terraced Cascades & Rainforest, Ocho Rios, Jamaica",
+          "de": "Dunn's River Falls Kalksteinterrassen & Regenwald, Jamaika",
+          "ru": "Ступенчатые каскады водопада Даннс-Ривер, Ямайка",
+          "es": "Cascadas Escalonadas de Dunn's River y Selva, Jamaica"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "jamaika",
+      "en": "jamaica",
+      "de": "jamaika",
+      "ru": "yamayka",
+      "es": "jamaica"
+    },
+    "title": {
+      "tr": "Jamaika Vize Rehberi, C5 Giriş Formu ve Dunn's River Gezisi | Vizamigo",
+      "en": "Jamaica Visa Guide, C5 Entry Card & Dunn's River Falls | Vizamigo",
+      "de": "Jamaika Visum-Leitfaden, C5 Formular & Dunn's River Falls | Vizamigo",
+      "ru": "Виза на Ямайку, карта C5 и водопад Даннс-Ривер | Vizamigo",
+      "es": "Guía de Visa de Jamaica, Formulario C5 y Cascadas Dunn's River | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Jamaika Türk pasaportuna 90 gün vizesiz giriş, zorunlu online C5 formu, kamuflaj kıyafet yasağı ve Ocho Rios gezi rehberi.",
+      "en": "Jamaica 90-day visa-free rules, mandatory C5 online entry form, strict camouflage bans, Type A/B plugs, and resort tips.",
+      "de": "Jamaika 90 Tage visafreie Einreise, C5-Einreiseformular, Tarnkleidungsverbot und Reisetipps Dunn's River Falls.",
+      "ru": "Правила въезда на Ямайку на 90 дней без визы, форма C5, запрет на камуфляж и водопады Даннс-Ривер.",
+      "es": "Requisitos de entrada sin visa a Jamaica (90 días), formulario digital C5, prohibición de camuflaje y cascadas Dunn's River."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

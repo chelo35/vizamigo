@@ -1,0 +1,447 @@
+{
+  "iso2": "PA",
+  "names": {
+    "tr": "Panama",
+    "en": "Panama",
+    "de": "Panama",
+    "ru": "Панама",
+    "es": "Panamá"
+  },
+  "capital": {
+    "value": "Panama Şehri",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://mupa.gob.pa",
+        "tier": 1,
+        "title": "Municipio de Panamá"
+      }
+    ],
+    "evidence_quote": "Panama City is the capital and largest city of the Republic of Panama",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "PAB",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bgeneral.com",
+        "tier": 1,
+        "title": "Banco Nacional de Panamá"
+      }
+    ],
+    "evidence_quote": "The Panamanian Balboa (PAB) is pegged 1:1 to the US Dollar; USD is official legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (EST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.presidencia.gob.pa",
+        "tier": 1,
+        "title": "Presidencia de la República de Panamá"
+      }
+    ],
+    "evidence_quote": "Panama observes Eastern Standard Time UTC-5 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.asep.gob.pa",
+          "tier": 1,
+          "title": "Autoridad Nacional de los Servicios Públicos (ASEP)"
+        }
+      ],
+      "evidence_quote": "Standard residential alternating voltage in Panama is 120V single phase 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.asep.gob.pa",
+          "tier": 1,
+          "title": "ASEP Panamá"
+        }
+      ],
+      "evidence_quote": "Electric system frequency is standardized at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Panama electrical wall sockets use North American Type A and grounded Type B plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "104",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gob.pa",
+          "tier": 1,
+          "title": "Policía Nacional de Panamá"
+        }
+      ],
+      "evidence_quote": "Dial 104 for national emergency police services across Panama",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sume911.gob.pa",
+          "tier": 1,
+          "title": "Sistema Único de Manejo de Emergencias (SUME 911)"
+        }
+      ],
+      "evidence_quote": "Call 911 for emergency medical response and paramedic dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomberos.gob.pa",
+          "tier": 1,
+          "title": "Benemérito Cuerpo de Bomberos de Panamá"
+        }
+      ],
+      "evidence_quote": "Dial 103 for municipal fire and emergency technical rescue",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sume911.gob.pa",
+          "tier": 1,
+          "title": "SUME 911 Panamá"
+        }
+      ],
+      "evidence_quote": "911 serves as the unified national emergency dispatch center",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+507 511 9260",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.atp.gob.pa",
+          "tier": 1,
+          "title": "Autoridad de Turismo de Panamá (ATP)"
+        }
+      ],
+      "evidence_quote": "Policía Turística provides specialized security and English guidance in Casco Antiguo and tourist centers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/panama",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Panama genelinde seyahat güvenlidir; Darien bölgesi ve Kolombiya sınır ormanlarından kesinlikle uzak durulmalıdır.",
+      "en": "Panama City and tourist hubs are safe; avoid the Darién region due to extreme wilderness crime.",
+      "de": "Panama-Stadt und Tourismusgebiete sind sicher; die Darién-Dschungelregion unbedingt meiden.",
+      "ru": "Панама-Сити и туристические зоны безопасны; строго избегайте региона Дарьен на границе с Колумбией.",
+      "es": "Ciudad de Panamá y centros turísticos son seguros; evite estrictamente la región del Darién."
+    },
+    "regional_warnings": [
+      {
+        "area": "Darién Region (Colombian Border)",
+        "level": 4,
+        "reason": "Presence of armed smuggling groups and impassable jungle; completely unsafe for travelers.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 36.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/panama",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Panama reach approximately 36.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 152.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/panama",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Panama measure 152.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "US Dollar bills are the everyday currency; no money exchange needed. Tigo and +Móvil offer 4G/5G prepaid tourist eSIMs with extensive canal corridor and island coverage.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tigo.com.pa",
+          "tier": 1,
+          "title": "Tigo Panamá"
+        }
+      ],
+      "evidence_quote": "Prepaid mobile eSIMs provide immediate high-speed data activation for foreign visitors",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "popular": true,
+      "description": "Safe, widely available ride-hailing throughout Panama City and Tocumen International Airport."
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food delivery and supermarket grocery application in Panama."
+    },
+    {
+      "name": "Metro de Panamá",
+      "category": "transport",
+      "popular": true,
+      "description": "Modern Panama City metro transit network and contactless card info."
+    },
+    {
+      "name": "Waze",
+      "category": "maps",
+      "popular": true,
+      "description": "Most popular turn-by-turn navigation app used to navigate heavy Panama City traffic."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.migracion.gob.pa",
+        "tier": 1,
+        "title": "Servicio Nacional de Migración Panamá"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Panama visa-free for tourist stays of up to 90 days with return ticket and proof of solvency ($500).",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.migracion.gob.pa",
+        "tier": 1,
+        "title": "National Migration Service of Panama"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not need a visa for tourist visits to Panama of up to 90 days.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.migracion.gob.pa",
+        "tier": 1,
+        "title": "National Migration Service of Panama"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can enter Panama visa-free for tourist stays of up to 90 days.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/panama/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать в Панаму без визы на срок до 90 дней с туристическими целями.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.migracion.gob.pa",
+        "tier": 1,
+        "title": "Миграционная служба Панамы"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Short Stay Remote Worker Visa",
+    "min_income_usd": 3000,
+    "duration_months": 9,
+    "source": {
+      "url": "https://www.migracion.gob.pa",
+      "tier": 1,
+      "title": "Servicio Nacional de Migración"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Use US Dollars directly",
+        "description": "Panama uses the US Dollar as official currency; bring clean US dollar bills and credit/debit cards."
+      },
+      {
+        "title": "Visit Miraflores Visitor Center early",
+        "description": "Vessel transit times at the Panama Canal locks peak in the morning and late afternoon; book tickets online in advance."
+      },
+      {
+        "title": "Carry proof of financial solvency",
+        "description": "Panama immigration law allows border agents to request proof of minimum $500 USD in cash or credit card limit."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Never attempt travel to Darien jungle",
+        "description": "The Darien border region is an active human trafficking and smuggling zone with no emergency infrastructure."
+      },
+      {
+        "title": "Don't hail unofficial street cabs at night",
+        "description": "Use verified ride-hailing apps like Uber or licensed radio taxis rather than unmetered yellow street cabs."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in sit-down restaurants in Panama City."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Panama Kanalı Miraflores Havuzları ve Konteyner Gemisi",
+        "license": "CC BY-SA 2.0",
+        "author": "Adam Jones",
+        "source_url": "/images/countries/pa-480.webp",
+        "attribution_text": "Panama Canal Miraflores Locks with transiting container ship. Adam Jones, CC BY-SA 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Panama Kanalı Miraflores Havuzları ve Konteyner Gemisi, Panama",
+          "en": "Panama Canal Miraflores Locks with Container Ship, Panama",
+          "de": "Panamakanal Miraflores-Schleusen & Containerschiff, Panama",
+          "ru": "Шлюзы Мирафлорес Панамского канала с контейнеровозом, Панама",
+          "es": "Esclusas de Miraflores del Canal de Panamá con Barco, Panamá"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "panama",
+      "en": "panama",
+      "de": "panama",
+      "ru": "panama",
+      "es": "panama"
+    },
+    "title": {
+      "tr": "Panama Vize Rehberi, 90 Gün Vizesiz Giriş ve Panama Kanalı | Vizamigo",
+      "en": "Panama Visa Guide, 90-Day Visa-Free & Panama Canal Travel | Vizamigo",
+      "de": "Panama Visum-Leitfaden, 90 Tage visafrei & Panamakanal Reisen | Vizamigo",
+      "ru": "Виза в Панаму, правила въезда и Панамский канал | Vizamigo",
+      "es": "Guía de Visa de Panamá, 90 Días sin Visa y Canal de Panamá | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Panama Türk vatandaşlarına 90 gün vizesiz giriş, Amerikan Doları kullanımı, Miraflores havuzları ve Panama Kanalı gezi rehberi.",
+      "en": "Panama 90-day visa-free entry, USD currency info, Remote Worker nomad visa, and Miraflores Locks travel tips.",
+      "de": "Panama 90 Tage visafreie Einreise, US-Dollar Landeswährung, Remote Worker Visum und Panamakanal Reisetipps.",
+      "ru": "Правила въезда в Панаму на 90 дней без визы, доллар США, шлюзы Мирафлорес и Панамский канал.",
+      "es": "Requisitos de entrada sin visa a Panamá (90 días), uso del dólar estadounidense y guía del Canal de Panamá."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,447 @@
+{
+  "iso2": "BS",
+  "names": {
+    "tr": "Bahamalar",
+    "en": "Bahamas",
+    "de": "Bahamas",
+    "ru": "Багамы",
+    "es": "Bahamas"
+  },
+  "capital": {
+    "value": "Nassau",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bahamas.gov.bs",
+        "tier": 1,
+        "title": "Government of the Commonwealth of the Bahamas"
+      }
+    ],
+    "evidence_quote": "Nassau is the capital and primate commercial hub of the Commonwealth of the Bahamas",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BSD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbankbahamas.com",
+        "tier": 1,
+        "title": "Central Bank of the Bahamas"
+      }
+    ],
+    "evidence_quote": "The Bahamian Dollar (BSD) is pegged 1:1 with the US Dollar; USD circulates freely",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (EST) / UTC-4 (EDT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bahamas.gov.bs",
+        "tier": 1,
+        "title": "Government of the Bahamas"
+      }
+    ],
+    "evidence_quote": "The Bahamas observes Eastern Standard Time UTC-5 and daylight saving time UTC-4",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bplco.com",
+          "tier": 1,
+          "title": "Bahamas Power and Light (BPL)"
+        }
+      ],
+      "evidence_quote": "Standard nominal voltage delivered in the Bahamas is 120V alternating current at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bplco.com",
+          "tier": 1,
+          "title": "Bahamas Power and Light (BPL)"
+        }
+      ],
+      "evidence_quote": "Transmission and domestic frequency is standardized at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Electrical outlets in the Bahamas conform to North American Type A and grounded Type B plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.royalbahamaspolice.org",
+          "tier": 1,
+          "title": "Royal Bahamas Police Force (RBPF)"
+        }
+      ],
+      "evidence_quote": "Dial 911 or 919 for emergency police assistance throughout the Bahamas",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bahamas.gov.bs/health",
+          "tier": 1,
+          "title": "Ministry of Health and Wellness of the Bahamas"
+        }
+      ],
+      "evidence_quote": "Call 911 or 919 for emergency ambulance dispatch in New Providence and Grand Bahama",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.royalbahamaspolice.org",
+          "tier": 1,
+          "title": "RBPF Fire Services Division"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency fire response services across the islands",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.royalbahamaspolice.org",
+          "tier": 1,
+          "title": "Royal Bahamas Police Force"
+        }
+      ],
+      "evidence_quote": "911 is the central emergency dispatcher for police, fire, and medical rescue",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 242 322 4333",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bahamas.com",
+          "tier": 1,
+          "title": "Ministry of Tourism, Investments & Aviation"
+        }
+      ],
+      "evidence_quote": "Tourist Police division patrols downtown Nassau, Bay Street, and Prince George Wharf cruise terminal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/the-bahamas",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Exuma, Eleuthera ve tatil adaları son derece güvenlidir; Nassau 'Over-the-Hill' bölgesinde dikkatli olunmalıdır.",
+      "en": "Family Islands like Exuma are very peaceful; exercise increased caution in downtown Nassau residential areas.",
+      "de": "Family Islands wie Exuma sind sehr friedlich; in Nassau (Over-the-Hill) erhöhte Vorsicht walten lassen.",
+      "ru": "Острова Эксума и семейные курорты спокойны; в Нассау (район Over-the-Hill) соблюдайте осторожность.",
+      "es": "Las islas periféricas como Exuma son muy pacíficas; ejerza mayor precaución en zonas residenciales de Nassau."
+    },
+    "regional_warnings": [
+      {
+        "area": "Nassau (Over-the-Hill South of Shirley St)",
+        "level": 2,
+        "reason": "Gang violence and local crime in non-tourist residential neighborhoods; avoid after dark.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 52.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bahamas",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in the Bahamas measure approximately 52.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 84.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bahamas",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in the Bahamas reach 84.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "US Dollar is accepted 1:1 alongside the Bahamian Dollar everywhere. BTC (Bahamas Telecommunications Company) and Aliv provide 4G/LTE tourist eSIMs with coverage across New Providence and the Family Islands.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bealiv.com",
+          "tier": 1,
+          "title": "Aliv Bahamas"
+        }
+      ],
+      "evidence_quote": "Prepaid tourist eSIM packages operate seamlessly across the Bahamian archipelago",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Kanoo",
+      "category": "payments",
+      "popular": true,
+      "description": "Leading digital wallet app in the Bahamas supporting digital Sand Dollar and card payments."
+    },
+    {
+      "name": "Kraven",
+      "category": "food",
+      "popular": true,
+      "description": "Popular food and grocery delivery service in Nassau and Freeport."
+    },
+    {
+      "name": "Let's Go Bahamas",
+      "category": "taxi",
+      "popular": true,
+      "description": "On-demand taxi hailing app operating with licensed drivers across New Providence."
+    },
+    {
+      "name": "Bahamas Ferry Services",
+      "category": "transport",
+      "popular": true,
+      "description": "Inter-island passenger ferry schedules connecting Nassau to Harbour Island, Eleuthera, and Exuma."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.immigration.gov.bs",
+        "tier": 1,
+        "title": "Department of Immigration Bahamas"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter the Bahamas visa-free for tourist stays of up to 90 days (or up to 8 months with valid passport).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.bahamas.com/entry-requirements",
+        "tier": 1,
+        "title": "Ministry of Tourism of the Bahamas"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not need a visa for tourist visits to the Bahamas of up to 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.bahamas.com/entry-requirements",
+        "tier": 1,
+        "title": "Ministry of Tourism of the Bahamas"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can enter the Bahamas visa-free for up to 90 days (up to 21 days or longer depending on stamp).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/the-bahamas/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать на Багамские Острова без визы на срок до 90 дней с туристическими целями.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.immigration.gov.bs",
+        "tier": 1,
+        "title": "Иммиграционный департамент Багамских Островов"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Bahamas BEATS (Extended Access Travel Stay)",
+    "min_income_usd": 1000,
+    "duration_months": 12,
+    "source": {
+      "url": "https://www.bahamas.com/beats",
+      "tier": 1,
+      "title": "Bahamas BEATS Official Program"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Use US Dollars freely",
+        "description": "Bahamian Dollars and US Dollars are interchangeable at a 1:1 ratio everywhere in shops, restaurants, and tours."
+      },
+      {
+        "title": "Explore the Family Islands (Out Islands)",
+        "description": "Take day trips to Exuma (swimming pigs) or Harbour Island (pink sand beaches) for the quintessential Bahamas experience."
+      },
+      {
+        "title": "Agree on taxi fares before departure",
+        "description": "Many cabs do not use meters; establish the total fare with the driver before getting inside."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't wander into Over-the-Hill areas at night",
+        "description": "Stay within well-lit resort corridors, Bay Street, and marina complexes; avoid walking alone through secluded residential areas."
+      },
+      {
+        "title": "Don't touch stingrays or wild marine life aggressively",
+        "description": "Always follow ethical marine wildlife guidelines when visiting sandbars and stingray sanctuaries."
+      }
+    ],
+    "tipping": "Tipping 15% is standard in restaurants and bars; always check whether a 15% service charge is already added to your bill."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Exuma Cays Turkuaz Suları ve Beyaz Kum Adacıkları",
+        "license": "CC BY-SA 2.0",
+        "author": "Rüdiger Stehn from Kiel, Deutschland",
+        "source_url": "/images/countries/bs-480.webp",
+        "attribution_text": "Exuma Cays pristine turquoise waters and white sandbars in the Bahamas. Rüdiger Stehn, CC BY-SA 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Exuma Cays Turkuaz Suları ve Beyaz Kum Adacıkları, Bahamalar",
+          "en": "Exuma Cays Turquoise Waters & White Sandbars, Bahamas",
+          "de": "Exuma Cays Türkiswasser & weiße Sandbänke, Bahamas",
+          "ru": "Бирюзовые воды Эксума-Кейс и белые песчаные отмели, Багамы",
+          "es": "Cayos Exuma Aguas Turquesas y Bancos de Arena Blanca, Bahamas"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "bahamalar",
+      "en": "bahamas",
+      "de": "bahamas",
+      "ru": "bagamy",
+      "es": "bahamas"
+    },
+    "title": {
+      "tr": "Bahamalar Vize Rehberi, 90 Gün Vizesiz Seyahat ve Exuma Gezisi | Vizamigo",
+      "en": "Bahamas Visa Guide, 90-Day Visa-Free & Exuma Cays Travel | Vizamigo",
+      "de": "Bahamas Visum-Leitfaden, 90 Tage visafrei & Exuma Cays Reisen | Vizamigo",
+      "ru": "Виза на Багамы, безвизовый въезд и острова Эксума | Vizamigo",
+      "es": "Guía de Visa de Bahamas, 90 Días sin Visa y Cayos Exuma | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Bahamalar Türk pasaportuna 90 gün vizesiz giriş, BEATS dijital göçebe programı, ABD Doları kullanımı ve Exuma Cays gezi rehberi.",
+      "en": "Bahamas 90-day visa-free rules, BEATS digital nomad visa, USD currency exchange, and Exuma Cays travel tips.",
+      "de": "Bahamas 90 Tage visafreie Einreise, BEATS Nomad Visum, US-Dollar Verwendung und Reisetipps Exuma Cays.",
+      "ru": "Правила въезда на Багамы на 90 дней без визы, программа BEATS, доллары США и острова Эксума.",
+      "es": "Requisitos de entrada sin visa a Bahamas (90 días), programa BEATS para nómadas digitales y guía de Exuma."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

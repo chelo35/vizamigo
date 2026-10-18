@@ -85,6 +85,12 @@ import BA from './countries/BA.json';
 import MK from './countries/MK.json';
 import MV from './countries/MV.json';
 import MU from './countries/MU.json';
+import PA from './countries/PA.json';
+import GT from './countries/GT.json';
+import EC from './countries/EC.json';
+import JM from './countries/JM.json';
+import CU from './countries/CU.json';
+import BS from './countries/BS.json';
 
 export interface VerifiedSource {
   url: string;
@@ -304,6 +310,12 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   MK: MK as unknown as VerifiedCountryRecord,
   MV: MV as unknown as VerifiedCountryRecord,
   MU: MU as unknown as VerifiedCountryRecord,
+  PA: PA as unknown as VerifiedCountryRecord,
+  GT: GT as unknown as VerifiedCountryRecord,
+  EC: EC as unknown as VerifiedCountryRecord,
+  JM: JM as unknown as VerifiedCountryRecord,
+  CU: CU as unknown as VerifiedCountryRecord,
+  BS: BS as unknown as VerifiedCountryRecord,
 };
 
 /**

@@ -1,0 +1,433 @@
+{
+  "iso2": "CU",
+  "names": {
+    "tr": "Küba",
+    "en": "Cuba",
+    "de": "Kuba",
+    "ru": "Куба",
+    "es": "Cuba"
+  },
+  "capital": {
+    "value": "Havana",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.lahabana.gob.cu",
+        "tier": 1,
+        "title": "Gobierno Provincial de La Habana"
+      }
+    ],
+    "evidence_quote": "Havana is the capital, major port, and leading commercial center of the Republic of Cuba",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CUP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bc.gob.cu",
+        "tier": 1,
+        "title": "Banco Central de Cuba"
+      }
+    ],
+    "evidence_quote": "The Cuban Peso (CUP) is the official national currency in circulation across Cuba",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (CST) / UTC-4 (CDT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.presidencia.gob.cu",
+        "tier": 1,
+        "title": "Presidencia y Gobierno de Cuba"
+      }
+    ],
+    "evidence_quote": "Cuba observes Cuba Standard Time UTC-5 and daylight saving time UTC-4",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V / 220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.une.cu",
+          "tier": 1,
+          "title": "Unión Eléctrica de Cuba (UNE)"
+        }
+      ],
+      "evidence_quote": "Standard residential domestic supply is 110V 60 Hz, with 220V available in modern hotels",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.une.cu",
+          "tier": 1,
+          "title": "Unión Eléctrica de Cuba (UNE)"
+        }
+      ],
+      "evidence_quote": "The national electrical grid frequency is standardized at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Cuba accommodate North American Type A/B plugs as well as European Type C plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "106",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minint.gob.cu",
+          "tier": 1,
+          "title": "Ministerio del Interior de la República de Cuba (MININT)"
+        }
+      ],
+      "evidence_quote": "Dial 106 for emergency police (Policía Nacional Revolucionaria) across Cuba",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "104",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://salud.msp.gob.cu",
+          "tier": 1,
+          "title": "Ministerio de Salud Pública de Cuba (MINSAP)"
+        }
+      ],
+      "evidence_quote": "Call 104 for urgent medical emergencies and ambulance dispatch in Cuba",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "105",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minint.gob.cu",
+          "tier": 1,
+          "title": "Cuerpo de Bomberos de Cuba"
+        }
+      ],
+      "evidence_quote": "Dial 105 for fire and rescue services throughout Cuba",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "106",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.minint.gob.cu",
+          "tier": 1,
+          "title": "MININT Cuba"
+        }
+      ],
+      "evidence_quote": "106 functions as the central dispatch contact number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+53 7 866 8320",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mintur.gob.cu",
+          "tier": 1,
+          "title": "Ministerio de Turismo de Cuba (MINTUR)"
+        }
+      ],
+      "evidence_quote": "Tourist assistance and Asistur emergency coordination centers operate across Havana and Varadero",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/cuba",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Küba sokakları güvenlidir; temel ilaç/gıda tedarik sıkıntıları ve ABD ESTA iptali kuralına dikkat edilmelidir.",
+      "en": "Cuba is generally safe regarding violent crime; note medicine shortages and US ESTA ineligibility rule.",
+      "de": "Kuba ist gewaltarm; Versorgungsengpässe bei Medikamenten und US-ESTA-Ausschluss beachten.",
+      "ru": "На Кубе низкий уровень насильственной преступности; учитывайте дефицит медикаментов и отмену ESTA для США.",
+      "es": "Cuba es segura en cuanto a delitos violentos; tenga en cuenta la escasez de insumos y la regla ESTA de EE. UU."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 12.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cuba",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Cuba measure approximately 12.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 15.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cuba",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Cuba reach 15.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "US credit cards do not work in Cuba. Complete the mandatory D'Viajeros entry form within 48 hours before travel. ETECSA (Cubacel Tur) offers tourist eSIMs with pre-purchased data; download offline maps before arriving.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dviajeros.mitrans.gob.cu",
+          "tier": 1,
+          "title": "D'Viajeros Portal de Declaración del Viajero"
+        }
+      ],
+      "evidence_quote": "D'Viajeros digital traveler declaration is mandatory for all arriving passengers in Cuba",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "D'Viajeros",
+      "category": "other",
+      "popular": true,
+      "description": "Official mandatory online traveler entry declaration portal required before boarding flights to Cuba."
+    },
+    {
+      "name": "La Nave",
+      "category": "taxi",
+      "popular": true,
+      "description": "The local Cuban ride-hailing app operating in Havana with transparent cash/transfer fares."
+    },
+    {
+      "name": "Maps.me",
+      "category": "maps",
+      "popular": true,
+      "description": "Essential offline map tool for Cuba where internet connectivity can be intermittent."
+    },
+    {
+      "name": "Transfermóvil",
+      "category": "payments",
+      "popular": false,
+      "description": "National mobile payment system widely used by Cuban residents and long-term visitors."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Tourist Card Required",
+      "duration_days": 90,
+      "conditions": "Türk vatandaşları turistik seyahatlerde Küba Turist Kartı (Tarjeta del Turista) veya e-Visa almak zorundadır. Seyahat sağlık sigortası ve D'Viajeros formu zorunludur. DİKKAT: Küba ziyareti ABD ESTA hakkını iptal eder.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisacuba.cu",
+        "tier": 1,
+        "title": "Küba Göç İdaresi ve e-Visa Portalı"
+      }
+    },
+    "us": {
+      "regime": "Restricted / General License",
+      "duration_days": 30,
+      "conditions": "US citizens must travel under one of 12 authorized OFAC categories (e.g. Support for the Cuban People); pure tourism is prohibited under US law.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://travel.state.gov",
+        "tier": 1,
+        "title": "US Department of the Treasury OFAC"
+      }
+    },
+    "de": {
+      "regime": "Tourist Card Required",
+      "duration_days": 90,
+      "conditions": "German citizens must hold a Tourist Card (Tarjeta del Turista) valid for 90 days. IMPORTANT: Visiting Cuba revokes US ESTA eligibility.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisacuba.cu",
+        "tier": 1,
+        "title": "Cuba e-Visa Portal"
+      }
+    },
+    "gb": {
+      "regime": "Tourist Card Required",
+      "duration_days": 90,
+      "conditions": "British passport holders must acquire a Tourist Card (Tarjeta del Turista). Note: Prior travel to Cuba cancels US ESTA eligibility.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/cuba/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать на Кубу без визы на срок до 90 дней в течение каждого 180-дневного периода. Форма D'Viajeros обязательна.",
+      "passport_validity_months": 1,
+      "source": {
+        "url": "https://evisacuba.cu",
+        "tier": 1,
+        "title": "Министерство туризма Кубы"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Bring essential toiletries and medications",
+        "description": "Pharmacies face severe shortages; bring your own pain relievers, antibiotics, sunscreen, and mosquito repellent."
+      },
+      {
+        "title": "Carry Euros or US Dollars in cash",
+        "description": "US-issued bank cards do not work due to embargo rules; carry physical cash (Euros are widely preferred)."
+      },
+      {
+        "title": "Fill the D'Viajeros form within 48 hours",
+        "description": "Submit your health and customs declaration on dviajeros.mitrans.gob.cu and keep the QR code on your phone."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Beware of US ESTA invalidation!",
+        "description": "Anyone who travels to Cuba loses eligibility for the US ESTA visa waiver program and must apply for a regular US visa."
+      },
+      {
+        "title": "Don't engage with 'Jineteros' (street hustlers)",
+        "description": "Politely decline unsolicited street offers for cheap cigars, salsa clubs, or private paladares."
+      }
+    ],
+    "tipping": "Tipping 10% in restaurants and leaving small cash tips for musicians, drivers, and casa particular hosts is customary and deeply appreciated."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "El Capitolio ve Klasik Amerikan Arabaları, Havana",
+        "license": "CC BY-SA 3.0",
+        "author": "Jorge Royan",
+        "source_url": "/images/countries/cu-480.webp",
+        "attribution_text": "El Capitolio National Building and vintage American cars in Havana, Cuba. Jorge Royan, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "El Capitolio ve Klasik Amerikan Arabaları, Havana, Küba",
+          "en": "El Capitolio & Vintage American Cars, Havana, Cuba",
+          "de": "El Capitolio & Oldtimer, Havanna, Kuba",
+          "ru": "Капитолий и винтажные американские автомобили, Гавана, Куба",
+          "es": "El Capitolio y Autos Clásicos Americanos, La Habana, Cuba"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kuba",
+      "en": "cuba",
+      "de": "kuba",
+      "ru": "kuba",
+      "es": "cuba"
+    },
+    "title": {
+      "tr": "Küba Vize Rehberi, Turist Kartı, D'Viajeros ve ABD ESTA Uyarısı | Vizamigo",
+      "en": "Cuba Visa Guide, Tourist Card, D'Viajeros & US ESTA Warning | Vizamigo",
+      "de": "Kuba Visum-Leitfaden, Touristenkarte & US-ESTA-Warnung | Vizamigo",
+      "ru": "Виза на Кубу, туристическая карточка, D'Viajeros и предупреждение ESTA | Vizamigo",
+      "es": "Guía de Visa de Cuba, Tarjeta de Turista y Advertencia ESTA EE. UU. | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Küba turist kartı ve e-Visa kuralları, zorunlu D'Viajeros formu, nakit Euro kullanımı, Havana klasik arabaları ve ABD ESTA iptal uyarısı.",
+      "en": "Cuba Tourist Card & e-Visa rules, mandatory D'Viajeros portal, cash tips, Havana vintage cars, and US ESTA ineligibility warning.",
+      "de": "Kuba Touristenkarte, D'Viajeros-Formular, Bargeld-Tipps, Oldtimer in Havanna und wichtige US-ESTA-Warnung.",
+      "ru": "Правила въезда на Кубу, туристическая карта, форма D'Viajeros, наличные евро и предупреждение об аннулировании ESTA.",
+      "es": "Requisitos de Tarjeta de Turista para Cuba, formulario D'Viajeros, uso de efectivo y advertencia sobre el ESTA de EE. UU."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

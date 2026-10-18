@@ -1,0 +1,443 @@
+{
+  "iso2": "GT",
+  "names": {
+    "tr": "Guatemala",
+    "en": "Guatemala",
+    "de": "Guatemala",
+    "ru": "Гватемала",
+    "es": "Guatemala"
+  },
+  "capital": {
+    "value": "Guatemala Şehri",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://muniguate.com",
+        "tier": 1,
+        "title": "Municipalidad de la Ciudad de Guatemala"
+      }
+    ],
+    "evidence_quote": "Guatemala City is the capital and largest metropolis of the Republic of Guatemala",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "GTQ",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.banguat.gob.gt",
+        "tier": 1,
+        "title": "Banco de Guatemala (Banguat)"
+      }
+    ],
+    "evidence_quote": "The Guatemalan Quetzal (GTQ) is the legal currency of Guatemala",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://prensa.gob.gt",
+        "tier": 1,
+        "title": "Gobierno de la República de Guatemala"
+      }
+    ],
+    "evidence_quote": "Guatemala operates year-round on Central Standard Time UTC-6 without DST",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cnee.gob.gt",
+          "tier": 1,
+          "title": "Comisión Nacional de Energía Eléctrica (CNEE)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Guatemala is 120V alternating current at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cnee.gob.gt",
+          "tier": 1,
+          "title": "CNEE Guatemala"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Guatemala is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Guatemalan wall outlets accommodate North American two-flat-pin Type A and Type B plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pnc.gob.gt",
+          "tier": 1,
+          "title": "Policía Nacional Civil de Guatemala (PNC)"
+        }
+      ],
+      "evidence_quote": "Dial 110 for emergency police response across Guatemala",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bomberosvoluntarios.org.gt",
+          "tier": 1,
+          "title": "Cuerpo Voluntario de Bomberos de Guatemala"
+        }
+      ],
+      "evidence_quote": "Call 122 for Bomberos Voluntarios emergency ambulance and rescue response",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "123",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bomberosmunicipales.org.gt",
+          "tier": 1,
+          "title": "Cuerpo de Bomberos Municipales"
+        }
+      ],
+      "evidence_quote": "Call 123 for Bomberos Municipales fire and rescue dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://pnc.gob.gt",
+          "tier": 1,
+          "title": "Policía Nacional Civil"
+        }
+      ],
+      "evidence_quote": "110 connects callers to primary police and emergency dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1500",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://inguat.gob.gt",
+          "tier": 1,
+          "title": "Instituto Guatemalteco de Turismo (INGUAT) - PROATUR"
+        }
+      ],
+      "evidence_quote": "Dial 1500 for PROATUR tourist assistance hotline offering bilingual 24/7 security escorts and help",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/guatemala",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Antigua, Atitlán Gölü ve Tikal güvenlidir; başkentin belirli dış bölgelerinde artırılmış güvenlik tedbirleri gerekir.",
+      "en": "Exercise increased caution due to crime; tourist hubs Antigua, Atitlán, and Tikal are well-policed.",
+      "de": "Erhöhte Vorsicht wegen Kriminalität; touristische Hauptziele wie Antigua, Atitlán-See und Tikal sind sicher.",
+      "ru": "Проявляйте повышенную осторожность из-за криминогенной обстановки; Антигуа, озеро Атитлан и Тикаль охраняются туристической полицией.",
+      "es": "Ejerza mayor precaución debido al crimen; destinos turísticos como Antigua, Lago Atitlán y Tikal cuentan con custodia."
+    },
+    "regional_warnings": [
+      {
+        "area": "Guatemala City (Zones 18, 21, and Mixco)",
+        "level": 3,
+        "reason": "Elevated gang activity and violent street crime; avoid non-essential travel to these zones.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 29.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/guatemala",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Guatemala measure 29.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 47.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/guatemala",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Guatemala reach 47.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Central America-4 (CA-4) agreement allows travel across Guatemala, El Salvador, Honduras, and Nicaragua within the single 90-day allowance. Claro and Tigo offer prepaid 4G tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://igm.gob.gt",
+          "tier": 1,
+          "title": "Instituto Guatemalteco de Migración"
+        }
+      ],
+      "evidence_quote": "CA-4 Border Control Agreement unifies free movement between 4 Central American states",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "popular": true,
+      "description": "Recommended safe taxi option in Guatemala City and Antigua Guatemala."
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food ordering and takeaway app in Guatemala."
+    },
+    {
+      "name": "Waze",
+      "category": "maps",
+      "popular": true,
+      "description": "Standard GPS navigation app for road condition alerts and city traffic avoidance."
+    },
+    {
+      "name": "PROATUR App",
+      "category": "other",
+      "popular": true,
+      "description": "Official tourist safety application by the Guatemala Tourism Institute with direct SOS assistance."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri CA-4 anlaşması kapsamında 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://igm.gob.gt",
+        "tier": 1,
+        "title": "Guatemala Göç İdaresi (IGM)"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can travel to Guatemala visa-free for up to 90 days under the CA-4 Border Agreement.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://igm.gob.gt/visas/",
+        "tier": 1,
+        "title": "Guatemalan Migration Institute"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not need a visa for tourist stays up to 90 days in the CA-4 zone.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://igm.gob.gt/visas/",
+        "tier": 1,
+        "title": "Guatemalan Migration Institute"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Guatemala visa-free for stays of up to 90 days across CA-4 countries.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/guatemala/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ въезжают в Гватемалу без визы на срок до 90 дней в рамках соглашения CA-4.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://igm.gob.gt/visas/",
+        "tier": 1,
+        "title": "Миграционная служба Гватемалы"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Ask before photographing indigenous locals",
+        "description": "Always politely ask permission before taking photos of Mayan women and children in traditional huipil dress."
+      },
+      {
+        "title": "Use PROATUR tourist police escorts for hikes",
+        "description": "For volcano treks (like Volcán de Agua or San Pedro), requesting a free tourist police escort ensures safety."
+      },
+      {
+        "title": "Bargain respectfully in Mayan markets",
+        "description": "Haggling in traditional markets like Chichicastenango is customary, but maintain a friendly, respectful tone."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't use public 'chicken buses' at night",
+        "description": "Colorful converted school buses (camionetas) are prone to reckless driving and robberies; use private tourist shuttles."
+      },
+      {
+        "title": "Don't walk alone on quiet roads between Lake Atitlán towns",
+        "description": "Trails between villages around Lake Atitlán have historical robbery risks; take public lancha motorboats instead."
+      }
+    ],
+    "tipping": "Tipping 10% is standard in sit-down tourist restaurants in Antigua and Panajachel."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Tikal Maya Tapınağı I (Büyük Jaguar Piramidi) (UNESCO)",
+        "license": "CC BY-SA 2.5",
+        "author": "Raymond Ostertag",
+        "source_url": "/images/countries/gt-480.webp",
+        "attribution_text": "Tikal Temple I Great Jaguar Pyramid emerging from the Guatemalan rainforest. Raymond Ostertag, CC BY-SA 2.5.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Tikal Maya Tapınağı I (Büyük Jaguar Piramidi), Guatemala",
+          "en": "Tikal Mayan Temple I (Great Jaguar Pyramid), Guatemala",
+          "de": "Tikal Maya-Tempel I (Großer Jaguar), Guatemala",
+          "ru": "Храм майя Тикаль I (Пирамида Великого Ягуара), Гватемала",
+          "es": "Templo Maya I de Tikal (Pirámide del Gran Jaguar), Guatemala"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "guatemala",
+      "en": "guatemala",
+      "de": "guatemala",
+      "ru": "gvatemala",
+      "es": "guatemala"
+    },
+    "title": {
+      "tr": "Guatemala Vize Rehberi, CA-4 Anlaşması ve Tikal Piramitleri | Vizamigo",
+      "en": "Guatemala Visa Guide, CA-4 Agreement & Tikal Pyramids Travel | Vizamigo",
+      "de": "Guatemala Visum-Leitfaden, CA-4 Abkommen & Tikal Pyramiden | Vizamigo",
+      "ru": "Виза в Гватемалу, соглашение CA-4 и пирамиды Тикаля | Vizamigo",
+      "es": "Guía de Visa de Guatemala, Acuerdo CA-4 y Pirámides de Tikal | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Guatemala Türk pasaportuna 90 gün vizesiz giriş, CA-4 Orta Amerika dolaşımı, PROATUR turist polisi ve Tikal Maya piramidi rehberi.",
+      "en": "Guatemala 90-day visa-free rules, CA-4 Central American border agreement, PROATUR tourist police, and Tikal Mayan ruins tips.",
+      "de": "Guatemala 90 Tage visafreie Einreise, CA-4 Grenzabkommen, PROATUR Touristenpolizei und Tikal Maya-Ruinen.",
+      "ru": "Правила въезда в Гватемалу (90 дней без визы), соглашение CA-4, туристическая полиция PROATUR и Тикаль.",
+      "es": "Requisitos de entrada sin visa a Guatemala (90 días), acuerdo centroamericano CA-4 y guía de viaje a Tikal."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

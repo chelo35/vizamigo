@@ -1,0 +1,447 @@
+{
+  "iso2": "EC",
+  "names": {
+    "tr": "Ekvador",
+    "en": "Ecuador",
+    "de": "Ecuador",
+    "ru": "Эквадор",
+    "es": "Ecuador"
+  },
+  "capital": {
+    "value": "Quito",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.quito.gob.ec",
+        "tier": 1,
+        "title": "Municipio del Distrito Metropolitano de Quito"
+      }
+    ],
+    "evidence_quote": "Quito is the capital of the Republic of Ecuador, high in the Andean foothills",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "USD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bce.fin.ec",
+        "tier": 1,
+        "title": "Banco Central del Ecuador"
+      }
+    ],
+    "evidence_quote": "The United States Dollar (USD) is the official legal tender in Ecuador since dollarization in 2000",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (ECT) / UTC-6 (GALT - Galápagos)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gob.ec",
+        "tier": 1,
+        "title": "Gobierno de la República del Ecuador"
+      }
+    ],
+    "evidence_quote": "Continental Ecuador observes UTC-5 while the Galápagos Islands observe Galápagos Time UTC-6",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.recursosyenergia.gob.ec",
+          "tier": 1,
+          "title": "Ministerio de Energía y Minas del Ecuador"
+        }
+      ],
+      "evidence_quote": "Low-voltage electrical distribution standard in Ecuador is 120V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.recursosyenergia.gob.ec",
+          "tier": 1,
+          "title": "Ministerio de Energía y Minas del Ecuador"
+        }
+      ],
+      "evidence_quote": "The alternating frequency across the Ecuadorian power grid is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Domestic outlets utilize Type A two-pin and grounded Type B North American standard plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ecu911.gob.ec",
+          "tier": 1,
+          "title": "Servicio Integrado de Seguridad ECU 911"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police response across mainland Ecuador and Galápagos",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ecu911.gob.ec",
+          "tier": 1,
+          "title": "ECU 911 Ecuador"
+        }
+      ],
+      "evidence_quote": "Call 911 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ecu911.gob.ec",
+          "tier": 1,
+          "title": "ECU 911 Ecuador"
+        }
+      ],
+      "evidence_quote": "Call 911 for all municipal fire brigades and technical rescue",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ecu911.gob.ec",
+          "tier": 1,
+          "title": "ECU 911 Integrated Security Service"
+        }
+      ],
+      "evidence_quote": "ECU 911 is Ecuador's integrated national emergency coordination system",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+593 2 254 3983",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.turismo.gob.ec",
+          "tier": 1,
+          "title": "Ministerio de Turismo del Ecuador"
+        }
+      ],
+      "evidence_quote": "Policía Turística del Ecuador assists international travelers in Quito historic center and Cuenca",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/ecuador",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Galápagos Adaları, Quito ve Cuenca güvenlidir; kıyı bölgelerinde (Guayaquil vb.) artırılmış dikkat gerekir.",
+      "en": "Galápagos Islands, Cuenca, and Quito are safe; exercise increased caution in coastal provinces.",
+      "de": "Galápagos-Inseln, Cuenca und Quito sind sicher; in den Küstenprovinzen (Guayaquil) erhöhte Vorsicht walten lassen.",
+      "ru": "Галапагосские острова, Куэнка и Кито безопасны; соблюдайте повышенную осторожность в прибрежных провинциях.",
+      "es": "Las Islas Galápagos, Cuenca y Quito son seguras; ejerza mayor precaución en provincias costeras."
+    },
+    "regional_warnings": [
+      {
+        "area": "Esmeraldas, Guayas (Guayaquil), and Northern Border with Colombia",
+        "level": 3,
+        "reason": "Elevated organized crime and state of internal disturbance; restrict visits to secured transport hubs.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 28.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/ecuador",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Ecuador measure 28.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 72.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/ecuador",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Ecuador reach 72.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "US Dollars are used for all transactions; carry small denominations ($1, $5, $10, $20) as $50 and $100 bills are rarely accepted. Claro and Movistar provide prepaid tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bce.fin.ec",
+          "tier": 1,
+          "title": "Banco Central del Ecuador"
+        }
+      ],
+      "evidence_quote": "Small denomination US dollar currency notes are standard for daily commercial trade",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber / Cabify",
+      "category": "taxi",
+      "popular": true,
+      "description": "Safe, metered ride-hailing in Quito, Guayaquil, and Cuenca."
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "popular": true,
+      "description": "Dominant food delivery and grocery platform across Ecuador."
+    },
+    {
+      "name": "Metro de Quito",
+      "category": "transport",
+      "popular": true,
+      "description": "Modern underground metro system connecting north and south Quito with QR ticketing."
+    },
+    {
+      "name": "De Una",
+      "category": "payments",
+      "popular": true,
+      "description": "Ubiquitous Banco Pichincha QR mobile payment solution used by merchants throughout Ecuador."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri turistik amaçlı seyahatlerde 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.cancilleria.gob.ec",
+        "tier": 1,
+        "title": "Ekvador Dışişleri Bakanlığı (Cancillería)"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Ecuador visa-free for up to 90 days in any 12-month period for tourism.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.cancilleria.gob.ec/visas-para-extranjeros/",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Ecuador"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens enter Ecuador visa-free for tourism stays of up to 90 days per calendar year.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.cancilleria.gob.ec/visas-para-extranjeros/",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Ecuador"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Ecuador visa-free for tourist stays of up to 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/ecuador/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут находиться в Эквадоре без визы до 90 дней в течение каждого 180-дневного периода.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.cancilleria.gob.ec/visas-para-extranjeros/",
+        "tier": 1,
+        "title": "МИД Эквадора"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Ecuador Rentista Nomad Visa",
+    "min_income_usd": 1400,
+    "duration_months": 24,
+    "source": {
+      "url": "https://www.cancilleria.gob.ec",
+      "tier": 1,
+      "title": "Cancillería del Ecuador"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Prepare for Galápagos entrance procedures",
+        "description": "Flying to Galápagos requires purchasing a Transit Control Card (TCT - $20) at Quito/Guayaquil airport and paying the park entry fee in cash."
+      },
+      {
+        "title": "Acclimatize to Quito's altitude (2,850m)",
+        "description": "Quito is the second-highest capital in the world; take it easy on your first day, drink water, and avoid heavy exertion."
+      },
+      {
+        "title": "Carry small US dollar bills ($1, $5, $10, $20)",
+        "description": "Merchants and taxis almost never have change for $50 or $100 bills; $1 coins are widely used and preferred."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't touch wildlife in the Galápagos Islands",
+        "description": "Ecuadorian national park regulations mandate keeping a strict minimum distance of 2 meters from sea lions, tortoises, and iguanas."
+      },
+      {
+        "title": "Don't flush toilet paper in Andean plumbing",
+        "description": "Plumbing pipes across historical Andean towns are narrow; always dispose of used paper in the provided wastebasket."
+      }
+    ],
+    "tipping": "A 10% service charge (propina) is often included on restaurant bills; if not included, 10% is customary for table service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Galápagos Adaları Bartolomé Pinnacle Zirvesi ve Volkanik Koy",
+        "license": "CC BY 2.0",
+        "author": "kuhnmi",
+        "source_url": "/images/countries/ec-480.webp",
+        "attribution_text": "Bartolomé Island Pinnacle Rock and volcanic bay in the Galápagos Islands, Ecuador. kuhnmi, CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Galápagos Adaları Bartolomé Pinnacle Zirvesi ve Volkanik Koy, Ekvador",
+          "en": "Galápagos Islands Bartolomé Pinnacle Rock & Volcanic Bay, Ecuador",
+          "de": "Galápagos-Inseln Bartolomé Pinnacle Rock & Vulkanbucht, Ecuador",
+          "ru": "Скала Пиннакл на острове Бартоломе, Галапагосы, Эквадор",
+          "es": "Islas Galápagos Roca Pináculo de Bartolomé y Bahía Volcánica, Ecuador"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "ekvador",
+      "en": "ecuador",
+      "de": "ecuador",
+      "ru": "ekvador",
+      "es": "ecuador"
+    },
+    "title": {
+      "tr": "Ekvador Vize Rehberi, Galápagos TCT Kartı ve Quito Gezisi | Vizamigo",
+      "en": "Ecuador Visa Guide, Galápagos TCT Entry & Quito Travel | Vizamigo",
+      "de": "Ecuador Visum-Leitfaden, Galápagos TCT-Karte & Quito Reisen | Vizamigo",
+      "ru": "Виза в Эквадор, въезд на Галапагосы и поездка в Кито | Vizamigo",
+      "es": "Guía de Visa de Ecuador, Tarjeta TCT Galápagos y Viajes a Quito | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Ekvador Türk pasaportuna 90 gün vizesiz giriş, resmi para birimi ABD Doları, Galápagos TCT kartı şartları ve Quito gezi rehberi.",
+      "en": "Ecuador 90-day visa-free rules, USD currency info, Galápagos TCT transit card requirements, and Quito altitude tips.",
+      "de": "Ecuador 90 Tage visafreie Einreise, US-Dollar Landeswährung, Galápagos TCT-Karte und Reisetipps Quito.",
+      "ru": "Правила въезда в Эквадор на 90 дней без визы, доллар США, карта TCT на Галапагосы и путеводитель по Кито.",
+      "es": "Requisitos de entrada sin visa a Ecuador (90 días), uso del dólar estadounidense y guía para visitar Galápagos."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
