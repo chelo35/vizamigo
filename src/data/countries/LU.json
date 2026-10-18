@@ -1,0 +1,426 @@
+{
+  "iso2": "LU",
+  "names": {
+    "tr": "Lüksemburg",
+    "en": "Luxembourg",
+    "de": "Luxemburg",
+    "ru": "Люксембург",
+    "es": "Luxemburgo"
+  },
+  "capital": {
+    "value": "Lüksemburg",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vdl.lu",
+        "tier": 1,
+        "title": "Ville de Luxembourg (City of Luxembourg)"
+      }
+    ],
+    "evidence_quote": "Luxembourg City is the capital of the Grand Duchy of Luxembourg",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcl.lu",
+        "tier": 1,
+        "title": "Banque centrale du Luxembourg"
+      }
+    ],
+    "evidence_quote": "The Euro is the official currency of the Grand Duchy of Luxembourg",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gouvernement.lu",
+        "tier": 1,
+        "title": "Official Portal of the Grand Duchy of Luxembourg"
+      }
+    ],
+    "evidence_quote": "Luxembourg observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.creos-net.lu",
+          "tier": 1,
+          "title": "Creos Luxembourg Electricity Grid Operator"
+        }
+      ],
+      "evidence_quote": "Electricity distribution network operates at standard 230V alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.creos-net.lu",
+          "tier": 1,
+          "title": "Creos Luxembourg Grid Operator"
+        }
+      ],
+      "evidence_quote": "Transmission grid frequency operates synchronously at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Power sockets in Luxembourg accommodate Europlug Type C and Schuko Type F plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.public.lu",
+          "tier": 1,
+          "title": "Police Grand-Ducale of Luxembourg"
+        }
+      ],
+      "evidence_quote": "Dial 113 for emergency Grand-Ducal police response across Luxembourg",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.public.lu",
+          "tier": 1,
+          "title": "Corps Grand-Ducal d'Incendie et de Secours (CGDIS)"
+        }
+      ],
+      "evidence_quote": "Call 112 for urgent medical emergency ambulance dispatch in Luxembourg",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.public.lu",
+          "tier": 1,
+          "title": "CGDIS Luxembourg Fire & Rescue"
+        }
+      ],
+      "evidence_quote": "Call 112 for fire emergencies and technical rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.public.lu",
+          "tier": 1,
+          "title": "CGDIS Luxembourg"
+        }
+      ],
+      "evidence_quote": "112 is the primary European emergency number for medical, fire, and rescue emergencies",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/luxembourg",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Lüksemburg dünyanın en güvenli ülkelerindendir; olağan seyahat tedbirleri yeterlidir.",
+      "en": "Luxembourg is one of the safest countries in the world; exercise normal precautions.",
+      "de": "Luxemburg gehört zu den sichersten Ländern weltweit; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Люксембург является одной из самых безопасных стран мира; действуют обычные меры предосторожности.",
+      "es": "Luxemburgo es uno de los países más seguros del mundo; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 118.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/luxembourg",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Luxembourg reach approximately 118.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 164.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/luxembourg",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Luxembourg measure 164.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "EU Roam Like at Home applies with zero roaming fees for EU SIM cards. POST Luxembourg, Tango, and Orange Luxembourg deliver premium 5G prepaid eSIM profiles.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu",
+          "tier": 1,
+          "title": "European Commission Roaming Regulations"
+        }
+      ],
+      "evidence_quote": "EU regulation mandates surcharge-free roaming across Luxembourg networks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Mobiliteit.lu",
+      "category": "transport",
+      "popular": true,
+      "description": "Essential nationwide route planner; remember all public transport (trains, trams, buses) in 2nd class is 100% FREE in Luxembourg!"
+    },
+    {
+      "name": "WebTaxi",
+      "category": "taxi",
+      "popular": true,
+      "description": "Reliable ride-booking app in Luxembourg City with transparent fixed upfront prices."
+    },
+    {
+      "name": "Wolt / Wedely",
+      "category": "food",
+      "popular": true,
+      "description": "Top restaurant meal delivery platforms operating across the Grand Duchy."
+    },
+    {
+      "name": "vel'OH!",
+      "category": "transport",
+      "popular": true,
+      "description": "City bike-share scheme with hundreds of electric bike stations across Luxembourg City."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://maee.gouvernement.lu",
+        "tier": 1,
+        "title": "Lüksemburg Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Luxembourg visa-free for tourism or business for up to 90 days in any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://guichet.public.lu/en/citoyens/immigration/tourisme-visite.html",
+        "tier": 1,
+        "title": "Guichet.lu Public Services Luxembourg"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "EU citizens hold freedom of movement and enter Luxembourg freely with a national ID card or passport.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://guichet.public.lu/en/citoyens/immigration/tourisme-visite.html",
+        "tier": 1,
+        "title": "Guichet.lu Public Services Luxembourg"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens can travel visa-free in Luxembourg and the Schengen area for up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/luxembourg/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ для посещения Люксембурга требуется действующая шенгенская виза категории C.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://maee.gouvernement.lu",
+        "tier": 1,
+        "title": "МИД Люксембурга"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Enjoy free public transport nationwide",
+        "description": "Hop on any bus, tram, or train (2nd class) anywhere in the country without buying a ticket—it is completely free for everyone!"
+      },
+      {
+        "title": "Explore the Bock Casemates fortress tunnels",
+        "description": "Visit the UNESCO-listed underground fortifications carved directly into the sheer cliff walls of the Alzette valley."
+      },
+      {
+        "title": "Greet in French, German, or Luxembourgish",
+        "description": "'Moien' (Luxembourgish hello) or 'Bonjour' is customary when entering shops or restaurants."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't sit in 1st class train coaches without a ticket",
+        "description": "While 2nd class public transit is completely free, 1st class carriages still require a valid ticket and are strictly checked."
+      },
+      {
+        "title": "Don't assume everyone speaks only German or French",
+        "description": "Luxembourg is multilingual; residents comfortably switch between Luxembourgish, French, German, and English."
+      }
+    ],
+    "tipping": "Service is included by law in all bills; rounding up to the nearest euro or adding 5% for exceptional service is customary."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Lüksemburg Grund Tarihi Vadisi ve Alzette Nehri",
+        "license": "CC BY-SA 3.0",
+        "author": "Cayambe",
+        "source_url": "/images/countries/lu-480.webp",
+        "attribution_text": "Grund historic quarter and Alzette river valley in Luxembourg City. Cayambe, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Lüksemburg Grund Tarihi Vadisi ve Alzette Nehri, Lüksemburg",
+          "en": "Luxembourg Grund Historic Valley & Alzette River, Luxembourg",
+          "de": "Historisches Grund-Viertel & Alzette, Luxemburg",
+          "ru": "Исторический квартал Грунд и река Альзет, Люксембург",
+          "es": "Valle Histórico de Grund y Río Alzette, Luxemburgo"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "luksemburg",
+      "en": "luxembourg",
+      "de": "luxemburg",
+      "ru": "lyuksemburg",
+      "es": "luxemburgo"
+    },
+    "title": {
+      "tr": "Lüksemburg Vize Rehberi, Ücretsiz Toplu Taşıma ve Grund Gezisi | Vizamigo",
+      "en": "Luxembourg Visa Guide, Free Public Transport & Grund Travel | Vizamigo",
+      "de": "Luxemburg Visum-Leitfaden, Kostenloser Nahverkehr & Grund Reisen | Vizamigo",
+      "ru": "Шенгенская виза в Люксембург, бесплатный транспорт и квартал Грунд | Vizamigo",
+      "es": "Guía de Visa de Luxemburgo, Transporte Público Gratuito y Grund | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Lüksemburg Schengen vize şartları, yeşil pasaporta vizesiz giriş, ülke genelinde %100 ÜCRETSİZ toplu taşıma ve Grund vadisi gezi rehberi.",
+      "en": "Luxembourg Schengen entry rules, green passport access, 100% free national public transport, Mobiliteit.lu, and Grund guide.",
+      "de": "Luxemburg Schengen-Visumregeln, 100% kostenloser öffentlicher Nahverkehr landesweit und Reisetipps Viertel Grund.",
+      "ru": "Правила въезда в Люксембург (Шенген), полностью бесплатный общественный транспорт и исторический квартал Грунд.",
+      "es": "Requisitos de visa Schengen para Luxemburgo, transporte público 100% gratuito en todo el país y guía de Grund."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

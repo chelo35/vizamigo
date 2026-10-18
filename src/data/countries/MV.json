@@ -1,0 +1,431 @@
+{
+  "iso2": "MV",
+  "names": {
+    "tr": "Maldivler",
+    "en": "Maldives",
+    "de": "Malediven",
+    "ru": "Мальдивы",
+    "es": "Maldivas"
+  },
+  "capital": {
+    "value": "Malé",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://malecity.gov.mv",
+        "tier": 1,
+        "title": "Malé City Council Official Portal"
+      }
+    ],
+    "evidence_quote": "Malé is the capital and most densely populated city of the Republic of Maldives",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MVR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mma.gov.mv",
+        "tier": 1,
+        "title": "Maldives Monetary Authority (MMA)"
+      }
+    ],
+    "evidence_quote": "The Maldivian Rufiyaa (MVR) is the official currency; US dollars are accepted widely",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5 (MVT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://presidency.gov.mv",
+        "tier": 1,
+        "title": "The President's Office of the Republic of Maldives"
+      }
+    ],
+    "evidence_quote": "The official standard time of the Maldives is Maldives Time UTC+5 without DST",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stelco.com.mv",
+          "tier": 1,
+          "title": "State Electric Company Limited (STELCO)"
+        }
+      ],
+      "evidence_quote": "Standard domestic power distribution in the Maldives operates at 230V nominal voltage",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stelco.com.mv",
+          "tier": 1,
+          "title": "State Electric Company Limited (STELCO)"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout the Maldives is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "The primary electrical standard in the Maldives is the British three-pin rectangular Type G socket",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.mv",
+          "tier": 1,
+          "title": "Maldives Police Service"
+        }
+      ],
+      "evidence_quote": "Dial 119 for emergency police assistance throughout the Maldives",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.mv",
+          "tier": 1,
+          "title": "Ministry of Health of the Maldives"
+        }
+      ],
+      "evidence_quote": "Call 102 for emergency medical response and hospital ambulance services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mndf.gov.mv",
+          "tier": 1,
+          "title": "Maldives National Defence Force (MNDF) Fire and Rescue Service"
+        }
+      ],
+      "evidence_quote": "Dial 118 for MNDF Fire and Rescue services across the atolls",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.police.gov.mv",
+          "tier": 1,
+          "title": "Maldives Police Service"
+        }
+      ],
+      "evidence_quote": "119 serves as the central emergency dispatch contact in the Maldives",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+960 979 0070",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourism.gov.mv",
+          "tier": 1,
+          "title": "Ministry of Tourism of the Maldives"
+        }
+      ],
+      "evidence_quote": "Tourist Police department 24/7 hotline dedicated to assisting international resort and local island visitors",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/maldives",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Maldivler tatil adalarında ve atollerde güvenlik seviyesi en üst düzeydedir; olağan tedbirler yeterlidir.",
+      "en": "Resort islands and tourist atolls are extremely safe; exercise normal travel precautions.",
+      "de": "Resortinseln und Touristenatolle sind sehr sicher; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Курортные острова и атоллы Мальдив максимально безопасны; действуют обычные меры предосторожности.",
+      "es": "Las islas resort y atolones son sumamente seguros; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 56.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/maldives",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in the Maldives reach approximately 56.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 42.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/maldives",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in the Maldives measure 42.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All travelers must fill out the online IMUGA Traveler Declaration within 96 hours before arrival and departure. Dhiraagu and Ooredoo provide tourist 5G eSIMs with excellent coverage across private resorts and inhabited islands.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://imuga.immigration.gov.mv",
+          "tier": 1,
+          "title": "Maldives Immigration IMUGA Portal"
+        }
+      ],
+      "evidence_quote": "IMUGA declaration is mandatory for all inbound and outbound international travelers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "IMUGA",
+      "category": "other",
+      "popular": true,
+      "description": "Official Maldives Immigration portal; mandatory digital entry declaration form required for all arrivals."
+    },
+    {
+      "name": "Avas Ride",
+      "category": "taxi",
+      "popular": true,
+      "description": "Leading taxi hailing app for travel across Malé, Hulhumalé, and the Sinamalé Bridge to the airport."
+    },
+    {
+      "name": "MyOoredoo / MyDhiraagu",
+      "category": "transport",
+      "popular": true,
+      "description": "Official telecom apps for topping up data and managing tourist eSIM packages while on atoll transfers."
+    },
+    {
+      "name": "FahiPay",
+      "category": "payments",
+      "popular": true,
+      "description": "Popular Maldivian digital wallet and bill payment service."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Tüm Türk vatandaşlarına havalimanında 30 günlük ücretsiz turist vizesi verilmektedir. Seyahatten 96 saat önce IMUGA formu doldurulmalıdır.",
+      "passport_validity_months": 1,
+      "source": {
+        "url": "https://immigration.gov.mv",
+        "tier": 1,
+        "title": "Maldivler Göç İdaresi"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "All foreign travelers including US citizens receive a free 30-day tourist visa on arrival with a confirmed resort/hotel booking and IMUGA form.",
+      "passport_validity_months": 1,
+      "source": {
+        "url": "https://immigration.gov.mv/tourist-visa",
+        "tier": 1,
+        "title": "Maldives Immigration Official Portal"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "German citizens receive a free 30-day tourist visa on arrival upon showing hotel confirmation and completing the IMUGA form.",
+      "passport_validity_months": 1,
+      "source": {
+        "url": "https://immigration.gov.mv/tourist-visa",
+        "tier": 1,
+        "title": "Maldives Immigration Official Portal"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "British passport holders receive a 30-day tourist visa free of charge on arrival with a confirmed hotel reservation and IMUGA submission.",
+      "passport_validity_months": 1,
+      "source": {
+        "url": "https://immigration.gov.mv/tourist-visa",
+        "tier": 1,
+        "title": "Maldives Immigration Official Portal"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ въезжают на Мальдивы без визы на срок до 90 дней при наличии брони отеля и заполненной декларации IMUGA.",
+      "passport_validity_months": 1,
+      "source": {
+        "url": "https://immigration.gov.mv/tourist-visa",
+        "tier": 1,
+        "title": "Иммиграционная служба Мальдив"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Fill the IMUGA form within 96 hours",
+        "description": "Submitting the online IMUGA traveler declaration within 96 hours before flight departure is strictly checked at airline check-in."
+      },
+      {
+        "title": "Respect local island dress codes",
+        "description": "On inhabited local islands (like Maafushi or Thulusdhoo), swimsuits are only allowed on designated 'Bikini Beaches'; dress modestly in villages."
+      },
+      {
+        "title": "Use reef-safe sunscreen",
+        "description": "Maldives coral reefs are sensitive ecosystems; use certified mineral reef-safe sunscreens without oxybenzone."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't bring alcohol into the Maldives",
+        "description": "Importing alcohol, pork products, or religious idols is strictly illegal; customs will confiscate any bottles found in luggage."
+      },
+      {
+        "title": "Don't touch or step on living corals",
+        "description": "Corals are fragile living organisms; standing on them causes irreversible reef damage and carries strict resort penalties."
+      }
+    ],
+    "tipping": "Resorts and restaurants add a mandatory 10% service charge and 16% TGST (Tourism Goods and Services Tax); tipping extra to room attendants and boat crew is customary."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Maldivler Turkuaz Lagünü ve Su Üstü Villaları",
+        "license": "Unsplash License",
+        "author": "Syd Sujuaan",
+        "source_url": "/images/countries/mv-480.webp",
+        "attribution_text": "Turquoise coral lagoon and overwater bungalows in the Maldives. Syd Sujuaan, Unsplash.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Maldivler Turkuaz Lagünü ve Su Üstü Villaları, Maldivler",
+          "en": "Maldives Turquoise Lagoon & Overwater Bungalows, Maldives",
+          "de": "Türkisblaue Malediven-Lagune & Überwasservillen, Malediven",
+          "ru": "Лазурная лагуна Мальдив и водные виллы, Мальдивы",
+          "es": "Laguna Turquesa de Maldivas y Cabañas Sobre el Agua, Maldivas"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "maldivler",
+      "en": "maldives",
+      "de": "malediven",
+      "ru": "maldivy",
+      "es": "maldivas"
+    },
+    "title": {
+      "tr": "Maldivler Vize Rehberi, IMUGA Formu ve Su Üstü Villa Gezisi | Vizamigo",
+      "en": "Maldives Visa Guide, IMUGA Declaration & Overwater Villas | Vizamigo",
+      "de": "Malediven Visum-Leitfaden, IMUGA Formular & Überwasservillen | Vizamigo",
+      "ru": "Виза на Мальдивы, декларация IMUGA и водные виллы | Vizamigo",
+      "es": "Guía de Visa de Maldivas, Declaración IMUGA y Cabañas Sobre el Agua | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Maldivler kapıda 30 gün ücretsiz turist vizesi, zorunlu 96 saat kala IMUGA formu, alkol getirme yasağı, yerel ada bikini plajı kuralları.",
+      "en": "Maldives 30-day free visa on arrival, mandatory IMUGA declaration, strict alcohol import bans, Type G plugs, and resort tips.",
+      "de": "Malediven 30 Tage kostenloses Visa on Arrival, IMUGA-Formular, Alkoholverbot im Gepäck und Reisetipps Resortinseln.",
+      "ru": "Бесплатная виза по прибытии на Мальдивы (30 дней), форма IMUGA, запрет на ввоз алкоголя и советы по отелям.",
+      "es": "Visa gratuita a la llegada en Maldivas (30 días), formulario IMUGA obligatorio, prohibición de alcohol y consejos de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

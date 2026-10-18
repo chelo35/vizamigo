@@ -1,0 +1,437 @@
+{
+  "iso2": "BA",
+  "names": {
+    "tr": "Bosna-Hersek",
+    "en": "Bosnia and Herzegovina",
+    "de": "Bosnien und Herzegowina",
+    "ru": "Босния и Герцеговина",
+    "es": "Bosnia y Herzegovina"
+  },
+  "capital": {
+    "value": "Saraybosna",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sarajevo.ba",
+        "tier": 1,
+        "title": "City of Sarajevo Official Portal"
+      }
+    ],
+    "evidence_quote": "Sarajevo is the capital and largest city of Bosnia and Herzegovina",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BAM",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbbh.ba",
+        "tier": 1,
+        "title": "Central Bank of Bosnia and Herzegovina"
+      }
+    ],
+    "evidence_quote": "The Convertible Mark (BAM / KM) is the official currency pegged to the Euro (1 EUR = 1.95583 BAM)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vijeceministara.gov.ba",
+        "tier": 1,
+        "title": "Council of Ministers of Bosnia and Herzegovina"
+      }
+    ],
+    "evidence_quote": "Bosnia and Herzegovina observes Central European Time UTC+1 and daylight saving time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nosbih.ba",
+          "tier": 1,
+          "title": "Independent System Operator in Bosnia and Herzegovina (NOSBiH)"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase low voltage delivered across the country is 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nosbih.ba",
+          "tier": 1,
+          "title": "Independent System Operator (NOSBiH)"
+        }
+      ],
+      "evidence_quote": "Grid frequency across Bosnia and Herzegovina operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Electrical outlets in Bosnia and Herzegovina utilize European Type C and Type F plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.ks.gov.ba",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs Sarajevo Canton"
+        }
+      ],
+      "evidence_quote": "Dial 122 for emergency police response across Bosnia and Herzegovina",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "124",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://hitnaza.ba",
+          "tier": 1,
+          "title": "Institute for Emergency Medical Aid (Hitna Pomoć)"
+        }
+      ],
+      "evidence_quote": "Call 124 for emergency medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "123",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fup.gov.ba",
+          "tier": 1,
+          "title": "Federal Police and Civil Protection"
+        }
+      ],
+      "evidence_quote": "Dial 123 for fire and emergency technical rescue brigades",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.msb.gov.ba",
+          "tier": 1,
+          "title": "Ministry of Security of Bosnia and Herzegovina"
+        }
+      ],
+      "evidence_quote": "112 operates as the coordinated civil emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Bosna-Hersek genelinde güvenlik seviyesi yüksektir; kırsal alanlarda mayın uyarı levhalarına dikkat edilmelidir.",
+      "en": "Exercise normal travel precautions; in rural hiking areas, heed marked unexploded landmine warnings.",
+      "de": "In Bosnien und Herzegowina gelten normale Vorsichtsmaßnahmen; im ländlichen Raum auf Minenwarnungen achten.",
+      "ru": "В Боснии и Герцеговине нормальный уровень безопасности; вне городов не сходите с размеченных троп (мины).",
+      "es": "Aplican precauciones normales de viaje; en zonas rurales preste atención a señales de minas terrestres."
+    },
+    "regional_warnings": [
+      {
+        "area": "Rural Forest and Former Confrontation Lines",
+        "level": 2,
+        "reason": "Residual unexploded landmines remain in isolated off-trail forested areas; stick to marked trails.",
+        "source": {
+          "url": "https://www.bhmac.org",
+          "tier": 1,
+          "title": "BH MAC Bosnia and Herzegovina Mine Action Centre"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 34.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bosnia-and-herzegovina",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Bosnia and Herzegovina measure 34.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 58.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bosnia-and-herzegovina",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Bosnia and Herzegovina reach 58.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Bosnia is outside the EU; EU Roam Like at Home does NOT apply. However, Western Balkans regional roaming agreement allows zero-roaming fees with Montenegro, Serbia, and Albania. BH Telecom and m:tel offer tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rcc.int",
+          "tier": 1,
+          "title": "Regional Cooperation Council Roaming Agreement"
+        }
+      ],
+      "evidence_quote": "Roam Like at Home applies within the Western Balkans region",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "MojTaxi",
+      "category": "taxi",
+      "popular": true,
+      "description": "Standard app for ordering official licensed metered taxis in Sarajevo, Mostar, and Banja Luka."
+    },
+    {
+      "name": "Korpa",
+      "category": "food",
+      "popular": true,
+      "description": "The most widely used food and grocery delivery application across Bosnia and Herzegovina."
+    },
+    {
+      "name": "Sarajevo Navigator",
+      "category": "maps",
+      "popular": true,
+      "description": "City guide app featuring heritage walking routes, restaurants, and cultural events in Sarajevo."
+    },
+    {
+      "name": "Centrotrans",
+      "category": "transport",
+      "popular": true,
+      "description": "Intercity and airport bus timetable and mobile ticketing service."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 180 gün içinde 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mvp.gov.ba",
+        "tier": 1,
+        "title": "Bosna-Hersek Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Bosnia and Herzegovina without a visa for tourist stays of up to 90 days within any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mvp.gov.ba",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Bosnia and Herzegovina"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens can enter Bosnia and Herzegovina visa-free for up to 90 days using a passport or national ID card.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mvp.gov.ba",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Bosnia and Herzegovina"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens can visit Bosnia and Herzegovina visa-free for stays of up to 90 days in any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Граждане РФ могут въезжать в Боснию и Герцеговину без визы на срок до 30 дней в течение каждого периода в 60 дней.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mvp.gov.ba",
+        "tier": 1,
+        "title": "МИД Боснии и Герцеговины"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Savor Bosnian coffee (Bosanska kafa)",
+        "description": "Drinking Bosnian coffee is a slow, cherished ritual; scoop the foam (kajmak) first, sip slowly, and enjoy the rahat lokum."
+      },
+      {
+        "title": "Carry cash (BAM / KM)",
+        "description": "While large hotels and supermarkets accept cards, many traditional ćevabdžinicas and small shops in Baščaršija are cash only."
+      },
+      {
+        "title": "Respect religious places of worship",
+        "description": "Dress modestly when entering mosques (Gazi Husrev-beg), Orthodox churches, Catholic cathedrals, and synagogues."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't hike off marked paths in wilderness areas",
+        "description": "Always remain on clearly marked hiking trails and never ignore red skull-and-crossbones mine hazard signs."
+      },
+      {
+        "title": "Don't discuss sensitive 1990s war politics casually",
+        "description": "The war remains an emotionally delicate subject for families across all ethnic communities; listen respectfully."
+      }
+    ],
+    "tipping": "Tipping 10% is standard and customary in restaurants and cafes in Sarajevo and Mostar."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Mostar Tarihi Taş Köprüsü ve Neretva Nehri (UNESCO)",
+        "license": "Unsplash License",
+        "author": "Faruk Kaymak",
+        "source_url": "/images/countries/ba-480.webp",
+        "attribution_text": "Stari Most historic bridge crossing the Neretva river in Mostar, Bosnia and Herzegovina. Faruk Kaymak, Unsplash.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Mostar Tarihi Taş Köprüsü ve Neretva Nehri, Bosna-Hersek",
+          "en": "Stari Most Historic Old Bridge, Mostar, Bosnia and Herzegovina",
+          "de": "Historische Alte Brücke Stari Most, Mostar, Bosnien und Herzegowina",
+          "ru": "Старый мост в Мостаре, Босния и Герцеговина",
+          "es": "Puente Viejo Histórico Stari Most, Mostar, Bosnia y Herzegovina"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "bosna-hersek",
+      "en": "bosnia-and-herzegovina",
+      "de": "bosnien-und-herzegowina",
+      "ru": "bosniya-i-gertsegovina",
+      "es": "bosnia-y-herzegovina"
+    },
+    "title": {
+      "tr": "Bosna-Hersek Vize Rehberi, 90 Gün Vizesiz Giriş ve Mostar Köprüsü | Vizamigo",
+      "en": "Bosnia and Herzegovina Visa Guide, 90-Day Visa-Free & Mostar Bridge | Vizamigo",
+      "de": "Bosnien und Herzegowina Visum-Leitfaden, 90 Tage visafrei & Mostar | Vizamigo",
+      "ru": "Виза в Боснию и Герцеговину, безвизовый въезд и Старый мост в Мостаре | Vizamigo",
+      "es": "Guía de Visa de Bosnia y Herzegovina, Entrada sin Visa y Puente de Mostar | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Bosna-Hersek Türk pasaportuna 90 gün vizesiz giriş, BAM para birimi, Saraybosna Başçarşı ve Mostar Köprüsü gezi rehberi.",
+      "en": "Bosnia and Herzegovina 90-day visa-free rules, BAM convertible mark, MojTaxi app, hiking safety, and Mostar travel tips.",
+      "de": "Bosnien und Herzegowina 90 Tage visafreie Einreise, KM-Währung, MojTaxi App und Reisetipps Mostar Brücke.",
+      "ru": "Правила безвизового въезда в Боснию и Герцеговину, валюта BAM, приложение MojTaxi и мост в Мостаре.",
+      "es": "Requisitos de entrada sin visa a Bosnia y Herzegovina (90 días), moneda BAM, app MojTaxi y guía de Mostar."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

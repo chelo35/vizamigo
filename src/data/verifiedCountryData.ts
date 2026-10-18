@@ -78,6 +78,13 @@ import KH from './countries/KH.json';
 import SI from './countries/SI.json';
 import SK from './countries/SK.json';
 import EE from './countries/EE.json';
+import LV from './countries/LV.json';
+import LT from './countries/LT.json';
+import LU from './countries/LU.json';
+import BA from './countries/BA.json';
+import MK from './countries/MK.json';
+import MV from './countries/MV.json';
+import MU from './countries/MU.json';
 
 export interface VerifiedSource {
   url: string;
@@ -290,6 +297,13 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   SI: SI as unknown as VerifiedCountryRecord,
   SK: SK as unknown as VerifiedCountryRecord,
   EE: EE as unknown as VerifiedCountryRecord,
+  LV: LV as unknown as VerifiedCountryRecord,
+  LT: LT as unknown as VerifiedCountryRecord,
+  LU: LU as unknown as VerifiedCountryRecord,
+  BA: BA as unknown as VerifiedCountryRecord,
+  MK: MK as unknown as VerifiedCountryRecord,
+  MV: MV as unknown as VerifiedCountryRecord,
+  MU: MU as unknown as VerifiedCountryRecord,
 };
 
 /**

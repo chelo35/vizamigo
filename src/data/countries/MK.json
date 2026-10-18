@@ -1,0 +1,430 @@
+{
+  "iso2": "MK",
+  "names": {
+    "tr": "Kuzey Makedonya",
+    "en": "North Macedonia",
+    "de": "Nordmazedonien",
+    "ru": "Северная Македония",
+    "es": "Macedonia del Norte"
+  },
+  "capital": {
+    "value": "Üsküp",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://skopje.gov.mk",
+        "tier": 1,
+        "title": "City of Skopje Official Portal"
+      }
+    ],
+    "evidence_quote": "Skopje is the capital and largest city of the Republic of North Macedonia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MKD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nbrm.mk",
+        "tier": 1,
+        "title": "National Bank of the Republic of North Macedonia"
+      }
+    ],
+    "evidence_quote": "The Macedonian Denar (MKD) is the legal tender currency of North Macedonia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://vlada.mk",
+        "tier": 1,
+        "title": "Government of the Republic of North Macedonia"
+      }
+    ],
+    "evidence_quote": "North Macedonia observes Central European Time UTC+1 and daylight saving time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mepso.com.mk",
+          "tier": 1,
+          "title": "MEPSO Electricity Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Nominal consumer voltage in North Macedonia is supplied at 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mepso.com.mk",
+          "tier": 1,
+          "title": "MEPSO Electricity Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout North Macedonia is maintained at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Standard wall outlets accept Europlug Type C and Schuko Type F power plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvr.gov.mk",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of North Macedonia"
+        }
+      ],
+      "evidence_quote": "Dial 192 for emergency police intervention across North Macedonia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "194",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://zdravstvo.gov.mk",
+          "tier": 1,
+          "title": "Ministry of Health of North Macedonia"
+        }
+      ],
+      "evidence_quote": "Call 194 for urgent emergency ambulance and medical response",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "193",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cuk.gov.mk",
+          "tier": 1,
+          "title": "Crisis Management Center of North Macedonia"
+        }
+      ],
+      "evidence_quote": "Dial 193 for municipal fire and rescue departments",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cuk.gov.mk",
+          "tier": 1,
+          "title": "Crisis Management Center (CUK)"
+        }
+      ],
+      "evidence_quote": "Unified emergency number 112 connects to police, ambulance, and fire services nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/north-macedonia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Kuzey Makedonya genelinde seyahat güvenlidir; olağan seyahat tedbirleri yeterlidir.",
+      "en": "Exercise normal precautions across North Macedonia; cities and tourist areas are peaceful.",
+      "de": "In Nordmazedonien gelten normale Sicherheitsvorkehrungen; Städte und Ohridsee sind sicher.",
+      "ru": "В Северной Македонии безопасная обстановка; действуют стандартные меры предосторожности.",
+      "es": "Aplican precauciones normales de viaje en Macedonia del Norte; las zonas turísticas son tranquilas."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 64.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/north-macedonia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in North Macedonia measure 64.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 48.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/north-macedonia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in North Macedonia reach 48.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Western Balkans regional roaming agreement allows surcharge-free mobile roaming with Serbia, Montenegro, Bosnia, and Albania. Makedonski Telekom and A1 offer 4G/5G tourist eSIM packages.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rcc.int",
+          "tier": 1,
+          "title": "Regional Cooperation Council Roaming Agreement"
+        }
+      ],
+      "evidence_quote": "Regional zero-surcharge roaming applies among Western Balkan states",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Cammeo / Global Taxi",
+      "category": "taxi",
+      "popular": true,
+      "description": "Reliable ride-hailing app with metered rates in Skopje."
+    },
+    {
+      "name": "Kliknijadi",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food delivery platform in Skopje and major Macedonian cities."
+    },
+    {
+      "name": "SkopjeBus",
+      "category": "transport",
+      "popular": true,
+      "description": "Public bus transit route planner and digital ticketing service in Skopje."
+    },
+    {
+      "name": "Ohrid Guide",
+      "category": "maps",
+      "popular": true,
+      "description": "Interactive tourism map for UNESCO-listed Lake Ohrid historical churches and boat routes."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 180 gün içinde 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.mk",
+        "tier": 1,
+        "title": "Kuzey Makedonya Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter North Macedonia visa-free for up to 90 days within any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.mk/en/page/432/visa-regime",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of North Macedonia"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens can enter North Macedonia without a visa for up to 90 days using an ID card or passport.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.mk/en/page/432/visa-regime",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of North Macedonia"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit North Macedonia visa-free for up to 90 days in any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/north-macedonia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Visa Required",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ для въезда в Северную Македонию требуется национальная виза либо действующая многократная шенгенская виза.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.mk/ru/page/432/visa-regime",
+        "tier": 1,
+        "title": "МИД Северной Македонии"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "North Macedonia Digital Nomad Visa",
+    "min_income_usd": 2500,
+    "duration_months": 12,
+    "source": {
+      "url": "https://mfa.gov.mk",
+      "tier": 1,
+      "title": "Ministry of Foreign Affairs of North Macedonia"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Visit Lake Ohrid's historic churches",
+        "description": "Lake Ohrid is one of Europe's oldest and deepest lakes, celebrated for having 365 historic churches—one for every day of the year."
+      },
+      {
+        "title": "Carry Macedonian Denars for local bazaars",
+        "description": "Small cafes, green markets, and Old Bazaar craft shops in Skopje prefer cash payment in Macedonian Denar (MKD)."
+      },
+      {
+        "title": "Register at your accommodation",
+        "description": "Accommodations must register foreign guests with the local police within 24 hours of arrival; keep the confirmation paper."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't debate ethnic politics or naming disputes",
+        "description": "Discussions surrounding national identity, symbols, or the 2018 Prespa Agreement can be emotionally charged."
+      },
+      {
+        "title": "Don't take unmarked pirate taxis from Skopje Airport",
+        "description": "Always use the official airport taxi concession desk (flat airport rate) or pre-booked transfers."
+      }
+    ],
+    "tipping": "Tipping around 10% is customary in sit-down restaurants in Skopje and Ohrid for good service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Ohri Gölü ve Kaneo Aziz Yuhanna Kilisesi",
+        "license": "CC BY-SA 3.0",
+        "author": "Diego Delso",
+        "source_url": "/images/countries/mk-480.webp",
+        "attribution_text": "Church of Saint John at Kaneo overlooking Lake Ohrid in North Macedonia. Diego Delso, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Ohri Gölü ve Kaneo Aziz Yuhanna Kilisesi, Kuzey Makedonya",
+          "en": "Lake Ohrid & Church of Saint John at Kaneo, North Macedonia",
+          "de": "Ohridsee & Kirche des Heiligen Johannes von Kaneo, Nordmazedonien",
+          "ru": "Охридское озеро и церковь Святого Иоанна Канео, Северная Македония",
+          "es": "Lago Ohrid e Iglesia de San Juan en Kaneo, Macedonia del Norte"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kuzey-makedonya",
+      "en": "north-macedonia",
+      "de": "nordmazedonien",
+      "ru": "severnaya-makedoniya",
+      "es": "macedonia-del-norte"
+    },
+    "title": {
+      "tr": "Kuzey Makedonya Vize Rehberi, 90 Gün Vizesiz Seyahat ve Ohri Gölü | Vizamigo",
+      "en": "North Macedonia Visa Guide, 90-Day Visa-Free & Lake Ohrid | Vizamigo",
+      "de": "Nordmazedonien Visum-Leitfaden, 90 Tage visafrei & Ohridsee | Vizamigo",
+      "ru": "Виза в Северную Македонию, правила въезда и озеро Охрид | Vizamigo",
+      "es": "Guía de Visa de Macedonia del Norte, 90 Días sin Visa y Lago Ohrid | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kuzey Makedonya Türk pasaportuna 90 gün vizesiz giriş, Batı Balkanlar dolaşım kuralı, Üsküp Taş Köprü ve UNESCO Ohri Gölü rehberi.",
+      "en": "North Macedonia 90-day visa-free rules, Western Balkans roaming pact, Digital Nomad Visa, Skopje and Lake Ohrid guide.",
+      "de": "Nordmazedonien 90 Tage visafreie Einreise, Westbalkan-Roaming, Digital Nomad Visum und Reisetipps Ohridsee.",
+      "ru": "Правила въезда в Северную Македонию, виза цифрового кочевника, Скопье и путеводитель по Охридскому озеру.",
+      "es": "Requisitos de entrada sin visa a Macedonia del Norte (90 días), visa nómada digital y guía de viaje al Lago Ohrid."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

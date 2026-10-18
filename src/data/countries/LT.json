@@ -1,0 +1,437 @@
+{
+  "iso2": "LT",
+  "names": {
+    "tr": "Litvanya",
+    "en": "Lithuania",
+    "de": "Litauen",
+    "ru": "Литва",
+    "es": "Lituania"
+  },
+  "capital": {
+    "value": "Vilnius",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://vilnius.lt",
+        "tier": 1,
+        "title": "Vilnius City Municipality Official Portal"
+      }
+    ],
+    "evidence_quote": "Vilnius is the capital and largest city of the Republic of Lithuania",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.lb.lt",
+        "tier": 1,
+        "title": "Bank of Lithuania (Lietuvos bankas)"
+      }
+    ],
+    "evidence_quote": "The Euro is the official currency of Lithuania, member of the Eurosystem",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://lrv.lt",
+        "tier": 1,
+        "title": "Government of the Republic of Lithuania"
+      }
+    ],
+    "evidence_quote": "Lithuania observes Eastern European Time UTC+2 and daylight saving time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.litgrid.eu",
+          "tier": 1,
+          "title": "Litgrid Electricity Transmission Operator"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase low voltage delivered across Lithuania is 230V alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.litgrid.eu",
+          "tier": 1,
+          "title": "Litgrid Electricity Transmission Operator"
+        }
+      ],
+      "evidence_quote": "Transmission system nominal frequency is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Power plugs in Lithuania adhere to European Type C and Type F standards",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://policija.lrv.lt",
+          "tier": 1,
+          "title": "Lithuanian Police Department"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency police assistance throughout Lithuania",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bpc.lrv.lt",
+          "tier": 1,
+          "title": "Emergency Response Centre of Lithuania (BPC)"
+        }
+      ],
+      "evidence_quote": "Call 112 for ambulance and urgent medical dispatch in Lithuania",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pagd.lrv.lt",
+          "tier": 1,
+          "title": "Fire and Rescue Department of Lithuania"
+        }
+      ],
+      "evidence_quote": "Call 112 for fire rescue and disaster response nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bpc.lrv.lt",
+          "tier": 1,
+          "title": "General Emergency Response Centre (BPC)"
+        }
+      ],
+      "evidence_quote": "112 is the single emergency telephone number for police, ambulance, and fire services",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/lithuania",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Litvanya genelinde güvenlik seviyesi çok yüksektir; Belarus sınırı kapalı/kısıtlıdır.",
+      "en": "Lithuania is very safe with normal precautions; note border closures with Belarus.",
+      "de": "Litauen ist ein sehr sicheres Reiseland; Grenzschließungen zu Belarus beachten.",
+      "ru": "В Литве действует высокий уровень безопасности; обратите внимание на ограничения на границе с Беларусью.",
+      "es": "Lituania es sumamente segura; tenga en cuenta los cierres fronterizos con Bielorrusia."
+    },
+    "regional_warnings": [
+      {
+        "area": "Border with Belarus & Kaliningrad Oblast",
+        "level": 2,
+        "reason": "Border crossings heavily restricted or closed; stay on designated highways away from border buffer zones.",
+        "source": {
+          "url": "https://pasienis.lt",
+          "tier": 1,
+          "title": "State Border Guard Service of Lithuania"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 87.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/lithuania",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Lithuania reach approximately 87.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 128.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/lithuania",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Lithuania measure 128.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "EU Roam Like at Home regulations apply without extra charges for EU SIMs. Telia Lietuva, Tele2, and Bitė offer instant prepaid 5G eSIMs with nationwide high-speed coverage.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu",
+          "tier": 1,
+          "title": "European Commission Roaming Regulations"
+        }
+      ],
+      "evidence_quote": "Zero roaming fees across Lithuanian operators under EU Roam Like at Home regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "popular": true,
+      "description": "Standard ride-hailing and e-scooter app in Vilnius, Kaunas, and Klaipėda."
+    },
+    {
+      "name": "m.Ticket / Trafi",
+      "category": "transport",
+      "popular": true,
+      "description": "Comprehensive urban mobility apps for mobile transit ticketing and real-time public transit routing in Vilnius."
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "popular": true,
+      "description": "Leading restaurant meal delivery and grocery service in Lithuania."
+    },
+    {
+      "name": "CityBee",
+      "category": "transport",
+      "popular": true,
+      "description": "Extremely popular car-sharing service across Lithuania allowing easy point-to-point intercity rentals."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://urm.lt",
+        "tier": 1,
+        "title": "Litvanya Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US passport holders can travel visa-free in Lithuania and the Schengen area for up to 90 days in any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://keliauk.urm.lt/en/entry-to-lithuania",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Lithuania"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "EU citizens exercise free movement rights and enter Lithuania with a valid national ID card or passport.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://keliauk.urm.lt/en/entry-to-lithuania",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Lithuania"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens can enter Lithuania visa-free for tourism or business for up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/lithuania/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Restricted",
+      "duration_days": 0,
+      "conditions": "Въезд граждан РФ по краткосрочным шенгенским туристическим визам через внешнюю границу Литвы ограничен правительством ЛР.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://urm.lt/default/ru/",
+        "tier": 1,
+        "title": "МИД Литвы"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect the Constitution of Užupis",
+        "description": "When visiting the bohemian Republic of Užupis in Vilnius, read its whimsical multilingual constitution on Paupio Street."
+      },
+      {
+        "title": "Try cold beetroot soup (Šaltibarščiai)",
+        "description": "Sampling Lithuania's signature vibrant pink cold soup served with hot boiled potatoes is a national culinary pride."
+      },
+      {
+        "title": "Recycle beverage containers via Taromat machines",
+        "description": "Lithuania has a 92%+ recycling rate; deposit cans and bottles at grocery Taromat machines to claim your refund."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't bring Soviet or Nazi symbols",
+        "description": "Displaying Soviet or Nazi symbols, flags, or uniforms in public is strictly illegal under Lithuanian law."
+      },
+      {
+        "title": "Don't consume alcohol in public spaces",
+        "description": "Drinking alcohol in parks, streets, or public benches is strictly prohibited and subject to municipal fines."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in sit-down restaurants in Vilnius for good service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Trakai Ada Kalesi ve Galvė Gölü",
+        "license": "CC BY-SA 4.0",
+        "author": "Scotch Mist",
+        "source_url": "/images/countries/lt-480.webp",
+        "attribution_text": "Trakai Island Castle situated on Lake Galvė in Lithuania. Scotch Mist, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Trakai Ada Kalesi ve Galvė Gölü, Litvanya",
+          "en": "Trakai Island Castle & Lake Galvė, Lithuania",
+          "de": "Wasserburg Trakai & Galvė-See, Litauen",
+          "ru": "Тракайский островной замок и озеро Гальве, Литва",
+          "es": "Castillo de la Isla de Trakai y Lago Galvė, Lituania"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "litvanya",
+      "en": "lithuania",
+      "de": "litauen",
+      "ru": "litva",
+      "es": "lituania"
+    },
+    "title": {
+      "tr": "Litvanya Vize Rehberi, Trafi Ulaşım ve Trakai Kalesi Gezisi | Vizamigo",
+      "en": "Lithuania Visa Guide, Trafi Transit App & Trakai Castle Travel | Vizamigo",
+      "de": "Litauen Visum-Leitfaden, Trafi App & Burg Trakai Reisen | Vizamigo",
+      "ru": "Шенгенская виза в Литву, приложение Trafi и Тракайский замок | Vizamigo",
+      "es": "Guía de Visa de Lituania, App Trafi y Castillo de Trakai | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Litvanya Schengen vize kuralları, yeşil pasaporta vizesiz seyahat, Trafi ulaşım uygulaması, Užupis Cumhuriyeti ve Trakai Kalesi rehberi.",
+      "en": "Lithuania Schengen entry rules, green passport access, Trafi mobility app, CityBee car share, and Trakai Island Castle guide.",
+      "de": "Litauen Schengen-Visabestimmungen, Trafi Nahverkehrsapp, CityBee Carsharing und Burg Trakai Reisetipps.",
+      "ru": "Правила въезда в Литву (Шенген), приложение Trafi, каршеринг CityBee и поездка в Тракайский замок.",
+      "es": "Requisitos de visa Schengen para Lituania, app de transporte Trafi, carsharing CityBee y castillo de Trakai."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

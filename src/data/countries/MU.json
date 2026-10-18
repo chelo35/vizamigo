@@ -1,0 +1,436 @@
+{
+  "iso2": "MU",
+  "names": {
+    "tr": "Mauritius",
+    "en": "Mauritius",
+    "de": "Mauritius",
+    "ru": "Маврикий",
+    "es": "Mauricio"
+  },
+  "capital": {
+    "value": "Port Louis",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://mccpl.mu",
+        "tier": 1,
+        "title": "City Council of Port Louis Official Portal"
+      }
+    ],
+    "evidence_quote": "Port Louis is the capital and largest city of the Republic of Mauritius",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bom.mu",
+        "tier": 1,
+        "title": "Bank of Mauritius"
+      }
+    ],
+    "evidence_quote": "The official legal currency of the Republic of Mauritius is the Mauritian Rupee (MUR)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (MUT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://pmo.govmu.org",
+        "tier": 1,
+        "title": "Prime Minister's Office of the Republic of Mauritius"
+      }
+    ],
+    "evidence_quote": "Mauritius observes Mauritius Time UTC+4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ceb.mu",
+          "tier": 1,
+          "title": "Central Electricity Board (CEB) Mauritius"
+        }
+      ],
+      "evidence_quote": "Domestic power in Mauritius is distributed at 230V single phase 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ceb.mu",
+          "tier": 1,
+          "title": "Central Electricity Board (CEB) Mauritius"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Mauritius operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Electrical outlets in Mauritius primarily accommodate British Type G and Europlug Type C plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.govmu.org",
+          "tier": 1,
+          "title": "Mauritius Police Force (MPF)"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 112 for emergency police assistance throughout Mauritius",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.govmu.org",
+          "tier": 1,
+          "title": "Ministry of Health and Wellness of Mauritius"
+        }
+      ],
+      "evidence_quote": "Dial 114 for emergency SAMU medical response and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mfrs.govmu.org",
+          "tier": 1,
+          "title": "Mauritius Fire and Rescue Service (MFRS)"
+        }
+      ],
+      "evidence_quote": "Call 115 for Mauritius Fire and Rescue Service emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.govmu.org",
+          "tier": 1,
+          "title": "Mauritius Police Force"
+        }
+      ],
+      "evidence_quote": "112 serves as the international unified mobile emergency number in Mauritius",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+230 213 7979",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.govmu.org",
+          "tier": 1,
+          "title": "Tourism Police Division Mauritius"
+        }
+      ],
+      "evidence_quote": "Specialised Tourism Police Division hotline provides 24/7 dedicated visitor security",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/mauritius",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Mauritius genelinde güvenlik seviyesi çok yüksektir; standart seyahat önlemleri yeterlidir.",
+      "en": "Mauritius is one of the safest island nations globally; exercise normal precautions.",
+      "de": "Mauritius ist ein sehr sicheres Reiseland; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Маврикий — одна из самых безопасных стран мира; действуют обычные меры предосторожности.",
+      "es": "Mauricio es un destino sumamente seguro; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 41.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/mauritius",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Mauritius measure approximately 41.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 65.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/mauritius",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Mauritius reach 65.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All inbound passengers are recommended to fill out the Mauritius All-in-One Digital Travel Form prior to arrival. My.t (Mauritius Telecom) and Emtel offer 4G/5G prepaid tourist eSIMs with fast airport pickup.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://safemauritius.govmu.org",
+          "tier": 1,
+          "title": "Mauritius All-in-One Travel Form Portal"
+        }
+      ],
+      "evidence_quote": "Digital immigration and health arrival card can be completed online before flying",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yugo",
+      "category": "taxi",
+      "popular": true,
+      "description": "Leading Mauritian app for booking licensed taxis and private transfers across the island."
+    },
+    {
+      "name": "OrderManze",
+      "category": "food",
+      "popular": true,
+      "description": "Popular food delivery application connecting diners to local Mauritian creole restaurants."
+    },
+    {
+      "name": "my.t billpay",
+      "category": "payments",
+      "popular": true,
+      "description": "Mobile payment and data management app by the national telecom operator."
+    },
+    {
+      "name": "Mauritius Metro Express",
+      "category": "transport",
+      "popular": true,
+      "description": "Official light rail transit app for the modern light rail linking Port Louis to Curepipe."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti vatandaşları turistik amaçlı seyahatlerde 90 güne kadar vizeden muaftır. Havalimanında ücretsiz giriş damgası vurulur.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://passport.govmu.org",
+        "tier": 1,
+        "title": "Mauritius Pasaport ve Göç İdaresi"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Mauritius visa-free for tourism or business for up to 90 days with confirmed return tickets.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://passport.govmu.org/visa",
+        "tier": 1,
+        "title": "Passport and Immigration Office of Mauritius"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not need a visa to enter Mauritius for stays of up to 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://passport.govmu.org/visa",
+        "tier": 1,
+        "title": "Passport and Immigration Office of Mauritius"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens do not require a visa for tourist visits of up to 90 days in Mauritius.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/mauritius/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 60,
+      "conditions": "Граждане РФ могут въезжать на Маврикий без визы на срок до 60 дней при наличии обратного билета и брони отеля.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://passport.govmu.org/visa",
+        "tier": 1,
+        "title": "Паспортная и иммиграционная служба Маврикия"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Premium Visa",
+    "min_income_usd": 1500,
+    "duration_months": 12,
+    "source": {
+      "url": "https://edbmauritius.org/premium-visa",
+      "tier": 1,
+      "title": "Economic Development Board Mauritius (EDB)"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Drive on the left side of the road",
+        "description": "Mauritius drives on the LEFT (UK-style); remember roundabouts give way to traffic from the right."
+      },
+      {
+        "title": "Respect sacred Hindu shrines and temples",
+        "description": "Remove shoes and leather items when visiting sacred temple areas such as Grand Bassin (Ganga Talao)."
+      },
+      {
+        "title": "Try local street food delicacies",
+        "description": "Sample Mauritian dhal puri, samosas, and boulettes at local beach kiosks and Port Louis Central Market."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't purchase or collect shells and coral from reefs",
+        "description": "Taking corals, sea stars, or large marine shells from lagoons is strictly illegal under environmental protection laws."
+      },
+      {
+        "title": "Don't bring rolling papers without tobacco",
+        "description": "Customs strictly inspects rolling papers and cigarette accessories due to tight anti-contraband regulations."
+      }
+    ],
+    "tipping": "Tipping is not mandatory but 5-10% is customary in restaurants and resorts for attentive service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Le Morne Brabant Dağı ve Turkuaz Lagünü (UNESCO)",
+        "license": "CC BY-SA 4.0",
+        "author": "S Molteno",
+        "source_url": "/images/countries/mu-480.webp",
+        "attribution_text": "Le Morne Brabant mountain monolith and turquoise lagoon in Mauritius. S Molteno, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Le Morne Brabant Dağı ve Turkuaz Lagünü, Mauritius",
+          "en": "Le Morne Brabant Monolith & Turquoise Lagoon, Mauritius",
+          "de": "Le Morne Brabant & türkisfarbene Lagune, Mauritius",
+          "ru": "Монолит Ле Морн Брабант и бирюзовая лагуна, Маврикий",
+          "es": "Península de Le Morne Brabant y Laguna Turquesa, Mauricio"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "mauritius",
+      "en": "mauritius",
+      "de": "mauritius",
+      "ru": "mavrikiy",
+      "es": "mauricio"
+    },
+    "title": {
+      "tr": "Mauritius Vize Rehberi, Premium Dijital Göçebe Vizesi ve Le Morne Gezisi | Vizamigo",
+      "en": "Mauritius Visa Guide, Premium Digital Nomad Visa & Le Morne Travel | Vizamigo",
+      "de": "Mauritius Visum-Leitfaden, Premium Nomad Visum & Le Morne Reisen | Vizamigo",
+      "ru": "Виза на Маврикий, виза Premium Nomad и гора Ле Морн | Vizamigo",
+      "es": "Guía de Visa de Mauricio, Visa Premium Nómada y Le Morne | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Mauritius Türk pasaportuna 90 gün vizesiz giriş, Premium Visa dijital göçebe programı, soldan trafik ve UNESCO Le Morne gezi rehberi.",
+      "en": "Mauritius 90-day visa-free rules, $1500/mo Premium Visa for nomads, left-hand driving, and UNESCO Le Morne Brabant tips.",
+      "de": "Mauritius 90 Tage visafreie Einreise, Premium Nomad Visum, Linksverkehr und Reisetipps Le Morne Brabant.",
+      "ru": "Правила въезда на Маврикий, виза цифрового кочевника Premium Visa, левостороннее движение и Ле Морн.",
+      "es": "Requisitos de entrada sin visa a Mauricio (90 días), Visa Premium para nómadas digitales y guía de Le Morne."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

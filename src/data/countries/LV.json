@@ -1,0 +1,447 @@
+{
+  "iso2": "LV",
+  "names": {
+    "tr": "Letonya",
+    "en": "Latvia",
+    "de": "Lettland",
+    "ru": "Латвия",
+    "es": "Letonia"
+  },
+  "capital": {
+    "value": "Riga",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.riga.lv",
+        "tier": 1,
+        "title": "Riga City Council Official Portal"
+      }
+    ],
+    "evidence_quote": "Riga is the capital and largest city of the Republic of Latvia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bank.lv",
+        "tier": 1,
+        "title": "Bank of Latvia (Latvijas Banka)"
+      }
+    ],
+    "evidence_quote": "The Euro is the official legal tender currency in Latvia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mk.gov.lv",
+        "tier": 1,
+        "title": "Cabinet of Ministers of the Republic of Latvia"
+      }
+    ],
+    "evidence_quote": "Latvia follows Eastern European Time UTC+2 with summer daylight saving UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ast.lv",
+          "tier": 1,
+          "title": "Augstsprieguma tīkls (AST) Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Latvian domestic power supplies standard 230V single-phase alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ast.lv",
+          "tier": 1,
+          "title": "Augstsprieguma tīkls (AST)"
+        }
+      ],
+      "evidence_quote": "Power grid frequency across Latvia operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Standard sockets in Latvia support two-pin Type C and grounded Type F Schuko plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vp.gov.lv",
+          "tier": 1,
+          "title": "State Police of Latvia (Valsts policija)"
+        }
+      ],
+      "evidence_quote": "Dial 110 for emergency state police assistance in Latvia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nmpd.gov.lv",
+          "tier": 1,
+          "title": "Emergency Medical Service of Latvia (NMPD)"
+        }
+      ],
+      "evidence_quote": "Call 113 for direct medical emergencies and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vugd.gov.lv",
+          "tier": 1,
+          "title": "State Fire and Rescue Service of Latvia (VUGD)"
+        }
+      ],
+      "evidence_quote": "Call 112 for state fire rescue and civil protection services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.lv",
+          "tier": 1,
+          "title": "Latvian Emergency Center 112"
+        }
+      ],
+      "evidence_quote": "112 is the primary unified emergency telephone number across Latvia",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+371 6718 1818",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rpp.riga.lv",
+          "tier": 1,
+          "title": "Riga Municipal Police Tourism Unit"
+        }
+      ],
+      "evidence_quote": "Riga Municipal Police specialized tourism department hotline provides English assistance",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/latvia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Letonya genelinde güvenlik seviyesi yüksektir; doğu sınır bölgelerinde olağan dikkat tavsiye edilir.",
+      "en": "Exercise normal travel precautions in Latvia; security in cities and tourist spots is high.",
+      "de": "In Lettland gelten normale Sicherheitsvorkehrungen; Städte und Tourismuszentren sind sicher.",
+      "ru": "В Латвии действует нормальный уровень безопасности; соблюдайте обычные правила предосторожности.",
+      "es": "Aplican precauciones normales de viaje en Letonia; el país es seguro para los visitantes."
+    },
+    "regional_warnings": [
+      {
+        "area": "Eastern Border with Russia & Belarus",
+        "level": 2,
+        "reason": "Heightened border security controls and special pass requirements in immediate border strips.",
+        "source": {
+          "url": "https://www.rs.gov.lv",
+          "tier": 1,
+          "title": "State Border Guard of Latvia"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 81.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/latvia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Latvia measure approximately 81.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 114.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/latvia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Latvia reach 114.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "EU Roam Like at Home allows fee-free roaming for EU SIM cards. LMT, Tele2, and Bite provide prepaid 5G tourist eSIM profiles available directly online.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu",
+          "tier": 1,
+          "title": "European Commission Roaming"
+        }
+      ],
+      "evidence_quote": "EU domestic roaming regulations apply without surcharge across Latvia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "popular": true,
+      "description": "Primary app for taxis, car sharing (Bolt Drive), and e-scooters in Riga and Jūrmala."
+    },
+    {
+      "name": "Mobilly",
+      "category": "transport",
+      "popular": true,
+      "description": "Indispensable app for buying Riga bus/tram tickets, regional train fares, and Jūrmala resort entry passes."
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "popular": true,
+      "description": "Top-rated restaurant and grocery delivery platform in Riga and surrounding areas."
+    },
+    {
+      "name": "Rīgas satiksme",
+      "category": "transport",
+      "popular": true,
+      "description": "Official municipal transit app for real-time bus and tram timetables."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mfa.gov.lv",
+        "tier": 1,
+        "title": "Letonya Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can travel to Latvia and the Schengen area visa-free for up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mfa.gov.lv/en/entry-requirements-latvia",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Latvia"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "German and EU citizens enter Latvia freely with a valid national ID card or passport.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.mfa.gov.lv/en/entry-requirements-latvia",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Latvia"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Latvia and the Schengen area visa-free for up to 90 days within any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/latvia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Restricted",
+      "duration_days": 0,
+      "conditions": "Въезд граждан РФ по краткосрочным туристическим шенгенским визам через внешнюю границу Латвии ограничен решением Кабинета министров.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mfa.gov.lv/en/consular-information",
+        "tier": 1,
+        "title": "МИД Латвии"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Latvia Digital Nomad Visa",
+    "min_income_usd": 3800,
+    "duration_months": 12,
+    "source": {
+      "url": "https://www.pmlp.gov.lv",
+      "tier": 1,
+      "title": "Office of Citizenship and Migration Affairs (PMLP)"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Buy a Jūrmala entry pass if driving",
+        "description": "Entering the seaside resort town of Jūrmala by car between April and September requires a paid day pass (easily bought via Mobilly)."
+      },
+      {
+        "title": "Give an odd number of flowers",
+        "description": "When presenting flowers to a host, always give an odd number; even numbers of flowers are reserved strictly for funerals."
+      },
+      {
+        "title": "Respect quiet hours",
+        "description": "Latvians value peaceful residential environments; avoid loud music or shouting late at night in apartment courtyards."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't sit on the grass where signposted in parks",
+        "description": "Certain manicured flowerbed zones in central Riga parks prohibit walking on grass to maintain floral displays."
+      },
+      {
+        "title": "Don't carry open alcohol containers on city streets",
+        "description": "Drinking alcohol in public parks, sidewalks, or transit is illegal in Riga and strictly fined by municipal police."
+      }
+    ],
+    "tipping": "Tipping 5-10% is customary in sit-down restaurants in Riga when service is courteous."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Riga Karabaşlar Evi ve Tarihi Belediye Meydanı",
+        "license": "CC BY-SA 3.0",
+        "author": "Diliff",
+        "source_url": "/images/countries/lv-480.webp",
+        "attribution_text": "House of the Blackheads and Town Hall Square in Riga, Latvia. Diliff, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Riga Karabaşlar Evi ve Tarihi Belediye Meydanı, Letonya",
+          "en": "House of the Blackheads & Town Hall Square, Riga, Latvia",
+          "de": "Schwarzhäupterhaus & Rathausplatz, Riga, Lettland",
+          "ru": "Дом Черноголовых и Ратушная площадь, Рига, Латвия",
+          "es": "Casa de las Cabezas Negras y Plaza del Ayuntamiento, Riga, Letonia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "letonya",
+      "en": "latvia",
+      "de": "lettland",
+      "ru": "latviya",
+      "es": "letonia"
+    },
+    "title": {
+      "tr": "Letonya Vize Rehberi, Mobilly Uygulaması ve Riga Gezisi | Vizamigo",
+      "en": "Latvia Visa Guide, Mobilly App & Riga Travel Guide | Vizamigo",
+      "de": "Lettland Visum-Leitfaden, Mobilly App & Riga Reisen | Vizamigo",
+      "ru": "Шенгенская виза в Латвию, приложение Mobilly и путеводитель по Риге | Vizamigo",
+      "es": "Guía de Visa de Letonia, App Mobilly y Viajes a Riga | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Letonya Schengen vize şartları, yeşil pasaporta vizesiz giriş, Mobilly ulaşım uygulaması, Jūrmala araç geçişi ve Riga gezi rehberi.",
+      "en": "Latvia Schengen visa rules, green passport exemptions, Mobilly transit tickets, Jurmala car pass, and Riga Old Town travel tips.",
+      "de": "Lettland Schengen-Visabestimmungen, Mobilly-Nahverkehrsapp, Jūrmala-Mautpass und Reisetipps Altstadt Riga.",
+      "ru": "Правила въезда в Латвию (Шенген), приложение Mobilly, въезд в Юрмалу и путеводитель по Старой Риге.",
+      "es": "Requisitos de visa Schengen para Letonia, app Mobilly, pase de entrada a Jūrmala y guía de Riga."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
