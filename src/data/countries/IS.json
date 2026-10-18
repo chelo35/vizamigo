@@ -1,0 +1,457 @@
+{
+  "iso2": "IS",
+  "names": {
+    "tr": "İzlanda",
+    "en": "Iceland",
+    "de": "Island",
+    "ru": "Исландия",
+    "es": "Islandia"
+  },
+  "capital": {
+    "value": "Reykjavik",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://reykjavik.is",
+        "tier": 1,
+        "title": "City of Reykjavik"
+      }
+    ],
+    "evidence_quote": "Reykjavik is the capital and largest city of Iceland",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ISK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cb.is",
+        "tier": 1,
+        "title": "Central Bank of Iceland"
+      }
+    ],
+    "evidence_quote": "The Icelandic Króna (ISK) is the official currency of Iceland",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (GMT year-round)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.government.is",
+        "tier": 1,
+        "title": "Government of Iceland Official Time"
+      }
+    ],
+    "evidence_quote": "Iceland observes Greenwich Mean Time UTC+0 year-round with no daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.landsnet.is",
+          "tier": 1,
+          "title": "Landsnet Icelandic Electricity Transmission"
+        }
+      ],
+      "evidence_quote": "Standard single-phase low voltage electricity in Iceland is delivered at 230V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.landsnet.is",
+          "tier": 1,
+          "title": "Landsnet Iceland"
+        }
+      ],
+      "evidence_quote": "The operating frequency across the Icelandic electrical grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://hms.is",
+          "tier": 1,
+          "title": "Icelandic Housing and Civil Engineering Construction Authority (HMS)"
+        }
+      ],
+      "evidence_quote": "Electrical sockets in Iceland conform to European Type C Europlug and grounded Type F Schuko",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.logreglan.is",
+          "tier": 1,
+          "title": "The Police of Iceland (Lögreglan)"
+        }
+      ],
+      "evidence_quote": "Police emergency calls throughout Iceland are routed via 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.is",
+          "tier": 1,
+          "title": "Neyðarlínan 112 Emergency Operations Iceland"
+        }
+      ],
+      "evidence_quote": "Medical and ambulance rescue dispatch operates exclusively through 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.is",
+          "tier": 1,
+          "title": "112 Iceland Fire Dispatch"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is integrated into central 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.is",
+          "tier": 1,
+          "title": "112 Iceland Emergency"
+        }
+      ],
+      "evidence_quote": "112 is Iceland's unified national emergency number with location tracking and SafeTravel integration",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://safetravel.is",
+          "tier": 1,
+          "title": "SafeTravel Iceland ICE-SAR"
+        }
+      ],
+      "evidence_quote": "ICE-SAR search and rescue teams coordinate all tourist hazard warnings via 112 and SafeTravel.is",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Iceland Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/iceland",
+          "tier": 1,
+          "title": "UK FCDO Iceland Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: İzlanda Küresel Barış Endeksi'nde dünyanın 1 numaralı en güvenli ülkesidir",
+      "en": "Normal Precautions: Iceland consistently ranks as the world's most peaceful and safe nation",
+      "de": "Normale Vorsicht: Island ist laut Global Peace Index das friedlichste Land der Welt",
+      "ru": "Обычные меры: Исландия признана самой безопасной и мирной страной в мире",
+      "es": "Precauciones normales: Islandia se ubica como la nación más pacífica y segura del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 145.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/iceland",
+          "tier": 2,
+          "title": "Ookla Speedtest Iceland"
+        }
+      ],
+      "evidence_quote": "Iceland mobile download speed averages 145.2 Mbps on Síminn, Vodafone, and Nova",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 230.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/iceland",
+          "tier": 2,
+          "title": "Ookla Speedtest Iceland Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Iceland averages 230.6 Mbps across universal fiber networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Síminn, Vodafone Iceland, and Nova. Iceland is part of the EEA, so EU Roam Like at Home regulations apply in full.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fjarskiptastofa.is",
+          "tier": 1,
+          "title": "Electronic Communications Office of Iceland (Fjarskiptastofa)"
+        }
+      ],
+      "evidence_quote": "EEA mobile roaming rules apply across all Icelandic networks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "112 Iceland",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://safetravel.is/112-iceland-app",
+        "tier": 1,
+        "title": "112 Iceland Official Safety App with GPS Check-in"
+      }
+    },
+    {
+      "name": "Vedur",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://en.vedur.is",
+        "tier": 1,
+        "title": "Veðurstofa Íslands Icelandic Meteorological Office App"
+      }
+    },
+    {
+      "name": "Strætó",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://straeto.is/en",
+        "tier": 1,
+        "title": "Strætó Public Transit App Iceland"
+      }
+    },
+    {
+      "name": "Hopp",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hopp.bike",
+        "tier": 1,
+        "title": "Hopp Iceland E-Scooters & Carsharing"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İzlanda Kilisesi (Evanjelik Lutheran ~59%), Dinsiz/Seküler ~30%), Asatru Paganizmi (~1.5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statice.is",
+          "tier": 1,
+          "title": "Statistics Iceland (Hagstofa Íslands)"
+        }
+      ],
+      "evidence_quote": "The Evangelical Lutheran Church represents traditional heritage in an open, secular society",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "İzlanda Ulusal Günü (17 Haziran), Yaz Gündönümü (Jónsmessa, 24 Haziran), Reykjavik Kültür Gecesi (Menningarnótt, Ağustos)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visiticeland.com",
+          "tier": 1,
+          "title": "Visit Iceland Festivals"
+        }
+      ],
+      "evidence_quote": "National Day on June 17 celebrating the founding of the Republic is observed across the country",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Bahşiş kültürü KESİNLİKLE YOKTUR; tüm fiyatlar, vergiler ve servis ücreti kanunen dahildir. Ülke %100 NAKİTSİZDİR; nakit para taşımak tamamen gereksizdir. Doğada araçla 'yol dışına çıkmak' (off-road driving) yosun örtüsünü tahrip ettiği için kesinlikle yasaktır ve binlerce dolar cezası vardır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://safetravel.is",
+          "tier": 1,
+          "title": "SafeTravel Iceland Driving Laws"
+        }
+      ],
+      "evidence_quote": "Off-road driving is strictly illegal in Iceland; society is entirely cashless with no tipping culture",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş verilmez ve beklenmez; tüm hesaplara servis ve vergiler kanunen eklenmiştir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visiticeland.com",
+          "tier": 1,
+          "title": "Visit Iceland Practical Information"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in Iceland as all service charges are already included in prices",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Skógafoss Şelalesi ve Güney Sahili Kanyonları",
+        "en": "Skógafoss Waterfall and South Coast",
+        "de": "Skógafoss-Wasserfall und Südküste",
+        "ru": "Водопад Скоугафосс и Южное побережье",
+        "es": "Cascada Skógafoss y Costa Sur"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.visiticeland.com",
+          "tier": 1,
+          "title": "Visit Iceland Skógafoss"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Thingvellir Milli Parkı ve Silfra Yarığı (UNESCO)",
+        "en": "Thingvellir National Park and Silfra Fissure (UNESCO)",
+        "de": "Nationalpark Þingvellir und Silfra-Spalte",
+        "ru": "Национальный парк Тингведлир и разлом Сильфра",
+        "es": "Parque Nacional de Thingvellir y Fisura de Silfra"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1152",
+          "tier": 1,
+          "title": "UNESCO Thingvellir National Park"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Mavi Lagün (Blue Lagoon) Jeotermal Kaplıcası",
+        "en": "Blue Lagoon Geothermal Spa",
+        "de": "Blaue Lagune Geothermisches Thermalbad",
+        "ru": "Голубая лагуна геотермальный спа-комплекс",
+        "es": "Laguna Azul Balneario Geotermal"
+      },
+      "type": "geothermal_wonder",
+      "sources": [
+        {
+          "url": "https://www.bluelagoon.com",
+          "tier": 1,
+          "title": "Blue Lagoon Official"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Skógafoss Şelalesi ve Güney Sahili Zümrüt Kanyonu",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/is-480.webp",
+        "attribution_text": "Skogafoss waterfall crashing into emerald canyon in Iceland. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Skógafoss Şelalesi ve Zümrüt Kanyonu, İzlanda",
+          "en": "Skogafoss Waterfall and Emerald Canyon, Iceland",
+          "de": "Skógafoss Wasserfall und grüner Canyon, Island",
+          "ru": "Водопад Скоугафосс и изумрудный каньон, Исландия",
+          "es": "Cascada Skógafoss y cañón esmeralda, Islandia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "izlanda",
+      "en": "iceland",
+      "de": "island",
+      "ru": "islandiya",
+      "es": "islandia"
+    },
+    "title": {
+      "tr": "İzlanda Vize Rehberi, Güvenlik ve Doğal Harikalar | Vizamigo",
+      "en": "Iceland Visa Guide, SafeTravel Advice & Road Trips | Vizamigo",
+      "de": "Island Visum-Leitfaden, SafeTravel & Rundreisen | Vizamigo",
+      "ru": "Виза в Исландию, безопасность SafeTravel и путешествия | Vizamigo",
+      "es": "Guía de Visa de Islandia, SafeTravel y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İzlanda Schengen vize şartları, 112 Iceland güvenlik uygulaması, sıfır bahşiş ve nakitsiz yaşam, priz tipleri (C, F) ve seyahat rehberi.",
+      "en": "Iceland Schengen visa rules, 112 Iceland app, zero tipping policy, 100% cashless society, Type C/F plugs, and ring road travel tips.",
+      "de": "Island Schengen-Visabestimmungen, 112 Iceland Sicherheits-App, Trinkgeldverzicht, bargeldloses Zahlen und Steckertypen C/F.",
+      "ru": "Шенгенская виза в Исландию, приложение 112 Iceland, отсутствие чаевых, безналичная оплата и розетки C/F.",
+      "es": "Requisitos de visa Schengen para Islandia, app 112 Iceland, sociedad sin propinas ni efectivo y enchufes C/F."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

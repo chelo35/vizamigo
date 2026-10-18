@@ -1,0 +1,456 @@
+{
+  "iso2": "MT",
+  "names": {
+    "tr": "Malta",
+    "en": "Malta",
+    "de": "Malta",
+    "ru": "Мальта",
+    "es": "Malta"
+  },
+  "capital": {
+    "value": "Valletta",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://localgovernment.gov.mt",
+        "tier": 1,
+        "title": "Valletta Local Council"
+      }
+    ],
+    "evidence_quote": "Valletta is the historic fortress capital city of the Republic of Malta",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbankmalta.org",
+        "tier": 1,
+        "title": "Central Bank of Malta"
+      }
+    ],
+    "evidence_quote": "The Euro is the official currency of Malta since joining the Eurozone in 2008",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.mt",
+        "tier": 1,
+        "title": "Government of Malta Official Portal"
+      }
+    ],
+    "evidence_quote": "Malta observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enemalta.com.mt",
+          "tier": 1,
+          "title": "Enemalta National Energy Provider"
+        }
+      ],
+      "evidence_quote": "Standard domestic mains voltage in Malta is 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enemalta.com.mt",
+          "tier": 1,
+          "title": "Enemalta Malta"
+        }
+      ],
+      "evidence_quote": "Electricity transmission network frequency in Malta is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mccaa.org.mt",
+          "tier": 1,
+          "title": "Malta Competition and Consumer Affairs Authority (MCCAA MSA 1363)"
+        }
+      ],
+      "evidence_quote": "Malta strictly uses British standard Type G three rectangular pin plugs and sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pulizija.gov.mt",
+          "tier": 1,
+          "title": "The Malta Police Force"
+        }
+      ],
+      "evidence_quote": "Emergency police assistance throughout Malta connects via unified 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://deputyprimeminister.gov.mt",
+          "tier": 1,
+          "title": "Mater Dei Hospital Emergency Department"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue operates nationwide under 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cpd.gov.mt",
+          "tier": 1,
+          "title": "Civil Protection Department Malta"
+        }
+      ],
+      "evidence_quote": "Civil protection firefighting emergency dispatch is reached via 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pulizija.gov.mt",
+          "tier": 1,
+          "title": "Malta Police 112 Operations"
+        }
+      ],
+      "evidence_quote": "112 is the primary single emergency telephone number across the Maltese Islands",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmalta.com",
+          "tier": 1,
+          "title": "Malta Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Dedicated tourist policing and foreign visitor assistance are dispatched via 112",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Malta Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/malta",
+          "tier": 1,
+          "title": "UK FCDO Malta Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Malta Avrupa Birliği'nin en güvenli ve huzurlu ülkelerindendir",
+      "en": "Normal Precautions: Malta is one of the safest destinations in the European Union",
+      "de": "Normale Vorsicht: Malta ist eines der sichersten Reiseziele in der Europäischen Union",
+      "ru": "Обычные меры: Мальта одна из самых безопасных стран в Европейском Союзе",
+      "es": "Precauciones normales: Malta es uno de los destinos más seguros de la Unión Europea"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 92.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/malta",
+          "tier": 2,
+          "title": "Ookla Speedtest Malta"
+        }
+      ],
+      "evidence_quote": "Malta mobile download speed averages 92.4 Mbps across Epic, GO, and Melita",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 135.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/malta",
+          "tier": 2,
+          "title": "Ookla Speedtest Malta Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Malta averages 135.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Epic Malta and GO. Malta is in the Schengen Area and EU; EU Roam Like at Home regulations apply in full.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mca.org.mt",
+          "tier": 1,
+          "title": "Malta Communications Authority (MCA)"
+        }
+      ],
+      "evidence_quote": "EU roaming rules apply; prepaid SIM purchase requires standard identity registration",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-mt/",
+        "tier": 1,
+        "title": "Bolt Malta"
+      }
+    },
+    {
+      "name": "eCabs",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ecabs.com.mt",
+        "tier": 1,
+        "title": "eCabs Malta Premier Ride-Hailing"
+      }
+    },
+    {
+      "name": "Tallinja",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.publictransport.com.mt",
+        "tier": 1,
+        "title": "Tallinja Malta Public Transport App"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/mlt",
+        "tier": 1,
+        "title": "Wolt Malta"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roma Katolikliği (~83%), Dinsiz (~12%), Diğer (~5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nso.gov.mt",
+          "tier": 1,
+          "title": "National Statistics Office (NSO) Malta Census"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism is the state religion under the Maltese Constitution",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bağımsızlık Günü (21 Eylül), Cumhuriyet Bayramı (13 Aralık), Köy Festaları (Yaz boyu her hafta sonu havai fişekler), Valletta Barok Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmalta.com",
+          "tier": 1,
+          "title": "Visit Malta Festivals & Feasts"
+        }
+      ],
+      "evidence_quote": "Village festas with vibrant band marches and fireworks are quintessential Maltese cultural traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Trafik İngiliz mirası olarak SOLDAN AKAR. Prizler İngiliz Tipi G standardındadır (3 dikdörtgen uçlu). Malta Avrupa Birliği ve Schengen üyesidir. Kilise ziyaretlerinde omuzlar ve dizler örtülü olmalıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmalta.com",
+          "tier": 1,
+          "title": "Visit Malta Practical Information"
+        }
+      ],
+      "evidence_quote": "Traffic moves on the left-hand side of the road; standard three-pin Type G British plugs are used",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %5-10 bahşiş olağandır. Servis faturaya dahil değilse nakit veya kartla eklenmesi yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitmalta.com",
+          "tier": 1,
+          "title": "Visit Malta Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping between 5 and 10 percent in restaurants is customary when good service is provided",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Valletta Büyük Limanı ve Barrakka Bahçeleri (UNESCO)",
+        "en": "Valletta Grand Harbour and Upper Barrakka Gardens (UNESCO)",
+        "de": "Großer Hafen von Valletta und Upper Barrakka Gardens",
+        "ru": "Гранд-Харбор и сады Верхняя Барракка в Валлетте",
+        "es": "Gran Puerto de La Valeta y Jardines de Upper Barrakka"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/131",
+          "tier": 1,
+          "title": "UNESCO City of Valletta"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Mdina Sessiz Tarihi Şehir",
+        "en": "Mdina Silent Historic City",
+        "de": "Mdina die stille Stadt",
+        "ru": "Мдина город тишины",
+        "es": "Mdina Ciudad del Silencio"
+      },
+      "type": "historic_town",
+      "sources": [
+        {
+          "url": "https://www.visitmalta.com",
+          "tier": 1,
+          "title": "Visit Malta Mdina"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ħaġar Qim Megalitik Tapınakları (UNESCO)",
+        "en": "Ħaġar Qim Megalithic Temples (UNESCO)",
+        "de": "Megalithische Tempel von Ħaġar Qim",
+        "ru": "Мегалитические храмы Хаджар-Ким (ЮНЕСКО)",
+        "es": "Templos Megalíticos de Ħaġar Qim"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/132",
+          "tier": 1,
+          "title": "UNESCO Megalithic Temples of Malta"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Valletta Büyük Limanı (Grand Harbour) ve Barrakka Bahçeleri",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/mt-480.webp",
+        "attribution_text": "Grand Harbour view from Upper Barrakka Gardens in Valletta, Malta. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Valletta Büyük Limanı ve Barrakka Bahçeleri, Malta",
+          "en": "Valletta Grand Harbour and Upper Barrakka Gardens, Malta",
+          "de": "Valletta Großer Hafen und Upper Barrakka Gardens, Malta",
+          "ru": "Гранд-Харбор и сады Верхняя Барракка в Валлетте, Мальта",
+          "es": "Gran Puerto de La Valeta y Jardines Barrakka, Malta"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "malta",
+      "en": "malta",
+      "de": "malta",
+      "ru": "malta",
+      "es": "malta"
+    },
+    "title": {
+      "tr": "Malta Vize Rehberi, Schengen ve Soldan Trafik Kuralları | Vizamigo",
+      "en": "Malta Visa Guide, Schengen Entry & Left-Hand Driving | Vizamigo",
+      "de": "Malta Visum-Leitfaden, Schengen & Linksverkehr | Vizamigo",
+      "ru": "Виза на Мальту, шенгенские правила и левостороннее движение | Vizamigo",
+      "es": "Guía de Visa de Malta, Normas Schengen y Conducción por la Izquierda | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Malta Schengen vize şartları, soldan akan trafik kuralları, priz tipi G, eCabs ve Tallinja ulaşım uygulamaları, Valletta gezi rehberi.",
+      "en": "Malta Schengen visa rules, left-hand driving, Type G plugs, eCabs and Tallinja apps, and verified Valletta highlights.",
+      "de": "Malta Schengen-Visabestimmungen, Linksverkehr, Typ-G-Stecker, Tallinja-Bus-App und Valletta-Reisetipps.",
+      "ru": "Шенгенская виза на Мальту, левостороннее движение, розетки типа G, транспорт Tallinja и гид по Валлетте.",
+      "es": "Requisitos de visa Schengen para Malta, conducción por la izquierda, enchufes tipo G y guía de La Valeta."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,448 @@
+{
+  "iso2": "LK",
+  "names": {
+    "tr": "Sri Lanka",
+    "en": "Sri Lanka",
+    "de": "Sri Lanka",
+    "ru": "Шри-Ланка",
+    "es": "Sri Lanka"
+  },
+  "capital": {
+    "value": "Sri Jayawardenepura Kotte (İdari), Kolombo (Ticari)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.parliament.lk",
+        "tier": 1,
+        "title": "Parliament of Sri Lanka"
+      }
+    ],
+    "evidence_quote": "Sri Jayawardenepura Kotte is the administrative capital and Colombo is the commercial capital",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "LKR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbsl.gov.lk",
+        "tier": 1,
+        "title": "Central Bank of Sri Lanka"
+      }
+    ],
+    "evidence_quote": "The Sri Lankan Rupee (LKR) is the official currency of Sri Lanka",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5:30 (SLST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.meteo.gov.lk",
+        "tier": 1,
+        "title": "Department of Meteorology Sri Lanka"
+      }
+    ],
+    "evidence_quote": "Sri Lanka Standard Time operates on UTC+5:30 throughout the year",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ceb.lk",
+          "tier": 1,
+          "title": "Ceylon Electricity Board (CEB)"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase domestic electrical voltage in Sri Lanka is 230V AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ceb.lk",
+          "tier": 1,
+          "title": "CEB Sri Lanka"
+        }
+      ],
+      "evidence_quote": "Power transmission frequency across the Sri Lankan grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "G",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pucsl.gov.lk",
+          "tier": 1,
+          "title": "Public Utilities Commission of Sri Lanka (PUCSL Standardization on Type G)"
+        }
+      ],
+      "evidence_quote": "PUCSL mandates British Type G 3-pin standard for all new installations alongside legacy Type D and M",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.lk",
+          "tier": 1,
+          "title": "Sri Lanka Police"
+        }
+      ],
+      "evidence_quote": "Emergency police telephone hotline across Sri Lanka is 119",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "1990",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://1990.lk",
+          "tier": 1,
+          "title": "1990 Suwa Seriya Pre-Hospital Care Ambulance Service"
+        }
+      ],
+      "evidence_quote": "1990 Suwa Seriya operates the nationwide free emergency medical ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.colombo.mc.gov.lk",
+          "tier": 1,
+          "title": "Colombo Municipal Fire Service"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch operates directly on hotline 110",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.lk",
+          "tier": 1,
+          "title": "Sri Lanka Police Emergency Response"
+        }
+      ],
+      "evidence_quote": "119 connects directly to central police and emergency operations nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1912",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.srilanka.travel",
+          "tier": 1,
+          "title": "Sri Lanka Tourism Development Authority (SLTDA) Tourist Police"
+        }
+      ],
+      "evidence_quote": "Tourist police 24/7 hotline 1912 assists international visitors across resort areas",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Sri Lanka Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka",
+          "tier": 1,
+          "title": "UK FCDO Sri Lanka Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Başlıca turizm merkezleri (Sigiriya, Galle, Kandy) güvenlidir ve açıktır",
+      "en": "Exercise Increased Caution: Main cultural triangle and coastal resorts fully operational and safe",
+      "de": "Erhöhte Vorsicht: Touristenzentren und Küstenorte sicher und geöffnet",
+      "ru": "Повышенная осторожность: основные туристические зоны (Сигирия, Галле) безопасны",
+      "es": "Mayor precaución: circuitos turísticos principales y costas seguros y abiertos"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 30.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/sri-lanka",
+          "tier": 2,
+          "title": "Ookla Speedtest Sri Lanka"
+        }
+      ],
+      "evidence_quote": "Sri Lanka mobile download speeds average 30.5 Mbps across Dialog and Mobitel",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 35.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/sri-lanka",
+          "tier": 2,
+          "title": "Ookla Speedtest Sri Lanka Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Sri Lanka averages 35.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Dialog and Mobitel. Tourist SIM packages (offering generous 20GB-50GB data) are sold at Bandaranaike International Airport arrival hall with passport verification.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.trc.gov.lk",
+          "tier": 1,
+          "title": "Telecommunications Regulatory Commission of Sri Lanka (TRCSL)"
+        }
+      ],
+      "evidence_quote": "Tourist SIM cards require original passport verification under TRCSL regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "PickMe",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://pickme.lk",
+        "tier": 1,
+        "title": "PickMe Sri Lanka Dominant Tuk-Tuk & Ride App"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/lk/en/",
+        "tier": 1,
+        "title": "Uber Sri Lanka"
+      }
+    },
+    {
+      "name": "Daraz",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.daraz.lk",
+        "tier": 2,
+        "title": "Daraz Sri Lanka E-Commerce"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Theravada Budizmi (~70%), Hinduizm (~13%), İslam (~10%), Hristiyanlık (~7%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statistics.gov.lk",
+          "tier": 1,
+          "title": "Department of Census and Statistics Sri Lanka"
+        }
+      ],
+      "evidence_quote": "Theravada Buddhism is accorded the foremost place under the Constitution alongside freedom for all faiths",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Sinhala ve Tamil Yeni Yılı (Aluth Avurudda, Nisan), Vesak Poya (Dolunay Budist Bayramı), Esala Perahera (Kandy, Temmuz-Ağustos)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.srilanka.travel",
+          "tier": 1,
+          "title": "Sri Lanka Tourism Festival Calendar"
+        }
+      ],
+      "evidence_quote": "Poya full moon holidays every month and Kandy Esala Perahera are spectacular religious milestones",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Buda heykellerine sırt dönerek fotoğraf çektirmek veya Buda dövmesi sergilemek ağır suç ve sınır dışı edilme nedenidir. Tapınak ziyaretlerinde ayakkabılar çıkarılmalı, omuzlar ve dizler beyaz/açık renkli giysilerle örtülmelidir. Tuktuk taşımacılığında taksimetreli PickMe uygulaması önerilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.srilanka.travel",
+          "tier": 1,
+          "title": "Sri Lanka Tourism Temple Etiquette"
+        }
+      ],
+      "evidence_quote": "Mistreatment or posing disrespectfully with Buddha images and statues is strictly prohibited by law",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş yaygındır (hesaba %10 servis bedeli eklenmiş olsa bile garsona küçük nakit bahşiş beklenir). Safari rehberlerine ve şoförlere günlük 1.500-2.500 LKR bahşiş teamüldür.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.srilanka.travel",
+          "tier": 1,
+          "title": "Sri Lanka Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent in restaurants and tipping drivers or safari trackers is standard custom",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sigiriya Aslan Kayası Antik Kalesi (UNESCO)",
+        "en": "Ancient City of Sigiriya (Lion Rock, UNESCO)",
+        "de": "Felsenfestung Sigiriya (UNESCO)",
+        "ru": "Древняя крепость Сигирия (Львиная скала, ЮНЕСКО)",
+        "es": "Antigua Ciudad de Sigiriya (Roca del León, UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/202",
+          "tier": 1,
+          "title": "UNESCO Ancient City of Sigiriya"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kandy Kutsal Diş Tapınağı (Sri Dalada Maligawa, UNESCO)",
+        "en": "Sacred City of Kandy and Temple of the Tooth",
+        "de": "Heilige Stadt Kandy und Zahntempel",
+        "ru": "Священный город Канди и Храм Зуба Будды",
+        "es": "Ciudad Sagrada de Kandy y Templo del Diente"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/450",
+          "tier": 1,
+          "title": "UNESCO Sacred City of Kandy"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Galle Hollanda Tarihi Kalesi ve Sahili (UNESCO)",
+        "en": "Old Town of Galle and its Fortifications (UNESCO)",
+        "de": "Altstadt und Festungsanlagen von Galle",
+        "ru": "Старый город Галле и его укрепления",
+        "es": "Ciudad Vieja de Galle y sus Fortificaciones"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/451",
+          "tier": 1,
+          "title": "UNESCO Old Town of Galle and its Fortifications"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sigiriya Aslan Kayası Antik Kalesi (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/lk-480.webp",
+        "attribution_text": "Sigiriya Lion Rock ancient palace fortress in Sri Lanka. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Sigiriya Aslan Kayası Antik Kalesi, Sri Lanka",
+          "en": "Sigiriya Lion Rock Ancient Palace Fortress, Sri Lanka",
+          "de": "Sigiriya Felsenfestung, Sri Lanka",
+          "ru": "Древняя крепость Сигирия Львиная скала, Шри-Ланка",
+          "es": "Antigua fortaleza de la Roca del León en Sigiriya, Sri Lanka"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "sri-lanka",
+      "en": "sri-lanka",
+      "de": "sri-lanka",
+      "ru": "shri-lanka",
+      "es": "sri-lanka"
+    },
+    "title": {
+      "tr": "Sri Lanka Vize Rehberi, ETA Başvurusu ve Sigiriya Gezisi | Vizamigo",
+      "en": "Sri Lanka Visa Guide, ETA Entry & Sigiriya Travel | Vizamigo",
+      "de": "Sri Lanka Visum-Leitfaden, ETA & Sigiriya Reisen | Vizamigo",
+      "ru": "Виза на Шри-Ланку, оформление ETA и Сигирия | Vizamigo",
+      "es": "Guía de Visa de Sri Lanka, Entrada ETA y Sigiriya | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Sri Lanka elektronik vize (ETA) kuralları, Buda heykeli fotoğraf ve tapınak kuralları, PickMe tuktuk uygulaması ve Sigiriya rehberi.",
+      "en": "Sri Lanka ETA visa rules, strict Buddha etiquette laws, PickMe tuk-tuk app, Type D/G plugs, and Sigiriya Lion Rock tips.",
+      "de": "Sri Lanka ETA-Visabestimmungen, Buddha-Respektregeln, PickMe Tuktuk-App, Steckertypen D/G und Sigiriya-Tipps.",
+      "ru": "Визовые правила Шри-Ланки (ETA), правила уважения к статуям Будды, тук-туки PickMe и скала Сигирия.",
+      "es": "Requisitos de visa ETA para Sri Lanka, leyes de respeto a Buda, app de tuk-tuk PickMe y Sigiriya."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

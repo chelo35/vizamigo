@@ -1,0 +1,456 @@
+{
+  "iso2": "CY",
+  "names": {
+    "tr": "Kıbrıs",
+    "en": "Cyprus",
+    "de": "Zypern",
+    "ru": "Кипр",
+    "es": "Chipre"
+  },
+  "capital": {
+    "value": "Lefkoşa",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nicosia.org.cy",
+        "tier": 1,
+        "title": "Nicosia Municipality"
+      }
+    ],
+    "evidence_quote": "Nicosia is the capital and largest city of the Republic of Cyprus",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbank.cy",
+        "tier": 1,
+        "title": "Central Bank of Cyprus"
+      }
+    ],
+    "evidence_quote": "The Euro is the official legal tender in the Republic of Cyprus",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cyprus.gov.cy",
+        "tier": 1,
+        "title": "Government of Cyprus Official Portal"
+      }
+    ],
+    "evidence_quote": "Cyprus observes Eastern European Time UTC+2 and Eastern European Summer Time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eac.com.cy",
+          "tier": 1,
+          "title": "Electricity Authority of Cyprus (EAC)"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity in Cyprus is delivered at 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eac.com.cy",
+          "tier": 1,
+          "title": "EAC Cyprus"
+        }
+      ],
+      "evidence_quote": "The alternating current frequency across Cyprus is standardized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cys.org.cy",
+          "tier": 1,
+          "title": "Cyprus Organization for Standardisation (CYS BS 1363)"
+        }
+      ],
+      "evidence_quote": "Cyprus strictly utilizes British standard Type G three rectangular pin sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112 / 199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.cy",
+          "tier": 1,
+          "title": "Cyprus Police"
+        }
+      ],
+      "evidence_quote": "Emergency police assistance is available via 112 and traditional hotline 199",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112 / 199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.shso.org.cy",
+          "tier": 1,
+          "title": "State Health Services Organisation Cyprus Ambulance Service"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance dispatch operates under unified 112 and 199",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112 / 199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fs.gov.cy",
+          "tier": 1,
+          "title": "Cyprus Fire Service"
+        }
+      ],
+      "evidence_quote": "Cyprus Fire Service emergencies are dispatched through 112 and 199",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.cy",
+          "tier": 1,
+          "title": "Cyprus Emergency 112 Operations"
+        }
+      ],
+      "evidence_quote": "112 is the primary European emergency number operational 24/7 across Cyprus",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitcyprus.com",
+          "tier": 1,
+          "title": "Deputy Ministry of Tourism Cyprus"
+        }
+      ],
+      "evidence_quote": "Tourist assistance and emergency translation connect through Cyprus Police via 112",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Cyprus Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/cyprus",
+          "tier": 1,
+          "title": "UK FCDO Cyprus Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Kıbrıs Akdeniz'in en güvenli ve huzurlu turizm adalarındandır",
+      "en": "Normal Precautions: Cyprus is one of the safest holiday islands in the Mediterranean",
+      "de": "Normale Vorsicht: Zypern ist eine der sichersten Urlaubsinseln im Mittelmeer",
+      "ru": "Обычные меры: Кипр один из самых безопасных курортных островов Средиземноморья",
+      "es": "Precauciones normales: Chipre es una de las islas vacacionales más seguras del Mediterráneo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 105.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cyprus",
+          "tier": 2,
+          "title": "Ookla Speedtest Cyprus"
+        }
+      ],
+      "evidence_quote": "Cyprus mobile 5G download speed averages 105.8 Mbps on Cyta and Epic",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 80.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cyprus",
+          "tier": 2,
+          "title": "Ookla Speedtest Cyprus Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Cyprus averages 80.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Cyta, Epic, and PrimeTel. EU Roam Like at Home regulations apply in full across the Republic of Cyprus.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ocecpr.ee.cy",
+          "tier": 1,
+          "title": "Office of Electronic Communications and Postal Regulation (OCECPR)"
+        }
+      ],
+      "evidence_quote": "EU roaming rules apply; prepaid SIM activation requires passport identification under OCECPR rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-cy/",
+        "tier": 1,
+        "title": "Bolt Cyprus"
+      }
+    },
+    {
+      "name": "Foody",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foody.com.cy",
+        "tier": 1,
+        "title": "Foody Cyprus Delivery"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/cyp",
+        "tier": 1,
+        "title": "Wolt Cyprus"
+      }
+    },
+    {
+      "name": "Cyprus Bus",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.cyprusbybus.com",
+        "tier": 1,
+        "title": "Cyprus By Bus Public Transport"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Rum Ortodoksluğu (~89%), İslam, Katolik ve Maruni (~11%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cystat.gov.cy",
+          "tier": 1,
+          "title": "Statistical Service of Cyprus (CYSTAT) Census"
+        }
+      ],
+      "evidence_quote": "Greek Orthodoxy represents the primary religious tradition in the Republic of Cyprus",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Kıbrıs Bağımsızlık Günü (1 Ekim), Kataklysmos (Tufan Festivali / Pentekost), Limasol Karnavalı (Şubat), Limasol Şarap Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitcyprus.com",
+          "tier": 1,
+          "title": "Visit Cyprus Cultural Events"
+        }
+      ],
+      "evidence_quote": "Independence Day on October 1 and Kataklysmos festival along coastal towns are major holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Trafik İNGİLTERE GİBİ SOLDAN AKAR; kiralık araç kullanırken sol şerit kuralına dikkat edilmelidir. Prizler İngiliz Tipi G'dir (3 dikdörtgen bacaklı). Yeşil Hat (BM Tampon Bölgesi) geçişlerinde geçerli kimlik veya pasaport taşınmalıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitcyprus.com",
+          "tier": 1,
+          "title": "Visit Cyprus Practical Advice"
+        }
+      ],
+      "evidence_quote": "Driving is on the left-hand side of the road; electrical sockets require British Type G plugs",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş olağandır. Servis ücreti faturaya eklenmemişse nakit veya kartla bırakılması teamüldür.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitcyprus.com",
+          "tier": 1,
+          "title": "Visit Cyprus Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent in restaurants and tavernas is polite and appreciated",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Cape Greco Deniz Mağaraları ve Milli Parkı",
+        "en": "Cape Greco National Forest Park and Sea Caves",
+        "de": "Kap Greco Nationalpark und Meereshöhlen",
+        "ru": "Мыс Греко и морские пещеры",
+        "es": "Cabo Greco y Cuevas Marinas"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.visitcyprus.com",
+          "tier": 1,
+          "title": "Visit Cyprus Cape Greco"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Baf Kral Mezarları ve Antik Mozaikler (UNESCO)",
+        "en": "Paphos Tombs of the Kings and Mosaics (UNESCO)",
+        "de": "Königsgräber von Nea Paphos",
+        "ru": "Царские гробницы в Пафосе (ЮНЕСКО)",
+        "es": "Tumbas de los Reyes de Pafos (UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/79",
+          "tier": 1,
+          "title": "UNESCO Paphos"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Trodos Boyalı Kiliseleri (UNESCO)",
+        "en": "Painted Churches in the Troodos Region (UNESCO)",
+        "de": "Bemalte Kirchen im Gebiet von Troodos",
+        "ru": "Расписные церкви в районе Троодос",
+        "es": "Iglesias Pintadas de la Región de Troodos"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/287",
+          "tier": 1,
+          "title": "UNESCO Painted Churches in the Troodos Region"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Cape Greco Deniz Mağaraları ve Turkuaz Koyu",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/cy-480.webp",
+        "attribution_text": "Cape Greco sea caves and turquoise lagoon in Cyprus. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Cape Greco Deniz Mağaraları ve Turkuaz Koyu, Kıbrıs",
+          "en": "Cape Greco Sea Caves and Turquoise Bay, Cyprus",
+          "de": "Kap Greco Meereshöhlen und türkisfarbene Bucht, Zypern",
+          "ru": "Морские пещеры мыса Греко и бирюзовая бухта, Кипр",
+          "es": "Cuevas marinas de Cabo Greco y bahía turquesa, Chipre"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kibris",
+      "en": "cyprus",
+      "de": "zypern",
+      "ru": "kipr",
+      "es": "chipre"
+    },
+    "title": {
+      "tr": "Kıbrıs Vize Rehberi, Trafik Kuralları ve Seyahat Bilgileri | Vizamigo",
+      "en": "Cyprus Visa Guide, Left-Hand Driving & Travel Essentials | Vizamigo",
+      "de": "Zypern Visum-Leitfaden, Linksverkehr & Reisetipps | Vizamigo",
+      "ru": "Виза на Кипр, левостороннее движение и гид по острову | Vizamigo",
+      "es": "Guía de Visa de Chipre, Conducción por la Izquierda y Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kıbrıs vize şartları (Schengen adayı AB üyesi), soldan akan trafik, priz tipi G, Cape Greco mağaraları ve seyahat rehberi.",
+      "en": "Cyprus visa rules (EU member, non-Schengen national visa), left-hand traffic, Type G plugs, and Cape Greco guide.",
+      "de": "Zypern Visabestimmungen, Linksverkehr-Hinweise, Typ-G-Stecker und Cape Greco Reisetipps.",
+      "ru": "Визовые правила Кипра, левостороннее движение, розетки типа G и путеводитель по мысу Греко.",
+      "es": "Requisitos de visa para Chipre, normas de conducción por la izquierda, enchufes tipo G y Cabo Greco."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,446 @@
+{
+  "iso2": "OM",
+  "names": {
+    "tr": "Umman",
+    "en": "Oman",
+    "de": "Oman",
+    "ru": "Оман",
+    "es": "Omán"
+  },
+  "capital": {
+    "value": "Maskat",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mm.gov.om",
+        "tier": 1,
+        "title": "Muscat Municipality"
+      }
+    ],
+    "evidence_quote": "Muscat is the capital and largest city of the Sultanate of Oman",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "OMR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbo.gov.om",
+        "tier": 1,
+        "title": "Central Bank of Oman"
+      }
+    ],
+    "evidence_quote": "The Omani Rial (OMR) is pegged to the US Dollar at a fixed parity of 0.3845 OMR",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (GST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://omanportal.gov.om",
+        "tier": 1,
+        "title": "Oman Official E-Government Portal"
+      }
+    ],
+    "evidence_quote": "Oman operates on Gulf Standard Time UTC+4 year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nama.om",
+          "tier": 1,
+          "title": "Nama Electricity Distribution Company"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Oman is 240V single phase AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nama.om",
+          "tier": 1,
+          "title": "Nama Group Oman"
+        }
+      ],
+      "evidence_quote": "Alternating current frequency across the national electricity grid in Oman is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.teic.gov.om",
+          "tier": 1,
+          "title": "Ministry of Commerce, Industry and Investment Promotion Standards"
+        }
+      ],
+      "evidence_quote": "Electrical sockets across Oman adhere to British Type G 3-pin standard BS 1363",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "9999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rop.gov.om",
+          "tier": 1,
+          "title": "Royal Oman Police (ROP)"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch throughout Oman operates via hotline 9999",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "9999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cdaa.gov.om",
+          "tier": 1,
+          "title": "Civil Defence and Ambulance Authority (CDAA) Oman"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue responds directly through 9999",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "9999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cdaa.gov.om",
+          "tier": 1,
+          "title": "CDAA Firefighting Dispatch"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is integrated into central 9999",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "9999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rop.gov.om",
+          "tier": 1,
+          "title": "Royal Oman Police Emergency Central"
+        }
+      ],
+      "evidence_quote": "9999 is the unified emergency contact number throughout the Sultanate of Oman",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "9999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Ministry of Heritage and Tourism Oman"
+        }
+      ],
+      "evidence_quote": "Tourist emergencies and foreign language calls are handled directly by ROP 9999 operators",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Oman Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/oman",
+          "tier": 1,
+          "title": "UK FCDO Oman Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Umman Orta Doğu'nun en güvenli, huzurlu ve misafirperver ülkesidir",
+      "en": "Normal Precautions: Oman is one of the safest and most hospitable destinations in the Middle East",
+      "de": "Normale Vorsicht: Oman gehört zu den sichersten und gastfreundlichsten Ländern im Nahen Osten",
+      "ru": "Обычные меры: Оман одна из самых безопасных и гостеприимных стран Ближнего Востока",
+      "es": "Precauciones normales: Omán es uno de los destinos más seguros y hospitalarios de Oriente Medio"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 110.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/oman",
+          "tier": 2,
+          "title": "Ookla Speedtest Oman"
+        }
+      ],
+      "evidence_quote": "Oman mobile download speed averages 110.4 Mbps on Omantel, Ooredoo, and Vodafone",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 90.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/oman",
+          "tier": 2,
+          "title": "Ookla Speedtest Oman Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Oman averages 90.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Omantel and Ooredoo Oman. Tourist physical SIM cards are sold at Muscat International Airport with mandatory passport registration under TRA rules.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tra.gov.om",
+          "tier": 1,
+          "title": "Telecommunications Regulatory Authority (TRA) Oman"
+        }
+      ],
+      "evidence_quote": "TRA requires valid passport identification for prepaid SIM card registration",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Otaxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://otaxi.om",
+        "tier": 1,
+        "title": "Otaxi Official Licensed Taxi App Oman"
+      }
+    },
+    {
+      "name": "Talabat",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.talabat.com/oman",
+        "tier": 1,
+        "title": "Talabat Oman"
+      }
+    },
+    {
+      "name": "TM Done",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tmdone.com",
+        "tier": 2,
+        "title": "TM Done Oman Delivery App"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (Devlet dini; İbadi ~45%, Sünni ~45%, Şii ~5%), Hinduizm ve Hristiyanlık (~5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ncsi.gov.om",
+          "tier": 1,
+          "title": "National Centre for Statistics and Information (NCSI) Oman"
+        }
+      ],
+      "evidence_quote": "Islam is the religion of the state with exemplary coexistence between Ibadhi, Sunni, and Shia communities",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Umman Ulusal Günü (18 Kasım), Ramazan Bayramı, Kurban Bayramı, Maskat Kültür Festivali (Ocak-Şubat)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Experience Oman Cultural Festivals"
+        }
+      ],
+      "evidence_quote": "National Day on November 18 and Islamic festivals are observed with nationwide celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Kamuya açık alanlarda omuzları ve dizleri örten mütevazı kıyafetler giyilmelidir; ulu camilerde kadınların baş örtüsü zorunludur. Alkol yalnızca lisanslı turistik otellerde tüketilebilir. Prizler İngiliz standardı Tip G'dir (240V / 50Hz). Yabancılara karşı olağanüstü saygılı ve sıcak misafirperverlik gösterilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Experience Oman Etiquette Guidelines"
+        }
+      ],
+      "evidence_quote": "Modest clothing is respected in public areas; alcohol consumption is restricted to licensed venues",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş yaygın ve olağandır. Otel valeleri ve tur şoförleri için 1-2 OMR bahşiş nezakettir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Experience Oman Tipping Advice"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent in dining establishments is customary and appreciated",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sultan Kabus Ulu Camii (Maskat)",
+        "en": "Sultan Qaboos Grand Mosque (Muscat)",
+        "de": "Sultan-Qabus-Moschee in Maskat",
+        "ru": "Большая мечеть султана Кабуса в Маскате",
+        "es": "Gran Mezquita del Sultán Qaboos en Mascate"
+      },
+      "type": "religious_monument",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Experience Oman Grand Mosque"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Nizwa Kalesi ve Tarihi Çarşısı",
+        "en": "Nizwa Fort and Souq",
+        "de": "Festung von Nizwa und Markt",
+        "ru": "Крепость Низва и традиционный базар",
+        "es": "Fuerte y Zoco de Nizwa"
+      },
+      "type": "historic_fortress",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Experience Oman Nizwa Fort"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Wahiba Sands Çölü ve Wadi Bani Khalid",
+        "en": "Wahiba Sands Desert and Wadi Bani Khalid",
+        "de": "Wahiba Sands Wüste und Wadi Bani Khalid",
+        "ru": "Пустыня Вахиба и оазис Вади Бани Халид",
+        "es": "Desierto de Wahiba Sands y Wadi Bani Khalid"
+      },
+      "type": "desert_landscape",
+      "sources": [
+        {
+          "url": "https://experienceoman.om",
+          "tier": 1,
+          "title": "Experience Oman Wahiba Sands"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sultan Kabus Ulu Camii Mermer Avlusu, Maskat",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/om-480.webp",
+        "attribution_text": "Sultan Qaboos Grand Mosque marble courtyard in Muscat, Oman. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Sultan Kabus Ulu Camii Mermer Avlusu, Maskat, Umman",
+          "en": "Sultan Qaboos Grand Mosque Courtyard, Muscat, Oman",
+          "de": "Sultan-Qabus-Moschee Marmorhof, Maskat, Oman",
+          "ru": "Мраморный двор Большой мечети султана Кабуса, Маскат, Оман",
+          "es": "Patio de mármol de la Gran Mezquita del Sultán Qaboos, Mascate, Omán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "umman",
+      "en": "oman",
+      "de": "oman",
+      "ru": "oman",
+      "es": "oman"
+    },
+    "title": {
+      "tr": "Umman Vize Rehberi, 14 Gün Vizesiz Kuralı ve Maskat | Vizamigo",
+      "en": "Oman Visa Guide, 14-Day Visa-Free Entry & Muscat | Vizamigo",
+      "de": "Oman Visum-Leitfaden, 14 Tage visafrei & Maskat | Vizamigo",
+      "ru": "Виза в Оман, 14 дней без визы и путеводитель по Маскату | Vizamigo",
+      "es": "Guía de Visa de Omán, 14 Días Sin Visa y Guía de Mascate | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Umman vize muafiyeti (100+ ülkeye 14 gün vizesiz), Otaxi uygulaması, Sultan Kabus Camii, priz tipi G ve çöl turları rehberi.",
+      "en": "Oman visa policy (14 days visa-free for 100+ countries), Otaxi app, Grand Mosque visit, Type G plugs, and desert safari tips.",
+      "de": "Oman Visabestimmungen (14 Tage visafrei für 100+ Länder), Otaxi-App, Sultan-Qabus-Moschee und Steckertypen G.",
+      "ru": "Визовые правила Омана (14 дней без визы для 100+ стран), такси Otaxi, мечеть Кабуса и розетки G.",
+      "es": "Requisitos de visa para Omán (14 días sin visa para 100+ países), app Otaxi, Mezquita Qaboos y enchufes G."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

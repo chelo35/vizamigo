@@ -66,6 +66,12 @@ import PE from './countries/PE.json';
 import CR from './countries/CR.json';
 import UY from './countries/UY.json';
 import RS from './countries/RS.json';
+import CY from './countries/CY.json';
+import MT from './countries/MT.json';
+import IS from './countries/IS.json';
+import NZ from './countries/NZ.json';
+import OM from './countries/OM.json';
+import LK from './countries/LK.json';
 
 export interface VerifiedSource {
   url: string;
@@ -266,6 +272,12 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   CR: CR as unknown as VerifiedCountryRecord,
   UY: UY as unknown as VerifiedCountryRecord,
   RS: RS as unknown as VerifiedCountryRecord,
+  CY: CY as unknown as VerifiedCountryRecord,
+  MT: MT as unknown as VerifiedCountryRecord,
+  IS: IS as unknown as VerifiedCountryRecord,
+  NZ: NZ as unknown as VerifiedCountryRecord,
+  OM: OM as unknown as VerifiedCountryRecord,
+  LK: LK as unknown as VerifiedCountryRecord,
 };
 
 /**

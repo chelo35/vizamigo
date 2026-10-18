@@ -1,0 +1,456 @@
+{
+  "iso2": "NZ",
+  "names": {
+    "tr": "Yeni Zelanda",
+    "en": "New Zealand",
+    "de": "Neuseeland",
+    "ru": "Новая Зеландия",
+    "es": "Nueva Zelanda"
+  },
+  "capital": {
+    "value": "Wellington",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://wellington.govt.nz",
+        "tier": 1,
+        "title": "Wellington City Council"
+      }
+    ],
+    "evidence_quote": "Wellington is the capital city and political center of New Zealand",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "NZD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rbnz.govt.nz",
+        "tier": 1,
+        "title": "Reserve Bank of New Zealand"
+      }
+    ],
+    "evidence_quote": "The New Zealand Dollar (NZD) is the legal tender currency of New Zealand",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+12 (NZST) / UTC+13 (NZDT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.dia.govt.nz",
+        "tier": 1,
+        "title": "Department of Internal Affairs Time Standard"
+      }
+    ],
+    "evidence_quote": "New Zealand observes New Zealand Standard Time UTC+12 and Daylight Time UTC+13",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.transpower.co.nz",
+          "tier": 1,
+          "title": "Transpower New Zealand National Grid"
+        }
+      ],
+      "evidence_quote": "Mains electricity in New Zealand is delivered at 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.transpower.co.nz",
+          "tier": 1,
+          "title": "Transpower New Zealand"
+        }
+      ],
+      "evidence_quote": "Power grid frequency throughout New Zealand is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.standards.govt.nz",
+          "tier": 1,
+          "title": "Standards New Zealand (AS/NZS 3112)"
+        }
+      ],
+      "evidence_quote": "New Zealand uses Type I two or three angled flat blade plugs matching Australian standards",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.govt.nz",
+          "tier": 1,
+          "title": "New Zealand Police (Nga Pirihimana o Aotearoa)"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch connects through the nationwide 111 service",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stjohn.org.nz",
+          "tier": 1,
+          "title": "Hato Hone St John Ambulance New Zealand"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance requests are dispatched directly via 111",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fireandemergency.nz",
+          "tier": 1,
+          "title": "Fire and Emergency New Zealand (FENZ)"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is integrated into central 111",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.govt.nz/111",
+          "tier": 1,
+          "title": "New Zealand 111 Emergency Service"
+        }
+      ],
+      "evidence_quote": "111 is New Zealand's single emergency contact number for police, fire, and ambulance",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.newzealand.com",
+          "tier": 1,
+          "title": "Tourism New Zealand Visitor Assistance"
+        }
+      ],
+      "evidence_quote": "Visitor safety reports and emergencies are coordinated directly through 111",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept New Zealand Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/new-zealand",
+          "tier": 1,
+          "title": "UK FCDO New Zealand Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Yeni Zelanda dünyanın en barışçıl ve güvenli ülkelerindendir",
+      "en": "Normal Precautions: New Zealand is one of the safest countries in the world",
+      "de": "Normale Vorsicht: Neuseeland gehört zu den sichersten Ländern der Welt",
+      "ru": "Обычные меры: Новая Зеландия одна из самых безопасных стран мира",
+      "es": "Precauciones normales: Nueva Zelanda es uno de los países más seguros del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 85.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/new-zealand",
+          "tier": 2,
+          "title": "Ookla Speedtest New Zealand"
+        }
+      ],
+      "evidence_quote": "New Zealand mobile download speeds average 85.4 Mbps across One NZ, Spark, and 2degrees",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 182.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/new-zealand",
+          "tier": 2,
+          "title": "Ookla Speedtest New Zealand Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in New Zealand averages 182.1 Mbps over nationwide fiber (UFB)",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by One NZ and Spark. Tourist SIM cards are readily available at Auckland, Wellington, and Christchurch airports with passport validation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://comcom.govt.nz",
+          "tier": 1,
+          "title": "Commerce Commission New Zealand Telecommunications"
+        }
+      ],
+      "evidence_quote": "Prepaid mobile plans require standard identity verification under New Zealand consumer rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "CamperMate",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://campermate.com",
+        "tier": 1,
+        "title": "CamperMate Essential New Zealand Campsite App"
+      }
+    },
+    {
+      "name": "AT Mobile",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://at.govt.nz",
+        "tier": 1,
+        "title": "Auckland Transport AT Mobile"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/nz/en/",
+        "tier": 1,
+        "title": "Uber New Zealand"
+      }
+    },
+    {
+      "name": "DiDi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://web.didiglobal.com/nz/",
+        "tier": 1,
+        "title": "DiDi New Zealand"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Dinsiz/Seküler (~48%), Hristiyanlık (~37%), Hinduizm (~2.6%), İslam (~1.3%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stats.govt.nz",
+          "tier": 1,
+          "title": "Stats NZ Census"
+        }
+      ],
+      "evidence_quote": "New Zealand is a diverse and predominantly secular society with deep Maori cultural roots",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Waitangi Günü (6 Şubat), ANZAC Günü (25 Nisan), Matariki (Maori Yeni Yılı, Haziran/Temmuz)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.newzealand.com",
+          "tier": 1,
+          "title": "Tourism New Zealand Cultural Events"
+        }
+      ],
+      "evidence_quote": "Waitangi Day on February 6 and Matariki public holiday celebrate foundational cultural heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Biyogüvenlik karantina kontrolleri çok sıkıdır; taze meyve, kamp ekipmanı veya çamurlu ayakkabılar bildirilmezse 400 NZD anında para cezası kesilir. Trafik SOLDAN AKAR. Prizler Tip I (eğik yassı uçlu) standardındadır. NZeTA elektronik vize onayı uçuştan önce alınmalıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.biosecurity.govt.nz",
+          "tier": 1,
+          "title": "Biosecurity New Zealand (MPI)"
+        }
+      ],
+      "evidence_quote": "Declare or dispose of all risk goods; failure to declare carries an immediate 400 NZD infringement fee",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş vermek beklenmez veya zorunlu değildir; asgari ücret yasaları sayesinde bahşiş kültürü yoktur. Olağanüstü servis için yuvarlama yapılabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.newzealand.com",
+          "tier": 1,
+          "title": "Tourism New Zealand Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in New Zealand and is not expected across hospitality services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Milford Sound ve Fiyort Uçurumları (UNESCO)",
+        "en": "Milford Sound and Fiordland (UNESCO)",
+        "de": "Milford Sound und Fiordland-Nationalpark",
+        "ru": "Фьорд Милфорд-Саунд и Фьордленд (ЮНЕСКО)",
+        "es": "Milford Sound y Fiordland (UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/551",
+          "tier": 1,
+          "title": "UNESCO Te Wahipounamu - South West New Zealand"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Rotorua Jeotermal Gayzerleri ve Maori Kültürü",
+        "en": "Rotorua Geothermal Wonders and Māori Culture",
+        "de": "Geothermisches Wunderland Rotorua",
+        "ru": "Геотермальная зона Роторуа и культура маори",
+        "es": "Zona Geotermal de Rotorua y Cultura Maorí"
+      },
+      "type": "geothermal_wonder",
+      "sources": [
+        {
+          "url": "https://www.rotoruanz.com",
+          "tier": 1,
+          "title": "Rotorua Tourism Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Tongariro Milli Parkı ve Volkanik Yürüyüş Yolu (UNESCO)",
+        "en": "Tongariro National Park Alpine Crossing (UNESCO)",
+        "de": "Tongariro-Nationalpark",
+        "ru": "Национальный парк Тонгариро (ЮНЕСКО)",
+        "es": "Parque Nacional Tongariro (UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/421",
+          "tier": 1,
+          "title": "UNESCO Tongariro National Park"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Milford Sound Mitre Peak ve Fiyort Uçurumları (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/nz-480.webp",
+        "attribution_text": "Milford Sound and Mitre Peak in Fiordland, New Zealand. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Milford Sound ve Mitre Peak Zirvesi, Yeni Zelanda",
+          "en": "Milford Sound and Mitre Peak, New Zealand",
+          "de": "Milford Sound und Mitre Peak, Neuseeland",
+          "ru": "Фьорд Милфорд-Саунд и пик Митр, Новая Зеландия",
+          "es": "Milford Sound y pico Mitre, Nueva Zelanda"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "yeni-zelanda",
+      "en": "new-zealand",
+      "de": "neuseeland",
+      "ru": "novaya-zelandiya",
+      "es": "nueva-zelanda"
+    },
+    "title": {
+      "tr": "Yeni Zelanda Vize Rehberi, NZeTA ve Seyahat Güvenliği | Vizamigo",
+      "en": "New Zealand Visa Guide, NZeTA & Travel Safety | Vizamigo",
+      "de": "Neuseeland Visum-Leitfaden, NZeTA & Reisesicherheit | Vizamigo",
+      "ru": "Виза в Новую Зеландию, NZeTA и советы путешественникам | Vizamigo",
+      "es": "Guía de Visa de Nueva Zelanda, NZeTA y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Yeni Zelanda vize ve NZeTA başvuru şartları, biyogüvenlik cezaları, priz tipi I, soldan trafik ve Milford Sound fiyort rehberi.",
+      "en": "New Zealand visa policies, NZeTA entry requirements, biosecurity declaration rules, Type I plugs, and Milford Sound guide.",
+      "de": "Neuseeland Visa- und NZeTA-Regeln, Biosicherheitsvorschriften, Typ-I-Stecker und Milford Sound Reisetipps.",
+      "ru": "Визовые правила Новой Зеландии, система NZeTA, биоконтроль, розетки типа I и фьорд Милфорд-Саунд.",
+      "es": "Requisitos de visa y NZeTA para Nueva Zelanda, normas de bioseguridad, enchufes tipo I y Milford Sound."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
