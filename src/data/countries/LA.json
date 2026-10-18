@@ -1,0 +1,445 @@
+{
+  "iso2": "LA",
+  "names": {
+    "tr": "Laos",
+    "en": "Laos",
+    "de": "Laos",
+    "ru": "Лаос",
+    "es": "Laos"
+  },
+  "capital": {
+    "value": "Vientiane",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vientiane.gov.la",
+        "tier": 1,
+        "title": "Vientiane Capital Administration"
+      }
+    ],
+    "evidence_quote": "Vientiane is the capital and largest city of the Lao People's Democratic Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "LAK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bol.gov.la",
+        "tier": 1,
+        "title": "Bank of the Lao PDR (BOL)"
+      }
+    ],
+    "evidence_quote": "The Lao Kip (LAK) is the official national currency; Thai Baht and USD are often accepted",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+7 (ICT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://laogov.gov.la",
+        "tier": 1,
+        "title": "Government of Lao PDR"
+      }
+    ],
+    "evidence_quote": "Laos observes Indochina Time UTC+7 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.edl.com.la",
+          "tier": 1,
+          "title": "Electricite du Laos (EDL)"
+        }
+      ],
+      "evidence_quote": "Residential electrical distribution in Laos delivers 230V alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.edl.com.la",
+          "tier": 1,
+          "title": "Electricite du Laos"
+        }
+      ],
+      "evidence_quote": "Nominal alternating frequency across the grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Laos accept flat two-pin Type A/B as well as round two-pin Type C/E plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "1191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://laogov.gov.la",
+          "tier": 1,
+          "title": "Ministry of Public Security of Lao PDR"
+        }
+      ],
+      "evidence_quote": "Dial 1191 for national emergency police services across Laos",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "1195",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vientianerescue.org",
+          "tier": 1,
+          "title": "Vientiane Rescue / Ministry of Health"
+        }
+      ],
+      "evidence_quote": "Call 1195 for volunteer ambulance and emergency medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "1190",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://laogov.gov.la",
+          "tier": 1,
+          "title": "Ministry of Public Security"
+        }
+      ],
+      "evidence_quote": "Dial 1190 for municipal fire and rescue services in Laos",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "1191",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://laogov.gov.la",
+          "tier": 1,
+          "title": "Ministry of Public Security"
+        }
+      ],
+      "evidence_quote": "1191 connects callers to primary police dispatchers",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+856 21 251 128",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourismlaos.org",
+          "tier": 1,
+          "title": "Tourism Development Department of Lao PDR"
+        }
+      ],
+      "evidence_quote": "Tourist Police division hotline provides English assistance in Luang Prabang and Vientiane",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/laos",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Luang Prabang, Vang Vieng ve Vientiane güvenlidir; kırsal bölgelerde patlamamış mühimmat (UXO) uyarılarına dikkat edilmelidir.",
+      "en": "Tourist cities Luang Prabang and Vang Vieng are safe; heed unexploded ordnance (UXO) warnings in rural areas.",
+      "de": "Luang Prabang und Vang Vieng sind sicher; im ländlichen Raum auf Blindgänger-Warnungen (UXO) achten.",
+      "ru": "Луангпхабанг и Вангвьенг безопасны; в сельской местности не сходите с троп из-за неразорвавшихся снарядов (UXO).",
+      "es": "Luang Prabang y Vang Vieng son seguros; atención a municiones sin detonar (UXO) en zonas rurales."
+    },
+    "regional_warnings": [
+      {
+        "area": "Golden Triangle Special Economic Zone (Bokeo Province)",
+        "level": 3,
+        "reason": "Presence of organized scam centers and casino zones; avoid travel to this enclave.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 29.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/laos",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Laos measure approximately 29.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 38.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/laos",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Laos reach 38.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Unitel and Lao Telecom offer tourist eSIMs with reliable 4G/LTE coverage. The Laos-China Railway (LCR) connects Vientiane, Vang Vieng, and Luang Prabang in 2 hours; book train tickets via the LCR Ticket app.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://unitel.com.la",
+          "tier": 1,
+          "title": "Unitel Lao PDR"
+        }
+      ],
+      "evidence_quote": "Unitel provides nationwide cellular coverage across main urban corridors and railway tracks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "LOCA",
+      "category": "taxi",
+      "popular": true,
+      "description": "The official licensed ride-hailing app in Laos for booking safe cars and electric taxis."
+    },
+    {
+      "name": "LCR Ticket",
+      "category": "transport",
+      "popular": true,
+      "description": "Essential official booking app for the modern Laos-China high-speed train network."
+    },
+    {
+      "name": "Foodpanda",
+      "category": "food",
+      "popular": true,
+      "description": "Popular food delivery service operating in Vientiane and Luang Prabang."
+    },
+    {
+      "name": "BCEL One",
+      "category": "payments",
+      "popular": false,
+      "description": "National mobile banking QR payment app widely accepted across merchants."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "Türk vatandaşları havalimanlarında ve uluslararası sınır kapılarında Kapıda Vize (VoA - 30 gün, 40$) veya online e-Visa alabilir.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://laoevisa.gov.la",
+        "tier": 1,
+        "title": "Official Laos e-Visa Portal"
+      }
+    },
+    "us": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "US citizens can obtain a 30-day Visa on Arrival ($40 USD) or apply for an eVisa online before traveling.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://laoevisa.gov.la",
+        "tier": 1,
+        "title": "Official Laos e-Visa Portal"
+      }
+    },
+    "de": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "German and EU citizens are eligible for a 30-day Visa on Arrival or online eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://laoevisa.gov.la",
+        "tier": 1,
+        "title": "Official Laos e-Visa Portal"
+      }
+    },
+    "gb": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "British passport holders can purchase a Visa on Arrival (30 days, $40) or apply for an eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/laos/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Граждане РФ могут въезжать в Лаос без визы на срок до 30 дней с туристическими целями.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://laoevisa.gov.la",
+        "tier": 1,
+        "title": "МИД Лаоса"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect the morning Alms Giving ceremony (Tak Bat)",
+        "description": "In Luang Prabang, observe monks collecting morning alms from a respectful distance; dress modestly and do not flash cameras in their faces."
+      },
+      {
+        "title": "Book train tickets in advance on LCR Ticket app",
+        "description": "High-speed train seats between Vientiane, Vang Vieng, and Luang Prabang sell out days in advance; book via the official app."
+      },
+      {
+        "title": "Remove shoes when entering temples and homes",
+        "description": "Always take off footwear before stepping onto monastery verandas or entering private Lao guesthouses."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't touch or climb on ancient Buddha statues",
+        "description": "Buddha images are sacred religious objects; posing inappropriately or sitting on statues is offensive and illegal."
+      },
+      {
+        "title": "Don't wander off marked paths in rural Xieng Khouang",
+        "description": "Laos is the most heavily bombed country per capita in history; strictly obey red unexploded ordnance (UXO) marker signs."
+      }
+    ],
+    "tipping": "Tipping is not traditional in Laos, but leaving 10% in upscale restaurants or tipping tour boat operators and guides is appreciated."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kuang Si Çok Katmanlı Turkuaz Şelalesi, Luang Prabang",
+        "license": "CC BY-SA 4.0",
+        "author": "Basile Morin",
+        "source_url": "/images/countries/la-480.webp",
+        "attribution_text": "Kuang Si multi-tiered turquoise waterfall pools near Luang Prabang, Laos. Basile Morin, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Kuang Si Çok Katmanlı Turkuaz Şelalesi, Luang Prabang, Laos",
+          "en": "Kuang Si Multi-Tiered Turquoise Falls, Luang Prabang, Laos",
+          "de": "Kuang-Si-Wasserfälle mit Türkisbecken, Luang Prabang, Laos",
+          "ru": "Многоярусный бирюзовый водопад Куанг Си, Луангпхабанг, Лаос",
+          "es": "Cascadas Escalonadas de Kuang Si, Luang Prabang, Laos"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "laos",
+      "en": "laos",
+      "de": "laos",
+      "ru": "laos",
+      "es": "laos"
+    },
+    "title": {
+      "tr": "Laos Vize Rehberi, Kapıda Vize (VoA) ve Kuang Si Şelalesi | Vizamigo",
+      "en": "Laos Visa Guide, Visa on Arrival & Kuang Si Falls Travel | Vizamigo",
+      "de": "Laos Visum-Leitfaden, Visa on Arrival & Kuang Si Wasserfälle | Vizamigo",
+      "ru": "Виза в Лаос, виза по прибытии и водопад Куанг Си | Vizamigo",
+      "es": "Guía de Visa de Laos, Visa a la Llegada y Cascadas de Kuang Si | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Laos kapıda vize (VoA) şartları, Laos-Çin hızlı treni (LCR), LOCA taksi uygulaması, sabah sadaka seremonisi ve Kuang Si gezi rehberi.",
+      "en": "Laos 30-day Visa on Arrival rules, Laos-China Railway app tips, LOCA taxi, Tak Bat etiquette, and Kuang Si Falls guide.",
+      "de": "Laos Visa on Arrival Bestimmungen, Laos-China-Schnellzug, LOCA Taxi-App und Reisetipps Kuang-Si-Wasserfälle.",
+      "ru": "Правила визы по прибытии в Лаос, скоростной поезд LCR, приложение LOCA и водопады Куанг Си.",
+      "es": "Requisitos de Visa a la Llegada en Laos, tren de alta velocidad LCR, app LOCA y guía de cascadas Kuang Si."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

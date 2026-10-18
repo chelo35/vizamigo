@@ -1,0 +1,443 @@
+{
+  "iso2": "TZ",
+  "names": {
+    "tr": "Tanzanya",
+    "en": "Tanzania",
+    "de": "Tansania",
+    "ru": "Танзания",
+    "es": "Tanzania"
+  },
+  "capital": {
+    "value": "Dodoma",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://dodomacc.go.tz",
+        "tier": 1,
+        "title": "Dodoma City Council Official Portal"
+      }
+    ],
+    "evidence_quote": "Dodoma is the official national capital; Dar es Salaam serves as the largest commercial hub",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TZS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bot.go.tz",
+        "tier": 1,
+        "title": "Bank of Tanzania (Benki Kuu ya Tanzania)"
+      }
+    ],
+    "evidence_quote": "The Tanzanian Shilling (TZS) is the official currency; USD is accepted for safari park fees",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (EAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ikulutanzania.go.tz",
+        "tier": 1,
+        "title": "The State House of Tanzania"
+      }
+    ],
+    "evidence_quote": "Tanzania observes East Africa Time UTC+3 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tanesco.co.tz",
+          "tier": 1,
+          "title": "Tanzania Electric Supply Company (TANESCO)"
+        }
+      ],
+      "evidence_quote": "Standard nominal domestic voltage in Tanzania is 230V single phase 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tanesco.co.tz",
+          "tier": 1,
+          "title": "TANESCO Tanzania"
+        }
+      ],
+      "evidence_quote": "National alternating transmission frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Tanzania support British three-pin Type G and round-pin Type D electrical plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.polisi.go.tz",
+          "tier": 1,
+          "title": "Tanzania Police Force (Jeshi la Polisi)"
+        }
+      ],
+      "evidence_quote": "Dial 112 or 999 for emergency police assistance throughout Tanzania",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.go.tz",
+          "tier": 1,
+          "title": "Ministry of Health of Tanzania"
+        }
+      ],
+      "evidence_quote": "Call 114 for emergency hospital ambulance services and paramedic dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zimamoto.go.tz",
+          "tier": 1,
+          "title": "Fire and Rescue Force of Tanzania"
+        }
+      ],
+      "evidence_quote": "Call 115 for Fire and Rescue Force brigades across Tanzania",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.polisi.go.tz",
+          "tier": 1,
+          "title": "Tanzania Police Force"
+        }
+      ],
+      "evidence_quote": "112 serves as the primary national emergency contact",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+255 22 211 4114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tanzaniatourism.go.tz",
+          "tier": 1,
+          "title": "Tanzania Tourist Board (TTB)"
+        }
+      ],
+      "evidence_quote": "Diplomatic and Tourist Police department in Dar es Salaam, Arusha, and Stone Town Zanzibar",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/tanzania",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Serengeti, Kilimanjaro ve Zanzibar güvenlidir; Mozambik sınır boylarındaki güney kırsalından uzak durulmalıdır.",
+      "en": "Serengeti, Kilimanjaro, and Zanzibar are secure; avoid travel near the Mozambique border in Mtwara.",
+      "de": "Serengeti, Kilimandscharo und Sansibar sind sicher; Grenzgebiet zu Mosambik meiden.",
+      "ru": "Серенгети, Килиманджаро и Занзибар безопасны; избегайте южной границы с Мозамбиком.",
+      "es": "El Serengueti, Kilimanjaro y Zanzíbar son seguros; evite la frontera sur con Mozambique."
+    },
+    "regional_warnings": [
+      {
+        "area": "Mtwara Region (Southern Border with Mozambique)",
+        "level": 3,
+        "reason": "Militant cross-border spillover from Cabo Delgado; avoid non-essential travel.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 26.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tanzania",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Tanzania measure 26.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 34.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tanzania",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Tanzania reach 34.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Foreign visitors entering Zanzibar must acquire the mandatory Zanzibar Inbound Travel Insurance online. Vodacom Tanzania and Airtel provide 4G prepaid tourist eSIMs with coverage across mainland parks and the archipelago.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitzanzibar.go.tz",
+          "tier": 1,
+          "title": "Zanzibar Insurance Corporation"
+        }
+      ],
+      "evidence_quote": "Mandatory Zanzibar inbound travel insurance is required for all foreign arrivals to Zanzibar",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt / Uber",
+      "category": "taxi",
+      "popular": true,
+      "description": "Widely used ride-hailing options for cars and bajaji (auto-rickshaws) in Dar es Salaam."
+    },
+    {
+      "name": "M-Pesa / Tigo Pesa",
+      "category": "payments",
+      "popular": true,
+      "description": "Essential mobile money platforms used everywhere across Tanzania."
+    },
+    {
+      "name": "Azam Ferry App",
+      "category": "transport",
+      "popular": true,
+      "description": "Official booking application for the high-speed passenger ferries linking Dar es Salaam and Zanzibar."
+    },
+    {
+      "name": "Piki",
+      "category": "food",
+      "popular": true,
+      "description": "Food delivery service operating across Dar es Salaam."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "Türk vatandaşları online e-Visa alabilir veya Tanzanya havalimanlarında Kapıda Vize (VoA - 50$) alabilir. Zanzibar'a girişlerde zorunlu yerel seyahat sigortası kuralı vardır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visa.immigration.go.tz",
+        "tier": 1,
+        "title": "Tanzanya Göç İdaresi e-Visa Portalı"
+      }
+    },
+    "us": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "US citizens must obtain a multiple-entry tourist visa ($100 USD) either online or on arrival at major ports of entry.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visa.immigration.go.tz",
+        "tier": 1,
+        "title": "Tanzania Immigration e-Visa Portal"
+      }
+    },
+    "de": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "German and EU citizens can obtain a single-entry tourist visa ($50 USD) online or on arrival.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visa.immigration.go.tz",
+        "tier": 1,
+        "title": "Tanzania Immigration e-Visa Portal"
+      }
+    },
+    "gb": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "British passport holders can purchase a Visa on Arrival ($50) or apply for an eVisa before flying.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/tanzania/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "Граждане РФ получают визу по прибытии ($50) в аэропортах Дар-эс-Салама, Килиманджаро и Занзибара или оформляют e-Visa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visa.immigration.go.tz",
+        "tier": 1,
+        "title": "Иммиграционная служба Танзании"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect Stone Town Zanzibar modest dress code",
+        "description": "Zanzibar is over 95% Muslim; outside private resorts, cover shoulders and knees when walking through Stone Town."
+      },
+      {
+        "title": "Carry US Dollar bills printed after 2013",
+        "description": "Tanzanian banks, safari parks, and hotels routinely reject US dollar banknotes printed prior to 2013."
+      },
+      {
+        "title": "Get Zanzibar Inbound Insurance beforehand",
+        "description": "Mandatory Zanzibar government health insurance ($44) is required for tourists flying or boating into the island."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't bring single-use plastic carrier bags",
+        "description": "Tanzania strictly bans importing plastic carrier bags; border officials will remove them at airport baggage screening."
+      },
+      {
+        "title": "Don't photograph locals without permission",
+        "description": "Particularly in Maasai bomas and Zanzibar villages, ask politely and agree on photo fees if requested."
+      }
+    ],
+    "tipping": "Tipping is customary on safari and Kilimanjaro climbs ($15-20 per day for safari guides; $10-15 per day for mountain porters)."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kilimanjaro Dağı Barranco Duvarı ve Zirve Patikası",
+        "license": "CC BY-SA 4.0",
+        "author": "Altezzatravel",
+        "source_url": "/images/countries/tz-480.webp",
+        "attribution_text": "Barranco Wall trekking trail on Mount Kilimanjaro, Tanzania. Altezzatravel, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Kilimanjaro Dağı Barranco Duvarı ve Zirve Patikası, Tanzanya",
+          "en": "Mount Kilimanjaro Barranco Wall & Alpine Trail, Tanzania",
+          "de": "Kilimandscharo Barranco Wall & Alpinpfad, Tansania",
+          "ru": "Стена Барранко на горе Килиманджаро, Танзания",
+          "es": "Muro de Barranco del Monte Kilimanjaro, Tanzania"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "tanzanya",
+      "en": "tanzania",
+      "de": "tansania",
+      "ru": "tanzaniya",
+      "es": "tanzania"
+    },
+    "title": {
+      "tr": "Tanzanya Vize Rehberi, Zanzibar Giriş Sigortası ve Kilimanjaro Gezisi | Vizamigo",
+      "en": "Tanzania Visa Guide, Zanzibar Travel Insurance & Kilimanjaro | Vizamigo",
+      "de": "Tansania Visum-Leitfaden, Sansibar Versicherung & Kilimandscharo | Vizamigo",
+      "ru": "Виза в Танзанию, страховка на Занзибар и восхождение на Килиманджаро | Vizamigo",
+      "es": "Guía de Visa de Tanzania, Seguro de Zanzíbar y Kilimanjaro | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Tanzanya kapıda vize (VoA) şartları, Zanzibar zorunlu yerel sigortası, 2013 sonrası dolar kuralı ve Kilimanjaro tırmanış rehberi.",
+      "en": "Tanzania Visa on Arrival rules, mandatory Zanzibar inbound insurance, 2013+ USD bill rule, and Mount Kilimanjaro guide.",
+      "de": "Tansania Visa on Arrival Bestimmungen, Pflichtversicherung Sansibar, US-Dollar ab 2013 und Kilimandscharo-Tipps.",
+      "ru": "Правила визы по прибытии в Танзанию, обязательная страховка на Занзибар и подъем на Килиманджаро.",
+      "es": "Requisitos de Visa a la Llegada en Tanzania, seguro obligatorio para Zanzíbar y guía de ascenso al Kilimanjaro."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

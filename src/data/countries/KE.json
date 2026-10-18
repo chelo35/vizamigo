@@ -1,0 +1,442 @@
+{
+  "iso2": "KE",
+  "names": {
+    "tr": "Kenya",
+    "en": "Kenya",
+    "de": "Kenia",
+    "ru": "Кения",
+    "es": "Kenia"
+  },
+  "capital": {
+    "value": "Nairobi",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nairobi.go.ke",
+        "tier": 1,
+        "title": "Nairobi City County Official Portal"
+      }
+    ],
+    "evidence_quote": "Nairobi is the capital and largest city of the Republic of Kenya",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "KES",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbank.go.ke",
+        "tier": 1,
+        "title": "Central Bank of Kenya"
+      }
+    ],
+    "evidence_quote": "The Kenyan Shilling (KES) is the official national currency of Kenya",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (EAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.president.go.ke",
+        "tier": 1,
+        "title": "Executive Office of the President of Kenya"
+      }
+    ],
+    "evidence_quote": "Kenya observes East Africa Time UTC+3 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://kplc.co.ke",
+          "tier": 1,
+          "title": "Kenya Power and Lighting Company (KPLC)"
+        }
+      ],
+      "evidence_quote": "Domestic nominal electricity across Kenya operates at 240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://kplc.co.ke",
+          "tier": 1,
+          "title": "Kenya Power and Lighting Company"
+        }
+      ],
+      "evidence_quote": "Alternating grid transmission frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Standard electrical sockets in Kenya utilize British three-rectangular-pin Type G plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nationalpolice.go.ke",
+          "tier": 1,
+          "title": "National Police Service of Kenya"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 112 for emergency police services across Kenya",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.health.go.ke",
+          "tier": 1,
+          "title": "Ministry of Health of Kenya"
+        }
+      ],
+      "evidence_quote": "Call 999 or Red Cross ambulance services for emergency medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nairobi.go.ke",
+          "tier": 1,
+          "title": "Nairobi Fire and Rescue Services"
+        }
+      ],
+      "evidence_quote": "Dial 999 for municipal fire and technical rescue brigades",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nationalpolice.go.ke",
+          "tier": 1,
+          "title": "National Police Service"
+        }
+      ],
+      "evidence_quote": "112 functions as the nationwide universal mobile emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+254 20 272 4154",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://magicalkenya.com",
+          "tier": 1,
+          "title": "Kenya Tourism Board (KTB)"
+        }
+      ],
+      "evidence_quote": "Tourist Police Unit (TPU) dedicated 24/7 hotline operates across Nairobi, Mombasa, and safari parks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/kenya",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Maasai Mara, Amboseli ve Diani Beach güvenlidir; Somali sınırı ve başkentin belirli dış mahallelerinden kaçınılmalıdır.",
+      "en": "Safari parks and beach resorts are safe; avoid travel to the Kenya-Somalia border areas.",
+      "de": "Safariparks und Strandresorts sind sicher; Grenzgebiete zu Somalia meiden.",
+      "ru": "Национальные сафари-парки и пляжи безопасны; избегайте приграничных с Сомали территорий.",
+      "es": "Los parques de safari y playas son seguros; evite las áreas fronterizas con Somalia."
+    },
+    "regional_warnings": [
+      {
+        "area": "Northern and Eastern Border with Somalia (Mandera, Wajir, Garissa)",
+        "level": 4,
+        "reason": "Al-Shabaab terrorist activity and armed cross-border incidents; completely restricted.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 31.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kenya",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Kenya reach approximately 31.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 46.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kenya",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Kenya measure 46.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All inbound international travelers must obtain the electronic Travel Authorisation (eTA) on etakenya.go.ke before boarding. Safaricom and Airtel provide tourist eSIMs; Safaricom's M-Pesa is used for virtually all transactions.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.etakenya.go.ke",
+          "tier": 1,
+          "title": "Kenya Electronic Travel Authorisation (eTA) Official Portal"
+        }
+      ],
+      "evidence_quote": "All visitors must hold an approved electronic Travel Authorisation before arrival",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "M-Pesa",
+      "category": "payments",
+      "popular": true,
+      "description": "Kenya's world-famous mobile money service; accepted by literally everyone from safari lodges to street fruit stalls."
+    },
+    {
+      "name": "Uber / Bolt / Little",
+      "category": "taxi",
+      "popular": true,
+      "description": "Safe, reliable ride-hailing apps operating in Nairobi, Mombasa, and Kisumu."
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food delivery and supermarket errand app across Nairobi."
+    },
+    {
+      "name": "Madaraka Express",
+      "category": "transport",
+      "popular": true,
+      "description": "Official booking app for the modern standard gauge railway (SGR) between Nairobi and Mombasa."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eTA Required",
+      "duration_days": 90,
+      "conditions": "Tüm yabancı ziyaretçiler gibi Türk vatandaşları da seyahatten önce www.etakenya.go.ke üzerinden elektronik Seyahat İzni (eTA - ~35$) almak zorundadır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.etakenya.go.ke",
+        "tier": 1,
+        "title": "Kenya Göç İdaresi eTA Sistemi"
+      }
+    },
+    "us": {
+      "regime": "eTA Required",
+      "duration_days": 90,
+      "conditions": "All travelers including US citizens must apply for and obtain an approved electronic Travel Authorisation (eTA) online prior to departure.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.etakenya.go.ke",
+        "tier": 1,
+        "title": "Kenya eTA Portal"
+      }
+    },
+    "de": {
+      "regime": "eTA Required",
+      "duration_days": 90,
+      "conditions": "German and EU citizens must secure an approved electronic Travel Authorisation (eTA) online before traveling to Kenya.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.etakenya.go.ke",
+        "tier": 1,
+        "title": "Kenya eTA Portal"
+      }
+    },
+    "gb": {
+      "regime": "eTA Required",
+      "duration_days": 90,
+      "conditions": "British passport holders must apply for an electronic Travel Authorisation (eTA) prior to travel on the official portal.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/kenya/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "eTA Required",
+      "duration_days": 90,
+      "conditions": "Граждане РФ должны оформить электронное разрешение на поездку (eTA) онлайн на сайте etakenya.go.ke до вылета.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.etakenya.go.ke",
+        "tier": 1,
+        "title": "Официальный портал eTA Кении"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Set up Safaricom M-Pesa immediately",
+        "description": "Kenya is virtually cashless for daily transactions; activating an M-Pesa account via a tourist SIM lets you pay anywhere via phone."
+      },
+      {
+        "title": "Respect single-use plastic bag bans",
+        "description": "Kenya strictly enforces a world-famous total ban on single-use plastic shopping bags; customs will confiscate them at the airport."
+      },
+      {
+        "title": "Follow safari guide ethical rules",
+        "description": "Never urge safari drivers to go off-road or approach wild animals too closely in Maasai Mara or Amboseli."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't photograph government buildings or police",
+        "description": "Photographing state house, military installations, bridges, or police personnel is strictly illegal in Kenya."
+      },
+      {
+        "title": "Don't smoke in public outdoor spaces in Nairobi",
+        "description": "Smoking in public streets or parks outside marked smoking zones is strictly fined by municipal council officers (Kanjo)."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in restaurants; safari driver-guides and camp staff expect daily tips ($10-15 per day per person) for their expertise."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Maasai Mara Büyük Göç ve Savan Vahşi Yaşamı",
+        "license": "CC BY 2.0",
+        "author": "Ray in Manila",
+        "source_url": "/images/countries/ke-480.webp",
+        "attribution_text": "Safari game drive in the Maasai Mara savannah in Kenya. Ray in Manila, CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Maasai Mara Büyük Göç ve Savan Vahşi Yaşamı, Kenya",
+          "en": "Maasai Mara Great Migration & African Savannah, Kenya",
+          "de": "Maasai Mara Große Tierwanderung & Savanne, Kenia",
+          "ru": "Великая миграция в Масаи-Мара и африканская саванна, Кения",
+          "es": "Gran Migración de Maasai Mara y Sabana Africana, Kenia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kenya",
+      "en": "kenya",
+      "de": "kenia",
+      "ru": "keniya",
+      "es": "kenia"
+    },
+    "title": {
+      "tr": "Kenya Vize Rehberi, Zorunlu eTA Başvurusu ve Maasai Mara Safari | Vizamigo",
+      "en": "Kenya Visa Guide, Mandatory eTA Entry & Maasai Mara Safari | Vizamigo",
+      "de": "Kenia Visum-Leitfaden, eTA-Pflicht & Maasai Mara Safari | Vizamigo",
+      "ru": "Виза в Кению, оформление eTA и сафари в Масаи-Мара | Vizamigo",
+      "es": "Guía de Visa de Kenia, eTA Obligatoria y Safari en Maasai Mara | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kenya elektronik seyahat izni (eTA) şartları, M-Pesa mobil ödeme sistemi, naylon poşet yasağı, Tip G prizler ve Maasai Mara gezi rehberi.",
+      "en": "Kenya electronic Travel Authorisation (eTA) rules, M-Pesa mobile payments, plastic bag ban, Type G plugs, and Maasai Mara tips.",
+      "de": "Kenia eTA-Einreisebestimmungen, M-Pesa mobiles Bezahlen, Plastiktütenverbot und Reisetipps Maasai Mara Safari.",
+      "ru": "Правила въезда в Кению (eTA), мобильные платежи M-Pesa, запрет на пластиковые пакеты и сафари в Масаи-Мара.",
+      "es": "Requisitos de entrada con eTA para Kenia, pagos móviles M-Pesa, prohibición de bolsas plásticas y safari en Maasai Mara."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

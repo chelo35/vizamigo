@@ -1,0 +1,443 @@
+{
+  "iso2": "AM",
+  "names": {
+    "tr": "Ermenistan",
+    "en": "Armenia",
+    "de": "Armenien",
+    "ru": "Армения",
+    "es": "Armenia"
+  },
+  "capital": {
+    "value": "Erivan",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.yerevan.am",
+        "tier": 1,
+        "title": "Yerevan Municipality Official Portal"
+      }
+    ],
+    "evidence_quote": "Yerevan is the capital and administrative, cultural, and industrial center of Armenia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "AMD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cba.am",
+        "tier": 1,
+        "title": "Central Bank of Armenia"
+      }
+    ],
+    "evidence_quote": "The Armenian Dram (AMD) is the national legal tender currency of Armenia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (AMT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.am",
+        "tier": 1,
+        "title": "Government of the Republic of Armenia"
+      }
+    ],
+    "evidence_quote": "Armenia observes Armenia Time UTC+4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ena.am",
+          "tier": 1,
+          "title": "Electric Networks of Armenia (ENA)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Armenia is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ena.am",
+          "tier": 1,
+          "title": "Electric Networks of Armenia"
+        }
+      ],
+      "evidence_quote": "Armenian electrical transmission grid operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Wall outlets in Armenia conform to European Type C and Type F standards",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.am",
+          "tier": 1,
+          "title": "Police of the Republic of Armenia"
+        }
+      ],
+      "evidence_quote": "Dial 102 for emergency police response across Armenia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.am",
+          "tier": 1,
+          "title": "Ministry of Health of Armenia"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mes.am",
+          "tier": 1,
+          "title": "Rescue Service of the Ministry of Internal Affairs"
+        }
+      ],
+      "evidence_quote": "Dial 101 for fire and technical rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mes.am",
+          "tier": 1,
+          "title": "Rescue Service"
+        }
+      ],
+      "evidence_quote": "Unified 112 / 911 emergency number connects to all rescue services in Armenia",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+374 10 534 041",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://armenia.travel",
+          "tier": 1,
+          "title": "Tourism Committee of the Republic of Armenia"
+        }
+      ],
+      "evidence_quote": "Tourism Information and police patrol divisions operate in central Yerevan and Northern Avenue",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/armenia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Erivan, Sevan Gölü ve Tatev güvenlidir; Azerbaycan sınır boylarındaki askeri temas hatlarından uzak durulmalıdır.",
+      "en": "Yerevan, Lake Sevan, and Tatev are safe; avoid travel to eastern border areas with Azerbaijan.",
+      "de": "Jerewan, Sewansee und Tatew sind sicher; Grenzgebiete zu Aserbaidschan unbedingt meiden.",
+      "ru": "Ереван, озеро Севан и Татев безопасны; избегайте приграничных районов с Азербайджаном.",
+      "es": "Ereván, el Lago Sevan y Tatev son seguros; evite las áreas fronterizas con Azerbaiyán."
+    },
+    "regional_warnings": [
+      {
+        "area": "Eastern Border with Azerbaijan (Syunik, Gegharkunik, Vayots Dzor frontiers)",
+        "level": 3,
+        "reason": "Border skirmishes and active military checkpoints; avoid non-essential travel to border strips.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 36.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/armenia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Armenia reach approximately 36.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 62.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/armenia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Armenia measure 62.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Viva-MTS, Team Telecom Armenia, and Ucom offer high-speed 4G/5G prepaid tourist eSIMs with instant passport verification at Zvartnots Airport.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mts.am",
+          "tier": 1,
+          "title": "Viva-MTS Armenia"
+        }
+      ],
+      "evidence_quote": "Tourist SIM and eSIM packages offer unlimited data and calling allowances",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "GG / Yandex Go",
+      "category": "taxi",
+      "popular": true,
+      "description": "GG is Armenia's beloved homegrown ride-hailing app, operating alongside Yandex Go in Yerevan."
+    },
+    {
+      "name": "Menu.am",
+      "category": "food",
+      "popular": true,
+      "description": "Leading restaurant meal delivery service in Yerevan."
+    },
+    {
+      "name": "Telcell Wallet / Idram",
+      "category": "payments",
+      "popular": true,
+      "description": "Universal QR mobile payment apps accepted across Armenian stores and cafes."
+    },
+    {
+      "name": "2GIS / Yandex Maps",
+      "category": "maps",
+      "popular": true,
+      "description": "High-accuracy city maps and public transport transit schedules for Yerevan."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eVisa / VoA",
+      "duration_days": 21,
+      "conditions": "Türk vatandaşları online e-Visa alabilir veya Zvartnots Havalimanı sınır kapısında Kapıda Vize (VoA - 21 gün, ~6$) alabilir.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://evisa.mfa.am",
+        "tier": 1,
+        "title": "Armenia Ministry of Foreign Affairs e-Visa"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 180,
+      "conditions": "US citizens can enter Armenia visa-free for up to 180 days per calendar year.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mfa.am/en/visa/",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Armenia"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 180,
+      "conditions": "German and EU citizens enter Armenia visa-free for stays of up to 180 days per calendar year.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mfa.am/en/visa/",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Armenia"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 180,
+      "conditions": "British passport holders can visit Armenia visa-free for up to 180 days within any calendar year.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/armenia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 180,
+      "conditions": "Граждане РФ могут въезжать в Армению по внутреннему или заграничному паспорту на срок до 180 дней в году.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.mfa.am/ru/visa/",
+        "tier": 1,
+        "title": "МИД Армении"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Drink water from Pulpulaks",
+        "description": "Yerevan's streets are dotted with public memorial water fountains (Pulpulaks); the mountain spring water is crisp, cold, and free."
+      },
+      {
+        "title": "Respect ancient monastery grounds",
+        "description": "When visiting holy sites like Geghard (UNESCO) or Khor Virap, dress respectfully with covered shoulders."
+      },
+      {
+        "title": "Use GG or Yandex Go for taxis",
+        "description": "App-based taxis avoid overcharging by unmetered street cabs outside Republic Square and the airport."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't photograph military border installations",
+        "description": "Strictly refrain from taking photos or flying drones near southern border checkpoints or military areas."
+      },
+      {
+        "title": "Don't decline hospitality impolitely",
+        "description": "Armenian hospitality is deeply generous; accepting coffee or lavash with appreciation is customary."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in restaurants in Yerevan; some upscale venues include a 10% service charge automatically."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Hor Virap Manastırı ve Ağrı Dağı (Ararat) Manzarası",
+        "license": "CC BY-SA 3.0",
+        "author": "Andrew Behesnilian (MrAndrew47)",
+        "source_url": "/images/countries/am-480.webp",
+        "attribution_text": "Khor Virap Monastery and Mount Ararat in Armenia. Andrew Behesnilian, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Hor Virap Manastırı ve Ağrı Dağı (Ararat) Manzarası, Ermenistan",
+          "en": "Khor Virap Monastery & Mount Ararat View, Armenia",
+          "de": "Kloster Chor Virap mit Blick auf den Berg Ararat, Armenien",
+          "ru": "Монастырь Хор Вирап и вид на гору Арарат, Армения",
+          "es": "Monasterio de Khor Virap y Vista del Monte Ararat, Armenia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "ermenistan",
+      "en": "armenia",
+      "de": "armenien",
+      "ru": "armeniya",
+      "es": "armenia"
+    },
+    "title": {
+      "tr": "Ermenistan Vize Rehberi, Kapıda Vize (VoA) ve Khor Virap Gezisi | Vizamigo",
+      "en": "Armenia Visa Guide, Visa on Arrival & Khor Virap Travel | Vizamigo",
+      "de": "Armenien Visum-Leitfaden, Visa on Arrival & Chor Virap Reisen | Vizamigo",
+      "ru": "Виза в Армению, правила въезда и монастырь Хор Вирап | Vizamigo",
+      "es": "Guía de Visa de Armenia, Visa a la Llegada y Khor Virap | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Ermenistan Türk pasaportuna e-Visa ve kapıda vize şartları, GG taksi uygulaması, Pulpulak çeşmeleri ve Khor Virap gezi rehberi.",
+      "en": "Armenia eVisa and VoA rules, GG ride-hailing app, public pulpulak water fountains, and Khor Virap monastery tips.",
+      "de": "Armenien e-Visum und Visa on Arrival Bestimmungen, GG Taxi-App und Reisetipps Kloster Chor Virap.",
+      "ru": "Правила въезда в Армению, виза по прибытии, приложение GG и путеводитель по монастырю Хор Вирап.",
+      "es": "Requisitos de visa electrónica y a la llegada para Armenia, app de taxi GG y guía de Khor Virap."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

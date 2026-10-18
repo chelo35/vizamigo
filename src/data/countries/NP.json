@@ -1,0 +1,433 @@
+{
+  "iso2": "NP",
+  "names": {
+    "tr": "Nepal",
+    "en": "Nepal",
+    "de": "Nepal",
+    "ru": "Непал",
+    "es": "Nepal"
+  },
+  "capital": {
+    "value": "Katmandu",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kathmandu.gov.np",
+        "tier": 1,
+        "title": "Kathmandu Metropolitan City Official Portal"
+      }
+    ],
+    "evidence_quote": "Kathmandu is the capital and largest metropolis of the Federal Democratic Republic of Nepal",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "NPR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nrb.org.np",
+        "tier": 1,
+        "title": "Nepal Rastra Bank"
+      }
+    ],
+    "evidence_quote": "The Nepalese Rupee (NPR) is the official currency of Nepal, pegged to the Indian Rupee",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5:45 (NPT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nepal.gov.np",
+        "tier": 1,
+        "title": "Government of Nepal National Portal"
+      }
+    ],
+    "evidence_quote": "Nepal observes Nepal Standard Time UTC+5:45 year-round based on Mount Gauri Sankar",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nea.org.np",
+          "tier": 1,
+          "title": "Nepal Electricity Authority (NEA)"
+        }
+      ],
+      "evidence_quote": "Standard domestic electrical supply in Nepal is 230V alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nea.org.np",
+          "tier": 1,
+          "title": "Nepal Electricity Authority"
+        }
+      ],
+      "evidence_quote": "Grid alternating frequency is maintained at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Nepal utilizes Europlug Type C and round-pin Indian Type D and Type M plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "100",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nepalpolice.gov.np",
+          "tier": 1,
+          "title": "Nepal Police"
+        }
+      ],
+      "evidence_quote": "Dial 100 for emergency police assistance throughout Nepal",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mohp.gov.np",
+          "tier": 1,
+          "title": "Ministry of Health and Population of Nepal"
+        }
+      ],
+      "evidence_quote": "Call 102 for emergency medical response and Red Cross ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nepalpolice.gov.np",
+          "tier": 1,
+          "title": "Nepal Police Emergency Management"
+        }
+      ],
+      "evidence_quote": "Dial 101 for municipal fire brigade dispatch in Nepal",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "100",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.nepalpolice.gov.np",
+          "tier": 1,
+          "title": "Nepal Police"
+        }
+      ],
+      "evidence_quote": "100 acts as the national primary emergency dispatch center",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1144",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nepalpolice.gov.np/departments/tourist-police/",
+          "tier": 1,
+          "title": "Tourist Police Nepal"
+        }
+      ],
+      "evidence_quote": "Tourist Police specialized toll-free hotline 1144 provides 24/7 trekking rescue and assistance",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/nepal",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Nepal genelinde güvenlik ortamı huzurludur; yüksek irtifa dağcılığı ve muson dönemi heyelanlarına dikkat edilmelidir.",
+      "en": "Exercise normal precautions; prepare adequately for high-altitude sickness (AMS) on Himalayan treks.",
+      "de": "In Nepal gelten normale Vorsichtsmaßnahmen; Höhenkrankheit (AMS) bei Trekkingtouren beachten.",
+      "ru": "В Непале действует нормальный уровень безопасности; соблюдайте правила акклиматизации в Гималаях.",
+      "es": "Aplican precauciones normales de viaje; tome precauciones contra el mal de altura en los Himalayas."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "high",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 22.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/nepal",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Nepal measure 22.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 56.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/nepal",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Nepal reach 56.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Ncell and Nepal Telecom (Namaste) offer tourist SIM and eSIM cards at Tribhuvan International Airport; bring passport photos. Mandatory TIMS card and licensed guide required for mountain trekking.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ntb.gov.np",
+          "tier": 1,
+          "title": "Nepal Tourism Board"
+        }
+      ],
+      "evidence_quote": "Solo trekking regulations require a licensed trekking guide and TIMS registration permit",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Pathao / InDrive",
+      "category": "taxi",
+      "popular": true,
+      "description": "Indispensable ride-hailing apps for motorbike and car taxis navigating Kathmandu traffic."
+    },
+    {
+      "name": "Foodmandu",
+      "category": "food",
+      "popular": true,
+      "description": "Nepal's premier food delivery service operating in Kathmandu, Lalitpur, and Pokhara."
+    },
+    {
+      "name": "eSewa / Khalti",
+      "category": "payments",
+      "popular": true,
+      "description": "Widely used digital wallets for paying park fees, domestic bus tickets, and shop purchases."
+    },
+    {
+      "name": "Maps.me",
+      "category": "maps",
+      "popular": true,
+      "description": "Vital offline mapping app with detailed topographic Himalayan trekking trails."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Türk vatandaşları Katmandu Tribhuvan Havalimanı'nda Kapıda Vize (VoA) alabilir (15 gün 30$, 30 gün 50$, 90 gün 125$).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.immigration.gov.np",
+        "tier": 1,
+        "title": "Department of Immigration Nepal"
+      }
+    },
+    "us": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "US citizens can obtain a Visa on Arrival at Tribhuvan Airport (15/30/90 days) or apply online beforehand.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.immigration.gov.np",
+        "tier": 1,
+        "title": "Department of Immigration Nepal"
+      }
+    },
+    "de": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "German and EU citizens receive Visa on Arrival at Kathmandu airport (15/30/90 days with valid passport).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.immigration.gov.np",
+        "tier": 1,
+        "title": "Department of Immigration Nepal"
+      }
+    },
+    "gb": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "British passport holders are eligible for Visa on Arrival at Tribhuvan Airport for 15, 30, or 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/nepal/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Граждане РФ получают визу по прибытии в аэропорту Катманду на срок 15, 30 или 90 дней.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.immigration.gov.np",
+        "tier": 1,
+        "title": "Департамент иммиграции Непала"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Always walk clockwise around stupas and mani stones",
+        "description": "In Buddhist and Hindu tradition, always circumambulate chortens, stupas (Boudhanath), and prayer wheels clockwise."
+      },
+      {
+        "title": "Greet with 'Namaste' with hands together",
+        "description": "Place palms together at chest level and bow slightly; it conveys deep spiritual respect."
+      },
+      {
+        "title": "Obtain helicopter evacuation insurance for trekking",
+        "description": "Always secure travel insurance that covers emergency high-altitude helicopter rescue up to 6,000 meters."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't touch anyone's head or point your feet",
+        "description": "The head is sacred and feet are considered unclean; never stretch feet towards shrines, monks, or elders."
+      },
+      {
+        "title": "Don't trek without a licensed guide",
+        "description": "Nepalese regulations mandate hiring a licensed guide for mountain trekking to prevent solo accidents."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in tourist restaurants; tipping trekking guides and porters at the end of a mountain expedition is customary and expected."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Everest Dağı Zirvesi ve Himalaya Sıradağları",
+        "license": "CC BY-SA 2.5",
+        "author": "Luca Galuzzi (Lucag)",
+        "source_url": "/images/countries/np-480.webp",
+        "attribution_text": "Mount Everest north face summit and Himalayan mountain range. Luca Galuzzi, CC BY-SA 2.5.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Everest Dağı Zirvesi ve Himalaya Sıradağları, Nepal",
+          "en": "Mount Everest Summit & Himalayan Range, Nepal",
+          "de": "Mount Everest Gipfel & Himalaya-Hauptkamm, Nepal",
+          "ru": "Вершина горы Эверест и Гималайский хребет, Непал",
+          "es": "Cumbre del Monte Everest y Cordillera del Himalaya, Nepal"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "nepal",
+      "en": "nepal",
+      "de": "nepal",
+      "ru": "nepal",
+      "es": "nepal"
+    },
+    "title": {
+      "tr": "Nepal Vize Rehberi, Kapıda Vize (VoA) ve Everest Gezisi | Vizamigo",
+      "en": "Nepal Visa Guide, Visa on Arrival & Mount Everest Travel | Vizamigo",
+      "de": "Nepal Visum-Leitfaden, Visa on Arrival & Mount Everest Reisen | Vizamigo",
+      "ru": "Виза в Непал, виза по прибытии и треккинг к Эвересту | Vizamigo",
+      "es": "Guía de Visa de Nepal, Visa a la Llegada y Viajes al Everest | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Nepal kapıda vize (VoA) ücretleri, UTC+5:45 saat dilimi, rehberli trekking kuralları, Pathao taksi ve Everest gezi rehberi.",
+      "en": "Nepal Visa on Arrival fees, unique UTC+5:45 timezone, mandatory trekking guide rules, Pathao app, and Everest tips.",
+      "de": "Nepal Visa on Arrival Gebühren, UTC+5:45 Zeitzone, Trekking-Guide-Pflicht und Mount Everest Reisetipps.",
+      "ru": "Правила визы по прибытии в Непал, часовой пояс UTC+5:45, правила треккинга и путеводитель к Эвересту.",
+      "es": "Requisitos de Visa a la Llegada en Nepal, zona horaria UTC+5:45, reglas de trekking obligatorio y guía del Everest."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

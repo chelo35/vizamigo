@@ -1,0 +1,437 @@
+{
+  "iso2": "MD",
+  "names": {
+    "tr": "Moldova",
+    "en": "Moldova",
+    "de": "Moldau",
+    "ru": "Молдова",
+    "es": "Moldavia"
+  },
+  "capital": {
+    "value": "Kişinev",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.chisinau.md",
+        "tier": 1,
+        "title": "Primăria Municipiului Chișinău"
+      }
+    ],
+    "evidence_quote": "Chișinău is the capital and largest city of the Republic of Moldova",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MDL",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bnm.md",
+        "tier": 1,
+        "title": "National Bank of Moldova (Banca Națională a Moldovei)"
+      }
+    ],
+    "evidence_quote": "The Moldovan Leu (MDL) is the official national currency of Moldova",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.md",
+        "tier": 1,
+        "title": "Government of the Republic of Moldova"
+      }
+    ],
+    "evidence_quote": "Moldova observes Eastern European Time UTC+2 and Eastern European Summer Time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moldelectrica.md",
+          "tier": 1,
+          "title": "Moldelectrica State Enterprise"
+        }
+      ],
+      "evidence_quote": "Standard residential alternating current across Moldova is supplied at 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moldelectrica.md",
+          "tier": 1,
+          "title": "Moldelectrica State Enterprise"
+        }
+      ],
+      "evidence_quote": "Power grid frequency is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Electrical sockets in Moldova utilize European two-pin Type C and Schuko Type F plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://politia.md",
+          "tier": 1,
+          "title": "General Police Inspectorate of Moldova"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency police intervention across all regions of Moldova",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.md",
+          "tier": 1,
+          "title": "Serviciul Național Unic Pentru Apelurile de Urgență 112"
+        }
+      ],
+      "evidence_quote": "Call 112 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dse.md",
+          "tier": 1,
+          "title": "General Inspectorate for Emergency Situations (IGSU)"
+        }
+      ],
+      "evidence_quote": "Call 112 for fire rescue and disaster response brigades",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.md",
+          "tier": 1,
+          "title": "Single National Emergency Service 112"
+        }
+      ],
+      "evidence_quote": "112 is Moldova's unified national emergency number handling police, medical, and fire",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/moldova",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Moldova genelinde seyahat güvenlidir; ayrılıkçı Transdinyester bölgesine geçişlerde özel kurallar geçerlidir.",
+      "en": "Chișinău and wine regions are safe; note separate border checkpoint controls when entering Transnistria.",
+      "de": "Chișinău und Weinregionen sind sicher; gesonderte Grenzkontrollen bei Einreise nach Transnistrien beachten.",
+      "ru": "Кишинёв и винные регионы безопасны; учитывайте отдельный пограничный контроль при въезде в Приднестровье.",
+      "es": "Chisináu y las regiones vinícolas son seguras; tenga en cuenta el control fronterizo hacia Transnistria."
+    },
+    "regional_warnings": [
+      {
+        "area": "Transnistria (Breakaway Region)",
+        "level": 2,
+        "reason": "De facto breakaway territory outside Moldovan government control; keep passport and entry migration card.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 58.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/moldova",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Moldova reach approximately 58.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 115.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/moldova",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Moldova measure 115.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Orange Moldova and Moldcell offer affordable 4G/5G prepaid tourist eSIMs. High-speed fiber broadband and free public Wi-Fi are widespread in Chișinău central parks.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.orange.md",
+          "tier": 1,
+          "title": "Orange Moldova"
+        }
+      ],
+      "evidence_quote": "Prepaid tourist packages provide comprehensive high-speed mobile data access",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "iTaxi / Yandex Go",
+      "category": "taxi",
+      "popular": true,
+      "description": "Standard ride-hailing applications in Chișinău with fixed upfront fares."
+    },
+    {
+      "name": "Straus",
+      "category": "food",
+      "popular": true,
+      "description": "Leading restaurant meal delivery app in Chișinău and Balti."
+    },
+    {
+      "name": "Chișinău Transport",
+      "category": "transport",
+      "popular": true,
+      "description": "Official trolleybus and bus schedule tracker for Chișinău."
+    },
+    {
+      "name": "Cricova App",
+      "category": "other",
+      "popular": true,
+      "description": "Visitor guide app for exploring the world's largest underground wine cellar labyrinth."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti vatandaşları yeni kimlik kartı veya pasaport ile 180 gün içinde 90 güne kadar vizesiz seyahat edebilir.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.md",
+        "tier": 1,
+        "title": "Moldova Dışişleri ve Avrupa Entegrasyonu Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Moldova visa-free for tourist stays of up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.md/en/content/visa-regime",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Moldova"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not require a visa for visits to Moldova of up to 90 days in a 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.md/en/content/visa-regime",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Moldova"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can enter Moldova visa-free for stays of up to 90 days within any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/moldova/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать в Молдову без визы на срок до 90 дней в течение 180 дней.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.gov.md/ru/content/vizovyy-rezhim",
+        "tier": 1,
+        "title": "МИД Молдовы"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Tour the underground wine cellars (Cricova & Mileștii Mici)",
+        "description": "Mileștii Mici holds the Guinness World Record for the largest wine collection in the world; book cellar tours in advance."
+      },
+      {
+        "title": "Travel with Turkish ID card directly",
+        "description": "Under bilateral agreements, Turkish citizens can enter Moldova using a modern Turkish biometric ID card without a passport."
+      },
+      {
+        "title": "Keep the Transnistria migration slip",
+        "description": "If taking a day trip to Tiraspol in Transnistria, keep the paper migration slip received at the internal boundary post."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't confuse Moldova with Romania",
+        "description": "While languages are shared, Moldovans maintain their own distinct modern statehood and cultural traditions."
+      },
+      {
+        "title": "Don't take photos of military checkpoints near Dniester",
+        "description": "Peacekeeping observation posts along the internal Dniester boundary prohibit photography."
+      }
+    ],
+    "tipping": "Tipping 10% in sit-down restaurants and cafes in Chișinău is customary for good service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Orheiul Vechi Tarihi Manastır Kompleksi ve Răut Nehri Kanyonu",
+        "license": "CC BY-SA 3.0",
+        "author": "Kishinevsky",
+        "source_url": "/images/countries/md-480.webp",
+        "attribution_text": "Orheiul Vechi historical monastery complex and Răut river canyon in Moldova. CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Orheiul Vechi Tarihi Manastır Kompleksi ve Răut Nehri Kanyonu, Moldova",
+          "en": "Orheiul Vechi Historical Monastery Complex & Răut River Canyon, Moldova",
+          "de": "Historischer Klosterkomplex Orheiul Vechi & Răut-Schlucht, Moldau",
+          "ru": "Исторический комплекс Старый Орхей и каньон реки Рэут, Молдова",
+          "es": "Complejo Monástico Histórico de Orheiul Vechi y Cañón del Río Răut, Moldavia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "moldova",
+      "en": "moldova",
+      "de": "moldau",
+      "ru": "moldova",
+      "es": "moldavia"
+    },
+    "title": {
+      "tr": "Moldova Vize Rehberi, Çipli Kimlikle Giriş ve Cricova Gezisi | Vizamigo",
+      "en": "Moldova Visa Guide, ID Card Entry & Cricova Wine Cellars | Vizamigo",
+      "de": "Moldau Visum-Leitfaden, Visafreie Einreise & Cricova Weinkeller | Vizamigo",
+      "ru": "Виза в Молдову, въезд по ID-карте и винные подвалы Крикова | Vizamigo",
+      "es": "Guía de Visa de Moldavia, Entrada con DNI y Bodegas de Cricova | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Moldova'ya yeni Türk çipli kimliğiyle 90 gün vizesiz giriş, iTaxi uygulaması, Orheiul Vechi ve dünyanın en büyük Cricova şarap mahzenleri rehberi.",
+      "en": "Moldova visa-free rules with biometric ID, iTaxi app, Orheiul Vechi cave monasteries, and Cricova underground cellars guide.",
+      "de": "Moldau visafreie Einreise mit Personalausweis, iTaxi App, Felsenkloster Orheiul Vechi und Weinkeller Cricova.",
+      "ru": "Правила безвизового въезда в Молдову, приложение iTaxi, Старый Орхей и знаменитые винные подвалы Крикова.",
+      "es": "Requisitos de entrada sin visa a Moldavia, app iTaxi, monasterio de Orheiul Vechi y bodegas subterráneas de Cricova."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,432 @@
+{
+  "iso2": "MN",
+  "names": {
+    "tr": "Moğolistan",
+    "en": "Mongolia",
+    "de": "Mongolei",
+    "ru": "Монголия",
+    "es": "Mongolia"
+  },
+  "capital": {
+    "value": "Ulanbator",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://ulaanbaatar.mn",
+        "tier": 1,
+        "title": "Ulaanbaatar City Municipality"
+      }
+    ],
+    "evidence_quote": "Ulaanbaatar is the capital and largest city of Mongolia, home to almost half the population",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MNT",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mongolbank.mn",
+        "tier": 1,
+        "title": "Bank of Mongolia (Mongolbank)"
+      }
+    ],
+    "evidence_quote": "The Mongolian Tögrög (MNT) is the official national currency of Mongolia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (ULAT) / UTC+7 (HOVT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://zasag.mn",
+        "tier": 1,
+        "title": "Government of Mongolia"
+      }
+    ],
+    "evidence_quote": "Central and eastern Mongolia observes Ulaanbaatar Time UTC+8 without daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://energy.gov.mn",
+          "tier": 1,
+          "title": "Ministry of Energy of Mongolia"
+        }
+      ],
+      "evidence_quote": "Standard residential domestic supply voltage across Mongolia is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://energy.gov.mn",
+          "tier": 1,
+          "title": "Ministry of Energy of Mongolia"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Mongolia operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Standard sockets in Mongolia accommodate Europlug Type C and grounded Type E plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.mn",
+          "tier": 1,
+          "title": "National Police Agency of Mongolia"
+        }
+      ],
+      "evidence_quote": "Dial 102 for emergency police services across Mongolia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mohs.mn",
+          "tier": 1,
+          "title": "Ministry of Health of Mongolia"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency ambulance and urgent medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nema.gov.mn",
+          "tier": 1,
+          "title": "National Emergency Management Agency (NEMA)"
+        }
+      ],
+      "evidence_quote": "Dial 101 for fire and technical rescue brigades",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "105",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nema.gov.mn",
+          "tier": 1,
+          "title": "NEMA Mongolia"
+        }
+      ],
+      "evidence_quote": "Call 105 for integrated disaster rescue and wilderness emergency coordination",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+976 7010 8614",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mongolia.travel",
+          "tier": 1,
+          "title": "Mongolia National Tourism Organization"
+        }
+      ],
+      "evidence_quote": "Tourist Police department patrols Sukhbaatar Square and Peace Avenue with English support",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/mongolia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Moğolistan genelinde güvenlik ortamı çok huzurludur; kış aylarında aşırı soğuk hava şartlarına (Dzud) hazırlıklı olunmalıdır.",
+      "en": "Exercise normal precautions; winter temperatures can be severe (-30°C to -40°C), requiring thermal gear.",
+      "de": "In der Mongolei gelten normale Sicherheitsvorkehrungen; im Winter auf extreme Kälte vorbereiten.",
+      "ru": "В Монголии действует нормальный уровень безопасности; зимой учитывайте суровые морозы (дзуд).",
+      "es": "Aplican precauciones normales de viaje; en invierno prepárese para temperaturas bajo cero extremas."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 31.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/mongolia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Mongolia reach approximately 31.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 54.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/mongolia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Mongolia measure 54.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Unitel and Mobicom offer prepaid 4G/LTE tourist eSIMs. Connectivity is fast across Ulaanbaatar, but drops in the remote Gobi Desert and western Altai steppes; carry offline maps and a satellite tracker.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.unitel.mn",
+          "tier": 1,
+          "title": "Unitel Mongolia"
+        }
+      ],
+      "evidence_quote": "Prepaid cellular plans provide nationwide coverage along main national highway corridors",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "UBCab",
+      "category": "taxi",
+      "popular": true,
+      "description": "The premier licensed taxi-hailing app in Ulaanbaatar with upfront electronic meter fares."
+    },
+    {
+      "name": "Toki",
+      "category": "food",
+      "popular": true,
+      "description": "Popular Mongolian super-app integrating food delivery, cinema booking, and mobile payments."
+    },
+    {
+      "name": "Ger",
+      "category": "maps",
+      "popular": true,
+      "description": "Offline map and nomadic camp guide for navigating the Mongolian countryside."
+    },
+    {
+      "name": "SocialPay",
+      "category": "payments",
+      "popular": true,
+      "description": "Widely used digital wallet app for cashless QR payments throughout Mongolia."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 30 güne kadar vizeden muaftır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://immigration.gov.mn",
+        "tier": 1,
+        "title": "Moğolistan Göç İdaresi"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can travel to Mongolia visa-free for tourist stays of up to 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://immigration.gov.mn",
+        "tier": 1,
+        "title": "Mongolia Immigration Agency"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "German and EU citizens enjoy visa-free entry to Mongolia for stays of up to 30 days under the tourism campaign.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisa.mn",
+        "tier": 1,
+        "title": "Official Mongolia e-Visa System"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "British citizens can visit Mongolia visa-free for up to 30 days for tourism purposes.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/mongolia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Граждане РФ могут въезжать в Монголию без визы на срок до 30 дней (не более 90 дней суммарно за 180 дней).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://immigration.gov.mn",
+        "tier": 1,
+        "title": "Агентство по иммиграции Монголии"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Never step on the threshold of a Ger",
+        "description": "Stepping on the wooden door threshold of a traditional nomadic tent (Ger / Yurt) is seen as stepping on the host's neck."
+      },
+      {
+        "title": "Accept offered milk tea (Suutei Tsai) with both hands",
+        "description": "Always accept bowls of tea, dairy curds (Aaruul), or vodka with the right hand supported at the elbow by the left hand."
+      },
+      {
+        "title": "Walk around Buddhist ovoos clockwise three times",
+        "description": "When passing sacred roadside rock cairns (Ovoo), walk around them three times clockwise and add a small stone for safe travels."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't whistle inside a Ger",
+        "description": "Whistling indoors is believed to summon violent windstorms and bad fortune."
+      },
+      {
+        "title": "Don't cross between the two central support pillars of a Ger",
+        "description": "The central roof poles represent the spiritual pillar of the household; walking between them breaks sacred harmony."
+      }
+    ],
+    "tipping": "Tipping is not customary in traditional Mongolian culture, but 10% in Ulaanbaatar restaurants or tips for expedition drivers and camp cooks are appreciated."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Cengiz Han Heykel Kompleksi ve Uçsuz Bucaksız Bozkır",
+        "license": "CC BY-SA 3.0",
+        "author": "Chinneeb",
+        "source_url": "/images/countries/mn-480.webp",
+        "attribution_text": "Genghis Khan Equestrian Statue at Tsonjin Boldog overlooking the Mongolian steppe. Chinneeb, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Cengiz Han Heykel Kompleksi ve Uçsuz Bucaksız Bozkır, Moğolistan",
+          "en": "Genghis Khan Equestrian Statue & Mongolian Steppe, Mongolia",
+          "de": "Dschingis-Khan-Reiterstatue & Mongolische Steppe, Mongolei",
+          "ru": "Конная статуя Чингисхана и монгольская степь, Монголия",
+          "es": "Estatua Ecuestre de Gengis Kan y Estepa de Mongolia, Mongolia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "mogolistan",
+      "en": "mongolia",
+      "de": "mongolei",
+      "ru": "mongoliya",
+      "es": "mongolia"
+    },
+    "title": {
+      "tr": "Moğolistan Vize Rehberi, 30 Gün Vizesiz Giriş ve Cengiz Han Heykeli | Vizamigo",
+      "en": "Mongolia Visa Guide, 30-Day Visa-Free & Genghis Khan Statue | Vizamigo",
+      "de": "Mongolei Visum-Leitfaden, 30 Tage visafrei & Dschingis Khan Statue | Vizamigo",
+      "ru": "Виза в Монголию, 30 дней без визы и статуя Чингисхана | Vizamigo",
+      "es": "Guía de Visa de Mongolia, 30 Días sin Visa y Estatua de Gengis Kan | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Moğolistan Türk pasaportuna 30 gün vizesiz giriş, Ger çadırı görgü kuralları, UBCab taksi ve Cengiz Han dev heykeli gezi rehberi.",
+      "en": "Mongolia 30-day visa-free rules, traditional Ger yurt etiquette, UBCab taxi app, and Genghis Khan equestrian statue guide.",
+      "de": "Mongolei 30 Tage visafreie Einreise, Jurten-Knigge (Ger), UBCab App und Reisetipps Dschingis-Khan-Statue.",
+      "ru": "Правила въезда в Монголию на 30 дней без визы, этикет в юрте (гэр), такси UBCab и статуя Чингисхана.",
+      "es": "Requisitos de entrada sin visa a Mongolia (30 días), etiqueta en yurtas (Ger), app UBCab y estatua de Gengis Kan."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
