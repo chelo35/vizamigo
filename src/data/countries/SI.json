@@ -1,0 +1,426 @@
+{
+  "iso2": "SI",
+  "names": {
+    "tr": "Slovenya",
+    "en": "Slovenia",
+    "de": "Slowenien",
+    "ru": "Словения",
+    "es": "Eslovenia"
+  },
+  "capital": {
+    "value": "Ljubljana",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ljubljana.si",
+        "tier": 1,
+        "title": "City of Ljubljana Official Portal"
+      }
+    ],
+    "evidence_quote": "Ljubljana is the capital and largest city of the Republic of Slovenia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bsi.si",
+        "tier": 1,
+        "title": "Banka Slovenije (Bank of Slovenia)"
+      }
+    ],
+    "evidence_quote": "The Euro is the legal tender currency of Slovenia, member of the Eurozone",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.si",
+        "tier": 1,
+        "title": "Government of the Republic of Slovenia"
+      }
+    ],
+    "evidence_quote": "Slovenia observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eles.si",
+          "tier": 1,
+          "title": "ELES Electricity Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Slovenian low-voltage power distribution operates at 230V single-phase alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eles.si",
+          "tier": 1,
+          "title": "ELES Electricity Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Nominal electrical grid frequency in Slovenia is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Slovenia utilizes Europlug Type C and grounded Schuko Type F electrical outlets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policija.si",
+          "tier": 1,
+          "title": "Slovenian Police Official Portal"
+        }
+      ],
+      "evidence_quote": "Dial 113 for emergency police intervention across the Republic of Slovenia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/uprava-za-zascito-in-resevanje",
+          "tier": 1,
+          "title": "Administration for Civil Protection and Disaster Relief (URSZR)"
+        }
+      ],
+      "evidence_quote": "Call 112 for emergency medical response and ambulance dispatch in Slovenia",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/uprava-za-zascito-in-resevanje",
+          "tier": 1,
+          "title": "Administration for Civil Protection and Disaster Relief (URSZR)"
+        }
+      ],
+      "evidence_quote": "Call 112 for emergency fire and rescue services throughout Slovenia",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/uprava-za-zascito-in-resevanje",
+          "tier": 1,
+          "title": "URSZR Emergency Management"
+        }
+      ],
+      "evidence_quote": "112 is the universal European emergency phone number in Slovenia operating 24/7",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/slovenia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Slovenya dünyanın en güvenli ve huzurlu ülkeleri arasındadır; standart tedbirler yeterlidir.",
+      "en": "Slovenia ranks among the safest destinations globally; exercise normal travel precautions.",
+      "de": "Slowenien zählt zu den sichersten Reisezielen weltweit; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Словения является одной из самых безопасных стран мира; действуют обычные меры предосторожности.",
+      "es": "Eslovenia se sitúa entre los países más seguros del mundo; precauciones de viaje habituales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 74.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/slovenia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Slovenia reach approximately 74.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 112.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/slovenia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Slovenia measure 112.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "EU 'Roam Like at Home' regulations apply; EU SIM cards operate with zero roaming surcharges. Telekom Slovenije, A1 Slovenija, and Telemach provide high-speed 5G tourist eSIM packages.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu",
+          "tier": 1,
+          "title": "European Commission Roaming Regulations"
+        }
+      ],
+      "evidence_quote": "EU citizens use domestic mobile allowances with no roaming fees in Slovenia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Wolt",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food and grocery delivery application across Ljubljana, Maribor, and Celje."
+    },
+    {
+      "name": "Urbana",
+      "category": "transport",
+      "popular": true,
+      "description": "Ljubljana public transport app for city buses, BicikeLJ bike-sharing, and parking payments."
+    },
+    {
+      "name": "Cammeo / Taxi Metro",
+      "category": "taxi",
+      "popular": true,
+      "description": "Reliable ride-booking apps with flat upfront fares in Ljubljana and major tourist hubs."
+    },
+    {
+      "name": "Promet+",
+      "category": "maps",
+      "popular": true,
+      "description": "Official Slovenian traffic information app showing highway camera feeds, roadworks, and vignette info."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.si/teme/vstop-in-prebivanje",
+        "tier": 1,
+        "title": "Slovenya İçişleri ve Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Slovenia visa-free for tourism or business for up to 90 days within any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.si/en/topics/entry-and-residence",
+        "tier": 1,
+        "title": "Government of Slovenia Entry Portal"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "EU citizens have the right to free movement and can enter Slovenia with a valid national ID card or passport.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.gov.si/en/topics/entry-and-residence",
+        "tier": 1,
+        "title": "Government of Slovenia Entry Portal"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can travel visa-free in Slovenia and the Schengen area for up to 90 days in any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/slovenia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ для въезда в Словению требуется действующая шенгенская виза категории C.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.si/en/topics/entry-and-residence",
+        "tier": 1,
+        "title": "МИД Словении"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Buy an e-Vignette before driving on motorways",
+        "description": "Driving on Slovenian highways without a valid electronic vignette (e-vinjeta) results in heavy automated fines."
+      },
+      {
+        "title": "Respect pristine nature and national parks",
+        "description": "Slovenia is fiercely eco-conscious; littering or wild camping in Triglav National Park is strictly prohibited."
+      },
+      {
+        "title": "Drink the tap water",
+        "description": "Tap water is of supreme Alpine purity across all of Slovenia; drinking fountains are abundant in Ljubljana."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't swim in Lake Bled from non-designated zones",
+        "description": "Swimming is regulated around the island; only swim in designated lido areas to preserve the ecosystem."
+      },
+      {
+        "title": "Don't drive without headlights in daytime",
+        "description": "Daytime running lights or dipped headlights are mandatory at all times on all roads in Slovenia."
+      }
+    ],
+    "tipping": "Tipping is not compulsory; rounding up the bill or leaving 5-10% in sit-down restaurants for good service is customary."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bled Gölü Adası, Meryem Ana Kilisesi ve Julian Alpleri",
+        "license": "CC BY-SA 4.0",
+        "author": "Krzysztof Golik",
+        "source_url": "/images/countries/si-480.webp",
+        "attribution_text": "Lake Bled island church and Julian Alps in Slovenia. Krzysztof Golik, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Bled Gölü Adası, Meryem Ana Kilisesi ve Julian Alpleri, Slovenya",
+          "en": "Lake Bled Island Church & Julian Alps, Slovenia",
+          "de": "Bleder See mit Inselkirche & Julische Alpen, Slowenien",
+          "ru": "Остров на озере Блед, церковь и Юлийские Альпы, Словения",
+          "es": "Isla del Lago Bled, Iglesia y Alpes Julianos, Eslovenia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "slovenya",
+      "en": "slovenia",
+      "de": "slowenien",
+      "ru": "sloveniya",
+      "es": "eslovenia"
+    },
+    "title": {
+      "tr": "Slovenya Vize Rehberi, e-Vinjeta Otoyol Pulu ve Bled Gölü Gezisi | Vizamigo",
+      "en": "Slovenia Visa Guide, e-Vignette Motorway Pass & Lake Bled Travel | Vizamigo",
+      "de": "Slowenien Visum-Leitfaden, E-Vignette & Bleder See Reisen | Vizamigo",
+      "ru": "Шенгенская виза в Словению, электронная виньетка и озеро Блед | Vizamigo",
+      "es": "Guía de Visa de Eslovenia, Viñeta Electrónica y Lago Bled | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Slovenya Schengen vize şartları, yeşil pasaporta vizesiz giriş, otoyol e-vinjeta kuralı, Ljubljana Urbana kartı ve Bled Gölü rehberi.",
+      "en": "Slovenia Schengen entry rules, motorway e-vignette requirements, Urbana transit app, tap water safety, and Lake Bled guide.",
+      "de": "Slowenien Schengen-Visabestimmungen, E-Vignette-Pflicht, Urbana-Nahverkehrsapp und Bleder See Reisetipps.",
+      "ru": "Правила въезда в Словению (Шенген), покупка электронной виньетки, приложение Urbana и озеро Блед.",
+      "es": "Requisitos de visa Schengen para Eslovenia, compra de viñeta electrónica para autopistas y guía de viaje al Lago Bled."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,443 @@
+{
+  "iso2": "UZ",
+  "names": {
+    "tr": "Özbekistan",
+    "en": "Uzbekistan",
+    "de": "Usbekistan",
+    "ru": "Узбекистан",
+    "es": "Uzbekistán"
+  },
+  "capital": {
+    "value": "Taşkent",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.tashkent.uz",
+        "tier": 1,
+        "title": "Tashkent City Administration (Hokimiyat)"
+      }
+    ],
+    "evidence_quote": "Tashkent is the capital and largest metropolis of Uzbekistan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "UZS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbu.uz",
+        "tier": 1,
+        "title": "Central Bank of the Republic of Uzbekistan"
+      }
+    ],
+    "evidence_quote": "The national currency of the Republic of Uzbekistan is the Uzbek Sum (UZS)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5 (UZT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.uz",
+        "tier": 1,
+        "title": "Government Portal of the Republic of Uzbekistan"
+      }
+    ],
+    "evidence_quote": "Uzbekistan operates year-round on Uzbekistan Time UTC+5 without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minenergy.uz",
+          "tier": 1,
+          "title": "Ministry of Energy of Uzbekistan"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity in Uzbekistan is supplied at 220V 50Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minenergy.uz",
+          "tier": 1,
+          "title": "Ministry of Energy of Uzbekistan"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Uzbekistan operates stably at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Uzbekistan standard electrical outlets utilize European Type C and Type F plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iiv.uz",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of Uzbekistan"
+        }
+      ],
+      "evidence_quote": "Dial 102 for emergency police assistance throughout Uzbekistan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ssv.uz",
+          "tier": 1,
+          "title": "Ministry of Health of Uzbekistan"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency medical and ambulance dispatch services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fvv.uz",
+          "tier": 1,
+          "title": "Ministry of Emergency Situations of Uzbekistan"
+        }
+      ],
+      "evidence_quote": "Call 101 for fire emergency dispatch across all regions of Uzbekistan",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fvv.uz",
+          "tier": 1,
+          "title": "Ministry of Emergency Situations of Uzbekistan"
+        }
+      ],
+      "evidence_quote": "Unified emergency response dispatch 112 is active across major cities in Uzbekistan",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1173",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.motas.uz",
+          "tier": 1,
+          "title": "Uzbekistan Tourism Committee"
+        }
+      ],
+      "evidence_quote": "Tourist police hotline 1173 operates 24/7 in English and Russian for visitor safety",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Özbekistan genelinde güvenlik seviyesi yüksek; olağan seyahat tedbirleri yeterlidir.",
+      "en": "Normal security precautions apply across Uzbekistan; tourism infrastructure is safe.",
+      "de": "In Usbekistan gelten normale Sicherheitsvorkehrungen; die touristische Infrastruktur ist sicher.",
+      "ru": "В Узбекистане действует нормальный уровень предосторожности, страна безопасна для туризма.",
+      "es": "Aplican precauciones normales de seguridad en Uzbekistán; el país es seguro para el turismo."
+    },
+    "regional_warnings": [
+      {
+        "area": "Termez & Surkhandarya (Afghan Border)",
+        "level": 2,
+        "reason": "Border zone requires approved border permits and strictly designated border crossings.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 28.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/uzbekistan",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Uzbekistan measure approximately 28.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 62.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/uzbekistan",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Fixed broadband median download speeds in Uzbekistan reach approximately 62.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Tourist registration (e-Mehmon) is required within 3 business days; hotels handle this automatically, keep the paper slips until border departure. Ucell, Beeline, and Mobiuz offer tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://emehmon.uz",
+          "tier": 1,
+          "title": "e-Mehmon Electronic Registration System"
+        }
+      ],
+      "evidence_quote": "Foreign citizens must obtain registration within 72 hours of arrival in Uzbekistan",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yandex Go",
+      "category": "taxi",
+      "popular": true,
+      "description": "Dominant ride-hailing app in Tashkent, Samarkand, and Bukhara with transparent upfront fares."
+    },
+    {
+      "name": "Express24",
+      "category": "food",
+      "popular": true,
+      "description": "Leading local food delivery app with extensive English, Uzbek, and Russian restaurant menus."
+    },
+    {
+      "name": "Click / Payme",
+      "category": "payments",
+      "popular": true,
+      "description": "Everyday QR mobile payment solutions across Uzbekistan stores, cafes, and bazaars."
+    },
+    {
+      "name": "2GIS",
+      "category": "maps",
+      "popular": true,
+      "description": "High-detail offline city map and public transport navigator for Tashkent and major Uzbek cities."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 30 güne kadar vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.uz",
+        "tier": 1,
+        "title": "Özbekistan Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "eVisa",
+      "duration_days": 30,
+      "conditions": "US citizens can obtain an electronic visa (e-Visa) online or qualify for visa-free entry depending on bilateral rules.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://e-visa.gov.uz",
+        "tier": 1,
+        "title": "Official Uzbekistan e-Visa Portal"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "German citizens enjoy visa-free entry to Uzbekistan for tourist stays of up to 30 days.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.uz",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Uzbekistan"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "British citizens do not require a visa for visits of up to 30 days in Uzbekistan.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.uz",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Uzbekistan"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 60,
+      "conditions": "Граждане Российской Федерации въезжают в Узбекистан без визы на срок до 60 дней.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://mfa.uz",
+        "tier": 1,
+        "title": "МИД Узбекистана"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect bread (Non)",
+        "description": "Bread is sacred in Uzbek culture; never place flatbread (lepyoshka/non) upside down or throw it away."
+      },
+      {
+        "title": "Keep hotel registration slips (e-Mehmon)",
+        "description": "Hotels will issue small registration coupons; keep all of them safely in your passport until exit customs."
+      },
+      {
+        "title": "Dress modestly at historical madrassas and mosques",
+        "description": "Cover shoulders and knees when visiting working mosques and active shrines in Samarkand and Bukhara."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't discard registration receipts",
+        "description": "Border guards may ask for your hotel registration slips; losing them can result in administrative delays."
+      },
+      {
+        "title": "Don't photograph security infrastructure",
+        "description": "Avoid photographing military checkpoints, border zones, or airport control areas without explicit clearance."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in modern Tashkent restaurants; traditional chaikhanas often include a 10-15% service charge."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Semerkant Registan Meydanı ve Tarihi Medreseler (UNESCO)",
+        "license": "Unsplash License",
+        "author": "Ozodbek Ergashev",
+        "source_url": "/images/countries/uz-480.webp",
+        "attribution_text": "Registan Square and ancient madrasahs in Samarkand, Uzbekistan. Verified photo.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Semerkant Registan Meydanı ve Tarihi Medreseler, Özbekistan",
+          "en": "Registan Square & Ancient Madrasahs, Samarkand, Uzbekistan",
+          "de": "Registan-Platz & historische Medresen, Samarkand, Usbekistan",
+          "ru": "Площадь Регистан и древние медресе Самарканда, Узбекистан",
+          "es": "Plaza de Registán y Madrazas Históricas, Samarcanda, Uzbekistán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "ozbekistan",
+      "en": "uzbekistan",
+      "de": "usbekistan",
+      "ru": "uzbekistan",
+      "es": "uzbekistan"
+    },
+    "title": {
+      "tr": "Özbekistan Vize Rehberi, e-Mehmon Kaydı ve Semerkant Gezisi | Vizamigo",
+      "en": "Uzbekistan Visa Guide, e-Mehmon Registration & Samarkand Travel | Vizamigo",
+      "de": "Usbekistan Visum-Leitfaden, e-Mehmon & Samarkand Reisen | Vizamigo",
+      "ru": "Виза в Узбекистан, регистрация e-Mehmon и Самарканд | Vizamigo",
+      "es": "Guía de Visa de Uzbekistán, Registro e-Mehmon y Samarcanda | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Özbekistan Türk pasaportuna 30 gün vizesiz giriş, otel e-Mehmon kaydı, Yandex Go taksi ve Semerkant Registan gezi rehberi.",
+      "en": "Uzbekistan visa-free travel guide, e-Mehmon registration slips, Yandex Go taxi, 220V Type C/F plugs, and Samarkand tips.",
+      "de": "Usbekistan Visumbestimmungen, e-Mehmon-Registrierung, Yandex Go App, 220V Steckertypen C/F und Samarkand-Tipps.",
+      "ru": "Правила въезда в Узбекистан, регистрация e-Mehmon, такси Yandex Go и путеводитель по Самарканду.",
+      "es": "Requisitos de entrada a Uzbekistán, registro hotelero e-Mehmon, app Yandex Go y guía de Samarcanda."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

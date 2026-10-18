@@ -1,0 +1,426 @@
+{
+  "iso2": "SK",
+  "names": {
+    "tr": "Slovakya",
+    "en": "Slovakia",
+    "de": "Slowakei",
+    "ru": "Словакия",
+    "es": "Eslovaquia"
+  },
+  "capital": {
+    "value": "Bratislava",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://bratislava.sk",
+        "tier": 1,
+        "title": "City of Bratislava Official Portal"
+      }
+    ],
+    "evidence_quote": "Bratislava is the capital and largest city of the Slovak Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nbs.sk",
+        "tier": 1,
+        "title": "Národná banka Slovenska (National Bank of Slovakia)"
+      }
+    ],
+    "evidence_quote": "The official legal currency of Slovakia is the Euro (EUR)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vlada.gov.sk",
+        "tier": 1,
+        "title": "Government of the Slovak Republic"
+      }
+    ],
+    "evidence_quote": "Slovakia observes Central European Time UTC+1 and daylight saving time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sepsas.sk",
+          "tier": 1,
+          "title": "Slovenská elektrizačná prenosová sústava (SEPS)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase voltage in Slovakia is 230V alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sepsas.sk",
+          "tier": 1,
+          "title": "SEPS Electricity Transmission System"
+        }
+      ],
+      "evidence_quote": "Transmission grid frequency operates continuously at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Slovakia utilizes Europlug Type C and French-style Type E grounded sockets with an earthing pin",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "158",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minv.sk",
+          "tier": 1,
+          "title": "Ministry of Interior of the Slovak Republic"
+        }
+      ],
+      "evidence_quote": "Dial 158 for emergency police intervention across the Slovak Republic",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "155",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.health.gov.sk",
+          "tier": 1,
+          "title": "Ministry of Health of the Slovak Republic"
+        }
+      ],
+      "evidence_quote": "Dial 155 for emergency medical rescue and ambulance services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "150",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minv.sk",
+          "tier": 1,
+          "title": "Ministry of Interior of the Slovak Republic"
+        }
+      ],
+      "evidence_quote": "Dial 150 for fire brigades and technical rescue across Slovakia",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minv.sk",
+          "tier": 1,
+          "title": "Ministry of Interior Emergency Coordination"
+        }
+      ],
+      "evidence_quote": "Unified European emergency number 112 connects callers to all Slovak rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/slovakia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Slovakya genelinde güvenlik seviyesi yüksektir; standart seyahat önlemleri yeterlidir.",
+      "en": "Exercise normal precautions in Slovakia; security situation across cities and mountain resorts is stable.",
+      "de": "In der Slowakei gelten normale Vorsichtsmaßnahmen; Städte und Wintersportgebiete sind sicher.",
+      "ru": "В Словакии действует нормальный уровень безопасности; города и горные курорты стабильны.",
+      "es": "Aplican precauciones normales de seguridad en Eslovaquia; ciudades y centros de esquí son seguros."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 65.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/slovakia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Slovakia reach approximately 65.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 105.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/slovakia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Slovakia measure 105.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "EU Roam Like at Home applies with no roaming charges for EU SIM cards. Slovak Telekom, Orange Slovensko, and O2 offer prepaid 5G eSIMs with quick identity verification.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu",
+          "tier": 1,
+          "title": "European Commission Roaming Regulations"
+        }
+      ],
+      "evidence_quote": "EU regulations mandate zero surcharge roaming across Slovak mobile networks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "popular": true,
+      "description": "Most widely used ride-hailing and e-scooter application in Bratislava and Košice."
+    },
+    {
+      "name": "Wolt / Bistro.sk",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food delivery platforms with fast coverage across Slovak cities."
+    },
+    {
+      "name": "IDS BK",
+      "category": "transport",
+      "popular": true,
+      "description": "Official Bratislava integrated transit ticketing app for city buses, trams, and regional trains."
+    },
+    {
+      "name": "eznamka",
+      "category": "transport",
+      "popular": true,
+      "description": "Official electronic motorway vignette portal and mobile app for driving on Slovak motorways."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mzv.sk",
+        "tier": 1,
+        "title": "Slovakya Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Slovakia visa-free for tourism or business for up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mzv.sk/en/web/en/consular-info/visa",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Slovakia"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "EU citizens enjoy freedom of movement and require only a valid national ID card or passport to enter Slovakia.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.mzv.sk/en/web/en/consular-info/visa",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Slovakia"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Slovakia and the Schengen zone visa-free for up to 90 days within any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/slovakia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ для посещения Словакии требуется краткосрочная шенгенская виза категории C.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.mzv.sk/en/web/en/consular-info/visa",
+        "tier": 1,
+        "title": "МИД Словакии"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Buy an electronic motorway vignette (eznamka)",
+        "description": "Before driving on Slovak highways (Diaľnica), register your license plate on eznamka.sk to prevent heavy fines."
+      },
+      {
+        "title": "Validate public transport tickets immediately",
+        "description": "Paper transit tickets must be validated inside the bus or tram stamping machine right upon boarding."
+      },
+      {
+        "title": "Check mountain rescue insurance in High Tatras",
+        "description": "Mountain rescue operations (HZS) are not covered by state healthcare; obtain basic mountain sports insurance before hiking."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't confuse Slovakia with Slovenia",
+        "description": "Locals are proud of Slovak heritage, language, and culture; confusing the two distinct Slavic nations can be seen as careless."
+      },
+      {
+        "title": "Don't drive with any alcohol in your blood",
+        "description": "Slovakia enforces a strict zero-tolerance policy (0.00‰ BAC) for drinking and driving with severe criminal penalties."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in sit-down restaurants in Bratislava when service is not explicitly included in the total."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Yüksek Tatralar Zirvesi ve Štrbské Pleso Gölü",
+        "license": "CC BY-SA 3.0",
+        "author": "Templár SK",
+        "source_url": "/images/countries/sk-480.webp",
+        "attribution_text": "High Tatras peaks and glacial Lake Štrbské Pleso in Slovakia. Templár SK, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Yüksek Tatralar Zirvesi ve Štrbské Pleso Gölü, Slovakya",
+          "en": "High Tatras Peaks & Lake Štrbské Pleso, Slovakia",
+          "de": "Hohe Tatra Gipfel & See Štrbské Pleso, Slowakei",
+          "ru": "Пики Высоких Татр и озеро Штрбске-Плесо, Словакия",
+          "es": "Picos de los Altos Tatras y Lago Štrbské Pleso, Eslovaquia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "slovakya",
+      "en": "slovakia",
+      "de": "slowakei",
+      "ru": "slovakiya",
+      "es": "eslovaquia"
+    },
+    "title": {
+      "tr": "Slovakya Vize Rehberi, eznamka Otoyol Pulu ve Yüksek Tatralar Gezisi | Vizamigo",
+      "en": "Slovakia Visa Guide, eznamka Motorway Pass & High Tatras Travel | Vizamigo",
+      "de": "Slowakei Visum-Leitfaden, eznamka E-Vignette & Hohe Tatra | Vizamigo",
+      "ru": "Шенгенская виза в Словакию, виньетка eznamka и Высокие Татры | Vizamigo",
+      "es": "Guía de Visa de Eslovaquia, Viñeta eznamka y Altos Tatras | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Slovakya Schengen vize şartları, yeşil pasaporta vizesiz giriş, eznamka otoyol pulu, sıfır promil alkol kuralı ve Yüksek Tatralar rehberi.",
+      "en": "Slovakia Schengen entry requirements, eznamka motorway vignette, zero alcohol driving limit, IDS BK app, and High Tatras guide.",
+      "de": "Slowakei Schengen-Visumregeln, eznamka E-Vignette, 0,0-Promille-Grenze im Straßenverkehr und Reisetipps Hohe Tatra.",
+      "ru": "Правила въезда в Словакию (Шенген), электронная виньетка eznamka, нулевой промилле за рулем и курорт Высокие Татры.",
+      "es": "Requisitos de visa Schengen para Eslovaquia, viñeta eznamka para autopistas, tolerancia cero de alcohol y Altos Tatras."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

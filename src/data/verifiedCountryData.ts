@@ -72,6 +72,12 @@ import IS from './countries/IS.json';
 import NZ from './countries/NZ.json';
 import OM from './countries/OM.json';
 import LK from './countries/LK.json';
+import UZ from './countries/UZ.json';
+import KZ from './countries/KZ.json';
+import KH from './countries/KH.json';
+import SI from './countries/SI.json';
+import SK from './countries/SK.json';
+import EE from './countries/EE.json';
 
 export interface VerifiedSource {
   url: string;
@@ -278,6 +284,12 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   NZ: NZ as unknown as VerifiedCountryRecord,
   OM: OM as unknown as VerifiedCountryRecord,
   LK: LK as unknown as VerifiedCountryRecord,
+  UZ: UZ as unknown as VerifiedCountryRecord,
+  KZ: KZ as unknown as VerifiedCountryRecord,
+  KH: KH as unknown as VerifiedCountryRecord,
+  SI: SI as unknown as VerifiedCountryRecord,
+  SK: SK as unknown as VerifiedCountryRecord,
+  EE: EE as unknown as VerifiedCountryRecord,
 };
 
 /**

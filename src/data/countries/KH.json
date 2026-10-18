@@ -1,0 +1,444 @@
+{
+  "iso2": "KH",
+  "names": {
+    "tr": "Kamboçya",
+    "en": "Cambodia",
+    "de": "Kambodscha",
+    "ru": "Камбоджа",
+    "es": "Camboya"
+  },
+  "capital": {
+    "value": "Phnom Penh",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://phnompenh.gov.kh",
+        "tier": 1,
+        "title": "Phnom Penh Capital Hall"
+      }
+    ],
+    "evidence_quote": "Phnom Penh is the capital and most populous city of the Kingdom of Cambodia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "KHR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nbc.gov.kh",
+        "tier": 1,
+        "title": "National Bank of Cambodia"
+      }
+    ],
+    "evidence_quote": "The Cambodian Riel (KHR) is the official currency; US dollars circulate alongside Riel",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+7 (ICT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pressocm.gov.kh",
+        "tier": 1,
+        "title": "Office of the Council of Ministers of Cambodia"
+      }
+    ],
+    "evidence_quote": "Cambodia observes Indochina Time UTC+7 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eac.gov.kh",
+          "tier": 1,
+          "title": "Electricity Authority of Cambodia (EAC)"
+        }
+      ],
+      "evidence_quote": "Cambodia electrical distribution standard provides 230V nominal alternating voltage",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eac.gov.kh",
+          "tier": 1,
+          "title": "Electricity Authority of Cambodia (EAC)"
+        }
+      ],
+      "evidence_quote": "Standard operating transmission and distribution frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "C",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Cambodian wall outlets accommodate Type A, Type C, and British Type G power plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.kh",
+          "tier": 1,
+          "title": "National Police of Cambodia"
+        }
+      ],
+      "evidence_quote": "Dial 117 for national emergency police services across Cambodia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moh.gov.kh",
+          "tier": 1,
+          "title": "Ministry of Health of Cambodia"
+        }
+      ],
+      "evidence_quote": "Call 119 for emergency medical dispatch and public ambulances",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.kh",
+          "tier": 1,
+          "title": "National Police of Cambodia"
+        }
+      ],
+      "evidence_quote": "Dial 118 for municipal fire brigades in Cambodia",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.police.gov.kh",
+          "tier": 1,
+          "title": "National Police of Cambodia"
+        }
+      ],
+      "evidence_quote": "117 serves as the primary emergency contact point for critical incidents",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+855 31 201 2345",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tourismcambodia.com",
+          "tier": 1,
+          "title": "Ministry of Tourism of Cambodia"
+        }
+      ],
+      "evidence_quote": "Tourist Police Department hotline assists foreign visitors in Siem Reap and Phnom Penh",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/cambodia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Kamboçya genelinde seyahat güvenlidir; çanta kapkaçına ve kırsal mayın uyarılarına dikkat edilmelidir.",
+      "en": "Exercise normal precautions in Cambodia; be vigilant against bag-snatching and heed rural mine warnings.",
+      "de": "In Kambodscha gelten normale Vorsichtsmaßnahmen; auf Handtaschenraub und Minenwarnungen im ländlichen Raum achten.",
+      "ru": "В Камбодже безопасная обстановка; остерегайтесь карманных краж и не сходите с размеченных троп.",
+      "es": "Precauciones normales en Camboya; atención a tirones de bolsos y advertencias de minas en áreas rurales."
+    },
+    "regional_warnings": [
+      {
+        "area": "Preah Vihear & Thai Border Remote Forests",
+        "level": 2,
+        "reason": "Presence of unexploded ordnance (UXO) and landmines; stay strictly on marked paths.",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/cambodia",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 26.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cambodia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Cambodia measure approximately 26.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 43.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cambodia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Cambodia reach around 43.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All travelers must submit the electronic Cambodia e-Arrival Card within 7 days before entering. Smart Axiata and Cellcard offer reliable 4G eSIMs with instant tourist activation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://arrival.gov.kh",
+          "tier": 1,
+          "title": "Cambodia e-Arrival Official Portal"
+        }
+      ],
+      "evidence_quote": "All inbound passengers are required to complete the Cambodia e-Arrival declaration",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab",
+      "category": "taxi",
+      "popular": true,
+      "description": "Standard ride-hailing app for air-conditioned cars and metered tuk-tuks (remorques)."
+    },
+    {
+      "name": "PassApp",
+      "category": "taxi",
+      "popular": true,
+      "description": "Extremely popular local auto-rickshaw (bajaj) hail app across Phnom Penh and Siem Reap."
+    },
+    {
+      "name": "Nham24",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food delivery and supermarket grocery service in Cambodia."
+    },
+    {
+      "name": "Bakong Tourist",
+      "category": "payments",
+      "popular": true,
+      "description": "National Bank of Cambodia QR payment app enabling cashless KHQR mobile payments for tourists."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Türk vatandaşları havalimanlarında Kapıda Vize (VoA - 30$) alabilir veya online e-Visa başvurusu yapabilir. e-Arrival formu zorunludur.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.kh",
+        "tier": 1,
+        "title": "Cambodia Ministry of Foreign Affairs e-Visa"
+      }
+    },
+    "us": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "US citizens can obtain a 30-day tourist Visa on Arrival ($30 USD) or apply for an eVisa in advance.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.kh",
+        "tier": 1,
+        "title": "Official Cambodia e-Visa Portal"
+      }
+    },
+    "de": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "German citizens can receive a Visa on Arrival (30 days, $30) or purchase an eVisa prior to travel.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.kh",
+        "tier": 1,
+        "title": "Cambodia e-Visa Portal"
+      }
+    },
+    "gb": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "British passport holders are eligible for Visa on Arrival (30 days, $30) or eVisa online.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.kh",
+        "tier": 1,
+        "title": "Cambodia e-Visa Portal"
+      }
+    },
+    "ru": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Граждане РФ получают визу по прибытии (VoA, 30 дней, 30$) или оформляют электронную визу онлайн.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.kh",
+        "tier": 1,
+        "title": "Официальный портал e-Visa Камбоджи"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect the Angkor dress code strictly",
+        "description": "Shoulders and knees MUST be covered at Angkor Wat and temples; shawls over tank tops are rejected at ticket gates."
+      },
+      {
+        "title": "Greet with the traditional Sampeah gesture",
+        "description": "Press palms together at chest level with a slight bow when greeting elders or monks."
+      },
+      {
+        "title": "Carry pristine US Dollar bills",
+        "description": "US Dollar bills with tears, ink marks, or folded creases are routinely rejected by merchants and exchange counters."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't touch anyone's head or point your feet",
+        "description": "The head is spiritually sacred, while feet are considered unclean; never point feet towards Buddha statues or monks."
+      },
+      {
+        "title": "Don't wander off designated trails in jungle ruins",
+        "description": "Always remain on paved visitor paths in rural areas and ancient temple grounds due to historical landmines."
+      }
+    ],
+    "tipping": "Tipping is not traditional in rural markets but is customary (around $1-2 or 10%) for tour guides, boat drivers, and restaurant staff."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Angkor Wat Antik Tapınağı ve Nilüfer Havuzu (UNESCO)",
+        "license": "CC BY 2.0",
+        "author": "shankar s. from Poona (pune), India, India",
+        "source_url": "/images/countries/kh-480.webp",
+        "attribution_text": "Angkor Wat temple complex reflection pool at sunrise in Cambodia. CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Angkor Wat Antik Tapınağı ve Nilüfer Havuzu, Kamboçya",
+          "en": "Angkor Wat Ancient Temple & Lotus Pool, Cambodia",
+          "de": "Tempelanlage Angkor Wat & Lotusteich, Kambodscha",
+          "ru": "Древний храм Ангкор-Ват и пруд с лотосами, Камбоджа",
+          "es": "Templo Antiguo de Angkor Wat y Estanque de Loto, Camboya"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kambocya",
+      "en": "cambodia",
+      "de": "kambodscha",
+      "ru": "kambodzha",
+      "es": "camboya"
+    },
+    "title": {
+      "tr": "Kamboçya Vize Rehberi, e-Arrival Kartı ve Angkor Wat Gezisi | Vizamigo",
+      "en": "Cambodia Visa Guide, e-Arrival Card & Angkor Wat Travel | Vizamigo",
+      "de": "Kambodscha Visum-Leitfaden, e-Arrival & Angkor Wat Reisen | Vizamigo",
+      "ru": "Виза в Камбоджу, карта e-Arrival и Ангкор-Ват | Vizamigo",
+      "es": "Guía de Visa de Camboya, Tarjeta e-Arrival y Angkor Wat | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kamboçya kapıda vize (VoA) şartları, zorunlu e-Arrival kartı, PassApp tuktuk, yırtıksız dolar kuralı ve Angkor Wat kıyafet rehberi.",
+      "en": "Cambodia Visa on Arrival ($30) rules, mandatory e-Arrival card, PassApp rickshaw, pristine USD rule, and Angkor Wat guide.",
+      "de": "Kambodscha Visa on Arrival ($30) Bestimmungen, e-Arrival Karte, PassApp, Dollar-Regeln und Angkor Wat Leitfaden.",
+      "ru": "Правила визы по прибытии в Камбоджу, карта e-Arrival, тук-туки PassApp и посещение Ангкор-Вата.",
+      "es": "Requisitos de Visa a la Llegada en Camboya, tarjeta e-Arrival obligatoria, app PassApp y guía de templos de Angkor."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

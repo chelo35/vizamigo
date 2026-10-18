@@ -1,0 +1,441 @@
+{
+  "iso2": "EE",
+  "names": {
+    "tr": "Estonya",
+    "en": "Estonia",
+    "de": "Estland",
+    "ru": "Эстония",
+    "es": "Estonia"
+  },
+  "capital": {
+    "value": "Tallinn",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.tallinn.ee",
+        "tier": 1,
+        "title": "City of Tallinn Official Portal"
+      }
+    ],
+    "evidence_quote": "Tallinn is the capital and administrative, cultural, and financial center of Estonia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eestipank.ee",
+        "tier": 1,
+        "title": "Eesti Pank (Bank of Estonia)"
+      }
+    ],
+    "evidence_quote": "The Euro is the sole official currency of the Republic of Estonia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.valitsus.ee",
+        "tier": 1,
+        "title": "Government of the Republic of Estonia"
+      }
+    ],
+    "evidence_quote": "Estonia observes Eastern European Time UTC+2 and Eastern European Summer Time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://elering.ee",
+          "tier": 1,
+          "title": "Elering National Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Low-voltage electrical distribution in Estonia operates at 230V alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://elering.ee",
+          "tier": 1,
+          "title": "Elering National Transmission System Operator"
+        }
+      ],
+      "evidence_quote": "Estonian transmission grid frequency is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Estonia uses standard European two-pin Type C plugs and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.politsei.ee",
+          "tier": 1,
+          "title": "Police and Border Guard Board of Estonia (PPA)"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency police assistance across all parts of Estonia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.ee",
+          "tier": 1,
+          "title": "Emergency Response Centre of Estonia (Häirekeskus)"
+        }
+      ],
+      "evidence_quote": "Call 112 for all medical emergencies and ambulance dispatch in Estonia",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rescue.ee",
+          "tier": 1,
+          "title": "Estonian Rescue Board (Päästeamet)"
+        }
+      ],
+      "evidence_quote": "Call 112 for emergency rescue and fire services across Estonia",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.ee",
+          "tier": 1,
+          "title": "Emergency Response Centre of Estonia (Häirekeskus)"
+        }
+      ],
+      "evidence_quote": "112 is the single unified emergency dispatch number handling police, medical, and fire",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/estonia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Estonya genelinde güvenlik seviyesi çok yüksektir; Rusya sınır geçişleri kısıtlıdır.",
+      "en": "Estonia is extremely safe with normal precautions; note eastern border checkpoint restrictions.",
+      "de": "Estland ist ein sehr sicheres Reiseland; Einschränkungen an den Grenzübergängen zu Russland beachten.",
+      "ru": "В Эстонии высокий уровень безопасности; действуют ограничения на пограничных пунктах с РФ.",
+      "es": "Estonia es un país sumamente seguro; tenga en cuenta las restricciones fronterizas con Rusia."
+    },
+    "regional_warnings": [
+      {
+        "area": "Narva Border Crossing (Eastern Border with Russia)",
+        "level": 2,
+        "reason": "Border crossing with Russia subject to sudden closures and vehicle movement bans.",
+        "source": {
+          "url": "https://www.politsei.ee",
+          "tier": 1,
+          "title": "Estonian Police and Border Guard"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 89.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/estonia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Estonia measure approximately 89.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 118.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/estonia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Estonia reach 118.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Estonia is one of the world's most advanced digital societies with pervasive public Wi-Fi. Telia, Elisa, and Tele2 provide high-speed 5G eSIMs with zero-paperwork digital activation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://e-estonia.com",
+          "tier": 1,
+          "title": "e-Estonia Digital Society Portal"
+        }
+      ],
+      "evidence_quote": "Estonia offers nationwide high-speed broadband and pervasive digital infrastructure",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "popular": true,
+      "description": "Estonia is the birthplace of Bolt; use it for taxis, car-sharing (Bolt Drive), and e-scooters."
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "popular": true,
+      "description": "Widely used food and grocery delivery service across Tallinn, Tartu, and Pärnu."
+    },
+    {
+      "name": "Tuul",
+      "category": "transport",
+      "popular": true,
+      "description": "Eco-friendly Estonian-engineered electric scooter rental app."
+    },
+    {
+      "name": "pilet.ee",
+      "category": "transport",
+      "popular": true,
+      "description": "Official public transport ticketing app for Tallinn public transport and regional Elron trains."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://vm.ee",
+        "tier": 1,
+        "title": "Estonya Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can travel visa-free to Estonia and the Schengen area for up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Estonia"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "EU citizens enjoy unrestricted free movement and enter Estonia using an EU identity card or passport.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://vm.ee/en/consular-visa-and-travel-information/visa-information",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Estonia"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens can enter Estonia and the Schengen area visa-free for up to 90 days within any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/estonia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Restricted",
+      "duration_days": 0,
+      "conditions": "Въезд граждан РФ с туристическими шенгенскими визами через внешнюю границу Эстонии ограничен решением правительства ЭР.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://kriis.ee/en/travelling-crossing-state-border",
+        "tier": 1,
+        "title": "Правительство Эстонии - Правила пересечения границы"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Digital Nomad Visa (DNV)",
+    "min_income_usd": 4500,
+    "duration_months": 12,
+    "source": {
+      "url": "https://e-resident.gov.ee/nomadvisa",
+      "tier": 1,
+      "title": "e-Residency Estonia Official Digital Nomad Visa Portal"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Wear a pedestrian reflector (helkur) at night",
+        "description": "Estonian law strictly mandates wearing a reflector on your coat in dark or winter conditions; police actively issue fines."
+      },
+      {
+        "title": "Respect personal space and quiet demeanor",
+        "description": "Estonians value privacy and modest vocal tones; maintain respectful quietness on public transport and in saunas."
+      },
+      {
+        "title": "Embrace digital payments everywhere",
+        "description": "Cash is virtually obsolete in Estonia; contactless phone payments and cards work even at remote berry stands."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't attempt unauthorized drone flights in Tallinn Old Town",
+        "description": "Tallinn city center and Toompea government zones are strictly regulated no-fly zones requiring CAA permits."
+      },
+      {
+        "title": "Don't enter saunas with swimwear if traditional",
+        "description": "In traditional Estonian smoke saunas, swimwear is replaced with a clean towel; rinse thoroughly before entering."
+      }
+    ],
+    "tipping": "Tipping is appreciated but not mandatory; 10% in full-service restaurants is standard for attentive service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Tallinn Tarihi Eski Şehri ve Orta Çağ Kuleleri",
+        "license": "CC BY-SA 3.0",
+        "author": "Diego Delso",
+        "source_url": "/images/countries/ee-480.webp",
+        "attribution_text": "Panoramic view of medieval Tallinn Old Town from Toompea in Estonia. Diego Delso, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Tallinn Tarihi Eski Şehri ve Orta Çağ Kuleleri, Estonya",
+          "en": "Tallinn Medieval Old Town & Towers, Estonia",
+          "de": "Mittelalterliche Altstadt & Türme von Tallinn, Estland",
+          "ru": "Средневековый Старый город и башни Таллина, Эстония",
+          "es": "Casco Antiguo Medieval y Torres de Tallin, Estonia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "estonya",
+      "en": "estonia",
+      "de": "estland",
+      "ru": "estoniya",
+      "es": "estonia"
+    },
+    "title": {
+      "tr": "Estonya Vize Rehberi, Dijital Göçebe Vizesi (DNV) ve Tallinn Gezisi | Vizamigo",
+      "en": "Estonia Visa Guide, Digital Nomad Visa & Tallinn Travel | Vizamigo",
+      "de": "Estland Visum-Leitfaden, Digital Nomad Visum & Tallinn Reisen | Vizamigo",
+      "ru": "Виза в Эстонию, Digital Nomad Visa и поездка в Таллин | Vizamigo",
+      "es": "Guía de Visa de Estonia, Visa Nómada Digital y Viajes a Tallin | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Estonya Schengen vize kuralları, Digital Nomad Vizesi, gece yaya reflektörü (helkur) yasası, Bolt ve Tallinn Eski Şehir gezi rehberi.",
+      "en": "Estonia Schengen entry rules, Digital Nomad Visa ($4500/mo), mandatory pedestrian reflector law, Bolt app, and Tallinn guide.",
+      "de": "Estland Schengen-Visabestimmungen, Digital Nomad Visum, Fußgänger-Reflektorpflich (Helkur), Bolt und Tallinn-Tipps.",
+      "ru": "Правила въезда в Эстонию, Digital Nomad Visa, закон о светоотражателях (helkur), приложение Bolt и старый Таллин.",
+      "es": "Requisitos de visa Schengen para Estonia, Visa Nómada Digital, ley de reflectores peatonales, Bolt y guía de Tallin."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

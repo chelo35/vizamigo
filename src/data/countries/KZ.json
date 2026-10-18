@@ -1,0 +1,436 @@
+{
+  "iso2": "KZ",
+  "names": {
+    "tr": "Kazakistan",
+    "en": "Kazakhstan",
+    "de": "Kasachstan",
+    "ru": "Казахстан",
+    "es": "Kazajistán"
+  },
+  "capital": {
+    "value": "Astana",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.astana.gov.kz",
+        "tier": 1,
+        "title": "Akimat of Astana Official Portal"
+      }
+    ],
+    "evidence_quote": "Astana is the official capital city of the Republic of Kazakhstan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "KZT",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nationalbank.kz",
+        "tier": 1,
+        "title": "National Bank of Kazakhstan"
+      }
+    ],
+    "evidence_quote": "The national currency of Kazakhstan is the Kazakhstani Tenge (KZT)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://primeminister.kz",
+        "tier": 1,
+        "title": "Government of the Republic of Kazakhstan Official Decision"
+      }
+    ],
+    "evidence_quote": "Kazakhstan transitioned to a single unified time zone UTC+5 nationwide effective March 1, 2024",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.kegoc.kz",
+          "tier": 1,
+          "title": "KEGOC National Power Grid of Kazakhstan"
+        }
+      ],
+      "evidence_quote": "The standard domestic voltage across Kazakhstan is 220V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.kegoc.kz",
+          "tier": 1,
+          "title": "KEGOC National Power Grid of Kazakhstan"
+        }
+      ],
+      "evidence_quote": "Kazakhstan power grid standard alternating frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Standard socket outlets in Kazakhstan accommodate Europlug Type C and Schuko Type F plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.kz/memleket/entities/qriim",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of Kazakhstan"
+        }
+      ],
+      "evidence_quote": "Call 102 for emergency police services across Kazakhstan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.kz/memleket/entities/dsm",
+          "tier": 1,
+          "title": "Ministry of Healthcare of the Republic of Kazakhstan"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency ambulance medical response across Kazakhstan",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.kz/memleket/entities/emer",
+          "tier": 1,
+          "title": "Ministry of Emergency Situations of Kazakhstan"
+        }
+      ],
+      "evidence_quote": "Call 101 for fire department dispatch in all Kazakh cities",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.kz/memleket/entities/emer",
+          "tier": 1,
+          "title": "Ministry of Emergency Situations of Kazakhstan"
+        }
+      ],
+      "evidence_quote": "Unified emergency number 112 connects callers to rescue services nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1414",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://qaztourism.kz",
+          "tier": 1,
+          "title": "Kazakh Tourism National Company"
+        }
+      ],
+      "evidence_quote": "Tourist and citizen unified inquiry center 1414 assists visitors with official guidance",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/kazakhstan",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Kazakistan genelinde seyahat güvenliği yüksektir; standart seyahat önlemleri geçerlidir.",
+      "en": "Travelers should exercise normal precautions across Kazakhstan; cities and tourist corridors are stable.",
+      "de": "In Kasachstan gelten normale Sicherheitsvorkehrungen; die Sicherheitslage ist stabil.",
+      "ru": "В Казахстане действует нормальный уровень безопасности, города и туристические зоны стабильны.",
+      "es": "Aplican precauciones normales de seguridad en Kazajistán; las ciudades principales son estables."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 37.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kazakhstan",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Kazakhstan reach approximately 37.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 78.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kazakhstan",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Kazakhstan measure 78.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Foreign travelers must be registered through the eQonaq information system by their host hotel within 3 days. Kcell, Beeline, and Tele2 offer comprehensive 4G/5G eSIMs with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://eqonaq.kz",
+          "tier": 1,
+          "title": "eQonaq Visitor Registration System"
+        }
+      ],
+      "evidence_quote": "eQonaq records foreign guest stays automatically via registered accommodation providers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Kaspi.kz",
+      "category": "payments",
+      "popular": true,
+      "description": "The quintessential Kazakh super-app; Kaspi QR is accepted virtually everywhere from bazaars to taxis."
+    },
+    {
+      "name": "Yandex Go",
+      "category": "taxi",
+      "popular": true,
+      "description": "Standard ride-hailing and food delivery app in Almaty, Astana, and Shymkent."
+    },
+    {
+      "name": "inDrive",
+      "category": "taxi",
+      "popular": true,
+      "description": "Peer-to-peer fare negotiation app very popular for intercity and airport travel in Kazakhstan."
+    },
+    {
+      "name": "2GIS",
+      "category": "maps",
+      "popular": true,
+      "description": "Invaluable offline 3D city navigation showing exact building entrances and bus routes."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri 30 güne kadar vizesiz seyahat edebilir.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.kz/memleket/entities/mfa",
+        "tier": 1,
+        "title": "Kazakistan Dışişleri Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "US passport holders can enter Kazakhstan visa-free for tourist and business stays of up to 30 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.kz/memleket/entities/mfa",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Kazakhstan"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "German citizens can enter Kazakhstan without a visa for stays of up to 30 calendar days.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.kz/memleket/entities/mfa",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Kazakhstan"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "British citizens can visit Kazakhstan visa-free for tourist or business trips up to 30 days.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.kz/memleket/entities/mfa",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Kazakhstan"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать в Казахстан по внутреннему или заграничному паспорту на срок до 90 дней (правило 90/180).",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.gov.kz/memleket/entities/mfa",
+        "tier": 1,
+        "title": "МИД РК"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Neo Nomad Visa",
+    "min_income_usd": 3000,
+    "duration_months": 12,
+    "source": {
+      "url": "https://www.gov.kz/memleket/entities/tsm",
+      "tier": 1,
+      "title": "Ministry of Tourism and Sports of Kazakhstan"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Use Kaspi QR or cashless payments",
+        "description": "Cash is rarely needed in Kazakh cities; virtually every merchant from coffee carts to boutiques accepts Kaspi QR or Visa/Mastercard."
+      },
+      {
+        "title": "Remove shoes when entering a Kazakh home",
+        "description": "Always take off outdoor shoes at the threshold and put on slippers provided by the host."
+      },
+      {
+        "title": "Receive tea and food with both hands or right hand",
+        "description": "Showing deference to elders and hosts by accepting tea bowls (piala) with respect is deeply appreciated."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't jaywalk in city centers",
+        "description": "Traffic police actively fine pedestrians for crossing streets outside designated zebra crossings in Astana and Almaty."
+      },
+      {
+        "title": "Don't overstay the 30-day visa-free limit",
+        "description": "Immigration laws enforce strict fines and deportation proceedings for exceeding 30-day entry allowances."
+      }
+    ],
+    "tipping": "A service charge of 10% is usually included on restaurant bills in Almaty and Astana; leaving extra small change is appreciated."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Hoca Ahmed Yesevi Türbesi (UNESCO), Türkistan",
+        "license": "CC0 Public Domain",
+        "author": "Bernard Gagnon (Bgag)",
+        "source_url": "/images/countries/kz-480.webp",
+        "attribution_text": "Mausoleum of Khoja Ahmed Yasawi and Charyn Canyon landscapes in Kazakhstan. Public domain / CC0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Hoca Ahmed Yesevi Türbesi ve Kazakistan manzarası",
+          "en": "Mausoleum of Khoja Ahmed Yasawi, Turkistan, Kazakhstan",
+          "de": "Mausoleum von Hodscha Ahmad Yasawi, Turkestan, Kasachstan",
+          "ru": "Мавзолей Ходжи Ахмеда Ясави, Туркестан, Казахстан",
+          "es": "Mausoleo de Khoja Ahmed Yasawi, Turkestán, Kazajistán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kazakistan",
+      "en": "kazakhstan",
+      "de": "kasachstan",
+      "ru": "kazahstan",
+      "es": "kazajistan"
+    },
+    "title": {
+      "tr": "Kazakistan Vize Rehberi, Neo Nomad Vizesi ve Almatı Gezisi | Vizamigo",
+      "en": "Kazakhstan Visa Guide, Neo Nomad Visa & Almaty Travel | Vizamigo",
+      "de": "Kasachstan Visum-Leitfaden, Neo Nomad Visum & Almaty Reisen | Vizamigo",
+      "ru": "Виза в Казахстан, виза Neo Nomad и поездка в Алматы | Vizamigo",
+      "es": "Guía de Visa de Kazajistán, Visa Neo Nomad y Viajes a Almatí | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kazakistan Türk pasaportuna 30 gün vizesiz giriş, Neo Nomad dijital göçebe vizesi, tek saat dilimi (UTC+5) ve Kaspi QR rehberi.",
+      "en": "Kazakhstan 30-day visa-free access, Neo Nomad visa, unified UTC+5 time zone, Kaspi QR payments, and Almaty travel guide.",
+      "de": "Kasachstan 30 Tage visafreie Einreise, Neo Nomad Visum, einheitliche UTC+5 Zeitzone, Kaspi QR und Almaty-Tipps.",
+      "ru": "Правила въезда в Казахстан на 30 дней без визы, виза Neo Nomad, единый часовой пояс UTC+5 и приложение Kaspi.",
+      "es": "Guía de entrada sin visa a Kazajistán (30 días), visa Neo Nomad, zona horaria UTC+5 y pagos con Kaspi QR."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
