@@ -1,0 +1,458 @@
+{
+  "iso2": "UY",
+  "names": {
+    "tr": "Uruguay",
+    "en": "Uruguay",
+    "de": "Uruguay",
+    "ru": "Уругвай",
+    "es": "Uruguay"
+  },
+  "capital": {
+    "value": "Montevideo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://montevideo.gub.uy",
+        "tier": 1,
+        "title": "Intendencia de Montevideo"
+      }
+    ],
+    "evidence_quote": "Montevideo is the capital and largest city of the Oriental Republic of Uruguay",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "UYU",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcu.gub.uy",
+        "tier": 1,
+        "title": "Central Bank of Uruguay (BCU)"
+      }
+    ],
+    "evidence_quote": "The Uruguayan Peso (UYU) is the national currency of Uruguay",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-3 (UYT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.armada.mil.uy/sohma/",
+        "tier": 1,
+        "title": "Servicio de Oceanografia, Hidrografia y Meteorologia de la Armada"
+      }
+    ],
+    "evidence_quote": "Uruguay Standard Time maintains an offset of UTC-3 year-round",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://portal.ute.com.uy",
+          "tier": 1,
+          "title": "Administracion Nacional de Usinas y Trasmisiones Electricas (UTE)"
+        }
+      ],
+      "evidence_quote": "Residential electricity across Uruguay is supplied at 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://portal.ute.com.uy",
+          "tier": 1,
+          "title": "UTE Uruguay"
+        }
+      ],
+      "evidence_quote": "The operating frequency of the Uruguayan electrical grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "L"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.unit.org.uy",
+          "tier": 1,
+          "title": "Instituto Uruguayo de Normas Tecnicas (UNIT)"
+        }
+      ],
+      "evidence_quote": "Standard sockets in Uruguay include Type C Europlug, Type F Schuko, and Italian Type L",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minterior.gub.uy",
+          "tier": 1,
+          "title": "Ministry of Interior Uruguay"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance across all Uruguayan departments is dialed via 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "105 / 911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.asse.com.uy",
+          "tier": 1,
+          "title": "ASSE Public Health Emergency Ambulance Service"
+        }
+      ],
+      "evidence_quote": "Public ambulance dispatch connects via 105 or integrated 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "104 / 911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bomberos.minterior.gub.uy",
+          "tier": 1,
+          "title": "Direccion Nacional de Bomberos Uruguay"
+        }
+      ],
+      "evidence_quote": "National Firefighters Directorate emergency dispatch connects via 104 or 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.minterior.gub.uy",
+          "tier": 1,
+          "title": "Sistema de Emergencias 9-1-1 Uruguay"
+        }
+      ],
+      "evidence_quote": "911 is the consolidated national emergency response line across Uruguay",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gub.uy/ministerio-turismo/",
+          "tier": 1,
+          "title": "Ministry of Tourism Uruguay"
+        }
+      ],
+      "evidence_quote": "Tourist security units coordinate assistance through the central 911 dispatch network",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Uruguay Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/uruguay",
+          "tier": 1,
+          "title": "UK FCDO Uruguay Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Uruguay Latin Amerika'nın en güvenli ve demokratik ülkelerindendir",
+      "en": "Normal Precautions: Uruguay is historically South America's most stable and peaceful nation",
+      "de": "Normale Vorsicht: Uruguay ist das stabilste und friedlichste Land Südamerikas",
+      "ru": "Обычные меры: Уругвай самая стабильная и безопасная страна в Южной Америке",
+      "es": "Precauciones normales: Uruguay es históricamente la nación más estable y segura de Sudamérica"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 55.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/uruguay",
+          "tier": 2,
+          "title": "Ookla Speedtest Uruguay"
+        }
+      ],
+      "evidence_quote": "Uruguay mobile download speeds average 55.4 Mbps led by state telecom Antel",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 172.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/uruguay",
+          "tier": 2,
+          "title": "Ookla Speedtest Uruguay Fixed"
+        }
+      ],
+      "evidence_quote": "Uruguay fixed broadband speeds average 172.8 Mbps over universal national fiber",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Antel, Movistar, and Claro. Tourist SIMs can be purchased at Carrasco International Airport with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gub.uy/unidad-reguladora-servicios-comunicaciones/",
+          "tier": 1,
+          "title": "Unidad Reguladora de Servicios de Comunicaciones (URSEC)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid passport verification in accordance with URSEC",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/uy/es/",
+        "tier": 1,
+        "title": "Uber Uruguay"
+      }
+    },
+    {
+      "name": "Cabify",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://cabify.com/uy",
+        "tier": 1,
+        "title": "Cabify Uruguay"
+      }
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.uy",
+        "tier": 1,
+        "title": "PedidosYa Uruguay (founded in Montevideo)"
+      }
+    },
+    {
+      "name": "Como Ir",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://montevideo.gub.uy/comoir/",
+        "tier": 1,
+        "title": "Como Ir Official Montevideo Public Transport"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Dinsiz/Agnostik (~41%), Roma Katolikliği (~44%), Protestanlık (~10%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gub.uy",
+          "tier": 1,
+          "title": "Instituto Nacional de Estadistica (INE) Uruguay"
+        }
+      ],
+      "evidence_quote": "Uruguay is the most secular nation in the Americas with strict separation of church and state",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Karnaval (Ocak-Mart, dünyanın en uzunu), Bağımsızlık Günü (25 Ağustos), Nostalji Gecesi (Noche de la Nostalgia, 24 Ağustos)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gub.uy/ministerio-turismo/",
+          "tier": 1,
+          "title": "Ministry of Tourism Uruguay Festivals"
+        }
+      ],
+      "evidence_quote": "Noche de la Nostalgia and Montevideo Carnival are beloved national traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Yabancı turistler restoran, otel ve araç kiralama ödemelerini uluslararası kredi kartıyla yaptıklarında %18-22 KDV (IVA) iadesi doğrudan fatura anında düşülür. Mate çayı içmek günlük milli alışkanlıktır. Prizler Tip C, F ve İtalyan Tip L standardındadır (230V).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gub.uy/ministerio-turismo/comunicacion/comunicados/beneficios-para-turistas-no-residentes",
+          "tier": 1,
+          "title": "Ministry of Tourism Non-Resident Tourist Tax Benefits"
+        }
+      ],
+      "evidence_quote": "Non-resident tourists receive immediate VAT refunds on restaurant dining and car rentals paid by credit card",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş teamüldür. Kredi kartı fişine bahşiş eklenebilmektedir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gub.uy/ministerio-turismo/",
+          "tier": 1,
+          "title": "Uruguay Tourism Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping 10 percent in dining venues is standard custom across Montevideo and Punta del Este",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Punta del Este ve La Mano (Los Dedos) Heykeli",
+        "en": "Punta del Este and The Hand (La Mano) Monument",
+        "de": "Punta del Este und Denkmal La Mano",
+        "ru": "Пунта-дель-Эсте и скульптура Рука (Ла-Мано)",
+        "es": "Punta del Este y Monumento La Mano (Los Dedos)"
+      },
+      "type": "coastal_resort",
+      "sources": [
+        {
+          "url": "https://www.gub.uy/ministerio-turismo/",
+          "tier": 1,
+          "title": "Ministry of Tourism Punta del Este"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Colonia del Sacramento Tarihi Şehri (UNESCO)",
+        "en": "Historic Quarter of the City of Colonia del Sacramento (UNESCO)",
+        "de": "Historisches Viertel von Colonia del Sacramento",
+        "ru": "Исторический квартал города Колония-дель-Сакраменто",
+        "es": "Barrio Histórico de la Ciudad de Colonia del Sacramento"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/747",
+          "tier": 1,
+          "title": "UNESCO Historic Quarter of Colonia del Sacramento"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Montevideo Rambla Sahil Kordonu",
+        "en": "Montevideo Rambla Waterfront",
+        "de": "Rambla von Montevideo",
+        "ru": "Набережная Рамбла в Монтевидео",
+        "es": "Rambla de Montevideo"
+      },
+      "type": "city_waterfront",
+      "sources": [
+        {
+          "url": "https://montevideo.gub.uy",
+          "tier": 1,
+          "title": "Intendencia de Montevideo Rambla"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "La Mano (Los Dedos) Anıtsal Kum Heykeli, Punta del Este",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/uy-480.webp",
+        "attribution_text": "La Mano (The Hand) sculpture in Punta del Este, Uruguay. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "La Mano Kum Heykeli, Punta del Este, Uruguay",
+          "en": "La Mano Hand Monument on the Beach, Punta del Este, Uruguay",
+          "de": "Denkmal La Mano am Strand von Punta del Este, Uruguay",
+          "ru": "Монумент Рука (Ла-Мано) на пляже Пунта-дель-Эсте, Уругвай",
+          "es": "Monumento La Mano en la playa de Punta del Este, Uruguay"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "uruguay",
+      "en": "uruguay",
+      "de": "uruguay",
+      "ru": "urugvay",
+      "es": "uruguay"
+    },
+    "title": {
+      "tr": "Uruguay Vize Rehberi, KDV İadesi ve Punta del Este | Vizamigo",
+      "en": "Uruguay Visa Guide, VAT Refund & Punta del Este Travel | Vizamigo",
+      "de": "Uruguay Visum-Leitfaden, MwSt-Rückerstattung & Reisen | Vizamigo",
+      "ru": "Виза в Уругвай, возврат НДС и Пунта-дель-Эсте | Vizamigo",
+      "es": "Guía de Visa de Uruguay, Devolución de IVA y Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Uruguay vize politikası (90 gün vizesiz), yabancı kartlara anında KDV iadesi, Punta del Este, priz tipleri (C, F, L) ve güvenlik rehberi.",
+      "en": "Uruguay visa policies (90 days visa-free), zero VAT tourist benefit on cards, Punta del Este, and Type C/F/L plugs.",
+      "de": "Uruguay Visabestimmungen (90 Tage visafrei), MwSt-Vorteile für Touristen, Punta del Este und Steckertypen C/F/L.",
+      "ru": "Визовые правила Уругвая (90 дней без визы), возврат НДС на карту, Пунта-дель-Эсте и розетки C/F/L.",
+      "es": "Requisitos de visa para Uruguay (90 días sin visa), devolución de IVA para turistas y enchufes C/F/L."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

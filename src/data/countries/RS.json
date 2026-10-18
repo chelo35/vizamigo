@@ -1,0 +1,467 @@
+{
+  "iso2": "RS",
+  "names": {
+    "tr": "Sırbistan",
+    "en": "Serbia",
+    "de": "Serbien",
+    "ru": "Сербия",
+    "es": "Serbia"
+  },
+  "capital": {
+    "value": "Belgrad",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.beograd.rs",
+        "tier": 1,
+        "title": "City of Belgrade Official Portal"
+      }
+    ],
+    "evidence_quote": "Belgrade is the capital and largest city of the Republic of Serbia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "RSD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nbs.rs",
+        "tier": 1,
+        "title": "National Bank of Serbia (NBS)"
+      }
+    ],
+    "evidence_quote": "The Serbian Dinar (RSD) is the official currency of Serbia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.srbija.gov.rs",
+        "tier": 1,
+        "title": "Government of the Republic of Serbia Time"
+      }
+    ],
+    "evidence_quote": "Serbia observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ems.rs",
+          "tier": 1,
+          "title": "Elektromreza Srbije (EMS)"
+        }
+      ],
+      "evidence_quote": "Nominal residential electricity voltage in Serbia is 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ems.rs",
+          "tier": 1,
+          "title": "EMS Serbia"
+        }
+      ],
+      "evidence_quote": "Power transmission frequency across the Serbian grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iss.rs",
+          "tier": 1,
+          "title": "Institute for Standardization of Serbia (ISS)"
+        }
+      ],
+      "evidence_quote": "Serbia uses standard European Type C Europlug and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.gov.rs",
+          "tier": 1,
+          "title": "Ministry of Interior of the Republic of Serbia (MUP)"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance throughout Serbia is dialed via 192",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "194",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zdravlje.gov.rs",
+          "tier": 1,
+          "title": "Ministry of Health Serbia"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue operates on hotline 194",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "193",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.gov.rs",
+          "tier": 1,
+          "title": "Sector for Emergency Management MUP Serbia"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is contacted directly on hotline 193",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.gov.rs",
+          "tier": 1,
+          "title": "MUP Serbia Emergency 112 Operations"
+        }
+      ],
+      "evidence_quote": "112 operates alongside traditional numbers to coordinate all first responder dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.serbia.travel",
+          "tier": 1,
+          "title": "Tourist Organisation of Serbia"
+        }
+      ],
+      "evidence_quote": "Tourist inquiries and security reports are coordinated through MUP police 192",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Serbia Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/serbia",
+          "tier": 1,
+          "title": "UK FCDO Serbia Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Sırbistan güvenli ve misafirperver bir Balkan destinasyonudur",
+      "en": "Normal Precautions: Serbia is a safe and hospitable destination in Southeast Europe",
+      "de": "Normale Vorsicht: Serbien ist ein sicheres und gastfreundliches Reiseziel",
+      "ru": "Обычные меры: Сербия безопасная и гостеприимная балканская страна",
+      "es": "Precauciones normales: Serbia es un destino seguro y hospitalario del sudeste europeo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 59.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/serbia",
+          "tier": 2,
+          "title": "Ookla Speedtest Serbia"
+        }
+      ],
+      "evidence_quote": "Serbia mobile download speeds average 59.8 Mbps across Yettel, A1, and mts",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 94.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/serbia",
+          "tier": 2,
+          "title": "Ookla Speedtest Serbia Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Serbia averages 94.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Yettel Srbija, A1, and mts. Prepaid tourist SIMs (often offering 10GB-15GB for 5-10 EUR) are sold at news kiosks (Trafika) with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ratel.rs",
+          "tier": 1,
+          "title": "Regulatory Agency for Electronic Communications and Postal Services (RATEL)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires identity verification under RATEL telecommunication regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "CarGo",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://appcargo.net",
+        "tier": 1,
+        "title": "CarGo Belgrade Urban Mobility"
+      }
+    },
+    {
+      "name": "Pink Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://pinktaxi.info",
+        "tier": 1,
+        "title": "Pink Taxi Belgrade Official App"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/srb/belgrade",
+        "tier": 1,
+        "title": "Wolt Serbia"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/rs/sr/",
+        "tier": 1,
+        "title": "Glovo Serbia"
+      }
+    },
+    {
+      "name": "BeogradPlus",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://b naplata.rs",
+        "tier": 1,
+        "title": "BeogradPlus Official Belgrade Transit App"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Sırp Ortodoksluğu (~84%), Katoliklik (~5%), İslam (~3%), Dinsiz (~4%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stat.gov.rs",
+          "tier": 1,
+          "title": "Statistical Office of the Republic of Serbia (RZS) Census"
+        }
+      ],
+      "evidence_quote": "Serbian Orthodoxy represents the historic religious identity of the majority population",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Devlet Günü (15 Şubat), Slava (UNESCO Somut Olmayan Miras), EXIT Müzik Festivali (Novi Sad, Temmuz), Guča Trompet Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.serbia.travel",
+          "tier": 1,
+          "title": "Serbia Travel Festivals"
+        }
+      ],
+      "evidence_quote": "Slava family celebrations and the world-renowned EXIT Festival in Novi Sad are cultural staples",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Türk vatandaşları yeni çipli kimlik kartıyla pasaporta ihtiyaç duymadan Sırbistan'a seyahat edebilir ve 90 gün vizesiz kalabilir. 24 saat içinde ikamet kaydı (Beli Karton) yaptırılması zorunludur (oteller otomatik tescil eder). Taksilerde havalimanından şehir merkezine sabit tarife kuponu (Taxi Info Masası) alınmalıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.gov.rs",
+          "tier": 1,
+          "title": "MUP Serbia Foreigners Registration (Beli Karton)"
+        }
+      ],
+      "evidence_quote": "Turkish citizens may enter with national biometric ID; hotels automatically issue white registration slip",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş bırakmak teamüldür. Kafelerde ve taksilerde hesabı yukarı yuvarlamak olağandır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.serbia.travel",
+          "tier": 1,
+          "title": "Serbia Travel Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Rounding up or leaving approximately 10 percent in restaurants is standard polite practice",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Belgrad Kalemegdan Kalesi ve Parkı",
+        "en": "Belgrade Fortress and Kalemegdan Park",
+        "de": "Festung von Belgrad und Kalemegdan",
+        "ru": "Белградская крепость и парк Калемегдан",
+        "es": "Fortaleza de Belgrado y Parque Kalemegdan"
+      },
+      "type": "historic_fortress",
+      "sources": [
+        {
+          "url": "https://www.beogradskatvrdjava.co.rs",
+          "tier": 1,
+          "title": "Belgrade Fortress Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Aziz Sava Katedrali (Hram Svetog Save)",
+        "en": "Church of Saint Sava",
+        "de": "Dom des Heiligen Sava",
+        "ru": "Храм Святого Саввы в Белграде",
+        "es": "Templo de San Sava"
+      },
+      "type": "religious_monument",
+      "sources": [
+        {
+          "url": "https://hramsvetogsave.rs",
+          "tier": 1,
+          "title": "Temple of Saint Sava Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Novi Sad Petrovaradin Kalesi ve Tuna Kıyısı",
+        "en": "Petrovaradin Fortress in Novi Sad",
+        "de": "Festung Petrovaradin in Novi Sad",
+        "ru": "Петроварадинская крепость в Нови-Саде",
+        "es": "Fortaleza de Petrovaradin en Novi Sad"
+      },
+      "type": "historic_fortress",
+      "sources": [
+        {
+          "url": "https://novisad.travel",
+          "tier": 1,
+          "title": "Tourism Organisation of the City of Novi Sad"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Belgrad Kalemegdan Kalesi ve Tuna-Sava Kavşağı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/rs-480.webp",
+        "attribution_text": "Kalemegdan Fortress overlooking the Sava and Danube rivers in Belgrade, Serbia. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Kalemegdan Kalesi ve Tuna-Sava Kavşağı, Belgrad, Sırbistan",
+          "en": "Kalemegdan Fortress and Confluence of Danube and Sava, Belgrade, Serbia",
+          "de": "Festung Kalemegdan und Zusammenfluss von Donau und Save, Belgrad, Serbien",
+          "ru": "Крепость Калемегдан и слияние рек Сава и Дунай, Белград, Сербия",
+          "es": "Fortaleza de Kalemegdan y confluencia del Danubio y Sava, Belgrado, Serbia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "sirbistan",
+      "en": "serbia",
+      "de": "serbien",
+      "ru": "serbiya",
+      "es": "serbia"
+    },
+    "title": {
+      "tr": "Sırbistan Vize Rehberi, Kimlikle Giriş ve Belgrad Gezi Rehberi | Vizamigo",
+      "en": "Serbia Visa Guide, ID Card Entry & Belgrade Travel | Vizamigo",
+      "de": "Serbien Visum-Leitfaden, Reisen & Belgrad | Vizamigo",
+      "ru": "Виза в Сербию, въезд по ID-карте и гид по Белграду | Vizamigo",
+      "es": "Guía de Visa de Serbia, Entrada con DNI y Guía de Belgrado | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Sırbistan vize muafiyeti (Türk vatandaşlarına kimlikle giriş), 24 saatte Beli Karton kaydı, priz tipleri (C, F), CarGo ve Kalemegdan rehberi.",
+      "en": "Serbia visa waiver (ID card entry for Turkish citizens), Beli Karton 24h registration, Type C/F plugs, CarGo app, and Belgrade tips.",
+      "de": "Serbien Visabestimmungen, 24h Beli Karton Registrierung, Steckertypen C/F, CarGo-App und Belgrad-Reisetipps.",
+      "ru": "Визовые правила Сербии, въезд по ID для граждан Турции, регистрация белого картона, розетки C/F и Белград.",
+      "es": "Requisitos de visa para Serbia, entrada con DNI, registro Beli Karton de 24 horas y enchufes C/F."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,479 @@
+{
+  "iso2": "PE",
+  "names": {
+    "tr": "Peru",
+    "en": "Peru",
+    "de": "Peru",
+    "ru": "Перу",
+    "es": "Perú"
+  },
+  "capital": {
+    "value": "Lima",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.munlima.gob.pe",
+        "tier": 1,
+        "title": "Metropolitan Municipality of Lima"
+      }
+    ],
+    "evidence_quote": "Lima is the capital and largest metropolis of the Republic of Peru",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "PEN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcrp.gob.pe",
+        "tier": 1,
+        "title": "Central Reserve Bank of Peru"
+      }
+    ],
+    "evidence_quote": "The Sol (PEN) is the official currency of Peru",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (PET)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.marina.mil.pe/es/direccion/hidrografia-y-navegacion/",
+        "tier": 1,
+        "title": "Direccion de Hidrografia y Navegacion Peru Time Standard"
+      }
+    ],
+    "evidence_quote": "Peru maintains a permanent offset of UTC-5 throughout the entire country",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.osinergmin.gob.pe",
+          "tier": 1,
+          "title": "Osinergmin Energy Regulatory Agency Peru"
+        }
+      ],
+      "evidence_quote": "Residential electricity across Peru is supplied at 220V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.osinergmin.gob.pe",
+          "tier": 1,
+          "title": "Osinergmin Peru"
+        }
+      ],
+      "evidence_quote": "Operating frequency across the Peruvian electric network is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.inacal.gob.pe",
+          "tier": 1,
+          "title": "National Quality Institute (INACAL) Peru"
+        }
+      ],
+      "evidence_quote": "Peruvian wall sockets commonly feature combination receptacles accepting Type A, B, and Type C plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "105",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gob.pe",
+          "tier": 1,
+          "title": "National Police of Peru (PNP)"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch central in Peru is 105",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "106 / 117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.pe/samu",
+          "tier": 1,
+          "title": "SAMU Emergency Medical Care Service Peru"
+        }
+      ],
+      "evidence_quote": "SAMU emergency medical rescue operates on hotline 106 and EsSalud on 117",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "116",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomberosperu.gob.pe",
+          "tier": 1,
+          "title": "General Firefighters Corps of Peru (CGBVP)"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is contacted directly on hotline 116",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gob.pe/mininter",
+          "tier": 1,
+          "title": "Ministry of the Interior Peru Emergency 911"
+        }
+      ],
+      "evidence_quote": "Integrated Emergency 911 routes calls across police, health, and civil defense agencies",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "01-460-1060",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.peru.travel",
+          "tier": 1,
+          "title": "POLTUR Directorate of Tourism Police (DIRTUR)"
+        }
+      ],
+      "evidence_quote": "DIRTUR tourist police provides dedicated protection and assistance on 01 460 1060",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Peru Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/peru",
+          "tier": 1,
+          "title": "UK FCDO Peru Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Machu Picchu ve Cusco korumalı ve güvenlidir; VRAEM bölgesinden kaçının",
+      "en": "Exercise Increased Caution: Machu Picchu and tourist circuits safe; avoid the remote VRAEM valley",
+      "de": "Erhöhte Vorsicht: Machu Picchu und Cusco sicher; VRAEM-Tal meiden",
+      "ru": "Повышенная осторожность: Мачу-Пикчу и Куско безопасны, избегайте долины VRAEM",
+      "es": "Mayor precaución: Machu Picchu y Cusco seguros; evite la zona del VRAEM"
+    },
+    "regional_warnings": [
+      {
+        "area": "Valley of the Apurímac, Ene, and Mantaro Rivers (VRAEM)",
+        "level": 4,
+        "reason": "Presence of remnant guerrilla factions and narcotics trafficking",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 25.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/peru",
+          "tier": 2,
+          "title": "Ookla Speedtest Peru"
+        }
+      ],
+      "evidence_quote": "Peru mobile download speed averages 25.4 Mbps across Claro, Movistar, and Entel",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 92.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/peru",
+          "tier": 2,
+          "title": "Ookla Speedtest Peru Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Peru averages 92.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Claro and Entel Peru. Tourist SIM cards are sold at Lima Jorge Chávez Airport with passport biometric validation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.osiptel.gob.pe",
+          "tier": 1,
+          "title": "Organismo Supervisor de Inversion Privada en Telecomunicaciones (OSIPTEL)"
+        }
+      ],
+      "evidence_quote": "Prepaid mobile registration requires passport biometric verification under OSIPTEL rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/pe/es/",
+        "tier": 1,
+        "title": "Uber Peru"
+      }
+    },
+    {
+      "name": "Cabify",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://cabify.com/pe",
+        "tier": 1,
+        "title": "Cabify Peru"
+      }
+    },
+    {
+      "name": "InDrive",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Peru"
+      }
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.pe",
+        "tier": 1,
+        "title": "PedidosYa Peru"
+      }
+    },
+    {
+      "name": "Yape",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.yape.com.pe",
+        "tier": 1,
+        "title": "Yape BCP E-Wallet Peru"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roma Katolikliği (~76%), Evanjelik Hristiyanlık (~14%), Dinsiz (~5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.inei.gob.pe",
+          "tier": 1,
+          "title": "Instituto Nacional de Estadistica e Informatica (INEI) Census"
+        }
+      ],
+      "evidence_quote": "Catholicism is the predominant faith harmonized with ancestral Andean cosmovision",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Fiestas Patrias (28-29 Temmuz), Inti Raymi (Güneş Festivali, Cusco, 24 Haziran), Señor de los Milagros (Ekim)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.peru.travel",
+          "tier": 1,
+          "title": "PromPerú Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "Inti Raymi in Cusco and national Fiestas Patrias celebrate Peru's Inca and republican heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Cusco ve Puno gibi yüksek rakımlı bölgelerde irtifa hastalığına (soroche) karşı ilk gün dinlenilmeli ve bol su içilmelidir. Machu Picchu biletleri aylar öncesinden resmi bakanlık sitesinden (tuboleto.cultura.pe) alınmalıdır. Orijinal İnka taşlarına ve kalıntılarına dokunmak kesinlikle yasaktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.peru.travel",
+          "tier": 1,
+          "title": "PromPerú Practical Travel Guidelines"
+        }
+      ],
+      "evidence_quote": "Book Machu Picchu entrance tickets well in advance; acclimatize properly to prevent high altitude sickness",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş yaygın ve olağandır. Yerel İnka Yolu hamallarına ve rehberlerine bahşiş teamüldür.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.peru.travel",
+          "tier": 1,
+          "title": "Peru Travel Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent in restaurants and tipping mountain trekking porters is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Machu Picchu Kutsal İnka Kalesi (UNESCO)",
+        "en": "Historic Sanctuary of Machu Picchu (UNESCO)",
+        "de": "Historisches Heiligtum von Machu Picchu",
+        "ru": "Святилище Мачу-Пикчу (ЮНЕСКО)",
+        "es": "Santuario Histórico de Machu Picchu"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/274",
+          "tier": 1,
+          "title": "UNESCO Historic Sanctuary of Machu Picchu"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Cusco Tarihi Şehri ve Kutsal Vadi (UNESCO)",
+        "en": "City of Cuzco and Sacred Valley (UNESCO)",
+        "de": "Stadt Cuzco und Heiliges Tal",
+        "ru": "Город Куско и Священная долина (ЮНЕСКО)",
+        "es": "Ciudad del Cusco y Valle Sagrado"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/273",
+          "tier": 1,
+          "title": "UNESCO City of Cuzco"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Nazca Çizgileri ve Jeoglifleri (UNESCO)",
+        "en": "Lines and Geoglyphs of Nasca and Palpa",
+        "de": "Linien und Geoglyphen von Nasca und Palpa",
+        "ru": "Линии и геоглифы Наски (ЮНЕСКО)",
+        "es": "Líneas y Geoglifos de Nasca y Palpa"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/700",
+          "tier": 1,
+          "title": "UNESCO Lines and Geoglyphs of Nasca and Palpa"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Machu Picchu Kutsal İnka Kalesi ve Huayna Picchu Dağı (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/pe-480.webp",
+        "attribution_text": "Machu Picchu and Huayna Picchu, Peru. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Machu Picchu Kutsal İnka Kalesi, Peru",
+          "en": "Machu Picchu Historic Sanctuary and Huayna Picchu, Peru",
+          "de": "Machu Picchu und Huayna Picchu, Peru",
+          "ru": "Мачу-Пикчу и гора Уайна-Пикчу, Перу",
+          "es": "Santuario Histórico de Machu Picchu y Huayna Picchu, Perú"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "peru",
+      "en": "peru",
+      "de": "peru",
+      "ru": "peru",
+      "es": "peru"
+    },
+    "title": {
+      "tr": "Peru Vize Rehberi, Machu Picchu ve Yükseklik Uyarısı | Vizamigo",
+      "en": "Peru Visa Guide, Machu Picchu Booking & Altitude Tips | Vizamigo",
+      "de": "Peru Visum-Leitfaden, Machu Picchu & Höhenkrankheit | Vizamigo",
+      "ru": "Виза в Перу, Мачу-Пикчу и советы по горной болезни | Vizamigo",
+      "es": "Guía de Visa de Perú, Machu Picchu y Consejos de Altitud | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Peru vize kuralları (90 gün vizesiz), Machu Picchu bilet rezervasyonu, irtifa hastalığı (soroche) önlemleri, priz tipleri ve Cusco rehberi.",
+      "en": "Peru visa policies (90 days visa-free), Machu Picchu ticket booking, altitude sickness advice, and Type A/B/C dual sockets.",
+      "de": "Peru Visabestimmungen (90 Tage visafrei), Machu Picchu Buchung, Höhenanpassung und Steckertypen A/B/C.",
+      "ru": "Визовые правила Перу (90 дней без визы), бронирование Мачу-Пикчу, горная болезнь сороче и розетки A/B/C.",
+      "es": "Requisitos de visa para Perú (90 días sin visa), reservas para Machu Picchu, soroche y enchufes A/B/C."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

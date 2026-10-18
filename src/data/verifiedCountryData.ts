@@ -60,6 +60,12 @@ import QA from './countries/QA.json';
 import JO from './countries/JO.json';
 import ME from './countries/ME.json';
 import AZ from './countries/AZ.json';
+import TN from './countries/TN.json';
+import CL from './countries/CL.json';
+import PE from './countries/PE.json';
+import CR from './countries/CR.json';
+import UY from './countries/UY.json';
+import RS from './countries/RS.json';
 
 export interface VerifiedSource {
   url: string;
@@ -254,6 +260,12 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   JO: JO as unknown as VerifiedCountryRecord,
   ME: ME as unknown as VerifiedCountryRecord,
   AZ: AZ as unknown as VerifiedCountryRecord,
+  TN: TN as unknown as VerifiedCountryRecord,
+  CL: CL as unknown as VerifiedCountryRecord,
+  PE: PE as unknown as VerifiedCountryRecord,
+  CR: CR as unknown as VerifiedCountryRecord,
+  UY: UY as unknown as VerifiedCountryRecord,
+  RS: RS as unknown as VerifiedCountryRecord,
 };
 
 /**

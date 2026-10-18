@@ -1,0 +1,468 @@
+{
+  "iso2": "TN",
+  "names": {
+    "tr": "Tunus",
+    "en": "Tunisia",
+    "de": "Tunesien",
+    "ru": "Тунис",
+    "es": "Túnez"
+  },
+  "capital": {
+    "value": "Tunus",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.commune-tunis.gov.tn",
+        "tier": 1,
+        "title": "Municipality of Tunis"
+      }
+    ],
+    "evidence_quote": "Tunis is the capital and largest city of the Republic of Tunisia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TND",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bct.gov.tn",
+        "tier": 1,
+        "title": "Central Bank of Tunisia (BCT)"
+      }
+    ],
+    "evidence_quote": "The Tunisian Dinar (TND) is the official currency of Tunisia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.carthage.tn",
+        "tier": 1,
+        "title": "Presidency of the Republic of Tunisia"
+      }
+    ],
+    "evidence_quote": "Tunisia observes Central European Time UTC+1 year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.steg.com.tn",
+          "tier": 1,
+          "title": "Societe Tunisienne de l'Electricite et du Gaz (STEG)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase voltage in Tunisia is 230V AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.steg.com.tn",
+          "tier": 1,
+          "title": "STEG Tunisia"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout the Tunisian power system is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.innorpi.tn",
+          "tier": 1,
+          "title": "National Institute of Standardization and Industrial Property (INNORPI)"
+        }
+      ],
+      "evidence_quote": "Tunisia uses European standard Type C and French-style grounded Type E sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "197",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interieur.gov.tn",
+          "tier": 1,
+          "title": "Ministry of Interior Tunisia"
+        }
+      ],
+      "evidence_quote": "National police emergency dispatch in Tunisian urban areas is 197",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "190",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.santetunisie.rns.tn",
+          "tier": 1,
+          "title": "Ministry of Health Tunisia (SAMU)"
+        }
+      ],
+      "evidence_quote": "Emergency medical assistance (SAMU) operates nationwide on hotline 190",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "198",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.onpc.nat.tn",
+          "tier": 1,
+          "title": "Office National de la Protection Civile"
+        }
+      ],
+      "evidence_quote": "Civil protection and firefighting emergency services are contacted via 198",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interieur.gov.tn",
+          "tier": 1,
+          "title": "Ministry of Interior Tunisia Emergency"
+        }
+      ],
+      "evidence_quote": "112 emergency calls from mobile phones route to civil defense central dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "197",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.discovertunisia.com",
+          "tier": 1,
+          "title": "Tunisian National Tourist Office"
+        }
+      ],
+      "evidence_quote": "Tourist security units operate across coastal resorts through police hotline 197",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Tunisia Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/tunisia",
+          "tier": 1,
+          "title": "UK FCDO Tunisia Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Sahil tatil beldeleri güvenlidir; güney çöl sınır bölgelerinden uzak durun",
+      "en": "Exercise Increased Caution: Coastal resorts safe; avoid remote southern border regions near Libya",
+      "de": "Erhöhte Vorsicht: Küstenurlaubsorte sicher; Grenzregionen zu Libyen meiden",
+      "ru": "Повышенная осторожность: курорты безопасны, избегайте границы с Ливией",
+      "es": "Mayor precaución: centros turísticos costeros seguros; evite zonas fronterizas con Libia"
+    },
+    "regional_warnings": [
+      {
+        "area": "Within 30 km of the border with Libya and Chaambi Mountains",
+        "level": 4,
+        "reason": "Terrorism risks and military exclusion zones",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 34.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tunisia",
+          "tier": 2,
+          "title": "Ookla Speedtest Tunisia"
+        }
+      ],
+      "evidence_quote": "Tunisia mobile download speed averages 34.2 Mbps across Ooredoo, Orange, and TT",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 15.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tunisia",
+          "tier": 2,
+          "title": "Ookla Speedtest Tunisia Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Tunisia averages 15.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Ooredoo and Orange Tunisie. Physical tourist SIMs are sold at Tunis-Carthage Airport with mandatory passport registration under INT rules.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.intt.tn",
+          "tier": 1,
+          "title": "Instance Nationale des Telecommunications (INT)"
+        }
+      ],
+      "evidence_quote": "SIM card registration mandates valid passport verification under INT regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-tn/",
+        "tier": 1,
+        "title": "Bolt Tunisia"
+      }
+    },
+    {
+      "name": "InDrive",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Tunis"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/tn/fr/",
+        "tier": 1,
+        "title": "Glovo Tunisia"
+      }
+    },
+    {
+      "name": "Yassir",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://yassir.com/tn/",
+        "tier": 2,
+        "title": "Yassir Tunisia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (~99%), Hristiyanlık ve Musevilik (~1%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ins.tn",
+          "tier": 1,
+          "title": "National Institute of Statistics Tunisia (INS)"
+        }
+      ],
+      "evidence_quote": "Islam is the religion of the state alongside historic Jewish heritage in Djerba",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bağımsızlık Günü (20 Mart), Cumhuriyet Bayramı (25 Temmuz), Uluslararası Kartaca Festivali (Temmuz-Ağustos), Cerbe Ghriba Hac Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.discovertunisia.com",
+          "tier": 1,
+          "title": "Discover Tunisia Festivals"
+        }
+      ],
+      "evidence_quote": "Independence Day on March 20 and International Festival of Carthage are celebrated nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Tunus Dinarı kapalı bir para birimidir; ülke dışına nakit dinar çıkarılması yasaktır, kalan dinarlar havalimanında makbuzla tekrar dövize çevrilmelidir. Dron sokulması kesinlikle izne tabidir; gümrükte el konur. Prizler Avrupa standardı Tip C ve E'dir (230V).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.douane.gov.tn",
+          "tier": 1,
+          "title": "Tunisian Customs Currency and Drone Regulations"
+        }
+      ],
+      "evidence_quote": "Export of Tunisian dinars is strictly prohibited; retain exchange receipts to reconvert funds at airport",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %5-10 bahşiş bırakmak yaygındır. Kafelerde ve taksilerde hesabı yukarı yuvarlamak adettendir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.discovertunisia.com",
+          "tier": 1,
+          "title": "Discover Tunisia Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Leaving 5 to 10 percent in restaurants and rounding up small change is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sidi Bou Said Mavi-Beyaz Sahil Köyü",
+        "en": "Sidi Bou Said Blue and White Village",
+        "de": "Sidi Bou Said Blau-Weißes Dorf",
+        "ru": "Бело-голубая деревня Сиди-бу-Саид",
+        "es": "Pueblo Blanco y Azul de Sidi Bou Said"
+      },
+      "type": "coastal_village",
+      "sources": [
+        {
+          "url": "https://www.discovertunisia.com",
+          "tier": 1,
+          "title": "Discover Tunisia Sidi Bou Said"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kartaca Antik Kenti Arkeolojik Alanı (UNESCO)",
+        "en": "Archaeological Site of Carthage (UNESCO)",
+        "de": "Archäologische Stätte von Karthago",
+        "ru": "Археологические раскопки Карфагена (ЮНЕСКО)",
+        "es": "Sitio Arqueológico de Cartago"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/37",
+          "tier": 1,
+          "title": "UNESCO Archaeological Site of Carthage"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "El Cem Roma Amfitiyatrosu (UNESCO)",
+        "en": "Amphitheatre of El Jem (UNESCO)",
+        "de": "Amphitheater von El Djem",
+        "ru": "Римский амфитеатр в Эль-Джеме",
+        "es": "Anfiteatro de El Djem"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/38",
+          "tier": 1,
+          "title": "UNESCO Amphitheatre of El Jem"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sidi Bou Said Mavi-Beyaz Uçurum Sahil Köyü",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/tn-480.webp",
+        "attribution_text": "Sidi Bou Said cliffside village, Tunisia. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Sidi Bou Said Mavi-Beyaz Köyü, Tunus",
+          "en": "Sidi Bou Said Blue and White Cliffside Village, Tunisia",
+          "de": "Sidi Bou Said weiß-blaues Dorf, Tunesien",
+          "ru": "Бело-голубая деревня Сиди-бу-Саид, Тунис",
+          "es": "Pueblo blanco y azul de Sidi Bou Said, Túnez"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "tunus",
+      "en": "tunisia",
+      "de": "tunesien",
+      "ru": "tunis",
+      "es": "tunez"
+    },
+    "title": {
+      "tr": "Tunus Vize Rehberi, Sidi Bou Said ve Seyahat Tavsiyeleri | Vizamigo",
+      "en": "Tunisia Visa Guide, Sidi Bou Said & Travel Essentials | Vizamigo",
+      "de": "Tunesien Visum-Leitfaden, Sidi Bou Said & Reisen | Vizamigo",
+      "ru": "Виза в Тунис, Сиди-бу-Саид и советы путешественникам | Vizamigo",
+      "es": "Guía de Visa de Túnez, Sidi Bou Said y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Tunus vize muafiyeti (90 gün), Sidi Bou Said köyü, para birimi dinar kuralları, priz tipleri (C, E) ve seyahat rehberi.",
+      "en": "Tunisia visa rules (90-day visa-free for many passports), Sidi Bou Said village, dinar currency controls, and Type C/E plugs.",
+      "de": "Tunesien Visabestimmungen (90 Tage visafrei), Sidi Bou Said, Dinar-Währungsvorschriften und Steckertypen C/E.",
+      "ru": "Визовые правила Туниса (90 дней без визы), Сиди-бу-Саид, валютный контроль динара и розетки C/E.",
+      "es": "Requisitos de visa para Túnez, pueblo de Sidi Bou Said, normas de moneda dinar y enchufes C/E."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

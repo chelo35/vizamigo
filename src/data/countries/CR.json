@@ -1,0 +1,457 @@
+{
+  "iso2": "CR",
+  "names": {
+    "tr": "Kosta Rika",
+    "en": "Costa Rica",
+    "de": "Costa Rica",
+    "ru": "Коста-Рика",
+    "es": "Costa Rica"
+  },
+  "capital": {
+    "value": "San José",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.msj.go.cr",
+        "tier": 1,
+        "title": "Municipality of San Jose"
+      }
+    ],
+    "evidence_quote": "San Jose is the capital and largest city of the Republic of Costa Rica",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CRC",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bccr.fi.cr",
+        "tier": 1,
+        "title": "Central Bank of Costa Rica (BCCR)"
+      }
+    ],
+    "evidence_quote": "The Costa Rican Colon (CRC) is the official currency of Costa Rica",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.presidencia.go.cr",
+        "tier": 1,
+        "title": "Presidency of Costa Rica Official Time"
+      }
+    ],
+    "evidence_quote": "Costa Rica operates on Central Standard Time UTC-6 year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://aresep.go.cr",
+          "tier": 1,
+          "title": "Autoridad Reguladora de los Servicios Publicos (ARESEP)"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity in Costa Rica is supplied at 120 volts",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://aresep.go.cr",
+          "tier": 1,
+          "title": "ARESEP Costa Rica"
+        }
+      ],
+      "evidence_quote": "Power grid frequency across Costa Rica operates at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.inteco.org",
+          "tier": 1,
+          "title": "Instituto de Normas Tecnicas de Costa Rica (INTECO)"
+        }
+      ],
+      "evidence_quote": "Electrical sockets adhere to North American Type A flat blade and Type B grounded standards",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.seguridadpublica.go.cr",
+          "tier": 1,
+          "title": "Ministry of Public Security Costa Rica"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch connects through the nationwide 9-1-1 service",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cruzroja.or.cr",
+          "tier": 1,
+          "title": "Cruz Roja Costarricense (Costa Rican Red Cross)"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance requests are coordinated directly through 9-1-1",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomberos.go.cr",
+          "tier": 1,
+          "title": "Benemerito Cuerpo de Bomberos de Costa Rica"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is integrated into central 9-1-1",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.911.go.cr",
+          "tier": 1,
+          "title": "Sistema de Emergencias 9-1-1 Costa Rica"
+        }
+      ],
+      "evidence_quote": "9-1-1 is the central emergency number for all public safety and rescue calls in Costa Rica",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "2226-1026",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ict.go.cr",
+          "tier": 1,
+          "title": "Instituto Costarricense de Turismo (ICT)"
+        }
+      ],
+      "evidence_quote": "Policia Turistica operates dedicated bilingual stations and helpline 2226 1026",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Costa Rica Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/costa-rica",
+          "tier": 1,
+          "title": "UK FCDO Costa Rica Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Milli parklar ve ekoturizm bölgeleri güvenlidir; şehirlerde hırsızlığa dikkat edin",
+      "en": "Exercise Increased Caution: National parks very safe; practice petty theft vigilance in urban areas",
+      "de": "Erhöhte Vorsicht: Nationalparks sehr sicher; Wachsamkeit vor Taschendiebstahl in Städten",
+      "ru": "Повышенная осторожность: национальные парки безопасны, следите за вещами в городах",
+      "es": "Mayor precaución: parques nacionales muy seguros; mantenga precaución contra hurtos en ciudades"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 48.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/costa-rica",
+          "tier": 2,
+          "title": "Ookla Speedtest Costa Rica"
+        }
+      ],
+      "evidence_quote": "Costa Rica mobile download speed averages 48.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 115.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/costa-rica",
+          "tier": 2,
+          "title": "Ookla Speedtest Costa Rica Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Costa Rica averages 115.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Kolbi (ICE), Liberty, and Claro. Prepaid tourist SIM cards are sold at Juan Santamaria Airport with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://sutel.go.cr",
+          "tier": 1,
+          "title": "Superintendencia de Telecomunicaciones (SUTEL)"
+        }
+      ],
+      "evidence_quote": "SUTEL mandates original passport identification for prepaid mobile service activation",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/cr/es/",
+        "tier": 1,
+        "title": "Uber Costa Rica"
+      }
+    },
+    {
+      "name": "DiDi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://web.didiglobal.com/cr/",
+        "tier": 1,
+        "title": "DiDi Costa Rica"
+      }
+    },
+    {
+      "name": "Waze",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.waze.com",
+        "tier": 1,
+        "title": "Waze (Dominant Navigation App in Costa Rica)"
+      }
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.cr",
+        "tier": 1,
+        "title": "PedidosYa Costa Rica"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roma Katolikliği (~62%), Evanjelik Protestanlık (~25%), Dinsiz (~11%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://inec.cr",
+          "tier": 1,
+          "title": "Instituto Nacional de Estadistica y Censos (INEC)"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism is the state religion under the constitution alongside full religious freedom",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bağımsızlık Günü (15 Eylül), Melekler Meryemi Hacı (Romería a Cartago, 2 Ağustos), Zapote Şenlikleri (Aralık)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ict.go.cr",
+          "tier": 1,
+          "title": "Costa Rica Tourism Board Traditions"
+        }
+      ],
+      "evidence_quote": "Independence Day and Romeria to Cartago are celebrated with deep national pride",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "'Pura Vida' (Saf Hayat) ulusal felsefedir; sabır, güleryüz ve çevreye saygı esastır. Prizler Amerikan tipi A ve B standardındadır (120V / 60Hz). Musluk suyu çoğu büyük şehir ve otelde içilebilir kalitededir. Milli parklarda tek kullanımlık plastik şişeler yasaktır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sinac.go.cr",
+          "tier": 1,
+          "title": "Sistema Nacional de Areas de Conservacion (SINAC)"
+        }
+      ],
+      "evidence_quote": "SINAC prohibits single-use plastics across national parks; Pura Vida embodies national lifestyle",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoran hesaplarına kanunen %10 servis ücreti ve %13 KDV dahildir; ekstra bahşiş zorunlu değildir ancak iyi hizmet için küçük yuvarlama yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ict.go.cr",
+          "tier": 1,
+          "title": "Costa Rica Tourism Board Tipping"
+        }
+      ],
+      "evidence_quote": "A 10 percent service charge is included in restaurant checks by Costa Rican law",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Arenal Volkanı ve Tabacón Kaplıcaları",
+        "en": "Arenal Volcano and Hot Springs",
+        "de": "Vulkan Arenal und heiße Quellen",
+        "ru": "Вулкан Ареналь и термальные источники",
+        "es": "Volcán Arenal y Aguas Termales"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.sinac.go.cr",
+          "tier": 1,
+          "title": "SINAC Arenal Volcano National Park"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Monteverde Bulut Ormanı Koruma Alanı",
+        "en": "Monteverde Cloud Forest Biological Reserve",
+        "de": "Biologisches Reservat Monteverde",
+        "ru": "Биологический заповедник Монтеверде",
+        "es": "Reserva Biológica Bosque Nuboso Monteverde"
+      },
+      "type": "cloud_forest",
+      "sources": [
+        {
+          "url": "https://cloudforestmonteverde.com",
+          "tier": 1,
+          "title": "Monteverde Cloud Forest Reserve"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Manuel Antonio Milli Parkı ve Plajları",
+        "en": "Manuel Antonio National Park",
+        "de": "Nationalpark Manuel Antonio",
+        "ru": "Национальный парк Мануэль-Антонио",
+        "es": "Parque Nacional Manuel Antonio"
+      },
+      "type": "national_park",
+      "sources": [
+        {
+          "url": "https://www.sinac.go.cr",
+          "tier": 1,
+          "title": "SINAC Manuel Antonio National Park"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Arenal Volkanı Simetrik Konisi ve Yağmur Ormanı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/cr-480.webp",
+        "attribution_text": "Arenal Volcano conical peak and rainforest in Costa Rica. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Arenal Volkanı ve Yağmur Ormanları, Kosta Rika",
+          "en": "Arenal Volcano and Rainforest Canopy, Costa Rica",
+          "de": "Vulkan Arenal und Regenwald, Costa Rica",
+          "ru": "Вулкан Ареналь и тропический лес, Коста-Рика",
+          "es": "Volcán Arenal y selva tropical, Costa Rica"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kosta-rika",
+      "en": "costa-rica",
+      "de": "costa-rica",
+      "ru": "kosta-rika",
+      "es": "costa-rica"
+    },
+    "title": {
+      "tr": "Kosta Rika Vize Rehberi, Arenal ve Ekoturizm | Vizamigo",
+      "en": "Costa Rica Visa Guide, Arenal & Ecotourism Travel | Vizamigo",
+      "de": "Costa Rica Visum-Leitfaden, Arenal & Ökotourismus | Vizamigo",
+      "ru": "Виза в Коста-Рику, вулкан Ареналь и экотуризм | Vizamigo",
+      "es": "Guía de Visa de Costa Rica, Arenal y Ecoturismo | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kosta Rika vize politikası (90 gün vizesiz), Arenal volkanı, Pura Vida kültürü, priz tipleri (A, B) ve ekoturizm seyahat rehberi.",
+      "en": "Costa Rica visa rules (90 days visa-free), Arenal Volcano, Pura Vida lifestyle, Type A/B plugs, and ecotourism guide.",
+      "de": "Costa Rica Visabestimmungen (90 Tage visafrei), Vulkan Arenal, Pura Vida Lebensgefühl und Steckertypen A/B.",
+      "ru": "Визовые правила Коста-Рики (90 дней без визы), вулкан Ареналь, философия Pura Vida и розетки A/B.",
+      "es": "Requisitos de visa para Costa Rica (90 días sin visa), Volcán Arenal, filosofía Pura Vida y enchufes A/B."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
