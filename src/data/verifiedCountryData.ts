@@ -147,6 +147,7 @@ import TJ from './countries/TJ.json';
 import BT from './countries/BT.json';
 import BN from './countries/BN.json';
 import MM from './countries/MM.json';
+import TL from './countries/TL.json';
 import DZ from './countries/DZ.json';
 import ET from './countries/ET.json';
 import SN from './countries/SN.json';

@@ -40,7 +40,7 @@ function computeCombinedLevel(agencies: any[]): number | null {
 function updateCountryFile(filePath: string): boolean {
   const raw = fs.readFileSync(filePath, 'utf-8');
   const errors: any[] = [];
-  const data = jsonParse(raw, errors, { allowTrailingComma: true, allowComments: true });
+  const data = jsonParse(raw, errors, { allowTrailingComma: true });
   if (errors.length) {
     console.warn(`⚠️ Skipping ${filePath}: JSON parse errors`);
     return false;

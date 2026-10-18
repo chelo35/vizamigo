@@ -4,7 +4,7 @@
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
     "module": "ESNext",
-    "types": ["vite/client", "google.maps"],
+    // Types are auto‑included; removed explicit "vite/client" and "google.maps" entries
     "lib": [
       "ES2022",
       "DOM",
