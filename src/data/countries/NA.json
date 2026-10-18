@@ -1,0 +1,436 @@
+{
+  "iso2": "NA",
+  "names": {
+    "tr": "Namibya",
+    "en": "Namibia",
+    "de": "Namibia",
+    "ru": "Намибия",
+    "es": "Namibia"
+  },
+  "capital": {
+    "value": "Windhoek",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.windhoekcc.org.na",
+        "tier": 1,
+        "title": "City of Windhoek Official Portal"
+      }
+    ],
+    "evidence_quote": "Windhoek is the capital and largest city of the Republic of Namibia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "NAD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bon.com.na",
+        "tier": 1,
+        "title": "Bank of Namibia"
+      }
+    ],
+    "evidence_quote": "The Namibia Dollar (NAD) is pegged 1:1 with the South African Rand; ZAR is legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (CAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.na",
+        "tier": 1,
+        "title": "Government of the Republic of Namibia"
+      }
+    ],
+    "evidence_quote": "Namibia observes Central Africa Time UTC+2 year-round with no seasonal clock changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nampower.com.na",
+          "tier": 1,
+          "title": "NamPower National Power Utility"
+        }
+      ],
+      "evidence_quote": "Standard residential alternating supply voltage across Namibia is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nampower.com.na",
+          "tier": 1,
+          "title": "NamPower"
+        }
+      ],
+      "evidence_quote": "National electrical grid alternating frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Namibia predominantly utilize South African large three-round-pin Type M and Type D sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "10111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nampol.gov.na",
+          "tier": 1,
+          "title": "Namibian Police Force (NAMPOL)"
+        }
+      ],
+      "evidence_quote": "Dial 10111 for emergency police response across Namibia",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "211111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.windhoekcc.org.na",
+          "tier": 1,
+          "title": "City of Windhoek Emergency Management"
+        }
+      ],
+      "evidence_quote": "Call 061 211111 or private EMS for emergency ambulance services in Windhoek",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "211111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.windhoekcc.org.na",
+          "tier": 1,
+          "title": "City of Windhoek Fire Brigade"
+        }
+      ],
+      "evidence_quote": "Call 061 211111 for municipal fire and technical rescue brigades",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nampol.gov.na",
+          "tier": 1,
+          "title": "NAMPOL"
+        }
+      ],
+      "evidence_quote": "112 functions as the cellular emergency dispatch number in Namibia",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+264 61 284 2111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.namibiatourism.com.na",
+          "tier": 1,
+          "title": "Namibia Tourism Board (NTB)"
+        }
+      ],
+      "evidence_quote": "Tourist assistance and road safety emergency lines operate in Windhoek and Swakopmund",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/namibia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Namibya genelinde güvenlik seviyesi yüksektir; çöl yollarında 4x4 araç ve bol su taşınması hayati önemdedir.",
+      "en": "Namibia is peaceful and politically stable; carry ample water and spare tires on remote gravel desert roads.",
+      "de": "Namibia ist ein friedliches Reiseland; auf Schotterpisten ausreichend Wasser und Ersatzreifen mitführen.",
+      "ru": "В Намибии спокойная обстановка; на гравийных дорогах пустыни обязательно имейте запас воды и колес.",
+      "es": "Namibia es muy tranquila y segura; lleve suficiente agua y ruedas de repuesto en rutas de ripio."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 28.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/namibia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Namibia measure approximately 28.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 44.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/namibia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Namibia reach 44.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "MTC Namibia and Telecom Namibia offer 4G tourist eSIMs. Connectivity is strong in Windhoek and Swakopmund, but nonexistent in deep Namib-Naukluft desert dunes; download offline satellite GPS maps before venturing out.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mtc.com.na",
+          "tier": 1,
+          "title": "MTC Namibia"
+        }
+      ],
+      "evidence_quote": "Prepaid Aweh packages provide high-speed mobile data across urban towns",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "LEFA",
+      "category": "taxi",
+      "popular": true,
+      "description": "Namibia's top-rated on-demand ride-hailing app connecting passengers with licensed drivers in Windhoek."
+    },
+    {
+      "name": "PayToday",
+      "category": "payments",
+      "popular": true,
+      "description": "Widely used Namibian peer-to-peer and merchant mobile payment app."
+    },
+    {
+      "name": "Tracks4Africa",
+      "category": "maps",
+      "popular": true,
+      "description": "Essential GPS mapping guide for self-drive 4x4 expeditions across Namibian gravel routes."
+    },
+    {
+      "name": "MTC App",
+      "category": "transport",
+      "popular": true,
+      "description": "Official app for managing mobile bundles, Aweh plans, and data balances."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri turistik seyahatlerde 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://mha.gov.na",
+        "tier": 1,
+        "title": "Namibya İçişleri, Göç ve Güvenlik Bakanlığı"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can travel to Namibia visa-free for tourist stays of up to 90 days per calendar year.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://mha.gov.na",
+        "tier": 1,
+        "title": "Ministry of Home Affairs, Immigration, Safety and Security of Namibia"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not require a visa for tourist visits of up to 90 days in Namibia.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://mha.gov.na",
+        "tier": 1,
+        "title": "Ministry of Home Affairs of Namibia"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Namibia visa-free for tourist stays of up to 90 days in a calendar year.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/namibia/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать в Намибию без визы на срок до 90 дней в течение одного календарного года.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://mha.gov.na",
+        "tier": 1,
+        "title": "Министерство внутренних дел Намибии"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Namibia Digital Nomad Visa",
+    "min_income_usd": 2000,
+    "duration_months": 6,
+    "source": {
+      "url": "https://nipdb.net/nomadvisa/",
+      "tier": 1,
+      "title": "Namibia Investment Promotion and Development Board (NIPDB)"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Rent a 4x4 with dual spare tires for self-drive",
+        "description": "Namibia's stunning landscapes are connected by unpaved gravel roads (C & D roads); reduce tire pressure and carry two spares."
+      },
+      {
+        "title": "Use South African Rand (ZAR) interchangeably",
+        "description": "South African Rand banknotes are legal tender everywhere in Namibia at 1:1; note that Namibian Dollars are not accepted back in South Africa."
+      },
+      {
+        "title": "Climb Dune 45 at sunrise in Sossusvlei",
+        "description": "Enter Sesriem gate at dawn to see the iconic red dunes of Deadvlei cast dramatic golden shadows."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't drive faster than 80 km/h on gravel roads",
+        "description": "Loose gravel causes severe rollover accidents; keep speeds moderate and avoid sudden braking."
+      },
+      {
+        "title": "Don't touch or disturb ancient rock art",
+        "description": "Twyfelfontein rock petroglyphs (UNESCO) are fragile archaeological treasures; never touch or spray water on engravings."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in restaurants; tipping car guards (N$5-10) who watch vehicles in supermarket parking lots is standard practice."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sossusvlei Deadvlei Kurumuş Akasyalar ve Kırmızı Kumullar",
+        "license": "CC BY-SA 4.0",
+        "author": "Diego Delso",
+        "source_url": "/images/countries/na-480.webp",
+        "attribution_text": "Deadvlei ancient camelthorn trees against red sand dunes in Sossusvlei, Namibia. Diego Delso, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Sossusvlei Deadvlei Kurumuş Akasyalar ve Kırmızı Kumullar, Namibya",
+          "en": "Sossusvlei Deadvlei Ancient Trees & Red Sand Dunes, Namibia",
+          "de": "Sossusvlei Deadvlei Ton-Pfanne & Rote Riesendünen, Namibia",
+          "ru": "Мёртвое плато Дедвлей и красные песчаные дюны Соссусфлей, Намибия",
+          "es": "Deadvlei de Sossusvlei Árboles Milenarios y Dunas Rojas, Namibia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "namibya",
+      "en": "namibia",
+      "de": "namibia",
+      "ru": "namibiya",
+      "es": "namibia"
+    },
+    "title": {
+      "tr": "Namibya Vize Rehberi, 90 Gün Vizesiz Giriş ve Sossusvlei Deadvlei | Vizamigo",
+      "en": "Namibia Visa Guide, 90-Day Visa-Free & Sossusvlei Deadvlei Travel | Vizamigo",
+      "de": "Namibia Visum-Leitfaden, 90 Tage visafrei & Sossusvlei Deadvlei | Vizamigo",
+      "ru": "Виза в Намибию, 90 дней без визы и дюны Соссусфлей | Vizamigo",
+      "es": "Guía de Visa de Namibia, 90 Días sin Visa y Deadvlei de Sossusvlei | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Namibya Türk pasaportuna 90 gün vizesiz giriş, Güney Afrika Randı kullanımı, 4x4 çöl sürüşü, Tip M prizler ve Deadvlei gezi rehberi.",
+      "en": "Namibia 90-day visa-free rules, South African Rand acceptance, self-drive 4x4 desert tips, Type M plugs, and Deadvlei guide.",
+      "de": "Namibia 90 Tage visafreie Einreise, ZAR-Währungsakzeptanz, 4x4-Selbstfahrertipps und Reisetipps Sossusvlei Deadvlei.",
+      "ru": "Правила въезда в Намибию на 90 дней без визы, южноафриканский рэнд, сафари на 4x4 и плато Дедвлей.",
+      "es": "Requisitos de entrada sin visa a Namibia (90 días), uso del rand sudafricano y guía para visitar Sossusvlei Deadvlei."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,442 @@
+{
+  "iso2": "UG",
+  "names": {
+    "tr": "Uganda",
+    "en": "Uganda",
+    "de": "Uganda",
+    "ru": "Уганда",
+    "es": "Uganda"
+  },
+  "capital": {
+    "value": "Kampala",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.kcca.go.ug",
+        "tier": 1,
+        "title": "Kampala Capital City Authority (KCCA)"
+      }
+    ],
+    "evidence_quote": "Kampala is the capital and largest commercial metropolis of the Republic of Uganda",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "UGX",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bou.or.ug",
+        "tier": 1,
+        "title": "Bank of Uganda (BOU)"
+      }
+    ],
+    "evidence_quote": "The Uganda Shilling (UGX) is the legal national currency of Uganda",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (EAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.statehouse.go.ug",
+        "tier": 1,
+        "title": "State House Uganda"
+      }
+    ],
+    "evidence_quote": "Uganda observes East Africa Time UTC+3 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.era.go.ug",
+          "tier": 1,
+          "title": "Electricity Regulatory Authority (ERA) Uganda"
+        }
+      ],
+      "evidence_quote": "Standard single-phase consumer supply voltage in Uganda is 240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.era.go.ug",
+          "tier": 1,
+          "title": "Electricity Regulatory Authority"
+        }
+      ],
+      "evidence_quote": "The national electrical power grid operates continuously at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Sockets in Uganda adhere strictly to the British three-rectangular-pin Type G design",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.upf.go.ug",
+          "tier": 1,
+          "title": "Uganda Police Force (UPF)"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 112 for emergency police assistance throughout Uganda",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.go.ug",
+          "tier": 1,
+          "title": "Ministry of Health of Uganda"
+        }
+      ],
+      "evidence_quote": "Call 911 or Red Cross ambulance services for urgent medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.upf.go.ug/fire-rescue/",
+          "tier": 1,
+          "title": "UPF Directorate of Fire Prevention and Rescue"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.upf.go.ug",
+          "tier": 1,
+          "title": "Uganda Police Force"
+        }
+      ],
+      "evidence_quote": "112 operates as the unified toll-free cellular emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+256 714 667 792",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.utb.go.ug",
+          "tier": 1,
+          "title": "Uganda Tourism Board (UTB)"
+        }
+      ],
+      "evidence_quote": "Specialised Tourist Police Department coordinates 24/7 security escorts in national parks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/uganda",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Bwindi ve Queen Elizabeth milli parkları silahlı korucular eşliğinde güvenlidir; DRC sınır ormanlarına dikkat edilmelidir.",
+      "en": "Bwindi Impenetrable Forest and safari parks are secured by armed wildlife rangers; exercise caution near DRC borders.",
+      "de": "Bwindi-Nationalpark und Safarigebiete werden durch Ranger gesichert; Grenznähe zur DR Kongo meiden.",
+      "ru": "Национальные парки Бвинди и Королевы Елизаветы охраняются рейнджерами UWA; будьте осторожны у границы с ДРК.",
+      "es": "Los parques Bwindi y Queen Elizabeth están custodiados por guardaparques armados; precaución cerca de la RDC."
+    },
+    "regional_warnings": [
+      {
+        "area": "Western Border with DRC and Karamoja region",
+        "level": 3,
+        "reason": "Presence of armed rebel groups in neighboring DRC forests and cattle rustling incidents.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disaster": "low",
+      "health": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 28.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/uganda",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Uganda reach approximately 28.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 39.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/uganda",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Uganda measure 39.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All visitors must apply for an electronic visa online at visas.immigration.go.ug before departure. MTN Uganda and Airtel offer prepaid 4G tourist eSIMs; yellow fever vaccination card is mandatory at immigration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visas.immigration.go.ug",
+          "tier": 1,
+          "title": "Uganda Electronic Visa/Permit Application System"
+        }
+      ],
+      "evidence_quote": "All visa applications must be completed online prior to passenger arrival",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "SafeBoda",
+      "category": "taxi",
+      "popular": true,
+      "description": "Uganda's renowned motorcycle taxi hailing app; drivers are trained and provide clean passenger helmets."
+    },
+    {
+      "name": "Uber / Bolt",
+      "category": "taxi",
+      "popular": true,
+      "description": "Widely available car taxi-hailing apps in Kampala and Entebbe."
+    },
+    {
+      "name": "Jumia Food",
+      "category": "food",
+      "popular": true,
+      "description": "Leading restaurant meal and grocery delivery platform in Kampala."
+    },
+    {
+      "name": "MTN MoMo",
+      "category": "payments",
+      "popular": true,
+      "description": "Ubiquitous mobile money payment service accepted across Uganda."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eVisa Required",
+      "duration_days": 90,
+      "conditions": "Türk vatandaşları seyahatten önce online e-Visa (visas.immigration.go.ug, 50$) veya Doğu Afrika Vizesi (100$) almak zorundadır. Sarıhumma aşı kartı zorunludur.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visas.immigration.go.ug",
+        "tier": 1,
+        "title": "Uganda Göç İdaresi e-Visa Portalı"
+      }
+    },
+    "us": {
+      "regime": "eVisa Required",
+      "duration_days": 90,
+      "conditions": "US citizens must obtain an approved eVisa online ($50 USD) or East Africa Tourist Visa prior to arrival.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visas.immigration.go.ug",
+        "tier": 1,
+        "title": "Uganda e-Visa Portal"
+      }
+    },
+    "de": {
+      "regime": "eVisa Required",
+      "duration_days": 90,
+      "conditions": "German and EU citizens must secure an approved electronic visa prior to departure.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visas.immigration.go.ug",
+        "tier": 1,
+        "title": "Uganda e-Visa Portal"
+      }
+    },
+    "gb": {
+      "regime": "eVisa Required",
+      "duration_days": 90,
+      "conditions": "British passport holders must apply for and receive an eVisa approval letter online before traveling to Uganda.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/uganda/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "eVisa Required",
+      "duration_days": 90,
+      "conditions": "Граждане РФ должны оформить электронную визу (eVisa) на сайте visas.immigration.go.ug до вылета в Уганду.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://visas.immigration.go.ug",
+        "tier": 1,
+        "title": "Портал eVisa Уганды"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Carry an official Yellow Fever vaccination certificate",
+        "description": "Proof of yellow fever vaccination is legally mandatory for all arriving travelers aged 1 year and older."
+      },
+      {
+        "title": "Use SafeBoda for motorcycle rides in Kampala",
+        "description": "Boda-bodas are the fastest way through Kampala traffic, but SafeBoda drivers are trained and supply passenger helmets."
+      },
+      {
+        "title": "Try the famous 'Rolex' street food",
+        "description": "A 'Rolex' (rolled eggs) is a delicious omelet with tomatoes rolled inside a freshly griddled hot chapati."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't track gorillas if feeling sick with a cold",
+        "description": "Gorillas share 98% of human DNA and have no immunity to human respiratory viruses; rangers will turn away sick tourists."
+      },
+      {
+        "title": "Don't photograph military or government convoys",
+        "description": "Photography of military personnel, state installations, or Entebbe airport checkpoint zones is strictly forbidden."
+      }
+    ],
+    "tipping": "Tipping 10% in sit-down restaurants is customary; tipping gorilla trackers and UWA rangers ($10-15 per day) is customary."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bwindi Geçilmez Ormanı Dağ Gorili (UNESCO)",
+        "license": "CC BY-SA 4.0",
+        "author": "Charles J. Sharp",
+        "source_url": "/images/countries/ug-480.webp",
+        "attribution_text": "Mountain gorilla feeding in Bwindi Impenetrable National Park, Uganda. Charles J. Sharp, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Bwindi Geçilmez Ormanı Dağ Gorili, Uganda",
+          "en": "Mountain Gorilla in Bwindi Impenetrable National Park, Uganda",
+          "de": "Berggorilla im Bwindi-Regenwald-Nationalpark, Uganda",
+          "ru": "Горная горилла в национальном парке Бвинди, Уганда",
+          "es": "Gorila de Montaña en la Selva Impenetrable de Bwindi, Uganda"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "uganda",
+      "en": "uganda",
+      "de": "uganda",
+      "ru": "uganda",
+      "es": "uganda"
+    },
+    "title": {
+      "tr": "Uganda Vize Rehberi, Online eVisa ve Bwindi Goril Safarisi | Vizamigo",
+      "en": "Uganda Visa Guide, Online eVisa & Bwindi Gorilla Trekking | Vizamigo",
+      "de": "Uganda Visum-Leitfaden, eVisa & Bwindi Gorillatrekking | Vizamigo",
+      "ru": "Виза в Уганду, электронная виза и гориллы в парке Бвинди | Vizamigo",
+      "es": "Guía de Visa de Uganda, eVisa Online y Gorilas de Bwindi | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Uganda online e-Visa şartları, zorunlu sarıhumma aşısı, SafeBoda motosiklet uygulaması ve Bwindi dağ gorili takip rehberi.",
+      "en": "Uganda online eVisa rules, mandatory yellow fever certificate, SafeBoda app, Type G plugs, and Bwindi gorilla trekking tips.",
+      "de": "Uganda eVisa-Bestimmungen, Gelbfieberimpfpflicht, SafeBoda App und Reisetipps Bwindi Gorillatrekking.",
+      "ru": "Правила оформления eVisa в Уганду, сертификат от желтой лихорадки, приложение SafeBoda и гориллы в Бвинди.",
+      "es": "Requisitos de visa electrónica para Uganda, certificado de fiebre amarilla, app SafeBoda y gorilas de Bwindi."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

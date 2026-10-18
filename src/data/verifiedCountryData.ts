@@ -104,6 +104,13 @@ import KW from './countries/KW.json';
 import MC from './countries/MC.json';
 import SM from './countries/SM.json';
 import LI from './countries/LI.json';
+import SC from './countries/SC.json';
+import NA from './countries/NA.json';
+import BW from './countries/BW.json';
+import ZW from './countries/ZW.json';
+import RW from './countries/RW.json';
+import UG from './countries/UG.json';
+import CV from './countries/CV.json';
 
 export interface VerifiedSource {
   url: string;
@@ -342,6 +349,13 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   MC: MC as unknown as VerifiedCountryRecord,
   SM: SM as unknown as VerifiedCountryRecord,
   LI: LI as unknown as VerifiedCountryRecord,
+  SC: SC as unknown as VerifiedCountryRecord,
+  NA: NA as unknown as VerifiedCountryRecord,
+  BW: BW as unknown as VerifiedCountryRecord,
+  ZW: ZW as unknown as VerifiedCountryRecord,
+  RW: RW as unknown as VerifiedCountryRecord,
+  UG: UG as unknown as VerifiedCountryRecord,
+  CV: CV as unknown as VerifiedCountryRecord,
 };
 
 /**

@@ -1,0 +1,427 @@
+{
+  "iso2": "BW",
+  "names": {
+    "tr": "Botsvana",
+    "en": "Botswana",
+    "de": "Botswana",
+    "ru": "Ботсвана",
+    "es": "Botsuana"
+  },
+  "capital": {
+    "value": "Gaborone",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.bw",
+        "tier": 1,
+        "title": "Government of Botswana Official Portal"
+      }
+    ],
+    "evidence_quote": "Gaborone is the capital and administrative, political, and economic hub of Botswana",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BWP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bankofbotswana.bw",
+        "tier": 1,
+        "title": "Bank of Botswana"
+      }
+    ],
+    "evidence_quote": "The Botswana Pula (BWP) is the official national currency of Botswana",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (CAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.bw",
+        "tier": 1,
+        "title": "Government of Botswana"
+      }
+    ],
+    "evidence_quote": "Botswana observes Central Africa Time UTC+2 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bpc.bw",
+          "tier": 1,
+          "title": "Botswana Power Corporation (BPC)"
+        }
+      ],
+      "evidence_quote": "Domestic electricity in Botswana is supplied at 230V alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bpc.bw",
+          "tier": 1,
+          "title": "Botswana Power Corporation"
+        }
+      ],
+      "evidence_quote": "National alternating transmission frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "G",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Electrical sockets in Botswana support British Type G and South African Type D and M plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.bw",
+          "tier": 1,
+          "title": "Botswana Police Service (BPS)"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency police assistance throughout Botswana",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "997",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.bw",
+          "tier": 1,
+          "title": "Ministry of Health of Botswana"
+        }
+      ],
+      "evidence_quote": "Call 997 for emergency medical ambulance and hospital dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "998",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.bw",
+          "tier": 1,
+          "title": "Emergency Services Botswana"
+        }
+      ],
+      "evidence_quote": "Dial 998 for municipal fire brigades and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.bw",
+          "tier": 1,
+          "title": "Botswana Police Service"
+        }
+      ],
+      "evidence_quote": "112 operates as the nationwide mobile emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/botswana",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Botsvana Afrika kıtasının en güvenli, huzurlu ve istikrarlı ülkesidir; standart seyahat tedbirleri yeterlidir.",
+      "en": "Botswana is one of the safest and most stable democracies in Africa; exercise normal precautions.",
+      "de": "Botswana ist eines der sichersten und stabilsten Reiseländer Afrikas; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Ботсвана — одна из самых безопасных и стабильных стран Африки; действуют обычные меры предосторожности.",
+      "es": "Botsuana es uno de los países más seguros y estables de África; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 34.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/botswana",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Botswana reach approximately 34.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 48.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/botswana",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Botswana measure 48.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Mascom and Orange Botswana provide prepaid 4G/LTE tourist eSIMs. Connectivity is fast in Gaborone, Maun, and Kasane, but remote Okavango Delta lodges rely on private satellite internet; carry offline maps.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mascom.bw",
+          "tier": 1,
+          "title": "Mascom Wireless Botswana"
+        }
+      ],
+      "evidence_quote": "Mascom covers over 95% of populated centers across Botswana",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Orange Money / MyMascom",
+      "category": "payments",
+      "popular": true,
+      "description": "Essential mobile money platforms widely used for cashless merchant and transfer payments."
+    },
+    {
+      "name": "MyChobe",
+      "category": "other",
+      "popular": true,
+      "description": "Safari guide app featuring wildlife sightings, river cruise schedules, and Chobe National Park info."
+    },
+    {
+      "name": "Tracks4Africa",
+      "category": "maps",
+      "popular": true,
+      "description": "Indispensable offline 4x4 GPS trail navigator for Okavango Delta and Moremi Game Reserve tracks."
+    },
+    {
+      "name": "Google Maps",
+      "category": "maps",
+      "popular": true,
+      "description": "Accurate navigation for Gaborone, Francistown, and paved highway corridors (A1/A3)."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Türkiye Cumhuriyeti umuma mahsus, hususi ve hizmet pasaportu hamilleri turistik seyahatlerde 90 güne kadar vizeden muaftır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.bw/visa",
+        "tier": 1,
+        "title": "Department of Immigration and Citizenship of Botswana"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Botswana visa-free for tourist stays of up to 90 days in any 12-month period.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.bw/visa",
+        "tier": 1,
+        "title": "Government of Botswana"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens do not need a visa for tourist visits of up to 90 days in Botswana.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.bw/visa",
+        "tier": 1,
+        "title": "Government of Botswana"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens do not require a visa to visit Botswana for stays of up to 90 days.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/botswana/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут въезжать в Ботсвану без визы на срок до 90 дней с туристическими целями.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.bw/visa",
+        "tier": 1,
+        "title": "Департамент иммиграции Ботсваны"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Experience an Okavango Delta Mokoro canoe trip",
+        "description": "Gliding silently through the papyrus channels of the Okavango Delta in a traditional wooden or fiberglass canoe (Mokoro) is unforgettable."
+      },
+      {
+        "title": "Greet with 'Dumela' (Hello in Setswana)",
+        "description": "'Dumela Rra' (to a man) or 'Dumela Mma' (to a woman) is the polite customary greeting across Botswana."
+      },
+      {
+        "title": "Respect Botswana's world-class conservation laws",
+        "description": "Botswana maintains low-impact, high-value eco-tourism; never litter, feed animals, or collect animal horns or bones."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't drive off-road in national parks",
+        "description": "Strict park regulations in Chobe and Moremi prohibit off-roading to protect delicate riverbank habitats."
+      },
+      {
+        "title": "Don't swim in open rivers or lagoons",
+        "description": "Okavango and Chobe waterways are home to large populations of wild hippos and Nile crocodiles; never swim in open water."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in restaurants; tipping safari field guides ($10-15/day) and Mokoro polers ($5-10/excursion) is standard practice."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Okavango Deltası Kanalları ve Mokoro Kanoları (UNESCO)",
+        "license": "CC BY-SA 3.0",
+        "author": "diego_cue",
+        "source_url": "/images/countries/bw-480.webp",
+        "attribution_text": "Sunset and traditional mokoro canoes in the Okavango Delta, Botswana. diego_cue, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Okavango Deltası Kanalları ve Mokoro Kanoları, Botsvana",
+          "en": "Okavango Delta Waterways & Mokoro Canoes, Botswana",
+          "de": "Okavangodelta Wasserwege & Mokoro-Kanus, Botswana",
+          "ru": "Водные пути дельты Окаванго и каноэ мокоро, Ботсвана",
+          "es": "Canales del Delta del Okavango y Canoas Mokoro, Botsuana"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "botsvana",
+      "en": "botswana",
+      "de": "botswana",
+      "ru": "botsvana",
+      "es": "botsuana"
+    },
+    "title": {
+      "tr": "Botsvana Vize Rehberi, 90 Gün Vizesiz Seyahat ve Okavango Deltası | Vizamigo",
+      "en": "Botswana Visa Guide, 90-Day Visa-Free & Okavango Delta Safari | Vizamigo",
+      "de": "Botswana Visum-Leitfaden, 90 Tage visafrei & Okavangodelta Safari | Vizamigo",
+      "ru": "Виза в Ботсвану, 90 дней без визы и сафари в дельте Окаванго | Vizamigo",
+      "es": "Guía de Visa de Botsuana, 90 Días sin Visa y Delta del Okavango | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Botsvana Türk pasaportuna 90 gün vizesiz giriş, Pula para birimi, Mokoro kano turları, Chobe safari parkı ve Okavango Deltası gezi rehberi.",
+      "en": "Botswana 90-day visa-free rules, Pula currency, Mokoro canoe safaris, Chobe National Park, and Okavango Delta travel tips.",
+      "de": "Botswana 90 Tage visafreie Einreise, Pula-Währung, Mokoro-Kanutouren und Reisetipps Okavangodelta Safari.",
+      "ru": "Правила въезда в Ботсвану на 90 дней без визы, валюта пула, каноэ мокоро и сафари в дельте Окаванго.",
+      "es": "Requisitos de entrada sin visa a Botsuana (90 días), moneda pula, safaris en canoas mokoro y guía del Delta del Okavango."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

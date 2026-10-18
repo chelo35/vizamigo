@@ -1,0 +1,430 @@
+{
+  "iso2": "CV",
+  "names": {
+    "tr": "Cabo Verde",
+    "en": "Cape Verde",
+    "de": "Kap Verde",
+    "ru": "Кабо-Верде",
+    "es": "Cabo Verde"
+  },
+  "capital": {
+    "value": "Praia",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cmpraia.cv",
+        "tier": 1,
+        "title": "Câmara Municipal da Praia"
+      }
+    ],
+    "evidence_quote": "Praia is the capital and largest city of the island nation of Cabo Verde on Santiago island",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CVE",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcv.cv",
+        "tier": 1,
+        "title": "Banco de Cabo Verde (BCV)"
+      }
+    ],
+    "evidence_quote": "The Cape Verdean Escudo (CVE) is pegged to the Euro at a fixed parity of 1 EUR = 110.265 CVE",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-1 (CVT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://governo.cv",
+        "tier": 1,
+        "title": "Governo de Cabo Verde"
+      }
+    ],
+    "evidence_quote": "Cabo Verde observes Cape Verde Time UTC-1 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.electra.cv",
+          "tier": 1,
+          "title": "Electra Empresa de Electricidade e Água"
+        }
+      ],
+      "evidence_quote": "Domestic electricity in Cabo Verde operates at 230V alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.electra.cv",
+          "tier": 1,
+          "title": "Electra"
+        }
+      ],
+      "evidence_quote": "Island grid alternating frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Cabo Verde accommodate European Type C and grounded Type F Schuko plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "132",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policianacional.cv",
+          "tier": 1,
+          "title": "Polícia Nacional de Cabo Verde"
+        }
+      ],
+      "evidence_quote": "Dial 132 for emergency police assistance throughout Cabo Verde",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "130",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://minsaude.gov.cv",
+          "tier": 1,
+          "title": "Ministério da Saúde de Cabo Verde"
+        }
+      ],
+      "evidence_quote": "Call 130 for emergency medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "131",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://snpc.gov.cv",
+          "tier": 1,
+          "title": "Serviço Nacional de Proteção Civil e Bombeiros"
+        }
+      ],
+      "evidence_quote": "Dial 131 for fire and civil protection rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://governo.cv",
+          "tier": 1,
+          "title": "Governo de Cabo Verde"
+        }
+      ],
+      "evidence_quote": "112 functions as the primary emergency operator number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/cape-verde",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Sal, Boa Vista ve tatil adaları son derece huzurludur; olağan seyahat tedbirleri yeterlidir.",
+      "en": "Cabo Verde is peaceful and politically stable; exercise normal travel precautions on beach resorts.",
+      "de": "Kap Verde ist ein sehr friedliches und stabiles Reiseziel; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Кабо-Верде — спокойный и безопасный островной курорт; действуют стандартные меры предосторожности.",
+      "es": "Cabo Verde es pacífico y políticamente estable; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 35.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cape-verde",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Cabo Verde reach approximately 35.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 54.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/cape-verde",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Cabo Verde measure 54.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All international visitors must register on the EASE online portal (ease.gov.cv) and pay the Airport Security Tax (TSA) prior to departure. Unitel T+ and Alou (CV Telecom) provide 4G tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ease.gov.cv",
+          "tier": 1,
+          "title": "EASE Pre-Registration Platform"
+        }
+      ],
+      "evidence_quote": "Pre-registration on EASE and payment of the TSA fee is required for all arriving air travelers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "EASE Cabo Verde",
+      "category": "other",
+      "popular": true,
+      "description": "Official government pre-registration platform for paying the mandatory airport security tax."
+    },
+    {
+      "name": "CV Interilhas",
+      "category": "transport",
+      "popular": true,
+      "description": "Official passenger ferry booking platform connecting São Vicente, Santo Antão, Sal, and Santiago."
+    },
+    {
+      "name": "Vinti4",
+      "category": "payments",
+      "popular": true,
+      "description": "National interbank ATM and point-of-sale network accepted throughout Cabo Verde."
+    },
+    {
+      "name": "Google Maps",
+      "category": "maps",
+      "popular": true,
+      "description": "Reliable navigation for resort towns in Sal, Boa Vista, and the capital Praia."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VoA / EASE",
+      "duration_days": 30,
+      "conditions": "Türk vatandaşları havalimanında Kapıda Vize (VoA - ~25€) alabilir. Tüm yolcular seyahatten önce www.ease.gov.cv üzerinden ön kayıt yaptırmalı ve TSA vergisini ödemelidir.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://ease.gov.cv",
+        "tier": 1,
+        "title": "Cabo Verde EASE Ön Kayıt Sistemi"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "US citizens can enter Cabo Verde visa-free for up to 30 days; pre-registration on EASE (paying the TSA fee) is mandatory.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://ease.gov.cv",
+        "tier": 1,
+        "title": "EASE Cabo Verde"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "German and EU citizens enter Cabo Verde visa-free for up to 30 days with mandatory EASE TSA pre-registration.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://ease.gov.cv",
+        "tier": 1,
+        "title": "EASE Cabo Verde"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 30,
+      "conditions": "British passport holders can visit Cabo Verde visa-free for up to 30 days with required EASE pre-registration.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/cape-verde/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 60,
+      "conditions": "Граждане РФ могут въезжать в Кабо-Верде без визы на срок до 60 дней. Обязательна регистрация на портале EASE.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://ease.gov.cv",
+        "tier": 1,
+        "title": "Портал EASE Кабо-Верде"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Cabo Verde Remote Working Program",
+    "min_income_usd": 1650,
+    "duration_months": 6,
+    "source": {
+      "url": "https://www.remoteworkingcaboverde.com",
+      "tier": 1,
+      "title": "Cabo Verde Tourism Institute"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Register on the EASE portal before departure",
+        "description": "Pre-registering and paying the TSA airport security fee on ease.gov.cv avoids long queues and customs delays on arrival."
+      },
+      {
+        "title": "Enjoy Morna music and the spirit of 'Morabeza'",
+        "description": "Experience live traditional Morna music made famous by Cesária Évora; 'Morabeza' represents deep warm island hospitality."
+      },
+      {
+        "title": "Use Euros directly where convenient",
+        "description": "Because the Escudo is pegged to the Euro (1 EUR = 110 CVE), many hotels, restaurants, and taxis happily accept Euros."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't swim on beaches with red warning flags",
+        "description": "Atlantic ocean undertows can be powerful on unprotected open shores; always swim in protected bays like Santa Maria."
+      },
+      {
+        "title": "Don't drink tap water",
+        "description": "Tap water in Cabo Verde is produced by desalination and is not intended for direct drinking; drink bottled water."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in sit-down restaurants in tourist centers like Santa Maria and Sal Rei for attentive service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sal Adası Santa Maria Sahili ve Turkuaz Okyanus",
+        "license": "CC BY-SA 3.0",
+        "author": "Cayambe",
+        "source_url": "/images/countries/cv-480.webp",
+        "attribution_text": "Santa Maria white sand beach and turquoise ocean on Sal Island, Cabo Verde. Cayambe, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Sal Adası Santa Maria Sahili ve Turkuaz Okyanus, Cabo Verde",
+          "en": "Santa Maria Beach & Turquoise Waters, Sal Island, Cape Verde",
+          "de": "Strand von Santa Maria & türkisfarbenes Meer, Insel Sal, Kap Verde",
+          "ru": "Пляж Санта-Мария и лазурный океан, остров Сал, Кабо-Верде",
+          "es": "Playa de Santa Maria y Aguas Turquesas, Isla de Sal, Cabo Verde"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "cabo-verde",
+      "en": "cape-verde",
+      "de": "kap-verde",
+      "ru": "kabo-verde",
+      "es": "cabo-verde"
+    },
+    "title": {
+      "tr": "Cabo Verde Vize Rehberi, EASE Ön Kayıt ve Sal Adası Gezisi | Vizamigo",
+      "en": "Cabo Verde Visa Guide, EASE Registration & Sal Island Travel | Vizamigo",
+      "de": "Kap Verde Visum-Leitfaden, EASE-Registrierung & Insel Sal | Vizamigo",
+      "ru": "Виза в Кабо-Верде, регистрация EASE и пляжи острова Сал | Vizamigo",
+      "es": "Guía de Visa de Cabo Verde, Registro EASE e Isla de Sal | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Cabo Verde vize ve EASE ön kayıt şartları, Euro kuru sabitliği, Morabeza misafirperverliği ve Sal Adası Santa Maria plajı gezi rehberi.",
+      "en": "Cabo Verde entry rules, mandatory EASE pre-registration, Euro peg, Remote Working visa, and Sal Island beach tips.",
+      "de": "Kap Verde Einreisebestimmungen, EASE-Vorregistrierung, feste Euro-Bindung und Reisetipps Insel Sal.",
+      "ru": "Правила въезда в Кабо-Верде, предварительная регистрация EASE, евро и путеводитель по острову Сал.",
+      "es": "Requisitos de entrada a Cabo Verde, prerregistro EASE obligatorio y guía de viaje a la Isla de Sal."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

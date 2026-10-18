@@ -1,0 +1,443 @@
+{
+  "iso2": "RW",
+  "names": {
+    "tr": "Ruanda",
+    "en": "Rwanda",
+    "de": "Ruanda",
+    "ru": "Руанда",
+    "es": "Ruanda"
+  },
+  "capital": {
+    "value": "Kigali",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kigalicity.gov.rw",
+        "tier": 1,
+        "title": "City of Kigali Official Portal"
+      }
+    ],
+    "evidence_quote": "Kigali is the capital and largest city of Rwanda, renowned as the cleanest city in Africa",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "RWF",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bnr.rw",
+        "tier": 1,
+        "title": "National Bank of Rwanda (BNR)"
+      }
+    ],
+    "evidence_quote": "The Rwandan Franc (RWF) is the official currency of the Republic of Rwanda",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (CAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.rw",
+        "tier": 1,
+        "title": "Government of Rwanda"
+      }
+    ],
+    "evidence_quote": "Rwanda observes Central Africa Time UTC+2 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.reg.rw",
+          "tier": 1,
+          "title": "Rwanda Energy Group (REG)"
+        }
+      ],
+      "evidence_quote": "Standard domestic electrical supply in Rwanda operates at 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.reg.rw",
+          "tier": 1,
+          "title": "Rwanda Energy Group"
+        }
+      ],
+      "evidence_quote": "Operating electrical grid frequency in Rwanda is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "J"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Rwanda utilize European Type C and Swiss Type J plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.rw",
+          "tier": 1,
+          "title": "Rwanda National Police (RNP)"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency police intervention across Rwanda",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "912",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.rw",
+          "tier": 1,
+          "title": "Ministry of Health of Rwanda"
+        }
+      ],
+      "evidence_quote": "Call 912 for emergency SAMU medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.rw/fire-and-rescue/",
+          "tier": 1,
+          "title": "RNP Fire and Rescue Brigade"
+        }
+      ],
+      "evidence_quote": "Dial 111 for fire and technical rescue emergency services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.rw",
+          "tier": 1,
+          "title": "Rwanda National Police"
+        }
+      ],
+      "evidence_quote": "112 serves as the primary unified national emergency operator number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+250 788 311 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitrwanda.com",
+          "tier": 1,
+          "title": "Rwanda Development Board (RDB)"
+        }
+      ],
+      "evidence_quote": "Tourist Protection Unit division provides dedicated safety patrols in Volcanoes and Nyungwe national parks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/rwanda",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Kigali ve Ruanda genelinde güvenlik seviyesi en üst düzeydedir; DRC sınır boylarında dikkatli olunmalıdır.",
+      "en": "Kigali is remarkably safe and clean; exercise normal travel precautions, staying mindful near the DRC border.",
+      "de": "Kigali ist außerordentlich sicher und sauber; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Кигали — один из самых безопасных и чистых городов мира; действуют обычные правила предосторожности.",
+      "es": "Kigali es extraordinariamente segura y limpia; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [
+      {
+        "area": "Western Border with DRC (Rubavu/Goma border zone)",
+        "level": 2,
+        "reason": "Occasional border friction and rebel conflicts across the border in eastern DRC.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 36.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/rwanda",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Rwanda reach approximately 36.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 52.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/rwanda",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Rwanda measure 52.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "MTN Rwanda and Airtel provide high-speed 4G prepaid tourist eSIMs. MTN Mobile Money (MoMo) is universally accepted everywhere. Single-use plastic bags are strictly prohibited by law.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mtn.co.rw",
+          "tier": 1,
+          "title": "MTN Rwanda"
+        }
+      ],
+      "evidence_quote": "MTN MoMo mobile payment network is ubiquitous across all commerce in Rwanda",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yego Moto / Yego Cab",
+      "category": "taxi",
+      "popular": true,
+      "description": "The official metered ride-hailing app for licensed moto-taxis and cabs in Kigali."
+    },
+    {
+      "name": "Vuba Vuba",
+      "category": "food",
+      "popular": true,
+      "description": "Leading Rwandan on-demand food delivery app covering top Kigali restaurants."
+    },
+    {
+      "name": "Move by VW",
+      "category": "taxi",
+      "popular": true,
+      "description": "Eco-friendly electric car ride-booking app operating Volkswagen vehicles in Kigali."
+    },
+    {
+      "name": "Tap & Go",
+      "category": "transport",
+      "popular": true,
+      "description": "Contactless smart card and mobile app for Kigali municipal city buses."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Tüm dünya vatandaşları gibi Türk vatandaşları da Kigali Havalimanı'nda Kapıda Vize (VoA - 30 gün, 50$) alabilir veya Doğu Afrika Vizesi ($100) seçebilir.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.migration.gov.rw",
+        "tier": 1,
+        "title": "Rwanda Directorate General of Immigration and Emigration"
+      }
+    },
+    "us": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "US citizens receive a 30-day Visa on Arrival upon arrival at Kigali International Airport ($50 USD).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.migration.gov.rw",
+        "tier": 1,
+        "title": "Rwanda Immigration"
+      }
+    },
+    "de": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "German and EU citizens obtain a 30-day Visa on Arrival at the port of entry ($50 USD fee).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.migration.gov.rw",
+        "tier": 1,
+        "title": "Rwanda Immigration"
+      }
+    },
+    "gb": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "British passport holders receive a 30-day tourist visa on arrival for a $50 USD fee.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/rwanda/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Граждане РФ получают визу по прибытии в аэропорту Кигали на 30 дней за 50 долларов США.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.migration.gov.rw",
+        "tier": 1,
+        "title": "Иммиграционная служба Руанды"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect the plastic bag ban (strictly enforced)",
+        "description": "Plastic carrier bags are illegal in Rwanda; baggage is searched at Kigali Airport, and paper or cloth bags are provided instead."
+      },
+      {
+        "title": "Wear a helmet on motorcycle taxis (Motos)",
+        "description": "Every moto-taxi rider in Kigali carries a clean passenger helmet by law; wearing it is mandatory and strictly enforced."
+      },
+      {
+        "title": "Observe Umuganda community day",
+        "description": "On the last Saturday morning of each month (08:00 - 11:00), public businesses pause for nationwide community service."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't step on manicured public lawns",
+        "description": "Kigali takes civic pride in immaculate streets and flowers; walk on paved sidewalks and avoid walking across green lawns."
+      },
+      {
+        "title": "Don't bring up ethnic labels in public conversation",
+        "description": "Post-genocide Rwanda emphasizes unified national identity ('Ndi Umunyarwanda' - We are all Rwandans); respect historical memorials."
+      }
+    ],
+    "tipping": "Tipping 10% is customary in restaurants in Kigali; tipping gorilla tracking guides and trackers ($15-20) in Volcanoes National Park is standard."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Volkanlar Ulusal Parkı Dağ Gorili (UNESCO)",
+        "license": "CC BY-SA 4.0",
+        "author": "Charles J. Sharp",
+        "source_url": "/images/countries/rw-480.webp",
+        "attribution_text": "Mountain gorilla in Volcanoes National Park, Rwanda. Charles J. Sharp, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Volkanlar Ulusal Parkı Dağ Gorili, Ruanda",
+          "en": "Mountain Gorilla in Volcanoes National Park, Rwanda",
+          "de": "Berggorilla im Volcanoes-Nationalpark, Ruanda",
+          "ru": "Горная горилла в национальном парке Вулканов, Руанда",
+          "es": "Gorila de Montaña en el Parque Nacional de los Volcanes, Ruanda"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "ruanda",
+      "en": "rwanda",
+      "de": "ruanda",
+      "ru": "ruanda",
+      "es": "ruanda"
+    },
+    "title": {
+      "tr": "Ruanda Vize Rehberi, Kapıda Vize (VoA) ve Dağ Gorilleri Gezisi | Vizamigo",
+      "en": "Rwanda Visa Guide, Visa on Arrival & Mountain Gorilla Trekking | Vizamigo",
+      "de": "Ruanda Visum-Leitfaden, Visa on Arrival & Berggorilla Trekking | Vizamigo",
+      "ru": "Виза в Руанду, виза по прибытии и треккинг к горным гориллам | Vizamigo",
+      "es": "Guía de Visa de Ruanda, Visa a la Llegada y Trekking con Gorilas | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Ruanda kapıda vize (VoA) şartları, plastik poşet yasağı, Umuganda günü, Yego Moto taksi ve Volkanlar Parkı dağ gorilleri rehberi.",
+      "en": "Rwanda 30-day Visa on Arrival rules, strict plastic bag ban, Umuganda day, Yego Moto app, and mountain gorilla safari tips.",
+      "de": "Ruanda Visa on Arrival Bestimmungen, Plastiktütenverbot, Umuganda-Gemeinschaftstag und Berggorilla-Trekking.",
+      "ru": "Правила визы по прибытии в Руанду, запрет на полиэтиленовые пакеты, субботник Умуганда и горные гориллы.",
+      "es": "Requisitos de Visa a la Llegada en Ruanda, prohibición de bolsas plásticas, app Yego Moto y gorilas de montaña."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

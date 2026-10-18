@@ -1,0 +1,429 @@
+{
+  "iso2": "SC",
+  "names": {
+    "tr": "Seyşeller",
+    "en": "Seychelles",
+    "de": "Seychellen",
+    "ru": "Сейшелы",
+    "es": "Seychelles"
+  },
+  "capital": {
+    "value": "Victoria",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.sc",
+        "tier": 1,
+        "title": "Government of Seychelles"
+      }
+    ],
+    "evidence_quote": "Victoria is the capital and primate town of the Republic of Seychelles on Mahé island",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "SCR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbs.sc",
+        "tier": 1,
+        "title": "Central Bank of Seychelles"
+      }
+    ],
+    "evidence_quote": "The Seychelles Rupee (SCR) is the official currency; Euros and USD are accepted in resorts",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (SCT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.statehouse.gov.sc",
+        "tier": 1,
+        "title": "State House Seychelles"
+      }
+    ],
+    "evidence_quote": "Seychelles operates year-round on Seychelles Time UTC+4 without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.puc.sc",
+          "tier": 1,
+          "title": "Public Utilities Corporation (PUC)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase low-voltage supply across Seychelles is 240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.puc.sc",
+          "tier": 1,
+          "title": "Public Utilities Corporation"
+        }
+      ],
+      "evidence_quote": "Alternating grid frequency throughout the inner islands is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Wall sockets in Seychelles strictly adhere to the British three-rectangular-pin Type G design",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.sc",
+          "tier": 1,
+          "title": "Seychelles Police Force"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 112 for emergency police services across the Seychelles",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "151",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.health.gov.sc",
+          "tier": 1,
+          "title": "Ministry of Health of Seychelles"
+        }
+      ],
+      "evidence_quote": "Call 151 for emergency medical services and hospital ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sfrsa.gov.sc",
+          "tier": 1,
+          "title": "Seychelles Fire and Rescue Services Agency (SFRSA)"
+        }
+      ],
+      "evidence_quote": "Dial 999 for fire and rescue emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.sc",
+          "tier": 1,
+          "title": "Seychelles Police Force"
+        }
+      ],
+      "evidence_quote": "112 serves as the international unified mobile emergency number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/seychelles",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Seyşeller dünyanın en huzurlu ve güvenli ada destinasyonlarındandır; standart seyahat önlemleri yeterlidir.",
+      "en": "Seychelles is extremely peaceful and secure; exercise normal travel precautions.",
+      "de": "Die Seychellen sind ein sehr friedliches und sicheres Reiseziel; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Сейшелы — исключительно безопасный и спокойный курорт; действуют обычные правила предосторожности.",
+      "es": "Seychelles es un destino sumamente pacífico y seguro; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 38.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/seychelles",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Seychelles reach approximately 38.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 58.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/seychelles",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Seychelles measure 58.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "All inbound travelers must complete the digital Seychelles Travel Authorisation (seychelles.govtas.com) within 10 days before flight departure. Cable & Wireless and Airtel offer tourist eSIMs at Mahé International Airport.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://seychelles.govtas.com",
+          "tier": 1,
+          "title": "Seychelles Electronic Border System"
+        }
+      ],
+      "evidence_quote": "Approved Travel Authorisation certificate is mandatory for boarding flights to Seychelles",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Seychelles Travel App",
+      "category": "other",
+      "popular": true,
+      "description": "Official government platform for submitting mandatory digital Travel Authorisation (TA) forms."
+    },
+    {
+      "name": "Cat Cocos",
+      "category": "transport",
+      "popular": true,
+      "description": "Fast inter-island passenger catamaran ferry booking app linking Mahé, Praslin, and La Digue."
+    },
+    {
+      "name": "SPTC App",
+      "category": "transport",
+      "popular": true,
+      "description": "Seychelles Public Transport Corporation bus routes and cashless smart card top-ups on Mahé."
+    },
+    {
+      "name": "Seychelles Island Guide",
+      "category": "maps",
+      "popular": true,
+      "description": "Detailed offline trail and beach navigation app for Morne Seychellois National Park."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Seyşeller hiçbir ülkeden vize talep etmez; Türk vatandaşları 90 güne kadar vizesizdir. Uçuştan önce online Seyahat İzni (Travel Authorisation) formu doldurulmalıdır.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://seychelles.govtas.com",
+        "tier": 1,
+        "title": "Seyşeller Hükümeti Göç İdaresi"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Seychelles is a visa-free country for all nationalities; visitors must hold an approved Travel Authorisation and hotel booking.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://seychelles.govtas.com",
+        "tier": 1,
+        "title": "Seychelles Electronic Border System"
+      }
+    },
+    "de": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "German and EU citizens enter Seychelles visa-free with an approved online Travel Authorisation.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://seychelles.govtas.com",
+        "tier": 1,
+        "title": "Seychelles Electronic Border System"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British citizens do not require a visa for Seychelles; mandatory digital Travel Authorisation must be approved before travel.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/seychelles/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Граждане РФ въезжают на Сейшелы без визы на срок до 90 дней при наличии разрешения Travel Authorisation.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://seychelles.govtas.com",
+        "tier": 1,
+        "title": "Иммиграционная служба Сейшел"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Seychelles Workcation Program",
+    "min_income_usd": 1500,
+    "duration_months": 12,
+    "source": {
+      "url": "https://tourism.gov.sc",
+      "tier": 1,
+      "title": "Tourism Department Seychelles"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Complete the Travel Authorisation before flight check-in",
+        "description": "Airlines will deny boarding without the official digital approval QR code from seychelles.govtas.com."
+      },
+      {
+        "title": "Rent a bicycle on La Digue",
+        "description": "Motor vehicles are almost entirely prohibited on La Digue island; exploring by bicycle is the quintessential local experience."
+      },
+      {
+        "title": "Respect giant Aldabra tortoises and coral reefs",
+        "description": "Never feed wild tortoises human food or stand on corals when snorkeling at Saint-Anne Marine National Park."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't collect Coco de Mer nuts without an official permit",
+        "description": "The iconic double coconut is an endangered endemic species; unauthorized export carries heavy criminal penalties."
+      },
+      {
+        "title": "Don't swim during strong monsoon riptides",
+        "description": "Beaches like Anse Intendance on Mahé have dangerous seasonal undertows; heed warning flags."
+      }
+    ],
+    "tipping": "A 5-10% service charge is usually included in restaurant and hotel bills; leaving small extra cash tips for helpful staff is polite."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "La Digue Anse Source d'Argent Granit Kayalıkları",
+        "license": "CC BY-SA 4.0",
+        "author": "Bjørn Christian Tørrissen",
+        "source_url": "/images/countries/sc-480.webp",
+        "attribution_text": "Anse Source d'Argent pink granite boulders on La Digue island in Seychelles. Bjørn Christian Tørrissen, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "La Digue Anse Source d'Argent Granit Kayalıkları, Seyşeller",
+          "en": "Anse Source d'Argent Pink Granite Boulders & Turquoise Bay, La Digue, Seychelles",
+          "de": "Anse Source d'Argent Granitfelsen & Türkisbucht, Seychellen",
+          "ru": "Розовые гранитные скалы Анс Сурс д'Аржан, Сейшелы",
+          "es": "Rocas de Granito de Anse Source d'Argent, Seychelles"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "seyseller",
+      "en": "seychelles",
+      "de": "seychellen",
+      "ru": "seyshely",
+      "es": "seychelles"
+    },
+    "title": {
+      "tr": "Seyşeller Vize Rehberi, Online Seyahat İzni (TA) ve La Digue Gezisi | Vizamigo",
+      "en": "Seychelles Visa Guide, Travel Authorisation (TA) & La Digue Travel | Vizamigo",
+      "de": "Seychellen Visum-Leitfaden, Travel Authorisation & La Digue Reisen | Vizamigo",
+      "ru": "Виза на Сейшелы, Travel Authorisation и пляж Анс Сурс д'Аржан | Vizamigo",
+      "es": "Guía de Visa de Seychelles, Autorización de Viaje y La Digue | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Seyşeller tüm pasaportlara 90 gün vizesiz giriş, zorunlu Travel Authorisation formu, Cat Cocos feribotları ve La Digue granit kayaları gezi rehberi.",
+      "en": "Seychelles 90-day universal visa-free entry, mandatory online Travel Authorisation, Cat Cocos ferries, and La Digue beach tips.",
+      "de": "Seychellen 90 Tage universelle visafreie Einreise, Travel Authorisation Pflicht, Cat Cocos Fähren und La Digue Reisetipps.",
+      "ru": "Безвизовый въезд на Сейшелы на 90 дней, форма Travel Authorisation, паромы Cat Cocos и пляжи острова Ла-Диг.",
+      "es": "Entrada universal sin visa a Seychelles (90 días), formulario Travel Authorisation obligatorio y guía de La Digue."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

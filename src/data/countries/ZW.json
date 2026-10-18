@@ -1,0 +1,432 @@
+{
+  "iso2": "ZW",
+  "names": {
+    "tr": "Zimbabve",
+    "en": "Zimbabwe",
+    "de": "Simbabwe",
+    "ru": "Зимбабве",
+    "es": "Zimbabue"
+  },
+  "capital": {
+    "value": "Harare",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hararecity.co.zw",
+        "tier": 1,
+        "title": "City of Harare Official Portal"
+      }
+    ],
+    "evidence_quote": "Harare is the capital and largest commercial metropolis of Zimbabwe",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ZiG",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rbz.co.zw",
+        "tier": 1,
+        "title": "Reserve Bank of Zimbabwe (RBZ)"
+      }
+    ],
+    "evidence_quote": "Zimbabwe Gold (ZiG) is the official currency; US dollars circulate widely and are preferred in tourism",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (CAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.opc.gov.zw",
+        "tier": 1,
+        "title": "Office of the President and Cabinet of Zimbabwe"
+      }
+    ],
+    "evidence_quote": "Zimbabwe operates on Central Africa Time UTC+2 without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zesa.co.zw",
+          "tier": 1,
+          "title": "ZESA Holdings National Power Utility"
+        }
+      ],
+      "evidence_quote": "Standard domestic voltage across Zimbabwe is 220V single-phase alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zesa.co.zw",
+          "tier": 1,
+          "title": "ZESA Holdings"
+        }
+      ],
+      "evidence_quote": "Electrical power grid alternating frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Wall outlets in Zimbabwe accommodate British three-pin Type G and round-pin Type D plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "995",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zrp.gov.zw",
+          "tier": 1,
+          "title": "Zimbabwe Republic Police (ZRP)"
+        }
+      ],
+      "evidence_quote": "Dial 995 for emergency police services across Zimbabwe",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "994",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mohcc.gov.zw",
+          "tier": 1,
+          "title": "Ministry of Health and Child Care of Zimbabwe"
+        }
+      ],
+      "evidence_quote": "Call 994 or private EMS (MARS) for emergency medical ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "993",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hararecity.co.zw",
+          "tier": 1,
+          "title": "Harare Fire Brigade"
+        }
+      ],
+      "evidence_quote": "Dial 993 for municipal fire and technical rescue brigades",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zrp.gov.zw",
+          "tier": 1,
+          "title": "Zimbabwe Republic Police"
+        }
+      ],
+      "evidence_quote": "112 serves as the primary cellular emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+263 83 284 4293",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://zimbabwetourism.net",
+          "tier": 1,
+          "title": "Zimbabwe Tourism Authority (ZTA)"
+        }
+      ],
+      "evidence_quote": "Victoria Falls Tourist Police unit dedicated 24/7 post assists international park visitors",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Viktorya Şelaleleri ve safari milli parkları son derece güvenlidir; başkentte olağan yankesicilik önlemleri alınmalıdır.",
+      "en": "Victoria Falls and safari parks are exceptionally secure; exercise normal caution against petty theft in cities.",
+      "de": "Victoriafälle und Nationalparks sind sehr sicher; in Städten auf Taschendiebstahl achten.",
+      "ru": "Водопад Виктория и сафари-парки полностью безопасны; в городах соблюдайте осторожность от карманных краж.",
+      "es": "Las Cataratas Victoria y parques de safari son muy seguros; tome precauciones habituales en ciudades."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/zimbabwe",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Zimbabwe measure approximately 24.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 36.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/zimbabwe",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Zimbabwe reach 36.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "US Dollar cash (printed after 2013, clean and unblemished) is universally accepted and strongly preferred for visas, park entrance fees, and dining. Econet Wireless and NetOne provide tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.econet.co.zw",
+          "tier": 1,
+          "title": "Econet Wireless Zimbabwe"
+        }
+      ],
+      "evidence_quote": "Econet delivers extensive 4G cellular and roaming services across Victoria Falls and Harare",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "EcoCash",
+      "category": "payments",
+      "popular": true,
+      "description": "Zimbabwe's dominant mobile money platform for cashless local transactions."
+    },
+    {
+      "name": "Vaya",
+      "category": "taxi",
+      "popular": true,
+      "description": "Popular ride-hailing app for booking vetted, licensed taxis in Harare and Bulawayo."
+    },
+    {
+      "name": "Vic Falls Guide",
+      "category": "maps",
+      "popular": true,
+      "description": "Offline guide app for rainforest trails, helicopter flight of angels bookings, and gorge viewpoints."
+    },
+    {
+      "name": "Google Maps",
+      "category": "maps",
+      "popular": true,
+      "description": "Reliable city navigation for Victoria Falls town and major highway routes."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "VoA / eVisa",
+      "duration_days": 30,
+      "conditions": "Türk vatandaşları Kategori B kapsamındadır; havalimanında Kapıda Vize (VoA - 30$, tek giriş) alabilir veya KAZA UniVisa ($50) ile Zambiya ve Zimbabve'ye birlikte geçiş yapabilir.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.zw",
+        "tier": 1,
+        "title": "Department of Immigration Zimbabwe"
+      }
+    },
+    "us": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "US citizens can obtain a 30-day tourist Visa on Arrival ($30 USD) or purchase the dual-country KAZA UniVisa ($50).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.zw",
+        "tier": 1,
+        "title": "Zimbabwe e-Visa Portal"
+      }
+    },
+    "de": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "German and EU citizens receive a Visa on Arrival (Category B, $30) or KAZA UniVisa at ports of entry.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.zw",
+        "tier": 1,
+        "title": "Zimbabwe e-Visa Portal"
+      }
+    },
+    "gb": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "British passport holders can purchase a Visa on Arrival ($55 USD) or eligible KAZA UniVisa upon entry.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "VoA",
+      "duration_days": 30,
+      "conditions": "Граждане РФ получают визу по прибытии в аэропортах Хараре и Виктория-Фолс ($30) или оформляют KAZA UniVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.zw",
+        "tier": 1,
+        "title": "Иммиграционный департамент Зимбабве"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Buy the KAZA UniVisa ($50) if visiting Victoria Falls",
+        "description": "The KAZA UniVisa allows unlimited border crossings between Zimbabwe and Zambia for 30 days to view the falls from both sides."
+      },
+      {
+        "title": "Carry pristine US Dollar bills printed after 2013",
+        "description": "Torn, worn, or pre-2013 US dollar banknotes will be rejected at national park gates, hotels, and exchange counters."
+      },
+      {
+        "title": "Wear a waterproof poncho in the Victoria Falls rainforest",
+        "description": "The spray from the 'Smoke that Thunders' (Mosi-oa-Tunya) creates torrential rainforest conditions along the cliff trail."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't wear military camouflage clothing",
+        "description": "Wearing camouflage patterns or military attire is strictly illegal in Zimbabwe for civilians."
+      },
+      {
+        "title": "Don't photograph police roadblocks or government buildings",
+        "description": "Photographing state house, police checkposts, or defense personnel is strictly prohibited."
+      }
+    ],
+    "tipping": "Tipping 10-15% in US Dollar cash is standard in Victoria Falls restaurants; tipping safari and rafting guides ($10/day) is customary."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Viktorya Şelaleleri Kanyonu ve Gökkuşağı Sisi",
+        "license": "FAL",
+        "author": "Alchemist-hp (talk)",
+        "source_url": "/images/countries/zw-480.webp",
+        "attribution_text": "Victoria Falls gorge with rainbow mist spray in Zimbabwe. Alchemist-hp, FAL.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Viktorya Şelaleleri Kanyonu ve Gökkuşağı Sisi, Zimbabve",
+          "en": "Victoria Falls Gorge & Rainbow Mist Spray, Zimbabwe",
+          "de": "Victoriafälle-Schlucht mit Regenbogen-Sprühnebel, Simbabwe",
+          "ru": "Ущелье водопада Виктория и радужный водяной туман, Зимбабве",
+          "es": "Garganta de las Cataratas Victoria y Neblina con Arcoíris, Zimbabue"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "zimbabve",
+      "en": "zimbabwe",
+      "de": "simbabwe",
+      "ru": "zimbabve",
+      "es": "zimbabue"
+    },
+    "title": {
+      "tr": "Zimbabve Vize Rehberi, KAZA UniVisa ve Viktorya Şelaleleri Gezisi | Vizamigo",
+      "en": "Zimbabwe Visa Guide, KAZA UniVisa & Victoria Falls Travel | Vizamigo",
+      "de": "Simbabwe Visum-Leitfaden, KAZA UniVisa & Victoriafälle Reisen | Vizamigo",
+      "ru": "Виза в Зимбабве, KAZA UniVisa и водопад Виктория | Vizamigo",
+      "es": "Guía de Visa de Zimbabue, KAZA UniVisa y Cataratas Victoria | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Zimbabve kapıda vize (VoA) ve KAZA UniVisa şartları, ABD Doları kullanımı, kamuflaj yasağı ve Viktorya Şelaleleri gezi rehberi.",
+      "en": "Zimbabwe Visa on Arrival and KAZA UniVisa rules, USD cash requirements, camouflage bans, and Victoria Falls travel tips.",
+      "de": "Simbabwe Visa on Arrival und KAZA UniVisa Bestimmungen, US-Dollar Bargeldtipps und Victoriafälle Reiseführer.",
+      "ru": "Правила визы по прибытии в Зимбабве, виза KAZA UniVisa, доллары США и водопад Виктория.",
+      "es": "Requisitos de Visa a la Llegada y KAZA UniVisa para Zimbabue, uso de dólares en efectivo y guía de Cataratas Victoria."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
