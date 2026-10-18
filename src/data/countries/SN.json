@@ -1,0 +1,435 @@
+{
+  "iso2": "SN",
+  "names": {
+    "tr": "Senegal",
+    "en": "Senegal",
+    "de": "Senegal",
+    "ru": "Сенегал",
+    "es": "Senegal"
+  },
+  "capital": {
+    "value": "Dakar",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sec.gouv.sn",
+        "tier": 1,
+        "title": "Gouvernement de la République du Sénégal"
+      }
+    ],
+    "evidence_quote": "Dakar is the capital, largest city, and principal Atlantic seaport of the Republic of Senegal",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XOF",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bceao.int",
+        "tier": 1,
+        "title": "Banque Centrale des États de l'Afrique de l'Ouest"
+      }
+    ],
+    "evidence_quote": "The West African CFA Franc (XOF, CFA) is the legal currency pegged to the Euro (1 EUR = 655.957 XOF)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (GMT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://anacim.sn",
+        "tier": 1,
+        "title": "Agence Nationale de l'Aviation Civile et de la Météorologie"
+      }
+    ],
+    "evidence_quote": "Senegal observes Greenwich Mean Time (UTC+0) year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.senelec.sn",
+          "tier": 1,
+          "title": "Senelec Société Nationale d'Électricité"
+        }
+      ],
+      "evidence_quote": "National single-phase household power supply voltage across Senegal is 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.senelec.sn",
+          "tier": 1,
+          "title": "Senelec"
+        }
+      ],
+      "evidence_quote": "Senelec electrical grid operates at a nominal frequency of 50 Hz alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "E",
+        "K"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "Europlug Types C and E are most prevalent in residences, with D and K encountered in legacy buildings",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "17",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://policenationale.sec.gouv.sn",
+          "tier": 1,
+          "title": "Police Nationale du Sénégal"
+        }
+      ],
+      "evidence_quote": "Dial 17 for Police Nationale (urban) or 800 00 20 20 for Gendarmerie emergency calls",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "15",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sante.gouv.sn",
+          "tier": 1,
+          "title": "Ministère de la Santé du Sénégal"
+        }
+      ],
+      "evidence_quote": "Dial 15 (or SAMU 15 15) for emergency medical ambulance and hospital transit",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "18",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interieur.sec.gouv.sn",
+          "tier": 1,
+          "title": "Brigade Nationale des Sapeurs-Pompiers"
+        }
+      ],
+      "evidence_quote": "Dial 18 to dispatch the Brigade Nationale des Sapeurs-Pompiers emergency fire and rescue units",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://policenationale.sec.gouv.sn",
+          "tier": 1,
+          "title": "Police Nationale"
+        }
+      ],
+      "evidence_quote": "Dial 112 nationwide from any mobile phone for emergency services routing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/senegal",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler (Genel Olarak Güvenli ve Sakin; Casamance Kırsalında Dikkat)",
+      "en": "Exercise Normal Precautions (Generally Safe & Hospitable; Caution in Rural Casamance)",
+      "de": "Normale Vorsicht (Allgemein sicher und gastfreundlich; Vorsicht im ländlichen Casamance)",
+      "ru": "Стандартные меры предосторожности (В целом безопасно; осторожность в сельском Казамансе)",
+      "es": "Precauciones normales (Generalmente seguro y hospitalario; precaución en Casamance rural)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Casamance rural interior outside main highways",
+        "level": 2,
+        "reason": "Occasional landmine risk in off-road forested tracts; stick to paved coastal and transit routes",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "low",
+      "crime": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 31.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Senegal registers median mobile broadband speeds around 31.2 Mbps on Orange and Free 4G/5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 26.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Senegalese fixed broadband infrastructure yields median download speeds of approximately 26.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM cards easily purchased with passport at Dakar AIBD airport or city shops via Orange, Free, or Expresso; Wave and Orange Money handle all daily cashless payments",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.artp.sn",
+          "tier": 1,
+          "title": "ARTP Senegal Telecommunications Regulator"
+        }
+      ],
+      "evidence_quote": "Telecommunications authority mandates identity identification for all active mobile SIM lines",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yango",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://yango.com",
+        "tier": 1,
+        "title": "Yango Ride Hailing Senegal"
+      }
+    },
+    {
+      "name": "Heetch",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.heetch.com",
+        "tier": 1,
+        "title": "Heetch Senegal"
+      }
+    },
+    {
+      "name": "Wave",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.wave.com",
+        "tier": 1,
+        "title": "Wave Mobile Money Senegal"
+      }
+    },
+    {
+      "name": "Orange Money",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.orange.sn/orange-money",
+        "tier": 1,
+        "title": "Orange Money Senegal"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (Sufi brotherhoods: Mouride, Tijaniyya ~95%), Christianity (~4%), traditional beliefs",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sec.gouv.sn",
+          "tier": 1,
+          "title": "Gouvernement du Sénégal"
+        }
+      ],
+      "evidence_quote": "Over 94% of Senegalese citizens adhere to Islam, famed for exemplary interfaith tolerance and peace",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Grand Magal de Touba, Korité (Eid al-Fitr), Tabaski (Eid al-Adha), Saint-Louis Jazz Festival, Dakar Biennale (Dak'Art)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://culture.sec.gouv.sn",
+          "tier": 1,
+          "title": "Ministère de la Culture du Sénégal"
+        }
+      ],
+      "evidence_quote": "Grand Magal and Saint-Louis Jazz Festival highlight the religious and artistic vibrancy of Senegal",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Embrace the ethos of 'Teranga' (warm hospitality); ask permission before photographing people; dress respectfully when visiting religious towns like Touba (no smoking or alcohol permitted); drug offenses carry severe penalties",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitezlesenegal.com",
+          "tier": 1,
+          "title": "Agence Sénégalaise de Promotion Touristique"
+        }
+      ],
+      "evidence_quote": "Teranga represents national spirit of welcome; conservative etiquette enforced strictly in holy cities",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Appreciated in cafes and restaurants (5-10%); rounding up fares for taxi drivers and tipping hotel porters is standard courtesy",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitezlesenegal.com",
+          "tier": 1,
+          "title": "Tourism Senegal"
+        }
+      ],
+      "evidence_quote": "Gratuities are voluntary but warmly accepted across the tourist and restaurant industry",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Gorée Adası ve Köle Evi Tarihi Alanı",
+        "en": "Island of Gorée & House of Slaves",
+        "de": "Insel Gorée & Sklavenhaus Maison des Esclaves",
+        "ru": "Остров Горе и Дом рабов",
+        "es": "Isla de Gorée y Casa de los Esclavos"
+      },
+      "type": "historic_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/26",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Pembe Göl (Lac Rose) ve Lompoul Çölü",
+        "en": "Lake Retba (Pink Lake) & Lompoul Desert",
+        "de": "Retba-See (Lac Rose) & Lompoul-Wüste",
+        "ru": "Розовое озеро (Ретба) и пустыня Ломпул",
+        "es": "Lago Rosa (Retba) y Desierto de Lompoul"
+      },
+      "type": "natural_scenic",
+      "sources": [
+        {
+          "url": "https://visitezlesenegal.com",
+          "tier": 1,
+          "title": "Tourism Senegal"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Gorée Adası Köle Evi (Maison des Esclaves) (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Nina Volare",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/La_Maison_des_Esclaves.jpg",
+        "attribution_text": "Nina Volare / Wikimedia Commons / CC BY-SA 2.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Gorée Adası Köle Evi (Maison des Esclaves) (UNESCO)",
+          "en": "House of Slaves (Maison des Esclaves), Gorée Island (UNESCO)",
+          "de": "Sklavenhaus (Maison des Esclaves) auf der Insel Gorée (UNESCO)",
+          "ru": "Дом рабов (Maison des Esclaves) на острове Горе (ЮНЕСКО)",
+          "es": "Casa de los Esclavos en la Isla de Gorée (UNESCO)"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 1
+}

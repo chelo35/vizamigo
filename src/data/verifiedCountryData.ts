@@ -147,7 +147,16 @@ import TJ from './countries/TJ.json';
 import BT from './countries/BT.json';
 import BN from './countries/BN.json';
 import MM from './countries/MM.json';
-import TL from './countries/TL.json';
+import DZ from './countries/DZ.json';
+import ET from './countries/ET.json';
+import SN from './countries/SN.json';
+import CI from './countries/CI.json';
+import GH from './countries/GH.json';
+import ZM from './countries/ZM.json';
+import MZ from './countries/MZ.json';
+import MG from './countries/MG.json';
+import GM from './countries/GM.json';
+
 
 export interface VerifiedSource {
   url: string;

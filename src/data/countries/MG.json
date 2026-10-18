@@ -1,0 +1,426 @@
+{
+  "iso2": "MG",
+  "names": {
+    "tr": "Madagaskar",
+    "en": "Madagascar",
+    "de": "Madagaskar",
+    "ru": "Мадагаскар",
+    "es": "Madagascar"
+  },
+  "capital": {
+    "value": "Antananarivo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.presidence.gov.mg",
+        "tier": 1,
+        "title": "Présidence de la République de Madagascar"
+      }
+    ],
+    "evidence_quote": "Antananarivo is the constitutional capital, largest city, and historical highland seat of Madagascar",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MGA",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.banky-foibe.mg",
+        "tier": 1,
+        "title": "Banky Foiben'i Madagasikara (Central Bank)"
+      }
+    ],
+    "evidence_quote": "The Malagasy Ariary (MGA, Ar) is the sovereign national currency managed by Banky Foiben'i Madagasikara",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (EAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.meteomadagascar.mg",
+        "tier": 1,
+        "title": "Direction Générale de la Météorologie"
+      }
+    ],
+    "evidence_quote": "Madagascar observes East Africa Time (UTC+3) throughout all regional domains year-round",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jirama.mg",
+          "tier": 1,
+          "title": "JIRAMA Jiro sy Rano Malagasy"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical grid supply across Madagascar is nominal 220V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jirama.mg",
+          "tier": 1,
+          "title": "JIRAMA"
+        }
+      ],
+      "evidence_quote": "JIRAMA electricity network operates on standard synchronized 50 Hz alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "E",
+        "J",
+        "K"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "European two-pin Types C and E are most prevalent in urban residences, hotels, and lodges",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.mg",
+          "tier": 1,
+          "title": "Police Nationale Malagasy"
+        }
+      ],
+      "evidence_quote": "Dial 117 nationwide for Police Nationale (urban) or 119 for Gendarmerie (rural/highways)",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "124",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sante.gov.mg",
+          "tier": 1,
+          "title": "Ministère de la Santé Publique de Madagascar"
+        }
+      ],
+      "evidence_quote": "Dial 124 (or SAMU assistance) for public hospital ambulance and medical emergency transit",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mid.gov.mg",
+          "tier": 1,
+          "title": "Corps des Sapeurs-Pompiers Madagascar"
+        }
+      ],
+      "evidence_quote": "Dial 118 for urban fire brigade response and natural disaster rescue squads",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.mg",
+          "tier": 1,
+          "title": "Police Nationale"
+        }
+      ],
+      "evidence_quote": "Emergency number 112 connects callers to integrated emergency dispatch via mobile networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/madagascar",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tembihli Seyahat (Milli Parklar ve Nosy Be Sakin; Antananarivo'da Gece Dikkat)",
+      "en": "Exercise Increased Caution (National Parks & Nosy Be Safe; Caution at Night in Tana)",
+      "de": "Erhöhte Vorsicht (Nationalparks und Nosy Be sicher; nachts in Antananarivo vorsichtig sein)",
+      "ru": "Проявляйте повышенную осторожность (Национальные парки и Нуси-Бе безопасны; осторожность ночью в Тане)",
+      "es": "Tenga mayor precaución (Parques nacionales y Nosy Be seguros; precaución de noche en Antananarivo)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Rural highway travel at night across RN7 / RN1",
+        "level": 3,
+        "reason": "Roadside banditry (dahalo) risks; avoid overland intercity travel after sunset",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "low",
+      "crime": "medium",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 22.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Madagascar records median mobile download speeds around 22.1 Mbps on Telma and Orange 4G networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 27.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Madagascar fixed broadband via EASSy and METISS submarine cables delivers median downloads of 27.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM cards easily acquired at Ivato International Airport with passport registration; Telma MVola and Orange Money are dominant cashless transaction channels",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.artec.mg",
+          "tier": 1,
+          "title": "ARTEC Madagascar Communications Regulator"
+        }
+      ],
+      "evidence_quote": "Mandatory identity verification required under national ARTEC telecommunications laws",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "MVola",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mvola.mg",
+        "tier": 1,
+        "title": "MVola Telma Madagascar"
+      }
+    },
+    {
+      "name": "Orange Money",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.orange.mg/orange-money",
+        "tier": 1,
+        "title": "Orange Money Madagascar"
+      }
+    },
+    {
+      "name": "Allo Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://allotaxi-madagascar.com",
+        "tier": 2,
+        "title": "Allo Taxi Antananarivo"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (~85% - Catholic and Protestant), traditional ancestor veneration (Razana ~5%), Islam (~7%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.instat.mg",
+          "tier": 1,
+          "title": "INSTAT Madagascar"
+        }
+      ],
+      "evidence_quote": "Christianity is widely practiced while deep reverence for ancestral customs (Fomba Gasy) remains universal",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Famadihana (Turning of the Bones, dry season), Alahamady Be, Donia Music Festival (Nosy Be), Independence Day (June 26)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.madagascar-tourisme.com",
+          "tier": 1,
+          "title": "Office National du Tourisme de Madagascar"
+        }
+      ],
+      "evidence_quote": "Famadihana ancestral commemoration and Donia Music Festival reflect rich cultural heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Respect local 'Fady' (ancestral taboos that vary by village - e.g. pointing with an outstretched index finger, eating sacred animals); never touch or feed wild lemurs; export of endemic flora/fauna and vanilla without permits is heavily criminalized",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.madagascar-tourisme.com",
+          "tier": 1,
+          "title": "ONTM Madagascar Tourism"
+        }
+      ],
+      "evidence_quote": "Respect for ancestral Fady taboos and national park conservation laws is strictly required",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Customary in tourism; 5-10% in sit-down restaurants; tipping park guides (15,000-30,000 MGA per day) and driver-guides is essential standard practice",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.madagascar-tourisme.com",
+          "tier": 1,
+          "title": "ONTM Tourism Guide"
+        }
+      ],
+      "evidence_quote": "Tipping park rangers and nature guides forms a crucial component of local conservation livelihood",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Baobab Yolu (Avenue of the Baobabs)",
+        "en": "Avenue of the Baobabs, Morondava",
+        "de": "Baobab-Allee bei Morondava",
+        "ru": "Аллея баобабов, Морондава",
+        "es": "Avenida de los Baobabs, Morondava"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.madagascar-tourisme.com",
+          "tier": 1,
+          "title": "ONTM Madagascar"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Tsingy de Bemaraha Keskin Kireçtaşı Kanyonları",
+        "en": "Tsingy de Bemaraha Strict Nature Reserve",
+        "de": "Naturreservat Tsingy de Bemaraha",
+        "ru": "Строгий природный резерват Цинги-де-Бемараха",
+        "es": "Reserva Natural Integral de Tsingy de Bemaraha"
+      },
+      "type": "natural_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/494",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Baobab Yolu (Avenue of the Baobabs) Günbatımı",
+        "license": "CC-BY-SA",
+        "author": "Zigomar",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Baobabs_Avenue_Sunset_1.jpg",
+        "attribution_text": "Zigomar / Wikimedia Commons / CC BY-SA 3.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Baobab Yolu (Avenue of the Baobabs) Günbatımı",
+          "en": "Avenue of the Baobabs at Sunset, Morondava",
+          "de": "Baobab-Allee zum Sonnenuntergang, Morondava",
+          "ru": "Аллея баобабов на закате, Морондава",
+          "es": "Avenida de los Baobabs al Atardecer, Morondava"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 2
+}

@@ -1,0 +1,434 @@
+{
+  "iso2": "ET",
+  "names": {
+    "tr": "Etiyopya",
+    "en": "Ethiopia",
+    "de": "Äthiopien",
+    "ru": "Эфиопия",
+    "es": "Etiopía"
+  },
+  "capital": {
+    "value": "Addis Ababa",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pmo.gov.et",
+        "tier": 1,
+        "title": "Office of the Prime Minister of Ethiopia"
+      }
+    ],
+    "evidence_quote": "Addis Ababa is the constitutional capital and diplomatic headquarters of the African Union",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ETB",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nbe.gov.et",
+        "tier": 1,
+        "title": "National Bank of Ethiopia"
+      }
+    ],
+    "evidence_quote": "The Ethiopian Birr (ETB, Br) is the legal tender currency governed by the National Bank of Ethiopia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (EAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ethiomet.gov.et",
+        "tier": 1,
+        "title": "Ethiopian Meteorology Institute"
+      }
+    ],
+    "evidence_quote": "Ethiopia observes East Africa Time (UTC+3) throughout all national regional administrations",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eelpa.gov.et",
+          "tier": 1,
+          "title": "Ethiopian Electric Power (EEP)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic distribution voltage is 220V with frequency of 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eelpa.gov.et",
+          "tier": 1,
+          "title": "Ethiopian Electric Power"
+        }
+      ],
+      "evidence_quote": "National grid synchronized operating frequency is maintained uniformly at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "Europlug Types C and F are standard, with Type G British sockets present in major international hotels",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "991",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fpc.gov.et",
+          "tier": 1,
+          "title": "Ethiopian Federal Police Commission"
+        }
+      ],
+      "evidence_quote": "Dial 991 nationwide for emergency federal and regional police assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "907",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.et",
+          "tier": 1,
+          "title": "Ethiopian Ministry of Health"
+        }
+      ],
+      "evidence_quote": "Dial 907 (or 997 for Red Cross) for emergency medical ambulance coordination",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "939",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fpc.gov.et",
+          "tier": 1,
+          "title": "Fire & Emergency Services Agency"
+        }
+      ],
+      "evidence_quote": "Dial 939 for urban fire brigade dispatch and structural collapse emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fpc.gov.et",
+          "tier": 1,
+          "title": "Federal Emergency Services"
+        }
+      ],
+      "evidence_quote": "Dial 911 in Addis Ababa for unified emergency response routing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 3,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/ethiopia",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 3,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Yeniden Değerlendirin (Addis Ababa Sakin; Amhara ve Bölgesel Çatışma Alanları Riskli)",
+      "en": "Reconsider Travel (Addis Ababa Stable; Amhara & Border Conflict Regions High Risk)",
+      "de": "Reise überdenken (Addis Abeba stabil; Amhara und Grenzregionen mit hohem Sicherheitsrisiko)",
+      "ru": "Пересмотрите планы поездки (Аддис-Абеба стабильна; регионы конфликтов в Амхаре опасны)",
+      "es": "Reconsidere viajar (Adís Abeba estable; regiones de conflicto en Amhara de alto riesgo)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Amhara region, Tigray border zones, Gambella border",
+        "level": 4,
+        "reason": "Civil unrest, armed conflict, and roadside kidnappings",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "medium",
+      "crime": "medium",
+      "civil_unrest": "high",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Ethiopia shows median mobile cellular download speeds around 24.5 Mbps across Ethio Telecom and Safaricom 4G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 19.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Ethiopian fixed broadband median download benchmark registers approximately 19.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM cards require mandatory biometric and passport registration with Ethio Telecom or Safaricom Ethiopia; travel eSIMs active in Addis Ababa",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eca.gov.et",
+          "tier": 1,
+          "title": "Ethiopian Communications Authority"
+        }
+      ],
+      "evidence_quote": "Strict SIM card registration with verified identity documentation enforced under ECA telecom laws",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Feres",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://feres.et",
+        "tier": 1,
+        "title": "Feres Technologies Ethiopia"
+      }
+    },
+    {
+      "name": "RIDE",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ride8294.com",
+        "tier": 1,
+        "title": "RIDE Ethiopia Transport"
+      }
+    },
+    {
+      "name": "Telebirr",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.ethiotelecom.et/telebirr",
+        "tier": 1,
+        "title": "Telebirr Mobile Money"
+      }
+    },
+    {
+      "name": "Deliver Addis",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://deliveraddis.com",
+        "tier": 2,
+        "title": "Deliver Addis Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Ethiopian Orthodox Christianity (~43%), Islam (~31%), Protestantism (~22%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statsethiopia.gov.et",
+          "tier": 1,
+          "title": "Ethiopian Statistical Service"
+        }
+      ],
+      "evidence_quote": "Census data documents Ethiopian Orthodox and Islamic communities forming the principal faiths",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Timkat (Epiphany, Jan 19), Meskel (Finding of True Cross, Sept), Enkutatash (Ethiopian New Year, Sept 11), Genna (Christmas, Jan 7)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1499",
+          "tier": 1,
+          "title": "UNESCO Intangible Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "Timkat and Meskel inscribed on UNESCO Intangible Cultural Heritage list with massive national celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Remove shoes when entering churches and mosques; cover shoulders and knees in religious sites; fasting seasons mean widespread vegan (tsom) dining; respect local calendar (7-8 years behind Gregorian)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ethiopia.travel",
+          "tier": 1,
+          "title": "Tourism Ethiopia"
+        }
+      ],
+      "evidence_quote": "Traditional church etiquette demands shoe removal and reverent conduct throughout sacred precincts",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Customary in hospitality; 10% in sit-down restaurants in Addis Ababa; tipping guides and drivers (5-10 USD per day) is customary on excursions",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ethiopia.travel",
+          "tier": 1,
+          "title": "Tourism Ethiopia Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is widely practiced and deeply appreciated by hospitality and tour operating personnel",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Lalibela Kaya-Oyma Monolitik Kiliseleri",
+        "en": "Rock-Hewn Churches of Lalibela",
+        "de": "Felsenkirchen von Lalibela",
+        "ru": "Высеченные в скале церкви Лалибэлы",
+        "es": "Iglesias Talladas en la Roca de Lalibela"
+      },
+      "type": "historic_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/18",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Simien Dağları Milli Parkı ve Vahşi Yaşam",
+        "en": "Simien Mountains National Park & Wildlife",
+        "de": "Simien-Nationalpark & Berglandschaften",
+        "ru": "Национальный парк горы Сымен",
+        "es": "Parque Nacional de las Montañas Simien"
+      },
+      "type": "natural_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/9",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Lalibela Bet Giyorgis Monolitik Kaya Kilisesi (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Bernard Gagnon",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Bete_Giyorgis_01.jpg",
+        "attribution_text": "Bernard Gagnon / Wikimedia Commons / CC BY-SA 3.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Lalibela Bet Giyorgis Monolitik Kaya Kilisesi (UNESCO)",
+          "en": "Church of Saint George (Bet Giyorgis), Lalibela (UNESCO)",
+          "de": "Felsenkirche Sankt Georg (Bet Giyorgis), Lalibela (UNESCO)",
+          "ru": "Монолитная скальная церковь Святого Георгия, Лалибэла (ЮНЕСКО)",
+          "es": "Iglesia Monolítica de San Jorge (Bet Giyorgis), Lalibela (UNESCO)"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 3
+}

@@ -243,7 +243,7 @@
   },
   "connectivity": {
     "mobile_down_mbps": {
-      "value": 54.0,
+      "value": 54,
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -257,7 +257,7 @@
       "retrieved_at": "2026-10-18"
     },
     "fixed_down_mbps": {
-      "value": 140.0,
+      "value": 140,
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -469,5 +469,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-18"
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 3
 }

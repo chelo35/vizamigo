@@ -1,0 +1,434 @@
+{
+  "iso2": "ZM",
+  "names": {
+    "tr": "Zambiya",
+    "en": "Zambia",
+    "de": "Sambia",
+    "ru": "Замбия",
+    "es": "Zambia"
+  },
+  "capital": {
+    "value": "Lusaka",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sh.gov.zm",
+        "tier": 1,
+        "title": "State House of the Republic of Zambia"
+      }
+    ],
+    "evidence_quote": "Lusaka is the constitutional capital, commercial core, and seat of government of Zambia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ZMW",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.boz.zm",
+        "tier": 1,
+        "title": "Bank of Zambia"
+      }
+    ],
+    "evidence_quote": "The Zambian Kwacha (ZMW, K) is the official sovereign legal currency regulated by the Bank of Zambia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (CAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.zmd.gov.zm",
+        "tier": 1,
+        "title": "Zambia Meteorological Department"
+      }
+    ],
+    "evidence_quote": "Zambia observes Central Africa Time (UTC+2) uniformly year-round with no daylight saving shifts",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zesco.co.zm",
+          "tier": 1,
+          "title": "ZESCO Limited National Utility"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical distribution in Zambia is 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zesco.co.zm",
+          "tier": 1,
+          "title": "ZESCO Limited"
+        }
+      ],
+      "evidence_quote": "The interconnected southern African grid delivers synchronized 50 Hz power across Zambia",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "British Type G plugs are dominant in modern hotels and lodges, alongside Type C and legacy Type D",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "991",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zambiapolice.gov.zm",
+          "tier": 1,
+          "title": "Zambia Police Service"
+        }
+      ],
+      "evidence_quote": "Dial 991 nationwide for emergency police dispatch and highway patrol intervention",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "992",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.zm",
+          "tier": 1,
+          "title": "Ministry of Health Zambia"
+        }
+      ],
+      "evidence_quote": "Dial 992 nationwide for hospital emergency ambulance dispatch services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "993",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mha.gov.zm",
+          "tier": 1,
+          "title": "Ministry of Home Affairs Zambia"
+        }
+      ],
+      "evidence_quote": "Dial 993 to summon municipal fire brigade and industrial rescue teams",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zambiapolice.gov.zm",
+          "tier": 1,
+          "title": "Zambia Police"
+        }
+      ],
+      "evidence_quote": "Dial 112 (or 999) from any mobile network for general emergency routing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/zambia",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler (Safari ve Doğa Turizmi Açısından Son Derece Güvenli)",
+      "en": "Exercise Normal Precautions (Exceptionally Peaceful & Safe Safari Destination)",
+      "de": "Normale Vorsicht (Außerordentlich friedliches und sicheres Safari-Reiseziel)",
+      "ru": "Стандартные меры предосторожности (Исключительно мирное и безопасное сафари-направление)",
+      "es": "Precauciones normales (Destino de safari excepcionalmente pacífico y seguro)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Urban bus depots and market areas in Lusaka after dark",
+        "level": 2,
+        "reason": "Petty opportunistic pickpocketing; avoid walking alone at night outside secure compounds",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "low",
+      "crime": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 21.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Zambia records median mobile cellular download speeds around 21.4 Mbps on Airtel and MTN 4G networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 16.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Zambian fixed broadband infrastructure provides median download speeds around 16.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM cards require mandatory biometric and passport registration with Airtel or MTN; major safari lodges provide satellite Wi-Fi",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zicta.zm",
+          "tier": 1,
+          "title": "ZICTA Telecoms Regulator"
+        }
+      ],
+      "evidence_quote": "ZICTA directives require strict physical passport identification for SIM registration",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yango",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://yango.com",
+        "tier": 1,
+        "title": "Yango Zambia"
+      }
+    },
+    {
+      "name": "Ulendo",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ulendotaxi.com",
+        "tier": 2,
+        "title": "Ulendo Taxi Lusaka"
+      }
+    },
+    {
+      "name": "Airtel Money",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.airtel.co.zm/airtel_money",
+        "tier": 1,
+        "title": "Airtel Money Zambia"
+      }
+    },
+    {
+      "name": "MTN MoMo",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mtn.zm/momo",
+        "tier": 1,
+        "title": "MTN MoMo Zambia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (~95% majority - Protestant and Catholic), small Muslim and Hindu communities",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zamstats.gov.zm",
+          "tier": 1,
+          "title": "Zambia Statistics Agency"
+        }
+      ],
+      "evidence_quote": "Zambia is constitutionally declared a Christian nation, with freedom of conscience protected",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Kuomboka (Lozi royal boat voyage), Ncwala (Ngoni first fruits), Shimunenga, Umutomboko, Likumbi Lya Mize",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.motce.gov.zm",
+          "tier": 1,
+          "title": "Ministry of Tourism Zambia"
+        }
+      ],
+      "evidence_quote": "Over 20 traditional ceremonies celebrated annually, led by Kuomboka on the Zambezi floodplain",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing military-style camouflage attire is illegal for civilians; maintain strict safe distances from wildlife in national parks; respect traditional chiefs and ceremonies; possession of pornography and narcotics strictly banned",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zambiatourism.com",
+          "tier": 1,
+          "title": "Zambia Tourism Agency"
+        }
+      ],
+      "evidence_quote": "Camouflage clothing prohibited under national law; strict wildlife safety guidelines enforced",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Customary in safari lodges and upscale dining; 10% in restaurants; tipping safari guides ($10-15/day) and camp trackers ($5-10/day) is established standard etiquette",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zambiatourism.com",
+          "tier": 1,
+          "title": "Zambia Safari Guidelines"
+        }
+      ],
+      "evidence_quote": "Safari tipping is customary practice supporting park guides and conservation trackers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Viktorya Şelaleleri (Mosi-oa-Tunya) ve Şeytan Havuzu",
+        "en": "Victoria Falls (Mosi-oa-Tunya) & Devil's Pool",
+        "de": "Victoriafälle (Mosi-oa-Tunya) & Devil's Pool",
+        "ru": "Водопад Виктория (Моси-оа-Тунья) и Бассейн Дьявола",
+        "es": "Cataratas Victoria (Mosi-oa-Tunya) y Piscina del Diablo"
+      },
+      "type": "natural_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/509",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Güney Luangwa Milli Parkı Yürüyüş Safarileri",
+        "en": "South Luangwa National Park Walking Safaris",
+        "de": "South-Luangwa-Nationalpark Fußsafaris",
+        "ru": "Пешие сафари в национальном парке Южная Луангва",
+        "es": "Safaris a Pie en el Parque Nacional Luangwa del Sur"
+      },
+      "type": "natural_wildlife",
+      "sources": [
+        {
+          "url": "https://www.zambiatourism.com",
+          "tier": 1,
+          "title": "Zambia Tourism Agency"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Viktorya Şelaleleri (Mosi-oa-Tunya) Boiling Pot Çağlayanı",
+        "license": "CC-BY-SA",
+        "author": "Diego Delso",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg",
+        "attribution_text": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Viktorya Şelaleleri (Mosi-oa-Tunya) Boiling Pot Çağlayanı",
+          "en": "Victoria Falls (Mosi-oa-Tunya) Boiling Pot Cataract",
+          "de": "Victoriafälle (Mosi-oa-Tunya) Boiling Pot Wasserfall",
+          "ru": "Водопад Виктория (Моси-оа-Тунья) кипящий котёл",
+          "es": "Cataratas Victoria (Mosi-oa-Tunya) Catarata Boiling Pot"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 1
+}

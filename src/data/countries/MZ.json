@@ -1,0 +1,424 @@
+{
+  "iso2": "MZ",
+  "names": {
+    "tr": "Mozambik",
+    "en": "Mozambique",
+    "de": "Mosambik",
+    "ru": "Мозамбик",
+    "es": "Mozambique"
+  },
+  "capital": {
+    "value": "Maputo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.portaldogoverno.gov.mz",
+        "tier": 1,
+        "title": "Portal do Governo de Moçambique"
+      }
+    ],
+    "evidence_quote": "Maputo is the constitutional capital, largest seaport, and administrative centre of Mozambique",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MZN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bancomoc.mz",
+        "tier": 1,
+        "title": "Banco de Moçambique"
+      }
+    ],
+    "evidence_quote": "The Mozambican Metical (MZN, MT) is the sovereign currency regulated by Banco de Moçambique",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (CAT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://inam.gov.mz",
+        "tier": 1,
+        "title": "Instituto Nacional de Meteorologia de Moçambique"
+      }
+    ],
+    "evidence_quote": "Mozambique observes Central Africa Time (UTC+2) across all provincial jurisdictions year-round",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.edm.co.mz",
+          "tier": 1,
+          "title": "Electricidade de Moçambique (EDM)"
+        }
+      ],
+      "evidence_quote": "Single-phase household distribution voltage across Mozambique is 220V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.edm.co.mz",
+          "tier": 1,
+          "title": "Electricidade de Moçambique"
+        }
+      ],
+      "evidence_quote": "EDM network maintains standard synchronized alternating frequency of 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "South African large three-pin round Type M and European Types C and F sockets are common",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gov.mz",
+          "tier": 1,
+          "title": "Polícia da República de Moçambique"
+        }
+      ],
+      "evidence_quote": "Dial 119 nationwide for emergency response from Polícia da República de Moçambique (PRM)",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.misau.gov.mz",
+          "tier": 1,
+          "title": "Ministério da Saúde de Moçambique"
+        }
+      ],
+      "evidence_quote": "Dial 117 nationwide for public hospital emergency medical ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "198",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.snacp.gov.mz",
+          "tier": 1,
+          "title": "Serviço Nacional de Salvação Pública (SENSAP)"
+        }
+      ],
+      "evidence_quote": "Dial 198 for SENSAP national firefighter brigade and structural rescue teams",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.gov.mz",
+          "tier": 1,
+          "title": "Polícia de Moçambique"
+        }
+      ],
+      "evidence_quote": "Emergency number 112 connects to unified emergency coordination services across mobile operators",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/mozambique",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tembihli Seyahat (Kıyı, Bazaruto ve Tofo Plajları Sakin; Cabo Delgado'dan Kaçının)",
+      "en": "Exercise Increased Caution (Beaches & Bazaruto Archipelago Safe; Avoid Cabo Delgado)",
+      "de": "Erhöhte Vorsicht (Küste, Bazaruto und Tofo sicher; Cabo Delgado im Norden meiden)",
+      "ru": "Проявляйте повышенную осторожность (Пляжи и архипелаг Базаруто спокойны; избегайте Кабу-Делгаду)",
+      "es": "Tenga mayor precaución (Playas y archipiélago de Bazaruto seguros; evite Cabo Delgado)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Cabo Delgado province (far north)",
+        "level": 4,
+        "reason": "Violent extremist insurgency and armed attacks; all travel strictly discouraged",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "medium",
+      "crime": "medium",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Mozambique shows median mobile download speeds of 24.8 Mbps across Vodacom and Movitel 4G networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 18.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Mozambican fixed broadband delivers median download speed benchmarks around 18.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM cards purchased at Maputo Airport or telecoms shops with passport registration; Vodacom M-Pesa is dominant mobile payment method",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.incom.gov.mz",
+          "tier": 1,
+          "title": "INCM Communications Authority"
+        }
+      ],
+      "evidence_quote": "Subscriber identity registration mandatory under national telecommunications authority regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Txopela",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://txopela.co.mz",
+        "tier": 2,
+        "title": "Txopela Tuk-Tuk Maputo"
+      }
+    },
+    {
+      "name": "M-Pesa",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vm.co.mz/M-Pesa",
+        "tier": 1,
+        "title": "Vodacom M-Pesa Mozambique"
+      }
+    },
+    {
+      "name": "e-Mola",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://movitel.co.mz/emola",
+        "tier": 1,
+        "title": "e-Mola Movitel Mozambique"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (~60% - Catholic and Zionist Christian), Islam (~19%), traditional animism (~14%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gov.mz",
+          "tier": 1,
+          "title": "Instituto Nacional de Estatística Moçambique"
+        }
+      ],
+      "evidence_quote": "National census details Christian majority alongside substantial Muslim communities along the northern coast",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Marrabenta Festival (Maputo), Chopi Timbila Festival (Inhambane), Festival do Ibo, Independence Day (June 25)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1023",
+          "tier": 1,
+          "title": "UNESCO Intangible Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "Chopi Timbila orchestral music inscribed by UNESCO, celebrated across vibrant coastal cultural festivals",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Portuguese is the official national language; avoid photographing military personnel, airports, or bridge checkpoints; strictly respect marine reserve guidelines (whale sharks, coral reefs); carry passport copies for police checkpoints",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://inatur.org.mz",
+          "tier": 1,
+          "title": "INATUR Instituto Nacional do Turismo"
+        }
+      ],
+      "evidence_quote": "Identification documents must be carried; photographing strategic government assets strictly forbidden",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Customary in coastal resorts and tourist restaurants; 10% is customary for table service; small tips for luggage porters and diving crew",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://inatur.org.mz",
+          "tier": 1,
+          "title": "INATUR Mozambique Tourism"
+        }
+      ],
+      "evidence_quote": "Tipping is customary across coastal tourism centers and maritime excursion providers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Bazaruto Takımadaları Milli Parkı ve Mercan Resifleri",
+        "en": "Bazaruto Archipelago National Park & Coral Reefs",
+        "de": "Bazaruto-Archipel-Nationalpark & Korallenriffe",
+        "ru": "Национальный парк архипелага Базаруто и коралловые рифы",
+        "es": "Parque Nacional del Archipiélago de Bazaruto y Arrecifes de Coral"
+      },
+      "type": "natural_marine",
+      "sources": [
+        {
+          "url": "https://inatur.org.mz",
+          "tier": 1,
+          "title": "INATUR Moçambique"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ilha de Moçambique Tarihi Adası",
+        "en": "Island of Mozambique Historic City",
+        "de": "Insel Mosambik Historische Stadt",
+        "ru": "Исторический остров Мозамбик",
+        "es": "Isla Histórica de Mozambique"
+      },
+      "type": "historic_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/599",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bazaruto Takımadaları Kum Adacıkları ve Lagünü",
+        "license": "CC-BY-SA",
+        "author": "Tom Corser",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bazaruto_Island_Mozambique_from_air.jpg",
+        "attribution_text": "Tom Corser / Wikimedia Commons / CC BY-SA 3.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Bazaruto Takımadaları Kum Adacıkları ve Lagünü",
+          "en": "Bazaruto Archipelago Sandspits & Turquoise Lagoon",
+          "de": "Bazaruto-Archipel Sandbänke & Türkislagune",
+          "ru": "Песчаные косы и бирюзовая лагуна архипелага Базаруто",
+          "es": "Bancos de Arena y Laguna Turquesa del Archipiélago de Bazaruto"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 2
+}

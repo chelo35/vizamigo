@@ -232,7 +232,7 @@
   },
   "connectivity": {
     "mobile_down_mbps": {
-      "value": 32.0,
+      "value": 32,
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -458,5 +458,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-18"
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 3
 }

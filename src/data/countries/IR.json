@@ -79,7 +79,10 @@
       "retrieved_at": "2026-10-13"
     },
     "plug_types": {
-      "value": ["C", "F"],
+      "value": [
+        "C",
+        "F"
+      ],
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -357,7 +360,10 @@
         "author": "Salar Arkan",
         "source_url": "https://images.unsplash.com/photo-1583316852564-02be226c9782?auto=format&fit=crop&w=1200&q=80",
         "attribution_text": "Photo by Salar Arkan on Unsplash",
-        "focal_point": { "x": 0.5, "y": 0.5 },
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
         "alt": {
           "tr": "İsfahan'daki UNESCO mirası tarihi Nakş-ı Cihan Meydanı ve Şah Camii",
           "en": "UNESCO heritage Naqsh-e Jahan Square and Shah Mosque in Isfahan",
@@ -393,5 +399,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-13"
+  "last_reviewed": "2026-10-13",
+  "travelRiskLevel": 4
 }

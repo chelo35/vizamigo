@@ -79,7 +79,11 @@
       "retrieved_at": "2026-10-13"
     },
     "plug_types": {
-      "value": ["A", "D", "G"],
+      "value": [
+        "A",
+        "D",
+        "G"
+      ],
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -346,7 +350,10 @@
         "author": "Vladimir Melnik",
         "source_url": "https://images.unsplash.com/photo-1642425149556-b6f90e946859?auto=format&fit=crop&w=1200&q=80",
         "attribution_text": "Photo by Vladimir Melnik on Unsplash",
-        "focal_point": { "x": 0.5, "y": 0.5 },
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
         "alt": {
           "tr": "Yemen Sokotra Adası'ndaki endemik Ejder Kanı Ağaçları (Dracaena cinnabari)",
           "en": "Iconic endemic Dragon's Blood Trees on Socotra Island, Yemen",
@@ -382,5 +389,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-13"
+  "last_reviewed": "2026-10-13",
+  "travelRiskLevel": 4
 }

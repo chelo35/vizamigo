@@ -79,7 +79,12 @@
       "retrieved_at": "2026-10-13"
     },
     "plug_types": {
-      "value": ["A", "B", "C", "O"],
+      "value": [
+        "A",
+        "B",
+        "C",
+        "O"
+      ],
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -373,7 +378,10 @@
         "author": "Aleksandar Pasaric",
         "source_url": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
         "attribution_text": "Photo by Aleksandar Pasaric on Unsplash",
-        "focal_point": { "x": 0.5, "y": 0.45 },
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.45
+        },
         "alt": {
           "tr": "Bangkok'taki Wat Arun Şafak Tapınağı ve Chao Phraya Nehri",
           "en": "Wat Arun Temple of Dawn along Chao Phraya River in Bangkok",
@@ -409,5 +417,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-13"
+  "last_reviewed": "2026-10-13",
+  "travelRiskLevel": 1
 }

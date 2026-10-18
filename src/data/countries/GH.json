@@ -1,0 +1,433 @@
+{
+  "iso2": "GH",
+  "names": {
+    "tr": "Gana",
+    "en": "Ghana",
+    "de": "Ghana",
+    "ru": "Гана",
+    "es": "Ghana"
+  },
+  "capital": {
+    "value": "Accra",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.presidency.gov.gh",
+        "tier": 1,
+        "title": "Presidency of the Republic of Ghana"
+      }
+    ],
+    "evidence_quote": "Accra is the constitutional capital, economic engine, and coastal metropolis of Ghana",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "GHS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bog.gov.gh",
+        "tier": 1,
+        "title": "Bank of Ghana"
+      }
+    ],
+    "evidence_quote": "The Ghana Cedi (GHS, GH₵) is the official national currency issued and managed by Bank of Ghana",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (GMT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.meteo.gov.gh",
+        "tier": 1,
+        "title": "Ghana Meteorological Agency"
+      }
+    ],
+    "evidence_quote": "Ghana strictly operates on Greenwich Mean Time (UTC+0) year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ecg.com.gh",
+          "tier": 1,
+          "title": "Electricity Company of Ghana (ECG)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical supply across Ghana is nominal 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ecg.com.gh",
+          "tier": 1,
+          "title": "Electricity Company of Ghana"
+        }
+      ],
+      "evidence_quote": "The national transmission grid frequency is maintained stably at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "British Type G three-pin plugs are universal in modern installations, with Type D round sockets in older buildings",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.gh",
+          "tier": 1,
+          "title": "Ghana Police Service"
+        }
+      ],
+      "evidence_quote": "Dial 191 (or 18555 toll-free) nationwide for rapid response from the Ghana Police Service",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "193",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nas.gov.gh",
+          "tier": 1,
+          "title": "National Ambulance Service Ghana"
+        }
+      ],
+      "evidence_quote": "Dial 193 for National Ambulance Service medical evacuation and emergency paramedic care",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gnfs.gov.gh",
+          "tier": 1,
+          "title": "Ghana National Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 192 for Ghana National Fire Service emergency firefighting and rescue teams",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.gh",
+          "tier": 1,
+          "title": "Emergency Call Centre Ghana"
+        }
+      ],
+      "evidence_quote": "Dial 112 nationwide from any phone network for unified emergency response dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/ghana",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler (Batı Afrika'nın En Güvenli ve Huzurlu Ülkelerinden Biri)",
+      "en": "Exercise Normal Precautions (One of West Africa's Safest & Most Stable Destinations)",
+      "de": "Normale Vorsicht (Eines der sichersten und stabilsten Reiseziele Westafrikas)",
+      "ru": "Стандартные меры предосторожности (Одно из самых безопасных и стабильных направлений Западной Африки)",
+      "es": "Precauciones normales (Uno de los destinos más seguros y estables de África Occidental)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Northern border towns in Upper East and Upper West regions",
+        "level": 2,
+        "reason": "Border proximity caution due to regional security dynamics in neighboring Burkina Faso",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "low",
+      "crime": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 26.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Ghana registers median mobile cellular download speeds around 26.8 Mbps on MTN and Telecel 4G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 36.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Urban fixed broadband in Accra and Kumasi averages median download speeds of 36.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM registration mandates biometric registration with passport ID; MTN Mobile Money (MoMo) is ubiquitous across street stalls and taxis",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nca.org.gh",
+          "tier": 1,
+          "title": "National Communications Authority Ghana"
+        }
+      ],
+      "evidence_quote": "SIM re-registration regulations require verified passport identification under NCA mandates",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-gh",
+        "tier": 1,
+        "title": "Bolt Ghana"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/gh/en",
+        "tier": 1,
+        "title": "Uber Ghana"
+      }
+    },
+    {
+      "name": "MTN MoMo",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mtn.com.gh/momo",
+        "tier": 1,
+        "title": "MTN MoMo Ghana"
+      }
+    },
+    {
+      "name": "Hubtel",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hubtel.com",
+        "tier": 1,
+        "title": "Hubtel SuperApp Ghana"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (~71%), Islam (~20%), traditional faiths (~3%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statsghana.gov.gh",
+          "tier": 1,
+          "title": "Ghana Statistical Service"
+        }
+      ],
+      "evidence_quote": "Ghana Census records approximately 71 percent Christian and 20 percent Muslim population living peacefully",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Chale Wote Street Art Festival (James Town, Aug), Homowo (Ga festival), Aboakyer, Hogbetsotso, AfroFuture (Dec)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://motac.gov.gh",
+          "tier": 1,
+          "title": "Ministry of Tourism, Arts and Culture Ghana"
+        }
+      ],
+      "evidence_quote": "Chale Wote and December in GH festivals attract hundreds of thousands of international visitors to Accra",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Always use the right hand to give or receive items, greet elders first; modest swimwear appropriate on resort beaches only; LGBTQ+ travelers should exercise high discretion due to conservative social laws; drugs heavily penalized",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitghana.com",
+          "tier": 1,
+          "title": "Ghana Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Respect for cultural etiquette and right-hand customary use are fundamental social values in Ghana",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Customary in hospitality; 5-10% in sit-down restaurants in Accra; small tips for drivers, tour guides, and hotel staff warmly received",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitghana.com",
+          "tier": 1,
+          "title": "Ghana Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Tipping is welcomed and common in tourist hotels, restaurants, and historical heritage sites",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Cape Coast Kalesi ve Atlantik Sahili",
+        "en": "Cape Coast Castle & Atlantic Coastline",
+        "de": "Cape Coast Castle & Atlantikküste",
+        "ru": "Замок Кейп-Кост и побережье Атлантики",
+        "es": "Castillo de Cape Coast y Costa Atlántica"
+      },
+      "type": "historic_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/34",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kakum Milli Parkı Gölgelik Asma Köprüleri",
+        "en": "Kakum National Park Canopy Walkway",
+        "de": "Kakum-Nationalpark Baumkronenpfad",
+        "ru": "Подвесные канатные мосты национального парка Какум",
+        "es": "Pasarela Colgante del dosel del Parque Nacional Kakum"
+      },
+      "type": "natural_adventure",
+      "sources": [
+        {
+          "url": "https://visitghana.com",
+          "tier": 1,
+          "title": "Ghana Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Cape Coast Tarihi Kalesi ve Atlantik Sahili (UNESCO)",
+        "license": "CC-BY",
+        "author": "Julius Cruickshank",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Cape_Coast_Slave_Castle.jpg",
+        "attribution_text": "Julius Cruickshank / Wikimedia Commons / CC BY 2.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Cape Coast Tarihi Kalesi ve Atlantik Sahili (UNESCO)",
+          "en": "Cape Coast Castle & Atlantic Coastline (UNESCO)",
+          "de": "Festung Cape Coast Castle & Atlantikküste (UNESCO)",
+          "ru": "Замок Кейп-Кост и побережье Атлантики (ЮНЕСКО)",
+          "es": "Castillo de Cape Coast y Costa Atlántica (UNESCO)"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 1
+}

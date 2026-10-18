@@ -1,0 +1,417 @@
+{
+  "iso2": "GM",
+  "names": {
+    "tr": "Gambiya",
+    "en": "Gambia",
+    "de": "Gambia",
+    "ru": "Гамбия",
+    "es": "Gambia"
+  },
+  "capital": {
+    "value": "Banjul",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.statehouse.gm",
+        "tier": 1,
+        "title": "State House of the Republic of The Gambia"
+      }
+    ],
+    "evidence_quote": "Banjul is the island capital, maritime port, and seat of government of The Gambia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "GMD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbg.gm",
+        "tier": 1,
+        "title": "Central Bank of The Gambia"
+      }
+    ],
+    "evidence_quote": "The Gambian Dalasi (GMD, D) is the legal tender currency governed by the Central Bank of The Gambia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (GMT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mofa.gov.gm",
+        "tier": 1,
+        "title": "Ministry of Transport, Works & Infrastructure Gambia"
+      }
+    ],
+    "evidence_quote": "The Gambia strictly maintains Greenwich Mean Time (UTC+0) year-round without seasonal clock alteration",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nawec.gm",
+          "tier": 1,
+          "title": "NAWEC National Water and Electricity Company"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical supply across The Gambia is nominal 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nawec.gm",
+          "tier": 1,
+          "title": "NAWEC"
+        }
+      ],
+      "evidence_quote": "National grid operating frequency is maintained at 50 Hz alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "British standard rectangular three-pin Type G sockets are universal across The Gambia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gambiafire.gm",
+          "tier": 1,
+          "title": "Gambia Police Force"
+        }
+      ],
+      "evidence_quote": "Dial 117 nationwide for Gambia Police Force emergency intervention and traffic control",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "116",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.gm",
+          "tier": 1,
+          "title": "Ministry of Health The Gambia"
+        }
+      ],
+      "evidence_quote": "Dial 116 nationwide for public emergency medical ambulance assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gambiafire.gm",
+          "tier": 1,
+          "title": "Gambia Fire and Rescue Service (GFRS)"
+        }
+      ],
+      "evidence_quote": "Dial 118 for Gambia Fire and Rescue Service emergency fire squads and rescue units",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gambiafire.gm",
+          "tier": 1,
+          "title": "Emergency Dispatch"
+        }
+      ],
+      "evidence_quote": "Dial 112 from any mobile device for national emergency services coordination",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitthegambia.gm",
+          "tier": 1,
+          "title": "Gambian Tourist Security Unit (TSU)"
+        }
+      ],
+      "evidence_quote": "Tourist Security Unit (TSU) operates dedicated foot and beach patrols reached via 117 or local tourism offices",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/the-gambia",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler ('Afrika'nın Gülen Kıyısı', Son Derece Huzurlu ve Dostane)",
+      "en": "Exercise Normal Precautions ('The Smiling Coast of Africa', Peaceful & Hospitable)",
+      "de": "Normale Vorsicht ('The Smiling Coast of Africa', friedlich und gastfreundlich)",
+      "ru": "Стандартные меры предосторожности («Улыбающийся берег Африки», мирно и гостеприимно)",
+      "es": "Precauciones normales ('La Costa Sonriente de África', pacífica y hospitalaria)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Resort beach strips (Kotu, Kololi, Senegambia)",
+        "level": 1,
+        "reason": "Unlicensed beach hustlers (bumsters); firm and polite refusal is recommended",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "low",
+      "crime": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 17.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "The Gambia delivers median mobile download speeds around 17.5 Mbps on Africell and QCell 4G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 18.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Fixed broadband median download speeds in Banjul and Serrekunda average 18.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "SIM registration mandatory with passport ID via Africell or QCell; QMoney and Afrimoney are popular mobile payment solutions",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pura.gm",
+          "tier": 1,
+          "title": "PURA Public Utilities Regulatory Authority"
+        }
+      ],
+      "evidence_quote": "PURA telecommunications directives mandate valid biometric passport presentation for all SIM activations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "QMoney",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://qmoney.gm",
+        "tier": 1,
+        "title": "QMoney Gambia"
+      }
+    },
+    {
+      "name": "Afrimoney",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://africell.gm/afrimoney",
+        "tier": 1,
+        "title": "Afrimoney Gambia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (~96% Sunni majority), Christianity (~4%), traditional customs",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gbos.gov.gm",
+          "tier": 1,
+          "title": "Gambia Bureau of Statistics"
+        }
+      ],
+      "evidence_quote": "National statistics document over 95 percent Muslim population coexisting in deep religious tolerance with Christians",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Roots Homecoming Festival, Banjul Cultural Carnival, Janjanbureh Kankurang Festival, Eid al-Fitr (Koriteh), Tobaski",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/160",
+          "tier": 1,
+          "title": "UNESCO Intangible Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "Kankurang masked tradition inscribed by UNESCO, central to initiation and seasonal community festivities",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Modest clothing recommended in inland towns and villages; swimwear acceptable only on hotel beachfronts and pools; respect community elders and religious norms; all narcotics possession strictly penalized with mandatory prison terms",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitthegambia.gm",
+          "tier": 1,
+          "title": "Gambia Tourism Board"
+        }
+      ],
+      "evidence_quote": "Dress modestly outside coastal beach complexes; zero-tolerance narcotics legislation rigorously enforced",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Customary in tourism; 10% in hotel restaurants and bars; tipping river pirogue boatmen, birdwatching guides, and hotel staff is standard courtesy",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitthegambia.gm",
+          "tier": 1,
+          "title": "Gambia Tourism Board"
+        }
+      ],
+      "evidence_quote": "Tipping is customary across tourist resorts, safari lodges, and nature guiding services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kunta Kinteh Adası ve Gambiya Nehri Tarihi Sit Alanı",
+        "en": "Kunta Kinteh Island & Related Sites (James Island)",
+        "de": "Kunta Kinteh Island & historische Stätten am Gambia-Fluss",
+        "ru": "Остров Кунта Кинте и исторические объекты реки Гамбия",
+        "es": "Isla Kunta Kinteh y Sitios Históricos del Río Gambia"
+      },
+      "type": "historic_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/761",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Gambiya Nehri Mangrov Kanalları ve Kuş Cenneti",
+        "en": "Gambia River Mangroves & Birdwatching Habitats",
+        "de": "Gambia-Fluss Mangroven & Vogelbeobachtungsgebiete",
+        "ru": "Мангровые заросли реки Гамбия и орнитологический заповедник",
+        "es": "Manglares del Río Gambia y Paraíso de Observación de Aves"
+      },
+      "type": "natural_wildlife",
+      "sources": [
+        {
+          "url": "https://www.visitthegambia.gm",
+          "tier": 1,
+          "title": "Gambia Tourism Board"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Gambiya Nehri Mangrov Kanalları ve Balıkçı Tekneleri",
+        "license": "CC-BY-SA",
+        "author": "Ikiwaner",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Tendaba_The_Gambia.jpg",
+        "attribution_text": "Ikiwaner / Wikimedia Commons / CC BY-SA 3.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Gambiya Nehri Mangrov Kanalları ve Balıkçı Tekneleri",
+          "en": "Gambia River Mangrove Channels & Pirogues",
+          "de": "Gambia-Fluss Mangrovenkanäle & Pirogen",
+          "ru": "Мангровые протоки реки Гамбия и рыбацкие пироги",
+          "es": "Canales de Manglares del Río Gambia y Piraguas"
+        },
+        "recognizability_checked": true
+      }
+    ],
+  "last_reviewed": "2026-10-18"
+  }
+}

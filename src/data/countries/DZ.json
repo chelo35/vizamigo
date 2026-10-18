@@ -1,0 +1,433 @@
+{
+  "iso2": "DZ",
+  "names": {
+    "tr": "Cezayir",
+    "en": "Algeria",
+    "de": "Algerien",
+    "ru": "Алжир",
+    "es": "Argelia"
+  },
+  "capital": {
+    "value": "Algiers",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.elmouradia.dz",
+        "tier": 1,
+        "title": "Presidency of the Republic of Algeria"
+      }
+    ],
+    "evidence_quote": "Algiers is the constitutional capital and political seaport seat of the Algerian state",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "DZD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bank-of-algeria.dz",
+        "tier": 1,
+        "title": "Bank of Algeria"
+      }
+    ],
+    "evidence_quote": "The Algerian Dinar (DZD, DA) is the sovereign currency governed by Banque d'Algérie",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.meteo.dz",
+        "tier": 1,
+        "title": "Office National de la Météorologie"
+      }
+    ],
+    "evidence_quote": "Algeria operates on Central European Time (UTC+1) year-round without seasonal clock change",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sonelgaz.dz",
+          "tier": 1,
+          "title": "Sonelgaz National Electricity Group"
+        }
+      ],
+      "evidence_quote": "National single-phase household power distribution across Algeria is nominal 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sonelgaz.dz",
+          "tier": 1,
+          "title": "Sonelgaz"
+        }
+      ],
+      "evidence_quote": "Interconnected power network maintains standard 50 Hz synchronised alternating current",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "Standard Europlug Type C and round grounded Type F sockets are universal in Algeria",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "17",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.algeriepolice.dz",
+          "tier": 1,
+          "title": "Sûreté Nationale Algérienne"
+        }
+      ],
+      "evidence_quote": "Dial 17 nationwide (or 1548 via mobile networks) for Police Nationale emergency intervention",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "14",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.protectioncivile.dz",
+          "tier": 1,
+          "title": "Protection Civile Algérie"
+        }
+      ],
+      "evidence_quote": "Dial 14 for Protection Civile paramedics, medical rescue, and emergency ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "14",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.protectioncivile.dz",
+          "tier": 1,
+          "title": "Protection Civile Algérie"
+        }
+      ],
+      "evidence_quote": "Dial 14 to summon the civil protection fire brigades and disaster rescue teams",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.algeriepolice.dz",
+          "tier": 1,
+          "title": "Sûreté Nationale"
+        }
+      ],
+      "evidence_quote": "Emergency number 112 connects callers to integrated police and emergency response routing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/algeria",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tembihli Seyahat (Kıyı ve Tarihi Şehirler Sakin; Güney Sahra ve Sınır Hatları Kısıtlı)",
+      "en": "Exercise Increased Caution (Coastal Cities Safe; Remote Southern Desert & Borders Restricted)",
+      "de": "Erhöhte Vorsicht (Küstenzone und historische Städte sicher; südliche Sahararegionen meiden)",
+      "ru": "Проявляйте повышенную осторожность (Побережье безопасно; южные пустынные зоны ограничены)",
+      "es": "Tenga mayor precaución (Zona costera y ciudades seguras; desierto sur y fronteras restringidos)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Southern desert borders (Mali, Niger, Libya, Mauritania)",
+        "level": 4,
+        "reason": "Terrorism and kidnapping risks; foreign tourists strictly require certified local guide permits",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "medium",
+      "crime": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 16.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Algeria registers median mobile cellular download speeds around 16.5 Mbps on 4G LTE networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 14.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Algerian fixed broadband median download benchmark registers around 14.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Prepaid SIM cards available upon passport registration with Mobilis, Djezzy, or Ooredoo; international travel eSIMs widely operational",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.arpce.dz",
+          "tier": 1,
+          "title": "ARPCE Algeria Telecoms Authority"
+        }
+      ],
+      "evidence_quote": "SIM card registration mandates valid passport verification under ARPCE telecom regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yassir",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://yassir.com",
+        "tier": 1,
+        "title": "Yassir SuperApp Algeria"
+      }
+    },
+    {
+      "name": "Coursa",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://coursa-dz.com",
+        "tier": 2,
+        "title": "Coursa VTC Algeria"
+      }
+    },
+    {
+      "name": "Heetch",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.heetch.com",
+        "tier": 1,
+        "title": "Heetch Algeria"
+      }
+    },
+    {
+      "name": "Chargily",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://chargily.com",
+        "tier": 2,
+        "title": "Chargily Pay Algeria"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (Sunni ~99%), small Christian and Jewish communities",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.marw.dz",
+          "tier": 1,
+          "title": "Ministry of Religious Affairs of Algeria"
+        }
+      ],
+      "evidence_quote": "Sunni Islam of the Maliki school is the state religion observed by over 98% of citizens",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Eid al-Fitr, Eid al-Adha, Mawlid, Yennayer (Amazigh New Year, Jan 12), Revolution Day (Nov 1)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.m-culture.gov.dz",
+          "tier": 1,
+          "title": "Ministry of Culture Algeria"
+        }
+      ],
+      "evidence_quote": "Yennayer celebrated as official public holiday alongside Islamic festivals and Revolution Day",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Modest clothing recommended when visiting historical medinas and rural areas; photographing military or security installations is strictly prohibited; Saharan expeditions require certified local desert guides",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.elmouradia.dz",
+          "tier": 1,
+          "title": "Algerian Tourism & Customs"
+        }
+      ],
+      "evidence_quote": "Desert travel regulations require authorized licensed local guiding and security coordination",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Discretionary; rounding up the bill or leaving 5-10% in sit-down restaurants and cafes is standard customary practice",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ont.dz",
+          "tier": 1,
+          "title": "Office National du Tourisme Algérie"
+        }
+      ],
+      "evidence_quote": "Tipping is appreciated for good table service though service charges may be included in hotels",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Tassili n'Ajjer Sahra Platosu ve Antik Kaya Sanatı",
+        "en": "Tassili n'Ajjer Sahara Plateau & Prehistoric Rock Art",
+        "de": "Tassili n'Ajjer Sahara-Hochebene & prähistorische Felsmalereien",
+        "ru": "Плато Тассилин-Аджер и доисторические наскальные рисунки",
+        "es": "Meseta de Tassili n'Ajjer y Arte Rupestre Prehistórico"
+      },
+      "type": "natural_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/179",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Cezayir Kasbahı ve Şehitler Anıtı",
+        "en": "Casbah of Algiers & Maqam Echahid",
+        "de": "Kasbah von Algier & Maqam-Echahid-Märtyrerdenkmal",
+        "ru": "Касба Алжира и Монумент мучеников Макам Эшахид",
+        "es": "Casba de Argel y Monumento de los Mártires Maqam Echahid"
+      },
+      "type": "historic_cultural",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/565",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Tassili n'Ajjer Sahra Platosu ve Kanyon Kayalıkları (UNESCO)",
+        "license": "CC-BY",
+        "author": "magharebia",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Tassili_Desert_Algeria.jpg",
+        "attribution_text": "magharebia / Wikimedia Commons / CC BY 2.0",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Tassili n'Ajjer Sahra Platosu ve Kanyon Kayalıkları (UNESCO)",
+          "en": "Tassili n'Ajjer Sahara Plateau & Rock Formations (UNESCO)",
+          "de": "Tassili n'Ajjer Sahara-Hochebene & Felsenlabyrinthe (UNESCO)",
+          "ru": "Плато Тассилин-Аджер в Сахаре и каменные лабиринты (ЮНЕСКО)",
+          "es": "Meseta Sahariana de Tassili n'Ajjer y Cañones (UNESCO)"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 2
+}

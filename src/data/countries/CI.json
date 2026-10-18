@@ -1,0 +1,433 @@
+{
+  "iso2": "CI",
+  "names": {
+    "tr": "Fildişi Sahili",
+    "en": "Côte d'Ivoire",
+    "de": "Elfenbeinküste",
+    "ru": "Кот-д'Ивуар",
+    "es": "Costa de Marfil"
+  },
+  "capital": {
+    "value": "Yamoussoukro",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gouv.ci",
+        "tier": 1,
+        "title": "Portail Officiel du Gouvernement de Côte d'Ivoire"
+      }
+    ],
+    "evidence_quote": "Yamoussoukro is the official political capital; Abidjan serves as the economic metropolis and seat of government",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XOF",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bceao.int",
+        "tier": 1,
+        "title": "Banque Centrale des États de l'Afrique de l'Ouest"
+      }
+    ],
+    "evidence_quote": "The West African CFA Franc (XOF, CFA) is the legal currency pegged to the Euro (1 EUR = 655.957 XOF)",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (GMT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://sodexam.ci",
+        "tier": 1,
+        "title": "SODEXAM Météorologie de Côte d'Ivoire"
+      }
+    ],
+    "evidence_quote": "Côte d'Ivoire maintains Greenwich Mean Time (UTC+0) year-round without seasonal adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cie.ci",
+          "tier": 1,
+          "title": "Compagnie Ivoirienne d'Électricité (CIE)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical grid voltage in Côte d'Ivoire is 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cie.ci",
+          "tier": 1,
+          "title": "Compagnie Ivoirienne d'Électricité"
+        }
+      ],
+      "evidence_quote": "Grid AC frequency operates at nominal 50 Hz across all national supply corridors",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "Standard European two-pin Type C and French-style grounded Type E wall sockets are universal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gouv.ci",
+          "tier": 1,
+          "title": "Police Nationale de Côte d'Ivoire"
+        }
+      ],
+      "evidence_quote": "Dial 111 (or 170 / 100) nationwide for Police Nationale emergency intervention dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "185",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sante.gouv.ci",
+          "tier": 1,
+          "title": "SAMU Côte d'Ivoire"
+        }
+      ],
+      "evidence_quote": "Dial 185 for Service d'Aide Médicale Urgente (SAMU) emergency doctor and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "180",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.interieur.gouv.ci",
+          "tier": 1,
+          "title": "Groupement des Sapeurs-Pompiers Militaires"
+        }
+      ],
+      "evidence_quote": "Dial 180 to reach the Groupement des Sapeurs-Pompiers Militaires (GSPM) emergency fire service",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gouv.ci",
+          "tier": 1,
+          "title": "Gouvernement Ivoirien"
+        }
+      ],
+      "evidence_quote": "Dial 112 from any cell phone for centralized emergency rescue routing",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire",
+          "tier": 1,
+          "title": "UK FCDO Travel Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "German Federal Foreign Office"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tembihli Seyahat (Abidjan ve Güney Turistik Alanlar Canlı; Kuzey Sınırında Dikkat)",
+      "en": "Exercise Increased Caution (Abidjan & South Coast Safe; Caution on Far Northern Borders)",
+      "de": "Erhöhte Vorsicht (Abidjan und Südküste sicher; Vorsicht an den nördlichen Landesgrenzen)",
+      "ru": "Проявляйте повышенную осторожность (Абиджан и юг стабильны; северные границы уязвимы)",
+      "es": "Tenga mayor precaución (Abiyán y costa sur seguras; precaución en fronteras del norte)"
+    },
+    "regional_warnings": [
+      {
+        "area": "Northern borders with Burkina Faso and Mali",
+        "level": 4,
+        "reason": "Risk of cross-border terrorism and militant incursions in border national parks",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        }
+      }
+    ],
+    "risk_categories": {
+      "terrorism": "medium",
+      "crime": "medium",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 33.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Côte d'Ivoire delivers median mobile download speeds around 33.5 Mbps across Orange, MTN, and Moov 4G/5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 42.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index",
+          "tier": 2,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Ivorian urban fiber-optic network delivers strong median fixed broadband downloads of 42.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Prepaid SIM registration requires passport photo ID; Orange, MTN, and Moov offer wide 4G/5G; Wave and Djamo widely accepted for QR payments",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.artci.ci",
+          "tier": 1,
+          "title": "ARTCI Telecoms Regulator"
+        }
+      ],
+      "evidence_quote": "Subscriber registration strictly regulated requiring verified biometric passport validation",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yango",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://yango.com",
+        "tier": 1,
+        "title": "Yango Côte d'Ivoire"
+      }
+    },
+    {
+      "name": "Wave",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.wave.com",
+        "tier": 1,
+        "title": "Wave Mobile Money Côte d'Ivoire"
+      }
+    },
+    {
+      "name": "Djamo",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://djamo.ci",
+        "tier": 2,
+        "title": "Djamo Finance Côte d'Ivoire"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com",
+        "tier": 1,
+        "title": "Glovo Abidjan"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (~42%), Christianity (~40%), traditional animist beliefs (~12%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ins.ci",
+          "tier": 1,
+          "title": "Institut National de la Statistique de Côte d'Ivoire"
+        }
+      ],
+      "evidence_quote": "Demographic statistics show nearly equal representation between Muslim and Christian communities living in harmony",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Abissa Festival (Grand-Bassam), Carnival of Bouaké, Fête du Dipri, Popo Carnaval de Bonoua, Eid al-Fitr, Christmas",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://culture.gouv.ci",
+          "tier": 1,
+          "title": "Ministère de la Culture et de la Francophonie"
+        }
+      ],
+      "evidence_quote": "Abissa in Grand-Bassam and national cultural carnivals highlight vibrant multi-ethnic heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "French is the primary working language; greetings are important social rituals; take permission before taking portraits; Grand-Bassam beach undertows can be hazardous for swimmers; always negotiate taxi meters or use ride apps",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cotedivoiretourisme.ci",
+          "tier": 1,
+          "title": "Côte d'Ivoire Tourisme"
+        }
+      ],
+      "evidence_quote": "Social courtesies and greetings essential; ocean beach currents require attentive swimming vigilance",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A tip of 5-10% in upscale Abidjan restaurants is customary; small change is customary for parking guards (gardien) and baggage handlers",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cotedivoiretourisme.ci",
+          "tier": 1,
+          "title": "Côte d'Ivoire Tourisme"
+        }
+      ],
+      "evidence_quote": "Tips are discretionary but standard practice in international dining and hospitality services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Yamoussoukro Barış Meryem Anası Bazilikası",
+        "en": "Basilica of Our Lady of Peace, Yamoussoukro",
+        "de": "Basilika Notre-Dame de la Paix, Yamoussoukro",
+        "ru": "Базилика Пресвятой Девы Марии Мира в Ямусукро",
+        "es": "Basílica de Nuestra Señora de la Paz de Yamusukro"
+      },
+      "type": "architectural_wonder",
+      "sources": [
+        {
+          "url": "https://cotedivoiretourisme.ci",
+          "tier": 1,
+          "title": "Côte d'Ivoire Tourisme"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Grand-Bassam Tarihi Kolonyal Şehri",
+        "en": "Historic Town of Grand-Bassam",
+        "de": "Historische Kolonialstadt Grand-Bassam",
+        "ru": "Исторический город Гран-Басам",
+        "es": "Ciudad Histórica de Grand-Bassam"
+      },
+      "type": "historic_unesco",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1322",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Yamoussoukro Barış Meryem Anası Bazilikası",
+        "license": "CC0",
+        "author": "Didierwiki",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_5.jpg",
+        "attribution_text": "Didierwiki / Wikimedia Commons / CC0 1.0 Universal",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Yamoussoukro Barış Meryem Anası Bazilikası",
+          "en": "Basilica of Our Lady of Peace, Yamoussoukro",
+          "de": "Basilika Notre-Dame de la Paix, Yamoussoukro",
+          "ru": "Базилика Пресвятой Девы Марии Мира, Ямусукро",
+          "es": "Basílica de Nuestra Señora de la Paz, Yamusukro"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "last_reviewed": "2026-10-18",
+  "travelRiskLevel": 2
+}

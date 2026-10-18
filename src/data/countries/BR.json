@@ -79,7 +79,10 @@
       "retrieved_at": "2026-10-13"
     },
     "plug_types": {
-      "value": ["C", "N"],
+      "value": [
+        "C",
+        "N"
+      ],
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -373,7 +376,10 @@
         "author": "Agustin Diaz Gargiulo",
         "source_url": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1200&q=80",
         "attribution_text": "Photo by Agustin Diaz Gargiulo on Unsplash",
-        "focal_point": { "x": 0.5, "y": 0.4 },
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.4
+        },
         "alt": {
           "tr": "Rio de Janeiro Corcovado Dağı üzerindeki ikonik Kurtarıcı İsa Heykeli",
           "en": "Iconic Christ the Redeemer statue overlooking Rio de Janeiro from Corcovado",
@@ -409,5 +415,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-13"
+  "last_reviewed": "2026-10-13",
+  "travelRiskLevel": 2
 }

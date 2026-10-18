@@ -79,7 +79,10 @@
       "retrieved_at": "2026-10-13"
     },
     "plug_types": {
-      "value": ["A", "B"],
+      "value": [
+        "A",
+        "B"
+      ],
       "status": "verified",
       "confidence": "high",
       "sources": [
@@ -352,7 +355,10 @@
         "author": "Brandon Jacoby",
         "source_url": "https://images.unsplash.com/photo-1588384153148-ebd739ac430c?auto=format&fit=crop&w=1200&q=80",
         "attribution_text": "Photo by Brandon Jacoby on Unsplash",
-        "focal_point": { "x": 0.5, "y": 0.4 },
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.4
+        },
         "alt": {
           "tr": "New York Limanı'ndaki tarihi Özgürlük Heykeli ve Manhattan manzarası",
           "en": "Statue of Liberty standing in New York Harbor overlooking Lower Manhattan",
@@ -388,5 +394,6 @@
     },
     "faq": []
   },
-  "last_reviewed": "2026-10-13"
+  "last_reviewed": "2026-10-13",
+  "travelRiskLevel": 1
 }
