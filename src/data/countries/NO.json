@@ -1,0 +1,451 @@
+{
+  "iso2": "NO",
+  "names": {
+    "tr": "Norveç",
+    "en": "Norway",
+    "de": "Norwegen",
+    "ru": "Норвегия",
+    "es": "Noruega"
+  },
+  "capital": {
+    "value": "Oslo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.oslo.kommune.no",
+        "tier": 1,
+        "title": "City of Oslo"
+      }
+    ],
+    "evidence_quote": "Oslo is the capital and most populous municipality of Norway",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "NOK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.norges-bank.no",
+        "tier": 1,
+        "title": "Norges Bank (Central Bank of Norway)"
+      }
+    ],
+    "evidence_quote": "The Norwegian Krone (NOK) is the official currency of Norway",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.justervesenet.no",
+        "tier": 1,
+        "title": "Norwegian Metrology Service (Justervesenet)"
+      }
+    ],
+    "evidence_quote": "Norway observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statnett.no",
+          "tier": 1,
+          "title": "Statnett Norwegian Grid Operator"
+        }
+      ],
+      "evidence_quote": "Standard residential electricity in Norway is delivered at 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statnett.no",
+          "tier": 1,
+          "title": "Statnett Norway"
+        }
+      ],
+      "evidence_quote": "Power grid frequency across Norway operates at a standardized 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dsb.no",
+          "tier": 1,
+          "title": "Norwegian Directorate for Civil Protection (DSB)"
+        }
+      ],
+      "evidence_quote": "Norway uses European standard grounded Type F Schuko and ungrounded Type C Europlugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.politiet.no",
+          "tier": 1,
+          "title": "Norwegian Police (Politiet)"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch across Norway connects via 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.helsenorge.no",
+          "tier": 1,
+          "title": "Helsenorge National Health Services"
+        }
+      ],
+      "evidence_quote": "Medical and ambulance emergencies in Norway are reached directly at 113",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dsb.no",
+          "tier": 1,
+          "title": "DSB Fire Emergency"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency calls in Norway are answered directly on 110",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.politiet.no",
+          "tier": 1,
+          "title": "Politiet 112 Emergency"
+        }
+      ],
+      "evidence_quote": "112 is the primary police emergency line and coordinates urgent life-saving rescue",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Norway Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/norway",
+          "tier": 1,
+          "title": "UK FCDO Norway Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Norveç dünyanın en güvenli ve müreffeh ülkelerindendir",
+      "en": "Normal Precautions: Norway is one of the safest countries in the world",
+      "de": "Normale Vorsicht: Norwegen gehört zu den sichersten Ländern der Welt",
+      "ru": "Обычные меры: Норвегия одна из самых безопасных стран мира",
+      "es": "Precauciones normales: Noruega es uno de los países más seguros del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 145.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/norway",
+          "tier": 2,
+          "title": "Ookla Speedtest Norway"
+        }
+      ],
+      "evidence_quote": "Norway mobile download speed averages 145.1 Mbps ranking among global leaders",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 195.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/norway",
+          "tier": 2,
+          "title": "Ookla Speedtest Norway Fixed"
+        }
+      ],
+      "evidence_quote": "Norway fixed broadband speed averages 195.4 Mbps across nationwide fiber networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Telenor, Telia Norway, and Ice. Norway is part of the EEA, so EU Roam Like at Home regulations apply in full.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nkom.no",
+          "tier": 1,
+          "title": "Norwegian Communications Authority (Nkom)"
+        }
+      ],
+      "evidence_quote": "EEA Roam Like at Home regulations ensure mobile roaming parity across Norwegian networks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Ruter",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ruter.no/en/",
+        "tier": 1,
+        "title": "Ruter Public Transport Oslo & Akershus"
+      }
+    },
+    {
+      "name": "Vy",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vy.no/en",
+        "tier": 1,
+        "title": "Vy Norwegian National Trains and Buses"
+      }
+    },
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-no/",
+        "tier": 1,
+        "title": "Bolt Norway"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/nor/oslo",
+        "tier": 1,
+        "title": "Wolt Norway Food Delivery"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Norveç Kilisesi (Evanjelik Lutheran ~67%), Dinsiz/Seküler ~20%, İslam ~3.5%, Katoliklik ~3%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ssb.no",
+          "tier": 1,
+          "title": "Statistics Norway (SSB)"
+        }
+      ],
+      "evidence_quote": "The Church of Norway represents historic cultural heritage alongside a modern secular society",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Anayasa Günü (Syttende Mai, 17 Mayıs), Yaz Gündönümü (Sankthansaften), Bergen Uluslararası Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitnorway.com",
+          "tier": 1,
+          "title": "Visit Norway Events"
+        }
+      ],
+      "evidence_quote": "Constitution Day on May 17 is celebrated with children's parades and traditional bunad dress",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Norveç fiilen tamamen NAKİTSİZDİR; nakit para taşımak gereksizdir. 'Allemannsretten' (Doğada Gezinme Özgürlüğü) kuralı ile doğada serbestçe çadır kurulabilir ancak çevreye tam saygı gösterilmelidir. Fiyort feribotları ve otoyollar AutoPASS sistemiyle otomatik taranır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitnorway.com",
+          "tier": 1,
+          "title": "Visit Norway Right to Roam"
+        }
+      ],
+      "evidence_quote": "Norway's Right to Roam permits nature access provided visitors leave no trace; society is predominantly cashless",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş zorunlu değildir ve beklenmez; servis ve KDV tüm fiyatlara dahildir. Akşam yemeklerinde memnun kalındığında %5-10 yuvarlama yapılabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitnorway.com",
+          "tier": 1,
+          "title": "Visit Norway Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Service charges are included by law in all bills; tipping is entirely optional in Norway",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Geiranger Fiyordu ve Fiyort Şelaleleri (UNESCO)",
+        "en": "Geirangerfjord and Waterfalls (UNESCO)",
+        "de": "Geirangerfjord und Wasserfälle",
+        "ru": "Гейрангер-фьорд и водопады (ЮНЕСКО)",
+        "es": "Fiordo de Geiranger y Cascadas (UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1195",
+          "tier": 1,
+          "title": "UNESCO West Norwegian Fjords - Geirangerfjord and Nærøyfjord"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Lofoten Adaları ve Balıkçı Köyleri",
+        "en": "Lofoten Islands and Fishing Villages",
+        "de": "Lofoten-Inseln und Fischerdörfer",
+        "ru": "Лофотенские острова и рыбацкие деревни",
+        "es": "Islas Lofoten y Pueblos Pesqueros"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.visitnorway.com",
+          "tier": 1,
+          "title": "Visit Norway Lofoten"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Bergen Tarihi Bryggen İskelesi (UNESCO)",
+        "en": "Bryggen Historic Wharf in Bergen",
+        "de": "Historisches Hanseviertel Bryggen in Bergen",
+        "ru": "Историческая набережная Брюгген в Бергене",
+        "es": "Muelle Histórico de Bryggen en Bergen"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/59",
+          "tier": 1,
+          "title": "UNESCO Bryggen Bergen"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Geiranger Fiyordu ve Fiyort Şelaleleri (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/no-480.webp",
+        "attribution_text": "Geirangerfjord, Norway. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Geiranger Fiyordu ve Şelaleleri, Norveç",
+          "en": "Geirangerfjord and Waterfalls, Norway",
+          "de": "Geirangerfjord und Wasserfälle, Norwegen",
+          "ru": "Гейрангер-фьорд и водопады, Норвегия",
+          "es": "Fiordo de Geiranger y cascadas, Noruega"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "norvec",
+      "en": "norway",
+      "de": "norwegen",
+      "ru": "norvegiya",
+      "es": "noruega"
+    },
+    "title": {
+      "tr": "Norveç Vize Rehberi, Schengen ve Fiyort Seyahat Rehberi | Vizamigo",
+      "en": "Norway Visa Guide, Schengen Rules & Fjord Travel | Vizamigo",
+      "de": "Norwegen Visum-Leitfaden, Schengen & Fjord-Reisen | Vizamigo",
+      "ru": "Виза в Норвегию, шенгенские правила и гид по фьордам | Vizamigo",
+      "es": "Guía de Visa de Noruega, Normas Schengen y Fiordos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Norveç Schengen vizesi, Ruter ulaşım uygulaması, Allemannsretten doğa hakkı, nakitsiz yaşam ve fiyort seyahat ipuçları.",
+      "en": "Norway Schengen visa policies, Ruter transit app, Right to Roam rules, cashless payments, and verified fjord travel advice.",
+      "de": "Norwegen Schengen-Visabestimmungen, Ruter-Verkehrs-App, Jedermannsrecht, bargeldloses Zahlen und Fjord-Tipps.",
+      "ru": "Шенгенская виза в Норвегию, транспорт Ruter, право на природу Allemannsretten, безналичная оплата и фьорды.",
+      "es": "Requisitos de visa Schengen para Noruega, app Ruter, derecho de acceso a la naturaleza, pagos sin efectivo y fiordos."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

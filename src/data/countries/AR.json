@@ -1,0 +1,457 @@
+{
+  "iso2": "AR",
+  "names": {
+    "tr": "Arjantin",
+    "en": "Argentina",
+    "de": "Argentinien",
+    "ru": "Аргентина",
+    "es": "Argentina"
+  },
+  "capital": {
+    "value": "Buenos Aires",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://buenosaires.gob.ar",
+        "tier": 1,
+        "title": "Autonomous City of Buenos Aires Official Portal"
+      }
+    ],
+    "evidence_quote": "Buenos Aires is the federal capital and largest city of the Argentine Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ARS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcra.gob.ar",
+        "tier": 1,
+        "title": "Central Bank of the Argentine Republic (BCRA)"
+      }
+    ],
+    "evidence_quote": "The Argentine Peso (ARS) is the national currency of Argentina",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-3 (ART)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hidro.gov.ar",
+        "tier": 1,
+        "title": "Servicio de Hidrografia Naval Official Timekeeper"
+      }
+    ],
+    "evidence_quote": "Argentina operates on Argentina Time UTC-3 without daylight saving time adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enre.gov.ar",
+          "tier": 1,
+          "title": "Ente Nacional Regulador de la Electricidad (ENRE)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase residential electricity in Argentina is 220V",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enre.gov.ar",
+          "tier": 1,
+          "title": "ENRE Argentina"
+        }
+      ],
+      "evidence_quote": "The Argentine electrical grid operates at a standardized frequency of 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iram.org.ar",
+          "tier": 1,
+          "title": "Instituto Argentino de Normalizacion (IRAM 2073)"
+        }
+      ],
+      "evidence_quote": "Standard IRAM 2073 specifies Type I angled flat-blade sockets alongside legacy Type C sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.argentina.gob.ar/seguridad",
+          "tier": 1,
+          "title": "Ministry of Security Argentina"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch throughout Argentine provinces operates on 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "107",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://buenosaires.gob.ar/salud/same",
+          "tier": 1,
+          "title": "SAME Emergency Medical Service Buenos Aires"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance response (SAME) is dialed via 107",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "100",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.argentina.gob.ar/seguridad",
+          "tier": 1,
+          "title": "Argentine Fire Rescue"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is contacted directly on hotline 100",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.argentina.gob.ar",
+          "tier": 1,
+          "title": "Government of Argentina 911"
+        }
+      ],
+      "evidence_quote": "911 is the consolidated national emergency response line across Argentina",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "0800-999-5000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar",
+          "tier": 1,
+          "title": "Tourist Police Police Station (Comisaría del Turista)"
+        }
+      ],
+      "evidence_quote": "Comisaría del Turista provides specialized assistance and translation on 0800 999 5000",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Argentina Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/argentina",
+          "tier": 1,
+          "title": "UK FCDO Argentina Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Başlıca turistik bölgeler güvenlidir; metropollerde yankesiciliğe karşı uyanık olun",
+      "en": "Normal Precautions: Tourist circuits safe; exercise normal vigilance against pickpocketing in big cities",
+      "de": "Normale Vorsicht: Touristenzentren sicher; Wachsamkeit gegenüber Taschendiebstahl in Großstädten",
+      "ru": "Обычные меры: туристические зоны безопасны, следите за вещами в крупных городах",
+      "es": "Precauciones normales: circuitos turísticos seguros; mantenga vigilancia habitual en grandes ciudades"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 32.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/argentina",
+          "tier": 2,
+          "title": "Ookla Speedtest Argentina"
+        }
+      ],
+      "evidence_quote": "Argentina mobile download speed averages 32.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 78.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/argentina",
+          "tier": 2,
+          "title": "Ookla Speedtest Argentina Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Argentina averages 78.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Claro, Personal, and Movistar. Foreigners can purchase prepaid SIM cards with passport registration at official operator stores.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.enacom.gob.ar",
+          "tier": 1,
+          "title": "Ente Nacional de Comunicaciones (ENACOM)"
+        }
+      ],
+      "evidence_quote": "SIM card registration mandates valid passport verification under ENACOM rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Cabify",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://cabify.com/ar",
+        "tier": 1,
+        "title": "Cabify Argentina"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/ar/es/",
+        "tier": 1,
+        "title": "Uber Argentina"
+      }
+    },
+    {
+      "name": "SUBE",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.argentina.gob.ar/sube",
+        "tier": 1,
+        "title": "Tarjeta SUBE Official Transit Card"
+      }
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.ar",
+        "tier": 1,
+        "title": "PedidosYa Argentina"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roma Katolikliği (~63%), Dinsiz/Agnostik (~19%), Evanjelik Protestanlık (~15%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.conicet.gov.ar",
+          "tier": 1,
+          "title": "CONICET National Survey on Religious Beliefs"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism is the historically predominant cultural faith alongside growing secular trends",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Mayıs Devrimi Günü (25 Mayıs), Bağımsızlık Günü (9 Temmuz), Dünya Tango Festivali (Ağustos), Gualeguaychú Karnavalı",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.argentina.gob.ar/turismo",
+          "tier": 1,
+          "title": "Argentina Tourism Calendar"
+        }
+      ],
+      "evidence_quote": "May 25 and Independence Day on July 9 are Argentina's primary patriotic national holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Prizler Avustralya tipi eğik uçlu Tip I standardındadır; Avrupa veya ABD fişleri için adaptör şarttır. Toplu taşıma için SUBE kartı zorunludur. Dolar kuru için resmi 'MEP / Turist Kuru' kredi kartlarına otomatik uygulanır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar",
+          "tier": 1,
+          "title": "Visit Buenos Aires Practical Info"
+        }
+      ],
+      "evidence_quote": "Type I plugs are standard; foreign cards automatically benefit from favorable tourist MEP exchange rates",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş teamüldür (propina). Bahşiş genellikle kredi kartına eklenemez, masaya nakit peso bırakılması tercih edilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar",
+          "tier": 1,
+          "title": "Buenos Aires Tipping Etiquette"
+        }
+      ],
+      "evidence_quote": "Leaving approximately 10 percent cash tip is customary in Argentine cafes and restaurants",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Perito Moreno Buzulu (Los Glaciares)",
+        "en": "Perito Moreno Glacier",
+        "de": "Perito-Moreno-Gletscher",
+        "ru": "Ледник Перито-Морено",
+        "es": "Glaciar Perito Moreno"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/145",
+          "tier": 1,
+          "title": "UNESCO Los Glaciares National Park"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Iguazú Şelaleleri (Arjantin Tarafı)",
+        "en": "Iguazu Falls (Argentine Side)",
+        "de": "Iguazú-Wasserfälle",
+        "ru": "Водопады Игуасу (Аргентинская сторона)",
+        "es": "Cataratas del Iguazú (Lado Argentino)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/303",
+          "tier": 1,
+          "title": "UNESCO Iguazu National Park"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Buenos Aires La Boca ve Caminito",
+        "en": "Buenos Aires La Boca and Caminito",
+        "de": "La Boca und Caminito Buenos Aires",
+        "ru": "Ла Бока и Каминито в Буэнос-Айресе",
+        "es": "La Boca y Caminito en Buenos Aires"
+      },
+      "type": "historic_neighbourhood",
+      "sources": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar",
+          "tier": 1,
+          "title": "Buenos Aires Tourism Caminito"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Perito Moreno Buzulu Mavi Buz Duvarı ve Argentino Gölü",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ar-480.webp",
+        "attribution_text": "Perito Moreno Glacier and Lake Argentino, Argentina. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Perito Moreno Buzulu Mavi Duvarı, Arjantin",
+          "en": "Perito Moreno Glacier Blue Ice Wall, Argentina",
+          "de": "Perito-Moreno-Gletscher Blaue Eiswand, Argentinien",
+          "ru": "Ледник Перито-Морено стена голубого льда, Аргентина",
+          "es": "Muro de hielo azul del Glaciar Perito Moreno, Argentina"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "arjantin",
+      "en": "argentina",
+      "de": "argentinien",
+      "ru": "argentina",
+      "es": "argentina"
+    },
+    "title": {
+      "tr": "Arjantin Vize Rehberi, Güvenlik ve Seyahat Bilgileri | Vizamigo",
+      "en": "Argentina Visa Guide, Safety Tips & Travel Essentials | Vizamigo",
+      "de": "Argentinien Visum-Leitfaden, Sicherheit & Reisetipps | Vizamigo",
+      "ru": "Виза в Аргентину, безопасность и советы туристу | Vizamigo",
+      "es": "Guía de Visa de Argentina, Seguridad y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Arjantin vize şartları, SUBE ulaşım kartı, döviz MEP kuru, priz tipi I, Perito Moreno buzulu ve seyahat tavsiyeleri.",
+      "en": "Argentina visa requirements, SUBE transit card, tourist MEP dollar rate, Type I plugs, and Perito Moreno glacier tips.",
+      "de": "Argentinien Visabestimmungen, SUBE-Verkehrskarte, MEP-Dollarkurs, Typ-I-Stecker und Perito-Moreno-Reisetipps.",
+      "ru": "Визовые правила Аргентины, карта SUBE, туристический курс доллара MEP, розетки I и ледник Перито-Морено.",
+      "es": "Requisitos de visa para Argentina, tarjeta SUBE, tipo de cambio MEP para turistas, enchufes tipo I y Glaciar Perito Moreno."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

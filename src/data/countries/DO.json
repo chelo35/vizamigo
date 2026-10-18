@@ -1,0 +1,447 @@
+{
+  "iso2": "DO",
+  "names": {
+    "tr": "Dominik Cumhuriyeti",
+    "en": "Dominican Republic",
+    "de": "Dominikanische Republik",
+    "ru": "Доминиканская Республика",
+    "es": "República Dominicana"
+  },
+  "capital": {
+    "value": "Santo Domingo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://adn.gob.do",
+        "tier": 1,
+        "title": "Alcaldía del Distrito Nacional Santo Domingo"
+      }
+    ],
+    "evidence_quote": "Santo Domingo is the capital and largest metropolis of the Dominican Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "DOP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bancentral.gov.do",
+        "tier": 1,
+        "title": "Banco Central de la Republica Dominicana"
+      }
+    ],
+    "evidence_quote": "The Dominican Peso (DOP) is the national legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.onamet.gob.do",
+        "tier": 1,
+        "title": "Oficina Nacional de Meteorologia (ONAMET)"
+      }
+    ],
+    "evidence_quote": "The Dominican Republic observes Atlantic Standard Time UTC-4 year-round",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://sie.gob.do",
+          "tier": 1,
+          "title": "Superintendencia de Electricidad (SIE)"
+        }
+      ],
+      "evidence_quote": "Residential distribution voltage in the Dominican Republic is 120 volts",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://sie.gob.do",
+          "tier": 1,
+          "title": "SIE Dominican Republic"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout the Dominican power system is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://sie.gob.do",
+          "tier": 1,
+          "title": "SIE Standards"
+        }
+      ],
+      "evidence_quote": "Dominican electrical outlets use North American Type A ungrounded and Type B grounded plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://911.gob.do",
+          "tier": 1,
+          "title": "Sistema Nacional de Atencion a Emergencias y Seguridad 9-1-1"
+        }
+      ],
+      "evidence_quote": "National 9-1-1 system coordinates police dispatch throughout Dominican territory",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://911.gob.do",
+          "tier": 1,
+          "title": "Dominican 911 Emergency Medical Dispatch"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance requests are dispatched directly through 9-1-1",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://911.gob.do",
+          "tier": 1,
+          "title": "Dominican 911 Fire Dispatch"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch connects through unified 9-1-1",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://911.gob.do",
+          "tier": 1,
+          "title": "Sistema 9-1-1 Dominican Republic"
+        }
+      ],
+      "evidence_quote": "9-1-1 is the unified emergency contact number across Dominican provinces",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "809-200-3500",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://policiaturistica.gob.do",
+          "tier": 1,
+          "title": "Direccion Central de Policia de Turismo (POLITUR)"
+        }
+      ],
+      "evidence_quote": "POLITUR provides dedicated tourist security assistance and crisis helpline 809 200 3500",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Dominican Republic Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic",
+          "tier": 1,
+          "title": "UK FCDO Dominican Republic Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Punta Cana ve tatil köyleri güvenlidir; şehir merkezlerinde gece dikkatli olun",
+      "en": "Exercise Increased Caution: Punta Cana and resort enclaves safe; practice urban vigilance at night",
+      "de": "Erhöhte Vorsicht: Punta Cana und Urlaubsresorts sicher; nächtliche Wachsamkeit in Städten",
+      "ru": "Повышенная осторожность: Пунта-Кана и курорты безопасны, будьте внимательны ночью в городах",
+      "es": "Mayor precaución: Punta Cana y complejos turísticos seguros; mantenga precaución urbana de noche"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 31.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/dominican-republic",
+          "tier": 2,
+          "title": "Ookla Speedtest Dominican Republic"
+        }
+      ],
+      "evidence_quote": "Dominican Republic mobile download speed averages 31.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 38.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/dominican-republic",
+          "tier": 2,
+          "title": "Ookla Speedtest Dominican Republic Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in the Dominican Republic averages 38.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Claro and Altice. Tourist prepaid physical SIM cards require passport identification at official kiosks.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.indotel.gob.do",
+          "tier": 1,
+          "title": "Instituto Dominicano de las Telecomunicaciones (INDOTEL)"
+        }
+      ],
+      "evidence_quote": "INDOTEL mandates passport identification for prepaid mobile line activations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/do/es/",
+        "tier": 1,
+        "title": "Uber Dominican Republic"
+      }
+    },
+    {
+      "name": "InDrive",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Santo Domingo"
+      }
+    },
+    {
+      "name": "PedidosYa",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pedidosya.com.do",
+        "tier": 1,
+        "title": "PedidosYa Dominican Republic"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roma Katolikliği (~60%), Evanjelik Protestanlık (~20%), Dinsiz (~18%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.one.gob.do",
+          "tier": 1,
+          "title": "Oficina Nacional de Estadistica (ONE) Demographics"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism is the historic cultural foundation alongside vibrant Protestant communities",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Dominik Karnavalı (Şubat), Bağımsızlık Günü (27 Şubat), Meryem Ana Bayramı (Día de la Altagracia, 21 Ocak)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.godominicanrepublic.com",
+          "tier": 1,
+          "title": "Ministry of Tourism Culture"
+        }
+      ],
+      "evidence_quote": "Dominican Carnival throughout February and Independence Day on February 27 are major celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Ülkeye giriş ve çıkışta resmi 'E-Ticket' (eticket.migracion.gob.do) QR kodunun doldurulması ZORUNLUDUR (ücretsizdir; dolandırıcı sitelere ücret ödemeyin). Prizler Amerikan tipi A/B'dir (120V / 60Hz). Musluk suyu içilmez; şişelenmiş su tüketilmelidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://eticket.migracion.gob.do",
+          "tier": 1,
+          "title": "Direccion General de Migracion E-Ticket Portal"
+        }
+      ],
+      "evidence_quote": "The electronic ticket (E-Ticket) is mandatory for entry and exit and is completely free of charge",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 yasal servis ücreti faturaya eklenir; ancak iyi servis için %5-10 ekstra nakit bahşiş vermek yaygın bir teamüldür.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.godominicanrepublic.com",
+          "tier": 1,
+          "title": "Go Dominican Republic Tipping Guide"
+        }
+      ],
+      "evidence_quote": "A 10 percent legal tip is included in restaurant checks; an additional 5-10 percent cash tip is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Punta Cana ve Bavaro Turkuaz Sahilleri",
+        "en": "Punta Cana and Bavaro Beach",
+        "de": "Punta Cana und Bavaro-Strand",
+        "ru": "Пунта-Кана и пляж Баваро",
+        "es": "Punta Cana y Playa Bávaro"
+      },
+      "type": "beach_paradise",
+      "sources": [
+        {
+          "url": "https://www.godominicanrepublic.com",
+          "tier": 1,
+          "title": "Ministry of Tourism Punta Cana"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Santo Domingo Kolonyal Şehri (UNESCO)",
+        "en": "Colonial City of Santo Domingo (UNESCO)",
+        "de": "Kolonialstadt von Santo Domingo",
+        "ru": "Колониальный город Санто-Доминго",
+        "es": "Ciudad Colonial de Santo Domingo"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/526",
+          "tier": 1,
+          "title": "UNESCO Colonial City of Santo Domingo"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Saona Adası ve Ulusal Doğu Parkı",
+        "en": "Saona Island and Cotubanama National Park",
+        "de": "Insel Saona und Cotubanamá-Nationalpark",
+        "ru": "Остров Саона и национальный парк Котубанама",
+        "es": "Isla Saona y Parque Nacional Cotubanamá"
+      },
+      "type": "nature_reserve",
+      "sources": [
+        {
+          "url": "https://www.godominicanrepublic.com",
+          "tier": 1,
+          "title": "Go Dominican Republic Saona"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Punta Cana Hindistan Cevizi Palmiyeleri ve Turkuaz Sahil",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/do-480.webp",
+        "attribution_text": "Punta Cana palm fringed turquoise beach, Dominican Republic. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Punta Cana Palmiyeleri ve Turkuaz Sahili, Dominik Cumhuriyeti",
+          "en": "Punta Cana Palm Fringed Turquoise Coast, Dominican Republic",
+          "de": "Punta Cana Palmenstrand und türkisfarbenes Meer, Dominikanische Republik",
+          "ru": "Пальмы и бирюзовое побережье Пунта-Каны, Доминиканская Республика",
+          "es": "Palmeras y costa turquesa de Punta Cana, República Dominicana"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "dominik-cumhuriyeti",
+      "en": "dominican-republic",
+      "de": "dominikanische-republik",
+      "ru": "dominikanskaya-respublika",
+      "es": "republica-dominicana"
+    },
+    "title": {
+      "tr": "Dominik Cumhuriyeti Vize Rehberi, E-Ticket ve Seyahat | Vizamigo",
+      "en": "Dominican Republic Visa Guide, E-Ticket QR & Punta Cana | Vizamigo",
+      "de": "Dominikanische Republik Visum-Leitfaden, E-Ticket & Reisen | Vizamigo",
+      "ru": "Виза в Доминиканскую Республику, QR-код E-Ticket | Vizamigo",
+      "es": "Guía de Visa de República Dominicana, E-Ticket QR y Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Dominik Cumhuriyeti vize kuralları, ücretsiz E-Ticket QR zorunluluğu, priz tipleri (A, B), Punta Cana ve güvenlik tavsiyeleri.",
+      "en": "Dominican Republic visa policies, free mandatory E-Ticket QR, Type A/B plugs, Punta Cana resorts, and verified safety tips.",
+      "de": "Dominikanische Republik Visabestimmungen, kostenlose E-Ticket-Pflicht, Typ-A/B-Stecker, Punta Cana und Sicherheitstipps.",
+      "ru": "Визовые правила Доминиканы, бесплатная форма E-Ticket, розетки A/B, курорты Пунта-Каны и безопасность.",
+      "es": "Requisitos de visa para República Dominicana, formulario obligatorio E-Ticket gratuito, enchufes A/B y Punta Cana."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

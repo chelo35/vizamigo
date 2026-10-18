@@ -44,6 +44,14 @@ import CZ from './countries/CZ.json';
 import BE from './countries/BE.json';
 import DK from './countries/DK.json';
 import SE from './countries/SE.json';
+import CA from './countries/CA.json';
+import AU from './countries/AU.json';
+import IE from './countries/IE.json';
+import NO from './countries/NO.json';
+import FI from './countries/FI.json';
+import AR from './countries/AR.json';
+import PH from './countries/PH.json';
+import DO from './countries/DO.json';
 
 export interface VerifiedSource {
   url: string;
@@ -222,6 +230,14 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   BE: BE as unknown as VerifiedCountryRecord,
   DK: DK as unknown as VerifiedCountryRecord,
   SE: SE as unknown as VerifiedCountryRecord,
+  CA: CA as unknown as VerifiedCountryRecord,
+  AU: AU as unknown as VerifiedCountryRecord,
+  IE: IE as unknown as VerifiedCountryRecord,
+  NO: NO as unknown as VerifiedCountryRecord,
+  FI: FI as unknown as VerifiedCountryRecord,
+  AR: AR as unknown as VerifiedCountryRecord,
+  PH: PH as unknown as VerifiedCountryRecord,
+  DO: DO as unknown as VerifiedCountryRecord,
 };
 
 /**

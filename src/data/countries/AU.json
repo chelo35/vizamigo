@@ -1,0 +1,450 @@
+{
+  "iso2": "AU",
+  "names": {
+    "tr": "Avustralya",
+    "en": "Australia",
+    "de": "Australien",
+    "ru": "Австралия",
+    "es": "Australia"
+  },
+  "capital": {
+    "value": "Kanberra",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.australia.gov.au",
+        "tier": 1,
+        "title": "Australian Government Official Portal"
+      }
+    ],
+    "evidence_quote": "Canberra is the federal capital city of the Commonwealth of Australia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "AUD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rba.gov.au",
+        "tier": 1,
+        "title": "Reserve Bank of Australia"
+      }
+    ],
+    "evidence_quote": "The Australian Dollar is the legal tender currency of Australia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 to UTC+10.5 (AWST, ACST, AEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.australia.gov.au",
+        "tier": 1,
+        "title": "Australian Government Time Zones"
+      }
+    ],
+    "evidence_quote": "Australia is divided into three primary time zones: Western, Central, and Eastern Standard Time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.standards.org.au",
+          "tier": 1,
+          "title": "Standards Australia (AS/NZS 3000)"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase voltage in Australia is standardized at 230V (+10% / -6%)",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.standards.org.au",
+          "tier": 1,
+          "title": "Standards Australia"
+        }
+      ],
+      "evidence_quote": "Mains electricity grid operating frequency in Australia is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.standards.org.au",
+          "tier": 1,
+          "title": "Standards Australia AS/NZS 3112"
+        }
+      ],
+      "evidence_quote": "Australian standard AS/NZS 3112 defines Type I two-prong or three-prong angled flat blade plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.triplezero.gov.au",
+          "tier": 1,
+          "title": "Triple Zero (000) Australia's Emergency Service"
+        }
+      ],
+      "evidence_quote": "Triple Zero (000) is Australia's primary national emergency contact for police",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.triplezero.gov.au",
+          "tier": 1,
+          "title": "Triple Zero Ambulance Dispatch"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance response connects through Triple Zero 000 nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.triplezero.gov.au",
+          "tier": 1,
+          "title": "Triple Zero Fire Services"
+        }
+      ],
+      "evidence_quote": "Fire services emergencies are dispatched directly via Triple Zero 000",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.triplezero.gov.au",
+          "tier": 1,
+          "title": "Triple Zero Official"
+        }
+      ],
+      "evidence_quote": "000 is Australia's primary emergency number; mobile 112 redirects automatically to 000",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Australia Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/australia",
+          "tier": 1,
+          "title": "UK FCDO Australia Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Avustralya dünyanın en güvenli ülkelerindendir; vahşi doğa ve denize dikkat edin",
+      "en": "Normal Precautions: Australia is exceptionally safe; respect wildlife and ocean surf conditions",
+      "de": "Normale Vorsicht: Australien ist außerordentlich sicher; Wildtiere und Brandung beachten",
+      "ru": "Обычные меры: Австралия безопасна, соблюдайте осторожность в океане и на природе",
+      "es": "Precauciones normales: Australia es muy segura; respete la fauna silvestre y corrientes oceánicas"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 118.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/australia",
+          "tier": 2,
+          "title": "Ookla Speedtest Australia"
+        }
+      ],
+      "evidence_quote": "Australia mobile download speeds average 118.4 Mbps on Telstra, Optus, and Vodafone 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 68.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/australia",
+          "tier": 2,
+          "title": "Ookla Speedtest Australia Fixed"
+        }
+      ],
+      "evidence_quote": "Australia fixed broadband speeds average 68.5 Mbps over National Broadband Network (NBN)",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is widely supported. Telstra, Optus, and Vodafone sell prepaid tourist SIMs at all international airports with mandatory passport identity checks under federal regulations.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.acma.gov.au",
+          "tier": 1,
+          "title": "Australian Communications and Media Authority (ACMA)"
+        }
+      ],
+      "evidence_quote": "Prepaid mobile services require identity verification under Telecommunications Regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/au/en/",
+        "tier": 1,
+        "title": "Uber Australia"
+      }
+    },
+    {
+      "name": "DiDi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://web.didiglobal.com/au/",
+        "tier": 1,
+        "title": "DiDi Australia"
+      }
+    },
+    {
+      "name": "Opal Travel",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://transportnsw.info/apps/opal-travel",
+        "tier": 1,
+        "title": "Opal Travel Sydney NSW"
+      }
+    },
+    {
+      "name": "Menulog",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.menulog.com.au",
+        "tier": 1,
+        "title": "Menulog Australia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (~44%), Dinsiz/Seküler (~39%), İslam (~3.2%), Hinduizm (~2.7%), Budizm (~2.4%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.abs.gov.au",
+          "tier": 1,
+          "title": "Australian Bureau of Statistics (ABS) Census"
+        }
+      ],
+      "evidence_quote": "Australia is a religiously diverse and predominantly secular society",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Avustralya Günü (26 Ocak), ANZAC Günü (25 Nisan), Melbourne Kupası (Kasım'ın ilk Salısı), Sidney Vivid Festivali",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.australia.com",
+          "tier": 1,
+          "title": "Tourism Australia Festivals"
+        }
+      ],
+      "evidence_quote": "ANZAC Day on April 25 and Australia Day are national commemorative public holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Biyogüvenlik (karantina) yasaları dünyanın en katısıdır; taze gıda, meyve, tohum veya ahşap eşyaların gümrükte bildirilmemesi 5.000 AUD'ye varan anında ceza ve vize iptali sebebidir. Prizler Tip I (eğik yassı iki/üç bacaklı) standardındadır. Plajlarda sadece kırmızı-sarı bayraklar arasında yüzün.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.agriculture.gov.au/biosecurity",
+          "tier": 1,
+          "title": "Department of Agriculture, Fisheries and Forestry Biosecurity"
+        }
+      ],
+      "evidence_quote": "Australia enforces strict biosecurity laws; declare all organic materials on the incoming passenger card",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş kültürü yoktur; adil asgari ücret yasaları nedeniyle çalışanlar bahşişe bağımlı değildir. Kaliteli restoranlarda iyi servis için %10 bırakmak isteğe bağlıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.australia.com",
+          "tier": 1,
+          "title": "Tourism Australia Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is not expected or mandatory in Australia as hospitality staff are paid award wages",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sidney Opera Binası ve Liman Köprüsü Panoraması",
+        "en": "Sydney Opera House and Harbour Bridge",
+        "de": "Sydney Opera House und Hafenbrücke",
+        "ru": "Сиднейский оперный театр и мост Харбор-Бридж",
+        "es": "Ópera de Sídney y Puente de la Bahía"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/166",
+          "tier": 1,
+          "title": "UNESCO Sydney Opera House"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Büyük Set Resifi (Great Barrier Reef)",
+        "en": "Great Barrier Reef",
+        "de": "Great Barrier Reef",
+        "ru": "Большой Барьерный риф",
+        "es": "Gran Barrera de Coral"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/154",
+          "tier": 1,
+          "title": "UNESCO Great Barrier Reef"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Uluru (Ayers Kayası) ve Kata Tjuta",
+        "en": "Uluru-Kata Tjuta National Park",
+        "de": "Uluru-Kata-Tjuta-Nationalpark",
+        "ru": "Национальный парк Улуру-Ката Тьюта",
+        "es": "Parque Nacional Uluru-Kata Tjuta"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/447",
+          "tier": 1,
+          "title": "UNESCO Uluru-Kata Tjuta National Park"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sidney Opera Binası ve Port Jackson Limanı Panoraması (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/au-480.webp",
+        "attribution_text": "Sydney Opera House and Port Jackson, Australia. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Sidney Opera Binası ve Liman Panoraması, Avustralya",
+          "en": "Sydney Opera House and Harbour Panorama, Australia",
+          "de": "Sydney Opera House und Hafenpanorama, Australien",
+          "ru": "Сиднейский оперный театр и панорама гавани, Австралия",
+          "es": "Ópera de Sídney y panorama del puerto, Australia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "avustralya",
+      "en": "australia",
+      "de": "australien",
+      "ru": "avstraliya",
+      "es": "australia"
+    },
+    "title": {
+      "tr": "Avustralya Vize Rehberi, eVisitor / ETA ve Seyahat | Vizamigo",
+      "en": "Australia Visa Guide, ETA & Travel Essentials | Vizamigo",
+      "de": "Australien Visum-Leitfaden, ETA & Reisesicherheit | Vizamigo",
+      "ru": "Виза в Австралию, ETA и советы путешественникам | Vizamigo",
+      "es": "Guía de Visa de Australia, ETA y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Avustralya vizesi ve ETA şartları, sıkı gümrük biyogüvenlik kuralları, priz tipi I, acil hat 000 ve seyahat rehberi.",
+      "en": "Australia visa and ETA rules, strict biosecurity quarantine, Type I plugs, Triple Zero 000, and verified travel tips.",
+      "de": "Australien Visa- und ETA-Bestimmungen, Biosicherheitsquarantäne, Typ-I-Stecker, Notruf 000 und Reisetipps.",
+      "ru": "Визовые правила Австралии, оформление ETA, карантинный контроль, розетки типа I, экстренная линия 000.",
+      "es": "Requisitos de visa y ETA para Australia, estricta bioseguridad, enchufes tipo I, emergencias 000 y guía de viaje."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,451 @@
+{
+  "iso2": "FI",
+  "names": {
+    "tr": "Finlandiya",
+    "en": "Finland",
+    "de": "Finnland",
+    "ru": "Финляндия",
+    "es": "Finlandia"
+  },
+  "capital": {
+    "value": "Helsinki",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hel.fi",
+        "tier": 1,
+        "title": "City of Helsinki"
+      }
+    ],
+    "evidence_quote": "Helsinki is the capital and largest city of the Republic of Finland",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bof.fi",
+        "tier": 1,
+        "title": "Bank of Finland (Suomen Pankki)"
+      }
+    ],
+    "evidence_quote": "The Euro is the official legal currency of Finland",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://vtt.fi",
+        "tier": 1,
+        "title": "VTT Technical Research Centre of Finland Official Time"
+      }
+    ],
+    "evidence_quote": "Finland observes Eastern European Time UTC+2 and Eastern European Summer Time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fingrid.fi",
+          "tier": 1,
+          "title": "Fingrid Finnish National Grid"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Finland is 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fingrid.fi",
+          "tier": 1,
+          "title": "Fingrid Finland"
+        }
+      ],
+      "evidence_quote": "Power transmission frequency across the Finnish grid is maintained at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tukes.fi",
+          "tier": 1,
+          "title": "Finnish Safety and Chemicals Agency (Tukes)"
+        }
+      ],
+      "evidence_quote": "Finnish electrical installations use grounded European Type F Schuko and Type C Europlugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.fi",
+          "tier": 1,
+          "title": "Emergency Response Centre Agency (112 Finland)"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch throughout Finland connects via unified 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.fi",
+          "tier": 1,
+          "title": "112 Finland Emergency Response"
+        }
+      ],
+      "evidence_quote": "Medical emergencies and ambulance dispatch operate under 112 nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.fi",
+          "tier": 1,
+          "title": "112 Finland Fire Dispatch"
+        }
+      ],
+      "evidence_quote": "Fire and rescue services across all Finnish regions are dispatched through 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.fi",
+          "tier": 1,
+          "title": "112 Suomi Official"
+        }
+      ],
+      "evidence_quote": "112 is Finland's only emergency number for police, fire, and medical assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Finland Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/finland",
+          "tier": 1,
+          "title": "UK FCDO Finland Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Finlandiya dünyanın en mutlu ve en güvenli ülkelerindendir",
+      "en": "Normal Precautions: Finland is consistently ranked the happiest and safest nation",
+      "de": "Normale Vorsicht: Finnland gilt als das glücklichste und sicherste Land der Welt",
+      "ru": "Обычные меры: Финляндия признана самой счастливой и безопасной страной",
+      "es": "Precauciones normales: Finlandia es constantemente calificada como el país más feliz y seguro"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 110.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/finland",
+          "tier": 2,
+          "title": "Ookla Speedtest Finland"
+        }
+      ],
+      "evidence_quote": "Finland mobile download speeds average 110.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 140.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/finland",
+          "tier": 2,
+          "title": "Ookla Speedtest Finland Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Finland averages 140.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Elisa, Telia Finland, and DNA. EU Roam Like at Home applies. Prepaid SIMs are available at R-Kioski convenience stores without complicated bureaucracy.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://traficom.fi",
+          "tier": 1,
+          "title": "Finnish Transport and Communications Agency (Traficom)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM cards are widely sold in retail stores; EU roaming rules apply",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "HSL",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.hsl.fi/en",
+        "tier": 1,
+        "title": "HSL Helsinki Regional Transport"
+      }
+    },
+    {
+      "name": "VR Matkalla",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vr.fi/en",
+        "tier": 1,
+        "title": "VR Finnish National Railways"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/fin/helsinki",
+        "tier": 1,
+        "title": "Wolt Finland (Finnish origin app)"
+      }
+    },
+    {
+      "name": "Taksi Helsinki",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://taksihelsinki.fi/en/",
+        "tier": 1,
+        "title": "Taksi Helsinki"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Evanjelik Lutheran (~65%), Dinsiz/Seküler (~32%), Ortodoks (~1%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.stat.fi",
+          "tier": 1,
+          "title": "Statistics Finland (Tilastokeskus)"
+        }
+      ],
+      "evidence_quote": "The Evangelical Lutheran Church is the traditional national church alongside a highly secular population",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Yaz Ortası (Juhannus), Bağımsızlık Günü (6 Aralık), Vappu (1 Mayıs Öğrenci ve Bahar Bayramı)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitfinland.com",
+          "tier": 1,
+          "title": "Visit Finland Festivals"
+        }
+      ],
+      "evidence_quote": "Juhannus in late June and Independence Day on December 6 are celebrated nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Sauna kültürü kutsaldır ve Fin sosyal yaşamının merkezidir; saunaya mayosuz veya havluyla girilir. 'Jokamiehenoikeus' (Herkesin Hakkı) ile doğada orman meyvesi ve mantar toplamak serbesttir. Toplu taşımada ve kamusal alanda yüksek sesle konuşulmaz.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitfinland.com",
+          "tier": 1,
+          "title": "Visit Finland Sauna & Nature Etiquette"
+        }
+      ],
+      "evidence_quote": "Sauna culture and Everyman's Rights form integral foundations of Finnish identity",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Bahşiş beklenmez; servis ve vergiler kanunen fiyatlara dahildir. Yuvarlama yapmak tamamen isteğe bağlıdır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.visitfinland.com",
+          "tier": 1,
+          "title": "Visit Finland Practical Tips"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in Finland as service charges are included in restaurant bills",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Laponya Rovaniemi ve Kuzey Işıkları",
+        "en": "Lapland Rovaniemi and Northern Lights",
+        "de": "Lappland Rovaniemi und Polarlichter",
+        "ru": "Лапландия Рованиеми и Северное сияние",
+        "es": "Laponia Rovaniemi y Auroras Boreales"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.visitfinland.com",
+          "tier": 1,
+          "title": "Visit Finland Lapland"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Suomenlinna Deniz Kalesi (UNESCO)",
+        "en": "Fortress of Suomenlinna (UNESCO)",
+        "de": "Festung Suomenlinna",
+        "ru": "Морская крепость Свеаборг (Суоменлинна)",
+        "es": "Fortaleza de Suomenlinna"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/583",
+          "tier": 1,
+          "title": "UNESCO Fortress of Suomenlinna"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Helsinki Katedrali ve Senato Meydanı",
+        "en": "Helsinki Cathedral and Senate Square",
+        "de": "Dom von Helsinki und Senatsplatz",
+        "ru": "Кафедральный собор Хельсинки и Сенатская площадь",
+        "es": "Catedral de Helsinki y Plaza del Senado"
+      },
+      "type": "historic_monument",
+      "sources": [
+        {
+          "url": "https://www.myhelsinki.fi",
+          "tier": 1,
+          "title": "MyHelsinki Senate Square"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Laponya Kuzey Işıkları ve Karlı Orman",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/fi-480.webp",
+        "attribution_text": "Northern Lights over snowy pine forest in Lapland, Finland. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Laponya Kuzey Işıkları ve Karlı Orman, Finlandiya",
+          "en": "Lapland Northern Lights and Snowy Forest, Finland",
+          "de": "Polarlichter über schneebedecktem Wald in Lappland, Finnland",
+          "ru": "Северное сияние над заснеженным лесом в Лапландии, Финляндия",
+          "es": "Auroras boreales sobre bosque nevado en Laponia, Finlandia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "finlandiya",
+      "en": "finland",
+      "de": "finnland",
+      "ru": "finlyandiya",
+      "es": "finlandia"
+    },
+    "title": {
+      "tr": "Finlandiya Vize Rehberi, Laponya ve Seyahat Güvenliği | Vizamigo",
+      "en": "Finland Visa Guide, Lapland Travel & Safety Essentials | Vizamigo",
+      "de": "Finnland Visum-Leitfaden, Lappland Reisen & Sicherheit | Vizamigo",
+      "ru": "Виза в Финляндию, Лапландия советы туристу и безопасность | Vizamigo",
+      "es": "Guía de Visa de Finlandia, Laponia Viajes y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Finlandiya Schengen vizesi, Laponya Kuzey Işıkları, HSL Helsinki ulaşımı, sauna kültürü ve priz tipleri.",
+      "en": "Finland Schengen visa requirements, Lapland Northern Lights, HSL transit app, sauna etiquette, and Type C/F plugs.",
+      "de": "Finnland Schengen-Visabestimmungen, Polarlichter in Lappland, HSL-Verkehr, Sauna-Knigge und Steckertypen.",
+      "ru": "Шенгенская виза в Финляндию, Северное сияние в Лапландии, транспорт HSL, этикет сауны и розетки C/F.",
+      "es": "Requisitos de visa Schengen para Finlandia, auroras boreales en Laponia, transporte HSL y etiqueta de sauna."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

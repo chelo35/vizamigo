@@ -1,0 +1,451 @@
+{
+  "iso2": "CA",
+  "names": {
+    "tr": "Kanada",
+    "en": "Canada",
+    "de": "Kanada",
+    "ru": "Канада",
+    "es": "Canadá"
+  },
+  "capital": {
+    "value": "Ottava",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.canada.ca",
+        "tier": 1,
+        "title": "Government of Canada"
+      }
+    ],
+    "evidence_quote": "Ottawa is the national capital of Canada located in the province of Ontario",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CAD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bankofcanada.ca",
+        "tier": 1,
+        "title": "Bank of Canada"
+      }
+    ],
+    "evidence_quote": "The Canadian Dollar is the legal tender currency of Canada",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-3.5 to UTC-8 (6 time zones)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nrc.canada.ca",
+        "tier": 1,
+        "title": "National Research Council Canada Official Time"
+      }
+    ],
+    "evidence_quote": "Canada spans six primary time zones from Pacific Time to Newfoundland Time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.csagroup.org",
+          "tier": 1,
+          "title": "Canadian Standards Association (CSA C22.1)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Canada is 120V single phase AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.csagroup.org",
+          "tier": 1,
+          "title": "CSA Group Canada"
+        }
+      ],
+      "evidence_quote": "Electric power frequency across Canada is standardized at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.csagroup.org",
+          "tier": 1,
+          "title": "CSA Electrical Standards"
+        }
+      ],
+      "evidence_quote": "Electrical outlets throughout Canada use North American Type A ungrounded and Type B grounded plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rcmp-grc.gc.ca",
+          "tier": 1,
+          "title": "Royal Canadian Mounted Police"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch throughout Canadian provinces is 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.canada.ca",
+          "tier": 1,
+          "title": "Health Canada"
+        }
+      ],
+      "evidence_quote": "Emergency medical and paramedic dispatch across Canada connects via 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.canada.ca",
+          "tier": 1,
+          "title": "Public Safety Canada"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is integrated nationwide into 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.canada.ca",
+          "tier": 1,
+          "title": "Public Safety Canada 911"
+        }
+      ],
+      "evidence_quote": "911 is the universal emergency telephone number across all Canadian jurisdictions",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Canada Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/canada",
+          "tier": 1,
+          "title": "UK FCDO Canada Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Kanada dünyanın en güvenli ve huzurlu ülkelerinden biridir",
+      "en": "Normal Precautions: Canada maintains exceptionally high levels of public safety",
+      "de": "Normale Vorsicht: Kanada bietet ein herausragend hohes Maß an öffentlicher Sicherheit",
+      "ru": "Обычные меры: Канада одна из самых безопасных стран мира",
+      "es": "Precauciones normales: Canadá mantiene niveles excepcionales de seguridad pública"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 115.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/canada",
+          "tier": 2,
+          "title": "Ookla Speedtest Canada"
+        }
+      ],
+      "evidence_quote": "Canada mobile 5G download speed averages 115.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 205.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/canada",
+          "tier": 2,
+          "title": "Ookla Speedtest Canada Fixed"
+        }
+      ],
+      "evidence_quote": "Canada fixed broadband speeds average 205.8 Mbps across fiber networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Rogers, Bell, and Telus. Prepaid SIMs are available at major international airports with passport verification.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://crtc.gc.ca",
+          "tier": 1,
+          "title": "Canadian Radio-television and Telecommunications Commission (CRTC)"
+        }
+      ],
+      "evidence_quote": "Prepaid wireless packages are subject to standard Canadian wireless telecom regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/ca/en/",
+        "tier": 1,
+        "title": "Uber Canada"
+      }
+    },
+    {
+      "name": "Lyft",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.lyft.com/rider/cities/toronto-on",
+        "tier": 1,
+        "title": "Lyft Canada"
+      }
+    },
+    {
+      "name": "Transit App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://transitapp.com",
+        "tier": 1,
+        "title": "Transit App Montreal/Toronto"
+      }
+    },
+    {
+      "name": "SkipTheDishes",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.skipthedishes.com",
+        "tier": 1,
+        "title": "SkipTheDishes Canada"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Hristiyanlık (~53%), Dinsiz/Seküler (~35%), İslam (~5%), Hinduizm (~2.3%), Sihizm (~2.1%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statcan.gc.ca",
+          "tier": 1,
+          "title": "Statistics Canada Census"
+        }
+      ],
+      "evidence_quote": "Canada is characterized by multicultural diversity with a substantial secular demographic",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Kanada Günü (1 Temmuz), Şükran Günü (Ekim'in ikinci Pazartesisi), Calgary Stampede, Kış Karnavalı (Quebec)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.destinationcanada.com",
+          "tier": 1,
+          "title": "Destination Canada Festivals"
+        }
+      ],
+      "evidence_quote": "Canada Day on July 1 celebrates national confederation across all ten provinces and three territories",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Prizler Kuzey Amerika standardı Tip A ve B'dir (120V / 60Hz); Avrupa tipi 230V cihazlar için adaptör ve voltaj dönüştürücü gerekir. Restoranlarda %15-20 bahşiş bırakmak neredeyse zorunlu sosyal kuraldır. Etiket fiyatlarına eyalet ve federal satış vergileri (HST/GST) kasada eklenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.destinationcanada.com",
+          "tier": 1,
+          "title": "Destination Canada Practical Tips"
+        }
+      ],
+      "evidence_quote": "Sales taxes are added at the register; tipping 15-20% is customary across Canadian hospitality",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %15-20 standart bahşiş oranıdır. Taksiler ve barmenler için %10-15 veya 1-2 CAD bahşiş beklenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.destinationcanada.com",
+          "tier": 1,
+          "title": "Destination Canada Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping between 15% and 20% of the pre-tax bill is standard practice in restaurants across Canada",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Banff Milli Parkı ve Moraine Gölü",
+        "en": "Banff National Park and Moraine Lake",
+        "de": "Banff-Nationalpark und Moraine Lake",
+        "ru": "Национальный парк Банф и озеро Морейн",
+        "es": "Parque Nacional Banff y Lago Moraine"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/304",
+          "tier": 1,
+          "title": "UNESCO Canadian Rocky Mountain Parks"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Niagara Şelaleleri (Kanada Tarafı)",
+        "en": "Niagara Falls (Horseshoe Falls)",
+        "de": "Niagarafälle (Horseshoe Falls)",
+        "ru": "Ниагарский водопад (Канадская сторона)",
+        "es": "Cataratas del Niágara (Lado Canadiense)"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.niagaraparks.com",
+          "tier": 1,
+          "title": "Niagara Parks Canada"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Tarihi Eski Quebec Şehri (UNESCO)",
+        "en": "Historic District of Old Québec",
+        "de": "Historisches Viertel von Alt-Québec",
+        "ru": "Исторический район Старого Квебека",
+        "es": "Centro Histórico del Viejo Quebec"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/300",
+          "tier": 1,
+          "title": "UNESCO Historic District of Old Québec"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "On Zirve Vadisi ve Moraine Gölü, Banff Milli Parkı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ca-480.webp",
+        "attribution_text": "Moraine Lake and Valley of the Ten Peaks in Banff National Park, Canada. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Moraine Gölü ve On Zirve Vadisi, Banff Milli Parkı, Kanada",
+          "en": "Moraine Lake and Valley of the Ten Peaks, Banff National Park, Canada",
+          "de": "Moraine Lake und Tal der zehn Gipfel, Banff-Nationalpark, Kanada",
+          "ru": "Озеро Морейн и долина Десяти пиков, национальный парк Банф, Канада",
+          "es": "Lago Moraine y Valle de los Diez Picos, Parque Nacional Banff, Canadá"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kanada",
+      "en": "canada",
+      "de": "kanada",
+      "ru": "kanada",
+      "es": "canada"
+    },
+    "title": {
+      "tr": "Kanada Vize Rehberi, eTA ve Seyahat Güvenliği | Vizamigo",
+      "en": "Canada Visa Guide, eTA & Travel Safety | Vizamigo",
+      "de": "Kanada Visum-Leitfaden, eTA & Reisesicherheit | Vizamigo",
+      "ru": "Виза в Канаду, eTA и советы путешественникам | Vizamigo",
+      "es": "Guía de Visa de Canadá, eTA y Seguridad | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kanada vize ve eTA kuralları, Banff parkı, %15-20 bahşiş kültürü, priz tipleri (A, B) ve güvenlik rehberi.",
+      "en": "Canada visa policies, eTA entry rules, Banff National Park, 15-20% tipping etiquette, and Type A/B plug guide.",
+      "de": "Kanada Visa- und eTA-Regeln, Banff-Nationalpark, Trinkgeldkultur, Steckertypen A/B und Reisesicherheit.",
+      "ru": "Визовые правила Канады, система eTA, парк Банф, чаевые 15-20%, розетки A/B и безопасность.",
+      "es": "Requisitos de visa y eTA para Canadá, Parque Banff, cultura de propinas 15-20% y guía de enchufes A/B."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

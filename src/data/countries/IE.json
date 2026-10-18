@@ -1,0 +1,450 @@
+{
+  "iso2": "IE",
+  "names": {
+    "tr": "İrlanda",
+    "en": "Ireland",
+    "de": "Irland",
+    "ru": "Ирландия",
+    "es": "Irlanda"
+  },
+  "capital": {
+    "value": "Dublin",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.dublincity.ie",
+        "tier": 1,
+        "title": "Dublin City Council"
+      }
+    ],
+    "evidence_quote": "Dublin is the capital and largest city of Ireland",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.centralbank.ie",
+        "tier": 1,
+        "title": "Central Bank of Ireland"
+      }
+    ],
+    "evidence_quote": "The Euro is the official currency of the Republic of Ireland",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+0 (WET/GMT) / UTC+1 (IST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.ie",
+        "tier": 1,
+        "title": "Government of Ireland Official Time"
+      }
+    ],
+    "evidence_quote": "Ireland observes Greenwich Mean Time UTC+0 during winter and Irish Standard Time UTC+1 during summer",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.esbnetworks.ie",
+          "tier": 1,
+          "title": "ESB Networks Ireland"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase domestic electrical voltage in Ireland is 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eirgrid.com",
+          "tier": 1,
+          "title": "EirGrid Transmission Operator"
+        }
+      ],
+      "evidence_quote": "Irish electrical grid transmission operates at a standard 50 Hz frequency",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nsai.ie",
+          "tier": 1,
+          "title": "National Standards Authority of Ireland (NSAI IS 401 / BS 1363)"
+        }
+      ],
+      "evidence_quote": "Standard electrical sockets in Ireland are British Type G three rectangular pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.garda.ie",
+          "tier": 1,
+          "title": "An Garda Síochána (Irish Police)"
+        }
+      ],
+      "evidence_quote": "Emergency police calls in Ireland connect through 999 and 112 to An Garda Síochána",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hse.ie",
+          "tier": 1,
+          "title": "National Ambulance Service Ireland (HSE)"
+        }
+      ],
+      "evidence_quote": "National Ambulance Service emergency dispatch connects via 999 or 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.ie",
+          "tier": 1,
+          "title": "Department of Housing, Local Government and Heritage Fire Services"
+        }
+      ],
+      "evidence_quote": "Fire emergency services across Irish counties respond to 999 and 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112 / 999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.ie",
+          "tier": 1,
+          "title": "Emergency Call Answering Service (ECAS) Ireland"
+        }
+      ],
+      "evidence_quote": "999 and 112 are Ireland's twin official emergency numbers routed through ECAS centres",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Ireland Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/ireland",
+          "tier": 1,
+          "title": "UK FCDO Ireland Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: İrlanda güvenli ve misafirperver bir AB ülkesidir",
+      "en": "Normal Precautions: Ireland is a highly safe, hospitable destination",
+      "de": "Normale Vorsicht: Irland ist ein sehr sicheres und gastfreundliches Reiseland",
+      "ru": "Обычные меры: Ирландия очень безопасная и гостеприимная страна",
+      "es": "Precauciones normales: Irlanda es un destino altamente seguro y hospitalario"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 75.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/ireland",
+          "tier": 2,
+          "title": "Ookla Speedtest Ireland"
+        }
+      ],
+      "evidence_quote": "Ireland average mobile download speed is 75.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 138.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/ireland",
+          "tier": 2,
+          "title": "Ookla Speedtest Ireland Fixed"
+        }
+      ],
+      "evidence_quote": "Ireland fixed broadband speed averages 138.2 Mbps across urban and suburban fiber networks",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Vodafone Ireland, Three, and Eir. EU Roam Like at Home applies for EU travellers. Note that Ireland is NOT in the Schengen Area (Common Travel Area with UK).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.comreg.ie",
+          "tier": 1,
+          "title": "Commission for Communications Regulation (ComReg)"
+        }
+      ],
+      "evidence_quote": "EU roaming regulations apply to Irish mobile networks; SIM registration is standard",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "TFI Live",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.transportforireland.ie/plan-a-journey/apps/tfi-live-app/",
+        "tier": 1,
+        "title": "Transport for Ireland TFI Live App"
+      }
+    },
+    {
+      "name": "FREENOW",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.free-now.com/ie/",
+        "tier": 1,
+        "title": "FREE NOW Ireland Taxis"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/ie/en/",
+        "tier": 1,
+        "title": "Uber Ireland (licensed taxis only)"
+      }
+    },
+    {
+      "name": "Just Eat IE",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.just-eat.ie",
+        "tier": 1,
+        "title": "Just Eat Ireland"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katoliklik (~69%), Dinsiz/Seküler (~14%), İrlanda Kilisesi (Anglikan ~2%), Ortodoks (~2%), İslam (~1.6%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cso.ie",
+          "tier": 1,
+          "title": "Central Statistics Office Ireland Census"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism represents the primary traditional faith alongside a growing secular demographic",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Aziz Patrick Günü (St. Patrick's Day, 17 Mart), Paskalya, Cadılar Bayramı (Samhain kökenli), Bloomsday (16 Haziran)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ireland.com",
+          "tier": 1,
+          "title": "Tourism Ireland Festivals"
+        }
+      ],
+      "evidence_quote": "St. Patrick's Day on March 17 is celebrated worldwide as Ireland's signature national holiday",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "İrlanda Avrupa Birliği üyesidir ANCAK SCHENGEN ALANINDA DEĞİLDİR; ayrı ulusal vize kuralları uygulanır (İngiltere ile Ortak Seyahat Alanı - CTA bulunur). Prizler İngiliz Tipi G'dir (3 dikdörtgen bacaklı). Trafik soldan akar.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.irishimmigration.ie",
+          "tier": 1,
+          "title": "Irish Immigration Service"
+        }
+      ],
+      "evidence_quote": "Ireland maintains its own immigration controls and is not part of the Schengen Area",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda masada iyi servis için %10-12 bahşiş adettendir. Barda sadece bira sipariş ederken bahşiş bırakılmaz.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ireland.com",
+          "tier": 1,
+          "title": "Tourism Ireland Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping 10 to 12 percent in sit-down restaurants is customary; bar service does not require tips",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Moher Falezleri (Cliffs of Moher) ve Atlantik Kıyısı",
+        "en": "Cliffs of Moher and Atlantic Edge",
+        "de": "Klippen von Moher und Atlantikküste",
+        "ru": "Утёсы Мохер и Атлантическое побережье",
+        "es": "Acantilados de Moher y Costa Atlántica"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://www.cliffsofmoher.ie",
+          "tier": 1,
+          "title": "Cliffs of Moher Visitor Experience"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Dublin Trinity College ve Kells Kitabı",
+        "en": "Trinity College Dublin and Book of Kells",
+        "de": "Trinity College Dublin und Book of Kells",
+        "ru": "Тринити-колледж в Дублине и Келлская книга",
+        "es": "Trinity College de Dublín y Libro de Kells"
+      },
+      "type": "historic_monument",
+      "sources": [
+        {
+          "url": "https://www.visittrinity.ie",
+          "tier": 1,
+          "title": "Trinity College Dublin Visit"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Devler Kaldırımı (Giant's Causeway) ve Ring of Kerry",
+        "en": "Ring of Kerry and Wild Atlantic Way",
+        "de": "Ring of Kerry und Wild Atlantic Way",
+        "ru": "Кольцо Керри и Дорога Дикого Атлантика",
+        "es": "Anillo de Kerry y Wild Atlantic Way"
+      },
+      "type": "scenic_route",
+      "sources": [
+        {
+          "url": "https://www.ireland.com",
+          "tier": 1,
+          "title": "Tourism Ireland Ring of Kerry"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Moher Falezleri (Cliffs of Moher) ve Atlantik Kıyısı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ie-480.webp",
+        "attribution_text": "Cliffs of Moher, County Clare, Ireland. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Moher Falezleri ve Atlantik Kıyısı, İrlanda",
+          "en": "Cliffs of Moher and Atlantic Coast, Ireland",
+          "de": "Klippen von Moher und Atlantikküste, Irland",
+          "ru": "Утёсы Мохер и побережье Атлантики, Ирландия",
+          "es": "Acantilados de Moher y costa atlántica, Irlanda"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "irlanda",
+      "en": "ireland",
+      "de": "irland",
+      "ru": "irlandiya",
+      "es": "irlanda"
+    },
+    "title": {
+      "tr": "İrlanda Vize Rehberi, Schengen Olmayan AB Kuralı | Vizamigo",
+      "en": "Ireland Visa Guide, Non-Schengen Rules & Travel | Vizamigo",
+      "de": "Irland Visum-Leitfaden, Nicht-Schengen-Regeln & Reisen | Vizamigo",
+      "ru": "Виза в Ирландию, нешенгенские правила и туризм | Vizamigo",
+      "es": "Guía de Visa de Irlanda, Normas No Schengen y Viajes | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İrlanda vize şartları (Schengen değil), Moher falezleri, priz tipi G, TFI ulaşım uygulaması ve Dublin seyahat rehberi.",
+      "en": "Ireland visa rules (non-Schengen EU), Cliffs of Moher, Type G plugs, TFI Live app, and verified Dublin guidance.",
+      "de": "Irland Visabestimmungen (Nicht-Schengen), Klippen von Moher, Typ-G-Stecker, TFI-Verkehrs-App und Dublin-Tipps.",
+      "ru": "Визовые правила Ирландии (не входит в Шенген), утесы Мохер, розетки типа G, транспорт TFI и гид по Дублину.",
+      "es": "Normas de visa para Irlanda (no Schengen), Acantilados de Moher, enchufes tipo G, app TFI y guía de Dublín."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

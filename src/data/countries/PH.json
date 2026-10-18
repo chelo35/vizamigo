@@ -1,0 +1,469 @@
+{
+  "iso2": "PH",
+  "names": {
+    "tr": "Filipinler",
+    "en": "Philippines",
+    "de": "Philippinen",
+    "ru": "Филиппины",
+    "es": "Filipinas"
+  },
+  "capital": {
+    "value": "Manila",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://manila.gov.ph",
+        "tier": 1,
+        "title": "City of Manila Official Portal"
+      }
+    ],
+    "evidence_quote": "Manila is the historic capital city of the Republic of the Philippines",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "PHP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bsp.gov.ph",
+        "tier": 1,
+        "title": "Bangko Sentral ng Pilipinas"
+      }
+    ],
+    "evidence_quote": "The Philippine Peso (PHP) is the official currency of the Philippines",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (PHT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://bagong.pagasa.dost.gov.ph",
+        "tier": 1,
+        "title": "PAGASA Philippine Standard Time"
+      }
+    ],
+    "evidence_quote": "Philippine Standard Time operates at UTC+8 without daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.meralco.com.ph",
+          "tier": 1,
+          "title": "Meralco Electric Power Distribution"
+        }
+      ],
+      "evidence_quote": "Mains electricity in the Philippines is delivered at 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.meralco.com.ph",
+          "tier": 1,
+          "title": "Meralco Grid Frequency Standard"
+        }
+      ],
+      "evidence_quote": "The standard electric frequency across the Philippines is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "C"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bps.dti.gov.ph",
+          "tier": 1,
+          "title": "Bureau of Philippine Standards (BPS PNS 1572)"
+        }
+      ],
+      "evidence_quote": "Standard PNS 1572 covers American Type A flat blade, Type B grounded, and Type C round pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pnp.gov.ph",
+          "tier": 1,
+          "title": "Philippine National Police (PNP)"
+        }
+      ],
+      "evidence_quote": "National emergency hotline 911 handles police dispatch across the Philippines",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://doh.gov.ph",
+          "tier": 1,
+          "title": "Department of Health Philippines"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance requests connect through national hotline 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bfp.gov.ph",
+          "tier": 1,
+          "title": "Bureau of Fire Protection (BFP)"
+        }
+      ],
+      "evidence_quote": "Bureau of Fire Protection emergency dispatch is coordinated via 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://emergency911.gov.ph",
+          "tier": 1,
+          "title": "Emergency 911 National Commission"
+        }
+      ],
+      "evidence_quote": "Executive Order No. 56 institutionalized 911 as the nationwide emergency contact number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "0917-840-3638",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourism.gov.ph",
+          "tier": 1,
+          "title": "Department of Tourism (DOT) Tourist Assistance Call Center"
+        }
+      ],
+      "evidence_quote": "Department of Tourism operates 24/7 Tourist Assistance Call Center 151-TOUR and dedicated hotline",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Philippines Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/philippines",
+          "tier": 1,
+          "title": "UK FCDO Philippines Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Başlıca tatil adaları güvenlidir; Güney Mindanao ve Sulu Denizi'nden kaçının",
+      "en": "Exercise Increased Caution: Main island destinations safe; avoid southern Mindanao and Sulu archipelago",
+      "de": "Erhöhte Vorsicht: Haupturlaubsinseln sicher; Süd-Mindanao und Sulu-Archipel meiden",
+      "ru": "Повышенная осторожность: основные острова безопасны, избегайте юга Минданао",
+      "es": "Mayor precaución: islas turísticas principales seguras; evite el sur de Mindanao y archipiélago de Joló"
+    },
+    "regional_warnings": [
+      {
+        "area": "Sulu Archipelago and Western/Southern Mindanao",
+        "level": 4,
+        "reason": "Terrorist activity, kidnappings, and armed conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disasters": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 35.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/philippines",
+          "tier": 2,
+          "title": "Ookla Speedtest Philippines"
+        }
+      ],
+      "evidence_quote": "Philippines mobile download speeds average 35.8 Mbps on Smart and Globe",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 94.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/philippines",
+          "tier": 2,
+          "title": "Ookla Speedtest Philippines Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in the Philippines averages 94.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Smart and Globe. Republic Act 11934 requires mandatory SIM registration with a passport and return ticket before activation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ntc.gov.ph",
+          "tier": 1,
+          "title": "National Telecommunications Commission (NTC) RA 11934"
+        }
+      ],
+      "evidence_quote": "Foreign tourist SIMs require passport and return ticket verification under RA 11934",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/ph/",
+        "tier": 1,
+        "title": "Grab Philippines Ride-Hailing & Delivery"
+      }
+    },
+    {
+      "name": "GCash",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.gcash.com",
+        "tier": 1,
+        "title": "GCash Dominant Philippine E-Wallet"
+      }
+    },
+    {
+      "name": "Foodpanda",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodpanda.ph",
+        "tier": 1,
+        "title": "Foodpanda Philippines"
+      }
+    },
+    {
+      "name": "Angkas",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://angkas.com",
+        "tier": 1,
+        "title": "Angkas Motorcycle Taxi App"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Katoliklik (~79%), Diğer Hristiyanlık (~10%), İslam (~6%), Diğer/Seküler (~5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://psa.gov.ph",
+          "tier": 1,
+          "title": "Philippine Statistics Authority (PSA) Census"
+        }
+      ],
+      "evidence_quote": "The Philippines has the largest Roman Catholic population in Asia",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Sinulog Festivali (Cebu, Ocak), Ati-Atihan (Aklan), Kutsal Hafta (Holy Week), Bağımsızlık Günü (12 Haziran)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://philippines.travel",
+          "tier": 1,
+          "title": "Tourism Promotions Board Philippines"
+        }
+      ],
+      "evidence_quote": "Sinulog in Cebu and national religious festivals are celebrated with grand street parades",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Girişten önce eTravel (etravel.gov.ph) elektronik QR kartı doldurulması zorunludur. Prizler Amerikan tipi A/B ve yuvarlak C melezidir (230V / 60Hz; 110V cihaz takmayın). Tayfun mevsimi (Haziran-Kasım) hava durumu yakından izlenmelidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://etravel.gov.ph",
+          "tier": 1,
+          "title": "Philippine Government eTravel Portal"
+        }
+      ],
+      "evidence_quote": "All arriving passengers must register on the official eTravel portal within 72 hours of arrival",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş yaygındır (faturaya 'Service Charge' eklenmemişse). Bagaj görevlilerine ve tur rehberlerine küçük tutarlı nakit bahşiş beklenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://philippines.travel",
+          "tier": 1,
+          "title": "Philippines Travel Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping 10 percent is customary in dining establishments unless service charge is already included",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "El Nido ve Coron Karstik Adaları, Palawan",
+        "en": "El Nido and Coron Karst Islands, Palawan",
+        "de": "El Nido und Coron Karstinseln, Palawan",
+        "ru": "Карстовые острова Эль-Нидо и Корон, Палаван",
+        "es": "Islas Kársticas de El Nido y Corón, Palawan"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://philippines.travel",
+          "tier": 1,
+          "title": "Philippines Travel Palawan"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Banaue Pirinç Terasları (UNESCO)",
+        "en": "Banaue Rice Terraces (UNESCO)",
+        "de": "Reisterrassen von Banaue",
+        "ru": "Рисовые террасы в Банауэ",
+        "es": "Terrazas de Arroz de Banaue"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/722",
+          "tier": 1,
+          "title": "UNESCO Rice Terraces of the Philippine Cordilleras"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Boracay Beyaz Kumsalı (White Beach)",
+        "en": "Boracay White Beach",
+        "de": "White Beach auf Boracay",
+        "ru": "Белый пляж острова Боракай",
+        "es": "Playa Blanca de Borácay"
+      },
+      "type": "beach_paradise",
+      "sources": [
+        {
+          "url": "https://philippines.travel",
+          "tier": 1,
+          "title": "Philippines Travel Boracay"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "El Nido Palawan Turkuaz Lagünleri ve Karstik Adaları",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ph-480.webp",
+        "attribution_text": "El Nido karst islands and lagoons in Palawan, Philippines. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "El Nido Turkuaz Lagünleri ve Adaları, Palawan, Filipinler",
+          "en": "El Nido Lagoons and Karst Islands, Palawan, Philippines",
+          "de": "El Nido Lagunen und Karstinseln, Palawan, Philippinen",
+          "ru": "Лагуны и карстовые острова Эль-Нидо, Палаван, Филиппины",
+          "es": "Lagunas e islas kársticas de El Nido, Palawan, Filipinas"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "filipinler",
+      "en": "philippines",
+      "de": "philippinen",
+      "ru": "filippiny",
+      "es": "filipinas"
+    },
+    "title": {
+      "tr": "Filipinler Vize Rehberi, eTravel Kartı ve Seyahat | Vizamigo",
+      "en": "Philippines Visa Guide, eTravel QR & Island Travel | Vizamigo",
+      "de": "Philippinen Visum-Leitfaden, eTravel-QR & Inselreisen | Vizamigo",
+      "ru": "Виза на Филиппины, QR-карта eTravel и советы туристу | Vizamigo",
+      "es": "Guía de Visa de Filipinas, eTravel QR y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Filipinler vize kuralları, eTravel QR kayıt zorunluluğu, Grab ve GCash kullanımı, priz tipleri (A, B, C) ve Palawan adaları.",
+      "en": "Philippines visa rules, mandatory eTravel QR registration, Grab and GCash apps, Type A/B/C plugs, and Palawan guide.",
+      "de": "Philippinen Visabestimmungen, eTravel QR-Registrierung, Grab und GCash Apps, Steckertypen A/B/C und Palawan-Tipps.",
+      "ru": "Визовые правила Филиппин, регистрация eTravel, приложения Grab и GCash, розетки A/B/C и гид по Палавану.",
+      "es": "Requisitos de visa para Filipinas, registro obligatorio eTravel, apps Grab y GCash, enchufes A/B/C y guía de Palawan."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
