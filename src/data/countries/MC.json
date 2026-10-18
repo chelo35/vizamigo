@@ -1,0 +1,427 @@
+{
+  "iso2": "MC",
+  "names": {
+    "tr": "Monako",
+    "en": "Monaco",
+    "de": "Monaco",
+    "ru": "Монако",
+    "es": "Mónaco"
+  },
+  "capital": {
+    "value": "Monako",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mairie.mc",
+        "tier": 1,
+        "title": "Mairie de Monaco"
+      }
+    ],
+    "evidence_quote": "Monaco is a sovereign city-state on the French Riviera, the second smallest independent state in the world",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://en.gouv.mc",
+        "tier": 1,
+        "title": "Prince's Government of Monaco"
+      }
+    ],
+    "evidence_quote": "The Euro is the official legal currency in Monaco under monetary agreements with France and the EU",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://en.gouv.mc",
+        "tier": 1,
+        "title": "Gouvernement Princier de Monaco"
+      }
+    ],
+    "evidence_quote": "Monaco observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.smeg.mc",
+          "tier": 1,
+          "title": "Société Monégasque de l'Electricité et du Gaz (SMEG)"
+        }
+      ],
+      "evidence_quote": "Electricity distribution network operates at standard 230V alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.smeg.mc",
+          "tier": 1,
+          "title": "Société Monégasque de l'Electricité et du Gaz"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Monaco is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Monaco utilizes European standard Type C, French Type E, and German Schuko Type F sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "17",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gouv.mc",
+          "tier": 1,
+          "title": "Direction de la Sûreté Publique de Monaco"
+        }
+      ],
+      "evidence_quote": "Dial 17 for emergency police assistance across the Principality of Monaco",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "18",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pompiers.gouv.mc",
+          "tier": 1,
+          "title": "Corps des Sapeurs-Pompiers de Monaco"
+        }
+      ],
+      "evidence_quote": "Call 18 for emergency medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "18",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pompiers.gouv.mc",
+          "tier": 1,
+          "title": "Corps des Sapeurs-Pompiers de Monaco"
+        }
+      ],
+      "evidence_quote": "Dial 18 for fire and rescue services across Monaco",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://en.gouv.mc",
+          "tier": 1,
+          "title": "Gouvernement Princier"
+        }
+      ],
+      "evidence_quote": "112 operates as the universal mobile emergency number in Monaco",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/monaco",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Monako dünyanın en güvenli şehir devletidir; yoğun güvenlik kamerası ağı ve polis mevcudiyeti bulunur.",
+      "en": "Monaco boasts one of the lowest crime rates globally with pervasive 24/7 video surveillance.",
+      "de": "Monaco verzeichnet eine der niedrigsten Kriminalitätsraten weltweit mit lückenloser Videoüberwachung.",
+      "ru": "Монако — одно из самых безопасных государств в мире с круглосуточным видеонаблюдением.",
+      "es": "Mónaco cuenta con uno de los índices de criminalidad más bajos del mundo y videovigilancia integral."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 112.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/monaco",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Monaco reach approximately 112.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 185.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/monaco",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Monaco measure 185.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Monaco Telecom operates high-speed 5G. Note that certain French and EU mobile roaming operators do NOT include Monaco in standard EU roaming bundles; check your carrier's roaming terms before crossing.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.monaco-telecom.mc",
+          "tier": 1,
+          "title": "Monaco Telecom"
+        }
+      ],
+      "evidence_quote": "Monaco Telecom provides nationwide gigabit 5G coverage across the territory",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "MonaPass",
+      "category": "transport",
+      "popular": true,
+      "description": "All-in-one public transit app for buying tickets for CAM buses, MonaBike electric bikes, and parking."
+    },
+    {
+      "name": "Citymapper",
+      "category": "maps",
+      "popular": true,
+      "description": "Superb transit navigation app covering walking elevators, public lifts, and trains through Monaco."
+    },
+    {
+      "name": "YourMonaco",
+      "category": "other",
+      "popular": true,
+      "description": "Official city application with real-time environmental data, public elevators, and events."
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "popular": true,
+      "description": "Uber can drop off passengers in Monaco from France, though pickups inside Monaco are restricted to Monaco taxis."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa via France",
+      "duration_days": 90,
+      "conditions": "Monako ile Fransa arasında sınır kontrolü yoktur; Fransa ve Schengen vize kuralları birebir geçerlidir. Türk umuma mahsus pasaport hamilleri Schengen vizesine tabidir (Yeşil pasaporta vizesiz).",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://en.gouv.mc/Action-Gouvernementale/Monaco-a-l-International/Les-visas-d-entree-a-Monaco",
+        "tier": 1,
+        "title": "Gouvernement Princier de Monaco"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens enter Monaco visa-free under standard Schengen 90/180-day regulations via France.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://en.gouv.mc",
+        "tier": 1,
+        "title": "Prince's Government of Monaco"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement via France",
+      "duration_days": 90,
+      "conditions": "German and EU citizens enter Monaco freely with an EU national ID card or passport via France.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://en.gouv.mc",
+        "tier": 1,
+        "title": "Prince's Government of Monaco"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Monaco and the Schengen area visa-free for up to 90 days in any 180-day period.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/monaco/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Schengen Visa Required",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ для посещения Монако требуется действующая шенгенская виза категории C.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://en.gouv.mc",
+        "tier": 1,
+        "title": "Правительство Монако"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Use public public elevators and escalators",
+        "description": "Monaco is built on steep cliffs; dozens of free public elevators and covered moving walkways connect the port to upper streets."
+      },
+      {
+        "title": "Dress smartly for the Casino de Monte-Carlo",
+        "description": "Smart attire is strictly enforced in the gaming rooms; flip-flops, sportswear, and shorts are not allowed in the evening."
+      },
+      {
+        "title": "Wear shoes and a shirt on city streets",
+        "description": "Walking shirtless or barefoot outside beach areas is illegal in Monaco and subject to police intervention."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't pick up street passengers in foreign taxis",
+        "description": "Only official Monaco-registered red-and-white taxis are permitted to pick up passengers within the Principality."
+      },
+      {
+        "title": "Don't overlook roaming charges",
+        "description": "Check if your carrier includes Monaco in your EU roaming plan; some operators treat Monaco as high-cost non-EU territory."
+      }
+    ],
+    "tipping": "Tipping 10-15% is customary in fine dining establishments in Monte Carlo for attentive white-glove service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Monako Port Hercule Limanı ve Monte Carlo Silüeti",
+        "license": "CC BY-SA 3.0",
+        "author": "Tobi 87",
+        "source_url": "/images/countries/mc-480.webp",
+        "attribution_text": "Port Hercule harbor and Monte Carlo skyline in the Principality of Monaco. Tobi 87, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Monako Port Hercule Limanı ve Monte Carlo Silüeti, Monako",
+          "en": "Port Hercule Harbour & Monte Carlo Skyline, Monaco",
+          "de": "Hafen Port Hercule & Skyline von Monte Carlo, Monaco",
+          "ru": "Гавань Порт-Эркюль и панорама Монте-Карло, Монако",
+          "es": "Puerto Hércules y Horizonte de Montecarlo, Mónaco"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "monako",
+      "en": "monaco",
+      "de": "monaco",
+      "ru": "monako",
+      "es": "monaco"
+    },
+    "title": {
+      "tr": "Monako Vize Rehberi, Fransa Üzerinden Giriş ve Monte Carlo Gezisi | Vizamigo",
+      "en": "Monaco Visa Guide, Schengen Entry & Monte Carlo Travel Guide | Vizamigo",
+      "de": "Monaco Visum-Leitfaden, Schengen-Einreise & Monte Carlo Reisen | Vizamigo",
+      "ru": "Шенгенская виза в Монако, въезд через Францию и Монте-Карло | Vizamigo",
+      "es": "Guía de Visa de Mónaco, Entrada Schengen y Viajes a Montecarlo | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Monako Schengen vize şartları, Fransa üzerinden vizesiz yeşil pasaport girişi, MonaPass ulaşım uygulaması ve Monte Carlo Kumarhanesi rehberi.",
+      "en": "Monaco Schengen entry rules, green passport access via France, MonaPass transit app, Monte Carlo casino dress code, and tips.",
+      "de": "Monaco Schengen-Visumregeln, Einreise über Frankreich, MonaPass App und Reisetipps Casino Monte-Carlo.",
+      "ru": "Правила въезда в Монако (Шенген), приложение MonaPass, дресс-код казино Монте-Карло и путеводитель.",
+      "es": "Requisitos de visa Schengen para Mónaco, entrada desde Francia, app MonaPass y código de vestimenta de Montecarlo."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

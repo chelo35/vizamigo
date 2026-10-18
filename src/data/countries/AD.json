@@ -1,0 +1,430 @@
+{
+  "iso2": "AD",
+  "names": {
+    "tr": "Andorra",
+    "en": "Andorra",
+    "de": "Andorra",
+    "ru": "Андорра",
+    "es": "Andorra"
+  },
+  "capital": {
+    "value": "Andorra la Vella",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.andorralavella.ad",
+        "tier": 1,
+        "title": "Comú d'Andorra la Vella"
+      }
+    ],
+    "evidence_quote": "Andorra la Vella is the capital of the Principality of Andorra, the highest capital city in Europe",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bpa.ad",
+        "tier": 1,
+        "title": "Govern d'Andorra - Finança"
+      }
+    ],
+    "evidence_quote": "The Euro is the official legal tender of Andorra under monetary agreement with the European Union",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.govern.ad",
+        "tier": 1,
+        "title": "Govern d'Andorra Official Portal"
+      }
+    ],
+    "evidence_quote": "Andorra observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.feda.ad",
+          "tier": 1,
+          "title": "Forces Elèctriques d'Andorra (FEDA)"
+        }
+      ],
+      "evidence_quote": "Low-voltage electrical distribution in Andorra is standardized at 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.feda.ad",
+          "tier": 1,
+          "title": "Forces Elèctriques d'Andorra"
+        }
+      ],
+      "evidence_quote": "Electrical network frequency in Andorra operates continuously at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Power plugs in Andorra conform to European two-pin Type C and Schuko Type F sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policia.ad",
+          "tier": 1,
+          "title": "Cos de Policia d'Andorra"
+        }
+      ],
+      "evidence_quote": "Dial 110 for emergency police services across the Principality of Andorra",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "116",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.saas.ad",
+          "tier": 1,
+          "title": "Servei Andorrà d'Atenció Sanitària (SAAS)"
+        }
+      ],
+      "evidence_quote": "Call 116 for medical emergencies and hospital ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bombers.ad",
+          "tier": 1,
+          "title": "Cos de Bombers d'Andorra"
+        }
+      ],
+      "evidence_quote": "Dial 118 for mountain rescue and fire brigades throughout Andorra",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.govern.ad",
+          "tier": 1,
+          "title": "Govern d'Andorra"
+        }
+      ],
+      "evidence_quote": "112 operates as the unified emergency number coordinating police, medical, and mountain rescue",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/andorra",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Andorra dünyanın en güvenli ülkelerindendir; kış aylarında kar lastiği/zincir zorunluluğuna dikkat edilmelidir.",
+      "en": "Andorra is exceptionally safe; in winter, snow chains or winter tires are legally required on mountain passes.",
+      "de": "Andorra ist eines der sichersten Länder der Welt; im Winter gilt Winterreifen- bzw. Schneekettenpflicht.",
+      "ru": "Андорра — одна из самых безопасных стран мира; зимой обязательно наличие зимней резины или цепей.",
+      "es": "Andorra es sumamente segura; en invierno es obligatorio el uso de cadenas o neumáticos de nieve."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 94.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/andorra",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Andorra reach approximately 94.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 215.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/andorra",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Andorra measure 215.2 Mbps nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "WARNING: Andorra is NOT in the EU; EU 'Roam Like at Home' does NOT apply, and standard roaming charges can be exorbitant! Connect to public Wi-Fi or purchase an Andorra Telecom tourist eSIM before crossing the border.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.andorratelecom.ad",
+          "tier": 1,
+          "title": "Andorra Telecom"
+        }
+      ],
+      "evidence_quote": "Andorra is excluded from EU roaming regulations; data roaming incurs non-EU rates",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Andorra Telecom",
+      "category": "transport",
+      "popular": true,
+      "description": "Essential app for monitoring mobile data usage and buying tourist eSIM packages in Andorra."
+    },
+    {
+      "name": "Cityme Andorra",
+      "category": "maps",
+      "popular": true,
+      "description": "Official audio guide and tourism exploration app for Andorra la Vella and Pyrenean valleys."
+    },
+    {
+      "name": "Grandvalira App",
+      "category": "other",
+      "popular": true,
+      "description": "Essential ski resort navigation app with live slope webcam feeds and lift pass tracking."
+    },
+    {
+      "name": "Andbus",
+      "category": "transport",
+      "popular": true,
+      "description": "Direct express bus booking app connecting Andorra la Vella to Barcelona (BCN) and Toulouse (TLS) airports."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa via France/Spain",
+      "duration_days": 90,
+      "conditions": "Andorra kendi vizesini aramaz, ancak ülkeye sadece İspanya veya Fransa üzerinden girilebilir. Türk umuma mahsus pasaport hamillerinin ÇOK GİRİŞLİ Schengen vizesine sahip olması şarttır (Yeşil pasaporta vizesiz).",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.exteriors.ad",
+        "tier": 1,
+        "title": "Ministeri d'Afers Exteriors d'Andorra"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "Andorra does not require any visa, but travelers must meet Schengen entry requirements for France or Spain.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.exteriors.ad/en/travel-to-andorra",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Andorra"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement via France/Spain",
+      "duration_days": 90,
+      "conditions": "German and EU citizens enter Andorra using a valid national ID card or passport via France or Spain.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.exteriors.ad/en/travel-to-andorra",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of Andorra"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders enter visa-free via France or Spain; a multiple-entry Schengen allowance is recommended.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/andorra/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Multiple-Entry Schengen Required",
+      "duration_days": 90,
+      "conditions": "Для въезда в Андорру гражданам РФ требуется многократная шенгенская виза для транзита через Францию или Испанию.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.exteriors.ad",
+        "tier": 1,
+        "title": "МИД Андорры"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Andorra Digital Nomad Residence",
+    "min_income_usd": 3500,
+    "duration_months": 12,
+    "source": {
+      "url": "https://www.immigracio.ad",
+      "tier": 1,
+      "title": "Servei d'Immigració d'Andorra"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Turn off mobile data roaming before entering Andorra!",
+        "description": "Andorra is NOT in the EU; mobile networks charge steep non-EU roaming rates ($10+/MB). Use Wi-Fi or a local SIM."
+      },
+      {
+        "title": "Declare duty-free goods at customs borders",
+        "description": "French and Spanish customs strictly inspect vehicles leaving Andorra for alcohol, tobacco, and luxury electronics limits."
+      },
+      {
+        "title": "Equip your car with snow chains in winter",
+        "description": "Police turn back or fine motorists without snow chains or winter tires during snowy mountain pass conditions."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't attempt entry with a single-entry Schengen visa",
+        "description": "Leaving Spain or France for Andorra consumes one Schengen entry; returning to Spain requires a second entry."
+      },
+      {
+        "title": "Don't exceed duty-free allowances",
+        "description": "Duty-free thresholds (e.g. 1.5L spirits, 300 cigarettes) are strictly enforced by Guardia Civil and French Douane."
+      }
+    ],
+    "tipping": "Tipping 5-10% is customary in sit-down mountain chalets and restaurants in Andorra la Vella for good service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sant Joan de Caselles Romanesk Kilisesi ve Pirene Dağları",
+        "license": "CC BY-SA 3.0",
+        "author": "Luis Miguel Bugallo Sánchez",
+        "source_url": "/images/countries/ad-480.webp",
+        "attribution_text": "Sant Joan de Caselles Romanesque church and Pyrenean mountains in Andorra. CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Sant Joan de Caselles Romanesk Kilisesi ve Pirene Dağları, Andorra",
+          "en": "Sant Joan de Caselles Romanesque Church & Pyrenees, Andorra",
+          "de": "Romanische Kirche Sant Joan de Caselles & Pyrenäen, Andorra",
+          "ru": "Романская церковь Сан-Жоан-де-Казельяс и Пиренеи, Андорра",
+          "es": "Iglesia Románica de Sant Joan de Caselles y Pirineos, Andorra"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "andorra",
+      "en": "andorra",
+      "de": "andorra",
+      "ru": "andorra",
+      "es": "andorra"
+    },
+    "title": {
+      "tr": "Andorra Vize Rehberi, Çok Girişli Schengen Kuralı ve Dolaşım Uyarısı | Vizamigo",
+      "en": "Andorra Visa Guide, Multiple-Entry Schengen & Roaming Warning | Vizamigo",
+      "de": "Andorra Visum-Leitfaden, Schengen-Transit & Roaming-Warnung | Vizamigo",
+      "ru": "Виза в Андорру, многократный Шенген и предупреждение о роуминге | Vizamigo",
+      "es": "Guía de Visa de Andorra, Schengen Múltiple y Alerta de Roaming | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Andorra vize şartları, çok girişli Schengen zorunluluğu, AB dışı pahalı dolaşım (roaming) uyarısı, gümrüksüz alışveriş ve Pirene gezi rehberi.",
+      "en": "Andorra entry rules, multiple-entry Schengen requirement, critical non-EU data roaming warning, duty-free limits, and ski guide.",
+      "de": "Andorra Einreisebestimmungen, Mehrfach-Schengen-Pflicht, Roaming-Warnung (kein EU-Roaming) und Reisetipps Pyrenäen.",
+      "ru": "Правила въезда в Андорру, многократная шенгенская виза, предупреждение о дорогом роуминге и горнолыжные курорты.",
+      "es": "Requisitos de entrada a Andorra, visado Schengen múltiple, advertencia de roaming fuera de la UE y compras libres de impuestos."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

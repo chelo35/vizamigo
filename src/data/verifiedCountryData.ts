@@ -98,6 +98,12 @@ import MN from './countries/MN.json';
 import MD from './countries/MD.json';
 import KE from './countries/KE.json';
 import TZ from './countries/TZ.json';
+import AD from './countries/AD.json';
+import BH from './countries/BH.json';
+import KW from './countries/KW.json';
+import MC from './countries/MC.json';
+import SM from './countries/SM.json';
+import LI from './countries/LI.json';
 
 export interface VerifiedSource {
   url: string;
@@ -330,6 +336,12 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   MD: MD as unknown as VerifiedCountryRecord,
   KE: KE as unknown as VerifiedCountryRecord,
   TZ: TZ as unknown as VerifiedCountryRecord,
+  AD: AD as unknown as VerifiedCountryRecord,
+  BH: BH as unknown as VerifiedCountryRecord,
+  KW: KW as unknown as VerifiedCountryRecord,
+  MC: MC as unknown as VerifiedCountryRecord,
+  SM: SM as unknown as VerifiedCountryRecord,
+  LI: LI as unknown as VerifiedCountryRecord,
 };
 
 /**

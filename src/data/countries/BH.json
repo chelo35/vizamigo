@@ -1,0 +1,435 @@
+{
+  "iso2": "BH",
+  "names": {
+    "tr": "Bahreyn",
+    "en": "Bahrain",
+    "de": "Bahrain",
+    "ru": "Бахрейн",
+    "es": "Baréin"
+  },
+  "capital": {
+    "value": "Manama",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.capital.gov.bh",
+        "tier": 1,
+        "title": "Capital Governorate of the Kingdom of Bahrain"
+      }
+    ],
+    "evidence_quote": "Manama is the capital and largest city of Bahrain, a premier regional financial hub",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BHD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbb.gov.bh",
+        "tier": 1,
+        "title": "Central Bank of Bahrain (CBB)"
+      }
+    ],
+    "evidence_quote": "The Bahraini Dinar (BHD) is pegged to the US Dollar at 1 BHD = 2.659 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bahrain.bh",
+        "tier": 1,
+        "title": "Bahrain eGovernment National Portal"
+      }
+    ],
+    "evidence_quote": "Bahrain observes Arabia Standard Time UTC+3 year-round without daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ewa.bh",
+          "tier": 1,
+          "title": "Electricity and Water Authority of Bahrain (EWA)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase electricity in Bahrain is delivered at 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ewa.bh",
+          "tier": 1,
+          "title": "Electricity and Water Authority of Bahrain"
+        }
+      ],
+      "evidence_quote": "The electrical grid operating frequency in Bahrain is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Wall outlets in Bahrain strictly adhere to the British three-rectangular-pin Type G standard",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policemc.gov.bh",
+          "tier": 1,
+          "title": "Ministry of Interior of Bahrain"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency police assistance throughout the Kingdom of Bahrain",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.bh",
+          "tier": 1,
+          "title": "Ministry of Health of Bahrain"
+        }
+      ],
+      "evidence_quote": "Call 999 for emergency medical assistance and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.civildefence.gov.bh",
+          "tier": 1,
+          "title": "General Directorate of Civil Defence"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency civil defence and fire rescue",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bahrain.bh",
+          "tier": 1,
+          "title": "Bahrain National Portal"
+        }
+      ],
+      "evidence_quote": "112 functions as the secondary mobile emergency number alongside 999",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+973 1755 0840",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.btea.bh",
+          "tier": 1,
+          "title": "Bahrain Tourism and Exhibitions Authority (BTEA)"
+        }
+      ],
+      "evidence_quote": "Tourism security officers assist international visitors across Manama souqs and heritage sites",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/bahrain",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Bahreyn genelinde güvenlik seviyesi çok yüksektir; standart seyahat tedbirleri yeterlidir.",
+      "en": "Bahrain is one of the safest destinations in the Middle East; exercise normal precautions.",
+      "de": "Bahrain ist ein sehr sicheres Reiseland; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "В Бахрейне высокий уровень безопасности; действуют обычные меры предосторожности.",
+      "es": "Baréin es un destino sumamente seguro; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 91.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bahrain",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Bahrain reach approximately 91.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 96.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bahrain",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Bahrain measure 96.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Batelco, stc Bahrain, and Zain offer 5G prepaid tourist eSIMs with airport counters open 24/7. BenefitPay is the universal mobile QR payment method used across all shops.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.batelco.com",
+          "tier": 1,
+          "title": "Batelco Bahrain"
+        }
+      ],
+      "evidence_quote": "5G mobile connectivity covers the entire populated area of Bahrain",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "BenefitPay",
+      "category": "payments",
+      "popular": true,
+      "description": "Bahrain's national electronic wallet app; BenefitPay QR codes are ubiquitous across all merchants."
+    },
+    {
+      "name": "Uber / Careem",
+      "category": "taxi",
+      "popular": true,
+      "description": "Reliable, widely available ride-hailing services operating across Manama and Muharraq."
+    },
+    {
+      "name": "Talabat / Jahez",
+      "category": "food",
+      "popular": true,
+      "description": "Leading food and grocery delivery applications in Bahrain."
+    },
+    {
+      "name": "Bahrain Bus",
+      "category": "transport",
+      "popular": true,
+      "description": "Official public transport app showing live air-conditioned red bus routes and GO Card balances."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "Türk vatandaşları Bahreyn Uluslararası Havalimanı'nda Kapıda Vize (VoA - 14-30 gün) alabilir veya online e-Visa başvurusu yapabilir.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.bh",
+        "tier": 1,
+        "title": "Bahreyn e-Visa Portalı"
+      }
+    },
+    "us": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "US citizens can obtain a 14-day or 30-day Visa on Arrival or apply online for a multi-entry eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.bh",
+        "tier": 1,
+        "title": "Kingdom of Bahrain eVisa Portal"
+      }
+    },
+    "de": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "German and EU citizens are eligible for Visa on Arrival at the port of entry or online eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.bh",
+        "tier": 1,
+        "title": "Kingdom of Bahrain eVisa Portal"
+      }
+    },
+    "gb": {
+      "regime": "eVisa / VoA",
+      "duration_days": 30,
+      "conditions": "British passport holders can obtain a Visa on Arrival or apply for an eVisa prior to travel.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/bahrain/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "eVisa / VoA",
+      "duration_days": 14,
+      "conditions": "Граждане РФ могут получить визу по прибытии в аэропорту Бахрейна (14 дней с возможностью продления) или оформить eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.evisa.gov.bh",
+        "tier": 1,
+        "title": "Портал eVisa Бахрейна"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": true,
+    "visa_name": "Bahrain Golden Residency & Remote Visa",
+    "min_income_usd": 5300,
+    "duration_months": 120,
+    "source": {
+      "url": "https://www.npra.gov.bh",
+      "tier": 1,
+      "title": "Nationality, Passports and Residence Affairs (NPRA)"
+    }
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect Islamic cultural traditions",
+        "description": "Bahrain is cosmopolitan and open, but modest attire covering shoulders and knees is appreciated in malls and public areas."
+      },
+      {
+        "title": "Visit the UNESCO Pearling Path",
+        "description": "Walk the historic architectural Pearling Path in Muharraq to learn about Bahrain's legendary pearl-diving heritage."
+      },
+      {
+        "title": "Cross the King Fahd Causeway to Saudi Arabia if eligible",
+        "description": "The 25 km bridge connects Bahrain to Saudi Arabia; ensure you have a valid Saudi visa if crossing."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't consume alcohol outside licensed venues",
+        "description": "Alcohol is permitted in licensed hotels and restaurants in Bahrain, but drinking in public streets is strictly forbidden."
+      },
+      {
+        "title": "Don't eat or drink publicly during Ramadan daylight",
+        "description": "Consuming food, water, or smoking in public during Ramadan fasting hours is prohibited by law."
+      }
+    ],
+    "tipping": "Tipping 10-15% is customary in restaurants; rounding up taxi fares is appreciated."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bahreyn Dünya Ticaret Merkezi (WTC) İkiz Kuleleri",
+        "license": "CC BY 2.0",
+        "author": "Gabby Canonizado from Dubai, United Arab Emirates",
+        "source_url": "/images/countries/bh-480.webp",
+        "attribution_text": "Bahrain World Trade Center twin towers on Manama harbor. Gabby Canonizado, CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Bahreyn Dünya Ticaret Merkezi (WTC) İkiz Kuleleri, Manama, Bahreyn",
+          "en": "Bahrain World Trade Center Twin Towers, Manama, Bahrain",
+          "de": "Bahrain World Trade Center Twin Towers, Manama, Bahrain",
+          "ru": "Башни ВТЦ Бахрейна в Манаме, Бахрейн",
+          "es": "Torres del WTC de Baréin en Manama, Baréin"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "bahreyn",
+      "en": "bahrain",
+      "de": "bahrain",
+      "ru": "bahreyn",
+      "es": "barein"
+    },
+    "title": {
+      "tr": "Bahreyn Vize Rehberi, Kapıda Vize (VoA) ve Manama Gezisi | Vizamigo",
+      "en": "Bahrain Visa Guide, Visa on Arrival & Manama Travel Guide | Vizamigo",
+      "de": "Bahrain Visum-Leitfaden, Visa on Arrival & Manama Reisen | Vizamigo",
+      "ru": "Виза в Бахрейн, виза по прибытии и путеводитель по Манаме | Vizamigo",
+      "es": "Guía de Visa de Baréin, Visa a la Llegada y Viajes a Manama | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Bahreyn kapıda vize (VoA) şartları, BHD para birimi, BenefitPay ödeme sistemi, Tip G prizler ve Manama Dünya Ticaret Merkezi gezi rehberi.",
+      "en": "Bahrain Visa on Arrival rules, high-value BHD dinar, BenefitPay app, Type G plugs, and Manama travel tips.",
+      "de": "Bahrain Visa on Arrival Bestimmungen, BHD-Währung, BenefitPay App und Reisetipps Manama World Trade Center.",
+      "ru": "Правила визы по прибытии в Бахрейн, валюта бахрейнский динар, приложение BenefitPay и путеводитель по Манаме.",
+      "es": "Requisitos de Visa a la Llegada en Baréin, moneda BHD, app BenefitPay y guía de viaje a Manama."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

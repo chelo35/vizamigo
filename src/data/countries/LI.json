@@ -1,0 +1,426 @@
+{
+  "iso2": "LI",
+  "names": {
+    "tr": "Lihtenştayn",
+    "en": "Liechtenstein",
+    "de": "Liechtenstein",
+    "ru": "Лихтенштейн",
+    "es": "Liechtenstein"
+  },
+  "capital": {
+    "value": "Vaduz",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vaduz.li",
+        "tier": 1,
+        "title": "Gemeinde Vaduz Official Portal"
+      }
+    ],
+    "evidence_quote": "Vaduz is the capital of the Principality of Liechtenstein and the seat of the national parliament",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "CHF",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.llb.li",
+        "tier": 1,
+        "title": "Liechtensteinische Landesbank (LLB)"
+      }
+    ],
+    "evidence_quote": "The Swiss Franc (CHF) is the official legal tender in Liechtenstein under the 1924 customs union treaty",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.regierung.li",
+        "tier": 1,
+        "title": "Regierung des Fürstentums Liechtenstein"
+      }
+    ],
+    "evidence_quote": "Liechtenstein observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.lkw.li",
+          "tier": 1,
+          "title": "Liechtensteinische Kraftwerke (LKW)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage in Liechtenstein is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.lkw.li",
+          "tier": 1,
+          "title": "Liechtensteinische Kraftwerke"
+        }
+      ],
+      "evidence_quote": "The alternating electrical frequency is standardized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "J"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Liechtenstein uses the Swiss Type J three-pin socket as well as Europlug Type C plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "117",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.landespolizei.li",
+          "tier": 1,
+          "title": "Landespolizei des Fürstentums Liechtenstein"
+        }
+      ],
+      "evidence_quote": "Dial 117 for emergency national police services in Liechtenstein",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "144",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.roteskreuz.li",
+          "tier": 1,
+          "title": "Liechtensteinisches Rotes Kreuz"
+        }
+      ],
+      "evidence_quote": "Call 144 for emergency ambulance and medical rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.feuerwehr.li",
+          "tier": 1,
+          "title": "Feuerwehren im Fürstentum Liechtenstein"
+        }
+      ],
+      "evidence_quote": "Dial 118 for fire brigades and technical rescue across Liechtenstein",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.regierung.li",
+          "tier": 1,
+          "title": "Regierung Liechtenstein"
+        }
+      ],
+      "evidence_quote": "112 operates as the universal European emergency number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/liechtenstein",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Lihtenştayn dünyanın en güvenli ve müreffeh ülkelerindendir; olağan seyahat tedbirleri yeterlidir.",
+      "en": "Liechtenstein is one of the safest countries in the world; exercise normal travel precautions.",
+      "de": "Liechtenstein ist eines der sichersten Länder weltweit; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Лихтенштейн — одна из самых безопасных стран мира; действуют обычные меры предосторожности.",
+      "es": "Liechtenstein es uno de los países más seguros del mundo; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 118.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/liechtenstein",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Liechtenstein reach approximately 118.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 192.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/liechtenstein",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Liechtenstein measure 192.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Telecom Liechtenstein (FL1) operates high-speed 5G. Swiss mobile networks (Swisscom, Sunrise) provide comprehensive coverage with zero roaming fees across the principality.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fl1.li",
+          "tier": 1,
+          "title": "Telecom Liechtenstein (FL1)"
+        }
+      ],
+      "evidence_quote": "Liechtenstein is fully integrated with Swiss cellular telecom networks",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "LIEmobil",
+      "category": "transport",
+      "popular": true,
+      "description": "Official bus transit schedule and mobile ticketing app for all Liechtenstein public buses."
+    },
+    {
+      "name": "SBB Mobile",
+      "category": "transport",
+      "popular": true,
+      "description": "Swiss Federal Railways app showing connecting train and bus routes into Sargans and Buchs."
+    },
+    {
+      "name": "Liechtenstein Trail App",
+      "category": "maps",
+      "popular": true,
+      "description": "Interactive multimedia guide for the 75-kilometer hiking trail crossing all 11 municipalities."
+    },
+    {
+      "name": "TWINT",
+      "category": "payments",
+      "popular": true,
+      "description": "Universal Swiss-Liechtenstein mobile payment app accepted across restaurants and stores."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Lihtenştayn Schengen bölgesi ve İsviçre gümrük birliği üyesidir. Türkiye umuma mahsus pasaport hamilleri Schengen vizesine tabidir. Hususi (Yeşil), Hizmet (Gri) ve Diplomatik pasaport hamilleri 180 günde 90 gün vizeden muaftır.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.llv.li",
+        "tier": 1,
+        "title": "Ausländer- und Passamt Liechtenstein"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter Liechtenstein visa-free for up to 90 days in any 180-day period under Schengen regulations.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.llv.li",
+        "tier": 1,
+        "title": "Liechtenstein Migration Authority"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement",
+      "duration_days": null,
+      "conditions": "German and EEA citizens enjoy freedom of movement and enter Liechtenstein with a valid national ID card or passport.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.llv.li",
+        "tier": 1,
+        "title": "Liechtenstein Migration Authority"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit Liechtenstein and the Schengen area visa-free for up to 90 days in any 180-day window.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/liechtenstein/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Schengen Visa",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ для посещения Лихтенштейна требуется краткосрочная шенгенская виза категории C.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.llv.li",
+        "tier": 1,
+        "title": "Паспортная служба Лихтенштейна"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Use Swiss Francs (CHF) for daily cash",
+        "description": "The Swiss Franc is the official legal currency; Euros are accepted in most tourist shops with change given in CHF."
+      },
+      {
+        "title": "Get a souvenir passport stamp at the Center",
+        "description": "Visit the Liechtenstein Center in downtown Vaduz to receive an official souvenir passport stamp for 3 CHF."
+      },
+      {
+        "title": "Hike the scenic Rhine Valley and Alps",
+        "description": "Explore the Liechtenstein Trail linking medieval Gutenberg Castle, Vaduz Castle viewpoints, and Malbun ski peaks."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't approach Vaduz Castle private quarters",
+        "description": "Vaduz Castle is the active private residence of the Princely Family; admire the castle from exterior viewpoints."
+      },
+      {
+        "title": "Don't make noise during midday rest (Mittagsruhe)",
+        "description": "Liechtenstein observes quiet hours between 12:00 and 13:30; loud commercial noise or lawnmowers are discouraged."
+      }
+    ],
+    "tipping": "Service is included by law in all bills; rounding up to the nearest franc or leaving 5-10% is customary for great service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Vaduz Şatosu ve Alp Ren Vadisi",
+        "license": "FAL",
+        "author": "A.Savin",
+        "source_url": "/images/countries/li-480.webp",
+        "attribution_text": "Vaduz Castle and alpine Rhine valley in the Principality of Liechtenstein. A.Savin, FAL.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Vaduz Şatosu ve Alp Ren Vadisi, Lihtenştayn",
+          "en": "Vaduz Castle & Alpine Rhine Valley, Liechtenstein",
+          "de": "Schloss Vaduz & Alpenrheintal, Liechtenstein",
+          "ru": "Замок Вадуц и альпийская долина Рейна, Лихтенштейн",
+          "es": "Castillo de Vaduz y Valle Alpino del Rin, Liechtenstein"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "lihtenstayn",
+      "en": "liechtenstein",
+      "de": "liechtenstein",
+      "ru": "lihtenshteyn",
+      "es": "liechtenstein"
+    },
+    "title": {
+      "tr": "Lihtenştayn Vize Rehberi, İsviçre Frangı ve Vaduz Şatosu Gezisi | Vizamigo",
+      "en": "Liechtenstein Visa Guide, Swiss Franc & Vaduz Castle Travel | Vizamigo",
+      "de": "Liechtenstein Visum-Leitfaden, Schweizer Franken & Schloss Vaduz | Vizamigo",
+      "ru": "Шенгенская виза в Лихтенштейн, швейцарский франк и замок Вадуц | Vizamigo",
+      "es": "Guía de Visa de Liechtenstein, Franco Suizo y Castillo de Vaduz | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Lihtenştayn Schengen vize kuralları, yeşil pasaporta vizesiz seyahat, İsviçre Frangı kullanımı, LIEmobil ve Vaduz Şatosu gezi rehberi.",
+      "en": "Liechtenstein Schengen entry rules, green passport access, Swiss Franc currency, LIEmobil transit app, and Vaduz Castle guide.",
+      "de": "Liechtenstein Schengen-Visumregeln, Schweizer Franken Währung, LIEmobil Nahverkehrsapp und Schloss Vaduz Reisetipps.",
+      "ru": "Правила въезда в Лихтенштейн (Шенген), швейцарский франк, приложение LIEmobil и замок Вадуц.",
+      "es": "Requisitos de visa Schengen para Liechtenstein, uso del franco suizo, app LIEmobil y guía del castillo de Vaduz."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

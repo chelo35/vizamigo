@@ -1,0 +1,427 @@
+{
+  "iso2": "SM",
+  "names": {
+    "tr": "San Marino",
+    "en": "San Marino",
+    "de": "San Marino",
+    "ru": "Сан-Марино",
+    "es": "San Marino"
+  },
+  "capital": {
+    "value": "San Marino",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sanmarinosite.com",
+        "tier": 1,
+        "title": "Repubblica di San Marino Official Portal"
+      }
+    ],
+    "evidence_quote": "City of San Marino is the capital of the Republic of San Marino, the world's oldest surviving republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcsm.sm",
+        "tier": 1,
+        "title": "Banca Centrale della Repubblica di San Marino"
+      }
+    ],
+    "evidence_quote": "The Euro is the official legal currency in San Marino under monetary agreement with the EU",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.sm",
+        "tier": 1,
+        "title": "Government of the Republic of San Marino"
+      }
+    ],
+    "evidence_quote": "San Marino observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.aass.sm",
+          "tier": 1,
+          "title": "Azienda Autonoma di Stato per i Servizi Pubblici (AASS)"
+        }
+      ],
+      "evidence_quote": "Domestic electrical power in San Marino is distributed at 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.aass.sm",
+          "tier": 1,
+          "title": "AASS San Marino"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout San Marino is synchronized at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "L"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "San Marino utilizes European Type C/F and Italian three-inline-pin Type L sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policiacivile.sm",
+          "tier": 1,
+          "title": "Corpo di Polizia Civile di San Marino"
+        }
+      ],
+      "evidence_quote": "Dial 112 or 113 for emergency police intervention across San Marino",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iss.sm",
+          "tier": 1,
+          "title": "Istituto per la Sicurezza Sociale (ISS)"
+        }
+      ],
+      "evidence_quote": "Call 118 for emergency medical response and hospital ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.policiacivile.sm/antincendio",
+          "tier": 1,
+          "title": "Sezione Antincendio Polizia Civile"
+        }
+      ],
+      "evidence_quote": "Dial 115 for fire and rescue services in San Marino",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.sm",
+          "tier": 1,
+          "title": "Repubblica di San Marino"
+        }
+      ],
+      "evidence_quote": "112 is the primary unified emergency number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/san-marino",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "San Marino dünyanın en güvenli ve huzurlu ülkelerindendir; olağan seyahat tedbirleri yeterlidir.",
+      "en": "San Marino is exceptionally safe with negligible crime; exercise normal travel precautions.",
+      "de": "San Marino ist außerordentlich sicher; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Сан-Марино — исключительно безопасная страна; действуют стандартные правила предосторожности.",
+      "es": "San Marino es sumamente seguro; aplican precauciones normales de viaje."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 78.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/san-marino",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in San Marino reach approximately 78.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 104.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/san-marino",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in San Marino measure 104.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "San Marino is an enclave surrounded entirely by Italy. Italian mobile networks (TIM, Vodafone, WindTre, Iliad) provide seamless coverage without roaming surcharges across San Marino territory.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.telecomitalia.sm",
+          "tier": 1,
+          "title": "TIM San Marino"
+        }
+      ],
+      "evidence_quote": "Italian cellular networks operate seamlessly throughout the Republic of San Marino",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Visit San Marino",
+      "category": "maps",
+      "popular": true,
+      "description": "Official tourist guide app for navigating Mount Titano, three towers, and museum trails."
+    },
+    {
+      "name": "San Marino Cable Car",
+      "category": "transport",
+      "popular": true,
+      "description": "Information and timetable app for the scenic cable car (funivia) linking Borgo Maggiore to Mount Titano."
+    },
+    {
+      "name": "Bonelli Bus",
+      "category": "transport",
+      "popular": true,
+      "description": "Scheduled express bus booking app connecting Rimini train station in Italy directly to San Marino."
+    },
+    {
+      "name": "Google Maps",
+      "category": "maps",
+      "popular": true,
+      "description": "Reliable walking and driving navigation for the historic hilltop center."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "Schengen Visa via Italy",
+      "duration_days": 90,
+      "conditions": "San Marino İtalya toprakları ile çevrilidir; bağımsız sınır kontrolü yoktur. İtalya ve Schengen vize kuralları geçerlidir. Türk umuma mahsus pasaport hamilleri Schengen vizesine tabidir (Yeşil pasaporta vizesiz).",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.esteri.sm",
+        "tier": 1,
+        "title": "Segreteria di Stato per gli Affari Esteri di San Marino"
+      }
+    },
+    "us": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "US citizens can enter San Marino visa-free under Schengen area entry rules through Italy.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.esteri.sm",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of San Marino"
+      }
+    },
+    "de": {
+      "regime": "Freedom of Movement via Italy",
+      "duration_days": 90,
+      "conditions": "German and EU citizens enter San Marino freely using an EU national ID card or passport via Italy.",
+      "passport_validity_months": 0,
+      "source": {
+        "url": "https://www.esteri.sm",
+        "tier": 1,
+        "title": "Ministry of Foreign Affairs of San Marino"
+      }
+    },
+    "gb": {
+      "regime": "VF",
+      "duration_days": 90,
+      "conditions": "British passport holders can visit San Marino visa-free for up to 90 days in any 180-day window via Italy.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/san-marino/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "Schengen Visa via Italy",
+      "duration_days": 90,
+      "conditions": "Гражданам РФ требуется действующая шенгенская виза для въезда в Сан-Марино через территорию Италии.",
+      "passport_validity_months": 3,
+      "source": {
+        "url": "https://www.esteri.sm",
+        "tier": 1,
+        "title": "МИД Сан-Марино"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Get an official souvenir passport stamp",
+        "description": "Visit the Tourist Information Office in Piazza Garibaldi to receive the official San Marino souvenir visa stamp for €5."
+      },
+      {
+        "title": "Walk the Passo delle Streghe (Witches' Path)",
+        "description": "Walk the dramatic stone ridge connecting the Guaita and Cesta fortress towers with 360° views stretching to the Adriatic Sea."
+      },
+      {
+        "title": "Take the scenic Funivia cable car",
+        "description": "Park in Borgo Maggiore below and ride the cable car up to Mount Titano to enjoy stunning panoramic views and avoid hilltop parking."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't refer to San Marino as part of Italy",
+        "description": "San Marino is a proud independent republic founded in 301 AD; acknowledging its distinct sovereignty is appreciated."
+      },
+      {
+        "title": "Don't drive into the medieval pedestrian zone",
+        "description": "The hilltop historical center (ZTL) is strictly pedestrian-only; camera-controlled fines apply to unauthorized cars."
+      }
+    ],
+    "tipping": "Tipping 5-10% is customary in sit-down restaurants in San Marino for attentive service."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "San Marino Guaita Kalesi ve Titano Dağı",
+        "license": "CC BY-SA 3.0",
+        "author": "Max_Ryazanov",
+        "source_url": "/images/countries/sm-480.webp",
+        "attribution_text": "First tower Guaita fortress on Mount Titano in the Republic of San Marino. Max_Ryazanov, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "San Marino Guaita Kalesi ve Titano Dağı, San Marino",
+          "en": "Guaita Fortress Tower & Mount Titano, San Marino",
+          "de": "Festung Guaita & Monte Titano, San Marino",
+          "ru": "Крепость Гуаита и гора Монте-Титано, Сан-Марино",
+          "es": "Fortaleza de Guaita y Monte Titano, San Marino"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "san-marino",
+      "en": "san-marino",
+      "de": "san-marino",
+      "ru": "san-marino",
+      "es": "san-marino"
+    },
+    "title": {
+      "tr": "San Marino Vize Rehberi, İtalya Üzerinden Giriş ve Guaita Kalesi | Vizamigo",
+      "en": "San Marino Visa Guide, Italy Transit & Guaita Fortress Travel | Vizamigo",
+      "de": "San Marino Visum-Leitfaden, Schengen-Einreise & Festung Guaita | Vizamigo",
+      "ru": "Виза в Сан-Марино, въезд через Италию и крепость Гуаита | Vizamigo",
+      "es": "Guía de Visa de San Marino, Entrada por Italia y Fortaleza Guaita | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "San Marino Schengen vize kuralları, İtalya üzerinden yeşil pasaporta vizesiz seyahat, hediyelik pasaport damgası ve Titano Dağı gezi rehberi.",
+      "en": "San Marino entry rules through Italy, green passport access, 5-euro souvenir passport stamp, and Mount Titano Guaita fortress guide.",
+      "de": "San Marino Schengen-Einreise über Italien, Souvenir-Passstempel und Reisetipps Monte Titano Festung Guaita.",
+      "ru": "Правила въезда в Сан-Марино через Италию (Шенген), сувенирный штамп в паспорт и крепость Гуаита.",
+      "es": "Requisitos de entrada a San Marino por Italia, sello de pasaporte de recuerdo y guía de la fortaleza de Guaita."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

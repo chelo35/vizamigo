@@ -1,0 +1,437 @@
+{
+  "iso2": "KW",
+  "names": {
+    "tr": "Kuveyt",
+    "en": "Kuwait",
+    "de": "Kuwait",
+    "ru": "Кувейт",
+    "es": "Kuwait"
+  },
+  "capital": {
+    "value": "Kuveyt Şehri",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.baladia.gov.kw",
+        "tier": 1,
+        "title": "Kuwait Municipality"
+      }
+    ],
+    "evidence_quote": "Kuwait City is the capital and political and cultural heart of the State of Kuwait",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "KWD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbk.gov.kw",
+        "tier": 1,
+        "title": "Central Bank of Kuwait (CBK)"
+      }
+    ],
+    "evidence_quote": "The Kuwaiti Dinar (KWD) is the official currency and the highest-valued currency unit in the world",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.e.gov.kw",
+        "tier": 1,
+        "title": "Kuwait Government Online Portal"
+      }
+    ],
+    "evidence_quote": "Kuwait observes Arabia Standard Time UTC+3 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mew.gov.kw",
+          "tier": 1,
+          "title": "Ministry of Electricity & Water & Renewable Energy of Kuwait"
+        }
+      ],
+      "evidence_quote": "Domestic electrical supply in Kuwait operates at 240V single-phase alternating current at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mew.gov.kw",
+          "tier": 1,
+          "title": "Ministry of Electricity & Water of Kuwait"
+        }
+      ],
+      "evidence_quote": "Grid frequency across the State of Kuwait is maintained at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission (IEC)"
+        }
+      ],
+      "evidence_quote": "Outlets in Kuwait utilize British Type G plugs and European two-pin Type C plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moi.gov.kw",
+          "tier": 1,
+          "title": "Ministry of Interior of the State of Kuwait"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency police response across the State of Kuwait",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.kw",
+          "tier": 1,
+          "title": "Ministry of Health of Kuwait"
+        }
+      ],
+      "evidence_quote": "Call 112 for emergency medical response and hospital ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.kff.gov.kw",
+          "tier": 1,
+          "title": "Kuwait Fire Force (KFF)"
+        }
+      ],
+      "evidence_quote": "Call 112 for Kuwait Fire Force rescue and fire operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moi.gov.kw",
+          "tier": 1,
+          "title": "Ministry of Interior Kuwait"
+        }
+      ],
+      "evidence_quote": "112 is Kuwait's unified 24/7 central emergency operations dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/kuwait",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Kuveyt genelinde güvenlik seviyesi çok yüksektir; alkolün kesinlikle yasak olduğu (tamamen kuru ülke) unutulmamalıdır.",
+      "en": "Kuwait is very safe; strict total prohibition of alcohol applies nationwide with severe legal penalties.",
+      "de": "Kuwait ist sehr sicher; landesweit gilt ein striktes absolutes Alkoholverbot mit harten Strafen.",
+      "ru": "В Кувейте высокий уровень безопасности; действует строгий сухой закон (полный запрет алкоголя).",
+      "es": "Kuwait es muy seguro; rige una prohibición estricta y absoluta del alcohol en todo el país."
+    },
+    "regional_warnings": [
+      {
+        "area": "Northern Border with Iraq (Restricted Border Zone)",
+        "level": 2,
+        "reason": "Militarized boundary zone; entry restricted to authorized transit corridors.",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Advisory"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 142.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kuwait",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Kuwait rank among world leaders at 142.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 82.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kuwait",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Kuwait measure 82.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Zain Kuwait, Ooredoo, and stc deliver blazing 5G tourist eSIM profiles. Contactless payments via Apple Pay and K-Net are ubiquitous everywhere from luxury malls to gas stations.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.kw.zain.com",
+          "tier": 1,
+          "title": "Zain Kuwait"
+        }
+      ],
+      "evidence_quote": "Zain 5G covers virtually 100% of populated territory across Kuwait",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Careem / Rover",
+      "category": "taxi",
+      "popular": true,
+      "description": "Standard app for booking vetted, air-conditioned private cars and taxis in Kuwait City."
+    },
+    {
+      "name": "Talabat / Deliveroo",
+      "category": "food",
+      "popular": true,
+      "description": "The dominant food delivery applications across all Kuwait governorates."
+    },
+    {
+      "name": "Kuwait Finder",
+      "category": "maps",
+      "popular": true,
+      "description": "Official Public Authority for Civil Information (PACI) map app using PACI building numbers."
+    },
+    {
+      "name": "K-Net",
+      "category": "payments",
+      "popular": true,
+      "description": "National electronic debit card payment gateway used by all Kuwait retailers."
+    }
+  ],
+  "visa_rules": {
+    "tr": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "Türk vatandaşları Kuveyt Uluslararası Havalimanı'nda Kapıda Vize (VoA) alabilir veya seyahat öncesinde online e-Visa alabilir. Ülkede alkol tamamen yasaktır.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisa.moi.gov.kw",
+        "tier": 1,
+        "title": "Kuveyt İçişleri Bakanlığı e-Visa Portalı"
+      }
+    },
+    "us": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "US citizens can obtain a 90-day tourist visa on arrival at Kuwait International Airport or online via eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisa.moi.gov.kw",
+        "tier": 1,
+        "title": "State of Kuwait eVisa Portal"
+      }
+    },
+    "de": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "German and EU citizens are eligible for a 90-day tourist visa on arrival or electronic visa prior to travel.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisa.moi.gov.kw",
+        "tier": 1,
+        "title": "State of Kuwait eVisa Portal"
+      }
+    },
+    "gb": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "British passport holders can obtain a 90-day tourist visa on arrival at the airport or apply online for an eVisa.",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/kuwait/entry-requirements",
+        "tier": 1,
+        "title": "UK FCDO Entry Requirements"
+      }
+    },
+    "ru": {
+      "regime": "eVisa / VoA",
+      "duration_days": 90,
+      "conditions": "Граждане РФ могут получить туристическую визу по прибытии в аэропорту Кувейта или оформить электронную визу (eVisa).",
+      "passport_validity_months": 6,
+      "source": {
+        "url": "https://evisa.moi.gov.kw",
+        "tier": 1,
+        "title": "Портал eVisa МВД Кувейта"
+      }
+    }
+  },
+  "digital_nomad": {
+    "available": false,
+    "visa_name": null,
+    "min_income_usd": null,
+    "duration_months": null,
+    "source": null
+  },
+  "etiquette": {
+    "dos": [
+      {
+        "title": "Respect the strict total alcohol ban",
+        "description": "Kuwait is 100% dry; importing, selling, possessing, or consuming alcohol is strictly criminalized with severe prison sentences."
+      },
+      {
+        "title": "Dress modestly in public places and malls",
+        "description": "Both men and women should dress conservatively (covering shoulders and knees) when visiting shopping complexes like The Avenues."
+      },
+      {
+        "title": "Visit the iconic Kuwait Towers",
+        "description": "Take the high-speed lift to the revolving viewing sphere 123 meters above sea level for panoramic views of the Arabian Gulf."
+      }
+    ],
+    "donts": [
+      {
+        "title": "Don't bring pork or alcohol in your luggage",
+        "description": "Customs baggage X-rays at Kuwait Airport inspect all incoming bags; illicit items are confiscated with criminal penalties."
+      },
+      {
+        "title": "Don't photograph government palaces or oil installations",
+        "description": "Strict photography bans exist around state ministries, refinery facilities, and royal palaces (Bayan Palace)."
+      }
+    ],
+    "tipping": "Tipping 10-15% in sit-down restaurants is customary; hotel bills often include a service charge."
+  },
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kuveyt Kuleleri ve Basra Körfezi Sahili",
+        "license": "CC BY 4.0",
+        "author": "Zairon",
+        "source_url": "/images/countries/kw-480.webp",
+        "attribution_text": "Kuwait Towers and Arabian Gulf coastline in Kuwait City. Zairon, CC BY 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Kuveyt Kuleleri ve Basra Körfezi Sahili, Kuveyt",
+          "en": "Kuwait Towers & Arabian Gulf Coastline, Kuwait",
+          "de": "Kuwait Towers & Küste des Persischen Golfs, Kuwait",
+          "ru": "Кувейтские башни и побережье Персидского залива, Кувейт",
+          "es": "Torres de Kuwait y Costa del Golfo Pérsico, Kuwait"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kuveyt",
+      "en": "kuwait",
+      "de": "kuwait",
+      "ru": "kuveyt",
+      "es": "kuwait"
+    },
+    "title": {
+      "tr": "Kuveyt Vize Rehberi, Kapıda Vize (VoA) ve Kuveyt Kuleleri Gezisi | Vizamigo",
+      "en": "Kuwait Visa Guide, Visa on Arrival & Kuwait Towers Travel | Vizamigo",
+      "de": "Kuwait Visum-Leitfaden, Visa on Arrival & Kuwait Towers | Vizamigo",
+      "ru": "Виза в Кувейт, виза по прибытии и Кувейтские башни | Vizamigo",
+      "es": "Guía de Visa de Kuwait, Visa a la Llegada y Torres de Kuwait | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kuveyt kapıda vize (VoA) şartları, dünyanın en değerli para birimi KWD Dinarı, kesin alkol yasağı kuralı ve Kuveyt Kuleleri gezi rehberi.",
+      "en": "Kuwait Visa on Arrival rules, world-record KWD currency value, strict total alcohol ban, Type G plugs, and Kuwait Towers guide.",
+      "de": "Kuwait Visa on Arrival Bestimmungen, KWD-Rekordwährung, absolutes Alkoholverbot und Reisetipps Kuwait Towers.",
+      "ru": "Правила визы по прибытии в Кувейт, кувейтский динар, сухой закон и путеводитель по башням Кувейта.",
+      "es": "Requisitos de Visa a la Llegada en Kuwait, moneda KWD de alto valor, prohibición total de alcohol y guía de Torres de Kuwait."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
