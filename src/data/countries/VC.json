@@ -1,0 +1,452 @@
+{
+  "iso2": "VC",
+  "names": {
+    "tr": "Saint Vincent ve Grenadinler",
+    "en": "Saint Vincent and the Grenadines",
+    "de": "St. Vincent und die Grenadinen",
+    "ru": "Сент-Винсент и Гренадины",
+    "es": "San Vicente y las Granadinas"
+  },
+  "capital": {
+    "value": "Kingstown",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.vc",
+        "tier": 1,
+        "title": "Government of Saint Vincent and the Grenadines"
+      }
+    ],
+    "evidence_quote": "Kingstown is the capital and chief commercial port of Saint Vincent and the Grenadines",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XCD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eccb-centralbank.org",
+        "tier": 1,
+        "title": "Eastern Caribbean Central Bank"
+      }
+    ],
+    "evidence_quote": "The Eastern Caribbean Dollar (XCD) is pegged to the USD at 2.70 XCD to 1 USD; USD is widely accepted",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://meteo.gov.vc",
+        "tier": 1,
+        "title": "Saint Vincent and the Grenadines Meteorological Services"
+      }
+    ],
+    "evidence_quote": "The archipelago operates on Atlantic Standard Time UTC-4 with no daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://vinlec.com",
+          "tier": 1,
+          "title": "St. Vincent Electricity Services Limited (VINLEC)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase voltage across the islands is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://vinlec.com",
+          "tier": 1,
+          "title": "VINLEC St. Vincent"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout the multi-island state is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "C",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "British Type G plugs predominate in modern buildings, alongside US Type A and European Type C outlets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rsvgpf.gov.vc",
+          "tier": 1,
+          "title": "Royal Saint Vincent and the Grenadines Police Force"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 911 for emergency police response across the islands",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.vc",
+          "tier": 1,
+          "title": "Milton Cato Memorial Hospital Emergency Services"
+        }
+      ],
+      "evidence_quote": "Call 911 or +1 784 456-1955 for emergency ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rsvgpf.gov.vc",
+          "tier": 1,
+          "title": "RSVGPF Fire Brigade"
+        }
+      ],
+      "evidence_quote": "Dial 999 for fire and rescue emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.vc",
+          "tier": 1,
+          "title": "National Emergency Management Organisation (NEMO)"
+        }
+      ],
+      "evidence_quote": "999 is the central unified emergency operations number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 784 457-1211",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoversvg.com",
+          "tier": 1,
+          "title": "SVG Tourism Authority (SVGTA)"
+        }
+      ],
+      "evidence_quote": "Tourism security liaison unit operates in Kingstown at +1 784 457-1211",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/st-vincent-and-the-grenadines",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Saint Vincent ve Grenadinler son derece sakin ve güvenli bir yelken cennetidir; standart seyahat önlemleri yeterlidir.",
+      "en": "Saint Vincent and the Grenadines is a tranquil sailing destination; exercise normal travel precautions.",
+      "de": "St. Vincent und die Grenadinen ist ein friedliches Segelparadies; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Сент-Винсент и Гренадины — спокойный архипелаг и рай для яхтинга; действуют обычные правила.",
+      "es": "San Vicente y las Granadinas es un destino náutico pacífico y seguro; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 35.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/st-vincent-and-the-grenadines",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in St. Vincent reach approximately 35.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 65.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/st-vincent-and-the-grenadines",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 65.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel and Flow provide 4G prepaid SIMs at Argyle International Airport (SVD). High-speed catamarans and inter-island schooners connect St. Vincent with Bequia, Mustique, Canouan, Mayreau, and Union Island.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoversvg.com",
+          "tier": 1,
+          "title": "Saint Vincent and the Grenadines Tourism Authority"
+        }
+      ],
+      "evidence_quote": "SIM card registration requires valid passport presentation",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Discover SVG",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://discoversvg.com",
+        "tier": 1,
+        "title": "SVG Tourism Authority"
+      }
+    },
+    {
+      "name": "Bequia Express Ferry App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bequiaexpress.com",
+        "tier": 2,
+        "title": "Bequia Express Lines"
+      }
+    },
+    {
+      "name": "SVG Postal & Delivery Services",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://gov.vc",
+        "tier": 1,
+        "title": "Ministry of Transport SVG"
+      }
+    },
+    {
+      "name": "Mustique Company Transit",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://mustique-island.com",
+        "tier": 2,
+        "title": "The Mustique Company"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 82%, predominantly Anglican, Methodist, Pentecostal, and Roman Catholic)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stats.gov.vc",
+          "tier": 1,
+          "title": "Statistical Office of St. Vincent and the Grenadines"
+        }
+      ],
+      "evidence_quote": "Christian faith traditions anchor festive and civic gatherings across the 32 islands",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Vincy Mas (June/July summer carnival with Soca Monarch), Nine Mornings Christmas Festival, Bequia Easter Regatta",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://carnivalsvg.com",
+          "tier": 1,
+          "title": "Carnival Development Corporation SVG"
+        }
+      ],
+      "evidence_quote": "Vincy Mas is the hottest summer carnival in the Eastern Caribbean featuring calypso and steelpan",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage clothing of any kind is strictly prohibited by law for civilians and tourists. Removing coral or marine life from Tobago Cays Marine Park carries heavy fines. Follow official NEMO advisories regarding La Soufrière volcano.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rsvgpf.gov.vc",
+          "tier": 1,
+          "title": "RSVGPF Public Legal Bulletin"
+        }
+      ],
+      "evidence_quote": "Civilian possession or wearing of camouflage material is strictly prohibited under the Criminal Code",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually included in hotel and restaurant bills; an additional 5-10% cash tip is standard for attentive service.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoversvg.com",
+          "tier": 1,
+          "title": "SVGTA Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10% service charge is standard in hospitality invoices",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Tobago Cays Deniz Parkı ve Mercan Resifleri",
+        "en": "Tobago Cays Marine Park & Coral Reefs",
+        "de": "Tobago Cays Marine Park & Korallenriffe",
+        "ru": "Морской парк Тобаго-Кейс и коралловые рифы",
+        "es": "Parque Marino de Tobago Cays y Arrecifes"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://tobagocays.org",
+          "tier": 1,
+          "title": "Tobago Cays Marine Park Authority"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Bequia Adası ve Princess Margaret Sahili",
+        "en": "Bequia Island & Princess Margaret Beach",
+        "de": "Insel Bequia & Princess Margaret Strand",
+        "ru": "Остров Бекия и пляж Принцессы Маргарет",
+        "es": "Isla de Bequia y Playa Princesa Margarita"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://discoversvg.com",
+          "tier": 1,
+          "title": "SVG Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Tobago Cays Deniz Parkı Mercan Resifleri ve Turkuaz Sığlıklar",
+        "license": "CC-BY",
+        "author": "Igbgrant at English Wikipedia",
+        "source_url": "/images/countries/vc-480.webp",
+        "attribution_text": "Tobago Cays Marine Park coral reefs in Saint Vincent and the Grenadines. Igbgrant, CC BY 2.5.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Tobago Cays Deniz Parkı Mercan Resifleri ve Turkuaz Sığlıklar, Saint Vincent ve Grenadinler",
+          "en": "Tobago Cays Marine Park Coral Reefs & Turquoise Shallows, Saint Vincent and the Grenadines",
+          "de": "Tobago Cays Marine Park Korallenriffe & Türkisuntiefen, St. Vincent und die Grenadinen",
+          "ru": "Коралловые рифы и бирюзовые отмели морского парка Тобаго-Кейс, Сент-Винсент и Гренадины",
+          "es": "Arrecifes de Coral de Tobago Cays y Bajíos Turquesa, San Vicente y las Granadinas"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "saint-vincent-ve-grenadinler",
+      "en": "saint-vincent-and-the-grenadines",
+      "de": "st-vincent-und-die-grenadinen",
+      "ru": "sent-vinsent-i-grenadiny",
+      "es": "san-vicente-y-las-granadinas"
+    },
+    "title": {
+      "tr": "Saint Vincent ve Grenadinler Vize Rehberi, 30 Gün Vizesiz Giriş ve Tobago Cays | Vizamigo",
+      "en": "Saint Vincent and the Grenadines Visa Guide, 30-Day Visa-Free Rules | Vizamigo",
+      "de": "St. Vincent und die Grenadinen Visum-Leitfaden, 30 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Сент-Винсент и Гренадины, 30 дней без визы и Тобаго-Кейс | Vizamigo",
+      "es": "Guía de Visa de San Vicente y las Granadinas, 30 Días sin Visa y Tobago Cays | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Saint Vincent ve Grenadinler Türk pasaportuna 30 gün vizesiz giriş, kamuflaj giysisi yasağı, Tip A/C/G prizler, Doğu Karayip Doları ve Tobago Cays rehberi.",
+      "en": "Saint Vincent and the Grenadines 30-day visa-free rules, camouflage clothing ban, Type A/C/G sockets, XCD currency, and Tobago Cays sailing guide.",
+      "de": "St. Vincent und die Grenadinen 30 Tage visafreie Einreise, Camouflage-Verbot, Steckdosentyp A/C/G, XCD-Währung und Tobago Cays Segeltipps.",
+      "ru": "Правила въезда в Сент-Винсент и Гренадины на 30 дней без визы, запрет камуфляжа, розетки Type A/C/G и морской парк Тобаго-Кейс.",
+      "es": "Requisitos de entrada sin visa a San Vicente y las Granadinas (30 días), prohibición de ropa de camuflaje y Tobago Cays."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

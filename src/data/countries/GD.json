@@ -1,0 +1,450 @@
+{
+  "iso2": "GD",
+  "names": {
+    "tr": "Grenada",
+    "en": "Grenada",
+    "de": "Grenada",
+    "ru": "Гренада",
+    "es": "Granada"
+  },
+  "capital": {
+    "value": "St. George's",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.gd",
+        "tier": 1,
+        "title": "Government of Grenada"
+      }
+    ],
+    "evidence_quote": "St. George's is the capital and largest city of the Caribbean island nation of Grenada",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XCD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eccb-centralbank.org",
+        "tier": 1,
+        "title": "Eastern Caribbean Central Bank"
+      }
+    ],
+    "evidence_quote": "The Eastern Caribbean Dollar (XCD) is pegged to the USD at 2.70 XCD to 1 USD; USD is widely accepted",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.gd",
+        "tier": 1,
+        "title": "Ministry of Civil Aviation Grenada"
+      }
+    ],
+    "evidence_quote": "Grenada operates on Atlantic Standard Time UTC-4 year-round without seasonal changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://grenlec.com",
+          "tier": 1,
+          "title": "Grenada Electricity Services Ltd (Grenlec)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Grenada and Carriacou is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://grenlec.com",
+          "tier": 1,
+          "title": "Grenlec"
+        }
+      ],
+      "evidence_quote": "The operating frequency of the electrical network is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Wall outlets in Grenada exclusively accept British standard Type G rectangular three-pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rgpf.gd",
+          "tier": 1,
+          "title": "Royal Grenada Police Force (RGPF)"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police response throughout Grenada",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "434",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.gd",
+          "tier": 1,
+          "title": "Ministry of Health Grenada - EMS"
+        }
+      ],
+      "evidence_quote": "Call 434 for ambulance dispatch and emergency medical assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rgpf.gd",
+          "tier": 1,
+          "title": "RGPF Fire Department"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency fire and rescue operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rgpf.gd",
+          "tier": 1,
+          "title": "Royal Grenada Police Force"
+        }
+      ],
+      "evidence_quote": "911 coordinates unified national emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 473 440-2244",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://puregrenada.com",
+          "tier": 1,
+          "title": "Grenada Tourism Authority (GTA)"
+        }
+      ],
+      "evidence_quote": "Police headquarters in St. George's handles tourist assistance at +1 473 440-2244",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/grenada",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Grenada dünyanın en güvenli ve huzurlu ada ülkelerindendir; standart seyahat önlemleri yeterlidir.",
+      "en": "Grenada is very safe and tranquil; exercise standard travel precautions.",
+      "de": "Grenada ist ein sehr friedliches und sicheres Karibikland; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Гренада — спокойный и безопасный остров пряностей; действуют обычные правила.",
+      "es": "Granada es un destino caribeño sumamente pacífico y seguro; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 39.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/grenada",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Grenada reach approximately 39.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 75.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/grenada",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Grenada measure 75.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel and Flow offer 4G tourist SIMs at Maurice Bishop International Airport (GND). Grenada is nicknamed the 'Spice Isle' producing world-renowned nutmeg, cinnamon, and cloves.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://puregrenada.com",
+          "tier": 1,
+          "title": "Grenada Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Prepaid cellular packages are available for visitors with passport identification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Pure Grenada App",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://puregrenada.com",
+        "tier": 1,
+        "title": "Grenada Tourism Authority"
+      }
+    },
+    {
+      "name": "KariGo",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://karigo.app",
+        "tier": 2,
+        "title": "KariGo Grenada"
+      }
+    },
+    {
+      "name": "QuickBite Grenada",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://quickbitegd.com",
+        "tier": 2,
+        "title": "QuickBite Delivery"
+      }
+    },
+    {
+      "name": "Grenada Ferries (Osprey Lines)",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ospreylines.com",
+        "tier": 2,
+        "title": "Osprey Lines Ferry"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 86%, predominantly Roman Catholic, Anglican, and Seventh-day Adventist)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stats.gov.gd",
+          "tier": 1,
+          "title": "Central Statistical Office of Grenada"
+        }
+      ],
+      "evidence_quote": "Catholicism and Protestantism represent the spiritual core of Grenadian community life",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Spicemas Carnival (August - famous for Jab Jab morning masquerade), Carriacou Regatta, Grenada Chocolate Fest",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://spicemasgrenada.com",
+          "tier": 1,
+          "title": "Spicemas Corporation"
+        }
+      ],
+      "evidence_quote": "Spicemas is Grenada's premier cultural carnival culminating in J'ouvert Jab Jab traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage patterns or military-style gear is strictly illegal for civilians and tourists. Swimming or walking in swimwear away from beaches into downtown St. George's is considered offensive. British Type G plugs are used.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rgpf.gd",
+          "tier": 1,
+          "title": "Royal Grenada Police Force Regulations"
+        }
+      ],
+      "evidence_quote": "Wearing camouflage pattern clothing is prohibited by law under penalty of fine or confiscation",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually included on restaurant and hotel bills; leaving an extra 5-10% for waitstaff is customary.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://puregrenada.com",
+          "tier": 1,
+          "title": "GTA Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10% service charge is customary in dining establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "The Carenage Pastel Renkli Limanı",
+        "en": "The Carenage Historic Pastel Harbour",
+        "de": "Historischer Hafen The Carenage",
+        "ru": "Историческая гавань Каренаж",
+        "es": "Puerto Histórico The Carenage"
+      },
+      "type": "city",
+      "sources": [
+        {
+          "url": "https://puregrenada.com",
+          "tier": 1,
+          "title": "Grenada Tourism Authority"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Grand Anse Sahili ve Molinere Sualtı Heykel Parkı",
+        "en": "Grand Anse Beach & Molinere Underwater Sculpture Park",
+        "de": "Grand Anse Strand & Molinere Unterwasser-Skulpturenpark",
+        "ru": "Пляж Гранд-Анс и подводный парк скульптур Молиньер",
+        "es": "Playa Grand Anse y Parque Submarino de Esculturas Molinere"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://puregrenada.com",
+          "tier": 1,
+          "title": "Grenada Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "The Carenage Pastel Renkli Limanı ve Yamaç Evleri, St. George's",
+        "license": "CC-BY-SA",
+        "author": "Ramakrishna Reddy Yekulla",
+        "source_url": "/images/countries/gd-480.webp",
+        "attribution_text": "The Carenage picturesque harbour in St. George's, Grenada. Ramakrishna Reddy Yekulla, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "The Carenage Pastel Renkli Limanı ve Yamaç Evleri, St. George's, Grenada",
+          "en": "The Carenage Pastel Harbour & Hillside Houses, St. George's, Grenada",
+          "de": "Hafen The Carenage mit bunten Kolonialhäusern, St. George's, Grenada",
+          "ru": "Пастельная гавань Каренаж и колониальные дома, Сент-Джорджес, Гренада",
+          "es": "Puerto The Carenage Casas en la Colina, St. George's, Granada"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "grenada",
+      "en": "grenada",
+      "de": "grenada",
+      "ru": "grenada",
+      "es": "granada-antillas"
+    },
+    "title": {
+      "tr": "Grenada Vize Rehberi, 90 Gün Vizesiz Giriş, Baharat Adası ve The Carenage | Vizamigo",
+      "en": "Grenada Visa Guide, 90-Day Visa-Free Rules, Spice Isle & Carenage | Vizamigo",
+      "de": "Grenada Visum-Leitfaden, 90 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Гренаду, 90 дней без визы, остров пряностей и Каренаж | Vizamigo",
+      "es": "Guía de Visa de Granada, 90 Días sin Visa y Puerto The Carenage | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Grenada Türk pasaportuna 90 gün vizesiz giriş, sıkı kamuflaj giysisi yasağı, Tip G prizler, Doğu Karayip Doları ve The Carenage limanı gezi rehberi.",
+      "en": "Grenada 90-day visa-free rules, strict military camouflage ban, Type G British sockets, XCD currency, and The Carenage harbor guide.",
+      "de": "Grenada 90 Tage visafreie Einreise, Verbot von Camouflage-Kleidung, Steckdosentyp G, XCD-Währung und Reiseführer The Carenage.",
+      "ru": "Правила въезда в Гренаду на 90 дней без визы, запрет камуфляжа, розетки Type G, восточнокарибский доллар и гавань Каренаж.",
+      "es": "Requisitos de entrada sin visa a Granada (90 días), prohibición de ropa de camuflaje, enchufes Tipo G y puerto The Carenage."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

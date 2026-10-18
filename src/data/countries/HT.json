@@ -1,0 +1,462 @@
+{
+  "iso2": "HT",
+  "names": {
+    "tr": "Haiti",
+    "en": "Haiti",
+    "de": "Haiti",
+    "ru": "Гаити",
+    "es": "Haití"
+  },
+  "capital": {
+    "value": "Port-au-Prince",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://communication.gouv.ht",
+        "tier": 1,
+        "title": "Gouvernement de la République d'Haïti"
+      }
+    ],
+    "evidence_quote": "Port-au-Prince is the capital and most populous metropolis of the Republic of Haiti",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "HTG",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.brh.ht",
+        "tier": 1,
+        "title": "Banque de la République d'Haïti (BRH)"
+      }
+    ],
+    "evidence_quote": "The Haitian Gourde (HTG, G) is the official currency; US dollars are accepted widely in commerce",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-5 (EST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://meteo-haiti.gouv.ht",
+        "tier": 1,
+        "title": "Unité Météorologique d'Haïti"
+      }
+    ],
+    "evidence_quote": "Haiti operates on Eastern Standard Time UTC-5, observing daylight saving time UTC-4 in summer",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://edh.ht",
+          "tier": 1,
+          "title": "Électricité d'Haïti (EDH)"
+        }
+      ],
+      "evidence_quote": "Standard residential voltage is 110V 60 Hz across urban electric grids in Haiti",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://edh.ht",
+          "tier": 1,
+          "title": "EDH Haïti"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national power network is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "North American Type A and Type B plugs with two flat parallel pins are universal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pnh.ht",
+          "tier": 1,
+          "title": "Police Nationale d'Haïti (PNH)"
+        }
+      ],
+      "evidence_quote": "Dial 114 for emergency police response from the Police Nationale d'Haïti",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "116",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mspp.gouv.ht",
+          "tier": 1,
+          "title": "Centre Ambulancier National (CAN) Haïti"
+        }
+      ],
+      "evidence_quote": "Call 116 for the Centre Ambulancier National emergency medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pnh.ht",
+          "tier": 1,
+          "title": "Corps des Sapeurs-Pompiers d'Haïti"
+        }
+      ],
+      "evidence_quote": "Dial 115 for emergency fire and disaster response services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "114",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pnh.ht",
+          "tier": 1,
+          "title": "PNH Operations Center"
+        }
+      ],
+      "evidence_quote": "114 is the national emergency operational contact line",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+509 2999 0101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourisme.gouv.ht",
+          "tier": 1,
+          "title": "POLITOUR - Police Touristique d'Haïti"
+        }
+      ],
+      "evidence_quote": "POLITOUR tourist police division operates in Cap-Haïtien and designated historic zones",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 4,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/haiti",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 4,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Şiddetli çete çatışmaları, adam kaçırma ve güvenlik krizi nedeniyle uluslararası dışişleri bakanlıkları Haiti'ye kesinlikle seyahat edilmemesini tavsiye etmektedir.",
+      "en": "Do Not Travel to Haiti due to armed gang violence, kidnapping, civil unrest, and severe humanitarian crisis.",
+      "de": "Reisewarnung: Vor Reisen nach Haiti wird wegen extremer Bandengewalt und Entführungsgefahr dringend gewarnt.",
+      "ru": "Категорически не рекомендуется посещать Гаити из-за высокого уровня вооруженного насилия банд и похищений людей.",
+      "es": "No viaje a Haití debido a la violencia armada de pandillas, secuestros y grave crisis de seguridad."
+    },
+    "regional_warnings": [
+      {
+        "area": "Port-au-Prince metropolitan area and Artibonite department",
+        "level": 4,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "high",
+      "civil_unrest": "high",
+      "natural_disaster": "high",
+      "health": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 18.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/haiti",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Haiti measure approximately 18.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 22.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/haiti",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 22.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel Haïti and Natcom operate mobile networks. Commercial flights to Port-au-Prince (PAP) suffer frequent security suspensions; Cap-Haïtien International Airport (CAP) in the north is used as a safer regional entry point.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://conatel.gouv.ht",
+          "tier": 1,
+          "title": "Conseil National des Télécommunications (CONATEL)"
+        }
+      ],
+      "evidence_quote": "SIM card purchases require passport registration under national telecommunications decrees",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Digicel MonCash",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://moncash.digicelht.com",
+        "tier": 1,
+        "title": "MonCash Haïti"
+      }
+    },
+    {
+      "name": "Natcash",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://natcash.natcom.com.ht",
+        "tier": 2,
+        "title": "Natcash Haïti"
+      }
+    },
+    {
+      "name": "Sunrise Airways App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://sunriseairways.net",
+        "tier": 2,
+        "title": "Sunrise Airways"
+      }
+    },
+    {
+      "name": "TapTap Go",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tourisme.gouv.ht",
+        "tier": 1,
+        "title": "Ministère du Tourisme d'Haïti"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 55%), Protestantism (approx. 30%), alongside widely practiced Haitian Vodou heritage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ihsi.gouv.ht",
+          "tier": 1,
+          "title": "Institut Haïtien de Statistique et d'Informatique (IHSI)"
+        }
+      ],
+      "evidence_quote": "Haitian Vodou is an officially recognized national religion syncretized with Roman Catholic saint veneration",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Haitian Kanaval in Jacmel (world-renowned papier-mâché masks), Rara street music parades during Lent, Ancestor Day",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourisme.gouv.ht",
+          "tier": 1,
+          "title": "Ministère du Tourisme d'Haïti"
+        }
+      ],
+      "evidence_quote": "Jacmel Carnival is celebrated for extraordinary giant papier-mâché sculptures and rich Haitian folklore",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Independent travel across Port-au-Prince is strongly discouraged due to armed gang checkpoints and high kidnapping risks. Travel should only be undertaken with vetted armed security details and verified local contacts. French and Haitian Creole (Kreyòl) are official languages.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Travel Advisory"
+        }
+      ],
+      "evidence_quote": "Kidnapping is widespread and targets foreign citizens and locals alike across the metropolitan area",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10-15% is customary in hotels and secure restaurants in Pétion-Ville and Cap-Haïtien.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourisme.gouv.ht",
+          "tier": 1,
+          "title": "Ministère du Tourisme"
+        }
+      ],
+      "evidence_quote": "A 10-15% tip is standard in hospitality establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Citadelle Laferrière Dağ Kalesi ve Sans-Souci Sarayı",
+        "en": "Citadelle Laferrière & Sans-Souci Palace",
+        "de": "Festung Citadelle Laferrière & Schloss Sans-Souci",
+        "ru": "Цитадель Лаферьер и дворец Сан-Суси",
+        "es": "Ciudadela Laferrière y Palacio de Sans-Souci"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/180",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Jacmel Tarihi Kolonyal Sanat Kenti ve Bassin Bleu",
+        "en": "Jacmel Historic Art Town & Bassin Bleu Waterfalls",
+        "de": "Historische Künstlerstadt Jacmel & Bassin Bleu",
+        "ru": "Исторический город Жакмель и водопады Бассен-Блё",
+        "es": "Ciudad Artística de Jacmel y Cascadas Bassin Bleu"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/1947/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Citadelle Laferrière Dağ Kalesi Panoraması (UNESCO)",
+        "license": "CC0",
+        "author": "SPC Gibran Torres, United States Army",
+        "source_url": "/images/countries/ht-480.webp",
+        "attribution_text": "Citadelle Laferrière mountaintop fortress in Haiti. SPC Gibran Torres, US Army / Public Domain.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Citadelle Laferrière Dağ Kalesi Panoraması (UNESCO), Haiti",
+          "en": "Citadelle Laferrière Mountaintop Fortress (UNESCO), Haiti",
+          "de": "Festung Citadelle Laferrière auf dem Berggipfel (UNESCO), Haiti",
+          "ru": "Горная крепость Цитадель Лаферьер (ЮНЕСКО), Гаити",
+          "es": "Fortaleza de la Ciudadela Laferrière en la Montaña (UNESCO), Haití"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "haiti",
+      "en": "haiti",
+      "de": "haiti",
+      "ru": "gaiti",
+      "es": "haiti"
+    },
+    "title": {
+      "tr": "Haiti Vize Rehberi, Güvenlik Durumu, 90 Gün Vizesiz Giriş ve Citadelle | Vizamigo",
+      "en": "Haiti Visa Guide, Level 4 Travel Warning & Citadelle Laferrière | Vizamigo",
+      "de": "Haiti Visum-Leitfaden, Reisewarnung & Citadelle Laferrière | Vizamigo",
+      "ru": "Виза в Гаити, безопасность, 90 дней без визы и Цитадель Лаферьер | Vizamigo",
+      "es": "Guía de Visa de Haití, Alerta de Seguridad Nivel 4 y Ciudadela Laferrière | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Haiti 90 gün vizesiz giriş kuralları, Seviye 4 seyahat uyarısı ve güvenlik riskleri, Tip A/B prizler, Cap-Haïtien ve Citadelle Laferrière rehberi.",
+      "en": "Haiti 90-day visa-free rules, Level 4 Do Not Travel warning details, Type A/B plugs, Cap-Haïtien entry, and Citadelle Laferrière guide.",
+      "de": "Haiti 90 Tage visafreie Einreise, Reisewarnung Stufe 4, Sicherheitslage, Steckdosentyp A/B und Festung Citadelle Laferrière.",
+      "ru": "Правила въезда в Гаити на 90 дней без визы, предупреждение о безопасности уровня 4, розетки Type A/B и крепость Лаферьер.",
+      "es": "Requisitos de entrada sin visa a Haití (90 días), alerta máxima de no viajar, enchufes Tipo A/B y fortaleza de la Ciudadela."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

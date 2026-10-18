@@ -1,0 +1,463 @@
+{
+  "iso2": "GY",
+  "names": {
+    "tr": "Guyana",
+    "en": "Guyana",
+    "de": "Guyana",
+    "ru": "Гайана",
+    "es": "Guyana"
+  },
+  "capital": {
+    "value": "Georgetown",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://mola.gov.gy",
+        "tier": 1,
+        "title": "Mayor and City Council of Georgetown"
+      }
+    ],
+    "evidence_quote": "Georgetown is the capital and chief seaport of the Co-operative Republic of Guyana",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "GYD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bankofguyana.org.gy",
+        "tier": 1,
+        "title": "Bank of Guyana"
+      }
+    ],
+    "evidence_quote": "The Guyanese Dollar (GYD, G$) is the official currency; trades at approx. 209 GYD to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (GYT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://hydromet.gov.gy",
+        "tier": 1,
+        "title": "Hydrometeorological Service Guyana"
+      }
+    ],
+    "evidence_quote": "Guyana operates on Guyana Time UTC-4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V/240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gplinc.com",
+          "tier": 1,
+          "title": "Guyana Power and Light (GPL)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Guyana is 120V/240V dual frequency 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gplinc.com",
+          "tier": 1,
+          "title": "GPL Guyana"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout coastal areas is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "US standard Type A and Type B plugs as well as British Type G rectangular three-pin plugs are used",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanapoliceforce.gy",
+          "tier": 1,
+          "title": "Guyana Police Force (GPF)"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police response throughout Guyana",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "913",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.gy",
+          "tier": 1,
+          "title": "Georgetown Public Hospital Corporation (GPHC) Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 913 for emergency ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "912",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanafireservice.gov.gy",
+          "tier": 1,
+          "title": "Guyana Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 912 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanapoliceforce.gy",
+          "tier": 1,
+          "title": "Guyana Police Force Central Operations"
+        }
+      ],
+      "evidence_quote": "911 is the central emergency operations number in Guyana",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+592 225-6411",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanatourism.com",
+          "tier": 1,
+          "title": "Guyana Tourism Authority (GTA)"
+        }
+      ],
+      "evidence_quote": "Tourism authority headquarters in Georgetown provides visitor assistance at +592 225-6411",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/guyana",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Georgetown merkezinde sokak suçları nedeniyle dikkatli olunmalıdır; Kaieteur Şelalesi ve iç Amazon eko-kampları son derece güvenlidir.",
+      "en": "Exercise increased caution in Georgetown due to street crime; interior rainforest eco-lodges and Kaieteur Falls are peaceful.",
+      "de": "Erhöhte Vorsicht in Georgetown wegen Kriminalität; die Urwald-Lodges und Kaieteur Falls sind sicher.",
+      "ru": "Проявляйте повышенную осторожность в Джорджтауне; эко-лоджи во внутренних районах и водопад Кайетур безопасны.",
+      "es": "Actúe con mayor cautela en Georgetown por robos; los albergues selváticos y las Cataratas Kaieteur son tranquilos."
+    },
+    "regional_warnings": [
+      {
+        "area": "Stabroek Market and Tiger Bay areas in Georgetown",
+        "level": 3,
+        "reason": "crime",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 32.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/guyana",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in coastal Guyana reach approximately 32.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 52.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/guyana",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Georgetown measure 52.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "One Communications (formerly GTT) and Digicel provide 4G mobile data. English is the official language (the only English-speaking country in South America). Flights to Kaieteur Falls depart from Eugene F. Correia International Airport (Ogle).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanatourism.com",
+          "tier": 1,
+          "title": "Guyana Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Guyana is South America's sole official English-speaking territory",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Guyana Tourism App",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://guyanatourism.com",
+        "tier": 1,
+        "title": "Guyana Tourism Authority"
+      }
+    },
+    {
+      "name": "One Communications App",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://onecomm.gy",
+        "tier": 2,
+        "title": "One Communications Guyana"
+      }
+    },
+    {
+      "name": "MMG+ (Mobile Money Guyana)",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://mmg.gy",
+        "tier": 1,
+        "title": "Mobile Money Guyana"
+      }
+    },
+    {
+      "name": "Trans Guyana Airways App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://transguyana.net",
+        "tier": 2,
+        "title": "Trans Guyana Airways"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 64%), Hinduism (approx. 25%), and Islam (approx. 7%) reflecting Indo-Guyanese and Afro-Guyanese harmony",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statisticsguyana.gov.gy",
+          "tier": 1,
+          "title": "Bureau of Statistics Guyana"
+        }
+      ],
+      "evidence_quote": "Guyanese society celebrates Phagwah, Diwali, Eid, and Christian holidays as official national observances",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Mashramani (Republic Day carnival on Feb 23), Phagwah (Holi festival), Rupununi Ranchers Rodeo at Easter in Lethem",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanatourism.com",
+          "tier": 1,
+          "title": "GTA Cultural Festivals"
+        }
+      ],
+      "evidence_quote": "Mashramani celebrates celebration after cooperative work with giant costume bands in Georgetown",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Avoid walking alone at night in central Georgetown; arrange licensed taxis through your hotel. Yellow fever vaccination certificate is required. Flights to remote interior waterfalls operate with strict luggage weight limits (typically 20 lbs per person).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanatourism.com",
+          "tier": 1,
+          "title": "GTA Travel Advisory"
+        }
+      ],
+      "evidence_quote": "Domestic interior flights enforce strict per-passenger luggage limits on small aircraft",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in restaurants in Georgetown. Tipping wilderness safari guides and river boat captains ($10-15 per day) is standard practice.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://guyanatourism.com",
+          "tier": 1,
+          "title": "GTA Travel Guide"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in hospitality and safari expeditions",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kaieteur Şelalesi Dev Tek Kırılmalı Çağlayan",
+        "en": "Kaieteur Falls World's Largest Single Drop Waterfall",
+        "de": "Kaieteur-Wasserfall Größter freifallender Wasserfall",
+        "ru": "Водопад Кайетур",
+        "es": "Cataratas Kaieteur Mayor Caída de Agua Única"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://kaieteurpark.gov.gy",
+          "tier": 1,
+          "title": "Kaieteur National Park Commission"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Rupununi Savanası ve Iwokrama Yağmur Ormanı",
+        "en": "Rupununi Savannah & Iwokrama Rainforest Canopy",
+        "de": "Rupununi-Savanne & Iwokrama-Regenwald",
+        "ru": "Саванна Рупунуни и дождевой лес Ивокрама",
+        "es": "Sabana de Rupununi y Bosque Lluvioso de Iwokrama"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://iwokramacanopywalkway.com",
+          "tier": 1,
+          "title": "Iwokrama International Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kaieteur Şelalesi Potaro Nehri Tek Kırılmalı Dev Çağlayan",
+        "license": "CC-BY-SA",
+        "author": "Bill Cameron",
+        "source_url": "/images/countries/gy-480.webp",
+        "attribution_text": "Kaieteur Falls on the Potaro River in Guyana. Bill Cameron, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Kaieteur Şelalesi Potaro Nehri Tek Kırılmalı Dev Çağlayan, Guyana",
+          "en": "Kaieteur Falls Single Drop Waterfall, Potaro River, Guyana",
+          "de": "Kaieteur-Wasserfall am Potaro-Fluss, Guyana",
+          "ru": "Водопад Кайетур на реке Потаро, Гайана",
+          "es": "Cataratas Kaieteur en el Río Potaro, Guyana"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "guyana",
+      "en": "guyana",
+      "de": "guyana",
+      "ru": "gayana",
+      "es": "guyana"
+    },
+    "title": {
+      "tr": "Guyana Vize Rehberi, 90 Gün Vizesiz Giriş ve Kaieteur Şelalesi | Vizamigo",
+      "en": "Guyana Visa Guide, 90-Day Visa-Free Rules & Kaieteur Falls Travel | Vizamigo",
+      "de": "Guyana Visum-Leitfaden, 90 Tage visafrei & Kaieteur Falls Reisetipps | Vizamigo",
+      "ru": "Виза в Гайану, 90 дней без визы и водопад Кайетур | Vizamigo",
+      "es": "Guía de Visa de Guyana, 90 Días sin Visa y Cataratas Kaieteur | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Guyana Türk pasaportuna 90 gün vizesiz giriş, Güney Amerika'nın tek İngilizce konuşan ülkesi, Tip A/B/G prizler ve Kaieteur Şelalesi gezi rehberi.",
+      "en": "Guyana 90-day visa-free rules, South America's sole English-speaking country, Type A/B/G sockets, and Kaieteur Falls wilderness guide.",
+      "de": "Guyana 90 Tage visafreie Einreise, einziges englischsprachiges Land Südamerikas, Steckdosentyp A/B/G und Kaieteur Falls.",
+      "ru": "Правила въезда в Гайану на 90 дней без визы, единственный англоязычный штат Южной Америки, розетки Type A/B/G и водопад Кайетур.",
+      "es": "Requisitos de entrada sin visa a Guyana (90 días), único país anglófono de Sudamérica, enchufes Tipo A/B/G y cataratas Kaieteur."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

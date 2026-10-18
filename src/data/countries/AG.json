@@ -1,0 +1,451 @@
+{
+  "iso2": "AG",
+  "names": {
+    "tr": "Antigua ve Barbuda",
+    "en": "Antigua and Barbuda",
+    "de": "Antigua und Barbuda",
+    "ru": "Антигуа и Барбуда",
+    "es": "Antigua y Barbuda"
+  },
+  "capital": {
+    "value": "St. John's",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://ab.gov.ag",
+        "tier": 1,
+        "title": "Government of Antigua and Barbuda"
+      }
+    ],
+    "evidence_quote": "St. John's is the capital and chief port of Antigua and Barbuda",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XCD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eccb-centralbank.org",
+        "tier": 1,
+        "title": "Eastern Caribbean Central Bank"
+      }
+    ],
+    "evidence_quote": "The Eastern Caribbean Dollar (XCD) is pegged to the USD at 2.70 XCD to 1 USD; USD is accepted everywhere",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://antiguamet.com",
+        "tier": 1,
+        "title": "Antigua and Barbuda Meteorological Services"
+      }
+    ],
+    "evidence_quote": "Antigua and Barbuda operates on Atlantic Standard Time UTC-4 year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://apua.ag",
+          "tier": 1,
+          "title": "Antigua Public Utilities Authority (APUA)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage is 230V 60 Hz across Antigua and Barbuda",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://apua.ag",
+          "tier": 1,
+          "title": "APUA Electricity Division"
+        }
+      ],
+      "evidence_quote": "The alternating frequency of the electrical grid is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Sockets generally accommodate North American Type A and Type B plugs (with some Type G in resorts)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ab.gov.ag",
+          "tier": 1,
+          "title": "Royal Police Force of Antigua and Barbuda"
+        }
+      ],
+      "evidence_quote": "Dial 911 or 999 for emergency police assistance throughout Antigua and Barbuda",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ab.gov.ag",
+          "tier": 1,
+          "title": "Mount St. John's Medical Centre Ambulance"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance dispatch is coordinated via 911 or +1 268 484-2700",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ab.gov.ag",
+          "tier": 1,
+          "title": "Antigua and Barbuda Fire Department"
+        }
+      ],
+      "evidence_quote": "Dial 911 or 462-0044 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ab.gov.ag",
+          "tier": 1,
+          "title": "Emergency Dispatch Antigua"
+        }
+      ],
+      "evidence_quote": "911 is the central emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 268 462-0125",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitantiguabarbuda.com",
+          "tier": 1,
+          "title": "Antigua and Barbuda Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Tourism security liaison division operates at St. John's: +1 268 462-0125",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/antigua-and-barbuda",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Antigua ve Barbuda son derece huzurlu bir Karayip tatil cennetidir; standart seyahat önlemleri yeterlidir.",
+      "en": "Antigua and Barbuda is a peaceful Caribbean destination; exercise normal travel precautions.",
+      "de": "Antigua und Barbuda ist ein sehr friedliches Reiseziel; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Антигуа и Барбуда — спокойный карибский курорт; действуют обычные меры предосторожности.",
+      "es": "Antigua y Barbuda es un destino caribeño sumamente pacífico; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 36.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/antigua-and-barbuda",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Antigua reach approximately 36.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 68.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/antigua-and-barbuda",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 68.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel and Flow offer 4G tourist SIMs at V.C. Bird International Airport (ANU). Arriving passengers must submit the online immigration/customs declaration form prior to arrival. 365 beaches line Antigua's coastline.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ab.gov.ag",
+          "tier": 1,
+          "title": "Antigua Department of Immigration"
+        }
+      ],
+      "evidence_quote": "Digital entry forms should be completed prior to boarding flights to Antigua",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Antigua Barbuda Tourism App",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://visitantiguabarbuda.com",
+        "tier": 1,
+        "title": "Antigua and Barbuda Tourism Authority"
+      }
+    },
+    {
+      "name": "APUA Telecom App",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://apua.ag",
+        "tier": 1,
+        "title": "APUA Telecom"
+      }
+    },
+    {
+      "name": "Island Eats Antigua",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://islandeats.ag",
+        "tier": 2,
+        "title": "Island Eats Delivery"
+      }
+    },
+    {
+      "name": "Antigua Taxi Association",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ab.gov.ag",
+        "tier": 1,
+        "title": "Ministry of Tourism and Transport"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 77%, predominantly Anglican, Seventh-day Adventist, Pentecostal, and Moravian)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statistics.gov.ag",
+          "tier": 1,
+          "title": "Statistics Division of Antigua and Barbuda"
+        }
+      ],
+      "evidence_quote": "Christian traditions are deeply embedded in national holidays and church community life",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Antigua Carnival (celebrating emancipation in late July/early August), Antigua Sailing Week (world-class regatta)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitantiguabarbuda.com",
+          "tier": 1,
+          "title": "ABTA Cultural Festivals"
+        }
+      ],
+      "evidence_quote": "Antigua Sailing Week in April and the 10-day summer Carnival are headline international spectacles",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage patterns or military-style clothing is strictly illegal for civilians and tourists under national law. Topless sunbathing and nudism are prohibited on public beaches. US dollars are accepted everywhere alongside EC dollars.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ab.gov.ag",
+          "tier": 1,
+          "title": "Royal Police Force of Antigua and Barbuda Notice"
+        }
+      ],
+      "evidence_quote": "It is an offence for any unauthorized person to wear clothing made of camouflage material",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10-15% is customary in restaurants when service charge is not included. Tipping baggage handlers ($1-2 per bag) and tour guides is standard practice.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitantiguabarbuda.com",
+          "tier": 1,
+          "title": "ABTA Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10-15% tip is customary in dining establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Nelson Tersanesi Tarihi Limanı",
+        "en": "Nelson's Dockyard Historic Harbour",
+        "de": "Historischer Hafen Nelson's Dockyard",
+        "ru": "Историческая верфь Нельсона",
+        "es": "Astillero Histórico de Nelson"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1499",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Shirley Heights Seyir Noktası ve Barbuda Fırkateyn Kuşu Barınağı",
+        "en": "Shirley Heights & Barbuda Frigate Bird Sanctuary",
+        "de": "Aussichtspunkt Shirley Heights & Fregattvogel-Reservat",
+        "ru": "Смотровая площадка Ширли-Хайтс и заповедник птиц",
+        "es": "Mirador de Shirley Heights y Santuario de Aves de Barbuda"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://visitantiguabarbuda.com",
+          "tier": 1,
+          "title": "Antigua and Barbuda Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Nelson Tersanesi Tarihi Limanı, English Harbour (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Kognos",
+        "source_url": "/images/countries/ag-480.webp",
+        "attribution_text": "Nelson's Dockyard in English Harbour, Antigua. Kognos, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Nelson Tersanesi Tarihi Limanı, English Harbour (UNESCO), Antigua ve Barbuda",
+          "en": "Nelson's Dockyard Historic Harbour, English Harbour (UNESCO), Antigua and Barbuda",
+          "de": "Historischer Hafen Nelson's Dockyard (UNESCO), Antigua und Barbuda",
+          "ru": "Историческая верфь Нельсона в Инглиш-Харбор (ЮНЕСКО), Антигуа и Барбуда",
+          "es": "Astillero Histórico de Nelson en English Harbour (UNESCO), Antigua y Barbuda"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "antigua-ve-barbuda",
+      "en": "antigua-and-barbuda",
+      "de": "antigua-und-barbuda",
+      "ru": "antigua-i-barbuda",
+      "es": "antigua-y-barbuda"
+    },
+    "title": {
+      "tr": "Antigua ve Barbuda Vize Rehberi, 30 Gün Vizesiz Giriş ve Nelson Tersanesi | Vizamigo",
+      "en": "Antigua and Barbuda Visa Guide, 30-Day Visa-Free Rules & Travel | Vizamigo",
+      "de": "Antigua und Barbuda Visum-Leitfaden, 30 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Антигуа и Барбуду, 30 дней без визы и верфь Нельсона | Vizamigo",
+      "es": "Guía de Visa de Antigua y Barbuda, 30 Días sin Visa y Astillero de Nelson | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Antigua ve Barbuda Türk pasaportuna 30 gün vizesiz giriş, sıkı kamuflaj giysi yasağı, Tip A/B prizler, Doğu Karayip Doları ve Nelson Tersanesi rehberi.",
+      "en": "Antigua and Barbuda 30-day visa-free rules, military camouflage ban, Type A/B sockets, XCD currency, and Nelson's Dockyard guide.",
+      "de": "Antigua und Barbuda 30 Tage visafreie Einreise, Camouflage-Verbot, Steckdosentyp A/B, XCD-Währung und Nelson's Dockyard.",
+      "ru": "Правила въезда в Антигуа и Барбуду на 30 дней без визы, запрет камуфляжа, розетки Type A/B и верфь Нельсона.",
+      "es": "Requisitos de entrada sin visa a Antigua y Barbuda (30 días), prohibición de ropa de camuflaje y astillero de Nelson."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

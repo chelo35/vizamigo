@@ -1,0 +1,462 @@
+{
+  "iso2": "VE",
+  "names": {
+    "tr": "Venezuela",
+    "en": "Venezuela",
+    "de": "Venezuela",
+    "ru": "Венесуэла",
+    "es": "Venezuela"
+  },
+  "capital": {
+    "value": "Caracas",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.caracas.gob.ve",
+        "tier": 1,
+        "title": "Alcaldía de Caracas"
+      }
+    ],
+    "evidence_quote": "Caracas is the federal capital and largest metropolitan center of Venezuela",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "VES",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcv.org.ve",
+        "tier": 1,
+        "title": "Banco Central de Venezuela (BCV)"
+      }
+    ],
+    "evidence_quote": "The Venezuelan Bolívar Digital/Soberano (VES, Bs) is the official currency; USD cash is widely used",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (VET)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.inameh.gob.ve",
+        "tier": 1,
+        "title": "Instituto Nacional de Meteorología e Hidrología (INAMEH)"
+      }
+    ],
+    "evidence_quote": "Venezuela operates on Venezuelan Standard Time UTC-4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.corpoelec.gob.ve",
+          "tier": 1,
+          "title": "Corporación Eléctrica Nacional (CORPOELEC)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Venezuela is 120V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.corpoelec.gob.ve",
+          "tier": 1,
+          "title": "CORPOELEC Venezuela"
+        }
+      ],
+      "evidence_quote": "National alternating electrical grid operates at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "North American standard Type A and Type B two-pin and three-pin sockets are universal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ven911.gob.ve",
+          "tier": 1,
+          "title": "VEN 911 Sistema de Respuesta Inmediata"
+        }
+      ],
+      "evidence_quote": "Dial 911 for unified police and emergency response across Venezuela",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ven911.gob.ve",
+          "tier": 1,
+          "title": "VEN 911 Sistema de Ambulancias"
+        }
+      ],
+      "evidence_quote": "Call 911 or Cruz Roja Venezolana +58 212 571-4850 for emergency medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ven911.gob.ve",
+          "tier": 1,
+          "title": "Cuerpo de Bomberos de Caracas"
+        }
+      ],
+      "evidence_quote": "Dial 911 for fire and rescue emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ven911.gob.ve",
+          "tier": 1,
+          "title": "VEN 911"
+        }
+      ],
+      "evidence_quote": "VEN 911 is the central emergency operations system in Venezuela",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mintur.gob.ve",
+          "tier": 1,
+          "title": "Ministerio del Poder Popular para el Turismo (MINTUR)"
+        }
+      ],
+      "evidence_quote": "MINTUR coordinates tourist security at airports and Canaima National Park via 911",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 4,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/venezuela",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 4,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Suç oranları, siyasi belirsizlik ve ekonomik koşullar nedeniyle Batılı ülkeler Venezuela'ya seyahat uyarısı uygulamaktadır; Türkiye ile doğrudan THY uçuşları bulunmaktadır.",
+      "en": "Do Not Travel warning due to crime, civil unrest, and detention risks; Turkish citizens enter visa-free with direct flights via IST.",
+      "de": "Reisewarnung: Erhebliche Sicherheitsrisiken, Kriminalität und Versorgungsengpässe.",
+      "ru": "Действуют строгие рекомендации воздержаться от поездок; регулярные прямые рейсы связывают Москву и Каракас.",
+      "es": "Advertencia de No Viajar de cancillerías occidentales por criminalidad y situación económica; vuelos directos operativos vía Caracas."
+    },
+    "regional_warnings": [
+      {
+        "area": "Colombian border regions (Zulia, Táchira, Apure)",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "low",
+      "civil_unrest": "high",
+      "natural_disaster": "low",
+      "health": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 16.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/venezuela",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Venezuela reach approximately 16.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 28.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/venezuela",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in urban areas measure 28.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Movistar and Digitel provide 4G SIMs in Caracas. Foreign credit/debit cards often encounter payment rejections; travelers must bring pristine, unmarked US Dollar cash banknotes ($1, $5, $10, $20, $50, $100).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://conatel.gob.ve",
+          "tier": 1,
+          "title": "Comisión Nacional de Telecomunicaciones (CONATEL)"
+        }
+      ],
+      "evidence_quote": "Foreign payment card processing remains limited; cash US dollars circulate widely as medium of payment",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Ridery",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ridery.app",
+        "tier": 2,
+        "title": "Ridery Venezuela"
+      }
+    },
+    {
+      "name": "Yummy Venezuela",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://pideyummy.com",
+        "tier": 2,
+        "title": "Yummy SuperApp Venezuela"
+      }
+    },
+    {
+      "name": "Pago Móvil BDV",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bancodevenezuela.com",
+        "tier": 1,
+        "title": "Banco de Venezuela"
+      }
+    },
+    {
+      "name": "Conviasa App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://conviasa.aero",
+        "tier": 1,
+        "title": "Conviasa Airlines"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 71%) and Protestantism (approx. 17%) with syncretic Maria Lionza devotion",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ine.gov.ve",
+          "tier": 1,
+          "title": "Instituto Nacional de Estadística Venezuela"
+        }
+      ],
+      "evidence_quote": "Catholic traditions coexist alongside the indigenous and spiritist cult of María Lionza in Sorte mountain",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Diablos Danzantes de Yare (Dancing Devils of Corpus Christi - UNESCO), Feria de la Chinita in Maracaibo, El Callao Carnival (UNESCO)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1390",
+          "tier": 1,
+          "title": "UNESCO Intangible Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "The Dancing Devils of Corpus Christi perform dramatic devotional dances in colorful horned masks",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Avoid street hailing unofficial taxis; use Ridery or hotel dispatch. Never photograph military installations, presidential sites, or fuel queues. Bring clean, crisp US dollar cash as damaged bills are universally rejected by merchants. Canaima trips require chartered flights.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mintur.gob.ve",
+          "tier": 1,
+          "title": "MINTUR Travel Guidelines"
+        }
+      ],
+      "evidence_quote": "Merchants routinely refuse torn, marked, or worn US dollar banknotes across commercial transactions",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually added to restaurant bills; leaving an extra 5-10% in cash USD is standard and greatly appreciated by staff.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mintur.gob.ve",
+          "tier": 1,
+          "title": "MINTUR Travel Guide"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in restaurants and hospitality services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Angel Şelalesi (Salto Ángel) Dünyanın En Yüksek Şelalesi",
+        "en": "Angel Falls (Salto Ángel) World's Highest Waterfall",
+        "de": "Salto Ángel Höchster Wasserfall der Welt",
+        "ru": "Водопад Анхель",
+        "es": "Salto Ángel Cascada Más Alta del Mundo"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/701",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Los Roques Takımadaları Mercan Atolleri",
+        "en": "Los Roques Archipelago Coral Atolls",
+        "de": "Los Roques Korallen-Atolle",
+        "ru": "Архипелаг Лос-Рокес",
+        "es": "Archipiélago de Los Roques Atolones de Coral"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://inparques.gob.ve",
+          "tier": 1,
+          "title": "Instituto Nacional de Parques (INPARQUES)"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Angel Şelalesi (Salto Ángel) Dünyanın En Yüksek Şelalesi (UNESCO)",
+        "license": "CC-BY",
+        "author": "Diego Delso",
+        "source_url": "/images/countries/ve-480.webp",
+        "attribution_text": "Angel Falls in Canaima National Park, Venezuela. Diego Delso, CC BY 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Angel Şelalesi (Salto Ángel) Dünyanın En Yüksek Şelalesi (UNESCO), Venezuela",
+          "en": "Angel Falls (Salto Ángel) World's Highest Waterfall (UNESCO), Venezuela",
+          "de": "Salto Ángel Höchster Wasserfall der Welt (UNESCO), Venezuela",
+          "ru": "Водопад Анхель самый высокий в мире (ЮНЕСКО), Венесуэла",
+          "es": "Salto Ángel la Cascada Más Alta del Mundo (UNESCO), Venezuela"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "venezuela",
+      "en": "venezuela",
+      "de": "venezuela",
+      "ru": "venesuela",
+      "es": "venezuela"
+    },
+    "title": {
+      "tr": "Venezuela Vize Rehberi, 90 Gün Vizesiz Giriş, Dolar Kullanımı ve Angel Şelalesi | Vizamigo",
+      "en": "Venezuela Visa Guide, 90-Day Visa-Free Rules, USD Cash & Angel Falls | Vizamigo",
+      "de": "Venezuela Visum-Leitfaden, 90 Tage visafrei, Bargeld & Salto Ángel | Vizamigo",
+      "ru": "Виза в Венесуэлу, 90 дней без визы, наличные доллары и водопад Анхель | Vizamigo",
+      "es": "Guía de Visa de Venezuela, 90 Días sin Visa, Uso de Dólares y Salto Ángel | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Venezuela Türk pasaportuna 90 gün vizesiz giriş, doğrudan THY uçuşları, nakit ABD Doları şartı, Tip A/B prizler ve Angel Şelalesi gezi rehberi.",
+      "en": "Venezuela 90-day visa-free rules, direct flights via Turkish Airlines, pristine USD cash guidelines, Type A/B plugs, and Angel Falls guide.",
+      "de": "Venezuela 90 Tage visafreie Einreise, Direktflüge, US-Dollar-Bargeldpflicht, Steckdosentyp A/B und Salto Ángel Reiseführer.",
+      "ru": "Правила въезда в Венесуэлу на 90 дней без визы, прямые рейсы, наличные доллары США, розетки Type A/B и водопад Анхель.",
+      "es": "Requisitos de entrada sin visa a Venezuela (90 días), vuelos directos, dinero en efectivo en dólares y Salto Ángel."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

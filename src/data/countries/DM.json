@@ -1,0 +1,451 @@
+{
+  "iso2": "DM",
+  "names": {
+    "tr": "Dominika",
+    "en": "Dominica",
+    "de": "Dominica",
+    "ru": "Доминика",
+    "es": "Dominica"
+  },
+  "capital": {
+    "value": "Roseau",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://dominica.gov.dm",
+        "tier": 1,
+        "title": "Government of the Commonwealth of Dominica"
+      }
+    ],
+    "evidence_quote": "Roseau is the capital and largest urban settlement of the Commonwealth of Dominica",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XCD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eccb-centralbank.org",
+        "tier": 1,
+        "title": "Eastern Caribbean Central Bank"
+      }
+    ],
+    "evidence_quote": "The Eastern Caribbean Dollar (XCD) is pegged to the USD at 2.70 XCD to 1 USD; USD is widely accepted",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://weather.gov.dm",
+        "tier": 1,
+        "title": "Dominica Meteorological Service"
+      }
+    ],
+    "evidence_quote": "Dominica operates year-round on Atlantic Standard Time UTC-4 with no seasonal clock changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://domlec.dm",
+          "tier": 1,
+          "title": "Dominica Electricity Services Limited (DOMLEC)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across the Commonwealth is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://domlec.dm",
+          "tier": 1,
+          "title": "DOMLEC"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "British standard Type G three-rectangular-pin plugs and older British Type D three-round-pin plugs are used",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.dm",
+          "tier": 1,
+          "title": "Commonwealth of Dominica Police Force (CDPF)"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency police assistance throughout Dominica",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dominica.gov.dm",
+          "tier": 1,
+          "title": "Dominica China Friendship Hospital Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 999 for emergency medical dispatch and hospital ambulance services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dominica.gov.dm",
+          "tier": 1,
+          "title": "Dominica Fire and Ambulance Services"
+        }
+      ],
+      "evidence_quote": "Dial 999 for fire and rescue emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dominica.gov.dm",
+          "tier": 1,
+          "title": "Office of Disaster Management (ODM) Dominica"
+        }
+      ],
+      "evidence_quote": "999 coordinates unified emergency dispatch across the island",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 767 448-2222",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoverdominica.com",
+          "tier": 1,
+          "title": "Discover Dominica Authority (DDA)"
+        }
+      ],
+      "evidence_quote": "Police headquarters in Roseau coordinates visitor safety at +1 767 448-2222",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/dominica",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Dominika 'Doğa Adası' olarak bilinen son derece huzurlu bir eko-turizm cennetidir; standart seyahat önlemleri yeterlidir.",
+      "en": "Dominica, the 'Nature Island', is an exceptionally peaceful eco-tourism sanctuary; exercise normal precautions.",
+      "de": "Dominica ist als Naturinsel ein überaus friedliches Ökotourismus-Paradies; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Доминика — исключительно спокойный и живописный зелёный остров; действуют обычные правила.",
+      "es": "Dominica, la 'Isla de la Naturaleza', es un santuario ecoturístico sumamente pacífico; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 34.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/dominica",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Dominica reach approximately 34.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 60.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/dominica",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 60.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Flow and Digicel offer 4G tourist SIMs at Douglas-Charles Airport (DOM) in the northeast. Dominica is home to the Waitukubuli National Trail, the Caribbean's first long-distance hiking trail spanning 115 miles.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoverdominica.com",
+          "tier": 1,
+          "title": "Discover Dominica Authority"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid passport identification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Discover Dominica App",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://discoverdominica.com",
+        "tier": 1,
+        "title": "Discover Dominica Authority"
+      }
+    },
+    {
+      "name": "Waitukubuli Trail Guide",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://forestry.gov.dm",
+        "tier": 1,
+        "title": "Forestry, Wildlife & Parks Division Dominica"
+      }
+    },
+    {
+      "name": "L'Express des Îles",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://express-des-iles.fr",
+        "tier": 2,
+        "title": "L'Express des Îles Ferry"
+      }
+    },
+    {
+      "name": "Nature Island Taxi Association",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://discoverdominica.com",
+        "tier": 1,
+        "title": "DDA Transport"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 80%, predominantly Roman Catholic approx. 61%, Seventh-day Adventist, and Pentecostal)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stats.gov.dm",
+          "tier": 1,
+          "title": "Central Statistics Office of Dominica"
+        }
+      ],
+      "evidence_quote": "Catholicism and Protestantism represent the spiritual core of Dominican village life",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "World Creole Music Festival (late October), Mas Domnik (Real Mas Carnival), Independence Day Cultural Competitions (Nov 3)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoverdominica.com",
+          "tier": 1,
+          "title": "Discover Dominica Authority Events"
+        }
+      ],
+      "evidence_quote": "The World Creole Music Festival celebrates indigenous musical genres including Cadence-lypso and Bouyon",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage patterns or military-style gear is strictly illegal for civilians and tourists. Removing plants, boiling lake sulphur rocks, or wildlife from national parks is prohibited. Kalinago Territory in the east is home to the Caribbean's only indigenous Carib reservation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.dm",
+          "tier": 1,
+          "title": "CDPF Law Bulletin"
+        }
+      ],
+      "evidence_quote": "Wearing camouflage clothing is strictly prohibited under Dominican national security legislation",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually included in hotel and restaurant bills; an additional 5-10% tip for helpful nature guides and servers is customary.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://discoverdominica.com",
+          "tier": 1,
+          "title": "DDA Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10% service charge is standard in hospitality invoices",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Trafalgar Şelaleleri ve Yağmur Ormanı Kanyonu",
+        "en": "Trafalgar Falls & Rainforest Gorges",
+        "de": "Trafalgar-Wasserfälle & Regenwald-Schluchten",
+        "ru": "Водопады Трафальгар и каньоны дождевого леса",
+        "es": "Cascadas de Trafalgar y Cañones de Selva Tropical"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://discoverdominica.com",
+          "tier": 1,
+          "title": "Discover Dominica Authority"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Morne Trois Pitons Ulusal Parkı ve Kaynayan Göl",
+        "en": "Morne Trois Pitons National Park & Boiling Lake",
+        "de": "Morne Trois Pitons Nationalpark & Boiling Lake",
+        "ru": "Национальный парк Морн-Труа-Питон и Кипящее озеро",
+        "es": "Parque Nacional Morne Trois Pitons y Lago Hirviente"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/814",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Trafalgar Şelaleleri ve Yağmur Ormanı Kanyonu",
+        "license": "CC-BY-SA",
+        "author": "Hans Hillewaert",
+        "source_url": "/images/countries/dm-480.webp",
+        "attribution_text": "Trafalgar Falls in Dominica. Hans Hillewaert, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Trafalgar Şelaleleri ve Yağmur Ormanı Kanyonu, Dominika",
+          "en": "Trafalgar Falls & Rainforest Gorges, Dominica",
+          "de": "Trafalgar-Wasserfälle und Regenwaldschlucht, Dominica",
+          "ru": "Водопады Трафальгар и ущелье дождевого леса, Доминика",
+          "es": "Cascadas de Trafalgar y Cañón de Selva Tropical, Dominica"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "dominika",
+      "en": "dominica",
+      "de": "dominica",
+      "ru": "dominika",
+      "es": "dominica"
+    },
+    "title": {
+      "tr": "Dominika Vize Rehberi, 21 Gün Vizesiz Giriş, Doğa Adası ve Trafalgar | Vizamigo",
+      "en": "Dominica Visa Guide, 21-Day Visa-Free Rules, Nature Island & Falls | Vizamigo",
+      "de": "Dominica Visum-Leitfaden, 21 Tage visafrei & Trafalgar Falls | Vizamigo",
+      "ru": "Виза в Доминику, 21 день без визы, водопады Трафальгар и экотуризм | Vizamigo",
+      "es": "Guía de Visa de Dominica, 21 Días sin Visa y Cascadas de Trafalgar | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Dominika Türk pasaportuna 21 gün vizesiz giriş, kamuflaj giysisi yasağı, Tip D/G prizler, Doğu Karayip Doları ve Trafalgar Şelaleleri gezi rehberi.",
+      "en": "Dominica 21-day visa-free rules, military camouflage clothing ban, Type D/G sockets, XCD currency, and Trafalgar Falls hiking guide.",
+      "de": "Dominica 21 Tage visafreie Einreise, Camouflage-Verbot, Steckdosentyp D/G, XCD-Währung und Reiseführer Trafalgar-Wasserfälle.",
+      "ru": "Правила въезда в Доминику на 21 день без визы, запрет камуфляжа, розетки Type D/G, водопады Трафальгар и пешие тропы.",
+      "es": "Requisitos de entrada sin visa a Dominica (21 días), prohibición de ropa de camuflaje, enchufes Tipo D/G y cascadas de Trafalgar."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

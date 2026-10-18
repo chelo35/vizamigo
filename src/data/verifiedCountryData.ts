@@ -126,6 +126,15 @@ import BZ from './countries/BZ.json';
 import BB from './countries/BB.json';
 import TT from './countries/TT.json';
 import LC from './countries/LC.json';
+import AG from './countries/AG.json';
+import GD from './countries/GD.json';
+import VC from './countries/VC.json';
+import KN from './countries/KN.json';
+import DM from './countries/DM.json';
+import SR from './countries/SR.json';
+import GY from './countries/GY.json';
+import HT from './countries/HT.json';
+import VE from './countries/VE.json';
 
 export interface VerifiedSource {
   url: string;
@@ -386,6 +395,15 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   BB: BB as unknown as VerifiedCountryRecord,
   TT: TT as unknown as VerifiedCountryRecord,
   LC: LC as unknown as VerifiedCountryRecord,
+  AG: AG as unknown as VerifiedCountryRecord,
+  GD: GD as unknown as VerifiedCountryRecord,
+  VC: VC as unknown as VerifiedCountryRecord,
+  KN: KN as unknown as VerifiedCountryRecord,
+  DM: DM as unknown as VerifiedCountryRecord,
+  SR: SR as unknown as VerifiedCountryRecord,
+  GY: GY as unknown as VerifiedCountryRecord,
+  HT: HT as unknown as VerifiedCountryRecord,
+  VE: VE as unknown as VerifiedCountryRecord,
 };
 
 /**

@@ -1,0 +1,451 @@
+{
+  "iso2": "SR",
+  "names": {
+    "tr": "Surinam",
+    "en": "Suriname",
+    "de": "Suriname",
+    "ru": "Суринам",
+    "es": "Surinam"
+  },
+  "capital": {
+    "value": "Paramaribo",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.sr",
+        "tier": 1,
+        "title": "Regering van de Republiek Suriname"
+      }
+    ],
+    "evidence_quote": "Paramaribo is the capital and largest city of the Republic of Suriname",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "SRD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbvs.sr",
+        "tier": 1,
+        "title": "Centrale Bank van Suriname"
+      }
+    ],
+    "evidence_quote": "The Surinamese Dollar (SRD) is the official currency of the Republic of Suriname",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-3 (SRT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.sr",
+        "tier": 1,
+        "title": "Meteorologische Dienst Suriname"
+      }
+    ],
+    "evidence_quote": "Suriname Time operates year-round on UTC-3 without daylight saving time adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "127V/220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ebs.sr",
+          "tier": 1,
+          "title": "N.V. Energiebedrijven Suriname (EBS)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage is 127V/220V dual voltage 60 Hz across Paramaribo",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ebs.sr",
+          "tier": 1,
+          "title": "EBS Suriname"
+        }
+      ],
+      "evidence_quote": "The operating frequency of the electrical power grid is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European standard Type C round two-pin and Schuko Type F sockets are standard across Suriname",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://politie.sr",
+          "tier": 1,
+          "title": "Korps Politie Suriname (KPS)"
+        }
+      ],
+      "evidence_quote": "Dial 115 for emergency police assistance throughout Suriname",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.sr",
+          "tier": 1,
+          "title": "Academisch Ziekenhuis Paramaribo (AZP) Spoedeisende Hulp"
+        }
+      ],
+      "evidence_quote": "Call 112 or 113 for AZP emergency ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.sr",
+          "tier": 1,
+          "title": "Korps Brandweer Suriname (KBS)"
+        }
+      ],
+      "evidence_quote": "Dial 110 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://politie.sr",
+          "tier": 1,
+          "title": "Korps Politie Suriname"
+        }
+      ],
+      "evidence_quote": "115 coordinates central emergency dispatch in Suriname",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+597 404022",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://surinametourism.sr",
+          "tier": 1,
+          "title": "Suriname Tourism Foundation"
+        }
+      ],
+      "evidence_quote": "Police headquarters in Paramaribo handles tourist safety inquiries at +597 404022",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/suriname",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Surinam genel olarak huzurludur; Paramaribo'da gece saatlerinde standart dikkat, yağmur ormanı turlarında ise lisanslı rehberler önerilir.",
+      "en": "Suriname is generally peaceful; exercise normal precautions, and hire licensed guides for Amazon interior tours.",
+      "de": "Suriname ist weitgehend friedlich; normale Vorsichtsmaßnahmen, für Dschungeltouren lizenzierte Führer nutzen.",
+      "ru": "Суринам в целом безопасен; соблюдайте стандартные правила и нанимайте лицензированных гидов в джунгли.",
+      "es": "Surinam es generalmente tranquilo; aplican precauciones normales y guías autorizados en la selva."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 28.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/suriname",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Suriname reach approximately 28.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 45.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/suriname",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 45.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Telesur and Digicel provide 4G SIMs at Johan Adolf Pengel International Airport (PBM). All tourists must pay the mandatory online Entry Fee ($25/€25) at suriname.vfsevisa.com before boarding flights.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://suriname.vfsevisa.com",
+          "tier": 1,
+          "title": "Suriname VFS E-Visa and Entry Fee Portal"
+        }
+      ],
+      "evidence_quote": "Tourists must obtain the official digital Entry Fee voucher prior to traveling to Suriname",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Suriname Tourism App",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://surinametourism.sr",
+        "tier": 1,
+        "title": "Suriname Tourism Foundation"
+      }
+    },
+    {
+      "name": "Telesur App",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://telesur.sr",
+        "tier": 1,
+        "title": "Telesur"
+      }
+    },
+    {
+      "name": "Uni5Pay+",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://uni5pay.sr",
+        "tier": 2,
+        "title": "Uni5Pay Suriname"
+      }
+    },
+    {
+      "name": "Tourtonne Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://gov.sr",
+        "tier": 1,
+        "title": "Ministry of Transport, Communication and Tourism"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 48%), Hinduism (approx. 22%), and Islam (approx. 14%) reflecting Afro-Surinamese, Hindustani, and Javanese pluralism",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statistics-suriname.org",
+          "tier": 1,
+          "title": "Algemeen Bureau voor de Statistiek (ABS) Suriname"
+        }
+      ],
+      "evidence_quote": "Suriname is famously celebrated for having a synagogue and a mosque standing side-by-side on Keizerstraat in Paramaribo",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Phagwa (Holi festival celebrated by all ethnicities), Keti Koti (Emancipation Day on July 1), Surifest Owru Yari (New Year's Eve street party)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://surinametourism.sr",
+          "tier": 1,
+          "title": "Suriname Tourism Festivals"
+        }
+      ],
+      "evidence_quote": "Owru Yari street celebrations and Pagara fireworks explosions on Dec 31 draw international revelers",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Dutch is the official administrative language; Sranan Tongo is spoken universally as a lingua franca. Yellow fever vaccination is mandatory if arriving from endemic countries. Do not photograph military buildings or river border posts.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.sr",
+          "tier": 1,
+          "title": "Ministerie van Buitenlandse Zaken Suriname"
+        }
+      ],
+      "evidence_quote": "Proof of yellow fever vaccination is required for entry into Suriname under health ministry protocols",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in sit-down restaurants in Paramaribo. Rounding up taxi fares to the nearest 10-20 SRD is standard practice.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://surinametourism.sr",
+          "tier": 1,
+          "title": "Suriname Tourism Guide"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in restaurants and hospitality services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Paramaribo Tarihi Ahşap Kolonyal Şehir Merkezi",
+        "en": "Historic Inner City of Paramaribo",
+        "de": "Historische Innenstadt von Paramaribo",
+        "ru": "Исторический деревянный центр Парамарибо",
+        "es": "Centro Histórico de Madera de Paramaribo"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/940",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Merkezi Surinam Doğa Koruma Alanı",
+        "en": "Central Suriname Nature Reserve",
+        "de": "Zentral-Suriname-Naturschutzgebiet",
+        "ru": "Природоохранная территория Центрального Суринама",
+        "es": "Reserva Natural de Surinam Central"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1017",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Paramaribo Tarihi Ahşap Kolonyal Şehir Merkezi (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Ron Van Oers",
+        "source_url": "/images/countries/sr-480.webp",
+        "attribution_text": "Historic Inner City of Paramaribo in Suriname. Ron Van Oers, CC BY-SA 3.0 igo.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Paramaribo Tarihi Ahşap Kolonyal Şehir Merkezi (UNESCO), Surinam",
+          "en": "Historic Inner City of Paramaribo (UNESCO), Suriname",
+          "de": "Historische Holz-Altstadt von Paramaribo (UNESCO), Suriname",
+          "ru": "Исторический деревянный колониальный центр Парамарибо (ЮНЕСКО), Суринам",
+          "es": "Centro Histórico Colonial de Madera de Paramaribo (UNESCO), Surinam"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "surinam",
+      "en": "suriname",
+      "de": "suriname",
+      "ru": "surinam",
+      "es": "surinam"
+    },
+    "title": {
+      "tr": "Surinam Vize Rehberi, Giriş Ücreti (Entry Fee) ve Paramaribo | Vizamigo",
+      "en": "Suriname Visa Guide, Online Entry Fee Rules & Paramaribo Travel | Vizamigo",
+      "de": "Suriname Visum-Leitfaden, Online-Entry Fee & Reisetipps | Vizamigo",
+      "ru": "Виза в Суринам, сбор Entry Fee, правила въезда и Парамарибо | Vizamigo",
+      "es": "Guía de Visa de Surinam, Tarifa de Entrada (Entry Fee) y Paramaribo | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Surinam Türk pasaportuna online 25$ Giriş Ücreti (Entry Fee), Hollanda kolonyal ahşap mimarisi, Tip C/F prizler ve Paramaribo gezi rehberi.",
+      "en": "Suriname 25$ online Entry Fee rules, Dutch colonial wooden architecture, Type C/F sockets, and Paramaribo UNESCO travel guide.",
+      "de": "Suriname 25$ Online-Entry-Fee-Regeln, niederländische Kolonialholzarchitektur, Steckdosentyp C/F und Paramaribo.",
+      "ru": "Правила въезда в Суринам с онлайн-сбором $25, деревянная голландская архитектура, розетки Type C/F и Парамарибо.",
+      "es": "Requisitos de entrada a Surinam con tasa digital de $25, arquitectura colonial de madera, enchufes Tipo C/F y Paramaribo."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

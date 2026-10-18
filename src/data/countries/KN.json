@@ -1,0 +1,452 @@
+{
+  "iso2": "KN",
+  "names": {
+    "tr": "Saint Kitts ve Nevis",
+    "en": "Saint Kitts and Nevis",
+    "de": "St. Kitts und Nevis",
+    "ru": "Сент-Китс и Невис",
+    "es": "San Cristóbal y Nieves"
+  },
+  "capital": {
+    "value": "Basseterre",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.kn",
+        "tier": 1,
+        "title": "Government of Saint Kitts and Nevis"
+      }
+    ],
+    "evidence_quote": "Basseterre is the capital and administrative center of the Federation of Saint Kitts and Nevis",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "XCD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.eccb-centralbank.org",
+        "tier": 1,
+        "title": "Eastern Caribbean Central Bank"
+      }
+    ],
+    "evidence_quote": "The Eastern Caribbean Dollar (XCD) is pegged to the USD at 2.70 XCD to 1 USD; USD is accepted everywhere",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-4 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.kn",
+        "tier": 1,
+        "title": "Civil Aviation Department St. Kitts"
+      }
+    ],
+    "evidence_quote": "Saint Kitts and Nevis observes Atlantic Standard Time UTC-4 year-round with no seasonal changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://skelec.kn",
+          "tier": 1,
+          "title": "St. Kitts Electricity Company Limited (SKELEC)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across the Federation is 230V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://skelec.kn",
+          "tier": 1,
+          "title": "SKELEC"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "British standard Type G three-pin sockets and US Type A/B two-pin sockets are both encountered",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.kn",
+          "tier": 1,
+          "title": "Royal St. Christopher and Nevis Police Force (RSCNPF)"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police assistance across St. Kitts and Nevis",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.kn",
+          "tier": 1,
+          "title": "Joseph N. France General Hospital Emergency Services"
+        }
+      ],
+      "evidence_quote": "Call 911 or +1 869 465-2551 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "333",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.kn",
+          "tier": 1,
+          "title": "St. Kitts and Nevis Fire and Rescue Services"
+        }
+      ],
+      "evidence_quote": "Dial 333 or 911 for emergency fire and rescue operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.kn",
+          "tier": 1,
+          "title": "RSCNPF Central Command"
+        }
+      ],
+      "evidence_quote": "911 serves as the central national emergency response number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+1 869 465-2241",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stkittstourism.kn",
+          "tier": 1,
+          "title": "St. Kitts Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Police headquarters in Basseterre coordinates tourist security at +1 869 465-2241",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Saint Kitts ve Nevis son derece huzurlu ve güvenli bir ada ülkesidir; standart seyahat önlemleri yeterlidir.",
+      "en": "Saint Kitts and Nevis is very safe and welcoming; exercise standard travel precautions.",
+      "de": "St. Kitts und Nevis ist ein sicheres und friedliches Reiseziel; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Сент-Китс и Невис — спокойный и безопасный карибский курорт; действуют обычные правила.",
+      "es": "San Cristóbal y Nieves es un destino caribeño sumamente seguro y acogedor; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 40.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/st-kitts-and-nevis",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in St. Kitts reach approximately 40.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 80.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/st-kitts-and-nevis",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in the Federation measure 80.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel and Flow provide 4G tourist SIMs at Robert L. Bradshaw International Airport (SKB). Arriving passengers must submit the online Immigration and Customs declaration (knatravelform.kn) prior to arrival.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://knatravelform.kn",
+          "tier": 1,
+          "title": "St. Kitts and Nevis Online Customs/Immigration Form"
+        }
+      ],
+      "evidence_quote": "Travelers must complete the online digital entry form prior to travel to Saint Kitts and Nevis",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "St. Kitts Tourism Guide",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://stkittstourism.kn",
+        "tier": 1,
+        "title": "St. Kitts Tourism Authority"
+      }
+    },
+    {
+      "name": "Sea Bridge Ferry App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://gov.kn",
+        "tier": 1,
+        "title": "Ministry of Public Infrastructure"
+      }
+    },
+    {
+      "name": "869Go Delivery",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://869go.com",
+        "tier": 2,
+        "title": "869Go St. Kitts Delivery"
+      }
+    },
+    {
+      "name": "St. Kitts Scenic Railway",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://stkittsscenicrailway.com",
+        "tier": 2,
+        "title": "St. Kitts Scenic Railway"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 85%, predominantly Anglican, Methodist, Moravian, and Pentecostal)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stats.gov.kn",
+          "tier": 1,
+          "title": "Department of Statistics St. Kitts and Nevis"
+        }
+      ],
+      "evidence_quote": "Christian traditions form the bedrock of community life and festival celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Sugar Mas (National Carnival in late December/early January), St. Kitts Music Festival in June, Nevis Mango Festival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://skncarnival.com",
+          "tier": 1,
+          "title": "St. Kitts & Nevis National Carnival Committee"
+        }
+      ],
+      "evidence_quote": "Sugar Mas is the ultimate Christmas-New Year cultural festival combining folkloric masquerade and soca",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Wearing camouflage patterns or military-style gear is strictly illegal for civilians and tourists under national law. Swearing or using profanity in public is considered an offence under the Summary Jurisdiction Act. British Type G and US Type A/B plugs are both used.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.kn",
+          "tier": 1,
+          "title": "RSCNPF Legal Notice"
+        }
+      ],
+      "evidence_quote": "It is an offence under the Defence Act to wear camouflage pattern clothing in public",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is usually included on restaurant and hotel bills; leaving an extra 5-10% in cash for staff is standard.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stkittstourism.kn",
+          "tier": 1,
+          "title": "St. Kitts Tourism Authority Tips"
+        }
+      ],
+      "evidence_quote": "A 10% service charge is standard in dining and hotel invoices",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Brimstone Hill Kalesi Ulusal Parkı",
+        "en": "Brimstone Hill Fortress National Park",
+        "de": "Festung Brimstone Hill Nationalpark",
+        "ru": "Крепость Бримстоун-Хилл",
+        "es": "Parque Nacional Fortaleza de Brimstone Hill"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/910",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "St. Kitts Tarihi Şeker Demiryolu ve Nevis Zirvesi",
+        "en": "St. Kitts Scenic Railway & Nevis Peak",
+        "de": "St. Kitts Scenic Railway & Nevis Peak",
+        "ru": "Живописная железная дорога Сент-Китса и пик Невис",
+        "es": "Ferrocarril Escénico de San Cristóbal y Pico Nieves"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://stkittstourism.kn",
+          "tier": 1,
+          "title": "St. Kitts Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Brimstone Hill Kalesi ve Karayip Denizi Manzarası (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Martin Falbisoner",
+        "source_url": "/images/countries/kn-480.webp",
+        "attribution_text": "Brimstone Hill Fortress in Saint Kitts and Nevis. Martin Falbisoner, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Brimstone Hill Kalesi ve Karayip Denizi Manzarası (UNESCO), Saint Kitts ve Nevis",
+          "en": "Brimstone Hill Fortress & Caribbean Sea View (UNESCO), Saint Kitts and Nevis",
+          "de": "Festung Brimstone Hill und Karibikblick (UNESCO), St. Kitts und Nevis",
+          "ru": "Крепость Бримстоун-Хилл и вид на Карибское море (ЮНЕСКО), Сент-Китс и Невис",
+          "es": "Fortaleza de Brimstone Hill y Vista al Mar Caribe (UNESCO), San Cristóbal y Nieves"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "saint-kitts-ve-nevis",
+      "en": "saint-kitts-and-nevis",
+      "de": "st-kitts-und-nevis",
+      "ru": "sent-kits-i-nevis",
+      "es": "san-cristobal-y-nieves"
+    },
+    "title": {
+      "tr": "Saint Kitts ve Nevis Vize Rehberi, 90 Gün Vizesiz Giriş ve Brimstone Hill | Vizamigo",
+      "en": "Saint Kitts and Nevis Visa Guide, 90-Day Visa-Free Rules & Brimstone Hill | Vizamigo",
+      "de": "St. Kitts und Nevis Visum-Leitfaden, 90 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Сент-Китс и Невис, 90 дней без визы и крепость Бримстоун-Хилл | Vizamigo",
+      "es": "Guía de Visa de San Cristóbal y Nieves, 90 Días sin Visa y Brimstone Hill | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Saint Kitts ve Nevis Türk pasaportuna 90 gün vizesiz giriş, kamuflaj giysisi yasağı, Tip A/B/G prizler, Doğu Karayip Doları ve Brimstone Hill Kalesi rehberi.",
+      "en": "Saint Kitts and Nevis 90-day visa-free rules, military camouflage clothing ban, Type A/B/G sockets, XCD currency, and Brimstone Hill Fortress.",
+      "de": "St. Kitts und Nevis 90 Tage visafreie Einreise, Camouflage-Verbot, Steckdosentyp A/B/G, XCD-Währung und Festung Brimstone Hill.",
+      "ru": "Правила въезда в Сент-Китс и Невис на 90 дней без визы, запрет камуфляжа, розетки Type A/B/G и крепость Бримстоун-Хилл.",
+      "es": "Requisitos de entrada sin visa a San Cristóbal y Nieves (90 días), prohibición de ropa de camuflaje y fortaleza de Brimstone Hill."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
