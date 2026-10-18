@@ -1,0 +1,464 @@
+{
+  "iso2": "MM",
+  "names": {
+    "tr": "Myanmar",
+    "en": "Myanmar",
+    "de": "Myanmar",
+    "ru": "Мьянма",
+    "es": "Myanmar"
+  },
+  "capital": {
+    "value": "Naypyidaw",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.myanmar.gov.mm",
+        "tier": 1,
+        "title": "National Portal of Myanmar"
+      }
+    ],
+    "evidence_quote": "Naypyidaw is the administrative capital of Myanmar; Yangon is the historical and economic center",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MMK",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbm.gov.mm",
+        "tier": 1,
+        "title": "Central Bank of Myanmar"
+      }
+    ],
+    "evidence_quote": "The Myanmar Kyat (MMK, K) is the official currency; market cash rates diverge from official pegs",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+6:30 (MMT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.moezan.gov.mm",
+        "tier": 1,
+        "title": "Department of Meteorology and Hydrology Myanmar"
+      }
+    ],
+    "evidence_quote": "Myanmar Standard Time is 6 hours and 30 minutes ahead of UTC year-round",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moee.gov.mm",
+          "tier": 1,
+          "title": "Ministry of Electric Power Myanmar"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Myanmar is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moee.gov.mm",
+          "tier": 1,
+          "title": "Ministry of Electric Power"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout urban centers is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "F",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Combination sockets accommodate European Type C, British Type D and G, and Schuko Type F plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.myanmarpolice.gov.mm",
+          "tier": 1,
+          "title": "Myanmar Police Force"
+        }
+      ],
+      "evidence_quote": "Dial 199 for emergency police assistance throughout Myanmar",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "192",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mohs.gov.mm",
+          "tier": 1,
+          "title": "Yangon General Hospital Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 192 for emergency ambulance dispatch in urban centers",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fsd.gov.mm",
+          "tier": 1,
+          "title": "Fire Services Department Myanmar"
+        }
+      ],
+      "evidence_quote": "Dial 191 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "199",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.myanmarpolice.gov.mm",
+          "tier": 1,
+          "title": "Myanmar Emergency Central Services"
+        }
+      ],
+      "evidence_quote": "199 coordinates central emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+95 1 642828",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://touristinformation.gov.mm",
+          "tier": 1,
+          "title": "Tourist Safety Unit Myanmar"
+        }
+      ],
+      "evidence_quote": "Tourist Police headquarters in Yangon operates at +95 1 642828 and in Bagan",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 4,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/myanmar",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 4,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Devam eden askeri çatışmalar, iç savaş ve keyfi gözaltı riski nedeniyle uluslararası dışişleri bakanlıkları Myanmar'a seyahat edilmemesini tavsiye etmektedir.",
+      "en": "Do Not Travel to Myanmar due to civil war, widespread armed conflict, and arbitrary enforcement of local laws.",
+      "de": "Reisewarnung: Vor Reisen nach Myanmar wird wegen bewaffneter Konflikte und Bürgerkrieg dringend gewarnt.",
+      "ru": "Категорически не рекомендуется посещать Мьянму из-за продолжающегося внутреннего вооруженного конфликта.",
+      "es": "No viaje a Myanmar debido al conflicto armado civil, combates y detenciones arbitrarias."
+    },
+    "regional_warnings": [
+      {
+        "area": "Sagaing, Magway, Kachin, Shan, Kayah, and Rakhine States",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "high",
+      "terrorism": "high",
+      "civil_unrest": "high",
+      "natural_disaster": "medium",
+      "health": "high"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 26.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/myanmar",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Myanmar measure approximately 26.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 32.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/myanmar",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Yangon measure 32.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "MPT, Atom, and Ooredoo offer prepaid SIMs. Internet blackouts and social media blocks occur periodically. Arriving travelers must carry immaculate, uncreased US Dollar cash for currency exchange; e-Visa (evisa.moip.gov.mm) is mandatory.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://evisa.moip.gov.mm",
+          "tier": 1,
+          "title": "Ministry of Immigration and Population Myanmar"
+        }
+      ],
+      "evidence_quote": "Approved eVisa is mandatory for international commercial flight boarding to Yangon",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Grab Myanmar",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.grab.com/mm/",
+        "tier": 2,
+        "title": "Grab Myanmar"
+      }
+    },
+    {
+      "name": "KBZPay",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.kbzpay.com",
+        "tier": 1,
+        "title": "KBZPay Mobile Wallet"
+      }
+    },
+    {
+      "name": "WavePay",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.wavemoney.com.mm",
+        "tier": 2,
+        "title": "WavePay by Wave Money"
+      }
+    },
+    {
+      "name": "Myanmar Airways International",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://maiair.com",
+        "tier": 2,
+        "title": "MAI Airlines"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Theravada Buddhism (approx. 88% official predominance), Christianity (approx. 6%), and Islam (approx. 4%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dop.gov.mm",
+          "tier": 1,
+          "title": "Department of Population Myanmar"
+        }
+      ],
+      "evidence_quote": "Theravada Buddhist monasticism permeates daily societal rituals, almsgiving, and architecture",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Thingyan Water Festival (Buddhist New Year in April), Thadingyut Festival of Lights, Taunggyi Hot Air Balloon Festival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://touristinformation.gov.mm",
+          "tier": 1,
+          "title": "Ministry of Hotels and Tourism"
+        }
+      ],
+      "evidence_quote": "Thingyan Water Festival heralds the new year with nationwide water cleansing celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Strict footwear etiquette: shoes, boots, and socks must be removed before entering any pagoda, temple, or monastery courtyard without exception. Never touch anyone's head or point your feet toward Buddha images or monks. Curfews are in place in major urban centers.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://touristinformation.gov.mm",
+          "tier": 1,
+          "title": "Ministry of Hotels and Tourism Guidelines"
+        }
+      ],
+      "evidence_quote": "Footwear including socks must be removed at the outer gates of all Buddhist religious premises",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not customary in local tea houses or shops, but leaving 5-10% in hotel dining or tipping luggage porters (1,000-2,000 MMK) is appreciated.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://touristinformation.gov.mm",
+          "tier": 1,
+          "title": "Tourism Guidelines"
+        }
+      ],
+      "evidence_quote": "A modest tip is standard in hospitality and private guiding services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Bagan Antik Tapınaklar Ovası ve Balon Turları",
+        "en": "Bagan Ancient Temple Plains & Hot Air Balloons",
+        "de": "Antike Tempel-Ebene von Bagan",
+        "ru": "Древняя равнина храмов Баган",
+        "es": "Llanura de Templos Antiguos de Bagan"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1588",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Shwedagon Pagodası Altın Kubbesi",
+        "en": "Shwedagon Pagoda Golden Stupa",
+        "de": "Shwedagon-Pagode",
+        "ru": "Золотая пагода Шведагон",
+        "es": "Pagoda Shwedagon Estupa Dorada"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/6360/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bagan Antik Tapınaklar Ovası Gün Doğumu ve Balonlar",
+        "license": "CC-BY",
+        "author": "Mrsoethuaung",
+        "source_url": "/images/countries/mm-480.webp",
+        "attribution_text": "Ancient temples of Bagan at sunrise in Myanmar. Mrsoethuaung, CC BY 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Bagan Antik Tapınaklar Ovası Gün Doğumu ve Balonlar, Myanmar",
+          "en": "Bagan Ancient Temple Plains at Sunrise with Hot Air Balloons, Myanmar",
+          "de": "Bagan Tempel-Ebene bei Sonnenaufgang mit Heißluftballons, Myanmar",
+          "ru": "Равнина древних храмов Баган на рассвете с воздушными шарами, Мьянма",
+          "es": "Llanura de Templos Antiguos de Bagan al Amanecer con Globos, Myanmar"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "myanmar",
+      "en": "myanmar",
+      "de": "myanmar",
+      "ru": "myanma",
+      "es": "myanmar"
+    },
+    "title": {
+      "tr": "Myanmar e-Vize Rehberi, Güvenlik Seviyesi 4 ve Bagan Tapınakları | Vizamigo",
+      "en": "Myanmar eVisa Guide, Level 4 Travel Warning & Bagan Temples | Vizamigo",
+      "de": "Myanmar E-Visum Leitfaden, Reisewarnung & Bagan Tempel | Vizamigo",
+      "ru": "Электронная виза в Мьянму, безопасность и древний Баган | Vizamigo",
+      "es": "Guía de eVisa de Myanmar, Alerta de Seguridad y Templos de Bagan | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Myanmar e-Vize şartları, Seviye 4 seyahat uyarısı ve iç çatışma bölgeleri, tapınak çıplak ayak kuralları, Tip C/D/F/G prizler ve Bagan gezi rehberi.",
+      "en": "Myanmar online eVisa rules, Level 4 Do Not Travel advisory, barefoot pagoda etiquette, Type C/D/F/G sockets, and Bagan temple guide.",
+      "de": "Myanmar E-Visum Richtlinien, Reisewarnung Stufe 4, Barfuß-Tempelregeln, Steckdosentyp C/D/F/G und Reiseführer Bagan.",
+      "ru": "Правила оформления электронной визы в Мьянму, предупреждение уровня 4, правила посещения пагод босиком и Баган.",
+      "es": "Requisitos de eVisa para Myanmar, advertencia de seguridad nivel 4, normas en pagodas y templos de Bagan."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

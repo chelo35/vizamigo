@@ -1,0 +1,463 @@
+{
+  "iso2": "PK",
+  "names": {
+    "tr": "Pakistan",
+    "en": "Pakistan",
+    "de": "Pakistan",
+    "ru": "Пакистан",
+    "es": "Pakistán"
+  },
+  "capital": {
+    "value": "Islamabad",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cda.gov.pk",
+        "tier": 1,
+        "title": "Capital Development Authority Islamabad"
+      }
+    ],
+    "evidence_quote": "Islamabad is the federal capital and administrative seat of the Islamic Republic of Pakistan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "PKR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sbp.org.pk",
+        "tier": 1,
+        "title": "State Bank of Pakistan"
+      }
+    ],
+    "evidence_quote": "The Pakistani Rupee (PKR, Rs) is the official currency; trades around 278 PKR to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5 (PKT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pmd.gov.pk",
+        "tier": 1,
+        "title": "Pakistan Meteorological Department"
+      }
+    ],
+    "evidence_quote": "Pakistan Standard Time operates year-round on UTC+5 without seasonal daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nepra.org.pk",
+          "tier": 1,
+          "title": "National Electric Power Regulatory Authority (NEPRA)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Pakistan is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nepra.org.pk",
+          "tier": 1,
+          "title": "NEPRA Pakistan"
+        }
+      ],
+      "evidence_quote": "The national electrical power grid operating frequency is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European Type C two-pin and British Type D and M three-round-pin sockets are standard",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "15",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://islamabadpolice.gov.pk",
+          "tier": 1,
+          "title": "Islamabad Police - Emergency 15"
+        }
+      ],
+      "evidence_quote": "Dial 15 for emergency police assistance throughout Pakistan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "1122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rescue.gov.pk",
+          "tier": 1,
+          "title": "Punjab Emergency Service Rescue 1122"
+        }
+      ],
+      "evidence_quote": "Call 1122 for Rescue 1122 emergency ambulance and paramedic dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "16",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rescue.gov.pk",
+          "tier": 1,
+          "title": "Emergency Rescue 1122 Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 16 or 1122 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "1122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://rescue.gov.pk",
+          "tier": 1,
+          "title": "Rescue 1122 Emergency Operations"
+        }
+      ],
+      "evidence_quote": "1122 is the integrated national emergency response number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+92 51 920 4455",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ptdc.com.pk",
+          "tier": 1,
+          "title": "Pakistan Tourism Development Corporation (PTDC)"
+        }
+      ],
+      "evidence_quote": "Tourist Facilitation Center and Tourist Police in Gilgit-Baltistan coordinate at +92 51 920 4455",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 3,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/pakistan",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 3,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Belucistan ve Hayber Pahtunhva sınır bölgelerinde güvenlik riskleri nedeniyle seyahat planları gözden geçirilmelidir; Gilgit-Baltistan ve Hunza vadileri turistler için son derece huzurlu ve güvenlidir.",
+      "en": "Reconsider travel due to security concerns in border areas; Gilgit-Baltistan, Hunza, and Skardu are exceptionally safe and welcoming.",
+      "de": "Reisen in Grenzgebiete sorgfältig abwägen; die Gebirgsregionen Gilgit-Baltistan und das Hunza-Tal sind sicher und gastfreundlich.",
+      "ru": "Соблюдайте осторожность в приграничных зонах; высокогорный регион Гилгит-Балтистан и долина Хунза безопасны и гостеприимны.",
+      "es": "Reconsidere viajar a zonas fronterizas; las regiones montañosas de Gilgit-Baltistán y el valle de Hunza son muy seguras."
+    },
+    "regional_warnings": [
+      {
+        "area": "Balochistan province and Khyber Pakhtunkhwa (former FATA)",
+        "level": 4,
+        "reason": "terrorism",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "high",
+      "civil_unrest": "high",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 22.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/pakistan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Pakistan reach approximately 22.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 32.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/pakistan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 32.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Jazz, Zong, and Telenor provide 4G SIMs in Islamabad. In Gilgit-Baltistan and northern Karakoram passes, SCO (Special Communications Organization) / SCOM is the primary cellular provider with mountain coverage.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pta.gov.pk",
+          "tier": 1,
+          "title": "Pakistan Telecommunication Authority (PTA)"
+        }
+      ],
+      "evidence_quote": "Biometric registration with passport and visa copy is mandatory for all SIM activations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Indrive Pakistan",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://indrive.com",
+        "tier": 2,
+        "title": "InDrive Pakistan"
+      }
+    },
+    {
+      "name": "Easypaisa",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://easypaisa.com.pk",
+        "tier": 1,
+        "title": "Easypaisa Mobile Wallet"
+      }
+    },
+    {
+      "name": "Foodpanda Pakistan",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodpanda.pk",
+        "tier": 2,
+        "title": "Foodpanda Pakistan"
+      }
+    },
+    {
+      "name": "Careem Pakistan",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.careem.com/en-pk/",
+        "tier": 2,
+        "title": "Careem Pakistan"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (approx. 96%, predominantly Sunni approx. 80-85% and Shia approx. 15%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pbs.gov.pk",
+          "tier": 1,
+          "title": "Pakistan Bureau of Statistics"
+        }
+      ],
+      "evidence_quote": "Islam is the state religion and the foundation of civil law, hospitality traditions, and public life",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Shandur Polo Festival (highest polo ground on earth at 3,700m in July), Eid-ul-Fitr, Pakistan Day (March 23), Sufi Urs at Data Darbar",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ptdc.com.pk",
+          "tier": 1,
+          "title": "PTDC Cultural Festivals"
+        }
+      ],
+      "evidence_quote": "Shandur Polo Festival is a legendary mountain spectacle played under traditional freestyle rules",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Dress modestly across the country (salwar kameez is customary; shoulders and knees must be covered for all genders). Alcohol sales are strictly regulated and forbidden for Muslims; non-Muslim foreign tourists can obtain alcohol only at licensed 5-star international hotels. Blasphemy laws are extremely strict.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ptdc.com.pk",
+          "tier": 1,
+          "title": "PTDC Tourist Guidelines"
+        }
+      ],
+      "evidence_quote": "Respect for Islamic social norms, conservative attire, and religious sensitivities is paramount",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in sit-down restaurants. Tipping mountain trekking porters, jeep drivers, and mountain guides in the Karakoram ($10-15 per day) is essential.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ptdc.com.pk",
+          "tier": 1,
+          "title": "PTDC Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10% gratuity is standard in hospitality and trekking expedition services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Hunza Vadisi, Rakaposhi Zirvesi ve Baltit Kalesi",
+        "en": "Hunza Valley, Rakaposhi Peak & Baltit Fort",
+        "de": "Hunza-Tal, Rakaposhi & Baltit-Festung",
+        "ru": "Долина Хунза, пик Ракапоши и форт Балтит",
+        "es": "Valle de Hunza, Pico Rakaposhi y Fuerte Baltit"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/1882/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Karakurum Otoyolu ve Passu Katedralleri",
+        "en": "Karakoram Highway & Passu Cones",
+        "de": "Karakorum Highway & Passu-Kathedralen",
+        "ru": "Каракорумское шоссе и пики Пассу",
+        "es": "Carretera del Karakórum y Conos de Passu"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://ptdc.com.pk",
+          "tier": 1,
+          "title": "PTDC Pakistan"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Hunza Vadisi, Rakaposhi Karlı Zirvesi ve Baltit Kalesi",
+        "license": "CC-BY-SA",
+        "author": "Samraiz Nawaz",
+        "source_url": "/images/countries/pk-480.webp",
+        "attribution_text": "Hunza Valley snowcapped Rakaposhi peak and historic Baltit Fort in Pakistan. Samraiz Nawaz, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Hunza Vadisi, Rakaposhi Karlı Zirvesi ve Baltit Kalesi, Pakistan",
+          "en": "Hunza Valley, Rakaposhi Peak & Baltit Fort, Pakistan",
+          "de": "Hunza-Tal mit schneebedecktem Rakaposhi & Baltit-Fort, Pakistan",
+          "ru": "Долина Хунза, заснеженный пик Ракапоши и форт Балтит, Пакистан",
+          "es": "Valle de Hunza, Pico Nevado Rakaposhi y Fuerte Baltit, Pakistán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "pakistan",
+      "en": "pakistan",
+      "de": "pakistan",
+      "ru": "pakistan",
+      "es": "pakistan"
+    },
+    "title": {
+      "tr": "Pakistan e-Vize Rehberi, Hunza Vadisi, Karakurum Otoyolu ve Güvenlik | Vizamigo",
+      "en": "Pakistan eVisa Guide, Hunza Valley, Karakoram Highway & Safety | Vizamigo",
+      "de": "Pakistan E-Visum Leitfaden, Hunza-Tal & Karakorum Highway | Vizamigo",
+      "ru": "Электронная виза в Пакистан, долина Хунза, Каракорумское шоссе | Vizamigo",
+      "es": "Guía de eVisa de Pakistán, Valle de Hunza y Carretera del Karakórum | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Pakistan online e-Vize başvuru şartları, Karakurum Otoyolu gezi rotası, Tip C/D/M prizler, SCOM hattı ve Hunza Vadisi gezi rehberi.",
+      "en": "Pakistan online eVisa rules, Karakoram Highway expedition tips, Type C/D/M sockets, SCOM SIM card, and Hunza Valley travel guide.",
+      "de": "Pakistan E-Visum Antrag, Karakorum Highway Reiseroute, Steckdosentyp C/D/M, SCOM-Netz und Hunza-Tal.",
+      "ru": "Правила оформления электронной визы в Пакистан, Каракорумское шоссе, розетки Type C/D/M, сим-карта SCOM и долина Хунза.",
+      "es": "Requisitos de eVisa para Pakistán, expedición por la Carretera del Karakórum, enchufes y guía del valle de Hunza."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

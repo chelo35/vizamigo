@@ -1,0 +1,450 @@
+{
+  "iso2": "WS",
+  "names": {
+    "tr": "Samoa",
+    "en": "Samoa",
+    "de": "Samoa",
+    "ru": "Самоа",
+    "es": "Samoa"
+  },
+  "capital": {
+    "value": "Apia",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.samoagovt.ws",
+        "tier": 1,
+        "title": "Government of Samoa"
+      }
+    ],
+    "evidence_quote": "Apia is the capital and primate commercial seaport of the Independent State of Samoa",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "WST",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbs.gov.ws",
+        "tier": 1,
+        "title": "Central Bank of Samoa"
+      }
+    ],
+    "evidence_quote": "The Samoan Tālā (WST, WS$) is the official currency; trades around 2.75 WST to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+13 (WST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.samet.gov.ws",
+        "tier": 1,
+        "title": "Samoa Meteorology Division"
+      }
+    ],
+    "evidence_quote": "Samoa operates on West Samoa Time UTC+13 year-round, on the west of the International Date Line",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://epc.ws",
+          "tier": 1,
+          "title": "Electric Power Corporation (EPC) Samoa"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Upolu and Savai'i is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://epc.ws",
+          "tier": 1,
+          "title": "EPC Samoa"
+        }
+      ],
+      "evidence_quote": "Alternating current power grid operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Australian standard Type I three-pin plugs with angled pins are universal in Samoa",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "22222",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://spppcs.gov.ws",
+          "tier": 1,
+          "title": "Samoa Police, Prisons and Corrections Services"
+        }
+      ],
+      "evidence_quote": "Dial 22222 or 995 for emergency police assistance throughout Samoa",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "996",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.ws",
+          "tier": 1,
+          "title": "Tupua Tamasese Meaole (TTM) Hospital Ambulance Dispatch"
+        }
+      ],
+      "evidence_quote": "Call 996 for emergency medical dispatch and hospital ambulance services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "994",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://sfesa.ws",
+          "tier": 1,
+          "title": "Samoa Fire and Emergency Services Authority (SFESA)"
+        }
+      ],
+      "evidence_quote": "Dial 994 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://spppcs.gov.ws",
+          "tier": 1,
+          "title": "Samoa Emergency Dispatch"
+        }
+      ],
+      "evidence_quote": "999 serves as the unified emergency operations hotline",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+685 22222",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "Samoa Tourism Authority (STA)"
+        }
+      ],
+      "evidence_quote": "Police headquarters in Apia provides tourist assistance at +685 22222",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/samoa",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Samoa son derece güvenli ve geleneklerine bağlı bir Polinezya ada ülkesidir; standart seyahat önlemleri yeterlidir.",
+      "en": "Samoa is exceptionally safe, tranquil, and deeply hospitable; exercise normal travel precautions.",
+      "de": "Samoa ist ein überaus sicheres und gastfreundliches Reiseland; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Самоа исключительно безопасно и спокойно; действуют обычные правила.",
+      "es": "Samoa es un destino sumamente seguro, pacífico y hospitalario; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 28.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/samoa",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Samoa reach approximately 28.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 48.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/samoa",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Apia measure 48.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Vodafone Samoa and Digicel provide 4G tourist SIMs at Faleolo International Airport (APW). Inter-island vehicle/passenger ferries connect Upolu (Mulifanua Wharf) with Savai'i (Salelologa Wharf) multiple times daily.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "Samoa Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Tourist prepaid SIMs require passport presentation under national telecommunications law",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Samoa Travel Guide",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.samoa.travel",
+        "tier": 1,
+        "title": "Samoa Tourism Authority"
+      }
+    },
+    {
+      "name": "Vodafone M-Tala",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vodafone.com.ws",
+        "tier": 1,
+        "title": "Vodafone M-Tala Samoa"
+      }
+    },
+    {
+      "name": "Samoa Shipping Corporation",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://samoashipping.com",
+        "tier": 2,
+        "title": "Samoa Shipping Corporation Ferries"
+      }
+    },
+    {
+      "name": "Samoa Airways App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://samoaairways.com",
+        "tier": 1,
+        "title": "Samoa Airways"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 98%, predominantly Congregational Christian/EFKS, Roman Catholic, and Methodist)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sbs.gov.ws",
+          "tier": 1,
+          "title": "Samoa Bureau of Statistics"
+        }
+      ],
+      "evidence_quote": "Samoa is constitutionally founded on God; Christian faith is central to the Fa'a Samoa (Samoan Way)",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Teuila Festival in September (national cultural extravaganza), White Sunday (Lotu Tamaiti in October), Fire Knife (Siva Afi) World Championships",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "STA Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "Teuila Festival celebrates traditional dance, canoe racing, and the heart-stopping fire knife dance",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Respect Fa'a Samoa (the 3,000-year-old Samoan Way): during the evening prayer curfew (Sa - usually 18:00 to 19:00 marked by bells/conch shells), avoid walking or driving through traditional villages. Sunday is strictly kept as a day of worship and family rest.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "STA Cultural Protocol"
+        }
+      ],
+      "evidence_quote": "During evening Sa prayer time, visitors must remain quiet and indoors until the second bell sounds",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not expected or customary in Samoan culture; Fa'a Samoa emphasizes unconditional hospitality. A warm thank you ('Fa'afetai tele lava') is the customary gesture.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "STA Travel Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is not part of Samoan custom and is not required",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "To-Sua Okyanus Çukuru Doğal Havuzu",
+        "en": "To-Sua Ocean Trench Natural Swimming Grotto",
+        "de": "To-Sua Ocean Trench Natürliche Meeresgrotte",
+        "ru": "Природный сенот То-Суа",
+        "es": "Fosa Oceánica de To-Sua Gruta Natural"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "Samoa Tourism Authority"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Alofaaga Doğal Gayzerleri ve Savai'i Lav Alanları",
+        "en": "Alofaaga Blowholes & Savai'i Lava Fields",
+        "de": "Alofaaga Blowholes & Savai'i Lavafelder",
+        "ru": "Морские гейзеры Алофаага и лавовые поля Савайи",
+        "es": "Bufaderos de Alofaaga y Campos de Lava de Savai'i"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.samoa.travel",
+          "tier": 1,
+          "title": "Samoa Tourism Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "To-Sua Okyanus Çukuru Doğal Havuzu ve Ahşap Merdiven, Upolu",
+        "license": "CC-BY-SA",
+        "author": "Rickard Törnblad",
+        "source_url": "/images/countries/ws-480.webp",
+        "attribution_text": "To-Sua Ocean Trench giant natural sunken swimming hole in Upolu, Samoa. Rickard Törnblad, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "To-Sua Okyanus Çukuru Doğal Havuzu ve Ahşap Merdiven, Upolu, Samoa",
+          "en": "To-Sua Ocean Trench Natural Sunken Swimming Grotto, Upolu, Samoa",
+          "de": "To-Sua Ocean Trench Natürliche Meeresgrotte & Holzleiter, Upolu, Samoa",
+          "ru": "Океанический разлом То-Суа природный сенот с деревянной лестницей, Уполу, Самоа",
+          "es": "Fosa Oceánica de To-Sua Gruta Natural Sumergida con Escalera, Upolu, Samoa"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "samoa",
+      "en": "samoa",
+      "de": "samoa",
+      "ru": "samoa",
+      "es": "samoa"
+    },
+    "title": {
+      "tr": "Samoa Vize Rehberi, 60 Gün Vizesiz Giriş, Fa'a Samoa ve To-Sua | Vizamigo",
+      "en": "Samoa Visa Guide, 60-Day Visa-Free Rules, Fa'a Samoa & To-Sua | Vizamigo",
+      "de": "Samoa Visum-Leitfaden, 60 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Самоа, 60 дней без визы, традиции фаа-самоа и разлом То-Суа | Vizamigo",
+      "es": "Guía de Visa de Samoa, 60 Días sin Visa, Costumbres Fa'a Samoa | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Samoa Türk pasaportuna 60 gün vizesiz giriş, Fa'a Samoa yaşam felsefesi, akşam Sa duası kuralları, Tip I prizler ve To-Sua çukuru gezi rehberi.",
+      "en": "Samoa 60-day visa-free visitor rules, Fa'a Samoa way of life, evening Sa curfew protocol, Type I sockets, and To-Sua Ocean Trench guide.",
+      "de": "Samoa 60 Tage visafreie Einreise, Fa'a Samoa Lebensweise, abendliche Sa-Gebetszeit, Steckdosentyp I und To-Sua Ocean Trench.",
+      "ru": "Правила въезда в Самоа на 60 дней без визы, уклад жизни фаа-самоа, молитвенный час са, розетки Type I и сенот То-Суа.",
+      "es": "Requisitos de entrada sin visa a Samoa (60 días), filosofía Fa'a Samoa, toque de oración Sa, enchufes Tipo I y fosa To-Sua."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

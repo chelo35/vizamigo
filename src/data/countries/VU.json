@@ -1,0 +1,450 @@
+{
+  "iso2": "VU",
+  "names": {
+    "tr": "Vanuatu",
+    "en": "Vanuatu",
+    "de": "Vanuatu",
+    "ru": "Вануату",
+    "es": "Vanuatu"
+  },
+  "capital": {
+    "value": "Port Vila",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.vu",
+        "tier": 1,
+        "title": "Government of Vanuatu"
+      }
+    ],
+    "evidence_quote": "Port Vila is the capital and largest commercial port of the Republic of Vanuatu on Efate",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "VUV",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rbv.gov.vu",
+        "tier": 1,
+        "title": "Reserve Bank of Vanuatu"
+      }
+    ],
+    "evidence_quote": "The Vanuatu Vatu (VUV, VT) is the national legal tender currency",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+11 (VUT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.meteo.gov.vu",
+        "tier": 1,
+        "title": "Vanuatu Meteorology and Geo-Hazards Department"
+      }
+    ],
+    "evidence_quote": "Vanuatu Time operates year-round on UTC+11 without seasonal clock changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V/240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.unelco.engie.com",
+          "tier": 1,
+          "title": "UNELCO Engie Vanuatu"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Port Vila is 220V/240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.unelco.engie.com",
+          "tier": 1,
+          "title": "UNELCO"
+        }
+      ],
+      "evidence_quote": "Electrical network operating frequency is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Australian standard Type I three-pin flat angled plugs are universally used",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "111",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.vu",
+          "tier": 1,
+          "title": "Vanuatu Police Force (VPF)"
+        }
+      ],
+      "evidence_quote": "Dial 111 for emergency police response across Vanuatu",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moh.gov.vu",
+          "tier": 1,
+          "title": "Vila Central Hospital Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 112 for hospital ambulance dispatch and medical emergencies",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.vu",
+          "tier": 1,
+          "title": "VPF Fire Service"
+        }
+      ],
+      "evidence_quote": "Dial 113 for fire and rescue emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gov.vu",
+          "tier": 1,
+          "title": "National Disaster Management Office (NDMO)"
+        }
+      ],
+      "evidence_quote": "112 is the unified emergency number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+678 22222",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "Vanuatu Tourism Office (VTO)"
+        }
+      ],
+      "evidence_quote": "Police headquarters in Port Vila coordinates tourist inquiries at +678 22222",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/vanuatu",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Vanuatu genel olarak son derece güvenlidir; Tanna'daki Yasur Dağı gibi aktif volkanlarda resmi güvenlik uyarıları takip edilmelidir.",
+      "en": "Vanuatu is peaceful and safe; heed official alert bulletins near active volcanoes such as Mount Yasur.",
+      "de": "Vanuatu ist ein sicheres Reiseziel; Warnstufen bei aktiven Vulkanen (Mount Yasur) beachten.",
+      "ru": "Вануату спокойно и безопасно; следите за оповещениями сейсмических служб у вулкана Ясур.",
+      "es": "Vanuatu es pacífico y seguro; atienda los boletines de alerta en volcanes activos como el Monte Yasur."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 26.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/vanuatu",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Vanuatu reach approximately 26.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 42.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/vanuatu",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 42.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Vodafone Vanuatu and Digicel provide prepaid 4G SIMs at Bauerfield International Airport (VLI) in Port Vila. Domestic flights (Air Vanuatu) link Efate with Tanna and Espiritu Santo.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "Vanuatu Tourism Office"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM card registration requires passport identification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Vanuatu Travel App",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vanuatu.travel",
+        "tier": 1,
+        "title": "Vanuatu Tourism Office"
+      }
+    },
+    {
+      "name": "Vodafone M-Vatu",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vodafone.com.vu",
+        "tier": 1,
+        "title": "Vodafone Vanuatu"
+      }
+    },
+    {
+      "name": "Air Vanuatu App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.airvanuatu.com",
+        "tier": 1,
+        "title": "Air Vanuatu"
+      }
+    },
+    {
+      "name": "Islander Ferry",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://gov.vu",
+        "tier": 1,
+        "title": "Department of Ports and Marine"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 83%, predominantly Presbyterian, Anglican, and Roman Catholic) alongside traditional kastom beliefs",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://vnso.gov.vu",
+          "tier": 1,
+          "title": "Vanuatu National Statistics Office (VNSO)"
+        }
+      ],
+      "evidence_quote": "Christian worship is woven with ancient kastom laws and indigenous Melanesian traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Nagol Land Diving (Pentecost Island precursor to bungee jumping from April to June), Toka Festival on Tanna, Fest'Napuan music fest",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "VTO Cultural Festivals"
+        }
+      ],
+      "evidence_quote": "Naghol land diving on Pentecost Island is a world-renowned rite of passage and yam harvest ritual",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Respect kastom areas and sacred tabu stones; entering private tribal lands without local permission is forbidden. Tipping and bargaining are contrary to Melanesian kastom values and are not practiced anywhere in Vanuatu. Bislama, English, and French are official.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "VTO Travel Tips"
+        }
+      ],
+      "evidence_quote": "Tipping and haggling are not part of Vanuatu custom and are discouraged",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is contrary to Melanesian culture and is not practiced. Exceptional gratitude is best expressed with a sincere smile and verbal thank you ('Tankyu tumas').",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "VTO Guidelines"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary in Vanuatu and should not be offered",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Yasur Dağı Aktif Volkanı",
+        "en": "Mount Yasur Active Volcano",
+        "de": "Aktiver Vulkan Mount Yasur",
+        "ru": "Действующий вулкан Ясур",
+        "es": "Volcán Activo Monte Yasur"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "Vanuatu Tourism Office"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Champagne Sahili ve Espiritu Santo Mavi Delikleri",
+        "en": "Champagne Beach & Blue Holes",
+        "de": "Champagne Beach & Blaue Löcher",
+        "ru": "Пляж Шампань и голубые провалы",
+        "es": "Playa Champagne y Ojos Azules de Espiritu Santo"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.vanuatu.travel",
+          "tier": 1,
+          "title": "Vanuatu Tourism Office"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Yasur Dağı Aktif Volkanı Gece Lav Patlamaları, Tanna",
+        "license": "CC-BY-SA",
+        "author": "Romain Pontida",
+        "source_url": "/images/countries/vu-480.webp",
+        "attribution_text": "Lava trails at Mount Yasur Volcano in Tanna, Vanuatu. Romain Pontida, CC BY-SA 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Yasur Dağı Aktif Volkanı Gece Lav Patlamaları, Tanna, Vanuatu",
+          "en": "Mount Yasur Active Volcano Lava Eruptions, Tanna, Vanuatu",
+          "de": "Vulkan Mount Yasur Lava-Eruptionen bei Nacht, Tanna, Vanuatu",
+          "ru": "Извержение лавы действующего вулкана Ясур ночью, Танна, Вануату",
+          "es": "Erupciones de Lava del Volcán Activo Monte Yasur de Noche, Tanna, Vanuatu"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "vanuatu",
+      "en": "vanuatu",
+      "de": "vanuatu",
+      "ru": "vanuatu",
+      "es": "vanuatu"
+    },
+    "title": {
+      "tr": "Vanuatu Vize Rehberi, 30 Gün Vizesiz Giriş, Yasur Volkanı ve Nagol | Vizamigo",
+      "en": "Vanuatu Visa Guide, 30-Day Visa-Free Rules & Mount Yasur Travel | Vizamigo",
+      "de": "Vanuatu Visum-Leitfaden, 30 Tage visafrei & Vulkan Yasur | Vizamigo",
+      "ru": "Виза в Вануату, 30 дней без визы, вулкан Ясур и прыжки нагол | Vizamigo",
+      "es": "Guía de Visa de Vanuatu, 30 Días sin Visa y Volcán Monte Yasur | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Vanuatu Türk pasaportuna 30 gün vizesiz giriş, kastom kültürü ve bahşiş yasağı, Tip I prizler, Tanna Yasur Dağı volkan turu gezi rehberi.",
+      "en": "Vanuatu 30-day visa-free rules, Melanesian kastom values (no tipping), Type I sockets, and Mount Yasur volcano expedition guide.",
+      "de": "Vanuatu 30 Tage visafreie Einreise, Kastom-Tradition (kein Trinkgeld), Steckdosentyp I und Vulkan-Expedition Mount Yasur.",
+      "ru": "Правила въезда в Вануату на 30 дней без визы, обычаи кастом (без чаевых), австралийские розетки Type I и вулкан Ясур.",
+      "es": "Requisitos de entrada sin visa a Vanuatu (30 días), cultura kastom (sin propinas), enchufes Tipo I y volcán Monte Yasur."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

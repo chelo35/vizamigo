@@ -1,0 +1,450 @@
+{
+  "iso2": "FJ",
+  "names": {
+    "tr": "Fiji",
+    "en": "Fiji",
+    "de": "Fidschi",
+    "ru": "Фиджи",
+    "es": "Fiyi"
+  },
+  "capital": {
+    "value": "Suva",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.fiji.gov.fj",
+        "tier": 1,
+        "title": "Government of Fiji"
+      }
+    ],
+    "evidence_quote": "Suva is the capital and primate administrative seaport of the Republic of Fiji",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "FJD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rbf.gov.fj",
+        "tier": 1,
+        "title": "Reserve Bank of Fiji"
+      }
+    ],
+    "evidence_quote": "The Fijian Dollar (FJD, FJ$) is the official currency; trades around 2.25 FJD to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+12 (FJT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.met.gov.fj",
+        "tier": 1,
+        "title": "Fiji Meteorological Service"
+      }
+    ],
+    "evidence_quote": "Fiji Standard Time is 12 hours ahead of UTC year-round without daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://efl.com.fj",
+          "tier": 1,
+          "title": "Energy Fiji Limited (EFL)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic supply across Fiji is 240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://efl.com.fj",
+          "tier": 1,
+          "title": "Energy Fiji Limited"
+        }
+      ],
+      "evidence_quote": "National power network operating frequency is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "IEC World Plugs"
+        }
+      ],
+      "evidence_quote": "Australian/New Zealand standard Type I three-pin flat angled plugs are universal in Fiji",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "917",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.fj",
+          "tier": 1,
+          "title": "Fiji Police Force"
+        }
+      ],
+      "evidence_quote": "Dial 917 for emergency police assistance throughout Fiji",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.health.gov.fj",
+          "tier": 1,
+          "title": "Ministry of Health and Medical Services Fiji"
+        }
+      ],
+      "evidence_quote": "Call 911 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "910",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nfa.com.fj",
+          "tier": 1,
+          "title": "National Fire Authority (NFA) Fiji"
+        }
+      ],
+      "evidence_quote": "Dial 910 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fiji.gov.fj",
+          "tier": 1,
+          "title": "Fiji Government Emergency"
+        }
+      ],
+      "evidence_quote": "911 coordinates unified national emergency dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+679 672-2544",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji"
+        }
+      ],
+      "evidence_quote": "Tourist Police Unit based in Nadi operates at +679 672-2544",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/fiji",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Fiji Pasifik'in en huzurlu ve misafirperver ada destinasyonlarındandır; standart seyahat önlemleri yeterlidir.",
+      "en": "Fiji is very safe, peaceful, and welcoming; exercise normal travel precautions.",
+      "de": "Fidschi ist ein sehr sicheres und gastfreundliches Reiseziel; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Фиджи — исключительно безопасный и гостеприимный курорт; действуют обычные правила.",
+      "es": "Fiyi es un destino sumamente pacífico, seguro y hospitalario; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 36.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/fiji",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Fiji reach approximately 36.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 55.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/fiji",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 55.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Vodafone Fiji and Digicel offer tourist SIMs at Nadi International Airport (NAN). High-speed catamarans (South Sea Cruises) link Port Denarau to the Mamanuca and Yasawa island chains.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires passport presentation at airport arrival booths",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Tourism Fiji Guide",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.fiji.travel",
+        "tier": 1,
+        "title": "Tourism Fiji"
+      }
+    },
+    {
+      "name": "M-PAiSA Fiji",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.vodafone.com.fj",
+        "tier": 1,
+        "title": "Vodafone M-PAiSA"
+      }
+    },
+    {
+      "name": "South Sea Cruises App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ssc.com.fj",
+        "tier": 2,
+        "title": "South Sea Cruises"
+      }
+    },
+    {
+      "name": "Fiji Airways App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.fijiairways.com",
+        "tier": 1,
+        "title": "Fiji Airways"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 64%, predominantly Methodist), Hinduism (approx. 28%), and Islam (approx. 6%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.statsfiji.gov.fj",
+          "tier": 1,
+          "title": "Fiji Bureau of Statistics"
+        }
+      ],
+      "evidence_quote": "Indigenous Fijian Christian customs blend harmoniously with Indo-Fijian Hindu and Muslim heritage",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bula Festival in Nadi, Hibiscus Festival in Suva, Diwali (national public holiday), Fiji Day (October 10)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji"
+        }
+      ],
+      "evidence_quote": "Bula Festival and Diwali showcase colorful multicultural harmony across Fiji",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "When visiting indigenous Fijian villages, dress modestly (cover shoulders and wear a sulu/sarong below knees). Remove sunglasses and hats, and present a gift of waka (unpounded kava root) in the traditional sevusevu ceremony to the village chief.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji Cultural Etiquette"
+        }
+      ],
+      "evidence_quote": "Sevusevu is the traditional protocol of presenting kava when seeking permission to enter a Fijian village",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not customary or expected in Fijian culture. Resorts maintain an optional Christmas Staff Fund box at checkout for communal distribution to back-of-house staff.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji Travel Guide"
+        }
+      ],
+      "evidence_quote": "Tipping is neither encouraged nor expected; communal resort staff funds are preferred",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Yasawa Adaları Mercan Atolleri",
+        "en": "Yasawa Islands Coral Atolls",
+        "de": "Yasawa-Inseln Korallenatolle",
+        "ru": "Коралловые атоллы островов Ясава",
+        "es": "Atolones de Coral de las Islas Yasawa"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Mamanuca Adaları ve Mavi Lagün",
+        "en": "Mamanuca Islands & Blue Lagoon",
+        "de": "Mamanuca-Inseln & Blaue Lagune",
+        "ru": "Острова Маманука и Голубая лагуна",
+        "es": "Islas Mamanuca y Laguna Azul"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.fiji.travel",
+          "tier": 1,
+          "title": "Tourism Fiji"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Yasawa Adaları Mercan Atolü Tepeleri ve Turkuaz Koyu",
+        "license": "CC-BY-SA",
+        "author": "Rickard Törnblad",
+        "source_url": "/images/countries/fj-480.webp",
+        "attribution_text": "Yasawa Islands turquoise bay and coral hills in Fiji. Rickard Törnblad, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Yasawa Adaları Mercan Atolü Tepeleri ve Turkuaz Koyu, Fiji",
+          "en": "Yasawa Islands Coral Atoll Hills & Turquoise Bay, Fiji",
+          "de": "Yasawa-Inseln Korallenatoll-Hügel & Türkisbucht, Fidschi",
+          "ru": "Холмы кораллового атолла островов Ясава и бирюзовая бухта, Фиджи",
+          "es": "Colinas del Atolón de Coral de las Islas Yasawa y Bahía Turquesa, Fiyi"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "fiji",
+      "en": "fiji",
+      "de": "fidschi",
+      "ru": "fidzhi",
+      "es": "fiyi"
+    },
+    "title": {
+      "tr": "Fiji Vize Rehberi, 120 Gün Vizesiz Giriş, Kava Kültürü ve Yasawa | Vizamigo",
+      "en": "Fiji Visa Guide, 120-Day Visa-Free Rules, Kava Etiquette & Travel | Vizamigo",
+      "de": "Fidschi Visum-Leitfaden, 120 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза на Фиджи, 120 дней без визы, церемония кавы и острова Ясава | Vizamigo",
+      "es": "Guía de Visa de Fiyi, 120 Días sin Visa, Tradición del Kava | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Fiji Türk pasaportuna 120 gün vizesiz giriş, kava sevusevu seremonisi, Avustralya Tip I prizler, ada katamaranları ve Yasawa atolleri gezi rehberi.",
+      "en": "Fiji 120-day visa-free entry, traditional kava sevusevu etiquette, Type I sockets, inter-island catamarans, and Yasawa Islands guide.",
+      "de": "Fidschi 120 Tage visafreie Einreise, Kava-Zeremonie Sevusevu, Steckdosentyp I, Inselfähren und Reisetipps Yasawa-Inseln.",
+      "ru": "Правила въезда на Фиджи на 120 дней без визы, церемония севусеву с напитком кава, австралийские розетки Type I и острова Ясава.",
+      "es": "Requisitos de entrada sin visa a Fiyi (120 días), ceremonia de kava sevusevu, enchufes Tipo I y guía de las islas Yasawa."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

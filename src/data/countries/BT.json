@@ -1,0 +1,452 @@
+{
+  "iso2": "BT",
+  "names": {
+    "tr": "Butan",
+    "en": "Bhutan",
+    "de": "Bhutan",
+    "ru": "Бутан",
+    "es": "Bután"
+  },
+  "capital": {
+    "value": "Thimphu",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.thimphucity.bt",
+        "tier": 1,
+        "title": "Thimphu Thromde (City Corporation)"
+      }
+    ],
+    "evidence_quote": "Thimphu is the capital and largest city of the Kingdom of Bhutan in the western ravine valley",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BTN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.rma.org.bt",
+        "tier": 1,
+        "title": "Royal Monetary Authority of Bhutan"
+      }
+    ],
+    "evidence_quote": "The Bhutanese Ngultrum (BTN, Nu) is pegged at par (1:1) with the Indian Rupee; INR notes are legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+6 (BTT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nchm.gov.bt",
+        "tier": 1,
+        "title": "National Center for Hydrology and Meteorology Bhutan"
+      }
+    ],
+    "evidence_quote": "Bhutan Time operates year-round on UTC+6 without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bpc.bt",
+          "tier": 1,
+          "title": "Bhutan Power Corporation (BPC)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Bhutan is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bpc.bt",
+          "tier": 1,
+          "title": "BPC Bhutan"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout the Kingdom is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "D",
+        "F",
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "British Type D and G three-pin sockets and European Type F sockets are found in hotels",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "113",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rbp.gov.bt",
+          "tier": 1,
+          "title": "Royal Bhutan Police (RBP)"
+        }
+      ],
+      "evidence_quote": "Dial 113 for emergency police response across Bhutan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moh.gov.bt",
+          "tier": 1,
+          "title": "Ministry of Health Emergency Medical Services Bhutan"
+        }
+      ],
+      "evidence_quote": "Call 112 for health emergency ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rbp.gov.bt",
+          "tier": 1,
+          "title": "RBP Fire and Rescue Division"
+        }
+      ],
+      "evidence_quote": "Dial 110 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.bt",
+          "tier": 1,
+          "title": "Government of Bhutan Emergency Services"
+        }
+      ],
+      "evidence_quote": "112 is the central emergency operations number in Bhutan",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+975 2 323251",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bhutan.travel",
+          "tier": 1,
+          "title": "Department of Tourism of Bhutan"
+        }
+      ],
+      "evidence_quote": "Department of Tourism headquarters in Thimphu assists international travelers at +975 2 323251",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/bhutan",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Butan dünyanın en huzurlu ve en güvenli krallıklarındandır; seyahat için önceden vize ve Sürdürülebilir Kalkınma Ücreti (SDF) şarttır.",
+      "en": "Bhutan is exceptionally peaceful and safe; travelers must obtain an electronic visa and pay the Sustainable Development Fee (SDF).",
+      "de": "Bhutan ist eines der sichersten und friedlichsten Reiseländer der Erde; Visum und Nachhaltigkeitsgebühr (SDF) erforderlich.",
+      "ru": "Бутан — исключительно мирное и безопасное королевство; требуется оформление визы и уплата туристического сбора SDF.",
+      "es": "Bután es uno de los reinos más seguros y pacíficos del mundo; requiere visa previa y Tasa de Desarrollo Sostenible (SDF)."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 30.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bhutan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Bhutan reach approximately 30.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 42.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bhutan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Thimphu measure 42.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "B-Mobile (Bhutan Telecom) and TashiCell provide tourist 4G SIMs at Paro International Airport (PBH). The daily Sustainable Development Fee (SDF) of US$100 per person per night supports free healthcare, education, and carbon-negative forestry.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bhutan.travel",
+          "tier": 1,
+          "title": "Department of Tourism of Bhutan"
+        }
+      ],
+      "evidence_quote": "SDF levy of US$100 per adult per night is mandatory for all international visitors entering Bhutan",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bhutan Tourism Portal",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bhutan.travel",
+        "tier": 1,
+        "title": "Department of Tourism of Bhutan"
+      }
+    },
+    {
+      "name": "B-Mobile eTeeru",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.bt.bt",
+        "tier": 1,
+        "title": "Bhutan Telecom eTeeru"
+      }
+    },
+    {
+      "name": "Drukair App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.drukair.com.bt",
+        "tier": 1,
+        "title": "Drukair Royal Bhutan Airlines"
+      }
+    },
+    {
+      "name": "DrukRide",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://drukride.com",
+        "tier": 2,
+        "title": "DrukRide Taxi Bhutan"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Vajrayana Buddhism (approx. 75% official religion) and Hinduism (approx. 22%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nsb.gov.bt",
+          "tier": 1,
+          "title": "National Statistics Bureau of Bhutan"
+        }
+      ],
+      "evidence_quote": "Vajrayana Buddhism permeates national governance, philosophy of Gross National Happiness (GNH), and art",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Paro Tshechu (sacred cham masked dances), Thimphu Tshechu, Punakha Drubchen, Black-Necked Crane Festival in Phobjikha",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bhutan.travel",
+          "tier": 1,
+          "title": "Department of Tourism Bhutan"
+        }
+      ],
+      "evidence_quote": "Tshechu festivals feature monks in elaborate silk brocade masks performing spiritual Cham dances",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Strict dress code inside Dzongs (fortress-monasteries): long sleeves, long trousers/skirts, and collared shirts are mandatory. Photography is prohibited inside temple sanctums. Commercial sale of tobacco products is banned by law. Bhutan is the world's first carbon-negative country.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bhutan.travel",
+          "tier": 1,
+          "title": "Department of Tourism Guidelines"
+        }
+      ],
+      "evidence_quote": "Modest attire with full-length sleeves and trousers is strictly enforced in religious dzongs",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not traditional in Bhutanese daily life, but tipping dedicated tour guides and drivers ($10-15 per day for guide, $8-10 for driver) is standard for guided itineraries.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bhutan.travel",
+          "tier": 1,
+          "title": "Department of Tourism Travel Tips"
+        }
+      ],
+      "evidence_quote": "Tipping guides and drivers at the conclusion of cultural tours is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Paro Taktsang (Kaplan Yuvası) Uçurum Manastırı",
+        "en": "Paro Taktsang (Tiger's Nest) Cliff Monastery",
+        "de": "Tigernest-Kloster Paro Taktsang",
+        "ru": "Монастырь Такцанг-лакханг (Гнездо тигрицы)",
+        "es": "Monasterio del Nido del Tigre (Paro Taktsang)"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/5693/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Punakha Dzong Kalesi ve Asma Köprü",
+        "en": "Punakha Dzong Fortress & Suspension Bridge",
+        "de": "Punakha-Dzong Festung & Hängebrücke",
+        "ru": "Крепость Пунакха-дзонг",
+        "es": "Fortaleza Punakha Dzong y Puente Colgante"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://bhutan.travel",
+          "tier": 1,
+          "title": "Department of Tourism of Bhutan"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Paro Taktsang (Kaplan Yuvası) Uçurum Manastırı",
+        "license": "CC-BY-SA",
+        "author": "Gerd Eichmann",
+        "source_url": "/images/countries/bt-480.webp",
+        "attribution_text": "Paro Taktsang cliff monastery in Bhutan. Gerd Eichmann, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Paro Taktsang (Kaplan Yuvası) Uçurum Manastırı, Butan",
+          "en": "Paro Taktsang (Tiger's Nest) Cliff Monastery, Bhutan",
+          "de": "Felsenkloster Paro Taktsang (Tigernest), Bhutan",
+          "ru": "Монастырь Такцанг (Гнездо тигрицы) на скале, Бутан",
+          "es": "Monasterio de Paro Taktsang (Nido del Tigre) en el Acantilado, Bután"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "butan",
+      "en": "bhutan",
+      "de": "bhutan",
+      "ru": "butan",
+      "es": "butan"
+    },
+    "title": {
+      "tr": "Butan Vize Rehberi, SDF Günlük Turist Ücreti ve Kaplan Yuvası | Vizamigo",
+      "en": "Bhutan Visa Guide, SDF Tourist Fee Rules & Tiger's Nest Travel | Vizamigo",
+      "de": "Bhutan Visum-Leitfaden, SDF-Gebühr & Tigernest-Kloster | Vizamigo",
+      "ru": "Виза в Бутан, туристический сбор SDF и монастырь Гнездо тигрицы | Vizamigo",
+      "es": "Guía de Visa de Bután, Tasa Diaria SDF y Nido del Tigre | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Butan e-Vize başvuru kuralları, günlük 100$ Sürdürülebilir Kalkınma Ücreti (SDF), sigara satışı yasağı, Tip D/F/G prizler ve Paro Taktsang rehberi.",
+      "en": "Bhutan eVisa rules, mandatory $100 daily SDF sustainability fee, tobacco ban, Type D/F/G sockets, and Paro Taktsang Tiger's Nest guide.",
+      "de": "Bhutan E-Visum Bestimmungen, tägliche 100$ SDF-Gebühr, Rauchverbot, Steckdosentyp D/F/G und Tigernest-Kloster Paro Taktsang.",
+      "ru": "Правила оформления электронной визы в Бутан, посуточный сбор SDF $100, запрет табака, розетки Type D/F/G и монастырь Такцанг.",
+      "es": "Requisitos de eVisa para Bután, tasa turística diaria SDF de $100, prohibición de tabaco y monasterio Nido del Tigre."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

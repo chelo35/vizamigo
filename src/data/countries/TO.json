@@ -1,0 +1,450 @@
+{
+  "iso2": "TO",
+  "names": {
+    "tr": "Tonga",
+    "en": "Tonga",
+    "de": "Tonga",
+    "ru": "Тонга",
+    "es": "Tonga"
+  },
+  "capital": {
+    "value": "Nuku'alofa",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mic.gov.to",
+        "tier": 1,
+        "title": "Prime Minister's Office Kingdom of Tonga"
+      }
+    ],
+    "evidence_quote": "Nuku'alofa is the royal capital and seat of government of the Kingdom of Tonga on Tongatapu",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TOP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.reservebank.to",
+        "tier": 1,
+        "title": "National Reserve Bank of Tonga"
+      }
+    ],
+    "evidence_quote": "The Tongan Paʻanga (TOP, T$) is the official currency of the Kingdom of Tonga",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+13 (TOT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.met.gov.to",
+        "tier": 1,
+        "title": "Tonga Meteorological Services"
+      }
+    ],
+    "evidence_quote": "Tonga Time operates on UTC+13 year-round, among the first nations to greet each new calendar day",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongapower.to",
+          "tier": 1,
+          "title": "Tonga Power Limited (TPL)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across the Kingdom is 240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongapower.to",
+          "tier": 1,
+          "title": "Tonga Power Limited"
+        }
+      ],
+      "evidence_quote": "National electrical power grid operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Australian standard Type I three-pin angled plugs are standard throughout Tonga",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "922",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.to",
+          "tier": 1,
+          "title": "Tonga Police"
+        }
+      ],
+      "evidence_quote": "Dial 922 for emergency police response across Tongatapu, Vava'u, and Ha'apai",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "933",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://health.gov.to",
+          "tier": 1,
+          "title": "Vaiola Hospital Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 933 for hospital emergency medical dispatch and ambulance transport",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mic.gov.to",
+          "tier": 1,
+          "title": "Tonga Fire and Emergency Services"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.to",
+          "tier": 1,
+          "title": "Tonga Police Operations"
+        }
+      ],
+      "evidence_quote": "911 serves as an alternative unified emergency contact line",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+676 23555",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongatourism.gov.to",
+          "tier": 1,
+          "title": "Ministry of Tourism Tonga"
+        }
+      ],
+      "evidence_quote": "Tourism information office in Nuku'alofa assists visitors at +676 23555",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/tonga",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tonga Krallığı son derece huzurlu ve güvenli bir Pasifik monarşisidir; standart seyahat önlemleri yeterlidir.",
+      "en": "The Kingdom of Tonga is very peaceful, safe, and welcoming; exercise standard travel precautions.",
+      "de": "Das Königreich Tonga ist ein sehr friedliches und sicheres Reiseland; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Королевство Тонга — мирный и безопасный тихоокеанский архипелаг; действуют обычные правила.",
+      "es": "El Reino de Tonga es un destino sumamente pacífico y seguro; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 22.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tonga",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Tonga reach approximately 22.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 35.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tonga",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 35.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Digicel Tonga and TCC (Tonga Communications Corporation) provide 4G SIMs at Fua'amotu International Airport (TBU). Tonga is one of the only places on Earth where humans can ethically swim with wild humpback whales in warm breeding bays (July to October in Vava'u).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongatourism.gov.to",
+          "tier": 1,
+          "title": "Ministry of Tourism Tonga"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid passport verification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Tonga Tourism Portal",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.tongatourism.gov.to",
+        "tier": 1,
+        "title": "Ministry of Tourism Tonga"
+      }
+    },
+    {
+      "name": "Digicel MyCash Tonga",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.digicelpacific.com/mobile/to",
+        "tier": 2,
+        "title": "Digicel MyCash"
+      }
+    },
+    {
+      "name": "Real Tonga Ferries",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mic.gov.to",
+        "tier": 1,
+        "title": "Ministry of Infrastructure Tonga"
+      }
+    },
+    {
+      "name": "Lulutai Airlines App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://lulutai-airlines.com",
+        "tier": 1,
+        "title": "Lulutai Airlines Tonga"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 96%, predominantly Free Wesleyan Church of Tonga, Roman Catholic, and Mormon/LDS)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tongastats.gov.to",
+          "tier": 1,
+          "title": "Tonga Statistics Department"
+        }
+      ],
+      "evidence_quote": "Christian faith and the Royal Family are the twin constitutional pillars of Tongan society",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Heilala Festival in July (celebrating King Tupou VI's birthday with nationwide block parties), Vava'u Regatta, Kingdom Day",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongatourism.gov.to",
+          "tier": 1,
+          "title": "Ministry of Tourism Tonga Festivals"
+        }
+      ],
+      "evidence_quote": "Heilala Festival is Tonga's flagship national celebration featuring beauty pageants and traditional lakalaka dances",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Strict Sunday Sabbath is enshrined in the Tongan Constitution: all businesses, sports, and commercial flights are prohibited on Sundays. Modest dress is required in public (men and women must wear shirts and knee-length clothing in towns). Swimming without a licensed operator near humpback whales is strictly prohibited.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongatourism.gov.to",
+          "tier": 1,
+          "title": "Ministry of Tourism Tonga Regulations"
+        }
+      ],
+      "evidence_quote": "Under the Constitution of Tonga, Sunday is kept sacred; all trade and commerce are unlawful",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not customary and not expected in Tonga. Outstanding service is best recognized with sincere thanks ('Mālō 'aupito').",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tongatourism.gov.to",
+          "tier": 1,
+          "title": "Tonga Tourism Travel Tips"
+        }
+      ],
+      "evidence_quote": "Tipping is neither customary nor expected in Tongan culture",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Ha'amonga 'a Maui Antik Megalitik Taş Kapısı",
+        "en": "Ha'amonga 'a Maui Megalithic Trilithon",
+        "de": "Ha'amonga 'a Maui Megalith-Tor",
+        "ru": "Мегалитический трилит Хаамонга-а-Мауи",
+        "es": "Trilitón Megalítico de Ha'amonga 'a Maui"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/5169/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Vava'u Kambur Balina Yüzme Barınağı",
+        "en": "Vava'u Humpback Whale Swimming Sanctuary",
+        "de": "Buckelwal-Schutzgebiet Vava'u",
+        "ru": "Заповедник горбатых китов Вавау",
+        "es": "Santuario de Ballenas Jorobadas de Vava'u"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.tongatourism.gov.to",
+          "tier": 1,
+          "title": "Ministry of Tourism Tonga"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Ha'amonga 'a Maui Antik Megalitik Taş Kapısı, Tongatapu",
+        "license": "CC0",
+        "author": "Hobe / Holger Behr",
+        "source_url": "/images/countries/to-480.webp",
+        "attribution_text": "Ha'amonga 'a Maui megalithic trilithon stone gate in Tongatapu, Tonga. Hobe / Holger Behr, Public Domain / CC0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Ha'amonga 'a Maui Antik Megalitik Taş Kapısı, Tongatapu, Tonga",
+          "en": "Ha'amonga 'a Maui Megalithic Trilithon Gate, Tongatapu, Tonga",
+          "de": "Ha'amonga 'a Maui Megalith-Steintor, Tongatapu, Tonga",
+          "ru": "Древние мегалитические каменные ворота Хаамонга-а-Мауи, Тонгатапу, Тонга",
+          "es": "Puerta Megalítica de Piedra de Ha'amonga 'a Maui, Tongatapu, Tonga"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "tonga",
+      "en": "tonga",
+      "de": "tonga",
+      "ru": "tonga",
+      "es": "tonga"
+    },
+    "title": {
+      "tr": "Tonga Vize Rehberi, 30 Gün Ücretsiz Kapıda Vize, Pazar Yasağı ve Balinalar | Vizamigo",
+      "en": "Tonga Visa Guide, 30-Day Free Landing Visa, Sunday Sabbath & Whales | Vizamigo",
+      "de": "Tonga Visum-Leitfaden, 30 Tage visafrei & Buckelwale | Vizamigo",
+      "ru": "Виза в Тонга, 30 дней бесплатно по прибытии, воскресный шаббат и киты | Vizamigo",
+      "es": "Guía de Visa de Tonga, 30 Días Gratis a la Llegada, Reposo Dominical | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Tonga Türk pasaportuna 30 gün ücretsiz kapıda vize, anayasal Pazar günü dinlenme yasağı, Avustralya Tip I prizler, Vava'u kambur balina turları rehberi.",
+      "en": "Tonga 30-day free landing visa rules, constitutional Sunday business shutdown, Type I sockets, and Vava'u humpback whale swimming guide.",
+      "de": "Tonga 30 Tage kostenloses Visum bei Ankunft, verfassungsmäßige Sonntagsruhe, Steckdosentyp I und Buckelwal-Schwimmführer.",
+      "ru": "Правила въезда в Тонга на 30 дней без визы по прибытии, конституционный запрет торговли по воскресеньям, розетки Type I и киты.",
+      "es": "Requisitos de visa gratuita a la llegada a Tonga (30 días), prohibición de comercio dominical, enchufes Tipo I y nado con ballenas."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

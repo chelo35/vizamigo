@@ -1,0 +1,464 @@
+{
+  "iso2": "BD",
+  "names": {
+    "tr": "Bangladeş",
+    "en": "Bangladesh",
+    "de": "Bangladesch",
+    "ru": "Бангладеш",
+    "es": "Bangladés"
+  },
+  "capital": {
+    "value": "Dhaka",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://bangladesh.gov.bd",
+        "tier": 1,
+        "title": "National Web Portal of Bangladesh"
+      }
+    ],
+    "evidence_quote": "Dhaka is the capital and historic mega-city of the People's Republic of Bangladesh",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BDT",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bb.org.bd",
+        "tier": 1,
+        "title": "Bangladesh Bank"
+      }
+    ],
+    "evidence_quote": "The Bangladeshi Taka (BDT, ৳) is the official currency; trades around 118 BDT to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+6 (BST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://bmd.gov.bd",
+        "tier": 1,
+        "title": "Bangladesh Meteorological Department"
+      }
+    ],
+    "evidence_quote": "Bangladesh Standard Time is 6 hours ahead of UTC year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bpdb.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Power Development Board (BPDB)"
+        }
+      ],
+      "evidence_quote": "Standard single-phase domestic electrical supply across Bangladesh is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bpdb.gov.bd",
+          "tier": 1,
+          "title": "BPDB"
+        }
+      ],
+      "evidence_quote": "National alternating current grid operating frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "D",
+        "G",
+        "K"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Multi-standard sockets accept European Type C, British Type D, Type G, and Type K plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Police"
+        }
+      ],
+      "evidence_quote": "Dial 999 for national emergency police services across Bangladesh",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dghs.gov.bd",
+          "tier": 1,
+          "title": "Directorate General of Health Services Bangladesh"
+        }
+      ],
+      "evidence_quote": "Call 999 for national emergency ambulance and medical dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://fireservice.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Fire Service and Civil Defence"
+        }
+      ],
+      "evidence_quote": "Dial 999 or 102 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.bd",
+          "tier": 1,
+          "title": "National Emergency Service 999"
+        }
+      ],
+      "evidence_quote": "999 is the central unified national emergency dispatch center",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+880 1320-001299",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourist.police.gov.bd",
+          "tier": 1,
+          "title": "Tourist Police Bangladesh"
+        }
+      ],
+      "evidence_quote": "Tourist Police Bangladesh 24-hour command center operates at +880 1320-001299 and via 999",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/bangladesh",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Bangladeş'te siyasi gösteriler ve yoğun trafik nedeniyle dikkatli olunmalıdır; Sundarbans ve Cox's Bazar turistik bölgeleri rehber eşliğinde güvenlidir.",
+      "en": "Exercise increased caution due to political rallies and traffic congestion; the Sundarbans and Cox's Bazar are safe with registered guides.",
+      "de": "Erhöhte Vorsicht wegen politischer Demonstrationen und dichter Verkehrslage in Großstädten.",
+      "ru": "Проявляйте повышенную осторожность в связи с политическими митингами; курорт Кокс-Базар и Сундарбан безопасны с гидами.",
+      "es": "Actúe con mayor cautela debido a manifestaciones políticas; Sundarbans y Cox's Bazar son seguros con guías autorizados."
+    },
+    "regional_warnings": [
+      {
+        "area": "Chittagong Hill Tracts (Khagrachari, Rangamati, Bandarban)",
+        "level": 3,
+        "reason": "unrest",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "medium",
+      "civil_unrest": "high",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 24.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bangladesh",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Bangladesh reach approximately 24.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 44.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bangladesh",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Dhaka measure 44.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Grameenphone, Banglalink, and Robi provide prepaid 4G SIMs at Hazrat Shahjalal International Airport (DAC) in Dhaka. Biometric fingerprint registration and passport copy are mandatory for all SIM activations.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://btrc.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Telecommunication Regulatory Commission (BTRC)"
+        }
+      ],
+      "evidence_quote": "SIM card registration requires biometric verification and passport copy under BTRC directives",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Pathao",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://pathao.com",
+        "tier": 2,
+        "title": "Pathao Ride-Hailing & Delivery Bangladesh"
+      }
+    },
+    {
+      "name": "bKash",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.bkash.com",
+        "tier": 1,
+        "title": "bKash Mobile Financial Services"
+      }
+    },
+    {
+      "name": "Uber Bangladesh",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/bd/en/",
+        "tier": 2,
+        "title": "Uber Bangladesh"
+      }
+    },
+    {
+      "name": "Shohoz",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.shohoz.com",
+        "tier": 2,
+        "title": "Shohoz Bus & Train Ticketing"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (approx. 90%, predominantly Sunni) and Hinduism (approx. 9%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bbs.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Bureau of Statistics (BBS)"
+        }
+      ],
+      "evidence_quote": "Islam is the state religion while constitutionally guaranteeing religious harmony and freedom for minority faiths",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Pohela Boishakh (Bengali New Year on April 14 celebrated with Mangal Shobhajatra - UNESCO), Eid-ul-Fitr, Durga Puja, Language Martyrs' Day (Feb 21)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1091",
+          "tier": 1,
+          "title": "UNESCO Intangible Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "Mangal Shobhajatra on Bengali New Year is inscribed by UNESCO for its message of unity and secular celebration",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Dress conservatively: shoulders and legs should be covered in public; women should carry a scarf when visiting mosques. Avoid unbottled tap water and raw street salads. Friday is the religious holy day with many government offices and shops closed.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourismboard.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Tourism Board (BTB)"
+        }
+      ],
+      "evidence_quote": "Conservative attire respecting Islamic and Bengali cultural norms is expected in public spaces",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 5-10% is customary in upscale Dhaka restaurants. Tipping hotel luggage staff (50-100 BDT) and tour guides is standard practice.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourismboard.gov.bd",
+          "tier": 1,
+          "title": "BTB Visitor Tips"
+        }
+      ],
+      "evidence_quote": "A 5-10% tip is standard in hospitality and full-service dining",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sundarbans Mangrov Ormanları ve Bengal Kaplanı Barınağı",
+        "en": "The Sundarbans Mangrove Forest",
+        "de": "Sundarbans Mangrovenwald",
+        "ru": "Мангровые леса Сундарбан",
+        "es": "Bosque de Manglares de los Sundarbans"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/798",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Cox's Bazar Dünyanın En Uzun Doğal Sahili",
+        "en": "Cox's Bazar World's Longest Natural Sea Beach",
+        "de": "Cox's Bazar Längster Sandstrand der Welt",
+        "ru": "Кокс-Базар самый длинный песчаный пляж в мире",
+        "es": "Cox's Bazar Playa Natural Más Larga del Mundo"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://tourismboard.gov.bd",
+          "tier": 1,
+          "title": "Bangladesh Tourism Board"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sundarbans Mangrov Ormanları ve Bengal Deltası",
+        "license": "CC-BY-SA",
+        "author": "Shmunmun",
+        "source_url": "/images/countries/bd-480.webp",
+        "attribution_text": "Sundarbans mangrove riverways and Bengal tiger habitat in Bangladesh. Shmunmun, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Sundarbans Mangrov Ormanları ve Bengal Deltası, Bangladeş",
+          "en": "The Sundarbans Mangrove Forests & Bengal Delta, Bangladesh",
+          "de": "Sundarbans Mangrovenwälder und Bengalen-Delta, Bangladesch",
+          "ru": "Мангровые леса Сундарбан и дельта Бенгалии, Бангладеш",
+          "es": "Bosques de Manglares de Sundarbans y Delta de Bengala, Bangladés"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "banglades",
+      "en": "bangladesh",
+      "de": "bangladesch",
+      "ru": "bangladesh",
+      "es": "banglades"
+    },
+    "title": {
+      "tr": "Bangladeş Vize Rehberi, Kapıda Vize (VoA) Şartları ve Sundarbans | Vizamigo",
+      "en": "Bangladesh Visa Guide, Visa on Arrival Rules & Sundarbans Travel | Vizamigo",
+      "de": "Bangladesch Visum-Leitfaden, Visa on Arrival & Reisetipps | Vizamigo",
+      "ru": "Виза в Бангладеш, виза по прибытии и мангровые леса Сундарбан | Vizamigo",
+      "es": "Guía de Visa de Bangladés, Visa a la Llegada y Bosque de Sundarbans | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Bangladeş Türk pasaportuna 30 gün kapıda vize (VoA) şartları, bKash ve Pathao uygulamaları, çoklu priz tipleri ve Sundarbans Bengal kaplanı rehberi.",
+      "en": "Bangladesh 30-day Visa on Arrival rules, bKash & Pathao super-apps, electrical plug guide, and Sundarbans tiger safari advice.",
+      "de": "Bangladesch 30 Tage Visa on Arrival, bKash-Zahlungen, Pathao-Fahrten, Steckdosentypen und Sundarbans-Nationalpark.",
+      "ru": "Правила оформления визы по прибытии в Бангладеш на 30 дней, приложение bKash, розетки и сафари в мангровых лесах Сундарбан.",
+      "es": "Requisitos de visa a la llegada a Bangladés (30 días), pagos con bKash, enchufes y guía de los manglares de Sundarbans."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

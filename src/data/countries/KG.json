@@ -1,0 +1,451 @@
+{
+  "iso2": "KG",
+  "names": {
+    "tr": "Kırgızistan",
+    "en": "Kyrgyzstan",
+    "de": "Kirgisistan",
+    "ru": "Кыргызстан",
+    "es": "Kirguistán"
+  },
+  "capital": {
+    "value": "Bishkek",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://meria.kg",
+        "tier": 1,
+        "title": "Mayor's Office of Bishkek City"
+      }
+    ],
+    "evidence_quote": "Bishkek is the capital and largest metropolis of the Kyrgyz Republic",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "KGS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.nbkr.kg",
+        "tier": 1,
+        "title": "National Bank of the Kyrgyz Republic"
+      }
+    ],
+    "evidence_quote": "The Kyrgyzstani Som (KGS, с) is the official currency; trades around 89 KGS to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+6 (KGT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://meteo.kg",
+        "tier": 1,
+        "title": "Kyrgyzhydromet"
+      }
+    ],
+    "evidence_quote": "Kyrgyzstan Time operates year-round on UTC+6 without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nesk.kg",
+          "tier": 1,
+          "title": "National Electrical Grid of Kyrgyzstan (NESK)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Kyrgyzstan is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nesk.kg",
+          "tier": 1,
+          "title": "NESK"
+        }
+      ],
+      "evidence_quote": "The national electrical power grid operating frequency is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European standard Type C round two-pin and Schuko Type F sockets are universal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvd.gov.kg",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of the Kyrgyz Republic"
+        }
+      ],
+      "evidence_quote": "Dial 102 for emergency police assistance throughout Kyrgyzstan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://med.kg",
+          "tier": 1,
+          "title": "Ministry of Health of the Kyrgyz Republic"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mchs.gov.kg",
+          "tier": 1,
+          "title": "Ministry of Emergency Situations (MES) Kyrgyzstan"
+        }
+      ],
+      "evidence_quote": "Dial 101 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mchs.gov.kg",
+          "tier": 1,
+          "title": "MES Unified Emergency Service 112"
+        }
+      ],
+      "evidence_quote": "112 is the nationwide unified emergency dispatch number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+996 312 888 102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvd.gov.kg",
+          "tier": 1,
+          "title": "Tourist Police of Kyrgyzstan"
+        }
+      ],
+      "evidence_quote": "Tourist Police units patrol Bishkek and Issyk-Kul resort shores via +996 312 888 102 and 112",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Kırgızistan Orta Asya'nın en misafirperver ve dağ yürüyüşü için güvenli ülkelerindendir; standart seyahat önlemleri yeterlidir.",
+      "en": "Kyrgyzstan is exceptionally welcoming, scenic, and safe for mountain trekking; exercise normal precautions.",
+      "de": "Kirgisistan ist ein sicheres und gastfreundliches Reiseland für Bergwanderer; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Кыргызстан — одна из самых гостеприимных и безопасных стран Центральной Азии для горного туризма.",
+      "es": "Kirguistán es un destino sumamente acogedor y seguro para el senderismo de montaña; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 35.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kyrgyzstan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Kyrgyzstan reach approximately 35.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 62.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/kyrgyzstan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Bishkek measure 62.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Mega (MegaCom), Beeline KG, and O! offer cheap high-speed 4G eSIMs at Manas International Airport (FRU) in Bishkek. CBT (Community Based Tourism) operates homestays and yurt camps across Song-Kul and Issyk-Kul.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://digital.gov.kg",
+          "tier": 1,
+          "title": "Ministry of Digital Development of the Kyrgyz Republic"
+        }
+      ],
+      "evidence_quote": "SIM card purchases require passport registration under national communication laws",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yandex Go Kyrgyzstan",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://go.yandex.com/kg_ru",
+        "tier": 2,
+        "title": "Yandex Go Kyrgyzstan"
+      }
+    },
+    {
+      "name": "MBank (Commercial Bank Kyrgyzstan)",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://mbank.kg",
+        "tier": 1,
+        "title": "MBank Mobile App"
+      }
+    },
+    {
+      "name": "2GIS Bishkek",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://2gis.kg/bishkek",
+        "tier": 2,
+        "title": "2GIS Offline City Maps"
+      }
+    },
+    {
+      "name": "Glovo Kyrgyzstan",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/kg/en/",
+        "tier": 2,
+        "title": "Glovo Delivery Bishkek"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (approx. 88%, predominantly Sunni) and Russian Orthodoxy (approx. 10%) with deep nomadic heritage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stat.kg",
+          "tier": 1,
+          "title": "National Statistical Committee of the Kyrgyz Republic"
+        }
+      ],
+      "evidence_quote": "Nomadic pastoralist traditions, epic poetry (Manas), and Islamic faith shape Kyrgyz culture",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "World Nomad Games, Nooruz (Spring Equinox on March 21), National Horse Games Festival (Kok-Boru at Song-Kul), Birds of Prey Festival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourism.gov.kg",
+          "tier": 1,
+          "title": "Department of Tourism of the Kyrgyz Republic"
+        }
+      ],
+      "evidence_quote": "Kok-Boru horse games and salburun eagle falconry are central to traditional nomadic festivals",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Never step on or walk across the dastarkhan (tablecloth spread on the floor for meals). When staying in yurts, remove your shoes before stepping onto carpets. Taking photos of border checkpoints or military areas is strictly forbidden. Russian and Kyrgyz are both official languages.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourism.gov.kg",
+          "tier": 1,
+          "title": "Department of Tourism Guide"
+        }
+      ],
+      "evidence_quote": "Nomadic hospitality etiquettes regarding yurt entries and dastarkhan are deeply revered",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10-15% service charge is automatically added to restaurant bills in Bishkek. Tipping mountain trekking horsemen and guides ($5-10 per day) is customary.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://tourism.gov.kg",
+          "tier": 1,
+          "title": "Department of Tourism Travel Tips"
+        }
+      ],
+      "evidence_quote": "Most urban restaurants include a 10-15% service fee directly on the bill",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Issık Göl (Issyk-Kul) Alpin Gölü ve Karlı Tanrı Dağları",
+        "en": "Issyk-Kul Alpine Lake & Tian Shan Peaks",
+        "de": "Issyk-Kul Hochgebirgssee & Tian Shan",
+        "ru": "Высокогорное озеро Иссык-Куль и пики Тянь-Шаня",
+        "es": "Lago Alpino Issyk-Kul y Picos de Tian Shan"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/1607/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ala-Arça Ulusal Parkı ve Song-Köl Yurt Kampları",
+        "en": "Ala-Archa National Park & Song-Kul Yurt Camps",
+        "de": "Ala-Artscha Nationalpark & Song-Köl Jurten-Camps",
+        "ru": "Национальный парк Ала-Арча и юртовые лагеря Сон-Куль",
+        "es": "Parque Nacional Ala-Archa y Campamentos de Yurts de Song-Kul"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://tourism.gov.kg",
+          "tier": 1,
+          "title": "Department of Tourism of the Kyrgyz Republic"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Issık Göl (Issyk-Kul) ve Karlı Tanrı Dağları (Tian Shan)",
+        "license": "CC-BY",
+        "author": "Ninara from Helsinki",
+        "source_url": "/images/countries/kg-480.webp",
+        "attribution_text": "Issyk-Kul Lake and Tian Shan snow-capped peaks in Kyrgyzstan. Ninara from Helsinki, CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Issık Göl (Issyk-Kul) ve Karlı Tanrı Dağları (Tian Shan), Kırgızistan",
+          "en": "Issyk-Kul Alpine Lake & Tian Shan Mountains, Kyrgyzstan",
+          "de": "Issyk-Kul Hochgebirgssee & Tian-Shan-Gebirge, Kirgisistan",
+          "ru": "Высокогорное озеро Иссык-Куль и заснеженные хребты Тянь-Шаня, Кыргызстан",
+          "es": "Lago Alpino Issyk-Kul y Cordillera de Tian Shan, Kirguistán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "kirgizistan",
+      "en": "kyrgyzstan",
+      "de": "kirgisistan",
+      "ru": "kyrgyzstan",
+      "es": "kirguistan"
+    },
+    "title": {
+      "tr": "Kırgızistan Vize Rehberi, 90 Gün Vizesiz Giriş, Issık Göl ve Yurt Kampları | Vizamigo",
+      "en": "Kyrgyzstan Visa Guide, 90-Day Visa-Free Rules, Issyk-Kul & Yurts | Vizamigo",
+      "de": "Kirgisistan Visum-Leitfaden, 90 Tage visafrei & Issyk-Kul Reisetipps | Vizamigo",
+      "ru": "Виза в Кыргызстан, 90 дней без визы, озеро Иссык-Куль и юрты | Vizamigo",
+      "es": "Guía de Visa de Kirguistán, 90 Días sin Visa y Lago Issyk-Kul | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Kırgızistan Türk pasaportuna 90 gün vizesiz giriş, Yandex Go ve MBank kullanımı, Tip C/F prizler, Tanrı Dağları ve Issık Göl gezi rehberi.",
+      "en": "Kyrgyzstan 90-day visa-free rules, Yandex Go & MBank apps, Type C/F plugs, Tian Shan trekking, and Issyk-Kul yurt guide.",
+      "de": "Kirgisistan 90 Tage visafreie Einreise, Yandex Go Taxi, Steckdosentyp C/F, Tian-Shan-Trekking und Issyk-Kul-Reiseführer.",
+      "ru": "Правила въезда в Кыргызстан на 90 дней без визы, такси Yandex Go, розетки Type C/F, треккинг на Тянь-Шане и озеро Иссык-Куль.",
+      "es": "Requisitos de entrada sin visa a Kirguistán (90 días), aplicación Yandex Go, enchufes Tipo C/F y lago Issyk-Kul."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

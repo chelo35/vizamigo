@@ -1,0 +1,450 @@
+{
+  "iso2": "BN",
+  "names": {
+    "tr": "Brunei",
+    "en": "Brunei",
+    "de": "Brunei",
+    "ru": "Бруней",
+    "es": "Brunéi"
+  },
+  "capital": {
+    "value": "Bandar Seri Begawan",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.bn",
+        "tier": 1,
+        "title": "Government of Brunei Darussalam"
+      }
+    ],
+    "evidence_quote": "Bandar Seri Begawan is the capital and royal seat of the Sultanate of Brunei Darussalam",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BND",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bdcb.gov.bn",
+        "tier": 1,
+        "title": "Brunei Darussalam Central Bank (BDCB)"
+      }
+    ],
+    "evidence_quote": "The Brunei Dollar (BND) is pegged 1:1 with the Singapore Dollar; SGD is interchangeable and legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (BNT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.met.gov.bn",
+        "tier": 1,
+        "title": "Brunei Darussalam Meteorological Department"
+      }
+    ],
+    "evidence_quote": "Brunei Darussalam operates on UTC+8 year-round without seasonal clock changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://des.gov.bn",
+          "tier": 1,
+          "title": "Department of Electrical Services Brunei (DES)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Brunei is 240V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://des.gov.bn",
+          "tier": 1,
+          "title": "DES Brunei"
+        }
+      ],
+      "evidence_quote": "The national alternating power grid operating frequency is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "British standard Type G rectangular three-pin plugs and sockets are universal throughout Brunei",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "993",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.bn",
+          "tier": 1,
+          "title": "Royal Brunei Police Force (RBPF)"
+        }
+      ],
+      "evidence_quote": "Dial 993 for emergency police response throughout Brunei",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "991",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moh.gov.bn",
+          "tier": 1,
+          "title": "Ministry of Health Emergency Medical Ambulance Services"
+        }
+      ],
+      "evidence_quote": "Call 991 for national emergency medical dispatch and hospital ambulance transport",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "995",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://fire-rescue.gov.bn",
+          "tier": 1,
+          "title": "Fire and Rescue Department Brunei"
+        }
+      ],
+      "evidence_quote": "Dial 995 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "993",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://police.gov.bn",
+          "tier": 1,
+          "title": "RBPF Command Center"
+        }
+      ],
+      "evidence_quote": "993 coordinates central emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+673 238 0022",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bruneitourism.com",
+          "tier": 1,
+          "title": "Tourism Development Department Brunei"
+        }
+      ],
+      "evidence_quote": "Tourism Development Department in Bandar Seri Begawan assists visitors at +673 238 0022",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/brunei",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Brunei Sultanlığı dünyanın en huzurlu ve düşük suç oranına sahip ülkelerindendir; standart seyahat önlemleri yeterlidir.",
+      "en": "Brunei Darussalam is exceptionally peaceful with very low crime; exercise standard travel precautions.",
+      "de": "Brunei ist ein sehr sicheres und friedliches Sultanat; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Бруней — одно из самых спокойных и безопасных государств мира; действуют обычные правила.",
+      "es": "Brunéi es un sultanato sumamente pacífico, seguro y ordenado; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 82.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/brunei",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Brunei exceed 82.0 Mbps with nationwide 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 75.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/brunei",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Brunei measure 75.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "DST, Progresif, and imagine provide prepaid tourist SIMs at Brunei International Airport (BWN). Visitors must complete the digital E-Arrival Card (imm.gov.bn) prior to arrival.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.aitb.gov.bn",
+          "tier": 1,
+          "title": "Authority for Info-communications Technology Industry (AITI)"
+        }
+      ],
+      "evidence_quote": "SIM card registration requires valid passport verification under AITI telecommunications rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Dart Brunei",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://dartbrunei.com",
+        "tier": 2,
+        "title": "Dart - Brunei's Ride-Hailing App"
+      }
+    },
+    {
+      "name": "BruHealth",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://healthinfo.gov.bn",
+        "tier": 1,
+        "title": "Ministry of Health Brunei BruHealth"
+      }
+    },
+    {
+      "name": "HeyDomo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://heydomo.com",
+        "tier": 2,
+        "title": "HeyDomo Delivery Brunei"
+      }
+    },
+    {
+      "name": "Royal Brunei Airlines App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.flyroyalbrunei.com",
+        "tier": 1,
+        "title": "Royal Brunei Airlines"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (approx. 82% official religion, Sunni Shafi'i jurisprudence), Buddhism (approx. 7%), and Christianity (approx. 7%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://deps.mofe.gov.bn",
+          "tier": 1,
+          "title": "Department of Economic Planning and Statistics Brunei"
+        }
+      ],
+      "evidence_quote": "The national philosophy of Melayu Islam Beraja (Malay Islamic Monarchy) defines moral and civic life",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "His Majesty the Sultan's Birthday (July 15 with fireworks and royal audiences), National Day (Feb 23), Hari Raya Aidilfitri, Chinese New Year",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bruneitourism.com",
+          "tier": 1,
+          "title": "Brunei Tourism Events"
+        }
+      ],
+      "evidence_quote": "During Hari Raya Aidilfitri, the Istana Nurul Iman royal palace opens its doors to the public for three days",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Alcohol sales and public consumption are strictly prohibited nationwide. Non-Muslim adult travelers may import up to 2 bottles of liquor (up to 2 liters total) and 12 cans of beer for private consumption only, declared on arrival. Dress modestly with shoulders and knees covered in public. Friday noon prayers (12:00-14:00) require all commercial businesses to close.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mofe.gov.bn",
+          "tier": 1,
+          "title": "Royal Customs and Excise Department Brunei"
+        }
+      ],
+      "evidence_quote": "Non-Muslims entering Brunei must declare personal alcohol allowances under Customs regulations",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not customary in Brunei as a 10% service charge is included in upscale restaurant and hotel bills.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bruneitourism.com",
+          "tier": 1,
+          "title": "Brunei Tourism Guidelines"
+        }
+      ],
+      "evidence_quote": "Tipping is not expected as standard service charge is included in invoices",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Sultan Ömer Ali Seyfeddin Camii ve Altın Kubbesi",
+        "en": "Sultan Omar Ali Saifuddien Mosque & Golden Dome",
+        "de": "Sultan-Omar-Ali-Saifuddien-Moschee",
+        "ru": "Мечеть Султана Омара Али Сайфуддина",
+        "es": "Mezquita del Sultán Omar Ali Saifuddien"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.bruneitourism.com",
+          "tier": 1,
+          "title": "Brunei Tourism"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kampong Ayer Tarihi Su Köyü ve Ulu Temburong Yağmur Ormanı",
+        "en": "Kampong Ayer Water Village & Ulu Temburong National Park",
+        "de": "Wasserdorf Kampong Ayer & Ulu Temburong Nationalpark",
+        "ru": "Водная деревня Кампонг-Айер и национальный парк Улу-Тембуронг",
+        "es": "Pueblo Flotante Kampong Ayer y Parque Nacional Ulu Temburong"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://www.bruneitourism.com",
+          "tier": 1,
+          "title": "Brunei Tourism"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Sultan Ömer Ali Seyfeddin Camii ve Altın Kubbesi",
+        "license": "CC-BY",
+        "author": "sam garza from Los Angeles, USA",
+        "source_url": "/images/countries/bn-480.webp",
+        "attribution_text": "Sultan Omar Ali Saifuddien Mosque in Bandar Seri Begawan, Brunei. sam garza, CC BY 2.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Sultan Ömer Ali Seyfeddin Camii ve Altın Kubbesi, Brunei",
+          "en": "Sultan Omar Ali Saifuddien Mosque & Golden Dome, Brunei",
+          "de": "Sultan-Omar-Ali-Saifuddien-Moschee mit goldener Kuppel, Brunei",
+          "ru": "Мечеть Султана Омара Али Сайфуддина с золотым куполом, Бруней",
+          "es": "Mezquita del Sultán Omar Ali Saifuddien y Cúpula Dorada, Brunéi"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "brunei",
+      "en": "brunei",
+      "de": "brunei",
+      "ru": "brunej",
+      "es": "brunei"
+    },
+    "title": {
+      "tr": "Brunei Vize Rehberi, 30 Gün Vizesiz Giriş, Alkol Yasakları ve Camiler | Vizamigo",
+      "en": "Brunei Visa Guide, 30-Day Visa-Free Rules, Alcohol Laws & Travel | Vizamigo",
+      "de": "Brunei Visum-Leitfaden, 30 Tage visafrei, Alkoholregeln & Reisetipps | Vizamigo",
+      "ru": "Виза в Бруней, 30 дней без визы, сухой закон и мечеть Омара Али Сайфуддина | Vizamigo",
+      "es": "Guía de Visa de Brunéi, 30 Días sin Visa, Ley Seca y Mezquitas | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Brunei Türk pasaportuna 30 gün vizesiz giriş, Singapur Doları geçerliliği, alkol satış yasağı, Tip G prizler, Dart taksi ve Sultan Camii rehberi.",
+      "en": "Brunei 30-day visa-free rules, Singapore Dollar 1:1 interchangeability, alcohol import laws, Type G plugs, and Sultan Omar Mosque guide.",
+      "de": "Brunei 30 Tage visafreie Einreise, Singapur-Dollar-Akzeptanz, Alkoholverbot, Steckdosentyp G und Sultan-Omar-Ali-Moschee.",
+      "ru": "Правила въезда в Бруней на 30 дней без визы, паритет с сингапурским долларом, сухой закон, розетки Type G и мечеть Султана Омара.",
+      "es": "Requisitos de entrada sin visa a Brunéi (30 días), aceptación del dólar de Singapur, prohibición de alcohol y mezquita del Sultán."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

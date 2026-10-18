@@ -1,0 +1,462 @@
+{
+  "iso2": "TJ",
+  "names": {
+    "tr": "Tacikistan",
+    "en": "Tajikistan",
+    "de": "Tadschikistan",
+    "ru": "Таджикистан",
+    "es": "Tayikistán"
+  },
+  "capital": {
+    "value": "Dushanbe",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://dushanbe.tj",
+        "tier": 1,
+        "title": "Executive Body of State Power in Dushanbe"
+      }
+    ],
+    "evidence_quote": "Dushanbe is the capital and largest urban metropolis of the Republic of Tajikistan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TJS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nbt.tj",
+        "tier": 1,
+        "title": "National Bank of Tajikistan"
+      }
+    ],
+    "evidence_quote": "The Tajikistani Somoni (TJS, сом) is the official currency; trades around 10.9 TJS to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+5 (TJT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://meteo.tj",
+        "tier": 1,
+        "title": "Agency for Hydrometeorology of Tajikistan"
+      }
+    ],
+    "evidence_quote": "Tajikistan Time operates year-round on UTC+5 with no daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://barqitojik.tj",
+          "tier": 1,
+          "title": "Barqi Tojik National Electricity Company"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Tajikistan is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://barqitojik.tj",
+          "tier": 1,
+          "title": "Barqi Tojik"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European standard Type C round two-pin and Schuko Type F sockets are standard",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mvd.tj",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of the Republic of Tajikistan"
+        }
+      ],
+      "evidence_quote": "Dial 102 for emergency police response throughout Tajikistan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://moh.tj",
+          "tier": 1,
+          "title": "Ministry of Health and Social Protection Tajikistan"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mchs.tj",
+          "tier": 1,
+          "title": "Committee on Emergency Situations and Civil Defence (CoES)"
+        }
+      ],
+      "evidence_quote": "Dial 101 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mchs.tj",
+          "tier": 1,
+          "title": "CoES Emergency Operations"
+        }
+      ],
+      "evidence_quote": "112 is the unified national emergency dispatch contact number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+992 37 221-1212",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://traveltajikistan.tj",
+          "tier": 1,
+          "title": "Tourism Development Committee of Tajikistan"
+        }
+      ],
+      "evidence_quote": "Tourist Police department under the Ministry of Internal Affairs operates at +992 37 221-1212",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/tajikistan",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tacikistan son derece huzurlu ve büyüleyici bir dağ ülkesidir; Afganistan sınır hattında standart dikkat gereklidir.",
+      "en": "Tajikistan is very peaceful and scenic; exercise normal precautions, with vigilance along the Afghan border.",
+      "de": "Tadschikistan ist ein friedliches Gebirgsland; normale Vorsichtsmaßnahmen, erhöht entlang der Grenze zu Afghanistan.",
+      "ru": "Таджикистан в целом безопасен и дружелюбен; проявляйте осторожность в приграничной полосе с Афганистаном.",
+      "es": "Tayikistán es un país montañoso pacífico; aplican precauciones normales con cautela en la frontera afgana."
+    },
+    "regional_warnings": [
+      {
+        "area": "Border region with Afghanistan",
+        "level": 2,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 20.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tajikistan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Tajikistan reach approximately 20.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 36.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/tajikistan",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Dushanbe measure 36.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Tcell, MegaFon Tajikistan, and Babilon-M provide 4G SIM cards in Dushanbe (DYU airport). Stays exceeding 10 business days require official OVIR police registration. Pamir Highway expeditions require a separate GBAO permit.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://traveltajikistan.tj",
+          "tier": 1,
+          "title": "Tourism Development Committee of Tajikistan"
+        }
+      ],
+      "evidence_quote": "Foreigners staying over 10 working days must register with the migration authority (OVIR)",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yandex Go Dushanbe",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://go.yandex.com/tj_ru",
+        "tier": 2,
+        "title": "Yandex Go Tajikistan"
+      }
+    },
+    {
+      "name": "Alif Mobi",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://alif.tj",
+        "tier": 1,
+        "title": "Alif Bank Mobile Wallet"
+      }
+    },
+    {
+      "name": "Tcell Wallet",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tcell.tj",
+        "tier": 2,
+        "title": "Tcell TezSum"
+      }
+    },
+    {
+      "name": "Somon Air App",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://somonair.com",
+        "tier": 1,
+        "title": "Somon Air"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Islam (approx. 96%, predominantly Sunni Hanafi approx. 90% and Ismaili Shia approx. 5% in the Pamirs)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://stat.tj",
+          "tier": 1,
+          "title": "Agency on Statistics under the President of the Republic of Tajikistan"
+        }
+      ],
+      "evidence_quote": "Sunni traditions dominate western valleys; Pamiri communities in Badakhshan practice Ismaili Islam",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Navruz (Persian New Year on March 21-24), Mehrgon autumn harvest, Roof of the World Cultural Festival in Khorog, Eid festivals",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://traveltajikistan.tj",
+          "tier": 1,
+          "title": "Tourism Committee Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "Navruz is the most grand annual holiday celebrated with sumanak wheat pudding and buzkashi horse games",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "A special GBAO (Gorno-Badakhshan Autonomous Oblast) permit is legally required to travel the Pamir Highway; obtain it during e-Visa application or at OVIR in Dushanbe. Foreigners staying over 10 working days must register with migration police. Modest dress is standard.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://evisa.tj",
+          "tier": 1,
+          "title": "Tajikistan E-Visa Portal"
+        }
+      ],
+      "evidence_quote": "Travel into the GBAO border territory requires an official electronic or endorsed permit",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10-15% service charge is usually included on restaurant bills in Dushanbe. Tipping Pamir Highway 4x4 drivers and homestay hosts ($10-15 per day) is customary.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://traveltajikistan.tj",
+          "tier": 1,
+          "title": "Tourism Committee Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10% service fee is included on restaurant bills; tipping mountain expedition drivers is standard",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "İskenderkul Alpin Gölü ve Fann Dağları",
+        "en": "Iskanderkul Alpine Lake & Fann Mountains",
+        "de": "Iskanderkul-See & Fann-Gebirge",
+        "ru": "Озеро Искандеркуль и Фанские горы",
+        "es": "Lago Alpino Iskanderkul y Montañas Fann"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/tentativelists/2108/",
+          "tier": 1,
+          "title": "UNESCO Tentative List"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Pamir Otoyolu (M41 Dünyanın Çatısı)",
+        "en": "Pamir Highway (M41 Roof of the World)",
+        "de": "Pamir Highway (M41 Dach der Welt)",
+        "ru": "Памирский тракт (М41 Крыша мира)",
+        "es": "Carretera del Pamir (M41 Techo del Mundo)"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://traveltajikistan.tj",
+          "tier": 1,
+          "title": "Tourism Development Committee of Tajikistan"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "İskenderkul Turkuaz Alpin Gölü ve Fann Dağları",
+        "license": "CC-BY-SA",
+        "author": "Rjruiziii",
+        "source_url": "/images/countries/tj-480.webp",
+        "attribution_text": "Iskanderkul alpine lake and Fann Mountains in Tajikistan. Rjruiziii, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "İskenderkul Turkuaz Alpin Gölü ve Fann Dağları, Tacikistan",
+          "en": "Iskanderkul Turquoise Alpine Lake & Fann Mountains, Tajikistan",
+          "de": "Iskanderkul Türkis-Hochgebirgssee & Fann-Gebirge, Tadschikistan",
+          "ru": "Бирюзовое высокогорное озеро Искандеркуль и Фанские горы, Таджикистан",
+          "es": "Lago Alpino Turquesa Iskanderkul y Montañas Fann, Tayikistán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "tacikistan",
+      "en": "tajikistan",
+      "de": "tadschikistan",
+      "ru": "tadzhikistan",
+      "es": "tayikistan"
+    },
+    "title": {
+      "tr": "Tacikistan Vize Rehberi, 30 Gün Vizesiz Giriş, Pamir İzni ve İskenderkul | Vizamigo",
+      "en": "Tajikistan Visa Guide, 30-Day Visa-Free Rules, GBAO Permit & Travel | Vizamigo",
+      "de": "Tadschikistan Visum-Leitfaden, 30 Tage visafrei & Pamir Highway | Vizamigo",
+      "ru": "Виза в Таджикистан, 30 дней без визы, пропуск ГБАО и озеро Искандеркуль | Vizamigo",
+      "es": "Guía de Visa de Tayikistán, 30 Días sin Visa, Permiso GBAO | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Tacikistan Türk pasaportuna 30 gün vizesiz giriş, Pamir Yolu GBAO izin şartları, OVIR kaydı, Tip C/F prizler ve İskenderkul gölü gezi rehberi.",
+      "en": "Tajikistan 30-day visa-free rules, Pamir Highway GBAO permit instructions, OVIR police registration, Type C/F plugs, and Iskanderkul guide.",
+      "de": "Tadschikistan 30 Tage visafreie Einreise, GBAO-Genehmigung für den Pamir Highway, OVIR-Registrierung und Reiseführer Iskanderkul.",
+      "ru": "Правила въезда в Таджикистан на 30 дней без визы, оформление пропуска на Памир ГБАО, регистрация ОВИР, розетки Type C/F и Искандеркуль.",
+      "es": "Requisitos de entrada sin visa a Tayikistán (30 días), permiso GBAO para la carretera del Pamir, registro OVIR y lago Iskanderkul."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

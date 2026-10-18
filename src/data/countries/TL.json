@@ -1,0 +1,453 @@
+{
+  "iso2": "TL",
+  "names": {
+    "tr": "Doğu Timor",
+    "en": "Timor-Leste",
+    "de": "Osttimor",
+    "ru": "Восточный Тимор",
+    "es": "Timor Oriental"
+  },
+  "capital": {
+    "value": "Dili",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://timor-leste.gov.tl",
+        "tier": 1,
+        "title": "Government of Timor-Leste"
+      }
+    ],
+    "evidence_quote": "Dili is the capital, primary commercial center, and chief port of the Democratic Republic of Timor-Leste",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "USD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bancocentral.tl",
+        "tier": 1,
+        "title": "Banco Central de Timor-Leste"
+      }
+    ],
+    "evidence_quote": "The United States Dollar (USD) is the official currency; centavo coins are minted locally for change",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+9 (TLT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://timor-leste.gov.tl",
+        "tier": 1,
+        "title": "Direcção Nacional de Meteorologia e Geofísica"
+      }
+    ],
+    "evidence_quote": "Timor-Leste Time operates year-round on UTC+9 with no daylight saving time adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://edtl.tl",
+          "tier": 1,
+          "title": "Electricidade de Timor-Leste (EDTL)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Timor-Leste is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://edtl.tl",
+          "tier": 1,
+          "title": "EDTL"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national electrical grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "E",
+        "F",
+        "I"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European Type C and F two-pin sockets and Australian Type I sockets are both encountered",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pntl.tl",
+          "tier": 1,
+          "title": "Polícia Nacional de Timor-Leste (PNTL)"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency police response throughout Timor-Leste",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ms.gov.tl",
+          "tier": 1,
+          "title": "Hospital Nacional Guido Valadares (HNGV) Emergency Ambulance"
+        }
+      ],
+      "evidence_quote": "Call 110 for emergency medical services and national ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pntl.tl",
+          "tier": 1,
+          "title": "Bombeiros de Timor-Leste"
+        }
+      ],
+      "evidence_quote": "Dial 115 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://pntl.tl",
+          "tier": 1,
+          "title": "PNTL Command Center"
+        }
+      ],
+      "evidence_quote": "112 coordinates central national emergency response",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+670 333 1120",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://timorleste.tl",
+          "tier": 1,
+          "title": "Ministry of Tourism, Commerce and Industry Timor-Leste"
+        }
+      ],
+      "evidence_quote": "National tourism information office in Dili operates at +670 333 1120",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/timor-leste",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Doğu Timor Güneydoğu Asya'nın en el değmemiş ve huzurlu ülkelerindendir; standart seyahat önlemleri yeterlidir.",
+      "en": "Timor-Leste is very peaceful and scenic; exercise normal travel precautions.",
+      "de": "Osttimor ist ein sicheres und noch unberührtes Reiseland; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Восточный Тимор — спокойное и аутентичное государство; действуют обычные правила.",
+      "es": "Timor Oriental es un destino sumamente pacífico y prístino; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 25.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/timor-leste",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Timor-Leste reach approximately 25.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 35.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/timor-leste",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Dili measure 35.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Telemor (Viettel), Timor Telecom, and Telkomcel provide 4G SIMs at Presidente Nicolau Lobato International Airport (DIL). Visa on Arrival is $30 USD in cash at Dili airport.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://anc.tl",
+          "tier": 1,
+          "title": "National Communications Authority (ANC) Timor-Leste"
+        }
+      ],
+      "evidence_quote": "Prepaid cellular registration requires valid passport verification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Timor Tourism Portal",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://timorleste.tl",
+        "tier": 1,
+        "title": "Timor-Leste Tourism"
+      }
+    },
+    {
+      "name": "Mosan Telemor",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://telemor.tl",
+        "tier": 1,
+        "title": "Telemor Mosan E-Wallet"
+      }
+    },
+    {
+      "name": "Dili Taxi Association",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://timorleste.tl",
+        "tier": 1,
+        "title": "Ministry of Transport Timor-Leste"
+      }
+    },
+    {
+      "name": "Berlin Nakroma Ferry",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://timor-leste.gov.tl",
+        "tier": 1,
+        "title": "National Directorate of Maritime Transport"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 97% of population; Asia's most Catholic nation alongside the Philippines)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://statistics.gov.tl",
+          "tier": 1,
+          "title": "General Directorate of Statistics Timor-Leste"
+        }
+      ],
+      "evidence_quote": "Roman Catholicism is deeply embraced alongside indigenous animist lulik traditions and sacred houses (uma lulik)",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Restoration of Independence Day (May 20), Popular Consultation Day (August 30), Dili International Marathon, Santa Cruz Day",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://timorleste.tl",
+          "tier": 1,
+          "title": "Timor-Leste Cultural Calendar"
+        }
+      ],
+      "evidence_quote": "May 20 Restoration of Independence is celebrated with parades and cultural performances nationwide",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Respect sacred traditional houses (uma lulik) and ancestral totems; never enter without community elders' invitation. Crocodiles (lafaek) are revered as sacred ancestral creators in Timorese mythology; heed beach crocodile warning flags strictly. Tetum and Portuguese are official.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://timorleste.tl",
+          "tier": 1,
+          "title": "Timor-Leste Cultural Etiquette"
+        }
+      ],
+      "evidence_quote": "Saltwater crocodiles hold sacred status in local myth; observe cautionary signs on northern beaches",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not traditional in Timor-Leste, but leaving 5-10% in hotel dining or rounding up taxi fares is appreciated.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://timorleste.tl",
+          "tier": 1,
+          "title": "Timor-Leste Travel Tips"
+        }
+      ],
+      "evidence_quote": "Tipping is not customary but small tips for good service are welcomed",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Cristo Rei Heykeli ve Dili Körfezi Sahili",
+        "en": "Cristo Rei Statue & Dili Bay Beach",
+        "de": "Cristo Rei Statue & Bucht von Dili",
+        "ru": "Статуя Христа Царя (Кришту-Рей) и залив Дили",
+        "es": "Estatua de Cristo Rey y Bahía de Dili"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://timorleste.tl",
+          "tier": 1,
+          "title": "Timor-Leste Tourism"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Atauro Adası Dünyanın En Biyoçeşitli Mercan Resifi",
+        "en": "Atauro Island World's Most Biodiverse Reef",
+        "de": "Insel Atauro Artenreichstes Riff der Welt",
+        "ru": "Остров Атауро самый биоразнообразный коралловый риф",
+        "es": "Isla de Atauro Arrecife Más Biodiverso del Mundo"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://timorleste.tl",
+          "tier": 1,
+          "title": "Timor-Leste Tourism"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Cristo Rei Heykeli ve Dili Körfezi Sahili",
+        "license": "CC-BY-SA",
+        "author": "Davidelit",
+        "source_url": "/images/countries/tl-480.webp",
+        "attribution_text": "Cristo Rei statue and Dili coastline in Timor-Leste. Davidelit, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Cristo Rei Heykeli ve Dili Körfezi Sahili, Doğu Timor",
+          "en": "Cristo Rei Statue & Dili Bay Coastline, Timor-Leste",
+          "de": "Cristo Rei Statue & Küste der Bucht von Dili, Osttimor",
+          "ru": "Статуя Христа Царя и побережье залива Дили, Восточный Тимор",
+          "es": "Estatua de Cristo Rey y Costa de la Bahía de Dili, Timor Oriental"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "dogu-timor",
+      "en": "timor-leste",
+      "de": "osttimor",
+      "ru": "vostochnyj-timor",
+      "es": "timor-oriental"
+    },
+    "title": {
+      "tr": "Doğu Timor Vize Rehberi, 30 Gün Kapıda Vize (30$), Dolar ve Cristo Rei | Vizamigo",
+      "en": "Timor-Leste Visa Guide, 30-Day Visa on Arrival ($30) & Travel | Vizamigo",
+      "de": "Osttimor Visum-Leitfaden, 30 Tage Visa on Arrival & Reisetipps | Vizamigo",
+      "ru": "Виза в Восточный Тимор, виза по прибытии $30, доллары США и Дили | Vizamigo",
+      "es": "Guía de Visa de Timor Oriental, Visa a la Llegada de $30 y Cristo Rey | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Doğu Timor Türk pasaportuna 30 gün kapıda vize (30$), Amerikan Doları kullanımı, lulik geleneği, Tip C/E/F/I prizler ve Atauro Adası dalış rehberi.",
+      "en": "Timor-Leste 30-day $30 Visa on Arrival rules, US Dollar currency, sacred lulik culture, Type C/E/F/I sockets, and Atauro Island diving guide.",
+      "de": "Osttimor 30 Tage Visa on Arrival ($30), US-Dollar-Währung, Lulik-Tradition, Steckdosentyp C/E/F/I und Atauro-Insel-Tauchen.",
+      "ru": "Правила въезда в Восточный Тимор с визой по прибытии $30, доллары США, розетки Type C/E/F/I и дайвинг на острове Атауро.",
+      "es": "Requisitos de visa a la llegada a Timor Oriental ($30), uso del dólar estadounidense, enchufes y buceo en la isla de Atauro."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

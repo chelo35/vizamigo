@@ -1,0 +1,451 @@
+{
+  "iso2": "PW",
+  "names": {
+    "tr": "Palau",
+    "en": "Palau",
+    "de": "Palau",
+    "ru": "Палау",
+    "es": "Palaos"
+  },
+  "capital": {
+    "value": "Ngerulmud",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.palaugov.pw",
+        "tier": 1,
+        "title": "Government of the Republic of Palau"
+      }
+    ],
+    "evidence_quote": "Ngerulmud in Melekeok State is the national capital; Koror is the commercial hub",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "USD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.palaugov.pw",
+        "tier": 1,
+        "title": "Ministry of Finance Palau"
+      }
+    ],
+    "evidence_quote": "The United States Dollar (USD) is the official currency of the Republic of Palau",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+9 (PWT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.palaugov.pw",
+        "tier": 1,
+        "title": "National Weather Service Office Koror"
+      }
+    ],
+    "evidence_quote": "Palau operates on Palau Time UTC+9 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "120V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.puc.pw",
+          "tier": 1,
+          "title": "Palau Public Utilities Corporation (PPUC)"
+        }
+      ],
+      "evidence_quote": "Standard residential supply voltage across Palau is 120V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.puc.pw",
+          "tier": 1,
+          "title": "PPUC Palau"
+        }
+      ],
+      "evidence_quote": "National power network operates at 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "North American standard Type A and Type B plugs with two flat parallel pins are universal",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.palaugov.pw",
+          "tier": 1,
+          "title": "Bureau of Public Safety Palau"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police assistance throughout Palau",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.palauhealth.org",
+          "tier": 1,
+          "title": "Belau National Hospital Emergency Medical Services"
+        }
+      ],
+      "evidence_quote": "Call 911 or +680 488-2555 for Belau National Hospital ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.palaugov.pw",
+          "tier": 1,
+          "title": "Bureau of Public Safety Fire & Rescue"
+        }
+      ],
+      "evidence_quote": "Dial 911 for fire and rescue emergency operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.palaugov.pw",
+          "tier": 1,
+          "title": "National Emergency Management Office (NEMO) Palau"
+        }
+      ],
+      "evidence_quote": "911 is the central emergency operations number in Palau",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+680 488-2793",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pristineparadisepalau.com",
+          "tier": 1,
+          "title": "Palau Visitors Authority (PVA)"
+        }
+      ],
+      "evidence_quote": "Palau Visitors Authority headquarters in Koror provides visitor liaison at +680 488-2793",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/palau",
+          "tier": 1,
+          "title": "UK FCDO"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Palau dünyanın en bozulmamış ve güvenli deniz eko-turizm destinasyonlarındandır; standart seyahat önlemleri yeterlidir.",
+      "en": "Palau is exceptionally safe and pristine; exercise normal precautions and adhere to environmental conservation rules.",
+      "de": "Palau ist ein unberührtes und sicheres Ökotourismus-Paradies; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Палау — один из самых безопасных и чистых морских заповедников планеты; соблюдайте правила охраны природы.",
+      "es": "Palaos es un santuario marino sumamente seguro y prístino; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 32.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/palau",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Palau reach approximately 32.0 Mbps via subsea fiber cable",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 58.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/palau",
+          "tier": 1,
+          "title": "Ookla Speedtest"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Koror measure 58.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "PNCC (Palau National Communications Corporation) provides 4G prepaid SIMs at Roman Tmetuchl International Airport (ROR). All international visitors must sign the 'Palau Pledge' stamped inside their passport committing to environmental stewardship.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://palaupledge.com",
+          "tier": 1,
+          "title": "The Palau Pledge Official Authority"
+        }
+      ],
+      "evidence_quote": "Signing the environmental Palau Pledge is mandatory upon passport control entry",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Pristine Paradise Palau",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pristineparadisepalau.com",
+        "tier": 1,
+        "title": "Palau Visitors Authority"
+      }
+    },
+    {
+      "name": "PNCC Mobile Care",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.palaunet.com",
+        "tier": 1,
+        "title": "Palau National Communications Corporation"
+      }
+    },
+    {
+      "name": "Palau Green Cab",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pristineparadisepalau.com",
+        "tier": 1,
+        "title": "PVA Transport Directory"
+      }
+    },
+    {
+      "name": "Belau Transfer & Tours",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.pristineparadisepalau.com",
+        "tier": 1,
+        "title": "PVA Operators"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Christianity (approx. 74%, predominantly Roman Catholic and Evangelical Protestant) alongside indigenous Modekngei faith",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.palaugov.pw",
+          "tier": 1,
+          "title": "Office of Planning and Statistics Palau"
+        }
+      ],
+      "evidence_quote": "Christianity coexists with Modekngei, a syncretic indigenous Palauan monotheistic faith",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Constitution Day (July 9), Independence Day (October 1), Belau National Games, Olechotel Belau Fair in Koror",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pristineparadisepalau.com",
+          "tier": 1,
+          "title": "PVA Cultural Events"
+        }
+      ],
+      "evidence_quote": "Olechotel Belau Fair celebrates authentic Palauan canoe building, traditional weaving, and chant performances",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Strict environmental laws: sunscreens containing oxybenzone, octinoxate, or parabens are illegal in Palau and will be confiscated at airport customs ($1,000 fine for importation/sale). Touching stingless jellyfish in Jellyfish Lake or harvesting marine life in Rock Islands is forbidden.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.palaugov.pw",
+          "tier": 1,
+          "title": "Responsible Tourism Education Act 2018"
+        }
+      ],
+      "evidence_quote": "It is illegal to enter Palau with reef-toxic sunscreens under the Responsible Tourism Education Act",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not traditional in Palauan culture, but American tipping practices (10-15%) are customary in restaurants and for boat dive masters due to strong US ties.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pristineparadisepalau.com",
+          "tier": 1,
+          "title": "PVA Travel Tips"
+        }
+      ],
+      "evidence_quote": "A 10-15% tip is customary in dining and dive excursion services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kaya Adaları (Rock Islands) Mercan Adacıkları",
+        "en": "Rock Islands Southern Lagoon",
+        "de": "Rock Islands Südliche Lagune",
+        "ru": "Скалистые острова (Челбахеб)",
+        "es": "Islas Chelbacheb (Islas Roca)"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1386",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Denizanası Gölü (Jellyfish Lake)",
+        "en": "Jellyfish Lake (Ongeim'l Tketau)",
+        "de": "Quallensee (Jellyfish Lake)",
+        "ru": "Озеро Медуз",
+        "es": "Lago de las Medusas (Jellyfish Lake)"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.pristineparadisepalau.com",
+          "tier": 1,
+          "title": "Palau Visitors Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kaya Adaları (Rock Islands) Mantar Mercan Adacıkları (UNESCO)",
+        "license": "CC-BY-SA",
+        "author": "Luka Peternel",
+        "source_url": "/images/countries/pw-480.webp",
+        "attribution_text": "Rock Islands Southern Lagoon mushroom coral formations in Palau. Luka Peternel, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Kaya Adaları (Rock Islands) Mantar Mercan Adacıkları (UNESCO), Palau",
+          "en": "Rock Islands Southern Lagoon Coral Formations (UNESCO), Palau",
+          "de": "Rock Islands Pilzfelsen und Lagune (UNESCO), Palau",
+          "ru": "Грибовидные коралловые островки Скалистых островов (ЮНЕСКО), Палау",
+          "es": "Islas Roca Formaciones de Coral en la Laguna Sur (UNESCO), Palaos"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "palau",
+      "en": "palau",
+      "de": "palau",
+      "ru": "palau",
+      "es": "palaos"
+    },
+    "title": {
+      "tr": "Palau Vize Rehberi, 30 Gün Ücretsiz Kapıda Vize, Palau Pledge ve Rock Islands | Vizamigo",
+      "en": "Palau Visa Guide, 30-Day Free Landing Visa, Palau Pledge & Travel | Vizamigo",
+      "de": "Palau Visum-Leitfaden, 30 Tage visafrei & Rock Islands | Vizamigo",
+      "ru": "Виза в Палау, 30 дней бесплатно по прибытии, клятва Палау и Скалистые острова | Vizamigo",
+      "es": "Guía de Visa de Palaos, 30 Días Gratis a la Llegada, Compromiso de Palaos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Palau Türk pasaportuna 30 gün ücretsiz kapıda vize, pasaport Palau Pledge taahhüdü, resif dostu güneş kremi zorunluluğu, Tip A/B prizler ve Kaya Adaları rehberi.",
+      "en": "Palau 30-day free landing visa rules, mandatory Palau Pledge environmental passport stamp, reef-safe sunscreen laws, Type A/B sockets, and Rock Islands guide.",
+      "de": "Palau 30 Tage kostenloses Visum bei Ankunft, Palau Pledge Verpflichtung, Riffschutz-Sonnencreme-Gesetz, Steckdosentyp A/B und Rock Islands.",
+      "ru": "Правила въезда в Палау на 30 дней без визы по прибытии, эко-клятва в паспорте, запрет токсичных солнцезащитных кремов, розетки Type A/B.",
+      "es": "Requisitos de visa gratuita a la llegada a Palaos (30 días), sello de compromiso ambiental, ley de bloqueadores solares y lagunas de Roca."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
