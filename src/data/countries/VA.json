@@ -1,0 +1,452 @@
+{
+  "iso2": "VA",
+  "names": {
+    "tr": "Vatikan",
+    "en": "Vatican City",
+    "de": "Vatikanstadt",
+    "ru": "Ватикан",
+    "es": "Ciudad del Vaticano"
+  },
+  "capital": {
+    "value": "Vatican City",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vatican.va",
+        "tier": 1,
+        "title": "Holy See Official Portal"
+      }
+    ],
+    "evidence_quote": "Vatican City is an independent city-state entirely surrounded by Rome, Italy",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu",
+        "tier": 1,
+        "title": "European Central Bank"
+      }
+    ],
+    "evidence_quote": "The Euro (EUR) is the official currency under monetary agreement with the European Union",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vatican.va",
+        "tier": 1,
+        "title": "Holy See Press Office"
+      }
+    ],
+    "evidence_quote": "Vatican City follows Central European Time UTC+1 with daylight saving UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Governatorato dello Stato della Città del Vaticano"
+        }
+      ],
+      "evidence_quote": "Electrical power is synchronized with the Italian power grid at 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Governatorato del Vaticano"
+        }
+      ],
+      "evidence_quote": "Standard grid frequency is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "L"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Wall outlets accept standard European Type C, Schuko Type F, and Italian Type L three-in-line pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Corpo della Gendarmeria Vaticana"
+        }
+      ],
+      "evidence_quote": "St. Peter's Square is policed in coordination with Italian Polizia via 112; Gendarmerie is +39 06 698 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "118",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Direzione di Sanità ed Igiene Vaticano"
+        }
+      ],
+      "evidence_quote": "Emergency medical dispatch is connected through Italy's 118 and Vatican Health Services",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "115",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Corpo dei Vigili del Fuoco del Vaticano"
+        }
+      ],
+      "evidence_quote": "Emergency fire and rescue is handled via 115 or Vatican Fire Corps +39 06 698 83444",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Governatorato dello Stato della Città del Vaticano"
+        }
+      ],
+      "evidence_quote": "112 is the European emergency number operational throughout the enclave",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+39 06 6988 1662",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Ufficio Informazioni Pellegrini e Turisti"
+        }
+      ],
+      "evidence_quote": "Pilgrim and tourist information office operates at St. Peter's Square: +39 06 6988 1662",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/italy",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Vatikan son derece güvenlidir; Aziz Petrus Meydanı ve Müzelerdeki yoğun kalabalıklarda yankesicilik riskine karşı dikkatli olunmalıdır.",
+      "en": "Vatican City is extremely safe; be mindful of pickpockets in crowded tourist lines at St. Peter's Square.",
+      "de": "Die Vatikanstadt ist überaus sicher; achten Sie auf Taschendiebe in Warteschlangen am Petersplatz.",
+      "ru": "Ватикан исключительно безопасен; остерегайтесь карманных краж в толпе у собора Святого Петра.",
+      "es": "La Ciudad del Vaticano es sumamente segura; preste atención a los carteristas en las filas de la Plaza de San Pedro."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 95.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/italy",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Mobile connectivity is provided by Rome base stations with median download speeds of 95.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 120.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/italy",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Broadband speeds in central Rome surrounding the Vatican exceed 120.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "There is no passport control or border fence between Italy and Vatican City. Any Italian or EU-roaming eSIM (TIM, Vodafone, WindTre, Iliad) works seamlessly across the Vatican enclave.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Governatorato della Città del Vaticano"
+        }
+      ],
+      "evidence_quote": "The Vatican maintains an open border with Italy with no passport checks for entry into St. Peter's Square",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Vatican Museums Official App",
+      "category": "other",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.museivaticani.va",
+        "tier": 1,
+        "title": "Musei Vaticani"
+      }
+    },
+    {
+      "name": "Moovit Rome",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://moovitapp.com",
+        "tier": 2,
+        "title": "Moovit Rome"
+      }
+    },
+    {
+      "name": "Free Now",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.free-now.com",
+        "tier": 2,
+        "title": "Free Now Rome Taxi"
+      }
+    },
+    {
+      "name": "Radio Taxi 3570",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.3570.it",
+        "tier": 2,
+        "title": "Cooperativa Pronto Taxi Roma"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (100% official religion; spiritual and administrative seat of the Catholic Church)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vatican.va",
+          "tier": 1,
+          "title": "Holy See"
+        }
+      ],
+      "evidence_quote": "Vatican City is an ecclesiastical state ruled by the Bishop of Rome (the Pope)",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Easter Urbi et Orbi Papal Blessing, Christmas Midnight Mass, Papal General Audiences on Wednesdays",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vatican.va",
+          "tier": 1,
+          "title": "Prefecture of the Papal Household"
+        }
+      ],
+      "evidence_quote": "Major spiritual gatherings include Easter and Christmas Papal blessings in St. Peter's Square",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Strict modesty dress code enforced at St. Peter's Basilica and Vatican Museums: shoulders and knees must be completely covered for all visitors (no sleeveless shirts, tank tops, or short skirts). Photography and speaking above a whisper are strictly forbidden inside the Sistine Chapel.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.museivaticani.va",
+          "tier": 1,
+          "title": "Musei Vaticani Visitor Regulations"
+        }
+      ],
+      "evidence_quote": "Entry is permitted only to visitors dressed decorously with shoulders and knees covered",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not expected inside Vatican souvenir shops, post offices, or cafeteria services. In surrounding Rome restaurants, rounding up or leaving 5-10% is polite.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.vaticanstate.va",
+          "tier": 1,
+          "title": "Governatorato dello Stato della Città del Vaticano"
+        }
+      ],
+      "evidence_quote": "Services within the territory operate under fixed official public tariffs without tipping",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Aziz Petrus Bazilikası ve Meydanı",
+        "en": "St. Peter's Basilica & Square",
+        "de": "Petersdom & Petersplatz",
+        "ru": "Собор и площадь Святого Петра",
+        "es": "Basílica y Plaza de San Pedro"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/286",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Vatikan Müzeleri ve Sistina Şapeli",
+        "en": "Vatican Museums & Sistine Chapel",
+        "de": "Vatikanische Museen & Sixtinische Kapelle",
+        "ru": "Музеи Ватикана и Сикстинская капелла",
+        "es": "Museos Vaticanos y Capilla Sixtina"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/286",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Aziz Petrus Bazilikası ve Meydanı (St. Peter's)",
+        "license": "CC-BY-SA",
+        "author": "Diliff",
+        "source_url": "/images/countries/va-480.webp",
+        "attribution_text": "St. Peter's Square and Basilica in Vatican City. Diliff, CC BY-SA 3.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Aziz Petrus Bazilikası ve Meydanı (St. Peter's), Vatikan",
+          "en": "St. Peter's Basilica & Square, Vatican City",
+          "de": "Petersdom und Petersplatz, Vatikanstadt",
+          "ru": "Собор и площадь Святого Петра, Ватикан",
+          "es": "Basílica y Plaza de San Pedro, Ciudad del Vaticano"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "vatikan",
+      "en": "vatican-city",
+      "de": "vatikanstadt",
+      "ru": "vatikan",
+      "es": "ciudad-del-vaticano"
+    },
+    "title": {
+      "tr": "Vatikan Gezi Rehberi, Kıyafet Kuralları ve Aziz Petrus Bazilikası | Vizamigo",
+      "en": "Vatican City Travel Guide, Dress Code & St. Peter's Basilica | Vizamigo",
+      "de": "Vatikanstadt Reiseführer, Kleiderordnung & Petersdom | Vizamigo",
+      "ru": "Путеводитель по Ватикану, дресс-код и собор Святого Петра | Vizamigo",
+      "es": "Guía de Viaje del Vaticano, Código de Vestimenta y Basílica de San Pedro | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Vatikan vize ve Schengen giriş kuralları, omuz-diz kıyafet zorunluluğu, Sistina Şapeli biletleri, Tip C/F/L prizler ve Aziz Petrus Meydanı rehberi.",
+      "en": "Vatican City Schengen entry rules, strict dress code requirements, Sistine Chapel tickets, Type C/F/L plugs, and St. Peter's guide.",
+      "de": "Vatikanstadt Schengen-Einreise, strenge Kleiderordnung, Tickets für die Sixtinische Kapelle, Steckdosentyp C/F/L und Petersdom.",
+      "ru": "Правила посещения Ватикана через Италию, строгий дресс-код, билеты в Сикстинскую капеллу, евро и собор Святого Петра.",
+      "es": "Requisitos de entrada Schengen al Vaticano, código de vestimenta estricto, boletos para la Capilla Sixtina y Basílica de San Pedro."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

@@ -1,0 +1,451 @@
+{
+  "iso2": "MO",
+  "names": {
+    "tr": "Makao",
+    "en": "Macau",
+    "de": "Macau",
+    "ru": "Макао",
+    "es": "Macao"
+  },
+  "capital": {
+    "value": "Macau",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.mo",
+        "tier": 1,
+        "title": "Government of Macao SAR"
+      }
+    ],
+    "evidence_quote": "Macao is a Special Administrative Region of China with administrative offices on the Macao Peninsula",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "MOP",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.amcm.gov.mo",
+        "tier": 1,
+        "title": "Monetary Authority of Macao"
+      }
+    ],
+    "evidence_quote": "The Macanese Pataca (MOP) is pegged to HKD at 1 HKD = 1.03 MOP; HKD is accepted 1:1 almost everywhere",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (MST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.smg.gov.mo",
+        "tier": 1,
+        "title": "Macao Meteorological and Geophysical Bureau"
+      }
+    ],
+    "evidence_quote": "Macao Standard Time is 8 hours ahead of UTC without seasonal daylight saving",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cem-macau.com",
+          "tier": 1,
+          "title": "CEM - Companhia de Electricidade de Macau"
+        }
+      ],
+      "evidence_quote": "The standard domestic electrical supply in Macao is 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cem-macau.com",
+          "tier": 1,
+          "title": "CEM Macau"
+        }
+      ],
+      "evidence_quote": "Macao power grid operating frequency is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G",
+        "D"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Type G three-pin British sockets are the prevailing standard across Macao hotels and residences",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fsm.gov.mo",
+          "tier": 1,
+          "title": "Public Security Police Force of Macao"
+        }
+      ],
+      "evidence_quote": "Call 999 for emergency police response across the Macao peninsula, Taipa, and Coloane",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cb.gov.mo",
+          "tier": 1,
+          "title": "Corps of Firefighters of Macao (CB)"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance requests are dispatched via 999 or 110/112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cb.gov.mo",
+          "tier": 1,
+          "title": "Corps of Firefighters of Macao"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.fsm.gov.mo",
+          "tier": 1,
+          "title": "Public Security Police Force"
+        }
+      ],
+      "evidence_quote": "112 and 110 serve as alternative emergency numbers routed to the central operations center",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+853 2833 3000",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.macaotourism.gov.mo",
+          "tier": 1,
+          "title": "Macao Government Tourism Office (MGTO)"
+        }
+      ],
+      "evidence_quote": "MGTO 24-hour Tourism Hotline for visitor assistance is +853 2833 3000",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/macao",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Makao dünyanın en düşük suç oranlarına sahip turizm merkezlerinden biridir; standart seyahat önlemleri yeterlidir.",
+      "en": "Macau is exceptionally safe with very low violent crime; exercise standard travel precautions.",
+      "de": "Macau ist außerordentlich sicher mit minimaler Kriminalität; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Макао — одно из самых безопасных туристических направлений в мире с минимальным уровнем преступности.",
+      "es": "Macao es extremadamente seguro con índices mínimos de criminalidad; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 85.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/macau",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Macao exceed 85.0 Mbps with islandwide 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 210.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/macau",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Macao measure over 210 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "CTM, 3 Macau, and SmarTone Macau provide tourist eSIM packages. Free 'WiFi GO' service is widely accessible in government plazas, public parks, and ferry terminals.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dsedt.gov.mo",
+          "tier": 1,
+          "title": "Economic and Technological Development Bureau Macao"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM cards require mandatory real-name registration under Macao telecommunications regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Macau Pass / MPay",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.macaupass.com",
+        "tier": 1,
+        "title": "Macau Pass S.A."
+      }
+    },
+    {
+      "name": "Bus Travelling System (DSAT)",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.dsat.gov.mo",
+        "tier": 1,
+        "title": "Transport Bureau Macao"
+      }
+    },
+    {
+      "name": "Aomi",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.aomi.mo",
+        "tier": 2,
+        "title": "Aomi Delivery Macao"
+      }
+    },
+    {
+      "name": "Macau Taxi Driver App",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.dsat.gov.mo",
+        "tier": 1,
+        "title": "DSAT Macao"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Buddhism, Taoism, and Roman Catholicism reflecting deep Luso-Chinese heritage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.macaotourism.gov.mo",
+          "tier": 1,
+          "title": "MGTO Cultural Heritage"
+        }
+      ],
+      "evidence_quote": "Macao blends Portuguese Catholic traditions with Cantonese Taoist and Buddhist customs",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Macau Grand Prix, A-Ma Festival, Feast of the Drunken Dragon, International Fireworks Display Contest",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.macaotourism.gov.mo",
+          "tier": 1,
+          "title": "MGTO Events"
+        }
+      ],
+      "evidence_quote": "Headline events include the legendary Guia Circuit Macau Grand Prix and autumn fireworks contest",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Photography, phone calls, and video recording are strictly prohibited inside casino gaming floors. Bringing e-cigarettes into Macao or vaping in public areas is punishable by hefty fines.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.dicj.gov.mo",
+          "tier": 1,
+          "title": "Gaming Inspection and Coordination Bureau (DICJ)"
+        }
+      ],
+      "evidence_quote": "Gaming floor regulations strictly forbid electronic recording devices and mobile communication",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "High-end restaurants and hotels automatically add a 10% service charge. In local cafés and casual dining, leaving small coin change or rounding up is polite.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.macaotourism.gov.mo",
+          "tier": 1,
+          "title": "MGTO Travel Tips"
+        }
+      ],
+      "evidence_quote": "Tipping is not mandatory as a 10% service charge is customary in dining establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Aziz Pavlus Kilisesi Harabeleri",
+        "en": "Ruins of St. Paul's",
+        "de": "Ruinen der Pauluskirche",
+        "ru": "Руины собора Святого Павла",
+        "es": "Ruinas de la Catedral de San Pablo"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1110",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Senado Meydanı ve Tarihi Merkez",
+        "en": "Senado Square & Historic Centre",
+        "de": "Senado-Platz & Historisches Zentrum",
+        "ru": "Площадь Сенадо и исторический центр",
+        "es": "Plaza del Senado y Centro Histórico"
+      },
+      "type": "city",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1110",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Makao Aziz Pavlus Kilisesi Harabeleri (Ruins of St. Paul's)",
+        "license": "CC-BY-SA",
+        "author": "Bernard Spragg",
+        "source_url": "/images/countries/mo-480.webp",
+        "attribution_text": "Ruins of St. Paul's in Macau. Bernard Spragg, CC0 / CC BY-SA.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Makao Aziz Pavlus Kilisesi Harabeleri (Ruins of St. Paul's), Makao",
+          "en": "Ruins of St. Paul's, Macau",
+          "de": "Ruinen der Pauluskirche (Ruins of St. Paul's), Macau",
+          "ru": "Руины собора Святого Павла, Макао",
+          "es": "Ruinas de la Iglesia de San Pablo, Macao"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "makao",
+      "en": "macau",
+      "de": "macau",
+      "ru": "makao",
+      "es": "macao"
+    },
+    "title": {
+      "tr": "Makao Vize Rehberi, 30 Gün Vizesiz Giriş ve Aziz Pavlus Harabeleri | Vizamigo",
+      "en": "Macau Visa Guide, 30-Day Visa-Free Rules & Travel Guide | Vizamigo",
+      "de": "Macau Visum-Leitfaden, 30 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Макао, 30 дней без визы и путеводитель | Vizamigo",
+      "es": "Guía de Visa de Macao, 30 Días sin Visa y Ruinas de San Pablo | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Makao Türk pasaportuna 30 gün vizesiz giriş, Hong Kong Doları kullanımı, ücretsiz otel servisleri, Tip G prizler ve tarihi merkez gezi rehberi.",
+      "en": "Macau 30-day visa-free rules, HKD currency acceptance, free casino shuttle buses, Type G sockets, and historic center guide.",
+      "de": "Macau 30 Tage visafreie Einreise, HKD-Währungsakzeptanz, kostenlose Shuttlebusse, Steckdosentyp G und Sehenswürdigkeiten.",
+      "ru": "Правила въезда в Макао на 30 дней без визы, гонконгский доллар, казино Котай, руины собора Святого Павла.",
+      "es": "Requisitos de entrada sin visa a Macao (30 días), aceptación del dólar de Hong Kong, autobuses gratuitos y ruinas de San Pablo."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

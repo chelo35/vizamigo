@@ -1,0 +1,451 @@
+{
+  "iso2": "HK",
+  "names": {
+    "tr": "Hong Kong",
+    "en": "Hong Kong",
+    "de": "Hongkong",
+    "ru": "Гонконг",
+    "es": "Hong Kong"
+  },
+  "capital": {
+    "value": "Hong Kong",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.hk",
+        "tier": 1,
+        "title": "Government of Hong Kong SAR"
+      }
+    ],
+    "evidence_quote": "Hong Kong is a Special Administrative Region with its government headquarters in Central",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "HKD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hkma.gov.hk",
+        "tier": 1,
+        "title": "Hong Kong Monetary Authority"
+      }
+    ],
+    "evidence_quote": "The Hong Kong Dollar (HKD) is linked to the US dollar at approximately 7.80 HKD to 1 USD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (HKT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.hko.gov.hk",
+        "tier": 1,
+        "title": "Hong Kong Observatory"
+      }
+    ],
+    "evidence_quote": "Hong Kong Time is 8 hours ahead of UTC year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.emsd.gov.hk",
+          "tier": 1,
+          "title": "Electrical and Mechanical Services Department HK"
+        }
+      ],
+      "evidence_quote": "The standard household electricity supply in Hong Kong is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.emsd.gov.hk",
+          "tier": 1,
+          "title": "Electrical and Mechanical Services Department"
+        }
+      ],
+      "evidence_quote": "Hong Kong's alternating current grid operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G",
+        "D"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Wall sockets in Hong Kong standardly accept British Type G rectangular three-pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.hk",
+          "tier": 1,
+          "title": "Hong Kong Police Force"
+        }
+      ],
+      "evidence_quote": "Dial 999 for emergency police assistance across all Hong Kong districts",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hkfsd.gov.hk",
+          "tier": 1,
+          "title": "Hong Kong Fire Services Department Ambulance"
+        }
+      ],
+      "evidence_quote": "Emergency ambulance dispatch is handled via 999",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hkfsd.gov.hk",
+          "tier": 1,
+          "title": "Hong Kong Fire Services Department"
+        }
+      ],
+      "evidence_quote": "Call 999 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.hk",
+          "tier": 1,
+          "title": "Hong Kong Police Emergency Services"
+        }
+      ],
+      "evidence_quote": "112 automatically reroutes mobile phone calls to 999 emergency services",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "2527 7177",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.hk",
+          "tier": 1,
+          "title": "Hong Kong Police Tourist Assistance"
+        }
+      ],
+      "evidence_quote": "Tourist inquiries and assistance hotline operates at +852 2527 7177",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/hong-kong",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": false,
+    "advisory_headline": {
+      "tr": "Hong Kong genel olarak son derece güvenlidir; Ulusal Güvenlik Yasası uyarınca siyasi ifadeler konusunda dikkatli olunmalıdır.",
+      "en": "Hong Kong is generally very safe; exercise caution regarding national security laws and political expression.",
+      "de": "Hongkong ist generell sehr sicher; Vorsicht bei politischen Äußerungen wegen des Nationalen Sicherheitsgesetzes.",
+      "ru": "Гонконг очень безопасен для туристов; следует избегать политических высказываний в свете Закона о национальной безопасности.",
+      "es": "Hong Kong es sumamente seguro; actúe con cautela respecto a manifestaciones políticas bajo la Ley de Seguridad Nacional."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 92.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/hong-kong",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Hong Kong exceed 92.5 Mbps with ubiquitous 5G",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 285.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/hong-kong",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Hong Kong ranks among the fastest globally with median fixed broadband speeds over 285 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Prepaid tourist eSIMs are available from CSL, SmarTone, and China Mobile HK. Real-name registration (passport upload) is mandatory for all local SIM cards by HK law.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ofca.gov.hk",
+          "tier": 1,
+          "title": "Office of the Communications Authority (OFCA)"
+        }
+      ],
+      "evidence_quote": "All SIM cards issued in Hong Kong must complete real-name registration before service activation",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Octopus Card",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.octopus.com.hk",
+        "tier": 1,
+        "title": "Octopus Cards Limited"
+      }
+    },
+    {
+      "name": "MTR Mobile",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.mtr.com.hk",
+        "tier": 1,
+        "title": "MTR Corporation"
+      }
+    },
+    {
+      "name": "HKTaxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hktaxi.com",
+        "tier": 2,
+        "title": "HKTaxi App"
+      }
+    },
+    {
+      "name": "Foodpanda HK",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.foodpanda.hk",
+        "tier": 2,
+        "title": "Foodpanda Hong Kong"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Buddhism, Taoism, and Christianity with widespread ancestral veneration traditions",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.hk",
+          "tier": 1,
+          "title": "Hong Kong Year Book"
+        }
+      ],
+      "evidence_quote": "Hong Kong embraces religious freedom with prominent Buddhist, Taoist, and Christian communities",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Lunar New Year, Mid-Autumn Lantern Festival, Dragon Boat Festival, Cheung Chau Bun Festival",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.discoverhongkong.com",
+          "tier": 1,
+          "title": "Hong Kong Tourism Board (HKTB)"
+        }
+      ],
+      "evidence_quote": "Major cultural celebrations include the Lunar New Year, Dragon Boat Races, and Mid-Autumn Festival",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Eating, drinking, or vaping on MTR trains and platforms is strictly prohibited (HK$2,000 fine). E-cigarettes and CBD products are classified as illicit drugs with severe criminal penalties.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tco.gov.hk",
+          "tier": 1,
+          "title": "Tobacco and Alcohol Control Office HK"
+        }
+      ],
+      "evidence_quote": "Importation and possession of alternative smoking products and CBD are strictly illegal in Hong Kong",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "A 10% service charge is automatically added to restaurant bills. Leaving small extra change or rounding up is appreciated in casual dining and taxis.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.discoverhongkong.com",
+          "tier": 1,
+          "title": "Hong Kong Tourism Board Guide"
+        }
+      ],
+      "evidence_quote": "Most sit-down restaurants add a 10% service charge; leaving small cash coins is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Victoria Limanı ve Gökdelen Silüeti",
+        "en": "Victoria Harbour & Skyline",
+        "de": "Victoria Harbour & Skyline",
+        "ru": "Бухта Виктория и панорама небоскрёбов",
+        "es": "Puerto Victoria y Horizonte de Rascacielos"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.discoverhongkong.com",
+          "tier": 1,
+          "title": "HKTB"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Victoria Zirvesi ve Peak Tram",
+        "en": "Victoria Peak & Peak Tram",
+        "de": "Victoria Peak & Peak Tram",
+        "ru": "Пик Виктория и исторический трамвай",
+        "es": "Pico Victoria y Funicular Peak Tram"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.thepeak.com.hk",
+          "tier": 1,
+          "title": "The Peak Hong Kong"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Victoria Limanı ve Hong Kong Gökdelen Silüeti",
+        "license": "CC-BY-SA",
+        "author": "Base54",
+        "source_url": "/images/countries/hk-480.webp",
+        "attribution_text": "Victoria Harbour & Hong Kong Skyline. Base54, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Victoria Limanı ve Hong Kong Gökdelen Silüeti, Hong Kong",
+          "en": "Victoria Harbour & Hong Kong Skyline, Hong Kong",
+          "de": "Victoria Harbour & Skyline von Hongkong, Hongkong",
+          "ru": "Бухта Виктория и панорама небоскрёбов, Гонконг",
+          "es": "Puerto Victoria y Horizonte de Rascacielos de Hong Kong"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "hong-kong",
+      "en": "hong-kong",
+      "de": "hongkong",
+      "ru": "gonkong",
+      "es": "hong-kong"
+    },
+    "title": {
+      "tr": "Hong Kong Vize Rehberi, 90 Gün Vizesiz Giriş ve Gezi Rehberi | Vizamigo",
+      "en": "Hong Kong Visa Guide, 90-Day Visa-Free Rules & Travel Tips | Vizamigo",
+      "de": "Hongkong Visum-Leitfaden, 90 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Гонконг, правила въезда и путеводитель | Vizamigo",
+      "es": "Guía de Visa de Hong Kong, 90 Días sin Visa y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Hong Kong Türk pasaportuna 90 gün vizesiz giriş, Octopus kartı kullanımı, MTR metrosu, Tip G prizler ve Victoria Limanı gezi rehberi.",
+      "en": "Hong Kong 90-day visa-free rules, Octopus card transit tips, MTR guide, Type G sockets, and Victoria Harbour highlights.",
+      "de": "Hongkong 90 Tage visafreie Einreise, Octopus-Karte, MTR-Fahrplan, Steckdosentyp G und Sehenswürdigkeiten am Victoria Harbour.",
+      "ru": "Правила въезда в Гонконг без визы, карта Octopus, метро MTR, британские розетки Type G и гастрономический гид.",
+      "es": "Requisitos de entrada sin visa a Hong Kong (90 días), tarjeta Octopus, metro MTR, enchufes Tipo G y Puerto Victoria."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

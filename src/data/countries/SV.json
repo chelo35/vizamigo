@@ -1,0 +1,451 @@
+{
+  "iso2": "SV",
+  "names": {
+    "tr": "El Salvador",
+    "en": "El Salvador",
+    "de": "El Salvador",
+    "ru": "Сальвадор",
+    "es": "El Salvador"
+  },
+  "capital": {
+    "value": "San Salvador",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sansalvador.gob.sv",
+        "tier": 1,
+        "title": "Alcaldía de San Salvador"
+      }
+    ],
+    "evidence_quote": "San Salvador is the capital and financial metropolis of the Republic of El Salvador",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "USD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bcr.gob.sv",
+        "tier": 1,
+        "title": "Banco Central de Reserva de El Salvador"
+      }
+    ],
+    "evidence_quote": "The US Dollar (USD) is the official legal tender; Bitcoin is also recognized as legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC-6 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.marn.gob.sv",
+        "tier": 1,
+        "title": "Ministerio de Medio Ambiente El Salvador"
+      }
+    ],
+    "evidence_quote": "El Salvador observes Central Standard Time UTC-6 year-round without daylight saving changes",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "115V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.siget.gob.sv",
+          "tier": 1,
+          "title": "Superintendencia General de Electricidad y Telecomunicaciones (SIGET)"
+        }
+      ],
+      "evidence_quote": "The standard domestic low-voltage electricity supply across El Salvador is 115V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.siget.gob.sv",
+          "tier": 1,
+          "title": "SIGET El Salvador"
+        }
+      ],
+      "evidence_quote": "National alternating grid frequency is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Sockets standardly accept North American Type A and Type B plugs with two flat pins",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pnc.gob.sv",
+          "tier": 1,
+          "title": "Policía Nacional Civil de El Salvador (PNC)"
+        }
+      ],
+      "evidence_quote": "Dial 911 for emergency police response throughout El Salvador",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "132",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.salud.gob.sv",
+          "tier": 1,
+          "title": "Ministerio de Salud El Salvador - SEM"
+        }
+      ],
+      "evidence_quote": "Call 132 for Sistema de Emergencias Médicas (SEM) medical dispatch; Cruz Roja is 2222-5155",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "913",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bomberos.gob.sv",
+          "tier": 1,
+          "title": "Cuerpo de Bomberos de El Salvador"
+        }
+      ],
+      "evidence_quote": "Dial 913 for national fire and rescue emergency services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pnc.gob.sv",
+          "tier": 1,
+          "title": "PNC El Salvador"
+        }
+      ],
+      "evidence_quote": "911 is the central unified national emergency number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mitur.gob.sv",
+          "tier": 1,
+          "title": "POLITUR - División de Policía de Turismo"
+        }
+      ],
+      "evidence_quote": "POLITUR tourist police provide security and guided escorts at major national parks and beaches via 911",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/el-salvador",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 2,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "El Salvador'da güvenlik son yıllarda önemli ölçüde iyileşmiştir; devam eden Olağanüstü Hal rejimi nedeniyle kimlik belgeleri daima taşınmalıdır.",
+      "en": "Security in El Salvador has dramatically improved in recent years; carry original identification at all times due to ongoing State of Exception.",
+      "de": "Die Sicherheitslage hat sich deutlich verbessert; wegen des Ausnahmezustands sollten Ausweispapiere stets mitgeführt werden.",
+      "ru": "Уровень безопасности значительно вырос; в связи с режимом чрезвычайного положения обязательно носите с собой оригинал паспорта.",
+      "es": "La seguridad ha mejorado notablemente; porte siempre sus documentos de identidad debido al Régimen de Excepción vigente."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disaster": "medium",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 36.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/el-salvador",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in El Salvador reach 36.2 Mbps across urban hubs",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 62.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/el-salvador",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds measure 62.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Claro and Tigo operate reliable 4G networks across El Salvador. Arriving tourists pay a mandatory $12 USD tourist card fee at airport immigration (SAL). Bitcoin is widely accepted at hotels and restaurants in El Zonte (Bitcoin Beach).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.migracion.gob.sv",
+          "tier": 1,
+          "title": "Dirección General de Migración y Extranjería El Salvador"
+        }
+      ],
+      "evidence_quote": "International visitors exempt from consular visas must purchase a US$12 Tourist Card upon arrival",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Uber El Salvador",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/global/es/airports/sal/",
+        "tier": 2,
+        "title": "Uber El Salvador"
+      }
+    },
+    {
+      "name": "Chivo Wallet",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://chivowallet.com",
+        "tier": 1,
+        "title": "Chivo Wallet El Salvador"
+      }
+    },
+    {
+      "name": "Hugo App",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://hugoapp.com",
+        "tier": 2,
+        "title": "Hugo Central America"
+      }
+    },
+    {
+      "name": "Waze",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.waze.com",
+        "tier": 2,
+        "title": "Waze El Salvador"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Roman Catholicism (approx. 45%) and Evangelical Protestantism (approx. 40%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.presidencia.gob.sv",
+          "tier": 1,
+          "title": "Presidencia de la República de El Salvador"
+        }
+      ],
+      "evidence_quote": "Christian traditions deeply influence cultural festivals and social customs across El Salvador",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Fiestas Agostinas (August 1-6 in honor of the Savior of the World), Holy Week (Semana Santa) alfombras",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mitur.gob.sv",
+          "tier": 1,
+          "title": "Ministerio de Turismo de El Salvador (MITUR)"
+        }
+      ],
+      "evidence_quote": "Fiestas Patronales de San Salvador in early August are the primary national civic and religious holiday",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Always carry original passports with valid entry stamps as police checkpoints are frequent under the ongoing State of Exception. Never wear gang-associated clothing or tattoo motifs (e.g. 18, 13, Mara). Tap water is not potable; drink purified bottled water.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pnc.gob.sv",
+          "tier": 1,
+          "title": "PNC El Salvador Safety Guidelines"
+        }
+      ],
+      "evidence_quote": "Identity checks are routinely conducted nationwide under constitutional emergency decrees",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in restaurants; check if 'propina' (10%) is already included on the final bill before adding extra cash.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mitur.gob.sv",
+          "tier": 1,
+          "title": "MITUR Travel Guide"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in restaurants and hospitality services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Santa Ana Volkanı (Ilamatepec)",
+        "en": "Santa Ana Volcano (Ilamatepec)",
+        "de": "Vulkan Santa Ana (Ilamatepec)",
+        "ru": "Вулкан Санта-Ана (Иламатепек)",
+        "es": "Volcán de Santa Ana (Ilamatepec)"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://marn.gob.sv",
+          "tier": 1,
+          "title": "MARN El Salvador"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ruta de las Flores ve El Tunco Sörf Sahili",
+        "en": "Ruta de las Flores & El Tunco Surf Coast",
+        "de": "Ruta de las Flores & Surfküste El Tunco",
+        "ru": "Цветочный маршрут и сёрф-побережье Эль-Тунко",
+        "es": "Ruta de las Flores y Playa El Tunco"
+      },
+      "type": "city",
+      "sources": [
+        {
+          "url": "https://mitur.gob.sv",
+          "tier": 1,
+          "title": "MITUR El Salvador"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Santa Ana Volkanı Zümrüt Yeşil Krater Gölü",
+        "license": "CC-BY-SA",
+        "author": "Mario Roberto Duran Ortiz",
+        "source_url": "/images/countries/sv-480.webp",
+        "attribution_text": "Santa Ana Volcano turquoise crater lake in El Salvador. Mario Roberto Duran Ortiz, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Santa Ana Volkanı Zümrüt Yeşil Krater Gölü, El Salvador",
+          "en": "Santa Ana Volcano Emerald Crater Lake, El Salvador",
+          "de": "Smaragdgrüner Kratersee des Vulkans Santa Ana, El Salvador",
+          "ru": "Изумрудное кратерное озеро вулкана Санта-Ана, Сальвадор",
+          "es": "Laguna Esmeralda del Cráter del Volcán de Santa Ana, El Salvador"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "el-salvador",
+      "en": "el-salvador",
+      "de": "el-salvador",
+      "ru": "salvador",
+      "es": "el-salvador"
+    },
+    "title": {
+      "tr": "El Salvador Vize Rehberi, 90 Gün Vizesiz Giriş ve Santa Ana Volkanı | Vizamigo",
+      "en": "El Salvador Visa Guide, 90-Day Visa-Free Rules & Travel Guide | Vizamigo",
+      "de": "El Salvador Visum-Leitfaden, 90 Tage visafrei & Reisetipps | Vizamigo",
+      "ru": "Виза в Сальвадор, 90 дней без визы и вулкан Санта-Ана | Vizamigo",
+      "es": "Guía de Visa de El Salvador, 90 Días sin Visa y Volcán de Santa Ana | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "El Salvador Türk pasaportuna 90 gün vizesiz giriş, 12$ turist kartı, Amerikan Doları ve Bitcoin kullanımı, Tip A/B prizler ve Santa Ana Volkanı rehberi.",
+      "en": "El Salvador 90-day visa-free rules, $12 tourist card, US Dollar & Bitcoin acceptance, Type A/B sockets, and Santa Ana Volcano guide.",
+      "de": "El Salvador 90 Tage visafreie Einreise, 12$ Touristenkarte, US-Dollar & Bitcoin, Steckdosentyp A/B und Reiseführer Vulkan Santa Ana.",
+      "ru": "Правила въезда в Сальвадор на 90 дней без визы, туристическая карта $12, доллар США и биткоин, вулкан Санта-Ана.",
+      "es": "Requisitos de entrada sin visa a El Salvador (90 días), tarjeta de turista de $12, uso del dólar estadounidense y bitcóin."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

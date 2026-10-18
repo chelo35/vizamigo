@@ -1,0 +1,451 @@
+{
+  "iso2": "TW",
+  "names": {
+    "tr": "Tayvan",
+    "en": "Taiwan",
+    "de": "Taiwan",
+    "ru": "Тайвань",
+    "es": "Taiwán"
+  },
+  "capital": {
+    "value": "Taipei",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.taiwan.gov.tw",
+        "tier": 1,
+        "title": "Government of the Republic of China (Taiwan)"
+      }
+    ],
+    "evidence_quote": "Taipei City is the seat of the central government and the economic hub of Taiwan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "TWD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbc.gov.tw",
+        "tier": 1,
+        "title": "Central Bank of the Republic of China (Taiwan)"
+      }
+    ],
+    "evidence_quote": "The New Taiwan Dollar (TWD, NT$) is the legal tender currency of Taiwan",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+8 (CST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cwa.gov.tw",
+        "tier": 1,
+        "title": "Central Weather Administration Taiwan"
+      }
+    ],
+    "evidence_quote": "National standard time in Taiwan is UTC+8 without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "110V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.taipower.com.tw",
+          "tier": 1,
+          "title": "Taiwan Power Company (Taipower)"
+        }
+      ],
+      "evidence_quote": "Standard residential single-phase electric supply in Taiwan is 110V 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 60,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.taipower.com.tw",
+          "tier": 1,
+          "title": "Taipower"
+        }
+      ],
+      "evidence_quote": "The alternating frequency of the electrical grid across Taiwan is 60 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "A",
+        "B"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Wall outlets in Taiwan accommodate US-style Type A and Type B plugs with two flat parallel pins",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "110",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.npa.gov.tw",
+          "tier": 1,
+          "title": "National Police Agency Taiwan"
+        }
+      ],
+      "evidence_quote": "Dial 110 for emergency police response throughout Taiwan",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nfa.gov.tw",
+          "tier": 1,
+          "title": "National Fire Agency Taiwan"
+        }
+      ],
+      "evidence_quote": "Call 119 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "119",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nfa.gov.tw",
+          "tier": 1,
+          "title": "National Fire Agency"
+        }
+      ],
+      "evidence_quote": "Dial 119 for fire and disaster rescue operations",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.npa.gov.tw",
+          "tier": 1,
+          "title": "National Police Agency"
+        }
+      ],
+      "evidence_quote": "112 serves as the international unified mobile emergency redirect number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "0800-011-765",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.taiwan.net.tw",
+          "tier": 1,
+          "title": "Taiwan Tourism Administration"
+        }
+      ],
+      "evidence_quote": "24-hour toll-free tourist hotline for international visitors is 0800-011-765",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/taiwan",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 1,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Tayvan dünyanın en güvenli ve misafirperver seyahat ülkelerinden biridir; standart önlemler yeterlidir.",
+      "en": "Taiwan is one of the safest and most welcoming destinations globally; exercise normal precautions.",
+      "de": "Taiwan ist eines der sichersten und gastfreundlichsten Reiseländer weltweit; normale Vorsichtsmaßnahmen genügen.",
+      "ru": "Тайвань — одна из самых безопасных и дружелюбных стран мира; действуют обычные меры предосторожности.",
+      "es": "Taiwán es uno de los destinos más seguros y hospitalarios del mundo; aplican precauciones normales."
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disaster": "medium",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 98.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/taiwan",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Taiwan reach 98.4 Mbps with comprehensive 5G coverage",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 175.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/taiwan",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in Taiwan measure 175.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Chunghwa Telecom, Taiwan Mobile, and FarEasTone offer unlimited data prepaid SIMs/eSIMs at Taoyuan (TPE) and Kaohsiung (KHH) airports. Passport and second ID required for in-person registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ncc.gov.tw",
+          "tier": 1,
+          "title": "National Communications Commission (NCC)"
+        }
+      ],
+      "evidence_quote": "Telecom operators require passport verification for prepaid telecommunication services",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "EasyCard / iPASS",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.easycard.com.tw",
+        "tier": 1,
+        "title": "EasyCard Corporation"
+      }
+    },
+    {
+      "name": "Taiwan Railway e-Booking",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.railway.gov.tw",
+        "tier": 1,
+        "title": "Taiwan Railway Administration"
+      }
+    },
+    {
+      "name": "YouBike",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.youbike.com.tw",
+        "tier": 1,
+        "title": "YouBike Official"
+      }
+    },
+    {
+      "name": "55688 (Taiwan Taxi)",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.taiwantaxi.com.tw",
+        "tier": 2,
+        "title": "Taiwan Taxi Co."
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Buddhism, Taoism, and traditional folk religion with over 15,000 active temples",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.moi.gov.tw",
+          "tier": 1,
+          "title": "Ministry of the Interior Taiwan"
+        }
+      ],
+      "evidence_quote": "Taiwan enjoys vibrant religious pluralism with syncretic Buddhist and Taoist practices",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Pingxi Sky Lantern Festival, Dragon Boat Festival, Mid-Autumn Festival, Mazu Pilgrimage",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.taiwan.net.tw",
+          "tier": 1,
+          "title": "Taiwan Tourism Administration"
+        }
+      ],
+      "evidence_quote": "Iconic cultural highlights include the Pingxi Lantern Festival and nationwide Dajia Mazu pilgrimage",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Eating, drinking, or chewing gum inside MRT stations beyond the yellow line is strictly prohibited and subject to fines of NT$1,500 to NT$7,500. Bringing pork products from abroad carries severe agricultural fines up to NT$1,000,000.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.metro.taipei",
+          "tier": 1,
+          "title": "Taipei Rapid Transit Corporation"
+        }
+      ],
+      "evidence_quote": "Drinking and eating are strictly forbidden in paid areas of the Taipei Metro under the Mass Rapid Transit Act",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping is not customary in Taiwan. Upscale restaurants add a 10% service charge to the bill; tipping taxi drivers or street vendors is neither expected nor practiced.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.taiwan.net.tw",
+          "tier": 1,
+          "title": "Taiwan Tourism Administration Tips"
+        }
+      ],
+      "evidence_quote": "Tipping is not part of Taiwanese culture; 10% service charge is included in full-service dining",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Taipei 101 Gökdeleni",
+        "en": "Taipei 101",
+        "de": "Taipei 101",
+        "ru": "Небоскрёб Тайбэй 101",
+        "es": "Rascacielos Taipei 101"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://www.taipei-101.com.tw",
+          "tier": 1,
+          "title": "Taipei 101 Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Taroko Boğazı Ulusal Parkı",
+        "en": "Taroko Gorge National Park",
+        "de": "Taroko-Nationalpark",
+        "ru": "Национальный парк Тароко",
+        "es": "Parque Nacional Garganta de Taroko"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.taroko.gov.tw",
+          "tier": 1,
+          "title": "Taroko National Park"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Taipei 101 Gökdeleni ve Fil Dağı Manzarası",
+        "license": "CC-BY-SA",
+        "author": "Bernard Spragg",
+        "source_url": "/images/countries/tw-480.webp",
+        "attribution_text": "Taipei 101 Tower and Elephant Mountain skyline, Taiwan. Bernard Spragg, CC0 / CC BY-SA.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Taipei 101 Gökdeleni ve Fil Dağı Manzarası, Tayvan",
+          "en": "Taipei 101 Tower & Elephant Mountain Skyline, Taiwan",
+          "de": "Taipei 101 Turm & Skyline vom Elephant Mountain, Taiwan",
+          "ru": "Небоскрёб Тайбэй 101 и вид с горы Слон, Тайвань",
+          "es": "Torre Taipei 101 y Horizonte de la Montaña del Elefante, Taiwán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "tayvan",
+      "en": "taiwan",
+      "de": "taiwan",
+      "ru": "tayvan",
+      "es": "taiwan"
+    },
+    "title": {
+      "tr": "Tayvan Vize Rehberi, Ücretsiz Kapıda Vize / e-Vize ve Taipei 101 | Vizamigo",
+      "en": "Taiwan Visa Guide, Free Landing Visa / eVisa Rules & Travel | Vizamigo",
+      "de": "Taiwan Visum-Leitfaden, Visafrei / E-Visum & Taipei 101 | Vizamigo",
+      "ru": "Виза на Тайвань, правила въезда и путеводитель по Тайбэю | Vizamigo",
+      "es": "Guía de Visa de Taiwán, e-Visa y Rascacielos Taipei 101 | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Tayvan Türk pasaportuna 30 gün ücretsiz kapıda vize / e-Vize, EasyCard ulaşım kartı, Tip A/B prizler, gece pazarları ve Taipei gezi rehberi.",
+      "en": "Taiwan 30-day landing visa / eVisa rules, EasyCard public transit tips, Type A/B sockets, night markets, and Taipei guide.",
+      "de": "Taiwan Einreisebestimmungen, EasyCard für U-Bahn und YouBike, Steckdosentyp A/B, Nachtmärkte und Reisetipps Taipei 101.",
+      "ru": "Правила въезда на Тайвань, карта EasyCard для метро, американские розетки Type A/B, ночные рынки и башня Тайбэй 101.",
+      "es": "Requisitos de visa para Taiwán, tarjeta de transporte EasyCard, enchufes Tipo A/B, mercados nocturnos y guía de Taipéi."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

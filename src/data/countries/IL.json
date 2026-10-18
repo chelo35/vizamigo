@@ -1,0 +1,473 @@
+{
+  "iso2": "IL",
+  "names": {
+    "tr": "İsrail",
+    "en": "Israel",
+    "de": "Israel",
+    "ru": "Израиль",
+    "es": "Israel"
+  },
+  "capital": {
+    "value": "Jerusalem",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.il",
+        "tier": 1,
+        "title": "Government of Israel"
+      }
+    ],
+    "evidence_quote": "Jerusalem is the seat of the government of Israel; most foreign embassies are located in Tel Aviv",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ILS",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.boi.org.il",
+        "tier": 1,
+        "title": "Bank of Israel"
+      }
+    ],
+    "evidence_quote": "The Israeli New Shekel (ILS, ₪) is the official currency of the State of Israel",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (IST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.il",
+        "tier": 1,
+        "title": "Ministry of Interior Israel"
+      }
+    ],
+    "evidence_quote": "Israel operates on Israel Standard Time UTC+2, switching to UTC+3 during daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.co.il",
+          "tier": 1,
+          "title": "Israel Electric Corporation"
+        }
+      ],
+      "evidence_quote": "The standard domestic low-voltage electricity grid delivers 230V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.co.il",
+          "tier": 1,
+          "title": "Israel Electric Corporation"
+        }
+      ],
+      "evidence_quote": "Operating frequency of the national power network is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "H",
+        "M"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "Sockets accommodate Israel's unique Type H three-pin plug as well as European standard Type C round two-pin plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "100",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.il",
+          "tier": 1,
+          "title": "Israel Police"
+        }
+      ],
+      "evidence_quote": "Dial 100 for emergency police response throughout Israel",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mdais.org",
+          "tier": 1,
+          "title": "Magen David Adom (MDA)"
+        }
+      ],
+      "evidence_quote": "Call 101 for Magen David Adom national emergency medical service and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.il/en/departments/israel_fire_and_rescue_services",
+          "tier": 1,
+          "title": "Israel Fire and Rescue Services"
+        }
+      ],
+      "evidence_quote": "Dial 102 for emergency fire and rescue services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.il",
+          "tier": 1,
+          "title": "Israel Police Emergency Dispatch"
+        }
+      ],
+      "evidence_quote": "112 serves as the international unified mobile redirect number",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "100",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.police.gov.il",
+          "tier": 1,
+          "title": "Israel Police Tourism Unit"
+        }
+      ],
+      "evidence_quote": "Tourist assistance is integrated within standard police dispatch at 100",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 3,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 3,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/israel",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 3,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 3,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Bölgesel çatışmalar, roket tehdidi ve güvenlik operasyonları nedeniyle seyahat planları gözden geçirilmeli; sınır bölgelerinden uzak durulmalıdır.",
+      "en": "Reconsider travel due to armed conflict and rocket fire; avoid border areas near Gaza and Lebanon.",
+      "de": "Reisen nach Israel sollten wegen bewaffneter Auseinandersetzungen und Raketenbeschuss überdacht werden.",
+      "ru": "Рекомендуется воздержаться от поездок в связи с военными действиями и угрозой ракетных обстрелов.",
+      "es": "Reconsidere viajar a Israel debido al conflicto armado y riesgo de cohetes; evite zonas fronterizas."
+    },
+    "regional_warnings": [
+      {
+        "area": "Gaza envelope and borders with Lebanon and Syria",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      },
+      {
+        "area": "West Bank (excluding Bethlehem and Jericho with caution)",
+        "level": 3,
+        "reason": "unrest",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/israel",
+          "tier": 1,
+          "title": "UK FCDO"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "high",
+      "civil_unrest": "high",
+      "natural_disaster": "low",
+      "health": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 54.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/israel",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Israel reach approximately 54.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 140.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/israel",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds across major cities measure 140.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Border authorities issue a blue electronic entry card (B2 slip) instead of stamping passports, preventing entry complications in other Middle Eastern nations. Pelephone, Cellcom, and Partner offer tourist eSIMs.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.il/en/departments/ministry_of_interior",
+          "tier": 1,
+          "title": "Population and Immigration Authority Israel"
+        }
+      ],
+      "evidence_quote": "Electronic entry card B2 is handed to arriving passengers and must be retained until departure",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Rav-Kav Online",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://ravkavonline.co.il",
+        "tier": 1,
+        "title": "National Public Transport Authority Israel"
+      }
+    },
+    {
+      "name": "Moovit",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://moovitapp.com",
+        "tier": 2,
+        "title": "Moovit App"
+      }
+    },
+    {
+      "name": "Gett",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://gett.com/il",
+        "tier": 2,
+        "title": "Gett Taxi Israel"
+      }
+    },
+    {
+      "name": "Wolt Israel",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/isr",
+        "tier": 2,
+        "title": "Wolt Israel"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Judaism (approx. 73%), Islam (approx. 18%), Christianity (approx. 2%), and Druze",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cbs.gov.il",
+          "tier": 1,
+          "title": "Central Bureau of Statistics Israel"
+        }
+      ],
+      "evidence_quote": "Israel is the historic homeland of Jewish culture and holy site for Abrahamic religions",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Passover (Pesach), Rosh Hashanah, Yom Kippur, Hanukkah, Purim street carnivals",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.il",
+          "tier": 1,
+          "title": "Ministry of Tourism Israel"
+        }
+      ],
+      "evidence_quote": "Public life follows the Hebrew calendar with major holidays like Passover, Yom Kippur, and Sukkot",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Shabbat begins Friday afternoon and ends Saturday evening; public transport halts in most cities and shops close. Modest dress is strictly required at holy sites (Western Wall, Temple Mount, Church of the Holy Sepulchre). Keep the blue B2 entry slip safe.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.il",
+          "tier": 1,
+          "title": "Ministry of Tourism Israel Guide"
+        }
+      ],
+      "evidence_quote": "Public transit and businesses pause observance of Shabbat from Friday sunset to Saturday night",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 12-15% is standard practice in restaurants and cafés. Tips are rarely included on the bill and are usually added when paying by card or cash.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.il",
+          "tier": 1,
+          "title": "Israel Ministry of Tourism"
+        }
+      ],
+      "evidence_quote": "It is customary to leave a tip of 12% to 15% in sit-down restaurants across Israel",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kudüs Eski Şehir ve Ağlama Duvarı",
+        "en": "Old City of Jerusalem & Western Wall",
+        "de": "Altstadt von Jerusalem & Klagemauer",
+        "ru": "Старый город Иерусалима и Стена Плача",
+        "es": "Ciudad Vieja de Jerusalén y Muro de las Lamentaciones"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/148",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ölü Deniz (Lut Gölü)",
+        "en": "Dead Sea Natural Wonder",
+        "de": "Totes Meer Naturwunder",
+        "ru": "Мёртвое море",
+        "es": "Mar Muerto Maravilla Natural"
+      },
+      "type": "nature",
+      "sources": [
+        {
+          "url": "https://www.parks.org.il",
+          "tier": 1,
+          "title": "Israel Nature and Parks Authority"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kudüs Eski Şehir Surları ve Ağlama Duvarı",
+        "license": "CC-BY-SA",
+        "author": "Wayne McLean",
+        "source_url": "/images/countries/il-480.webp",
+        "attribution_text": "Old City of Jerusalem and Western Wall plaza. Wayne McLean, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Kudüs Eski Şehir Surları ve Ağlama Duvarı, İsrail",
+          "en": "Old City of Jerusalem & Western Wall Plaza, Israel",
+          "de": "Altstadt von Jerusalem & Klagemauer-Platz, Israel",
+          "ru": "Стены Старого города Иерусалима и Стена Плача, Израиль",
+          "es": "Murallas de la Ciudad Vieja de Jerusalén y Explanada del Muro, Israel"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "israil",
+      "en": "israel",
+      "de": "israel",
+      "ru": "izrail",
+      "es": "israel"
+    },
+    "title": {
+      "tr": "İsrail Vize Rehberi, Güvenlik Tavsiyeleri ve Kudüs Gezi Rehberi | Vizamigo",
+      "en": "Israel Visa Guide, Safety Warnings & Jerusalem Travel Tips | Vizamigo",
+      "de": "Israel Visum-Leitfaden, Sicherheitshinweise & Jerusalem Reisetipps | Vizamigo",
+      "ru": "Виза в Израиль, безопасность, правила въезда и Иерусалим | Vizamigo",
+      "es": "Guía de Visa de Israel, Avisos de Seguridad y Ciudad Vieja de Jerusalén | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "İsrail vize şartları, Şabat kuralları, mavi B2 giriş kartı, Tip H prizler, Rav-Kav kartı ve Kudüs Ağlama Duvarı gezi rehberi.",
+      "en": "Israel visa requirements, Shabbat rules, blue B2 entry slip, Type H sockets, Rav-Kav transit card, and Jerusalem guide.",
+      "de": "Israel Einreisebestimmungen, Schabbat-Regeln, blaue B2-Einreisekarte, Steckdosentyp H, Rav-Kav-Karte und Klagemauer.",
+      "ru": "Правила въезда в Израиль, талон B2 вместо штампа, шаббат, розетки Type H, транспортная карта Рав-Кав и Старый Иерусалим.",
+      "es": "Requisitos de visa para Israel, normas de Shabat, tarjeta B2, enchufes Tipo H, tarjeta Rav-Kav y Muro de las Lamentaciones."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

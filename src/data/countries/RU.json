@@ -1,0 +1,472 @@
+{
+  "iso2": "RU",
+  "names": {
+    "tr": "Rusya",
+    "en": "Russia",
+    "de": "Russland",
+    "ru": "Россия",
+    "es": "Rusia"
+  },
+  "capital": {
+    "value": "Moscow",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mos.ru",
+        "tier": 1,
+        "title": "Government of Moscow"
+      }
+    ],
+    "evidence_quote": "Moscow is the capital and largest city of the Russian Federation",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "RUB",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://cbr.ru",
+        "tier": 1,
+        "title": "Central Bank of the Russian Federation"
+      }
+    ],
+    "evidence_quote": "The Russian Ruble (RUB) is the official currency; foreign Visa/Mastercard cards are suspended due to sanctions",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (MSK)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kremlin.ru",
+        "tier": 1,
+        "title": "President of Russia Official Site"
+      }
+    ],
+    "evidence_quote": "Moscow Standard Time operates on UTC+3; the country spans 11 time zones from UTC+2 to UTC+12",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rosseti.ru",
+          "tier": 1,
+          "title": "Rosseti National Electric Grid"
+        }
+      ],
+      "evidence_quote": "Standard residential alternating current supply across Russia is 220V 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.rosseti.ru",
+          "tier": 1,
+          "title": "Rosseti"
+        }
+      ],
+      "evidence_quote": "Grid frequency throughout Russia is standard 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.iec.ch/world-plugs",
+          "tier": 1,
+          "title": "International Electrotechnical Commission"
+        }
+      ],
+      "evidence_quote": "European standard Type C and Schuko Type F round two-pin sockets are universal in Russia",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://мвд.рф",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of Russia (MVD)"
+        }
+      ],
+      "evidence_quote": "Dial 102 from mobile phones or 02 from landlines for emergency police assistance",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://minzdrav.gov.ru",
+          "tier": 1,
+          "title": "Ministry of Health of the Russian Federation"
+        }
+      ],
+      "evidence_quote": "Call 103 for emergency medical services and ambulance dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mchs.gov.ru",
+          "tier": 1,
+          "title": "EMERCOM of Russia (MChS)"
+        }
+      ],
+      "evidence_quote": "Dial 101 for fire and rescue emergency services",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mchs.gov.ru",
+          "tier": 1,
+          "title": "EMERCOM Unified Emergency System"
+        }
+      ],
+      "evidence_quote": "112 is the nationwide unified emergency dispatch number operational across Russia",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "+7 495 244 4444",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://мвд.рф",
+          "tier": 1,
+          "title": "Moscow Police Tourist Patrol Division"
+        }
+      ],
+      "evidence_quote": "Specialized Tourist Police battalions patrol Red Square and central pedestrian zones in Moscow",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 4,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State Travel Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 4,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/russia",
+          "tier": 1,
+          "title": "UK Foreign, Commonwealth & Development Office"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "DE_AA",
+        "level": 4,
+        "source": {
+          "url": "https://www.auswaertiges-amt.de",
+          "tier": 1,
+          "title": "Auswärtiges Amt Reise- und Sicherheitshinweise"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 4,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Devam eden askeri çatışma, uçuş kısıtlamaları ve bankacılık yaptırımları nedeniyle Batılı dışişleri bakanlıkları Rusya'ya seyahat edilmemesini tavsiye etmektedir.",
+      "en": "Due to ongoing armed conflict, flight limitations, and financial sanctions, major foreign offices advise against all travel to Russia.",
+      "de": "Wegen des bewaffneten Konflikts, Flugeinschränkungen und Bankensanktionen wird vor Reisen nach Russland gewarnt.",
+      "ru": "Действуют строгие международные финансовые и авиационные ограничения; иностранные карты Visa/Mastercard не работают.",
+      "es": "Debido al conflicto armado, restricciones aéreas y sanciones bancarias, cancillerías internacionales desaconsejan viajar a Rusia."
+    },
+    "regional_warnings": [
+      {
+        "area": "Regions bordering Ukraine (Belgorod, Kursk, Bryansk, Voronezh, Rostov, Krasnodar)",
+        "level": 4,
+        "reason": "conflict",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Department of State"
+        }
+      },
+      {
+        "area": "North Caucasus region (Chechnya, Dagestan, Ingushetia)",
+        "level": 4,
+        "reason": "terrorism",
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/russia",
+          "tier": 1,
+          "title": "UK FCDO"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "medium",
+      "terrorism": "high",
+      "civil_unrest": "high",
+      "natural_disaster": "low",
+      "health": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 32.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/russia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median mobile broadband download speeds in Russia reach approximately 32.5 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 88.0,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/russia",
+          "tier": 1,
+          "title": "Ookla Speedtest Global Index"
+        }
+      ],
+      "evidence_quote": "Median fixed broadband download speeds in urban Russian centers measure 88.0 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "Foreign-issued Visa, Mastercard, and American Express cards do not function in Russia due to sanctions; bring EUR or USD cash for currency exchange. MTS, MegaFon, and Beeline offer prepaid SIM cards requiring passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cbr.ru",
+          "tier": 1,
+          "title": "Central Bank of Russia"
+        }
+      ],
+      "evidence_quote": "International payment card systems have suspended operations within Russian territory",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yandex Go",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://go.yandex.ru",
+        "tier": 2,
+        "title": "Yandex Go Ecosystem"
+      }
+    },
+    {
+      "name": "2GIS",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://2gis.ru",
+        "tier": 2,
+        "title": "2GIS Offline City Maps"
+      }
+    },
+    {
+      "name": "Yandex Maps",
+      "category": "maps",
+      "available_in_country": true,
+      "source": {
+        "url": "https://maps.yandex.ru",
+        "tier": 2,
+        "title": "Yandex Maps"
+      }
+    },
+    {
+      "name": "Sberbank Online",
+      "category": "payments",
+      "available_in_country": true,
+      "source": {
+        "url": "https://sberbank.ru",
+        "tier": 1,
+        "title": "Sberbank"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Russian Orthodox Christianity, Islam, Buddhism, and Judaism as recognized historic faiths",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://kremlin.ru",
+          "tier": 1,
+          "title": "Presidential Administration"
+        }
+      ],
+      "evidence_quote": "Russian Orthodoxy is the largest traditional faith alongside substantial Muslim populations in Tatarstan and Caucasus",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Victory Day (May 9), New Year celebrations, Maslenitsa pancake week, Scarlet Sails in St. Petersburg",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://culture.ru",
+          "tier": 1,
+          "title": "Ministry of Culture of the Russian Federation"
+        }
+      ],
+      "evidence_quote": "Major national holidays include Victory Day, New Year, and the White Nights Scarlet Sails graduation",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Foreign citizens must carry original passports, migration cards, and hotel registration at all times. Photographing military sites, border areas, or transport hubs is strictly illegal. Non-cash payments require local Mir cards or UnionPay.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://мвд.рф",
+          "tier": 1,
+          "title": "Migration Directorate MVD Russia"
+        }
+      ],
+      "evidence_quote": "Foreigners must keep migration registration slips and documents available for police inspection",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Tipping 10% is customary in restaurants and cafés when satisfied with service; taxi fares can be rounded up to the nearest 100 rubles.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mos.ru",
+          "tier": 1,
+          "title": "Moscow Tourism Committee"
+        }
+      ],
+      "evidence_quote": "A 10% tip is standard in Moscow and Saint Petersburg dining establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Moskova Kızıl Meydan ve Kremlin",
+        "en": "Moscow Red Square & Kremlin",
+        "de": "Moskauer Roter Platz & Kreml",
+        "ru": "Красная площадь и Кремль",
+        "es": "Plaza Roja y Kremlin de Moscú"
+      },
+      "type": "landmark",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/545",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Ermitaj Müzesi ve Saint Petersburg Tarihi Merkezi",
+        "en": "Hermitage Museum & Saint Petersburg Centre",
+        "de": "Eremitage & Historisches Zentrum Sankt Petersburg",
+        "ru": "Эрмитаж и исторический центр Санкт-Петербурга",
+        "es": "Museo del Hermitage y Centro de San Petersburgo"
+      },
+      "type": "heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/540",
+          "tier": 1,
+          "title": "UNESCO World Heritage Centre"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Moskova Kızıl Meydan ve Aziz Vasil Katedrali",
+        "license": "CC-BY-SA",
+        "author": "Ludvig14",
+        "source_url": "/images/countries/ru-480.webp",
+        "attribution_text": "Saint Basil's Cathedral on Red Square in Moscow, Russia. Ludvig14, CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 50
+        },
+        "alt": {
+          "tr": "Moskova Kızıl Meydan ve Aziz Vasil Katedrali, Rusya",
+          "en": "Saint Basil's Cathedral & Red Square in Moscow, Russia",
+          "de": "Basilius-Kathedrale & Roter Platz in Moskau, Russland",
+          "ru": "Собор Василия Блаженного и Красная площадь в Москве, Россия",
+          "es": "Catedral de San Basilio y Plaza Roja en Moscú, Rusia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "rusya",
+      "en": "russia",
+      "de": "russland",
+      "ru": "rossiya",
+      "es": "rusia"
+    },
+    "title": {
+      "tr": "Rusya e-Vize Rehberi, Yaptırımlar, Ödeme Yöntemleri ve Gezi Rehberi | Vizamigo",
+      "en": "Russia eVisa Guide, Sanctions, Payment Cards & Travel Advisory | Vizamigo",
+      "de": "Russland E-Visum Leitfaden, Sanktionen, Zahlungsmittel & Reisetipps | Vizamigo",
+      "ru": "Электронная виза в Россию, банковские карты и правила въезда | Vizamigo",
+      "es": "Guía de eVisa de Rusia, Sanciones, Métodos de Pago y Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Rusya 16 günlük e-Vize başvuru şartları, yabancı kredi kartı kısıtlamaları, nakit para kullanımı, Tip C/F prizler ve Kızıl Meydan gezi rehberi.",
+      "en": "Russia 16-day electronic visa rules, foreign card sanctions, cash exchange tips, Type C/F plugs, and Red Square travel guide.",
+      "de": "Russland E-Visum (16 Tage), Verbot ausländischer Kreditkarten, Bargeldumtausch, Steckdosentyp C/F und Roter Platz.",
+      "ru": "Правила оформления единой электронной визы в РФ, работа банковских карт Мир, наличная валюта и регистрация иностранцев.",
+      "es": "Requisitos de eVisa para Rusia (16 días), restricciones con tarjetas extranjeras, cambio de efectivo y Plaza Roja."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
