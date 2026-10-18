@@ -52,6 +52,14 @@ import FI from './countries/FI.json';
 import AR from './countries/AR.json';
 import PH from './countries/PH.json';
 import DO from './countries/DO.json';
+import AL from './countries/AL.json';
+import GE from './countries/GE.json';
+import BG from './countries/BG.json';
+import RO from './countries/RO.json';
+import QA from './countries/QA.json';
+import JO from './countries/JO.json';
+import ME from './countries/ME.json';
+import AZ from './countries/AZ.json';
 
 export interface VerifiedSource {
   url: string;
@@ -238,6 +246,14 @@ export const VERIFIED_COUNTRIES_MAP: Record<string, VerifiedCountryRecord> = {
   AR: AR as unknown as VerifiedCountryRecord,
   PH: PH as unknown as VerifiedCountryRecord,
   DO: DO as unknown as VerifiedCountryRecord,
+  AL: AL as unknown as VerifiedCountryRecord,
+  GE: GE as unknown as VerifiedCountryRecord,
+  BG: BG as unknown as VerifiedCountryRecord,
+  RO: RO as unknown as VerifiedCountryRecord,
+  QA: QA as unknown as VerifiedCountryRecord,
+  JO: JO as unknown as VerifiedCountryRecord,
+  ME: ME as unknown as VerifiedCountryRecord,
+  AZ: AZ as unknown as VerifiedCountryRecord,
 };
 
 /**

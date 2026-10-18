@@ -1,0 +1,457 @@
+{
+  "iso2": "AL",
+  "names": {
+    "tr": "Arnavutluk",
+    "en": "Albania",
+    "de": "Albanien",
+    "ru": "Албания",
+    "es": "Albania"
+  },
+  "capital": {
+    "value": "Tiran",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://tirana.al",
+        "tier": 1,
+        "title": "Municipality of Tirana"
+      }
+    ],
+    "evidence_quote": "Tirana is the capital and largest city of the Republic of Albania",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "ALL",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bankofalbania.org",
+        "tier": 1,
+        "title": "Bank of Albania"
+      }
+    ],
+    "evidence_quote": "The Albanian Lek (ALL) is the official currency of Albania",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kryeministria.al",
+        "tier": 1,
+        "title": "Prime Minister's Office of Albania"
+      }
+    ],
+    "evidence_quote": "Albania observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ost.al",
+          "tier": 1,
+          "title": "Operatori i Sistemit te Transmetimit (OST)"
+        }
+      ],
+      "evidence_quote": "The low voltage distribution grid in Albania operates at 230V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ost.al",
+          "tier": 1,
+          "title": "OST Albania"
+        }
+      ],
+      "evidence_quote": "Grid frequency across Albania is synchronized with continental Europe at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dps.gov.al",
+          "tier": 1,
+          "title": "General Directorate of Standardization Albania"
+        }
+      ],
+      "evidence_quote": "Standard electrical sockets in Albania are European Type C and Type F Schuko",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "129",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://asp.gov.al",
+          "tier": 1,
+          "title": "Albanian State Police"
+        }
+      ],
+      "evidence_quote": "State police emergency response line in Albania is 129",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "127",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://shendetesia.gov.al",
+          "tier": 1,
+          "title": "Ministry of Health Albania"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue operates on hotline 127",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "128",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mb.gov.al",
+          "tier": 1,
+          "title": "Ministry of Interior Albania"
+        }
+      ],
+      "evidence_quote": "Fire and rescue services across Albania respond on 128",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mb.gov.al",
+          "tier": 1,
+          "title": "Albanian Integrated Emergency Center"
+        }
+      ],
+      "evidence_quote": "Unified emergency number 112 connects directly to all emergency response dispatches",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "129",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://albania.al",
+          "tier": 1,
+          "title": "National Tourism Agency Albania"
+        }
+      ],
+      "evidence_quote": "Tourist police units operate through State Police dispatch 129 in resort regions",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Albania Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/albania",
+          "tier": 1,
+          "title": "UK FCDO Albania Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Arnavutluk hızla gelişen ve misafirperver bir turizm merkezidir",
+      "en": "Normal Precautions: Albania is a welcoming and increasingly popular travel destination",
+      "de": "Normale Vorsicht: Albanien ist ein gastfreundliches und sicheres Reiseland",
+      "ru": "Обычные меры: Албания гостеприимная и безопасная страна",
+      "es": "Precauciones normales: Albania es un destino hospitalario y seguro"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 58.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/albania",
+          "tier": 2,
+          "title": "Ookla Speedtest Albania"
+        }
+      ],
+      "evidence_quote": "Albania mobile download speeds average 58.2 Mbps across Vodafone and One Albania",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 52.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/albania",
+          "tier": 2,
+          "title": "Ookla Speedtest Albania Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Albania averages 52.1 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Vodafone Albania and One Albania. Prepaid tourist SIM packages (often offering generous 30GB-100GB data) are sold at Tirana Airport with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://akep.al",
+          "tier": 1,
+          "title": "Electronic and Postal Communications Authority (AKEP)"
+        }
+      ],
+      "evidence_quote": "SIM registration requires valid passport verification under AKEP telecommunication rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Speed Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://speedtaxi.al",
+        "tier": 1,
+        "title": "Speed Taxi Tirana App"
+      }
+    },
+    {
+      "name": "Green Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://greentaxi.al",
+        "tier": 1,
+        "title": "Green Taxi Electric Fleet Tirana"
+      }
+    },
+    {
+      "name": "Baboon",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://baboon.al",
+        "tier": 1,
+        "title": "Baboon Food Delivery Albania"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/al/en/",
+        "tier": 1,
+        "title": "Glovo Albania"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (~50%), Hristiyanlık (Ortodoks ~7%, Katolik ~10%), Dinsiz/Seküler (~30%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.instat.gov.al",
+          "tier": 1,
+          "title": "INSTAT Albania Census"
+        }
+      ],
+      "evidence_quote": "Albania is internationally celebrated for exemplary religious harmony and tolerance",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bağımsızlık ve Bayrak Günü (28 Kasım), Kurtuluş Günü (29 Kasım), Yaz Günü (Dita e Verës, 14 Mart), Nevruz",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://albania.al",
+          "tier": 1,
+          "title": "Visit Albania Cultural Events"
+        }
+      ],
+      "evidence_quote": "Flag Day on November 28 and Summer Day on March 14 are beloved national holidays",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "'Besa' (onur ve söz verme yemini) geleneksel Arnavut misafirperverliğinin temelidir. Birçok küçük işletmede nakit para (Arnavut Leki veya Euro) tercih edilir. Prizler Avrupa standardı Tip C ve F'dir (230V).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://albania.al",
+          "tier": 1,
+          "title": "Visit Albania Practical Info"
+        }
+      ],
+      "evidence_quote": "Hospitality and the ancient code of Besa guide relations with guests; cash remains widely used",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş bırakmak yaygın ve takdir edilen bir gelenektir. Kafelerde bozuk para bırakmak uygundur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://albania.al",
+          "tier": 1,
+          "title": "Albania Tipping Etiquette"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent in restaurants is standard practice and warmly appreciated",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Ksamil Adaları ve Arnavut Rivierası",
+        "en": "Ksamil Islands and Albanian Riviera",
+        "de": "Ksamil-Inseln und Albanische Riviera",
+        "ru": "Острова Ксамил и Албанская Ривьера",
+        "es": "Islas de Ksamil y Riviera Albanesa"
+      },
+      "type": "coastal_paradise",
+      "sources": [
+        {
+          "url": "https://albania.al",
+          "tier": 1,
+          "title": "Visit Albania Ksamil"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Berat Bin Pencereli Tarihi Şehir (UNESCO)",
+        "en": "Historic Centre of Berat (UNESCO)",
+        "de": "Historisches Zentrum von Berat",
+        "ru": "Исторический центр Берата (ЮНЕСКО)",
+        "es": "Centro Histórico de Berat"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/569",
+          "tier": 1,
+          "title": "UNESCO Historic Centres of Berat and Gjirokastra"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Butrint Antik Kenti ve Arkeoloji Parkı (UNESCO)",
+        "en": "Butrint Archaeological Park (UNESCO)",
+        "de": "Archäologischer Park Butrint",
+        "ru": "Археологический музей-заповедник Бутринти",
+        "es": "Parque Arqueológico de Butrinto"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/570",
+          "tier": 1,
+          "title": "UNESCO Butrint"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Ksamil Adaları ve Turkuaz Sahili",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/al-480.webp",
+        "attribution_text": "Ksamil turquoise beach and islands in Albania. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Ksamil Adaları ve Turkuaz Sahili, Arnavutluk",
+          "en": "Ksamil Islands and Turquoise Coast, Albania",
+          "de": "Ksamil-Inseln und türkisfarbene Küste, Albanien",
+          "ru": "Острова Ксамил и бирюзовое побережье, Албания",
+          "es": "Islas de Ksamil y costa turquesa, Albania"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "arnavutluk",
+      "en": "albania",
+      "de": "albanien",
+      "ru": "albaniya",
+      "es": "albania"
+    },
+    "title": {
+      "tr": "Arnavutluk Vize Rehberi, Ksamil ve Riviera Seyahati | Vizamigo",
+      "en": "Albania Visa Guide, Ksamil & Riviera Travel Essentials | Vizamigo",
+      "de": "Albanien Visum-Leitfaden, Ksamil & Riviera Reisen | Vizamigo",
+      "ru": "Виза в Албанию, Ксамил и Ривьера советы туристам | Vizamigo",
+      "es": "Guía de Visa de Albania, Ksamil y Riviera Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Arnavutluk vize politikası (90 gün vizesiz), Ksamil sahilleri, priz tipleri (C, F), taksi uygulamaları ve seyahat rehberi.",
+      "en": "Albania visa rules (90-day visa-free for many passports), Ksamil beaches, Type C/F plugs, taxi apps, and Riviera guide.",
+      "de": "Albanien Visabestimmungen, Ksamil-Strände, Steckertypen C/F, Taxi-Apps und Riviera-Reisetipps.",
+      "ru": "Визовые правила Албании, пляжи Ксамила, розетки C/F, приложения такси и гид по Албанской Ривьере.",
+      "es": "Requisitos de visa para Albania, playas de Ksamil, enchufes C/F, apps de taxi y guía de la Riviera Albanesa."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

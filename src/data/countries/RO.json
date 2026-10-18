@@ -1,0 +1,451 @@
+{
+  "iso2": "RO",
+  "names": {
+    "tr": "Romanya",
+    "en": "Romania",
+    "de": "Rumänien",
+    "ru": "Румыния",
+    "es": "Rumania"
+  },
+  "capital": {
+    "value": "Bükreş",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pmb.ro",
+        "tier": 1,
+        "title": "Bucharest City Hall"
+      }
+    ],
+    "evidence_quote": "Bucharest is the capital and largest city of Romania",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "RON",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bnr.ro",
+        "tier": 1,
+        "title": "National Bank of Romania (BNR)"
+      }
+    ],
+    "evidence_quote": "The Romanian Leu (RON) is the legal currency of Romania",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://gov.ro",
+        "tier": 1,
+        "title": "Government of Romania Time"
+      }
+    ],
+    "evidence_quote": "Romania observes Eastern European Time UTC+2 and Eastern European Summer Time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.transelectrica.ro",
+          "tier": 1,
+          "title": "Transelectrica National Power Grid"
+        }
+      ],
+      "evidence_quote": "Low voltage electricity across Romania is distributed at 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.transelectrica.ro",
+          "tier": 1,
+          "title": "Transelectrica Romania"
+        }
+      ],
+      "evidence_quote": "Operating frequency throughout the Romanian electrical transmission network is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.asro.ro",
+          "tier": 1,
+          "title": "Romanian Standards Association (ASRO)"
+        }
+      ],
+      "evidence_quote": "Romanian electrical installations use European Type C and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.politiaromana.ro",
+          "tier": 1,
+          "title": "Romanian Police (Poliția Română)"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch throughout Romania is integrated into 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ms.ro",
+          "tier": 1,
+          "title": "Ministry of Health Romania"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue responds directly through 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.igsu.ro",
+          "tier": 1,
+          "title": "General Inspectorate for Emergency Situations (IGSU)"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch operates under unified 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.sts.ro/ro/serviciul-de-urgenta-112",
+          "tier": 1,
+          "title": "Special Telecommunications Service 112 Romania"
+        }
+      ],
+      "evidence_quote": "112 is Romania's single national emergency telephone system managed by STS",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Romania Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/romania",
+          "tier": 1,
+          "title": "UK FCDO Romania Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Romanya güvenli ve zengin tarihi mirasa sahip bir AB ülkesidir",
+      "en": "Normal Precautions: Romania is a safe European destination with rich cultural heritage",
+      "de": "Normale Vorsicht: Rumänien ist ein sicheres europäisches Reiseziel",
+      "ru": "Обычные меры: Румыния безопасная европейская страна с богатым наследием",
+      "es": "Precauciones normales: Rumania es un destino europeo seguro con rico patrimonio"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 65.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/romania",
+          "tier": 2,
+          "title": "Ookla Speedtest Romania"
+        }
+      ],
+      "evidence_quote": "Romania mobile download speed averages 65.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 215.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/romania",
+          "tier": 2,
+          "title": "Ookla Speedtest Romania Fixed"
+        }
+      ],
+      "evidence_quote": "Romania ranks among world leaders in fixed fiber broadband averaging 215.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Orange Romania, Vodafone, and Digi. EU Roam Like at Home regulations apply across all Romanian networks.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.ancom.ro",
+          "tier": 1,
+          "title": "National Authority for Management and Regulation in Communications (ANCOM)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration complies with standard Romanian telecommunication laws",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-ro/",
+        "tier": 1,
+        "title": "Bolt Romania"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/ro/en/",
+        "tier": 1,
+        "title": "Uber Romania"
+      }
+    },
+    {
+      "name": "Tazz",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://tazz.ro",
+        "tier": 1,
+        "title": "Tazz Food Delivery Romania"
+      }
+    },
+    {
+      "name": "CFR Călători",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.cfrcalatori.ro",
+        "tier": 1,
+        "title": "CFR Călători Official Railway App"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Rumen Ortodoksluğu (~73%), Protestanlık (~6%), Roma Katolikliği (~4.5%), Dinsiz (~15%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://insse.ro",
+          "tier": 1,
+          "title": "National Institute of Statistics Romania (INS)"
+        }
+      ],
+      "evidence_quote": "Romanian Orthodoxy represents the primary spiritual tradition of the population",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Büyük Birleşme Günü (1 Aralık), Ortodoks Paskalyası, Mărțișor (1 Mart Bahar Bayramı), Untold Festivali (Kaloşvar)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://romaniatourism.com",
+          "tier": 1,
+          "title": "Romania Tourism Festivals"
+        }
+      ],
+      "evidence_quote": "Great Union Day on December 1 and ancient spring custom Mărțișor are cultural highlights",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Romanya Mart 2024'te hava ve deniz yoluyla Schengen'e katılmıştır. Karayoluyla seyahat eden tüm araçlar için elektronik vinyet (Rovinieta - erovinieta.ro) satın alınması ZORUNLUDUR. Prizler Avrupa standardı Tip C ve F'dir (230V).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.erovinieta.ro",
+          "tier": 1,
+          "title": "CNAIR Official Rovinieta Portal"
+        }
+      ],
+      "evidence_quote": "Rovinieta road toll is mandatory for all motor vehicles on Romanian national roads",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş teamüldür. Romanya'da bahşişler yasal düzenlemeyle doğrudan kredi kartı fişine seçenek olarak eklenebilmektedir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://romaniatourism.com",
+          "tier": 1,
+          "title": "Romania Travel Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping between 10 to 15 percent is standard and can be added directly to electronic card payments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Bran Kalesi (Drakula Şatosu)",
+        "en": "Bran Castle (Dracula's Castle)",
+        "de": "Schloss Bran (Draculaschloss)",
+        "ru": "Замок Бран (Замок Дракулы)",
+        "es": "Castillo de Bran (Castillo de Drácula)"
+      },
+      "type": "historic_castle",
+      "sources": [
+        {
+          "url": "https://www.bran-castle.com",
+          "tier": 1,
+          "title": "Bran Castle Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Peleș Kalesi ve Sinaia Karpatları",
+        "en": "Peles Castle in Sinaia",
+        "de": "Schloss Peleș in Sinaia",
+        "ru": "Замок Пелеш в Синае",
+        "es": "Castillo de Peleș en Sinaia"
+      },
+      "type": "historic_palace",
+      "sources": [
+        {
+          "url": "https://peles.ro",
+          "tier": 1,
+          "title": "National Museum Peles"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Sighişoara Tarihi Merkezi (UNESCO)",
+        "en": "Historic Centre of Sighișoara (UNESCO)",
+        "de": "Historisches Zentrum von Schäßburg",
+        "ru": "Исторический центр города Сигишоара (ЮНЕСКО)",
+        "es": "Centro Histórico de Sighișoara"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/902",
+          "tier": 1,
+          "title": "UNESCO Historic Centre of Sighişoara"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bran Kalesi (Drakula Şatosu) ve Karpat Ormanları",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ro-480.webp",
+        "attribution_text": "Bran Castle in Transylvania, Romania. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Bran Kalesi ve Karpat Ormanları, Romanya",
+          "en": "Bran Castle and Carpathian Forest, Romania",
+          "de": "Schloss Bran und Karpatenwald, Rumänien",
+          "ru": "Замок Бран и Карпатский лес, Румыния",
+          "es": "Castillo de Bran y bosque de los Cárpatos, Rumania"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "romanya",
+      "en": "romania",
+      "de": "rumaenien",
+      "ru": "rumyniya",
+      "es": "rumania"
+    },
+    "title": {
+      "tr": "Romanya Vize Rehberi, Rovinieta Vinyet ve Transilvanya | Vizamigo",
+      "en": "Romania Visa Guide, Rovinieta Toll & Transylvania Travel | Vizamigo",
+      "de": "Rumänien Visum-Leitfaden, Rovinieta & Transsilvanien | Vizamigo",
+      "ru": "Виза в Румынию, виньетка Rovinieta и Трансильвания | Vizamigo",
+      "es": "Guía de Visa de Rumania, Peaje Rovinieta y Transilvania | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Romanya Schengen kuralları, Bran Kalesi, Rovinieta vinyet zorunluluğu, priz tipleri (C, F) ve Bükreş seyahat rehberi.",
+      "en": "Romania Schengen entry rules, Bran Castle, mandatory Rovinieta toll vignette, Type C/F plugs, and Bucharest guide.",
+      "de": "Rumänien Schengen-Bestimmungen, Schloss Bran, Rovinieta-Mautpflicht, Steckertypen C/F und Bukarest-Tipps.",
+      "ru": "Шенгенские правила въезда в Румынию, замок Бран, дорожная виньетка Rovinieta, розетки C/F и гид по Бухаресту.",
+      "es": "Normas de entrada Schengen para Rumania, Castillo de Bran, viñeta Rovinieta obligatoria y guía de Bucarest."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

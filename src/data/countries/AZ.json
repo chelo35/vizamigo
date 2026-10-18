@@ -1,0 +1,468 @@
+{
+  "iso2": "AZ",
+  "names": {
+    "tr": "Azerbaycan",
+    "en": "Azerbaijan",
+    "de": "Aserbaidschan",
+    "ru": "Азербайджан",
+    "es": "Azerbaiyán"
+  },
+  "capital": {
+    "value": "Bakü",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://baku-ih.gov.az",
+        "tier": 1,
+        "title": "Baku City Executive Power"
+      }
+    ],
+    "evidence_quote": "Baku is the capital and largest city of the Republic of Azerbaijan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "AZN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbar.az",
+        "tier": 1,
+        "title": "Central Bank of the Republic of Azerbaijan"
+      }
+    ],
+    "evidence_quote": "The Azerbaijani Manat (AZN) is the official currency of Azerbaijan",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (AZT)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://president.az",
+        "tier": 1,
+        "title": "Official website of the President of Azerbaijan"
+      }
+    ],
+    "evidence_quote": "Azerbaijan observes Azerbaijan Time UTC+4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://azerenerji.gov.az",
+          "tier": 1,
+          "title": "Azerenerji National Power Company"
+        }
+      ],
+      "evidence_quote": "Mains electricity in Azerbaijan is supplied at 220 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://azerenerji.gov.az",
+          "tier": 1,
+          "title": "Azerenerji Azerbaijan"
+        }
+      ],
+      "evidence_quote": "Transmission grid frequency in Azerbaijan operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://azstand.gov.az",
+          "tier": 1,
+          "title": "Azerbaijan Standardization Institute (AzStand)"
+        }
+      ],
+      "evidence_quote": "Azerbaijan uses European standard Type C Europlug and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mia.gov.az",
+          "tier": 1,
+          "title": "Ministry of Internal Affairs of Azerbaijan"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance throughout Azerbaijan is dialed via 102",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "103",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://sehiyye.gov.az",
+          "tier": 1,
+          "title": "Ministry of Health Azerbaijan"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue responds on 103",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "101",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://fhn.gov.az",
+          "tier": 1,
+          "title": "Ministry of Emergency Situations of Azerbaijan (FHN)"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency calls are dispatched through 101",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://fhn.gov.az",
+          "tier": 1,
+          "title": "FHN 112 Crisis Operations"
+        }
+      ],
+      "evidence_quote": "112 Crisis Management Center coordinates all emergency responder agencies in Azerbaijan",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "102",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://azerbaijan.travel",
+          "tier": 1,
+          "title": "Azerbaijan Tourism Board"
+        }
+      ],
+      "evidence_quote": "Tourist inquiries and emergency assistance are routed through central 102 and 112 dispatchers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Azerbaijan Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan",
+          "tier": 1,
+          "title": "UK FCDO Azerbaijan Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Önlem: Bakü ve Hazar kıyıları güvenlidir; Ermenistan sınır bölgelerinden uzak durun",
+      "en": "Exercise Increased Caution: Baku and Caspian resorts safe; avoid border perimeter with Armenia",
+      "de": "Erhöhte Vorsicht: Baku und Kaspische Küste sicher; Grenzregionen zu Armenien meiden",
+      "ru": "Повышенная осторожность: Баку безопасен, избегайте приграничных зон с Арменией",
+      "es": "Mayor precaución: Bakú y costa del Caspio seguros; evite la frontera con Armenia"
+    },
+    "regional_warnings": [
+      {
+        "area": "Azerbaijan-Armenia border zone and former conflict lines",
+        "level": 4,
+        "reason": "Presence of landmines and military border operations",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "medium",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 52.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/azerbaijan",
+          "tier": 2,
+          "title": "Ookla Speedtest Azerbaijan"
+        }
+      ],
+      "evidence_quote": "Azerbaijan mobile download speed averages 52.4 Mbps on Azercell and Bakcell",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 48.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/azerbaijan",
+          "tier": 2,
+          "title": "Ookla Speedtest Azerbaijan Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Azerbaijan averages 48.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Azercell and Bakcell. Tourist SIM cards are available at Heydar Aliyev International Airport with passport verification.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mincom.gov.az",
+          "tier": 1,
+          "title": "Ministry of Digital Development and Transport Azerbaijan"
+        }
+      ],
+      "evidence_quote": "SIM card registration mandates valid passport documentation under Ministry regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-az/",
+        "tier": 1,
+        "title": "Bolt Azerbaijan"
+      }
+    },
+    {
+      "name": "Yandex Go",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://taxi.yandex.com/az_az/",
+        "tier": 2,
+        "title": "Yandex Go Baku"
+      }
+    },
+    {
+      "name": "189 Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://189taxi.az",
+        "tier": 1,
+        "title": "189 Taxi Baku Official"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/aze/baku",
+        "tier": 1,
+        "title": "Wolt Azerbaijan"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (Şii ~65%, Sünni ~35%), Seküler anayasa",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://scwra.gov.az",
+          "tier": 1,
+          "title": "State Committee on Religious Associations of the Republic of Azerbaijan"
+        }
+      ],
+      "evidence_quote": "Azerbaijan is constitutionally a secular state with an overwhelmingly Muslim population",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Nevruz Bayramı (20-24 Mart), Zafer Günü (8 Kasım), Bağımsızlık Günü (28 Mayıs), Kurtuluş Günü (15 Haziran)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://azerbaijan.travel",
+          "tier": 1,
+          "title": "Azerbaijan Travel Festivals"
+        }
+      ],
+      "evidence_quote": "Novruz in March is the most vibrant and grandly celebrated traditional holiday across Azerbaijan",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Türk vatandaşları yeni çipli kimlik kartıyla pasaporta ihtiyaç duymadan Azerbaycan'a seyahat edebilir ve 90 gün kalabilir. 15 günden fazla kalan yabancıların Devlet Göç Hizmeti'ne (migration.gov.az) kayıt yaptırması zorunludur (oteller otomatik yapar). Karayolu sınır kapıları özel hükümet kararnamesiyle kapalı kalmaya devam edebilmektedir; havayolu tercih edilmelidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://migration.gov.az",
+          "tier": 1,
+          "title": "State Migration Service of the Republic of Azerbaijan"
+        }
+      ],
+      "evidence_quote": "Foreigners staying over 15 days must register at the State Migration Service of Azerbaijan",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %5-10 bahşiş bırakmak olağandır. Servis ücreti faturaya eklenmiş olsa bile küçük nakit bahşiş nezakettir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://azerbaijan.travel",
+          "tier": 1,
+          "title": "Azerbaijan Travel Etiquette"
+        }
+      ],
+      "evidence_quote": "Tipping between 5 to 10 percent in restaurants and cafes is customary in Baku",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Bakü Alev Kuleleri (Flame Towers) ve Bulvar",
+        "en": "Baku Flame Towers and Seaside Boulevard",
+        "de": "Flammentürme und Kaspischer Boulevard Baku",
+        "ru": "Пламенные башни и Приморский бульвар в Баку",
+        "es": "Torres de la Llama y Paseo Marítimo de Bakú"
+      },
+      "type": "architectural_wonder",
+      "sources": [
+        {
+          "url": "https://azerbaijan.travel",
+          "tier": 1,
+          "title": "Azerbaijan Travel Baku"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "İçerişehir ve Şirvanşahlar Sarayı (UNESCO)",
+        "en": "Walled City of Baku and Shirvanshahs' Palace (UNESCO)",
+        "de": "Altstadt von Baku und Schirwanschah-Palast",
+        "ru": "Ичери-шехер и Дворец ширваншахов (ЮНЕСКО)",
+        "es": "Ciudad Amurallada de Bakú y Palacio de los Shirvanshahs"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/958",
+          "tier": 1,
+          "title": "UNESCO Walled City of Baku with the Shirvanshah's Palace and Maiden Tower"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Gobustan Kaya Sanatı ve Çamur Volkanları (UNESCO)",
+        "en": "Gobustan Rock Art and Mud Volcanoes (UNESCO)",
+        "de": "Gobustan Felsbilder und Schlammvulkane",
+        "ru": "Гобустан наскальные рисунки и грязевые вулканы",
+        "es": "Paisaje Cultural de Arte Rupestre de Gobustán"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1076",
+          "tier": 1,
+          "title": "UNESCO Gobustan Rock Art Cultural Landscape"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Bakü Alev Kuleleri (Flame Towers) ve Hazar Sahili",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/az-480.webp",
+        "attribution_text": "Flame Towers illuminated over the Caspian Sea boulevard, Baku, Azerbaijan. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Alev Kuleleri ve Hazar Sahil Bulvarı, Bakü, Azerbaycan",
+          "en": "Flame Towers and Caspian Seaside Boulevard, Baku, Azerbaijan",
+          "de": "Flammentürme und Kaspischer Boulevard, Baku, Aserbaidschan",
+          "ru": "Пламенные башни и Приморский бульвар, Баку, Азербайджан",
+          "es": "Torres de la Llama y bulevar del Caspio, Bakú, Azerbaiyán"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "azerbaycan",
+      "en": "azerbaijan",
+      "de": "aserbaidschan",
+      "ru": "azerbaydzhan",
+      "es": "azerbaiyan"
+    },
+    "title": {
+      "tr": "Azerbaycan Vize Rehberi, Kimlikle Seyahat ve Bakü Rehberi | Vizamigo",
+      "en": "Azerbaijan Visa Guide, ID Card Entry & Baku Travel | Vizamigo",
+      "de": "Aserbaidschan Visum-Leitfaden, Reisen & Baku | Vizamigo",
+      "ru": "Виза в Азербайджан, въезд по ID-карте и советы по Баку | Vizamigo",
+      "es": "Guía de Visa de Azerbaiyán, Entrada y Guía de Bakú | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Azerbaycan vize kuralları (Türk vatandaşlarına kimlikle giriş), 15 günde göç kaydı, priz tipleri (C, F), Bolt taksi ve Bakü rehberi.",
+      "en": "Azerbaijan visa rules (ID entry for Turkish citizens), 15-day migration registration, Type C/F plugs, Bolt app, and Baku tips.",
+      "de": "Aserbaidschan Visabestimmungen, 15-Tage-Registrierungspflicht, Steckertypen C/F, Bolt-App und Baku-Reisetipps.",
+      "ru": "Визовые правила Азербайджана, въезд по ID для граждан Турции, регистрация в миграции, розетки C/F и Баку.",
+      "es": "Requisitos de visa para Azerbaiyán, registro migratorio a los 15 días, enchufes C/F, app Bolt y guía de Bakú."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

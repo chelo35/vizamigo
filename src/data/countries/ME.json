@@ -1,0 +1,447 @@
+{
+  "iso2": "ME",
+  "names": {
+    "tr": "Karadağ",
+    "en": "Montenegro",
+    "de": "Montenegro",
+    "ru": "Черногория",
+    "es": "Montenegro"
+  },
+  "capital": {
+    "value": "Podgorica",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://podgorica.me",
+        "tier": 1,
+        "title": "Capital City of Podgorica Official"
+      }
+    ],
+    "evidence_quote": "Podgorica is the capital and administrative center of Montenegro",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "EUR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbcg.me",
+        "tier": 1,
+        "title": "Central Bank of Montenegro (CBCG)"
+      }
+    ],
+    "evidence_quote": "Montenegro unilaterally uses the Euro as its de facto legal tender",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+1 (CET) / UTC+2 (CEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.me",
+        "tier": 1,
+        "title": "Government of Montenegro Official Time"
+      }
+    ],
+    "evidence_quote": "Montenegro observes Central European Time UTC+1 and Central European Summer Time UTC+2",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cges.me",
+          "tier": 1,
+          "title": "Crnogorski elektroprenosni sistem (CGES)"
+        }
+      ],
+      "evidence_quote": "Nominal single phase domestic voltage in Montenegro is 230V at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://cges.me",
+          "tier": 1,
+          "title": "CGES Montenegro"
+        }
+      ],
+      "evidence_quote": "The alternating frequency across the Montenegrin electricity grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://isme.me",
+          "tier": 1,
+          "title": "Institute for Standardization of Montenegro (ISME)"
+        }
+      ],
+      "evidence_quote": "Montenegro uses European Type C Europlug and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "122",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.up.gov.me",
+          "tier": 1,
+          "title": "Police Administration of Montenegro"
+        }
+      ],
+      "evidence_quote": "Emergency police telephone number across Montenegro is 122",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "124",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.zhmp.me",
+          "tier": 1,
+          "title": "Institute for Emergency Medical Assistance Montenegro"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue dispatch operates via 124",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "123",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.gov.me",
+          "tier": 1,
+          "title": "Ministry of Interior Directorate for Protection and Rescue"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency services are contacted directly on 123",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mup.gov.me",
+          "tier": 1,
+          "title": "MUP Montenegro Operational Communication Center 112"
+        }
+      ],
+      "evidence_quote": "European emergency number 112 is fully operational in Montenegro 24/7",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "1300",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.montenegro.travel",
+          "tier": 1,
+          "title": "National Tourism Organisation of Montenegro"
+        }
+      ],
+      "evidence_quote": "Tourist helpline 1300 offers information and assistance in foreign languages",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Montenegro Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/montenegro",
+          "tier": 1,
+          "title": "UK FCDO Montenegro Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Karadağ Adriyatik kıyısında güvenli ve popüler bir tatil merkezidir",
+      "en": "Normal Precautions: Montenegro is a safe, highly scenic Adriatic destination",
+      "de": "Normale Vorsicht: Montenegro ist ein sicheres und malerisches Adriaziel",
+      "ru": "Обычные меры: Черногория безопасная и живописная страна на Адриатике",
+      "es": "Precauciones normales: Montenegro es un destino adriático seguro y pintoresco"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 62.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/montenegro",
+          "tier": 2,
+          "title": "Ookla Speedtest Montenegro"
+        }
+      ],
+      "evidence_quote": "Montenegro mobile download speed averages 62.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 74.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/montenegro",
+          "tier": 2,
+          "title": "Ookla Speedtest Montenegro Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Montenegro averages 74.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Telekom ME, One, and MTEL. Tourist prepaid SIM cards (offering 500GB for 10-15 EUR) are widely sold at news kiosks (Tabak) with passport presentation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://ekip.me",
+          "tier": 1,
+          "title": "Agency for Electronic Communications and Postal Services (EKIP)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid passport identification in accordance with EKIP",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Tesla Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://teslataxi.me",
+        "tier": 2,
+        "title": "Tesla Taxi Electric Fleet Podgorica/Tivat"
+      }
+    },
+    {
+      "name": "Red Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://redtaxikotor.com",
+        "tier": 2,
+        "title": "Red Taxi Kotor & Budva"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/me/en/",
+        "tier": 1,
+        "title": "Glovo Montenegro"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Doğu Ortodoksluğu (~72%), İslam (~19%), Katoliklik (~3%), Dinsiz (~5%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://monstat.org",
+          "tier": 1,
+          "title": "Statistical Office of Montenegro (MONSTAT) Census"
+        }
+      ],
+      "evidence_quote": "Eastern Orthodoxy is the dominant religious affiliation alongside a historic Muslim demographic",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Devlet Günü (13 Temmuz), Bağımsızlık Günü (21 Mayıs), Kotor Karnavalı (Şubat ve Ağustos), Mimosa Festivali (Herceg Novi)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.montenegro.travel",
+          "tier": 1,
+          "title": "Montenegro Travel Festivals"
+        }
+      ],
+      "evidence_quote": "Statehood Day on July 13 and Kotor International Summer Carnival are cultural highlights",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Girişte 24 saat içinde yerel turizm ofisine (Turistička Organizacija) ikamet kaydı yaptırılması ve turist vergisi ödenmesi kanuni zorunluluktur (oteller otomatik yapar, ev kiralamalarında ev sahibi teyit edilmelidir). Türk pasaportu sahipleri için 90 gün kuralı geçerlidir ancak AB uyum reformları takip edilmelidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.me/mup",
+          "tier": 1,
+          "title": "Ministry of Interior Montenegro Residence Registration Rules"
+        }
+      ],
+      "evidence_quote": "Foreigners must register their stay with local police or tourism organization within 24 hours of arrival",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoran ve kafelerde %10 bahşiş teamüldür. Nakit euro olarak masaya bırakılması tercih edilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.montenegro.travel",
+          "tier": 1,
+          "title": "Montenegro Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent is polite and common practice in dining establishments",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Kotor Körfezi ve Tarihi Venedik Surları (UNESCO)",
+        "en": "Bay of Kotor and Venetian Fortifications (UNESCO)",
+        "de": "Bucht von Kotor und venezianische Stadtmauern",
+        "ru": "Которский залив и венецианские стены (ЮНЕСКО)",
+        "es": "Bahía de Kotor y Fortificaciones Venecianas (UNESCO)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/125",
+          "tier": 1,
+          "title": "UNESCO Natural and Culturo-Historical Region of Kotor"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Durmitor Ulusal Parkı ve Tara Kanyonu (UNESCO)",
+        "en": "Durmitor National Park and Tara River Canyon",
+        "de": "Durmitor-Nationalpark und Tara-Schlucht",
+        "ru": "Национальный парк Дурмитор и каньон реки Тара",
+        "es": "Parque Nacional Durmitor y Cañón del Río Tara"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/100",
+          "tier": 1,
+          "title": "UNESCO Durmitor National Park"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Budva Tarihi Eski Şehri ve Sveti Stefan",
+        "en": "Budva Old Town and Sveti Stefan",
+        "de": "Altstadt von Budva und Sveti Stefan",
+        "ru": "Старый город Будвы и Свети-Стефан",
+        "es": "Casco Antiguo de Budva y Sveti Stefan"
+      },
+      "type": "historic_town",
+      "sources": [
+        {
+          "url": "https://www.montenegro.travel",
+          "tier": 1,
+          "title": "Montenegro Travel Budva"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Kotor Körfezi Fiyordu ve Tarihi Venedik Surları",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/me-480.webp",
+        "attribution_text": "Bay of Kotor fjord and historic walls in Montenegro. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Kotor Körfezi ve Tarihi Venedik Surları, Karadağ",
+          "en": "Bay of Kotor and Historic Venetian Walls, Montenegro",
+          "de": "Bucht von Kotor und historische Stadtmauern, Montenegro",
+          "ru": "Которский залив и венецианские крепостные стены, Черногория",
+          "es": "Bahía de Kotor y murallas venecianas, Montenegro"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "karadag",
+      "en": "montenegro",
+      "de": "montenegro",
+      "ru": "chernogoriya",
+      "es": "montenegro"
+    },
+    "title": {
+      "tr": "Karadağ Vize Rehberi, Kotor ve Beyaz Kart Kaydı | Vizamigo",
+      "en": "Montenegro Visa Guide, White Card Registration & Kotor | Vizamigo",
+      "de": "Montenegro Visum-Leitfaden, Registrierung & Kotor | Vizamigo",
+      "ru": "Виза в Черногорию, регистрация белый картон и Котор | Vizamigo",
+      "es": "Guía de Visa de Montenegro, Registro y Bahía de Kotor | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Karadağ vize şartları (Türk pasaportuna 30 gün kuralı & yaklaşan değişiklikler), 24 saatte beyaz kart kaydı, Kotor fiyordu ve priz tipleri.",
+      "en": "Montenegro visa rules (passport-adaptive alerts), mandatory 24h tourist registration, Bay of Kotor, and Type C/F plugs.",
+      "de": "Montenegro Visabestimmungen, 24h-Anmeldepflicht, Bucht von Kotor, Steckertypen C/F und Reisetipps.",
+      "ru": "Визовые правила Черногории, регистрация белого картона за 24 часа, Которский залив и розетки C/F.",
+      "es": "Requisitos de visa para Montenegro, registro obligatorio de 24 horas, Bahía de Kotor y enchufes C/F."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

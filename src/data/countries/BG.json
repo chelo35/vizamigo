@@ -1,0 +1,451 @@
+{
+  "iso2": "BG",
+  "names": {
+    "tr": "Bulgaristan",
+    "en": "Bulgaria",
+    "de": "Bulgarien",
+    "ru": "Болгария",
+    "es": "Bulgaria"
+  },
+  "capital": {
+    "value": "Sofya",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.sofia.bg",
+        "tier": 1,
+        "title": "Sofia Municipality"
+      }
+    ],
+    "evidence_quote": "Sofia is the capital and largest city of the Republic of Bulgaria",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "BGN",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.bnb.bg",
+        "tier": 1,
+        "title": "Bulgarian National Bank"
+      }
+    ],
+    "evidence_quote": "The Bulgarian Lev (BGN) is pegged to the Euro at a fixed rate of 1.95583 BGN",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+2 (EET) / UTC+3 (EEST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gov.bg",
+        "tier": 1,
+        "title": "Council of Ministers of Bulgaria Time"
+      }
+    ],
+    "evidence_quote": "Bulgaria observes Eastern European Time UTC+2 and Eastern European Summer Time UTC+3",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eso.bg",
+          "tier": 1,
+          "title": "Electroenergetics System Operator (ESO) Bulgaria"
+        }
+      ],
+      "evidence_quote": "Nominal single-phase voltage in Bulgaria is 230V AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.eso.bg",
+          "tier": 1,
+          "title": "ESO Bulgaria"
+        }
+      ],
+      "evidence_quote": "Frequency throughout the Bulgarian national power system is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.bds-bg.org",
+          "tier": 1,
+          "title": "Bulgarian Institute for Standardization (BDS)"
+        }
+      ],
+      "evidence_quote": "Bulgaria uses European standard Type C Europlug and grounded Type F Schuko sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112 / 166",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mvr.bg",
+          "tier": 1,
+          "title": "Ministry of Interior Bulgaria (MVR)"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance in Bulgaria is contacted via unified 112 or traditional 166",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112 / 150",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mh.government.bg",
+          "tier": 1,
+          "title": "Ministry of Health Bulgaria"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue responds through 112 and 150",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112 / 160",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.mvr.bg",
+          "tier": 1,
+          "title": "General Directorate Fire Safety and Civil Protection"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch is reached via 112 or 160",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.112.mvr.bg",
+          "tier": 1,
+          "title": "National Emergency 112 System Bulgaria"
+        }
+      ],
+      "evidence_quote": "112 is the primary single emergency contact number throughout the Republic of Bulgaria",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": null,
+      "status": "not_found",
+      "confidence": null,
+      "sources": [],
+      "evidence_quote": null,
+      "retrieved_at": null
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Bulgaria Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/bulgaria",
+          "tier": 1,
+          "title": "UK FCDO Bulgaria Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Bulgaristan güvenli bir AB ve Schengen üyesidir",
+      "en": "Normal Precautions: Bulgaria is a safe EU and Schengen Area member",
+      "de": "Normale Vorsicht: Bulgarien ist ein sicheres EU- und Schengen-Mitglied",
+      "ru": "Обычные меры: Болгария безопасное государство-член ЕС и Шенгена",
+      "es": "Precauciones normales: Bulgaria es un miembro seguro de la UE y de Schengen"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 142.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bulgaria",
+          "tier": 2,
+          "title": "Ookla Speedtest Bulgaria"
+        }
+      ],
+      "evidence_quote": "Bulgaria mobile download speeds average 142.8 Mbps ranking among world leaders",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 85.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/bulgaria",
+          "tier": 2,
+          "title": "Ookla Speedtest Bulgaria Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Bulgaria averages 85.4 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Vivacom, Yettel, and A1 Bulgaria. EU Roam Like at Home regulations apply in full across Bulgaria.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://crc.bg",
+          "tier": 1,
+          "title": "Communications Regulation Commission (CRC) Bulgaria"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM cards require identity card registration under CRC telecommunications regulations",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Yellow Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://trueyellow.online",
+        "tier": 1,
+        "title": "Yellow Taxi Sofia App"
+      }
+    },
+    {
+      "name": "Volt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://volt.bg",
+        "tier": 2,
+        "title": "Volt Premium Taxi Sofia"
+      }
+    },
+    {
+      "name": "Takeaway.com",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.takeaway.com/bg/",
+        "tier": 1,
+        "title": "Takeaway.com Bulgaria"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/bg/en/",
+        "tier": 1,
+        "title": "Glovo Bulgaria"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Doğu Ortodoksluğu (~60%), İslam (~10%), Dinsiz/Seküler (~25%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.nsi.bg",
+          "tier": 1,
+          "title": "National Statistical Institute of Bulgaria (NSI) Census"
+        }
+      ],
+      "evidence_quote": "Eastern Orthodoxy is the traditional national faith alongside significant Muslim communities",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Kurtuluş Günü (3 Mart), Aziz George Günü (Gergyovden, 6 Mayıs), Slav Yazısı ve Kültürü Günü (24 Mayıs), Gül Festivali (Kazanlık)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bulgariatravel.org",
+          "tier": 1,
+          "title": "Official Tourism Portal of Bulgaria"
+        }
+      ],
+      "evidence_quote": "March 3 Liberation Day and the Rose Festival in Kazanlak are signature Bulgarian traditions",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Bulgaristan Mart 2024 itibarıyla Schengen hava ve deniz sınırlarına dahil olmuştur. Karayoluyla seyahat eden araçlar için elektronik vinyet (e-Vignette - bgtoll.bg) satın alınması ZORUNLUDUR; kamerasız geçişlerde ağır ceza uygulanır. Baş sallama hareketi bazı yaşlılar arasında evet/hayır için ters algılanabilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bgtoll.bg",
+          "tier": 1,
+          "title": "BGTOLL National Toll Administration Bulgaria"
+        }
+      ],
+      "evidence_quote": "Electronic vignette is mandatory for all vehicles on national roads; Bulgaria joined air/sea Schengen in 2024",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda ve kafelerde %10 bahşiş teamüldür. Hesaba eklenmediyse nakit olarak garsona verilmesi tercih edilir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://bulgariatravel.org",
+          "tier": 1,
+          "title": "Bulgaria Travel Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent for good service is standard custom in Bulgarian restaurants",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Rila Manastırı ve Rila Dağları (UNESCO)",
+        "en": "Rila Monastery and Mountains (UNESCO)",
+        "de": "Rila-Kloster und Rila-Gebirge",
+        "ru": "Рильский монастырь и горы Рила (ЮНЕСКО)",
+        "es": "Monasterio de Rila y Montañas de Rila"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/216",
+          "tier": 1,
+          "title": "UNESCO Rila Monastery"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Plovdiv Tarihi Eski Şehir ve Roma Tiyatrosu",
+        "en": "Plovdiv Old Town and Ancient Roman Theatre",
+        "de": "Altstadt von Plowdiw und Römisches Theater",
+        "ru": "Старый город Пловдива и Римский театр",
+        "es": "Casco Antiguo de Plovdiv y Teatro Romano"
+      },
+      "type": "historic_old_town",
+      "sources": [
+        {
+          "url": "https://bulgariatravel.org",
+          "tier": 1,
+          "title": "Bulgaria Travel Plovdiv"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Nesebar Tarihi Yarımadası (UNESCO)",
+        "en": "Ancient City of Nessebar (UNESCO)",
+        "de": "Historische Stadt Nessebar",
+        "ru": "Древний город Несебр (ЮНЕСКО)",
+        "es": "Ciudad Antigua de Nesebar"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/217",
+          "tier": 1,
+          "title": "UNESCO Ancient City of Nessebar"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Rila Manastırı ve Rila Dağları (UNESCO)",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/bg-480.webp",
+        "attribution_text": "Rila Monastery in the Rila Mountains, Bulgaria. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Rila Manastırı ve Rila Dağları, Bulgaristan",
+          "en": "Rila Monastery and Rila Mountains, Bulgaria",
+          "de": "Rila-Kloster und Rila-Gebirge, Bulgarien",
+          "ru": "Рильский монастырь и горы Рила, Болгария",
+          "es": "Monasterio de Rila y Montañas de Rila, Bulgaria"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "bulgaristan",
+      "en": "bulgaria",
+      "de": "bulgarien",
+      "ru": "bolgariya",
+      "es": "bulgaria"
+    },
+    "title": {
+      "tr": "Bulgaristan Vize Rehberi, Schengen ve BGTOLL Vinyet | Vizamigo",
+      "en": "Bulgaria Visa Guide, Schengen Rules & BGTOLL Vignette | Vizamigo",
+      "de": "Bulgarien Visum-Leitfaden, Schengen & BGTOLL Vignette | Vizamigo",
+      "ru": "Виза в Болгарию, шенгенские правила и виньетка BGTOLL | Vizamigo",
+      "es": "Guía de Visa de Bulgaria, Normas Schengen y Viñeta BGTOLL | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Bulgaristan Schengen vize kuralları, BGTOLL elektronik vinyet zorunluluğu, Rila Manastırı, priz tipleri ve seyahat tavsiyeleri.",
+      "en": "Bulgaria Schengen visa rules, mandatory BGTOLL e-vignette, Rila Monastery, Type C/F plugs, and verified travel tips.",
+      "de": "Bulgarien Schengen-Visabestimmungen, BGTOLL-Vignettenpflicht, Rila-Kloster, Steckertypen C/F und Reisetipps.",
+      "ru": "Шенгенская виза в Болгарию, покупка виньетки BGTOLL, Рильский монастырь, розетки C/F и советы туристу.",
+      "es": "Normas de visa Schengen para Bulgaria, viñeta electrónica BGTOLL obligatoria, Monasterio de Rila y enchufes C/F."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

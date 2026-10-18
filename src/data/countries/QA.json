@@ -1,0 +1,466 @@
+{
+  "iso2": "QA",
+  "names": {
+    "tr": "Katar",
+    "en": "Qatar",
+    "de": "Katar",
+    "ru": "Катар",
+    "es": "Catar"
+  },
+  "capital": {
+    "value": "Doha",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.mme.gov.qa",
+        "tier": 1,
+        "title": "Ministry of Municipality Qatar"
+      }
+    ],
+    "evidence_quote": "Doha is the capital city and main commercial center of the State of Qatar",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "QAR",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.qcb.gov.qa",
+        "tier": 1,
+        "title": "Qatar Central Bank"
+      }
+    ],
+    "evidence_quote": "The Qatari Riyal is pegged to the US Dollar at a fixed rate of 3.64 QAR",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.gco.gov.qa",
+        "tier": 1,
+        "title": "Government Communications Office Qatar"
+      }
+    ],
+    "evidence_quote": "Qatar operates on Arabia Standard Time UTC+3 with no daylight saving time",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "240V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.km.qa",
+          "tier": 1,
+          "title": "Kahramaa Qatar General Electricity and Water Corporation"
+        }
+      ],
+      "evidence_quote": "Domestic single phase supply voltage in Qatar is 240 volts AC",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.km.qa",
+          "tier": 1,
+          "title": "Kahramaa Qatar"
+        }
+      ],
+      "evidence_quote": "Standard alternating current frequency across Qatar is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "G"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.km.qa",
+          "tier": 1,
+          "title": "Kahramaa Installation Regulations"
+        }
+      ],
+      "evidence_quote": "Electrical wall outlets in Qatar strictly mandate British Type G 3-pin 13-ampere sockets",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://portal.moi.gov.qa",
+          "tier": 1,
+          "title": "Ministry of Interior Qatar (MOI)"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance throughout Qatar connects through central 999",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hamad.qa",
+          "tier": 1,
+          "title": "Hamad Medical Corporation Ambulance Service"
+        }
+      ],
+      "evidence_quote": "Hamad Medical Corporation emergency ambulance rescue operates via 999",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://portal.moi.gov.qa",
+          "tier": 1,
+          "title": "General Directorate of Civil Defence Qatar"
+        }
+      ],
+      "evidence_quote": "Civil defence and firefighting emergencies are dispatched via 999",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://portal.moi.gov.qa",
+          "tier": 1,
+          "title": "MOI Qatar Emergency Operations"
+        }
+      ],
+      "evidence_quote": "999 is the unified emergency contact number for all emergency services in Qatar",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "999",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitqatar.com",
+          "tier": 1,
+          "title": "Qatar Tourism Authority"
+        }
+      ],
+      "evidence_quote": "Dedicated tourist and foreign visitor assistance is routed through 999 operators",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Qatar Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/qatar",
+          "tier": 1,
+          "title": "UK FCDO Qatar Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Katar dünyanın en düşük suç oranına sahip ülkelerindendir",
+      "en": "Normal Precautions: Qatar consistently ranks among the world's safest nations",
+      "de": "Normale Vorsicht: Katar gehört zu den sichersten Ländern der Welt",
+      "ru": "Обычные меры: Катар имеет один из самых низких уровней преступности в мире",
+      "es": "Precauciones normales: Catar se clasifica consistentemente entre las naciones más seguras del mundo"
+    },
+    "regional_warnings": [],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 334.6,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/qatar",
+          "tier": 2,
+          "title": "Ookla Speedtest Qatar Mobile"
+        }
+      ],
+      "evidence_quote": "Qatar ranks number one globally with mobile download speeds exceeding 334.6 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 185.2,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/qatar",
+          "tier": 2,
+          "title": "Ookla Speedtest Qatar Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Qatar averages 185.2 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Ooredoo and Vodafone Qatar. Tourist SIMs can be acquired with passport verification at Hamad International Airport arrival halls.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cra.gov.qa",
+          "tier": 1,
+          "title": "Communications Regulatory Authority (CRA) Qatar"
+        }
+      ],
+      "evidence_quote": "All SIM cards must be registered against valid original passport credentials under CRA rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Karwa Taxi",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://mowasalat.com",
+        "tier": 1,
+        "title": "Mowasalat Karwa Taxi Official App"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/qa/en/",
+        "tier": 1,
+        "title": "Uber Qatar"
+      }
+    },
+    {
+      "name": "Talabat",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.talabat.com/qatar",
+        "tier": 1,
+        "title": "Talabat Qatar"
+      }
+    },
+    {
+      "name": "Snoonu",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://snoonu.com",
+        "tier": 1,
+        "title": "Snoonu Qatar Super-App"
+      }
+    },
+    {
+      "name": "Qatar Rail",
+      "category": "transport",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.qr.com.qa",
+        "tier": 1,
+        "title": "Doha Metro & Lusail Tram Official App"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (Devlet dini, ~65%), Hinduizm (~15%), Hristiyanlık (~14%), Budizm (~3%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.psa.gov.qa",
+          "tier": 1,
+          "title": "Planning and Statistics Authority Qatar"
+        }
+      ],
+      "evidence_quote": "Islam is the official religion and the Sharia is a main source of legislation in Qatar",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Katar Ulusal Günü (18 Aralık), Ramazan Bayramı, Kurban Bayramı, Ulusal Spor Günü (Şubat'ın ikinci Salısı)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitqatar.com",
+          "tier": 1,
+          "title": "Qatar Tourism Events"
+        }
+      ],
+      "evidence_quote": "National Day on December 18 commemorates the founding of the State of Qatar in 1878",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Alkol ithalatı yasaktır; alkol yalnızca lisanslı otel restoran ve barlarında tüketilebilir. Kamu binalarında ve alışveriş merkezlerinde mütevazı giyim (omuz ve dizleri örten) beklenir. Prizler İngiliz Tipi G'dir (240V).",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitqatar.com",
+          "tier": 1,
+          "title": "Visit Qatar Cultural Guidelines"
+        }
+      ],
+      "evidence_quote": "Import of alcohol, narcotics, and pork products is strictly forbidden by Qatari customs",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10-15 bahşiş teamüldür. Otel valeleri ve bagaj taşıyıcıları için 5-10 QAR bahşiş uygundur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://visitqatar.com",
+          "tier": 1,
+          "title": "Visit Qatar Tipping Guide"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 to 15 percent is standard custom across restaurants and hotels in Qatar",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Doha Corniche Kordonu ve Modern Silüet",
+        "en": "Doha Corniche and Skyline",
+        "de": "Doha Corniche und Skyline",
+        "ru": "Набережная Корниш и панорама Дохи",
+        "es": "Corniche de Doha y horizonte urbano"
+      },
+      "type": "city_waterfront",
+      "sources": [
+        {
+          "url": "https://visitqatar.com",
+          "tier": 1,
+          "title": "Visit Qatar Corniche"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "İslam Sanatları Müzesi (MIA)",
+        "en": "Museum of Islamic Art (MIA)",
+        "de": "Museum für Islamische Kunst (MIA)",
+        "ru": "Музей исламского искусства",
+        "es": "Museo de Arte Islámico (MIA)"
+      },
+      "type": "architectural_museum",
+      "sources": [
+        {
+          "url": "https://mia.org.qa",
+          "tier": 1,
+          "title": "Museum of Islamic Art Official"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Souq Waqif Tarihi Çarşısı",
+        "en": "Souq Waqif Historic Bazaar",
+        "de": "Souq Waqif Historischer Markt",
+        "ru": "Исторический базар Сук-Вакиф",
+        "es": "Zoco Histórico Souq Waqif"
+      },
+      "type": "historic_bazaar",
+      "sources": [
+        {
+          "url": "https://visitqatar.com",
+          "tier": 1,
+          "title": "Visit Qatar Souq Waqif"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Doha Corniche Kordonu ve Modern Silüet",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/qa-480.webp",
+        "attribution_text": "Doha Corniche and futuristic skyline, Qatar. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Doha Corniche Kordonu ve Modern Silüeti, Katar",
+          "en": "Doha Corniche Waterfront and Modern Skyline, Qatar",
+          "de": "Doha Corniche und moderne Skyline, Katar",
+          "ru": "Набережная Корниш и современный силуэт Дохи, Катар",
+          "es": "Paseo marítimo Corniche y horizonte moderno de Doha, Catar"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "katar",
+      "en": "qatar",
+      "de": "katar",
+      "ru": "katar",
+      "es": "catar"
+    },
+    "title": {
+      "tr": "Katar Vize Rehberi, Hayya Portalı ve Seyahat | Vizamigo",
+      "en": "Qatar Visa Guide, Hayya Entry & Travel Essentials | Vizamigo",
+      "de": "Katar Visum-Leitfaden, Hayya-Portal & Reisetipps | Vizamigo",
+      "ru": "Виза в Катар, платформа Hayya и советы туристу | Vizamigo",
+      "es": "Guía de Visa de Catar, Portal Hayya y Consejos | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Katar vize muafiyeti (95+ ülke), Hayya portalı, Doha Metrosu, priz tipi G, dünyanın en hızlı mobil interneti ve seyahat tavsiyeleri.",
+      "en": "Qatar visa waiver (95+ nationalities), Hayya entry portal, Doha Metro, Type G plugs, and world #1 mobile internet speed.",
+      "de": "Katar Visabefreiung (95+ Staaten), Hayya-Portal, Doha Metro, Typ-G-Stecker und weltweit schnellstes mobiles Internet.",
+      "ru": "Безвизовый въезд в Катар (95+ стран), портал Hayya, метро Дохи, розетки G и самый быстрый мобильный интернет.",
+      "es": "Exención de visa de Catar (95+ países), portal Hayya, Metro de Doha, enchufes tipo G y la velocidad móvil más rápida."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

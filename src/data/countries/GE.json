@@ -1,0 +1,468 @@
+{
+  "iso2": "GE",
+  "names": {
+    "tr": "Gürcistan",
+    "en": "Georgia",
+    "de": "Georgien",
+    "ru": "Грузия",
+    "es": "Georgia"
+  },
+  "capital": {
+    "value": "Tiflis",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://tbilisi.gov.ge",
+        "tier": 1,
+        "title": "Tbilisi City Hall"
+      }
+    ],
+    "evidence_quote": "Tbilisi is the capital and largest city of Georgia",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "GEL",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://nbg.gov.ge",
+        "tier": 1,
+        "title": "National Bank of Georgia"
+      }
+    ],
+    "evidence_quote": "The Georgian Lari (GEL) is the sole legal tender currency in Georgia",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+4 (GET)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://georgia.gov.ge",
+        "tier": 1,
+        "title": "Government of Georgia Time"
+      }
+    ],
+    "evidence_quote": "Georgia operates on Georgia Time UTC+4 year-round without daylight saving adjustments",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "220V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gnerc.org",
+          "tier": 1,
+          "title": "Georgian National Energy and Water Supply Regulatory Commission (GNERC)"
+        }
+      ],
+      "evidence_quote": "Residential electricity across Georgia is supplied at 220V single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gnerc.org",
+          "tier": 1,
+          "title": "GNERC Georgia"
+        }
+      ],
+      "evidence_quote": "The alternating frequency across the Georgian power grid is 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://geostm.ge",
+          "tier": 1,
+          "title": "Georgian National Agency for Standards and Metrology (GEOSTM)"
+        }
+      ],
+      "evidence_quote": "Electrical sockets in Georgia conform to European Type C and grounded Type F Schuko standards",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.ge",
+          "tier": 1,
+          "title": "Emergency Response Center 112 Georgia"
+        }
+      ],
+      "evidence_quote": "Police emergency assistance throughout Georgia is integrated into unified 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.ge",
+          "tier": 1,
+          "title": "112 Georgia Medical Dispatch"
+        }
+      ],
+      "evidence_quote": "Emergency medical and ambulance rescue in Georgia connects via 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.ge",
+          "tier": 1,
+          "title": "112 Georgia Fire Rescue"
+        }
+      ],
+      "evidence_quote": "Firefighting emergency dispatch across all Georgian municipalities connects via 112",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://112.gov.ge",
+          "tier": 1,
+          "title": "112 Georgia Official"
+        }
+      ],
+      "evidence_quote": "112 is the 24/7 unified emergency operations center with multilingual operator capabilities",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://gnta.ge",
+          "tier": 1,
+          "title": "Georgian National Tourism Administration (GNTA)"
+        }
+      ],
+      "evidence_quote": "Tourist emergencies and foreign language assistance are routed through 112 dispatchers",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 1,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Georgia Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 1,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/georgia",
+          "tier": 1,
+          "title": "UK FCDO Georgia Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 1,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Standart Önlemler: Tiflis, Batum ve Kafkaslar son derece güvenlidir; Abhazya ve Güney Osetya sınırından kaçının",
+      "en": "Normal Precautions: Main country exceptionally safe; do not travel to occupied Abkhazia or South Ossetia",
+      "de": "Normale Vorsicht: Das Land ist sehr sicher; die besetzten Gebiete Abchasien und Südossetien meiden",
+      "ru": "Обычные меры: страна безопасна; не посещайте Абхазию и Южную Осетию без спецразрешений",
+      "es": "Precauciones normales: país muy seguro; evite viajar a las regiones ocupadas de Abjasia y Osetia del Sur"
+    },
+    "regional_warnings": [
+      {
+        "area": "Occupied regions of South Ossetia and Abkhazia",
+        "level": 4,
+        "reason": "Russian military occupation, landmines, and inability of consular assistance",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "low",
+      "civil_unrest": "low",
+      "natural_disasters": "medium"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 46.5,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/georgia",
+          "tier": 2,
+          "title": "Ookla Speedtest Georgia"
+        }
+      ],
+      "evidence_quote": "Georgia mobile download speeds average 46.5 Mbps on Magti and Silknet",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 42.8,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/georgia",
+          "tier": 2,
+          "title": "Ookla Speedtest Georgia Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Georgia averages 42.8 Mbps",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Magti and Silknet. Physical tourist SIMs (with unlimited data packages) are readily available at Tbilisi and Batumi airports with simple passport presentation.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://comcom.ge",
+          "tier": 1,
+          "title": "Communications Commission of Georgia (ComCom)"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM activation requires valid original passport identification",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Bolt",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://bolt.eu/en-ge/",
+        "tier": 1,
+        "title": "Bolt Georgia"
+      }
+    },
+    {
+      "name": "Yandex Go",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://taxi.yandex.com/ge_ge/",
+        "tier": 2,
+        "title": "Yandex Go Georgia"
+      }
+    },
+    {
+      "name": "Wolt",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://wolt.com/en/geo/tbilisi",
+        "tier": 1,
+        "title": "Wolt Georgia"
+      }
+    },
+    {
+      "name": "Glovo",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://glovoapp.com/ge/en/",
+        "tier": 1,
+        "title": "Glovo Georgia"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "Gürcü Ortodoks Hristiyanlığı (~83%), İslam (~10%), Ermeni Apostolik (~3%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.geostat.ge",
+          "tier": 1,
+          "title": "National Statistics Office of Georgia (Geostat)"
+        }
+      ],
+      "evidence_quote": "The Georgian Orthodox Apostolic Church represents the deeply rooted spiritual identity of the nation",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Tbilisoba (Ekim), Ortodoks Noeli (7 Ocak), Bağımsızlık Günü (26 Mayıs), Giorgoba (Aziz George Günü, 23 Kasım)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://georgia.travel",
+          "tier": 1,
+          "title": "Georgia Travel Culture & Festivals"
+        }
+      ],
+      "evidence_quote": "Tbilisoba celebrating the capital city and Independence Day on May 26 are key national celebrations",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Türk vatandaşları Gürcistan'a yeni çipli kimlik kartıyla pasaportsugirebilir ve 360 gün vizesiz kalabilir. Kilise ziyaretlerinde kadınların başlarını örtmesi ve uzun etek giymesi kuraldır. Rusya üzerinden Abhazya veya Güney Osetya'ya izinsiz girmek Gürcü yasalarına göre suçtur.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.geoconsul.gov.ge",
+          "tier": 1,
+          "title": "Consular Department Ministry of Foreign Affairs Georgia"
+        }
+      ],
+      "evidence_quote": "Turkish citizens may enter with national biometric ID; church dress code requires covered shoulders and heads",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10-15 servis bedeli genellikle faturaya eklenir. Faturaya dahil değilse %10 nakit bahşiş bırakmak yaygındır.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://georgia.travel",
+          "tier": 1,
+          "title": "Georgia Travel Tipping Guide"
+        }
+      ],
+      "evidence_quote": "A 10 to 15 percent service charge is frequently included on bills; cash tips directly to servers are welcomed",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Gergeti Teslis Kilisesi ve Kazbek Dağı",
+        "en": "Gergeti Trinity Church and Mount Kazbek",
+        "de": "Gergetier Dreifaltigkeitskirche und Kasbek",
+        "ru": "Троицкая церковь в Гергети и гора Казбек",
+        "es": "Iglesia de la Trinidad de Guergueti y Monte Kazbek"
+      },
+      "type": "historic_monument",
+      "sources": [
+        {
+          "url": "https://georgia.travel",
+          "tier": 1,
+          "title": "Georgia Travel Kazbegi"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Eski Tiflis ve Narikala Kalesi",
+        "en": "Old Tbilisi and Narikala Fortress",
+        "de": "Alt-Tiflis und Narikala-Festung",
+        "ru": "Старый Тбилиси и крепость Нарикала",
+        "es": "Viejo Tiflis y Fortaleza de Narikala"
+      },
+      "type": "historic_old_town",
+      "sources": [
+        {
+          "url": "https://georgia.travel",
+          "tier": 1,
+          "title": "Georgia Travel Tbilisi"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Svetitskhoveli Katedrali ve Mtsheta (UNESCO)",
+        "en": "Svetitskhoveli Cathedral and Mtskheta (UNESCO)",
+        "de": "Swetizchoweli-Kathedrale und Mzcheta",
+        "ru": "Собор Светицховели и Мцхета (ЮНЕСКО)",
+        "es": "Catedral de Svetitsjoveli y Mtsjeta"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/708",
+          "tier": 1,
+          "title": "UNESCO Historical Monuments of Mtskheta"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Gergeti Teslis Kilisesi ve Kazbek Dağı",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/ge-480.webp",
+        "attribution_text": "Gergeti Trinity Church against Mount Kazbek, Georgia. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Gergeti Teslis Kilisesi ve Kazbek Dağı, Gürcistan",
+          "en": "Gergeti Trinity Church and Mount Kazbek, Georgia",
+          "de": "Gergetier Dreifaltigkeitskirche und Berg Kasbek, Georgien",
+          "ru": "Троицкая церковь в Гергети и гора Казбек, Грузия",
+          "es": "Iglesia de la Trinidad de Guergueti y Monte Kazbek, Georgia"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "gurcistan",
+      "en": "georgia",
+      "de": "georgien",
+      "ru": "gruziya",
+      "es": "georgia"
+    },
+    "title": {
+      "tr": "Gürcistan Vize Rehberi, Kimlikle Giriş ve Seyahat Bilgileri | Vizamigo",
+      "en": "Georgia Visa Guide, ID Entry & Caucasus Travel Tips | Vizamigo",
+      "de": "Georgien Visum-Leitfaden, Reisen & Sicherheit | Vizamigo",
+      "ru": "Виза в Грузию, въезд и безопасность для туристов | Vizamigo",
+      "es": "Guía de Visa de Georgia, Entrada y Consejos de Viaje | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Gürcistan vize kuralları, kimlikle giriş (Türk vatandaşları), Kazbek dağı, Bolt taksi kullanımı, priz tipleri ve Tiflis rehberi.",
+      "en": "Georgia visa policies (360 days visa-free, ID entry for TR), Mount Kazbek, Bolt taxi app, Type C/F plugs, and Tbilisi guide.",
+      "de": "Georgien Visabestimmungen (360 Tage visafrei), Kasbek, Bolt Taxi-App, Steckertypen C/F und Tiflis-Reisetipps.",
+      "ru": "Визовые правила Грузии (360 дней без визы), Казбек, вызов такси Bolt, розетки C/F и гид по Тбилиси.",
+      "es": "Requisitos de visa para Georgia (360 días sin visa), Monte Kazbek, app Bolt, enchufes C/F y guía de Tiflis."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}

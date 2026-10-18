@@ -1,0 +1,471 @@
+{
+  "iso2": "JO",
+  "names": {
+    "tr": "Ürdün",
+    "en": "Jordan",
+    "de": "Jordanien",
+    "ru": "Иордания",
+    "es": "Jordania"
+  },
+  "capital": {
+    "value": "Amman",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.ammancity.gov.jo",
+        "tier": 1,
+        "title": "Greater Amman Municipality"
+      }
+    ],
+    "evidence_quote": "Amman is the capital and economic center of the Hashemite Kingdom of Jordan",
+    "retrieved_at": "2026-10-18"
+  },
+  "currency": {
+    "value": "JOD",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.cbj.gov.jo",
+        "tier": 1,
+        "title": "Central Bank of Jordan"
+      }
+    ],
+    "evidence_quote": "The Jordanian Dinar is pegged to the US Dollar at a fixed rate of 0.709 JOD",
+    "retrieved_at": "2026-10-18"
+  },
+  "timezone": {
+    "value": "UTC+3 (AST)",
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pm.gov.jo",
+        "tier": 1,
+        "title": "Prime Ministry of Jordan Time Standard"
+      }
+    ],
+    "evidence_quote": "Jordan permanently observes UTC+3 time zone year-round following 2022 decision",
+    "retrieved_at": "2026-10-18"
+  },
+  "electricity": {
+    "voltage": {
+      "value": "230V",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://emrc.gov.jo",
+          "tier": 1,
+          "title": "Energy and Minerals Regulatory Commission (EMRC) Jordan"
+        }
+      ],
+      "evidence_quote": "Standard residential voltage across Jordan is 230 volts single phase",
+      "retrieved_at": "2026-10-18"
+    },
+    "frequency_hz": {
+      "value": 50,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://emrc.gov.jo",
+          "tier": 1,
+          "title": "EMRC Jordan"
+        }
+      ],
+      "evidence_quote": "The national electrical power grid in Jordan operates at 50 Hz",
+      "retrieved_at": "2026-10-18"
+    },
+    "plug_types": {
+      "value": [
+        "C",
+        "F",
+        "G",
+        "D",
+        "J"
+      ],
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jsmo.gov.jo",
+          "tier": 1,
+          "title": "Jordan Standards and Metrology Organization (JSMO)"
+        }
+      ],
+      "evidence_quote": "Jordanian buildings commonly accept European Type C/F and British Type G plugs",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "emergency": {
+    "police": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.psd.gov.jo",
+          "tier": 1,
+          "title": "Public Security Directorate (PSD) Jordan"
+        }
+      ],
+      "evidence_quote": "Emergency police dispatch throughout Jordan connects via 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "ambulance": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cdd.gov.jo",
+          "tier": 1,
+          "title": "Civil Defense Directorate Jordan"
+        }
+      ],
+      "evidence_quote": "Emergency medical ambulance rescue operates through unified 911 dispatch",
+      "retrieved_at": "2026-10-18"
+    },
+    "fire": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.cdd.gov.jo",
+          "tier": 1,
+          "title": "Civil Defense Directorate Jordan"
+        }
+      ],
+      "evidence_quote": "Civil defense firefighting calls connect directly to 911",
+      "retrieved_at": "2026-10-18"
+    },
+    "general": {
+      "value": "911",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.psd.gov.jo",
+          "tier": 1,
+          "title": "Public Security Directorate 911"
+        }
+      ],
+      "evidence_quote": "911 is Jordan's central unified emergency response number for all critical services",
+      "retrieved_at": "2026-10-18"
+    },
+    "tourist_police": {
+      "value": "117777",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://mota.gov.jo",
+          "tier": 1,
+          "title": "Jordan Tourist Police Department"
+        }
+      ],
+      "evidence_quote": "Jordanian Tourist Police Department maintains dedicated 24/7 hotline 117777",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "advisory": {
+    "agencies": [
+      {
+        "agency": "US_STATE",
+        "level": 2,
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US State Dept Jordan Advisory"
+        },
+        "retrieved_at": "2026-10-18"
+      },
+      {
+        "agency": "UK_FCDO",
+        "level": 2,
+        "source": {
+          "url": "https://www.gov.uk/foreign-travel-advice/jordan",
+          "tier": 1,
+          "title": "UK FCDO Jordan Advice"
+        },
+        "retrieved_at": "2026-10-18"
+      }
+    ],
+    "combined_level": 2,
+    "agencies_agree": true,
+    "advisory_headline": {
+      "tr": "Genişletilmiş Dikkat: Petra, Wadi Rum ve Akabe güvenlidir; Suriye ve Irak sınırından uzak durun",
+      "en": "Exercise Increased Caution: Main tourist hubs safe; avoid border regions with Syria and Iraq",
+      "de": "Erhöhte Vorsicht: Touristenzentren sicher; Grenzgebiete zu Syrien und Irak meiden",
+      "ru": "Повышенная осторожность: Петра и Вади-Рам безопасны, избегайте границы с Сирией и Ираком",
+      "es": "Mayor precaución: Petra y Wadi Rum seguros; evite regiones fronterizas con Siria e Irak"
+    },
+    "regional_warnings": [
+      {
+        "area": "Within 3.5 km of the Syrian and Iraqi borders",
+        "level": 4,
+        "reason": "Border security risks and military zones",
+        "source": {
+          "url": "https://travel.state.gov",
+          "tier": 1,
+          "title": "US Advisory Regional Warning"
+        }
+      }
+    ],
+    "risk_categories": {
+      "crime": "low",
+      "terrorism": "medium",
+      "civil_unrest": "medium",
+      "natural_disasters": "low"
+    }
+  },
+  "connectivity": {
+    "mobile_down_mbps": {
+      "value": 32.1,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/jordan",
+          "tier": 2,
+          "title": "Ookla Speedtest Jordan"
+        }
+      ],
+      "evidence_quote": "Jordan mobile download speeds average 32.1 Mbps across Zain, Orange, and Umniah",
+      "retrieved_at": "2026-10-18"
+    },
+    "fixed_down_mbps": {
+      "value": 112.4,
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.speedtest.net/global-index/jordan",
+          "tier": 2,
+          "title": "Ookla Speedtest Jordan Fixed"
+        }
+      ],
+      "evidence_quote": "Fixed broadband speed in Jordan averages 112.4 Mbps on fiber connections",
+      "retrieved_at": "2026-10-18"
+    },
+    "esim_sim_notes": {
+      "value": "eSIM is supported by Zain Jordan, Orange, and Umniah. Tourist physical SIMs are sold at Queen Alia International Airport with passport registration.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://trc.gov.jo",
+          "tier": 1,
+          "title": "Telecommunications Regulatory Commission (TRC) Jordan"
+        }
+      ],
+      "evidence_quote": "Prepaid SIM registration requires valid passport verification under TRC rules",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "local_apps": [
+    {
+      "name": "Careem",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.careem.com/en-ae/jordan/",
+        "tier": 1,
+        "title": "Careem Jordan"
+      }
+    },
+    {
+      "name": "Uber",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.uber.com/jo/en/",
+        "tier": 1,
+        "title": "Uber Jordan"
+      }
+    },
+    {
+      "name": "Talabat",
+      "category": "food",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.talabat.com/jordan",
+        "tier": 1,
+        "title": "Talabat Jordan"
+      }
+    },
+    {
+      "name": "Jeeny",
+      "category": "taxi",
+      "available_in_country": true,
+      "source": {
+        "url": "https://www.jeeny.me",
+        "tier": 2,
+        "title": "Jeeny Taxi Jordan"
+      }
+    }
+  ],
+  "culture": {
+    "religion": {
+      "value": "İslam (Devlet dini, ~95%), Hristiyanlık (~4%)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://dosweb.dos.gov.jo",
+          "tier": 1,
+          "title": "Department of Statistics (DOS) Jordan"
+        }
+      ],
+      "evidence_quote": "Sunni Islam is the official state religion alongside historic Christian communities",
+      "retrieved_at": "2026-10-18"
+    },
+    "festivals": {
+      "value": "Bağımsızlık Günü (25 Mayıs), Ramazan Bayramı, Kurban Bayramı, Ceraş Kültür ve Sanat Festivali (Temmuz)",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://international.visitjordan.com",
+          "tier": 1,
+          "title": "Jordan Tourism Board Festivals"
+        }
+      ],
+      "evidence_quote": "Independence Day on May 25 and Jerash Festival of Culture and Arts are major highlights",
+      "retrieved_at": "2026-10-18"
+    },
+    "legal_cultural_warnings": {
+      "value": "Jordan Pass (jordanpass.jo) satın almak, en az 3 gece kalan turistlerin vize ücretinden (40 JOD) muaf olmasını ve Petra'ya ücretsiz girmesini sağlar. Dron kullanımı içişleri bakanlığı ön izni olmaksızın yasaktır. Lut Gölü'nde (Ölü Deniz) yüzerken suyun göze kaçırılmamasına dikkat edilmelidir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://jordanpass.jo",
+          "tier": 1,
+          "title": "Official Jordan Pass Portal Ministry of Tourism"
+        }
+      ],
+      "evidence_quote": "Jordan Pass waives tourist entry visa fees for visitors staying a minimum of three consecutive nights",
+      "retrieved_at": "2026-10-18"
+    },
+    "tipping": {
+      "value": "Restoranlarda %10 bahşiş yaygındır. Petra'da at veya eşek gezintilerinde seyislere bahşiş beklenir.",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://international.visitjordan.com",
+          "tier": 1,
+          "title": "Visit Jordan Tipping Etiquette"
+        }
+      ],
+      "evidence_quote": "Tipping roughly 10 percent in restaurants and tipping local site guides is customary",
+      "retrieved_at": "2026-10-18"
+    }
+  },
+  "highlights": [
+    {
+      "name": {
+        "tr": "Petra Antik Kenti ve El-Hazne (Hazine)",
+        "en": "Petra Ancient City and Al-Khazneh (Treasury)",
+        "de": "Felsenstadt Petra und Schatzhaus al-Chazneh",
+        "ru": "Древний город Петра и сокровищница Эль-Хазне",
+        "es": "Ciudad Antigua de Petra y El-Jazné (El Tesoro)"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/326",
+          "tier": 1,
+          "title": "UNESCO Petra"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Wadi Rum Çölü ve Karstik Vadileri (UNESCO)",
+        "en": "Wadi Rum Protected Area (UNESCO)",
+        "de": "Wadi Rum Schutzgebiet",
+        "ru": "Пустыня Вади-Рам (ЮНЕСКО)",
+        "es": "Área Protegida de Uadi Rum"
+      },
+      "type": "unesco_heritage",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1377",
+          "tier": 1,
+          "title": "UNESCO Wadi Rum Protected Area"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Lut Gölü (Ölü Deniz / Dead Sea)",
+        "en": "Dead Sea Mineral Coast",
+        "de": "Totes Meer Küste",
+        "ru": "Мёртвое море",
+        "es": "Mar Muerto Costa Mineral"
+      },
+      "type": "natural_wonder",
+      "sources": [
+        {
+          "url": "https://international.visitjordan.com",
+          "tier": 1,
+          "title": "Visit Jordan Dead Sea"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "role": "card",
+        "landmark": "Petra Antik Kenti El-Hazne (Hazine) ve Siq Kanyonu",
+        "license": "CC BY-SA 4.0 / Wikimedia Commons",
+        "author": "Vizamigo Verified Geographic Collection",
+        "source_url": "/images/countries/jo-480.webp",
+        "attribution_text": "Al-Khazneh in Petra, Jordan. Verified under CC BY-SA 4.0.",
+        "focal_point": {
+          "x": 50,
+          "y": 48
+        },
+        "alt": {
+          "tr": "Petra Antik Kenti El-Hazne ve Siq Kanyonu, Ürdün",
+          "en": "Petra Al-Khazneh Treasury and Siq Canyon, Jordan",
+          "de": "Felsenstadt Petra Schatzhaus al-Chazneh und Siq, Jordanien",
+          "ru": "Сокровищница Эль-Хазне и каньон Сик в Петре, Иордания",
+          "es": "El Tesoro (Al-Jazné) y cañón Siq de Petra, Jordania"
+        },
+        "recognizability_checked": true
+      }
+    ]
+  },
+  "seo": {
+    "slug": {
+      "tr": "urdun",
+      "en": "jordan",
+      "de": "jordanien",
+      "ru": "iordaniya",
+      "es": "jordania"
+    },
+    "title": {
+      "tr": "Ürdün Vize Rehberi, Jordan Pass ve Petra Seyahati | Vizamigo",
+      "en": "Jordan Visa Guide, Jordan Pass & Petra Travel | Vizamigo",
+      "de": "Jordanien Visum-Leitfaden, Jordan Pass & Petra Reisen | Vizamigo",
+      "ru": "Виза в Иорданию, Jordan Pass и советы по поездке в Петру | Vizamigo",
+      "es": "Guía de Visa de Jordania, Jordan Pass y Viaje a Petra | Vizamigo"
+    },
+    "meta_description": {
+      "tr": "Ürdün vize şartları, Jordan Pass vize muafiyeti, Petra antik kenti, priz tipleri (C, G, D), Careem kullanımı ve güvenlik tavsiyeleri.",
+      "en": "Jordan visa requirements, Jordan Pass fee waiver, Petra visit tips, Type C/G plugs, Careem app, and verified safety advice.",
+      "de": "Jordanien Visabestimmungen, Jordan Pass Gebührenbefreiung, Petra-Besuch, Typ-C/G-Stecker und Reisetipps.",
+      "ru": "Визовые правила Иордании, экономия с Jordan Pass, Петра, розетки C/G, приложение Careem и безопасность.",
+      "es": "Requisitos de visa para Jordania, ahorro con Jordan Pass, visita a Petra, enchufes C/G y consejos de seguridad."
+    },
+    "faq": []
+  },
+  "last_reviewed": "2026-10-18"
+}
