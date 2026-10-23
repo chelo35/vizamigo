@@ -35,7 +35,11 @@ export function loadGoogleMaps(): Promise<void> {
         authFailed = true;
         window.dispatchEvent(new CustomEvent('vizamigo:gmaps-auth-failure'));
       };
-      Promise.all([importLibrary('maps'), importLibrary('geometry')])
+      Promise.all([
+        importLibrary('maps'),
+        importLibrary('geometry'),
+        importLibrary('marker').catch(() => null)
+      ])
         .then(() => {
           if (authFailed) {
             reject(new Error('Google Maps authentication failed (RefererNotAllowedMapError).'));

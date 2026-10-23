@@ -1,4 +1,5 @@
 import React, { useState, useMemo, Suspense, lazy, useEffect } from 'react';
+import { ErrorBoundary } from './ErrorBoundary';
 import {
   Search,
   CheckCircle2,
@@ -422,23 +423,28 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
 
       {(showDirectory || search.trim().length > 0) && (
         viewMode === 'map' ? (
-          <Suspense
-            fallback={
-              <div className="h-[520px] rounded-[24px] glass-card flex items-center justify-center text-sm font-bold text-slate-600 dark:text-slate-300">
-                {l('İnteraktif Dünya Haritası Yükleniyor...', 'Loading Interactive World Map...', 'Interaktive Weltkarte wird geladen...')}
-              </div>
-            }
+          <ErrorBoundary
+            tabName={l('İnteraktif Harita', 'Interactive Map', 'Interaktive Karte')}
+            onReset={() => setViewMode('list')}
           >
-            <InteractiveWorldMap
-              currentPassport={currentPassport}
-              items={items}
-              onSelectCountry={(code) => {
-                setExpandedCountry(code);
-              }}
-              onOpenAuditConsole={handleOpenAudit}
-              onOpenReportChange={(c) => setReportingCountry(c)}
-            />
-          </Suspense>
+            <Suspense
+              fallback={
+                <div className="h-[520px] rounded-[24px] glass-card flex items-center justify-center text-sm font-bold text-slate-600 dark:text-slate-300">
+                  {l('İnteraktif Dünya Haritası Yükleniyor...', 'Loading Interactive World Map...', 'Interaktive Weltkarte wird geladen...')}
+                </div>
+              }
+            >
+              <InteractiveWorldMap
+                currentPassport={currentPassport}
+                items={items}
+                onSelectCountry={(code) => {
+                  setExpandedCountry(code);
+                }}
+                onOpenAuditConsole={handleOpenAudit}
+                onOpenReportChange={(c) => setReportingCountry(c)}
+              />
+            </Suspense>
+          </ErrorBoundary>
         ) : (
           <>
             {/* Horizontal Filter Chips */}

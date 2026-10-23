@@ -324,85 +324,98 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
     if (!mapsLoaded || viewMode !== 'google-map' || !googleMapContainerRef.current) return;
     if (!window.google || !window.google.maps) return;
 
-    if (!mapInstanceRef.current) {
-      const initialCenter = selectedCode && GEO_DATA[selectedCode]
-        ? { lat: GEO_DATA[selectedCode].lat, lng: GEO_DATA[selectedCode].lng }
-        : { lat: 22, lng: 20 };
+    try {
+      if (!mapInstanceRef.current) {
+        const initialCenter = selectedCode && GEO_DATA[selectedCode]
+          ? { lat: GEO_DATA[selectedCode].lat, lng: GEO_DATA[selectedCode].lng }
+          : { lat: 22, lng: 20 };
 
-      const map = new google.maps.Map(googleMapContainerRef.current, {
-        center: initialCenter,
-        zoom: selectedCode ? 4 : 2,
-        minZoom: 2,
-        maxZoom: 14,
-        mapTypeId: mapTheme === 'roadmap' ? 'roadmap' : mapTheme === 'hybrid' ? 'hybrid' : 'roadmap',
-        styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [],
-        streetViewControl: false,
-        fullscreenControl: false,
-        mapTypeControl: false,
-        zoomControl: true,
-        backgroundColor: '#090d16'
-      });
-      mapInstanceRef.current = map;
-    } else {
-      mapInstanceRef.current.setMapTypeId(mapTheme === 'roadmap' ? 'roadmap' : mapTheme === 'hybrid' ? 'hybrid' : 'roadmap');
-      if (mapTheme === 'dark') {
-        mapInstanceRef.current.setOptions({ styles: DARK_MAP_STYLES });
+        const map = new google.maps.Map(googleMapContainerRef.current, {
+          center: initialCenter,
+          zoom: selectedCode ? 4 : 2,
+          minZoom: 2,
+          maxZoom: 14,
+          mapTypeId: mapTheme === 'roadmap' ? 'roadmap' : mapTheme === 'hybrid' ? 'hybrid' : 'roadmap',
+          styles: mapTheme === 'dark' ? DARK_MAP_STYLES : [],
+          streetViewControl: false,
+          fullscreenControl: false,
+          mapTypeControl: false,
+          zoomControl: true,
+          backgroundColor: '#090d16'
+        });
+        mapInstanceRef.current = map;
       } else {
-        mapInstanceRef.current.setOptions({ styles: [] });
-      }
-    }
-
-    // Clear previous markers
-    markersRef.current.forEach(m => m.setMap(null));
-    markersRef.current = [];
-
-    // InfoWindow reuse
-    if (!infoWindowRef.current) {
-      infoWindowRef.current = new google.maps.InfoWindow();
-    }
-
-    // Add markers for current markers list
-    markers.forEach(m => {
-      const isSelected = selectedCode === m.geo.code;
-      const marker = new google.maps.Marker({
-        position: { lat: m.geo.lat, lng: m.geo.lng },
-        map: mapInstanceRef.current,
-        title: `${m.label} (${m.geo.capital})`,
-        icon: {
-          path: google.maps.SymbolPath.CIRCLE,
-          scale: isSelected ? 9.5 : 6,
-          fillColor: m.color,
-          fillOpacity: 0.95,
-          strokeColor: '#ffffff',
-          strokeWeight: isSelected ? 2.5 : 1.5
+        mapInstanceRef.current.setMapTypeId(mapTheme === 'roadmap' ? 'roadmap' : mapTheme === 'hybrid' ? 'hybrid' : 'roadmap');
+        if (mapTheme === 'dark') {
+          mapInstanceRef.current.setOptions({ styles: DARK_MAP_STYLES });
+        } else {
+          mapInstanceRef.current.setOptions({ styles: [] });
         }
+      }
+
+      // Clear previous markers
+      markersRef.current.forEach(m => {
+        try { m.setMap(null); } catch {}
       });
+      markersRef.current = [];
 
-      marker.addListener('click', () => {
-        setSelectedCode(m.geo.code);
-        if (onSelectCountry) onSelectCountry(m.geo.code);
+      // InfoWindow reuse
+      if (!infoWindowRef.current && google.maps.InfoWindow) {
+        infoWindowRef.current = new google.maps.InfoWindow();
+      }
 
-        const badgeText = getCategoryBadgeLabel(m.item, language);
-        const content = `
-          <div style="font-family: inherit; padding: 12px 34px 12px 14px; min-width: 200px; color: #f8fafc; text-align: left; line-height: 1.4;">
-            <div style="font-weight: 900; font-size: 15px; display: flex; align-items: center; gap: 8px; color: #ffffff;">
-              <span style="font-size: 18px;">${getFlag(m.geo.code)}</span>
-              <span>${m.label}</span>
-            </div>
-            <div style="font-size: 12px; color: #94a3b8; margin-top: 4px; font-weight: 600;">
-              🏛️ ${m.geo.capital} · ✈️ ${m.geo.mainHub}
-            </div>
-            <div style="margin-top: 8px; display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; background: ${m.color}25; color: ${m.color}; border: 1.5px solid ${m.color}60;">
-              ${badgeText}
-            </div>
-          </div>
-        `;
-        infoWindowRef.current?.setContent(content);
-        infoWindowRef.current?.open(mapInstanceRef.current, marker);
-      });
+      // Add markers for current markers list
+      if (google.maps.Marker) {
+        const symbolPathCircle = google.maps.SymbolPath?.CIRCLE || 0;
+        markers.forEach(m => {
+          const isSelected = selectedCode === m.geo.code;
+          const marker = new google.maps.Marker({
+            position: { lat: m.geo.lat, lng: m.geo.lng },
+            map: mapInstanceRef.current,
+            title: `${m.label} (${m.geo.capital})`,
+            icon: {
+              path: symbolPathCircle,
+              scale: isSelected ? 9.5 : 6,
+              fillColor: m.color,
+              fillOpacity: 0.95,
+              strokeColor: '#ffffff',
+              strokeWeight: isSelected ? 2.5 : 1.5
+            }
+          });
 
-      markersRef.current.push(marker);
-    });
+          marker.addListener('click', () => {
+            setSelectedCode(m.geo.code);
+            if (onSelectCountry) onSelectCountry(m.geo.code);
+
+            const badgeText = getCategoryBadgeLabel(m.item, language);
+            const content = `
+              <div style="font-family: inherit; padding: 12px 34px 12px 14px; min-width: 200px; color: #f8fafc; text-align: left; line-height: 1.4;">
+                <div style="font-weight: 900; font-size: 15px; display: flex; align-items: center; gap: 8px; color: #ffffff;">
+                  <span style="font-size: 18px;">${getFlag(m.geo.code)}</span>
+                  <span>${m.label}</span>
+                </div>
+                <div style="font-size: 12px; color: #94a3b8; margin-top: 4px; font-weight: 600;">
+                  🏛️ ${m.geo.capital} · ✈️ ${m.geo.mainHub}
+                </div>
+                <div style="margin-top: 8px; display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; background: ${m.color}25; color: ${m.color}; border: 1.5px solid ${m.color}60;">
+                  ${badgeText}
+                </div>
+              </div>
+            `;
+            try {
+              infoWindowRef.current?.setContent(content);
+              infoWindowRef.current?.open(mapInstanceRef.current, marker);
+            } catch {}
+          });
+
+          markersRef.current.push(marker);
+        });
+      }
+    } catch (err) {
+      console.warn('Google Maps canvas failed to initialize or render, switching to Vector Radar:', err);
+      setMapsError(true);
+      setViewMode('map');
+    }
   }, [mapsLoaded, viewMode, mapTheme, markers, selectedCode, language]);
 
   // Fly to country coordinates on the map
@@ -413,8 +426,10 @@ export const InteractiveWorldMap: React.FC<InteractiveWorldMapProps> = ({
     const geo = GEO_DATA[code];
     if (geo) {
       if (viewMode === 'google-map' && mapInstanceRef.current) {
-        mapInstanceRef.current.panTo({ lat: geo.lat, lng: geo.lng });
-        mapInstanceRef.current.setZoom(5);
+        try {
+          mapInstanceRef.current.panTo({ lat: geo.lat, lng: geo.lng });
+          mapInstanceRef.current.setZoom(5);
+        } catch {}
       } else {
         const targetX = ((geo.lng + 180) / 360) * 1000;
         const targetY = ((85 - geo.lat) / 145) * 520;
