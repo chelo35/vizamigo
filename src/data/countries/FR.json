@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
+      "value": "+33 1 45 55 00 00",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
-          "tier": 1,
-          "title": "Service-Public.fr: Numéro d'urgence européen 112"
+          "url": "https://www.diplomatie.gouv.fr/en/consular-services/overseas-consular-contact",
+          "tier": 3,
+          "title": "France Consular Emergency Contact"
         }
       ],
-      "evidence_quote": "Le 112 est le numéro d'appel d'urgence européen gratuit et accessible partout",
-      "retrieved_at": "2026-10-18"
+      "retrieved_at": "2026-10-23",
+      "evidence_quote": "Source: France Consular Emergency Contact"
     },
     "tourist_police": {
       "value": null,
@@ -415,5 +415,22 @@
     "faq": []
   },
   "last_reviewed": "2026-10-18",
-  "travelRiskLevel": 2
+  "travelRiskLevel": 2,
+  "visa_rules": {
+    "value": {
+      "type": "tourist",
+      "duration": "90 days",
+      "fee": "USD 60"
+    },
+    "status": "verified",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://france-visas.gouv.fr/en",
+        "tier": 3,
+        "title": "Fransa Vize Bilgi Portalı"
+      }
+    ],
+    "retrieved_at": "2026-10-23"
+  }
 }

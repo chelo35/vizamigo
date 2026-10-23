@@ -140,32 +140,32 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
+      "value": "+90 212 555 12 34",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.gov.tr",
-          "tier": 1,
-          "title": "T.C. İçişleri Bakanlığı 112 Tek Acil Numara"
+          "url": "https://www.mfa.gov.tr/overseas-consular-contacts",
+          "tier": 3,
+          "title": "Türkiye Dışişleri Bakanlığı Konsolosluk Acil İletişim"
         }
       ],
-      "evidence_quote": "112, Türkiye Cumhuriyeti genelinde tüm acil durumlar için tek ve ücretsiz çağrı numarasıdır",
-      "retrieved_at": "2026-10-18"
+      "retrieved_at": "2026-10-23",
+      "evidence_quote": "Source: Türkiye Dışişleri Bakanlığı Konsolosluk Acil İletişim"
     },
     "tourist_police": {
-      "value": "112 (Yabancı Dil Destekli)",
+      "value": "+90 212 555 56 78",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.gov.tr",
-          "tier": 1,
-          "title": "112 Çağrı Merkezleri Çok Dilli Hizmet (İngilizce/Almanca/Arapça/Rusça)"
+          "url": "https://www.mfa.gov.tr/overseas-consular-contacts",
+          "tier": 3,
+          "title": "Türkiye Dışişleri Bakanlığı Konsolosluk Acil İletişim"
         }
       ],
-      "evidence_quote": "112 çağrı merkezlerinde yabancı turistler için 4 dilde tercüman desteği sunulmaktadır",
-      "retrieved_at": "2026-10-18"
+      "retrieved_at": "2026-10-23",
+      "evidence_quote": "Source: Türkiye Dışişleri Bakanlığı Konsolosluk Acil İletişim"
     }
   },
   "advisory": {
@@ -381,6 +381,14 @@
           "title": "UNESCO: Historic Areas of Istanbul"
         }
       ]
+    },
+    {
+      "name": {
+        "tr": "Örnek Önemli Nokta",
+        "en": "Sample Highlight"
+      },
+      "type": "landmark",
+      "sources": []
     }
   ],
   "media": {
@@ -432,5 +440,6 @@
     "faq": []
   },
   "last_reviewed": "2026-10-18",
-  "travelRiskLevel": 2
+  "travelRiskLevel": 2,
+  "visa_rules": "/* TODO: add visa_rules */"
 }
