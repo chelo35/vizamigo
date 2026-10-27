@@ -26,6 +26,7 @@ import { getPassportItems } from './utils/calculator';
 
 // ExploreTab is imported directly to prevent CLS layout shift on initial home render
 import { ExploreTab } from './components/ExploreTab';
+import { HomeDashboard } from './components/redesign/HomeDashboard';
 const GlobalFooter = lazy(() =>
   import('./components/footer/GlobalFooter').then(m => ({ default: m.GlobalFooter }))
 );
@@ -236,24 +237,6 @@ function AppContent() {
         is404={route.is404}
       />
 
-      {/* Lightweight Fixed Palm Frond Silhouettes (Zero GPU Blurs) */}
-      <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
-        {/* Top-Left Tropical Palm Frond Silhouette */}
-        <svg viewBox="0 0 260 260" className="w-56 h-56 absolute -top-8 -left-8 text-black/15 dark:text-black/30 pointer-events-none">
-          <path
-            fill="currentColor"
-            d="M0,0 L160,30 Q110,45 55,40 L195,85 Q130,90 65,75 L210,145 Q140,140 70,115 L175,205 Q115,185 55,145 L110,245 Q65,210 25,160 Z"
-          />
-        </svg>
-        {/* Top-Right Tropical Palm Frond Silhouette */}
-        <svg viewBox="0 0 260 260" className="w-56 h-56 absolute -top-8 -right-8 text-black/15 dark:text-black/30 -scale-x-100 pointer-events-none">
-          <path
-            fill="currentColor"
-            d="M0,0 L160,30 Q110,45 55,40 L195,85 Q130,90 65,75 L210,145 Q140,140 70,115 L175,205 Q115,185 55,145 L110,245 Q65,210 25,160 Z"
-          />
-        </svg>
-      </div>
-
       {/* ========================================================
           1. NAVIGATION (MOBILE DRAWER & BOTTOM BAR)
       ======================================================== */}
@@ -317,8 +300,23 @@ function AppContent() {
               {activeTab === 'explore' && (
                 <ErrorBoundary isTabBoundary tabName={t.navExplore || 'Keşfet'}>
                   <div className="space-y-6">
+                    {exploreSubTab === 'all' && !selectedCountryCode && !globalSearchQuery && (
+                      <HomeDashboard
+                        currentPassport={currentPassport}
+                        secondaryPassport={secondaryPassport}
+                        onSearch={(q) => setGlobalSearchQuery(q)}
+                        onOpenPassportSelector={() => setIsPassportModalOpen(true)}
+                        onOpenCountry={(code) => handleCountrySelect(code)}
+                        onOpenAuditConsole={() => setIsAuditModalOpen(true)}
+                        onOpenPackingList={() => setIsPackingListOpen(true)}
+                        onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                        onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                        onOpenGlobalRadar={openRadar}
+                      />
+                    )}
                     {exploreSubTab === 'all' ? (
                       <ExploreTab
+                        hideDashboard
                         currentPassport={currentPassport}
                         onOpenAuditConsole={() => setIsAuditModalOpen(true)}
                         externalSearch={globalSearchQuery}

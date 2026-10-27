@@ -207,7 +207,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           2. MOBILE FLOATING FROSTED-GLASS BOTTOM BAR (5 MAIN TABS)
       ======================================================== */}
       <nav
-        className="lg:hidden fixed inset-x-3 bottom-3 z-40 rounded-full border-2 border-[#5EEAD4]/65 bg-[#0F766E]/92 dark:bg-[#041D29]/95 backdrop-blur-2xl shadow-2xl px-2 py-1.5 flex items-center justify-around"
+        className="lg:hidden fixed inset-x-3 bottom-3 z-40 rounded-full rd-bnav px-2 py-1.5 flex items-center justify-around"
         aria-label="Mobile Navigation"
       >
         {navItems.map((item) => {

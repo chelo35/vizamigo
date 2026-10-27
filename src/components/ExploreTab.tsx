@@ -119,6 +119,7 @@ interface ExploreTabProps {
   onOpenTimezoneOverlap?: () => void;
   onOpenGlobalRadar?: (mode?: 'all' | 'clock' | 'weather' | 'currency', city?: string) => void;
   onOpenAssistant?: () => void;
+  hideDashboard?: boolean;
 }
 
 const COMMON_CHECKLIST_TR = [
@@ -181,7 +182,8 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
   onOpenTippingCalc,
   onOpenTimezoneOverlap,
   onOpenGlobalRadar,
-  onOpenAssistant
+  onOpenAssistant,
+  hideDashboard = false
 }) => {
   const { language, t, l } = useI18n();
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
@@ -328,7 +330,7 @@ export const ExploreTab: React.FC<ExploreTabProps> = ({
           Automatically hidden during active search so countries show right at top!
       ===================================================================== */}
       {search.trim().length === 0 ? (
-        <BentoDashboardGrid
+        hideDashboard ? null : <BentoDashboardGrid
           currentPassport={currentPassport}
           onOpenCountryDossier={(code) => openDossier(code)}
           onSelectTab={(tab) => onNavigateTab?.(tab)}

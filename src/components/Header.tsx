@@ -101,7 +101,7 @@ export const Header: React.FC<HeaderProps> = ({
   );
 
   return (
-    <header className="sticky top-0 z-30 transition-all w-full border-b border-[#2DD4BF]/30 backdrop-blur-2xl bg-[#042637]/90 dark:bg-[#021824]/95 shadow-xl shadow-cyan-950/20">
+    <header className="sticky top-0 z-30 transition-all w-full rd-topbar">
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3.5 space-y-2.5 sm:space-y-3">
         {/* =================================================================
             ROW 1: Symmetrical 3-Column Header (Desktop) & Flowing Flex (Mobile)
