@@ -148,11 +148,11 @@ body { background: var(--rd-bg); color: var(--rd-fg); }
 .rd-orb::after { content: ""; position: absolute; inset: 50px; border-radius: 50%; background: var(--rd-orb-core); }
 .rd-cloud { position: absolute; height: 34px; border-radius: 999px; background: var(--rd-cloud); opacity: 0.6; will-change: transform; z-index: -1; }
 .rd-cloud::before, .rd-cloud::after { content: ""; position: absolute; background: var(--rd-cloud); border-radius: 50%; }
-.rd-cloud.c1 { width: 150px; top: 7%; left: 0; animation: rd-drift 34s linear infinite; }
+.rd-cloud.c1 { width: 150px; top: 30%; left: 0; animation: rd-drift 95s linear infinite; animation-delay: -40s; }
 .rd-cloud.c1::before { width: 60px; height: 60px; left: 28px; top: -30px; } .rd-cloud.c1::after { width: 44px; height: 44px; left: 78px; top: -20px; }
-.rd-cloud.c2 { width: 110px; top: 64%; left: 0; opacity: 0.5; animation: rd-drift 46s linear infinite; animation-delay: -20s; }
+.rd-cloud.c2 { width: 110px; top: 64%; left: 0; opacity: 0.5; animation: rd-drift 120s linear infinite; animation-delay: -70s; }
 .rd-cloud.c2::before { width: 46px; height: 46px; left: 22px; top: -22px; } .rd-cloud.c2::after { width: 34px; height: 34px; left: 58px; top: -14px; }
-.rd-cloud.c3 { width: 90px; top: 3%; left: 0; opacity: 0.4; animation: rd-drift 40s linear infinite; animation-delay: -31s; }
+.rd-cloud.c3 { width: 90px; top: 21%; left: 0; opacity: 0.4; animation: rd-drift 110s linear infinite; animation-delay: -15s; }
 .rd-cloud.c3::before { width: 38px; height: 38px; left: 18px; top: -18px; } .rd-cloud.c3::after { width: 28px; height: 28px; left: 48px; top: -10px; }
 .rd-trail { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
 .rd-trail path { stroke: var(--rd-plane); stroke-opacity: 0.55; stroke-width: 2; fill: none; stroke-dasharray: 6 8; animation: rd-dash 1.4s linear infinite; }
@@ -343,4 +343,27 @@ html.dark, .dark {
 @media (prefers-reduced-motion: reduce) {
   .rd-flight, .rd-fb-bob, .rd-fb-seg, .rd-fb-seg::after { animation: none !important; }
   .rd-flight.f2 { display: none; }
+}
+
+/* Denizde yelkenli, jet ski ve sörfçü (yalnız transform; ağır değil) */
+.rd-seafx { position: absolute; inset: 0; pointer-events: none; }
+.rd-seafx > div { position: absolute; left: 0; will-change: transform; }
+.rd-sail { bottom: 27%; animation: rd-sailx 80s linear infinite; animation-delay: -25s; opacity: 0.95; }
+.rd-sail svg { animation: rd-rock 4.8s ease-in-out infinite; transform-origin: 50% 90%; }
+.rd-jet { bottom: 22%; animation: rd-jetx 16s linear infinite; animation-delay: -6s; }
+.rd-jet svg { animation: rd-hop 0.9s ease-in-out infinite; }
+.rd-surf { bottom: 31%; animation: rd-surfx 34s linear infinite; animation-delay: -12s; }
+.rd-surf svg { animation: rd-rock 2.6s ease-in-out infinite; transform-origin: 50% 85%; }
+@keyframes rd-sailx { from { transform: translateX(-80px); } to { transform: translateX(110vw); } }
+@keyframes rd-jetx { from { transform: translateX(-120px); } to { transform: translateX(110vw); } }
+@keyframes rd-surfx { from { transform: translateX(110vw); } to { transform: translateX(-80px); } }
+@keyframes rd-rock { 0%, 100% { transform: rotate(-3deg) translateY(0); } 50% { transform: rotate(3deg) translateY(-3px); } }
+@keyframes rd-hop { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-2px) rotate(-2deg); } }
+@media (max-width: 760px) {
+  .rd-seafx > div { scale: 0.75; }
+  .rd-jet { animation-duration: 12s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rd-seafx > div, .rd-seafx svg { animation: none !important; }
+  .rd-sail { transform: translateX(62vw); } .rd-surf { transform: translateX(18vw); } .rd-jet { display: none; }
 }

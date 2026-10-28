@@ -74,6 +74,37 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
       <div className="rd-sea" aria-hidden="true">
         <div className="rd-wave w1"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 110 C 150 70 300 150 600 110 C 900 70 1050 150 1200 110 C 1350 70 1500 150 1800 110 C 2100 70 2250 150 2400 110 V240 H0 Z" /></svg></div>
         <div className="rd-wave w2"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 140 C 200 100 400 180 600 140 C 800 100 1000 180 1200 140 C 1400 100 1600 180 1800 140 C 2000 100 2200 180 2400 140 V240 H0 Z" /></svg></div>
+        <div className="rd-seafx" aria-hidden="true">
+          <div className="rd-sail">
+            <svg viewBox="0 0 60 56" width="64" height="60">
+              <path d="M30 4v38" stroke="#5B3A29" strokeWidth="2" />
+              <path d="M31 6l18 32H31z" fill="#FFFFFF" />
+              <path d="M29 10L14 38h15z" fill="#F28C6B" />
+              <path d="M8 42h44l-6 9H14z" fill="#6B3F2A" />
+              <path d="M10 44h40" stroke="#E7B98A" strokeWidth="1.5" />
+            </svg>
+          </div>
+          <div className="rd-jet">
+            <svg viewBox="0 0 96 34" width="108" height="38">
+              <path d="M2 27c10-3 20-3 30 0M6 31c10-2 18-2 26 0" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".85" />
+              <path d="M34 26h44c6 0 12-3 14-7H44l-6 3z" fill="#FFFFFF" />
+              <path d="M44 19h48c-1 2-3 4-6 5H40z" fill="#E8505B" />
+              <circle cx="62" cy="9" r="3.6" fill="#2F2A3A" />
+              <path d="M60 13l-4 8h8l4-6z" fill="#F7B733" />
+              <path d="M64 14l8 2" stroke="#2F2A3A" strokeWidth="2.4" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className="rd-surf">
+            <svg viewBox="0 0 48 52" width="44" height="48">
+              <circle cx="24" cy="9" r="4.4" fill="#3A2A2A" />
+              <path d="M24 14l-3 12 6 2 2-8 6 4" stroke="#3A2A2A" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <path d="M21 26l-7 10M27 28l3 9" stroke="#3A2A2A" strokeWidth="3.6" strokeLinecap="round" />
+              <path d="M24 16l-10 4" stroke="#3A2A2A" strokeWidth="3" strokeLinecap="round" />
+              <ellipse cx="22" cy="40" rx="18" ry="3.4" fill="#FFD36B" transform="rotate(-6 22 40)" />
+              <path d="M6 44c6 3 26 3 36-2" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".8" />
+            </svg>
+          </div>
+        </div>
         <div className="rd-glitter">
           {glints.map((g, i) => (
             <i key={i} style={{ left: `${g.left}%`, top: `${g.top}%`, animationDelay: `${g.delay}s`, width: g.w }} />
