@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Icon, IconName } from './Icon';
 import { tpIdFromUrl } from '../data/tpPartners';
+import { TileArt } from './TileArt';
 import { useI18n } from '../data/i18n';
 import { FlyingBanner } from '../components/redesign/FlyingBanner';
 import { CountryItem, getCategoryBadgeLabel } from '../data/passportData';
@@ -312,7 +313,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
         >
           {t.badge && <span className="vz-tile-badge">{t.badge}</span>}
           {t.isNew && !t.badge && <span className="vz-tile-badge new">{l('Yeni', 'New', 'Neu', 'Nuevo', 'Новое')}</span>}
-          <span className="vz-ic"><Icon name={t.icon} size={22} /></span>
+          <TileArt name={t.icon} size={46} />
           <span className="vz-tile-t">{t.title}</span>
           <span className="vz-tile-s">{t.desc}</span>
         </button>
