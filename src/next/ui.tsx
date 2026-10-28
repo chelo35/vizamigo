@@ -306,8 +306,8 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
           key={t.id}
           type="button"
           aria-controls={`vz-panel-${label.replace(/\W+/g, '')}`}
-          className={`vz-tile${openId === t.id ? ' on' : ''}`}
-          style={{ order: i + 1 }}
+          className={`vz-tile${openId === t.id ? ' on' : ''}${cols > 1 && tiles.length % cols === 1 && i === tiles.length - 1 ? ' wide' : ''}`}
+          style={{ order: i + 1, gridColumn: cols > 1 && tiles.length % cols === 1 && i === tiles.length - 1 ? '1 / -1' : undefined }}
           aria-expanded={t.onOpen && !t.render && !t.tabs ? undefined : openId === t.id}
           onClick={() => (openId === t.id ? setOpenId(null) : open(t.id))}
         >
