@@ -24,7 +24,7 @@ interface Props {
   onClose: () => void;
 }
 
-type TripStyle = 'beach' | 'winter' | 'city' | 'nomad' | 'backpack';
+export type TripStyle = 'beach' | 'winter' | 'city' | 'nomad' | 'backpack';
 
 interface PackingItem {
   id: string;
@@ -37,7 +37,7 @@ interface PackingItem {
   isCustom?: boolean;
 }
 
-const DEFAULT_PACKING_ITEMS: PackingItem[] = [
+export const DEFAULT_PACKING_ITEMS: PackingItem[] = [
   // Belgeler & Finans
   { id: 'doc-pass', text: { tr: 'Pasaport (En az 6 ay geçerlilik süresi kontrol edildi)', en: 'Passport (Checked with at least 6 months validity)' }, category: 'docs', styles: ['beach', 'winter', 'city', 'nomad', 'backpack'] },
   { id: 'doc-id', text: { tr: 'Çipli Kimlik Kartı & Ehliyet', en: 'National ID & Driver’s License' }, category: 'docs', styles: ['beach', 'winter', 'city', 'nomad', 'backpack'] },

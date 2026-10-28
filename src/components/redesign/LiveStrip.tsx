@@ -3,7 +3,7 @@ import { useI18n } from '../../data/i18n';
 import { ALL_WORLD_HUBS, flagToIso } from '../../data/worldHubs';
 import { GEO_DATA } from '../../data/geoData';
 import { GLOBAL_CURRENCIES } from '../../data/countryGeography';
-import { getCrossRate } from '../../data/currencyRates';
+import { getCrossRate, USD_RATES } from '../../data/currencyRates';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../../utils/liveData';
 import { getCountryName, getCategoryBadgeLabel } from '../../data/passportData';
 import { getPassportItems } from '../../utils/calculator';
@@ -69,7 +69,7 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
   const destCur = GLOBAL_CURRENCIES[destination]?.code || 'USD';
   const destSym = GLOBAL_CURRENCIES[destination]?.symbol || destCur;
   const homeSym = GLOBAL_CURRENCIES[passport]?.symbol || homeCur;
-  const rate = getCrossRate(homeCur, destCur);
+  const rate = USD_RATES[homeCur] && USD_RATES[destCur] ? getCrossRate(homeCur, destCur) : 0;
 
   const visa = useMemo(() => getPassportItems(passport).find((it) => it.c === destination), [passport, destination]);
 
@@ -153,8 +153,8 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
 
         <div className="rd-card rd-kpi">
           <div className="rd-kpi-h"><span className="rd-eyebrow">{l('Kur', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')} · {homeCur} → {destCur}</span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
-          <div className="rd-big">1 {homeSym} = {fmtRate(rate)} {destSym}</div>
-          <div className="rd-sub">100 {destSym} ≈ {fmtRate(100 / (rate || 1))} {homeSym}</div>
+          <div className="rd-big">{!rate ? '—' : rate < 0.1 ? `1 ${destSym} = ${fmtRate(1 / rate)} ${homeSym}` : `1 ${homeSym} = ${fmtRate(rate)} ${destSym}`}</div>
+          <div className="rd-sub">{rate ? `100 ${destSym} ≈ ${fmtRate(100 / rate)} ${homeSym}` : l('Kur bilgisi yükleniyor', 'Rate loading', 'Kurs lädt', 'Cargando', 'Загрузка')}</div>
         </div>
 
         <div className="rd-card rd-kpi">

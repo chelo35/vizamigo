@@ -1,0 +1,512 @@
+import React, { useEffect, useMemo, useState } from 'react';
+import { useI18n } from '../data/i18n';
+import { Icon } from './Icon';
+import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, List, Page, Row, Segmented, Stat, Tags, Tile, TileGrid, VisaBadge, Bullets, OpenRequest, fmtNum } from './ui';
+import { CountryCard } from './country';
+import { WORLD_DOTS, WORLD_W, WORLD_H, project } from './worldDots';
+import { getPassportItems, validateRouteStop, computeRouteSchengenTotal, dateToDayIndex, dayIndexToDate, getTodayDayIndex, formatLocalizedDate, RouteStop, RouteWarning } from '../utils/calculator';
+import { loadStoredRouteStops, saveStoredRouteStops, loadStoredTrips } from '../utils/storage';
+import { getCountryName, SCHENGEN_SET } from '../data/passportData';
+import { GEO_DATA, estimateTravelLeg, optimizeRouteOrder, getCountryGeo } from '../data/geoData';
+import { getCountryTransitRule } from '../data/transitData';
+import { NOMAD_HUBS, getLocalizedNomadHub } from '../data/nomadData';
+import { ALL_WORLD_HUBS } from '../data/worldHubs';
+
+/* ------------------------------------------------------------------ */
+/* Ortak rota durumu                                                    */
+/* ------------------------------------------------------------------ */
+function useRoute(passport: string, lang: string) {
+  const [stops, setStops] = useState<RouteStop[]>(() => loadStoredRouteStops().filter((s) => s.entryDate && s.exitDate));
+  const trips = useMemo(() => loadStoredTrips(), []);
+  const save = (next: RouteStop[]) => {
+    setStops(next);
+    saveStoredRouteStops(next);
+  };
+  const warnings = useMemo(() => {
+    const m = new Map<string, RouteWarning[]>();
+    stops.forEach((s) => m.set(s.id, validateRouteStop(s, passport, stops, trips, lang)));
+    return m;
+  }, [stops, passport, trips, lang]);
+  const sch = useMemo(() => computeRouteSchengenTotal(stops, trips), [stops, trips]);
+  const totalDays = stops.length ? dateToDayIndex(stops[stops.length - 1].exitDate) - dateToDayIndex(stops[0].entryDate) + 1 : 0;
+  return { stops, save, warnings, sch, totalDays };
+}
+type RouteApi = ReturnType<typeof useRoute>;
+
+const sortedCountries = (lang: string) =>
+  Object.keys(GEO_DATA)
+    .map((c) => ({ c, n: getCountryName(c, lang) }))
+    .sort((a, b) => a.n.localeCompare(b.n, lang));
+
+/* ---------------- Rota planlayıcı ---------------- */
+const PlannerView: React.FC<{ r: RouteApi; passport: string; onOpenCountry: (c: string) => void; onGoMap: () => void }> = ({ r, passport, onOpenCountry, onGoMap }) => {
+  const { l, language } = useI18n();
+  const items = useMemo(() => new Map(getPassportItems(passport).map((x) => [x.c, x])), [passport]);
+  const opts = useMemo(() => sortedCountries(language), [language]);
+  const last = r.stops[r.stops.length - 1];
+  const nextStart = last ? dayIndexToDate(dateToDayIndex(last.exitDate) + 1) : dayIndexToDate(getTodayDayIndex() + 14);
+  const [country, setCountry] = useState('TH');
+  const [start, setStart] = useState(nextStart);
+  const [days, setDays] = useState(5);
+  const [msg, setMsg] = useState('');
+  useEffect(() => setStart(nextStart), [nextStart]);
+
+  const add = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!start || days < 1) return;
+    const exit = dayIndexToDate(dateToDayIndex(start) + days - 1);
+    r.save([...r.stops, { id: `s-${Date.now()}`, countryCode: country, entryDate: start, exitDate: exit }]);
+    setMsg('');
+  };
+  const move = (i: number, d: -1 | 1) => {
+    const j = i + d;
+    if (j < 0 || j >= r.stops.length) return;
+    const next = r.stops.slice();
+    [next[i], next[j]] = [next[j], next[i]];
+    r.save(rebuildDates(next));
+  };
+  const optimize = () => {
+    if (r.stops.length < 3) return;
+    const res = optimizeRouteOrder(r.stops.map((s) => s.countryCode));
+    const byCode = new Map(r.stops.map((s) => [s.countryCode, s]));
+    r.save(rebuildDates(res.optimizedCodes.map((c) => byCode.get(c)!).filter(Boolean)));
+    setMsg(res.savedDistanceKm > 0 ? l(`Sıra düzeltildi: yaklaşık ${fmtNum(res.savedDistanceKm, language)} km daha kısa.`, `Reordered: about ${fmtNum(res.savedDistanceKm, language)} km shorter.`, `Neu sortiert: ca. ${fmtNum(res.savedDistanceKm, language)} km kürzer.`, `Reordenado: ${fmtNum(res.savedDistanceKm, language)} km menos.`, `Порядок изменён: на ${fmtNum(res.savedDistanceKm, language)} км короче.`) : l('Rota zaten en kısa sırada.', 'Your route is already in the shortest order.', 'Route ist bereits optimal.', 'La ruta ya es óptima.', 'Маршрут уже оптимален.'));
+  };
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    const txt = r.stops.map((s, i) => `${i + 1}. ${getCountryName(s.countryCode, language)} — ${formatLocalizedDate(dateToDayIndex(s.entryDate), language)} → ${formatLocalizedDate(dateToDayIndex(s.exitDate), language)}`).join('\n');
+    try {
+      await navigator.clipboard.writeText(`Vizamigo\n${txt}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {}
+  };
+
+  return (
+    <div className="vz-stack">
+      <form className="vz-card tone-sea" onSubmit={add}>
+        <div className="vz-formgrid">
+          <Field label={l('Ülke', 'Country', 'Land', 'País', 'Страна')} htmlFor="vz-rp-c">
+            <select id="vz-rp-c" className="vz-select" value={country} onChange={(e) => setCountry(e.target.value)}>
+              {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
+            </select>
+          </Field>
+          <Field label={l('Giriş tarihi', 'Arrival', 'Ankunft', 'Llegada', 'Прибытие')} htmlFor="vz-rp-d">
+            <input id="vz-rp-d" type="date" className="vz-input" value={start} onChange={(e) => setStart(e.target.value)} />
+          </Field>
+          <Field label={l('Kaç gün?', 'How many days?', 'Wie viele Tage?', '¿Cuántos días?', 'Сколько дней?')} htmlFor="vz-rp-n">
+            <input id="vz-rp-n" type="number" min={1} max={365} className="vz-input" value={days} onChange={(e) => setDays(Math.max(1, Number(e.target.value) || 1))} />
+          </Field>
+        </div>
+        <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+          <span className="vz-row-flex" style={{ gap: 8 }}><VisaBadge item={items.get(country)} /><span className="vz-muted" style={{ fontSize: 13 }}>{getCountryName(country, language)}</span></span>
+          <Btn type="submit" icon="plus">{l('Durak ekle', 'Add stop', 'Stopp hinzufügen', 'Añadir parada', 'Добавить')}</Btn>
+        </div>
+      </form>
+
+      {r.stops.length > 0 && (
+        <div className="vz-stats">
+          <Stat value={r.stops.length} label={l('Durak', 'Stops', 'Stopps', 'Paradas', 'Остановки')} icon="pin" />
+          <Stat value={r.totalDays} label={l('Toplam gün', 'Total days', 'Tage gesamt', 'Días totales', 'Всего дней')} icon="cal" />
+          <Stat value={`${r.sch.peak180Days}/90`} label={l('Schengen günü (180 günde)', 'Schengen days (in 180)', 'Schengen-Tage (180)', 'Días Schengen (180)', 'Шенген (180)')} icon="shield" tone={r.sch.exceedsLimit ? 'warn' : 'ok'} />
+        </div>
+      )}
+      {msg && <div className="vz-note"><Icon name="check" size={18} duo={false} />{msg}</div>}
+
+      {r.stops.length === 0 ? (
+        <Empty icon="route" title={l('Henüz durak yok', 'No stops yet', 'Noch keine Stopps', 'Aún no hay paradas', 'Пока нет остановок')} text={l('Yukarıdan ilk ülkeni ekle ya da Hazır rotalar kutucuğundan tek dokunuşla bir rota yükle.', 'Add your first country above or load a ready-made route in one tap.', 'Erstes Land oben hinzufügen oder eine fertige Route laden.', 'Añade un país o carga una ruta lista.', 'Добавьте страну или загрузите готовый маршрут.')} />
+      ) : (
+        <div className="vz-steps">
+          {r.stops.map((s, i) => {
+            const ws = r.warnings.get(s.id) || [];
+            const nd = dateToDayIndex(s.exitDate) - dateToDayIndex(s.entryDate) + 1;
+            return (
+              <div className="vz-step" key={s.id}>
+                <span className="vz-step-n">{i + 1}</span>
+                <div className="vz-step-b">
+                  <div className="vz-card" style={{ padding: 14, gap: 10 }}>
+                    <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+                      <button type="button" className="vz-row-flex" style={{ border: 0, background: 'none', padding: 0, cursor: 'pointer', color: 'inherit', font: 'inherit' }} onClick={() => onOpenCountry(s.countryCode)}>
+                        <Flag code={s.countryCode} />
+                        <span className="vz-stack" style={{ gap: 0, textAlign: 'left' }}>
+                          <b style={{ fontSize: 16 }}>{getCountryName(s.countryCode, language)}</b>
+                          <span className="vz-muted" style={{ fontSize: 13 }}>{formatLocalizedDate(dateToDayIndex(s.entryDate), language)} → {formatLocalizedDate(dateToDayIndex(s.exitDate), language)} · {l(`${nd} gün`, `${nd} days`, `${nd} Tage`, `${nd} días`, `${nd} дн.`)}</span>
+                        </span>
+                      </button>
+                      <span className="vz-row-flex" style={{ gap: 6 }}>
+                        <VisaBadge item={items.get(s.countryCode)} />
+                        {SCHENGEN_SET.has(s.countryCode) && <span className="vz-badge tone-sea">Schengen</span>}
+                      </span>
+                    </div>
+                    {ws.filter((w) => w.type !== 'info').map((w, k) => (
+                      <div key={k} className="vz-note" style={w.type === 'error' ? { borderColor: 'var(--vz-warn)', color: 'var(--vz-warn)' } : undefined}>
+                        <Icon name="alert" size={18} duo={false} /><span>{w.message}</span>
+                      </div>
+                    ))}
+                    <div className="vz-row-flex" style={{ gap: 6 }}>
+                      <button type="button" className="vz-iconbtn" onClick={() => move(i, -1)} disabled={i === 0} aria-label={l('Yukarı taşı', 'Move up', 'Nach oben', 'Subir', 'Вверх')}><Icon name="back" size={16} duo={false} className="vz-rot90" /></button>
+                      <button type="button" className="vz-iconbtn" onClick={() => move(i, 1)} disabled={i === r.stops.length - 1} aria-label={l('Aşağı taşı', 'Move down', 'Nach unten', 'Bajar', 'Вниз')}><Icon name="next" size={16} duo={false} className="vz-rot90" /></button>
+                      <button type="button" className="vz-iconbtn" onClick={() => r.save(rebuildDates(r.stops.filter((x) => x.id !== s.id), r.stops[0]?.entryDate))} aria-label={l('Durağı sil', 'Remove stop', 'Stopp entfernen', 'Quitar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {r.stops.length > 0 && (
+        <div className="vz-actions">
+          <Btn variant="soft" icon="map" onClick={onGoMap}>{l('Haritada gör', 'See on map', 'Auf Karte', 'Ver en mapa', 'На карте')}</Btn>
+          {r.stops.length >= 3 && <Btn variant="soft" icon="spark" onClick={optimize}>{l('En kısa sıraya diz', 'Shortest order', 'Kürzeste Reihenfolge', 'Orden más corto', 'Кратчайший порядок')}</Btn>}
+          <Btn variant="ghost" icon="doc" onClick={copy}>{copied ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Özeti kopyala', 'Copy summary', 'Zusammenfassung kopieren', 'Copiar resumen', 'Копировать')}</Btn>
+          <Btn variant="ghost" icon="trash" onClick={() => r.save([])}>{l('Rotayı temizle', 'Clear route', 'Route leeren', 'Borrar ruta', 'Очистить')}</Btn>
+        </div>
+      )}
+    </div>
+  );
+};
+
+/** Durakları sırayla, aralarında boşluk bırakmadan yeniden tarihle. */
+function rebuildDates(list: RouteStop[], startOverride?: string): RouteStop[] {
+  if (!list.length) return list;
+  let cur = dateToDayIndex(startOverride || list[0].entryDate);
+  return list.map((s) => {
+    const n = Math.max(1, dateToDayIndex(s.exitDate) - dateToDayIndex(s.entryDate) + 1);
+    const out = { ...s, entryDate: dayIndexToDate(cur), exitDate: dayIndexToDate(cur + n - 1) };
+    cur += n;
+    return out;
+  });
+}
+
+/* ---------------- Rota haritası ---------------- */
+const MapView: React.FC<{ r: RouteApi; home: string }> = ({ r, home }) => {
+  const { l, language } = useI18n();
+  const [mode, setMode] = useState<'map' | 'time'>('map');
+  const codes = r.stops.map((s) => s.countryCode);
+  const pts = codes.map((c) => {
+    const g = getCountryGeo(c);
+    return project(g.lng, g.lat);
+  });
+  const homeG = getCountryGeo(home);
+  const homePt = project(homeG.lng, homeG.lat);
+  const all = [homePt, ...pts];
+  const pathD = all
+    .map((p, i) => {
+      if (i === 0) return `M${p[0].toFixed(1)} ${p[1].toFixed(1)}`;
+      const q = all[i - 1];
+      const mx = (p[0] + q[0]) / 2;
+      const my = (p[1] + q[1]) / 2 - Math.min(60, Math.hypot(p[0] - q[0], p[1] - q[1]) * 0.25);
+      return `Q${mx.toFixed(1)} ${my.toFixed(1)} ${p[0].toFixed(1)} ${p[1].toFixed(1)}`;
+    })
+    .join(' ');
+  // haritayı duraklara yakınlaştır
+  const xs = all.map((p) => p[0]);
+  const ys = all.map((p) => p[1]);
+  const pad = 60;
+  let x0 = Math.max(0, Math.min(...xs) - pad), x1 = Math.min(WORLD_W, Math.max(...xs) + pad);
+  let y0 = Math.max(0, Math.min(...ys) - pad), y1 = Math.min(WORLD_H, Math.max(...ys) + pad);
+  const minW = 260;
+  if (x1 - x0 < minW) { const c = (x0 + x1) / 2; x0 = Math.max(0, c - minW / 2); x1 = Math.min(WORLD_W, x0 + minW); }
+  const ratio = 0.56;
+  const needH = (x1 - x0) * ratio;
+  if (y1 - y0 < needH) { const c = (y0 + y1) / 2; y0 = Math.max(0, c - needH / 2); y1 = Math.min(WORLD_H, y0 + needH); }
+  const vb = r.stops.length ? `${x0} ${y0} ${x1 - x0} ${y1 - y0}` : `0 0 ${WORLD_W} ${WORLD_H}`;
+  const k = (x1 - x0) / WORLD_W; // ölçek: noktalar ve yazılar haritayla küçülsün
+
+  const legs = codes.map((c, i) => estimateTravelLeg(i === 0 ? home : codes[i - 1], c));
+  const totalKm = legs.reduce((s, x) => s + x.distanceKm, 0);
+
+  if (!r.stops.length) return <Empty icon="map" title={l('Haritada gösterecek durak yok', 'No stops to show', 'Keine Stopps', 'Sin paradas', 'Нет остановок')} text={l('Önce Rota planlayıcıdan ülke ekle.', 'Add countries in the route planner first.', 'Zuerst Länder hinzufügen.', 'Añade países primero.', 'Сначала добавьте страны.')} />;
+
+  const first = dateToDayIndex(r.stops[0].entryDate);
+  const lastD = dateToDayIndex(r.stops[r.stops.length - 1].exitDate);
+  const span = Math.max(1, lastD - first + 1);
+
+  return (
+    <div className="vz-stack">
+      <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+        <Segmented label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид')} value={mode} onChange={setMode} options={[{ id: 'map', label: l('Harita', 'Map', 'Karte', 'Mapa', 'Карта') }, { id: 'time', label: l('Zaman çizelgesi', 'Timeline', 'Zeitleiste', 'Cronología', 'Хронология') }]} />
+        <span className="vz-muted" style={{ fontSize: 13 }}>{l(`Yaklaşık ${fmtNum(totalKm, language)} km`, `About ${fmtNum(totalKm, language)} km`, `Ca. ${fmtNum(totalKm, language)} km`, `Unos ${fmtNum(totalKm, language)} km`, `Около ${fmtNum(totalKm, language)} км`)}</span>
+      </div>
+      {mode === 'map' ? (
+        <div className="vz-mapbox">
+          <svg viewBox={vb} role="img" aria-label={l('Rota haritası', 'Route map', 'Routenkarte', 'Mapa de ruta', 'Карта маршрута')} preserveAspectRatio="xMidYMid meet">
+            <path d={WORLD_DOTS} className="vz-map-dots" strokeWidth={Math.max(2.2 * k, 1.1)} />
+            <path id="vz-route-path" d={pathD} className="vz-map-route" strokeWidth={Math.max(2.4 * k, 1)} strokeDasharray={`${6 * k} ${5 * k}`} />
+            <g className="vz-map-plane">
+              <path d="M2 18 L 26 13 L 33 15 L 26 19 L 2 22 L 9 19 L 5 17 Z M 12 17 L 7 8 L 11 8 L 19 15 Z M 12 19 L 7 28 L 11 28 L 19 21 Z" transform={`scale(${Math.max(0.5 * k, 0.25)}) translate(-18 -18)`} />
+              <animateMotion dur={`${Math.max(4, all.length * 2)}s`} repeatCount="indefinite" rotate="auto">
+                <mpath href="#vz-route-path" />
+              </animateMotion>
+            </g>
+            <circle cx={homePt[0]} cy={homePt[1]} r={Math.max(6 * k, 3)} className="vz-map-home" />
+            {pts.map((p, i) => (
+              <g key={i}>
+                <circle cx={p[0]} cy={p[1]} r={Math.max(11 * k, 5)} className="vz-map-pin" />
+                <text x={p[0]} y={p[1]} dy="0.35em" textAnchor="middle" className="vz-map-num" fontSize={Math.max(11 * k, 5)}>{i + 1}</text>
+              </g>
+            ))}
+          </svg>
+        </div>
+      ) : (
+        <div className="vz-timeline">
+          {r.stops.map((s, i) => {
+            const a = dateToDayIndex(s.entryDate) - first;
+            const n = dateToDayIndex(s.exitDate) - dateToDayIndex(s.entryDate) + 1;
+            return (
+              <div className="vz-tl-row" key={s.id}>
+                <span className="vz-tl-l"><Flag code={s.countryCode} size="sm" />{getCountryName(s.countryCode, language)}</span>
+                <span className="vz-tl-track"><i style={{ left: `${(a / span) * 100}%`, width: `${(n / span) * 100}%` }} className={SCHENGEN_SET.has(s.countryCode) ? 'sch' : ''}>{n}</i></span>
+              </div>
+            );
+          })}
+          <div className="vz-row-flex vz-muted" style={{ justifyContent: 'space-between', fontSize: 12.5 }}>
+            <span>{formatLocalizedDate(first, language)}</span>
+            <span>{formatLocalizedDate(lastD, language)}</span>
+          </div>
+        </div>
+      )}
+      <List>
+        {legs.map((g, i) => (
+          <Row
+            key={i}
+            icon={g.recommendedMode === 'flight' ? 'plane' : g.recommendedMode === 'ferry' ? 'drop' : g.recommendedMode === 'train' ? 'transit' : 'car'}
+            title={`${getCountryName(g.fromCode, language)} → ${getCountryName(g.toCode, language)}`}
+            sub={`${g.modeLabel} · ${fmtNum(g.distanceKm, language)} km · ~${fmtNum(g.estimatedTransitHours, language, 1)} ${l('saat', 'h', 'Std.', 'h', 'ч')}`}
+          />
+        ))}
+      </List>
+    </div>
+  );
+};
+
+/* ---------------- Hazır rotalar ---------------- */
+const PRESETS: { id: string; tr: string; en: string; de: string; stops: [string, number][] }[] = [
+  { id: 'balkan', tr: 'Balkanlar vizesiz turu', en: 'Visa-free Balkans', de: 'Visumfreier Balkan', stops: [['RS', 5], ['BA', 4], ['ME', 5], ['AL', 4]] },
+  { id: 'caucasus', tr: 'Kafkasya, kimlikle', en: 'Caucasus with ID card', de: 'Kaukasus mit Ausweis', stops: [['GE', 8], ['AZ', 6]] },
+  { id: 'iberia', tr: 'İberik ve Akdeniz', en: 'Iberia & Mediterranean', de: 'Iberien & Mittelmeer', stops: [['PT', 5], ['ES', 6], ['FR', 5], ['IT', 5]] },
+  { id: 'sea', tr: 'Güneydoğu Asya göçebe rotası', en: 'Southeast Asia nomad route', de: 'Südostasien-Nomadenroute', stops: [['TH', 20], ['MY', 15], ['SG', 10]] },
+  { id: 'japan', tr: 'Japonya ve Kore', en: 'Japan & Korea', de: 'Japan & Korea', stops: [['JP', 10], ['KR', 7]] },
+  { id: 'latam', tr: 'Latin Amerika klasik', en: 'Latin America classic', de: 'Lateinamerika-Klassiker', stops: [['MX', 10], ['CO', 10], ['AR', 8]] }
+];
+const PresetsView: React.FC<{ r: RouteApi; passport: string; onLoaded: () => void }> = ({ r, passport, onLoaded }) => {
+  const { l, language } = useI18n();
+  const items = useMemo(() => new Map(getPassportItems(passport).map((x) => [x.c, x])), [passport]);
+  const load = (p: (typeof PRESETS)[number]) => {
+    let cur = getTodayDayIndex() + 21;
+    const stops = p.stops.map(([c, n], i) => {
+      const s = { id: `p-${p.id}-${i}`, countryCode: c, entryDate: dayIndexToDate(cur), exitDate: dayIndexToDate(cur + n - 1) };
+      cur += n;
+      return s;
+    });
+    r.save(stops);
+    onLoaded();
+  };
+  return (
+    <div className="vz-grid two">
+      {PRESETS.map((p) => {
+        const total = p.stops.reduce((s, x) => s + x[1], 0);
+        return (
+          <Card key={p.id} eyebrow={l(`${total} gün · ${p.stops.length} ülke`, `${total} days · ${p.stops.length} countries`, `${total} Tage · ${p.stops.length} Länder`, `${total} días · ${p.stops.length} países`, `${total} дн. · ${p.stops.length} стран`)} title={language === 'tr' ? p.tr : language === 'de' ? p.de : p.en} icon="flag">
+            <div className="vz-stack" style={{ gap: 8 }}>
+              {p.stops.map(([c, n]) => (
+                <div key={c} className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+                  <span className="vz-row-flex" style={{ gap: 8 }}><Flag code={c} size="sm" />{getCountryName(c, language)} · {l(`${n} gün`, `${n} days`, `${n} Tage`, `${n} días`, `${n} дн.`)}</span>
+                  <VisaBadge item={items.get(c)} />
+                </div>
+              ))}
+            </div>
+            <Btn variant="soft" icon="download" onClick={() => load(p)}>{l('Rotama yükle', 'Load into my route', 'In meine Route laden', 'Cargar en mi ruta', 'Загрузить')}</Btn>
+          </Card>
+        );
+      })}
+    </div>
+  );
+};
+
+/* ---------------- Transit kuralları ---------------- */
+const HUBS = ['TR', 'AE', 'QA', 'DE', 'NL', 'FR', 'GB', 'US', 'CA', 'SG', 'JP', 'KR', 'TH', 'IT', 'ES', 'CH', 'AT', 'SA', 'EG', 'CN'];
+const TransitView: React.FC<{ passport: string }> = ({ passport }) => {
+  const { l, language } = useI18n();
+  const [c, setC] = useState(passport === 'AE' ? 'QA' : 'AE');
+  const opts = useMemo(() => sortedCountries(language), [language]);
+  const rule = useMemo(() => getCountryTransitRule(c, passport, language), [c, passport, language]);
+  const tone = rule.statusType === 'visa_required' || rule.statusType === 'no_airside_zone' ? 'warn' : 'ok';
+  return (
+    <div className="vz-stack">
+      <Chips scroll>
+        {HUBS.filter((h) => h !== passport).slice(0, 12).map((h) => (
+          <Chip key={h} on={h === c} onClick={() => setC(h)}>{getCountryName(h, language)}</Chip>
+        ))}
+      </Chips>
+      <Field label={l('Aktarma yapacağın ülke', 'Country you transit through', 'Transitland', 'País de tránsito', 'Страна транзита')} htmlFor="vz-tr-c">
+        <select id="vz-tr-c" className="vz-select" value={c} onChange={(e) => setC(e.target.value)}>
+          {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
+        </select>
+      </Field>
+      <Card tone={tone} title={rule.ruleTitle} eyebrow={rule.badgeTitle} icon={tone === 'ok' ? 'check' : 'alert'}>
+        <p>{rule.summary}</p>
+        <div className="vz-stats">
+          <Stat value={rule.airsideTransitAllowed ? l('Evet', 'Yes', 'Ja', 'Sí', 'Да') : l('Hayır', 'No', 'Nein', 'No', 'Нет')} label={l('Havalimanında vizesiz aktarma', 'Airside transit without visa', 'Transit ohne Visum', 'Tránsito sin visado', 'Транзит без визы')} icon="plane" tone={rule.airsideTransitAllowed ? 'ok' : 'warn'} />
+          <Stat value={rule.cityExitAllowed ? l('Evet', 'Yes', 'Ja', 'Sí', 'Да') : l('Hayır', 'No', 'Nein', 'No', 'Нет')} label={l('Şehre çıkabilir miyim?', 'Can I leave the airport?', 'Flughafen verlassen?', '¿Puedo salir?', 'Можно выйти в город?')} icon="landmark" tone={rule.cityExitAllowed ? 'ok' : 'warn'} />
+          {rule.maxHours && <Stat value={rule.maxHours} label={l('En uzun bekleme', 'Max layover', 'Max. Aufenthalt', 'Escala máx.', 'Макс. стыковка')} icon="clock" />}
+        </div>
+      </Card>
+      {rule.keyConditions.length > 0 && <Card title={l('Şartlar', 'Conditions', 'Bedingungen', 'Condiciones', 'Условия')} icon="doc"><Bullets items={rule.keyConditions} /></Card>}
+      {rule.exemptions.length > 0 && <Card title={l('İstisnalar', 'Exemptions', 'Ausnahmen', 'Excepciones', 'Исключения')} icon="star"><Bullets tone="ok" items={rule.exemptions} /></Card>}
+      {rule.baggageAndTransferTip && <div className="vz-note"><Icon name="bag" size={18} duo={false} /><span>{rule.baggageAndTransferTip}</span></div>}
+      {rule.officialUrl && <LinkBtn href={rule.officialUrl} small>{l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник')}</LinkBtn>}
+    </div>
+  );
+};
+
+/* ---------------- Göçebe merkezleri ---------------- */
+const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCountry }) => {
+  const { l, language } = useI18n();
+  const hubs = useMemo(() => NOMAD_HUBS.map((h) => getLocalizedNomadHub(h, language)), [language]);
+  const regions = Array.from(new Set(NOMAD_HUBS.map((h) => h.region)));
+  const [reg, setReg] = useState<string>('');
+  const [open, setOpen] = useState<string | null>(null);
+  const list = hubs.filter((h, i) => !reg || NOMAD_HUBS[i].region === reg);
+  return (
+    <div className="vz-stack">
+      <Chips scroll>
+        <Chip on={!reg} onClick={() => setReg('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</Chip>
+        {regions.map((r) => {
+          const loc = hubs[NOMAD_HUBS.findIndex((h) => h.region === r)]?.region || r;
+          return <Chip key={r} on={reg === r} onClick={() => setReg(r)}>{loc}</Chip>;
+        })}
+      </Chips>
+      <div className="vz-grid two">
+        {list.map((h) => (
+          <Card key={h.id} eyebrow={h.visaName} title={getCountryName(h.countryCode, language)} icon="laptop" actions={<Flag code={h.countryCode} />}>
+            <div className="vz-stats">
+              <Stat value={h.monthlyLivingCost} label={l('Aylık yaşam', 'Monthly cost', 'Monatlich', 'Coste mensual', 'В месяц')} />
+              <Stat value={h.duration} label={l('Vize süresi', 'Visa length', 'Dauer', 'Duración', 'Срок')} />
+            </div>
+            <p className="vz-muted">{l('Gelir şartı', 'Income needed', 'Einkommen', 'Ingresos', 'Доход')}: <b style={{ color: 'var(--rd-fg)' }}>{h.incomeRequired}</b></p>
+            <Tags items={h.popularHubs} />
+            {open === h.id && (
+              <div className="vz-stack" style={{ gap: 10 }}>
+                <p>{h.lifestyleVibe}</p>
+                <p className="vz-muted">{h.internetAndCoworking}</p>
+                <Bullets items={h.keyRequirements} />
+                <p className="vz-muted">{l('Vergi', 'Tax', 'Steuern', 'Impuestos', 'Налоги')}: {h.taxRegime}</p>
+              </div>
+            )}
+            <div className="vz-actions">
+              <Btn variant="soft" small onClick={() => setOpen(open === h.id ? null : h.id)}>{open === h.id ? l('Daha az', 'Less', 'Weniger', 'Menos', 'Меньше') : l('Ayrıntılar', 'Details', 'Details', 'Detalles', 'Подробнее')}</Btn>
+              <Btn variant="ghost" small onClick={() => onOpenCountry(h.countryCode)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'País', 'Страна')}</Btn>
+              {h.officialUrl && <LinkBtn href={h.officialUrl} small variant="link">{l('Resmî site', 'Official site', 'Offiziell', 'Oficial', 'Сайт')}</LinkBtn>}
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+/* ---------------- Saat dilimleri ---------------- */
+const TzView: React.FC<{ home: string }> = ({ home }) => {
+  const { l, language } = useI18n();
+  const hubs = useMemo(() => ALL_WORLD_HUBS.slice().sort((a, b) => (language === 'tr' ? a.cityTr || a.city : a.city).localeCompare(language === 'tr' ? b.cityTr || b.city : b.city, language)), [language]);
+  const homeHub = hubs.find((h) => h.iso === home) || hubs.find((h) => h.city === 'Istanbul') || hubs[0];
+  const [cities, setCities] = useState<string[]>(() => [homeHub.city, 'Bangkok', 'New York'].filter((c, i, a) => a.indexOf(c) === i && hubs.some((h) => h.city === c)));
+  const [now, setNow] = useState(() => new Date());
+  useEffect(() => {
+    const t = setInterval(() => setNow(new Date()), 30000);
+    return () => clearInterval(t);
+  }, []);
+  const sel = cities.map((c) => hubs.find((h) => h.city === c)!).filter(Boolean);
+  const hourIn = (tz: string, d: Date) => Number(new Intl.DateTimeFormat('en-GB', { timeZone: tz, hour: '2-digit', hour12: false }).format(d)) % 24;
+  // ortak uyanık saatler (08–22) — 24 saatlik dilimde, ilk şehre göre
+  const base = new Date(now);
+  base.setMinutes(0, 0, 0);
+  const slots = Array.from({ length: 24 }, (_, i) => new Date(base.getTime() + i * 3600000));
+  const ok = (d: Date) => sel.every((h) => {
+    const hr = hourIn(h.tz, d);
+    return hr >= 8 && hr < 22;
+  });
+  const name = (h: (typeof hubs)[number]) => (language === 'tr' ? h.cityTr || h.city : h.city);
+  return (
+    <div className="vz-stack">
+      <div className="vz-grid">
+        {sel.map((h, i) => (
+          <div key={h.city} className="vz-stat">
+            <span className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+              <span className="vz-row-flex" style={{ gap: 6, fontWeight: 600 }}><span aria-hidden="true">{h.flag}</span>{name(h)}</span>
+              {i > 0 && <button type="button" className="vz-iconbtn" style={{ width: 32, height: 32 }} onClick={() => setCities(cities.filter((c) => c !== h.city))} aria-label={l('Kaldır', 'Remove', 'Entfernen', 'Quitar', 'Убрать')}><Icon name="close" size={14} duo={false} /></button>}
+            </span>
+            <b>{new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : language, { timeZone: h.tz, hour: '2-digit', minute: '2-digit' }).format(now)}</b>
+            <span>{new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : language, { timeZone: h.tz, weekday: 'long' }).format(now)}</span>
+          </div>
+        ))}
+      </div>
+      {cities.length < 4 && (
+        <Field label={l('Şehir ekle', 'Add a city', 'Stadt hinzufügen', 'Añadir ciudad', 'Добавить город')} htmlFor="vz-tz-add">
+          <select id="vz-tz-add" className="vz-select" value="" onChange={(e) => e.target.value && setCities([...cities, e.target.value])}>
+            <option value="">{l('Şehir seç…', 'Choose a city…', 'Stadt wählen…', 'Elige ciudad…', 'Выберите город…')}</option>
+            {hubs.filter((h) => !cities.includes(h.city)).map((h) => <option key={h.city + h.tz} value={h.city}>{name(h)}</option>)}
+          </select>
+        </Field>
+      )}
+      <Card title={l('Herkesin uyanık olduğu saatler', 'Hours when everyone is awake', 'Gemeinsame Wachzeiten', 'Horas comunes', 'Общие часы')} icon="clock" tone="sea">
+        <div className="vz-hours" role="img" aria-label={l('Önümüzdeki 24 saat', 'Next 24 hours', 'Nächste 24 Stunden', 'Próximas 24 horas', 'Ближайшие 24 часа')}>
+          {slots.map((d, i) => <i key={i} className={ok(d) ? 'on' : ''} title={new Intl.DateTimeFormat('en-GB', { timeZone: sel[0]?.tz, hour: '2-digit', minute: '2-digit' }).format(d)} />)}
+        </div>
+        <p className="vz-muted" style={{ fontSize: 13 }}>
+          {l(`Önümüzdeki 24 saat, ${sel[0] ? name(sel[0]) : ''} saatine göre. Renkli dilimler 08:00–22:00 arasında herkesin uyanık olduğu saatler.`, `Next 24 hours in ${sel[0] ? name(sel[0]) : ''} time. Coloured blocks are when everyone is between 08:00 and 22:00.`, 'Nächste 24 Std.; farbige Blöcke = alle zwischen 8 und 22 Uhr wach.', 'Próximas 24 h; los bloques de color son horas comunes de 8 a 22.', 'Цветные блоки — время, когда все бодрствуют (8–22).')}
+        </p>
+      </Card>
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ */
+export const RoutePage: React.FC<{ passport: string; openRequest: OpenRequest; onOpenCountry: (c: string) => void }> = ({ passport, openRequest, onOpenCountry }) => {
+  const { l, language } = useI18n();
+  const r = useRoute(passport, language);
+  const [req, setReq] = useState<OpenRequest>(null);
+  useEffect(() => {
+    if (openRequest) setReq(openRequest);
+  }, [openRequest?.nonce]); // eslint-disable-line react-hooks/exhaustive-deps
+  const go = (id: string) => setReq({ id, nonce: Date.now() });
+
+  const tiles: Tile[] = [
+    { id: 'planner', icon: 'route', title: l('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador', 'Планировщик'), desc: l('Durak, tarih, vize kontrolü', 'Stops, dates, visa check', 'Stopps, Daten, Visa', 'Paradas, fechas, visados', 'Остановки, даты, визы'), badge: r.stops.length ? `${r.stops.length}` : undefined, render: () => <PlannerView r={r} passport={passport} onOpenCountry={onOpenCountry} onGoMap={() => go('map')} /> },
+    { id: 'map', icon: 'map', title: l('Rota haritası', 'Route map', 'Routenkarte', 'Mapa de ruta', 'Карта маршрута'), desc: l('Harita ve zaman çizelgesi', 'Map and timeline', 'Karte und Zeitleiste', 'Mapa y cronología', 'Карта и хронология'), render: () => <MapView r={r} home={passport} /> },
+    { id: 'presets', icon: 'flag', title: l('Hazır rotalar', 'Ready-made routes', 'Fertige Routen', 'Rutas listas', 'Готовые маршруты'), desc: l('Tek dokunuşla yükle', 'Load in one tap', 'Mit einem Tipp laden', 'Carga con un toque', 'В одно касание'), render: () => <PresetsView r={r} passport={passport} onLoaded={() => go('planner')} /> },
+    { id: 'transit', icon: 'transit', title: l('Transit kuralları', 'Transit rules', 'Transitregeln', 'Reglas de tránsito', 'Транзит'), desc: l('Aktarmada vize gerekir mi?', 'Visa for a layover?', 'Visum beim Umstieg?', '¿Visado en escala?', 'Виза при пересадке?'), render: () => <TransitView passport={passport} /> },
+    { id: 'nomad', icon: 'laptop', title: l('Göçebe merkezleri', 'Nomad hubs', 'Nomaden-Hubs', 'Centros nómada', 'Хабы кочевников'), desc: l('Vizeler, maliyetler, şehirler', 'Visas, costs, cities', 'Visa, Kosten, Städte', 'Visados, costes', 'Визы, расходы'), render: () => <NomadView onOpenCountry={onOpenCountry} /> },
+    { id: 'tz', icon: 'clock', title: l('Saat dilimleri', 'Time zones', 'Zeitzonen', 'Husos horarios', 'Часовые пояса'), desc: l('Ortak uyanık saatler', 'Shared waking hours', 'Gemeinsame Zeiten', 'Horas comunes', 'Общие часы'), render: () => <TzView home={passport} /> }
+  ];
+
+  const sch = r.sch;
+  return (
+    <Page
+      eyebrow={l('Rota', 'Route', 'Route', 'Ruta', 'Маршрут')}
+      title={l('Rotanı birlikte çizelim', 'Let’s draw your route', 'Lass uns deine Route planen', 'Tracemos tu ruta', 'Построим маршрут')}
+      sub={l('Durakları ekle; her ülkede vize ve kalış kuralı kendiliğinden kontrol edilsin.', 'Add your stops and every visa and stay rule is checked for you.', 'Stopps hinzufügen – Visaregeln werden automatisch geprüft.', 'Añade paradas y comprobamos visados y estancias.', 'Добавьте остановки — правила проверим сами.')}
+      words={['Japan', 'Italy', 'Mexico', 'Greece']}
+      summary={
+        <div className="vz-cfacts">
+          <Stat value={r.stops.length} label={l('Durak', 'Stops', 'Stopps', 'Paradas', 'Остановки')} icon="pin" />
+          <Stat value={r.totalDays} label={l('Toplam gün', 'Total days', 'Tage gesamt', 'Días', 'Дней')} icon="cal" />
+          <Stat value={`${sch.peak180Days}/90`} label={l('Schengen günü', 'Schengen days', 'Schengen-Tage', 'Días Schengen', 'Дни Шенгена')} icon="shield" tone={sch.exceedsLimit ? 'warn' : 'ok'} />
+          <Stat value={r.stops[0] ? formatLocalizedDate(dateToDayIndex(r.stops[0].entryDate), language) : '—'} label={l('Başlangıç', 'Starts', 'Start', 'Inicio', 'Начало')} icon="plane" tone="sun" />
+        </div>
+      }
+    >
+      <TileGrid tiles={tiles} openRequest={req} label={l('Rota araçları', 'Route tools', 'Routen-Tools', 'Herramientas', 'Инструменты')} defaultOpen={r.stops.length ? 'planner' : undefined} />
+      {r.stops.length === 0 && (
+        <section className="vz-home-sec">
+          <span className="vz-eyebrow">{l('İlham', 'Inspiration', 'Inspiration', 'Inspiración', 'Идеи')}</span>
+          <div className="vz-cgrid">
+            {['GE', 'TH', 'JP', 'PT'].map((c) => <CountryCard key={c} code={c} item={getPassportItems(passport).find((x) => x.c === c)} onOpen={onOpenCountry} />)}
+          </div>
+        </section>
+      )}
+    </Page>
+  );
+};
