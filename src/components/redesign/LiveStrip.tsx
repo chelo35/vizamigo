@@ -8,6 +8,8 @@ import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../.
 import { getCountryName, getCategoryBadgeLabel } from '../../data/passportData';
 import { getPassportItems } from '../../utils/calculator';
 import { loadStoredRouteStops } from '../../utils/storage';
+import { TileArt } from '../../next/TileArt';
+import { Flag } from '../../next/ui';
 
 const DEST_KEY = 'vz_destination_v1';
 
@@ -31,18 +33,42 @@ interface Props {
 }
 
 function WeatherGlyph({ code, isDay }: { code: number; isDay: boolean }) {
+  const uid = React.useId().replace(/:/g, '');
   const rain = code >= 51 && code <= 82;
+  const snow = code >= 71 && code <= 77;
+  const storm = code >= 95;
   const cloud = code >= 2;
+  const showSun = !cloud || code === 2;
   return (
-    <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true" className="rd-wx">
-      {!cloud || code === 2 ? (
-        isDay ? <g className="rd-wx-sun"><circle cx="24" cy="22" r="11" /></g> : <path className="rd-wx-moon" d="M30 10a13 13 0 1 0 8 23 11 11 0 0 1-8-23z" />
-      ) : null}
-      {cloud && <path className="rd-wx-cloud" d="M16 40h24a8 8 0 0 0 0-16 11 11 0 0 0-21-2 8 8 0 0 0-3 18z" />}
-      {rain && <path className="rd-wx-rain" d="M20 44l-2 5M28 44l-2 5M36 44l-2 5" />}
+    <svg width="58" height="58" viewBox="0 0 58 58" aria-hidden="true" className="rd-wx">
+      <defs>
+        <radialGradient id={`s${uid}`} cx=".4" cy=".35" r=".7"><stop offset="0" stopColor="#FFE58A" /><stop offset="1" stopColor="#F7A21B" /></radialGradient>
+        <linearGradient id={`c${uid}`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#FFFFFF" /><stop offset="1" stopColor="#D9E6EE" /></linearGradient>
+        <linearGradient id={`m${uid}`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FFF1C9" /><stop offset="1" stopColor="#E9C77A" /></linearGradient>
+      </defs>
+      {showSun && (isDay ? (
+        <g className="rd-wx-sun">
+          <g stroke="#F7B733" strokeWidth="2.6" strokeLinecap="round" opacity=".9">
+            <path d="M24 5v4M24 35v4M7 22h4M37 22h4M12 10l2.8 2.8M33.2 31.2L36 34M12 34l2.8-2.8M33.2 12.8L36 10" />
+          </g>
+          <circle cx="24" cy="22" r="9.5" fill={`url(#s${uid})`} />
+        </g>
+      ) : (
+        <path d="M30 8a14 14 0 1 0 10 24 12 12 0 0 1-10-24z" fill={`url(#m${uid})`} />
+      ))}
+      {cloud && (
+        <g filter="drop-shadow(0 3px 4px rgba(20,40,60,.18))">
+          <path d="M17 44h25a9 9 0 0 0 0-18 12 12 0 0 0-23-2 9 9 0 0 0-2 20z" fill={`url(#c${uid})`} />
+        </g>
+      )}
+      {rain && !snow && <path d="M22 48l-2 6M30 48l-2 6M38 48l-2 6" stroke="#3A9BD9" strokeWidth="2.6" strokeLinecap="round" />}
+      {snow && <g fill="#9CCBEA"><circle cx="22" cy="51" r="2" /><circle cx="30" cy="53" r="2" /><circle cx="38" cy="51" r="2" /></g>}
+      {storm && <path d="M30 44l-5 8h5l-3 6 8-10h-5l3-4z" fill="#FFC83D" />}
     </svg>
   );
 }
+
+const LOCALE: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
 
 export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinationChange, onOpenRoutePlanner }) => {
   const { l, language } = useI18n();
@@ -75,7 +101,6 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
 
   const homeCur = GLOBAL_CURRENCIES[passport]?.code || 'USD';
   const destCur = GLOBAL_CURRENCIES[destination]?.code || 'USD';
-  const destSym = GLOBAL_CURRENCIES[destination]?.symbol || destCur;
   const homeSym = GLOBAL_CURRENCIES[passport]?.symbol || homeCur;
   const rate = USD_RATES[homeCur] && USD_RATES[destCur] ? getCrossRate(homeCur, destCur) : 0;
 
@@ -101,7 +126,27 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
   const nextStop = stops.filter((s) => s.entryDate >= today).sort((a, b) => a.entryDate.localeCompare(b.entryDate))[0];
   const daysTo = nextStop ? Math.max(0, Math.round((Date.parse(nextStop.entryDate) - Date.parse(today)) / 86400000)) : null;
 
-  const fmtRate = (n: number) => (n >= 100 ? n.toFixed(0) : n >= 10 ? n.toFixed(1) : n.toFixed(2)).replace('.', language === 'en' ? '.' : ',');
+  // kur: hedef para biriminin senin para birimindeki karşılığı (gerekirse 10, 100, 1.000 birim üzerinden)
+  const fx = useMemo(() => {
+    if (!rate) return null;
+    const loc = LOCALE[language] || 'en-GB';
+    const nf = (n: number, max = 2) => new Intl.NumberFormat(loc, { minimumFractionDigits: n >= 100 ? 0 : 2, maximumFractionDigits: n >= 100 ? 0 : max }).format(n);
+    const perDest = 1 / rate; // 1 hedef = ? ev
+    let unit = 1;
+    while (perDest * unit < 1 && unit < 1e6) unit *= 10;
+    const reverseVal = rate;
+    let destName = destCur;
+    try {
+      destName = new Intl.DisplayNames([loc], { type: 'currency' }).of(destCur) || destCur;
+      destName = destName.charAt(0).toLocaleUpperCase(loc) + destName.slice(1);
+    } catch {}
+    return {
+      unitText: new Intl.NumberFormat(loc).format(unit),
+      value: nf(perDest * unit),
+      reverse: reverseVal >= 1000 ? new Intl.NumberFormat(loc, { maximumFractionDigits: 0 }).format(reverseVal) : new Intl.NumberFormat(loc, { maximumSignificantDigits: 3 }).format(reverseVal),
+      destName
+    };
+  }, [rate, language, destCur]);
 
   const destOptions = useMemo(
     () => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((a, b) => a.n.localeCompare(b.n, language)),
@@ -120,7 +165,7 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
       </div>
       <div className="rd-strip-row">
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-eyebrow">{l(`${cityName} saati`, `${cityName} time`, `Zeit in ${cityName}`, `Hora en ${cityName}`, `Время: ${cityName}`)}</span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
+          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="clock" size={30} /><span className="rd-eyebrow">{l(`${cityName} saati`, `${cityName} time`, `Zeit in ${cityName}`, `Hora en ${cityName}`, `Время: ${cityName}`)}</span></span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
           <div className="rd-clock">
             <svg width="62" height="62" viewBox="0 0 64 64" role="img" aria-label={`${cityName} ${hh}:${String(mm).padStart(2, '0')}`}>
               <circle cx="32" cy="32" r="29" className="rd-clock-face" />
@@ -133,25 +178,31 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
             <div>
               <div className="rd-big">{`${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`}<small>:{String(ss).padStart(2, '0')}</small></div>
               <div className="rd-sub">
-                {l('Senin saatin', 'Your time', 'Deine Zeit', 'Tu hora', 'Ваше время')} {homeTime} ·{' '}
+                {l('Senin saatin', 'Your time', 'Deine Zeit', 'Tu hora', 'Ваше время')} {homeTime}
+              </div>
+              <span className={`rd-chip-mini${diff === 0 ? '' : ' alt'}`}>
                 {diff === 0
                   ? l('aynı saat', 'same time', 'gleiche Zeit', 'misma hora', 'то же время')
                   : diff > 0
                   ? l(`${diff} saat ileride`, `${diff} h ahead`, `${diff} Std. voraus`, `${diff} h por delante`, `на ${diff} ч впереди`)
                   : l(`${-diff} saat geride`, `${-diff} h behind`, `${-diff} Std. zurück`, `${-diff} h por detrás`, `на ${-diff} ч позади`)}
-              </div>
+              </span>
             </div>
           </div>
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-eyebrow">{l(`${cityName} hava`, `${cityName} weather`, `Wetter ${cityName}`, `Tiempo en ${cityName}`, `Погода: ${cityName}`)}</span>{w && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
+          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="sun" size={30} /><span className="rd-eyebrow">{l(`${cityName} hava`, `${cityName} weather`, `Wetter ${cityName}`, `Tiempo en ${cityName}`, `Погода: ${cityName}`)}</span></span>{w && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
           {w ? (
             <div className="rd-wxrow">
               <WeatherGlyph code={w.code} isDay={w.isDay} />
               <div>
                 <div className="rd-big">{w.tempC}°</div>
-                <div className="rd-sub">{(weatherCodeInfo(w.code, w.isDay) as any)[language] || weatherCodeInfo(w.code, w.isDay).en} · {l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущается')} {w.feelsLikeC}° · %{w.humidity}</div>
+                <div className="rd-sub">{(weatherCodeInfo(w.code, w.isDay) as any)[language] || weatherCodeInfo(w.code, w.isDay).en}</div>
+                <div className="rd-chips-mini">
+                  <span className="rd-chip-mini">{l('Hissedilen', 'Feels', 'Gefühlt', 'Sensación', 'Ощущ.')} {w.feelsLikeC}°</span>
+                  <span className="rd-chip-mini">{l('Nem', 'Humidity', 'Feuchte', 'Humedad', 'Влажн.')} {language === 'tr' ? `%${w.humidity}` : `${w.humidity}%`}</span>
+                </div>
               </div>
             </div>
           ) : (
@@ -169,14 +220,39 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-eyebrow">{l('Kur', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')} · {homeCur} → {destCur}</span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
-          <div className="rd-big">{!rate ? '—' : rate < 0.1 ? `1 ${destSym} = ${fmtRate(1 / rate)} ${homeSym}` : `1 ${homeSym} = ${fmtRate(rate)} ${destSym}`}</div>
-          <div className="rd-sub">{rate ? `100 ${destSym} ≈ ${fmtRate(100 / rate)} ${homeSym}` : l('Kur bilgisi yükleniyor', 'Rate loading', 'Kurs lädt', 'Cargando', 'Загрузка')}</div>
+          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="fx" size={30} /><span className="rd-eyebrow">{l('Döviz kuru', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')}</span></span>{rate > 0 && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
+          {fx ? (
+            homeCur === destCur ? (
+              <>
+                <div className="rd-fx-pair"><Flag code={destination} size="sm" /><b>{destCur}</b></div>
+                <div className="rd-big rd-big-sm">{l('Aynı para birimi', 'Same currency', 'Gleiche Währung', 'Misma moneda', 'Та же валюта')}</div>
+                <div className="rd-sub">{fx.destName}</div>
+              </>
+            ) : (
+              <>
+                <div className="rd-fx-pair">
+                  <Flag code={destination} size="sm" /><b>{destCur}</b>
+                  <span className="rd-fx-arrow" aria-hidden="true">→</span>
+                  <Flag code={passport} size="sm" /><b>{homeCur}</b>
+                </div>
+                <div className="rd-fx-big">
+                  <small>{fx.unitText} {destCur} =</small>
+                  <span>{fx.value} <em>{homeSym}</em></span>
+                </div>
+                <div className="rd-sub">{fx.destName} · 1 {homeSym} = {fx.reverse} {destCur}</div>
+              </>
+            )
+          ) : (
+            <>
+              <div className="rd-big rd-big-sm">—</div>
+              <div className="rd-sub">{l('Kur bilgisi yükleniyor', 'Rate loading', 'Kurs lädt', 'Cargando', 'Загрузка')}</div>
+            </>
+          )}
         </div>
 
         <div className="rd-card rd-kpi">
           <div className="rd-kpi-h">
-            <span className="rd-eyebrow">{l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд')}</span>
+            <span className="rd-kpi-t"><TileArt name="passport" size={30} /><span className="rd-eyebrow">{l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд')}</span></span>
             <span className={`rd-tag ${visa && (visa.cat === 'free' || visa.id) ? 'ok' : visa && visa.cat === 'visa' ? 'warn' : ''}`}>{getCategoryBadgeLabel(visa || null, language)}</span>
           </div>
           {daysTo !== null && nextStop ? (

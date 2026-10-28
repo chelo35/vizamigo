@@ -801,5 +801,32 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
   .vz-page-body .rd-pass .rd-pp-l2 { font-size: 10px; letter-spacing: 0.14em; }
   .vz-page-body .rd-pass .rd-pp-l1 { font-size: 8px; }
   .vz-page-body .rd-pass .rd-pp-chip { width: 18px; height: 13px; }
-  .vz-page-body .rd-pass .rd-pass-info .vz-actions { margin-left: -120px; }
+  /* başlık pasaportun üstünde, kapak solda + çubuklar sağda, düğmeler altta (simetrik) */
+  .vz-page-body .rd-pass { grid-template-columns: 104px 1fr; grid-template-areas: 'eye eye' 'ttl ttl' 'cov sub' 'cov bars' 'act act'; row-gap: 8px; column-gap: 16px; }
+  .vz-page-body .rd-pass .rd-pass-info { display: contents; }
+  .vz-page-body .rd-pass .rd-pp-stage { grid-area: cov; align-self: start; }
+  .vz-page-body .rd-pass .rd-pass-info > .vz-eyebrow { grid-area: eye; }
+  .vz-page-body .rd-pass .rd-pass-info > h2 { grid-area: ttl; margin-bottom: 4px; }
+  .vz-page-body .rd-pass .rd-pass-info > .rd-sub { grid-area: sub; margin: 0; }
+  .vz-page-body .rd-pass .rd-pass-info > .rd-bars { grid-area: bars; align-self: end; }
+  .vz-page-body .rd-pass .rd-pass-info > .vz-actions { grid-area: act; margin-top: 8px; }
 }
+
+/* Canlı şerit: başlık simgeleri, kur kartı, küçük etiketler */
+.rd-kpi-t { display: inline-flex; align-items: center; gap: 9px; min-width: 0; }
+.rd-kpi-t .vz-art { filter: drop-shadow(0 2px 4px rgba(20, 40, 60, 0.12)); }
+.rd-kpi-t .rd-eyebrow { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rd-chips-mini { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.rd-chip-mini { display: inline-flex; align-items: center; margin-top: 6px; font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: var(--rd-surface-2); color: var(--rd-muted); white-space: nowrap; }
+.rd-chips-mini .rd-chip-mini { margin-top: 0; }
+.rd-chip-mini.alt { background: var(--rd-sea-soft); color: var(--rd-sea-ink); }
+.rd-fx-pair { display: flex; align-items: center; gap: 6px; font-size: 12.5px; letter-spacing: 0.04em; color: var(--rd-muted); }
+.rd-fx-pair b { font-weight: 700; color: var(--rd-fg); }
+.rd-fx-pair .vz-flag.sm img, .rd-fx-pair .vz-flag.sm { width: 20px; height: 20px; }
+.rd-fx-arrow { color: var(--rd-sea); font-weight: 700; margin: 0 2px; }
+.rd-fx-big { display: flex; flex-direction: column; gap: 0; line-height: 1.05; }
+.rd-fx-big small { font-size: 13px; font-weight: 600; color: var(--rd-muted); font-variant-numeric: tabular-nums; }
+.rd-fx-big span { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--rd-fg); }
+.rd-fx-big em { font-style: normal; font-size: 20px; font-weight: 700; color: var(--rd-sea); margin-left: 2px; }
+.rd-clock .rd-clock-face { stroke-width: 2.5; }
+.rd-clock .rd-clock-h, .rd-clock .rd-clock-m { stroke: var(--rd-sea-ink, var(--rd-fg)); }
