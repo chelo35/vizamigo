@@ -652,18 +652,10 @@ export async function processAssistantQuery(
       label: isTr ? '💱 Canlı Döviz Radarı' : '💱 Live FX Radar',
       accentTone: 'teal'
     };
-    const wiseAction: AssistantActionPill = {
-      id: 'aff-wise',
-      type: 'affiliate',
-      url: 'https://wise.com',
-      badge: isTr ? 'Sıfır Komisyon' : 'Zero Markup',
-      label: isTr ? '💳 Wise Çoklu Döviz Kartı Al' : '💳 Get Wise Travel Card',
-      accentTone: 'sky'
-    };
-    actions.push(fxAction, wiseAction);
+    actions.push(fxAction);
 
     const text = isTr
-      ? `💱 **Canlı Seyahat Döviz Kurları:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**\n\nYurt dışı harcamalarınızda yüksek banka döviz komisyonlarından kaçınmak için Wise çok para birimli dijital kartını kullanabilirsiniz.`
+      ? `💱 **Canlı Seyahat Döviz Kurları:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**`
       : `💱 **Live Baseline Travel Rates:**\n\n• **1 USD = ${usdRate} TRY**\n• **1 EUR = ${eurRate} TRY**`;
 
     return {
@@ -1239,15 +1231,7 @@ export async function processAssistantQuery(
       norm.includes('maliyet') ||
       norm.includes('butce')
     ) {
-      const wiseCardAction: AssistantActionPill = {
-        id: 'aff-wise',
-        type: 'affiliate',
-        url: 'https://wise.com',
-        badge: isTr ? 'Sıfır Komisyon' : 'Zero Markup',
-        label: isTr ? '💳 Wise Çoklu Döviz Kartı Al' : '💳 Get Wise Travel Card',
-        accentTone: 'sky'
-      };
-      actions.push(primaryDossierAction, wiseCardAction);
+      actions.push(primaryDossierAction);
 
       const costs = insights?.livingCosts;
 

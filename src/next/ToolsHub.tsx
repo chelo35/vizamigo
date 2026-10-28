@@ -7,6 +7,7 @@ import { PlugDiagram } from './PlugDiagram';
 import { DEFAULT_PACKING_ITEMS, TripStyle } from '../components/tools/PackingListModal';
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName, DIGITAL_NOMAD_VISAS, AFFILIATE_PARTNERS, getLocalizedPartner } from '../data/passportData';
+import { PartnerLogo } from './PartnerLogo';
 import { GEO_DATA } from '../data/geoData';
 import { GLOBAL_CURRENCIES } from '../data/countryGeography';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
@@ -344,8 +345,7 @@ const PlugView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
   const { l, language } = useI18n();
   const intel = useMemo(() => getCountryTravelIntelligence(dest, getCountryName(dest, 'en')), [dest]);
   const ins = useMemo(() => getCountryInsights(dest, language), [dest, language]);
-  const esim = AFFILIATE_PARTNERS.find((a) => /esim/i.test(a.category + a.title));
-  const x = esim ? getLocalizedPartner(esim, language) : null;
+  const esims = AFFILIATE_PARTNERS.filter((a) => /esim/i.test(a.category + a.title));
   return (
     <div className="vz-stack">
       <DestSelect id="vz-plug-d" value={dest} onChange={setDest} />
@@ -368,8 +368,13 @@ const PlugView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
       <p>{intel.plugs.socketDesc}</p>
       {intel.connectivity.topCarriers.length > 0 && <Card title={l('Operatörler', 'Carriers', 'Anbieter', 'Operadores', 'Операторы')} icon="phone"><Tags items={intel.connectivity.topCarriers} /></Card>}
       {intel.connectivity.airportSimTrapWarning && <div className="vz-note"><Icon name="alert" size={18} duo={false} /><span>{intel.connectivity.airportSimTrapWarning}</span></div>}
-      {x && esim && (
-        <Card tone="sea" icon="wifi" eyebrow={x.category} title={x.title}><p className="vz-muted">{x.desc}</p><LinkBtn href={esim.url} small variant="primary">{x.linkText}</LinkBtn></Card>
+      {esims.length > 0 && (
+        <div className="vz-grid">
+          {esims.map((e) => {
+            const x = getLocalizedPartner(e, language);
+            return <Card key={e.url} tone="sea" lead={<PartnerLogo url={e.url} size={40} fallback="wifi" />} eyebrow={x.category} title={x.title}><p className="vz-muted">{x.desc}</p><LinkBtn href={e.url} small variant="primary">{x.linkText}</LinkBtn></Card>;
+          })}
+        </div>
       )}
     </div>
   );

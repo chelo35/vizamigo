@@ -1,3 +1,4 @@
+import { tpLinks } from '../data/tpPartners';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
@@ -333,18 +334,15 @@ const LegLink: React.FC<{ from: string; to: string; date: string }> = ({ from, t
     : mode === 'train' ? l('Tren', 'Train', 'Zug', 'Tren', 'Поезд')
     : mode === 'ferry' ? l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром')
     : l('Otobüs / araba', 'Bus / car', 'Bus / Auto', 'Bus / coche', 'Автобус / авто');
-  const enFrom = getCountryName(from, 'en'), enTo = getCountryName(to, 'en');
-  const href =
-    mode === 'flight' && a && b
-      ? `https://www.google.com/travel/flights?q=${encodeURIComponent(`Flights from ${a} to ${b} on ${date}`)}&hl=${language}`
-      : `https://www.rome2rio.com/map/${encodeURIComponent(enFrom)}/${encodeURIComponent(enTo)}`;
+  // Para kazandıran ortak aramaları (Travelpayouts): uçuşta Aviasales, karada Omio / 12Go / Kiwi
+  const href = mode === 'flight' && a && b ? tpLinks.flights(a.split('/')[0], b.split('/')[0], date) : tpLinks.ground(from, to).url;
   return (
     <div className="vz-leg">
       <Icon name={mode === 'flight' ? 'plane' : mode === 'ferry' ? 'ship' : mode === 'train' ? 'transit' : 'car'} size={16} duo={false} />
       <span>
         {label} · {fmtNum(Math.round(leg.distanceKm), language)} km · ~{leg.estimatedTransitHours} {l('sa', 'h', 'Std.', 'h', 'ч')}
       </span>
-      <a href={href} target="_blank" rel="noopener noreferrer">{mode === 'flight' ? l('Bilet ara', 'Find tickets', 'Tickets suchen', 'Buscar billetes', 'Найти билеты') : l('Yol bul', 'Find a way', 'Weg finden', 'Ver opciones', 'Как добраться')} ↗</a>
+      <a href={href} target="_blank" rel="noopener noreferrer sponsored">{mode === 'flight' ? l('Bilet ara', 'Find tickets', 'Tickets suchen', 'Buscar billetes', 'Найти билеты') : l('Yol bul', 'Find a way', 'Weg finden', 'Ver opciones', 'Как добраться')} ↗</a>
     </div>
   );
 };

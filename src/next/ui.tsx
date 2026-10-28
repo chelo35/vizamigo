@@ -1,5 +1,6 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Icon, IconName } from './Icon';
+import { tpIdFromUrl } from '../data/tpPartners';
 import { useI18n } from '../data/i18n';
 import { FlyingBanner } from '../components/redesign/FlyingBanner';
 import { CountryItem, getCategoryBadgeLabel } from '../data/passportData';
@@ -20,7 +21,7 @@ export const Btn: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement> & { var
 );
 
 export const LinkBtn: React.FC<{ href: string; children: React.ReactNode; variant?: BtnVariant; icon?: IconName; small?: boolean }> = ({ href, children, variant = 'soft', icon = 'external', small }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer sponsored" className={`vz-btn vz-btn-${variant}${small ? ' sm' : ''}`}>
+  <a href={href} target="_blank" rel={tpIdFromUrl(href) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'} className={`vz-btn vz-btn-${variant}${small ? ' sm' : ''}`}>
     <span>{children}</span>
     <Icon name={icon} size={small ? 15 : 17} duo={false} />
   </a>
@@ -71,13 +72,13 @@ export const SearchInput: React.FC<{ id: string; value: string; onChange: (v: st
   </div>
 );
 
-export const Card: React.FC<{ title?: string; eyebrow?: string; icon?: IconName; actions?: React.ReactNode; children: React.ReactNode; tone?: 'plain' | 'sea' | 'sun' | 'warn' | 'ok'; className?: string; id?: string }> = ({
-  title, eyebrow, icon, actions, children, tone = 'plain', className = '', id
+export const Card: React.FC<{ title?: string; eyebrow?: string; icon?: IconName; lead?: React.ReactNode; actions?: React.ReactNode; children: React.ReactNode; tone?: 'plain' | 'sea' | 'sun' | 'warn' | 'ok'; className?: string; id?: string }> = ({
+  title, eyebrow, icon, lead, actions, children, tone = 'plain', className = '', id
 }) => (
   <section className={`vz-card tone-${tone} ${className}`} id={id}>
     {(title || eyebrow || actions) && (
       <header className="vz-card-h">
-        {icon && <span className="vz-ic">{<Icon name={icon} size={20} />}</span>}
+        {lead ? lead : icon && <span className="vz-ic">{<Icon name={icon} size={20} />}</span>}
         <div className="vz-card-ht">
           {eyebrow && <span className="vz-eyebrow" lang={/^[\x00-\x7F]+$/.test(eyebrow) ? 'en' : undefined}>{eyebrow}</span>}
           {title && <h3>{title}</h3>}
@@ -109,7 +110,7 @@ export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: Rea
       {(onClick || href) && !right && <Icon name={href ? 'external' : 'next'} size={18} duo={false} className="vz-row-go" />}
     </>
   );
-  if (href) return <a className="vz-row link" href={href} target="_blank" rel="noopener noreferrer">{inner}</a>;
+  if (href) return <a className="vz-row link" href={href} target="_blank" rel={tpIdFromUrl(href) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}>{inner}</a>;
   if (onClick) return <button type="button" className="vz-row link" onClick={onClick}>{inner}</button>;
   return <div className="vz-row">{inner}</div>;
 };

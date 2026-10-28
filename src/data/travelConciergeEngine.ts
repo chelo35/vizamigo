@@ -16,8 +16,9 @@
 
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
+import { TP, tpLinks, type TpId } from './tpPartners';
 
-export type ConciergeStageId = 'flights' | 'accommodation' | 'transit' | 'essentials';
+export type ConciergeStageId = 'flights' | 'accommodation' | 'transit' | 'activities' | 'essentials';
 
 export interface ConciergePartnerNode {
   id: string;
@@ -197,73 +198,6 @@ const AIRALO_SLUG_OVERRIDES: Record<string, string> = {
   JO: 'jordan'
 };
 
-/**
- * Maps ISO country codes to their primary spoken language for Preply 1-on-1 tutor links
- */
-interface PreplyLanguageMapping {
-  slug: string;
-  langNameTr: string;
-  langNameEn: string;
-}
-
-const PREPLY_LANGUAGE_MAP: Record<string, PreplyLanguageMapping> = {
-  TH: { slug: 'thai', langNameTr: 'Tayca', langNameEn: 'Thai' },
-  JP: { slug: 'japanese', langNameTr: 'Japonca', langNameEn: 'Japanese' },
-  KR: { slug: 'korean', langNameTr: 'Korece', langNameEn: 'Korean' },
-  CN: { slug: 'chinese', langNameTr: 'Çince (Mandarin)', langNameEn: 'Mandarin Chinese' },
-  TW: { slug: 'chinese', langNameTr: 'Çince (Mandarin)', langNameEn: 'Mandarin Chinese' },
-  HK: { slug: 'chinese', langNameTr: 'Kantonca / Çince', langNameEn: 'Cantonese / Chinese' },
-  VN: { slug: 'vietnamese', langNameTr: 'Vietnamca', langNameEn: 'Vietnamese' },
-  ID: { slug: 'indonesian', langNameTr: 'Endonezce', langNameEn: 'Indonesian' },
-  MY: { slug: 'malay', langNameTr: 'Malayca / İngilizce', langNameEn: 'Malay / English' },
-  DE: { slug: 'german', langNameTr: 'Almanca', langNameEn: 'German' },
-  AT: { slug: 'german', langNameTr: 'Almanca', langNameEn: 'German' },
-  CH: { slug: 'german', langNameTr: 'Almanca / Fransızca', langNameEn: 'German / French' },
-  FR: { slug: 'french', langNameTr: 'Fransızca', langNameEn: 'French' },
-  BE: { slug: 'french', langNameTr: 'Fransızca / Felemenkçe', langNameEn: 'French / Dutch' },
-  ES: { slug: 'spanish', langNameTr: 'İspanyolca', langNameEn: 'Spanish' },
-  MX: { slug: 'spanish', langNameTr: 'İspanyolca', langNameEn: 'Spanish' },
-  AR: { slug: 'spanish', langNameTr: 'İspanyolca', langNameEn: 'Spanish' },
-  CO: { slug: 'spanish', langNameTr: 'İspanyolca', langNameEn: 'Spanish' },
-  CL: { slug: 'spanish', langNameTr: 'İspanyolca', langNameEn: 'Spanish' },
-  PE: { slug: 'spanish', langNameTr: 'İspanyolca', langNameEn: 'Spanish' },
-  IT: { slug: 'italian', langNameTr: 'İtalyanca', langNameEn: 'Italian' },
-  PT: { slug: 'portuguese', langNameTr: 'Portekizce', langNameEn: 'Portuguese' },
-  BR: { slug: 'portuguese', langNameTr: 'Portekizce', langNameEn: 'Portuguese' },
-  GR: { slug: 'greek', langNameTr: 'Yunanca', langNameEn: 'Greek' },
-  CY: { slug: 'greek', langNameTr: 'Yunanca', langNameEn: 'Greek' },
-  RU: { slug: 'russian', langNameTr: 'Rusça', langNameEn: 'Russian' },
-  KZ: { slug: 'russian', langNameTr: 'Rusça / Kazakça', langNameEn: 'Russian / Kazakh' },
-  UZ: { slug: 'russian', langNameTr: 'Özbekçe / Rusça', langNameEn: 'Uzbek / Russian' },
-  GE: { slug: 'georgian', langNameTr: 'Gürcüce / Rusça', langNameEn: 'Georgian' },
-  AZ: { slug: 'turkish', langNameTr: 'Azerbaycan Türkçesi', langNameEn: 'Azerbaijani' },
-  TR: { slug: 'turkish', langNameTr: 'Türkçe', langNameEn: 'Turkish' },
-  AE: { slug: 'arabic', langNameTr: 'Arapça / İngilizce', langNameEn: 'Arabic' },
-  SA: { slug: 'arabic', langNameTr: 'Arapça', langNameEn: 'Arabic' },
-  EG: { slug: 'arabic', langNameTr: 'Arapça', langNameEn: 'Arabic' },
-  MA: { slug: 'arabic', langNameTr: 'Arapça / Fransızca', langNameEn: 'Arabic / French' },
-  QA: { slug: 'arabic', langNameTr: 'Arapça', langNameEn: 'Arabic' },
-  JO: { slug: 'arabic', langNameTr: 'Arapça', langNameEn: 'Arabic' },
-  NL: { slug: 'dutch', langNameTr: 'Felemenkçe', langNameEn: 'Dutch' },
-  PL: { slug: 'polish', langNameTr: 'Lehçe', langNameEn: 'Polish' },
-  CZ: { slug: 'czech', langNameTr: 'Çekçe', langNameEn: 'Czech' },
-  HU: { slug: 'hungarian', langNameTr: 'Macarca', langNameEn: 'Hungarian' },
-  RO: { slug: 'romanian', langNameTr: 'Rumence', langNameEn: 'Romanian' },
-  BG: { slug: 'bulgarian', langNameTr: 'Bulgarca', langNameEn: 'Bulgarian' },
-  RS: { slug: 'serbian', langNameTr: 'Sırpça', langNameEn: 'Serbian' },
-  BA: { slug: 'serbian', langNameTr: 'Boşnakça', langNameEn: 'Bosnian' },
-  ME: { slug: 'serbian', langNameTr: 'Karadağca', langNameEn: 'Montenegrin' },
-  HR: { slug: 'croatian', langNameTr: 'Hırvatça', langNameEn: 'Croatian' },
-  AL: { slug: 'albanian', langNameTr: 'Arnavutça', langNameEn: 'Albanian' },
-  XK: { slug: 'albanian', langNameTr: 'Arnavutça', langNameEn: 'Albanian' },
-  SE: { slug: 'swedish', langNameTr: 'İsveççe', langNameEn: 'Swedish' },
-  NO: { slug: 'norwegian', langNameTr: 'Norveççe', langNameEn: 'Norwegian' },
-  DK: { slug: 'danish', langNameTr: 'Danca', langNameEn: 'Danish' },
-  FI: { slug: 'finnish', langNameTr: 'Fince', langNameEn: 'Finnish' },
-  UA: { slug: 'ukrainian', langNameTr: 'Ukraynaca', langNameEn: 'Ukrainian' },
-  IL: { slug: 'hebrew', langNameTr: 'İbranice', langNameEn: 'Hebrew' },
-  IN: { slug: 'hindi', langNameTr: 'Hintçe / İngilizce', langNameEn: 'Hindi / English' }
-};
 
 function getRegionCluster(code: string): CountryConciergePlan['regionCluster'] {
   const c = code.toUpperCase();
@@ -369,560 +303,250 @@ export function getCountryConciergePlan(
   const capitalEn = geo?.capital || countryNameEn;
   const regionCluster = getRegionCluster(code);
 
-  // ============================================================================
-  // STAGE 1: FLIGHT, RAIL & FERRY BOOKING (WayAway, Aviasales, Trip.com & Omio)
-  // ============================================================================
-  const flightPartnersRaw: ConciergePartnerNode[] = [
-    {
-      id: 'wayaway',
-      brand: 'WayAway & Aviasales',
-      stage: 'flights',
-      badgeTr: '%5 Nakit İadeli Uçuş',
-      badgeEn: '5% Cashback Flights',
-      taglineTr: `${mainHub} Havalimanı En Ucuz Ay Boyu Uçuş Radarı & Cashback`,
-      taglineEn: `Cheapest Month Radar & Cashback to ${mainHub} (${capitalEn})`,
-      ctaTr: `${countryNameTr} Uçuşlarını Tara`,
-      ctaEn: `Search ${countryNameEn} Flights`,
-      url: `https://wayaway.io/flights?destination=${encodeURIComponent(mainHub)}&utm_source=vizamigo&utm_medium=travelpayouts&utm_campaign=concierge_${code.toLowerCase()}`,
-      networkTag: 'Travelpayouts',
-      priority: 1,
-      accentTone: 'teal'
-    },
-    {
-      id: 'tripcom',
-      brand: 'Trip.com (Uçuş & Hızlı Tren)',
-      stage: 'flights',
-      badgeTr: 'Uçak + Tren + Otel İndirimi',
-      badgeEn: 'Flight + Rail + Hotel Deals',
-      taglineTr: `${mainHub} direkt uçuşlar, hızlı tren biletleri ve VIP lounge ödülleri`,
-      taglineEn: `Direct flights, high-speed rail tickets & VIP lounge perks to ${mainHub}`,
-      ctaTr: 'Trip.com Fiyatlarını Gör',
-      ctaEn: 'Check Trip.com Deals',
-      url: `https://www.trip.com/flights/?utm_source=vizamigo&utm_campaign=concierge_${code.toLowerCase()}`,
-      networkTag: 'Trip.com Partner',
-      priority: 2,
-      accentTone: 'slate'
-    },
-    {
-      id: 'omio_ferry',
-      brand: 'Omio & Ferryhopper (Tren/Feribot)',
-      stage: 'flights',
-      badgeTr: 'Tren, Feribot & Otobüs',
-      badgeEn: 'Rail, Ferry & Coach',
-      taglineTr: `${countryNameTr} içi ve komşu ülkelerden hızlı tren, ada feribotu ve otobüs biletleri`,
-      taglineEn: `High-speed trains, island ferries & intercity buses across ${countryNameEn}`,
-      ctaTr: 'Tren & Feribot Biletleri',
-      ctaEn: 'Search Rail & Ferries',
-      url: `https://www.omio.com/?utm_source=vizamigo`,
-      networkTag: 'Omio Rail & Ferry',
-      priority: 3,
-      accentTone: 'coral'
-    }
-  ];
+  const isAsia = regionCluster === 'asia_pacific';
+  const isEurope = regionCluster === 'europe';
+  const homeHub = (GEO_DATA[origin]?.mainHub || '').split('/')[0];
+    const node = (
+    id: TpId,
+    stage: ConciergeStageId,
+    priority: number,
+    url: string,
+    t: { bTr: string; bEn: string; tTr: string; tEn: string; cTr: string; cEn: string },
+    brand?: string,
+    accentTone: ConciergePartnerNode['accentTone'] = 'teal'
+  ): ConciergePartnerNode => ({
+    id,
+    brand: brand || TP[id].name,
+    stage,
+    badgeTr: t.bTr,
+    badgeEn: t.bEn,
+    taglineTr: t.tTr,
+    taglineEn: t.tEn,
+    ctaTr: t.cTr,
+    ctaEn: t.cEn,
+    url,
+    networkTag: 'Travelpayouts',
+    priority,
+    accentTone
+  });
 
+  // ============================================================================
+  // 1. UÇUŞ, TREN, OTOBÜS (Aviasales, Trip.com, Kiwi.com, Omio / 12Go)
+  // ============================================================================
+  const groundId: TpId = isAsia ? 'twelvego' : 'omio';
+  const flightPartnersRaw: ConciergePartnerNode[] = [
+    node('aviasales', 'flights', 1, tpLinks.flights(homeHub, mainHub), {
+      bTr: 'En ucuz uçuş', bEn: 'Cheapest flights',
+      tTr: `${homeHub ? homeHub + ' → ' : ''}${mainHub} uçuşlarını yüzlerce havayolu arasında karşılaştır`,
+      tEn: `Compare ${homeHub ? homeHub + ' → ' : ''}${mainHub} fares across hundreds of airlines`,
+      cTr: `${countryNameTr} uçuşlarını ara`, cEn: `Search ${countryNameEn} flights`
+    }),
+    node('tripcom', 'flights', 2, tpLinks.tripFlights(), {
+      bTr: 'Uçak + otel', bEn: 'Flight + hotel',
+      tTr: `${mainHub} uçuşları, paket indirimleri ve esnek bilet seçenekleri`,
+      tEn: `Flights to ${mainHub}, bundle deals and flexible tickets`,
+      cTr: 'Trip.com fiyatlarını gör', cEn: 'Check Trip.com deals'
+    }, undefined, 'slate'),
+    node('kiwi', 'flights', 3, tpLinks.kiwi(), {
+      bTr: 'Akıllı aktarma', bEn: 'Smart layovers',
+      tTr: 'Farklı havayollarını birleştirip daha ucuz aktarmalı rotalar bulur',
+      tEn: 'Combines different airlines into cheaper multi-carrier routes',
+      cTr: 'Kiwi.com’da ara', cEn: 'Search on Kiwi.com'
+    }, undefined, 'amber'),
+    node(groundId, 'flights', 4, groundId === 'twelvego' ? 'https://12go.asia/en' : 'https://www.omio.com/', {
+      bTr: 'Tren, otobüs, feribot', bEn: 'Rail, bus & ferry',
+      tTr: `${countryNameTr} içinde ve komşu ülkelere tren, otobüs ve feribot biletleri`,
+      tEn: `Trains, buses and ferries within and around ${countryNameEn}`,
+      cTr: 'Kara yolu biletleri', cEn: 'Ground transport tickets'
+    }, undefined, 'coral')
+  ];
   const flightPartners = applyRestrictedBrandAlgorithm(flightPartnersRaw, code, origin);
 
   // ============================================================================
-  // STAGE 2: ACCOMMODATION (Agoda for Asia, Booking/Expedia for Europe, Hostelworld for budget)
+  // 2. KONAKLAMA (Asya'da Agoda önde; diğer yerlerde Booking.com)
   // ============================================================================
-  const isAsia = regionCluster === 'asia_pacific';
-
   const accommodationPartnersRaw: ConciergePartnerNode[] = [
-    {
-      id: 'agoda',
-      brand: 'Agoda',
-      stage: 'accommodation',
-      badgeTr: isAsia ? 'Asya #1 Lideri' : 'Asya & Global İndirim',
-      badgeEn: isAsia ? '#1 Asia Market Leader' : 'Global Secret Deals',
-      taglineTr: isAsia
-        ? `${countryNameTr} genelinde yerel otel ve rezidanslarda en derin indirim`
-        : `${capitalEn} otellerinde mobil özel fiyatlar`,
-      taglineEn: isAsia
-        ? `Deepest local hotel & resort inventory across ${countryNameEn}`
-        : `Exclusive mobile rates in ${capitalEn}`,
-      ctaTr: 'Agoda’da Otelleri Gör',
-      ctaEn: 'Explore on Agoda',
-      url: `https://www.agoda.com/search?text=${encodeURIComponent(countryNameEn)}&cid=vizamigo_${code.toLowerCase()}`,
-      networkTag: 'Agoda Partners',
-      priority: isAsia ? 1 : 3,
-      accentTone: isAsia ? 'teal' : 'slate'
-    },
-    {
-      id: 'booking',
-      brand: 'Booking.com',
-      stage: 'accommodation',
-      badgeTr: isAsia ? 'Esnek İptal' : 'Avrupa & Global #1',
-      badgeEn: isAsia ? 'Free Cancellation' : '#1 Europe & Global Leader',
-      taglineTr: `${capitalEn} ve turistik bölgelerde ücretsiz iptalli konaklama`,
-      taglineEn: `Verified stays with free cancellation in ${capitalEn}`,
-      ctaTr: 'Booking.com’da İncele',
-      ctaEn: 'Book on Booking.com',
-      url: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(countryNameEn)}&aid=vizamigo_${code.toLowerCase()}`,
-      networkTag: 'Booking Affiliate',
-      priority: isAsia ? 2 : 1,
-      accentTone: isAsia ? 'slate' : 'teal'
-    },
-    {
-      id: 'expedia',
-      brand: 'Expedia',
-      stage: 'accommodation',
-      badgeTr: 'Uçak + Otel Paketi',
-      badgeEn: 'Bundle & Save',
-      taglineTr: `${countryNameTr} butik otelleri ve üye indirimleri`,
-      taglineEn: `Member-only hotel discounts across ${countryNameEn}`,
-      ctaTr: 'Expedia Fırsatları',
-      ctaEn: 'View Expedia Stays',
-      url: `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(countryNameEn)}&affcid=vizamigo_${code.toLowerCase()}`,
-      networkTag: 'Expedia Group',
-      priority: isAsia ? 4 : 2,
-      accentTone: 'slate'
-    },
-    {
-      id: 'hostelworld',
-      brand: 'Hostelworld',
-      stage: 'accommodation',
-      badgeTr: 'Bütçe & Dijital Göçebe',
-      badgeEn: 'Budget & Nomad Social',
-      taglineTr: `${capitalEn} sosyal hostelleri ve ortak çalışma alanlı konaklama`,
-      taglineEn: `Top-rated social hostels & coworking stays in ${capitalEn}`,
-      ctaTr: 'Hostelworld’de Keşfet',
-      ctaEn: 'Find Hostels',
-      url: `https://www.hostelworld.com/st/hostels/${encodeURIComponent(countryNameEn.toLowerCase().replace(/\s+/g, '-'))}/?affiliate=vizamigo`,
-      networkTag: 'Hostelworld Partner',
-      priority: isAsia ? 3 : 4,
-      accentTone: 'coral'
-    }
+    node('booking', 'accommodation', isAsia ? 2 : 1, tpLinks.booking(`${capitalEn}, ${countryNameEn}`), {
+      bTr: 'Ücretsiz iptal', bEn: 'Free cancellation',
+      tTr: `${capitalEn} otelleri; vize başvurusunda konaklama kanıtı olarak da işe yarar`,
+      tEn: `Hotels in ${capitalEn}; also handy as proof of stay for visa applications`,
+      cTr: 'Otel ara', cEn: 'Find hotels'
+    }),
+    node('agoda', 'accommodation', isAsia ? 1 : 2, tpLinks.agoda(), {
+      bTr: isAsia ? 'Asya’nın 1 numarası' : 'Gizli indirimler', bEn: isAsia ? '#1 in Asia' : 'Secret deals',
+      tTr: isAsia ? `${countryNameTr} genelinde otel ve rezidanslarda en derin indirimler` : `${capitalEn} otellerinde mobil özel fiyatlar`,
+      tEn: isAsia ? `Deepest hotel and residence discounts across ${countryNameEn}` : `Mobile-only hotel prices in ${capitalEn}`,
+      cTr: 'Agoda fiyatları', cEn: 'Agoda prices'
+    }, undefined, 'coral'),
+    node('tripcom', 'accommodation', 3, tpLinks.tripHotels(), {
+      bTr: 'Uçakla birlikte al', bEn: 'Bundle with flights',
+      tTr: 'Uçuşla birlikte alınca ekstra indirimli oteller',
+      tEn: 'Extra hotel discounts when booked with a flight',
+      cTr: 'Trip.com otelleri', cEn: 'Trip.com hotels'
+    }, undefined, 'slate'),
+    node('expedia', 'accommodation', 4, tpLinks.expedia(`${capitalEn}, ${countryNameEn}`), {
+      bTr: 'Paket tatil', bEn: 'Package deals',
+      tTr: 'Otel + uçuş paketleri ve üye fiyatları',
+      tEn: 'Hotel + flight packages and member prices',
+      cTr: 'Expedia’da ara', cEn: 'Search Expedia'
+    }, undefined, 'amber'),
+    node('hostelworld', 'accommodation', 5, tpLinks.hostelworld(), {
+      bTr: 'Bütçe dostu', bEn: 'Budget friendly',
+      tTr: 'Hostel ve sosyal konaklamalar; yalnız gezginler ve göçebeler için',
+      tEn: 'Hostels and social stays for solo travellers and nomads',
+      cTr: 'Hostel bul', cEn: 'Find hostels'
+    }, undefined, 'teal')
   ];
-
-  // If target is Turkey (TR), Booking.com is domestically restricted -> pushed to 3rd priority slot automatically
   const accommodationPartners = applyRestrictedBrandAlgorithm(accommodationPartnersRaw, code, origin);
 
   // ============================================================================
-  // STAGE 3: ON-ARRIVAL TRANSIT (Kiwitaxi/GetTransfer + Hyper-Local Ride-Hailing)
+  // 3. VARIŞ: HAVALİMANI TRANSFERİ VE ARAÇ KİRALAMA
   // ============================================================================
   const transitPartnersRaw: ConciergePartnerNode[] = [
-    {
-      id: 'kiwitaxi',
-      brand: 'Kiwitaxi',
-      stage: 'transit',
-      badgeTr: `${mainHub} Havalimanı Karşılama`,
-      badgeEn: `${mainHub} Airport Pickup`,
-      taglineTr: `${mainHub} çıkışında isminizle karşılama ve sabit fiyatlı transfer`,
-      taglineEn: `Fixed-price meet & greet transfer from ${mainHub} Airport`,
-      ctaTr: 'Havalimanı Transferi Ayarla',
-      ctaEn: 'Book Airport Pickup',
-      url: `https://kiwitaxi.com/search?from=${encodeURIComponent(mainHub + ' Airport')}&to=${encodeURIComponent(capitalEn)}&utm_source=vizamigo`,
-      networkTag: 'Travelpayouts Transit',
-      priority: 2,
-      accentTone: 'slate'
-    },
-    {
-      id: 'gettransfer',
-      brand: 'GetTransfer',
-      stage: 'transit',
-      badgeTr: 'VIP & Şehirlerarası Teklif',
-      badgeEn: 'Bidded Private Transfers',
-      taglineTr: `${countryNameTr} içi özel şoförlü transferlerde sürücü tekliflerini seçin`,
-      taglineEn: `Compare local driver bids for airport & intercity rides`,
-      ctaTr: 'Transfer Tekliflerini Gör',
-      ctaEn: 'Get Transfer Bids',
-      url: `https://gettransfer.com/en?from=${encodeURIComponent(mainHub)}&utm_source=vizamigo`,
-      networkTag: 'GetTransfer Partner',
-      priority: 4,
-      accentTone: 'slate'
-    }
+    node('kiwitaxi', 'transit', 1, tpLinks.kiwitaxi(), {
+      bTr: 'Sabit fiyatlı transfer', bEn: 'Fixed-price transfer',
+      tTr: `${mainHub} havalimanından otele isimli karşılama, sabit fiyat`,
+      tEn: `Meet & greet from ${mainHub} airport to your hotel at a fixed price`,
+      cTr: 'Transfer ayarla', cEn: 'Book a transfer'
+    }),
+    node('discovercars', 'transit', 2, tpLinks.discovercars(countryNameEn), {
+      bTr: 'Araç kiralama', bEn: 'Car rental',
+      tTr: `${countryNameTr} genelinde yüzlerce kiralama şirketini karşılaştır`,
+      tEn: `Compare hundreds of rental companies across ${countryNameEn}`,
+      cTr: 'Araç kirala', cEn: 'Rent a car'
+    }, undefined, 'coral'),
+    node(isEurope ? 'welcomepickups' : 'gettransfer', 'transit', 3, isEurope ? tpLinks.welcomePickups() : tpLinks.gettransfer(), {
+      bTr: isEurope ? 'Yerel şoför' : 'Teklif al', bEn: isEurope ? 'Local driver' : 'Get offers',
+      tTr: isEurope ? 'Yerel şoförle havalimanı karşılama ve şehir rehberliği' : 'Şoförlerden teklif alarak en uygun transferi seç',
+      tEn: isEurope ? 'Airport pickup with a local driver and city tips' : 'Get offers from drivers and pick the best transfer',
+      cTr: 'Transfer seçenekleri', cEn: 'Transfer options'
+    }, undefined, 'slate'),
+    node('localrent', 'transit', 4, tpLinks.localrent(), {
+      bTr: 'Yerel kiralama', bEn: 'Local rentals',
+      tTr: 'Yerel firmalardan depozitosuz veya kartsız araç kiralama seçenekleri',
+      tEn: 'Local rental firms, often without deposit or credit card',
+      cTr: 'Yerel kiralama', cEn: 'Local rentals'
+    }, undefined, 'amber')
   ];
-
-  // Inject Hyper-Local Ride-Hailing Leaders per country/region
-  if (['TH', 'VN', 'MY', 'SG', 'PH', 'KH', 'LA', 'MM'].includes(code)) {
-    // Southeast Asia: Grab (#1) + Bolt (#2 in Thailand)
-    transitPartnersRaw.push({
-      id: 'grab',
-      brand: 'Grab',
-      stage: 'transit',
-      badgeTr: 'Bölge #1 Süper Uygulaması',
-      badgeEn: '#1 SEA Ride Superapp',
-      taglineTr: `${countryNameTr} içinde Uber yerine kullanılan resmi sabit fiyatlı taksi & ulaşım`,
-      taglineEn: `Replaces Uber in ${countryNameEn}: upfront fares & cashless rides`,
-      ctaTr: 'Grab ile Araç Çağır',
-      ctaEn: 'Open Grab Ride',
-      url: 'https://www.grab.com/global/transport/',
-      networkTag: 'Local Market Leader',
-      priority: 1,
-      accentTone: 'teal'
-    });
-    if (code === 'TH') {
-      transitPartnersRaw.push({
-        id: 'bolt',
-        brand: 'Bolt Thailand',
-        stage: 'transit',
-        badgeTr: 'Bangkok & Phuket Favorisi',
-        badgeEn: 'Top Value in Thailand',
-        taglineTr: 'Bangkok, Phuket ve Chiang Mai’de Grab’e göre %20 daha ekonomik alternatif',
-        taglineEn: 'Up to 20% cheaper rides in Bangkok, Phuket & Pattaya',
-        ctaTr: 'Bolt’u İndir / Aç',
-        ctaEn: 'Open Bolt App',
-        url: 'https://bolt.eu/en/cities/',
-        networkTag: 'Local Market Leader',
-        priority: 3,
-        accentTone: 'coral'
-      });
-    }
-  } else if (code === 'ID') {
-    // Indonesia: Gojek + Grab
-    transitPartnersRaw.push(
-      {
-        id: 'gojek',
-        brand: 'Gojek',
-        stage: 'transit',
-        badgeTr: 'Endonezya & Bali #1',
-        badgeEn: '#1 Indonesia & Bali App',
-        taglineTr: 'Bali ve Cakarta’da motosiklet/araç taksi ve yemek için vazgeçilmez uygulama',
-        taglineEn: 'Essential motorbike & car taxi superapp across Bali & Jakarta',
-        ctaTr: 'Gojek’i Aç',
-        ctaEn: 'Launch Gojek',
-        url: 'https://www.gojek.com/',
-        networkTag: 'Local Market Leader',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'grab',
-        brand: 'Grab Indonesia',
-        stage: 'transit',
-        badgeTr: 'Havalimanı Resmi Çıkış',
-        badgeEn: 'Official Airport Lounge',
-        taglineTr: 'Denpasar (DPS) ve Cakarta havalimanlarında özel Grab kalkış noktaları',
-        taglineEn: 'Dedicated airport pickup zones in Bali & Jakarta',
-        ctaTr: 'Grab’i Aç',
-        ctaEn: 'Open Grab',
-        url: 'https://www.grab.com/id/en/',
-        networkTag: 'Local Market Leader',
-        priority: 3,
-        accentTone: 'slate'
-      }
-    );
-  } else if (code === 'JP') {
-    // Japan: GO Taxi + Uber
-    transitPartnersRaw.push(
-      {
-        id: 'go_japan',
-        brand: 'GO Taxi Japan',
-        stage: 'transit',
-        badgeTr: 'Japonya #1 Resmi Taksi',
-        badgeEn: '#1 Licensed Japan Taxi',
-        taglineTr: 'Tokyo, Kyoto ve Osaka’da en geniş lisanslı taksi ağı',
-        taglineEn: 'Largest licensed taxi dispatch network across Japan',
-        ctaTr: 'GO Taxi’yi Aç',
-        ctaEn: 'Open GO Taxi',
-        url: 'https://go.goinc.jp/lp/inbound',
-        networkTag: 'Local Market Leader',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'uber',
-        brand: 'Uber Japan',
-        stage: 'transit',
-        badgeTr: 'Uluslararası Hesap',
-        badgeEn: 'Global Account Sync',
-        taglineTr: 'Tokyo ve Kyoto’da resmi taksileri mevcut Uber hesabınızla çağırın',
-        taglineEn: 'Hail licensed Japanese taxis with your existing Uber app',
-        ctaTr: 'Uber’i Aç',
-        ctaEn: 'Open Uber',
-        url: 'https://www.uber.com/jp/en/ride/',
-        networkTag: 'Global Ride Partner',
-        priority: 3,
-        accentTone: 'slate'
-      }
-    );
-  } else if (code === 'KR') {
-    // South Korea: Kakao T
-    transitPartnersRaw.push({
-      id: 'kakao_t',
-      brand: 'Kakao T',
-      stage: 'transit',
-      badgeTr: 'Güney Kore #1 Taksi',
-      badgeEn: '#1 Korea Mobility App',
-      taglineTr: 'Seul ve Busan’da yabancı kredi kartı destekli resmi taksi uygulaması',
-      taglineEn: 'Essential South Korea taxi app with foreign card support',
-      ctaTr: 'Kakao T’yi İncele',
-      ctaEn: 'Open Kakao T',
-      url: 'https://www.kakaomobility.com/',
-      networkTag: 'Local Market Leader',
-      priority: 1,
-      accentTone: 'teal'
-    });
-  } else if (CAUCASUS_CENTRAL_ASIA.has(code)) {
-    // Georgia, Azerbaijan, Kazakhstan, Uzbekistan: Bolt + Yandex Go
-    transitPartnersRaw.push(
-      {
-        id: 'bolt',
-        brand: 'Bolt',
-        stage: 'transit',
-        badgeTr: `${countryNameTr} #1 Favori`,
-        badgeEn: `#1 Rated in ${countryNameEn}`,
-        taglineTr: `${capitalEn} genelinde en hızlı araç bulma ve sabit kartlı ödeme`,
-        taglineEn: `Fastest dispatch and fixed card fares across ${capitalEn}`,
-        ctaTr: 'Bolt ile Araç Çağır',
-        ctaEn: 'Ride with Bolt',
-        url: 'https://bolt.eu/',
-        networkTag: 'Local Market Leader',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'yandex_go',
-        brand: 'Yandex Go',
-        stage: 'transit',
-        badgeTr: 'En Geniş Araç Filosu',
-        badgeEn: 'Largest Local Fleet',
-        taglineTr: 'Kafkaslar ve Orta Asya’da en düşük bekleme süreli taksi ağı',
-        taglineEn: 'Lowest wait times and budget fares across the region',
-        ctaTr: 'Yandex Go’yu Aç',
-        ctaEn: 'Open Yandex Go',
-        url: 'https://go.yandex.com/',
-        networkTag: 'Regional Leader',
-        priority: 3,
-        accentTone: 'slate'
-      }
-    );
-  } else if (MENA_DESTINATIONS.has(code)) {
-    // MENA: Careem + Uber
-    transitPartnersRaw.push(
-      {
-        id: 'careem',
-        brand: 'Careem',
-        stage: 'transit',
-        badgeTr: 'Orta Doğu #1 Resmi Taksi',
-        badgeEn: '#1 Middle East Superapp',
-        taglineTr: `${capitalEn} resmi taksileri ve özel araçlar için sabit fiyat garantisi`,
-        taglineEn: `Official Hala taxi & private car dispatch in ${capitalEn}`,
-        ctaTr: 'Careem’i Aç',
-        ctaEn: 'Open Careem',
-        url: 'https://www.careem.com/',
-        networkTag: 'Local Market Leader',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'uber',
-        brand: 'Uber',
-        stage: 'transit',
-        badgeTr: 'Global Standart',
-        badgeEn: 'Global Ride Standard',
-        taglineTr: `${capitalEn} genelinde uluslararası Uber hesabınızla kesintisiz ulaşım`,
-        taglineEn: `Seamless airport and city rides with your Uber account`,
-        ctaTr: 'Uber’i Aç',
-        ctaEn: 'Open Uber',
-        url: 'https://www.uber.com/',
-        networkTag: 'Global Ride Partner',
-        priority: 3,
-        accentTone: 'slate'
-      }
-    );
-  } else if (code === 'TR') {
-    // Turkey: BiTaksi (#1) + Kiwitaxi (#2) + Uber (Restricted / 3rd slot)
-    transitPartnersRaw.push(
-      {
-        id: 'bitaksi',
-        brand: 'BiTaksi',
-        stage: 'transit',
-        badgeTr: 'Türkiye #1 Resmi Taksi',
-        badgeEn: '#1 Turkey Official Taxi',
-        taglineTr: 'İstanbul, Ankara ve Antalya’da resmi sarı/turkuaz taksi çağırma',
-        taglineEn: 'Official metered yellow & turquoise taxis with card payment',
-        ctaTr: 'BiTaksi’yi Aç',
-        ctaEn: 'Open BiTaksi',
-        url: 'https://www.bitaksi.com/',
-        networkTag: 'Local Market Leader',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'uber',
-        brand: 'Uber Türkiye',
-        stage: 'transit',
-        badgeTr: 'Sarı & Siyah Taksi Ağı',
-        badgeEn: 'Licensed Taxi Dispatch',
-        taglineTr: 'Uluslararası Uber uygulamasıyla İstanbul ve Antalya’da taksi çağırın',
-        taglineEn: 'Hail licensed municipal taxis via your global Uber app',
-        ctaTr: 'Uber’i Aç',
-        ctaEn: 'Open Uber',
-        url: 'https://www.uber.com/tr/en/ride/',
-        networkTag: 'Global Ride Partner',
-        priority: 3,
-        accentTone: 'slate'
-      }
-    );
-  } else if (['ES', 'PT', 'AR', 'CL', 'CO', 'PE', 'UY', 'MX'].includes(code)) {
-    // Iberia & LatAm: Cabify + Uber + Bolt
-    transitPartnersRaw.push(
-      {
-        id: 'uber',
-        brand: 'Uber',
-        stage: 'transit',
-        badgeTr: 'Avrupa & LatAm Lideri',
-        badgeEn: 'Primary Ride Network',
-        taglineTr: `${capitalEn} havalimanı ve şehir içinde anında sabit fiyatlı araç`,
-        taglineEn: `Instant upfront-fare rides across ${capitalEn}`,
-        ctaTr: 'Uber ile Çağır',
-        ctaEn: 'Ride with Uber',
-        url: 'https://www.uber.com/',
-        networkTag: 'Global Ride Partner',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'cabify',
-        brand: 'Cabify',
-        stage: 'transit',
-        badgeTr: 'İspanya & LatAm Yerel Lider',
-        badgeEn: 'Iberia & LatAm Leader',
-        taglineTr: `${countryNameTr} genelinde lisanslı yerel sürücüler ve sabit tarife`,
-        taglineEn: `Top local ride-hailing leader across ${countryNameEn}`,
-        ctaTr: 'Cabify’ı Aç',
-        ctaEn: 'Open Cabify',
-        url: 'https://cabify.com/',
-        networkTag: 'Local Market Leader',
-        priority: 3,
-        accentTone: 'coral'
-      }
-    );
-  } else {
-    // Rest of Europe, Americas, Africa: Uber (if operating) + Bolt / FREENOW
-    transitPartnersRaw.push(
-      {
-        id: 'uber',
-        brand: 'Uber',
-        stage: 'transit',
-        badgeTr: 'Uluslararası Araç Ağı',
-        badgeEn: 'Global Ride Standard',
-        taglineTr: `${capitalEn} genelinde mevcut Uber hesabınızla sabit fiyatlı ulaşım`,
-        taglineEn: `Direct cashless rides across ${capitalEn}`,
-        ctaTr: 'Uber’i Aç',
-        ctaEn: 'Open Uber',
-        url: 'https://www.uber.com/',
-        networkTag: 'Global Ride Partner',
-        priority: 1,
-        accentTone: 'teal'
-      },
-      {
-        id: 'bolt',
-        brand: 'Bolt',
-        stage: 'transit',
-        badgeTr: 'Avrupa Hızlı Taksi',
-        badgeEn: 'Fast European Dispatch',
-        taglineTr: `${countryNameTr} şehirlerinde hızlı araç bulma ve ekonomik tarife`,
-        taglineEn: `Fast driver dispatch and competitive fares in ${countryNameEn}`,
-        ctaTr: 'Bolt’u Aç',
-        ctaEn: 'Open Bolt',
-        url: 'https://bolt.eu/',
-        networkTag: 'Regional Leader',
-        priority: 2,
-        accentTone: 'coral'
-      }
-    );
-  }
-
-  // Apply Restricted/Banned Brand Algorithm (automatically strips Uber if in UBER_FOLDED_OR_INACTIVE_COUNTRIES)
   const transitPartners = applyRestrictedBrandAlgorithm(transitPartnersRaw, code, origin);
 
   // ============================================================================
-  // STAGE 4: ESSENTIALS (Airalo eSIM pre-mapped to country + Preply Language Tutor)
+  // 4. TUR, MÜZE VE AKTİVİTE
+  // ============================================================================
+  const activityPartnersRaw: ConciergePartnerNode[] = [
+    node('getyourguide', 'activities', 1, tpLinks.getyourguide(countryNameEn), {
+      bTr: 'Ücretsiz iptal', bEn: 'Free cancellation',
+      tTr: `${countryNameTr} turları, müze biletleri ve günübirlik geziler`,
+      tEn: `Tours, museum tickets and day trips in ${countryNameEn}`,
+      cTr: 'Turlara bak', cEn: 'Browse tours'
+    }),
+    node('viator', 'activities', 2, tpLinks.viator(countryNameEn), {
+      bTr: 'Tripadvisor güvencesi', bEn: 'By Tripadvisor',
+      tTr: 'Gezgin yorumlarıyla seçilmiş deneyimler',
+      tEn: 'Experiences picked by traveller reviews',
+      cTr: 'Viator deneyimleri', cEn: 'Viator experiences'
+    }, undefined, 'coral'),
+    node(isAsia ? 'klook' : 'tiqets', 'activities', 3, isAsia ? tpLinks.klook() : tpLinks.tiqets(), {
+      bTr: isAsia ? 'Asya’da güçlü' : 'Sırasız giriş', bEn: isAsia ? 'Strong in Asia' : 'Skip the line',
+      tTr: isAsia ? 'Tema parkları, ulaşım kartları ve yerel aktiviteler' : 'Müze ve gezilecek yerlere sırasız, mobil bilet',
+      tEn: isAsia ? 'Theme parks, transport passes and local activities' : 'Skip-the-line mobile tickets to museums and sights',
+      cTr: isAsia ? 'Klook’a bak' : 'Tiqets biletleri', cEn: isAsia ? 'Browse Klook' : 'Tiqets tickets'
+    }, undefined, 'amber')
+  ];
+  const activityPartners = applyRestrictedBrandAlgorithm(activityPartnersRaw, code, origin);
+
+  // ============================================================================
+  // 5. İNTERNET (eSIM) VE GÜVENCE
   // ============================================================================
   const airaloSlug = getAiraloCountrySlug(code, countryNameEn);
-  const preplyLang = PREPLY_LANGUAGE_MAP[code] || {
-    slug: 'english',
-    langNameTr: 'Seyahat İngilizcesi',
-    langNameEn: 'Travel English'
-  };
-
   const essentialsPartnersRaw: ConciergePartnerNode[] = [
-    {
-      id: 'airalo',
-      brand: `Airalo ${countryNameEn} eSIM`,
-      stage: 'essentials',
-      badgeTr: 'Anında 5G/LTE eSIM',
-      badgeEn: 'Instant 5G/LTE eSIM',
-      taglineTr: `${countryNameTr} yerel operatör ağına havalimanına inmeden QR kodla bağlanın`,
-      taglineEn: `Pre-mapped to ${countryNameEn} local carrier networks—activate before takeoff`,
-      ctaTr: `${countryNameTr} eSIM Paketini Al`,
-      ctaEn: `Get ${countryNameEn} eSIM`,
-      url: `https://www.airalo.com/${airaloSlug}-esim?utm_source=vizamigo&utm_medium=affiliate&utm_campaign=esim_${code.toLowerCase()}`,
-      networkTag: 'Airalo Partner',
-      priority: 1,
-      accentTone: 'teal'
-    },
-    {
-      id: 'preply',
-      brand: `Preply · ${preplyLang.langNameEn}`,
-      stage: 'essentials',
-      badgeTr: `1’e 1 ${preplyLang.langNameTr} Pratiği`,
-      badgeEn: `1-on-1 ${preplyLang.langNameEn} Tutors`,
-      taglineTr: `Seyahat öncesi ana dili ${preplyLang.langNameTr} olan eğitmenlerle konuşma pratiği`,
-      taglineEn: `Practice real-world ${preplyLang.langNameEn} conversation with native tutors`,
-      ctaTr: `${preplyLang.langNameTr} Eğitmenlerini Gör`,
-      ctaEn: `Practice ${preplyLang.langNameEn} on Preply`,
-      url: `https://preply.com/en/online/${preplyLang.slug}-tutors?utm_source=vizamigo&utm_medium=affiliate&utm_campaign=lang_${code.toLowerCase()}`,
-      networkTag: 'Preply Affiliate',
-      priority: 2,
-      accentTone: 'coral'
-    }
+    node('yesim', 'essentials', 1, tpLinks.yesim(), {
+      bTr: 'Anında eSIM', bEn: 'Instant eSIM',
+      tTr: `${countryNameTr} için uçağa binmeden QR kodla kurulan internet paketi`,
+      tEn: `Data plan for ${countryNameEn}, installed by QR code before you fly`,
+      cTr: 'Yesim paketleri', cEn: 'Yesim plans'
+    }),
+    node('airalo', 'essentials', 2, tpLinks.airalo(airaloSlug), {
+      bTr: `${countryNameTr} eSIM`, bEn: `${countryNameEn} eSIM`,
+      tTr: `${countryNameTr} yerel operatör ağına bağlanan eSIM`,
+      tEn: `eSIM on ${countryNameEn} local carrier networks`,
+      cTr: `${countryNameTr} eSIM al`, cEn: `Get ${countryNameEn} eSIM`
+    }, `Airalo ${countryNameEn} eSIM`, 'coral'),
+    node('saily', 'essentials', 3, tpLinks.saily(), {
+      bTr: 'Reklam engelli', bEn: 'Ad-blocking',
+      tTr: 'NordVPN ekibinden, güvenlik özellikli eSIM',
+      tEn: 'eSIM with built-in security, by the NordVPN team',
+      cTr: 'Saily paketleri', cEn: 'Saily plans'
+    }, undefined, 'slate'),
+    node('airhelp', 'essentials', 4, tpLinks.airhelp(), {
+      bTr: '600 €’ya kadar', bEn: 'Up to €600',
+      tTr: 'Uçuşun gecikti, iptal oldu ya da bagajın kayboldu mu? Tazminatını talep et',
+      tEn: 'Flight delayed, cancelled or bag lost? Claim your compensation',
+      cTr: 'Tazminat sorgula', cEn: 'Check compensation'
+    }, undefined, 'amber'),
+    node('radicalstorage', 'essentials', 5, tpLinks.radicalStorage(), {
+      bTr: 'Bavul emanet', bEn: 'Luggage storage',
+      tTr: 'Otele girmeden ya da çıkıştan sonra şehirde bavulunu güvenle bırak',
+      tEn: 'Store your bags in the city before check-in or after check-out',
+      cTr: 'Emanet yeri bul', cEn: 'Find storage'
+    }, undefined, 'teal')
   ];
-
   const essentialsPartners = applyRestrictedBrandAlgorithm(essentialsPartnersRaw, code, origin);
 
   const stages: ConciergeStageGroup[] = [
     {
       stage: 'flights',
       stepNumber: '01',
-      titleTr: 'Uçuş & Rota Biletleme',
-      titleEn: 'Flight Booking',
-      subtitleTr: `${mainHub} Havalimanı doğrudan ve esnek tarihli uçuşlar`,
-      subtitleEn: `Direct & flexible-date airfare to ${mainHub}`,
+      titleTr: 'Uçuş ve yol biletleri',
+      titleEn: 'Flights & tickets',
+      subtitleTr: `${mainHub} havalimanına uçuşlar ve kara yolu biletleri`,
+      subtitleEn: `Flights to ${mainHub} and ground transport tickets`,
       primaryPartner: flightPartners[0],
       partners: flightPartners
     },
     {
       stage: 'accommodation',
       stepNumber: '02',
-      titleTr: 'Konaklama & Otel Liderleri',
-      titleEn: 'Accommodation Leaders',
-      subtitleTr: isAsia
-        ? 'Asya pazar lideri Agoda öncelikli konaklama ağı'
-        : 'Bölgesel pazar lideri otel ve göçebe konaklamaları',
-      subtitleEn: isAsia
-        ? 'Prioritized for Asia: Agoda + verified stays'
-        : 'Regional market leaders & budget nomad hostels',
+      titleTr: 'Konaklama',
+      titleEn: 'Accommodation',
+      subtitleTr: isAsia ? 'Asya’da Agoda önde; ücretsiz iptalli seçenekler' : 'Ücretsiz iptalli oteller ve bütçe dostu hosteller',
+      subtitleEn: isAsia ? 'Agoda leads in Asia; free-cancellation options' : 'Free-cancellation hotels and budget hostels',
       primaryPartner: accommodationPartners[0],
       partners: accommodationPartners
     },
     {
       stage: 'transit',
       stepNumber: '03',
-      titleTr: 'Varış Transferi & Yerel Taksi',
-      titleEn: 'On-Arrival Transit',
-      subtitleTr: `${mainHub} karşılama ve ülkede aktif çalışan araç uygulamaları`,
-      subtitleEn: `Airport pickup & active local ride-hailing leaders`,
+      titleTr: 'Transfer ve araç',
+      titleEn: 'Transfers & cars',
+      subtitleTr: `${mainHub} karşılama ve araç kiralama`,
+      subtitleEn: `${mainHub} airport pickup and car rental`,
       primaryPartner: transitPartners[0],
       partners: transitPartners
     },
     {
-      stage: 'essentials',
+      stage: 'activities',
       stepNumber: '04',
-      titleTr: 'Dijital Hat (eSIM) & Dil Pratiği',
-      titleEn: 'Connectivity & Language',
-      subtitleTr: `${countryNameTr} eSIM paketi ve yerel dil konuşma pratiği`,
-      subtitleEn: `Pre-mapped ${countryNameEn} eSIM & native language practice`,
+      titleTr: 'Turlar ve biletler',
+      titleEn: 'Tours & tickets',
+      subtitleTr: `${countryNameTr} turları, müzeler ve aktiviteler`,
+      subtitleEn: `Tours, museums and activities in ${countryNameEn}`,
+      primaryPartner: activityPartners[0],
+      partners: activityPartners
+    },
+    {
+      stage: 'essentials',
+      stepNumber: '05',
+      titleTr: 'İnternet ve güvence',
+      titleEn: 'Data & peace of mind',
+      subtitleTr: `${countryNameTr} eSIM, uçuş tazminatı ve bavul emanet`,
+      subtitleEn: `${countryNameEn} eSIM, flight compensation and luggage storage`,
       primaryPartner: essentialsPartners[0],
       partners: essentialsPartners
     }
   ];
 
-  const hasRegionalRestrictionAlert = stages.some((s) =>
-    s.partners.some((p) => p.isRestrictedInRegion)
-  );
+  const hasRegionalRestrictionAlert = stages.some((s) => s.partners.some((p) => p.isRestrictedInRegion));
 
   return {
     countryCode: code,

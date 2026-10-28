@@ -401,16 +401,16 @@ export const MASTER_APPS_DIRECTORY: Record<string, NomadAppInfo> = {
   // 4. UÇUŞ & ALTERNATİF KONAKLAMA (FLIGHTS & ALTERNATIVE STAYS)
   // =========================================================================
   WayAway: {
-    id: 'wayaway',
-    name: 'WayAway & Aviasales',
+    id: 'aviasales',
+    name: 'Aviasales',
     category: 'flights_hotels',
-    categoryLabelTr: 'Nakit İadeli (Cashback) Uçak Bileti',
-    categoryLabelEn: 'Cashback Flight Aggregator',
-    url: 'https://wayaway.io',
-    taglineTr: 'Tüm Havayollarını Tarar + %5 Nakit İade Verir',
-    taglineEn: 'Compares All Airlines with Up to 5% Cashback',
-    recommendedReasonTr: 'Esnek tarihli en ucuz uçuş radarı ve biletlemede gerçek nakit para iadesi.',
-    recommendedReasonEn: 'Finds the cheapest flight dates across 700+ airlines with cashback rewards.',
+    categoryLabelTr: 'Ucuz Uçak Bileti',
+    categoryLabelEn: 'Cheap Flights',
+    url: 'https://www.aviasales.com/',
+    taglineTr: 'Yüzlerce Havayolunu Tek Aramada Karşılaştırır',
+    taglineEn: 'Compares Hundreds of Airlines in One Search',
+    recommendedReasonTr: 'Esnek tarihli en ucuz uçuş takvimi ve fiyat alarmı.',
+    recommendedReasonEn: 'Cheapest-date calendar and price alerts across 700+ airlines.',
     logoText: 'Fly ✈️',
     logoBg: 'linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%)',
     logoColor: '#FFFFFF'
@@ -854,7 +854,6 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
   } else if (['GR', 'IT', 'ES', 'HR', 'PT', 'MT', 'CY'].includes(c)) {
     tryAdd('Uber');
     tryAdd('Bolt');
-    tryAdd('Ferryhopper');
     tryAdd('Omio');
     tryAdd('BikesBooking');
     tryAdd('Lime');
@@ -866,25 +865,21 @@ export function getCountryNomadApps(code: string, knownRideApps: string[] = []):
       tryAdd('InDrive');
     }
     tryAdd('Omio');
-    tryAdd('Trainline');
     tryAdd('Lime');
     tryAdd('DonkeyRepublic');
   }
 
   // 3. Always enrich with essential cross-border services so every country card/modal shows the full ecosystem
+  // Yalnızca Travelpayouts ortakları (her tıklama gelir sağlar)
   tryAdd('WayAway');
   tryAdd('TripCom');
   tryAdd('Booking');
   tryAdd('Airalo');
-  tryAdd('Wise');
-  tryAdd('SafetyWing');
   tryAdd('GetYourGuide');
   tryAdd('DiscoverCars');
-  tryAdd('BounceLuggage');
-  tryAdd('MeetupSocial');
-  tryAdd('PreplyLang');
   tryAdd('KiwitaxiVIP');
   tryAdd('AirHelp');
+  tryAdd('Radical');
 
   return result;
 }

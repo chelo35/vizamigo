@@ -11,7 +11,9 @@ import { CountryCard } from './country';
 import { countryToRegion } from '../data/passportData';
 import { SeaMap, MapPoint } from './SeaMap';
 import { loadCountryBundle, CountryBundle } from './countryData';
-import { getCountryName, INFO, getLocalizedPartner, AFFILIATE_PARTNERS } from '../data/passportData';
+import { getCountryName, INFO } from '../data/passportData';
+import { PartnerLogo } from './PartnerLogo';
+import { tpIdFromUrl } from '../data/tpPartners';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
 import { getCountryGeography, GLOBAL_CURRENCIES } from '../data/countryGeography';
@@ -307,7 +309,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     {
       id: 'easy', icon: 'sun',
       title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка'),
-      desc: l('Uçuş, otel, ulaşım, sigorta', 'Flights, stay, transfer, cover', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),
+      desc: l('Uçuş, otel, transfer, tur, eSIM', 'Flights, stay, transfer, cover', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),
       render: () => <EasyStages stages={concierge.stages} tr={tr} />
     },
     {
@@ -536,8 +538,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             )}
             <div className="vz-grid">
               {apps.map((a) => (
-                <a key={(a.id || a.name) + a.category} className="vz-app-card" href={a.url} target="_blank" rel="noopener noreferrer">
-                  <span className="vz-app-logo" style={{ background: a.logoBg, color: a.logoColor }}>{a.logoText}</span>
+                <a key={(a.id || a.name) + a.category} className="vz-app-card" href={a.url} target="_blank" rel={tpIdFromUrl(a.url) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}>
+                  <PartnerLogo url={a.url} size={44} name={a.name} fallback="phone" />
                   <span className="vz-stack" style={{ gap: 2 }}>
                     <small>{tr ? a.categoryLabelTr : a.categoryLabelEn}</small>
                     <b>{a.name}</b>
@@ -552,26 +554,17 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'partners', icon: 'bed', isNew: true,
-      title: l('Otel, uçuş, eSIM', 'Hotels, flights, eSIM', 'Hotels, Flüge, eSIM', 'Hoteles, vuelos, eSIM', 'Отели, авиа, eSIM'),
+      title: l('Uçuş, otel, tur, eSIM', 'Flights, hotels, tours, eSIM', 'Flüge, Hotels, Touren, eSIM', 'Vuelos, hoteles, tours, eSIM', 'Авиа, отели, туры, eSIM'),
       desc: l('Güvenilir iş ortakları', 'Trusted partners', 'Partner', 'Socios', 'Партнёры'),
       render: () => (
         <div className="vz-stack">
           <div className="vz-grid">
             {concierge.stages.flatMap((s) => s.partners.slice(0, 2)).map((pn) => (
-              <Card key={pn.id} eyebrow={tr ? pn.badgeTr : pn.badgeEn} title={pn.brand} icon={pn.stage === 'flights' ? 'plane' : pn.stage === 'accommodation' ? 'bed' : pn.stage === 'transit' ? 'car' : 'shield'}>
+              <Card key={pn.stage + pn.id} eyebrow={tr ? pn.badgeTr : pn.badgeEn} title={pn.brand} lead={<PartnerLogo id={pn.id} url={pn.url} size={40} />}>
                 <p className="vz-muted">{tr ? pn.taglineTr : pn.taglineEn}</p>
                 <LinkBtn href={pn.url} small variant="primary">{tr ? pn.ctaTr : pn.ctaEn}</LinkBtn>
               </Card>
             ))}
-            {AFFILIATE_PARTNERS.slice(0, 3).map((a) => {
-              const x = getLocalizedPartner(a, language);
-              return (
-                <Card key={a.url} eyebrow={x.category} title={x.title} icon="handshake">
-                  <p className="vz-muted">{x.desc}</p>
-                  <LinkBtn href={a.url} small variant="primary">{x.linkText}</LinkBtn>
-                </Card>
-              );
-            })}
           </div>
           <p className="vz-muted" style={{ fontSize: 12 }}>{l('Bu bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez, Vizamigo’nun ücretsiz kalmasına yardım eder.', 'These are partner links; your price stays the same and it keeps Vizamigo free.', 'Partnerlinks; der Preis bleibt gleich.', 'Enlaces de socios; el precio no cambia.', 'Партнёрские ссылки; цена не меняется.')}</p>
         </div>
@@ -833,7 +826,7 @@ const EasyStages: React.FC<{ stages: Stage[]; tr: boolean }> = ({ stages, tr }) 
               <p className="vz-muted" style={{ fontSize: 14 }}>{tr ? s.subtitleTr : s.subtitleEn}</p>
               <List>
                 {s.partners.slice(0, all || st ? 99 : 3).map((pn) => (
-                  <Row key={pn.id} icon={s.stage === 'flights' ? 'plane' : s.stage === 'accommodation' ? 'bed' : s.stage === 'transit' ? 'car' : 'shield'} title={pn.brand} sub={tr ? pn.taglineTr : pn.taglineEn} href={pn.url} />
+                  <Row key={pn.id} lead={<PartnerLogo id={pn.id} url={pn.url} fallback={s.stage === 'flights' ? 'plane' : s.stage === 'accommodation' ? 'bed' : s.stage === 'transit' ? 'car' : s.stage === 'activities' ? 'ticket' : 'shield'} />} title={pn.brand} sub={tr ? pn.taglineTr : pn.taglineEn} href={pn.url} />
                 ))}
               </List>
             </div>

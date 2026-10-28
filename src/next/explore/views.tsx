@@ -11,6 +11,7 @@ import { getPassportItems, compareDualPassports } from '../../utils/calculator';
 import { CountryItem, D, REGIONS, countryToRegion, getCountryName, getRegionName, SCHENGEN_SET } from '../../data/passportData';
 import { VISA_CHANGE_ALERTS } from '../../data/changeLog';
 import { getCountryConciergePlan } from '../../data/travelConciergeEngine';
+import { PartnerLogo } from '../PartnerLogo';
 import { GEO_DATA } from '../../data/geoData';
 import { ALL_WORLD_HUBS, flagToIso } from '../../data/worldHubs';
 import { getHubCoords } from '../../utils/hubCoords';
@@ -376,7 +377,7 @@ export const EasyTripView: React.FC<{ passport: string; destination: string; onD
   const plan = useMemo(() => getCountryConciergePlan(destination, passport), [destination, passport]);
   const tr = language === 'tr';
   const opts = useMemo(() => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((x, y) => x.n.localeCompare(y.n, language)), [language]);
-  const icons: Record<string, string> = { flights: 'plane', accommodation: 'bed', transit: 'car', essentials: 'shield' };
+  const icons: Record<string, string> = { flights: 'plane', accommodation: 'bed', transit: 'car', activities: 'ticket', essentials: 'shield' };
   return (
     <div className="vz-stack">
       <div className="vz-row-flex">
@@ -403,7 +404,7 @@ export const EasyTripView: React.FC<{ passport: string; destination: string; onD
                 {s.partners.slice(0, 4).map((pn) => (
                   <Row
                     key={pn.id}
-                    icon={icons[s.stage] || 'spark'}
+                    lead={<PartnerLogo id={pn.id} url={pn.url} fallback={icons[s.stage] || 'spark'} />}
                     title={<span className="vz-row-flex" style={{ gap: 8 }}>{pn.brand}<span className="vz-badge tone-sea">{tr ? pn.badgeTr : pn.badgeEn}</span></span>}
                     sub={tr ? pn.taglineTr : pn.taglineEn}
                     href={pn.url}

@@ -5,6 +5,7 @@ import { Icon } from './Icon';
 import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, List, Page, Row, Stat, Tile, TileGrid, OpenRequest } from './ui';
 import { PassportCover } from '../components/redesign/PassportCover';
 import { getCountryName, AFFILIATE_PARTNERS, getLocalizedPartner, D } from '../data/passportData';
+import { PartnerLogo } from './PartnerLogo';
 import { VISA_CHANGE_ALERTS } from '../data/changeLog';
 import { getPassportItems } from '../utils/calculator';
 import { exportAppData, importAppData, clearAllAppData, loadStoredRouteStops } from '../utils/storage';
@@ -155,7 +156,7 @@ const DealsView: React.FC = () => {
         {AFFILIATE_PARTNERS.map((a) => {
           const x = getLocalizedPartner(a, language);
           return (
-            <Card key={a.url + a.title} eyebrow={x.category} title={x.title} icon="handshake" actions={<span className="vz-badge tone-sea">{x.badge}</span>}>
+            <Card key={a.url + a.title} eyebrow={x.category} title={x.title} lead={<PartnerLogo url={a.url} size={40} />} actions={<span className="vz-badge tone-sea">{x.badge}</span>}>
               <p className="vz-muted">{x.desc}</p>
               <LinkBtn href={a.url} small variant="primary">{x.linkText}</LinkBtn>
             </Card>
