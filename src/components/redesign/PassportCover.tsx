@@ -8,7 +8,7 @@ interface Props {
   onClick?: () => void;
 }
 
-/** Seçili pasaporta göre renk ve dil değiştiren kapak; imleçle hafif 3B eğilir. */
+/** Seçili pasaportun kapak rengini alır; üzerinde ülke adı yazmaz (genel PASSPORT tasarımı). İmleçle hafif 3B eğilir. */
 export const PassportCover: React.FC<Props> = ({ code, size = 'lg', onClick }) => {
   const ref = useRef<HTMLButtonElement>(null);
   const cover = getCover(code, getCountryName(code, 'en'));
@@ -32,17 +32,17 @@ export const PassportCover: React.FC<Props> = ({ code, size = 'lg', onClick }) =
         onClick={onClick}
         onPointerMove={tilt}
         onPointerLeave={reset}
-        aria-label={`${getCountryName(code)} – ${cover.line2}`}
+        aria-label={`Passport – ${getCountryName(code, 'en')}`}
         style={{ background: `linear-gradient(135deg, ${cover.colors.from} 0%, ${cover.colors.to} 100%)`, color: cover.colors.ink }}
       >
-        <span className="rd-pp-l1" dir={cover.rtl ? 'rtl' : undefined}>{cover.line1}</span>
+        <span className="rd-pp-l1 rd-pp-blank" aria-hidden="true" />
         <svg className="rd-pp-emb" viewBox="0 0 120 120" aria-hidden="true">
           <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" strokeWidth="2.2" />
           <ellipse cx="60" cy="60" rx="20" ry="44" fill="none" stroke="currentColor" strokeWidth="1.6" />
           <path d="M16 60h88M22 38h76M22 82h76" fill="none" stroke="currentColor" strokeWidth="1.6" />
           <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" strokeWidth="0.8" strokeOpacity="0.6" />
         </svg>
-        <span className="rd-pp-l2" dir={cover.rtl ? 'rtl' : undefined}>{cover.line2}</span>
+        <span className="rd-pp-l2">PASSPORT</span>
         <span className="rd-pp-chip" aria-hidden="true" />
       </button>
     </div>

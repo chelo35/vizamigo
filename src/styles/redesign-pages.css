@@ -1,0 +1,168 @@
+/* ==========================================================================
+   VIZAMIGO YENİ GÖRÜNÜM — SAYFALAR VE SİTE GENELİ RENK EŞLEMESİ
+   1) Sekme sayfaları (Rota, Cüzdan, Araçlar, Profil) için ortak iskelet
+   2) Tailwind palet değişkenleri (slate, teal, cyan, sky, emerald…) yeni
+      kumsal/deniz paletine çevrilir: bileşenlerin koduna dokunmadan bütün
+      sayfalar (ülke sayfası, modallar, araçlar) aynı renklere geçer.
+   3) Koda gömülü eski hex renkler (#0D9488, #5EEAD4, #0B0F17 …) eşlenir.
+   ========================================================================== */
+
+:root {
+  --rd-acc-a: #14A3BD;
+  --rd-acc-b: #0B7287;
+  --rd-on-acc: #FFFFFF;
+  --rd-deep: #0B6A7E;
+}
+html.dark, .dark {
+  --rd-acc-a: #86D9E7;
+  --rd-acc-b: #5DB9CB;
+  --rd-on-acc: #1E1C21;
+  --rd-deep: #3B3640;
+}
+
+/* ------------------------------------------------------------------ */
+/* 1) Sekme sayfası iskeleti                                           */
+/* ------------------------------------------------------------------ */
+.rd-page { display: flex; flex-direction: column; gap: 28px; margin-top: -16px; }
+@media (min-width: 640px) { .rd-page { margin-top: -24px; } }
+.rd-band { position: relative; isolation: isolate; overflow: hidden; min-height: 300px; display: flex; align-items: flex-start; }
+.rd-band .rd-sky { background: linear-gradient(180deg, var(--rd-sky-a) 0%, var(--rd-sky-b) 55%, var(--rd-sky-c) 100%); }
+.rd-band-in { position: relative; width: 100%; max-width: 1180px; margin-inline: auto; padding: 96px max(16px, env(safe-area-inset-left, 0px)) 92px; display: flex; flex-direction: column; gap: 10px; }
+.rd-band-in .rd-eyebrow { color: var(--rd-hero-sub); }
+.rd-band-in h1 { margin: 0; font-size: clamp(30px, 4.4vw, 50px); line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; color: var(--rd-hero-ink); text-wrap: balance; max-width: 18ch; }
+.rd-band-in p { margin: 0; max-width: 60ch; font-size: clamp(14px, 1.2vw, 16.5px); line-height: 1.55; color: var(--rd-hero-sub); }
+.rd-band-sea { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; overflow: hidden; z-index: -1; }
+.rd-band .rd-flight { --lane: 18px; --dur: 30s; }
+.rd-page-body { gap: 20px; }
+
+.rd-segs { display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: 12px; margin-top: -64px; position: relative; z-index: 2; }
+.rd-seg { min-height: 132px; box-shadow: var(--rd-shadow); }
+.rd-seg[aria-selected="true"] { border-color: var(--rd-sea); box-shadow: 0 0 0 3px var(--rd-sea-tint), var(--rd-shadow); }
+.rd-seg[aria-selected="true"] .rd-tile-ic { background: linear-gradient(135deg, var(--rd-acc-a), var(--rd-acc-b)); color: var(--rd-on-acc); }
+.rd-seg[aria-selected="true"]::after { content: ""; position: absolute; left: 50%; bottom: -9px; width: 16px; height: 16px; background: var(--rd-surface); border-right: 1px solid var(--rd-sea); border-bottom: 1px solid var(--rd-sea); transform: translateX(-50%) rotate(45deg); }
+@media (max-width: 640px) {
+  .rd-segs { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 74%; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 14px; margin-inline: -2px; scrollbar-width: none; }
+  .rd-segs::-webkit-scrollbar { display: none; }
+  .rd-seg { scroll-snap-align: start; min-height: 120px; }
+  .rd-band { min-height: 270px; }
+  .rd-band-in { padding-top: 84px; padding-bottom: 84px; }
+}
+.rd-page-panel { display: flex; flex-direction: column; gap: 16px; animation: rd-rise 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.rd-page-panel-h { display: flex; align-items: center; gap: 10px; }
+.rd-page-panel-h h2 { margin: 0; font-size: clamp(20px, 2vw, 26px); }
+.rd-page-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--rd-sea); box-shadow: 0 0 0 5px var(--rd-sea-soft); }
+@keyframes rd-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* Araçlar: açıklamalı tam liste */
+.rd-catalog { display: flex; flex-direction: column; gap: 16px; }
+.rd-cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+.rd-cat { display: flex; align-items: flex-start; gap: 14px; text-align: left; font: inherit; color: var(--rd-fg); background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 18px; padding: 14px; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+.rd-cat:hover { transform: translateY(-2px); box-shadow: var(--rd-shadow); border-color: var(--rd-sea-tint); }
+.rd-cat .rd-tile-ic { flex: none; }
+.rd-cat-b { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.rd-cat-t { font-size: 15px; font-weight: 700; }
+.rd-cat-s { font-size: 13px; line-height: 1.45; color: var(--rd-muted); }
+.rd-cat-go { flex: none; margin-top: 12px; color: var(--rd-muted); }
+.rd-page .rd-hubs { display: flex; flex-direction: column; gap: 16px; }
+
+/* Sayfa içindeki eski bileşenler için ortak yazı rengi */
+.rd-page-panel { color: var(--rd-fg); }
+
+/* ------------------------------------------------------------------ */
+/* 2) Tailwind palet değişkenleri                                       */
+/* ------------------------------------------------------------------ */
+:root {
+  --color-slate-50: #FBF8F3; --color-slate-100: #F4EFE7; --color-slate-200: #E8E1D5; --color-slate-300: #D5CCBF;
+  --color-slate-400: #8E9AA0; --color-slate-500: #66757C; --color-slate-600: #4E5D65; --color-slate-700: #3A4A52;
+  --color-slate-750: #31414A; --color-slate-800: #283840; --color-slate-850: #22323A; --color-slate-900: #1D2B33; --color-slate-950: #142028;
+  --color-gray-50: #FBF8F3; --color-gray-100: #F4EFE7; --color-gray-200: #E8E1D5; --color-gray-300: #D5CCBF; --color-gray-400: #8E9AA0;
+  --color-gray-500: #66757C; --color-gray-600: #4E5D65; --color-gray-700: #3A4A52; --color-gray-800: #283840; --color-gray-900: #1D2B33;
+
+  --color-teal-50: #EBF7F9; --color-teal-100: #D3EFF4; --color-teal-200: #A8DEE8; --color-teal-300: #73C9DA; --color-teal-400: #3AB0C6;
+  --color-teal-500: #1497B0; --color-teal-600: #0F8199; --color-teal-700: #0B6A7E; --color-teal-800: #0A5767; --color-teal-900: #0A4653; --color-teal-950: #072E37;
+  --color-cyan-50: #EBF7F9; --color-cyan-100: #D3EFF4; --color-cyan-200: #A8DEE8; --color-cyan-300: #73C9DA; --color-cyan-400: #3AB0C6;
+  --color-cyan-500: #1497B0; --color-cyan-600: #0F8199; --color-cyan-700: #0B6A7E; --color-cyan-800: #0A5767; --color-cyan-900: #0A4653; --color-cyan-950: #072E37;
+  --color-sky-50: #EDF7FB; --color-sky-100: #D6EEF7; --color-sky-200: #AEDCEE; --color-sky-300: #7CC6E2; --color-sky-400: #45ACD2;
+  --color-sky-500: #1C93BF; --color-sky-600: #137BA3; --color-sky-700: #0F6585; --color-sky-800: #0E526B; --color-sky-900: #0D4357; --color-sky-950: #082B39;
+
+  --color-horizon-teal-600: #0B7287; --color-horizon-teal-500: #0F8199; --color-horizon-teal-400: #1497B0;
+  --color-obsidian-periwinkle: #66757C;
+  --color-linen-50: #F7F3EC;
+}
+html.dark, .dark {
+  --color-slate-50: #FAF6F1; --color-slate-100: #F4EFE9; --color-slate-200: #E6DFD6; --color-slate-300: #D2CAC0;
+  --color-slate-400: #B4ACA3; --color-slate-500: #8C857E; --color-slate-600: #5E5860; --color-slate-700: #46424B;
+  --color-slate-750: #3D3A42; --color-slate-800: #34313A; --color-slate-850: #2E2B32; --color-slate-900: #2A282E; --color-slate-950: #211F24;
+  --color-gray-50: #FAF6F1; --color-gray-100: #F4EFE9; --color-gray-200: #E6DFD6; --color-gray-300: #D2CAC0; --color-gray-400: #B4ACA3;
+  --color-gray-500: #8C857E; --color-gray-600: #5E5860; --color-gray-700: #46424B; --color-gray-800: #34313A; --color-gray-900: #2A282E;
+
+  --color-teal-50: #EDF9FB; --color-teal-100: #D8F2F7; --color-teal-200: #B5E6EF; --color-teal-300: #8ED8E6; --color-teal-400: #6CCBDC;
+  --color-teal-500: #3E9CB0; --color-teal-600: #357F90; --color-teal-700: #47707B; --color-teal-800: #3F5960; --color-teal-900: #33393F; --color-teal-950: #2B2D33;
+  --color-cyan-50: #EDF9FB; --color-cyan-100: #D8F2F7; --color-cyan-200: #B5E6EF; --color-cyan-300: #8ED8E6; --color-cyan-400: #6CCBDC;
+  --color-cyan-500: #3E9CB0; --color-cyan-600: #357F90; --color-cyan-700: #47707B; --color-cyan-800: #3F5960; --color-cyan-900: #33393F; --color-cyan-950: #2B2D33;
+  --color-sky-300: #9CD6EA; --color-sky-400: #78C4E0; --color-sky-500: #4FA7C8; --color-sky-800: #3F5960; --color-sky-900: #33393F; --color-sky-950: #2B2D33;
+  --color-emerald-950: #2A322D; --color-emerald-900: #2F3D33; --color-emerald-800: #3A5443;
+  --color-green-950: #2A322D; --color-green-900: #2F3D33;
+  --color-indigo-950: #2E2B36; --color-indigo-900: #34303F; --color-violet-950: #2E2B36; --color-purple-950: #2E2B36;
+
+  --color-obsidian-950: #1E1C21; --color-obsidian-900: #232126; --color-obsidian-850: #28262C; --color-obsidian-800: #2E2B32;
+  --color-obsidian-750: #34313A; --color-obsidian-700: #3D3A42; --color-obsidian-periwinkle: #BDB5AC;
+  --color-horizon-teal-600: #6CCBDC; --color-horizon-teal-500: #6CCBDC; --color-horizon-teal-400: #8ED8E6;
+}
+
+/* ------------------------------------------------------------------ */
+/* 3) Koda gömülü eski hex renkler                                      */
+/* ------------------------------------------------------------------ */
+/* Teal degrade düğmeler → deniz degradesi */
+[class*="from-[#0D9488]"], [class*="from-[#0F766E]"], [class*="from-[#2A8C82]"], [class*="from-[#14B8A6]"] {
+  background-image: linear-gradient(135deg, var(--rd-acc-a), var(--rd-acc-b)) !important;
+  box-shadow: none;
+}
+[class*="from-[#0D9488]"]:not(.text-transparent):not(.bg-clip-text),
+[class*="from-[#0F766E]"]:not(.text-transparent):not(.bg-clip-text),
+[class*="from-[#2A8C82]"]:not(.text-transparent):not(.bg-clip-text) { color: var(--rd-on-acc) !important; }
+.dark [class*="from-[#0D9488]"]:not(.text-transparent) .text-white,
+.dark [class*="from-[#0F766E]"]:not(.text-transparent) .text-white,
+.dark [class*="from-[#2A8C82]"]:not(.text-transparent) .text-white { color: var(--rd-on-acc) !important; }
+
+/* Düz teal zeminler (tam sınıf) → deniz; yarı saydam olanlar → açık deniz tonu */
+[class~="bg-[#0D9488]"], [class~="bg-[#0F766E]"], [class~="bg-[#2A8C82]"], [class~="bg-[#14B8A6]"],
+[class~="hover:bg-[#0D9488]"]:hover, [class~="hover:bg-[#0F766E]"]:hover { background-color: var(--rd-acc-b) !important; color: var(--rd-on-acc); }
+.dark [class~="bg-[#0D9488]"] .text-white, .dark [class~="bg-[#2A8C82]"] .text-white, .dark [class~="bg-[#0F766E]"] .text-white,
+.dark [class~="bg-[#0D9488]"].text-white, .dark [class~="bg-[#2A8C82]"].text-white, .dark [class~="bg-[#0F766E]"].text-white { color: var(--rd-on-acc) !important; }
+[class*="bg-[#0D9488]/"], [class*="bg-[#0F766E]/"], [class*="bg-[#2A8C82]/"], [class*="bg-[#14B8A6]/"], [class*="bg-[#2DD4BF]/"], [class*="bg-[#5EEAD4]/"] { background-color: var(--rd-sea-soft) !important; }
+[class~="bg-[#2DD4BF]"], [class~="bg-[#5EEAD4]"], [class~="bg-[#CCFBF1]"] { background-color: var(--rd-sea-tint) !important; }
+[class~="bg-[#F0FDFA]"] { background-color: var(--rd-sea-soft) !important; }
+body[class], html.dark body[class] { background-color: var(--rd-bg) !important; background-image: none !important; color: var(--rd-fg); }
+[class~="bg-[#F8FAFC]"] { background-color: var(--rd-bg) !important; }
+
+/* Teal yazılar → deniz mürekkebi; nane yazılar (koyu zeminde) → açık deniz */
+[class*="text-[#0D9488]"], [class*="text-[#0F766E]"], [class*="text-[#2A8C82]"], [class*="text-[#1E6F66]"], [class*="text-[#03443d]"], [class*="text-[#14B8A6]"], [class*="text-[#52B2A7]"], [class*="text-[#064E3B]"] { color: var(--rd-sea-ink) !important; }
+[class*="text-[#042F2E]"], [class*="text-[#011a17]"] { color: var(--rd-fg) !important; }
+[class*="text-[#8E9DBE]"], [class*="text-[#7A89A6]"] { color: var(--rd-muted) !important; }
+.dark [class*="dark:text-[#5EEAD4]"], .dark [class*="dark:text-[#2DD4BF]"], .dark [class*="dark:text-[#CCFBF1]"], .dark [class*="dark:text-[#7DD3FC]"] { color: var(--rd-sea) !important; }
+
+/* Teal kenarlıklar */
+[class*="border-[#2DD4BF]"], [class*="border-[#5EEAD4]"], [class*="border-[#0D9488]"], [class*="border-[#2A8C82]"], [class*="border-[#0F766E]"], [class*="border-[#0284C7]"] { border-color: var(--rd-sea-tint) !important; }
+[class*="ring-[#2A8C82]"], [class*="ring-[#2DD4BF]"], [class*="ring-[#0D9488]"] { --tw-ring-color: var(--rd-sea-tint) !important; }
+
+/* Koyu lacivert/mor bloklar → derin deniz (açık tema) / sıcak grafit (koyu tema) */
+[class~="bg-[#0B3B4C]"], [class~="bg-[#13112c]"], [class~="bg-[#1f1b4a]"], [class~="bg-[#072630]"], [class~="bg-[#0B0F17]"], [class~="bg-[#202E5C]"] { background-color: var(--rd-deep) !important; }
+
+/* Koyu temadaki eski lacivert zeminler */
+.dark [class*="dark:bg-[#0B0F17]"], .dark [class*="dark:bg-[#0B0F19]"], .dark [class*="dark:bg-[#0C0F19]"], .dark [class*="dark:bg-[#0F172A]"], .dark [class*="dark:bg-[#021824]"], .dark [class*="dark:bg-[#041D29]"], .dark [class*="dark:bg-[#032030]"] { background-color: var(--rd-bg) !important; }
+.dark [class*="dark:bg-[#111827]"], .dark [class*="dark:bg-[#141C3B]"], .dark [class*="dark:bg-[#111625]"], .dark [class*="dark:bg-[#0E1428]"], .dark [class*="dark:bg-[#161D30]"], .dark [class*="dark:bg-[#1C243B]"], .dark [class*="dark:bg-[#042637]"] { background-color: var(--rd-surface) !important; }
+.dark [class*="dark:from-[#111625]"], .dark [class*="dark:via-[#0C0F19]"], .dark [class*="dark:to-[#161D30]"] { --tw-gradient-from: var(--rd-surface) !important; --tw-gradient-via: var(--rd-surface) !important; --tw-gradient-to: var(--rd-bg) !important; }
+.dark [class*="dark:bg-white/[0.0"], .dark [class*="dark:bg-white/5"] { background-color: color-mix(in srgb, var(--rd-fg) 5%, transparent) !important; }
+.dark [class*="dark:border-white/10"], .dark [class*="dark:border-white/5"] { border-color: var(--rd-line) !important; }
+
+.rd-pp-blank { min-height: 18px; }
+
+/* Açık temada koyu mürekkep bloklar (harita paneli vb.) lacivert değil, derin deniz olsun */
+html:not(.dark) [class~="bg-slate-900"], html:not(.dark) [class~="bg-slate-950"], html:not(.dark) [class~="bg-slate-800"] { background-color: var(--rd-deep) !important; }
+html:not(.dark) [class*="from-slate-900"], html:not(.dark) [class*="from-slate-950"], html:not(.dark) [class*="from-slate-800"] { background-image: linear-gradient(135deg, #0F7F96, #0B5C6E) !important; border-color: transparent !important; }
+html:not(.dark) [class*="from-slate-900"] [class*="border-slate-800"], html:not(.dark) [class*="from-slate-900"] [class*="border-slate-700"] { border-color: rgba(255, 255, 255, 0.18) !important; }
+
+/* Eski bileşenler dar ekranda taşmasın */
+.rd-page-body, .rd-page-panel, .rd-page-panel > *, .rd-pbody, .rd-pbody > * { min-width: 0; max-width: 100%; }
+.rd-page { overflow-x: clip; }

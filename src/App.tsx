@@ -27,6 +27,11 @@ import { getPassportItems } from './utils/calculator';
 // ExploreTab is imported directly to prevent CLS layout shift on initial home render
 import { ExploreTab } from './components/ExploreTab';
 import { HomeDashboard } from './components/redesign/HomeDashboard';
+import { TabPage } from './components/redesign/TabPage';
+import { Ic } from './components/redesign/toolHubs';
+const ToolsPage = lazy(() =>
+  import('./components/redesign/ToolsPage').then(m => ({ default: m.ToolsPage }))
+);
 const GlobalFooter = lazy(() =>
   import('./components/footer/GlobalFooter').then(m => ({ default: m.GlobalFooter }))
 );
@@ -51,7 +56,6 @@ const ProfileTab = lazy(() =>
 const WalletTab = lazy(() =>
   import('./components/WalletTab').then(m => ({ default: m.WalletTab }))
 );
-import { BentoDashboardGrid } from './components/bento/BentoDashboardGrid';
 const PassportSelectModal = lazy(() =>
   import('./components/PassportSelectModal').then(m => ({ default: m.PassportSelectModal }))
 );
@@ -102,6 +106,7 @@ function AppContent() {
   const [exploreSubTab, setExploreSubTab] = useState<'all' | 'where'>('all');
   const [planSubTab, setPlanSubTab] = useState<'route' | 'compare' | 'nomad'>('route');
   const [profileSubTab, setProfileSubTab] = useState<'profile' | 'emergency'>('profile');
+  const [trackSubTab, setTrackSubTab] = useState<'wallet' | 'days'>('wallet');
   const [showPromoBanner, setShowPromoBanner] = useState<boolean>(true);
   const [globalSearchQuery, setGlobalSearchQuery] = useState<string>('');
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
@@ -340,137 +345,100 @@ function AppContent() {
                 </ErrorBoundary>
               )}
 
-          {/* Tab Content: 2. ROTA & SİNERJİ / PLAN */}
+          {/* Tab Content: 2. ROTA / PLAN */}
           {activeTab === 'plan' && (
-            <ErrorBoundary isTabBoundary tabName={t.subTabRoutePlanner || 'Rota & Sinerji'}>
-              <div className="space-y-6">
-                <div className="flex items-center justify-start overflow-x-auto scrollbar-none pb-1">
-                  <div className="inline-flex p-1 rounded-full bento-lagoon-card gap-1 whitespace-nowrap">
-                    <button
-                      type="button"
-                      onClick={() => setPlanSubTab('route')}
-                      className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                        planSubTab === 'route'
-                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
-                          : 'text-slate-700 dark:text-slate-200'
-                      }`}
-                    >
-                      {t.subTabRoutePlanner}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setPlanSubTab('compare')}
-                      className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                        planSubTab === 'compare'
-                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
-                          : 'text-slate-700 dark:text-slate-200'
-                      }`}
-                    >
-                      {t.subTabComparePassports}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setPlanSubTab('nomad')}
-                      className={`px-5 py-2 rounded-full text-xs font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                        planSubTab === 'nomad'
-                          ? 'bg-gradient-to-r from-[#0D9488] to-[#0EA5E9] text-white shadow-xs'
-                          : 'text-slate-700 dark:text-slate-200'
-                      }`}
-                    >
-                      {t.subTabNomadHubs}
-                    </button>
-                  </div>
-                </div>
-
+            <ErrorBoundary isTabBoundary tabName={t.subTabRoutePlanner || 'Rota'}>
+              <TabPage
+                eyebrow={l('Rota', 'Route', 'Route', 'Ruta', 'Маршрут')}
+                title={l('Rotanı birlikte çizelim', 'Let’s draw your route', 'Lass uns deine Route planen', 'Tracemos tu ruta', 'Построим маршрут')}
+                sub={l('Durakları ekle; her ülkede vize ve kalış kuralı otomatik kontrol edilsin. Pasaportları karşılaştır, göçebe merkezlerine göz at.', 'Add your stops and every country’s visa and stay rule is checked for you. Compare passports and browse nomad hubs.', 'Stopps hinzufügen, Visaregeln werden geprüft.', 'Añade paradas y comprobamos visados y estancias.', 'Добавьте остановки — правила проверим сами.')}
+                words={['Japan', 'Italy', 'Mexico', 'Greece']}
+                active={planSubTab}
+                onSelect={(id) => setPlanSubTab(id as 'route' | 'compare' | 'nomad')}
+                sections={[
+                  { id: 'route', label: l('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador de ruta', 'Планировщик'), desc: l('Çok ülkeli plan, tarihler, vize kontrolü', 'Multi-country plan, dates, visa check', 'Mehrländerplan mit Visaprüfung', 'Plan multipaís con visados', 'Маршрут с проверкой виз'), icon: <Ic fill="m3 7 6-3 6 3 6-3v13l-6 3-6-3-6 3z" d="m3 7 6-3 6 3 6-3v13l-6 3-6-3-6 3zM9 4v13M15 7v13" /> },
+                  { id: 'compare', label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'), desc: l('İki pasaport, ülke ülke yan yana', 'Two passports side by side', 'Zwei Pässe nebeneinander', 'Dos pasaportes lado a lado', 'Два паспорта рядом'), icon: <Ic fill="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8.5 17h7" /> },
+                  { id: 'nomad', label: l('Göçebe merkezleri', 'Nomad hubs', 'Nomaden-Hubs', 'Centros nómada', 'Хабы кочевников'), desc: l('Göçebe vizeleri, vergi, transit', 'Nomad visas, tax, transit', 'Nomadenvisa, Steuern, Transit', 'Visados nómada, impuestos', 'Визы, налоги, транзит'), icon: <Ic fill="M6 5h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" d="M6 5h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zM2 19h20" /> }
+                ]}
+              >
                 {planSubTab === 'route' ? (
                   <RoutePlannerTab currentPassport={currentPassport} />
                 ) : planSubTab === 'compare' ? (
-                  <CompareTab
-                    initialPassportA={currentPassport}
-                    initialPassportB={secondaryPassport}
-                  />
+                  <CompareTab initialPassportA={currentPassport} initialPassportB={secondaryPassport} />
                 ) : (
                   <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
                 )}
-              </div>
+              </TabPage>
             </ErrorBoundary>
           )}
 
-          {/* Tab Content: 3. CÜZDAN & DÜNYA GÜN SAYACI / TRACK */}
+          {/* Tab Content: 3. CÜZDAN & GÜN SAYACI / TRACK */}
           {activeTab === 'track' && (
             <ErrorBoundary isTabBoundary tabName="Cüzdan & Gün Sayacı">
-              <div className="space-y-8">
-                <WalletTab
-                  currentPassport={currentPassport}
-                  secondaryPassport={secondaryPassport}
-                  onChangePassport={() => setIsPassportModalOpen(true)}
-                  onSelectStayTracker={() => {
-                    const el = document.getElementById('vz-day-counter-section');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                />
-                <div id="vz-day-counter-section">
-                  <DayCounterTab />
-                </div>
-              </div>
+              <TabPage
+                eyebrow={l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелёк')}
+                title={l('Belgelerin ve günlerin', 'Your documents and days', 'Deine Dokumente und Tage', 'Tus documentos y días', 'Документы и дни')}
+                sub={l('Pasaport, vize ve sigorta tarihlerin tek yerde; dünya gün sayacı kaç gün kalabileceğini hesaplar.', 'Passport, visa and insurance dates in one place; the world day counter works out how long you can stay.', 'Pass-, Visa- und Versicherungsdaten an einem Ort.', 'Fechas de pasaporte, visado y seguro en un lugar.', 'Даты паспорта, визы и страховки в одном месте.')}
+                words={['France', 'Spain', 'Portugal', 'Germany']}
+                active={trackSubTab}
+                onSelect={(id) => setTrackSubTab(id as 'wallet' | 'days')}
+                sections={[
+                  { id: 'wallet', label: l('Cüzdanım', 'My wallet', 'Meine Wallet', 'Mi cartera', 'Мой кошелёк'), desc: l('Pasaport, vize, sigorta, bitiş uyarıları', 'Passport, visas, insurance, expiry alerts', 'Pass, Visa, Versicherung, Ablauf', 'Pasaporte, visados, seguro', 'Паспорт, визы, страховка'), icon: <Ic fill="M4 6h16v12H4z" d="M4 6h16v12H4zM4 10h16M8 15h3" /> },
+                  { id: 'days', label: l('Dünya gün sayacı', 'World day counter', 'Welt-Tagezähler', 'Contador mundial', 'Счётчик дней'), desc: l('Schengen 90/180 ve diğer kalış kuralları', 'Schengen 90/180 and other stay rules', 'Schengen 90/180 und mehr', 'Schengen 90/180 y más', 'Шенген 90/180 и др.'), icon: <Ic fill="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM12 7.5V12l3.2 2" /> }
+                ]}
+              >
+                {trackSubTab === 'wallet' ? (
+                  <WalletTab
+                    currentPassport={currentPassport}
+                    secondaryPassport={secondaryPassport}
+                    onChangePassport={() => setIsPassportModalOpen(true)}
+                    onSelectStayTracker={() => setTrackSubTab('days')}
+                  />
+                ) : (
+                  <div id="vz-day-counter-section">
+                    <DayCounterTab />
+                  </div>
+                )}
+              </TabPage>
             </ErrorBoundary>
           )}
 
-          {/* Tab Content: 4. GEZGİN ARAÇLARI & DİJİTAL GÖÇEBE / NOMAD */}
+          {/* Tab Content: 4. ARAÇLAR / NOMAD */}
           {activeTab === 'nomad' && (
-            <ErrorBoundary isTabBoundary tabName="Gezgin Araçları & Göçebe">
-              <div className="space-y-8">
-                <BentoDashboardGrid
-                  currentPassport={currentPassport}
-                  secondaryPassport={secondaryPassport}
-                  onOpenCountryDossier={(code) => {
-                    setActiveTab('explore');
-                    handleCountrySelect(code);
-                  }}
-                  onSelectTab={handleSelectTab}
-                  onOpenPackingList={() => setIsPackingListOpen(true)}
-                  onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
-                  onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
-                  onOpenGlobalRadar={openRadar}
-                  onOpenAssistant={() => setIsAssistantOpen(true)}
-                />
-                <NomadToolsTab defaultSubTab="nomad" currentPassport={currentPassport} />
-              </div>
+            <ErrorBoundary isTabBoundary tabName="Araçlar">
+              <ToolsPage
+                currentPassport={currentPassport}
+                secondaryPassport={secondaryPassport}
+                onOpenPassportSelector={() => setIsPassportModalOpen(true)}
+                onOpenCountry={(code) => {
+                  setActiveTab('explore');
+                  handleCountrySelect(code);
+                }}
+                onOpenAuditConsole={() => setIsAuditModalOpen(true)}
+                onOpenPackingList={() => setIsPackingListOpen(true)}
+                onOpenTippingCalc={() => setIsTippingCalcOpen(true)}
+                onOpenTimezoneOverlap={() => setIsTimezoneOverlapOpen(true)}
+                onOpenGlobalRadar={openRadar}
+                onOpenAssistant={() => setIsAssistantOpen(true)}
+              />
             </ErrorBoundary>
           )}
 
-          {/* Tab Content: 5. PROFİL & ARAÇLAR / PROFILE */}
+          {/* Tab Content: 5. PROFİL / PROFILE */}
           {activeTab === 'profile' && (
             <ErrorBoundary isTabBoundary tabName="Profil & Ayarlar">
-              <div className="space-y-6">
-                {/* Profil Sub Tabs */}
-                <div className="w-full max-w-full overflow-x-auto scrollbar-none horizontal-badge-slider no-scrollbar-slider touch-pan-x pb-2 mb-3">
-                  <div className="inline-flex p-1 rounded-full glass-panel border border-slate-200/80 dark:border-white/10 shadow-xs gap-1.5 whitespace-nowrap shrink-0">
-                    <button
-                      type="button"
-                      onClick={() => setProfileSubTab('profile')}
-                      className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
-                        profileSubTab === 'profile'
-                          ? 'tab-chip-active'
-                          : 'tab-chip-inactive'
-                      }`}
-                    >
-                      {t.subTabWalletAndPartners}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setProfileSubTab('emergency')}
-                      className={`shrink-0 px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap touch-target-min ${
-                        profileSubTab === 'emergency'
-                          ? 'tab-chip-active'
-                          : 'tab-chip-inactive'
-                      }`}
-                    >
-                      {t.subTabEmergencyDesk}
-                    </button>
-                  </div>
-                </div>
-
+              <TabPage
+                eyebrow={l('Profil', 'Profile', 'Profil', 'Perfil', 'Профиль')}
+                title={l('Senin Vizamigo’n', 'Your Vizamigo', 'Dein Vizamigo', 'Tu Vizamigo', 'Ваш Vizamigo')}
+                sub={l('Pasaportların, dil, yedekleme ve acil durum bilgilerin. Hepsi bu cihazda güvenle saklanır.', 'Your passports, language, backups and emergency details, kept safely on this device.', 'Pässe, Sprache, Backups und Notfalldaten.', 'Pasaportes, idioma, copias y emergencias.', 'Паспорта, язык, резервные копии и экстренные данные.')}
+                words={['Türkiye', 'Canada', 'Australia', 'Morocco']}
+                active={profileSubTab}
+                onSelect={(id) => setProfileSubTab(id as 'profile' | 'emergency')}
+                sections={[
+                  { id: 'profile', label: l('Profil & ayarlar', 'Profile & settings', 'Profil & Einstellungen', 'Perfil y ajustes', 'Профиль и настройки'), desc: l('Pasaportlar, dil, yedek, ortaklar', 'Passports, language, backup, partners', 'Pässe, Sprache, Backup', 'Pasaportes, idioma, copia', 'Паспорта, язык, копия'), icon: <Ic fill="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0" /> },
+                  { id: 'emergency', label: l('Acil durum masası', 'Emergency desk', 'Notfallzentrale', 'Mesa de emergencias', 'Экстренная помощь'), desc: l('Acil hatlar ve konsolosluklar', 'Emergency lines and consulates', 'Notrufe und Konsulate', 'Emergencias y consulados', 'Экстренные и консульства'), icon: <Ic fill="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM12 8v5M12 16.5v.01" /> }
+                ]}
+              >
                 {profileSubTab === 'profile' ? (
                   <ProfileTab
                     currentPassport={currentPassport}
@@ -485,14 +453,21 @@ function AppContent() {
                 ) : (
                   <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
                 )}
-              </div>
+              </TabPage>
             </ErrorBoundary>
           )}
 
-          {/* Tab Content: 5. KONSOLOSLUK & DİPLOMATİK KRİZ MASASI / CONSULAR */}
+          {/* Tab Content: KONSOLOSLUK & KRİZ MASASI / CONSULAR */}
           {activeTab === 'consular' && (
             <ErrorBoundary isTabBoundary tabName="Konsolosluk & Kriz Masası">
-              <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
+              <TabPage
+                eyebrow={l('Acil durum', 'Emergency', 'Notfall', 'Emergencia', 'Экстренно')}
+                title={l('Yardım bir dokunuş uzakta', 'Help is one tap away', 'Hilfe mit einem Tipp', 'Ayuda a un toque', 'Помощь в одно касание')}
+                sub={l('Polis, ambulans, itfaiye ve konsolosluk bilgileri ülke ülke.', 'Police, ambulance, fire and consulate details country by country.', 'Polizei, Rettung, Feuerwehr, Konsulat.', 'Policía, ambulancia, bomberos y consulado.', 'Полиция, скорая, пожарные, консульство.')}
+                words={['Thailand', 'Japan', 'USA', 'France']}
+              >
+                <NomadToolsTab defaultSubTab="emergency" currentPassport={currentPassport} />
+              </TabPage>
             </ErrorBoundary>
           )}
         </Suspense>

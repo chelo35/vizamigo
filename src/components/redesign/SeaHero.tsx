@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useI18n } from '../../data/i18n';
+import { FlyingBanner } from './FlyingBanner';
 
 interface Chip {
   label: string;
@@ -66,11 +67,8 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [] }) => {
       <svg className="rd-trail" viewBox="0 0 1600 600" preserveAspectRatio="none" aria-hidden="true">
         <path d="M -60 300 C 300 120, 700 80, 1100 170 S 1500 260, 1700 200" />
       </svg>
-      <div className="rd-plane" aria-hidden="true">
-        <svg viewBox="0 0 36 36" width="34" height="34">
-          <path d="M2 18 L 26 13 L 33 15 L 26 19 L 2 22 L 9 19 L 5 17 Z M 12 17 L 7 8 L 11 8 L 19 15 Z M 12 19 L 7 28 L 11 28 L 19 21 Z" fill="currentColor" />
-        </svg>
-      </div>
+      <FlyingBanner className="f1" words={['Thailand', 'Japan', 'USA', 'France']} />
+      <FlyingBanner className="f2" words={['Italy', 'Türkiye', 'Spain', 'Greece']} />
       <div className="rd-sea" aria-hidden="true">
         <div className="rd-wave w1"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 110 C 150 70 300 150 600 110 C 900 70 1050 150 1200 110 C 1350 70 1500 150 1800 110 C 2100 70 2250 150 2400 110 V240 H0 Z" /></svg></div>
         <div className="rd-wave w2"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 140 C 200 100 400 180 600 140 C 800 100 1000 180 1200 140 C 1400 100 1600 180 1800 140 C 2000 100 2200 180 2400 140 V240 H0 Z" /></svg></div>
