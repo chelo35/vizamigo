@@ -830,3 +830,26 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
 .rd-fx-big em { font-style: normal; font-size: 20px; font-weight: 700; color: var(--rd-sea); margin-left: 2px; }
 .rd-clock .rd-clock-face { stroke-width: 2.5; }
 .rd-clock .rd-clock-h, .rd-clock .rd-clock-m { stroke: var(--rd-sea-ink, var(--rd-fg)); }
+
+/* Nazik teklif kartı (ülke sayfası) */
+.vz-offer { position: fixed; z-index: 43; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(96px + env(safe-area-inset-bottom, 0px)); width: min(380px, calc(100vw - 92px)); display: flex; flex-direction: column; gap: 4px; padding: 14px 40px 14px 16px; border-radius: 20px; background: color-mix(in srgb, var(--rd-surface) 96%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid var(--rd-line); box-shadow: 0 18px 40px -14px rgba(20, 40, 60, 0.35); color: var(--rd-fg); animation: vz-offer-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@media (min-width: 1024px) { .vz-offer { bottom: 24px; } }
+.vz-offer-t { font-size: 15px; line-height: 1.3; }
+.vz-offer-s { font-size: 13px; color: var(--rd-muted); }
+.vz-offer-a { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.vz-offer-b { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px 0 6px; border-radius: 999px; background: var(--rd-sea-soft); color: var(--rd-sea-ink); font-size: 13px; font-weight: 700; text-decoration: none; transition: transform 0.15s ease; }
+.vz-offer-b:active { transform: scale(0.96); }
+.vz-offer-b .vz-plogo { border-radius: 50%; border: 0; }
+.vz-offer-x { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--rd-surface-2); color: var(--rd-muted); cursor: pointer; }
+@keyframes vz-offer-in { from { opacity: 0; transform: translateY(16px); } }
+@media print { .vz-offer { display: none; } }
+@media (max-width: 639px) {
+  .vz-offer { padding: 12px 36px 12px 14px; }
+  .vz-offer-t { font-size: 14px; }
+  .vz-offer-s { font-size: 12.5px; }
+  .vz-offer-a { flex-wrap: nowrap; gap: 5px; }
+  .vz-offer-b { padding: 0 9px 0 4px; gap: 4px; font-size: 12.5px; min-height: 34px; }
+}
+@media (max-width: 639px) {
+  .vz-offer { width: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(156px + env(safe-area-inset-bottom, 0px)); }
+}

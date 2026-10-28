@@ -13,6 +13,7 @@ import { SeaMap, MapPoint } from './SeaMap';
 import { loadCountryBundle, CountryBundle } from './countryData';
 import { getCountryName, INFO } from '../data/passportData';
 import { PartnerLogo } from './PartnerLogo';
+import { OfferCard } from './OfferCard';
 import { tpIdFromUrl } from '../data/tpPartners';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
@@ -680,6 +681,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           </section>
         )}
       </div>
+      <OfferCard code={code} passport={passport} />
     </div>
   );
 };
