@@ -24,6 +24,16 @@ export class ErrorBoundary extends Component<Props, State> {
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error('Vizamigo Application Error:', error, errorInfo);
+    // eski sürümden kalan sekme: olmayan kod parçası istendi -> sayfayı bir kez yenile
+    if (/dynamically imported module|Importing a module script failed|ChunkLoadError|Loading chunk|error loading dynamically/i.test(String(error?.message || error))) {
+      try {
+        const last = Number(sessionStorage.getItem('vz_chunk_reload') || 0);
+        if (Date.now() - last > 20000) {
+          sessionStorage.setItem('vz_chunk_reload', String(Date.now()));
+          window.location.reload();
+        }
+      } catch {}
+    }
   }
 
   private handleSafeRecovery = () => {
