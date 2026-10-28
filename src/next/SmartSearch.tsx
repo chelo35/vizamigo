@@ -1,4 +1,5 @@
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal, flushSync } from 'react-dom';
 import { useI18n } from '../data/i18n';
 import { Icon, IconName } from './Icon';
 import { Flag, VisaBadge } from './ui';
@@ -83,10 +84,41 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
   const [q, setQ] = useState('');
   const [open, setOpen] = useState(false);
   const [hi, setHi] = useState(0);
+  // telefonda arama tam ekran açılır: kutu en üstte, öneriler altında, klavye hiçbir şeyi örtmez
+  const [full, setFull] = useState(false);
   const boxRef = useRef<HTMLFormElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const fullInputRef = useRef<HTMLInputElement>(null);
   const res = useMemo(() => search(q), [q, passport]); // eslint-disable-line react-hooks/exhaustive-deps
+  const isPhone = () => typeof window !== 'undefined' && window.matchMedia('(max-width: 760px)').matches;
+  useEffect(() => {
+    if (!full) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setFull(false);
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [full]);
+  // yazılanın devamı (otomatik tamamlama): ilk ülke önerisi yazılanla başlıyorsa
+  const top = res[0];
+  const ghost =
+    q.length >= 2 && top && top.kind === 'country' && top.label.toLocaleLowerCase('tr').startsWith(q.toLocaleLowerCase('tr')) && top.label.length > q.length
+      ? top.label.slice(q.length)
+      : '';
+  const acceptGhost = () => {
+    if (!ghost) return false;
+    setQ(q + ghost);
+    setHi(0);
+    return true;
+  };
   const pick = (a?: SearchAction) => {
     setOpen(false);
+    setFull(false);
+    inputRef.current?.blur();
+    fullInputRef.current?.blur();
     if (!a) {
       if (q.trim()) onQuery(q.trim());
       return;
@@ -95,11 +127,18 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
     if (a.kind === 'country' && a.code) onOpenCountry(a.code);
     else if (a.tab && a.tile) onOpenTool(a.tab, a.tile);
   };
-  const listId = `${id}-list`;
+  const openFull = () => {
+    // aynı dokunuşun içinde tam ekranı çiz ve oradaki kutuya odaklan (iPhone klavyesi açık kalsın)
+    flushSync(() => setFull(true));
+    fullInputRef.current?.focus();
+  };
+  const render = (isFull: boolean) => {
+  const fid = isFull ? `${id}-full` : id;
+  const listId = `${fid}-list`;
   return (
     <form
-      ref={boxRef}
-      className={`vz-ss ${variant}`}
+      ref={isFull ? undefined : boxRef}
+      className={`vz-ss ${variant}${isFull ? ' full' : ''}`}
       role="search"
       onSubmit={(e) => {
         e.preventDefault();
@@ -107,14 +146,24 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
         pick(res.length && (open || res[0].kind === 'country') ? res[Math.min(hi, res.length - 1)] : undefined);
       }}
       onBlur={(e) => {
-        if (!boxRef.current?.contains(e.relatedTarget as Node)) setOpen(false);
+        if (!isFull && !boxRef.current?.contains(e.relatedTarget as Node)) setOpen(false);
       }}
     >
       <div className="vz-searchbox">
+        {isFull && (
+          <button type="button" className="vz-ss-back" onClick={() => { setFull(false); setOpen(false); }} aria-label={l('Aramayı kapat', 'Close search', 'Suche schließen', 'Cerrar búsqueda', 'Закрыть поиск')}>
+            <Icon name="back" size={18} duo={false} />
+          </button>
+        )}
         <Icon name="search" size={variant === 'hero' ? 20 : 18} duo={false} />
-        <label htmlFor={id} className="sr-only">{placeholder}</label>
+        <label htmlFor={fid} className="sr-only">{placeholder}</label>
+        <span className="vz-ss-field">
+        {ghost && open && isFull === full && (
+          <span className="vz-ss-ghost" aria-hidden="true"><span>{q}</span>{ghost}</span>
+        )}
         <input
-          id={id}
+          ref={isFull ? fullInputRef : inputRef}
+          id={fid}
           type="search"
           role="combobox"
           aria-expanded={open && res.length > 0}
@@ -128,13 +177,22 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
             setOpen(true);
             setHi(0);
           }}
-          onFocus={() => q && setOpen(true)}
+          onFocus={() => {
+            if (!isFull && isPhone()) {
+              openFull();
+              return;
+            }
+            if (q) setOpen(true);
+          }}
           onKeyDown={(e) => {
-            if (e.key === 'ArrowDown') { e.preventDefault(); setOpen(true); setHi((h) => Math.min(h + 1, res.length - 1)); }
+            const atEnd = e.currentTarget.selectionStart === q.length;
+            if ((e.key === 'ArrowRight' && atEnd) || (e.key === 'Tab' && ghost)) { if (acceptGhost()) e.preventDefault(); }
+            else if (e.key === 'ArrowDown') { e.preventDefault(); setOpen(true); setHi((h) => Math.min(h + 1, res.length - 1)); }
             else if (e.key === 'ArrowUp') { e.preventDefault(); setHi((h) => Math.max(h - 1, 0)); }
-            else if (e.key === 'Escape') setOpen(false);
+            else if (e.key === 'Escape') { setOpen(false); setFull(false); }
           }}
         />
+        </span>
         {q && (
           <button type="button" onClick={() => { setQ(''); setOpen(false); }} aria-label={l('Temizle', 'Clear', 'Leeren', 'Borrar', 'Очистить')}>
             <Icon name="close" size={16} duo={false} />
@@ -142,7 +200,12 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
         )}
         {variant === 'hero' && <button type="submit" className="vz-btn vz-btn-primary vz-ss-go">{l('Ara', 'Search', 'Suchen', 'Buscar', 'Найти')}</button>}
       </div>
-      {open && q.trim() && (
+      {isFull && !q.trim() && (
+        <div className="vz-ss-pop">
+          <div className="vz-ss-empty">{l('Ülke adı ya da "Schengen", "bavul", "döviz" gibi bir araç yaz.', 'Type a country, or a tool like "Schengen", "packing", "currency".', 'Land oder Tool eingeben.', 'Escribe un país o una herramienta.', 'Введите страну или инструмент.')}</div>
+        </div>
+      )}
+      {open && q.trim() && isFull === full && (
         <div className="vz-ss-pop" id={listId} role="listbox">
           {res.length === 0 ? (
             <div className="vz-ss-empty">{l('Sonuç yok. Ülke adı ya da "Schengen", "bavul" gibi bir araç yaz.', 'No results. Try a country or a tool like "Schengen" or "packing".', 'Keine Treffer.', 'Sin resultados.', 'Ничего не найдено.')}</div>
@@ -155,6 +218,8 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
                 aria-selected={i === hi}
                 className={`vz-ss-item${i === hi ? ' hi' : ''}`}
                 onMouseEnter={() => setHi(i)}
+                // fareyle basınca kutu odağı kaybetmesin; liste kapanmadan tıklama yakalansın
+                onMouseDown={(e) => e.preventDefault()}
                 onClick={() => pick(a)}
               >
                 {a.kind === 'country' && a.code ? <Flag code={a.code} size="sm" /> : <span className="vz-ic sm"><Icon name={a.icon || 'tools'} size={16} /></span>}
@@ -169,5 +234,12 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
         </div>
       )}
     </form>
+  );
+  };
+  return (
+    <>
+      {render(false)}
+      {full && typeof document !== 'undefined' && createPortal(render(true), document.body)}
+    </>
   );
 };

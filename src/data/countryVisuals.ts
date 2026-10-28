@@ -145,7 +145,7 @@ export function getCountryVisual(
     author: 'Vizamigo',
     license: 'All rights reserved',
     sourceUrl: DEFAULT_TRAVEL_FALLBACK,
-    sourcePageUrl: 'https://vizamigo.com',
+    sourcePageUrl: 'https://www.vizamigo.com',
     sourceId: 'fallback',
     verifiedAt: '2026-10-17',
     focus: 'center',

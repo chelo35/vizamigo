@@ -8,7 +8,7 @@ import { getPassportItems, dateToDayIndex, dayIndexToDate, getTodayDayIndex } fr
 import { getStayDurationText, generateDirectAnswerSnippet, getCountryNaturalH1 } from '../utils/schemaGenerator';
 import { CountryCard } from './country';
 import { countryToRegion } from '../data/passportData';
-import { WORLD_DOTS, WORLD_W, WORLD_H, project } from './worldDots';
+import { SeaMap, MapPoint } from './SeaMap';
 import { getCountryName, INFO, getLocalizedPartner, AFFILIATE_PARTNERS } from '../data/passportData';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
@@ -625,28 +625,27 @@ export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport,
   );
 };
 
-/** Ülkenin dünyadaki yeri: nokta harita, ülkeye yakınlaşmış, pasaport ülkesinden kavis. */
+/** Ülkenin dünyadaki yeri: gerçek harita (Google), pasaport ülkesinden kesik çizgi; açılmazsa nokta harita. */
 const CountryMap: React.FC<{ code: string; home: string }> = ({ code, home }) => {
+  const { l, language } = useI18n();
   const g = GEO_DATA[code];
   const h = GEO_DATA[home];
+  const points = React.useMemo<MapPoint[]>(() => {
+    if (!g) return [];
+    const p: MapPoint[] = [{ id: code, lat: g.lat, lng: g.lng, color: '#D9534F', big: true, title: `${getCountryName(code, language)} · ${g.capital}`, tag: g.capital }];
+    if (h && home !== code) p.unshift({ id: `home-${home}`, lat: h.lat, lng: h.lng, color: '#1095AE', title: getCountryName(home, language), tag: getCountryName(home, language) });
+    return p;
+  }, [code, home, language]); // eslint-disable-line react-hooks/exhaustive-deps
   if (!g) return null;
-  const [x, y] = project(g.lng, g.lat);
-  const hp = h ? project(h.lng, h.lat) : null;
-  const span = 300;
-  const vx = Math.max(0, Math.min(WORLD_W - span, x - span / 2));
-  const vh = span * 0.56;
-  const vy = Math.max(0, Math.min(WORLD_H - vh, y - vh / 2));
-  const k = span / WORLD_W;
-  const mid = hp ? [(hp[0] + x) / 2, (hp[1] + y) / 2 - Math.min(40, Math.hypot(hp[0] - x, hp[1] - y) * 0.25)] : null;
+  const path = h && home !== code ? [{ lat: h.lat, lng: h.lng }, { lat: g.lat, lng: g.lng }] : undefined;
   return (
-    <div className="vz-mapbox">
-      <svg viewBox={`${vx} ${vy} ${span} ${vh}`} role="img" aria-label={code}>
-        <path d={WORLD_DOTS} className="vz-map-dots" strokeWidth={Math.max(2.2 * k, 1.4)} />
-        {hp && mid && <path d={`M${hp[0]} ${hp[1]} Q${mid[0]} ${mid[1]} ${x} ${y}`} className="vz-map-route" strokeWidth={1.2} strokeDasharray="4 3" />}
-        {hp && <circle cx={hp[0]} cy={hp[1]} r={3} className="vz-map-home" />}
-        <circle cx={x} cy={y} r={9} className="vz-map-pulse" />
-        <circle cx={x} cy={y} r={4.5} className="vz-map-pin" />
-      </svg>
-    </div>
+    <SeaMap
+      points={points}
+      path={path}
+      height={340}
+      zoom={4}
+      selectedId={code}
+      ariaLabel={l(`${getCountryName(code, language)} haritada`, `${getCountryName(code, language)} on the map`, 'Karte', 'Mapa', 'Карта')}
+    />
   );
 };

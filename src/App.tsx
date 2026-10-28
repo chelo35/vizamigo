@@ -212,6 +212,7 @@ function AppContent() {
         countryCode={selectedCountryCode}
         currentPassport={currentPassport}
         is404={route.is404}
+        infoPage={route.infoPage}
       />
 
       <TopBar

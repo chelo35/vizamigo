@@ -3,6 +3,7 @@ import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, List, Page, Row, Segmented, Stat, Tags, Tile, TileGrid, VisaBadge, Bullets, OpenRequest, fmtNum } from './ui';
 import { CountryCard } from './country';
+import { SeaMap, MapPoint } from './SeaMap';
 import { WORLD_DOTS, WORLD_W, WORLD_H, project } from './worldDots';
 import { getPassportItems, validateRouteStop, computeRouteSchengenTotal, dateToDayIndex, dayIndexToDate, getTodayDayIndex, formatLocalizedDate, RouteStop, RouteWarning } from '../utils/calculator';
 import { loadStoredRouteStops, saveStoredRouteStops, loadStoredTrips } from '../utils/storage';
@@ -340,6 +341,20 @@ const MapView: React.FC<{ r: RouteApi; home: string }> = ({ r, home }) => {
   const k = (x1 - x0) / WORLD_W; // ölçek: noktalar ve yazılar haritayla küçülsün
 
   const legs = codes.map((c, i) => estimateTravelLeg(i === 0 ? home : codes[i - 1], c));
+  const [selStop, setSelStop] = useState<string | null>(null);
+  const modeName = (m: string) =>
+    m === 'flight' ? l('Uçuş', 'Flight', 'Flug', 'Vuelo', 'Перелёт') : m === 'train' ? l('Tren', 'Train', 'Zug', 'Tren', 'Поезд') : m === 'ferry' ? l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром') : l('Otobüs / araba', 'Bus / car', 'Bus / Auto', 'Bus / coche', 'Автобус / авто');
+  const mapPoints = React.useMemo<MapPoint[]>(() => {
+    const hg = getCountryGeo(home);
+    return [
+      { id: `home-${home}`, lat: hg.lat, lng: hg.lng, color: '#1095AE', title: getCountryName(home, language), tag: getCountryName(home, language) },
+      ...r.stops.map((s, i) => {
+        const g = getCountryGeo(s.countryCode);
+        return { id: s.id, lat: g.lat, lng: g.lng, color: SCHENGEN_SET.has(s.countryCode) ? '#2F7FD8' : '#D9534F', label: String(i + 1), title: getCountryName(s.countryCode, language), onClick: () => setSelStop(s.id) };
+      })
+    ];
+  }, [r.stops, home, language]); // eslint-disable-line react-hooks/exhaustive-deps
+  const mapPath = React.useMemo(() => [getCountryGeo(home), ...r.stops.map((s) => getCountryGeo(s.countryCode))].map((g) => ({ lat: g.lat, lng: g.lng })), [r.stops, home]);
   const totalKm = legs.reduce((s, x) => s + x.distanceKm, 0);
 
   if (!r.stops.length) return <Empty icon="map" title={l('Haritada gösterecek durak yok', 'No stops to show', 'Keine Stopps', 'Sin paradas', 'Нет остановок')} text={l('Önce Rota planlayıcıdan ülke ekle.', 'Add countries in the route planner first.', 'Zuerst Länder hinzufügen.', 'Añade países primero.', 'Сначала добавьте страны.')} />;
@@ -355,25 +370,38 @@ const MapView: React.FC<{ r: RouteApi; home: string }> = ({ r, home }) => {
         <span className="vz-muted" style={{ fontSize: 13 }}>{l(`Yaklaşık ${fmtNum(totalKm, language)} km`, `About ${fmtNum(totalKm, language)} km`, `Ca. ${fmtNum(totalKm, language)} km`, `Unos ${fmtNum(totalKm, language)} km`, `Около ${fmtNum(totalKm, language)} км`)}</span>
       </div>
       {mode === 'map' ? (
-        <div className="vz-mapbox">
-          <svg viewBox={vb} role="img" aria-label={l('Rota haritası', 'Route map', 'Routenkarte', 'Mapa de ruta', 'Карта маршрута')} preserveAspectRatio="xMidYMid meet">
-            <path d={WORLD_DOTS} className="vz-map-dots" strokeWidth={Math.max(2.2 * k, 1.1)} />
-            <path id="vz-route-path" d={pathD} className="vz-map-route" strokeWidth={Math.max(2.4 * k, 1)} strokeDasharray={`${6 * k} ${5 * k}`} />
-            <g className="vz-map-plane">
-              <path d="M2 18 L 26 13 L 33 15 L 26 19 L 2 22 L 9 19 L 5 17 Z M 12 17 L 7 8 L 11 8 L 19 15 Z M 12 19 L 7 28 L 11 28 L 19 21 Z" transform={`scale(${Math.max(0.5 * k, 0.25)}) translate(-18 -18)`} />
-              <animateMotion dur={`${Math.max(4, all.length * 2)}s`} repeatCount="indefinite" rotate="auto">
-                <mpath href="#vz-route-path" />
-              </animateMotion>
-            </g>
-            <circle cx={homePt[0]} cy={homePt[1]} r={Math.max(6 * k, 3)} className="vz-map-home" />
-            {pts.map((p, i) => (
-              <g key={i}>
-                <circle cx={p[0]} cy={p[1]} r={Math.max(11 * k, 5)} className="vz-map-pin" />
-                <text x={p[0]} y={p[1]} dy="0.35em" textAnchor="middle" className="vz-map-num" fontSize={Math.max(11 * k, 5)}>{i + 1}</text>
-              </g>
-            ))}
-          </svg>
-        </div>
+        <>
+          <SeaMap
+            points={mapPoints}
+            path={mapPath}
+            arrows
+            height={420}
+            selectedId={selStop}
+            ariaLabel={l('Rota haritası', 'Route map', 'Routenkarte', 'Mapa de ruta', 'Карта маршрута')}
+          />
+          {selStop && (() => {
+            const i = r.stops.findIndex((x) => x.id === selStop);
+            const s0 = r.stops[i];
+            if (!s0) return null;
+            const nx = legs[i + 1];
+            const nd = dateToDayIndex(s0.exitDate) - dateToDayIndex(s0.entryDate) + 1;
+            return (
+              <div className="vz-wm-card">
+                <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+                  <span className="vz-row-flex" style={{ gap: 10 }}><span className="vz-step-n" style={{ width: 30, height: 30 }}>{i + 1}</span><Flag code={s0.countryCode} size="sm" /><b>{getCountryName(s0.countryCode, language)}</b></span>
+                  <button type="button" className="vz-iconbtn" onClick={() => setSelStop(null)} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}><Icon name="close" size={16} duo={false} /></button>
+                </div>
+                <span className="vz-muted">{formatLocalizedDate(dateToDayIndex(s0.entryDate), language)} → {formatLocalizedDate(dateToDayIndex(s0.exitDate), language)} · {l(`${nd} gün`, `${nd} days`, `${nd} Tage`, `${nd} días`, `${nd} дн.`)}</span>
+                {nx && <span>{l('Sonraki yol', 'Next leg', 'Nächste Etappe', 'Siguiente tramo', 'Далее')}: {getCountryName(nx.toCode, language)} · {modeName(nx.recommendedMode)} · {fmtNum(nx.distanceKm, language)} km · ~{fmtNum(nx.estimatedTransitHours, language, 1)} {l('sa', 'h', 'Std.', 'h', 'ч')}</span>}
+              </div>
+            );
+          })()}
+          <div className="vz-actions">
+            <LinkBtn small icon="map" href={`https://www.google.com/maps/dir/${[home, ...codes].map((c) => encodeURIComponent(`${getCountryGeo(c).capital || ''} ${getCountryName(c, 'en')}`)).join('/')}`}>
+              {l('Google Haritalar’da yol tarifi', 'Directions in Google Maps', 'Route in Google Maps', 'Ruta en Google Maps', 'Маршрут в Google Maps')}
+            </LinkBtn>
+          </div>
+        </>
       ) : (
         <div className="vz-timeline">
           {r.stops.map((s, i) => {
@@ -398,7 +426,7 @@ const MapView: React.FC<{ r: RouteApi; home: string }> = ({ r, home }) => {
             key={i}
             icon={g.recommendedMode === 'flight' ? 'plane' : g.recommendedMode === 'ferry' ? 'drop' : g.recommendedMode === 'train' ? 'transit' : 'car'}
             title={`${getCountryName(g.fromCode, language)} → ${getCountryName(g.toCode, language)}`}
-            sub={`${g.modeLabel} · ${fmtNum(g.distanceKm, language)} km · ~${fmtNum(g.estimatedTransitHours, language, 1)} ${l('saat', 'h', 'Std.', 'h', 'ч')}`}
+            sub={`${modeName(g.recommendedMode)} · ${fmtNum(g.distanceKm, language)} km · ~${fmtNum(g.estimatedTransitHours, language, 1)} ${l('saat', 'h', 'Std.', 'h', 'ч')}`}
           />
         ))}
       </List>

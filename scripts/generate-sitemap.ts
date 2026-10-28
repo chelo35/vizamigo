@@ -115,6 +115,18 @@ export function generateSitemapXml(): string {
     });
   });
 
+  // 4. Bilgi merkezi sayfaları (/:lang/info/:page)
+  const infoPages = ['terms', 'privacy', 'disclaimer', 'kvkk_gdpr', 'standards', 'attributions', 'appeals', 'passport_lost', 'crisis', 'transit', 'partners', 'airlines', 'insurance', 'community', 'api', 'mission', 'sustainability', 'careers', 'press'];
+  infoPages.forEach((page) => {
+    const alts = [
+      ...langCodes.map((lang) => ({ hreflang: lang, href: `${BASE_URL}/${lang}/info/${page}` })),
+      { hreflang: 'x-default', href: `${BASE_URL}/en/info/${page}` }
+    ];
+    langCodes.forEach((lang) => {
+      entries.push({ loc: `${BASE_URL}/${lang}/info/${page}`, alternates: alts as never, lastmod: TODAY, changefreq: 'monthly', priority: '0.3' });
+    });
+  });
+
   // Format valid, indented XML with strict namespaces
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;

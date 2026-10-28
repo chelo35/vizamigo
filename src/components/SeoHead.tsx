@@ -14,6 +14,8 @@ import {
 } from '../utils/seoRouter';
 import { getCountryName } from '../data/passportData';
 import { injectCountrySchema, getCountrySeoMeta } from '../utils/schemaGenerator';
+import { getTabSeo } from '../utils/tabSeo';
+import { BASE_URL } from '../utils/seoRouter';
 
 interface SeoHeadProps {
   language: SupportedLanguage;
@@ -21,6 +23,7 @@ interface SeoHeadProps {
   countryCode: string | null;
   currentPassport: string;
   is404?: boolean;
+  infoPage?: string | null;
 }
 
 export const SeoHead: React.FC<SeoHeadProps> = ({
@@ -28,7 +31,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
   tab,
   countryCode,
   currentPassport,
-  is404 = false
+  is404 = false,
+  infoPage = null
 }) => {
   useEffect(() => {
     // 1. Update HTML lang attribute for screen readers and Mobile Googlebot
@@ -155,6 +159,12 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       }
     }
 
+    const tabSeo = !countryCode ? getTabSeo(tab, language) : null;
+    if (tabSeo) {
+      pageTitle = tabSeo.title;
+      metaDescription = tabSeo.desc;
+    }
+
     document.title = pageTitle;
 
     // 4. Update Meta Description
@@ -167,7 +177,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     descMeta.setAttribute('content', metaDescription);
 
     // 5. Update Canonical Tag & OpenGraph URL
-    const currentCanonicalUrl = buildAbsoluteLocalizedUrl(language, tab, countryCode);
+    const currentCanonicalUrl = infoPage ? `${BASE_URL}/${language}/info/${infoPage}` : buildAbsoluteLocalizedUrl(language, tab, countryCode);
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -186,7 +196,9 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]');
     existingHreflangs.forEach((el) => el.remove());
 
-    const hreflangAlternates = getHreflangAlternatesForRoute(tab, countryCode);
+    const hreflangAlternates = infoPage
+      ? [...(['tr', 'en', 'de', 'ru', 'es'] as const).map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${infoPage}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${infoPage}` }]
+      : getHreflangAlternatesForRoute(tab, countryCode);
     hreflangAlternates.forEach((alt) => {
       const linkEl = document.createElement('link');
       linkEl.setAttribute('rel', 'alternate');
@@ -199,7 +211,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     // 7. Inject or Update Schema.org (JSON-LD) Microdata
     injectCountrySchema(countryCode, language, currentPassport);
 
-  }, [language, tab, countryCode, currentPassport, is404]);
+  }, [language, tab, countryCode, currentPassport, is404, infoPage]);
 
   return null;
 };

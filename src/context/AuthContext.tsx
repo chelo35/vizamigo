@@ -36,34 +36,9 @@ interface AuthContextType {
 const STORAGE_KEY_SESSION = 'vr_current_user';
 const STORAGE_KEY_ACCOUNTS = 'vr_user_accounts';
 
-const DEFAULT_ACCOUNTS: StoredAccount[] = [
-  {
-    user: {
-      id: 'usr_google_default',
-      email: 'celebisahin1981@gmail.com',
-      name: 'Şahin Çelebi',
-      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80',
-      provider: 'google',
-      isPro: true,
-      createdAt: '2026-01-15T10:00:00.000Z',
-      primaryPassport: 'TR',
-      secondaryPassport: 'DE'
-    }
-  },
-  {
-    user: {
-      id: 'usr_demo',
-      email: 'gezgin@visacompass.com',
-      name: 'Gezgin Gezen',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
-      provider: 'email',
-      isPro: false,
-      createdAt: '2026-02-01T12:00:00.000Z',
-      primaryPassport: 'TR'
-    },
-    passwordHash: 'gezgin123'
-  }
-];
+// Örnek hesaplar kaldırıldı; gerçek giriş (Supabase) gelene kadar hesaplar yalnızca bu cihazda tutulur.
+const DEFAULT_ACCOUNTS: StoredAccount[] = [];
+const LEGACY_DEMO_IDS = new Set(['usr_google_default', 'usr_demo']);
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
@@ -72,7 +47,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     try {
       if (typeof localStorage !== 'undefined') {
         const saved = localStorage.getItem(STORAGE_KEY_SESSION);
-        if (saved) return JSON.parse(saved);
+        if (saved) {
+          const u = JSON.parse(saved) as AuthUser;
+          // eski sahte Google oturumunu ve örnek kullanıcıları kapat
+          if (u && (LEGACY_DEMO_IDS.has(u.id) || String(u.id).startsWith('usr_g_'))) {
+            localStorage.removeItem(STORAGE_KEY_SESSION);
+            return null;
+          }
+          return u;
+        }
       }
     } catch {}
     return null;
@@ -86,8 +69,9 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     try {
       if (typeof localStorage !== 'undefined') {
         const existing = localStorage.getItem(STORAGE_KEY_ACCOUNTS);
-        if (!existing) {
-          localStorage.setItem(STORAGE_KEY_ACCOUNTS, JSON.stringify(DEFAULT_ACCOUNTS));
+        if (existing) {
+          const list = (JSON.parse(existing) as StoredAccount[]).filter((a) => !LEGACY_DEMO_IDS.has(a.user?.id));
+          localStorage.setItem(STORAGE_KEY_ACCOUNTS, JSON.stringify(list));
         }
       }
     } catch {}
@@ -111,31 +95,9 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     } catch {}
   };
 
+  // Google ile giriş gerçek servis (Supabase) bağlanınca açılacak; sahte oturum açılmıyor.
   const loginWithGoogle = async (): Promise<{ success: boolean; error?: string }> => {
-    try {
-      // Simulate real OAuth popup / connection delay
-      await new Promise(resolve => setTimeout(resolve, 600));
-
-      // Standard Google authenticated profile
-      const googleUser: AuthUser = {
-        id: `usr_g_${Date.now()}`,
-        email: 'celebisahin1981@gmail.com',
-        name: 'Şahin Çelebi',
-        avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80',
-        provider: 'google',
-        isPro: true,
-        createdAt: new Date().toISOString(),
-        primaryPassport: 'TR',
-        secondaryPassport: 'DE'
-      };
-
-      setUser(googleUser);
-      localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(googleUser));
-      setIsAuthModalOpen(false);
-      return { success: true };
-    } catch {
-      return { success: false, error: 'Google authentication failed' };
-    }
+    return { success: false, error: 'Google ile giriş çok yakında. Şimdilik e-posta ile hesap açabilirsin. / Google sign-in is coming soon; use email for now.' };
   };
 
   const loginWithFacebook = async (): Promise<{ success: boolean; error?: string }> => {

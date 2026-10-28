@@ -286,18 +286,6 @@ export const AuthModal: React.FC = () => {
                 <label className="text-xs font-semibold text-slate-700 dark:text-slate-300">
                   {t.passwordLabel}
                 </label>
-                {authModalTab === 'login' && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setEmail('celebisahin1981@gmail.com');
-                      setPassword('gezgin123');
-                    }}
-                    className="text-xs text-teal-600 dark:text-teal-400 hover:underline cursor-pointer"
-                  >
-                    {l('Örnek bilgileri doldur', 'Quick demo fill', 'Demo-Daten ausfüllen')}
-                  </button>
-                )}
               </div>
               <div className="relative">
                 <Lock className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />

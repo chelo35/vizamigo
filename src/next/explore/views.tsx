@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../../data/i18n';
 import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, Row, List, SearchInput, Segmented, Stat, VisaBadge, fmtPair, visaTone } from '../ui';
 import { SeaMap, MapPoint } from '../SeaMap';
+import { VisaWorldMap } from '../WorldMap';
 
 export const TONE_HEX: Record<string, string> = { ok: '#1F9D6B', sea: '#1095AE', sun: '#E59A1C', warn: '#D9534F', mute: '#9A948C' };
 import { Icon } from '../Icon';
@@ -141,8 +142,8 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
 
   return (
     <div className="vz-stack">
-      <SearchInput id="vz-countries-q" value={q} onChange={setQ} placeholder={l('Ülke adı yaz…', 'Type a country…', 'Land eingeben…', 'Escribe un país…', 'Введите страну…')} autoFocus={!!initialQuery} />
-      <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+      {view === 'list' && <SearchInput id="vz-countries-q" value={q} onChange={setQ} placeholder={l('Ülke adı yaz…', 'Type a country…', 'Land eingeben…', 'Escribe un país…', 'Введите страну…')} autoFocus={!!initialQuery} />}
+      <div className="vz-row-flex" style={{ justifyContent: 'space-between', display: view === 'list' ? undefined : 'none' }}>
         <Segmented
           label={l('Filtre', 'Filter', 'Filter', 'Filtro', 'Фильтр')}
           value={mode}
@@ -172,25 +173,10 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
           ]}
         />
       </div>
-      {view === 'map' && res.length > 0 && (
-        <>
-          <SeaMap points={points} height={440} ariaLabel={l('Ülkeler haritası, vize durumuna göre renkli', 'Map of countries coloured by visa status', 'Länderkarte nach Visastatus', 'Mapa de países por visado', 'Карта стран по визовому режиму')} />
-          <div className="vz-legend">
-            {[
-              ['ok', l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы')],
-              ['sea', l('e-Vize / ETA', 'e-Visa / ETA', 'e-Visum / ETA', 'e-Visado / ETA', 'э-виза / ETA')],
-              ['sun', l('Kapıda vize', 'Visa on arrival', 'Visum bei Ankunft', 'Visado a la llegada', 'Виза по прилёту')],
-              ['warn', l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado requerido', 'Нужна виза')]
-            ].map(([t, n]) => (
-              <span key={t}><i style={{ background: TONE_HEX[t] }} />{n}</span>
-            ))}
-            <span className="vz-muted">{l('Noktaya dokun, ülke açılsın', 'Tap a dot to open the country', 'Punkt antippen', 'Toca un punto', 'Нажмите на точку')}</span>
-          </div>
-        </>
-      )}
-      {res.length === 0 ? (
+      {view === 'map' && <VisaWorldMap passport={passport} onOpenCountry={onOpenCountry} height={460} />}
+      {view === 'map' ? null : res.length === 0 ? (
         <Empty icon="search" title={l('Ülke bulunamadı', 'No country found', 'Kein Land gefunden', 'No encontrado', 'Не найдено')} />
-      ) : view === 'map' ? null : (
+      ) : (
         <List>
           {res.map((c) => {
             const it = items.get(c);

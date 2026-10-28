@@ -600,3 +600,68 @@ html.dark .vz-band-sky::after { background: linear-gradient(180deg, transparent,
 .vz-info-mnav { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .vz-info-body { padding: clamp(18px, 3vw, 32px); min-width: 0; }
 @media (min-width: 960px) { .vz-info-mnav { display: none; } }
+
+/* ---- Akıllı arama: tamamlama, tam ekran (telefon) ---- */
+.vz-ss-field { position: relative; flex: 1; min-width: 0; display: flex; align-items: center; }
+.vz-ss-field input { width: 100%; position: relative; z-index: 1; }
+.vz-ss-ghost { position: absolute; left: 0; top: 50%; transform: translateY(-50%); white-space: pre; pointer-events: none; color: var(--rd-muted); opacity: 0.7; font: inherit; font-size: 15.5px; overflow: hidden; max-width: 100%; }
+.vz-ss.hero .vz-ss-ghost { font-size: 16px; }
+.vz-ss-ghost > span { visibility: hidden; }
+.vz-ss-back { flex: 0 0 auto; }
+.vz-ss.full { position: fixed; inset: 0; z-index: 1000; max-width: none; background: var(--rd-bg); padding: max(12px, env(safe-area-inset-top)) 12px 12px; display: flex; flex-direction: column; gap: 8px; }
+.vz-ss.full .vz-searchbox { min-height: 52px; border-radius: 14px; box-shadow: none; border-color: var(--rd-sea); padding: 4px 6px; }
+.vz-ss.full .vz-ss-go { display: none; }
+.vz-ss.full .vz-ss-pop { position: static; max-height: none; flex: 1; overflow-y: auto; box-shadow: none; border: 0; background: transparent; padding: 0; }
+.vz-ss.full .vz-ss-item { min-height: 56px; }
+.vz-ss.full input { font-size: 16px; }
+
+/* ---- Harita v2 ---- */
+.vz-seamap { position: relative; }
+.vz-seamap svg.vz-dotmap { width: 100%; height: 100%; max-height: none; aspect-ratio: auto; display: block; touch-action: pan-y; }
+.vz-seamap svg.vz-dotmap.grab { cursor: grab; }
+.vz-seamap svg.vz-dotmap.grab:active { cursor: grabbing; }
+.vz-seamap.dots .vz-map-dots { stroke: color-mix(in srgb, var(--rd-sea) 42%, transparent); }
+html.dark .vz-seamap.dots .vz-map-dots { stroke: color-mix(in srgb, var(--rd-sea) 38%, transparent); }
+.vz-seamap-load { position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, color-mix(in srgb, var(--rd-surface) 60%, transparent) 50%, transparent 70%) 0 0 / 200% 100%, var(--rd-sky-b); animation: vz-shimmer 1.4s linear infinite; }
+@keyframes vz-shimmer { to { background-position: -200% 0, 0 0; } }
+.vz-map-ctrl { position: absolute; right: 10px; bottom: 10px; display: flex; flex-direction: column; gap: 6px; z-index: 2; }
+.vz-map-ctrl button { width: 38px; height: 38px; border-radius: 12px; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); display: grid; place-items: center; cursor: pointer; box-shadow: var(--vz-shadow-sm); }
+@media (max-width: 640px) { .vz-seamap:not(.dots) { height: 340px !important; } }
+
+/* ---- Dünya haritası (vize / radar) ---- */
+.vz-wm { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.vz-wm-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.vz-wm-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.vz-wm-search { position: relative; flex: 1; min-width: 220px; max-width: 420px; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border-radius: 14px; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-muted); }
+.vz-wm-search:focus-within { border-color: var(--rd-sea); box-shadow: var(--vz-ring); }
+.vz-wm-search input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 16px; color: var(--rd-fg); }
+.vz-wm-sug { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 14px; box-shadow: var(--vz-shadow); padding: 4px; display: flex; flex-direction: column; }
+.vz-wm-sug button { display: flex; align-items: center; gap: 10px; padding: 10px; border: 0; background: none; font: inherit; color: var(--rd-fg); text-align: left; border-radius: 10px; cursor: pointer; min-height: 44px; }
+.vz-wm-sug button:hover { background: var(--rd-sea-soft); }
+.vz-wm-legend { gap: 8px; }
+.vz-wm-cat { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-muted); font: inherit; font-size: 13.5px; cursor: pointer; opacity: 0.55; }
+.vz-wm-cat.on { opacity: 1; color: var(--rd-fg); border-color: color-mix(in srgb, var(--rd-sea) 40%, var(--rd-line)); }
+.vz-wm-cat i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.vz-wm-cat b { font-variant-numeric: tabular-nums; }
+.vz-wm-body { display: grid; gap: 12px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 960px) { .vz-wm-body { grid-template-columns: minmax(0, 1fr) 320px; } }
+.vz-wm-hint { display: flex; gap: 10px; align-items: flex-start; padding: 14px; border-radius: var(--vz-r); border: 1px dashed var(--rd-sea-tint); background: var(--rd-sea-soft); color: var(--rd-muted); font-size: 14px; }
+.vz-wm-card { display: flex; flex-direction: column; gap: 12px; padding: 16px; border-radius: var(--vz-r-lg); border: 1px solid var(--rd-line); background: var(--rd-surface); box-shadow: var(--vz-shadow-sm); animation: vz-pop 0.2s ease; }
+@keyframes vz-pop { from { opacity: 0; transform: translateY(6px); } }
+.vz-wm-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; }
+.vz-wm-facts div { background: var(--rd-bg); border-radius: 12px; padding: 8px 10px; min-width: 0; }
+.vz-wm-facts div.wide { grid-column: 1 / -1; }
+.vz-wm-facts dt { font-size: 11.5px; color: var(--rd-muted); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; }
+.vz-wm-facts dd { margin: 2px 0 0; font-weight: 700; font-size: 14.5px; overflow-wrap: anywhere; }
+.vz-wm-fx { display: flex; flex-direction: column; gap: 6px; }
+.vz-maps-sec .vz-sechead { margin-bottom: 4px; }
+@media (max-width: 640px) {
+  .vz-wm { gap: 10px; }
+  .vz-wm-head { gap: 8px; }
+  .vz-wm-search { max-width: none; flex-basis: 100%; }
+  .vz-wm-legend { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+  .vz-wm-legend::-webkit-scrollbar { display: none; }
+  .vz-wm-cat, .vz-wm-legend > span { flex: 0 0 auto; }
+  .vz-wm-tools { width: 100%; justify-content: space-between; }
+  .vz-maps-sec .vz-sechead { flex-direction: column; align-items: flex-start; gap: 10px; }
+}

@@ -5,7 +5,7 @@ import { LiveStrip, loadDestination } from '../components/redesign/LiveStrip';
 import { PassportCover } from '../components/redesign/PassportCover';
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName } from '../data/passportData';
-import { Btn, OpenRequest, SecHead, Tile, TileGrid } from './ui';
+import { Btn, OpenRequest, SecHead, Segmented, Tile, TileGrid } from './ui';
 import { SmartSearch } from './SmartSearch';
 import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
@@ -16,6 +16,9 @@ const PopularView = lazy(() => V().then((m) => ({ default: m.PopularView })));
 const ChangesView = lazy(() => V().then((m) => ({ default: m.ChangesView })));
 const EasyTripView = lazy(() => V().then((m) => ({ default: m.EasyTripView })));
 const RadarView = lazy(() => V().then((m) => ({ default: m.RadarView })));
+const WM = () => import('./WorldMap');
+const VisaWorldMap = lazy(() => WM().then((m) => ({ default: m.VisaWorldMap })));
+const RadarWorldMap = lazy(() => WM().then((m) => ({ default: m.RadarWorldMap })));
 const HomeRails = lazy(() => import('./explore/rails').then((m) => ({ default: m.HomeRails })));
 
 export interface ExploreProps {
@@ -167,6 +170,8 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
 
+        <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
+
         <Suspense fallback={null}>
           <HomeRails passport={p.currentPassport} onOpenCountry={p.onOpenCountry} onOpenTile={(id) => openTile(id)} />
         </Suspense>
@@ -193,3 +198,50 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
   );
 };
 
+
+/** Ana sayfada doğrudan görünen harita bölümü; ekrana yaklaşınca yüklenir. */
+const HomeMaps: React.FC<{ passport: string; onOpenCountry: (c: string) => void }> = ({ passport, onOpenCountry }) => {
+  const { l } = useI18n();
+  const [kind, setKind] = useState<'visa' | 'radar'>('visa');
+  const ref = React.useRef<HTMLElement>(null);
+  const [near, setNear] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || near) return;
+    if (!('IntersectionObserver' in window)) {
+      setNear(true);
+      return;
+    }
+    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setNear(true), { rootMargin: '400px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [near]);
+  const mapH = typeof window !== 'undefined' && window.innerWidth < 640 ? 360 : 500;
+  return (
+    <section ref={ref} className="vz-home-sec vz-maps-sec" aria-labelledby="vz-h-maps">
+      <SecHead
+        id="vz-h-maps"
+        eyebrow={l('Haritalar', 'Maps', 'Karten', 'Mapas', 'Карты')}
+        title={kind === 'visa' ? l('Pasaportunla dünya haritası', 'The world map for your passport', 'Weltkarte für deinen Pass', 'El mapa del mundo para tu pasaporte', 'Карта мира для вашего паспорта') : l('Dünyada şu an: saat, hava, döviz', 'Right now: time, weather, currency', 'Gerade jetzt: Zeit, Wetter, Kurse', 'Ahora: hora, tiempo y divisas', 'Сейчас: время, погода, валюта')}
+        action={
+          <Segmented
+            label={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}
+            value={kind}
+            onChange={setKind}
+            options={[
+              { id: 'visa', label: l('Vize', 'Visa', 'Visum', 'Visado', 'Визы') },
+              { id: 'radar', label: l('Saat · hava · döviz', 'Time · weather · FX', 'Zeit · Wetter · Kurs', 'Hora · tiempo · divisa', 'Время · погода · курс') }
+            ]}
+          />
+        }
+      />
+      {near ? (
+        <Suspense fallback={<div className="vz-skel" style={{ height: mapH }} />}>
+          {kind === 'visa' ? <VisaWorldMap passport={passport} onOpenCountry={onOpenCountry} height={mapH} /> : <RadarWorldMap passport={passport} onOpenCountry={onOpenCountry} height={mapH} />}
+        </Suspense>
+      ) : (
+        <div className="vz-skel" style={{ height: mapH }} />
+      )}
+    </section>
+  );
+};

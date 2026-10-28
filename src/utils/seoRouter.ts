@@ -18,7 +18,7 @@ import { GEO_DATA } from '../data/geoData';
 import { D } from '../data/passportData';
 import { getCountrySlug, getCountryCodeFromSlug } from './countrySlugs';
 
-export const BASE_URL = 'https://vizamigo.com';
+export const BASE_URL = 'https://www.vizamigo.com';
 
 export const CORE_SEO_LANGUAGES: readonly SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es'] as const;
 
