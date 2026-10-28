@@ -8,6 +8,7 @@ import { D, getCountryName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { GEO_DATA } from '../data/geoData';
 import { saveUserReport, loadUserReports, deleteUserReport } from '../components/ReportChangeModal';
+import { getSupabase, GOOGLE_ENABLED } from '../context/AuthContext';
 import { AUDIT_DATABASE } from '../components/RegulationAuditModal';
 import { LegalInfoModal } from '../components/LegalInfoModal';
 import { processAssistantQuery, AssistantMessage, AssistantActionPill, isSpeechRecognitionSupported, startVoiceRecognition, stopVoiceRecognition } from '../services/aiAssistantEngine';
@@ -91,44 +92,83 @@ export const PassportSheet: React.FC<{ open: boolean; onClose: () => void; selec
 /* ---------------- Giriş / kayıt ---------------- */
 export const AuthSheet: React.FC = () => {
   const { l } = useI18n();
-  const { isAuthModalOpen, closeAuthModal, authModalTab, setAuthModalTab, loginWithGoogle, loginWithEmail, registerWithEmail } = useAuth();
+  const { isAuthModalOpen, closeAuthModal, authModalTab, setAuthModalTab, loginWithGoogle, loginWithEmail, registerWithEmail, resetPassword, setNewPassword, recoveryMode, authReady } = useAuth();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [pw, setPw] = useState('');
   const [err, setErr] = useState('');
+  const [info, setInfo] = useState('');
   const [busy, setBusy] = useState(false);
+  const [forgot, setForgot] = useState(false);
   const isReg = authModalTab === 'register';
-  const run = async (fn: () => Promise<{ success: boolean; error?: string }>) => {
+  const run = async (fn: () => Promise<{ success: boolean; error?: string; info?: string }>) => {
     setBusy(true);
     setErr('');
+    setInfo('');
     try {
       const r = await fn();
-      if (r.success) closeAuthModal();
-      else setErr(r.error || l('Bir şeyler ters gitti, tekrar dene.', 'Something went wrong, try again.', 'Fehler, bitte erneut versuchen.', 'Algo falló, inténtalo de nuevo.', 'Ошибка, попробуйте снова.'));
+      if (!r.success) setErr(r.error || l('Bir şeyler ters gitti, tekrar dene.', 'Something went wrong, try again.', 'Fehler, bitte erneut versuchen.', 'Algo falló, inténtalo de nuevo.', 'Ошибка, попробуйте снова.'));
+      else if (r.info) setInfo(r.info);
     } finally {
       setBusy(false);
     }
   };
+  const msgs = (
+    <>
+      {err && <div className="vz-note" style={{ color: 'var(--vz-warn)', borderColor: 'var(--vz-warn)' }}><Icon name="alert" size={18} duo={false} /><span>{err}</span></div>}
+      {info && <div className="vz-note" style={{ borderColor: 'var(--vz-ok)' }}><Icon name="check" size={18} duo={false} /><span>{info}</span></div>}
+    </>
+  );
+  // şifre sıfırlama bağlantısından gelindi: yeni şifre
+  if (recoveryMode) {
+    return (
+      <Sheet open={isAuthModalOpen} onClose={closeAuthModal} title={l('Yeni şifre belirle', 'Set a new password', 'Neues Passwort', 'Nueva contraseña', 'Новый пароль')} icon="lock">
+        <form className="vz-stack" style={{ gap: 12 }} onSubmit={(e) => { e.preventDefault(); run(() => setNewPassword(pw)); }}>
+          <Field label={l('Yeni şifre', 'New password', 'Neues Passwort', 'Nueva contraseña', 'Новый пароль')} htmlFor="vz-au-np" hint={l('En az 6 karakter', 'At least 6 characters', 'Mind. 6 Zeichen', 'Mín. 6 caracteres', 'Мин. 6 символов')}><input id="vz-au-np" type="password" className="vz-input" value={pw} onChange={(e) => setPw(e.target.value)} autoComplete="new-password" minLength={6} required /></Field>
+          {msgs}
+          <Btn type="submit" block disabled={busy}>{l('Kaydet', 'Save', 'Speichern', 'Guardar', 'Сохранить')}</Btn>
+        </form>
+      </Sheet>
+    );
+  }
   return (
-    <Sheet open={isAuthModalOpen} onClose={closeAuthModal} title={isReg ? l('Ücretsiz hesap aç', 'Create a free account', 'Kostenloses Konto', 'Crear cuenta gratis', 'Создать аккаунт') : l('Giriş yap', 'Sign in', 'Anmelden', 'Iniciar sesión', 'Войти')} icon="user">
-      <Segmented label={l('Giriş türü', 'Mode', 'Modus', 'Modo', 'Режим')} value={authModalTab} onChange={(v) => setAuthModalTab(v)} options={[{ id: 'login', label: l('Giriş yap', 'Sign in', 'Anmelden', 'Entrar', 'Вход') }, { id: 'register', label: l('Kaydol', 'Sign up', 'Registrieren', 'Registrarse', 'Регистрация') }]} />
-      <Btn variant="ghost" block icon="globe" disabled={busy} onClick={() => run(loginWithGoogle)}>{l('Google ile devam et', 'Continue with Google', 'Weiter mit Google', 'Continuar con Google', 'Войти через Google')}</Btn>
-      <div className="vz-or"><span>{l('ya da e-posta ile', 'or with email', 'oder mit E-Mail', 'o con email', 'или по email')}</span></div>
-      <form
-        className="vz-stack"
-        style={{ gap: 12 }}
-        onSubmit={(e) => {
-          e.preventDefault();
-          run(() => (isReg ? registerWithEmail(name, email, pw) : loginWithEmail(email, pw)));
-        }}
-      >
-        {isReg && <Field label={l('Adın', 'Your name', 'Dein Name', 'Tu nombre', 'Имя')} htmlFor="vz-au-n"><input id="vz-au-n" className="vz-input" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" required /></Field>}
-        <Field label={l('E-posta', 'Email', 'E-Mail', 'Email', 'Email')} htmlFor="vz-au-e"><input id="vz-au-e" type="email" className="vz-input" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" required /></Field>
-        <Field label={l('Şifre', 'Password', 'Passwort', 'Contraseña', 'Пароль')} htmlFor="vz-au-p" hint={isReg ? l('En az 6 karakter', 'At least 6 characters', 'Mind. 6 Zeichen', 'Mín. 6 caracteres', 'Мин. 6 символов') : undefined}><input id="vz-au-p" type="password" className="vz-input" value={pw} onChange={(e) => setPw(e.target.value)} autoComplete={isReg ? 'new-password' : 'current-password'} minLength={6} required /></Field>
-        {err && <div className="vz-note" style={{ color: 'var(--vz-warn)', borderColor: 'var(--vz-warn)' }}><Icon name="alert" size={18} duo={false} />{err}</div>}
-        <Btn type="submit" block disabled={busy}>{isReg ? l('Hesabı oluştur', 'Create account', 'Konto erstellen', 'Crear cuenta', 'Создать') : l('Giriş yap', 'Sign in', 'Anmelden', 'Entrar', 'Войти')}</Btn>
-      </form>
-      <p className="vz-muted" style={{ fontSize: 12.5 }}>{l('Devam ederek kullanım koşullarını ve gizlilik politikasını kabul etmiş olursun.', 'By continuing you accept the terms and privacy policy.', 'Mit dem Fortfahren akzeptierst du die AGB.', 'Al continuar aceptas los términos.', 'Продолжая, вы принимаете условия.')}</p>
+    <Sheet open={isAuthModalOpen} onClose={closeAuthModal} title={forgot ? l('Şifremi unuttum', 'Forgot password', 'Passwort vergessen', 'Olvidé mi contraseña', 'Забыли пароль') : isReg ? l('Ücretsiz hesap aç', 'Create a free account', 'Kostenloses Konto', 'Crear cuenta gratis', 'Создать аккаунт') : l('Giriş yap', 'Sign in', 'Anmelden', 'Iniciar sesión', 'Войти')} icon="user">
+      {!authReady && <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{l('Hesaplar çok yakında açılıyor. Uygulamanın tamamını hesapsız kullanabilirsin; verilerin bu cihazda saklanır.', 'Accounts are coming soon. Everything works without one; your data stays on this device.', 'Konten kommen bald.', 'Las cuentas llegan pronto.', 'Аккаунты скоро.')}</span></div>}
+      {forgot ? (
+        <form className="vz-stack" style={{ gap: 12 }} onSubmit={(e) => { e.preventDefault(); run(() => resetPassword(email)); }}>
+          <p className="vz-muted">{l('Hesabının e-postasını yaz; şifreni yenilemen için bir bağlantı gönderelim.', 'Enter your account email and we will send a reset link.', 'E-Mail eingeben, wir senden einen Link.', 'Escribe tu email y te enviamos un enlace.', 'Введите email, пришлём ссылку.')}</p>
+          <Field label={l('E-posta', 'Email', 'E-Mail', 'Email', 'Email')} htmlFor="vz-au-fe"><input id="vz-au-fe" type="email" className="vz-input" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" required /></Field>
+          {msgs}
+          <Btn type="submit" block disabled={busy || !authReady}>{l('Bağlantı gönder', 'Send link', 'Link senden', 'Enviar enlace', 'Отправить')}</Btn>
+          <Btn variant="ghost" block onClick={() => { setForgot(false); setErr(''); setInfo(''); }}>{l('Girişe dön', 'Back to sign in', 'Zurück', 'Volver', 'Назад')}</Btn>
+        </form>
+      ) : (
+        <>
+          <Segmented label={l('Giriş türü', 'Mode', 'Modus', 'Modo', 'Режим')} value={authModalTab} onChange={(v) => { setAuthModalTab(v); setErr(''); setInfo(''); }} options={[{ id: 'login', label: l('Giriş yap', 'Sign in', 'Anmelden', 'Entrar', 'Вход') }, { id: 'register', label: l('Kaydol', 'Sign up', 'Registrieren', 'Registrarse', 'Регистрация') }]} />
+          {GOOGLE_ENABLED && (
+            <>
+              <Btn variant="ghost" block icon="globe" disabled={busy || !authReady} onClick={() => run(loginWithGoogle)}>{l('Google ile devam et', 'Continue with Google', 'Weiter mit Google', 'Continuar con Google', 'Войти через Google')}</Btn>
+              <div className="vz-or"><span>{l('ya da e-posta ile', 'or with email', 'oder mit E-Mail', 'o con email', 'или по email')}</span></div>
+            </>
+          )}
+          <form
+            className="vz-stack"
+            style={{ gap: 12 }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              run(() => (isReg ? registerWithEmail(name, email, pw) : loginWithEmail(email, pw)));
+            }}
+          >
+            {isReg && <Field label={l('Adın', 'Your name', 'Dein Name', 'Tu nombre', 'Имя')} htmlFor="vz-au-n"><input id="vz-au-n" className="vz-input" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" required /></Field>}
+            <Field label={l('E-posta', 'Email', 'E-Mail', 'Email', 'Email')} htmlFor="vz-au-e"><input id="vz-au-e" type="email" className="vz-input" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" required /></Field>
+            <Field label={l('Şifre', 'Password', 'Passwort', 'Contraseña', 'Пароль')} htmlFor="vz-au-p" hint={isReg ? l('En az 6 karakter', 'At least 6 characters', 'Mind. 6 Zeichen', 'Mín. 6 caracteres', 'Мин. 6 символов') : undefined}><input id="vz-au-p" type="password" className="vz-input" value={pw} onChange={(e) => setPw(e.target.value)} autoComplete={isReg ? 'new-password' : 'current-password'} minLength={6} required /></Field>
+            {msgs}
+            <Btn type="submit" block disabled={busy || !authReady}>{isReg ? l('Hesabı oluştur', 'Create account', 'Konto erstellen', 'Crear cuenta', 'Создать') : l('Giriş yap', 'Sign in', 'Anmelden', 'Entrar', 'Войти')}</Btn>
+            {!isReg && <Btn variant="ghost" small onClick={() => { setForgot(true); setErr(''); setInfo(''); }}>{l('Şifremi unuttum', 'Forgot password?', 'Passwort vergessen?', '¿Olvidaste la contraseña?', 'Забыли пароль?')}</Btn>}
+          </form>
+          <p className="vz-muted" style={{ fontSize: 12.5 }}>{l('Devam ederek kullanım koşullarını ve gizlilik politikasını kabul etmiş olursun.', 'By continuing you accept the terms and privacy policy.', 'Mit dem Fortfahren akzeptierst du die AGB.', 'Al continuar aceptas los términos.', 'Продолжая, вы принимаете условия.')}</p>
+        </>
+      )}
     </Sheet>
   );
 };
@@ -157,7 +197,10 @@ export const ReportSheet: React.FC<{ open: boolean; onClose: () => void; code?: 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!notes.trim() && !src.trim()) return;
-    saveUserReport({ id: `rep_${Date.now()}`, createdAt: new Date().toISOString(), countryCode: country, countryName: getCountryName(country, language), passportCode: passport, category: cat, sourceUrl: src.trim() || undefined, notes: notes.trim(), reporterContact: contact.trim() || undefined });
+    const rep = { id: `rep_${Date.now()}`, createdAt: new Date().toISOString(), countryCode: country, countryName: getCountryName(country, language), passportCode: passport, category: cat, sourceUrl: src.trim() || undefined, notes: notes.trim(), reporterContact: contact.trim() || undefined };
+    saveUserReport(rep);
+    // Supabase bağlıysa bildirimi sunucuya da gönder (sana e-postayla ulaşması için)
+    getSupabase()?.then((sb) => sb.from('reports').insert({ country_code: rep.countryCode, passport_code: rep.passportCode, category: rep.category, source_url: rep.sourceUrl || null, notes: rep.notes, contact: rep.reporterContact || null, lang: language, page: window.location.pathname })).catch(() => {});
     setMine(loadUserReports());
     setSent(true);
     setNotes(''); setSrc('');

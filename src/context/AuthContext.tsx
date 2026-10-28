@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+/**
+ * Gerçek giriş: Supabase Auth (e-posta + şifre, Google, şifre sıfırlama).
+ * VITE_SUPABASE_URL ve VITE_SUPABASE_ANON_KEY tanımlı değilse giriş kapalıdır;
+ * sahte hesap ya da örnek kullanıcı yoktur.
+ */
+import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
+import type { Session, SupabaseClient, User } from '@supabase/supabase-js';
 
 export interface AuthUser {
   id: string;
@@ -12,18 +18,22 @@ export interface AuthUser {
   secondaryPassport?: string;
 }
 
-interface StoredAccount {
-  user: AuthUser;
-  passwordHash?: string;
-}
+type Res = { success: boolean; error?: string; info?: string };
 
 interface AuthContextType {
   user: AuthUser | null;
   isAuthenticated: boolean;
-  loginWithGoogle: () => Promise<{ success: boolean; error?: string }>;
-  loginWithFacebook: () => Promise<{ success: boolean; error?: string }>;
-  loginWithEmail: (email: string, password: string) => Promise<{ success: boolean; error?: string }>;
-  registerWithEmail: (name: string, email: string, password: string) => Promise<{ success: boolean; error?: string }>;
+  /** Supabase ayarlı mı (değilse giriş düğmeleri "yakında" der) */
+  authReady: boolean;
+  loading: boolean;
+  loginWithGoogle: () => Promise<Res>;
+  loginWithFacebook: () => Promise<Res>;
+  loginWithEmail: (email: string, password: string) => Promise<Res>;
+  registerWithEmail: (name: string, email: string, password: string) => Promise<Res>;
+  resetPassword: (email: string) => Promise<Res>;
+  /** şifre sıfırlama bağlantısından gelindiyse yeni şifreyi kaydeder */
+  setNewPassword: (password: string) => Promise<Res>;
+  recoveryMode: boolean;
   logout: () => void;
   updateUser: (updates: Partial<AuthUser>) => void;
   isAuthModalOpen: boolean;
@@ -33,218 +43,221 @@ interface AuthContextType {
   setAuthModalTab: (tab: 'login' | 'register') => void;
 }
 
-const STORAGE_KEY_SESSION = 'vr_current_user';
-const STORAGE_KEY_ACCOUNTS = 'vr_user_accounts';
+// Proje adresi ve publishable anahtar tarayıcıda herkese açıktır (güvenlik RLS kurallarıyla sağlanır).
+const URL_ = (import.meta.env.VITE_SUPABASE_URL as string | undefined) || 'https://utlnjyquflfcvjhmgopq.supabase.co';
+const KEY_ = (import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined) || 'sb_publishable_nINWLrE2ocJ4XuueayQ94g_SeEC_kLk';
+/** Google girişi Supabase'te açılınca true yapılır (VITE_SUPABASE_GOOGLE=1) */
+export const GOOGLE_ENABLED = (import.meta.env.VITE_SUPABASE_GOOGLE as string | undefined) === '1';
+const CONFIGURED = !!(URL_ && KEY_);
 
-// Örnek hesaplar kaldırıldı; gerçek giriş (Supabase) gelene kadar hesaplar yalnızca bu cihazda tutulur.
-const DEFAULT_ACCOUNTS: StoredAccount[] = [];
-const LEGACY_DEMO_IDS = new Set(['usr_google_default', 'usr_demo']);
+// istemci yalnızca gerektiğinde yüklenir (ilk açılışı ağırlaştırmasın)
+let clientP: Promise<SupabaseClient> | null = null;
+export const getSupabase = (): Promise<SupabaseClient> | null => {
+  if (!CONFIGURED) return null;
+  if (!clientP) {
+    clientP = import('@supabase/supabase-js').then(({ createClient }) =>
+      createClient(URL_!, KEY_!, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: 'pkce' } })
+    );
+  }
+  return clientP;
+};
+
+const toUser = (u: User): AuthUser => {
+  const m = (u.user_metadata || {}) as Record<string, unknown>;
+  const provider = (u.app_metadata?.provider as string) === 'google' ? 'google' : 'email';
+  const email = u.email || '';
+  return {
+    id: u.id,
+    email,
+    name: (m.full_name as string) || (m.name as string) || email.split('@')[0],
+    avatar: (m.avatar_url as string) || (m.picture as string) || undefined,
+    provider,
+    isPro: false,
+    createdAt: u.created_at,
+    primaryPassport: (m.primaryPassport as string) || 'TR',
+    secondaryPassport: (m.secondaryPassport as string) || undefined
+  };
+};
+
+// Supabase hata iletilerini anlaşılır Türkçe/İngilizce metne çevir
+const friendly = (msg: string): string => {
+  const m = msg.toLowerCase();
+  if (m.includes('invalid login')) return 'E-posta ya da şifre hatalı. / Wrong email or password.';
+  if (m.includes('email not confirmed')) return 'E-postanı henüz onaylamadın; gelen kutundaki bağlantıya tıkla. / Please confirm your email first.';
+  if (m.includes('already registered') || m.includes('already been registered')) return 'Bu e-posta zaten kayıtlı; giriş yapmayı dene. / This email is already registered.';
+  if (m.includes('password should be')) return 'Şifre en az 6 karakter olmalı. / Password must be at least 6 characters.';
+  if (m.includes('rate limit') || m.includes('too many')) return 'Çok fazla deneme oldu; birkaç dakika sonra tekrar dene. / Too many attempts, try again shortly.';
+  if (m.includes('provider is not enabled')) return 'Google ile giriş henüz açılmadı; e-posta ile devam et. / Google sign-in is not enabled yet.';
+  return msg;
+};
+
+const OFF: Res = { success: false, error: 'Giriş çok yakında açılıyor. Uygulamanın tamamını hesapsız kullanabilirsin. / Sign-in is coming soon; everything works without an account.' };
+
+const LOCAL_PROFILE = 'vr_current_user';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<AuthUser | null>(() => {
+    // Supabase oturumu varsa ilk çizimde kullanıcıyı göster (sonra doğrulanır)
     try {
-      if (typeof localStorage !== 'undefined') {
-        const saved = localStorage.getItem(STORAGE_KEY_SESSION);
-        if (saved) {
-          const u = JSON.parse(saved) as AuthUser;
-          // eski sahte Google oturumunu ve örnek kullanıcıları kapat
-          if (u && (LEGACY_DEMO_IDS.has(u.id) || String(u.id).startsWith('usr_g_'))) {
-            localStorage.removeItem(STORAGE_KEY_SESSION);
-            return null;
-          }
-          return u;
-        }
+      const k = Object.keys(localStorage).find((x) => /^sb-.*-auth-token$/.test(x));
+      if (CONFIGURED && k) {
+        const s = JSON.parse(localStorage.getItem(k) || 'null') as Session | null;
+        if (s?.user) return toUser(s.user);
       }
+      // eski sahte oturumları temizle
+      localStorage.removeItem(LOCAL_PROFILE);
+      localStorage.removeItem('vr_user_accounts');
     } catch {}
     return null;
   });
-
+  const [loading, setLoading] = useState(CONFIGURED);
+  const [recoveryMode, setRecoveryMode] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authModalTab, setAuthModalTab] = useState<'login' | 'register'>('login');
 
-  // Initialize stored accounts if not present
+  // Supabase kütüphanesi (~200 KB) yalnızca gerektiğinde yüklenir: kayıtlı oturum varsa,
+  // e-posta bağlantısından gelindiyse ya da giriş penceresi açılınca
+  const needsInit = () => {
+    try {
+      if (Object.keys(localStorage).some((x) => /^sb-.*-auth-token$/.test(x))) return true;
+    } catch {}
+    const h = `${window.location.search}${window.location.hash}`;
+    return /[?&#](code|access_token|error_description|token_hash|type)=/.test(h);
+  };
+  const [initNow, setInitNow] = useState(() => CONFIGURED && typeof window !== 'undefined' && needsInit());
   useEffect(() => {
-    try {
-      if (typeof localStorage !== 'undefined') {
-        const existing = localStorage.getItem(STORAGE_KEY_ACCOUNTS);
-        if (existing) {
-          const list = (JSON.parse(existing) as StoredAccount[]).filter((a) => !LEGACY_DEMO_IDS.has(a.user?.id));
-          localStorage.setItem(STORAGE_KEY_ACCOUNTS, JSON.stringify(list));
+    if (isAuthModalOpen && CONFIGURED) setInitNow(true);
+  }, [isAuthModalOpen]);
+  useEffect(() => {
+    if (!initNow) {
+      setLoading(false);
+      return;
+    }
+    const p = getSupabase();
+    if (!p) return;
+    let unsub: (() => void) | undefined;
+    let alive = true;
+    p.then((sb) => {
+      sb.auth.getSession().then(({ data }) => {
+        if (!alive) return;
+        setUser(data.session?.user ? toUser(data.session.user) : null);
+        setLoading(false);
+      });
+      const { data } = sb.auth.onAuthStateChange((event, session) => {
+        setUser(session?.user ? toUser(session.user) : null);
+        if (event === 'PASSWORD_RECOVERY') {
+          setRecoveryMode(true);
+          setIsAuthModalOpen(true);
         }
-      }
-    } catch {}
-  }, []);
+        if (event === 'SIGNED_IN') setIsAuthModalOpen((o) => (o && !recoveryMode ? false : o));
+      });
+      unsub = () => data.subscription.unsubscribe();
+    }).catch(() => setLoading(false));
+    return () => {
+      alive = false;
+      unsub?.();
+    };
+  }, [initNow]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const getAccounts = (): StoredAccount[] => {
-    try {
-      if (typeof localStorage !== 'undefined') {
-        const raw = localStorage.getItem(STORAGE_KEY_ACCOUNTS);
-        if (raw) return JSON.parse(raw);
-      }
-    } catch {}
-    return DEFAULT_ACCOUNTS;
+  const redirect = () => (typeof window !== 'undefined' ? `${window.location.origin}${window.location.pathname}` : undefined);
+
+  const loginWithGoogle = async (): Promise<Res> => {
+    const p = getSupabase();
+    if (!p) return OFF;
+    const sb = await p;
+    const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: redirect() } });
+    return error ? { success: false, error: friendly(error.message) } : { success: true };
   };
 
-  const saveAccounts = (accounts: StoredAccount[]) => {
-    try {
-      if (typeof localStorage !== 'undefined') {
-        localStorage.setItem(STORAGE_KEY_ACCOUNTS, JSON.stringify(accounts));
-      }
-    } catch {}
+  const loginWithFacebook = async (): Promise<Res> => OFF;
+
+  const loginWithEmail = async (email: string, password: string): Promise<Res> => {
+    const p = getSupabase();
+    if (!p) return OFF;
+    const sb = await p;
+    const { error } = await sb.auth.signInWithPassword({ email: email.trim(), password });
+    if (error) return { success: false, error: friendly(error.message) };
+    setIsAuthModalOpen(false);
+    return { success: true };
   };
 
-  // Google ile giriş gerçek servis (Supabase) bağlanınca açılacak; sahte oturum açılmıyor.
-  const loginWithGoogle = async (): Promise<{ success: boolean; error?: string }> => {
-    return { success: false, error: 'Google ile giriş çok yakında. Şimdilik e-posta ile hesap açabilirsin. / Google sign-in is coming soon; use email for now.' };
+  const registerWithEmail = async (name: string, email: string, password: string): Promise<Res> => {
+    const p = getSupabase();
+    if (!p) return OFF;
+    const sb = await p;
+    const { data, error } = await sb.auth.signUp({
+      email: email.trim(),
+      password,
+      options: { data: { full_name: name.trim() }, emailRedirectTo: redirect() }
+    });
+    if (error) return { success: false, error: friendly(error.message) };
+    // e-posta onayı açıksa oturum gelmez: kullanıcıya gelen kutusunu kontrol etmesini söyle
+    if (!data.session) return { success: true, info: 'Hesabın oluşturuldu. E-postana gelen onay bağlantısına tıkla, sonra giriş yap. / Check your inbox to confirm your email.' };
+    setIsAuthModalOpen(false);
+    return { success: true };
   };
 
-  const loginWithFacebook = async (): Promise<{ success: boolean; error?: string }> => {
-    try {
-      await new Promise(resolve => setTimeout(resolve, 500));
-      const fbUser: AuthUser = {
-        id: `usr_fb_${Date.now()}`,
-        email: 'facebook.user@vizamigo.com',
-        name: 'Gezgin (Facebook)',
-        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
-        provider: 'facebook',
-        isPro: true,
-        createdAt: new Date().toISOString(),
-        primaryPassport: 'TR'
-      };
-
-      setUser(fbUser);
-      localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(fbUser));
-      setIsAuthModalOpen(false);
-      return { success: true };
-    } catch {
-      return { success: false, error: 'Facebook authentication failed' };
-    }
+  const resetPassword = async (email: string): Promise<Res> => {
+    const p = getSupabase();
+    if (!p) return OFF;
+    const sb = await p;
+    const { error } = await sb.auth.resetPasswordForEmail(email.trim(), { redirectTo: redirect() });
+    if (error) return { success: false, error: friendly(error.message) };
+    return { success: true, info: 'Şifre sıfırlama bağlantısını e-postana gönderdik. / We sent you a reset link.' };
   };
 
-  const loginWithEmail = async (email: string, password: string): Promise<{ success: boolean; error?: string }> => {
-    try {
-      await new Promise(resolve => setTimeout(resolve, 400));
-      const accounts = getAccounts();
-      const cleanEmail = email.trim().toLowerCase();
-
-      // Check if user exists
-      const account = accounts.find(a => a.user.email.toLowerCase() === cleanEmail);
-
-      if (!account) {
-        // For convenience in testing: if user enters any valid email with 6+ char password, automatically register/log in!
-        if (password.length >= 6) {
-          const newUser: AuthUser = {
-            id: `usr_em_${Date.now()}`,
-            email: cleanEmail,
-            name: cleanEmail.split('@')[0],
-            avatar: `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(cleanEmail)}`,
-            provider: 'email',
-            isPro: false,
-            createdAt: new Date().toISOString(),
-            primaryPassport: 'TR'
-          };
-          const newAccount: StoredAccount = { user: newUser, passwordHash: password };
-          saveAccounts([...accounts, newAccount]);
-          setUser(newUser);
-          localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(newUser));
-          setIsAuthModalOpen(false);
-          return { success: true };
-        }
-        return { success: false, error: 'Kullanıcı bulunamadı / User not found' };
-      }
-
-      if (account.passwordHash && account.passwordHash !== password) {
-        return { success: false, error: 'Hatalı şifre / Invalid password' };
-      }
-
-      setUser(account.user);
-      localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(account.user));
-      setIsAuthModalOpen(false);
-      return { success: true };
-    } catch {
-      return { success: false, error: 'Giriş yapılamadı / Login error' };
-    }
-  };
-
-  const registerWithEmail = async (name: string, email: string, password: string): Promise<{ success: boolean; error?: string }> => {
-    try {
-      await new Promise(resolve => setTimeout(resolve, 500));
-      const accounts = getAccounts();
-      const cleanEmail = email.trim().toLowerCase();
-
-      if (accounts.some(a => a.user.email.toLowerCase() === cleanEmail)) {
-        return { success: false, error: 'Bu e-posta adresi zaten kayıtlı / Email already registered' };
-      }
-
-      if (password.length < 6) {
-        return { success: false, error: 'Şifre en az 6 karakter olmalıdır / Password must be at least 6 characters' };
-      }
-
-      const newUser: AuthUser = {
-        id: `usr_reg_${Date.now()}`,
-        email: cleanEmail,
-        name: name.trim() || cleanEmail.split('@')[0],
-        avatar: `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(name || cleanEmail)}`,
-        provider: 'email',
-        isPro: false,
-        createdAt: new Date().toISOString(),
-        primaryPassport: 'TR'
-      };
-
-      const newAccounts: StoredAccount[] = [...accounts, { user: newUser, passwordHash: password }];
-      saveAccounts(newAccounts);
-
-      setUser(newUser);
-      localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(newUser));
-      setIsAuthModalOpen(false);
-      return { success: true };
-    } catch {
-      return { success: false, error: 'Kayıt başarısız / Registration failed' };
-    }
+  const setNewPassword = async (password: string): Promise<Res> => {
+    const p = getSupabase();
+    if (!p) return OFF;
+    const sb = await p;
+    const { error } = await sb.auth.updateUser({ password });
+    if (error) return { success: false, error: friendly(error.message) };
+    setRecoveryMode(false);
+    setIsAuthModalOpen(false);
+    return { success: true };
   };
 
   const logout = () => {
+    const p = getSupabase();
     setUser(null);
-    try {
-      localStorage.removeItem(STORAGE_KEY_SESSION);
-    } catch {}
+    p?.then((sb) => sb.auth.signOut()).catch(() => {});
   };
 
-  const updateUser = (updates: Partial<AuthUser>) => {
-    if (!user) return;
-    const updated = { ...user, ...updates };
-    setUser(updated);
-    try {
-      localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(updated));
-      const accounts = getAccounts();
-      const idx = accounts.findIndex(a => a.user.id === user.id);
-      if (idx !== -1) {
-        accounts[idx].user = updated;
-        saveAccounts(accounts);
-      }
-    } catch {}
-  };
+  const updateUser = useCallback(
+    (updates: Partial<AuthUser>) => {
+      if (!user) return;
+      setUser({ ...user, ...updates });
+      const meta: Record<string, unknown> = {};
+      if (updates.name !== undefined) meta.full_name = updates.name;
+      if (updates.primaryPassport !== undefined) meta.primaryPassport = updates.primaryPassport;
+      if (updates.secondaryPassport !== undefined) meta.secondaryPassport = updates.secondaryPassport;
+      if (Object.keys(meta).length) getSupabase()?.then((sb) => sb.auth.updateUser({ data: meta })).catch(() => {});
+    },
+    [user]
+  );
 
   const openAuthModal = (initialTab: 'login' | 'register' = 'login') => {
     setAuthModalTab(initialTab);
     setIsAuthModalOpen(true);
   };
-
-  const closeAuthModal = () => {
-    setIsAuthModalOpen(false);
-  };
+  const closeAuthModal = () => setIsAuthModalOpen(false);
 
   return (
     <AuthContext.Provider
       value={{
         user,
         isAuthenticated: !!user,
+        authReady: CONFIGURED,
+        loading,
         loginWithGoogle,
         loginWithFacebook,
         loginWithEmail,
         registerWithEmail,
+        resetPassword,
+        setNewPassword,
+        recoveryMode,
         logout,
         updateUser,
         isAuthModalOpen,
@@ -260,9 +273,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 };
 
 export const useAuth = (): AuthContextType => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  return context;
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth must be used within an AuthProvider');
+  return ctx;
 };

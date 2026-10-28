@@ -46,7 +46,7 @@ const TabLoadingSkeleton: React.FC = () => (
 function AppContent() {
   const { language, setLanguage, l, t } = useI18n();
   const { route, navigate, openInfo } = useSeoRouter();
-  const { isAuthModalOpen } = useAuth();
+  const { isAuthModalOpen, user, updateUser } = useAuth();
 
   const [currentPassport, setCurrentPassport] = useState<string>(() => loadStoredPassport());
   const [secondaryPassport, setSecondaryPassport] = useState<string>(() => loadStoredSecondaryPassport());
@@ -170,7 +170,22 @@ function AppContent() {
   const handlePassportChange = (newCode: string) => {
     setCurrentPassport(newCode);
     saveStoredPassport(newCode);
+    if (user) updateUser({ primaryPassport: newCode });
   };
+  // giriş yapınca hesaptaki pasaportları bu cihaza getir
+  const lastUserId = React.useRef<string | null>(null);
+  useEffect(() => {
+    if (!user || lastUserId.current === user.id) return;
+    lastUserId.current = user.id;
+    if (user.primaryPassport && user.primaryPassport !== currentPassport) {
+      setCurrentPassport(user.primaryPassport);
+      saveStoredPassport(user.primaryPassport);
+    }
+    if (user.secondaryPassport && user.secondaryPassport !== secondaryPassport) {
+      setSecondaryPassport(user.secondaryPassport);
+      saveStoredSecondaryPassport(user.secondaryPassport);
+    }
+  }, [user?.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleDataResetOrImported = () => {
     setCurrentPassport(loadStoredPassport());
@@ -304,6 +319,7 @@ function AppContent() {
                   onSetSecondary={(c) => {
                     setSecondaryPassport(c);
                     saveStoredSecondaryPassport(c);
+                    if (user) updateUser({ secondaryPassport: c });
                   }}
                   onOpenInfo={(pg) => openLegalModalWithTab(pg)}
                   onReport={() => setReportingModalData({ code: '', name: '' })}
