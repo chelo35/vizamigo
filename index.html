@@ -153,6 +153,21 @@
       html.dark .vzs-sea { background: linear-gradient(180deg, #C98C7A, #3F7684 60%, #2B5E6C); }
       @media (max-width: 640px) { .vzs-hero-in { padding-top: 92px; } .vzs-search { margin-top: 120px; } }
     </style>
+    <!-- Travelpayouts Drive (vizamigo.com, proje 586306): seyahat bağlantılarını ortaklık bağlantısına çevirir.
+         Sayfa açılışını yavaşlatmasın diye sayfa yüklendikten ve tarayıcı boşa çıktıktan sonra yüklenir. -->
+    <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+      (function () {
+        function tp() {
+          var script = document.createElement("script");
+          script.async = 1;
+          script.setAttribute("data-cmp-ab", "2");
+          script.src = 'https://emrld.ltd/NTg2MzA2.js?t=586306';
+          document.head.appendChild(script);
+        }
+        function later() { ('requestIdleCallback' in window) ? requestIdleCallback(tp, { timeout: 4000 }) : setTimeout(tp, 1500); }
+        if (document.readyState === 'complete') later(); else window.addEventListener('load', later);
+      })();
+    </script>
   </head>
   <body>
     <div id="root">
