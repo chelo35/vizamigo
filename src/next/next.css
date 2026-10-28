@@ -665,3 +665,54 @@ html.dark .vz-seamap.dots .vz-map-dots { stroke: color-mix(in srgb, var(--rd-sea
   .vz-wm-tools { width: 100%; justify-content: space-between; }
   .vz-maps-sec .vz-sechead { flex-direction: column; align-items: flex-start; gap: 10px; }
 }
+.vz-cost { display: flex; flex-direction: column; gap: 4px; background: var(--rd-bg); border-radius: var(--vz-r); padding: 12px; }
+.vz-cost-row { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 8px; align-items: center; font-size: 14px; padding: 6px 0; border-top: 1px solid var(--rd-line); }
+.vz-cost-row:first-of-type { border-top: 0; }
+.vz-cost-row b { text-align: right; font-size: 13.5px; max-width: 60%; }
+
+/* ---- Yazdır / PDF ---- */
+.vz-print { display: none; }
+@media print {
+  body * { visibility: hidden !important; }
+  .vz-print, .vz-print * { visibility: visible !important; }
+  .vz-print { display: block !important; position: absolute; inset: 0 auto auto 0; width: 100%; padding: 16px; color: #000; background: #fff; font-size: 12.5px; line-height: 1.5; }
+  .vz-print h1 { font-size: 22px; margin: 0 0 8px; }
+  .vz-print h2 { font-size: 16px; margin: 14px 0 6px; }
+  .vz-print table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+  .vz-print th, .vz-print td { border: 1px solid #ccc; padding: 5px 7px; text-align: left; vertical-align: top; }
+  .vz-print th { background: #f2f2f2; width: 18%; }
+}
+.vz-hours { display: grid; grid-template-columns: repeat(24, minmax(0, 1fr)); gap: 2px; }
+.vz-hours i { height: 28px; border-radius: 5px; background: var(--rd-sea-soft); font-style: normal; font-size: 10px; color: var(--rd-muted); display: grid; place-items: end center; padding-bottom: 2px; }
+.vz-hours i.n { background: color-mix(in srgb, #4A5BA8 18%, var(--rd-surface)); }
+.vz-hours i.w { background: linear-gradient(180deg, var(--vz-acc-a), var(--vz-acc-b)); color: var(--vz-on-acc); }
+input[type="range"] { width: 100%; accent-color: var(--rd-sea); }
+.vz-sched summary { display: flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; list-style: none; }
+.vz-sched summary::-webkit-details-marker { display: none; }
+.vz-sched[open] summary { margin-bottom: 4px; }
+.vz-tz-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.vz-tz-cell { display: flex; flex-direction: column; padding: 10px 12px; border-radius: 12px; background: color-mix(in srgb, #4A5BA8 14%, var(--rd-surface)); }
+.vz-tz-cell.ok { background: var(--rd-ok-soft); }
+.vz-tz-cell span { font-size: 13px; color: var(--rd-muted); }
+.vz-tz-cell b { font-size: 22px; font-variant-numeric: tabular-nums; }
+.vz-tzm { display: flex; flex-direction: column; gap: 3px; overflow-x: auto; padding-bottom: 4px; }
+.vz-tzm-row { display: grid; grid-template-columns: 96px repeat(24, minmax(22px, 1fr)); gap: 2px; align-items: center; min-width: 640px; }
+.vz-tzm-l { font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vz-tzm-row i { font-style: normal; font-size: 11px; text-align: center; padding: 6px 0; border-radius: 5px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.vz-tzm-row i.n { background: color-mix(in srgb, #4A5BA8 18%, var(--rd-surface)); color: var(--rd-muted); }
+.vz-tzm-row i.e { background: var(--rd-sea-soft); }
+.vz-tzm-row i.w { background: var(--rd-ok-soft); color: var(--rd-ok); font-weight: 700; }
+.vz-tzm-row i.cur { outline: 2px solid var(--rd-sea); outline-offset: -2px; }
+
+/* ---- Telefonda hafif animasyon (hız) ---- */
+@media (max-width: 760px) {
+  .rd-trail path { animation: none !important; }
+  .rd-fb-seg, .rd-fb-seg::after { animation: none !important; }
+  .rd-glitter { display: none; }
+  .rd-cloud.c3 { display: none; }
+  .vz-band .rd-flight.f2, .rd-home .rd-flight.f2 { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rd-plane, .rd-trail path, .rd-cloud, .rd-wave, .vz-wv, .rd-glitter i, .vz-map-route, .vz-map-pulse { animation: none !important; }
+}
+.vz-main { min-height: 100vh; }

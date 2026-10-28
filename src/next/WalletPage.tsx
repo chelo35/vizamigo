@@ -59,6 +59,7 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
   const [type, setType] = useState<DocType>('passport');
   const [country, setCountry] = useState(w.passport);
   const [expiry, setExpiry] = useState('');
+  const [docQ, setDocQ] = useState('');
   const [title, setTitle] = useState('');
   const opts = useMemo(() => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((a, b) => a.n.localeCompare(b.n, language)), [language]);
   const add = (e: React.FormEvent) => {
@@ -81,8 +82,12 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
           ]}
         />
       ) : (
+        <>
+        {w.docs.length > 3 && (
+          <input className="vz-input" type="search" value={docQ} onChange={(e) => setDocQ(e.target.value)} placeholder={l('Belgelerde ara…', 'Search documents…', 'Dokumente suchen…', 'Buscar documentos…', 'Поиск документов…')} aria-label={l('Belgelerde ara', 'Search documents', 'Dokumente suchen', 'Buscar documentos', 'Поиск документов')} />
+        )}
         <div className="vz-grid">
-          {w.docs.map((d) => {
+          {w.docs.filter((d) => !docQ.trim() || `${d.title} ${getCountryName(d.country, language)} ${d.type}`.toLocaleLowerCase(language).includes(docQ.trim().toLocaleLowerCase(language))).map((d) => {
             const t = types.find((x) => x.id === d.type)!;
             const left = daysLeft(d.expiry);
             const tone = left < 0 ? 'warn' : left < 180 ? 'sun' : 'ok';
@@ -97,6 +102,7 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
             );
           })}
         </div>
+        </>
       )}
       <form className="vz-card tone-sea" onSubmit={add}>
         <b>{l('Belge ekle', 'Add a document', 'Dokument hinzufügen', 'Añadir documento', 'Добавить документ')}</b>
@@ -384,13 +390,30 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
   const [a, setA] = useState(dayIndexToDate(today - 30));
   const [b, setB] = useState(dayIndexToDate(today - 20));
   const [country, setCountry] = useState('');
+  const [note, setNote] = useState('');
+  const [planA, setPlanA] = useState(dayIndexToDate(today + 30));
+  const [planB, setPlanB] = useState(dayIndexToDate(today + 44));
+  // planlanan yolculuk: her gün için kayan pencerede sınır aşılıyor mu?
+  const plan = useMemo(() => {
+    const a = dateToDayIndex(planA), b = dateToDayIndex(planB);
+    if (!(b >= a)) return null;
+    const trial = [...T.trips, { id: 'plan', start: a, end: b, region: rule.name }];
+    let worst = 0, firstBad: number | null = null;
+    for (let d = a; d <= b; d++) {
+      const r0 = evaluateRollingWindow(d, trial, rule);
+      if (r0.daysUsed > worst) worst = r0.daysUsed;
+      if (r0.daysUsed > rule.allowedDays && firstBad === null) firstBad = d;
+    }
+    return { len: b - a + 1, worst, firstBad };
+  }, [planA, planB, T.trips, rule]);
   const [simDate, setSimDate] = useState(dayIndexToDate(today + 30));
   const sim = useMemo(() => evaluateRollingWindow(dateToDayIndex(simDate), T.trips, rule), [simDate, T.trips, rule]);
   const add = (e: React.FormEvent) => {
     e.preventDefault();
     const s = dateToDayIndex(a), en = dateToDayIndex(b);
     if (en < s) return;
-    T.save([...T.trips, { id: `tr-${Date.now()}`, start: s, end: en, region: rule.name, countryCode: country || undefined }]);
+    T.save([...T.trips, { id: `tr-${Date.now()}`, start: s, end: en, region: rule.name, countryCode: country || undefined, note: note.trim() || undefined }]);
+    setNote('');
   };
   return (
     <div className="vz-stack">
@@ -436,11 +459,25 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
           <p style={{ flex: 1, minWidth: 200 }}>{l(`O gün girersen en fazla ${sim.maxConsecutiveStayIfEnteringToday} gün kalabilirsin.`, `If you enter that day you can stay up to ${sim.maxConsecutiveStayIfEnteringToday} days.`, `Dann max. ${sim.maxConsecutiveStayIfEnteringToday} Tage.`, `Podrías quedarte ${sim.maxConsecutiveStayIfEnteringToday} días.`, `Можно до ${sim.maxConsecutiveStayIfEnteringToday} дн.`)}</p>
         </div>
       </Card>
+      <Card title={l('Planladığın yolculuk sığıyor mu?', 'Does your planned trip fit?', 'Passt die geplante Reise?', '¿Cabe tu viaje?', 'Поместится ли поездка?')} icon="plane">
+        <div className="vz-formgrid">
+          <Field label={l('Giriş', 'Entry', 'Einreise', 'Entrada', 'Въезд')} htmlFor="vz-pl-a"><input id="vz-pl-a" type="date" className="vz-input" value={planA} onChange={(e) => setPlanA(e.target.value)} /></Field>
+          <Field label={l('Çıkış', 'Exit', 'Ausreise', 'Salida', 'Выезд')} htmlFor="vz-pl-b"><input id="vz-pl-b" type="date" className="vz-input" value={planB} onChange={(e) => setPlanB(e.target.value)} /></Field>
+        </div>
+        {plan && (
+          plan.firstBad === null ? (
+            <div className="vz-note" style={{ borderColor: 'var(--vz-ok)' }}><Icon name="check" size={18} duo={false} /><span>{l(`Sığıyor: ${plan.len} günlük yolculukta en yüksek kullanım ${plan.worst}/${rule.allowedDays} gün.`, `It fits: peak use during this ${plan.len}-day trip is ${plan.worst}/${rule.allowedDays} days.`, `Passt: max. ${plan.worst}/${rule.allowedDays} Tage.`, `Cabe: máximo ${plan.worst}/${rule.allowedDays} días.`, `Подходит: максимум ${plan.worst}/${rule.allowedDays}.`)}</span></div>
+          ) : (
+            <div className="vz-note" style={{ borderColor: 'var(--vz-warn)', color: 'var(--vz-warn)' }}><Icon name="alert" size={18} duo={false} /><span>{l(`Sığmıyor: ${formatLocalizedDate(plan.firstBad, language)} tarihinde ${rule.allowedDays} gün sınırı aşılıyor. En geç bir gün önce çıkmalısın.`, `It doesn't fit: you pass the ${rule.allowedDays}-day limit on ${formatLocalizedDate(plan.firstBad, language)}. Leave the day before at the latest.`, `Grenze am ${formatLocalizedDate(plan.firstBad, language)} überschritten.`, `Superas el límite el ${formatLocalizedDate(plan.firstBad, language)}.`, `Превышение ${formatLocalizedDate(plan.firstBad, language)}.`)}</span></div>
+          )
+        )}
+      </Card>
       <form className="vz-card" onSubmit={add}>
         <b>{l(`${ruleName(rule, language)} için yolculuk ekle`, `Add a trip for ${ruleName(rule, language)}`, `Reise hinzufügen`, `Añadir viaje`, `Добавить поездку`)}</b>
         <div className="vz-formgrid">
           <Field label={l('Giriş', 'Entry', 'Einreise', 'Entrada', 'Въезд')} htmlFor="vz-tr-a"><input id="vz-tr-a" type="date" className="vz-input" value={a} onChange={(e) => setA(e.target.value)} /></Field>
           <Field label={l('Çıkış', 'Exit', 'Ausreise', 'Salida', 'Выезд')} htmlFor="vz-tr-b"><input id="vz-tr-b" type="date" className="vz-input" value={b} onChange={(e) => setB(e.target.value)} /></Field>
+          <Field label={l('Not (isteğe bağlı)', 'Note (optional)', 'Notiz (optional)', 'Nota (opcional)', 'Заметка')} htmlFor="vz-tr-note"><input id="vz-tr-note" className="vz-input" value={note} onChange={(e) => setNote(e.target.value)} placeholder={l('ör. İş toplantısı', 'e.g. Business trip', 'z. B. Geschäftsreise', 'p. ej. Viaje de trabajo', 'напр. Командировка')} /></Field>
           <Field label={l('Ülke (183 gün için)', 'Country (for 183 days)', 'Land (183 Tage)', 'País (183 días)', 'Страна (183)')} htmlFor="vz-tr-c">
             <select id="vz-tr-c" className="vz-select" value={country} onChange={(e) => setCountry(e.target.value)}>
               <option value="">—</option>
@@ -453,7 +490,7 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
       {mine.length > 0 && (
         <List>
           {mine.map((t) => (
-            <Row key={t.id} lead={t.countryCode ? <Flag code={t.countryCode} size="sm" /> : undefined} icon="cal" title={`${formatLocalizedDate(t.start, language)} → ${formatLocalizedDate(t.end, language)}`} sub={l(`${t.end - t.start + 1} gün`, `${t.end - t.start + 1} days`, `${t.end - t.start + 1} Tage`, `${t.end - t.start + 1} días`, `${t.end - t.start + 1} дн.`)} right={<button type="button" className="vz-iconbtn" onClick={() => T.save(T.trips.filter((x) => x.id !== t.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>} />
+            <Row key={t.id} lead={t.countryCode ? <Flag code={t.countryCode} size="sm" /> : undefined} icon="cal" title={`${formatLocalizedDate(t.start, language)} → ${formatLocalizedDate(t.end, language)}`} sub={[l(`${t.end - t.start + 1} gün`, `${t.end - t.start + 1} days`, `${t.end - t.start + 1} Tage`, `${t.end - t.start + 1} días`, `${t.end - t.start + 1} дн.`), t.note].filter(Boolean).join(' · ')} right={<button type="button" className="vz-iconbtn" onClick={() => T.save(T.trips.filter((x) => x.id !== t.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>} />
           ))}
         </List>
       )}

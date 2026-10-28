@@ -119,6 +119,12 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       render: () => <EasyTripView passport={p.currentPassport} destination={destination} onDestination={changeDest} onOpenCountry={p.onOpenCountry} />
     },
     {
+      id: 'nomad', icon: 'laptop',
+      title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники'),
+      desc: l('Vizeler, aylık maliyet, şehirler', 'Visas, monthly costs, cities', 'Visa, Kosten, Städte', 'Visados, costes, ciudades', 'Визы, расходы, города'),
+      onOpen: () => p.onOpenTool('plan', 'nomad')
+    },
+    {
       id: 'assistant', icon: 'spark',
       title: l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente', 'Ассистент'),
       desc: l('Yaz ya da sesli sor', 'Type or speak', 'Schreiben oder sprechen', 'Escribe o habla', 'Пишите или говорите'),
@@ -172,9 +178,11 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
 
         <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
 
-        <Suspense fallback={null}>
-          <HomeRails passport={p.currentPassport} onOpenCountry={p.onOpenCountry} onOpenTile={(id) => openTile(id)} />
-        </Suspense>
+        <Deferred>
+          <Suspense fallback={null}>
+            <HomeRails passport={p.currentPassport} onOpenCountry={p.onOpenCountry} onOpenTile={(id) => openTile(id)} />
+          </Suspense>
+        </Deferred>
 
         <section className="rd-pass" aria-label={l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт')}>
           <PassportCover code={p.currentPassport} onClick={p.onOpenPassport} />
@@ -244,4 +252,21 @@ const HomeMaps: React.FC<{ passport: string; onOpenCountry: (c: string) => void 
       )}
     </section>
   );
+};
+
+/** Ekrana yaklaşınca (ya da tarayıcı boşalınca) çizer; ilk açılışı hafifletir. */
+const Deferred: React.FC<{ children: React.ReactNode; minHeight?: number }> = ({ children, minHeight = 600 }) => {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    if (show) return;
+    const el = ref.current;
+    let io: IntersectionObserver | null = null;
+    if (el && 'IntersectionObserver' in window) {
+      io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setShow(true), { rootMargin: '600px' });
+      io.observe(el);
+    } else setShow(true);
+    return () => io?.disconnect();
+  }, [show]);
+  return show ? <>{children}</> : <div ref={ref} style={{ minHeight }} aria-hidden="true" />;
 };

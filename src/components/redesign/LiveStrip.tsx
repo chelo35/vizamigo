@@ -49,7 +49,8 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
   useLiveFx();
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
-    const t = setInterval(() => setNow(new Date()), 1000);
+    // sekme görünmüyorken saniye saniye çizme
+    const t = setInterval(() => !document.hidden && setNow(new Date()), 1000);
     return () => clearInterval(t);
   }, []);
 

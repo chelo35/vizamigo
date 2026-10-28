@@ -27,6 +27,35 @@ async function main() {
   }
   const tpl = fs.readFileSync(tplPath, 'utf8');
 
+  // Vite manifest: sayfanın ihtiyaç duyduğu parçaları erkenden indir (bekleme zincirini kısaltır)
+  type ME = { file: string; imports?: string[] };
+  const manPath = path.join(DIST, '.vite', 'manifest.json');
+  const man: Record<string, ME> = fs.existsSync(manPath) ? JSON.parse(fs.readFileSync(manPath, 'utf8')) : {};
+  const walk = (key: string, seen = new Set<string>()): Set<string> => {
+    const e = man[key];
+    if (!e || seen.has(key)) return seen;
+    seen.add(key);
+    (e.imports || []).forEach((i) => walk(i, seen));
+    return seen;
+  };
+  const preloadFor = (entry: string) =>
+    [...walk(entry)]
+      .map((k) => man[k].file)
+      .filter((f) => f.endsWith('.js') && !tpl.includes(f))
+      .map((f) => `<link rel="modulepreload" crossorigin href="/${f}" />`)
+      .join('\n    ');
+  const PRE: Record<string, string> = {
+    country: preloadFor('src/next/CountryPage.tsx'),
+    plan: preloadFor('src/next/RoutePage.tsx'),
+    track: preloadFor('src/next/WalletPage.tsx'),
+    nomad: preloadFor('src/next/ToolsHub.tsx'),
+    consular: preloadFor('src/next/ToolsHub.tsx'),
+    profile: preloadFor('src/next/ProfilePage.tsx'),
+    info: preloadFor('src/next/InfoPage.tsx')
+  };
+  const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
+  const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
+
   const { GEO_DATA } = await import('../src/data/geoData');
   const { getCountryName, countryToRegion, getRegionName } = await import('../src/data/passportData');
   const { getCountrySeoMeta } = await import('../src/utils/schemaGenerator');
@@ -81,9 +110,10 @@ async function main() {
     `<h1 class="vzs-h1">${esc(main)}${rest ? `<span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> — ${esc(rest)}</span>` : ''}</h1>`;
   const lead = (t: string) => `<p class="vzs-lead">${esc(t)}</p>`;
 
-  type Opts = { lang: string; canonical: string; alts: { hreflang: string; href: string }[]; title: string; desc?: string; body?: string; nav?: string; noindex?: boolean };
-  const build = ({ lang, canonical, alts, title, desc = '', body = '', nav = '', noindex }: Opts) => {
+  type Opts = { lang: string; canonical: string; alts: { hreflang: string; href: string }[]; title: string; desc?: string; body?: string; nav?: string; noindex?: boolean; head?: string; hero?: string };
+  const build = ({ lang, canonical, alts, title, desc = '', body = '', nav = '', noindex, head = '', hero = '' }: Opts) => {
     let html = tpl;
+    if (head) html = html.replace('</head>', `    ${head}\n  </head>`);
     html = html.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`);
     html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`);
     html = html.replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(title)}$2`);
@@ -105,7 +135,10 @@ async function main() {
       // dil başlığını değiştiren küçük betik gerekmez
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
     }
-    if (nav) html = html.replace('<div class="vzs-sea"></div></section>', `<div class="vzs-sea"></div></section>${nav}`);
+    if (hero) {
+      html = html.replace(/<section class="vzs-hero">[\s\S]*?<div class="vzs-sea"><\/div><\/section>/, `${hero}${nav}`);
+      html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
+    } else if (nav) html = html.replace('<div class="vzs-sea"></div></section>', `<div class="vzs-sea"></div></section>${nav}`);
     if (noindex) html = html.replace(/(<meta name="robots" content=")[^"]*(")/, '$1noindex, follow$2');
     return html;
   };
@@ -142,8 +175,15 @@ async function main() {
         alts: getHreflangAlternatesForRoute('explore', code),
         title: meta.title,
         desc: meta.description,
-        body: eyebrow(lang, [EYEBROW[lang], region]) + h1(name, meta.h1.replace(name, '').trim()) + lead(meta.description) + (cap && lang === 'tr' ? lead(`${CAPITAL[lang]}: ${cap}`) : ''),
-        nav: navBlock(lang, `<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="TR">${JSON.stringify(generateCountryJsonLd({ countryCode: code, language: lang as never, currentPassport: 'TR' })).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
+        // uygulamanın ülke başlığıyla aynı ölçüde fotoğraflı başlık: ilk boyama erken, kayma yok
+        hero: (() => {
+          const v = getCountryVisual(code, lang);
+          const s480 = getOptimizedImageUrl(v.image, { width: 480 });
+          const s720 = getOptimizedImageUrl(v.image, { width: 720 });
+          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(cap)}</p>` : ''}</div></section>`;
+        })(),
+        nav: navBlock(lang, `${lead(meta.description)}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     }
@@ -159,6 +199,7 @@ async function main() {
         alts: getHreflangAlternatesForRoute(tab, null),
         title: seo.title,
         desc: seo.desc,
+        head: PRE[tab] || '',
         body: eyebrow(lang, ['Vizamigo']) + h1(main, rest) + lead(seo.desc),
         nav: navBlock(lang, `<p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
@@ -173,6 +214,7 @@ async function main() {
         canonical: `${BASE_URL}/${lang}/info/${id}`,
         alts: [...LANGS.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }],
         title: `${t} | Vizamigo`,
+        head: PRE.info,
         body: eyebrow(lang, ['Vizamigo']) + h1(t),
         nav: navBlock(lang, `<p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
@@ -182,6 +224,35 @@ async function main() {
 
   // olmayan adresler için; arama motoru dizine almasın
   write('404.html', build({ lang: 'tr', canonical: `${BASE_URL}/`, alts: getHreflangAlternatesForRoute('explore', null), title: 'Sayfa bulunamadı | Vizamigo', noindex: true }));
+  // ülke sayfası verisi: ülke başına küçük JSON (sayfa 1,6 MB'lık dosyayı beklemesin)
+  {
+    const { getCountryInsights } = await import('../src/data/countryInsights');
+    const { getCountryTravelIntelligence } = await import('../src/data/countryTravelIntelligence');
+    const { getCountryEncyclopedia } = await import('../src/data/countryEncyclopedia');
+    const { getCountryItinerary } = await import('../src/data/countryItineraries');
+    const { getVerifiedCountryRecord } = await import('../src/data/verifiedCountryData');
+    const { getCountryNomadApps } = await import('../src/data/rideAndDeliveryApps');
+    const plugs: Record<string, string[]> = {};
+    let files = 0;
+    for (const code of allCodes) {
+      const intel = getCountryTravelIntelligence(code, getCountryName(code, 'en'));
+      plugs[code] = intel.plugs.types;
+      const insEn = getCountryInsights(code, 'en');
+      write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
+      files++;
+      for (const lang of LANGS) {
+        write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify({ insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) }));
+        files++;
+      }
+    }
+    write(path.join('data', 'plugs.json'), JSON.stringify(plugs));
+    console.log(`[prerender] ${files} ülke veri dosyası yazıldı`);
+  }
+
+  // manifest yalnızca derleme içindi; yayına çıkmasın
+  try {
+    fs.rmSync(path.join(DIST, '.vite'), { recursive: true, force: true });
+  } catch {}
   console.log(`[prerender] ${n} sayfa yazıldı`);
 }
 

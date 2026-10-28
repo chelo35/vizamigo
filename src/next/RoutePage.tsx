@@ -10,6 +10,7 @@ import { loadStoredRouteStops, saveStoredRouteStops, loadStoredTrips } from '../
 import { getCountryName, SCHENGEN_SET, DIGITAL_NOMAD_VISAS } from '../data/passportData';
 import { GEO_DATA, estimateTravelLeg, optimizeRouteOrder, getCountryGeo } from '../data/geoData';
 import { getCountryTransitRule } from '../data/transitData';
+import { VISA_CHANGE_ALERTS } from '../data/changeLog';
 import { NOMAD_HUBS, getLocalizedNomadHub } from '../data/nomadData';
 import { ALL_WORLD_HUBS, flagToIso } from '../data/worldHubs';
 
@@ -108,6 +109,37 @@ const PlannerView: React.FC<{ r: RouteApi; passport: string; onOpenCountry: (c: 
     setSaveName('');
     setMsg(l(`"${name}" kaydedildi.`, `"${name}" saved.`, `"${name}" gespeichert.`, `"${name}" guardada.`, `«${name}» сохранён.`));
   };
+  const [schStart, setSchStart] = useState(() => r.stops[0]?.entryDate || dayIndexToDate(getTodayDayIndex() + 14));
+  const [schDays, setSchDays] = useState('');
+  const [schGap, setSchGap] = useState(false);
+  // rota analizi: 183 gün vergi eşiği ve duraklardaki yaklaşan kural değişiklikleri
+  const analysis = useMemo(() => {
+    const out: { tone: 'warn' | 'info'; text: string }[] = [];
+    const perYear = new Map<string, number>();
+    r.stops.forEach((st) => {
+      const a = dateToDayIndex(st.entryDate), b = dateToDayIndex(st.exitDate);
+      for (let d = a; d <= b; d++) {
+        const y = dayIndexToDate(d).slice(0, 4);
+        const k = `${st.countryCode}|${y}`;
+        perYear.set(k, (perYear.get(k) || 0) + 1);
+      }
+    });
+    perYear.forEach((n, k) => {
+      const [c, y] = k.split('|');
+      if (n >= 150) out.push({ tone: n >= 183 ? 'warn' : 'info', text: l(`${getCountryName(c, language)}: ${y} yılında ${n} gün. 183 gün ve üzeri vergi mukimliği doğurabilir.`, `${getCountryName(c, language)}: ${n} days in ${y}. 183+ days can make you tax-resident.`, `${getCountryName(c, language)}: ${n} Tage in ${y} (183-Tage-Regel).`, `${getCountryName(c, language)}: ${n} días en ${y} (regla de 183 días).`, `${getCountryName(c, language)}: ${n} дн. в ${y} (правило 183 дней).`) });
+    });
+    const seen = new Set<string>();
+    r.stops.forEach((st) => {
+      if (seen.has(st.countryCode)) return;
+      seen.add(st.countryCode);
+      VISA_CHANGE_ALERTS.filter((x) => x.countryCode === st.countryCode && (x.impactPassport.length === 0 || x.impactPassport.includes(passport))).forEach((x) => {
+        const title = language === 'tr' ? x.title : language === 'de' ? x.titleDe || x.titleEn || x.title : x.titleEn || x.title;
+        const when = language === 'tr' ? x.effectiveDate : x.effectiveDateEn || x.effectiveDate;
+        out.push({ tone: x.category === 'critical' ? 'warn' : 'info', text: `${getCountryName(st.countryCode, language)} · ${when}: ${title}` });
+      });
+    });
+    return out;
+  }, [r.stops, passport, language]); // eslint-disable-line react-hooks/exhaustive-deps
   const [copied, setCopied] = useState(false);
   const copy = async () => {
     const txt = r.stops.map((s, i) => `${i + 1}. ${getCountryName(s.countryCode, language)} — ${formatLocalizedDate(dateToDayIndex(s.entryDate), language)} → ${formatLocalizedDate(dateToDayIndex(s.exitDate), language)}`).join('\n');
@@ -148,6 +180,30 @@ const PlannerView: React.FC<{ r: RouteApi; passport: string; onOpenCountry: (c: 
         </div>
       )}
       {msg && <div className="vz-note"><Icon name="check" size={18} duo={false} />{msg}</div>}
+      {r.stops.length > 0 && (
+        <details className="vz-card vz-sched">
+          <summary><Icon name="cal" size={18} />{l('Takvimi otomatik düzenle', 'Auto-schedule the dates', 'Daten automatisch planen', 'Programar fechas', 'Авторасписание')}</summary>
+          <div className="vz-formgrid">
+            <Field label={l('Başlangıç', 'Start date', 'Beginn', 'Inicio', 'Начало')} htmlFor="vz-sc-a"><input id="vz-sc-a" type="date" className="vz-input" value={schStart} onChange={(e) => setSchStart(e.target.value)} /></Field>
+            <Field label={l('Durak başına gün (boş: olduğu gibi)', 'Days per stop (empty: keep)', 'Tage pro Stopp', 'Días por parada', 'Дней на остановку')} htmlFor="vz-sc-n"><input id="vz-sc-n" type="number" min={1} max={90} className="vz-input" value={schDays} onChange={(e) => setSchDays(e.target.value)} placeholder="—" /></Field>
+            <label className="vz-check" htmlFor="vz-sc-t" style={{ alignSelf: 'end' }}>
+              <input id="vz-sc-t" type="checkbox" checked={schGap} onChange={(e) => setSchGap(e.target.checked)} />
+              <span className="vz-check-box" aria-hidden="true"><Icon name="check" size={14} duo={false} /></span>
+              <span className="vz-row-t">{l('Duraklar arasına 1 transit günü', '1 transit day between stops', '1 Transittag dazwischen', '1 día de tránsito', '1 день на переезд')}</span>
+            </label>
+          </div>
+          <Btn icon="check" style={{ alignSelf: 'flex-start' }} onClick={() => { r.save(rebuildDates(r.stops, schStart, { days: Number(schDays) || undefined, gap: schGap ? 1 : 0 })); setMsg(l('Tarihler yeniden düzenlendi.', 'Dates rescheduled.', 'Daten neu geplant.', 'Fechas reprogramadas.', 'Даты обновлены.')); }}>{l('Uygula', 'Apply', 'Anwenden', 'Aplicar', 'Применить')}</Btn>
+        </details>
+      )}
+      {analysis.length > 0 && (
+        <div className="vz-stack" style={{ gap: 8 }}>
+          {analysis.map((a, i) => (
+            <div key={i} className="vz-note" style={a.tone === 'warn' ? { borderColor: 'var(--vz-warn)' } : undefined}>
+              <Icon name={a.tone === 'warn' ? 'alert' : 'bell'} size={18} duo={false} /><span>{a.text}</span>
+            </div>
+          ))}
+        </div>
+      )}
 
       {r.stops.length === 0 ? (
         <Empty icon="route" title={l('Henüz durak yok', 'No stops yet', 'Noch keine Stopps', 'Aún no hay paradas', 'Пока нет остановок')} text={l('Yukarıdan ilk ülkeni ekle ya da Hazır rotalar kutucuğundan tek dokunuşla bir rota yükle.', 'Add your first country above or load a ready-made route in one tap.', 'Erstes Land oben hinzufügen oder eine fertige Route laden.', 'Añade un país o carga una ruta lista.', 'Добавьте страну или загрузите готовый маршрут.')}
@@ -294,13 +350,13 @@ const LegLink: React.FC<{ from: string; to: string; date: string }> = ({ from, t
 };
 
 /** Durakları sırayla, aralarında boşluk bırakmadan yeniden tarihle. */
-function rebuildDates(list: RouteStop[], startOverride?: string): RouteStop[] {
+function rebuildDates(list: RouteStop[], startOverride?: string, opts?: { days?: number; gap?: number }): RouteStop[] {
   if (!list.length) return list;
   let cur = dateToDayIndex(startOverride || list[0].entryDate);
   return list.map((s) => {
-    const n = Math.max(1, dateToDayIndex(s.exitDate) - dateToDayIndex(s.entryDate) + 1);
+    const n = opts?.days || Math.max(1, dateToDayIndex(s.exitDate) - dateToDayIndex(s.entryDate) + 1);
     const out = { ...s, entryDate: dayIndexToDate(cur), exitDate: dayIndexToDate(cur + n - 1) };
-    cur += n;
+    cur += n + (opts?.gap || 0);
     return out;
   });
 }
@@ -544,9 +600,12 @@ const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCou
   const { l, language } = useI18n();
   const hubs = useMemo(() => NOMAD_HUBS.map((h) => getLocalizedNomadHub(h, language)), [language]);
   const regions = Array.from(new Set(NOMAD_HUBS.map((h) => h.region)));
+  const budgets = Array.from(new Set(NOMAD_HUBS.map((h) => h.budgetLevel)));
   const [reg, setReg] = useState<string>('');
+  const [bud, setBud] = useState<string>('');
+  const [cc, setCc] = useState<string>('');
   const [open, setOpen] = useState<string | null>(null);
-  const list = hubs.filter((h, i) => !reg || NOMAD_HUBS[i].region === reg);
+  const list = hubs.filter((h, i) => (!reg || NOMAD_HUBS[i].region === reg) && (!bud || NOMAD_HUBS[i].budgetLevel === bud) && (!cc || h.countryCode === cc));
   const [view, setView] = useState<'hubs' | 'visas'>('hubs');
   const seg = (
     <Segmented
@@ -554,22 +613,47 @@ const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCou
       value={view}
       onChange={setView}
       options={[
-        { id: 'hubs', label: l('Şehirler ve yaşam', 'Cities & living', 'Städte & Leben', 'Ciudades', 'Города') },
+        { id: 'hubs', label: l(`Şehirler ve yaşam (${NOMAD_HUBS.length})`, `Cities & living (${NOMAD_HUBS.length})`, `Städte & Leben (${NOMAD_HUBS.length})`, `Ciudades (${NOMAD_HUBS.length})`, `Города (${NOMAD_HUBS.length})`) },
         { id: 'visas', label: l(`Tüm vizeler & vergi (${DIGITAL_NOMAD_VISAS.length})`, `All visas & tax (${DIGITAL_NOMAD_VISAS.length})`, `Alle Visa & Steuern (${DIGITAL_NOMAD_VISAS.length})`, `Visados e impuestos (${DIGITAL_NOMAD_VISAS.length})`, `Визы и налоги (${DIGITAL_NOMAD_VISAS.length})`) }
       ]}
     />
   );
   if (view === 'visas') return <div className="vz-stack">{seg}<NomadVisaView onOpenCountry={onOpenCountry} /></div>;
+  const costRows: [keyof NonNullable<(typeof hubs)[number]['costBreakdown']>, string, string][] = [
+    ['rent1Bed', 'bed', l('Kira (1+1)', 'Rent (1-bed)', 'Miete (1 Zi.)', 'Alquiler (1 hab.)', 'Аренда (1 комн.)')],
+    ['foodDining', 'food', l('Yemek', 'Food', 'Essen', 'Comida', 'Еда')],
+    ['coworking', 'laptop', l('Ortak ofis', 'Coworking', 'Coworking', 'Coworking', 'Коворкинг')],
+    ['mobileSim', 'wifi', l('Hat / internet', 'SIM / data', 'SIM / Daten', 'SIM / datos', 'SIM / интернет')],
+    ['localTransit', 'car', l('Şehir içi ulaşım', 'Local transport', 'Nahverkehr', 'Transporte', 'Транспорт')],
+    ['coffeeOrBeer', 'coffee', l('Kahve / bira', 'Coffee / beer', 'Kaffee / Bier', 'Café / cerveza', 'Кофе / пиво')]
+  ];
   return (
     <div className="vz-stack">
       {seg}
-      <Chips scroll>
-        <Chip on={!reg} onClick={() => setReg('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</Chip>
-        {regions.map((r) => {
-          const loc = hubs[NOMAD_HUBS.findIndex((h) => h.region === r)]?.region || r;
-          return <Chip key={r} on={reg === r} onClick={() => setReg(r)}>{loc}</Chip>;
-        })}
-      </Chips>
+      <div className="vz-formgrid">
+        <Field label={l('Bölge', 'Region', 'Region', 'Región', 'Регион')} htmlFor="vz-nm-r">
+          <select id="vz-nm-r" className="vz-select" value={reg} onChange={(e) => setReg(e.target.value)}>
+            <option value="">{l('Hepsi', 'All', 'Alle', 'Todas', 'Все')}</option>
+            {regions.map((r) => <option key={r} value={r}>{hubs[NOMAD_HUBS.findIndex((h) => h.region === r)]?.region || r}</option>)}
+          </select>
+        </Field>
+        <Field label={l('Aylık bütçe', 'Monthly budget', 'Monatsbudget', 'Presupuesto', 'Бюджет')} htmlFor="vz-nm-b">
+          <select id="vz-nm-b" className="vz-select" value={bud} onChange={(e) => setBud(e.target.value)}>
+            <option value="">{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</option>
+            {budgets.map((b) => <option key={b} value={b}>{hubs[NOMAD_HUBS.findIndex((h) => h.budgetLevel === b)]?.budgetLevel || b}</option>)}
+          </select>
+        </Field>
+        <Field label={l('Ülke', 'Country', 'Land', 'País', 'Страна')} htmlFor="vz-nm-c">
+          <select id="vz-nm-c" className="vz-select" value={cc} onChange={(e) => setCc(e.target.value)}>
+            <option value="">{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</option>
+            {Array.from(new Set(NOMAD_HUBS.map((h) => h.countryCode))).map((c) => ({ c, n: getCountryName(c, language) })).sort((a, b) => a.n.localeCompare(b.n, language)).map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
+          </select>
+        </Field>
+      </div>
+      <span className="vz-muted" style={{ fontSize: 13 }}>{l(`${list.length} merkez`, `${list.length} hubs`, `${list.length} Hubs`, `${list.length} centros`, `${list.length} хабов`)}</span>
+      {list.length === 0 ? (
+        <Empty icon="laptop" title={l('Bu seçimle merkez yok', 'No hubs for this selection', 'Keine Treffer', 'Sin resultados', 'Нет результатов')} action={<Btn variant="soft" onClick={() => { setReg(''); setBud(''); setCc(''); }}>{l('Filtreleri temizle', 'Clear filters', 'Filter löschen', 'Limpiar', 'Сбросить')}</Btn>} />
+      ) : (
       <div className="vz-grid two">
         {list.map((h) => (
           <Card key={h.id} eyebrow={h.visaName} title={getCountryName(h.countryCode, language)} icon="laptop" actions={<Flag code={h.countryCode} />}>
@@ -578,23 +662,35 @@ const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCou
               <Stat value={h.duration} label={l('Vize süresi', 'Visa length', 'Dauer', 'Duración', 'Срок')} />
             </div>
             <p className="vz-muted">{l('Gelir şartı', 'Income needed', 'Einkommen', 'Ingresos', 'Доход')}: <b style={{ color: 'var(--rd-fg)' }}>{h.incomeRequired}</b></p>
+            <p className="vz-muted">{l('Başvuru süresi', 'Processing time', 'Bearbeitung', 'Tramitación', 'Срок оформления')}: <b style={{ color: 'var(--rd-fg)' }}>{h.processingTime}</b></p>
             <Tags items={h.popularHubs} />
             {open === h.id && (
               <div className="vz-stack" style={{ gap: 10 }}>
+                {h.costBreakdown && (
+                  <div className="vz-cost">
+                    <b>{l('Aylık maliyet dökümü', 'Monthly cost breakdown', 'Monatliche Kosten', 'Desglose mensual', 'Расходы в месяц')}</b>
+                    {costRows.map(([k, ic, t]) => (
+                      <div key={k} className="vz-cost-row"><Icon name={ic} size={16} /><span>{t}</span><b>{h.costBreakdown?.[k]}</b></div>
+                    ))}
+                  </div>
+                )}
                 <p>{h.lifestyleVibe}</p>
                 <p className="vz-muted">{h.internetAndCoworking}</p>
                 <Bullets items={h.keyRequirements} />
                 <p className="vz-muted">{l('Vergi', 'Tax', 'Steuern', 'Impuestos', 'Налоги')}: {h.taxRegime}</p>
+                <p className="vz-muted">{l('Oturum yolu', 'Path to residence', 'Weg zum Aufenthalt', 'Camino a la residencia', 'Путь к ВНЖ')}: {h.residencePathway}</p>
               </div>
             )}
             <div className="vz-actions">
-              <Btn variant="soft" small onClick={() => setOpen(open === h.id ? null : h.id)}>{open === h.id ? l('Daha az', 'Less', 'Weniger', 'Menos', 'Меньше') : l('Ayrıntılar', 'Details', 'Details', 'Detalles', 'Подробнее')}</Btn>
+              <Btn variant="soft" small onClick={() => setOpen(open === h.id ? null : h.id)}>{open === h.id ? l('Daha az', 'Less', 'Weniger', 'Menos', 'Меньше') : l('Maliyet ve ayrıntılar', 'Costs & details', 'Kosten & Details', 'Costes y detalles', 'Расходы и детали')}</Btn>
               <Btn variant="ghost" small onClick={() => onOpenCountry(h.countryCode)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'País', 'Страна')}</Btn>
+              {h.googleMapsQuery && <LinkBtn href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.googleMapsQuery)}`} small variant="link" icon="map">{l('Haritada ortak ofisler', 'Coworking on the map', 'Coworking auf Karte', 'Coworking en mapa', 'Коворкинги на карте')}</LinkBtn>}
               {h.officialUrl && <LinkBtn href={h.officialUrl} small variant="link">{l('Resmî site', 'Official site', 'Offiziell', 'Oficial', 'Сайт')}</LinkBtn>}
             </div>
           </Card>
         ))}
       </div>
+      )}
     </div>
   );
 };
@@ -621,6 +717,18 @@ const TzView: React.FC<{ home: string }> = ({ home }) => {
     return hr >= 8 && hr < 22;
   });
   const name = (h: (typeof hubs)[number]) => (language === 'tr' ? h.cityTr || h.city : h.city);
+  const [off, setOff] = useState(0);
+  const at = slots[off];
+  // önerilen toplantı aralığı: herkesin uyanık olduğu en uzun ardışık dilim
+  let best: [number, number] | null = null;
+  for (let i = 0; i < 24; ) {
+    if (!ok(slots[i])) { i++; continue; }
+    let j = i;
+    while (j < 24 && ok(slots[j])) j++;
+    if (!best || j - i > best[1] - best[0]) best = [i, j];
+    i = j;
+  }
+  const fmtH = (tz: string, d: Date) => new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : language, { timeZone: tz, hour: '2-digit', minute: '2-digit' }).format(d);
   return (
     <div className="vz-stack">
       <div className="vz-grid">
@@ -643,6 +751,37 @@ const TzView: React.FC<{ home: string }> = ({ home }) => {
           </select>
         </Field>
       )}
+      <Card title={l('Saati kaydır', 'Slide the time', 'Zeit verschieben', 'Desliza la hora', 'Сдвиньте время')} icon="clock">
+        <label htmlFor="vz-tz-off" className="sr-only">{l('Saat', 'Hour', 'Stunde', 'Hora', 'Час')}</label>
+        <input id="vz-tz-off" type="range" min={0} max={23} value={off} onChange={(e) => setOff(Number(e.target.value))} />
+        <div className="vz-tz-row">
+          {sel.map((h) => {
+            const hr = hourIn(h.tz, at);
+            return (
+              <div key={h.city} className={`vz-tz-cell${hr >= 8 && hr < 22 ? ' ok' : ''}`}>
+                <span>{name(h)}</span>
+                <b>{fmtH(h.tz, at)}</b>
+              </div>
+            );
+          })}
+        </div>
+        {best ? (
+          <p><b>{l('Önerilen toplantı aralığı', 'Suggested meeting window', 'Vorgeschlagenes Zeitfenster', 'Franja sugerida', 'Лучшее время встречи')}:</b> {sel.map((h) => `${name(h)} ${fmtH(h.tz, slots[best![0]])}–${fmtH(h.tz, new Date(slots[best![1] - 1].getTime() + 3600000))}`).join(' · ')}</p>
+        ) : (
+          <p className="vz-muted">{l('Bu şehirler için herkesin 08–22 arasında uyanık olduğu ortak saat yok.', 'No common 08–22 hours for these cities.', 'Keine gemeinsame Zeit.', 'No hay horas comunes.', 'Нет общих часов.')}</p>
+        )}
+      </Card>
+      <div className="vz-tzm" role="table" aria-label={l('24 saatlik tablo', '24-hour table', '24-Stunden-Tabelle', 'Tabla de 24 horas', 'Таблица 24 часов')}>
+        {sel.map((h) => (
+          <div key={h.city} className="vz-tzm-row" role="row">
+            <span className="vz-tzm-l" role="rowheader">{name(h)}</span>
+            {slots.map((d, i) => {
+              const hr = hourIn(h.tz, d);
+              return <i key={i} role="cell" className={`${hr >= 9 && hr < 18 ? 'w' : hr >= 8 && hr < 22 ? 'e' : 'n'}${i === off ? ' cur' : ''}`} onClick={() => setOff(i)}>{hr}</i>;
+            })}
+          </div>
+        ))}
+      </div>
       <Card title={l('Herkesin uyanık olduğu saatler', 'Hours when everyone is awake', 'Gemeinsame Wachzeiten', 'Horas comunes', 'Общие часы')} icon="clock" tone="sea">
         <div className="vz-hours" role="img" aria-label={l('Önümüzdeki 24 saat', 'Next 24 hours', 'Nächste 24 Stunden', 'Próximas 24 horas', 'Ближайшие 24 часа')}>
           {slots.map((d, i) => <i key={i} className={ok(d) ? 'on' : ''} title={new Intl.DateTimeFormat('en-GB', { timeZone: sel[0]?.tz, hour: '2-digit', minute: '2-digit' }).format(d)} />)}

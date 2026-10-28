@@ -10,7 +10,7 @@ import { getCountryName, DIGITAL_NOMAD_VISAS, AFFILIATE_PARTNERS, getLocalizedPa
 import { GEO_DATA } from '../data/geoData';
 import { GLOBAL_CURRENCIES } from '../data/countryGeography';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
-import { useLiveFx, useLiveWeather, liveWeatherKey } from '../utils/liveData';
+import { useLiveFx, useLiveWeather, liveWeatherKey, refreshLiveFx } from '../utils/liveData';
 import { getCountryTravelIntelligence } from '../data/countryTravelIntelligence';
 import { getCountryInsights } from '../data/countryInsights';
 import { getVerifiedCountryRecord } from '../data/verifiedCountryData';
@@ -220,7 +220,8 @@ const DocsCheckView: React.FC<{ passport: string; dest: string; setDest: (c: str
 /* ---------------- Döviz çevirici ---------------- */
 const FxView: React.FC<{ passport: string; dest: string }> = ({ passport, dest }) => {
   const { l, language } = useI18n();
-  useLiveFx();
+  const { updatedAt } = useLiveFx();
+  const [refreshing, setRefreshing] = useState(false);
   const curs = useMemo(() => Object.keys(USD_RATES).sort(), []);
   const [from, setFrom] = useState(GLOBAL_CURRENCIES[passport]?.code || 'EUR');
   const [to, setTo] = useState(GLOBAL_CURRENCIES[dest]?.code || 'USD');
@@ -267,6 +268,10 @@ const FxView: React.FC<{ passport: string; dest: string }> = ({ passport, dest }
         </span>
         <b style={{ fontSize: 30, letterSpacing: '-0.02em' }}>{ok ? `${fmtNum(n * rate, language, 2)} ${to}` : '—'}</b>
         <span className="vz-muted">{ok ? `1 ${from} = ${fmtNum(rate, language, 4)} ${to}` : l('Bu para birimi için kur bulunamadı', 'No rate for this currency', 'Kein Kurs', 'Sin tipo de cambio', 'Нет курса')}</span>
+        <span className="vz-row-flex" style={{ gap: 8 }}>
+          <span className="vz-muted" style={{ fontSize: 12.5 }}>{updatedAt ? l(`Güncelleme: ${new Date(updatedAt).toLocaleString(language)}`, `Updated: ${new Date(updatedAt).toLocaleString(language)}`, `Stand: ${new Date(updatedAt).toLocaleString(language)}`, `Actualizado: ${new Date(updatedAt).toLocaleString(language)}`, `Обновлено: ${new Date(updatedAt).toLocaleString(language)}`) : l('Kayıtlı kurlar', 'Stored rates', 'Gespeicherte Kurse', 'Tipos guardados', 'Сохранённые курсы')}</span>
+          <Btn small variant="ghost" icon="fx" disabled={refreshing} onClick={() => { setRefreshing(true); refreshLiveFx(true).finally(() => setRefreshing(false)); }}>{refreshing ? l('Yenileniyor…', 'Refreshing…', 'Lädt…', 'Actualizando…', 'Обновление…') : l('Kurları yenile', 'Refresh rates', 'Kurse aktualisieren', 'Actualizar', 'Обновить')}</Btn>
+        </span>
       </Card>
       {ok && (
         <div className="vz-grid">
@@ -396,6 +401,13 @@ const SosView: React.FC<{ passport: string; dest: string; setDest: (c: string) =
           {cons.hotline247 && <a className="vz-btn vz-btn-primary sm" href={`tel:${cons.hotline247.replace(/[^\d+]/g, '')}`}>{l('7/24', '24/7', '24/7', '24/7', '24/7')}: {cons.hotline247}</a>}
           {cons.hotlineDomestic && <span className="vz-badge tone-sea">{cons.hotlineDomestic}</span>}
           {cons.officialPortalUrl && <LinkBtn href={cons.officialPortalUrl} small>{cons.officialPortalName || l('Resmî site', 'Official site', 'Offizielle Seite', 'Sitio oficial', 'Сайт')}</LinkBtn>}
+        </div>
+      </Card>
+      <Card icon="pin" title={l(`${getCountryName(passport, language)} temsilciliği · ${getCountryName(dest, language)}`, `${getCountryName(passport, language)} embassy in ${getCountryName(dest, language)}`, `Botschaft (${getCountryName(passport, language)}) in ${getCountryName(dest, language)}`, `Embajada de ${getCountryName(passport, language)} en ${getCountryName(dest, language)}`, `Посольство (${getCountryName(passport, language)}) — ${getCountryName(dest, language)}`)}>
+        <p className="vz-muted">{l('Pasaport kaybı, tutuklanma ya da ciddi bir sağlık sorununda büyükelçilik ya da konsolosluk sana yardım eder. Haritada en yakınını bul.', 'Your embassy or consulate helps with lost passports, arrests or serious health issues. Find the nearest on the map.', 'Botschaft hilft bei Passverlust, Festnahme, Krankheit.', 'Tu embajada ayuda con pasaportes perdidos y emergencias.', 'Посольство помогает при утере паспорта и ЧП.')}</p>
+        <div className="vz-actions">
+          <LinkBtn small icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${getCountryName(passport, 'en')} embassy ${getCountryName(dest, 'en')}`)}`}>{l('Büyükelçiliği haritada bul', 'Find the embassy on the map', 'Botschaft auf Karte', 'Buscar embajada', 'Найти на карте')}</LinkBtn>
+          <LinkBtn small variant="ghost" icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${getCountryName(passport, 'en')} consulate ${getCountryName(dest, 'en')}`)}`}>{l('Konsolosluklar', 'Consulates', 'Konsulate', 'Consulados', 'Консульства')}</LinkBtn>
         </div>
       </Card>
       <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{l('Numaralar resmî kaynaklardan derlenir; acil bir durumda önce yerel genel acil numarasını ara.', 'Numbers come from official sources; in an emergency, call the local general number first.', 'Im Notfall zuerst die lokale Notrufnummer wählen.', 'En emergencia, llama primero al número local.', 'В экстренной ситуации звоните на местный номер.')}</span></div>

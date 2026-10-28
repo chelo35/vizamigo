@@ -273,7 +273,7 @@ body { background: var(--rd-bg); color: var(--rd-fg); }
 @keyframes rd-fly { from { offset-distance: 0%; } to { offset-distance: 100%; } }
 @keyframes rd-dash { to { stroke-dashoffset: -14; } }
 @keyframes rd-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-@keyframes rd-sweep { from { left: -60px; opacity: 0; transform: translateY(8px) rotate(-8deg); } 15% { opacity: 1; } to { left: calc(100% + 40px); opacity: 0; transform: translateY(-10px) rotate(4deg); } }
+@keyframes rd-sweep { from { opacity: 0; transform: translate3d(0, 8px, 0) rotate(-8deg); } 15% { opacity: 1; } to { opacity: 0; transform: translate3d(calc(100cqw + 100px), -10px, 0) rotate(4deg); } }
 @media (prefers-reduced-motion: reduce) {
   .rd-home *, .rd-home *::before, .rd-home *::after { animation: none !important; transition: none !important; }
   .rd-flight { transform: translateX(12vw) !important; }

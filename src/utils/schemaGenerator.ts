@@ -434,8 +434,11 @@ export function injectCountrySchema(
     return;
   }
 
-  // Load heavy country schema asynchronously
-  import('./countrySchemaGenerator').then(({ generateCountryJsonLd }) => {
+  // Derlemede hazır yazılmış şema bu sayfa içinse ağır modülü hiç yükleme
+  if (scriptEl && scriptEl.dataset.code === countryCode && scriptEl.dataset.lang === language && scriptEl.dataset.pass === currentPassport) return;
+
+  // Ağır şema modülünü sayfa açıldıktan ve tarayıcı boşaldıktan sonra yükle (hızı etkilemesin)
+  const run = () => import('./countrySchemaGenerator').then(({ generateCountryJsonLd }) => {
     if (!scriptEl) {
       scriptEl = document.createElement('script');
       scriptEl.id = SCRIPT_ID;
@@ -444,5 +447,15 @@ export function injectCountrySchema(
     }
     const schemaData = generateCountryJsonLd({ countryCode, language, currentPassport });
     scriptEl.textContent = JSON.stringify(schemaData, null, 2);
+    scriptEl.dataset.code = countryCode;
+    scriptEl.dataset.lang = language;
+    scriptEl.dataset.pass = currentPassport;
   }).catch(() => {});
+  const idle = () => {
+    const w = window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => void };
+    if (w.requestIdleCallback) w.requestIdleCallback(run, { timeout: 6000 });
+    else setTimeout(run, 2500);
+  };
+  if (document.readyState === 'complete') idle();
+  else window.addEventListener('load', idle, { once: true });
 }

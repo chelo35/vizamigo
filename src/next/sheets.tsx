@@ -285,6 +285,33 @@ export const AssistantSheet: React.FC<{
   const [q, setQ] = useState('');
   const [busy, setBusy] = useState(false);
   const [listening, setListening] = useState(false);
+  // sesli cevap (tarayıcının kendi sesi); tercih cihazda saklanır
+  const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window;
+  const [speak, setSpeak] = useState(() => {
+    try {
+      return localStorage.getItem('vz_assistant_voice') === '1';
+    } catch {
+      return false;
+    }
+  });
+  const toggleSpeak = () => {
+    const n = !speak;
+    setSpeak(n);
+    try {
+      localStorage.setItem('vz_assistant_voice', n ? '1' : '0');
+    } catch {}
+    if (!n && canSpeak) window.speechSynthesis.cancel();
+  };
+  const say = (text: string) => {
+    if (!canSpeak) return;
+    const plain = text.replace(/\*\*|[#*_>`]/g, '').replace(/https?:\/\/\S+/g, '').slice(0, 900);
+    const u = new SpeechSynthesisUtterance(plain);
+    u.lang = ({ tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' } as Record<string, string>)[language] || 'en-GB';
+    u.rate = 1.02;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  };
+  useEffect(() => () => { if (canSpeak) window.speechSynthesis.cancel(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const endRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -298,6 +325,7 @@ export const AssistantSheet: React.FC<{
     try {
       const r = await processAssistantQuery(t, passport, language);
       setMsgs((m) => [...m, r]);
+      if (speak) say(r.text);
     } catch {
       setMsgs((m) => [...m, { id: `e-${Date.now()}`, sender: 'assistant', text: l('Şu an yanıt veremedim, birazdan tekrar dener misin?', 'I couldn’t answer just now, try again in a moment?', 'Gerade keine Antwort möglich.', 'No pude responder ahora.', 'Не удалось ответить.'), timestamp: new Date() }]);
     } finally {
@@ -353,9 +381,14 @@ export const AssistantSheet: React.FC<{
       <form className="vz-chat-in" onSubmit={(e) => { e.preventDefault(); send(); }}>
         <label htmlFor="vz-chat-q" className="sr-only">{l('Sorunu yaz', 'Type your question', 'Frage eingeben', 'Escribe tu pregunta', 'Ваш вопрос')}</label>
         <input id="vz-chat-q" className="vz-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder={l('Sorunu yaz…', 'Type your question…', 'Frage eingeben…', 'Escribe tu pregunta…', 'Ваш вопрос…')} autoComplete="off" />
+        {canSpeak && (
+          <button type="button" className={`vz-iconbtn${speak ? ' on' : ''}`} onClick={toggleSpeak} aria-pressed={speak} aria-label={speak ? l('Sesli cevabı kapat', 'Turn off spoken replies', 'Sprachausgabe aus', 'Desactivar voz', 'Выключить голос') : l('Cevapları sesli oku', 'Read replies aloud', 'Antworten vorlesen', 'Leer en voz alta', 'Озвучивать ответы')} title={speak ? l('Sesli cevap açık', 'Spoken replies on', 'Sprachausgabe an', 'Voz activada', 'Голос включён') : l('Sesli cevap kapalı', 'Spoken replies off', 'Sprachausgabe aus', 'Voz desactivada', 'Голос выключен')}>
+            <Icon name="sound" size={18} duo={false} />
+          </button>
+        )}
         {isSpeechRecognitionSupported() && (
           <button type="button" className={`vz-iconbtn${listening ? ' on' : ''}`} onClick={mic} aria-label={listening ? l('Dinlemeyi durdur', 'Stop listening', 'Stopp', 'Detener', 'Стоп') : l('Sesle sor', 'Ask by voice', 'Per Stimme fragen', 'Preguntar por voz', 'Голосом')}>
-            <Icon name="phone" size={18} duo={false} />
+            <Icon name="mic" size={18} duo={false} />
           </button>
         )}
         <Btn type="submit" icon="next" disabled={busy || !q.trim()} aria-label={l('Gönder', 'Send', 'Senden', 'Enviar', 'Отправить')} />
