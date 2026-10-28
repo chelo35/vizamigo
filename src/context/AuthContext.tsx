@@ -46,8 +46,8 @@ interface AuthContextType {
 // Proje adresi ve publishable anahtar tarayıcıda herkese açıktır (güvenlik RLS kurallarıyla sağlanır).
 const URL_ = (import.meta.env.VITE_SUPABASE_URL as string | undefined) || 'https://utlnjyquflfcvjhmgopq.supabase.co';
 const KEY_ = (import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined) || 'sb_publishable_nINWLrE2ocJ4XuueayQ94g_SeEC_kLk';
-/** Google girişi Supabase'te açılınca true yapılır (VITE_SUPABASE_GOOGLE=1) */
-export const GOOGLE_ENABLED = (import.meta.env.VITE_SUPABASE_GOOGLE as string | undefined) === '1';
+/** Google girişi Supabase'te açık; kapatmak için VITE_SUPABASE_GOOGLE=0 */
+export const GOOGLE_ENABLED = (import.meta.env.VITE_SUPABASE_GOOGLE as string | undefined) !== '0';
 const CONFIGURED = !!(URL_ && KEY_);
 
 // istemci yalnızca gerektiğinde yüklenir (ilk açılışı ağırlaştırmasın)
