@@ -91,6 +91,16 @@ function AppContent() {
     setSelectedCountryCode(route.countryCode);
   }, [route.countryCode]);
 
+  // ilk açılıştan sonraki sayfa geçişlerinde yumuşak giriş animasyonu (ilk yüklemeyi yavaşlatmasın)
+  const firstRoute = React.useRef(true);
+  useEffect(() => {
+    if (firstRoute.current) {
+      firstRoute.current = false;
+      return;
+    }
+    document.documentElement.classList.add('vz-nav');
+  }, [route.tab, route.countryCode, route.infoPage]);
+
   const handleSelectTab = (tab: TabKey) => {
     setActiveTab(tab);
     setSelectedCountryCode(null);

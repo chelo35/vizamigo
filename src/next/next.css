@@ -737,3 +737,39 @@ input[type="range"] { width: 100%; accent-color: var(--rd-sea); }
 .vz-plogo img { display: block; object-fit: contain; }
 .vz-card-h .vz-plogo { margin-right: 2px; }
 .vz-app-card .vz-plogo { border-radius: 14px; }
+
+/* ---- Geçiş ve açılış animasyonları (hafif; yalnızca transform/opacity, GPU'da çalışır) ---- */
+@media (prefers-reduced-motion: no-preference) {
+  /* sayfa değiştirince yumuşak giriş; ilk yüklemede çalışmaz (LCP'yi bekletmesin) */
+  html.vz-nav .vz-page { animation: vz-pagein 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+  /* aşağı kaydırdıkça kartlar yerine süzülür; tarayıcı destekliyorsa, hiç JavaScript'siz */
+  @supports (animation-timeline: view()) {
+    .vz-page-body .vz-card, .vz-page-body .vz-ccard, .vz-page-body .vz-tile, .vz-page-body .vz-step, .vz-page-body .vz-app-card, .vz-home-sec > h2 {
+      animation: vz-reveal linear backwards;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+
+  /* dokunma geri bildirimi */
+  .vz-tile:active, .vz-ccard:active, .vz-btn:active, .vz-chip:active, .vz-app-card:active { transform: scale(0.97); transition-duration: 0.08s; }
+
+  /* ortak logoları ve kart görselleri: üzerine gelince hafif büyüme (yalnız fareli cihazlarda) */
+  @media (hover: hover) {
+    .vz-card:hover .vz-plogo { transform: scale(1.06); }
+    .vz-plogo { transition: transform 0.2s ease; }
+    .vz-app-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .vz-app-card:hover { transform: translateY(-2px); box-shadow: var(--vz-shadow-sm); }
+  }
+
+  /* sekmeli içeriklerde açılan panel içindeki kartlar sırayla gelir */
+  .vz-panel-b .vz-grid > * { animation: vz-rise 0.38s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; }
+  .vz-panel-b .vz-grid > *:nth-child(2) { animation-delay: 0.04s; }
+  .vz-panel-b .vz-grid > *:nth-child(3) { animation-delay: 0.08s; }
+  .vz-panel-b .vz-grid > *:nth-child(4) { animation-delay: 0.12s; }
+  .vz-panel-b .vz-grid > *:nth-child(5) { animation-delay: 0.16s; }
+  .vz-panel-b .vz-grid > *:nth-child(n + 6) { animation-delay: 0.2s; }
+}
+@keyframes vz-pagein { from { opacity: 0; transform: translateY(8px); } }
+@keyframes vz-reveal { from { opacity: 0; transform: translateY(18px) scale(0.985); } }
