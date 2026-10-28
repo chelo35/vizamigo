@@ -31,7 +31,7 @@ const PassportSheet = lazy(() => S().then((m) => ({ default: m.PassportSheet }))
 const AuthSheet = lazy(() => S().then((m) => ({ default: m.AuthSheet })));
 const ReportSheet = lazy(() => S().then((m) => ({ default: m.ReportSheet })));
 const AuditSheet = lazy(() => S().then((m) => ({ default: m.AuditSheet })));
-const InfoSheet = lazy(() => S().then((m) => ({ default: m.InfoSheet })));
+const InfoPage = lazy(() => import('./next/InfoPage').then((m) => ({ default: m.InfoPage })));
 const AssistantSheet = lazy(() => S().then((m) => ({ default: m.AssistantSheet })));
 const CountryPage = lazy(() => import('./next/CountryPage').then((m) => ({ default: m.CountryPage })));
 
@@ -45,7 +45,7 @@ const TabLoadingSkeleton: React.FC = () => (
 
 function AppContent() {
   const { language, setLanguage, l, t } = useI18n();
-  const { route, navigate } = useSeoRouter();
+  const { route, navigate, openInfo } = useSeoRouter();
   const { isAuthModalOpen } = useAuth();
 
   const [currentPassport, setCurrentPassport] = useState<string>(() => loadStoredPassport());
@@ -112,9 +112,12 @@ function AppContent() {
   const [isAuditModalOpen, setIsAuditModalOpen] = useState<boolean>(false);
   const [reportingModalData, setReportingModalData] = useState<{ code: string; name: string } | null>(null);
 
+  // Bilgi merkezi artık kendi adresinde açılan bir sayfa
   const openLegalModalWithTab = (tab: string = 'terms') => {
-    setLegalInitialTab(tab);
-    setIsLegalModalOpen(true);
+    openInfo(tab);
+    try {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    } catch {}
   };
   const [isPackingListOpen, setIsPackingListOpen] = useState<boolean>(false);
   const [isTippingCalcOpen, setIsTippingCalcOpen] = useState<boolean>(false);
@@ -234,6 +237,22 @@ function AppContent() {
               onGoHome={() => handleSelectTab('explore')}
             />
           </div>
+        ) : route.infoPage ? (
+          <ErrorBoundary isTabBoundary tabName="info">
+            <Suspense fallback={<div className="vz-wrap" style={{ paddingBlock: 24 }}><div className="vz-skel" style={{ height: 420 }} /></div>}>
+              <InfoPage
+                page={route.infoPage}
+                onPage={(pg) => {
+                  openInfo(pg, true);
+                  try {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  } catch {}
+                }}
+                onBack={() => handleSelectTab('explore')}
+                onDataChanged={handleDataResetOrImported}
+              />
+            </Suspense>
+          </ErrorBoundary>
         ) : activeTab === 'explore' ? (
           <ErrorBoundary isTabBoundary tabName={t.navExplore || 'Keşfet'}>
             {selectedCountryCode ? (
@@ -320,15 +339,6 @@ function AppContent() {
           />
         )}
 
-        {isLegalModalOpen && (
-          <InfoSheet
-            open={isLegalModalOpen}
-            onClose={() => setIsLegalModalOpen(false)}
-            page={legalInitialTab}
-            onPage={setLegalInitialTab}
-            onDataChanged={handleDataResetOrImported}
-          />
-        )}
 
         {isAuditModalOpen && (
           <AuditSheet

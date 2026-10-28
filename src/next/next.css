@@ -583,3 +583,20 @@ html.dark .vz-band-sky::after { background: linear-gradient(180deg, transparent,
 .vz-plug figcaption { font-weight: 800; font-size: 13px; color: var(--rd-sea-ink); }
 .vz-check-wrap { display: flex; align-items: center; gap: 6px; }
 .vz-check-wrap > .vz-check { flex: 1; }
+
+/* ---- Bilgi merkezi sayfası ---- */
+.vz-info { display: grid; gap: 18px; grid-template-columns: 1fr; align-items: start; }
+.vz-info-nav { display: none; }
+@media (min-width: 960px) {
+  .vz-info { grid-template-columns: 250px minmax(0, 1fr); }
+  .vz-info-nav { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 84px; background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: var(--vz-r-lg); padding: 16px 10px; }
+  .vz-info-mnav { display: none; }
+}
+.vz-info-grp { display: flex; flex-direction: column; gap: 2px; }
+.vz-info-grp-h { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--rd-sea-ink); padding: 4px 10px 6px; }
+.vz-info-nav a { display: block; padding: 8px 10px; border-radius: 10px; color: var(--rd-fg); text-decoration: none; font-size: 14.5px; }
+.vz-info-nav a:hover { background: var(--rd-sea-soft); }
+.vz-info-nav a.on { background: var(--rd-sea-soft); color: var(--rd-sea-ink); font-weight: 700; }
+.vz-info-mnav { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.vz-info-body { padding: clamp(18px, 3vw, 32px); min-width: 0; }
+@media (min-width: 960px) { .vz-info-mnav { display: none; } }

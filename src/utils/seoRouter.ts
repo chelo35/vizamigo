@@ -67,6 +67,8 @@ export interface ParsedRoute {
   tab: TabKey;
   countryCode: string | null;
   is404?: boolean;
+  /** /:lang/info/:page — bilgi merkezi sayfası */
+  infoPage?: string | null;
 }
 
 export interface HreflangAlternateDescriptor {
@@ -116,6 +118,7 @@ export function parseCurrentRoute(): ParsedRoute {
   let tab: TabKey = 'explore';
   let countryCode: string | null = null;
   let is404 = false;
+  let infoPage: string | null = null;
 
   if (segments.length > 0) {
     const firstSegment = segments[0].toLowerCase();
@@ -123,7 +126,7 @@ export function parseCurrentRoute(): ParsedRoute {
       language = firstSegment as SupportedLanguage;
       segments.shift();
     } else if (
-      firstSegment === 'country' ||
+      firstSegment === 'country' || firstSegment === 'info' ||
       VALID_TABS.has(firstSegment as TabKey) ||
       TAB_ALIASES[firstSegment] ||
       isValidCountryCode(firstSegment) ||
@@ -138,8 +141,12 @@ export function parseCurrentRoute(): ParsedRoute {
   if (segments.length > 0 && !is404) {
     const next = segments[0].toLowerCase();
 
+    // 0. Bilgi merkezi: `/:lang/info/:page`
+    if (next === 'info' || next === 'bilgi') {
+      infoPage = (segments[1] || 'terms').toLowerCase().replace(/[^a-z_]/g, '') || 'terms';
+    }
     // 1. Check legacy `/country/:code`
-    if (next === 'country') {
+    else if (next === 'country') {
       if (segments[1]) {
         const potentialCode = segments[1].toUpperCase();
         if (isValidCountryCode(potentialCode)) {
@@ -173,7 +180,7 @@ export function parseCurrentRoute(): ParsedRoute {
     }
   }
 
-  return { language, tab, countryCode, is404 };
+  return { language, tab, countryCode, is404, infoPage };
 }
 
 /**
@@ -279,9 +286,18 @@ export function useSeoRouter() {
     saveStoredLanguage(targetLang);
   }, [route]);
 
+  const openInfo = useCallback((page: string, replace: boolean = false) => {
+    const lang = route.language;
+    const path = `/${lang}/info/${page}`;
+    if (replace) window.history.replaceState({ lang, info: page }, '', path);
+    else window.history.pushState({ lang, info: page }, '', path);
+    setRoute({ language: lang, tab: 'explore', countryCode: null, is404: false, infoPage: page });
+  }, [route]);
+
   return {
     route,
     navigate,
+    openInfo,
     setLanguageInUrl: (lang: SupportedLanguage) => navigate(lang, undefined, undefined, false),
     setTabInUrl: (tab: TabKey) => navigate(undefined, tab, null, false),
     setCountryInUrl: (code: string | null) => navigate(undefined, 'explore', code, false)
