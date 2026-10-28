@@ -15,6 +15,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import { applyDict } from './data-i18n';
 const DIST = path.resolve(__dirname, '../dist');
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -232,6 +233,9 @@ async function main() {
     const { getCountryItinerary } = await import('../src/data/countryItineraries');
     const { getVerifiedCountryRecord } = await import('../src/data/verifiedCountryData');
     const { getCountryNomadApps } = await import('../src/data/rideAndDeliveryApps');
+    const { loadDict, DATA_LANGS } = await import('./data-i18n');
+    const dicts: Record<string, Record<string, string>> = {};
+    for (const l of DATA_LANGS) dicts[l] = loadDict(path.resolve(DIST, '..'), l);
     const plugs: Record<string, string[]> = {};
     let files = 0;
     for (const code of allCodes) {
@@ -241,7 +245,11 @@ async function main() {
       write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
       files++;
       for (const lang of LANGS) {
-        write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify({ insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) }));
+        const local = { insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) };
+        const dict = dicts[lang];
+        // Türkçe dışı dillerde, Türkçe kalmış metinleri sözlükten çevir (dilden bağımsız intel dahil)
+        const out = dict && Object.keys(dict).length ? { ...applyDict(local, dict), intel: applyDict(intel, dict) } : local;
+        write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
         files++;
       }
     }
