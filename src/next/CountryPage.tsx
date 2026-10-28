@@ -93,7 +93,7 @@ const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void
             <Icon name="back" size={18} duo={false} />
             <span>{l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}</span>
           </button>
-          <span className="vz-row-flex"><VisaBadge item={item} big />{days && <span className="vz-badge big tone-mute">{l(`${days} gün`, `${days} days`, `${days} Tage`, `${days} días`, `${days} дн.`)}</span>}</span>
+          <span className="vz-row-flex">{passport === code ? <span className="vz-badge big tone-ok">{l('Kendi ülken', 'Your country', 'Dein Land', 'Tu país', 'Ваша страна')}</span> : <VisaBadge item={item} big />}{days && passport !== code && <span className="vz-badge big tone-mute">{l(`${days} gün`, `${days} days`, `${days} Tage`, `${days} días`, `${days} дн.`)}</span>}</span>
           <h1><Flag code={code} size="lg" /><span className="vz-h1-main">{name}</span><span className="sr-only"> — {h1Rest}</span></h1>
           <p>{[geog.capital, geog.currencyName, geog.callingCode].filter(Boolean).join(' · ')}</p>
           {visual.landmark && <span className="vz-chero-cap">{visual.landmark}</span>}
@@ -624,11 +624,11 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         </div>
 
         <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}>
-          <span className={`vz-ic tone-${visaTone(item)}`}><Icon name={visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
+          <span className={`vz-ic tone-${passport === code ? 'ok' : visaTone(item)}`}><Icon name={passport !== code && visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
           <div className="vz-stack" style={{ gap: 6 }}>
             <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with a ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
-            <p>{answer}</p>
-            {detail?.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>}
+            <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.') : answer}</p>
+            {passport !== code && detail?.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>}
           </div>
         </section>
 

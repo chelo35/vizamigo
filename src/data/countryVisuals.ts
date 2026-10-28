@@ -18,6 +18,8 @@ export const DEFAULT_TRAVEL_FALLBACK = '/placeholder-landscape.svg';
 
 const LOCAL_COUNTRY_IMG_REGEX = /^\/images\/countries\/([a-z]{2})(?:-(\d+))?\.(webp|avif|jpg|png|jpeg)$/i;
 const AVAILABLE_WIDTHS = [240, 360, 480, 720];
+/** 28.10.2026'da fotoğrafı değiştirilen ülkeler */
+const PHOTO_V2 = new Set(['mt', 'md', 'pl', 'af', 'bd', 'kh', 'tl', 'kz', 'il', 'tr', 'gw', 'lr', 'ss', 'zw', 'sd', 'tn', 'za', 'bz', 'fj', 'tt', 'ni', 'az', 'do', 'pa']);
 
 /**
  * Transforms image URLs to modern Next-Gen WebP/AVIF format with optimal resolution.
@@ -38,7 +40,8 @@ export function getOptimizedImageUrl(
     const closestWidth = AVAILABLE_WIDTHS.reduce((prev, curr) =>
       Math.abs(curr - targetWidth) < Math.abs(prev - targetWidth) ? curr : prev
     );
-    return `/images/countries/${code}-${closestWidth}.${format}`;
+    // fotoğrafı yenilenen ülkelerde eski kopyalar (tarayıcı/önbellek) kullanılmasın
+    return `/images/countries/${code}-${closestWidth}.${format}${PHOTO_V2.has(code) ? '?v=2' : ''}`;
   }
 
   // 2. Legacy Unsplash fallback if any external image is supplied
@@ -72,10 +75,10 @@ export function getOptimizedSrcSet(rawUrl: string, format: 'webp' | 'avif' = 'we
   if (localMatch) {
     const code = localMatch[1].toLowerCase();
     return (
-      `/images/countries/${code}-240.${format} 240w, ` +
-      `/images/countries/${code}-360.${format} 360w, ` +
-      `/images/countries/${code}-480.${format} 480w, ` +
-      `/images/countries/${code}-720.${format} 720w`
+      `/images/countries/${code}-240.${format}${PHOTO_V2.has(code) ? '?v=2' : ''} 240w, ` +
+      `/images/countries/${code}-360.${format}${PHOTO_V2.has(code) ? '?v=2' : ''} 360w, ` +
+      `/images/countries/${code}-480.${format}${PHOTO_V2.has(code) ? '?v=2' : ''} 480w, ` +
+      `/images/countries/${code}-720.${format}${PHOTO_V2.has(code) ? '?v=2' : ''} 720w`
     );
   }
 
