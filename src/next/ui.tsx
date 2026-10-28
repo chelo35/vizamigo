@@ -132,20 +132,27 @@ export const Tags: React.FC<{ items: string[] }> = ({ items }) => (
   </div>
 );
 
-export const Empty: React.FC<{ icon?: IconName; title: string; text?: string; action?: React.ReactNode }> = ({ icon = 'compass', title, text, action }) => (
-  <div className="vz-empty">
+export const Empty: React.FC<{ icon?: IconName; title: string; text?: string; action?: React.ReactNode; steps?: string[] }> = ({ icon = 'compass', title, text, action, steps }) => (
+  <div className={`vz-empty${steps ? ' guide' : ''}`}>
     <span className="vz-ic lg"><Icon name={icon} size={28} /></span>
     <b>{title}</b>
     {text && <p>{text}</p>}
+    {steps && (
+      <ol className="vz-empty-steps">
+        {steps.map((s, i) => (
+          <li key={i}><span>{i + 1}</span>{s}</li>
+        ))}
+      </ol>
+    )}
     {action}
   </div>
 );
 
-export const SecHead: React.FC<{ eyebrow?: string; title: string; action?: React.ReactNode; sub?: string }> = ({ eyebrow, title, action, sub }) => (
+export const SecHead: React.FC<{ eyebrow?: string; title: string; action?: React.ReactNode; sub?: string; id?: string }> = ({ eyebrow, title, action, sub, id }) => (
   <div className="vz-sechead">
     <div>
       {eyebrow && <span className="vz-eyebrow">{eyebrow}</span>}
-      <h2>{title}</h2>
+      <h2 id={id}>{title}</h2>
       {sub && <p className="vz-muted">{sub}</p>}
     </div>
     {action}

@@ -1,4 +1,4 @@
-import React, { lazy, useEffect, useMemo, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { SeaHero } from '../components/redesign/SeaHero';
 import { LiveStrip, loadDestination } from '../components/redesign/LiveStrip';
@@ -16,6 +16,7 @@ const PopularView = lazy(() => V().then((m) => ({ default: m.PopularView })));
 const ChangesView = lazy(() => V().then((m) => ({ default: m.ChangesView })));
 const EasyTripView = lazy(() => V().then((m) => ({ default: m.EasyTripView })));
 const RadarView = lazy(() => V().then((m) => ({ default: m.RadarView })));
+const HomeRails = lazy(() => import('./explore/rails').then((m) => ({ default: m.HomeRails })));
 
 export interface ExploreProps {
   currentPassport: string;
@@ -158,12 +159,17 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       <div className="vz-wrap vz-page-body" style={{ paddingTop: 36 }}>
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">
           <SecHead
+            id="vz-h-tools"
             eyebrow={l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}
             title={l('Ne yapmak istersin?', 'What would you like to do?', 'Was möchtest du tun?', '¿Qué quieres hacer?', 'Что хотите сделать?')}
             sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.')}
           />
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
+
+        <Suspense fallback={null}>
+          <HomeRails passport={p.currentPassport} onOpenCountry={p.onOpenCountry} onOpenTile={(id) => openTile(id)} />
+        </Suspense>
 
         <section className="rd-pass" aria-label={l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт')}>
           <PassportCover code={p.currentPassport} onClick={p.onOpenPassport} />

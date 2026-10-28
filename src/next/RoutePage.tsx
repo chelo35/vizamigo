@@ -114,7 +114,13 @@ const PlannerView: React.FC<{ r: RouteApi; passport: string; onOpenCountry: (c: 
       {msg && <div className="vz-note"><Icon name="check" size={18} duo={false} />{msg}</div>}
 
       {r.stops.length === 0 ? (
-        <Empty icon="route" title={l('Henüz durak yok', 'No stops yet', 'Noch keine Stopps', 'Aún no hay paradas', 'Пока нет остановок')} text={l('Yukarıdan ilk ülkeni ekle ya da Hazır rotalar kutucuğundan tek dokunuşla bir rota yükle.', 'Add your first country above or load a ready-made route in one tap.', 'Erstes Land oben hinzufügen oder eine fertige Route laden.', 'Añade un país o carga una ruta lista.', 'Добавьте страну или загрузите готовый маршрут.')} />
+        <Empty icon="route" title={l('Henüz durak yok', 'No stops yet', 'Noch keine Stopps', 'Aún no hay paradas', 'Пока нет остановок')} text={l('Yukarıdan ilk ülkeni ekle ya da Hazır rotalar kutucuğundan tek dokunuşla bir rota yükle.', 'Add your first country above or load a ready-made route in one tap.', 'Erstes Land oben hinzufügen oder eine fertige Route laden.', 'Añade un país o carga una ruta lista.', 'Добавьте страну или загрузите готовый маршрут.')}
+          steps={[
+            l('Ülkeyi ve giriş-çıkış tarihlerini seç', 'Pick a country and your dates', 'Land und Daten wählen', 'Elige país y fechas', 'Выберите страну и даты'),
+            l('Sıradaki durakları ekle', 'Add the next stops', 'Weitere Stopps hinzufügen', 'Añade más paradas', 'Добавьте остановки'),
+            l('Vize, Schengen günü ve transit kontrolü kendiliğinden yapılır', 'Visa, Schengen days and transit are checked for you', 'Visum, Schengen und Transit werden geprüft', 'Visado, Schengen y tránsito se revisan solos', 'Виза, Шенген и транзит проверяются сами')
+          ]}
+        />
       ) : (
         <div className="vz-steps">
           {r.stops.map((s, i) => {

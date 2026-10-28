@@ -7,7 +7,7 @@ import { PassportCover } from '../components/redesign/PassportCover';
 import { getCountryName, AFFILIATE_PARTNERS, getLocalizedPartner, D } from '../data/passportData';
 import { VISA_CHANGE_ALERTS } from '../data/changeLog';
 import { getPassportItems } from '../utils/calculator';
-import { exportAppData, importAppData, clearAllAppData } from '../utils/storage';
+import { exportAppData, importAppData, clearAllAppData, loadStoredRouteStops } from '../utils/storage';
 
 interface Props {
   passport: string;
@@ -268,6 +268,19 @@ export const ProfilePage: React.FC<Props> = (p) => {
     { id: 'report', icon: 'flag', title: l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar error', 'Сообщить'), desc: l('Yanlış bilgi gördüm', 'I found wrong info', 'Falsche Info gefunden', 'Vi un error', 'Нашёл ошибку'), onOpen: p.onReport }
   ];
 
+  const mine = useMemo(() => {
+    let stops = 0, docs = 0, nextDoc: number | null = null;
+    try {
+      stops = loadStoredRouteStops().length;
+      const d = JSON.parse(localStorage.getItem('vz_wallet_docs_v1') || '[]') as { expiry: string }[];
+      docs = d.length;
+      const today = Date.parse(new Date().toISOString().slice(0, 10));
+      const future = d.map((x) => Math.round((Date.parse(x.expiry) - today) / 86400000)).filter((n) => n >= 0).sort((a, b) => a - b);
+      if (future.length) nextDoc = future[0];
+    } catch {}
+    return { stops, docs, nextDoc };
+  }, []);
+
   return (
     <Page
       eyebrow={l('Profil', 'Profile', 'Profil', 'Perfil', 'Профиль')}
@@ -278,8 +291,13 @@ export const ProfilePage: React.FC<Props> = (p) => {
         <div className="vz-cfacts">
           <Stat value={<span className="vz-row-flex" style={{ gap: 8 }}><Flag code={p.passport} size="sm" />{p.passport}</span>} label={l('Pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Паспорт')} icon="passport" />
           <Stat value={getPassportItems(p.passport).filter((it) => it.cat === 'free' || it.id).length} label={l('Vizesiz ülke', 'Visa-free countries', 'Visumfreie Länder', 'Sin visado', 'Без визы')} icon="globe" tone="ok" />
-          <Stat value={language.toUpperCase()} label={l('Dil', 'Language', 'Sprache', 'Idioma', 'Язык')} icon="lang" />
-          <Stat value={p.isDark ? l('Koyu', 'Dark', 'Dunkel', 'Oscuro', 'Тёмная') : l('Açık', 'Light', 'Hell', 'Claro', 'Светлая')} label={l('Tema', 'Theme', 'Design', 'Tema', 'Тема')} icon={p.isDark ? 'moon' : 'sun'} tone="sun" />
+          <Stat value={mine.stops} label={l('Rotandaki durak', 'Stops on your route', 'Stopps in deiner Route', 'Paradas en tu ruta', 'Остановок в маршруте')} icon="route" />
+          <Stat
+            value={mine.nextDoc === null ? mine.docs : `${mine.nextDoc} ${l('gün', 'days', 'Tage', 'días', 'дн.')}`}
+            label={mine.nextDoc === null ? l('Cüzdandaki belge', 'Documents in wallet', 'Dokumente', 'Documentos', 'Документы') : l('En yakın belge bitişi', 'Next document expiry', 'Nächster Ablauf', 'Próxima caducidad', 'Ближайший срок')}
+            icon="wallet"
+            tone={mine.nextDoc !== null && mine.nextDoc < 180 ? 'warn' : 'sun'}
+          />
         </div>
       }
     >

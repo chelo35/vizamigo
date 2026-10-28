@@ -73,7 +73,13 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
     <div className="vz-stack">
       <div className="vz-note"><Icon name="lock" size={18} duo={false} /><span>{l('Belgeler yalnızca bu cihazda saklanır. Belge numarası istemiyoruz; sadece bitiş tarihi yeter.', 'Documents stay on this device only. No document numbers needed, just the expiry date.', 'Nur auf diesem Gerät gespeichert; nur das Ablaufdatum nötig.', 'Solo en este dispositivo; basta la fecha de caducidad.', 'Хранится только на этом устройстве; нужен лишь срок.')}</span></div>
       {w.docs.length === 0 ? (
-        <Empty icon="passport" title={l('Cüzdanın boş', 'Your wallet is empty', 'Wallet ist leer', 'Cartera vacía', 'Кошелёк пуст')} text={l('Pasaportunu ekleyerek başla; bitiş tarihi yaklaşınca seni uyaralım.', 'Start with your passport; we’ll warn you before it expires.', 'Beginne mit deinem Pass.', 'Empieza por tu pasaporte.', 'Начните с паспорта.')} />
+        <Empty icon="passport" title={l('Cüzdanın boş', 'Your wallet is empty', 'Wallet ist leer', 'Cartera vacía', 'Кошелёк пуст')} text={l('Pasaportunu ekleyerek başla; bitiş tarihi yaklaşınca seni uyaralım.', 'Start with your passport; we’ll warn you before it expires.', 'Beginne mit deinem Pass.', 'Empieza por tu pasaporte.', 'Начните с паспорта.')}
+          steps={[
+            l('Belge türünü seç (pasaport, vize, sigorta…)', 'Choose a type (passport, visa, insurance…)', 'Typ wählen (Pass, Visum, Versicherung…)', 'Elige el tipo', 'Выберите тип'),
+            l('Sadece bitiş tarihini gir', 'Enter only the expiry date', 'Nur das Ablaufdatum eingeben', 'Solo la fecha de caducidad', 'Только срок действия'),
+            l('Süre azalınca Uyarılar kutusunda görürsün', 'See it in Alerts when time runs short', 'Hinweis, wenn es knapp wird', 'Te avisamos a tiempo', 'Предупредим заранее')
+          ]}
+        />
       ) : (
         <div className="vz-grid">
           {w.docs.map((d) => {

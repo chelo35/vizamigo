@@ -64,6 +64,13 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
   const coords = useMemo(() => (geo ? [{ lat: geo.lat, lng: geo.lng }] : []), [geo]);
   const wx = useLiveWeather(coords);
   const w = geo ? wx[liveWeatherKey(geo.lat, geo.lng)] : undefined;
+  // hava servisi yanıt vermezse sonsuza kadar "yükleniyor" yazmasın
+  const [wxSlow, setWxSlow] = useState(false);
+  useEffect(() => {
+    setWxSlow(false);
+    const t = setTimeout(() => setWxSlow(true), 8000);
+    return () => clearTimeout(t);
+  }, [destination]);
 
   const homeCur = GLOBAL_CURRENCIES[passport]?.code || 'USD';
   const destCur = GLOBAL_CURRENCIES[destination]?.code || 'USD';
@@ -147,7 +154,16 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
               </div>
             </div>
           ) : (
-            <div className="rd-wxrow"><div className="rd-skel" /><div className="rd-sub">{l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div></div>
+            wxSlow ? (
+              <div className="rd-wxrow">
+                <div>
+                  <div className="rd-big rd-big-sm">—</div>
+                  <div className="rd-sub">{l('Hava bilgisi şu an alınamadı', 'Weather is unavailable right now', 'Wetter gerade nicht verfügbar', 'Tiempo no disponible ahora', 'Погода сейчас недоступна')}</div>
+                </div>
+              </div>
+            ) : (
+              <div className="rd-wxrow"><div className="rd-skel" /><div className="rd-sub">{l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div></div>
+            )
           )}
         </div>
 
