@@ -79,7 +79,7 @@ export const Card: React.FC<{ title?: string; eyebrow?: string; icon?: IconName;
       <header className="vz-card-h">
         {icon && <span className="vz-ic">{<Icon name={icon} size={20} />}</span>}
         <div className="vz-card-ht">
-          {eyebrow && <span className="vz-eyebrow">{eyebrow}</span>}
+          {eyebrow && <span className="vz-eyebrow" lang={/^[\x00-\x7F]+$/.test(eyebrow) ? 'en' : undefined}>{eyebrow}</span>}
           {title && <h3>{title}</h3>}
         </div>
         {actions && <div className="vz-card-a">{actions}</div>}

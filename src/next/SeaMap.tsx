@@ -278,7 +278,11 @@ const DotMap: React.FC<{
     let w = Math.max(x1 - x0, 220), h = Math.max(y1 - y0, 120);
     const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
     if (h / w < ratio) h = w * ratio; else w = h / ratio;
-    return { x: cx - w / 2, y: cy - h / 2, w, h };
+    // boş gökyüzü/deniz göstermesin: dünyanın üst-alt sınırına yasla
+    let y = cy - h / 2;
+    if (h <= WORLD_H) y = Math.min(Math.max(y, 0), WORLD_H - h);
+    else y = (WORLD_H - h) / 2;
+    return { x: cx - w / 2, y, w, h };
   }, [fitKey, ratio]); // eslint-disable-line react-hooks/exhaustive-deps
   const [vb, setVb] = useState<VB>(fit);
   useEffect(() => setVb(fit), [fit]);

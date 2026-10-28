@@ -613,8 +613,8 @@ const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCou
       value={view}
       onChange={setView}
       options={[
-        { id: 'hubs', label: l(`Şehirler ve yaşam (${NOMAD_HUBS.length})`, `Cities & living (${NOMAD_HUBS.length})`, `Städte & Leben (${NOMAD_HUBS.length})`, `Ciudades (${NOMAD_HUBS.length})`, `Города (${NOMAD_HUBS.length})`) },
-        { id: 'visas', label: l(`Tüm vizeler & vergi (${DIGITAL_NOMAD_VISAS.length})`, `All visas & tax (${DIGITAL_NOMAD_VISAS.length})`, `Alle Visa & Steuern (${DIGITAL_NOMAD_VISAS.length})`, `Visados e impuestos (${DIGITAL_NOMAD_VISAS.length})`, `Визы и налоги (${DIGITAL_NOMAD_VISAS.length})`) }
+        { id: 'hubs', label: l(`Şehirler (${NOMAD_HUBS.length})`, `Cities (${NOMAD_HUBS.length})`, `Städte (${NOMAD_HUBS.length})`, `Ciudades (${NOMAD_HUBS.length})`, `Города (${NOMAD_HUBS.length})`) },
+        { id: 'visas', label: l(`Vizeler ve vergi (${DIGITAL_NOMAD_VISAS.length})`, `Visas & tax (${DIGITAL_NOMAD_VISAS.length})`, `Visa & Steuern (${DIGITAL_NOMAD_VISAS.length})`, `Visados (${DIGITAL_NOMAD_VISAS.length})`, `Визы (${DIGITAL_NOMAD_VISAS.length})`) }
       ]}
     />
   );
@@ -699,7 +699,12 @@ const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCou
 const TzView: React.FC<{ home: string }> = ({ home }) => {
   const { l, language } = useI18n();
   const hubs = useMemo(() => ALL_WORLD_HUBS.slice().sort((a, b) => (language === 'tr' ? a.cityTr || a.city : a.city).localeCompare(language === 'tr' ? b.cityTr || b.city : b.city, language)), [language]);
-  const homeHub = hubs.find((h) => h.iso === home) || hubs.find((h) => h.city === 'Istanbul') || hubs[0];
+  const homeHub =
+    (home === 'TR' && hubs.find((h) => h.city === 'Istanbul')) ||
+    hubs.find((h) => (h.iso || flagToIso(h.flag)) === home && GEO_DATA[home] && (h.city === GEO_DATA[home].capital || h.cityTr === GEO_DATA[home].capital)) ||
+    hubs.find((h) => (h.iso || flagToIso(h.flag)) === home) ||
+    hubs.find((h) => h.city === 'Istanbul') ||
+    hubs[0];
   const [cities, setCities] = useState<string[]>(() => [homeHub.city, 'Bangkok', 'New York'].filter((c, i, a) => a.indexOf(c) === i && hubs.some((h) => h.city === c)));
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
@@ -743,6 +748,7 @@ const TzView: React.FC<{ home: string }> = ({ home }) => {
           </div>
         ))}
       </div>
+      {cities.length >= 4 && <p className="vz-muted" style={{ fontSize: 13 }}>{l('En fazla 4 şehir karşılaştırılabilir; eklemek için birini kaldır.', 'Up to 4 cities; remove one to add another.', 'Max. 4 Städte.', 'Máximo 4 ciudades.', 'Не более 4 городов.')}</p>}
       {cities.length < 4 && (
         <Field label={l('Şehir ekle', 'Add a city', 'Stadt hinzufügen', 'Añadir ciudad', 'Добавить город')} htmlFor="vz-tz-add">
           <select id="vz-tz-add" className="vz-select" value="" onChange={(e) => e.target.value && setCities([...cities, e.target.value])}>

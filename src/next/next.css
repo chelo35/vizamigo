@@ -716,3 +716,18 @@ input[type="range"] { width: 100%; accent-color: var(--rd-sea); }
   .rd-plane, .rd-trail path, .rd-cloud, .rd-wave, .vz-wv, .rd-glitter i, .vz-map-route, .vz-map-pulse { animation: none !important; }
 }
 .vz-main { min-height: 100vh; }
+
+/* ---- QA düzeltmeleri ---- */
+/* alt menü altbilgiyi örtmesin */
+@media (max-width: 1023px) { .vz-foot { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)) !important; } }
+/* panel uçağı kapat düğmesinin üstünden geçmesin */
+.vz-sweep { z-index: 0; }
+.vz-panel-h > * { position: relative; z-index: 1; }
+@media (max-width: 640px) { .vz-sweep { display: none; } }
+/* kaydırılabilir sekmelerde kenarda solma: devamı olduğunu gösterir */
+.vz-tabs { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 24px; }
+/* dar ekranda kart başlığı ile rozet alt alta */
+@media (max-width: 480px) { .vz-card-h { flex-wrap: wrap; } .vz-card-a { width: 100%; } .vz-card-ht { flex: 1; min-width: 60%; } }
+/* döviz seçimleri dar ekranda tam genişlik */
+@media (max-width: 400px) { .vz-fx { grid-template-columns: minmax(0, 1fr); } }
+.vz-select { text-overflow: ellipsis; }

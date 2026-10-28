@@ -349,10 +349,11 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
   const [cName, setCName] = useState('');
   const [cAllowed, setCAllowed] = useState(90);
   const [cWindow, setCWindow] = useState(180);
+  const [cCountry, setCCountry] = useState('');
   const addRule = (e: React.FormEvent) => {
     e.preventDefault();
     if (!cName.trim() || cAllowed < 1 || cWindow < cAllowed) return;
-    const nr: RollingRule = { id: `c-${Date.now()}`, name: `${cName.trim()} (${cAllowed}/${cWindow})`, allowedDays: cAllowed, windowDays: cWindow, description: l(`Herhangi bir ${cWindow} günlük dönemde en fazla ${cAllowed} gün.`, `Up to ${cAllowed} days in any ${cWindow}-day window.`, `Max. ${cAllowed} Tage in ${cWindow} Tagen.`, `Hasta ${cAllowed} días en ${cWindow}.`, `До ${cAllowed} дн. за ${cWindow}.`) };
+    const nr: RollingRule & { countries?: string[] } = { id: `c-${Date.now()}`, countries: cCountry ? [cCountry] : undefined, name: `${cName.trim()} (${cAllowed}/${cWindow})`, allowedDays: cAllowed, windowDays: cWindow, description: l(`Herhangi bir ${cWindow} günlük dönemde en fazla ${cAllowed} gün.`, `Up to ${cAllowed} days in any ${cWindow}-day window.`, `Max. ${cAllowed} Tage in ${cWindow} Tagen.`, `Hasta ${cAllowed} días en ${cWindow}.`, `До ${cAllowed} дн. за ${cWindow}.`) };
     const next = [...rules, nr];
     setRules(next);
     saveStoredRules(next);
@@ -369,12 +370,13 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
   // rotadan aktar: kurala uyan duraklar yolculuk olarak eklenir
   const [importMsg, setImportMsg] = useState('');
   const importFromRoute = () => {
+    const ruleCountries: string[] = ((rule as RollingRule & { countries?: string[] }).countries) || [];
     const balkans = new Set(['RS', 'BA', 'ME', 'AL', 'MK', 'XK']);
     const match = (c: string) =>
-      ruleId === 'schengen' ? SCHENGEN_SET.has(c) : ruleId === 'uk' ? c === 'GB' : ruleId === 'georgia' ? c === 'GE' : ruleId === 'balkans' ? balkans.has(c) : true;
+      ruleId === 'schengen' ? SCHENGEN_SET.has(c) : ruleId === 'uk' ? c === 'GB' : ruleId === 'georgia' ? c === 'GE' : ruleId === 'balkans' ? balkans.has(c) : ruleCountries.length ? ruleCountries.includes(c) : true;
     const stops = loadStoredRouteStops().filter((st) => st.entryDate && st.exitDate && match(st.countryCode));
     const fresh = stops
-      .map((st) => ({ id: `tr-r-${st.id}`, start: dateToDayIndex(st.entryDate), end: dateToDayIndex(st.exitDate), region: rule.name, countryCode: st.countryCode }))
+      .map((st) => ({ id: `tr-r-${rule.id}-${st.id}`, start: dateToDayIndex(st.entryDate), end: dateToDayIndex(st.exitDate), region: rule.name, countryCode: st.countryCode }))
       .filter((t) => !T.trips.some((x) => x.id === t.id || (x.region === t.region && x.start === t.start && x.end === t.end)));
     if (fresh.length) T.save([...T.trips, ...fresh]);
     setImportMsg(
@@ -429,6 +431,12 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
           <div className="vz-formgrid">
             <Field label={l('Ad', 'Name', 'Name', 'Nombre', 'Название')} htmlFor="vz-cr-n"><input id="vz-cr-n" className="vz-input" value={cName} onChange={(e) => setCName(e.target.value)} placeholder={l('ör. Tayland', 'e.g. Thailand', 'z. B. Thailand', 'p. ej. Tailandia', 'напр. Таиланд')} required /></Field>
             <Field label={l('İzin verilen gün', 'Days allowed', 'Erlaubte Tage', 'Días permitidos', 'Дней можно')} htmlFor="vz-cr-a"><input id="vz-cr-a" type="number" min={1} max={365} className="vz-input" value={cAllowed} onChange={(e) => setCAllowed(Number(e.target.value) || 1)} /></Field>
+            <Field label={l('Hangi ülke (rotadan aktarmak için)', 'Which country (for route import)', 'Welches Land', 'Qué país', 'Какая страна')} htmlFor="vz-cr-c">
+              <select id="vz-cr-c" className="vz-select" value={cCountry} onChange={(e) => { setCCountry(e.target.value); if (e.target.value && !cName.trim()) setCName(getCountryName(e.target.value, language)); }}>
+                <option value="">{l('Bütün ülkeler', 'All countries', 'Alle Länder', 'Todos', 'Все страны')}</option>
+                {Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((x, y) => x.n.localeCompare(y.n, language)).map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
+              </select>
+            </Field>
             <Field label={l('Kaç günlük dönemde', 'Within how many days', 'Innerhalb von Tagen', 'En cuántos días', 'За сколько дней')} htmlFor="vz-cr-w"><input id="vz-cr-w" type="number" min={1} max={730} className="vz-input" value={cWindow} onChange={(e) => setCWindow(Number(e.target.value) || 1)} /></Field>
           </div>
           <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Kuralı ekle', 'Add rule', 'Regel hinzufügen', 'Añadir regla', 'Добавить')}</Btn>
