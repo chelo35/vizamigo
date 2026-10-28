@@ -367,3 +367,36 @@ html.dark, .dark {
   .rd-seafx > div, .rd-seafx svg { animation: none !important; }
   .rd-sail { transform: translateX(62vw); } .rd-surf { transform: translateX(18vw); } .rd-jet { display: none; }
 }
+
+/* Martılar (gökyüzünde, uçak şeridinin altında) ve zıplayan yunuslar */
+.rd-gulls { position: absolute; inset: 0; pointer-events: none; z-index: -1; }
+.rd-gulls span { position: absolute; left: 0; will-change: transform; }
+.rd-gulls span svg { display: block; animation: rd-flapw 0.9s ease-in-out infinite; transform-origin: 50% 70%; }
+.rd-gulls .g1 { top: 40%; animation: rd-gullx 48s linear infinite; animation-delay: -8s; }
+.rd-gulls .g2 { top: 44%; animation: rd-gullx 52s linear infinite; animation-delay: -10s; }
+.rd-gulls .g2 svg { animation-duration: 0.75s; animation-delay: -0.3s; }
+.rd-gulls .g3 { top: 33%; animation: rd-gullx2 62s linear infinite; animation-delay: -30s; }
+.rd-gulls .g3 svg { animation-duration: 1.1s; }
+@keyframes rd-gullx { 0% { transform: translate(-60px, 0); } 50% { transform: translate(55vw, -18px); } 100% { transform: translate(110vw, 6px); } }
+@keyframes rd-gullx2 { 0% { transform: translate(110vw, 0); } 50% { transform: translate(50vw, 14px); } 100% { transform: translate(-60px, -8px); } }
+@keyframes rd-flapw { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(0.35) translateY(2px); } }
+html.dark .rd-gulls path { stroke: #F4E6DC; opacity: 0.85; }
+
+.rd-dolphin { position: absolute; bottom: 8%; will-change: transform; opacity: 0; }
+.rd-dolphin.d1 { left: 64%; animation: rd-jump 9s ease-in-out infinite; animation-delay: -2s; }
+.rd-dolphin.d2 { left: 69%; animation: rd-jump 9s ease-in-out infinite; animation-delay: -1.55s; }
+@keyframes rd-jump {
+  0%, 62% { opacity: 0; transform: translate(0, 30px) rotate(-35deg); }
+  64% { opacity: 1; transform: translate(0, 18px) rotate(-35deg); }
+  74% { transform: translate(40px, -92px) rotate(0deg); }
+  84% { opacity: 1; transform: translate(80px, 0) rotate(40deg); }
+  86%, 100% { opacity: 0; transform: translate(86px, 30px) rotate(42deg); }
+}
+@media (max-width: 760px) {
+  .rd-gulls .g3 { display: none; }
+  .rd-dolphin.d1 { left: 52%; } .rd-dolphin.d2 { left: 60%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rd-gulls span, .rd-gulls svg, .rd-dolphin { animation: none !important; }
+  .rd-gulls .g1 { transform: translateX(60vw); } .rd-gulls .g2 { transform: translateX(66vw); } .rd-gulls .g3 { display: none; }
+}

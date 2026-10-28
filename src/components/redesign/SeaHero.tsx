@@ -71,10 +71,17 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
       </svg>
       <FlyingBanner className="f1" words={['Thailand', 'Japan', 'USA', 'France']} />
       <FlyingBanner className="f2" words={['Italy', 'Türkiye', 'Spain', 'Greece']} />
+      <div className="rd-gulls" aria-hidden="true">
+        <span className="g1"><svg viewBox="0 0 34 14" width="30" height="12"><path d="M1 11 Q8 1 17 10 Q26 1 33 11" stroke="#3A4A55" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+        <span className="g2"><svg viewBox="0 0 34 14" width="22" height="9"><path d="M1 11 Q8 1 17 10 Q26 1 33 11" stroke="#3A4A55" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+        <span className="g3"><svg viewBox="0 0 34 14" width="26" height="11"><path d="M1 11 Q8 1 17 10 Q26 1 33 11" stroke="#3A4A55" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+      </div>
       <div className="rd-sea" aria-hidden="true">
         <div className="rd-wave w1"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 110 C 150 70 300 150 600 110 C 900 70 1050 150 1200 110 C 1350 70 1500 150 1800 110 C 2100 70 2250 150 2400 110 V240 H0 Z" /></svg></div>
         <div className="rd-wave w2"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 140 C 200 100 400 180 600 140 C 800 100 1000 180 1200 140 C 1400 100 1600 180 1800 140 C 2000 100 2200 180 2400 140 V240 H0 Z" /></svg></div>
         <div className="rd-seafx" aria-hidden="true">
+          <div className="rd-dolphin d1"><svg viewBox="0 0 64 30" width="58" height="27"><path d="M4 18c8-9 22-13 36-11 4-4 9-5 12-4-2 2-3 4-3 6 6 2 10 5 12 9-5-1-9-1-12 0 1 3 0 6-3 8-1-3-3-5-6-6-10 3-24 3-36 0z" fill="#3E6E86" /><path d="M10 19c10 3 24 3 34-1-8 5-24 6-34 1z" fill="#CFE6EE" /><circle cx="49" cy="12" r="1.3" fill="#fff" /></svg></div>
+          <div className="rd-dolphin d2"><svg viewBox="0 0 64 30" width="46" height="22"><path d="M4 18c8-9 22-13 36-11 4-4 9-5 12-4-2 2-3 4-3 6 6 2 10 5 12 9-5-1-9-1-12 0 1 3 0 6-3 8-1-3-3-5-6-6-10 3-24 3-36 0z" fill="#3E6E86" /><path d="M10 19c10 3 24 3 34-1-8 5-24 6-34 1z" fill="#CFE6EE" /><circle cx="49" cy="12" r="1.3" fill="#fff" /></svg></div>
           <div className="rd-sail">
             <svg viewBox="0 0 60 56" width="64" height="60">
               <path d="M30 4v38" stroke="#5B3A29" strokeWidth="2" />
