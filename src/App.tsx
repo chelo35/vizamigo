@@ -221,6 +221,8 @@ function AppContent() {
         onToggleTheme={() => setIsDark(!isDark)}
         onSearch={goSearch}
         onHome={() => handleSelectTab('explore')}
+        onOpenCountry={openCountryFromAnywhere}
+        onOpenTool={openTool}
       />
 
       <main className="vz-main">
@@ -242,7 +244,8 @@ function AppContent() {
                 onBack={() => handleCountrySelect(null)}
                 onReport={(code, name) => setReportingModalData({ code, name })}
                 onOpenRoute={() => handleSelectTab('plan')}
-                onOpenSos={() => handleSelectTab('nomad')}
+                onOpenSos={() => openTool('nomad', 'sos')}
+                onOpenCountry={openCountryFromAnywhere}
               />
               </Suspense>
             ) : (
@@ -258,6 +261,7 @@ function AppContent() {
                 onOpenRadar={openRadar}
                 onOpenAssistant={() => setIsAssistantOpen(true)}
                 onOpenRoute={() => handleSelectTab('plan')}
+                onOpenTool={openTool}
               />
             )}
           </ErrorBoundary>

@@ -10,13 +10,15 @@ interface Chip {
 interface Props {
   onSearch: (q: string) => void;
   chips?: Chip[];
+  /** Yeni akıllı arama kutusu; verilirse eski form yerine bu çizilir. */
+  searchSlot?: React.ReactNode;
 }
 
 /**
  * Açılış sahnesi: gündüz deniz + güneş, koyu temada gün batımı + ay.
  * Tüm hareket yalnızca transform / opacity ile (GPU), görsel dosya yok.
  */
-export const SeaHero: React.FC<Props> = ({ onSearch, chips = [] }) => {
+export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) => {
   const { l } = useI18n();
   const [q, setQ] = useState('');
   const heroRef = useRef<HTMLElement>(null);
@@ -91,6 +93,7 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [] }) => {
             'Визовые правила, сроки пребывания и подготовка к поездке для 199 стран в одном месте. Официальные источники, на пяти языках.'
           )}
         </p>
+        {searchSlot ? searchSlot : (
         <form
           className="rd-search"
           onSubmit={(e) => {
@@ -110,6 +113,7 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [] }) => {
           />
           <button type="submit" className="rd-btn">{l('Ara', 'Search', 'Suchen', 'Buscar', 'Найти')}</button>
         </form>
+        )}
         {chips.length > 0 && (
           <div className="rd-chips">
             {chips.map((c) => (

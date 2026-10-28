@@ -6,6 +6,8 @@ import { PassportCover } from '../components/redesign/PassportCover';
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName } from '../data/passportData';
 import { Btn, OpenRequest, SecHead, Tile, TileGrid } from './ui';
+import { SmartSearch } from './SmartSearch';
+import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
 const WhereView = lazy(() => V().then((m) => ({ default: m.WhereView })));
 const CountriesView = lazy(() => V().then((m) => ({ default: m.CountriesView })));
@@ -27,6 +29,7 @@ export interface ExploreProps {
   onOpenRadar: (mode?: 'all' | 'clock' | 'weather' | 'currency', city?: string) => void;
   onOpenAssistant: () => void;
   onOpenRoute: () => void;
+  onOpenTool: (tab: TabKey, tile: string) => void;
 }
 
 export const ExplorePage: React.FC<ExploreProps> = (p) => {
@@ -123,6 +126,20 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
     <div className="vz-page">
       <div className="rd-home">
         <SeaHero
+          searchSlot={
+            <SmartSearch
+              id="rd-q"
+              variant="hero"
+              passport={p.currentPassport}
+              placeholder={l('Tayland, Japonya, Schengen…', 'Thailand, Japan, Schengen…', 'Thailand, Japan, Schengen…', 'Tailandia, Japón, Schengen…', 'Таиланд, Япония, Шенген…')}
+              onOpenCountry={p.onOpenCountry}
+              onOpenTool={(tab, tile) => (tab === 'explore' ? openTile(tile) : p.onOpenTool(tab, tile))}
+              onQuery={(q) => {
+                setQuery(q);
+                openTile('countries');
+              }}
+            />
+          }
           onSearch={(q) => {
             setQuery(q);
             openTile('countries');

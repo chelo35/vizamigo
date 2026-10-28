@@ -1,6 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../../data/i18n';
-import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, Row, List, SearchInput, Segmented, Stat, VisaBadge, fmtPair } from '../ui';
+import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, Row, List, SearchInput, Segmented, Stat, VisaBadge, fmtPair, visaTone } from '../ui';
+import { SeaMap, MapPoint } from '../SeaMap';
+
+export const TONE_HEX: Record<string, string> = { ok: '#1F9D6B', sea: '#1095AE', sun: '#E59A1C', warn: '#D9534F', mute: '#9A948C' };
 import { Icon } from '../Icon';
 import { CountryCard, stayDays } from '../country';
 import { getPassportItems, compareDualPassports } from '../../utils/calculator';
@@ -113,6 +116,7 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
   const [q, setQ] = useState(initialQuery);
   const [region, setRegion] = useState('');
   const [mode, setMode] = useState<'all' | 'easy' | 'visa'>('all');
+  const [view, setView] = useState<'list' | 'map'>('list');
   const all = useMemo(() => Object.keys(GEO_DATA).filter((c) => c !== passport), [passport]);
   const res = useMemo(() => {
     const nq = norm(q.trim());
@@ -127,6 +131,13 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
       .filter((c) => !nq || norm(getCountryName(c, language)).includes(nq) || norm(getCountryName(c, 'en')).includes(nq) || c.toLowerCase() === nq)
       .sort((a, b) => getCountryName(a, language).localeCompare(getCountryName(b, language), language));
   }, [all, q, region, mode, items, language]);
+  const points = useMemo<MapPoint[]>(
+    () =>
+      res
+        .filter((c) => GEO_DATA[c])
+        .map((c) => ({ id: c, lat: GEO_DATA[c].lat, lng: GEO_DATA[c].lng, color: TONE_HEX[visaTone(items.get(c))], title: getCountryName(c, language), onClick: () => onOpenCountry(c) })),
+    [res, items, language] // eslint-disable-line react-hooks/exhaustive-deps
+  );
 
   return (
     <div className="vz-stack">
@@ -149,10 +160,37 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
           ))}
         </select>
       </div>
-      <span className="vz-muted" style={{ fontSize: 13 }}>{l(`${res.length} ülke`, `${res.length} countries`, `${res.length} Länder`, `${res.length} países`, `${res.length} стран`)}</span>
+      <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+        <span className="vz-muted" style={{ fontSize: 13 }}>{l(`${res.length} ülke`, `${res.length} countries`, `${res.length} Länder`, `${res.length} países`, `${res.length} стран`)}</span>
+        <Segmented
+          label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид')}
+          value={view}
+          onChange={setView}
+          options={[
+            { id: 'list', label: l('Liste', 'List', 'Liste', 'Lista', 'Список') },
+            { id: 'map', label: l('Harita', 'Map', 'Karte', 'Mapa', 'Карта') }
+          ]}
+        />
+      </div>
+      {view === 'map' && res.length > 0 && (
+        <>
+          <SeaMap points={points} height={440} ariaLabel={l('Ülkeler haritası, vize durumuna göre renkli', 'Map of countries coloured by visa status', 'Länderkarte nach Visastatus', 'Mapa de países por visado', 'Карта стран по визовому режиму')} />
+          <div className="vz-legend">
+            {[
+              ['ok', l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы')],
+              ['sea', l('e-Vize / ETA', 'e-Visa / ETA', 'e-Visum / ETA', 'e-Visado / ETA', 'э-виза / ETA')],
+              ['sun', l('Kapıda vize', 'Visa on arrival', 'Visum bei Ankunft', 'Visado a la llegada', 'Виза по прилёту')],
+              ['warn', l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado requerido', 'Нужна виза')]
+            ].map(([t, n]) => (
+              <span key={t}><i style={{ background: TONE_HEX[t] }} />{n}</span>
+            ))}
+            <span className="vz-muted">{l('Noktaya dokun, ülke açılsın', 'Tap a dot to open the country', 'Punkt antippen', 'Toca un punto', 'Нажмите на точку')}</span>
+          </div>
+        </>
+      )}
       {res.length === 0 ? (
         <Empty icon="search" title={l('Ülke bulunamadı', 'No country found', 'Kein Land gefunden', 'No encontrado', 'Не найдено')} />
-      ) : (
+      ) : view === 'map' ? null : (
         <List>
           {res.map((c) => {
             const it = items.get(c);
@@ -428,8 +466,20 @@ export const RadarView: React.FC<{ passport: string; destination: string; onOpen
   const homeSym = GLOBAL_CURRENCIES[passport]?.symbol || home;
   const name = (h: (typeof hubs)[number]) => (language === 'tr' ? h.cityTr || h.city : h.city);
   const opts = useMemo(() => hubs.filter((h) => !cities.includes(h.city)).map((h) => ({ v: h.city, n: `${name(h)} · ${h.country[language as 'tr'] || h.country.en}` })).sort((a, b) => a.n.localeCompare(b.n, language)), [cities, language]); // eslint-disable-line react-hooks/exhaustive-deps
+  const radarPoints = useMemo<MapPoint[]>(
+    () =>
+      sel.map((h, i) => {
+        const c = coords[i];
+        const w = c ? wx[liveWeatherKey(c.lat, c.lng)] : undefined;
+        const time = new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : language, { timeZone: h.tz, hour: '2-digit', minute: '2-digit' }).format(now);
+        const iso = h.iso || flagToIso(h.flag);
+        return { id: h.city, lat: c.lat, lng: c.lng, big: true, color: '#1095AE', tag: `${name(h)} ${time}${w ? ` · ${w.tempC}°` : ''}`, title: `${name(h)} · ${time}${w ? ` · ${w.tempC}°` : ''}`, onClick: () => iso && onOpenCountry(iso) };
+      }),
+    [coords, wx, now, language] // eslint-disable-line react-hooks/exhaustive-deps
+  );
   return (
     <div className="vz-stack">
+      <SeaMap points={radarPoints} height={300} ariaLabel={l('Seçtiğin şehirler haritada', 'Your cities on the map', 'Deine Städte auf der Karte', 'Tus ciudades en el mapa', 'Ваши города на карте')} />
       <List>
         {sel.map((h, i) => {
           const iso = h.iso || flagToIso(h.flag);

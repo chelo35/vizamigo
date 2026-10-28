@@ -3,7 +3,12 @@ import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Bullets, Card, Flag, LinkBtn, List, Row, SecHead, Stat, Tags, Tile, TileGrid, VisaBadge, visaTone, Empty, fmtNum, fmtPair } from './ui';
 import { stayDays } from './country';
-import { getPassportItems } from '../utils/calculator';
+import type { SupportedLanguage } from '../i18n/types';
+import { getPassportItems, dateToDayIndex, dayIndexToDate, getTodayDayIndex } from '../utils/calculator';
+import { getStayDurationText, generateDirectAnswerSnippet, getCountryNaturalH1 } from '../utils/schemaGenerator';
+import { CountryCard } from './country';
+import { countryToRegion } from '../data/passportData';
+import { WORLD_DOTS, WORLD_W, WORLD_H, project } from './worldDots';
 import { getCountryName, INFO, getLocalizedPartner, AFFILIATE_PARTNERS } from '../data/passportData';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
@@ -22,6 +27,7 @@ import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../u
 import { loadStoredRouteStops, saveStoredRouteStops } from '../utils/storage';
 
 interface Props {
+  onOpenCountry: (c: string) => void;
   code: string;
   passport: string;
   onBack: () => void;
@@ -42,7 +48,7 @@ function useCountryTimeTz(code: string) {
   }, [code, geo]);
 }
 
-export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport, onOpenRoute, onOpenSos }) => {
+export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport, onOpenRoute, onOpenSos, onOpenCountry }) => {
   const { l, language } = useI18n();
   useLiveFx();
   const name = getCountryName(code, language);
@@ -87,9 +93,12 @@ export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport,
   const [added, setAdded] = useState(false);
   const addToRoute = () => {
     try {
-      const stops = loadStoredRouteStops();
-      if (!stops.some((s) => s.countryCode === code)) {
-        stops.push({ id: `stop-${Date.now()}`, countryCode: code, entryDate: '', exitDate: '' } as never);
+      const stops = loadStoredRouteStops().filter((x) => x.entryDate && x.exitDate);
+      if (!stops.some((x) => x.countryCode === code)) {
+        const last = stops.reduce((m, x) => (x.exitDate > m ? x.exitDate : m), '');
+        const start = last ? dateToDayIndex(last) + 1 : getTodayDayIndex() + 21;
+        const n = Math.min(days || 7, 7);
+        stops.push({ id: `stop-${Date.now()}`, countryCode: code, entryDate: dayIndexToDate(start), exitDate: dayIndexToDate(start + n - 1) });
         saveStoredRouteStops(stops);
       }
       setAdded(true);
@@ -507,6 +516,27 @@ export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport,
     }
   ];
 
+  const lang = language as SupportedLanguage;
+  const passName = getCountryName(passport, language);
+  const stayText = getStayDurationText(item?.v || 'v', item?.cat || 'visa', lang);
+  const answer = generateDirectAnswerSnippet(name, passName, item?.cat || 'visa', stayText, !!item?.id, lang);
+  const h1Rest = getCountryNaturalH1(name, lang).replace(name, '').replace(/^[\s,]+|[\s,]+$/g, '');
+  const faq: { q: string; a: string }[] = [
+    { q: l(`${passName} vatandaşları ${name}’a vizesiz gidebilir mi?`, `Do ${passName} citizens need a visa for ${name}?`, `Brauchen Staatsbürger aus ${passName} ein Visum für ${name}?`, `¿Necesitan visado los ciudadanos de ${passName} para ${name}?`, `Нужна ли виза в ${name} гражданам ${passName}?`), a: answer },
+    { q: l(`${name}’da ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться в ${name}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With a ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`) : stayText },
+    { q: l(`${name}’a gitmek için en iyi zaman ne?`, `When is the best time to visit ${name}?`, `Wann ist die beste Reisezeit für ${name}?`, `¿Cuándo es mejor visitar ${name}?`, `Когда лучше ехать в ${name}?`), a: enc.tourism.bestSeasons || insights.bestMonths },
+    { q: l(`${name}’da hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки в ${name}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
+    { q: l(`${name}’da acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб в ${name}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
+    { q: l(`${name}’da musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана в ${name}?`), a: intel.waterAndHealth.tapWaterDesc },
+    { q: l(`${name}’da bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые в ${name}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` }
+  ].filter((f) => f.a);
+  const similar = useMemo(() => {
+    const reg = countryToRegion[code];
+    const all = getPassportItems(passport);
+    const rank = (x: (typeof all)[number]) => (x.id ? 3 : x.cat === 'free' ? 2 : x.cat === 'evisa' || x.cat === 'eta' || x.cat === 'voa' ? 1 : 0);
+    return all.filter((x) => x.c !== code && countryToRegion[x.c] === reg && GEO_DATA[x.c]).sort((a, b) => rank(b) - rank(a) || (stayDays(b) || 0) - (stayDays(a) || 0)).slice(0, 4);
+  }, [code, passport]);
+
   return (
     <div className="vz-page">
       <section className="vz-chero">
@@ -519,7 +549,7 @@ export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport,
             <span>{l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}</span>
           </button>
           <span className="vz-row-flex"><VisaBadge item={item} big />{days && <span className="vz-badge big tone-mute">{l(`${days} gün`, `${days} days`, `${days} Tage`, `${days} días`, `${days} дн.`)}</span>}</span>
-          <h1><Flag code={code} size="lg" />{name}</h1>
+          <h1><Flag code={code} size="lg" /><span className="vz-h1-main">{name}</span><span className="sr-only"> — {h1Rest}</span></h1>
           <p>{[geog.capital, geog.currencyName, geog.callingCode].filter(Boolean).join(' · ')}</p>
           {visual.landmark && <span className="vz-chero-cap">{visual.landmark}</span>}
         </div>
@@ -535,6 +565,15 @@ export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport,
           </div>
         </div>
 
+        <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}>
+          <span className={`vz-ic tone-${visaTone(item)}`}><Icon name={visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
+          <div className="vz-stack" style={{ gap: 6 }}>
+            <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with a ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
+            <p>{answer}</p>
+            {detail?.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>}
+          </div>
+        </section>
+
         <div className="vz-actions">
           <Btn icon={added ? 'check' : 'plus'} onClick={addToRoute}>{added ? l('Rotana eklendi', 'Added to route', 'Zur Route hinzugefügt', 'Añadido', 'Добавлено') : l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут')}</Btn>
           <Btn variant="soft" icon="share" onClick={share}>{copied ? l('Bağlantı kopyalandı', 'Link copied', 'Link kopiert', 'Enlace copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</Btn>
@@ -549,7 +588,65 @@ export const CountryPage: React.FC<Props> = ({ code, passport, onBack, onReport,
           />
           <TileGrid key={code} tiles={tiles} label={name} defaultOpen="visa" />
         </section>
+
+        <section className="vz-home-sec vz-cmap-sec" aria-label={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}>
+          <SecHead eyebrow={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')} title={l(`${name} dünyanın neresinde?`, `Where is ${name}?`, `Wo liegt ${name}?`, `¿Dónde está ${name}?`, `Где находится ${name}?`)} />
+          <div className="vz-cmap">
+            <CountryMap code={code} home={passport} />
+            <div className="vz-stack" style={{ gap: 10 }}>
+              <div className="vz-tags">{[geog.capital, ...geog.majorCities].filter((x, i, a) => x && a.indexOf(x) === i).slice(0, 6).map((c) => <span key={c}>{c}</span>)}</div>
+              {geo && <LinkBtn href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getCountryName(code, 'en'))}`} small icon="map">{l('Google Haritalar’da aç', 'Open in Google Maps', 'In Google Maps öffnen', 'Abrir en Google Maps', 'Открыть в Google Maps')}</LinkBtn>}
+            </div>
+          </div>
+        </section>
+
+        <section className="vz-home-sec" aria-labelledby="vz-faq-h">
+          <SecHead eyebrow={l('Sık sorulanlar', 'FAQ', 'FAQ', 'Preguntas', 'Вопросы')} title={l(`${name} hakkında sık sorulan sorular`, `${name}: frequently asked questions`, `Häufige Fragen zu ${name}`, `Preguntas frecuentes sobre ${name}`, `Частые вопросы о ${name}`)} />
+          <div className="vz-faq" id="vz-faq-h">
+            {faq.map((f, i) => (
+              <details key={i} open={i === 0}>
+                <summary>{f.q}<Icon name="down" size={18} duo={false} /></summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {similar.length > 0 && (
+          <section className="vz-home-sec">
+            <SecHead eyebrow={l('İlham', 'Inspiration', 'Inspiration', 'Inspiración', 'Идеи')} title={l('Bunları da sevebilirsin', 'You might also like', 'Das könnte dir auch gefallen', 'También te puede gustar', 'Вам может понравиться')} />
+            <div className="vz-cgrid">
+              {similar.map((c) => <CountryCard key={c.c} code={c.c} item={c} onOpen={onOpenCountry} />)}
+            </div>
+          </section>
+        )}
       </div>
+    </div>
+  );
+};
+
+/** Ülkenin dünyadaki yeri: nokta harita, ülkeye yakınlaşmış, pasaport ülkesinden kavis. */
+const CountryMap: React.FC<{ code: string; home: string }> = ({ code, home }) => {
+  const g = GEO_DATA[code];
+  const h = GEO_DATA[home];
+  if (!g) return null;
+  const [x, y] = project(g.lng, g.lat);
+  const hp = h ? project(h.lng, h.lat) : null;
+  const span = 300;
+  const vx = Math.max(0, Math.min(WORLD_W - span, x - span / 2));
+  const vh = span * 0.56;
+  const vy = Math.max(0, Math.min(WORLD_H - vh, y - vh / 2));
+  const k = span / WORLD_W;
+  const mid = hp ? [(hp[0] + x) / 2, (hp[1] + y) / 2 - Math.min(40, Math.hypot(hp[0] - x, hp[1] - y) * 0.25)] : null;
+  return (
+    <div className="vz-mapbox">
+      <svg viewBox={`${vx} ${vy} ${span} ${vh}`} role="img" aria-label={code}>
+        <path d={WORLD_DOTS} className="vz-map-dots" strokeWidth={Math.max(2.2 * k, 1.4)} />
+        {hp && mid && <path d={`M${hp[0]} ${hp[1]} Q${mid[0]} ${mid[1]} ${x} ${y}`} className="vz-map-route" strokeWidth={1.2} strokeDasharray="4 3" />}
+        {hp && <circle cx={hp[0]} cy={hp[1]} r={3} className="vz-map-home" />}
+        <circle cx={x} cy={y} r={9} className="vz-map-pulse" />
+        <circle cx={x} cy={y} r={4.5} className="vz-map-pin" />
+      </svg>
     </div>
   );
 };

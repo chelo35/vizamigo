@@ -10,7 +10,7 @@ import { getCountryName, SCHENGEN_SET } from '../data/passportData';
 import { GEO_DATA, estimateTravelLeg, optimizeRouteOrder, getCountryGeo } from '../data/geoData';
 import { getCountryTransitRule } from '../data/transitData';
 import { NOMAD_HUBS, getLocalizedNomadHub } from '../data/nomadData';
-import { ALL_WORLD_HUBS } from '../data/worldHubs';
+import { ALL_WORLD_HUBS, flagToIso } from '../data/worldHubs';
 
 /* ------------------------------------------------------------------ */
 /* Ortak rota durumu                                                    */
@@ -435,7 +435,7 @@ const TzView: React.FC<{ home: string }> = ({ home }) => {
         {sel.map((h, i) => (
           <div key={h.city} className="vz-stat">
             <span className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
-              <span className="vz-row-flex" style={{ gap: 6, fontWeight: 600 }}><span aria-hidden="true">{h.flag}</span>{name(h)}</span>
+              <span className="vz-row-flex" style={{ gap: 6, fontWeight: 600 }}><Flag code={h.iso || flagToIso(h.flag)} size="sm" />{name(h)}</span>
               {i > 0 && <button type="button" className="vz-iconbtn" style={{ width: 32, height: 32 }} onClick={() => setCities(cities.filter((c) => c !== h.city))} aria-label={l('Kaldır', 'Remove', 'Entfernen', 'Quitar', 'Убрать')}><Icon name="close" size={14} duo={false} /></button>}
             </span>
             <b>{new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : language, { timeZone: h.tz, hour: '2-digit', minute: '2-digit' }).format(now)}</b>

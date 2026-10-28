@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Icon, IconName } from './Icon';
 import { useI18n } from '../data/i18n';
 import { FlyingBanner } from '../components/redesign/FlyingBanner';
-import { CountryItem, getCategoryBadgeLabel, getFlag } from '../data/passportData';
+import { CountryItem, getCategoryBadgeLabel } from '../data/passportData';
 
 /* ------------------------------------------------------------------ */
 /* Temel parçalar                                                      */
@@ -92,7 +92,7 @@ export const Card: React.FC<{ title?: string; eyebrow?: string; icon?: IconName;
 export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: IconName; tone?: 'sea' | 'ok' | 'warn' | 'sun' }> = ({ value, label, icon, tone = 'sea' }) => (
   <div className={`vz-stat tone-${tone}`}>
     {icon && <span className="vz-ic sm"><Icon name={icon} size={18} /></span>}
-    <b>{value}</b>
+    <b className={typeof value === 'string' && value.length > 16 ? 'long' : undefined}>{value}</b>
     <span>{label}</span>
   </div>
 );
@@ -152,9 +152,16 @@ export const SecHead: React.FC<{ eyebrow?: string; title: string; action?: React
   </div>
 );
 
-export const Flag: React.FC<{ code: string; size?: 'sm' | 'md' | 'lg' }> = ({ code, size = 'md' }) => (
-  <span className={`vz-flag ${size}`} aria-hidden="true">{getFlag(code)}</span>
-);
+export const Flag: React.FC<{ code: string; size?: 'sm' | 'md' | 'lg' }> = ({ code, size = 'md' }) => {
+  const [bad, setBad] = useState(false);
+  const c = (code || '').toLowerCase();
+  const px = size === 'sm' ? 28 : size === 'lg' ? 52 : 36;
+  return (
+    <span className={`vz-flag ${size}`} aria-hidden="true">
+      {bad || !c ? <b>{(code || '').toUpperCase()}</b> : <img src={`/flags/${c}.webp`} alt="" width={px} height={px} loading="lazy" decoding="async" onError={() => setBad(true)} />}
+    </span>
+  );
+};
 
 /* Vize rozeti: kategoriye göre tek tip renk */
 export function visaTone(item?: CountryItem | null): 'ok' | 'sea' | 'sun' | 'warn' | 'mute' {
@@ -284,12 +291,12 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
   const activeTab = tile?.tabs?.find((x) => x.id === tab) || tile?.tabs?.[0];
 
   return (
-    <div className="vz-tiles" role="list" aria-label={label} style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
+    <div className="vz-tiles" role="group" aria-label={label} style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
       {tiles.map((t, i) => (
         <button
           key={t.id}
           type="button"
-          role="listitem"
+          aria-controls={`vz-panel-${label.replace(/\W+/g, '')}`}
           className={`vz-tile${openId === t.id ? ' on' : ''}`}
           style={{ order: i + 1 }}
           aria-expanded={t.onOpen && !t.render && !t.tabs ? undefined : openId === t.id}
@@ -302,7 +309,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
           <span className="vz-tile-s">{t.desc}</span>
         </button>
       ))}
-      <div ref={panelRef} className={`vz-panel${tile ? ' open' : ''}`} style={{ order: panelOrder }} role="region" aria-label={tile?.title}>
+      <div ref={panelRef} className={`vz-panel${tile ? ' open' : ''}`} style={{ order: panelOrder }} id={`vz-panel-${label.replace(/\W+/g, '')}`} role="region" aria-label={tile?.title}>
         <div>
           {tile && (
             <div className="vz-panel-box">

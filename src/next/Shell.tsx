@@ -3,7 +3,8 @@ import { Icon } from './Icon';
 import { useI18n } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
 import { getCountryName } from '../data/passportData';
-import { Btn, Flag, SearchInput } from './ui';
+import { Btn, Flag } from './ui';
+import { SmartSearch } from './SmartSearch';
 import type { TabKey } from '../components/Navigation';
 
 export type MainTab = 'explore' | 'plan' | 'nomad' | 'track' | 'profile';
@@ -31,13 +32,14 @@ interface TopProps {
   onToggleTheme: () => void;
   onSearch: (q: string) => void;
   onHome: () => void;
+  onOpenCountry: (code: string) => void;
+  onOpenTool: (tab: TabKey, tile: string) => void;
 }
 
 export const TopBar: React.FC<TopProps> = (p) => {
   const { l, language, setLanguage, languages } = useI18n();
   const { isAuthenticated, user, openAuthModal } = useAuth();
   const items = useNavItems();
-  const [q, setQ] = useState('');
   const [drawer, setDrawer] = useState(false);
   const cur = activeMain(p.activeTab);
 
@@ -60,16 +62,9 @@ export const TopBar: React.FC<TopProps> = (p) => {
             ))}
           </nav>
           <span className="vz-top-sp" />
-          <form
-            className="vz-topsearch"
-            role="search"
-            onSubmit={(e) => {
-              e.preventDefault();
-              p.onSearch(q.trim());
-            }}
-          >
-            <SearchInput id="vz-topq" value={q} onChange={setQ} placeholder={l('Ülke ara…', 'Search a country…', 'Land suchen…', 'Buscar país…', 'Найти страну…')} />
-          </form>
+          <div className="vz-topsearch">
+            <SmartSearch id="vz-topq" passport={p.currentPassport} placeholder={l('Ülke ya da araç ara…', 'Search a country or tool…', 'Land oder Tool suchen…', 'Busca país o herramienta…', 'Страна или инструмент…')} onOpenCountry={p.onOpenCountry} onOpenTool={p.onOpenTool} onQuery={p.onSearch} />
+          </div>
           <div className="vz-topact">
             <button type="button" className="vz-pchip" onClick={p.onOpenPassport} aria-label={l('Pasaportu değiştir', 'Change passport', 'Pass wechseln', 'Cambiar pasaporte', 'Сменить паспорт')}>
               <Flag code={p.currentPassport} size="sm" />
@@ -113,16 +108,14 @@ export const TopBar: React.FC<TopProps> = (p) => {
                 <Icon name="close" size={18} duo={false} />
               </button>
             </div>
-            <form
-              role="search"
-              onSubmit={(e) => {
-                e.preventDefault();
-                setDrawer(false);
-                p.onSearch(q.trim());
-              }}
-            >
-              <SearchInput id="vz-drawerq" value={q} onChange={setQ} placeholder={l('Ülke ara…', 'Search a country…', 'Land suchen…', 'Buscar país…', 'Найти страну…')} />
-            </form>
+            <SmartSearch
+              id="vz-drawerq"
+              passport={p.currentPassport}
+              placeholder={l('Ülke ya da araç ara…', 'Search a country or tool…', 'Land oder Tool suchen…', 'Busca país o herramienta…', 'Страна или инструмент…')}
+              onOpenCountry={(c) => { setDrawer(false); p.onOpenCountry(c); }}
+              onOpenTool={(t, x) => { setDrawer(false); p.onOpenTool(t, x); }}
+              onQuery={(q) => { setDrawer(false); p.onSearch(q); }}
+            />
             <div className="vz-list">
               <button type="button" className="vz-row link" onClick={() => { setDrawer(false); p.onOpenPassport(); }}>
                 <Flag code={p.currentPassport} size="sm" />
@@ -248,9 +241,21 @@ export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (p
 
 export const AssistantFab: React.FC<{ onClick: () => void; hidden?: boolean }> = ({ onClick, hidden }) => {
   const { l } = useI18n();
+  const [away, setAway] = useState(false);
+  React.useEffect(() => {
+    let last = window.scrollY;
+    const on = () => {
+      const y = window.scrollY;
+      if (Math.abs(y - last) < 8) return;
+      setAway(y > last && y > 200);
+      last = y;
+    };
+    window.addEventListener('scroll', on, { passive: true });
+    return () => window.removeEventListener('scroll', on);
+  }, []);
   if (hidden) return null;
   return (
-    <button type="button" className="vz-fab" onClick={onClick} aria-label={l('Vizamigo asistanına sor', 'Ask the Vizamigo assistant', 'Vizamigo-Assistent fragen', 'Preguntar al asistente', 'Спросить ассистента')}>
+    <button type="button" className={`vz-fab${away ? ' away' : ''}`} onClick={onClick} aria-label={l('Vizamigo asistanına sor', 'Ask the Vizamigo assistant', 'Vizamigo-Assistent fragen', 'Preguntar al asistente', 'Спросить ассистента')}>
       <Icon name="spark" size={24} />
       <span>{l('Sor', 'Ask', 'Fragen', 'Preguntar', 'Спросить')}</span>
     </button>
