@@ -560,3 +560,26 @@ html.dark .vz-seamap.dots { background: linear-gradient(180deg, var(--rd-sea-sof
 .vz-band-sky::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--rd-sea-tint) 55%, transparent)); }
 html.dark .vz-band-sky::after { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--rd-sea) 22%, transparent)); }
 @media (max-width: 639px) { .vz-band-sea { height: 64px; } }
+
+/* ---- Rota: sürükle-bırak, gün, bilet ---- */
+.vz-step[draggable="true"] { cursor: grab; }
+.vz-step.dragging { opacity: 0.45; }
+.vz-step.over .vz-step-b > .vz-card { outline: 2px dashed var(--rd-sea); outline-offset: 3px; }
+.vz-nights { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--rd-muted); margin-right: auto; }
+.vz-nights input { width: 64px; height: 34px; border-radius: 10px; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); font: inherit; font-weight: 700; text-align: center; }
+.vz-leg { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; font-size: 13px; color: var(--rd-muted); padding: 0 4px; }
+.vz-leg svg { color: var(--rd-sea-ink); }
+.vz-leg a { margin-left: auto; color: var(--rd-sea-ink); font-weight: 700; text-decoration: none; }
+.vz-leg a:hover { text-decoration: underline; }
+
+/* ---- Priz çizimi ---- */
+.vz-plugs { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; }
+.vz-plugs-vs { display: flex; flex-direction: column; gap: 6px; padding-left: 14px; border-left: 1px dashed var(--rd-line); }
+.vz-plug { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.vz-plug svg { width: 76px; height: 76px; }
+.vz-plug-face { fill: var(--rd-surface); stroke: var(--rd-sea-tint); stroke-width: 2.5; }
+.vz-plug-pins { fill: var(--rd-fg); stroke: var(--rd-fg); stroke-width: 0; }
+.vz-plug-pins circle[fill="none"] { stroke-width: 2.5; }
+.vz-plug figcaption { font-weight: 800; font-size: 13px; color: var(--rd-sea-ink); }
+.vz-check-wrap { display: flex; align-items: center; gap: 6px; }
+.vz-check-wrap > .vz-check { flex: 1; }

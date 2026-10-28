@@ -1,13 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { Icon, IconName } from './Icon';
-import { Btn, Card, Empty, Field, Flag, List, Page, Row, Segmented, Stat, Tile, TileGrid, OpenRequest, fmtNum } from './ui';
-import { getCountryName } from '../data/passportData';
+import { Btn, Card, Chip, Chips, Empty, Field, Flag, List, Page, Row, Segmented, Stat, Tile, TileGrid, OpenRequest, fmtNum } from './ui';
+import { getCountryName, SCHENGEN_SET } from '../data/passportData';
 import { GEO_DATA } from '../data/geoData';
 import { GLOBAL_CURRENCIES } from '../data/countryGeography';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
 import { DEFAULT_RULES, RollingRule, TripRecord, evaluateRollingWindow, computeTaxResidency, getTodayDayIndex, dateToDayIndex, dayIndexToDate, formatLocalizedDate } from '../utils/calculator';
-import { loadStoredTrips, saveStoredTrips, loadStoredRules, loadStoredRouteStops } from '../utils/storage';
+import { loadStoredTrips, saveStoredTrips, loadStoredRules, saveStoredRules, loadStoredRouteStops } from '../utils/storage';
 
 /* ---------- küçük yerel depo yardımcıları ---------- */
 function useStore<T>(key: string, init: T) {
@@ -333,11 +333,50 @@ const Gauge: React.FC<{ used: number; max: number; label: string }> = ({ used, m
 
 const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
   const { l, language } = useI18n();
-  const rules = useMemo(() => {
+  const [rules, setRules] = useState<RollingRule[]>(() => {
     const stored = loadStoredRules();
     return stored.length ? stored : DEFAULT_RULES;
-  }, []);
+  });
   const [ruleId, setRuleId] = useState(rules[0].id);
+  // özel kural
+  const [showCustom, setShowCustom] = useState(false);
+  const [cName, setCName] = useState('');
+  const [cAllowed, setCAllowed] = useState(90);
+  const [cWindow, setCWindow] = useState(180);
+  const addRule = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!cName.trim() || cAllowed < 1 || cWindow < cAllowed) return;
+    const nr: RollingRule = { id: `c-${Date.now()}`, name: `${cName.trim()} (${cAllowed}/${cWindow})`, allowedDays: cAllowed, windowDays: cWindow, description: l(`Herhangi bir ${cWindow} günlük dönemde en fazla ${cAllowed} gün.`, `Up to ${cAllowed} days in any ${cWindow}-day window.`, `Max. ${cAllowed} Tage in ${cWindow} Tagen.`, `Hasta ${cAllowed} días en ${cWindow}.`, `До ${cAllowed} дн. за ${cWindow}.`) };
+    const next = [...rules, nr];
+    setRules(next);
+    saveStoredRules(next);
+    setRuleId(nr.id);
+    setShowCustom(false);
+    setCName('');
+  };
+  const removeRule = (id: string) => {
+    const next = rules.filter((r) => r.id !== id);
+    setRules(next);
+    saveStoredRules(next);
+    setRuleId(next[0].id);
+  };
+  // rotadan aktar: kurala uyan duraklar yolculuk olarak eklenir
+  const [importMsg, setImportMsg] = useState('');
+  const importFromRoute = () => {
+    const balkans = new Set(['RS', 'BA', 'ME', 'AL', 'MK', 'XK']);
+    const match = (c: string) =>
+      ruleId === 'schengen' ? SCHENGEN_SET.has(c) : ruleId === 'uk' ? c === 'GB' : ruleId === 'georgia' ? c === 'GE' : ruleId === 'balkans' ? balkans.has(c) : true;
+    const stops = loadStoredRouteStops().filter((st) => st.entryDate && st.exitDate && match(st.countryCode));
+    const fresh = stops
+      .map((st) => ({ id: `tr-r-${st.id}`, start: dateToDayIndex(st.entryDate), end: dateToDayIndex(st.exitDate), region: rule.name, countryCode: st.countryCode }))
+      .filter((t) => !T.trips.some((x) => x.id === t.id || (x.region === t.region && x.start === t.start && x.end === t.end)));
+    if (fresh.length) T.save([...T.trips, ...fresh]);
+    setImportMsg(
+      fresh.length
+        ? l(`Rotandan ${fresh.length} durak eklendi.`, `${fresh.length} stops added from your route.`, `${fresh.length} Stopps übernommen.`, `${fresh.length} paradas añadidas.`, `Добавлено ${fresh.length}.`)
+        : l('Rotanda bu kurala giren yeni durak yok.', 'No new stops on your route for this rule.', 'Keine neuen passenden Stopps.', 'No hay paradas nuevas.', 'Нет новых остановок.')
+    );
+  };
   const rule = rules.find((r) => r.id === ruleId) || rules[0];
   const today = getTodayDayIndex();
   const res = useMemo(() => evaluateRollingWindow(today, T.trips, rule), [today, T.trips, rule]);
@@ -355,8 +394,31 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
   };
   return (
     <div className="vz-stack">
-      <Segmented label={l('Kural', 'Rule', 'Regel', 'Regla', 'Правило')} value={ruleId} onChange={setRuleId} options={rules.map((r) => ({ id: r.id, label: ruleName(r, language) }))} />
-      <p className="vz-muted" style={{ fontSize: 14 }}>{ruleDesc(rule, language)}</p>
+      <Chips scroll>
+        {rules.map((r) => (
+          <Chip key={r.id} on={r.id === ruleId} onClick={() => { setRuleId(r.id); setImportMsg(''); }}>{ruleName(r, language)}</Chip>
+        ))}
+        <Chip on={showCustom} icon="plus" onClick={() => setShowCustom((v) => !v)}>{l('Özel kural', 'Custom rule', 'Eigene Regel', 'Regla propia', 'Своё правило')}</Chip>
+      </Chips>
+      {showCustom && (
+        <form className="vz-card tone-sea" onSubmit={addRule}>
+          <b>{l('Kendi kuralını ekle', 'Add your own rule', 'Eigene Regel hinzufügen', 'Añade tu regla', 'Добавьте правило')}</b>
+          <div className="vz-formgrid">
+            <Field label={l('Ad', 'Name', 'Name', 'Nombre', 'Название')} htmlFor="vz-cr-n"><input id="vz-cr-n" className="vz-input" value={cName} onChange={(e) => setCName(e.target.value)} placeholder={l('ör. Tayland', 'e.g. Thailand', 'z. B. Thailand', 'p. ej. Tailandia', 'напр. Таиланд')} required /></Field>
+            <Field label={l('İzin verilen gün', 'Days allowed', 'Erlaubte Tage', 'Días permitidos', 'Дней можно')} htmlFor="vz-cr-a"><input id="vz-cr-a" type="number" min={1} max={365} className="vz-input" value={cAllowed} onChange={(e) => setCAllowed(Number(e.target.value) || 1)} /></Field>
+            <Field label={l('Kaç günlük dönemde', 'Within how many days', 'Innerhalb von Tagen', 'En cuántos días', 'За сколько дней')} htmlFor="vz-cr-w"><input id="vz-cr-w" type="number" min={1} max={730} className="vz-input" value={cWindow} onChange={(e) => setCWindow(Number(e.target.value) || 1)} /></Field>
+          </div>
+          <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Kuralı ekle', 'Add rule', 'Regel hinzufügen', 'Añadir regla', 'Добавить')}</Btn>
+        </form>
+      )}
+      <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
+        <p className="vz-muted" style={{ fontSize: 14, flex: 1, minWidth: 200 }}>{ruleDesc(rule, language)}</p>
+        <span className="vz-row-flex" style={{ gap: 6 }}>
+          <Btn small variant="soft" icon="route" onClick={importFromRoute}>{l('Rotamdan aktar', 'Import from my route', 'Aus Route übernehmen', 'Importar de mi ruta', 'Из маршрута')}</Btn>
+          {!rule.preset && <Btn small variant="ghost" icon="trash" onClick={() => removeRule(rule.id)}>{l('Kuralı sil', 'Delete rule', 'Regel löschen', 'Borrar regla', 'Удалить')}</Btn>}
+        </span>
+      </div>
+      {importMsg && <div className="vz-note"><Icon name="check" size={18} duo={false} /><span>{importMsg}</span></div>}
       <div className="vz-daysgrid">
         <div className="vz-card" style={{ alignItems: 'center' }}>
           <Gauge used={res.daysUsed} max={rule.allowedDays} label={l(`${res.daysUsed} gün kullanıldı`, `${res.daysUsed} days used`, `${res.daysUsed} Tage genutzt`, `${res.daysUsed} días usados`, `Использовано ${res.daysUsed}`)} />
