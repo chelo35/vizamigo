@@ -71,11 +71,6 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
       </svg>
       <FlyingBanner className="f1" words={['Thailand', 'Japan', 'USA', 'France']} />
       <FlyingBanner className="f2" words={['Italy', 'Türkiye', 'Spain', 'Greece']} />
-      <div className="rd-gulls" aria-hidden="true">
-        <span className="g1"><svg viewBox="0 0 34 14" width="30" height="12"><path d="M1 11 Q8 1 17 10 Q26 1 33 11" stroke="#3A4A55" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
-        <span className="g2"><svg viewBox="0 0 34 14" width="22" height="9"><path d="M1 11 Q8 1 17 10 Q26 1 33 11" stroke="#3A4A55" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
-        <span className="g3"><svg viewBox="0 0 34 14" width="26" height="11"><path d="M1 11 Q8 1 17 10 Q26 1 33 11" stroke="#3A4A55" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
-      </div>
       <div className="rd-sea" aria-hidden="true">
         <div className="rd-wave w1"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 110 C 150 70 300 150 600 110 C 900 70 1050 150 1200 110 C 1350 70 1500 150 1800 110 C 2100 70 2250 150 2400 110 V240 H0 Z" /></svg></div>
         <div className="rd-wave w2"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 140 C 200 100 400 180 600 140 C 800 100 1000 180 1200 140 C 1400 100 1600 180 1800 140 C 2000 100 2200 180 2400 140 V240 H0 Z" /></svg></div>
