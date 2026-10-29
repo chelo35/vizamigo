@@ -20,6 +20,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getCountryGeography, GLOBAL_CURRENCIES } from '../data/countryGeography';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { getCountryConciergePlan } from '../data/travelConciergeEngine';
+import { FlightFrom } from './FlightPrice';
 import { ALL_WORLD_HUBS, flagToIso } from '../data/worldHubs';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../utils/liveData';
@@ -311,7 +312,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
       id: 'easy', icon: 'sun',
       title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка'),
       desc: l('Uçuş, otel, transfer, tur, eSIM', 'Flights, stay, transfer, cover', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),
-      render: () => <EasyStages stages={concierge.stages} tr={tr} />
+      render: () => <EasyStages stages={concierge.stages} tr={tr} from={(GEO_DATA[passport]?.mainHub || '').split('/')[0]} to={(GEO_DATA[code]?.mainHub || '').split('/')[0]} />
     },
     {
       id: 'transport', icon: 'transit',
@@ -808,7 +809,7 @@ const WorkSim: React.FC<{ tz: string | null; city: string }> = ({ tz, city }) =>
 
 type Stage = ReturnType<typeof getCountryConciergePlan>['stages'][number];
 /** Kolay tatil: aşamaya göre süz (uçuş, konaklama, ulaşım, güvence), tüm ortakları göster. */
-const EasyStages: React.FC<{ stages: Stage[]; tr: boolean }> = ({ stages, tr }) => {
+const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: string }> = ({ stages, tr, from, to }) => {
   const { l } = useI18n();
   const [st, setSt] = useState<string>('');
   const [all, setAll] = useState(false);
@@ -824,7 +825,7 @@ const EasyStages: React.FC<{ stages: Stage[]; tr: boolean }> = ({ stages, tr }) 
           <div className="vz-step" key={s.stage}>
             <span className="vz-step-n">{stages.indexOf(s) + 1 || i + 1}</span>
             <div className="vz-step-b">
-              <h4>{tr ? s.titleTr : s.titleEn}</h4>
+              <h4>{tr ? s.titleTr : s.titleEn}{s.stage === 'flights' && <FlightFrom from={from} to={to} />}</h4>
               <p className="vz-muted" style={{ fontSize: 14 }}>{tr ? s.subtitleTr : s.subtitleEn}</p>
               <List>
                 {s.partners.slice(0, all || st ? 99 : 3).map((pn) => (

@@ -7,11 +7,11 @@ const OUT = process.argv[2] || '.cand';
 fs.mkdirSync(OUT, { recursive: true });
 const Q = {
   MT: 'Valletta Grand Harbour', MD: 'Orheiul Vechi', PL: 'Kraków Main Market Square', AF: 'Band-e Amir',
-  BD: 'Sundarbans', KP: 'Pyongyang skyline', KH: 'Angkor Wat', TL: 'Cristo Rei Dili', KZ: 'Mausoleum of Khoja Ahmed Yasawi',
+  BD: 'Sundarbans', KP: 'Pyongyang Juche Tower', KH: 'Angkor Wat', TL: 'Cristo Rei Dili', KZ: 'Mausoleum of Khoja Ahmed Yasawi',
   IL: 'Western Wall Jerusalem', TR: 'Cappadocia balloons', GW: 'Bijagós', LR: 'Robertsport', SS: 'Juba South Sudan Nile',
   ZW: 'Victoria Falls', SD: 'Meroë pyramids', TN: 'Sidi Bou Said', ZA: 'Table Mountain Cape Town', BZ: 'Great Blue Hole',
-  GD: "St. George's Grenada Carenage", FJ: 'Fiji beach', TT: 'Pigeon Point Tobago', NI: 'Granada Nicaragua cathedral',
-  AZ: 'Flame Towers Baku', KW: 'Kuwait Towers', DO: 'Punta Cana beach', PA: 'Panama Canal Miraflores Locks'
+  GD: 'Grand Anse Beach Grenada', FJ: 'Fiji beach', TT: 'Pigeon Point Tobago', NI: 'Granada Nicaragua cathedral',
+  AZ: 'Flame Towers Baku', KW: 'Kuwait City skyline Kuwait Towers', DO: 'Punta Cana beach', PA: 'Panama Canal Miraflores Locks'
 };
 const UA = { 'User-Agent': 'VizamigoPhotoPicker/1.0 (info@vizamigo.com)' };
 const api = async (params) => {
@@ -19,8 +19,10 @@ const api = async (params) => {
   const r = await fetch(u, { headers: UA });
   return r.json();
 };
+const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
 const result = {};
 for (const [code, q] of Object.entries(Q)) {
+  if (ONLY && !ONLY.includes(code)) continue;
   const seen = new Map();
   for (const extra of [' incategory:Featured_pictures_on_Wikimedia_Commons', ' incategory:Quality_images', '']) {
     if (seen.size >= 8) break;

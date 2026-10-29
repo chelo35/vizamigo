@@ -12,6 +12,8 @@ export interface AuthUser {
   name: string;
   avatar?: string;
   provider: 'google' | 'facebook' | 'email';
+  /** hesaba bağlı tüm giriş yöntemleri (ör. e-posta + Google) */
+  providers?: string[];
   isPro: boolean;
   createdAt: string;
   primaryPassport: string;
@@ -66,12 +68,14 @@ const toUser = (u: User): AuthUser => {
   const m = (u.user_metadata || {}) as Record<string, unknown>;
   const provider = (u.app_metadata?.provider as string) === 'google' ? 'google' : 'email';
   const email = u.email || '';
+  const providers = Array.from(new Set([...(((u.app_metadata?.providers as string[]) || [])), ...((u.identities || []).map((i) => i.provider))]));
   return {
     id: u.id,
     email,
     name: (m.full_name as string) || (m.name as string) || email.split('@')[0],
     avatar: (m.avatar_url as string) || (m.picture as string) || undefined,
     provider,
+    providers,
     isPro: false,
     createdAt: u.created_at,
     primaryPassport: (m.primaryPassport as string) || 'TR',

@@ -5,6 +5,7 @@ import { getCountryName } from '../data/passportData';
 import { tpLinks } from '../data/tpPartners';
 import { Icon } from './Icon';
 import { PartnerLogo } from './PartnerLogo';
+import { useFlightPrice } from './FlightPrice';
 
 /**
  * Nazik teklif kartı: ziyaretçi ülke sayfasını gerçekten okuyunca (sayfanın yarısına inince ya da
@@ -48,6 +49,7 @@ export const OfferCard: React.FC<{ code: string; passport: string }> = ({ code, 
     return cleanup;
   }, [code, passport, gone]);
 
+  const fp = useFlightPrice(show ? (GEO_DATA[passport]?.mainHub || '').split('/')[0] : undefined, (GEO_DATA[code]?.mainHub || '').split('/')[0]);
   if (gone || !show || code === passport) return null;
 
   const name = getCountryName(code, language);
@@ -63,7 +65,7 @@ export const OfferCard: React.FC<{ code: string; passport: string }> = ({ code, 
   };
   const links = [
     { id: 'booking', url: tpLinks.booking(`${geo?.capital || nameEn}, ${nameEn}`), label: l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
-    { id: 'aviasales', url: tpLinks.flights(home, hub), label: l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты') },
+    { id: 'aviasales', url: tpLinks.flights(home, hub), label: fp ? `${l('Uçuş', 'Flights', 'Flüge', 'Vuelos', 'Авиа')} · ${fp.money}` : l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты') },
     { id: 'yesim', url: tpLinks.yesim(), label: 'eSIM' }
   ];
 

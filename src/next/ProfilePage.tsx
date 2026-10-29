@@ -40,7 +40,7 @@ const AccountView: React.FC = () => {
   return (
     <div className="vz-stack">
       <Card icon="user" title={user.name} eyebrow={user.email} actions={user.isPro ? <span className="vz-badge tone-sun">PRO</span> : undefined}>
-        <p className="vz-muted">{l('Giriş yöntemi', 'Signed in with', 'Angemeldet mit', 'Acceso con', 'Вход через')}: {user.provider === 'google' ? 'Google' : user.provider === 'facebook' ? 'Facebook' : 'E-posta'}</p>
+        <p className="vz-muted">{l('Giriş yöntemi', 'Signed in with', 'Angemeldet mit', 'Acceso con', 'Вход через')}: {(user.providers?.length ? user.providers : [user.provider]).map((p) => (p === 'google' ? 'Google' : p === 'facebook' ? 'Facebook' : l('E-posta', 'Email', 'E-Mail', 'Correo', 'Эл. почта'))).join(' + ')}</p>
         <Btn variant="ghost" icon="back" onClick={logout} style={{ alignSelf: 'flex-start' }}>{l('Çıkış yap', 'Sign out', 'Abmelden', 'Cerrar sesión', 'Выйти')}</Btn>
       </Card>
     </div>

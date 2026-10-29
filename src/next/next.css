@@ -853,3 +853,6 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
 @media (max-width: 639px) {
   .vz-offer { width: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(156px + env(safe-area-inset-bottom, 0px)); }
 }
+
+/* gerçek uçuş fiyatı rozeti */
+.vz-fprice{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;vertical-align:middle;background:var(--rd-sea-tint);color:var(--rd-sea-ink)}

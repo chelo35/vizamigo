@@ -19,7 +19,7 @@ export const DEFAULT_TRAVEL_FALLBACK = '/placeholder-landscape.svg';
 const LOCAL_COUNTRY_IMG_REGEX = /^\/images\/countries\/([a-z]{2})(?:-(\d+))?\.(webp|avif|jpg|png|jpeg)$/i;
 const AVAILABLE_WIDTHS = [240, 360, 480, 720];
 /** 28.10.2026'da fotoğrafı değiştirilen ülkeler */
-const PHOTO_V2 = new Set(['mt', 'md', 'pl', 'af', 'bd', 'kh', 'tl', 'kz', 'il', 'tr', 'gw', 'lr', 'ss', 'zw', 'sd', 'tn', 'za', 'bz', 'fj', 'tt', 'ni', 'az', 'do', 'pa']);
+const PHOTO_V2 = new Set(['mt', 'md', 'pl', 'af', 'bd', 'kh', 'tl', 'kz', 'il', 'tr', 'gw', 'lr', 'ss', 'zw', 'sd', 'tn', 'za', 'bz', 'fj', 'tt', 'ni', 'az', 'do', 'pa', 'kp', 'kw', 'gd']);
 
 /**
  * Transforms image URLs to modern Next-Gen WebP/AVIF format with optimal resolution.
