@@ -1,0 +1,46 @@
+{
+  "title": "Schengen visa document checklist 2026: your personal list",
+  "short": "Schengen document checklist",
+  "metaDesc": "Documents for a Schengen visa: separate lists for employees, business owners, students, retirees and children. €90 fee, €30,000 insurance, when to apply.",
+  "answer": "A Schengen visa needs a set of common documents (form, photo, passport, travel insurance with €30,000 cover, bank statements) plus documents that depend on your job and the purpose of your trip. The fee is €90 for adults and €45 for ages 6–12; apply no earlier than 6 months and no later than 15 days before travel.",
+  "sections": [
+    { "h": "Which country do I apply to?", "p": ["Apply to the consulate (or its official visa centre) of the country where you will spend the most time. If the stays are equal, apply to the country you enter first."] },
+    { "h": "Fee, processing time and timing", "list": ["Visa fee: €90 for adults, €45 for ages 6–12, free under 6. It is not refunded if refused.", "Visa centres (VFS Global, TLScontact, BLS and others) charge an extra service fee.", "A decision usually takes 15 days and can be extended to 45 days.", "Apply no earlier than 6 months and no later than 15 days before your trip. Book early for summer and holiday periods."] },
+    { "h": "Longer multiple-entry visas", "p": ["Many nationalities can receive longer multiple-entry visas (1, 3 and then 5 years) after using earlier Schengen visas correctly; for Turkish citizens this \"cascade\" was adopted on 15 July 2025. Always attach copies of your previous visas."] }
+  ],
+  "faq": [
+    { "q": "How much does a Schengen visa cost?", "a": "€90 for adults, €45 for children aged 6–12 and free under 6. The visa centre's service fee is extra." },
+    { "q": "What travel insurance do I need?", "a": "At least €30,000 of medical cover, valid in all Schengen countries for the whole trip." },
+    { "q": "How long does a Schengen visa take?", "a": "Usually 15 days; it can take up to 45 days if extra checks are needed." }
+  ],
+  "checklist": {
+    "title": "Your personal document list",
+    "statusLabel": "Your situation",
+    "purposeLabel": "Purpose of your trip",
+    "commonTitle": "For everyone",
+    "common": [
+      "Completed and signed visa application form",
+      "2 biometric photos (35×45 mm, white background, taken in the last 6 months)",
+      "Passport issued in the last 10 years, valid at least 3 months after you leave, with at least 2 blank pages; copies of previous visas",
+      "Copy of your national ID and civil-status documents where required",
+      "Travel medical insurance: at least €30,000 cover, valid in all Schengen countries for the whole trip",
+      "Bank statements for the last 3 months, stamped or verifiable",
+      "Return flight reservation"
+    ],
+    "statuses": [
+      { "id": "employee", "label": "Employee", "docs": ["Employer letter with your role, salary and approved leave dates, signed and stamped", "Payslips for the last 3 months", "Proof of social security / employment record"] },
+      { "id": "owner", "label": "Business owner / self-employed", "docs": ["Tax registration certificate", "Recent certificate of business activity (last 3 months)", "Company registration documents and authorised signatures", "Company bank statements (if any)"] },
+      { "id": "student", "label": "Student", "docs": ["Certificate of enrolment", "Sponsorship letter from the person paying for the trip", "Sponsor's proof of income and bank statements", "Notarised parental consent if you are under 18"] },
+      { "id": "retired", "label": "Retired", "docs": ["Pension certificate", "Pension statements for the last 3 months"] },
+      { "id": "unemployed", "label": "Not working / homemaker", "docs": ["Sponsorship letter from the person paying (e.g. your spouse)", "Sponsor's employment and income documents", "Proof of your relationship (e.g. marriage or family register)"] },
+      { "id": "minor", "label": "Child under 18", "docs": ["Birth certificate / family register", "Notarised consent from any parent not travelling", "Copies of both parents' passports or IDs", "School enrolment certificate"] }
+    ],
+    "purposes": [
+      { "id": "tourism", "label": "Tourism", "docs": ["Hotel booking for the whole stay", "Short day-by-day itinerary"] },
+      { "id": "family", "label": "Visiting family or friends", "docs": ["Invitation letter from your host", "Copy of your host's ID or residence permit", "Formal guarantee of costs if the country requires it (e.g. Germany's Verpflichtungserklärung)"] },
+      { "id": "business", "label": "Business", "docs": ["Invitation letter from the company you are visiting", "Letter from your own employer assigning the trip", "Meeting, trade fair or training programme"] }
+    ],
+    "note": "Each consulate may ask for extra documents. Check the current list of the official visa centre before you apply.",
+    "print": "Print / save as PDF"
+  }
+}

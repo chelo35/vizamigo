@@ -635,9 +635,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           </div>
         </section>
 
-        {guidesForCountry(code).filter((g) => g !== 'greek_islands_visa' || passport === 'TR').length > 0 && (
+        {guidesForCountry(code).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa')).length > 0 && (
           <List>
-            {guidesForCountry(code).filter((g) => g !== 'greek_islands_visa' || passport === 'TR').map((g) => (
+            {guidesForCountry(code).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa')).map((g) => (
               <a key={g} className="vz-row link" href={`/${language}/info/${g}`}>
                 <span className="vz-ic sm"><Icon name={GUIDE_META[g].icon as never} size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{getGuide(g, language).title}</span><span className="vz-row-s">{l('Güncel rehber', 'Up-to-date guide', 'Aktueller Ratgeber', 'Guía actualizada', 'Актуальный гид')}</span></span>

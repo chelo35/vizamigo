@@ -1,0 +1,46 @@
+{
+  "title": "Schengen-Visum Dokumenten-Checkliste 2026: deine persönliche Liste",
+  "short": "Schengen-Dokumentenliste",
+  "metaDesc": "Unterlagen für das Schengen-Visum: eigene Listen für Angestellte, Unternehmer, Studierende, Rentner und Kinder. Gebühr 90 €, Versicherung 30.000 €, Fristen.",
+  "answer": "Für ein Schengen-Visum brauchst du allgemeine Unterlagen (Antragsformular, Foto, Reisepass, Reiseversicherung mit 30.000 € Deckung, Kontoauszüge) und weitere Dokumente, die von deinem Beruf und dem Reisezweck abhängen. Die Gebühr beträgt 90 € für Erwachsene und 45 € für Kinder von 6 bis 12 Jahren; beantrage das Visum frühestens 6 Monate und spätestens 15 Tage vor der Reise.",
+  "sections": [
+    { "h": "Bei welchem Land beantrage ich das Visum?", "p": ["Stelle den Antrag beim Konsulat (oder dem offiziellen Visazentrum) des Landes, in dem du die meiste Zeit verbringst. Bei gleich langen Aufenthalten beantragst du das Visum in dem Land, in das du zuerst einreist."] },
+    { "h": "Gebühr, Bearbeitungszeit und Fristen", "list": ["Visumgebühr: 90 € für Erwachsene, 45 € für Kinder von 6 bis 12 Jahren, unter 6 Jahren kostenlos. Sie wird bei einer Ablehnung nicht erstattet.", "Visazentren (VFS Global, TLScontact, BLS und andere) erheben zusätzlich eine Servicegebühr.", "Die Entscheidung dauert in der Regel 15 Tage und kann auf 45 Tage verlängert werden.", "Beantrage das Visum frühestens 6 Monate und spätestens 15 Tage vor deiner Reise. Buche Termine für Sommer und Feiertage früh."] },
+    { "h": "Längere Visa mit mehrfacher Einreise", "p": ["Viele Staatsangehörige können nach ordnungsgemäßer Nutzung früherer Schengen-Visa längere Visa mit mehrfacher Einreise erhalten (1, 3 und dann 5 Jahre); für türkische Staatsbürger wurde diese „Kaskade“ am 15. Juli 2025 eingeführt. Füge immer Kopien deiner früheren Visa bei."] }
+  ],
+  "faq": [
+    { "q": "Wie viel kostet ein Schengen-Visum?", "a": "90 € für Erwachsene, 45 € für Kinder von 6 bis 12 Jahren, unter 6 Jahren kostenlos. Die Servicegebühr des Visazentrums kommt noch dazu." },
+    { "q": "Welche Reiseversicherung brauche ich?", "a": "Mindestens 30.000 € Deckung für medizinische Kosten, gültig in allen Schengen-Ländern für die gesamte Reisedauer." },
+    { "q": "Wie lange dauert ein Schengen-Visum?", "a": "In der Regel 15 Tage; bei zusätzlichen Prüfungen kann es bis zu 45 Tage dauern." }
+  ],
+  "checklist": {
+    "title": "Deine persönliche Dokumentenliste",
+    "statusLabel": "Deine Situation",
+    "purposeLabel": "Zweck deiner Reise",
+    "commonTitle": "Für alle",
+    "common": [
+      "Ausgefülltes und unterschriebenes Visumantragsformular",
+      "2 biometrische Fotos (35×45 mm, weißer Hintergrund, in den letzten 6 Monaten aufgenommen)",
+      "Reisepass, in den letzten 10 Jahren ausgestellt, mindestens 3 Monate nach deiner Ausreise gültig, mit mindestens 2 freien Seiten; Kopien früherer Visa",
+      "Kopie deines Personalausweises und, falls verlangt, Personenstandsurkunden",
+      "Auslandsreise-Krankenversicherung: mindestens 30.000 € Deckung, gültig in allen Schengen-Ländern für die gesamte Reisedauer",
+      "Kontoauszüge der letzten 3 Monate, gestempelt oder überprüfbar",
+      "Reservierung des Rückflugs"
+    ],
+    "statuses": [
+      { "id": "employee", "label": "Angestellte/r", "docs": ["Arbeitgeberschreiben mit deiner Position, deinem Gehalt und den genehmigten Urlaubstagen, unterschrieben und gestempelt", "Gehaltsabrechnungen der letzten 3 Monate", "Nachweis der Sozialversicherung / Beschäftigungsnachweis"] },
+      { "id": "owner", "label": "Unternehmer/in / Selbstständige/r", "docs": ["Steueranmeldebescheinigung", "Aktuelle Bescheinigung über die Geschäftstätigkeit (letzte 3 Monate)", "Unterlagen zur Firmeneintragung und Unterschriftsberechtigungen", "Firmenkontoauszüge (falls vorhanden)"] },
+      { "id": "student", "label": "Student/in", "docs": ["Immatrikulationsbescheinigung", "Finanzierungsschreiben der Person, die die Reise bezahlt", "Einkommensnachweis und Kontoauszüge des Kostenträgers", "Notariell beglaubigte Einverständniserklärung der Eltern, wenn du unter 18 bist"] },
+      { "id": "retired", "label": "Rentner/in", "docs": ["Rentenbescheid", "Rentenauszüge der letzten 3 Monate"] },
+      { "id": "unemployed", "label": "Nicht berufstätig / Hausfrau, Hausmann", "docs": ["Finanzierungsschreiben der Person, die die Reise bezahlt (z. B. deines Ehepartners)", "Beschäftigungs- und Einkommensnachweise des Kostenträgers", "Nachweis eurer Beziehung (z. B. Heiratsurkunde oder Familienstammbuch)"] },
+      { "id": "minor", "label": "Kind unter 18", "docs": ["Geburtsurkunde / Familienstammbuch", "Notariell beglaubigte Einverständniserklärung des nicht mitreisenden Elternteils", "Kopien der Pässe oder Ausweise beider Eltern", "Schulbescheinigung"] }
+    ],
+    "purposes": [
+      { "id": "tourism", "label": "Tourismus", "docs": ["Hotelbuchung für die gesamte Aufenthaltsdauer", "Kurzer Reiseplan, Tag für Tag"] },
+      { "id": "family", "label": "Besuch von Familie oder Freunden", "docs": ["Einladungsschreiben deiner Gastgeberin / deines Gastgebers", "Kopie des Ausweises oder Aufenthaltstitels deiner Gastgeberin / deines Gastgebers", "Förmliche Kostenübernahmeerklärung, falls das Land sie verlangt (z. B. die Verpflichtungserklärung in Deutschland)"] },
+      { "id": "business", "label": "Geschäftsreise", "docs": ["Einladungsschreiben des Unternehmens, das du besuchst", "Schreiben deines eigenen Arbeitgebers, der die Reise anordnet", "Programm für Meetings, Messe oder Schulung"] }
+    ],
+    "note": "Jedes Konsulat kann zusätzliche Unterlagen verlangen. Prüfe vor der Antragstellung die aktuelle Liste des offiziellen Visazentrums.",
+    "print": "Drucken / als PDF speichern"
+  }
+}

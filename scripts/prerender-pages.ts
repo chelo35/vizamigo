@@ -231,6 +231,9 @@ async function main() {
         ]
       };
       const secs = g.sections.map((x) => `<h2>${esc(x.h)}</h2>${(x.p || []).map((t) => `<p>${esc(t)}</p>`).join('')}${x.list ? `<ul>${x.list.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}`).join('');
+      const c = g.checklist;
+      const ul = (xs: string[]) => `<ul>${xs.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
+      const check = c ? `<h2>${esc(c.title)}</h2><h3>${esc(c.commonTitle)}</h3>${ul(c.common)}${[...c.statuses, ...c.purposes].map((x) => `<h3>${esc(x.label)}</h3>${ul(x.docs)}`).join('')}<p>${esc(c.note)}</p>` : '';
       const faq = `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`;
       const src = `<p>${meta.sources.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(x.label)}</a>`).join(' · ')} · ${esc(meta.checked)}</p>`;
       const others = GUIDE_IDS.filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
@@ -242,7 +245,7 @@ async function main() {
         desc: g.metaDesc,
         head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,
         body: eyebrow(lang, ['Vizamigo']) + h1(g.title) + lead(g.answer),
-        nav: navBlock(lang, `${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
+        nav: navBlock(lang, `${check}${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
       n++;
     }

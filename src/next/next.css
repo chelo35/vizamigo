@@ -866,3 +866,11 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
 .vz-faq-i { border-top: 1px solid var(--rd-line); padding: 10px 0; }
 .vz-faq-i summary { cursor: pointer; font-weight: 600; }
 .vz-faq-i p { margin-top: 6px; }
+.vz-check { display: grid; gap: 10px; padding: clamp(16px, 3vw, 24px); }
+.vz-check h3 { font-size: 15px; margin: 10px 0 4px; }
+.vz-check-l { font-size: 13px; color: var(--rd-muted); }
+.vz-check-i { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-bottom: 1px solid var(--rd-line); font-size: 15px; line-height: 1.5; cursor: pointer; }
+.vz-check-i input { appearance: auto; -webkit-appearance: checkbox; opacity: 1; position: static; margin-top: 4px; width: 18px; height: 18px; accent-color: var(--rd-sea); flex: none; }
+.vz-check-i:has(input:checked) span { color: var(--rd-muted); text-decoration: line-through; }
+.vz-check-bar { height: 6px; border-radius: 99px; background: var(--rd-surface-2); overflow: hidden; }
+.vz-check-bar i { display: block; height: 100%; background: var(--rd-sea); transition: width .3s; }

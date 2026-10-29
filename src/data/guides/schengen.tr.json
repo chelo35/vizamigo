@@ -1,0 +1,46 @@
+{
+  "title": "Schengen vizesi evrak listesi 2026: kişiye özel kontrol listesi",
+  "short": "Schengen evrak listesi",
+  "metaDesc": "Schengen vizesi için gereken evraklar: çalışan, şirket sahibi, öğrenci, emekli ve çocuklar için ayrı liste. Ücret 90 €, sigorta 30.000 €, başvuru zamanı.",
+  "answer": "Schengen vizesi için herkesin vereceği ortak evraklar (form, fotoğraf, pasaport, 30.000 € teminatlı sigorta, banka dökümü) ile çalışma durumuna ve seyahat amacına göre değişen evraklar istenir. Ücret yetişkin için 90 €, 6–12 yaş için 45 €; başvuru en erken 6 ay, en geç 15 gün önce yapılır.",
+  "sections": [
+    { "h": "Hangi ülkeye başvurulur?", "p": ["En uzun kalacağın ülkenin konsolosluğuna ya da onun yetkili aracı kurumuna başvurursun. Süreler eşitse ilk giriş yapacağın ülkeye başvurulur."] },
+    { "h": "Ücret, süre ve zamanlama", "list": ["Vize ücreti: yetişkin 90 €, 6–12 yaş 45 €, 6 yaş altı ücretsiz. Ret durumunda iade edilmez.", "Aracı kurum (VFS Global, iDATA vb.) ayrıca hizmet bedeli alır.", "Karar genelde 15 gün içinde çıkar; 45 güne kadar uzayabilir.", "Başvuru seyahatten en erken 6 ay, en geç 15 gün önce yapılabilir. Yaz ve bayram dönemlerinde randevu bulmak zorlaştığı için erken davran."] },
+    { "h": "Çok girişli uzun vize (kademeli sistem)", "p": ["AB'nin 15 Temmuz 2025'te kabul ettiği kurala göre, son 3 yılda iki vizeyi kurallara uygun kullanan Türk vatandaşlarına 1 yıllık çok girişli vize verilebilir; bunu doğru kullananlara sonra 3 yıllık, ardından 5 yıllık vize. Eski vizelerinin fotokopilerini mutlaka ekle."] }
+  ],
+  "faq": [
+    { "q": "Schengen vizesi ücreti ne kadar?", "a": "Yetişkin için 90 €, 6–12 yaş çocuk için 45 €, 6 yaş altı ücretsiz. Aracı kurumun hizmet bedeli ayrıca ödenir." },
+    { "q": "Seyahat sigortası ne kadar teminatlı olmalı?", "a": "En az 30.000 € teminatlı, tüm Schengen ülkelerinde ve seyahatin tamamında geçerli olmalı." },
+    { "q": "Schengen vizesi kaç günde çıkar?", "a": "Genelde 15 gün; ek inceleme gerekirse 45 güne kadar uzayabilir." }
+  ],
+  "checklist": {
+    "title": "Kişiye özel evrak listen",
+    "statusLabel": "Çalışma durumun",
+    "purposeLabel": "Seyahat amacın",
+    "commonTitle": "Herkes için",
+    "common": [
+      "Doldurulmuş ve imzalanmış vize başvuru formu",
+      "2 adet biyometrik fotoğraf (35×45 mm, beyaz fon, son 6 ay içinde çekilmiş)",
+      "Pasaport: son 10 yılda verilmiş, dönüşten sonra en az 3 ay geçerli, en az 2 boş sayfa; eski vizelerin fotokopileri",
+      "Nüfus cüzdanı fotokopisi ve tam vukuatlı nüfus kayıt örneği (e-Devlet)",
+      "Seyahat sağlık sigortası: en az 30.000 € teminat, tüm Schengen ülkelerinde ve tüm seyahat boyunca geçerli",
+      "Son 3 aya ait kaşeli veya barkodlu banka hesap dökümü",
+      "Gidiş-dönüş uçuş rezervasyonu"
+    ],
+    "statuses": [
+      { "id": "employee", "label": "Çalışan", "docs": ["İşveren yazısı: görevin, maaşın ve izin tarihlerin; ıslak imzalı ve kaşeli", "Son 3 aya ait maaş bordrosu", "SGK hizmet dökümü (e-Devlet, barkodlu)"] },
+      { "id": "owner", "label": "Şirket sahibi / serbest meslek", "docs": ["Vergi levhası", "Son 3 ay içinde alınmış faaliyet belgesi", "Ticaret sicil gazetesi ve imza sirküleri", "Şirket hesabının banka dökümü (varsa)"] },
+      { "id": "student", "label": "Öğrenci", "docs": ["Öğrenci belgesi (e-Devlet)", "Masrafları karşılayan kişinin dilekçesi (sponsor yazısı)", "Sponsorun gelir belgeleri ve banka dökümü", "18 yaş altıysan noter onaylı muvafakatname"] },
+      { "id": "retired", "label": "Emekli", "docs": ["Emekli belgesi (e-Devlet)", "Son 3 aya ait emekli maaş dökümü"] },
+      { "id": "unemployed", "label": "Çalışmıyor / ev hanımı", "docs": ["Masrafları karşılayan kişinin (ör. eşin) sponsor dilekçesi", "Sponsorun çalışma ve gelir belgeleri", "Aradaki bağı gösteren belge (tam vukuatlı nüfus kayıt örneği)"] },
+      { "id": "minor", "label": "18 yaş altı çocuk", "docs": ["Doğum belgesi / tam vukuatlı nüfus kayıt örneği", "Birlikte gitmeyen ebeveynden noter onaylı muvafakatname", "Ebeveynlerin pasaport veya kimlik fotokopileri", "Okuldan öğrenci belgesi"] }
+    ],
+    "purposes": [
+      { "id": "tourism", "label": "Turizm", "docs": ["Tüm konaklama süresini kapsayan otel rezervasyonu", "Gün gün kısa seyahat planı"] },
+      { "id": "family", "label": "Aile / arkadaş ziyareti", "docs": ["Davet eden kişinin davet mektubu", "Davet edenin kimlik veya oturum izni fotokopisi", "Ülke istiyorsa resmî masraf taahhüdü (ör. Almanya'da Verpflichtungserklärung)"] },
+      { "id": "business", "label": "İş", "docs": ["Karşı firmadan davet mektubu", "Kendi şirketinden görevlendirme yazısı", "Toplantı, fuar veya eğitim programı"] }
+    ],
+    "note": "Her konsolosluk ek belge isteyebilir. Başvurmadan önce ilgili aracı kurumun güncel listesini kontrol et.",
+    "print": "Yazdır / PDF olarak kaydet"
+  }
+}

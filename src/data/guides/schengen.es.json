@@ -1,0 +1,46 @@
+{
+  "title": "Lista de documentos del visado Schengen 2026: tu lista personal",
+  "short": "Documentos del visado Schengen",
+  "metaDesc": "Documentos para el visado Schengen: listas para empleados, empresarios, estudiantes, jubilados y menores. Tasa de 90 €, seguro de 30.000 €, plazos.",
+  "answer": "Para un visado Schengen necesitas unos documentos comunes (formulario, foto, pasaporte, seguro de viaje con cobertura de 30.000 €, extractos bancarios) y otros que dependen de tu trabajo y del motivo del viaje. La tasa es de 90 € para adultos y 45 € para niños de 6 a 12 años; solicítalo con un máximo de 6 meses y un mínimo de 15 días de antelación.",
+  "sections": [
+    { "h": "¿En qué país debo presentar la solicitud?", "p": ["Presenta la solicitud en el consulado (o en su centro oficial de visados) del país donde vayas a pasar más tiempo. Si las estancias son iguales, hazlo en el país por el que entres primero."] },
+    { "h": "Tasa, plazo de tramitación y calendario", "list": ["Tasa del visado: 90 € para adultos, 45 € para niños de 6 a 12 años, gratis para menores de 6. No se devuelve si te lo deniegan.", "Los centros de visados (VFS Global, TLScontact, BLS y otros) cobran una tarifa de servicio adicional.", "La decisión suele tardar 15 días y puede ampliarse hasta 45 días.", "Solicítalo con un máximo de 6 meses y un mínimo de 15 días de antelación al viaje. Pide cita pronto para el verano y las vacaciones."] },
+    { "h": "Visados de entrada múltiple de mayor duración", "p": ["Muchas nacionalidades pueden obtener visados de entrada múltiple de mayor duración (1, 3 y luego 5 años) tras haber usado correctamente visados Schengen anteriores; para los ciudadanos turcos, esta «cascada» se adoptó el 15 de julio de 2025. Adjunta siempre copias de tus visados anteriores."] }
+  ],
+  "faq": [
+    { "q": "¿Cuánto cuesta un visado Schengen?", "a": "90 € para adultos, 45 € para niños de 6 a 12 años y gratis para menores de 6. La tarifa de servicio del centro de visados es aparte." },
+    { "q": "¿Qué seguro de viaje necesito?", "a": "Una cobertura médica de al menos 30.000 €, válida en todos los países Schengen durante todo el viaje." },
+    { "q": "¿Cuánto tarda un visado Schengen?", "a": "Normalmente 15 días; puede tardar hasta 45 días si se necesitan comprobaciones adicionales." }
+  ],
+  "checklist": {
+    "title": "Tu lista personal de documentos",
+    "statusLabel": "Tu situación",
+    "purposeLabel": "Motivo de tu viaje",
+    "commonTitle": "Para todos",
+    "common": [
+      "Formulario de solicitud de visado rellenado y firmado",
+      "2 fotos biométricas (35×45 mm, fondo blanco, hechas en los últimos 6 meses)",
+      "Pasaporte expedido en los últimos 10 años, válido al menos 3 meses después de tu salida, con al menos 2 páginas en blanco; copias de visados anteriores",
+      "Copia de tu documento nacional de identidad y, si se exigen, documentos de estado civil",
+      "Seguro médico de viaje: cobertura mínima de 30.000 €, válido en todos los países Schengen durante todo el viaje",
+      "Extractos bancarios de los últimos 3 meses, sellados o verificables",
+      "Reserva del vuelo de vuelta"
+    ],
+    "statuses": [
+      { "id": "employee", "label": "Empleado/a", "docs": ["Carta de la empresa con tu puesto, salario y fechas de vacaciones aprobadas, firmada y sellada", "Nóminas de los últimos 3 meses", "Justificante de afiliación a la seguridad social / vida laboral"] },
+      { "id": "owner", "label": "Empresario/a / autónomo/a", "docs": ["Certificado de registro fiscal", "Certificado reciente de actividad empresarial (últimos 3 meses)", "Documentos de constitución de la empresa y firmas autorizadas", "Extractos bancarios de la empresa (si los hay)"] },
+      { "id": "student", "label": "Estudiante", "docs": ["Certificado de matrícula", "Carta de patrocinio de la persona que paga el viaje", "Justificante de ingresos y extractos bancarios del patrocinador", "Autorización notarial de los padres si eres menor de 18 años"] },
+      { "id": "retired", "label": "Jubilado/a", "docs": ["Certificado de pensión", "Extractos de la pensión de los últimos 3 meses"] },
+      { "id": "unemployed", "label": "Sin empleo / ama o amo de casa", "docs": ["Carta de patrocinio de la persona que paga (p. ej., tu cónyuge)", "Documentos de empleo e ingresos del patrocinador", "Prueba de vuestra relación (p. ej., certificado de matrimonio o libro de familia)"] },
+      { "id": "minor", "label": "Menor de 18 años", "docs": ["Certificado de nacimiento / libro de familia", "Autorización notarial del progenitor que no viaja", "Copias de los pasaportes o documentos de identidad de ambos progenitores", "Certificado de matrícula escolar"] }
+    ],
+    "purposes": [
+      { "id": "tourism", "label": "Turismo", "docs": ["Reserva de hotel para toda la estancia", "Itinerario breve día a día"] },
+      { "id": "family", "label": "Visita a familiares o amigos", "docs": ["Carta de invitación de tu anfitrión", "Copia del documento de identidad o permiso de residencia de tu anfitrión", "Garantía formal de gastos si el país la exige (p. ej., la Verpflichtungserklärung de Alemania)"] },
+      { "id": "business", "label": "Negocios", "docs": ["Carta de invitación de la empresa a la que visitas", "Carta de tu propia empresa que te asigna el viaje", "Programa de reuniones, feria o formación"] }
+    ],
+    "note": "Cada consulado puede pedir documentos adicionales. Consulta la lista actual del centro oficial de visados antes de presentar tu solicitud.",
+    "print": "Imprimir / guardar como PDF"
+  }
+}
