@@ -189,7 +189,7 @@ html:not(.dark) .text-\[\#B88028\] {
 html,
 body {
   min-height: 100%;
-  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback', Arial, sans-serif !important;
 }
 
 html {
@@ -209,7 +209,7 @@ html.dark {
   *,
   *::before,
   *::after {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback', Arial, sans-serif;
   }
 
   code,
@@ -219,7 +219,7 @@ html.dark {
   }
 
   body {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--text-primary);
@@ -248,7 +248,7 @@ html.dark {
   .font-heading,
   .category-header,
   .bento-title {
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback', Arial, sans-serif;
     letter-spacing: -0.02em;
     font-weight: 700;
   }

@@ -372,10 +372,10 @@ html.dark, .dark {
 .rd-gulls { position: absolute; inset: 0; pointer-events: none; z-index: -1; }
 .rd-gulls span { position: absolute; left: 0; will-change: transform; }
 .rd-gulls span svg { display: block; animation: rd-flapw 0.9s ease-in-out infinite; transform-origin: 50% 70%; }
-.rd-gulls .g1 { top: 40%; animation: rd-gullx 48s linear infinite; animation-delay: -8s; }
-.rd-gulls .g2 { top: 44%; animation: rd-gullx 52s linear infinite; animation-delay: -10s; }
+.rd-gulls .g1 { top: 8%; animation: rd-gullx 48s linear infinite; animation-delay: -8s; }
+.rd-gulls .g2 { top: 10.5%; animation: rd-gullx 52s linear infinite; animation-delay: -10s; }
 .rd-gulls .g2 svg { animation-duration: 0.75s; animation-delay: -0.3s; }
-.rd-gulls .g3 { top: 33%; animation: rd-gullx2 62s linear infinite; animation-delay: -30s; }
+.rd-gulls .g3 { top: 6%; animation: rd-gullx2 62s linear infinite; animation-delay: -30s; }
 .rd-gulls .g3 svg { animation-duration: 1.1s; }
 @keyframes rd-gullx { 0% { transform: translate(-60px, 0); } 50% { transform: translate(55vw, -18px); } 100% { transform: translate(110vw, 6px); } }
 @keyframes rd-gullx2 { 0% { transform: translate(110vw, 0); } 50% { transform: translate(50vw, 14px); } 100% { transform: translate(-60px, -8px); } }

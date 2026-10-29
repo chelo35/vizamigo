@@ -133,7 +133,7 @@ async function main() {
     const altTags = alts.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}" data-dynamic-hreflang="true" />`).join('\n    ');
     html = html.replace(/(<link rel="canonical" href="[^"]*" \/>)/, `$1\n    ${altTags}`);
     if (body) {
-      html = html.replace(/<span class="vzs-eye" id="vzs-eye">[\s\S]*?<div class="vzs-search"><\/div>/, body);
+      html = html.replace(/<span class="vzs-eye" id="vzs-eye">[\s\S]*?<div class="vzs-search"><\/div>\s*<div class="vzs-chips"><\/div>/, body);
       // dil başlığını değiştiren küçük betik gerekmez
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
     }
