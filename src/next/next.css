@@ -330,10 +330,14 @@ html.dark, .dark {
 @media (min-width: 1024px) { [data-mobile-only] { display: none !important; } }
 
 /* ---------- Asistan düğmesi ---------- */
-.vz-fab { position: fixed; z-index: 44; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(96px + env(safe-area-inset-bottom, 0px)); display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 18px 0 14px; border: 0; border-radius: 999px; font: inherit; font-size: 14.5px; font-weight: 700; color: var(--vz-on-acc); background: linear-gradient(135deg, var(--vz-acc-a), var(--vz-acc-b)); box-shadow: 0 14px 30px -10px color-mix(in srgb, var(--vz-acc-b) 75%, transparent); cursor: pointer; }
+.vz-fab-w { position: fixed; z-index: 44; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(96px + env(safe-area-inset-bottom, 0px)); transition: transform 0.3s ease, opacity 0.3s ease; }
+.vz-fab-w.away { transform: translateY(140%); opacity: 0; pointer-events: none; }
+.vz-fab { position: relative; display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 18px 0 14px; border: 0; border-radius: 999px; font: inherit; font-size: 14.5px; font-weight: 700; color: var(--vz-on-acc); background: linear-gradient(135deg, var(--vz-acc-a), var(--vz-acc-b)); box-shadow: 0 14px 30px -10px color-mix(in srgb, var(--vz-acc-b) 75%, transparent); cursor: pointer; }
 .vz-fab:hover { transform: translateY(-2px); }
-@media (max-width: 639px) { .vz-fab { min-height: 48px; width: 48px; padding: 0; justify-content: center; } .vz-fab span { display: none; } }
-@media (min-width: 1024px) { .vz-fab { bottom: calc(24px + env(safe-area-inset-bottom, 0px)); } }
+@media (max-width: 639px) { .vz-fab { min-height: 46px; padding: 0 14px 0 11px; font-size: 13.5px; gap: 6px; } .vz-fab-long { display: none; } }
+@media (min-width: 640px) { .vz-fab-short { display: none; } }
+.vz-fab-x { position: absolute; top: -7px; left: -7px; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); display: grid; place-items: center; padding: 0; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+@media (min-width: 1024px) { .vz-fab-w { bottom: calc(24px + env(safe-area-inset-bottom, 0px)); } }
 
 /* ---------- Rota haritası ve zaman çizelgesi ---------- */
 .vz-mapbox { border-radius: var(--vz-r-lg); overflow: hidden; background: linear-gradient(180deg, var(--rd-sky-b), var(--rd-surface)); border: 1px solid var(--rd-line); }
@@ -480,8 +484,6 @@ html.dark .vz-sheet-bg { background: rgba(8, 8, 10, 0.6); }
 .rd-search { background: var(--rd-surface); color: var(--rd-muted); }
 .rd-search input { color: var(--rd-fg); }
 /* "Sor" düğmesi: aşağı kaydırırken gizlenir */
-.vz-fab { transition: transform 0.3s ease, opacity 0.3s ease; }
-.vz-fab.away { transform: translateY(140%); opacity: 0; pointer-events: none; }
 
 /* ---------- Akıllı arama ---------- */
 .vz-ss { position: relative; width: 100%; }

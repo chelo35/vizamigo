@@ -252,6 +252,7 @@ function AppContent() {
         onHome={() => handleSelectTab('explore')}
         onOpenCountry={openCountryFromAnywhere}
         onOpenTool={openTool}
+        onOpenAssistant={() => setIsAssistantOpen(true)}
       />
 
       <main className="vz-main">

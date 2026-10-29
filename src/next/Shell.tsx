@@ -34,6 +34,7 @@ interface TopProps {
   onHome: () => void;
   onOpenCountry: (code: string) => void;
   onOpenTool: (tab: TabKey, tile: string) => void;
+  onOpenAssistant?: () => void;
 }
 
 export const TopBar: React.FC<TopProps> = (p) => {
@@ -134,6 +135,11 @@ export const TopBar: React.FC<TopProps> = (p) => {
               <button type="button" className="vz-row link" onClick={p.onToggleTheme}>
                 <span className="vz-ic sm"><Icon name={p.isDark ? 'sun' : 'moon'} size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{p.isDark ? l('Açık temaya geç', 'Switch to light', 'Helles Design', 'Tema claro', 'Светлая тема') : l('Koyu temaya geç', 'Switch to dark', 'Dunkles Design', 'Tema oscuro', 'Тёмная тема')}</span></span>
+              </button>
+              <button type="button" className="vz-row link" onClick={() => { setDrawer(false); reopenAssistantFab(); p.onOpenAssistant?.(); }}>
+                <span className="vz-ic sm"><Icon name="headset" size={18} /></span>
+                <span className="vz-row-b"><span className="vz-row-t">{l('Seyahat asistanı', 'Travel assistant', 'Reiseassistent', 'Asistente de viaje', 'Помощник')}</span><span className="vz-row-s">{l('Yazarak ya da sesli sor', 'Type or speak', 'Tippen oder sprechen', 'Escribe o habla', 'Текстом или голосом')}</span></span>
+                <Icon name="next" size={18} duo={false} className="vz-row-go" />
               </button>
             </div>
             {isAuthenticated ? (
@@ -239,25 +245,62 @@ export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (p
   );
 };
 
+const FAB_KEY = 'vz_fab_closed';
+const fabToday = () => new Date().toISOString().slice(0, 10);
+/** Asistan düğmesini kapatıldıysa yeniden göster (menüden) */
+export const reopenAssistantFab = () => {
+  try {
+    localStorage.removeItem(FAB_KEY);
+  } catch {}
+  window.dispatchEvent(new Event('vz-fab-reopen'));
+};
+
 export const AssistantFab: React.FC<{ onClick: () => void; hidden?: boolean }> = ({ onClick, hidden }) => {
   const { l } = useI18n();
   const [away, setAway] = useState(false);
+  const [atEnd, setAtEnd] = useState(false);
+  const [closed, setClosed] = useState(() => {
+    try {
+      return localStorage.getItem(FAB_KEY) === fabToday();
+    } catch {
+      return false;
+    }
+  });
   React.useEffect(() => {
     let last = window.scrollY;
     const on = () => {
       const y = window.scrollY;
+      // sayfanın sonunda (alt bilgi, dil düğmeleri) gizlen: hiçbir yazının üstüne binmesin
+      setAtEnd(window.innerHeight + y >= document.documentElement.scrollHeight - 160);
       if (Math.abs(y - last) < 8) return;
       setAway(y > last && y > 200);
       last = y;
     };
+    const re = () => setClosed(false);
     window.addEventListener('scroll', on, { passive: true });
-    return () => window.removeEventListener('scroll', on);
+    window.addEventListener('vz-fab-reopen', re);
+    return () => {
+      window.removeEventListener('scroll', on);
+      window.removeEventListener('vz-fab-reopen', re);
+    };
   }, []);
-  if (hidden) return null;
+  if (hidden || closed) return null;
+  const close = () => {
+    try {
+      localStorage.setItem(FAB_KEY, fabToday());
+    } catch {}
+    setClosed(true);
+  };
   return (
-    <button type="button" className={`vz-fab${away ? ' away' : ''}`} onClick={onClick} aria-label={l('Vizamigo asistanına sor', 'Ask the Vizamigo assistant', 'Vizamigo-Assistent fragen', 'Preguntar al asistente', 'Спросить ассистента')}>
-      <Icon name="spark" size={24} />
-      <span>{l('Sor', 'Ask', 'Fragen', 'Preguntar', 'Спросить')}</span>
-    </button>
+    <div className={`vz-fab-w${away || atEnd ? ' away' : ''}`}>
+      <button type="button" className="vz-fab" onClick={onClick} aria-label={l('Seyahat asistanına sor (yazarak ya da sesli)', 'Ask the travel assistant (type or speak)', 'Reiseassistent fragen (tippen oder sprechen)', 'Pregunta al asistente de viaje (escribe o habla)', 'Спросить помощника (текстом или голосом)')}>
+        <Icon name="headset" size={22} />
+        <span className="vz-fab-long">{l('Seyahat asistanı', 'Travel assistant', 'Reiseassistent', 'Asistente de viaje', 'Помощник')}</span>
+        <span className="vz-fab-short">{l('Asistan', 'Assistant', 'Assistent', 'Asistente', 'Помощник')}</span>
+      </button>
+      <button type="button" className="vz-fab-x" onClick={close} aria-label={l('Asistan düğmesini kapat', 'Hide assistant button', 'Assistent-Taste ausblenden', 'Ocultar botón del asistente', 'Скрыть кнопку помощника')}>
+        <Icon name="close" size={12} duo={false} />
+      </button>
+    </div>
   );
 };
