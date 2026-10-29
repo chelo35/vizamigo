@@ -400,3 +400,11 @@ html.dark .rd-gulls path { stroke: #F4E6DC; opacity: 0.85; }
   .rd-gulls span, .rd-gulls svg, .rd-dolphin { animation: none !important; }
   .rd-gulls .g1 { transform: translateX(60vw); } .rd-gulls .g2 { transform: translateX(66vw); } .rd-gulls .g3 { display: none; }
 }
+
+/* mobil: üç kısayol yan yana, hedef seçimi denizde ortalı */
+@media (max-width: 640px) {
+  .rd-chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .rd-chips button { font-size: 12.5px; line-height: 1.25; padding: 7px 6px; border-radius: 16px; min-height: 46px; text-align: center; white-space: normal; }
+  .rd-strip-head { justify-content: center; }
+  .rd-strip-head .rd-select { min-width: 62%; text-align: center; text-align-last: center; }
+}
