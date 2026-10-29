@@ -12,6 +12,7 @@ import { fileURLToPath } from 'url';
 import { GEO_DATA } from '../src/data/geoData';
 import { D } from '../src/data/passportData';
 import { COUNTRY_VISUALS_MAP } from '../src/data/countryVisualsData';
+import { GUIDE_IDS, GUIDE_META } from '../src/data/guides';
 import { SUPPORTED_LANGUAGES } from '../src/i18n';
 import { TabKey } from '../src/components/Navigation';
 import {
@@ -125,6 +126,17 @@ export function generateSitemapXml(): string {
         changefreq: 'weekly',
         priority: '0.9'
       });
+    });
+  });
+
+  // 3b. Güncel konu rehberleri (ETIAS, ETA, ESTA, Yunan adaları)
+  GUIDE_IDS.forEach((id) => {
+    const alts = [
+      ...langCodes.map((lang) => ({ hreflang: lang, href: `${BASE_URL}/${lang}/info/${id}` })),
+      { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }
+    ];
+    langCodes.forEach((lang) => {
+      entries.push({ loc: `${BASE_URL}/${lang}/info/${id}`, alternates: alts as never, lastmod: GUIDE_META[id].checked, changefreq: 'weekly', priority: '0.8' });
     });
   });
 

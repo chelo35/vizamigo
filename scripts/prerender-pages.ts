@@ -56,6 +56,7 @@ async function main() {
   };
   const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
   const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
+  const { GUIDE_IDS, GUIDE_META, getGuide } = await import('../src/data/guides');
 
   const { GEO_DATA } = await import('../src/data/geoData');
   const { getCountryName, countryToRegion, getRegionName } = await import('../src/data/passportData');
@@ -213,6 +214,35 @@ async function main() {
         head: PRE[tab] || '',
         body: eyebrow(lang, ['Vizamigo']) + h1(main, rest) + lead(seo.desc),
         nav: navBlock(lang, `<p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
+      }));
+      n++;
+    }
+
+    // güncel konu rehberleri (ETIAS, ETA, ESTA, Yunan adaları): tam metin önceden yazılı
+    for (const id of GUIDE_IDS) {
+      const g = getGuide(id, lang);
+      const meta = GUIDE_META[id];
+      const url = `${BASE_URL}/${lang}/info/${id}`;
+      const ld = {
+        '@context': 'https://schema.org',
+        '@graph': [
+          { '@type': 'Article', headline: g.title, description: g.metaDesc, inLanguage: lang, datePublished: '2026-10-29', dateModified: meta.checked, mainEntityOfPage: url, author: { '@type': 'Organization', name: 'Vizamigo', url: BASE_URL }, publisher: { '@type': 'Organization', name: 'Vizamigo', url: BASE_URL } },
+          { '@type': 'FAQPage', mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+        ]
+      };
+      const secs = g.sections.map((x) => `<h2>${esc(x.h)}</h2>${(x.p || []).map((t) => `<p>${esc(t)}</p>`).join('')}${x.list ? `<ul>${x.list.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}`).join('');
+      const faq = `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`;
+      const src = `<p>${meta.sources.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(x.label)}</a>`).join(' · ')} · ${esc(meta.checked)}</p>`;
+      const others = GUIDE_IDS.filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
+      write(path.join(lang, 'info', id, 'index.html'), build({
+        lang,
+        canonical: url,
+        alts: [...LANGS.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }],
+        title: `${g.title} | Vizamigo`,
+        desc: g.metaDesc,
+        head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,
+        body: eyebrow(lang, ['Vizamigo']) + h1(g.title) + lead(g.answer),
+        nav: navBlock(lang, `${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
       n++;
     }

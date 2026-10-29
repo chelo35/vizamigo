@@ -1,0 +1,68 @@
+{
+  "etias": {
+    "title": "What is ETIAS? Europe's new travel authorisation (2026)",
+    "short": "ETIAS",
+    "metaDesc": "ETIAS starts in the last quarter of 2026: who must apply, the €20 fee, 3-year validity, transition period and the new EES border checks. Up-to-date, sourced guide.",
+    "answer": "ETIAS is an online travel authorisation for visa-exempt travellers to Europe. The European Commission says it will start in the last quarter of 2026. It costs €20 and is valid for 3 years. Travellers who already need a Schengen visa keep applying for a visa instead.",
+    "sections": [
+      { "h": "Who needs ETIAS?", "p": ["Citizens of countries that can enter the Schengen area without a visa, such as the US, Canada, the UK, Australia, Japan and the Gulf states. ETIAS will cover the Schengen countries and Cyprus.", "If your nationality needs a Schengen visa, ETIAS does not apply to you; you keep applying for a visa."] },
+      { "h": "Fee, validity and transition", "list": ["Fee: €20 (free under 18 and over 70, but they must still apply).", "Valid for 3 years or until your passport expires, whichever comes first.", "The 90 days in any 180 days rule stays the same.", "First 6 months are a transition period: nobody is refused entry only for lacking ETIAS; a further 6-month grace period follows."] },
+      { "h": "How to apply", "p": ["Apply only on the official ETIAS website or app; it takes a few minutes. You need your passport, personal details and a few security questions. Most applications are expected to be approved within minutes. Third-party sites charge an extra service fee for the same thing."] },
+      { "h": "EES: fingerprints and photo", "p": ["Separately, the EU Entry/Exit System (EES) has been fully running at all Schengen external borders since 10 April 2026. Non-EU travellers give fingerprints and a facial image on their first entry, and passports are no longer stamped."] }
+    ],
+    "faq": [
+      { "q": "When does ETIAS start?", "a": "The European Commission has announced the last quarter of 2026. The exact date will be announced several months in advance." },
+      { "q": "Is ETIAS a visa?", "a": "No. It is a pre-travel security check for people who can already travel visa-free; no consulate visit or appointment is needed." },
+      { "q": "Do children need ETIAS?", "a": "Yes, every traveller needs one, but under-18s pay no fee." }
+    ]
+  },
+  "uk_eta": {
+    "title": "UK ETA: price, validity and who needs it (2026)",
+    "short": "UK ETA",
+    "metaDesc": "The UK ETA has been mandatory since 25 February 2026. It costs £20, lasts 2 years and covers stays of up to 6 months. Who needs it, who needs a visa instead.",
+    "answer": "The UK ETA is a mandatory online permission for visitors from visa-exempt countries. Since 25 February 2026 travellers without one can be refused boarding. It costs £20, is valid for 2 years and allows stays of up to 6 months per visit.",
+    "sections": [
+      { "h": "Who needs an ETA?", "p": ["Nationals of countries that can visit the UK without a visa, including all EU countries, the US, Canada, Australia, Japan and the Gulf states. British and Irish citizens, and people with a valid UK visa or residence status, do not need one.", "If your nationality needs a UK visa (for example Turkey, India or China), you apply for a Standard Visitor visa instead."] },
+      { "h": "Price and validity", "list": ["£20 per person (since 8 April 2026; it was £16 before).", "Valid for 2 years or until your passport expires.", "Stay up to 6 months per visit, with multiple visits allowed.", "A new passport means a new ETA."] },
+      { "h": "How to apply", "p": ["Apply in the official UK ETA app or on GOV.UK. You need your passport, a photo of your face and a few answers. A decision usually comes within 3 working days, so do not leave it to the last minute."] }
+    ],
+    "faq": [
+      { "q": "Do EU citizens need a UK ETA?", "a": "Yes. Since 2 April 2025 European visitors need an ETA, and it has been strictly enforced since 25 February 2026." },
+      { "q": "How long does an ETA take?", "a": "Many are approved quickly, but the official advice is to allow 3 working days." },
+      { "q": "Can I work with an ETA?", "a": "No. It covers tourism, family visits and some short business activities, not employment." }
+    ]
+  },
+  "esta": {
+    "title": "What is ESTA? US visa-waiver travel authorisation and fee (2026)",
+    "short": "US ESTA",
+    "metaDesc": "ESTA is the online authorisation for the 42 Visa Waiver Program countries: about $40, valid 2 years, stays up to 90 days. How to apply and who needs a visa instead.",
+    "answer": "ESTA is the online travel authorisation for citizens of the 42 countries in the US Visa Waiver Program. It costs about $40, is valid for 2 years and allows stays of up to 90 days per entry. Nationals of other countries need a B1/B2 visa.",
+    "sections": [
+      { "h": "Who can use ESTA?", "p": ["Citizens of the 42 Visa Waiver Program countries, including most EU countries, the UK, Japan, South Korea and Australia. You need an electronic (chip) passport.", "If your country is not in the programme (for example Turkey, India or Brazil), you need a B1/B2 visa with a consulate interview."] },
+      { "h": "Fee and validity", "list": ["Fee: about $40 (raised from $21 on 30 September 2025).", "Valid for 2 years or until your passport expires.", "Up to 90 days per entry; not for work or study."] },
+      { "h": "How to apply", "p": ["Apply only on the official ESTA website or the ESTA Mobile app. Official advice: apply at least 72 hours before your flight. Third-party sites charge more for the same application."] }
+    ],
+    "faq": [
+      { "q": "How early should I apply for ESTA?", "a": "At least 72 hours before departure; most applications are decided quickly." },
+      { "q": "What if my ESTA is denied?", "a": "You need to apply for a regular US visitor visa (B1/B2) at a consulate." },
+      { "q": "Does ESTA guarantee entry?", "a": "No. The final decision is made by the border officer on arrival." }
+    ]
+  },
+  "greek_islands_visa": {
+    "title": "Greek islands visa on arrival for Turkish citizens (2026)",
+    "short": "Greek islands express visa",
+    "metaDesc": "Turkish citizens can visit 12 Greek islands with an express visa: up to 7 days, €60 state fee. Islands, documents, ports and rules explained.",
+    "answer": "Turkish citizens with ordinary passports can visit 12 Aegean Greek islands for up to 7 days with an express visa arranged through an agency or ferry company. The state fee is €60; with service charges the total is usually €75–85. The visa is valid only on the island you arrive at.",
+    "sections": [
+      { "h": "Which islands?", "p": ["Rhodes, Kos, Samos, Lesbos, Chios, Leros, Symi, Lemnos, Kalymnos, Kastellorizo, Patmos and Samothrace. Santorini and Mykonos are not included."] },
+      { "h": "Rules", "list": ["Up to 7 days, single entry.", "Valid only on the island you applied for; you cannot travel to other islands or mainland Greece.", "The programme is extended from season to season; confirm the current status with the agency or ferry company before booking.", "Holders of Turkish green and grey (special) passports already travel visa-free."] },
+      { "h": "Documents", "list": ["Passport valid for at least 6 more months (a copy is enough)", "Biometric photo", "Confirmed hotel booking", "Travel health insurance with at least €30,000 cover", "Bank statements for the last 3 months", "Application form and passenger declaration"] },
+      { "h": "How to apply and ports", "p": ["Apply through an authorised agency or ferry company and submit documents at least 7 working days before travel. Main routes: Marmaris/Fethiye–Rhodes, Bodrum–Kos, Kuşadası–Samos, Ayvalık–Lesbos, Çeşme–Chios, Kaş–Kastellorizo."] }
+    ],
+    "faq": [
+      { "q": "How much does the express visa cost?", "a": "The state fee is €60; with agency and ferry service charges the total is usually €75–85. Children under 12 pay no state fee." },
+      { "q": "Can I visit Santorini with it?", "a": "No. Santorini and Mykonos are not in the programme; they need a Schengen visa." },
+      { "q": "Does it replace a Schengen visa?", "a": "No. It is valid for up to 7 days on the island you applied for only." }
+    ]
+  }
+}

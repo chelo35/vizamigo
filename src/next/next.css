@@ -856,3 +856,13 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
 
 /* gerçek uçuş fiyatı rozeti */
 .vz-fprice{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;vertical-align:middle;background:var(--rd-sea-tint);color:var(--rd-sea-ink)}
+
+/* güncel konu rehberleri */
+.vz-guide { display: grid; gap: 22px; }
+.vz-guide h2 { font-size: 19px; margin: 0 0 8px; }
+.vz-guide p, .vz-guide li { font-size: 15px; line-height: 1.65; }
+.vz-guide ul { padding-left: 20px; display: grid; gap: 4px; list-style: disc; }
+.vz-guide a { color: var(--rd-sea-ink); }
+.vz-faq-i { border-top: 1px solid var(--rd-line); padding: 10px 0; }
+.vz-faq-i summary { cursor: pointer; font-weight: 600; }
+.vz-faq-i p { margin-top: 6px; }

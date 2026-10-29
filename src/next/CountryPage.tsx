@@ -21,6 +21,7 @@ import { getCountryGeography, GLOBAL_CURRENCIES } from '../data/countryGeography
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { getCountryConciergePlan } from '../data/travelConciergeEngine';
 import { FlightFrom } from './FlightPrice';
+import { GUIDE_META, getGuide, guidesForCountry } from '../data/guides';
 import { ALL_WORLD_HUBS, flagToIso } from '../data/worldHubs';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../utils/liveData';
@@ -633,6 +634,18 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             {passport !== code && detail?.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>}
           </div>
         </section>
+
+        {guidesForCountry(code).filter((g) => g !== 'greek_islands_visa' || passport === 'TR').length > 0 && (
+          <List>
+            {guidesForCountry(code).filter((g) => g !== 'greek_islands_visa' || passport === 'TR').map((g) => (
+              <a key={g} className="vz-row link" href={`/${language}/info/${g}`}>
+                <span className="vz-ic sm"><Icon name={GUIDE_META[g].icon as never} size={18} /></span>
+                <span className="vz-row-b"><span className="vz-row-t">{getGuide(g, language).title}</span><span className="vz-row-s">{l('Güncel rehber', 'Up-to-date guide', 'Aktueller Ratgeber', 'Guía actualizada', 'Актуальный гид')}</span></span>
+                <Icon name="next" size={18} duo={false} className="vz-row-go" />
+              </a>
+            ))}
+          </List>
+        )}
 
         <div className="vz-actions">
           <Btn icon={added ? 'check' : 'plus'} onClick={addToRoute}>{added ? l('Rotana eklendi', 'Added to route', 'Zur Route hinzugefügt', 'Añadido', 'Добавлено') : l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут')}</Btn>
