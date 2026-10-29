@@ -149,6 +149,7 @@ async function main() {
     fs.writeFileSync(out, html);
   };
 
+  const FAQ_TITLE: Record<string, string> = { tr: 'Sık sorulan sorular', en: 'Frequently asked questions', de: 'Häufige Fragen', es: 'Preguntas frecuentes', ru: 'Частые вопросы' };
   let n = 0;
   for (const lang of LANGS) {
     // dil ana sayfası: başlık, açıklama ve bütün ülkelere bağlantı (Google sayfaları bulsun)
@@ -170,13 +171,22 @@ async function main() {
       const region = getRegionName(reg, lang);
       const cap = (GEO_DATA as Record<string, { capital?: string }>)[code]?.capital;
       const near = allCodes.filter((c) => c !== code && reg && countryToRegion[c] === reg).slice(0, 12);
+      const ld = generateCountryJsonLd({ countryCode: code, language: lang as never, currentPassport: 'TR' });
+      // görünür SSS: yapılandırılmış verideki soru-cevaplar sayfada da yazılı olsun (Google kuralı;
+      // JavaScript çalıştırmayan yapay zekâ tarayıcıları da bu metni okur)
+      const faqNode = ((ld as { '@graph'?: Array<Record<string, unknown>> })['@graph'] || [ld as Record<string, unknown>]).find((x) => x['@type'] === 'FAQPage') as
+        | { mainEntity?: Array<{ name: string; acceptedAnswer: { text: string } }> }
+        | undefined;
+      const faqHtml = faqNode?.mainEntity?.length
+        ? `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${faqNode.mainEntity.map((q) => `<h3>${esc(q.name)}</h3><p>${esc(q.acceptedAnswer.text)}</p>`).join('')}</section>`
+        : '';
       write(path.join(buildLocalizedPath(lang as never, 'explore', code), 'index.html'), build({
         lang,
         canonical: buildAbsoluteLocalizedUrl(lang as never, 'explore', code),
         alts: getHreflangAlternatesForRoute('explore', code),
         title: meta.title,
         desc: meta.description,
-        head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="TR">${JSON.stringify(generateCountryJsonLd({ countryCode: code, language: lang as never, currentPassport: 'TR' })).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
+        head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="TR">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
         // uygulamanın ülke başlığıyla aynı ölçüde fotoğraflı başlık: ilk boyama erken, kayma yok
         hero: (() => {
           const v = getCountryVisual(code, lang);
@@ -184,7 +194,7 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(cap)}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${faqHtml}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     }

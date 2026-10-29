@@ -280,7 +280,7 @@ export function generateCountryJsonLd({
               : `What plug type and electrical voltage are used in ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `${countryName} elektrik standartları: ${geography.plugTypes}. Seyahat adaptörü gereksinimlerinizi seyahat öncesinde kontrol ediniz.`
+              text: (language === 'tr' ? `${countryName} elektrik standartları: ${geography.plugTypes}. Seyahat öncesi adaptör ihtiyacını kontrol et.` : language === 'de' ? `Stromstandard in ${countryName}: ${geography.plugTypes}. Prüfe vor der Reise, ob du einen Reiseadapter brauchst.` : language === 'es' ? `Estándar eléctrico en ${countryName}: ${geography.plugTypes}. Comprueba antes de viajar si necesitas un adaptador.` : language === 'ru' ? `Электросеть в стране ${countryName}: ${geography.plugTypes}. Перед поездкой проверьте, нужен ли переходник.` : `Electrical standards in ${countryName}: ${geography.plugTypes}. Check whether you need a travel adapter before you go.`)
             }
           },
           {
@@ -296,7 +296,7 @@ export function generateCountryJsonLd({
               : `How long must a passport be valid to enter ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `${countryName} giriş kuralları uyarınca seyahat başlangıç tarihinden itibaren en az 6 ay geçerli pasaport ve en az 2 boş vize sayfası önerilir.`
+              text: (language === 'tr' ? `${countryName} için genel öneri: pasaportun seyahat tarihinden itibaren en az 6 ay geçerli olması ve en az 2 boş sayfa. Kesin kural için ülkenin resmî giriş sayfasını kontrol et.` : language === 'de' ? `Allgemeine Empfehlung für ${countryName}: Reisepass mindestens 6 Monate ab Reisedatum gültig und mindestens 2 leere Seiten. Die genaue Regel steht auf der offiziellen Einreiseseite.` : language === 'es' ? `Recomendación general para ${countryName}: pasaporte con al menos 6 meses de validez desde la fecha del viaje y al menos 2 páginas en blanco. Consulta la regla exacta en la web oficial de entrada.` : language === 'ru' ? `Общая рекомендация для страны ${countryName}: паспорт действителен не менее 6 месяцев с даты поездки и минимум 2 чистые страницы. Точное правило уточните на официальном сайте.` : `General advice for ${countryName}: a passport valid for at least 6 months from your travel date and at least 2 blank pages. Check the official entry page for the exact rule.`)
             }
           },
           {
@@ -312,7 +312,7 @@ export function generateCountryJsonLd({
               : `What is the internet speed in ${countryName} and recommended travel route?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `${countryName} connectivity: ${insights.internet.mobileSpeedMbps} Mbps mobile, ${insights.internet.broadbandSpeedMbps} Mbps broadband. Route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.`
+              text: (language === 'tr' ? `${countryName} internet hızı: mobil ${insights.internet.mobileSpeedMbps} Mbps, sabit ${insights.internet.broadbandSpeedMbps} Mbps. Önerilen rota (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'de' ? `Internet in ${countryName}: mobil ${insights.internet.mobileSpeedMbps} Mbit/s, Festnetz ${insights.internet.broadbandSpeedMbps} Mbit/s. Empfohlene Route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'es' ? `Internet en ${countryName}: ${insights.internet.mobileSpeedMbps} Mbps móvil, ${insights.internet.broadbandSpeedMbps} Mbps fijo. Ruta recomendada (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'ru' ? `Интернет (${countryName}): мобильный ${insights.internet.mobileSpeedMbps} Мбит/с, домашний ${insights.internet.broadbandSpeedMbps} Мбит/с. Маршрут (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : `Internet in ${countryName}: ${insights.internet.mobileSpeedMbps} Mbps mobile, ${insights.internet.broadbandSpeedMbps} Mbps broadband. Suggested route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.`)
             }
           }
         ]
