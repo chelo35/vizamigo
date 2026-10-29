@@ -11,6 +11,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { GEO_DATA } from '../src/data/geoData';
 import { D } from '../src/data/passportData';
+import { COUNTRY_VISUALS_MAP } from '../src/data/countryVisualsData';
 import { SUPPORTED_LANGUAGES } from '../src/i18n';
 import { TabKey } from '../src/components/Navigation';
 import {
@@ -22,7 +23,19 @@ import {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const TODAY = new Date().toISOString().split('T')[0];
+/**
+ * lastmod gerçek değişiklik tarihini göstermeli; her yayında "bugün" yazmak Google'ın tarihleri
+ * yok saymasına yol açar. İçerik değişince bu tarihleri elle ilerlet.
+ * - SITE_UPDATED: ana sayfa, araçlar, bilgi sayfaları
+ * - DATA_UPDATED: ülke verisi (vize kuralları, çeviriler) en son ne zaman değişti
+ * Ülke sayfasının tarihi = max(DATA_UPDATED, o ülkenin fotoğraf/künye kontrol tarihi).
+ */
+const SITE_UPDATED = '2026-10-29';
+const DATA_UPDATED = '2026-10-28';
+const countryLastmod = (code: string): string => {
+  const v = (COUNTRY_VISUALS_MAP[code] as { verifiedAt?: string } | undefined)?.verifiedAt || '';
+  return /^\d{4}-\d{2}-\d{2}$/.test(v) && v > DATA_UPDATED ? v : DATA_UPDATED;
+};
 
 export interface SitemapUrlEntry {
   loc: string;
@@ -61,7 +74,7 @@ export function generateSitemapXml(): string {
   entries.push({
     loc: `${BASE_URL}/`,
     alternates: homeAlternates,
-    lastmod: TODAY,
+    lastmod: SITE_UPDATED,
     changefreq: 'daily',
     priority: '1.0'
   });
@@ -71,7 +84,7 @@ export function generateSitemapXml(): string {
     entries.push({
       loc,
       alternates: homeAlternates,
-      lastmod: TODAY,
+      lastmod: SITE_UPDATED,
       changefreq: 'daily',
       priority: '1.0'
     });
@@ -93,7 +106,7 @@ export function generateSitemapXml(): string {
       entries.push({
         loc,
         alternates: tabAlternates,
-        lastmod: TODAY,
+        lastmod: SITE_UPDATED,
         changefreq,
         priority
       });
@@ -108,8 +121,8 @@ export function generateSitemapXml(): string {
       entries.push({
         loc,
         alternates: countryAlternates,
-        lastmod: TODAY,
-        changefreq: 'daily',
+        lastmod: countryLastmod(code),
+        changefreq: 'weekly',
         priority: '0.9'
       });
     });
@@ -123,7 +136,7 @@ export function generateSitemapXml(): string {
       { hreflang: 'x-default', href: `${BASE_URL}/en/info/${page}` }
     ];
     langCodes.forEach((lang) => {
-      entries.push({ loc: `${BASE_URL}/${lang}/info/${page}`, alternates: alts as never, lastmod: TODAY, changefreq: 'monthly', priority: '0.3' });
+      entries.push({ loc: `${BASE_URL}/${lang}/info/${page}`, alternates: alts as never, lastmod: SITE_UPDATED, changefreq: 'monthly', priority: '0.3' });
     });
   });
 
