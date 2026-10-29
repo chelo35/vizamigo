@@ -156,8 +156,7 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
   return (
     <section className="rd-strip" aria-label={l('Hedef ülke bilgileri', 'Destination info', 'Zielinfos', 'Información del destino', 'Информация о стране')}>
       <div className="rd-strip-head">
-        <label htmlFor="rd-dest" className="rd-eyebrow">{l('Hedefin', 'Your destination', 'Dein Ziel', 'Tu destino', 'Куда')}</label>
-        <select id="rd-dest" className="rd-select" value={destination} onChange={(e) => onDestinationChange(e.target.value)}>
+        <select id="rd-dest" className="rd-select" aria-label={l('Hedef ülke', 'Destination country', 'Zielland', 'País de destino', 'Страна назначения')} value={destination} onChange={(e) => onDestinationChange(e.target.value)}>
           {destOptions.map((o) => (
             <option key={o.c} value={o.c}>{o.n}</option>
           ))}
