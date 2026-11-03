@@ -136,6 +136,11 @@ export const TopBar: React.FC<TopProps> = (p) => {
                 <span className="vz-ic sm"><Icon name={p.isDark ? 'sun' : 'moon'} size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{p.isDark ? l('Açık temaya geç', 'Switch to light', 'Helles Design', 'Tema claro', 'Светлая тема') : l('Koyu temaya geç', 'Switch to dark', 'Dunkles Design', 'Tema oscuro', 'Тёмная тема')}</span></span>
               </button>
+              <a className="vz-row link" href={`/${language}/info/schengen_documents`}>
+                <span className="vz-ic sm"><Icon name="doc" size={18} /></span>
+                <span className="vz-row-b"><span className="vz-row-t">{l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026')}</span><span className="vz-row-s">{l('Schengen evrakları, ETIAS, ETA, ESTA', 'Schengen documents, ETIAS, ETA, ESTA', 'Schengen, ETIAS, ETA, ESTA', 'Schengen, ETIAS, ETA, ESTA', 'Шенген, ETIAS, ETA, ESTA')}</span></span>
+                <Icon name="next" size={18} duo={false} className="vz-row-go" />
+              </a>
               <button type="button" className="vz-row link" onClick={() => { setDrawer(false); reopenAssistantFab(); p.onOpenAssistant?.(); }}>
                 <span className="vz-ic sm"><Icon name="headset" size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{l('Seyahat asistanı', 'Travel assistant', 'Reiseassistent', 'Asistente de viaje', 'Помощник')}</span><span className="vz-row-s">{l('Yazarak ya da sesli sor', 'Type or speak', 'Tippen oder sprechen', 'Escribe o habla', 'Текстом или голосом')}</span></span>

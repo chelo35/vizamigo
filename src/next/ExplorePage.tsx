@@ -6,6 +6,8 @@ import { PassportCover } from '../components/redesign/PassportCover';
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName } from '../data/passportData';
 import { Btn, OpenRequest, SecHead, Segmented, Tile, TileGrid } from './ui';
+import { GUIDE_LABELS, GUIDE_LINKS } from '../data/guideLinks';
+import { Icon } from './Icon';
 import { SmartSearch } from './SmartSearch';
 import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
@@ -174,6 +176,27 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.')}
           />
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
+        </section>
+
+        <section className="vz-home-sec" aria-labelledby="vz-h-guides">
+          <SecHead
+            id="vz-h-guides"
+            eyebrow={l('Güncel', 'Up to date', 'Aktuell', 'Actualizado', 'Актуально')}
+            title={l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026')}
+            sub={l('Schengen evrakları, ETIAS, ETA, ESTA ve Yunan adaları kapıda vize: kaynaklı ve tarihli.', 'Schengen documents, ETIAS, ETA, ESTA and Greek islands visa: sourced and dated.', 'Schengen-Unterlagen, ETIAS, ETA, ESTA und Griechische Inseln: mit Quellen und Datum.', 'Documentos Schengen, ETIAS, ETA, ESTA e islas griegas: con fuentes y fecha.', 'Шенген, ETIAS, ETA, ESTA и греческие острова: с источниками и датой.')}
+          />
+          <div className="vz-guides">
+            {GUIDE_LINKS.map((g) => {
+              const x = (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id];
+              return (
+                <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}`} href={`/${language}/info/${g.id}`}>
+                  <span className="vz-ic"><Icon name={g.icon as never} size={20} /></span>
+                  <b>{x.t}</b>
+                  <span>{x.d}</span>
+                </a>
+              );
+            })}
+          </div>
         </section>
 
         <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />

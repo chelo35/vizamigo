@@ -631,7 +631,11 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           <div className="vz-stack" style={{ gap: 6 }}>
             <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with a ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
             <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.') : answer}</p>
-            {passport !== code && detail?.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>}
+            {passport !== code && (detail?.d ? (
+              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>
+            ) : (
+              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Veri: Passport Index (Mart 2026) ve resmî kaynak kontrolleri (Kasım 2026). Seyahatten önce resmî kaynaktan teyit et.', 'Data: Passport Index (March 2026) plus official-source checks (November 2026). Confirm with the official source before travel.', 'Daten: Passport Index (März 2026) und Prüfung amtlicher Quellen (November 2026). Vor der Reise offiziell bestätigen.', 'Datos: Passport Index (marzo 2026) y revisión de fuentes oficiales (noviembre 2026). Confírmalo antes de viajar.', 'Данные: Passport Index (март 2026) и проверка официальных источников (ноябрь 2026). Уточните перед поездкой.')}</span>
+            ))}
           </div>
         </section>
 
