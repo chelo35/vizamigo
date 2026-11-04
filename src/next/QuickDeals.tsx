@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { Icon, type IconName } from './Icon';
+import { tpLinks } from '../data/tpPartners';
 
 const QuickDealPanel = lazy(() => import('./QuickDealPanel'));
 
@@ -42,6 +43,10 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
             <span>{it.t}</span>
           </button>
         ))}
+        <a href={tpLinks.safetywing()} target="_blank" rel="noopener noreferrer sponsored" onClick={() => setOpen(null)}>
+          <Icon name="shield" size={18} />
+          <span>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</span>
+        </a>
       </div>
       {open && (
         <div id="vz-qd-panel" className="vz-qd-panel" role="tabpanel">

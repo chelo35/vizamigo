@@ -310,9 +310,11 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               right={<span className="vz-trip-amt">{money(spend)}</span>}
             />
             <Row
-              icon="shield"
+              key="ins"
+              lead={<PartnerLogo id="safetywing" />}
+              href={tpLinks.safetywing()}
               title={<>{l('Seyahat sağlık sigortası', 'Travel health insurance', 'Reisekrankenversicherung', 'Seguro de viaje', 'Медицинская страховка')} {est}</>}
-              sub={l('Yaklaşık fiyat; kapsam ve yaşa göre değişir.', 'Rough price; varies with cover and age.', 'Richtwert; je nach Deckung und Alter.', 'Precio orientativo; varía según cobertura y edad.', 'Ориентир; зависит от покрытия и возраста.')}
+              sub={l('SafetyWing · yaklaşık fiyat; kapsam ve yaşa göre değişir', 'SafetyWing · rough price; varies with cover and age', 'SafetyWing · Richtwert; je nach Deckung und Alter', 'SafetyWing · precio orientativo', 'SafetyWing · ориентир')}
               right={<span className="vz-trip-amt">{money(insurance)}</span>}
             />
             <Row

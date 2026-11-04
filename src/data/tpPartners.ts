@@ -11,6 +11,8 @@
  */
 
 export type TpId =
+  | 'safetywing'
+  | 'tourradar'
   | 'aviasales'
   | 'tripcom'
   | 'kiwi'
@@ -94,6 +96,8 @@ export const TP: Record<TpId, TpBrand> = {
   gigsky: { name: 'GigSky', domain: 'gigsky.com', rate: '20%' },
   drimsim: { name: 'Drimsim', domain: 'drimsim.com', rate: '€8' },
   compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' },
+  safetywing: { name: 'SafetyWing', domain: 'safetywing.com', rate: '10%' },
+  tourradar: { name: 'TourRadar', domain: 'tourradar.com', rate: 'TourRadar' },
   hotelscom: { name: 'Hotels.com', domain: 'hotels.com', rate: '1.35–3.6%' },
   kayak: { name: 'Kayak', domain: 'kayak.com', rate: 'Stay22' },
   bookingcars: { name: 'Booking.com Cars', domain: 'booking.com', rate: 'Stay22' },
@@ -165,6 +169,10 @@ export const s22Retail = (search: string, campaign = 'packing') =>
 const STAY22_HOSTS: [string, Stay22Provider][] = [['booking.com', 'booking'], ['agoda.com', 'agoda'], ['expedia.com', 'expedia'], ['hotels.com', 'hotelscom'], ['vrbo.com', 'vrbo']];
 
 /** Komisyon getirmeyen (kilitli) bir marka bağlantısını, bağlı bir alternatife çevirir. Otel bağlantıları hizmet için olduğu gibi kalır. */
+/** SafetyWing elçi bağlantısı (Nomad Insurance, %10). */
+const SW_REF = '26626704';
+export const SAFETYWING = `https://safetywing.com/nomad-insurance?referenceID=${SW_REF}&utm_source=${SW_REF}&utm_medium=Ambassador`;
+
 export function routeLink(url: string): string {
   let u: URL;
   try {
@@ -175,6 +183,15 @@ export function routeLink(url: string): string {
   const host = u.hostname.replace(/^www\./, '');
   const is = (d: string) => host === d || host.endsWith('.' + d);
   // Otel siteleri → Stay22 üzerinden (komisyonlu)
+  // SafetyWing: her bağlantıya elçi kodu
+  if (is('safetywing.com')) {
+    if (!u.searchParams.get('referenceID')) {
+      u.searchParams.set('referenceID', SW_REF);
+      u.searchParams.set('utm_source', SW_REF);
+      u.searchParams.set('utm_medium', 'Ambassador');
+    }
+    return u.toString();
+  }
   const s22 = STAY22_HOSTS.find(([d]) => is(d));
   if (s22) return stay22(s22[1], { link: url });
   if (!LOCKED_HOSTS.some(is)) return url;
@@ -268,6 +285,7 @@ export const tpLinks = {
   gigsky: () => `https://www.gigsky.com/`,
   drimsim: () => `https://drimsim.com/`,
   compensair: () => `https://www.compensair.com/`,
+  safetywing: () => SAFETYWING,
   /** Tur/bilet araması: kilitliyse Klook */
   tours: (place: string) => (LOCKED.has('getyourguide') ? `https://www.klook.com/search/result/?query=${encodeURIComponent(place)}` : `https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
   localrent: () => `https://localrent.com/`,
