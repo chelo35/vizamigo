@@ -12,6 +12,7 @@
 
 export type TpId =
   | 'safetywing'
+  | 'hellosafe'
   | 'tourradar'
   | 'aviasales'
   | 'tripcom'
@@ -97,6 +98,7 @@ export const TP: Record<TpId, TpBrand> = {
   drimsim: { name: 'Drimsim', domain: 'drimsim.com', rate: '€8' },
   compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' },
   safetywing: { name: 'SafetyWing', domain: 'safetywing.com', rate: '10%' },
+  hellosafe: { name: 'HelloSafe', domain: 'hellosafe.com', rate: '10–20%' },
   tourradar: { name: 'TourRadar', domain: 'tourradar.com', rate: 'TourRadar' },
   hotelscom: { name: 'Hotels.com', domain: 'hotels.com', rate: '1.35–3.6%' },
   kayak: { name: 'Kayak', domain: 'kayak.com', rate: 'Stay22' },
@@ -286,6 +288,8 @@ export const tpLinks = {
   drimsim: () => `https://drimsim.com/`,
   compensair: () => `https://www.compensair.com/`,
   safetywing: () => SAFETYWING,
+  // HelloSafe (Awin, yayıncı 3138284): sigorta karşılaştırma, 20+ dil
+  hellosafe: () => 'https://www.awin1.com/cread.php?awinmid=128757&awinaffid=3138284&clickref=vizamigo',
   /** Tur/bilet araması: kilitliyse Klook */
   tours: (place: string) => (LOCKED.has('getyourguide') ? `https://www.klook.com/search/result/?query=${encodeURIComponent(place)}` : `https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
   localrent: () => `https://localrent.com/`,

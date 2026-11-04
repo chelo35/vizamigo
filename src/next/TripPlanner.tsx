@@ -317,6 +317,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               sub={l('SafetyWing · yaklaşık fiyat; kapsam ve yaşa göre değişir', 'SafetyWing · rough price; varies with cover and age', 'SafetyWing · Richtwert; je nach Deckung und Alter', 'SafetyWing · precio orientativo', 'SafetyWing · ориентир')}
               right={<span className="vz-trip-amt">{money(insurance)}</span>}
             />
+            <Picks label={l('Sigortaları karşılaştır:', 'Compare insurance:', 'Versicherungen vergleichen:', 'Comparar seguros:', 'Сравнить страховки:')} items={[{ id: 'safetywing', url: tpLinks.safetywing() }, { id: 'hellosafe', url: tpLinks.hellosafe() }]} k="ins" />
             <Row
               key={`e-${esimLink}`}
               lead={<PartnerLogo id={pkg ? 'airalo' : 'yesim'} />}
