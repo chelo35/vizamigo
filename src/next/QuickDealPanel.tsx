@@ -119,6 +119,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   const [tourCity, setTourCity] = useState(city);
   const tourPicks: PickItem[] = [
     { id: 'klook', url: tpLinks.tours(tourCity) },
+    { id: 'getyourguide', url: stay22('getyourguide', { address: tourCity, campaign: 'quick_tours' }) },
     { id: 'tiqets', url: tpLinks.tiqets() },
     { id: 'wegotrip', url: tpLinks.wegotrip() },
     { id: 'gocity', url: tpLinks.gocity() },

@@ -109,7 +109,7 @@ const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com
  * Belgeler: https://dev.stay22.com/docs/allez/parameters
  */
 export const STAY22_AID = 'vizamigo';
-export type Stay22Provider = 'booking' | 'agoda' | 'expedia' | 'hotelscom' | 'vrbo' | 'roam';
+export type Stay22Provider = 'booking' | 'agoda' | 'expedia' | 'hotelscom' | 'vrbo' | 'roam' | 'getyourguide';
 export function stay22(provider: Stay22Provider, o: { address?: string; checkin?: string; checkout?: string; adults?: number; link?: string; campaign?: string } = {}): string {
   const q = new URLSearchParams({ aid: STAY22_AID });
   if (o.link) q.set('link', o.link);
@@ -142,6 +142,7 @@ export function routeLink(url: string): string {
   // Araç kiralama: DiscoverCars / Rentalcars → Economybookings
   if (is('discovercars.com') || is('rentalcars.com')) return 'https://www.economybookings.com/';
   // Tur ve aktivite: GetYourGuide / Viator / Tripadvisor → Klook araması
+  if (is('getyourguide.com') && q) return stay22('getyourguide', { address: q });
   if (is('getyourguide.com') || is('viator.com') || is('tripadvisor.com')) return q ? `https://www.klook.com/search/result/?query=${encodeURIComponent(q)}` : 'https://www.klook.com/';
   // Tren ve otobüs: Omio / 12Go → Kiwi.com (tren + otobüs + uçak)
   if (is('omio.com') || is('12go.asia') || is('12go.co')) return 'https://www.kiwi.com/en/';
