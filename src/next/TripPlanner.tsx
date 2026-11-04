@@ -3,6 +3,7 @@ import { useI18n } from '../data/i18n';
 import { Btn, Chip, Chips, Field, List, Row, VisaBadge } from './ui';
 import { PartnerLogo } from './PartnerLogo';
 import { Picks, type PickItem } from './Picks';
+import { FareCalendar } from './FareCalendar';
 import { Icon } from './Icon';
 import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
@@ -276,6 +277,10 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
                 ))}
               </div>
             </section>
+          )}
+
+          {/^[A-Z]{3}$/.test(fromIata) && /^[A-Z]{3}$/.test(toIata) && (
+            <FareCalendar from={fromIata} to={toIata} nights={nights} cur={cur} dep={s.dep} money={money} onPick={(dep, ret) => set({ dep, ret })} />
           )}
 
           <List>
