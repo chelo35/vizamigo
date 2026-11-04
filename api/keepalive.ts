@@ -6,8 +6,9 @@ export const config = { runtime: 'edge' };
  */
 export default async function handler() {
   const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env || {};
-  const url = env.VITE_SUPABASE_URL || env.SUPABASE_URL;
-  const key = env.VITE_SUPABASE_ANON_KEY || env.SUPABASE_ANON_KEY;
+  // Herkese açık değerler (tarayıcı paketinde zaten var): yayın anahtarı gizli değildir.
+  const url = env.VITE_SUPABASE_URL || env.SUPABASE_URL || 'https://utlnjyquflfcvjhmgopq.supabase.co';
+  const key = env.VITE_SUPABASE_ANON_KEY || env.SUPABASE_ANON_KEY || 'sb_publishable_nINWLrE2ocJ4XuueayQ94g_SeEC_kLk';
   const out: Record<string, number | string> = {};
   if (url && key) {
     const h = { apikey: key, Authorization: `Bearer ${key}` };
