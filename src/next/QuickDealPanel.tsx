@@ -6,7 +6,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22 } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 
@@ -103,8 +103,17 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
     { id: 'tripcom', url: `https://www.trip.com/hotels/list?keyword=${cq}&checkin=${start}&checkout=${checkout}&adult=${n}` },
     { id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${cq}` }
   ];
+  const s22c = s22Cars(city, start, checkout, 'quick_cars');
+  const s22f = s22Flights(fromIata, toIata, start, len ? plus(start, len) : undefined, 1, 'quick_flights');
+  const flightPicks: PickItem[] = [
+    { id: 'aviasales', url: searchLink },
+    { id: 'kayak', url: s22f.kayak },
+    { id: 'expedia', url: s22f.expedia }
+  ];
   const carPicks: PickItem[] = [
     { id: 'economybookings', url: tpLinks.economybookings() },
+    { id: 'bookingcars', url: s22c.booking },
+    { id: 'expediacars', url: s22c.expedia },
     { id: 'localrent', url: tpLinks.localrent() },
     { id: 'getrentacar', url: tpLinks.getrentacar() },
     { id: 'qeeq', url: tpLinks.qeeq() },
@@ -180,6 +189,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
               <a href={searchLink} target="_blank" rel="noopener noreferrer sponsored">{l('Aviasales\'te canlı ara ›', 'Search live on Aviasales ›', 'Live auf Aviasales suchen ›', 'Buscar en Aviasales ›', 'Искать на Aviasales ›')}</a>
             </p>
           )}
+          <Picks label={l('Diğer sitelerde de karşılaştır:', 'Compare on other sites too:', 'Auch woanders vergleichen:', 'Compara en otros sitios:', 'Сравнить на других сайтах:')} items={flightPicks} k={`${fromIata}${toIata}${start}${len}`} />
           <p className="vz-qd-foot">{l('Fiyatlar Aviasales\'te son günlerde bulunan en düşük fiyatlardır; kişi başı.', 'Lowest fares found on Aviasales in recent days; per person.', 'Niedrigste kürzlich gefundene Preise auf Aviasales; pro Person.', 'Tarifas más bajas halladas en Aviasales; por persona.', 'Минимальные цены Aviasales за последние дни; на человека.')}</p>
         </>
       )}

@@ -46,7 +46,10 @@ export type TpId =
   | 'gigsky'
   | 'drimsim'
   | 'compensair'
-  | 'hotelscom';
+  | 'hotelscom'
+  | 'kayak'
+  | 'bookingcars'
+  | 'expediacars';
 
 export interface TpBrand {
   name: string;
@@ -91,7 +94,10 @@ export const TP: Record<TpId, TpBrand> = {
   gigsky: { name: 'GigSky', domain: 'gigsky.com', rate: '20%' },
   drimsim: { name: 'Drimsim', domain: 'drimsim.com', rate: '€8' },
   compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' },
-  hotelscom: { name: 'Hotels.com', domain: 'hotels.com', rate: '1.35–3.6%' }
+  hotelscom: { name: 'Hotels.com', domain: 'hotels.com', rate: '1.35–3.6%' },
+  kayak: { name: 'Kayak', domain: 'kayak.com', rate: 'Stay22' },
+  bookingcars: { name: 'Booking.com Cars', domain: 'booking.com', rate: 'Stay22' },
+  expediacars: { name: 'Expedia', domain: 'expedia.com', rate: 'Stay22' }
 };
 
 /**
@@ -109,7 +115,7 @@ const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com
  * Belgeler: https://dev.stay22.com/docs/allez/parameters
  */
 export const STAY22_AID = 'vizamigo';
-export type Stay22Provider = 'booking' | 'agoda' | 'expedia' | 'hotelscom' | 'vrbo' | 'roam' | 'getyourguide';
+export type Stay22Provider = 'booking' | 'agoda' | 'expedia' | 'hotelscom' | 'vrbo' | 'roam' | 'getyourguide' | 'kayak';
 export function stay22(provider: Stay22Provider, o: { address?: string; checkin?: string; checkout?: string; adults?: number; link?: string; campaign?: string } = {}): string {
   const q = new URLSearchParams({ aid: STAY22_AID });
   if (o.link) q.set('link', o.link);
@@ -120,6 +126,23 @@ export function stay22(provider: Stay22Provider, o: { address?: string; checkin?
   q.set('campaign', o.campaign || 'vizamigo_site');
   return `https://www.stay22.com/allez/${provider}?${q}`;
 }
+const mdY = (d: string) => `${d.slice(5, 7)}/${d.slice(8, 10)}/${d.slice(0, 4)}`;
+/** Uçuş: Kayak ve Expedia (Stay22 üzerinden, komisyonlu) */
+export const s22Flights = (from: string, to: string, dep: string, ret?: string, n = 1, campaign = 'site') => ({
+  kayak: stay22('kayak', { link: `https://www.kayak.com/flights/${from}-${to}/${dep}${ret ? `/${ret}` : ''}${n > 1 ? `/${n}adults` : ''}`, campaign }),
+  expedia: stay22('expedia', {
+    link: `https://www.expedia.com/Flights-Search?trip=${ret ? 'roundtrip' : 'oneway'}&leg1=from:${from},to:${to},departure:${mdY(dep)}TANYT${ret ? `&leg2=from:${to},to:${from},departure:${mdY(ret)}TANYT` : ''}&passengers=adults:${n}`,
+    campaign
+  })
+});
+/** Araç: Booking Cars ve Expedia (Stay22 üzerinden, komisyonlu) */
+export const s22Cars = (city: string, dep?: string, ret?: string, campaign = 'site') => ({
+  booking: stay22('booking', { link: `https://cars.booking.com/search-results?locationName=${encodeURIComponent(city)}`, campaign }),
+  expedia: stay22('expedia', { link: `https://www.expedia.com/carsearch?locn=${encodeURIComponent(city)}${dep ? `&date1=${mdY(dep)}` : ''}${ret ? `&date2=${mdY(ret)}` : ''}`, campaign })
+});
+/** Seyahat ürünleri (Stay22 Retail): arama kelimesiyle en uygun mağaza */
+export const s22Retail = (search: string, campaign = 'packing') =>
+  `https://www.stay22.com/allez/retail?${new URLSearchParams({ aid: STAY22_AID, search, campaign })}`;
 const STAY22_HOSTS: [string, Stay22Provider][] = [['booking.com', 'booking'], ['agoda.com', 'agoda'], ['expedia.com', 'expedia'], ['hotels.com', 'hotelscom'], ['vrbo.com', 'vrbo']];
 
 /** Komisyon getirmeyen (kilitli) bir marka bağlantısını, bağlı bir alternatife çevirir. Otel bağlantıları hizmet için olduğu gibi kalır. */

@@ -9,6 +9,7 @@ import { DEFAULT_PACKING_ITEMS, TripStyle } from '../components/tools/PackingLis
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName, DIGITAL_NOMAD_VISAS, AFFILIATE_PARTNERS, getLocalizedPartner } from '../data/passportData';
 import { PartnerLogo } from './PartnerLogo';
+import { s22Retail } from '../data/tpPartners';
 import { GEO_DATA } from '../data/geoData';
 import { GLOBAL_CURRENCIES } from '../data/countryGeography';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
@@ -68,6 +69,22 @@ const DestSelect: React.FC<{ id: string; value: string; onChange: (c: string) =>
 };
 
 /* ---------------- Bavul listesi ---------------- */
+// Satın alınabilir maddeler → Stay22 Retail arama kelimesi (komisyonlu)
+const BUY: Record<string, string> = {
+  'tech-adapter': 'universal travel adapter',
+  'tech-pb': '20000mAh power bank',
+  'tech-cables': 'usb c fast charger travel',
+  'tech-anc': 'noise cancelling headphones',
+  'health-band': 'travel first aid kit',
+  'nomad-stand': 'portable laptop stand',
+  'nomad-mouse': 'travel wireless mouse keyboard',
+  'nomad-multi': 'travel power strip usb',
+  'wear-shoes': 'lightweight walking shoes',
+  'wear-swim': 'sunscreen spf 50',
+  'wear-thermal': 'thermal base layer',
+  'wear-rain': 'packable rain jacket',
+  'wear-lock': 'tsa luggage lock'
+};
 interface CustomPack { id: string; text: string; cat: string }
 const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ dest, setDest }) => {
   const { l, language } = useI18n();
@@ -162,7 +179,16 @@ const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
           <section key={c.id} className="vz-stack" style={{ gap: 8 }}>
             <span className="vz-row-flex" style={{ gap: 8, fontWeight: 700 }}><Icon name={c.icon} size={18} />{c.label}</span>
             <div className="vz-list">
-              {list.map((it) => <Check key={it.id} id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)}>{language === 'tr' ? it.text.tr : it.text.en}</Check>)}
+              {list.map((it) =>
+                BUY[it.id] ? (
+                  <div key={it.id} className="vz-check-wrap">
+                    <Check id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)}>{language === 'tr' ? it.text.tr : it.text.en}</Check>
+                    <a className="vz-buy" href={s22Retail(BUY[it.id])} target="_blank" rel="noopener noreferrer sponsored">{l('Satın al', 'Buy', 'Kaufen', 'Comprar', 'Купить')}</a>
+                  </div>
+                ) : (
+                  <Check key={it.id} id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)}>{language === 'tr' ? it.text.tr : it.text.en}</Check>
+                )
+              )}
               {mine.map((it) => (
                 <div key={it.id} className="vz-check-wrap">
                   <Check id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)} sub={l('Senin eklediğin', 'Added by you', 'Von dir', 'Añadido por ti', 'Ваш пункт')}>{it.text}</Check>

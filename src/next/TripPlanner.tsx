@@ -10,7 +10,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22 } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 
 /**
@@ -192,8 +192,17 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
     { id: 'gigsky', url: tpLinks.gigsky(), blocked: inTR },
     { id: 'drimsim', url: tpLinks.drimsim() }
   ].sort((a, b) => Number(!!a.blocked) - Number(!!b.blocked));
+  const s22c = s22Cars(city, s.dep, s.ret, 'planner_cars');
+  const s22f = s22Flights(fromIata, toIata, s.dep, s.ret, s.n, 'planner_flights');
+  const flightPicks: PickItem[] = [
+    { id: 'aviasales', url: flightLink },
+    { id: 'kayak', url: s22f.kayak },
+    { id: 'expedia', url: s22f.expedia }
+  ];
   const carPicks: PickItem[] = [
     { id: 'economybookings', url: tpLinks.economybookings() },
+    { id: 'bookingcars', url: s22c.booking },
+    { id: 'expediacars', url: s22c.expedia },
     { id: 'localrent', url: tpLinks.localrent() },
     { id: 'getrentacar', url: tpLinks.getrentacar() },
     { id: 'qeeq', url: tpLinks.qeeq() },
@@ -285,6 +294,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               right={<span className="vz-trip-amt">{flightPP ? money(flight) : loading ? '…' : '—'}</span>}
               href={flightLink}
             />
+            <Picks label={l('Uçuşu şu sitelerde karşılaştır:', 'Compare this flight on:', 'Flug vergleichen bei:', 'Compara el vuelo en:', 'Сравнить перелёт:')} items={flightPicks} k={`${fromIata}${toIata}${s.dep}${s.ret}${s.n}`} />
             <Row
               icon="bed"
               title={<>{s.style === 'budget' ? l('Hostel', 'Hostel', 'Hostel', 'Hostal', 'Хостел') : l('Otel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Отель (3★)')} {avg}</>}
