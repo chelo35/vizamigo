@@ -18,7 +18,8 @@ export default async function handler() {
       out.auth = 'err';
     }
     try {
-      out.rest = (await fetch(`${url}/rest/v1/`, { headers: h })).status;
+      // Gerçek bir veritabanı sorgusu: Supabase hareketliliği buna göre sayar (RLS boş liste döndürür)
+      out.rest = (await fetch(`${url}/rest/v1/reports?select=id&limit=1`, { headers: h })).status;
     } catch {
       out.rest = 'err';
     }
