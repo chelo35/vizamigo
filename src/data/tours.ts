@@ -84,9 +84,9 @@ export const toursPath = (lang: string) => `/${lang}/${TOURS_SLUG[lang] || 'tour
 /* Paket turlar (çok günlük, rehberli): bölgeye ve süreye göre.
  * Bağlantılar komisyonlu ortakların çok günlük tur aramalarına gider:
  * GetYourGuide (Stay22), Klook. TourRadar/G Adventures onaylanınca en başa eklenecek. */
-export type TourRegion = 'asia' | 'balkans' | 'europe' | 'mea' | 'turkey' | 'americas';
+export type TourRegion = 'asia' | 'balkans' | 'europe' | 'mea' | 'turkey' | 'americas' | 'oceania';
 export interface TourPackage {
-  gyg: string; // GetYourGuide çok günlük turlar sayfası
+  gyg?: string; // GetYourGuide çok günlük turlar sayfası (yoksa arama)
   id: string;
   region: TourRegion;
   code: string; // fotoğraf ve vize
@@ -102,7 +102,8 @@ export const TOUR_REGIONS: { id: TourRegion; name: [string, string, string, stri
   { id: 'europe', name: ['Avrupa', 'Europe', 'Europa', 'Europa', 'Европа'] },
   { id: 'mea', name: ['Orta Doğu ve Afrika', 'Middle East & Africa', 'Nahost & Afrika', 'Oriente Medio y África', 'Ближний Восток и Африка'] },
   { id: 'turkey', name: ['Türkiye', 'Türkiye', 'Türkei', 'Turquía', 'Турция'] },
-  { id: 'americas', name: ['Amerika', 'The Americas', 'Amerika', 'América', 'Америка'] }
+  { id: 'americas', name: ['Amerika', 'The Americas', 'Amerika', 'América', 'Америка'] },
+  { id: 'oceania', name: ['Okyanusya', 'Oceania', 'Ozeanien', 'Oceanía', 'Океания'] }
 ];
 export const PACKAGES: TourPackage[] = [
   { id: 'thailand-10', gyg: 'https://www.getyourguide.com/thailand-l169040/multi-day-trips-tc282/', region: 'asia', code: 'TH', days: 10, search: 'Thailand 10 day tour', route: 'Bangkok · Chiang Mai · Phuket', name: ['Tayland turu', 'Thailand tour', 'Thailand-Rundreise', 'Tour por Tailandia', 'Тур по Таиланду'] },
@@ -128,7 +129,24 @@ export const PACKAGES: TourPackage[] = [
   { id: 'aegean-7', gyg: 'https://www.getyourguide.com/izmir-l1082/multi-day-trips-tc282/', region: 'turkey', code: 'TR', days: 7, search: 'Turkey Aegean coast tour Ephesus Pamukkale', route: 'İzmir · Efes · Pamukkale · Bodrum', name: ['Ege turu', 'Aegean coast tour', 'Ägäis-Rundreise', 'Tour por el Egeo', 'Эгейское побережье'] },
   { id: 'peru-8', gyg: 'https://www.getyourguide.com/peru-l168997/multi-day-trips-tc282/', region: 'americas', code: 'PE', days: 8, search: 'Peru 8 day tour Machu Picchu', route: 'Lima · Cusco · Sacred Valley · Machu Picchu', name: ['Peru ve Machu Picchu turu', 'Peru & Machu Picchu', 'Peru & Machu Picchu', 'Perú y Machu Picchu', 'Перу и Мачу-Пикчу'] },
   { id: 'mexico-8', gyg: 'https://www.getyourguide.com/mexico-l169001/multi-day-trips-tc282/', region: 'americas', code: 'MX', days: 8, search: 'Mexico 8 day tour Yucatan', route: 'Mexico City · Oaxaca · Yucatán · Cancún', name: ['Meksika turu', 'Mexico tour', 'Mexiko-Rundreise', 'Tour por México', 'Тур по Мексике'] },
-  { id: 'usa-west-10', gyg: 'https://www.getyourguide.com/united-states-l168990/multi-day-trips-tc282/', region: 'americas', code: 'US', days: 10, search: 'USA west coast 10 day tour', route: 'Los Angeles · Las Vegas · Grand Canyon · San Francisco', name: ['ABD Batı Kıyısı turu', 'USA West Coast tour', 'USA Westküste', 'Costa Oeste de EE. UU.', 'Западное побережье США'] }
+  { id: 'usa-west-10', gyg: 'https://www.getyourguide.com/united-states-l168990/multi-day-trips-tc282/', region: 'americas', code: 'US', days: 10, search: 'USA west coast 10 day tour', route: 'Los Angeles · Las Vegas · Grand Canyon · San Francisco', name: ['ABD Batı Kıyısı turu', 'USA West Coast tour', 'USA Westküste', 'Costa Oeste de EE. UU.', 'Западное побережье США'] },
+  { id: 'india-10', region: 'asia', code: 'IN', days: 10, search: 'India Golden Triangle tour', route: 'Delhi · Agra · Jaipur · Varanasi', name: ['Hindistan turu', 'India tour', 'Indien-Rundreise', 'Tour por la India', 'Тур по Индии'] },
+  { id: 'nepal-10', region: 'asia', code: 'NP', days: 10, search: 'Nepal tour', route: 'Kathmandu · Pokhara · Chitwan', name: ['Nepal turu', 'Nepal tour', 'Nepal-Rundreise', 'Tour por Nepal', 'Тур по Непалу'] },
+  { id: 'indochina-12', region: 'asia', code: 'KH', days: 12, search: 'Vietnam Cambodia Laos tour', route: 'Hanoi · Luang Prabang · Siem Reap · Saigon', name: ['Çinhindi turu (Vietnam, Kamboçya, Laos)', 'Indochina tour', 'Indochina-Rundreise', 'Tour por Indochina', 'Тур по Индокитаю'] },
+  { id: 'korea-8', region: 'asia', code: 'KR', days: 8, search: 'South Korea tour', route: 'Seoul · Gyeongju · Busan · Jeju', name: ['Güney Kore turu', 'South Korea tour', 'Südkorea-Rundreise', 'Tour por Corea del Sur', 'Тур по Южной Корее'] },
+  { id: 'china-10', region: 'asia', code: 'CN', days: 10, search: 'China tour', route: 'Beijing · Xi’an · Guilin · Shanghai', name: ['Çin turu', 'China tour', 'China-Rundreise', 'Tour por China', 'Тур по Китаю'] },
+  { id: 'uzbekistan-8', region: 'asia', code: 'UZ', days: 8, search: 'Uzbekistan Silk Road tour', route: 'Tashkent · Samarkand · Bukhara · Khiva', name: ['Özbekistan İpek Yolu turu', 'Uzbekistan Silk Road', 'Usbekistan Seidenstraße', 'Uzbekistán, Ruta de la Seda', 'Узбекистан: Шёлковый путь'] },
+  { id: 'portugal-8', region: 'europe', code: 'PT', days: 8, search: 'Portugal tour', route: 'Lisbon · Sintra · Porto · Douro', name: ['Portekiz turu', 'Portugal tour', 'Portugal-Rundreise', 'Tour por Portugal', 'Тур по Португалии'] },
+  { id: 'iceland-7', region: 'europe', code: 'IS', days: 7, search: 'Iceland ring road tour', route: 'Reykjavík · Golden Circle · South Coast · Glaciers', name: ['İzlanda turu', 'Iceland tour', 'Island-Rundreise', 'Tour por Islandia', 'Тур по Исландии'] },
+  { id: 'scotland-5', region: 'europe', code: 'GB', days: 5, search: 'Scotland Highlands tour', route: 'Edinburgh · Loch Ness · Isle of Skye', name: ['İskoçya turu', 'Scotland tour', 'Schottland-Rundreise', 'Tour por Escocia', 'Тур по Шотландии'] },
+  { id: 'switzerland-8', region: 'europe', code: 'CH', days: 8, search: 'Switzerland Alps tour', route: 'Zurich · Lucerne · Interlaken · Zermatt', name: ['İsviçre Alpleri turu', 'Swiss Alps tour', 'Schweizer Alpen', 'Alpes suizos', 'Швейцарские Альпы'] },
+  { id: 'kenya-7', region: 'mea', code: 'KE', days: 7, search: 'Kenya safari', route: 'Masai Mara · Lake Nakuru · Amboseli', name: ['Kenya safari turu', 'Kenya safari', 'Kenia-Safari', 'Safari en Kenia', 'Сафари в Кении'] },
+  { id: 'southafrica-10', region: 'mea', code: 'ZA', days: 10, search: 'South Africa tour', route: 'Cape Town · Garden Route · Kruger', name: ['Güney Afrika turu', 'South Africa tour', 'Südafrika-Rundreise', 'Tour por Sudáfrica', 'Тур по ЮАР'] },
+  { id: 'costarica-9', region: 'americas', code: 'CR', days: 9, search: 'Costa Rica tour', route: 'San José · Arenal · Monteverde · Manuel Antonio', name: ['Kosta Rika turu', 'Costa Rica tour', 'Costa-Rica-Rundreise', 'Tour por Costa Rica', 'Тур по Коста-Рике'] },
+  { id: 'patagonia-12', region: 'americas', code: 'AR', days: 12, search: 'Patagonia tour', route: 'Buenos Aires · El Calafate · El Chaltén · Torres del Paine', name: ['Patagonya turu', 'Patagonia tour', 'Patagonien-Rundreise', 'Tour por la Patagonia', 'Тур по Патагонии'] },
+  { id: 'canada-7', region: 'americas', code: 'CA', days: 7, search: 'Canadian Rockies tour', route: 'Calgary · Banff · Lake Louise · Jasper', name: ['Kanada Rocky Dağları turu', 'Canadian Rockies tour', 'Kanadische Rockies', 'Rocosas canadienses', 'Канадские Скалистые горы'] },
+  { id: 'australia-12', region: 'oceania', code: 'AU', days: 12, search: 'Australia tour', route: 'Sydney · Uluru · Cairns · Melbourne', name: ['Avustralya turu', 'Australia tour', 'Australien-Rundreise', 'Tour por Australia', 'Тур по Австралии'] },
+  { id: 'newzealand-12', region: 'oceania', code: 'NZ', days: 12, search: 'New Zealand tour', route: 'Auckland · Rotorua · Queenstown · Milford Sound', name: ['Yeni Zelanda turu', 'New Zealand tour', 'Neuseeland-Rundreise', 'Tour por Nueva Zelanda', 'Тур по Новой Зеландии'] }
 ];
 
 /* ------------------------------------------------------------------ */
@@ -158,12 +176,27 @@ export const LIVE: Record<string, { q: string; c: string[]; min: number; max: nu
   'aegean-7': { q: 'Turkey Aegean coast Ephesus Pamukkale', c: ['TR'], min: 4, max: 10, d: 'turkey' },
   'peru-8': { q: 'Peru Machu Picchu', c: ['PE'], min: 6, max: 14, d: 'peru' },
   'mexico-8': { q: 'Mexico Yucatan', c: ['MX'], min: 6, max: 14, d: 'mexico' },
-  'usa-west-10': { q: 'USA West Coast national parks', c: ['US'], min: 7, max: 15, d: 'usa' }
+  'usa-west-10': { q: 'USA West Coast national parks', c: ['US'], min: 7, max: 15, d: 'usa' },
+  'india-10': { q: 'India Golden Triangle', c: ['IN'], min: 6, max: 14, d: 'india' },
+  'nepal-10': { q: 'Nepal Kathmandu Pokhara', c: ['NP'], min: 6, max: 14, d: 'nepal' },
+  'indochina-12': { q: 'Vietnam Cambodia Laos', c: ['VN', 'KH', 'LA'], min: 9, max: 18, d: 'indochina' },
+  'korea-8': { q: 'South Korea Seoul Busan', c: ['KR'], min: 5, max: 12, d: 'south-korea' },
+  'china-10': { q: 'China Beijing Xian Shanghai', c: ['CN'], min: 7, max: 15, d: 'china' },
+  'uzbekistan-8': { q: 'Uzbekistan Silk Road Samarkand', c: ['UZ'], min: 5, max: 12, d: 'uzbekistan' },
+  'portugal-8': { q: 'Portugal Lisbon Porto', c: ['PT'], min: 5, max: 12, d: 'portugal' },
+  'iceland-7': { q: 'Iceland ring road', c: ['IS'], min: 5, max: 10, d: 'iceland' },
+  'scotland-5': { q: 'Scotland Highlands Isle of Skye', c: ['GB'], min: 3, max: 8, d: 'scotland' },
+  'switzerland-8': { q: 'Switzerland Alps', c: ['CH'], min: 5, max: 12, d: 'switzerland' },
+  'kenya-7': { q: 'Kenya safari Masai Mara', c: ['KE'], min: 4, max: 10, d: 'kenya' },
+  'southafrica-10': { q: 'South Africa Cape Town Kruger Garden Route', c: ['ZA'], min: 7, max: 15, d: 'south-africa' },
+  'costarica-9': { q: 'Costa Rica', c: ['CR'], min: 6, max: 14, d: 'costa-rica' },
+  'patagonia-12': { q: 'Patagonia', c: ['AR', 'CL'], min: 8, max: 18, d: 'argentina' },
+  'canada-7': { q: 'Canadian Rockies Banff Jasper', c: ['CA'], min: 5, max: 12, d: 'canada' },
+  'australia-12': { q: 'Australia Sydney Uluru', c: ['AU'], min: 8, max: 18, d: 'australia' },
+  'newzealand-12': { q: 'New Zealand', c: ['NZ'], min: 8, max: 18, d: 'new-zealand' }
 };
 
-/** TourRadar sayfası, ortaklık izi ile (widget ile aynı parametreler). */
-export const tourRadarLink = (path: string, campaign: string) =>
-  `https://www.tourradar.com${path}${path.includes('?') ? '&' : '?'}utm_source=partner-traveller-1458560&utm_medium=ambassador&utm_campaign=${encodeURIComponent(campaign)}`;
+export { tourRadarLink } from './tpPartners';
 
 /** TourRadar'ın desteklediği para birimi: ziyaretçinin diline/saat dilimine göre. */
 export const tourCurrency = (lang: string): string => {

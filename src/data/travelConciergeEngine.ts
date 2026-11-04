@@ -16,7 +16,7 @@
 
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
-import { TP, tpLinks, LOCKED, type TpId } from './tpPartners';
+import { TP, tpLinks, LOCKED, gygSearch, tourRadarLink, type TpId } from './tpPartners';
 
 export type ConciergeStageId = 'flights' | 'accommodation' | 'transit' | 'activities' | 'essentials';
 
@@ -226,6 +226,8 @@ function getAiraloCountrySlug(code: string, countryNameEn: string): string {
  *    are NEVER deleted if they work post-arrival; instead they are moved to the 3rd priority slot (index 2)
  *    with the required VPN / international SIM tooltip.
  */
+const TOURRADAR_SLUG: Record<string, string> = { US: 'usa', GB: 'united-kingdom', KR: 'south-korea', AE: 'united-arab-emirates', CZ: 'czech-republic', TR: 'turkey', CD: 'democratic-republic-of-the-congo', BA: 'bosnia-and-herzegovina', MK: 'north-macedonia' };
+
 function applyRestrictedBrandAlgorithm(
   nodes: ConciergePartnerNode[],
   targetCountryCode: string,
@@ -237,7 +239,7 @@ function applyRestrictedBrandAlgorithm(
   // Step 1: Filter out permanently folded platforms in the target destination
   // and brands still locked for our Travelpayouts project (Booking stays as the hotel service link)
   const activeNodes = nodes.filter((node) => {
-    if (LOCKED.has(node.id as TpId) && node.id !== 'booking') return false;
+    if (LOCKED.has(node.id as TpId) && node.id !== 'booking' && !/stay22\.com|partner_id=/.test(node.url)) return false;
     if (node.id === 'uber' && UBER_FOLDED_OR_INACTIVE_COUNTRIES.has(target)) {
       return false;
     }
@@ -442,7 +444,7 @@ export function getCountryConciergePlan(
   // 4. TUR, MÜZE VE AKTİVİTE
   // ============================================================================
   const activityPartnersRaw: ConciergePartnerNode[] = [
-    node('getyourguide', 'activities', 1, tpLinks.getyourguide(countryNameEn), {
+    node('getyourguide', 'activities', 1, gygSearch(countryNameEn, `country_${code.toLowerCase()}`), {
       bTr: 'Ücretsiz iptal', bEn: 'Free cancellation',
       tTr: `${countryNameTr} turları, müze biletleri ve günübirlik geziler`,
       tEn: `Tours, museum tickets and day trips in ${countryNameEn}`,
@@ -460,6 +462,12 @@ export function getCountryConciergePlan(
       tEn: `Tours, day trips and activities in ${countryNameEn}`,
       cTr: 'Turlara bak', cEn: 'Browse tours'
     }),
+    node('tourradar', 'activities', 2, tourRadarLink(`/d/${TOURRADAR_SLUG[code] || countryNameEn.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`, `country_${code.toLowerCase()}`), {
+      bTr: 'Paket turlar', bEn: 'Multi-day tours',
+      tTr: `${countryNameTr} için tarihli, rehberli çok günlük turlar; indirimli çıkışlar`,
+      tEn: `Dated, guided multi-day tours in ${countryNameEn}, with discounted departures`,
+      cTr: 'Paket turlara bak', cEn: 'Browse multi-day tours'
+    }, undefined, 'slate'),
     node('gocity', 'activities', 4, tpLinks.gocity(), {
       bTr: 'Şehir kartı', bEn: 'City pass',
       tTr: 'Tek kartla onlarca müze ve gezilecek yere giriş',
@@ -504,6 +512,18 @@ export function getCountryConciergePlan(
       tEn: 'eSIM with built-in security, by the NordVPN team',
       cTr: 'Saily paketleri', cEn: 'Saily plans'
     }, undefined, 'slate'),
+    node('safetywing', 'essentials', 2, tpLinks.safetywing(), {
+      bTr: 'Seyahat sigortası', bEn: 'Travel insurance',
+      tTr: 'Gezginler ve dijital göçebeler için sağlık sigortası; yolculuk başladıktan sonra da alınabilir',
+      tEn: 'Medical cover for travellers and nomads; you can buy it even after your trip has started',
+      cTr: 'Sigorta fiyatı al', cEn: 'Get a quote'
+    }, undefined, 'teal'),
+    node('hellosafe', 'essentials', 3, tpLinks.hellosafe(), {
+      bTr: 'Sigorta karşılaştır', bEn: 'Compare insurance',
+      tTr: 'Seyahat sigortalarını 20+ dilde karşılaştır; kredi kartının neyi kapsadığını da gösterir',
+      tEn: 'Compare travel insurance in 20+ languages; also checks what your card already covers',
+      cTr: 'Karşılaştır', cEn: 'Compare'
+    }, undefined, 'amber'),
     node('airhelp', 'essentials', 4, tpLinks.airhelp(), {
       bTr: '600 €’ya kadar', bEn: 'Up to €600',
       tTr: 'Uçuşun gecikti, iptal oldu ya da bagajın kayboldu mu? Tazminatını talep et',
@@ -565,8 +585,8 @@ export function getCountryConciergePlan(
       stepNumber: '05',
       titleTr: 'İnternet ve güvence',
       titleEn: 'Data & peace of mind',
-      subtitleTr: `${countryNameTr} eSIM, uçuş tazminatı ve bavul emanet`,
-      subtitleEn: `${countryNameEn} eSIM, flight compensation and luggage storage`,
+      subtitleTr: `${countryNameTr} eSIM, seyahat sigortası, uçuş tazminatı ve bavul emanet`,
+      subtitleEn: `${countryNameEn} eSIM, travel insurance, flight compensation and luggage storage`,
       primaryPartner: essentialsPartners[0],
       partners: essentialsPartners
     }

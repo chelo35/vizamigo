@@ -3,7 +3,12 @@ import { useI18n } from '../data/i18n';
 import { Btn, Field } from './ui';
 import { Picks, type PickItem } from './Picks';
 import { GEO_DATA } from '../data/geoData';
-import { getCountryName } from '../data/passportData';
+import { getCountryName, INFO } from '../data/passportData';
+import { getPassportItems } from '../utils/calculator';
+import { getStayDurationText, generateDirectAnswerSnippet } from '../utils/schemaGenerator';
+import { buildLocalizedPath } from '../utils/seoRouter';
+import type { SupportedLanguage } from '../i18n/types';
+import { VisaBadge } from './ui';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
 import { tpLinks, stay22, s22Flights, s22Cars, gygLink } from '../data/tpPartners';
@@ -148,9 +153,50 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
     { id: 'gigsky', url: tpLinks.gigsky(), blocked: inTR }
   ];
   const usd = (v: number) => money(v * getCrossRate('USD', cur));
+  // Vize: pasaport + hedef ülke → giriş türü, resmî kaynak ve başvuru için gerekenler
+  const visaItem = useMemo(() => (from === to ? null : getPassportItems(from).find((x) => x.c === to) || null), [from, to]);
+  const visaInfo = INFO[`${from}-${to}`] as { u?: string; h?: string } | undefined;
+  const needsPaper = !!visaItem && ['visa', 'evisa', 'eta', 'voa'].includes(visaItem.cat);
+  const lang = language as SupportedLanguage;
+  const visaAnswer = visaItem
+    ? generateDirectAnswerSnippet(toName, getCountryName(from, language), visaItem.cat, getStayDurationText(visaItem.v || 'v', visaItem.cat, lang), !!visaItem.id, lang)
+    : '';
+  const visaPicks: PickItem[] = [
+    { id: 'safetywing', url: tpLinks.safetywing() },
+    { id: 'hellosafe', url: tpLinks.hellosafe() },
+    { id: 'booking', url: stay22('booking', { address: `${city}, ${getCountryName(to, 'en')}`, campaign: 'quick_visa' }) },
+    { id: 'aviasales', url: tpLinks.flights(fromIata, toIata) }
+  ];
 
   return (
     <div className="vz-qd-body">
+      {kind === 'visa' && (
+        <>
+          <div className="vz-formgrid vz-qd-grid">
+            {countrySel('vz-qd-pp', l('Pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Ваш паспорт'), from, setFrom)}
+            {toSel}
+          </div>
+          {from === to ? (
+            <p className="vz-muted" style={{ margin: 0 }}>{l('Kendi ülkene vize gerekmez.', 'No visa needed for your own country.', 'Für dein eigenes Land brauchst du kein Visum.', 'No necesitas visado para tu propio país.', 'Для своей страны виза не нужна.')}</p>
+          ) : (
+            <div className="vz-qd-visa">
+              <div className="vz-row-flex" style={{ gap: 8, alignItems: 'center' }}>
+                <VisaBadge item={visaItem} big />
+              </div>
+              {visaAnswer && <p style={{ margin: 0 }}>{visaAnswer}</p>}
+              <div className="vz-row-flex" style={{ gap: 8, flexWrap: 'wrap' }}>
+                <a className="vz-btn vz-btn-primary sm" href={buildLocalizedPath(lang, 'explore', to)}>{l(`${toName} giriş şartlarının tamamı ›`, `Full ${toName} entry rules ›`, `Alle Einreiseregeln: ${toName} ›`, `Requisitos completos: ${toName} ›`, `Все правила въезда: ${toName} ›`)}</a>
+                {visaInfo?.u && <a className="vz-btn vz-btn-soft sm" href={visaInfo.u} target="_blank" rel="noopener noreferrer">{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт')}: {visaInfo.h || new URL(visaInfo.u).hostname}</a>}
+              </div>
+              {needsPaper && (
+                <Picks label={l('Başvuruda genelde istenenler: seyahat sigortası, konaklama ve uçuş rezervasyonu', 'Usually required: travel insurance, hotel and flight bookings', 'Meist verlangt: Reiseversicherung, Hotel- und Flugbuchung', 'Suelen pedir: seguro, hotel y vuelo', 'Обычно нужны: страховка, отель и билеты')} items={visaPicks} k={`${from}${to}`} />
+              )}
+              <p className="vz-qd-foot">{l('Vizamigo vize vermez; başvuruyu her zaman resmî siteden ya da konsolosluktan yap. Ücret isteyen aracı sitelere dikkat.', 'Vizamigo does not issue visas; always apply on the official site or at the consulate. Beware of look-alike sites charging extra fees.', 'Vizamigo stellt keine Visa aus; beantrage sie immer offiziell.', 'Vizamigo no emite visados; solicítalo siempre en la web oficial.', 'Vizamigo не выдаёт визы; подавайте только на официальном сайте.')}</p>
+            </div>
+          )}
+        </>
+      )}
+
       {kind === 'flight' && (
         <>
           <div className="vz-formgrid vz-qd-grid">

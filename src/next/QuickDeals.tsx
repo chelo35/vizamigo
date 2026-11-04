@@ -6,7 +6,7 @@ import { AdTag } from './ui';
 
 const QuickDealPanel = lazy(() => import('./QuickDealPanel'));
 
-export type DealKind = 'flight' | 'hotel' | 'car' | 'esim' | 'transfer' | 'tour';
+export type DealKind = 'visa' | 'flight' | 'hotel' | 'car' | 'esim' | 'transfer' | 'tour';
 
 /**
  * "Hemen ucuza al": ana sayfanın üstünde küçük düğmeler.
@@ -16,6 +16,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
   const { l } = useI18n();
   const [open, setOpen] = useState<DealKind | null>(null);
   const items: { id: DealKind; icon: IconName; t: string }[] = [
+    { id: 'visa', icon: 'passport', t: l('Vize', 'Visa', 'Visum', 'Visado', 'Виза') },
     { id: 'flight', icon: 'plane', t: l('Ucuz uçak bileti', 'Cheap flights', 'Billigflüge', 'Vuelos baratos', 'Дешёвые билеты') },
     { id: 'hotel', icon: 'bed', t: l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
     { id: 'car', icon: 'car', t: l('Araç kirala', 'Car rental', 'Mietwagen', 'Coche', 'Авто') },

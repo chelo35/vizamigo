@@ -6,7 +6,7 @@ import { Picks, type PickItem } from './Picks';
 import { TOURS, toursPath, PACKAGES, TOUR_REGIONS, LIVE, tourRadarLink, type TourRegion } from '../data/tours';
 import { LiveTours } from './LiveTours';
 import { AdTag } from './ui';
-import { stay22, tpLinks, gygLink } from '../data/tpPartners';
+import { stay22, tpLinks, gygLink, gygSearch } from '../data/tpPartners';
 import { getOptimizedImageUrl } from '../data/countryVisuals';
 import { getPassportItems } from '../utils/calculator';
 import { GEO_DATA } from '../data/geoData';
@@ -94,9 +94,10 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
               const img = p.photo || getOptimizedImageUrl(`/images/countries/${p.code.toLowerCase()}.webp`, { width: 480 });
               const regionName = TOUR_REGIONS.find((r) => r.id === p.region)!.name[i];
               const live = LIVE[p.id];
-              const main = live ? tourRadarLink(`/d/${live.d}`, `pkg_${p.id}`) : gygLink(p.gyg, `pkg_${p.id}`);
+              const gyg = p.gyg ? gygLink(p.gyg, `pkg_${p.id}`) : gygSearch(p.search, `pkg_${p.id}`);
+              const main = live ? tourRadarLink(`/d/${live.d}`, `pkg_${p.id}`) : gyg;
               const other: PickItem[] = [
-                ...(live ? [{ id: 'getyourguide', url: gygLink(p.gyg, `pkg_${p.id}`) }] : []),
+                ...(live ? [{ id: 'getyourguide', url: gyg }] : []),
                 ...(p.region === 'asia' ? [{ id: 'klook', url: tpLinks.tours(p.search.replace(/\d+ day tour.*$/i, '').trim()) }] : [])
               ];
               return (

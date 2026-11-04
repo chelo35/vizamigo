@@ -145,6 +145,12 @@ const inTurkey = () => {
     return false;
   }
 };
+/** GetYourGuide araması (sayfa yoksa): Türkiye'de doğrudan /tr-tr/s/?q=, başka yerde Stay22 address. */
+export function gygSearch(q: string, campaign: string): string {
+  if (!inTurkey()) return stay22('getyourguide', { address: q, campaign });
+  const p = new URLSearchParams({ q, partner_id: GYG_STAY22_PARTNER, cmp: `${STAY22_AID}-${campaign}_${STAY22_AID}`, partner_visitor_id: STAY22_AID, psrc: 'partner_api' });
+  return `https://www.getyourguide.com/tr-tr/s/?${p}`;
+}
 export function gygLink(pageUrl: string, campaign: string): string {
   if (!inTurkey()) return stay22('getyourguide', { link: pageUrl, campaign });
   const u = new URL(pageUrl);
@@ -303,3 +309,7 @@ export const tpLinks = {
   airhelp: () => `https://www.airhelp.com/`,
   radicalStorage: () => `https://radicalstorage.com/`
 };
+
+/** TourRadar sayfası, ortaklık izi ile (widget ile aynı parametreler). */
+export const tourRadarLink = (path: string, campaign: string) =>
+  `https://www.tourradar.com${path}${path.includes('?') ? '&' : '?'}utm_source=partner-traveller-1458560&utm_medium=ambassador&utm_campaign=${encodeURIComponent(campaign)}`;
