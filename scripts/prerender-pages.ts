@@ -250,6 +250,25 @@ async function main() {
       n++;
     }
 
+    // turlar sayfası (sosyal medyada paylaşılacak): /tr/turlar, /en/tours …
+    {
+      const { TOURS, TOURS_SLUG, toursPath } = await import('../src/data/tours');
+      const ix = ({ tr: 0, en: 1, de: 2, es: 3, ru: 4 } as Record<string, number>)[lang] ?? 1;
+      const T = ({ tr: ['Turlar ve aktiviteler: Tayland, İstanbul, Mısır, İtalya, Balkanlar', 'Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlasında tur, müze bileti ve günübirlik geziler. Ücretsiz iptalli turları karşılaştır.'], en: ['Tours & activities: Thailand, Istanbul, Egypt, Italy, the Balkans', 'Tours, museum tickets and day trips in Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more. Compare tours with free cancellation.'], de: ['Touren & Aktivitäten: Thailand, Istanbul, Ägypten, Italien, Balkan', 'Touren, Museumstickets und Tagesausflüge in Thailand, Istanbul, Kappadokien, Ägypten, Italien, auf dem Balkan, in Dubai und mehr.'], es: ['Tours y actividades: Tailandia, Estambul, Egipto, Italia, los Balcanes', 'Tours, entradas y excursiones en Tailandia, Estambul, Capadocia, Egipto, Italia, los Balcanes, Dubái y más.'], ru: ['Экскурсии и туры: Таиланд, Стамбул, Египет, Италия, Балканы', 'Экскурсии, билеты в музеи и однодневные поездки: Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие.'] } as Record<string, [string, string]>)[lang];
+      const list = TOURS.map((t) => `<section id="${t.id}"><h2>${esc(t.name[ix])}</h2><p>${esc(t.pitch[ix])}</p></section>`).join('');
+      write(path.join(lang, TOURS_SLUG[lang] || 'tours', 'index.html'), build({
+        lang,
+        canonical: `${BASE_URL}${toursPath(lang)}`,
+        alts: [...LANGS.map((c) => ({ hreflang: c, href: `${BASE_URL}${toursPath(c)}` })), { hreflang: 'x-default', href: `${BASE_URL}${toursPath('en')}` }],
+        title: `${T[0]} | Vizamigo`,
+        desc: T[1],
+        head: PRE.info,
+        body: eyebrow(lang, ['Vizamigo']) + h1(T[0]) + lead(T[1]),
+        nav: navBlock(lang, `${list}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
+      }));
+      n++;
+    }
+
     // bilgi sayfaları
     for (const [id, [trT, enT]] of Object.entries(INFO)) {
       const t = lang === 'tr' ? trT : enT;

@@ -10,6 +10,7 @@ import { GUIDE_LABELS, GUIDE_LINKS } from '../data/guideLinks';
 import { Icon } from './Icon';
 import { SmartSearch } from './SmartSearch';
 import { QuickDeals } from './QuickDeals';
+import { toursPath } from '../data/tours';
 import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
 const WhereView = lazy(() => V().then((m) => ({ default: m.WhereView })));
@@ -185,6 +186,15 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           />
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
+
+        <a className="vz-tours-promo" href={toursPath(language)}>
+          <span className="vz-ic"><Icon name="ticket" size={22} /></span>
+          <span>
+            <b>{l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры')}</b>
+            <span>{l('Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlası', 'Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more', 'Thailand, Istanbul, Kappadokien, Ägypten, Italien, Balkan, Dubai und mehr', 'Tailandia, Estambul, Capadocia, Egipto, Italia, Balcanes, Dubái y más', 'Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие')}</span>
+          </span>
+          <Icon name="next" size={20} duo={false} />
+        </a>
 
         <section className="vz-home-sec" aria-labelledby="vz-h-guides">
           <SecHead

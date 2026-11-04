@@ -13,6 +13,7 @@ import { GEO_DATA } from '../src/data/geoData';
 import { D } from '../src/data/passportData';
 import { COUNTRY_VISUALS_MAP } from '../src/data/countryVisualsData';
 import { GUIDE_IDS, GUIDE_META } from '../src/data/guides';
+import { toursPath } from '../src/data/tours';
 import { SUPPORTED_LANGUAGES } from '../src/i18n';
 import { TabKey } from '../src/components/Navigation';
 import {
@@ -139,6 +140,12 @@ export function generateSitemapXml(): string {
       entries.push({ loc: `${BASE_URL}/${lang}/info/${id}`, alternates: alts as never, lastmod: GUIDE_META[id].checked, changefreq: 'weekly', priority: '0.8' });
     });
   });
+
+  // Turlar sayfası
+  {
+    const alts = [...langCodes.map((lang) => ({ hreflang: lang, href: `${BASE_URL}${toursPath(lang)}` })), { hreflang: 'x-default', href: `${BASE_URL}${toursPath('en')}` }];
+    langCodes.forEach((lang) => entries.push({ loc: `${BASE_URL}${toursPath(lang)}`, alternates: alts as never, lastmod: '2026-11-04', changefreq: 'weekly', priority: '0.8' }));
+  }
 
   // 4. Bilgi merkezi sayfaları (/:lang/info/:page)
   const infoPages = ['terms', 'privacy', 'disclaimer', 'kvkk_gdpr', 'standards', 'attributions', 'appeals', 'passport_lost', 'crisis', 'transit', 'partners', 'airlines', 'insurance', 'community', 'api', 'mission', 'sustainability', 'careers', 'press'];

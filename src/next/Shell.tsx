@@ -1,3 +1,4 @@
+import { toursPath } from '../data/tours';
 import React, { useState } from 'react';
 import { Icon } from './Icon';
 import { useI18n } from '../data/i18n';
@@ -136,6 +137,11 @@ export const TopBar: React.FC<TopProps> = (p) => {
                 <span className="vz-ic sm"><Icon name={p.isDark ? 'sun' : 'moon'} size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{p.isDark ? l('Açık temaya geç', 'Switch to light', 'Helles Design', 'Tema claro', 'Светлая тема') : l('Koyu temaya geç', 'Switch to dark', 'Dunkles Design', 'Tema oscuro', 'Тёмная тема')}</span></span>
               </button>
+              <a className="vz-row link" href={toursPath(language)}>
+                <span className="vz-ic sm"><Icon name="ticket" size={18} /></span>
+                <span className="vz-row-b"><span className="vz-row-t">{l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры')}</span><span className="vz-row-s">{l('Tayland, İstanbul, Mısır, İtalya, Balkanlar…', 'Thailand, Istanbul, Egypt, Italy, the Balkans…', 'Thailand, Istanbul, Ägypten, Italien…', 'Tailandia, Estambul, Egipto, Italia…', 'Таиланд, Стамбул, Египет, Италия…')}</span></span>
+                <Icon name="next" size={18} duo={false} className="vz-row-go" />
+              </a>
               <a className="vz-row link" href={`/${language}/info/schengen_documents`}>
                 <span className="vz-ic sm"><Icon name="doc" size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026')}</span><span className="vz-row-s">{l('Schengen evrakları, ETIAS, ETA, ESTA', 'Schengen documents, ETIAS, ETA, ESTA', 'Schengen, ETIAS, ETA, ESTA', 'Schengen, ETIAS, ETA, ESTA', 'Шенген, ETIAS, ETA, ESTA')}</span></span>

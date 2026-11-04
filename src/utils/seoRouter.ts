@@ -126,7 +126,7 @@ export function parseCurrentRoute(): ParsedRoute {
       language = firstSegment as SupportedLanguage;
       segments.shift();
     } else if (
-      firstSegment === 'country' || firstSegment === 'info' ||
+      firstSegment === 'country' || firstSegment === 'info' || firstSegment === 'turlar' || firstSegment === 'tours' ||
       VALID_TABS.has(firstSegment as TabKey) ||
       TAB_ALIASES[firstSegment] ||
       isValidCountryCode(firstSegment) ||
@@ -144,6 +144,10 @@ export function parseCurrentRoute(): ParsedRoute {
     // 0. Bilgi merkezi: `/:lang/info/:page`
     if (next === 'info' || next === 'bilgi') {
       infoPage = (segments[1] || 'terms').toLowerCase().replace(/[^a-z_]/g, '') || 'terms';
+    }
+    // Turlar sayfası: /tr/turlar, /en/tours, /de/touren
+    else if (next === 'turlar' || next === 'tours' || next === 'touren' || next === 'tury') {
+      infoPage = 'tours';
     }
     // 1. Check legacy `/country/:code`
     else if (next === 'country') {

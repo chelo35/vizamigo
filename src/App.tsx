@@ -31,6 +31,7 @@ const PassportSheet = lazy(() => S().then((m) => ({ default: m.PassportSheet }))
 const AuthSheet = lazy(() => S().then((m) => ({ default: m.AuthSheet })));
 const ReportSheet = lazy(() => S().then((m) => ({ default: m.ReportSheet })));
 const AuditSheet = lazy(() => S().then((m) => ({ default: m.AuditSheet })));
+const ToursPage = lazy(() => import('./next/ToursPage').then((m) => ({ default: m.ToursPage })));
 const InfoPage = lazy(() => import('./next/InfoPage').then((m) => ({ default: m.InfoPage })));
 const AssistantSheet = lazy(() => S().then((m) => ({ default: m.AssistantSheet })));
 const CountryPage = lazy(() => import('./next/CountryPage').then((m) => ({ default: m.CountryPage })));
@@ -264,6 +265,12 @@ function AppContent() {
               onGoHome={() => handleSelectTab('explore')}
             />
           </div>
+        ) : route.infoPage === 'tours' ? (
+          <ErrorBoundary isTabBoundary tabName="tours">
+            <Suspense fallback={<div className="vz-wrap" style={{ paddingBlock: 24 }}><div className="vz-skel" style={{ height: 420 }} /></div>}>
+              <ToursPage passport={currentPassport} onBack={() => handleSelectTab('explore')} onOpenCountry={openCountryFromAnywhere} />
+            </Suspense>
+          </ErrorBoundary>
         ) : route.infoPage ? (
           <ErrorBoundary isTabBoundary tabName="info">
             <Suspense fallback={<div className="vz-wrap" style={{ paddingBlock: 24 }}><div className="vz-skel" style={{ height: 420 }} /></div>}>

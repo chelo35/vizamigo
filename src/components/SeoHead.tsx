@@ -5,6 +5,7 @@
  * <link rel="alternate" hreflang="x-default" href="..."> fallback, and 404 Soft-404 protection.
  */
 
+import { toursPath } from '../data/tours';
 import React, { useEffect } from 'react';
 import { SupportedLanguage } from '../i18n/types';
 import { TabKey } from './Navigation';
@@ -177,7 +178,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     descMeta.setAttribute('content', metaDescription);
 
     // 5. Update Canonical Tag & OpenGraph URL
-    const currentCanonicalUrl = infoPage ? `${BASE_URL}/${language}/info/${infoPage}` : buildAbsoluteLocalizedUrl(language, tab, countryCode);
+    const ipath = (lg: string) => (infoPage === 'tours' ? toursPath(lg) : `/${lg}/info/${infoPage}`);
+    const currentCanonicalUrl = infoPage ? `${BASE_URL}${ipath(language)}` : buildAbsoluteLocalizedUrl(language, tab, countryCode);
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -197,7 +199,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     existingHreflangs.forEach((el) => el.remove());
 
     const hreflangAlternates = infoPage
-      ? [...(['tr', 'en', 'de', 'ru', 'es'] as const).map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${infoPage}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${infoPage}` }]
+      ? [...(['tr', 'en', 'de', 'ru', 'es'] as const).map((c) => ({ hreflang: c, href: `${BASE_URL}${ipath(c)}` })), { hreflang: 'x-default', href: `${BASE_URL}${ipath('en')}` }]
       : getHreflangAlternatesForRoute(tab, countryCode);
     hreflangAlternates.forEach((alt) => {
       const linkEl = document.createElement('link');

@@ -9,6 +9,7 @@ import { useLiveFx } from '../utils/liveData';
 import { tpLinks, stay22, s22Flights, s22Cars } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
+import { toursPath } from '../data/tours';
 
 type Fl = { price: number; dep: string; ret: string | null; transfers: number | null; link: string | null };
 type Pkg = [number, number, number, string];
@@ -238,6 +239,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
             ))}
           </div>
           <Picks label={l(`${tourCity} turları, biletler ve günübirlik geziler:`, `Tours, tickets and day trips in ${tourCity}:`, `Touren und Tickets in ${tourCity}:`, `Tours y entradas en ${tourCity}:`, `Экскурсии в ${tourCity}:`)} items={tourPicks} k={tourCity} />
+          <a className="vz-qd-more" href={toursPath(language)}>{l('Tüm turlar sayfası ›', 'All tours ›', 'Alle Touren ›', 'Todos los tours ›', 'Все туры ›')}</a>
         </>
       )}
 
