@@ -9,7 +9,7 @@ import { useLiveFx } from '../utils/liveData';
 import { tpLinks, stay22, s22Flights, s22Cars } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
-import { toursPath } from '../data/tours';
+import { toursPath, TOURS } from '../data/tours';
 
 type Fl = { price: number; dep: string; ret: string | null; transfers: number | null; link: string | null };
 type Pkg = [number, number, number, string];
@@ -23,7 +23,7 @@ const plus = (s: string, n: number) => {
 const ddmm = (s: string) => `${s.slice(8, 10)}${s.slice(5, 7)}`;
 const EU = new Set(['AT', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'NL', 'NO', 'PL', 'PT', 'SE', 'SI', 'SK', 'MT', 'CY']);
 const POPULAR_TOURS: [string, string][] = [
-  ['TH', 'Bangkok'], ['GR', 'Athens'], ['EG', 'Cairo'], ['AE', 'Dubai'], ['IT', 'Rome'], ['JP', 'Tokyo'], ['RS', 'Belgrade'], ['ES', 'Barcelona'], ['FR', 'Paris'], ['ID', 'Bali']
+  ['TH', 'Bangkok'], ['GR', 'Athens'], ['EG', 'Cairo'], ['AE', 'Dubai'], ['IT', 'Rome'], ['JP', 'Tokyo'], ['ME', 'Kotor'], ['ES', 'Barcelona'], ['FR', 'Paris'], ['ID', 'Bali']
 ];
 
 const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: string; onClose: () => void }> = ({ kind, passport, destination, onClose }) => {
@@ -126,10 +126,10 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
     { id: 'gettransfer', url: tpLinks.gettransfer() },
     { id: 'intui', url: 'https://intui.travel/' }
   ];
-  const [tourCity, setTourCity] = useState(city);
+  const [tourCity, setTourCity] = useState(() => (TOURS.some((x) => x.search === city) ? city : 'Bangkok'));
   const tourPicks: PickItem[] = [
     { id: 'klook', url: tpLinks.tours(tourCity) },
-    { id: 'getyourguide', url: stay22('getyourguide', { address: tourCity, campaign: 'quick_tours' }) },
+    { id: 'getyourguide', url: (() => { const t = TOURS.find((x) => x.search === tourCity); return t ? stay22('getyourguide', { link: t.gyg, campaign: 'quick_tours' }) : stay22('getyourguide', { address: tourCity, campaign: 'quick_tours' }); })() },
     { id: 'tiqets', url: tpLinks.tiqets() },
     { id: 'wegotrip', url: tpLinks.wegotrip() },
     { id: 'gocity', url: tpLinks.gocity() },

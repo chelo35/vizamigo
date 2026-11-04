@@ -90,7 +90,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
             {pkgs.map((p) => {
               const img = p.photo || getOptimizedImageUrl(`/images/countries/${p.code.toLowerCase()}.webp`, { width: 480 });
               const regionName = TOUR_REGIONS.find((r) => r.id === p.region)!.name[i];
-              const gyg = stay22('getyourguide', { address: p.search, campaign: `pkg_${p.id}` });
+              const gyg = stay22('getyourguide', { link: p.gyg, campaign: `pkg_${p.id}` });
               return (
                 <article key={p.id} id={`p-${p.id}`} className="vz-tour">
                   <div className="vz-tour-img">
@@ -132,7 +132,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
         {TOURS.map((t) => {
           const img = t.photo?.startsWith('/') ? t.photo : getOptimizedImageUrl(`/images/countries/${(t.photo || t.code).toLowerCase()}.webp`, { width: 480 });
           const picks: PickItem[] = [
-            { id: 'getyourguide', url: stay22('getyourguide', { address: `${t.search} tours`, campaign: `tours_${t.id}` }) },
+            { id: 'getyourguide', url: stay22('getyourguide', { link: t.gyg, campaign: `tours_${t.id}` }) },
             { id: 'klook', url: tpLinks.tours(t.search) },
             ...(ASIA.has(t.code) ? [{ id: 'kkday', url: tpLinks.kkday() }] : [{ id: 'tiqets', url: tpLinks.tiqets() }]),
             { id: 'wegotrip', url: tpLinks.wegotrip() }
