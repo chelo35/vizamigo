@@ -929,21 +929,13 @@ html.dark .vz-trip-note { color: #fbbf24; }
 .vz-qd-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; margin: 2px 4px 14px; }
 .vz-qd-head h2 { margin: 2px 0 0; font-size: 22px; letter-spacing: -0.02em; }
 .vz-qd-note { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--rd-muted, #5b6b70); }
-.vz-qd-grid4 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-@media (min-width: 720px) { .vz-qd-grid4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; } }
-.vz-qd-card { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 4px; min-width: 0; text-align: left; text-decoration: none; font: inherit; color: var(--rd-fg); background: var(--rd-surface, #fff); border: 1px solid var(--rd-line, #dfe7e8); border-radius: 18px; padding: 12px; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
-.vz-qd-card:hover { transform: translateY(-3px); box-shadow: var(--vz-shadow); }
+.vz-qd-grid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+@media (min-width: 720px) { .vz-qd-grid4 { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 10px; } }
+.vz-qd-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-width: 0; text-align: center; text-decoration: none; font: inherit; color: var(--rd-fg); background: var(--rd-surface, #fff); border: 1px solid var(--rd-line, #dfe7e8); border-radius: 16px; padding: 10px 4px; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.vz-qd-card:hover { transform: translateY(-2px); box-shadow: var(--vz-shadow); }
 .vz-qd-card.on { border-color: var(--rd-sea, #0d9488); box-shadow: var(--vz-ring, 0 0 0 2px #0d9488); }
-.vz-qd-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; margin-bottom: 4px; min-width: 0; }
-.vz-qd-top .vz-badge { font-size: 11px; max-width: 62%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.vz-qd-live, .vz-qd-price { font-size: 11px; font-weight: 700; line-height: 1.2; padding: 4px 8px; border-radius: 999px; color: var(--rd-sea-ink, #0b4f4a); background: var(--rd-sea-soft, #e0f4f1); max-width: 62%; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.vz-qd-price { color: #166534; background: #dcfce7; font-size: 12px; }
-.vz-qd-t { font-size: 15px; line-height: 1.25; letter-spacing: -0.01em; }
-.vz-qd-s { font-size: 12.5px; line-height: 1.35; color: var(--rd-muted, #5b6b70); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.vz-qd-brands { display: flex; align-items: center; gap: 4px; margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--rd-line, #dfe7e8); min-height: 33px; }
-.vz-qd-brands .vz-plogo { border-radius: 8px; }
-.vz-qd-brands em { font-style: normal; font-size: 11.5px; font-weight: 600; color: var(--rd-sea-ink, #0b4f4a); }
-@media (min-width: 1024px) { .vz-qd-card { padding: 16px; } .vz-qd-t { font-size: 16.5px; } .vz-qd-s { font-size: 13px; } }
+.vz-qd-t { font-size: 12.5px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+@media (min-width: 1024px) { .vz-qd-card { padding: 12px 6px; } .vz-qd-t { font-size: 13.5px; } }
 .vz-qd-panel { margin-top: 12px; }
 .vz-qd-body { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 14px; border-radius: 16px; background: var(--rd-sea-tint, #eef8f7); }
 .vz-qd-body .vz-trip-pick { border-top: 0; padding: 0; }
@@ -962,8 +954,8 @@ html.dark .vz-trip-note { color: #fbbf24; }
 .vz-qd-chips button { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
 .vz-qd-chips button.on { border-color: var(--rd-sea, #0d9488); color: var(--rd-sea-ink, #0b4f4a); background: #fff; box-shadow: 0 0 0 1px var(--rd-sea, #0d9488) inset; }
 html.dark .vz-qd-card { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
-html.dark .vz-qd-price { background: rgba(34,197,94,.15); color: #86efac; }
-html.dark .vz-qd-live { background: rgba(45,212,191,.12); color: #99f6e4; }
+
+
 html.dark .vz-qd-body { background: rgba(255,255,255,0.04); }
 html.dark .vz-qd-fare, html.dark .vz-qd-chips button { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
 @media (max-width: 760px) {
