@@ -166,8 +166,10 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   const cq = encodeURIComponent(city);
   const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${rooms}`;
   const hotelPicks: PickItem[] = [
-    ...(s.style === 'budget' ? [{ id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${cq}` }] : []),
+    // Önce komisyon getirenler (Klook otel: Travelpayouts'ta bağlı), sonra popüler siteler
+    { id: 'klook', url: 'https://www.klook.com/hotels/' },
     { id: 'booking', url: bookingLink },
+    ...(s.style === 'budget' ? [{ id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${cq}` }] : []),
     { id: 'agoda', url: `https://www.agoda.com/search?textToSearch=${cq}&checkIn=${s.dep}&checkOut=${s.ret}&rooms=${rooms}&adults=${s.n}` },
     { id: 'tripcom', url: `https://www.trip.com/hotels/list?keyword=${cq}&checkin=${s.dep}&checkout=${s.ret}&adult=${s.n}` },
     { id: 'expedia', url: `https://www.expedia.com/Hotel-Search?destination=${cq}&startDate=${s.dep}&endDate=${s.ret}&adults=${s.n}` },
