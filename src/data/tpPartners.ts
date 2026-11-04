@@ -45,7 +45,8 @@ export type TpId =
   | 'kkday'
   | 'gigsky'
   | 'drimsim'
-  | 'compensair';
+  | 'compensair'
+  | 'hotelscom';
 
 export interface TpBrand {
   name: string;
@@ -89,7 +90,8 @@ export const TP: Record<TpId, TpBrand> = {
   kkday: { name: 'KKday', domain: 'kkday.com', rate: '1–3%' },
   gigsky: { name: 'GigSky', domain: 'gigsky.com', rate: '20%' },
   drimsim: { name: 'Drimsim', domain: 'drimsim.com', rate: '€8' },
-  compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' }
+  compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' },
+  hotelscom: { name: 'Hotels.com', domain: 'hotels.com', rate: '1.35–3.6%' }
 };
 
 /**
@@ -98,7 +100,7 @@ export const TP: Record<TpId, TpBrand> = {
  * Kilit açılınca buradan çıkar; bağlantılar otomatik olarak markanın kendisine döner.
  * Kontrol: 4 Kasım 2026 (25 bağlı program, 20 kilitli).
  */
-export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'twelvego', 'booking', 'agoda', 'expedia', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
+export const LOCKED = new Set<TpId>(['hotelscom', 'tripcom', 'omio', 'twelvego', 'booking', 'agoda', 'expedia', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
 const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com', 'expedia.com', 'hostelworld.com', 'discovercars.com', 'getyourguide.com', 'viator.com', 'tripadvisor.com', 'hotels.com', 'vrbo.com', 'rentalcars.com', 'skyscanner.com', 'skyscanner.net'];
 
 /** Komisyon getirmeyen (kilitli) bir marka bağlantısını, bağlı bir alternatife çevirir. Otel bağlantıları hizmet için olduğu gibi kalır. */
@@ -121,8 +123,8 @@ export function routeLink(url: string): string {
   if (is('getyourguide.com') || is('viator.com') || is('tripadvisor.com')) return q ? `https://www.klook.com/search/result/?query=${encodeURIComponent(q)}` : 'https://www.klook.com/';
   // Tren ve otobüs: Omio / 12Go → Kiwi.com (tren + otobüs + uçak)
   if (is('omio.com') || is('12go.asia') || is('12go.co')) return 'https://www.kiwi.com/en/';
-  // Otel: Agoda / Expedia / Hostelworld / Trip.com otel / Hotels.com / Vrbo → Booking (tek otel adresi; kilit açılana kadar hizmet amaçlı)
-  return q ? `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(q)}` : 'https://www.booking.com/';
+  // Otel: bağlı otel markası yok; kullanıcı seçebilsin diye Booking, Agoda, Trip.com, Expedia vb. olduğu gibi kalır
+  return url;
 }
 
 /** Markanın kendi simgesi (64px) */

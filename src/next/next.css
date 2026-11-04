@@ -914,3 +914,12 @@ html.dark .vz-trip-alt i { color: #86efac; }
   .vz-trip .vz-formgrid > :last-child { grid-column: 1 / -1; }
   .vz-trip .vz-select, .vz-trip .vz-input { min-width: 0; }
 }
+.vz-trip-pick { display: flex; flex-direction: column; gap: 6px; padding: 10px 14px 12px; border-top: 1px solid var(--rd-line, #e5ecee); font-size: 13px; }
+.vz-trip-pick > div { display: flex; flex-wrap: wrap; gap: 6px; }
+.vz-trip-pick a { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px 4px 4px; border-radius: 99px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; text-decoration: none; font-weight: 600; font-size: 13px; }
+.vz-trip-pick a:hover, .vz-trip-pick a:focus-visible { border-color: var(--rd-sea, #0d9488); }
+.vz-trip-pick a.off { opacity: 0.5; }
+.vz-trip-note { margin: 0; padding: 0 14px 12px; font-size: 12.5px; color: #9a5b00; }
+html.dark .vz-trip-note { color: #fbbf24; }
+.vz-trip-pick .vz-plogo { width: 22px !important; height: 22px !important; min-width: 22px; padding: 0; border-radius: 50%; }
+.vz-trip-pick .vz-plogo img { width: 16px; height: 16px; }

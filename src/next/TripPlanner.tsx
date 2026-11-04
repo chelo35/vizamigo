@@ -9,7 +9,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks } from '../data/tpPartners';
+import { tpLinks, TP, type TpId } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 
 /**
@@ -162,7 +162,40 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
 
   const roundLink = `https://www.aviasales.com/search/${fromIata}${ddmm(s.dep)}${toIata}${ddmm(s.ret)}${s.n}`;
   const flightLink = near?.link || roundLink;
-  const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${s.style === 'budget' ? 1 : Math.ceil(s.n / 2)}`;
+  const rooms = s.style === 'budget' ? 1 : Math.ceil(s.n / 2);
+  const cq = encodeURIComponent(city);
+  const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${rooms}`;
+  const hotelPicks: PickItem[] = [
+    ...(s.style === 'budget' ? [{ id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${cq}` }] : []),
+    { id: 'booking', url: bookingLink },
+    { id: 'agoda', url: `https://www.agoda.com/search?textToSearch=${cq}&checkIn=${s.dep}&checkOut=${s.ret}&rooms=${rooms}&adults=${s.n}` },
+    { id: 'tripcom', url: `https://www.trip.com/hotels/list?keyword=${cq}&checkin=${s.dep}&checkout=${s.ret}&adult=${s.n}` },
+    { id: 'expedia', url: `https://www.expedia.com/Hotel-Search?destination=${cq}&startDate=${s.dep}&endDate=${s.ret}&adults=${s.n}` },
+    { id: 'hotelscom', url: `https://www.hotels.com/Hotel-Search?destination=${cq}&startDate=${s.dep}&endDate=${s.ret}&adults=${s.n}` }
+  ];
+  // Türkiye'den Airalo, Yesim, Saily ve GigSky alan adları erişime kapalı (Kasım 2026 kontrolü); Drimsim açılıyor
+  const inTR = (() => {
+    try {
+      return Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Istanbul';
+    } catch {
+      return false;
+    }
+  })();
+  const airaloCountry = pkg ? `https://www.airalo.com/${pkg[3].split('/')[0]}` : 'https://www.airalo.com/';
+  const esimPicks: PickItem[] = [
+    { id: 'airalo', url: airaloCountry, blocked: inTR },
+    { id: 'yesim', url: tpLinks.yesim(), blocked: inTR },
+    { id: 'saily', url: tpLinks.saily(), blocked: inTR },
+    { id: 'gigsky', url: tpLinks.gigsky(), blocked: inTR },
+    { id: 'drimsim', url: tpLinks.drimsim() }
+  ].sort((a, b) => Number(!!a.blocked) - Number(!!b.blocked));
+  const carPicks: PickItem[] = [
+    { id: 'economybookings', url: tpLinks.economybookings() },
+    { id: 'localrent', url: tpLinks.localrent() },
+    { id: 'getrentacar', url: tpLinks.getrentacar() },
+    { id: 'qeeq', url: tpLinks.qeeq() },
+    ...(EU_CARS.has(s.to) ? [{ id: 'autoeurope', url: tpLinks.autoeurope() }] : [])
+  ];
 
   const est = <span className="vz-trip-tag est">{l('Yaklaşık', 'Approx.', 'Ca.', 'Aprox.', 'Примерно')}</span>;
   const avg = <span className="vz-trip-tag est">{l('Ortalama', 'Average', 'Durchschnitt', 'Media', 'Среднее')}</span>;
@@ -250,13 +283,12 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               href={flightLink}
             />
             <Row
-              key={`h-${bookingLink}`}
-              lead={<PartnerLogo id="booking" />}
+              icon="bed"
               title={<>{s.style === 'budget' ? l('Hostel', 'Hostel', 'Hostel', 'Hostal', 'Хостел') : l('Otel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Отель (3★)')} {avg}</>}
-              sub={`${city} · ${l(`${nights} gece`, `${nights} nights`, `${nights} Nächte`, `${nights} noches`, `${nights} ноч.`)} · ${nightRange || money(stayNight)} / ${s.style === 'budget' ? l('yatak', 'bed', 'Bett', 'cama', 'место') : l('oda', 'room', 'Zimmer', 'habitación', 'номер')} · ${l('güncel fiyatlar için dokun', 'tap for live prices', 'live Preise ansehen', 'toca para ver precios', 'нажмите для цен')}`}
+              sub={`${city} · ${l(`${nights} gece`, `${nights} nights`, `${nights} Nächte`, `${nights} noches`, `${nights} ноч.`)} · ${nightRange || money(stayNight)} / ${s.style === 'budget' ? l('yatak', 'bed', 'Bett', 'cama', 'место') : l('oda', 'room', 'Zimmer', 'habitación', 'номер')} `}
               right={<span className="vz-trip-amt">{money(stay)}</span>}
-              href={bookingLink}
             />
+            <Picks label={l('Güncel otel fiyatlarını şurada gör:', 'See live hotel prices on:', 'Live-Hotelpreise bei:', 'Precios de hotel en:', 'Цены отелей на:')} items={hotelPicks} k={`${s.to}${s.dep}${s.ret}${s.n}${s.style}`} />
             <Row
               icon="food"
               title={<>{l('Yemek, ulaşım ve gezme', 'Food, transport & sights', 'Essen, Transport, Ausflüge', 'Comida, transporte y visitas', 'Еда, транспорт, экскурсии')} {avg}</>}
@@ -275,8 +307,20 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               title={<>eSIM {pkg ? real : est}</>}
               sub={pkg ? `Airalo · ${pkg[0] ? `${pkg[0]} GB` : l('sınırsız', 'unlimited', 'unbegrenzt', 'ilimitado', 'безлимит')} · ${pkg[1]} ${l('gün', 'days', 'Tage', 'días', 'дн.')}${s.n > 1 ? ` · ${money(conv(pkg[2], 'USD'))} × ${s.n}` : ''}` : l('İnmeden internet: Yesim', 'Data from landing: Yesim', 'Daten ab Landung: Yesim', 'Datos al aterrizar: Yesim', 'Интернет сразу: Yesim')}
               right={<span className="vz-trip-amt">{money(esim)}</span>}
-              href={esimLink}
+              href={inTR ? undefined : esimLink}
             />
+            <Picks label={l('eSIM firmasını seç:', 'Choose your eSIM provider:', 'eSIM-Anbieter wählen:', 'Elige tu eSIM:', 'Выберите eSIM:')} items={esimPicks} k={s.to} />
+            {inTR && (
+              <p className="vz-trip-note">
+                {l(
+                  'Türkiye\'den Airalo, Yesim, Saily ve GigSky sitelerine erişim engelli; Türkiye\'deyken Drimsim açılıyor. Diğerlerini yurt dışına çıkınca, örneğin havalimanı Wi-Fi\'ında satın alabilirsin.',
+                  'Airalo, Yesim, Saily and GigSky are blocked in Türkiye; Drimsim opens. You can buy the others once abroad, e.g. on airport Wi-Fi.',
+                  'Airalo, Yesim, Saily und GigSky sind in der Türkei gesperrt; Drimsim funktioniert.',
+                  'Airalo, Yesim, Saily y GigSky están bloqueados en Turquía; Drimsim funciona.',
+                  'Airalo, Yesim, Saily и GigSky заблокированы в Турции; Drimsim открывается.'
+                )}
+              </p>
+            )}
           </List>
 
           <section className="vz-card">
@@ -289,8 +333,8 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
             </div>
             <List>
               <Row key={`t-${s.to}`} lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado', 'Трансфер')} sub={l(`${toIata} → otel, sabit fiyat · Kiwitaxi`, `${toIata} → hotel, fixed price · Kiwitaxi`, `${toIata} → Hotel, Festpreis · Kiwitaxi`, `${toIata} → hotel, precio fijo · Kiwitaxi`, `${toIata} → отель, фикс. цена · Kiwitaxi`)} href={tpLinks.kiwitaxi()} />
-              <Row key={`c-${s.to}`} lead={<PartnerLogo id="economybookings" />} title={l('Araç kirala', 'Rent a car', 'Mietwagen', 'Alquiler de coche', 'Аренда авто')} sub={l('Economybookings · şirketleri karşılaştır, ücretsiz iptal', 'Economybookings · compare companies, free cancellation', 'Economybookings · Anbieter vergleichen', 'Economybookings · compara empresas', 'Economybookings · сравните компании')} href={tpLinks.economybookings()} />
-              <Row key={`l-${s.to}`} lead={<PartnerLogo id="localrent" />} title={l('Yerel firmadan araç', 'Local car rental', 'Lokale Mietwagen', 'Alquiler local', 'Местный прокат')} sub={l('Localrent · çoğu zaman depozitosuz', 'Localrent · often no deposit', 'Localrent · oft ohne Kaution', 'Localrent · a menudo sin depósito', 'Localrent · часто без депозита')} href={tpLinks.localrent()} />
+              <Row icon="car" title={l('Araç kirala', 'Rent a car', 'Mietwagen', 'Alquiler de coche', 'Аренда авто')} sub={l('Firmaları karşılaştır; çoğunda ücretsiz iptal', 'Compare companies; most with free cancellation', 'Anbieter vergleichen; meist kostenlos stornierbar', 'Compara empresas; cancelación gratuita', 'Сравните компании; бесплатная отмена')} />
+              <Picks label={l('Araç firmasını seç:', 'Choose a rental site:', 'Anbieter wählen:', 'Elige empresa:', 'Выберите сервис:')} items={carPicks} k={s.to} />
               <Row key={`a-${s.to}`} lead={<PartnerLogo id="klook" />} title={l('Turlar ve biletler', 'Tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии и билеты')} sub={`Klook · ${city}`} href={tpLinks.tours(city)} />
               <Row lead={<PartnerLogo id="radicalstorage" />} title={l('Bagaj emaneti', 'Luggage storage', 'Gepäckaufbewahrung', 'Consigna', 'Камера хранения')} sub={l('Radical Storage · şehirde çantanı bırak', 'Radical Storage · drop your bags in town', 'Radical Storage · Gepäck abgeben', 'Radical Storage · deja tu equipaje', 'Radical Storage · оставьте багаж')} href={tpLinks.radicalStorage()} />
               <Row lead={<PartnerLogo id="airhelp" />} title={l('Uçuş rötar ve iptal tazminatı', 'Flight delay compensation', 'Entschädigung bei Verspätung', 'Compensación por retraso', 'Компенсация за задержку')} sub={l('AirHelp · 3 saat+ rötarda 600 €’ya kadar', 'AirHelp · up to €600 for 3h+ delays', 'AirHelp · bis 600 € ab 3 Std.', 'AirHelp · hasta 600 € por +3 h', 'AirHelp · до 600 € при задержке 3+ ч')} href={tpLinks.airhelp()} />
@@ -308,6 +352,27 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
           </p>
         </>
       )}
+    </div>
+  );
+};
+
+type PickItem = { id: string; url: string; blocked?: boolean };
+const EU_CARS = new Set(['AT', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'NL', 'NO', 'PL', 'PT', 'SE', 'SI', 'SK', 'MT', 'CY']);
+
+/** Aynı hizmeti veren firmalar arasından seçim (logolu küçük düğmeler) */
+const Picks: React.FC<{ label: string; items: PickItem[]; k: string }> = ({ label, items, k }) => {
+  const { l } = useI18n();
+  return (
+    <div className="vz-trip-pick">
+      <span className="vz-muted">{label}</span>
+      <div>
+        {items.map((p) => (
+          <a key={`${k}-${p.id}-${p.url}`} href={p.url} target="_blank" rel="noopener noreferrer sponsored" className={p.blocked ? 'off' : undefined} title={p.blocked ? l('Türkiye\'den erişim engelli', 'Blocked in Türkiye', 'In der Türkei gesperrt', 'Bloqueado en Turquía', 'Заблокирован в Турции') : undefined}>
+            <PartnerLogo id={p.id} size={18} />
+            <span>{TP[p.id as TpId].name}</span>
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
