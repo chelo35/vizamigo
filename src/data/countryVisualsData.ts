@@ -514,12 +514,12 @@ export const COUNTRY_VISUALS_LIST: CountryVisualRecord[] = [
       "es": "Murallas Históricas de Dubrovnik y Mar Adriático",
       "ru": "Исторические стены Дубровника и Адриатика"
     },
-    "author": "Unsplash Verified Creator",
-    "license": "Unsplash License",
-    "sourceUrl": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1600&q=80",
-    "sourcePageUrl": "https://unsplash.com/photos/photo-1533105079780-92b9be482077",
+    "author": "Jonathan Smith (jpsmithuga)",
+    "license": "CC0 (Wikimedia Commons)",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Dubrovnik%2C_Croatia_%28Unsplash%29.jpg",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Dubrovnik,_Croatia_(Unsplash).jpg",
     "sourceId": "verified_hr_Dubrovnik_Old_Town_Walls__Veri",
-    "verifiedAt": "2026-10-17",
+    "verifiedAt": "2026-11-04",
     "focus": "center",
     "symbols": {
       "main": "Dubrovnik Tarihi Eski Şehri ve Adriyatik Surları (UNESCO)",

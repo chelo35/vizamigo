@@ -190,8 +190,8 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
         <a className="vz-tours-promo" href={toursPath(language)}>
           <span className="vz-ic"><Icon name="ticket" size={22} /></span>
           <span>
-            <b>{l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры')}</b>
-            <span>{l('Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlası', 'Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more', 'Thailand, Istanbul, Kappadokien, Ägypten, Italien, Balkan, Dubai und mehr', 'Tailandia, Estambul, Capadocia, Egipto, Italia, Balcanes, Dubái y más', 'Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие')}</span>
+            <b>{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</b>
+            <span>{l('Tayland, Balkanlar, Mısır, İtalya, Japonya, Türkiye… 5 günden 12 güne rehberli turlar', 'Thailand, the Balkans, Egypt, Italy, Japan, Türkiye… guided tours from 5 to 12 days', 'Thailand, Istanbul, Kappadokien, Ägypten, Italien, Balkan, Dubai und mehr', 'Tailandia, Estambul, Capadocia, Egipto, Italia, Balcanes, Dubái y más', 'Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие')}</span>
           </span>
           <Icon name="next" size={20} duo={false} />
         </a>

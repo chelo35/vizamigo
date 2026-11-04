@@ -78,3 +78,53 @@ export const TOURS: TourDest[] = [
 /** Turlar sayfasının dile göre adresi: /tr/turlar, /en/tours, /de/touren, /es/tours, /ru/tours */
 export const TOURS_SLUG: Record<string, string> = { tr: 'turlar', en: 'tours', de: 'touren', es: 'tours', ru: 'tours' };
 export const toursPath = (lang: string) => `/${lang}/${TOURS_SLUG[lang] || 'tours'}`;
+
+/* ------------------------------------------------------------------ */
+/* Paket turlar (çok günlük, rehberli): bölgeye ve süreye göre.
+ * Bağlantılar komisyonlu ortakların çok günlük tur aramalarına gider:
+ * GetYourGuide (Stay22), Klook. TourRadar/G Adventures onaylanınca en başa eklenecek. */
+export type TourRegion = 'asia' | 'balkans' | 'europe' | 'mea' | 'turkey' | 'americas';
+export interface TourPackage {
+  id: string;
+  region: TourRegion;
+  code: string; // fotoğraf ve vize
+  photo?: string;
+  days: number;
+  search: string; // tur sitelerinde arama (İngilizce)
+  name: [string, string, string, string, string];
+  route: string; // duraklar (yer adları evrensel)
+}
+export const TOUR_REGIONS: { id: TourRegion; name: [string, string, string, string, string] }[] = [
+  { id: 'asia', name: ['Asya', 'Asia', 'Asien', 'Asia', 'Азия'] },
+  { id: 'balkans', name: ['Balkanlar', 'The Balkans', 'Balkan', 'Balcanes', 'Балканы'] },
+  { id: 'europe', name: ['Avrupa', 'Europe', 'Europa', 'Europa', 'Европа'] },
+  { id: 'mea', name: ['Orta Doğu ve Afrika', 'Middle East & Africa', 'Nahost & Afrika', 'Oriente Medio y África', 'Ближний Восток и Африка'] },
+  { id: 'turkey', name: ['Türkiye', 'Türkiye', 'Türkei', 'Turquía', 'Турция'] },
+  { id: 'americas', name: ['Amerika', 'The Americas', 'Amerika', 'América', 'Америка'] }
+];
+export const PACKAGES: TourPackage[] = [
+  { id: 'thailand-10', region: 'asia', code: 'TH', days: 10, search: 'Thailand 10 day tour', route: 'Bangkok · Chiang Mai · Phuket', name: ['Tayland turu', 'Thailand tour', 'Thailand-Rundreise', 'Tour por Tailandia', 'Тур по Таиланду'] },
+  { id: 'japan-12', region: 'asia', code: 'JP', days: 12, search: 'Japan 12 day tour', route: 'Tokyo · Hakone · Kyoto · Osaka', name: ['Japonya turu', 'Japan tour', 'Japan-Rundreise', 'Tour por Japón', 'Тур по Японии'] },
+  { id: 'vietnam-10', region: 'asia', code: 'VN', days: 10, search: 'Vietnam 10 day tour', route: 'Hanoi · Ha Long · Hoi An · Ho Chi Minh', name: ['Vietnam turu', 'Vietnam tour', 'Vietnam-Rundreise', 'Tour por Vietnam', 'Тур по Вьетнаму'] },
+  { id: 'bali-7', region: 'asia', code: 'ID', days: 7, search: 'Bali 7 day tour', route: 'Ubud · Nusa Penida · Uluwatu', name: ['Bali turu', 'Bali tour', 'Bali-Rundreise', 'Tour por Bali', 'Тур по Бали'] },
+  { id: 'srilanka-8', region: 'asia', code: 'LK', days: 8, search: 'Sri Lanka 8 day tour', route: 'Colombo · Sigiriya · Kandy · Ella', name: ['Sri Lanka turu', 'Sri Lanka tour', 'Sri-Lanka-Rundreise', 'Tour por Sri Lanka', 'Тур по Шри-Ланке'] },
+  { id: 'balkans-8', region: 'balkans', code: 'ME', days: 8, search: 'Balkans 8 day tour', route: 'Belgrade · Sarajevo · Mostar · Kotor · Tirana', name: ['Balkan turu', 'Balkans tour', 'Balkan-Rundreise', 'Tour por los Balcanes', 'Тур по Балканам'] },
+  { id: 'croatia-7', region: 'balkans', code: 'HR', days: 7, search: 'Croatia 7 day tour', route: 'Zagreb · Plitvice · Split · Dubrovnik', name: ['Hırvatistan turu', 'Croatia tour', 'Kroatien-Rundreise', 'Tour por Croacia', 'Тур по Хорватии'] },
+  { id: 'albania-6', region: 'balkans', code: 'AL', days: 6, search: 'Albania tour', route: 'Tirana · Berat · Gjirokastër · Ksamil', name: ['Arnavutluk turu', 'Albania tour', 'Albanien-Rundreise', 'Tour por Albania', 'Тур по Албании'] },
+  { id: 'italy-10', region: 'europe', code: 'IT', days: 10, search: 'Italy 10 day tour', route: 'Rome · Florence · Venice · Amalfi', name: ['İtalya turu', 'Italy tour', 'Italien-Rundreise', 'Tour por Italia', 'Тур по Италии'] },
+  { id: 'spain-portugal-10', region: 'europe', code: 'ES', days: 10, search: 'Spain and Portugal 10 day tour', route: 'Madrid · Seville · Granada · Lisbon', name: ['İspanya ve Portekiz turu', 'Spain & Portugal tour', 'Spanien & Portugal', 'Tour España y Portugal', 'Испания и Португалия'] },
+  { id: 'central-europe-8', region: 'europe', code: 'CZ', days: 8, search: 'Central Europe tour Prague Vienna Budapest', route: 'Prague · Vienna · Budapest', name: ['Orta Avrupa turu', 'Central Europe tour', 'Mitteleuropa-Rundreise', 'Tour por Europa Central', 'Центральная Европа'] },
+  { id: 'greece-8', region: 'europe', code: 'GR', days: 8, search: 'Greece island hopping 8 day tour', route: 'Athens · Mykonos · Santorini', name: ['Yunan adaları turu', 'Greek islands tour', 'Griechische Inseln', 'Islas griegas', 'Греческие острова'] },
+  { id: 'norway-7', region: 'europe', code: 'NO', days: 7, search: 'Norway fjords 7 day tour', route: 'Oslo · Bergen · Fjords', name: ['Norveç fiyortları turu', 'Norway fjords tour', 'Norwegen Fjorde', 'Fiordos de Noruega', 'Фьорды Норвегии'] },
+  { id: 'egypt-8', region: 'mea', code: 'EG', days: 8, search: 'Egypt 8 day tour Nile cruise', route: 'Cairo · Luxor · Nile cruise · Aswan', name: ['Mısır ve Nil turu', 'Egypt & Nile tour', 'Ägypten & Nil', 'Egipto y el Nilo', 'Египет и Нил'] },
+  { id: 'morocco-8', region: 'mea', code: 'MA', days: 8, search: 'Morocco 8 day tour Sahara', route: 'Marrakech · Sahara · Fes · Chefchaouen', name: ['Fas turu', 'Morocco tour', 'Marokko-Rundreise', 'Tour por Marruecos', 'Тур по Марокко'] },
+  { id: 'jordan-5', region: 'mea', code: 'JO', days: 5, search: 'Jordan 5 day tour Petra Wadi Rum', route: 'Amman · Petra · Wadi Rum · Dead Sea', name: ['Ürdün turu', 'Jordan tour', 'Jordanien-Rundreise', 'Tour por Jordania', 'Тур по Иордании'] },
+  { id: 'tanzania-7', region: 'mea', code: 'TZ', days: 7, search: 'Tanzania safari Zanzibar 7 day tour', route: 'Serengeti · Ngorongoro · Zanzibar', name: ['Tanzanya safari turu', 'Tanzania safari', 'Tansania-Safari', 'Safari en Tanzania', 'Сафари в Танзании'] },
+  { id: 'dubai-5', region: 'mea', code: 'AE', days: 5, search: 'Dubai Abu Dhabi 5 day tour', route: 'Dubai · Desert safari · Abu Dhabi', name: ['Dubai turu', 'Dubai tour', 'Dubai-Reise', 'Tour por Dubái', 'Тур в Дубай'] },
+  { id: 'turkey-10', region: 'turkey', code: 'TR', days: 10, search: 'Turkey 10 day tour Istanbul Cappadocia', route: 'İstanbul · Kapadokya · Pamukkale · Efes', name: ['Türkiye turu', 'Türkiye tour', 'Türkei-Rundreise', 'Tour por Turquía', 'Тур по Турции'] },
+  { id: 'cappadocia-3', region: 'turkey', code: 'TR', photo: '/images/tours/kapadokya-480.webp', days: 3, search: 'Cappadocia 3 day tour', route: 'Göreme · Ürgüp · Avanos · Balon', name: ['Kapadokya turu', 'Cappadocia tour', 'Kappadokien-Tour', 'Tour por Capadocia', 'Тур в Каппадокию'] },
+  { id: 'aegean-7', region: 'turkey', code: 'TR', days: 7, search: 'Turkey Aegean coast tour Ephesus Pamukkale', route: 'İzmir · Efes · Pamukkale · Bodrum', name: ['Ege turu', 'Aegean coast tour', 'Ägäis-Rundreise', 'Tour por el Egeo', 'Эгейское побережье'] },
+  { id: 'peru-8', region: 'americas', code: 'PE', days: 8, search: 'Peru 8 day tour Machu Picchu', route: 'Lima · Cusco · Sacred Valley · Machu Picchu', name: ['Peru ve Machu Picchu turu', 'Peru & Machu Picchu', 'Peru & Machu Picchu', 'Perú y Machu Picchu', 'Перу и Мачу-Пикчу'] },
+  { id: 'mexico-8', region: 'americas', code: 'MX', days: 8, search: 'Mexico 8 day tour Yucatan', route: 'Mexico City · Oaxaca · Yucatán · Cancún', name: ['Meksika turu', 'Mexico tour', 'Mexiko-Rundreise', 'Tour por México', 'Тур по Мексике'] },
+  { id: 'usa-west-10', region: 'americas', code: 'US', days: 10, search: 'USA west coast 10 day tour', route: 'Los Angeles · Las Vegas · Grand Canyon · San Francisco', name: ['ABD Batı Kıyısı turu', 'USA West Coast tour', 'USA Westküste', 'Costa Oeste de EE. UU.', 'Западное побережье США'] }
+];

@@ -1002,3 +1002,17 @@ html.dark .vz-qd-more { color: #5eead4; }
 .vz-tour-img { overflow: hidden; height: auto; }
 .vz-tour-img img { position: absolute; inset: 0; }
 .vz-tour-credit { position: absolute; right: 8px; bottom: 6px; font-size: 10px; color: rgba(255,255,255,0.85); text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
+.vz-tours-view { display: inline-flex; gap: 4px; padding: 4px; margin-bottom: 14px; border-radius: 16px; background: var(--rd-sea-tint, #e6f4f3); }
+.vz-tours-view button { display: inline-flex; align-items: center; gap: 6px; padding: 9px 14px; border: 0; border-radius: 12px; background: transparent; color: var(--rd-sea-ink, #0b4f4a); font: inherit; font-weight: 700; font-size: 14px; cursor: pointer; }
+.vz-tours-view button.on { background: var(--rd-surface, #fff); box-shadow: 0 2px 8px rgba(13, 60, 70, 0.12); }
+.vz-tours-filters { display: flex; flex-direction: column; gap: 4px; margin-bottom: 6px; }
+.vz-tours-jump button { flex: none; padding: 7px 13px; border-radius: 99px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; font: inherit; font-weight: 600; font-size: 13.5px; cursor: pointer; }
+.vz-tours-jump button.on { background: var(--rd-sea, #0d9488); border-color: var(--rd-sea, #0d9488); color: #fff; }
+.vz-tour-days { position: absolute; right: 12px; top: 12px; padding: 5px 11px; border-radius: 99px; background: #0f172a; color: #fff; font-size: 13px; font-weight: 800; }
+.vz-tour-route { display: flex; align-items: flex-start; gap: 6px; color: var(--rd-muted, #5b6b70); font-size: 14px !important; }
+.vz-tour-route svg { flex: none; margin-top: 2px; }
+html.dark .vz-tours-view { background: rgba(255,255,255,0.06); }
+html.dark .vz-tours-view button { color: #c9f3ec; }
+html.dark .vz-tours-view button.on { background: rgba(255,255,255,0.12); }
+html.dark .vz-tours-jump button { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
+@media (max-width: 640px) { .vz-tours-view { display: flex; } .vz-tours-view button { flex: 1; justify-content: center; font-size: 13px; padding: 9px 8px; } }
