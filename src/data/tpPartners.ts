@@ -100,8 +100,27 @@ export const TP: Record<TpId, TpBrand> = {
  * Kilit açılınca buradan çıkar; bağlantılar otomatik olarak markanın kendisine döner.
  * Kontrol: 4 Kasım 2026 (25 bağlı program, 20 kilitli).
  */
-export const LOCKED = new Set<TpId>(['hotelscom', 'tripcom', 'omio', 'twelvego', 'booking', 'agoda', 'expedia', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
+export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'twelvego', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
 const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com', 'expedia.com', 'hostelworld.com', 'discovercars.com', 'getyourguide.com', 'viator.com', 'tripadvisor.com', 'hotels.com', 'vrbo.com', 'rentalcars.com', 'skyscanner.com', 'skyscanner.net'];
+
+/**
+ * Stay22 (aid: vizamigo): Booking, Agoda, Expedia, Hotels.com, Vrbo rezervasyonlarından komisyon.
+ * Biçim: https://www.stay22.com/allez/{provider}?aid=…&address=…&checkin=…&checkout=…&adults=…
+ * Belgeler: https://dev.stay22.com/docs/allez/parameters
+ */
+export const STAY22_AID = 'vizamigo';
+export type Stay22Provider = 'booking' | 'agoda' | 'expedia' | 'hotelscom' | 'vrbo' | 'roam';
+export function stay22(provider: Stay22Provider, o: { address?: string; checkin?: string; checkout?: string; adults?: number; link?: string; campaign?: string } = {}): string {
+  const q = new URLSearchParams({ aid: STAY22_AID });
+  if (o.link) q.set('link', o.link);
+  if (o.address) q.set('address', o.address);
+  if (o.checkin) q.set('checkin', o.checkin);
+  if (o.checkout) q.set('checkout', o.checkout);
+  if (o.adults) q.set('adults', String(o.adults));
+  q.set('campaign', o.campaign || 'vizamigo_site');
+  return `https://www.stay22.com/allez/${provider}?${q}`;
+}
+const STAY22_HOSTS: [string, Stay22Provider][] = [['booking.com', 'booking'], ['agoda.com', 'agoda'], ['expedia.com', 'expedia'], ['hotels.com', 'hotelscom'], ['vrbo.com', 'vrbo']];
 
 /** Komisyon getirmeyen (kilitli) bir marka bağlantısını, bağlı bir alternatife çevirir. Otel bağlantıları hizmet için olduğu gibi kalır. */
 export function routeLink(url: string): string {
@@ -113,6 +132,9 @@ export function routeLink(url: string): string {
   }
   const host = u.hostname.replace(/^www\./, '');
   const is = (d: string) => host === d || host.endsWith('.' + d);
+  // Otel siteleri → Stay22 üzerinden (komisyonlu)
+  const s22 = STAY22_HOSTS.find(([d]) => is(d));
+  if (s22) return stay22(s22[1], { link: url });
   if (!LOCKED_HOSTS.some(is)) return url;
   const q = u.searchParams.get('q') || u.searchParams.get('text') || u.searchParams.get('query') || u.searchParams.get('destination') || '';
   // Uçuş: Trip.com / Skyscanner → Aviasales
@@ -138,6 +160,10 @@ export function tpIdFromUrl(url: string | undefined): TpId | undefined {
     host = new URL(url).hostname.replace(/^www\./, '');
   } catch {
     return undefined;
+  }
+  if (host === 'stay22.com') {
+    const prov = url.match(/\/allez\/([a-z]+)/)?.[1];
+    return prov === 'hotelscom' ? 'hotelscom' : prov && prov in TP ? (prov as TpId) : 'booking';
   }
   return (Object.keys(TP) as TpId[]).find((id) => host === TP[id].domain || host.endsWith('.' + TP[id].domain));
 }
@@ -179,10 +205,10 @@ export const tpLinks = {
       : EU_RAIL.has(toCode) && EU_RAIL.has(fromCode) && !LOCKED.has('omio')
         ? { id: 'omio', url: `https://www.omio.com/` }
         : { id: 'kiwi', url: `https://www.kiwi.com/en/` },
-  booking: (place: string) => `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(place)}`,
-  agoda: () => `https://www.agoda.com/`,
+  booking: (place: string) => stay22('booking', { address: place }),
+  agoda: (place?: string) => stay22('agoda', { address: place }),
   tripHotels: () => `https://www.trip.com/hotels/`,
-  expedia: (place: string) => `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(place)}`,
+  expedia: (place: string) => stay22('expedia', { address: place }),
   hostelworld: () => `https://www.hostelworld.com/`,
   kiwitaxi: () => `https://kiwitaxi.com/`,
   welcomePickups: () => `https://www.welcomepickups.com/`,

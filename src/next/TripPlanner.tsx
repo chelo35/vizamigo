@@ -10,7 +10,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, TP, type TpId } from '../data/tpPartners';
+import { tpLinks, stay22 } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 
 /**
@@ -165,16 +165,16 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   const flightLink = near?.link || roundLink;
   const rooms = s.style === 'budget' ? 1 : Math.ceil(s.n / 2);
   const cq = encodeURIComponent(city);
-  const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${rooms}`;
+    const hq = { address: `${city}, ${getCountryName(s.to, 'en')}`, checkin: s.dep, checkout: s.ret, adults: s.n, campaign: 'planner' };
+  // Önce komisyon getirenler: Klook (Travelpayouts) ve Stay22 üzerinden Booking, Agoda, Expedia, Hotels.com
   const hotelPicks: PickItem[] = [
-    // Önce komisyon getirenler (Klook otel: Travelpayouts'ta bağlı), sonra popüler siteler
     { id: 'klook', url: 'https://www.klook.com/hotels/' },
-    { id: 'booking', url: bookingLink },
+    { id: 'booking', url: stay22('booking', hq) },
+    { id: 'agoda', url: stay22('agoda', hq) },
+    { id: 'expedia', url: stay22('expedia', hq) },
+    { id: 'hotelscom', url: stay22('hotelscom', hq) },
     ...(s.style === 'budget' ? [{ id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${cq}` }] : []),
-    { id: 'agoda', url: `https://www.agoda.com/search?textToSearch=${cq}&checkIn=${s.dep}&checkOut=${s.ret}&rooms=${rooms}&adults=${s.n}` },
-    { id: 'tripcom', url: `https://www.trip.com/hotels/list?keyword=${cq}&checkin=${s.dep}&checkout=${s.ret}&adult=${s.n}` },
-    { id: 'expedia', url: `https://www.expedia.com/Hotel-Search?destination=${cq}&startDate=${s.dep}&endDate=${s.ret}&adults=${s.n}` },
-    { id: 'hotelscom', url: `https://www.hotels.com/Hotel-Search?destination=${cq}&startDate=${s.dep}&endDate=${s.ret}&adults=${s.n}` }
+    { id: 'tripcom', url: `https://www.trip.com/hotels/list?keyword=${cq}&checkin=${s.dep}&checkout=${s.ret}&adult=${s.n}` }
   ];
   // Türkiye'den Airalo, Yesim, Saily ve GigSky alan adları erişime kapalı (Kasım 2026 kontrolü); Drimsim açılıyor
   const inTR = (() => {

@@ -6,7 +6,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks } from '../data/tpPartners';
+import { tpLinks, stay22 } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 
@@ -93,12 +93,14 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   // Otel: önce komisyon getirenler
   const checkout = plus(start, len || 3);
   const cq = encodeURIComponent(city);
+  const hq = { address: `${city}, ${getCountryName(to, 'en')}`, checkin: start, checkout, adults: n, campaign: 'quick' };
   const hotelPicks: PickItem[] = [
     { id: 'klook', url: 'https://www.klook.com/hotels/' },
-    { id: 'booking', url: `${tpLinks.booking(city)}&checkin=${start}&checkout=${checkout}&group_adults=${n}` },
-    { id: 'agoda', url: `https://www.agoda.com/search?textToSearch=${cq}&checkIn=${start}&checkOut=${checkout}&adults=${n}` },
+    { id: 'booking', url: stay22('booking', hq) },
+    { id: 'agoda', url: stay22('agoda', hq) },
+    { id: 'expedia', url: stay22('expedia', hq) },
+    { id: 'hotelscom', url: stay22('hotelscom', hq) },
     { id: 'tripcom', url: `https://www.trip.com/hotels/list?keyword=${cq}&checkin=${start}&checkout=${checkout}&adult=${n}` },
-    { id: 'expedia', url: `https://www.expedia.com/Hotel-Search?destination=${cq}&startDate=${start}&endDate=${checkout}&adults=${n}` },
     { id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${cq}` }
   ];
   const carPicks: PickItem[] = [
