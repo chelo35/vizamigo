@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { Icon, type IconName } from './Icon';
 import { tpLinks } from '../data/tpPartners';
+import { AdTag } from './ui';
 
 const QuickDealPanel = lazy(() => import('./QuickDealPanel'));
 
@@ -27,6 +28,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
       <div className="vz-qd-head">
         <b>{l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле')}</b>
         <span>{l('Gerçek fiyatlar, tek dokunuş', 'Live prices, one tap', 'Echte Preise, ein Tipp', 'Precios reales, un toque', 'Реальные цены в одно касание')}</span>
+        <AdTag />
       </div>
       <div className="vz-qd-btns" role="tablist">
         {items.map((it) => (

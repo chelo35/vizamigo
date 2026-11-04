@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { LIVE, tourCurrency } from '../data/tours';
+import { AdTag } from './ui';
 
 type LiveTour = {
   id: number;
@@ -104,7 +105,7 @@ export const LiveTours: React.FC<{ pkg: string }> = ({ pkg }) => {
         <>
           <p className="vz-live-head">
             <span className="vz-live-dot" />
-            {l('Güncel turlar ve fiyatlar', 'Live tours & prices', 'Aktuelle Touren & Preise', 'Tours y precios actuales', 'Актуальные туры и цены')}
+            {l('Güncel turlar ve fiyatlar', 'Live tours & prices', 'Aktuelle Touren & Preise', 'Tours y precios actuales', 'Актуальные туры и цены')} <AdTag />
           </p>
           <ul className="vz-live-list">
             {state.tours.map((t) => {

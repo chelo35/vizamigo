@@ -1049,3 +1049,9 @@ html.dark .vz-live-list a { background: rgba(255, 255, 255, 0.03); border-color:
 html.dark .vz-live-head, html.dark .vz-live-dep { color: #c9f3ec !important; }
 html.dark .vz-live-dep em { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
 html.dark .vz-live-skel i { background: rgba(255, 255, 255, 0.06); animation: none; }
+
+/* Reklam etiketi */
+.vz-ad { display: inline-block; vertical-align: middle; margin-left: 4px; padding: 0 5px; border-radius: 4px; border: 1px solid var(--rd-line, #d5dfe1); color: var(--rd-muted, #5b6b70); font-size: 10px; font-weight: 700; line-height: 15px; letter-spacing: 0.03em; text-transform: uppercase; white-space: nowrap; cursor: help; }
+html.dark .vz-ad { border-color: rgba(255,255,255,0.18); color: #9fb3b6; }
+.vz-ad-line { display: block; margin-top: -4px; text-align: right; }
+.vz-foot-legal { flex-basis: 100%; order: 3; margin: 6px 0 0; max-width: 90ch; font-size: 12px; line-height: 1.5; color: var(--rd-muted, #5b6b70); }

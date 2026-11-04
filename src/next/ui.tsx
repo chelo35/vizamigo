@@ -102,13 +102,19 @@ export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: Icon
   </div>
 );
 
+/** Komisyonlu bağlantı etiketi (Ticari Reklam Yönetmeliği: ticari içerik açıkça belirtilmeli) */
+export const AdTag: React.FC = () => {
+  const { l } = useI18n();
+  return <span className="vz-ad" title={l('Bu bağlantıdan yapılan alışverişten Vizamigo komisyon alabilir; fiyat değişmez.', 'Vizamigo may earn a commission on purchases through this link; your price is the same.', 'Vizamigo erhält ggf. eine Provision; dein Preis bleibt gleich.', 'Vizamigo puede recibir una comisión; tu precio no cambia.', 'Vizamigo может получить комиссию; цена для вас не меняется.')}>{l('Reklam', 'Ad', 'Anzeige', 'Publicidad', 'Реклама')}</span>;
+};
+
 export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: React.ReactNode; sub?: React.ReactNode; right?: React.ReactNode; onClick?: () => void; href?: string }> = ({ icon, lead, title, sub, right, onClick, href: raw }) => {
   const href = raw ? routeLink(raw) : raw;
   const inner = (
     <>
       {lead ? <span className="vz-row-lead">{lead}</span> : icon ? <span className="vz-ic sm"><Icon name={icon} size={18} /></span> : null}
       <span className="vz-row-b">
-        <span className="vz-row-t">{title}</span>
+        <span className="vz-row-t">{title}{href && tpIdFromUrl(href) ? <> <AdTag /></> : null}</span>
         {sub && <span className="vz-row-s">{sub}</span>}
       </span>
       {right && <span className="vz-row-r">{right}</span>}

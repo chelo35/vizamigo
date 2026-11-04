@@ -5,6 +5,7 @@ import { Icon } from './Icon';
 import { Picks, type PickItem } from './Picks';
 import { TOURS, toursPath, PACKAGES, TOUR_REGIONS, LIVE, tourRadarLink, type TourRegion } from '../data/tours';
 import { LiveTours } from './LiveTours';
+import { AdTag } from './ui';
 import { stay22, tpLinks, gygLink } from '../data/tpPartners';
 import { getOptimizedImageUrl } from '../data/countryVisuals';
 import { getPassportItems } from '../utils/calculator';
@@ -116,6 +117,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                       <span>{live ? l('Tüm tarihler ve turlar', 'All dates & tours', 'Alle Termine & Touren', 'Todas las fechas y tours', 'Все даты и туры') : l('Paket turları ve fiyatları gör', 'See tours & prices', 'Touren & Preise ansehen', 'Ver tours y precios', 'Туры и цены')}</span>
                       <Icon name="external" size={17} duo={false} />
                     </a>
+                    <span className="vz-ad-line"><AdTag /></span>
                     {other.length > 0 && <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:')} items={other} k={p.id} />}
                     <div className="vz-tour-links">
                       <a href={tpLinks.flights(fromHub, (GEO_DATA[p.code]?.mainHub || "").split("/")[0])} target="_blank" rel="noopener noreferrer sponsored"><Icon name="plane" size={16} /> {l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Билеты')}</a>
