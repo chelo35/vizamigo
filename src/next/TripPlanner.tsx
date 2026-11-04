@@ -1,0 +1,285 @@
+import React, { useEffect, useMemo, useState } from 'react';
+import { useI18n } from '../data/i18n';
+import { Btn, Chip, Chips, Field, List, Row, VisaBadge } from './ui';
+import { PartnerLogo } from './PartnerLogo';
+import { Icon } from './Icon';
+import { GEO_DATA } from '../data/geoData';
+import { getCountryName } from '../data/passportData';
+import { getCountryInsights } from '../data/countryInsights';
+import { getPassportItems } from '../utils/calculator';
+import { getCrossRate } from '../data/currencyRates';
+import { useLiveFx } from '../utils/liveData';
+import { tpLinks } from '../data/tpPartners';
+
+/**
+ * Seyahat planlayıcı (1. aşama): nereden, nereye, tarih, kişi →
+ * gerçek gidiş-dönüş uçuş fiyatı, ±3 gün içinde daha ucuz tarihler,
+ * konaklama/günlük harcama/sigorta/eSIM tahmini ve vize durumu.
+ */
+type Fl = { price: number; dep: string; ret: string | null; transfers: number | null; airline: string | null; link: string | null };
+type Res = { currency: string; exact: Fl | null; best: Fl | null; alts: Fl[] };
+type Style = 'budget' | 'mid';
+interface State { from: string; to: string; dep: string; ret: string; n: number; style: Style }
+
+const KEY = 'vz_trip_v1';
+const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const plus = (s: string, days: number) => {
+  const d = new Date(`${s}T12:00:00`);
+  d.setDate(d.getDate() + days);
+  return iso(d);
+};
+const nightsOf = (a: string, b: string) => Math.max(1, Math.round((Date.parse(b) - Date.parse(a)) / 86400000));
+const ddmm = (s: string) => `${s.slice(8, 10)}${s.slice(5, 7)}`;
+
+/** "25 - 50 $" / "75 - 130 €" → ortalama ve para birimi */
+const parseRange = (s?: string): { v: number; cur: string } | null => {
+  if (!s) return null;
+  const nums = (s.match(/\d+(?:[.,]\d+)?/g) || []).slice(0, 2).map((x) => parseFloat(x.replace(',', '.')));
+  if (!nums.length) return null;
+  const v = nums.length > 1 ? (nums[0] + nums[1]) / 2 : nums[0];
+  const cur = s.includes('€') ? 'EUR' : s.includes('£') ? 'GBP' : 'USD';
+  return { v, cur };
+};
+
+const cache = new Map<string, Promise<Res | null>>();
+const loadTrip = (from: string, to: string, dep: string, ret: string, cur: string) => {
+  const k = [from, to, dep, ret, cur].join('|');
+  if (!cache.has(k)) {
+    cache.set(
+      k,
+      fetch(`/api/trip-flights?from=${from}&to=${to}&dep=${dep}&ret=${ret}&cur=${cur}`)
+        .then((r) => (r.ok ? r.json() : null))
+        .catch(() => null)
+    );
+  }
+  return cache.get(k)!;
+};
+const loadOneWay = (from: string, to: string, cur: string): Promise<number | null> =>
+  fetch(`/api/flight-price?from=${from}&to=${to}&cur=${cur}`)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => (j && j.price ? Number(j.price) : null))
+    .catch(() => null);
+
+export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCountry: (c: string) => void }> = ({ passport, dest, onOpenCountry }) => {
+  const { l, language } = useI18n();
+  useLiveFx();
+  const cur = language === 'tr' ? 'TRY' : language === 'ru' ? 'RUB' : 'EUR';
+  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'ru' ? 'ru-RU' : 'en-GB';
+  const money = (v: number) => {
+    try {
+      return new Intl.NumberFormat(loc, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(Math.round(v));
+    } catch {
+      return `${Math.round(v)} ${cur}`;
+    }
+  };
+  const fmtDay = (s: string) => new Date(`${s}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short', weekday: 'short' });
+
+  const [s, setS] = useState<State>(() => {
+    const today = iso(new Date());
+    const def: State = { from: GEO_DATA[passport] ? passport : 'TR', to: dest && dest !== passport ? dest : 'TH', dep: plus(today, 30), ret: plus(today, 37), n: 1, style: 'mid' };
+    try {
+      const saved = JSON.parse(localStorage.getItem(KEY) || 'null') as State | null;
+      if (saved && saved.dep > today && GEO_DATA[saved.from] && GEO_DATA[saved.to]) return { ...def, ...saved, to: dest && dest !== saved.from ? dest : saved.to };
+    } catch {}
+    return def;
+  });
+  const set = (p: Partial<State>) => {
+    const next = { ...s, ...p };
+    if (next.ret <= next.dep) next.ret = plus(next.dep, 1);
+    setS(next);
+    try {
+      localStorage.setItem(KEY, JSON.stringify(next));
+    } catch {}
+  };
+
+  const opts = useMemo(() => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((a, b) => a.n.localeCompare(b.n, language)), [language]);
+  const fromIata = GEO_DATA[s.from]?.mainHub || '';
+  const toIata = GEO_DATA[s.to]?.mainHub || '';
+  const city = GEO_DATA[s.to]?.capital || getCountryName(s.to, 'en');
+  const nights = nightsOf(s.dep, s.ret);
+  const item = useMemo(() => getPassportItems(passport).find((x) => x.c === s.to) || null, [passport, s.to]);
+  const costs = useMemo(() => getCountryInsights(s.to, 'en').livingCosts, [s.to]);
+
+  // Uçuş fiyatları
+  const [res, setRes] = useState<Res | null>(null);
+  const [oneWay, setOneWay] = useState<number | null>(null);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setRes(null);
+    setOneWay(null);
+    if (!/^[A-Z]{3}$/.test(fromIata) || !/^[A-Z]{3}$/.test(toIata) || fromIata === toIata) return;
+    let on = true;
+    setLoading(true);
+    const c = cur.toLowerCase();
+    loadTrip(fromIata, toIata, s.dep, s.ret, c).then((r) => {
+      if (!on) return;
+      setRes(r);
+      if (!r?.exact) loadOneWay(fromIata, toIata, c).then((v) => on && setOneWay(v));
+      setLoading(false);
+    });
+    return () => {
+      on = false;
+    };
+  }, [fromIata, toIata, s.dep, s.ret, cur]);
+
+  // Para çevirme (USD/EUR tabanlı tahminler → görüntüleme para birimi)
+  const conv = (v: number, from: string) => v * getCrossRate(from, cur);
+  const conv1 = (r: { v: number; cur: string } | null) => (r ? conv(r.v, r.cur) : 0);
+
+  const flightPP = res?.exact?.price ?? (oneWay ? oneWay * 2 : 0);
+  const flightReal = !!res?.exact;
+  const flight = flightPP * s.n;
+  const dorm = conv1(parseRange(costs.hostelDormUsd));
+  const hotel = conv1(parseRange(costs.hotel3StarUsd));
+  const stayNight = s.style === 'budget' ? dorm * s.n : hotel * Math.ceil(s.n / 2);
+  const stay = stayNight * nights;
+  const dailyPP = conv1(parseRange(s.style === 'budget' ? costs.dailyBudgetBackpackerUsd : costs.dailyBudgetMidrangeUsd));
+  const spendPP = Math.max(dailyPP * 0.45, dailyPP - stayNight / s.n);
+  const spend = spendPP * nights * s.n;
+  const insurance = conv(2, 'USD') * (nights + 1) * s.n;
+  const esim = conv(nights <= 8 ? 10 : nights <= 16 ? 18 : 28, 'USD') * s.n;
+  const total = flight + stay + spend + insurance + esim;
+
+  const roundLink = `https://www.aviasales.com/search/${fromIata}${ddmm(s.dep)}${toIata}${ddmm(s.ret)}${s.n}`;
+  const flightLink = res?.exact?.link || roundLink;
+  const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${s.style === 'budget' ? 1 : Math.ceil(s.n / 2)}`;
+
+  const est = <span className="vz-trip-tag est">{l('Tahmini', 'Estimate', 'Schätzung', 'Estimación', 'Оценка')}</span>;
+  const real = <span className="vz-trip-tag real">{l('Gerçek fiyat', 'Live price', 'Echtpreis', 'Precio real', 'Реальная цена')}</span>;
+  const sameCountry = s.from === s.to;
+
+  return (
+    <div className="vz-stack vz-trip">
+      <form className="vz-card tone-sea" onSubmit={(e) => e.preventDefault()}>
+        <div className="vz-formgrid">
+          <Field label={l('Nereden', 'From', 'Von', 'Desde', 'Откуда')} htmlFor="vz-tp-f" hint={fromIata}>
+            <select id="vz-tp-f" className="vz-select" value={s.from} onChange={(e) => set({ from: e.target.value })}>
+              {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
+            </select>
+          </Field>
+          <Field label={l('Nereye', 'To', 'Nach', 'A', 'Куда')} htmlFor="vz-tp-t" hint={toIata}>
+            <select id="vz-tp-t" className="vz-select" value={s.to} onChange={(e) => set({ to: e.target.value })}>
+              {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
+            </select>
+          </Field>
+          <Field label={l('Gidiş', 'Depart', 'Hinflug', 'Ida', 'Туда')} htmlFor="vz-tp-d">
+            <input id="vz-tp-d" type="date" className="vz-input" min={plus(iso(new Date()), 1)} value={s.dep} onChange={(e) => e.target.value && set({ dep: e.target.value })} />
+          </Field>
+          <Field label={l('Dönüş', 'Return', 'Rückflug', 'Vuelta', 'Обратно')} htmlFor="vz-tp-r">
+            <input id="vz-tp-r" type="date" className="vz-input" min={plus(s.dep, 1)} value={s.ret} onChange={(e) => e.target.value && set({ ret: e.target.value })} />
+          </Field>
+          <Field label={l('Kişi', 'Travellers', 'Reisende', 'Viajeros', 'Человек')} htmlFor="vz-tp-n">
+            <select id="vz-tp-n" className="vz-select" value={s.n} onChange={(e) => set({ n: Number(e.target.value) })}>
+              {[1, 2, 3, 4, 5, 6].map((n) => <option key={n} value={n}>{n}</option>)}
+            </select>
+          </Field>
+        </div>
+        <Chips>
+          <Chip on={s.style === 'budget'} onClick={() => set({ style: 'budget' })}>{l('Ekonomik (hostel)', 'Budget (hostel)', 'Sparsam (Hostel)', 'Económico (hostal)', 'Эконом (хостел)')}</Chip>
+          <Chip on={s.style === 'mid'} onClick={() => set({ style: 'mid' })}>{l('Orta (3★ otel)', 'Mid-range (3★ hotel)', 'Mittel (3★ Hotel)', 'Medio (hotel 3★)', 'Средний (3★ отель)')}</Chip>
+        </Chips>
+      </form>
+
+      {sameCountry ? (
+        <p className="vz-muted">{l('Nereden ve nereye aynı ülke. Farklı bir hedef seç.', 'From and to are the same country. Pick another destination.', 'Start und Ziel sind gleich.', 'Origen y destino son el mismo país.', 'Откуда и куда совпадают.')}</p>
+      ) : (
+        <>
+          <section className="vz-card vz-trip-total" aria-live="polite">
+            <span className="vz-muted">{l(`${nights} gece · ${s.n} kişi · toplam tahmini bütçe`, `${nights} nights · ${s.n} ${s.n > 1 ? 'people' : 'person'} · estimated total`, `${nights} Nächte · ${s.n} Pers. · geschätzt gesamt`, `${nights} noches · ${s.n} pers. · total estimado`, `${nights} ноч. · ${s.n} чел. · итого примерно`)}</span>
+            <b>{flightPP ? money(total) : loading ? '…' : `${money(total - flight)} +`}</b>
+            <span className="vz-muted" style={{ fontSize: 13 }}>
+              {flightPP
+                ? l(`Kişi başı ≈ ${money(total / s.n)}`, `≈ ${money(total / s.n)} per person`, `≈ ${money(total / s.n)} pro Person`, `≈ ${money(total / s.n)} por persona`, `≈ ${money(total / s.n)} на человека`)
+                : loading
+                  ? l('Uçuş fiyatı aranıyor…', 'Looking up flight prices…', 'Flugpreise werden gesucht…', 'Buscando precios de vuelos…', 'Ищем цены на билеты…')
+                  : l('Bu rota için uçuş fiyatı bulunamadı; uçuş hariç.', 'No flight price found for this route; flights not included.', 'Kein Flugpreis gefunden; ohne Flug.', 'Sin precio de vuelo; sin incluir vuelos.', 'Цена перелёта не найдена; без перелёта.')}
+            </span>
+          </section>
+
+          {res && res.alts.length > 0 && (
+            <section className="vz-card">
+              <h3 style={{ margin: '0 0 8px', fontSize: 16 }}><Icon name="cal" size={18} /> {l('±3 gün içinde daha ucuz tarihler', 'Cheaper dates within ±3 days', 'Günstigere Daten (±3 Tage)', 'Fechas más baratas (±3 días)', 'Дешевле в пределах ±3 дней')}</h3>
+              <div className="vz-trip-alts">
+                {res.alts.map((a) => (
+                  <button key={`${a.dep}${a.ret}`} type="button" className="vz-trip-alt" onClick={() => set({ dep: a.dep, ret: a.ret || s.ret })}>
+                    <b>{money(a.price)}</b>
+                    <span>{fmtDay(a.dep)} → {a.ret ? fmtDay(a.ret) : ''}</span>
+                    {res.exact && <i>−{money(res.exact.price - a.price)}</i>}
+                  </button>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <List>
+            <Row
+              lead={<PartnerLogo id="aviasales" />}
+              title={<>{l('Uçuş (gidiş-dönüş)', 'Flights (round trip)', 'Flug (hin & zurück)', 'Vuelo (ida y vuelta)', 'Перелёт (туда-обратно)')} {flightPP ? (flightReal ? real : est) : null}</>}
+              sub={
+                res?.exact
+                  ? `${fromIata} → ${toIata} · ${res.exact.transfers === 0 ? l('direkt', 'direct', 'direkt', 'directo', 'прямой') : l(`${res.exact.transfers ?? '?'} aktarma`, `${res.exact.transfers ?? '?'} stop(s)`, `${res.exact.transfers ?? '?'} Umstieg(e)`, `${res.exact.transfers ?? '?'} escala(s)`, `пересадок: ${res.exact.transfers ?? '?'}`)}${s.n > 1 ? ` · ${money(flightPP)} × ${s.n}` : ''}`
+                  : oneWay
+                    ? l('Bu tarihler için fiyat yok; tek yön fiyatın 2 katı alındı.', 'No fare for these dates; based on 2 × the one-way fare.', 'Kein Preis für diese Daten; 2 × Einzelflug.', 'Sin tarifa para estas fechas; 2 × ida.', 'Нет цены на даты; 2 × в одну сторону.')
+                    : `${fromIata} → ${toIata}`
+              }
+              right={<span className="vz-trip-amt">{flightPP ? money(flight) : loading ? '…' : '—'}</span>}
+              href={flightLink}
+            />
+            <Row
+              lead={<PartnerLogo id="booking" />}
+              title={<>{s.style === 'budget' ? l('Hostel', 'Hostel', 'Hostel', 'Hostal', 'Хостел') : l('Otel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Отель (3★)')} {est}</>}
+              sub={`${city} · ${l(`${nights} gece`, `${nights} nights`, `${nights} Nächte`, `${nights} noches`, `${nights} ноч.`)} · ≈ ${money(stayNight)} / ${l('gece', 'night', 'Nacht', 'noche', 'ночь')}`}
+              right={<span className="vz-trip-amt">{money(stay)}</span>}
+              href={bookingLink}
+            />
+            <Row
+              icon="food"
+              title={<>{l('Yemek, ulaşım ve gezme', 'Food, transport & sights', 'Essen, Transport, Ausflüge', 'Comida, transporte y visitas', 'Еда, транспорт, экскурсии')} {est}</>}
+              sub={`≈ ${money(spendPP)} / ${l('kişi / gün', 'person / day', 'Person / Tag', 'persona / día', 'чел. / день')}`}
+              right={<span className="vz-trip-amt">{money(spend)}</span>}
+            />
+            <Row
+              icon="shield"
+              title={<>{l('Seyahat sağlık sigortası', 'Travel health insurance', 'Reisekrankenversicherung', 'Seguro de viaje', 'Медицинская страховка')} {est}</>}
+              sub={l('Yaklaşık fiyat; kapsam ve yaşa göre değişir.', 'Rough price; varies with cover and age.', 'Richtwert; je nach Deckung und Alter.', 'Precio orientativo; varía según cobertura y edad.', 'Ориентир; зависит от покрытия и возраста.')}
+              right={<span className="vz-trip-amt">{money(insurance)}</span>}
+            />
+            <Row
+              lead={<PartnerLogo id="yesim" />}
+              title={<>eSIM {est}</>}
+              sub={l('İnmeden internet: Yesim', 'Data from landing: Yesim', 'Daten ab Landung: Yesim', 'Datos al aterrizar: Yesim', 'Интернет сразу: Yesim')}
+              right={<span className="vz-trip-amt">{money(esim)}</span>}
+              href={tpLinks.yesim()}
+            />
+          </List>
+
+          <section className="vz-card">
+            <div className="vz-row-flex" style={{ justifyContent: 'space-between', gap: 10 }}>
+              <span className="vz-row-flex" style={{ gap: 8 }}>
+                <VisaBadge item={item} />
+                <span>{getCountryName(s.to, language)}</span>
+              </span>
+              <Btn variant="soft" small iconRight="next" onClick={() => onOpenCountry(s.to)}>{l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Правила въезда')}</Btn>
+            </div>
+            <List>
+              <Row lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado', 'Трансфер')} sub="Kiwitaxi" href={tpLinks.kiwitaxi()} />
+              <Row lead={<PartnerLogo id="discovercars" />} title={l('Araç kirala', 'Rent a car', 'Mietwagen', 'Alquiler de coche', 'Аренда авто')} sub="DiscoverCars" href={tpLinks.discovercars(getCountryName(s.to, 'en'))} />
+            </List>
+          </section>
+
+          <p className="vz-muted" style={{ fontSize: 12.5 }}>
+            {l(
+              'Uçuş fiyatları Aviasales\'te son günlerde bulunan en düşük fiyatlardır; satın alırken değişebilir. Konaklama ve harcamalar ülke ortalamalarına dayanan tahminlerdir.',
+              'Flight prices are the lowest fares found on Aviasales in recent days and may change when you book. Stay and spending are estimates based on country averages.',
+              'Flugpreise sind die niedrigsten kürzlich auf Aviasales gefundenen Tarife und können sich ändern. Unterkunft und Ausgaben sind Schätzungen nach Landesdurchschnitt.',
+              'Los precios de vuelos son las tarifas más bajas encontradas en Aviasales en los últimos días y pueden cambiar. Alojamiento y gastos son estimaciones según medias del país.',
+              'Цены на билеты — минимальные найденные на Aviasales за последние дни и могут измениться. Жильё и расходы — оценка по средним данным страны.'
+            )}
+          </p>
+        </>
+      )}
+    </div>
+  );
+};
+
+export default TripPlanner;

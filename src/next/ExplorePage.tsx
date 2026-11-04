@@ -115,6 +115,12 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       render: () => <ChangesView passport={p.currentPassport} onOpenAudit={p.onOpenAudit} onReport={p.onReport} onOpenCountry={p.onOpenCountry} />
     },
     {
+      id: 'trip', icon: 'plane',
+      title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'),
+      desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'),
+      onOpen: () => p.onOpenTool('nomad', 'trip')
+    },
+    {
       id: 'easy', icon: 'sun',
       title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка'),
       desc: l('Uçuş, otel, ulaşım, sigorta', 'Flights, stay, transfer, insurance', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),

@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { Suspense, lazy, useEffect, useMemo, useState } from 'react';
+const TripPlanner = lazy(() => import('./TripPlanner'));
 import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Bullets, Card, Chip, Chips, Field, Flag, LinkBtn, List, Page, Row, Stat, Tags, Tile, TileGrid, VisaBadge, OpenRequest, fmtNum } from './ui';
@@ -472,6 +473,7 @@ export const ToolsHub: React.FC<{ passport: string; openRequest: OpenRequest; on
   const destName = getCountryName(dest, language);
 
   const tiles: Tile[] = [
+    { id: 'trip', icon: 'plane', isNew: true, title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'), desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'), render: () => <Suspense fallback={null}><TripPlanner passport={passport} dest={dest} onOpenCountry={onOpenCountry} /></Suspense> },
     { id: 'pack', icon: 'bag', title: l('Bavul listesi', 'Packing list', 'Packliste', 'Lista de maleta', 'Список вещей'), desc: l('Yolculuk tipine göre', 'By trip type', 'Nach Reiseart', 'Según el viaje', 'По типу поездки'), render: () => <PackView dest={dest} setDest={setDest} /> },
     { id: 'docs', icon: 'doc', title: l('Evrak listesi', 'Document checklist', 'Dokumentenliste', 'Documentos', 'Документы'), desc: l(`${destName} için gerekenler`, `What ${destName} asks for`, `Für ${destName}`, `Para ${destName}`, `Для ${destName}`), render: () => <DocsCheckView passport={passport} dest={dest} setDest={setDest} /> },
     { id: 'fx', icon: 'fx', title: l('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor', 'Конвертер'), desc: l('Canlı kurlar', 'Live rates', 'Live-Kurse', 'Tipos en vivo', 'Живые курсы'), render: () => <FxView passport={passport} dest={dest} /> },

@@ -892,3 +892,25 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
   .vz-guide-card:not(.main) > span:last-child { display: none; }
   .vz-guide-card b { font-size: 15px; }
 }
+
+/* Seyahat planlayıcı */
+.vz-trip-total { display: flex; flex-direction: column; gap: 4px; }
+.vz-trip-total > b { font-size: clamp(28px, 6vw, 38px); letter-spacing: -0.02em; color: var(--rd-sea-ink, var(--vz-fg)); line-height: 1.1; }
+.vz-trip-amt { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.vz-trip-tag { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 99px; font-size: 11px; font-weight: 600; vertical-align: 1px; }
+.vz-trip-tag.real { background: #dcfce7; color: #166534; }
+.vz-trip-tag.est { background: var(--rd-sea-tint, #e6f4f3); color: var(--rd-muted, #5b6b70); }
+html.dark .vz-trip-tag.real { background: rgba(34, 197, 94, 0.18); color: #86efac; }
+html.dark .vz-trip-tag.est { background: rgba(255, 255, 255, 0.08); color: #b8c4c7; }
+.vz-trip-alts { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; }
+.vz-trip-alt { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.vz-trip-alt:hover, .vz-trip-alt:focus-visible { border-color: var(--rd-sea, #0d9488); }
+.vz-trip-alt b { font-size: 17px; }
+.vz-trip-alt span { font-size: 13px; color: var(--rd-muted, #5b6b70); }
+.vz-trip-alt i { font-style: normal; font-size: 12px; font-weight: 700; color: #15803d; }
+html.dark .vz-trip-alt i { color: #86efac; }
+@media (max-width: 640px) {
+  .vz-trip .vz-formgrid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .vz-trip .vz-formgrid > :last-child { grid-column: 1 / -1; }
+  .vz-trip .vz-select, .vz-trip .vz-input { min-width: 0; }
+}
