@@ -10,6 +10,7 @@ import { Icon } from './Icon';
 type Pal = [string, string]; // zemin gradyanı (açık, koyu)
 const PAL: Record<string, Pal> = {
   pin: ['#FF8A7A', '#E8505B'],
+  wifi: ['#9AA8FF', '#5B5BD6'],
   globe: ['#5CC8F0', '#2B7BD8'],
   scale: ['#B79CFF', '#7653E0'],
   star: ['#FFD36B', '#F59E0B'],

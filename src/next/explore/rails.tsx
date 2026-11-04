@@ -4,8 +4,12 @@ import { getPassportItems } from '../../utils/calculator';
 import { CountryItem } from '../../data/passportData';
 import { VISA_CHANGE_ALERTS } from '../../data/changeLog';
 import { CountryCard } from '../country';
-import { Btn, SecHead } from '../ui';
+import { Btn } from '../ui';
 import { Icon } from '../Icon';
+import { VisaBadge } from '../ui';
+import { PACKAGES, TOUR_REGIONS, toursPath, type TourPackage } from '../../data/tours';
+import { getOptimizedImageUrl } from '../../data/countryVisuals';
+import { getCountryName } from '../../data/passportData';
 
 // Gezginlerin en çok baktığı yerler önce gelsin
 const POPULAR = ['GE', 'RS', 'BA', 'ME', 'AL', 'MK', 'TH', 'MY', 'JP', 'KR', 'SG', 'ID', 'BR', 'MX', 'AR', 'CO', 'MA', 'TN', 'QA', 'AZ', 'JO', 'PH', 'ZA', 'EC', 'PE', 'CL', 'EG', 'IN', 'LK', 'VN', 'KH', 'KE', 'TZ', 'MV', 'NP', 'AU', 'US', 'GB', 'CA', 'NZ', 'IT', 'FR', 'ES', 'GR', 'PT', 'NL', 'DE', 'AE', 'CU', 'DO'];
@@ -87,5 +91,57 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
         more={more}
       />
     </>
+  );
+};
+
+// Ana sayfa tur şeridi: önce kolay girilen ülkelerin turları
+const TOUR_ORDER = ['thailand-10', 'balkans-8', 'japan-12', 'egypt-8', 'italy-10', 'vietnam-10', 'morocco-8', 'bali-7', 'greece-8', 'dubai-5', 'cappadocia-3', 'peru-8', 'srilanka-8', 'uzbekistan-8', 'korea-8'];
+const LANGS = ['tr', 'en', 'de', 'es', 'ru'];
+
+/** Ana sayfa: fotoğraflı paket tur şeridi; kart turlar sayfasında o tura gider. */
+export const TourRail: React.FC<{ passport: string }> = ({ passport }) => {
+  const { l, language } = useI18n();
+  const i = Math.max(0, LANGS.indexOf(language));
+  const items = useMemo(() => new Map(getPassportItems(passport).map((x) => [x.c, x])), [passport]);
+  const pkgs = useMemo(() => {
+    const byId = new Map(PACKAGES.map((p) => [p.id, p]));
+    const list = TOUR_ORDER.map((id) => byId.get(id)).filter((p): p is TourPackage => !!p && p.code !== passport);
+    const rank = (p: TourPackage) => {
+      const it = items.get(p.code);
+      return !it ? 2 : it.id || it.cat === 'free' ? 0 : it.cat === 'evisa' || it.cat === 'eta' || it.cat === 'voa' ? 1 : 2;
+    };
+    return list.map((p, k) => ({ p, k })).sort((a, b) => rank(a.p) - rank(b.p) || a.k - b.k).slice(0, 10).map((x) => x.p);
+  }, [items, passport]);
+  const base = toursPath(language);
+  return (
+    <section className="vz-home-sec" aria-labelledby="vz-h-tours">
+      <div className="vz-sechead">
+        <div>
+          <span className="vz-eyebrow">{l('Rehberli, her şey dahil', 'Guided, all-inclusive', 'Geführt, alles inklusive', 'Guiados, todo incluido', 'С гидом, всё включено')}</span>
+          <h2 id="vz-h-tours">{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</h2>
+        </div>
+        <a className="vz-btn vz-btn-ghost sm" href={base}>{l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все')}</a>
+      </div>
+      <div className="vz-rail">
+        {pkgs.map((p) => {
+          const img = p.photo || getOptimizedImageUrl(`/images/countries/${p.code.toLowerCase()}.webp`, { width: 360 });
+          const region = TOUR_REGIONS.find((r) => r.id === p.region)?.name[i] || '';
+          return (
+            <a key={p.id} className="vz-ccard vz-tcard" href={`${base}#${p.id}`}>
+              <span className="vz-ccard-img">
+                <img src={img} alt={p.name[i] || getCountryName(p.code, language)} loading="lazy" decoding="async" width={360} height={270} />
+                <span className="vz-tcard-days">{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`)}</span>
+                {p.code !== passport && <VisaBadge item={items.get(p.code) || null} />}
+              </span>
+              <span className="vz-ccard-b">
+                <span className="vz-ccard-t"><span>{p.name[i]}</span></span>
+                <span className="vz-ccard-s">{p.route}</span>
+                <span className="vz-ccard-s">{region}</span>
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
   );
 };

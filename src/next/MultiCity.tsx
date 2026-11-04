@@ -10,7 +10,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { stay22, s22Flights } from '../data/tpPartners';
+import { stay22, s22Flights, tpLinks } from '../data/tpPartners';
 
 /**
  * Çok şehirli rota (planlayıcı 2. aşama): başlangıç ülkesi → 2–5 durak (her birinde kaç gece) → isteğe bağlı dönüş.
@@ -83,29 +83,41 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
     if (s.back && prev !== s.from) out.push({ from: prev, to: s.from, date: d });
     return out;
   }, [s]);
-  const valid = legs.every((g) => /^[A-Z]{3}$/.test(hub(g.from)) && /^[A-Z]{3}$/.test(hub(g.to)) && hub(g.from) !== hub(g.to));
-  const q = legs.map((g) => `${hub(g.from)}-${hub(g.to)}-${g.date}`).join(',');
+  // Aynı havalimanına uçuş olmaz (ör. aynı ülke arka arkaya): o ayak "uçuş yok" sayılır, diğerleri yine aranır.
+  const legOk = legs.map((g) => /^[A-Z]{3}$/.test(hub(g.from)) && /^[A-Z]{3}$/.test(hub(g.to)) && hub(g.from) !== hub(g.to));
+  const okIdx = legs.map((_, i) => i).filter((i) => legOk[i]);
+  const q = okIdx.map((i) => `${hub(legs[i].from)}-${hub(legs[i].to)}-${legs[i].date}`).join(',');
 
   const [res, setRes] = useState<LegRes[] | null>(null);
   const [busy, setBusy] = useState(false);
   useEffect(() => {
     setRes(null);
-    if (!valid || !legs.length) return;
+    if (!q) {
+      setRes(legs.map(() => null));
+      return;
+    }
     let on = true;
     setBusy(true);
     fetch(`/api/multi-city?legs=${encodeURIComponent(q)}&cur=${cur.toLowerCase()}`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((j) => on && setRes(Array.isArray(j?.legs) ? j.legs : []))
-      .catch(() => on && setRes([]))
+      .then((j) => {
+        if (!on) return;
+        const got: LegRes[] = Array.isArray(j?.legs) ? j.legs : [];
+        const out: LegRes[] = legs.map(() => null);
+        okIdx.forEach((li, k) => (out[li] = got[k] && (got[k]!.exact || got[k]!.best) ? got[k] : null));
+        setRes(out);
+      })
+      .catch(() => on && setRes(legs.map(() => null)))
       .finally(() => on && setBusy(false));
     return () => {
       on = false;
     };
-  }, [q, cur, valid, legs.length]);
+  }, [q, cur, legs.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const conv = (v: number, from: string) => v * getCrossRate(from, cur);
   const flightPP = res ? res.reduce((a, r) => a + (r ? (r.exact || r.best).price : 0), 0) : 0;
-  const missing = res ? res.filter((r) => !r).length : 0;
+  const missing = res ? res.filter((r, i) => !r && legOk[i]).length : 0;
+  const ground = legs.filter((_, i) => !legOk[i]).length;
   const stays = s.stops.map((st) => {
     const c = getCountryInsights(st.to, 'en').livingCosts;
     const h = avgOf(c.hotel3StarUsd);
@@ -158,7 +170,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
           )}
           <label className="vz-row-flex" style={{ gap: 6, fontSize: 14 }}>
             <input type="checkbox" checked={s.back} onChange={(e) => set({ back: e.target.checked })} />
-            {l(`${getCountryName(s.from, language)}'ye dön`, `Return to ${getCountryName(s.from, language)}`, `Rückflug nach ${getCountryName(s.from, language)}`, `Volver a ${getCountryName(s.from, language)}`, `Обратно: ${getCountryName(s.from, language)}`)}
+            {l(`Sonunda başlangıç ülkesine dön (${getCountryName(s.from, language)})`, `Return to ${getCountryName(s.from, language)}`, `Rückflug nach ${getCountryName(s.from, language)}`, `Volver a ${getCountryName(s.from, language)}`, `Обратно: ${getCountryName(s.from, language)}`)}
           </label>
         </div>
       </form>
@@ -174,6 +186,19 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
 
       <List>
         {legs.map((g, i) => {
+          if (!legOk[i]) {
+            const gr = tpLinks.ground(g.from, g.to);
+            return (
+              <Row
+                key={`${q}-g${i}`}
+                lead={<PartnerLogo id={gr.id} />}
+                title={`${getCountryName(g.from, language)} → ${getCountryName(g.to, language)}`}
+                sub={l('Aynı havalimanı: uçuş gerekmez, tren ya da otobüse bak', 'Same airport: no flight needed, check trains or buses', 'Gleicher Flughafen: Zug oder Bus', 'Mismo aeropuerto: tren o autobús', 'Тот же аэропорт: поезд или автобус')}
+                right={<span className="vz-trip-amt">—</span>}
+                href={gr.url}
+              />
+            );
+          }
           const r = res?.[i];
           const f = r ? r.exact || r.best : null;
           const search = `https://www.aviasales.com/search/${hub(g.from)}${ddmm(g.date)}${hub(g.to)}${s.n}`;

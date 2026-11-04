@@ -10,7 +10,6 @@ import { GUIDE_LABELS, GUIDE_LINKS } from '../data/guideLinks';
 import { Icon } from './Icon';
 import { SmartSearch } from './SmartSearch';
 import { QuickDeals } from './QuickDeals';
-import { toursPath } from '../data/tours';
 import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
 const WhereView = lazy(() => V().then((m) => ({ default: m.WhereView })));
@@ -24,6 +23,7 @@ const WM = () => import('./WorldMap');
 const VisaWorldMap = lazy(() => WM().then((m) => ({ default: m.VisaWorldMap })));
 const RadarWorldMap = lazy(() => WM().then((m) => ({ default: m.RadarWorldMap })));
 const HomeRails = lazy(() => import('./explore/rails').then((m) => ({ default: m.HomeRails })));
+const TourRail = lazy(() => import('./explore/rails').then((m) => ({ default: m.TourRail })));
 
 export interface ExploreProps {
   currentPassport: string;
@@ -187,14 +187,11 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
 
-        <a className="vz-tours-promo" href={toursPath(language)}>
-          <span className="vz-ic"><Icon name="ticket" size={22} /></span>
-          <span>
-            <b>{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</b>
-            <span>{l('Tayland, Balkanlar, Mısır, İtalya, Japonya, Türkiye… 5 günden 12 güne rehberli turlar', 'Thailand, the Balkans, Egypt, Italy, Japan, Türkiye… guided tours from 5 to 12 days', 'Thailand, Istanbul, Kappadokien, Ägypten, Italien, Balkan, Dubai und mehr', 'Tailandia, Estambul, Capadocia, Egipto, Italia, Balcanes, Dubái y más', 'Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие')}</span>
-          </span>
-          <Icon name="next" size={20} duo={false} />
-        </a>
+        <Deferred minHeight={320}>
+          <Suspense fallback={null}>
+            <TourRail passport={p.currentPassport} />
+          </Suspense>
+        </Deferred>
 
         <section className="vz-home-sec" aria-labelledby="vz-h-guides">
           <SecHead
