@@ -114,7 +114,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
     loadTrip(fromIata, toIata, s.dep, s.ret, c).then((r) => {
       if (!on) return;
       setRes(r);
-      if (!r?.exact) loadOneWay(fromIata, toIata, c).then((v) => on && setOneWay(v));
+      if (!r?.exact && !r?.best) loadOneWay(fromIata, toIata, c).then((v) => on && setOneWay(v));
       setLoading(false);
     });
     return () => {
@@ -126,8 +126,9 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   const conv = (v: number, from: string) => v * getCrossRate(from, cur);
   const conv1 = (r: { v: number; cur: string } | null) => (r ? conv(r.v, r.cur) : 0);
 
-  const flightPP = res?.exact?.price ?? (oneWay ? oneWay * 2 : 0);
-  const flightReal = !!res?.exact;
+  const near = res?.exact || res?.best || null;
+  const flightPP = near?.price ?? (oneWay ? oneWay * 2 : 0);
+  const flightReal = !!near;
   const flight = flightPP * s.n;
   const dorm = conv1(parseRange(costs.hostelDormUsd));
   const hotel = conv1(parseRange(costs.hotel3StarUsd));
@@ -141,7 +142,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   const total = flight + stay + spend + insurance + esim;
 
   const roundLink = `https://www.aviasales.com/search/${fromIata}${ddmm(s.dep)}${toIata}${ddmm(s.ret)}${s.n}`;
-  const flightLink = res?.exact?.link || roundLink;
+  const flightLink = near?.link || roundLink;
   const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${s.style === 'budget' ? 1 : Math.ceil(s.n / 2)}`;
 
   const est = <span className="vz-trip-tag est">{l('Tahmini', 'Estimate', 'Schätzung', 'Estimación', 'Оценка')}</span>;
@@ -198,7 +199,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
 
           {res && res.alts.length > 0 && (
             <section className="vz-card">
-              <h3 style={{ margin: '0 0 8px', fontSize: 16 }}><Icon name="cal" size={18} /> {l('±3 gün içinde daha ucuz tarihler', 'Cheaper dates within ±3 days', 'Günstigere Daten (±3 Tage)', 'Fechas más baratas (±3 días)', 'Дешевле в пределах ±3 дней')}</h3>
+              <h3 style={{ margin: '0 0 8px', fontSize: 16 }}><Icon name="cal" size={18} /> {res.exact ? l('±3 gün içinde daha ucuz tarihler', 'Cheaper dates within ±3 days', 'Günstigere Daten (±3 Tage)', 'Fechas más baratas (±3 días)', 'Дешевле в пределах ±3 дней') : l('±3 gün içinde bulunan fiyatlar', 'Fares found within ±3 days', 'Preise innerhalb ±3 Tage', 'Tarifas en ±3 días', 'Цены в пределах ±3 дней')}</h3>
               <div className="vz-trip-alts">
                 {res.alts.map((a) => (
                   <button key={`${a.dep}${a.ret}`} type="button" className="vz-trip-alt" onClick={() => set({ dep: a.dep, ret: a.ret || s.ret })}>
@@ -216,7 +217,9 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               lead={<PartnerLogo id="aviasales" />}
               title={<>{l('Uçuş (gidiş-dönüş)', 'Flights (round trip)', 'Flug (hin & zurück)', 'Vuelo (ida y vuelta)', 'Перелёт (туда-обратно)')} {flightPP ? (flightReal ? real : est) : null}</>}
               sub={
-                res?.exact
+                near && !res?.exact
+                  ? l(`Bu tarihlere en yakın fiyat: ${fmtDay(near.dep)} → ${near.ret ? fmtDay(near.ret) : ''}`, `Closest dates found: ${fmtDay(near.dep)} → ${near.ret ? fmtDay(near.ret) : ''}`, `Nächste Daten: ${fmtDay(near.dep)} → ${near.ret ? fmtDay(near.ret) : ''}`, `Fechas más cercanas: ${fmtDay(near.dep)} → ${near.ret ? fmtDay(near.ret) : ''}`, `Ближайшие даты: ${fmtDay(near.dep)} → ${near.ret ? fmtDay(near.ret) : ''}`)
+                  : res?.exact
                   ? `${fromIata} → ${toIata} · ${res.exact.transfers === 0 ? l('direkt', 'direct', 'direkt', 'directo', 'прямой') : l(`${res.exact.transfers ?? '?'} aktarma`, `${res.exact.transfers ?? '?'} stop(s)`, `${res.exact.transfers ?? '?'} Umstieg(e)`, `${res.exact.transfers ?? '?'} escala(s)`, `пересадок: ${res.exact.transfers ?? '?'}`)}${s.n > 1 ? ` · ${money(flightPP)} × ${s.n}` : ''}`
                   : oneWay
                     ? l('Bu tarihler için fiyat yok; tek yön fiyatın 2 katı alındı.', 'No fare for these dates; based on 2 × the one-way fare.', 'Kein Preis für diese Daten; 2 × Einzelflug.', 'Sin tarifa para estas fechas; 2 × ida.', 'Нет цены на даты; 2 × в одну сторону.')
