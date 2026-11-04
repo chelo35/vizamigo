@@ -1057,3 +1057,11 @@ html.dark .vz-ad { border-color: rgba(255,255,255,0.18); color: #9fb3b6; }
 .vz-foot-legal { flex-basis: 100%; order: 3; margin: 6px 0 0; max-width: 90ch; font-size: 12px; line-height: 1.5; color: var(--rd-muted, #5b6b70); }
 .vz-qd-visa { display: grid; gap: 10px; }
 .vz-qd-visa p { font-size: 14.5px; line-height: 1.5; }
+
+/* Pasaporta özel sayfa bağlantıları */
+.vz-pp-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: -4px 0 4px; font-size: 13.5px; }
+.vz-pp-links > a { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--rd-line, #dfe7e8); color: var(--rd-sea-ink, #0b4f4a); text-decoration: none; font-weight: 600; background: var(--rd-card, #fff); }
+.vz-pp-links > a:hover { border-color: var(--rd-sea, #177fa4); }
+.vz-pp-links > a.vz-pp-mine { flex-basis: 100%; border-radius: 12px; background: #fff7e6; border-color: #f5d28a; color: #8a5a00; }
+html.dark .vz-pp-links > a { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.12); color: #c9f3ec; }
+html.dark .vz-pp-links > a.vz-pp-mine { background: rgba(245,158,11,0.12); color: #fbbf24; }

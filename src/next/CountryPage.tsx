@@ -25,7 +25,9 @@ import { GUIDE_META, getGuide, guidesForCountry } from '../data/guides';
 import { ALL_WORLD_HUBS, flagToIso } from '../data/worldHubs';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../utils/liveData';
-import { loadStoredRouteStops, saveStoredRouteStops } from '../utils/storage';
+import { loadStoredRouteStops, saveStoredRouteStops, loadStoredPassport } from '../utils/storage';
+import { PASSPORT_PAGES } from '../data/passportPages';
+import { buildPassportPath, buildLocalizedPath } from '../utils/seoRouter';
 
 interface Props {
   onOpenCountry: (c: string) => void;
@@ -35,6 +37,8 @@ interface Props {
   onReport: (code: string, name: string) => void;
   onOpenRoute: () => void;
   onOpenSos: () => void;
+  /** /:lang/:ülke/:pasaport sayfasında sabitlenen pasaport */
+  pinnedPassport?: string | null;
 }
 
 type L3 = { tr: string; en: string; de: string };
@@ -105,7 +109,7 @@ const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void
   );
 };
 
-const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, passport, onBack, onReport, onOpenRoute, onOpenSos, onOpenCountry, data }) => {
+const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, passport, pinnedPassport, onBack, onReport, onOpenRoute, onOpenSos, onOpenCountry, data }) => {
   const { l, language } = useI18n();
   useLiveFx();
   const name = getCountryName(code, language);
@@ -638,6 +642,27 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             ))}
           </div>
         </section>
+        {(() => {
+          const lg = language as SupportedLanguage;
+          const others = PASSPORT_PAGES[lg].filter((p) => p !== code && p !== passport);
+          const mine = pinnedPassport ? loadStoredPassport() : '';
+          if (!others.length && !pinnedPassport) return null;
+          return (
+            <nav className="vz-pp-links" aria-label={l('Diğer pasaportlar', 'Other passports', 'Andere Pässe', 'Otros pasaportes', 'Другие паспорта')}>
+              {pinnedPassport && mine && mine !== pinnedPassport && mine !== code && (
+                <a className="vz-pp-mine" href={buildLocalizedPath(lg, 'explore', code)} onClick={(e) => { e.preventDefault(); onOpenCountry(code); }}>
+                  {l(`Bu sayfa ${getCountryName(pinnedPassport, language)} pasaportu için. Kendi pasaportunla (${getCountryName(mine, language)}) gör ›`, `This page is for ${getCountryName(pinnedPassport, language)} passports. See it for your passport (${getCountryName(mine, language)}) ›`, `Diese Seite gilt für Pässe aus ${getCountryName(pinnedPassport, language)}. Für deinen Pass (${getCountryName(mine, language)}) ansehen ›`, `Esta página es para pasaportes de ${getCountryName(pinnedPassport, language)}. Ver con tu pasaporte (${getCountryName(mine, language)}) ›`, `Эта страница для паспорта ${getCountryName(pinnedPassport, language)}. Посмотреть для вашего (${getCountryName(mine, language)}) ›`)}
+                </a>
+              )}
+              {others.length > 0 && <span className="vz-muted">{l(`${name} giriş kuralları, diğer pasaportlar:`, `${name} entry rules for other passports:`, `${name}: Einreise für andere Pässe:`, `${name} con otros pasaportes:`, `${name} для других паспортов:`)}</span>}
+              {others.map((p) => (
+                <a key={p} href={buildPassportPath(lg, code, p)}>
+                  <Flag code={p} /> {getCountryName(p, language)}
+                </a>
+              ))}
+            </nav>
+          );
+        })()}
 
         {guidesForCountry(code).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa')).length > 0 && (
           <List>

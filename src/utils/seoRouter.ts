@@ -17,6 +17,7 @@ import { TabKey } from '../components/Navigation';
 import { GEO_DATA } from '../data/geoData';
 import { D } from '../data/passportData';
 import { getCountrySlug, getCountryCodeFromSlug } from './countrySlugs';
+import { hasPassportPage } from '../data/passportPages';
 
 export const BASE_URL = 'https://www.vizamigo.com';
 
@@ -69,6 +70,8 @@ export interface ParsedRoute {
   is404?: boolean;
   /** /:lang/info/:page — bilgi merkezi sayfası */
   infoPage?: string | null;
+  /** /:lang/:ülke/:pasaport — pasaporta özel ülke sayfası */
+  passportCode?: string | null;
 }
 
 export interface HreflangAlternateDescriptor {
@@ -119,6 +122,7 @@ export function parseCurrentRoute(): ParsedRoute {
   let countryCode: string | null = null;
   let is404 = false;
   let infoPage: string | null = null;
+  let passportCode: string | null = null;
 
   if (segments.length > 0) {
     const firstSegment = segments[0].toLowerCase();
@@ -175,6 +179,12 @@ export function parseCurrentRoute(): ParsedRoute {
       if (resolvedFromSlug && isValidCountryCode(resolvedFromSlug)) {
         countryCode = resolvedFromSlug;
         tab = 'explore';
+        // pasaporta özel sayfa: /de/argentinien/schweiz
+        if (segments[1]) {
+          const pc = getCountryCodeFromSlug(segments[1].toLowerCase(), language);
+          if (pc && hasPassportPage(language, pc) && pc !== countryCode) passportCode = pc;
+          else is404 = true;
+        }
       } else if (isValidCountryCode(next)) {
         countryCode = next.toUpperCase();
         tab = 'explore';
@@ -184,7 +194,7 @@ export function parseCurrentRoute(): ParsedRoute {
     }
   }
 
-  return { language, tab, countryCode, is404, infoPage };
+  return { language, tab, countryCode, is404, infoPage, passportCode };
 }
 
 /**
@@ -206,6 +216,11 @@ export function buildLocalizedPath(
     return `/${lang}/${tab}`;
   }
   return `/${lang}`;
+}
+
+/** Pasaporta özel ülke sayfası yolu: /de/argentinien/schweiz */
+export function buildPassportPath(lang: SupportedLanguage, countryCode: string, passportCode: string): string {
+  return `/${lang}/${getCountrySlug(countryCode, lang)}/${getCountrySlug(passportCode, lang)}`;
 }
 
 /**

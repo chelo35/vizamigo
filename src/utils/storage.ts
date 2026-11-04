@@ -4,6 +4,9 @@
  */
 
 import { TripRecord, RollingRule, RouteStop, DEFAULT_RULES } from './calculator';
+import { defaultPassportFor } from '../data/passportPages';
+import type { SupportedLanguage } from '../i18n/types';
+import { GEO_DATA } from '../data/geoData';
 
 export interface AppBackupData {
   version: number;
@@ -26,11 +29,21 @@ const STORAGE_KEYS = {
   THEME: 'vr_theme'
 };
 
+/** Kayıtlı pasaport yoksa sayfanın diline göre başlangıç (tr→TR, de→DE, es→ES, ru→RU, en→US; tarayıcı bölgesi önce). */
+function firstVisitPassport(): string {
+  let lang: SupportedLanguage = 'tr';
+  try {
+    const seg = window.location.pathname.split('/')[1]?.toLowerCase();
+    if (seg === 'en' || seg === 'de' || seg === 'es' || seg === 'ru' || seg === 'tr') lang = seg;
+  } catch {}
+  return defaultPassportFor(lang, (c) => !!(GEO_DATA as Record<string, unknown>)[c]);
+}
+
 export function loadStoredPassport(): string {
   try {
-    return localStorage.getItem(STORAGE_KEYS.PASSPORT) || 'TR';
+    return localStorage.getItem(STORAGE_KEYS.PASSPORT) || firstVisitPassport();
   } catch {
-    return 'TR';
+    return firstVisitPassport();
   }
 }
 

@@ -224,6 +224,8 @@ function AppContent() {
     setTabReq({ id: tile, nonce: Date.now() });
   };
   openToolRef.current = openTool;
+  // Pasaporta özel sayfada (/de/argentinien/schweiz) o pasaport gösterilir; kayıtlı pasaport değişmez
+  const pagePassport = (selectedCountryCode && route.passportCode) || currentPassport;
   const openCountryFromAnywhere = (code: string) => {
     setActiveTab('explore');
     setSelectedCountryCode(code);
@@ -236,9 +238,10 @@ function AppContent() {
         language={language}
         tab={activeTab}
         countryCode={selectedCountryCode}
-        currentPassport={currentPassport}
+        currentPassport={pagePassport}
         is404={route.is404}
         infoPage={route.infoPage}
+        passportPage={route.passportCode && selectedCountryCode ? route.passportCode : null}
       />
 
       <TopBar
@@ -293,7 +296,8 @@ function AppContent() {
               <Suspense fallback={<div className="vz-wrap" style={{ paddingBlock: 24 }}><div className="vz-skel" style={{ height: 420 }} /></div>}>
               <CountryPage
                 code={selectedCountryCode}
-                passport={currentPassport}
+                passport={pagePassport}
+                pinnedPassport={route.passportCode || null}
                 onBack={() => handleCountrySelect(null)}
                 onReport={(code, name) => setReportingModalData({ code, name })}
                 onOpenRoute={() => handleSelectTab('plan')}

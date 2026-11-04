@@ -14,11 +14,13 @@ import { D } from '../src/data/passportData';
 import { COUNTRY_VISUALS_MAP } from '../src/data/countryVisualsData';
 import { GUIDE_IDS, GUIDE_META } from '../src/data/guides';
 import { toursPath } from '../src/data/tours';
+import { PASSPORT_PAGES } from '../src/data/passportPages';
 import { SUPPORTED_LANGUAGES } from '../src/i18n';
 import { TabKey } from '../src/components/Navigation';
 import {
   BASE_URL,
   buildAbsoluteLocalizedUrl,
+  buildPassportPath,
   getHreflangAlternatesForRoute
 } from '../src/utils/seoRouter';
 
@@ -126,6 +128,17 @@ export function generateSitemapXml(): string {
         lastmod: countryLastmod(code),
         changefreq: 'weekly',
         priority: '0.9'
+      });
+    });
+  });
+
+  // 3a. Pasaporta özel ülke sayfaları (/de/argentinien/schweiz) — yalnız kendi dilinde
+  countryCodes.forEach((code) => {
+    langCodes.forEach((lang) => {
+      (PASSPORT_PAGES[lang as 'en'] || []).forEach((p) => {
+        if (p === code) return;
+        const loc = `${BASE_URL}${buildPassportPath(lang as never, code, p)}`;
+        entries.push({ loc, alternates: [{ hreflang: lang, href: loc }] as never, lastmod: '2026-11-04', changefreq: 'weekly', priority: '0.7' });
       });
     });
   });

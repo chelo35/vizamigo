@@ -11,6 +11,7 @@ import { SupportedLanguage } from '../i18n/types';
 import { TabKey } from './Navigation';
 import {
   buildAbsoluteLocalizedUrl,
+  buildPassportPath,
   getHreflangAlternatesForRoute
 } from '../utils/seoRouter';
 import { getCountryName } from '../data/passportData';
@@ -25,6 +26,8 @@ interface SeoHeadProps {
   currentPassport: string;
   is404?: boolean;
   infoPage?: string | null;
+  /** /:lang/:ülke/:pasaport sayfası */
+  passportPage?: string | null;
 }
 
 export const SeoHead: React.FC<SeoHeadProps> = ({
@@ -33,7 +36,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
   countryCode,
   currentPassport,
   is404 = false,
-  infoPage = null
+  infoPage = null,
+  passportPage = null
 }) => {
   useEffect(() => {
     // 1. Update HTML lang attribute for screen readers and Mobile Googlebot
@@ -179,7 +183,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
 
     // 5. Update Canonical Tag & OpenGraph URL
     const ipath = (lg: string) => (infoPage === 'tours' ? toursPath(lg) : `/${lg}/info/${infoPage}`);
-    const currentCanonicalUrl = infoPage ? `${BASE_URL}${ipath(language)}` : buildAbsoluteLocalizedUrl(language, tab, countryCode);
+    const currentCanonicalUrl = infoPage ? `${BASE_URL}${ipath(language)}` : passportPage && countryCode ? `${BASE_URL}${buildPassportPath(language, countryCode, passportPage)}` : buildAbsoluteLocalizedUrl(language, tab, countryCode);
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -200,6 +204,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
 
     const hreflangAlternates = infoPage
       ? [...(['tr', 'en', 'de', 'ru', 'es'] as const).map((c) => ({ hreflang: c, href: `${BASE_URL}${ipath(c)}` })), { hreflang: 'x-default', href: `${BASE_URL}${ipath('en')}` }]
+      : passportPage && countryCode
+      ? [{ hreflang: language, href: currentCanonicalUrl }]
       : getHreflangAlternatesForRoute(tab, countryCode);
     hreflangAlternates.forEach((alt) => {
       const linkEl = document.createElement('link');
@@ -213,7 +219,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     // 7. Inject or Update Schema.org (JSON-LD) Microdata
     injectCountrySchema(countryCode, language, currentPassport);
 
-  }, [language, tab, countryCode, currentPassport, is404, infoPage]);
+  }, [language, tab, countryCode, currentPassport, is404, infoPage, passportPage]);
 
   return null;
 };

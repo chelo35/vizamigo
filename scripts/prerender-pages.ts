@@ -150,6 +150,9 @@ async function main() {
     fs.writeFileSync(out, html);
   };
 
+  const { LANG_PASS, PASSPORT_PAGES } = await import('../src/data/passportPages');
+  const { buildPassportPath } = await import('../src/utils/seoRouter');
+  const PP_TITLE: Record<string, string> = { tr: 'Diğer pasaportlar', en: 'Entry rules for other passports', de: 'Einreise mit anderen Pässen', es: 'Requisitos para otros pasaportes', ru: 'Правила для других паспортов' };
   const FAQ_TITLE: Record<string, string> = { tr: 'Sık sorulan sorular', en: 'Frequently asked questions', de: 'Häufige Fragen', es: 'Preguntas frecuentes', ru: 'Частые вопросы' };
   let n = 0;
   for (const lang of LANGS) {
@@ -164,15 +167,20 @@ async function main() {
     }));
     n++;
 
-    // ülke sayfaları
-    for (const code of allCodes) {
-      const meta = getCountrySeoMeta(code, lang as never, 'TR');
+    // ülke sayfaları: dilin ana pasaportu (tr→TR, en→US, de→DE, es→ES, ru→RU) + pasaporta özel sayfalar
+    const renderCountry = (code: string, pass: string, passPage: boolean) => {
+      const relPath = passPage ? buildPassportPath(lang as never, code, pass) : buildLocalizedPath(lang as never, 'explore', code);
+      const ppList = PASSPORT_PAGES[lang as 'en'].filter((p) => p !== code && p !== pass);
+      const ppNav = ppList.length || passPage
+        ? `<h2>${esc(PP_TITLE[lang])}</h2><p>${passPage ? `<a href="${buildLocalizedPath(lang as never, 'explore', code)}">${esc(getCountryName(code, lang))}: ${esc(getCountryName(LANG_PASS[lang as 'en'], lang))}</a> · ` : ''}${ppList.map((p) => `<a href="${buildPassportPath(lang as never, code, p)}">${esc(getCountryName(p, lang))}</a>`).join(' · ')}</p>`
+        : '';
+      const meta = getCountrySeoMeta(code, lang as never, pass);
       const name = getCountryName(code, lang);
       const reg = countryToRegion[code] || '';
       const region = getRegionName(reg, lang);
       const cap = (GEO_DATA as Record<string, { capital?: string }>)[code]?.capital;
       const near = allCodes.filter((c) => c !== code && reg && countryToRegion[c] === reg).slice(0, 12);
-      const ld = generateCountryJsonLd({ countryCode: code, language: lang as never, currentPassport: 'TR' });
+      const ld = generateCountryJsonLd({ countryCode: code, language: lang as never, currentPassport: pass });
       // görünür SSS: yapılandırılmış verideki soru-cevaplar sayfada da yazılı olsun (Google kuralı;
       // JavaScript çalıştırmayan yapay zekâ tarayıcıları da bu metni okur)
       const faqNode = ((ld as { '@graph'?: Array<Record<string, unknown>> })['@graph'] || [ld as Record<string, unknown>]).find((x) => x['@type'] === 'FAQPage') as
@@ -181,13 +189,13 @@ async function main() {
       const faqHtml = faqNode?.mainEntity?.length
         ? `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${faqNode.mainEntity.map((q) => `<h3>${esc(q.name)}</h3><p>${esc(q.acceptedAnswer.text)}</p>`).join('')}</section>`
         : '';
-      write(path.join(buildLocalizedPath(lang as never, 'explore', code), 'index.html'), build({
+      write(path.join(relPath, 'index.html'), build({
         lang,
-        canonical: buildAbsoluteLocalizedUrl(lang as never, 'explore', code),
-        alts: getHreflangAlternatesForRoute('explore', code),
+        canonical: BASE_URL + relPath,
+        alts: passPage ? [{ hreflang: lang, href: BASE_URL + relPath }] : getHreflangAlternatesForRoute('explore', code),
         title: meta.title,
         desc: meta.description,
-        head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="TR">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
+        head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="${pass}">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
         // uygulamanın ülke başlığıyla aynı ölçüde fotoğraflı başlık: ilk boyama erken, kayma yok
         hero: (() => {
           const v = getCountryVisual(code, lang);
@@ -195,9 +203,13 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(cap)}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${faqHtml}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
+    };
+    for (const code of allCodes) {
+      renderCountry(code, LANG_PASS[lang as 'en'], false);
+      for (const p of PASSPORT_PAGES[lang as 'en']) if (p !== code) renderCountry(code, p, true);
     }
 
     // araç sayfaları

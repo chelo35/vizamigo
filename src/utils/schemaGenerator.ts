@@ -1,3 +1,4 @@
+import { LANG_PASS } from '../data/passportPages';
 /**
  * Programmatic Schema.org (JSON-LD) Generator for Vizamigo
  * Combines @type: 'TouristDestination', @type: 'TouristTrip', @type: 'FAQPage', and @type: 'BreadcrumbList'
@@ -224,7 +225,7 @@ export function getCountrySeoMeta(
   const code = countryCode.toUpperCase();
   const countryName = getCountryName(code, language);
   const passportName = getCountryName(currentPassport, language);
-  const voiceQuestion = getMobileVoiceQuestion(countryName, passportName, language);
+  const voiceQuestion = getMobileVoiceQuestion(countryName, passportName, language, currentPassport);
   const h1 = getCountryNaturalH1(countryName, language);
 
   const passportItems = getPassportItems(currentPassport);
@@ -345,13 +346,21 @@ export function getMobileVoiceQuestion(
       return `${countryName} ${nationalityTerm} Vize İstiyor mu? (2026)`;
     }
     case 'en':
-      return `Do I Need a Visa for ${countryName}? (2026 Entry Rules)`;
+      return currentPassport === LANG_PASS.en || currentPassport === 'TR'
+        ? `Do I Need a Visa for ${countryName}? (2026 Entry Rules)`
+        : `${countryName} Visa Requirements for ${passportName} Citizens (2026)`;
     case 'de':
-      return `Brauche ich ein Visum für ${countryName}? (2026 Einreisebestimmungen)`;
+      return currentPassport === LANG_PASS.de || currentPassport === 'TR'
+        ? `Brauche ich ein Visum für ${countryName}? (2026 Einreisebestimmungen)`
+        : `Einreise ${countryName} mit Pass aus ${passportName}: Visum nötig? (2026)`;
     case 'es':
-      return `¿Necesito Visa para ${countryName}? (Requisitos de Entrada 2026)`;
+      return currentPassport === LANG_PASS.es || currentPassport === 'TR'
+        ? `¿Necesito Visa para ${countryName}? (Requisitos de Entrada 2026)`
+        : `¿${countryName} pide visa a ciudadanos de ${passportName}? Requisitos 2026`;
     case 'ru':
-      return `Нужна ли виза в ${countryName}? (Правила въезда 2026)`;
+      return currentPassport === LANG_PASS.ru || currentPassport === 'TR'
+        ? `Нужна ли виза в ${countryName}? (Правила въезда 2026)`
+        : `Виза в ${countryName} для граждан страны ${passportName}: правила 2026`;
   }
 }
 
