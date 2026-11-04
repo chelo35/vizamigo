@@ -98,18 +98,18 @@
   },
   "emergency": {
     "police": {
-      "value": "129",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://asp.gov.al",
+          "url": "https://www.gov.uk/foreign-travel-advice/albania/getting-help",
           "tier": 1,
-          "title": "Albanian State Police"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "State police emergency response line in Albania is 129",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 127; Fire: 128; Police: 112",
+      "retrieved_at": "2026-11-04"
     },
     "ambulance": {
       "value": "127",

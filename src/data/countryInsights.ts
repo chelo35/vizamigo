@@ -1,3 +1,4 @@
+import { EMERGENCY_FIX } from './emergencyFix';
 /**
  * Ülke İçi Güvenlik, İnternet, Ulaşım, Yaşam Maliyetleri & Gezgin İstihbaratı
  * 199 ülke için güvenlik/suç oranları, internet hızları/ücretleri,
@@ -1803,7 +1804,7 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
   const verifiedRec = getVerifiedCountryRecord(code);
 
   // 2. Doğrulanmış acil durum numaraları
-  const emergencyNumbers = verifiedRec
+  const emergencyNumbersRaw = verifiedRec
     ? {
         police: verifiedRec.emergency.police.value || '112',
         ambulance: verifiedRec.emergency.ambulance.value || '112',
@@ -1829,6 +1830,10 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
       ? { police: '190 / 911', ambulance: '192 / 107', general: '123 / 911' }
       : { police: '112', ambulance: '112', general: '112 (Uluslararası Acil)' }
   ));
+  const fx = EMERGENCY_FIX[code];
+  const emergencyNumbers = fx
+    ? { police: fx.police || fx.general || '—', ambulance: fx.ambulance || fx.general || '—', general: fx.general || fx.police || '—' }
+    : emergencyNumbersRaw;
 
   // 3. Doğrulanmış yerel araç çağırma (ride-hailing) uygulamaları
   const popularRideApps = (verifiedRec && verifiedRec.local_apps.length > 0)

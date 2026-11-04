@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.hk",
-          "tier": 1,
-          "title": "Hong Kong Police Emergency Services"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "112 automatically reroutes mobile phone calls to 999 emergency services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Hong Kong: 999; Mobile 112 redirects to 999",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "2527 7177",

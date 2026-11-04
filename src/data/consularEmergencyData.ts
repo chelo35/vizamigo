@@ -92,9 +92,9 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
       en: 'Overseas Safety & Consular Emergency Center',
       de: 'Zentrum für Sicherheit und Konsularnotfälle im Ausland'
     },
-    hotline247: '+81 3 5501 8162',
-    hotlineDomestic: '03-5501-8162',
-    officialPortalUrl: 'https://www.ezairyu.mofa.go.jp',
+    hotline247: '+81 3 3580 3311',
+    hotlineDomestic: '03-3580-3311',
+    officialPortalUrl: 'https://www.anzen.mofa.go.jp',
     officialPortalName: 'MOFA ORR-net / Tabireg (ezairyu.mofa.go.jp)',
     emergencyDocName: {
       tr: 'Kinkyu Tokosho (渡航書 - Japonya’ya Dönüş Seyahat Belgesi)',
@@ -144,8 +144,8 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
       en: 'Citizens Crisis Center & 24/7 Consular Hotline',
       de: 'Bürgerservice & 24/7 Krisen- und Notrufhotline'
     },
-    hotline247: '+49 30 5000 2000',
-    hotlineDomestic: '030 5000 2000',
+    hotline247: '+49 30 5000 0',
+    hotlineDomestic: '030 5000 0',
     officialPortalUrl: 'https://www.auswaertiges-amt.de',
     officialPortalName: 'Auswärtiges Amt Portalı (auswaertiges-amt.de)',
     emergencyDocName: {
@@ -302,7 +302,7 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
     },
     hotline247: '+44 20 7008 5000',
     hotlineDomestic: '020 7008 5000',
-    officialPortalUrl: 'https://www.gov.uk/emergency-travel-document',
+    officialPortalUrl: 'https://www.gov.uk/foreign-travel-advice',
     officialPortalName: 'GOV.UK Emergency Travel Document Portal',
     emergencyDocName: {
       tr: 'Emergency Travel Document (ETD / Acil Seyahat Belgesi)',
@@ -665,7 +665,7 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
       de: '24/7 BZ-Kontaktzentrum & Konsularischer Krisenstab'
     },
     hotline247: '+31 247 247 247',
-    hotlineDomestic: '0247 247 247 (Hollanda içi)',
+    hotlineDomestic: '+31 247 247 247',
     officialPortalUrl: 'https://www.nederlandwereldwijd.nl',
     officialPortalName: 'Nederland Wereldwijd (nederlandwereldwijd.nl)',
     emergencyDocName: {
@@ -716,8 +716,8 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
       en: 'Consular Emergency Unit (Unidad de Emergencia Consular 24/7)',
       de: 'Konsularische Notfalleinheit (UEC 24/7)'
     },
-    hotline247: '+34 91 379 97 00',
-    hotlineDomestic: '91 379 97 00',
+    hotline247: '+34 91 000 1249',
+    hotlineDomestic: '91 000 1249',
     officialPortalUrl: 'https://www.exteriores.gob.es',
     officialPortalName: 'MAEC Portal Consular (exteriores.gob.es)',
     emergencyDocName: {
@@ -770,7 +770,7 @@ export const CONSULAR_EMERGENCY_DATA: Record<string, ConsularEmergencyInfo> = {
     },
     hotline247: '+46 8 405 50 05',
     hotlineDomestic: '08-405 50 05 (İsveç içi)',
-    officialPortalUrl: 'https://www.regeringen.se/ud',
+    officialPortalUrl: 'https://www.regeringen.se/uds-reseinformation/',
     officialPortalName: 'Sweden Abroad (swedenabroad.se)',
     emergencyDocName: {
       tr: 'Provisoriskt Pass (Geçici Acil Pasaport)',

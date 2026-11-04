@@ -141,18 +141,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
+      "value": null,
+      "status": "unavailable",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://chinhphu.vn",
+          "url": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
           "tier": 1,
-          "title": "Tổng đài tìm kiếm cứu nạn và thiên tai 112"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Gọi 112 để yêu cầu trợ giúp tìm kiếm cứu nạn và ứng phó thiên tai",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 115; Fire: 114; Police: 113; National search and rescue: 112",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": null,

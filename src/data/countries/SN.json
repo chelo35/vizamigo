@@ -142,18 +142,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": null,
+      "status": "unavailable",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://policenationale.sec.gouv.sn",
+          "url": "https://www.gov.uk/foreign-travel-advice/senegal/getting-help",
           "tier": 1,
-          "title": "Police Nationale"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Dial 112 nationwide from any mobile phone for emergency services routing",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 15; Fire: 18; Police: 17 (no general number listed)",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": null,

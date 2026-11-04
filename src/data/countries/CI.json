@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
+      "value": null,
+      "status": "unavailable",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gouv.ci",
+          "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help",
           "tier": 1,
-          "title": "Gouvernement Ivoirien"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Dial 112 from any cell phone for centralized emergency rescue routing",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 185; Fire: 180; Police: 110, 111 or 170 (no general number listed)",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": null,

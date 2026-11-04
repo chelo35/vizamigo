@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": null,
+      "status": "unavailable",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://www.algeriepolice.dz",
+          "url": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
           "tier": 1,
-          "title": "Sûreté Nationale"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Emergency number 112 connects callers to integrated police and emergency response routing",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 1021; Fire: 14; Police: 17 or 1548",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": null,

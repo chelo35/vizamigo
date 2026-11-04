@@ -97,60 +97,80 @@
   },
   "emergency": {
     "police": {
-      "value": "22222",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://spppcs.gov.ws",
+          "url": "https://www.gov.uk/foreign-travel-advice/samoa/getting-help",
           "tier": 1,
-          "title": "Samoa Police, Prisons and Corrections Services"
+          "title": "GOV.UK foreign travel advice"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/samoa",
+          "tier": 1,
+          "title": "Smartraveller (Australian Government)"
         }
       ],
-      "evidence_quote": "Dial 22222 or 995 for emergency police assistance throughout Samoa",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-04"
     },
     "ambulance": {
-      "value": "996",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.ws",
+          "url": "https://www.gov.uk/foreign-travel-advice/samoa/getting-help",
           "tier": 1,
-          "title": "Tupua Tamasese Meaole (TTM) Hospital Ambulance Dispatch"
+          "title": "GOV.UK foreign travel advice"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/samoa",
+          "tier": 1,
+          "title": "Smartraveller (Australian Government)"
         }
       ],
-      "evidence_quote": "Call 996 for emergency medical dispatch and hospital ambulance services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-04"
     },
     "fire": {
-      "value": "994",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://sfesa.ws",
+          "url": "https://www.gov.uk/foreign-travel-advice/samoa/getting-help",
           "tier": 1,
-          "title": "Samoa Fire and Emergency Services Authority (SFESA)"
+          "title": "GOV.UK foreign travel advice"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/samoa",
+          "tier": 1,
+          "title": "Smartraveller (Australian Government)"
         }
       ],
-      "evidence_quote": "Dial 994 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-04"
     },
     "general": {
-      "value": "999",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://spppcs.gov.ws",
+          "url": "https://www.gov.uk/foreign-travel-advice/samoa/getting-help",
           "tier": 1,
-          "title": "Samoa Emergency Dispatch"
+          "title": "GOV.UK foreign travel advice"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/samoa",
+          "tier": 1,
+          "title": "Smartraveller (Australian Government)"
         }
       ],
-      "evidence_quote": "999 serves as the unified emergency operations hotline",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "+685 22222",

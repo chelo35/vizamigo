@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fsm.gov.mo",
-          "tier": 1,
-          "title": "Public Security Police Force"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "112 and 110 serve as alternative emergency numbers routed to the central operations center",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Macau: 999; Mobile 110/112 redirect to 999",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "+853 2833 3000",

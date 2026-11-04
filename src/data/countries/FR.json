@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "+33 1 45 55 00 00",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.diplomatie.gouv.fr/en/consular-services/overseas-consular-contact",
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
           "tier": 3,
-          "title": "France Consular Emergency Contact"
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "retrieved_at": "2026-10-23",
-      "evidence_quote": "Source: France Consular Emergency Contact"
+      "evidence_quote": "France: Police 17; Ambulance 112 or 15; Fire 112 or 18",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": null,

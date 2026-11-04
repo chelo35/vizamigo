@@ -98,18 +98,18 @@
   },
   "emergency": {
     "police": {
-      "value": "114 14",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://polisen.se",
-          "tier": 1,
-          "title": "Swedish Police Authority (Polisen)"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "Non-emergency police matters in Sweden are handled via 114 14; urgent calls dial 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Sweden: 112; Non-emergency police 114 14",
+      "retrieved_at": "2026-11-04"
     },
     "ambulance": {
       "value": "112",

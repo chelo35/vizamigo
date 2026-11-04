@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
+      "value": null,
+      "status": "unavailable",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interieur.gov.tn",
+          "url": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help",
           "tier": 1,
-          "title": "Ministry of Interior Tunisia Emergency"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "112 emergency calls from mobile phones route to civil defense central dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 190; Fire and car accidents: 198; Police, for towns and cities: 197",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "197",

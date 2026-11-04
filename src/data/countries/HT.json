@@ -98,18 +98,18 @@
   },
   "emergency": {
     "police": {
-      "value": "114",
+      "value": "122",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pnh.ht",
+          "url": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help",
           "tier": 1,
-          "title": "Police Nationale d'Haïti (PNH)"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Dial 114 for emergency police response from the Police Nationale d'Haïti",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 115; Police: 122",
+      "retrieved_at": "2026-11-04"
     },
     "ambulance": {
       "value": "116",
@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "114",
-      "status": "verified",
+      "value": null,
+      "status": "unavailable",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pnh.ht",
+          "url": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help",
           "tier": 1,
-          "title": "PNH Operations Center"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "114 is the national emergency operational contact line",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 115; Police: 122",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "+509 2999 0101",

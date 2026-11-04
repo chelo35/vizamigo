@@ -139,18 +139,23 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": null,
+      "status": "unavailable",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.gambiafire.gm",
+          "url": "https://www.gov.uk/foreign-travel-advice/the-gambia/getting-help",
           "tier": 1,
-          "title": "Emergency Dispatch"
+          "title": "GOV.UK foreign travel advice"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "Dial 112 from any mobile device for national emergency services coordination",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "There is no equivalent to the UK's 999 emergency number in The Gambia.",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "117",
@@ -412,6 +417,6 @@
         "recognizability_checked": true
       }
     ],
-  "last_reviewed": "2026-10-18"
+    "last_reviewed": "2026-10-18"
   }
 }

@@ -99,18 +99,18 @@
   },
   "emergency": {
     "police": {
-      "value": "991",
+      "value": "911",
       "status": "verified",
-      "confidence": "high",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://www.fpc.gov.et",
+          "url": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help",
           "tier": 1,
-          "title": "Ethiopian Federal Police Commission"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Dial 991 nationwide for emergency federal and regional police assistance",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police and emergency: 911; Ambulance (Addis Ababa): 907",
+      "retrieved_at": "2026-11-04"
     },
     "ambulance": {
       "value": "907",

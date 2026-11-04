@@ -100,18 +100,18 @@
   },
   "emergency": {
     "police": {
-      "value": "114",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://politi.dk",
-          "tier": 1,
-          "title": "Danish Police (Politiet)"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "Non-emergency police assistance in Denmark is dialed via 114; emergency connects via 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Denmark: 112; Non-emergency police 114",
+      "retrieved_at": "2026-11-04"
     },
     "ambulance": {
       "value": "112",

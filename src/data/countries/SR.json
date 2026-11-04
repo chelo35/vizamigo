@@ -112,18 +112,18 @@
       "retrieved_at": "2026-10-18"
     },
     "ambulance": {
-      "value": "112",
+      "value": "113",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://gov.sr",
+          "url": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help",
           "tier": 1,
-          "title": "Academisch Ziekenhuis Paramaribo (AZP) Spoedeisende Hulp"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Call 112 or 113 for AZP emergency ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 115 (ambulance, fire, police); Ambulance: 113; Fire: 110",
+      "retrieved_at": "2026-11-04"
     },
     "fire": {
       "value": "110",

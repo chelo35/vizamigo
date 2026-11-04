@@ -140,18 +140,18 @@
       "retrieved_at": "2026-10-18"
     },
     "general": {
-      "value": "+90 212 555 12 34",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mfa.gov.tr/overseas-consular-contacts",
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
           "tier": 3,
-          "title": "Türkiye Dışişleri Bakanlığı Konsolosluk Acil İletişim"
+          "title": "Wikipedia: List of emergency telephone numbers"
         }
       ],
-      "retrieved_at": "2026-10-23",
-      "evidence_quote": "Source: Türkiye Dışişleri Bakanlığı Konsolosluk Acil İletişim"
+      "evidence_quote": "Turkey: 112 or 911 or 153 (911 connects to 112)",
+      "retrieved_at": "2026-11-04"
     },
     "tourist_police": {
       "value": "+90 212 555 56 78",

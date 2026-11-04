@@ -112,32 +112,32 @@
       "retrieved_at": "2026-10-18"
     },
     "ambulance": {
-      "value": "211111",
+      "value": "112",
       "status": "verified",
-      "confidence": "high",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://www.windhoekcc.org.na",
+          "url": "https://www.gov.uk/foreign-travel-advice/namibia/getting-help",
           "tier": 1,
-          "title": "City of Windhoek Emergency Management"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Call 061 211111 or private EMS for emergency ambulance services in Windhoek",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 10111, 999, 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-04"
     },
     "fire": {
-      "value": "211111",
+      "value": "112",
       "status": "verified",
-      "confidence": "high",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://www.windhoekcc.org.na",
+          "url": "https://www.gov.uk/foreign-travel-advice/namibia/getting-help",
           "tier": 1,
-          "title": "City of Windhoek Fire Brigade"
+          "title": "GOV.UK foreign travel advice"
         }
       ],
-      "evidence_quote": "Call 061 211111 for municipal fire and technical rescue brigades",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 10111, 999, 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-04"
     },
     "general": {
       "value": "112",
