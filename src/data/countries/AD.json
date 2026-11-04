@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.ad",
+          "url": "https://www.gov.uk/foreign-travel-advice/andorra/getting-help",
           "tier": 1,
-          "title": "Cos de Policia d'Andorra"
+          "title": "GOV.UK Andorra getting help"
+        },
+        {
+          "url": "https://visitandorra.com/en/public-services/in-case-of-emergency/",
+          "tier": 2,
+          "title": "Visit Andorra (official tourism) – In case of emergency"
         }
       ],
-      "evidence_quote": "Dial 110 for emergency police services across the Principality of Andorra",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 118; Police: 110; Mountain rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "116",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.saas.ad",
+          "url": "https://www.gov.uk/foreign-travel-advice/andorra/getting-help",
           "tier": 1,
-          "title": "Servei Andorrà d'Atenció Sanitària (SAAS)"
+          "title": "GOV.UK Andorra getting help"
+        },
+        {
+          "url": "https://visitandorra.com/en/public-services/in-case-of-emergency/",
+          "tier": 2,
+          "title": "Visit Andorra (official tourism) – In case of emergency"
         }
       ],
-      "evidence_quote": "Call 116 for medical emergencies and hospital ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 118; Police: 110; Mountain rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "118",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bombers.ad",
+          "url": "https://www.gov.uk/foreign-travel-advice/andorra/getting-help",
           "tier": 1,
-          "title": "Cos de Bombers d'Andorra"
+          "title": "GOV.UK Andorra getting help"
+        },
+        {
+          "url": "https://visitandorra.com/en/public-services/in-case-of-emergency/",
+          "tier": 2,
+          "title": "Visit Andorra (official tourism) – In case of emergency"
         }
       ],
-      "evidence_quote": "Dial 118 for mountain rescue and fire brigades throughout Andorra",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 118; Police: 110; Mountain rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.govern.ad",
+          "url": "https://www.gov.uk/foreign-travel-advice/andorra/getting-help",
           "tier": 1,
-          "title": "Govern d'Andorra"
+          "title": "GOV.UK Andorra getting help"
+        },
+        {
+          "url": "https://visitandorra.com/en/public-services/in-case-of-emergency/",
+          "tier": 2,
+          "title": "Visit Andorra (official tourism) – In case of emergency"
         }
       ],
-      "evidence_quote": "112 operates as the unified emergency number coordinating police, medical, and mountain rescue",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 118; Police: 110; Mountain rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

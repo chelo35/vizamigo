@@ -99,32 +99,42 @@
   },
   "emergency": {
     "police": {
-      "value": "112",
+      "value": "112 / 100",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://112.gov.in",
+          "url": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
           "tier": 1,
-          "title": "Emergency Response Support System (ERSS) India"
+          "title": "GOV.UK India getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/india",
+          "tier": 1,
+          "title": "Smartraveller India"
         }
       ],
-      "evidence_quote": "Pan-India unified emergency number 112 connects directly to police and first responders",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "102 / 108",
+      "value": "102",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mohfw.gov.in",
+          "url": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
           "tier": 1,
-          "title": "Ministry of Health and Family Welfare India"
+          "title": "GOV.UK India getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/india",
+          "tier": 1,
+          "title": "Smartraveller India"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance services operate on hotlines 108 and 102 across Indian states",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -132,13 +142,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://112.gov.in",
+          "url": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
           "tier": 1,
-          "title": "National Emergency Services India"
+          "title": "GOV.UK India getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/india",
+          "tier": 1,
+          "title": "Smartraveller India"
         }
       ],
-      "evidence_quote": "Fire emergency service is reached via traditional hotline 101 or unified 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -146,13 +161,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://112.gov.in",
+          "url": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
           "tier": 1,
-          "title": "ERSS 112 India"
+          "title": "GOV.UK India getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/india",
+          "tier": 1,
+          "title": "Smartraveller India"
         }
       ],
-      "evidence_quote": "112 is the single unified emergency contact number for all citizen emergencies in India",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1363",

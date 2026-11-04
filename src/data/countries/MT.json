@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pulizija.gov.mt",
+          "url": "https://www.gov.mt/en/Life%20Events/Pages/Healthy%20Living/Medical-Emergencies.aspx",
           "tier": 1,
-          "title": "The Malta Police Force"
+          "title": "Medical Emergencies (gov.mt)"
+        },
+        {
+          "url": "https://help.unhcr.org/malta/where-to-seek-help/emergency-services-and-helplines/",
+          "tier": 2,
+          "title": "Emergency services 112 (UNHCR Malta)"
         }
       ],
-      "evidence_quote": "Emergency police assistance throughout Malta connects via unified 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire/Ambulance/Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://deputyprimeminister.gov.mt",
+          "url": "https://www.gov.mt/en/Life%20Events/Pages/Healthy%20Living/Medical-Emergencies.aspx",
           "tier": 1,
-          "title": "Mater Dei Hospital Emergency Department"
+          "title": "Medical Emergencies (gov.mt)"
+        },
+        {
+          "url": "https://help.unhcr.org/malta/where-to-seek-help/emergency-services-and-helplines/",
+          "tier": 2,
+          "title": "Emergency services 112 (UNHCR Malta)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue operates nationwide under 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire/Ambulance/Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://cpd.gov.mt",
+          "url": "https://www.gov.mt/en/Life%20Events/Pages/Healthy%20Living/Medical-Emergencies.aspx",
           "tier": 1,
-          "title": "Civil Protection Department Malta"
+          "title": "Medical Emergencies (gov.mt)"
+        },
+        {
+          "url": "https://help.unhcr.org/malta/where-to-seek-help/emergency-services-and-helplines/",
+          "tier": 2,
+          "title": "Emergency services 112 (UNHCR Malta)"
         }
       ],
-      "evidence_quote": "Civil protection firefighting emergency dispatch is reached via 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire/Ambulance/Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pulizija.gov.mt",
+          "url": "https://www.gov.mt/en/Life%20Events/Pages/Healthy%20Living/Medical-Emergencies.aspx",
           "tier": 1,
-          "title": "Malta Police 112 Operations"
+          "title": "Medical Emergencies (gov.mt)"
+        },
+        {
+          "url": "https://help.unhcr.org/malta/where-to-seek-help/emergency-services-and-helplines/",
+          "tier": 2,
+          "title": "Emergency services 112 (UNHCR Malta)"
         }
       ],
-      "evidence_quote": "112 is the primary single emergency telephone number across the Maltese Islands",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire/Ambulance/Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "112",

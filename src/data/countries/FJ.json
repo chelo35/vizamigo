@@ -97,18 +97,23 @@
   },
   "emergency": {
     "police": {
-      "value": "917",
+      "value": "911 / 917",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.fj",
+          "url": "https://www.gov.uk/foreign-travel-advice/fiji/getting-help",
           "tier": 1,
-          "title": "Fiji Police Force"
+          "title": "GOV.UK Fiji getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/fiji",
+          "tier": 1,
+          "title": "Smartraveller Fiji"
         }
       ],
-      "evidence_quote": "Dial 917 for emergency police assistance throughout Fiji",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police); Fire: 910",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.health.gov.fj",
+          "url": "https://www.gov.uk/foreign-travel-advice/fiji/getting-help",
           "tier": 1,
-          "title": "Ministry of Health and Medical Services Fiji"
+          "title": "GOV.UK Fiji getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/fiji",
+          "tier": 1,
+          "title": "Smartraveller Fiji"
         }
       ],
-      "evidence_quote": "Call 911 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police); Fire: 910",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "910",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://nfa.com.fj",
+          "url": "https://www.gov.uk/foreign-travel-advice/fiji/getting-help",
           "tier": 1,
-          "title": "National Fire Authority (NFA) Fiji"
+          "title": "GOV.UK Fiji getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/fiji",
+          "tier": 1,
+          "title": "Smartraveller Fiji"
         }
       ],
-      "evidence_quote": "Dial 910 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police); Fire: 910",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fiji.gov.fj",
+          "url": "https://www.gov.uk/foreign-travel-advice/fiji/getting-help",
           "tier": 1,
-          "title": "Fiji Government Emergency"
+          "title": "GOV.UK Fiji getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/fiji",
+          "tier": 1,
+          "title": "Smartraveller Fiji"
         }
       ],
-      "evidence_quote": "911 coordinates unified national emergency dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police); Fire: 910",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+679 672-2544",

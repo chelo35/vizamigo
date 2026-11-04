@@ -98,18 +98,23 @@
   },
   "emergency": {
     "police": {
-      "value": "999",
+      "value": "999 / 112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.govmu.org",
+          "url": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
           "tier": 1,
-          "title": "Mauritius Police Force (MPF)"
+          "title": "Mauritius - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mauritius",
+          "tier": 1,
+          "title": "Mauritius (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 999 or 112 for emergency police assistance throughout Mauritius",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 999 or 114; Fire: 999 or 115; Police: 999 or 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "114",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.govmu.org",
+          "url": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
           "tier": 1,
-          "title": "Ministry of Health and Wellness of Mauritius"
+          "title": "Mauritius - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mauritius",
+          "tier": 1,
+          "title": "Mauritius (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 114 for emergency SAMU medical response and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 999 or 114; Fire: 999 or 115; Police: 999 or 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "115",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mfrs.govmu.org",
+          "url": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
           "tier": 1,
-          "title": "Mauritius Fire and Rescue Service (MFRS)"
+          "title": "Mauritius - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mauritius",
+          "tier": 1,
+          "title": "Mauritius (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 115 for Mauritius Fire and Rescue Service emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 999 or 114; Fire: 999 or 115; Police: 999 or 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.govmu.org",
+          "url": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
           "tier": 1,
-          "title": "Mauritius Police Force"
+          "title": "Mauritius - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mauritius",
+          "tier": 1,
+          "title": "Mauritius (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "112 serves as the international unified mobile emergency number in Mauritius",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 999 or 114; Fire: 999 or 115; Police: 999 or 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+230 213 7979",

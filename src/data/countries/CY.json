@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.cy",
+          "url": "https://www.smartraveller.gov.au/destinations/cyprus",
           "tier": 1,
-          "title": "Cyprus Police"
+          "title": "Smartraveller Cyprus"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/cyprus/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Cyprus getting help"
         }
       ],
-      "evidence_quote": "Emergency police assistance is available via 112 and traditional hotline 199",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 or 199. ... General (northern Cyprus only): Call 155.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112 / 199",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.shso.org.cy",
+          "url": "https://www.smartraveller.gov.au/destinations/cyprus",
           "tier": 1,
-          "title": "State Health Services Organisation Cyprus Ambulance Service"
+          "title": "Smartraveller Cyprus"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/cyprus/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Cyprus getting help"
         }
       ],
-      "evidence_quote": "Emergency ambulance dispatch operates under unified 112 and 199",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 or 199. ... General (northern Cyprus only): Call 155.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112 / 199",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fs.gov.cy",
+          "url": "https://www.smartraveller.gov.au/destinations/cyprus",
           "tier": 1,
-          "title": "Cyprus Fire Service"
+          "title": "Smartraveller Cyprus"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/cyprus/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Cyprus getting help"
         }
       ],
-      "evidence_quote": "Cyprus Fire Service emergencies are dispatched through 112 and 199",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 or 199. ... General (northern Cyprus only): Call 155.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.cy",
+          "url": "https://www.smartraveller.gov.au/destinations/cyprus",
           "tier": 1,
-          "title": "Cyprus Emergency 112 Operations"
+          "title": "Smartraveller Cyprus"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/cyprus/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Cyprus getting help"
         }
       ],
-      "evidence_quote": "112 is the primary European emergency number operational 24/7 across Cyprus",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 or 199. ... General (northern Cyprus only): Call 155.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "112",

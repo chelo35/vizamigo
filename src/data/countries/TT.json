@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ttps.gov.tt",
+          "url": "https://ttps.gov.tt/contact/",
           "tier": 1,
-          "title": "Trinidad and Tobago Police Service (TTPS)"
+          "title": "Contact (Trinidad and Tobago Police Service)"
         }
       ],
-      "evidence_quote": "Dial 999 or 555 for emergency police response across Trinidad and Tobago",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 999 | Fire: 990 | Ambulance: 811",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "811",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.tt",
+          "url": "https://ttps.gov.tt/contact/",
           "tier": 1,
-          "title": "Ministry of Health Trinidad and Tobago"
+          "title": "Contact (Trinidad and Tobago Police Service)"
         }
       ],
-      "evidence_quote": "Call 811 for emergency medical services and national ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 999 | Fire: 990 | Ambulance: 811",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "990",
@@ -131,27 +131,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://nationalsecurity.gov.tt",
+          "url": "https://ttps.gov.tt/contact/",
           "tier": 1,
-          "title": "Trinidad and Tobago Fire Service (TTFS)"
+          "title": "Contact (Trinidad and Tobago Police Service)"
         }
       ],
-      "evidence_quote": "Dial 990 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 999 | Fire: 990 | Ambulance: 811",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "999",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.ttps.gov.tt",
+          "url": "https://ttps.gov.tt/contact/",
           "tier": 1,
-          "title": "TTPS Emergency Dispatch"
+          "title": "Contact (Trinidad and Tobago Police Service)"
         }
       ],
-      "evidence_quote": "999 coordinates central emergency dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 999 | Fire: 990 | Ambulance: 811",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "999",

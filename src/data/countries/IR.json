@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.ir",
+          "url": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
           "tier": 1,
-          "title": "Law Enforcement Command of the Islamic Republic of Iran (FARAJA)"
+          "title": "GOV.UK Iran getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/iran",
+          "tier": 1,
+          "title": "Smartraveller Iran"
         }
       ],
-      "evidence_quote": "Police emergency assistance number is 110 nationwide",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 115; Fire: 125; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "115",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://ems115.ir",
+          "url": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
           "tier": 1,
-          "title": "Iran National Emergency Medical Services Organization"
+          "title": "GOV.UK Iran getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/iran",
+          "tier": 1,
+          "title": "Smartraveller Iran"
         }
       ],
-      "evidence_quote": "Medical emergency and ambulance services dial 115",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 115; Fire: 125; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "125",
@@ -131,21 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://125.tehran.ir",
+          "url": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
           "tier": 1,
-          "title": "Tehran Fire Fighting and Safety Services Organization"
+          "title": "GOV.UK Iran getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/iran",
+          "tier": 1,
+          "title": "Smartraveller Iran"
         }
       ],
-      "evidence_quote": "Fire brigade emergency dispatch call 125",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 115; Fire: 125; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "not_found",
-      "confidence": null,
-      "sources": [],
-      "evidence_quote": null,
-      "retrieved_at": null
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Iran getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/iran",
+          "tier": 1,
+          "title": "Smartraveller Iran"
+        }
+      ],
+      "evidence_quote": "Ambulance: 115; Fire: 125; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

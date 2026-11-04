@@ -102,13 +102,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gambiafire.gm",
+          "url": "https://www.gov.uk/foreign-travel-advice/the-gambia/getting-help",
           "tier": 1,
-          "title": "Gambia Police Force"
+          "title": "GOV.UK The Gambia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/gambia",
+          "tier": 1,
+          "title": "Smartraveller Gambia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/gambie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Gambie"
         }
       ],
-      "evidence_quote": "Dial 117 nationwide for Gambia Police Force emergency intervention and traffic control",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "There is no equivalent to the UK's 999 emergency number in The Gambia.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "116",
@@ -116,13 +126,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.gm",
+          "url": "https://www.gov.uk/foreign-travel-advice/the-gambia/getting-help",
           "tier": 1,
-          "title": "Ministry of Health The Gambia"
+          "title": "GOV.UK The Gambia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/gambia",
+          "tier": 1,
+          "title": "Smartraveller Gambia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/gambie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Gambie"
         }
       ],
-      "evidence_quote": "Dial 116 nationwide for public emergency medical ambulance assistance",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "There is no equivalent to the UK's 999 emergency number in The Gambia.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "118",
@@ -130,32 +150,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gambiafire.gm",
+          "url": "https://www.gov.uk/foreign-travel-advice/the-gambia/getting-help",
           "tier": 1,
-          "title": "Gambia Fire and Rescue Service (GFRS)"
+          "title": "GOV.UK The Gambia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/gambia",
+          "tier": 1,
+          "title": "Smartraveller Gambia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/gambie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Gambie"
         }
       ],
-      "evidence_quote": "Dial 118 for Gambia Fire and Rescue Service emergency fire squads and rescue units",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "There is no equivalent to the UK's 999 emergency number in The Gambia.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
+      "value": "",
+      "status": "unverified",
       "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/the-gambia/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "GOV.UK The Gambia getting help"
         },
         {
-          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
-          "tier": 3,
-          "title": "Wikipedia: List of emergency telephone numbers"
+          "url": "https://www.smartraveller.gov.au/destinations/africa/gambia",
+          "tier": 1,
+          "title": "Smartraveller Gambia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/gambie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Gambie"
         }
       ],
       "evidence_quote": "There is no equivalent to the UK's 999 emergency number in The Gambia.",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "117",

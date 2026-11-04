@@ -99,54 +99,100 @@
   },
   "emergency": {
     "police": {
-      "value": "199",
+      "value": "199 / 194",
       "status": "verified",
-      "confidence": "medium",
-      "sources": [
-        {
-          "url": "https://moi.gov.ye",
-          "tier": 1,
-          "title": "Ministry of Interior Yemen"
-        }
-      ],
-      "evidence_quote": "Emergency police dispatch number is 199",
-      "retrieved_at": "2026-10-13"
-    },
-    "ambulance": {
-      "value": "191",
-      "status": "verified",
-      "confidence": "medium",
-      "sources": [
-        {
-          "url": "https://mophp-ye.org",
-          "tier": 1,
-          "title": "Ministry of Public Health and Population Yemen"
-        }
-      ],
-      "evidence_quote": "Red Crescent and medical emergency dispatch dial 191",
-      "retrieved_at": "2026-10-13"
-    },
-    "fire": {
-      "value": "191",
-      "status": "verified",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/yemen/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Yemen - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/yemen",
+          "tier": 1,
+          "title": "Yemen (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/yemen",
+          "tier": 1,
+          "title": "Yemen (travel.gc.ca)"
         }
       ],
       "evidence_quote": "Ambulance: 191; Fire: 191; Police: 199 or 194",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
+    },
+    "ambulance": {
+      "value": "191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/yemen/getting-help",
+          "tier": 1,
+          "title": "Yemen - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/yemen",
+          "tier": 1,
+          "title": "Yemen (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/yemen",
+          "tier": 1,
+          "title": "Yemen (travel.gc.ca)"
+        }
+      ],
+      "evidence_quote": "Ambulance: 191; Fire: 191; Police: 199 or 194",
+      "retrieved_at": "2026-11-05"
+    },
+    "fire": {
+      "value": "191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/yemen/getting-help",
+          "tier": 1,
+          "title": "Yemen - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/yemen",
+          "tier": 1,
+          "title": "Yemen (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/yemen",
+          "tier": 1,
+          "title": "Yemen (travel.gc.ca)"
+        }
+      ],
+      "evidence_quote": "Ambulance: 191; Fire: 191; Police: 199 or 194",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "not_found",
-      "confidence": null,
-      "sources": [],
-      "evidence_quote": null,
-      "retrieved_at": null
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/yemen/getting-help",
+          "tier": 1,
+          "title": "Yemen - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/yemen",
+          "tier": 1,
+          "title": "Yemen (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/yemen",
+          "tier": 1,
+          "title": "Yemen (travel.gc.ca)"
+        }
+      ],
+      "evidence_quote": "Ambulance: 191; Fire: 191; Police: 199 or 194",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

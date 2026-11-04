@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://politie.sr",
+          "url": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help",
           "tier": 1,
-          "title": "Korps Politie Suriname (KPS)"
+          "title": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help"
         }
       ],
-      "evidence_quote": "Dial 115 for emergency police assistance throughout Suriname",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 115 (ambulance, fire, police); Ambulance: 113; Fire: 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "113",
@@ -119,11 +119,11 @@
         {
           "url": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help"
         }
       ],
       "evidence_quote": "Telephone: 115 (ambulance, fire, police); Ambulance: 113; Fire: 110",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "110",
@@ -131,13 +131,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://gov.sr",
+          "url": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help",
           "tier": 1,
-          "title": "Korps Brandweer Suriname (KBS)"
+          "title": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help"
         }
       ],
-      "evidence_quote": "Dial 110 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 115 (ambulance, fire, police); Ambulance: 113; Fire: 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "115",
@@ -145,13 +145,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://politie.sr",
+          "url": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help",
           "tier": 1,
-          "title": "Korps Politie Suriname"
+          "title": "https://www.gov.uk/foreign-travel-advice/suriname/getting-help"
         }
       ],
-      "evidence_quote": "115 coordinates central emergency dispatch in Suriname",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 115 (ambulance, fire, police); Ambulance: 113; Fire: 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+597 404022",

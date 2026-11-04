@@ -104,27 +104,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.gob.pe",
+          "url": "https://www.gov.uk/foreign-travel-advice/peru/getting-help",
           "tier": 1,
-          "title": "National Police of Peru (PNP)"
+          "title": "Peru - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://elperuano.pe/noticia/305020-del-105-al-911-gobierno-avanza-hacia-un-sistema-integrado-para-atender-emergencias-mas-rapido",
+          "tier": 2,
+          "title": "Del 105 al 911 (El Peruano, official gazette)"
+        },
+        {
+          "url": "https://www.infobae.com/peru/2026/06/26/numeros-de-emergencia-en-peru-cuando-llamar-a-la-policia-bomberos-samu-linea-100-y-911/",
+          "tier": 2,
+          "title": "Números de emergencia en Perú (Infobae, Jun 2026)"
         }
       ],
-      "evidence_quote": "Emergency police dispatch central in Peru is 105",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 106; Fire: 116; Police: 105",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "106 / 117",
+      "value": "106",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gob.pe/samu",
+          "url": "https://www.gov.uk/foreign-travel-advice/peru/getting-help",
           "tier": 1,
-          "title": "SAMU Emergency Medical Care Service Peru"
+          "title": "Peru - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://elperuano.pe/noticia/305020-del-105-al-911-gobierno-avanza-hacia-un-sistema-integrado-para-atender-emergencias-mas-rapido",
+          "tier": 2,
+          "title": "Del 105 al 911 (El Peruano, official gazette)"
+        },
+        {
+          "url": "https://www.infobae.com/peru/2026/06/26/numeros-de-emergencia-en-peru-cuando-llamar-a-la-policia-bomberos-samu-linea-100-y-911/",
+          "tier": 2,
+          "title": "Números de emergencia en Perú (Infobae, Jun 2026)"
         }
       ],
-      "evidence_quote": "SAMU emergency medical rescue operates on hotline 106 and EsSalud on 117",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 106; Fire: 116; Police: 105",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "116",
@@ -132,27 +152,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberosperu.gob.pe",
+          "url": "https://www.gov.uk/foreign-travel-advice/peru/getting-help",
           "tier": 1,
-          "title": "General Firefighters Corps of Peru (CGBVP)"
+          "title": "Peru - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://elperuano.pe/noticia/305020-del-105-al-911-gobierno-avanza-hacia-un-sistema-integrado-para-atender-emergencias-mas-rapido",
+          "tier": 2,
+          "title": "Del 105 al 911 (El Peruano, official gazette)"
+        },
+        {
+          "url": "https://www.infobae.com/peru/2026/06/26/numeros-de-emergencia-en-peru-cuando-llamar-a-la-policia-bomberos-samu-linea-100-y-911/",
+          "tier": 2,
+          "title": "Números de emergencia en Perú (Infobae, Jun 2026)"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is contacted directly on hotline 116",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 106; Fire: 116; Police: 105",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "911",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.gob.pe/mininter",
+          "url": "https://www.gov.uk/foreign-travel-advice/peru/getting-help",
           "tier": 1,
-          "title": "Ministry of the Interior Peru Emergency 911"
+          "title": "Peru - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://elperuano.pe/noticia/305020-del-105-al-911-gobierno-avanza-hacia-un-sistema-integrado-para-atender-emergencias-mas-rapido",
+          "tier": 2,
+          "title": "Del 105 al 911 (El Peruano, official gazette)"
+        },
+        {
+          "url": "https://www.infobae.com/peru/2026/06/26/numeros-de-emergencia-en-peru-cuando-llamar-a-la-policia-bomberos-samu-linea-100-y-911/",
+          "tier": 2,
+          "title": "Números de emergencia en Perú (Infobae, Jun 2026)"
         }
       ],
-      "evidence_quote": "Integrated Emergency 911 routes calls across police, health, and civil defense agencies",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 106; Fire: 116; Police: 105",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "01-460-1060",

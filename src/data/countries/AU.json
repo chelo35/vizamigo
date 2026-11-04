@@ -102,13 +102,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.triplezero.gov.au",
+          "url": "https://www.triplezero.gov.au/",
           "tier": 1,
-          "title": "Triple Zero (000) Australia's Emergency Service"
+          "title": "Triple Zero (Australian Government)"
         }
       ],
-      "evidence_quote": "Triple Zero (000) is Australia's primary national emergency contact for police",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "call Triple Zero (000) ... Do you want Police, Fire or Ambulance?",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "000",
@@ -116,13 +116,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.triplezero.gov.au",
+          "url": "https://www.triplezero.gov.au/",
           "tier": 1,
-          "title": "Triple Zero Ambulance Dispatch"
+          "title": "Triple Zero (Australian Government)"
         }
       ],
-      "evidence_quote": "Emergency ambulance response connects through Triple Zero 000 nationwide",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "call Triple Zero (000) ... Do you want Police, Fire or Ambulance?",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "000",
@@ -130,13 +130,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.triplezero.gov.au",
+          "url": "https://www.triplezero.gov.au/",
           "tier": 1,
-          "title": "Triple Zero Fire Services"
+          "title": "Triple Zero (Australian Government)"
         }
       ],
-      "evidence_quote": "Fire services emergencies are dispatched directly via Triple Zero 000",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "call Triple Zero (000) ... Do you want Police, Fire or Ambulance?",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "000",
@@ -144,13 +144,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.triplezero.gov.au",
+          "url": "https://www.triplezero.gov.au/",
           "tier": 1,
-          "title": "Triple Zero Official"
+          "title": "Triple Zero (Australian Government)"
         }
       ],
-      "evidence_quote": "000 is Australia's primary emergency number; mobile 112 redirects automatically to 000",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "call Triple Zero (000) ... Do you want Police, Fire or Ambulance?",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

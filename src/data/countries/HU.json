@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.hu",
+          "url": "https://www.gov.uk/foreign-travel-advice/hungary/getting-help",
           "tier": 1,
-          "title": "Hungarian National Police (Rendőrség)"
+          "title": "GOV.UK Hungary getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/hungary",
+          "tier": 1,
+          "title": "Smartraveller Hungary"
+        },
+        {
+          "url": "https://help.unhcr.org/hungary/?p=150",
+          "tier": 2,
+          "title": "UNHCR Hungary – Emergency services"
         }
       ],
-      "evidence_quote": "Hungarian police national emergency response line is 107",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "104",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mentok.hu",
+          "url": "https://www.gov.uk/foreign-travel-advice/hungary/getting-help",
           "tier": 1,
-          "title": "Országos Mentőszolgálat (National Ambulance Service)"
+          "title": "GOV.UK Hungary getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/hungary",
+          "tier": 1,
+          "title": "Smartraveller Hungary"
+        },
+        {
+          "url": "https://help.unhcr.org/hungary/?p=150",
+          "tier": 2,
+          "title": "UNHCR Hungary – Emergency services"
         }
       ],
-      "evidence_quote": "National ambulance service dispatch in Hungary is operated through 104",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "105",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://katasztrofavedelem.hu",
+          "url": "https://www.gov.uk/foreign-travel-advice/hungary/getting-help",
           "tier": 1,
-          "title": "National Directorate General for Disaster Management"
+          "title": "GOV.UK Hungary getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/hungary",
+          "tier": 1,
+          "title": "Smartraveller Hungary"
+        },
+        {
+          "url": "https://help.unhcr.org/hungary/?p=150",
+          "tier": 2,
+          "title": "UNHCR Hungary – Emergency services"
         }
       ],
-      "evidence_quote": "Fire brigade emergency dispatch operates via 105",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.hu",
+          "url": "https://www.gov.uk/foreign-travel-advice/hungary/getting-help",
           "tier": 1,
-          "title": "Police Hungary Emergency 112"
+          "title": "GOV.UK Hungary getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/hungary",
+          "tier": 1,
+          "title": "Smartraveller Hungary"
+        },
+        {
+          "url": "https://help.unhcr.org/hungary/?p=150",
+          "tier": 2,
+          "title": "UNHCR Hungary – Emergency services"
         }
       ],
-      "evidence_quote": "European unified emergency service 112 functions 24/7 in Hungary with multilingual support",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

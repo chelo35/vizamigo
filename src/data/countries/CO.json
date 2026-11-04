@@ -98,32 +98,42 @@
   },
   "emergency": {
     "police": {
-      "value": "112",
+      "value": "123",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.gov.co",
+          "url": "https://www.gov.uk/foreign-travel-advice/colombia/getting-help",
           "tier": 1,
-          "title": "Policía Nacional de Colombia"
+          "title": "GOV.UK Colombia getting help"
+        },
+        {
+          "url": "https://bogota.gov.co/mi-ciudad/seguridad/linea-123-de-bogota-15-millones-de-emergencias-atendidas-en-2024",
+          "tier": 1,
+          "title": "Alcaldía de Bogotá – Línea 123"
         }
       ],
-      "evidence_quote": "Línea de emergencia de la Policía Nacional marcar 112 o 123",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 123; Fire: 119; Police: 123",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "125",
+      "value": "123",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minsalud.gov.co",
+          "url": "https://www.gov.uk/foreign-travel-advice/colombia/getting-help",
           "tier": 1,
-          "title": "Ministerio de Salud y Protección Social"
+          "title": "GOV.UK Colombia getting help"
+        },
+        {
+          "url": "https://bogota.gov.co/mi-ciudad/seguridad/linea-123-de-bogota-15-millones-de-emergencias-atendidas-en-2024",
+          "tier": 1,
+          "title": "Alcaldía de Bogotá – Línea 123"
         }
       ],
-      "evidence_quote": "Línea de urgencias médicas y ambulancias 125",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 123; Fire: 119; Police: 123",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "119",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberos.gov.co",
+          "url": "https://www.gov.uk/foreign-travel-advice/colombia/getting-help",
           "tier": 1,
-          "title": "Dirección Nacional de Bomberos Colombia"
+          "title": "GOV.UK Colombia getting help"
+        },
+        {
+          "url": "https://bogota.gov.co/mi-ciudad/seguridad/linea-123-de-bogota-15-millones-de-emergencias-atendidas-en-2024",
+          "tier": 1,
+          "title": "Alcaldía de Bogotá – Línea 123"
         }
       ],
-      "evidence_quote": "Línea nacional para atención de incendios y rescate 119",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 123; Fire: 119; Police: 123",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "123",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://bogota.gov.co/servicios/linea-123",
+          "url": "https://www.gov.uk/foreign-travel-advice/colombia/getting-help",
           "tier": 1,
-          "title": "Línea Única de Seguridad y Emergencias 123"
+          "title": "GOV.UK Colombia getting help"
+        },
+        {
+          "url": "https://bogota.gov.co/mi-ciudad/seguridad/linea-123-de-bogota-15-millones-de-emergencias-atendidas-en-2024",
+          "tier": 1,
+          "title": "Alcaldía de Bogotá – Línea 123"
         }
       ],
-      "evidence_quote": "Línea Única de Emergencias 123 coordina policía, ambulancias y bomberos",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 123; Fire: 119; Police: 123",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

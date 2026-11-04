@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.carabineros.cl",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/chile",
           "tier": 1,
-          "title": "Carabineros de Chile"
+          "title": "Smartraveller Chile"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/id/node/273",
+          "tier": 1,
+          "title": "Smartraveller Chile (alt URL)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chili/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Chili contacts utiles"
         }
       ],
-      "evidence_quote": "Emergency police dispatch throughout Chile connects via 133",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Rescue - Call 132; Medical - Call 131; Police- Call 133",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "131",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minsal.cl",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/chile",
           "tier": 1,
-          "title": "Ministry of Health Chile (SAMU)"
+          "title": "Smartraveller Chile"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/id/node/273",
+          "tier": 1,
+          "title": "Smartraveller Chile (alt URL)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chili/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Chili contacts utiles"
         }
       ],
-      "evidence_quote": "SAMU emergency ambulance and medical dispatch is dialed on 131",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Rescue - Call 132; Medical - Call 131; Police- Call 133",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "132",
@@ -131,27 +151,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberos.cl",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/chile",
           "tier": 1,
-          "title": "Bomberos de Chile"
+          "title": "Smartraveller Chile"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/id/node/273",
+          "tier": 1,
+          "title": "Smartraveller Chile (alt URL)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chili/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Chili contacts utiles"
         }
       ],
-      "evidence_quote": "Firefighting rescue services across all Chilean municipalities respond to 132",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Rescue - Call 132; Medical - Call 131; Police- Call 133",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "133",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.carabineros.cl",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/chile",
           "tier": 1,
-          "title": "Carabineros Emergency Service"
+          "title": "Smartraveller Chile"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/id/node/273",
+          "tier": 1,
+          "title": "Smartraveller Chile (alt URL)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/chili/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Chili contacts utiles"
         }
       ],
-      "evidence_quote": "133 serves as the primary emergency hotline for urgent public intervention in Chile",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Rescue - Call 132; Medical - Call 131; Police- Call 133",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "133",

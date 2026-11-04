@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nationalpolice.go.ke",
+          "url": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
           "tier": 1,
-          "title": "National Police Service of Kenya"
+          "title": "GOV.UK Kenya getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/kenya",
+          "tier": 1,
+          "title": "Smartraveller Kenya"
         }
       ],
-      "evidence_quote": "Dial 999 or 112 for emergency police services across Kenya",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.health.go.ke",
+          "url": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of Kenya"
+          "title": "GOV.UK Kenya getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/kenya",
+          "tier": 1,
+          "title": "Smartraveller Kenya"
         }
       ],
-      "evidence_quote": "Call 999 or Red Cross ambulance services for emergency medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -130,27 +140,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://nairobi.go.ke",
+          "url": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
           "tier": 1,
-          "title": "Nairobi Fire and Rescue Services"
+          "title": "GOV.UK Kenya getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/kenya",
+          "tier": 1,
+          "title": "Smartraveller Kenya"
         }
       ],
-      "evidence_quote": "Dial 999 for municipal fire and technical rescue brigades",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nationalpolice.go.ke",
+          "url": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
           "tier": 1,
-          "title": "National Police Service"
+          "title": "GOV.UK Kenya getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/kenya",
+          "tier": 1,
+          "title": "Smartraveller Kenya"
         }
       ],
-      "evidence_quote": "112 functions as the nationwide universal mobile emergency dispatch number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+254 20 272 4154",

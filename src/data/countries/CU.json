@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minint.gob.cu",
+          "url": "https://www.gov.uk/foreign-travel-advice/cuba/getting-help",
           "tier": 1,
-          "title": "Ministerio del Interior de la República de Cuba (MININT)"
+          "title": "GOV.UK Cuba getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/cuba",
+          "tier": 1,
+          "title": "Smartraveller Cuba"
         }
       ],
-      "evidence_quote": "Dial 106 for emergency police (Policía Nacional Revolucionaria) across Cuba",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 104; Fire: 105; Police: 106",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "104",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://salud.msp.gob.cu",
+          "url": "https://www.gov.uk/foreign-travel-advice/cuba/getting-help",
           "tier": 1,
-          "title": "Ministerio de Salud Pública de Cuba (MINSAP)"
+          "title": "GOV.UK Cuba getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/cuba",
+          "tier": 1,
+          "title": "Smartraveller Cuba"
         }
       ],
-      "evidence_quote": "Call 104 for urgent medical emergencies and ambulance dispatch in Cuba",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 104; Fire: 105; Police: 106",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "105",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minint.gob.cu",
+          "url": "https://www.gov.uk/foreign-travel-advice/cuba/getting-help",
           "tier": 1,
-          "title": "Cuerpo de Bomberos de Cuba"
+          "title": "GOV.UK Cuba getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/cuba",
+          "tier": 1,
+          "title": "Smartraveller Cuba"
         }
       ],
-      "evidence_quote": "Dial 105 for fire and rescue services throughout Cuba",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 104; Fire: 105; Police: 106",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "106",
-      "status": "verified",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.minint.gob.cu",
+          "url": "https://www.gov.uk/foreign-travel-advice/cuba/getting-help",
           "tier": 1,
-          "title": "MININT Cuba"
+          "title": "GOV.UK Cuba getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/cuba",
+          "tier": 1,
+          "title": "Smartraveller Cuba"
         }
       ],
-      "evidence_quote": "106 functions as the central dispatch contact number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 104; Fire: 105; Police: 106",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+53 7 866 8320",

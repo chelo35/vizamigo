@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mup.gov.hr",
+          "url": "https://www.hakom.hr/en/emergency-services/184",
+          "tier": 2,
+          "title": "HAKOM (Croatian regulator) – Emergency services"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/croatia/getting-help",
           "tier": 1,
-          "title": "Ministarstvo unutarnjih poslova: Policija 192"
+          "title": "GOV.UK Croatia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/croatia",
+          "tier": 1,
+          "title": "Smartraveller Croatia"
         }
       ],
-      "evidence_quote": "Nazovite 192 za hitne policijske intervencije u cijeloj Hrvatskoj",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "The unified emergency number ... is 112; 192 - Police; 193 - Fire Brigade; 194 - Emergency Medical Services",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "194",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hzhm.hr",
+          "url": "https://www.hakom.hr/en/emergency-services/184",
+          "tier": 2,
+          "title": "HAKOM (Croatian regulator) – Emergency services"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/croatia/getting-help",
           "tier": 1,
-          "title": "Hrvatski zavod za hitnu medicinu (194)"
+          "title": "GOV.UK Croatia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/croatia",
+          "tier": 1,
+          "title": "Smartraveller Croatia"
         }
       ],
-      "evidence_quote": "Broj 194 služi za hitnu medicinsku pomoć i pozive sanitetskih vozila",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "The unified emergency number ... is 112; 192 - Police; 193 - Fire Brigade; 194 - Emergency Medical Services",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "193",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://hvz.gov.hr",
+          "url": "https://www.hakom.hr/en/emergency-services/184",
+          "tier": 2,
+          "title": "HAKOM (Croatian regulator) – Emergency services"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/croatia/getting-help",
           "tier": 1,
-          "title": "Hrvatska vatrogasna zajednica (193)"
+          "title": "GOV.UK Croatia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/croatia",
+          "tier": 1,
+          "title": "Smartraveller Croatia"
         }
       ],
-      "evidence_quote": "Nazovite 193 za vatrogasce u slučaju požara i spašavanja",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "The unified emergency number ... is 112; 192 - Police; 193 - Fire Brigade; 194 - Emergency Medical Services",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://civilna-zastita.gov.hr",
+          "url": "https://www.hakom.hr/en/emergency-services/184",
+          "tier": 2,
+          "title": "HAKOM (Croatian regulator) – Emergency services"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/croatia/getting-help",
           "tier": 1,
-          "title": "Ravnateljstvo civilne zaštite: Centar 112"
+          "title": "GOV.UK Croatia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/croatia",
+          "tier": 1,
+          "title": "Smartraveller Croatia"
         }
       ],
-      "evidence_quote": "Jedinstveni europski broj za hitne službe 112 dostupan je bez naknade",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "The unified emergency number ... is 112; 192 - Police; 193 - Fire Brigade; 194 - Emergency Medical Services",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

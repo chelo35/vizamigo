@@ -104,13 +104,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "http://bocongan.gov.vn",
+          "url": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
           "tier": 1,
-          "title": "Bộ Công an: Tổng đài Cảnh sát 113"
+          "title": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help"
         }
       ],
-      "evidence_quote": "Gọi 113 để báo tin khẩn cấp về an ninh trật tự cho lực lượng Cảnh sát phản ứng nhanh",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 115; Fire: 114; Police: 113; National search and rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "115",
@@ -118,13 +118,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moh.gov.vn",
+          "url": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
           "tier": 1,
-          "title": "Bộ Y tế: Cấp cứu y tế 115"
+          "title": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help"
         }
       ],
-      "evidence_quote": "Gọi 115 khi cần cấp cứu y tế và xe cứu thương khẩn cấp trên toàn quốc",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 115; Fire: 114; Police: 113; National search and rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "114",
@@ -132,27 +132,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "http://canhsatpccc.gov.vn",
+          "url": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
           "tier": 1,
-          "title": "Cục Cảnh sát PCCC và CNCH (114)"
+          "title": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help"
         }
       ],
-      "evidence_quote": "Gọi 114 để báo cháy, nổ và yêu cầu cứu nạn cứu hộ khẩn cấp",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 115; Fire: 114; Police: 113; National search and rescue: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 115; Fire: 114; Police: 113; National search and rescue: 112",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

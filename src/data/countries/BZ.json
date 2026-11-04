@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.bz",
+          "url": "https://www.gov.uk/foreign-travel-advice/belize/getting-help",
           "tier": 1,
-          "title": "Belize Police Department"
+          "title": "GOV.UK Belize getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/americas/belize",
+          "tier": 1,
+          "title": "Smartraveller Belize"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency police assistance throughout Belize",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 or 90 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.bz",
+          "url": "https://www.gov.uk/foreign-travel-advice/belize/getting-help",
           "tier": 1,
-          "title": "Ministry of Health & Wellness Belize"
+          "title": "GOV.UK Belize getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/americas/belize",
+          "tier": 1,
+          "title": "Smartraveller Belize"
         }
       ],
-      "evidence_quote": "Call 911 or BERT (Belize Emergency Response Team) +501 223-3292 for medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 or 90 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -132,13 +142,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.belize.gov.bz",
+          "url": "https://www.gov.uk/foreign-travel-advice/belize/getting-help",
           "tier": 1,
-          "title": "National Fire Service of Belize"
+          "title": "GOV.UK Belize getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/americas/belize",
+          "tier": 1,
+          "title": "Smartraveller Belize"
         }
       ],
-      "evidence_quote": "Dial 911 or local fire station numbers for emergency fire services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 or 90 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -146,13 +161,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.belize.gov.bz",
+          "url": "https://www.gov.uk/foreign-travel-advice/belize/getting-help",
           "tier": 1,
-          "title": "Government of Belize Emergency Services"
+          "title": "GOV.UK Belize getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/americas/belize",
+          "tier": 1,
+          "title": "Smartraveller Belize"
         }
       ],
-      "evidence_quote": "911 is the central emergency number operational nationwide",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 or 90 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+501 227-2420",

@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policie.cz",
+          "url": "https://portal.gov.cz/sluzby-vs/tisnove-volani-S2824",
           "tier": 1,
-          "title": "Police of the Czech Republic (Policie ČR)"
+          "title": "Portál veřejné správy – Tísňové volání"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/czechia/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Czechia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/europe/czech-republic",
+          "tier": 1,
+          "title": "Smartraveller Czechia"
         }
       ],
-      "evidence_quote": "State police emergency telephone number in the Czech Republic is 158",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Jednotné evropské číslo; 150 Hasičský záchranný sbor; 155 Zdravotnická záchranná služba; 158 Policie ČR",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "155",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.zzshmp.cz",
+          "url": "https://portal.gov.cz/sluzby-vs/tisnove-volani-S2824",
           "tier": 1,
-          "title": "Medical Rescue Service Prague"
+          "title": "Portál veřejné správy – Tísňové volání"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/czechia/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Czechia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/europe/czech-republic",
+          "tier": 1,
+          "title": "Smartraveller Czechia"
         }
       ],
-      "evidence_quote": "Medical rescue and ambulance emergency number across Czechia is 155",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Jednotné evropské číslo; 150 Hasičský záchranný sbor; 155 Zdravotnická záchranná služba; 158 Policie ČR",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "150",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hzscr.cz",
+          "url": "https://portal.gov.cz/sluzby-vs/tisnove-volani-S2824",
           "tier": 1,
-          "title": "Fire Rescue Service of the Czech Republic"
+          "title": "Portál veřejné správy – Tísňové volání"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/czechia/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Czechia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/europe/czech-republic",
+          "tier": 1,
+          "title": "Smartraveller Czechia"
         }
       ],
-      "evidence_quote": "Fire brigade emergency dispatch operates directly on hotline 150",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Jednotné evropské číslo; 150 Hasičský záchranný sbor; 155 Zdravotnická záchranná služba; 158 Policie ČR",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hzscr.cz",
+          "url": "https://portal.gov.cz/sluzby-vs/tisnove-volani-S2824",
           "tier": 1,
-          "title": "Czech Integrated Rescue System 112"
+          "title": "Portál veřejné správy – Tísňové volání"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/czechia/getting-help",
+          "tier": 1,
+          "title": "GOV.UK Czechia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/europe/czech-republic",
+          "tier": 1,
+          "title": "Smartraveller Czechia"
         }
       ],
-      "evidence_quote": "The 112 European emergency call line is operated by the Fire Rescue Service with multi-language dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Jednotné evropské číslo; 150 Hasičský záchranný sbor; 155 Zdravotnická záchranná služba; 158 Policie ČR",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "156",

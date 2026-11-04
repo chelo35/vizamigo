@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mvd.gov.kg",
+          "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of the Kyrgyz Republic"
+          "title": "GOV.UK Kyrgyzstan getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/asia/kyrgyz-republic",
+          "tier": 1,
+          "title": "Smartraveller Kyrgyz Republic"
         }
       ],
-      "evidence_quote": "Dial 102 for emergency police assistance throughout Kyrgyzstan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103 Fire: 101 Police: 102 Rescue and emergency: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://med.kg",
+          "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of the Kyrgyz Republic"
+          "title": "GOV.UK Kyrgyzstan getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/asia/kyrgyz-republic",
+          "tier": 1,
+          "title": "Smartraveller Kyrgyz Republic"
         }
       ],
-      "evidence_quote": "Call 103 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103 Fire: 101 Police: 102 Rescue and emergency: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mchs.gov.kg",
+          "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Situations (MES) Kyrgyzstan"
+          "title": "GOV.UK Kyrgyzstan getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/asia/kyrgyz-republic",
+          "tier": 1,
+          "title": "Smartraveller Kyrgyz Republic"
         }
       ],
-      "evidence_quote": "Dial 101 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103 Fire: 101 Police: 102 Rescue and emergency: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mchs.gov.kg",
+          "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan/getting-help",
           "tier": 1,
-          "title": "MES Unified Emergency Service 112"
+          "title": "GOV.UK Kyrgyzstan getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/asia/kyrgyz-republic",
+          "tier": 1,
+          "title": "Smartraveller Kyrgyz Republic"
         }
       ],
-      "evidence_quote": "112 is the nationwide unified emergency dispatch number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103 Fire: 101 Police: 102 Rescue and emergency: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+996 312 888 102",

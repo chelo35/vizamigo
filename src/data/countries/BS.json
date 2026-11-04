@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.royalbahamaspolice.org",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/bahamas",
           "tier": 1,
-          "title": "Royal Bahamas Police Force (RBPF)"
+          "title": "Smartraveller Bahamas"
+        },
+        {
+          "url": "https://www.royalbahamaspolice.org/crimeprevention/emergencynumbers.html",
+          "tier": 1,
+          "title": "Royal Bahamas Police Force – Emergency numbers"
         }
       ],
-      "evidence_quote": "Dial 911 or 919 for emergency police assistance throughout the Bahamas",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911 or 919. ... Call 911, 919 or go to the nearest hospital. ... Call 911, 919 or visit the nearest police station.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bahamas.gov.bs/health",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/bahamas",
           "tier": 1,
-          "title": "Ministry of Health and Wellness of the Bahamas"
+          "title": "Smartraveller Bahamas"
+        },
+        {
+          "url": "https://www.royalbahamaspolice.org/crimeprevention/emergencynumbers.html",
+          "tier": 1,
+          "title": "Royal Bahamas Police Force – Emergency numbers"
         }
       ],
-      "evidence_quote": "Call 911 or 919 for emergency ambulance dispatch in New Providence and Grand Bahama",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911 or 919. ... Call 911, 919 or go to the nearest hospital. ... Call 911, 919 or visit the nearest police station.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.royalbahamaspolice.org",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/bahamas",
           "tier": 1,
-          "title": "RBPF Fire Services Division"
+          "title": "Smartraveller Bahamas"
+        },
+        {
+          "url": "https://www.royalbahamaspolice.org/crimeprevention/emergencynumbers.html",
+          "tier": 1,
+          "title": "Royal Bahamas Police Force – Emergency numbers"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency fire response services across the islands",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911 or 919. ... Call 911, 919 or go to the nearest hospital. ... Call 911, 919 or visit the nearest police station.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.royalbahamaspolice.org",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/bahamas",
           "tier": 1,
-          "title": "Royal Bahamas Police Force"
+          "title": "Smartraveller Bahamas"
+        },
+        {
+          "url": "https://www.royalbahamaspolice.org/crimeprevention/emergencynumbers.html",
+          "tier": 1,
+          "title": "Royal Bahamas Police Force – Emergency numbers"
         }
       ],
-      "evidence_quote": "911 is the central emergency dispatcher for police, fire, and medical rescue",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911 or 919. ... Call 911, 919 or go to the nearest hospital. ... Call 911, 919 or visit the nearest police station.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+1 242 322 4333",

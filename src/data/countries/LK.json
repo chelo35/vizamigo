@@ -104,13 +104,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.lk",
+          "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
           "tier": 1,
-          "title": "Sri Lanka Police"
+          "title": "Sri Lanka - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/sri-lanka",
+          "tier": 1,
+          "title": "Sri Lanka (Smartraveller)"
+        },
+        {
+          "url": "https://adaderana.lk/news/90912/colombo-fire-brigades-emergency-numbers-temporarily-out-of-order",
+          "tier": 2,
+          "title": "Colombo fire brigade emergency numbers (Ada Derana)"
         }
       ],
-      "evidence_quote": "Emergency police telephone hotline across Sri Lanka is 119",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 011 2691111 or 1990; Fire and Rescue: 111; Police: 118/119",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "1990",
@@ -118,13 +128,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://1990.lk",
+          "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
           "tier": 1,
-          "title": "1990 Suwa Seriya Pre-Hospital Care Ambulance Service"
+          "title": "Sri Lanka - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/sri-lanka",
+          "tier": 1,
+          "title": "Sri Lanka (Smartraveller)"
+        },
+        {
+          "url": "https://adaderana.lk/news/90912/colombo-fire-brigades-emergency-numbers-temporarily-out-of-order",
+          "tier": 2,
+          "title": "Colombo fire brigade emergency numbers (Ada Derana)"
         }
       ],
-      "evidence_quote": "1990 Suwa Seriya operates the nationwide free emergency medical ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 011 2691111 or 1990; Fire and Rescue: 111; Police: 118/119",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "110",
@@ -132,27 +152,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.colombo.mc.gov.lk",
+          "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
           "tier": 1,
-          "title": "Colombo Municipal Fire Service"
+          "title": "Sri Lanka - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/sri-lanka",
+          "tier": 1,
+          "title": "Sri Lanka (Smartraveller)"
+        },
+        {
+          "url": "https://adaderana.lk/news/90912/colombo-fire-brigades-emergency-numbers-temporarily-out-of-order",
+          "tier": 2,
+          "title": "Colombo fire brigade emergency numbers (Ada Derana)"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch operates directly on hotline 110",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 011 2691111 or 1990; Fire and Rescue: 111; Police: 118/119",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "119",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.police.lk",
+          "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
           "tier": 1,
-          "title": "Sri Lanka Police Emergency Response"
+          "title": "Sri Lanka - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/sri-lanka",
+          "tier": 1,
+          "title": "Sri Lanka (Smartraveller)"
+        },
+        {
+          "url": "https://adaderana.lk/news/90912/colombo-fire-brigades-emergency-numbers-temporarily-out-of-order",
+          "tier": 2,
+          "title": "Colombo fire brigade emergency numbers (Ada Derana)"
         }
       ],
-      "evidence_quote": "119 connects directly to central police and emergency operations nationwide",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 011 2691111 or 1990; Fire and Rescue: 111; Police: 118/119",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1912",

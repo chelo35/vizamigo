@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.iiv.uz",
+          "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of Uzbekistan"
+          "title": "Uzbekistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uzbekistan",
+          "tier": 1,
+          "title": "Uzbekistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 102 for emergency police assistance throughout Uzbekistan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102 ... A new unified emergency services number, 112, was introduced in 2024",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ssv.uz",
+          "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of Uzbekistan"
+          "title": "Uzbekistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uzbekistan",
+          "tier": 1,
+          "title": "Uzbekistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 103 for emergency medical and ambulance dispatch services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102 ... A new unified emergency services number, 112, was introduced in 2024",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fvv.uz",
+          "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Situations of Uzbekistan"
+          "title": "Uzbekistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uzbekistan",
+          "tier": 1,
+          "title": "Uzbekistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 101 for fire emergency dispatch across all regions of Uzbekistan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102 ... A new unified emergency services number, 112, was introduced in 2024",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fvv.uz",
+          "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Situations of Uzbekistan"
+          "title": "Uzbekistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uzbekistan",
+          "tier": 1,
+          "title": "Uzbekistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Unified emergency response dispatch 112 is active across major cities in Uzbekistan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102 ... A new unified emergency services number, 112, was introduced in 2024",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1173",

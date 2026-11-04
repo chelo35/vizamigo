@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bps.gov.bb",
+          "url": "https://www.gov.uk/foreign-travel-advice/barbados/getting-help",
           "tier": 1,
-          "title": "The Barbados Police Service"
+          "title": "GOV.UK Barbados getting help"
+        },
+        {
+          "url": "https://gisbarbados.gov.bb/?p=559552",
+          "tier": 1,
+          "title": "Barbados Government Information Service"
         }
       ],
-      "evidence_quote": "Dial 211 for emergency police response across Barbados",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 511; Fire: 311; Police: 211",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "511",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://qeh.gov.bb",
+          "url": "https://www.gov.uk/foreign-travel-advice/barbados/getting-help",
           "tier": 1,
-          "title": "Queen Elizabeth Hospital Emergency Ambulance Service"
+          "title": "GOV.UK Barbados getting help"
+        },
+        {
+          "url": "https://gisbarbados.gov.bb/?p=559552",
+          "tier": 1,
+          "title": "Barbados Government Information Service"
         }
       ],
-      "evidence_quote": "Call 511 for emergency medical services and QEH ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 511; Fire: 311; Police: 211",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "311",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bfs.gov.bb",
+          "url": "https://www.gov.uk/foreign-travel-advice/barbados/getting-help",
           "tier": 1,
-          "title": "Barbados Fire Service"
+          "title": "GOV.UK Barbados getting help"
+        },
+        {
+          "url": "https://gisbarbados.gov.bb/?p=559552",
+          "tier": 1,
+          "title": "Barbados Government Information Service"
         }
       ],
-      "evidence_quote": "Dial 311 for fire and rescue emergency services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 511; Fire: 311; Police: 211",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "211",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.bps.gov.bb",
+          "url": "https://www.gov.uk/foreign-travel-advice/barbados/getting-help",
           "tier": 1,
-          "title": "The Barbados Police Service"
+          "title": "GOV.UK Barbados getting help"
+        },
+        {
+          "url": "https://gisbarbados.gov.bb/?p=559552",
+          "tier": 1,
+          "title": "Barbados Government Information Service"
         }
       ],
-      "evidence_quote": "211 is the central emergency operations number in Barbados",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 511; Fire: 311; Police: 211",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "211",

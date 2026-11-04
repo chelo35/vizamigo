@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://polri.go.id",
+          "url": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
           "tier": 1,
-          "title": "Kepolisian Negara Republik Indonesia (Polri: 110)"
+          "title": "GOV.UK Indonesia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/indonesia",
+          "tier": 1,
+          "title": "Smartraveller Indonesia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/indonesie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Indonésie"
         }
       ],
-      "evidence_quote": "Layanan Call Center 110 Polri siap melayani laporan darurat kepolisian 24 jam",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "118 / 119",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://kemkes.go.id",
+          "url": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
           "tier": 1,
-          "title": "Kementerian Kesehatan: SPGD 119"
+          "title": "GOV.UK Indonesia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/indonesia",
+          "tier": 1,
+          "title": "Smartraveller Indonesia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/indonesie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Indonésie"
         }
       ],
-      "evidence_quote": "Hubungi 119 untuk Sistem Penanggulangan Gawat Darurat Terpadu ambulans dan medis",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "113",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://indonesia.go.id",
+          "url": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
           "tier": 1,
-          "title": "Dinas Pemadam Kebakaran (113)"
+          "title": "GOV.UK Indonesia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/indonesia",
+          "tier": 1,
+          "title": "Smartraveller Indonesia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/indonesie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Indonésie"
         }
       ],
-      "evidence_quote": "Hubungi 113 untuk pemadam kebakaran dan pertolongan bencana darurat",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://layanan112.kominfo.go.id",
+          "url": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
           "tier": 1,
-          "title": "Kementerian Kominfo: Layanan Darurat 112"
+          "title": "GOV.UK Indonesia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/indonesia",
+          "tier": 1,
+          "title": "Smartraveller Indonesia"
+        },
+        {
+          "url": "https://voyage.gc.ca/destinations/indonesie",
+          "tier": 1,
+          "title": "Gouvernement du Canada – Indonésie"
         }
       ],
-      "evidence_quote": "Layanan Nomor Tunggal Panggilan Darurat 112 bebas pulsa di seluruh Indonesia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "(0361) 754599 (Bali Turist Polisi)",

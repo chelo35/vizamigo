@@ -98,60 +98,100 @@
   },
   "emergency": {
     "police": {
-      "value": "19",
+      "value": "190 / 19",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.dgsn.gov.ma",
+          "url": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
           "tier": 1,
-          "title": "Direction Generale de la Surete Nationale (DGSN)"
+          "title": "Morocco - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/morocco",
+          "tier": 1,
+          "title": "Morocco (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.osac.gov/Country/Morocco/Content/Detail/Report/46a92000-3810-4c77-909b-2258be36b1e7",
+          "tier": 1,
+          "title": "Morocco Country Security Report (OSAC, US DoS)"
         }
       ],
-      "evidence_quote": "Emergency national police assistance in Moroccan urban areas is reachable via 19",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 150; Fire: 150; Police: 190; Gendarmerie (military police): 177",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "15",
+      "value": "150 / 15",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sante.gov.ma",
+          "url": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
           "tier": 1,
-          "title": "Moroccan Ministry of Health"
+          "title": "Morocco - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/morocco",
+          "tier": 1,
+          "title": "Morocco (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.osac.gov/Country/Morocco/Content/Detail/Report/46a92000-3810-4c77-909b-2258be36b1e7",
+          "tier": 1,
+          "title": "Morocco Country Security Report (OSAC, US DoS)"
         }
       ],
-      "evidence_quote": "Ambulance and civil protection emergency hotline in Morocco is 15",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 150; Fire: 150; Police: 190; Gendarmerie (military police): 177",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "15",
+      "value": "150 / 15",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interieur.gov.ma",
+          "url": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
           "tier": 1,
-          "title": "Moroccan Ministry of Interior"
+          "title": "Morocco - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/morocco",
+          "tier": 1,
+          "title": "Morocco (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.osac.gov/Country/Morocco/Content/Detail/Report/46a92000-3810-4c77-909b-2258be36b1e7",
+          "tier": 1,
+          "title": "Morocco Country Security Report (OSAC, US DoS)"
         }
       ],
-      "evidence_quote": "Fire emergency services are operated directly under civil protection dispatch number 15",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 150; Fire: 150; Police: 190; Gendarmerie (military police): 177",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.anrt.ma",
+          "url": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
           "tier": 1,
-          "title": "Agence Nationale de Reglementation des Telecommunications"
+          "title": "Morocco - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/morocco",
+          "tier": 1,
+          "title": "Morocco (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.osac.gov/Country/Morocco/Content/Detail/Report/46a92000-3810-4c77-909b-2258be36b1e7",
+          "tier": 1,
+          "title": "Morocco Country Security Report (OSAC, US DoS)"
         }
       ],
-      "evidence_quote": "Standard European emergency number 112 is routed on mobile networks across Morocco",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 150; Fire: 150; Police: 190; Gendarmerie (military police): 177",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "19",

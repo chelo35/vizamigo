@@ -98,46 +98,76 @@
   },
   "emergency": {
     "police": {
-      "value": "091 / 092",
+      "value": "112 / 091",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.es",
+          "url": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
           "tier": 1,
-          "title": "Policía Nacional de España (091)"
+          "title": "GOV.UK Spain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/spain",
+          "tier": 1,
+          "title": "Smartraveller Spain"
+        },
+        {
+          "url": "https://www.interior.gob.es/opencms/va/detalle/articulo/La-Policia-Nacional-atendio-mas-de-4.500.000-de-llamadas-al-telefono-091-en-las-salas-CIMACC-de-toda-Espana./",
+          "tier": 2,
+          "title": "Ministerio del Interior (title)"
         }
       ],
-      "evidence_quote": "El 091 corresponde a la Policía Nacional y el 092 a la Policía Local",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "061",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mscbs.gob.es",
+          "url": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
           "tier": 1,
-          "title": "Ministerio de Sanidad: Urgencias Médicas 061"
+          "title": "GOV.UK Spain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/spain",
+          "tier": 1,
+          "title": "Smartraveller Spain"
+        },
+        {
+          "url": "https://www.interior.gob.es/opencms/va/detalle/articulo/La-Policia-Nacional-atendio-mas-de-4.500.000-de-llamadas-al-telefono-091-en-las-salas-CIMACC-de-toda-Espana./",
+          "tier": 2,
+          "title": "Ministerio del Interior (title)"
         }
       ],
-      "evidence_quote": "El 061 es el número de emergencias sanitarias y ambulancias públicas",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "080 / 085",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interior.gob.es",
+          "url": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
           "tier": 1,
-          "title": "Ministerio del Interior: Bomberos"
+          "title": "GOV.UK Spain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/spain",
+          "tier": 1,
+          "title": "Smartraveller Spain"
+        },
+        {
+          "url": "https://www.interior.gob.es/opencms/va/detalle/articulo/La-Policia-Nacional-atendio-mas-de-4.500.000-de-llamadas-al-telefono-091-en-las-salas-CIMACC-de-toda-Espana./",
+          "tier": 2,
+          "title": "Ministerio del Interior (title)"
         }
       ],
-      "evidence_quote": "El 080 corresponde a los servicios de extinción de incendios urbanos",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interior.gob.es",
+          "url": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
           "tier": 1,
-          "title": "Centro de Emergencias 112 España"
+          "title": "GOV.UK Spain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/spain",
+          "tier": 1,
+          "title": "Smartraveller Spain"
+        },
+        {
+          "url": "https://www.interior.gob.es/opencms/va/detalle/articulo/La-Policia-Nacional-atendio-mas-de-4.500.000-de-llamadas-al-telefono-091-en-las-salas-CIMACC-de-toda-Espana./",
+          "tier": 2,
+          "title": "Ministerio del Interior (title)"
         }
       ],
-      "evidence_quote": "El 112 es el teléfono único de emergencias en todo el territorio español",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "902 102 112 (SATE)",

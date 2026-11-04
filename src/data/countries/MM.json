@@ -105,13 +105,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.myanmarpolice.gov.mm",
+          "url": "https://www.smartraveller.gov.au/destinations/myanmar",
           "tier": 1,
-          "title": "Myanmar Police Force"
+          "title": "https://www.smartraveller.gov.au/destinations/myanmar"
         }
       ],
-      "evidence_quote": "Dial 199 for emergency police assistance throughout Myanmar",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 191. Medical: Call 192 (Yangon General Hospital). Police: Call 199",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "192",
@@ -119,13 +119,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mohs.gov.mm",
+          "url": "https://www.smartraveller.gov.au/destinations/myanmar",
           "tier": 1,
-          "title": "Yangon General Hospital Emergency Medical Services"
+          "title": "https://www.smartraveller.gov.au/destinations/myanmar"
         }
       ],
-      "evidence_quote": "Call 192 for emergency ambulance dispatch in urban centers",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 191. Medical: Call 192 (Yangon General Hospital). Police: Call 199",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "191",
@@ -133,27 +133,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fsd.gov.mm",
+          "url": "https://www.smartraveller.gov.au/destinations/myanmar",
           "tier": 1,
-          "title": "Fire Services Department Myanmar"
+          "title": "https://www.smartraveller.gov.au/destinations/myanmar"
         }
       ],
-      "evidence_quote": "Dial 191 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 191. Medical: Call 192 (Yangon General Hospital). Police: Call 199",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "199",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.myanmarpolice.gov.mm",
+          "url": "https://www.smartraveller.gov.au/destinations/myanmar",
           "tier": 1,
-          "title": "Myanmar Emergency Central Services"
+          "title": "https://www.smartraveller.gov.au/destinations/myanmar"
         }
       ],
-      "evidence_quote": "199 coordinates central emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 191. Medical: Call 192 (Yangon General Hospital). Police: Call 199",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+95 1 642828",

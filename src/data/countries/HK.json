@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.hk",
-          "tier": 1,
-          "title": "Hong Kong Police Force"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency police assistance across all Hong Kong districts",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Hong Kong: 999; Mobile 112 redirects to 999",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hkfsd.gov.hk",
-          "tier": 1,
-          "title": "Hong Kong Fire Services Department Ambulance"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Emergency ambulance dispatch is handled via 999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Hong Kong: 999; Mobile 112 redirects to 999",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -131,13 +131,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hkfsd.gov.hk",
-          "tier": 1,
-          "title": "Hong Kong Fire Services Department"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Call 999 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Hong Kong: 999; Mobile 112 redirects to 999",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999",
@@ -146,12 +146,12 @@
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
-          "tier": 3,
-          "title": "Wikipedia: List of emergency telephone numbers"
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
       "evidence_quote": "Hong Kong: 999; Mobile 112 redirects to 999",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "2527 7177",

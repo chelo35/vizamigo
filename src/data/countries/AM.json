@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.am",
+          "url": "https://www.gov.uk/foreign-travel-advice/armenia/getting-help",
           "tier": 1,
-          "title": "Police of the Republic of Armenia"
+          "title": "GOV.UK Armenia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/armenia",
+          "tier": 1,
+          "title": "Smartraveller Armenia"
         }
       ],
-      "evidence_quote": "Dial 102 for emergency police response across Armenia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.am",
+          "url": "https://www.gov.uk/foreign-travel-advice/armenia/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of Armenia"
+          "title": "GOV.UK Armenia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/armenia",
+          "tier": 1,
+          "title": "Smartraveller Armenia"
         }
       ],
-      "evidence_quote": "Call 103 for emergency medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mes.am",
+          "url": "https://www.gov.uk/foreign-travel-advice/armenia/getting-help",
           "tier": 1,
-          "title": "Rescue Service of the Ministry of Internal Affairs"
+          "title": "GOV.UK Armenia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/armenia",
+          "tier": 1,
+          "title": "Smartraveller Armenia"
         }
       ],
-      "evidence_quote": "Dial 101 for fire and technical rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mes.am",
+          "url": "https://www.gov.uk/foreign-travel-advice/armenia/getting-help",
           "tier": 1,
-          "title": "Rescue Service"
+          "title": "GOV.UK Armenia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/armenia",
+          "tier": 1,
+          "title": "Smartraveller Armenia"
         }
       ],
-      "evidence_quote": "Unified 112 / 911 emergency number connects to all rescue services in Armenia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+374 10 534 041",

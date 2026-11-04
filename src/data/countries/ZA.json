@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.saps.gov.za",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
           "tier": 1,
-          "title": "South African Police Service (SAPS)"
+          "title": "South Africa - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://westerncape.gov.za/know-who-you-can-call-emergency",
+          "tier": 1,
+          "title": "Know who you can call in an emergency (Western Cape Government)"
         }
       ],
-      "evidence_quote": "Emergency flying squad police call centre in South Africa is 10111",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies from mobiles: 112; Ambulance and fire: 10177; Police: 10111",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "10177",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.health.gov.za",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
           "tier": 1,
-          "title": "South African National Department of Health"
+          "title": "South Africa - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://westerncape.gov.za/know-who-you-can-call-emergency",
+          "tier": 1,
+          "title": "Know who you can call in an emergency (Western Cape Government)"
         }
       ],
-      "evidence_quote": "Public emergency medical ambulance services in South Africa operate via 10177",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies from mobiles: 112; Ambulance and fire: 10177; Police: 10111",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "10177",
@@ -132,13 +142,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.za",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
           "tier": 1,
-          "title": "South African Emergency Services"
+          "title": "South Africa - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://westerncape.gov.za/know-who-you-can-call-emergency",
+          "tier": 1,
+          "title": "Know who you can call in an emergency (Western Cape Government)"
         }
       ],
-      "evidence_quote": "Fire emergency calls are routed through regional civil defense and 10177",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies from mobiles: 112; Ambulance and fire: 10177; Police: 10111",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -146,13 +161,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.saps.gov.za",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
           "tier": 1,
-          "title": "SAPS Emergency Guidance"
+          "title": "South Africa - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://westerncape.gov.za/know-who-you-can-call-emergency",
+          "tier": 1,
+          "title": "Know who you can call in an emergency (Western Cape Government)"
         }
       ],
-      "evidence_quote": "Toll-free mobile emergency number 112 connects directly to automated emergency routing",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies from mobiles: 112; Ambulance and fire: 10177; Police: 10111",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

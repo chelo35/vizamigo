@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/emergencies",
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+          "tier": 2,
+          "title": "UAE Government portal – Handling emergencies"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/getting-help",
           "tier": 1,
-          "title": "UAE Government Emergency Numbers"
+          "title": "GOV.UK UAE getting help"
         }
       ],
-      "evidence_quote": "Call 999 for Police emergencies anywhere in the UAE",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 for Police; 998 for Ambulance; 997 for Fire Department (Civil Defence)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "998",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/emergencies",
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+          "tier": 2,
+          "title": "UAE Government portal – Handling emergencies"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/getting-help",
           "tier": 1,
-          "title": "UAE Government Emergency Numbers"
+          "title": "GOV.UK UAE getting help"
         }
       ],
-      "evidence_quote": "Call 998 for national ambulance and urgent medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 for Police; 998 for Ambulance; 997 for Fire Department (Civil Defence)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "997",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/emergencies",
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+          "tier": 2,
+          "title": "UAE Government portal – Handling emergencies"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/getting-help",
           "tier": 1,
-          "title": "Civil Defence UAE (997)"
+          "title": "GOV.UK UAE getting help"
         }
       ],
-      "evidence_quote": "Call 997 for Civil Defence and fire rescue operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 for Police; 998 for Ambulance; 997 for Fire Department (Civil Defence)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://u.ae",
+          "url": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+          "tier": 2,
+          "title": "UAE Government portal – Handling emergencies"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/getting-help",
           "tier": 1,
-          "title": "UAE National Emergency Dispatch"
+          "title": "GOV.UK UAE getting help"
         }
       ],
-      "evidence_quote": "Dial 999 for comprehensive emergency assistance across all emirates",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 for Police; 998 for Ambulance; 997 for Fire Department (Civil Defence)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "901",

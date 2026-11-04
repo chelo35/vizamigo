@@ -98,32 +98,42 @@
   },
   "emergency": {
     "police": {
-      "value": "112 / (PSP)",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.psp.pt",
+          "url": "https://eportugal.gov.pt/en/cidadaos-europeus-viajar-viver-e-fazer-negocios-em-portugal/cuidados-de-saude-em-portugal/contactos-de-emergencia-em-portugal",
           "tier": 1,
-          "title": "Polícia de Segurança Pública (PSP)"
+          "title": "Emergency contacts in Portugal (ePortugal.gov.pt)"
+        },
+        {
+          "url": "https://www.safecommunitiesportugal.com/emergency-contacts/",
+          "tier": 2,
+          "title": "Emergency contacts (Safe Communities Portugal)"
         }
       ],
-      "evidence_quote": "O 112 é o número único para contacto com a Polícia e serviços de socorro",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Medical emergency: 112 ... 112 is the single European emergency telephone number available throughout the European Union",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "112 (INEM)",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.inem.pt",
+          "url": "https://eportugal.gov.pt/en/cidadaos-europeus-viajar-viver-e-fazer-negocios-em-portugal/cuidados-de-saude-em-portugal/contactos-de-emergencia-em-portugal",
           "tier": 1,
-          "title": "Instituto Nacional de Emergência Médica (INEM)"
+          "title": "Emergency contacts in Portugal (ePortugal.gov.pt)"
+        },
+        {
+          "url": "https://www.safecommunitiesportugal.com/emergency-contacts/",
+          "tier": 2,
+          "title": "Emergency contacts (Safe Communities Portugal)"
         }
       ],
-      "evidence_quote": "O INEM é acionado através do Número Europeu de Emergência 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Medical emergency: 112 ... 112 is the single European emergency telephone number available throughout the European Union",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.prociv.pt",
+          "url": "https://eportugal.gov.pt/en/cidadaos-europeus-viajar-viver-e-fazer-negocios-em-portugal/cuidados-de-saude-em-portugal/contactos-de-emergencia-em-portugal",
           "tier": 1,
-          "title": "Autoridade Nacional de Emergência e Proteção Civil"
+          "title": "Emergency contacts in Portugal (ePortugal.gov.pt)"
+        },
+        {
+          "url": "https://www.safecommunitiesportugal.com/emergency-contacts/",
+          "tier": 2,
+          "title": "Emergency contacts (Safe Communities Portugal)"
         }
       ],
-      "evidence_quote": "Ligue 112 para acionar os Bombeiros e Proteção Civil em Portugal",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Medical emergency: 112 ... 112 is the single European emergency telephone number available throughout the European Union",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.portugal.gov.pt",
+          "url": "https://eportugal.gov.pt/en/cidadaos-europeus-viajar-viver-e-fazer-negocios-em-portugal/cuidados-de-saude-em-portugal/contactos-de-emergencia-em-portugal",
           "tier": 1,
-          "title": "Número Europeu de Emergência 112 Portugal"
+          "title": "Emergency contacts in Portugal (ePortugal.gov.pt)"
+        },
+        {
+          "url": "https://www.safecommunitiesportugal.com/emergency-contacts/",
+          "tier": 2,
+          "title": "Emergency contacts (Safe Communities Portugal)"
         }
       ],
-      "evidence_quote": "O 112 centraliza todas as chamadas de urgência médica, policial e de incêndio",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Medical emergency: 112 ... 112 is the single European emergency telephone number available throughout the European Union",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "213 421 634 (PSP Turismo)",

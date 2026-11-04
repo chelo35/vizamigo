@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.politiaromana.ro",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/romania",
           "tier": 1,
-          "title": "Romanian Police (Poliția Română)"
+          "title": "Romania (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/romania",
+          "tier": 1,
+          "title": "Romania (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Emergency police dispatch throughout Romania is integrated into 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 ... Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ms.ro",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/romania",
           "tier": 1,
-          "title": "Ministry of Health Romania"
+          "title": "Romania (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/romania",
+          "tier": 1,
+          "title": "Romania (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue responds directly through 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 ... Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.igsu.ro",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/romania",
           "tier": 1,
-          "title": "General Inspectorate for Emergency Situations (IGSU)"
+          "title": "Romania (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/romania",
+          "tier": 1,
+          "title": "Romania (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch operates under unified 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 ... Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sts.ro/ro/serviciul-de-urgenta-112",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/romania",
           "tier": 1,
-          "title": "Special Telecommunications Service 112 Romania"
+          "title": "Romania (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/romania",
+          "tier": 1,
+          "title": "Romania (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "112 is Romania's single national emergency telephone system managed by STS",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 ... Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

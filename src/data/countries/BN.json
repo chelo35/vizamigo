@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.bn",
+          "url": "https://www.smartraveller.gov.au/destinations/asia/brunei-darussalam",
           "tier": 1,
-          "title": "Royal Brunei Police Force (RBPF)"
+          "title": "Smartraveller Brunei"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/brunei/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Brunei contacts utiles"
         }
       ],
-      "evidence_quote": "Dial 993 for emergency police response throughout Brunei",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 995. Medical emergencies: Call 991. Police: Call 993",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "991",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moh.gov.bn",
+          "url": "https://www.smartraveller.gov.au/destinations/asia/brunei-darussalam",
           "tier": 1,
-          "title": "Ministry of Health Emergency Medical Ambulance Services"
+          "title": "Smartraveller Brunei"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/brunei/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Brunei contacts utiles"
         }
       ],
-      "evidence_quote": "Call 991 for national emergency medical dispatch and hospital ambulance transport",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 995. Medical emergencies: Call 991. Police: Call 993",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "995",
@@ -130,27 +140,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://fire-rescue.gov.bn",
+          "url": "https://www.smartraveller.gov.au/destinations/asia/brunei-darussalam",
           "tier": 1,
-          "title": "Fire and Rescue Department Brunei"
+          "title": "Smartraveller Brunei"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/brunei/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Brunei contacts utiles"
         }
       ],
-      "evidence_quote": "Dial 995 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 995. Medical emergencies: Call 991. Police: Call 993",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "993",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://police.gov.bn",
+          "url": "https://www.smartraveller.gov.au/destinations/asia/brunei-darussalam",
           "tier": 1,
-          "title": "RBPF Command Center"
+          "title": "Smartraveller Brunei"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/brunei/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Brunei contacts utiles"
         }
       ],
-      "evidence_quote": "993 coordinates central emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 995. Medical emergencies: Call 991. Police: Call 993",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+673 238 0022",

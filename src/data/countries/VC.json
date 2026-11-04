@@ -99,60 +99,80 @@
   },
   "emergency": {
     "police": {
-      "value": "999",
-      "status": "verified",
-      "confidence": "high",
+      "value": "911 / 999",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://rsvgpf.gov.vc",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-vincent-the-grenadines",
           "tier": 1,
-          "title": "Royal Saint Vincent and the Grenadines Police Force"
+          "title": "Saint Vincent and the Grenadines (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.searchlight.vc/news/2023/11/10/rsvgpf-issues-official-holiday-season-advisory",
+          "tier": 2,
+          "title": "RSVGPF issues official holiday season advisory (Searchlight)"
         }
       ],
-      "evidence_quote": "Dial 999 or 911 for emergency police response across the islands",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire, police, coast guard: 911 or 999; Medical assistance Kingstown: (784) 456 1955",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "911",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://health.gov.vc",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-vincent-the-grenadines",
           "tier": 1,
-          "title": "Milton Cato Memorial Hospital Emergency Services"
+          "title": "Saint Vincent and the Grenadines (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.searchlight.vc/news/2023/11/10/rsvgpf-issues-official-holiday-season-advisory",
+          "tier": 2,
+          "title": "RSVGPF issues official holiday season advisory (Searchlight)"
         }
       ],
-      "evidence_quote": "Call 911 or +1 784 456-1955 for emergency ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire, police, coast guard: 911 or 999; Medical assistance Kingstown: (784) 456 1955",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "999",
-      "status": "verified",
-      "confidence": "high",
+      "value": "911 / 999",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://rsvgpf.gov.vc",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-vincent-the-grenadines",
           "tier": 1,
-          "title": "RSVGPF Fire Brigade"
+          "title": "Saint Vincent and the Grenadines (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.searchlight.vc/news/2023/11/10/rsvgpf-issues-official-holiday-season-advisory",
+          "tier": 2,
+          "title": "RSVGPF issues official holiday season advisory (Searchlight)"
         }
       ],
-      "evidence_quote": "Dial 999 for fire and rescue emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire, police, coast guard: 911 or 999; Medical assistance Kingstown: (784) 456 1955",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "999",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://gov.vc",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-vincent-the-grenadines",
           "tier": 1,
-          "title": "National Emergency Management Organisation (NEMO)"
+          "title": "Saint Vincent and the Grenadines (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.searchlight.vc/news/2023/11/10/rsvgpf-issues-official-holiday-season-advisory",
+          "tier": 2,
+          "title": "RSVGPF issues official holiday season advisory (Searchlight)"
         }
       ],
-      "evidence_quote": "999 is the central unified emergency operations number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire, police, coast guard: 911 or 999; Medical assistance Kingstown: (784) 456 1955",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+1 784 457-1211",

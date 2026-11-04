@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mup.ks.gov.ba",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina",
           "tier": 1,
-          "title": "Ministry of Internal Affairs Sarajevo Canton"
+          "title": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help",
+          "tier": 1,
+          "title": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help"
         }
       ],
-      "evidence_quote": "Dial 122 for emergency police response across Bosnia and Herzegovina",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 123. Medical emergencies: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "124",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://hitnaza.ba",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina",
           "tier": 1,
-          "title": "Institute for Emergency Medical Aid (Hitna Pomoć)"
+          "title": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help",
+          "tier": 1,
+          "title": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help"
         }
       ],
-      "evidence_quote": "Call 124 for emergency medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 123. Medical emergencies: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "123",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fup.gov.ba",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina",
           "tier": 1,
-          "title": "Federal Police and Civil Protection"
+          "title": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help",
+          "tier": 1,
+          "title": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help"
         }
       ],
-      "evidence_quote": "Dial 123 for fire and emergency technical rescue brigades",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 123. Medical emergencies: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.msb.gov.ba",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina",
           "tier": 1,
-          "title": "Ministry of Security of Bosnia and Herzegovina"
+          "title": "https://www.smartraveller.gov.au/destinations/europe/bosnia-and-herzegovina"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help",
+          "tier": 1,
+          "title": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina/getting-help"
         }
       ],
-      "evidence_quote": "112 operates as the coordinated civil emergency dispatch number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 123. Medical emergencies: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

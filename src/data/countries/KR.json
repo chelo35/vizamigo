@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.go.kr",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
           "tier": 1,
-          "title": "Korean National Police Agency"
+          "title": "South Korea - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.mfat.govt.nz/en/countries-and-regions/asia/republic-of-korea-south/new-zealand-embassy/emergency-numbers-in-korea",
+          "tier": 1,
+          "title": "Emergency numbers in Korea (NZ MFAT)"
         }
       ],
-      "evidence_quote": "Emergency police telephone number in South Korea is 112 with translation service",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 119; Fire: 119; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "119",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nfa.go.kr",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
           "tier": 1,
-          "title": "National Fire Agency South Korea"
+          "title": "South Korea - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.mfat.govt.nz/en/countries-and-regions/asia/republic-of-korea-south/new-zealand-embassy/emergency-numbers-in-korea",
+          "tier": 1,
+          "title": "Emergency numbers in Korea (NZ MFAT)"
         }
       ],
-      "evidence_quote": "Emergency medical and ambulance rescue in South Korea is operated through 119",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 119; Fire: 119; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "119",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nfa.go.kr",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
           "tier": 1,
-          "title": "National Fire Agency South Korea"
+          "title": "South Korea - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.mfat.govt.nz/en/countries-and-regions/asia/republic-of-korea-south/new-zealand-embassy/emergency-numbers-in-korea",
+          "tier": 1,
+          "title": "Emergency numbers in Korea (NZ MFAT)"
         }
       ],
-      "evidence_quote": "Fire response and emergency rescue calls are dispatched via 119",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 119; Fire: 119; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.police.go.kr",
+          "url": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
           "tier": 1,
-          "title": "Korean National Police Agency"
+          "title": "South Korea - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.mfat.govt.nz/en/countries-and-regions/asia/republic-of-korea-south/new-zealand-embassy/emergency-numbers-in-korea",
+          "tier": 1,
+          "title": "Emergency numbers in Korea (NZ MFAT)"
         }
       ],
-      "evidence_quote": "Central emergency dispatch coordination connects through 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 119; Fire: 119; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1330",

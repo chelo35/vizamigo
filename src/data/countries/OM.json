@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rop.gov.om",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/oman",
           "tier": 1,
-          "title": "Royal Oman Police (ROP)"
+          "title": "Oman (Smartraveller)"
+        },
+        {
+          "url": "https://www.omanobserver.om/emergency-number-9999-not-112/",
+          "tier": 2,
+          "title": "Emergency number 9999, not 112 (Oman Observer)"
         }
       ],
-      "evidence_quote": "Emergency police dispatch throughout Oman operates via hotline 9999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 9999. Medical emergencies: Call 9999. Police: Call 9999.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "9999",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://cdaa.gov.om",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/oman",
           "tier": 1,
-          "title": "Civil Defence and Ambulance Authority (CDAA) Oman"
+          "title": "Oman (Smartraveller)"
+        },
+        {
+          "url": "https://www.omanobserver.om/emergency-number-9999-not-112/",
+          "tier": 2,
+          "title": "Emergency number 9999, not 112 (Oman Observer)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue responds directly through 9999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 9999. Medical emergencies: Call 9999. Police: Call 9999.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "9999",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://cdaa.gov.om",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/oman",
           "tier": 1,
-          "title": "CDAA Firefighting Dispatch"
+          "title": "Oman (Smartraveller)"
+        },
+        {
+          "url": "https://www.omanobserver.om/emergency-number-9999-not-112/",
+          "tier": 2,
+          "title": "Emergency number 9999, not 112 (Oman Observer)"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is integrated into central 9999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 9999. Medical emergencies: Call 9999. Police: Call 9999.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "9999",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rop.gov.om",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/oman",
           "tier": 1,
-          "title": "Royal Oman Police Emergency Central"
+          "title": "Oman (Smartraveller)"
+        },
+        {
+          "url": "https://www.omanobserver.om/emergency-number-9999-not-112/",
+          "tier": 2,
+          "title": "Emergency number 9999, not 112 (Oman Observer)"
         }
       ],
-      "evidence_quote": "9999 is the unified emergency contact number throughout the Sultanate of Oman",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 9999. Medical emergencies: Call 9999. Police: Call 9999.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "9999",

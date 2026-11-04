@@ -100,59 +100,79 @@
   "emergency": {
     "police": {
       "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.vaticanstate.va",
-          "tier": 1,
-          "title": "Corpo della Gendarmeria Vaticana"
+          "url": "https://www.italia.it/en/informazioni-per-viaggiare/assistenza-emergenze",
+          "tier": 2,
+          "title": "Emergency assistance (italia.it, ENIT)"
+        },
+        {
+          "url": "https://ctif.org/country-member/vatican",
+          "tier": 2,
+          "title": "Vatican (CTIF)"
         }
       ],
-      "evidence_quote": "St. Peter's Square is policed in coordination with Italian Polizia via 112; Gendarmerie is +39 06 698 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the single number to call for emergencies in Italy is 112 ... Fire brigade: 115 ... medical attention: 118",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "118",
-      "status": "verified",
-      "confidence": "high",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.vaticanstate.va",
-          "tier": 1,
-          "title": "Direzione di Sanità ed Igiene Vaticano"
+          "url": "https://www.italia.it/en/informazioni-per-viaggiare/assistenza-emergenze",
+          "tier": 2,
+          "title": "Emergency assistance (italia.it, ENIT)"
+        },
+        {
+          "url": "https://ctif.org/country-member/vatican",
+          "tier": 2,
+          "title": "Vatican (CTIF)"
         }
       ],
-      "evidence_quote": "Emergency medical dispatch is connected through Italy's 118 and Vatican Health Services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the single number to call for emergencies in Italy is 112 ... Fire brigade: 115 ... medical attention: 118",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "115",
-      "status": "verified",
-      "confidence": "high",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.vaticanstate.va",
-          "tier": 1,
-          "title": "Corpo dei Vigili del Fuoco del Vaticano"
+          "url": "https://www.italia.it/en/informazioni-per-viaggiare/assistenza-emergenze",
+          "tier": 2,
+          "title": "Emergency assistance (italia.it, ENIT)"
+        },
+        {
+          "url": "https://ctif.org/country-member/vatican",
+          "tier": 2,
+          "title": "Vatican (CTIF)"
         }
       ],
-      "evidence_quote": "Emergency fire and rescue is handled via 115 or Vatican Fire Corps +39 06 698 83444",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the single number to call for emergencies in Italy is 112 ... Fire brigade: 115 ... medical attention: 118",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.vaticanstate.va",
-          "tier": 1,
-          "title": "Governatorato dello Stato della Città del Vaticano"
+          "url": "https://www.italia.it/en/informazioni-per-viaggiare/assistenza-emergenze",
+          "tier": 2,
+          "title": "Emergency assistance (italia.it, ENIT)"
+        },
+        {
+          "url": "https://ctif.org/country-member/vatican",
+          "tier": 2,
+          "title": "Vatican (CTIF)"
         }
       ],
-      "evidence_quote": "112 is the European emergency number operational throughout the enclave",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the single number to call for emergencies in Italy is 112 ... Fire brigade: 115 ... medical attention: 118",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+39 06 6988 1662",

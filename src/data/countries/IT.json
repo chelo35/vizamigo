@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.poliziadistato.it",
+          "url": "https://www.italia.it/it/italia/informazioni/numeri-emergenza-e-assistenza",
+          "tier": 2,
+          "title": "Italia.it (official tourism portal) – Numeri di emergenza"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
           "tier": 1,
-          "title": "Polizia di Stato (113) & Carabinieri (112)"
+          "title": "GOV.UK Italy getting help"
         }
       ],
-      "evidence_quote": "Il 113 è il Soccorso Pubblico della Polizia di Stato e 112 per i Carabinieri",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "il numero unico europeo ... è 112. Polizia di Stato: 113 ... Vigili del Fuoco: 115 ... emergenza medica: 118",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "118",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.salute.gov.it",
+          "url": "https://www.italia.it/it/italia/informazioni/numeri-emergenza-e-assistenza",
+          "tier": 2,
+          "title": "Italia.it (official tourism portal) – Numeri di emergenza"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
           "tier": 1,
-          "title": "Ministero della Salute: Emergenza Sanitaria 118"
+          "title": "GOV.UK Italy getting help"
         }
       ],
-      "evidence_quote": "Il 118 è il numero telefonico nazionale per l'emergenza sanitaria",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "il numero unico europeo ... è 112. Polizia di Stato: 113 ... Vigili del Fuoco: 115 ... emergenza medica: 118",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "115",
@@ -132,13 +142,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.vigilfuoco.it",
+          "url": "https://www.italia.it/it/italia/informazioni/numeri-emergenza-e-assistenza",
+          "tier": 2,
+          "title": "Italia.it (official tourism portal) – Numeri di emergenza"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
           "tier": 1,
-          "title": "Vigili del Fuoco (115)"
+          "title": "GOV.UK Italy getting help"
         }
       ],
-      "evidence_quote": "Il 115 è il numero d'emergenza del Corpo Nazionale dei Vigili del Fuoco",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "il numero unico europeo ... è 112. Polizia di Stato: 113 ... Vigili del Fuoco: 115 ... emergenza medica: 118",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -146,13 +161,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interno.gov.it",
+          "url": "https://www.italia.it/it/italia/informazioni/numeri-emergenza-e-assistenza",
+          "tier": 2,
+          "title": "Italia.it (official tourism portal) – Numeri di emergenza"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
           "tier": 1,
-          "title": "Ministero dell'Interno: Numero Unico Europeo 112"
+          "title": "GOV.UK Italy getting help"
         }
       ],
-      "evidence_quote": "Il Numero Unico Europeo 112 raggruppa tutti i servizi di pronto intervento",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "il numero unico europeo ... è 112. Polizia di Stato: 113 ... Vigili del Fuoco: 115 ... emergenza medica: 118",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

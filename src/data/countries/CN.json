@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "http://www.mps.gov.cn",
+          "url": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
           "tier": 1,
-          "title": "Ministry of Public Security: 110 Police Emergency"
+          "title": "GOV.UK China getting help"
+        },
+        {
+          "url": "https://english.beijing.gov.cn/specials/aguidetoworkingandlivinginchinaasbusinessexpatriates2024/notes/202404/t20240424_3635054.html",
+          "tier": 1,
+          "title": "Beijing Municipal Government – Emergencies"
         }
       ],
-      "evidence_quote": "Dial 110 nationwide for immediate police emergency and reporting assistance in China",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 120; Fire: 119; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "120",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "http://www.nhc.gov.cn",
+          "url": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
           "tier": 1,
-          "title": "National Health Commission: 120 Medical Emergency"
+          "title": "GOV.UK China getting help"
+        },
+        {
+          "url": "https://english.beijing.gov.cn/specials/aguidetoworkingandlivinginchinaasbusinessexpatriates2024/notes/202404/t20240424_3635054.html",
+          "tier": 1,
+          "title": "Beijing Municipal Government – Emergencies"
         }
       ],
-      "evidence_quote": "Dial 120 nationwide for public emergency medical response and hospital ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 120; Fire: 119; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "119",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "http://www.mem.gov.cn",
+          "url": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Management: 119 Fire Service"
+          "title": "GOV.UK China getting help"
+        },
+        {
+          "url": "https://english.beijing.gov.cn/specials/aguidetoworkingandlivinginchinaasbusinessexpatriates2024/notes/202404/t20240424_3635054.html",
+          "tier": 1,
+          "title": "Beijing Municipal Government – Emergencies"
         }
       ],
-      "evidence_quote": "Dial 119 for national fire rescue and accident emergency dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 120; Fire: 119; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "110",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "http://english.www.gov.cn",
+          "url": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
           "tier": 1,
-          "title": "China Emergency Services (110, 120, 119)"
+          "title": "GOV.UK China getting help"
+        },
+        {
+          "url": "https://english.beijing.gov.cn/specials/aguidetoworkingandlivinginchinaasbusinessexpatriates2024/notes/202404/t20240424_3635054.html",
+          "tier": 1,
+          "title": "Beijing Municipal Government – Emergencies"
         }
       ],
-      "evidence_quote": "110 serves as the primary gateway for emergency response services across China",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 120; Fire: 119; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "12301 (Turizm Şikayet & Destek)",

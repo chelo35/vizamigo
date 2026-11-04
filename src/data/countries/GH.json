@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.gh",
+          "url": "https://www.gov.uk/foreign-travel-advice/ghana/getting-help",
           "tier": 1,
-          "title": "Ghana Police Service"
+          "title": "GOV.UK Ghana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/ghana",
+          "tier": 1,
+          "title": "Smartraveller Ghana"
+        },
+        {
+          "url": "https://3news.com/news/our-emergency-numbers-still-active-police/",
+          "tier": 1,
+          "title": "Ghana Police Service statement (3News)"
         }
       ],
-      "evidence_quote": "Dial 191 (or 18555 toll-free) nationwide for rapid response from the Ghana Police Service",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 or 112 (ambulance, fire, police, coast guard and mountain rescue); 192 (police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "193",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://nas.gov.gh",
+          "url": "https://www.gov.uk/foreign-travel-advice/ghana/getting-help",
           "tier": 1,
-          "title": "National Ambulance Service Ghana"
+          "title": "GOV.UK Ghana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/ghana",
+          "tier": 1,
+          "title": "Smartraveller Ghana"
+        },
+        {
+          "url": "https://3news.com/news/our-emergency-numbers-still-active-police/",
+          "tier": 1,
+          "title": "Ghana Police Service statement (3News)"
         }
       ],
-      "evidence_quote": "Dial 193 for National Ambulance Service medical evacuation and emergency paramedic care",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 or 112 (ambulance, fire, police, coast guard and mountain rescue); 192 (police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "192",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://gnfs.gov.gh",
+          "url": "https://www.gov.uk/foreign-travel-advice/ghana/getting-help",
           "tier": 1,
-          "title": "Ghana National Fire Service"
+          "title": "GOV.UK Ghana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/ghana",
+          "tier": 1,
+          "title": "Smartraveller Ghana"
+        },
+        {
+          "url": "https://3news.com/news/our-emergency-numbers-still-active-police/",
+          "tier": 1,
+          "title": "Ghana Police Service statement (3News)"
         }
       ],
-      "evidence_quote": "Dial 192 for Ghana National Fire Service emergency firefighting and rescue teams",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 or 112 (ambulance, fire, police, coast guard and mountain rescue); 192 (police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.gh",
+          "url": "https://www.gov.uk/foreign-travel-advice/ghana/getting-help",
           "tier": 1,
-          "title": "Emergency Call Centre Ghana"
+          "title": "GOV.UK Ghana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/ghana",
+          "tier": 1,
+          "title": "Smartraveller Ghana"
+        },
+        {
+          "url": "https://3news.com/news/our-emergency-numbers-still-active-police/",
+          "tier": 1,
+          "title": "Ghana Police Service statement (3News)"
         }
       ],
-      "evidence_quote": "Dial 112 nationwide from any phone network for unified emergency response dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999 or 112 (ambulance, fire, police, coast guard and mountain rescue); 192 (police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

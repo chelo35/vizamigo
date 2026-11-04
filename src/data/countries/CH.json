@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fedpol.admin.ch",
+          "url": "https://www.ch.ch/en/safety-and-justice/emergencies-and-danger",
+          "tier": 2,
+          "title": "ch.ch (Swiss authorities) – Emergencies"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/switzerland",
           "tier": 1,
-          "title": "Federal Office of Police (fedpol)"
+          "title": "Smartraveller Switzerland"
         }
       ],
-      "evidence_quote": "Swiss police emergency number nationwide is 117",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police 117 ... Fire service 118 ... Ambulance 144 ... The most important emergency number in Switzerland and in Europe is 112.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "144",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bag.admin.ch",
+          "url": "https://www.ch.ch/en/safety-and-justice/emergencies-and-danger",
+          "tier": 2,
+          "title": "ch.ch (Swiss authorities) – Emergencies"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/switzerland",
           "tier": 1,
-          "title": "Federal Office of Public Health (FOPH)"
+          "title": "Smartraveller Switzerland"
         }
       ],
-      "evidence_quote": "Emergency medical rescue and ambulance in Switzerland is reached via 144",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police 117 ... Fire service 118 ... Ambulance 144 ... The most important emergency number in Switzerland and in Europe is 112.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "118",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.feuerwehr-koordination.ch",
+          "url": "https://www.ch.ch/en/safety-and-justice/emergencies-and-danger",
+          "tier": 2,
+          "title": "ch.ch (Swiss authorities) – Emergencies"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/switzerland",
           "tier": 1,
-          "title": "Swiss Fire Service Coordination"
+          "title": "Smartraveller Switzerland"
         }
       ],
-      "evidence_quote": "Fire brigade emergency dispatch number across Switzerland is 118",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police 117 ... Fire service 118 ... Ambulance 144 ... The most important emergency number in Switzerland and in Europe is 112.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bakom.admin.ch",
+          "url": "https://www.ch.ch/en/safety-and-justice/emergencies-and-danger",
+          "tier": 2,
+          "title": "ch.ch (Swiss authorities) – Emergencies"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/switzerland",
           "tier": 1,
-          "title": "Federal Office of Communications (OFCOM)"
+          "title": "Smartraveller Switzerland"
         }
       ],
-      "evidence_quote": "The European emergency number 112 connects directly to cantonal emergency dispatchers",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police 117 ... Fire service 118 ... Ambulance 144 ... The most important emergency number in Switzerland and in Europe is 112.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

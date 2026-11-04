@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://jcf.gov.jm",
+          "url": "https://www.gov.uk/foreign-travel-advice/jamaica/getting-help",
           "tier": 1,
-          "title": "Jamaica Constabulary Force (JCF)"
+          "title": "GOV.UK Jamaica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jamaica",
+          "tier": 1,
+          "title": "Smartraveller Jamaica"
         }
       ],
-      "evidence_quote": "Dial 119 for emergency police assistance across Jamaica",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110; Fire: 110; Police: 119",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "110",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.jm",
+          "url": "https://www.gov.uk/foreign-travel-advice/jamaica/getting-help",
           "tier": 1,
-          "title": "Ministry of Health and Wellness of Jamaica"
+          "title": "GOV.UK Jamaica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jamaica",
+          "tier": 1,
+          "title": "Smartraveller Jamaica"
         }
       ],
-      "evidence_quote": "Call 110 for emergency ambulance and fire rescue services in Jamaica",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110; Fire: 110; Police: 119",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "110",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://jfb.gov.jm",
+          "url": "https://www.gov.uk/foreign-travel-advice/jamaica/getting-help",
           "tier": 1,
-          "title": "Jamaica Fire Brigade"
+          "title": "GOV.UK Jamaica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jamaica",
+          "tier": 1,
+          "title": "Smartraveller Jamaica"
         }
       ],
-      "evidence_quote": "Dial 110 for Jamaica Fire Brigade emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110; Fire: 110; Police: 119",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "119",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://jcf.gov.jm",
+          "url": "https://www.gov.uk/foreign-travel-advice/jamaica/getting-help",
           "tier": 1,
-          "title": "Jamaica Constabulary Force"
+          "title": "GOV.UK Jamaica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jamaica",
+          "tier": 1,
+          "title": "Smartraveller Jamaica"
         }
       ],
-      "evidence_quote": "119 acts as the primary emergency operator contact point",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110; Fire: 110; Police: 119",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+1 876 952 2241",

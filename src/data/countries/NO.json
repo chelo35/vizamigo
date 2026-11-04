@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.politiet.no",
+          "url": "https://halden.kommune.no/new-in-town/healthcare-and-emergency-services",
+          "tier": 2,
+          "title": "Healthcare and emergency services (Halden kommune)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/norway",
           "tier": 1,
-          "title": "Norwegian Police (Politiet)"
+          "title": "Norway (Smartraveller)"
         }
       ],
-      "evidence_quote": "Emergency police dispatch across Norway connects via 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "110: Fire; 112: Police; 113: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "113",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.helsenorge.no",
+          "url": "https://halden.kommune.no/new-in-town/healthcare-and-emergency-services",
+          "tier": 2,
+          "title": "Healthcare and emergency services (Halden kommune)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/norway",
           "tier": 1,
-          "title": "Helsenorge National Health Services"
+          "title": "Norway (Smartraveller)"
         }
       ],
-      "evidence_quote": "Medical and ambulance emergencies in Norway are reached directly at 113",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "110: Fire; 112: Police; 113: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "110",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.dsb.no",
+          "url": "https://halden.kommune.no/new-in-town/healthcare-and-emergency-services",
+          "tier": 2,
+          "title": "Healthcare and emergency services (Halden kommune)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/norway",
           "tier": 1,
-          "title": "DSB Fire Emergency"
+          "title": "Norway (Smartraveller)"
         }
       ],
-      "evidence_quote": "Firefighting emergency calls in Norway are answered directly on 110",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "110: Fire; 112: Police; 113: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.politiet.no",
+          "url": "https://halden.kommune.no/new-in-town/healthcare-and-emergency-services",
+          "tier": 2,
+          "title": "Healthcare and emergency services (Halden kommune)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/norway",
           "tier": 1,
-          "title": "Politiet 112 Emergency"
+          "title": "Norway (Smartraveller)"
         }
       ],
-      "evidence_quote": "112 is the primary police emergency line and coordinates urgent life-saving rescue",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "110: Fire; 112: Police; 113: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

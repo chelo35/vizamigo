@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.vp.gov.lv",
+          "url": "https://smartraveller.gov.au/destinations/europe/latvia",
           "tier": 1,
-          "title": "State Police of Latvia (Valsts policija)"
+          "title": "Latvia (Smartraveller)"
+        },
+        {
+          "url": "https://lvportals.lv/skaidrojumi/233530-policijas-palidzibas-tiesais-talruna-numurs-110-2011",
+          "tier": 2,
+          "title": "Policijas palīdzības tālrunis 110 (LV portāls, official publisher)"
+        },
+        {
+          "url": "https://eng.lsm.lv/article/society/health/latvian-emergency-medical-services-113-line-restored.a465743/",
+          "tier": 2,
+          "title": "Latvian Emergency Medical Services 113 line restored (LSM)"
         }
       ],
-      "evidence_quote": "Dial 110 for emergency state police assistance in Latvia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical: Call 113. Police: Call 110.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "113",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nmpd.gov.lv",
+          "url": "https://smartraveller.gov.au/destinations/europe/latvia",
           "tier": 1,
-          "title": "Emergency Medical Service of Latvia (NMPD)"
+          "title": "Latvia (Smartraveller)"
+        },
+        {
+          "url": "https://lvportals.lv/skaidrojumi/233530-policijas-palidzibas-tiesais-talruna-numurs-110-2011",
+          "tier": 2,
+          "title": "Policijas palīdzības tālrunis 110 (LV portāls, official publisher)"
+        },
+        {
+          "url": "https://eng.lsm.lv/article/society/health/latvian-emergency-medical-services-113-line-restored.a465743/",
+          "tier": 2,
+          "title": "Latvian Emergency Medical Services 113 line restored (LSM)"
         }
       ],
-      "evidence_quote": "Call 113 for direct medical emergencies and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical: Call 113. Police: Call 110.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.vugd.gov.lv",
+          "url": "https://smartraveller.gov.au/destinations/europe/latvia",
           "tier": 1,
-          "title": "State Fire and Rescue Service of Latvia (VUGD)"
+          "title": "Latvia (Smartraveller)"
+        },
+        {
+          "url": "https://lvportals.lv/skaidrojumi/233530-policijas-palidzibas-tiesais-talruna-numurs-110-2011",
+          "tier": 2,
+          "title": "Policijas palīdzības tālrunis 110 (LV portāls, official publisher)"
+        },
+        {
+          "url": "https://eng.lsm.lv/article/society/health/latvian-emergency-medical-services-113-line-restored.a465743/",
+          "tier": 2,
+          "title": "Latvian Emergency Medical Services 113 line restored (LSM)"
         }
       ],
-      "evidence_quote": "Call 112 for state fire rescue and civil protection services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical: Call 113. Police: Call 110.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.lv",
+          "url": "https://smartraveller.gov.au/destinations/europe/latvia",
           "tier": 1,
-          "title": "Latvian Emergency Center 112"
+          "title": "Latvia (Smartraveller)"
+        },
+        {
+          "url": "https://lvportals.lv/skaidrojumi/233530-policijas-palidzibas-tiesais-talruna-numurs-110-2011",
+          "tier": 2,
+          "title": "Policijas palīdzības tālrunis 110 (LV portāls, official publisher)"
+        },
+        {
+          "url": "https://eng.lsm.lv/article/society/health/latvian-emergency-medical-services-113-line-restored.a465743/",
+          "tier": 2,
+          "title": "Latvian Emergency Medical Services 113 line restored (LSM)"
         }
       ],
-      "evidence_quote": "112 is the primary unified emergency telephone number across Latvia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical: Call 113. Police: Call 110.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+371 6718 1818",

@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.gob.pa",
+          "url": "https://www.gov.uk/foreign-travel-advice/panama/getting-help",
           "tier": 1,
-          "title": "Policía Nacional de Panamá"
+          "title": "Panama - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/Panama",
+          "tier": 1,
+          "title": "Panama (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/panama",
+          "tier": 1,
+          "title": "Panama (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 104 for national emergency police services across Panama",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police) ... Ambulance: 103; Fire: 103; Police: 104",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sume911.gob.pa",
+          "url": "https://www.gov.uk/foreign-travel-advice/panama/getting-help",
           "tier": 1,
-          "title": "Sistema Único de Manejo de Emergencias (SUME 911)"
+          "title": "Panama - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/Panama",
+          "tier": 1,
+          "title": "Panama (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/panama",
+          "tier": 1,
+          "title": "Panama (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 911 for emergency medical response and paramedic dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police) ... Ambulance: 103; Fire: 103; Police: 104",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "103",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberos.gob.pa",
+          "url": "https://www.gov.uk/foreign-travel-advice/panama/getting-help",
           "tier": 1,
-          "title": "Benemérito Cuerpo de Bomberos de Panamá"
+          "title": "Panama - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/Panama",
+          "tier": 1,
+          "title": "Panama (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/panama",
+          "tier": 1,
+          "title": "Panama (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 103 for municipal fire and emergency technical rescue",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police) ... Ambulance: 103; Fire: 103; Police: 104",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sume911.gob.pa",
+          "url": "https://www.gov.uk/foreign-travel-advice/panama/getting-help",
           "tier": 1,
-          "title": "SUME 911 Panamá"
+          "title": "Panama - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/Panama",
+          "tier": 1,
+          "title": "Panama (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/panama",
+          "tier": 1,
+          "title": "Panama (Smartraveller)"
         }
       ],
-      "evidence_quote": "911 serves as the unified national emergency dispatch center",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police) ... Ambulance: 103; Fire: 103; Police: 104",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+507 511 9260",

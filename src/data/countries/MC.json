@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gouv.mc",
-          "tier": 1,
-          "title": "Direction de la Sûreté Publique de Monaco"
+          "url": "https://en.gouv.mc/News/Implementation-of-a-National-Telephone-Numbering-Plan",
+          "tier": 2,
+          "title": "Implementation of a National Telephone Numbering Plan (Gouvernement Princier de Monaco)"
+        },
+        {
+          "url": "https://dfm.mc/take-action/services-and-procedures/?lang=en",
+          "tier": 2,
+          "title": "Services and procedures (Monaco government, dfm.mc)"
         }
       ],
-      "evidence_quote": "Dial 17 for emergency police assistance across the Principality of Monaco",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "17 Police Department; 18 Fire and Emergency Service; 112 Fire and Emergency Service (European Emergency Number)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "18",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pompiers.gouv.mc",
-          "tier": 1,
-          "title": "Corps des Sapeurs-Pompiers de Monaco"
+          "url": "https://en.gouv.mc/News/Implementation-of-a-National-Telephone-Numbering-Plan",
+          "tier": 2,
+          "title": "Implementation of a National Telephone Numbering Plan (Gouvernement Princier de Monaco)"
+        },
+        {
+          "url": "https://dfm.mc/take-action/services-and-procedures/?lang=en",
+          "tier": 2,
+          "title": "Services and procedures (Monaco government, dfm.mc)"
         }
       ],
-      "evidence_quote": "Call 18 for emergency medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "17 Police Department; 18 Fire and Emergency Service; 112 Fire and Emergency Service (European Emergency Number)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "18",
@@ -132,13 +142,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pompiers.gouv.mc",
-          "tier": 1,
-          "title": "Corps des Sapeurs-Pompiers de Monaco"
+          "url": "https://en.gouv.mc/News/Implementation-of-a-National-Telephone-Numbering-Plan",
+          "tier": 2,
+          "title": "Implementation of a National Telephone Numbering Plan (Gouvernement Princier de Monaco)"
+        },
+        {
+          "url": "https://dfm.mc/take-action/services-and-procedures/?lang=en",
+          "tier": 2,
+          "title": "Services and procedures (Monaco government, dfm.mc)"
         }
       ],
-      "evidence_quote": "Dial 18 for fire and rescue services across Monaco",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "17 Police Department; 18 Fire and Emergency Service; 112 Fire and Emergency Service (European Emergency Number)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -146,13 +161,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://en.gouv.mc",
-          "tier": 1,
-          "title": "Gouvernement Princier"
+          "url": "https://en.gouv.mc/News/Implementation-of-a-National-Telephone-Numbering-Plan",
+          "tier": 2,
+          "title": "Implementation of a National Telephone Numbering Plan (Gouvernement Princier de Monaco)"
+        },
+        {
+          "url": "https://dfm.mc/take-action/services-and-procedures/?lang=en",
+          "tier": 2,
+          "title": "Services and procedures (Monaco government, dfm.mc)"
         }
       ],
-      "evidence_quote": "112 operates as the universal mobile emergency number in Monaco",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "17 Police Department; 18 Fire and Emergency Service; 112 Fire and Emergency Service (European Emergency Number)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

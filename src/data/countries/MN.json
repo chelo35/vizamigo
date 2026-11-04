@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.mn",
+          "url": "https://crc.gov.mn/list/harilcaa-holboony-jlchilgee/en?show=196",
           "tier": 1,
-          "title": "National Police Agency of Mongolia"
+          "title": "Numbering for emergency service (Communications Regulatory Commission of Mongolia)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/mongolia",
+          "tier": 1,
+          "title": "Mongolia (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 102 for emergency police services across Mongolia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "101 - Fire brigade; 102 - Police; 103 - Ambulance; 105 – Emergency response",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mohs.mn",
+          "url": "https://crc.gov.mn/list/harilcaa-holboony-jlchilgee/en?show=196",
           "tier": 1,
-          "title": "Ministry of Health of Mongolia"
+          "title": "Numbering for emergency service (Communications Regulatory Commission of Mongolia)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/mongolia",
+          "tier": 1,
+          "title": "Mongolia (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 103 for emergency ambulance and urgent medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "101 - Fire brigade; 102 - Police; 103 - Ambulance; 105 – Emergency response",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://nema.gov.mn",
+          "url": "https://crc.gov.mn/list/harilcaa-holboony-jlchilgee/en?show=196",
           "tier": 1,
-          "title": "National Emergency Management Agency (NEMA)"
+          "title": "Numbering for emergency service (Communications Regulatory Commission of Mongolia)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/mongolia",
+          "tier": 1,
+          "title": "Mongolia (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 101 for fire and technical rescue brigades",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "101 - Fire brigade; 102 - Police; 103 - Ambulance; 105 – Emergency response",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "105",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://nema.gov.mn",
+          "url": "https://crc.gov.mn/list/harilcaa-holboony-jlchilgee/en?show=196",
           "tier": 1,
-          "title": "NEMA Mongolia"
+          "title": "Numbering for emergency service (Communications Regulatory Commission of Mongolia)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/mongolia",
+          "tier": 1,
+          "title": "Mongolia (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 105 for integrated disaster rescue and wilderness emergency coordination",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "101 - Fire brigade; 102 - Police; 103 - Ambulance; 105 – Emergency response",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+976 7010 8614",

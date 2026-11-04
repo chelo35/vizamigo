@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://мвд.рф",
+          "url": "https://ngc.organizations.mchs.gov.ru/export/pdf/News/4237396",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of Russia (MVD)"
+          "title": "Порядок вызова экстренных служб (МЧС России)"
+        },
+        {
+          "url": "https://www.mos.ru/en/news/item/26869073/",
+          "tier": 2,
+          "title": "Safety and security (mos.ru)"
         }
       ],
-      "evidence_quote": "Dial 102 from mobile phones or 02 from landlines for emergency police assistance",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Единый телефон вызова экстренных служб – 112 ... 101 пожарно-спасательная; 102 полиция; 103 скорая",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://minzdrav.gov.ru",
+          "url": "https://ngc.organizations.mchs.gov.ru/export/pdf/News/4237396",
           "tier": 1,
-          "title": "Ministry of Health of the Russian Federation"
+          "title": "Порядок вызова экстренных служб (МЧС России)"
+        },
+        {
+          "url": "https://www.mos.ru/en/news/item/26869073/",
+          "tier": 2,
+          "title": "Safety and security (mos.ru)"
         }
       ],
-      "evidence_quote": "Call 103 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Единый телефон вызова экстренных служб – 112 ... 101 пожарно-спасательная; 102 полиция; 103 скорая",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mchs.gov.ru",
+          "url": "https://ngc.organizations.mchs.gov.ru/export/pdf/News/4237396",
           "tier": 1,
-          "title": "EMERCOM of Russia (MChS)"
+          "title": "Порядок вызова экстренных служб (МЧС России)"
+        },
+        {
+          "url": "https://www.mos.ru/en/news/item/26869073/",
+          "tier": 2,
+          "title": "Safety and security (mos.ru)"
         }
       ],
-      "evidence_quote": "Dial 101 for fire and rescue emergency services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Единый телефон вызова экстренных служб – 112 ... 101 пожарно-спасательная; 102 полиция; 103 скорая",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mchs.gov.ru",
+          "url": "https://ngc.organizations.mchs.gov.ru/export/pdf/News/4237396",
           "tier": 1,
-          "title": "EMERCOM Unified Emergency System"
+          "title": "Порядок вызова экстренных служб (МЧС России)"
+        },
+        {
+          "url": "https://www.mos.ru/en/news/item/26869073/",
+          "tier": 2,
+          "title": "Safety and security (mos.ru)"
         }
       ],
-      "evidence_quote": "112 is the nationwide unified emergency dispatch number operational across Russia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Единый телефон вызова экстренных служб – 112 ... 101 пожарно-спасательная; 102 полиция; 103 скорая",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+7 495 244 4444",

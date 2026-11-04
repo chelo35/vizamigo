@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://portal.moi.gov.qa",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/qatar",
           "tier": 1,
-          "title": "Ministry of Interior Qatar (MOI)"
+          "title": "Qatar (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/qatar",
+          "tier": 1,
+          "title": "Qatar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Police emergency assistance throughout Qatar connects through central 999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 999. Medical emergencies: Call 999 ... Police: Call 999",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hamad.qa",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/qatar",
           "tier": 1,
-          "title": "Hamad Medical Corporation Ambulance Service"
+          "title": "Qatar (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/qatar",
+          "tier": 1,
+          "title": "Qatar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Hamad Medical Corporation emergency ambulance rescue operates via 999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 999. Medical emergencies: Call 999 ... Police: Call 999",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://portal.moi.gov.qa",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/qatar",
           "tier": 1,
-          "title": "General Directorate of Civil Defence Qatar"
+          "title": "Qatar (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/qatar",
+          "tier": 1,
+          "title": "Qatar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Civil defence and firefighting emergencies are dispatched via 999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 999. Medical emergencies: Call 999 ... Police: Call 999",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://portal.moi.gov.qa",
+          "url": "https://smartraveller.gov.au/destinations/middle-east/qatar",
           "tier": 1,
-          "title": "MOI Qatar Emergency Operations"
+          "title": "Qatar (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/qatar",
+          "tier": 1,
+          "title": "Qatar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "999 is the unified emergency contact number for all emergency services in Qatar",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 999. Medical emergencies: Call 999 ... Police: Call 999",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "999",

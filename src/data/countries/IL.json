@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.il",
+          "url": "https://www.gov.uk/foreign-travel-advice/israel/getting-help",
           "tier": 1,
-          "title": "Israel Police"
+          "title": "GOV.UK Israel getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/israel-and-palestinian-territories",
+          "tier": 1,
+          "title": "Smartraveller Israel"
         }
       ],
-      "evidence_quote": "Dial 100 for emergency police response throughout Israel",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 101; Fire: 102; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "101",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mdais.org",
+          "url": "https://www.gov.uk/foreign-travel-advice/israel/getting-help",
           "tier": 1,
-          "title": "Magen David Adom (MDA)"
+          "title": "GOV.UK Israel getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/israel-and-palestinian-territories",
+          "tier": 1,
+          "title": "Smartraveller Israel"
         }
       ],
-      "evidence_quote": "Call 101 for Magen David Adom national emergency medical service and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 101; Fire: 102; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "102",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.il/en/departments/israel_fire_and_rescue_services",
+          "url": "https://www.gov.uk/foreign-travel-advice/israel/getting-help",
           "tier": 1,
-          "title": "Israel Fire and Rescue Services"
+          "title": "GOV.UK Israel getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/israel-and-palestinian-territories",
+          "tier": 1,
+          "title": "Smartraveller Israel"
         }
       ],
-      "evidence_quote": "Dial 102 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 101; Fire: 102; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.police.gov.il",
+          "url": "https://www.gov.uk/foreign-travel-advice/israel/getting-help",
           "tier": 1,
-          "title": "Israel Police Emergency Dispatch"
+          "title": "GOV.UK Israel getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/israel-and-palestinian-territories",
+          "tier": 1,
+          "title": "Smartraveller Israel"
         }
       ],
-      "evidence_quote": "112 serves as the international unified mobile redirect number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 101; Fire: 102; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "100",

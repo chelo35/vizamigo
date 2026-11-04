@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moi.gov.eg",
+          "url": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
           "tier": 1,
-          "title": "Egyptian Ministry of Interior"
+          "title": "GOV.UK Egypt getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/egypt",
+          "tier": 1,
+          "title": "Smartraveller Egypt"
         }
       ],
-      "evidence_quote": "Emergency hotline number for Egyptian police assistance is 122",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 123; Fire: 180; Police: 122; Tourist police: 126",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "123",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mohp.gov.eg",
+          "url": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
           "tier": 1,
-          "title": "Egyptian Ministry of Health"
+          "title": "GOV.UK Egypt getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/egypt",
+          "tier": 1,
+          "title": "Smartraveller Egypt"
         }
       ],
-      "evidence_quote": "Nationwide emergency medical and ambulance dispatch number in Egypt is 123",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 123; Fire: 180; Police: 122; Tourist police: 126",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "180",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moi.gov.eg",
+          "url": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
           "tier": 1,
-          "title": "Egyptian Civil Protection Authority"
+          "title": "GOV.UK Egypt getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/egypt",
+          "tier": 1,
+          "title": "Smartraveller Egypt"
         }
       ],
-      "evidence_quote": "Civil defense and fire emergency services in Egypt operate on hotline 180",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 123; Fire: 180; Police: 122; Tourist police: 126",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://moi.gov.eg",
+          "url": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
           "tier": 1,
-          "title": "Egyptian Telecommunications Regulation Authority"
+          "title": "GOV.UK Egypt getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/egypt",
+          "tier": 1,
+          "title": "Smartraveller Egypt"
         }
       ],
-      "evidence_quote": "Mobile networks route 112 calls to emergency dispatch services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 123; Fire: 180; Police: 122; Tourist police: 126",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "126",

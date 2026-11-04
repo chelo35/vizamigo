@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ven911.gob.ve",
+          "url": "https://smartraveller.gov.au/destinations/americas/venezuela",
           "tier": 1,
-          "title": "VEN 911 Sistema de Respuesta Inmediata"
+          "title": "Venezuela (Smartraveller)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/318-venezuela",
+          "tier": 2,
+          "title": "Guía del viajero - Venezuela (SRE México)"
         }
       ],
-      "evidence_quote": "Dial 911 for unified police and emergency response across Venezuela",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "dial 911 (free of charge) from a landline or mobile phone",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ven911.gob.ve",
+          "url": "https://smartraveller.gov.au/destinations/americas/venezuela",
           "tier": 1,
-          "title": "VEN 911 Sistema de Ambulancias"
+          "title": "Venezuela (Smartraveller)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/318-venezuela",
+          "tier": 2,
+          "title": "Guía del viajero - Venezuela (SRE México)"
         }
       ],
-      "evidence_quote": "Call 911 or Cruz Roja Venezolana +58 212 571-4850 for emergency medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "dial 911 (free of charge) from a landline or mobile phone",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ven911.gob.ve",
+          "url": "https://smartraveller.gov.au/destinations/americas/venezuela",
           "tier": 1,
-          "title": "Cuerpo de Bomberos de Caracas"
+          "title": "Venezuela (Smartraveller)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/318-venezuela",
+          "tier": 2,
+          "title": "Guía del viajero - Venezuela (SRE México)"
         }
       ],
-      "evidence_quote": "Dial 911 for fire and rescue emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "dial 911 (free of charge) from a landline or mobile phone",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ven911.gob.ve",
+          "url": "https://smartraveller.gov.au/destinations/americas/venezuela",
           "tier": 1,
-          "title": "VEN 911"
+          "title": "Venezuela (Smartraveller)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/318-venezuela",
+          "tier": 2,
+          "title": "Guía del viajero - Venezuela (SRE México)"
         }
       ],
-      "evidence_quote": "VEN 911 is the central emergency operations system in Venezuela",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "dial 911 (free of charge) from a landline or mobile phone",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "911",

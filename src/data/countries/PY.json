@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policianacional.gov.py",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/paraguay",
           "tier": 1,
-          "title": "Policía Nacional del Paraguay"
+          "title": "Paraguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://asuncion.diplo.de/resource/blob/2574456/e499ca532a5e1a660cd203c5f598556f/notrufnummern-data.pdf",
+          "tier": 2,
+          "title": "Notrufnummern (German Embassy Asunción)"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency police response across all departments",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "141",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mspbs.gov.py",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/paraguay",
           "tier": 1,
-          "title": "Servicio de Emergencias Médicas Extrahospitalarias (SEME)"
+          "title": "Paraguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://asuncion.diplo.de/resource/blob/2574456/e499ca532a5e1a660cd203c5f598556f/notrufnummern-data.pdf",
+          "tier": 2,
+          "title": "Notrufnummern (German Embassy Asunción)"
         }
       ],
-      "evidence_quote": "Call 141 for SEME emergency medical dispatch and hospital transport",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "132",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberosdelparaguay.org.py",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/paraguay",
           "tier": 1,
-          "title": "Cuerpo de Bomberos Voluntarios del Paraguay (CBVP)"
+          "title": "Paraguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://asuncion.diplo.de/resource/blob/2574456/e499ca532a5e1a660cd203c5f598556f/notrufnummern-data.pdf",
+          "tier": 2,
+          "title": "Notrufnummern (German Embassy Asunción)"
         }
       ],
-      "evidence_quote": "Dial 132 for emergency fire and rescue operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policianacional.gov.py",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/paraguay",
           "tier": 1,
-          "title": "Policía Nacional"
+          "title": "Paraguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://asuncion.diplo.de/resource/blob/2574456/e499ca532a5e1a660cd203c5f598556f/notrufnummern-data.pdf",
+          "tier": 2,
+          "title": "Notrufnummern (German Embassy Asunción)"
         }
       ],
-      "evidence_quote": "911 coordinates unified national emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "911",

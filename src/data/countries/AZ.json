@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mia.gov.az",
+          "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan/getting-help",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of Azerbaijan"
+          "title": "GOV.UK Azerbaijan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/azerbaijan",
+          "tier": 1,
+          "title": "Smartraveller Azerbaijan"
         }
       ],
-      "evidence_quote": "Police emergency assistance throughout Azerbaijan is dialed via 102",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://sehiyye.gov.az",
+          "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan/getting-help",
           "tier": 1,
-          "title": "Ministry of Health Azerbaijan"
+          "title": "GOV.UK Azerbaijan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/azerbaijan",
+          "tier": 1,
+          "title": "Smartraveller Azerbaijan"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue responds on 103",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://fhn.gov.az",
+          "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Situations of Azerbaijan (FHN)"
+          "title": "GOV.UK Azerbaijan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/azerbaijan",
+          "tier": 1,
+          "title": "Smartraveller Azerbaijan"
         }
       ],
-      "evidence_quote": "Firefighting emergency calls are dispatched through 101",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://fhn.gov.az",
+          "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan/getting-help",
           "tier": 1,
-          "title": "FHN 112 Crisis Operations"
+          "title": "GOV.UK Azerbaijan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/azerbaijan",
+          "tier": 1,
+          "title": "Smartraveller Azerbaijan"
         }
       ],
-      "evidence_quote": "112 Crisis Management Center coordinates all emergency responder agencies in Azerbaijan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police: 102",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "102",

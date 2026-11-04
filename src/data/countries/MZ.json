@@ -100,59 +100,99 @@
   "emergency": {
     "police": {
       "value": "112",
-      "status": "verified",
-      "confidence": "medium",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/mozambique/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Mozambique - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/mozambique",
+          "tier": 1,
+          "title": "Mozambique (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mozambique",
+          "tier": 1,
+          "title": "Mozambique (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 112 (ambulance, fire, police); Ambulance: 848888 or 823388; Fire: 198; Police: 112",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Call 112 (ambulance, fire, police) ... Fire: 198; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "117",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.misau.gov.mz",
+          "url": "https://www.gov.uk/foreign-travel-advice/mozambique/getting-help",
           "tier": 1,
-          "title": "Ministério da Saúde de Moçambique"
+          "title": "Mozambique - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/mozambique",
+          "tier": 1,
+          "title": "Mozambique (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mozambique",
+          "tier": 1,
+          "title": "Mozambique (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 117 nationwide for public hospital emergency medical ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 (ambulance, fire, police) ... Fire: 198; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "198",
-      "status": "verified",
-      "confidence": "high",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.snacp.gov.mz",
+          "url": "https://www.gov.uk/foreign-travel-advice/mozambique/getting-help",
           "tier": 1,
-          "title": "Serviço Nacional de Salvação Pública (SENSAP)"
+          "title": "Mozambique - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/mozambique",
+          "tier": 1,
+          "title": "Mozambique (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mozambique",
+          "tier": 1,
+          "title": "Mozambique (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 198 for SENSAP national firefighter brigade and structural rescue teams",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 (ambulance, fire, police) ... Fire: 198; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.policia.gov.mz",
+          "url": "https://www.gov.uk/foreign-travel-advice/mozambique/getting-help",
           "tier": 1,
-          "title": "Polícia de Moçambique"
+          "title": "Mozambique - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/mozambique",
+          "tier": 1,
+          "title": "Mozambique (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/mozambique",
+          "tier": 1,
+          "title": "Mozambique (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Emergency number 112 connects to unified emergency coordination services across mobile operators",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 112 (ambulance, fire, police) ... Fire: 198; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

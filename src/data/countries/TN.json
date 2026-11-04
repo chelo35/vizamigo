@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interieur.gov.tn",
+          "url": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help",
           "tier": 1,
-          "title": "Ministry of Interior Tunisia"
+          "title": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help"
         }
       ],
-      "evidence_quote": "National police emergency dispatch in Tunisian urban areas is 197",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 190; Fire and car accidents: 198; Police, for towns and cities: 197",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "190",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.santetunisie.rns.tn",
+          "url": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help",
           "tier": 1,
-          "title": "Ministry of Health Tunisia (SAMU)"
+          "title": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help"
         }
       ],
-      "evidence_quote": "Emergency medical assistance (SAMU) operates nationwide on hotline 190",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 190; Fire and car accidents: 198; Police, for towns and cities: 197",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "198",
@@ -131,27 +131,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.onpc.nat.tn",
+          "url": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help",
           "tier": 1,
-          "title": "Office National de la Protection Civile"
+          "title": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help"
         }
       ],
-      "evidence_quote": "Civil protection and firefighting emergency services are contacted via 198",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 190; Fire and car accidents: 198; Police, for towns and cities: 197",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/tunisia/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 190; Fire and car accidents: 198; Police, for towns and cities: 197",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "197",

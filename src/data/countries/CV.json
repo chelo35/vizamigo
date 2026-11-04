@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policianacional.cv",
+          "url": "https://www.gov.uk/foreign-travel-advice/cape-verde/getting-help",
           "tier": 1,
-          "title": "Polícia Nacional de Cabo Verde"
+          "title": "GOV.UK Cape Verde getting help"
+        },
+        {
+          "url": "https://travel.gc.ca/destinations/cabo-verde",
+          "tier": 1,
+          "title": "Government of Canada – Cabo Verde travel advice"
         }
       ],
-      "evidence_quote": "Dial 132 for emergency police assistance throughout Cabo Verde",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 130; Fire: 131; Police: 132",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "130",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://minsaude.gov.cv",
+          "url": "https://www.gov.uk/foreign-travel-advice/cape-verde/getting-help",
           "tier": 1,
-          "title": "Ministério da Saúde de Cabo Verde"
+          "title": "GOV.UK Cape Verde getting help"
+        },
+        {
+          "url": "https://travel.gc.ca/destinations/cabo-verde",
+          "tier": 1,
+          "title": "Government of Canada – Cabo Verde travel advice"
         }
       ],
-      "evidence_quote": "Call 130 for emergency medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 130; Fire: 131; Police: 132",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "131",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://snpc.gov.cv",
+          "url": "https://www.gov.uk/foreign-travel-advice/cape-verde/getting-help",
           "tier": 1,
-          "title": "Serviço Nacional de Proteção Civil e Bombeiros"
+          "title": "GOV.UK Cape Verde getting help"
+        },
+        {
+          "url": "https://travel.gc.ca/destinations/cabo-verde",
+          "tier": 1,
+          "title": "Government of Canada – Cabo Verde travel advice"
         }
       ],
-      "evidence_quote": "Dial 131 for fire and civil protection rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 130; Fire: 131; Police: 132",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/cape-verde/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "GOV.UK Cape Verde getting help"
+        },
+        {
+          "url": "https://travel.gc.ca/destinations/cabo-verde",
+          "tier": 1,
+          "title": "Government of Canada – Cabo Verde travel advice"
         }
       ],
-      "evidence_quote": "Ambulance: 130; Fire: 131; Police: 132 (no general number listed)",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Ambulance: 130; Fire: 131; Police: 132",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

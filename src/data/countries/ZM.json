@@ -104,13 +104,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.zambiapolice.gov.zm",
+          "url": "https://www.gov.uk/foreign-travel-advice/zambia/getting-help",
           "tier": 1,
-          "title": "Zambia Police Service"
+          "title": "Zambia - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/sv/om-utlandet-för-svenska-medborgare/zambia/hjälp-till-svenskar-utomlands/akut-hjälp/",
+          "tier": 2,
+          "title": "Akut hjälp - Zambia (Embassy of Sweden)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zambia",
+          "tier": 1,
+          "title": "Zambia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 991 nationwide for emergency police dispatch and highway patrol intervention",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 991; Ambulance: 992; Fire: 993",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "992",
@@ -118,13 +128,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.zm",
+          "url": "https://www.gov.uk/foreign-travel-advice/zambia/getting-help",
           "tier": 1,
-          "title": "Ministry of Health Zambia"
+          "title": "Zambia - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/sv/om-utlandet-för-svenska-medborgare/zambia/hjälp-till-svenskar-utomlands/akut-hjälp/",
+          "tier": 2,
+          "title": "Akut hjälp - Zambia (Embassy of Sweden)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zambia",
+          "tier": 1,
+          "title": "Zambia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 992 nationwide for hospital emergency ambulance dispatch services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 991; Ambulance: 992; Fire: 993",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "993",
@@ -132,27 +152,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mha.gov.zm",
+          "url": "https://www.gov.uk/foreign-travel-advice/zambia/getting-help",
           "tier": 1,
-          "title": "Ministry of Home Affairs Zambia"
+          "title": "Zambia - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/sv/om-utlandet-för-svenska-medborgare/zambia/hjälp-till-svenskar-utomlands/akut-hjälp/",
+          "tier": 2,
+          "title": "Akut hjälp - Zambia (Embassy of Sweden)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zambia",
+          "tier": 1,
+          "title": "Zambia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 993 to summon municipal fire brigade and industrial rescue teams",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 991; Ambulance: 992; Fire: 993",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.zambiapolice.gov.zm",
+          "url": "https://www.gov.uk/foreign-travel-advice/zambia/getting-help",
           "tier": 1,
-          "title": "Zambia Police"
+          "title": "Zambia - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/sv/om-utlandet-för-svenska-medborgare/zambia/hjälp-till-svenskar-utomlands/akut-hjälp/",
+          "tier": 2,
+          "title": "Akut hjälp - Zambia (Embassy of Sweden)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zambia",
+          "tier": 1,
+          "title": "Zambia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 112 (or 999) from any mobile network for general emergency routing",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 991; Ambulance: 992; Fire: 993",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

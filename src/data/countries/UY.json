@@ -104,41 +104,71 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minterior.gub.uy",
+          "url": "https://gov.uk/foreign-travel-advice/uruguay/getting-help",
           "tier": 1,
-          "title": "Ministry of Interior Uruguay"
+          "title": "Uruguay - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uruguay",
+          "tier": 1,
+          "title": "Uruguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/441-uruguay",
+          "tier": 2,
+          "title": "Guía del viajero - Uruguay (SRE México)"
         }
       ],
-      "evidence_quote": "Police emergency assistance across all Uruguayan departments is dialed via 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "105 / 911",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.asse.com.uy",
+          "url": "https://gov.uk/foreign-travel-advice/uruguay/getting-help",
           "tier": 1,
-          "title": "ASSE Public Health Emergency Ambulance Service"
+          "title": "Uruguay - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uruguay",
+          "tier": 1,
+          "title": "Uruguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/441-uruguay",
+          "tier": 2,
+          "title": "Guía del viajero - Uruguay (SRE México)"
         }
       ],
-      "evidence_quote": "Public ambulance dispatch connects via 105 or integrated 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "104 / 911",
+      "value": "911 / 104",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://bomberos.minterior.gub.uy",
+          "url": "https://gov.uk/foreign-travel-advice/uruguay/getting-help",
           "tier": 1,
-          "title": "Direccion Nacional de Bomberos Uruguay"
+          "title": "Uruguay - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uruguay",
+          "tier": 1,
+          "title": "Uruguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/441-uruguay",
+          "tier": 2,
+          "title": "Guía del viajero - Uruguay (SRE México)"
         }
       ],
-      "evidence_quote": "National Firefighters Directorate emergency dispatch connects via 104 or 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -146,13 +176,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minterior.gub.uy",
+          "url": "https://gov.uk/foreign-travel-advice/uruguay/getting-help",
           "tier": 1,
-          "title": "Sistema de Emergencias 9-1-1 Uruguay"
+          "title": "Uruguay - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/uruguay",
+          "tier": 1,
+          "title": "Uruguay (travel.gc.ca)"
+        },
+        {
+          "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/441-uruguay",
+          "tier": 2,
+          "title": "Guía del viajero - Uruguay (SRE México)"
         }
       ],
-      "evidence_quote": "911 is the consolidated national emergency response line across Uruguay",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "911",

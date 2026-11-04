@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gouv.ci",
+          "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help",
           "tier": 1,
-          "title": "Police Nationale de Côte d'Ivoire"
+          "title": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help"
         }
       ],
-      "evidence_quote": "Dial 111 (or 170 / 100) nationwide for Police Nationale emergency intervention dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 185; Fire: 180; Police: 110, 111 or 170 (no general number listed)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "185",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sante.gouv.ci",
+          "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help",
           "tier": 1,
-          "title": "SAMU Côte d'Ivoire"
+          "title": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help"
         }
       ],
-      "evidence_quote": "Dial 185 for Service d'Aide Médicale Urgente (SAMU) emergency doctor and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 185; Fire: 180; Police: 110, 111 or 170 (no general number listed)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "180",
@@ -131,27 +131,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interieur.gouv.ci",
+          "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help",
           "tier": 1,
-          "title": "Groupement des Sapeurs-Pompiers Militaires"
+          "title": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help"
         }
       ],
-      "evidence_quote": "Dial 180 to reach the Groupement des Sapeurs-Pompiers Militaires (GSPM) emergency fire service",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 185; Fire: 180; Police: 110, 111 or 170 (no general number listed)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 185; Fire: 180; Police: 110, 111 or 170 (no general number listed)",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

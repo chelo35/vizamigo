@@ -103,41 +103,71 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.polisi.go.tz",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tanzania",
           "tier": 1,
-          "title": "Tanzania Police Force (Jeshi la Polisi)"
+          "title": "Tanzania (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/contentassets/c0d8de4316084a0783f8a58c929e477a/hj%C3%A4lp-till-sj%C3%A4lvhj%C3%A4lp-january-2026.pdf",
+          "tier": 2,
+          "title": "Hjälp till självhjälp (Embassy of Sweden, Jan 2026)"
+        },
+        {
+          "url": "https://trekmedics.org/programs/tnz/",
+          "tier": 2,
+          "title": "Tanzania program (TrekMedics)"
         }
       ],
-      "evidence_quote": "Dial 112 or 999 for emergency police assistance throughout Tanzania",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 112 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
+      "sources": [
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tanzania",
+          "tier": 1,
+          "title": "Tanzania (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/contentassets/c0d8de4316084a0783f8a58c929e477a/hj%C3%A4lp-till-sj%C3%A4lvhj%C3%A4lp-january-2026.pdf",
+          "tier": 2,
+          "title": "Hjälp till självhjälp (Embassy of Sweden, Jan 2026)"
+        },
+        {
+          "url": "https://trekmedics.org/programs/tnz/",
+          "tier": 2,
+          "title": "Tanzania program (TrekMedics)"
+        }
+      ],
+      "evidence_quote": "Dial 112 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
+    },
+    "fire": {
       "value": "114",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.go.tz",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tanzania",
           "tier": 1,
-          "title": "Ministry of Health of Tanzania"
-        }
-      ],
-      "evidence_quote": "Call 114 for emergency hospital ambulance services and paramedic dispatch",
-      "retrieved_at": "2026-10-18"
-    },
-    "fire": {
-      "value": "115",
-      "status": "verified",
-      "confidence": "high",
-      "sources": [
+          "title": "Tanzania (travel.gc.ca)"
+        },
         {
-          "url": "https://www.zimamoto.go.tz",
-          "tier": 1,
-          "title": "Fire and Rescue Force of Tanzania"
+          "url": "https://www.swedenabroad.se/contentassets/c0d8de4316084a0783f8a58c929e477a/hj%C3%A4lp-till-sj%C3%A4lvhj%C3%A4lp-january-2026.pdf",
+          "tier": 2,
+          "title": "Hjälp till självhjälp (Embassy of Sweden, Jan 2026)"
+        },
+        {
+          "url": "https://trekmedics.org/programs/tnz/",
+          "tier": 2,
+          "title": "Tanzania program (TrekMedics)"
         }
       ],
-      "evidence_quote": "Call 115 for Fire and Rescue Force brigades across Tanzania",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 112 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.polisi.go.tz",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tanzania",
           "tier": 1,
-          "title": "Tanzania Police Force"
+          "title": "Tanzania (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.swedenabroad.se/contentassets/c0d8de4316084a0783f8a58c929e477a/hj%C3%A4lp-till-sj%C3%A4lvhj%C3%A4lp-january-2026.pdf",
+          "tier": 2,
+          "title": "Hjälp till självhjälp (Embassy of Sweden, Jan 2026)"
+        },
+        {
+          "url": "https://trekmedics.org/programs/tnz/",
+          "tier": 2,
+          "title": "Tanzania program (TrekMedics)"
         }
       ],
-      "evidence_quote": "112 serves as the primary national emergency contact",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 112 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+255 22 211 4114",

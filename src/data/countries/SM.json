@@ -99,18 +99,28 @@
   },
   "emergency": {
     "police": {
-      "value": "112",
+      "value": "112 / 113",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policiacivile.sm",
+          "url": "https://gov.uk/foreign-travel-advice/san-marino/getting-help",
           "tier": 1,
-          "title": "Corpo di Polizia Civile di San Marino"
+          "title": "San Marino - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/san-marino",
+          "tier": 1,
+          "title": "San Marino (travel.gc.ca)"
+        },
+        {
+          "url": "https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/san_marino/cestovani/health_care.html",
+          "tier": 1,
+          "title": "San Marino - zdravotní péče (MZV ČR)"
         }
       ],
-      "evidence_quote": "Dial 112 or 113 for emergency police intervention across San Marino",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 115; Police: 112 or 113",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "118",
@@ -118,13 +128,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.iss.sm",
+          "url": "https://gov.uk/foreign-travel-advice/san-marino/getting-help",
           "tier": 1,
-          "title": "Istituto per la Sicurezza Sociale (ISS)"
+          "title": "San Marino - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/san-marino",
+          "tier": 1,
+          "title": "San Marino (travel.gc.ca)"
+        },
+        {
+          "url": "https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/san_marino/cestovani/health_care.html",
+          "tier": 1,
+          "title": "San Marino - zdravotní péče (MZV ČR)"
         }
       ],
-      "evidence_quote": "Call 118 for emergency medical response and hospital ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 115; Police: 112 or 113",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "115",
@@ -132,27 +152,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policiacivile.sm/antincendio",
+          "url": "https://gov.uk/foreign-travel-advice/san-marino/getting-help",
           "tier": 1,
-          "title": "Sezione Antincendio Polizia Civile"
+          "title": "San Marino - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/san-marino",
+          "tier": 1,
+          "title": "San Marino (travel.gc.ca)"
+        },
+        {
+          "url": "https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/san_marino/cestovani/health_care.html",
+          "tier": 1,
+          "title": "San Marino - zdravotní péče (MZV ČR)"
         }
       ],
-      "evidence_quote": "Dial 115 for fire and rescue services in San Marino",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 115; Police: 112 or 113",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.gov.sm",
+          "url": "https://gov.uk/foreign-travel-advice/san-marino/getting-help",
           "tier": 1,
-          "title": "Repubblica di San Marino"
+          "title": "San Marino - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/san-marino",
+          "tier": 1,
+          "title": "San Marino (travel.gc.ca)"
+        },
+        {
+          "url": "https://mzv.gov.cz/jnp/cz/encyklopedie_statu/evropa/san_marino/cestovani/health_care.html",
+          "tier": 1,
+          "title": "San Marino - zdravotní péče (MZV ČR)"
         }
       ],
-      "evidence_quote": "112 is the primary unified emergency number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Fire: 115; Police: 112 or 113",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

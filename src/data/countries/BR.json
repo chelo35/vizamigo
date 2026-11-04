@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.br/mj",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/brazil",
           "tier": 1,
-          "title": "Ministério da Justiça e Segurança Pública (Polícia Militar 190)"
+          "title": "Smartraveller Brazil"
+        },
+        {
+          "url": "https://brazil.embassy.gov.au/bras/consular.html",
+          "tier": 1,
+          "title": "Australian Embassy Brazil – Consular"
+        },
+        {
+          "url": "https://www.eda.admin.ch/countries/brazil/fr/home/conseils-pour-les-voyages/conseils-sur-place.html",
+          "tier": 2,
+          "title": "Swiss FDFA – Brazil on-site advice"
         }
       ],
-      "evidence_quote": "Ligue 190 para emergências policiais da Polícia Militar",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Fire and rescue: Call 193. Medical: Call 192 ... Police: Call 190",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "192",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.br/saude",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/brazil",
           "tier": 1,
-          "title": "Ministério da Saúde - SAMU 192"
+          "title": "Smartraveller Brazil"
+        },
+        {
+          "url": "https://brazil.embassy.gov.au/bras/consular.html",
+          "tier": 1,
+          "title": "Australian Embassy Brazil – Consular"
+        },
+        {
+          "url": "https://www.eda.admin.ch/countries/brazil/fr/home/conseils-pour-les-voyages/conseils-sur-place.html",
+          "tier": 2,
+          "title": "Swiss FDFA – Brazil on-site advice"
         }
       ],
-      "evidence_quote": "O SAMU 192 realiza atendimento de urgência e emergência médica",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Fire and rescue: Call 193. Medical: Call 192 ... Police: Call 190",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "193",
@@ -131,21 +151,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.br/mj",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/brazil",
           "tier": 1,
-          "title": "Corpo de Bombeiros Militar 193"
+          "title": "Smartraveller Brazil"
+        },
+        {
+          "url": "https://brazil.embassy.gov.au/bras/consular.html",
+          "tier": 1,
+          "title": "Australian Embassy Brazil – Consular"
+        },
+        {
+          "url": "https://www.eda.admin.ch/countries/brazil/fr/home/conseils-pour-les-voyages/conseils-sur-place.html",
+          "tier": 2,
+          "title": "Swiss FDFA – Brazil on-site advice"
         }
       ],
-      "evidence_quote": "Corpo de Bombeiros atende emergências de fogo e resgate pelo número 193",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Fire and rescue: Call 193. Medical: Call 192 ... Police: Call 190",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "not_found",
-      "confidence": null,
-      "sources": [],
-      "evidence_quote": null,
-      "retrieved_at": null
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
+      "sources": [
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/brazil",
+          "tier": 1,
+          "title": "Smartraveller Brazil"
+        },
+        {
+          "url": "https://brazil.embassy.gov.au/bras/consular.html",
+          "tier": 1,
+          "title": "Australian Embassy Brazil – Consular"
+        },
+        {
+          "url": "https://www.eda.admin.ch/countries/brazil/fr/home/conseils-pour-les-voyages/conseils-sur-place.html",
+          "tier": 2,
+          "title": "Swiss FDFA – Brazil on-site advice"
+        }
+      ],
+      "evidence_quote": "Fire and rescue: Call 193. Medical: Call 192 ... Police: Call 190",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "DEAT (Rio): +55 21 2332 2924",

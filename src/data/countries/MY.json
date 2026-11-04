@@ -97,18 +97,23 @@
   },
   "emergency": {
     "police": {
-      "value": "999 / 112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rmp.gov.my",
+          "url": "https://www.civildefence.gov.my/999-emergency-services/?lang=en",
           "tier": 1,
-          "title": "Royal Malaysia Police (Polis Diraja Malaysia)"
+          "title": "999 Emergency Services (Malaysia Civil Defence Force)"
+        },
+        {
+          "url": "https://www.malaysia.gov.my/en/categories/safety-and-community/public-safety/mers-999-emergency-line",
+          "tier": 1,
+          "title": "MERS 999 Emergency Line (malaysia.gov.my)"
         }
       ],
-      "evidence_quote": "Dial 999 or 112 from any mobile phone for emergency police dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "combining all emergency numbers namely 991, 994 and 999 into one emergency number",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -116,27 +121,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.my",
+          "url": "https://www.civildefence.gov.my/999-emergency-services/?lang=en",
           "tier": 1,
-          "title": "Ministry of Health Malaysia: Emergency Medical Services"
+          "title": "999 Emergency Services (Malaysia Civil Defence Force)"
+        },
+        {
+          "url": "https://www.malaysia.gov.my/en/categories/safety-and-community/public-safety/mers-999-emergency-line",
+          "tier": 1,
+          "title": "MERS 999 Emergency Line (malaysia.gov.my)"
         }
       ],
-      "evidence_quote": "Call 999 to reach the Ministry of Health emergency medical and ambulance service",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "combining all emergency numbers namely 991, 994 and 999 into one emergency number",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "994",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomba.gov.my",
+          "url": "https://www.civildefence.gov.my/999-emergency-services/?lang=en",
           "tier": 1,
-          "title": "Fire and Rescue Department of Malaysia (Bomba)"
+          "title": "999 Emergency Services (Malaysia Civil Defence Force)"
+        },
+        {
+          "url": "https://www.malaysia.gov.my/en/categories/safety-and-community/public-safety/mers-999-emergency-line",
+          "tier": 1,
+          "title": "MERS 999 Emergency Line (malaysia.gov.my)"
         }
       ],
-      "evidence_quote": "Dial 994 for fire emergencies and rescue operations by Jabatan Bomba",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "combining all emergency numbers namely 991, 994 and 999 into one emergency number",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.malaysia.gov.my",
+          "url": "https://www.civildefence.gov.my/999-emergency-services/?lang=en",
           "tier": 1,
-          "title": "Malaysian Emergency Response Services (MERS 999)"
+          "title": "999 Emergency Services (Malaysia Civil Defence Force)"
+        },
+        {
+          "url": "https://www.malaysia.gov.my/en/categories/safety-and-community/public-safety/mers-999-emergency-line",
+          "tier": 1,
+          "title": "MERS 999 Emergency Line (malaysia.gov.my)"
         }
       ],
-      "evidence_quote": "MERS 999 integrates national police, hospital, and fire rescue emergency responses",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "combining all emergency numbers namely 991, 994 and 999 into one emergency number",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+60 3 2149 6590",

@@ -105,11 +105,11 @@
         {
           "url": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 116; Fire: 115; Police: 122",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "116",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mspp.gouv.ht",
+          "url": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help",
           "tier": 1,
-          "title": "Centre Ambulancier National (CAN) Haïti"
+          "title": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help"
         }
       ],
-      "evidence_quote": "Call 116 for the Centre Ambulancier National emergency medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 115; Police: 122",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "115",
@@ -131,27 +131,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pnh.ht",
+          "url": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help",
           "tier": 1,
-          "title": "Corps des Sapeurs-Pompiers d'Haïti"
+          "title": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help"
         }
       ],
-      "evidence_quote": "Dial 115 for emergency fire and disaster response services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 116; Fire: 115; Police: 122",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/haiti/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 116; Fire: 115; Police: 122",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+509 2999 0101",

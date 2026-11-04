@@ -103,41 +103,56 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.pnc.gob.sv",
+          "url": "https://smartraveller.gov.au/destinations/americas/el-salvador",
           "tier": 1,
-          "title": "Policía Nacional Civil de El Salvador (PNC)"
+          "title": "El Salvador (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/el-salvador",
+          "tier": 1,
+          "title": "El Salvador (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency police response throughout El Salvador",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 911. Medical emergencies: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "132",
+      "value": "911 / 132",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.salud.gob.sv",
+          "url": "https://smartraveller.gov.au/destinations/americas/el-salvador",
           "tier": 1,
-          "title": "Ministerio de Salud El Salvador - SEM"
+          "title": "El Salvador (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/el-salvador",
+          "tier": 1,
+          "title": "El Salvador (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 132 for Sistema de Emergencias Médicas (SEM) medical dispatch; Cruz Roja is 2222-5155",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 911. Medical emergencies: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "913",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberos.gob.sv",
+          "url": "https://smartraveller.gov.au/destinations/americas/el-salvador",
           "tier": 1,
-          "title": "Cuerpo de Bomberos de El Salvador"
+          "title": "El Salvador (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/el-salvador",
+          "tier": 1,
+          "title": "El Salvador (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 913 for national fire and rescue emergency services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 911. Medical emergencies: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.pnc.gob.sv",
+          "url": "https://smartraveller.gov.au/destinations/americas/el-salvador",
           "tier": 1,
-          "title": "PNC El Salvador"
+          "title": "El Salvador (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/el-salvador",
+          "tier": 1,
+          "title": "El Salvador (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "911 is the central unified national emergency number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue services: Call 911. Medical emergencies: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "911",

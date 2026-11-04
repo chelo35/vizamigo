@@ -102,13 +102,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.vu",
+          "url": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help",
           "tier": 1,
-          "title": "Vanuatu Police Force (VPF)"
+          "title": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help"
         }
       ],
-      "evidence_quote": "Dial 111 for emergency police response across Vanuatu",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 115; Fire: 113; Police: 111 or 22222",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "115",
@@ -118,11 +118,11 @@
         {
           "url": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 115; Fire: 113; Police: 111 or 22222",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "113",
@@ -130,27 +130,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.vu",
+          "url": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help",
           "tier": 1,
-          "title": "VPF Fire Service"
+          "title": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help"
         }
       ],
-      "evidence_quote": "Dial 113 for fire and rescue emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 115; Fire: 113; Police: 111 or 22222",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/vanuatu/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 115; Fire: 113; Police: 111 or 22222",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+678 22222",

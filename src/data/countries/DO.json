@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://911.gob.do",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic/getting-help",
           "tier": 1,
-          "title": "Sistema Nacional de Atencion a Emergencias y Seguridad 9-1-1"
+          "title": "GOV.UK Dominican Republic getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/dominican-republic",
+          "tier": 1,
+          "title": "Smartraveller Dominican Republic"
         }
       ],
-      "evidence_quote": "National 9-1-1 system coordinates police dispatch throughout Dominican territory",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police). The 911 emergency number does not have full coverage across the country.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://911.gob.do",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic/getting-help",
           "tier": 1,
-          "title": "Dominican 911 Emergency Medical Dispatch"
+          "title": "GOV.UK Dominican Republic getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/dominican-republic",
+          "tier": 1,
+          "title": "Smartraveller Dominican Republic"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance requests are dispatched directly through 9-1-1",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police). The 911 emergency number does not have full coverage across the country.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://911.gob.do",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic/getting-help",
           "tier": 1,
-          "title": "Dominican 911 Fire Dispatch"
+          "title": "GOV.UK Dominican Republic getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/dominican-republic",
+          "tier": 1,
+          "title": "Smartraveller Dominican Republic"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch connects through unified 9-1-1",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police). The 911 emergency number does not have full coverage across the country.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://911.gob.do",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic/getting-help",
           "tier": 1,
-          "title": "Sistema 9-1-1 Dominican Republic"
+          "title": "GOV.UK Dominican Republic getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/dominican-republic",
+          "tier": 1,
+          "title": "Smartraveller Dominican Republic"
         }
       ],
-      "evidence_quote": "9-1-1 is the unified emergency contact number across Dominican provinces",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police). The 911 emergency number does not have full coverage across the country.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "809-200-3500",

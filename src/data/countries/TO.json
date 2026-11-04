@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.to",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tonga",
           "tier": 1,
-          "title": "Tonga Police"
+          "title": "Tonga (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/tonga",
+          "tier": 1,
+          "title": "Tonga (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 922 for emergency police response across Tongatapu, Vava'u, and Ha'apai",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "933",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.to",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tonga",
           "tier": 1,
-          "title": "Vaiola Hospital Emergency Medical Services"
+          "title": "Tonga (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/tonga",
+          "tier": 1,
+          "title": "Tonga (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 933 for hospital emergency medical dispatch and ambulance transport",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mic.gov.to",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tonga",
           "tier": 1,
-          "title": "Tonga Fire and Emergency Services"
+          "title": "Tonga (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/tonga",
+          "tier": 1,
+          "title": "Tonga (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.to",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/tonga",
           "tier": 1,
-          "title": "Tonga Police Operations"
+          "title": "Tonga (travel.gc.ca)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/pacific/tonga",
+          "tier": 1,
+          "title": "Tonga (Smartraveller)"
         }
       ],
-      "evidence_quote": "911 serves as an alternative unified emergency contact line",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Dial 911 for emergency assistance.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+676 23555",

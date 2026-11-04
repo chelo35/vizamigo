@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.bw",
+          "url": "https://www.gov.uk/foreign-travel-advice/botswana/getting-help",
           "tier": 1,
-          "title": "Botswana Police Service (BPS)"
+          "title": "GOV.UK Botswana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/botswana",
+          "tier": 1,
+          "title": "Smartraveller Botswana"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency police assistance throughout Botswana",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 997; Fire: 998; Police: 999",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "997",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.bw",
+          "url": "https://www.gov.uk/foreign-travel-advice/botswana/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of Botswana"
+          "title": "GOV.UK Botswana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/botswana",
+          "tier": 1,
+          "title": "Smartraveller Botswana"
         }
       ],
-      "evidence_quote": "Call 997 for emergency medical ambulance and hospital dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 997; Fire: 998; Police: 999",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "998",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.bw",
+          "url": "https://www.gov.uk/foreign-travel-advice/botswana/getting-help",
           "tier": 1,
-          "title": "Emergency Services Botswana"
+          "title": "GOV.UK Botswana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/botswana",
+          "tier": 1,
+          "title": "Smartraveller Botswana"
         }
       ],
-      "evidence_quote": "Dial 998 for municipal fire brigades and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 997; Fire: 998; Police: 999",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.police.gov.bw",
+          "url": "https://www.gov.uk/foreign-travel-advice/botswana/getting-help",
           "tier": 1,
-          "title": "Botswana Police Service"
+          "title": "GOV.UK Botswana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/botswana",
+          "tier": 1,
+          "title": "Smartraveller Botswana"
         }
       ],
-      "evidence_quote": "112 operates as the nationwide mobile emergency dispatch number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 997; Fire: 998; Police: 999",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

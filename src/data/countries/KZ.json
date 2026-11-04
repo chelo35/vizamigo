@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.kz/memleket/entities/qriim",
+          "url": "https://www.gov.uk/foreign-travel-advice/kazakhstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of Kazakhstan"
+          "title": "Kazakhstan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/kazakhstan",
+          "tier": 1,
+          "title": "Kazakhstan (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 102 for emergency police services across Kazakhstan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police:102; Emergency and rescue service: 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.kz/memleket/entities/dsm",
+          "url": "https://www.gov.uk/foreign-travel-advice/kazakhstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Healthcare of the Republic of Kazakhstan"
+          "title": "Kazakhstan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/kazakhstan",
+          "tier": 1,
+          "title": "Kazakhstan (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 103 for emergency ambulance medical response across Kazakhstan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police:102; Emergency and rescue service: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.kz/memleket/entities/emer",
+          "url": "https://www.gov.uk/foreign-travel-advice/kazakhstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Situations of Kazakhstan"
+          "title": "Kazakhstan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/kazakhstan",
+          "tier": 1,
+          "title": "Kazakhstan (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 101 for fire department dispatch in all Kazakh cities",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police:102; Emergency and rescue service: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.kz/memleket/entities/emer",
+          "url": "https://www.gov.uk/foreign-travel-advice/kazakhstan/getting-help",
           "tier": 1,
-          "title": "Ministry of Emergency Situations of Kazakhstan"
+          "title": "Kazakhstan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/kazakhstan",
+          "tier": 1,
+          "title": "Kazakhstan (Smartraveller)"
         }
       ],
-      "evidence_quote": "Unified emergency number 112 connects callers to rescue services nationwide",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 103; Fire: 101; Police:102; Emergency and rescue service: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1414",

@@ -103,55 +103,75 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pnc.gob.gt",
+          "url": "https://www.gov.uk/foreign-travel-advice/guatemala/getting-help",
           "tier": 1,
-          "title": "Policía Nacional Civil de Guatemala (PNC)"
+          "title": "GOV.UK Guatemala getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guatemala",
+          "tier": 1,
+          "title": "Smartraveller Guatemala"
         }
       ],
-      "evidence_quote": "Dial 110 for emergency police response across Guatemala",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Ambulance: 122 or 123; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "122",
+      "value": "122 / 123",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://bomberosvoluntarios.org.gt",
+          "url": "https://www.gov.uk/foreign-travel-advice/guatemala/getting-help",
           "tier": 1,
-          "title": "Cuerpo Voluntario de Bomberos de Guatemala"
+          "title": "GOV.UK Guatemala getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guatemala",
+          "tier": 1,
+          "title": "Smartraveller Guatemala"
         }
       ],
-      "evidence_quote": "Call 122 for Bomberos Voluntarios emergency ambulance and rescue response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Ambulance: 122 or 123; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "123",
+      "value": "122 / 123",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://bomberosmunicipales.org.gt",
+          "url": "https://www.gov.uk/foreign-travel-advice/guatemala/getting-help",
           "tier": 1,
-          "title": "Cuerpo de Bomberos Municipales"
+          "title": "GOV.UK Guatemala getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guatemala",
+          "tier": 1,
+          "title": "Smartraveller Guatemala"
         }
       ],
-      "evidence_quote": "Call 123 for Bomberos Municipales fire and rescue dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Ambulance: 122 or 123; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "110",
-      "status": "verified",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://pnc.gob.gt",
+          "url": "https://www.gov.uk/foreign-travel-advice/guatemala/getting-help",
           "tier": 1,
-          "title": "Policía Nacional Civil"
+          "title": "GOV.UK Guatemala getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guatemala",
+          "tier": 1,
+          "title": "Smartraveller Guatemala"
         }
       ],
-      "evidence_quote": "110 connects callers to primary police and emergency dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and Ambulance: 122 or 123; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1500",

@@ -97,60 +97,100 @@
   },
   "emergency": {
     "police": {
+      "value": "999 / 112",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.pulse.ug/story/police-publish-national-emergency-crime-reporting-hotlines-2026031011583031146",
+          "tier": 1,
+          "title": "Police publish national emergency crime reporting hotlines (Pulse Uganda, Mar 2026)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/uganda",
+          "tier": 1,
+          "title": "Uganda (Smartraveller)"
+        },
+        {
+          "url": "https://independent.co.ug/report-critical-medical-emergency-contact-still-unknown-to-most-ugandans",
+          "tier": 2,
+          "title": "Critical medical emergency contact still unknown (The Independent Uganda)"
+        }
+      ],
+      "evidence_quote": "the national emergency numbers remain 999 and 112",
+      "retrieved_at": "2026-11-05"
+    },
+    "ambulance": {
       "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.upf.go.ug",
+          "url": "https://www.pulse.ug/story/police-publish-national-emergency-crime-reporting-hotlines-2026031011583031146",
           "tier": 1,
-          "title": "Uganda Police Force (UPF)"
-        }
-      ],
-      "evidence_quote": "Dial 999 or 112 for emergency police assistance throughout Uganda",
-      "retrieved_at": "2026-10-18"
-    },
-    "ambulance": {
-      "value": "911",
-      "status": "verified",
-      "confidence": "high",
-      "sources": [
+          "title": "Police publish national emergency crime reporting hotlines (Pulse Uganda, Mar 2026)"
+        },
         {
-          "url": "https://health.go.ug",
+          "url": "https://www.smartraveller.gov.au/destinations/uganda",
           "tier": 1,
-          "title": "Ministry of Health of Uganda"
+          "title": "Uganda (Smartraveller)"
+        },
+        {
+          "url": "https://independent.co.ug/report-critical-medical-emergency-contact-still-unknown-to-most-ugandans",
+          "tier": 2,
+          "title": "Critical medical emergency contact still unknown (The Independent Uganda)"
         }
       ],
-      "evidence_quote": "Call 911 or Red Cross ambulance services for urgent medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the national emergency numbers remain 999 and 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.upf.go.ug/fire-rescue/",
+          "url": "https://www.pulse.ug/story/police-publish-national-emergency-crime-reporting-hotlines-2026031011583031146",
           "tier": 1,
-          "title": "UPF Directorate of Fire Prevention and Rescue"
+          "title": "Police publish national emergency crime reporting hotlines (Pulse Uganda, Mar 2026)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/uganda",
+          "tier": 1,
+          "title": "Uganda (Smartraveller)"
+        },
+        {
+          "url": "https://independent.co.ug/report-critical-medical-emergency-contact-still-unknown-to-most-ugandans",
+          "tier": 2,
+          "title": "Critical medical emergency contact still unknown (The Independent Uganda)"
         }
       ],
-      "evidence_quote": "Dial 112 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the national emergency numbers remain 999 and 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.upf.go.ug",
+          "url": "https://www.pulse.ug/story/police-publish-national-emergency-crime-reporting-hotlines-2026031011583031146",
           "tier": 1,
-          "title": "Uganda Police Force"
+          "title": "Police publish national emergency crime reporting hotlines (Pulse Uganda, Mar 2026)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/uganda",
+          "tier": 1,
+          "title": "Uganda (Smartraveller)"
+        },
+        {
+          "url": "https://independent.co.ug/report-critical-medical-emergency-contact-still-unknown-to-most-ugandans",
+          "tier": 2,
+          "title": "Critical medical emergency contact still unknown (The Independent Uganda)"
         }
       ],
-      "evidence_quote": "112 operates as the unified toll-free cellular emergency dispatch number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "the national emergency numbers remain 999 and 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+256 714 667 792",

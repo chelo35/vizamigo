@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pnp.gov.ph",
+          "url": "https://calabarzon.dilg.gov.ph/one-number-for-all-emergencies-unified-911-to-launch-nationwide/",
           "tier": 1,
-          "title": "Philippine National Police (PNP)"
+          "title": "One Number for All Emergencies: Unified 911 (DILG)"
+        },
+        {
+          "url": "https://ptvnews.ph/ph-now-has-single-hotline-for-emergencies-through-unified-911/",
+          "tier": 2,
+          "title": "PH now has single hotline for emergencies through Unified 911 (PTV News)"
         }
       ],
-      "evidence_quote": "National emergency hotline 911 handles police dispatch across the Philippines",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "whether for police, fire, medical, or disaster response ... the nation's single number",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://doh.gov.ph",
+          "url": "https://calabarzon.dilg.gov.ph/one-number-for-all-emergencies-unified-911-to-launch-nationwide/",
           "tier": 1,
-          "title": "Department of Health Philippines"
+          "title": "One Number for All Emergencies: Unified 911 (DILG)"
+        },
+        {
+          "url": "https://ptvnews.ph/ph-now-has-single-hotline-for-emergencies-through-unified-911/",
+          "tier": 2,
+          "title": "PH now has single hotline for emergencies through Unified 911 (PTV News)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance requests connect through national hotline 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "whether for police, fire, medical, or disaster response ... the nation's single number",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -132,13 +142,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://bfp.gov.ph",
+          "url": "https://calabarzon.dilg.gov.ph/one-number-for-all-emergencies-unified-911-to-launch-nationwide/",
           "tier": 1,
-          "title": "Bureau of Fire Protection (BFP)"
+          "title": "One Number for All Emergencies: Unified 911 (DILG)"
+        },
+        {
+          "url": "https://ptvnews.ph/ph-now-has-single-hotline-for-emergencies-through-unified-911/",
+          "tier": 2,
+          "title": "PH now has single hotline for emergencies through Unified 911 (PTV News)"
         }
       ],
-      "evidence_quote": "Bureau of Fire Protection emergency dispatch is coordinated via 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "whether for police, fire, medical, or disaster response ... the nation's single number",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -146,13 +161,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://emergency911.gov.ph",
+          "url": "https://calabarzon.dilg.gov.ph/one-number-for-all-emergencies-unified-911-to-launch-nationwide/",
           "tier": 1,
-          "title": "Emergency 911 National Commission"
+          "title": "One Number for All Emergencies: Unified 911 (DILG)"
+        },
+        {
+          "url": "https://ptvnews.ph/ph-now-has-single-hotline-for-emergencies-through-unified-911/",
+          "tier": 2,
+          "title": "PH now has single hotline for emergencies through Unified 911 (PTV News)"
         }
       ],
-      "evidence_quote": "Executive Order No. 56 institutionalized 911 as the nationwide emergency contact number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "whether for police, fire, medical, or disaster response ... the nation's single number",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "0917-840-3638",

@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rcmp-grc.gc.ca",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/canada",
           "tier": 1,
-          "title": "Royal Canadian Mounted Police"
+          "title": "Smartraveller Canada"
+        },
+        {
+          "url": "https://www.cma.ca/resources/healthcare-real/answers/healthcare-101/how-does-calling-911-work-canada",
+          "tier": 2,
+          "title": "Canadian Medical Association – How does calling 911 work"
         }
       ],
-      "evidence_quote": "Emergency police dispatch throughout Canadian provinces is 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.canada.ca",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/canada",
           "tier": 1,
-          "title": "Health Canada"
+          "title": "Smartraveller Canada"
+        },
+        {
+          "url": "https://www.cma.ca/resources/healthcare-real/answers/healthcare-101/how-does-calling-911-work-canada",
+          "tier": 2,
+          "title": "Canadian Medical Association – How does calling 911 work"
         }
       ],
-      "evidence_quote": "Emergency medical and paramedic dispatch across Canada connects via 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.canada.ca",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/canada",
           "tier": 1,
-          "title": "Public Safety Canada"
+          "title": "Smartraveller Canada"
+        },
+        {
+          "url": "https://www.cma.ca/resources/healthcare-real/answers/healthcare-101/how-does-calling-911-work-canada",
+          "tier": 2,
+          "title": "Canadian Medical Association – How does calling 911 work"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is integrated nationwide into 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.canada.ca",
+          "url": "https://www.smartraveller.gov.au/destinations/americas/canada",
           "tier": 1,
-          "title": "Public Safety Canada 911"
+          "title": "Smartraveller Canada"
+        },
+        {
+          "url": "https://www.cma.ca/resources/healthcare-real/answers/healthcare-101/how-does-calling-911-work-canada",
+          "tier": 2,
+          "title": "Canadian Medical Association – How does calling 911 work"
         }
       ],
-      "evidence_quote": "911 is the universal emergency telephone number across all Canadian jurisdictions",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

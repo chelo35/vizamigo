@@ -98,32 +98,42 @@
   },
   "emergency": {
     "police": {
-      "value": "17",
+      "value": "17 / 1548",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.algeriepolice.dz",
+          "url": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
           "tier": 1,
-          "title": "Sûreté Nationale Algérienne"
+          "title": "GOV.UK Algeria getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/algeria",
+          "tier": 1,
+          "title": "Smartraveller Algeria"
         }
       ],
-      "evidence_quote": "Dial 17 nationwide (or 1548 via mobile networks) for Police Nationale emergency intervention",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 1021; Fire: 14; Police: 17 or 1548",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "14",
+      "value": "14 / 1021",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.protectioncivile.dz",
+          "url": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
           "tier": 1,
-          "title": "Protection Civile Algérie"
+          "title": "GOV.UK Algeria getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/algeria",
+          "tier": 1,
+          "title": "Smartraveller Algeria"
         }
       ],
-      "evidence_quote": "Dial 14 for Protection Civile paramedics, medical rescue, and emergency ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 1021; Fire: 14; Police: 17 or 1548",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "14",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.protectioncivile.dz",
+          "url": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
           "tier": 1,
-          "title": "Protection Civile Algérie"
+          "title": "GOV.UK Algeria getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/algeria",
+          "tier": 1,
+          "title": "Smartraveller Algeria"
         }
       ],
-      "evidence_quote": "Dial 14 to summon the civil protection fire brigades and disaster rescue teams",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 1021; Fire: 14; Police: 17 or 1548",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "GOV.UK Algeria getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/algeria",
+          "tier": 1,
+          "title": "Smartraveller Algeria"
         }
       ],
       "evidence_quote": "Ambulance: 1021; Fire: 14; Police: 17 or 1548",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

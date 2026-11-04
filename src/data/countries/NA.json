@@ -103,41 +103,71 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nampol.gov.na",
+          "url": "https://www.windhoekcc.org.na/wp-content/uploads/2026/02/Website-Visitor-Savety-Tips.pdf",
+          "tier": 2,
+          "title": "Visitor Safety Tips (City of Windhoek, 2026)"
+        },
+        {
+          "url": "https://nampol.gov.na/tourist-awareness",
           "tier": 1,
-          "title": "Namibian Police Force (NAMPOL)"
+          "title": "Tourist Protection Unit (Namibian Police)"
+        },
+        {
+          "url": "https://www.windhoekcc.org.na/ambulance-fire-and-rescue-response-services/",
+          "tier": 2,
+          "title": "Ambulance, Fire and Rescue Response Services (City of Windhoek)"
         }
       ],
-      "evidence_quote": "Dial 10111 for emergency police response across Namibia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Emergency: 10 111 ... Mobile phone users may call 112 in an emergency and you will be connected to the appropriate service.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
       "status": "verified",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.uk/foreign-travel-advice/namibia/getting-help",
+          "url": "https://www.windhoekcc.org.na/wp-content/uploads/2026/02/Website-Visitor-Savety-Tips.pdf",
+          "tier": 2,
+          "title": "Visitor Safety Tips (City of Windhoek, 2026)"
+        },
+        {
+          "url": "https://nampol.gov.na/tourist-awareness",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Tourist Protection Unit (Namibian Police)"
+        },
+        {
+          "url": "https://www.windhoekcc.org.na/ambulance-fire-and-rescue-response-services/",
+          "tier": 2,
+          "title": "Ambulance, Fire and Rescue Response Services (City of Windhoek)"
         }
       ],
-      "evidence_quote": "Telephone: 10111, 999, 112 (ambulance, fire, police)",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Emergency: 10 111 ... Mobile phone users may call 112 in an emergency and you will be connected to the appropriate service.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
       "status": "verified",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.uk/foreign-travel-advice/namibia/getting-help",
+          "url": "https://www.windhoekcc.org.na/wp-content/uploads/2026/02/Website-Visitor-Savety-Tips.pdf",
+          "tier": 2,
+          "title": "Visitor Safety Tips (City of Windhoek, 2026)"
+        },
+        {
+          "url": "https://nampol.gov.na/tourist-awareness",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Tourist Protection Unit (Namibian Police)"
+        },
+        {
+          "url": "https://www.windhoekcc.org.na/ambulance-fire-and-rescue-response-services/",
+          "tier": 2,
+          "title": "Ambulance, Fire and Rescue Response Services (City of Windhoek)"
         }
       ],
-      "evidence_quote": "Telephone: 10111, 999, 112 (ambulance, fire, police)",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Emergency: 10 111 ... Mobile phone users may call 112 in an emergency and you will be connected to the appropriate service.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nampol.gov.na",
+          "url": "https://www.windhoekcc.org.na/wp-content/uploads/2026/02/Website-Visitor-Savety-Tips.pdf",
+          "tier": 2,
+          "title": "Visitor Safety Tips (City of Windhoek, 2026)"
+        },
+        {
+          "url": "https://nampol.gov.na/tourist-awareness",
           "tier": 1,
-          "title": "NAMPOL"
+          "title": "Tourist Protection Unit (Namibian Police)"
+        },
+        {
+          "url": "https://www.windhoekcc.org.na/ambulance-fire-and-rescue-response-services/",
+          "tier": 2,
+          "title": "Ambulance, Fire and Rescue Response Services (City of Windhoek)"
         }
       ],
-      "evidence_quote": "112 functions as the cellular emergency dispatch number in Namibia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Emergency: 10 111 ... Mobile phone users may call 112 in an emergency and you will be connected to the appropriate service.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+264 61 284 2111",

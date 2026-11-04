@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.kh",
+          "url": "https://www.gov.uk/foreign-travel-advice/cambodia/getting-help",
           "tier": 1,
-          "title": "National Police of Cambodia"
+          "title": "GOV.UK Cambodia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/cambodia",
+          "tier": 1,
+          "title": "Smartraveller Cambodia"
         }
       ],
-      "evidence_quote": "Dial 117 for national emergency police services across Cambodia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 117; Fire: 118; Ambulance: 119",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "119",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moh.gov.kh",
+          "url": "https://www.gov.uk/foreign-travel-advice/cambodia/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of Cambodia"
+          "title": "GOV.UK Cambodia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/cambodia",
+          "tier": 1,
+          "title": "Smartraveller Cambodia"
         }
       ],
-      "evidence_quote": "Call 119 for emergency medical dispatch and public ambulances",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 117; Fire: 118; Ambulance: 119",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "118",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.kh",
+          "url": "https://www.gov.uk/foreign-travel-advice/cambodia/getting-help",
           "tier": 1,
-          "title": "National Police of Cambodia"
+          "title": "GOV.UK Cambodia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/cambodia",
+          "tier": 1,
+          "title": "Smartraveller Cambodia"
         }
       ],
-      "evidence_quote": "Dial 118 for municipal fire brigades in Cambodia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 117; Fire: 118; Ambulance: 119",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "117",
-      "status": "verified",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.police.gov.kh",
+          "url": "https://www.gov.uk/foreign-travel-advice/cambodia/getting-help",
           "tier": 1,
-          "title": "National Police of Cambodia"
+          "title": "GOV.UK Cambodia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/cambodia",
+          "tier": 1,
+          "title": "Smartraveller Cambodia"
         }
       ],
-      "evidence_quote": "117 serves as the primary emergency contact point for critical incidents",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police: 117; Fire: 118; Ambulance: 119",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+855 31 201 2345",

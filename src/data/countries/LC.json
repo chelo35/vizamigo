@@ -97,18 +97,28 @@
   },
   "emergency": {
     "police": {
-      "value": "999",
+      "value": "999 / 911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rslpf.com",
+          "url": "https://opm.govt.lc/news/community-policing-telephone-service-update",
           "tier": 1,
-          "title": "Royal Saint Lucia Police Force (RSLPF)"
+          "title": "Community policing telephone service update (Office of the Prime Minister, Saint Lucia)"
+        },
+        {
+          "url": "https://fire.govt.lc",
+          "tier": 1,
+          "title": "Saint Lucia Fire Service"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-lucia",
+          "tier": 1,
+          "title": "Saint Lucia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency police assistance throughout Saint Lucia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "For urgent situations, please dial 999 or 911.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -116,13 +126,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.slufs.gov.lc",
+          "url": "https://opm.govt.lc/news/community-policing-telephone-service-update",
           "tier": 1,
-          "title": "Saint Lucia Fire and Ambulance Service"
+          "title": "Community policing telephone service update (Office of the Prime Minister, Saint Lucia)"
+        },
+        {
+          "url": "https://fire.govt.lc",
+          "tier": 1,
+          "title": "Saint Lucia Fire Service"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-lucia",
+          "tier": 1,
+          "title": "Saint Lucia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 911 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "For urgent situations, please dial 999 or 911.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -130,27 +150,47 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.slufs.gov.lc",
+          "url": "https://opm.govt.lc/news/community-policing-telephone-service-update",
+          "tier": 1,
+          "title": "Community policing telephone service update (Office of the Prime Minister, Saint Lucia)"
+        },
+        {
+          "url": "https://fire.govt.lc",
           "tier": 1,
           "title": "Saint Lucia Fire Service"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-lucia",
+          "tier": 1,
+          "title": "Saint Lucia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "For urgent situations, please dial 999 or 911.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "999",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rslpf.com",
+          "url": "https://opm.govt.lc/news/community-policing-telephone-service-update",
           "tier": 1,
-          "title": "Royal Saint Lucia Police Force"
+          "title": "Community policing telephone service update (Office of the Prime Minister, Saint Lucia)"
+        },
+        {
+          "url": "https://fire.govt.lc",
+          "tier": 1,
+          "title": "Saint Lucia Fire Service"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-lucia",
+          "tier": 1,
+          "title": "Saint Lucia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "999 coordinates unified emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "For urgent situations, please dial 999 or 911.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+1 758 456 3865",

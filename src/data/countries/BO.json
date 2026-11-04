@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.bo",
+          "url": "https://www.gov.uk/foreign-travel-advice/bolivia/getting-help",
           "tier": 1,
-          "title": "Policía Boliviana"
+          "title": "GOV.UK Bolivia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/Bolivia",
+          "tier": 1,
+          "title": "Smartraveller Bolivia"
         }
       ],
-      "evidence_quote": "Dial 110 for Radio Patrulla emergency police assistance across Bolivia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Police: 110; Fire: 119",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "118",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minsalud.gob.bo",
+          "url": "https://www.gov.uk/foreign-travel-advice/bolivia/getting-help",
           "tier": 1,
-          "title": "Ministerio de Salud y Deportes Bolivia"
+          "title": "GOV.UK Bolivia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/Bolivia",
+          "tier": 1,
+          "title": "Smartraveller Bolivia"
         }
       ],
-      "evidence_quote": "Call 118 for emergency medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Police: 110; Fire: 119",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "119",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policia.bo",
+          "url": "https://www.gov.uk/foreign-travel-advice/bolivia/getting-help",
           "tier": 1,
-          "title": "Dirección Nacional de Bomberos Bolivia"
+          "title": "GOV.UK Bolivia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/Bolivia",
+          "tier": 1,
+          "title": "Smartraveller Bolivia"
         }
       ],
-      "evidence_quote": "Dial 119 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Police: 110; Fire: 119",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "911",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.policia.bo",
+          "url": "https://www.gov.uk/foreign-travel-advice/bolivia/getting-help",
           "tier": 1,
-          "title": "Policía Boliviana"
+          "title": "GOV.UK Bolivia getting help"
+        },
+        {
+          "url": "https://smartraveller.gov.au/Bolivia",
+          "tier": 1,
+          "title": "Smartraveller Bolivia"
         }
       ],
-      "evidence_quote": "911 operates as an integrated dispatch number in departmental capitals",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 118; Police: 110; Fire: 119",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "110",

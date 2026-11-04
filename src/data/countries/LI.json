@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.landespolizei.li",
+          "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-bevoelkerungsschutz/sicher-informiert-im-notfall_mai-2026.pdf",
+          "tier": 2,
+          "title": "Sicher informiert im Notfall (Amt für Bevölkerungsschutz, Liechtenstein, May 2026)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/liechtenstein",
           "tier": 1,
-          "title": "Landespolizei des Fürstentums Liechtenstein"
+          "title": "Liechtenstein (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 117 for emergency national police services in Liechtenstein",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Euro-Notruf; 117 Polizei; 118 Feuerwehr; 144 Rettung",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "144",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.roteskreuz.li",
+          "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-bevoelkerungsschutz/sicher-informiert-im-notfall_mai-2026.pdf",
+          "tier": 2,
+          "title": "Sicher informiert im Notfall (Amt für Bevölkerungsschutz, Liechtenstein, May 2026)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/liechtenstein",
           "tier": 1,
-          "title": "Liechtensteinisches Rotes Kreuz"
+          "title": "Liechtenstein (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 144 for emergency ambulance and medical rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Euro-Notruf; 117 Polizei; 118 Feuerwehr; 144 Rettung",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "118",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.feuerwehr.li",
+          "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-bevoelkerungsschutz/sicher-informiert-im-notfall_mai-2026.pdf",
+          "tier": 2,
+          "title": "Sicher informiert im Notfall (Amt für Bevölkerungsschutz, Liechtenstein, May 2026)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/liechtenstein",
           "tier": 1,
-          "title": "Feuerwehren im Fürstentum Liechtenstein"
+          "title": "Liechtenstein (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 118 for fire brigades and technical rescue across Liechtenstein",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Euro-Notruf; 117 Polizei; 118 Feuerwehr; 144 Rettung",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.regierung.li",
+          "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-bevoelkerungsschutz/sicher-informiert-im-notfall_mai-2026.pdf",
+          "tier": 2,
+          "title": "Sicher informiert im Notfall (Amt für Bevölkerungsschutz, Liechtenstein, May 2026)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/liechtenstein",
           "tier": 1,
-          "title": "Regierung Liechtenstein"
+          "title": "Liechtenstein (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "112 operates as the universal European emergency number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112 Euro-Notruf; 117 Polizei; 118 Feuerwehr; 144 Rettung",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

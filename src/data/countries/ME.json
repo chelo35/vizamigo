@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.up.gov.me",
+          "url": "https://www.smartraveller.gov.au/destinations/montenegro",
           "tier": 1,
-          "title": "Police Administration of Montenegro"
+          "title": "Montenegro (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/montenegro",
+          "tier": 1,
+          "title": "Montenegro (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Emergency police telephone number across Montenegro is 122",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies: Call 112. Fire and rescue: Call 123. Medical: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "124",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.zhmp.me",
+          "url": "https://www.smartraveller.gov.au/destinations/montenegro",
           "tier": 1,
-          "title": "Institute for Emergency Medical Assistance Montenegro"
+          "title": "Montenegro (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/montenegro",
+          "tier": 1,
+          "title": "Montenegro (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue dispatch operates via 124",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies: Call 112. Fire and rescue: Call 123. Medical: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "123",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mup.gov.me",
+          "url": "https://www.smartraveller.gov.au/destinations/montenegro",
           "tier": 1,
-          "title": "Ministry of Interior Directorate for Protection and Rescue"
+          "title": "Montenegro (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/montenegro",
+          "tier": 1,
+          "title": "Montenegro (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Firefighting emergency services are contacted directly on 123",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies: Call 112. Fire and rescue: Call 123. Medical: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mup.gov.me",
+          "url": "https://www.smartraveller.gov.au/destinations/montenegro",
           "tier": 1,
-          "title": "MUP Montenegro Operational Communication Center 112"
+          "title": "Montenegro (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/montenegro",
+          "tier": 1,
+          "title": "Montenegro (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "European emergency number 112 is fully operational in Montenegro 24/7",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "All emergencies: Call 112. Fire and rescue: Call 123. Medical: Call 124. Police: Call 122.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1300",

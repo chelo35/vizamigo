@@ -105,13 +105,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.bd",
+          "url": "https://www.gov.uk/foreign-travel-advice/bangladesh/getting-help",
           "tier": 1,
-          "title": "Bangladesh Police"
+          "title": "GOV.UK Bangladesh getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/bangladesh",
+          "tier": 1,
+          "title": "Smartraveller Bangladesh"
         }
       ],
-      "evidence_quote": "Dial 999 for national emergency police services across Bangladesh",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -119,13 +124,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://dghs.gov.bd",
+          "url": "https://www.gov.uk/foreign-travel-advice/bangladesh/getting-help",
           "tier": 1,
-          "title": "Directorate General of Health Services Bangladesh"
+          "title": "GOV.UK Bangladesh getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/bangladesh",
+          "tier": 1,
+          "title": "Smartraveller Bangladesh"
         }
       ],
-      "evidence_quote": "Call 999 for national emergency ambulance and medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -133,13 +143,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://fireservice.gov.bd",
+          "url": "https://www.gov.uk/foreign-travel-advice/bangladesh/getting-help",
           "tier": 1,
-          "title": "Bangladesh Fire Service and Civil Defence"
+          "title": "GOV.UK Bangladesh getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/bangladesh",
+          "tier": 1,
+          "title": "Smartraveller Bangladesh"
         }
       ],
-      "evidence_quote": "Dial 999 or 102 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999",
@@ -147,13 +162,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.bd",
+          "url": "https://www.gov.uk/foreign-travel-advice/bangladesh/getting-help",
           "tier": 1,
-          "title": "National Emergency Service 999"
+          "title": "GOV.UK Bangladesh getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/asia/bangladesh",
+          "tier": 1,
+          "title": "Smartraveller Bangladesh"
         }
       ],
-      "evidence_quote": "999 is the central unified national emergency dispatch center",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+880 1320-001299",

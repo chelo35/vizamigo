@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.politsei.ee",
+          "url": "https://www.112.ee/en/emergency-phone-number-112",
+          "tier": 2,
+          "title": "Estonian Emergency Response Centre – 112"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/estonia/getting-help",
           "tier": 1,
-          "title": "Police and Border Guard Board of Estonia (PPA)"
+          "title": "GOV.UK Estonia getting help"
         }
       ],
-      "evidence_quote": "Dial 112 for emergency police assistance across all parts of Estonia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "there is one emergency phone number (112) in use for calling the ambulance, police and rescue workers",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.ee",
+          "url": "https://www.112.ee/en/emergency-phone-number-112",
+          "tier": 2,
+          "title": "Estonian Emergency Response Centre – 112"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/estonia/getting-help",
           "tier": 1,
-          "title": "Emergency Response Centre of Estonia (Häirekeskus)"
+          "title": "GOV.UK Estonia getting help"
         }
       ],
-      "evidence_quote": "Call 112 for all medical emergencies and ambulance dispatch in Estonia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "there is one emergency phone number (112) in use for calling the ambulance, police and rescue workers",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rescue.ee",
+          "url": "https://www.112.ee/en/emergency-phone-number-112",
+          "tier": 2,
+          "title": "Estonian Emergency Response Centre – 112"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/estonia/getting-help",
           "tier": 1,
-          "title": "Estonian Rescue Board (Päästeamet)"
+          "title": "GOV.UK Estonia getting help"
         }
       ],
-      "evidence_quote": "Call 112 for emergency rescue and fire services across Estonia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "there is one emergency phone number (112) in use for calling the ambulance, police and rescue workers",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.ee",
+          "url": "https://www.112.ee/en/emergency-phone-number-112",
+          "tier": 2,
+          "title": "Estonian Emergency Response Centre – 112"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/estonia/getting-help",
           "tier": 1,
-          "title": "Emergency Response Centre of Estonia (Häirekeskus)"
+          "title": "GOV.UK Estonia getting help"
         }
       ],
-      "evidence_quote": "112 is the single unified emergency dispatch number handling police, medical, and fire",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "there is one emergency phone number (112) in use for calling the ambulance, police and rescue workers",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

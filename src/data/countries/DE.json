@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.polizei.de",
+          "url": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
           "tier": 1,
-          "title": "Polizei Deutschland"
+          "title": "GOV.UK Germany getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/germany",
+          "tier": 1,
+          "title": "Smartraveller Germany"
         }
       ],
-      "evidence_quote": "Polizeinotruf 110 rund um die Uhr bundesweit gebührenfrei",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 112; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bbk.bund.de",
+          "url": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
           "tier": 1,
-          "title": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK)"
+          "title": "GOV.UK Germany getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/germany",
+          "tier": 1,
+          "title": "Smartraveller Germany"
         }
       ],
-      "evidence_quote": "Notruf 112 für Feuerwehr und Rettungsdienst europaweit",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 112; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.feuerwehrverband.de",
+          "url": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
           "tier": 1,
-          "title": "Deutscher Feuerwehrverband"
+          "title": "GOV.UK Germany getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/germany",
+          "tier": 1,
+          "title": "Smartraveller Germany"
         }
       ],
-      "evidence_quote": "Feuerwehrnotruf 112 alarmiert die Einsatzleitstelle",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 112; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bmi.bund.de",
+          "url": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
           "tier": 1,
-          "title": "Bundesministerium des Innern: Euronotruf 112"
+          "title": "GOV.UK Germany getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/europe/germany",
+          "tier": 1,
+          "title": "Smartraveller Germany"
         }
       ],
-      "evidence_quote": "112 ist der europaweite einheitliche Notruf für lebensbedrohliche Lagen",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "Ambulance: 112; Fire: 112; Police: 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

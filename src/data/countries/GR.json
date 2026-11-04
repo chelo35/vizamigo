@@ -103,27 +103,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.astynomia.gr",
+          "url": "https://visitgreece.gr/before-travelling-to-greece/health-safety/",
+          "tier": 2,
+          "title": "Visit Greece (Greek National Tourism Organisation)"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
           "tier": 1,
-          "title": "Hellenic Police (Ελληνική Αστυνομία - 100)"
+          "title": "GOV.UK Greece getting help"
         }
       ],
-      "evidence_quote": "Dial 100 for immediate police emergency response throughout Greece",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "FIRST AID NATIONAL CENTER (Ambulances): 166; EUROPEAN EMERGENCY NUMBER: 112; POLICE: 100; FIRE AUTHORITY: 199",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "166 (EKAB)",
+      "value": "166",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.ekab.gr",
+          "url": "https://visitgreece.gr/before-travelling-to-greece/health-safety/",
+          "tier": 2,
+          "title": "Visit Greece (Greek National Tourism Organisation)"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
           "tier": 1,
-          "title": "National Centre for Emergency Care (EKAB - 166)"
+          "title": "GOV.UK Greece getting help"
         }
       ],
-      "evidence_quote": "Dial 166 for national emergency ambulance and urgent medical dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "FIRST AID NATIONAL CENTER (Ambulances): 166; EUROPEAN EMERGENCY NUMBER: 112; POLICE: 100; FIRE AUTHORITY: 199",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "199",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fireservice.gr",
+          "url": "https://visitgreece.gr/before-travelling-to-greece/health-safety/",
+          "tier": 2,
+          "title": "Visit Greece (Greek National Tourism Organisation)"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
           "tier": 1,
-          "title": "Hellenic Fire Service (Πυροσβεστικό Σώμα - 199)"
+          "title": "GOV.UK Greece getting help"
         }
       ],
-      "evidence_quote": "Dial 199 to report fires, forest fire alerts, and rescue emergencies",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "FIRST AID NATIONAL CENTER (Ambulances): 166; EUROPEAN EMERGENCY NUMBER: 112; POLICE: 100; FIRE AUTHORITY: 199",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://civilprotection.gov.gr/112",
+          "url": "https://visitgreece.gr/before-travelling-to-greece/health-safety/",
+          "tier": 2,
+          "title": "Visit Greece (Greek National Tourism Organisation)"
+        },
+        {
+          "url": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
           "tier": 1,
-          "title": "General Secretariat for Civil Protection: 112 Greece"
+          "title": "GOV.UK Greece getting help"
         }
       ],
-      "evidence_quote": "112 is the European emergency number and natural disaster warning system in Greece",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "FIRST AID NATIONAL CENTER (Ambulances): 166; EUROPEAN EMERGENCY NUMBER: 112; POLICE: 100; FIRE AUTHORITY: 199",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1571",

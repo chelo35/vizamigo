@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.argentina.gob.ar/seguridad",
+          "url": "https://www.gov.uk/foreign-travel-advice/argentina/getting-help",
           "tier": 1,
-          "title": "Ministry of Security Argentina"
+          "title": "GOV.UK Argentina getting help"
+        },
+        {
+          "url": "https://exteriores.gob.es/Consulados/buenosaires/es/ViajarA/Paginas/Servicios-de-emergencia-locales.aspx",
+          "tier": 2,
+          "title": "Spanish Consulate Buenos Aires – Servicios de emergencia locales"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/en/article/emergency-numbers",
+          "tier": 2,
+          "title": "Buenos Aires City Government – Emergency numbers"
         }
       ],
-      "evidence_quote": "Emergency police dispatch throughout Argentine provinces operates on 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 107; Fire: 100; Police: 911 or 101",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "107",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://buenosaires.gob.ar/salud/same",
+          "url": "https://www.gov.uk/foreign-travel-advice/argentina/getting-help",
           "tier": 1,
-          "title": "SAME Emergency Medical Service Buenos Aires"
+          "title": "GOV.UK Argentina getting help"
+        },
+        {
+          "url": "https://exteriores.gob.es/Consulados/buenosaires/es/ViajarA/Paginas/Servicios-de-emergencia-locales.aspx",
+          "tier": 2,
+          "title": "Spanish Consulate Buenos Aires – Servicios de emergencia locales"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/en/article/emergency-numbers",
+          "tier": 2,
+          "title": "Buenos Aires City Government – Emergency numbers"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance response (SAME) is dialed via 107",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 107; Fire: 100; Police: 911 or 101",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "100",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.argentina.gob.ar/seguridad",
+          "url": "https://www.gov.uk/foreign-travel-advice/argentina/getting-help",
           "tier": 1,
-          "title": "Argentine Fire Rescue"
+          "title": "GOV.UK Argentina getting help"
+        },
+        {
+          "url": "https://exteriores.gob.es/Consulados/buenosaires/es/ViajarA/Paginas/Servicios-de-emergencia-locales.aspx",
+          "tier": 2,
+          "title": "Spanish Consulate Buenos Aires – Servicios de emergencia locales"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/en/article/emergency-numbers",
+          "tier": 2,
+          "title": "Buenos Aires City Government – Emergency numbers"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is contacted directly on hotline 100",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 107; Fire: 100; Police: 911 or 101",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.argentina.gob.ar",
+          "url": "https://www.gov.uk/foreign-travel-advice/argentina/getting-help",
           "tier": 1,
-          "title": "Government of Argentina 911"
+          "title": "GOV.UK Argentina getting help"
+        },
+        {
+          "url": "https://exteriores.gob.es/Consulados/buenosaires/es/ViajarA/Paginas/Servicios-de-emergencia-locales.aspx",
+          "tier": 2,
+          "title": "Spanish Consulate Buenos Aires – Servicios de emergencia locales"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/en/article/emergency-numbers",
+          "tier": 2,
+          "title": "Buenos Aires City Government – Emergency numbers"
         }
       ],
-      "evidence_quote": "911 is the consolidated national emergency response line across Argentina",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 107; Fire: 100; Police: 911 or 101",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "0800-999-5000",

@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://islamabadpolice.gov.pk",
+          "url": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
           "tier": 1,
-          "title": "Islamabad Police - Emergency 15"
+          "title": "Pakistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/pakistan",
+          "tier": 1,
+          "title": "Pakistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 15 for emergency police assistance throughout Pakistan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 1122 (ambulance, fire); Police: 15",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "1122",
@@ -118,41 +123,56 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://rescue.gov.pk",
+          "url": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
           "tier": 1,
-          "title": "Punjab Emergency Service Rescue 1122"
+          "title": "Pakistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/pakistan",
+          "tier": 1,
+          "title": "Pakistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 1122 for Rescue 1122 emergency ambulance and paramedic dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 1122 (ambulance, fire); Police: 15",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "16",
+      "value": "1122 / 16",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://rescue.gov.pk",
+          "url": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
           "tier": 1,
-          "title": "Emergency Rescue 1122 Fire Service"
+          "title": "Pakistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/pakistan",
+          "tier": 1,
+          "title": "Pakistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 16 or 1122 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 1122 (ambulance, fire); Police: 15",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "1122",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://rescue.gov.pk",
+          "url": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
           "tier": 1,
-          "title": "Rescue 1122 Emergency Operations"
+          "title": "Pakistan - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/pakistan",
+          "tier": 1,
+          "title": "Pakistan (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "1122 is the integrated national emergency response number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 1122 (ambulance, fire); Police: 15",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+92 51 920 4455",

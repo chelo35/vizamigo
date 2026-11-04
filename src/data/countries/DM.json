@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.gov.dm",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominica/getting-help",
           "tier": 1,
-          "title": "Commonwealth of Dominica Police Force (CDPF)"
+          "title": "GOV.UK Dominica getting help"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Dominica.html",
+          "tier": 1,
+          "title": "US State Dept – Dominica"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency police assistance throughout Dominica",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://dominica.gov.dm",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominica/getting-help",
           "tier": 1,
-          "title": "Dominica China Friendship Hospital Emergency Medical Services"
+          "title": "GOV.UK Dominica getting help"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Dominica.html",
+          "tier": 1,
+          "title": "US State Dept – Dominica"
         }
       ],
-      "evidence_quote": "Call 999 for emergency medical dispatch and hospital ambulance services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://dominica.gov.dm",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominica/getting-help",
           "tier": 1,
-          "title": "Dominica Fire and Ambulance Services"
+          "title": "GOV.UK Dominica getting help"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Dominica.html",
+          "tier": 1,
+          "title": "US State Dept – Dominica"
         }
       ],
-      "evidence_quote": "Dial 999 for fire and rescue emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://dominica.gov.dm",
+          "url": "https://www.gov.uk/foreign-travel-advice/dominica/getting-help",
           "tier": 1,
-          "title": "Office of Disaster Management (ODM) Dominica"
+          "title": "GOV.UK Dominica getting help"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Dominica.html",
+          "tier": 1,
+          "title": "US State Dept – Dominica"
         }
       ],
-      "evidence_quote": "999 coordinates unified emergency dispatch across the island",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+1 767 448-2222",

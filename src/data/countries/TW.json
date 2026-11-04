@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.npa.gov.tw",
+          "url": "https://www.smartraveller.gov.au/destinations/taiwan",
           "tier": 1,
-          "title": "National Police Agency Taiwan"
+          "title": "Taiwan (Smartraveller)"
+        },
+        {
+          "url": "https://web-archive-2022.ait.org.tw/u-s-citizen-services/local-resources-of-u-s-citizens/emergency-assistance/index.html",
+          "tier": 2,
+          "title": "Emergency Assistance (American Institute in Taiwan, archived)"
+        },
+        {
+          "url": "https://tfc-taiwan.org.tw/?p=108722",
+          "tier": 2,
+          "title": "Taiwan FactCheck Center (citing NFA and NPA)"
         }
       ],
-      "evidence_quote": "Dial 110 for emergency police response throughout Taiwan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire: Call 119. Medical emergencies: Call 119. Police: Call 110",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "119",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nfa.gov.tw",
+          "url": "https://www.smartraveller.gov.au/destinations/taiwan",
           "tier": 1,
-          "title": "National Fire Agency Taiwan"
+          "title": "Taiwan (Smartraveller)"
+        },
+        {
+          "url": "https://web-archive-2022.ait.org.tw/u-s-citizen-services/local-resources-of-u-s-citizens/emergency-assistance/index.html",
+          "tier": 2,
+          "title": "Emergency Assistance (American Institute in Taiwan, archived)"
+        },
+        {
+          "url": "https://tfc-taiwan.org.tw/?p=108722",
+          "tier": 2,
+          "title": "Taiwan FactCheck Center (citing NFA and NPA)"
         }
       ],
-      "evidence_quote": "Call 119 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire: Call 119. Medical emergencies: Call 119. Police: Call 110",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "119",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nfa.gov.tw",
+          "url": "https://www.smartraveller.gov.au/destinations/taiwan",
           "tier": 1,
-          "title": "National Fire Agency"
+          "title": "Taiwan (Smartraveller)"
+        },
+        {
+          "url": "https://web-archive-2022.ait.org.tw/u-s-citizen-services/local-resources-of-u-s-citizens/emergency-assistance/index.html",
+          "tier": 2,
+          "title": "Emergency Assistance (American Institute in Taiwan, archived)"
+        },
+        {
+          "url": "https://tfc-taiwan.org.tw/?p=108722",
+          "tier": 2,
+          "title": "Taiwan FactCheck Center (citing NFA and NPA)"
         }
       ],
-      "evidence_quote": "Dial 119 for fire and disaster rescue operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire: Call 119. Medical emergencies: Call 119. Police: Call 110",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.npa.gov.tw",
+          "url": "https://www.smartraveller.gov.au/destinations/taiwan",
           "tier": 1,
-          "title": "National Police Agency"
+          "title": "Taiwan (Smartraveller)"
+        },
+        {
+          "url": "https://web-archive-2022.ait.org.tw/u-s-citizen-services/local-resources-of-u-s-citizens/emergency-assistance/index.html",
+          "tier": 2,
+          "title": "Emergency Assistance (American Institute in Taiwan, archived)"
+        },
+        {
+          "url": "https://tfc-taiwan.org.tw/?p=108722",
+          "tier": 2,
+          "title": "Taiwan FactCheck Center (citing NFA and NPA)"
         }
       ],
-      "evidence_quote": "112 serves as the international unified mobile emergency redirect number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire: Call 119. Medical emergencies: Call 119. Police: Call 110",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "0800-011-765",

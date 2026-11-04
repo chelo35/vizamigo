@@ -104,13 +104,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.kn",
+          "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis/getting-help",
           "tier": 1,
-          "title": "Royal St. Christopher and Nevis Police Force (RSCNPF)"
+          "title": "GOV.UK St Kitts and Nevis getting help"
+        },
+        {
+          "url": "https://www.sknis.gov.kn/?p=55926",
+          "tier": 1,
+          "title": "SKNIS (Government information service)"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintKittsandNevis.html",
+          "tier": 1,
+          "title": "US State Dept – St Kitts and Nevis"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency police assistance across St. Kitts and Nevis",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 911; Fire: 333; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -118,13 +128,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.kn",
+          "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis/getting-help",
           "tier": 1,
-          "title": "Joseph N. France General Hospital Emergency Services"
+          "title": "GOV.UK St Kitts and Nevis getting help"
+        },
+        {
+          "url": "https://www.sknis.gov.kn/?p=55926",
+          "tier": 1,
+          "title": "SKNIS (Government information service)"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintKittsandNevis.html",
+          "tier": 1,
+          "title": "US State Dept – St Kitts and Nevis"
         }
       ],
-      "evidence_quote": "Call 911 or +1 869 465-2551 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 911; Fire: 333; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "333",
@@ -132,13 +152,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://gov.kn",
+          "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis/getting-help",
           "tier": 1,
-          "title": "St. Kitts and Nevis Fire and Rescue Services"
+          "title": "GOV.UK St Kitts and Nevis getting help"
+        },
+        {
+          "url": "https://www.sknis.gov.kn/?p=55926",
+          "tier": 1,
+          "title": "SKNIS (Government information service)"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintKittsandNevis.html",
+          "tier": 1,
+          "title": "US State Dept – St Kitts and Nevis"
         }
       ],
-      "evidence_quote": "Dial 333 or 911 for emergency fire and rescue operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 911; Fire: 333; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -146,13 +176,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://police.kn",
+          "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis/getting-help",
           "tier": 1,
-          "title": "RSCNPF Central Command"
+          "title": "GOV.UK St Kitts and Nevis getting help"
+        },
+        {
+          "url": "https://www.sknis.gov.kn/?p=55926",
+          "tier": 1,
+          "title": "SKNIS (Government information service)"
+        },
+        {
+          "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintKittsandNevis.html",
+          "tier": 1,
+          "title": "US State Dept – St Kitts and Nevis"
         }
       ],
-      "evidence_quote": "911 serves as the central national emergency response number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 911; Fire: 333; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+1 869 465-2241",

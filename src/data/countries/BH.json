@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policemc.gov.bh",
+          "url": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
           "tier": 1,
-          "title": "Ministry of Interior of Bahrain"
+          "title": "GOV.UK Bahrain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/bahrain",
+          "tier": 1,
+          "title": "Smartraveller Bahrain"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency police assistance throughout the Kingdom of Bahrain",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.bh",
+          "url": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
           "tier": 1,
-          "title": "Ministry of Health of Bahrain"
+          "title": "GOV.UK Bahrain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/bahrain",
+          "tier": 1,
+          "title": "Smartraveller Bahrain"
         }
       ],
-      "evidence_quote": "Call 999 for emergency medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -130,27 +140,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.civildefence.gov.bh",
+          "url": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
           "tier": 1,
-          "title": "General Directorate of Civil Defence"
+          "title": "GOV.UK Bahrain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/bahrain",
+          "tier": 1,
+          "title": "Smartraveller Bahrain"
         }
       ],
-      "evidence_quote": "Dial 999 for emergency civil defence and fire rescue",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bahrain.bh",
+          "url": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
           "tier": 1,
-          "title": "Bahrain National Portal"
+          "title": "GOV.UK Bahrain getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/middle-east/bahrain",
+          "tier": 1,
+          "title": "Smartraveller Bahrain"
         }
       ],
-      "evidence_quote": "112 functions as the secondary mobile emergency number alongside 999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+973 1755 0840",

@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.gov.tr",
-          "tier": 1,
-          "title": "T.C. İçişleri Bakanlığı 112 Acil Çağrı Merkezi"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "112 Acil Çağrı Merkezi tüm acil numaraları (Emniyet, Jandarma vb.) tek çatı altında toplar",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Turkey: 112 or 911 or 153 (911 connects to 112)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.gov.tr",
-          "tier": 1,
-          "title": "T.C. Sağlık Bakanlığı Acil Sağlık Hizmetleri"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Ambulans ve acil sağlık yardımı için Türkiye genelinde 112 aranır",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Turkey: 112 or 911 or 153 (911 connects to 112)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -131,13 +131,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.gov.tr",
-          "tier": 1,
-          "title": "T.C. İçişleri Bakanlığı İtfaiye Hizmetleri"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "İtfaiye ve yangın ihbarları 112 Acil Çağrı Merkezi üzerinden yönlendirilir",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Turkey: 112 or 911 or 153 (911 connects to 112)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -146,12 +146,12 @@
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
-          "tier": 3,
-          "title": "Wikipedia: List of emergency telephone numbers"
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
       "evidence_quote": "Turkey: 112 or 911 or 153 (911 connects to 112)",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+90 212 555 56 78",

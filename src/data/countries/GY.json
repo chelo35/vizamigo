@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://guyanapoliceforce.gy",
+          "url": "https://www.gov.uk/foreign-travel-advice/guyana/getting-help",
           "tier": 1,
-          "title": "Guyana Police Force (GPF)"
+          "title": "GOV.UK Guyana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guyana",
+          "tier": 1,
+          "title": "Smartraveller Guyana"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency police response throughout Guyana",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 913; Fire: 912; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "913",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.gy",
+          "url": "https://www.gov.uk/foreign-travel-advice/guyana/getting-help",
           "tier": 1,
-          "title": "Georgetown Public Hospital Corporation (GPHC) Emergency Medical Services"
+          "title": "GOV.UK Guyana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guyana",
+          "tier": 1,
+          "title": "Smartraveller Guyana"
         }
       ],
-      "evidence_quote": "Call 913 for emergency ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 913; Fire: 912; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "912",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://guyanafireservice.gov.gy",
+          "url": "https://www.gov.uk/foreign-travel-advice/guyana/getting-help",
           "tier": 1,
-          "title": "Guyana Fire Service"
+          "title": "GOV.UK Guyana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guyana",
+          "tier": 1,
+          "title": "Smartraveller Guyana"
         }
       ],
-      "evidence_quote": "Dial 912 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 913; Fire: 912; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "911",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://guyanapoliceforce.gy",
+          "url": "https://www.gov.uk/foreign-travel-advice/guyana/getting-help",
           "tier": 1,
-          "title": "Guyana Police Force Central Operations"
+          "title": "GOV.UK Guyana getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/guyana",
+          "tier": 1,
+          "title": "Smartraveller Guyana"
         }
       ],
-      "evidence_quote": "911 is the central emergency operations number in Guyana",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 913; Fire: 912; Police: 911",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+592 225-6411",

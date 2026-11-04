@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minv.sk",
-          "tier": 1,
-          "title": "Ministry of Interior of the Slovak Republic"
+          "url": "https://www.slovensko.sk/sk/zivotne-situacie/zivotna-situacia/_sluzby-poskytovane-prostrednic/",
+          "tier": 2,
+          "title": "Tiesňové volanie (slovensko.sk, Central Public Administration Portal)"
+        },
+        {
+          "url": "https://www.visitbratislava.com/informations/health-and-security/",
+          "tier": 2,
+          "title": "Health and security (Visit Bratislava)"
         }
       ],
-      "evidence_quote": "Dial 158 for emergency police intervention across the Slovak Republic",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: jednotné číslo tiesňového volania v EÚ; 150 - hasiči a záchranári; 155 - záchranná zdravotná služba; 158 - polícia",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "155",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.health.gov.sk",
-          "tier": 1,
-          "title": "Ministry of Health of the Slovak Republic"
+          "url": "https://www.slovensko.sk/sk/zivotne-situacie/zivotna-situacia/_sluzby-poskytovane-prostrednic/",
+          "tier": 2,
+          "title": "Tiesňové volanie (slovensko.sk, Central Public Administration Portal)"
+        },
+        {
+          "url": "https://www.visitbratislava.com/informations/health-and-security/",
+          "tier": 2,
+          "title": "Health and security (Visit Bratislava)"
         }
       ],
-      "evidence_quote": "Dial 155 for emergency medical rescue and ambulance services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: jednotné číslo tiesňového volania v EÚ; 150 - hasiči a záchranári; 155 - záchranná zdravotná služba; 158 - polícia",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "150",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minv.sk",
-          "tier": 1,
-          "title": "Ministry of Interior of the Slovak Republic"
+          "url": "https://www.slovensko.sk/sk/zivotne-situacie/zivotna-situacia/_sluzby-poskytovane-prostrednic/",
+          "tier": 2,
+          "title": "Tiesňové volanie (slovensko.sk, Central Public Administration Portal)"
+        },
+        {
+          "url": "https://www.visitbratislava.com/informations/health-and-security/",
+          "tier": 2,
+          "title": "Health and security (Visit Bratislava)"
         }
       ],
-      "evidence_quote": "Dial 150 for fire brigades and technical rescue across Slovakia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: jednotné číslo tiesňového volania v EÚ; 150 - hasiči a záchranári; 155 - záchranná zdravotná služba; 158 - polícia",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.minv.sk",
-          "tier": 1,
-          "title": "Ministry of Interior Emergency Coordination"
+          "url": "https://www.slovensko.sk/sk/zivotne-situacie/zivotna-situacia/_sluzby-poskytovane-prostrednic/",
+          "tier": 2,
+          "title": "Tiesňové volanie (slovensko.sk, Central Public Administration Portal)"
+        },
+        {
+          "url": "https://www.visitbratislava.com/informations/health-and-security/",
+          "tier": 2,
+          "title": "Health and security (Visit Bratislava)"
         }
       ],
-      "evidence_quote": "Unified European emergency number 112 connects callers to all Slovak rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: jednotné číslo tiesňového volania v EÚ; 150 - hasiči a záchranári; 155 - záchranná zdravotná služba; 158 - polícia",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

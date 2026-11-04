@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.seguridadpublica.go.cr",
+          "url": "https://www.gov.uk/foreign-travel-advice/costa-rica/getting-help",
           "tier": 1,
-          "title": "Ministry of Public Security Costa Rica"
+          "title": "GOV.UK Costa Rica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/costa-rica",
+          "tier": 1,
+          "title": "Smartraveller Costa Rica"
         }
       ],
-      "evidence_quote": "Emergency police dispatch connects through the nationwide 9-1-1 service",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://cruzroja.or.cr",
+          "url": "https://www.gov.uk/foreign-travel-advice/costa-rica/getting-help",
           "tier": 1,
-          "title": "Cruz Roja Costarricense (Costa Rican Red Cross)"
+          "title": "GOV.UK Costa Rica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/costa-rica",
+          "tier": 1,
+          "title": "Smartraveller Costa Rica"
         }
       ],
-      "evidence_quote": "Emergency ambulance requests are coordinated directly through 9-1-1",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bomberos.go.cr",
+          "url": "https://www.gov.uk/foreign-travel-advice/costa-rica/getting-help",
           "tier": 1,
-          "title": "Benemerito Cuerpo de Bomberos de Costa Rica"
+          "title": "GOV.UK Costa Rica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/costa-rica",
+          "tier": 1,
+          "title": "Smartraveller Costa Rica"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is integrated into central 9-1-1",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.911.go.cr",
+          "url": "https://www.gov.uk/foreign-travel-advice/costa-rica/getting-help",
           "tier": 1,
-          "title": "Sistema de Emergencias 9-1-1 Costa Rica"
+          "title": "GOV.UK Costa Rica getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/americas/costa-rica",
+          "tier": 1,
+          "title": "Smartraveller Costa Rica"
         }
       ],
-      "evidence_quote": "9-1-1 is the central emergency number for all public safety and rescue calls in Costa Rica",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "2226-1026",

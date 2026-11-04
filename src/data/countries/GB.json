@@ -97,32 +97,32 @@
   },
   "emergency": {
     "police": {
-      "value": "999 / 101",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.uk",
-          "tier": 1,
-          "title": "Police.uk: Emergency Services"
+          "url": "https://www.eastamb.nhs.uk/your-service/using-999",
+          "tier": 2,
+          "title": "East of England Ambulance Service NHS Trust – Using 999"
         }
       ],
-      "evidence_quote": "Call 999 for genuine emergencies and 101 for non-emergency police assistance",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "If someone is in immediate danger, call 999 or 112. ... it's not life-threatening ... call 111.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "999 / 111",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
-          "tier": 1,
-          "title": "NHS England: When to call 999"
+          "url": "https://www.eastamb.nhs.uk/your-service/using-999",
+          "tier": 2,
+          "title": "East of England Ambulance Service NHS Trust – Using 999"
         }
       ],
-      "evidence_quote": "Call 999 for medical emergencies and NHS 111 for urgent medical advice",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "If someone is in immediate danger, call 999 or 112. ... it's not life-threatening ... call 111.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -130,13 +130,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.uk/fire-prevention-safety-and-wellbeing",
-          "tier": 1,
-          "title": "GOV.UK: Fire and Rescue Services"
+          "url": "https://www.eastamb.nhs.uk/your-service/using-999",
+          "tier": 2,
+          "title": "East of England Ambulance Service NHS Trust – Using 999"
         }
       ],
-      "evidence_quote": "Dial 999 to reach the Fire and Rescue Service in life-threatening emergencies",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "If someone is in immediate danger, call 999 or 112. ... it's not life-threatening ... call 111.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "999 / 112",
@@ -144,13 +144,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.uk",
-          "tier": 1,
-          "title": "GOV.UK Emergency Services (999 and 112)"
+          "url": "https://www.eastamb.nhs.uk/your-service/using-999",
+          "tier": 2,
+          "title": "East of England Ambulance Service NHS Trust – Using 999"
         }
       ],
-      "evidence_quote": "Both 999 and 112 connect to UK emergency service dispatchers free of charge",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "If someone is in immediate danger, call 999 or 112. ... it's not life-threatening ... call 111.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

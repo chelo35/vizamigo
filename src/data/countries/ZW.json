@@ -98,60 +98,100 @@
   },
   "emergency": {
     "police": {
-      "value": "995",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.zrp.gov.zw",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zimbabwe",
           "tier": 1,
-          "title": "Zimbabwe Republic Police (ZRP)"
+          "title": "Zimbabwe (travel.gc.ca)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/zimbabwe",
+          "tier": 1,
+          "title": "Zimbabwe (Smartraveller)"
+        },
+        {
+          "url": "https://trekmedics.org/database/zimbabwe-2/",
+          "tier": 2,
+          "title": "Zimbabwe (TrekMedics database)"
         }
       ],
-      "evidence_quote": "Dial 995 for emergency police services across Zimbabwe",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "In case of emergency, dial 999.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "994",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mohcc.gov.zw",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zimbabwe",
           "tier": 1,
-          "title": "Ministry of Health and Child Care of Zimbabwe"
+          "title": "Zimbabwe (travel.gc.ca)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/zimbabwe",
+          "tier": 1,
+          "title": "Zimbabwe (Smartraveller)"
+        },
+        {
+          "url": "https://trekmedics.org/database/zimbabwe-2/",
+          "tier": 2,
+          "title": "Zimbabwe (TrekMedics database)"
         }
       ],
-      "evidence_quote": "Call 994 or private EMS (MARS) for emergency medical ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "In case of emergency, dial 999.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "993",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hararecity.co.zw",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zimbabwe",
           "tier": 1,
-          "title": "Harare Fire Brigade"
+          "title": "Zimbabwe (travel.gc.ca)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/zimbabwe",
+          "tier": 1,
+          "title": "Zimbabwe (Smartraveller)"
+        },
+        {
+          "url": "https://trekmedics.org/database/zimbabwe-2/",
+          "tier": 2,
+          "title": "Zimbabwe (TrekMedics database)"
         }
       ],
-      "evidence_quote": "Dial 993 for municipal fire and technical rescue brigades",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "In case of emergency, dial 999.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.zrp.gov.zw",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/zimbabwe",
           "tier": 1,
-          "title": "Zimbabwe Republic Police"
+          "title": "Zimbabwe (travel.gc.ca)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/destinations/africa/zimbabwe",
+          "tier": 1,
+          "title": "Zimbabwe (Smartraveller)"
+        },
+        {
+          "url": "https://trekmedics.org/database/zimbabwe-2/",
+          "tier": 2,
+          "title": "Zimbabwe (TrekMedics database)"
         }
       ],
-      "evidence_quote": "112 serves as the primary cellular emergency dispatch number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "In case of emergency, dial 999.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+263 83 284 4293",

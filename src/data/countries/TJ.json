@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mvd.tj",
+          "url": "https://smartraveller.gov.au/destinations/asia/tajikistan",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of the Republic of Tajikistan"
+          "title": "Tajikistan (Smartraveller)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/tadjikistan/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "Tadjikistan - Contacts utiles (France Diplomatie)"
         }
       ],
-      "evidence_quote": "Dial 102 for emergency police response throughout Tajikistan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 01 (101 from a mobile) ... Medical: Call 03 (103 from a mobile) ... Police: Call 02 (102 from a mobile)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moh.tj",
+          "url": "https://smartraveller.gov.au/destinations/asia/tajikistan",
           "tier": 1,
-          "title": "Ministry of Health and Social Protection Tajikistan"
+          "title": "Tajikistan (Smartraveller)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/tadjikistan/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "Tadjikistan - Contacts utiles (France Diplomatie)"
         }
       ],
-      "evidence_quote": "Call 103 for emergency medical services and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 01 (101 from a mobile) ... Medical: Call 03 (103 from a mobile) ... Police: Call 02 (102 from a mobile)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,27 +141,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mchs.tj",
+          "url": "https://smartraveller.gov.au/destinations/asia/tajikistan",
           "tier": 1,
-          "title": "Committee on Emergency Situations and Civil Defence (CoES)"
+          "title": "Tajikistan (Smartraveller)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/tadjikistan/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "Tadjikistan - Contacts utiles (France Diplomatie)"
         }
       ],
-      "evidence_quote": "Dial 101 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 01 (101 from a mobile) ... Medical: Call 03 (103 from a mobile) ... Police: Call 02 (102 from a mobile)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://mchs.tj",
+          "url": "https://smartraveller.gov.au/destinations/asia/tajikistan",
           "tier": 1,
-          "title": "CoES Emergency Operations"
+          "title": "Tajikistan (Smartraveller)"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/tadjikistan/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "Tadjikistan - Contacts utiles (France Diplomatie)"
         }
       ],
-      "evidence_quote": "112 is the unified national emergency dispatch contact number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 01 (101 from a mobile) ... Medical: Call 03 (103 from a mobile) ... Police: Call 02 (102 from a mobile)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+992 37 221-1212",

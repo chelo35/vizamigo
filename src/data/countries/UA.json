@@ -103,13 +103,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mvs.gov.ua",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/ukraine",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of Ukraine"
+          "title": "Ukraine (travel.gc.ca)"
+        },
+        {
+          "url": "https://gov.uk/foreign-travel-advice/ukraine/getting-help",
+          "tier": 1,
+          "title": "Ukraine - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/ukraine",
+          "tier": 1,
+          "title": "Ukraine (Smartraveller)"
         }
       ],
-      "evidence_quote": "National Police of Ukraine emergency dispatch dial 102",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "police: 102; medical assistance: 103; firefighters: 101; general emergencies: 112 (from cell phones only)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "103",
@@ -117,13 +127,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://moz.gov.ua",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/ukraine",
           "tier": 1,
-          "title": "Ministry of Health of Ukraine"
+          "title": "Ukraine (travel.gc.ca)"
+        },
+        {
+          "url": "https://gov.uk/foreign-travel-advice/ukraine/getting-help",
+          "tier": 1,
+          "title": "Ukraine - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/ukraine",
+          "tier": 1,
+          "title": "Ukraine (Smartraveller)"
         }
       ],
-      "evidence_quote": "Emergency medical assistance dial 103",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "police: 102; medical assistance: 103; firefighters: 101; general emergencies: 112 (from cell phones only)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -131,13 +151,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://dsns.gov.ua",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/ukraine",
           "tier": 1,
-          "title": "State Emergency Service of Ukraine (DSNS)"
+          "title": "Ukraine (travel.gc.ca)"
+        },
+        {
+          "url": "https://gov.uk/foreign-travel-advice/ukraine/getting-help",
+          "tier": 1,
+          "title": "Ukraine - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/ukraine",
+          "tier": 1,
+          "title": "Ukraine (Smartraveller)"
         }
       ],
-      "evidence_quote": "Fire rescue and state emergency service dial 101",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "police: 102; medical assistance: 103; firefighters: 101; general emergencies: 112 (from cell phones only)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +175,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mvs.gov.ua",
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/ukraine",
           "tier": 1,
-          "title": "MVS Ukraine Single Emergency Number 112"
+          "title": "Ukraine (travel.gc.ca)"
+        },
+        {
+          "url": "https://gov.uk/foreign-travel-advice/ukraine/getting-help",
+          "tier": 1,
+          "title": "Ukraine - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://smartraveller.gov.au/ukraine",
+          "tier": 1,
+          "title": "Ukraine (Smartraveller)"
         }
       ],
-      "evidence_quote": "Unified 112 emergency service operational in Kyiv and major regions",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "police: 102; medical assistance: 103; firefighters: 101; general emergencies: 112 (from cell phones only)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

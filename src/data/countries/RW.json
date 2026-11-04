@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.rw",
+          "url": "https://www.gov.rw/emergency",
           "tier": 1,
-          "title": "Rwanda National Police (RNP)"
+          "title": "Emergency (gov.rw)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/rwanda",
+          "tier": 1,
+          "title": "Rwanda (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 112 for emergency police intervention across Rwanda",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: Emergency; 912: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "912",
@@ -117,27 +122,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.rw",
+          "url": "https://www.gov.rw/emergency",
           "tier": 1,
-          "title": "Ministry of Health of Rwanda"
+          "title": "Emergency (gov.rw)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/rwanda",
+          "tier": 1,
+          "title": "Rwanda (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 912 for emergency SAMU medical assistance and ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: Emergency; 912: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "111",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.rw/fire-and-rescue/",
+          "url": "https://www.gov.rw/emergency",
           "tier": 1,
-          "title": "RNP Fire and Rescue Brigade"
+          "title": "Emergency (gov.rw)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/rwanda",
+          "tier": 1,
+          "title": "Rwanda (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 111 for fire and technical rescue emergency services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: Emergency; 912: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.rw",
+          "url": "https://www.gov.rw/emergency",
           "tier": 1,
-          "title": "Rwanda National Police"
+          "title": "Emergency (gov.rw)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/africa/rwanda",
+          "tier": 1,
+          "title": "Rwanda (Smartraveller)"
         }
       ],
-      "evidence_quote": "112 serves as the primary unified national emergency operator number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "112: Emergency; 912: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+250 788 311 112",

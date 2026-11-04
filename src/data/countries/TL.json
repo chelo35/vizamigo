@@ -105,13 +105,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pntl.tl",
+          "url": "https://www.gov.uk/foreign-travel-advice/timor-leste/getting-help",
           "tier": 1,
-          "title": "Polícia Nacional de Timor-Leste (PNTL)"
+          "title": "Timor-Leste - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/timor-leste-east-timor",
+          "tier": 1,
+          "title": "Timor-Leste (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 112 for emergency police response throughout Timor-Leste",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110 or +670 331 1044; Fire: 115 or +670 331 0340; Police: 112 or +670 331 1380",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "110",
@@ -119,13 +124,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://ms.gov.tl",
+          "url": "https://www.gov.uk/foreign-travel-advice/timor-leste/getting-help",
           "tier": 1,
-          "title": "Hospital Nacional Guido Valadares (HNGV) Emergency Ambulance"
+          "title": "Timor-Leste - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/timor-leste-east-timor",
+          "tier": 1,
+          "title": "Timor-Leste (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 110 for emergency medical services and national ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110 or +670 331 1044; Fire: 115 or +670 331 0340; Police: 112 or +670 331 1380",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "115",
@@ -133,27 +143,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://pntl.tl",
+          "url": "https://www.gov.uk/foreign-travel-advice/timor-leste/getting-help",
           "tier": 1,
-          "title": "Bombeiros de Timor-Leste"
+          "title": "Timor-Leste - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/timor-leste-east-timor",
+          "tier": 1,
+          "title": "Timor-Leste (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 115 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110 or +670 331 1044; Fire: 115 or +670 331 0340; Police: 112 or +670 331 1380",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://pntl.tl",
+          "url": "https://www.gov.uk/foreign-travel-advice/timor-leste/getting-help",
           "tier": 1,
-          "title": "PNTL Command Center"
+          "title": "Timor-Leste - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/timor-leste-east-timor",
+          "tier": 1,
+          "title": "Timor-Leste (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "112 coordinates central national emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 110 or +670 331 1044; Fire: 115 or +670 331 0340; Police: 112 or +670 331 1380",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+670 333 1120",

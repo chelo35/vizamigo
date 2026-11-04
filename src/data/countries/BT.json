@@ -104,13 +104,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rbp.gov.bt",
+          "url": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
           "tier": 1,
-          "title": "Royal Bhutan Police (RBP)"
+          "title": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help"
         }
       ],
-      "evidence_quote": "Dial 113 for emergency police response across Bhutan",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 112; Fire: 110; Police: 113 (no general number listed)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -118,13 +118,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.bt",
+          "url": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
           "tier": 1,
-          "title": "Ministry of Health Emergency Medical Services Bhutan"
+          "title": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help"
         }
       ],
-      "evidence_quote": "Call 112 for health emergency ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 112; Fire: 110; Police: 113 (no general number listed)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "110",
@@ -132,27 +132,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.rbp.gov.bt",
+          "url": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
           "tier": 1,
-          "title": "RBP Fire and Rescue Division"
+          "title": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help"
         }
       ],
-      "evidence_quote": "Dial 110 for emergency fire and rescue services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 112; Fire: 110; Police: 113 (no general number listed)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 112; Fire: 110; Police: 113 (no general number listed)",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+975 2 323251",

@@ -106,12 +106,12 @@
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
-          "tier": 3,
-          "title": "Wikipedia: List of emergency telephone numbers"
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
       "evidence_quote": "Denmark: 112; Non-emergency police 114",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112",
@@ -119,13 +119,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.regionh.dk",
-          "tier": 1,
-          "title": "Emergency Medical Services Capital Region Denmark"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Emergency ambulance dispatch is operated through the unified 112 emergency line",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Denmark: 112; Non-emergency police 114",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "112",
@@ -133,13 +133,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://brs.dk",
-          "tier": 1,
-          "title": "Danish Emergency Management Agency (Beredskabsstyrelsen)"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is integrated into 112 across Denmark",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Denmark: 112; Non-emergency police 114",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -147,13 +147,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://politi.dk",
-          "tier": 1,
-          "title": "Danish Police Emergency 112"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "112 is the primary emergency telephone number in Denmark for police, medical, and fire",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Denmark: 112; Non-emergency police 114",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

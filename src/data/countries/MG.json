@@ -106,27 +106,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.mg",
+          "url": "https://www.gov.uk/foreign-travel-advice/madagascar/getting-help",
           "tier": 1,
-          "title": "Police Nationale Malagasy"
+          "title": "Madagascar - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/madagascar",
+          "tier": 1,
+          "title": "Madagascar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 117 nationwide for Police Nationale (urban) or 119 for Gendarmerie (rural/highways)",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance or police emergency: Telephone: 17; Mobile: 117 ... Fire: Telephone: 18; Mobile: 118",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "117",
       "status": "verified",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/madagascar/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Madagascar - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/madagascar",
+          "tier": 1,
+          "title": "Madagascar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Ambulance or police (landline): 17; (mobile): 117; Fire (landline): 18; (mobile): 118",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Ambulance or police emergency: Telephone: 17; Mobile: 117 ... Fire: Telephone: 18; Mobile: 118",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "118",
@@ -134,27 +144,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mid.gov.mg",
+          "url": "https://www.gov.uk/foreign-travel-advice/madagascar/getting-help",
           "tier": 1,
-          "title": "Corps des Sapeurs-Pompiers Madagascar"
+          "title": "Madagascar - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/madagascar",
+          "tier": 1,
+          "title": "Madagascar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 118 for urban fire brigade response and natural disaster rescue squads",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance or police emergency: Telephone: 17; Mobile: 117 ... Fire: Telephone: 18; Mobile: 118",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/madagascar/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Madagascar - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/madagascar",
+          "tier": 1,
+          "title": "Madagascar (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Ambulance or police (landline): 17; (mobile): 117; Fire (landline): 18; (mobile): 118",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Ambulance or police emergency: Telephone: 17; Mobile: 117 ... Fire: Telephone: 18; Mobile: 118",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

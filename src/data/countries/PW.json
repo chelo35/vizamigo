@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.palaugov.pw",
+          "url": "https://smartraveller.gov.au/destinations/pacific/palau",
           "tier": 1,
-          "title": "Bureau of Public Safety Palau"
+          "title": "Palau (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/palau",
+          "tier": 1,
+          "title": "Palau (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 911 for emergency police assistance throughout Palau",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire or rescue: Call 911. Medical: Call 911. Police: Call 911",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.palauhealth.org",
+          "url": "https://smartraveller.gov.au/destinations/pacific/palau",
           "tier": 1,
-          "title": "Belau National Hospital Emergency Medical Services"
+          "title": "Palau (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/palau",
+          "tier": 1,
+          "title": "Palau (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 911 or +680 488-2555 for Belau National Hospital ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire or rescue: Call 911. Medical: Call 911. Police: Call 911",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.palaugov.pw",
+          "url": "https://smartraveller.gov.au/destinations/pacific/palau",
           "tier": 1,
-          "title": "Bureau of Public Safety Fire & Rescue"
+          "title": "Palau (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/palau",
+          "tier": 1,
+          "title": "Palau (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 911 for fire and rescue emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire or rescue: Call 911. Medical: Call 911. Police: Call 911",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.palaugov.pw",
+          "url": "https://smartraveller.gov.au/destinations/pacific/palau",
           "tier": 1,
-          "title": "National Emergency Management Office (NEMO) Palau"
+          "title": "Palau (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/palau",
+          "tier": 1,
+          "title": "Palau (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "911 is the central emergency operations number in Palau",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire or rescue: Call 911. Medical: Call 911. Police: Call 911",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+680 488-2793",

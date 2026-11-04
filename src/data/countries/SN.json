@@ -105,13 +105,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://policenationale.sec.gouv.sn",
+          "url": "https://www.gov.uk/foreign-travel-advice/senegal/getting-help",
           "tier": 1,
-          "title": "Police Nationale du Sénégal"
+          "title": "Senegal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/senegal",
+          "tier": 1,
+          "title": "Senegal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 17 for Police Nationale (urban) or 800 00 20 20 for Gendarmerie emergency calls",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 15; Fire: 18; Police: 17",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "15",
@@ -119,13 +124,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sante.gouv.sn",
+          "url": "https://www.gov.uk/foreign-travel-advice/senegal/getting-help",
           "tier": 1,
-          "title": "Ministère de la Santé du Sénégal"
+          "title": "Senegal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/senegal",
+          "tier": 1,
+          "title": "Senegal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 15 (or SAMU 15 15) for emergency medical ambulance and hospital transit",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 15; Fire: 18; Police: 17",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "18",
@@ -133,27 +143,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.interieur.sec.gouv.sn",
+          "url": "https://www.gov.uk/foreign-travel-advice/senegal/getting-help",
           "tier": 1,
-          "title": "Brigade Nationale des Sapeurs-Pompiers"
+          "title": "Senegal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/senegal",
+          "tier": 1,
+          "title": "Senegal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 18 to dispatch the Brigade Nationale des Sapeurs-Pompiers emergency fire and rescue units",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 15; Fire: 18; Police: 17",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "unavailable",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/senegal/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "Senegal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/senegal",
+          "tier": 1,
+          "title": "Senegal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Ambulance: 15; Fire: 18; Police: 17 (no general number listed)",
-      "retrieved_at": "2026-11-04"
+      "evidence_quote": "Ambulance: 15; Fire: 18; Police: 17",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

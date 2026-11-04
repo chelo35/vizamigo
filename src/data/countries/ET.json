@@ -99,18 +99,28 @@
   },
   "emergency": {
     "police": {
-      "value": "911",
+      "value": "911 / 991",
       "status": "verified",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "url": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "GOV.UK Ethiopia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ethiopia",
+          "tier": 1,
+          "title": "Smartraveller Ethiopia"
+        },
+        {
+          "url": "https://www.ethiopiaconventionbureau.com/?p=815",
+          "tier": 2,
+          "title": "Ethiopian Convention Bureau – emergency numbers"
         }
       ],
       "evidence_quote": "Police and emergency: 911; Ambulance (Addis Ababa): 907",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "907",
@@ -118,13 +128,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.moh.gov.et",
+          "url": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help",
           "tier": 1,
-          "title": "Ethiopian Ministry of Health"
+          "title": "GOV.UK Ethiopia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ethiopia",
+          "tier": 1,
+          "title": "Smartraveller Ethiopia"
+        },
+        {
+          "url": "https://www.ethiopiaconventionbureau.com/?p=815",
+          "tier": 2,
+          "title": "Ethiopian Convention Bureau – emergency numbers"
         }
       ],
-      "evidence_quote": "Dial 907 (or 997 for Red Cross) for emergency medical ambulance coordination",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police and emergency: 911; Ambulance (Addis Ababa): 907",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "939",
@@ -132,13 +152,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fpc.gov.et",
+          "url": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help",
           "tier": 1,
-          "title": "Fire & Emergency Services Agency"
+          "title": "GOV.UK Ethiopia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ethiopia",
+          "tier": 1,
+          "title": "Smartraveller Ethiopia"
+        },
+        {
+          "url": "https://www.ethiopiaconventionbureau.com/?p=815",
+          "tier": 2,
+          "title": "Ethiopian Convention Bureau – emergency numbers"
         }
       ],
-      "evidence_quote": "Dial 939 for urban fire brigade dispatch and structural collapse emergency response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police and emergency: 911; Ambulance (Addis Ababa): 907",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -146,13 +176,23 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fpc.gov.et",
+          "url": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help",
           "tier": 1,
-          "title": "Federal Emergency Services"
+          "title": "GOV.UK Ethiopia getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ethiopia",
+          "tier": 1,
+          "title": "Smartraveller Ethiopia"
+        },
+        {
+          "url": "https://www.ethiopiaconventionbureau.com/?p=815",
+          "tier": 2,
+          "title": "Ethiopian Convention Bureau – emergency numbers"
         }
       ],
-      "evidence_quote": "Dial 911 in Addis Ababa for unified emergency response routing",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police and emergency: 911; Ambulance (Addis Ababa): 907",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

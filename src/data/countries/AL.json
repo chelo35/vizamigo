@@ -105,11 +105,11 @@
         {
           "url": "https://www.gov.uk/foreign-travel-advice/albania/getting-help",
           "tier": 1,
-          "title": "GOV.UK foreign travel advice"
+          "title": "https://www.gov.uk/foreign-travel-advice/albania/getting-help"
         }
       ],
       "evidence_quote": "Ambulance: 127; Fire: 128; Police: 112",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "127",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://shendetesia.gov.al",
+          "url": "https://www.gov.uk/foreign-travel-advice/albania/getting-help",
           "tier": 1,
-          "title": "Ministry of Health Albania"
+          "title": "https://www.gov.uk/foreign-travel-advice/albania/getting-help"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue operates on hotline 127",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 127; Fire: 128; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "128",
@@ -131,13 +131,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mb.gov.al",
+          "url": "https://www.gov.uk/foreign-travel-advice/albania/getting-help",
           "tier": 1,
-          "title": "Ministry of Interior Albania"
+          "title": "https://www.gov.uk/foreign-travel-advice/albania/getting-help"
         }
       ],
-      "evidence_quote": "Fire and rescue services across Albania respond on 128",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 127; Fire: 128; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +145,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mb.gov.al",
+          "url": "https://www.gov.uk/foreign-travel-advice/albania/getting-help",
           "tier": 1,
-          "title": "Albanian Integrated Emergency Center"
+          "title": "https://www.gov.uk/foreign-travel-advice/albania/getting-help"
         }
       ],
-      "evidence_quote": "Unified emergency number 112 connects directly to all emergency response dispatches",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 127; Fire: 128; Police: 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "129",

@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.garda.ie",
+          "url": "https://www.gov.uk/foreign-travel-advice/ireland/getting-help",
           "tier": 1,
-          "title": "An Garda Síochána (Irish Police)"
+          "title": "GOV.UK Ireland getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ireland",
+          "tier": 1,
+          "title": "Smartraveller Ireland"
         }
       ],
-      "evidence_quote": "Emergency police calls in Ireland connect through 999 and 112 to An Garda Síochána",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 or 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999 / 112",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.hse.ie",
+          "url": "https://www.gov.uk/foreign-travel-advice/ireland/getting-help",
           "tier": 1,
-          "title": "National Ambulance Service Ireland (HSE)"
+          "title": "GOV.UK Ireland getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ireland",
+          "tier": 1,
+          "title": "Smartraveller Ireland"
         }
       ],
-      "evidence_quote": "National Ambulance Service emergency dispatch connects via 999 or 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 or 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999 / 112",
@@ -130,13 +140,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.ie",
+          "url": "https://www.gov.uk/foreign-travel-advice/ireland/getting-help",
           "tier": 1,
-          "title": "Department of Housing, Local Government and Heritage Fire Services"
+          "title": "GOV.UK Ireland getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ireland",
+          "tier": 1,
+          "title": "Smartraveller Ireland"
         }
       ],
-      "evidence_quote": "Fire emergency services across Irish counties respond to 999 and 112",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 or 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112 / 999",
@@ -144,13 +159,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.ie",
+          "url": "https://www.gov.uk/foreign-travel-advice/ireland/getting-help",
           "tier": 1,
-          "title": "Emergency Call Answering Service (ECAS) Ireland"
+          "title": "GOV.UK Ireland getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/ireland",
+          "tier": 1,
+          "title": "Smartraveller Ireland"
         }
       ],
-      "evidence_quote": "999 and 112 are Ireland's twin official emergency numbers routed through ECAS centres",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 112 or 999 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

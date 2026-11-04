@@ -102,13 +102,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.govt.nz",
+          "url": "https://www.police.govt.nz/call-111",
           "tier": 1,
-          "title": "New Zealand Police (Nga Pirihimana o Aotearoa)"
+          "title": "Call 111 (New Zealand Police)"
         }
       ],
-      "evidence_quote": "Emergency police dispatch connects through the nationwide 111 service",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call One-One-One (111) when you need an emergency response from Police, Fire or Ambulance.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "111",
@@ -116,13 +116,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.stjohn.org.nz",
+          "url": "https://www.police.govt.nz/call-111",
           "tier": 1,
-          "title": "Hato Hone St John Ambulance New Zealand"
+          "title": "Call 111 (New Zealand Police)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance requests are dispatched directly via 111",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call One-One-One (111) when you need an emergency response from Police, Fire or Ambulance.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "111",
@@ -130,13 +130,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.fireandemergency.nz",
+          "url": "https://www.police.govt.nz/call-111",
           "tier": 1,
-          "title": "Fire and Emergency New Zealand (FENZ)"
+          "title": "Call 111 (New Zealand Police)"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is integrated into central 111",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call One-One-One (111) when you need an emergency response from Police, Fire or Ambulance.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "111",
@@ -144,13 +144,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.govt.nz/111",
+          "url": "https://www.police.govt.nz/call-111",
           "tier": 1,
-          "title": "New Zealand 111 Emergency Service"
+          "title": "Call 111 (New Zealand Police)"
         }
       ],
-      "evidence_quote": "111 is New Zealand's single emergency contact number for police, fire, and ambulance",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Call One-One-One (111) when you need an emergency response from Police, Fire or Ambulance.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "111",

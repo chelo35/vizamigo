@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.sg",
+          "url": "https://www.police.gov.sg/Contact-Us",
           "tier": 1,
-          "title": "Singapore Police Force"
+          "title": "Hotline Numbers and Other Contact Information (Singapore Police Force)"
+        },
+        {
+          "url": "https://scdf.gov.sg/eventslisting/newsarticledetail/SCDF's-995-number-to-be-displayed-on-phones'-caller-ID",
+          "tier": 1,
+          "title": "SCDF 995 number on caller ID (Singapore Civil Defence Force)"
         }
       ],
-      "evidence_quote": "Emergency police dispatch hotline in Singapore is 999",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police Emergency (For immediate police assistance) 999",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "995",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.scdf.gov.sg",
+          "url": "https://www.police.gov.sg/Contact-Us",
           "tier": 1,
-          "title": "Singapore Civil Defence Force (SCDF)"
+          "title": "Hotline Numbers and Other Contact Information (Singapore Police Force)"
+        },
+        {
+          "url": "https://scdf.gov.sg/eventslisting/newsarticledetail/SCDF's-995-number-to-be-displayed-on-phones'-caller-ID",
+          "tier": 1,
+          "title": "SCDF 995 number on caller ID (Singapore Civil Defence Force)"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance and fire dispatch is operated through 995",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police Emergency (For immediate police assistance) 999",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "995",
@@ -130,27 +140,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.scdf.gov.sg",
+          "url": "https://www.police.gov.sg/Contact-Us",
           "tier": 1,
-          "title": "Singapore Civil Defence Force"
+          "title": "Hotline Numbers and Other Contact Information (Singapore Police Force)"
+        },
+        {
+          "url": "https://scdf.gov.sg/eventslisting/newsarticledetail/SCDF's-995-number-to-be-displayed-on-phones'-caller-ID",
+          "tier": 1,
+          "title": "SCDF 995 number on caller ID (Singapore Civil Defence Force)"
         }
       ],
-      "evidence_quote": "SCDF firefighting emergency services respond to 995",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police Emergency (For immediate police assistance) 999",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "999",
-      "status": "verified",
-      "confidence": "high",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.police.gov.sg",
+          "url": "https://www.police.gov.sg/Contact-Us",
           "tier": 1,
-          "title": "Singapore Police Force"
+          "title": "Hotline Numbers and Other Contact Information (Singapore Police Force)"
+        },
+        {
+          "url": "https://scdf.gov.sg/eventslisting/newsarticledetail/SCDF's-995-number-to-be-displayed-on-phones'-caller-ID",
+          "tier": 1,
+          "title": "SCDF 995 number on caller ID (Singapore Civil Defence Force)"
         }
       ],
-      "evidence_quote": "Main emergency line 999 coordinates urgent inter-agency responses",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Police Emergency (For immediate police assistance) 999",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1800-736-2000",

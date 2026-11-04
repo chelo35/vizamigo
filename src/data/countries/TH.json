@@ -105,13 +105,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.royalthaipolice.go.th",
-          "tier": 1,
-          "title": "Royal Thai Police Emergency Response"
+          "url": "https://thailand.go.th/event-detail/003_003",
+          "tier": 2,
+          "title": "Emergency numbers (thailand.go.th, Royal Thai Government)"
         }
       ],
-      "evidence_quote": "Call 191 for nationwide emergency police dispatch",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "191 Emergency Report; 1669 Narenthorn EMS Center; 199 Fire Brigade; 1155 Tourist Police",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "1669",
@@ -119,13 +119,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.niems.go.th",
-          "tier": 1,
-          "title": "National Institute for Emergency Medicine Thailand"
+          "url": "https://thailand.go.th/event-detail/003_003",
+          "tier": 2,
+          "title": "Emergency numbers (thailand.go.th, Royal Thai Government)"
         }
       ],
-      "evidence_quote": "Emergency medical services hotline is 1669 operating 24 hours",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "191 Emergency Report; 1669 Narenthorn EMS Center; 199 Fire Brigade; 1155 Tourist Police",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "199",
@@ -133,21 +133,27 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.bangkok.go.th/fire",
-          "tier": 1,
-          "title": "Bangkok Fire and Rescue Department"
+          "url": "https://thailand.go.th/event-detail/003_003",
+          "tier": 2,
+          "title": "Emergency numbers (thailand.go.th, Royal Thai Government)"
         }
       ],
-      "evidence_quote": "Dial 199 for fire emergencies and disaster rescue services",
-      "retrieved_at": "2026-10-13"
+      "evidence_quote": "191 Emergency Report; 1669 Narenthorn EMS Center; 199 Fire Brigade; 1155 Tourist Police",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": null,
-      "status": "not_found",
-      "confidence": null,
-      "sources": [],
-      "evidence_quote": null,
-      "retrieved_at": null
+      "value": "191",
+      "status": "verified",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://thailand.go.th/event-detail/003_003",
+          "tier": 2,
+          "title": "Emergency numbers (thailand.go.th, Royal Thai Government)"
+        }
+      ],
+      "evidence_quote": "191 Emergency Report; 1669 Narenthorn EMS Center; 199 Fire Brigade; 1155 Tourist Police",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1155",

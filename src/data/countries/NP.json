@@ -104,13 +104,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nepalpolice.gov.np",
+          "url": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
           "tier": 1,
-          "title": "Nepal Police"
+          "title": "Nepal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/nepal",
+          "tier": 1,
+          "title": "Nepal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 100 for emergency police assistance throughout Nepal",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 102; Fire: 101; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "102",
@@ -118,13 +123,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mohp.gov.np",
+          "url": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
           "tier": 1,
-          "title": "Ministry of Health and Population of Nepal"
+          "title": "Nepal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/nepal",
+          "tier": 1,
+          "title": "Nepal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 102 for emergency medical response and Red Cross ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 102; Fire: 101; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "101",
@@ -132,27 +142,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.nepalpolice.gov.np",
+          "url": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
           "tier": 1,
-          "title": "Nepal Police Emergency Management"
+          "title": "Nepal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/nepal",
+          "tier": 1,
+          "title": "Nepal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 101 for municipal fire brigade dispatch in Nepal",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 102; Fire: 101; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "100",
-      "status": "verified",
-      "confidence": "medium",
+      "value": "",
+      "status": "unverified",
+      "confidence": "low",
       "sources": [
         {
-          "url": "https://www.nepalpolice.gov.np",
+          "url": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
           "tier": 1,
-          "title": "Nepal Police"
+          "title": "Nepal - Getting help (GOV.UK)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/nepal",
+          "tier": 1,
+          "title": "Nepal (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "100 acts as the national primary emergency dispatch center",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Ambulance: 102; Fire: 101; Police: 100",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "1144",

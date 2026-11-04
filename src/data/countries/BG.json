@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mvr.bg",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bulgaria",
           "tier": 1,
-          "title": "Ministry of Interior Bulgaria (MVR)"
+          "title": "Smartraveller Bulgaria"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bulgarie/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Bulgarie contacts utiles"
         }
       ],
-      "evidence_quote": "Police emergency assistance in Bulgaria is contacted via unified 112 or traditional 166",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 or go to a hospital. Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "112 / 150",
@@ -117,27 +122,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mh.government.bg",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bulgaria",
           "tier": 1,
-          "title": "Ministry of Health Bulgaria"
+          "title": "Smartraveller Bulgaria"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bulgarie/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Bulgarie contacts utiles"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue responds through 112 and 150",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 or go to a hospital. Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "112 / 160",
+      "value": "112",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.mvr.bg",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bulgaria",
           "tier": 1,
-          "title": "General Directorate Fire Safety and Civil Protection"
+          "title": "Smartraveller Bulgaria"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bulgarie/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Bulgarie contacts utiles"
         }
       ],
-      "evidence_quote": "Firefighting emergency dispatch is reached via 112 or 160",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 or go to a hospital. Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.112.mvr.bg",
+          "url": "https://www.smartraveller.gov.au/destinations/europe/bulgaria",
           "tier": 1,
-          "title": "National Emergency 112 System Bulgaria"
+          "title": "Smartraveller Bulgaria"
+        },
+        {
+          "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/bulgarie/conseils-aux-voyageurs-contacts-utiles",
+          "tier": 2,
+          "title": "France Diplomatie – Bulgarie contacts utiles"
         }
       ],
-      "evidence_quote": "112 is the primary single emergency contact number throughout the Republic of Bulgaria",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Fire and rescue: Call 112. Medical emergencies: Call 112 or go to a hospital. Police: Call 112",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

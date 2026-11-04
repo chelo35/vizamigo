@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mvr.gov.mk",
+          "url": "https://smartraveller.gov.au/North-Macedonia",
           "tier": 1,
-          "title": "Ministry of Internal Affairs of North Macedonia"
+          "title": "North Macedonia (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/north-macedonia",
+          "tier": 1,
+          "title": "North Macedonia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 192 for emergency police intervention across North Macedonia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergencies: Call 112. Fire and rescue: Call 193. Medical: Call 194. Police: Call 192.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "194",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://zdravstvo.gov.mk",
+          "url": "https://smartraveller.gov.au/North-Macedonia",
           "tier": 1,
-          "title": "Ministry of Health of North Macedonia"
+          "title": "North Macedonia (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/north-macedonia",
+          "tier": 1,
+          "title": "North Macedonia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Call 194 for urgent emergency ambulance and medical response",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergencies: Call 112. Fire and rescue: Call 193. Medical: Call 194. Police: Call 192.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "193",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://cuk.gov.mk",
+          "url": "https://smartraveller.gov.au/North-Macedonia",
           "tier": 1,
-          "title": "Crisis Management Center of North Macedonia"
+          "title": "North Macedonia (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/north-macedonia",
+          "tier": 1,
+          "title": "North Macedonia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Dial 193 for municipal fire and rescue departments",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergencies: Call 112. Fire and rescue: Call 193. Medical: Call 194. Police: Call 192.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://cuk.gov.mk",
+          "url": "https://smartraveller.gov.au/North-Macedonia",
           "tier": 1,
-          "title": "Crisis Management Center (CUK)"
+          "title": "North Macedonia (Smartraveller)"
+        },
+        {
+          "url": "https://travel.gc.ca/assistance/embassies-consulates/north-macedonia",
+          "tier": 1,
+          "title": "North Macedonia (travel.gc.ca)"
         }
       ],
-      "evidence_quote": "Unified emergency number 112 connects to police, ambulance, and fire services nationwide",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergencies: Call 112. Fire and rescue: Call 193. Medical: Call 194. Police: Call 192.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

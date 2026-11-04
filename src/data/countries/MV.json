@@ -97,60 +97,80 @@
   },
   "emergency": {
     "police": {
-      "value": "119",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.mv",
+          "url": "https://www.smartraveller.gov.au/destinations/maldives",
           "tier": 1,
-          "title": "Maldives Police Service"
+          "title": "https://www.smartraveller.gov.au/destinations/maldives"
+        },
+        {
+          "url": "https://www.police.gov.mv/important-contacts",
+          "tier": 1,
+          "title": "https://www.police.gov.mv/important-contacts"
         }
       ],
-      "evidence_quote": "Dial 119 for emergency police assistance throughout the Maldives",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergency: Call 911. Fire and rescue: Call 911. Medical: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "102",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://health.gov.mv",
+          "url": "https://www.smartraveller.gov.au/destinations/maldives",
           "tier": 1,
-          "title": "Ministry of Health of the Maldives"
+          "title": "https://www.smartraveller.gov.au/destinations/maldives"
+        },
+        {
+          "url": "https://www.police.gov.mv/important-contacts",
+          "tier": 1,
+          "title": "https://www.police.gov.mv/important-contacts"
         }
       ],
-      "evidence_quote": "Call 102 for emergency medical response and hospital ambulance services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergency: Call 911. Fire and rescue: Call 911. Medical: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
-      "value": "118",
+      "value": "911",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://mndf.gov.mv",
+          "url": "https://www.smartraveller.gov.au/destinations/maldives",
           "tier": 1,
-          "title": "Maldives National Defence Force (MNDF) Fire and Rescue Service"
+          "title": "https://www.smartraveller.gov.au/destinations/maldives"
+        },
+        {
+          "url": "https://www.police.gov.mv/important-contacts",
+          "tier": 1,
+          "title": "https://www.police.gov.mv/important-contacts"
         }
       ],
-      "evidence_quote": "Dial 118 for MNDF Fire and Rescue services across the atolls",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergency: Call 911. Fire and rescue: Call 911. Medical: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "119",
+      "value": "911",
       "status": "verified",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.mv",
+          "url": "https://www.smartraveller.gov.au/destinations/maldives",
           "tier": 1,
-          "title": "Maldives Police Service"
+          "title": "https://www.smartraveller.gov.au/destinations/maldives"
+        },
+        {
+          "url": "https://www.police.gov.mv/important-contacts",
+          "tier": 1,
+          "title": "https://www.police.gov.mv/important-contacts"
         }
       ],
-      "evidence_quote": "119 serves as the central emergency dispatch contact in the Maldives",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "General emergency: Call 911. Fire and rescue: Call 911. Medical: Call 911. Police: Call 911.",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "+960 979 0070",

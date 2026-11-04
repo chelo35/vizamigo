@@ -106,13 +106,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.psd.gov.jo",
+          "url": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
           "tier": 1,
-          "title": "Public Security Directorate (PSD) Jordan"
+          "title": "GOV.UK Jordan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jordan",
+          "tier": 1,
+          "title": "Smartraveller Jordan"
         }
       ],
-      "evidence_quote": "Emergency police dispatch throughout Jordan connects via 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "911",
@@ -120,13 +125,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.cdd.gov.jo",
+          "url": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
           "tier": 1,
-          "title": "Civil Defense Directorate Jordan"
+          "title": "GOV.UK Jordan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jordan",
+          "tier": 1,
+          "title": "Smartraveller Jordan"
         }
       ],
-      "evidence_quote": "Emergency medical ambulance rescue operates through unified 911 dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "911",
@@ -134,13 +144,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.cdd.gov.jo",
+          "url": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
           "tier": 1,
-          "title": "Civil Defense Directorate Jordan"
+          "title": "GOV.UK Jordan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jordan",
+          "tier": 1,
+          "title": "Smartraveller Jordan"
         }
       ],
-      "evidence_quote": "Civil defense firefighting calls connect directly to 911",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "911",
@@ -148,13 +163,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.psd.gov.jo",
+          "url": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
           "tier": 1,
-          "title": "Public Security Directorate 911"
+          "title": "GOV.UK Jordan getting help"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/jordan",
+          "tier": 1,
+          "title": "Smartraveller Jordan"
         }
       ],
-      "evidence_quote": "911 is Jordan's central unified emergency response number for all critical services",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "Telephone: 911 (ambulance, fire, police)",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": "117777",

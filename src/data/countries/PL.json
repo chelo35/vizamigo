@@ -103,13 +103,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.policja.pl",
+          "url": "https://www.gov.pl/web/kppsp-limanowa/wazne-numery-alarmowe",
           "tier": 1,
-          "title": "Policja: Numery alarmowe"
+          "title": "Ważne numery alarmowe (KP PSP Limanowa, gov.pl)"
+        },
+        {
+          "url": "https://www.gov.pl/web/numer-alarmowy-112",
+          "tier": 1,
+          "title": "Numer alarmowy 112 (gov.pl)"
         }
       ],
-      "evidence_quote": "Numer 997 służy do bezpośredniego kontaktu z Policją w nagłych wypadkach",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "997 - Policja; 998 - Państwowa Straż Pożarna; 999 - Państwowe Ratownictwo Medyczne",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "999",
@@ -117,13 +122,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.pl/web/zdrowie",
+          "url": "https://www.gov.pl/web/kppsp-limanowa/wazne-numery-alarmowe",
           "tier": 1,
-          "title": "Ministerstwo Zdrowia: Pogotowie ratunkowe 999"
+          "title": "Ważne numery alarmowe (KP PSP Limanowa, gov.pl)"
+        },
+        {
+          "url": "https://www.gov.pl/web/numer-alarmowy-112",
+          "tier": 1,
+          "title": "Numer alarmowy 112 (gov.pl)"
         }
       ],
-      "evidence_quote": "Zadzwoń pod 999 w sytuacjach bezpośredniego zagrożenia życia lub zdrowia",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "997 - Policja; 998 - Państwowa Straż Pożarna; 999 - Państwowe Ratownictwo Medyczne",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "998",
@@ -131,13 +141,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.gov.pl/web/kgpsp",
+          "url": "https://www.gov.pl/web/kppsp-limanowa/wazne-numery-alarmowe",
           "tier": 1,
-          "title": "Państwowa Straż Pożarna (998)"
+          "title": "Ważne numery alarmowe (KP PSP Limanowa, gov.pl)"
+        },
+        {
+          "url": "https://www.gov.pl/web/numer-alarmowy-112",
+          "tier": 1,
+          "title": "Numer alarmowy 112 (gov.pl)"
         }
       ],
-      "evidence_quote": "Numer 998 łączy ze stanowiskiem kierowania Państwowej Straży Pożarnej",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "997 - Policja; 998 - Państwowa Straż Pożarna; 999 - Państwowe Ratownictwo Medyczne",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -145,13 +160,18 @@
       "confidence": "high",
       "sources": [
         {
+          "url": "https://www.gov.pl/web/kppsp-limanowa/wazne-numery-alarmowe",
+          "tier": 1,
+          "title": "Ważne numery alarmowe (KP PSP Limanowa, gov.pl)"
+        },
+        {
           "url": "https://www.gov.pl/web/numer-alarmowy-112",
           "tier": 1,
-          "title": "System Powiadamiania Ratunkowego 112"
+          "title": "Numer alarmowy 112 (gov.pl)"
         }
       ],
-      "evidence_quote": "112 to jednolity numer alarmowy obowiązujący na terenie całej Polski i UE",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "997 - Policja; 998 - Państwowa Straż Pożarna; 999 - Państwowe Ratownictwo Medyczne",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

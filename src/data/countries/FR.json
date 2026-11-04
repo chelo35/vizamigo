@@ -103,13 +103,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
-          "tier": 1,
-          "title": "Service-Public.fr: Numéros d'urgence"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Le 17 est le numéro d'urgence de la Police nationale et de la Gendarmerie",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "France: Police 17; Ambulance 112 or 15; Fire 112 or 18",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "15",
@@ -117,13 +117,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
-          "tier": 1,
-          "title": "Service-Public.fr: SAMU 15"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Le 15 permet de joindre le SAMU pour toute urgence médicale grave",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "France: Police 17; Ambulance 112 or 15; Fire 112 or 18",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "18",
@@ -131,13 +131,13 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.service-public.fr/particuliers/vosdroits/F33961",
-          "tier": 1,
-          "title": "Service-Public.fr: Sapeurs-Pompiers 18"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
-      "evidence_quote": "Le 18 permet de joindre les sapeurs-pompiers pour incendies et secours",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "France: Police 17; Ambulance 112 or 15; Fire 112 or 18",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
       "value": "112",
@@ -146,12 +146,12 @@
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
-          "tier": 3,
-          "title": "Wikipedia: List of emergency telephone numbers"
+          "tier": 2,
+          "title": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
         }
       ],
       "evidence_quote": "France: Police 17; Ambulance 112 or 15; Fire 112 or 18",
-      "retrieved_at": "2026-11-04"
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,

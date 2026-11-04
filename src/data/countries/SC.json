@@ -102,13 +102,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.sc",
+          "url": "https://www.gov.sc/GovernmentAgencies/Emergency-hotlines-and-services.aspx",
           "tier": 1,
-          "title": "Seychelles Police Force"
+          "title": "Emergency hotlines and services (Government of Seychelles)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/seychelles",
+          "tier": 1,
+          "title": "Seychelles (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 999 or 112 for emergency police services across the Seychelles",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999: Police, Ambulance, Fire Brigade; 151: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "ambulance": {
       "value": "151",
@@ -116,13 +121,18 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.health.gov.sc",
+          "url": "https://www.gov.sc/GovernmentAgencies/Emergency-hotlines-and-services.aspx",
           "tier": 1,
-          "title": "Ministry of Health of Seychelles"
+          "title": "Emergency hotlines and services (Government of Seychelles)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/seychelles",
+          "tier": 1,
+          "title": "Seychelles (Smartraveller)"
         }
       ],
-      "evidence_quote": "Call 151 for emergency medical services and hospital ambulance dispatch",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999: Police, Ambulance, Fire Brigade; 151: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "fire": {
       "value": "999",
@@ -130,27 +140,37 @@
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.sfrsa.gov.sc",
+          "url": "https://www.gov.sc/GovernmentAgencies/Emergency-hotlines-and-services.aspx",
           "tier": 1,
-          "title": "Seychelles Fire and Rescue Services Agency (SFRSA)"
+          "title": "Emergency hotlines and services (Government of Seychelles)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/seychelles",
+          "tier": 1,
+          "title": "Seychelles (Smartraveller)"
         }
       ],
-      "evidence_quote": "Dial 999 for fire and rescue emergency operations",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999: Police, Ambulance, Fire Brigade; 151: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "112",
+      "value": "999",
       "status": "verified",
       "confidence": "high",
       "sources": [
         {
-          "url": "https://www.police.gov.sc",
+          "url": "https://www.gov.sc/GovernmentAgencies/Emergency-hotlines-and-services.aspx",
           "tier": 1,
-          "title": "Seychelles Police Force"
+          "title": "Emergency hotlines and services (Government of Seychelles)"
+        },
+        {
+          "url": "https://www.smartraveller.gov.au/destinations/seychelles",
+          "tier": 1,
+          "title": "Seychelles (Smartraveller)"
         }
       ],
-      "evidence_quote": "112 serves as the international unified mobile emergency number",
-      "retrieved_at": "2026-10-18"
+      "evidence_quote": "999: Police, Ambulance, Fire Brigade; 151: Ambulance",
+      "retrieved_at": "2026-11-05"
     },
     "tourist_police": {
       "value": null,
