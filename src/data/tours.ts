@@ -163,7 +163,7 @@ export const LIVE: Record<string, { q: string; c: string[]; min: number; max: nu
 
 /** TourRadar sayfası, ortaklık izi ile (widget ile aynı parametreler). */
 export const tourRadarLink = (path: string, campaign: string) =>
-  `https://www.tourradar.com${path}${path.includes('?') ? '&' : '?'}utm_source=partner-vizamigo&utm_medium=affiliate_widget&utm_campaign=${encodeURIComponent(campaign)}`;
+  `https://www.tourradar.com${path}${path.includes('?') ? '&' : '?'}utm_source=partner-traveller-1458560&utm_medium=ambassador&utm_campaign=${encodeURIComponent(campaign)}`;
 
 /** TourRadar'ın desteklediği para birimi: ziyaretçinin diline/saat dilimine göre. */
 export const tourCurrency = (lang: string): string => {

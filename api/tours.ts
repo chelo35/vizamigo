@@ -5,10 +5,9 @@ export const config = { runtime: 'edge' };
  * GET /api/tours?q=Thailand&c=TH&min=7&max=14&cur=EUR&n=3&cmp=pkg_thailand-10
  *   q   = arama metni (İngilizce), c = ziyaret edilen ülkeler (ISO, virgülle), min/max = gün
  * Kaynak: TourRadar'ın ortaklık widget'ının kullandığı herkese açık uç nokta.
- * Bağlantılar widget ile aynı ortaklık izini taşır (utm_source=partner-vizamigo).
+ * Bağlantılar panelin ürettiği ortaklık izini taşır (utm_source=partner-traveller-1458560, utm_medium=ambassador).
  */
 const MCP = 'https://ai.tourradar.com/mcp/main';
-const PARTNER = 'vizamigo';
 const CURS = new Set(['EUR', 'USD', 'GBP', 'AUD', 'NZD', 'CAD']);
 const ISO = /^[A-Z]{2}$/;
 
@@ -52,8 +51,8 @@ async function call<T>(name: string, args: Record<string, unknown>): Promise<T |
 const tag = (u: string, cmp: string, id?: number) => {
   try {
     const url = new URL(u);
-    url.searchParams.set('utm_source', `partner-${PARTNER}`);
-    url.searchParams.set('utm_medium', 'affiliate_widget');
+    url.searchParams.set('utm_source', 'partner-traveller-1458560');
+    url.searchParams.set('utm_medium', 'ambassador');
     url.searchParams.set('utm_campaign', cmp);
     if (id) url.searchParams.set('utm_content', String(id));
     return url.toString();
