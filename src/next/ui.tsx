@@ -105,7 +105,7 @@ export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: Icon
 /** Komisyonlu bağlantı etiketi (Ticari Reklam Yönetmeliği: ticari içerik açıkça belirtilmeli) */
 export const AdTag: React.FC = () => {
   const { l } = useI18n();
-  return <span className="vz-ad" title={l('Bu bağlantıdan yapılan alışverişten Vizamigo komisyon alabilir; fiyat değişmez.', 'Vizamigo may earn a commission on purchases through this link; your price is the same.', 'Vizamigo erhält ggf. eine Provision; dein Preis bleibt gleich.', 'Vizamigo puede recibir una comisión; tu precio no cambia.', 'Vizamigo может получить комиссию; цена для вас не меняется.')}>{l('Reklam', 'Ad', 'Anzeige', 'Publicidad', 'Реклама')}</span>;
+  return <span className="vz-ad" title={l('Ortaklık bağlantısı: buradan yapılan alışverişten Vizamigo komisyon alabilir; senin için fiyat değişmez.', 'Vizamigo may earn a commission on purchases through this link; your price is the same.', 'Vizamigo erhält ggf. eine Provision; dein Preis bleibt gleich.', 'Vizamigo puede recibir una comisión; tu precio no cambia.', 'Vizamigo может получить комиссию; цена для вас не меняется.')}>{l('Ortaklık', 'Ad', 'Anzeige', 'Publicidad', 'Реклама')}</span>;
 };
 
 export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: React.ReactNode; sub?: React.ReactNode; right?: React.ReactNode; onClick?: () => void; href?: string }> = ({ icon, lead, title, sub, right, onClick, href: raw }) => {
