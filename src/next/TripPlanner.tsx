@@ -67,6 +67,7 @@ const loadTrip = (from: string, to: string, dep: string, ret: string, cur: strin
       k,
       fetch(`/api/trip-flights?from=${from}&to=${to}&dep=${dep}&ret=${ret}&cur=${cur}`)
         .then((r) => (r.ok ? r.json() : null))
+        .then((j) => (j && typeof j === 'object' ? { ...j, alts: Array.isArray(j.alts) ? j.alts : [] } : null))
         .catch(() => null)
     );
   }

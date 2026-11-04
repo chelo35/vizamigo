@@ -1,5 +1,6 @@
 import React, { Suspense, lazy, useEffect, useMemo, useState } from 'react';
 const TripPlanner = lazy(() => import('./TripPlanner'));
+const MultiCity = lazy(() => import('./MultiCity'));
 import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Bullets, Card, Chip, Chips, Field, Flag, LinkBtn, List, Page, Row, Stat, Tags, Tile, TileGrid, VisaBadge, OpenRequest, fmtNum } from './ui';
@@ -499,7 +500,7 @@ export const ToolsHub: React.FC<{ passport: string; openRequest: OpenRequest; on
   const destName = getCountryName(dest, language);
 
   const tiles: Tile[] = [
-    { id: 'trip', icon: 'plane', isNew: true, title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'), desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'), render: () => <Suspense fallback={null}><TripPlanner passport={passport} dest={dest} onOpenCountry={onOpenCountry} /></Suspense> },
+    { id: 'trip', icon: 'plane', isNew: true, title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'), desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'), render: () => <TripTool passport={passport} dest={dest} onOpenCountry={onOpenCountry} /> },
     { id: 'pack', icon: 'bag', title: l('Bavul listesi', 'Packing list', 'Packliste', 'Lista de maleta', 'Список вещей'), desc: l('Yolculuk tipine göre', 'By trip type', 'Nach Reiseart', 'Según el viaje', 'По типу поездки'), render: () => <PackView dest={dest} setDest={setDest} /> },
     { id: 'docs', icon: 'doc', title: l('Evrak listesi', 'Document checklist', 'Dokumentenliste', 'Documentos', 'Документы'), desc: l(`${destName} için gerekenler`, `What ${destName} asks for`, `Für ${destName}`, `Para ${destName}`, `Для ${destName}`), render: () => <DocsCheckView passport={passport} dest={dest} setDest={setDest} /> },
     { id: 'fx', icon: 'fx', title: l('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor', 'Конвертер'), desc: l('Canlı kurlar', 'Live rates', 'Live-Kurse', 'Tipos en vivo', 'Живые курсы'), render: () => <FxView passport={passport} dest={dest} /> },
@@ -534,3 +535,30 @@ export const ToolsHub: React.FC<{ passport: string; openRequest: OpenRequest; on
     </Page>
   );
 };
+
+/** Planlayıcı: tek şehir (gidiş-dönüş) ya da çok şehirli rota. */
+function TripTool({ passport, dest, onOpenCountry }: { passport: string; dest: string; onOpenCountry: (c: string) => void }) {
+  const { l } = useI18n();
+  const [multi, setMulti] = useState(() => {
+    try {
+      return localStorage.getItem('vz_trip_mode') === 'multi';
+    } catch {
+      return false;
+    }
+  });
+  const pick = (m: boolean) => {
+    setMulti(m);
+    try {
+      localStorage.setItem('vz_trip_mode', m ? 'multi' : 'single');
+    } catch {}
+  };
+  return (
+    <div className="vz-stack">
+      <Chips>
+        <Chip on={!multi} onClick={() => pick(false)} icon="plane">{l('Tek şehir', 'One destination', 'Ein Ziel', 'Un destino', 'Одно направление')}</Chip>
+        <Chip on={multi} onClick={() => pick(true)} icon="map">{l('Çok şehirli rota', 'Multi-city route', 'Rundreise', 'Ruta multidestino', 'Несколько городов')}</Chip>
+      </Chips>
+      <Suspense fallback={null}>{multi ? <MultiCity passport={passport} /> : <TripPlanner passport={passport} dest={dest} onOpenCountry={onOpenCountry} />}</Suspense>
+    </div>
+  );
+}

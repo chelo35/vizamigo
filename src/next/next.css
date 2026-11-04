@@ -1088,3 +1088,11 @@ html.dark .vz-pp-links > a.vz-pp-mine { background: rgba(245,158,11,0.12); color
 @media (max-width: 520px) { .vz-fcal-months { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 html.dark .vz-fcal-months button, html.dark .vz-fcal-day { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
 html.dark .vz-fcal-day.lo { background: rgba(22,163,74,0.15); }
+
+.vz-mc-stops { list-style: none; margin: 12px 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.vz-mc-stops li { display: grid; grid-template-columns: 28px 1fr 130px 32px; gap: 8px; align-items: center; }
+.vz-mc-num { width: 26px; height: 26px; border-radius: 50%; background: var(--rd-sea-ink); color: #fff; display: grid; place-items: center; font-size: 13px; font-weight: 700; }
+.vz-mc-del { border: 0; background: transparent; color: inherit; opacity: .6; font-size: 16px; cursor: pointer; min-height: 32px; }
+.vz-mc-stay { display: flex; flex-direction: column; gap: 4px; padding-bottom: 10px; border-bottom: 1px solid rgba(127,127,127,.2); }
+.vz-mc-stay:last-child { border-bottom: 0; padding-bottom: 0; }
+@media (max-width: 520px) { .vz-mc-stops li { grid-template-columns: 26px 1fr 112px 28px; gap: 6px; } }

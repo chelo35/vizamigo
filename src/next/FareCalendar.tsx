@@ -13,6 +13,7 @@ const load = (from: string, to: string, month: string, len: number, cur: string)
       k,
       fetch(`/api/fare-calendar?from=${from}&to=${to}&month=${month}&len=${len}&cur=${cur}`)
         .then((r) => (r.ok ? r.json() : null))
+        .then((j) => (j && j.days && typeof j.days === 'object' ? (j as MonthRes) : null))
         .catch(() => null)
     );
   return cache.get(k)!;
