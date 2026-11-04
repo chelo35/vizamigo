@@ -8,7 +8,7 @@ import { getPassportItems } from '../utils/calculator';
 import { getStayDurationText, generateDirectAnswerSnippet } from '../utils/schemaGenerator';
 import { buildLocalizedPath } from '../utils/seoRouter';
 import type { SupportedLanguage } from '../i18n/types';
-import { VisaBadge } from './ui';
+import { AdTag, VisaBadge } from './ui';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
 import { tpLinks, stay22, s22Flights, s22Cars, gygLink } from '../data/tpPartners';
@@ -188,6 +188,12 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
                 <a className="vz-btn vz-btn-primary sm" href={buildLocalizedPath(lang, 'explore', to)}>{l(`${toName} giriş şartlarının tamamı ›`, `Full ${toName} entry rules ›`, `Alle Einreiseregeln: ${toName} ›`, `Requisitos completos: ${toName} ›`, `Все правила въезда: ${toName} ›`)}</a>
                 {visaInfo?.u && <a className="vz-btn vz-btn-soft sm" href={visaInfo.u} target="_blank" rel="noopener noreferrer">{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт')}: {visaInfo.h || new URL(visaInfo.u).hostname}</a>}
               </div>
+              {needsPaper && (
+                <a className="vz-qd-fare" href="https://vizamigo.visahq.net/" target="_blank" rel="noopener noreferrer sponsored">
+                  <span><b style={{ fontSize: 15 }}>VisaHQ</b> <AdTag /></span>
+                  <small>{l('Belgelerle uğraşmak istemezsen başvurunu senin için hazırlayıp takip eder. Resmî vize ücretine ek olarak hizmet bedeli alır.', 'Prefer not to deal with the paperwork? VisaHQ prepares and tracks your application for a service fee on top of the official visa fee.', 'Keine Lust auf Papierkram? VisaHQ übernimmt den Antrag gegen eine Servicegebühr zusätzlich zur Visagebühr.', '¿Sin papeleo? VisaHQ prepara tu solicitud por una tarifa de servicio además de la tasa oficial.', 'Не хотите возиться с документами? VisaHQ оформит заявку за сервисный сбор сверх консульского.')}</small>
+                </a>
+              )}
               {needsPaper && (
                 <Picks label={l('Başvuruda genelde istenenler: seyahat sigortası, konaklama ve uçuş rezervasyonu', 'Usually required: travel insurance, hotel and flight bookings', 'Meist verlangt: Reiseversicherung, Hotel- und Flugbuchung', 'Suelen pedir: seguro, hotel y vuelo', 'Обычно нужны: страховка, отель и билеты')} items={visaPicks} k={`${from}${to}`} />
               )}
