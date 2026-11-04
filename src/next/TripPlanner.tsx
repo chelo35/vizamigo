@@ -10,6 +10,7 @@ import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
 import { tpLinks } from '../data/tpPartners';
+import ESIM from '../data/esimPrices.json';
 
 /**
  * Seyahat planlayıcı (1. aşama): nereden, nereye, tarih, kişi →
@@ -32,6 +33,20 @@ const nightsOf = (a: string, b: string) => Math.max(1, Math.round((Date.parse(b)
 const ddmm = (s: string) => `${s.slice(8, 10)}${s.slice(5, 7)}`;
 
 /** "25 - 50 $" / "75 - 130 €" → ortalama ve para birimi */
+/** Airalo beslemesi: [GB (0 = sınırsız), gün, USD, airalo.com yolu] */
+type Pkg = [number, number, number, string];
+const pickEsim = (code: string, days: number): Pkg | null => {
+  const list = ((ESIM as unknown as { p: Record<string, Pkg[]> }).p[code] || []).filter((x) => x[0] === 0 || x[0] >= 3);
+  if (!list.length) return null;
+  const fit = list.filter((x) => x[1] >= days);
+  return fit.length ? fit.reduce((a, b) => (b[2] < a[2] ? b : a)) : list.reduce((a, b) => (b[1] > a[1] || (b[1] === a[1] && b[2] < a[2]) ? b : a));
+};
+const rangeOf = (s?: string): { lo: number; hi: number; cur: string } | null => {
+  if (!s) return null;
+  const nums = (s.match(/\d+(?:[.,]\d+)?/g) || []).slice(0, 2).map((x) => parseFloat(x.replace(',', '.')));
+  if (!nums.length) return null;
+  return { lo: nums[0], hi: nums[1] ?? nums[0], cur: s.includes('€') ? 'EUR' : s.includes('£') ? 'GBP' : 'USD' };
+};
 const parseRange = (s?: string): { v: number; cur: string } | null => {
   if (!s) return null;
   const nums = (s.match(/\d+(?:[.,]\d+)?/g) || []).slice(0, 2).map((x) => parseFloat(x.replace(',', '.')));
@@ -138,14 +153,19 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   const spendPP = Math.max(dailyPP * 0.45, dailyPP - stayNight / s.n);
   const spend = spendPP * nights * s.n;
   const insurance = conv(2, 'USD') * (nights + 1) * s.n;
-  const esim = conv(nights <= 8 ? 10 : nights <= 16 ? 18 : 28, 'USD') * s.n;
+  const pkg = pickEsim(s.to, nights + 1);
+  const esim = pkg ? conv(pkg[2], 'USD') * s.n : conv(nights <= 8 ? 10 : nights <= 16 ? 18 : 28, 'USD') * s.n;
+  const esimLink = pkg ? `https://www.airalo.com/${pkg[3]}` : tpLinks.yesim();
+  const hr = rangeOf(s.style === 'budget' ? costs.hostelDormUsd : costs.hotel3StarUsd);
+  const nightRange = hr ? `${money(conv(hr.lo, hr.cur))}–${money(conv(hr.hi, hr.cur))}` : '';
   const total = flight + stay + spend + insurance + esim;
 
   const roundLink = `https://www.aviasales.com/search/${fromIata}${ddmm(s.dep)}${toIata}${ddmm(s.ret)}${s.n}`;
   const flightLink = near?.link || roundLink;
   const bookingLink = `${tpLinks.booking(city)}&checkin=${s.dep}&checkout=${s.ret}&group_adults=${s.n}&no_rooms=${s.style === 'budget' ? 1 : Math.ceil(s.n / 2)}`;
 
-  const est = <span className="vz-trip-tag est">{l('Tahmini', 'Estimate', 'Schätzung', 'Estimación', 'Оценка')}</span>;
+  const est = <span className="vz-trip-tag est">{l('Yaklaşık', 'Approx.', 'Ca.', 'Aprox.', 'Примерно')}</span>;
+  const avg = <span className="vz-trip-tag est">{l('Ortalama', 'Average', 'Durchschnitt', 'Media', 'Среднее')}</span>;
   const real = <span className="vz-trip-tag real">{l('Gerçek fiyat', 'Live price', 'Echtpreis', 'Precio real', 'Реальная цена')}</span>;
   const sameCountry = s.from === s.to;
 
@@ -186,7 +206,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
       ) : (
         <>
           <section className="vz-card vz-trip-total" aria-live="polite">
-            <span className="vz-muted">{l(`${nights} gece · ${s.n} kişi · toplam tahmini bütçe`, `${nights} nights · ${s.n} ${s.n > 1 ? 'people' : 'person'} · estimated total`, `${nights} Nächte · ${s.n} Pers. · geschätzt gesamt`, `${nights} noches · ${s.n} pers. · total estimado`, `${nights} ноч. · ${s.n} чел. · итого примерно`)}</span>
+            <span className="vz-muted">{l(`${nights} gece · ${s.n} kişi · yaklaşık toplam bütçe`, `${nights} nights · ${s.n} ${s.n > 1 ? 'people' : 'person'} · estimated total`, `${nights} Nächte · ${s.n} Pers. · geschätzt gesamt`, `${nights} noches · ${s.n} pers. · total estimado`, `${nights} ноч. · ${s.n} чел. · итого примерно`)}</span>
             <b>{flightPP ? money(total) : loading ? '…' : `${money(total - flight)} +`}</b>
             <span className="vz-muted" style={{ fontSize: 13 }}>
               {flightPP
@@ -214,6 +234,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
 
           <List>
             <Row
+              key={`f-${flightLink}`}
               lead={<PartnerLogo id="aviasales" />}
               title={<>{l('Uçuş (gidiş-dönüş)', 'Flights (round trip)', 'Flug (hin & zurück)', 'Vuelo (ida y vuelta)', 'Перелёт (туда-обратно)')} {flightPP ? (flightReal ? real : est) : null}</>}
               sub={
@@ -229,15 +250,16 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               href={flightLink}
             />
             <Row
+              key={`h-${bookingLink}`}
               lead={<PartnerLogo id="booking" />}
-              title={<>{s.style === 'budget' ? l('Hostel', 'Hostel', 'Hostel', 'Hostal', 'Хостел') : l('Otel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Отель (3★)')} {est}</>}
-              sub={`${city} · ${l(`${nights} gece`, `${nights} nights`, `${nights} Nächte`, `${nights} noches`, `${nights} ноч.`)} · ≈ ${money(stayNight)} / ${l('gece', 'night', 'Nacht', 'noche', 'ночь')}`}
+              title={<>{s.style === 'budget' ? l('Hostel', 'Hostel', 'Hostel', 'Hostal', 'Хостел') : l('Otel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Hotel (3★)', 'Отель (3★)')} {avg}</>}
+              sub={`${city} · ${l(`${nights} gece`, `${nights} nights`, `${nights} Nächte`, `${nights} noches`, `${nights} ноч.`)} · ${nightRange || money(stayNight)} / ${s.style === 'budget' ? l('yatak', 'bed', 'Bett', 'cama', 'место') : l('oda', 'room', 'Zimmer', 'habitación', 'номер')} · ${l('güncel fiyatlar için dokun', 'tap for live prices', 'live Preise ansehen', 'toca para ver precios', 'нажмите для цен')}`}
               right={<span className="vz-trip-amt">{money(stay)}</span>}
               href={bookingLink}
             />
             <Row
               icon="food"
-              title={<>{l('Yemek, ulaşım ve gezme', 'Food, transport & sights', 'Essen, Transport, Ausflüge', 'Comida, transporte y visitas', 'Еда, транспорт, экскурсии')} {est}</>}
+              title={<>{l('Yemek, ulaşım ve gezme', 'Food, transport & sights', 'Essen, Transport, Ausflüge', 'Comida, transporte y visitas', 'Еда, транспорт, экскурсии')} {avg}</>}
               sub={`≈ ${money(spendPP)} / ${l('kişi / gün', 'person / day', 'Person / Tag', 'persona / día', 'чел. / день')}`}
               right={<span className="vz-trip-amt">{money(spend)}</span>}
             />
@@ -248,11 +270,12 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               right={<span className="vz-trip-amt">{money(insurance)}</span>}
             />
             <Row
-              lead={<PartnerLogo id="yesim" />}
-              title={<>eSIM {est}</>}
-              sub={l('İnmeden internet: Yesim', 'Data from landing: Yesim', 'Daten ab Landung: Yesim', 'Datos al aterrizar: Yesim', 'Интернет сразу: Yesim')}
+              key={`e-${esimLink}`}
+              lead={<PartnerLogo id={pkg ? 'airalo' : 'yesim'} />}
+              title={<>eSIM {pkg ? real : est}</>}
+              sub={pkg ? `Airalo · ${pkg[0] ? `${pkg[0]} GB` : l('sınırsız', 'unlimited', 'unbegrenzt', 'ilimitado', 'безлимит')} · ${pkg[1]} ${l('gün', 'days', 'Tage', 'días', 'дн.')}${s.n > 1 ? ` · ${money(conv(pkg[2], 'USD'))} × ${s.n}` : ''}` : l('İnmeden internet: Yesim', 'Data from landing: Yesim', 'Daten ab Landung: Yesim', 'Datos al aterrizar: Yesim', 'Интернет сразу: Yesim')}
               right={<span className="vz-trip-amt">{money(esim)}</span>}
-              href={tpLinks.yesim()}
+              href={esimLink}
             />
           </List>
 
@@ -266,17 +289,17 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
             </div>
             <List>
               <Row lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado', 'Трансфер')} sub="Kiwitaxi" href={tpLinks.kiwitaxi()} />
-              <Row lead={<PartnerLogo id="discovercars" />} title={l('Araç kirala', 'Rent a car', 'Mietwagen', 'Alquiler de coche', 'Аренда авто')} sub="DiscoverCars" href={tpLinks.discovercars(getCountryName(s.to, 'en'))} />
+              <Row key={`c-${s.to}`} lead={<PartnerLogo id="discovercars" />} title={l('Araç kirala', 'Rent a car', 'Mietwagen', 'Alquiler de coche', 'Аренда авто')} sub={l('DiscoverCars · tarihlerine göre fiyatları gör', 'DiscoverCars · see prices for your dates', 'DiscoverCars · Preise für deine Daten', 'DiscoverCars · precios para tus fechas', 'DiscoverCars · цены на ваши даты')} href={tpLinks.discovercars(getCountryName(s.to, 'en'))} />
             </List>
           </section>
 
           <p className="vz-muted" style={{ fontSize: 12.5 }}>
             {l(
-              'Uçuş fiyatları Aviasales\'te son günlerde bulunan en düşük fiyatlardır; satın alırken değişebilir. Konaklama ve harcamalar ülke ortalamalarına dayanan tahminlerdir.',
-              'Flight prices are the lowest fares found on Aviasales in recent days and may change when you book. Stay and spending are estimates based on country averages.',
-              'Flugpreise sind die niedrigsten kürzlich auf Aviasales gefundenen Tarife und können sich ändern. Unterkunft und Ausgaben sind Schätzungen nach Landesdurchschnitt.',
-              'Los precios de vuelos son las tarifas más bajas encontradas en Aviasales en los últimos días y pueden cambiar. Alojamiento y gastos son estimaciones según medias del país.',
-              'Цены на билеты — минимальные найденные на Aviasales за последние дни и могут измениться. Жильё и расходы — оценка по средним данным страны.'
+              'Uçuş fiyatları Aviasales\'te son günlerde bulunan en düşük fiyatlar, eSIM fiyatları Airalo\'nun güncel liste fiyatlarıdır. Konaklama ve harcamalar ülke ortalamasıdır; otel fiyatı için bağlantıya dokun. Sigorta yaklaşık fiyattır.',
+              'Flight prices are the lowest fares found on Aviasales in recent days; eSIM prices are Airalo’s current list prices. Stay and spending are country averages; tap the hotel link for live prices. Insurance is approximate.',
+              'Flugpreise sind die niedrigsten kürzlich auf Aviasales gefundenen Tarife, eSIM-Preise die aktuellen Airalo-Listenpreise. Unterkunft und Ausgaben sind Landesdurchschnitte; Live-Hotelpreise über den Link. Versicherung ist ein Richtwert.',
+              'Los vuelos son las tarifas más bajas halladas en Aviasales en los últimos días; los eSIM, precios actuales de Airalo. Alojamiento y gastos son medias del país; toca el enlace del hotel para precios reales. El seguro es aproximado.',
+              'Билеты — минимальные цены Aviasales за последние дни, eSIM — текущие цены Airalo. Жильё и расходы — средние по стране; актуальные цены отелей по ссылке. Страховка — ориентир.'
             )}
           </p>
         </>
