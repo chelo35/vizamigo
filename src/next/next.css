@@ -1016,3 +1016,36 @@ html.dark .vz-tours-view button { color: #c9f3ec; }
 html.dark .vz-tours-view button.on { background: rgba(255,255,255,0.12); }
 html.dark .vz-tours-jump button { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
 @media (max-width: 640px) { .vz-tours-view { display: flex; } .vz-tours-view button { flex: 1; justify-content: center; font-size: 13px; padding: 9px 8px; } }
+
+/* Canlı paket tur teklifleri (TourRadar) */
+.vz-live { min-height: 8px; }
+.vz-live-skel { display: grid; gap: 8px; margin: 4px 0 2px; }
+.vz-live-skel i { display: block; height: 66px; border-radius: 12px; background: linear-gradient(90deg, var(--rd-sea-tint, #eef8f7) 0%, #f7fbfb 50%, var(--rd-sea-tint, #eef8f7) 100%); background-size: 200% 100%; animation: vzLiveShimmer 1.2s linear infinite; }
+@keyframes vzLiveShimmer { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .vz-live-skel i { animation: none; } }
+.vz-live-head { display: flex; align-items: center; gap: 7px; margin: 2px 0 6px !important; font-size: 12.5px !important; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: var(--rd-sea-ink, #0b4f4a) !important; }
+.vz-live-dot { width: 8px; height: 8px; border-radius: 50%; background: #16a34a; box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18); }
+.vz-live-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.vz-live-list a { display: grid; grid-template-columns: 112px 1fr auto; gap: 10px; align-items: center; padding: 6px; border-radius: 14px; border: 1px solid var(--rd-line, #e5ecee); background: var(--rd-card, #fff); color: inherit; text-decoration: none; transition: border-color 0.15s, box-shadow 0.15s; }
+.vz-live-list a:hover { border-color: var(--rd-sea, #177fa4); box-shadow: 0 4px 14px rgba(11, 79, 74, 0.08); }
+.vz-live-list img { width: 112px; height: 66px; object-fit: cover; border-radius: 10px; background: var(--rd-sea-tint, #eef8f7); }
+.vz-live-main { display: grid; gap: 2px; min-width: 0; }
+.vz-live-main b { font-size: 14px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.vz-live-main small { font-size: 12px; color: var(--rd-muted, #5b6b70); }
+.vz-live-dep { color: var(--rd-sea-ink, #0b4f4a) !important; font-weight: 600; }
+.vz-live-dep em { font-style: normal; margin-left: 6px; padding: 1px 6px; border-radius: 6px; background: #fff1e6; color: #b45309; font-weight: 700; }
+.vz-live-price { display: grid; justify-items: end; gap: 1px; text-align: right; padding-right: 4px; }
+.vz-live-price b { font-size: 16px; white-space: nowrap; }
+.vz-live-price s { font-size: 12px; color: var(--rd-muted, #5b6b70); white-space: nowrap; }
+.vz-live-price small { font-size: 11px; color: var(--rd-muted, #5b6b70); white-space: nowrap; }
+.vz-live-off { font-size: 11.5px; font-weight: 800; color: #fff; background: #dc2626; padding: 1px 6px; border-radius: 6px; }
+.vz-live-note { font-size: 11.5px !important; color: var(--rd-muted, #5b6b70) !important; margin: 6px 0 0 !important; }
+@media (max-width: 420px) {
+  .vz-live-list a { grid-template-columns: 84px 1fr; }
+  .vz-live-list img { width: 84px; height: 56px; }
+  .vz-live-price { grid-column: 2; justify-items: start; text-align: left; grid-auto-flow: column; align-items: baseline; gap: 6px; justify-content: start; }
+}
+html.dark .vz-live-list a { background: rgba(255, 255, 255, 0.03); border-color: rgba(255, 255, 255, 0.1); }
+html.dark .vz-live-head, html.dark .vz-live-dep { color: #c9f3ec !important; }
+html.dark .vz-live-dep em { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+html.dark .vz-live-skel i { background: rgba(255, 255, 255, 0.06); animation: none; }

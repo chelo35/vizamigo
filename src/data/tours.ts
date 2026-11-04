@@ -130,3 +130,51 @@ export const PACKAGES: TourPackage[] = [
   { id: 'mexico-8', gyg: 'https://www.getyourguide.com/mexico-l169001/multi-day-trips-tc282/', region: 'americas', code: 'MX', days: 8, search: 'Mexico 8 day tour Yucatan', route: 'Mexico City · Oaxaca · Yucatán · Cancún', name: ['Meksika turu', 'Mexico tour', 'Mexiko-Rundreise', 'Tour por México', 'Тур по Мексике'] },
   { id: 'usa-west-10', gyg: 'https://www.getyourguide.com/united-states-l168990/multi-day-trips-tc282/', region: 'americas', code: 'US', days: 10, search: 'USA west coast 10 day tour', route: 'Los Angeles · Las Vegas · Grand Canyon · San Francisco', name: ['ABD Batı Kıyısı turu', 'USA West Coast tour', 'USA Westküste', 'Costa Oeste de EE. UU.', 'Западное побережье США'] }
 ];
+
+/* ------------------------------------------------------------------ */
+/* Canlı paket tur teklifleri (TourRadar): /api/tours için arama ayarları.
+ * q: İngilizce arama, c: gezilen ülkeler, min/max: gün aralığı. */
+export const LIVE: Record<string, { q: string; c: string[]; min: number; max: number; d: string }> = {
+  'thailand-10': { q: 'Thailand', c: ['TH'], min: 7, max: 14, d: 'thailand' },
+  'japan-12': { q: 'Japan', c: ['JP'], min: 8, max: 16, d: 'japan' },
+  'vietnam-10': { q: 'Vietnam', c: ['VN'], min: 7, max: 15, d: 'vietnam' },
+  'bali-7': { q: 'Bali Indonesia', c: ['ID'], min: 5, max: 12, d: 'indonesia' },
+  'srilanka-8': { q: 'Sri Lanka', c: ['LK'], min: 6, max: 14, d: 'sri-lanka' },
+  'balkans-8': { q: 'Balkans', c: ['ME', 'BA', 'AL', 'RS', 'MK'], min: 6, max: 14, d: 'balkans' },
+  'croatia-7': { q: 'Croatia', c: ['HR'], min: 5, max: 10, d: 'croatia' },
+  'albania-6': { q: 'Albania', c: ['AL'], min: 4, max: 10, d: 'albania' },
+  'italy-10': { q: 'Italy highlights', c: ['IT'], min: 7, max: 14, d: 'italy' },
+  'spain-portugal-10': { q: 'Spain and Portugal', c: ['ES', 'PT'], min: 7, max: 15, d: 'spain' },
+  'central-europe-8': { q: 'Prague Vienna Budapest', c: ['CZ', 'AT', 'HU'], min: 5, max: 12, d: 'central-europe' },
+  'greece-8': { q: 'Greek island hopping', c: ['GR'], min: 6, max: 12, d: 'greece' },
+  'norway-7': { q: 'Norway fjords', c: ['NO'], min: 5, max: 12, d: 'norway' },
+  'egypt-8': { q: 'Egypt Nile cruise', c: ['EG'], min: 6, max: 12, d: 'egypt' },
+  'morocco-8': { q: 'Morocco Sahara', c: ['MA'], min: 6, max: 12, d: 'morocco' },
+  'jordan-5': { q: 'Jordan Petra Wadi Rum', c: ['JO'], min: 3, max: 8, d: 'jordan' },
+  'tanzania-7': { q: 'Tanzania safari', c: ['TZ'], min: 5, max: 12, d: 'tanzania' },
+  'dubai-5': { q: 'Dubai Abu Dhabi', c: ['AE'], min: 3, max: 8, d: 'united-arab-emirates' },
+  'turkey-10': { q: 'Turkey Istanbul Cappadocia', c: ['TR'], min: 7, max: 14, d: 'turkey' },
+  'cappadocia-3': { q: 'Cappadocia', c: ['TR'], min: 2, max: 4, d: 'turkey' },
+  'aegean-7': { q: 'Turkey Aegean coast Ephesus Pamukkale', c: ['TR'], min: 4, max: 10, d: 'turkey' },
+  'peru-8': { q: 'Peru Machu Picchu', c: ['PE'], min: 6, max: 14, d: 'peru' },
+  'mexico-8': { q: 'Mexico Yucatan', c: ['MX'], min: 6, max: 14, d: 'mexico' },
+  'usa-west-10': { q: 'USA West Coast national parks', c: ['US'], min: 7, max: 15, d: 'usa' }
+};
+
+/** TourRadar sayfası, ortaklık izi ile (widget ile aynı parametreler). */
+export const tourRadarLink = (path: string, campaign: string) =>
+  `https://www.tourradar.com${path}${path.includes('?') ? '&' : '?'}utm_source=partner-vizamigo&utm_medium=affiliate_widget&utm_campaign=${encodeURIComponent(campaign)}`;
+
+/** TourRadar'ın desteklediği para birimi: ziyaretçinin diline/saat dilimine göre. */
+export const tourCurrency = (lang: string): string => {
+  let tz = '';
+  try {
+    tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+  } catch {}
+  if (tz === 'Europe/London') return 'GBP';
+  if (tz.startsWith('Australia/')) return 'AUD';
+  if (tz === 'Pacific/Auckland') return 'NZD';
+  if (/^America\/(Toronto|Vancouver|Edmonton|Winnipeg|Halifax|St_Johns|Regina)/.test(tz)) return 'CAD';
+  if (tz.startsWith('America/')) return 'USD';
+  return lang === 'en' && !tz.startsWith('Europe/') ? 'USD' : 'EUR';
+};

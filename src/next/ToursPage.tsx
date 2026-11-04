@@ -3,13 +3,15 @@ import { useI18n } from '../data/i18n';
 import { Page, VisaBadge } from './ui';
 import { Icon } from './Icon';
 import { Picks, type PickItem } from './Picks';
-import { TOURS, toursPath, PACKAGES, TOUR_REGIONS, type TourRegion } from '../data/tours';
-import { stay22, tpLinks } from '../data/tpPartners';
+import { TOURS, toursPath, PACKAGES, TOUR_REGIONS, LIVE, tourRadarLink, type TourRegion } from '../data/tours';
+import { LiveTours } from './LiveTours';
+import { stay22, tpLinks, gygLink } from '../data/tpPartners';
 import { getOptimizedImageUrl } from '../data/countryVisuals';
 import { getPassportItems } from '../utils/calculator';
 import { GEO_DATA } from '../data/geoData';
 
 const LANG_I: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4 };
+
 const ASIA = new Set(['TH', 'JP', 'ID', 'VN']);
 
 /** Turlar: paylaşılabilir destinasyon kartları; her kartın kendi #adresi var (ör. /tr/info/tours#tayland). */
@@ -90,7 +92,12 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
             {pkgs.map((p) => {
               const img = p.photo || getOptimizedImageUrl(`/images/countries/${p.code.toLowerCase()}.webp`, { width: 480 });
               const regionName = TOUR_REGIONS.find((r) => r.id === p.region)!.name[i];
-              const gyg = stay22('getyourguide', { link: p.gyg, campaign: `pkg_${p.id}` });
+              const live = LIVE[p.id];
+              const main = live ? tourRadarLink(`/d/${live.d}`, `pkg_${p.id}`) : gygLink(p.gyg, `pkg_${p.id}`);
+              const other: PickItem[] = [
+                ...(live ? [{ id: 'getyourguide', url: gygLink(p.gyg, `pkg_${p.id}`) }] : []),
+                ...(p.region === 'asia' ? [{ id: 'klook', url: tpLinks.tours(p.search.replace(/\d+ day tour.*$/i, '').trim()) }] : [])
+              ];
               return (
                 <article key={p.id} id={`p-${p.id}`} className="vz-tour">
                   <div className="vz-tour-img">
@@ -104,11 +111,12 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                       {p.code !== passport && <VisaBadge item={items.get(p.code) || null} />}
                     </div>
                     <p className="vz-tour-route"><Icon name="pin" size={15} /> {p.route}</p>
-                    <a className="vz-btn vz-btn-primary vz-tour-cta" href={gyg} target="_blank" rel="noopener noreferrer sponsored">
-                      <span>{l('Paket turları ve fiyatları gör', 'See tours & prices', 'Touren & Preise ansehen', 'Ver tours y precios', 'Туры и цены')}</span>
+                    {live && <LiveTours pkg={p.id} />}
+                    <a className="vz-btn vz-btn-primary vz-tour-cta" href={main} target="_blank" rel="noopener noreferrer sponsored">
+                      <span>{live ? l('Tüm tarihler ve turlar', 'All dates & tours', 'Alle Termine & Touren', 'Todas las fechas y tours', 'Все даты и туры') : l('Paket turları ve fiyatları gör', 'See tours & prices', 'Touren & Preise ansehen', 'Ver tours y precios', 'Туры и цены')}</span>
                       <Icon name="external" size={17} duo={false} />
                     </a>
-                    <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:')} items={[{ id: 'klook', url: tpLinks.tours(p.search) }]} k={p.id} />
+                    {other.length > 0 && <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:')} items={other} k={p.id} />}
                     <div className="vz-tour-links">
                       <a href={tpLinks.flights(fromHub, (GEO_DATA[p.code]?.mainHub || "").split("/")[0])} target="_blank" rel="noopener noreferrer sponsored"><Icon name="plane" size={16} /> {l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Билеты')}</a>
                       {p.code !== passport && <button type="button" onClick={() => onOpenCountry(p.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд')}</button>}
@@ -132,7 +140,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
         {TOURS.map((t) => {
           const img = t.photo?.startsWith('/') ? t.photo : getOptimizedImageUrl(`/images/countries/${(t.photo || t.code).toLowerCase()}.webp`, { width: 480 });
           const picks: PickItem[] = [
-            { id: 'getyourguide', url: stay22('getyourguide', { link: t.gyg, campaign: `tours_${t.id}` }) },
+            { id: 'getyourguide', url: gygLink(t.gyg, `tours_${t.id}`) },
             { id: 'klook', url: tpLinks.tours(t.search) },
             ...(ASIA.has(t.code) ? [{ id: 'kkday', url: tpLinks.kkday() }] : [{ id: 'tiqets', url: tpLinks.tiqets() }]),
             { id: 'wegotrip', url: tpLinks.wegotrip() }
