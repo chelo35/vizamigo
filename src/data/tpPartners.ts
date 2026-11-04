@@ -126,6 +126,25 @@ export function stay22(provider: Stay22Provider, o: { address?: string; checkin?
   q.set('campaign', o.campaign || 'vizamigo_site');
   return `https://www.stay22.com/allez/${provider}?${q}`;
 }
+/**
+ * GetYourGuide (Stay22): Türkiye'deki ziyaretçide Stay22 getyourguide.com.tr'ye yönlendiriyor ve o alan adı
+ * her sayfayı ana sayfaya atıyor (4 Kasım 2026 testi). Türkiye'de aynı Stay22 ortaklık parametreleriyle
+ * doğrudan getyourguide.com/tr-tr/… sayfasına gidilir; diğer ülkelerde normal Stay22 bağlantısı.
+ */
+const GYG_STAY22_PARTNER = 'ZM6TN20';
+const inTurkey = () => {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Istanbul';
+  } catch {
+    return false;
+  }
+};
+export function gygLink(pageUrl: string, campaign: string): string {
+  if (!inTurkey()) return stay22('getyourguide', { link: pageUrl, campaign });
+  const u = new URL(pageUrl);
+  const q = new URLSearchParams({ partner_id: GYG_STAY22_PARTNER, cmp: `${STAY22_AID}-${campaign}_${STAY22_AID}`, partner_visitor_id: STAY22_AID, psrc: 'partner_api' });
+  return `https://www.getyourguide.com/tr-tr${u.pathname}?${q}`;
+}
 const mdY = (d: string) => `${d.slice(5, 7)}/${d.slice(8, 10)}/${d.slice(0, 4)}`;
 /** Uçuş: Kayak ve Expedia (Stay22 üzerinden, komisyonlu) */
 export const s22Flights = (from: string, to: string, dep: string, ret?: string, n = 1, campaign = 'site') => ({

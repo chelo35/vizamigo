@@ -6,7 +6,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 import { toursPath, TOURS } from '../data/tours';
@@ -129,7 +129,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   const [tourCity, setTourCity] = useState(() => (TOURS.some((x) => x.search === city) ? city : 'Bangkok'));
   const tourPicks: PickItem[] = [
     { id: 'klook', url: tpLinks.tours(tourCity) },
-    { id: 'getyourguide', url: (() => { const t = TOURS.find((x) => x.search === tourCity); return t ? stay22('getyourguide', { link: t.gyg, campaign: 'quick_tours' }) : stay22('getyourguide', { address: tourCity, campaign: 'quick_tours' }); })() },
+    { id: 'getyourguide', url: (() => { const t = TOURS.find((x) => x.search === tourCity); return t ? gygLink(t.gyg, 'quick_tours') : stay22('getyourguide', { address: tourCity, campaign: 'quick_tours' }); })() },
     { id: 'tiqets', url: tpLinks.tiqets() },
     { id: 'wegotrip', url: tpLinks.wegotrip() },
     { id: 'gocity', url: tpLinks.gocity() },
