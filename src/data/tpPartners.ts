@@ -34,7 +34,18 @@ export type TpId =
   | 'yesim'
   | 'saily'
   | 'airhelp'
-  | 'radicalstorage';
+  | 'radicalstorage'
+  | 'economybookings'
+  | 'getrentacar'
+  | 'qeeq'
+  | 'autoeurope'
+  | 'bikesbooking'
+  | 'gocity'
+  | 'wegotrip'
+  | 'kkday'
+  | 'gigsky'
+  | 'drimsim'
+  | 'compensair';
 
 export interface TpBrand {
   name: string;
@@ -67,8 +78,52 @@ export const TP: Record<TpId, TpBrand> = {
   yesim: { name: 'Yesim', domain: 'yesim.app', rate: '18%' },
   saily: { name: 'Saily', domain: 'saily.com', rate: '15%' },
   airhelp: { name: 'AirHelp', domain: 'airhelp.com', rate: '15–16.6%' },
-  radicalstorage: { name: 'Radical Storage', domain: 'radicalstorage.com', rate: '8%' }
+  radicalstorage: { name: 'Radical Storage', domain: 'radicalstorage.com', rate: '8%' },
+  economybookings: { name: 'Economybookings', domain: 'economybookings.com', rate: '3–8%' },
+  getrentacar: { name: 'GetRentacar', domain: 'getrentacar.com', rate: '10%' },
+  qeeq: { name: 'QEEQ', domain: 'qeeq.com', rate: '5–10%' },
+  autoeurope: { name: 'AutoEurope', domain: 'autoeurope.eu', rate: '4.4–8%' },
+  bikesbooking: { name: 'BikesBooking', domain: 'bikesbooking.com', rate: '4%' },
+  gocity: { name: 'Go City', domain: 'gocity.com', rate: '3.4–6%' },
+  wegotrip: { name: 'WeGoTrip', domain: 'wegotrip.com', rate: '6.6–41.5%' },
+  kkday: { name: 'KKday', domain: 'kkday.com', rate: '1–3%' },
+  gigsky: { name: 'GigSky', domain: 'gigsky.com', rate: '20%' },
+  drimsim: { name: 'Drimsim', domain: 'drimsim.com', rate: '€8' },
+  compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' }
 };
+
+/**
+ * Vizamigo projesinde bağlı olmayan (trafik şartı yüzünden kilitli) markalar.
+ * Travelpayouts: "en az 3 ay üst üste düzenli trafik" sonrası "Submit for review".
+ * Kilit açılınca buradan çıkar; bağlantılar otomatik olarak markanın kendisine döner.
+ * Kontrol: 4 Kasım 2026 (25 bağlı program, 20 kilitli).
+ */
+export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'twelvego', 'booking', 'agoda', 'expedia', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
+const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com', 'expedia.com', 'hostelworld.com', 'discovercars.com', 'getyourguide.com', 'viator.com', 'tripadvisor.com', 'hotels.com', 'vrbo.com', 'rentalcars.com', 'skyscanner.com', 'skyscanner.net'];
+
+/** Komisyon getirmeyen (kilitli) bir marka bağlantısını, bağlı bir alternatife çevirir. Otel bağlantıları hizmet için olduğu gibi kalır. */
+export function routeLink(url: string): string {
+  let u: URL;
+  try {
+    u = new URL(url);
+  } catch {
+    return url;
+  }
+  const host = u.hostname.replace(/^www\./, '');
+  const is = (d: string) => host === d || host.endsWith('.' + d);
+  if (!LOCKED_HOSTS.some(is)) return url;
+  const q = u.searchParams.get('q') || u.searchParams.get('text') || u.searchParams.get('query') || u.searchParams.get('destination') || '';
+  // Uçuş: Trip.com / Skyscanner → Aviasales
+  if ((is('trip.com') && u.pathname.startsWith('/flights')) || is('skyscanner.com') || is('skyscanner.net')) return 'https://www.aviasales.com/';
+  // Araç kiralama: DiscoverCars / Rentalcars → Economybookings
+  if (is('discovercars.com') || is('rentalcars.com')) return 'https://www.economybookings.com/';
+  // Tur ve aktivite: GetYourGuide / Viator / Tripadvisor → Klook araması
+  if (is('getyourguide.com') || is('viator.com') || is('tripadvisor.com')) return q ? `https://www.klook.com/search/result/?query=${encodeURIComponent(q)}` : 'https://www.klook.com/';
+  // Tren ve otobüs: Omio / 12Go → Kiwi.com (tren + otobüs + uçak)
+  if (is('omio.com') || is('12go.asia') || is('12go.co')) return 'https://www.kiwi.com/en/';
+  // Otel: Agoda / Expedia / Hostelworld / Trip.com otel / Hotels.com / Vrbo → Booking (tek otel adresi; kilit açılana kadar hizmet amaçlı)
+  return q ? `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(q)}` : 'https://www.booking.com/';
+}
 
 /** Markanın kendi simgesi (64px) */
 export const tpLogo = (id: TpId): string => `https://www.google.com/s2/favicons?domain=${TP[id].domain}&sz=64`;
@@ -113,13 +168,13 @@ export const tpLinks = {
     fromIata && toIata && /^[A-Z]{3}$/.test(fromIata) && /^[A-Z]{3}$/.test(toIata)
       ? `https://www.aviasales.com/search/${fromIata}${ddmm(date)}${toIata}1`
       : `https://www.aviasales.com/`,
-  tripFlights: () => `https://www.trip.com/flights/`,
+  tripFlights: () => `https://www.aviasales.com/`,
   kiwi: () => `https://www.kiwi.com/en/`,
   /** Kara/deniz yolu: Asya için 12Go, Avrupa/Amerika için Omio, diğerleri için Kiwi */
   ground: (fromCode: string, toCode: string): { id: TpId; url: string } =>
     ASIA_RAIL.has(toCode) || ASIA_RAIL.has(fromCode)
-      ? { id: 'twelvego', url: `https://12go.asia/en` }
-      : EU_RAIL.has(toCode) && EU_RAIL.has(fromCode)
+      ? (LOCKED.has('twelvego') ? { id: 'kiwi', url: `https://www.kiwi.com/en/` } : { id: 'twelvego', url: `https://12go.asia/en` })
+      : EU_RAIL.has(toCode) && EU_RAIL.has(fromCode) && !LOCKED.has('omio')
         ? { id: 'omio', url: `https://www.omio.com/` }
         : { id: 'kiwi', url: `https://www.kiwi.com/en/` },
   booking: (place: string) => `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(place)}`,
@@ -130,10 +185,23 @@ export const tpLinks = {
   kiwitaxi: () => `https://kiwitaxi.com/`,
   welcomePickups: () => `https://www.welcomepickups.com/`,
   gettransfer: () => `https://gettransfer.com/`,
-  discovercars: (country: string) => `https://www.discovercars.com/${slug(country)}`,
+  discovercars: (country: string) => (LOCKED.has('discovercars') ? `https://www.economybookings.com/` : `https://www.discovercars.com/${slug(country)}`),
+  economybookings: () => `https://www.economybookings.com/`,
+  getrentacar: () => `https://getrentacar.com/`,
+  qeeq: () => `https://www.qeeq.com/`,
+  autoeurope: () => `https://www.autoeurope.eu/`,
+  bikesbooking: () => `https://bikesbooking.com/`,
+  gocity: () => `https://gocity.com/`,
+  wegotrip: () => `https://wegotrip.com/`,
+  kkday: () => `https://www.kkday.com/`,
+  gigsky: () => `https://www.gigsky.com/`,
+  drimsim: () => `https://drimsim.com/`,
+  compensair: () => `https://www.compensair.com/`,
+  /** Tur/bilet araması: kilitliyse Klook */
+  tours: (place: string) => (LOCKED.has('getyourguide') ? `https://www.klook.com/search/result/?query=${encodeURIComponent(place)}` : `https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
   localrent: () => `https://localrent.com/`,
-  getyourguide: (place: string) => `https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`,
-  viator: (place: string) => `https://www.viator.com/searchResults/all?text=${encodeURIComponent(place)}`,
+  getyourguide: (place: string) => routeLink(`https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
+  viator: (place: string) => routeLink(`https://www.viator.com/searchResults/all?text=${encodeURIComponent(place)}`),
   klook: () => `https://www.klook.com/`,
   tiqets: () => `https://www.tiqets.com/`,
   airalo: (countrySlug: string) => `https://www.airalo.com/${countrySlug}-esim`,

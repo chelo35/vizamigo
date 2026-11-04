@@ -5,6 +5,19 @@ import './index.css';
 import './styles/redesign.css';
 import './styles/redesign-pages.css';
 import './next/next.css';
+import { routeLink } from './data/tpPartners';
+
+// Kilitli (komisyon getirmeyen) marka bağlantılarını tıklama anında bağlı alternatife çevir (eski bileşenler dahil)
+if (typeof document !== 'undefined') {
+  const fix = (e: Event) => {
+    const a = (e.target as Element | null)?.closest?.('a[href^="http"]') as HTMLAnchorElement | null;
+    if (!a) return;
+    const to = routeLink(a.href);
+    if (to !== a.href) a.href = to;
+  };
+  document.addEventListener('pointerdown', fix, true);
+  document.addEventListener('click', fix, true);
+}
 
 // Register PWA service worker for offline in-flight access
 if (typeof window !== 'undefined' && 'serviceWorker' in navigator && import.meta.env.PROD) {

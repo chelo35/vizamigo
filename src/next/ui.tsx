@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Icon, IconName } from './Icon';
-import { tpIdFromUrl } from '../data/tpPartners';
+import { tpIdFromUrl, routeLink } from '../data/tpPartners';
 import { TileArt } from './TileArt';
 import { useI18n } from '../data/i18n';
 import { FlyingBanner } from '../components/redesign/FlyingBanner';
@@ -21,12 +21,15 @@ export const Btn: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement> & { var
   </button>
 );
 
-export const LinkBtn: React.FC<{ href: string; children: React.ReactNode; variant?: BtnVariant; icon?: IconName; small?: boolean }> = ({ href, children, variant = 'soft', icon = 'external', small }) => (
-  <a href={href} target="_blank" rel={tpIdFromUrl(href) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'} className={`vz-btn vz-btn-${variant}${small ? ' sm' : ''}`}>
+export const LinkBtn: React.FC<{ href: string; children: React.ReactNode; variant?: BtnVariant; icon?: IconName; small?: boolean }> = ({ href: raw, children, variant = 'soft', icon = 'external', small }) => {
+  const href = routeLink(raw);
+  return (
+  <a key={href} href={href} target="_blank" rel={tpIdFromUrl(href) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'} className={`vz-btn vz-btn-${variant}${small ? ' sm' : ''}`}>
     <span>{children}</span>
     <Icon name={icon} size={small ? 15 : 17} duo={false} />
   </a>
-);
+  );
+};
 
 export const Chip: React.FC<{ on?: boolean; onClick?: () => void; children: React.ReactNode; count?: number; icon?: IconName }> = ({ on, onClick, children, count, icon }) => (
   <button type="button" className={`vz-chip${on ? ' on' : ''}`} aria-pressed={!!on} onClick={onClick}>
@@ -99,7 +102,8 @@ export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: Icon
   </div>
 );
 
-export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: React.ReactNode; sub?: React.ReactNode; right?: React.ReactNode; onClick?: () => void; href?: string }> = ({ icon, lead, title, sub, right, onClick, href }) => {
+export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: React.ReactNode; sub?: React.ReactNode; right?: React.ReactNode; onClick?: () => void; href?: string }> = ({ icon, lead, title, sub, right, onClick, href: raw }) => {
+  const href = raw ? routeLink(raw) : raw;
   const inner = (
     <>
       {lead ? <span className="vz-row-lead">{lead}</span> : icon ? <span className="vz-ic sm"><Icon name={icon} size={18} /></span> : null}
@@ -111,7 +115,7 @@ export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: Rea
       {(onClick || href) && !right && <Icon name={href ? 'external' : 'next'} size={18} duo={false} className="vz-row-go" />}
     </>
   );
-  if (href) return <a className="vz-row link" href={href} target="_blank" rel={tpIdFromUrl(href) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}>{inner}</a>;
+  if (href) return <a key={href} className="vz-row link" href={href} target="_blank" rel={tpIdFromUrl(href) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}>{inner}</a>;
   if (onClick) return <button type="button" className="vz-row link" onClick={onClick}>{inner}</button>;
   return <div className="vz-row">{inner}</div>;
 };

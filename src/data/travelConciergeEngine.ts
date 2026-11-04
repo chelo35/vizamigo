@@ -16,7 +16,7 @@
 
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
-import { TP, tpLinks, type TpId } from './tpPartners';
+import { TP, tpLinks, LOCKED, type TpId } from './tpPartners';
 
 export type ConciergeStageId = 'flights' | 'accommodation' | 'transit' | 'activities' | 'essentials';
 
@@ -235,7 +235,9 @@ function applyRestrictedBrandAlgorithm(
   const origin = originPassportCode.toUpperCase();
 
   // Step 1: Filter out permanently folded platforms in the target destination
+  // and brands still locked for our Travelpayouts project (Booking stays as the hotel service link)
   const activeNodes = nodes.filter((node) => {
+    if (LOCKED.has(node.id as TpId) && node.id !== 'booking') return false;
     if (node.id === 'uber' && UBER_FOLDED_OR_INACTIVE_COUNTRIES.has(target)) {
       return false;
     }
@@ -421,6 +423,12 @@ export function getCountryConciergePlan(
       tEn: isEurope ? 'Airport pickup with a local driver and city tips' : 'Get offers from drivers and pick the best transfer',
       cTr: 'Transfer seçenekleri', cEn: 'Transfer options'
     }, undefined, 'slate'),
+    node('economybookings', 'transit', 2, tpLinks.economybookings(), {
+      bTr: 'Araç kiralama', bEn: 'Car rental',
+      tTr: `${countryNameTr} genelinde kiralama şirketlerini karşılaştır; ücretsiz iptal seçenekleri`,
+      tEn: `Compare rental companies across ${countryNameEn}; free-cancellation options`,
+      cTr: 'Araç kirala', cEn: 'Rent a car'
+    }, undefined, 'coral'),
     node('localrent', 'transit', 4, tpLinks.localrent(), {
       bTr: 'Yerel kiralama', bEn: 'Local rentals',
       tTr: 'Yerel firmalardan depozitosuz veya kartsız araç kiralama seçenekleri',
@@ -446,11 +454,29 @@ export function getCountryConciergePlan(
       tEn: 'Experiences picked by traveller reviews',
       cTr: 'Viator deneyimleri', cEn: 'Viator experiences'
     }, undefined, 'coral'),
-    node(isAsia ? 'klook' : 'tiqets', 'activities', 3, isAsia ? tpLinks.klook() : tpLinks.tiqets(), {
+    node('klook', 'activities', 1, tpLinks.tours(`${capitalEn}`), {
+      bTr: 'Tur ve aktivite', bEn: 'Tours & activities',
+      tTr: `${countryNameTr} turları, günübirlik geziler ve aktiviteler`,
+      tEn: `Tours, day trips and activities in ${countryNameEn}`,
+      cTr: 'Turlara bak', cEn: 'Browse tours'
+    }),
+    node('gocity', 'activities', 4, tpLinks.gocity(), {
+      bTr: 'Şehir kartı', bEn: 'City pass',
+      tTr: 'Tek kartla onlarca müze ve gezilecek yere giriş',
+      tEn: 'One pass for dozens of museums and sights',
+      cTr: 'Şehir kartları', cEn: 'City passes'
+    }, undefined, 'slate'),
+    node('wegotrip', 'activities', 5, tpLinks.wegotrip(), {
+      bTr: 'Sesli rehber', bEn: 'Audio guide',
+      tTr: 'Telefonda kendi hızında gezebileceğin sesli turlar',
+      tEn: 'Self-guided audio tours on your phone',
+      cTr: 'Sesli turlar', cEn: 'Audio tours'
+    }, undefined, 'teal'),
+    node(isAsia ? 'kkday' : 'tiqets', 'activities', 3, isAsia ? tpLinks.kkday() : tpLinks.tiqets(), {
       bTr: isAsia ? 'Asya’da güçlü' : 'Sırasız giriş', bEn: isAsia ? 'Strong in Asia' : 'Skip the line',
       tTr: isAsia ? 'Tema parkları, ulaşım kartları ve yerel aktiviteler' : 'Müze ve gezilecek yerlere sırasız, mobil bilet',
       tEn: isAsia ? 'Theme parks, transport passes and local activities' : 'Skip-the-line mobile tickets to museums and sights',
-      cTr: isAsia ? 'Klook’a bak' : 'Tiqets biletleri', cEn: isAsia ? 'Browse Klook' : 'Tiqets tickets'
+      cTr: isAsia ? 'KKday’e bak' : 'Tiqets biletleri', cEn: isAsia ? 'Browse KKday' : 'Tiqets tickets'
     }, undefined, 'amber')
   ];
   const activityPartners = applyRestrictedBrandAlgorithm(activityPartnersRaw, code, origin);
