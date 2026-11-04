@@ -923,3 +923,46 @@ html.dark .vz-trip-alt i { color: #86efac; }
 html.dark .vz-trip-note { color: #fbbf24; }
 .vz-trip-pick .vz-plogo { width: 22px !important; height: 22px !important; min-width: 22px; padding: 0; border-radius: 50%; }
 .vz-trip-pick .vz-plogo img { width: 16px; height: 16px; }
+
+/* Hemen ucuza al */
+.vz-qd { margin: 0 0 32px; padding: 14px; border-radius: 20px; background: var(--rd-surface, #fff); border: 1px solid var(--rd-line, #e3eaec); box-shadow: 0 6px 24px rgba(13, 60, 70, 0.06); }
+.vz-qd-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 0 2px 10px; }
+.vz-qd-head b { font-size: 17px; letter-spacing: -0.01em; }
+.vz-qd-head span { font-size: 13px; color: var(--rd-muted, #5b6b70); }
+.vz-qd-btns { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.vz-qd-btns button { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 8px 10px; border-radius: 14px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-sea-tint, #eef8f7); color: var(--rd-sea-ink, #0b4f4a); font: inherit; font-weight: 700; font-size: 14px; cursor: pointer; transition: background .15s, border-color .15s, transform .15s; }
+.vz-qd-btns button:hover { border-color: var(--rd-sea, #0d9488); transform: translateY(-1px); }
+.vz-qd-btns button.on { background: var(--rd-sea, #0d9488); border-color: var(--rd-sea, #0d9488); color: #fff; }
+.vz-qd-btns button.on svg * { stroke: #fff; }
+.vz-qd-panel { margin-top: 12px; }
+.vz-qd-body { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 14px; border-radius: 16px; background: var(--rd-sea-tint, #eef8f7); }
+.vz-qd-body .vz-trip-pick { border-top: 0; padding: 0; }
+.vz-qd-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); padding-right: 28px; }
+.vz-qd-close { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border-radius: 50%; border: 0; background: transparent; color: var(--rd-muted, #5b6b70); font-size: 15px; cursor: pointer; }
+.vz-qd-res { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; }
+.vz-qd-fare { position: relative; display: flex; flex-direction: column; gap: 2px; padding: 12px; border-radius: 14px; background: var(--rd-surface, #fff); border: 1px solid var(--rd-line, #dfe7e8); color: inherit; text-decoration: none; }
+.vz-qd-fare:hover { border-color: var(--rd-sea, #0d9488); }
+.vz-qd-fare.best { border-color: #16a34a; box-shadow: 0 0 0 1px #16a34a inset; }
+.vz-qd-fare em { font-style: normal; font-size: 11px; font-weight: 700; color: #15803d; }
+.vz-qd-fare b { font-size: 20px; letter-spacing: -0.01em; }
+.vz-qd-fare span { font-size: 13px; }
+.vz-qd-fare small { font-size: 12px; color: var(--rd-muted, #5b6b70); }
+.vz-qd-foot { margin: 0; font-size: 12px; color: var(--rd-muted, #5b6b70); }
+.vz-qd-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.vz-qd-chips button { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.vz-qd-chips button.on { border-color: var(--rd-sea, #0d9488); color: var(--rd-sea-ink, #0b4f4a); background: #fff; box-shadow: 0 0 0 1px var(--rd-sea, #0d9488) inset; }
+html.dark .vz-qd { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08); }
+html.dark .vz-qd-btns button { background: rgba(45, 212, 191, 0.08); border-color: rgba(255,255,255,0.1); color: #c9f3ec; }
+html.dark .vz-qd-btns button.on { background: #0d9488; color: #fff; }
+html.dark .vz-qd-body { background: rgba(255,255,255,0.04); }
+html.dark .vz-qd-fare, html.dark .vz-qd-chips button { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
+@media (max-width: 760px) {
+  .vz-qd { margin: 0 -4px 24px; padding: 12px; }
+  .vz-qd-btns { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .vz-qd-btns button { flex-direction: column; gap: 4px; min-height: 60px; font-size: 12.5px; padding: 8px 4px; text-align: center; line-height: 1.2; }
+  .vz-qd-grid { grid-template-columns: 1fr 1fr; padding-right: 0; }
+  .vz-qd-grid > :first-child:nth-last-child(odd), .vz-qd-grid > :only-child { grid-column: 1 / -1; }
+  .vz-qd-close { top: 4px; right: 4px; }
+  .vz-qd-res { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 760px) { .vz-qd-body { padding-top: 34px; } }

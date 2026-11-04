@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { Btn, Chip, Chips, Field, List, Row, VisaBadge } from './ui';
 import { PartnerLogo } from './PartnerLogo';
+import { Picks, type PickItem } from './Picks';
 import { Icon } from './Icon';
 import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
@@ -358,25 +359,6 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   );
 };
 
-type PickItem = { id: string; url: string; blocked?: boolean };
 const EU_CARS = new Set(['AT', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'NL', 'NO', 'PL', 'PT', 'SE', 'SI', 'SK', 'MT', 'CY']);
-
-/** Aynı hizmeti veren firmalar arasından seçim (logolu küçük düğmeler) */
-const Picks: React.FC<{ label: string; items: PickItem[]; k: string }> = ({ label, items, k }) => {
-  const { l } = useI18n();
-  return (
-    <div className="vz-trip-pick">
-      <span className="vz-muted">{label}</span>
-      <div>
-        {items.map((p) => (
-          <a key={`${k}-${p.id}-${p.url}`} href={p.url} target="_blank" rel="noopener noreferrer sponsored" className={p.blocked ? 'off' : undefined} title={p.blocked ? l('Türkiye\'den erişim engelli', 'Blocked in Türkiye', 'In der Türkei gesperrt', 'Bloqueado en Turquía', 'Заблокирован в Турции') : undefined}>
-            <PartnerLogo id={p.id} size={18} />
-            <span>{TP[p.id as TpId].name}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 export default TripPlanner;
