@@ -163,7 +163,7 @@
     <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
     <script defer src="/_vercel/insights/script.js"></script>
     <!-- Travelpayouts Drive (vizamigo.com, proje 586306): seyahat bağlantılarını ortaklık bağlantısına çevirir.
-         Sayfa açılışını yavaşlatmasın diye sayfa yüklendikten ve tarayıcı boşa çıktıktan sonra yüklenir. -->
+         Sayfa açılışını yavaşlatmasın diye ana sayfada hiç, diğer sayfalarda ilk etkileşimden sonra yüklenir. -->
     <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
       (function () {
         function tp() {
@@ -173,8 +173,16 @@
           script.src = 'https://emrld.ltd/NTg2MzA2.js?t=586306';
           document.head.appendChild(script);
         }
-        function later() { ('requestIdleCallback' in window) ? requestIdleCallback(tp, { timeout: 4000 }) : setTimeout(tp, 1500); }
-        if (document.readyState === 'complete') later(); else window.addEventListener('load', later);
+        // Ana sayfada yüklenmez (oradaki bağlantılar zaten ortaklık bağlantısı; Drive o sayfada telefonu saniyelerce kilitliyordu).
+        // Diğer sayfalarda ziyaretçinin ilk dokunuşu/kaydırması sonrasında, tarayıcı boşa çıkınca yüklenir.
+        if (/^\/((en|de|es|ru)\/?)?$/.test(location.pathname)) return;
+        var done = false, ev = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
+        function go() {
+          if (done) return; done = true;
+          ev.forEach(function (e) { window.removeEventListener(e, go, true); });
+          ('requestIdleCallback' in window) ? requestIdleCallback(tp, { timeout: 3000 }) : setTimeout(tp, 1000);
+        }
+        ev.forEach(function (e) { window.addEventListener(e, go, { capture: true, passive: true }); });
       })();
     </script>
   </head>
