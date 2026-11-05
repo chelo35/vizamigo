@@ -1,7 +1,11 @@
 // Ana sayfa ve menü için hafif rehber listesi (tam metin guides.ts içinde, ayrı yüklenir)
-export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
+export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "us_visa", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
 export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string }>> = {
  "tr": {
+  "us_visa": {
+   "t": "Amerika vizesi 2026",
+   "d": "185 $ ücret, DS-160, ustraveldocs randevusu, mülakat ve 214(b) reddi."
+  },
   "visa_fees": {
    "t": "Vize ücretleri 2026",
    "d": "Schengen 90 €, İngiltere 135 £, Amerika 185 $, Kanada, Çin: ülke ülke ücret ve hizmet bedelleri."
@@ -40,6 +44,14 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "en": {
+  "us_visa": {
+   "t": "US visa (B1/B2) 2026",
+   "d": "$185 fee, DS-160, appointments by country, interview waiver rules."
+  },
+  "visa_free_ru": {
+   "t": "Visa-free for Russians",
+   "d": "Countries Russians can visit visa-free, on arrival or with an eVisa in 2026."
+  },
   "visa_fees": {
    "t": "Visa fees 2026",
    "d": "Schengen €90, UK £135, US $185, Canada, China: fees and service charges."
@@ -108,6 +120,10 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "es": {
+  "us_visa": {
+   "t": "Visa americana 2026",
+   "d": "Costo 185 USD, DS-160, cita en CAS y consulado, entrevista y renovación sin entrevista."
+  },
   "id_card_travel": {
    "t": "Viajar con DNI",
    "d": "Países que aceptan el DNI en lugar del pasaporte, con condiciones."
@@ -138,6 +154,10 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "ru": {
+  "visa_free_ru": {
+   "t": "Безвиз для россиян 2026",
+   "d": "Полный список стран без визы, Китай до 2027, Таиланд 30 дней, Шенген и США."
+  },
   "id_card_travel": {
    "t": "Поездки по ID-карте",
    "d": "Куда можно по ID-карте вместо паспорта: турецкая карта и карты ЕС."

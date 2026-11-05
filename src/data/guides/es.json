@@ -261,5 +261,108 @@
     "a": "Sí, para estancias de hasta 30 días."
    }
   ]
+ },
+ "us_visa": {
+  "title": "Visa americana 2026: requisitos, costo, cita y entrevista (guía completa)",
+  "short": "Visa americana 2026",
+  "metaDesc": "Cómo sacar la visa americana B1/B2 en 2026: costo 185 USD, formulario DS-160, cita en CAS y consulado, entrevista obligatoria, renovación sin entrevista y validez de 10 años para México, Colombia y Argentina.",
+  "answer": "La visa de turista y negocios de Estados Unidos (B1/B2) cuesta 185 USD en 2026. El proceso es: llenar el formulario DS-160, pagar el derecho, agendar la cita (en México primero en un CAS para huellas y foto y después en el consulado) y presentarse a la entrevista. Desde el 1 de octubre de 2025 casi todos los solicitantes deben ir a entrevista; solo algunas renovaciones la evitan. Para México, Colombia y Argentina la visa suele otorgarse por hasta 10 años, con entradas múltiples.",
+  "sections": [
+   {
+    "h": "Paso a paso",
+    "list": [
+     "Llena el formulario DS-160 en línea y guarda el número de confirmación.",
+     "Paga el derecho de 185 USD; el comprobante sirve aproximadamente un año.",
+     "Agenda la cita en el sistema oficial de tu país (México, Colombia y Argentina: ais.usvisa-info.com). En México, la cita en el CAS (huellas y foto) debe ser al menos un día antes de la entrevista en el consulado.",
+     "Acude a la entrevista con tu pasaporte y la confirmación del DS-160.",
+     "Recoge el pasaporte con la visa o recíbelo por mensajería. En México la visa de turista tarda alrededor de 3 a 4 semanas; las renovaciones, de 8 a 10 semanas."
+    ]
+   },
+   {
+    "h": "¿Quién puede renovar sin entrevista?",
+    "p": [
+     "Desde el 1 de octubre de 2025, casi todos deben presentarse a entrevista, incluidos menores de 14 y mayores de 79 años. Puedes renovar sin entrevista solo si tu visa B1/B2 (o tarjeta láser en México) se emitió con validez completa, venció hace menos de 12 meses, la obtuviste con 18 años o más y no tienes negativas pendientes."
+    ]
+   },
+   {
+    "h": "Costo y vigencia por país",
+    "table": {
+     "head": [
+      "País",
+      "Costo",
+      "Vigencia habitual",
+      "Cita"
+     ],
+     "rows": [
+      [
+       "México",
+       "185 USD",
+       "Hasta 10 años, entradas múltiples (también la tarjeta láser BCC)",
+       "ais.usvisa-info.com (CAS + consulado)"
+      ],
+      [
+       "Colombia",
+       "185 USD",
+       "Hasta 10 años, entradas múltiples",
+       "ais.usvisa-info.com"
+      ],
+      [
+       "Argentina",
+       "185 USD",
+       "Hasta 10 años, entradas múltiples",
+       "ais.usvisa-info.com (cita acelerada con costo extra)"
+      ],
+      [
+       "India",
+       "185 USD",
+       "Hasta 10 años, entradas múltiples",
+       "ustraveldocs.com/in"
+      ],
+      [
+       "Turquía",
+       "185 USD",
+       "Según reciprocidad",
+       "ustraveldocs.com/tr"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "La “visa integrity fee” de 250 USD",
+    "p": [
+     "Una ley de julio de 2025 creó un cargo adicional de 250 USD que se cobraría al emitir la visa. El Departamento de Seguridad Nacional indicó que se implementará en una publicación futura y no encontramos un anuncio oficial de que ya se esté cobrando. Revisa la página de tu consulado antes de pagar."
+    ]
+   },
+   {
+    "h": "¿Por qué niegan la visa? (sección 214(b))",
+    "p": [
+     "La causa más común es la 214(b): el oficial considera que no demostraste suficientes lazos con tu país (trabajo, estudios, familia, bienes) para regresar. No se puede apelar, pero puedes volver a solicitar con un nuevo DS-160 y un nuevo pago, idealmente cuando tu situación haya cambiado."
+    ]
+   },
+   {
+    "h": "Argentina y el programa sin visa (ESTA)",
+    "p": [
+     "Estados Unidos y Argentina firmaron en julio de 2025 una declaración de intención para que Argentina vuelva al Programa de Exención de Visas, pero el proceso aún no ha terminado: los argentinos todavía necesitan visa."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Cuánto cuesta la visa americana en 2026?",
+    "a": "185 USD por persona para la visa de turista/negocios B1/B2. El cargo adicional de 250 USD aún no tiene fecha oficial de cobro."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la visa americana?",
+    "a": "Para México, Colombia, Argentina e India suele otorgarse por hasta 10 años con entradas múltiples."
+   },
+   {
+    "q": "¿Puedo renovar la visa sin entrevista?",
+    "a": "Solo si la visa anterior se emitió con validez completa, venció hace menos de 12 meses, tenías 18 años o más al obtenerla y no tienes negativas pendientes."
+   },
+   {
+    "q": "¿Dónde veo los tiempos de espera para la cita?",
+    "a": "En la herramienta oficial del Departamento de Estado: travel.state.gov, sección “Visa Appointment Wait Times”."
+   }
+  ]
  }
 }

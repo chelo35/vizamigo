@@ -257,7 +257,7 @@ async function main() {
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,
         canonical: url,
-        alts: [...gl.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }],
+        alts: [...gl.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/${gl.includes('en') ? 'en' : gl[0]}/info/${id}` }],
         title: `${g.title} | Vizamigo`,
         desc: g.metaDesc,
         head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,

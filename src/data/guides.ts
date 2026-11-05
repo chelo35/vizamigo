@@ -13,19 +13,50 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments';
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa';
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['us_visa', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
 export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[] }> = {
+  us_visa: {
+    checked: '2026-11-05',
+    icon: 'passport',
+    countries: ['US'],
+    langs: ['es', 'en', 'tr'],
+    sources: [
+      { label: 'U.S. State Department: Interview waiver update (18 Sept 2025)', url: 'https://travel.state.gov/content/travel/en/News/visas-news/interview-waiver-update-sept-18-2025.html' },
+      { label: 'U.S. State Department: Visa appointment wait times', url: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/wait-times.html' },
+      { label: 'U.S. State Department: Visa denials (214(b))', url: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visa-denials.html' },
+      { label: 'U.S. State Department: Reciprocity – Mexico', url: 'https://travel.state.gov/content/travel/en/us-visas/Visa-Reciprocity-and-Civil-Documents-by-Country/Mexico.html' },
+      { label: 'U.S. State Department: Border Crossing Card', url: 'https://travel.state.gov/content/travel/en/us-visas/tourism-visit/border-crossing-card.html' },
+      { label: 'U.S. Embassy Mexico: Visas', url: 'https://mx.usembassy.gov/visas/' },
+      { label: 'U.S. Embassy Argentina: Visa Waiver Program process', url: 'https://ar.usembassy.gov/secretary-noem-kickstarts-process-for-argentina-to-rejoin-visa-waiver-program/' },
+      { label: 'Federal Register: ESTA fee', url: 'https://public-inspection.federalregister.gov/2025-16453.pdf' }
+    ]
+  },
+  visa_free_ru: {
+    checked: '2026-11-05',
+    icon: 'globe',
+    countries: [],
+    langs: ['ru', 'en'],
+    list: { passport: 'RU', groups: ['free', 'voa', 'evisa', 'eta'] },
+    sources: [
+      { label: 'Shanghai Municipal Government: visa-free policy for Russian citizens extended to 31 Dec 2027', url: 'https://english.shanghai.gov.cn/en-VisaLatest/20260520/0b86f04686c84c4a8bdca4f77dbee1eb.html' },
+      { label: 'Royal Thai Embassy Moscow: visa exemption for holders of Russian passports', url: 'https://moscow.thaiembassy.org/en/content/101305-announcement-no-1-2562-visa-exemption-for-holders-of-russian-passports' },
+      { label: 'European Commission: rules for multiple-entry visas for Russian nationals (2025)', url: 'https://home-affairs.ec.europa.eu/commission-implementing-decision-establishing-rules-issuing-multiple-entry-visas-russian-nationals_en' },
+      { label: 'EEAS: full suspension of visa facilitation with Russia', url: 'https://www.eeas.europa.eu/delegations/ukraine/council-adopts-full-suspension-visa-facilitation-russia_en' },
+      { label: 'U.S. State Department: applicants resident in Russia', url: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visas-news-archive/announcement-of-F-M-J-processing-posts-for-applicants-resident-in-russia.html' },
+      { label: 'Sri Lanka Department of Immigration: free tourist visas (40 countries)', url: 'https://www.immigration.gov.lk/content/files/visa/Free%20Tourist%20Visas%20for%20Nationals%20of%2040%20Selected%20Countries.pdf' }
+    ]
+  },
   visa_fees: {
     checked: '2026-11-05',
     icon: 'wallet',

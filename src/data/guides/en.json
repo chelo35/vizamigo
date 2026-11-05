@@ -752,5 +752,93 @@
     "a": "Normally 15 days, up to 45 if more checks are needed."
    }
   ]
+ },
+ "visa_free_ru": {
+  "title": "Visa-free countries for Russian passport holders 2026 (full list)",
+  "short": "Visa-free for Russians",
+  "metaDesc": "Russian citizens can visit {free} countries visa-free in 2026, {voa} with visa on arrival and {evisa} with an eVisa. China visa-free until 31 Dec 2027, Thailand 30 days, Schengen and US rules.",
+  "answer": "In 2026 Russian passport holders can travel visa-free to {free} countries; {voa} more issue a visa on arrival, {evisa} offer an eVisa and {eta} require an electronic authorisation. China has extended visa-free stays of up to 30 days for Russians until 31 December 2027, and Thailand has allowed 30 days visa-free since 15 September 2026.",
+  "sections": [
+   {
+    "h": "Key changes in 2025–2026",
+    "list": [
+     "China: up to 30 days visa-free for tourism, business, family visits and transit, extended to 31 December 2027.",
+     "Thailand: 30 days visa-free since 15 September 2026 (was 60), extendable once by 30 days.",
+     "Georgia: health insurance of at least GEL 30,000 is mandatory since 1 January 2026.",
+     "Sri Lanka: free 30-day ETA since 25 May 2026.",
+     "Vietnam: 45 days visa-free.",
+     "Türkiye: 60 days per visit, max 90 in any 180."
+    ]
+   },
+   {
+    "h": "Schengen and US visas",
+    "p": [
+     "Russians pay the full €90 Schengen fee since the EU suspended the visa facilitation agreement in 2022. Since 7 November 2025 Russians living in Russia normally receive single-entry visas only.",
+     "For US visas, Russian nationals are directed to the US embassies in Astana and Warsaw (since 6 September 2025); the B1/B2 fee is $185."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Do Russians need a visa for China in 2026?",
+    "a": "No, for stays of up to 30 days; the visa-free policy runs until 31 December 2027."
+   },
+   {
+    "q": "How long can Russians stay in Thailand without a visa?",
+    "a": "30 days since 15 September 2026, extendable once by 30 days."
+   }
+  ]
+ },
+ "us_visa": {
+  "title": "US tourist visa (B1/B2) 2026: fee, DS-160, appointment and interview",
+  "short": "US visa (B1/B2) 2026",
+  "metaDesc": "How to get a US B1/B2 visa in 2026: $185 fee, DS-160 form, booking the appointment in India, Mexico, Colombia, Argentina or Türkiye, interview waiver rules since October 2025, 10-year validity.",
+  "answer": "The US visitor visa (B1/B2) costs $185 in 2026. Fill in the DS-160, pay the fee, book your appointment in your country of nationality or residence and attend the interview. Since 1 October 2025 almost all applicants must interview in person; only some renewals can skip it. Citizens of India, Mexico, Colombia and Argentina usually receive a 10-year multiple-entry visa.",
+  "sections": [
+   {
+    "h": "Step by step",
+    "list": [
+     "Complete the DS-160 online and keep the confirmation number.",
+     "Pay the $185 fee; the receipt is valid for about one year.",
+     "Book the appointment on your country's official system: ustraveldocs.com for India and Türkiye, ais.usvisa-info.com for Mexico, Colombia and Argentina.",
+     "Attend the interview with your passport and DS-160 confirmation.",
+     "Collect your passport or receive it by courier."
+    ]
+   },
+   {
+    "h": "Who can renew without an interview?",
+    "p": [
+     "Since 1 October 2025 nearly everyone must interview, including children under 14 and adults over 79. You can renew without an interview only if your previous B1/B2 visa was issued for full validity, expired within the last 12 months, was issued when you were 18 or older, and you have no unresolved refusals."
+    ]
+   },
+   {
+    "h": "The $250 'visa integrity fee'",
+    "p": [
+     "A July 2025 law created an extra $250 fee charged at visa issuance. DHS said it will be implemented in a future publication, and we found no official notice that it is being collected yet. Check your embassy's fee page before paying."
+    ]
+   },
+   {
+    "h": "Why visas are refused: 214(b)",
+    "p": [
+     "The most common reason is section 214(b): the officer was not convinced of your ties to home (job, studies, family, property). It cannot be appealed, but you can reapply with a new DS-160 and fee, ideally when your circumstances have changed."
+    ]
+   },
+   {
+    "h": "Visa Waiver countries: ESTA instead of a visa",
+    "p": [
+     "Citizens of Visa Waiver Program countries (most of the EU, the UK, Japan, Australia and others) apply for an ESTA online instead. The ESTA fee rose from $21 to $40 on 30 September 2025."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "How much is a US tourist visa in 2026?",
+    "a": "$185 for a B1/B2 visa. The extra $250 integrity fee has no official collection start date yet."
+   },
+   {
+    "q": "Where can I check appointment wait times?",
+    "a": "On the State Department's official 'Visa Appointment Wait Times' tool on travel.state.gov."
+   }
+  ]
  }
 }

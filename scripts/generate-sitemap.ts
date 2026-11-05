@@ -148,7 +148,7 @@ export function generateSitemapXml(): string {
     const gl = (GUIDE_META[id].langs || langCodes) as typeof langCodes;
     const alts = [
       ...gl.map((lang) => ({ hreflang: lang, href: `${BASE_URL}/${lang}/info/${id}` })),
-      { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }
+      { hreflang: 'x-default', href: `${BASE_URL}/${gl.includes('en' as never) ? 'en' : gl[0]}/info/${id}` }
     ];
     gl.forEach((lang) => {
       entries.push({ loc: `${BASE_URL}/${lang}/info/${id}`, alternates: alts as never, lastmod: GUIDE_META[id].checked, changefreq: 'weekly', priority: '0.8' });
