@@ -1,7 +1,15 @@
 // Ana sayfa ve menü için hafif rehber listesi (tam metin guides.ts içinde, ayrı yüklenir)
-export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
+export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
 export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string }>> = {
  "tr": {
+  "visa_fees": {
+   "t": "Vize ücretleri 2026",
+   "d": "Schengen 90 €, İngiltere 135 £, Amerika 185 $, Kanada, Çin: ülke ülke ücret ve hizmet bedelleri."
+  },
+  "visa_appointments": {
+   "t": "Vize randevusu ve takip",
+   "d": "Hangi ülke hangi merkezle çalışır (VFS, iDATA, BLS, Kosmos), randevu ve takip adresleri."
+  },
   "id_card_travel": {
    "t": "Kimlikle gidilen ülkeler",
    "d": "Çipli T.C. kimlikle pasaportsuz gidilebilen ülkeler ve koşulları; Bosna ve Sırbistan'ın durumu."
@@ -32,6 +40,14 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "en": {
+  "visa_fees": {
+   "t": "Visa fees 2026",
+   "d": "Schengen €90, UK £135, US $185, Canada, China: fees and service charges."
+  },
+  "visa_appointments": {
+   "t": "Visa appointments",
+   "d": "Which centre handles each country from Türkiye, booking and tracking addresses."
+  },
   "id_card_travel": {
    "t": "Travel with an ID card",
    "d": "Where the Turkish and EU ID cards are accepted instead of a passport, with conditions."

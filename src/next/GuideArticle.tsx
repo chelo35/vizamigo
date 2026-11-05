@@ -33,6 +33,14 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
           <h2>{s.h}</h2>
           {s.p?.map((t) => <p key={t}>{t}</p>)}
           {s.list && <ul>{s.list.map((t) => <li key={t}>{t}</li>)}</ul>}
+          {s.table && (
+            <div className="vz-gtable">
+              <table>
+                <thead><tr>{s.table.head.map((h) => <th key={h}>{h}</th>)}</tr></thead>
+                <tbody>{s.table.rows.map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody>
+              </table>
+            </div>
+          )}
         </section>
       ))}
       <section>

@@ -294,5 +294,497 @@
     "a": "Yeni tip çipli kimlik ve 1 Ocak 2026'dan beri zorunlu olan, en az 30.000 GEL teminatlı seyahat sağlık sigortası."
    }
   ]
+ },
+ "visa_fees": {
+  "title": "Vize ücretleri 2026: Schengen, İngiltere, Amerika ve diğerleri",
+  "short": "Vize ücretleri 2026",
+  "metaDesc": "2026 vize ücretleri: Schengen vizesi 90 €, İngiltere 135 £, Amerika 185 $, Kanada 100 CAD + 85 CAD biyometri, Çin 1.225 TL. Aracı kurum (VFS, iDATA, BLS, Kosmos) ve çocuk ücretleri.",
+  "answer": "2026'da Schengen vizesi ücreti 90 € (6–12 yaş 45 €, 6 yaş altı ücretsiz). Buna başvuruyu alan merkezin (VFS Global, iDATA, BLS, Kosmos) hizmet bedeli eklenir. İngiltere 6 aylık ziyaretçi vizesi 135 £, Amerika B1/B2 185 $, Kanada 100 CAD + 85 CAD biyometri. Japonya'ya 90 güne kadar vize gerekmez.",
+  "sections": [
+   {
+    "h": "Schengen vizesi ücreti",
+    "p": [
+     "Schengen vize ücreti bütün Schengen ülkeleri için aynı: yetişkinlere 90 €, 6–12 yaş çocuklara 45 €, 6 yaş altına ücretsiz (11 Haziran 2024'ten beri geçerli; 2026'da değişmedi). Ücret konsolosluk adına başvuru merkezinde ödenir; bazı merkezler TL ya da USD karşılığını ister.",
+     "Başvuru merkezleri ayrıca hizmet bedeli alır. Bu bedel merkeze ve şehre göre değişir; kargo, SMS ya da VIP salon gibi ek hizmetler isteğe bağlıdır."
+    ],
+    "table": {
+     "head": [
+      "Ülke",
+      "Vize ücreti",
+      "Başvuru merkezi",
+      "Hizmet bedeli"
+     ],
+     "rows": [
+      [
+       "Almanya",
+       "90 €",
+       "iDATA",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Fransa",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "İtalya",
+       "90 €",
+       "iDATA",
+       "Merkezin sitesinde"
+      ],
+      [
+       "İspanya",
+       "90 €",
+       "BLS International",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Yunanistan",
+       "90 €",
+       "Kosmos Vize",
+       "30 €"
+      ],
+      [
+       "Hollanda",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Belçika",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Avusturya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "İsviçre",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Danimarka",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "İsveç",
+       "90 €",
+       "VFS Global",
+       "14 €"
+      ],
+      [
+       "Norveç",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Finlandiya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Çekya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Polonya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Macaristan",
+       "90 € (12 yaş altı Türk vatandaşlarına ücretsiz)",
+       "AS Visa",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Slovakya",
+       "90 €",
+       "BLS International",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Slovenya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Hırvatistan",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Malta",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Lüksemburg",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Bulgaristan",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Estonya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Letonya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Litvanya",
+       "90 €",
+       "VFS Global",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Portekiz",
+       "90 €",
+       "Ankara Büyükelçiliği",
+       "Merkezin sitesinde"
+      ],
+      [
+       "Romanya",
+       "90 €",
+       "Konsolosluk (eviza.mae.ro)",
+       "Merkezin sitesinde"
+      ],
+      [
+       "İzlanda",
+       "90 €",
+       "VFS Global (Danimarka Büyükelçiliği adına)",
+       "Merkezin sitesinde"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Schengen dışı ülkeler",
+    "table": {
+     "head": [
+      "Ülke",
+      "Vize ücreti",
+      "Not"
+     ],
+     "rows": [
+      [
+       "İngiltere",
+       "135 £ (6 ay); 2 yıl 506 £, 5 yıl 903 £, 10 yıl 1.128 £",
+       "Başvuru VFS Global merkezlerinde; karar genelde 3 hafta"
+      ],
+      [
+       "Amerika (ABD)",
+       "185 $ (B1/B2)",
+       "Randevu ustraveldocs.com üzerinden; 250 $'lık “visa integrity fee” yasası çıktı, uygulanma durumunu konsolosluktan kontrol et"
+      ],
+      [
+       "Kanada",
+       "100 CAD + 85 CAD biyometri",
+       "Başvuru çevrim içi; biyometri VFS Ankara'da"
+      ],
+      [
+       "İrlanda",
+       "60 € tek giriş, 100 € çok giriş",
+       "Başvuru VFS Global"
+      ],
+      [
+       "Çin",
+       "1.225 TL tek giriş (1 yıllık çok giriş 4.120 TL)",
+       "Ayrıca vize merkezi hizmet bedeli 2.530 TL (1 Temmuz 2026'dan beri)"
+      ],
+      [
+       "Japonya",
+       "Vize gerekmez",
+       "90 güne kadar vizesiz"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Ücreti doğru ödemek için",
+    "list": [
+     "Ücreti yalnızca resmî başvuru merkezine ya da konsolosluğa öde; “randevu satan” sitelere para verme.",
+     "Vize reddedilse de vize ücreti ve hizmet bedeli iade edilmez.",
+     "İtalya ücreti TL olarak, her çeyrekte güncellenen kurla alır; Macaristan 12 yaş altı Türk vatandaşlarından vize ücreti almaz.",
+     "Rakamlar 5 Kasım 2026'da resmî sayfalardan kontrol edildi; başvurudan önce merkezin güncel ücret sayfasına bak."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Schengen vizesi kaç euro 2026?",
+    "a": "Yetişkinler için 90 €, 6–12 yaş çocuklar için 45 €, 6 yaş altı ücretsiz. Buna başvuru merkezinin hizmet bedeli eklenir."
+   },
+   {
+    "q": "İngiltere vizesi ne kadar?",
+    "a": "6 aylık standart ziyaretçi vizesi 135 £. Uzun süreli vizeler: 2 yıl 506 £, 5 yıl 903 £, 10 yıl 1.128 £."
+   },
+   {
+    "q": "Amerika vizesi ne kadar?",
+    "a": "Turistik/iş (B1/B2) vize başvuru ücreti 185 $. Ayrı bir 250 $ “visa integrity fee” yasalaştı; uygulanıp uygulanmadığını konsolosluk sayfasından kontrol et."
+   },
+   {
+    "q": "Vize reddedilirse ücret iade edilir mi?",
+    "a": "Hayır. Vize ücreti ve başvuru merkezinin hizmet bedeli ret durumunda iade edilmez."
+   }
+  ]
+ },
+ "visa_appointments": {
+  "title": "Vize randevusu nasıl alınır ve başvuru nasıl takip edilir? (2026)",
+  "short": "Vize randevusu ve takip",
+  "metaDesc": "Schengen, İngiltere ve Amerika vize randevusu: hangi ülke hangi merkezle çalışır (VFS, iDATA, BLS, Kosmos), randevu ve başvuru takip adresleri, ne zaman başvurmalı, kaç günde sonuçlanır.",
+  "answer": "Schengen vizesine seyahatten en erken 6 ay, en geç 15 gün önce, en uzun kalacağın ülkenin başvuru merkezine başvurursun. Almanya ve İtalya iDATA, İspanya ve Slovakya BLS, Yunanistan Kosmos Vize, Macaristan AS Visa, diğer çoğu ülke VFS Global ile çalışır. Karar normalde 15 günde çıkar, gerekirse 45 güne uzayabilir.",
+  "sections": [
+   {
+    "h": "Ne zaman ve nereye başvurulur?",
+    "list": [
+     "En erken 6 ay, en geç 15 gün önce başvur; yoğun dönemlerde (ilkbahar–yaz) 2–3 ay önceden randevu ara.",
+     "Birden fazla Schengen ülkesine gidiyorsan en uzun kalacağın ülkeye; süreler eşitse ilk gireceğin ülkeye başvur.",
+     "Karar süresi 15 gün; ek inceleme gerekirse 45 güne kadar uzayabilir."
+    ]
+   },
+   {
+    "h": "Ülke ülke başvuru merkezleri",
+    "table": {
+     "head": [
+      "Ülke",
+      "Başvuru merkezi",
+      "Randevu",
+      "Başvuru takibi"
+     ],
+     "rows": [
+      [
+       "Almanya",
+       "iDATA",
+       "de-tr-appointment.idata.com.tr/tr",
+       "idata.com.tr/de/tr/p/basvuru-takip-de"
+      ],
+      [
+       "Fransa",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "İtalya",
+       "iDATA",
+       "idata.com.tr/ita/tr/p/randevu-islemleri-ita",
+       "idata.com.tr/ita/tr/p/basvuru-takip-ita"
+      ],
+      [
+       "İspanya",
+       "BLS International",
+       "turkey.blsspainglobal.com/Global/account/login",
+       "turkey.blsspainglobal.com/Global/bls/VisaApplicationStatus"
+      ],
+      [
+       "Yunanistan",
+       "Kosmos Vize",
+       "kosmosvize.com.tr",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Hollanda",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/tr/nld/apply-visa",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Belçika",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/en/bel",
+       "visa.vfsglobal.com/tur/en/bel/track-application"
+      ],
+      [
+       "Avusturya",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "İsviçre",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/en/che",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Danimarka",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/en/dnk",
+       "Merkezin sitesinden"
+      ],
+      [
+       "İsveç",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/en/swe/apply-visa",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Norveç",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Finlandiya",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Çekya",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/en/cze/attend-centre/ankara",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Polonya",
+       "VFS Global",
+       "vfsglobal.com/poland/turkey/Polish",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Macaristan",
+       "AS Visa",
+       "as-visa.com/DynamicPage.aspx?ID=51",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Slovakya",
+       "BLS International",
+       "blsslovakiavisa.com/turkey",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Slovenya",
+       "VFS Global",
+       "vfsglobal.com/slovenia/turkey",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Hırvatistan",
+       "VFS Global",
+       "vfsglobal.com/croatia/turkey",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Malta",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Lüksemburg",
+       "VFS Global",
+       "visa.vfsglobal.com/tur/en/lux",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Bulgaristan",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Estonya",
+       "VFS Global",
+       "vfsglobal.com/estonia/turkey",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Letonya",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Litvanya",
+       "VFS Global",
+       "Merkezin sitesinden",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Portekiz",
+       "Ankara Büyükelçiliği",
+       "ancara.embaixadaportugal.mne.gov.pt/en",
+       "Merkezin sitesinden"
+      ],
+      [
+       "Romanya",
+       "Konsolosluk (eviza.mae.ro)",
+       "eviza.mae.ro",
+       "Merkezin sitesinden"
+      ],
+      [
+       "İzlanda",
+       "VFS Global (Danimarka Büyükelçiliği adına)",
+       "visa.vfsglobal.com/tur/en/dnk",
+       "Merkezin sitesinden"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Bilinmesi gerekenler (Kasım 2026)",
+    "list": [
+     "Almanya: iDATA'da 18 Mart 2024'ten beri bekleme listesi var; büyükelçilik turistik randevularda birkaç aydan bir yıla kadar bekleme olabildiğini belirtiyor.",
+     "Danimarka: 4 Kasım 2026 itibarıyla büyükelçilik 2 Eylül 2026'ya kadar gelen dosyaları işliyor; erken başvur.",
+     "Amerika: randevular 30 Mayıs 2025'ten beri ustraveldocs.com üzerinden alınıyor.",
+     "Japonya'ya 90 güne kadar vize gerekmez; Rusya için e-vize (electronic-visa.kdmid.ru) alınabilir."
+    ]
+   },
+   {
+    "h": "Randevu dolandırıcılığına dikkat",
+    "p": [
+     "Randevular yalnızca merkezlerin resmî sitelerinden ücretsiz alınır. “Garantili randevu” satan kişi ve sitelere para verme; başvurunu reddettirebilir."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Schengen vizesine kaç gün önce başvurulur?",
+    "a": "En erken 6 ay, en geç 15 gün önce. Yoğun dönemlerde 2–3 ay önceden randevu aramak gerekir."
+   },
+   {
+    "q": "Almanya vize randevusu nasıl alınır?",
+    "a": "iDATA üzerinden. Turistik başvurularda bekleme listesi uygulanıyor; listeye kaydolup sıranı beklemen gerekiyor."
+   },
+   {
+    "q": "Yunanistan vize başvurusu nereden yapılır?",
+    "a": "Kosmos Vize merkezlerinden (kosmosvize.com.tr). Hizmet bedeli 30 €."
+   },
+   {
+    "q": "Vize başvurum ne zaman sonuçlanır?",
+    "a": "Schengen için normalde 15 gün; ek belge ya da inceleme gerekirse 45 güne kadar."
+   }
+  ]
  }
 }

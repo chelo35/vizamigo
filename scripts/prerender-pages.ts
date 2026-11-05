@@ -56,7 +56,7 @@ async function main() {
   };
   const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
   const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
-  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups } = await import('../src/data/guides');
+  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups, guideIdsFor } = await import('../src/data/guides');
 
   const { GEO_DATA } = await import('../src/data/geoData');
   const { getCountryName, countryToRegion, getRegionName } = await import('../src/data/passportData');
@@ -231,8 +231,9 @@ async function main() {
     }
 
     // güncel konu rehberleri (ETIAS, ETA, ESTA, Yunan adaları): tam metin önceden yazılı
-    for (const id of GUIDE_IDS) {
+    for (const id of guideIdsFor(lang)) {
       const g = getGuide(id, lang);
+      const gl = GUIDE_META[id].langs || LANGS;
       const meta = GUIDE_META[id];
       const url = `${BASE_URL}/${lang}/info/${id}`;
       const ld = {
@@ -242,7 +243,7 @@ async function main() {
           { '@type': 'FAQPage', mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
         ]
       };
-      const secs = g.sections.map((x) => `<h2>${esc(x.h)}</h2>${(x.p || []).map((t) => `<p>${esc(t)}</p>`).join('')}${x.list ? `<ul>${x.list.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}`).join('');
+      const secs = g.sections.map((x) => `<h2>${esc(x.h)}</h2>${(x.p || []).map((t) => `<p>${esc(t)}</p>`).join('')}${x.list ? `<ul>${x.list.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}${x.table ? `<table><thead><tr>${x.table.head.map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${x.table.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}`).join('');
       const c = g.checklist;
       const ul = (xs: string[]) => `<ul>${xs.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
       const check = c ? `<h2>${esc(c.title)}</h2><h3>${esc(c.commonTitle)}</h3>${ul(c.common)}${[...c.statuses, ...c.purposes].map((x) => `<h3>${esc(x.label)}</h3>${ul(x.docs)}`).join('')}<p>${esc(c.note)}</p>` : '';
@@ -252,11 +253,11 @@ async function main() {
       const DAY: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
       const gr = guideGroups(id, lang);
       const list = gr ? (['id', 'free', 'voa', 'evisa', 'eta'] as const).filter((k) => GUIDE_META[id].list!.groups.includes(k) && gr[k].length).map((k) => `<h2>${esc((GL[lang] || GL.en)[['id', 'free', 'voa', 'evisa', 'eta'].indexOf(k)])} (${gr[k].length})</h2><ul>${gr[k].map(([c, v]) => `<li><a href="${buildLocalizedPath(lang as never, 'explore', c)}">${esc(getCountryName(c, lang))}</a>${/^\d+$/.test(v) ? ` · ${v} ${DAY[lang] || DAY.en}` : ''}</li>`).join('')}</ul>`).join('') : '';
-      const others = GUIDE_IDS.filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
+      const others = guideIdsFor(lang).filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,
         canonical: url,
-        alts: [...LANGS.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }],
+        alts: [...gl.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }],
         title: `${g.title} | Vizamigo`,
         desc: g.metaDesc,
         head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,

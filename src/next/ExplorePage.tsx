@@ -201,7 +201,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             sub={l('Schengen evrakları, ETIAS, ETA, ESTA ve Yunan adaları kapıda vize: kaynaklı ve tarihli.', 'Schengen documents, ETIAS, ETA, ESTA and Greek islands visa: sourced and dated.', 'Schengen-Unterlagen, ETIAS, ETA, ESTA und Griechische Inseln: mit Quellen und Datum.', 'Documentos Schengen, ETIAS, ETA, ESTA e islas griegas: con fuentes y fecha.', 'Шенген, ETIAS, ETA, ESTA и греческие острова: с источниками и датой.')}
           />
           <div className="vz-guides">
-            {GUIDE_LINKS.map((g) => {
+            {GUIDE_LINKS.filter((g) => (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id]).map((g) => {
               const x = (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id];
               return (
                 <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}`} href={`/${language}/info/${g.id}`}>

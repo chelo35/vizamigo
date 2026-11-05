@@ -13,19 +13,48 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel';
-export interface GuideSection { h: string; p?: string[]; list?: string[] }
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments';
+export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
-export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] } }> = {
+export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[] }> = {
+  visa_fees: {
+    checked: '2026-11-05',
+    icon: 'wallet',
+    countries: [],
+    langs: ['tr', 'en'],
+    sources: [
+      { label: 'European Commission: Applying for a Schengen visa', url: 'https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en' },
+      { label: 'GOV.UK: Standard Visitor visa', url: 'https://www.gov.uk/standard-visitor/apply-standard-visitor-visa' },
+      { label: 'IRCC: Visitor visa fees', url: 'https://ircc.canada.ca/english/information/fees/result.asp?lob=trv' },
+      { label: 'Ireland DFA: Visas for Ireland', url: 'https://api.ireland.ie/en/dfa/visas-for-ireland/' },
+      { label: 'Chinese Visa Application Service Center İstanbul: fees (1 Jul 2026)', url: 'https://www.visaforchina.cn/IST3_EN/upload/20250330/c1f33fb2305d4a40b268242b949340b1.pdf' },
+      { label: 'İsveç Başkonsolosluğu: başvuru ücretleri', url: 'https://www.swedenabroad.se/tr/about-sweden-non-swedish-citizens/t%C3%BCrk%C3%A7e/%C4%B0sve%C3%A7e-gitmek/%C4%B0sve%C3%A7i-ziyaret-etmek/ba%C5%9Fvuru-%C3%BCcretleri/' },
+      { label: 'Yunanistan Dışişleri: vizeler (Ankara)', url: 'https://www.mfa.gr/turkey/tr/visas.html?mission=ank' },
+      { label: 'Macaristan İstanbul Başkonsolosluğu: ücretler (2025)', url: 'https://isztambul.mfa.gov.hu/asset/view/194999/2025%20Konsolosluk%20ve%20vize%20%C3%BCcretleri%20TR_2025.02.01.pdf' }
+    ]
+  },
+  visa_appointments: {
+    checked: '2026-11-05',
+    icon: 'cal',
+    countries: [],
+    langs: ['tr', 'en'],
+    sources: [
+      { label: 'European Commission: Applying for a Schengen visa', url: 'https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en' },
+      { label: 'iDATA: Almanya başvuru takip', url: 'https://idata.com.tr/de/tr/p/basvuru-takip-de' },
+      { label: 'BLS International: İspanya başvuru durumu', url: 'https://turkey.blsspainglobal.com/Global/bls/VisaApplicationStatus' },
+      { label: 'VFS Global: Belçika başvuru takibi', url: 'https://visa.vfsglobal.com/tur/en/bel/track-application' },
+      { label: 'U.S. visa appointments (ustraveldocs)', url: 'https://www.ustraveldocs.com/tr/en/nonimmigrant-visa' }
+    ]
+  },
   id_card_travel: {
     checked: '2026-11-05',
     icon: 'user',
@@ -126,8 +155,10 @@ export const getGuide = (id: GuideId, lang: string): GuideText => {
   if (!gr) return g;
   const n = { id: gr.id.length, free: gr.free.length + gr.id.length, voa: gr.voa.length, evisa: gr.evisa.length, eta: gr.eta.length, easy: gr.voa.length + gr.evisa.length + gr.eta.length };
   const f = (t: string) => fill(t, n);
-  return { ...g, title: f(g.title), metaDesc: f(g.metaDesc), answer: f(g.answer), sections: g.sections.map((s) => ({ h: f(s.h), p: s.p?.map(f), list: s.list?.map(f) })), faq: g.faq.map((q) => ({ q: f(q.q), a: f(q.a) })) };
+  return { ...g, title: f(g.title), metaDesc: f(g.metaDesc), answer: f(g.answer), sections: g.sections.map((s) => ({ ...s, h: f(s.h), p: s.p?.map(f), list: s.list?.map(f) })), faq: g.faq.map((q) => ({ q: f(q.q), a: f(q.a) })) };
 };
+/** Bir dilde yayımlanan rehberler (Türkiye'ye özgü rehberler yalnızca tr/en) */
+export const guideIdsFor = (lang: string): GuideId[] => GUIDE_IDS.filter((g) => !GUIDE_META[g].langs || GUIDE_META[g].langs!.includes(lang));
 export const isGuideId = (x: string): x is GuideId => (GUIDE_IDS as string[]).includes(x);
 /** Bir ülkeyle ilgili rehberler (ülke sayfasında bağlantı için) */
 export const guidesForCountry = (code: string): GuideId[] => GUIDE_IDS.filter((g) => GUIDE_META[g].countries.includes(code));

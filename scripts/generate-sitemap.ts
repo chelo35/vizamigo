@@ -145,11 +145,12 @@ export function generateSitemapXml(): string {
 
   // 3b. Güncel konu rehberleri (ETIAS, ETA, ESTA, Yunan adaları)
   GUIDE_IDS.forEach((id) => {
+    const gl = (GUIDE_META[id].langs || langCodes) as typeof langCodes;
     const alts = [
-      ...langCodes.map((lang) => ({ hreflang: lang, href: `${BASE_URL}/${lang}/info/${id}` })),
+      ...gl.map((lang) => ({ hreflang: lang, href: `${BASE_URL}/${lang}/info/${id}` })),
       { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }
     ];
-    langCodes.forEach((lang) => {
+    gl.forEach((lang) => {
       entries.push({ loc: `${BASE_URL}/${lang}/info/${id}`, alternates: alts as never, lastmod: GUIDE_META[id].checked, changefreq: 'weekly', priority: '0.8' });
     });
   });
