@@ -1,5 +1,5 @@
 // Ana sayfa ve menü için hafif rehber listesi (tam metin guides.ts içinde, ayrı yüklenir)
-export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "us_visa", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
+export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
 export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string }>> = {
  "tr": {
   "us_visa": {
@@ -44,6 +44,18 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "en": {
+  "uk_visa_india": {
+   "t": "UK visa for Indians",
+   "d": "\u00a3135 fee, 3-week processing, priority options and documents."
+  },
+  "dubai_visa_india": {
+   "t": "Dubai visa for Indians",
+   "d": "Visa on arrival with US/UK/EU visas, 30/60-day e-visa prices."
+  },
+  "thailand_india": {
+   "t": "Thailand for Indians",
+   "d": "30 days visa-free since Sept 2026, TDAC, e-visa and DTV."
+  },
   "us_visa": {
    "t": "US visa (B1/B2) 2026",
    "d": "$185 fee, DS-160, appointments by country, interview waiver rules."

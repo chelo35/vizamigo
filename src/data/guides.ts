@@ -13,19 +13,56 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa';
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india';
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['us_visa', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
 export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[] }> = {
+  uk_visa_india: {
+    checked: '2026-11-05',
+    icon: 'passport',
+    countries: ['GB'],
+    langs: ['en'],
+    sources: [
+      { label: 'GOV.UK: Home Office fees (8 October 2026)', url: 'https://www.gov.uk/government/publications/visa-regulations-revised-table/home-office-immigration-and-nationality-fees-8-october-2026' },
+      { label: 'GOV.UK: Apply for a Standard Visitor visa', url: 'https://www.gov.uk/standard-visitor/apply-standard-visitor-visa' },
+      { label: 'GOV.UK: Faster decisions (priority, super priority)', url: 'https://www.gov.uk/faster-decision-visa-settlement/applying-from-outside-the-uk' },
+      { label: 'GOV.UK: Who can get an ETA', url: 'https://www.gov.uk/guidance/check-when-you-can-get-an-electronic-travel-authorisation-eta' },
+      { label: 'VFS Global: UK Premium Application Centres in India (May 2026)', url: 'https://www.vfsglobal.com/en/PDF/media-releases/2026/MR_EN_UKPAC_in_India_May_2026.pdf' }
+    ]
+  },
+  dubai_visa_india: {
+    checked: '2026-11-05',
+    icon: 'passport',
+    countries: ['AE'],
+    langs: ['en'],
+    sources: [
+      { label: 'ICP: expanded eligibility for UAE entry visa', url: 'https://icp.gov.ae/en/media-center/icp-expands-eligibility-for-uae-entry-visa-for-nationals-of-certain-countries/' },
+      { label: 'UAE MOFA: visa on arrival (25 June 2026)', url: 'https://www.mofa.gov.ae/en/mediahub/news/2026/6/25/uae-grants-visa-on-arrival' },
+      { label: 'Emirates: UAE visa information', url: 'https://www.emirates.com/cn/english/before-you-fly/visa-passport-information/uae-visa-information/' },
+      { label: 'flydubai: Dubai visas', url: 'https://www.flydubai.com/en/flying-with-us/visas-and-passports/dubai-visas/' }
+    ]
+  },
+  thailand_india: {
+    checked: '2026-11-05',
+    icon: 'passport',
+    countries: ['TH'],
+    langs: ['en'],
+    sources: [
+      { label: 'Royal Thai Embassy New Delhi: revision of visa exemption', url: 'https://newdelhi.thaiembassy.org/en/content/the-revision-of-thailand-s-visa-exemption-and-voa' },
+      { label: 'Royal Thai Embassy New Delhi: visas', url: 'https://newdelhi.thaiembassy.org/en/page/visa' },
+      { label: 'Thailand Digital Arrival Card (TDAC)', url: 'https://tdac.immigration.go.th' },
+      { label: 'Thai e-Visa (official)', url: 'https://www.thaievisa.go.th' }
+    ]
+  },
   us_visa: {
     checked: '2026-11-05',
     icon: 'passport',

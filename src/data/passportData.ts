@@ -275,6 +275,22 @@ export const INFO: Record<string, DetailedInfo> = {
     h: 'k-eta.go.kr',
     d: 'Ekim 2026'
   },
+  'IN-AE': {
+    n: "Hindistan vatandaşları normalde önceden e-vize alır. Geçerli ABD vizesi/yeşil kart, İngiltere ya da AB vizesi/oturumu veya Singapur, Japonya, Güney Kore, Avustralya, Yeni Zelanda ya da Kanada oturumu olanlar kapıda vize alabilir: 14 gün 100 AED ya da 60 gün 250 AED.",
+    nEn: 'Indian citizens normally need a pre-arranged e-visa. Those holding a valid US visa or green card, a UK or EU visa or residence permit, or a residence permit from Singapore, Japan, South Korea, Australia, New Zealand or Canada can get a visa on arrival: 14 days for AED 100 or 60 days for AED 250.',
+    nDe: 'Indische Staatsbürger benötigen in der Regel ein vorab beantragtes eVisum. Mit gültigem US-Visum/Green Card, UK- oder EU-Visum/Aufenthaltstitel oder Aufenthaltstitel aus Singapur, Japan, Südkorea, Australien, Neuseeland oder Kanada gibt es ein Visum bei Ankunft: 14 Tage für 100 AED oder 60 Tage für 250 AED.',
+    u: 'https://icp.gov.ae/en/media-center/icp-expands-eligibility-for-uae-entry-visa-for-nationals-of-certain-countries/',
+    h: 'icp.gov.ae',
+    d: 'Kasım 2026'
+  },
+  'IN-TH': {
+    n: "Hindistan vatandaşları Tayland'a turistik amaçla 30 gün vizesiz girebilir (15 Eylül 2026'dan beri; önce 60 gündü). Varıştan önceki 72 saat içinde ücretsiz TDAC dijital varış kartı doldurulmalıdır.",
+    nEn: 'Indian citizens can visit Thailand visa-free for tourism for up to 30 days (since 15 September 2026; previously 60). The free TDAC digital arrival card must be submitted within 72 hours before arrival.',
+    nDe: 'Indische Staatsbürger können Thailand zu touristischen Zwecken bis zu 30 Tage visumfrei besuchen (seit 15. September 2026; zuvor 60). Die kostenlose TDAC-Ankunftskarte ist innerhalb von 72 Stunden vor Ankunft auszufüllen.',
+    u: 'https://newdelhi.thaiembassy.org/en/content/the-revision-of-thailand-s-visa-exemption-and-voa',
+    h: 'newdelhi.thaiembassy.org',
+    d: 'Kasım 2026'
+  },
   'TR-IQ': {
     n: 'Irak federal bölgesi için 15 yaş altı ve 50 yaş üstü Türk vatandaşları 30 gün vizesiz girebilir. Diğerleri Irak büyükelçiliği ya da konsolosluğundan önceden vize almalıdır (e-vize yalnızca yatırımcı ve iş insanları için). Kuzey Irak (IKBY) kuralları ayrıdır.',
     nEn: 'Federal Iraq: Turkish citizens under 15 or over 50 can enter visa-free for 30 days. Everyone else needs a visa from an Iraqi embassy or consulate (the e-visa covers only investors and businesspeople). Iraqi Kurdistan has separate rules.',
