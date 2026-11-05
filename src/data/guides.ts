@@ -131,7 +131,8 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
       { label: 'TAT News: neue 30-Tage-Visumbefreiung ab 15. September 2026', url: 'https://www.tatnews.org/2026/09/thailand-introduces-new-30-day-and-15-day-visa-exemption-rules-from-15-september/' },
       { label: 'Royal Thai Embassy: TDAC', url: 'https://manama.thaiembassy.org/en/page/tdac' },
       { label: 'Thailand Digital Arrival Card (TDAC)', url: 'https://tdac.immigration.go.th' },
-      { label: 'ADAC: Thailand Einreise', url: 'https://www.adac.de/reise-freizeit/reiseplanung/reiseziele/thailand/einreise-zoll/' }
+      { label: 'ADAC: Thailand Einreise', url: 'https://www.adac.de/reise-freizeit/reiseplanung/reiseziele/thailand/einreise-zoll/' },
+      { label: 'Thailändische Botschaft Helsinki: Destination Thailand Visa (DTV)', url: 'https://helsinki.thaiembassy.org/en/publicservice/destination-thailand-visa-dtv' }
     ]
   },
   canada_eta_mx: {
@@ -197,7 +198,8 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
       { label: 'Royal Thai Embassy New Delhi: revision of visa exemption', url: 'https://newdelhi.thaiembassy.org/en/content/the-revision-of-thailand-s-visa-exemption-and-voa' },
       { label: 'Royal Thai Embassy New Delhi: visas', url: 'https://newdelhi.thaiembassy.org/en/page/visa' },
       { label: 'Thailand Digital Arrival Card (TDAC)', url: 'https://tdac.immigration.go.th' },
-      { label: 'Thai e-Visa (official)', url: 'https://www.thaievisa.go.th' }
+      { label: 'Thai e-Visa (official)', url: 'https://www.thaievisa.go.th' },
+      { label: 'Royal Thai Embassy Helsinki: Destination Thailand Visa (DTV)', url: 'https://helsinki.thaiembassy.org/en/publicservice/destination-thailand-visa-dtv' }
     ]
   },
   us_visa: {
