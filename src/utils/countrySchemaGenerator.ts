@@ -4,6 +4,7 @@
  * Combines @type: 'TouristDestination', @type: 'TouristTrip', @type: 'FAQPage', and @type: 'BreadcrumbList'.
  */
 
+import { getExtraFaq } from '../data/extraFaq';
 import { SupportedLanguage } from '../i18n/types';
 import { ruIn } from '../data/ruCases';
 import { getCountryName } from '../data/passportData';
@@ -315,7 +316,12 @@ export function generateCountryJsonLd({
               '@type': 'Answer',
               text: (language === 'tr' ? `${countryName} internet hızı: mobil ${insights.internet.mobileSpeedMbps} Mbps, sabit ${insights.internet.broadbandSpeedMbps} Mbps. Önerilen rota (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'de' ? `Internet in ${countryName}: mobil ${insights.internet.mobileSpeedMbps} Mbit/s, Festnetz ${insights.internet.broadbandSpeedMbps} Mbit/s. Empfohlene Route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'es' ? `Internet en ${countryName}: ${insights.internet.mobileSpeedMbps} Mbps móvil, ${insights.internet.broadbandSpeedMbps} Mbps fijo. Ruta recomendada (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'ru' ? `Интернет (${countryName}): мобильный ${insights.internet.mobileSpeedMbps} Мбит/с, домашний ${insights.internet.broadbandSpeedMbps} Мбит/с. Маршрут (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : `Internet in ${countryName}: ${insights.internet.mobileSpeedMbps} Mbps mobile, ${insights.internet.broadbandSpeedMbps} Mbps broadband. Suggested route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.`)
             }
-          }
+          },
+          ...getExtraFaq(code, language, currentPassport).map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a }
+          }))
         ]
       },
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { getExtraFaq } from '../data/extraFaq';
 import { ruIn, ruOf } from '../data/ruCases';
 import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
@@ -592,7 +593,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     { q: l(`${trLoc(name)} hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки ${ruIn(name, 'loc')}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
     { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб ${ruIn(name, 'loc')}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
     { q: l(`${trLoc(name)} musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана ${ruIn(name, 'loc')}?`), a: intel.waterAndHealth.tapWaterDesc },
-    { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые ${ruIn(name, 'loc')}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` }
+    { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые ${ruIn(name, 'loc')}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` },
+    ...getExtraFaq(code, language, passport).map((f) => ({ q: f.q, a: f.h ? `${f.a} (${l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник')}: ${f.h})` : f.a }))
   ].filter((f) => f.a);
   const similar = useMemo(() => {
     const reg = countryToRegion[code];

@@ -1,0 +1,8 @@
+{
+  "_doc": "Arama sorularından eklenen, kaynaklı SSS. lang -> ülke kodu -> [{q,a,u (resmî kaynak),h (kaynak adı),d (kontrol tarihi YYYY-MM-DD),p? (yalnızca bu pasaportlar)}]. Günlük görev ekler; vize kategorisi verisini değiştirmez.",
+  "tr": {
+    "BA": [{ "q": "Bosna-Hersek'e kimlikle gidilir mi?", "a": "Hayır. Bosna-Hersek Türk vatandaşlarına pasaportla 90 gün vizesizdir. Kimlik kartıyla giriş 2022'de duyurulduysa da yürürlüğe girmedi; giriş için pasaport gerekir.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-05", "p": ["TR"] }],
+    "RS": [{ "q": "Sırbistan'a kimlikle gidilir mi?", "a": "Hayır. Sırbistan Türk vatandaşlarına pasaportla 90 gün vizesizdir. 2022'de imzalanan kimlik kartıyla seyahat protokolü henüz yürürlüğe girmedi; giriş için pasaport gerekir.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-05", "p": ["TR"] }]
+  },
+  "en": {}, "de": {}, "es": {}, "ru": {}
+}
