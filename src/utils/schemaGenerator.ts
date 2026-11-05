@@ -241,9 +241,10 @@ export function getCountrySeoMeta(
     language
   );
 
+  const ans = getSerpAnswer(code, countryName, passportName, currentPassport, item.cat, item.v, language);
   return {
-    title: `${voiceQuestion} | Vizamigo`,
-    description: directAnswer,
+    title: ans.title,
+    description: ans.description || directAnswer,
     h1,
     voiceQuestion
   };
@@ -329,6 +330,91 @@ export function getCountrySectionHeadings(
         passportSynergyH2: `${countryName} Visa Policy & Passport Comparison Matrix`,
         geographyMapH2: `${countryName} Geographic Location, Capital & Map Intelligence`
       };
+  }
+}
+
+/**
+ * Arama sonucunda tıklanma için: başlık sorunun cevabını içerir ("Malezya Vize İstiyor mu? Türklere 90 Gün Vizesiz"),
+ * açıklama cevapla başlar. Gün sayısı yalnızca veride sayı olarak varsa yazılır; genel/doğrulanmamış iddia eklenmez.
+ */
+function getSerpAnswer(
+  code: string,
+  C: string,
+  P: string,
+  pass: string,
+  cat: string,
+  v: string | undefined,
+  lang: SupportedLanguage
+): { title: string; description: string } {
+  const days = v && /^\d+$/.test(v) ? v : '';
+  const free = cat === 'free' || cat === 'id';
+  switch (lang) {
+    case 'tr': {
+      const short = cat === 'id' ? `Kimlikle Vizesiz${days ? ` ${days} Gün` : ''}` : free ? (days ? `${days} Gün Vizesiz` : 'Vizesiz') : cat === 'voa' ? 'Kapıda Vize' : cat === 'evisa' ? 'e-Vize Gerekli' : cat === 'eta' ? 'eTA Gerekli' : 'Vize Gerekli';
+      const who = pass === 'TR' ? 'Türklere' : `${P} Pasaportuna`;
+      const long = cat === 'id' ? `${P} vatandaşları vizesiz, çipli kimlik kartıyla da girebilir${days ? ` (${days} güne kadar)` : ''}`
+        : free ? `${P} pasaportuyla vize gerekmez${days ? `, ${days} güne kadar kalınabilir` : ''}`
+        : cat === 'voa' ? `${P} pasaportuyla vize varışta, havalimanında veya sınır kapısında alınır${days ? ` (${days} gün)` : ''}`
+        : cat === 'evisa' ? `${P} pasaportuyla yola çıkmadan önce online e-Vize alınmalı${days ? ` (${days} gün)` : ''}`
+        : cat === 'eta' ? `${P} pasaportuyla yola çıkmadan önce elektronik seyahat izni (eTA) alınmalı`
+        : `${P} pasaportuyla yola çıkmadan önce konsolosluk vizesi alınmalı`;
+      return {
+        title: `${C} Vize İstiyor mu? ${who} ${short} (2026)`,
+        description: `${C}: ${long}. Resmî kaynak, acil numaralar ve uçuş–otel fiyatları.`
+      };
+    }
+    case 'de': {
+      const short = free ? `visumfrei${days ? ` (${days} Tage)` : ''}` : cat === 'voa' ? 'Visum bei Ankunft' : cat === 'evisa' ? 'e-Visum nötig' : cat === 'eta' ? 'eTA nötig' : 'Visum nötig';
+      const dem = DE_DEMONYM[pass] || `Pass aus ${P}`;
+      const long = free ? `Mit ${P}-Pass visumfrei${days ? `, bis zu ${days} Tage` : ''}${cat === 'id' ? ', auch mit Personalausweis' : ''}`
+        : cat === 'voa' ? `Mit ${P}-Pass gibt es das Visum bei der Ankunft${days ? ` (${days} Tage)` : ''}`
+        : cat === 'evisa' ? `Mit ${P}-Pass vor der Reise online ein e-Visum beantragen${days ? ` (${days} Tage)` : ''}`
+        : cat === 'eta' ? `Mit ${P}-Pass vor der Reise eine elektronische Reisegenehmigung (eTA) beantragen`
+        : `Mit ${P}-Pass vor der Reise ein Visum bei der Botschaft beantragen`;
+      return {
+        title: `Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`,
+        description: `${C}: ${long}. Offizielle Quelle, Notrufnummern, günstige Flüge und Hotels.`
+      };
+    }
+    case 'es': {
+      const short = free ? `sin visa${days ? ` ${days} días` : ''}` : cat === 'voa' ? 'visa a la llegada' : cat === 'evisa' ? 'e-Visa obligatoria' : cat === 'eta' ? 'eTA obligatoria' : 'visa obligatoria';
+      const long = free ? `con pasaporte de ${P} no se necesita visa${days ? `, estancia de hasta ${days} días` : ''}`
+        : cat === 'voa' ? `con pasaporte de ${P} la visa se obtiene a la llegada${days ? ` (${days} días)` : ''}`
+        : cat === 'evisa' ? `con pasaporte de ${P} hay que tramitar una e-Visa en línea antes del viaje`
+        : cat === 'eta' ? `con pasaporte de ${P} hay que tramitar una autorización electrónica (eTA) antes del viaje`
+        : `con pasaporte de ${P} hay que solicitar la visa en el consulado antes del viaje`;
+      return {
+        title: `¿Necesito visa para ${C}? Pasaporte de ${P}: ${short} (2026)`,
+        description: `${C}: ${long}. Fuente oficial, teléfonos de emergencia, vuelos y hoteles baratos.`
+      };
+    }
+    case 'ru': {
+      const short = free ? `без визы${days ? ` ${days} дней` : ''}` : cat === 'voa' ? 'виза по прилёте' : cat === 'evisa' ? 'нужна e-Visa' : cat === 'eta' ? 'нужна eTA' : 'нужна виза';
+      const who = pass === 'RU' ? 'Россиянам' : `Гражданам ${ruOf(P)}`;
+      const long = free ? `для граждан ${ruOf(P)} виза не нужна${days ? `, до ${days} дней` : ''}`
+        : cat === 'voa' ? `гражданам ${ruOf(P)} виза ставится по прилёте${days ? ` (${days} дней)` : ''}`
+        : cat === 'evisa' ? `гражданам ${ruOf(P)} нужно заранее оформить электронную визу`
+        : cat === 'eta' ? `гражданам ${ruOf(P)} нужно заранее оформить электронное разрешение (eTA)`
+        : `гражданам ${ruOf(P)} нужна виза, оформляется в консульстве до поездки`;
+      return {
+        title: `Нужна ли виза ${ruIn(C, 'acc')}? ${who}: ${short} (2026)`,
+        description: `${C}: ${long}. Официальный источник, экстренные номера, дешёвые билеты и отели.`
+      };
+    }
+    case 'en':
+    default: {
+      const short = free ? `Visa-Free${days ? ` ${days} Days` : ''}` : cat === 'voa' ? 'Visa on Arrival' : cat === 'evisa' ? 'eVisa Required' : cat === 'eta' ? 'eTA Required' : 'Visa Required';
+      const dem = EN_DEMONYM[pass] ? `${EN_DEMONYM[pass]} Citizens` : `${P} Passport`;
+      const long = free ? `no visa needed with a ${P} passport${days ? `, stay up to ${days} days` : ''}`
+        : cat === 'voa' ? `${P} passport holders get a visa on arrival${days ? ` (${days} days)` : ''}`
+        : cat === 'evisa' ? `${P} passport holders must get an eVisa online before travel`
+        : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (eTA) before travel`
+        : `${P} passport holders must apply for a visa at an embassy before travel`;
+      return {
+        title: pass === LANG_PASS.en ? `Do I Need a Visa for ${C}? ${dem}: ${short} (2026)` : `${C} Visa Requirements for ${dem}: ${short} (2026)`,
+        description: `${C}: ${long}. Official sources, emergency numbers, flight and hotel deals.`
+      };
+    }
   }
 }
 
