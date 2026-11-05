@@ -1,6 +1,7 @@
 // Güncel konu rehberleri (ETIAS, İngiltere ETA, ABD ESTA, Yunan adaları kapıda vize).
 // Metinler dil başına JSON'da; kaynaklar, kontrol tarihi ve bağlı ülkeler burada.
 // Bilgi değişince: JSON metnini ve `checked` tarihini güncelle, sonra `node scripts/indexnow.mjs`.
+import { getPassportItems } from '../utils/calculator';
 import tr from './guides/tr.json';
 import en from './guides/en.json';
 import de from './guides/de.json';
@@ -12,17 +13,42 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa';
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel';
 export interface GuideSection { h: string; p?: string[]; list?: string[] }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+/** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
+export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
-export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[] }> = {
+export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] } }> = {
+  id_card_travel: {
+    checked: '2026-11-05',
+    icon: 'user',
+    countries: [],
+    list: { passport: 'TR', byLang: { de: 'DE', es: 'ES' }, groups: ['id'] },
+    sources: [
+      { label: 'T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları', url: 'https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa' },
+      { label: 'Azerbaycan Devlet Göç Hizmeti (kimlikle giriş)', url: 'https://migration.gov.az/en/news_detail/14495' },
+      { label: 'T.C. Ticaret Bakanlığı: Türkiye–Moldova pasaportsuz seyahat (19 Şubat 2019)', url: 'https://ticaret.gov.tr/blog/ulkelerden-ticari-haberler/moldovya/turkiye-ve-moldova-arasinda-pasaportsuz-seyahat-uygulamasi-19-subat-2019-tarihi-i' },
+      { label: 'Auswärtiges Amt: Türkei – Einreise und Zoll (Personalausweis)', url: 'https://www.auswaertiges-amt.de/de/service/laender/tuerkei-node/tuerkeisicherheit-201962' },
+      { label: 'Auswärtiges Amt: Montenegro – Einreise und Zoll', url: 'https://www.auswaertiges-amt.de/de/216330' }
+    ]
+  },
+  visa_free_tr: {
+    checked: '2026-11-05',
+    icon: 'passport',
+    countries: [],
+    list: { passport: 'TR', groups: ['id', 'free', 'voa', 'evisa', 'eta'] },
+    sources: [
+      { label: 'T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları', url: 'https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa' },
+      { label: 'Vizamigo: ülke ülke resmî kaynaklarla doğrulanan vize verisi (her ülke sayfasında kaynak bağlantısı)', url: 'https://www.vizamigo.com/tr' }
+    ]
+  },
   schengen_documents: {
     checked: '2026-10-29',
     icon: 'doc',
@@ -77,7 +103,31 @@ const ALL: Record<string, Record<GuideId, GuideText>> = {
   ru: { ...ru, schengen_documents: scRu }
 } as never;
 
-export const getGuide = (id: GuideId, lang: string): GuideText => (ALL[lang] || ALL.en)[id] || ALL.en[id];
+/** Liste rehberleri için ülke grupları: [ülke kodu, kalış günü ya da kod][] */
+export function guideGroups(id: GuideId, lang = 'tr'): Record<GuideListGroup, [string, string][]> | null {
+  const L = GUIDE_META[id].list;
+  if (!L) return null;
+  const passport = L.byLang?.[lang] || L.passport;
+  const out: Record<GuideListGroup, [string, string][]> = { id: [], free: [], voa: [], evisa: [], eta: [] };
+  for (const x of getPassportItems(passport)) {
+    const g: GuideListGroup | null = x.id ? 'id' : x.cat === 'free' ? 'free' : x.cat === 'voa' ? 'voa' : x.cat === 'evisa' ? 'evisa' : x.cat === 'eta' ? 'eta' : null;
+    if (g && L.groups.includes(g)) out[g].push([x.c, x.v]);
+  }
+  const days = (v: string) => (/^\d+$/.test(v) ? Number(v) : 0);
+  for (const k of Object.keys(out) as GuideListGroup[]) out[k].sort((a, b) => days(b[1]) - days(a[1]) || a[0].localeCompare(b[0]));
+  return out;
+}
+
+const fill = (t: string, n: Record<string, number>) => t.replace(/\{(free|id|voa|evisa|eta|easy)\}/g, (_, k) => String(n[k] ?? ''));
+
+export const getGuide = (id: GuideId, lang: string): GuideText => {
+  const g = (ALL[lang] || ALL.en)[id] || ALL.en[id];
+  const gr = guideGroups(id, lang);
+  if (!gr) return g;
+  const n = { id: gr.id.length, free: gr.free.length + gr.id.length, voa: gr.voa.length, evisa: gr.evisa.length, eta: gr.eta.length, easy: gr.voa.length + gr.evisa.length + gr.eta.length };
+  const f = (t: string) => fill(t, n);
+  return { ...g, title: f(g.title), metaDesc: f(g.metaDesc), answer: f(g.answer), sections: g.sections.map((s) => ({ h: f(s.h), p: s.p?.map(f), list: s.list?.map(f) })), faq: g.faq.map((q) => ({ q: f(q.q), a: f(q.a) })) };
+};
 export const isGuideId = (x: string): x is GuideId => (GUIDE_IDS as string[]).includes(x);
 /** Bir ülkeyle ilgili rehberler (ülke sayfasında bağlantı için) */
 export const guidesForCountry = (code: string): GuideId[] => GUIDE_IDS.filter((g) => GUIDE_META[g].countries.includes(code));

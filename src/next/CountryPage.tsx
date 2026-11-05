@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { ruIn, ruOf } from '../data/ruCases';
 import { useI18n } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Bullets, Card, Chip, Chips, Flag, LinkBtn, List, Row, SecHead, Stat, Tags, Tile, TileGrid, VisaBadge, visaTone, Empty, Field, fmtNum, fmtPair } from './ui';
@@ -226,7 +227,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <div className="vz-stack">
               <Card tone={visaTone(item) === 'warn' ? 'warn' : visaTone(item) === 'ok' ? 'ok' : 'sea'}>
                 <div className="vz-row-flex"><VisaBadge item={item} big />{days && <b>{l(`${days} güne kadar kalış`, `Stay up to ${days} days`, `Bis zu ${days} Tage`, `Hasta ${days} días`, `До ${days} дней`)}</b>}</div>
-                {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with a ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда в ${name}. Проверьте официальный источник.`)}</p>}
+                {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with a ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда ${ruIn(name, 'acc')}. Проверьте официальный источник.`)}</p>}
                 {detail?.u && (
                   <div className="vz-row-flex">
                     <LinkBtn href={detail.u} small>{detail.h || l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник')}</LinkBtn>
@@ -539,7 +540,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         return (
           <div className="vz-stack">
             {local.length > 0 && (
-              <Card title={l(`${name}'da yerel olarak kullanılanlar`, `Used locally in ${name}`, `Lokal genutzt in ${name}`, `Usadas en ${name}`, `Местные в ${name}`)} icon="check" tone="sea">
+              <Card title={l(`${name}'da yerel olarak kullanılanlar`, `Used locally in ${name}`, `Lokal genutzt in ${name}`, `Usadas en ${name}`, `Местные ${ruIn(name, 'loc')}`)} icon="check" tone="sea">
                 <Tags items={local.map((a) => a.name)} />
               </Card>
             )}
@@ -585,13 +586,13 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const answer = generateDirectAnswerSnippet(name, passName, item?.cat || 'visa', stayText, !!item?.id, lang);
   const h1Rest = getCountryNaturalH1(name, lang).replace(name, '').replace(/^[\s,]+|[\s,]+$/g, '');
   const faq: { q: string; a: string }[] = [
-    { q: l(`${passName} vatandaşları ${trDat(name)} vizesiz gidebilir mi?`, `Do ${passName} citizens need a visa for ${name}?`, `Brauchen Staatsbürger aus ${passName} ein Visum für ${name}?`, `¿Necesitan visado los ciudadanos de ${passName} para ${name}?`, `Нужна ли виза в ${name} гражданам ${passName}?`), a: answer },
-    { q: l(`${trLoc(name)} ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться в ${name}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With a ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`) : stayText },
-    { q: l(`${trDat(name)} gitmek için en iyi zaman ne?`, `When is the best time to visit ${name}?`, `Wann ist die beste Reisezeit für ${name}?`, `¿Cuándo es mejor visitar ${name}?`, `Когда лучше ехать в ${name}?`), a: enc.tourism.bestSeasons || insights.bestMonths },
-    { q: l(`${trLoc(name)} hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки в ${name}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
-    { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб в ${name}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
-    { q: l(`${trLoc(name)} musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана в ${name}?`), a: intel.waterAndHealth.tapWaterDesc },
-    { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые в ${name}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` }
+    { q: l(`${passName} vatandaşları ${trDat(name)} vizesiz gidebilir mi?`, `Do ${passName} citizens need a visa for ${name}?`, `Brauchen Staatsbürger aus ${passName} ein Visum für ${name}?`, `¿Necesitan visado los ciudadanos de ${passName} para ${name}?`, `Нужна ли виза ${ruIn(name, 'acc')} гражданам ${ruOf(passName)}?`), a: answer },
+    { q: l(`${trLoc(name)} ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться ${ruIn(name, 'loc')}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With a ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`) : stayText },
+    { q: l(`${trDat(name)} gitmek için en iyi zaman ne?`, `When is the best time to visit ${name}?`, `Wann ist die beste Reisezeit für ${name}?`, `¿Cuándo es mejor visitar ${name}?`, `Когда лучше ехать ${ruIn(name, 'acc')}?`), a: enc.tourism.bestSeasons || insights.bestMonths },
+    { q: l(`${trLoc(name)} hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки ${ruIn(name, 'loc')}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
+    { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб ${ruIn(name, 'loc')}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
+    { q: l(`${trLoc(name)} musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана ${ruIn(name, 'loc')}?`), a: intel.waterAndHealth.tapWaterDesc },
+    { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые ${ruIn(name, 'loc')}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` }
   ].filter((f) => f.a);
   const similar = useMemo(() => {
     const reg = countryToRegion[code];

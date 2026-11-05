@@ -340,9 +340,9 @@ export const INFO: Record<string, DetailedInfo> = {
     d: 'Ekim 2026'
   },
   'TR-GE': {
-    n: 'Gürcistan, Türk vatandaşlarına 365 gün (1 tam yıl) vizesiz kalış tanır. Ayrıca pasaporta gerek olmaksızın yeni tip çipli T.C. kimlik kartıyla giriş yapılabilir.',
-    nEn: 'Georgia allows Turkish nationals 365 days (1 full year) visa-free stay. Entry is also permitted with biometric Turkish national ID card without a passport.',
-    nDe: 'Georgien gestattet türkischen Staatsbürgern 365 Tage (1 volles Jahr) visumfreien Aufenthalt. Die Einreise ist auch mit dem biometrischen Personalausweis ohne Pass gestattet.',
+    n: 'Gürcistan, Türk vatandaşlarına 365 gün (1 tam yıl) vizesiz kalış tanır. Ayrıca yeni tip çipli T.C. kimlik kartıyla da girilebilir. 1 Ocak 2026’dan beri en az 30.000 GEL teminatlı seyahat sağlık sigortası zorunludur.',
+    nEn: 'Georgia allows Turkish nationals 365 days (1 full year) visa-free stay. Entry is also permitted with the new chip Turkish ID card. Since 1 January 2026 travel health insurance (at least GEL 30,000) is mandatory.',
+    nDe: 'Georgien gestattet türkischen Staatsbürgern 365 Tage (1 volles Jahr) visumfreien Aufenthalt. Die Einreise ist auch mit dem neuen türkischen Chip-Ausweis möglich. Seit 1. Januar 2026 ist eine Reisekrankenversicherung (mind. 30.000 GEL) Pflicht.',
     u: 'https://www.geoconsul.gov.ge',
     h: 'geoconsul.gov.ge',
     d: 'Ekim 2026'
@@ -452,20 +452,20 @@ export const INFO: Record<string, DetailedInfo> = {
     d: 'Ekim 2026'
   },
   'TR-RS': {
-    n: 'Sırbistan ile Türkiye arasında çipli kimlik kartıyla doğrudan uçuşla seyahat protokolü mevcuttur; pasaportla 90 gün vizesizdir.',
-    nEn: 'Direct flights between Serbia and Turkey allow entry with biometric national ID card; 90 days visa-free with passport.',
-    nDe: 'Direktflüge zwischen Serbien und der Türkei ermöglichen die Einreise mit dem biometrischen Personalausweis; mit Reisepass 90 Tage visumfrei.',
-    u: 'https://mfa.gov.rs',
-    h: 'mfa.gov.rs (Sırbistan Dışişleri)',
-    d: 'Ekim 2026'
+    n: "Sırbistan Türk vatandaşlarına pasaportla 90 gün vizesizdir. 2022'de imzalanan kimlik kartıyla seyahat protokolü henüz yürürlüğe girmedi; giriş için pasaport gerekir.",
+    nEn: 'Serbia is visa-free for 90 days with a Turkish passport. The ID-card travel protocol signed in 2022 is not yet in force; a passport is required.',
+    nDe: 'Serbien ist für türkische Staatsbürger mit Reisepass 90 Tage visumfrei. Das 2022 unterzeichnete Ausweis-Protokoll ist noch nicht in Kraft; ein Reisepass ist erforderlich.',
+    u: 'https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa',
+    h: 'mfa.gov.tr',
+    d: 'Kasım 2026'
   },
   'TR-BA': {
-    n: 'Bosna-Hersek Türk vatandaşlarına 90 gün vizesiz kalış tanır; çipli kimlikle giriş protokolü imzalanmıştır.',
-    nEn: 'Bosnia & Herzegovina provides 90 days visa-free stay for Turkish nationals; ID card protocol is recognized on direct flights.',
-    nDe: 'Bosnien und Herzegowina gewährt türkischen Staatsbürgern 90 Tage visumfreien Aufenthalt; das Personalausweis-Protokoll wird bei Direktflügen anerkannt.',
-    u: 'https://mvp.gov.ba',
-    h: 'mvp.gov.ba (Bosna-Hersek Dışişleri)',
-    d: 'Ekim 2026'
+    n: "Bosna-Hersek Türk vatandaşlarına pasaportla 90 gün vizesizdir. Kimlik kartıyla giriş 2022'de duyurulduysa da yürürlüğe girmedi; giriş için pasaport gerekir.",
+    nEn: 'Bosnia and Herzegovina is visa-free for 90 days with a Turkish passport. ID-card entry was announced in 2022 but never brought into force; a passport is required.',
+    nDe: 'Bosnien und Herzegowina ist für türkische Staatsbürger mit Reisepass 90 Tage visumfrei. Die Einreise mit Ausweis wurde 2022 angekündigt, aber nie umgesetzt; ein Reisepass ist erforderlich.',
+    u: 'https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa',
+    h: 'mfa.gov.tr',
+    d: 'Kasım 2026'
   },
   'TR-MD': {
     n: 'Moldova’ya yeni tip çipli T.C. kimlik kartıyla 90 güne kadar vizesiz giriş yapılabilir.',
@@ -761,13 +761,18 @@ export const EU_COUNTRIES = 'AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT 
 export const BALKAN_ID_COUNTRIES = 'AL BA ME MK RS XK'.split(' ');
 export const SCHENGEN_SET = new Set('AT BE BG HR CZ DK EE FI FR DE GR HU IS IT LV LI LT LU MT NL NO PL PT RO SK SI ES SE CH'.split(' '));
 
+/** Türkiye'nin kimlikle girişe izin verdiği AB/EFTA uyrukları */
+const TR_ACCEPTS_EU_ID = 'BE BG CH DE ES FR GR HU IT LI LU MT NL PL PT RO'.split(' ');
+
 export function idEligibleSet(passport: string): Set<string> {
   if (EU_COUNTRIES.includes(passport)) {
-    return new Set([...EU_COUNTRIES, ...BALKAN_ID_COUNTRIES].filter(c => c !== passport));
+    // AB/AEA/İsviçre kimliği: AB+Balkanlar, Gürcistan, Moldova, mikro devletler; Türkiye yalnızca bazı uyruklar için (Auswärtiges Amt, Kasım 2026)
+    const extra = ['GE', 'MD', 'AD', 'MC', 'SM', 'VA', ...(TR_ACCEPTS_EU_ID.includes(passport) ? ['TR'] : [])];
+    return new Set([...EU_COUNTRIES, ...BALKAN_ID_COUNTRIES, ...extra].filter(c => c !== passport));
   }
   if (passport === 'TR') {
-    // Türkiye vatandaşları için kimlikle girilebilen ülkeler: Gürcistan, Azerbaycan, KKTC, Moldova, Bosna Hersek, Sırbistan, Ukrayna
-    return new Set(['GE', 'AZ', 'MD', 'BA', 'RS', 'UA']);
+    // T.C. çipli kimlikle: Gürcistan, Azerbaycan (doğrudan seyahat), Moldova, Ukrayna (+ KKTC). Bosna ve Sırbistan protokolleri yürürlükte değil (Dışişleri, Kasım 2026)
+    return new Set(['GE', 'AZ', 'MD', 'UA']);
   }
   return new Set();
 }

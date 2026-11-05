@@ -1,4 +1,5 @@
 import { LANG_PASS } from '../data/passportPages';
+import { ruIn, ruOf } from '../data/ruCases';
 /**
  * Programmatic Schema.org (JSON-LD) Generator for Vizamigo
  * Combines @type: 'TouristDestination', @type: 'TouristTrip', @type: 'FAQPage', and @type: 'BreadcrumbList'
@@ -160,18 +161,18 @@ export function generateDirectAnswerSnippet(
 
     case 'ru': {
       if (cat === 'free' || cat === 'id') {
-        return `По состоянию на 2026 год въезд в ${countryName} для владельцев паспортов (${passportName}) является безвизовым. Разрешенный срок пребывания составляет до ${stayDurationText}. При въезде требуется паспорт со сроком действия не менее 6 месяцев и обратный билет.`;
+        return `По состоянию на 2026 год въезд ${ruIn(countryName, 'acc')} для владельцев паспортов (${passportName}) является безвизовым. Разрешенный срок пребывания составляет до ${stayDurationText}. При въезде требуется паспорт со сроком действия не менее 6 месяцев и обратный билет.`;
       }
       if (cat === 'voa') {
-        return `По состоянию на 2026 год граждане с паспортом (${passportName}) могут получить визу по прибытии (Visa on Arrival) в ${countryName}. Разрешенный срок пребывания составляет ${stayDurationText}.`;
+        return `По состоянию на 2026 год граждане с паспортом (${passportName}) могут получить визу по прибытии (Visa on Arrival) ${ruIn(countryName, 'acc')}. Разрешенный срок пребывания составляет ${stayDurationText}.`;
       }
       if (cat === 'evisa') {
-        return `По состоянию на 2026 год для въезда в ${countryName} гражданам с паспортом (${passportName}) требуется оформить электронную визу (eVisa) онлайн. Разрешенный срок пребывания: ${stayDurationText}.`;
+        return `По состоянию на 2026 год для въезда ${ruIn(countryName, 'acc')} гражданам с паспортом (${passportName}) требуется оформить электронную визу (eVisa) онлайн. Разрешенный срок пребывания: ${stayDurationText}.`;
       }
       if (cat === 'eta') {
-        return `По состоянию на 2026 год для поездки в ${countryName} требуется электронное разрешение (ETA), оформленное минимум за 72 часа до вылета. Срок пребывания: ${stayDurationText}.`;
+        return `По состоянию на 2026 год для поездки ${ruIn(countryName, 'acc')} требуется электронное разрешение (ETA), оформленное минимум за 72 часа до вылета. Срок пребывания: ${stayDurationText}.`;
       }
-      return `По состоянию на 2026 год для въезда в ${countryName} с паспортом (${passportName}) необходимо заранее получить консульскую визу через посольство или визовый центр.`;
+      return `По состоянию на 2026 год для въезда ${ruIn(countryName, 'acc')} с паспортом (${passportName}) необходимо заранее получить консульскую визу через посольство или визовый центр.`;
     }
 
     // Default English
@@ -304,14 +305,14 @@ export function getCountrySectionHeadings(
       return {
         h1,
         currencyH2: `Валюта ${countryName} и актуальные курсы обмена (USD/EUR/GBP)`,
-        clockWeatherH2: `Местное время, часовой пояс и погода в ${countryName}`,
-        internetEsimH2: `Скорость интернета, eSIM и мобильная связь в ${countryName}`,
-        transportTaxiH2: `Транспорт, трансфер из аэропорта и такси в ${countryName}`,
+        clockWeatherH2: `Местное время, часовой пояс и погода ${ruIn(countryName, 'loc')}`,
+        internetEsimH2: `Скорость интернета, eSIM и мобильная связь ${ruIn(countryName, 'loc')}`,
+        transportTaxiH2: `Транспорт, трансфер из аэропорта и такси ${ruIn(countryName, 'loc')}`,
         itineraryRouteH2: `Маршрут путешествия, популярные города и гид по ${countryName}`,
-        practicalEtiquetteH2: `Розетки, чаевые и местные правила в ${countryName}`,
-        budgetAccommodationH2: `Дневной бюджет, проживание и авиабилеты в ${countryName}`,
-        transitRulesH2: `Правила транзита в аэропорту и пересадки в ${countryName}`,
-        passportSynergyH2: `Визовая политика и сравнение паспортов для ${countryName}`,
+        practicalEtiquetteH2: `Розетки, чаевые и местные правила ${ruIn(countryName, 'loc')}`,
+        budgetAccommodationH2: `Дневной бюджет, проживание и авиабилеты ${ruIn(countryName, 'loc')}`,
+        transitRulesH2: `Правила транзита в аэропорту и пересадки ${ruIn(countryName, 'loc')}`,
+        passportSynergyH2: `Визовая политика и сравнение паспортов для ${ruOf(countryName)}`,
         geographyMapH2: `Географическое положение, столица и карта ${countryName}`
       };
     default:
@@ -331,6 +332,10 @@ export function getCountrySectionHeadings(
   }
 }
 
+// Pasaporta özel sayfa başlıkları insanların aradığı gibi olsun ("Einreise Argentinien für Schweizer")
+const DE_DEMONYM: Record<string, string> = { CH: 'Schweizer', AT: 'Österreicher', DE: 'Deutsche', TR: 'Türken' };
+const EN_DEMONYM: Record<string, string> = { GB: 'British', IN: 'Indian', CA: 'Canadian', AU: 'Australian', US: 'US', TR: 'Turkish' };
+
 /**
  * Returns voice-intent mobile search question for country
  */
@@ -348,19 +353,21 @@ export function getMobileVoiceQuestion(
     case 'en':
       return currentPassport === LANG_PASS.en || currentPassport === 'TR'
         ? `Do I Need a Visa for ${countryName}? (2026 Entry Rules)`
-        : `${countryName} Visa Requirements for ${passportName} Citizens (2026)`;
+        : `${countryName} Visa Requirements for ${EN_DEMONYM[currentPassport] || passportName} Citizens (2026)`;
     case 'de':
       return currentPassport === LANG_PASS.de || currentPassport === 'TR'
         ? `Brauche ich ein Visum für ${countryName}? (2026 Einreisebestimmungen)`
-        : `Einreise ${countryName} mit Pass aus ${passportName}: Visum nötig? (2026)`;
+        : DE_DEMONYM[currentPassport]
+          ? `Einreise ${countryName} für ${DE_DEMONYM[currentPassport]}: Visum nötig? (2026)`
+          : `Einreise ${countryName} mit Pass aus ${passportName}: Visum nötig? (2026)`;
     case 'es':
       return currentPassport === LANG_PASS.es || currentPassport === 'TR'
         ? `¿Necesito Visa para ${countryName}? (Requisitos de Entrada 2026)`
         : `¿${countryName} pide visa a ciudadanos de ${passportName}? Requisitos 2026`;
     case 'ru':
       return currentPassport === LANG_PASS.ru || currentPassport === 'TR'
-        ? `Нужна ли виза в ${countryName}? (Правила въезда 2026)`
-        : `Виза в ${countryName} для граждан страны ${passportName}: правила 2026`;
+        ? `Нужна ли виза ${ruIn(countryName, 'acc')}? (Правила въезда 2026)`
+        : `Нужна ли виза ${ruIn(countryName, 'acc')} гражданам ${ruOf(passportName)}? Правила 2026`;
   }
 }
 
@@ -381,7 +388,7 @@ export function getCountryNaturalH1(
     case 'es':
       return `Política de Visados, Límites de Estancia e Itinerario de ${countryName}`;
     case 'ru':
-      return `Визовый режим в ${countryName}, сроки пребывания и гид`;
+      return `Визовый режим ${ruIn(countryName, 'loc')}, сроки пребывания и гид`;
   }
 }
 

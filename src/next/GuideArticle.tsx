@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useI18n } from '../data/i18n';
-import { GUIDE_META, getGuide, type GuideChecklist, type GuideId } from '../data/guides';
+import { GUIDE_META, getGuide, guideGroups, type GuideChecklist, type GuideId, type GuideListGroup } from '../data/guides';
+import { getCountryName } from '../data/passportData';
+import { buildLocalizedPath } from '../utils/seoRouter';
+import { Flag } from './ui';
+import type { SupportedLanguage } from '../i18n/types';
 import { tpLinks } from '../data/tpPartners';
 import { Btn, Chip, Chips, List, Row } from './ui';
 import { PartnerLogo } from './PartnerLogo';
@@ -23,6 +27,7 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
         </div>
       </section>
       {g.checklist && <Checklist c={g.checklist} />}
+      {meta.list && <CountryGroups id={id} />}
       {g.sections.map((s) => (
         <section key={s.h}>
           <h2>{s.h}</h2>
@@ -89,5 +94,43 @@ const Checklist: React.FC<{ c: GuideChecklist }> = ({ c }) => {
       <p className="vz-muted" style={{ fontSize: 13 }}>{c.note}</p>
       <Btn variant="soft" icon="doc" onClick={() => window.print()}>{c.print}</Btn>
     </section>
+  );
+};
+
+/** Liste rehberi: canlı vize verisinden ülke grupları; her ülke kendi sayfasına bağlanır. */
+const CountryGroups: React.FC<{ id: GuideId }> = ({ id }) => {
+  const { l, language } = useI18n();
+  const gr = guideGroups(id, language);
+  if (!gr) return null;
+  const title: Record<GuideListGroup, string> = {
+    id: l('Kimlikle gidilebilen ülkeler', 'ID card accepted', 'Mit Personalausweis', 'Con DNI', 'По ID-карте'),
+    free: l('Vizesiz ülkeler', 'Visa-free countries', 'Visumfreie Länder', 'Países sin visado', 'Без визы'),
+    voa: l('Kapıda vize', 'Visa on arrival', 'Visum bei Ankunft', 'Visado a la llegada', 'Виза по прилёте'),
+    evisa: l('E-vize (önceden çevrim içi)', 'eVisa (apply online first)', 'eVisum (vorab online)', 'eVisa (en línea antes)', 'Электронная виза'),
+    eta: l('Elektronik izin (ETA)', 'Travel authorisation (ETA)', 'Reisegenehmigung (ETA)', 'Autorización (ETA)', 'Разрешение ETA')
+  };
+  const dayTxt = (v: string) => (/^\d+$/.test(v) ? l(`${v} gün`, `${v} days`, `${v} Tage`, `${v} días`, `${v} дн.`) : '');
+  const lang = language as SupportedLanguage;
+  return (
+    <>
+      {(GUIDE_META[id].list!.groups).map((k) =>
+        gr[k].length ? (
+          <section key={k}>
+            <h2>{title[k]} ({gr[k].length})</h2>
+            <ul className="vz-glist">
+              {gr[k].map(([c, v]) => (
+                <li key={c}>
+                  <a href={buildLocalizedPath(lang, 'explore', c)}>
+                    <Flag code={c} size="sm" />
+                    <span>{getCountryName(c, language)}</span>
+                    {dayTxt(v) && <em>{dayTxt(v)}</em>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null
+      )}
+    </>
   );
 };

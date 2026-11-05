@@ -56,7 +56,7 @@ async function main() {
   };
   const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
   const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
-  const { GUIDE_IDS, GUIDE_META, getGuide } = await import('../src/data/guides');
+  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups } = await import('../src/data/guides');
 
   const { GEO_DATA } = await import('../src/data/geoData');
   const { getCountryName, countryToRegion, getRegionName } = await import('../src/data/passportData');
@@ -248,6 +248,10 @@ async function main() {
       const check = c ? `<h2>${esc(c.title)}</h2><h3>${esc(c.commonTitle)}</h3>${ul(c.common)}${[...c.statuses, ...c.purposes].map((x) => `<h3>${esc(x.label)}</h3>${ul(x.docs)}`).join('')}<p>${esc(c.note)}</p>` : '';
       const faq = `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`;
       const src = `<p>${meta.sources.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(x.label)}</a>`).join(' · ')} · ${esc(meta.checked)}</p>`;
+      const GL: Record<string, string[]> = { tr: ['Kimlikle gidilebilen ülkeler', 'Vizesiz ülkeler', 'Kapıda vize', 'E-vize', 'Elektronik izin (ETA)'], en: ['ID card accepted', 'Visa-free countries', 'Visa on arrival', 'eVisa', 'Travel authorisation (ETA)'], de: ['Mit Personalausweis', 'Visumfreie Länder', 'Visum bei Ankunft', 'eVisum', 'Reisegenehmigung (ETA)'], es: ['Con DNI', 'Países sin visado', 'Visado a la llegada', 'eVisa', 'Autorización (ETA)'], ru: ['По ID-карте', 'Без визы', 'Виза по прилёте', 'Электронная виза', 'Разрешение ETA'] };
+      const DAY: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
+      const gr = guideGroups(id, lang);
+      const list = gr ? (['id', 'free', 'voa', 'evisa', 'eta'] as const).filter((k) => GUIDE_META[id].list!.groups.includes(k) && gr[k].length).map((k) => `<h2>${esc((GL[lang] || GL.en)[['id', 'free', 'voa', 'evisa', 'eta'].indexOf(k)])} (${gr[k].length})</h2><ul>${gr[k].map(([c, v]) => `<li><a href="${buildLocalizedPath(lang as never, 'explore', c)}">${esc(getCountryName(c, lang))}</a>${/^\d+$/.test(v) ? ` · ${v} ${DAY[lang] || DAY.en}` : ''}</li>`).join('')}</ul>`).join('') : '';
       const others = GUIDE_IDS.filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,
@@ -257,7 +261,7 @@ async function main() {
         desc: g.metaDesc,
         head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,
         body: eyebrow(lang, ['Vizamigo']) + h1(g.title) + lead(g.answer),
-        nav: navBlock(lang, `${check}${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
+        nav: navBlock(lang, `${check}${list}${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
       n++;
     }

@@ -5,6 +5,7 @@
  */
 
 import { SupportedLanguage } from '../i18n/types';
+import { ruIn } from '../data/ruCases';
 import { getCountryName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { getCountryGeography } from '../data/countryGeography';
@@ -260,7 +261,7 @@ export function generateCountryJsonLd({
               : language === 'es'
               ? `¿Cuál es la moneda y el tipo de cambio (USD/EUR/GBP) en ${countryName}?`
               : language === 'ru'
-              ? `Какая валюта и курсы обмена (USD/EUR/GBP) в ${countryName}?`
+              ? `Какая валюта и курсы обмена (USD/EUR/GBP) ${ruIn(countryName, 'loc')}?`
               : `What is the currency and exchange rate (USD/EUR/GBP) in ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
@@ -276,7 +277,7 @@ export function generateCountryJsonLd({
               : language === 'es'
               ? `¿Qué tipo de enchufe y voltaje se utiliza en ${countryName}?`
               : language === 'ru'
-              ? `Какие типы розеток и напряжение электросети в ${countryName}?`
+              ? `Какие типы розеток и напряжение электросети ${ruIn(countryName, 'loc')}?`
               : `What plug type and electrical voltage are used in ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
@@ -292,7 +293,7 @@ export function generateCountryJsonLd({
               : language === 'es'
               ? `¿Cuánta validez de pasaporte se requiere para viajar a ${countryName}?`
               : language === 'ru'
-              ? `Какой срок действия паспорта требуется для поездки в ${countryName}?`
+              ? `Какой срок действия паспорта требуется для поездки ${ruIn(countryName, 'acc')}?`
               : `How long must a passport be valid to enter ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
@@ -308,7 +309,7 @@ export function generateCountryJsonLd({
               : language === 'es'
               ? `¿Cuál es la velocidad de internet en ${countryName} y qué ruta de viaje se recomienda?`
               : language === 'ru'
-              ? `Какая скорость интернета в ${countryName} и какой маршрут рекомендуется?`
+              ? `Какая скорость интернета ${ruIn(countryName, 'loc')} и какой маршрут рекомендуется?`
               : `What is the internet speed in ${countryName} and recommended travel route?`,
             acceptedAnswer: {
               '@type': 'Answer',

@@ -19,6 +19,7 @@
  */
 
 import { SupportedLanguage } from '../i18n/types';
+import { ruIn, ruOf } from '../data/ruCases';
 import { TabKey } from '../components/Navigation';
 import { getCountryName, VisaCategory } from '../data/passportData';
 import { getPassportItems } from './calculator';
@@ -97,7 +98,7 @@ export function buildSemanticTitle({ lang, tab, countryCode, passportCode }: Seo
       case 'es':
         return `¿Necesito Visa para ${countryName}? (Requisitos de Entrada ${CURRENT_YEAR}) | Vizamigo`;
       case 'ru':
-        return `Нужна ли виза в ${countryName}? (Правила въезда ${CURRENT_YEAR}) | Vizamigo`;
+        return `Нужна ли виза ${ruIn(countryName, 'acc')}? (Правила въезда ${CURRENT_YEAR}) | Vizamigo`;
       case 'en':
       default:
         return `Do I Need a Visa for ${countryName}? (${CURRENT_YEAR} Entry Rules) | Vizamigo`;
@@ -204,7 +205,7 @@ export function buildSemanticDescription({ lang, tab, countryCode, passportCode 
       case 'es':
         return `Requisitos de entrada para ${countryName} con pasaporte ${passportName}: ${status.label} (${status.stay}). Moneda ${currency}, enchufes ${plug}, velocidad móvil ~${speed} Mbps y números de emergencia.`;
       case 'ru':
-        return `Правила въезда в ${countryName} для владельцев паспорта ${passportName}: ${status.label} (${status.stay}). Валюта ${currency}, розетки ${plug}, мобильный интернет ~${speed} Мбит/с.`;
+        return `Правила въезда ${ruIn(countryName, 'acc')} для владельцев паспорта ${ruOf(passportName)}: ${status.label} (${status.stay}). Валюта ${currency}, розетки ${plug}, мобильный интернет ~${speed} Мбит/с.`;
       case 'en':
       default:
         return `Entry requirements for ${countryName} with ${passportName} passport: ${status.label} (${status.stay}). Currency ${currency}, sockets ${plug}, mobile speed ~${speed} Mbps and emergency hotlines.`;
