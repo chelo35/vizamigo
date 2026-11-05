@@ -6,16 +6,37 @@ import { buildLocalizedPath } from '../utils/seoRouter';
 import { Flag } from './ui';
 import type { SupportedLanguage } from '../i18n/types';
 import { tpLinks } from '../data/tpPartners';
-import { Btn, Chip, Chips, List, Row } from './ui';
+import { AdTag, Btn, Chip, Chips, List, Row } from './ui';
 import { PartnerLogo } from './PartnerLogo';
+
+type Pick = 'visahq' | 'insurance' | 'flights' | 'hotel' | 'esim' | 'transfer' | 'tours';
+const VISA: Pick[] = ['insurance', 'visahq', 'flights', 'hotel'];
+const PLAN_DEFAULT: { place: string; to?: string; picks: Pick[] } = { place: 'Paris', to: 'PAR', picks: ['flights', 'hotel', 'esim', 'insurance'] };
+/** Rehberin konusuna göre "Yolculuğunu planla" bağlantıları (vize rehberlerinde başvuru yardımı ve sigorta önde) */
+const PLAN: Partial<Record<GuideId, { place: string; to?: string; picks: Pick[] }>> = {
+  schengen_documents: { place: 'Paris', to: 'PAR', picks: VISA },
+  schengen_by_country: { place: 'Paris', to: 'PAR', picks: VISA },
+  visa_fees: { place: 'Paris', to: 'PAR', picks: VISA },
+  visa_appointments: { place: 'Paris', to: 'PAR', picks: VISA },
+  us_visa: { place: 'New York', to: 'NYC', picks: VISA },
+  uk_visa_india: { place: 'London', to: 'LON', picks: VISA },
+  esta: { place: 'New York', to: 'NYC', picks: ['flights', 'hotel', 'insurance', 'esim'] },
+  uk_eta: { place: 'London', to: 'LON', picks: ['flights', 'hotel', 'insurance', 'esim'] },
+  etias: { place: 'Paris', to: 'PAR', picks: ['flights', 'hotel', 'insurance', 'esim'] },
+  greek_islands_visa: { place: 'Rhodes, Greece', picks: ['hotel', 'tours', 'insurance', 'esim'] },
+  dubai_visa_india: { place: 'Dubai', to: 'DXB', picks: ['hotel', 'flights', 'transfer', 'tours', 'esim', 'insurance'] },
+  thailand_india: { place: 'Bangkok', to: 'BKK', picks: ['hotel', 'flights', 'esim', 'transfer', 'tours', 'insurance'] },
+  visa_free_tr: { place: 'Bangkok', to: 'BKK', picks: ['flights', 'hotel', 'esim', 'insurance'] },
+  visa_free_ru: { place: 'Bangkok', to: 'BKK', picks: ['flights', 'hotel', 'esim', 'insurance'] },
+  id_card_travel: { place: 'Tbilisi', to: 'TBS', picks: ['flights', 'hotel', 'esim', 'insurance'] }
+};
 
 /** Güncel konu rehberi: kısa cevap, bölümler, SSS, kaynaklar ve yolculuk bağlantıları. */
 export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
   const { l, language } = useI18n();
   const g = getGuide(id, language);
   const meta = GUIDE_META[id];
-  const place = id === 'greek_islands_visa' ? 'Rhodes, Greece' : id === 'uk_eta' ? 'London' : id === 'esta' ? 'New York' : 'Paris';
-  const to = id === 'uk_eta' ? 'LON' : id === 'esta' ? 'NYC' : 'PAR';
+  const plan = PLAN[id] || PLAN_DEFAULT;
   const checked = new Date(meta.checked).toLocaleDateString(language, { day: 'numeric', month: 'long', year: 'numeric' });
   return (
     <div className="vz-guide">
@@ -46,9 +67,25 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
       <section>
         <h2>{l('Yolculuğunu planla', 'Plan your trip', 'Reise planen', 'Planea tu viaje', 'Спланируйте поездку')}</h2>
         <List>
-          {id !== 'greek_islands_visa' && <Row lead={<PartnerLogo id="aviasales" />} title={l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты')} sub="Aviasales" href={tpLinks.flights(language === 'tr' ? 'IST' : undefined, to)} />}
-          <Row lead={<PartnerLogo id="booking" />} title={l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели')} sub="Booking.com" href={tpLinks.booking(place)} />
-          <Row lead={<PartnerLogo id="yesim" />} title="eSIM" sub="Yesim" href={tpLinks.yesim()} />
+          {plan.picks.map((k) => {
+            if (k === 'visahq')
+              return (
+                <Row key={k} lead={<PartnerLogo url="https://www.visahq.com" name="VisaHQ" fallback="passport" />} title={<>{l('Başvurunu VisaHQ hazırlasın', 'Let VisaHQ handle your application', 'Antrag über VisaHQ', 'Tramita con VisaHQ', 'Оформить через VisaHQ')} <AdTag /></>} sub={l('Evrak kontrolü ve takip; hizmet bedeli vize ücretine eklenir', 'Document check and tracking; service fee on top of the visa fee', 'Dokumentenprüfung und Verfolgung; Servicegebühr zusätzlich', 'Revisión de documentos y seguimiento; tarifa de servicio adicional', 'Проверка документов и сопровождение; сервисный сбор сверх консульского')} href="https://vizamigo.visahq.net/" />
+              );
+            if (k === 'insurance')
+              return (
+                <React.Fragment key={k}>
+                  <Row lead={<PartnerLogo id="safetywing" />} title={l('Seyahat sağlık sigortası', 'Travel medical insurance', 'Reisekrankenversicherung', 'Seguro médico de viaje', 'Медицинская страховка')} sub={l('SafetyWing · Schengen için en az 30.000 € teminat', 'SafetyWing', 'SafetyWing', 'SafetyWing', 'SafetyWing')} href={tpLinks.safetywing()} />
+                  <Row lead={<PartnerLogo id="hellosafe" />} title={l('Sigortaları karşılaştır', 'Compare travel insurance', 'Versicherungen vergleichen', 'Comparar seguros', 'Сравнить страховки')} sub="HelloSafe" href={tpLinks.hellosafe()} />
+                </React.Fragment>
+              );
+            if (k === 'flights') return <Row key={k} lead={<PartnerLogo id="aviasales" />} title={l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты')} sub="Aviasales" href={tpLinks.flights(language === 'tr' ? 'IST' : undefined, plan.to)} />;
+            if (k === 'hotel') return <Row key={k} lead={<PartnerLogo id="booking" />} title={l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели')} sub="Booking.com" href={tpLinks.booking(plan.place)} />;
+            if (k === 'esim') return <Row key={k} lead={<PartnerLogo id="yesim" />} title="eSIM" sub="Yesim" href={tpLinks.yesim()} />;
+            if (k === 'transfer') return <Row key={k} lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado al aeropuerto', 'Трансфер из аэропорта')} sub="Kiwitaxi" href={tpLinks.kiwitaxi()} />;
+            if (k === 'tours') return <Row key={k} lead={<PartnerLogo id="getyourguide" />} title={l('Turlar ve biletler', 'Tours and tickets', 'Touren und Tickets', 'Tours y entradas', 'Экскурсии и билеты')} sub="GetYourGuide" href={tpLinks.tours(plan.place)} />;
+            return null;
+          })}
         </List>
       </section>
       <section>
