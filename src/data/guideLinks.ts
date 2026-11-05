@@ -1,7 +1,11 @@
 // Ana sayfa ve menü için hafif rehber listesi (tam metin guides.ts içinde, ayrı yüklenir)
-export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
+export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "schengen_by_country", "icon": "doc"}, {"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
 export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string }>> = {
  "tr": {
+  "schengen_by_country": {
+   "t": "Ülke ülke Schengen vizesi",
+   "d": "Yunanistan, İspanya, Almanya, İtalya, Fransa, Hollanda, Danimarka: merkez, ücret, evrak ve bekleme."
+  },
   "us_visa": {
    "t": "Amerika vizesi 2026",
    "d": "185 $ ücret, DS-160, ustraveldocs randevusu, mülakat ve 214(b) reddi."

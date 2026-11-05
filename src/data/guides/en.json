@@ -76,6 +76,15 @@
     "p": [
      "Apply in the official UK ETA app or on GOV.UK. You need your passport, a photo of your face and a few answers. A decision usually comes within 3 working days, so do not leave it to the last minute."
     ]
+   },
+   {
+    "h": "Details travellers often ask about",
+    "list": [
+     "Children and babies need their own ETA.",
+     "Passengers transiting airside without passing UK border control currently do not need an ETA (temporary exemption).",
+     "EU national ID cards are not accepted for UK entry, except for people with EU Settlement Scheme status.",
+     "Since 25 February 2026 airlines refuse boarding without an ETA."
+    ]
    }
   ],
   "faq": [
@@ -96,8 +105,8 @@
  "esta": {
   "title": "What is ESTA? US visa-waiver travel authorisation and fee (2026)",
   "short": "US ESTA",
-  "metaDesc": "ESTA is the online authorisation for the 42 Visa Waiver Program countries: about $40, valid 2 years, stays up to 90 days. How to apply and who needs a visa instead.",
-  "answer": "ESTA is the online travel authorisation for citizens of the 42 countries in the US Visa Waiver Program. It costs about $40, is valid for 2 years and allows stays of up to 90 days per entry. Nationals of other countries need a B1/B2 visa.",
+  "metaDesc": "ESTA is the online authorisation for the 42 Visa Waiver Program countries: $40.62, valid 2 years, stays up to 90 days. How to apply and who needs a visa instead.",
+  "answer": "ESTA is the online travel authorisation for citizens of the 42 countries in the US Visa Waiver Program. It costs $40.62, is valid for 2 years and allows stays of up to 90 days per entry. Nationals of other countries need a B1/B2 visa.",
   "sections": [
    {
     "h": "Who can use ESTA?",
@@ -109,7 +118,7 @@
    {
     "h": "Fee and validity",
     "list": [
-     "Fee: about $40 (raised from $21 on 30 September 2025).",
+     "Fee: $40.62 (since 16 October 2026; raised from $21 to $40 on 30 September 2025).",
      "Valid for 2 years or until your passport expires.",
      "Up to 90 days per entry; not for work or study."
     ]
@@ -118,6 +127,29 @@
     "h": "How to apply",
     "p": [
      "Apply only on the official ESTA website or the ESTA Mobile app. Official advice: apply at least 72 hours before your flight. Third-party sites charge more for the same application."
+    ]
+   },
+   {
+    "h": "Who cannot use ESTA",
+    "list": [
+     "Anyone who has been to Iran, Iraq, Libya, North Korea, Somalia, Sudan, Syria or Yemen since 1 March 2011, or to Cuba since 12 January 2021.",
+     "Dual nationals of Iran, Iraq, North Korea, Sudan, Syria or Cuba.",
+     "Travellers without an e-passport (with chip).",
+     "They apply for a B1/B2 visa instead."
+    ]
+   },
+   {
+    "h": "Beware of third-party sites",
+    "p": [
+     "The official fee is $40.62 since 16 October 2026; if refused, you still pay $10.62. Many sites ranking for 'ESTA application' charge several times more. Apply only on esta.cbp.dhs.gov or the ESTA Mobile app."
+    ]
+   },
+   {
+    "h": "Good to know",
+    "list": [
+     "ESTA is required for land-border entry from Canada and Mexico since 1 October 2022.",
+     "Social media details are currently optional; a proposal to make them mandatory (December 2025) is not yet in force.",
+     "Check your status on esta.cbp.dhs.gov."
     ]
    }
   ],

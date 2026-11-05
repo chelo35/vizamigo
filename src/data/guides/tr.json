@@ -76,6 +76,15 @@
     "p": [
      "Resmî UK ETA uygulaması ya da GOV.UK üzerinden başvurulur. Pasaport, yüz fotoğrafı ve birkaç soru istenir. Kararın genelde 3 iş günü içinde gelmesi beklenir; seyahatten önce bu payı bırak."
     ]
+   },
+   {
+    "h": "Sık sorulan ayrıntılar",
+    "list": [
+     "Çocuklar ve bebekler için de ayrı ETA gerekir.",
+     "Havalimanında İngiltere sınır kontrolünden geçmeden aktarma yapanlar şu an ETA'dan muaf (geçici muafiyet).",
+     "AB kimlik kartıyla İngiltere'ye girilemez (EU Settlement Scheme statüsü olanlar hariç).",
+     "25 Şubat 2026'dan beri havayolları ETA'sı olmayanı uçağa almıyor."
+    ]
    }
   ],
   "faq": [
@@ -96,8 +105,8 @@
  "esta": {
   "title": "ESTA nedir? ABD'ye vizesiz giriş izni ve ücreti (2026)",
   "short": "ABD ESTA",
-  "metaDesc": "ESTA, ABD'nin vize muafiyet programındaki 42 ülke için çevrim içi izni: ücret yaklaşık 40 $, 2 yıl geçerli, 90 güne kadar kalış. Türk vatandaşları için durum.",
-  "answer": "ESTA, ABD'nin Vize Muafiyet Programı'ndaki 42 ülkenin vatandaşları için çevrim içi seyahat iznidir. Ücreti yaklaşık 40 $, 2 yıl geçerli, her girişte 90 güne kadar kalış sağlar. Türkiye bu programda olmadığı için Türk vatandaşları ESTA değil, B1/B2 vizesi alır.",
+  "metaDesc": "ESTA, ABD'nin vize muafiyet programındaki 42 ülke için çevrim içi izni: ücret 40,62 $, 2 yıl geçerli, 90 güne kadar kalış. Türk vatandaşları için durum.",
+  "answer": "ESTA, ABD'nin Vize Muafiyet Programı'ndaki 42 ülkenin vatandaşları için çevrim içi seyahat iznidir. Ücreti 40,62 $, 2 yıl geçerli, her girişte 90 güne kadar kalış sağlar. Türkiye bu programda olmadığı için Türk vatandaşları ESTA değil, B1/B2 vizesi alır.",
   "sections": [
    {
     "h": "Kimler ESTA ile gidebilir?",
@@ -109,7 +118,7 @@
    {
     "h": "Ücret ve geçerlilik",
     "list": [
-     "Ücret: 40 $ civarı (30 Eylül 2025'te 21 $'dan 40 $'a çıktı).",
+     "Ücret: 40,62 $ (16 Ekim 2026'dan beri; 30 Eylül 2025'te 21 $'dan 40 $'a çıkmıştı).",
      "Geçerlilik: 2 yıl ya da pasaportun bitimine kadar.",
      "Her girişte en fazla 90 gün; çalışma ve eğitim için kullanılamaz."
     ]
@@ -118,6 +127,21 @@
     "h": "Nasıl başvurulur?",
     "p": [
      "Yalnızca resmî ESTA sitesi ve ESTA Mobile uygulamasından başvurulur. Resmî öneri: uçuştan en az 72 saat önce başvur. Aynı işlemi yapan aracı siteler daha yüksek ücret alır."
+    ]
+   },
+   {
+    "h": "Kimler ESTA alamaz?",
+    "list": [
+     "1 Mart 2011'den beri İran, Irak, Libya, Kuzey Kore, Somali, Sudan, Suriye ya da Yemen'e; 12 Ocak 2021'den beri Küba'ya gitmiş olanlar.",
+     "İran, Irak, Kuzey Kore, Sudan, Suriye ya da Küba ile çifte vatandaşlar.",
+     "Çipli (elektronik) pasaportu olmayanlar.",
+     "Bu kişiler B1/B2 vizesi alır."
+    ]
+   },
+   {
+    "h": "Pahalı aracı sitelere dikkat",
+    "p": [
+     "Resmî ücret 16 Ekim 2026'dan beri 40,62 $; başvuru reddedilirse 10,62 $ alınır. Aramada üstte çıkan birçok site aynı başvuru için kat kat fazla ücret ister. Yalnızca esta.cbp.dhs.gov ya da ESTA Mobile uygulamasını kullan."
     ]
    }
   ],
@@ -830,6 +854,152 @@
    {
     "q": "Amerika vize randevusu nereden alınır?",
     "a": "ustraveldocs.com/tr üzerinden; mülakat Ankara Büyükelçiliği ya da İstanbul Başkonsolosluğu'nda yapılır."
+   }
+  ]
+ },
+ "schengen_by_country": {
+  "title": "Schengen vizesi ülke ülke 2026: Yunanistan, İspanya, Almanya, İtalya, Fransa, Hollanda, Danimarka",
+  "short": "Ülke ülke Schengen vizesi",
+  "metaDesc": "Türk vatandaşları için 2026 Schengen başvurusu ülke ülke: Yunanistan (Kosmos), İspanya (BLS, ücret USD), Almanya (iDATA bekleme listesi), İtalya (iDATA, ücret TL), Fransa ve Hollanda (VFS), Danimarka (VFS, yoğunluk). Evrak, ücret, süre ve kademeli vize.",
+  "answer": "Türkiye'den yapılan Schengen başvurularında vize ücreti her ülkede 90 €, karar normalde 15 gün. Farklı olan başvuru merkezi, evrak ayrıntıları ve bekleme süresi: Yunanistan Kosmos Vize, İspanya BLS (ücret dolarla ve nakit), Almanya ve İtalya iDATA (Almanya'da bekleme listesi), Fransa, Hollanda ve Danimarka VFS Global ile çalışıyor. 2024'te Türkiye'den 1,17 milyon başvuru yapıldı, ret oranı %14,5 oldu.",
+  "sections": [
+   {
+    "h": "Bir bakışta",
+    "table": {
+     "head": [
+      "Ülke",
+      "Başvuru merkezi",
+      "Ücret",
+      "Dikkat"
+     ],
+     "rows": [
+      [
+       "Yunanistan",
+       "Kosmos Vize (Ankara, İstanbul, Bursa, Çanakkale, Gaziantep, Trabzon, İzmir bölgesi)",
+       "90 € + 30 € hizmet",
+       "Ada kapıda vizesi ayrı bir uygulama"
+      ],
+      [
+       "İspanya",
+       "BLS (İstanbul, Ankara, İzmir, Antalya, Gaziantep)",
+       "106 $ + 20 $ hizmet, yalnızca nakit dolar",
+       "Randevular ayın 1'inde ve 16'sında açılıyor; 6 aylık banka dökümü"
+      ],
+      [
+       "Almanya",
+       "iDATA",
+       "90 €",
+       "18 Mart 2024'ten beri ücretsiz bekleme listesi; sıra gelince 48 saatte ödeme"
+      ],
+      [
+       "İtalya",
+       "iDATA (Ankara ve İzmir bölgesinde iDATA-VFS)",
+       "90 €, TL olarak nakit (kur her çeyrek güncellenir)",
+       "SGK hizmet dökümü karekodlu olmalı"
+      ],
+      [
+       "Fransa",
+       "VFS Global (Ankara, İstanbul)",
+       "90 €",
+       "—"
+      ],
+      [
+       "Hollanda",
+       "VFS Global (Ankara, Antalya, Bodrum, Bursa, Edirne, Gaziantep, İstanbul, İzmir)",
+       "90 €",
+       "Karar ortalama 18–21 gün; ücretli uçak bileti gerekmez"
+      ],
+      [
+       "Danimarka",
+       "VFS Global (Ankara, Antalya, İstanbul, İzmir)",
+       "90 € + 13 € hizmet",
+       "4 Kasım 2026 itibarıyla 2 Eylül'e kadar gelen dosyalar işleniyor; erken başvur"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Yunanistan vizesi",
+    "p": [
+     "Başvurular Kosmos Vize merkezlerinden yapılır; hizmet bedeli 30 €. Karar 15 günde çıkar, gerekirse 30, istisnai olarak 60 güne uzar.",
+     "Rodos, Kos, Midilli, Sakız ve Sisam gibi adalara yaz aylarında uygulanan kapıda (ekspres) vize ayrı bir programdır ve yalnızca o adalarda geçerlidir. Ayrıntılar için Yunan adaları kapıda vize rehberimize bak."
+    ]
+   },
+   {
+    "h": "İspanya vizesi",
+    "list": [
+     "Başvuru BLS International merkezlerinden; vize ücreti 106 $ (6–11 yaş 53 $), hizmet bedeli 20 $, yalnızca nakit dolar.",
+     "Son 6 aylık banka dökümü ve kişi başı günlük en az 150 € tutarında para gösterilmesi istenir.",
+     "e-Devlet belgeleri (SGK, ikametgâh, nüfus kayıt) kabul edilir.",
+     "Randevular her ayın 1'inde ve 16'sında açılır."
+    ]
+   },
+   {
+    "h": "Almanya vizesi",
+    "p": [
+     "Başvurular iDATA üzerinden. Turistik başvurularda 18 Mart 2024'ten beri ücretsiz bekleme listesi var: kaydolursun, sıran gelince 48 saat içinde iDATA ücretini ödeyip randevunu alırsın. Büyükelçilik, turistik randevular için birkaç aydan bir yıla kadar bekleme olabildiğini belirtiyor; seyahatini buna göre planla.",
+     "Genelde son 3 aylık banka dökümü istenir."
+    ]
+   },
+   {
+    "h": "İtalya vizesi",
+    "list": [
+     "Başvuru iDATA merkezlerinden (Ankara ve İzmir konsolosluk bölgelerinde iDATA-VFS).",
+     "Vize ücreti 90 €; TL olarak nakit alınır, kur her üç ayda bir güncellenir.",
+     "Büyükelçiliğin Mayıs 2026 listesine göre: son 3 aylık banka dökümü, karekodlu SGK hizmet dökümü ve işveren yazısı."
+    ]
+   },
+   {
+    "h": "Fransa vizesi",
+    "p": [
+     "Başvurular VFS Global merkezlerinden (Ankara, İstanbul) yapılır. Vize ücreti 90 €. Evrak listesini başvuru öncesinde France-Visas sitesinden kontrol et."
+    ]
+   },
+   {
+    "h": "Hollanda vizesi",
+    "list": [
+     "Başvuru yalnızca VFS Global üzerinden; 8 şehirde merkez var.",
+     "Resmî listeye göre: son 3 aylık banka dökümü ya da 3 maaş bordrosu ve SGK belgeleri; ücretli uçak bileti gerekmiyor, rezervasyon yeterli.",
+     "Karar ortalama 18–21 gün, en fazla 45 gün."
+    ]
+   },
+   {
+    "h": "Danimarka vizesi",
+    "list": [
+     "Başvuru VFS Global (Ankara, Antalya, İstanbul, İzmir); vize ücreti 90 € + 13 € hizmet bedeli.",
+     "Son 3 aylık banka dökümü, maaş bordroları ve karekodlu SGK dökümü.",
+     "Büyükelçilikte yoğunluk var: 4 Kasım 2026 itibarıyla 2 Eylül 2026'ya kadar gelen başvurular işleniyor. Seyahatten en az 2–3 ay önce başvur."
+    ]
+   },
+   {
+    "h": "Kademeli çok girişli vize (Türk vatandaşları için)",
+    "p": [
+     "AB'nin 15 Temmuz 2025'te kabul ettiği kurala göre Türkiye'de yaşayan Türk vatandaşları, önceki vizelerini kurallara uygun kullanıp zamanında yeniden başvurduklarında kademeli olarak daha uzun vize alabilir: 6 ay → 1 yıl → 3 yıl → 5 yıl. Her basamak için yeni başvuru, önceki vizenin bitişinden sonraki 1–2 yıl içinde yapılmalı. Tır şoförleri bu kurala dahil değildir."
+    ]
+   },
+   {
+    "h": "Türkiye'den başvuru istatistikleri",
+    "p": [
+     "Avrupa Komisyonu verilerine göre 2024'te Türkiye'den 1.173.917 Schengen başvurusu yapıldı (2023'te 1.055.885); ret oranı %14,5 oldu (2023'te %16,1). Ülke bazında ret oranları konsolosluğa göre değişir."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Schengen vizesi en kolay hangi ülkeden alınır?",
+    "a": "Resmî bir “en kolay ülke” yoktur; başvuruyu en uzun kalacağın ülkeye yapman gerekir. Randevu bulma kolaylığı ise ülkeye göre değişir: Almanya'da bekleme listesi, Danimarka'da yoğunluk var."
+   },
+   {
+    "q": "İspanya vize ücreti ne kadar?",
+    "a": "106 $ vize ücreti ve 20 $ BLS hizmet bedeli; yalnızca nakit dolar kabul ediliyor."
+   },
+   {
+    "q": "Danimarka vizesi kaç günde çıkıyor?",
+    "a": "Normalde 15 gün, ama şu an büyükelçilikte birikme var: Kasım 2026 başında Eylül başında gelen dosyalar işleniyordu."
+   },
+   {
+    "q": "5 yıllık Schengen vizesi nasıl alınır?",
+    "a": "Kademeli sistemle: önceki vizelerini kurallara uygun kullanıp zamanında yeniden başvurarak 6 ay, 1 yıl, 3 yıl ve 5 yıllık vizeye sırayla geçilir."
    }
   ]
  }

@@ -665,9 +665,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           );
         })()}
 
-        {guidesForCountry(code).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa')).length > 0 && (
+        {guidesForCountry(code, language, passport).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa') && (g !== 'us_visa' || item?.cat === 'visa') && (g !== 'esta' || item?.cat !== 'visa') && (g !== 'uk_eta' || item?.cat !== 'visa')).length > 0 && (
           <List>
-            {guidesForCountry(code).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa')).map((g) => (
+            {guidesForCountry(code, language, passport).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa') && (g !== 'us_visa' || item?.cat === 'visa') && (g !== 'esta' || item?.cat !== 'visa') && (g !== 'uk_eta' || item?.cat !== 'visa')).map((g) => (
               <a key={g} className="vz-row link" href={`/${language}/info/${g}`}>
                 <span className="vz-ic sm"><Icon name={GUIDE_META[g].icon as never} size={18} /></span>
                 <span className="vz-row-b"><span className="vz-row-t">{getGuide(g, language).title}</span><span className="vz-row-s">{l('Güncel rehber', 'Up-to-date guide', 'Aktueller Ratgeber', 'Guía actualizada', 'Актуальный гид')}</span></span>

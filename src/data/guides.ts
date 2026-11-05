@@ -13,21 +13,39 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india';
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country';
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['schengen_by_country', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
-export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[] }> = {
+export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[]; passports?: string[] }> = {
+  schengen_by_country: {
+    checked: '2026-11-05',
+    passports: ['TR'],
+    icon: 'doc',
+    countries: ['GR', 'ES', 'DE', 'IT', 'FR', 'NL', 'DK'],
+    langs: ['tr'],
+    sources: [
+      { label: 'Yunanistan Dışişleri: vizeler (Ankara)', url: 'https://www.mfa.gr/turkey/tr/visas.html?mission=ank' },
+      { label: 'BLS Spain Türkiye: turist vizesi', url: 'https://turkey.blsspainvisa.com/ankara/Tourist-visit.php' },
+      { label: 'Almanya Türkiye temsilcilikleri', url: 'https://tuerkei.diplo.de/' },
+      { label: 'İtalya Ankara Büyükelçiliği: turizm vizesi belgeleri (Mayıs 2026)', url: 'https://ambankara.esteri.it/wp-content/uploads/2026/05/10_TURISMO-e-TURISMO-per-visita-a-familiari-o-amici_.pdf' },
+      { label: 'Netherlands Worldwide: Schengen checklist (Türkiye)', url: 'https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/turkiye' },
+      { label: 'Danimarka Ankara Büyükelçiliği: vize başvurusu', url: 'https://um.dk/tyrkiet/en/travel-and-residence/how-to-apply-for-a-visa/' },
+      { label: 'Avrupa Komisyonu: Schengen vize istatistikleri', url: 'https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy/statistics-short-stay-visas-issued-schengen-states_en' },
+      { label: 'AB Türkiye Delegasyonu: Türk vatandaşları için kademeli vize kuralı', url: 'https://www.eeas.europa.eu/delegations/t%C3%BCrkiye/more-favourable-visa-rules-turkish-citizens-applying-schengen-visas_en' }
+    ]
+  },
   uk_visa_india: {
     checked: '2026-11-05',
+    passports: ['IN'],
     icon: 'passport',
     countries: ['GB'],
     langs: ['en'],
@@ -41,6 +59,7 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
   },
   dubai_visa_india: {
     checked: '2026-11-05',
+    passports: ['IN'],
     icon: 'passport',
     countries: ['AE'],
     langs: ['en'],
@@ -53,6 +72,7 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
   },
   thailand_india: {
     checked: '2026-11-05',
+    passports: ['IN'],
     icon: 'passport',
     countries: ['TH'],
     langs: ['en'],
@@ -165,7 +185,7 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     ]
   },
   uk_eta: {
-    checked: '2026-10-29',
+    checked: '2026-11-05',
     icon: 'passport',
     countries: ['GB'],
     sources: [
@@ -174,12 +194,13 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     ]
   },
   esta: {
-    checked: '2026-10-29',
+    checked: '2026-11-05',
     icon: 'passport',
     countries: ['US'],
     sources: [
       { label: 'U.S. CBP: ESTA (official)', url: 'https://esta.cbp.dhs.gov/' },
-      { label: 'U.S. State Department: Visa Waiver Program', url: 'https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html' }
+      { label: 'U.S. State Department: Visa Waiver Program', url: 'https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html' },
+      { label: 'Federal Register: ESTA fee adjustment (2026-20185)', url: 'https://public-inspection.federalregister.gov/2026-20185.pdf' }
     ]
   },
   greek_islands_visa: {
@@ -229,4 +250,5 @@ export const getGuide = (id: GuideId, lang: string): GuideText => {
 export const guideIdsFor = (lang: string): GuideId[] => GUIDE_IDS.filter((g) => !GUIDE_META[g].langs || GUIDE_META[g].langs!.includes(lang));
 export const isGuideId = (x: string): x is GuideId => (GUIDE_IDS as string[]).includes(x);
 /** Bir ülkeyle ilgili rehberler (ülke sayfasında bağlantı için) */
-export const guidesForCountry = (code: string): GuideId[] => GUIDE_IDS.filter((g) => GUIDE_META[g].countries.includes(code));
+export const guidesForCountry = (code: string, lang?: string, passport?: string): GuideId[] =>
+  GUIDE_IDS.filter((g) => GUIDE_META[g].countries.includes(code) && (!lang || !GUIDE_META[g].langs || GUIDE_META[g].langs!.includes(lang)) && (!passport || !GUIDE_META[g].passports || GUIDE_META[g].passports!.includes(passport)));
