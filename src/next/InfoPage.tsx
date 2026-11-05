@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { useI18n } from '../data/i18n';
-import { LegalInfoModal } from '../components/LegalInfoModal';
 import { Chip, Chips, Page } from './ui';
 import { Icon } from './Icon';
 import { guideIdsFor, getGuide, isGuideId } from '../data/guides';
 import { GuideArticle } from './GuideArticle';
+
+// Yasal sayfalar ayrı yüklenir; rehber sayfaları bu kodu (ve fotoğraf kaynak listesini) indirmez.
+const LegalInfoModal = lazy(() => import('../components/LegalInfoModal').then((m) => ({ default: m.LegalInfoModal })));
 
 export function useInfoGroups() {
   const { l, language } = useI18n();
@@ -66,7 +68,7 @@ export const InfoPage: React.FC<{ page: string; onPage: (p: string) => void; onB
           </Chips>
         </div>
         <article className="vz-card vz-info-body">
-          {isGuideId(page) ? <GuideArticle key={page} id={page} /> : <LegalInfoModal key={page} isOpen embedded onClose={onBack} initialTab={page} onDataResetOrImported={onDataChanged} />}
+          {isGuideId(page) ? <GuideArticle key={page} id={page} /> : <Suspense fallback={<div className="vz-muted" style={{ padding: 16 }}>…</div>}><LegalInfoModal key={page} isOpen embedded onClose={onBack} initialTab={page} onDataResetOrImported={onDataChanged} /></Suspense>}
         </article>
       </div>
     </Page>
