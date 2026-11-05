@@ -1,9 +1,9 @@
 {
  "etias": {
-  "title": "What is ETIAS? Europe's new travel authorisation (2026)",
+  "title": "What is ETIAS? Europe's new travel authorisation: no start date yet",
   "short": "ETIAS",
-  "metaDesc": "ETIAS starts in the last quarter of 2026: who must apply, the €20 fee, 3-year validity, transition period and the new EES border checks. Up-to-date, sourced guide.",
-  "answer": "ETIAS is an online travel authorisation for visa-exempt travellers to Europe. The European Commission says it will start in the last quarter of 2026. It costs €20 and is valid for 3 years. Travellers who already need a Schengen visa keep applying for a visa instead.",
+  "metaDesc": "ETIAS is not in operation yet and the EU no longer gives a launch date; it will be announced several months ahead. €20 fee, 3-year validity, who must apply, and the EES border checks already in place.",
+  "answer": "ETIAS is an online travel authorisation for visa-exempt travellers to Europe. It is not in operation yet: the European Commission has dropped its earlier last-quarter-2026 target and says the start date will be announced several months in advance. Until then you do not need ETIAS, and any site taking applications now is not official. Once it starts it will cost €20 and be valid for 3 years. Travellers who already need a Schengen visa keep applying for a visa instead.",
   "sections": [
    {
     "h": "Who needs ETIAS?",
@@ -37,7 +37,7 @@
   "faq": [
    {
     "q": "When does ETIAS start?",
-    "a": "The European Commission has announced the last quarter of 2026. The exact date will be announced several months in advance."
+    "a": "There is no date yet. The EU removed its last-quarter-2026 target; the start will be announced several months in advance. You do not need ETIAS for now."
    },
    {
     "q": "Is ETIAS a visa?",
@@ -1084,6 +1084,210 @@
    {
     "q": "What is TDAC?",
     "a": "The free Thailand Digital Arrival Card, required for every arrival since 1 May 2025 and submitted online within 72 hours before arrival."
+   }
+  ]
+ },
+ "schengen_india": {
+  "title": "Schengen visa for Indians 2026: fee, VFS, cascade rule and documents",
+  "short": "Schengen visa for Indians",
+  "metaDesc": "Schengen visa from India in 2026: €90 fee (≈ ₹9,100), children 6–11 €45, VFS service charge on top, about 15 days processing, and the cascade rule that leads to 2- and 5-year multiple-entry visas.",
+  "answer": "Indian citizens need a Schengen short-stay visa for trips of up to 90 days in any 180-day period. The visa fee is €90 for adults and €45 for children aged 6–11 (under 6: free), paid in rupees, plus the service charge of the visa centre (VFS or BLS, roughly ₹400–3,100 depending on the country). Decisions normally take about 15 days, so book your appointment early: you can apply up to 6 months before travel. Since April 2024, Indians who have used two Schengen visas correctly within three years can receive a 2-year multiple-entry visa, normally followed by a 5-year one.",
+  "sections": [
+   {
+    "h": "Costs at a glance",
+    "table": {
+     "head": [
+      "Item",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Visa fee, adult",
+       "€90 (≈ ₹9,100)"
+      ],
+      [
+       "Visa fee, child 6–11",
+       "€45"
+      ],
+      [
+       "Child under 6",
+       "Free"
+      ],
+      [
+       "Visa centre service charge",
+       "≈ ₹400–3,100, depends on the country"
+      ],
+      [
+       "Processing",
+       "About 15 days, longer in peak season"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Which country should you apply to?",
+    "list": [
+     "Apply to the country where you will spend the most nights; if equal, to the country you enter first.",
+     "Germany lets Indian applicants use any of its visa centres in India, which helps when Delhi or Mumbai slots are full.",
+     "Peak season (April–July and December) books out fast: check for new slots late at night and early in the morning."
+    ]
+   },
+   {
+    "h": "The cascade rule (2-year and 5-year visas)",
+    "p": [
+     "Under an EU decision of April 2024, Indian nationals living in India who have obtained and lawfully used two Schengen visas within the previous three years can be issued a 2-year multiple-entry visa. After that, a 5-year visa is normally possible if the passport is valid long enough. It is not automatic: consulates still check each application."
+    ]
+   },
+   {
+    "h": "Core documents",
+    "list": [
+     "Application form and two recent photos",
+     "Passport issued within the last 10 years, valid at least 3 months after your return, with 2 blank pages",
+     "Travel medical insurance with at least €30,000 cover for the whole Schengen area",
+     "Flight reservation and hotel bookings or an invitation",
+     "Bank statements for the last 3–6 months, ITRs and a leave letter or business documents"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "How much is a Schengen visa for Indians in 2026?",
+    "a": "€90 for adults and €45 for children aged 6–11, plus the visa centre service charge."
+   },
+   {
+    "q": "How long does it take?",
+    "a": "Usually about 15 days after your appointment; it can take longer in peak season."
+   },
+   {
+    "q": "Can Indians get a 5-year Schengen visa?",
+    "a": "Yes, under the cascade rule: after two properly used visas in three years you can get a 2-year visa, and then normally a 5-year one."
+   }
+  ]
+ },
+ "japan_visa_india": {
+  "title": "Japan visa for Indians 2026: eVISA, ₹500 fee, VFS and processing time",
+  "short": "Japan visa for Indians",
+  "metaDesc": "Japan visa for Indian citizens in 2026: tourist eVISA via VFS since April 2024, visa fee ₹500 plus VFS charge, processing about 5 working days, stays of up to 90 days.",
+  "answer": "Indian citizens need a visa for Japan. For tourism the easiest route is the Japan eVISA, available to Indians since 1 April 2024: you still submit documents at a VFS Japan Visa Application Centre, but the visa is issued electronically and shown on your phone at arrival. The consular fee for Indians is ₹500 (applications from 1 July 2026 to 31 March 2027), plus the VFS service charge. Processing usually takes about 5 working days, and a short-term visa allows stays of up to 90 days.",
+  "sections": [
+   {
+    "h": "At a glance",
+    "table": {
+     "head": [
+      "Item",
+      "Details"
+     ],
+     "rows": [
+      [
+       "Visa type",
+       "Short-term (tourism, family visit, business)"
+      ],
+      [
+       "Fee for Indians",
+       "₹500 + VFS service charge"
+      ],
+      [
+       "Processing",
+       "About 5 working days"
+      ],
+      [
+       "Stay",
+       "Up to 90 days, decided by the embassy"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "How to apply",
+    "list": [
+     "Book at a VFS Japan Visa Application Centre in your jurisdiction (visa.vfsglobal.com/ind/en/jpn/).",
+     "Since 2 March 2026 appointments are mandatory in Chennai, Cochin, Hyderabad and Puducherry; rules differ by centre, so check yours.",
+     "Carry: passport, application form, photo, flight and hotel plan, bank statements and ITRs.",
+     "With an eVISA, keep the visa notice on your phone; it is checked at check-in and at Japanese immigration."
+    ]
+   },
+   {
+    "h": "Multiple-entry visas",
+    "p": [
+     "Japan offers multiple-entry visas to Indian nationals who travel often, such as business travellers or people with a good Japan travel history. Requirements are stricter than for a single-entry visa; check the embassy or consulate page for your jurisdiction."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Can Indians get a Japan e-visa?",
+    "a": "Yes. Since April 2024 the Japan eVISA is available to Indian nationals for short-term tourism, applied for through VFS."
+   },
+   {
+    "q": "How much is the Japan visa fee for Indians?",
+    "a": "₹500 for applications between 1 July 2026 and 31 March 2027, plus the VFS service charge."
+   },
+   {
+    "q": "How long does a Japan visa take from India?",
+    "a": "Usually about 5 working days after the application is accepted."
+   }
+  ]
+ },
+ "vietnam_visa_india": {
+  "title": "Vietnam visa for Indians 2026: e-visa $25, 90 days, official site and Phu Quoc",
+  "short": "Vietnam visa for Indians",
+  "metaDesc": "Vietnam e-visa for Indian citizens in 2026: up to 90 days, $25 single or $50 multiple entry, about 3 working days on the official evisa.gov.vn. Phu Quoc is visa-free for 30 days.",
+  "answer": "Indian citizens need a visa for mainland Vietnam. Apply online for an e-visa on the official portal evisa.gov.vn: it allows stays of up to 90 days and costs $25 for single entry or $50 for multiple entry. Processing usually takes about 3 working days (5–7 in peak periods). Phu Quoc island is visa-free for 30 days if you fly or sail there directly from abroad and stay on the island.",
+  "sections": [
+   {
+    "h": "At a glance",
+    "table": {
+     "head": [
+      "Option",
+      "Cost",
+      "Stay"
+     ],
+     "rows": [
+      [
+       "e-visa, single entry",
+       "$25",
+       "Up to 90 days"
+      ],
+      [
+       "e-visa, multiple entry",
+       "$50",
+       "Up to 90 days"
+      ],
+      [
+       "Phu Quoc only (direct arrival)",
+       "Free",
+       "30 days, island only"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Use only the official site",
+    "p": [
+     "The official portals are evisa.gov.vn and thithucdientu.gov.vn. Many lookalike agency sites charge several times the government fee. Check the spelling of your name and passport number carefully: a mistake means a new application."
+    ]
+   },
+   {
+    "h": "Phu Quoc: read this first",
+    "list": [
+     "Visa-free entry applies only when you arrive directly in Phu Quoc from abroad and stay on the island.",
+     "If you plan to visit the mainland too, get an e-visa.",
+     "In April 2026 the Indian Embassy in Hanoi advised travellers to carry a proper visa to avoid problems."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Is Vietnam visa-free for Indians?",
+    "a": "No, except Phu Quoc island (30 days, direct arrival). For the rest of Vietnam you need an e-visa."
+   },
+   {
+    "q": "How much is the Vietnam e-visa for Indians?",
+    "a": "$25 for single entry and $50 for multiple entry, for up to 90 days."
+   },
+   {
+    "q": "How long does the Vietnam e-visa take?",
+    "a": "Usually about 3 working days; allow up to a week in peak periods."
    }
   ]
  }

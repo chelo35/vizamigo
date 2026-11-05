@@ -1,5 +1,5 @@
 // Ana sayfa ve menü için hafif rehber listesi (tam metin guides.ts içinde, ayrı yüklenir)
-export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "schengen_by_country", "icon": "doc"}, {"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
+export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "schengen_by_country", "icon": "doc"}, {"id": "schengen_india", "icon": "doc"}, {"id": "canada_eta_mx", "icon": "passport"}, {"id": "schengen_latam", "icon": "doc"}, {"id": "turkey_id_de", "icon": "user"}, {"id": "egypt_visa_de", "icon": "passport"}, {"id": "thailand_de", "icon": "passport"}, {"id": "egypt_visa_ru", "icon": "passport"}, {"id": "uae_ru", "icon": "passport"}, {"id": "japan_visa_india", "icon": "passport"}, {"id": "vietnam_visa_india", "icon": "passport"}, {"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
 export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string }>> = {
  "tr": {
   "schengen_by_country": {
@@ -32,7 +32,7 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   },
   "etias": {
    "t": "ETIAS",
-   "d": "ETIAS 2026'nın son çeyreğinde başlıyor: kimler başvurmalı, ücreti 20 €, 3 yıl geçerli.…"
+   "d": "ETIAS henüz başlamadı, tarih belli değil: 20 € ücret, 3 yıl geçerlilik ve kimlerin başvuracağı."
   },
   "uk_eta": {
    "t": "İngiltere ETA",
@@ -48,6 +48,18 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "en": {
+  "schengen_india": {
+   "t": "Schengen visa for Indians",
+   "d": "€90 fee, VFS tips, cascade rule for 2- and 5-year visas."
+  },
+  "japan_visa_india": {
+   "t": "Japan visa for Indians",
+   "d": "eVISA via VFS, ₹500 fee, about 5 working days."
+  },
+  "vietnam_visa_india": {
+   "t": "Vietnam visa for Indians",
+   "d": "$25 e-visa for 90 days, official site, Phu Quoc rules."
+  },
   "uk_visa_india": {
    "t": "UK visa for Indians",
    "d": "\u00a3135 fee, 3-week processing, priority options and documents."
@@ -90,7 +102,7 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   },
   "etias": {
    "t": "ETIAS",
-   "d": "ETIAS starts in the last quarter of 2026: who must apply, the €20 fee, 3-year validity,…"
+   "d": "ETIAS has not started and has no date yet: the €20 fee, 3-year validity and who will need it."
   },
   "uk_eta": {
    "t": "UK ETA",
@@ -106,6 +118,18 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "de": {
+  "turkey_id_de": {
+   "t": "Türkei mit Personalausweis",
+   "d": "Einreise mit Ausweis, 90 Tage, Kinder und Doppelstaatler."
+  },
+  "egypt_visa_de": {
+   "t": "Ägypten Visum",
+   "d": "30 USD bei Ankunft, e-Visum, Sinai-Stempel, Personalausweis."
+  },
+  "thailand_de": {
+   "t": "Thailand Einreise & TDAC",
+   "d": "30 Tage visumfrei seit Sept. 2026, TDAC und Verlängerung."
+  },
   "id_card_travel": {
    "t": "Reisen mit Personalausweis",
    "d": "Welche Länder den Personalausweis akzeptieren: EU, Balkan, Türkei, Montenegro 30 Tage."
@@ -120,7 +144,7 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   },
   "etias": {
    "t": "ETIAS",
-   "d": "ETIAS startet im letzten Quartal 2026: Wer sich anmelden muss, 20 € Gebühr, 3 Jahre…"
+   "d": "ETIAS ist noch nicht gestartet, ein Termin fehlt: 20 € Gebühr, 3 Jahre Gültigkeit und wer es brauchen wird."
   },
   "uk_eta": {
    "t": "UK ETA",
@@ -136,6 +160,14 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "es": {
+  "canada_eta_mx": {
+   "t": "eTA Canadá para mexicanos",
+   "d": "Quién puede usar la eTA de 7 CAD y cuándo necesitas visa."
+  },
+  "schengen_latam": {
+   "t": "Schengen para latinoamericanos",
+   "d": "Quién entra sin visa a Europa, visa de 90 € y ETIAS."
+  },
   "us_visa": {
    "t": "Visa americana 2026",
    "d": "Costo 185 USD, DS-160, cita en CAS y consulado, entrevista y renovación sin entrevista."
@@ -154,7 +186,7 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   },
   "etias": {
    "t": "ETIAS",
-   "d": "ETIAS arranca en el último trimestre de 2026: quién debe solicitarlo, tasa de 20 €,…"
+   "d": "ETIAS aún no ha empezado y no tiene fecha: tasa de 20 €, validez de 3 años y quién lo necesitará."
   },
   "uk_eta": {
    "t": "ETA del Reino Unido",
@@ -170,6 +202,14 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "ru": {
+  "egypt_visa_ru": {
+   "t": "Египет для россиян",
+   "d": "Виза 30 $ по прилёте, синайский штамп, деньги и паспорт."
+  },
+  "uae_ru": {
+   "t": "ОАЭ для россиян",
+   "d": "Без визы до 90 дней, паспорт на 6 месяцев, карты не работают."
+  },
   "visa_free_ru": {
    "t": "Безвиз для россиян 2026",
    "d": "Полный список стран без визы, Китай до 2027, Таиланд 30 дней, Шенген и США."
@@ -188,7 +228,7 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   },
   "etias": {
    "t": "ETIAS",
-   "d": "ETIAS стартует в IV квартале 2026 года: кому нужно оформлять, сбор 20 €, срок действия 3…"
+   "d": "ETIAS ещё не запущен, даты нет: сбор 20 €, срок действия 3 года и кому он понадобится."
   },
   "uk_eta": {
    "t": "ETA для Великобритании",

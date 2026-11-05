@@ -28,6 +28,16 @@ const PLAN: Partial<Record<GuideId, { place: string; to?: string; picks: Pick[] 
   thailand_india: { place: 'Bangkok', to: 'BKK', picks: ['hotel', 'flights', 'esim', 'transfer', 'tours', 'insurance'] },
   visa_free_tr: { place: 'Bangkok', to: 'BKK', picks: ['flights', 'hotel', 'esim', 'insurance'] },
   visa_free_ru: { place: 'Bangkok', to: 'BKK', picks: ['flights', 'hotel', 'esim', 'insurance'] },
+  schengen_india: { place: 'Paris', to: 'PAR', picks: VISA },
+  schengen_latam: { place: 'Madrid', to: 'MAD', picks: ['flights', 'hotel', 'insurance', 'esim'] },
+  canada_eta_mx: { place: 'Toronto', to: 'YTO', picks: ['flights', 'hotel', 'insurance', 'esim'] },
+  japan_visa_india: { place: 'Tokyo', to: 'TYO', picks: ['flights', 'hotel', 'insurance', 'esim', 'tours'] },
+  vietnam_visa_india: { place: 'Hanoi', to: 'HAN', picks: ['flights', 'hotel', 'esim', 'transfer', 'tours', 'insurance'] },
+  egypt_visa_ru: { place: 'Hurghada', to: 'HRG', picks: ['hotel', 'flights', 'transfer', 'tours', 'esim', 'insurance'] },
+  egypt_visa_de: { place: 'Hurghada', to: 'HRG', picks: ['hotel', 'flights', 'transfer', 'tours', 'esim', 'insurance'] },
+  uae_ru: { place: 'Dubai', to: 'DXB', picks: ['hotel', 'flights', 'transfer', 'tours', 'esim', 'insurance'] },
+  thailand_de: { place: 'Bangkok', to: 'BKK', picks: ['hotel', 'flights', 'esim', 'transfer', 'tours', 'insurance'] },
+  turkey_id_de: { place: 'Antalya', to: 'AYT', picks: ['hotel', 'flights', 'transfer', 'tours', 'insurance'] },
   id_card_travel: { place: 'Tbilisi', to: 'TBS', picks: ['flights', 'hotel', 'esim', 'insurance'] }
 };
 

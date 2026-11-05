@@ -1,9 +1,9 @@
 {
  "etias": {
-  "title": "¿Qué es ETIAS? La nueva autorización de viaje de Europa (2026)",
+  "title": "¿Qué es ETIAS? La nueva autorización de viaje de Europa: aún sin fecha",
   "short": "ETIAS",
-  "metaDesc": "ETIAS arranca en el último trimestre de 2026: quién debe solicitarlo, tasa de 20 €, validez de 3 años, periodo transitorio y nuevos controles EES.",
-  "answer": "ETIAS es una autorización de viaje en línea para viajeros que no necesitan visado para entrar en Europa. Según la Comisión Europea, empezará en el último trimestre de 2026. Cuesta 20 € y es válida durante 3 años. Quien ya necesita visado Schengen sigue solicitando el visado.",
+  "metaDesc": "ETIAS todavía no funciona y la UE ya no da fecha de inicio; la anunciará con varios meses de antelación. Tasa de 20 €, validez de 3 años, quién deberá pedirlo y los controles EES que ya están en marcha.",
+  "answer": "ETIAS es una autorización de viaje en línea para viajeros que no necesitan visado para entrar en Europa. Todavía no está en funcionamiento: la Comisión Europea retiró su objetivo anterior del último trimestre de 2026 y anunciará la fecha de inicio con varios meses de antelación. Hasta entonces no necesitas ETIAS, y cualquier sitio que hoy acepte solicitudes no es oficial. Cuando empiece costará 20 € y será válida 3 años. Quien ya necesita visado Schengen sigue solicitando el visado.",
   "sections": [
    {
     "h": "¿Quién necesita ETIAS?",
@@ -37,7 +37,7 @@
   "faq": [
    {
     "q": "¿Cuándo empieza ETIAS?",
-    "a": "La Comisión Europea ha anunciado el último trimestre de 2026. La fecha exacta se comunicará con varios meses de antelación."
+    "a": "Todavía no hay fecha. La UE retiró el objetivo del último trimestre de 2026; el inicio se anunciará con varios meses de antelación. Por ahora no necesitas ETIAS."
    },
    {
     "q": "¿ETIAS es un visado?",
@@ -385,6 +385,163 @@
    {
     "q": "¿Dónde veo los tiempos de espera para la cita?",
     "a": "En la herramienta oficial del Departamento de Estado: travel.state.gov, sección “Visa Appointment Wait Times”."
+   }
+  ]
+ },
+ "canada_eta_mx": {
+  "title": "eTA Canadá para mexicanos 2026: quién puede, costo de 7 CAD y cuándo necesitas visa",
+  "short": "eTA Canadá para mexicanos",
+  "metaDesc": "eTA de Canadá para mexicanos en 2026: solo por avión y si tuviste visa canadiense en 10 años o tienes visa de EE. UU. vigente. Cuesta 7 CAD; si no calificas, visa de visitante 100 CAD + 85 CAD de biométricos.",
+  "answer": "Desde el 29 de febrero de 2024 los mexicanos necesitan visa de visitante para Canadá, salvo que califiquen para la eTA. Puedes usar la eTA solo si viajas en avión y además tuviste una visa canadiense en los últimos 10 años o tienes una visa de no inmigrante de Estados Unidos vigente. La eTA cuesta 7 CAD, vale hasta 5 años y se tramita solo en canada.ca. Si no cumples, pides la visa de visitante: 100 CAD más 85 CAD de datos biométricos, que se toman en un centro VFS en México.",
+  "sections": [
+   {
+    "h": "¿eTA o visa?",
+    "table": {
+     "head": [
+      "Tu caso",
+      "Qué necesitas"
+     ],
+     "rows": [
+      [
+       "Vuelas y tienes visa de EE. UU. vigente",
+       "eTA (7 CAD)"
+      ],
+      [
+       "Vuelas y tuviste visa canadiense en los últimos 10 años",
+       "eTA (7 CAD)"
+      ],
+      [
+       "Solo tuviste una eTA antes",
+       "Visa de visitante"
+      ],
+      [
+       "Llegas por tierra o mar (auto, autobús, crucero)",
+       "Visa de visitante"
+      ],
+      [
+       "Tienes green card de EE. UU.",
+       "Ni eTA ni visa: green card y pasaporte"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Cómo tramitar la eTA",
+    "list": [
+     "Solo en el sitio oficial canada.ca; la mayoría se aprueba en minutos.",
+     "Costo: 7 CAD. Vale hasta 5 años o hasta que venza tu pasaporte; con pasaporte nuevo, nueva eTA.",
+     "El gobierno de Canadá advierte que los sitios de terceros cobran de más y no actúan en su nombre."
+    ]
+   },
+   {
+    "h": "Visa de visitante desde México",
+    "list": [
+     "Se solicita en línea con IRCC y los biométricos se dan en un centro VFS: dos en Ciudad de México, uno en Monterrey y uno en Guadalajara.",
+     "Costo: 100 CAD por persona (máximo familiar 500 CAD) + 85 CAD de biométricos (máximo familiar 170 CAD).",
+     "Suele ser de entradas múltiples y vale hasta 10 años.",
+     "Revisa el tiempo de proceso actual en la herramienta oficial de IRCC antes de comprar vuelos."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Los mexicanos necesitan visa para Canadá en 2026?",
+    "a": "Sí, salvo que viajen en avión y tengan visa estadounidense vigente o hayan tenido visa canadiense en los últimos 10 años; en ese caso basta la eTA."
+   },
+   {
+    "q": "¿Cuánto cuesta la eTA de Canadá?",
+    "a": "7 dólares canadienses, solo en canada.ca."
+   },
+   {
+    "q": "¿Puedo entrar a Canadá en crucero con eTA?",
+    "a": "No. La eTA es solo para llegadas en avión; por tierra o mar necesitas visa."
+   }
+  ]
+ },
+ "schengen_latam": {
+  "title": "Visa Schengen para latinoamericanos 2026: quién entra sin visa, ETIAS y EES",
+  "short": "Schengen para latinoamericanos",
+  "metaDesc": "Europa para latinoamericanos en 2026: México, Argentina, Colombia, Perú, Chile y otros entran sin visa 90 días; Bolivia, Ecuador, Cuba, Rep. Dominicana y Haití necesitan visa de 90 €. ETIAS aún sin fecha.",
+  "answer": "La mayoría de los latinoamericanos entra al espacio Schengen sin visa por hasta 90 días dentro de cualquier periodo de 180: México, Argentina, Brasil, Chile, Colombia, Perú, Uruguay, Paraguay, Venezuela, Costa Rica, Panamá, Guatemala, Honduras, El Salvador y Nicaragua. Bolivia, Ecuador, Cuba, República Dominicana y Haití necesitan visa Schengen (90 € adultos). ETIAS todavía no funciona y no tiene fecha; el sistema EES de huellas y foto en la frontera ya opera desde 2026.",
+  "sections": [
+   {
+    "h": "¿Quién necesita visa?",
+    "table": {
+     "head": [
+      "País",
+      "Europa (Schengen)"
+     ],
+     "rows": [
+      [
+       "México, Argentina, Brasil, Chile, Colombia, Perú, Uruguay, Paraguay, Venezuela",
+       "Sin visa, 90 días en 180"
+      ],
+      [
+       "Costa Rica, Panamá, Guatemala, Honduras, El Salvador, Nicaragua",
+       "Sin visa, 90 días en 180"
+      ],
+      [
+       "Bolivia, Ecuador, Cuba, República Dominicana, Haití",
+       "Visa Schengen"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Sin visa no significa sin requisitos",
+    "list": [
+     "Pasaporte válido al menos 3 meses después de tu salida y emitido en los últimos 10 años.",
+     "Boleto de regreso, reserva de hotel o carta de invitación, y medios económicos.",
+     "Seguro médico de viaje: no siempre obligatorio para quienes no necesitan visa, pero muy recomendable.",
+     "Desde el 10 de abril de 2026 el Sistema de Entradas y Salidas (EES) toma huellas y foto en tu primera entrada y ya no sella el pasaporte."
+    ]
+   },
+   {
+    "h": "Si necesitas visa",
+    "table": {
+     "head": [
+      "Concepto",
+      "Importe"
+     ],
+     "rows": [
+      [
+       "Adulto",
+       "90 €"
+      ],
+      [
+       "Niños de 6 a 11 años",
+       "45 €"
+      ],
+      [
+       "Menores de 6",
+       "Gratis"
+      ],
+      [
+       "Plazo",
+       "15 días normalmente, hasta 45"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "ETIAS y el mecanismo de suspensión",
+    "p": [
+     "ETIAS (20 €, 3 años) no está en funcionamiento y la UE anunciará su inicio con varios meses de antelación. Desde el 30 de diciembre de 2025 la UE puede suspender más fácilmente la exención de visa a un país; su informe de diciembre de 2025 menciona el alto número de solicitudes de asilo de venezolanos, colombianos y peruanos, pero no propone ninguna suspensión."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Los mexicanos necesitan visa para Europa?",
+    "a": "No. Pueden estar hasta 90 días en cualquier periodo de 180 en el espacio Schengen."
+   },
+   {
+    "q": "¿Qué países latinoamericanos necesitan visa Schengen?",
+    "a": "Bolivia, Ecuador, Cuba, República Dominicana y Haití."
+   },
+   {
+    "q": "¿Necesito ETIAS para viajar a Europa?",
+    "a": "Todavía no. ETIAS no ha empezado y la UE aún no ha fijado fecha."
    }
   ]
  }

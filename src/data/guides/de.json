@@ -1,9 +1,9 @@
 {
  "etias": {
-  "title": "Was ist ETIAS? Europas neue Reisegenehmigung (2026)",
+  "title": "Was ist ETIAS? Europas neue Reisegenehmigung: noch kein Starttermin",
   "short": "ETIAS",
-  "metaDesc": "ETIAS startet im letzten Quartal 2026: Wer sich anmelden muss, 20 € Gebühr, 3 Jahre gültig, Übergangsphase und neue EES-Grenzkontrollen.",
-  "answer": "ETIAS ist eine Online-Reisegenehmigung für visumfreie Reisende nach Europa. Laut der Europäischen Kommission startet sie im letzten Quartal 2026. Sie kostet 20 € und ist 3 Jahre gültig. Wer schon jetzt ein Schengen-Visum braucht, beantragt weiterhin ein Visum.",
+  "metaDesc": "ETIAS ist noch nicht in Betrieb, und die EU nennt keinen Starttermin mehr; er wird einige Monate vorher bekannt gegeben. 20 € Gebühr, 3 Jahre gültig, wer sie braucht und die bereits laufenden EES-Kontrollen.",
+  "answer": "ETIAS ist eine Online-Reisegenehmigung für visumfreie Reisende nach Europa. Sie ist noch nicht in Betrieb: Die Europäische Kommission hat das frühere Ziel „letztes Quartal 2026“ zurückgenommen und will den Start einige Monate im Voraus bekannt geben. Bis dahin brauchst du kein ETIAS; Seiten, die jetzt schon Anträge annehmen, sind nicht offiziell. Nach dem Start kostet ETIAS 20 € und gilt 3 Jahre. Wer schon jetzt ein Schengen-Visum braucht, beantragt weiterhin ein Visum.",
   "sections": [
    {
     "h": "Wer braucht ETIAS?",
@@ -37,7 +37,7 @@
   "faq": [
    {
     "q": "Wann startet ETIAS?",
-    "a": "Die Europäische Kommission hat das letzte Quartal 2026 angekündigt. Das genaue Datum wird mehrere Monate im Voraus bekannt gegeben."
+    "a": "Es gibt noch keinen Termin. Die EU hat das Ziel „letztes Quartal 2026“ zurückgenommen; der Start wird einige Monate vorher angekündigt. Derzeit brauchst du kein ETIAS."
    },
    {
     "q": "Ist ETIAS ein Visum?",
@@ -300,6 +300,236 @@
    {
     "q": "Reicht der Ausweis für Großbritannien?",
     "a": "Nein, außer mit Status aus dem EU Settlement Scheme. Sonst Reisepass und ETA."
+   }
+  ]
+ },
+ "turkey_id_de": {
+  "title": "Türkei mit Personalausweis 2026: Einreise für Deutsche, Kinder und Doppelstaatler",
+  "short": "Türkei mit Personalausweis",
+  "metaDesc": "Einreise in die Türkei mit Personalausweis 2026: für Deutsche erlaubt, visumfrei 90 Tage in 180, auch abgelaufene Dokumente bis 1 Jahr. Regeln für Kinder, vorläufigen Ausweis und deutsch-türkische Doppelstaatler.",
+  "answer": "Deutsche dürfen mit dem Personalausweis in die Türkei einreisen; ein Reisepass ist nicht nötig. Für touristische Reisen gilt Visumfreiheit für bis zu 90 Tage innerhalb von 180 Tagen. Laut Auswärtigem Amt werden für die Einreise sogar Dokumente akzeptiert, die seit höchstens einem Jahr abgelaufen sind; bei Ausreise und Transit kann das aber Probleme machen. Kinder reisen mit Kinderreisepass oder eigenem Ausweis. Wer zusätzlich die türkische Staatsangehörigkeit hat, gilt in der Türkei nur als türkischer Staatsbürger.",
+  "sections": [
+   {
+    "h": "Welche Dokumente gelten?",
+    "table": {
+     "head": [
+      "Dokument",
+      "Einreise in die Türkei"
+     ],
+     "rows": [
+      [
+       "Personalausweis",
+       "Ja"
+      ],
+      [
+       "Reisepass",
+       "Ja"
+      ],
+      [
+       "Vorläufiger Personalausweis",
+       "Ja, aber das Auswärtige Amt rät ab; abgelaufen nicht akzeptiert"
+      ],
+      [
+       "Kinderreisepass",
+       "Ja"
+      ],
+      [
+       "Seit bis zu 1 Jahr abgelaufene Dokumente",
+       "Für die Einreise akzeptiert, Probleme bei Aus- und Weiterreise möglich"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "90 Tage in 180",
+    "p": [
+     "Touristen dürfen bis zu 90 Tage innerhalb von 180 Tagen bleiben. Kurz aus- und wieder einzureisen, um die 90 Tage neu zu starten, funktioniert nicht mehr. Die Einreise ist nicht garantiert: Die Grenzpolizei entscheidet im Einzelfall."
+    ]
+   },
+   {
+    "h": "Deutsch-türkische Doppelstaatler",
+    "list": [
+     "In der Türkei gelten Doppelstaatler ausschließlich als türkische Staatsbürger; die deutsche Botschaft kann nur eingeschränkt helfen.",
+     "Wer mit dem deutschen Dokument einreist, sollte auch mit ihm ausreisen.",
+     "Kinder mit beiden Staatsangehörigkeiten brauchen ein deutsches Dokument (z. B. Kinderreisepass), wenn sie auf dem deutschen Pass reisen."
+    ]
+   },
+   {
+    "h": "Gut zu wissen",
+    "list": [
+     "Für die Einreise über Georgien auf dem Landweg empfiehlt das Auswärtige Amt einen Reisepass.",
+     "Vor der Passkontrolle kann es zusätzliche Kontrollen geben, auch von Mobiltelefonen.",
+     "Die e-Gates am Flughafen Istanbul sind nur für türkische Staatsbürger; Ausländer nutzen die normalen Schalter.",
+     "Schweizer reisen ebenfalls mit Identitätskarte ein, visumfrei 90 Tage."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Kann ich mit dem Personalausweis in die Türkei fliegen?",
+    "a": "Ja. Deutsche dürfen mit dem Personalausweis einreisen und bis zu 90 Tage in 180 Tagen bleiben."
+   },
+   {
+    "q": "Muss der Ausweis noch 150 Tage gültig sein?",
+    "a": "Nein, für Deutsche gibt es diese Regel nicht. Für die Einreise werden sogar seit bis zu einem Jahr abgelaufene Dokumente akzeptiert (außer dem vorläufigen Personalausweis)."
+   },
+   {
+    "q": "Brauchen Kinder einen Reisepass für die Türkei?",
+    "a": "Nein. Ein Kinderreisepass oder ein Personalausweis reicht."
+   }
+  ]
+ },
+ "egypt_visa_de": {
+  "title": "Ägypten Visum 2026: 30 USD bei Ankunft, e-Visum, Sinai-Stempel und Personalausweis",
+  "short": "Ägypten Visum",
+  "metaDesc": "Ägypten-Visum für Deutsche 2026: Visum bei Ankunft 30 USD, in Kairo als QR-Code (36 USD), e-Visum 30/65 USD, kostenloser Sinai-Stempel bis 15 Tage, Einreise mit Personalausweis und 2 Passfotos.",
+  "answer": "Deutsche brauchen für Ägypten ein Visum, bekommen es aber am Flughafen: Das Touristenvisum bei Ankunft kostet 30 USD und gilt 30 Tage. Bezahlt wird vor der Passkontrolle an den Bankschaltern. Am Flughafen Kairo gibt es statt der Visummarke inzwischen einen QR-Code (36 USD bar, oder vorab online 30 + 6 USD). Wer nur in Sharm el-Sheikh, Dahab, Nuweiba oder Taba Urlaub macht, kann einen kostenlosen Sinai-Stempel für bis zu 15 Tage bekommen. Die Einreise ist auch mit Personalausweis möglich, dann mit 2 biometrischen Passfotos.",
+  "sections": [
+   {
+    "h": "Möglichkeiten im Überblick",
+    "table": {
+     "head": [
+      "Variante",
+      "Kosten",
+      "Dauer"
+     ],
+     "rows": [
+      [
+       "Visum bei Ankunft",
+       "30 USD",
+       "30 Tage"
+      ],
+      [
+       "Digitales Visum in Kairo (QR-Code)",
+       "36 USD bar oder 30 + 6 USD online",
+       "30 Tage"
+      ],
+      [
+       "e-Visum, einfache Einreise",
+       "30 USD",
+       "30 Tage"
+      ],
+      [
+       "e-Visum, mehrfache Einreise",
+       "65 USD",
+       "bis 30 Tage pro Einreise"
+      ],
+      [
+       "Sinai-Stempel (nur Südsinai)",
+       "kostenlos",
+       "bis 15 Tage"
+      ],
+      [
+       "Visum bei der Botschaft",
+       "35 € + 3 € Bearbeitung",
+       "je nach Visum"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "Mit Personalausweis nach Ägypten",
+    "list": [
+     "Möglich, wenn du 2 biometrische Passfotos mitbringst.",
+     "Das Visum kommt dann auf ein separates Blatt mit Foto, das du bei der Ausreise vorzeigen musst: gut aufbewahren.",
+     "Der vorläufige Personalausweis wird nicht akzeptiert.",
+     "Das Dokument muss bei Einreise noch mindestens 6 Monate gültig sein; ein Reisepass macht es einfacher."
+    ]
+   },
+   {
+    "h": "Sinai-Stempel",
+    "p": [
+     "Der kostenlose Stempel gilt nur für Sharm el-Sheikh, Dahab, Nuweiba und Taba, bis zu 15 Tage. Für Ausflüge nach Kairo, Luxor oder Hurghada brauchst du ein reguläres Visum. Am Grenzübergang Taba wird zusätzlich eine Grenzgebühr von 120 USD erhoben."
+    ]
+   },
+   {
+    "h": "Mögliche Erhöhung 2027",
+    "p": [
+     "Laut einem Rundschreiben des ägyptischen Reiseverbands soll das Einreisevisum ab 1. Januar 2027 33 USD kosten. Offiziell bestätigt ist das noch nicht; wir aktualisieren die Seite."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was kostet das Visum für Ägypten 2026?",
+    "a": "30 USD bei Ankunft oder als einfaches e-Visum; das Mehrfach-e-Visum kostet 65 USD."
+   },
+   {
+    "q": "Kann ich mit dem Personalausweis nach Ägypten?",
+    "a": "Ja, mit 2 biometrischen Passfotos. Das Visum wird dann auf einem separaten Blatt ausgestellt."
+   },
+   {
+    "q": "Brauche ich für Sharm el-Sheikh ein Visum?",
+    "a": "Nicht unbedingt: Der kostenlose Sinai-Stempel reicht für bis zu 15 Tage, solange du im Südsinai bleibst."
+   }
+  ]
+ },
+ "thailand_de": {
+  "title": "Thailand Einreise 2026: 30 Tage visumfrei, TDAC und was Deutsche wissen müssen",
+  "short": "Thailand Einreise & TDAC",
+  "metaDesc": "Thailand-Einreise für Deutsche 2026: seit 15. September 2026 nur noch 30 Tage visumfrei (vorher 60), kostenlose TDAC-Ankunftskarte 3 Tage vor Ankunft, Verlängerung um 30 Tage für 1.900 THB.",
+  "answer": "Deutsche, Österreicher und Schweizer dürfen seit dem 15. September 2026 nur noch 30 Tage visumfrei in Thailand bleiben (vorher 60). Jeder Reisende muss vorab die kostenlose Thailand Digital Arrival Card (TDAC) auf tdac.immigration.go.th ausfüllen, frühestens 3 Tage vor der Ankunft. Nötig sind ein Reisepass mit mindestens 6 Monaten Gültigkeit und ein Rück- oder Weiterflugticket; der Personalausweis reicht nicht. Die 30 Tage lassen sich in Thailand einmal um bis zu 30 Tage verlängern.",
+  "sections": [
+   {
+    "h": "Auf einen Blick",
+    "table": {
+     "head": [
+      "Thema",
+      "Regel"
+     ],
+     "rows": [
+      [
+       "Visumfrei",
+       "30 Tage (seit 15.09.2026)"
+      ],
+      [
+       "TDAC",
+       "Pflicht, kostenlos, max. 3 Tage vor Ankunft"
+      ],
+      [
+       "Verlängerung",
+       "einmal bis 30 Tage, 1.900 THB"
+      ],
+      [
+       "Reisepass",
+       "mind. 6 Monate gültig; Personalausweis gilt nicht"
+      ],
+      [
+       "Einreise auf dem Landweg",
+       "visumfrei höchstens 2-mal pro Kalenderjahr"
+      ]
+     ]
+    }
+   },
+   {
+    "h": "TDAC: die digitale Ankunftskarte",
+    "list": [
+     "Seit 1. Mai 2025 Pflicht für alle Ausländer, egal ob per Flugzeug, Bus oder Schiff.",
+     "Nur über die offizielle Seite tdac.immigration.go.th; sie ist kostenlos. Seiten, die Geld verlangen, sind nicht offiziell.",
+     "Ein ETA-System für Thailand gibt es nicht; die TDAC reicht."
+    ]
+   },
+   {
+    "h": "Bei der Einreise",
+    "list": [
+     "Rück- oder Weiterflug, der innerhalb der erlaubten Aufenthaltsdauer liegt.",
+     "Stichprobenweise wird ein Nachweis über 20.000 THB pro Person (40.000 THB pro Familie) verlangt.",
+     "Wer länger bleiben will, beantragt vorab ein Touristenvisum (60 Tage) oder das Destination Thailand Visa (DTV) über thaievisa.go.th."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie lange dürfen Deutsche ohne Visum in Thailand bleiben?",
+    "a": "Seit dem 15. September 2026 bis zu 30 Tage, verlängerbar um einmal 30 Tage."
+   },
+   {
+    "q": "Was ist die TDAC und kostet sie etwas?",
+    "a": "Die Thailand Digital Arrival Card ersetzt die Papierkarte. Sie ist kostenlos und wird höchstens 3 Tage vor Ankunft online ausgefüllt."
+   },
+   {
+    "q": "Kann ich mit dem Personalausweis nach Thailand?",
+    "a": "Nein, du brauchst einen Reisepass, der noch mindestens 6 Monate gültig ist."
    }
   ]
  }

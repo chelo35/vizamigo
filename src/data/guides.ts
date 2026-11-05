@@ -13,13 +13,13 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country';
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam';
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['schengen_by_country', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
@@ -41,6 +41,123 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
       { label: 'Danimarka Ankara Büyükelçiliği: vize başvurusu', url: 'https://um.dk/tyrkiet/en/travel-and-residence/how-to-apply-for-a-visa/' },
       { label: 'Avrupa Komisyonu: Schengen vize istatistikleri', url: 'https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy/statistics-short-stay-visas-issued-schengen-states_en' },
       { label: 'AB Türkiye Delegasyonu: Türk vatandaşları için kademeli vize kuralı', url: 'https://www.eeas.europa.eu/delegations/t%C3%BCrkiye/more-favourable-visa-rules-turkish-citizens-applying-schengen-visas_en' }
+    ]
+  },
+  schengen_india: {
+    checked: '2026-11-05',
+    passports: ['IN'],
+    icon: 'doc',
+    countries: ['DE', 'FR', 'IT', 'ES', 'NL', 'CH', 'AT', 'GR', 'PT', 'CZ'],
+    langs: ['en'],
+    sources: [
+      { label: 'German Foreign Office: Schengen visa fee', url: 'https://www.auswaertiges-amt.de/en/-/2658682' },
+      { label: 'German Missions in India: Schengen visa and cascade rule', url: 'https://india.diplo.de/in-en/service/-/2633538' },
+      { label: 'European Commission: applying for a Schengen visa', url: 'https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en' }
+    ]
+  },
+  japan_visa_india: {
+    checked: '2026-11-05',
+    passports: ['IN'],
+    icon: 'passport',
+    countries: ['JP'],
+    langs: ['en'],
+    sources: [
+      { label: 'Consulate-General of Japan in Kolkata: Japan eVISA', url: 'https://www.kolkata.in.emb-japan.go.jp/itpr_en/00_japanevisasystem.html' },
+      { label: 'Consulate-General of Japan in Chennai: visa for Indian nationals', url: 'https://www.chennai.in.emb-japan.go.jp/itpr_en/japanese_visa_for_indian.html' },
+      { label: 'Embassy of Japan in India: visas', url: 'https://www.in.emb-japan.go.jp/itpr_en/Visa.html' }
+    ]
+  },
+  vietnam_visa_india: {
+    checked: '2026-11-05',
+    passports: ['IN'],
+    icon: 'passport',
+    countries: ['VN'],
+    langs: ['en'],
+    sources: [
+      { label: 'Vietnam Immigration Department: e-visa portal', url: 'https://evisa.gov.vn' },
+      { label: 'Business Today: Phu Quoc visa-free entry, Indian Embassy advisory (April 2026)', url: 'https://www.businesstoday.in/nri/visa/story/travelling-to-vietnam-phu-quoc-visa-free-entry-comes-with-risks-india-issues-travel-advisory-524379-2026-04-07' }
+    ]
+  },
+  egypt_visa_ru: {
+    checked: '2026-11-05',
+    passports: ['RU'],
+    icon: 'passport',
+    countries: ['EG'],
+    langs: ['ru'],
+    sources: [
+      { label: 'Т—Ж: правила въезда в Египет', url: 'https://t-j.ru/egypt-entry-rules/' },
+      { label: 'Египет: официальный портал электронных виз', url: 'https://visa2egypt.gov.eg' }
+    ]
+  },
+  uae_ru: {
+    checked: '2026-11-05',
+    passports: ['RU'],
+    icon: 'passport',
+    countries: ['AE'],
+    langs: ['ru'],
+    sources: [
+      { label: 'Т—Ж: правила въезда в ОАЭ', url: 'https://t-j.ru/uae-entry-rules/' }
+    ]
+  },
+  turkey_id_de: {
+    checked: '2026-11-05',
+    passports: ['DE', 'AT', 'CH'],
+    icon: 'user',
+    countries: ['TR'],
+    langs: ['de'],
+    sources: [
+      { label: 'Auswärtiges Amt: Türkei – Reise- und Sicherheitshinweise', url: 'https://www.auswaertiges-amt.de/de/service/laender/tuerkei-node/tuerkeisicherheit-201962' },
+      { label: 'EDA: Türkei – Einreise und Aufenthalt', url: 'https://www.eda.admin.ch/de/laenderdossier-tuerkei-einreise-und-aufenthalt' }
+    ]
+  },
+  egypt_visa_de: {
+    checked: '2026-11-05',
+    passports: ['DE', 'AT', 'CH'],
+    icon: 'passport',
+    countries: ['EG'],
+    langs: ['de'],
+    sources: [
+      { label: 'Auswärtiges Amt: Ägypten – Reise- und Sicherheitshinweise', url: 'https://www.auswaertiges-amt.de/de/service/laender/aegypten-node/aegyptensicherheit-212622' },
+      { label: 'Ägypten: offizielles e-Visum-Portal', url: 'https://visa2egypt.gov.eg' }
+    ]
+  },
+  thailand_de: {
+    checked: '2026-11-05',
+    passports: ['DE', 'AT', 'CH'],
+    icon: 'passport',
+    countries: ['TH'],
+    langs: ['de'],
+    sources: [
+      { label: 'TAT News: neue 30-Tage-Visumbefreiung ab 15. September 2026', url: 'https://www.tatnews.org/2026/09/thailand-introduces-new-30-day-and-15-day-visa-exemption-rules-from-15-september/' },
+      { label: 'Royal Thai Embassy: TDAC', url: 'https://manama.thaiembassy.org/en/page/tdac' },
+      { label: 'Thailand Digital Arrival Card (TDAC)', url: 'https://tdac.immigration.go.th' },
+      { label: 'ADAC: Thailand Einreise', url: 'https://www.adac.de/reise-freizeit/reiseplanung/reiseziele/thailand/einreise-zoll/' }
+    ]
+  },
+  canada_eta_mx: {
+    checked: '2026-11-05',
+    passports: ['MX'],
+    icon: 'passport',
+    countries: ['CA'],
+    langs: ['es'],
+    sources: [
+      { label: 'IRCC: eTA eligibility for Mexican citizens', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility/eta-x.html' },
+      { label: 'IRCC: eTA and visas for Mexican citizens', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/campaigns/eta-work-visa-mexico.html' },
+      { label: 'IRCC: fee list', url: 'https://ircc.canada.ca/english/information/fees/fees.asp' },
+      { label: 'IRCC: apply for an eTA', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html' }
+    ]
+  },
+  schengen_latam: {
+    checked: '2026-11-05',
+    passports: ['MX', 'AR', 'BR', 'CL', 'CO', 'PE', 'UY', 'PY', 'VE', 'CR', 'PA', 'GT', 'HN', 'SV', 'NI', 'EC', 'BO', 'DO', 'CU', 'HT'],
+    icon: 'doc',
+    countries: ['DE', 'FR', 'IT', 'ES', 'NL', 'CH', 'AT', 'GR', 'PT', 'CZ'],
+    langs: ['es'],
+    sources: [
+      { label: 'EUR-Lex: Reglamento (UE) 2018/1806 (listas de visados)', url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32018R1806' },
+      { label: 'Comisión Europea: Fronteras inteligentes (EES y ETIAS)', url: 'https://home-affairs.ec.europa.eu/policies/schengen/smart-borders_en' },
+      { label: 'Comisión Europea: tasa de visado Schengen', url: 'https://home-affairs.ec.europa.eu/news/schengen-visa-fee-increased-11-june-2024-2024-06-13_en' },
+      { label: 'Consejo de la UE: espacio Schengen', url: 'https://www.consilium.europa.eu/en/policies/schengen-area/' }
     ]
   },
   uk_visa_india: {
@@ -176,11 +293,12 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     ]
   },
   etias: {
-    checked: '2026-10-29',
+    checked: '2026-11-05',
     icon: 'passport',
     countries: SCHENGEN,
     sources: [
       { label: 'European Union: ETIAS (travel-europe.europa.eu)', url: 'https://travel-europe.europa.eu/etias_en' },
+      { label: 'European Commission: Smart Borders (ETIAS status)', url: 'https://home-affairs.ec.europa.eu/policies/schengen/smart-borders_en' },
       { label: 'European Union: EES', url: 'https://travel-europe.europa.eu/ees_en' }
     ]
   },
