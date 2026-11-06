@@ -30,6 +30,29 @@ export interface VisaChangeAlert {
 
 export const VISA_CHANGE_ALERTS: VisaChangeAlert[] = [
   {
+    id: 'alert-cv-2026',
+    countryCode: 'CV',
+    countryName: 'Yeşil Burun Adaları',
+    countryNameEn: 'Cape Verde',
+    countryNameDe: 'Kap Verde',
+    effectiveDate: '1 Ocak 2026',
+    effectiveDateEn: 'January 1, 2026',
+    effectiveDateDe: '1. Januar 2026',
+    category: 'critical',
+    title: "Yeşil Burun Adaları’nda kapıda vize kaldırıldı",
+    titleEn: "Cape Verde ends visa on arrival for 96 countries",
+    titleDe: "Kap Verde schafft Visum bei Ankunft für 96 Länder ab",
+    summary: "1 Ocak 2026’dan itibaren 96 ülkenin vatandaşları (aralarında Türkiye, Mısır, Hindistan, Meksika, Pakistan, Vietnam, Bolivya, Zimbabve ve Afganistan) vizeyi gelmeden önce Yeşil Burun Adaları büyükelçiliği veya konsolosluğundan almalı. Vizesiz giren ülkelerin vatandaşları dahil herkes EASE portalında önceden kayıt olup havalimanı güvenlik ücretini (TSA) öder.",
+    summaryEn: "From 1 January 2026, citizens of 96 countries (including T\u00fcrkiye, Egypt, India, Mexico, Pakistan, Vietnam, Bolivia, Zimbabwe and Afghanistan) must get a visa from a Cape Verde embassy or consulate before travel. All visitors, including visa-exempt ones, must pre-register on the EASE portal and pay the airport security fee (TSA).",
+    summaryDe: "Seit dem 1. Januar 2026 müssen Staatsangehörige von 96 Ländern (darunter Türkei, Ägypten, Indien, Mexiko, Pakistan, Vietnam, Bolivien, Simbabwe und Afghanistan) das Visum vorab bei einer Botschaft oder einem Konsulat von Kap Verde beantragen. Alle Reisenden, auch visumfreie, müssen sich vorab im EASE-Portal registrieren und die Flughafen-Sicherheitsgebühr (TSA) zahlen.",
+    officialSource: 'EASE – Yeşil Burun Adaları Hükümeti (Karar No. 244/GMAI/2025)',
+    officialSourceEn: 'EASE – Government of Cabo Verde (Decree No. 244/GMAI/2025)',
+    officialSourceDe: 'EASE – Regierung von Kap Verde (Erlass Nr. 244/GMAI/2025)',
+    officialUrl: 'https://www.ease.gov.cv/',
+    verifiedDate: 'Kasım 2026',
+    impactPassport: ['TR', 'EG', 'IN', 'MX', 'PK', 'VN', 'BO', 'ZW', 'AF']
+  },
+  {
     id: 'alert-me-2026',
     countryCode: 'ME',
     countryName: 'Karadağ',
