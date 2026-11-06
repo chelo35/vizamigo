@@ -6,13 +6,18 @@ import './styles/redesign.css';
 import './styles/redesign-pages.css';
 import './next/next.css';
 import { routeLink } from './data/tpPartners';
+import { captureRef, tagRef } from './utils/refTracking';
+
+// Fenomen bağlantısıyla gelindiyse (?ref=kod) kodu 30 gün sakla
+captureRef();
 
 // Kilitli (komisyon getirmeyen) marka bağlantılarını tıklama anında bağlı alternatife çevir (eski bileşenler dahil)
 if (typeof document !== 'undefined') {
   const fix = (e: Event) => {
     const a = (e.target as Element | null)?.closest?.('a[href^="http"]') as HTMLAnchorElement | null;
     if (!a) return;
-    const to = routeLink(a.href);
+    // kilitli markayı bağlı alternatife çevir, sonra varsa fenomen kodunu ekle
+    const to = tagRef(routeLink(a.href));
     if (to !== a.href) a.href = to;
   };
   document.addEventListener('pointerdown', fix, true);
