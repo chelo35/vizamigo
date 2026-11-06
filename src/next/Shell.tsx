@@ -1,4 +1,5 @@
 import { toursPath } from '../data/tours';
+import { SOCIALS, CONTACT_EMAIL } from '../data/socials';
 import React, { useState } from 'react';
 import { Icon } from './Icon';
 import { useI18n } from '../data/i18n';
@@ -183,6 +184,22 @@ export const BottomNav: React.FC<{ activeTab: TabKey; onSelectTab: (t: TabKey) =
   );
 };
 
+const SocialIcon: React.FC<{ id: string }> = ({ id }) => {
+  if (id === 'instagram')
+    return (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+      </svg>
+    );
+  if (id === 'tiktok')
+    return (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M16.6 3c.4 2.2 1.8 3.6 4 3.8v3.1c-1.5 0-2.9-.4-4-1.2v6.5a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.2a2.9 2.9 0 1 0 2 2.7V3h3z" />
+      </svg>
+    );
+  return <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="2" /></svg>;
+};
+
 export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (page: string) => void; onOpenTool: (tab: TabKey, tile: string) => void }> = ({ onSelectTab, onOpenInfo, onOpenTool }) => {
   const { l, language, setLanguage, languages } = useI18n();
   const cols: { h: string; items: { label: string; go: () => void }[] }[] = [
@@ -228,6 +245,17 @@ export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (p
           <p className="vz-muted" style={{ fontSize: 14, maxWidth: '38ch' }}>
             {l('199 ülkenin vize kuralları, kalış süreleri ve yolculuk hazırlığı. Resmî kaynaklardan, tarihleriyle, beş dilde.', 'Visa rules, stay limits and trip prep for 199 countries. From official sources, dated, in five languages.', 'Visaregeln und Reisevorbereitung für 199 Länder, amtlich belegt, in fünf Sprachen.', 'Reglas de visado y preparación de viajes para 199 países, con fuentes oficiales, en cinco idiomas.', 'Визовые правила и подготовка к поездке для 199 стран, по официальным источникам, на пяти языках.')}
           </p>
+          <div className="vz-foot-social">
+            {SOCIALS.map((x) => (
+              <a key={x.id} href={x.url} target="_blank" rel="noopener me" aria-label={x.name}>
+                <SocialIcon id={x.id} /> <span>{x.name}</span>
+              </a>
+            ))}
+            <span className="vz-foot-mail" title={l('E-posta', 'Email', 'E-Mail', 'Correo', 'Почта')}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </span>
+          </div>
         </div>
         {cols.map((c) => (
           <div key={c.h}>

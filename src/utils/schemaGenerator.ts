@@ -11,6 +11,7 @@ import { getCountryName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { buildAbsoluteLocalizedUrl, BASE_URL } from './seoRouter';
 import { INFO } from '../data/passportData';
+import { SOCIALS, CONTACT_EMAIL } from '../data/socials';
 
 export interface SchemaGeneratorOptions {
   countryCode: string;
@@ -506,7 +507,9 @@ export function generatePortalJsonLd(language: SupportedLanguage): object {
         '@id': `${BASE_URL}#organization`,
         name: 'Vizamigo',
         url: BASE_URL,
-        logo: `${BASE_URL}/favicon.ico`
+        logo: `${BASE_URL}/favicon.ico`,
+        email: CONTACT_EMAIL,
+        sameAs: SOCIALS.map((x) => x.url)
       }
     ]
   };

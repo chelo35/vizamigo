@@ -1138,3 +1138,10 @@ html.dark .vz-fcal-day.lo { background: rgba(22,163,74,0.15); }
 html.dark .vz-tour-fly { background: rgba(45, 212, 191, 0.08); }
 html.dark .vz-tour-fly-h { color: #c9f3ec; }
 html.dark .vz-tour-fly .vz-tour-links a, html.dark .vz-tour-fly-row input { background: rgba(255, 255, 255, 0.06); }
+
+/* Altbilgi: sosyal hesaplar ve iletişim */
+.vz-foot-social { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; font-size: 14px; }
+.vz-foot-social a { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; font-weight: 600; }
+.vz-foot-social a:hover { text-decoration: underline; }
+.vz-foot-mail { display: inline-flex; align-items: center; gap: 6px; }
+.vz-foot-mail a { font-weight: 500; user-select: all; }
