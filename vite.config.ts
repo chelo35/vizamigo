@@ -88,7 +88,8 @@ export default defineConfig(() => {
       tailwindcss(),
       vizamigoSeoEnginePlugin(),
       vizamigoNonBlockingCssPlugin(),
-      visualizer({
+      // paket analizi yalnızca ANALYZE=1 ile (canlı siteye stats.html/json yüklenmesin)
+      ...(process.env.ANALYZE ? [visualizer({
         filename: 'dist/stats.html',
         open: false,
         gzipSize: true,
@@ -98,7 +99,7 @@ export default defineConfig(() => {
         filename: 'dist/stats.json',
         open: false,
         template: 'raw-data',
-      }),
+      })] : []),
     ],
     build: {
       chunkSizeWarningLimit: 600,

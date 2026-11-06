@@ -92,14 +92,28 @@ async function main() {
   };
   const TABS = ['plan', 'track', 'nomad', 'profile', 'consular'] as const;
   // bilgi sayfaları (yedekleme aracı hariç)
-  const INFO: Record<string, [string, string]> = {
-    terms: ['Kullanım koşulları', 'Terms of use'], privacy: ['Gizlilik politikası', 'Privacy policy'], disclaimer: ['Sorumluluk reddi', 'Disclaimer'],
-    kvkk_gdpr: ['KVKK ve GDPR', 'KVKK & GDPR'], standards: ['Kaynaklar ve doğrulama', 'Sources & verification'], attributions: ['Görsel kaynakları', 'Photo credits'],
-    appeals: ['Vize reddine itiraz', 'Visa refusal appeals'], passport_lost: ['Yurt dışında pasaport kaybı', 'Lost passport abroad'], crisis: ['Kriz masası', 'Crisis desk'],
-    transit: ['Transit kuralları', 'Transit rules'], partners: ['Acenteler', 'Agencies'], airlines: ['Havayolları', 'Airlines'], insurance: ['Seyahat sigortası', 'Travel insurance'],
-    community: ['Topluluk', 'Community'], api: ['Kurumsal API', 'Business API'], mission: ['Misyonumuz', 'Our mission'], sustainability: ['Sürdürülebilirlik', 'Sustainability'],
-    careers: ['Kariyer', 'Careers'], press: ['İletişim', 'Contact']
+  const INFO: Record<string, [string, string, string, string, string]> = {
+    terms: ['Kullanım koşulları', 'Terms of use', 'Nutzungsbedingungen', 'Condiciones de uso', 'Условия использования'],
+    privacy: ['Gizlilik politikası', 'Privacy policy', 'Datenschutzerklärung', 'Política de privacidad', 'Политика конфиденциальности'],
+    disclaimer: ['Sorumluluk reddi', 'Disclaimer', 'Haftungsausschluss', 'Aviso legal', 'Отказ от ответственности'],
+    kvkk_gdpr: ['KVKK ve GDPR', 'KVKK & GDPR', 'KVKK & DSGVO', 'KVKK y RGPD', 'KVKK и GDPR'],
+    standards: ['Kaynaklar ve doğrulama', 'Sources & verification', 'Quellen & Überprüfung', 'Fuentes y verificación', 'Источники и проверка'],
+    attributions: ['Görsel kaynakları', 'Photo credits', 'Bildnachweise', 'Créditos de las fotos', 'Источники фотографий'],
+    appeals: ['Vize reddine itiraz', 'Visa refusal appeals', 'Widerspruch gegen Visumablehnung', 'Recurso contra la denegación de visado', 'Обжалование отказа в визе'],
+    passport_lost: ['Yurt dışında pasaport kaybı', 'Lost passport abroad', 'Reisepass im Ausland verloren', 'Pasaporte perdido en el extranjero', 'Потеря паспорта за границей'],
+    crisis: ['Kriz masası', 'Crisis desk', 'Krisenhilfe', 'Centro de crisis', 'Кризисный центр'],
+    transit: ['Transit kuralları', 'Transit rules', 'Transitbestimmungen', 'Normas de tránsito', 'Правила транзита'],
+    partners: ['Acenteler', 'Agencies', 'Reisebüros', 'Agencias', 'Агентства'],
+    airlines: ['Havayolları', 'Airlines', 'Fluggesellschaften', 'Aerolíneas', 'Авиакомпании'],
+    insurance: ['Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Туристическая страховка'],
+    community: ['Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество'],
+    api: ['Kurumsal API', 'Business API', 'Business-API', 'API para empresas', 'API для бизнеса'],
+    mission: ['Misyonumuz', 'Our mission', 'Unsere Mission', 'Nuestra misión', 'Наша миссия'],
+    sustainability: ['Sürdürülebilirlik', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Устойчивое развитие'],
+    careers: ['Kariyer', 'Careers', 'Karriere', 'Empleo', 'Карьера'],
+    press: ['İletişim', 'Contact', 'Kontakt', 'Contacto', 'Контакты']
   };
+
 
   const tabName = (t: string, lang: string) => (getTabSeo(t, lang)?.title || t).replace(/ \| Vizamigo$/, '').split(':')[0];
   const tabLinks = (lang: string) => TABS.map((t) => `<a href="${buildLocalizedPath(lang as never, t, null)}">${esc(tabName(t, lang))}</a>`).join(' · ');
@@ -112,9 +126,16 @@ async function main() {
     `<h1 class="vzs-h1">${esc(main)}${rest ? `<span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> — ${esc(rest)}</span>` : ''}</h1>`;
   const lead = (t: string) => `<p class="vzs-lead">${esc(t)}</p>`;
 
-  type Opts = { lang: string; canonical: string; alts: { hreflang: string; href: string }[]; title: string; desc?: string; body?: string; nav?: string; noindex?: boolean; head?: string; hero?: string };
-  const build = ({ lang, canonical, alts, title, desc = '', body = '', nav = '', noindex, head = '', hero = '' }: Opts) => {
+  type Opts = { lang: string; canonical: string; alts: { hreflang: string; href: string }[]; title: string; desc?: string; body?: string; nav?: string; noindex?: boolean; head?: string; hero?: string; ogImage?: string; ogAlt?: string };
+  const build = ({ lang, canonical, alts, title, desc = '', body = '', nav = '', noindex, head = '', hero = '', ogImage, ogAlt }: Opts) => {
     let html = tpl;
+    if (ogImage) {
+      // ülkeye özel paylaşım görseli (sosyal medyada ve aramada daha çok tıklanır)
+      html = html.replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${ogImage}$2`);
+      html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${ogImage}$2`);
+      html = html.replace(/\s*<meta property="og:image:(width|height)" content="[^"]*" \/>/g, '');
+      if (ogAlt) html = html.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, `$1${esc(ogAlt)}$2`);
+    }
     if (head) html = html.replace('</head>', `    ${head}\n  </head>`);
     html = html.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`);
     html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`);
@@ -195,13 +216,15 @@ async function main() {
         alts: passPage ? [{ hreflang: lang, href: BASE_URL + relPath }] : getHreflangAlternatesForRoute('explore', code),
         title: meta.title,
         desc: meta.description,
+        ogImage: BASE_URL + getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 }),
+        ogAlt: [name, getCountryVisual(code, lang).landmark].filter(Boolean).join(': '),
         head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="${pass}">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
         // uygulamanın ülke başlığıyla aynı ölçüde fotoğraflı başlık: ilk boyama erken, kayma yok
         hero: (() => {
           const v = getCountryVisual(code, lang);
           const s480 = getOptimizedImageUrl(v.image, { width: 480 });
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
-          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(cap)}</p>` : ''}</div></section>`;
+          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(cap)}</p>` : ''}</div></section>`;
         })(),
         nav: navBlock(lang, `${lead(meta.description)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
@@ -287,8 +310,8 @@ async function main() {
     }
 
     // bilgi sayfaları
-    for (const [id, [trT, enT]] of Object.entries(INFO)) {
-      const t = lang === 'tr' ? trT : enT;
+    for (const [id, names] of Object.entries(INFO)) {
+      const t = names[Math.max(0, ['tr', 'en', 'de', 'es', 'ru'].indexOf(lang))];
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,
         canonical: `${BASE_URL}/${lang}/info/${id}`,
