@@ -759,7 +759,7 @@ export const GLOBAL_CURRENCIES: Record<string, { code: string; name: { tr: strin
   // Diğer Avrupa
   AL: { code: 'ALL', name: { tr: 'Arnavutluk Leki', en: 'Albanian Lek', de: 'Albanischer Lek' }, symbol: 'L', callingCode: '+355', plug: 'C, F' },
   BA: { code: 'BAM', name: { tr: 'Bosna Markı', en: 'Bosnian Convertible Mark', de: 'Konvertible Mark' }, symbol: 'KM', callingCode: '+387', plug: 'C, F' },
-  BG: { code: 'BGN', name: { tr: 'Bulgar Levası', en: 'Bulgarian Lev', de: 'Bulgarischer Lew' }, symbol: 'лв', callingCode: '+359', plug: 'C, F' },
+  BG: { code: 'EUR', name: { tr: 'Euro', en: 'Euro', de: 'Euro' }, symbol: '€', callingCode: '+359', plug: 'C, F' }, // 1 Ocak 2026'dan beri avro
   BY: { code: 'BYN', name: { tr: 'Belarus Rublesi', en: 'Belarusian Ruble', de: 'Belarussischer Rubel' }, symbol: 'Br', callingCode: '+375', plug: 'C' },
   CH: { code: 'CHF', name: { tr: 'İsviçre Frangı', en: 'Swiss Franc', de: 'Schweizer Franken' }, symbol: 'CHF', callingCode: '+41', plug: 'J' },
   CZ: { code: 'CZK', name: { tr: 'Çek Korunası', en: 'Czech Koruna', de: 'Tschechische Krone' }, symbol: 'Kč', callingCode: '+420', plug: 'C, E' },

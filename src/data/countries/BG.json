@@ -22,7 +22,7 @@
     "retrieved_at": "2026-10-18"
   },
   "currency": {
-    "value": "BGN",
+    "value": "EUR",
     "status": "verified",
     "confidence": "high",
     "sources": [
@@ -30,10 +30,15 @@
         "url": "https://www.bnb.bg",
         "tier": 1,
         "title": "Bulgarian National Bank"
+      },
+      {
+        "url": "https://www.bsi.si/en/media/posts/bulgaria-joins-the-euro-area-on-1-january-2026",
+        "tier": 1,
+        "title": "Banka Slovenije: Bulgaria joins the euro area on 1 January 2026"
       }
     ],
-    "evidence_quote": "The Bulgarian Lev (BGN) is pegged to the Euro at a fixed rate of 1.95583 BGN",
-    "retrieved_at": "2026-10-18"
+    "evidence_quote": "Bulgaria joined the euro area on 1 January 2026; the euro replaced the Bulgarian lev (BGN).",
+    "retrieved_at": "2026-11-07"
   },
   "timezone": {
     "value": "UTC+2 (EET) / UTC+3 (EEST)",

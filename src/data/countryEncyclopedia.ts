@@ -10,6 +10,7 @@ import { getCountryInsights } from './countryInsights';
 import { CURATED_EXTRA } from './countryEncyclopediaCuratedExtra';
 import { CURATED_EXTRA_2 } from './countryEncyclopediaCuratedExtra2';
 import { CURATED_EXTRA_3 } from './countryEncyclopediaCuratedExtra3';
+import { CURATED_EXTRA_4 } from './countryEncyclopediaCuratedExtra4';
 import { COUNTRY_HERITAGE } from './countryEncyclopediaLandmarks';
 import { getCountryVisual } from './countryVisuals';
 import { lText } from '../i18n';
@@ -1372,7 +1373,8 @@ export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr')
     ...CURATED_ENCYCLOPEDIA,
     ...CURATED_EXTRA,
     ...CURATED_EXTRA_2,
-    ...CURATED_EXTRA_3
+    ...CURATED_EXTRA_3,
+    ...CURATED_EXTRA_4
   };
   const curated = ALL_CURATED[code];
   const countryName = getCountryName(code, lang);

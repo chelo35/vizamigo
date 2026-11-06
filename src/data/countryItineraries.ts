@@ -10,6 +10,7 @@ import { getCountryGeography } from './countryGeography';
 import { getCountryEncyclopedia } from './countryEncyclopedia';
 import { getCountryInsights } from './countryInsights';
 import { CURATED_ITINERARIES_EXTRA } from './countryItinerariesExtra';
+import { CURATED_ITINERARIES_EXTRA_2 } from './countryItinerariesExtra2';
 import { lText } from '../i18n';
 
 export interface ItineraryStop {
@@ -2128,7 +2129,7 @@ export function getCountryItinerary(
   lang: string = 'tr'
 ): CountryTravelItinerary {
   const code = countryCode.toUpperCase();
-  const curated = CURATED_ITINERARIES[code] || CURATED_ITINERARIES_EXTRA[code];
+  const curated = CURATED_ITINERARIES[code] || CURATED_ITINERARIES_EXTRA[code] || CURATED_ITINERARIES_EXTRA_2[code];
 
   if (!curated) {
     return generateDynamicCountryItinerary(code, lang);
