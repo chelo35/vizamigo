@@ -14,6 +14,7 @@
  *        Completely purge from the partner list and replace with active local leaders (e.g. Grab / Bolt in Thailand).
  */
 
+import { capitalName } from './capitalNames';
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
 import { TP, tpLinks, LOCKED, gygSearch, tourRadarLink, type TpId } from './tpPartners';
@@ -304,7 +305,7 @@ export function getCountryConciergePlan(
   const countryNameTr = getCountryName(code, 'tr');
   const geo = GEO_DATA[code];
   const mainHub = (geo?.mainHub || code).split('/')[0];
-  const capitalEn = geo?.capital || countryNameEn;
+  const capitalEn = geo?.capital ? capitalName(code, 'en', geo.capital) : countryNameEn;
   const regionCluster = getRegionCluster(code);
 
   const isAsia = regionCluster === 'asia_pacific';
@@ -494,6 +495,18 @@ export function getCountryConciergePlan(
   // ============================================================================
   const airaloSlug = getAiraloCountrySlug(code, countryNameEn);
   const essentialsPartnersRaw: ConciergePartnerNode[] = [
+    node('nomad', 'essentials', 0, tpLinks.nomad(), {
+      bTr: `${countryNameTr} eSIM`, bEn: `${countryNameEn} eSIM`,
+      tTr: `${countryNameTr} için önceden alınan, QR kodla kurulan eSIM paketi`,
+      tEn: `Prepaid eSIM for ${countryNameEn}, installed by QR code`,
+      cTr: 'Nomad paketleri', cEn: 'Nomad plans'
+    }, 'Nomad eSIM'),
+    node('flexiroam', 'essentials', 1, tpLinks.flexiroam(), {
+      bTr: 'Çok ülkeli eSIM', bEn: 'Multi-country eSIM',
+      tTr: 'Birden fazla ülkeyi gezenler için bölgesel ve küresel paketler',
+      tEn: 'Regional and global plans for multi-country trips',
+      cTr: 'FlexiRoam paketleri', cEn: 'FlexiRoam plans'
+    }, undefined, 'slate'),
     node('yesim', 'essentials', 1, tpLinks.yesim(), {
       bTr: 'Anında eSIM', bEn: 'Instant eSIM',
       tTr: `${countryNameTr} için uçağa binmeden QR kodla kurulan internet paketi`,

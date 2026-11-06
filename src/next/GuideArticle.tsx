@@ -91,7 +91,7 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
               );
             if (k === 'flights') return <Row key={k} lead={<PartnerLogo id="aviasales" />} title={l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты')} sub="Aviasales" href={tpLinks.flights(language === 'tr' ? 'IST' : undefined, plan.to)} />;
             if (k === 'hotel') return <Row key={k} lead={<PartnerLogo id="booking" />} title={l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели')} sub="Booking.com" href={tpLinks.booking(plan.place)} />;
-            if (k === 'esim') return <Row key={k} lead={<PartnerLogo id="yesim" />} title="eSIM" sub="Yesim" href={tpLinks.yesim()} />;
+            if (k === 'esim') return <Row key={k} lead={<PartnerLogo id="nomad" />} title="eSIM" sub="Nomad eSIM" href={tpLinks.nomad()} />;
             if (k === 'transfer') return <Row key={k} lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado al aeropuerto', 'Трансфер из аэропорта')} sub="Kiwitaxi" href={tpLinks.kiwitaxi()} />;
             if (k === 'tours') return <Row key={k} lead={<PartnerLogo id="getyourguide" />} title={l('Turlar ve biletler', 'Tours and tickets', 'Touren und Tickets', 'Tours y entradas', 'Экскурсии и билеты')} sub="GetYourGuide" href={tpLinks.tours(plan.place)} />;
             return null;

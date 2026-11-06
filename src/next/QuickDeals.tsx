@@ -5,6 +5,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
 import { AdTag } from './ui';
 import { TileArt } from './TileArt';
+import { capitalName } from '../data/capitalNames';
 
 const QuickDealPanel = lazy(() => import('./QuickDealPanel'));
 
@@ -28,7 +29,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
   const dest = destination && destination !== passport && GEO_DATA[destination] ? destination : 'TH';
   const from = GEO_DATA[passport] ? passport : 'TR';
   const destName = getCountryName(dest, language);
-  const city = GEO_DATA[dest]?.capital || destName;
+  const city = GEO_DATA[dest]?.capital ? capitalName(dest, 'en', GEO_DATA[dest].capital) : destName;
   const fromHub = (GEO_DATA[from]?.mainHub || '').split('/')[0];
   const toHub = (GEO_DATA[dest]?.mainHub || '').split('/')[0];
 

@@ -6,6 +6,7 @@ import { tpLinks } from '../data/tpPartners';
 import { Icon } from './Icon';
 import { PartnerLogo } from './PartnerLogo';
 import { useFlightPrice } from './FlightPrice';
+import { capitalName } from '../data/capitalNames';
 
 /**
  * Nazik teklif kartı: ziyaretçi ülke sayfasını gerçekten okuyunca (sayfanın yarısına inince ya da
@@ -64,7 +65,7 @@ export const OfferCard: React.FC<{ code: string; passport: string }> = ({ code, 
     setGone(true);
   };
   const links = [
-    { id: 'booking', url: tpLinks.booking(`${geo?.capital || nameEn}, ${nameEn}`), label: l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
+    { id: 'booking', url: tpLinks.booking(`${geo?.capital ? capitalName(code, 'en', geo.capital) : nameEn}, ${nameEn}`), label: l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
     { id: 'aviasales', url: tpLinks.flights(home, hub), label: fp ? `${l('Uçuş', 'Flights', 'Flüge', 'Vuelos', 'Авиа')} · ${fp.money}` : l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты') },
     { id: 'yesim', url: tpLinks.yesim(), label: 'eSIM' }
   ];

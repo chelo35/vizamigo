@@ -189,6 +189,8 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   })();
   const airaloCountry = pkg ? `https://www.airalo.com/${pkg[3].split('/')[0]}` : 'https://www.airalo.com/';
   const esimPicks: PickItem[] = [
+    { id: 'nomad', url: tpLinks.nomad() },
+    { id: 'flexiroam', url: tpLinks.flexiroam() },
     { id: 'airalo', url: airaloCountry, blocked: inTR },
     { id: 'yesim', url: tpLinks.yesim(), blocked: inTR },
     { id: 'saily', url: tpLinks.saily(), blocked: inTR },

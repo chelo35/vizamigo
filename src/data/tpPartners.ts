@@ -34,6 +34,8 @@ export type TpId =
   | 'klook'
   | 'tiqets'
   | 'airalo'
+  | 'nomad'
+  | 'flexiroam'
   | 'yesim'
   | 'saily'
   | 'airhelp'
@@ -82,6 +84,9 @@ export const TP: Record<TpId, TpBrand> = {
   klook: { name: 'Klook', domain: 'klook.com', rate: '2–5%' },
   tiqets: { name: 'Tiqets', domain: 'tiqets.com', rate: '3.5–8%' },
   airalo: { name: 'Airalo', domain: 'airalo.com', rate: '12%' },
+  // Daisycon (yayıncı 442794): bağlantılar glp8.net üzerinden
+  nomad: { name: 'Nomad eSIM', domain: 'nomadesim.com', rate: 'Daisycon' },
+  flexiroam: { name: 'FlexiRoam', domain: 'flexiroam.com', rate: 'Daisycon' },
   yesim: { name: 'Yesim', domain: 'yesim.app', rate: '18%' },
   saily: { name: 'Saily', domain: 'saily.com', rate: '15%' },
   airhelp: { name: 'AirHelp', domain: 'airhelp.com', rate: '15–16.6%' },
@@ -305,6 +310,9 @@ export const tpLinks = {
   tiqets: () => `https://www.tiqets.com/`,
   airalo: (countrySlug: string) => `https://www.airalo.com/${countrySlug}-esim`,
   yesim: () => `https://yesim.app/`,
+  /** Daisycon deeplink'leri (komisyonlu) */
+  nomad: () => 'https://glp8.net/c/?si=22086&li=1934064&wi=442794&ws=vizamigo',
+  flexiroam: () => 'https://glp8.net/c/?si=22288&li=1952758&wi=442794&ws=vizamigo',
   saily: () => `https://saily.com/`,
   airhelp: () => `https://www.airhelp.com/`,
   radicalStorage: () => `https://radicalstorage.com/`

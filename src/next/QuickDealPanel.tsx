@@ -15,6 +15,7 @@ import { tpLinks, stay22, s22Flights, s22Cars, gygLink } from '../data/tpPartner
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 import { toursPath, TOURS } from '../data/tours';
+import { capitalName } from '../data/capitalNames';
 
 type Fl = { price: number; dep: string; ret: string | null; transfers: number | null; link: string | null };
 type Pkg = [number, number, number, string];
@@ -59,7 +60,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
 
   const fromIata = GEO_DATA[from]?.mainHub || '';
   const toIata = GEO_DATA[to]?.mainHub || '';
-  const city = GEO_DATA[to]?.capital || getCountryName(to, 'en');
+  const city = GEO_DATA[to]?.capital ? capitalName(to, 'en', GEO_DATA[to].capital) : getCountryName(to, 'en');
   const toName = getCountryName(to, language);
   const inTR = (() => {
     try {
@@ -146,6 +147,8 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
     return [pick(7), pick(15), pick(30)].filter((x, i, arr): x is Pkg => !!x && arr.findIndex((y) => y && y[3] === x[3]) === i);
   }, [to]);
   const esimPicks: PickItem[] = [
+    { id: 'nomad', url: tpLinks.nomad() },
+    { id: 'flexiroam', url: tpLinks.flexiroam() },
     { id: 'drimsim', url: tpLinks.drimsim() },
     { id: 'airalo', url: esimList[0] ? `https://www.airalo.com/${esimList[0][3].split('/')[0]}` : 'https://www.airalo.com/', blocked: inTR },
     { id: 'yesim', url: tpLinks.yesim(), blocked: inTR },

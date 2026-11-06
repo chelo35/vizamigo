@@ -3,7 +3,7 @@ import { getExtraFaq } from '../data/extraFaq';
 import { ruIn, ruOf } from '../data/ruCases';
 import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
-import { Btn, Bullets, Card, Chip, Chips, Flag, LinkBtn, List, Row, SecHead, Stat, Tags, Tile, TileGrid, VisaBadge, visaTone, Empty, Field, fmtNum, fmtPair } from './ui';
+import { AdTag, Btn, Bullets, Card, Chip, Chips, Flag, LinkBtn, List, Row, SecHead, Stat, Tags, Tile, TileGrid, VisaBadge, visaTone, Empty, Field, fmtNum, fmtPair } from './ui';
 import { stayDays } from './country';
 import { trDat, trLoc } from '../utils/trSuffix';
 import type { SupportedLanguage } from '../i18n/types';
@@ -237,6 +237,11 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                   </div>
                 )}
               </Card>
+              {item && (item.cat === 'visa' || item.cat === 'evisa') && !item.id && (
+                <List>
+                  <Row lead={<PartnerLogo url="https://www.visahq.com" name="VisaHQ" fallback="passport" />} title={<>{l('Başvurunu VisaHQ hazırlasın', 'Let VisaHQ handle your application', 'Antrag über VisaHQ', 'Tramita con VisaHQ', 'Оформить через VisaHQ')} <AdTag /></>} sub={l('Evrak kontrolü ve takip; hizmet bedeli vize ücretine eklenir', 'Document check and tracking; service fee on top of the visa fee', 'Dokumentenprüfung und Verfolgung; Servicegebühr zusätzlich', 'Revisión de documentos y seguimiento; tarifa de servicio adicional', 'Проверка документов и сопровождение; сервисный сбор сверх консульского')} href="https://vizamigo.visahq.net/" />
+                </List>
+              )}
               <div className="vz-actions">
                 <Btn variant="ghost" small icon="flag" onClick={() => onReport(code, name)}>{l('Bu bilgi yanlış mı? Bildir', 'Wrong info? Report it', 'Falsch? Melden', '¿Error? Repórtalo', 'Ошибка? Сообщите')}</Btn>
               </div>

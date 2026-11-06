@@ -11,6 +11,7 @@ import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
 import { stay22, s22Flights, tpLinks } from '../data/tpPartners';
+import { capitalName } from '../data/capitalNames';
 
 /**
  * Çok şehirli rota (planlayıcı 2. aşama): başlangıç ülkesi → 2–5 durak (her birinde kaç gece) → isteğe bağlı dönüş.
@@ -233,7 +234,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
         <h3 style={{ margin: '0 0 8px', fontSize: 16 }}><Icon name="bed" size={18} /> {l('Duraklarda konaklama', 'Where to stay', 'Unterkünfte', 'Alojamiento', 'Где жить')}</h3>
         <div className="vz-stack" style={{ gap: 12 }}>
           {s.stops.map((st, i) => {
-            const city = GEO_DATA[st.to]?.capital || getCountryName(st.to, 'en');
+            const city = GEO_DATA[st.to]?.capital ? capitalName(st.to, 'en', GEO_DATA[st.to].capital) : getCountryName(st.to, 'en');
             const ci = legs[i]?.date || s.start;
             const co = plus(ci, st.nights);
             const hq = { address: `${city}, ${getCountryName(st.to, 'en')}`, checkin: ci, checkout: co, adults: s.n, campaign: 'multi_city' };
