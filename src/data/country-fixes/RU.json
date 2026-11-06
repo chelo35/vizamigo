@@ -1,0 +1,1517 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Rus Rublesi (RUB)",
+   "plugType": "Tip C, F (220V, 50Hz)",
+   "bestMonths": "Mayıs sonu – Ağustos (St. Petersburg’da Beyaz Geceler, ılık hava); Aralık – Şubat karlı kış manzaraları için (çok soğuk)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Büyük şehirlerde sokak suçu orta düzeydedir; ancak Ukrayna ile süren savaş nedeniyle sınır bölgeleri çok tehlikelidir ve insansız hava aracı saldırıları Moskova dahil havalimanlarında sık kapanmalara yol açmaktadır. Birçok ülke (ABD, Birleşik Krallık) Rusya’ya seyahat etmemeyi önerir; yabancılar için keyfi gözaltı riski de bildirilmektedir.",
+    "commonScams": [
+     "Havalimanı ve garlarda sizi karşılayan resmî görünümlü kayıtsız taksiciler",
+     "Kızıl Meydan çevresinde kostümlü kişilerle çekilen fotoğraflar için fahiş ücret",
+     "Sokakta veya lisanssız noktalarda döviz bozdurma teklifleri"
+    ],
+    "safeTravelTips": [
+     "Yabancı Visa/Mastercard kartları Rusya’da çalışmaz; yeterli nakit (USD/EUR) götürüp yalnızca bankalarda bozdurun.",
+     "Pasaportunuzu her zaman yanınızda taşıyın; askerî ve resmî binaları fotoğraflamayın, siyasi gösterilerden uzak durun.",
+     "Uçuşlar drone tehdidi nedeniyle aniden iptal veya ertelenebilir; esnek bilet alın ve havayolunu takip edin."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde 4G/LTE iyi; güvenlik gerekçesiyle birçok bölgede mobil internet zaman zaman kesilmekte veya kısıtlanmaktadır.",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Sınırlı (yerel SIM pasaportla ve kayıtla alınır; uluslararası eSIM seçenekleri az)",
+    "bestCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (Moskova ve St. Petersburg metroları, Sapsan hızlı treni)",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.70 - 1.20 $",
+    "dailyPassUsd": "3.00 - 4.50 $ (Moskva, 24h)",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Metro",
+     "Yandex Maps",
+     "2GIS",
+     "RZD"
+    ],
+    "taxiAdvice": "Taksi için Yandex Go kullanın; yabancı kartlar çalışmadığından nakit ödeme seçeneğini işaretleyin. Moskova – St. Petersburg arası Sapsan treniyle yaklaşık 4 saattir; biletleri RZD’den alın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Orta Seviye (İstanbul – Moskova direkt ~3,5 sa)",
+    "flightTip": "İstanbul’dan Moskova, St. Petersburg, Kazan ve Soçi’ye direkt uçuşlar vardır. Rus havalimanlarında drone kaynaklı geçici kapanmalar sık yaşandığından aktarmalı planlarda geniş süre bırakın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Misafirliğe tek sayıda çiçek götürülür (çift sayı cenazelere özgüdür); evde ayakkabı çıkarılır.",
+     "Resmî ortamlarda kişiye adı ve baba adıyla (ör. Ivan Petrovich) hitap edilir.",
+     "Kapı eşiği üzerinden el sıkışılmaz; bu uğursuzluk sayılır.",
+     "Kiliselerde kadınlar başörtüsü takar, erkekler şapka çıkarır."
+    ],
+    "festivals": [
+     "Maslenitsa (bahar öncesi krep bayramı, Şubat – Mart)",
+     "St. Petersburg Beyaz Geceler ve ‘Kızıl Yelkenler’ şenliği (Haziran)",
+     "Yeni Yıl ve Ortodoks Noeli (31 Aralık – 7 Ocak)"
+    ],
+    "lifestyle": "Edebiyat, bale ve klasik müziğe derin bağlılık, hafta sonu kır evi (dača) kültürü, banya (hamam) geleneği ve uzun sofra sohbetleri."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Moskova: Kızıl Meydan, Kremlin ve Aziz Vasil Katedrali",
+     "St. Petersburg: Ermitaj Müzesi (Kışlık Saray)",
+     "Peterhof Sarayı ve çeşmeleri",
+     "Kazan Kremlini ve Kul Şerif Camii",
+     "Altın Halka şehirleri (Sergiyev Posad, Suzdal)",
+     "Baykal Gölü"
+    ],
+    "bestSeasons": "Yaz (Haziran – Ağustos) en rahat dönemdir; kış çok soğuk ama karlı manzaralar etkileyicidir",
+    "travelStyleTip": "Seyahat öncesi resmî uyarıları kontrol edin ve Ukrayna sınırına yakın bölgelerden uzak durun. Kazan, Tatarca’nın Türkçeye yakınlığı ve Tatar mutfağıyla Türk gezginler için özellikle ilgi çekicidir."
+   },
+   "religion": {
+    "primaryReligions": "Rus Ortodoks çoğunluk (~%70); Müslümanlar ~%10–15 (Tataristan, Başkurdistan, Kuzey Kafkasya); küçük Budist, Yahudi ve Katolik toplulukları.",
+    "respectNorms": "Ortodoks kiliselerinde kadınlar başörtüsü ve etek giyer, erkekler şapka çıkarır; ayin sırasında fotoğraf çekmeyin. Camilerde de muhafazakâr giyinin.",
+    "sacredSites": [
+     "Kurtarıcı İsa Katedrali (Moskova)",
+     "Kutsal Üçlü-Aziz Sergius Lavrası (Sergiyev Posad)",
+     "Kul Şerif Camii (Kazan)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Rusça; cumhuriyetlerde Tatarca, Başkurtça, Çeçence gibi bölgesel resmî diller",
+    "englishProficiency": "Sınırlı; Moskova ve St. Petersburg’daki genç kesimde daha iyi. Kiril alfabesini tanımak ve çeviri uygulaması kullanmak çok faydalıdır.",
+    "phrases": [
+     {
+      "phrase": "Здравствуйте (Zdravstvuyte)",
+      "meaning": "Merhaba (resmî)",
+      "translation": "Merhaba",
+      "pronunciation": "ZDRAST-vuy-tye"
+     },
+     {
+      "phrase": "Спасибо (Spasibo)",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkürler",
+      "pronunciation": "spa-SEE-ba"
+     },
+     {
+      "phrase": "Пожалуйста (Pozhaluysta)",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen",
+      "pronunciation": "pa-ZHAL-sta"
+     },
+     {
+      "phrase": "Сколько стоит? (Skolko stoit?)",
+      "meaning": "Bu ne kadar?",
+      "translation": "Kaç para?",
+      "pronunciation": "SKOL-ka STO-it"
+     },
+     {
+      "phrase": "Счёт, пожалуйста (Schyot, pozhaluysta)",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "SHCHYOT pa-ZHAL-sta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Doğu Slav devletlerinin mirasçısı olan Moskova Knezliği, 16. yüzyılda IV. İvan ile Çarlığa dönüştü; I. Petro 1703’te St. Petersburg’u kurarak ülkeyi Avrupa’ya açtı. 1917 devriminin ardından Sovyetler Birliği kuruldu, 1991’de dağılmasıyla Rusya Federasyonu ortaya çıktı. Dünyanın yüzölçümü en büyük ülkesidir.",
+    "milestones": [
+     "1547: IV. İvan’ın ilk Çar olarak taç giymesi",
+     "1703: St. Petersburg’un kuruluşu",
+     "1917: Ekim Devrimi; 1922: SSCB’nin kuruluşu",
+     "1961: Yuri Gagarin ilk insanlı uzay uçuşu; 1991: SSCB’nin dağılması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelmeni (etli hamur mantısı, ekşi krema ile)",
+     "Beef Stroganoff (kremalı dana eti sote)",
+     "Şçi ve borş (lahana ve pancar çorbaları)"
+    ],
+    "traditionalDrinks": [
+     "Kvas (fermente ekmek içeceği)",
+     "Mors (yaban mersini/kızılcık şerbeti)",
+     "Semaverde çay"
+    ],
+    "streetFoodAndDesserts": [
+     "Blini (ince krep; ekşi krema, bal veya havyarla)",
+     "Pirojki (iç dolgulu fırın/kızarmış börek)",
+     "Medovik (ballı katlı pasta)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Lev Tolstoy (yazar, ‘Savaş ve Barış’)",
+     "Pyotr İlyiç Çaykovski (besteci)",
+     "Yuri Gagarin (uzaya çıkan ilk insan)"
+    ],
+    "strongSectors": [
+     "Petrol ve doğalgaz",
+     "Madencilik ve metaller",
+     "Tarım (dünyanın en büyük buğday ihracatçılarından)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Yerel halk Mir kartı, QR (SBP) ve temassız ödeme kullanır; yabancı Visa/Mastercard kartları çalışmaz. Turistlerin nakit getirip bankada rubleye çevirmesi gerekir.",
+    "tippingCulture": "Restoranlarda %10 bahşiş yaygındır; nakit bırakmak en kolayıdır.",
+    "economicPillars": "Enerji (petrol, doğalgaz), madencilik ve metaller, tarım ve savunma sanayii."
+   }
+  },
+  "itin": {
+   "routeName": "İki Başkent ve Tatar Kültürü: St. Petersburg, Moskova ve Kazan",
+   "routeSummary": "Çarların başkenti St. Petersburg’un saray ve kanallarından Moskova’nın Kremlin’ine ve Türk dünyasıyla akraba Tatar kültürünün merkezi Kazan’a uzanan 8 günlük rota. Seyahat öncesi resmî uyarıları kontrol edin.",
+   "totalDays": 8,
+   "idealDurationText": "8 Gün",
+   "bestSeason": "Haziran – Ağustos",
+   "transportMode": "Sapsan hızlı treni (St. Petersburg – Moskova), Moskova – Kazan tren veya uçak; şehir içinde metro ve Yandex Go",
+   "paceLevel": "Dengeli (Müzeler + Şehir)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: St. Petersburg (Saraylar ve Kanallar)",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Ermitaj Müzesi ve Saray Meydanı",
+      "Kanlı Kilise (Spas na Krovi) ve Nevski Caddesi",
+      "Peterhof Sarayı ve çeşmeleri",
+      "Petro ve Pavel Kalesi"
+     ],
+     "activities": [
+      "Kanallarda tekne turu yapın; Beyaz Geceler’de köprülerin açılışını izleyin.",
+      "Mariinski Tiyatrosu’nda bale izleyin.",
+      "Yazın Neva üzerinden ‘Meteor’ hidrofoille Peterhof’a gidin."
+     ],
+     "foodAndDrinks": [
+      "Pirojki (iç dolgulu fırın/kızarmış börek)",
+      "Blini (ince krep; ekşi krema, bal veya havyarla)",
+      "Mors (yaban mersini/kızılcık şerbeti)"
+     ],
+     "criticalTips": [
+      "Ermitaj’ın büyük kuyruklarından kaçınmak için bileti resmî siteden önceden alın; pazartesi kapalıdır.",
+      "Köprüler gece açıldığında adalar arası geçiş kesilir; otelinize dönüş saatini buna göre planlayın."
+     ],
+     "mapsQuery": "Saint Petersburg, Russia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Moskova (Kremlin ve Kızıl Meydan)",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Kızıl Meydan ve Aziz Vasil Katedrali",
+      "Kremlin ve Silah Müzesi (Oruzheynaya Palata)",
+      "Tretyakov Galerisi",
+      "Saray gibi metro istasyonları (Komsomolskaya, Mayakovskaya)"
+     ],
+     "activities": [
+      "Zaryadye Parkı’ndaki ‘süzülen köprü’den Kremlin manzarasını izleyin.",
+      "Metro istasyonlarını gezen bir tur yapın.",
+      "Arbat Caddesi ve Gorki Parkı’nda yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Pelmeni (etli hamur mantısı, ekşi krema ile)",
+      "Beef Stroganoff (kremalı dana eti sote)",
+      "Kvas (fermente ekmek içeceği)"
+     ],
+     "criticalTips": [
+      "Kremlin perşembe günleri kapalıdır; Kızıl Meydan zaman zaman etkinlikler nedeniyle kapatılabilir.",
+      "Metroda Troika kartı kullanın; yabancı kartlarla temassız ödeme çalışmaz, nakitle yükleyin."
+     ],
+     "mapsQuery": "Moscow, Russia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Kazan (Tataristan’ın Başkenti)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kazan Kremlini (UNESCO) ve Kul Şerif Camii",
+      "Söyembike Kulesi ve Müjde Katedrali",
+      "Bauman Caddesi ve Eski Tatar Mahallesi (Staro-Tatarskaya Sloboda)",
+      "Tüm Dinler Tapınağı (Temple of All Religions)"
+     ],
+     "activities": [
+      "Kremlin surlarında gün batımında Kazanka Nehri manzarasını izleyin.",
+      "Eski Tatar Mahallesi’ndeki tarihi camileri ve ahşap evleri gezin.",
+      "Tatarca tabelaları okuyun; Türkçe bilenler birçok kelimeyi tanıyacaktır."
+     ],
+     "foodAndDrinks": [
+      "Eçpoçmak (üçgen etli-patatesli börek)",
+      "Çak-çak (ballı hamur tatlısı)",
+      "Gubadiya (pirinç, kuru üzüm ve kurutulmuş lor ‘kort’ ile katmanlı tatlı börek)"
+     ],
+     "criticalTips": [
+      "Kul Şerif Camii’ne girerken kadınlar başörtüsü takmalıdır; girişte örtü verilebilir.",
+      "Moskova – Kazan arası tren yaklaşık 12 saat (gece treni) veya hızlı trenle daha kısadır; uçuş da seçenektir."
+     ],
+     "mapsQuery": "Kazan, Russia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pelmeni (etli hamur mantısı, ekşi krema ile)",
+     "Beef Stroganoff (kremalı dana eti sote)",
+     "Şçi ve borş (lahana ve pancar çorbaları)"
+    ],
+    "drinks": [
+     "Kvas (fermente ekmek içeceği)",
+     "Mors (yaban mersini/kızılcık şerbeti)",
+     "Semaverde çay"
+    ],
+    "streetFoods": [
+     "Blini (ince krep; ekşi krema, bal veya havyarla)",
+     "Pirojki (iç dolgulu fırın/kızarmış börek)",
+     "Medovik (ballı katlı pasta)"
+    ],
+    "diningAdvice": "Öğle saatlerinde ‘biznes-lanç’ menüleri uygun fiyatlıdır. Kazan ve Müslüman nüfusun yoğun olduğu bölgelerde helal restoran bulmak kolaydır; Rus mutfağında domuz eti yaygındır, sormaktan çekinmeyin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tüm seyahat için yeterli nakit (USD/EUR) – yabancı kartlar çalışmaz",
+     "Pasaport ve belgelerin kopyaları",
+     "Kış için çok sıcak mont, bere, eldiven ve kaymaz bot",
+     "Çevrimdışı harita ve çeviri uygulaması (mobil internet kesilebilir)"
+    ],
+    "safetyAndEtiquette": [
+     "Siyasi tartışmalardan ve gösterilerden uzak durun; resmî binaları fotoğraflamayın.",
+     "Ukrayna sınırına yakın bölgelere gitmeyin."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Russian Ruble (RUB)",
+   "plugType": "Type C, F (220V, 50Hz)",
+   "bestMonths": "Late May – August (White Nights in St. Petersburg, mild weather); December – February for snowy winter scenery (very cold)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Street crime in big cities is moderate, but due to the ongoing war with Ukraine border regions are very dangerous and drone attacks frequently close airports, including in Moscow. Several governments (US, UK) advise against travel to Russia, and a risk of arbitrary detention of foreigners is reported.",
+    "commonScams": [
+     "Unregistered taxi drivers posing as official at airports and stations",
+     "Inflated fees for photos with costumed characters around Red Square",
+     "Offers to exchange money on the street or at unlicensed points"
+    ],
+    "safeTravelTips": [
+     "Foreign Visa/Mastercard cards don’t work in Russia; bring enough cash (USD/EUR) and exchange it only at banks.",
+     "Always carry your passport; don’t photograph military or government buildings and stay away from political gatherings.",
+     "Flights may be suddenly cancelled or delayed due to drone threats; buy flexible tickets and follow your airline."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G/LTE in cities; mobile internet is periodically shut down or restricted in many regions for security reasons.",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Limited (local SIMs require a passport and registration; few international eSIM options)",
+    "bestCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Excellent (Moscow and St. Petersburg metros, Sapsan high-speed train)",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.70 - 1.20 $",
+    "dailyPassUsd": "3.00 - 4.50 $ (Moskva, 24h)",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Metro",
+     "Yandex Maps",
+     "2GIS",
+     "RZD"
+    ],
+    "taxiAdvice": "Use Yandex Go for taxis and choose cash payment, as foreign cards don’t work. Moscow – St. Petersburg takes about 4 hours on the Sapsan; buy tickets from RZD."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Moderate (Istanbul – Moscow direct ~3.5 hrs)",
+    "flightTip": "There are direct flights from Istanbul to Moscow, St. Petersburg, Kazan and Sochi. Temporary airport closures due to drones are frequent, so leave generous connection times."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Bring an odd number of flowers when visiting (even numbers are for funerals); shoes come off at home.",
+     "In formal settings, address people by first name and patronymic (e.g. Ivan Petrovich).",
+     "Don’t shake hands across a threshold; it is considered bad luck.",
+     "In churches, women cover their heads and men remove hats."
+    ],
+    "festivals": [
+     "Maslenitsa (pre-Lent pancake festival, February – March)",
+     "St. Petersburg White Nights and the ‘Scarlet Sails’ celebration (June)",
+     "New Year and Orthodox Christmas (31 December – 7 January)"
+    ],
+    "lifestyle": "Deep attachment to literature, ballet and classical music, weekend dacha (country house) culture, the banya (bathhouse) tradition and long table conversations."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Moscow: Red Square, the Kremlin & St. Basil’s Cathedral",
+     "St. Petersburg: Hermitage Museum (Winter Palace)",
+     "Peterhof Palace & fountains",
+     "Kazan Kremlin & Kul Sharif Mosque",
+     "Golden Ring towns (Sergiev Posad, Suzdal)",
+     "Lake Baikal"
+    ],
+    "bestSeasons": "Summer (June – August) is the most comfortable; winter is very cold but the snowy scenery is striking",
+    "travelStyleTip": "Check official advisories before travelling and stay away from regions near the Ukrainian border. Kazan, with the Tatar language and cuisine, is especially interesting for Turkic-speaking travellers."
+   },
+   "religion": {
+    "primaryReligions": "Russian Orthodox majority (~70%); Muslims ~10–15% (Tatarstan, Bashkortostan, North Caucasus); small Buddhist, Jewish and Catholic communities.",
+    "respectNorms": "In Orthodox churches women wear a headscarf and skirt and men remove hats; don’t take photos during services. Dress modestly in mosques as well.",
+    "sacredSites": [
+     "Cathedral of Christ the Saviour (Moscow)",
+     "Trinity Lavra of St. Sergius (Sergiev Posad)",
+     "Kul Sharif Mosque (Kazan)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Russian; regional official languages in the republics, such as Tatar, Bashkir and Chechen",
+    "englishProficiency": "Limited; better among young people in Moscow and St. Petersburg. Learning the Cyrillic alphabet and using a translation app helps a lot.",
+    "phrases": [
+     {
+      "phrase": "Здравствуйте (Zdravstvuyte)",
+      "meaning": "Hello (formal)",
+      "translation": "Hello",
+      "pronunciation": "ZDRAST-vuy-tye"
+     },
+     {
+      "phrase": "Спасибо (Spasibo)",
+      "meaning": "Thank you",
+      "translation": "Thanks",
+      "pronunciation": "spa-SEE-ba"
+     },
+     {
+      "phrase": "Пожалуйста (Pozhaluysta)",
+      "meaning": "Please / You’re welcome",
+      "translation": "Please",
+      "pronunciation": "pa-ZHAL-sta"
+     },
+     {
+      "phrase": "Сколько стоит? (Skolko stoit?)",
+      "meaning": "How much is it?",
+      "translation": "How much?",
+      "pronunciation": "SKOL-ka STO-it"
+     },
+     {
+      "phrase": "Счёт, пожалуйста (Schyot, pozhaluysta)",
+      "meaning": "The bill, please",
+      "translation": "Bill, please",
+      "pronunciation": "SHCHYOT pa-ZHAL-sta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Grand Duchy of Moscow, heir to the East Slavic states, became the Tsardom under Ivan IV in the 16th century; Peter the Great founded St. Petersburg in 1703 and opened the country to Europe. The Soviet Union was established after the 1917 revolution, and its dissolution in 1991 gave rise to the Russian Federation, the world’s largest country by area.",
+    "milestones": [
+     "1547: Ivan IV crowned the first Tsar",
+     "1703: Founding of St. Petersburg",
+     "1917: October Revolution; 1922: USSR founded",
+     "1961: Yuri Gagarin’s first human spaceflight; 1991: dissolution of the USSR"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelmeni (meat dumplings with sour cream)",
+     "Beef Stroganoff (beef in sour-cream sauce)",
+     "Shchi and borscht (cabbage and beetroot soups)"
+    ],
+    "traditionalDrinks": [
+     "Kvas (fermented bread drink)",
+     "Mors (cranberry or lingonberry drink)",
+     "Tea from the samovar"
+    ],
+    "streetFoodAndDesserts": [
+     "Blini (thin pancakes with sour cream, honey or caviar)",
+     "Pirozhki (stuffed baked or fried buns)",
+     "Medovik (layered honey cake)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Leo Tolstoy (writer, ‘War and Peace’)",
+     "Pyotr Ilyich Tchaikovsky (composer)",
+     "Yuri Gagarin (first human in space)"
+    ],
+    "strongSectors": [
+     "Oil and gas",
+     "Mining and metals",
+     "Agriculture (one of the world’s largest wheat exporters)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Locals pay with Mir cards, QR (SBP) and contactless; foreign Visa/Mastercard cards don’t work. Tourists need to bring cash and change it into roubles at banks.",
+    "tippingCulture": "Tipping 10% in restaurants is common; leaving cash is easiest.",
+    "economicPillars": "Energy (oil, gas), mining and metals, agriculture and the defence industry."
+   }
+  },
+  "itin": {
+   "routeName": "Two Capitals & Tatar Culture: St. Petersburg, Moscow & Kazan",
+   "routeSummary": "An 8-day route from the palaces and canals of imperial St. Petersburg to Moscow’s Kremlin and Kazan, centre of Tatar culture. Check official advisories before travelling.",
+   "totalDays": 8,
+   "idealDurationText": "8 Days",
+   "bestSeason": "June – August",
+   "transportMode": "Sapsan high-speed train (St. Petersburg – Moscow), train or flight Moscow – Kazan; metro and Yandex Go in cities",
+   "paceLevel": "Balanced (Museums + City)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: St. Petersburg (Palaces & Canals)",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Hermitage Museum & Palace Square",
+      "Church of the Savior on Spilled Blood & Nevsky Prospekt",
+      "Peterhof Palace & fountains",
+      "Peter and Paul Fortress"
+     ],
+     "activities": [
+      "Take a canal boat tour and watch the bridges open during the White Nights.",
+      "See a ballet at the Mariinsky Theatre.",
+      "In summer, take the ‘Meteor’ hydrofoil across the Neva to Peterhof."
+     ],
+     "foodAndDrinks": [
+      "Pirozhki (stuffed baked or fried buns)",
+      "Blini (thin pancakes with sour cream, honey or caviar)",
+      "Mors (cranberry or lingonberry drink)"
+     ],
+     "criticalTips": [
+      "Buy Hermitage tickets in advance on the official website to skip queues; it is closed on Mondays.",
+      "When the bridges open at night, crossings between islands stop; plan your return to the hotel accordingly."
+     ],
+     "mapsQuery": "Saint Petersburg, Russia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Moscow (Kremlin & Red Square)",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Red Square & St. Basil’s Cathedral",
+      "Kremlin & Armoury Chamber",
+      "Tretyakov Gallery",
+      "Palatial metro stations (Komsomolskaya, Mayakovskaya)"
+     ],
+     "activities": [
+      "Enjoy Kremlin views from the ‘floating bridge’ in Zaryadye Park.",
+      "Take a tour of the metro stations.",
+      "Stroll along the Arbat and in Gorky Park."
+     ],
+     "foodAndDrinks": [
+      "Pelmeni (meat dumplings with sour cream)",
+      "Beef Stroganoff (beef in sour-cream sauce)",
+      "Kvas (fermented bread drink)"
+     ],
+     "criticalTips": [
+      "The Kremlin is closed on Thursdays; Red Square is sometimes closed for events.",
+      "Use a Troika card on the metro; contactless foreign cards don’t work, so top up with cash."
+     ],
+     "mapsQuery": "Moscow, Russia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Kazan (Capital of Tatarstan)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Kazan Kremlin (UNESCO) & Kul Sharif Mosque",
+      "Söyembikä Tower & Annunciation Cathedral",
+      "Bauman Street & the Old Tatar Quarter",
+      "Temple of All Religions"
+     ],
+     "activities": [
+      "Watch the sunset over the Kazanka River from the Kremlin walls.",
+      "Explore the historic mosques and wooden houses of the Old Tatar Quarter.",
+      "Read the Tatar signs – Turkish speakers will recognise many words."
+     ],
+     "foodAndDrinks": [
+      "Echpochmak (triangular meat-and-potato pastry)",
+      "Chak-chak (honey-coated fried dough)",
+      "Gubadiya (layered sweet pie with rice, raisins and curd)"
+     ],
+     "criticalTips": [
+      "Women must wear a headscarf to enter Kul Sharif Mosque; coverings may be provided at the entrance.",
+      "Moscow – Kazan takes around 12 hours by overnight train, less on faster services; flying is also an option."
+     ],
+     "mapsQuery": "Kazan, Russia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pelmeni (meat dumplings with sour cream)",
+     "Beef Stroganoff (beef in sour-cream sauce)",
+     "Shchi and borscht (cabbage and beetroot soups)"
+    ],
+    "drinks": [
+     "Kvas (fermented bread drink)",
+     "Mors (cranberry or lingonberry drink)",
+     "Tea from the samovar"
+    ],
+    "streetFoods": [
+     "Blini (thin pancakes with sour cream, honey or caviar)",
+     "Pirozhki (stuffed baked or fried buns)",
+     "Medovik (layered honey cake)"
+    ],
+    "diningAdvice": "Lunchtime ‘business lunch’ menus are good value. Halal restaurants are easy to find in Kazan and regions with large Muslim populations; pork is common in Russian cuisine, so ask if unsure."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Enough cash (USD/EUR) for the whole trip – foreign cards don’t work",
+     "Copies of passport and documents",
+     "For winter: very warm coat, hat, gloves and non-slip boots",
+     "Offline maps and a translation app (mobile internet can be cut)"
+    ],
+    "safetyAndEtiquette": [
+     "Avoid political discussions and gatherings; don’t photograph official buildings.",
+     "Do not travel to regions near the Ukrainian border."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Russischer Rubel (RUB)",
+   "plugType": "Typ C, F (220V, 50Hz)",
+   "bestMonths": "Ende Mai – August (Weiße Nächte in St. Petersburg, mildes Wetter); Dezember – Februar für verschneite Winterlandschaften (sehr kalt)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Straßenkriminalität in Großstädten ist mäßig; wegen des anhaltenden Krieges mit der Ukraine sind Grenzregionen aber sehr gefährlich, und Drohnenangriffe führen häufig zu Flughafensperrungen, auch in Moskau. Mehrere Regierungen (USA, Vereinigtes Königreich) raten von Reisen nach Russland ab; zudem wird das Risiko willkürlicher Festnahmen von Ausländern gemeldet.",
+    "commonScams": [
+     "Nicht registrierte Taxifahrer, die sich an Flughäfen und Bahnhöfen als offiziell ausgeben",
+     "Überhöhte Gebühren für Fotos mit Kostümierten rund um den Roten Platz",
+     "Angebote, Geld auf der Straße oder an nicht lizenzierten Stellen zu tauschen"
+    ],
+    "safeTravelTips": [
+     "Ausländische Visa-/Mastercard-Karten funktionieren in Russland nicht; genug Bargeld (USD/EUR) mitnehmen und nur bei Banken tauschen.",
+     "Den Pass immer bei sich tragen; keine Militär- oder Regierungsgebäude fotografieren und politische Versammlungen meiden.",
+     "Flüge können wegen Drohnengefahr plötzlich gestrichen oder verschoben werden; flexible Tickets kaufen und die Airline verfolgen."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G/LTE in Städten; in vielen Regionen wird das mobile Internet aus Sicherheitsgründen zeitweise abgeschaltet oder eingeschränkt.",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Eingeschränkt (lokale SIM nur mit Pass und Registrierung; wenige internationale eSIMs)",
+    "bestCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Hervorragend (Metros in Moskau und St. Petersburg, Schnellzug Sapsan)",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "0.70 - 1.20 $",
+    "dailyPassUsd": "3.00 - 4.50 $ (Moskva, 24h)",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Metro",
+     "Yandex Maps",
+     "2GIS",
+     "RZD"
+    ],
+    "taxiAdvice": "Für Taxis Yandex Go nutzen und Barzahlung wählen, da ausländische Karten nicht funktionieren. Moskau – St. Petersburg dauert mit dem Sapsan etwa 4 Stunden; Tickets bei RZD kaufen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Moderat (Istanbul – Moskau direkt ~3,5 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Moskau, St. Petersburg, Kasan und Sotschi. Wegen häufiger drohnenbedingter Flughafensperrungen großzügige Umsteigezeiten einplanen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Zu Besuch eine ungerade Zahl Blumen mitbringen (gerade Zahlen sind für Beerdigungen); zu Hause Schuhe ausziehen.",
+     "Förmlich spricht man mit Vor- und Vatersnamen an (z. B. Iwan Petrowitsch).",
+     "Nicht über die Türschwelle hinweg die Hand geben – das bringt Unglück.",
+     "In Kirchen bedecken Frauen den Kopf, Männer nehmen die Mütze ab."
+    ],
+    "festivals": [
+     "Masleniza (Butterwoche mit Blini, Februar – März)",
+     "Weiße Nächte und Fest ‘Scharlachrote Segel’ in St. Petersburg (Juni)",
+     "Neujahr und orthodoxe Weihnacht (31. Dezember – 7. Januar)"
+    ],
+    "lifestyle": "Tiefe Liebe zu Literatur, Ballett und klassischer Musik, Datscha-Wochenenden, Banja-Tradition und lange Tischgespräche."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Moskau: Roter Platz, Kreml & Basilius-Kathedrale",
+     "St. Petersburg: Eremitage (Winterpalast)",
+     "Peterhof & Fontänen",
+     "Kasaner Kreml & Kul-Scharif-Moschee",
+     "Städte des Goldenen Rings (Sergijew Possad, Susdal)",
+     "Baikalsee"
+    ],
+    "bestSeasons": "Sommer (Juni – August) ist am angenehmsten; der Winter ist sehr kalt, aber eindrucksvoll verschneit",
+    "travelStyleTip": "Vor der Reise offizielle Hinweise prüfen und Regionen nahe der ukrainischen Grenze meiden. Kasan mit tatarischer Sprache und Küche ist besonders spannend."
+   },
+   "religion": {
+    "primaryReligions": "Russisch-orthodoxe Mehrheit (~70 %); Muslime ~10–15 % (Tatarstan, Baschkortostan, Nordkaukasus); kleine buddhistische, jüdische und katholische Gemeinden.",
+    "respectNorms": "In orthodoxen Kirchen tragen Frauen Kopftuch und Rock, Männer nehmen die Mütze ab; während des Gottesdienstes nicht fotografieren. Auch in Moscheen dezent kleiden.",
+    "sacredSites": [
+     "Christ-Erlöser-Kathedrale (Moskau)",
+     "Dreifaltigkeitskloster (Sergijew Possad)",
+     "Kul-Scharif-Moschee (Kasan)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Russisch; in den Republiken regionale Amtssprachen wie Tatarisch, Baschkirisch und Tschetschenisch",
+    "englishProficiency": "Begrenzt; besser bei Jüngeren in Moskau und St. Petersburg. Kyrillisch lesen zu können und eine Übersetzungs-App helfen sehr.",
+    "phrases": [
+     {
+      "phrase": "Здравствуйте (Zdravstvuyte)",
+      "meaning": "Guten Tag (förmlich)",
+      "translation": "Hallo",
+      "pronunciation": "ZDRAST-vuy-tye"
+     },
+     {
+      "phrase": "Спасибо (Spasibo)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "spa-SEE-ba"
+     },
+     {
+      "phrase": "Пожалуйста (Pozhaluysta)",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "pa-ZHAL-sta"
+     },
+     {
+      "phrase": "Сколько стоит? (Skolko stoit?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel?",
+      "pronunciation": "SKOL-ka STO-it"
+     },
+     {
+      "phrase": "Счёт, пожалуйста (Schyot, pozhaluysta)",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Rechnung, bitte",
+      "pronunciation": "SHCHYOT pa-ZHAL-sta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Das Großfürstentum Moskau, Erbe der ostslawischen Staaten, wurde im 16. Jahrhundert unter Iwan IV. zum Zarentum; Peter der Große gründete 1703 St. Petersburg und öffnete das Land nach Europa. Nach der Revolution 1917 entstand die Sowjetunion, aus deren Auflösung 1991 die Russische Föderation hervorging – das flächenmäßig größte Land der Welt.",
+    "milestones": [
+     "1547: Krönung Iwans IV. zum ersten Zaren",
+     "1703: Gründung St. Petersburgs",
+     "1917: Oktoberrevolution; 1922: Gründung der UdSSR",
+     "1961: Juri Gagarins erster bemannter Raumflug; 1991: Auflösung der UdSSR"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelmeni (Fleischteigtaschen mit Schmand)",
+     "Bœuf Stroganoff (Rindfleisch in Sauerrahmsoße)",
+     "Schtschi und Borschtsch (Kohl- und Rote-Bete-Suppe)"
+    ],
+    "traditionalDrinks": [
+     "Kwas (vergorenes Brotgetränk)",
+     "Mors (Moosbeeren- oder Preiselbeergetränk)",
+     "Tee aus dem Samowar"
+    ],
+    "streetFoodAndDesserts": [
+     "Blini (dünne Pfannkuchen mit Schmand, Honig oder Kaviar)",
+     "Piroschki (gefüllte gebackene oder frittierte Teigtaschen)",
+     "Medowik (Honigschichttorte)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Leo Tolstoi (Schriftsteller, ‘Krieg und Frieden’)",
+     "Pjotr Iljitsch Tschaikowski (Komponist)",
+     "Juri Gagarin (erster Mensch im All)"
+    ],
+    "strongSectors": [
+     "Öl und Gas",
+     "Bergbau und Metalle",
+     "Landwirtschaft (einer der größten Weizenexporteure der Welt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Einheimische zahlen mit Mir-Karte, QR (SBP) und kontaktlos; ausländische Visa-/Mastercard-Karten funktionieren nicht. Touristen müssen Bargeld mitbringen und bei Banken in Rubel tauschen.",
+    "tippingCulture": "Im Restaurant sind 10 % üblich; Bargeld ist am einfachsten.",
+    "economicPillars": "Energie (Öl, Gas), Bergbau und Metalle, Landwirtschaft und Rüstungsindustrie."
+   }
+  },
+  "itin": {
+   "routeName": "Zwei Hauptstädte & tatarische Kultur: St. Petersburg, Moskau & Kasan",
+   "routeSummary": "Eine 8-tägige Route von den Palästen und Kanälen des zaristischen St. Petersburg über den Moskauer Kreml bis nach Kasan, dem Zentrum der tatarischen Kultur. Vor der Reise offizielle Hinweise prüfen.",
+   "totalDays": 8,
+   "idealDurationText": "8 Tage",
+   "bestSeason": "Juni – August",
+   "transportMode": "Schnellzug Sapsan (St. Petersburg – Moskau), Moskau – Kasan per Zug oder Flug; in Städten Metro und Yandex Go",
+   "paceLevel": "Ausgewogen (Museen + Stadt)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: St. Petersburg (Paläste & Kanäle)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Eremitage & Schlossplatz",
+      "Auferstehungskirche (Blutskirche) & Newski-Prospekt",
+      "Peterhof & Fontänen",
+      "Peter-und-Paul-Festung"
+     ],
+     "activities": [
+      "Eine Kanalfahrt machen und in den Weißen Nächten das Öffnen der Brücken sehen.",
+      "Ein Ballett im Mariinski-Theater besuchen.",
+      "Im Sommer mit dem Tragflügelboot ‘Meteor’ nach Peterhof fahren."
+     ],
+     "foodAndDrinks": [
+      "Piroschki (gefüllte gebackene oder frittierte Teigtaschen)",
+      "Blini (dünne Pfannkuchen mit Schmand, Honig oder Kaviar)",
+      "Mors (Moosbeeren- oder Preiselbeergetränk)"
+     ],
+     "criticalTips": [
+      "Eremitage-Tickets vorab auf der offiziellen Website kaufen; montags geschlossen.",
+      "Wenn nachts die Brücken geöffnet sind, ist der Weg zwischen den Inseln unterbrochen; Rückweg einplanen."
+     ],
+     "mapsQuery": "Saint Petersburg, Russia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Moskau (Kreml & Roter Platz)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Roter Platz & Basilius-Kathedrale",
+      "Kreml & Rüstkammer",
+      "Tretjakow-Galerie",
+      "Prunkvolle Metrostationen (Komsomolskaja, Majakowskaja)"
+     ],
+     "activities": [
+      "Vom ‘schwebenden Steg’ im Sarjadje-Park auf den Kreml blicken.",
+      "Eine Tour durch die Metrostationen machen.",
+      "Über den Arbat und durch den Gorki-Park spazieren."
+     ],
+     "foodAndDrinks": [
+      "Pelmeni (Fleischteigtaschen mit Schmand)",
+      "Bœuf Stroganoff (Rindfleisch in Sauerrahmsoße)",
+      "Kwas (vergorenes Brotgetränk)"
+     ],
+     "criticalTips": [
+      "Der Kreml ist donnerstags geschlossen; der Rote Platz wird bei Veranstaltungen teils gesperrt.",
+      "In der Metro die Troika-Karte nutzen; ausländische Karten funktionieren nicht, mit Bargeld aufladen."
+     ],
+     "mapsQuery": "Moscow, Russia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Kasan (Hauptstadt Tatarstans)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kasaner Kreml (UNESCO) & Kul-Scharif-Moschee",
+      "Sujumbike-Turm & Mariä-Verkündigungs-Kathedrale",
+      "Baumanstraße & Altes Tatarenviertel",
+      "Tempel aller Religionen"
+     ],
+     "activities": [
+      "Von der Kremlmauer den Sonnenuntergang über der Kasanka sehen.",
+      "Historische Moscheen und Holzhäuser im Alten Tatarenviertel erkunden.",
+      "Tatarische Schilder lesen – Türkischsprachige erkennen viele Wörter."
+     ],
+     "foodAndDrinks": [
+      "Etschpotschmak (dreieckige Teigtasche mit Fleisch und Kartoffeln)",
+      "Tschak-tschak (Teiggebäck in Honig)",
+      "Gubadija (Schichtkuchen mit Reis, Rosinen und Quark)"
+     ],
+     "criticalTips": [
+      "In der Kul-Scharif-Moschee müssen Frauen ein Kopftuch tragen; am Eingang gibt es Tücher.",
+      "Moskau – Kasan dauert mit dem Nachtzug etwa 12 Stunden, schneller mit Expresszügen; Fliegen ist eine Alternative."
+     ],
+     "mapsQuery": "Kazan, Russia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pelmeni (Fleischteigtaschen mit Schmand)",
+     "Bœuf Stroganoff (Rindfleisch in Sauerrahmsoße)",
+     "Schtschi und Borschtsch (Kohl- und Rote-Bete-Suppe)"
+    ],
+    "drinks": [
+     "Kwas (vergorenes Brotgetränk)",
+     "Mors (Moosbeeren- oder Preiselbeergetränk)",
+     "Tee aus dem Samowar"
+    ],
+    "streetFoods": [
+     "Blini (dünne Pfannkuchen mit Schmand, Honig oder Kaviar)",
+     "Piroschki (gefüllte gebackene oder frittierte Teigtaschen)",
+     "Medowik (Honigschichttorte)"
+    ],
+    "diningAdvice": "Mittags sind ‘Business-Lunch’-Menüs günstig. In Kasan und Regionen mit vielen Muslimen gibt es leicht Halal-Restaurants; in der russischen Küche ist Schweinefleisch verbreitet – im Zweifel nachfragen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Genug Bargeld (USD/EUR) für die ganze Reise – ausländische Karten funktionieren nicht",
+     "Kopien von Pass und Dokumenten",
+     "Für den Winter: sehr warme Jacke, Mütze, Handschuhe und rutschfeste Stiefel",
+     "Offline-Karten und Übersetzungs-App (mobiles Internet kann ausfallen)"
+    ],
+    "safetyAndEtiquette": [
+     "Politische Diskussionen und Versammlungen meiden; keine Behördengebäude fotografieren.",
+     "Nicht in Regionen nahe der ukrainischen Grenze reisen."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Rublo ruso (RUB)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Finales de mayo – agosto (Noches Blancas en San Petersburgo, clima templado); diciembre – febrero para paisajes nevados (mucho frío)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "La delincuencia callejera en las grandes ciudades es moderada, pero por la guerra en curso con Ucrania las regiones fronterizas son muy peligrosas y los ataques con drones cierran con frecuencia aeropuertos, incluso en Moscú. Varios gobiernos (EE. UU., Reino Unido) desaconsejan viajar a Rusia y se informa de riesgo de detenciones arbitrarias de extranjeros.",
+    "commonScams": [
+     "Taxistas no registrados que se hacen pasar por oficiales en aeropuertos y estaciones",
+     "Precios abusivos por fotos con personajes disfrazados junto a la Plaza Roja",
+     "Ofertas de cambio de divisas en la calle o en puntos sin licencia"
+    ],
+    "safeTravelTips": [
+     "Las tarjetas Visa/Mastercard extranjeras no funcionan en Rusia; lleve suficiente efectivo (USD/EUR) y cámbielo solo en bancos.",
+     "Lleve siempre el pasaporte; no fotografíe edificios militares o gubernamentales y evite concentraciones políticas.",
+     "Los vuelos pueden cancelarse o retrasarse de repente por amenazas de drones; compre billetes flexibles y siga a su aerolínea."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G/LTE en ciudades; en muchas regiones el internet móvil se corta o restringe periódicamente por motivos de seguridad.",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Limitada (las SIM locales requieren pasaporte y registro; pocas eSIM internacionales)",
+    "bestCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Excelente (metros de Moscú y San Petersburgo, tren de alta velocidad Sapsán)",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.70 - 1.20 $",
+    "dailyPassUsd": "3.00 - 4.50 $ (Moskva, 24h)",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Metro",
+     "Yandex Maps",
+     "2GIS",
+     "RZD"
+    ],
+    "taxiAdvice": "Use Yandex Go para taxis y elija pago en efectivo, ya que las tarjetas extranjeras no funcionan. Moscú – San Petersburgo son unas 4 horas en el Sapsán; compre billetes en RZD."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Moderado (Estambul – Moscú directo ~3,5 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Moscú, San Petersburgo, Kazán y Sochi. Los cierres temporales de aeropuertos por drones son frecuentes: deje márgenes amplios en las conexiones."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "De visita se lleva un número impar de flores (el par es para funerales); en casa se quitan los zapatos.",
+     "En contextos formales se usa el nombre y el patronímico (p. ej. Iván Petróvich).",
+     "No se da la mano a través del umbral de la puerta; trae mala suerte.",
+     "En las iglesias las mujeres se cubren la cabeza y los hombres se quitan el sombrero."
+    ],
+    "festivals": [
+     "Máslenitsa (fiesta de los blinis antes de Cuaresma, febrero – marzo)",
+     "Noches Blancas y fiesta de las ‘Velas Escarlatas’ en San Petersburgo (junio)",
+     "Año Nuevo y Navidad ortodoxa (31 de diciembre – 7 de enero)"
+    ],
+    "lifestyle": "Gran apego a la literatura, el ballet y la música clásica, fines de semana en la dacha, la tradición de la banya y largas sobremesas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Moscú: Plaza Roja, Kremlin y Catedral de San Basilio",
+     "San Petersburgo: Museo del Hermitage (Palacio de Invierno)",
+     "Palacio y fuentes de Peterhof",
+     "Kremlin de Kazán y mezquita Kul Sharif",
+     "Ciudades del Anillo de Oro (Sérguiev Posad, Súzdal)",
+     "Lago Baikal"
+    ],
+    "bestSeasons": "El verano (junio – agosto) es lo más cómodo; el invierno es muy frío pero los paisajes nevados impresionan",
+    "travelStyleTip": "Consulte las alertas oficiales antes de viajar y evite las regiones cercanas a la frontera ucraniana. Kazán, con su lengua y cocina tártaras, resulta especialmente interesante."
+   },
+   "religion": {
+    "primaryReligions": "Mayoría ortodoxa rusa (~70 %); musulmanes ~10–15 % (Tatarstán, Baskortostán, Cáucaso Norte); pequeñas comunidades budista, judía y católica.",
+    "respectNorms": "En las iglesias ortodoxas las mujeres llevan pañuelo y falda y los hombres se quitan el sombrero; no haga fotos durante el oficio. En las mezquitas vista también con recato.",
+    "sacredSites": [
+     "Catedral de Cristo Salvador (Moscú)",
+     "Lavra de la Trinidad y San Sergio (Sérguiev Posad)",
+     "Mezquita Kul Sharif (Kazán)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Ruso; en las repúblicas, lenguas oficiales regionales como el tártaro, el baskir y el checheno",
+    "englishProficiency": "Limitado; mejor entre jóvenes de Moscú y San Petersburgo. Aprender el alfabeto cirílico y usar una app de traducción ayuda mucho.",
+    "phrases": [
+     {
+      "phrase": "Здравствуйте (Zdravstvuyte)",
+      "meaning": "Hola (formal)",
+      "translation": "Hola",
+      "pronunciation": "ZDRAST-vuy-tye"
+     },
+     {
+      "phrase": "Спасибо (Spasibo)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "spa-SEE-ba"
+     },
+     {
+      "phrase": "Пожалуйста (Pozhaluysta)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "pa-ZHAL-sta"
+     },
+     {
+      "phrase": "Сколько стоит? (Skolko stoit?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "SKOL-ka STO-it"
+     },
+     {
+      "phrase": "Счёт, пожалуйста (Schyot, pozhaluysta)",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta",
+      "pronunciation": "SHCHYOT pa-ZHAL-sta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "El Gran Principado de Moscú, heredero de los Estados eslavos orientales, se convirtió en zarato con Iván IV en el siglo XVI; Pedro el Grande fundó San Petersburgo en 1703 y abrió el país a Europa. Tras la revolución de 1917 nació la Unión Soviética, cuya disolución en 1991 dio lugar a la Federación de Rusia, el país más extenso del mundo.",
+    "milestones": [
+     "1547: Iván IV coronado primer zar",
+     "1703: Fundación de San Petersburgo",
+     "1917: Revolución de Octubre; 1922: fundación de la URSS",
+     "1961: primer vuelo espacial tripulado de Yuri Gagarin; 1991: disolución de la URSS"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelmeni (empanadillas de carne con nata agria)",
+     "Ternera Stroganoff (ternera en salsa de nata agria)",
+     "Shchi y borsch (sopas de col y de remolacha)"
+    ],
+    "traditionalDrinks": [
+     "Kvas (bebida fermentada de pan)",
+     "Mors (bebida de arándanos rojos)",
+     "Té del samovar"
+    ],
+    "streetFoodAndDesserts": [
+     "Blinis (crepes finos con nata agria, miel o caviar)",
+     "Pirozhki (bollos rellenos al horno o fritos)",
+     "Medovik (tarta de miel en capas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "León Tolstói (escritor, ‘Guerra y paz’)",
+     "Piotr Ilich Chaikovski (compositor)",
+     "Yuri Gagarin (primer ser humano en el espacio)"
+    ],
+    "strongSectors": [
+     "Petróleo y gas",
+     "Minería y metales",
+     "Agricultura (uno de los mayores exportadores de trigo del mundo)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Los locales pagan con tarjetas Mir, QR (SBP) y sin contacto; las Visa/Mastercard extranjeras no funcionan. Los turistas deben llevar efectivo y cambiarlo a rublos en bancos.",
+    "tippingCulture": "En restaurantes se suele dejar un 10 %; lo más fácil es en efectivo.",
+    "economicPillars": "Energía (petróleo, gas), minería y metales, agricultura e industria de defensa."
+   }
+  },
+  "itin": {
+   "routeName": "Dos capitales y cultura tártara: San Petersburgo, Moscú y Kazán",
+   "routeSummary": "Ruta de 8 días de los palacios y canales de la San Petersburgo zarista al Kremlin de Moscú y a Kazán, centro de la cultura tártara. Consulte las alertas oficiales antes de viajar.",
+   "totalDays": 8,
+   "idealDurationText": "8 días",
+   "bestSeason": "Junio – agosto",
+   "transportMode": "Tren Sapsán (San Petersburgo – Moscú), tren o avión Moscú – Kazán; metro y Yandex Go en ciudades",
+   "paceLevel": "Equilibrado (museos + ciudad)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: San Petersburgo (palacios y canales)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Museo del Hermitage y Plaza del Palacio",
+      "Iglesia del Salvador sobre la Sangre Derramada y Avenida Nevski",
+      "Palacio y fuentes de Peterhof",
+      "Fortaleza de Pedro y Pablo"
+     ],
+     "activities": [
+      "Haga un paseo en barco por los canales y vea abrirse los puentes en las Noches Blancas.",
+      "Vea un ballet en el Teatro Mariinski.",
+      "En verano vaya a Peterhof en el hidrodeslizador ‘Meteor’."
+     ],
+     "foodAndDrinks": [
+      "Pirozhki (bollos rellenos al horno o fritos)",
+      "Blinis (crepes finos con nata agria, miel o caviar)",
+      "Mors (bebida de arándanos rojos)"
+     ],
+     "criticalTips": [
+      "Compre las entradas del Hermitage por anticipado en la web oficial; cierra los lunes.",
+      "Cuando los puentes se abren de noche no se puede cruzar entre islas; planifique la vuelta al hotel."
+     ],
+     "mapsQuery": "Saint Petersburg, Russia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Moscú (Kremlin y Plaza Roja)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Plaza Roja y Catedral de San Basilio",
+      "Kremlin y Armería",
+      "Galería Tretiakov",
+      "Estaciones de metro palaciegas (Komsomólskaya, Mayakóvskaya)"
+     ],
+     "activities": [
+      "Contemple el Kremlin desde el ‘puente flotante’ del parque Zariadie.",
+      "Haga un recorrido por las estaciones de metro.",
+      "Pasee por el Arbat y el parque Gorki."
+     ],
+     "foodAndDrinks": [
+      "Pelmeni (empanadillas de carne con nata agria)",
+      "Ternera Stroganoff (ternera en salsa de nata agria)",
+      "Kvas (bebida fermentada de pan)"
+     ],
+     "criticalTips": [
+      "El Kremlin cierra los jueves; la Plaza Roja a veces se cierra por eventos.",
+      "Use la tarjeta Troika en el metro; las tarjetas extranjeras no funcionan, recárguela en efectivo."
+     ],
+     "mapsQuery": "Moscow, Russia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kazán (capital de Tatarstán)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Kremlin de Kazán (UNESCO) y mezquita Kul Sharif",
+      "Torre Söyembikä y Catedral de la Anunciación",
+      "Calle Bauman y el antiguo barrio tártaro",
+      "Templo de Todas las Religiones"
+     ],
+     "activities": [
+      "Vea el atardecer sobre el río Kazanka desde las murallas del Kremlin.",
+      "Recorra las mezquitas históricas y casas de madera del barrio tártaro.",
+      "Lea los carteles en tártaro: quienes hablan turco reconocerán muchas palabras."
+     ],
+     "foodAndDrinks": [
+      "Echpochmak (empanada triangular de carne y patata)",
+      "Chak-chak (masa frita con miel)",
+      "Gubadiya (pastel dulce en capas con arroz, pasas y requesón)"
+     ],
+     "criticalTips": [
+      "Las mujeres deben llevar pañuelo para entrar en la mezquita Kul Sharif; a veces se prestan en la entrada.",
+      "Moscú – Kazán son unas 12 horas en tren nocturno, menos en servicios rápidos; también se puede volar."
+     ],
+     "mapsQuery": "Kazan, Russia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pelmeni (empanadillas de carne con nata agria)",
+     "Ternera Stroganoff (ternera en salsa de nata agria)",
+     "Shchi y borsch (sopas de col y de remolacha)"
+    ],
+    "drinks": [
+     "Kvas (bebida fermentada de pan)",
+     "Mors (bebida de arándanos rojos)",
+     "Té del samovar"
+    ],
+    "streetFoods": [
+     "Blinis (crepes finos con nata agria, miel o caviar)",
+     "Pirozhki (bollos rellenos al horno o fritos)",
+     "Medovik (tarta de miel en capas)"
+    ],
+    "diningAdvice": "Los menús de ‘business lunch’ al mediodía son económicos. En Kazán y regiones con mucha población musulmana es fácil encontrar restaurantes halal; el cerdo es común en la cocina rusa, pregunte si tiene dudas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Efectivo suficiente (USD/EUR) para todo el viaje: las tarjetas extranjeras no funcionan",
+     "Copias del pasaporte y documentos",
+     "Para el invierno: abrigo muy cálido, gorro, guantes y botas antideslizantes",
+     "Mapas y traductor sin conexión (el internet móvil puede cortarse)"
+    ],
+    "safetyAndEtiquette": [
+     "Evite debates y concentraciones políticas; no fotografíe edificios oficiales.",
+     "No viaje a regiones cercanas a la frontera con Ucrania."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Российский рубль (RUB)",
+   "plugType": "Тип C, F (220V, 50 Гц)",
+   "bestMonths": "Конец мая – август (белые ночи в Петербурге, тёплая погода); декабрь – февраль — снежная зима (очень холодно)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Уличная преступность в крупных городах умеренная, однако из-за продолжающейся войны с Украиной приграничные регионы очень опасны, а атаки беспилотников часто приводят к закрытию аэропортов, в том числе в Москве. Ряд государств (США, Великобритания) не рекомендуют поездки в Россию; сообщается также о риске произвольного задержания иностранцев.",
+    "commonScams": [
+     "Нелегальные таксисты, выдающие себя за официальных, в аэропортах и на вокзалах",
+     "Завышенная плата за фото с ряжеными у Красной площади",
+     "Предложения обменять валюту на улице или в нелицензированных пунктах"
+    ],
+    "safeTravelTips": [
+     "Иностранные карты Visa/Mastercard в России не работают — везите достаточно наличных (USD/EUR) и меняйте только в банках.",
+     "Всегда имейте при себе паспорт; не фотографируйте военные и государственные объекты, избегайте политических акций.",
+     "Рейсы могут внезапно отменяться или задерживаться из-за угрозы беспилотников — берите гибкие билеты и следите за новостями авиакомпании."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G/LTE в городах; во многих регионах мобильный интернет периодически отключают или ограничивают по соображениям безопасности.",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Ограниченно (местная SIM — по паспорту с регистрацией; международных eSIM мало)",
+    "bestCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Превосходное (метро Москвы и Петербурга, скоростной «Сапсан»)",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "0.70 - 1.20 $",
+    "dailyPassUsd": "3.00 - 4.50 $ (Moskva, 24h)",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Metro",
+     "Yandex Maps",
+     "2GIS",
+     "RZD"
+    ],
+    "taxiAdvice": "Для такси используйте Yandex Go и выбирайте оплату наличными — иностранные карты не работают. Москва – Санкт-Петербург на «Сапсане» около 4 часов; билеты — на сайте РЖД."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Умеренная (Стамбул – Москва прямой рейс ~3,5 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Москву, Санкт-Петербург, Казань и Сочи. Из-за частых временных закрытий аэропортов (угроза беспилотников) закладывайте запас времени на стыковки."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "В гости дарят нечётное число цветов (чётное — для похорон); дома снимают обувь.",
+     "В официальной обстановке обращаются по имени и отчеству (например, Иван Петрович).",
+     "Не здороваются за руку через порог — это плохая примета.",
+     "В храме женщины покрывают голову, мужчины снимают головной убор."
+    ],
+    "festivals": [
+     "Масленица (февраль – март)",
+     "Белые ночи и праздник «Алые паруса» в Петербурге (июнь)",
+     "Новый год и православное Рождество (31 декабря – 7 января)"
+    ],
+    "lifestyle": "Любовь к литературе, балету и классической музыке, дачные выходные, традиция бани и долгие застольные беседы."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Москва: Красная площадь, Кремль и храм Василия Блаженного",
+     "Санкт-Петербург: Эрмитаж (Зимний дворец)",
+     "Петергоф и фонтаны",
+     "Казанский кремль и мечеть Кул-Шариф",
+     "Города Золотого кольца (Сергиев Посад, Суздаль)",
+     "Озеро Байкал"
+    ],
+    "bestSeasons": "Лето (июнь – август) самое комфортное; зима очень холодная, но снежные пейзажи впечатляют",
+    "travelStyleTip": "Перед поездкой проверьте официальные рекомендации и избегайте регионов у границы с Украиной. Казань с её татарским языком и кухней особенно интересна путешественникам из тюркоязычных стран."
+   },
+   "religion": {
+    "primaryReligions": "Православное большинство (~70%); мусульмане ~10–15% (Татарстан, Башкортостан, Северный Кавказ); небольшие буддийская, иудейская и католическая общины.",
+    "respectNorms": "В православных храмах женщины в платке и юбке, мужчины без головного убора; не фотографируйте во время службы. В мечетях также одевайтесь скромно.",
+    "sacredSites": [
+     "Храм Христа Спасителя (Москва)",
+     "Троице-Сергиева лавра (Сергиев Посад)",
+     "Мечеть Кул-Шариф (Казань)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Русский; в республиках — региональные государственные языки (татарский, башкирский, чеченский и др.)",
+    "englishProficiency": "Ограниченный; лучше у молодёжи Москвы и Петербурга.",
+    "phrases": [
+     {
+      "phrase": "Здравствуйте (Zdravstvuyte)",
+      "meaning": "Здравствуйте (вежливое приветствие)",
+      "translation": "Здравствуйте",
+      "pronunciation": "ZDRAST-vuy-tye"
+     },
+     {
+      "phrase": "Спасибо (Spasibo)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "spa-SEE-ba"
+     },
+     {
+      "phrase": "Пожалуйста (Pozhaluysta)",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "pa-ZHAL-sta"
+     },
+     {
+      "phrase": "Сколько стоит? (Skolko stoit?)",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "SKOL-ka STO-it"
+     },
+     {
+      "phrase": "Счёт, пожалуйста (Schyot, pozhaluysta)",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "SHCHYOT pa-ZHAL-sta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Великое княжество Московское, наследник восточнославянских государств, при Иване IV в XVI веке стало царством; Пётр I в 1703 году основал Санкт-Петербург и «прорубил окно в Европу». После революции 1917 года возник Советский Союз, с распадом которого в 1991 году образовалась Российская Федерация — крупнейшая по площади страна мира.",
+    "milestones": [
+     "1547: венчание Ивана IV на царство",
+     "1703: основание Санкт-Петербурга",
+     "1917: Октябрьская революция; 1922: образование СССР",
+     "1961: первый полёт человека в космос (Юрий Гагарин); 1991: распад СССР"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пельмени со сметаной",
+     "Бефстроганов",
+     "Щи и борщ"
+    ],
+    "traditionalDrinks": [
+     "Квас",
+     "Морс (клюквенный или брусничный)",
+     "Чай из самовара"
+    ],
+    "streetFoodAndDesserts": [
+     "Блины (со сметаной, мёдом или икрой)",
+     "Пирожки",
+     "Медовик"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Лев Толстой (писатель, «Война и мир»)",
+     "Пётр Ильич Чайковский (композитор)",
+     "Юрий Гагарин (первый человек в космосе)"
+    ],
+    "strongSectors": [
+     "Нефть и газ",
+     "Горнодобывающая промышленность и металлы",
+     "Сельское хозяйство (один из крупнейших экспортёров пшеницы)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Местные платят картами «Мир», по QR (СБП) и бесконтактно; иностранные Visa/Mastercard не работают. Туристам нужно везти наличные и менять их на рубли в банках.",
+    "tippingCulture": "В ресторанах принято оставлять 10%, проще всего наличными.",
+    "economicPillars": "Энергетика (нефть, газ), добыча и металлургия, сельское хозяйство и оборонная промышленность."
+   }
+  },
+  "itin": {
+   "routeName": "Две столицы и татарская культура: Санкт-Петербург, Москва и Казань",
+   "routeSummary": "8-дневный маршрут: дворцы и каналы имперского Петербурга, Московский Кремль и Казань — центр татарской культуры. Перед поездкой проверьте официальные рекомендации.",
+   "totalDays": 8,
+   "idealDurationText": "8 дней",
+   "bestSeason": "Июнь – август",
+   "transportMode": "«Сапсан» (Санкт-Петербург – Москва), Москва – Казань поездом или самолётом; в городах метро и Yandex Go",
+   "paceLevel": "Сбалансированный (музеи + город)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Санкт-Петербург (дворцы и каналы)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Эрмитаж и Дворцовая площадь",
+      "Спас на Крови и Невский проспект",
+      "Петергоф и фонтаны",
+      "Петропавловская крепость"
+     ],
+     "activities": [
+      "Прокатитесь на теплоходе по каналам и посмотрите развод мостов в белые ночи.",
+      "Сходите на балет в Мариинский театр.",
+      "Летом доберитесь до Петергофа на «Метеоре»."
+     ],
+     "foodAndDrinks": [
+      "Пирожки",
+      "Блины (со сметаной, мёдом или икрой)",
+      "Морс (клюквенный или брусничный)"
+     ],
+     "criticalTips": [
+      "Билеты в Эрмитаж покупайте заранее на официальном сайте; по понедельникам музей закрыт.",
+      "Когда ночью разводят мосты, между островами не проехать — планируйте возвращение в отель."
+     ],
+     "mapsQuery": "Saint Petersburg, Russia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Москва (Кремль и Красная площадь)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Красная площадь и храм Василия Блаженного",
+      "Кремль и Оружейная палата",
+      "Третьяковская галерея",
+      "Станции метро-дворцы («Комсомольская», «Маяковская»)"
+     ],
+     "activities": [
+      "Полюбуйтесь Кремлём с «парящего моста» в парке «Зарядье».",
+      "Совершите экскурсию по станциям метро.",
+      "Прогуляйтесь по Арбату и парку Горького."
+     ],
+     "foodAndDrinks": [
+      "Пельмени со сметаной",
+      "Бефстроганов",
+      "Квас"
+     ],
+     "criticalTips": [
+      "Кремль закрыт по четвергам; Красную площадь иногда закрывают из-за мероприятий.",
+      "В метро пользуйтесь картой «Тройка» и пополняйте её наличными — иностранные карты не работают."
+     ],
+     "mapsQuery": "Moscow, Russia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Казань (столица Татарстана)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Казанский кремль (ЮНЕСКО) и мечеть Кул-Шариф",
+      "Башня Сююмбике и Благовещенский собор",
+      "Улица Баумана и Старо-Татарская слобода",
+      "Храм всех религий"
+     ],
+     "activities": [
+      "Встретьте закат над Казанкой со стен кремля.",
+      "Осмотрите старинные мечети и деревянные дома Старо-Татарской слободы.",
+      "Почитайте вывески на татарском — знающие турецкий узнают многие слова."
+     ],
+     "foodAndDrinks": [
+      "Эчпочмак (треугольный пирожок с мясом и картофелем)",
+      "Чак-чак",
+      "Губадия (слоёный пирог с рисом, изюмом и сушёным творогом — кортом)"
+     ],
+     "criticalTips": [
+      "Женщинам для входа в мечеть Кул-Шариф нужен платок — его могут выдать на входе.",
+      "Москва – Казань: около 12 часов ночным поездом, быстрее — скоростными; можно и самолётом."
+     ],
+     "mapsQuery": "Kazan, Russia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Пельмени со сметаной",
+     "Бефстроганов",
+     "Щи и борщ"
+    ],
+    "drinks": [
+     "Квас",
+     "Морс (клюквенный или брусничный)",
+     "Чай из самовара"
+    ],
+    "streetFoods": [
+     "Блины (со сметаной, мёдом или икрой)",
+     "Пирожки",
+     "Медовик"
+    ],
+    "diningAdvice": "Обеденные бизнес-ланчи выгодны. В Казани и регионах с мусульманским населением легко найти халяльные рестораны; в русской кухне много свинины — уточняйте при сомнениях."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Достаточно наличных (USD/EUR) на всю поездку — иностранные карты не работают",
+     "Копии паспорта и документов",
+     "Зимой — очень тёплая куртка, шапка, перчатки и нескользящая обувь",
+     "Офлайн-карты и переводчик (мобильный интернет могут отключать)"
+    ],
+    "safetyAndEtiquette": [
+     "Избегайте политических дискуссий и акций, не фотографируйте государственные здания.",
+     "Не посещайте регионы у границы с Украиной."
+    ]
+   }
+  }
+ }
+}

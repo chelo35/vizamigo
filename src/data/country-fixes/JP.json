@@ -1,0 +1,312 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "JPY (Japon Yeni)",
+   "bestMonths": "Mart sonu – Mayıs (sakura) ve Ekim – Kasım (sonbahar yaprakları); Haziran–Temmuz başı yağmur mevsimi, Ağustos çok sıcak ve nemli",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Dünyanın en güvenli ülkelerindendir; şiddet suçu ve hırsızlık çok nadirdir, kayıp eşyalar çoğu zaman sahibine döner. Temel riskler deprem, tayfun ve yazın aşırı sıcaktır.",
+    "commonScams": [
+     "Tokyo Kabukicho ve Roppongi’de müşteri çeken çığırtkanların yönlendirdiği barlarda fahiş hesaplar",
+     "Turistik bölgelerde fiyatı yazmayan barlarda “masa ücreti” ve gizli servis bedelleri"
+    ],
+    "safeTravelTips": [
+     "Sokakta yaklaşan çığırtkanların davet ettiği bar ve kulüplere girmeyin.",
+     "Telefonunuza deprem/tsunami uyarıları için “Safety tips” (JNTO) uygulamasını kurun.",
+     "Sokaklarda çöp kutusu azdır; çöpünüzü yanınızda taşıyın."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "110 (polis) / 119 (ambulans-itfaiye)"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 (5G ve 4G neredeyse her yerde, metroda bile)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (metro, JR ve Shinkansen; son derece dakik)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1.20 - 2.20 $ (Tokyo metrosu 180–330 ¥)",
+    "dailyPassUsd": "~5.50 $ (Tokyo Subway 24 saatlik bilet, 800 ¥)",
+    "popularRideApps": [
+     "GO (taksi)",
+     "Uber (taksi çağırma)",
+     "Japan Travel by NAVITIME",
+     "Suica / PASMO (mobil)"
+    ],
+    "taxiAdvice": "Taksiler güvenli ve temizdir, kapılar otomatik açılır ama pahalıdır. Şehir içinde metro ve trenleri, şehirlerarası Shinkansen’i kullanın; telefonunuza mobil Suica/PASMO yükleyin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "6 - 10 $ (ramen, gyudon, konbini bento)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.70 - 1 $ (otomatlar her köşede)",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "80 - 150 $ (Tokyo ve Kyoto’da sezonda daha pahalı)",
+    "flightCostIndex": "Orta-Yüksek (direkt ~11-13 sa)",
+    "flightTip": "İstanbul’dan Tokyo ve Osaka’ya direkt uçuşlar vardır. Körfez veya Çin aktarmalı biletler çoğu zaman daha ucuzdur."
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "JPY (Japanese yen)",
+   "bestMonths": "Late March – May (cherry blossoms) and October – November (autumn leaves); June–early July is the rainy season, August is very hot and humid",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "One of the safest countries in the world; violent crime and theft are very rare and lost items are usually returned. The main risks are earthquakes, typhoons and extreme summer heat.",
+    "commonScams": [
+     "Huge bills at bars that street touts lure you into in Kabukicho and Roppongi (Tokyo)",
+     "“Table charges” and hidden service fees in bars without posted prices in tourist areas"
+    ],
+    "safeTravelTips": [
+     "Never follow street touts into bars or clubs.",
+     "Install the JNTO “Safety tips” app for earthquake and tsunami alerts.",
+     "Public bins are rare; carry your rubbish with you."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "110 (police) / 119 (ambulance & fire)"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (5G and 4G almost everywhere, even in the subway)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent (metro, JR and Shinkansen; extremely punctual)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1.20 - 2.20 $ (Tokyo subway 180–330 ¥)",
+    "dailyPassUsd": "~5.50 $ (Tokyo Subway 24-hour ticket, 800 ¥)",
+    "popularRideApps": [
+     "GO (taxi)",
+     "Uber (taxi hailing)",
+     "Japan Travel by NAVITIME",
+     "Suica / PASMO (mobile)"
+    ],
+    "taxiAdvice": "Taxis are safe and spotless with automatic doors, but expensive. Use the subway and trains in cities and the Shinkansen between them; add a mobile Suica/PASMO card to your phone."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "6 - 10 $ (ramen, gyudon, konbini bento)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.70 - 1 $ (vending machines everywhere)",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "80 - 150 $ (more in Tokyo and Kyoto in peak season)",
+    "flightCostIndex": "Medium-high (direct ~11-13 h)",
+    "flightTip": "There are direct flights from Istanbul to Tokyo and Osaka. Tickets via the Gulf or China are often cheaper."
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "JPY (Japanischer Yen)",
+   "bestMonths": "Ende März – Mai (Kirschblüte) und Oktober – November (Herbstlaub); Juni–Anfang Juli Regenzeit, August sehr heiß und schwül",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Eines der sichersten Länder der Welt; Gewaltverbrechen und Diebstahl sind sehr selten, Fundsachen kommen meist zurück. Hauptrisiken sind Erdbeben, Taifune und große Sommerhitze.",
+    "commonScams": [
+     "Horrende Rechnungen in Bars, in die Straßenschlepper in Kabukicho und Roppongi (Tokio) locken",
+     "„Tischgebühren“ und versteckte Servicezuschläge in Bars ohne ausgeschriebene Preise in Touristengegenden"
+    ],
+    "safeTravelTips": [
+     "Folge niemals Straßenschleppern in Bars oder Clubs.",
+     "Installiere die JNTO-App „Safety tips“ für Erdbeben- und Tsunamiwarnungen.",
+     "Öffentliche Mülleimer sind selten; nimm deinen Müll mit."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "110 (Polizei) / 119 (Rettung & Feuerwehr)"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (5G und 4G fast überall, sogar in der U-Bahn)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet (U-Bahn, JR und Shinkansen; äußerst pünktlich)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1.20 - 2.20 $ (Tokioter U-Bahn 180–330 ¥)",
+    "dailyPassUsd": "~5.50 $ (Tokyo Subway 24-Stunden-Ticket, 800 ¥)",
+    "popularRideApps": [
+     "GO (Taxi)",
+     "Uber (Taxibestellung)",
+     "Japan Travel by NAVITIME",
+     "Suica / PASMO (mobil)"
+    ],
+    "taxiAdvice": "Taxis sind sicher und blitzsauber, die Türen öffnen automatisch, aber sie sind teuer. In Städten U-Bahn und Züge, zwischen Städten den Shinkansen nutzen; eine mobile Suica/PASMO aufs Handy laden."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "6 - 10 $ (Ramen, Gyudon, Konbini-Bento)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.70 - 1 $ (Automaten an jeder Ecke)",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "80 - 150 $ (in Tokio und Kyoto zur Hauptsaison teurer)",
+    "flightCostIndex": "Mittel bis hoch (Direktflug ~11-13 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Tokio und Osaka. Verbindungen über den Golf oder China sind oft günstiger."
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "JPY (yen japonés)",
+   "bestMonths": "Finales de marzo – mayo (cerezos en flor) y octubre – noviembre (hojas de otoño); junio–principios de julio es temporada de lluvias y agosto es muy caluroso y húmedo",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Uno de los países más seguros del mundo; los delitos violentos y los robos son muy raros y los objetos perdidos suelen devolverse. Los riesgos principales son terremotos, tifones y el calor extremo en verano.",
+    "commonScams": [
+     "Cuentas desorbitadas en bares a los que llevan los captadores callejeros en Kabukicho y Roppongi (Tokio)",
+     "“Cargos de mesa” y recargos ocultos en bares sin precios a la vista en zonas turísticas"
+    ],
+    "safeTravelTips": [
+     "No sigas nunca a captadores callejeros a bares o clubes.",
+     "Instala la app “Safety tips” de la JNTO para alertas de terremoto y tsunami.",
+     "Hay pocas papeleras; lleva tu basura contigo."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "110 (policía) / 119 (ambulancia y bomberos)"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (5G y 4G casi en todas partes, incluso en el metro)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metro, JR y Shinkansen; puntualidad extrema)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.20 - 2.20 $ (metro de Tokio 180–330 ¥)",
+    "dailyPassUsd": "~5.50 $ (Tokyo Subway 24 horas, 800 ¥)",
+    "popularRideApps": [
+     "GO (taxi)",
+     "Uber (pedir taxi)",
+     "Japan Travel by NAVITIME",
+     "Suica / PASMO (móvil)"
+    ],
+    "taxiAdvice": "Los taxis son seguros e impecables, con puertas automáticas, pero caros. Usa metro y tren en las ciudades y el Shinkansen entre ellas; añade una Suica/PASMO móvil a tu teléfono."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "6 - 10 $ (ramen, gyudon, bento de konbini)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.70 - 1 $ (máquinas expendedoras en cada esquina)",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "80 - 150 $ (más en Tokio y Kioto en temporada alta)",
+    "flightCostIndex": "Medio-alto (directo ~11-13 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Tokio y Osaka. Las conexiones por el Golfo o China suelen ser más baratas."
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "JPY (японская иена)",
+   "bestMonths": "Конец марта – май (цветение сакуры) и октябрь – ноябрь (осенняя листва); июнь–начало июля — сезон дождей, август очень жаркий и влажный",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Одна из самых безопасных стран мира: насилие и кражи крайне редки, потерянные вещи обычно возвращают. Основные риски — землетрясения, тайфуны и сильная летняя жара.",
+    "commonScams": [
+     "Огромные счета в барах, куда заманивают уличные зазывалы в Кабукитё и Роппонги (Токио)",
+     "«Плата за стол» и скрытые сервисные сборы в барах без указанных цен в туристических районах"
+    ],
+    "safeTravelTips": [
+     "Никогда не идите за уличными зазывалами в бары и клубы.",
+     "Установите приложение JNTO «Safety tips» для оповещений о землетрясениях и цунами.",
+     "Урн на улицах мало; носите мусор с собой."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "110 (полиция) / 119 (скорая и пожарные)"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (5G и 4G почти везде, даже в метро)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отличный (метро, JR и синкансэн; исключительная пунктуальность)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "1.20 - 2.20 $ (метро Токио 180–330 ¥)",
+    "dailyPassUsd": "~5.50 $ (Tokyo Subway на 24 часа, 800 ¥)",
+    "popularRideApps": [
+     "GO (такси)",
+     "Uber (вызов такси)",
+     "Japan Travel by NAVITIME",
+     "Suica / PASMO (мобильные)"
+    ],
+    "taxiAdvice": "Такси безопасные и идеально чистые, двери открываются автоматически, но поездки дорогие. В городах пользуйтесь метро и поездами, между городами — синкансэном; добавьте мобильную Suica/PASMO в телефон."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "6 - 10 $ (рамен, гюдон, бенто из конбини)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.70 - 1 $ (автоматы на каждом углу)",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "80 - 150 $ (дороже в Токио и Киото в сезон)",
+    "flightCostIndex": "Средне-высокий (прямой рейс ~11-13 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Токио и Осаку. Перелёты с пересадкой в странах Залива или в Китае часто дешевле."
+   }
+  }
+ }
+}

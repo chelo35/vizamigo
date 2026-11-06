@@ -22,6 +22,13 @@ const DIST = path.resolve(__dirname, '../dist');
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 async function main() {
+  // Elle doğrulanmış ülke düzeltmeleri: veri üreticileri (getCountryInsights vb.) derleme boyunca bunları uygular
+  {
+    const dir = path.join(process.cwd(), 'src', 'data', 'country-fixes');
+    const all: Record<string, unknown> = {};
+    if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) if (/^[A-Z]{2}\.json$/.test(f)) { try { all[f.slice(0, 2)] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')); } catch { console.warn('[prerender] okunamadı:', f); } }
+    (globalThis as { __vzCountryFixes?: unknown }).__vzCountryFixes = all;
+  }
   const tplPath = path.join(DIST, 'index.html');
   if (!fs.existsSync(tplPath)) {
     console.warn('[prerender] dist/index.html yok, atlandı');
@@ -379,10 +386,21 @@ async function main() {
     const { getVerifiedCountryRecord } = await import('../src/data/verifiedCountryData');
     const { getCountryNomadApps } = await import('../src/data/rideAndDeliveryApps');
     const dicts = DICTS;
+    const FIX_DIR = path.join(process.cwd(), 'src', 'data', 'country-fixes');
+    const COUNTRY_FIXES: Record<string, Record<string, unknown>> = {};
+    Object.assign(COUNTRY_FIXES, (globalThis as { __vzCountryFixes?: Record<string, Record<string, unknown>> }).__vzCountryFixes || {});
+    const deepMerge = <T,>(a: T, b: unknown): T => {
+      if (!b || typeof b !== 'object' || Array.isArray(b) || !a || typeof a !== 'object' || Array.isArray(a)) return (b === undefined ? a : b) as T;
+      const o: Record<string, unknown> = { ...(a as Record<string, unknown>) };
+      for (const [k, v] of Object.entries(b as Record<string, unknown>)) o[k] = deepMerge(o[k], v);
+      return o as T;
+    };
     const plugs: Record<string, string[]> = {};
     let files = 0;
     for (const code of allCodes) {
-      const intel = getCountryTravelIntelligence(code, getCountryName(code, 'en'));
+      const intel0 = getCountryTravelIntelligence(code, getCountryName(code, 'en'));
+      const trIntelFix = (COUNTRY_FIXES[code]?.tr as { intel?: unknown } | undefined)?.intel;
+      const intel = trIntelFix ? deepMerge(intel0, trIntelFix) : intel0;
       plugs[code] = intel.plugs.types;
       const insEn = getCountryInsights(code, 'en');
       write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
@@ -396,6 +414,13 @@ async function main() {
           out = mapStrings(out, SUBST[lang]);
           const geo = (out as { enc?: { geography?: { capital?: string } } }).enc?.geography;
           if (geo && GEO_DATA[code]) geo.capital = capitalName(code, lang, GEO_DATA[code].capital);
+        }
+        // Elle doğrulanmış ülke düzeltmeleri (src/data/country-fixes/<KOD>.json): şablondan gelen alanların yerine geçer
+        const fix = COUNTRY_FIXES[code]?.[lang] as { intel?: unknown } | undefined;
+        if (fix) {
+          // intel düzeltmesi varsa tam intel'in üzerine uygulanır (Türkçe dosyada intel ayrıca x/ dosyasından gelir)
+          if (fix.intel && !(out as { intel?: unknown }).intel) out = { ...out, intel };
+          out = deepMerge(out, fix);
         }
         write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
         files++;

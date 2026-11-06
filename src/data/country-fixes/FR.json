@@ -1,0 +1,502 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim (Paris ve Provence için ideal); Temmuz–Ağustos sıcak ve kalabalık; Alpler’de kayak Aralık – Nisan",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Genel olarak güvenli olsa da Paris’te (metro, Eyfel Kulesi, Montmartre, Gare du Nord) yankesicilik ve telefon kapkaçı çok yaygındır; Marsilya’nın bazı semtleri geceleri risklidir. Terör tehdidi seviyesi yüksek tutulmaktadır.",
+    "commonScams": [
+     "Paris metrosunda ve Châtelet / Gare du Nord istasyonlarında organize yankesicilik",
+     "Sacré-Cœur ve Eyfel çevresinde bileğe zorla ip bağlayıp para isteme (bileklik tuzağı)",
+     "Sahte imza/bağış dilekçesiyle dikkat dağıtıp telefon çalma"
+    ],
+    "safeTravelTips": [
+     "Metroda kapıya yakın dururken telefonunuzu elinizde tutmayın; çantanızı önden taşıyın.",
+     "Havalimanından yalnızca resmî taksi kuyruğunu kullanın; Paris havalimanı taksileri sabit ücretlidir.",
+     "Terk edilmiş çanta gördüğünüzde uzaklaşın ve güvenlik görevlilerine haber verin."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G/5G; kırsal dağlık bölgelerde zayıf)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (Paris metrosu, RER ve TGV hızlı trenleri)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "~2.90 $ (Paris metro/RER tek bileti 2.50 €)",
+    "dailyPassUsd": "~13 - 15 $ (Navigo Jour günlük bilet)",
+    "popularRideApps": [
+     "Bonjour RATP",
+     "SNCF Connect",
+     "Uber",
+     "G7",
+     "Bolt"
+    ],
+    "taxiAdvice": "Paris’te G7 taksileri ve Uber yaygındır; havalimanı–şehir merkezi taksileri sabit ücretlidir. TGV biletlerini önceden almak fiyatı ciddi düşürür; Ouigo düşük maliyetli hızlı tren seçeneğidir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 220 $",
+    "budgetMealUsd": "15 - 25 $ (öğle “formule” menüsü, crêpe, sandviç)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "120 - 200 $ (Paris; diğer şehirlerde daha uygun)",
+    "flightCostIndex": "Düşük (direkt ~3,5 sa)",
+    "flightTip": "İstanbul’dan Paris (CDG ve Orly), Lyon, Nice ve Marsilya’ya direkt uçuşlar vardır."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Merhaba / Günaydın",
+      "translation": "Merhaba / Günaydın",
+      "pronunciation": "Bonjur"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "Mersi boku"
+     },
+     {
+      "phrase": "Excusez-moi",
+      "meaning": "Affedersiniz",
+      "translation": "Affedersiniz",
+      "pronunciation": "Ekskuze mua"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "Se kombiyen?"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "Hesap, lütfen",
+      "translation": "Hesap, lütfen",
+      "pronunciation": "Ladisyon, sil vu ple"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "May – June and September – October (ideal for Paris and Provence); July–August are hot and crowded; skiing in the Alps December – April",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Generally safe, but pickpocketing and phone snatching are very common in Paris (metro, Eiffel Tower, Montmartre, Gare du Nord), and some districts of Marseille are risky at night. The terrorism threat level is kept high.",
+    "commonScams": [
+     "Organised pickpocketing on the Paris metro and at Châtelet / Gare du Nord stations",
+     "The “friendship bracelet” trick around Sacré-Cœur and the Eiffel Tower",
+     "Fake petition or charity clipboards used to distract you and steal phones"
+    ],
+    "safeTravelTips": [
+     "Do not hold your phone near the doors on the metro; carry your bag in front.",
+     "Use only the official taxi rank at airports; Paris airport taxis have flat fares.",
+     "Move away from unattended bags and alert security staff."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; weaker in remote mountain areas)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent (Paris metro, RER and TGV high-speed trains)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "~2.90 $ (Paris metro/RER single 2.50 €)",
+    "dailyPassUsd": "~13 - 15 $ (Navigo Jour day ticket)",
+    "popularRideApps": [
+     "Bonjour RATP",
+     "SNCF Connect",
+     "Uber",
+     "G7",
+     "Bolt"
+    ],
+    "taxiAdvice": "G7 taxis and Uber are common in Paris; airport–city taxis charge flat fares. Booking TGV tickets early cuts prices a lot, and Ouigo is the low-cost high-speed option."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 220 $",
+    "budgetMealUsd": "15 - 25 $ (lunch “formule”, crêpe, sandwich)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "120 - 200 $ (Paris; cheaper elsewhere)",
+    "flightCostIndex": "Low (direct ~3.5 h)",
+    "flightTip": "There are direct flights from Istanbul to Paris (CDG and Orly), Lyon, Nice and Marseille."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hello / Good morning",
+      "translation": "Hello / Good morning",
+      "pronunciation": "bohn-ZHOOR"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "mehr-SEE boh-KOO"
+     },
+     {
+      "phrase": "Excusez-moi",
+      "meaning": "Excuse me",
+      "translation": "Excuse me",
+      "pronunciation": "ex-kew-ZAY mwah"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "say kohm-BYAN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "lah-dee-SYOHN, seel voo PLAY"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mai – Juni und September – Oktober (ideal für Paris und die Provence); Juli–August heiß und voll; Skifahren in den Alpen Dezember – April",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher, doch in Paris (Metro, Eiffelturm, Montmartre, Gare du Nord) sind Taschendiebstahl und Handyraub sehr verbreitet, und einige Viertel von Marseille sind nachts riskant. Die Terrorwarnstufe bleibt hoch.",
+    "commonScams": [
+     "Organisierter Taschendiebstahl in der Pariser Metro und an den Stationen Châtelet / Gare du Nord",
+     "Der „Freundschaftsband“-Trick rund um Sacré-Cœur und den Eiffelturm",
+     "Falsche Unterschriften- oder Spendenlisten, um abzulenken und Handys zu stehlen"
+    ],
+    "safeTravelTips": [
+     "Halte das Handy in der Metro nicht nahe an den Türen; trage die Tasche vorne.",
+     "An Flughäfen nur den offiziellen Taxistand nutzen; Pariser Flughafentaxis haben Festpreise.",
+     "Von herrenlosen Gepäckstücken entfernen und das Sicherheitspersonal informieren."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G/5G; schwächer in abgelegenen Bergregionen)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet (Pariser Metro, RER und TGV-Hochgeschwindigkeitszüge)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "~2.90 $ (Einzelfahrt Metro/RER Paris 2,50 €)",
+    "dailyPassUsd": "~13 - 15 $ (Tageskarte Navigo Jour)",
+    "popularRideApps": [
+     "Bonjour RATP",
+     "SNCF Connect",
+     "Uber",
+     "G7",
+     "Bolt"
+    ],
+    "taxiAdvice": "In Paris sind G7-Taxis und Uber verbreitet; Taxis zwischen Flughafen und Stadt fahren zu Festpreisen. Früh gebuchte TGV-Tickets sind deutlich günstiger, Ouigo ist die Billigvariante."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 220 $",
+    "budgetMealUsd": "15 - 25 $ (Mittags-„Formule“, Crêpe, Sandwich)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "120 - 200 $ (Paris; anderswo günstiger)",
+    "flightCostIndex": "Niedrig (Direktflug ~3,5 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Paris (CDG und Orly), Lyon, Nizza und Marseille."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Guten Tag / Hallo",
+      "translation": "Guten Tag / Hallo",
+      "pronunciation": "bon-SCHUR"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "mer-SI bo-KU"
+     },
+     {
+      "phrase": "Excusez-moi",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "ex-kü-SE mua"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "se kom-BJÄN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "la-di-SJON, sil wu PLÄ"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayo – junio y septiembre – octubre (ideal para París y la Provenza); julio–agosto calurosos y abarrotados; esquí en los Alpes de diciembre a abril",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "En general es seguro, pero en París (metro, Torre Eiffel, Montmartre, Gare du Nord) los carteristas y los robos de móviles son muy frecuentes, y algunos barrios de Marsella son arriesgados de noche. El nivel de amenaza terrorista se mantiene alto.",
+    "commonScams": [
+     "Carteristas organizados en el metro de París y en las estaciones Châtelet / Gare du Nord",
+     "El truco de la “pulsera de la amistad” junto al Sacré-Cœur y la Torre Eiffel",
+     "Falsas recogidas de firmas o donativos para distraerte y robar el móvil"
+    ],
+    "safeTravelTips": [
+     "En el metro no sostengas el móvil junto a las puertas; lleva la mochila delante.",
+     "Usa solo la parada oficial de taxis en los aeropuertos; los taxis de los aeropuertos de París tienen tarifa fija.",
+     "Aléjate de bolsas abandonadas y avisa al personal de seguridad."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; más débil en zonas de montaña aisladas)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metro de París, RER y trenes de alta velocidad TGV)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "~2.90 $ (billete sencillo metro/RER de París 2,50 €)",
+    "dailyPassUsd": "~13 - 15 $ (billete diario Navigo Jour)",
+    "popularRideApps": [
+     "Bonjour RATP",
+     "SNCF Connect",
+     "Uber",
+     "G7",
+     "Bolt"
+    ],
+    "taxiAdvice": "En París son habituales los taxis G7 y Uber; los taxis aeropuerto–ciudad tienen tarifa fija. Reservar el TGV con antelación abarata mucho el billete, y Ouigo es la opción de alta velocidad low cost."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 220 $",
+    "budgetMealUsd": "15 - 25 $ (“formule” de mediodía, crêpe, bocadillo)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "120 - 200 $ (París; más barato en otras ciudades)",
+    "flightCostIndex": "Bajo (directo ~3,5 h)",
+    "flightTip": "Hay vuelos directos de Estambul a París (CDG y Orly), Lyon, Niza y Marsella."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hola / Buenos días",
+      "translation": "Hola / Buenos días",
+      "pronunciation": "bon-YUR"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "mer-SI bo-KU"
+     },
+     {
+      "phrase": "Excusez-moi",
+      "meaning": "Disculpe",
+      "translation": "Disculpe",
+      "pronunciation": "ex-kü-SÉ muá"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "se kom-BIÁN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "la-di-SIÓN, sil vu PLE"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь (идеально для Парижа и Прованса); июль–август жаркие и многолюдные; горные лыжи в Альпах — декабрь – апрель",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "В целом безопасно, но в Париже (метро, Эйфелева башня, Монмартр, Северный вокзал) очень распространены карманные кражи и выхватывание телефонов, а некоторые районы Марселя опасны ночью. Уровень террористической угрозы сохраняется высоким.",
+    "commonScams": [
+     "Организованные карманники в парижском метро и на станциях Шатле / Гар-дю-Нор",
+     "Трюк с «браслетом дружбы» у Сакре-Кёр и Эйфелевой башни",
+     "Фальшивые сборы подписей или пожертвований, чтобы отвлечь и украсть телефон"
+    ],
+    "safeTravelTips": [
+     "В метро не держите телефон у дверей; носите сумку перед собой.",
+     "В аэропортах пользуйтесь только официальной стоянкой такси; такси из аэропортов Парижа работают по фиксированному тарифу.",
+     "Отходите от оставленных без присмотра вещей и сообщайте охране."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; слабее в отдалённых горных районах)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отличный (парижское метро, RER и скоростные поезда TGV)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "~2.90 $ (разовый билет метро/RER Парижа 2,50 €)",
+    "dailyPassUsd": "~13 - 15 $ (дневной билет Navigo Jour)",
+    "popularRideApps": [
+     "Bonjour RATP",
+     "SNCF Connect",
+     "Uber",
+     "G7",
+     "Bolt"
+    ],
+    "taxiAdvice": "В Париже распространены такси G7 и Uber; такси между аэропортом и городом работают по фиксированной цене. Ранняя покупка билетов на TGV заметно экономит, а Ouigo — бюджетный скоростной вариант."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 220 $",
+    "budgetMealUsd": "15 - 25 $ (обеденное «formule», крепы, сэндвич)",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "120 - 200 $ (Париж; в других городах дешевле)",
+    "flightCostIndex": "Низкий (прямой рейс ~3,5 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Париж (CDG и Орли), Лион, Ниццу и Марсель."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Здравствуйте / Добрый день",
+      "translation": "Здравствуйте / Добрый день",
+      "pronunciation": "Бонжур"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "Мерси боку"
+     },
+     {
+      "phrase": "Excusez-moi",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "Экскюзе-муа"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "Сэ комбьен?"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "Ладисьон, силь ву пле"
+     }
+    ]
+   }
+  }
+ }
+}

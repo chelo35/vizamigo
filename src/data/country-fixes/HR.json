@@ -1,0 +1,1647 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tip C, F (230V, 50Hz)",
+   "bestMonths": "Mayıs – Haziran ve Eylül (deniz ılık, kalabalık daha az); Temmuz – Ağustos en yoğun ve pahalı dönem",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Güvenli bir ülkedir ve şiddet suçu düşüktür. Yaz aylarında Dubrovnik, Split ve Hvar’daki kalabalıklarda yankesicilik ile turistik restoranlarda fahiş hesaplar başlıca sorunlardır.",
+    "commonScams": [
+     "Taze balığın kilo fiyatıyla satılıp tartının şişirilmesi",
+     "Liman ve otogarlarda lisanssız taksiler ve sabit fiyat oyunları",
+     "Gece kulüplerinde ve striptiz barlarında fahiş içki hesapları"
+    ],
+    "safeTravelTips": [
+     "Balık siparişinde tartımı ve kilo fiyatını önceden teyit edin.",
+     "Taksi için Uber, Bolt veya Cammeo uygulamasını kullanın.",
+     "Lika ve Slavonya’nın ücra bölgelerinde işaretli patikalardan ayrılmayın; savaştan kalma mayın uyarı levhalarına uyun."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus kapsaması (4G yaygın, şehirlerde ve kıyıda 5G; bazı adalarda zayıflayabilir)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi (yaygın otobüs ağı, feribot ve katamaranlar; demiryolu sınırlı)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "0.60 - 2.80 $",
+    "dailyPassUsd": "4.50 - 6.00 $ (Zagreb, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Cammeo",
+     "Jadrolinija",
+     "FlixBus",
+     "Arriva"
+    ],
+    "taxiAdvice": "Şehirlerde Uber, Bolt ve Cammeo yaygındır. Şehirlerarası ana ulaşım otobüstür (Arriva, FlixBus); adalara Jadrolinija ve Krilo feribot/katamaranları gider, yazın biletleri önceden alın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 190 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.00 - 3.50 $",
+    "waterBottleUsd": "0.80 - 1.80 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Düşük (İstanbul – Zagreb/Dubrovnik direkt ~2 sa)",
+    "flightTip": "Zagreb’e yıl boyu, Dubrovnik ve Split’e genelde sezonluk direkt uçuşlar vardır. Zagreb’e varıp Dubrovnik’ten dönen açık uçlu bilet rotayı kolaylaştırır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kahve içmek (ići na kavu) uzun bir sosyal ritüeldir; kafede saatlerce oturmak normaldir.",
+     "Kadeh kaldırırken ‘Živjeli!’ denir ve göz teması kurulur.",
+     "Split ve Hvar gibi şehirlerde tarihi merkezde mayoyla veya üstsüz dolaşmak para cezası gerektirebilir.",
+     "Savaş dönemi (1991–1995) ve bölge siyaseti hassas konulardır; konuşmayı karşı tarafın başlatmasına izin verin."
+    ],
+    "festivals": [
+     "Dubrovnik Yaz Festivali (Temmuz – Ağustos)",
+     "Zagreb’de Advent (Aralık, Avrupa’nın en ünlü Noel pazarlarından)",
+     "Sinjska Alka şövalye turnuvası (Ağustos, Sinj – UNESCO)"
+    ],
+    "lifestyle": "Akdeniz’e özgü rahat tempo (‘fjaka’), kahve ve deniz kültürü, aile odaklı yaşam ve futbol tutkusu."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Dubrovnik surları ve eski şehri (UNESCO)",
+     "Plitvice Gölleri Ulusal Parkı (UNESCO)",
+     "Split: Diocletianus Sarayı",
+     "Hvar adası ve Pakleni adacıkları",
+     "Krka Ulusal Parkı şelaleleri",
+     "Rovinj ve İstra yarımadası"
+    ],
+    "bestSeasons": "Geç ilkbahar ve erken sonbahar; Aralık Zagreb Advent’i için",
+    "travelStyleTip": "Zagreb’den güneye otobüs veya kiralık araçla inin, Plitvice’de mola verin ve kıyıda adalar arası feribotlarla dolaşın. Dubrovnik’i kruvaziyer gemilerinin az olduğu günlerde gezin."
+   },
+   "religion": {
+    "primaryReligions": "Roma Katolik ~%79, Ortodoks ~%3, Müslüman ~%1,3, dinsiz ~%5.",
+    "respectNorms": "Kiliselere mayo veya plaj kıyafetiyle girilmez; omuz ve dizler kapalı olmalıdır. Zagreb’de büyük bir cami ve İslam merkezi bulunur.",
+    "sacredSites": [
+     "Zagreb Katedrali",
+     "Aziz Domnius Katedrali (Diocletianus’un mozolesi, Split)",
+     "Euphrasius Bazilikası (Poreč, UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Hırvatça",
+    "englishProficiency": "Çok iyi, özellikle kıyıda ve gençler arasında; turizm bölgelerinde Almanca ve İtalyanca da yaygındır.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "DO-bar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "HVA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen",
+      "pronunciation": "MO-leem"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Kaç para?",
+      "pronunciation": "KO-lee-ko KOSH-ta"
+     },
+     {
+      "phrase": "Živjeli!",
+      "meaning": "Şerefe! (Yaşayalım!)",
+      "translation": "Şerefe!",
+      "pronunciation": "ZHEE-vye-lee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "925’te Kral Tomislav ile krallık olan Hırvatistan, 1102’den itibaren Macar tacı ve sonra Habsburglar altında yaşadı; Dubrovnik (Ragusa) ise yüzyıllar boyunca bağımsız bir deniz cumhuriyeti olarak ticaretle zenginleşti. 1918’de Yugoslav devletine katılan ülke 1991’de bağımsızlığını ilan etti, 2013’te AB’ye katıldı ve 2023’te euroya ve Schengen’e geçti.",
+    "milestones": [
+     "925: Kral Tomislav’ın taç giymesi",
+     "1358–1808: Bağımsız Dubrovnik (Ragusa) Cumhuriyeti",
+     "1991: Bağımsızlık ilanı",
+     "2013: AB üyeliği; 2023: Euro ve Schengen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peka (demir kapak altında közde pişen kuzu, dana veya ahtapot)",
+     "Crni rižot (mürekkep balıklı siyah risotto)",
+     "Pašticada (Dalmaçya usulü şarapta dana yahnisi, njoki ile)"
+    ],
+    "traditionalDrinks": [
+     "Rakija (travarica bitkili veya šljivovica erik rakısı)",
+     "Plavac Mali ve Malvazija şarapları",
+     "Pelinkovac (pelin otlu likör)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (peynirli veya kıymalı)",
+     "Fritule (Dalmaçya lokması)",
+     "Rožata (Dubrovnik usulü karamelli muhallebi)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nikola Tesla (mucit; Hırvatistan’ın Smiljan köyünde doğdu)",
+     "Ivan Meštrović (heykeltıraş)",
+     "Luka Modrić (Ballon d’Or sahibi futbolcu)"
+    ],
+    "strongSectors": [
+     "Turizm (ekonominin en büyük kalemlerinden)",
+     "Gemi inşası ve denizcilik",
+     "Gıda ve ilaç (Podravka – Vegeta, Kraš, Pliva)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "2023’ten beri para birimi eurodur. Kart yaygındır; ancak ada tavernaları, plaj büfeleri ve pazarlarda nakit gerekebilir.",
+    "tippingCulture": "Restoranlarda %10 civarı bahşiş yaygındır; kafelerde hesabı yuvarlamak yeterlidir.",
+    "economicPillars": "Turizm, hizmetler, gemi inşası, gıda sanayii ve enerji (Adriyatik doğalgaz ve LNG terminali)."
+   }
+  },
+  "itin": {
+   "routeName": "Zagreb’den Adriyatik’e: Plitvice, Split ve Dubrovnik",
+   "routeSummary": "Başkent Zagreb’in kafeleriyle başlayıp Plitvice’nin turkuaz göllerinden geçen, Split’teki Roma sarayına ve surlarla çevrili Dubrovnik’e uzanan, kuzeyden güneye 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Gün",
+   "bestSeason": "Mayıs – Haziran, Eylül",
+   "transportMode": "Şehirlerarası otobüs (Arriva, FlixBus) veya kiralık araç; adalara Jadrolinija/Krilo feribot ve katamaranları",
+   "paceLevel": "Dengeli (Şehir + Doğa + Deniz)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Zagreb (Yukarı Şehir ve Kafe Kültürü)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Gornji Grad ve renkli çatılı Aziz Marko Kilisesi",
+      "Zagreb Katedrali ve Dolac Pazarı",
+      "Kırık İlişkiler Müzesi",
+      "Ban Jelačić Meydanı ve Tkalčićeva Caddesi"
+     ],
+     "activities": [
+      "Dünyanın en kısa fünikülerlerinden biriyle Yukarı Şehir’e çıkın.",
+      "Lotrščak Kulesi’nde öğlen topu atışını izleyin.",
+      "Tkalčićeva’da yerliler gibi uzun bir kahve molası verin."
+     ],
+     "foodAndDrinks": [
+      "Zagorski štrukli (peynirli fırın hamur işi)",
+      "Samoborska kremšnita (kremalı milföy)",
+      "Pelinkovac (pelin otlu likör)"
+     ],
+     "criticalTips": [
+      "Tramvay biletini kiosk veya ZET uygulamasından alın ve araçta doğrulayın.",
+      "Aralık’taki Advent döneminde otelleri erken ayırtın."
+     ],
+     "mapsQuery": "Zagreb, Croatia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Plitvice Gölleri Ulusal Parkı",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "16 basamaklı turkuaz göller",
+      "Veliki Slap (78 m’lik büyük şelale)",
+      "Ahşap yürüyüş yolları ve Kozjak Gölü"
+     ],
+     "activities": [
+      "Aşağı göllerden yukarı göllere işaretli rotalardan birini (ör. C veya H) yürüyün.",
+      "Kozjak Gölü’nü elektrikli tekneyle geçin.",
+      "Sabah erken saatte kalabalıktan önce Veliki Slap’ı fotoğraflayın."
+     ],
+     "foodAndDrinks": [
+      "Şişte kuzu çevirme (janjetina na ražnju)",
+      "Izgara alabalık"
+     ],
+     "criticalTips": [
+      "Yüksek sezonda saatli bileti np-plitvicka-jezera.hr’den önceden almak gerekir; göllerde yüzmek yasaktır.",
+      "Zagreb – Split otobüsleri parkın girişinde durur; bagajınızı giriş emanetine bırakabilirsiniz."
+     ],
+     "mapsQuery": "Plitvice Lakes National Park, Croatia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Split (Diocletianus Sarayı ve Dalmaçya Adaları)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Diocletianus Sarayı ve Peristil",
+      "Aziz Domnius Katedrali ve çan kulesi",
+      "Riva sahil yolu ve Marjan Tepesi",
+      "Trogir (UNESCO) veya Hvar günübirlik"
+     ],
+     "activities": [
+      "Sarayın bodrum katlarını (podrumi) gezin.",
+      "Katamaranla Hvar’a geçip Pakleni adacıklarında yüzün.",
+      "Marjan Tepesi’ne yürüyüp gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Pašticada (Dalmaçya usulü şarapta dana yahnisi, njoki ile)",
+      "Izgara taze balık ve blitva (pazılı patates)",
+      "Fritule (Dalmaçya lokması)"
+     ],
+     "criticalTips": [
+      "Tarihi merkezde mayo veya üstsüz dolaşmak cezalıdır.",
+      "Ada feribot ve katamaran biletlerini yazın Jadrolinija veya Krilo sitelerinden önceden alın."
+     ],
+     "mapsQuery": "Split, Croatia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Dubrovnik (Adriyatik’in İncisi)",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Şehir surları",
+      "Stradun ve Rektörlük Sarayı",
+      "Lovrijenac Kalesi",
+      "Srđ teleferiği ve Lokrum adası"
+     ],
+     "activities": [
+      "Surları sabah açılışta veya akşamüstü, en sıcak saatlerden kaçınarak yürüyün.",
+      "Teleferikle Srđ Tepesi’ne çıkıp gün batımında şehri izleyin.",
+      "Teknelerle Lokrum adasına veya Ston’a (istiridye ve surlar) gidin."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (mürekkep balıklı siyah risotto)",
+      "Rožata (Dubrovnik usulü karamelli muhallebi)",
+      "Ston istiridyesi"
+     ],
+     "criticalTips": [
+      "Sur giriş bileti pahalıdır (yetişkin yaklaşık 35–40 €); Dubrovnik Pass birkaç müzeyi de kapsar.",
+      "Kruvaziyer takvimini kontrol edin; gemi yoğunluğu olan günlerde eski şehir çok kalabalıktır."
+     ],
+     "mapsQuery": "Dubrovnik, Croatia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peka (demir kapak altında közde pişen kuzu, dana veya ahtapot)",
+     "Crni rižot (mürekkep balıklı siyah risotto)",
+     "Pašticada (Dalmaçya usulü şarapta dana yahnisi, njoki ile)"
+    ],
+    "drinks": [
+     "Rakija (travarica bitkili veya šljivovica erik rakısı)",
+     "Plavac Mali ve Malvazija şarapları",
+     "Pelinkovac (pelin otlu likör)"
+    ],
+    "streetFoods": [
+     "Burek (peynirli veya kıymalı)",
+     "Fritule (Dalmaçya lokması)",
+     "Rožata (Dubrovnik usulü karamelli muhallebi)"
+    ],
+    "diningAdvice": "Peka’yı genelde birkaç saat önceden sipariş etmek gerekir. Turistik eski şehirlerin bir iki sokak dışındaki ‘konoba’lar daha uygun ve otantiktir; balığın kilo fiyatını sorun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Deniz ayakkabısı (kayalık ve çakıllı plajlar, deniz kestaneleri)",
+     "Yüksek faktörlü güneş kremi, şapka ve güneş gözlüğü",
+     "Priz adaptörü gerekmez (Tip C/F, Türkiye ile aynı)",
+     "Plitvice için rahat yürüyüş ayakkabısı"
+    ],
+    "safetyAndEtiquette": [
+     "Kiliselere ve tarihi merkezlere plaj kıyafetiyle girmeyin.",
+     "Kayalık plajlarda ve açık denizde yüzerken tekne trafiğine dikkat edin."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Type C, F (230V, 50Hz)",
+   "bestMonths": "May – June and September (warm sea, fewer crowds); July – August is the busiest and most expensive period",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "A safe country with low violent crime. In summer, pickpocketing in crowded Dubrovnik, Split and Hvar and inflated bills at tourist restaurants are the main issues.",
+    "commonScams": [
+     "Fresh fish sold by the kilo with an inflated weight on the bill",
+     "Unlicensed taxis and ‘fixed price’ tricks at ports and bus stations",
+     "Exorbitant drink bills in nightclubs and strip bars"
+    ],
+    "safeTravelTips": [
+     "When ordering fish, confirm the weight and price per kilo beforehand.",
+     "Use Uber, Bolt or Cammeo for taxis.",
+     "In remote parts of Lika and Slavonia stay on marked paths and heed war-era landmine warning signs."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% population coverage (4G nationwide, 5G in cities and on the coast; weaker on some islands)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good (extensive bus network, ferries and catamarans; limited rail)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.60 - 2.80 $",
+    "dailyPassUsd": "4.50 - 6.00 $ (Zagreb, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Cammeo",
+     "Jadrolinija",
+     "FlixBus",
+     "Arriva"
+    ],
+    "taxiAdvice": "Uber, Bolt and Cammeo are common in cities. Buses (Arriva, FlixBus) are the main intercity transport; Jadrolinija and Krilo ferries/catamarans serve the islands — book ahead in summer."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 190 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.00 - 3.50 $",
+    "waterBottleUsd": "0.80 - 1.80 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Low (Istanbul – Zagreb/Dubrovnik direct ~2 hrs)",
+    "flightTip": "Zagreb has year-round direct flights, while Dubrovnik and Split are mostly seasonal. An open-jaw ticket (into Zagreb, out of Dubrovnik) simplifies the route."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Going for coffee (ići na kavu) is a long social ritual; sitting in a café for hours is normal.",
+     "Say ‘Živjeli!’ and keep eye contact when toasting.",
+     "In towns such as Split and Hvar, walking around the historic centre in swimwear or shirtless can be fined.",
+     "The 1991–1995 war and regional politics are sensitive topics; let locals bring them up."
+    ],
+    "festivals": [
+     "Dubrovnik Summer Festival (July – August)",
+     "Advent in Zagreb (December, one of Europe’s best-known Christmas markets)",
+     "Sinjska Alka knights’ tournament (August, Sinj – UNESCO)"
+    ],
+    "lifestyle": "A relaxed Mediterranean pace (‘fjaka’), coffee and seaside culture, family-centred life and a passion for football."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Dubrovnik city walls & old town (UNESCO)",
+     "Plitvice Lakes National Park (UNESCO)",
+     "Split: Diocletian’s Palace",
+     "Hvar island & the Pakleni islets",
+     "Krka National Park waterfalls",
+     "Rovinj & the Istrian peninsula"
+    ],
+    "bestSeasons": "Late spring and early autumn; December for Advent in Zagreb",
+    "travelStyleTip": "Head south from Zagreb by bus or rental car, stop at Plitvice and hop between islands by ferry along the coast. Visit Dubrovnik on days with fewer cruise ships."
+   },
+   "religion": {
+    "primaryReligions": "Roman Catholic ~79%, Orthodox ~3%, Muslim ~1.3%, no religion ~5%.",
+    "respectNorms": "Don’t enter churches in swimwear or beachwear; cover shoulders and knees. Zagreb has a large mosque and Islamic centre.",
+    "sacredSites": [
+     "Zagreb Cathedral",
+     "Cathedral of St. Domnius (Diocletian’s mausoleum, Split)",
+     "Euphrasian Basilica (Poreč, UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Croatian",
+    "englishProficiency": "Very good, especially on the coast and among young people; German and Italian are also common in tourist areas.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Good day / Hello",
+      "translation": "Hello",
+      "pronunciation": "DO-bar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Thank you",
+      "translation": "Thanks",
+      "pronunciation": "HVA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Please / You’re welcome",
+      "translation": "Please",
+      "pronunciation": "MO-leem"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "How much is it?",
+      "translation": "How much?",
+      "pronunciation": "KO-lee-ko KOSH-ta"
+     },
+     {
+      "phrase": "Živjeli!",
+      "meaning": "Cheers! (Let’s live!)",
+      "translation": "Cheers!",
+      "pronunciation": "ZHEE-vye-lee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Croatia became a kingdom under King Tomislav in 925 and from 1102 lived under the Hungarian crown and later the Habsburgs, while Dubrovnik (Ragusa) thrived for centuries as an independent maritime republic. Part of the Yugoslav state from 1918, Croatia declared independence in 1991, joined the EU in 2013 and adopted the euro and Schengen in 2023.",
+    "milestones": [
+     "925: Coronation of King Tomislav",
+     "1358–1808: Independent Republic of Dubrovnik (Ragusa)",
+     "1991: Declaration of independence",
+     "2013: EU membership; 2023: euro and Schengen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peka (lamb, veal or octopus slow-cooked under an iron bell)",
+     "Crni rižot (black cuttlefish-ink risotto)",
+     "Pašticada (Dalmatian beef stew in wine with gnocchi)"
+    ],
+    "traditionalDrinks": [
+     "Rakija (herbal travarica or plum šljivovica)",
+     "Plavac Mali and Malvazija wines",
+     "Pelinkovac (wormwood liqueur)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (cheese or minced-meat pastry)",
+     "Fritule (Dalmatian mini doughnuts)",
+     "Rožata (Dubrovnik caramel custard)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nikola Tesla (inventor, born in Smiljan, Croatia)",
+     "Ivan Meštrović (sculptor)",
+     "Luka Modrić (Ballon d’Or-winning footballer)"
+    ],
+    "strongSectors": [
+     "Tourism (one of the largest parts of the economy)",
+     "Shipbuilding and maritime industries",
+     "Food and pharma (Podravka – Vegeta, Kraš, Pliva)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The currency has been the euro since 2023. Cards are widely accepted, but island taverns, beach kiosks and markets may need cash.",
+    "tippingCulture": "Around 10% is customary in restaurants; rounding up is enough in cafés.",
+    "economicPillars": "Tourism, services, shipbuilding, food industry and energy (Adriatic gas and LNG terminal)."
+   }
+  },
+  "itin": {
+   "routeName": "From Zagreb to the Adriatic: Plitvice, Split & Dubrovnik",
+   "routeSummary": "An 8-day north-to-south route from the cafés of Zagreb through the turquoise lakes of Plitvice to the Roman palace of Split and walled Dubrovnik.",
+   "totalDays": 8,
+   "idealDurationText": "8 Days",
+   "bestSeason": "May – June, September",
+   "transportMode": "Intercity buses (Arriva, FlixBus) or rental car; Jadrolinija/Krilo ferries and catamarans to the islands",
+   "paceLevel": "Balanced (City + Nature + Sea)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Zagreb (Upper Town & Café Culture)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Gornji Grad & St. Mark’s Church with its tiled roof",
+      "Zagreb Cathedral & Dolac Market",
+      "Museum of Broken Relationships",
+      "Ban Jelačić Square & Tkalčićeva Street"
+     ],
+     "activities": [
+      "Ride one of the world’s shortest funiculars up to the Upper Town.",
+      "Hear the noon cannon fired from the Lotrščak Tower.",
+      "Take a long coffee break on Tkalčićeva like the locals."
+     ],
+     "foodAndDrinks": [
+      "Zagorski štrukli (baked cheese pastry)",
+      "Samoborska kremšnita (custard slice)",
+      "Pelinkovac (wormwood liqueur)"
+     ],
+     "criticalTips": [
+      "Buy tram tickets at kiosks or in the ZET app and validate them on board.",
+      "Book hotels early for the December Advent season."
+     ],
+     "mapsQuery": "Zagreb, Croatia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Plitvice Lakes National Park",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "16 terraced turquoise lakes",
+      "Veliki Slap (the 78 m Great Waterfall)",
+      "Wooden boardwalks & Lake Kozjak"
+     ],
+     "activities": [
+      "Walk one of the marked routes (e.g. C or H) from the lower to the upper lakes.",
+      "Cross Lake Kozjak by electric boat.",
+      "Photograph Veliki Slap early in the morning before the crowds."
+     ],
+     "foodAndDrinks": [
+      "Spit-roasted lamb (janjetina na ražnju)",
+      "Grilled trout"
+     ],
+     "criticalTips": [
+      "In high season, timed tickets must be bought in advance at np-plitvicka-jezera.hr; swimming in the lakes is forbidden.",
+      "Zagreb – Split buses stop at the park entrance; you can leave luggage at the entrance."
+     ],
+     "mapsQuery": "Plitvice Lakes National Park, Croatia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Split (Diocletian’s Palace & Dalmatian Islands)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Diocletian’s Palace & the Peristyle",
+      "Cathedral of St. Domnius & bell tower",
+      "Riva promenade & Marjan Hill",
+      "Day trip to Trogir (UNESCO) or Hvar"
+     ],
+     "activities": [
+      "Explore the palace’s substructures (podrumi).",
+      "Take a catamaran to Hvar and swim at the Pakleni islets.",
+      "Hike up Marjan Hill for sunset."
+     ],
+     "foodAndDrinks": [
+      "Pašticada (Dalmatian beef stew in wine with gnocchi)",
+      "Grilled fresh fish with blitva (chard and potatoes)",
+      "Fritule (Dalmatian mini doughnuts)"
+     ],
+     "criticalTips": [
+      "Walking in swimwear or shirtless in the historic centre is fined.",
+      "Book island ferry and catamaran tickets in advance on the Jadrolinija or Krilo websites in summer."
+     ],
+     "mapsQuery": "Split, Croatia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Dubrovnik (Pearl of the Adriatic)",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "City walls",
+      "Stradun & Rector’s Palace",
+      "Lovrijenac Fortress",
+      "Srđ cable car & Lokrum island"
+     ],
+     "activities": [
+      "Walk the walls at opening time or late afternoon, avoiding the hottest hours.",
+      "Take the cable car up Srđ to watch the sunset over the city.",
+      "Take a boat to Lokrum island or a trip to Ston (oysters and walls)."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (black cuttlefish-ink risotto)",
+      "Rožata (Dubrovnik caramel custard)",
+      "Ston oysters"
+     ],
+     "criticalTips": [
+      "Wall tickets are expensive (around €35–40 for adults); the Dubrovnik Pass also covers several museums.",
+      "Check the cruise-ship calendar; the old town is packed on busy ship days."
+     ],
+     "mapsQuery": "Dubrovnik, Croatia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peka (lamb, veal or octopus slow-cooked under an iron bell)",
+     "Crni rižot (black cuttlefish-ink risotto)",
+     "Pašticada (Dalmatian beef stew in wine with gnocchi)"
+    ],
+    "drinks": [
+     "Rakija (herbal travarica or plum šljivovica)",
+     "Plavac Mali and Malvazija wines",
+     "Pelinkovac (wormwood liqueur)"
+    ],
+    "streetFoods": [
+     "Burek (cheese or minced-meat pastry)",
+     "Fritule (Dalmatian mini doughnuts)",
+     "Rožata (Dubrovnik caramel custard)"
+    ],
+    "diningAdvice": "Peka usually has to be ordered a few hours in advance. ‘Konobas’ a street or two away from the touristy old towns are cheaper and more authentic; ask the fish price per kilo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Water shoes (rocky and pebble beaches, sea urchins)",
+     "High-SPF sunscreen, hat and sunglasses",
+     "Type C/F sockets (European two-pin plugs)",
+     "Comfortable walking shoes for Plitvice"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t enter churches or historic centres in beachwear.",
+     "Watch out for boat traffic when swimming off rocks or in open water."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Typ C, F (230V, 50Hz)",
+   "bestMonths": "Mai – Juni und September (warmes Meer, weniger Andrang); Juli – August ist Hochsaison und am teuersten",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Ein sicheres Land mit wenig Gewaltkriminalität. Im Sommer sind Taschendiebe im Gedränge von Dubrovnik, Split und Hvar sowie überhöhte Rechnungen in Touristenlokalen die Hauptprobleme.",
+    "commonScams": [
+     "Frischer Fisch nach Kilo mit aufgeblähtem Gewicht auf der Rechnung",
+     "Unlizenzierte Taxis und ‘Festpreis’-Tricks an Häfen und Busbahnhöfen",
+     "Wucherrechnungen für Getränke in Nachtclubs und Stripbars"
+    ],
+    "safeTravelTips": [
+     "Bei Fisch vorher Gewicht und Kilopreis bestätigen lassen.",
+     "Für Taxis Uber, Bolt oder Cammeo nutzen.",
+     "In abgelegenen Teilen von Lika und Slawonien auf markierten Wegen bleiben und Minenwarnschilder beachten."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % Bevölkerungsabdeckung (landesweit 4G, 5G in Städten und an der Küste; auf manchen Inseln schwächer)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut (dichtes Busnetz, Fähren und Katamarane; wenig Bahn)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "0.60 - 2.80 $",
+    "dailyPassUsd": "4.50 - 6.00 $ (Zagreb, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Cammeo",
+     "Jadrolinija",
+     "FlixBus",
+     "Arriva"
+    ],
+    "taxiAdvice": "In Städten sind Uber, Bolt und Cammeo verbreitet. Zwischen Städten fährt man Bus (Arriva, FlixBus); zu den Inseln fahren Jadrolinija- und Krilo-Fähren/Katamarane – im Sommer vorab buchen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 190 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.00 - 3.50 $",
+    "waterBottleUsd": "0.80 - 1.80 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Niedrig (Istanbul – Zagreb/Dubrovnik direkt ~2 Std.)",
+    "flightTip": "Nach Zagreb gibt es ganzjährig Direktflüge, nach Dubrovnik und Split meist saisonal. Ein Gabelflug (hin nach Zagreb, zurück ab Dubrovnik) vereinfacht die Route."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Auf einen Kaffee gehen (ići na kavu) ist ein langes soziales Ritual; stundenlang im Café zu sitzen ist normal.",
+     "Beim Anstoßen ‘Živjeli!’ sagen und Blickkontakt halten.",
+     "In Städten wie Split und Hvar kann man in Badekleidung oder oben ohne in der Altstadt Bußgeld bekommen.",
+     "Der Krieg 1991–1995 und regionale Politik sind heikle Themen; Einheimische ansprechen lassen."
+    ],
+    "festivals": [
+     "Dubrovniker Sommerfestspiele (Juli – August)",
+     "Advent in Zagreb (Dezember, einer der bekanntesten Weihnachtsmärkte Europas)",
+     "Ritterturnier Sinjska Alka (August, Sinj – UNESCO)"
+    ],
+    "lifestyle": "Entspanntes mediterranes Tempo (‘Fjaka’), Kaffee- und Meereskultur, familienzentriertes Leben und Fußballbegeisterung."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Stadtmauer & Altstadt von Dubrovnik (UNESCO)",
+     "Nationalpark Plitvicer Seen (UNESCO)",
+     "Split: Diokletianpalast",
+     "Insel Hvar & Pakleni-Inseln",
+     "Wasserfälle im Nationalpark Krka",
+     "Rovinj & Istrien"
+    ],
+    "bestSeasons": "Spätfrühling und Frühherbst; Dezember für den Advent in Zagreb",
+    "travelStyleTip": "Von Zagreb per Bus oder Mietwagen nach Süden, Stopp in Plitvice und an der Küste mit Fähren zwischen den Inseln. Dubrovnik an Tagen mit wenigen Kreuzfahrtschiffen besuchen."
+   },
+   "religion": {
+    "primaryReligions": "Römisch-katholisch ~79 %, orthodox ~3 %, Muslime ~1,3 %, konfessionslos ~5 %.",
+    "respectNorms": "Kirchen nicht in Badekleidung betreten; Schultern und Knie bedecken. In Zagreb gibt es eine große Moschee mit islamischem Zentrum.",
+    "sacredSites": [
+     "Kathedrale von Zagreb",
+     "Kathedrale St. Domnius (Mausoleum Diokletians, Split)",
+     "Euphrasius-Basilika (Poreč, UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Kroatisch",
+    "englishProficiency": "Sehr gut, besonders an der Küste und bei Jüngeren; in Urlaubsorten auch Deutsch und Italienisch.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Guten Tag / Hallo",
+      "translation": "Hallo",
+      "pronunciation": "DO-bar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "HVA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "MO-leem"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel?",
+      "pronunciation": "KO-lee-ko KOSH-ta"
+     },
+     {
+      "phrase": "Živjeli!",
+      "meaning": "Prost! (Wörtlich: Lasst uns leben!)",
+      "translation": "Prost!",
+      "pronunciation": "ZHEE-vye-lee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Kroatien wurde 925 unter König Tomislav ein Königreich und stand ab 1102 unter der ungarischen Krone, später unter den Habsburgern; Dubrovnik (Ragusa) blühte jahrhundertelang als unabhängige Seerepublik. Ab 1918 Teil des jugoslawischen Staates, erklärte Kroatien 1991 die Unabhängigkeit, trat 2013 der EU bei und führte 2023 Euro und Schengen ein.",
+    "milestones": [
+     "925: Krönung König Tomislavs",
+     "1358–1808: Unabhängige Republik Dubrovnik (Ragusa)",
+     "1991: Unabhängigkeitserklärung",
+     "2013: EU-Beitritt; 2023: Euro und Schengen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peka (Lamm, Kalb oder Oktopus unter der Glocke gegart)",
+     "Crni rižot (schwarzes Sepia-Risotto)",
+     "Pašticada (dalmatinischer Rinderschmorbraten mit Gnocchi)"
+    ],
+    "traditionalDrinks": [
+     "Rakija (Kräuter-Travarica oder Pflaumen-Šljivovica)",
+     "Weine Plavac Mali und Malvazija",
+     "Pelinkovac (Wermutlikör)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (mit Käse oder Hackfleisch)",
+     "Fritule (dalmatinische Mini-Krapfen)",
+     "Rožata (Dubrovniker Karamellcreme)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nikola Tesla (Erfinder, geboren in Smiljan, Kroatien)",
+     "Ivan Meštrović (Bildhauer)",
+     "Luka Modrić (Ballon-d’Or-Gewinner)"
+    ],
+    "strongSectors": [
+     "Tourismus (einer der größten Wirtschaftszweige)",
+     "Schiffbau und maritime Wirtschaft",
+     "Lebensmittel und Pharma (Podravka – Vegeta, Kraš, Pliva)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Seit 2023 ist der Euro die Währung. Karten sind verbreitet, in Inselkonobas, Strandkiosken und auf Märkten braucht man aber teils Bargeld.",
+    "tippingCulture": "Im Restaurant sind etwa 10 % üblich; im Café reicht Aufrunden.",
+    "economicPillars": "Tourismus, Dienstleistungen, Schiffbau, Lebensmittelindustrie und Energie (Adria-Gas, LNG-Terminal)."
+   }
+  },
+  "itin": {
+   "routeName": "Von Zagreb an die Adria: Plitvice, Split & Dubrovnik",
+   "routeSummary": "Eine 8-tägige Route von Nord nach Süd: von den Cafés in Zagreb über die türkisfarbenen Plitvicer Seen zum Römerpalast in Split und ins ummauerte Dubrovnik.",
+   "totalDays": 8,
+   "idealDurationText": "8 Tage",
+   "bestSeason": "Mai – Juni, September",
+   "transportMode": "Fernbusse (Arriva, FlixBus) oder Mietwagen; Fähren und Katamarane von Jadrolinija/Krilo zu den Inseln",
+   "paceLevel": "Ausgewogen (Stadt + Natur + Meer)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Zagreb (Oberstadt & Kaffeekultur)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Gornji Grad & Markuskirche mit buntem Dach",
+      "Kathedrale & Dolac-Markt",
+      "Museum der zerbrochenen Beziehungen",
+      "Ban-Jelačić-Platz & Tkalčićeva-Straße"
+     ],
+     "activities": [
+      "Mit einer der kürzesten Standseilbahnen der Welt in die Oberstadt fahren.",
+      "Den Mittagskanonenschuss vom Lotrščak-Turm erleben.",
+      "In der Tkalčićeva wie die Einheimischen lange Kaffee trinken."
+     ],
+     "foodAndDrinks": [
+      "Zagorski štrukli (überbackene Käsestrudel)",
+      "Samoborska kremšnita (Cremeschnitte)",
+      "Pelinkovac (Wermutlikör)"
+     ],
+     "criticalTips": [
+      "Tramtickets am Kiosk oder in der ZET-App kaufen und im Wagen entwerten.",
+      "Für die Adventszeit im Dezember Hotels früh buchen."
+     ],
+     "mapsQuery": "Zagreb, Croatia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Nationalpark Plitvicer Seen",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "16 terrassenförmige türkisfarbene Seen",
+      "Veliki Slap (78 m hoher Großer Wasserfall)",
+      "Holzstege & Kozjak-See"
+     ],
+     "activities": [
+      "Eine der markierten Routen (z. B. C oder H) von den unteren zu den oberen Seen gehen.",
+      "Den Kozjak-See mit dem Elektroboot überqueren.",
+      "Veliki Slap früh am Morgen vor dem Andrang fotografieren."
+     ],
+     "foodAndDrinks": [
+      "Lamm vom Spieß (janjetina na ražnju)",
+      "Gegrillte Forelle"
+     ],
+     "criticalTips": [
+      "In der Hochsaison müssen Zeitfenster-Tickets vorab auf np-plitvicka-jezera.hr gekauft werden; Baden ist verboten.",
+      "Busse Zagreb – Split halten am Parkeingang; Gepäck kann man dort abgeben."
+     ],
+     "mapsQuery": "Plitvice Lakes National Park, Croatia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Split (Diokletianpalast & Dalmatinische Inseln)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Diokletianpalast & Peristyl",
+      "Kathedrale St. Domnius & Glockenturm",
+      "Riva-Promenade & Marjan",
+      "Tagesausflug nach Trogir (UNESCO) oder Hvar"
+     ],
+     "activities": [
+      "Die Kellergewölbe (podrumi) des Palastes erkunden.",
+      "Mit dem Katamaran nach Hvar und an den Pakleni-Inseln baden.",
+      "Zum Sonnenuntergang auf den Marjan wandern."
+     ],
+     "foodAndDrinks": [
+      "Pašticada (dalmatinischer Rinderschmorbraten mit Gnocchi)",
+      "Gegrillter Fisch mit Blitva (Mangold und Kartoffeln)",
+      "Fritule (dalmatinische Mini-Krapfen)"
+     ],
+     "criticalTips": [
+      "In Badekleidung oder oben ohne in der Altstadt drohen Bußgelder.",
+      "Fähr- und Katamarantickets im Sommer vorab bei Jadrolinija oder Krilo buchen."
+     ],
+     "mapsQuery": "Split, Croatia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Dubrovnik (Perle der Adria)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Stadtmauer",
+      "Stradun & Rektorenpalast",
+      "Festung Lovrijenac",
+      "Seilbahn auf den Srđ & Insel Lokrum"
+     ],
+     "activities": [
+      "Die Stadtmauer zur Öffnung oder am späten Nachmittag gehen und die Mittagshitze meiden.",
+      "Mit der Seilbahn auf den Srđ und den Sonnenuntergang über der Stadt genießen.",
+      "Mit dem Boot nach Lokrum oder einen Ausflug nach Ston (Austern und Mauern)."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (schwarzes Sepia-Risotto)",
+      "Rožata (Dubrovniker Karamellcreme)",
+      "Austern aus Ston"
+     ],
+     "criticalTips": [
+      "Die Stadtmauer ist teuer (Erwachsene ca. 35–40 €); der Dubrovnik Pass deckt auch mehrere Museen ab.",
+      "Den Kreuzfahrtkalender prüfen; an Schiffstagen ist die Altstadt überfüllt."
+     ],
+     "mapsQuery": "Dubrovnik, Croatia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peka (Lamm, Kalb oder Oktopus unter der Glocke gegart)",
+     "Crni rižot (schwarzes Sepia-Risotto)",
+     "Pašticada (dalmatinischer Rinderschmorbraten mit Gnocchi)"
+    ],
+    "drinks": [
+     "Rakija (Kräuter-Travarica oder Pflaumen-Šljivovica)",
+     "Weine Plavac Mali und Malvazija",
+     "Pelinkovac (Wermutlikör)"
+    ],
+    "streetFoods": [
+     "Burek (mit Käse oder Hackfleisch)",
+     "Fritule (dalmatinische Mini-Krapfen)",
+     "Rožata (Dubrovniker Karamellcreme)"
+    ],
+    "diningAdvice": "Peka muss meist einige Stunden vorher bestellt werden. Konobas ein, zwei Gassen abseits der Altstädte sind günstiger und authentischer; nach dem Kilopreis für Fisch fragen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Badeschuhe (Fels- und Kiesstrände, Seeigel)",
+     "Sonnencreme mit hohem LSF, Hut und Sonnenbrille",
+     "Steckdosen Typ C/F (Eurostecker)",
+     "Bequeme Wanderschuhe für Plitvice"
+    ],
+    "safetyAndEtiquette": [
+     "Kirchen und Altstädte nicht in Strandkleidung betreten.",
+     "Beim Schwimmen vor Felsen oder im offenen Meer auf Bootsverkehr achten."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Mayo – junio y septiembre (mar templado, menos gente); julio – agosto es la temporada más concurrida y cara",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "País seguro con poca delincuencia violenta. En verano, los principales problemas son los carteristas entre las multitudes de Dubrovnik, Split y Hvar y las cuentas infladas en restaurantes turísticos.",
+    "commonScams": [
+     "Pescado fresco vendido al kilo con peso inflado en la cuenta",
+     "Taxis sin licencia y trucos de ‘precio fijo’ en puertos y estaciones de autobús",
+     "Cuentas desorbitadas de bebidas en discotecas y clubes de striptease"
+    ],
+    "safeTravelTips": [
+     "Al pedir pescado, confirme antes el peso y el precio por kilo.",
+     "Use Uber, Bolt o Cammeo para el taxi.",
+     "En zonas remotas de Lika y Eslavonia no salga de los caminos señalizados y respete los avisos de minas de la guerra."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura (4G en todo el país, 5G en ciudades y costa; más débil en algunas islas)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno (amplia red de autobuses, ferris y catamaranes; tren limitado)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.60 - 2.80 $",
+    "dailyPassUsd": "4.50 - 6.00 $ (Zagreb, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Cammeo",
+     "Jadrolinija",
+     "FlixBus",
+     "Arriva"
+    ],
+    "taxiAdvice": "En las ciudades se usan Uber, Bolt y Cammeo. Entre ciudades, el autobús (Arriva, FlixBus) es lo principal; a las islas van los ferris y catamaranes de Jadrolinija y Krilo: reserve en verano."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 190 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.00 - 3.50 $",
+    "waterBottleUsd": "0.80 - 1.80 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Bajo (Estambul – Zagreb/Dubrovnik directo ~2 h)",
+    "flightTip": "Zagreb tiene vuelos directos todo el año; Dubrovnik y Split suelen ser de temporada. Un billete multidestino (llegada a Zagreb, salida de Dubrovnik) facilita la ruta."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ir a tomar café (ići na kavu) es un largo ritual social; pasar horas en una cafetería es normal.",
+     "Al brindar se dice ‘Živjeli!’ mirando a los ojos.",
+     "En ciudades como Split y Hvar, pasear por el casco histórico en bañador o sin camiseta puede multarse.",
+     "La guerra de 1991–1995 y la política regional son temas delicados; deje que los locales los saquen."
+    ],
+    "festivals": [
+     "Festival de Verano de Dubrovnik (julio – agosto)",
+     "Adviento en Zagreb (diciembre, uno de los mercados navideños más famosos de Europa)",
+     "Torneo de caballeros Sinjska Alka (agosto, Sinj – UNESCO)"
+    ],
+    "lifestyle": "Ritmo mediterráneo relajado (‘fjaka’), cultura del café y del mar, vida centrada en la familia y pasión por el fútbol."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Murallas y casco antiguo de Dubrovnik (UNESCO)",
+     "Parque Nacional de los Lagos de Plitvice (UNESCO)",
+     "Split: Palacio de Diocleciano",
+     "Isla de Hvar e islotes Pakleni",
+     "Cascadas del Parque Nacional Krka",
+     "Rovinj y la península de Istria"
+    ],
+    "bestSeasons": "Final de primavera e inicio de otoño; diciembre por el Adviento de Zagreb",
+    "travelStyleTip": "Baje desde Zagreb en autobús o coche de alquiler, pare en Plitvice y salte entre islas en ferri. Visite Dubrovnik los días con menos cruceros."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~79 %, ortodoxos ~3 %, musulmanes ~1,3 %, sin religión ~5 %.",
+    "respectNorms": "No entre en iglesias en bañador o ropa de playa; cubra hombros y rodillas. Zagreb tiene una gran mezquita y centro islámico.",
+    "sacredSites": [
+     "Catedral de Zagreb",
+     "Catedral de San Duim (mausoleo de Diocleciano, Split)",
+     "Basílica Eufrasiana (Poreč, UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Croata",
+    "englishProficiency": "Muy bueno, sobre todo en la costa y entre jóvenes; en zonas turísticas también se habla alemán e italiano.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Buenos días / Hola",
+      "translation": "Hola",
+      "pronunciation": "DO-bar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "HVA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "MO-leem"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "KO-lee-ko KOSH-ta"
+     },
+     {
+      "phrase": "Živjeli!",
+      "meaning": "¡Salud! (¡Vivamos!)",
+      "translation": "¡Salud!",
+      "pronunciation": "ZHEE-vye-lee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Croacia fue reino con el rey Tomislav en 925 y desde 1102 vivió bajo la corona húngara y después los Habsburgo, mientras Dubrovnik (Ragusa) prosperaba como república marítima independiente. Parte del Estado yugoslavo desde 1918, declaró la independencia en 1991, entró en la UE en 2013 y adoptó el euro y Schengen en 2023.",
+    "milestones": [
+     "925: Coronación del rey Tomislav",
+     "1358–1808: República independiente de Dubrovnik (Ragusa)",
+     "1991: Declaración de independencia",
+     "2013: ingreso en la UE; 2023: euro y Schengen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peka (cordero, ternera o pulpo asados bajo campana de hierro)",
+     "Crni rižot (risotto negro con tinta de sepia)",
+     "Pašticada (estofado dálmata de ternera al vino con ñoquis)"
+    ],
+    "traditionalDrinks": [
+     "Rakija (travarica de hierbas o šljivovica de ciruela)",
+     "Vinos Plavac Mali y Malvazija",
+     "Pelinkovac (licor de ajenjo)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (hojaldre de queso o carne picada)",
+     "Fritule (buñuelos dálmatas)",
+     "Rožata (flan de caramelo de Dubrovnik)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nikola Tesla (inventor, nacido en Smiljan, Croacia)",
+     "Ivan Meštrović (escultor)",
+     "Luka Modrić (futbolista ganador del Balón de Oro)"
+    ],
+    "strongSectors": [
+     "Turismo (una de las mayores partes de la economía)",
+     "Construcción naval e industria marítima",
+     "Alimentación y farmacia (Podravka – Vegeta, Kraš, Pliva)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Desde 2023 la moneda es el euro. Las tarjetas se aceptan ampliamente, pero en tabernas isleñas, chiringuitos y mercados puede hacer falta efectivo.",
+    "tippingCulture": "En restaurantes se deja alrededor del 10 %; en cafés basta con redondear.",
+    "economicPillars": "Turismo, servicios, construcción naval, industria alimentaria y energía (gas del Adriático y terminal de GNL)."
+   }
+  },
+  "itin": {
+   "routeName": "De Zagreb al Adriático: Plitvice, Split y Dubrovnik",
+   "routeSummary": "Ruta de 8 días de norte a sur: de los cafés de Zagreb a los lagos turquesa de Plitvice, el palacio romano de Split y la amurallada Dubrovnik.",
+   "totalDays": 8,
+   "idealDurationText": "8 días",
+   "bestSeason": "Mayo – junio, septiembre",
+   "transportMode": "Autobuses (Arriva, FlixBus) o coche de alquiler; ferris y catamaranes de Jadrolinija/Krilo a las islas",
+   "paceLevel": "Equilibrado (ciudad + naturaleza + mar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Zagreb (Ciudad Alta y cultura del café)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Gornji Grad e iglesia de San Marcos con su tejado de colores",
+      "Catedral de Zagreb y mercado Dolac",
+      "Museo de las Relaciones Rotas",
+      "Plaza Ban Jelačić y calle Tkalčićeva"
+     ],
+     "activities": [
+      "Suba a la Ciudad Alta en uno de los funiculares más cortos del mundo.",
+      "Escuche el cañonazo del mediodía desde la torre Lotrščak.",
+      "Tómese un largo café en Tkalčićeva como los locales."
+     ],
+     "foodAndDrinks": [
+      "Zagorski štrukli (masa rellena de queso al horno)",
+      "Samoborska kremšnita (milhojas de crema)",
+      "Pelinkovac (licor de ajenjo)"
+     ],
+     "criticalTips": [
+      "Compre billetes de tranvía en quioscos o en la app de ZET y valídelos a bordo.",
+      "Reserve hotel pronto para el Adviento de diciembre."
+     ],
+     "mapsQuery": "Zagreb, Croatia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Parque Nacional de los Lagos de Plitvice",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "16 lagos turquesa escalonados",
+      "Veliki Slap (la Gran Cascada de 78 m)",
+      "Pasarelas de madera y lago Kozjak"
+     ],
+     "activities": [
+      "Recorra una de las rutas marcadas (p. ej. C o H) de los lagos inferiores a los superiores.",
+      "Cruce el lago Kozjak en barco eléctrico.",
+      "Fotografíe Veliki Slap temprano antes de las multitudes."
+     ],
+     "foodAndDrinks": [
+      "Cordero al espetón (janjetina na ražnju)",
+      "Trucha a la parrilla"
+     ],
+     "criticalTips": [
+      "En temporada alta hay que comprar entradas con horario en np-plitvicka-jezera.hr; está prohibido bañarse.",
+      "Los autobuses Zagreb – Split paran en la entrada; puede dejar el equipaje allí."
+     ],
+     "mapsQuery": "Plitvice Lakes National Park, Croatia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Split (Palacio de Diocleciano e islas dálmatas)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Palacio de Diocleciano y Peristilo",
+      "Catedral de San Duim y campanario",
+      "Paseo de la Riva y colina Marjan",
+      "Excursión a Trogir (UNESCO) o Hvar"
+     ],
+     "activities": [
+      "Recorra los sótanos (podrumi) del palacio.",
+      "Vaya en catamarán a Hvar y báñese en los islotes Pakleni.",
+      "Suba a la colina Marjan para ver el atardecer."
+     ],
+     "foodAndDrinks": [
+      "Pašticada (estofado dálmata de ternera al vino con ñoquis)",
+      "Pescado fresco a la parrilla con blitva (acelgas y patata)",
+      "Fritule (buñuelos dálmatas)"
+     ],
+     "criticalTips": [
+      "Pasear en bañador o sin camiseta por el centro histórico se multa.",
+      "En verano reserve los ferris y catamaranes en las webs de Jadrolinija o Krilo."
+     ],
+     "mapsQuery": "Split, Croatia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Dubrovnik (la Perla del Adriático)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Murallas",
+      "Stradun y Palacio del Rector",
+      "Fortaleza de Lovrijenac",
+      "Teleférico del Srđ e isla de Lokrum"
+     ],
+     "activities": [
+      "Recorra las murallas a primera hora o al final de la tarde, evitando las horas de más calor.",
+      "Suba en teleférico al Srđ para ver el atardecer sobre la ciudad.",
+      "Vaya en barco a Lokrum o de excursión a Ston (ostras y murallas)."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (risotto negro con tinta de sepia)",
+      "Rožata (flan de caramelo de Dubrovnik)",
+      "Ostras de Ston"
+     ],
+     "criticalTips": [
+      "La entrada a las murallas es cara (unos 35–40 € adultos); el Dubrovnik Pass incluye también varios museos.",
+      "Consulte el calendario de cruceros; los días con muchos barcos el casco antiguo se llena."
+     ],
+     "mapsQuery": "Dubrovnik, Croatia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peka (cordero, ternera o pulpo asados bajo campana de hierro)",
+     "Crni rižot (risotto negro con tinta de sepia)",
+     "Pašticada (estofado dálmata de ternera al vino con ñoquis)"
+    ],
+    "drinks": [
+     "Rakija (travarica de hierbas o šljivovica de ciruela)",
+     "Vinos Plavac Mali y Malvazija",
+     "Pelinkovac (licor de ajenjo)"
+    ],
+    "streetFoods": [
+     "Burek (hojaldre de queso o carne picada)",
+     "Fritule (buñuelos dálmatas)",
+     "Rožata (flan de caramelo de Dubrovnik)"
+    ],
+    "diningAdvice": "La peka suele encargarse con unas horas de antelación. Las ‘konobas’ a una o dos calles de los cascos antiguos turísticos son más baratas y auténticas; pregunte el precio del pescado por kilo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Escarpines (playas de roca y guijarros, erizos)",
+     "Protector solar alto, sombrero y gafas de sol",
+     "Enchufes tipo C/F (clavija europea)",
+     "Calzado cómodo para Plitvice"
+    ],
+    "safetyAndEtiquette": [
+     "No entre en iglesias ni cascos históricos con ropa de playa.",
+     "Cuidado con el tráfico de barcos al nadar desde rocas o en mar abierto."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "plugType": "Тип C, F (230V, 50 Гц)",
+   "bestMonths": "Май – июнь и сентябрь (тёплое море, меньше людей); июль – август — пик сезона и самые высокие цены",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Безопасная страна с низким уровнем насилия. Летом главные проблемы — карманники в толпах Дубровника, Сплита и Хвара и завышенные счета в туристических ресторанах.",
+    "commonScams": [
+     "Свежая рыба «на вес» с завышенным весом в счёте",
+     "Нелегальные такси и «фиксированные цены» в портах и на автовокзалах",
+     "Огромные счета за напитки в ночных клубах и стрип-барах"
+    ],
+    "safeTravelTips": [
+     "Заказывая рыбу, заранее уточните вес и цену за килограмм.",
+     "Для поездок пользуйтесь Uber, Bolt или Cammeo.",
+     "В глухих районах Лики и Славонии не сходите с маркированных троп и соблюдайте предупреждения о минах со времён войны."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Покрытие 99% (4G по всей стране, 5G в городах и на побережье; на некоторых островах слабее)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошее (разветвлённые автобусы, паромы и катамараны; железные дороги ограничены)",
+    "costLevel": "Средне",
+    "singleTicketUsd": "0.60 - 2.80 $",
+    "dailyPassUsd": "4.50 - 6.00 $ (Zagreb, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Cammeo",
+     "Jadrolinija",
+     "FlixBus",
+     "Arriva"
+    ],
+    "taxiAdvice": "В городах распространены Uber, Bolt и Cammeo. Между городами ездят автобусы (Arriva, FlixBus); на острова — паромы и катамараны Jadrolinija и Krilo, летом билеты лучше брать заранее."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 190 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.00 - 3.50 $",
+    "waterBottleUsd": "0.80 - 1.80 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Низкая (Стамбул – Загреб/Дубровник прямой рейс ~2 ч)",
+    "flightTip": "В Загреб прямые рейсы круглый год, в Дубровник и Сплит — в основном сезонные. Билет «прилёт в Загреб – вылет из Дубровника» упрощает маршрут."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "«Сходить на кофе» (ići na kavu) — долгий социальный ритуал; сидеть в кафе часами нормально.",
+     "Чокаясь, говорят «Živjeli!» и смотрят в глаза.",
+     "В Сплите, Хваре и других городах за прогулки по историческому центру в купальнике или без рубашки штрафуют.",
+     "Война 1991–1995 годов и региональная политика — деликатные темы; пусть их поднимают местные."
+    ],
+    "festivals": [
+     "Летний фестиваль в Дубровнике (июль – август)",
+     "Адвент в Загребе (декабрь, одна из самых известных ярмарок Европы)",
+     "Рыцарский турнир Синьская алка (август, Синь — ЮНЕСКО)"
+    ],
+    "lifestyle": "Расслабленный средиземноморский ритм («фьяка»), культура кофе и моря, семейные ценности и любовь к футболу."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Стены и Старый город Дубровника (ЮНЕСКО)",
+     "Национальный парк Плитвицкие озёра (ЮНЕСКО)",
+     "Сплит: дворец Диоклетиана",
+     "Остров Хвар и острова Паклени",
+     "Водопады национального парка Крка",
+     "Ровинь и полуостров Истрия"
+    ],
+    "bestSeasons": "Поздняя весна и ранняя осень; декабрь — Адвент в Загребе",
+    "travelStyleTip": "Двигайтесь из Загреба на юг автобусом или на арендованной машине, остановитесь в Плитвице, а на побережье перемещайтесь между островами на паромах. Дубровник посещайте в дни, когда мало круизных лайнеров."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~79%, православные ~3%, мусульмане ~1,3%, неверующие ~5%.",
+    "respectNorms": "Не входите в храмы в пляжной одежде, прикрывайте плечи и колени. В Загребе есть большая мечеть и исламский центр.",
+    "sacredSites": [
+     "Загребский собор",
+     "Собор Святого Домния (мавзолей Диоклетиана, Сплит)",
+     "Евфразиева базилика (Пореч, ЮНЕСКО)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Хорватский",
+    "englishProficiency": "Очень хороший, особенно на побережье и у молодёжи; в курортах распространены также немецкий и итальянский.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Добрый день / Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "DO-bar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "HVA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "MO-leem"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KO-lee-ko KOSH-ta"
+     },
+     {
+      "phrase": "Živjeli!",
+      "meaning": "Будем здоровы! (букв. «Будем жить!»)",
+      "translation": "За здоровье!",
+      "pronunciation": "ZHEE-vye-lee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Хорватия стала королевством при Томиславе в 925 году, с 1102 года находилась под венгерской короной, затем под властью Габсбургов, а Дубровник (Рагуза) веками процветал как независимая морская республика. С 1918 года в составе югославского государства, в 1991 году Хорватия провозгласила независимость, в 2013 году вступила в ЕС, а в 2023 году перешла на евро и вошла в Шенген.",
+    "milestones": [
+     "925: коронация короля Томислава",
+     "1358–1808: независимая Дубровницкая (Рагузинская) республика",
+     "1991: провозглашение независимости",
+     "2013: вступление в ЕС; 2023: евро и Шенген"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пека (баранина, телятина или осьминог под железным колпаком)",
+     "Черни ризот (чёрное ризотто с чернилами каракатицы)",
+     "Паштицада (далматинская говядина в вине с ньокками)"
+    ],
+    "traditionalDrinks": [
+     "Ракия (травяная траварица или сливовица)",
+     "Вина плавац мали и мальвазия",
+     "Пелинковац (полынный ликёр)"
+    ],
+    "streetFoodAndDesserts": [
+     "Бурек (с сыром или фаршем)",
+     "Фритуле (далматинские пончики)",
+     "Рожата (дубровницкий карамельный крем)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Никола Тесла (изобретатель, родился в Смиляне, Хорватия)",
+     "Иван Мештрович (скульптор)",
+     "Лука Модрич (футболист, обладатель «Золотого мяча»)"
+    ],
+    "strongSectors": [
+     "Туризм (одна из крупнейших отраслей)",
+     "Судостроение и морская отрасль",
+     "Пищевая промышленность и фармацевтика (Podravka — Vegeta, Kraš, Pliva)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "С 2023 года валюта — евро. Карты принимают широко, но в островных тавернах, пляжных киосках и на рынках могут понадобиться наличные.",
+    "tippingCulture": "В ресторанах принято около 10%, в кафе достаточно округлить.",
+    "economicPillars": "Туризм, услуги, судостроение, пищевая промышленность и энергетика (газ Адриатики и СПГ-терминал)."
+   }
+  },
+  "itin": {
+   "routeName": "Из Загреба к Адриатике: Плитвице, Сплит и Дубровник",
+   "routeSummary": "8-дневный маршрут с севера на юг: от кафе Загреба через бирюзовые Плитвицкие озёра к римскому дворцу Сплита и Дубровнику в кольце стен.",
+   "totalDays": 8,
+   "idealDurationText": "8 дней",
+   "bestSeason": "Май – июнь, сентябрь",
+   "transportMode": "Междугородние автобусы (Arriva, FlixBus) или прокат авто; паромы и катамараны Jadrolinija/Krilo на острова",
+   "paceLevel": "Сбалансированный (город + природа + море)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Загреб (Верхний город и культура кафе)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Верхний город и церковь Святого Марка с черепичной крышей",
+      "Загребский собор и рынок Долац",
+      "Музей разбитых сердец",
+      "Площадь бана Елачича и улица Ткалчичева"
+     ],
+     "activities": [
+      "Поднимитесь в Верхний город на одном из самых коротких фуникулёров мира.",
+      "Услышьте полуденный выстрел пушки с башни Лотршчак.",
+      "Устройте долгую кофейную паузу на Ткалчичевой, как местные."
+     ],
+     "foodAndDrinks": [
+      "Загорские штрукли (запечённое тесто с сыром)",
+      "Самоборская кремшнита (пирожное с кремом)",
+      "Пелинковац (полынный ликёр)"
+     ],
+     "criticalTips": [
+      "Билеты на трамвай покупайте в киоске или приложении ZET и компостируйте в вагоне.",
+      "На декабрьский Адвент бронируйте отели заранее."
+     ],
+     "mapsQuery": "Zagreb, Croatia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Национальный парк Плитвицкие озёра",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "16 бирюзовых озёр-каскадов",
+      "Велики-Слап (Большой водопад высотой 78 м)",
+      "Деревянные настилы и озеро Козяк"
+     ],
+     "activities": [
+      "Пройдите один из маршрутов (например, C или H) от нижних озёр к верхним.",
+      "Пересеките озеро Козяк на электролодке.",
+      "Сфотографируйте Велики-Слап рано утром, до наплыва туристов."
+     ],
+     "foodAndDrinks": [
+      "Ягнёнок на вертеле (janjetina na ražnju)",
+      "Форель на гриле"
+     ],
+     "criticalTips": [
+      "В высокий сезон билеты с указанием времени нужно покупать заранее на np-plitvicka-jezera.hr; купаться в озёрах запрещено.",
+      "Автобусы Загреб – Сплит останавливаются у входа в парк; багаж можно оставить там."
+     ],
+     "mapsQuery": "Plitvice Lakes National Park, Croatia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Сплит (дворец Диоклетиана и далматинские острова)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Дворец Диоклетиана и Перистиль",
+      "Собор Святого Домния и колокольня",
+      "Набережная Рива и холм Марьян",
+      "Поездка на день в Трогир (ЮНЕСКО) или на Хвар"
+     ],
+     "activities": [
+      "Осмотрите подвалы дворца (подруми).",
+      "Сплавайте на катамаране на Хвар и искупайтесь у островов Паклени.",
+      "Поднимитесь на Марьян к закату."
+     ],
+     "foodAndDrinks": [
+      "Паштицада (далматинская говядина в вине с ньокками)",
+      "Свежая рыба на гриле с блитвой (мангольд с картофелем)",
+      "Фритуле (далматинские пончики)"
+     ],
+     "criticalTips": [
+      "За прогулку в купальнике или без рубашки по историческому центру штрафуют.",
+      "Летом бронируйте паромы и катамараны заранее на сайтах Jadrolinija или Krilo."
+     ],
+     "mapsQuery": "Split, Croatia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Дубровник (жемчужина Адриатики)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Городские стены",
+      "Страдун и Княжеский дворец",
+      "Крепость Ловриенац",
+      "Канатная дорога на Срдж и остров Локрум"
+     ],
+     "activities": [
+      "Пройдите по стенам к открытию или ближе к вечеру, избегая жары.",
+      "Поднимитесь на канатке на Срдж и встретьте закат над городом.",
+      "Съездите на лодке на Локрум или в Стон (устрицы и стены)."
+     ],
+     "foodAndDrinks": [
+      "Черни ризот (чёрное ризотто с чернилами каракатицы)",
+      "Рожата (дубровницкий карамельный крем)",
+      "Стонские устрицы"
+     ],
+     "criticalTips": [
+      "Билет на стены дорогой (около 35–40 € для взрослых); Dubrovnik Pass включает и несколько музеев.",
+      "Проверьте расписание круизных лайнеров: в дни их захода Старый город переполнен."
+     ],
+     "mapsQuery": "Dubrovnik, Croatia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Пека (баранина, телятина или осьминог под железным колпаком)",
+     "Черни ризот (чёрное ризотто с чернилами каракатицы)",
+     "Паштицада (далматинская говядина в вине с ньокками)"
+    ],
+    "drinks": [
+     "Ракия (травяная траварица или сливовица)",
+     "Вина плавац мали и мальвазия",
+     "Пелинковац (полынный ликёр)"
+    ],
+    "streetFoods": [
+     "Бурек (с сыром или фаршем)",
+     "Фритуле (далматинские пончики)",
+     "Рожата (дубровницкий карамельный крем)"
+    ],
+    "diningAdvice": "Пеку обычно заказывают за несколько часов. «Конобы» в паре улиц от туристических центров дешевле и аутентичнее; уточняйте цену рыбы за килограмм."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Обувь для моря (скалистые и галечные пляжи, морские ежи)",
+     "Крем с высоким SPF, головной убор и очки",
+     "Розетки типа C/F (европейская вилка)",
+     "Удобная обувь для Плитвице"
+    ],
+    "safetyAndEtiquette": [
+     "Не заходите в храмы и исторические центры в пляжной одежде.",
+     "Купаясь у скал или в открытом море, следите за лодками."
+    ]
+   }
+  }
+ }
+}

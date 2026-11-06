@@ -1,0 +1,1622 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "İsviçre Frangı (CHF)",
+   "plugType": "Tip J, C (230V, 50Hz)",
+   "bestMonths": "Haziran – Eylül (Alp yürüyüşleri ve göller); Aralık – Mart (kayak)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Dünyanın en güvenli ülkelerindendir; şiddet suçu çok düşüktür. Zürih ve Cenevre garlarında ve Cenevre göl kıyısında yankesiciliğe dikkat edin.",
+    "commonScams": [
+     "Cenevre’de sahte imza kampanyası/bağış toplayanların dikkat dağıtarak hırsızlık yapması",
+     "Trenlerde bagaj raflarından çanta hırsızlığı (özellikle havalimanı hatlarında)"
+    ],
+    "safeTravelTips": [
+     "Trenle yolculukta değerli eşyalarınızı yanınızda tutun.",
+     "Dağlarda yürüyüş öncesi MeteoSwiss uygulamasından hava durumunu kontrol edin ve işaretli patikalarda kalın.",
+     "Hız ve trafik cezaları çok yüksektir; kırmızı ışıkta yaya geçidinden geçmeyin."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99+ nüfus kapsaması (yaygın 5G; teleferik ve dağ istasyonlarında bile iyi)",
+    "costPerGbUsd": "~2.00 - 6.00 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Kusursuz (dünyanın en dakik demiryolu ağlarından)",
+    "costLevel": "Çok Pahalı",
+    "singleTicketUsd": "3.50 - 5.50 $",
+    "dailyPassUsd": "10.00 - 15.00 $ (Zürich, 24h)",
+    "popularRideApps": [
+     "SBB Mobile",
+     "FAIRTIQ",
+     "Uber",
+     "Go! Taxi",
+     "MeteoSwiss"
+    ],
+    "taxiAdvice": "Taksiler çok pahalıdır; tren, tramvay ve teknelerle her yere ulaşılır. Birkaç gün yoğun gezecekseniz Swiss Travel Pass veya Half Fare Card, kısa yolculuklar için SBB Mobile’daki ‘Supersaver’ biletleri avantajlıdır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 150 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "1.50 - 3.50 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "180 - 300 $",
+    "flightCostIndex": "Orta Seviye (İstanbul – Zürih/Cenevre direkt ~3 sa)",
+    "flightTip": "Zürih, Cenevre ve Basel’e İstanbul’dan direkt uçuşlar vardır. Basel-Mulhouse havalimanı Fransa sınırındadır; ucuz uçuşlar için iyi bir alternatiftir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Dakiklik kutsaldır; trenler ve randevular dakikası dakikasına işler.",
+     "Pazar günleri ve gece 22:00’den sonra gürültü yapılmaz; geri dönüşüm kurallarına sıkı uyulur.",
+     "Kadeh kaldırırken herkesle tek tek göz teması kurulur (Prost / Santé).",
+     "Fransızca konuşulan bölgelerde tanıdıklar arasında üç kez yanaktan öpüşme yaygındır."
+    ],
+    "festivals": [
+     "Basel Fasnacht (Şubat – Mart)",
+     "Montreux Caz Festivali (Temmuz)",
+     "1 Ağustos Ulusal Gün (şenlik ateşleri ve havai fişek)"
+    ],
+    "lifestyle": "Doğa ve dağ sporlarına tutku, yüksek yaşam kalitesi, doğrudan demokrasi ve dört dilin bir arada yaşadığı çok kültürlü toplum."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Matterhorn ve Zermatt",
+     "Jungfraujoch ve Lauterbrunnen Vadisi",
+     "Lucerne: Kapellbrücke ve Pilatus Dağı",
+     "Zürih eski şehri ve gölü",
+     "Lavaux teras bağları ve Chillon Şatosu (Cenevre Gölü)",
+     "Bern tarihi kenti (UNESCO)"
+    ],
+    "bestSeasons": "Yaz (Haziran – Eylül) dağ ve göller için; kış (Aralık – Mart) kayak için",
+    "travelStyleTip": "Ülkeyi trenle gezin; Glacier Express ve Bernina Express gibi panoramik hatlar başlı başına bir deneyimdir. Bütçeyi korumak için süpermarketlerin (Coop, Migros) hazır yemeklerinden yararlanın."
+   },
+   "religion": {
+    "primaryReligions": "Roma Katolik ~%32, Reform Protestan ~%20, dinsiz ~%34, Müslüman ~%6.",
+    "respectNorms": "Kiliselerde sessiz olun ve ayin sırasında gezinmeyin; dağ şapellerine girerken kıyafetinize özen gösterin.",
+    "sacredSites": [
+     "Einsiedeln Manastırı (Benedikten, hac yeri)",
+     "Grossmünster (Zürih)",
+     "Saint-Pierre Katedrali (Cenevre)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Almanca (~%62), Fransızca (~%23), İtalyanca (~%8) ve Romanşça",
+    "englishProficiency": "Çok iyi; turizm, otel ve ulaşımda İngilizce sorunsuzdur. Almanca bölgede günlük dil İsviçre Almancasıdır.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Merhaba (İsviçre Almancası)",
+      "translation": "Merhaba",
+      "pronunciation": "GRÜ-e-tsi"
+     },
+     {
+      "phrase": "Merci vielmal",
+      "meaning": "Çok teşekkürler (İsviçre Almancası)",
+      "translation": "Teşekkürler",
+      "pronunciation": "MER-si FEEL-mal"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "Bu ne kadar? (İsviçre Almancası)",
+      "translation": "Kaç para?",
+      "pronunciation": "vas HOSH-tet das"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "Hoşça kalın (İsviçre Almancası)",
+      "translation": "Hoşça kalın",
+      "pronunciation": "uf VEE-der-lu-e-ge"
+     },
+     {
+      "phrase": "Bonjour / Merci",
+      "meaning": "Merhaba / Teşekkürler (Fransızca bölgede)",
+      "translation": "Merhaba / Teşekkürler",
+      "pronunciation": "bon-ZHOOR / mer-SEE"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "1291’de Uri, Schwyz ve Unterwalden kantonlarının ittifakıyla doğan İsviçre Konfederasyonu, 1815 Viyana Kongresi’nde tarafsızlığı tanındı ve 1848’de modern federal devlet oldu. Doğrudan demokrasi, kantonal yapı ve uluslararası kuruluşlara (Kızılhaç, BM Cenevre Ofisi) ev sahipliği ile tanınır; AB üyesi değildir.",
+    "milestones": [
+     "1291: Federal Antlaşma (Bundesbrief)",
+     "1815: Tarafsızlığın uluslararası tanınması",
+     "1848: Federal anayasa ve modern devlet",
+     "1863: Cenevre’de Kızılhaç’ın kuruluşu"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peynir fondü (Gruyère ve Vacherin ile)",
+     "Raclette (eritilmiş peynir, haşlanmış patates ve turşuyla)",
+     "Zürcher Geschnetzeltes ve Rösti (kremalı dana eti, patates röstisi)"
+    ],
+    "traditionalDrinks": [
+     "Rivella (süt serumundan gazlı içecek)",
+     "Chasselas beyaz şarabı (Lavaux bağları)",
+     "İsviçre sıcak çikolatası"
+    ],
+    "streetFoodAndDesserts": [
+     "St. Galler Bratwurst (dana ağırlıklı ızgara sosis; çoğu domuz da içerir)",
+     "İsviçre çikolatası (Sprüngli, Läderach, Lindt)",
+     "Gruyère kremasıyla beze (Meringue à la crème double)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Henri Dunant (Kızılhaç’ın kurucusu, ilk Nobel Barış Ödülü)",
+     "Le Corbusier (mimar)",
+     "Roger Federer (tenis efsanesi)"
+    ],
+    "strongSectors": [
+     "Bankacılık, sigorta ve finans",
+     "İlaç ve kimya (Roche, Novartis)",
+     "Saatçilik ve çikolata (Rolex, Swatch, Nestlé, Lindt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Para birimi İsviçre frangıdır; euro bazı yerlerde kabul edilir ama para üstü frank ve kötü kurdan verilir. Kart ve temassız ödeme (TWINT dahil) her yerde yaygındır.",
+    "tippingCulture": "Servis ücreti fiyata dahildir; memnun kaldıysanız hesabı yuvarlamak veya %5–10 bırakmak yeterlidir.",
+    "economicPillars": "Finans ve sigorta, ilaç ve kimya, hassas makine ve saatçilik, turizm ve gıda sanayii."
+   }
+  },
+  "itin": {
+   "routeName": "İsviçre Alpleri ve Gölleri: Zürih, Lucerne, Interlaken ve Zermatt",
+   "routeSummary": "Zürih’in göl kıyısı eski şehrinden Lucerne’ün köprülerine, Jungfrau bölgesinin şelaleli vadilerinden Matterhorn’un eteğindeki araçsız Zermatt’a uzanan, tamamen trenle yapılabilen 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Gün",
+   "bestSeason": "Haziran – Eylül",
+   "transportMode": "SBB trenleri, dağ trenleri ve teleferikler, göl tekneleri (Swiss Travel Pass ile)",
+   "paceLevel": "Dengeli (Şehir + Dağ)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Zürih (Göl Kıyısı ve Eski Şehir)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Altstadt, Grossmünster ve Fraumünster (Chagall vitrayları)",
+      "Lindenhof seyir noktası",
+      "Zürih Gölü ve Bahnhofstrasse",
+      "Uetliberg Tepesi"
+     ],
+     "activities": [
+      "Yazın şehir içindeki göl/nehir yüzme alanlarında (Badi) serinleyin.",
+      "Uetliberg’e S-Bahn ile çıkıp şehir ve Alp manzarasını izleyin.",
+      "Göl üzerinde ZVV tekne turu yapın."
+     ],
+     "foodAndDrinks": [
+      "Zürcher Geschnetzeltes ve Rösti (kremalı dana eti, patates röstisi)",
+      "Sprüngli Luxemburgerli (mini makaron)"
+     ],
+     "criticalTips": [
+      "Havalimanından şehre tren 10–15 dakikadır; taksiye gerek yoktur.",
+      "Çeşme sularının çoğu içilebilir; matara taşıyarak tasarruf edin."
+     ],
+     "mapsQuery": "Zurich, Switzerland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Lucerne (Göl, Köprüler ve Pilatus)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kapellbrücke (Şapel Köprüsü) ve Su Kulesi",
+      "Aslan Anıtı (Löwendenkmal)",
+      "Pilatus Dağı (dünyanın en dik dişli treni)",
+      "Rigi Dağı ve Lucerne Gölü"
+     ],
+     "activities": [
+      "‘Golden Round Trip’ ile tekne, dişli tren ve teleferiği tek günde birleştirin.",
+      "Musegg surlarında yürüyüp kulelere çıkın.",
+      "İsviçre Ulaşım Müzesi’ni (Verkehrshaus) gezin."
+     ],
+     "foodAndDrinks": [
+      "Luzerner Chügelipastete (milföy içinde kremalı et yahnisi)",
+      "İsviçre sıcak çikolatası"
+     ],
+     "criticalTips": [
+      "Pilatus dişli treni yalnızca yaklaşık Mayıs–Kasım arası çalışır; kışın teleferikle çıkılır.",
+      "Dağa çıkmadan önce zirve kameralarından görüş mesafesini kontrol edin."
+     ],
+     "mapsQuery": "Lucerne, Switzerland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Interlaken ve Jungfrau Bölgesi",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Jungfraujoch – ‘Avrupa’nın Tepesi’ (3.454 m)",
+      "Lauterbrunnen Vadisi ve Staubbach Şelalesi",
+      "Grindelwald First (Cliff Walk)",
+      "Brienz ve Thun gölleri"
+     ],
+     "activities": [
+      "Interlaken’de Harder Kulm’e füniküler ile çıkın veya yamaç paraşütü deneyin.",
+      "Turkuaz Brienz Gölü’nde tekne turu yapın.",
+      "Lauterbrunnen’den Mürren’e uzanan manzaralı yürüyüş rotasını yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Älplermagronen (makarna, patates, peynir ve elma püresi)",
+      "Peynir fondü (Gruyère ve Vacherin ile)"
+     ],
+     "criticalTips": [
+      "Jungfraujoch bileti çok pahalıdır (gidiş-dönüş genelde 200 CHF üzeri); Swiss Travel Pass yalnızca indirim sağlar. Açık bir gün seçin.",
+      "3.000 m üzerinde yükseklik etkisi hissedilebilir; yavaş hareket edin ve bol su için."
+     ],
+     "mapsQuery": "Interlaken, Switzerland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Zermatt (Matterhorn)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Matterhorn manzarası",
+      "Gornergrat dişli treni",
+      "Matterhorn Glacier Paradise (3.883 m)"
+     ],
+     "activities": [
+      "Gün doğumunda Matterhorn’un pembe ışığını köy köprüsünden izleyin.",
+      "Beş göl yolu (5-Seenweg) yürüyüşünü yapın.",
+      "Kışın İtalya’nın Cervinia bölgesine uzanan pistlerde kayak yapın."
+     ],
+     "foodAndDrinks": [
+      "Raclette (eritilmiş peynir, haşlanmış patates ve turşuyla)",
+      "Fendant (Valais beyaz şarabı)"
+     ],
+     "criticalTips": [
+      "Zermatt’a araçla girilmez; arabanızı Täsch’ta bırakıp mekik trene binin.",
+      "Sezonda konaklama çok pahalıdır; erken rezervasyon yapın veya Täsch’ta kalın."
+     ],
+     "mapsQuery": "Zermatt, Switzerland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peynir fondü (Gruyère ve Vacherin ile)",
+     "Raclette (eritilmiş peynir, haşlanmış patates ve turşuyla)",
+     "Zürcher Geschnetzeltes ve Rösti (kremalı dana eti, patates röstisi)"
+    ],
+    "drinks": [
+     "Rivella (süt serumundan gazlı içecek)",
+     "Chasselas beyaz şarabı (Lavaux bağları)",
+     "İsviçre sıcak çikolatası"
+    ],
+    "streetFoods": [
+     "St. Galler Bratwurst (dana ağırlıklı ızgara sosis; çoğu domuz da içerir)",
+     "İsviçre çikolatası (Sprüngli, Läderach, Lindt)",
+     "Gruyère kremasıyla beze (Meringue à la crème double)"
+    ],
+    "diningAdvice": "Restoranlar pahalıdır; öğle ‘Tagesmenü’ ve Coop/Migros restoranları uygun seçeneklerdir. Musluk suyu içilebilir ve ücretsiz istenebilir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "İsviçre priz adaptörü (Tip J; ince Euro fiş girer, kalın Türk/Schuko fiş girmez)",
+     "Kat kat giyim, su geçirmez ceket ve güneş gözlüğü",
+     "Yürüyüş botu ve yüksek faktörlü güneş kremi",
+     "Matara (çeşme suları içilebilir)"
+    ],
+    "safetyAndEtiquette": [
+     "Dağlarda işaretli patikadan ayrılmayın ve buzul üzerinde rehbersiz yürümeyin.",
+     "Trende ‘Ruhezone’ (sessiz bölüm) vagonlarında telefonla konuşmayın."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Swiss Franc (CHF)",
+   "plugType": "Type J, C (230V, 50Hz)",
+   "bestMonths": "June – September (Alpine hiking and lakes); December – March (skiing)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "One of the world’s safest countries with very low violent crime. Watch for pickpockets at Zurich and Geneva stations and along Geneva’s lakefront.",
+    "commonScams": [
+     "Fake petition or charity collectors in Geneva used as a distraction for theft",
+     "Bag theft from luggage racks on trains, especially airport routes"
+    ],
+    "safeTravelTips": [
+     "Keep valuables with you on trains.",
+     "Check the MeteoSwiss app before mountain hikes and stay on marked trails.",
+     "Speeding and traffic fines are very high; don’t cross on a red pedestrian light."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99%+ population coverage (widespread 5G; good even at many mountain stations)",
+    "costPerGbUsd": "~2.00 - 6.00 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "World-Class (one of the most punctual rail networks)",
+    "costLevel": "Very Expensive",
+    "singleTicketUsd": "3.50 - 5.50 $",
+    "dailyPassUsd": "10.00 - 15.00 $ (Zürich, 24h)",
+    "popularRideApps": [
+     "SBB Mobile",
+     "FAIRTIQ",
+     "Uber",
+     "Go! Taxi",
+     "MeteoSwiss"
+    ],
+    "taxiAdvice": "Taxis are very expensive; trains, trams and boats reach almost everywhere. For several days of travel, the Swiss Travel Pass or Half Fare Card pays off; for single trips, look for ‘Supersaver’ tickets in SBB Mobile."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 150 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "1.50 - 3.50 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "180 - 300 $",
+    "flightCostIndex": "Moderate (Istanbul – Zurich/Geneva direct ~3 hrs)",
+    "flightTip": "There are direct flights from Istanbul to Zurich, Geneva and Basel. Basel-Mulhouse airport sits on the French border and is a good option for cheaper fares."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Punctuality is sacred; trains and appointments run to the minute.",
+     "No noise on Sundays or after 10 p.m.; recycling rules are strictly followed.",
+     "When toasting, make eye contact with each person (Prost / Santé).",
+     "In French-speaking areas, friends often greet with three cheek kisses."
+    ],
+    "festivals": [
+     "Basel Fasnacht carnival (February – March)",
+     "Montreux Jazz Festival (July)",
+     "Swiss National Day on 1 August (bonfires and fireworks)"
+    ],
+    "lifestyle": "A passion for nature and mountain sports, high quality of life, direct democracy and a multicultural society with four languages."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Matterhorn & Zermatt",
+     "Jungfraujoch & Lauterbrunnen Valley",
+     "Lucerne: Chapel Bridge & Mount Pilatus",
+     "Zurich old town & lake",
+     "Lavaux terraced vineyards & Chillon Castle (Lake Geneva)",
+     "Old City of Bern (UNESCO)"
+    ],
+    "bestSeasons": "Summer (June – September) for mountains and lakes; winter (December – March) for skiing",
+    "travelStyleTip": "Travel by train; panoramic lines such as the Glacier Express and Bernina Express are experiences in themselves. To protect your budget, use supermarket ready meals (Coop, Migros)."
+   },
+   "religion": {
+    "primaryReligions": "Roman Catholic ~32%, Reformed Protestant ~20%, no religion ~34%, Muslim ~6%.",
+    "respectNorms": "Keep quiet in churches and don’t wander during services; dress respectfully in mountain chapels too.",
+    "sacredSites": [
+     "Einsiedeln Abbey (Benedictine pilgrimage site)",
+     "Grossmünster (Zurich)",
+     "St. Pierre Cathedral (Geneva)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "German (~62%), French (~23%), Italian (~8%) and Romansh",
+    "englishProficiency": "Very good; English is no problem in tourism, hotels and transport. In German-speaking areas the everyday language is Swiss German.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Hello (Swiss German)",
+      "translation": "Hello",
+      "pronunciation": "GRÜ-e-tsi"
+     },
+     {
+      "phrase": "Merci vielmal",
+      "meaning": "Thank you very much (Swiss German)",
+      "translation": "Thanks",
+      "pronunciation": "MER-si FEEL-mal"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "How much is it? (Swiss German)",
+      "translation": "How much?",
+      "pronunciation": "vas HOSH-tet das"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "Goodbye (Swiss German)",
+      "translation": "Goodbye",
+      "pronunciation": "uf VEE-der-lu-e-ge"
+     },
+     {
+      "phrase": "Bonjour / Merci",
+      "meaning": "Hello / Thank you (French-speaking region)",
+      "translation": "Hello / Thanks",
+      "pronunciation": "bon-ZHOOR / mer-SEE"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Born from the 1291 alliance of Uri, Schwyz and Unterwalden, the Swiss Confederation had its neutrality recognised at the Congress of Vienna in 1815 and became a modern federal state in 1848. It is known for direct democracy, its cantonal system and for hosting international bodies (Red Cross, UN Geneva); it is not an EU member.",
+    "milestones": [
+     "1291: Federal Charter (Bundesbrief)",
+     "1815: International recognition of neutrality",
+     "1848: Federal constitution and modern state",
+     "1863: Red Cross founded in Geneva"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cheese fondue (Gruyère and Vacherin)",
+     "Raclette (melted cheese with boiled potatoes and pickles)",
+     "Zürcher Geschnetzeltes with Rösti (creamy veal strips, potato rösti)"
+    ],
+    "traditionalDrinks": [
+     "Rivella (soft drink made from milk whey)",
+     "Chasselas white wine (Lavaux vineyards)",
+     "Swiss hot chocolate"
+    ],
+    "streetFoodAndDesserts": [
+     "St. Galler Bratwurst (grilled veal sausage)",
+     "Swiss chocolate (Sprüngli, Läderach, Lindt)",
+     "Meringues with Gruyère double cream"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Henri Dunant (Red Cross founder, first Nobel Peace Prize)",
+     "Le Corbusier (architect)",
+     "Roger Federer (tennis legend)"
+    ],
+    "strongSectors": [
+     "Banking, insurance and finance",
+     "Pharmaceuticals and chemicals (Roche, Novartis)",
+     "Watchmaking and chocolate (Rolex, Swatch, Nestlé, Lindt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The currency is the Swiss franc; euros are accepted in some places, but change is given in francs at a poor rate. Cards and contactless (including TWINT) are everywhere.",
+    "tippingCulture": "Service is included in prices; if satisfied, round up or leave 5–10%.",
+    "economicPillars": "Finance and insurance, pharmaceuticals and chemicals, precision engineering and watchmaking, tourism and food industry."
+   }
+  },
+  "itin": {
+   "routeName": "Swiss Alps & Lakes: Zurich, Lucerne, Interlaken & Zermatt",
+   "routeSummary": "An 8-day route done entirely by train: from Zurich’s lakeside old town to Lucerne’s bridges, the waterfall valleys of the Jungfrau region and car-free Zermatt at the foot of the Matterhorn.",
+   "totalDays": 8,
+   "idealDurationText": "8 Days",
+   "bestSeason": "June – September",
+   "transportMode": "SBB trains, mountain railways, cable cars and lake boats (with a Swiss Travel Pass)",
+   "paceLevel": "Balanced (City + Mountains)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Zurich (Lakeside & Old Town)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Altstadt, Grossmünster & Fraumünster (Chagall windows)",
+      "Lindenhof viewpoint",
+      "Lake Zurich & Bahnhofstrasse",
+      "Uetliberg mountain"
+     ],
+     "activities": [
+      "Swim at the city’s lake and river baths (Badi) in summer.",
+      "Take the S-Bahn up Uetliberg for city and Alpine views.",
+      "Take a ZVV boat trip on the lake."
+     ],
+     "foodAndDrinks": [
+      "Zürcher Geschnetzeltes with Rösti (creamy veal strips, potato rösti)",
+      "Sprüngli Luxemburgerli (mini macarons)"
+     ],
+     "criticalTips": [
+      "The train from the airport to the city takes 10–15 minutes; no need for a taxi.",
+      "Most public fountains have drinkable water; carry a bottle to save money."
+     ],
+     "mapsQuery": "Zurich, Switzerland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Lucerne (Lake, Bridges & Pilatus)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Chapel Bridge (Kapellbrücke) & Water Tower",
+      "Lion Monument (Löwendenkmal)",
+      "Mount Pilatus (world’s steepest cogwheel railway)",
+      "Mount Rigi & Lake Lucerne"
+     ],
+     "activities": [
+      "Combine boat, cogwheel train and cable car on the ‘Golden Round Trip’.",
+      "Walk the Musegg city walls and climb the towers.",
+      "Visit the Swiss Museum of Transport (Verkehrshaus)."
+     ],
+     "foodAndDrinks": [
+      "Luzerner Chügelipastete (puff-pastry vol-au-vent with creamy meat)",
+      "Swiss hot chocolate"
+     ],
+     "criticalTips": [
+      "The Pilatus cogwheel railway runs only roughly May–November; in winter go up by cable car.",
+      "Check summit webcams for visibility before going up."
+     ],
+     "mapsQuery": "Lucerne, Switzerland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Interlaken & the Jungfrau Region",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Jungfraujoch – ‘Top of Europe’ (3,454 m)",
+      "Lauterbrunnen Valley & Staubbach Falls",
+      "Grindelwald First (Cliff Walk)",
+      "Lakes Brienz and Thun"
+     ],
+     "activities": [
+      "Ride the funicular up Harder Kulm or try paragliding over Interlaken.",
+      "Take a boat trip on turquoise Lake Brienz.",
+      "Hike the scenic trail from Lauterbrunnen up to Mürren."
+     ],
+     "foodAndDrinks": [
+      "Älplermagronen (pasta, potatoes, cheese and apple sauce)",
+      "Cheese fondue (Gruyère and Vacherin)"
+     ],
+     "criticalTips": [
+      "Jungfraujoch tickets are very expensive (return often over CHF 200); the Swiss Travel Pass only gives a discount. Pick a clear day.",
+      "Altitude can be felt above 3,000 m; move slowly and drink plenty of water."
+     ],
+     "mapsQuery": "Interlaken, Switzerland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Zermatt (Matterhorn)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Matterhorn views",
+      "Gornergrat railway",
+      "Matterhorn Glacier Paradise (3,883 m)"
+     ],
+     "activities": [
+      "Watch the Matterhorn glow pink at sunrise from the village bridge.",
+      "Hike the Five Lakes Trail (5-Seenweg).",
+      "In winter, ski the slopes that connect to Cervinia in Italy."
+     ],
+     "foodAndDrinks": [
+      "Raclette (melted cheese with boiled potatoes and pickles)",
+      "Fendant (Valais white wine)"
+     ],
+     "criticalTips": [
+      "Zermatt is car-free; leave your car in Täsch and take the shuttle train.",
+      "Accommodation is very expensive in season; book early or stay in Täsch."
+     ],
+     "mapsQuery": "Zermatt, Switzerland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cheese fondue (Gruyère and Vacherin)",
+     "Raclette (melted cheese with boiled potatoes and pickles)",
+     "Zürcher Geschnetzeltes with Rösti (creamy veal strips, potato rösti)"
+    ],
+    "drinks": [
+     "Rivella (soft drink made from milk whey)",
+     "Chasselas white wine (Lavaux vineyards)",
+     "Swiss hot chocolate"
+    ],
+    "streetFoods": [
+     "St. Galler Bratwurst (grilled veal sausage)",
+     "Swiss chocolate (Sprüngli, Läderach, Lindt)",
+     "Meringues with Gruyère double cream"
+    ],
+    "diningAdvice": "Restaurants are expensive; the lunchtime ‘Tagesmenü’ and Coop/Migros restaurants are good-value options. Tap water is drinkable and can be requested free."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Swiss plug adapter (Type J; slim Europlugs fit, thick Schuko plugs don’t)",
+     "Layers, a waterproof jacket and sunglasses",
+     "Hiking boots and high-SPF sunscreen",
+     "Reusable water bottle (fountain water is drinkable)"
+    ],
+    "safetyAndEtiquette": [
+     "Stay on marked trails in the mountains and never walk on glaciers without a guide.",
+     "Don’t make phone calls in the ‘quiet zone’ carriages on trains."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Schweizer Franken (CHF)",
+   "plugType": "Typ J, C (230V, 50Hz)",
+   "bestMonths": "Juni – September (Wandern und Seen); Dezember – März (Skifahren)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Eines der sichersten Länder der Welt mit sehr wenig Gewaltkriminalität. An den Bahnhöfen Zürich und Genf sowie an der Genfer Seepromenade auf Taschendiebe achten.",
+    "commonScams": [
+     "Falsche Unterschriften- oder Spendensammler in Genf als Ablenkung für Diebstahl",
+     "Gepäckdiebstahl aus Ablagen in Zügen, besonders auf Flughafenstrecken"
+    ],
+    "safeTravelTips": [
+     "Wertsachen im Zug bei sich behalten.",
+     "Vor Bergtouren die App MeteoSwiss prüfen und auf markierten Wegen bleiben.",
+     "Bußen für Raserei und Verkehrsverstöße sind sehr hoch; nicht bei Rot über die Straße gehen."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 %+ Bevölkerungsabdeckung (breites 5G; selbst an vielen Bergstationen gut)",
+    "costPerGbUsd": "~2.00 - 6.00 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Hervorragend (eines der pünktlichsten Bahnnetze der Welt)",
+    "costLevel": "Sehr teuer",
+    "singleTicketUsd": "3.50 - 5.50 $",
+    "dailyPassUsd": "10.00 - 15.00 $ (Zürich, 24h)",
+    "popularRideApps": [
+     "SBB Mobile",
+     "FAIRTIQ",
+     "Uber",
+     "Go! Taxi",
+     "MeteoSwiss"
+    ],
+    "taxiAdvice": "Taxis sind sehr teuer; Bahn, Tram und Schiff bringen einen fast überall hin. Für mehrere Reisetage lohnen Swiss Travel Pass oder Halbtax; für Einzelfahrten Sparbillette in SBB Mobile."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 150 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "1.50 - 3.50 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "180 - 300 $",
+    "flightCostIndex": "Moderat (Istanbul – Zürich/Genf direkt ~3 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Zürich, Genf und Basel. Der Flughafen Basel-Mulhouse liegt an der französischen Grenze und ist oft günstiger."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Pünktlichkeit ist heilig; Züge und Termine laufen auf die Minute.",
+     "Sonntags und nach 22 Uhr herrscht Ruhe; Recyclingregeln werden streng befolgt.",
+     "Beim Anstoßen jedem in die Augen schauen (Prost / Santé).",
+     "In der Romandie begrüßen sich Bekannte oft mit drei Wangenküssen."
+    ],
+    "festivals": [
+     "Basler Fasnacht (Februar – März)",
+     "Montreux Jazz Festival (Juli)",
+     "Bundesfeier am 1. August (Höhenfeuer und Feuerwerk)"
+    ],
+    "lifestyle": "Leidenschaft für Natur und Bergsport, hohe Lebensqualität, direkte Demokratie und eine viersprachige, multikulturelle Gesellschaft."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Matterhorn & Zermatt",
+     "Jungfraujoch & Lauterbrunnental",
+     "Luzern: Kapellbrücke & Pilatus",
+     "Zürcher Altstadt & Zürichsee",
+     "Weinterrassen Lavaux & Schloss Chillon (Genfersee)",
+     "Berner Altstadt (UNESCO)"
+    ],
+    "bestSeasons": "Sommer (Juni – September) für Berge und Seen; Winter (Dezember – März) zum Skifahren",
+    "travelStyleTip": "Mit dem Zug reisen; Panoramastrecken wie Glacier Express und Bernina Express sind ein Erlebnis für sich. Fürs Budget: Fertiggerichte aus Coop und Migros."
+   },
+   "religion": {
+    "primaryReligions": "Römisch-katholisch ~32 %, evangelisch-reformiert ~20 %, konfessionslos ~34 %, Muslime ~6 %.",
+    "respectNorms": "In Kirchen leise sein und während des Gottesdienstes nicht herumgehen; auch in Bergkapellen angemessen kleiden.",
+    "sacredSites": [
+     "Kloster Einsiedeln (Wallfahrtsort)",
+     "Grossmünster (Zürich)",
+     "Kathedrale St. Pierre (Genf)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Deutsch (~62 %), Französisch (~23 %), Italienisch (~8 %) und Rätoromanisch",
+    "englishProficiency": "Sehr gut; im Tourismus, Hotel und Verkehr kein Problem. Im Alltag spricht man in der Deutschschweiz Schweizerdeutsch.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Guten Tag (Schweizerdeutsch)",
+      "translation": "Guten Tag",
+      "pronunciation": "GRÜ-e-tsi"
+     },
+     {
+      "phrase": "Merci vielmal",
+      "meaning": "Vielen Dank (Schweizerdeutsch)",
+      "translation": "Danke",
+      "pronunciation": "MER-si FEEL-mal"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "Was kostet das? (Schweizerdeutsch)",
+      "translation": "Wie viel?",
+      "pronunciation": "vas HOSH-tet das"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "Auf Wiedersehen (Schweizerdeutsch)",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "uf VEE-der-lu-e-ge"
+     },
+     {
+      "phrase": "Bonjour / Merci",
+      "meaning": "Guten Tag / Danke (in der Romandie)",
+      "translation": "Hallo / Danke",
+      "pronunciation": "bon-ZHOOR / mer-SEE"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Aus dem Bund von Uri, Schwyz und Unterwalden 1291 hervorgegangen, wurde die Neutralität der Eidgenossenschaft 1815 am Wiener Kongress anerkannt; 1848 entstand der moderne Bundesstaat. Bekannt für direkte Demokratie, Föderalismus und internationale Organisationen (Rotes Kreuz, UNO Genf); kein EU-Mitglied.",
+    "milestones": [
+     "1291: Bundesbrief",
+     "1815: Internationale Anerkennung der Neutralität",
+     "1848: Bundesverfassung und moderner Bundesstaat",
+     "1863: Gründung des Roten Kreuzes in Genf"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Käsefondue (Gruyère und Vacherin)",
+     "Raclette (geschmolzener Käse mit Kartoffeln und Essiggurken)",
+     "Zürcher Geschnetzeltes mit Rösti"
+    ],
+    "traditionalDrinks": [
+     "Rivella (Getränk aus Milchserum)",
+     "Chasselas-Weißwein (Lavaux)",
+     "Schweizer heiße Schokolade"
+    ],
+    "streetFoodAndDesserts": [
+     "St. Galler Bratwurst (Kalbsbratwurst)",
+     "Schweizer Schokolade (Sprüngli, Läderach, Lindt)",
+     "Meringues mit Greyerzer Doppelrahm"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Henri Dunant (Gründer des Roten Kreuzes, erster Friedensnobelpreis)",
+     "Le Corbusier (Architekt)",
+     "Roger Federer (Tennislegende)"
+    ],
+    "strongSectors": [
+     "Banken, Versicherungen und Finanzen",
+     "Pharma und Chemie (Roche, Novartis)",
+     "Uhren und Schokolade (Rolex, Swatch, Nestlé, Lindt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Währung ist der Schweizer Franken; Euro wird teils angenommen, Rückgeld aber in Franken und zu schlechtem Kurs. Karte und kontaktlos (inkl. TWINT) sind überall verbreitet.",
+    "tippingCulture": "Der Service ist inbegriffen; bei Zufriedenheit aufrunden oder 5–10 % geben.",
+    "economicPillars": "Finanzen und Versicherungen, Pharma und Chemie, Präzisionstechnik und Uhren, Tourismus und Lebensmittelindustrie."
+   }
+  },
+  "itin": {
+   "routeName": "Schweizer Alpen & Seen: Zürich, Luzern, Interlaken & Zermatt",
+   "routeSummary": "Eine 8-tägige Route komplett mit dem Zug: von Zürichs Altstadt am See über Luzerns Brücken und die Wasserfalltäler der Jungfrauregion bis ins autofreie Zermatt am Matterhorn.",
+   "totalDays": 8,
+   "idealDurationText": "8 Tage",
+   "bestSeason": "Juni – September",
+   "transportMode": "SBB-Züge, Bergbahnen, Seilbahnen und Schiffe (mit Swiss Travel Pass)",
+   "paceLevel": "Ausgewogen (Stadt + Berge)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Zürich (See & Altstadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Altstadt, Grossmünster & Fraumünster (Chagall-Fenster)",
+      "Lindenhof",
+      "Zürichsee & Bahnhofstrasse",
+      "Uetliberg"
+     ],
+     "activities": [
+      "Im Sommer in einer Badi am See oder an der Limmat schwimmen.",
+      "Mit der S-Bahn auf den Uetliberg fahren und den Blick genießen.",
+      "Eine Schifffahrt auf dem Zürichsee machen."
+     ],
+     "foodAndDrinks": [
+      "Zürcher Geschnetzeltes mit Rösti",
+      "Luxemburgerli von Sprüngli"
+     ],
+     "criticalTips": [
+      "Der Zug vom Flughafen in die Stadt braucht 10–15 Minuten; kein Taxi nötig.",
+      "Die meisten Brunnen haben Trinkwasser; eine Flasche mitnehmen spart Geld."
+     ],
+     "mapsQuery": "Zurich, Switzerland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Luzern (See, Brücken & Pilatus)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kapellbrücke & Wasserturm",
+      "Löwendenkmal",
+      "Pilatus (steilste Zahnradbahn der Welt)",
+      "Rigi & Vierwaldstättersee"
+     ],
+     "activities": [
+      "Mit dem ‘Golden Round Trip’ Schiff, Zahnradbahn und Seilbahn kombinieren.",
+      "Auf der Museggmauer spazieren und die Türme besteigen.",
+      "Das Verkehrshaus der Schweiz besuchen."
+     ],
+     "foodAndDrinks": [
+      "Luzerner Chügelipastete",
+      "Schweizer heiße Schokolade"
+     ],
+     "criticalTips": [
+      "Die Pilatus-Zahnradbahn fährt nur etwa Mai–November; im Winter per Seilbahn.",
+      "Vor der Fahrt die Gipfel-Webcams auf Sicht prüfen."
+     ],
+     "mapsQuery": "Lucerne, Switzerland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Interlaken & Jungfrauregion",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Jungfraujoch – Top of Europe (3.454 m)",
+      "Lauterbrunnental & Staubbachfall",
+      "Grindelwald First (Cliff Walk)",
+      "Brienzer- und Thunersee"
+     ],
+     "activities": [
+      "Mit der Standseilbahn auf den Harder Kulm oder Gleitschirmfliegen über Interlaken.",
+      "Eine Schifffahrt auf dem türkisfarbenen Brienzersee machen.",
+      "Den Panoramaweg von Lauterbrunnen nach Mürren wandern."
+     ],
+     "foodAndDrinks": [
+      "Älplermagronen mit Apfelmus",
+      "Käsefondue (Gruyère und Vacherin)"
+     ],
+     "criticalTips": [
+      "Das Jungfraujoch ist sehr teuer (retour oft über 200 CHF); der Swiss Travel Pass gibt nur Rabatt. Einen klaren Tag wählen.",
+      "Über 3.000 m spürt man die Höhe; langsam bewegen und viel trinken."
+     ],
+     "mapsQuery": "Interlaken, Switzerland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Zermatt (Matterhorn)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Blick aufs Matterhorn",
+      "Gornergrat Bahn",
+      "Matterhorn Glacier Paradise (3.883 m)"
+     ],
+     "activities": [
+      "Bei Sonnenaufgang das Alpenglühen am Matterhorn von der Dorfbrücke sehen.",
+      "Den 5-Seenweg wandern.",
+      "Im Winter auf den Pisten bis nach Cervinia (Italien) fahren."
+     ],
+     "foodAndDrinks": [
+      "Raclette (geschmolzener Käse mit Kartoffeln und Essiggurken)",
+      "Fendant (Walliser Weißwein)"
+     ],
+     "criticalTips": [
+      "Zermatt ist autofrei; das Auto in Täsch abstellen und den Shuttlezug nehmen.",
+      "In der Saison sind Unterkünfte sehr teuer; früh buchen oder in Täsch übernachten."
+     ],
+     "mapsQuery": "Zermatt, Switzerland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Käsefondue (Gruyère und Vacherin)",
+     "Raclette (geschmolzener Käse mit Kartoffeln und Essiggurken)",
+     "Zürcher Geschnetzeltes mit Rösti"
+    ],
+    "drinks": [
+     "Rivella (Getränk aus Milchserum)",
+     "Chasselas-Weißwein (Lavaux)",
+     "Schweizer heiße Schokolade"
+    ],
+    "streetFoods": [
+     "St. Galler Bratwurst (Kalbsbratwurst)",
+     "Schweizer Schokolade (Sprüngli, Läderach, Lindt)",
+     "Meringues mit Greyerzer Doppelrahm"
+    ],
+    "diningAdvice": "Restaurants sind teuer; Tagesmenü über Mittag und Coop-/Migros-Restaurants sind günstig. Leitungswasser ist trinkbar und kann gratis bestellt werden."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Schweizer Adapter (Typ J; flacher Eurostecker passt, Schuko nicht)",
+     "Zwiebellook, Regenjacke und Sonnenbrille",
+     "Wanderschuhe und Sonnencreme mit hohem LSF",
+     "Trinkflasche (Brunnenwasser ist trinkbar)"
+    ],
+    "safetyAndEtiquette": [
+     "In den Bergen auf markierten Wegen bleiben und Gletscher nie ohne Führer betreten.",
+     "In der Ruhezone im Zug nicht telefonieren."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Franco suizo (CHF)",
+   "plugType": "Tipo J, C (230V, 50Hz)",
+   "bestMonths": "Junio – septiembre (senderismo alpino y lagos); diciembre – marzo (esquí)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Uno de los países más seguros del mundo, con muy poca delincuencia violenta. Cuidado con los carteristas en las estaciones de Zúrich y Ginebra y en el paseo del lago de Ginebra.",
+    "commonScams": [
+     "Falsos recolectores de firmas o donativos en Ginebra que distraen para robar",
+     "Robo de equipaje de los portamaletas en trenes, sobre todo en rutas al aeropuerto"
+    ],
+    "safeTravelTips": [
+     "Lleve los objetos de valor encima en los trenes.",
+     "Consulte la app MeteoSwiss antes de ir a la montaña y no salga de los senderos marcados.",
+     "Las multas de tráfico son muy altas; no cruce con el semáforo en rojo."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Más del 99 % de cobertura (5G extendido; buena incluso en muchas estaciones de montaña)",
+    "costPerGbUsd": "~2.00 - 6.00 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (una de las redes ferroviarias más puntuales del mundo)",
+    "costLevel": "Muy caro",
+    "singleTicketUsd": "3.50 - 5.50 $",
+    "dailyPassUsd": "10.00 - 15.00 $ (Zürich, 24h)",
+    "popularRideApps": [
+     "SBB Mobile",
+     "FAIRTIQ",
+     "Uber",
+     "Go! Taxi",
+     "MeteoSwiss"
+    ],
+    "taxiAdvice": "Los taxis son carísimos; trenes, tranvías y barcos llegan a casi todas partes. Para varios días, compensa el Swiss Travel Pass o la Half Fare Card; para trayectos sueltos, busque billetes ‘Supersaver’ en SBB Mobile."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 150 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "1.50 - 3.50 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "180 - 300 $",
+    "flightCostIndex": "Moderado (Estambul – Zúrich/Ginebra directo ~3 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Zúrich, Ginebra y Basilea. El aeropuerto de Basilea-Mulhouse, en la frontera francesa, suele ser más barato."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "La puntualidad es sagrada; trenes y citas van al minuto.",
+     "Silencio los domingos y después de las 22:00; las normas de reciclaje se cumplen estrictamente.",
+     "Al brindar se mira a los ojos a cada persona (Prost / Santé).",
+     "En la zona francófona los conocidos suelen saludarse con tres besos."
+    ],
+    "festivals": [
+     "Carnaval Fasnacht de Basilea (febrero – marzo)",
+     "Festival de Jazz de Montreux (julio)",
+     "Fiesta Nacional, 1 de agosto (hogueras y fuegos artificiales)"
+    ],
+    "lifestyle": "Pasión por la naturaleza y los deportes de montaña, alta calidad de vida, democracia directa y una sociedad multicultural con cuatro idiomas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Matterhorn y Zermatt",
+     "Jungfraujoch y valle de Lauterbrunnen",
+     "Lucerna: Puente de la Capilla y monte Pilatus",
+     "Casco antiguo y lago de Zúrich",
+     "Viñedos en terrazas de Lavaux y castillo de Chillon (lago Lemán)",
+     "Ciudad vieja de Berna (UNESCO)"
+    ],
+    "bestSeasons": "Verano (junio – septiembre) para montañas y lagos; invierno (diciembre – marzo) para esquiar",
+    "travelStyleTip": "Viaje en tren; líneas panorámicas como el Glacier Express y el Bernina Express son una experiencia en sí mismas. Para ahorrar, aproveche las comidas preparadas de supermercados (Coop, Migros)."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~32 %, protestantes reformados ~20 %, sin religión ~34 %, musulmanes ~6 %.",
+    "respectNorms": "Guarde silencio en las iglesias y no pasee durante el culto; vista con respeto también en las capillas de montaña.",
+    "sacredSites": [
+     "Abadía de Einsiedeln (lugar de peregrinación)",
+     "Grossmünster (Zúrich)",
+     "Catedral de San Pedro (Ginebra)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Alemán (~62 %), francés (~23 %), italiano (~8 %) y romanche",
+    "englishProficiency": "Muy bueno; en turismo, hoteles y transporte no hay problema. En la zona germanófona se habla a diario el alemán suizo.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Hola (alemán suizo)",
+      "translation": "Hola",
+      "pronunciation": "GRÜ-e-tsi"
+     },
+     {
+      "phrase": "Merci vielmal",
+      "meaning": "Muchas gracias (alemán suizo)",
+      "translation": "Gracias",
+      "pronunciation": "MER-si FEEL-mal"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "¿Cuánto cuesta? (alemán suizo)",
+      "translation": "¿Cuánto?",
+      "pronunciation": "vas HOSH-tet das"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "Adiós (alemán suizo)",
+      "translation": "Adiós",
+      "pronunciation": "uf VEE-der-lu-e-ge"
+     },
+     {
+      "phrase": "Bonjour / Merci",
+      "meaning": "Hola / Gracias (zona francófona)",
+      "translation": "Hola / Gracias",
+      "pronunciation": "bon-ZHOOR / mer-SEE"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nacida de la alianza de Uri, Schwyz y Unterwalden en 1291, la Confederación Suiza vio reconocida su neutralidad en el Congreso de Viena (1815) y se convirtió en Estado federal moderno en 1848. Es conocida por su democracia directa, sus cantones y por acoger organismos internacionales (Cruz Roja, ONU Ginebra); no es miembro de la UE.",
+    "milestones": [
+     "1291: Carta Federal (Bundesbrief)",
+     "1815: Reconocimiento internacional de la neutralidad",
+     "1848: Constitución federal y Estado moderno",
+     "1863: Fundación de la Cruz Roja en Ginebra"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fondue de queso (Gruyère y Vacherin)",
+     "Raclette (queso fundido con patatas y encurtidos)",
+     "Zürcher Geschnetzeltes con Rösti (ternera en salsa cremosa y rösti de patata)"
+    ],
+    "traditionalDrinks": [
+     "Rivella (refresco a base de suero de leche)",
+     "Vino blanco Chasselas (viñedos de Lavaux)",
+     "Chocolate caliente suizo"
+    ],
+    "streetFoodAndDesserts": [
+     "St. Galler Bratwurst (salchicha de ternera a la parrilla)",
+     "Chocolate suizo (Sprüngli, Läderach, Lindt)",
+     "Merengues con doble crema de Gruyère"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Henri Dunant (fundador de la Cruz Roja, primer Nobel de la Paz)",
+     "Le Corbusier (arquitecto)",
+     "Roger Federer (leyenda del tenis)"
+    ],
+    "strongSectors": [
+     "Banca, seguros y finanzas",
+     "Farmacéutica y química (Roche, Novartis)",
+     "Relojería y chocolate (Rolex, Swatch, Nestlé, Lindt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La moneda es el franco suizo; en algunos sitios aceptan euros, pero el cambio se da en francos y con mal tipo. Las tarjetas y el pago sin contacto (incluido TWINT) están en todas partes.",
+    "tippingCulture": "El servicio está incluido; si queda satisfecho, redondee o deje un 5–10 %.",
+    "economicPillars": "Finanzas y seguros, farmacéutica y química, ingeniería de precisión y relojería, turismo e industria alimentaria."
+   }
+  },
+  "itin": {
+   "routeName": "Alpes y lagos suizos: Zúrich, Lucerna, Interlaken y Zermatt",
+   "routeSummary": "Ruta de 8 días íntegramente en tren: del casco antiguo de Zúrich junto al lago a los puentes de Lucerna, los valles de cascadas de la región del Jungfrau y Zermatt, sin coches, al pie del Matterhorn.",
+   "totalDays": 8,
+   "idealDurationText": "8 días",
+   "bestSeason": "Junio – septiembre",
+   "transportMode": "Trenes de SBB, trenes de montaña, teleféricos y barcos (con Swiss Travel Pass)",
+   "paceLevel": "Equilibrado (ciudad + montaña)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Zúrich (lago y casco antiguo)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Casco antiguo, Grossmünster y Fraumünster (vitrales de Chagall)",
+      "Mirador de Lindenhof",
+      "Lago de Zúrich y Bahnhofstrasse",
+      "Monte Uetliberg"
+     ],
+     "activities": [
+      "En verano nade en los baños de lago y río de la ciudad (Badi).",
+      "Suba en S-Bahn al Uetliberg para ver la ciudad y los Alpes.",
+      "Haga un paseo en barco por el lago."
+     ],
+     "foodAndDrinks": [
+      "Zürcher Geschnetzeltes con Rösti (ternera en salsa cremosa y rösti de patata)",
+      "Luxemburgerli de Sprüngli (minimacarons)"
+     ],
+     "criticalTips": [
+      "El tren del aeropuerto al centro tarda 10–15 minutos; no hace falta taxi.",
+      "La mayoría de fuentes públicas tiene agua potable; lleve botella y ahorre."
+     ],
+     "mapsQuery": "Zurich, Switzerland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lucerna (lago, puentes y Pilatus)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Puente de la Capilla y Torre del Agua",
+      "Monumento al León (Löwendenkmal)",
+      "Monte Pilatus (el tren cremallera más empinado del mundo)",
+      "Monte Rigi y lago de Lucerna"
+     ],
+     "activities": [
+      "Combine barco, tren cremallera y teleférico en el ‘Golden Round Trip’.",
+      "Recorra la muralla de Musegg y suba a sus torres.",
+      "Visite el Museo Suizo del Transporte (Verkehrshaus)."
+     ],
+     "foodAndDrinks": [
+      "Luzerner Chügelipastete (volován de hojaldre con carne en salsa)",
+      "Chocolate caliente suizo"
+     ],
+     "criticalTips": [
+      "El tren cremallera del Pilatus funciona aproximadamente de mayo a noviembre; en invierno se sube en teleférico.",
+      "Mire las webcams de la cumbre antes de subir."
+     ],
+     "mapsQuery": "Lucerne, Switzerland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Interlaken y la región del Jungfrau",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Jungfraujoch – ‘Top of Europe’ (3454 m)",
+      "Valle de Lauterbrunnen y cascada de Staubbach",
+      "Grindelwald First (Cliff Walk)",
+      "Lagos de Brienz y Thun"
+     ],
+     "activities": [
+      "Suba en funicular al Harder Kulm o pruebe el parapente sobre Interlaken.",
+      "Navegue por el lago turquesa de Brienz.",
+      "Haga la ruta panorámica de Lauterbrunnen a Mürren."
+     ],
+     "foodAndDrinks": [
+      "Älplermagronen (pasta, patata, queso y compota de manzana)",
+      "Fondue de queso (Gruyère y Vacherin)"
+     ],
+     "criticalTips": [
+      "El Jungfraujoch es muy caro (ida y vuelta a menudo más de 200 CHF); el Swiss Travel Pass solo da descuento. Elija un día despejado.",
+      "Por encima de 3000 m se nota la altitud; muévase despacio y beba mucha agua."
+     ],
+     "mapsQuery": "Interlaken, Switzerland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Zermatt (Matterhorn)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Vistas del Matterhorn",
+      "Tren del Gornergrat",
+      "Matterhorn Glacier Paradise (3883 m)"
+     ],
+     "activities": [
+      "Vea el Matterhorn teñirse de rosa al amanecer desde el puente del pueblo.",
+      "Haga la ruta de los cinco lagos (5-Seenweg).",
+      "En invierno esquíe por pistas que conectan con Cervinia (Italia)."
+     ],
+     "foodAndDrinks": [
+      "Raclette (queso fundido con patatas y encurtidos)",
+      "Fendant (vino blanco del Valais)"
+     ],
+     "criticalTips": [
+      "Zermatt no admite coches; deje el coche en Täsch y tome el tren lanzadera.",
+      "En temporada el alojamiento es carísimo; reserve pronto o alójese en Täsch."
+     ],
+     "mapsQuery": "Zermatt, Switzerland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fondue de queso (Gruyère y Vacherin)",
+     "Raclette (queso fundido con patatas y encurtidos)",
+     "Zürcher Geschnetzeltes con Rösti (ternera en salsa cremosa y rösti de patata)"
+    ],
+    "drinks": [
+     "Rivella (refresco a base de suero de leche)",
+     "Vino blanco Chasselas (viñedos de Lavaux)",
+     "Chocolate caliente suizo"
+    ],
+    "streetFoods": [
+     "St. Galler Bratwurst (salchicha de ternera a la parrilla)",
+     "Chocolate suizo (Sprüngli, Läderach, Lindt)",
+     "Merengues con doble crema de Gruyère"
+    ],
+    "diningAdvice": "Los restaurantes son caros; el ‘Tagesmenü’ del mediodía y los restaurantes de Coop/Migros son opciones económicas. El agua del grifo es potable y se puede pedir gratis."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador suizo (tipo J; entra la clavija europea fina, no la Schuko gruesa)",
+     "Ropa por capas, chaqueta impermeable y gafas de sol",
+     "Botas de montaña y protector solar alto",
+     "Botella reutilizable (el agua de las fuentes es potable)"
+    ],
+    "safetyAndEtiquette": [
+     "En la montaña no salga de los senderos y nunca camine por glaciares sin guía.",
+     "No hable por teléfono en los vagones de ‘zona de silencio’."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Швейцарский франк (CHF)",
+   "plugType": "Тип J, C (230V, 50 Гц)",
+   "bestMonths": "Июнь – сентябрь (походы в Альпах и озёра); декабрь – март (лыжи)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Одна из самых безопасных стран мира. Остерегайтесь карманников на вокзалах Цюриха и Женевы и на женевской набережной.",
+    "commonScams": [
+     "Фальшивые сборщики подписей или пожертвований в Женеве, отвлекающие внимание для кражи",
+     "Кражи багажа с полок в поездах, особенно на маршрутах в аэропорт"
+    ],
+    "safeTravelTips": [
+     "В поездах держите ценные вещи при себе.",
+     "Перед походом в горы проверяйте прогноз в приложении MeteoSwiss и держитесь маркированных троп.",
+     "Штрафы за нарушения ПДД очень высоки; не переходите на красный."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Покрытие 99%+ (широкий 5G; хорошо даже на многих горных станциях)",
+    "costPerGbUsd": "~2.00 - 6.00 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Превосходное (одна из самых пунктуальных железных дорог мира)",
+    "costLevel": "Очень дорого",
+    "singleTicketUsd": "3.50 - 5.50 $",
+    "dailyPassUsd": "10.00 - 15.00 $ (Zürich, 24h)",
+    "popularRideApps": [
+     "SBB Mobile",
+     "FAIRTIQ",
+     "Uber",
+     "Go! Taxi",
+     "MeteoSwiss"
+    ],
+    "taxiAdvice": "Такси очень дорогие; поезда, трамваи и теплоходы доходят почти везде. Для нескольких дней поездок выгоден Swiss Travel Pass или Half Fare Card, для разовых — билеты «Supersaver» в SBB Mobile."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 150 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "1.50 - 3.50 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "180 - 300 $",
+    "flightCostIndex": "Умеренная (Стамбул – Цюрих/Женева прямой рейс ~3 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Цюрих, Женеву и Базель. Аэропорт Базель-Мюлуз на границе с Францией часто дешевле."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Пунктуальность священна: поезда и встречи — минута в минуту.",
+     "По воскресеньям и после 22:00 не шумят; правила сортировки мусора строго соблюдаются.",
+     "Чокаясь, смотрят в глаза каждому (Prost / Santé).",
+     "Во франкоязычных регионах знакомые часто здороваются тремя поцелуями в щёку."
+    ],
+    "festivals": [
+     "Базельский карнавал Fasnacht (февраль – март)",
+     "Джазовый фестиваль в Монтрё (июль)",
+     "Национальный день 1 августа (костры и фейерверки)"
+    ],
+    "lifestyle": "Любовь к природе и горным видам спорта, высокое качество жизни, прямая демократия и многокультурное общество с четырьмя языками."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Маттерхорн и Церматт",
+     "Юнгфрауйох и долина Лаутербруннен",
+     "Люцерн: Капелльбрюкке и гора Пилатус",
+     "Старый город и озеро Цюриха",
+     "Террасы Лаво и Шильонский замок (Женевское озеро)",
+     "Старый город Берна (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Лето (июнь – сентябрь) — горы и озёра; зима (декабрь – март) — лыжи",
+    "travelStyleTip": "Путешествуйте поездом: панорамные линии Glacier Express и Bernina Express — отдельное впечатление. Чтобы сэкономить, берите готовую еду в супермаркетах Coop и Migros."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~32%, протестанты-реформаты ~20%, неверующие ~34%, мусульмане ~6%.",
+    "respectNorms": "В храмах соблюдайте тишину и не ходите во время службы; в горных часовнях тоже одевайтесь скромно.",
+    "sacredSites": [
+     "Аббатство Айнзидельн (место паломничества)",
+     "Гроссмюнстер (Цюрих)",
+     "Собор Святого Петра (Женева)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Немецкий (~62%), французский (~23%), итальянский (~8%) и ретороманский",
+    "englishProficiency": "Очень хороший; в туризме, отелях и транспорте проблем нет. В немецкоязычной части в быту говорят на швейцарском немецком.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Здравствуйте (швейцарский немецкий)",
+      "translation": "Здравствуйте",
+      "pronunciation": "GRÜ-e-tsi"
+     },
+     {
+      "phrase": "Merci vielmal",
+      "meaning": "Большое спасибо (швейцарский немецкий)",
+      "translation": "Спасибо",
+      "pronunciation": "MER-si FEEL-mal"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "Сколько это стоит? (швейцарский немецкий)",
+      "translation": "Сколько стоит?",
+      "pronunciation": "vas HOSH-tet das"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "До свидания (швейцарский немецкий)",
+      "translation": "До свидания",
+      "pronunciation": "uf VEE-der-lu-e-ge"
+     },
+     {
+      "phrase": "Bonjour / Merci",
+      "meaning": "Здравствуйте / Спасибо (франкоязычный регион)",
+      "translation": "Здравствуйте / Спасибо",
+      "pronunciation": "bon-ZHOOR / mer-SEE"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Швейцарская Конфедерация возникла из союза кантонов Ури, Швиц и Унтервальден в 1291 году; её нейтралитет признан Венским конгрессом 1815 года, а в 1848 году она стала современным федеративным государством. Известна прямой демократией, кантональным устройством и международными организациями (Красный Крест, ООН в Женеве); в ЕС не входит.",
+    "milestones": [
+     "1291: Союзная грамота (Bundesbrief)",
+     "1815: международное признание нейтралитета",
+     "1848: федеральная конституция и современное государство",
+     "1863: основание Красного Креста в Женеве"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Сырное фондю (грюйер и вашрен)",
+     "Раклет (плавленый сыр с картофелем и корнишонами)",
+     "Цюрихский гешнетцельтес с рёсти (телятина в сливочном соусе, картофельные рёсти)"
+    ],
+    "traditionalDrinks": [
+     "Ривелла (газировка на молочной сыворотке)",
+     "Белое вино шасла (виноградники Лаво)",
+     "Швейцарский горячий шоколад"
+    ],
+    "streetFoodAndDesserts": [
+     "Санкт-галленская братвурст (колбаска из телятины)",
+     "Швейцарский шоколад (Sprüngli, Läderach, Lindt)",
+     "Меренги со сливками дубль-крем из Грюйера"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Анри Дюнан (основатель Красного Креста, первый лауреат Нобелевской премии мира)",
+     "Ле Корбюзье (архитектор)",
+     "Роджер Федерер (легенда тенниса)"
+    ],
+    "strongSectors": [
+     "Банки, страхование и финансы",
+     "Фармацевтика и химия (Roche, Novartis)",
+     "Часы и шоколад (Rolex, Swatch, Nestlé, Lindt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Валюта — швейцарский франк; евро кое-где принимают, но сдачу дают во франках по плохому курсу. Карты и бесконтактная оплата (включая TWINT) повсюду.",
+    "tippingCulture": "Обслуживание включено в цену; если всё понравилось, округлите счёт или оставьте 5–10%.",
+    "economicPillars": "Финансы и страхование, фармацевтика и химия, точное машиностроение и часы, туризм и пищевая промышленность."
+   }
+  },
+  "itin": {
+   "routeName": "Альпы и озёра Швейцарии: Цюрих, Люцерн, Интерлакен и Церматт",
+   "routeSummary": "8-дневный маршрут полностью на поездах: от старого Цюриха у озера к мостам Люцерна, долинам водопадов региона Юнгфрау и безавтомобильному Церматту у подножия Маттерхорна.",
+   "totalDays": 8,
+   "idealDurationText": "8 дней",
+   "bestSeason": "Июнь – сентябрь",
+   "transportMode": "Поезда SBB, горные железные дороги, канатки и озёрные теплоходы (со Swiss Travel Pass)",
+   "paceLevel": "Сбалансированный (город + горы)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Цюрих (озеро и Старый город)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Старый город, Гроссмюнстер и Фраумюнстер (витражи Шагала)",
+      "Смотровая площадка Линденхоф",
+      "Цюрихское озеро и Банхофштрассе",
+      "Гора Ютлиберг"
+     ],
+     "activities": [
+      "Летом искупайтесь в городских купальнях на озере или реке (Badi).",
+      "Поднимитесь на электричке на Ютлиберг ради вида на город и Альпы.",
+      "Совершите прогулку на теплоходе по озеру."
+     ],
+     "foodAndDrinks": [
+      "Цюрихский гешнетцельтес с рёсти (телятина в сливочном соусе, картофельные рёсти)",
+      "Люксембургерли от Sprüngli (мини-макаруны)"
+     ],
+     "criticalTips": [
+      "Поезд из аэропорта в город идёт 10–15 минут — такси не нужно.",
+      "Вода в большинстве городских фонтанов питьевая — носите с собой бутылку."
+     ],
+     "mapsQuery": "Zurich, Switzerland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Люцерн (озеро, мосты и Пилатус)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Капелльбрюкке и Водонапорная башня",
+      "Памятник «Умирающий лев»",
+      "Гора Пилатус (самая крутая зубчатая дорога в мире)",
+      "Гора Риги и Фирвальдштетское озеро"
+     ],
+     "activities": [
+      "Объедините теплоход, зубчатую дорогу и канатку в маршруте «Golden Round Trip».",
+      "Пройдитесь по стене Мусегг и поднимитесь на башни.",
+      "Посетите Швейцарский музей транспорта (Verkehrshaus)."
+     ],
+     "foodAndDrinks": [
+      "Люцернский пирог Chügelipastete (волован с мясом в соусе)",
+      "Швейцарский горячий шоколад"
+     ],
+     "criticalTips": [
+      "Зубчатая дорога на Пилатус работает примерно с мая по ноябрь; зимой поднимаются по канатке.",
+      "Перед подъёмом проверьте видимость на веб-камерах вершины."
+     ],
+     "mapsQuery": "Lucerne, Switzerland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Интерлакен и регион Юнгфрау",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Юнгфрауйох — «Вершина Европы» (3454 м)",
+      "Долина Лаутербруннен и водопад Штауббах",
+      "Гриндельвальд-Ферст (Cliff Walk)",
+      "Озёра Бриенц и Тун"
+     ],
+     "activities": [
+      "Поднимитесь на фуникулёре на Хардер-Кульм или полетайте на параплане.",
+      "Прокатитесь на теплоходе по бирюзовому озеру Бриенц.",
+      "Пройдите живописную тропу из Лаутербруннена в Мюррен."
+     ],
+     "foodAndDrinks": [
+      "Эльплермагронен (макароны, картофель, сыр и яблочное пюре)",
+      "Сырное фондю (грюйер и вашрен)"
+     ],
+     "criticalTips": [
+      "Поездка на Юнгфрауйох очень дорогая (туда-обратно часто более 200 CHF); Swiss Travel Pass даёт лишь скидку. Выбирайте ясный день.",
+      "Выше 3000 м ощущается высота — двигайтесь медленно и пейте больше воды."
+     ],
+     "mapsQuery": "Interlaken, Switzerland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Церматт (Маттерхорн)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Вид на Маттерхорн",
+      "Железная дорога Горнерграт",
+      "Matterhorn Glacier Paradise (3883 м)"
+     ],
+     "activities": [
+      "Встретьте рассвет и розовое сияние Маттерхорна с моста в деревне.",
+      "Пройдите тропу пяти озёр (5-Seenweg).",
+      "Зимой катайтесь по трассам, соединённым с итальянской Червинией."
+     ],
+     "foodAndDrinks": [
+      "Раклет (плавленый сыр с картофелем и корнишонами)",
+      "Фендан (белое вино Вале)"
+     ],
+     "criticalTips": [
+      "Церматт закрыт для машин: оставьте авто в Теше и пересядьте на шаттл-поезд.",
+      "В сезон жильё очень дорогое — бронируйте заранее или живите в Теше."
+     ],
+     "mapsQuery": "Zermatt, Switzerland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Сырное фондю (грюйер и вашрен)",
+     "Раклет (плавленый сыр с картофелем и корнишонами)",
+     "Цюрихский гешнетцельтес с рёсти (телятина в сливочном соусе, картофельные рёсти)"
+    ],
+    "drinks": [
+     "Ривелла (газировка на молочной сыворотке)",
+     "Белое вино шасла (виноградники Лаво)",
+     "Швейцарский горячий шоколад"
+    ],
+    "streetFoods": [
+     "Санкт-галленская братвурст (колбаска из телятины)",
+     "Швейцарский шоколад (Sprüngli, Läderach, Lindt)",
+     "Меренги со сливками дубль-крем из Грюйера"
+    ],
+    "diningAdvice": "Рестораны дорогие; выгодны обеденное «Tagesmenü» и рестораны Coop/Migros. Водопроводная вода питьевая, её можно попросить бесплатно."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Швейцарский переходник (тип J; тонкая евровилка подходит, толстая Schuko — нет)",
+     "Многослойная одежда, непромокаемая куртка и солнцезащитные очки",
+     "Треккинговые ботинки и крем с высоким SPF",
+     "Многоразовая бутылка (вода в фонтанах питьевая)"
+    ],
+    "safetyAndEtiquette": [
+     "В горах держитесь маркированных троп и не выходите на ледник без гида.",
+     "Не разговаривайте по телефону в вагонах «тихой зоны»."
+    ]
+   }
+  }
+ }
+}

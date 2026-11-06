@@ -1,0 +1,497 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim (deniz ılık, kalabalık ve fiyatlar daha makul); Temmuz – Ağustos sıcak ve çok kalabalık",
+   "safety": {
+    "crimeRateSummary": "Şiddet suçu düşüktür; asıl risk Atina metrosu (özellikle Pire – Kifisia hattı), Monastiraki ve Omonia çevresindeki yankesicilerdir. Yazın orman yangını uyarılarını takip edin.",
+    "commonScams": [
+     "Atina’da sohbet edip sizi bara götüren kişilerin ardından gelen fahiş içki hesabı",
+     "Havalimanı ve Pire limanında taksimetre açmadan sabit yüksek fiyat isteyen taksiler",
+     "Adalarda kiralanan ATV ve scooter’larda önceden var olan hasarın size ödetilmesi"
+    ],
+    "safeTravelTips": [
+     "Metroda ve kalabalık feribot iskelelerinde çantanızı önünüzde, telefonunuzu cebinizde tutun.",
+     "Kiralamadan önce ATV/scooter’ın fotoğrafını çekin ve mutlaka kask takın; ada yolları dar ve virajlıdır.",
+     "Meteora ve diğer manastırlarda omuz ve dizleri kapatın; kadınlardan etek beklenebilir."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "166",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Ülke genelinde güçlü 4G, şehirlerde 5G; bazı küçük adalarda ve dağlarda zayıf",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Mevcut – Airalo, Holafly ve AB içi dolaşım (roaming) eSIM’leri",
+    "bestCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi – Atina’da metro, tramvay ve otobüs; adalar arası geniş feribot ağı; şehirlerarası KTEL otobüsleri",
+    "costLevel": "Orta",
+    "singleTicketUsd": "~1.40 $ (1.20 €, 90 dk)",
+    "dailyPassUsd": "~4.80 $ (4.10 €, 24 saat)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Ferryhopper"
+    ],
+    "taxiAdvice": "Atina havalimanı – merkez arası taksi gündüz sabit ~40 €, gece ~55 €’dur. FREENOW veya Uber ile çağırmak taksimetre tartışmasını önler; adalarda taksi az olduğundan yazın önceden ayarlayın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "20 - 45 $",
+    "hotel3StarUsd": "80 - 160 $",
+    "flightCostIndex": "Düşük-Orta (İstanbul – Atina ~1.5 sa)",
+    "flightTip": "İstanbul’dan Atina ve Selanik’e THY, Pegasus, AJet ve Aegean ile direkt uçuşlar var. Ege adaları için Ayvalık – Midilli, Çeşme – Sakız, Bodrum – İstanköy ve Marmaris – Rodos feribotları uçağa iyi bir alternatiftir."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Yunanca (Yunan alfabesiyle yazılır).",
+    "englishProficiency": "Çok iyi – turistik bölgelerde, adalarda ve gençler arasında İngilizce rahatça konuşulur.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yia sas)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "ya-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "ef-ha-ri-STO"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen / Rica ederim",
+      "pronunciation": "pa-ra-ka-LO"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso kánei?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "PO-so KA-ni"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "ton lo-ga-ryaz-MO pa-ra-ka-LO"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "May – June and September – October (warm sea, fewer crowds, fairer prices); July – August is hot and very crowded",
+   "safety": {
+    "crimeRateSummary": "Violent crime is low; the main risk is pickpocketing on the Athens metro (especially the Piraeus – Kifisia line) and around Monastiraki and Omonia. In summer, follow wildfire warnings.",
+    "commonScams": [
+     "Friendly strangers in Athens leading you to a bar that serves a huge drinks bill",
+     "Taxis at the airport and Piraeus port refusing the meter and demanding a high flat fare",
+     "Being charged on the islands for pre-existing damage to rented ATVs and scooters"
+    ],
+    "safeTravelTips": [
+     "On the metro and at busy ferry piers keep your bag in front of you and your phone in a pocket.",
+     "Photograph an ATV or scooter before renting and always wear a helmet; island roads are narrow and winding.",
+     "At Meteora and other monasteries cover shoulders and knees; women may be expected to wear a skirt."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "166",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Strong 4G nationwide and 5G in cities; weaker on some small islands and in the mountains",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Available – Airalo, Holafly and EU-roaming eSIMs",
+    "bestCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good – metro, tram and buses in Athens; extensive inter-island ferries; KTEL intercity buses",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "~1.40 $ (€1.20, 90 min)",
+    "dailyPassUsd": "~4.80 $ (€4.10, 24 h)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Ferryhopper"
+    ],
+    "taxiAdvice": "Athens airport to the centre is a fixed fare of about €40 by day and €55 at night. Booking via FREENOW or Uber avoids meter disputes; on the islands taxis are scarce, so arrange them in advance in summer."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "20 - 45 $",
+    "hotel3StarUsd": "80 - 160 $",
+    "flightCostIndex": "Low to moderate (Istanbul – Athens ~1.5 h)",
+    "flightTip": "There are direct THY, Pegasus, AJet and Aegean flights from Istanbul to Athens and Thessaloniki. For the Aegean islands, ferries from Turkey (Ayvalık – Lesbos, Çeşme – Chios, Bodrum – Kos, Marmaris – Rhodes) are a good alternative to flying."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Greek (written in the Greek alphabet).",
+    "englishProficiency": "Very good – English is widely spoken in tourist areas, on the islands and among young people.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yia sas)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "ya-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "ef-ha-ri-STO"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Please / You’re welcome",
+      "translation": "Please / You’re welcome",
+      "pronunciation": "pa-ra-ka-LO"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso kánei?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "PO-so KA-ni"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "ton lo-ga-ryaz-MO pa-ra-ka-LO"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mai – Juni und September – Oktober (warmes Meer, weniger Andrang, fairere Preise); Juli – August heiß und sehr voll",
+   "safety": {
+    "crimeRateSummary": "Gewaltkriminalität ist gering; Hauptrisiko sind Taschendiebe in der Athener Metro (vor allem Linie Piräus – Kifisia) sowie rund um Monastiraki und Omonia. Im Sommer Waldbrandwarnungen beachten.",
+    "commonScams": [
+     "Freundliche Fremde in Athen, die Sie in eine Bar mit horrender Getränkerechnung führen",
+     "Taxis am Flughafen und im Hafen Piräus, die ohne Taxameter einen hohen Pauschalpreis verlangen",
+     "Auf den Inseln für bereits vorhandene Schäden an gemieteten Quads und Rollern zahlen müssen"
+    ],
+    "safeTravelTips": [
+     "In der Metro und an vollen Fähranlegern Tasche vorne tragen, Handy in die Tasche stecken.",
+     "Quad oder Roller vor der Miete fotografieren und immer Helm tragen; Inselstraßen sind eng und kurvig.",
+     "In Meteora und anderen Klöstern Schultern und Knie bedecken; von Frauen wird oft ein Rock erwartet."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "166",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Starkes 4G landesweit, 5G in Städten; auf kleinen Inseln und in Bergen schwächer",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Verfügbar – Airalo, Holafly und EU-Roaming-eSIMs",
+    "bestCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut – Metro, Tram und Busse in Athen; dichtes Fährnetz zwischen den Inseln; KTEL-Überlandbusse",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "~1.40 $ (1,20 €, 90 Min.)",
+    "dailyPassUsd": "~4.80 $ (4,10 €, 24 Std.)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Ferryhopper"
+    ],
+    "taxiAdvice": "Vom Flughafen Athen ins Zentrum gilt ein Festpreis von etwa 40 € tagsüber und 55 € nachts. Über FREENOW oder Uber gebucht gibt es keinen Taxameter-Streit; auf den Inseln sind Taxis knapp – im Sommer vorab buchen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "20 - 45 $",
+    "hotel3StarUsd": "80 - 160 $",
+    "flightCostIndex": "Niedrig bis mittel (Istanbul – Athen ~1,5 Std.)",
+    "flightTip": "Direktflüge von THY, Pegasus, AJet und Aegean verbinden Istanbul mit Athen und Thessaloniki. Für die ägäischen Inseln sind Fähren ab der Türkei (Ayvalık – Lesbos, Çeşme – Chios, Bodrum – Kos, Marmaris – Rhodos) eine gute Alternative."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Griechisch (in griechischer Schrift).",
+    "englishProficiency": "Sehr gut – in Touristengebieten, auf den Inseln und bei Jüngeren wird viel Englisch gesprochen.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yia sas)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "ya-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "ef-ha-ri-STO"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "pa-ra-ka-LO"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso kánei?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "PO-so KA-ni"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "ton lo-ga-ryaz-MO pa-ra-ka-LO"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayo – junio y septiembre – octubre (mar templado, menos gente y mejores precios); julio – agosto es caluroso y muy concurrido",
+   "safety": {
+    "crimeRateSummary": "La delincuencia violenta es baja; el principal riesgo son los carteristas en el metro de Atenas (sobre todo la línea El Pireo – Kifisiá) y en Monastiraki y Omonia. En verano sigue los avisos de incendios forestales.",
+    "commonScams": [
+     "Desconocidos simpáticos en Atenas que te llevan a un bar con una cuenta de bebidas desorbitada",
+     "Taxis en el aeropuerto y el puerto de El Pireo que no ponen el taxímetro y piden una tarifa fija alta",
+     "En las islas, que te cobren daños previos de quads y scooters alquilados"
+    ],
+    "safeTravelTips": [
+     "En el metro y en los muelles de ferri concurridos lleva la mochila delante y el móvil guardado.",
+     "Fotografía el quad o scooter antes de alquilarlo y usa siempre casco; las carreteras de las islas son estrechas y sinuosas.",
+     "En Meteora y otros monasterios cubre hombros y rodillas; a las mujeres se les puede pedir falda."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "166",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido en todo el país y 5G en ciudades; más débil en algunas islas pequeñas y en la montaña",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Disponible – Airalo, Holafly y eSIM con roaming UE",
+    "bestCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno – metro, tranvía y autobuses en Atenas; amplia red de ferris entre islas; autobuses interurbanos KTEL",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "~1.40 $ (1,20 €, 90 min)",
+    "dailyPassUsd": "~4.80 $ (4,10 €, 24 h)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Ferryhopper"
+    ],
+    "taxiAdvice": "Del aeropuerto de Atenas al centro hay tarifa fija de unos 40 € de día y 55 € de noche. Pedirlo por FREENOW o Uber evita discusiones; en las islas hay pocos taxis, resérvalos con antelación en verano."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "20 - 45 $",
+    "hotel3StarUsd": "80 - 160 $",
+    "flightCostIndex": "Bajo a moderado (Estambul – Atenas ~1,5 h)",
+    "flightTip": "Hay vuelos directos de THY, Pegasus, AJet y Aegean desde Estambul a Atenas y Salónica. Para las islas del Egeo, los ferris desde Turquía (Ayvalık – Lesbos, Çeşme – Quíos, Bodrum – Kos, Marmaris – Rodas) son una buena alternativa."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Griego (escrito con el alfabeto griego).",
+    "englishProficiency": "Muy bueno – el inglés se habla mucho en zonas turísticas, islas y entre los jóvenes.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yia sas)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "ya-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "ef-ha-ri-STO"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "pa-ra-ka-LO"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso kánei?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "PO-so KA-ni"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "ton lo-ga-ryaz-MO pa-ra-ka-LO"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь (тёплое море, меньше туристов, ниже цены); июль – август жарко и очень многолюдно",
+   "safety": {
+    "crimeRateSummary": "Насильственных преступлений мало; основной риск — карманники в афинском метро (особенно линия Пирей – Кифисия) и в районах Монастираки и Омония. Летом следите за предупреждениями о лесных пожарах.",
+    "commonScams": [
+     "Дружелюбные незнакомцы в Афинах, приводящие в бар с огромным счётом за напитки",
+     "Такси в аэропорту и порту Пирея, которые не включают счётчик и требуют высокую фиксированную цену",
+     "На островах требование оплатить старые повреждения арендованных квадроциклов и скутеров"
+    ],
+    "safeTravelTips": [
+     "В метро и на людных паромных причалах держите сумку перед собой, а телефон в кармане.",
+     "Фотографируйте квадроцикл или скутер перед арендой и всегда надевайте шлем: дороги на островах узкие и извилистые.",
+     "В Метеорах и других монастырях закрывайте плечи и колени; от женщин могут ожидать юбку."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "166",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G по всей стране и 5G в городах; слабее на некоторых маленьких островах и в горах",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Доступна – Airalo, Holafly и eSIM с роумингом по ЕС",
+    "bestCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошо – метро, трамвай и автобусы в Афинах; разветвлённая сеть паромов; междугородние автобусы KTEL",
+    "costLevel": "Средне",
+    "singleTicketUsd": "~1.40 $ (1,20 €, 90 мин)",
+    "dailyPassUsd": "~4.80 $ (4,10 €, 24 ч)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Ferryhopper"
+    ],
+    "taxiAdvice": "Из аэропорта Афин в центр действует фиксированный тариф около 40 € днём и 55 € ночью. Заказ через FREENOW или Uber избавит от споров о счётчике; на островах такси мало — летом бронируйте заранее."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "12 - 20 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "20 - 45 $",
+    "hotel3StarUsd": "80 - 160 $",
+    "flightCostIndex": "Низкий–средний (Стамбул – Афины ~1,5 ч)",
+    "flightTip": "Из Стамбула в Афины и Салоники летают прямые рейсы THY, Pegasus, AJet и Aegean. На острова Эгейского моря удобно добраться паромами из Турции (Айвалык – Лесбос, Чешме – Хиос, Бодрум – Кос, Мармарис – Родос)."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Греческий (греческий алфавит).",
+    "englishProficiency": "Очень хороший – в туристических местах, на островах и среди молодёжи широко говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yia sas)",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "ya-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "ef-ha-ri-STO"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "pa-ra-ka-LO"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso kánei?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "PO-so KA-ni"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "ton lo-ga-ryaz-MO pa-ra-ka-LO"
+     }
+    ]
+   }
+  }
+ }
+}

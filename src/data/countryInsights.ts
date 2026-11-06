@@ -1,4 +1,5 @@
 import { EMERGENCY_FIX } from './emergencyFix';
+import { applyCountryFix } from './countryFixHook';
 /**
  * Ülke İçi Güvenlik, İnternet, Ulaşım, Yaşam Maliyetleri & Gezgin İstihbaratı
  * 199 ülke için güvenlik/suç oranları, internet hızları/ücretleri,
@@ -1791,7 +1792,7 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
  * 199 ülkenin tamamı için Güvenlik, İnternet, Ulaşım ve Yaşam Maliyetleri verisini döner.
  * Doğrulanmış istihbarat motoruyla ezbere olmayan, gerçek verileri sağlar.
  */
-export function getCountryInsights(countryCode: string, lang: string = 'tr'): CountryFullInsights {
+function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): CountryFullInsights {
   const isEn = lang === 'en';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
@@ -2146,4 +2147,8 @@ export function getCountryInsights(countryCode: string, lang: string = 'tr'): Co
         : `${countryName} için erken rezervasyon ve aktarmasız direkt uçuş alternatifleri karşılaştırılarak en avantajlı biletler bulunabilir.`)
     }
   };
+}
+
+export function getCountryInsights(countryCode: string, lang: string = 'tr'): CountryFullInsights {
+  return applyCountryFix('insights', countryCode, lang, getCountryInsightsImpl(countryCode, lang));
 }

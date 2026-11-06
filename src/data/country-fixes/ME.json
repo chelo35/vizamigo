@@ -1,0 +1,1642 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "EUR (Euro – AB üyesi olmasa da resmî para birimi)",
+   "bestMonths": "Haziran – Eylül (deniz ve dağ yolları açık); en dengeli dönem Mayıs sonu–Haziran ve Eylül",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Turistlere yönelik şiddet suçu nadirdir. Asıl riskler yaz sezonunda kalabalık sahil kasabalarında yankesicilik, taksi ve plaj fiyatlarının şişirilmesi ile dar dağ yollarındaki trafiktir.",
+    "commonScams": [
+     "Tivat Havalimanı, Kotor ve Budva’da taksimetre açmayan ya da sabit “turist fiyatı” isteyen taksiler",
+     "Özel plajlarda şezlong ve şemsiye için önceden söylenmeyen fahiş ücretler",
+     "Kotor ve Budva iskelelerinde fiyatı netleştirilmeyen tekne turları"
+    ],
+    "safeTravelTips": [
+     "Taksiye binmeden fiyatı netleştirin veya taksiyi otelinize çağırtın.",
+     "Kotor serpantinleri, Lovćen ve Tara Kanyonu yollarında gece araç kullanmaktan kaçının.",
+     "Budva ve Kotor’da şehir merkezinde mayoyla dolaşmak para cezasına yol açabilir; plaj dışında üstünüzü örtün."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%95+ (4G neredeyse her yerde; 5G Podgorica ve kıyıda)",
+    "costPerGbUsd": "~0.50 - 1.50 $ (turist SIM paketleri 10–20 €)",
+    "esimAvailability": "İyi (uluslararası eSIM’ler sorunsuz çalışır)",
+    "bestCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (otobüs ağırlıklı; demiryolu yalnızca Bar–Podgorica–Kolašin hattında)",
+    "costLevel": "Uygun",
+    "singleTicketUsd": "1 - 1.50 $ (şehir içi otobüs); Kotor–Budva otobüsü ~4 - 6 $",
+    "dailyPassUsd": "Turistlere yönelik günlük kart yaygın değil",
+    "popularRideApps": [
+     "TeslaGo (yalnızca Podgorica)",
+     "Yerel taksi şirketleri (telefon / Viber)",
+     "GetByBus (şehirlerarası otobüs bileti)"
+    ],
+    "taxiAdvice": "Uber ve Bolt yoktur. Taksiyi telefonla veya otelden çağırın, binmeden ücreti sorun. Körfez, Lovćen ve Durmitor için araç kiralamak en pratik seçenektir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "10 - 16 $ (ćevapi, burek veya günün menüsü)",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "15 - 30 $ (Temmuz–Ağustos daha pahalı)",
+    "hotel3StarUsd": "60 - 120 $ (yaz zirvesinde kıyıda 150 $+)",
+    "flightCostIndex": "Düşük (direkt ~1 sa 45 dk)",
+    "flightTip": "İstanbul’dan Podgorica’ya direkt seferler vardır; yazın Tivat’a da uçuşlar artar. Kotor Körfezi’ne en yakın havalimanı Tivat’tır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kahve uzun ve sohbet eşliğinde içilir; acele etmek kabalık sayılabilir.",
+     "Tanışırken tokalaşılır; yakınlar arasında yanaktan üç kez öpüşmek yaygındır.",
+     "Evlere girerken ayakkabı çıkarılması beklenebilir; ev sahibinin ikramını geri çevirmemek nezakettir.",
+     "Manastır ve kiliselerde omuzlar ve dizler kapalı olmalıdır."
+    ],
+    "festivals": [
+     "Mimoza Festivali (Herceg Novi, Şubat)",
+     "Kotor Karnavalı (Şubat ve Ağustos)",
+     "Bokeška Noć – Boka Gecesi (Kotor Körfezi, Ağustos; ışıklı tekne geçidi)"
+    ],
+    "lifestyle": "“Polako” (yavaş yavaş) felsefesi: rahat tempo, güçlü aile bağları, uzun kafe sohbetleri ve dağ ile deniz arasında bölünmüş bir yaşam."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kotor Eski Şehri, surları ve San Giovanni Kalesi (UNESCO)",
+     "Perast ve Gospa od Škrpjela adacığı",
+     "Budva Eski Şehri ve Sveti Stefan manzarası",
+     "Durmitor Milli Parkı ve Tara Kanyonu",
+     "Ostrog Manastırı",
+     "Skadar Gölü Milli Parkı"
+    ],
+    "bestSeasons": "Deniz için Haziran – Eylül; yürüyüş ve kültür turu için Mayıs–Haziran ve Eylül–Ekim; kayak için Aralık – Mart (Žabljak, Kolašin).",
+    "travelStyleTip": "Araç kiralayın: Kotor serpantinleri, Lovćen ve Durmitor gibi en etkileyici yerlere toplu taşımayla ulaşmak zordur."
+   },
+   "religion": {
+    "primaryReligions": "Ortodoks Hristiyan (~%71), Müslüman (~%19), Katolik (~%3)",
+    "respectNorms": "Kilise ve manastırlarda kapalı giyinin, sessiz olun ve ayin sırasında fotoğraf çekmeyin; Ostrog’da girişte örtü verilir.",
+    "sacredSites": [
+     "Ostrog Manastırı (kayaya oyulmuş hac yeri)",
+     "Cetinje Manastırı",
+     "Aziz Tryphon Katedrali (Kotor)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Karadağca (Latin ve Kiril alfabesi). Sırpça, Boşnakça, Arnavutça ve Hırvatça da resmî kullanımdadır.",
+    "englishProficiency": "Kıyıda, otellerde ve gençler arasında iyi; iç kesimlerde ve yaşlılar arasında sınırlı.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "İyi günler / Merhaba",
+      "pronunciation": "Dobar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "Hvala"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen / Rica ederim",
+      "pronunciation": "Molim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "Koliko koşta?"
+     },
+     {
+      "phrase": "Račun, molim",
+      "meaning": "Hesap, lütfen",
+      "translation": "Hesap, lütfen",
+      "pronunciation": "Raçun, molim"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ortaçağ Zeta prensliğinin mirasçısı Karadağ, Osmanlı döneminde dağlık iç kesimlerde yarı özerk kaldı ve 1878 Berlin Kongresi’nde bağımsız devlet olarak tanındı. 1918’de Yugoslavya’ya katıldı, 2006 referandumuyla yeniden bağımsızlığını kazandı.",
+    "milestones": [
+     "1494: Cetinje’de Güney Slavlarının ilk Kiril harfli basılı kitabı (Oktoih)",
+     "1878: Berlin Kongresi ile bağımsızlığın tanınması",
+     "1918: Sırp-Hırvat-Sloven Krallığı’na (Yugoslavya) katılım",
+     "2006: Referandumla bağımsızlık; 2017’de NATO üyeliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kačamak (kaymak ve peynirle pişen mısır unu/patates lapası)",
+     "Crni rižot (mürekkep balığı mürekkepli siyah risotto)",
+     "Buzara midye (Kotor Körfezi’nin şaraplı-sarımsaklı midyesi)"
+    ],
+    "traditionalDrinks": [
+     "Vranac kırmızı şarabı",
+     "Loza (üzüm rakısı)",
+     "Nikšićko pivo (yerel bira)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (yoğurtla yenen börek)",
+     "Priganice (bal ve peynirle servis edilen kızarmış hamur)",
+     "Krempita (vanilyalı kremalı milföy tatlısı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "II. Petar Petrović-Njegoš (şair-prens, “Dağ Çelengi”)",
+     "Kral I. Nikola (Karadağ’ın tek kralı)",
+     "Nikola Vučević (NBA basketbolcusu)"
+    ],
+    "strongSectors": [
+     "Kıyı turizmi ve yatçılık (Porto Montenegro)",
+     "Hidroelektrik enerji",
+     "Şarapçılık (Vranac üzümü, Plantaže bağları)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Şehirlerde ve kıyıda kart yaygındır; dağ köyleri, plaj barları ve bazı taksiler yalnızca nakit Euro kabul eder.",
+    "tippingCulture": "Restoranlarda yaklaşık %10 bahşiş beklenir; kafelerde hesabı yuvarlamak yeterlidir.",
+    "economicPillars": "Turizm (ekonominin en büyük kalemi), enerji, inşaat-gayrimenkul ve boksit/alüminyum."
+   }
+  },
+  "itin": {
+   "routeName": "Karadağ: Kotor Körfezi, Budva, Skadar Gölü & Durmitor Dağları",
+   "routeSummary": "Tivat’a inip Kotor Körfezi’nin surlu kasabalarıyla başlayan; Budva ve Sveti Stefan sahillerinden Cetinje ve Skadar Gölü üzerinden Ostrog Manastırı’na ve Durmitor’un buzul göllerine uzanan 8 günlük deniz-dağ rotası.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Deniz & Dağ Rotası",
+   "bestSeason": "Haziran – Eylül (Mayıs sonu ve Eylül daha sakin)",
+   "transportMode": "Kiralık araç (önerilir) veya şehirlerarası otobüs + yerel taksi",
+   "paceLevel": "Dengeli (kıyıda rahat, dağda aktif)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Kačamak",
+     "Crni rižot",
+     "Buzara midye",
+     "Sač altında kuzu (ispod sača)"
+    ],
+    "drinks": [
+     "Vranac şarabı",
+     "Loza rakija",
+     "Nikšićko pivo"
+    ],
+    "streetFoods": [
+     "Burek",
+     "Priganice",
+     "Krempita"
+    ],
+    "diningAdvice": "Porsiyonlar büyüktür. Kıyıda balık ve deniz ürünleri kiloyla satılır; sipariş öncesi gramajı ve fiyatı sorun. Jambon (pršut) ve sucuklar genelde domuz etidir; menüde “svinjsko” (domuz) kelimesine dikkat edin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yürüyüş ayakkabısı (Kotor surları ve Durmitor patikaları)",
+     "Deniz ayakkabısı (plajların çoğu çakıllı)",
+     "Hafif mont veya rüzgarlık (dağlar serindir)",
+     "Priz adaptörü gerekmez (C/F tipi, 230V – Türkiye ile aynı)"
+    ],
+    "safetyAndEtiquette": [
+     "Dağ yollarında gece araç kullanmaktan kaçının; yollar dar ve aydınlatmasızdır.",
+     "Manastır ve kiliselere omuz ve dizleri kapatan kıyafetle girin.",
+     "Konaklama yerinizin turist kaydınızı yaptığından emin olun."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Kotor & Perast (Surlu Şehir ve Körfez)",
+     "recommendedDuration": "3 Gün (Kotor, Perast ve Njeguši için)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Kotor Eski Şehri ve Aziz Tryphon Katedrali (UNESCO)",
+      "San Giovanni Kalesi’ne surlar boyunca tırmanış",
+      "Perast ve Gospa od Škrpjela adacığı",
+      "Kotor serpantinleri ve Njeguši köyü"
+     ],
+     "activities": [
+      "Sıcak ve kruvaziyer kalabalığı başlamadan sabah erkenden surlardan San Giovanni Kalesi’ne tırmanın.",
+      "Perast’tan küçük bir tekneyle Kayalıkların Meryem Ana (Gospa od Škrpjela) adacığına geçin.",
+      "25 virajlı serpantin yoldan Njeguši köyüne çıkıp körfez manzarası eşliğinde yerel peynir tadın."
+     ],
+     "foodAndDrinks": [
+      "Buzara usulü midye (şaraplı-sarımsaklı)",
+      "Izgara levrek ve Dalmaçya usulü patates",
+      "Vranac kırmızı şarabı"
+     ],
+     "criticalTips": [
+      "Kale tırmanışı ücretlidir, gölgesizdir ve yüzlerce basamaktan oluşur; su, şapka ve rahat ayakkabı alın.",
+      "Kruvaziyer gemilerinin yanaştığı günlerde eski şehir öğle saatlerinde çok kalabalıktır; sabah veya akşam gezin."
+     ],
+     "mapsQuery": "Kotor Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Budva & Sveti Stefan (Adriyatik Sahilleri)",
+     "recommendedDuration": "2 Gün (plaj ve eski şehir için)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Budva Eski Şehri ve Citadela",
+      "Mogren Plajı",
+      "Sveti Stefan adacığı manzara noktası",
+      "Budva sahil yürüyüş yolu"
+     ],
+     "activities": [
+      "Budva surları içindeki dar sokakları gezip Citadela’dan gün batımını izleyin.",
+      "Kayalıkları kesen sahil patikasından Mogren Plajı’na yürüyün.",
+      "Sveti Stefan’ın karşısındaki halka açık plajda yüzün ve adacığı fotoğraflayın."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (mürekkep balıklı siyah risotto)",
+      "Izgara kalamar veya çipura",
+      "Priganice (bal ve peynirli kızarmış hamur)"
+     ],
+     "criticalTips": [
+      "Sveti Stefan adacığı yalnızca otel misafirlerine açıktır; manzarayı karşı sahilden izleyin.",
+      "Şezlong fiyatları yazın çok yükselebilir; fiyatı önceden sorun veya plajın halka açık bölümünü kullanın."
+     ],
+     "mapsQuery": "Budva Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Cetinje, Lovćen & Skadar Gölü (Eski Başkent ve Göl)",
+     "recommendedDuration": "1-2 Gün (günübirlik araçla)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Lovćen Milli Parkı ve Njegoš Anıt Mezarı",
+      "Cetinje Manastırı ve Kral Nikola Sarayı",
+      "Virpazar’dan Skadar Gölü tekne turu",
+      "Pavlova Strana’dan Rijeka Crnojevića kıvrımı manzarası"
+     ],
+     "activities": [
+      "Lovćen’deki Njegoš Anıt Mezarı’na basamakları tırmanıp Adriyatik ile dağları aynı anda seyredin.",
+      "Eski kraliyet başkenti Cetinje’de manastırı ve eski elçilik binalarını gezin.",
+      "Virpazar’dan nilüferler ve kuş kolonileri arasında tekneyle göl turu yapın."
+     ],
+     "foodAndDrinks": [
+      "Skadar Gölü sazanı veya kızarmış ukljeva balığı",
+      "Crmnica bölgesinin yerel şarapları",
+      "Njeguši peyniri"
+     ],
+     "criticalTips": [
+      "Lovćen ve Rijeka Crnojevića yolları dar ve virajlıdır; yalnızca gündüz ve yavaş sürün.",
+      "Tekne fiyatını iskelede önceden netleştirin; sabah turları daha serin ve kuş gözlemi için daha iyidir."
+     ],
+     "mapsQuery": "Virpazar, Montenegro"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Ostrog Manastırı & Durmitor (Kanyonlar ve Buzul Gölleri)",
+     "recommendedDuration": "2 Gün (Žabljak’ta konaklayarak)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kayaya oyulmuş Ostrog Manastırı",
+      "Žabljak ve Crno Jezero (Kara Göl)",
+      "Tara Kanyonu ve Đurđevića Tara Köprüsü",
+      "Durmitor panoramik yolu (Sedlo geçidi)"
+     ],
+     "activities": [
+      "Yolda Ostrog’un Yukarı Manastırı’nı ziyaret edin; son bölümü hacılar gibi yürüyerek çıkabilirsiniz.",
+      "Žabljak’tan Kara Göl çevresindeki ormanlık patikada yürüyüş yapın.",
+      "Tara Nehri’nde rafting yapın veya kanyon üzerindeki zipline’ı deneyin."
+     ],
+     "foodAndDrinks": [
+      "Kačamak (kaymak ve peynirle)",
+      "Sač altında pişen kuzu (ispod sača)",
+      "Durmitor dağ peyniri"
+     ],
+     "criticalTips": [
+      "Ostrog’a kapalı kıyafetle girin; kadınlar için etek ve örtü girişte verilir.",
+      "Durmitor’da hava hızla değişir; yazın bile mont alın, Sedlo geçidi kışın kapanabilir."
+     ],
+     "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "EUR (euro – official currency, although Montenegro is not an EU member)",
+   "bestMonths": "June – September (sea season, mountain roads open); late May–June and September are the best balance",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Violent crime against tourists is rare. The main risks are pickpocketing in crowded coastal towns in summer, inflated taxi and beach prices, and traffic on narrow mountain roads.",
+    "commonScams": [
+     "Taxis at Tivat Airport, Kotor and Budva that refuse the meter or quote a flat “tourist price”",
+     "Undisclosed high charges for sunbeds and umbrellas on private beach sections",
+     "Boat trips sold on the Kotor and Budva piers without a clearly agreed price"
+    ],
+    "safeTravelTips": [
+     "Agree on the fare before getting in, or ask your hotel to call a taxi.",
+     "Avoid driving the Kotor serpentine, Lovćen and Tara Canyon roads after dark.",
+     "Walking around Budva and Kotor town centres in swimwear can be fined; cover up away from the beach."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G almost everywhere; 5G in Podgorica and on the coast)",
+    "costPerGbUsd": "~0.50 - 1.50 $ (tourist SIM bundles 10–20 €)",
+    "esimAvailability": "Good (international eSIMs work without issues)",
+    "bestCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (mostly buses; rail only on the Bar–Podgorica–Kolašin line)",
+    "costLevel": "Affordable",
+    "singleTicketUsd": "1 - 1.50 $ (city bus); Kotor–Budva bus ~4 - 6 $",
+    "dailyPassUsd": "Day passes for tourists are not common",
+    "popularRideApps": [
+     "TeslaGo (Podgorica only)",
+     "Local taxi companies (phone / Viber)",
+     "GetByBus (intercity bus tickets)"
+    ],
+    "taxiAdvice": "There is no Uber or Bolt. Order taxis by phone or through your hotel and confirm the fare first. Renting a car is the most practical way to explore the bay, Lovćen and Durmitor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "10 - 16 $ (ćevapi, burek or a set lunch)",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "15 - 30 $ (higher in July–August)",
+    "hotel3StarUsd": "60 - 120 $ (150 $+ on the coast in peak summer)",
+    "flightCostIndex": "Low (direct ~1 h 45 min)",
+    "flightTip": "There are direct flights from Istanbul to Podgorica, with extra summer flights to Tivat. Tivat is the closest airport to the Bay of Kotor."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Coffee is a long, social ritual; rushing someone can come across as rude.",
+     "People shake hands when meeting; three kisses on the cheek are common among friends.",
+     "You may be expected to take off your shoes at home; accepting a host’s food and drink is polite.",
+     "Shoulders and knees should be covered in monasteries and churches."
+    ],
+    "festivals": [
+     "Mimosa Festival (Herceg Novi, February)",
+     "Kotor Carnival (February and August)",
+     "Bokeška Noć – Boka Night (Bay of Kotor, August; illuminated boat parade)"
+    ],
+    "lifestyle": "The “polako” (slowly, slowly) philosophy: an unhurried pace, strong family ties, long café chats and a life split between mountains and sea."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kotor Old Town, walls and San Giovanni Fortress (UNESCO)",
+     "Perast and the islet of Our Lady of the Rocks",
+     "Budva Old Town and the view of Sveti Stefan",
+     "Durmitor National Park and the Tara Canyon",
+     "Ostrog Monastery",
+     "Lake Skadar National Park"
+    ],
+    "bestSeasons": "June – September for the sea; May–June and September–October for hiking and sightseeing; December – March for skiing (Žabljak, Kolašin).",
+    "travelStyleTip": "Rent a car: the most spectacular places, such as the Kotor serpentine, Lovćen and Durmitor, are hard to reach by public transport."
+   },
+   "religion": {
+    "primaryReligions": "Orthodox Christian (~71%), Muslim (~19%), Catholic (~3%)",
+    "respectNorms": "Dress modestly in churches and monasteries, keep quiet and do not photograph services; wraps are provided at the entrance of Ostrog.",
+    "sacredSites": [
+     "Ostrog Monastery (cliff-built pilgrimage site)",
+     "Cetinje Monastery",
+     "Cathedral of Saint Tryphon (Kotor)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Montenegrin (Latin and Cyrillic scripts). Serbian, Bosnian, Albanian and Croatian are also in official use.",
+    "englishProficiency": "Good on the coast, in hotels and among young people; limited inland and among older people.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Good day / Hello",
+      "translation": "Good day / Hello",
+      "pronunciation": "DOH-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "HVAH-lah"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Please / You are welcome",
+      "translation": "Please / You are welcome",
+      "pronunciation": "MOH-leem"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KOH-lee-koh KOSH-tah"
+     },
+     {
+      "phrase": "Račun, molim",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "RAH-choon, MOH-leem"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Heir to the medieval principality of Zeta, Montenegro remained semi-autonomous in its mountains during the Ottoman era and was recognised as independent at the 1878 Congress of Berlin. It joined Yugoslavia in 1918 and regained independence by referendum in 2006.",
+    "milestones": [
+     "1494: The first Cyrillic book printed among the South Slavs (Oktoih) in Cetinje",
+     "1878: Independence recognised at the Congress of Berlin",
+     "1918: Joins the Kingdom of Serbs, Croats and Slovenes (Yugoslavia)",
+     "2006: Independence by referendum; NATO membership in 2017"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kačamak (cornmeal/potato mash cooked with kajmak and cheese)",
+     "Crni rižot (black risotto with cuttlefish ink)",
+     "Mussels buzara (Bay of Kotor mussels in wine and garlic)"
+    ],
+    "traditionalDrinks": [
+     "Vranac red wine",
+     "Loza (grape rakija)",
+     "Nikšićko pivo (local beer)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (pastry eaten with yoghurt)",
+     "Priganice (fried dough served with honey and cheese)",
+     "Krempita (vanilla custard slice)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Petar II Petrović-Njegoš (poet-prince, “The Mountain Wreath”)",
+     "King Nikola I (Montenegro’s only king)",
+     "Nikola Vučević (NBA player)"
+    ],
+    "strongSectors": [
+     "Coastal tourism and yachting (Porto Montenegro)",
+     "Hydropower",
+     "Winemaking (Vranac grape, Plantaže vineyards)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards are widely accepted in cities and on the coast; mountain villages, beach bars and some taxis take cash euros only.",
+    "tippingCulture": "Around 10% is expected in restaurants; rounding up is enough in cafés.",
+    "economicPillars": "Tourism (the largest sector), energy, construction and real estate, and bauxite/aluminium."
+   }
+  },
+  "itin": {
+   "routeName": "Montenegro: Bay of Kotor, Budva, Lake Skadar & the Durmitor Mountains",
+   "routeSummary": "An 8-day sea-and-mountains route that starts with the walled towns of the Bay of Kotor after landing in Tivat, follows the beaches of Budva and Sveti Stefan, and continues via Cetinje and Lake Skadar to Ostrog Monastery and the glacial lakes of Durmitor.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Sea & Mountains Route",
+   "bestSeason": "June – September (late May and September are calmer)",
+   "transportMode": "Rental car (recommended) or intercity buses + local taxis",
+   "paceLevel": "Balanced (relaxed on the coast, active in the mountains)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Kačamak",
+     "Crni rižot",
+     "Mussels buzara",
+     "Lamb under the sač (ispod sača)"
+    ],
+    "drinks": [
+     "Vranac wine",
+     "Loza rakija",
+     "Nikšićko pivo"
+    ],
+    "streetFoods": [
+     "Burek",
+     "Priganice",
+     "Krempita"
+    ],
+    "diningAdvice": "Portions are large. On the coast fish and seafood are sold by the kilo, so ask for the weight and price before ordering. Pršut ham and sausages are usually pork; look out for the word “svinjsko” on menus."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Hiking shoes (Kotor walls and Durmitor trails)",
+     "Water shoes (most beaches are pebbly)",
+     "Light jacket or windbreaker (the mountains are cool)",
+     "Type C/F plug adapter if needed (230V)"
+    ],
+    "safetyAndEtiquette": [
+     "Avoid driving mountain roads at night; they are narrow and unlit.",
+     "Cover shoulders and knees when visiting monasteries and churches.",
+     "Make sure your accommodation registers your stay with the tourist office."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Kotor & Perast (Walled Town and Bay)",
+     "recommendedDuration": "3 Days (for Kotor, Perast and Njeguši)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Kotor Old Town and the Cathedral of Saint Tryphon (UNESCO)",
+      "Climb along the walls to San Giovanni Fortress",
+      "Perast and the islet of Our Lady of the Rocks",
+      "The Kotor serpentine road and Njeguši village"
+     ],
+     "activities": [
+      "Climb the walls to San Giovanni Fortress early in the morning, before the heat and cruise crowds.",
+      "Take a small boat from Perast to the islet of Our Lady of the Rocks (Gospa od Škrpjela).",
+      "Drive the 25 hairpin bends up to Njeguši and taste local cheese with a view over the bay."
+     ],
+     "foodAndDrinks": [
+      "Mussels buzara (in wine and garlic)",
+      "Grilled sea bass with Dalmatian-style potatoes",
+      "Vranac red wine"
+     ],
+     "criticalTips": [
+      "The fortress climb has an entrance fee, no shade and hundreds of steps; bring water, a hat and good shoes.",
+      "On cruise-ship days the old town is packed around midday; visit in the morning or evening."
+     ],
+     "mapsQuery": "Kotor Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Budva & Sveti Stefan (Adriatic Beaches)",
+     "recommendedDuration": "2 Days (beach and old town)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Budva Old Town and the Citadel",
+      "Mogren Beach",
+      "Sveti Stefan viewpoint",
+      "Budva seafront promenade"
+     ],
+     "activities": [
+      "Wander the lanes inside Budva’s walls and watch the sunset from the Citadel.",
+      "Walk the cliffside path to Mogren Beach.",
+      "Swim at the public beach facing Sveti Stefan and photograph the islet."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (black cuttlefish-ink risotto)",
+      "Grilled squid or sea bream",
+      "Priganice (fried dough with honey and cheese)"
+     ],
+     "criticalTips": [
+      "Sveti Stefan islet is open to hotel guests only; enjoy the view from the opposite shore.",
+      "Sunbed prices can soar in summer; ask first or use the public section of the beach."
+     ],
+     "mapsQuery": "Budva Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Cetinje, Lovćen & Lake Skadar (Old Capital and Lake)",
+     "recommendedDuration": "1-2 Days (day trip by car)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Lovćen National Park and the Njegoš Mausoleum",
+      "Cetinje Monastery and King Nikola’s Palace",
+      "Boat trip on Lake Skadar from Virpazar",
+      "Pavlova Strana viewpoint over the Rijeka Crnojevića bend"
+     ],
+     "activities": [
+      "Climb the steps to the Njegoš Mausoleum on Lovćen and see the Adriatic and the mountains at once.",
+      "Explore the monastery and former embassy buildings of the old royal capital, Cetinje.",
+      "Take a boat from Virpazar through water lilies and bird colonies."
+     ],
+     "foodAndDrinks": [
+      "Lake Skadar carp or fried bleak (ukljeva)",
+      "Local wines from the Crmnica region",
+      "Njeguši cheese"
+     ],
+     "criticalTips": [
+      "The Lovćen and Rijeka Crnojevića roads are narrow and winding; drive slowly and only in daylight.",
+      "Agree the boat price at the pier in advance; morning trips are cooler and better for birdwatching."
+     ],
+     "mapsQuery": "Virpazar, Montenegro"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Ostrog Monastery & Durmitor (Canyons and Glacial Lakes)",
+     "recommendedDuration": "2 Days (staying in Žabljak)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Cliff-built Ostrog Monastery",
+      "Žabljak and Crno Jezero (Black Lake)",
+      "Tara Canyon and the Đurđevića Tara Bridge",
+      "Durmitor panoramic road (Sedlo pass)"
+     ],
+     "activities": [
+      "Stop at the Upper Monastery of Ostrog on the way; you can walk the last stretch like the pilgrims.",
+      "Hike the forest trail around the Black Lake from Žabljak.",
+      "Go rafting on the Tara River or ride the zipline over the canyon."
+     ],
+     "foodAndDrinks": [
+      "Kačamak (with kajmak and cheese)",
+      "Lamb cooked under the sač (ispod sača)",
+      "Durmitor mountain cheese"
+     ],
+     "criticalTips": [
+      "Dress modestly at Ostrog; skirts and wraps for women are provided at the entrance.",
+      "Weather in Durmitor changes fast; bring a jacket even in summer, and the Sedlo pass can close in winter."
+     ],
+     "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "EUR (Euro – offizielle Währung, obwohl Montenegro kein EU-Mitglied ist)",
+   "bestMonths": "Juni – September (Badesaison, Bergstraßen offen); Ende Mai–Juni und September sind ideal",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Gewaltkriminalität gegen Touristen ist selten. Die Hauptrisiken sind Taschendiebstahl in vollen Küstenorten im Sommer, überhöhte Taxi- und Strandpreise sowie Verkehr auf engen Bergstraßen.",
+    "commonScams": [
+     "Taxis am Flughafen Tivat, in Kotor und Budva ohne Taxameter oder mit pauschalem „Touristenpreis“",
+     "Nicht angekündigte hohe Gebühren für Liegen und Schirme an privaten Strandabschnitten",
+     "Bootstouren an den Anlegern von Kotor und Budva ohne vorher klar vereinbarten Preis"
+    ],
+    "safeTravelTips": [
+     "Vereinbare den Fahrpreis vor dem Einsteigen oder lass das Hotel ein Taxi rufen.",
+     "Fahre die Serpentinen von Kotor, die Lovćen- und die Tara-Schlucht-Straße nicht bei Dunkelheit.",
+     "In Budva und Kotor drohen Bußgelder, wenn man in Badekleidung durch die Altstadt läuft."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ (4G fast überall; 5G in Podgorica und an der Küste)",
+    "costPerGbUsd": "~0.50 - 1.50 $ (Touristen-SIM-Pakete 10–20 €)",
+    "esimAvailability": "Gut (internationale eSIMs funktionieren problemlos)",
+    "bestCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (überwiegend Busse; Bahn nur auf der Strecke Bar–Podgorica–Kolašin)",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "1 - 1.50 $ (Stadtbus); Bus Kotor–Budva ~4 - 6 $",
+    "dailyPassUsd": "Tageskarten für Touristen sind unüblich",
+    "popularRideApps": [
+     "TeslaGo (nur Podgorica)",
+     "Lokale Taxiunternehmen (Telefon / Viber)",
+     "GetByBus (Fernbustickets)"
+    ],
+    "taxiAdvice": "Uber und Bolt gibt es nicht. Taxis telefonisch oder über das Hotel bestellen und den Preis vorher klären. Für die Bucht, den Lovćen und Durmitor ist ein Mietwagen am praktischsten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "10 - 16 $ (Ćevapi, Burek oder Mittagsmenü)",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "15 - 30 $ (im Juli–August teurer)",
+    "hotel3StarUsd": "60 - 120 $ (an der Küste in der Hochsaison 150 $+)",
+    "flightCostIndex": "Niedrig (Direktflug ~1 Std. 45 Min.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Podgorica, im Sommer zusätzlich nach Tivat. Tivat ist der nächstgelegene Flughafen zur Bucht von Kotor."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kaffee wird lange und gesellig getrunken; Eile wirkt schnell unhöflich.",
+     "Zur Begrüßung gibt man sich die Hand; unter Freunden sind drei Wangenküsse üblich.",
+     "Zu Hause werden oft die Schuhe ausgezogen; Speisen und Getränke des Gastgebers abzulehnen gilt als unhöflich.",
+     "In Klöstern und Kirchen sollten Schultern und Knie bedeckt sein."
+    ],
+    "festivals": [
+     "Mimosenfest (Herceg Novi, Februar)",
+     "Karneval von Kotor (Februar und August)",
+     "Bokeška Noć – Nacht der Boka (Bucht von Kotor, August; beleuchtete Bootsparade)"
+    ],
+    "lifestyle": "Die „Polako“-Philosophie (immer langsam): gemächliches Tempo, enge Familienbande, lange Kaffeehausgespräche und ein Leben zwischen Bergen und Meer."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Altstadt von Kotor, Stadtmauer und Festung San Giovanni (UNESCO)",
+     "Perast und die Insel Gospa od Škrpjela",
+     "Altstadt von Budva und Blick auf Sveti Stefan",
+     "Durmitor-Nationalpark und Tara-Schlucht",
+     "Kloster Ostrog",
+     "Nationalpark Skadarsee"
+    ],
+    "bestSeasons": "Juni – September zum Baden; Mai–Juni und September–Oktober zum Wandern und Besichtigen; Dezember – März zum Skifahren (Žabljak, Kolašin).",
+    "travelStyleTip": "Miete ein Auto: Die schönsten Orte wie die Serpentinen von Kotor, der Lovćen und Durmitor sind mit Bussen schwer erreichbar."
+   },
+   "religion": {
+    "primaryReligions": "Orthodoxe Christen (~71 %), Muslime (~19 %), Katholiken (~3 %)",
+    "respectNorms": "In Kirchen und Klöstern bedeckte Kleidung tragen, leise sein und Gottesdienste nicht fotografieren; in Ostrog gibt es Tücher am Eingang.",
+    "sacredSites": [
+     "Kloster Ostrog (in den Fels gebauter Wallfahrtsort)",
+     "Kloster Cetinje",
+     "Kathedrale des hl. Tryphon (Kotor)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Montenegrinisch (lateinische und kyrillische Schrift). Serbisch, Bosnisch, Albanisch und Kroatisch sind ebenfalls in Amtsgebrauch.",
+    "englishProficiency": "Gut an der Küste, in Hotels und bei jungen Leuten; im Landesinneren und bei Älteren begrenzt.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Guten Tag / Hallo",
+      "translation": "Guten Tag / Hallo",
+      "pronunciation": "DOH-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "HWA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KO-li-ko KOSCH-ta"
+     },
+     {
+      "phrase": "Račun, molim",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "RA-tschun, MO-lim"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Als Erbe des mittelalterlichen Fürstentums Zeta blieb Montenegro in osmanischer Zeit in seinen Bergen weitgehend autonom und wurde 1878 auf dem Berliner Kongress als unabhängig anerkannt. 1918 wurde es Teil Jugoslawiens und erlangte 2006 per Referendum erneut die Unabhängigkeit.",
+    "milestones": [
+     "1494: In Cetinje erscheint das erste kyrillische Druckwerk der Südslawen (Oktoich)",
+     "1878: Anerkennung der Unabhängigkeit auf dem Berliner Kongress",
+     "1918: Beitritt zum Königreich der Serben, Kroaten und Slowenen (Jugoslawien)",
+     "2006: Unabhängigkeit per Referendum; 2017 NATO-Beitritt"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kačamak (Maisgrieß-/Kartoffelbrei mit Kajmak und Käse)",
+     "Crni rižot (schwarzes Risotto mit Sepiatinte)",
+     "Muscheln Buzara (Miesmuscheln aus der Bucht von Kotor in Wein und Knoblauch)"
+    ],
+    "traditionalDrinks": [
+     "Vranac-Rotwein",
+     "Loza (Traubenschnaps)",
+     "Nikšićko pivo (heimisches Bier)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (Blätterteiggebäck mit Joghurt)",
+     "Priganice (frittierte Teigbällchen mit Honig und Käse)",
+     "Krempita (Vanillecremeschnitte)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Petar II. Petrović-Njegoš (Dichterfürst, „Der Bergkranz“)",
+     "König Nikola I. (einziger König Montenegros)",
+     "Nikola Vučević (NBA-Spieler)"
+    ],
+    "strongSectors": [
+     "Küstentourismus und Yachting (Porto Montenegro)",
+     "Wasserkraft",
+     "Weinbau (Vranac-Rebe, Weingüter Plantaže)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "In Städten und an der Küste werden Karten weithin akzeptiert; Bergdörfer, Strandbars und manche Taxis nehmen nur Bargeld.",
+    "tippingCulture": "In Restaurants sind etwa 10 % üblich; im Café genügt Aufrunden.",
+    "economicPillars": "Tourismus (größter Wirtschaftszweig), Energie, Bau und Immobilien sowie Bauxit/Aluminium."
+   }
+  },
+  "itin": {
+   "routeName": "Montenegro: Bucht von Kotor, Budva, Skadarsee & Durmitor-Gebirge",
+   "routeSummary": "Eine 8-tägige Meer-und-Berge-Route: nach der Landung in Tivat zuerst die ummauerten Orte der Bucht von Kotor, dann die Strände von Budva und Sveti Stefan und über Cetinje und den Skadarsee weiter zum Kloster Ostrog und zu den Gletscherseen des Durmitor.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Meer- & Bergroute",
+   "bestSeason": "Juni – September (Ende Mai und September ruhiger)",
+   "transportMode": "Mietwagen (empfohlen) oder Fernbusse + lokale Taxis",
+   "paceLevel": "Ausgewogen (entspannt an der Küste, aktiv in den Bergen)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Kačamak",
+     "Crni rižot",
+     "Muscheln Buzara",
+     "Lamm unter der Sač-Glocke"
+    ],
+    "drinks": [
+     "Vranac-Wein",
+     "Loza-Schnaps",
+     "Nikšićko pivo"
+    ],
+    "streetFoods": [
+     "Burek",
+     "Priganice",
+     "Krempita"
+    ],
+    "diningAdvice": "Die Portionen sind groß. An der Küste werden Fisch und Meeresfrüchte nach Kilo verkauft; vor der Bestellung nach Gewicht und Preis fragen. Pršut-Schinken und Würste sind meist aus Schweinefleisch („svinjsko“)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Wanderschuhe (Stadtmauer von Kotor und Durmitor-Pfade)",
+     "Badeschuhe (die meisten Strände sind steinig)",
+     "Leichte Jacke oder Windjacke (in den Bergen ist es kühl)",
+     "Stecker Typ C/F (230 V) – für Reisende aus der EU kein Adapter nötig"
+    ],
+    "safetyAndEtiquette": [
+     "Bergstraßen nachts meiden; sie sind eng und unbeleuchtet.",
+     "Klöster und Kirchen mit bedeckten Schultern und Knien besuchen.",
+     "Darauf achten, dass die Unterkunft den Aufenthalt beim Tourismusamt anmeldet."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Kotor & Perast (Ummauerte Stadt und Bucht)",
+     "recommendedDuration": "3 Tage (für Kotor, Perast und Njeguši)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Altstadt von Kotor und Kathedrale des hl. Tryphon (UNESCO)",
+      "Aufstieg entlang der Mauer zur Festung San Giovanni",
+      "Perast und die Insel Gospa od Škrpjela",
+      "Serpentinenstraße von Kotor und das Dorf Njeguši"
+     ],
+     "activities": [
+      "Steige früh am Morgen, vor Hitze und Kreuzfahrtgruppen, über die Mauern zur Festung San Giovanni.",
+      "Fahre von Perast mit einem kleinen Boot zur Insel Maria vom Felsen (Gospa od Škrpjela).",
+      "Fahre die 25 Kehren hinauf nach Njeguši und probiere lokalen Käse mit Blick auf die Bucht."
+     ],
+     "foodAndDrinks": [
+      "Muscheln Buzara (in Wein und Knoblauch)",
+      "Gegrillter Wolfsbarsch mit dalmatinischen Kartoffeln",
+      "Vranac-Rotwein"
+     ],
+     "criticalTips": [
+      "Der Festungsaufstieg kostet Eintritt, bietet keinen Schatten und hat Hunderte Stufen; Wasser, Hut und gute Schuhe mitnehmen.",
+      "An Kreuzfahrttagen ist die Altstadt mittags überfüllt; besser morgens oder abends besuchen."
+     ],
+     "mapsQuery": "Kotor Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Budva & Sveti Stefan (Adriastrände)",
+     "recommendedDuration": "2 Tage (Strand und Altstadt)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Altstadt von Budva und Zitadelle",
+      "Mogren-Strand",
+      "Aussichtspunkt auf Sveti Stefan",
+      "Strandpromenade von Budva"
+     ],
+     "activities": [
+      "Bummle durch die Gassen innerhalb der Stadtmauer und erlebe den Sonnenuntergang an der Zitadelle.",
+      "Wandere auf dem Klippenpfad zum Mogren-Strand.",
+      "Bade am öffentlichen Strand gegenüber von Sveti Stefan und fotografiere die Insel."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (schwarzes Risotto mit Sepiatinte)",
+      "Gegrillter Tintenfisch oder Dorade",
+      "Priganice (frittierter Teig mit Honig und Käse)"
+     ],
+     "criticalTips": [
+      "Die Insel Sveti Stefan ist nur für Hotelgäste zugänglich; genieße den Blick vom gegenüberliegenden Ufer.",
+      "Liegenpreise steigen im Sommer stark; vorher fragen oder den öffentlichen Strandteil nutzen."
+     ],
+     "mapsQuery": "Budva Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Cetinje, Lovćen & Skadarsee (Alte Hauptstadt und See)",
+     "recommendedDuration": "1-2 Tage (Tagesausflug mit dem Auto)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Lovćen-Nationalpark und Njegoš-Mausoleum",
+      "Kloster Cetinje und Palast von König Nikola",
+      "Bootsfahrt auf dem Skadarsee ab Virpazar",
+      "Aussichtspunkt Pavlova Strana über der Flussschleife der Rijeka Crnojevića"
+     ],
+     "activities": [
+      "Steige die Stufen zum Njegoš-Mausoleum auf dem Lovćen hinauf und sieh Adria und Berge zugleich.",
+      "Erkunde in der alten Königsstadt Cetinje das Kloster und die ehemaligen Botschaftsgebäude.",
+      "Fahre ab Virpazar mit dem Boot durch Seerosenfelder und Vogelkolonien."
+     ],
+     "foodAndDrinks": [
+      "Karpfen aus dem Skadarsee oder frittierte Ukljeva",
+      "Weine aus der Region Crmnica",
+      "Käse aus Njeguši"
+     ],
+     "criticalTips": [
+      "Die Straßen am Lovćen und nach Rijeka Crnojevića sind eng und kurvig; nur bei Tageslicht und langsam fahren.",
+      "Bootspreis am Anleger vorher vereinbaren; Fahrten am Morgen sind kühler und besser zur Vogelbeobachtung."
+     ],
+     "mapsQuery": "Virpazar, Montenegro"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Kloster Ostrog & Durmitor (Schluchten und Gletscherseen)",
+     "recommendedDuration": "2 Tage (Übernachtung in Žabljak)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "In den Fels gebautes Kloster Ostrog",
+      "Žabljak und Crno Jezero (Schwarzer See)",
+      "Tara-Schlucht und Đurđevića-Tara-Brücke",
+      "Durmitor-Panoramastraße (Sedlo-Pass)"
+     ],
+     "activities": [
+      "Besuche unterwegs das Obere Kloster Ostrog; das letzte Stück kann man wie die Pilger zu Fuß gehen.",
+      "Wandere von Žabljak auf dem Waldweg rund um den Schwarzen See.",
+      "Mach eine Raftingtour auf der Tara oder fahre mit der Seilrutsche über die Schlucht."
+     ],
+     "foodAndDrinks": [
+      "Kačamak (mit Kajmak und Käse)",
+      "Lamm unter der Sač-Glocke (ispod sača)",
+      "Bergkäse aus dem Durmitor"
+     ],
+     "criticalTips": [
+      "In Ostrog bedeckte Kleidung tragen; Röcke und Tücher für Frauen liegen am Eingang bereit.",
+      "Das Wetter im Durmitor wechselt schnell; auch im Sommer eine Jacke mitnehmen, der Sedlo-Pass kann im Winter gesperrt sein."
+     ],
+     "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "EUR (euro – moneda oficial, aunque Montenegro no es miembro de la UE)",
+   "bestMonths": "Junio – septiembre (temporada de playa, carreteras de montaña abiertas); finales de mayo–junio y septiembre son lo más equilibrado",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Los delitos violentos contra turistas son poco frecuentes. Los riesgos principales son los carteristas en las localidades costeras abarrotadas en verano, los precios inflados de taxis y playas y el tráfico en estrechas carreteras de montaña.",
+    "commonScams": [
+     "Taxis en el aeropuerto de Tivat, Kotor y Budva que no usan taxímetro o piden un “precio para turistas”",
+     "Cargos elevados no anunciados por hamacas y sombrillas en zonas privadas de playa",
+     "Excursiones en barco vendidas en los muelles de Kotor y Budva sin un precio claro"
+    ],
+    "safeTravelTips": [
+     "Acuerda la tarifa antes de subir o pide al hotel que llame a un taxi.",
+     "Evita conducir de noche por las curvas de Kotor, el Lovćen y la carretera del cañón del Tara.",
+     "En Budva y Kotor pueden multarte por pasear en bañador por el centro; cúbrete fuera de la playa."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G casi en todas partes; 5G en Podgorica y la costa)",
+    "costPerGbUsd": "~0.50 - 1.50 $ (paquetes SIM turísticos de 10–20 €)",
+    "esimAvailability": "Buena (las eSIM internacionales funcionan sin problemas)",
+    "bestCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Media (sobre todo autobuses; tren solo en la línea Bar–Podgorica–Kolašin)",
+    "costLevel": "Asequible",
+    "singleTicketUsd": "1 - 1.50 $ (autobús urbano); autobús Kotor–Budva ~4 - 6 $",
+    "dailyPassUsd": "Los abonos diarios para turistas no son habituales",
+    "popularRideApps": [
+     "TeslaGo (solo Podgorica)",
+     "Compañías de taxi locales (teléfono / Viber)",
+     "GetByBus (billetes de autobús interurbano)"
+    ],
+    "taxiAdvice": "No hay Uber ni Bolt. Pide el taxi por teléfono o a través del hotel y confirma el precio antes. Alquilar coche es la forma más práctica de recorrer la bahía, el Lovćen y el Durmitor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "10 - 16 $ (ćevapi, burek o menú del día)",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "15 - 30 $ (más caro en julio–agosto)",
+    "hotel3StarUsd": "60 - 120 $ (150 $+ en la costa en pleno verano)",
+    "flightCostIndex": "Bajo (directo ~1 h 45 min)",
+    "flightTip": "Hay vuelos directos de Estambul a Podgorica y, en verano, también a Tivat. Tivat es el aeropuerto más cercano a la bahía de Kotor."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "El café es un ritual largo y social; meter prisa puede parecer descortés.",
+     "Al conocerse se da la mano; entre amigos son habituales tres besos en la mejilla.",
+     "En las casas puede esperarse que te quites los zapatos; aceptar lo que ofrece el anfitrión es de buena educación.",
+     "En monasterios e iglesias hay que cubrir hombros y rodillas."
+    ],
+    "festivals": [
+     "Festival de la Mimosa (Herceg Novi, febrero)",
+     "Carnaval de Kotor (febrero y agosto)",
+     "Bokeška Noć – Noche de Boka (bahía de Kotor, agosto; desfile de barcos iluminados)"
+    ],
+    "lifestyle": "La filosofía del “polako” (despacito): ritmo pausado, fuertes lazos familiares, largas charlas de café y una vida repartida entre la montaña y el mar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Casco antiguo de Kotor, murallas y fortaleza de San Giovanni (UNESCO)",
+     "Perast y el islote de Nuestra Señora de las Rocas",
+     "Casco antiguo de Budva y vistas de Sveti Stefan",
+     "Parque Nacional Durmitor y cañón del Tara",
+     "Monasterio de Ostrog",
+     "Parque Nacional del Lago Skadar"
+    ],
+    "bestSeasons": "Junio – septiembre para el mar; mayo–junio y septiembre–octubre para senderismo y visitas; diciembre – marzo para esquiar (Žabljak, Kolašin).",
+    "travelStyleTip": "Alquila un coche: los lugares más espectaculares, como las curvas de Kotor, el Lovćen y el Durmitor, son difíciles de alcanzar en transporte público."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ortodoxos (~71%), musulmanes (~19%), católicos (~3%)",
+    "respectNorms": "Viste con recato en iglesias y monasterios, guarda silencio y no fotografíes los oficios; en Ostrog prestan pañuelos a la entrada.",
+    "sacredSites": [
+     "Monasterio de Ostrog (santuario excavado en la roca)",
+     "Monasterio de Cetinje",
+     "Catedral de San Trifón (Kotor)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Montenegrino (alfabetos latino y cirílico). El serbio, bosnio, albanés y croata también son de uso oficial.",
+    "englishProficiency": "Bueno en la costa, en hoteles y entre los jóvenes; limitado en el interior y entre las personas mayores.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Buenos días / Hola",
+      "translation": "Buenos días / Hola",
+      "pronunciation": "DO-bar dan"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "JVA-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Račun, molim",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "RA-chun, MO-lim"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Heredero del principado medieval de Zeta, Montenegro se mantuvo semiautónomo en sus montañas durante la época otomana y fue reconocido como independiente en el Congreso de Berlín de 1878. En 1918 se integró en Yugoslavia y recuperó la independencia por referéndum en 2006.",
+    "milestones": [
+     "1494: Se imprime en Cetinje el primer libro cirílico de los eslavos del sur (Oktoih)",
+     "1878: Reconocimiento de la independencia en el Congreso de Berlín",
+     "1918: Integración en el Reino de los Serbios, Croatas y Eslovenos (Yugoslavia)",
+     "2006: Independencia por referéndum; ingreso en la OTAN en 2017"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kačamak (puré de harina de maíz/patata con kajmak y queso)",
+     "Crni rižot (risotto negro con tinta de sepia)",
+     "Mejillones buzara (de la bahía de Kotor, con vino y ajo)"
+    ],
+    "traditionalDrinks": [
+     "Vino tinto Vranac",
+     "Loza (aguardiente de uva)",
+     "Nikšićko pivo (cerveza local)"
+    ],
+    "streetFoodAndDesserts": [
+     "Burek (hojaldre que se come con yogur)",
+     "Priganice (buñuelos con miel y queso)",
+     "Krempita (milhojas de crema de vainilla)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Petar II Petrović-Njegoš (príncipe poeta, “La guirnalda de la montaña”)",
+     "Rey Nikola I (único rey de Montenegro)",
+     "Nikola Vučević (jugador de la NBA)"
+    ],
+    "strongSectors": [
+     "Turismo costero y náutico (Porto Montenegro)",
+     "Energía hidroeléctrica",
+     "Vinicultura (uva Vranac, viñedos Plantaže)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas se aceptan ampliamente en ciudades y en la costa; aldeas de montaña, chiringuitos y algunos taxis solo aceptan efectivo.",
+    "tippingCulture": "En restaurantes se espera alrededor del 10%; en cafeterías basta con redondear.",
+    "economicPillars": "Turismo (el mayor sector), energía, construcción e inmobiliario, y bauxita/aluminio."
+   }
+  },
+  "itin": {
+   "routeName": "Montenegro: bahía de Kotor, Budva, lago Skadar y montañas del Durmitor",
+   "routeSummary": "Una ruta de 8 días entre mar y montaña: tras aterrizar en Tivat empieza por los pueblos amurallados de la bahía de Kotor, sigue por las playas de Budva y Sveti Stefan y continúa por Cetinje y el lago Skadar hasta el monasterio de Ostrog y los lagos glaciares del Durmitor.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 8 días entre mar y montaña",
+   "bestSeason": "Junio – septiembre (finales de mayo y septiembre más tranquilos)",
+   "transportMode": "Coche de alquiler (recomendado) o autobuses interurbanos + taxis locales",
+   "paceLevel": "Equilibrado (relajado en la costa, activo en la montaña)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Kačamak",
+     "Crni rižot",
+     "Mejillones buzara",
+     "Cordero bajo el sač (ispod sača)"
+    ],
+    "drinks": [
+     "Vino Vranac",
+     "Rakija Loza",
+     "Nikšićko pivo"
+    ],
+    "streetFoods": [
+     "Burek",
+     "Priganice",
+     "Krempita"
+    ],
+    "diningAdvice": "Las raciones son generosas. En la costa el pescado y el marisco se venden al peso: pregunta el peso y el precio antes de pedir. El jamón pršut y los embutidos suelen ser de cerdo (“svinjsko”)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calzado de senderismo (murallas de Kotor y rutas del Durmitor)",
+     "Escarpines de agua (la mayoría de playas son de guijarros)",
+     "Chaqueta ligera o cortavientos (la montaña es fresca)",
+     "Enchufe tipo C/F (230 V); desde España no hace falta adaptador"
+    ],
+    "safetyAndEtiquette": [
+     "Evita conducir de noche por carreteras de montaña: son estrechas y sin iluminación.",
+     "Cubre hombros y rodillas al visitar monasterios e iglesias.",
+     "Asegúrate de que tu alojamiento registra tu estancia en la oficina de turismo."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Kotor y Perast (Ciudad amurallada y bahía)",
+     "recommendedDuration": "3 Días (para Kotor, Perast y Njeguši)",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Casco antiguo de Kotor y catedral de San Trifón (UNESCO)",
+      "Subida por las murallas a la fortaleza de San Giovanni",
+      "Perast y el islote de Nuestra Señora de las Rocas",
+      "La carretera de curvas de Kotor y el pueblo de Njeguši"
+     ],
+     "activities": [
+      "Sube por las murallas hasta la fortaleza de San Giovanni a primera hora, antes del calor y de los cruceristas.",
+      "Toma una barca en Perast hasta el islote de Nuestra Señora de las Rocas (Gospa od Škrpjela).",
+      "Sube las 25 curvas hasta Njeguši y prueba queso local con vistas a la bahía."
+     ],
+     "foodAndDrinks": [
+      "Mejillones buzara (con vino y ajo)",
+      "Lubina a la parrilla con patatas a la dálmata",
+      "Vino tinto Vranac"
+     ],
+     "criticalTips": [
+      "La subida a la fortaleza es de pago, sin sombra y con cientos de escalones; lleva agua, sombrero y buen calzado.",
+      "Los días de crucero el casco antiguo se llena a mediodía; visítalo por la mañana o al atardecer."
+     ],
+     "mapsQuery": "Kotor Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Budva y Sveti Stefan (Playas del Adriático)",
+     "recommendedDuration": "2 Días (playa y casco antiguo)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Casco antiguo de Budva y la Ciudadela",
+      "Playa de Mogren",
+      "Mirador de Sveti Stefan",
+      "Paseo marítimo de Budva"
+     ],
+     "activities": [
+      "Recorre las callejuelas dentro de las murallas de Budva y mira la puesta de sol desde la Ciudadela.",
+      "Camina por el sendero de acantilado hasta la playa de Mogren.",
+      "Báñate en la playa pública frente a Sveti Stefan y fotografía el islote."
+     ],
+     "foodAndDrinks": [
+      "Crni rižot (risotto negro con tinta de sepia)",
+      "Calamar o dorada a la parrilla",
+      "Priganice (buñuelos con miel y queso)"
+     ],
+     "criticalTips": [
+      "El islote de Sveti Stefan solo está abierto a huéspedes del hotel; disfruta de la vista desde la orilla de enfrente.",
+      "Las hamacas pueden ser muy caras en verano; pregunta antes o usa la zona pública de la playa."
+     ],
+     "mapsQuery": "Budva Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cetinje, Lovćen y lago Skadar (Antigua capital y lago)",
+     "recommendedDuration": "1-2 Días (excursión en coche)",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Parque Nacional Lovćen y mausoleo de Njegoš",
+      "Monasterio de Cetinje y palacio del rey Nikola",
+      "Paseo en barco por el lago Skadar desde Virpazar",
+      "Mirador de Pavlova Strana sobre el meandro de Rijeka Crnojevića"
+     ],
+     "activities": [
+      "Sube los escalones del mausoleo de Njegoš en el Lovćen y contempla a la vez el Adriático y las montañas.",
+      "Recorre el monasterio y las antiguas embajadas de la vieja capital real, Cetinje.",
+      "Navega desde Virpazar entre nenúfares y colonias de aves."
+     ],
+     "foodAndDrinks": [
+      "Carpa del lago Skadar o alburno frito (ukljeva)",
+      "Vinos locales de la región de Crmnica",
+      "Queso de Njeguši"
+     ],
+     "criticalTips": [
+      "Las carreteras del Lovćen y de Rijeka Crnojevića son estrechas y sinuosas; conduce despacio y solo de día.",
+      "Acuerda el precio del barco en el muelle; las salidas matinales son más frescas y mejores para ver aves."
+     ],
+     "mapsQuery": "Virpazar, Montenegro"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Monasterio de Ostrog y Durmitor (Cañones y lagos glaciares)",
+     "recommendedDuration": "2 Días (alojándote en Žabljak)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Monasterio de Ostrog excavado en la roca",
+      "Žabljak y Crno Jezero (Lago Negro)",
+      "Cañón del Tara y puente Đurđevića Tara",
+      "Carretera panorámica del Durmitor (paso de Sedlo)"
+     ],
+     "activities": [
+      "Para en el Monasterio Superior de Ostrog; puedes subir a pie el último tramo como los peregrinos.",
+      "Haz la ruta por el bosque alrededor del Lago Negro desde Žabljak.",
+      "Practica rafting en el río Tara o lánzate en tirolina sobre el cañón."
+     ],
+     "foodAndDrinks": [
+      "Kačamak (con kajmak y queso)",
+      "Cordero cocinado bajo el sač (ispod sača)",
+      "Queso de montaña del Durmitor"
+     ],
+     "criticalTips": [
+      "Viste con recato en Ostrog; a la entrada prestan faldas y pañuelos a las mujeres.",
+      "El tiempo en el Durmitor cambia rápido; lleva chaqueta incluso en verano, y el paso de Sedlo puede cerrar en invierno."
+     ],
+     "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "EUR (евро – официальная валюта, хотя Черногория не входит в ЕС)",
+   "bestMonths": "Июнь – сентябрь (пляжный сезон, горные дороги открыты); оптимально конец мая–июнь и сентябрь",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Насильственные преступления против туристов редки. Главные риски — карманные кражи в переполненных курортных городах летом, завышенные цены на такси и пляжи, а также движение по узким горным дорогам.",
+    "commonScams": [
+     "Такси в аэропорту Тивата, в Которе и Будве без счётчика или с фиксированной «туристической ценой»",
+     "Необъявленные высокие цены за лежаки и зонтики на частных участках пляжа",
+     "Морские прогулки, продаваемые на причалах Котора и Будвы без чётко оговорённой цены"
+    ],
+    "safeTravelTips": [
+     "Договаривайтесь о цене до посадки или просите отель вызвать такси.",
+     "Не ездите в темноте по серпантину Котора, дорогам Ловчена и каньона Тары.",
+     "В Будве и Которе можно получить штраф за прогулку по центру в купальнике; вне пляжа одевайтесь."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G почти везде; 5G в Подгорице и на побережье)",
+    "costPerGbUsd": "~0.50 - 1.50 $ (туристические SIM-пакеты 10–20 €)",
+    "esimAvailability": "Хорошая (международные eSIM работают без проблем)",
+    "bestCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (в основном автобусы; железная дорога только Бар–Подгорица–Колашин)",
+    "costLevel": "Недорого",
+    "singleTicketUsd": "1 - 1.50 $ (городской автобус); автобус Котор–Будва ~4 - 6 $",
+    "dailyPassUsd": "Дневные проездные для туристов не распространены",
+    "popularRideApps": [
+     "TeslaGo (только Подгорица)",
+     "Местные службы такси (телефон / Viber)",
+     "GetByBus (билеты на междугородние автобусы)"
+    ],
+    "taxiAdvice": "Uber и Bolt нет. Вызывайте такси по телефону или через отель и заранее уточняйте цену. Для поездок по заливу, Ловчену и Дурмитору удобнее всего арендовать машину."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "10 - 16 $ (чевапи, бурек или комплексный обед)",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "15 - 30 $ (дороже в июле–августе)",
+    "hotel3StarUsd": "60 - 120 $ (на побережье в разгар лета 150 $+)",
+    "flightCostIndex": "Низкий (прямой рейс ~1 ч 45 мин)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Подгорицу, летом добавляются рейсы в Тиват. Тиват — ближайший аэропорт к Которскому заливу."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Кофе пьют долго и за беседой; торопить собеседника считается невежливым.",
+     "При встрече пожимают руку; среди близких принято трижды целоваться в щёку.",
+     "В доме могут попросить снять обувь; отказываться от угощения хозяев невежливо.",
+     "В монастырях и церквях плечи и колени должны быть закрыты."
+    ],
+    "festivals": [
+     "Праздник мимозы (Херцег-Нови, февраль)",
+     "Которский карнавал (февраль и август)",
+     "Бокельская ночь – Bokeška Noć (Которский залив, август; парад освещённых лодок)"
+    ],
+    "lifestyle": "Философия «полако» (потихоньку): неспешный ритм, крепкие семейные связи, долгие разговоры в кафе и жизнь между горами и морем."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Старый город Котора, крепостные стены и крепость Святого Иоанна (ЮНЕСКО)",
+     "Пераст и остров Госпа-од-Шкрпьела",
+     "Старый город Будвы и вид на Свети-Стефан",
+     "Национальный парк Дурмитор и каньон Тары",
+     "Монастырь Острог",
+     "Национальный парк Скадарское озеро"
+    ],
+    "bestSeasons": "Июнь – сентябрь для моря; май–июнь и сентябрь–октябрь для походов и экскурсий; декабрь – март для лыж (Жабляк, Колашин).",
+    "travelStyleTip": "Возьмите машину напрокат: самые эффектные места — серпантин Котора, Ловчен, Дурмитор — сложно увидеть на общественном транспорте."
+   },
+   "religion": {
+    "primaryReligions": "Православные христиане (~71%), мусульмане (~19%), католики (~3%)",
+    "respectNorms": "В церквях и монастырях одевайтесь закрыто, соблюдайте тишину и не фотографируйте службы; в Остроге на входе выдают накидки.",
+    "sacredSites": [
+     "Монастырь Острог (высеченная в скале святыня)",
+     "Цетинский монастырь",
+     "Собор Святого Трифона (Котор)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Черногорский (латиница и кириллица). Сербский, боснийский, албанский и хорватский также используются официально.",
+    "englishProficiency": "Хорошо на побережье, в отелях и среди молодёжи; ограниченно во внутренних районах и у старшего поколения. Русский язык многие понимают.",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Добрый день / Здравствуйте",
+      "translation": "Добрый день / Здравствуйте",
+      "pronunciation": "Добар дан"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "Хвала"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "Молим"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "Колико кошта?"
+     },
+     {
+      "phrase": "Račun, molim",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "Рачун, молим"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Наследница средневекового княжества Зета, Черногория в османскую эпоху сохраняла полуавтономию в горах и была признана независимой на Берлинском конгрессе 1878 года. В 1918 году вошла в состав Югославии, а в 2006 году вновь обрела независимость по итогам референдума.",
+    "milestones": [
+     "1494: В Цетине напечатана первая кириллическая книга южных славян (Октоих)",
+     "1878: Признание независимости на Берлинском конгрессе",
+     "1918: Вхождение в Королевство сербов, хорватов и словенцев (Югославию)",
+     "2006: Независимость по референдуму; в 2017 году — вступление в НАТО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Качамак (каша из кукурузной муки/картофеля с каймаком и сыром)",
+     "Црни рижот (чёрное ризотто с чернилами каракатицы)",
+     "Мидии бузара (мидии Которского залива в вине с чесноком)"
+    ],
+    "traditionalDrinks": [
+     "Красное вино Вранац",
+     "Лоза (виноградная ракия)",
+     "Никшичко пиво (местное пиво)"
+    ],
+    "streetFoodAndDesserts": [
+     "Бурек (слоёный пирог с йогуртом)",
+     "Приганице (пончики с мёдом и сыром)",
+     "Кремпита (пирожное с ванильным кремом)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Петар II Петрович-Негош (поэт и правитель, «Горный венец»)",
+     "Король Никола I (единственный король Черногории)",
+     "Никола Вучевич (игрок НБА)"
+    ],
+    "strongSectors": [
+     "Прибрежный туризм и яхтинг (Porto Montenegro)",
+     "Гидроэнергетика",
+     "Виноделие (сорт Вранац, виноградники Plantaže)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В городах и на побережье карты принимают широко; в горных сёлах, пляжных барах и некоторых такси — только наличные евро.",
+    "tippingCulture": "В ресторанах принято оставлять около 10%; в кафе достаточно округлить счёт.",
+    "economicPillars": "Туризм (крупнейшая отрасль), энергетика, строительство и недвижимость, бокситы и алюминий."
+   }
+  },
+  "itin": {
+   "routeName": "Черногория: Которский залив, Будва, Скадарское озеро и горы Дурмитор",
+   "routeSummary": "8-дневный маршрут «море и горы»: после прилёта в Тиват — города-крепости Которского залива, затем пляжи Будвы и Свети-Стефана, а через Цетине и Скадарское озеро — монастырь Острог и ледниковые озёра Дурмитора.",
+   "totalDays": 8,
+   "idealDurationText": "8-дневный маршрут «море и горы»",
+   "bestSeason": "Июнь – сентябрь (конец мая и сентябрь спокойнее)",
+   "transportMode": "Арендованный автомобиль (рекомендуется) или междугородние автобусы + местное такси",
+   "paceLevel": "Сбалансированный (спокойно на побережье, активно в горах)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Качамак",
+     "Црни рижот",
+     "Мидии бузара",
+     "Ягнятина испод сача"
+    ],
+    "drinks": [
+     "Вино Вранац",
+     "Ракия лоза",
+     "Никшичко пиво"
+    ],
+    "streetFoods": [
+     "Бурек",
+     "Приганице",
+     "Кремпита"
+    ],
+    "diningAdvice": "Порции большие. На побережье рыбу и морепродукты продают на вес — уточняйте вес и цену до заказа. Пршут и колбасы обычно из свинины («svinjsko»)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Треккинговая обувь (стены Котора и тропы Дурмитора)",
+     "Коралловые тапочки (большинство пляжей галечные)",
+     "Лёгкая куртка или ветровка (в горах прохладно)",
+     "Розетки типа C/F (230 В) — как в России, адаптер не нужен"
+    ],
+    "safetyAndEtiquette": [
+     "Не ездите по горным дорогам ночью: они узкие и не освещены.",
+     "Посещайте монастыри и храмы с закрытыми плечами и коленями.",
+     "Убедитесь, что жильё зарегистрировало ваше пребывание в туристической организации."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Котор и Пераст (Город-крепость и залив)",
+     "recommendedDuration": "3 дня (Котор, Пераст и Негуши)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Старый город Котора и собор Святого Трифона (ЮНЕСКО)",
+      "Подъём по стенам к крепости Святого Иоанна",
+      "Пераст и остров Госпа-од-Шкрпьела",
+      "Которский серпантин и село Негуши"
+     ],
+     "activities": [
+      "Поднимитесь по стенам к крепости Святого Иоанна рано утром, до жары и круизных толп.",
+      "Доплывите на лодке из Пераста до острова Богородицы на Рифе (Госпа-од-Шкрпьела).",
+      "Проедьте 25 поворотов серпантина до Негуши и попробуйте местный сыр с видом на залив."
+     ],
+     "foodAndDrinks": [
+      "Мидии бузара (в вине с чесноком)",
+      "Сибас на гриле с картофелем по-далматински",
+      "Красное вино Вранац"
+     ],
+     "criticalTips": [
+      "Подъём в крепость платный, без тени и по сотням ступеней; возьмите воду, головной убор и удобную обувь.",
+      "В дни прихода круизных лайнеров Старый город в полдень переполнен; гуляйте утром или вечером."
+     ],
+     "mapsQuery": "Kotor Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Будва и Свети-Стефан (Пляжи Адриатики)",
+     "recommendedDuration": "2 дня (пляж и Старый город)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Старый город Будвы и Цитадель",
+      "Пляж Могрен",
+      "Смотровая площадка на Свети-Стефан",
+      "Набережная Будвы"
+     ],
+     "activities": [
+      "Погуляйте по улочкам внутри стен Будвы и встретьте закат у Цитадели.",
+      "Пройдите по тропе вдоль скал к пляжу Могрен.",
+      "Искупайтесь на общественном пляже напротив Свети-Стефана и сфотографируйте остров."
+     ],
+     "foodAndDrinks": [
+      "Црни рижот (чёрное ризотто с чернилами каракатицы)",
+      "Кальмары или дорадо на гриле",
+      "Приганице (пончики с мёдом и сыром)"
+     ],
+     "criticalTips": [
+      "Остров Свети-Стефан открыт только для гостей отеля; любуйтесь им с противоположного берега.",
+      "Летом цены на лежаки сильно растут; уточняйте заранее или пользуйтесь общественной частью пляжа."
+     ],
+     "mapsQuery": "Budva Old Town, Montenegro"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Цетине, Ловчен и Скадарское озеро (Старая столица и озеро)",
+     "recommendedDuration": "1-2 дня (поездка на машине)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Национальный парк Ловчен и мавзолей Негоша",
+      "Цетинский монастырь и дворец короля Николы",
+      "Прогулка на лодке по Скадарскому озеру из Вирпазара",
+      "Смотровая Павлова-Страна над излучиной Риеки-Црноевича"
+     ],
+     "activities": [
+      "Поднимитесь по ступеням к мавзолею Негоша на Ловчене и увидьте одновременно Адриатику и горы.",
+      "Осмотрите монастырь и здания бывших посольств в старой королевской столице Цетине.",
+      "Проплывите на лодке из Вирпазара среди кувшинок и птичьих колоний."
+     ],
+     "foodAndDrinks": [
+      "Карп из Скадарского озера или жареная уклея",
+      "Местные вина региона Црмница",
+      "Негушский сыр"
+     ],
+     "criticalTips": [
+      "Дороги на Ловчен и к Риеке-Црноевича узкие и извилистые; ездите медленно и только днём.",
+      "Цену лодки обговаривайте на причале заранее; утренние прогулки прохладнее и лучше для наблюдения за птицами."
+     ],
+     "mapsQuery": "Virpazar, Montenegro"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Монастырь Острог и Дурмитор (Каньоны и ледниковые озёра)",
+     "recommendedDuration": "2 дня (с ночёвкой в Жабляке)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Монастырь Острог, встроенный в скалу",
+      "Жабляк и Црно-Езеро (Чёрное озеро)",
+      "Каньон Тары и мост Джурджевича",
+      "Панорамная дорога Дурмитора (перевал Седло)"
+     ],
+     "activities": [
+      "По пути посетите Верхний монастырь Острог; последний участок можно пройти пешком, как паломники.",
+      "Пройдите лесную тропу вокруг Чёрного озера от Жабляка.",
+      "Сплавьтесь по реке Таре или прокатитесь на зиплайне над каньоном."
+     ],
+     "foodAndDrinks": [
+      "Качамак (с каймаком и сыром)",
+      "Ягнятина под сачем (испод сача)",
+      "Горный сыр Дурмитора"
+     ],
+     "criticalTips": [
+      "В Острог входите в закрытой одежде; юбки и платки для женщин выдают на входе.",
+      "Погода на Дурмиторе меняется быстро; берите куртку даже летом, а перевал Седло зимой может быть закрыт."
+     ],
+     "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  }
+ }
+}

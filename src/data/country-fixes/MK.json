@@ -1,0 +1,482 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Makedon Dinarı (MKD)",
+   "bestMonths": "Mayıs – Eylül (Ohri Gölü’nde yüzme Haziran – Eylül); Üsküp yazın 35 °C’yi aşabilir, şehir gezisi için Nisan–Haziran ve Eylül–Ekim ideal",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenlidir; şiddet suçu turistleri nadiren etkiler. Üsküp’te yankesicilik, kış aylarındaki yoğun hava kirliliği ve trafik başlıca dikkat edilmesi gerekenlerdir.",
+    "commonScams": [
+     "Taksimetre açmayan veya havalimanında fahiş sabit fiyat isteyen taksiler",
+     "Sokakta resmî döviz bürosu dışında para bozdurma teklifleri",
+     "Ohri iskelesinde fiyatı önceden netleştirilmeyen tekne turları"
+    ],
+    "safeTravelTips": [
+     "Taksiyi Wizi veya Global Taxi gibi uygulamalardan çağırın; havalimanında resmî taksi sırasını kullanın.",
+     "Para bozdurmayı resmî döviz bürolarında (menuvačnica) yapın.",
+     "Kasım–Şubat arasında Üsküp’te hava kirliliği çok yükselebilir; solunum rahatsızlığınız varsa maske taşıyın."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%98 (4G yaygın; 5G Üsküp ve büyük şehirlerde)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "İyi (uluslararası eSIM’ler çalışır; yerel SIM’ler ucuzdur)",
+    "bestCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (şehirlerarası otobüs ağırlıklı; demiryolu sınırlı)",
+    "costLevel": "Çok ekonomik",
+    "singleTicketUsd": "~0.60 - 0.80 $ (Üsküp şehir otobüsü); Üsküp–Ohri otobüsü ~10 - 12 $",
+    "dailyPassUsd": "Günlük kart sınırlı; tek biletler zaten çok ucuzdur",
+    "popularRideApps": [
+     "Wizi",
+     "Global Taxi Skopje",
+     "BeeRide"
+    ],
+    "taxiAdvice": "Uber ve Bolt yoktur. Üsküp’te taksiler ucuzdur; taksimetre açılmasını isteyin veya uygulamayla çağırın. Ohri ve Manastır’da taksiyi konaklama yerinize çağırtın; çoğu taksi yalnızca nakit dinar alır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "6 - 10 $ (tavče gravče, kebapi veya burek)",
+    "coffeeUsd": "1.20 - 2.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "45 - 80 $",
+    "flightCostIndex": "Düşük (direkt ~1 sa 30 dk)",
+    "flightTip": "İstanbul’dan Üsküp’e Turkish Airlines ve Pegasus ile direkt uçuşlar vardır. Ohri’ye Üsküp’ten otobüsle yaklaşık 3 saatte ulaşılır."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "Zdravo"
+     },
+     {
+      "phrase": "Благодарам (Blagodaram)",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "Blagodaram"
+     },
+     {
+      "phrase": "Извинете (Izvinete)",
+      "meaning": "Affedersiniz",
+      "translation": "Affedersiniz",
+      "pronunciation": "İzvinete"
+     },
+     {
+      "phrase": "Колку чини? (Kolku čini?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "Kolku çini?"
+     },
+     {
+      "phrase": "Сметка, молам (Smetka, molam)",
+      "meaning": "Hesap, lütfen",
+      "translation": "Hesap, lütfen",
+      "pronunciation": "Smetka, molam"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Macedonian denar (MKD)",
+   "bestMonths": "May – September (swimming in Lake Ohrid June – September); Skopje can exceed 35 °C in summer, so April–June and September–October are best for city trips",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe; violent crime rarely affects tourists. The main things to watch are pickpocketing in Skopje, heavy winter air pollution and traffic.",
+    "commonScams": [
+     "Taxis that refuse the meter or ask a high flat fare at the airport",
+     "Street offers to change money outside official exchange offices",
+     "Boat trips on the Ohrid waterfront without a price agreed in advance"
+    ],
+    "safeTravelTips": [
+     "Order taxis through apps such as Wizi or Global Taxi; use the official taxi rank at the airport.",
+     "Change money only at official exchange offices (menuvačnica).",
+     "Air pollution in Skopje can be very high from November to February; carry a mask if you have breathing problems."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G widespread; 5G in Skopje and larger towns)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Good (international eSIMs work; local SIMs are cheap)",
+    "bestCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (mostly intercity buses; limited rail)",
+    "costLevel": "Very cheap",
+    "singleTicketUsd": "~0.60 - 0.80 $ (Skopje city bus); Skopje–Ohrid bus ~10 - 12 $",
+    "dailyPassUsd": "Day passes are limited; single fares are already very cheap",
+    "popularRideApps": [
+     "Wizi",
+     "Global Taxi Skopje",
+     "BeeRide"
+    ],
+    "taxiAdvice": "There is no Uber or Bolt. Taxis in Skopje are cheap; ask for the meter or book through an app. In Ohrid and Bitola ask your accommodation to call a taxi; most drivers take cash denars only."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "6 - 10 $ (tavče gravče, kebapi or burek)",
+    "coffeeUsd": "1.20 - 2.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "45 - 80 $",
+    "flightCostIndex": "Low (direct ~1 h 30 min)",
+    "flightTip": "Turkish Airlines and Pegasus fly direct from Istanbul to Skopje. Ohrid is about 3 hours from Skopje by bus."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "ZDRAH-voh"
+     },
+     {
+      "phrase": "Благодарам (Blagodaram)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "blah-GOH-dah-ram"
+     },
+     {
+      "phrase": "Извинете (Izvinete)",
+      "meaning": "Excuse me",
+      "translation": "Excuse me",
+      "pronunciation": "eez-vee-NEH-teh"
+     },
+     {
+      "phrase": "Колку чини? (Kolku čini?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KOL-koo CHEE-nee"
+     },
+     {
+      "phrase": "Сметка, молам (Smetka, molam)",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "SMET-kah, MOH-lahm"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Mazedonischer Denar (MKD)",
+   "bestMonths": "Mai – September (Baden im Ohridsee Juni – September); in Skopje kann es im Sommer über 35 °C heiß werden, für Städtereisen sind April–Juni und September–Oktober ideal",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher; Gewaltkriminalität betrifft Touristen selten. Zu beachten sind vor allem Taschendiebstahl in Skopje, starke Luftverschmutzung im Winter und der Straßenverkehr.",
+    "commonScams": [
+     "Taxis ohne Taxameter oder mit überhöhtem Pauschalpreis am Flughafen",
+     "Angebote zum Geldwechsel auf der Straße außerhalb offizieller Wechselstuben",
+     "Bootstouren an der Uferpromenade von Ohrid ohne vorher vereinbarten Preis"
+    ],
+    "safeTravelTips": [
+     "Taxis über Apps wie Wizi oder Global Taxi bestellen; am Flughafen den offiziellen Taxistand nutzen.",
+     "Geld nur in offiziellen Wechselstuben (menuvačnica) tauschen.",
+     "Von November bis Februar kann die Luftverschmutzung in Skopje sehr hoch sein; bei Atemwegsproblemen eine Maske mitnehmen."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98 % (4G verbreitet; 5G in Skopje und größeren Städten)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Gut (internationale eSIMs funktionieren; lokale SIMs sind günstig)",
+    "bestCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (vor allem Fernbusse; wenig Bahnverkehr)",
+    "costLevel": "Sehr günstig",
+    "singleTicketUsd": "~0.60 - 0.80 $ (Stadtbus Skopje); Bus Skopje–Ohrid ~10 - 12 $",
+    "dailyPassUsd": "Tageskarten kaum verbreitet; Einzelfahrten sind ohnehin sehr billig",
+    "popularRideApps": [
+     "Wizi",
+     "Global Taxi Skopje",
+     "BeeRide"
+    ],
+    "taxiAdvice": "Uber und Bolt gibt es nicht. Taxis in Skopje sind günstig; auf das Taxameter bestehen oder per App buchen. In Ohrid und Bitola das Taxi über die Unterkunft rufen; die meisten Fahrer nehmen nur Denar in bar."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "6 - 10 $ (Tavče gravče, Kebapi oder Burek)",
+    "coffeeUsd": "1.20 - 2.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "45 - 80 $",
+    "flightCostIndex": "Niedrig (Direktflug ~1 Std. 30 Min.)",
+    "flightTip": "Turkish Airlines und Pegasus fliegen direkt von Istanbul nach Skopje. Ohrid liegt etwa 3 Busstunden von Skopje entfernt."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "SDRA-wo"
+     },
+     {
+      "phrase": "Благодарам (Blagodaram)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "bla-GO-da-ram"
+     },
+     {
+      "phrase": "Извинете (Izvinete)",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "is-wi-NE-te"
+     },
+     {
+      "phrase": "Колку чини? (Kolku čini?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KOL-ku TSCHI-ni"
+     },
+     {
+      "phrase": "Сметка, молам (Smetka, molam)",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "SMET-ka, MO-lam"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Denar macedonio (MKD)",
+   "bestMonths": "Mayo – septiembre (baño en el lago Ohrid de junio a septiembre); en verano Skopie puede superar los 35 °C, así que abril–junio y septiembre–octubre son mejores para la ciudad",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro; los delitos violentos rara vez afectan a turistas. Lo principal a vigilar son los carteristas en Skopie, la fuerte contaminación invernal y el tráfico.",
+    "commonScams": [
+     "Taxis que no ponen el taxímetro o piden una tarifa fija alta en el aeropuerto",
+     "Ofertas callejeras para cambiar dinero fuera de las casas de cambio oficiales",
+     "Paseos en barco en el paseo de Ohrid sin precio acordado de antemano"
+    ],
+    "safeTravelTips": [
+     "Pide taxis con apps como Wizi o Global Taxi; en el aeropuerto usa la parada oficial.",
+     "Cambia dinero solo en casas de cambio oficiales (menuvačnica).",
+     "De noviembre a febrero la contaminación en Skopie puede ser muy alta; lleva mascarilla si tienes problemas respiratorios."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G extendido; 5G en Skopie y ciudades grandes)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Buena (las eSIM internacionales funcionan; las SIM locales son baratas)",
+    "bestCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Media (sobre todo autobuses interurbanos; tren limitado)",
+    "costLevel": "Muy barato",
+    "singleTicketUsd": "~0.60 - 0.80 $ (autobús urbano de Skopie); autobús Skopie–Ohrid ~10 - 12 $",
+    "dailyPassUsd": "Abonos diarios poco habituales; los billetes sencillos ya son muy baratos",
+    "popularRideApps": [
+     "Wizi",
+     "Global Taxi Skopje",
+     "BeeRide"
+    ],
+    "taxiAdvice": "No hay Uber ni Bolt. Los taxis en Skopie son baratos; pide que pongan el taxímetro o resérvalo por app. En Ohrid y Bitola pide al alojamiento que llame al taxi; la mayoría solo acepta denares en efectivo."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "6 - 10 $ (tavče gravče, kebapi o burek)",
+    "coffeeUsd": "1.20 - 2.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "45 - 80 $",
+    "flightCostIndex": "Bajo (directo ~1 h 30 min)",
+    "flightTip": "Turkish Airlines y Pegasus vuelan directo de Estambul a Skopie. Ohrid está a unas 3 horas de Skopie en autobús."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "SDRA-vo"
+     },
+     {
+      "phrase": "Благодарам (Blagodaram)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "bla-GO-da-ram"
+     },
+     {
+      "phrase": "Извинете (Izvinete)",
+      "meaning": "Disculpe",
+      "translation": "Disculpe",
+      "pronunciation": "is-vi-NE-te"
+     },
+     {
+      "phrase": "Колку чини? (Kolku čini?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KOL-ku CHI-ni"
+     },
+     {
+      "phrase": "Сметка, молам (Smetka, molam)",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "SMET-ka, MO-lam"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Македонский денар (MKD)",
+   "bestMonths": "Май – сентябрь (купание в Охридском озере с июня по сентябрь); летом в Скопье бывает выше 35 °C, для городских прогулок лучше апрель–июнь и сентябрь–октябрь",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно; насильственные преступления редко затрагивают туристов. Главное — карманные кражи в Скопье, сильное зимнее загрязнение воздуха и дорожное движение.",
+    "commonScams": [
+     "Такси без счётчика или с завышенной фиксированной ценой в аэропорту",
+     "Уличные предложения обменять деньги вне официальных обменников",
+     "Прогулки на лодке на набережной Охрида без заранее оговорённой цены"
+    ],
+    "safeTravelTips": [
+     "Вызывайте такси через приложения Wizi или Global Taxi; в аэропорту пользуйтесь официальной стоянкой.",
+     "Меняйте деньги только в официальных обменниках (menuvačnica).",
+     "С ноября по февраль загрязнение воздуха в Скопье бывает очень высоким; при проблемах с дыханием возьмите маску."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G повсеместно; 5G в Скопье и крупных городах)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Хорошая (международные eSIM работают; местные SIM недорогие)",
+    "bestCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (в основном междугородние автобусы; железная дорога ограничена)",
+    "costLevel": "Очень дёшево",
+    "singleTicketUsd": "~0.60 - 0.80 $ (городской автобус Скопье); автобус Скопье–Охрид ~10 - 12 $",
+    "dailyPassUsd": "Дневные проездные мало распространены; разовые билеты и так очень дешёвые",
+    "popularRideApps": [
+     "Wizi",
+     "Global Taxi Skopje",
+     "BeeRide"
+    ],
+    "taxiAdvice": "Uber и Bolt нет. Такси в Скопье дешёвые; просите включить счётчик или заказывайте через приложение. В Охриде и Битоле вызывайте такси через жильё; большинство водителей принимают только наличные денары."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "6 - 10 $ (тавче гравче, кебапи или бурек)",
+    "coffeeUsd": "1.20 - 2.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "45 - 80 $",
+    "flightCostIndex": "Низкий (прямой рейс ~1 ч 30 мин)",
+    "flightTip": "Turkish Airlines и Pegasus летают из Стамбула в Скопье без пересадок. До Охрида от Скопье около 3 часов на автобусе."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Привет / Здравствуйте",
+      "translation": "Привет / Здравствуйте",
+      "pronunciation": "Здраво"
+     },
+     {
+      "phrase": "Благодарам (Blagodaram)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "Благодарам"
+     },
+     {
+      "phrase": "Извинете (Izvinete)",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "Извинете"
+     },
+     {
+      "phrase": "Колку чини? (Kolku čini?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "Колку чини?"
+     },
+     {
+      "phrase": "Сметка, молам (Smetka, molam)",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "Сметка, молам"
+     }
+    ]
+   }
+  }
+ }
+}

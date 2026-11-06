@@ -1,3 +1,4 @@
+import { applyCountryFix } from './countryFixHook';
 /**
  * Vizamigo - Ülke Bazlı Turistik Gezi Rehberi & Rota Planlama Veritabanı
  * 199 ülke için ideal gezi süreleri (kaç gün sürer), duraklar, her durakta
@@ -2124,7 +2125,7 @@ export function generateDynamicCountryItinerary(
  * Ülke Seyahat Rota Planını Döndürür
  * Küratörlü zengin veri varsa onu, yoksa dinamik sentezleyiciyi çalıştırır.
  */
-export function getCountryItinerary(
+function getCountryItineraryImpl(
   countryCode: string,
   lang: string = 'tr'
 ): CountryTravelItinerary {
@@ -2188,4 +2189,8 @@ export function getCountryItinerary(
       safetyAndEtiquette: tArr(curated.packingAndPrecautions.safetyAndEtiquette)
     }
   };
+}
+
+export function getCountryItinerary(countryCode: string, lang: string = 'tr'): CountryTravelItinerary {
+  return applyCountryFix('itin', countryCode, lang, getCountryItineraryImpl(countryCode, lang));
 }

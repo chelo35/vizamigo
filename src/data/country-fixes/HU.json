@@ -1,0 +1,1507 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Macar Forinti (HUF)",
+   "plugType": "Tip C, F (230V, 50Hz)",
+   "bestMonths": "Nisan – Haziran ve Eylül – Ekim (ılık hava); Aralık Noel pazarları için",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenlidir; Budapeşte’de kalabalık tramvay/metro hatlarında yankesicilik ve turistik barlarda fahiş hesap tuzakları başlıca risklerdir.",
+    "commonScams": [
+     "Sokakta tanışılan kişilerin sizi bara davet edip yüzlerce euroluk hesap çıkarması",
+     "Váci utca çevresindeki restoranlarda fiyatsız menü ve şişirilmiş hesap",
+     "Turistik döviz bürolarında kötü kur ve ‘komisyonsuz’ tabelaları"
+    ],
+    "safeTravelTips": [
+     "Fiyatı yazılı olmayan yerde sipariş vermeyin; hesabı ödemeden önce kalem kalem kontrol edin.",
+     "Taksiyi Főtaxi, City Taxi veya Bolt uygulamasıyla çağırın; Budapeşte’de tarife sabittir.",
+     "Bileti metroya girerken veya araçta mutlaka doğrulayın ya da BudapestGO’dan alın."
+    ],
+    "emergencyNumbers": {
+     "police": "107",
+     "ambulance": "104",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus kapsaması (4G yaygın, şehirlerde 5G)",
+    "costPerGbUsd": "~1.50 - 3.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Çok İyi (metro, tramvay ve banliyö trenleri)",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "1.20 - 1.40 $ (450 HUF)",
+    "dailyPassUsd": "7.00 - 8.00 $ (24h)",
+    "popularRideApps": [
+     "BudapestGO",
+     "Bolt",
+     "Főtaxi",
+     "City Taxi",
+     "MÁV"
+    ],
+    "taxiAdvice": "Uber Macaristan’da çalışmaz; Bolt ve Főtaxi/City Taxi uygulamaları lisanslı taksi gönderir ve Budapeşte’de resmi sabit tarife uygulanır. Şehirlerarası yolculuk için MÁV trenleri ve Volánbusz otobüsleri uygundur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 55 $",
+    "dailyBudgetMidrangeUsd": "85 - 140 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "1.00 - 1.50 $",
+    "hostelDormUsd": "18 - 32 $",
+    "hotel3StarUsd": "65 - 115 $",
+    "flightCostIndex": "Düşük (İstanbul – Budapeşte direkt ~2 sa)",
+    "flightTip": "İstanbul’dan Budapeşte’ye THY, Pegasus ve Wizz Air direkt uçar; Wizz Air’de bagaj ücretlerini hesaba katın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Macarlar soyadını önce söyler (ör. Liszt Ferenc); resmî ortamda unvanla hitap edilir.",
+     "Bira bardaklarını tokuşturmak eski bir gelenek gereği hâlâ bazı kişilerce hoş karşılanmaz; şarap ve pálinka ile tokuşturulur.",
+     "Kadeh kaldırırken ‘Egészségedre!’ deyip göz teması kurun.",
+     "Termal hamamlarda mayo ve terlik zorunludur; havlu kiralanabilir."
+    ],
+    "festivals": [
+     "Sziget Festivali (Ağustos, Budapeşte)",
+     "20 Ağustos Aziz István Günü (Tuna üzerinde havai fişek)",
+     "Budapeşte Noel pazarları (Vörösmarty Meydanı ve Bazilika önü)"
+    ],
+    "lifestyle": "Termal hamam kültürü, kahvehane geleneği, ‘romkocsma’ denen harabe barlar ve güçlü klasik müzik mirası."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Macar Parlamento Binası",
+     "Buda Kalesi ve Balıkçı Tabyası",
+     "Széchenyi ve Gellért termal hamamları",
+     "Gül Baba Türbesi (Budapeşte)",
+     "Tuna Kıvrımı: Szentendre, Visegrád ve Esztergom",
+     "Eger Kalesi ve Osmanlı minaresi"
+    ],
+    "bestSeasons": "İlkbahar ve erken sonbahar; termal hamamlar sayesinde kış da keyiflidir",
+    "travelStyleTip": "Budapeşte’yi üs yapın; Tuna Kıvrımı ve Eger trenle kolay ulaşılır. Türk gezginler için Gül Baba Türbesi, Rudas Hamamı ve Eger minaresi ortak tarihin izlerini taşır."
+   },
+   "religion": {
+    "primaryReligions": "Roma Katolik ~%28, Reformcu (Kalvinist) ~%10, Lüteriyen ~%2; nüfusun büyük kısmı dinsiz veya inancını belirtmiyor.",
+    "respectNorms": "Kiliselerde omuz ve dizler kapalı olmalı; Dohány Sinagogu’nda erkeklere kipa verilir. Gül Baba Türbesi’nde sessiz ve saygılı olun.",
+    "sacredSites": [
+     "Aziz István Bazilikası (Budapeşte)",
+     "Dohány Caddesi Sinagogu (Avrupa’nın en büyüğü)",
+     "Esztergom Bazilikası"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Macarca",
+    "englishProficiency": "Budapeşte’de ve gençler arasında iyi; kırsalda sınırlı. Yaşlı kuşakta Almanca daha yaygındır.",
+    "phrases": [
+     {
+      "phrase": "Jó napot!",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "yoh NAH-poht"
+     },
+     {
+      "phrase": "Köszönöm",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkürler",
+      "pronunciation": "KÖ-sö-nöm"
+     },
+     {
+      "phrase": "Kérem",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen",
+      "pronunciation": "KAY-rem"
+     },
+     {
+      "phrase": "Mennyibe kerül?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Kaç para?",
+      "pronunciation": "MEN-nyee-beh KEH-rül"
+     },
+     {
+      "phrase": "Egészségedre!",
+      "meaning": "Sağlığına! (Şerefe)",
+      "translation": "Şerefe!",
+      "pronunciation": "EH-gays-shay-ged-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Macarlar 9. yüzyılın sonunda Karpat Havzası’na yerleşti ve 1000’de I. István ile krallık kuruldu. 1526 Mohaç Savaşı’ndan sonra Buda yaklaşık 150 yıl Osmanlı yönetiminde kaldı; ardından Habsburg dönemi ve 1867’de Avusturya-Macaristan geldi. 20. yüzyılın çalkantılarından sonra 1989’da demokratik cumhuriyet ilan edildi, 2004’te AB’ye katılındı.",
+    "milestones": [
+     "1000: I. István’ın taç giymesi",
+     "1541–1686: Buda’nın Osmanlı dönemi",
+     "1867: Avusturya-Macaristan İkili Monarşisi",
+     "1989: Cumhuriyetin ilanı; 2004: AB üyeliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gulyásleves (paprikalı sığır eti çorbası)",
+     "Paprikás csirke (ekşi kremalı paprikalı tavuk, nokedli ile)",
+     "Halászlé (acı paprikalı balıkçı çorbası)"
+    ],
+    "traditionalDrinks": [
+     "Tokaji Aszú (Tokaj bölgesinin tatlı şarabı)",
+     "Pálinka (meyve brendisi)",
+     "Unicum (bitkisel acı likör)"
+    ],
+    "streetFoodAndDesserts": [
+     "Lángos (kızarmış hamur; ekşi krema ve peynirle)",
+     "Kürtőskalács (şekerli baca keki)",
+     "Somlói galuska (çikolata soslu krem şantili pandispanya tatlısı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Liszt Ferenc (besteci ve piyanist)",
+     "Ernő Rubik (Rubik Küpü’nün mucidi)",
+     "Ferenc Puskás (efsanevi futbolcu)"
+    ],
+    "strongSectors": [
+     "Otomotiv üretimi (Audi Győr, Mercedes-Benz Kecskemét, BMW Debrecen)",
+     "İlaç sanayii (Gedeon Richter)",
+     "Şarapçılık ve tarım (Tokaj, Eger, Villány)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Para birimi forinttir; euro bazı turistik yerlerde kötü kurdan kabul edilir. Kart ve temassız ödeme çok yaygındır; pazarlar ve hamam dolapları için az nakit bulundurun.",
+    "tippingCulture": "Restoranlarda %10–15 bahşiş yaygındır; hesapta ‘szervízdíj’ (servis ücreti) varsa ayrıca bahşiş gerekmez.",
+    "economicPillars": "Otomotiv ve elektronik ihracatı, ilaç sanayii, turizm ve tarım."
+   }
+  },
+  "itin": {
+   "routeName": "Tuna’nın İncisi: Budapeşte, Tuna Kıvrımı ve Eger",
+   "routeSummary": "Budapeşte’nin parlamento, kale ve termal hamamlarıyla başlayan, Tuna Kıvrımı’nın tarihi kasabalarından geçen ve şarap bağları ile Osmanlı minaresiyle ünlü Eger’de biten 7 günlük rota.",
+   "totalDays": 7,
+   "idealDurationText": "7 Gün",
+   "bestSeason": "Nisan – Haziran, Eylül – Ekim",
+   "transportMode": "Budapeşte’de metro/tramvay; Szentendre’ye HÉV banliyö treni, Eger’e MÁV treni (yaklaşık 2 sa)",
+   "paceLevel": "Rahat",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Budapeşte (Buda, Peşte ve Termal Hamamlar)",
+     "recommendedDuration": "4 gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Parlamento Binası ve Tuna Kıyısındaki Ayakkabılar anıtı",
+      "Buda Kalesi, Balıkçı Tabyası ve Matyas Kilisesi",
+      "Gül Baba Türbesi ve Osmanlı döneminden Rudas Hamamı",
+      "Büyük Pazar Holü ve Andrássy Caddesi"
+     ],
+     "activities": [
+      "Széchenyi Hamamı’nın açık havuzlarında kışın bile termal suya girin.",
+      "Akşam Tuna’da tekne turu yapıp ışıklandırılmış Parlamento’yu izleyin.",
+      "Yahudi Mahallesi’ndeki Szimpla Kert gibi harabe barları keşfedin."
+     ],
+     "foodAndDrinks": [
+      "Gulyásleves (paprikalı sığır eti çorbası)",
+      "Lángos (kızarmış hamur; ekşi krema ve peynirle)",
+      "Unicum (bitkisel acı likör)"
+     ],
+     "criticalTips": [
+      "Gellért Tepesi’ne çıkmak için rahat ayakkabı giyin; Citadella manzarası emeğe değer.",
+      "Havalimanından şehre 100E ekspres otobüsü için özel bileti önceden alın."
+     ],
+     "mapsQuery": "Budapest, Hungary"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Tuna Kıvrımı (Szentendre, Visegrád ve Esztergom)",
+     "recommendedDuration": "1 gün (Budapeşte’den günübirlik)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Szentendre’nin renkli barok sokakları",
+      "Visegrád Kalesi’nden Tuna manzarası",
+      "Esztergom Bazilikası"
+     ],
+     "activities": [
+      "Szentendre’de Marzipan Müzesi’ni ve sanat galerilerini gezin.",
+      "Yazın Budapeşte’ye Tuna üzerinden tekneyle dönün.",
+      "Esztergom’da bazilika kubbesine çıkıp Slovakya kıyısını görün."
+     ],
+     "foodAndDrinks": [
+      "Halászlé (acı paprikalı balıkçı çorbası)",
+      "Kürtőskalács (şekerli baca keki)"
+     ],
+     "criticalTips": [
+      "Szentendre’ye Batthyány tér’den kalkan H5 HÉV ile yaklaşık 40 dakikada gidilir.",
+      "Tekne seferleri yalnızca bahar–yaz aylarında düzenlidir; tarifeyi önceden kontrol edin."
+     ],
+     "mapsQuery": "Szentendre, Hungary"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Eger (Kale, Minare ve Şarap Mahzenleri)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Eger Kalesi (1552 kuşatmasıyla ünlü)",
+      "Osmanlı Minaresi (Avrupa’daki en kuzeydeki Osmanlı minarelerinden)",
+      "Szépasszony-völgy (Güzel Kadınlar Vadisi) şarap mahzenleri",
+      "Eger Bazilikası ve Dobó Meydanı"
+     ],
+     "activities": [
+      "Minarenin dar merdivenlerinden tepeye çıkıp şehri izleyin.",
+      "Mahzenlerde Egri Bikavér ve Egri Csillag şaraplarını tadın.",
+      "Osmanlı dönemi kökenli Török Fürdő (Türk Hamamı) termalinde dinlenin."
+     ],
+     "foodAndDrinks": [
+      "Paprikás csirke (ekşi kremalı paprikalı tavuk, nokedli ile)",
+      "Egri Bikavér (Eger ‘Boğa Kanı’ kırmızı şarabı)",
+      "Somlói galuska (çikolata soslu krem şantili pandispanya tatlısı)"
+     ],
+     "criticalTips": [
+      "Şarap tadımı yapacaksanız mahzen vadisine yürüyerek veya taksiyle gidin; araç kullanmayın.",
+      "Kale müzeleri pazartesi günleri kısmen kapalı olabilir; saatleri önceden kontrol edin."
+     ],
+     "mapsQuery": "Eger, Hungary"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gulyásleves (paprikalı sığır eti çorbası)",
+     "Paprikás csirke (ekşi kremalı paprikalı tavuk, nokedli ile)",
+     "Halászlé (acı paprikalı balıkçı çorbası)"
+    ],
+    "drinks": [
+     "Tokaji Aszú (Tokaj bölgesinin tatlı şarabı)",
+     "Pálinka (meyve brendisi)",
+     "Unicum (bitkisel acı likör)"
+    ],
+    "streetFoods": [
+     "Lángos (kızarmış hamur; ekşi krema ve peynirle)",
+     "Kürtőskalács (şekerli baca keki)",
+     "Somlói galuska (çikolata soslu krem şantili pandispanya tatlısı)"
+    ],
+    "diningAdvice": "Öğle saatlerinde ‘napi menü’ (günün menüsü) uygun fiyatlıdır; hesapta servis ücreti (szervízdíj) olup olmadığına bakın ve fiyatsız menülerden kaçının."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Termal hamamlar için mayo, terlik ve havlu",
+     "Priz adaptörü gerekmez (Tip C/F, Türkiye ile aynı)",
+     "Rahat yürüyüş ayakkabısı (Buda tepeleri yokuşludur)",
+     "Yaz için şapka ve güneş kremi, kış için sıcak mont"
+    ],
+    "safetyAndEtiquette": [
+     "Sokakta sizi bara davet eden yabancıların teklifini kibarca reddedin.",
+     "Hamamlarda sessiz olun ve havuza girmeden önce duş alın."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Hungarian Forint (HUF)",
+   "plugType": "Type C, F (230V, 50Hz)",
+   "bestMonths": "April – June and September – October (mild weather); December for Christmas markets",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe; the main risks in Budapest are pickpocketing on crowded trams and metros and inflated-bill traps in tourist bars.",
+    "commonScams": [
+     "Strangers inviting you to a bar that then presents a bill of hundreds of euros",
+     "Restaurants around Váci utca with unpriced menus and padded bills",
+     "Tourist exchange booths with bad rates behind ‘no commission’ signs"
+    ],
+    "safeTravelTips": [
+     "Don’t order where prices aren’t listed, and check the bill line by line before paying.",
+     "Order taxis via Főtaxi, City Taxi or Bolt; Budapest taxi tariffs are fixed by law.",
+     "Always validate paper tickets on boarding, or buy them in the BudapestGO app."
+    ],
+    "emergencyNumbers": {
+     "police": "107",
+     "ambulance": "104",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% population coverage (4G nationwide, 5G in cities)",
+    "costPerGbUsd": "~1.50 - 3.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Very Good (metro, trams and suburban trains)",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "1.20 - 1.40 $ (450 HUF)",
+    "dailyPassUsd": "7.00 - 8.00 $ (24h)",
+    "popularRideApps": [
+     "BudapestGO",
+     "Bolt",
+     "Főtaxi",
+     "City Taxi",
+     "MÁV"
+    ],
+    "taxiAdvice": "Uber does not operate in Hungary; Bolt and the Főtaxi/City Taxi apps send licensed cabs, and Budapest has an official fixed tariff. For intercity trips use MÁV trains and Volánbusz coaches."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 55 $",
+    "dailyBudgetMidrangeUsd": "85 - 140 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "1.00 - 1.50 $",
+    "hostelDormUsd": "18 - 32 $",
+    "hotel3StarUsd": "65 - 115 $",
+    "flightCostIndex": "Low (Istanbul – Budapest direct ~2 hrs)",
+    "flightTip": "Turkish Airlines, Pegasus and Wizz Air fly direct from Istanbul to Budapest; factor in Wizz Air baggage fees."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Hungarians put the family name first (e.g. Liszt Ferenc); use titles in formal settings.",
+     "Some Hungarians still avoid clinking beer glasses because of an old tradition; wine and pálinka glasses are clinked.",
+     "Say ‘Egészségedre!’ and keep eye contact when toasting.",
+     "Swimwear and flip-flops are required in thermal baths; towels can be rented."
+    ],
+    "festivals": [
+     "Sziget Festival (August, Budapest)",
+     "St. Stephen’s Day on 20 August (fireworks over the Danube)",
+     "Budapest Christmas markets (Vörösmarty Square and the Basilica)"
+    ],
+    "lifestyle": "Thermal bath culture, a café tradition, ‘ruin bars’ (romkocsma) and a strong classical music heritage."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Hungarian Parliament Building",
+     "Buda Castle & Fisherman’s Bastion",
+     "Széchenyi and Gellért thermal baths",
+     "Tomb of Gül Baba (Budapest)",
+     "Danube Bend: Szentendre, Visegrád and Esztergom",
+     "Eger Castle & Ottoman minaret"
+    ],
+    "bestSeasons": "Spring and early autumn; thanks to the thermal baths, winter is enjoyable too",
+    "travelStyleTip": "Use Budapest as your base; the Danube Bend and Eger are easy by train. Ottoman-era sites such as the Tomb of Gül Baba, Rudas Baths and the Eger minaret add historical depth."
+   },
+   "religion": {
+    "primaryReligions": "Roman Catholic ~28%, Reformed (Calvinist) ~10%, Lutheran ~2%; a large share is non-religious or undeclared.",
+    "respectNorms": "Cover shoulders and knees in churches; men are given a kippah at the Dohány Synagogue. Be quiet and respectful at the Tomb of Gül Baba.",
+    "sacredSites": [
+     "St. Stephen’s Basilica (Budapest)",
+     "Dohány Street Synagogue (Europe’s largest)",
+     "Esztergom Basilica"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Hungarian",
+    "englishProficiency": "Good in Budapest and among young people; limited in the countryside. Older generations are more likely to speak German.",
+    "phrases": [
+     {
+      "phrase": "Jó napot!",
+      "meaning": "Good day / Hello",
+      "translation": "Hello",
+      "pronunciation": "yoh NAH-poht"
+     },
+     {
+      "phrase": "Köszönöm",
+      "meaning": "Thank you",
+      "translation": "Thanks",
+      "pronunciation": "KÖ-sö-nöm"
+     },
+     {
+      "phrase": "Kérem",
+      "meaning": "Please / You’re welcome",
+      "translation": "Please",
+      "pronunciation": "KAY-rem"
+     },
+     {
+      "phrase": "Mennyibe kerül?",
+      "meaning": "How much is it?",
+      "translation": "How much?",
+      "pronunciation": "MEN-nyee-beh KEH-rül"
+     },
+     {
+      "phrase": "Egészségedre!",
+      "meaning": "To your health! (Cheers)",
+      "translation": "Cheers!",
+      "pronunciation": "EH-gays-shay-ged-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Magyars settled the Carpathian Basin in the late 9th century, and the kingdom was founded under Stephen I in 1000. After the Battle of Mohács in 1526, Buda spent about 150 years under Ottoman rule, followed by the Habsburg era and Austria-Hungary from 1867. After a turbulent 20th century, a democratic republic was proclaimed in 1989 and Hungary joined the EU in 2004.",
+    "milestones": [
+     "1000: Coronation of Stephen I",
+     "1541–1686: Ottoman period in Buda",
+     "1867: Austro-Hungarian Dual Monarchy",
+     "1989: Republic proclaimed; 2004: EU membership"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gulyásleves (paprika beef goulash soup)",
+     "Paprikás csirke (chicken paprikash with sour cream and nokedli)",
+     "Halászlé (spicy paprika fisherman’s soup)"
+    ],
+    "traditionalDrinks": [
+     "Tokaji Aszú (sweet wine from Tokaj)",
+     "Pálinka (fruit brandy)",
+     "Unicum (herbal bitter liqueur)"
+    ],
+    "streetFoodAndDesserts": [
+     "Lángos (fried dough with sour cream and cheese)",
+     "Kürtőskalács (sugar-coated chimney cake)",
+     "Somlói galuska (sponge trifle with chocolate sauce and cream)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Liszt (composer and pianist)",
+     "Ernő Rubik (inventor of the Rubik’s Cube)",
+     "Ferenc Puskás (football legend)"
+    ],
+    "strongSectors": [
+     "Automotive manufacturing (Audi Győr, Mercedes-Benz Kecskemét, BMW Debrecen)",
+     "Pharmaceuticals (Gedeon Richter)",
+     "Wine and agriculture (Tokaj, Eger, Villány)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The currency is the forint; euros are accepted in some tourist spots at poor rates. Cards and contactless are widespread; keep a little cash for markets and bath lockers.",
+    "tippingCulture": "Tipping 10–15% is common in restaurants; if the bill includes ‘szervízdíj’ (service charge), no extra tip is needed.",
+    "economicPillars": "Automotive and electronics exports, pharmaceuticals, tourism and agriculture."
+   }
+  },
+  "itin": {
+   "routeName": "Pearl of the Danube: Budapest, the Danube Bend & Eger",
+   "routeSummary": "A 7-day route starting with Budapest’s parliament, castle and thermal baths, passing the historic towns of the Danube Bend and ending in Eger, known for its vineyards and Ottoman minaret.",
+   "totalDays": 7,
+   "idealDurationText": "7 Days",
+   "bestSeason": "April – June, September – October",
+   "transportMode": "Metro/tram in Budapest; HÉV suburban train to Szentendre, MÁV train to Eger (about 2 hrs)",
+   "paceLevel": "Relaxed",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Budapest (Buda, Pest & Thermal Baths)",
+     "recommendedDuration": "4 days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Parliament & Shoes on the Danube Bank memorial",
+      "Buda Castle, Fisherman’s Bastion & Matthias Church",
+      "Tomb of Gül Baba & Ottoman-era Rudas Baths",
+      "Great Market Hall & Andrássy Avenue"
+     ],
+     "activities": [
+      "Soak in the outdoor pools of Széchenyi Baths, even in winter.",
+      "Take an evening Danube cruise to see the illuminated Parliament.",
+      "Explore ruin bars such as Szimpla Kert in the Jewish Quarter."
+     ],
+     "foodAndDrinks": [
+      "Gulyásleves (paprika beef goulash soup)",
+      "Lángos (fried dough with sour cream and cheese)",
+      "Unicum (herbal bitter liqueur)"
+     ],
+     "criticalTips": [
+      "Wear comfortable shoes for Gellért Hill; the Citadella view is worth the climb.",
+      "Buy the special ticket for the 100E airport express bus in advance."
+     ],
+     "mapsQuery": "Budapest, Hungary"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Danube Bend (Szentendre, Visegrád & Esztergom)",
+     "recommendedDuration": "1 day (day trip from Budapest)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Szentendre’s colourful baroque lanes",
+      "Danube view from Visegrád Citadel",
+      "Esztergom Basilica"
+     ],
+     "activities": [
+      "Visit Szentendre’s Marzipan Museum and art galleries.",
+      "In summer, return to Budapest by boat on the Danube.",
+      "Climb the basilica dome in Esztergom to see across to Slovakia."
+     ],
+     "foodAndDrinks": [
+      "Halászlé (spicy paprika fisherman’s soup)",
+      "Kürtőskalács (sugar-coated chimney cake)"
+     ],
+     "criticalTips": [
+      "The H5 HÉV from Batthyány tér reaches Szentendre in about 40 minutes.",
+      "Boat services run regularly only in spring and summer; check the timetable in advance."
+     ],
+     "mapsQuery": "Szentendre, Hungary"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Eger (Castle, Minaret & Wine Cellars)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Eger Castle (famed for the 1552 siege)",
+      "Ottoman Minaret (one of the northernmost in Europe)",
+      "Szépasszony-völgy (Valley of the Beautiful Women) wine cellars",
+      "Eger Basilica & Dobó Square"
+     ],
+     "activities": [
+      "Climb the minaret’s narrow stairs for a view over the town.",
+      "Taste Egri Bikavér and Egri Csillag wines in the cellars.",
+      "Relax in the Török Fürdő (Turkish Bath), dating back to the Ottoman era."
+     ],
+     "foodAndDrinks": [
+      "Paprikás csirke (chicken paprikash with sour cream and nokedli)",
+      "Egri Bikavér (‘Bull’s Blood’ red wine of Eger)",
+      "Somlói galuska (sponge trifle with chocolate sauce and cream)"
+     ],
+     "criticalTips": [
+      "If you plan to taste wine, walk or take a taxi to the cellar valley; don’t drive (Hungary has zero tolerance for drink-driving).",
+      "Some castle museums may be closed on Mondays; check opening hours in advance."
+     ],
+     "mapsQuery": "Eger, Hungary"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gulyásleves (paprika beef goulash soup)",
+     "Paprikás csirke (chicken paprikash with sour cream and nokedli)",
+     "Halászlé (spicy paprika fisherman’s soup)"
+    ],
+    "drinks": [
+     "Tokaji Aszú (sweet wine from Tokaj)",
+     "Pálinka (fruit brandy)",
+     "Unicum (herbal bitter liqueur)"
+    ],
+    "streetFoods": [
+     "Lángos (fried dough with sour cream and cheese)",
+     "Kürtőskalács (sugar-coated chimney cake)",
+     "Somlói galuska (sponge trifle with chocolate sauce and cream)"
+    ],
+    "diningAdvice": "At lunchtime the ‘napi menü’ (daily menu) is good value; check whether a service charge (szervízdíj) is on the bill and avoid menus without prices."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Swimwear, flip-flops and a towel for thermal baths",
+     "Type C/F sockets (European two-pin plugs)",
+     "Comfortable walking shoes (Buda’s hills are steep)",
+     "Hat and sunscreen for summer, warm coat for winter"
+    ],
+    "safetyAndEtiquette": [
+     "Politely decline strangers who invite you to a bar.",
+     "Keep your voice down in the baths and shower before entering the pools."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Ungarischer Forint (HUF)",
+   "plugType": "Typ C, F (230V, 50Hz)",
+   "bestMonths": "April – Juni und September – Oktober (mildes Wetter); Dezember für Weihnachtsmärkte",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher; in Budapest sind Taschendiebe in vollen Trams und Metros sowie Abzocke in Touristenbars die Hauptrisiken.",
+    "commonScams": [
+     "Fremde, die einen in eine Bar einladen, die dann Rechnungen über Hunderte Euro stellt",
+     "Restaurants rund um die Váci utca mit Speisekarten ohne Preise und aufgeblähten Rechnungen",
+     "Wechselstuben mit schlechten Kursen hinter ‘No Commission’-Schildern"
+    ],
+    "safeTravelTips": [
+     "Nicht bestellen, wo keine Preise stehen, und die Rechnung vor dem Zahlen genau prüfen.",
+     "Taxis über Főtaxi, City Taxi oder Bolt bestellen; in Budapest gilt ein gesetzlicher Einheitstarif.",
+     "Papiertickets beim Einsteigen immer entwerten oder in der App BudapestGO kaufen."
+    ],
+    "emergencyNumbers": {
+     "police": "107",
+     "ambulance": "104",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % Bevölkerungsabdeckung (landesweit 4G, 5G in Städten)",
+    "costPerGbUsd": "~1.50 - 3.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sehr gut (Metro, Tram und Vorortzüge)",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "1.20 - 1.40 $ (450 HUF)",
+    "dailyPassUsd": "7.00 - 8.00 $ (24h)",
+    "popularRideApps": [
+     "BudapestGO",
+     "Bolt",
+     "Főtaxi",
+     "City Taxi",
+     "MÁV"
+    ],
+    "taxiAdvice": "Uber gibt es in Ungarn nicht; Bolt und die Apps von Főtaxi/City Taxi vermitteln lizenzierte Taxis, in Budapest gilt ein amtlicher Festtarif. Für Fernstrecken eignen sich MÁV-Züge und Volánbusz."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 55 $",
+    "dailyBudgetMidrangeUsd": "85 - 140 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "1.00 - 1.50 $",
+    "hostelDormUsd": "18 - 32 $",
+    "hotel3StarUsd": "65 - 115 $",
+    "flightCostIndex": "Niedrig (Istanbul – Budapest direkt ~2 Std.)",
+    "flightTip": "Turkish Airlines, Pegasus und Wizz Air fliegen direkt von Istanbul nach Budapest; bei Wizz Air Gepäckgebühren einrechnen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ungarn nennen den Familiennamen zuerst (z. B. Liszt Ferenc); förmlich spricht man mit Titel an.",
+     "Manche Ungarn stoßen aus alter Tradition nicht mit Bier an; mit Wein und Pálinka schon.",
+     "Beim Anstoßen ‘Egészségedre!’ sagen und Blickkontakt halten.",
+     "In Thermalbädern sind Badekleidung und Badeschuhe Pflicht; Handtücher kann man leihen."
+    ],
+    "festivals": [
+     "Sziget Festival (August, Budapest)",
+     "Stephanstag am 20. August (Feuerwerk über der Donau)",
+     "Budapester Weihnachtsmärkte (Vörösmarty tér und Basilika)"
+    ],
+    "lifestyle": "Thermalbadkultur, Kaffeehaustradition, ‘Ruinenbars’ (romkocsma) und ein starkes klassisches Musikerbe."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ungarisches Parlamentsgebäude",
+     "Budaer Burg & Fischerbastei",
+     "Széchenyi- und Gellért-Bad",
+     "Grabmal des Gül Baba (Budapest)",
+     "Donauknie: Szentendre, Visegrád und Esztergom",
+     "Burg Eger & osmanisches Minarett"
+    ],
+    "bestSeasons": "Frühling und Frühherbst; dank der Thermalbäder ist auch der Winter reizvoll",
+    "travelStyleTip": "Budapest als Basis nutzen; Donauknie und Eger sind per Zug gut erreichbar. Osmanische Stätten wie das Grabmal des Gül Baba, das Rudas-Bad und das Minarett in Eger geben historische Tiefe."
+   },
+   "religion": {
+    "primaryReligions": "Römisch-katholisch ~28 %, reformiert (calvinistisch) ~10 %, lutherisch ~2 %; ein großer Teil ist konfessionslos oder ohne Angabe.",
+    "respectNorms": "In Kirchen Schultern und Knie bedecken; in der Dohány-Synagoge erhalten Männer eine Kippa. Am Grabmal des Gül Baba ruhig und respektvoll sein.",
+    "sacredSites": [
+     "St.-Stephans-Basilika (Budapest)",
+     "Synagoge in der Dohány-Straße (größte Europas)",
+     "Basilika von Esztergom"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Ungarisch",
+    "englishProficiency": "In Budapest und bei Jüngeren gut, auf dem Land begrenzt. Ältere sprechen eher Deutsch.",
+    "phrases": [
+     {
+      "phrase": "Jó napot!",
+      "meaning": "Guten Tag / Hallo",
+      "translation": "Hallo",
+      "pronunciation": "yoh NAH-poht"
+     },
+     {
+      "phrase": "Köszönöm",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "KÖ-sö-nöm"
+     },
+     {
+      "phrase": "Kérem",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "KAY-rem"
+     },
+     {
+      "phrase": "Mennyibe kerül?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel?",
+      "pronunciation": "MEN-nyee-beh KEH-rül"
+     },
+     {
+      "phrase": "Egészségedre!",
+      "meaning": "Auf deine Gesundheit! (Prost)",
+      "translation": "Prost!",
+      "pronunciation": "EH-gays-shay-ged-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Magyaren ließen sich Ende des 9. Jahrhunderts im Karpatenbecken nieder; im Jahr 1000 entstand unter Stephan I. das Königreich. Nach der Schlacht bei Mohács 1526 stand Buda rund 150 Jahre unter osmanischer Herrschaft, es folgten die Habsburger und ab 1867 Österreich-Ungarn. Nach einem bewegten 20. Jahrhundert wurde 1989 die demokratische Republik ausgerufen, 2004 folgte der EU-Beitritt.",
+    "milestones": [
+     "1000: Krönung Stephans I.",
+     "1541–1686: Osmanische Zeit in Buda",
+     "1867: Österreichisch-Ungarische Doppelmonarchie",
+     "1989: Ausrufung der Republik; 2004: EU-Beitritt"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gulyásleves (Gulaschsuppe mit Rindfleisch und Paprika)",
+     "Paprikás csirke (Paprikahuhn mit Sauerrahm und Nockerln)",
+     "Halászlé (scharfe Fischersuppe mit Paprika)"
+    ],
+    "traditionalDrinks": [
+     "Tokaji Aszú (Süßwein aus Tokaj)",
+     "Pálinka (Obstbrand)",
+     "Unicum (Kräuterbitter)"
+    ],
+    "streetFoodAndDesserts": [
+     "Lángos (frittierter Teigfladen mit Sauerrahm und Käse)",
+     "Kürtőskalács (Baumstriezel)",
+     "Somlói galuska (Biskuit-Dessert mit Schokosauce und Sahne)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Liszt (Komponist und Pianist)",
+     "Ernő Rubik (Erfinder des Zauberwürfels)",
+     "Ferenc Puskás (Fußballlegende)"
+    ],
+    "strongSectors": [
+     "Automobilbau (Audi Győr, Mercedes-Benz Kecskemét, BMW Debrecen)",
+     "Pharmaindustrie (Gedeon Richter)",
+     "Weinbau und Landwirtschaft (Tokaj, Eger, Villány)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Währung ist der Forint; Euro wird an manchen Touristenorten zu schlechtem Kurs angenommen. Karte und kontaktlos sind verbreitet; etwas Bargeld für Märkte bereithalten.",
+    "tippingCulture": "Im Restaurant sind 10–15 % üblich; steht ‘szervízdíj’ (Servicegebühr) auf der Rechnung, ist kein Extra nötig.",
+    "economicPillars": "Auto- und Elektronikexporte, Pharmaindustrie, Tourismus und Landwirtschaft."
+   }
+  },
+  "itin": {
+   "routeName": "Perle der Donau: Budapest, Donauknie & Eger",
+   "routeSummary": "Eine 7-tägige Route: Parlament, Burg und Thermalbäder in Budapest, die historischen Städtchen am Donauknie und zum Schluss Eger mit Weinkellern und osmanischem Minarett.",
+   "totalDays": 7,
+   "idealDurationText": "7 Tage",
+   "bestSeason": "April – Juni, September – Oktober",
+   "transportMode": "In Budapest Metro/Tram; HÉV-Vorortbahn nach Szentendre, MÁV-Zug nach Eger (ca. 2 Std.)",
+   "paceLevel": "Entspannt",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Budapest (Buda, Pest & Thermalbäder)",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Parlament & Mahnmal ‘Schuhe am Donauufer’",
+      "Budaer Burg, Fischerbastei & Matthiaskirche",
+      "Grabmal des Gül Baba & osmanisches Rudas-Bad",
+      "Große Markthalle & Andrássy út"
+     ],
+     "activities": [
+      "In den Außenbecken des Széchenyi-Bads baden, auch im Winter.",
+      "Abends eine Donaufahrt machen und das beleuchtete Parlament sehen.",
+      "Ruinenbars wie Szimpla Kert im jüdischen Viertel erkunden."
+     ],
+     "foodAndDrinks": [
+      "Gulyásleves (Gulaschsuppe mit Rindfleisch und Paprika)",
+      "Lángos (frittierter Teigfladen mit Sauerrahm und Käse)",
+      "Unicum (Kräuterbitter)"
+     ],
+     "criticalTips": [
+      "Für den Gellértberg bequeme Schuhe tragen; der Blick von der Zitadelle lohnt sich.",
+      "Für den Flughafenexpressbus 100E das Sonderticket vorab kaufen."
+     ],
+     "mapsQuery": "Budapest, Hungary"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Donauknie (Szentendre, Visegrád & Esztergom)",
+     "recommendedDuration": "1 Tag (Tagesausflug ab Budapest)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Szentendres bunte Barockgassen",
+      "Donaublick von der Zitadelle Visegrád",
+      "Basilika von Esztergom"
+     ],
+     "activities": [
+      "In Szentendre das Marzipanmuseum und Galerien besuchen.",
+      "Im Sommer per Schiff auf der Donau nach Budapest zurückfahren.",
+      "In Esztergom auf die Basilikakuppel steigen und bis in die Slowakei schauen."
+     ],
+     "foodAndDrinks": [
+      "Halászlé (scharfe Fischersuppe mit Paprika)",
+      "Kürtőskalács (Baumstriezel)"
+     ],
+     "criticalTips": [
+      "Die HÉV-Linie H5 ab Batthyány tér erreicht Szentendre in etwa 40 Minuten.",
+      "Schiffe fahren regelmäßig nur im Frühling und Sommer; Fahrplan vorher prüfen."
+     ],
+     "mapsQuery": "Szentendre, Hungary"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Eger (Burg, Minarett & Weinkeller)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Burg Eger (berühmt für die Belagerung von 1552)",
+      "Osmanisches Minarett (eines der nördlichsten Europas)",
+      "Weinkeller im Szépasszony-völgy (Tal der schönen Frauen)",
+      "Basilika Eger & Dobó-Platz"
+     ],
+     "activities": [
+      "Die engen Stufen des Minaretts hinauf und über die Stadt blicken.",
+      "In den Kellern Egri Bikavér und Egri Csillag probieren.",
+      "Im Török Fürdő (Türkisches Bad) aus osmanischer Zeit entspannen."
+     ],
+     "foodAndDrinks": [
+      "Paprikás csirke (Paprikahuhn mit Sauerrahm und Nockerln)",
+      "Egri Bikavér (‘Erlauer Stierblut’, Rotwein)",
+      "Somlói galuska (Biskuit-Dessert mit Schokosauce und Sahne)"
+     ],
+     "criticalTips": [
+      "Wer Wein probiert, geht zu Fuß oder nimmt ein Taxi ins Kellertal; nicht fahren (in Ungarn gilt 0,0 Promille).",
+      "Manche Burgmuseen sind montags geschlossen; Öffnungszeiten vorher prüfen."
+     ],
+     "mapsQuery": "Eger, Hungary"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gulyásleves (Gulaschsuppe mit Rindfleisch und Paprika)",
+     "Paprikás csirke (Paprikahuhn mit Sauerrahm und Nockerln)",
+     "Halászlé (scharfe Fischersuppe mit Paprika)"
+    ],
+    "drinks": [
+     "Tokaji Aszú (Süßwein aus Tokaj)",
+     "Pálinka (Obstbrand)",
+     "Unicum (Kräuterbitter)"
+    ],
+    "streetFoods": [
+     "Lángos (frittierter Teigfladen mit Sauerrahm und Käse)",
+     "Kürtőskalács (Baumstriezel)",
+     "Somlói galuska (Biskuit-Dessert mit Schokosauce und Sahne)"
+    ],
+    "diningAdvice": "Mittags ist das ‘napi menü’ (Tagesmenü) günstig; prüfen, ob eine Servicegebühr (szervízdíj) berechnet wird, und Karten ohne Preise meiden."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Badekleidung, Badeschuhe und Handtuch für die Thermalbäder",
+     "Steckdosen Typ C/F (Eurostecker passt)",
+     "Bequeme Schuhe (Budas Hügel sind steil)",
+     "Hut und Sonnencreme im Sommer, warme Jacke im Winter"
+    ],
+    "safetyAndEtiquette": [
+     "Einladungen von Fremden in eine Bar höflich ablehnen.",
+     "In den Bädern leise sein und vor dem Becken duschen."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Forinto húngaro (HUF)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Abril – junio y septiembre – octubre (clima templado); diciembre por los mercados navideños",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general seguro; en Budapest los principales riesgos son los carteristas en tranvías y metros llenos y las cuentas infladas en bares turísticos.",
+    "commonScams": [
+     "Desconocidos que le invitan a un bar que luego le cobra cientos de euros",
+     "Restaurantes en torno a Váci utca con cartas sin precios y cuentas infladas",
+     "Casas de cambio turísticas con malas tasas tras carteles de ‘sin comisión’"
+    ],
+    "safeTravelTips": [
+     "No pida donde no figuren los precios y revise la cuenta línea por línea antes de pagar.",
+     "Pida taxi por Főtaxi, City Taxi o Bolt; en Budapest la tarifa es fija por ley.",
+     "Valide siempre el billete de papel al subir o cómprelo en la app BudapestGO."
+    ],
+    "emergencyNumbers": {
+     "police": "107",
+     "ambulance": "104",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura de población (4G en todo el país, 5G en ciudades)",
+    "costPerGbUsd": "~1.50 - 3.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muy bueno (metro, tranvía y trenes de cercanías)",
+    "costLevel": "Económico",
+    "singleTicketUsd": "1.20 - 1.40 $ (450 HUF)",
+    "dailyPassUsd": "7.00 - 8.00 $ (24h)",
+    "popularRideApps": [
+     "BudapestGO",
+     "Bolt",
+     "Főtaxi",
+     "City Taxi",
+     "MÁV"
+    ],
+    "taxiAdvice": "Uber no opera en Hungría; Bolt y las apps de Főtaxi/City Taxi envían taxis con licencia, y en Budapest hay tarifa oficial fija. Entre ciudades use los trenes de MÁV y los autobuses de Volánbusz."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 55 $",
+    "dailyBudgetMidrangeUsd": "85 - 140 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "1.00 - 1.50 $",
+    "hostelDormUsd": "18 - 32 $",
+    "hotel3StarUsd": "65 - 115 $",
+    "flightCostIndex": "Bajo (Estambul – Budapest directo ~2 h)",
+    "flightTip": "Turkish Airlines, Pegasus y Wizz Air vuelan directo de Estambul a Budapest; tenga en cuenta las tasas de equipaje de Wizz Air."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los húngaros dicen primero el apellido (p. ej. Liszt Ferenc); en contextos formales se usan títulos.",
+     "Algunos húngaros aún evitan brindar con cerveza por una vieja tradición; con vino y pálinka sí.",
+     "Al brindar diga ‘Egészségedre!’ mirando a los ojos.",
+     "En los baños termales se exige bañador y chanclas; se pueden alquilar toallas."
+    ],
+    "festivals": [
+     "Festival Sziget (agosto, Budapest)",
+     "Día de San Esteban, 20 de agosto (fuegos artificiales sobre el Danubio)",
+     "Mercados navideños de Budapest (plaza Vörösmarty y la Basílica)"
+    ],
+    "lifestyle": "Cultura de baños termales, tradición de cafés, ‘bares en ruinas’ (romkocsma) y un fuerte legado de música clásica."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parlamento de Hungría",
+     "Castillo de Buda y Bastión de los Pescadores",
+     "Baños termales Széchenyi y Gellért",
+     "Tumba de Gül Baba (Budapest)",
+     "Recodo del Danubio: Szentendre, Visegrád y Esztergom",
+     "Castillo de Eger y minarete otomano"
+    ],
+    "bestSeasons": "Primavera e inicio del otoño; gracias a los baños termales, el invierno también es agradable",
+    "travelStyleTip": "Use Budapest como base; el Recodo del Danubio y Eger quedan cerca en tren. Lugares de época otomana como la Tumba de Gül Baba, los Baños Rudas y el minarete de Eger aportan profundidad histórica."
+   },
+   "religion": {
+    "primaryReligions": "Católicos romanos ~28 %, reformados (calvinistas) ~10 %, luteranos ~2 %; gran parte no es religiosa o no lo declara.",
+    "respectNorms": "Cubra hombros y rodillas en las iglesias; en la Sinagoga Dohány se da kipá a los hombres. Sea discreto y respetuoso en la Tumba de Gül Baba.",
+    "sacredSites": [
+     "Basílica de San Esteban (Budapest)",
+     "Sinagoga de la calle Dohány (la mayor de Europa)",
+     "Basílica de Esztergom"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Húngaro",
+    "englishProficiency": "Bueno en Budapest y entre jóvenes; limitado en el campo. Los mayores hablan más bien alemán.",
+    "phrases": [
+     {
+      "phrase": "Jó napot!",
+      "meaning": "Buenos días / Hola",
+      "translation": "Hola",
+      "pronunciation": "yoh NAH-poht"
+     },
+     {
+      "phrase": "Köszönöm",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "KÖ-sö-nöm"
+     },
+     {
+      "phrase": "Kérem",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "KAY-rem"
+     },
+     {
+      "phrase": "Mennyibe kerül?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "MEN-nyee-beh KEH-rül"
+     },
+     {
+      "phrase": "Egészségedre!",
+      "meaning": "¡A tu salud! (Salud)",
+      "translation": "¡Salud!",
+      "pronunciation": "EH-gays-shay-ged-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los magiares se asentaron en la cuenca de los Cárpatos a finales del siglo IX y en el año 1000 nació el reino con Esteban I. Tras la batalla de Mohács (1526), Buda pasó unos 150 años bajo dominio otomano; luego llegaron los Habsburgo y, desde 1867, Austria-Hungría. Después de un siglo XX convulso, en 1989 se proclamó la república democrática y en 2004 entró en la UE.",
+    "milestones": [
+     "1000: Coronación de Esteban I",
+     "1541–1686: Periodo otomano en Buda",
+     "1867: Monarquía dual austrohúngara",
+     "1989: Proclamación de la república; 2004: ingreso en la UE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gulyásleves (sopa goulash de ternera con pimentón)",
+     "Paprikás csirke (pollo al pimentón con nata agria y nokedli)",
+     "Halászlé (sopa picante de pescador con pimentón)"
+    ],
+    "traditionalDrinks": [
+     "Tokaji Aszú (vino dulce de Tokaj)",
+     "Pálinka (aguardiente de fruta)",
+     "Unicum (licor amargo de hierbas)"
+    ],
+    "streetFoodAndDesserts": [
+     "Lángos (masa frita con nata agria y queso)",
+     "Kürtőskalács (pastel chimenea azucarado)",
+     "Somlói galuska (bizcocho con salsa de chocolate y nata)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Liszt (compositor y pianista)",
+     "Ernő Rubik (inventor del cubo de Rubik)",
+     "Ferenc Puskás (leyenda del fútbol)"
+    ],
+    "strongSectors": [
+     "Fabricación de automóviles (Audi Győr, Mercedes-Benz Kecskemét, BMW Debrecen)",
+     "Farmacéutica (Gedeon Richter)",
+     "Vino y agricultura (Tokaj, Eger, Villány)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La moneda es el forinto; en algunos sitios turísticos aceptan euros con mal cambio. Las tarjetas y el pago sin contacto están muy extendidos; lleve algo de efectivo para mercados.",
+    "tippingCulture": "En restaurantes se deja un 10–15 %; si la cuenta incluye ‘szervízdíj’ (servicio), no hace falta más.",
+    "economicPillars": "Exportaciones de automoción y electrónica, farmacéutica, turismo y agricultura."
+   }
+  },
+  "itin": {
+   "routeName": "Perla del Danubio: Budapest, el Recodo del Danubio y Eger",
+   "routeSummary": "Ruta de 7 días: el parlamento, el castillo y los baños termales de Budapest, los pueblos históricos del Recodo del Danubio y, al final, Eger, famosa por sus bodegas y su minarete otomano.",
+   "totalDays": 7,
+   "idealDurationText": "7 días",
+   "bestSeason": "Abril – junio, septiembre – octubre",
+   "transportMode": "Metro/tranvía en Budapest; tren de cercanías HÉV a Szentendre y tren de MÁV a Eger (unas 2 h)",
+   "paceLevel": "Tranquilo",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Budapest (Buda, Pest y baños termales)",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Parlamento y memorial de los Zapatos a orillas del Danubio",
+      "Castillo de Buda, Bastión de los Pescadores e Iglesia de Matías",
+      "Tumba de Gül Baba y Baños Rudas de época otomana",
+      "Gran Mercado Central y avenida Andrássy"
+     ],
+     "activities": [
+      "Báñese en las piscinas exteriores del Széchenyi, incluso en invierno.",
+      "Haga un crucero nocturno por el Danubio para ver el Parlamento iluminado.",
+      "Descubra bares en ruinas como Szimpla Kert en el Barrio Judío."
+     ],
+     "foodAndDrinks": [
+      "Gulyásleves (sopa goulash de ternera con pimentón)",
+      "Lángos (masa frita con nata agria y queso)",
+      "Unicum (licor amargo de hierbas)"
+     ],
+     "criticalTips": [
+      "Lleve calzado cómodo para la colina Gellért; la vista desde la Ciudadela merece la pena.",
+      "Compre de antemano el billete especial del autobús exprés 100E al aeropuerto."
+     ],
+     "mapsQuery": "Budapest, Hungary"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Recodo del Danubio (Szentendre, Visegrád y Esztergom)",
+     "recommendedDuration": "1 día (excursión desde Budapest)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Las coloridas callejuelas barrocas de Szentendre",
+      "Vista del Danubio desde la ciudadela de Visegrád",
+      "Basílica de Esztergom"
+     ],
+     "activities": [
+      "Visite el Museo del Mazapán y las galerías de Szentendre.",
+      "En verano, vuelva a Budapest en barco por el Danubio.",
+      "Suba a la cúpula de la basílica de Esztergom para ver la orilla eslovaca."
+     ],
+     "foodAndDrinks": [
+      "Halászlé (sopa picante de pescador con pimentón)",
+      "Kürtőskalács (pastel chimenea azucarado)"
+     ],
+     "criticalTips": [
+      "El HÉV H5 desde Batthyány tér llega a Szentendre en unos 40 minutos.",
+      "Los barcos solo operan con regularidad en primavera y verano; consulte horarios."
+     ],
+     "mapsQuery": "Szentendre, Hungary"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Eger (Castillo, minarete y bodegas)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Castillo de Eger (famoso por el asedio de 1552)",
+      "Minarete otomano (uno de los más septentrionales de Europa)",
+      "Bodegas de Szépasszony-völgy (Valle de las Mujeres Bellas)",
+      "Basílica de Eger y plaza Dobó"
+     ],
+     "activities": [
+      "Suba la estrecha escalera del minarete para ver la ciudad.",
+      "Pruebe los vinos Egri Bikavér y Egri Csillag en las bodegas.",
+      "Relájese en el Török Fürdő (Baño Turco), de origen otomano."
+     ],
+     "foodAndDrinks": [
+      "Paprikás csirke (pollo al pimentón con nata agria y nokedli)",
+      "Egri Bikavér (vino tinto ‘Sangre de Toro’ de Eger)",
+      "Somlói galuska (bizcocho con salsa de chocolate y nata)"
+     ],
+     "criticalTips": [
+      "Si va a catar vino, vaya a pie o en taxi al valle de las bodegas; no conduzca (en Hungría la tolerancia al alcohol es cero).",
+      "Algunos museos del castillo pueden cerrar los lunes; consulte horarios."
+     ],
+     "mapsQuery": "Eger, Hungary"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gulyásleves (sopa goulash de ternera con pimentón)",
+     "Paprikás csirke (pollo al pimentón con nata agria y nokedli)",
+     "Halászlé (sopa picante de pescador con pimentón)"
+    ],
+    "drinks": [
+     "Tokaji Aszú (vino dulce de Tokaj)",
+     "Pálinka (aguardiente de fruta)",
+     "Unicum (licor amargo de hierbas)"
+    ],
+    "streetFoods": [
+     "Lángos (masa frita con nata agria y queso)",
+     "Kürtőskalács (pastel chimenea azucarado)",
+     "Somlói galuska (bizcocho con salsa de chocolate y nata)"
+    ],
+    "diningAdvice": "Al mediodía el ‘napi menü’ (menú del día) es económico; compruebe si la cuenta incluye servicio (szervízdíj) y evite cartas sin precios."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Bañador, chanclas y toalla para los baños termales",
+     "Enchufes tipo C/F (clavija europea)",
+     "Calzado cómodo (las colinas de Buda son empinadas)",
+     "Sombrero y protector solar en verano, abrigo en invierno"
+    ],
+    "safetyAndEtiquette": [
+     "Rechace con cortesía a desconocidos que le inviten a un bar.",
+     "En los baños hable bajo y dúchese antes de entrar en las piscinas."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Венгерский форинт (HUF)",
+   "plugType": "Тип C, F (230V, 50 Гц)",
+   "bestMonths": "Апрель – июнь и сентябрь – октябрь (мягкая погода); декабрь — рождественские ярмарки",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно; в Будапеште главные риски — карманники в переполненных трамваях и метро и завышенные счета в туристических барах.",
+    "commonScams": [
+     "Незнакомцы приглашают в бар, где выставляют счёт на сотни евро",
+     "Рестораны у улицы Ваци с меню без цен и раздутыми счетами",
+     "Обменники с плохим курсом под вывеской «без комиссии»"
+    ],
+    "safeTravelTips": [
+     "Не заказывайте там, где нет цен, и проверяйте счёт построчно перед оплатой.",
+     "Вызывайте такси через Főtaxi, City Taxi или Bolt: в Будапеште тариф фиксирован законом.",
+     "Обязательно компостируйте бумажный билет или покупайте его в приложении BudapestGO."
+    ],
+    "emergencyNumbers": {
+     "police": "107",
+     "ambulance": "104",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Покрытие 99% населения (4G по всей стране, 5G в городах)",
+    "costPerGbUsd": "~1.50 - 3.50 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Очень хорошее (метро, трамваи и пригородные поезда)",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "1.20 - 1.40 $ (450 HUF)",
+    "dailyPassUsd": "7.00 - 8.00 $ (24h)",
+    "popularRideApps": [
+     "BudapestGO",
+     "Bolt",
+     "Főtaxi",
+     "City Taxi",
+     "MÁV"
+    ],
+    "taxiAdvice": "Uber в Венгрии не работает; Bolt и приложения Főtaxi/City Taxi присылают лицензированные такси, а в Будапеште действует официальный фиксированный тариф. Между городами удобны поезда MÁV и автобусы Volánbusz."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 55 $",
+    "dailyBudgetMidrangeUsd": "85 - 140 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4.00 $",
+    "waterBottleUsd": "1.00 - 1.50 $",
+    "hostelDormUsd": "18 - 32 $",
+    "hotel3StarUsd": "65 - 115 $",
+    "flightCostIndex": "Низкая (Стамбул – Будапешт прямой рейс ~2 ч)",
+    "flightTip": "Из Стамбула в Будапешт прямые рейсы выполняют Turkish Airlines, Pegasus и Wizz Air; учитывайте платный багаж у Wizz Air."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Венгры ставят фамилию перед именем (например, Liszt Ferenc); в официальной обстановке обращаются по званию.",
+     "Некоторые венгры по старой традиции не чокаются пивом; вином и палинкой — чокаются.",
+     "Произнося тост, говорят «Egészségedre!» и смотрят в глаза.",
+     "В термальных купальнях обязательны купальник и шлёпанцы; полотенце можно взять напрокат."
+    ],
+    "festivals": [
+     "Фестиваль Sziget (август, Будапешт)",
+     "День Святого Иштвана 20 августа (фейерверк над Дунаем)",
+     "Рождественские ярмарки Будапешта (площадь Вёрёшмарти и у базилики)"
+    ],
+    "lifestyle": "Культура термальных купален, традиция кофеен, «руин-бары» (romkocsma) и богатое музыкальное наследие."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Здание Венгерского парламента",
+     "Будайская крепость и Рыбацкий бастион",
+     "Купальни Сечени и Геллерт",
+     "Тюрбе Гюль-Бабы (Будапешт)",
+     "Излучина Дуная: Сентендре, Вишеград и Эстергом",
+     "Эгерская крепость и османский минарет"
+    ],
+    "bestSeasons": "Весна и ранняя осень; благодаря термальным купальням и зимой приятно",
+    "travelStyleTip": "Сделайте базой Будапешт: до Излучины Дуная и Эгера легко добраться поездом. Османские памятники — тюрбе Гюль-Бабы, купальня Рудаш и минарет в Эгере — добавят исторической глубины."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~28%, реформаты (кальвинисты) ~10%, лютеране ~2%; значительная часть неверующие или не указали.",
+    "respectNorms": "В храмах прикрывайте плечи и колени; в синагоге на улице Дохань мужчинам выдают кипу. У тюрбе Гюль-Бабы ведите себя тихо и уважительно.",
+    "sacredSites": [
+     "Базилика Святого Иштвана (Будапешт)",
+     "Синагога на улице Дохань (крупнейшая в Европе)",
+     "Базилика в Эстергоме"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Венгерский",
+    "englishProficiency": "Хороший в Будапеште и у молодёжи, слабый в провинции. Старшее поколение чаще говорит по-немецки.",
+    "phrases": [
+     {
+      "phrase": "Jó napot!",
+      "meaning": "Добрый день / Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "yoh NAH-poht"
+     },
+     {
+      "phrase": "Köszönöm",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "KÖ-sö-nöm"
+     },
+     {
+      "phrase": "Kérem",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "KAY-rem"
+     },
+     {
+      "phrase": "Mennyibe kerül?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "MEN-nyee-beh KEH-rül"
+     },
+     {
+      "phrase": "Egészségedre!",
+      "meaning": "За твоё здоровье!",
+      "translation": "Будем здоровы!",
+      "pronunciation": "EH-gays-shay-ged-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Мадьяры поселились в Карпатской котловине в конце IX века, а в 1000 году при Иштване I возникло королевство. После битвы при Мохаче (1526) Буда около 150 лет была под властью Османов, затем наступила эпоха Габсбургов и с 1867 года — Австро-Венгрия. После бурного XX века в 1989 году провозглашена демократическая республика, в 2004 году страна вступила в ЕС.",
+    "milestones": [
+     "1000: коронация Иштвана I",
+     "1541–1686: османский период в Буде",
+     "1867: Австро-Венгерская дуалистическая монархия",
+     "1989: провозглашение республики; 2004: вступление в ЕС"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Гуляш-суп (гуйяшлевеш, говядина с паприкой)",
+     "Паприкаш из курицы (со сметаной и галушками нокедли)",
+     "Халасле (острая рыбацкая уха с паприкой)"
+    ],
+    "traditionalDrinks": [
+     "Токайское асу (сладкое вино из Токая)",
+     "Палинка (фруктовый бренди)",
+     "Уникум (травяной горький ликёр)"
+    ],
+    "streetFoodAndDesserts": [
+     "Лангош (жареная лепёшка со сметаной и сыром)",
+     "Кюртёшкалач (трубчатый сладкий кекс)",
+     "Шомлойская галушка (бисквитный десерт с шоколадом и сливками)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ференц Лист (композитор и пианист)",
+     "Эрнё Рубик (изобретатель кубика Рубика)",
+     "Ференц Пушкаш (легенда футбола)"
+    ],
+    "strongSectors": [
+     "Автомобилестроение (Audi в Дьёре, Mercedes-Benz в Кечкемете, BMW в Дебрецене)",
+     "Фармацевтика (Gedeon Richter)",
+     "Виноделие и сельское хозяйство (Токай, Эгер, Виллань)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Валюта — форинт; евро в туристических местах берут по невыгодному курсу. Карты и бесконтактная оплата повсеместны; немного наличных пригодится на рынках.",
+    "tippingCulture": "В ресторанах принято 10–15%; если в счёте есть «szervízdíj» (плата за обслуживание), дополнительно не нужно.",
+    "economicPillars": "Экспорт автомобилей и электроники, фармацевтика, туризм и сельское хозяйство."
+   }
+  },
+  "itin": {
+   "routeName": "Жемчужина Дуная: Будапешт, Излучина Дуная и Эгер",
+   "routeSummary": "7-дневный маршрут: парламент, крепость и купальни Будапешта, исторические городки Излучины Дуная и в завершение Эгер с винными погребами и османским минаретом.",
+   "totalDays": 7,
+   "idealDurationText": "7 дней",
+   "bestSeason": "Апрель – июнь, сентябрь – октябрь",
+   "transportMode": "В Будапеште метро/трамвай; электричка HÉV до Сентендре, поезд MÁV до Эгера (около 2 ч)",
+   "paceLevel": "Неспешный",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Будапешт (Буда, Пешт и купальни)",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Парламент и мемориал «Туфли на набережной Дуная»",
+      "Будайская крепость, Рыбацкий бастион и церковь Матьяша",
+      "Тюрбе Гюль-Бабы и османская купальня Рудаш",
+      "Центральный рынок и проспект Андраши"
+     ],
+     "activities": [
+      "Окунитесь во внешние бассейны купальни Сечени — даже зимой.",
+      "Совершите вечернюю прогулку по Дунаю и посмотрите на подсвеченный парламент.",
+      "Загляните в руин-бары вроде Szimpla Kert в Еврейском квартале."
+     ],
+     "foodAndDrinks": [
+      "Гуляш-суп (гуйяшлевеш, говядина с паприкой)",
+      "Лангош (жареная лепёшка со сметаной и сыром)",
+      "Уникум (травяной горький ликёр)"
+     ],
+     "criticalTips": [
+      "Для подъёма на гору Геллерт нужна удобная обувь — вид с Цитадели того стоит.",
+      "Для экспресс-автобуса 100E из аэропорта заранее купите специальный билет."
+     ],
+     "mapsQuery": "Budapest, Hungary"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Излучина Дуная (Сентендре, Вишеград и Эстергом)",
+     "recommendedDuration": "1 день (поездка из Будапешта)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Красочные барочные улочки Сентендре",
+      "Вид на Дунай с Вишеградской цитадели",
+      "Базилика в Эстергоме"
+     ],
+     "activities": [
+      "Посетите музей марципана и галереи Сентендре.",
+      "Летом вернитесь в Будапешт на теплоходе по Дунаю.",
+      "Поднимитесь на купол базилики в Эстергоме — видно словацкий берег."
+     ],
+     "foodAndDrinks": [
+      "Халасле (острая рыбацкая уха с паприкой)",
+      "Кюртёшкалач (трубчатый сладкий кекс)"
+     ],
+     "criticalTips": [
+      "Электричка HÉV H5 от площади Баттьяни идёт до Сентендре около 40 минут.",
+      "Теплоходы ходят регулярно только весной и летом — проверьте расписание."
+     ],
+     "mapsQuery": "Szentendre, Hungary"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Эгер (крепость, минарет и винные погреба)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Эгерская крепость (известна осадой 1552 года)",
+      "Османский минарет (один из самых северных в Европе)",
+      "Винные погреба Сепассонь-вёльдь (Долина красавиц)",
+      "Базилика Эгера и площадь Добо"
+     ],
+     "activities": [
+      "Поднимитесь по узкой лестнице минарета и осмотрите город.",
+      "Продегустируйте вина Egri Bikavér и Egri Csillag в погребах.",
+      "Отдохните в купальне Török Fürdő (Турецкая баня) османской эпохи."
+     ],
+     "foodAndDrinks": [
+      "Паприкаш из курицы (со сметаной и галушками нокедли)",
+      "Egri Bikavér («Бычья кровь», красное вино Эгера)",
+      "Шомлойская галушка (бисквитный десерт с шоколадом и сливками)"
+     ],
+     "criticalTips": [
+      "Если планируете дегустацию, идите в долину пешком или езжайте на такси: в Венгрии за рулём действует нулевая норма алкоголя.",
+      "Некоторые музеи крепости по понедельникам закрыты — уточняйте часы работы."
+     ],
+     "mapsQuery": "Eger, Hungary"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Гуляш-суп (гуйяшлевеш, говядина с паприкой)",
+     "Паприкаш из курицы (со сметаной и галушками нокедли)",
+     "Халасле (острая рыбацкая уха с паприкой)"
+    ],
+    "drinks": [
+     "Токайское асу (сладкое вино из Токая)",
+     "Палинка (фруктовый бренди)",
+     "Уникум (травяной горький ликёр)"
+    ],
+    "streetFoods": [
+     "Лангош (жареная лепёшка со сметаной и сыром)",
+     "Кюртёшкалач (трубчатый сладкий кекс)",
+     "Шомлойская галушка (бисквитный десерт с шоколадом и сливками)"
+    ],
+    "diningAdvice": "В обед выгодно «napi menü» (меню дня); проверяйте, включена ли плата за обслуживание (szervízdíj), и избегайте меню без цен."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Купальник, шлёпанцы и полотенце для купален",
+     "Розетки типа C/F (европейская вилка)",
+     "Удобная обувь (холмы Буды крутые)",
+     "Летом — головной убор и крем от солнца, зимой — тёплая куртка"
+    ],
+    "safetyAndEtiquette": [
+     "Вежливо отказывайтесь от приглашений незнакомцев в бар.",
+     "В купальнях говорите тихо и принимайте душ перед бассейном."
+    ]
+   }
+  }
+ }
+}

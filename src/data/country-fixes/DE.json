@@ -1,0 +1,492 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "EUR (Euro)",
+   "bestMonths": "Mayıs – Eylül (ılık hava, uzun günler); Kasım sonu – Aralık Noel pazarları için; Münih’te Oktoberfest Eylül sonu – Ekim başı",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenlidir. Büyük şehirlerin ana tren istasyonları çevresinde (ör. Berlin, Frankfurt) yankesicilik ve gece huzursuzluğu görülebilir; kalabalık etkinliklerde Avrupa genelindeki terör riskine karşı dikkatli olun.",
+    "commonScams": [
+     "Turistik meydanlarda imza toplama bahanesiyle dikkat dağıtıp cüzdan çalma",
+     "Noel pazarları, Oktoberfest ve istasyonlarda organize yankesicilik",
+     "İstasyonlarda bilet makinesinde “yardım” teklif edip para veya kart bilgisi isteyenler"
+    ],
+    "safeTravelTips": [
+     "Binmeden önce biletinizi alın (gerekiyorsa damgalayın); biletsiz yakalanmanın cezası en az 60 €’dur.",
+     "Kırmızı veya işaretli bisiklet yollarında yürümeyin.",
+     "Pazar günleri ve resmî tatillerde mağazalar kapalıdır; alışverişi önceden yapın veya istasyon marketlerini kullanın."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%98 (4G; 5G büyük şehirlerde), trenlerde ve kırsalda kopmalar olabilir",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Çok iyi (S-Bahn/U-Bahn ve ICE ağı; uzun mesafe trenlerinde gecikmeler sık)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "3.50 - 4.50 $ (ör. Berlin AB 3.80 €)",
+    "dailyPassUsd": "11 - 13 $ (Berlin AB günlük bilet)",
+    "popularRideApps": [
+     "DB Navigator",
+     "FREENOW",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Taksiler taksimetrelidir ama pahalıdır. Uzun kalışlarda aylık Deutschlandticket (2026’da 63 €) tüm şehir içi ulaşım ve bölgesel trenlerde geçerlidir; ICE/IC hızlı trenler dahil değildir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "55 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 200 $",
+    "budgetMealUsd": "10 - 18 $ (döner, Currywurst veya öğle menüsü)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1 - 1.50 $ (+ Pfand depozitosu)",
+    "hostelDormUsd": "28 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (fuar ve Oktoberfest döneminde çok daha pahalı)",
+    "flightCostIndex": "Düşük (direkt 2,5-3,5 sa)",
+    "flightTip": "Türkiye’nin pek çok şehrinden Berlin, Münih, Frankfurt, Köln, Düsseldorf, Hamburg ve Stuttgart’a direkt uçuşlar vardır."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Guten Tag",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "İyi günler / Merhaba",
+      "pronunciation": "Guten tak"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "Danke şön"
+     },
+     {
+      "phrase": "Entschuldigung",
+      "meaning": "Affedersiniz",
+      "translation": "Affedersiniz",
+      "pronunciation": "Entşuldigung"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "Vas kostet das?"
+     },
+     {
+      "phrase": "Die Rechnung, bitte",
+      "meaning": "Hesap, lütfen",
+      "translation": "Hesap, lütfen",
+      "pronunciation": "Di reğnung, bitte"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "EUR (euro)",
+   "bestMonths": "May – September (mild weather, long days); late November – December for Christmas markets; Oktoberfest in Munich runs late September – early October",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe. Pickpocketing and some night-time disorder occur around main railway stations in big cities (e.g. Berlin, Frankfurt); stay alert at crowded events given the Europe-wide terrorism risk.",
+    "commonScams": [
+     "Petition or signature scams used to distract and steal wallets in tourist squares",
+     "Organised pickpocketing at Christmas markets, Oktoberfest and stations",
+     "People at station ticket machines offering “help” and asking for money or card details"
+    ],
+    "safeTravelTips": [
+     "Buy (and if required validate) your ticket before boarding; fare dodging costs at least 60 €.",
+     "Do not walk on red or marked cycle lanes.",
+     "Shops close on Sundays and public holidays; shop ahead or use station supermarkets."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G; 5G in big cities), with dead spots on trains and in rural areas",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Very good (S-Bahn/U-Bahn and ICE network; long-distance delays are common)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "3.50 - 4.50 $ (e.g. Berlin AB 3.80 €)",
+    "dailyPassUsd": "11 - 13 $ (Berlin AB day ticket)",
+    "popularRideApps": [
+     "DB Navigator",
+     "FREENOW",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Taxis are metered but expensive. For longer stays the monthly Deutschlandticket (63 € in 2026) covers all local transport and regional trains, but not ICE/IC high-speed trains."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "55 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 200 $",
+    "budgetMealUsd": "10 - 18 $ (döner, currywurst or lunch menu)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1 - 1.50 $ (+ Pfand bottle deposit)",
+    "hostelDormUsd": "28 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (much more during trade fairs and Oktoberfest)",
+    "flightCostIndex": "Low (direct 2.5-3.5 h)",
+    "flightTip": "Many Turkish cities have direct flights to Berlin, Munich, Frankfurt, Cologne, Düsseldorf, Hamburg and Stuttgart."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Guten Tag",
+      "meaning": "Good day / Hello",
+      "translation": "Good day / Hello",
+      "pronunciation": "GOO-ten tahk"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "DAHN-keh shurn"
+     },
+     {
+      "phrase": "Entschuldigung",
+      "meaning": "Excuse me / Sorry",
+      "translation": "Excuse me / Sorry",
+      "pronunciation": "ent-SHOOL-dee-goong"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "vahs KOS-tet dahs"
+     },
+     {
+      "phrase": "Die Rechnung, bitte",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "dee REKH-noong, BIT-teh"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "EUR (Euro)",
+   "bestMonths": "Mai – September (mildes Wetter, lange Tage); Ende November – Dezember für Weihnachtsmärkte; Oktoberfest in München Ende September – Anfang Oktober",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher. Rund um die Hauptbahnhöfe großer Städte (z. B. Berlin, Frankfurt) kommt es zu Taschendiebstahl und nächtlichen Störungen; bei Großveranstaltungen wegen der europaweiten Terrorgefahr aufmerksam bleiben.",
+    "commonScams": [
+     "Unterschriften- und Petitionstricks auf Touristenplätzen, um abzulenken und Geldbörsen zu stehlen",
+     "Organisierter Taschendiebstahl auf Weihnachtsmärkten, dem Oktoberfest und an Bahnhöfen",
+     "Personen an Fahrkartenautomaten, die „Hilfe“ anbieten und Geld oder Kartendaten verlangen"
+    ],
+    "safeTravelTips": [
+     "Ticket vor dem Einsteigen kaufen (und ggf. entwerten); Schwarzfahren kostet mindestens 60 €.",
+     "Nicht auf roten oder markierten Radwegen laufen.",
+     "Sonn- und feiertags sind Geschäfte geschlossen; vorher einkaufen oder Bahnhofssupermärkte nutzen."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98 % (4G; 5G in Großstädten), Funklöcher in Zügen und auf dem Land",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sehr gut (S-/U-Bahn und ICE-Netz; Verspätungen im Fernverkehr häufig)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "3.50 - 4.50 $ (z. B. Berlin AB 3,80 €)",
+    "dailyPassUsd": "11 - 13 $ (Tageskarte Berlin AB)",
+    "popularRideApps": [
+     "DB Navigator",
+     "FREENOW",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Taxis fahren mit Taxameter, sind aber teuer. Bei längeren Aufenthalten gilt das Deutschlandticket (2026: 63 € pro Monat) im gesamten Nahverkehr und in Regionalzügen, nicht aber in ICE/IC."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "55 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 200 $",
+    "budgetMealUsd": "10 - 18 $ (Döner, Currywurst oder Mittagstisch)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1 - 1.50 $ (+ Pfand)",
+    "hostelDormUsd": "28 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (zu Messen und Oktoberfest deutlich teurer)",
+    "flightCostIndex": "Niedrig (Direktflug 2,5-3,5 Std.)",
+    "flightTip": "Aus vielen türkischen Städten gibt es Direktflüge nach Berlin, München, Frankfurt, Köln, Düsseldorf, Hamburg und Stuttgart."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Guten Tag",
+      "meaning": "Guten Tag (Begrüßung)",
+      "translation": "Guten Tag (Begrüßung)",
+      "pronunciation": "GU-ten tak"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "DAN-ke schön"
+     },
+     {
+      "phrase": "Entschuldigung",
+      "meaning": "Entschuldigung (Verzeihung)",
+      "translation": "Entschuldigung (Verzeihung)",
+      "pronunciation": "ent-SCHUL-di-gung"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "Was kostet das? (Preisfrage)",
+      "translation": "Was kostet das? (Preisfrage)",
+      "pronunciation": "was KOS-tet das"
+     },
+     {
+      "phrase": "Die Rechnung, bitte",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "di RECH-nung, BIT-te"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "EUR (euro)",
+   "bestMonths": "Mayo – septiembre (clima templado, días largos); finales de noviembre – diciembre para los mercados navideños; el Oktoberfest de Múnich es de finales de septiembre a principios de octubre",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro. Hay carteristas y algunos altercados nocturnos en torno a las estaciones centrales de las grandes ciudades (p. ej. Berlín, Fráncfort); mantente atento en eventos multitudinarios por el riesgo terrorista común en Europa.",
+    "commonScams": [
+     "Timos de firmas o peticiones en plazas turísticas para distraer y robar carteras",
+     "Carteristas organizados en mercados navideños, el Oktoberfest y estaciones",
+     "Personas junto a las máquinas de billetes que ofrecen “ayuda” y piden dinero o datos de la tarjeta"
+    ],
+    "safeTravelTips": [
+     "Compra (y valida si hace falta) el billete antes de subir; viajar sin billete cuesta al menos 60 €.",
+     "No camines por los carriles bici rojos o señalizados.",
+     "Las tiendas cierran domingos y festivos; compra antes o usa los supermercados de las estaciones."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G; 5G en grandes ciudades), con cortes en trenes y zonas rurales",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muy bueno (S-Bahn/U-Bahn y red ICE; retrasos frecuentes en larga distancia)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "3.50 - 4.50 $ (p. ej. Berlín AB 3,80 €)",
+    "dailyPassUsd": "11 - 13 $ (billete diario Berlín AB)",
+    "popularRideApps": [
+     "DB Navigator",
+     "FREENOW",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Los taxis llevan taxímetro pero son caros. Para estancias largas, el Deutschlandticket mensual (63 € en 2026) vale para todo el transporte local y los trenes regionales, no para los ICE/IC."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "55 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 200 $",
+    "budgetMealUsd": "10 - 18 $ (döner, currywurst o menú de mediodía)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1 - 1.50 $ (+ depósito Pfand)",
+    "hostelDormUsd": "28 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (mucho más en ferias y Oktoberfest)",
+    "flightCostIndex": "Bajo (directo 2,5-3,5 h)",
+    "flightTip": "Desde muchas ciudades turcas hay vuelos directos a Berlín, Múnich, Fráncfort, Colonia, Düsseldorf, Hamburgo y Stuttgart."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Guten Tag",
+      "meaning": "Buenos días / Hola",
+      "translation": "Buenos días / Hola",
+      "pronunciation": "GU-ten tak"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "DAN-ke shon"
+     },
+     {
+      "phrase": "Entschuldigung",
+      "meaning": "Disculpe / Perdón",
+      "translation": "Disculpe / Perdón",
+      "pronunciation": "ent-SHUL-di-gung"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "vas KOS-tet das"
+     },
+     {
+      "phrase": "Die Rechnung, bitte",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "di REJ-nung, BI-te"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "EUR (евро)",
+   "bestMonths": "Май – сентябрь (мягкая погода, длинные дни); конец ноября – декабрь для рождественских ярмарок; Октоберфест в Мюнхене — конец сентября – начало октября",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно. Вокруг главных вокзалов крупных городов (например, Берлина, Франкфурта) встречаются карманные кражи и ночные беспорядки; на массовых мероприятиях будьте бдительны из-за общеевропейской террористической угрозы.",
+    "commonScams": [
+     "Сбор «подписей» на туристических площадях, чтобы отвлечь и украсть кошелёк",
+     "Организованные карманники на рождественских ярмарках, Октоберфесте и вокзалах",
+     "Люди у билетных автоматов, предлагающие «помощь» и просящие деньги или данные карты"
+    ],
+    "safeTravelTips": [
+     "Покупайте (и при необходимости компостируйте) билет до посадки; штраф за безбилетный проезд — от 60 €.",
+     "Не ходите по красным или размеченным велодорожкам.",
+     "По воскресеньям и праздникам магазины закрыты; закупайтесь заранее или в супермаркетах на вокзалах."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G; 5G в крупных городах), бывают провалы в поездах и в сельской местности",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Очень хороший (S-Bahn/U-Bahn и сеть ICE; частые задержки поездов дальнего следования)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "3.50 - 4.50 $ (например, Берлин AB 3,80 €)",
+    "dailyPassUsd": "11 - 13 $ (дневной билет Берлин AB)",
+    "popularRideApps": [
+     "DB Navigator",
+     "FREENOW",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Такси работают по счётчику, но дорогие. При длительном пребывании месячный Deutschlandticket (63 € в 2026 году) действует на весь городской транспорт и региональные поезда, но не на ICE/IC."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "55 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 200 $",
+    "budgetMealUsd": "10 - 18 $ (дёнер, карривурст или бизнес-ланч)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1 - 1.50 $ (+ залог Pfand)",
+    "hostelDormUsd": "28 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (намного дороже во время выставок и Октоберфеста)",
+    "flightCostIndex": "Низкий (прямой рейс 2,5-3,5 ч)",
+    "flightTip": "Из многих городов Турции есть прямые рейсы в Берлин, Мюнхен, Франкфурт, Кёльн, Дюссельдорф, Гамбург и Штутгарт."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Guten Tag",
+      "meaning": "Добрый день",
+      "translation": "Добрый день",
+      "pronunciation": "Гутен таг"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "Данке шён"
+     },
+     {
+      "phrase": "Entschuldigung",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "Энтшульдигунг"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "Вас костет дас?"
+     },
+     {
+      "phrase": "Die Rechnung, bitte",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "Ди рехнунг, битте"
+     }
+    ]
+   }
+  }
+ }
+}

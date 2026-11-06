@@ -1,0 +1,1247 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "USD ($)",
+   "bestMonths": "Bölgeye göre değişir: çoğu bölge için Nisan – Haziran ve Eylül – Ekim; Florida ve güneybatı çölleri için Kasım – Nisan; Yellowstone gibi kuzey milli parkları için Haziran – Eylül",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Turistik bölgeler genelde güvenli olsa da şiddet suçu ve silahlı olay oranları Avrupa’dan yüksektir; büyük şehirlerin bazı mahalleleri geceleri risklidir. Kiralık araçlardan eşya hırsızlığı çok yaygındır.",
+    "commonScams": [
+     "Times Square’de kostümlü karakterlerin veya “bedava CD” verenlerin fotoğraf/para istemesi",
+     "Kiralık araçların camını kırıp bagajdaki eşyaları çalma (özellikle San Francisco ve Los Angeles)",
+     "Otellerde önceden açıkça belirtilmeyen “resort fee” ve ek ücretler"
+    ],
+    "safeTravelTips": [
+     "Araçta görünür hiçbir eşya bırakmayın, bavulları bagajda bile tutmayın.",
+     "Gece tanımadığınız mahallelerde yürümek yerine Uber veya Lyft kullanın.",
+     "Sağlık hizmetleri çok pahalıdır; kapsamlı seyahat sağlık sigortası yaptırın."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde %99 (5G yaygın); milli parklarda ve çöllerde kapsama olmayabilir",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Şehre göre değişir (New York, Chicago, Washington iyi; diğerlerinde araç gerekir)",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "2.90 - 3 $ (New York metrosu, OMNY)",
+    "dailyPassUsd": "~34 $ (New York 7 günlük sınırsız; OMNY haftalık tavan)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft",
+     "Waymo (San Francisco, Los Angeles, Phoenix)",
+     "Amtrak"
+    ],
+    "taxiAdvice": "Uber ve Lyft her yerde yaygındır; New York’ta sarı taksiler de taksimetrelidir. Şehirler arası mesafeler büyüktür: iç hat uçuşu veya kiralık araç kullanın; doğu kıyısında Amtrak trenleri pratiktir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "15 - 25 $ (vergi ve bahşiş hariç)",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "1.50 - 3 $",
+    "hostelDormUsd": "45 - 90 $",
+    "hotel3StarUsd": "140 - 260 $ (+ konaklama vergisi ve resort ücreti)",
+    "flightCostIndex": "Yüksek (direkt ~10-13 sa)",
+    "flightTip": "İstanbul’dan New York, Washington, Chicago, Los Angeles, Miami, San Francisco ve diğer büyük şehirlere direkt uçuşlar vardır."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hi, how's it going?",
+      "meaning": "Selam, nasıl gidiyor?",
+      "translation": "Selam, nasıl gidiyor?",
+      "pronunciation": "Hay, havz it going?"
+     },
+     {
+      "phrase": "Thanks, I appreciate it",
+      "meaning": "Teşekkürler, minnettarım",
+      "translation": "Teşekkürler, minnettarım",
+      "pronunciation": "Tenks, ay ıpriişiyeyt it"
+     },
+     {
+      "phrase": "Excuse me",
+      "meaning": "Affedersiniz",
+      "translation": "Affedersiniz",
+      "pronunciation": "Ekskyuz mi"
+     },
+     {
+      "phrase": "Can I get the check, please?",
+      "meaning": "Hesabı alabilir miyim, lütfen?",
+      "translation": "Hesabı alabilir miyim, lütfen?",
+      "pronunciation": "Ken ay get dı çek, pliz?"
+     },
+     {
+      "phrase": "Where's the restroom?",
+      "meaning": "Tuvalet nerede?",
+      "translation": "Tuvalet nerede?",
+      "pronunciation": "Verz dı restrum?"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "ABD: New York, Washington, Büyük Kanyon & Los Angeles",
+   "routeSummary": "New York’un ikonik silüetinden başkent Washington’un anıt ve ücretsiz müzelerine, oradan uçakla Las Vegas’a geçip Büyük Kanyon’un kızıl uçurumlarına ve Los Angeles’ın Pasifik kıyısına uzanan, doğudan batıya 10 günlük klasik rota.",
+   "totalDays": 10,
+   "idealDurationText": "10 Günlük Doğudan Batıya ABD Rotası",
+   "bestSeason": "Nisan – Haziran ve Eylül – Ekim",
+   "transportMode": "Amtrak treni (New York–Washington) + iç hat uçuşu + kiralık araç (Batı)",
+   "paceLevel": "Yoğun (uzun mesafeler ve saat farkları)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Texas usulü brisket barbekü",
+     "New England clam chowder",
+     "Cheeseburger",
+     "Buffalo wings"
+    ],
+    "drinks": [
+     "Kentucky bourbon",
+     "Craft IPA biraları",
+     "Buzlu çay (sweet tea)"
+    ],
+    "streetFoods": [
+     "New York dilim pizza",
+     "Tacos",
+     "Apple pie ve cheesecake"
+    ],
+    "diningAdvice": "Restoranlarda %18-22 bahşiş zorunlu sayılır ve fiyatlara satış vergisi eklenir. Porsiyonlar çok büyüktür; paylaşmak yaygındır. Helal seçenekler büyük şehirlerde kolay bulunur (New York halal cart’ları gibi)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "A/B tipi priz adaptörü (110V)",
+     "Kapsamlı seyahat sağlık sigortası",
+     "Çöl için güneş kremi, şapka ve bol su",
+     "Kiralık araç için uluslararası ehliyet (eyalete göre gerekebilir)"
+    ],
+    "safetyAndEtiquette": [
+     "Polis sizi durdurursa ellerinizi görünür tutun ve araçta oturmaya devam edin.",
+     "Kamusal alanda açık alkol tüketimi çoğu eyalette yasaktır.",
+     "Araçta değerli eşya bırakmayın."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: New York (Manhattan, Özgürlük Heykeli & Brooklyn)",
+     "recommendedDuration": "4 Gün (Manhattan ve Brooklyn için)",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Özgürlük Heykeli ve Ellis Adası",
+      "Central Park ve Metropolitan Sanat Müzesi",
+      "Times Square ve Broadway",
+      "Brooklyn Köprüsü ve DUMBO"
+     ],
+     "activities": [
+      "Battery Park’tan resmî feribotla Özgürlük Heykeli ve Ellis Adası’na gidin.",
+      "Central Park’ta yürüyüp Metropolitan Müzesi’ni gezin.",
+      "Gün batımında Brooklyn Köprüsü’nü yürüyerek geçip DUMBO’dan Manhattan silüetini izleyin."
+     ],
+     "foodAndDrinks": [
+      "New York usulü dilim pizza",
+      "Krem peynirli ve somonlu bagel",
+      "Helal sokak tezgâhlarında (halal cart) tavuklu pilav"
+     ],
+     "criticalTips": [
+      "Özgürlük Heykeli biletlerini yalnızca resmî satıcı Statue City Cruises’tan alın; sokakta satılan “tur biletleri”ne itibar etmeyin.",
+      "Menü fiyatlarına vergi (~%8,9) ve %18-22 bahşiş eklenir; bütçenizi buna göre yapın."
+     ],
+     "mapsQuery": "Manhattan, New York, USA"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Washington D.C. (Anıtlar ve Ücretsiz Müzeler)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "National Mall, Lincoln Anıtı ve Washington Anıtı",
+      "Smithsonian müzeleri (ücretsiz)",
+      "Capitol ve Kongre Kütüphanesi",
+      "Georgetown semti"
+     ],
+     "activities": [
+      "National Mall boyunca Lincoln Anıtı’ndan Capitol’e yürüyün.",
+      "Ulusal Hava ve Uzay Müzesi ile Doğa Tarihi Müzesi’ni ücretsiz gezin.",
+      "Georgetown’un tuğla sokaklarında ve Potomac kıyısında akşam yürüyüşü yapın."
+     ],
+     "foodAndDrinks": [
+      "Maryland usulü yengeç köftesi (crab cake)",
+      "Washington’un ünlü Etiyopya mutfağı",
+      "Ben’s Chili Bowl’da “half-smoke” sosisli"
+     ],
+     "criticalTips": [
+      "Capitol turu için önceden ücretsiz online rezervasyon yapın.",
+      "New York–Washington arası Amtrak treniyle yaklaşık 3 saattir; erken alınan biletler ucuzdur."
+     ],
+     "mapsQuery": "National Mall, Washington, DC, USA"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Las Vegas & Büyük Kanyon (Çöl ve Kanyon)",
+     "recommendedDuration": "2 Gün (araçla)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Las Vegas Strip",
+      "Hoover Barajı",
+      "Büyük Kanyon South Rim (Mather Point)",
+      "Seligman’da tarihî Route 66"
+     ],
+     "activities": [
+      "Las Vegas Strip’te Bellagio fıskiyeleri gösterisini izleyin.",
+      "Hoover Barajı üzerinden Arizona’ya geçip Route 66 kasabası Seligman’da mola verin.",
+      "Büyük Kanyon’un güney kenarındaki Rim Trail’de gün doğumu veya gün batımı yürüyüşü yapın."
+     ],
+     "foodAndDrinks": [
+      "Las Vegas açık büfe restoranları",
+      "Route 66 lokantalarında milkshake ve burger",
+      "Navajo usulü kızarmış ekmek (fry bread)"
+     ],
+     "criticalTips": [
+      "Las Vegas–Büyük Kanyon South Rim arası araçla yaklaşık 4,5 saattir; yazın bol su taşıyın ve öğle sıcağında yürümeyin.",
+      "Milli parklara giriş araç başına ücretlidir; birden çok park gezecekseniz yıllık “America the Beautiful” kartı avantajlıdır."
+     ],
+     "mapsQuery": "Grand Canyon South Rim, Arizona, USA"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Los Angeles (Hollywood ve Pasifik Kıyısı)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Hollywood Walk of Fame ve Griffith Gözlemevi",
+      "Santa Monica İskelesi ve Venice Beach",
+      "Getty Center (ücretsiz giriş)",
+      "Malibu ve Pacific Coast Highway"
+     ],
+     "activities": [
+      "Griffith Gözlemevi’nden Hollywood yazısını ve şehri gün batımında izleyin.",
+      "Santa Monica’dan Venice Beach’e sahil boyunca bisiklet sürün.",
+      "Pacific Coast Highway üzerinden Malibu’ya sürüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Los Angeles sokak tacos’ları",
+      "In-N-Out burger",
+      "Koreatown’da Kore barbeküsü"
+     ],
+     "criticalTips": [
+      "Trafik çok yoğundur; günü semt semt planlayın ve sabah/akşam zirve saatlerinden kaçının.",
+      "Park ettiğiniz araçta görünür eşya bırakmayın; cam kırma hırsızlığı yaygındır."
+     ],
+     "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "USD ($)",
+   "bestMonths": "Varies by region: April – June and September – October for most areas; November – April for Florida and the south-western deserts; June – September for northern national parks such as Yellowstone",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Tourist areas are generally safe, but violent crime and gun incidents are more frequent than in Europe, and some neighbourhoods of big cities are risky at night. Theft from rental cars is very common.",
+    "commonScams": [
+     "Costumed characters or “free CD” sellers in Times Square demanding money for photos",
+     "Rental-car break-ins to steal luggage (especially in San Francisco and Los Angeles)",
+     "Hotel “resort fees” and surcharges not clearly shown up front"
+    ],
+    "safeTravelTips": [
+     "Leave nothing visible in the car, and do not keep luggage in the trunk overnight.",
+     "Use Uber or Lyft instead of walking through unfamiliar neighbourhoods at night.",
+     "Healthcare is very expensive; get comprehensive travel medical insurance."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% in cities (5G widespread); no signal in parts of national parks and deserts",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Varies by city (good in New York, Chicago, Washington; elsewhere you need a car)",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "2.90 - 3 $ (New York subway, OMNY)",
+    "dailyPassUsd": "~34 $ (New York 7-day unlimited; OMNY weekly cap)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft",
+     "Waymo (San Francisco, Los Angeles, Phoenix)",
+     "Amtrak"
+    ],
+    "taxiAdvice": "Uber and Lyft are everywhere; yellow cabs in New York are metered. Distances between cities are huge, so fly domestically or rent a car; Amtrak trains are handy on the East Coast."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "15 - 25 $ (before tax and tip)",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "1.50 - 3 $",
+    "hostelDormUsd": "45 - 90 $",
+    "hotel3StarUsd": "140 - 260 $ (+ hotel tax and resort fees)",
+    "flightCostIndex": "High (direct ~10-13 h)",
+    "flightTip": "There are direct flights from Istanbul to New York, Washington, Chicago, Los Angeles, Miami, San Francisco and other major cities."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hi, how's it going?",
+      "meaning": "Casual greeting",
+      "translation": "Casual greeting",
+      "pronunciation": "hy, howz it GO-ing"
+     },
+     {
+      "phrase": "Thanks, I appreciate it",
+      "meaning": "Polite thanks",
+      "translation": "Polite thanks",
+      "pronunciation": "thanks, eye uh-PREE-shee-ayt it"
+     },
+     {
+      "phrase": "Excuse me",
+      "meaning": "To get attention or pass by",
+      "translation": "To get attention or pass by",
+      "pronunciation": "ex-KYOOZ mee"
+     },
+     {
+      "phrase": "Can I get the check, please?",
+      "meaning": "Asking for the bill (US English)",
+      "translation": "Asking for the bill (US English)",
+      "pronunciation": "kan eye get thuh CHEK, pleez"
+     },
+     {
+      "phrase": "Where's the restroom?",
+      "meaning": "Asking for the toilet (US English)",
+      "translation": "Asking for the toilet (US English)",
+      "pronunciation": "wairz thuh REST-room"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "USA: New York, Washington, the Grand Canyon & Los Angeles",
+   "routeSummary": "A classic 10-day east-to-west route: New York’s iconic skyline, the monuments and free museums of Washington, then a flight to Las Vegas for the red cliffs of the Grand Canyon and finally the Pacific coast of Los Angeles.",
+   "totalDays": 10,
+   "idealDurationText": "10-Day East-to-West USA Route",
+   "bestSeason": "April – June and September – October",
+   "transportMode": "Amtrak train (New York–Washington) + domestic flight + rental car (West)",
+   "paceLevel": "Intense (long distances and time-zone changes)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Texas-style brisket barbecue",
+     "New England clam chowder",
+     "Cheeseburger",
+     "Buffalo wings"
+    ],
+    "drinks": [
+     "Kentucky bourbon",
+     "Craft IPA beers",
+     "Sweet iced tea"
+    ],
+    "streetFoods": [
+     "New York pizza slice",
+     "Tacos",
+     "Apple pie and cheesecake"
+    ],
+    "diningAdvice": "An 18-22% tip is effectively mandatory in restaurants and sales tax is added to prices. Portions are huge and sharing is common. Halal options are easy to find in big cities (such as New York’s halal carts)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type A/B plug adapter (110V)",
+     "Comprehensive travel medical insurance",
+     "Sunscreen, hat and plenty of water for the desert",
+     "International driving permit for car rental (required in some states)"
+    ],
+    "safetyAndEtiquette": [
+     "If stopped by police, keep your hands visible and stay seated in the car.",
+     "Drinking alcohol in public is illegal in most states.",
+     "Never leave valuables in the car."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: New York (Manhattan, Statue of Liberty & Brooklyn)",
+     "recommendedDuration": "4 Days (Manhattan and Brooklyn)",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Statue of Liberty and Ellis Island",
+      "Central Park and the Metropolitan Museum of Art",
+      "Times Square and Broadway",
+      "Brooklyn Bridge and DUMBO"
+     ],
+     "activities": [
+      "Take the official ferry from Battery Park to the Statue of Liberty and Ellis Island.",
+      "Walk through Central Park and explore the Met.",
+      "Cross the Brooklyn Bridge on foot at sunset and view the Manhattan skyline from DUMBO."
+     ],
+     "foodAndDrinks": [
+      "New York-style pizza slice",
+      "Bagel with cream cheese and lox",
+      "Chicken over rice from a halal cart"
+     ],
+     "criticalTips": [
+      "Buy Statue of Liberty tickets only from the official seller, Statue City Cruises; ignore street “tour ticket” sellers.",
+      "Menu prices exclude sales tax (~8.9%) and an 18-22% tip; budget accordingly."
+     ],
+     "mapsQuery": "Manhattan, New York, USA"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Washington D.C. (Monuments and Free Museums)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "National Mall, Lincoln Memorial and Washington Monument",
+      "Smithsonian museums (free)",
+      "US Capitol and Library of Congress",
+      "Georgetown"
+     ],
+     "activities": [
+      "Walk the National Mall from the Lincoln Memorial to the Capitol.",
+      "Visit the National Air and Space Museum and the Natural History Museum for free.",
+      "Take an evening stroll through Georgetown’s brick streets and along the Potomac."
+     ],
+     "foodAndDrinks": [
+      "Maryland crab cakes",
+      "D.C.’s renowned Ethiopian cuisine",
+      "A “half-smoke” sausage at Ben’s Chili Bowl"
+     ],
+     "criticalTips": [
+      "Reserve a free Capitol tour online in advance.",
+      "Amtrak from New York to Washington takes about 3 hours; early tickets are cheaper."
+     ],
+     "mapsQuery": "National Mall, Washington, DC, USA"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Las Vegas & the Grand Canyon (Desert and Canyon)",
+     "recommendedDuration": "2 Days (by car)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "The Las Vegas Strip",
+      "Hoover Dam",
+      "Grand Canyon South Rim (Mather Point)",
+      "Historic Route 66 in Seligman"
+     ],
+     "activities": [
+      "Watch the Fountains of Bellagio show on the Las Vegas Strip.",
+      "Drive over Hoover Dam into Arizona and stop in the Route 66 town of Seligman.",
+      "Hike the Rim Trail on the Grand Canyon’s South Rim at sunrise or sunset."
+     ],
+     "foodAndDrinks": [
+      "Las Vegas buffets",
+      "Milkshakes and burgers at Route 66 diners",
+      "Navajo fry bread"
+     ],
+     "criticalTips": [
+      "Las Vegas to the South Rim is about a 4.5-hour drive; carry plenty of water in summer and avoid hiking in the midday heat.",
+      "National parks charge an entry fee per vehicle; the annual “America the Beautiful” pass pays off if you visit several."
+     ],
+     "mapsQuery": "Grand Canyon South Rim, Arizona, USA"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Los Angeles (Hollywood and the Pacific Coast)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Hollywood Walk of Fame and Griffith Observatory",
+      "Santa Monica Pier and Venice Beach",
+      "Getty Center (free entry)",
+      "Malibu and the Pacific Coast Highway"
+     ],
+     "activities": [
+      "See the Hollywood Sign and the city at sunset from Griffith Observatory.",
+      "Cycle along the beach from Santa Monica to Venice Beach.",
+      "Drive the Pacific Coast Highway to Malibu."
+     ],
+     "foodAndDrinks": [
+      "L.A. street tacos",
+      "In-N-Out burger",
+      "Korean barbecue in Koreatown"
+     ],
+     "criticalTips": [
+      "Traffic is heavy; plan your day by neighbourhood and avoid rush hours.",
+      "Leave nothing visible in parked cars; window-smash thefts are common."
+     ],
+     "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "USD ($)",
+   "bestMonths": "Je nach Region: April – Juni und September – Oktober für die meisten Gebiete; November – April für Florida und die Wüsten im Südwesten; Juni – September für nördliche Nationalparks wie Yellowstone",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Touristengebiete sind meist sicher, doch Gewaltkriminalität und Schusswaffenvorfälle sind häufiger als in Europa, und manche Viertel großer Städte sind nachts riskant. Einbrüche in Mietwagen sind sehr verbreitet.",
+    "commonScams": [
+     "Kostümierte Figuren oder „Gratis-CD“-Verkäufer am Times Square, die Geld für Fotos verlangen",
+     "Aufgebrochene Mietwagen und gestohlenes Gepäck (vor allem in San Francisco und Los Angeles)",
+     "Hotel-„Resort Fees“ und Zuschläge, die vorab nicht klar ausgewiesen sind"
+    ],
+    "safeTravelTips": [
+     "Nichts sichtbar im Auto lassen und Gepäck nicht über Nacht im Kofferraum lassen.",
+     "Nachts lieber Uber oder Lyft nehmen, statt durch unbekannte Viertel zu laufen.",
+     "Medizinische Versorgung ist sehr teuer; eine umfassende Reisekrankenversicherung abschließen."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % in Städten (5G verbreitet); in Teilen der Nationalparks und Wüsten kein Netz",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Je nach Stadt (gut in New York, Chicago, Washington; anderswo braucht man ein Auto)",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "2.90 - 3 $ (New Yorker U-Bahn, OMNY)",
+    "dailyPassUsd": "~34 $ (New York 7 Tage unbegrenzt; OMNY-Wochenobergrenze)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft",
+     "Waymo (San Francisco, Los Angeles, Phoenix)",
+     "Amtrak"
+    ],
+    "taxiAdvice": "Uber und Lyft gibt es überall; die gelben Taxis in New York fahren mit Taxameter. Die Entfernungen sind riesig: Inlandsflüge oder Mietwagen nutzen; an der Ostküste ist Amtrak praktisch."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "15 - 25 $ (ohne Steuer und Trinkgeld)",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "1.50 - 3 $",
+    "hostelDormUsd": "45 - 90 $",
+    "hotel3StarUsd": "140 - 260 $ (+ Hotelsteuer und Resort Fees)",
+    "flightCostIndex": "Hoch (Direktflug ~10-13 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach New York, Washington, Chicago, Los Angeles, Miami, San Francisco und in weitere Großstädte."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hi, how's it going?",
+      "meaning": "Hallo, wie läuft’s?",
+      "translation": "Hallo, wie läuft’s?",
+      "pronunciation": "hai, haus it GO-ing"
+     },
+     {
+      "phrase": "Thanks, I appreciate it",
+      "meaning": "Danke, das weiß ich zu schätzen",
+      "translation": "Danke, das weiß ich zu schätzen",
+      "pronunciation": "thänks, ai e-PRIE-schi-eit it"
+     },
+     {
+      "phrase": "Excuse me",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "eks-KJUS mi"
+     },
+     {
+      "phrase": "Can I get the check, please?",
+      "meaning": "Kann ich bitte die Rechnung haben?",
+      "translation": "Kann ich bitte die Rechnung haben?",
+      "pronunciation": "kän ai get se TSCHEK, plihs"
+     },
+     {
+      "phrase": "Where's the restroom?",
+      "meaning": "Wo ist die Toilette?",
+      "translation": "Wo ist die Toilette?",
+      "pronunciation": "wers se REST-rum"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "USA: New York, Washington, Grand Canyon & Los Angeles",
+   "routeSummary": "Eine klassische 10-tägige Route von Ost nach West: New Yorks ikonische Skyline, die Denkmäler und kostenlosen Museen Washingtons, dann per Flug nach Las Vegas zu den roten Felswänden des Grand Canyon und schließlich an die Pazifikküste von Los Angeles.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige USA-Route von Ost nach West",
+   "bestSeason": "April – Juni und September – Oktober",
+   "transportMode": "Amtrak-Zug (New York–Washington) + Inlandsflug + Mietwagen (Westen)",
+   "paceLevel": "Intensiv (große Entfernungen und Zeitzonenwechsel)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Brisket-Barbecue nach Texas-Art",
+     "New England Clam Chowder",
+     "Cheeseburger",
+     "Buffalo Wings"
+    ],
+    "drinks": [
+     "Kentucky Bourbon",
+     "Craft-IPA-Biere",
+     "Süßer Eistee"
+    ],
+    "streetFoods": [
+     "New Yorker Pizzastück",
+     "Tacos",
+     "Apple Pie und Cheesecake"
+    ],
+    "diningAdvice": "In Restaurants sind 18-22 % Trinkgeld praktisch Pflicht, und auf die Preise kommt Umsatzsteuer. Die Portionen sind riesig, Teilen ist üblich. Halal-Optionen findet man in Großstädten leicht (z. B. Halal-Imbisswagen in New York)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reiseadapter Typ A/B (110 V)",
+     "Umfassende Reisekrankenversicherung",
+     "Sonnencreme, Hut und viel Wasser für die Wüste",
+     "Internationaler Führerschein für den Mietwagen (in manchen Bundesstaaten nötig)"
+    ],
+    "safetyAndEtiquette": [
+     "Bei einer Polizeikontrolle die Hände sichtbar halten und im Auto sitzen bleiben.",
+     "Alkohol in der Öffentlichkeit ist in den meisten Bundesstaaten verboten.",
+     "Nie Wertsachen im Auto lassen."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: New York (Manhattan, Freiheitsstatue & Brooklyn)",
+     "recommendedDuration": "4 Tage (Manhattan und Brooklyn)",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Freiheitsstatue und Ellis Island",
+      "Central Park und Metropolitan Museum of Art",
+      "Times Square und Broadway",
+      "Brooklyn Bridge und DUMBO"
+     ],
+     "activities": [
+      "Fahre mit der offiziellen Fähre vom Battery Park zur Freiheitsstatue und nach Ellis Island.",
+      "Spaziere durch den Central Park und besuche das Met.",
+      "Überquere die Brooklyn Bridge zu Fuß bei Sonnenuntergang und genieße von DUMBO die Skyline Manhattans."
+     ],
+     "foodAndDrinks": [
+      "Pizzastück nach New Yorker Art",
+      "Bagel mit Frischkäse und Räucherlachs",
+      "Hähnchen mit Reis vom Halal-Imbisswagen"
+     ],
+     "criticalTips": [
+      "Tickets für die Freiheitsstatue nur beim offiziellen Anbieter Statue City Cruises kaufen; Straßenverkäufer ignorieren.",
+      "Auf Menüpreise kommen Umsatzsteuer (~8,9 %) und 18-22 % Trinkgeld; entsprechend planen."
+     ],
+     "mapsQuery": "Manhattan, New York, USA"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Washington D.C. (Denkmäler und kostenlose Museen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "National Mall, Lincoln Memorial und Washington Monument",
+      "Smithsonian-Museen (kostenlos)",
+      "Kapitol und Library of Congress",
+      "Georgetown"
+     ],
+     "activities": [
+      "Laufe die National Mall vom Lincoln Memorial bis zum Kapitol entlang.",
+      "Besuche kostenlos das National Air and Space Museum und das Naturkundemuseum.",
+      "Mach abends einen Spaziergang durch Georgetowns Backsteinstraßen und am Potomac."
+     ],
+     "foodAndDrinks": [
+      "Krabbenküchlein nach Maryland-Art",
+      "Die berühmte äthiopische Küche von D.C.",
+      "Eine „Half-Smoke“-Wurst bei Ben’s Chili Bowl"
+     ],
+     "criticalTips": [
+      "Eine kostenlose Kapitol-Führung vorab online reservieren.",
+      "Mit Amtrak dauert New York–Washington etwa 3 Stunden; früh gebuchte Tickets sind günstiger."
+     ],
+     "mapsQuery": "National Mall, Washington, DC, USA"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Las Vegas & Grand Canyon (Wüste und Schlucht)",
+     "recommendedDuration": "2 Tage (mit dem Auto)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Las Vegas Strip",
+      "Hoover Dam",
+      "Grand Canyon South Rim (Mather Point)",
+      "Historische Route 66 in Seligman"
+     ],
+     "activities": [
+      "Sieh dir die Wasserspiele des Bellagio am Las Vegas Strip an.",
+      "Fahre über den Hoover Dam nach Arizona und halte im Route-66-Ort Seligman.",
+      "Wandere bei Sonnenauf- oder -untergang auf dem Rim Trail am Südrand des Grand Canyon."
+     ],
+     "foodAndDrinks": [
+      "Buffets in Las Vegas",
+      "Milkshakes und Burger in Route-66-Diners",
+      "Navajo-Fladenbrot (Fry Bread)"
+     ],
+     "criticalTips": [
+      "Von Las Vegas zum South Rim sind es etwa 4,5 Autostunden; im Sommer viel Wasser mitnehmen und nicht in der Mittagshitze wandern.",
+      "Nationalparks kosten Eintritt pro Fahrzeug; der Jahrespass „America the Beautiful“ lohnt sich bei mehreren Parks."
+     ],
+     "mapsQuery": "Grand Canyon South Rim, Arizona, USA"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Los Angeles (Hollywood und Pazifikküste)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Hollywood Walk of Fame und Griffith Observatory",
+      "Santa Monica Pier und Venice Beach",
+      "Getty Center (Eintritt frei)",
+      "Malibu und Pacific Coast Highway"
+     ],
+     "activities": [
+      "Sieh vom Griffith Observatory bei Sonnenuntergang das Hollywood-Schild und die Stadt.",
+      "Radle am Strand von Santa Monica nach Venice Beach.",
+      "Fahre den Pacific Coast Highway nach Malibu."
+     ],
+     "foodAndDrinks": [
+      "Street Tacos aus L.A.",
+      "In-N-Out-Burger",
+      "Koreanisches Barbecue in Koreatown"
+     ],
+     "criticalTips": [
+      "Der Verkehr ist dicht; plane den Tag nach Vierteln und meide die Stoßzeiten.",
+      "Nichts sichtbar im geparkten Auto lassen; Scheibeneinbrüche sind häufig."
+     ],
+     "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "USD ($)",
+   "bestMonths": "Depende de la región: abril – junio y septiembre – octubre para la mayoría de zonas; noviembre – abril para Florida y los desiertos del suroeste; junio – septiembre para parques del norte como Yellowstone",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Las zonas turísticas suelen ser seguras, pero la delincuencia violenta y los incidentes con armas son más frecuentes que en Europa, y algunos barrios de las grandes ciudades son arriesgados de noche. Los robos en coches de alquiler son muy comunes.",
+    "commonScams": [
+     "Personajes disfrazados o vendedores de “CD gratis” en Times Square que exigen dinero por fotos",
+     "Robos rompiendo la ventanilla de coches de alquiler (sobre todo en San Francisco y Los Ángeles)",
+     "Las “resort fees” y recargos de hotel que no se muestran claramente al reservar"
+    ],
+    "safeTravelTips": [
+     "No dejes nada a la vista en el coche ni equipaje en el maletero por la noche.",
+     "De noche usa Uber o Lyft en lugar de caminar por barrios que no conoces.",
+     "La sanidad es carísima; contrata un seguro médico de viaje completo."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% en ciudades (5G extendido); sin cobertura en partes de parques nacionales y desiertos",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Depende de la ciudad (bueno en Nueva York, Chicago, Washington; en otras hace falta coche)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "2.90 - 3 $ (metro de Nueva York, OMNY)",
+    "dailyPassUsd": "~34 $ (Nueva York ilimitado 7 días; tope semanal OMNY)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft",
+     "Waymo (San Francisco, Los Angeles, Phoenix)",
+     "Amtrak"
+    ],
+    "taxiAdvice": "Uber y Lyft están en todas partes; los taxis amarillos de Nueva York llevan taxímetro. Las distancias entre ciudades son enormes: usa vuelos internos o coche de alquiler; en la costa este Amtrak es práctico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "15 - 25 $ (sin impuestos ni propina)",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "1.50 - 3 $",
+    "hostelDormUsd": "45 - 90 $",
+    "hotel3StarUsd": "140 - 260 $ (+ impuesto hotelero y resort fees)",
+    "flightCostIndex": "Alto (directo ~10-13 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Nueva York, Washington, Chicago, Los Ángeles, Miami, San Francisco y otras grandes ciudades."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hi, how's it going?",
+      "meaning": "Hola, ¿qué tal?",
+      "translation": "Hola, ¿qué tal?",
+      "pronunciation": "jai, jaus it GÓ-ing"
+     },
+     {
+      "phrase": "Thanks, I appreciate it",
+      "meaning": "Gracias, te lo agradezco",
+      "translation": "Gracias, te lo agradezco",
+      "pronunciation": "zenks, ai a-PRI-shi-eit it"
+     },
+     {
+      "phrase": "Excuse me",
+      "meaning": "Disculpe",
+      "translation": "Disculpe",
+      "pronunciation": "eks-KIÚS mi"
+     },
+     {
+      "phrase": "Can I get the check, please?",
+      "meaning": "¿Me trae la cuenta, por favor?",
+      "translation": "¿Me trae la cuenta, por favor?",
+      "pronunciation": "ken ai guet de CHEK, pliis"
+     },
+     {
+      "phrase": "Where's the restroom?",
+      "meaning": "¿Dónde está el baño?",
+      "translation": "¿Dónde está el baño?",
+      "pronunciation": "uers de REST-rum"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "EE. UU.: Nueva York, Washington, el Gran Cañón y Los Ángeles",
+   "routeSummary": "Una ruta clásica de 10 días de este a oeste: el icónico skyline de Nueva York, los monumentos y museos gratuitos de Washington, un vuelo a Las Vegas para los acantilados rojos del Gran Cañón y, por último, la costa del Pacífico en Los Ángeles.",
+   "totalDays": 10,
+   "idealDurationText": "Ruta de 10 días por EE. UU. de este a oeste",
+   "bestSeason": "Abril – junio y septiembre – octubre",
+   "transportMode": "Tren Amtrak (Nueva York–Washington) + vuelo interno + coche de alquiler (Oeste)",
+   "paceLevel": "Intenso (grandes distancias y cambios de huso horario)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Barbacoa de brisket al estilo de Texas",
+     "Clam chowder de Nueva Inglaterra",
+     "Cheeseburger",
+     "Alitas Buffalo"
+    ],
+    "drinks": [
+     "Bourbon de Kentucky",
+     "Cervezas IPA artesanas",
+     "Té helado dulce"
+    ],
+    "streetFoods": [
+     "Porción de pizza neoyorquina",
+     "Tacos",
+     "Tarta de manzana y cheesecake"
+    ],
+    "diningAdvice": "En los restaurantes la propina del 18-22% es prácticamente obligatoria y a los precios se suma el impuesto. Las raciones son enormes y compartir es habitual. En las grandes ciudades es fácil encontrar comida halal (como los carritos de Nueva York)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (110 V)",
+     "Seguro médico de viaje completo",
+     "Protector solar, sombrero y mucha agua para el desierto",
+     "Permiso internacional de conducir para alquilar coche (exigido en algunos estados)"
+    ],
+    "safetyAndEtiquette": [
+     "Si te para la policía, mantén las manos a la vista y quédate sentado en el coche.",
+     "Beber alcohol en la calle es ilegal en la mayoría de estados.",
+     "No dejes nunca objetos de valor en el coche."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Nueva York (Manhattan, Estatua de la Libertad y Brooklyn)",
+     "recommendedDuration": "4 Días (Manhattan y Brooklyn)",
+     "durationBadge": "4 Días",
+     "highlights": [
+      "Estatua de la Libertad e isla de Ellis",
+      "Central Park y Museo Metropolitano de Arte",
+      "Times Square y Broadway",
+      "Puente de Brooklyn y DUMBO"
+     ],
+     "activities": [
+      "Toma el ferry oficial desde Battery Park a la Estatua de la Libertad y la isla de Ellis.",
+      "Pasea por Central Park y visita el Met.",
+      "Cruza a pie el puente de Brooklyn al atardecer y contempla el skyline de Manhattan desde DUMBO."
+     ],
+     "foodAndDrinks": [
+      "Porción de pizza neoyorquina",
+      "Bagel con queso crema y salmón ahumado",
+      "Pollo con arroz de un carrito halal"
+     ],
+     "criticalTips": [
+      "Compra las entradas a la Estatua de la Libertad solo al vendedor oficial, Statue City Cruises; ignora a los vendedores callejeros.",
+      "Los precios de la carta no incluyen impuestos (~8,9%) ni la propina del 18-22%; tenlo en cuenta."
+     ],
+     "mapsQuery": "Manhattan, New York, USA"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Washington D. C. (Monumentos y museos gratuitos)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "National Mall, Monumento a Lincoln y Monumento a Washington",
+      "Museos Smithsonian (gratis)",
+      "Capitolio y Biblioteca del Congreso",
+      "Georgetown"
+     ],
+     "activities": [
+      "Recorre el National Mall desde el Monumento a Lincoln hasta el Capitolio.",
+      "Visita gratis el Museo Nacional del Aire y el Espacio y el de Historia Natural.",
+      "Da un paseo nocturno por las calles de ladrillo de Georgetown y la orilla del Potomac."
+     ],
+     "foodAndDrinks": [
+      "Pastelitos de cangrejo de Maryland",
+      "La famosa cocina etíope de D. C.",
+      "Una salchicha “half-smoke” en Ben’s Chili Bowl"
+     ],
+     "criticalTips": [
+      "Reserva online con antelación la visita gratuita al Capitolio.",
+      "En Amtrak, Nueva York–Washington tarda unas 3 horas; los billetes anticipados son más baratos."
+     ],
+     "mapsQuery": "National Mall, Washington, DC, USA"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Las Vegas y el Gran Cañón (Desierto y cañón)",
+     "recommendedDuration": "2 Días (en coche)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "El Strip de Las Vegas",
+      "Presa Hoover",
+      "Borde Sur del Gran Cañón (Mather Point)",
+      "Ruta 66 histórica en Seligman"
+     ],
+     "activities": [
+      "Mira el espectáculo de las fuentes del Bellagio en el Strip de Las Vegas.",
+      "Cruza la presa Hoover hacia Arizona y para en Seligman, pueblo de la Ruta 66.",
+      "Camina por el Rim Trail del Borde Sur al amanecer o al atardecer."
+     ],
+     "foodAndDrinks": [
+      "Bufés de Las Vegas",
+      "Batidos y hamburguesas en los diners de la Ruta 66",
+      "Pan frito navajo (fry bread)"
+     ],
+     "criticalTips": [
+      "De Las Vegas al Borde Sur hay unas 4,5 horas en coche; en verano lleva mucha agua y no camines con el calor del mediodía.",
+      "Los parques nacionales cobran entrada por vehículo; el pase anual “America the Beautiful” compensa si visitas varios."
+     ],
+     "mapsQuery": "Grand Canyon South Rim, Arizona, USA"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Los Ángeles (Hollywood y la costa del Pacífico)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Paseo de la Fama y Observatorio Griffith",
+      "Muelle de Santa Mónica y Venice Beach",
+      "Getty Center (entrada gratuita)",
+      "Malibú y la Pacific Coast Highway"
+     ],
+     "activities": [
+      "Contempla el letrero de Hollywood y la ciudad al atardecer desde el Observatorio Griffith.",
+      "Pedalea por la playa desde Santa Mónica hasta Venice Beach.",
+      "Conduce por la Pacific Coast Highway hasta Malibú."
+     ],
+     "foodAndDrinks": [
+      "Tacos callejeros de L. A.",
+      "Hamburguesa In-N-Out",
+      "Barbacoa coreana en Koreatown"
+     ],
+     "criticalTips": [
+      "El tráfico es intenso; organiza el día por barrios y evita las horas punta.",
+      "No dejes nada a la vista en el coche aparcado; los robos rompiendo cristales son frecuentes."
+     ],
+     "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "USD ($)",
+   "bestMonths": "Зависит от региона: для большинства — апрель – июнь и сентябрь – октябрь; для Флориды и пустынь юго-запада — ноябрь – апрель; для северных нацпарков вроде Йеллоустона — июнь – сентябрь",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Туристические районы в целом безопасны, но насильственные преступления и инциденты с оружием случаются чаще, чем в Европе, а некоторые районы крупных городов опасны ночью. Кражи из арендованных машин очень распространены.",
+    "commonScams": [
+     "Ряженые персонажи и раздатчики «бесплатных CD» на Таймс-сквер, требующие деньги за фото",
+     "Взлом арендованных машин ради багажа (особенно в Сан-Франциско и Лос-Анджелесе)",
+     "Гостиничные «resort fee» и доплаты, не указанные чётко при бронировании"
+    ],
+    "safeTravelTips": [
+     "Не оставляйте в машине ничего на виду и не держите багаж в багажнике на ночь.",
+     "Ночью пользуйтесь Uber или Lyft вместо прогулок по незнакомым районам.",
+     "Медицина очень дорогая; оформите полную туристическую медицинскую страховку."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% в городах (5G повсеместно); в частях нацпарков и пустынь связи нет",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Зависит от города (хороший в Нью-Йорке, Чикаго, Вашингтоне; в остальных нужна машина)",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "2.90 - 3 $ (метро Нью-Йорка, OMNY)",
+    "dailyPassUsd": "~34 $ (Нью-Йорк, безлимит на 7 дней; недельный лимит OMNY)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft",
+     "Waymo (San Francisco, Los Angeles, Phoenix)",
+     "Amtrak"
+    ],
+    "taxiAdvice": "Uber и Lyft есть везде; жёлтые такси в Нью-Йорке работают по счётчику. Расстояния между городами огромные — летайте внутренними рейсами или арендуйте машину; на Восточном побережье удобен Amtrak."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "15 - 25 $ (без налога и чаевых)",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "1.50 - 3 $",
+    "hostelDormUsd": "45 - 90 $",
+    "hotel3StarUsd": "140 - 260 $ (+ гостиничный налог и resort fee)",
+    "flightCostIndex": "Высокий (прямой рейс ~10-13 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Нью-Йорк, Вашингтон, Чикаго, Лос-Анджелес, Майами, Сан-Франциско и другие крупные города."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hi, how's it going?",
+      "meaning": "Привет, как дела?",
+      "translation": "Привет, как дела?",
+      "pronunciation": "Хай, хауз ит гоуин?"
+     },
+     {
+      "phrase": "Thanks, I appreciate it",
+      "meaning": "Спасибо, очень признателен",
+      "translation": "Спасибо, очень признателен",
+      "pronunciation": "Сэнкс, ай эпришиэйт ит"
+     },
+     {
+      "phrase": "Excuse me",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "Экскьюз ми"
+     },
+     {
+      "phrase": "Can I get the check, please?",
+      "meaning": "Можно счёт, пожалуйста?",
+      "translation": "Можно счёт, пожалуйста?",
+      "pronunciation": "Кэн ай гет зэ чек, плиз?"
+     },
+     {
+      "phrase": "Where's the restroom?",
+      "meaning": "Где туалет?",
+      "translation": "Где туалет?",
+      "pronunciation": "Уэрз зэ реструм?"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "США: Нью-Йорк, Вашингтон, Гранд-Каньон и Лос-Анджелес",
+   "routeSummary": "Классический 10-дневный маршрут с востока на запад: знаменитые небоскрёбы Нью-Йорка, мемориалы и бесплатные музеи Вашингтона, затем перелёт в Лас-Вегас к красным обрывам Гранд-Каньона и, наконец, тихоокеанское побережье Лос-Анджелеса.",
+   "totalDays": 10,
+   "idealDurationText": "10-дневный маршрут по США с востока на запад",
+   "bestSeason": "Апрель – июнь и сентябрь – октябрь",
+   "transportMode": "Поезд Amtrak (Нью-Йорк–Вашингтон) + внутренний перелёт + арендованная машина (Запад)",
+   "paceLevel": "Насыщенный (большие расстояния и смена часовых поясов)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Брискет-барбекю по-техасски",
+     "Клэм-чаудер Новой Англии",
+     "Чизбургер",
+     "Крылышки «Баффало»"
+    ],
+    "drinks": [
+     "Кентуккийский бурбон",
+     "Крафтовое пиво IPA",
+     "Сладкий холодный чай"
+    ],
+    "streetFoods": [
+     "Кусок нью-йоркской пиццы",
+     "Тако",
+     "Яблочный пирог и чизкейк"
+    ],
+    "diningAdvice": "Чаевые 18-22% в ресторанах фактически обязательны, к ценам добавляется налог с продаж. Порции огромные, делиться принято. Халяльную еду в крупных городах найти легко (например, халяльные фургончики Нью-Йорка)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер для розеток типа A/B (110 В)",
+     "Полная туристическая медицинская страховка",
+     "Солнцезащитный крем, шляпа и много воды для пустыни",
+     "Международные права для аренды машины (в некоторых штатах обязательны)"
+    ],
+    "safetyAndEtiquette": [
+     "Если вас остановила полиция, держите руки на виду и оставайтесь в машине.",
+     "Распитие алкоголя в общественных местах запрещено в большинстве штатов.",
+     "Никогда не оставляйте ценности в машине."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Нью-Йорк (Манхэттен, Статуя Свободы и Бруклин)",
+     "recommendedDuration": "4 дня (Манхэттен и Бруклин)",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Статуя Свободы и остров Эллис",
+      "Центральный парк и Метрополитен-музей",
+      "Таймс-сквер и Бродвей",
+      "Бруклинский мост и DUMBO"
+     ],
+     "activities": [
+      "Доплывите на официальном пароме из Бэттери-парка к Статуе Свободы и на остров Эллис.",
+      "Прогуляйтесь по Центральному парку и посетите Метрополитен-музей.",
+      "Перейдите Бруклинский мост пешком на закате и полюбуйтесь панорамой Манхэттена из DUMBO."
+     ],
+     "foodAndDrinks": [
+      "Кусок нью-йоркской пиццы",
+      "Бейгл со сливочным сыром и лососем",
+      "Курица с рисом из халяльного фургончика"
+     ],
+     "criticalTips": [
+      "Покупайте билеты к Статуе Свободы только у официального продавца Statue City Cruises; уличных продавцов игнорируйте.",
+      "К ценам в меню добавляются налог (~8,9%) и чаевые 18-22%; учитывайте это в бюджете."
+     ],
+     "mapsQuery": "Manhattan, New York, USA"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Вашингтон (Мемориалы и бесплатные музеи)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальная аллея, Мемориал Линкольна и Монумент Вашингтона",
+      "Смитсоновские музеи (бесплатно)",
+      "Капитолий и Библиотека Конгресса",
+      "Джорджтаун"
+     ],
+     "activities": [
+      "Пройдите по Национальной аллее от Мемориала Линкольна до Капитолия.",
+      "Бесплатно посетите Национальный музей авиации и космонавтики и Музей естественной истории.",
+      "Вечером прогуляйтесь по кирпичным улицам Джорджтауна и набережной Потомака."
+     ],
+     "foodAndDrinks": [
+      "Крабовые котлеты по-мэрилендски",
+      "Знаменитая эфиопская кухня Вашингтона",
+      "Колбаска «half-smoke» в Ben’s Chili Bowl"
+     ],
+     "criticalTips": [
+      "Заранее забронируйте онлайн бесплатную экскурсию в Капитолий.",
+      "Поезд Amtrak из Нью-Йорка в Вашингтон идёт около 3 часов; ранние билеты дешевле."
+     ],
+     "mapsQuery": "National Mall, Washington, DC, USA"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Лас-Вегас и Гранд-Каньон (Пустыня и каньон)",
+     "recommendedDuration": "2 дня (на машине)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Стрип Лас-Вегаса",
+      "Плотина Гувера",
+      "Южный край Гранд-Каньона (Mather Point)",
+      "Историческая трасса 66 в Селигмане"
+     ],
+     "activities": [
+      "Посмотрите шоу фонтанов Белладжио на Стрипе Лас-Вегаса.",
+      "Проедьте через плотину Гувера в Аризону и остановитесь в городке Селигман на трассе 66.",
+      "Пройдите по Rim Trail на Южном краю Гранд-Каньона на рассвете или закате."
+     ],
+     "foodAndDrinks": [
+      "Буфеты Лас-Вегаса",
+      "Молочные коктейли и бургеры в закусочных трассы 66",
+      "Навахский жареный хлеб (fry bread)"
+     ],
+     "criticalTips": [
+      "От Лас-Вегаса до Южного края около 4,5 часа езды; летом берите много воды и не ходите в полуденную жару.",
+      "Въезд в нацпарки платный за машину; годовой пропуск «America the Beautiful» выгоден, если парков несколько."
+     ],
+     "mapsQuery": "Grand Canyon South Rim, Arizona, USA"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Лос-Анджелес (Голливуд и тихоокеанское побережье)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Аллея славы и обсерватория Гриффита",
+      "Пирс Санта-Моники и Венис-Бич",
+      "Центр Гетти (вход бесплатный)",
+      "Малибу и Тихоокеанское шоссе"
+     ],
+     "activities": [
+      "Полюбуйтесь надписью Hollywood и городом на закате из обсерватории Гриффита.",
+      "Прокатитесь на велосипеде вдоль пляжа от Санта-Моники до Венис-Бич.",
+      "Проедьте по Тихоокеанскому шоссе до Малибу."
+     ],
+     "foodAndDrinks": [
+      "Уличные тако Лос-Анджелеса",
+      "Бургер In-N-Out",
+      "Корейское барбекю в Корейском квартале"
+     ],
+     "criticalTips": [
+      "Пробки огромные; планируйте день по районам и избегайте часов пик.",
+      "Не оставляйте вещи на виду в припаркованной машине — кражи с разбитием стёкол обычны."
+     ],
+     "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  }
+ }
+}

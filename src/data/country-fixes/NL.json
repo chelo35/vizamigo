@@ -1,0 +1,1247 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Nisan – Mayıs (lale sezonu ve 27 Nisan Kral Günü) ile Haziran – Eylül; kışlar serin, rüzgârlı ve yağmurludur",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Güvenli bir ülkedir; şiddet suçu turistleri nadiren etkiler. Amsterdam merkezinde, Centraal istasyonda ve trenlerde yankesicilik ile bisiklet hırsızlığı yaygındır.",
+    "commonScams": [
+     "Kırmızı Fener Bölgesi (De Wallen) çevresinde sahte uyuşturucu satıcıları ve sokak çığırtkanları",
+     "Çok ucuza çalıntı bisiklet satma teklifleri (satın almak da suçtur)",
+     "Kendini sivil polis olarak tanıtıp cüzdan ve kart kontrolü isteyen dolandırıcılar"
+    ],
+    "safeTravelTips": [
+     "Kırmızı bisiklet yollarında yürümeyin; bisikletlerin her zaman önceliği vardır.",
+     "Trenlerde ve tramvayda temassız kartınızla (OVpay) binişte ve inişte mutlaka okutun.",
+     "Amsterdam’ın eski şehir merkezinde sokakta esrar içmek yasaktır ve para cezası uygulanır."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (acil olmayan durumlar: 0900-8844)",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G/5G ülke genelinde çok güçlü)",
+    "costPerGbUsd": "~1.50 - 3 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (NS trenleri, tramvay, metro ve bisiklet ağı)",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "~3.50 - 4 $ (Amsterdam GVB 1 saatlik bilet)",
+    "dailyPassUsd": "~10 - 12 $ (GVB 24 saatlik bilet)",
+    "popularRideApps": [
+     "NS app",
+     "9292",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Taksiler çok pahalıdır. Trenlerde, tramvay ve metroda temassız banka kartı veya telefonla giriş-çıkış yapabilirsiniz. Şehir içinde en pratik ulaşım bisiklet kiralamaktır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 230 $",
+    "budgetMealUsd": "14 - 22 $ (kibbeling, falafel, öğle menüsü)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "35 - 70 $ (Amsterdam’da yazın daha yüksek)",
+    "hotel3StarUsd": "130 - 220 $",
+    "flightCostIndex": "Düşük (direkt ~3,5 sa)",
+    "flightTip": "İstanbul, Ankara, İzmir ve Antalya’dan Amsterdam’a direkt seferler vardır; Rotterdam ve Eindhoven’a uçmak bazen daha ucuzdur."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hallo / Goedendag",
+      "meaning": "Merhaba / İyi günler",
+      "translation": "Merhaba / İyi günler",
+      "pronunciation": "Halo / Huden-dah"
+     },
+     {
+      "phrase": "Dank je wel",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "Dank ye vel"
+     },
+     {
+      "phrase": "Sorry / Pardon",
+      "meaning": "Affedersiniz",
+      "translation": "Affedersiniz",
+      "pronunciation": "Sori / Pardon"
+     },
+     {
+      "phrase": "Hoeveel kost dit?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "Hufel kost dit?"
+     },
+     {
+      "phrase": "Mag ik de rekening?",
+      "meaning": "Hesabı alabilir miyim?",
+      "translation": "Hesabı alabilir miyim?",
+      "pronunciation": "Mah ik dı rekening?"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Hollanda: Amsterdam Kanalları, Lale Bahçeleri, Lahey & Rotterdam",
+   "routeSummary": "Amsterdam’ın UNESCO kanallarından Haarlem ve Keukenhof’un lale tarlalarına, Lahey ile Delft’in kraliyet ve porselen mirasından Rotterdam’ın cesur mimarisine ve Kinderdijk yel değirmenlerine uzanan, trenle kolayca yapılan 7 günlük rota.",
+   "totalDays": 7,
+   "idealDurationText": "7 Günlük Klasik Hollanda Rotası",
+   "bestSeason": "Nisan – Mayıs (laleler) veya Haziran – Eylül",
+   "transportMode": "NS trenleri + tramvay/metro (temassız kart ile) + kiralık bisiklet",
+   "paceLevel": "Dengeli (kısa tren mesafeleri, bol yürüyüş ve bisiklet)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Hollandse Nieuwe ringa",
+     "Stamppot (lahanalı patates püresi)",
+     "Kibbeling",
+     "Kapsalon"
+    ],
+    "drinks": [
+     "Jenever (ardıç likörü)",
+     "Hollanda birası",
+     "Chocomel (sıcak çikolata)"
+    ],
+    "streetFoods": [
+     "Stroopwafel",
+     "Poffertjes",
+     "Bitterballen"
+    ],
+    "diningAdvice": "Akşam yemeği erken (18.00–19.00) yenir. Birçok yerde yalnızca kartla ödeme (PIN only) kabul edilir. Kroket ve bitterballen gibi atıştırmalıkların içeriğini sorun; bazıları domuz eti içerir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yağmurluk ve rüzgârlık (hava gün içinde sık değişir)",
+     "Temassız banka kartı veya telefon cüzdanı (OVpay)",
+     "Rahat yürüyüş ayakkabısı",
+     "Priz adaptörü gerekmez (C/F tipi, 230V)"
+    ],
+    "safetyAndEtiquette": [
+     "Bisiklet yollarında yürümeyin ve yaya geçitlerinde bisikletlere dikkat edin.",
+     "Kırmızı Fener Bölgesi’nde çalışanların fotoğrafını çekmek yasaktır.",
+     "Trende sessiz vagonlarda (“Stilte”) telefonla konuşmayın."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Amsterdam (Kanallar ve Müzeler)",
+     "recommendedDuration": "3 Gün (merkez, müzeler ve semtler için)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Kanal Halkası (UNESCO) ve kanal tekne turu",
+      "Rijksmuseum ve Van Gogh Müzesi",
+      "Anne Frank Evi",
+      "Jordaan semti ve Vondelpark"
+     ],
+     "activities": [
+      "Prinsengracht ve Herengracht boyunca kanal teknesiyle 17. yüzyıl tüccar evlerini izleyin.",
+      "Museumplein’de Rijksmuseum’da Rembrandt’ın “Gece Devriyesi”ni, Van Gogh Müzesi’nde “Ayçiçekleri”ni görün.",
+      "Bisiklet kiralayıp Jordaan’ın dar sokaklarını ve Vondelpark’ı yerliler gibi gezin."
+     ],
+     "foodAndDrinks": [
+      "Hollandse Nieuwe ringa balığı (soğan ve turşuyla)",
+      "Bitterballen (hardallı kızarmış ragu topları)",
+      "Appeltaart (Hollanda elmalı turtası)"
+     ],
+     "criticalTips": [
+      "Anne Frank Evi biletleri yalnızca online ve genelde haftalar önceden satılır.",
+      "Bisiklet yollarında yürümeyin, bisikletinizi her zaman iki kilitle bağlayın."
+     ],
+     "mapsQuery": "Amsterdam Canal Ring, Netherlands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Haarlem & Keukenhof (Lale Bölgesi)",
+     "recommendedDuration": "1 Gün (Amsterdam’dan günübirlik)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Keukenhof Bahçeleri (Mart sonu – Mayıs ortası)",
+      "Bollenstreek lale tarlaları",
+      "Haarlem Grote Markt ve St. Bavo Kilisesi",
+      "Frans Hals Müzesi"
+     ],
+     "activities": [
+      "Keukenhof’ta milyonlarca lale, sümbül ve nergisin arasında yürüyün.",
+      "Lisse çevresindeki renkli lale tarlalarını bisikletle dolaşın.",
+      "Haarlem’in sakin kanallarını ve Grote Markt meydanındaki kafeleri keşfedin."
+     ],
+     "foodAndDrinks": [
+      "Poffertjes (tereyağlı mini krepler)",
+      "Jopenbier (Haarlem’in tarihî birası)",
+      "Taze stroopwafel"
+     ],
+     "criticalTips": [
+      "Keukenhof yalnızca ilkbaharda (yaklaşık Mart sonu – Mayıs ortası) açıktır; bileti ulaşımla birlikte online alın.",
+      "Lale tarlalarına girmek ve çiçek koparmak yasaktır; fotoğrafı tarla kenarından çekin."
+     ],
+     "mapsQuery": "Keukenhof, Lisse, Netherlands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Lahey & Delft (Kraliyet Şehri ve Mavi Porselen)",
+     "recommendedDuration": "1-2 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Mauritshuis Müzesi (İnci Küpeli Kız)",
+      "Scheveningen sahili ve iskelesi",
+      "Delft Markt meydanı ve Nieuwe Kerk",
+      "Royal Delft porselen atölyesi"
+     ],
+     "activities": [
+      "Mauritshuis’te Vermeer’in “İnci Küpeli Kız” tablosunu görün.",
+      "Scheveningen sahilinde Kuzey Denizi kıyısında yürüyüş yapın.",
+      "Delft’in kanal kenarı sokaklarında gezip Royal Delft’te mavi-beyaz porselen yapımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Kibbeling (kızarmış morina lokmaları)",
+      "Haring broodje (ringalı sandviç)",
+      "Hollanda peynirleri (Gouda, Leerdammer)"
+     ],
+     "criticalTips": [
+      "Lahey ile Delft arası tramvayla yaklaşık 20 dakikadır; iki şehri aynı gün birleştirebilirsiniz.",
+      "Scheveningen’de rüzgâr serttir; yazın bile ince bir mont alın."
+     ],
+     "mapsQuery": "Mauritshuis, The Hague, Netherlands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Rotterdam & Kinderdijk (Modern Mimari ve Yel Değirmenleri)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Markthal ve Kübik Evler",
+      "Erasmus Köprüsü ve Kop van Zuid",
+      "Kinderdijk yel değirmenleri (UNESCO)",
+      "Depot Boijmans Van Beuningen"
+     ],
+     "activities": [
+      "Markthal’in dev freskli kemerinin altında yerel tezgâhları dolaşın.",
+      "Erasmusbrug iskelesinden Waterbus ile Kinderdijk’teki 19 tarihî yel değirmenine gidin.",
+      "Euromast’tan veya Depot Boijmans’ın çatısından liman şehrini seyredin."
+     ],
+     "foodAndDrinks": [
+      "Kapsalon (Rotterdam icadı: döner, patates kızartması ve eritilmiş peynir)",
+      "Markthal’de taze stroopwafel",
+      "Yerel kahve kavurucularında filtre kahve"
+     ],
+     "criticalTips": [
+      "Kinderdijk’e en kolay ulaşım Waterbus’tır; sefer saatlerini önceden kontrol edin.",
+      "Rotterdam’dan Schiphol Havalimanı’na trenle yaklaşık 30–40 dakikada ulaşılır."
+     ],
+     "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "April – May (tulip season and King’s Day on 27 April) and June – September; winters are cool, windy and wet",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "A safe country where violent crime rarely affects tourists. Pickpocketing and bicycle theft are common in central Amsterdam, at Centraal station and on trains.",
+    "commonScams": [
+     "Fake drug dealers and street touts around the Red Light District (De Wallen)",
+     "Offers of very cheap stolen bicycles (buying one is also a crime)",
+     "Fraudsters posing as plain-clothes police who ask to check your wallet and cards"
+    ],
+    "safeTravelTips": [
+     "Do not walk on red cycle lanes; bicycles always have priority.",
+     "When using your contactless card (OVpay) on trains, trams and metro, always check in and check out.",
+     "Smoking cannabis in the streets of Amsterdam’s old centre is banned and fined."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (non-emergency: 0900-8844)",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (very strong 4G/5G nationwide)",
+    "costPerGbUsd": "~1.50 - 3 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent (NS trains, trams, metro and cycle network)",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "~3.50 - 4 $ (Amsterdam GVB 1-hour ticket)",
+    "dailyPassUsd": "~10 - 12 $ (GVB 24-hour ticket)",
+    "popularRideApps": [
+     "NS app",
+     "9292",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Taxis are very expensive. You can check in and out with a contactless bank card or phone on trains, trams and metros. Renting a bike is the most practical way to get around cities."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 230 $",
+    "budgetMealUsd": "14 - 22 $ (kibbeling, falafel, lunch deal)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "35 - 70 $ (higher in Amsterdam in summer)",
+    "hotel3StarUsd": "130 - 220 $",
+    "flightCostIndex": "Low (direct ~3.5 h)",
+    "flightTip": "There are direct flights to Amsterdam from Istanbul, Ankara, Izmir and Antalya; flying into Rotterdam or Eindhoven is sometimes cheaper."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hallo / Goedendag",
+      "meaning": "Hello / Good day",
+      "translation": "Hello / Good day",
+      "pronunciation": "HAH-loh / KHOO-den-dahkh"
+     },
+     {
+      "phrase": "Dank je wel",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "DAHNK yuh vel"
+     },
+     {
+      "phrase": "Sorry / Pardon",
+      "meaning": "Sorry / Excuse me",
+      "translation": "Sorry / Excuse me",
+      "pronunciation": "SOR-ee / par-DON"
+     },
+     {
+      "phrase": "Hoeveel kost dit?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "hoo-VAYL kost dit"
+     },
+     {
+      "phrase": "Mag ik de rekening?",
+      "meaning": "Can I have the bill?",
+      "translation": "Can I have the bill?",
+      "pronunciation": "mahkh ik duh RAY-kuh-ning"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Netherlands: Amsterdam Canals, Tulip Gardens, The Hague & Rotterdam",
+   "routeSummary": "A 7-day route that is easy by train: from Amsterdam’s UNESCO canals to the tulip fields of Haarlem and Keukenhof, the royal and porcelain heritage of The Hague and Delft, Rotterdam’s bold architecture and the Kinderdijk windmills.",
+   "totalDays": 7,
+   "idealDurationText": "7-Day Classic Netherlands Route",
+   "bestSeason": "April – May (tulips) or June – September",
+   "transportMode": "NS trains + tram/metro (contactless card) + rental bikes",
+   "paceLevel": "Balanced (short train hops, lots of walking and cycling)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Hollandse Nieuwe herring",
+     "Stamppot (mash with kale)",
+     "Kibbeling",
+     "Kapsalon"
+    ],
+    "drinks": [
+     "Jenever (juniper spirit)",
+     "Dutch beer",
+     "Chocomel (chocolate milk)"
+    ],
+    "streetFoods": [
+     "Stroopwafel",
+     "Poffertjes",
+     "Bitterballen"
+    ],
+    "diningAdvice": "Dinner is eaten early (6–7 pm). Many places are card-only (“PIN only”). Ask about fillings of snacks such as kroketten and bitterballen if you avoid pork."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rain jacket and windbreaker (weather changes often)",
+     "Contactless bank card or phone wallet (OVpay)",
+     "Comfortable walking shoes",
+     "Type C/F plug adapter if needed (230V)"
+    ],
+    "safetyAndEtiquette": [
+     "Do not walk on cycle lanes and watch for bikes at crossings.",
+     "Photographing sex workers in the Red Light District is forbidden.",
+     "Do not make phone calls in the silent (“Stilte”) train carriages."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Amsterdam (Canals and Museums)",
+     "recommendedDuration": "3 Days (centre, museums and neighbourhoods)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Canal Ring (UNESCO) and a canal boat tour",
+      "Rijksmuseum and Van Gogh Museum",
+      "Anne Frank House",
+      "Jordaan district and Vondelpark"
+     ],
+     "activities": [
+      "Take a canal boat along the Prinsengracht and Herengracht past 17th-century merchant houses.",
+      "See Rembrandt’s “Night Watch” at the Rijksmuseum and the “Sunflowers” at the Van Gogh Museum on Museumplein.",
+      "Rent a bike and explore the narrow streets of the Jordaan and Vondelpark like a local."
+     ],
+     "foodAndDrinks": [
+      "Hollandse Nieuwe herring (with onions and pickles)",
+      "Bitterballen (fried ragout balls with mustard)",
+      "Appeltaart (Dutch apple pie)"
+     ],
+     "criticalTips": [
+      "Anne Frank House tickets are sold online only, usually weeks in advance.",
+      "Never walk on cycle lanes, and always lock your bike with two locks."
+     ],
+     "mapsQuery": "Amsterdam Canal Ring, Netherlands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Haarlem & Keukenhof (Bulb Region)",
+     "recommendedDuration": "1 Day (day trip from Amsterdam)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Keukenhof Gardens (late March – mid-May)",
+      "Bollenstreek tulip fields",
+      "Haarlem’s Grote Markt and St. Bavo Church",
+      "Frans Hals Museum"
+     ],
+     "activities": [
+      "Stroll among millions of tulips, hyacinths and daffodils at Keukenhof.",
+      "Cycle past the colourful bulb fields around Lisse.",
+      "Explore Haarlem’s quiet canals and the cafés on the Grote Markt."
+     ],
+     "foodAndDrinks": [
+      "Poffertjes (buttery mini pancakes)",
+      "Jopenbier (Haarlem’s historic beer)",
+      "Fresh stroopwafel"
+     ],
+     "criticalTips": [
+      "Keukenhof only opens in spring (roughly late March – mid-May); buy combined entry and transport tickets online.",
+      "Entering the tulip fields or picking flowers is forbidden; take photos from the edge."
+     ],
+     "mapsQuery": "Keukenhof, Lisse, Netherlands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: The Hague & Delft (Royal City and Blue Porcelain)",
+     "recommendedDuration": "1-2 Days",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Mauritshuis (Girl with a Pearl Earring)",
+      "Scheveningen beach and pier",
+      "Delft Markt square and Nieuwe Kerk",
+      "Royal Delft pottery"
+     ],
+     "activities": [
+      "See Vermeer’s “Girl with a Pearl Earring” at the Mauritshuis.",
+      "Walk along the North Sea shore at Scheveningen.",
+      "Wander Delft’s canal-side streets and watch blue-and-white pottery being made at Royal Delft."
+     ],
+     "foodAndDrinks": [
+      "Kibbeling (fried cod bites)",
+      "Broodje haring (herring sandwich)",
+      "Dutch cheeses (Gouda, Leerdammer)"
+     ],
+     "criticalTips": [
+      "The tram between The Hague and Delft takes about 20 minutes, so both fit in one day.",
+      "Scheveningen is windy; bring a light jacket even in summer."
+     ],
+     "mapsQuery": "Mauritshuis, The Hague, Netherlands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Rotterdam & Kinderdijk (Modern Architecture and Windmills)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Markthal and the Cube Houses",
+      "Erasmus Bridge and Kop van Zuid",
+      "Kinderdijk windmills (UNESCO)",
+      "Depot Boijmans Van Beuningen"
+     ],
+     "activities": [
+      "Browse the food stalls under the giant painted arch of the Markthal.",
+      "Take the Waterbus from the Erasmusbrug pier to the 19 historic windmills of Kinderdijk.",
+      "View the port city from the Euromast or the rooftop of Depot Boijmans."
+     ],
+     "foodAndDrinks": [
+      "Kapsalon (a Rotterdam invention: döner, fries and melted cheese)",
+      "Fresh stroopwafel at the Markthal",
+      "Filter coffee from local roasters"
+     ],
+     "criticalTips": [
+      "The Waterbus is the easiest way to Kinderdijk; check departure times in advance.",
+      "Trains from Rotterdam reach Schiphol Airport in about 30–40 minutes."
+     ],
+     "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "April – Mai (Tulpensaison und Königstag am 27. April) sowie Juni – September; die Winter sind kühl, windig und nass",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Ein sicheres Land, in dem Gewaltkriminalität Touristen selten trifft. In der Amsterdamer Innenstadt, am Centraal-Bahnhof und in Zügen sind Taschen- und Fahrraddiebstahl häufig.",
+    "commonScams": [
+     "Falsche Drogendealer und Schlepper rund um das Rotlichtviertel (De Wallen)",
+     "Angebote sehr billiger gestohlener Fahrräder (auch der Kauf ist strafbar)",
+     "Betrüger, die sich als Zivilpolizisten ausgeben und Geldbörse und Karten kontrollieren wollen"
+    ],
+    "safeTravelTips": [
+     "Nicht auf roten Radwegen laufen; Fahrräder haben immer Vorrang.",
+     "Mit kontaktloser Karte (OVpay) in Zug, Tram und Metro immer ein- und auschecken.",
+     "Cannabisrauchen auf der Straße ist in der Amsterdamer Altstadt verboten und wird mit Bußgeld geahndet."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (kein Notfall: 0900-8844)",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (sehr starkes 4G/5G landesweit)",
+    "costPerGbUsd": "~1.50 - 3 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet (NS-Züge, Tram, Metro und Radwegenetz)",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "~3.50 - 4 $ (Amsterdam GVB 1-Stunden-Ticket)",
+    "dailyPassUsd": "~10 - 12 $ (GVB 24-Stunden-Ticket)",
+    "popularRideApps": [
+     "NS app",
+     "9292",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Taxis sind sehr teuer. In Zügen, Trams und Metros kann man mit kontaktloser Bankkarte oder Handy ein- und auschecken. In den Städten ist ein Leihfahrrad am praktischsten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 230 $",
+    "budgetMealUsd": "14 - 22 $ (Kibbeling, Falafel, Mittagsangebot)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "35 - 70 $ (in Amsterdam im Sommer teurer)",
+    "hotel3StarUsd": "130 - 220 $",
+    "flightCostIndex": "Niedrig (Direktflug ~3,5 Std.)",
+    "flightTip": "Von Istanbul, Ankara, Izmir und Antalya gibt es Direktflüge nach Amsterdam; Flüge nach Rotterdam oder Eindhoven sind manchmal günstiger."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hallo / Goedendag",
+      "meaning": "Hallo / Guten Tag",
+      "translation": "Hallo / Guten Tag",
+      "pronunciation": "HA-lo / CHU-de-dach"
+     },
+     {
+      "phrase": "Dank je wel",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "DANK je wel"
+     },
+     {
+      "phrase": "Sorry / Pardon",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "SO-ri / par-DON"
+     },
+     {
+      "phrase": "Hoeveel kost dit?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "hu-FEHL kost dit"
+     },
+     {
+      "phrase": "Mag ik de rekening?",
+      "meaning": "Kann ich die Rechnung haben?",
+      "translation": "Kann ich die Rechnung haben?",
+      "pronunciation": "mach ik de RE-ke-ning"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Niederlande: Amsterdamer Grachten, Tulpengärten, Den Haag & Rotterdam",
+   "routeSummary": "Eine 7-tägige Route, bequem mit dem Zug: von Amsterdams UNESCO-Grachten zu den Tulpenfeldern von Haarlem und Keukenhof, zum königlichen und Porzellanerbe von Den Haag und Delft, zu Rotterdams kühner Architektur und den Windmühlen von Kinderdijk.",
+   "totalDays": 7,
+   "idealDurationText": "7-tägige klassische Niederlande-Route",
+   "bestSeason": "April – Mai (Tulpen) oder Juni – September",
+   "transportMode": "NS-Züge + Tram/Metro (kontaktlose Karte) + Leihfahrräder",
+   "paceLevel": "Ausgewogen (kurze Zugstrecken, viel zu Fuß und per Rad)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Hollandse Nieuwe (Matjes)",
+     "Stamppot (Grünkohl-Kartoffelstampf)",
+     "Kibbeling",
+     "Kapsalon"
+    ],
+    "drinks": [
+     "Jenever (Wacholderschnaps)",
+     "Holländisches Bier",
+     "Chocomel (Kakao)"
+    ],
+    "streetFoods": [
+     "Stroopwafel",
+     "Poffertjes",
+     "Bitterballen"
+    ],
+    "diningAdvice": "Zu Abend wird früh gegessen (18–19 Uhr). Viele Lokale akzeptieren nur Karte („PIN only“). Bei Kroketten und Bitterballen nach der Füllung fragen, wenn man kein Schweinefleisch isst."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Regen- und Windjacke (das Wetter wechselt oft)",
+     "Kontaktlose Bankkarte oder Handy-Wallet (OVpay)",
+     "Bequeme Laufschuhe",
+     "Stecker Typ C/F (230 V) – für EU-Reisende kein Adapter nötig"
+    ],
+    "safetyAndEtiquette": [
+     "Nicht auf Radwegen laufen und an Übergängen auf Räder achten.",
+     "Sexarbeiterinnen im Rotlichtviertel zu fotografieren ist verboten.",
+     "In Ruheabteilen („Stilte“) der Züge nicht telefonieren."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Amsterdam (Grachten und Museen)",
+     "recommendedDuration": "3 Tage (Zentrum, Museen und Viertel)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Grachtengürtel (UNESCO) und Grachtenrundfahrt",
+      "Rijksmuseum und Van-Gogh-Museum",
+      "Anne-Frank-Haus",
+      "Jordaan-Viertel und Vondelpark"
+     ],
+     "activities": [
+      "Fahre mit dem Boot über Prinsengracht und Herengracht vorbei an Kaufmannshäusern aus dem 17. Jahrhundert.",
+      "Sieh Rembrandts „Nachtwache“ im Rijksmuseum und die „Sonnenblumen“ im Van-Gogh-Museum am Museumplein.",
+      "Leih dir ein Fahrrad und erkunde die Gassen des Jordaan und den Vondelpark wie die Einheimischen."
+     ],
+     "foodAndDrinks": [
+      "Hollandse Nieuwe (Matjes mit Zwiebeln und Gurken)",
+      "Bitterballen (frittierte Ragoutbällchen mit Senf)",
+      "Appeltaart (holländischer Apfelkuchen)"
+     ],
+     "criticalTips": [
+      "Tickets für das Anne-Frank-Haus gibt es nur online, meist Wochen im Voraus.",
+      "Nie auf Radwegen laufen und das Fahrrad immer mit zwei Schlössern sichern."
+     ],
+     "mapsQuery": "Amsterdam Canal Ring, Netherlands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Haarlem & Keukenhof (Blumenzwiebelregion)",
+     "recommendedDuration": "1 Tag (Tagesausflug ab Amsterdam)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Keukenhof (Ende März – Mitte Mai)",
+      "Tulpenfelder der Bollenstreek",
+      "Grote Markt und St.-Bavo-Kirche in Haarlem",
+      "Frans-Hals-Museum"
+     ],
+     "activities": [
+      "Spaziere im Keukenhof zwischen Millionen von Tulpen, Hyazinthen und Narzissen.",
+      "Radle an den bunten Blumenfeldern rund um Lisse vorbei.",
+      "Entdecke die ruhigen Grachten von Haarlem und die Cafés am Grote Markt."
+     ],
+     "foodAndDrinks": [
+      "Poffertjes (Mini-Pfannkuchen mit Butter)",
+      "Jopenbier (historisches Bier aus Haarlem)",
+      "Frische Stroopwafel"
+     ],
+     "criticalTips": [
+      "Der Keukenhof ist nur im Frühling geöffnet (etwa Ende März – Mitte Mai); Kombitickets mit Anreise online kaufen.",
+      "Das Betreten der Tulpenfelder und Blumenpflücken ist verboten; Fotos vom Feldrand machen."
+     ],
+     "mapsQuery": "Keukenhof, Lisse, Netherlands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Den Haag & Delft (Königsstadt und blaues Porzellan)",
+     "recommendedDuration": "1-2 Tage",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Mauritshuis (Das Mädchen mit dem Perlenohrring)",
+      "Strand und Pier von Scheveningen",
+      "Markt und Nieuwe Kerk in Delft",
+      "Porzellanmanufaktur Royal Delft"
+     ],
+     "activities": [
+      "Sieh im Mauritshuis Vermeers „Das Mädchen mit dem Perlenohrring“.",
+      "Spaziere in Scheveningen an der Nordseeküste entlang.",
+      "Bummle durch Delfts Grachtenstraßen und schau bei Royal Delft der Herstellung von blau-weißem Porzellan zu."
+     ],
+     "foodAndDrinks": [
+      "Kibbeling (frittierte Kabeljaustücke)",
+      "Broodje haring (Heringsbrötchen)",
+      "Holländischer Käse (Gouda, Leerdammer)"
+     ],
+     "criticalTips": [
+      "Die Tram zwischen Den Haag und Delft braucht etwa 20 Minuten; beides passt in einen Tag.",
+      "In Scheveningen ist es windig; auch im Sommer eine leichte Jacke mitnehmen."
+     ],
+     "mapsQuery": "Mauritshuis, The Hague, Netherlands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Rotterdam & Kinderdijk (Moderne Architektur und Windmühlen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Markthal und Kubushäuser",
+      "Erasmusbrücke und Kop van Zuid",
+      "Windmühlen von Kinderdijk (UNESCO)",
+      "Depot Boijmans Van Beuningen"
+     ],
+     "activities": [
+      "Stöbere an den Ständen unter dem riesigen bemalten Bogen der Markthal.",
+      "Fahre mit dem Waterbus vom Anleger Erasmusbrug zu den 19 historischen Windmühlen von Kinderdijk.",
+      "Genieße den Blick über die Hafenstadt vom Euromast oder vom Dach des Depot Boijmans."
+     ],
+     "foodAndDrinks": [
+      "Kapsalon (Rotterdamer Erfindung: Döner, Pommes und geschmolzener Käse)",
+      "Frische Stroopwafel in der Markthal",
+      "Filterkaffee von lokalen Röstereien"
+     ],
+     "criticalTips": [
+      "Am einfachsten erreicht man Kinderdijk mit dem Waterbus; Abfahrtszeiten vorher prüfen.",
+      "Von Rotterdam fährt der Zug in etwa 30–40 Minuten zum Flughafen Schiphol."
+     ],
+     "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Abril – mayo (temporada de tulipanes y Día del Rey el 27 de abril) y junio – septiembre; los inviernos son frescos, ventosos y lluviosos",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Es un país seguro donde los delitos violentos rara vez afectan a turistas. En el centro de Ámsterdam, la estación Centraal y los trenes son frecuentes los carteristas y el robo de bicicletas.",
+    "commonScams": [
+     "Falsos camellos y captadores en torno al Barrio Rojo (De Wallen)",
+     "Ofertas de bicicletas robadas muy baratas (comprarlas también es delito)",
+     "Estafadores que se hacen pasar por policías de paisano y piden revisar tu cartera y tarjetas"
+    ],
+    "safeTravelTips": [
+     "No camines por los carriles bici rojos; las bicicletas siempre tienen prioridad.",
+     "Con tarjeta sin contacto (OVpay) en trenes, tranvías y metro, registra siempre la entrada y la salida.",
+     "Fumar cannabis en la calle está prohibido en el casco antiguo de Ámsterdam y se multa."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (no urgente: 0900-8844)",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G muy potente en todo el país)",
+    "costPerGbUsd": "~1.50 - 3 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (trenes NS, tranvía, metro y red ciclista)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "~3.50 - 4 $ (billete GVB de 1 hora en Ámsterdam)",
+    "dailyPassUsd": "~10 - 12 $ (billete GVB de 24 horas)",
+    "popularRideApps": [
+     "NS app",
+     "9292",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Los taxis son muy caros. En trenes, tranvías y metros puedes entrar y salir con tarjeta bancaria sin contacto o con el móvil. En las ciudades lo más práctico es alquilar una bicicleta."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 230 $",
+    "budgetMealUsd": "14 - 22 $ (kibbeling, falafel, oferta de mediodía)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "35 - 70 $ (más caro en Ámsterdam en verano)",
+    "hotel3StarUsd": "130 - 220 $",
+    "flightCostIndex": "Bajo (directo ~3,5 h)",
+    "flightTip": "Hay vuelos directos a Ámsterdam desde Estambul, Ankara, Esmirna y Antalya; volar a Róterdam o Eindhoven a veces sale más barato."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hallo / Goedendag",
+      "meaning": "Hola / Buenos días",
+      "translation": "Hola / Buenos días",
+      "pronunciation": "JA-lo / JU-den-daj"
+     },
+     {
+      "phrase": "Dank je wel",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "DANK ye vel"
+     },
+     {
+      "phrase": "Sorry / Pardon",
+      "meaning": "Perdón / Disculpe",
+      "translation": "Perdón / Disculpe",
+      "pronunciation": "SO-ri / par-DON"
+     },
+     {
+      "phrase": "Hoeveel kost dit?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "ju-VEIL kost dit"
+     },
+     {
+      "phrase": "Mag ik de rekening?",
+      "meaning": "¿Me trae la cuenta?",
+      "translation": "¿Me trae la cuenta?",
+      "pronunciation": "maj ik de RE-ke-ning"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Países Bajos: canales de Ámsterdam, jardines de tulipanes, La Haya y Róterdam",
+   "routeSummary": "Una ruta de 7 días fácil en tren: de los canales UNESCO de Ámsterdam a los campos de tulipanes de Haarlem y Keukenhof, el patrimonio real y de porcelana de La Haya y Delft, la audaz arquitectura de Róterdam y los molinos de Kinderdijk.",
+   "totalDays": 7,
+   "idealDurationText": "Ruta clásica de 7 días por Países Bajos",
+   "bestSeason": "Abril – mayo (tulipanes) o junio – septiembre",
+   "transportMode": "Trenes NS + tranvía/metro (tarjeta sin contacto) + bicicleta de alquiler",
+   "paceLevel": "Equilibrado (trayectos cortos en tren, mucho paseo y bici)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Arenque Hollandse Nieuwe",
+     "Stamppot (puré con col rizada)",
+     "Kibbeling",
+     "Kapsalon"
+    ],
+    "drinks": [
+     "Jenever (aguardiente de enebro)",
+     "Cerveza holandesa",
+     "Chocomel (batido de chocolate)"
+    ],
+    "streetFoods": [
+     "Stroopwafel",
+     "Poffertjes",
+     "Bitterballen"
+    ],
+    "diningAdvice": "Se cena temprano (18–19 h). Muchos locales solo aceptan tarjeta (“PIN only”). Pregunta por el relleno de kroketten y bitterballen si no comes cerdo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Chubasquero y cortavientos (el tiempo cambia a menudo)",
+     "Tarjeta bancaria sin contacto o cartera móvil (OVpay)",
+     "Calzado cómodo para caminar",
+     "Enchufe tipo C/F (230 V); desde España no hace falta adaptador"
+    ],
+    "safetyAndEtiquette": [
+     "No camines por los carriles bici y vigila las bicis en los cruces.",
+     "Está prohibido fotografiar a las trabajadoras del Barrio Rojo.",
+     "No hables por teléfono en los vagones silenciosos (“Stilte”)."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Ámsterdam (Canales y museos)",
+     "recommendedDuration": "3 Días (centro, museos y barrios)",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Anillo de canales (UNESCO) y paseo en barco",
+      "Rijksmuseum y Museo Van Gogh",
+      "Casa de Ana Frank",
+      "Barrio del Jordaan y Vondelpark"
+     ],
+     "activities": [
+      "Navega por el Prinsengracht y el Herengracht entre casas de mercaderes del siglo XVII.",
+      "Contempla “La ronda de noche” de Rembrandt en el Rijksmuseum y los “Girasoles” en el Museo Van Gogh, en la Museumplein.",
+      "Alquila una bici y recorre las callejuelas del Jordaan y el Vondelpark como un local."
+     ],
+     "foodAndDrinks": [
+      "Arenque Hollandse Nieuwe (con cebolla y pepinillos)",
+      "Bitterballen (croquetas de ragú con mostaza)",
+      "Appeltaart (tarta de manzana holandesa)"
+     ],
+     "criticalTips": [
+      "Las entradas a la Casa de Ana Frank solo se venden online, normalmente con semanas de antelación.",
+      "No camines nunca por los carriles bici y cierra la bici siempre con dos candados."
+     ],
+     "mapsQuery": "Amsterdam Canal Ring, Netherlands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Haarlem y Keukenhof (Región de los bulbos)",
+     "recommendedDuration": "1 Día (excursión desde Ámsterdam)",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Jardines de Keukenhof (finales de marzo – mediados de mayo)",
+      "Campos de tulipanes del Bollenstreek",
+      "Grote Markt e iglesia de San Bavón en Haarlem",
+      "Museo Frans Hals"
+     ],
+     "activities": [
+      "Pasea entre millones de tulipanes, jacintos y narcisos en Keukenhof.",
+      "Pedalea junto a los coloridos campos de bulbos alrededor de Lisse.",
+      "Descubre los tranquilos canales de Haarlem y las terrazas del Grote Markt."
+     ],
+     "foodAndDrinks": [
+      "Poffertjes (minitortitas con mantequilla)",
+      "Jopenbier (cerveza histórica de Haarlem)",
+      "Stroopwafel recién hecho"
+     ],
+     "criticalTips": [
+      "Keukenhof solo abre en primavera (aprox. finales de marzo – mediados de mayo); compra online la entrada con transporte incluido.",
+      "Está prohibido entrar en los campos o arrancar flores; haz las fotos desde el borde."
+     ],
+     "mapsQuery": "Keukenhof, Lisse, Netherlands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: La Haya y Delft (Ciudad real y porcelana azul)",
+     "recommendedDuration": "1-2 Días",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Mauritshuis (La joven de la perla)",
+      "Playa y muelle de Scheveningen",
+      "Plaza Markt y Nieuwe Kerk de Delft",
+      "Taller de porcelana Royal Delft"
+     ],
+     "activities": [
+      "Admira “La joven de la perla” de Vermeer en el Mauritshuis.",
+      "Pasea por la orilla del mar del Norte en Scheveningen.",
+      "Recorre las calles junto a los canales de Delft y mira cómo se hace la porcelana azul y blanca en Royal Delft."
+     ],
+     "foodAndDrinks": [
+      "Kibbeling (bocaditos de bacalao frito)",
+      "Broodje haring (bocadillo de arenque)",
+      "Quesos holandeses (Gouda, Leerdammer)"
+     ],
+     "criticalTips": [
+      "El tranvía entre La Haya y Delft tarda unos 20 minutos, así que ambas caben en un día.",
+      "En Scheveningen sopla mucho viento; lleva una chaqueta ligera incluso en verano."
+     ],
+     "mapsQuery": "Mauritshuis, The Hague, Netherlands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Róterdam y Kinderdijk (Arquitectura moderna y molinos)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Markthal y Casas Cubo",
+      "Puente Erasmus y Kop van Zuid",
+      "Molinos de Kinderdijk (UNESCO)",
+      "Depot Boijmans Van Beuningen"
+     ],
+     "activities": [
+      "Recorre los puestos bajo el enorme arco pintado de la Markthal.",
+      "Toma el Waterbus desde el muelle de Erasmusbrug hasta los 19 molinos históricos de Kinderdijk.",
+      "Contempla la ciudad portuaria desde el Euromast o la azotea del Depot Boijmans."
+     ],
+     "foodAndDrinks": [
+      "Kapsalon (invento de Róterdam: döner, patatas fritas y queso fundido)",
+      "Stroopwafel recién hecho en la Markthal",
+      "Café de filtro de tostadores locales"
+     ],
+     "criticalTips": [
+      "El Waterbus es la forma más fácil de llegar a Kinderdijk; consulta antes los horarios.",
+      "Desde Róterdam el tren llega al aeropuerto de Schiphol en unos 30–40 minutos."
+     ],
+     "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Апрель – май (сезон тюльпанов и День короля 27 апреля) и июнь – сентябрь; зимы прохладные, ветреные и дождливые",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Безопасная страна, где насильственные преступления редко касаются туристов. В центре Амстердама, на вокзале Centraal и в поездах часты карманные кражи и кражи велосипедов.",
+    "commonScams": [
+     "Фальшивые наркодилеры и зазывалы вокруг квартала красных фонарей (De Wallen)",
+     "Предложения очень дешёвых краденых велосипедов (покупка тоже преступление)",
+     "Мошенники, выдающие себя за полицейских в штатском и просящие проверить кошелёк и карты"
+    ],
+    "safeTravelTips": [
+     "Не ходите по красным велодорожкам; у велосипедов всегда приоритет.",
+     "Оплачивая проезд бесконтактной картой (OVpay) в поездах, трамваях и метро, всегда отмечайтесь на входе и выходе.",
+     "Курить каннабис на улицах старого центра Амстердама запрещено, за это штрафуют."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (неэкстренные случаи: 0900-8844)",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (очень сильный 4G/5G по всей стране)",
+    "costPerGbUsd": "~1.50 - 3 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отличный (поезда NS, трамваи, метро и велосеть)",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "~3.50 - 4 $ (билет GVB на 1 час в Амстердаме)",
+    "dailyPassUsd": "~10 - 12 $ (билет GVB на 24 часа)",
+    "popularRideApps": [
+     "NS app",
+     "9292",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Такси очень дорогие. В поездах, трамваях и метро можно отмечаться бесконтактной банковской картой или телефоном. В городах удобнее всего арендовать велосипед."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 230 $",
+    "budgetMealUsd": "14 - 22 $ (киббелинг, фалафель, обеденное предложение)",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "35 - 70 $ (дороже в Амстердаме летом)",
+    "hotel3StarUsd": "130 - 220 $",
+    "flightCostIndex": "Низкий (прямой рейс ~3,5 ч)",
+    "flightTip": "Прямые рейсы в Амстердам есть из Стамбула, Анкары, Измира и Антальи; перелёт в Роттердам или Эйндховен иногда дешевле."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hallo / Goedendag",
+      "meaning": "Привет / Добрый день",
+      "translation": "Привет / Добрый день",
+      "pronunciation": "Халло / Хуэдендах"
+     },
+     {
+      "phrase": "Dank je wel",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "Данк е вел"
+     },
+     {
+      "phrase": "Sorry / Pardon",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "Сорри / Пардон"
+     },
+     {
+      "phrase": "Hoeveel kost dit?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "Хувел кост дит?"
+     },
+     {
+      "phrase": "Mag ik de rekening?",
+      "meaning": "Можно счёт?",
+      "translation": "Можно счёт?",
+      "pronunciation": "Мах ик дэ рекенинг?"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Нидерланды: каналы Амстердама, сады тюльпанов, Гаага и Роттердам",
+   "routeSummary": "7-дневный маршрут, удобный на поезде: от каналов Амстердама (ЮНЕСКО) к тюльпановым полям Харлема и Кёкенхофа, королевскому и фарфоровому наследию Гааги и Делфта, смелой архитектуре Роттердама и мельницам Киндердейка.",
+   "totalDays": 7,
+   "idealDurationText": "7-дневный классический маршрут по Нидерландам",
+   "bestSeason": "Апрель – май (тюльпаны) или июнь – сентябрь",
+   "transportMode": "Поезда NS + трамвай/метро (бесконтактная карта) + велопрокат",
+   "paceLevel": "Сбалансированный (короткие переезды, много пеших и велопрогулок)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Сельдь Hollandse Nieuwe",
+     "Стамппот (пюре с капустой)",
+     "Киббелинг",
+     "Капсалон"
+    ],
+    "drinks": [
+     "Женевер (можжевеловая водка)",
+     "Голландское пиво",
+     "Chocomel (шоколадное молоко)"
+    ],
+    "streetFoods": [
+     "Строопвафли",
+     "Поффертьес",
+     "Биттербаллен"
+    ],
+    "diningAdvice": "Ужинают рано (18–19 часов). Во многих местах принимают только карты («PIN only»). Если не едите свинину, уточняйте начинку крокетов и биттербаллен."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Дождевик и ветровка (погода часто меняется)",
+     "Бесконтактная банковская карта или мобильный кошелёк (OVpay)",
+     "Удобная обувь для ходьбы",
+     "Розетки типа C/F (230 В) — как в России"
+    ],
+    "safetyAndEtiquette": [
+     "Не ходите по велодорожкам и следите за велосипедами на переходах.",
+     "Фотографировать работниц квартала красных фонарей запрещено.",
+     "Не разговаривайте по телефону в «тихих» вагонах (Stilte)."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Амстердам (Каналы и музеи)",
+     "recommendedDuration": "3 дня (центр, музеи и районы)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Пояс каналов (ЮНЕСКО) и прогулка на катере",
+      "Рейксмузеум и Музей Ван Гога",
+      "Дом Анны Франк",
+      "Район Йордан и Вонделпарк"
+     ],
+     "activities": [
+      "Проплывите на катере по Принсенграхту и Херенграхту мимо купеческих домов XVII века.",
+      "Посмотрите «Ночной дозор» Рембрандта в Рейксмузеуме и «Подсолнухи» в Музее Ван Гога на Музейной площади.",
+      "Возьмите велосипед и исследуйте улочки Йордана и Вонделпарк, как местные."
+     ],
+     "foodAndDrinks": [
+      "Сельдь Hollandse Nieuwe (с луком и огурцами)",
+      "Биттербаллен (жареные шарики из рагу с горчицей)",
+      "Аппелтарт (голландский яблочный пирог)"
+     ],
+     "criticalTips": [
+      "Билеты в Дом Анны Франк продаются только онлайн, обычно за несколько недель.",
+      "Никогда не ходите по велодорожкам и всегда пристёгивайте велосипед двумя замками."
+     ],
+     "mapsQuery": "Amsterdam Canal Ring, Netherlands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Харлем и Кёкенхоф (Край тюльпанов)",
+     "recommendedDuration": "1 день (поездка из Амстердама)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Парк Кёкенхоф (конец марта – середина мая)",
+      "Тюльпановые поля Боллинстрек",
+      "Гроте-Маркт и церковь Святого Бавона в Харлеме",
+      "Музей Франса Халса"
+     ],
+     "activities": [
+      "Прогуляйтесь среди миллионов тюльпанов, гиацинтов и нарциссов в Кёкенхофе.",
+      "Проедьте на велосипеде вдоль цветочных полей вокруг Лиссе.",
+      "Откройте для себя тихие каналы Харлема и кафе на площади Гроте-Маркт."
+     ],
+     "foodAndDrinks": [
+      "Поффертьес (мини-блинчики со сливочным маслом)",
+      "Jopenbier (историческое пиво Харлема)",
+      "Свежие строопвафли"
+     ],
+     "criticalTips": [
+      "Кёкенхоф открыт только весной (примерно конец марта – середина мая); покупайте онлайн билет вместе с трансфером.",
+      "Заходить на поля и рвать цветы запрещено; фотографируйте с края."
+     ],
+     "mapsQuery": "Keukenhof, Lisse, Netherlands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Гаага и Делфт (Королевский город и синий фарфор)",
+     "recommendedDuration": "1-2 дня",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Маурицхёйс («Девушка с жемчужной серёжкой»)",
+      "Пляж и пирс Схевенингена",
+      "Площадь Маркт и Новая церковь в Делфте",
+      "Фарфоровая мануфактура Royal Delft"
+     ],
+     "activities": [
+      "Посмотрите «Девушку с жемчужной серёжкой» Вермеера в Маурицхёйсе.",
+      "Прогуляйтесь по берегу Северного моря в Схевенингене.",
+      "Пройдитесь по улочкам Делфта вдоль каналов и посмотрите, как делают бело-синий фарфор в Royal Delft."
+     ],
+     "foodAndDrinks": [
+      "Киббелинг (жареные кусочки трески)",
+      "Бротье харинг (булочка с сельдью)",
+      "Голландские сыры (гауда, лердаммер)"
+     ],
+     "criticalTips": [
+      "Трамвай между Гаагой и Делфтом идёт около 20 минут, оба города легко совместить за день.",
+      "В Схевенингене сильный ветер; даже летом возьмите лёгкую куртку."
+     ],
+     "mapsQuery": "Mauritshuis, The Hague, Netherlands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Роттердам и Киндердейк (Современная архитектура и мельницы)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Маркетхал и Кубические дома",
+      "Мост Эразма и Коп-ван-Зёйд",
+      "Мельницы Киндердейка (ЮНЕСКО)",
+      "Депо Бойманс ван Бёнинген"
+     ],
+     "activities": [
+      "Обойдите прилавки под огромной расписной аркой Маркетхала.",
+      "Доплывите на Waterbus от причала Erasmusbrug до 19 исторических мельниц Киндердейка.",
+      "Полюбуйтесь портовым городом с Евромачты или с крыши Депо Бойманс."
+     ],
+     "foodAndDrinks": [
+      "Капсалон (роттердамское изобретение: дёнер, картофель фри и плавленый сыр)",
+      "Свежие строопвафли в Маркетхале",
+      "Фильтр-кофе местной обжарки"
+     ],
+     "criticalTips": [
+      "Проще всего добраться до Киндердейка на Waterbus; заранее проверьте расписание.",
+      "От Роттердама поезд идёт до аэропорта Схипхол около 30–40 минут."
+     ],
+     "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  }
+ }
+}

@@ -1,3 +1,4 @@
+import { applyCountryFix } from './countryFixHook';
 /**
  * Vizamigo - Ülke Kültür, Turizm, Dil, Tarih, Gastronomi ve Ekonomi Ansiklopedisi
  * 199 ülke için kapsamlı kültürel görgü kuralları, gezilecek yerler, dini normlar,
@@ -1367,7 +1368,7 @@ function getRegionalProfile(region: string, capital: string, countryName: string
 /**
  * Ülke Ansiklopedisi Getirici
  */
-export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr'): CountryEncyclopediaData {
+function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): CountryEncyclopediaData {
   const code = countryCode.toUpperCase();
   const ALL_CURATED: Record<string, CuratedEntry> = {
     ...CURATED_ENCYCLOPEDIA,
@@ -1644,3 +1645,6 @@ export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr')
   };
 }
 
+export function getCountryEncyclopedia(countryCode: string, lang: string = 'tr'): CountryEncyclopediaData {
+  return applyCountryFix('enc', countryCode, lang, getCountryEncyclopediaImpl(countryCode, lang));
+}

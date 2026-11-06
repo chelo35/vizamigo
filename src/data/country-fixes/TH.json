@@ -1,0 +1,497 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "THB (Tayland Bahtı)",
+   "bestMonths": "Kasım – Şubat (serin ve kurak; Bangkok, kuzey ve Andaman kıyısı için ideal); Mart – Mayıs çok sıcak, Haziran – Ekim muson; Koh Samui tarafında en yağışlı dönem Ekim – Aralık",
+   "safety": {
+    "crimeRateSummary": "Turist bölgelerinde şiddet suçu nadirdir, ancak dolandırıcılık, kapkaç ve trafik kazaları (özellikle scooter) yaygındır. Güneydeki Narathiwat, Pattani, Yala ve Songkhla’nın bazı bölgeleri ile Kamboçya sınır hattı için resmî seyahat uyarıları vardır.",
+    "commonScams": [
+     "“Büyük Saray bugün kapalı” deyip sizi tuk-tuk ile mücevher veya terzi dükkânına götürenler",
+     "Phuket ve Pattaya’da kiralanan jet ski veya scooter için önceden var olan hasarın ödetilmesi",
+     "Taksimetre açmayıp turistlere sabit yüksek fiyat söyleyen taksiler"
+    ],
+    "safeTravelTips": [
+     "Grab veya Bolt kullanın; sokak taksisinde “meter, please” deyin, kabul etmezse başka araca binin.",
+     "Scooter kiralayacaksanız ehliyetiniz ve kaskınız olsun; birçok seyahat sigortası ehliyetsiz kazaları karşılamaz.",
+     "Kraliyet ailesi hakkında olumsuz konuşmayın (ağır cezası vardır); tapınaklarda omuz ve dizleri kapatın, ayakkabıları çıkarın."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "1669",
+     "general": "1155"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Mükemmel – şehirlerde ve adalarda yaygın 4G/5G; yalnızca uzak dağ ve ormanlık alanlarda zayıf",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Mevcut – AIS ve True turist eSIM’leri, Airalo, Holafly; havalimanında turist SIM’i de satılır",
+    "bestCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi – Bangkok’ta BTS Skytrain, MRT ve nehir tekneleri; şehirler arası ucuz iç hat uçuşları, yataklı trenler, otobüsler ve adalara feribotlar",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "~0.50 - 2 $ (BTS / MRT, mesafeye göre)",
+    "dailyPassUsd": "~4.50 $ (BTS günlük bilet)",
+    "popularRideApps": [
+     "Grab",
+     "Bolt",
+     "LINE MAN"
+    ],
+    "taxiAdvice": "Bangkok’ta taksimetreli taksiler ucuzdur; şehir içi yolculuklar genellikle 3-8 $ tutar, havalimanından binişte küçük bir ek ücret ve otoyol geçiş ücreti eklenir. Tuk-tuk ve adalardaki “songthaew”lerde fiyatı binmeden pazarlık edin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 18 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Yüksek (uzun mesafe; İstanbul – Bangkok direkt ~10 sa)",
+    "flightTip": "THY İstanbul’dan Bangkok’a direkt uçar ve Phuket’e de sefer düzenler; Körfez aktarmalı (Emirates, Qatar Airways, Etihad) biletler çoğu zaman daha ucuzdur. Ülke içinde AirAsia, Thai Lion Air ve Nok Air ile ucuz iç hat uçuşları yaygındır."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Tayca (kendi alfabesiyle yazılan tonlu bir dil).",
+    "englishProficiency": "Turistik bölgelerde, otellerde ve adalarda yeterli; kırsalda ve taksicilerle sınırlı — adresi Tayca yazılı göstermek işe yarar.",
+    "phrases": [
+     {
+      "phrase": "สวัสดีครับ / ค่ะ (Sawasdee khrap / kha)",
+      "meaning": "Merhaba (erkekler “khrap”, kadınlar “kha” der)",
+      "translation": "Merhaba (erkekler “khrap”, kadınlar “kha” der)",
+      "pronunciation": "sa-wat-DEE khrap / kha"
+     },
+     {
+      "phrase": "ขอบคุณครับ / ค่ะ (Khop khun khrap / kha)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "khop-KHUN khrap / kha"
+     },
+     {
+      "phrase": "เท่าไหร่ (Tao rai?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "tao-RAI"
+     },
+     {
+      "phrase": "ไม่เผ็ด (Mai phet)",
+      "meaning": "Acısız",
+      "translation": "Acısız",
+      "pronunciation": "mai PET"
+     },
+     {
+      "phrase": "ไม่เป็นไร (Mai pen rai)",
+      "meaning": "Önemli değil / Sorun yok",
+      "translation": "Önemli değil / Sorun yok",
+      "pronunciation": "mai pen RAI"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "THB (Thai baht)",
+   "bestMonths": "November – February (cool and dry; ideal for Bangkok, the north and the Andaman coast); March – May is very hot, June – October is monsoon season; on the Koh Samui side the wettest months are October – December",
+   "safety": {
+    "crimeRateSummary": "Violent crime in tourist areas is rare, but scams, bag snatching and road accidents (especially on scooters) are common. Official travel advisories cover the southern provinces of Narathiwat, Pattani, Yala and parts of Songkhla, as well as the Cambodian border area.",
+    "commonScams": [
+     "Touts saying “the Grand Palace is closed today” and taking you by tuk-tuk to gem or tailor shops",
+     "Being charged in Phuket and Pattaya for pre-existing damage to rented jet skis or scooters",
+     "Taxis that won’t use the meter and quote tourists a high flat price"
+    ],
+    "safeTravelTips": [
+     "Use Grab or Bolt; in street taxis ask for the meter (“meter, please”) and take another car if refused.",
+     "If you rent a scooter, have a valid licence and wear a helmet; many travel insurers won’t cover accidents without a licence.",
+     "Never speak negatively about the royal family (heavy penalties apply); in temples cover shoulders and knees and remove your shoes."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "1669",
+     "general": "1155"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excellent – widespread 4G/5G in cities and on the islands; weak only in remote mountains and jungle",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Available – AIS and True tourist eSIMs, Airalo, Holafly; tourist SIMs are also sold at the airport",
+    "bestCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good – BTS Skytrain, MRT and river boats in Bangkok; cheap domestic flights, sleeper trains, buses and ferries to the islands",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "~0.50 - 2 $ (BTS / MRT, by distance)",
+    "dailyPassUsd": "~4.50 $ (BTS one-day pass)",
+    "popularRideApps": [
+     "Grab",
+     "Bolt",
+     "LINE MAN"
+    ],
+    "taxiAdvice": "Metered taxis in Bangkok are cheap; city rides usually cost $3-8, with a small airport surcharge plus expressway tolls. With tuk-tuks and island songthaews, negotiate the price before getting in."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 18 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "High (long-haul; Istanbul – Bangkok direct ~10 h)",
+    "flightTip": "THY flies direct from Istanbul to Bangkok and also serves Phuket; connections via the Gulf (Emirates, Qatar Airways, Etihad) are often cheaper. Within the country, cheap domestic flights with AirAsia, Thai Lion Air and Nok Air are common."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Thai (a tonal language with its own script).",
+    "englishProficiency": "Adequate in tourist areas, hotels and on the islands; limited in rural areas and with taxi drivers – showing the address written in Thai helps.",
+    "phrases": [
+     {
+      "phrase": "สวัสดีครับ / ค่ะ (Sawasdee khrap / kha)",
+      "meaning": "Hello (men say “khrap”, women “kha”)",
+      "translation": "Hello (men say “khrap”, women “kha”)",
+      "pronunciation": "sa-wat-DEE khrap / kha"
+     },
+     {
+      "phrase": "ขอบคุณครับ / ค่ะ (Khop khun khrap / kha)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "khop-KHUN khrap / kha"
+     },
+     {
+      "phrase": "เท่าไหร่ (Tao rai?)",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "tao-RAI"
+     },
+     {
+      "phrase": "ไม่เผ็ด (Mai phet)",
+      "meaning": "Not spicy",
+      "translation": "Not spicy",
+      "pronunciation": "mai PET"
+     },
+     {
+      "phrase": "ไม่เป็นไร (Mai pen rai)",
+      "meaning": "Never mind / No problem",
+      "translation": "Never mind / No problem",
+      "pronunciation": "mai pen RAI"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "THB (Thailändischer Baht)",
+   "bestMonths": "November – Februar (kühl und trocken; ideal für Bangkok, den Norden und die Andamanenküste); März – Mai sehr heiß, Juni – Oktober Monsun; rund um Koh Samui sind Oktober – Dezember am regenreichsten",
+   "safety": {
+    "crimeRateSummary": "Gewalt in Touristengebieten ist selten, doch Betrug, Taschenraub und Verkehrsunfälle (vor allem mit Rollern) sind häufig. Offizielle Reisehinweise gelten für die Südprovinzen Narathiwat, Pattani, Yala und Teile von Songkhla sowie das Grenzgebiet zu Kambodscha.",
+    "commonScams": [
+     "Schlepper, die behaupten, der Große Palast sei „heute geschlossen“, und Sie per Tuk-Tuk zu Edelstein- oder Schneiderläden bringen",
+     "In Phuket und Pattaya für alte Schäden an gemieteten Jetskis oder Rollern zahlen müssen",
+     "Taxis, die das Taxameter nicht benutzen und Touristen einen hohen Pauschalpreis nennen"
+    ],
+    "safeTravelTips": [
+     "Grab oder Bolt nutzen; im Straßentaxi auf dem Taxameter bestehen („meter, please“), sonst ein anderes nehmen.",
+     "Wer einen Roller mietet, braucht einen gültigen Führerschein und Helm; viele Reiseversicherungen zahlen ohne Führerschein nicht.",
+     "Nie abfällig über die Königsfamilie sprechen (hohe Strafen); in Tempeln Schultern und Knie bedecken und Schuhe ausziehen."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "1669",
+     "general": "1155"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Ausgezeichnet – 4G/5G in Städten und auf den Inseln weit verbreitet; schwach nur in abgelegenen Bergen und Dschungel",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Verfügbar – Touristen-eSIMs von AIS und True, Airalo, Holafly; Touristen-SIMs gibt es auch am Flughafen",
+    "bestCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut – BTS Skytrain, MRT und Flussboote in Bangkok; günstige Inlandsflüge, Nachtzüge, Busse und Fähren zu den Inseln",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "~0.50 - 2 $ (BTS / MRT, je nach Strecke)",
+    "dailyPassUsd": "~4.50 $ (BTS-Tageskarte)",
+    "popularRideApps": [
+     "Grab",
+     "Bolt",
+     "LINE MAN"
+    ],
+    "taxiAdvice": "Taxis mit Taxameter sind in Bangkok billig; Stadtfahrten kosten meist 3-8 $, am Flughafen kommen ein kleiner Zuschlag und Mautgebühren hinzu. Bei Tuk-Tuks und Songthaews auf den Inseln den Preis vor der Fahrt aushandeln."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 18 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Hoch (Langstrecke; Istanbul – Bangkok direkt ~10 Std.)",
+    "flightTip": "THY fliegt direkt von Istanbul nach Bangkok und auch nach Phuket; Umsteigeverbindungen über den Golf (Emirates, Qatar Airways, Etihad) sind oft günstiger. Im Land sind billige Inlandsflüge mit AirAsia, Thai Lion Air und Nok Air üblich."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Thai (eine tonale Sprache mit eigener Schrift).",
+    "englishProficiency": "In Touristengebieten, Hotels und auf den Inseln ausreichend; auf dem Land und bei Taxifahrern begrenzt – die Adresse auf Thai zu zeigen hilft.",
+    "phrases": [
+     {
+      "phrase": "สวัสดีครับ / ค่ะ (Sawasdee khrap / kha)",
+      "meaning": "Hallo (Männer sagen „khrap“, Frauen „kha“)",
+      "translation": "Hallo (Männer sagen „khrap“, Frauen „kha“)",
+      "pronunciation": "sa-wat-DEE khrap / kha"
+     },
+     {
+      "phrase": "ขอบคุณครับ / ค่ะ (Khop khun khrap / kha)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "khop-KHUN khrap / kha"
+     },
+     {
+      "phrase": "เท่าไหร่ (Tao rai?)",
+      "meaning": "Wie viel?",
+      "translation": "Wie viel?",
+      "pronunciation": "tao-RAI"
+     },
+     {
+      "phrase": "ไม่เผ็ด (Mai phet)",
+      "meaning": "Nicht scharf",
+      "translation": "Nicht scharf",
+      "pronunciation": "mai PET"
+     },
+     {
+      "phrase": "ไม่เป็นไร (Mai pen rai)",
+      "meaning": "Macht nichts / Kein Problem",
+      "translation": "Macht nichts / Kein Problem",
+      "pronunciation": "mai pen RAI"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "THB (baht tailandés)",
+   "bestMonths": "Noviembre – febrero (fresco y seco; ideal para Bangkok, el norte y la costa de Andamán); marzo – mayo hace mucho calor y junio – octubre es época de monzón; en la zona de Koh Samui los meses más lluviosos son octubre – diciembre",
+   "safety": {
+    "crimeRateSummary": "La violencia en zonas turísticas es rara, pero las estafas, los tirones y los accidentes de tráfico (sobre todo en scooter) son frecuentes. Hay avisos oficiales para las provincias del sur de Narathiwat, Pattani, Yala y partes de Songkhla, así como para la frontera con Camboya.",
+    "commonScams": [
+     "Ganchos que dicen “el Gran Palacio hoy está cerrado” y te llevan en tuk-tuk a joyerías o sastrerías",
+     "Que en Phuket y Pattaya te cobren daños previos de motos de agua o scooters alquilados",
+     "Taxis que no usan el taxímetro y piden al turista un precio fijo alto"
+    ],
+    "safeTravelTips": [
+     "Usa Grab o Bolt; en taxis de la calle pide el taxímetro (“meter, please”) y si se niegan toma otro.",
+     "Si alquilas scooter, lleva carné válido y casco; muchos seguros de viaje no cubren accidentes sin carné.",
+     "Nunca hables mal de la familia real (las penas son severas); en los templos cubre hombros y rodillas y quítate los zapatos."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "1669",
+     "general": "1155"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excelente – 4G/5G extendido en ciudades e islas; débil solo en montañas y selvas remotas",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Disponible – eSIM turísticas de AIS y True, Airalo, Holafly; también hay SIM turísticas en el aeropuerto",
+    "bestCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno – BTS Skytrain, MRT y barcos fluviales en Bangkok; vuelos internos baratos, trenes nocturnos, autobuses y ferris a las islas",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.50 - 2 $ (BTS / MRT, según distancia)",
+    "dailyPassUsd": "~4.50 $ (pase diario BTS)",
+    "popularRideApps": [
+     "Grab",
+     "Bolt",
+     "LINE MAN"
+    ],
+    "taxiAdvice": "Los taxis con taxímetro en Bangkok son baratos; los trayectos urbanos suelen costar 3-8 $, con un pequeño recargo en el aeropuerto más los peajes. En tuk-tuks y songthaews de las islas negocia el precio antes de subir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 18 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Alto (largo radio; Estambul – Bangkok directo ~10 h)",
+    "flightTip": "THY vuela directo de Estambul a Bangkok y también a Phuket; las conexiones vía el Golfo (Emirates, Qatar Airways, Etihad) suelen ser más baratas. Dentro del país son habituales los vuelos baratos de AirAsia, Thai Lion Air y Nok Air."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Tailandés (lengua tonal con escritura propia).",
+    "englishProficiency": "Suficiente en zonas turísticas, hoteles e islas; limitado en el campo y con taxistas: ayuda mostrar la dirección escrita en tailandés.",
+    "phrases": [
+     {
+      "phrase": "สวัสดีครับ / ค่ะ (Sawasdee khrap / kha)",
+      "meaning": "Hola (los hombres dicen “khrap”, las mujeres “kha”)",
+      "translation": "Hola (los hombres dicen “khrap”, las mujeres “kha”)",
+      "pronunciation": "sa-wat-DEE khrap / kha"
+     },
+     {
+      "phrase": "ขอบคุณครับ / ค่ะ (Khop khun khrap / kha)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "khop-KHUN khrap / kha"
+     },
+     {
+      "phrase": "เท่าไหร่ (Tao rai?)",
+      "meaning": "¿Cuánto?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "tao-RAI"
+     },
+     {
+      "phrase": "ไม่เผ็ด (Mai phet)",
+      "meaning": "Sin picante",
+      "translation": "Sin picante",
+      "pronunciation": "mai PET"
+     },
+     {
+      "phrase": "ไม่เป็นไร (Mai pen rai)",
+      "meaning": "No pasa nada",
+      "translation": "No pasa nada",
+      "pronunciation": "mai pen RAI"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "THB (тайский бат)",
+   "bestMonths": "Ноябрь – февраль (прохладно и сухо; идеально для Бангкока, севера и Андаманского побережья); март – май очень жарко, июнь – октябрь сезон муссонов; в районе Самуи самые дождливые месяцы — октябрь – декабрь",
+   "safety": {
+    "crimeRateSummary": "Насилие в туристических районах редко, но мошенничество, рывки сумок и ДТП (особенно на скутерах) распространены. Официальные предупреждения касаются южных провинций Наратхиват, Паттани, Яла и части Сонгкхлы, а также приграничья с Камбоджей.",
+    "commonScams": [
+     "Зазывалы, говорящие, что «Большой дворец сегодня закрыт», и везущие на тук-туке в ювелирные или портновские лавки",
+     "Требование в Пхукете и Паттайе оплатить старые повреждения арендованных гидроциклов или скутеров",
+     "Такси, которые не включают счётчик и называют туристам высокую фиксированную цену"
+    ],
+    "safeTravelTips": [
+     "Пользуйтесь Grab или Bolt; в уличном такси просите счётчик («meter, please»), при отказе берите другую машину.",
+     "Арендуя скутер, имейте действующие права и надевайте шлем; многие страховки не покрывают ДТП без прав.",
+     "Не отзывайтесь плохо о королевской семье (суровые наказания); в храмах закрывайте плечи и колени и снимайте обувь."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "1669",
+     "general": "1155"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Отлично – повсеместный 4G/5G в городах и на островах; слабо только в глухих горах и джунглях",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Доступна – туристические eSIM от AIS и True, Airalo, Holafly; туристические SIM продаются и в аэропорту",
+    "bestCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошо – BTS Skytrain, MRT и речные суда в Бангкоке; дешёвые внутренние рейсы, спальные поезда, автобусы и паромы на острова",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "~0.50 - 2 $ (BTS / MRT, по расстоянию)",
+    "dailyPassUsd": "~4.50 $ (дневной билет BTS)",
+    "popularRideApps": [
+     "Grab",
+     "Bolt",
+     "LINE MAN"
+    ],
+    "taxiAdvice": "Такси со счётчиком в Бангкоке дешёвые; поездки по городу обычно стоят 3-8 $, в аэропорту добавляются небольшая надбавка и платные дороги. С тук-туками и сонгтэо на островах торгуйтесь до посадки."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 18 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Высокий (дальний перелёт; Стамбул – Бангкок прямой ~10 ч)",
+    "flightTip": "THY летает из Стамбула в Бангкок напрямую, а также в Пхукет; стыковки через Персидский залив (Emirates, Qatar Airways, Etihad) часто дешевле. Внутри страны популярны дешёвые рейсы AirAsia, Thai Lion Air и Nok Air."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Тайский (тональный язык с собственной письменностью).",
+    "englishProficiency": "Достаточный в туристических местах, отелях и на островах; ограниченный в провинции и у таксистов – помогает показать адрес на тайском.",
+    "phrases": [
+     {
+      "phrase": "สวัสดีครับ / ค่ะ (Sawasdee khrap / kha)",
+      "meaning": "Здравствуйте (мужчины говорят «кхрап», женщины «кха»)",
+      "translation": "Здравствуйте (мужчины говорят «кхрап», женщины «кха»)",
+      "pronunciation": "sa-wat-DEE khrap / kha"
+     },
+     {
+      "phrase": "ขอบคุณครับ / ค่ะ (Khop khun khrap / kha)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "khop-KHUN khrap / kha"
+     },
+     {
+      "phrase": "เท่าไหร่ (Tao rai?)",
+      "meaning": "Сколько?",
+      "translation": "Сколько?",
+      "pronunciation": "tao-RAI"
+     },
+     {
+      "phrase": "ไม่เผ็ด (Mai phet)",
+      "meaning": "Не остро",
+      "translation": "Не остро",
+      "pronunciation": "mai PET"
+     },
+     {
+      "phrase": "ไม่เป็นไร (Mai pen rai)",
+      "meaning": "Ничего страшного",
+      "translation": "Ничего страшного",
+      "pronunciation": "mai pen RAI"
+     }
+    ]
+   }
+  }
+ }
+}

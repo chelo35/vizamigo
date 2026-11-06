@@ -1,0 +1,1647 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tip C, F (230V, 50Hz)",
+   "bestMonths": "Nisan – Haziran ve Eylül – Ekim (ılık ve görece sakin); Algarve plajları için Haziran – Eylül",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Avrupa’nın en güvenli ülkelerindendir; şiddet suçu düşüktür. Lizbon’da 28 numaralı tramvay, Baixa ve Bairro Alto ile Porto merkezinde yankesicilik başlıca risktir.",
+    "commonScams": [
+     "Baixa ve Bairro Alto’da turistlere sahte uyuşturucu satmaya çalışan sokak satıcıları",
+     "Restoranlarda istenmeden masaya konan ekmek, zeytin ve peynirin (couvert) hesaba yazılması",
+     "Bağımsız ATM’lerde (ör. Euronet) yüksek ücret ve dinamik kur dönüşümü"
+    ],
+    "safeTravelTips": [
+     "Para çekmek için ‘Multibanco’ logolu banka ATM’lerini kullanın ve EUR üzerinden ödemeyi seçin.",
+     "İstemediğiniz couvert ürünlerini kibarca geri gönderin; dokunmazsanız ücret alınmaz.",
+     "Atlantik dalgaları ve akıntıları güçlüdür; yalnızca cankurtaranlı ve bayraklı plajlarda yüzün."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus kapsaması (yaygın 4G/5G)",
+    "costPerGbUsd": "~0.80 - 2.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi (Lizbon ve Porto metrosu, CP trenleri, şehirlerarası otobüsler)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1.80 - 2.20 $ (Lisboa)",
+    "dailyPassUsd": "7.50 - 8.50 $ (Lisboa, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "FREE NOW",
+     "Navegante",
+     "CP – Comboios de Portugal",
+     "Rede Expressos"
+    ],
+    "taxiAdvice": "Uber ve Bolt yaygın ve uygun fiyatlıdır. Lizbon’da yeniden yüklenebilir Navegante/Viva Viagem kartını ‘zapping’ bakiyeyle kullanın; Lizbon – Porto arası Alfa Pendular treniyle yaklaşık 3 saattir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "1.00 - 2.00 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Orta Seviye (İstanbul – Lizbon direkt ~4,5 sa)",
+    "flightTip": "Lizbon ve Porto’ya İstanbul’dan direkt uçuşlar vardır; Lizbon’a varıp Porto’dan dönen açık uçlu bilet rotayı kolaylaştırır. Yaz aylarında Algarve (Faro) fiyatları yükselir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Portekizlilere İspanyolca yerine İngilizce veya birkaç Portekizce kelimeyle hitap etmek daha nazik karşılanır.",
+     "Tanışırken tanıdıklar arasında iki yanaktan öpüşmek yaygındır; resmi ortamda el sıkışılır.",
+     "Yemek saatleri geç ve uzundur: öğle 12:30–15:00, akşam 19:30 sonrası.",
+     "Fado dinlerken konuşulmaz; şarkı sırasında sessizlik saygı göstergesidir."
+    ],
+    "festivals": [
+     "Santo António Festivali (Haziran, Lizbon – sardalya ve sokak partileri)",
+     "São João Festivali (23–24 Haziran, Porto)",
+     "Fátima hac günleri (13 Mayıs ve 13 Ekim)"
+    ],
+    "lifestyle": "Sakin ve misafirperver yaşam temposu, kahve (bica) molası, deniz ürünleri sofrası, fado müziği ve sörf kültürü."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lizbon: Belém Kulesi ve Jerónimos Manastırı",
+     "Lizbon: Alfama ve São Jorge Kalesi",
+     "Sintra: Pena Sarayı ve Quinta da Regaleira",
+     "Porto: Ribeira ve Dom Luís I Köprüsü",
+     "Douro Vadisi bağları",
+     "Algarve: Ponta da Piedade ve Benagil Mağarası"
+    ],
+    "bestSeasons": "İlkbahar ve sonbahar şehir gezileri için; yaz Algarve plajları için; kış ılıman ve ucuzdur",
+    "travelStyleTip": "Porto’dan Lizbon’a trenle inip son durak olarak Algarve’yi ekleyin; Algarve’de kıyı köylerini gezmek için araç kiralamak pratiktir."
+   },
+   "religion": {
+    "primaryReligions": "Roma Katolik ~%80, dinsiz ~%14, diğer Hristiyanlar ~%3; küçük Müslüman ve Yahudi toplulukları.",
+    "respectNorms": "Kiliselerde omuz ve dizler kapalı olmalı; Fátima’da hacıların dizleri üzerinde yürüdüğü yolu kesmeyin.",
+    "sacredSites": [
+     "Fátima Tapınağı (Santuário de Fátima)",
+     "Jerónimos Manastırı (Lizbon)",
+     "Bom Jesus do Monte (Braga)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portekizce (kuzeydoğuda bölgesel olarak Mirandaca da tanınır)",
+    "englishProficiency": "Çok iyi; turistik bölgelerde ve gençler arasında İngilizce yaygındır.",
+    "phrases": [
+     {
+      "phrase": "Olá / Bom dia",
+      "meaning": "Merhaba / Günaydın",
+      "translation": "Merhaba",
+      "pronunciation": "o-LA / bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Teşekkür ederim (erkek / kadın konuşan)",
+      "translation": "Teşekkürler",
+      "pronunciation": "o-bree-GA-doo / o-bree-GA-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "poor fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Kaç para?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "a KON-ta poor fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "1143’te bağımsız krallık olan Portekiz, 15. ve 16. yüzyıllarda Keşifler Çağı’na öncülük etti; Vasco da Gama 1498’de Hindistan’a deniz yolunu açtı. 1755 Lizbon depremi başkenti yıktı, 1910’da cumhuriyet ilan edildi. 1974 Karanfil Devrimi ile demokrasiye geçen ülke 1986’da Avrupa Topluluğu’na katıldı.",
+    "milestones": [
+     "1143: Portekiz Krallığı’nın tanınması",
+     "1498: Vasco da Gama Hindistan’a ulaştı",
+     "1755: Büyük Lizbon Depremi",
+     "1974: Karanfil Devrimi; 1986: Avrupa Topluluğu üyeliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bacalhau à Brás (kibrit patates ve yumurtayla tuzlu morina)",
+     "Sardinhas assadas (kömürde sardalya)",
+     "Francesinha (Porto’nun soslu et sandviçi – jambon ve sosis içerir)"
+    ],
+    "traditionalDrinks": [
+     "Porto şarabı (Douro Vadisi)",
+     "Vinho Verde (hafif, genç beyaz şarap)",
+     "Ginjinha (vişne likörü)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel de nata (kremalı milföy tartı)",
+     "Bifana (marine domuz eti sandviçi)",
+     "Bola de Berlim (kremalı pişi, plaj klasiği)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Vasco da Gama (kâşif)",
+     "Fernando Pessoa (şair)",
+     "Cristiano Ronaldo (futbolcu)"
+    ],
+    "strongSectors": [
+     "Turizm",
+     "Yenilenebilir enerji (rüzgâr ve güneş)",
+     "Mantar meşesi (dünyanın en büyük üreticisi), şarap ve ayakkabı-tekstil"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart yaygındır, ancak küçük kafe ve tavernalarda nakit veya yerel Multibanco kartı istenebilir; yerel halk MB WAY uygulamasını kullanır.",
+    "tippingCulture": "Bahşiş zorunlu değildir; restoranlarda %5–10 veya hesabı yuvarlamak yeterlidir.",
+    "economicPillars": "Turizm, hizmetler, yenilenebilir enerji, otomotiv ve tekstil ihracatı, tarım (şarap, zeytinyağı, mantar)."
+   }
+  },
+  "itin": {
+   "routeName": "Kuzeyden Güneye Portekiz: Porto, Coimbra, Lizbon ve Algarve",
+   "routeSummary": "Porto şarap mahzenleri ve Douro kıyısından üniversite kenti Coimbra’ya, Lizbon’un tepeleri ve Sintra’nın saraylarından Algarve’nin altın kayalıklarına uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Gün",
+   "bestSeason": "Nisan – Haziran, Eylül – Ekim",
+   "transportMode": "CP trenleri (Alfa Pendular / Intercidades), Lizbon ve Porto’da metro-tramvay; Algarve’de araç kiralama veya otobüs",
+   "paceLevel": "Dengeli (Şehir + Kültür + Plaj)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Porto (Ribeira ve Porto Şarabı Mahzenleri)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Ribeira ve Dom Luís I Köprüsü",
+      "São Bento Garı’nın çini (azulejo) panoları",
+      "Livraria Lello ve Clérigos Kulesi",
+      "Vila Nova de Gaia Porto şarabı mahzenleri"
+     ],
+     "activities": [
+      "Dom Luís I Köprüsü’nün üst katından gün batımını izleyin.",
+      "‘Altı köprü’ tekne turuyla Douro Nehri’nde gezinin.",
+      "İsteğe bağlı olarak Douro Vadisi bağlarına günübirlik tur yapın."
+     ],
+     "foodAndDrinks": [
+      "Francesinha (Porto’nun soslu et sandviçi – jambon ve sosis içerir)",
+      "Porto şarabı (Douro Vadisi)",
+      "Tripas à moda do Porto (işkembe yahnisi)"
+     ],
+     "criticalTips": [
+      "Livraria Lello girişi biletlidir; çevrimiçi saatli bilet alın.",
+      "Şehir çok yokuşludur; rahat ayakkabı giyin ve Guindais füniküleri kullanın."
+     ],
+     "mapsQuery": "Porto, Portugal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Coimbra (Tarihi Üniversite Kenti)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Coimbra Üniversitesi ve Joanina Kütüphanesi (UNESCO)",
+      "Eski Katedral (Sé Velha)",
+      "Santa Cruz Manastırı"
+     ],
+     "activities": [
+      "Akşam Coimbra fadosunu (erkek sesli, öğrenci geleneği) dinleyin.",
+      "Mondego Nehri kıyısındaki parklarda yürüyün.",
+      "Dar ortaçağ sokaklarından üniversite tepesine tırmanın."
+     ],
+     "foodAndDrinks": [
+      "Chanfana (kırmızı şarapta pişmiş keçi eti)",
+      "Pastéis de Santa Clara (bademli tatlı)"
+     ],
+     "criticalTips": [
+      "Joanina Kütüphanesi saatli girişle ziyaret edilir; bileti erken alın.",
+      "Porto – Lizbon tren hattı üzerindedir; bagajı istasyon emanetine bırakıp günü değerlendirebilirsiniz."
+     ],
+     "mapsQuery": "Coimbra, Portugal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Lizbon ve Sintra",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Belém: Jerónimos Manastırı ve Belém Kulesi",
+      "Alfama, São Jorge Kalesi ve 28 numaralı tramvay",
+      "Seyir terasları (Miradouro da Senhora do Monte, Santa Luzia)",
+      "Sintra: Pena Sarayı ve Quinta da Regaleira"
+     ],
+     "activities": [
+      "Alfama’da bir fado evinde akşam yemeği yiyin.",
+      "Sintra’ya Rossio’dan trenle günübirlik gidin; Cabo da Roca’ya uzanın.",
+      "LX Factory ve Time Out Market’i keşfedin."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata (kremalı milföy tartı)",
+      "Bacalhau à Brás (kibrit patates ve yumurtayla tuzlu morina)",
+      "Ginjinha (vişne likörü)"
+     ],
+     "criticalTips": [
+      "28 numaralı tramvay yankesicilerin favorisidir; çantanızı önde tutun veya sabah erken binin.",
+      "Pena Sarayı için saatli bileti çevrimiçi alın; yaz hafta sonları çok kalabalıktır."
+     ],
+     "mapsQuery": "Lisbon, Portugal"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Algarve (Lagos ve Altın Kayalıklar)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Ponta da Piedade kayalıkları",
+      "Benagil Mağarası (tekne veya kano ile)",
+      "Praia da Marinha",
+      "Sagres ve Cabo de São Vicente"
+     ],
+     "activities": [
+      "Lagos’tan kano turuyla Ponta da Piedade mağaralarını keşfedin.",
+      "Yedi Asılı Vadi (Sete Vales Suspensos) patikasında yürüyün.",
+      "Sagres’te gün batımını izleyin veya sörf dersi alın."
+     ],
+     "foodAndDrinks": [
+      "Cataplana de marisco (bakır kapta deniz ürünleri güveci)",
+      "Sardinhas assadas (kömürde sardalya)",
+      "Bola de Berlim (kremalı pişi, plaj klasiği)"
+     ],
+     "criticalTips": [
+      "Benagil plajına tekneden inmek yasaklanmıştır; mağarayı yalnızca denizden, lisanslı turlarla görün.",
+      "Atlantik suyu yazın bile serindir (~19–21 °C); kayalık kenarlarına yaklaşmayın."
+     ],
+     "mapsQuery": "Lagos, Portugal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bacalhau à Brás (kibrit patates ve yumurtayla tuzlu morina)",
+     "Sardinhas assadas (kömürde sardalya)",
+     "Francesinha (Porto’nun soslu et sandviçi – jambon ve sosis içerir)"
+    ],
+    "drinks": [
+     "Porto şarabı (Douro Vadisi)",
+     "Vinho Verde (hafif, genç beyaz şarap)",
+     "Ginjinha (vişne likörü)"
+    ],
+    "streetFoods": [
+     "Pastel de nata (kremalı milföy tartı)",
+     "Bifana (marine domuz eti sandviçi)",
+     "Bola de Berlim (kremalı pişi, plaj klasiği)"
+    ],
+    "diningAdvice": "Öğle saatlerinde ‘prato do dia’ (günün yemeği) çok uygun fiyatlıdır. Masaya gelen couvert ücretlidir; istemiyorsanız geri gönderin. Balık ve deniz ürünleri domuz etinden kaçınanlar için iyi bir seçenektir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Kaymaz tabanlı rahat ayakkabı (parlak ‘calçada’ taşları kaygandır)",
+     "Priz adaptörü gerekmez (Tip C/F, Türkiye ile aynı)",
+     "Rüzgârlık veya ince ceket (Atlantik rüzgârı akşamları serinletir)",
+     "Yüksek faktörlü güneş kremi ve şapka"
+    ],
+    "safetyAndEtiquette": [
+     "Sokakta uyuşturucu teklif edenleri yanıtsız bırakıp yürümeye devam edin.",
+     "Kayalık kenarlarında selfie çekmeyin; zemin aniden çökebilir."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Type C, F (230V, 50Hz)",
+   "bestMonths": "April – June and September – October (mild and quieter); June – September for Algarve beaches",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "One of Europe’s safest countries with low violent crime. Pickpocketing on Lisbon’s tram 28, in Baixa and Bairro Alto, and in central Porto is the main risk.",
+    "commonScams": [
+     "Street sellers in Baixa and Bairro Alto offering tourists fake drugs",
+     "Unrequested bread, olives and cheese (couvert) placed on the table and then charged",
+     "Independent ATMs (e.g. Euronet) with high fees and dynamic currency conversion"
+    ],
+    "safeTravelTips": [
+     "Use bank ATMs with the ‘Multibanco’ logo and always choose to pay in EUR.",
+     "Politely send back couvert items you don’t want; if untouched, they aren’t charged.",
+     "Atlantic waves and currents are strong; swim only at lifeguarded beaches and obey the flags."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% population coverage (widespread 4G/5G)",
+    "costPerGbUsd": "~0.80 - 2.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good (Lisbon and Porto metros, CP trains, intercity coaches)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1.80 - 2.20 $ (Lisboa)",
+    "dailyPassUsd": "7.50 - 8.50 $ (Lisboa, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "FREE NOW",
+     "Navegante",
+     "CP – Comboios de Portugal",
+     "Rede Expressos"
+    ],
+    "taxiAdvice": "Uber and Bolt are common and affordable. In Lisbon use the rechargeable Navegante/Viva Viagem card with ‘zapping’ credit; Lisbon – Porto takes about 3 hours on the Alfa Pendular train."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "1.00 - 2.00 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Moderate (Istanbul – Lisbon direct ~4.5 hrs)",
+    "flightTip": "There are direct flights from Istanbul to Lisbon and Porto; an open-jaw ticket (into Lisbon, out of Porto) simplifies the route. Faro (Algarve) fares rise in summer."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Addressing Portuguese people in English or a few words of Portuguese, rather than Spanish, is appreciated.",
+     "Friends greet with two cheek kisses; handshakes are used in formal settings.",
+     "Meals are late and long: lunch 12:30–3 p.m., dinner after 7:30 p.m.",
+     "Stay silent during fado performances; quiet is a sign of respect."
+    ],
+    "festivals": [
+     "Santo António festival (June, Lisbon – sardines and street parties)",
+     "São João festival (23–24 June, Porto)",
+     "Fátima pilgrimages (13 May and 13 October)"
+    ],
+    "lifestyle": "A calm, hospitable pace of life, coffee (bica) breaks, seafood feasts, fado music and surf culture."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lisbon: Belém Tower & Jerónimos Monastery",
+     "Lisbon: Alfama & São Jorge Castle",
+     "Sintra: Pena Palace & Quinta da Regaleira",
+     "Porto: Ribeira & Dom Luís I Bridge",
+     "Douro Valley vineyards",
+     "Algarve: Ponta da Piedade & Benagil Cave"
+    ],
+    "bestSeasons": "Spring and autumn for city breaks; summer for Algarve beaches; winter is mild and cheap",
+    "travelStyleTip": "Take the train south from Porto to Lisbon and finish in the Algarve, where renting a car makes exploring coastal villages easy."
+   },
+   "religion": {
+    "primaryReligions": "Roman Catholic ~80%, no religion ~14%, other Christians ~3%; small Muslim and Jewish communities.",
+    "respectNorms": "Cover shoulders and knees in churches; in Fátima, don’t block the path where pilgrims walk on their knees.",
+    "sacredSites": [
+     "Sanctuary of Fátima",
+     "Jerónimos Monastery (Lisbon)",
+     "Bom Jesus do Monte (Braga)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portuguese (Mirandese is also recognised regionally in the northeast)",
+    "englishProficiency": "Very good; English is widely spoken in tourist areas and among young people.",
+    "phrases": [
+     {
+      "phrase": "Olá / Bom dia",
+      "meaning": "Hello / Good morning",
+      "translation": "Hello",
+      "pronunciation": "o-LA / bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Thank you (said by a man / woman)",
+      "translation": "Thanks",
+      "pronunciation": "o-bree-GA-doo / o-bree-GA-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "poor fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "How much is it?",
+      "translation": "How much?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "The bill, please",
+      "translation": "Bill, please",
+      "pronunciation": "a KON-ta poor fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Portugal became an independent kingdom in 1143 and led the Age of Discovery in the 15th and 16th centuries; Vasco da Gama opened the sea route to India in 1498. The 1755 earthquake destroyed Lisbon, and the republic was proclaimed in 1910. After the 1974 Carnation Revolution brought democracy, Portugal joined the European Community in 1986.",
+    "milestones": [
+     "1143: Kingdom of Portugal recognised",
+     "1498: Vasco da Gama reaches India",
+     "1755: Great Lisbon Earthquake",
+     "1974: Carnation Revolution; 1986: European Community membership"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bacalhau à Brás (salt cod with shoestring potatoes and egg)",
+     "Sardinhas assadas (charcoal-grilled sardines)",
+     "Francesinha (Porto’s sauce-drenched meat sandwich)"
+    ],
+    "traditionalDrinks": [
+     "Port wine (Douro Valley)",
+     "Vinho Verde (light, young wine)",
+     "Ginjinha (sour-cherry liqueur)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel de nata (custard tart)",
+     "Bifana (marinated pork sandwich)",
+     "Bola de Berlim (custard-filled doughnut, a beach classic)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Vasco da Gama (explorer)",
+     "Fernando Pessoa (poet)",
+     "Cristiano Ronaldo (footballer)"
+    ],
+    "strongSectors": [
+     "Tourism",
+     "Renewable energy (wind and solar)",
+     "Cork (world’s largest producer), wine, footwear and textiles"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards are common, but small cafés and tascas may ask for cash or a local Multibanco card; locals use the MB WAY app.",
+    "tippingCulture": "Tipping isn’t mandatory; 5–10% or rounding up in restaurants is enough.",
+    "economicPillars": "Tourism, services, renewable energy, automotive and textile exports, agriculture (wine, olive oil, cork)."
+   }
+  },
+  "itin": {
+   "routeName": "Portugal North to South: Porto, Coimbra, Lisbon & the Algarve",
+   "routeSummary": "An 8-day route from Porto’s wine cellars and Douro riverside to the university town of Coimbra, Lisbon’s hills and Sintra’s palaces, ending at the golden cliffs of the Algarve.",
+   "totalDays": 8,
+   "idealDurationText": "8 Days",
+   "bestSeason": "April – June, September – October",
+   "transportMode": "CP trains (Alfa Pendular / Intercidades), metro and trams in Lisbon and Porto; rental car or bus in the Algarve",
+   "paceLevel": "Balanced (City + Culture + Beach)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Porto (Ribeira & Port Wine Cellars)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Ribeira & Dom Luís I Bridge",
+      "São Bento station’s azulejo tile panels",
+      "Livraria Lello & Clérigos Tower",
+      "Port wine lodges of Vila Nova de Gaia"
+     ],
+     "activities": [
+      "Watch the sunset from the upper deck of the Dom Luís I Bridge.",
+      "Take a ‘six bridges’ boat cruise on the Douro.",
+      "Optionally take a day trip to the Douro Valley vineyards."
+     ],
+     "foodAndDrinks": [
+      "Francesinha (Porto’s sauce-drenched meat sandwich)",
+      "Port wine (Douro Valley)",
+      "Tripas à moda do Porto (tripe stew)"
+     ],
+     "criticalTips": [
+      "Livraria Lello requires a ticket; book a timed slot online.",
+      "The city is very hilly; wear comfortable shoes and use the Guindais funicular."
+     ],
+     "mapsQuery": "Porto, Portugal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Coimbra (Historic University Town)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "University of Coimbra & Joanina Library (UNESCO)",
+      "Old Cathedral (Sé Velha)",
+      "Santa Cruz Monastery"
+     ],
+     "activities": [
+      "Listen to Coimbra fado (sung by men, a student tradition) in the evening.",
+      "Walk the parks along the Mondego river.",
+      "Climb the narrow medieval lanes up to the university hill."
+     ],
+     "foodAndDrinks": [
+      "Chanfana (goat slow-cooked in red wine)",
+      "Pastéis de Santa Clara (almond pastries)"
+     ],
+     "criticalTips": [
+      "The Joanina Library is visited by timed entry; get tickets early.",
+      "It lies on the Porto – Lisbon rail line; leave luggage at the station and make a day of it."
+     ],
+     "mapsQuery": "Coimbra, Portugal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Lisbon & Sintra",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Belém: Jerónimos Monastery & Belém Tower",
+      "Alfama, São Jorge Castle & tram 28",
+      "Viewpoints (Miradouro da Senhora do Monte, Santa Luzia)",
+      "Sintra: Pena Palace & Quinta da Regaleira"
+     ],
+     "activities": [
+      "Have dinner at a fado house in Alfama.",
+      "Day-trip to Sintra by train from Rossio and continue to Cabo da Roca.",
+      "Explore LX Factory and Time Out Market."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata (custard tart)",
+      "Bacalhau à Brás (salt cod with shoestring potatoes and egg)",
+      "Ginjinha (sour-cherry liqueur)"
+     ],
+     "criticalTips": [
+      "Tram 28 is a pickpocket favourite; keep your bag in front or ride early in the morning.",
+      "Buy a timed Pena Palace ticket online; summer weekends are very crowded."
+     ],
+     "mapsQuery": "Lisbon, Portugal"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Algarve (Lagos & Golden Cliffs)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Ponta da Piedade cliffs",
+      "Benagil Cave (by boat or kayak)",
+      "Praia da Marinha",
+      "Sagres & Cape St. Vincent"
+     ],
+     "activities": [
+      "Explore the Ponta da Piedade grottoes on a kayak tour from Lagos.",
+      "Hike the Seven Hanging Valleys trail.",
+      "Watch the sunset at Sagres or take a surf lesson."
+     ],
+     "foodAndDrinks": [
+      "Cataplana de marisco (seafood stew in a copper pan)",
+      "Sardinhas assadas (charcoal-grilled sardines)",
+      "Bola de Berlim (custard-filled doughnut, a beach classic)"
+     ],
+     "criticalTips": [
+      "Landing on Benagil beach from boats is banned; see the cave only from the water on licensed tours.",
+      "The Atlantic stays cool even in summer (~19–21 °C); keep away from cliff edges."
+     ],
+     "mapsQuery": "Lagos, Portugal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bacalhau à Brás (salt cod with shoestring potatoes and egg)",
+     "Sardinhas assadas (charcoal-grilled sardines)",
+     "Francesinha (Porto’s sauce-drenched meat sandwich)"
+    ],
+    "drinks": [
+     "Port wine (Douro Valley)",
+     "Vinho Verde (light, young wine)",
+     "Ginjinha (sour-cherry liqueur)"
+    ],
+    "streetFoods": [
+     "Pastel de nata (custard tart)",
+     "Bifana (marinated pork sandwich)",
+     "Bola de Berlim (custard-filled doughnut, a beach classic)"
+    ],
+    "diningAdvice": "At lunch, the ‘prato do dia’ (dish of the day) is great value. The couvert brought to the table is charged; send it back if you don’t want it. Fish and seafood are a good choice if you avoid pork."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Comfortable non-slip shoes (polished ‘calçada’ cobbles are slippery)",
+     "Type C/F sockets (European two-pin plugs)",
+     "A windbreaker or light jacket (Atlantic breezes cool the evenings)",
+     "High-SPF sunscreen and a hat"
+    ],
+    "safetyAndEtiquette": [
+     "Ignore street drug offers and keep walking.",
+     "Don’t take selfies at cliff edges; the ground can give way suddenly."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Typ C, F (230V, 50Hz)",
+   "bestMonths": "April – Juni und September – Oktober (mild, ruhiger); Juni – September für die Strände der Algarve",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Eines der sichersten Länder Europas mit wenig Gewaltkriminalität. Hauptrisiko sind Taschendiebe in Lissabons Tram 28, in Baixa und Bairro Alto sowie im Zentrum von Porto.",
+    "commonScams": [
+     "Straßenverkäufer in Baixa und Bairro Alto, die Touristen gefälschte Drogen anbieten",
+     "Unbestelltes Brot, Oliven und Käse (Couvert), die dann berechnet werden",
+     "Unabhängige Automaten (z. B. Euronet) mit hohen Gebühren und Währungsumrechnung"
+    ],
+    "safeTravelTips": [
+     "Geldautomaten mit ‘Multibanco’-Logo nutzen und immer in EUR abrechnen.",
+     "Unerwünschtes Couvert höflich zurückgeben; unberührt wird es nicht berechnet.",
+     "Atlantikwellen und Strömungen sind stark; nur an bewachten Stränden baden und Flaggen beachten."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % Bevölkerungsabdeckung (breites 4G/5G)",
+    "costPerGbUsd": "~0.80 - 2.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut (Metros in Lissabon und Porto, CP-Züge, Fernbusse)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1.80 - 2.20 $ (Lisboa)",
+    "dailyPassUsd": "7.50 - 8.50 $ (Lisboa, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "FREE NOW",
+     "Navegante",
+     "CP – Comboios de Portugal",
+     "Rede Expressos"
+    ],
+    "taxiAdvice": "Uber und Bolt sind verbreitet und günstig. In Lissabon die aufladbare Navegante-/Viva-Viagem-Karte mit ‘Zapping’-Guthaben nutzen; Lissabon – Porto dauert mit dem Alfa Pendular etwa 3 Stunden."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "1.00 - 2.00 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Moderat (Istanbul – Lissabon direkt ~4,5 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Lissabon und Porto; ein Gabelflug (hin nach Lissabon, zurück ab Porto) vereinfacht die Route. Faro (Algarve) ist im Sommer teurer."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Portugiesen schätzen es, auf Englisch oder mit ein paar Worten Portugiesisch statt Spanisch angesprochen zu werden.",
+     "Bekannte begrüßen sich mit zwei Wangenküssen, förmlich per Handschlag.",
+     "Gegessen wird spät und lange: mittags 12:30–15 Uhr, abends ab 19:30 Uhr.",
+     "Während des Fado wird geschwiegen – Stille ist ein Zeichen von Respekt."
+    ],
+    "festivals": [
+     "Fest des Santo António (Juni, Lissabon – Sardinen und Straßenfeste)",
+     "São-João-Fest (23.–24. Juni, Porto)",
+     "Wallfahrten nach Fátima (13. Mai und 13. Oktober)"
+    ],
+    "lifestyle": "Ruhiges, gastfreundliches Lebenstempo, Kaffeepausen (Bica), Meeresfrüchte, Fado und Surfkultur."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lissabon: Torre de Belém & Hieronymus-Kloster",
+     "Lissabon: Alfama & Castelo de São Jorge",
+     "Sintra: Pena-Palast & Quinta da Regaleira",
+     "Porto: Ribeira & Ponte Dom Luís I",
+     "Weinberge im Douro-Tal",
+     "Algarve: Ponta da Piedade & Benagil-Höhle"
+    ],
+    "bestSeasons": "Frühling und Herbst für Städtereisen; Sommer für die Algarve; der Winter ist mild und günstig",
+    "travelStyleTip": "Mit dem Zug von Porto nach Lissabon fahren und an der Algarve enden, wo ein Mietwagen das Erkunden der Küstenorte erleichtert."
+   },
+   "religion": {
+    "primaryReligions": "Römisch-katholisch ~80 %, konfessionslos ~14 %, andere Christen ~3 %; kleine muslimische und jüdische Gemeinden.",
+    "respectNorms": "In Kirchen Schultern und Knie bedecken; in Fátima den Weg der kniend pilgernden Gläubigen nicht versperren.",
+    "sacredSites": [
+     "Heiligtum von Fátima",
+     "Hieronymus-Kloster (Lissabon)",
+     "Bom Jesus do Monte (Braga)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portugiesisch (im Nordosten regional auch Mirandés)",
+    "englishProficiency": "Sehr gut; in Touristengebieten und bei Jüngeren ist Englisch verbreitet.",
+    "phrases": [
+     {
+      "phrase": "Olá / Bom dia",
+      "meaning": "Hallo / Guten Morgen",
+      "translation": "Hallo",
+      "pronunciation": "o-LA / bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Danke (vom Mann / von der Frau gesagt)",
+      "translation": "Danke",
+      "pronunciation": "o-bree-GA-doo / o-bree-GA-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "poor fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Rechnung, bitte",
+      "pronunciation": "a KON-ta poor fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Portugal wurde 1143 ein unabhängiges Königreich und führte im 15. und 16. Jahrhundert das Zeitalter der Entdeckungen an; Vasco da Gama öffnete 1498 den Seeweg nach Indien. Das Erdbeben von 1755 zerstörte Lissabon, 1910 wurde die Republik ausgerufen. Nach der Nelkenrevolution 1974 wurde das Land demokratisch und trat 1986 der Europäischen Gemeinschaft bei.",
+    "milestones": [
+     "1143: Anerkennung des Königreichs Portugal",
+     "1498: Vasco da Gama erreicht Indien",
+     "1755: Großes Erdbeben von Lissabon",
+     "1974: Nelkenrevolution; 1986: Beitritt zur EG"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bacalhau à Brás (Stockfisch mit Kartoffelstroh und Ei)",
+     "Sardinhas assadas (gegrillte Sardinen)",
+     "Francesinha (Portos Fleischsandwich mit Soße)"
+    ],
+    "traditionalDrinks": [
+     "Portwein (Douro-Tal)",
+     "Vinho Verde (leichter, junger Wein)",
+     "Ginjinha (Sauerkirschlikör)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel de nata (Puddingtörtchen)",
+     "Bifana (Schweinefleischbrötchen)",
+     "Bola de Berlim (Krapfen mit Creme, Strandklassiker)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Vasco da Gama (Seefahrer)",
+     "Fernando Pessoa (Dichter)",
+     "Cristiano Ronaldo (Fußballer)"
+    ],
+    "strongSectors": [
+     "Tourismus",
+     "Erneuerbare Energien (Wind und Solar)",
+     "Kork (größter Produzent der Welt), Wein, Schuhe und Textilien"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten sind verbreitet, kleine Cafés und Tascas verlangen aber teils Bargeld oder eine Multibanco-Karte; Einheimische nutzen MB WAY.",
+    "tippingCulture": "Trinkgeld ist freiwillig; 5–10 % oder Aufrunden reicht im Restaurant.",
+    "economicPillars": "Tourismus, Dienstleistungen, erneuerbare Energien, Auto- und Textilexporte, Landwirtschaft (Wein, Olivenöl, Kork)."
+   }
+  },
+  "itin": {
+   "routeName": "Portugal von Nord nach Süd: Porto, Coimbra, Lissabon & Algarve",
+   "routeSummary": "Eine 8-tägige Route von Portos Weinkellern am Douro über die Universitätsstadt Coimbra, Lissabons Hügel und Sintras Paläste bis zu den goldenen Klippen der Algarve.",
+   "totalDays": 8,
+   "idealDurationText": "8 Tage",
+   "bestSeason": "April – Juni, September – Oktober",
+   "transportMode": "CP-Züge (Alfa Pendular / Intercidades), Metro und Tram in Lissabon und Porto; an der Algarve Mietwagen oder Bus",
+   "paceLevel": "Ausgewogen (Stadt + Kultur + Strand)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Porto (Ribeira & Portweinkeller)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Ribeira & Ponte Dom Luís I",
+      "Azulejos im Bahnhof São Bento",
+      "Livraria Lello & Torre dos Clérigos",
+      "Portweinkellereien in Vila Nova de Gaia"
+     ],
+     "activities": [
+      "Den Sonnenuntergang vom Oberdeck der Ponte Dom Luís I ansehen.",
+      "Eine ‘Sechs-Brücken’-Bootsfahrt auf dem Douro machen.",
+      "Optional einen Tagesausflug ins Douro-Tal machen."
+     ],
+     "foodAndDrinks": [
+      "Francesinha (Portos Fleischsandwich mit Soße)",
+      "Portwein (Douro-Tal)",
+      "Tripas à moda do Porto (Kuttelneintopf)"
+     ],
+     "criticalTips": [
+      "Für die Livraria Lello braucht man ein Ticket; Zeitfenster online buchen.",
+      "Die Stadt ist sehr hügelig; bequeme Schuhe tragen und die Standseilbahn Guindais nutzen."
+     ],
+     "mapsQuery": "Porto, Portugal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Coimbra (historische Universitätsstadt)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Universität Coimbra & Biblioteca Joanina (UNESCO)",
+      "Alte Kathedrale (Sé Velha)",
+      "Kloster Santa Cruz"
+     ],
+     "activities": [
+      "Abends Coimbra-Fado hören (von Männern gesungen, studentische Tradition).",
+      "In den Parks am Mondego spazieren.",
+      "Durch enge mittelalterliche Gassen zum Universitätshügel steigen."
+     ],
+     "foodAndDrinks": [
+      "Chanfana (in Rotwein geschmortes Ziegenfleisch)",
+      "Pastéis de Santa Clara (Mandelgebäck)"
+     ],
+     "criticalTips": [
+      "Die Biblioteca Joanina hat Zeitfenster; Tickets früh holen.",
+      "Liegt an der Bahnstrecke Porto – Lissabon; Gepäck am Bahnhof lassen und den Tag nutzen."
+     ],
+     "mapsQuery": "Coimbra, Portugal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Lissabon & Sintra",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Belém: Hieronymus-Kloster & Torre de Belém",
+      "Alfama, Castelo de São Jorge & Tram 28",
+      "Aussichtspunkte (Senhora do Monte, Santa Luzia)",
+      "Sintra: Pena-Palast & Quinta da Regaleira"
+     ],
+     "activities": [
+      "In einem Fado-Lokal in der Alfama zu Abend essen.",
+      "Mit dem Zug ab Rossio nach Sintra und weiter zum Cabo da Roca.",
+      "LX Factory und Time Out Market erkunden."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata (Puddingtörtchen)",
+      "Bacalhau à Brás (Stockfisch mit Kartoffelstroh und Ei)",
+      "Ginjinha (Sauerkirschlikör)"
+     ],
+     "criticalTips": [
+      "Die Tram 28 ist bei Taschendieben beliebt; Tasche vorne tragen oder früh morgens fahren.",
+      "Für den Pena-Palast ein Zeitfenster-Ticket online kaufen; Sommerwochenenden sind voll."
+     ],
+     "mapsQuery": "Lisbon, Portugal"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Algarve (Lagos & goldene Klippen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Felsküste Ponta da Piedade",
+      "Benagil-Höhle (per Boot oder Kajak)",
+      "Praia da Marinha",
+      "Sagres & Cabo de São Vicente"
+     ],
+     "activities": [
+      "Die Grotten der Ponta da Piedade per Kajak ab Lagos erkunden.",
+      "Den Wanderweg der Sieben Hängenden Täler gehen.",
+      "In Sagres den Sonnenuntergang erleben oder einen Surfkurs machen."
+     ],
+     "foodAndDrinks": [
+      "Cataplana de marisco (Meeresfrüchte im Kupfertopf)",
+      "Sardinhas assadas (gegrillte Sardinen)",
+      "Bola de Berlim (Krapfen mit Creme, Strandklassiker)"
+     ],
+     "criticalTips": [
+      "Das Anlanden am Strand von Benagil ist verboten; die Höhle nur vom Wasser aus mit lizenzierten Touren sehen.",
+      "Der Atlantik bleibt auch im Sommer kühl (~19–21 °C); Abstand zu Klippenrändern halten."
+     ],
+     "mapsQuery": "Lagos, Portugal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bacalhau à Brás (Stockfisch mit Kartoffelstroh und Ei)",
+     "Sardinhas assadas (gegrillte Sardinen)",
+     "Francesinha (Portos Fleischsandwich mit Soße)"
+    ],
+    "drinks": [
+     "Portwein (Douro-Tal)",
+     "Vinho Verde (leichter, junger Wein)",
+     "Ginjinha (Sauerkirschlikör)"
+    ],
+    "streetFoods": [
+     "Pastel de nata (Puddingtörtchen)",
+     "Bifana (Schweinefleischbrötchen)",
+     "Bola de Berlim (Krapfen mit Creme, Strandklassiker)"
+    ],
+    "diningAdvice": "Mittags ist das ‘prato do dia’ (Tagesgericht) sehr günstig. Das Couvert wird berechnet – zurückgeben, wenn unerwünscht. Fisch und Meeresfrüchte sind eine gute Wahl, wenn man kein Schwein isst."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rutschfeste, bequeme Schuhe (die glatte ‘Calçada’ ist rutschig)",
+     "Steckdosen Typ C/F (Eurostecker)",
+     "Windjacke oder leichte Jacke (abends kühlt der Atlantikwind)",
+     "Sonnencreme mit hohem LSF und Hut"
+    ],
+    "safetyAndEtiquette": [
+     "Drogenangebote auf der Straße ignorieren und weitergehen.",
+     "Keine Selfies an Klippenrändern; der Boden kann nachgeben."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Abril – junio y septiembre – octubre (templado y más tranquilo); junio – septiembre para las playas del Algarve",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Uno de los países más seguros de Europa, con poca delincuencia violenta. El principal riesgo son los carteristas en el tranvía 28 de Lisboa, Baixa, Bairro Alto y el centro de Oporto.",
+    "commonScams": [
+     "Vendedores callejeros en Baixa y Bairro Alto que ofrecen drogas falsas a turistas",
+     "Pan, aceitunas y queso (couvert) que se sirven sin pedir y luego se cobran",
+     "Cajeros independientes (p. ej. Euronet) con comisiones altas y conversión de divisa"
+    ],
+    "safeTravelTips": [
+     "Use cajeros bancarios con el logotipo ‘Multibanco’ y elija siempre pagar en EUR.",
+     "Devuelva con cortesía el couvert que no quiera; si no lo toca, no se cobra.",
+     "Las olas y corrientes del Atlántico son fuertes; báñese solo en playas vigiladas y respete las banderas."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura (4G/5G extendido)",
+    "costPerGbUsd": "~0.80 - 2.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno (metros de Lisboa y Oporto, trenes de CP, autobuses interurbanos)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.80 - 2.20 $ (Lisboa)",
+    "dailyPassUsd": "7.50 - 8.50 $ (Lisboa, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "FREE NOW",
+     "Navegante",
+     "CP – Comboios de Portugal",
+     "Rede Expressos"
+    ],
+    "taxiAdvice": "Uber y Bolt están muy extendidos y son asequibles. En Lisboa use la tarjeta recargable Navegante/Viva Viagem con saldo ‘zapping’; Lisboa – Oporto son unas 3 horas en el Alfa Pendular."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "1.00 - 2.00 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Moderado (Estambul – Lisboa directo ~4,5 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Lisboa y Oporto; un billete multidestino (llegada a Lisboa, salida de Oporto) facilita la ruta. Faro (Algarve) se encarece en verano."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los portugueses agradecen que se les hable en inglés o con algunas palabras en portugués, en lugar de español.",
+     "Entre conocidos se dan dos besos; en contextos formales, apretón de manos.",
+     "Las comidas son tardías y largas: almuerzo 12:30–15:00, cena después de las 19:30.",
+     "Durante el fado se guarda silencio; es una muestra de respeto."
+    ],
+    "festivals": [
+     "Fiestas de San Antonio (junio, Lisboa – sardinas y verbenas)",
+     "Fiesta de San Juan (23–24 de junio, Oporto)",
+     "Peregrinaciones a Fátima (13 de mayo y 13 de octubre)"
+    ],
+    "lifestyle": "Ritmo de vida tranquilo y hospitalario, pausas para el café (bica), mariscadas, fado y cultura surfista."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lisboa: Torre de Belém y Monasterio de los Jerónimos",
+     "Lisboa: Alfama y Castillo de San Jorge",
+     "Sintra: Palacio da Pena y Quinta da Regaleira",
+     "Oporto: Ribeira y Puente Don Luis I",
+     "Viñedos del valle del Duero",
+     "Algarve: Ponta da Piedade y cueva de Benagil"
+    ],
+    "bestSeasons": "Primavera y otoño para escapadas urbanas; verano para el Algarve; el invierno es suave y barato",
+    "travelStyleTip": "Baje en tren de Oporto a Lisboa y termine en el Algarve, donde alquilar coche facilita recorrer los pueblos costeros."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~80 %, sin religión ~14 %, otros cristianos ~3 %; pequeñas comunidades musulmana y judía.",
+    "respectNorms": "Cubra hombros y rodillas en las iglesias; en Fátima no obstaculice el camino de los peregrinos que avanzan de rodillas.",
+    "sacredSites": [
+     "Santuario de Fátima",
+     "Monasterio de los Jerónimos (Lisboa)",
+     "Bom Jesus do Monte (Braga)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portugués (en el noreste se reconoce también el mirandés)",
+    "englishProficiency": "Muy bueno; el inglés está muy extendido en zonas turísticas y entre jóvenes.",
+    "phrases": [
+     {
+      "phrase": "Olá / Bom dia",
+      "meaning": "Hola / Buenos días",
+      "translation": "Hola",
+      "pronunciation": "o-LA / bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Gracias (dicho por hombre / mujer)",
+      "translation": "Gracias",
+      "pronunciation": "o-bree-GA-doo / o-bree-GA-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "poor fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta",
+      "pronunciation": "a KON-ta poor fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Portugal se convirtió en reino independiente en 1143 y lideró la Era de los Descubrimientos en los siglos XV y XVI; Vasco da Gama abrió la ruta marítima a la India en 1498. El terremoto de 1755 destruyó Lisboa y en 1910 se proclamó la república. Tras la Revolución de los Claveles (1974), llegó la democracia y en 1986 entró en la Comunidad Europea.",
+    "milestones": [
+     "1143: Reconocimiento del Reino de Portugal",
+     "1498: Vasco da Gama llega a la India",
+     "1755: Gran terremoto de Lisboa",
+     "1974: Revolución de los Claveles; 1986: ingreso en la CEE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bacalhau à Brás (bacalao con patatas paja y huevo)",
+     "Sardinhas assadas (sardinas a la brasa)",
+     "Francesinha (sándwich de carne con salsa de Oporto)"
+    ],
+    "traditionalDrinks": [
+     "Vino de Oporto (valle del Duero)",
+     "Vinho Verde (vino joven y ligero)",
+     "Ginjinha (licor de guinda)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel de nata (pastelito de crema)",
+     "Bifana (bocadillo de cerdo marinado)",
+     "Bola de Berlim (bola rellena de crema, clásico de playa)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Vasco da Gama (navegante)",
+     "Fernando Pessoa (poeta)",
+     "Cristiano Ronaldo (futbolista)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Energías renovables (eólica y solar)",
+     "Corcho (mayor productor mundial), vino, calzado y textil"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas son comunes, pero cafés pequeños y tascas pueden pedir efectivo o tarjeta Multibanco; los locales usan MB WAY.",
+    "tippingCulture": "La propina no es obligatoria; basta con un 5–10 % o redondear.",
+    "economicPillars": "Turismo, servicios, energías renovables, exportaciones de automoción y textil, agricultura (vino, aceite, corcho)."
+   }
+  },
+  "itin": {
+   "routeName": "Portugal de norte a sur: Oporto, Coímbra, Lisboa y el Algarve",
+   "routeSummary": "Ruta de 8 días desde las bodegas de Oporto junto al Duero a la ciudad universitaria de Coímbra, las colinas de Lisboa y los palacios de Sintra, hasta los acantilados dorados del Algarve.",
+   "totalDays": 8,
+   "idealDurationText": "8 días",
+   "bestSeason": "Abril – junio, septiembre – octubre",
+   "transportMode": "Trenes de CP (Alfa Pendular / Intercidades), metro y tranvía en Lisboa y Oporto; coche de alquiler o autobús en el Algarve",
+   "paceLevel": "Equilibrado (ciudad + cultura + playa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Oporto (Ribeira y bodegas de vino de Oporto)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Ribeira y Puente Don Luis I",
+      "Azulejos de la estación de São Bento",
+      "Librería Lello y Torre de los Clérigos",
+      "Bodegas de vino de Oporto en Vila Nova de Gaia"
+     ],
+     "activities": [
+      "Vea el atardecer desde el tablero superior del Puente Don Luis I.",
+      "Haga el crucero de los ‘seis puentes’ por el Duero.",
+      "Opcionalmente, excursión de un día a los viñedos del Duero."
+     ],
+     "foodAndDrinks": [
+      "Francesinha (sándwich de carne con salsa de Oporto)",
+      "Vino de Oporto (valle del Duero)",
+      "Tripas à moda do Porto (guiso de callos)"
+     ],
+     "criticalTips": [
+      "La Librería Lello requiere entrada; reserve horario por internet.",
+      "La ciudad es muy empinada; lleve calzado cómodo y use el funicular dos Guindais."
+     ],
+     "mapsQuery": "Porto, Portugal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Coímbra (ciudad universitaria histórica)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Universidad de Coímbra y Biblioteca Joanina (UNESCO)",
+      "Catedral Vieja (Sé Velha)",
+      "Monasterio de Santa Cruz"
+     ],
+     "activities": [
+      "Escuche por la noche el fado de Coímbra (cantado por hombres, tradición estudiantil).",
+      "Pasee por los parques junto al río Mondego.",
+      "Suba por callejuelas medievales hasta la colina de la universidad."
+     ],
+     "foodAndDrinks": [
+      "Chanfana (cabra guisada en vino tinto)",
+      "Pastéis de Santa Clara (pasteles de almendra)"
+     ],
+     "criticalTips": [
+      "La Biblioteca Joanina tiene entrada con horario; compre pronto.",
+      "Está en la línea Oporto – Lisboa; deje el equipaje en la estación y aproveche el día."
+     ],
+     "mapsQuery": "Coimbra, Portugal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Lisboa y Sintra",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Belém: Monasterio de los Jerónimos y Torre de Belém",
+      "Alfama, Castillo de San Jorge y tranvía 28",
+      "Miradores (Senhora do Monte, Santa Luzia)",
+      "Sintra: Palacio da Pena y Quinta da Regaleira"
+     ],
+     "activities": [
+      "Cene en una casa de fado de Alfama.",
+      "Excursión en tren a Sintra desde Rossio y siga hasta el Cabo da Roca.",
+      "Descubra LX Factory y el Time Out Market."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata (pastelito de crema)",
+      "Bacalhau à Brás (bacalao con patatas paja y huevo)",
+      "Ginjinha (licor de guinda)"
+     ],
+     "criticalTips": [
+      "El tranvía 28 es el favorito de los carteristas; lleve la bolsa delante o súbase temprano.",
+      "Compre por internet la entrada con horario al Palacio da Pena; los fines de semana de verano hay mucha gente."
+     ],
+     "mapsQuery": "Lisbon, Portugal"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Algarve (Lagos y acantilados dorados)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Acantilados de Ponta da Piedade",
+      "Cueva de Benagil (en barco o kayak)",
+      "Praia da Marinha",
+      "Sagres y cabo de San Vicente"
+     ],
+     "activities": [
+      "Explore las grutas de Ponta da Piedade en kayak desde Lagos.",
+      "Recorra el sendero de los Siete Valles Colgantes.",
+      "Vea el atardecer en Sagres o tome una clase de surf."
+     ],
+     "foodAndDrinks": [
+      "Cataplana de marisco (guiso de marisco en olla de cobre)",
+      "Sardinhas assadas (sardinas a la brasa)",
+      "Bola de Berlim (bola rellena de crema, clásico de playa)"
+     ],
+     "criticalTips": [
+      "Está prohibido desembarcar en la playa de Benagil; vea la cueva solo desde el agua con tours autorizados.",
+      "El Atlántico está fresco incluso en verano (~19–21 °C); no se acerque al borde de los acantilados."
+     ],
+     "mapsQuery": "Lagos, Portugal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bacalhau à Brás (bacalao con patatas paja y huevo)",
+     "Sardinhas assadas (sardinas a la brasa)",
+     "Francesinha (sándwich de carne con salsa de Oporto)"
+    ],
+    "drinks": [
+     "Vino de Oporto (valle del Duero)",
+     "Vinho Verde (vino joven y ligero)",
+     "Ginjinha (licor de guinda)"
+    ],
+    "streetFoods": [
+     "Pastel de nata (pastelito de crema)",
+     "Bifana (bocadillo de cerdo marinado)",
+     "Bola de Berlim (bola rellena de crema, clásico de playa)"
+    ],
+    "diningAdvice": "Al mediodía el ‘prato do dia’ (plato del día) es muy económico. El couvert se cobra; devuélvalo si no lo quiere. El pescado y el marisco son buena opción si evita el cerdo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calzado cómodo antideslizante (la ‘calçada’ pulida resbala)",
+     "Enchufes tipo C/F (clavija europea)",
+     "Cortavientos o chaqueta ligera (la brisa atlántica refresca por la noche)",
+     "Protector solar alto y sombrero"
+    ],
+    "safetyAndEtiquette": [
+     "Ignore las ofertas de drogas en la calle y siga caminando.",
+     "No se haga selfis al borde de los acantilados; el terreno puede ceder."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "plugType": "Тип C, F (230V, 50 Гц)",
+   "bestMonths": "Апрель – июнь и сентябрь – октябрь (тепло, меньше людей); июнь – сентябрь — пляжи Алгарве",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Одна из самых безопасных стран Европы. Главный риск — карманники в лиссабонском трамвае №28, в Байше, Байру-Алту и в центре Порту.",
+    "commonScams": [
+     "Уличные торговцы в Байше и Байру-Алту, предлагающие туристам поддельные наркотики",
+     "Хлеб, оливки и сыр (couvert), которые приносят без заказа и включают в счёт",
+     "Независимые банкоматы (например, Euronet) с высокими комиссиями и конвертацией"
+    ],
+    "safeTravelTips": [
+     "Пользуйтесь банкоматами с логотипом «Multibanco» и всегда выбирайте оплату в евро.",
+     "Вежливо верните ненужный куверт: если к нему не притронуться, его не посчитают.",
+     "Атлантические волны и течения сильны: купайтесь только на пляжах со спасателями и соблюдайте флаги."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Покрытие 99% населения (широкий 4G/5G)",
+    "costPerGbUsd": "~0.80 - 2.50 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошее (метро Лиссабона и Порту, поезда CP, междугородние автобусы)",
+    "costLevel": "Средне",
+    "singleTicketUsd": "1.80 - 2.20 $ (Lisboa)",
+    "dailyPassUsd": "7.50 - 8.50 $ (Lisboa, 24h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "FREE NOW",
+     "Navegante",
+     "CP – Comboios de Portugal",
+     "Rede Expressos"
+    ],
+    "taxiAdvice": "Uber и Bolt распространены и недороги. В Лиссабоне пользуйтесь пополняемой картой Navegante/Viva Viagem с балансом «zapping»; Лиссабон – Порту — около 3 часов на поезде Alfa Pendular."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 75 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "1.00 - 2.00 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "22 - 40 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Умеренная (Стамбул – Лиссабон прямой рейс ~4,5 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Лиссабон и Порту; билет «прилёт в Лиссабон – вылет из Порту» упрощает маршрут. Летом рейсы в Фару (Алгарве) дорожают."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Португальцы ценят, когда к ним обращаются по-английски или по-португальски, а не по-испански.",
+     "Знакомые приветствуют друг друга двумя поцелуями в щёку, официально — рукопожатием.",
+     "Едят поздно и долго: обед 12:30–15:00, ужин после 19:30.",
+     "Во время исполнения фаду молчат — это знак уважения."
+    ],
+    "festivals": [
+     "Праздник Святого Антония (июнь, Лиссабон — сардины и уличные гуляния)",
+     "Праздник Святого Жуана (23–24 июня, Порту)",
+     "Паломничества в Фатиму (13 мая и 13 октября)"
+    ],
+    "lifestyle": "Неспешный гостеприимный ритм жизни, кофе-брейки (бика), морепродукты, фаду и сёрф-культура."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Лиссабон: Башня Белен и монастырь Жеронимуш",
+     "Лиссабон: Алфама и замок Святого Георгия",
+     "Синтра: дворец Пена и Кинта-да-Регалейра",
+     "Порту: Рибейра и мост Дона Луиша I",
+     "Виноградники долины Дору",
+     "Алгарве: Понта-да-Пьедаде и пещера Бенажил"
+    ],
+    "bestSeasons": "Весна и осень — для городов; лето — для пляжей Алгарве; зима мягкая и недорогая",
+    "travelStyleTip": "Спуститесь поездом из Порту в Лиссабон и закончите в Алгарве — там удобно арендовать машину для поездок по побережью."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~80%, неверующие ~14%, другие христиане ~3%; небольшие мусульманская и еврейская общины.",
+    "respectNorms": "В храмах прикрывайте плечи и колени; в Фатиме не преграждайте путь паломникам, идущим на коленях.",
+    "sacredSites": [
+     "Святилище Фатимы",
+     "Монастырь Жеронимуш (Лиссабон)",
+     "Бон-Жезуш-ду-Монте (Брага)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Португальский (на северо-востоке также признан мирандский)",
+    "englishProficiency": "Очень хороший; в туристических районах и среди молодёжи английский распространён.",
+    "phrases": [
+     {
+      "phrase": "Olá / Bom dia",
+      "meaning": "Привет / Доброе утро",
+      "translation": "Здравствуйте",
+      "pronunciation": "o-LA / bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Спасибо (говорит мужчина / женщина)",
+      "translation": "Спасибо",
+      "pronunciation": "o-bree-GA-doo / o-bree-GA-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "poor fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "a KON-ta poor fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Португалия стала независимым королевством в 1143 году и возглавила эпоху Великих географических открытий в XV–XVI веках; в 1498 году Васко да Гама открыл морской путь в Индию. Землетрясение 1755 года разрушило Лиссабон, в 1910 году провозглашена республика. После «революции гвоздик» 1974 года страна перешла к демократии и в 1986 году вступила в Европейское сообщество.",
+    "milestones": [
+     "1143: признание Португальского королевства",
+     "1498: Васко да Гама достигает Индии",
+     "1755: Великое Лиссабонское землетрясение",
+     "1974: «революция гвоздик»; 1986: вступление в ЕЭС"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Бакаляу а Браш (треска с картофелем соломкой и яйцом)",
+     "Сардиньяш ассадаш (сардины на углях)",
+     "Франсезинья (сэндвич с мясом под соусом из Порту)"
+    ],
+    "traditionalDrinks": [
+     "Портвейн (долина Дору)",
+     "Виньо-верде («зелёное» молодое вино)",
+     "Жинжинья (вишнёвый ликёр)"
+    ],
+    "streetFoodAndDesserts": [
+     "Паштел-де-ната (пирожное с заварным кремом)",
+     "Бифана (булочка со свининой)",
+     "Бола-де-Берлинь (пончик с кремом, классика пляжей)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Васко да Гама (мореплаватель)",
+     "Фернанду Пессоа (поэт)",
+     "Криштиану Роналду (футболист)"
+    ],
+    "strongSectors": [
+     "Туризм",
+     "Возобновляемая энергетика (ветер и солнце)",
+     "Пробка (крупнейший производитель в мире), вино, обувь и текстиль"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты распространены, но небольшие кафе и таверны могут попросить наличные или местную карту Multibanco; местные пользуются MB WAY.",
+    "tippingCulture": "Чаевые не обязательны; в ресторанах достаточно 5–10% или округлить счёт.",
+    "economicPillars": "Туризм, услуги, возобновляемая энергетика, экспорт автомобилей и текстиля, сельское хозяйство (вино, оливковое масло, пробка)."
+   }
+  },
+  "itin": {
+   "routeName": "Португалия с севера на юг: Порту, Коимбра, Лиссабон и Алгарве",
+   "routeSummary": "8-дневный маршрут: от винных погребов Порту на Дору к университетской Коимбре, холмам Лиссабона и дворцам Синтры — до золотых скал Алгарве.",
+   "totalDays": 8,
+   "idealDurationText": "8 дней",
+   "bestSeason": "Апрель – июнь, сентябрь – октябрь",
+   "transportMode": "Поезда CP (Alfa Pendular / Intercidades), метро и трамваи в Лиссабоне и Порту; в Алгарве — прокат авто или автобус",
+   "paceLevel": "Сбалансированный (город + культура + пляж)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Порту (Рибейра и погреба портвейна)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Рибейра и мост Дона Луиша I",
+      "Азулежу на вокзале Сан-Бенту",
+      "Книжный магазин Lello и башня Клеригуш",
+      "Погреба портвейна в Вила-Нова-ди-Гая"
+     ],
+     "activities": [
+      "Встретьте закат на верхнем ярусе моста Дона Луиша I.",
+      "Совершите круиз «Шесть мостов» по Дору.",
+      "По желанию съездите на день в долину Дору."
+     ],
+     "foodAndDrinks": [
+      "Франсезинья (сэндвич с мясом под соусом из Порту)",
+      "Портвейн (долина Дору)",
+      "Трипаш по-портуенсски (рагу из рубца)"
+     ],
+     "criticalTips": [
+      "Вход в Lello платный — бронируйте сеанс онлайн.",
+      "Город очень холмистый: удобная обувь и фуникулёр Гиндайш вам помогут."
+     ],
+     "mapsQuery": "Porto, Portugal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Коимбра (исторический университетский город)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Коимбрский университет и библиотека Жуанина (ЮНЕСКО)",
+      "Старый собор (Се-Велья)",
+      "Монастырь Санта-Круш"
+     ],
+     "activities": [
+      "Вечером послушайте коимбрское фаду (исполняют мужчины, студенческая традиция).",
+      "Прогуляйтесь по паркам у реки Мондегу.",
+      "Поднимитесь по узким средневековым улочкам к университетскому холму."
+     ],
+     "foodAndDrinks": [
+      "Шанфана (козлятина, тушённая в красном вине)",
+      "Паштейш-де-Санта-Клара (миндальная выпечка)"
+     ],
+     "criticalTips": [
+      "В библиотеку Жуанина пускают по времени — покупайте билеты заранее.",
+      "Город на линии Порту – Лиссабон: оставьте багаж на вокзале и проведите здесь день."
+     ],
+     "mapsQuery": "Coimbra, Portugal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Лиссабон и Синтра",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Белен: монастырь Жеронимуш и Башня Белен",
+      "Алфама, замок Святого Георгия и трамвай №28",
+      "Смотровые площадки (Сеньора-ду-Монте, Санта-Лузия)",
+      "Синтра: дворец Пена и Кинта-да-Регалейра"
+     ],
+     "activities": [
+      "Поужинайте в доме фаду в Алфаме.",
+      "Съездите на поезде с вокзала Росиу в Синтру и доберитесь до мыса Рока.",
+      "Загляните в LX Factory и Time Out Market."
+     ],
+     "foodAndDrinks": [
+      "Паштел-де-ната (пирожное с заварным кремом)",
+      "Бакаляу а Браш (треска с картофелем соломкой и яйцом)",
+      "Жинжинья (вишнёвый ликёр)"
+     ],
+     "criticalTips": [
+      "Трамвай №28 любят карманники: держите сумку перед собой или езжайте рано утром.",
+      "Покупайте билет во дворец Пена с указанием времени онлайн; летом по выходным многолюдно."
+     ],
+     "mapsQuery": "Lisbon, Portugal"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Алгарве (Лагуш и золотые скалы)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Скалы Понта-да-Пьедаде",
+      "Пещера Бенажил (на лодке или каяке)",
+      "Пляж Прайя-да-Маринья",
+      "Сагреш и мыс Сан-Висенте"
+     ],
+     "activities": [
+      "Исследуйте гроты Понта-да-Пьедаде на каяке из Лагуша.",
+      "Пройдите тропу Семи висячих долин.",
+      "Встретьте закат в Сагреше или возьмите урок сёрфинга."
+     ],
+     "foodAndDrinks": [
+      "Катаплана с морепродуктами (рагу в медной посуде)",
+      "Сардиньяш ассадаш (сардины на углях)",
+      "Бола-де-Берлинь (пончик с кремом, классика пляжей)"
+     ],
+     "criticalTips": [
+      "Высаживаться на пляж Бенажил с лодок запрещено — смотрите пещеру только с воды на лицензированных турах.",
+      "Атлантика прохладная даже летом (~19–21 °C); не подходите к краю скал."
+     ],
+     "mapsQuery": "Lagos, Portugal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Бакаляу а Браш (треска с картофелем соломкой и яйцом)",
+     "Сардиньяш ассадаш (сардины на углях)",
+     "Франсезинья (сэндвич с мясом под соусом из Порту)"
+    ],
+    "drinks": [
+     "Портвейн (долина Дору)",
+     "Виньо-верде («зелёное» молодое вино)",
+     "Жинжинья (вишнёвый ликёр)"
+    ],
+    "streetFoods": [
+     "Паштел-де-ната (пирожное с заварным кремом)",
+     "Бифана (булочка со свининой)",
+     "Бола-де-Берлинь (пончик с кремом, классика пляжей)"
+    ],
+    "diningAdvice": "В обед выгодно «prato do dia» (блюдо дня). Куверт платный — верните, если он не нужен. Рыба и морепродукты — хороший выбор для тех, кто не ест свинину."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Удобная нескользящая обувь (гладкая брусчатка «калсада» скользкая)",
+     "Розетки типа C/F (европейская вилка)",
+     "Ветровка или лёгкая куртка (вечером дует прохладный атлантический ветер)",
+     "Крем с высоким SPF и головной убор"
+    ],
+    "safetyAndEtiquette": [
+     "Игнорируйте уличные предложения наркотиков и проходите мимо.",
+     "Не делайте селфи на краю скал — грунт может обвалиться."
+    ]
+   }
+  }
+ }
+}

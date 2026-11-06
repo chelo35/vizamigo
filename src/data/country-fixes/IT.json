@@ -1,0 +1,507 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Nisan – Haziran ve Eylül – Ekim (ılık hava, daha az kalabalık); Temmuz – Ağustos sıcak ve çok kalabalık, Dolomitler’de kayak için Aralık – Mart",
+   "safety": {
+    "crimeRateSummary": "Şiddet suçu turistleri nadiren etkiler, ancak Roma, Floransa, Napoli, Milano ve Venedik’te yankesicilik ve sokak dolandırıcılığı çok yaygındır; özellikle Termini istasyonu, Roma metrosu ve kalabalık anıtların çevresinde dikkatli olun.",
+    "commonScams": [
+     "Milano Duomo ve Roma’da “hediye” diye bileğinize ip bileklik bağlayıp ya da güvercin yemi verip para isteyenler",
+     "Kolezyum önünde kostümlü “gladyatörlerin” fotoğraf sonrası yüksek ücret istemesi",
+     "Sahte imza kampanyası panolarıyla dikkatinizi dağıtıp cebinizi boşaltan gruplar"
+    ],
+    "safeTravelTips": [
+     "Toplu taşımada ve kalabalıkta çantanızı önde, kapalı tutun; telefonu masada veya arka cepte bırakmayın.",
+     "Araç kiralarsanız tarihi merkezlerdeki ZTL (trafiğe kapalı bölge) kameralarına dikkat edin; cezalar aylar sonra gelir.",
+     "Trende bölgesel (Regionale) biletleri binmeden doğrulamayı unutmayın; Vatikan ve kiliselerde omuz ve dizler kapalı olmalı."
+    ],
+    "emergencyNumbers": {
+     "police": "113 / 112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Ülke genelinde güçlü 4G, şehirlerde yaygın 5G; Alpler’de ve bazı kırsal vadilerde zayıf",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Mevcut – Airalo, Holafly, AB dolaşım eSIM’leri ve TIM / Vodafone turist paketleri",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Çok iyi – Frecciarossa ve Italo hızlı trenleri şehirleri birbirine bağlar; büyük şehirlerde metro ve otobüs, Venedik’te vaporetto",
+    "costLevel": "Orta-Pahalı",
+    "singleTicketUsd": "~1.70 - 2.50 $ (Roma 1.50 €, Milano 2.20 €)",
+    "dailyPassUsd": "~8 - 11 $ (24 saatlik bilet)",
+    "popularRideApps": [
+     "FREENOW",
+     "itTaxi",
+     "Uber",
+     "Trenitalia / Italo"
+    ],
+    "taxiAdvice": "Taksiler pahalıdır; resmî beyaz taksileri duraklardan veya FREENOW / itTaxi ile çağırın. Roma’da Fiumicino havalimanı – surlar içi merkez arası sabit tarife uygulanır (yaklaşık 55-60 €); havalimanlarında size yaklaşan “taksi” teklif edenleri reddedin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2 $ (espresso al banco)",
+    "waterBottleUsd": "0.50 - 1.50 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "100 - 180 $",
+    "flightCostIndex": "Orta (İstanbul – Roma/Milano direkt ~2.5 sa)",
+    "flightTip": "İstanbul’dan Roma, Milano, Venedik, Napoli ve Bologna’ya THY, Pegasus, AJet ve ITA Airways ile direkt uçuşlar var. Rotayı tek yönlü planlayın (ör. Venedik’e varış, Roma’dan dönüş); şehirler arası hızlı tren biletleri erken alındığında çok daha ucuzdur."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "İtalyanca; Güney Tirol’de Almanca, Aosta Vadisi’nde Fransızca da resmîdir.",
+    "englishProficiency": "Turistik şehirlerde ve gençler arasında orta-iyi; küçük kasabalarda ve yaşlılar arasında sınırlı.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Günaydın / İyi günler",
+      "translation": "Günaydın / İyi günler",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "GRAH-tsee-eh"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "per fa-VO-reh"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KWAN-to KOS-ta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "eel KON-to per fa-VO-reh"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "April – June and September – October (mild weather, smaller crowds); July – August is hot and very crowded, December – March for skiing in the Dolomites",
+   "safety": {
+    "crimeRateSummary": "Violent crime rarely affects tourists, but pickpocketing and street scams are very common in Rome, Florence, Naples, Milan and Venice; be especially careful around Termini station, on the Rome metro and near crowded monuments.",
+    "commonScams": [
+     "People tying a “free” string bracelet on your wrist or handing you pigeon feed in Milan’s Duomo square and Rome, then demanding money",
+     "Costumed “gladiators” outside the Colosseum charging a high fee after a photo",
+     "Groups with fake petition clipboards distracting you while picking your pockets"
+    ],
+    "safeTravelTips": [
+     "On public transport and in crowds keep your bag closed and in front; don’t leave your phone on tables or in a back pocket.",
+     "If you rent a car, watch for ZTL (restricted traffic zone) cameras in historic centres; fines arrive months later.",
+     "Validate regional (Regionale) train tickets before boarding; cover shoulders and knees in the Vatican and churches."
+    ],
+    "emergencyNumbers": {
+     "police": "113 / 112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Strong 4G nationwide and widespread 5G in cities; weaker in the Alps and some rural valleys",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Available – Airalo, Holafly, EU-roaming eSIMs and TIM / Vodafone tourist plans",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Very good – Frecciarossa and Italo high-speed trains link the cities; metro and buses in big cities, vaporetto boats in Venice",
+    "costLevel": "Moderate to expensive",
+    "singleTicketUsd": "~1.70 - 2.50 $ (Rome €1.50, Milan €2.20)",
+    "dailyPassUsd": "~8 - 11 $ (24-hour ticket)",
+    "popularRideApps": [
+     "FREENOW",
+     "itTaxi",
+     "Uber",
+     "Trenitalia / Italo"
+    ],
+    "taxiAdvice": "Taxis are expensive; take official white taxis from ranks or book via FREENOW / itTaxi. In Rome a fixed fare applies between Fiumicino airport and the centre inside the walls (about €55-60); refuse anyone approaching you at airports offering a “taxi”."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2 $ (espresso al banco)",
+    "waterBottleUsd": "0.50 - 1.50 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "100 - 180 $",
+    "flightCostIndex": "Moderate (Istanbul – Rome/Milan direct ~2.5 h)",
+    "flightTip": "THY, Pegasus, AJet and ITA Airways fly direct from Istanbul to Rome, Milan, Venice, Naples and Bologna. Plan an open-jaw trip (e.g. fly into Venice, out of Rome); high-speed train tickets are much cheaper when booked early."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Italian; German is also official in South Tyrol and French in the Aosta Valley.",
+    "englishProficiency": "Moderate to good in tourist cities and among young people; limited in small towns and among older people.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Good morning / Good day",
+      "translation": "Good morning / Good day",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "GRAH-tsee-eh"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "per fa-VO-reh"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAN-to KOS-ta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "eel KON-to per fa-VO-reh"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "April – Juni und September – Oktober (mildes Wetter, weniger Andrang); Juli – August heiß und sehr voll, Dezember – März zum Skifahren in den Dolomiten",
+   "safety": {
+    "crimeRateSummary": "Gewaltkriminalität betrifft Touristen selten, doch Taschendiebstahl und Straßenbetrug sind in Rom, Florenz, Neapel, Mailand und Venedig sehr verbreitet; besonders am Bahnhof Termini, in der Metro von Rom und an vollen Sehenswürdigkeiten aufpassen.",
+    "commonScams": [
+     "Leute, die am Mailänder Domplatz und in Rom ein „geschenktes“ Freundschaftsband umbinden oder Taubenfutter geben und dann Geld fordern",
+     "Verkleidete „Gladiatoren“ vor dem Kolosseum, die nach einem Foto viel Geld verlangen",
+     "Gruppen mit gefälschten Unterschriftenlisten, die ablenken und dabei Taschen leeren"
+    ],
+    "safeTravelTips": [
+     "In Öffis und Menschenmengen die Tasche geschlossen vorne tragen; Handy nicht auf dem Tisch oder in der Gesäßtasche lassen.",
+     "Mit dem Mietwagen auf ZTL-Kameras (verkehrsbeschränkte Zonen) in Altstädten achten; Strafzettel kommen Monate später.",
+     "Regionalzug-Tickets (Regionale) vor dem Einsteigen entwerten; im Vatikan und in Kirchen Schultern und Knie bedecken."
+    ],
+    "emergencyNumbers": {
+     "police": "113 / 112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Starkes 4G landesweit, 5G in Städten verbreitet; in den Alpen und manchen Tälern schwächer",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Verfügbar – Airalo, Holafly, EU-Roaming-eSIMs und Touristentarife von TIM / Vodafone",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sehr gut – Frecciarossa- und Italo-Schnellzüge verbinden die Städte; Metro und Busse in Großstädten, Vaporetti in Venedig",
+    "costLevel": "Mittel bis teuer",
+    "singleTicketUsd": "~1.70 - 2.50 $ (Rom 1,50 €, Mailand 2,20 €)",
+    "dailyPassUsd": "~8 - 11 $ (24-Stunden-Ticket)",
+    "popularRideApps": [
+     "FREENOW",
+     "itTaxi",
+     "Uber",
+     "Trenitalia / Italo"
+    ],
+    "taxiAdvice": "Taxis sind teuer; offizielle weiße Taxis am Stand nehmen oder über FREENOW / itTaxi bestellen. In Rom gilt zwischen Flughafen Fiumicino und dem Zentrum innerhalb der Mauern ein Festpreis (etwa 55-60 €); Leute, die am Flughafen ein „Taxi“ anbieten, ablehnen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2 $ (espresso al banco)",
+    "waterBottleUsd": "0.50 - 1.50 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "100 - 180 $",
+    "flightCostIndex": "Mittel (Istanbul – Rom/Mailand direkt ~2,5 Std.)",
+    "flightTip": "THY, Pegasus, AJet und ITA Airways fliegen direkt von Istanbul nach Rom, Mailand, Venedig, Neapel und Bologna. Gabelflug planen (z. B. Ankunft Venedig, Rückflug Rom); Schnellzugtickets sind früh gebucht viel günstiger."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Italienisch; in Südtirol ist auch Deutsch, im Aostatal Französisch Amtssprache.",
+    "englishProficiency": "In Touristenstädten und bei Jüngeren mittel bis gut; in Kleinstädten und bei Älteren begrenzt.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Guten Morgen / Guten Tag",
+      "translation": "Guten Morgen / Guten Tag",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "GRAH-tsee-eh"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "per fa-VO-reh"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KWAN-to KOS-ta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "eel KON-to per fa-VO-reh"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Abril – junio y septiembre – octubre (clima suave, menos gente); julio – agosto hace calor y hay mucha gente, diciembre – marzo para esquiar en los Dolomitas",
+   "safety": {
+    "crimeRateSummary": "La delincuencia violenta rara vez afecta al turista, pero los carteristas y las estafas callejeras son muy comunes en Roma, Florencia, Nápoles, Milán y Venecia; ten especial cuidado en la estación Termini, el metro de Roma y los monumentos concurridos.",
+    "commonScams": [
+     "Personas que te atan una pulsera “de regalo” o te dan comida para palomas en la plaza del Duomo de Milán y en Roma y luego piden dinero",
+     "“Gladiadores” disfrazados frente al Coliseo que cobran caro tras una foto",
+     "Grupos con falsas hojas de firmas que te distraen mientras te roban"
+    ],
+    "safeTravelTips": [
+     "En el transporte y entre multitudes lleva el bolso cerrado y delante; no dejes el móvil en la mesa ni en el bolsillo trasero.",
+     "Si alquilas coche, cuidado con las cámaras ZTL (zona de tráfico limitado) de los cascos históricos; las multas llegan meses después.",
+     "Valida los billetes de tren regional (Regionale) antes de subir; en el Vaticano y las iglesias cubre hombros y rodillas."
+    ],
+    "emergencyNumbers": {
+     "police": "113 / 112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido en todo el país y 5G extendido en ciudades; más débil en los Alpes y algunos valles rurales",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Disponible – Airalo, Holafly, eSIM con roaming UE y planes turísticos de TIM / Vodafone",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muy bueno – los trenes de alta velocidad Frecciarossa e Italo unen las ciudades; metro y autobuses en las grandes urbes, vaporetti en Venecia",
+    "costLevel": "Moderado a caro",
+    "singleTicketUsd": "~1.70 - 2.50 $ (Roma 1,50 €, Milán 2,20 €)",
+    "dailyPassUsd": "~8 - 11 $ (billete de 24 horas)",
+    "popularRideApps": [
+     "FREENOW",
+     "itTaxi",
+     "Uber",
+     "Trenitalia / Italo"
+    ],
+    "taxiAdvice": "Los taxis son caros; toma los taxis blancos oficiales en las paradas o pídelos por FREENOW / itTaxi. En Roma hay tarifa fija entre el aeropuerto de Fiumicino y el centro dentro de las murallas (unos 55-60 €); rechaza a quien se te acerque en el aeropuerto ofreciendo “taxi”."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2 $ (espresso al banco)",
+    "waterBottleUsd": "0.50 - 1.50 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "100 - 180 $",
+    "flightCostIndex": "Moderado (Estambul – Roma/Milán directo ~2,5 h)",
+    "flightTip": "THY, Pegasus, AJet e ITA Airways vuelan directo de Estambul a Roma, Milán, Venecia, Nápoles y Bolonia. Planea un viaje multidestino (p. ej., llegar a Venecia y volver desde Roma); los billetes de tren rápido son mucho más baratos con antelación."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Italiano; en el Tirol del Sur también es oficial el alemán y en el Valle de Aosta el francés.",
+    "englishProficiency": "De moderado a bueno en ciudades turísticas y entre jóvenes; limitado en pueblos pequeños y entre mayores.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Buenos días",
+      "translation": "Buenos días",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "GRAH-tsee-eh"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "per fa-VO-reh"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KWAN-to KOS-ta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "eel KON-to per fa-VO-reh"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Апрель – июнь и сентябрь – октябрь (мягкая погода, меньше туристов); июль – август жарко и многолюдно, декабрь – март для лыж в Доломитах",
+   "safety": {
+    "crimeRateSummary": "Насилие туристов почти не касается, но карманные кражи и уличное мошенничество очень распространены в Риме, Флоренции, Неаполе, Милане и Венеции; будьте особенно внимательны у вокзала Термини, в римском метро и у людных памятников.",
+    "commonScams": [
+     "Люди, которые на площади Дуомо в Милане и в Риме повязывают «подарочный» браслет или дают корм для голубей, а потом требуют деньги",
+     "«Гладиаторы» в костюмах у Колизея, требующие крупную сумму за фото",
+     "Группы с фальшивыми петициями, отвлекающие внимание, пока чистят карманы"
+    ],
+    "safeTravelTips": [
+     "В транспорте и в толпе держите сумку закрытой перед собой; не оставляйте телефон на столе или в заднем кармане.",
+     "Арендуя машину, следите за камерами ZTL (зоны ограниченного движения) в исторических центрах — штрафы приходят через месяцы.",
+     "Компостируйте билеты на региональные поезда (Regionale) до посадки; в Ватикане и церквях закрывайте плечи и колени."
+    ],
+    "emergencyNumbers": {
+     "police": "113 / 112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G по всей стране и распространённый 5G в городах; слабее в Альпах и некоторых долинах",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Доступна – Airalo, Holafly, eSIM с роумингом ЕС и туристические тарифы TIM / Vodafone",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Очень хорошо – скоростные поезда Frecciarossa и Italo связывают города; метро и автобусы в крупных городах, вапоретто в Венеции",
+    "costLevel": "Средне–дорого",
+    "singleTicketUsd": "~1.70 - 2.50 $ (Рим 1,50 €, Милан 2,20 €)",
+    "dailyPassUsd": "~8 - 11 $ (билет на 24 часа)",
+    "popularRideApps": [
+     "FREENOW",
+     "itTaxi",
+     "Uber",
+     "Trenitalia / Italo"
+    ],
+    "taxiAdvice": "Такси дорогие; садитесь в официальные белые такси на стоянках или заказывайте через FREENOW / itTaxi. В Риме между аэропортом Фьюмичино и центром в пределах стен действует фиксированный тариф (около 55-60 €); отказывайтесь от тех, кто сам предлагает «такси» в аэропорту."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2 $ (espresso al banco)",
+    "waterBottleUsd": "0.50 - 1.50 $",
+    "hostelDormUsd": "35 - 60 $",
+    "hotel3StarUsd": "100 - 180 $",
+    "flightCostIndex": "Средний (Стамбул – Рим/Милан прямой ~2,5 ч)",
+    "flightTip": "Из Стамбула в Рим, Милан, Венецию, Неаполь и Болонью летают THY, Pegasus, AJet и ITA Airways. Планируйте маршрут «прилёт в один город, вылет из другого» (например, Венеция – Рим); билеты на скоростные поезда заранее намного дешевле."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Итальянский; в Южном Тироле официален также немецкий, в Валле-д’Аоста — французский.",
+    "englishProficiency": "Средний–хороший в туристических городах и у молодёжи; ограниченный в маленьких городках и у пожилых.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Доброе утро / Добрый день",
+      "translation": "Доброе утро / Добрый день",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "GRAH-tsee-eh"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "per fa-VO-reh"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-to KOS-ta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "eel KON-to per fa-VO-reh"
+     }
+    ]
+   }
+  }
+ }
+}

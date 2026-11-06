@@ -1,0 +1,1637 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Azerbaycan Manatı (AZN)",
+   "bestMonths": "Nisan – Haziran ve Eylül – Ekim; Temmuz – Ağustos’ta Bakü 35°C’yi bulabilir, Quba ve Şeki’nin dağ bölgeleri daha serindir",
+   "safety": {
+    "crimeRateSummary": "Sokak suçu düşüktür ve Bakü gece de genel olarak güvenlidir. Ermenistan sınır hattı ve eski çatışma bölgelerinde mayın riski vardır; bu bölgelere ancak resmî izinle ve organize turla gidilir.",
+    "commonScams": [
+     "Havalimanında resmî olmayan taksicilerin şehre fahiş fiyat istemesi",
+     "İçerişehir’de fiyatsız menülerle çalışan bazı restoranlarda şişirilmiş hesap",
+     "Halı satıcılarının yüksek fiyat istemesi ve ihracat sertifikası konusunu söylememesi"
+    ],
+    "safeTravelTips": [
+     "Bakü’de Bolt veya Uber kullanın; havalimanından şehre H1 Aeroekspres otobüsü de ucuz bir seçenektir.",
+     "Askerî tesisleri, sınır noktalarını ve resmî binaları fotoğraflamayın.",
+     "Eski ya da el dokuması halı alırsanız satıcıdan ihracat sertifikası isteyin, yoksa havalimanında sorun yaşayabilirsiniz."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bakü ve şehirlerde güçlü 4G; dağ köylerinde (Xınalıq gibi) zayıf",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Mevcut – Airalo gibi uluslararası eSIM’ler ve Azercell / Bakcell eSIM",
+    "bestCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta – Bakü’de metro ve otobüs iyi; bölgelere otobüs, Gence’ye tren",
+    "costLevel": "Çok ucuz",
+    "singleTicketUsd": "~0.30 - 0.40 $",
+    "dailyPassUsd": "Günlük bilet yok – BakıKart’a bakiye yüklenir",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "189 Taxi"
+    ],
+    "taxiAdvice": "Bakü içinde Bolt ile yolculuklar çoğunlukla 2-5 $ tutar; havalimanı – merkez 10-15 $ civarındadır. Şeki, Quba ve Gobustan için günlük özel şoför kiralamak pratiktir; fiyatı önceden konuşun."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.30 - 0.60 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Düşük-Orta (İstanbul – Bakü direkt ~3 sa)",
+    "flightTip": "İstanbul, Ankara ve diğer şehirlerden AZAL, THY, Pegasus ve AJet ile Bakü’ye direkt uçuşlar var. Kara sınırları 2020’den beri yolcu geçişine büyük ölçüde kapalı olduğundan güncel durumu kontrol edin."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Misafire armudu bardakta çay ikram edilir; yanında reçel, lokum veya şeker sunulur.",
+     "Büyüklere saygı önemlidir; yaşlılara yer verilir ve sofrada önce onlara servis yapılır.",
+     "Evlere girerken ayakkabı çıkarılır; ev sahibine küçük bir hediye ya da tatlı götürmek nezakettir.",
+     "Bakü’de giyim serbesttir; ancak camilerde ve kırsal bölgelerde omuz ve dizleri kapatmak uygun olur."
+    ],
+    "festivals": [
+     "Nevruz Bayramı (20-21 Mart civarı, ülkenin en büyük bayramı)",
+     "Formula 1 Azerbaycan Grand Prix (Bakü şehir pisti, sonbahar)",
+     "Göyçay Nar Festivali (Ekim – Kasım)"
+    ],
+    "lifestyle": "Hazar kıyısında petrol zenginliğiyle yükselen modern Bakü ile çayhane kültürü, muğam müziği, halıcılık ve misafirperver Kafkas köy yaşamının buluşması."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "İçerişehir: Şirvanşahlar Sarayı & Kız Kalesi (Bakü, UNESCO)",
+     "Haydar Aliyev Merkezi (Zaha Hadid tasarımı)",
+     "Alev Kuleleri, Dağüstü Park & Bakü Bulvarı",
+     "Gobustan Kaya Resimleri & Çamur Volkanları (UNESCO)",
+     "Yanardağ & Ateşgah Ateş Tapınağı (Abşeron)",
+     "Şeki Han Sarayı & Tarihi Kervansaray (UNESCO)"
+    ],
+    "bestSeasons": "Nisan – Haziran ve Eylül – Ekim en elverişli dönemdir; kışın Şahdağ’da kayak yapılabilir.",
+    "travelStyleTip": "Bakü’de metro için BakıKart alın ve Bolt kullanın; Şeki ve Quba’ya Bakü Uluslararası Otogarı’ndan otobüs ya da özel şoförle gidin."
+   },
+   "religion": {
+    "primaryReligions": "Müslüman (~%96; çoğunluk Şii, yaklaşık üçte biri Sünni), Rus Ortodoks (~%2), küçük Yahudi (Quba Dağ Yahudileri) ve Udi Hristiyan toplulukları.",
+    "respectNorms": "Laik bir ülkedir ve günlük yaşam rahattır. Camilerde ayakkabı çıkarılır, kadınlar başını örter; namaz sırasında fotoğraf çekmeyin.",
+    "sacredSites": [
+     "Bibiheybet Camii (Bakü)",
+     "Ateşgah Ateş Tapınağı (Suraxanı)",
+     "Şamahı Cuma Camii"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Azerbaycan Türkçesi (1991’den beri Latin alfabesiyle). Türkiye Türkçesi büyük ölçüde anlaşılır; Bakü’de Rusça yaygındır.",
+    "englishProficiency": "Bakü’de otellerde ve gençler arasında orta düzeyde; bölgelerde düşük. Türkçe ile her yerde rahatça anlaşılır.",
+    "phrases": [
+     {
+      "phrase": "Salam",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "sah-LAHM"
+     },
+     {
+      "phrase": "Çox sağ olun",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "chokh sagh o-LUN"
+     },
+     {
+      "phrase": "Zəhmət olmasa",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "zah-MAT ol-ma-SA"
+     },
+     {
+      "phrase": "Bu neçəyədir?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "bu ne-che-YE-dir"
+     },
+     {
+      "phrase": "Nuş olsun!",
+      "meaning": "Afiyet olsun!",
+      "translation": "Afiyet olsun!",
+      "pronunciation": "noosh ol-SUN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Kafkas Albanyası, Şirvanşahlar ve Safeviler gibi devletlere ev sahipliği yapan topraklar 19. yüzyılda Rus yönetimine girdi. 1918’de kurulan Azerbaycan Demokratik Cumhuriyeti Müslüman Doğu’nun ilk cumhuriyetiydi; Sovyet döneminin ardından 1991’de bağımsızlık ilan edildi.",
+    "milestones": [
+     "1918: Azerbaycan Demokratik Cumhuriyeti kuruldu",
+     "1920: Sovyet yönetimi başladı",
+     "1991: Bağımsızlık ilanı",
+     "1994: Hazar petrolü için “Asrın Anlaşması” imzalandı"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Plov / Şah Plov (lavaş kabuk içinde kestaneli, kuru meyveli etli pilav)",
+     "Dolma (yaprak, lahana ve “üç bacı” sebze dolması)",
+     "Şeki Pitisi (toprak kapta kuzu, nohut ve safranlı çorba-yemek)"
+    ],
+    "traditionalDrinks": [
+     "Armudu bardakta demli siyah çay (kekik veya tarçınla)",
+     "Ayran",
+     "Şerbet (gül, safran veya nar şerbeti)"
+    ],
+    "streetFoodAndDesserts": [
+     "Qutab (otlu, etli veya kabaklı ince gözleme)",
+     "Şəkərbura (cevizli Nevruz tatlısı)",
+     "Şeki Halvası (pirinç unu ağı içinde fındıklı, şerbetli tatlı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nizami Gencevi (12. yüzyıl şairi, Hamse)",
+     "Üzeyir Hacıbeyli (Müslüman Doğu’nun ilk operası “Leyli ve Mecnun”, 1908)",
+     "Lütfi Zade (bulanık mantığın kurucusu, Bakü’de büyüdü)"
+    ],
+    "strongSectors": [
+     "Petrol ve doğalgaz (BTC boru hattı, Şahdeniz & TANAP)",
+     "Orta Koridor transit taşımacılığı (Bakü Limanı, Bakü – Tiflis – Kars demiryolu)",
+     "Tarım ve el halıcılığı (fındık, nar, Azerbaycan halısı – UNESCO)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bakü’de kart ve temassız ödeme yaygındır; bölgelerde, pazarlarda ve küçük lokantalarda nakit manat gerekir.",
+    "tippingCulture": "Bakü restoranlarında hesaba çoğunlukla %10 servis ücreti eklenir; eklenmemişse %5-10 bahşiş bırakmak yeterlidir.",
+    "economicPillars": "Petrol ve doğalgaz ihracatı, petrokimya, transit lojistik, tarım (fındık, nar, pamuk) ve büyüyen turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Hazar’dan Kafkaslara: Bakü, Gobustan, Quba – Xınalıq & Şeki",
+   "routeSummary": "Bakü’nün UNESCO listesindeki İçerişehir’i ve modern silüetiyle başlayan, Gobustan kaya resimleri ve Abşeron’un yanan dağlarına uzanan, ardından kuzeyde Quba ve Kafkasların yüksek köyü Xınalıq’a, son olarak İpek Yolu kenti Şeki’ye giden 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Rota",
+   "bestSeason": "Nisan – Haziran ve Eylül – Ekim (Xınalıq yolu kışın karla kapanabilir)",
+   "transportMode": "Bakü’de metro ve Bolt; Gobustan – Abşeron için günlük tur veya şoför; Quba ve Şeki’ye otobüs ya da özel şoför",
+   "paceLevel": "Dengeli (Şehir + Tarih + Dağ)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Bakü (İçerişehir, Alev Kuleleri & Bulvar)",
+     "recommendedDuration": "3 Gün (Şehir merkezi ve müzeler)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "İçerişehir: Şirvanşahlar Sarayı & Kız Kalesi",
+      "Haydar Aliyev Merkezi",
+      "Dağüstü Park, Şehitler Hıyabanı & Türk Şehitliği",
+      "Bakü Bulvarı, Halı Müzesi & Alev Kuleleri"
+     ],
+     "activities": [
+      "İçerişehir’in surları içindeki dar sokaklarda yürüyüp Kız Kalesi’nin tepesinden Hazar’a bakın.",
+      "Füniküler veya merdivenlerle Dağüstü Park’a çıkıp gün batımında Alev Kuleleri’nin ışık gösterisini izleyin.",
+      "Bulvar boyunca yürüyüp Halı Müzesi’ni gezin, akşam Fıskiyeler Meydanı ve Nizami Caddesi’nde vakit geçirin."
+     ],
+     "foodAndDrinks": [
+      "Şah Plov & dolma",
+      "Lüle kebap & tike kebap",
+      "Armudu bardakta çay ve reçel"
+     ],
+     "criticalTips": [
+      "Metro ve otobüs için BakıKart gerekir; kartı metro istasyonlarındaki makinelerden alıp yükleyebilirsiniz.",
+      "Bakü’de rüzgâr sert olabilir (“Bakü’nün rüzgârı” meşhurdur); ilkbahar ve sonbaharda bile bir rüzgârlık alın."
+     ],
+     "mapsQuery": "Icherisheher, Baku, Azerbaijan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Gobustan & Abşeron (Kaya Resimleri, Çamur Volkanları, Yanardağ)",
+     "recommendedDuration": "1 Gün (Bakü’den günübirlik)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Gobustan Milli Parkı kaya resimleri (UNESCO)",
+      "Çamur volkanları",
+      "Ateşgah Ateş Tapınağı (Suraxanı)",
+      "Yanardağ (sönmeyen doğal gaz alevi)"
+     ],
+     "activities": [
+      "Gobustan müzesini gezip binlerce yıllık insan, hayvan ve kayık figürlerini açık hava alanında görün.",
+      "Yerel Lada taksilerle toprak yoldan çamur volkanlarına çıkıp fokurdayan krater ağızlarını yakından görün.",
+      "Dönüşte Ateşgah’ı gezip günü alacakaranlıkta Yanardağ’ın alevleriyle bitirin."
+     ],
+     "foodAndDrinks": [
+      "Qutab (otlu ve etli)",
+      "Hazar balığı (kutum) ızgara",
+      "Ayran"
+     ],
+     "criticalTips": [
+      "Çamur volkanlarına giden yol yağmurdan sonra kapanabilir; çamurdan etkilenecek eski ayakkabılar giyin.",
+      "Gobustan’da gölge azdır; yazın sabah erken gidin, şapka ve su alın."
+     ],
+     "mapsQuery": "Gobustan National Park, Azerbaijan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Quba & Xınalıq (Kızıl Kasaba & Kafkas Dağları)",
+     "recommendedDuration": "2 Gün (Quba’da konaklama + Xınalıq günübirlik)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Qırmızı Qəsəbə (Dağ Yahudilerinin Kızıl Kasabası)",
+      "Xınalıq köyü (~2.300 m, kendine özgü dili olan kadim köy)",
+      "Tengealtı Kanyonu",
+      "Şahdağ manzarası ve dağ yolları"
+     ],
+     "activities": [
+      "Kudiyal Çayı’nı geçip Qırmızı Qəsəbə’nin sinagoglarını ve Dağ Yahudileri Müzesi’ni gezin.",
+      "Kanyonlar arasından Xınalıq’a çıkıp taş evleri gezin ve bir köy evinde çay için.",
+      "Dönüş yolunda Tengealtı Kanyonu’nda kısa bir yürüyüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Düşbere (minik mantı çorbası)",
+      "Quba elması ve elma reçeli",
+      "Kekikli dağ çayı ve köy peyniri"
+     ],
+     "criticalTips": [
+      "Xınalıq yolu kışın ve ilkbaharda kar, heyelan nedeniyle kapanabilir; yola çıkmadan durumu sorun.",
+      "Xınalıq muhafazakâr bir köydür; kapalı giyinin ve insanları fotoğraflamadan önce izin isteyin."
+     ],
+     "mapsQuery": "Khinalug, Quba, Azerbaijan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Şeki (Han Sarayı, Kervansaray & Kiş Kilisesi)",
+     "recommendedDuration": "2 Gün (Yolda Şamahı molasıyla)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Şeki Han Sarayı (şebeke vitraylı pencereler)",
+      "Yukarı Kervansaray",
+      "Kiş Alban Kilisesi",
+      "Şamahı Cuma Camii (yol üstünde)"
+     ],
+     "activities": [
+      "Han Sarayı’nın çivisiz ahşap ve renkli camdan şebeke pencerelerini ve duvar resimlerini görün.",
+      "Bir şebeke atölyesinde ustaları izleyin ve Şeki halvasının yapılışını görün.",
+      "Yakındaki Kiş köyüne gidip Kafkasya’nın en eski kiliselerinden biri sayılan Alban kilisesini gezin."
+     ],
+     "foodAndDrinks": [
+      "Şeki pitisi",
+      "Şeki halvası",
+      "Fındıklı tatlılar ve çay"
+     ],
+     "criticalTips": [
+      "Han Sarayı’nın içinde fotoğraf çekmek yasaktır.",
+      "Bakü – Şeki otobüsle yaklaşık 5-6 saattir; dönüşte Gebele üzerinden gelerek rotayı çeşitlendirebilirsiniz."
+     ],
+     "mapsQuery": "Sheki Khan Palace, Sheki, Azerbaijan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Şah Plov",
+     "Dolma",
+     "Piti",
+     "Lüle kebap"
+    ],
+    "drinks": [
+     "Armudu bardakta siyah çay",
+     "Ayran",
+     "Nar suyu"
+    ],
+    "streetFoods": [
+     "Qutab",
+     "Şəkərbura & Paxlava",
+     "Şeki halvası"
+    ],
+    "diningAdvice": "Çay her yemeğin sonunda reçelle gelir; Bakü’de hesaptaki %10 servis ücretini kontrol edin, varsa ayrıca bahşiş gerekmez."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rüzgârlık ve dağ köyleri için sıcak bir kat",
+     "Camiler ve köyler için omuz ve dizleri kapatan giysi, kadınlar için eşarp",
+     "Bölgeler için nakit manat",
+     "Gobustan için şapka, güneş kremi ve su"
+    ],
+    "safetyAndEtiquette": [
+     "Ermenistan sınırına yakın bölgelere ve mayın uyarısı olan alanlara izinsiz girmeyin; işaretli yollardan ayrılmayın.",
+     "Askerî ve resmî binaları fotoğraflamayın; köylerde insanları çekmeden önce izin isteyin."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Azerbaijani manat (AZN)",
+   "bestMonths": "April – June and September – October; in July – August Baku can reach 35°C, while the mountain areas of Quba and Sheki stay cooler",
+   "safety": {
+    "crimeRateSummary": "Street crime is low and Baku generally feels safe at night. There is a landmine risk along the Armenian border and in former conflict areas, which can only be visited with official permission on organised tours.",
+    "commonScams": [
+     "Unofficial taxi drivers at the airport demanding inflated fares into the city",
+     "Some restaurants in the Old City with unpriced menus producing inflated bills",
+     "Carpet sellers overcharging and not mentioning the export certificate"
+    ],
+    "safeTravelTips": [
+     "In Baku use Bolt or Uber; the H1 Aeroexpress bus is also a cheap way from the airport into town.",
+     "Do not photograph military sites, border posts or government buildings.",
+     "If you buy an old or hand-woven carpet, ask the seller for an export certificate, or you may have problems at the airport."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Strong 4G in Baku and other cities; weak in mountain villages such as Khinalug",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Available – international eSIMs such as Airalo and Azercell / Bakcell eSIMs",
+    "bestCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair – good metro and buses in Baku; buses to the regions and trains to Ganja",
+    "costLevel": "Very cheap",
+    "singleTicketUsd": "~0.30 - 0.40 $",
+    "dailyPassUsd": "No day pass – top up a BakuCard",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "189 Taxi"
+    ],
+    "taxiAdvice": "Bolt rides within Baku usually cost $2-5; airport to centre is around $10-15. Hiring a private driver for the day is practical for Sheki, Quba and Gobustan; agree the price beforehand."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.30 - 0.60 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Low to moderate (Istanbul – Baku direct ~3 h)",
+    "flightTip": "AZAL, THY, Pegasus and AJet fly direct to Baku from Istanbul, Ankara and other Turkish cities. Land borders have been largely closed to passenger crossings since 2020, so check the current situation."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Guests are offered tea in pear-shaped armudu glasses, served with jam, sweets or sugar cubes.",
+     "Respect for elders matters: give up your seat to them and serve them first at the table.",
+     "Shoes come off when entering a home; bringing a small gift or sweets for the host is polite.",
+     "Dress is relaxed in Baku, but cover shoulders and knees in mosques and rural areas."
+    ],
+    "festivals": [
+     "Novruz (around 20-21 March, the biggest holiday of the year)",
+     "Formula 1 Azerbaijan Grand Prix (Baku street circuit, autumn)",
+     "Goychay Pomegranate Festival (October – November)"
+    ],
+    "lifestyle": "Modern, oil-rich Baku on the Caspian meets teahouse culture, mugham music, carpet weaving and hospitable Caucasus village life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Old City: Palace of the Shirvanshahs & Maiden Tower (Baku, UNESCO)",
+     "Heydar Aliyev Center (designed by Zaha Hadid)",
+     "Flame Towers, Highland Park & Baku Boulevard",
+     "Gobustan Rock Art & Mud Volcanoes (UNESCO)",
+     "Yanar Dag & Ateshgah Fire Temple (Absheron)",
+     "Sheki Khan’s Palace & historic caravanserai (UNESCO)"
+    ],
+    "bestSeasons": "April – June and September – October are best; in winter you can ski at Shahdag.",
+    "travelStyleTip": "Get a BakuCard for the Baku metro and use Bolt; reach Sheki and Quba by bus from Baku International Bus Terminal or with a private driver."
+   },
+   "religion": {
+    "primaryReligions": "Muslim (~96%; mostly Shia, about a third Sunni), Russian Orthodox (~2%), small Jewish (Mountain Jews of Quba) and Udi Christian communities.",
+    "respectNorms": "A secular country with a relaxed daily life. Remove shoes in mosques, women cover their hair, and avoid photographing people at prayer.",
+    "sacredSites": [
+     "Bibi-Heybat Mosque (Baku)",
+     "Ateshgah Fire Temple (Surakhani)",
+     "Juma Mosque of Shamakhi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Azerbaijani (written in the Latin alphabet since 1991). Turkish is largely understood; Russian is widely spoken in Baku.",
+    "englishProficiency": "Moderate in Baku hotels and among young people; low in the regions. Turkish speakers can communicate easily everywhere.",
+    "phrases": [
+     {
+      "phrase": "Salam",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "sah-LAHM"
+     },
+     {
+      "phrase": "Çox sağ olun",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "chokh sagh o-LUN"
+     },
+     {
+      "phrase": "Zəhmət olmasa",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "zah-MAT ol-ma-SA"
+     },
+     {
+      "phrase": "Bu neçəyədir?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "bu ne-che-YE-dir"
+     },
+     {
+      "phrase": "Nuş olsun!",
+      "meaning": "Enjoy your meal!",
+      "translation": "Enjoy your meal!",
+      "pronunciation": "noosh ol-SUN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Home to Caucasian Albania, the Shirvanshahs and the Safavids, the land came under Russian rule in the 19th century. The Azerbaijan Democratic Republic of 1918 was the first republic in the Muslim East; after the Soviet era, independence was declared in 1991.",
+    "milestones": [
+     "1918: Azerbaijan Democratic Republic founded",
+     "1920: Start of Soviet rule",
+     "1991: Declaration of independence",
+     "1994: “Contract of the Century” signed for Caspian oil"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Plov / Shah Plov (rice with meat, chestnuts and dried fruit baked in a lavash crust)",
+     "Dolma (vine-leaf, cabbage and “three sisters” stuffed vegetables)",
+     "Sheki Piti (lamb, chickpea and saffron stew in a clay pot)"
+    ],
+    "traditionalDrinks": [
+     "Strong black tea in armudu glasses (with thyme or cinnamon)",
+     "Ayran (salted yoghurt drink)",
+     "Sherbet (rose, saffron or pomegranate)"
+    ],
+    "streetFoodAndDesserts": [
+     "Qutab (thin flatbreads filled with herbs, meat or pumpkin)",
+     "Shekerbura (walnut-filled Novruz pastry)",
+     "Sheki Halva (hazelnut and syrup dessert in a rice-flour lattice)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nizami Ganjavi (12th-century poet, the Khamsa)",
+     "Uzeyir Hajibeyov (composer of the first opera in the Muslim East, “Leyli and Majnun”, 1908)",
+     "Lotfi Zadeh (founder of fuzzy logic, raised in Baku)"
+    ],
+    "strongSectors": [
+     "Oil and gas (BTC pipeline, Shah Deniz & TANAP)",
+     "Middle Corridor transit (Port of Baku, Baku – Tbilisi – Kars railway)",
+     "Agriculture and carpet weaving (hazelnuts, pomegranates, Azerbaijani carpet – UNESCO)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless payments are common in Baku; carry cash manat in the regions, at markets and small eateries.",
+    "tippingCulture": "Baku restaurants often add a 10% service charge; if not, a 5-10% tip is enough.",
+    "economicPillars": "Oil and gas exports, petrochemicals, transit logistics, agriculture (hazelnuts, pomegranates, cotton) and growing tourism."
+   }
+  },
+  "itin": {
+   "routeName": "From the Caspian to the Caucasus: Baku, Gobustan, Quba – Khinalug & Sheki",
+   "routeSummary": "An 8-day route that starts with Baku’s UNESCO-listed Old City and modern skyline, takes in the Gobustan rock art and the burning hills of Absheron, then heads north to Quba and the high Caucasus village of Khinalug, ending in the Silk Road town of Sheki.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Route",
+   "bestSeason": "April – June & September – October (the road to Khinalug can be blocked by snow in winter)",
+   "transportMode": "Metro and Bolt in Baku; day tour or driver for Gobustan – Absheron; bus or private driver to Quba and Sheki",
+   "paceLevel": "Balanced (City + History + Mountains)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Baku (Old City, Flame Towers & Boulevard)",
+     "recommendedDuration": "3 Days (city centre and museums)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Old City: Palace of the Shirvanshahs & Maiden Tower",
+      "Heydar Aliyev Center",
+      "Highland Park, Martyrs’ Lane & the Turkish Martyrs’ Memorial",
+      "Baku Boulevard, Carpet Museum & Flame Towers"
+     ],
+     "activities": [
+      "Wander the lanes inside the Old City walls and look out over the Caspian from the top of the Maiden Tower.",
+      "Take the funicular or stairs up to Highland Park and watch the Flame Towers light show at sunset.",
+      "Walk the Boulevard, visit the Carpet Museum and spend the evening around Fountains Square and Nizami Street."
+     ],
+     "foodAndDrinks": [
+      "Shah plov & dolma",
+      "Lyulya and tikka kebabs",
+      "Tea in armudu glasses with jam"
+     ],
+     "criticalTips": [
+      "You need a BakuCard for the metro and buses; buy and top it up at machines in metro stations.",
+      "Baku can be very windy (its wind is famous); bring a windbreaker even in spring and autumn."
+     ],
+     "mapsQuery": "Icherisheher, Baku, Azerbaijan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Gobustan & Absheron (Rock Art, Mud Volcanoes, Yanar Dag)",
+     "recommendedDuration": "1 Day (day trip from Baku)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Gobustan National Park rock art (UNESCO)",
+      "Mud volcanoes",
+      "Ateshgah Fire Temple (Surakhani)",
+      "Yanar Dag (a natural gas fire that never goes out)"
+     ],
+     "activities": [
+      "Visit the Gobustan museum, then see carvings of people, animals and boats thousands of years old in the open-air site.",
+      "Ride a local Lada taxi along the dirt track to the mud volcanoes and see the bubbling craters up close.",
+      "On the way back visit Ateshgah and end the day at dusk with the flames of Yanar Dag."
+     ],
+     "foodAndDrinks": [
+      "Qutab (herb and meat)",
+      "Grilled Caspian kutum fish",
+      "Ayran"
+     ],
+     "criticalTips": [
+      "The track to the mud volcanoes can close after rain; wear old shoes you don’t mind getting muddy.",
+      "There is little shade at Gobustan; in summer go early in the morning and bring a hat and water."
+     ],
+     "mapsQuery": "Gobustan National Park, Azerbaijan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Quba & Khinalug (Red Settlement & Caucasus Mountains)",
+     "recommendedDuration": "2 Days (stay in Quba + day trip to Khinalug)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Red Settlement (Qırmızı Qəsəbə), home of the Mountain Jews",
+      "Khinalug village (~2,300 m, an ancient village with its own language)",
+      "Tangaalti Canyon",
+      "Views of Shahdag and mountain roads"
+     ],
+     "activities": [
+      "Cross the Gudiyalchay river to see the synagogues of the Red Settlement and the Mountain Jews Museum.",
+      "Drive up through the gorges to Khinalug, explore its stone houses and drink tea in a village home.",
+      "On the way back take a short walk in Tangaalti Canyon."
+     ],
+     "foodAndDrinks": [
+      "Dushbara (tiny dumplings in broth)",
+      "Quba apples and apple jam",
+      "Thyme mountain tea and village cheese"
+     ],
+     "criticalTips": [
+      "The road to Khinalug can close in winter and spring due to snow or landslides; ask about conditions before setting off.",
+      "Khinalug is a conservative village; dress modestly and ask before photographing people."
+     ],
+     "mapsQuery": "Khinalug, Quba, Azerbaijan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Sheki (Khan’s Palace, Caravanserai & Kish Church)",
+     "recommendedDuration": "2 Days (with a stop in Shamakhi on the way)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Sheki Khan’s Palace (shebeke stained-glass windows)",
+      "Upper Caravanserai",
+      "Kish Albanian Church",
+      "Juma Mosque of Shamakhi (on the way)"
+     ],
+     "activities": [
+      "See the Khan’s Palace with its nail-free wood-and-coloured-glass shebeke windows and painted walls.",
+      "Watch craftsmen at a shebeke workshop and see how Sheki halva is made.",
+      "Go to nearby Kish village to see the Albanian church, considered one of the oldest in the Caucasus."
+     ],
+     "foodAndDrinks": [
+      "Sheki piti",
+      "Sheki halva",
+      "Hazelnut sweets with tea"
+     ],
+     "criticalTips": [
+      "Photography is not allowed inside the Khan’s Palace.",
+      "Baku – Sheki is about 5-6 hours by bus; return via Gabala for variety."
+     ],
+     "mapsQuery": "Sheki Khan Palace, Sheki, Azerbaijan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Shah plov",
+     "Dolma",
+     "Piti",
+     "Lyulya kebab"
+    ],
+    "drinks": [
+     "Black tea in armudu glasses",
+     "Ayran",
+     "Pomegranate juice"
+    ],
+    "streetFoods": [
+     "Qutab",
+     "Shekerbura & pakhlava",
+     "Sheki halva"
+    ],
+    "diningAdvice": "Tea with jam ends every meal; in Baku check the bill for a 10% service charge – if included, no extra tip is needed."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "A windbreaker and a warm layer for mountain villages",
+     "Clothes covering shoulders and knees for mosques and villages, plus a scarf for women",
+     "Cash manat for the regions",
+     "Hat, sunscreen and water for Gobustan"
+    ],
+    "safetyAndEtiquette": [
+     "Do not enter areas near the Armenian border or with landmine warnings without permission; stay on marked roads.",
+     "Do not photograph military or government buildings; ask before photographing people in villages."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Aserbaidschan-Manat (AZN)",
+   "bestMonths": "April – Juni und September – Oktober; im Juli – August erreicht Baku bis zu 35 °C, die Bergregionen um Quba und Scheki bleiben kühler",
+   "safety": {
+    "crimeRateSummary": "Straßenkriminalität ist gering, Baku gilt auch nachts als sicher. Entlang der Grenze zu Armenien und in ehemaligen Konfliktgebieten besteht Minengefahr; diese Gebiete sind nur mit offizieller Genehmigung auf organisierten Touren zugänglich.",
+    "commonScams": [
+     "Inoffizielle Taxifahrer am Flughafen, die überhöhte Preise in die Stadt verlangen",
+     "Manche Restaurants in der Altstadt ohne Preise auf der Karte, die überhöhte Rechnungen stellen",
+     "Teppichhändler, die zu viel verlangen und das Ausfuhrzertifikat verschweigen"
+    ],
+    "safeTravelTips": [
+     "In Baku Bolt oder Uber nutzen; der H1-Aeroexpress-Bus ist eine günstige Verbindung vom Flughafen in die Stadt.",
+     "Militäranlagen, Grenzposten und Regierungsgebäude nicht fotografieren.",
+     "Beim Kauf eines alten oder handgewebten Teppichs ein Ausfuhrzertifikat verlangen, sonst drohen Probleme am Flughafen."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Starkes 4G in Baku und anderen Städten; schwach in Bergdörfern wie Chinalug",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Verfügbar – internationale eSIMs wie Airalo sowie eSIMs von Azercell / Bakcell",
+    "bestCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel – gute Metro und Busse in Baku; Busse in die Regionen, Züge nach Gandscha",
+    "costLevel": "Sehr günstig",
+    "singleTicketUsd": "~0.30 - 0.40 $",
+    "dailyPassUsd": "Keine Tageskarte – BakuKart aufladen",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "189 Taxi"
+    ],
+    "taxiAdvice": "Bolt-Fahrten in Baku kosten meist 2-5 $, vom Flughafen ins Zentrum etwa 10-15 $. Für Scheki, Quba und Gobustan lohnt ein Fahrer für den ganzen Tag; Preis vorher vereinbaren."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.30 - 0.60 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Niedrig bis mittel (Istanbul – Baku direkt ~3 Std.)",
+    "flightTip": "AZAL, THY, Pegasus und AJet fliegen direkt ab Istanbul, Ankara und weiteren türkischen Städten nach Baku. Die Landgrenzen sind seit 2020 für Reisende weitgehend geschlossen – aktuelle Lage prüfen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Gästen wird Tee in birnenförmigen Armudu-Gläsern angeboten, dazu Konfitüre, Süßes oder Zucker.",
+     "Respekt vor Älteren ist wichtig: Platz anbieten und ihnen am Tisch zuerst servieren.",
+     "Beim Betreten einer Wohnung Schuhe ausziehen; ein kleines Geschenk oder Süßes für die Gastgeber ist höflich.",
+     "In Baku ist die Kleidung locker, in Moscheen und auf dem Land aber Schultern und Knie bedecken."
+    ],
+    "festivals": [
+     "Nouruz (um den 20.-21. März, das größte Fest des Jahres)",
+     "Formel-1-Grand-Prix von Aserbaidschan (Stadtkurs Baku, Herbst)",
+     "Granatapfelfest in Göytschay (Oktober – November)"
+    ],
+    "lifestyle": "Das moderne, vom Öl reich gewordene Baku am Kaspischen Meer trifft auf Teehauskultur, Mugham-Musik, Teppichknüpferei und gastfreundliches Dorfleben im Kaukasus."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Altstadt: Palast der Schirwanschahs & Jungfrauenturm (Baku, UNESCO)",
+     "Heydər-Əliyev-Zentrum (Entwurf von Zaha Hadid)",
+     "Flame Towers, Highland Park & Boulevard von Baku",
+     "Felsbilder von Gobustan & Schlammvulkane (UNESCO)",
+     "Yanar Dag & Feuertempel Ateschgah (Abşeron)",
+     "Khanpalast & historische Karawanserei von Scheki (UNESCO)"
+    ],
+    "bestSeasons": "April – Juni und September – Oktober sind ideal; im Winter kann man in Schahdag Ski fahren.",
+    "travelStyleTip": "Für die Metro in Baku eine BakuKart besorgen und Bolt nutzen; nach Scheki und Quba per Bus vom internationalen Busbahnhof oder mit Fahrer."
+   },
+   "religion": {
+    "primaryReligions": "Muslime (~96 %; überwiegend Schiiten, etwa ein Drittel Sunniten), Russisch-Orthodoxe (~2 %), kleine jüdische (Bergjuden in Quba) und udische christliche Gemeinden.",
+    "respectNorms": "Ein säkulares Land mit entspanntem Alltag. In Moscheen Schuhe ausziehen, Frauen bedecken das Haar; Betende nicht fotografieren.",
+    "sacredSites": [
+     "Bibi-Heybat-Moschee (Baku)",
+     "Feuertempel Ateschgah (Suraxanı)",
+     "Freitagsmoschee von Schamachi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Aserbaidschanisch (seit 1991 in lateinischer Schrift). Türkisch wird weitgehend verstanden; in Baku ist Russisch verbreitet.",
+    "englishProficiency": "In Bakuer Hotels und bei Jüngeren mittelmäßig, in den Regionen gering. Mit Türkisch verständigt man sich überall gut.",
+    "phrases": [
+     {
+      "phrase": "Salam",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "sah-LAHM"
+     },
+     {
+      "phrase": "Çox sağ olun",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "chokh sagh o-LUN"
+     },
+     {
+      "phrase": "Zəhmət olmasa",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "zah-MAT ol-ma-SA"
+     },
+     {
+      "phrase": "Bu neçəyədir?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "bu ne-che-YE-dir"
+     },
+     {
+      "phrase": "Nuş olsun!",
+      "meaning": "Guten Appetit!",
+      "translation": "Guten Appetit!",
+      "pronunciation": "noosh ol-SUN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Das Land von Kaukasisch-Albanien, den Schirwanschahs und den Safawiden kam im 19. Jahrhundert unter russische Herrschaft. Die Demokratische Republik Aserbaidschan von 1918 war die erste Republik des muslimischen Ostens; nach der Sowjetzeit folgte 1991 die Unabhängigkeit.",
+    "milestones": [
+     "1918: Gründung der Demokratischen Republik Aserbaidschan",
+     "1920: Beginn der Sowjetherrschaft",
+     "1991: Unabhängigkeitserklärung",
+     "1994: „Jahrhundertvertrag“ über das Kaspische Öl unterzeichnet"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Plov / Schah-Plov (Reis mit Fleisch, Maronen und Trockenfrüchten im Lavasch-Mantel)",
+     "Dolma (gefüllte Weinblätter, Kohl und „drei Schwestern“-Gemüse)",
+     "Scheki-Piti (Lamm, Kichererbsen und Safran im Tontopf)"
+    ],
+    "traditionalDrinks": [
+     "Kräftiger Schwarztee im Armudu-Glas (mit Thymian oder Zimt)",
+     "Ayran (salziges Joghurtgetränk)",
+     "Scherbet (Rose, Safran oder Granatapfel)"
+    ],
+    "streetFoodAndDesserts": [
+     "Qutab (dünne Fladen mit Kräutern, Fleisch oder Kürbis)",
+     "Schekerbura (mit Walnüssen gefülltes Nouruz-Gebäck)",
+     "Scheki-Halva (Haselnuss-Sirup-Süßspeise im Reismehlgitter)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nizami Gandschawi (Dichter des 12. Jh., Chamsa)",
+     "Üzeyir Hacıbəyov (Komponist der ersten Oper des muslimischen Ostens, „Leyli und Madschnun“, 1908)",
+     "Lotfi Zadeh (Begründer der Fuzzy-Logik, aufgewachsen in Baku)"
+    ],
+    "strongSectors": [
+     "Öl und Gas (BTC-Pipeline, Schah Deniz & TANAP)",
+     "Transit im Mittleren Korridor (Hafen Baku, Bahnstrecke Baku – Tiflis – Kars)",
+     "Landwirtschaft und Teppichknüpfen (Haselnüsse, Granatäpfel, aserbaidschanischer Teppich – UNESCO)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "In Baku sind Karten und kontaktloses Zahlen verbreitet; in den Regionen, auf Märkten und in kleinen Lokalen Bargeld in Manat mitnehmen.",
+    "tippingCulture": "Restaurants in Baku schlagen oft 10 % Service auf; sonst reichen 5-10 % Trinkgeld.",
+    "economicPillars": "Öl- und Gasexporte, Petrochemie, Transitlogistik, Landwirtschaft (Haselnüsse, Granatäpfel, Baumwolle) und wachsender Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Vom Kaspischen Meer in den Kaukasus: Baku, Gobustan, Quba – Chinalug & Scheki",
+   "routeSummary": "Eine 8-tägige Route: Bakus Altstadt (UNESCO) und moderne Skyline, die Felsbilder von Gobustan und die brennenden Hügel von Abşeron, dann nach Norden nach Quba und ins hoch gelegene Kaukasusdorf Chinalug und zum Schluss in die Seidenstraßenstadt Scheki.",
+   "totalDays": 8,
+   "idealDurationText": "8-Tage-Route",
+   "bestSeason": "April – Juni & September – Oktober (die Straße nach Chinalug kann im Winter verschneit sein)",
+   "transportMode": "Metro und Bolt in Baku; Tagestour oder Fahrer für Gobustan – Abşeron; Bus oder Fahrer nach Quba und Scheki",
+   "paceLevel": "Ausgewogen (Stadt + Geschichte + Berge)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Baku (Altstadt, Flame Towers & Boulevard)",
+     "recommendedDuration": "3 Tage (Zentrum und Museen)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Altstadt: Palast der Schirwanschahs & Jungfrauenturm",
+      "Heydər-Əliyev-Zentrum",
+      "Highland Park, Allee der Märtyrer & türkisches Gefallenendenkmal",
+      "Boulevard, Teppichmuseum & Flame Towers"
+     ],
+     "activities": [
+      "Durch die Gassen innerhalb der Altstadtmauern schlendern und vom Jungfrauenturm auf das Kaspische Meer blicken.",
+      "Mit der Standseilbahn oder zu Fuß in den Highland Park und bei Sonnenuntergang die Lichtshow der Flame Towers ansehen.",
+      "Am Boulevard spazieren, das Teppichmuseum besuchen und den Abend am Fontänenplatz und in der Nizami-Straße verbringen."
+     ],
+     "foodAndDrinks": [
+      "Schah-Plov & Dolma",
+      "Lülə- und Tikə-Kebab",
+      "Tee im Armudu-Glas mit Konfitüre"
+     ],
+     "criticalTips": [
+      "Für Metro und Busse braucht man eine BakuKart; sie gibt es an Automaten in den Metrostationen.",
+      "In Baku weht oft starker Wind; auch im Frühling und Herbst eine Windjacke einpacken."
+     ],
+     "mapsQuery": "Icherisheher, Baku, Azerbaijan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Gobustan & Abşeron (Felsbilder, Schlammvulkane, Yanar Dag)",
+     "recommendedDuration": "1 Tag (Tagesausflug ab Baku)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Felsbilder im Nationalpark Gobustan (UNESCO)",
+      "Schlammvulkane",
+      "Feuertempel Ateschgah (Suraxanı)",
+      "Yanar Dag (nie erlöschendes Erdgasfeuer)"
+     ],
+     "activities": [
+      "Das Museum von Gobustan besuchen und im Freigelände Jahrtausende alte Ritzungen von Menschen, Tieren und Booten ansehen.",
+      "Mit einem örtlichen Lada-Taxi über die Piste zu den Schlammvulkanen fahren und die blubbernden Krater aus der Nähe sehen.",
+      "Auf dem Rückweg Ateschgah besichtigen und den Tag in der Dämmerung am Feuer des Yanar Dag beschließen."
+     ],
+     "foodAndDrinks": [
+      "Qutab (mit Kräutern und Fleisch)",
+      "Gegrillter Kaspischer Kutum-Fisch",
+      "Ayran"
+     ],
+     "criticalTips": [
+      "Die Piste zu den Schlammvulkanen kann nach Regen gesperrt sein; alte Schuhe anziehen.",
+      "In Gobustan gibt es kaum Schatten; im Sommer früh morgens fahren, Hut und Wasser mitnehmen."
+     ],
+     "mapsQuery": "Gobustan National Park, Azerbaijan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Quba & Chinalug (Rote Siedlung & Kaukasus)",
+     "recommendedDuration": "2 Tage (Übernachtung in Quba + Tagesausflug nach Chinalug)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Rote Siedlung (Qırmızı Qəsəbə) der Bergjuden",
+      "Dorf Chinalug (~2.300 m, uraltes Dorf mit eigener Sprache)",
+      "Tängəaltı-Schlucht",
+      "Blick auf den Schahdag und Bergstraßen"
+     ],
+     "activities": [
+      "Den Fluss Qudyalçay überqueren und die Synagogen der Roten Siedlung sowie das Museum der Bergjuden besuchen.",
+      "Durch die Schluchten nach Chinalug fahren, die Steinhäuser erkunden und bei einer Familie Tee trinken.",
+      "Auf dem Rückweg eine kurze Wanderung in der Tängəaltı-Schlucht machen."
+     ],
+     "foodAndDrinks": [
+      "Düşbərə (winzige Teigtaschen in Brühe)",
+      "Äpfel aus Quba und Apfelkonfitüre",
+      "Thymian-Bergtee und Dorfkäse"
+     ],
+     "criticalTips": [
+      "Die Straße nach Chinalug kann im Winter und Frühjahr wegen Schnee oder Erdrutschen gesperrt sein; vorher nachfragen.",
+      "Chinalug ist ein konservatives Dorf; dezent kleiden und vor dem Fotografieren fragen."
+     ],
+     "mapsQuery": "Khinalug, Quba, Azerbaijan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Scheki (Khanpalast, Karawanserei & Kirche von Kisch)",
+     "recommendedDuration": "2 Tage (mit Halt in Schamachi unterwegs)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Khanpalast von Scheki (Schebeke-Buntglasfenster)",
+      "Obere Karawanserei",
+      "Albanische Kirche von Kisch",
+      "Freitagsmoschee von Schamachi (unterwegs)"
+     ],
+     "activities": [
+      "Den Khanpalast mit seinen ohne Nägel gefertigten Schebeke-Fenstern aus Holz und Buntglas und den Wandmalereien ansehen.",
+      "In einer Schebeke-Werkstatt den Handwerkern zusehen und die Herstellung der Scheki-Halva beobachten.",
+      "Ins nahe Dorf Kisch fahren und die albanische Kirche besuchen, die zu den ältesten des Kaukasus zählt."
+     ],
+     "foodAndDrinks": [
+      "Scheki-Piti",
+      "Scheki-Halva",
+      "Haselnusssüßigkeiten mit Tee"
+     ],
+     "criticalTips": [
+      "Im Inneren des Khanpalasts ist Fotografieren verboten.",
+      "Baku – Scheki dauert mit dem Bus etwa 5-6 Stunden; für die Rückfahrt bietet sich die Strecke über Qəbələ an."
+     ],
+     "mapsQuery": "Sheki Khan Palace, Sheki, Azerbaijan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Schah-Plov",
+     "Dolma",
+     "Piti",
+     "Lülə-Kebab"
+    ],
+    "drinks": [
+     "Schwarztee im Armudu-Glas",
+     "Ayran",
+     "Granatapfelsaft"
+    ],
+    "streetFoods": [
+     "Qutab",
+     "Schekerbura & Pachlava",
+     "Scheki-Halva"
+    ],
+    "diningAdvice": "Jede Mahlzeit endet mit Tee und Konfitüre; in Baku auf 10 % Service auf der Rechnung achten – dann ist kein Trinkgeld nötig."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Windjacke und eine warme Schicht für die Bergdörfer",
+     "Schultern und Knie bedeckende Kleidung für Moscheen und Dörfer, Tuch für Frauen",
+     "Bargeld in Manat für die Regionen",
+     "Hut, Sonnencreme und Wasser für Gobustan"
+    ],
+    "safetyAndEtiquette": [
+     "Gebiete nahe der armenischen Grenze und mit Minenwarnung nicht ohne Genehmigung betreten; auf markierten Wegen bleiben.",
+     "Keine Militär- oder Regierungsgebäude fotografieren; in Dörfern vor Personenfotos fragen."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Manat azerbaiyano (AZN)",
+   "bestMonths": "Abril – junio y septiembre – octubre; en julio – agosto Bakú puede llegar a 35 °C, mientras las zonas de montaña de Quba y Sheki son más frescas",
+   "safety": {
+    "crimeRateSummary": "La delincuencia callejera es baja y Bakú suele ser seguro de noche. Hay riesgo de minas en la frontera con Armenia y en antiguas zonas de conflicto, que solo se visitan con permiso oficial en circuitos organizados.",
+    "commonScams": [
+     "Taxistas no oficiales en el aeropuerto que piden tarifas infladas al centro",
+     "Algunos restaurantes de la Ciudad Vieja con cartas sin precios que inflan la cuenta",
+     "Vendedores de alfombras que cobran de más y no mencionan el certificado de exportación"
+    ],
+    "safeTravelTips": [
+     "En Bakú usa Bolt o Uber; el autobús H1 Aeroexpress es una opción barata del aeropuerto al centro.",
+     "No fotografíes instalaciones militares, puestos fronterizos ni edificios oficiales.",
+     "Si compras una alfombra antigua o tejida a mano, pide el certificado de exportación o podrías tener problemas en el aeropuerto."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido en Bakú y otras ciudades; débil en aldeas de montaña como Khinalug",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Disponible – eSIM internacionales como Airalo y eSIM de Azercell / Bakcell",
+    "bestCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Aceptable – buen metro y autobuses en Bakú; autobuses a las regiones y tren a Ganyá",
+    "costLevel": "Muy barato",
+    "singleTicketUsd": "~0.30 - 0.40 $",
+    "dailyPassUsd": "Sin abono diario – se recarga la BakuKart",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "189 Taxi"
+    ],
+    "taxiAdvice": "Los trayectos con Bolt en Bakú suelen costar 2-5 $; del aeropuerto al centro unos 10-15 $. Para Sheki, Quba y Gobustán es práctico contratar un conductor por día; acuerda el precio antes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.30 - 0.60 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Bajo a moderado (Estambul – Bakú directo ~3 h)",
+    "flightTip": "AZAL, THY, Pegasus y AJet vuelan directo a Bakú desde Estambul, Ankara y otras ciudades turcas. Las fronteras terrestres están en gran parte cerradas a viajeros desde 2020, así que comprueba la situación actual."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A los invitados se les ofrece té en vasos armudu con forma de pera, acompañado de mermelada o dulces.",
+     "El respeto a los mayores es importante: cédeles el asiento y sírveles primero en la mesa.",
+     "Al entrar en una casa se quitan los zapatos; llevar un pequeño regalo o dulces es de buena educación.",
+     "En Bakú la ropa es informal, pero en mezquitas y zonas rurales conviene cubrir hombros y rodillas."
+    ],
+    "festivals": [
+     "Novruz (hacia el 20-21 de marzo, la mayor fiesta del año)",
+     "Gran Premio de Azerbaiyán de Fórmula 1 (circuito urbano de Bakú, otoño)",
+     "Festival de la Granada de Goychay (octubre – noviembre)"
+    ],
+    "lifestyle": "La moderna Bakú, enriquecida por el petróleo a orillas del Caspio, se une a la cultura de las casas de té, la música mugam, las alfombras y la hospitalaria vida rural del Cáucaso."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ciudad Vieja: Palacio de los Shirvanshah y Torre de la Doncella (Bakú, UNESCO)",
+     "Centro Heydar Aliyev (diseño de Zaha Hadid)",
+     "Flame Towers, Highland Park y bulevar de Bakú",
+     "Arte rupestre de Gobustán y volcanes de lodo (UNESCO)",
+     "Yanar Dag y templo del fuego Ateshgah (Absherón)",
+     "Palacio del Kan y caravasar histórico de Sheki (UNESCO)"
+    ],
+    "bestSeasons": "Abril – junio y septiembre – octubre son ideales; en invierno se puede esquiar en Shahdag.",
+    "travelStyleTip": "Consigue una BakuKart para el metro de Bakú y usa Bolt; a Sheki y Quba se llega en autobús desde la Terminal Internacional de Bakú o con conductor privado."
+   },
+   "religion": {
+    "primaryReligions": "Musulmanes (~96 %; mayoría chií, cerca de un tercio suní), ortodoxos rusos (~2 %), pequeñas comunidades judías (judíos de montaña de Quba) y cristianas udíes.",
+    "respectNorms": "Un país laico con vida cotidiana relajada. En las mezquitas se quitan los zapatos, las mujeres se cubren el pelo y no se fotografía a quien reza.",
+    "sacredSites": [
+     "Mezquita de Bibi-Heybat (Bakú)",
+     "Templo del fuego Ateshgah (Surajani)",
+     "Mezquita del Viernes de Shamakhi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Azerbaiyano (con alfabeto latino desde 1991). El turco se entiende en gran medida; en Bakú se habla mucho ruso.",
+    "englishProficiency": "Moderado en hoteles de Bakú y entre jóvenes; bajo en las regiones. Con turco uno se entiende fácilmente en todas partes.",
+    "phrases": [
+     {
+      "phrase": "Salam",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "sah-LAHM"
+     },
+     {
+      "phrase": "Çox sağ olun",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "chokh sagh o-LUN"
+     },
+     {
+      "phrase": "Zəhmət olmasa",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "zah-MAT ol-ma-SA"
+     },
+     {
+      "phrase": "Bu neçəyədir?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "bu ne-che-YE-dir"
+     },
+     {
+      "phrase": "Nuş olsun!",
+      "meaning": "¡Buen provecho!",
+      "translation": "¡Buen provecho!",
+      "pronunciation": "noosh ol-SUN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Tierra de la Albania caucásica, los Shirvanshah y los safávidas, pasó a dominio ruso en el siglo XIX. La República Democrática de Azerbaiyán de 1918 fue la primera república del Oriente musulmán; tras la etapa soviética, declaró su independencia en 1991.",
+    "milestones": [
+     "1918: fundación de la República Democrática de Azerbaiyán",
+     "1920: comienzo del dominio soviético",
+     "1991: declaración de independencia",
+     "1994: firma del “Contrato del Siglo” del petróleo del Caspio"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Plov / Shah plov (arroz con carne, castañas y frutos secos horneado en lavash)",
+     "Dolma (hojas de parra, col y verduras rellenas “tres hermanas”)",
+     "Piti de Sheki (cordero, garbanzos y azafrán en olla de barro)"
+    ],
+    "traditionalDrinks": [
+     "Té negro fuerte en vaso armudu (con tomillo o canela)",
+     "Ayran (bebida de yogur salada)",
+     "Sorbete (de rosa, azafrán o granada)"
+    ],
+    "streetFoodAndDesserts": [
+     "Qutab (tortas finas rellenas de hierbas, carne o calabaza)",
+     "Shekerbura (pastel de nueces de Novruz)",
+     "Halva de Sheki (avellana y almíbar en una red de harina de arroz)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nizami Ganyaví (poeta del siglo XII, el Jamsa)",
+     "Uzeyir Hajibeyov (autor de la primera ópera del Oriente musulmán, “Leyli y Majnún”, 1908)",
+     "Lotfi Zadeh (creador de la lógica difusa, criado en Bakú)"
+    ],
+    "strongSectors": [
+     "Petróleo y gas (oleoducto BTC, Shah Deniz y TANAP)",
+     "Tránsito del Corredor Medio (puerto de Bakú, ferrocarril Bakú – Tiflis – Kars)",
+     "Agricultura y alfombras (avellanas, granadas, alfombra azerbaiyana – UNESCO)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "En Bakú se paga mucho con tarjeta y sin contacto; en las regiones, mercados y pequeños locales lleva manats en efectivo.",
+    "tippingCulture": "Los restaurantes de Bakú suelen añadir un 10 % de servicio; si no, basta con un 5-10 % de propina.",
+    "economicPillars": "Exportación de petróleo y gas, petroquímica, logística de tránsito, agricultura (avellanas, granadas, algodón) y turismo en auge."
+   }
+  },
+  "itin": {
+   "routeName": "Del Caspio al Cáucaso: Bakú, Gobustán, Quba – Khinalug y Sheki",
+   "routeSummary": "Una ruta de 8 días que empieza en la Ciudad Vieja de Bakú (UNESCO) y su horizonte moderno, sigue por el arte rupestre de Gobustán y las colinas ardientes de Absherón, sube al norte a Quba y a la aldea caucásica de Khinalug y termina en Sheki, ciudad de la Ruta de la Seda.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 8 días",
+   "bestSeason": "Abril – junio y septiembre – octubre (la carretera a Khinalug puede cerrarse por nieve en invierno)",
+   "transportMode": "Metro y Bolt en Bakú; excursión o conductor para Gobustán – Absherón; autobús o conductor privado a Quba y Sheki",
+   "paceLevel": "Equilibrado (ciudad + historia + montaña)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bakú (Ciudad Vieja, Flame Towers y bulevar)",
+     "recommendedDuration": "3 días (centro y museos)",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Ciudad Vieja: Palacio de los Shirvanshah y Torre de la Doncella",
+      "Centro Heydar Aliyev",
+      "Highland Park, Callejón de los Mártires y monumento a los mártires turcos",
+      "Bulevar, Museo de la Alfombra y Flame Towers"
+     ],
+     "activities": [
+      "Recorre las callejuelas dentro de las murallas y contempla el Caspio desde lo alto de la Torre de la Doncella.",
+      "Sube en funicular o por las escaleras al Highland Park y mira el espectáculo de luces de las Flame Towers al atardecer.",
+      "Pasea por el bulevar, visita el Museo de la Alfombra y pasa la tarde en la plaza de las Fuentes y la calle Nizami."
+     ],
+     "foodAndDrinks": [
+      "Shah plov y dolma",
+      "Kebab lülə y tikə",
+      "Té en vaso armudu con mermelada"
+     ],
+     "criticalTips": [
+      "Para metro y autobús necesitas la BakuKart; se compra y recarga en las máquinas de las estaciones.",
+      "En Bakú el viento puede ser muy fuerte; lleva un cortavientos incluso en primavera y otoño."
+     ],
+     "mapsQuery": "Icherisheher, Baku, Azerbaijan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Gobustán y Absherón (arte rupestre, volcanes de lodo, Yanar Dag)",
+     "recommendedDuration": "1 día (excursión desde Bakú)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Arte rupestre del Parque Nacional de Gobustán (UNESCO)",
+      "Volcanes de lodo",
+      "Templo del fuego Ateshgah (Surajani)",
+      "Yanar Dag (fuego de gas natural que nunca se apaga)"
+     ],
+     "activities": [
+      "Visita el museo de Gobustán y luego los grabados milenarios de personas, animales y barcas al aire libre.",
+      "Sube en un taxi Lada local por la pista de tierra hasta los volcanes de lodo y mira de cerca los cráteres burbujeantes.",
+      "De regreso visita Ateshgah y termina el día al anochecer con las llamas de Yanar Dag."
+     ],
+     "foodAndDrinks": [
+      "Qutab (de hierbas y carne)",
+      "Pescado kutum del Caspio a la parrilla",
+      "Ayran"
+     ],
+     "criticalTips": [
+      "La pista a los volcanes de lodo puede cerrarse tras la lluvia; lleva zapatos viejos.",
+      "En Gobustán hay poca sombra; en verano sal temprano y lleva sombrero y agua."
+     ],
+     "mapsQuery": "Gobustan National Park, Azerbaijan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Quba y Khinalug (Asentamiento Rojo y montañas del Cáucaso)",
+     "recommendedDuration": "2 días (noche en Quba + excursión a Khinalug)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Asentamiento Rojo (Qırmızı Qəsəbə) de los judíos de montaña",
+      "Aldea de Khinalug (~2.300 m, antigua aldea con lengua propia)",
+      "Cañón de Tangaalti",
+      "Vistas del Shahdag y carreteras de montaña"
+     ],
+     "activities": [
+      "Cruza el río Gudiyalchay para ver las sinagogas del Asentamiento Rojo y el Museo de los Judíos de Montaña.",
+      "Sube entre gargantas hasta Khinalug, recorre sus casas de piedra y toma té en una casa del pueblo.",
+      "De regreso haz una breve caminata por el cañón de Tangaalti."
+     ],
+     "foodAndDrinks": [
+      "Dushbara (diminutos raviolis en caldo)",
+      "Manzanas de Quba y mermelada de manzana",
+      "Té de montaña con tomillo y queso de pueblo"
+     ],
+     "criticalTips": [
+      "La carretera a Khinalug puede cerrarse en invierno y primavera por nieve o desprendimientos; pregunta antes de salir.",
+      "Khinalug es una aldea conservadora; viste con recato y pide permiso antes de fotografiar a la gente."
+     ],
+     "mapsQuery": "Khinalug, Quba, Azerbaijan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Sheki (Palacio del Kan, caravasar e iglesia de Kish)",
+     "recommendedDuration": "2 días (con parada en Shamakhi por el camino)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Palacio del Kan de Sheki (vidrieras shebeke)",
+      "Caravasar Superior",
+      "Iglesia albana de Kish",
+      "Mezquita del Viernes de Shamakhi (de camino)"
+     ],
+     "activities": [
+      "Visita el Palacio del Kan con sus ventanas shebeke de madera y vidrio de colores sin clavos y sus murales.",
+      "Observa a los artesanos en un taller de shebeke y cómo se elabora la halva de Sheki.",
+      "Acércate al pueblo de Kish para ver la iglesia albana, considerada una de las más antiguas del Cáucaso."
+     ],
+     "foodAndDrinks": [
+      "Piti de Sheki",
+      "Halva de Sheki",
+      "Dulces de avellana con té"
+     ],
+     "criticalTips": [
+      "No se permite hacer fotos dentro del Palacio del Kan.",
+      "Bakú – Sheki son unas 5-6 horas en autobús; para variar, vuelve por Gabala."
+     ],
+     "mapsQuery": "Sheki Khan Palace, Sheki, Azerbaijan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Shah plov",
+     "Dolma",
+     "Piti",
+     "Kebab lülə"
+    ],
+    "drinks": [
+     "Té negro en vaso armudu",
+     "Ayran",
+     "Zumo de granada"
+    ],
+    "streetFoods": [
+     "Qutab",
+     "Shekerbura y pajlava",
+     "Halva de Sheki"
+    ],
+    "diningAdvice": "Toda comida acaba con té y mermelada; en Bakú revisa si la cuenta incluye un 10 % de servicio, en cuyo caso no hace falta propina."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Cortavientos y una capa de abrigo para las aldeas de montaña",
+     "Ropa que cubra hombros y rodillas para mezquitas y aldeas, y pañuelo para mujeres",
+     "Manats en efectivo para las regiones",
+     "Sombrero, protector solar y agua para Gobustán"
+    ],
+    "safetyAndEtiquette": [
+     "No entres sin permiso en zonas cercanas a la frontera armenia o con aviso de minas; no salgas de los caminos marcados.",
+     "No fotografíes edificios militares ni oficiales; en los pueblos pide permiso para fotografiar a la gente."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Азербайджанский манат (AZN)",
+   "bestMonths": "Апрель – июнь и сентябрь – октябрь; в июле – августе в Баку до 35 °C, а горные районы Губы и Шеки прохладнее",
+   "safety": {
+    "crimeRateSummary": "Уличная преступность низкая, Баку и ночью в целом безопасен. Вдоль армянской границы и в бывших зонах конфликта есть минная опасность; туда можно попасть только с официальным разрешением в организованных турах.",
+    "commonScams": [
+     "Неофициальные таксисты в аэропорту, требующие завышенную цену до города",
+     "Некоторые рестораны Старого города с меню без цен, выставляющие завышенный счёт",
+     "Продавцы ковров, завышающие цену и умалчивающие о сертификате на вывоз"
+    ],
+    "safeTravelTips": [
+     "В Баку пользуйтесь Bolt или Uber; дешёвый вариант из аэропорта в город — автобус H1 Aeroexpress.",
+     "Не фотографируйте военные объекты, пограничные посты и правительственные здания.",
+     "Покупая старый или ручной ковёр, попросите сертификат на вывоз, иначе возможны проблемы в аэропорту."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Баку и других городах; слабый в горных сёлах вроде Хыналыга",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Доступна – международные eSIM вроде Airalo и eSIM от Azercell / Bakcell",
+    "bestCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне – хорошие метро и автобусы в Баку; в регионы автобусы, в Гянджу поезд",
+    "costLevel": "Очень дёшево",
+    "singleTicketUsd": "~0.30 - 0.40 $",
+    "dailyPassUsd": "Дневного билета нет – пополняется BakıKart",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "189 Taxi"
+    ],
+    "taxiAdvice": "Поездки на Bolt по Баку обычно стоят 2-5 $, из аэропорта в центр — около 10-15 $. Для Шеки, Губы и Гобустана удобно нанять водителя на день; цену обсудите заранее."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "0.30 - 0.60 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Низкий–средний (Стамбул – Баку прямой ~3 ч)",
+    "flightTip": "AZAL, THY, Pegasus и AJet летают в Баку напрямую из Стамбула, Анкары и других городов Турции. Сухопутные границы с 2020 года в основном закрыты для пассажиров — уточняйте текущую ситуацию."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Гостям подают чай в грушевидных стаканах армуду с вареньем, сладостями или сахаром.",
+     "Уважение к старшим важно: уступайте место и за столом подавайте им первыми.",
+     "Входя в дом, снимают обувь; принести хозяевам небольшой подарок или сладости — хороший тон.",
+     "В Баку одеваются свободно, но в мечетях и в сёлах лучше закрывать плечи и колени."
+    ],
+    "festivals": [
+     "Новруз (около 20-21 марта, главный праздник года)",
+     "Гран-при Азербайджана «Формулы-1» (городская трасса Баку, осень)",
+     "Фестиваль граната в Гёйчае (октябрь – ноябрь)"
+    ],
+    "lifestyle": "Современный нефтяной Баку на берегу Каспия соседствует с чайханами, мугамом, ковроткачеством и гостеприимной жизнью кавказских сёл."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ичеришехер: дворец Ширваншахов и Девичья башня (Баку, ЮНЕСКО)",
+     "Центр Гейдара Алиева (проект Захи Хадид)",
+     "Пламенные башни, Нагорный парк и Бакинский бульвар",
+     "Петроглифы Гобустана и грязевые вулканы (ЮНЕСКО)",
+     "Янардаг и храм огня Атешгях (Апшерон)",
+     "Дворец шекинских ханов и старинный караван-сарай (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Лучше всего апрель – июнь и сентябрь – октябрь; зимой можно кататься на лыжах в Шахдаге.",
+    "travelStyleTip": "Купите BakıKart для метро и пользуйтесь Bolt; в Шеки и Губу — автобусом с Бакинского международного автовокзала или с водителем."
+   },
+   "religion": {
+    "primaryReligions": "Мусульмане (~96 %; в основном шииты, около трети сунниты), русские православные (~2 %), небольшие еврейские (горские евреи Губы) и удинские христианские общины.",
+    "respectNorms": "Светская страна с непринуждённой жизнью. В мечетях снимают обувь, женщины покрывают голову; не фотографируйте молящихся.",
+    "sacredSites": [
+     "Мечеть Биби-Эйбат (Баку)",
+     "Храм огнепоклонников Атешгях (Сураханы)",
+     "Джума-мечеть Шамахы"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Азербайджанский (с 1991 года на латинице). Турецкий в основном понятен; в Баку широко говорят по-русски.",
+    "englishProficiency": "Средний в отелях Баку и у молодёжи, низкий в регионах. С турецким языком легко объясниться везде.",
+    "phrases": [
+     {
+      "phrase": "Salam",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "sah-LAHM"
+     },
+     {
+      "phrase": "Çox sağ olun",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "chokh sagh o-LUN"
+     },
+     {
+      "phrase": "Zəhmət olmasa",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "zah-MAT ol-ma-SA"
+     },
+     {
+      "phrase": "Bu neçəyədir?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "bu ne-che-YE-dir"
+     },
+     {
+      "phrase": "Nuş olsun!",
+      "meaning": "Приятного аппетита!",
+      "translation": "Приятного аппетита!",
+      "pronunciation": "noosh ol-SUN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Земли Кавказской Албании, Ширваншахов и Сефевидов в XIX веке вошли в состав Российской империи. Азербайджанская Демократическая Республика 1918 года стала первой республикой мусульманского Востока; после советского периода в 1991 году провозглашена независимость.",
+    "milestones": [
+     "1918: основание Азербайджанской Демократической Республики",
+     "1920: установление советской власти",
+     "1991: провозглашение независимости",
+     "1994: подписан «Контракт века» по каспийской нефти"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Плов / шах-плов (рис с мясом, каштанами и сухофруктами в лаваше)",
+     "Долма (в виноградных листьях, капусте и «три сестры» из овощей)",
+     "Шекинский пити (баранина с нутом и шафраном в глиняном горшочке)"
+    ],
+    "traditionalDrinks": [
+     "Крепкий чёрный чай в армуду (с чабрецом или корицей)",
+     "Айран",
+     "Шербет (розовый, шафрановый или гранатовый)"
+    ],
+    "streetFoodAndDesserts": [
+     "Кутабы (тонкие лепёшки с зеленью, мясом или тыквой)",
+     "Шекербура (новрузская сладость с орехами)",
+     "Шекинская халва (фундук и сироп в сеточке из рисовой муки)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Низами Гянджеви (поэт XII века, «Хамсе»)",
+     "Узеир Гаджибеков (первая опера мусульманского Востока «Лейли и Меджнун», 1908)",
+     "Лотфи Заде (основатель нечёткой логики, вырос в Баку)"
+    ],
+    "strongSectors": [
+     "Нефть и газ (нефтепровод БТД, Шахдениз и TANAP)",
+     "Транзит Среднего коридора (Бакинский порт, железная дорога Баку – Тбилиси – Карс)",
+     "Сельское хозяйство и ковроткачество (фундук, гранат, азербайджанский ковёр – ЮНЕСКО)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В Баку повсюду принимают карты и бесконтактную оплату; в регионах, на рынках и в небольших кафе нужны наличные манаты.",
+    "tippingCulture": "В ресторанах Баку часто добавляют 10 % за обслуживание; если нет, достаточно 5-10 % чаевых.",
+    "economicPillars": "Экспорт нефти и газа, нефтехимия, транзитная логистика, сельское хозяйство (фундук, гранат, хлопок) и растущий туризм."
+   }
+  },
+  "itin": {
+   "routeName": "От Каспия до Кавказа: Баку, Гобустан, Губа – Хыналыг и Шеки",
+   "routeSummary": "Маршрут на 8 дней: Старый город Баку (ЮНЕСКО) и современные небоскрёбы, петроглифы Гобустана и горящие холмы Апшерона, затем на север в Губу и высокогорный Хыналыг, а в завершение — город Великого шёлкового пути Шеки.",
+   "totalDays": 8,
+   "idealDurationText": "Маршрут на 8 дней",
+   "bestSeason": "Апрель – июнь и сентябрь – октябрь (дорогу в Хыналыг зимой может завалить снегом)",
+   "transportMode": "Метро и Bolt в Баку; экскурсия или водитель в Гобустан – Апшерон; автобус или водитель в Губу и Шеки",
+   "paceLevel": "Сбалансированный (город + история + горы)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Баку (Ичеришехер, Пламенные башни и бульвар)",
+     "recommendedDuration": "3 дня (центр и музеи)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Ичеришехер: дворец Ширваншахов и Девичья башня",
+      "Центр Гейдара Алиева",
+      "Нагорный парк, Аллея шехидов и памятник турецким шехидам",
+      "Бульвар, Музей ковра и Пламенные башни"
+     ],
+     "activities": [
+      "Погуляйте по улочкам внутри крепостных стен и посмотрите на Каспий с вершины Девичьей башни.",
+      "Поднимитесь на фуникулёре или пешком в Нагорный парк и на закате посмотрите световое шоу Пламенных башен.",
+      "Прогуляйтесь по бульвару, зайдите в Музей ковра, а вечер проведите на площади Фонтанов и улице Низами."
+     ],
+     "foodAndDrinks": [
+      "Шах-плов и долма",
+      "Люля- и тикя-кебаб",
+      "Чай в армуду с вареньем"
+     ],
+     "criticalTips": [
+      "Для метро и автобусов нужна BakıKart; её покупают и пополняют в автоматах на станциях метро.",
+      "В Баку бывает очень ветрено; берите ветровку даже весной и осенью."
+     ],
+     "mapsQuery": "Icherisheher, Baku, Azerbaijan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Гобустан и Апшерон (петроглифы, грязевые вулканы, Янардаг)",
+     "recommendedDuration": "1 день (поездка из Баку)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Петроглифы национального парка Гобустан (ЮНЕСКО)",
+      "Грязевые вулканы",
+      "Храм огня Атешгях (Сураханы)",
+      "Янардаг (негаснущее пламя природного газа)"
+     ],
+     "activities": [
+      "Посетите музей Гобустана, а затем увидьте на открытой площадке тысячелетние изображения людей, животных и лодок.",
+      "На местном такси «Лада» доберитесь по грунтовке до грязевых вулканов и рассмотрите бурлящие кратеры вблизи.",
+      "На обратном пути посетите Атешгях и завершите день в сумерках у пламени Янардага."
+     ],
+     "foodAndDrinks": [
+      "Кутабы с зеленью и мясом",
+      "Жареная каспийская рыба кутум",
+      "Айран"
+     ],
+     "criticalTips": [
+      "После дождя дорогу к грязевым вулканам могут закрыть; надевайте старую обувь.",
+      "В Гобустане мало тени; летом выезжайте рано утром, возьмите шляпу и воду."
+     ],
+     "mapsQuery": "Gobustan National Park, Azerbaijan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Губа и Хыналыг (Красная Слобода и горы Кавказа)",
+     "recommendedDuration": "2 дня (ночёвка в Губе + поездка в Хыналыг)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Красная Слобода (Гырмызы Гясябя) горских евреев",
+      "Село Хыналыг (~2300 м, древнее село со своим языком)",
+      "Каньон Тенгеалты",
+      "Виды на Шахдаг и горные дороги"
+     ],
+     "activities": [
+      "Перейдите реку Кудиалчай и осмотрите синагоги Красной Слободы и Музей горских евреев.",
+      "Поднимитесь по ущельям в Хыналыг, осмотрите каменные дома и выпейте чаю в сельском доме.",
+      "На обратном пути прогуляйтесь по каньону Тенгеалты."
+     ],
+     "foodAndDrinks": [
+      "Дюшбара (крошечные пельмени в бульоне)",
+      "Губинские яблоки и яблочное варенье",
+      "Горный чай с чабрецом и деревенский сыр"
+     ],
+     "criticalTips": [
+      "Дорогу в Хыналыг зимой и весной могут закрыть из-за снега или оползней; уточняйте перед выездом.",
+      "Хыналыг — консервативное село; одевайтесь скромно и спрашивайте разрешения на фото."
+     ],
+     "mapsQuery": "Khinalug, Quba, Azerbaijan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Шеки (Ханский дворец, караван-сарай и церковь в Кише)",
+     "recommendedDuration": "2 дня (с остановкой в Шамахы по пути)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Дворец шекинских ханов (витражи шебеке)",
+      "Верхний караван-сарай",
+      "Албанская церковь в Кише",
+      "Джума-мечеть Шамахы (по пути)"
+     ],
+     "activities": [
+      "Осмотрите Ханский дворец с витражами шебеке из дерева и цветного стекла без гвоздей и его росписи.",
+      "Посмотрите на работу мастеров шебеке и на приготовление шекинской халвы.",
+      "Съездите в соседнее село Киш к албанской церкви, одной из древнейших на Кавказе."
+     ],
+     "foodAndDrinks": [
+      "Шекинский пити",
+      "Шекинская халва",
+      "Сладости с фундуком и чай"
+     ],
+     "criticalTips": [
+      "Внутри Ханского дворца фотографировать запрещено.",
+      "Баку – Шеки на автобусе около 5-6 часов; обратно можно ехать через Габалу."
+     ],
+     "mapsQuery": "Sheki Khan Palace, Sheki, Azerbaijan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Шах-плов",
+     "Долма",
+     "Пити",
+     "Люля-кебаб"
+    ],
+    "drinks": [
+     "Чёрный чай в армуду",
+     "Айран",
+     "Гранатовый сок"
+    ],
+    "streetFoods": [
+     "Кутабы",
+     "Шекербура и пахлава",
+     "Шекинская халва"
+    ],
+    "diningAdvice": "Каждая трапеза завершается чаем с вареньем; в Баку проверьте, включены ли в счёт 10 % за обслуживание — тогда чаевые не нужны."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Ветровка и тёплая одежда для горных сёл",
+     "Одежда, закрывающая плечи и колени, для мечетей и сёл; платок для женщин",
+     "Наличные манаты для регионов",
+     "Шляпа, солнцезащитный крем и вода для Гобустана"
+    ],
+    "safetyAndEtiquette": [
+     "Не заходите без разрешения в районы у армянской границы и в зоны с предупреждением о минах; держитесь обозначенных дорог.",
+     "Не снимайте военные и государственные здания; в сёлах спрашивайте разрешения на фото людей."
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,1257 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "GBP (£ İngiliz Sterlini)",
+   "bestMonths": "Mayıs – Eylül (uzun günler, en kuru dönem); İskoçya için Haziran – Ağustos; Aralık Noel atmosferi için güzeldir",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenlidir. Londra’da scooter veya bisikletli hırsızların telefon kapkaçı, kalabalık turistik noktalarda yankesicilik ve gece hayatı bölgelerinde kavgalar en sık görülen sorunlardır.",
+    "commonScams": [
+     "Kaldırımda elinizdeki telefonu kapıp scooterla kaçan hırsızlar",
+     "Westminster Köprüsü’nde üç kâğıt (“find the lady”) oyunu çeteleri",
+     "Lisanssız “minicab” şoförlerinin gece kulüp çıkışlarında yolcu toplaması"
+    ],
+    "safeTravelTips": [
+     "Kaldırımın yola yakın tarafında telefonla yürümeyin; telefonu iki elinizle tutun.",
+     "Yalnızca siyah taksi (black cab) ya da uygulama üzerinden önceden rezerve edilmiş araçlara binin.",
+     "Trafik soldan akar; karşıya geçerken önce sağa bakın (yere yazılı uyarıları izleyin)."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (acil olmayan: 101)",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G/5G; İskoç Highlands’ta kopmalar olabilir)",
+    "costPerGbUsd": "~1 - 2 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (Londra metrosu ve ulusal demiryolları)",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "~3.90 $ (Londra Zone 1 temassız 2.90 £); otobüs 1.75 £",
+    "dailyPassUsd": "~12 $ (Zone 1-2 günlük ücret tavanı ~8.90 £)",
+    "popularRideApps": [
+     "Citymapper",
+     "TfL Go",
+     "Uber",
+     "Bolt",
+     "Trainline"
+    ],
+    "taxiAdvice": "Oyster yerine temassız banka kartı veya telefon kullanın; günlük ve haftalık ücret tavanı otomatik uygulanır. Şehirlerarası tren biletlerini önceden (“Advance”) almak fiyatı ciddi düşürür. Siyah taksiler güvenli ama pahalıdır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "65 - 95 $",
+    "dailyBudgetMidrangeUsd": "160 - 250 $",
+    "budgetMealUsd": "13 - 22 $ (pub yemeği; marketlerde “meal deal” ~5 $)",
+    "coffeeUsd": "4 - 5.50 $",
+    "waterBottleUsd": "1.20 - 2 $",
+    "hostelDormUsd": "35 - 65 $",
+    "hotel3StarUsd": "130 - 230 $ (Londra; diğer şehirlerde daha uygun)",
+    "flightCostIndex": "Düşük (direkt ~4 sa)",
+    "flightTip": "İstanbul, Ankara, İzmir, Antalya ve Dalaman’dan Londra (Heathrow, Gatwick, Stansted, Luton) ve Manchester’a direkt uçuşlar vardır; Edinburgh’a da direkt seferler bulunur."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hiya / Hello",
+      "meaning": "Selam / Merhaba",
+      "translation": "Selam / Merhaba",
+      "pronunciation": "Hayya / Helou"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Teşekkürler (gündelik) / Şerefe",
+      "translation": "Teşekkürler (gündelik) / Şerefe",
+      "pronunciation": "Çiırz"
+     },
+     {
+      "phrase": "Excuse me / Sorry",
+      "meaning": "Affedersiniz / Pardon",
+      "translation": "Affedersiniz / Pardon",
+      "pronunciation": "Ekskyuz mi / Sori"
+     },
+     {
+      "phrase": "How much is this?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "Hav maç iz dis?"
+     },
+     {
+      "phrase": "Could I have the bill, please?",
+      "meaning": "Hesabı alabilir miyim, lütfen?",
+      "translation": "Hesabı alabilir miyim, lütfen?",
+      "pronunciation": "Kud ay hev dı bil, pliz?"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Birleşik Krallık: Londra, Bath & Stonehenge, York ve Edinburgh",
+   "routeSummary": "Londra’nın kraliyet mirası ve ücretsiz müzeleriyle başlayıp Bath’ın Roma hamamları ve Stonehenge’in gizemli taşlarına, York’un ortaçağ surlarına ve Edinburgh üzerinden İskoç Yaylaları’na uzanan, trenle yapılan 10 günlük rota.",
+   "totalDays": 10,
+   "idealDurationText": "10 Günlük İngiltere & İskoçya Rotası",
+   "bestSeason": "Mayıs – Eylül (İskoçya için Haziran – Ağustos)",
+   "transportMode": "Şehirlerarası tren (Advance biletler) + Londra metrosu + Highlands için günübirlik tur",
+   "paceLevel": "Dengeli-Yoğun (uzun tren yolculukları dahil)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Fish & chips",
+     "Sunday roast",
+     "Full English breakfast",
+     "Haggis (İskoçya)"
+    ],
+    "drinks": [
+     "Sütlü İngiliz çayı",
+     "Cask ale (fıçı birası)",
+     "İskoç viskisi"
+    ],
+    "streetFoods": [
+     "Cornish pasty",
+     "Scone ve clotted cream",
+     "Sticky toffee pudding"
+    ],
+    "diningAdvice": "Pub’larda sipariş ve ödeme barda yapılır, masada servis beklenmez. Londra restoranları hesaba genellikle %12,5 servis ücreti ekler; ayrıca bahşiş gerekmez. Full English kahvaltıda pastırma (bacon) ve sosisler domuz etidir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Su geçirmez mont ve şemsiye",
+     "G tipi (İngiliz, üç uçlu) priz adaptörü",
+     "Temassız banka kartı veya telefon cüzdanı",
+     "Katmanlı giyim (İskoçya serin ve rüzgârlı)"
+    ],
+    "safetyAndEtiquette": [
+     "Sıraya girmek (queueing) kutsaldır; asla sıra kesmeyin.",
+     "Trafik soldan akar; karşıya geçerken önce sağa bakın.",
+     "Telefonunuzu kaldırımın yola yakın tarafında elinizde taşımayın."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Londra (Kraliyet Mirası ve Dünya Müzeleri)",
+     "recommendedDuration": "4 Gün (ana semtler ve müzeler için)",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Westminster Sarayı, Big Ben ve Westminster Abbey",
+      "British Museum ve National Gallery (ücretsiz)",
+      "Londra Kulesi ve Tower Bridge",
+      "Borough Market ve South Bank"
+     ],
+     "activities": [
+      "Buckingham Sarayı’nda nöbet değişimini izleyip St James’s Park üzerinden Westminster’a yürüyün.",
+      "British Museum’da Rosetta Taşı’nı görün; büyük müzelerin çoğu ücretsizdir.",
+      "Thames kıyısında South Bank boyunca yürüyüp Borough Market’te öğle yemeği yiyin."
+     ],
+     "foodAndDrinks": [
+      "Fish & chips (bezelye püresiyle)",
+      "Sunday roast ve Yorkshire pudding",
+      "Scone, clotted cream ve çayla afternoon tea"
+     ],
+     "criticalTips": [
+      "Londra Kulesi ve Westminster Abbey biletlerini online alın; kuyruklar uzundur.",
+      "Metroda yürüyen merdivenlerde sağda durun, sol taraf yürüyenler içindir."
+     ],
+     "mapsQuery": "Westminster, London, United Kingdom"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Bath & Stonehenge (Roma Hamamları ve Tarih Öncesi Taşlar)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Roma Hamamları (Roman Baths)",
+      "Royal Crescent ve Gürcü mimarisi",
+      "Bath Abbey",
+      "Stonehenge (UNESCO)"
+     ],
+     "activities": [
+      "2.000 yıllık Roma Hamamları’nda termal suyun aktığı antik havuzları gezin.",
+      "Royal Crescent ve The Circus’ın bal renkli Gürcü cephelerinde yürüyün.",
+      "Bath’tan günübirlik turla veya trenle Salisbury üzerinden Stonehenge’e gidin."
+     ],
+     "foodAndDrinks": [
+      "Sally Lunn çöreği (Bath’ın tarihî ekmeği)",
+      "Cornish pasty (etli hamur işi)",
+      "Somerset elma şırası (cider)"
+     ],
+     "criticalTips": [
+      "Stonehenge biletini saatli olarak online alın; taşların yanına yalnızca özel turlarla girilir.",
+      "Londra–Bath treni yaklaşık 1,5 saattir; “Advance” biletler çok daha ucuzdur."
+     ],
+     "mapsQuery": "Roman Baths, Bath, United Kingdom"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: York (Ortaçağ Surları ve Katedral)",
+     "recommendedDuration": "1-2 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "York Minster katedrali",
+      "The Shambles ortaçağ sokağı",
+      "Şehir surları (City Walls) yürüyüşü",
+      "Ulusal Demiryolu Müzesi (ücretsiz)"
+     ],
+     "activities": [
+      "York Minster’ın kulesine tırmanıp şehri yukarıdan görün.",
+      "Yaklaşık 3 km’lik ortaçağ surları üzerinde şehri çevreleyen yürüyüşü yapın.",
+      "The Shambles’ın eğri büğrü ahşap evleri arasında dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Yorkshire pudding (sos ve rosto ile)",
+      "Bettys’te afternoon tea",
+      "Wensleydale peyniri"
+     ],
+     "criticalTips": [
+      "The Shambles öğleden sonra çok kalabalıktır; sabah erken gidin.",
+      "York Minster’da ayin saatlerinde ziyaret kısıtlanabilir; saatleri önceden kontrol edin."
+     ],
+     "mapsQuery": "York Minster, York, United Kingdom"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Edinburgh & İskoç Yaylaları (Kale, Göller ve Dağlar)",
+     "recommendedDuration": "3 Gün (1 gün Highlands turu dahil)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Edinburgh Kalesi ve Royal Mile",
+      "Arthur’s Seat tepesi",
+      "Loch Ness ve Glencoe (Highlands günübirlik turu)",
+      "Holyroodhouse Sarayı"
+     ],
+     "activities": [
+      "Royal Mile boyunca Edinburgh Kalesi’nden Holyroodhouse Sarayı’na yürüyün.",
+      "Gün batımında Arthur’s Seat’e çıkıp şehri ve denizi izleyin.",
+      "Glencoe vadisi ve Loch Ness’i kapsayan bir günlük Highlands turuna katılın."
+     ],
+     "foodAndDrinks": [
+      "Haggis, neeps & tatties (İskoç milli yemeği; koyun sakatatı)",
+      "Single malt İskoç viskisi",
+      "Cranachan ve shortbread"
+     ],
+     "criticalTips": [
+      "Ağustos’taki Fringe festivalinde konaklama fiyatları katlanır; aylar önce rezervasyon yapın.",
+      "Highlands’ta yazın tatarcık (midge) çoktur; sinek kovucu ve yağmurluk alın."
+     ],
+     "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "GBP (£ British pound)",
+   "bestMonths": "May – September (long days, driest period); June – August for Scotland; December is lovely for the festive atmosphere",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe. The most common problems are phone snatching by thieves on scooters or bikes in London, pickpocketing at crowded sights and fights in nightlife areas.",
+    "commonScams": [
+     "Thieves on scooters grabbing phones out of pedestrians’ hands",
+     "Shell-game (“find the lady”) gangs on Westminster Bridge",
+     "Unlicensed minicab drivers touting for passengers outside clubs at night"
+    ],
+    "safeTravelTips": [
+     "Do not walk on the kerb side using your phone; hold it with both hands.",
+     "Only use black cabs or cars pre-booked through an app.",
+     "Traffic drives on the left; look right first when crossing (follow the painted reminders)."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (non-emergency: 101)",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; gaps in the Scottish Highlands)",
+    "costPerGbUsd": "~1 - 2 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent (London Underground and national rail)",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "~3.90 $ (London Zone 1 contactless £2.90); bus £1.75",
+    "dailyPassUsd": "~12 $ (Zone 1-2 daily cap ~£8.90)",
+    "popularRideApps": [
+     "Citymapper",
+     "TfL Go",
+     "Uber",
+     "Bolt",
+     "Trainline"
+    ],
+    "taxiAdvice": "Use a contactless bank card or phone instead of an Oyster card; daily and weekly caps apply automatically. Buying intercity rail tickets in advance (“Advance” fares) saves a lot. Black cabs are safe but expensive."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "65 - 95 $",
+    "dailyBudgetMidrangeUsd": "160 - 250 $",
+    "budgetMealUsd": "13 - 22 $ (pub meal; supermarket “meal deal” ~5 $)",
+    "coffeeUsd": "4 - 5.50 $",
+    "waterBottleUsd": "1.20 - 2 $",
+    "hostelDormUsd": "35 - 65 $",
+    "hotel3StarUsd": "130 - 230 $ (London; cheaper elsewhere)",
+    "flightCostIndex": "Low (direct ~4 h)",
+    "flightTip": "There are direct flights from Istanbul, Ankara, Izmir, Antalya and Dalaman to London (Heathrow, Gatwick, Stansted, Luton) and Manchester, and also to Edinburgh."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hiya / Hello",
+      "meaning": "Informal / neutral greeting",
+      "translation": "Informal / neutral greeting",
+      "pronunciation": "HY-yah / heh-LOH"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Thanks (casual) / Cheers when toasting",
+      "translation": "Thanks (casual) / Cheers when toasting",
+      "pronunciation": "cheerz"
+     },
+     {
+      "phrase": "Excuse me / Sorry",
+      "meaning": "To get attention or apologise",
+      "translation": "To get attention or apologise",
+      "pronunciation": "ex-KYOOZ mee / SOR-ee"
+     },
+     {
+      "phrase": "How much is this?",
+      "meaning": "Asking the price",
+      "translation": "Asking the price",
+      "pronunciation": "how MUCH iz this"
+     },
+     {
+      "phrase": "Could I have the bill, please?",
+      "meaning": "Asking for the bill in a restaurant",
+      "translation": "Asking for the bill in a restaurant",
+      "pronunciation": "kud eye hav thuh BIL, pleez"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "United Kingdom: London, Bath & Stonehenge, York and Edinburgh",
+   "routeSummary": "A 10-day rail route that begins with London’s royal heritage and free museums, then heads to Bath’s Roman Baths and the mysterious stones of Stonehenge, the medieval walls of York and, via Edinburgh, the Scottish Highlands.",
+   "totalDays": 10,
+   "idealDurationText": "10-Day England & Scotland Route",
+   "bestSeason": "May – September (June – August for Scotland)",
+   "transportMode": "Intercity trains (Advance fares) + London Underground + a Highlands day tour",
+   "paceLevel": "Balanced to busy (includes long train rides)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Fish and chips",
+     "Sunday roast",
+     "Full English breakfast",
+     "Haggis (Scotland)"
+    ],
+    "drinks": [
+     "English tea with milk",
+     "Cask ale",
+     "Scotch whisky"
+    ],
+    "streetFoods": [
+     "Cornish pasty",
+     "Scones with clotted cream",
+     "Sticky toffee pudding"
+    ],
+    "diningAdvice": "In pubs you order and pay at the bar; there is no table service. London restaurants often add a 12.5% service charge, so no extra tip is needed. Bacon and sausages in a Full English are pork."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Waterproof jacket and umbrella",
+     "Type G (British three-pin) plug adapter",
+     "Contactless bank card or phone wallet",
+     "Layers (Scotland is cool and windy)"
+    ],
+    "safetyAndEtiquette": [
+     "Queueing is sacred; never jump the queue.",
+     "Traffic drives on the left; look right first when crossing.",
+     "Do not carry your phone in your hand on the road side of the pavement."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: London (Royal Heritage and World-Class Museums)",
+     "recommendedDuration": "4 Days (main districts and museums)",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Palace of Westminster, Big Ben and Westminster Abbey",
+      "British Museum and National Gallery (free)",
+      "Tower of London and Tower Bridge",
+      "Borough Market and the South Bank"
+     ],
+     "activities": [
+      "Watch the Changing of the Guard at Buckingham Palace, then walk through St James’s Park to Westminster.",
+      "See the Rosetta Stone at the British Museum; most major museums are free.",
+      "Stroll the South Bank along the Thames and have lunch at Borough Market."
+     ],
+     "foodAndDrinks": [
+      "Fish and chips (with mushy peas)",
+      "Sunday roast with Yorkshire pudding",
+      "Afternoon tea with scones and clotted cream"
+     ],
+     "criticalTips": [
+      "Book Tower of London and Westminster Abbey tickets online; queues are long.",
+      "Stand on the right on Tube escalators; the left is for walking."
+     ],
+     "mapsQuery": "Westminster, London, United Kingdom"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Bath & Stonehenge (Roman Baths and Prehistoric Stones)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "The Roman Baths",
+      "Royal Crescent and Georgian architecture",
+      "Bath Abbey",
+      "Stonehenge (UNESCO)"
+     ],
+     "activities": [
+      "Explore the 2,000-year-old Roman Baths, where thermal water still flows into the ancient pool.",
+      "Walk past the honey-coloured Georgian façades of the Royal Crescent and The Circus.",
+      "Visit Stonehenge on a day tour from Bath or by train via Salisbury."
+     ],
+     "foodAndDrinks": [
+      "Sally Lunn bun (Bath’s historic bread)",
+      "Cornish pasty",
+      "Somerset cider"
+     ],
+     "criticalTips": [
+      "Book timed Stonehenge tickets online; you can only walk among the stones on special tours.",
+      "The London–Bath train takes about 1.5 hours; “Advance” fares are much cheaper."
+     ],
+     "mapsQuery": "Roman Baths, Bath, United Kingdom"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: York (Medieval Walls and Cathedral)",
+     "recommendedDuration": "1-2 Days",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "York Minster",
+      "The Shambles medieval street",
+      "City Walls walk",
+      "National Railway Museum (free)"
+     ],
+     "activities": [
+      "Climb York Minster’s tower for a view over the city.",
+      "Walk the roughly 3 km of medieval walls that circle the city.",
+      "Wander among the crooked timber-framed houses of the Shambles."
+     ],
+     "foodAndDrinks": [
+      "Yorkshire pudding (with gravy and roast)",
+      "Afternoon tea at Bettys",
+      "Wensleydale cheese"
+     ],
+     "criticalTips": [
+      "The Shambles is packed in the afternoon; go early in the morning.",
+      "Visits to York Minster may be limited during services; check times in advance."
+     ],
+     "mapsQuery": "York Minster, York, United Kingdom"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Edinburgh & the Scottish Highlands (Castle, Lochs and Mountains)",
+     "recommendedDuration": "3 Days (including a Highlands day trip)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Edinburgh Castle and the Royal Mile",
+      "Arthur’s Seat",
+      "Loch Ness and Glencoe (Highlands day tour)",
+      "Palace of Holyroodhouse"
+     ],
+     "activities": [
+      "Walk the Royal Mile from Edinburgh Castle down to the Palace of Holyroodhouse.",
+      "Climb Arthur’s Seat at sunset for views over the city and the sea.",
+      "Join a full-day Highlands tour covering Glencoe and Loch Ness."
+     ],
+     "foodAndDrinks": [
+      "Haggis, neeps and tatties (Scotland’s national dish; sheep offal)",
+      "Single malt Scotch whisky",
+      "Cranachan and shortbread"
+     ],
+     "criticalTips": [
+      "Accommodation prices soar during the Fringe in August; book months ahead.",
+      "Midges are common in the Highlands in summer; bring insect repellent and a rain jacket."
+     ],
+     "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "GBP (£ Britisches Pfund)",
+   "bestMonths": "Mai – September (lange Tage, trockenste Zeit); Juni – August für Schottland; im Dezember schöne Weihnachtsstimmung",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher. Am häufigsten sind Handyraub durch Diebe auf Rollern oder Fahrrädern in London, Taschendiebstahl an vollen Sehenswürdigkeiten und Schlägereien in Ausgehvierteln.",
+    "commonScams": [
+     "Diebe auf Rollern, die Passanten das Handy aus der Hand reißen",
+     "Hütchenspieler („find the lady“) auf der Westminster Bridge",
+     "Unlizenzierte Minicab-Fahrer, die nachts vor Clubs Fahrgäste anwerben"
+    ],
+    "safeTravelTips": [
+     "Nicht auf der Straßenseite des Gehwegs mit dem Handy laufen; es mit beiden Händen halten.",
+     "Nur Black Cabs oder per App vorbestellte Fahrzeuge nutzen.",
+     "Es herrscht Linksverkehr; beim Überqueren zuerst nach rechts schauen (Hinweise auf der Straße beachten)."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (kein Notfall: 101)",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G/5G; Lücken in den schottischen Highlands)",
+    "costPerGbUsd": "~1 - 2 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet (Londoner U-Bahn und nationales Bahnnetz)",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "~3.90 $ (London Zone 1 kontaktlos 2,90 £); Bus 1,75 £",
+    "dailyPassUsd": "~12 $ (Tagesobergrenze Zone 1-2 ~8,90 £)",
+    "popularRideApps": [
+     "Citymapper",
+     "TfL Go",
+     "Uber",
+     "Bolt",
+     "Trainline"
+    ],
+    "taxiAdvice": "Statt Oyster-Karte kontaktlose Bankkarte oder Handy nutzen; Tages- und Wochenobergrenzen greifen automatisch. Fernzugtickets früh („Advance“) kaufen spart viel. Black Cabs sind sicher, aber teuer."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "65 - 95 $",
+    "dailyBudgetMidrangeUsd": "160 - 250 $",
+    "budgetMealUsd": "13 - 22 $ (Pub-Essen; „Meal Deal“ im Supermarkt ~5 $)",
+    "coffeeUsd": "4 - 5.50 $",
+    "waterBottleUsd": "1.20 - 2 $",
+    "hostelDormUsd": "35 - 65 $",
+    "hotel3StarUsd": "130 - 230 $ (London; anderswo günstiger)",
+    "flightCostIndex": "Niedrig (Direktflug ~4 Std.)",
+    "flightTip": "Von Istanbul, Ankara, Izmir, Antalya und Dalaman gibt es Direktflüge nach London (Heathrow, Gatwick, Stansted, Luton) und Manchester sowie nach Edinburgh."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hiya / Hello",
+      "meaning": "Hallo (locker / neutral)",
+      "translation": "Hallo (locker / neutral)",
+      "pronunciation": "HAI-ja / he-LOU"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Danke (locker) / Prost",
+      "translation": "Danke (locker) / Prost",
+      "pronunciation": "tschiers"
+     },
+     {
+      "phrase": "Excuse me / Sorry",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "eks-KJUS mi / SO-ri"
+     },
+     {
+      "phrase": "How much is this?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "hau MATSCH is dis"
+     },
+     {
+      "phrase": "Could I have the bill, please?",
+      "meaning": "Könnte ich bitte die Rechnung haben?",
+      "translation": "Könnte ich bitte die Rechnung haben?",
+      "pronunciation": "kud ai häw se BIL, plihs"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Vereinigtes Königreich: London, Bath & Stonehenge, York und Edinburgh",
+   "routeSummary": "Eine 10-tägige Bahnroute: zuerst Londons königliches Erbe und kostenlose Museen, dann die Römischen Bäder von Bath und die rätselhaften Steine von Stonehenge, die mittelalterlichen Mauern von York und über Edinburgh die schottischen Highlands.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige England- & Schottland-Route",
+   "bestSeason": "Mai – September (Juni – August für Schottland)",
+   "transportMode": "Fernzüge („Advance“-Tickets) + Londoner U-Bahn + Highlands-Tagestour",
+   "paceLevel": "Ausgewogen bis dicht (inkl. längerer Zugfahrten)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Fish and Chips",
+     "Sunday Roast",
+     "Full English Breakfast",
+     "Haggis (Schottland)"
+    ],
+    "drinks": [
+     "Englischer Tee mit Milch",
+     "Cask Ale",
+     "Scotch Whisky"
+    ],
+    "streetFoods": [
+     "Cornish Pasty",
+     "Scones mit Clotted Cream",
+     "Sticky Toffee Pudding"
+    ],
+    "diningAdvice": "Im Pub bestellt und bezahlt man an der Theke; es gibt keinen Tischservice. Londoner Restaurants schlagen oft 12,5 % Servicegebühr auf, ein zusätzliches Trinkgeld ist dann nicht nötig. Bacon und Würstchen im Full English sind aus Schweinefleisch."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Wasserdichte Jacke und Schirm",
+     "Reiseadapter Typ G (britischer Dreipolstecker)",
+     "Kontaktlose Bankkarte oder Handy-Wallet",
+     "Kleidung im Zwiebellook (Schottland ist kühl und windig)"
+    ],
+    "safetyAndEtiquette": [
+     "Anstehen ist heilig; niemals vordrängeln.",
+     "Es herrscht Linksverkehr; beim Überqueren zuerst nach rechts schauen.",
+     "Das Handy nicht auf der Straßenseite des Gehwegs in der Hand tragen."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: London (Königliches Erbe und Weltklasse-Museen)",
+     "recommendedDuration": "4 Tage (wichtigste Viertel und Museen)",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Palace of Westminster, Big Ben und Westminster Abbey",
+      "British Museum und National Gallery (kostenlos)",
+      "Tower of London und Tower Bridge",
+      "Borough Market und South Bank"
+     ],
+     "activities": [
+      "Sieh dir die Wachablösung am Buckingham Palace an und spaziere durch den St James’s Park nach Westminster.",
+      "Bestaune den Stein von Rosette im British Museum; die meisten großen Museen sind kostenlos.",
+      "Schlendere an der Themse entlang über die South Bank und iss zu Mittag auf dem Borough Market."
+     ],
+     "foodAndDrinks": [
+      "Fish and Chips (mit Erbsenpüree)",
+      "Sunday Roast mit Yorkshire Pudding",
+      "Afternoon Tea mit Scones und Clotted Cream"
+     ],
+     "criticalTips": [
+      "Tickets für Tower of London und Westminster Abbey online buchen; die Schlangen sind lang.",
+      "Auf Rolltreppen der U-Bahn rechts stehen, links wird gegangen."
+     ],
+     "mapsQuery": "Westminster, London, United Kingdom"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Bath & Stonehenge (Römische Bäder und prähistorische Steine)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Römische Bäder (Roman Baths)",
+      "Royal Crescent und georgianische Architektur",
+      "Bath Abbey",
+      "Stonehenge (UNESCO)"
+     ],
+     "activities": [
+      "Erkunde die 2.000 Jahre alten Römischen Bäder, in deren Becken noch heute Thermalwasser fließt.",
+      "Spaziere an den honigfarbenen georgianischen Fassaden von Royal Crescent und The Circus vorbei.",
+      "Besuche Stonehenge mit einer Tagestour ab Bath oder mit dem Zug über Salisbury."
+     ],
+     "foodAndDrinks": [
+      "Sally Lunn Bun (historisches Gebäck aus Bath)",
+      "Cornish Pasty",
+      "Cider aus Somerset"
+     ],
+     "criticalTips": [
+      "Zeitgebundene Stonehenge-Tickets online kaufen; zwischen die Steine darf man nur bei Sonderführungen.",
+      "Der Zug London–Bath braucht etwa 1,5 Stunden; „Advance“-Tickets sind viel günstiger."
+     ],
+     "mapsQuery": "Roman Baths, Bath, United Kingdom"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: York (Mittelalterliche Mauern und Kathedrale)",
+     "recommendedDuration": "1-2 Tage",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "York Minster",
+      "Mittelalterliche Gasse The Shambles",
+      "Rundgang auf der Stadtmauer",
+      "National Railway Museum (kostenlos)"
+     ],
+     "activities": [
+      "Steige auf den Turm des York Minster für einen Blick über die Stadt.",
+      "Laufe die rund 3 km lange mittelalterliche Stadtmauer ab.",
+      "Bummle zwischen den schiefen Fachwerkhäusern der Shambles."
+     ],
+     "foodAndDrinks": [
+      "Yorkshire Pudding (mit Bratensoße und Braten)",
+      "Afternoon Tea bei Bettys",
+      "Wensleydale-Käse"
+     ],
+     "criticalTips": [
+      "Die Shambles sind nachmittags überfüllt; besser früh am Morgen hingehen.",
+      "Während Gottesdiensten kann der Besuch im York Minster eingeschränkt sein; Zeiten vorher prüfen."
+     ],
+     "mapsQuery": "York Minster, York, United Kingdom"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Edinburgh & Schottische Highlands (Burg, Lochs und Berge)",
+     "recommendedDuration": "3 Tage (inkl. Highlands-Tagestour)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Edinburgh Castle und Royal Mile",
+      "Arthur’s Seat",
+      "Loch Ness und Glencoe (Highlands-Tagestour)",
+      "Palace of Holyroodhouse"
+     ],
+     "activities": [
+      "Laufe die Royal Mile vom Edinburgh Castle bis zum Palace of Holyroodhouse.",
+      "Steige zum Sonnenuntergang auf Arthur’s Seat und blicke über Stadt und Meer.",
+      "Mach eine ganztägige Highlands-Tour mit Glencoe und Loch Ness."
+     ],
+     "foodAndDrinks": [
+      "Haggis, Neeps and Tatties (schottisches Nationalgericht aus Schafsinnereien)",
+      "Single-Malt-Scotch-Whisky",
+      "Cranachan und Shortbread"
+     ],
+     "criticalTips": [
+      "Während des Fringe im August steigen die Übernachtungspreise stark; Monate im Voraus buchen.",
+      "Im Sommer gibt es in den Highlands viele Mücken (Midges); Insektenschutz und Regenjacke mitnehmen."
+     ],
+     "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "GBP (£ libra esterlina)",
+   "bestMonths": "Mayo – septiembre (días largos, época más seca); junio – agosto para Escocia; diciembre es precioso por el ambiente navideño",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro. Los problemas más comunes son los robos de móviles por ladrones en patinete o bici en Londres, los carteristas en lugares concurridos y las peleas en zonas de ocio nocturno.",
+    "commonScams": [
+     "Ladrones en patinete que arrancan el móvil de la mano a los peatones",
+     "Bandas del trile (“find the lady”) en el puente de Westminster",
+     "Conductores de minicab sin licencia que captan pasajeros a la salida de los clubes"
+    ],
+    "safeTravelTips": [
+     "No camines por el lado de la calzada mirando el móvil; sujétalo con las dos manos.",
+     "Usa solo black cabs o coches reservados por app.",
+     "Se circula por la izquierda: al cruzar mira primero a la derecha (sigue los avisos pintados en el suelo)."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (no urgente: 101)",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; zonas sin cobertura en las Highlands escocesas)",
+    "costPerGbUsd": "~1 - 2 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metro de Londres y red ferroviaria nacional)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "~3.90 $ (Londres zona 1 sin contacto 2,90 £); autobús 1,75 £",
+    "dailyPassUsd": "~12 $ (tope diario zonas 1-2 ~8,90 £)",
+    "popularRideApps": [
+     "Citymapper",
+     "TfL Go",
+     "Uber",
+     "Bolt",
+     "Trainline"
+    ],
+    "taxiAdvice": "Usa tarjeta bancaria sin contacto o el móvil en lugar de la Oyster; los topes diarios y semanales se aplican solos. Comprar los trenes interurbanos con antelación (“Advance”) ahorra mucho. Los black cabs son seguros pero caros."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "65 - 95 $",
+    "dailyBudgetMidrangeUsd": "160 - 250 $",
+    "budgetMealUsd": "13 - 22 $ (comida de pub; “meal deal” de supermercado ~5 $)",
+    "coffeeUsd": "4 - 5.50 $",
+    "waterBottleUsd": "1.20 - 2 $",
+    "hostelDormUsd": "35 - 65 $",
+    "hotel3StarUsd": "130 - 230 $ (Londres; más barato en otras ciudades)",
+    "flightCostIndex": "Bajo (directo ~4 h)",
+    "flightTip": "Hay vuelos directos desde Estambul, Ankara, Esmirna, Antalya y Dalaman a Londres (Heathrow, Gatwick, Stansted, Luton) y Mánchester, y también a Edimburgo."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hiya / Hello",
+      "meaning": "Hola (informal / neutro)",
+      "translation": "Hola (informal / neutro)",
+      "pronunciation": "JÁI-ia / je-LOU"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Gracias (coloquial) / Salud",
+      "translation": "Gracias (coloquial) / Salud",
+      "pronunciation": "chirs"
+     },
+     {
+      "phrase": "Excuse me / Sorry",
+      "meaning": "Disculpe / Perdón",
+      "translation": "Disculpe / Perdón",
+      "pronunciation": "eks-KIÚS mi / SO-ri"
+     },
+     {
+      "phrase": "How much is this?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "jau MACH is dis"
+     },
+     {
+      "phrase": "Could I have the bill, please?",
+      "meaning": "¿Me trae la cuenta, por favor?",
+      "translation": "¿Me trae la cuenta, por favor?",
+      "pronunciation": "kud ai jav de BIL, pliis"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Reino Unido: Londres, Bath y Stonehenge, York y Edimburgo",
+   "routeSummary": "Una ruta de 10 días en tren que empieza con el patrimonio real y los museos gratuitos de Londres y sigue por las termas romanas de Bath, las misteriosas piedras de Stonehenge, las murallas medievales de York y, vía Edimburgo, las Highlands escocesas.",
+   "totalDays": 10,
+   "idealDurationText": "Ruta de 10 días por Inglaterra y Escocia",
+   "bestSeason": "Mayo – septiembre (junio – agosto para Escocia)",
+   "transportMode": "Trenes interurbanos (tarifas Advance) + metro de Londres + excursión a las Highlands",
+   "paceLevel": "Equilibrado a intenso (incluye trayectos largos en tren)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Fish and chips",
+     "Sunday roast",
+     "Full English breakfast",
+     "Haggis (Escocia)"
+    ],
+    "drinks": [
+     "Té inglés con leche",
+     "Cask ale (cerveza de barril)",
+     "Whisky escocés"
+    ],
+    "streetFoods": [
+     "Cornish pasty",
+     "Scones con clotted cream",
+     "Sticky toffee pudding"
+    ],
+    "diningAdvice": "En los pubs se pide y se paga en la barra; no hay servicio de mesa. Los restaurantes de Londres suelen añadir un 12,5% de servicio, así que no hace falta propina extra. El bacon y las salchichas del Full English son de cerdo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Chaqueta impermeable y paraguas",
+     "Adaptador tipo G (británico de tres clavijas)",
+     "Tarjeta bancaria sin contacto o cartera móvil",
+     "Ropa por capas (Escocia es fresca y ventosa)"
+    ],
+    "safetyAndEtiquette": [
+     "Hacer cola es sagrado; nunca te cueles.",
+     "Se circula por la izquierda: al cruzar mira primero a la derecha.",
+     "No lleves el móvil en la mano por el lado de la calzada."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Londres (Patrimonio real y museos de primer nivel)",
+     "recommendedDuration": "4 Días (barrios principales y museos)",
+     "durationBadge": "4 Días",
+     "highlights": [
+      "Palacio de Westminster, Big Ben y Abadía de Westminster",
+      "British Museum y National Gallery (gratis)",
+      "Torre de Londres y Tower Bridge",
+      "Borough Market y South Bank"
+     ],
+     "activities": [
+      "Mira el cambio de guardia en el palacio de Buckingham y camina por St James’s Park hasta Westminster.",
+      "Contempla la piedra de Rosetta en el British Museum; la mayoría de grandes museos son gratuitos.",
+      "Pasea por la South Bank junto al Támesis y come en Borough Market."
+     ],
+     "foodAndDrinks": [
+      "Fish and chips (con puré de guisantes)",
+      "Sunday roast con Yorkshire pudding",
+      "Afternoon tea con scones y clotted cream"
+     ],
+     "criticalTips": [
+      "Reserva online las entradas a la Torre de Londres y la Abadía de Westminster; las colas son largas.",
+      "En las escaleras mecánicas del metro quédate a la derecha; la izquierda es para caminar."
+     ],
+     "mapsQuery": "Westminster, London, United Kingdom"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bath y Stonehenge (Termas romanas y piedras prehistóricas)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Termas romanas (Roman Baths)",
+      "Royal Crescent y arquitectura georgiana",
+      "Abadía de Bath",
+      "Stonehenge (UNESCO)"
+     ],
+     "activities": [
+      "Recorre las termas romanas de 2.000 años, donde el agua termal aún fluye a la piscina antigua.",
+      "Pasea junto a las fachadas georgianas color miel del Royal Crescent y The Circus.",
+      "Visita Stonehenge en excursión desde Bath o en tren vía Salisbury."
+     ],
+     "foodAndDrinks": [
+      "Sally Lunn bun (pan histórico de Bath)",
+      "Cornish pasty (empanada de carne)",
+      "Sidra de Somerset"
+     ],
+     "criticalTips": [
+      "Compra online entradas con hora para Stonehenge; solo se camina entre las piedras en visitas especiales.",
+      "El tren Londres–Bath tarda 1,5 horas aprox.; las tarifas “Advance” son mucho más baratas."
+     ],
+     "mapsQuery": "Roman Baths, Bath, United Kingdom"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: York (Murallas medievales y catedral)",
+     "recommendedDuration": "1-2 Días",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Catedral York Minster",
+      "Calle medieval The Shambles",
+      "Paseo por las murallas",
+      "Museo Nacional del Ferrocarril (gratis)"
+     ],
+     "activities": [
+      "Sube a la torre de York Minster para ver la ciudad desde arriba.",
+      "Recorre los cerca de 3 km de murallas medievales que rodean la ciudad.",
+      "Pasea entre las casas torcidas con entramado de madera de The Shambles."
+     ],
+     "foodAndDrinks": [
+      "Yorkshire pudding (con salsa y asado)",
+      "Afternoon tea en Bettys",
+      "Queso Wensleydale"
+     ],
+     "criticalTips": [
+      "The Shambles se llena por la tarde; conviene ir temprano por la mañana.",
+      "Durante los oficios la visita a York Minster puede estar limitada; consulta los horarios."
+     ],
+     "mapsQuery": "York Minster, York, United Kingdom"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Edimburgo y las Highlands escocesas (Castillo, lagos y montañas)",
+     "recommendedDuration": "3 Días (con excursión a las Highlands)",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Castillo de Edimburgo y Royal Mile",
+      "Arthur’s Seat",
+      "Lago Ness y Glencoe (excursión de un día)",
+      "Palacio de Holyroodhouse"
+     ],
+     "activities": [
+      "Recorre la Royal Mile desde el castillo de Edimburgo hasta el palacio de Holyroodhouse.",
+      "Sube a Arthur’s Seat al atardecer para ver la ciudad y el mar.",
+      "Apúntate a una excursión de día completo por Glencoe y el lago Ness."
+     ],
+     "foodAndDrinks": [
+      "Haggis, neeps and tatties (plato nacional escocés con asaduras de cordero)",
+      "Whisky escocés single malt",
+      "Cranachan y shortbread"
+     ],
+     "criticalTips": [
+      "Durante el Fringe de agosto los precios del alojamiento se disparan; reserva con meses de antelación.",
+      "En verano hay muchos mosquitos (midges) en las Highlands; lleva repelente y chubasquero."
+     ],
+     "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "GBP (£ британский фунт стерлингов)",
+   "bestMonths": "Май – сентябрь (длинные дни, самый сухой период); для Шотландии — июнь – август; в декабре прекрасная праздничная атмосфера",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно. Чаще всего встречаются кражи телефонов ворами на самокатах и велосипедах в Лондоне, карманные кражи в людных местах и драки в районах ночной жизни.",
+    "commonScams": [
+     "Воры на самокатах, выхватывающие телефоны из рук прохожих",
+     "Игра в напёрстки («find the lady») на Вестминстерском мосту",
+     "Нелицензированные водители миникэбов, зазывающие пассажиров у клубов ночью"
+    ],
+    "safeTravelTips": [
+     "Не идите с телефоном у края тротуара; держите его двумя руками.",
+     "Садитесь только в чёрные кэбы или в машины, заказанные через приложение.",
+     "Движение левостороннее: переходя дорогу, сначала смотрите направо (следите за надписями на асфальте)."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (неэкстренные случаи: 101)",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; провалы в Шотландском высокогорье)",
+    "costPerGbUsd": "~1 - 2 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отличный (лондонское метро и национальная железная дорога)",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "~3.90 $ (Лондон, зона 1, бесконтактно £2.90); автобус £1.75",
+    "dailyPassUsd": "~12 $ (дневной лимит зоны 1-2 ~£8.90)",
+    "popularRideApps": [
+     "Citymapper",
+     "TfL Go",
+     "Uber",
+     "Bolt",
+     "Trainline"
+    ],
+    "taxiAdvice": "Вместо карты Oyster используйте бесконтактную банковскую карту или телефон — дневные и недельные лимиты применяются автоматически. Билеты на междугородние поезда заранее («Advance») заметно дешевле. Чёрные кэбы безопасны, но дороги."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "65 - 95 $",
+    "dailyBudgetMidrangeUsd": "160 - 250 $",
+    "budgetMealUsd": "13 - 22 $ (еда в пабе; «meal deal» в супермаркете ~5 $)",
+    "coffeeUsd": "4 - 5.50 $",
+    "waterBottleUsd": "1.20 - 2 $",
+    "hostelDormUsd": "35 - 65 $",
+    "hotel3StarUsd": "130 - 230 $ (Лондон; в других городах дешевле)",
+    "flightCostIndex": "Низкий (прямой рейс ~4 ч)",
+    "flightTip": "Прямые рейсы из Стамбула, Анкары, Измира, Антальи и Даламана летают в Лондон (Хитроу, Гатвик, Станстед, Лутон) и Манчестер, а также в Эдинбург."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hiya / Hello",
+      "meaning": "Привет / Здравствуйте",
+      "translation": "Привет / Здравствуйте",
+      "pronunciation": "Хайя / Хэллоу"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Спасибо (разг.) / Будем здоровы",
+      "translation": "Спасибо (разг.) / Будем здоровы",
+      "pronunciation": "Чирз"
+     },
+     {
+      "phrase": "Excuse me / Sorry",
+      "meaning": "Извините / Простите",
+      "translation": "Извините / Простите",
+      "pronunciation": "Экскьюз ми / Сорри"
+     },
+     {
+      "phrase": "How much is this?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "Хау мач из зис?"
+     },
+     {
+      "phrase": "Could I have the bill, please?",
+      "meaning": "Можно счёт, пожалуйста?",
+      "translation": "Можно счёт, пожалуйста?",
+      "pronunciation": "Куд ай хэв зэ бил, плиз?"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Великобритания: Лондон, Бат и Стоунхендж, Йорк и Эдинбург",
+   "routeSummary": "10-дневный маршрут на поездах: от королевского наследия и бесплатных музеев Лондона к римским термам Бата и загадочным камням Стоунхенджа, средневековым стенам Йорка и через Эдинбург — к Шотландскому высокогорью.",
+   "totalDays": 10,
+   "idealDurationText": "10-дневный маршрут по Англии и Шотландии",
+   "bestSeason": "Май – сентябрь (для Шотландии — июнь – август)",
+   "transportMode": "Междугородние поезда (тарифы Advance) + лондонское метро + однодневный тур в Хайленд",
+   "paceLevel": "Сбалансированный, местами насыщенный (длинные переезды на поезде)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Фиш-энд-чипс",
+     "Санди-роуст",
+     "Полный английский завтрак",
+     "Хаггис (Шотландия)"
+    ],
+    "drinks": [
+     "Английский чай с молоком",
+     "Каск-эль",
+     "Шотландский виски"
+    ],
+    "streetFoods": [
+     "Корнуолльский пирожок",
+     "Сконы с топлёными сливками",
+     "Стики-тоффи-пудинг"
+    ],
+    "diningAdvice": "В пабах заказывают и платят у барной стойки, обслуживания за столиком нет. Лондонские рестораны часто добавляют 12,5% за обслуживание — дополнительные чаевые не нужны. Бекон и сосиски в английском завтраке — из свинины."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Непромокаемая куртка и зонт",
+     "Адаптер типа G (британская вилка с тремя штырями)",
+     "Бесконтактная банковская карта или мобильный кошелёк",
+     "Многослойная одежда (в Шотландии прохладно и ветрено)"
+    ],
+    "safetyAndEtiquette": [
+     "Очередь — святое; никогда не лезьте без очереди.",
+     "Движение левостороннее: переходя дорогу, сначала смотрите направо.",
+     "Не несите телефон в руке у края тротуара со стороны дороги."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Лондон (Королевское наследие и музеи мирового уровня)",
+     "recommendedDuration": "4 дня (основные районы и музеи)",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Вестминстерский дворец, Биг-Бен и Вестминстерское аббатство",
+      "Британский музей и Национальная галерея (бесплатно)",
+      "Тауэр и Тауэрский мост",
+      "Боро-Маркет и Саут-Бэнк"
+     ],
+     "activities": [
+      "Посмотрите смену караула у Букингемского дворца и пройдите через Сент-Джеймсский парк к Вестминстеру.",
+      "Увидьте Розеттский камень в Британском музее; большинство крупных музеев бесплатны.",
+      "Прогуляйтесь по Саут-Бэнку вдоль Темзы и пообедайте на Боро-Маркете."
+     ],
+     "foodAndDrinks": [
+      "Фиш-энд-чипс (с гороховым пюре)",
+      "Санди-роуст с йоркширским пудингом",
+      "Послеобеденный чай со сконами и топлёными сливками"
+     ],
+     "criticalTips": [
+      "Билеты в Тауэр и Вестминстерское аббатство покупайте онлайн — очереди длинные.",
+      "На эскалаторах метро стойте справа, слева проходят."
+     ],
+     "mapsQuery": "Westminster, London, United Kingdom"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Бат и Стоунхендж (Римские термы и доисторические камни)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Римские термы (Roman Baths)",
+      "Королевский полумесяц и георгианская архитектура",
+      "Батское аббатство",
+      "Стоунхендж (ЮНЕСКО)"
+     ],
+     "activities": [
+      "Осмотрите римские термы возрастом 2000 лет, где термальная вода до сих пор наполняет древний бассейн.",
+      "Пройдитесь вдоль медовых георгианских фасадов Королевского полумесяца и Цирка.",
+      "Съездите в Стоунхендж на экскурсии из Бата или на поезде через Солсбери."
+     ],
+     "foodAndDrinks": [
+      "Булочка Салли Ланн (историческая выпечка Бата)",
+      "Корнуолльский пирожок (пасти)",
+      "Сидр из Сомерсета"
+     ],
+     "criticalTips": [
+      "Покупайте онлайн билеты в Стоунхендж на конкретное время; пройти между камнями можно только на специальных турах.",
+      "Поезд Лондон–Бат идёт около 1,5 часа; тарифы «Advance» намного дешевле."
+     ],
+     "mapsQuery": "Roman Baths, Bath, United Kingdom"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Йорк (Средневековые стены и собор)",
+     "recommendedDuration": "1-2 дня",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Йоркский собор (York Minster)",
+      "Средневековая улица Шамблс",
+      "Прогулка по городским стенам",
+      "Национальный железнодорожный музей (бесплатно)"
+     ],
+     "activities": [
+      "Поднимитесь на башню Йоркского собора, чтобы увидеть город сверху.",
+      "Пройдите около 3 км по средневековым стенам вокруг города.",
+      "Погуляйте среди кривых фахверковых домов улицы Шамблс."
+     ],
+     "foodAndDrinks": [
+      "Йоркширский пудинг (с подливой и жарким)",
+      "Послеобеденный чай в Bettys",
+      "Сыр уэнслидейл"
+     ],
+     "criticalTips": [
+      "Днём на Шамблс очень людно; приходите рано утром.",
+      "Во время богослужений посещение собора может быть ограничено; уточняйте время заранее."
+     ],
+     "mapsQuery": "York Minster, York, United Kingdom"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Эдинбург и Шотландское высокогорье (Замок, озёра и горы)",
+     "recommendedDuration": "3 дня (включая поездку в Хайленд)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Эдинбургский замок и Королевская миля",
+      "Трон Артура (Arthur’s Seat)",
+      "Лох-Несс и Гленко (однодневный тур)",
+      "Дворец Холируд"
+     ],
+     "activities": [
+      "Пройдите по Королевской миле от Эдинбургского замка до дворца Холируд.",
+      "Поднимитесь на закате на Трон Артура и полюбуйтесь городом и морем.",
+      "Отправьтесь в однодневный тур по Хайленду с Гленко и Лох-Нессом."
+     ],
+     "foodAndDrinks": [
+      "Хаггис с репой и картофелем (национальное блюдо из бараньих потрохов)",
+      "Односолодовый шотландский виски",
+      "Кранахан и шортбред"
+     ],
+     "criticalTips": [
+      "Во время фестиваля Fringe в августе цены на жильё взлетают; бронируйте за несколько месяцев.",
+      "Летом в Хайленде много мошки (midges); возьмите репеллент и дождевик."
+     ],
+     "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  }
+ }
+}

@@ -1,3 +1,4 @@
+import { applyCountryFix } from './countryFixHook';
 /**
  * Vizamigo - Seyahat & Göçebe İstihbarat Veri Tabanı
  * 199 ülke için priz/voltaj, musluk suyu içilebilirliği, bahşiş kültürü,
@@ -638,7 +639,7 @@ export const CURATED_TRAVEL_INTELLIGENCE: Record<string, Partial<CountryTravelIn
  * Fallback resolver: Generates realistic travel intelligence for any country in the world
  * based on its regional standard if not explicitly listed in curated table.
  */
-export function getCountryTravelIntelligence(countryCode: string, countryName?: string): CountryTravelIntelligence {
+function getCountryTravelIntelligenceImpl(countryCode: string, countryName?: string): CountryTravelIntelligence {
   const code = countryCode.toUpperCase();
   const curated = CURATED_TRAVEL_INTELLIGENCE[code];
 
@@ -729,4 +730,8 @@ export function getCountryTravelIntelligence(countryCode: string, countryName?: 
     connectivity,
     touristScams
   };
+}
+
+export function getCountryTravelIntelligence(countryCode: string, countryName?: string): CountryTravelIntelligence {
+  return applyCountryFix('intel', countryCode, 'tr', getCountryTravelIntelligenceImpl(countryCode, countryName));
 }

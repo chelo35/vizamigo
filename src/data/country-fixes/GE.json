@@ -1,0 +1,497 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "GEL (Gürcistan Larisi)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim (Ekim bağ bozumu); Batum sahili ve Svaneti yürüyüşleri için Temmuz – Ağustos",
+   "safety": {
+    "crimeRateSummary": "Şiddet suçu oranı düşüktür ve Tiflis, Batum gibi şehirler gece de genel olarak huzurludur. İşgal altındaki Abhazya ve Güney Osetya’ya (Tshinvali) gidilmemeli, Tiflis’teki siyasi gösterilerden uzak durulmalıdır.",
+    "commonScams": [
+     "Tiflis’te sokakta tanışılan kişilerin sizi bara davet edip fahiş hesap çıkarması",
+     "Havalimanı ve garlarda taksimetresiz taksicilerin turistlere fahiş fiyat söylemesi",
+     "Döviz bürolarında tabeladaki kurdan farklı kur ya da gizli komisyon uygulanması"
+    ],
+    "safeTravelTips": [
+     "Taksi için Bolt veya Yandex Go kullanın; sokak taksisinde fiyatı binmeden netleştirin.",
+     "Dağ yollarında (Cvari Geçidi, Svaneti) kışın kar ve çığ nedeniyle kapanmalara karşı yol durumunu kontrol edin.",
+     "Kiliselerde omuz ve dizler kapalı olmalı; kadınlardan başörtüsü takması beklenir."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde ve ana yollarda güçlü 4G; yüksek dağ köylerinde kesintili",
+    "costPerGbUsd": "~0.50 - 1 $",
+    "esimAvailability": "Mevcut – Airalo, Holafly gibi eSIM’ler ve Magti’de yerel eSIM",
+    "bestCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta – Tiflis’te metro ve otobüs iyi; şehirlerarası marşrutka ve Stadler trenleri",
+    "costLevel": "Çok ucuz",
+    "singleTicketUsd": "~0.40 $ (1 GEL)",
+    "dailyPassUsd": "~1.10 $ (3 GEL)",
+    "popularRideApps": [
+     "Bolt",
+     "Yandex Go",
+     "Maxim"
+    ],
+    "taxiAdvice": "Tiflis ve Batum’da Bolt ile şehir içi yolculuklar çoğunlukla 2-5 $ tutar. Kazbegi veya Kakheti için günübirlik özel şoför 60-100 $ civarındadır; fiyatı önceden yazılı netleştirin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 100 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "40 - 80 $",
+    "flightCostIndex": "Düşük (İstanbul’dan direkt ~2 sa)",
+    "flightTip": "İstanbul’dan Tiflis ve Batum’a THY, Pegasus ve AJet ile direkt uçuşlar var; Karadeniz’den geliyorsanız Sarp sınır kapısından Batum’a geçmek en ekonomik yoldur."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Gürcüce (kendine özgü Mhedruli alfabesiyle); Abhazya’da Abhazca. Rusça yaygın olarak anlaşılır.",
+    "englishProficiency": "Tiflis ve Batum’da gençler ve turizm çalışanları arasında iyi; kırsalda Rusça daha işe yarar.",
+    "phrases": [
+     {
+      "phrase": "გამარჯობა (Gamarjoba)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "ga-mar-jo-ba"
+     },
+     {
+      "phrase": "მადლობა (Madloba)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "mad-lo-ba"
+     },
+     {
+      "phrase": "თუ შეიძლება (Tu sheidzleba)",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "tu shey-dzle-ba"
+     },
+     {
+      "phrase": "რა ღირს? (Ra ghirs?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "ra ghirs"
+     },
+     {
+      "phrase": "გაუმარჯოს! (Gaumarjos!)",
+      "meaning": "Şerefe!",
+      "translation": "Şerefe!",
+      "pronunciation": "ga-u-mar-jos"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "GEL (Georgian lari)",
+   "bestMonths": "May – June and September – October (October grape harvest); July – August for Batumi beaches and Svaneti hikes",
+   "safety": {
+    "crimeRateSummary": "Violent crime is low and cities such as Tbilisi and Batumi generally feel calm at night. Do not travel to occupied Abkhazia and South Ossetia (Tskhinvali), and stay away from political demonstrations in Tbilisi.",
+    "commonScams": [
+     "Strangers in Tbilisi inviting you to a bar that then presents a hugely inflated bill",
+     "Unmetered taxi drivers at the airport and stations quoting tourists inflated fares",
+     "Exchange offices applying a different rate from the board or a hidden commission"
+    ],
+    "safeTravelTips": [
+     "Use Bolt or Yandex Go for taxis; with street taxis agree the fare before getting in.",
+     "On mountain roads (Jvari Pass, Svaneti) check road conditions in winter, when snow and avalanches can close them.",
+     "In churches cover shoulders and knees; women are expected to wear a headscarf."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Strong 4G in cities and along main roads; patchy in high mountain villages",
+    "costPerGbUsd": "~0.50 - 1 $",
+    "esimAvailability": "Available – Airalo, Holafly and local Magti eSIMs",
+    "bestCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair – good metro and buses in Tbilisi; marshrutkas and Stadler trains between cities",
+    "costLevel": "Very cheap",
+    "singleTicketUsd": "~0.40 $ (1 GEL)",
+    "dailyPassUsd": "~1.10 $ (3 GEL)",
+    "popularRideApps": [
+     "Bolt",
+     "Yandex Go",
+     "Maxim"
+    ],
+    "taxiAdvice": "Bolt rides within Tbilisi and Batumi usually cost $2-5. A private driver for a Kazbegi or Kakheti day trip is around $60-100; agree the price in writing beforehand."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 100 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "40 - 80 $",
+    "flightCostIndex": "Low (direct from Istanbul ~2 h)",
+    "flightTip": "There are direct THY, Pegasus and AJet flights from Istanbul to Tbilisi and Batumi; from Turkey’s Black Sea coast, crossing at the Sarp border into Batumi is the cheapest option."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Georgian (written in its own Mkhedruli script); Abkhaz in Abkhazia. Russian is widely understood.",
+    "englishProficiency": "Good among young people and tourism staff in Tbilisi and Batumi; in rural areas Russian is more useful.",
+    "phrases": [
+     {
+      "phrase": "გამარჯობა (Gamarjoba)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "ga-mar-jo-ba"
+     },
+     {
+      "phrase": "მადლობა (Madloba)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "mad-lo-ba"
+     },
+     {
+      "phrase": "თუ შეიძლება (Tu sheidzleba)",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "tu shey-dzle-ba"
+     },
+     {
+      "phrase": "რა ღირს? (Ra ghirs?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "ra ghirs"
+     },
+     {
+      "phrase": "გაუმარჯოს! (Gaumarjos!)",
+      "meaning": "Cheers!",
+      "translation": "Cheers!",
+      "pronunciation": "ga-u-mar-jos"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "GEL (Georgischer Lari)",
+   "bestMonths": "Mai – Juni und September – Oktober (Weinlese im Oktober); Juli – August für die Strände von Batumi und Wanderungen in Swanetien",
+   "safety": {
+    "crimeRateSummary": "Gewaltkriminalität ist selten, Städte wie Tiflis und Batumi wirken auch nachts meist ruhig. Reisen in die besetzten Gebiete Abchasien und Südossetien (Zchinwali) sollten unterbleiben; politische Demonstrationen in Tiflis besser meiden.",
+    "commonScams": [
+     "Fremde in Tiflis, die Sie in eine Bar einladen, die dann eine völlig überhöhte Rechnung stellt",
+     "Taxifahrer ohne Taxameter an Flughafen und Bahnhöfen, die Touristen überhöhte Preise nennen",
+     "Wechselstuben, die einen anderen Kurs als angeschrieben oder versteckte Gebühren berechnen"
+    ],
+    "safeTravelTips": [
+     "Nutzen Sie Bolt oder Yandex Go; bei Straßentaxis den Preis vor der Fahrt vereinbaren.",
+     "Auf Bergstraßen (Dschwari-Pass, Swanetien) im Winter den Straßenzustand prüfen – Schnee und Lawinen können sie sperren.",
+     "In Kirchen Schultern und Knie bedecken; von Frauen wird ein Kopftuch erwartet."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Starkes 4G in Städten und an Hauptstraßen; in hohen Bergdörfern lückenhaft",
+    "costPerGbUsd": "~0.50 - 1 $",
+    "esimAvailability": "Verfügbar – Airalo, Holafly sowie lokale eSIMs von Magti",
+    "bestCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel – gute Metro und Busse in Tiflis; Marschrutkas und Stadler-Züge zwischen Städten",
+    "costLevel": "Sehr günstig",
+    "singleTicketUsd": "~0.40 $ (1 GEL)",
+    "dailyPassUsd": "~1.10 $ (3 GEL)",
+    "popularRideApps": [
+     "Bolt",
+     "Yandex Go",
+     "Maxim"
+    ],
+    "taxiAdvice": "Bolt-Fahrten innerhalb von Tiflis und Batumi kosten meist 2-5 $. Ein Fahrer für einen Tagesausflug nach Kasbegi oder Kachetien kostet etwa 60-100 $; Preis vorher schriftlich festhalten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 100 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "40 - 80 $",
+    "flightCostIndex": "Niedrig (direkt ab Istanbul ~2 Std.)",
+    "flightTip": "Es gibt Direktflüge von THY, Pegasus und AJet ab Istanbul nach Tiflis und Batumi; von der türkischen Schwarzmeerküste ist der Grenzübergang Sarp nach Batumi am günstigsten."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Georgisch (in eigener Mchedruli-Schrift); in Abchasien Abchasisch. Russisch wird vielfach verstanden.",
+    "englishProficiency": "Gut bei jungen Leuten und im Tourismus in Tiflis und Batumi; auf dem Land hilft Russisch mehr.",
+    "phrases": [
+     {
+      "phrase": "გამარჯობა (Gamarjoba)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "ga-mar-jo-ba"
+     },
+     {
+      "phrase": "მადლობა (Madloba)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "mad-lo-ba"
+     },
+     {
+      "phrase": "თუ შეიძლება (Tu sheidzleba)",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "tu shey-dzle-ba"
+     },
+     {
+      "phrase": "რა ღირს? (Ra ghirs?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "ra ghirs"
+     },
+     {
+      "phrase": "გაუმარჯოს! (Gaumarjos!)",
+      "meaning": "Prost!",
+      "translation": "Prost!",
+      "pronunciation": "ga-u-mar-jos"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "GEL (lari georgiano)",
+   "bestMonths": "Mayo – junio y septiembre – octubre (vendimia en octubre); julio – agosto para las playas de Batumi y el senderismo en Svaneti",
+   "safety": {
+    "crimeRateSummary": "La delincuencia violenta es baja y ciudades como Tiflis y Batumi suelen ser tranquilas de noche. No viajes a las regiones ocupadas de Abjasia y Osetia del Sur (Tsjinvali) y mantente alejado de las manifestaciones políticas en Tiflis.",
+    "commonScams": [
+     "Desconocidos en Tiflis que te invitan a un bar donde luego presentan una cuenta desorbitada",
+     "Taxistas sin taxímetro en el aeropuerto y las estaciones que piden tarifas infladas",
+     "Casas de cambio que aplican un tipo distinto al anunciado o una comisión oculta"
+    ],
+    "safeTravelTips": [
+     "Usa Bolt o Yandex Go; con los taxis de la calle acuerda el precio antes de subir.",
+     "En carreteras de montaña (paso de Jvari, Svaneti) revisa el estado en invierno: la nieve y los aludes pueden cerrarlas.",
+     "En las iglesias cubre hombros y rodillas; se espera que las mujeres lleven pañuelo."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido en ciudades y carreteras principales; irregular en aldeas de alta montaña",
+    "costPerGbUsd": "~0.50 - 1 $",
+    "esimAvailability": "Disponible – Airalo, Holafly y eSIM local de Magti",
+    "bestCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Aceptable – buen metro y autobuses en Tiflis; marshrutkas y trenes Stadler entre ciudades",
+    "costLevel": "Muy barato",
+    "singleTicketUsd": "~0.40 $ (1 GEL)",
+    "dailyPassUsd": "~1.10 $ (3 GEL)",
+    "popularRideApps": [
+     "Bolt",
+     "Yandex Go",
+     "Maxim"
+    ],
+    "taxiAdvice": "Los trayectos con Bolt en Tiflis y Batumi suelen costar 2-5 $. Un conductor privado para una excursión a Kazbegi o Kajetia ronda 60-100 $; acuerda el precio por escrito antes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 100 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "40 - 80 $",
+    "flightCostIndex": "Bajo (directo desde Estambul ~2 h)",
+    "flightTip": "Hay vuelos directos de THY, Pegasus y AJet desde Estambul a Tiflis y Batumi; desde la costa turca del mar Negro, cruzar por la frontera de Sarp hacia Batumi es lo más barato."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Georgiano (con su propio alfabeto mjedruli); abjasio en Abjasia. El ruso se entiende ampliamente.",
+    "englishProficiency": "Bueno entre jóvenes y personal turístico en Tiflis y Batumi; en zonas rurales es más útil el ruso.",
+    "phrases": [
+     {
+      "phrase": "გამარჯობა (Gamarjoba)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "ga-mar-jo-ba"
+     },
+     {
+      "phrase": "მადლობა (Madloba)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "mad-lo-ba"
+     },
+     {
+      "phrase": "თუ შეიძლება (Tu sheidzleba)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "tu shey-dzle-ba"
+     },
+     {
+      "phrase": "რა ღირს? (Ra ghirs?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "ra ghirs"
+     },
+     {
+      "phrase": "გაუმარჯოს! (Gaumarjos!)",
+      "meaning": "¡Salud!",
+      "translation": "¡Salud!",
+      "pronunciation": "ga-u-mar-jos"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "GEL (грузинский лари)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь (в октябре сбор винограда); июль – август для пляжей Батуми и походов по Сванетии",
+   "safety": {
+    "crimeRateSummary": "Уровень насильственной преступности низкий, Тбилиси и Батуми обычно спокойны и ночью. Не следует ездить в оккупированные Абхазию и Южную Осетию (Цхинвали), а также стоит держаться подальше от политических акций в Тбилиси.",
+    "commonScams": [
+     "Незнакомцы в Тбилиси, приглашающие в бар, где затем выставляют огромный счёт",
+     "Таксисты без счётчика в аэропорту и на вокзалах, называющие туристам завышенные цены",
+     "Обменники, применяющие курс, отличный от табло, или скрытую комиссию"
+    ],
+    "safeTravelTips": [
+     "Пользуйтесь Bolt или Yandex Go; с уличным такси договаривайтесь о цене до поездки.",
+     "На горных дорогах (Крестовый перевал, Сванетия) зимой проверяйте обстановку: снег и лавины могут перекрыть путь.",
+     "В церквях закрывайте плечи и колени; женщинам следует покрыть голову."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в городах и вдоль трасс; в высокогорных сёлах с перебоями",
+    "costPerGbUsd": "~0.50 - 1 $",
+    "esimAvailability": "Доступна – Airalo, Holafly и местные eSIM от Magti",
+    "bestCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне – хорошие метро и автобусы в Тбилиси; между городами маршрутки и поезда Stadler",
+    "costLevel": "Очень дёшево",
+    "singleTicketUsd": "~0.40 $ (1 GEL)",
+    "dailyPassUsd": "~1.10 $ (3 GEL)",
+    "popularRideApps": [
+     "Bolt",
+     "Yandex Go",
+     "Maxim"
+    ],
+    "taxiAdvice": "Поездки на Bolt по Тбилиси и Батуми обычно стоят 2-5 $. Водитель на день в Казбеги или Кахетию — около 60-100 $; заранее письменно согласуйте цену."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 100 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "40 - 80 $",
+    "flightCostIndex": "Низкий (прямой рейс из Стамбула ~2 ч)",
+    "flightTip": "Из Стамбула в Тбилиси и Батуми летают прямые рейсы THY, Pegasus и AJet; с черноморского побережья Турции дешевле всего пересечь границу в Сарпи и доехать до Батуми."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Грузинский (собственный алфавит мхедрули); в Абхазии абхазский. Русский широко понимают.",
+    "englishProficiency": "Хороший у молодёжи и в сфере туризма в Тбилиси и Батуми; в сёлах полезнее русский.",
+    "phrases": [
+     {
+      "phrase": "გამარჯობა (Gamarjoba)",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "ga-mar-jo-ba"
+     },
+     {
+      "phrase": "მადლობა (Madloba)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "mad-lo-ba"
+     },
+     {
+      "phrase": "თუ შეიძლება (Tu sheidzleba)",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "tu shey-dzle-ba"
+     },
+     {
+      "phrase": "რა ღირს? (Ra ghirs?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "ra ghirs"
+     },
+     {
+      "phrase": "გაუმარჯოს! (Gaumarjos!)",
+      "meaning": "За здоровье!",
+      "translation": "За здоровье!",
+      "pronunciation": "ga-u-mar-jos"
+     }
+    ]
+   }
+  }
+ }
+}

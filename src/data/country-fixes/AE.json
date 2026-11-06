@@ -1,0 +1,497 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "AED (BAE Dirhemi)",
+   "bestMonths": "Kasım – Mart (24-30°C, deniz ve çöl için ideal); Haziran – Eylül arası sıcaklık sıklıkla 40-45°C’yi bulur ve nem çok yüksektir",
+   "safety": {
+    "crimeRateSummary": "Suç oranı dünyanın en düşükleri arasındadır ve Dubai, Abu Dabi gece de güvenlidir. Asıl risk yasalara aykırı davranıştır: uyuşturucuya sıfır tolerans, bazı reçeteli ilaçlara kısıtlama ve kamusal alanda davranış kurallarına sıkı yaptırımlar vardır; bölgesel gerginliklerde resmî uyarıları takip edin.",
+    "commonScams": [
+     "Sokakta veya sosyal medyada satılan, sigortasız ve güvenliksiz ucuz çöl safarisi turları",
+     "İnternette gerçek dışı tatil evi ilanlarıyla peşin para isteme",
+     "Kendini polis veya banka olarak tanıtıp telefon/WhatsApp üzerinden kart bilgisi isteyenler"
+    ],
+    "safeTravelTips": [
+     "Reçeteli ilaçlarınızı reçetesiyle birlikte taşıyın ve BAE’nin kontrollü ilaç listesini önceden kontrol edin.",
+     "İnsanları, özellikle kadınları izinsiz fotoğraflamayın; resmî binaları çekmeyin ve izinsiz drone uçurmayın.",
+     "Ramazan’da gündüz kamuya açık yerlerde yiyip içmemeye özen gösterin; AVM ve camilerde omuz ve dizleri kapatın."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "998",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Mükemmel – şehirlerde yaygın 5G, otoyollarda ve çöl kamplarında bile güçlü sinyal",
+    "costPerGbUsd": "~2 - 6 $",
+    "esimAvailability": "Mevcut – du ve e& turist hatları (havalimanında), Airalo ve Holafly eSIM’leri",
+    "bestCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Çok iyi – Dubai Metrosu ve tramvayı modern ve temiz; Abu Dabi’de otobüs ağı; emirlikler arası otobüsler",
+    "costLevel": "Orta",
+    "singleTicketUsd": "~0.80 - 2 $ (Nol, bölgeye göre)",
+    "dailyPassUsd": "~6 $ (Nol günlük bilet)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "RTA Dubai"
+    ],
+    "taxiAdvice": "Dubai’de resmî taksiler taksimetrelidir ve güvenlidir; şehir içi yolculuklar genellikle 8-20 $ tutar, havalimanından binişte ek ücret alınır. Dubai – Abu Dabi arası E101 otobüsü taksiye göre çok daha ucuzdur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Orta (İstanbul – Dubai direkt ~4.5 sa)",
+    "flightTip": "İstanbul’dan Dubai’ye THY, Emirates, flydubai, Pegasus ve AJet; Şarja’ya Air Arabia; Abu Dabi’ye THY ve Etihad uçar. Şarja veya Abu Dabi’ye uçmak çoğu zaman daha ucuzdur; otel fiyatları yazın belirgin şekilde düşer."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Arapça (resmî dil); İngilizce iş ve günlük hayatta ortak dil olarak her yerde kullanılır, Hintçe, Urduca ve Tagalogca da yaygındır.",
+    "englishProficiency": "Çok iyi – nüfusun büyük kısmı yabancı olduğundan İngilizceyle her yerde anlaşılır.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (Marhaba)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "كم السعر؟ (Kam as-si‘r?)",
+      "meaning": "Fiyatı ne kadar?",
+      "translation": "Fiyatı ne kadar?",
+      "pronunciation": "kam as-SI-ir"
+     },
+     {
+      "phrase": "إن شاء الله (Inshallah)",
+      "meaning": "İnşallah",
+      "translation": "İnşallah",
+      "pronunciation": "in-SHAA-al-lah"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "AED (UAE dirham)",
+   "bestMonths": "November – March (24-30°C, ideal for beaches and the desert); from June to September temperatures often reach 40-45°C with very high humidity",
+   "safety": {
+    "crimeRateSummary": "Crime is among the lowest in the world and Dubai and Abu Dhabi are safe at night. The real risk is breaking the law: zero tolerance for drugs, restrictions on some prescription medicines and strict penalties for public behaviour; follow official advice during regional tensions.",
+    "commonScams": [
+     "Cheap desert safaris sold on the street or social media with no insurance or safety standards",
+     "Fake holiday-home listings online asking for advance payment",
+     "Callers posing as police or a bank on the phone or WhatsApp asking for card details"
+    ],
+    "safeTravelTips": [
+     "Carry prescription medicines with the prescription and check the UAE’s controlled-medicines list beforehand.",
+     "Do not photograph people, especially women, without permission, nor government buildings; do not fly drones without a permit.",
+     "During Ramadan avoid eating and drinking in public in daytime; cover shoulders and knees in malls and mosques."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "998",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excellent – widespread 5G in cities and strong signal even on highways and at desert camps",
+    "costPerGbUsd": "~2 - 6 $",
+    "esimAvailability": "Available – du and e& tourist lines (at the airport), Airalo and Holafly eSIMs",
+    "bestCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Very good – modern, clean Dubai Metro and tram; bus network in Abu Dhabi; inter-emirate buses",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "~0.80 - 2 $ (Nol, by zone)",
+    "dailyPassUsd": "~6 $ (Nol day pass)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "RTA Dubai"
+    ],
+    "taxiAdvice": "Official taxis in Dubai are metered and safe; city rides usually cost $8-20, with a surcharge for airport pickups. The E101 bus between Dubai and Abu Dhabi is far cheaper than a taxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Moderate (Istanbul – Dubai direct ~4.5 h)",
+    "flightTip": "THY, Emirates, flydubai, Pegasus and AJet fly Istanbul – Dubai; Air Arabia flies to Sharjah, and THY and Etihad to Abu Dhabi. Flying into Sharjah or Abu Dhabi is often cheaper, and hotel prices drop noticeably in summer."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Arabic (official); English is used everywhere as the common language of business and daily life, and Hindi, Urdu and Tagalog are widely spoken.",
+    "englishProficiency": "Very good – with most residents being expatriates, English works everywhere.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (Marhaba)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "كم السعر؟ (Kam as-si‘r?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "kam as-SI-ir"
+     },
+     {
+      "phrase": "إن شاء الله (Inshallah)",
+      "meaning": "God willing",
+      "translation": "God willing",
+      "pronunciation": "in-SHAA-al-lah"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "AED (VAE-Dirham)",
+   "bestMonths": "November – März (24-30 °C, ideal für Strand und Wüste); von Juni bis September oft 40-45 °C bei sehr hoher Luftfeuchtigkeit",
+   "safety": {
+    "crimeRateSummary": "Die Kriminalität gehört zu den niedrigsten der Welt, Dubai und Abu Dhabi sind auch nachts sicher. Das eigentliche Risiko sind Gesetzesverstöße: Null-Toleranz bei Drogen, Einschränkungen für manche verschreibungspflichtige Medikamente und strenge Strafen für Verhalten in der Öffentlichkeit; bei regionalen Spannungen offizielle Hinweise beachten.",
+    "commonScams": [
+     "Billige Wüstensafaris von der Straße oder aus sozialen Medien ohne Versicherung und Sicherheitsstandards",
+     "Gefälschte Ferienwohnungsanzeigen im Internet mit Vorauszahlung",
+     "Anrufer, die sich am Telefon oder per WhatsApp als Polizei oder Bank ausgeben und Kartendaten verlangen"
+    ],
+    "safeTravelTips": [
+     "Verschreibungspflichtige Medikamente mit Rezept mitführen und vorab die VAE-Liste kontrollierter Arzneimittel prüfen.",
+     "Menschen, besonders Frauen, nicht ohne Erlaubnis fotografieren, ebenso keine Regierungsgebäude; keine Drohnen ohne Genehmigung.",
+     "Im Ramadan tagsüber in der Öffentlichkeit nicht essen und trinken; in Einkaufszentren und Moscheen Schultern und Knie bedecken."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "998",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Ausgezeichnet – flächendeckendes 5G in Städten, starker Empfang selbst auf Autobahnen und in Wüstencamps",
+    "costPerGbUsd": "~2 - 6 $",
+    "esimAvailability": "Verfügbar – Touristentarife von du und e& (am Flughafen), eSIMs von Airalo und Holafly",
+    "bestCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sehr gut – moderne, saubere Metro und Tram in Dubai; Busnetz in Abu Dhabi; Busse zwischen den Emiraten",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "~0.80 - 2 $ (Nol, je nach Zone)",
+    "dailyPassUsd": "~6 $ (Nol-Tageskarte)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "RTA Dubai"
+    ],
+    "taxiAdvice": "Offizielle Taxis in Dubai fahren mit Taxameter und sind sicher; Stadtfahrten kosten meist 8-20 $, am Flughafen gilt ein Zuschlag. Der Bus E101 zwischen Dubai und Abu Dhabi ist viel günstiger als ein Taxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Mittel (Istanbul – Dubai direkt ~4,5 Std.)",
+    "flightTip": "THY, Emirates, flydubai, Pegasus und AJet fliegen Istanbul – Dubai; Air Arabia fliegt nach Schardscha, THY und Etihad nach Abu Dhabi. Flüge nach Schardscha oder Abu Dhabi sind oft billiger, und Hotelpreise sinken im Sommer deutlich."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Arabisch (Amtssprache); Englisch ist überall Verkehrssprache in Beruf und Alltag, verbreitet sind auch Hindi, Urdu und Tagalog.",
+    "englishProficiency": "Sehr gut – da die meisten Einwohner Ausländer sind, kommt man überall mit Englisch zurecht.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (Marhaba)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "كم السعر؟ (Kam as-si‘r?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "kam as-SI-ir"
+     },
+     {
+      "phrase": "إن شاء الله (Inshallah)",
+      "meaning": "So Gott will",
+      "translation": "So Gott will",
+      "pronunciation": "in-SHAA-al-lah"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "AED (dírham de los EAU)",
+   "bestMonths": "Noviembre – marzo (24-30 °C, ideal para playa y desierto); de junio a septiembre se alcanzan a menudo 40-45 °C con mucha humedad",
+   "safety": {
+    "crimeRateSummary": "La delincuencia está entre las más bajas del mundo y Dubái y Abu Dabi son seguras de noche. El riesgo real es infringir la ley: tolerancia cero con las drogas, restricciones a algunos medicamentos con receta y castigos severos por la conducta en público; en momentos de tensión regional sigue los avisos oficiales.",
+    "commonScams": [
+     "Safaris por el desierto baratos vendidos en la calle o en redes sociales sin seguro ni medidas de seguridad",
+     "Anuncios falsos de pisos turísticos en internet que piden pago por adelantado",
+     "Llamadas que se hacen pasar por la policía o el banco por teléfono o WhatsApp pidiendo datos de la tarjeta"
+    ],
+    "safeTravelTips": [
+     "Lleva los medicamentos con receta junto a la receta y consulta antes la lista de fármacos controlados de los EAU.",
+     "No fotografíes a personas, sobre todo mujeres, sin permiso, ni edificios oficiales; no vueles drones sin autorización.",
+     "En Ramadán evita comer y beber en público durante el día; cubre hombros y rodillas en centros comerciales y mezquitas."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "998",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excelente – 5G extendido en ciudades y buena señal incluso en autopistas y campamentos del desierto",
+    "costPerGbUsd": "~2 - 6 $",
+    "esimAvailability": "Disponible – líneas turísticas de du y e& (en el aeropuerto), eSIM de Airalo y Holafly",
+    "bestCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muy bueno – metro y tranvía de Dubái modernos y limpios; red de autobuses en Abu Dabi; autobuses entre emiratos",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "~0.80 - 2 $ (Nol, según zona)",
+    "dailyPassUsd": "~6 $ (abono diario Nol)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "RTA Dubai"
+    ],
+    "taxiAdvice": "Los taxis oficiales de Dubái usan taxímetro y son seguros; los trayectos urbanos suelen costar 8-20 $, con recargo al recoger en el aeropuerto. El autobús E101 entre Dubái y Abu Dabi es mucho más barato que el taxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Moderado (Estambul – Dubái directo ~4,5 h)",
+    "flightTip": "THY, Emirates, flydubai, Pegasus y AJet vuelan Estambul – Dubái; Air Arabia vuela a Sharjah, y THY y Etihad a Abu Dabi. Volar a Sharjah o Abu Dabi suele ser más barato, y los hoteles bajan bastante en verano."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Árabe (oficial); el inglés se usa en todas partes como lengua común del trabajo y la vida diaria, y se hablan mucho hindi, urdu y tagalo.",
+    "englishProficiency": "Muy bueno – como la mayoría de residentes son extranjeros, el inglés funciona en todas partes.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (Marhaba)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "كم السعر؟ (Kam as-si‘r?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "kam as-SI-ir"
+     },
+     {
+      "phrase": "إن شاء الله (Inshallah)",
+      "meaning": "Si Dios quiere / Ojalá",
+      "translation": "Si Dios quiere / Ojalá",
+      "pronunciation": "in-SHAA-al-lah"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "AED (дирхам ОАЭ)",
+   "bestMonths": "Ноябрь – март (24-30 °C, идеально для пляжа и пустыни); с июня по сентябрь часто 40-45 °C при очень высокой влажности",
+   "safety": {
+    "crimeRateSummary": "Уровень преступности один из самых низких в мире, Дубай и Абу-Даби безопасны и ночью. Главный риск — нарушить закон: нулевая терпимость к наркотикам, ограничения на ряд рецептурных лекарств и строгие наказания за поведение в общественных местах; при региональной напряжённости следите за официальными рекомендациями.",
+    "commonScams": [
+     "Дешёвые сафари по пустыне, продаваемые на улице или в соцсетях, без страховки и мер безопасности",
+     "Фальшивые объявления об аренде жилья в интернете с предоплатой",
+     "Звонки от «полиции» или «банка» по телефону или в WhatsApp с просьбой назвать данные карты"
+    ],
+    "safeTravelTips": [
+     "Возите рецептурные лекарства вместе с рецептом и заранее проверьте список контролируемых препаратов ОАЭ.",
+     "Не фотографируйте людей, особенно женщин, без разрешения и государственные здания; не запускайте дроны без допуска.",
+     "Во время Рамадана не ешьте и не пейте днём на людях; в торговых центрах и мечетях закрывайте плечи и колени."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "998",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Отлично – повсеместный 5G в городах, сильный сигнал даже на трассах и в пустынных лагерях",
+    "costPerGbUsd": "~2 - 6 $",
+    "esimAvailability": "Доступна – туристические линии du и e& (в аэропорту), eSIM от Airalo и Holafly",
+    "bestCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Очень хорошо – современные и чистые метро и трамвай Дубая; автобусная сеть в Абу-Даби; автобусы между эмиратами",
+    "costLevel": "Средне",
+    "singleTicketUsd": "~0.80 - 2 $ (Nol, по зонам)",
+    "dailyPassUsd": "~6 $ (дневной билет Nol)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "RTA Dubai"
+    ],
+    "taxiAdvice": "Официальные такси в Дубае работают по счётчику и безопасны; поездки по городу обычно стоят 8-20 $, при посадке в аэропорту действует надбавка. Автобус E101 между Дубаем и Абу-Даби намного дешевле такси."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Средний (Стамбул – Дубай прямой ~4,5 ч)",
+    "flightTip": "Из Стамбула в Дубай летают THY, Emirates, flydubai, Pegasus и AJet; в Шарджу — Air Arabia, в Абу-Даби — THY и Etihad. Перелёт в Шарджу или Абу-Даби часто дешевле, а летом цены на отели заметно падают."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Арабский (официальный); английский повсюду служит общим языком работы и быта, широко распространены хинди, урду и тагальский.",
+    "englishProficiency": "Очень хороший – большинство жителей экспаты, поэтому английский понимают везде.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (Marhaba)",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "كم السعر؟ (Kam as-si‘r?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "kam as-SI-ir"
+     },
+     {
+      "phrase": "إن شاء الله (Inshallah)",
+      "meaning": "Если на то будет воля Аллаха",
+      "translation": "Если на то будет воля Аллаха",
+      "pronunciation": "in-SHAA-al-lah"
+     }
+    ]
+   }
+  }
+ }
+}

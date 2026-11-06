@@ -1,0 +1,492 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Konvertibl Mark (BAM / KM)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim; Temmuz – Ağustos’ta Mostar 35°C’yi aşabilir, Kravica’da yüzmek için Haziran – Eylül, Jahorina ve Bjelašnica’da kayak için Aralık – Mart",
+   "safety": {
+    "crimeRateSummary": "Turistlere yönelik suç düşüktür; Saraybosna ve Mostar genel olarak huzurludur. En önemli risk, kırsal bölgelerde savaştan kalan mayınlardır: işaretli patikalardan ve asfalt yollardan ayrılmayın.",
+    "commonScams": [
+     "Saraybosna havalimanı ve otogarında taksimetre açmayan taksiler",
+     "Başçarşı’da ve tramvayda kalabalıktan yararlanan yankesiciler",
+     "Mostar’da Eski Köprü yakınında menüsüz restoranlarda şişirilmiş hesap"
+    ],
+    "safeTravelTips": [
+     "Kırsal bölgelerde, terk edilmiş evlerde ve işaretsiz arazide yürümeyin; kırmızı “Mine!” tabelalarına mutlaka uyun.",
+     "Taksi için telefonla veya uygulamayla çağrılan tanınmış firmaları tercih edin ve taksimetreyi kontrol edin.",
+     "Savaş ve etnik konular hassastır; sohbet açılırsa dinleyin, taraf tutmaktan kaçının."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "122"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde ve ana yollarda iyi 4G; dağlık vadilerde ve kanyonlarda kesintili",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Mevcut – Airalo, Holafly gibi uluslararası eSIM’ler (Bosna-Hersek AB dolaşımına dahil değildir)",
+    "bestCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta – Saraybosna’da tramvay ve otobüs; şehirlerarası otobüsler yaygın, Saraybosna – Mostar arası manzaralı tren",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "~1 - 1.50 $",
+    "dailyPassUsd": "~3 - 4 $",
+    "popularRideApps": [
+     "Crveni Taxi (Sarajevo)",
+     "Sarajevo Taxi"
+    ],
+    "taxiAdvice": "Saraybosna’da Uber ve Bolt yoktur; şehir içi taksi yolculukları genellikle 4-8 $ tutar. Telefonla çağrılan tanınmış firmaları kullanın ve taksimetrenin açık olduğundan emin olun."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "7 - 12 $",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "50 - 90 $",
+    "flightCostIndex": "Düşük (İstanbul – Saraybosna direkt ~1.5-2 sa)",
+    "flightTip": "İstanbul’dan Saraybosna’ya THY, Pegasus ve AJet ile direkt uçuşlar var; yaz aylarında Mostar’a da sezonluk seferler olabilir. Rotayı Saraybosna’da başlatıp Mostar’dan Hırvatistan kıyısına devam etmek de mümkündür."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Boşnakça, Hırvatça ve Sırpça (birbirine çok yakın; Latin ve Kiril alfabesi kullanılır).",
+    "englishProficiency": "Saraybosna ve Mostar’da gençler ve turizm çalışanları arasında iyi; kırsalda sınırlı. Pek çok kelime Türkçeden geçmedir (çarşı, kahva, ćevap).",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "İyi günler / Merhaba",
+      "pronunciation": "DO-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen / Rica ederim",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Jednu kafu, molim",
+      "meaning": "Bir kahve lütfen",
+      "translation": "Bir kahve lütfen",
+      "pronunciation": "YED-noo KAH-foo MO-lim"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Convertible mark (BAM / KM)",
+   "bestMonths": "May – June and September – October; Mostar can exceed 35°C in July – August, June – September for swimming at Kravica, December – March for skiing on Jahorina and Bjelašnica",
+   "safety": {
+    "crimeRateSummary": "Crime against tourists is low; Sarajevo and Mostar generally feel calm. The main risk is leftover wartime landmines in rural areas: stay on marked trails and paved roads.",
+    "commonScams": [
+     "Taxis at Sarajevo airport and the bus station that don’t switch on the meter",
+     "Pickpockets taking advantage of crowds in Baščaršija and on the tram",
+     "Inflated bills at restaurants without menus near the Old Bridge in Mostar"
+    ],
+    "safeTravelTips": [
+     "Do not walk in rural areas, abandoned houses or unmarked land; always heed the red “Mine!” signs.",
+     "For taxis, choose well-known companies booked by phone or app and check the meter.",
+     "War and ethnic topics are sensitive; if they come up, listen and avoid taking sides."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "122"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in cities and along main roads; patchy in mountain valleys and canyons",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Available – international eSIMs such as Airalo and Holafly (Bosnia and Herzegovina is not part of EU roaming)",
+    "bestCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair – trams and buses in Sarajevo; intercity buses are common, plus a scenic Sarajevo – Mostar train",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "~1 - 1.50 $",
+    "dailyPassUsd": "~3 - 4 $",
+    "popularRideApps": [
+     "Crveni Taxi (Sarajevo)",
+     "Sarajevo Taxi"
+    ],
+    "taxiAdvice": "There is no Uber or Bolt in Sarajevo; city taxi rides usually cost $4-8. Use well-known companies booked by phone and make sure the meter is running."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "7 - 12 $",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "50 - 90 $",
+    "flightCostIndex": "Low (Istanbul – Sarajevo direct ~1.5-2 h)",
+    "flightTip": "THY, Pegasus and AJet fly direct from Istanbul to Sarajevo; in summer there may also be seasonal flights to Mostar. You can start in Sarajevo and continue from Mostar to the Croatian coast."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Bosnian, Croatian and Serbian (very close to each other; Latin and Cyrillic scripts are used).",
+    "englishProficiency": "Good among young people and tourism staff in Sarajevo and Mostar; limited in the countryside. Many words come from Turkish (čaršija, kahva, ćevap).",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Good day / Hello",
+      "translation": "Good day / Hello",
+      "pronunciation": "DO-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Please / You’re welcome",
+      "translation": "Please / You’re welcome",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Jednu kafu, molim",
+      "meaning": "One coffee, please",
+      "translation": "One coffee, please",
+      "pronunciation": "YED-noo KAH-foo MO-lim"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Konvertible Mark (BAM / KM)",
+   "bestMonths": "Mai – Juni und September – Oktober; in Mostar im Juli – August oft über 35 °C, Juni – September zum Baden an den Kravica-Fällen, Dezember – März Ski auf Jahorina und Bjelašnica",
+   "safety": {
+    "crimeRateSummary": "Kriminalität gegen Touristen ist gering; Sarajevo und Mostar wirken meist ruhig. Hauptrisiko sind Landminen aus dem Krieg in ländlichen Gebieten: auf markierten Wegen und befestigten Straßen bleiben.",
+    "commonScams": [
+     "Taxis an Flughafen und Busbahnhof Sarajevo, die das Taxameter nicht einschalten",
+     "Taschendiebe, die das Gedränge in der Baščaršija und in der Straßenbahn ausnutzen",
+     "Überhöhte Rechnungen in Restaurants ohne Speisekarte nahe der Alten Brücke in Mostar"
+    ],
+    "safeTravelTips": [
+     "Nicht in ländlichen Gebieten, verlassenen Häusern oder unmarkiertem Gelände laufen; rote „Mine!“-Schilder unbedingt beachten.",
+     "Bei Taxis bekannte, telefonisch oder per App bestellte Firmen wählen und das Taxameter prüfen.",
+     "Krieg und ethnische Themen sind heikel; wenn sie zur Sprache kommen, zuhören und nicht Partei ergreifen."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "122"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Städten und an Hauptstraßen; in Bergtälern und Schluchten lückenhaft",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Verfügbar – internationale eSIMs wie Airalo und Holafly (Bosnien und Herzegowina gehört nicht zum EU-Roaming)",
+    "bestCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel – Trams und Busse in Sarajevo; viele Fernbusse und eine landschaftlich schöne Bahn Sarajevo – Mostar",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "~1 - 1.50 $",
+    "dailyPassUsd": "~3 - 4 $",
+    "popularRideApps": [
+     "Crveni Taxi (Sarajevo)",
+     "Sarajevo Taxi"
+    ],
+    "taxiAdvice": "In Sarajevo gibt es weder Uber noch Bolt; Taxifahrten in der Stadt kosten meist 4-8 $. Bekannte, telefonisch bestellte Firmen nutzen und auf das laufende Taxameter achten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "7 - 12 $",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "50 - 90 $",
+    "flightCostIndex": "Niedrig (Istanbul – Sarajevo direkt ~1,5-2 Std.)",
+    "flightTip": "THY, Pegasus und AJet fliegen direkt von Istanbul nach Sarajevo; im Sommer gibt es teils Saisonflüge nach Mostar. Man kann in Sarajevo starten und von Mostar an die kroatische Küste weiterreisen."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Bosnisch, Kroatisch und Serbisch (sehr eng verwandt; lateinische und kyrillische Schrift).",
+    "englishProficiency": "Gut bei Jüngeren und im Tourismus in Sarajevo und Mostar, auf dem Land begrenzt. Viele Wörter stammen aus dem Türkischen (čaršija, kahva, ćevap).",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Guten Tag",
+      "translation": "Guten Tag",
+      "pronunciation": "DO-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Jednu kafu, molim",
+      "meaning": "Einen Kaffee, bitte",
+      "translation": "Einen Kaffee, bitte",
+      "pronunciation": "YED-noo KAH-foo MO-lim"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Marco convertible (BAM / KM)",
+   "bestMonths": "Mayo – junio y septiembre – octubre; en julio – agosto Mostar supera a menudo los 35 °C, junio – septiembre para bañarse en Kravica y diciembre – marzo para esquiar en Jahorina y Bjelašnica",
+   "safety": {
+    "crimeRateSummary": "La delincuencia contra turistas es baja; Sarajevo y Mostar suelen ser tranquilas. El mayor riesgo son las minas de la guerra en zonas rurales: no salgas de senderos señalizados ni carreteras asfaltadas.",
+    "commonScams": [
+     "Taxis en el aeropuerto y la estación de autobuses de Sarajevo que no encienden el taxímetro",
+     "Carteristas que aprovechan las aglomeraciones en Baščaršija y en el tranvía",
+     "Cuentas infladas en restaurantes sin carta cerca del Puente Viejo de Mostar"
+    ],
+    "safeTravelTips": [
+     "No camines por zonas rurales, casas abandonadas o terrenos sin señalizar; respeta siempre los carteles rojos de “Mine!”.",
+     "Para taxis elige empresas conocidas pedidas por teléfono o app y vigila el taxímetro.",
+     "La guerra y los temas étnicos son delicados; si salen, escucha y no tomes partido."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "122"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en ciudades y carreteras principales; irregular en valles y cañones de montaña",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Disponible – eSIM internacionales como Airalo y Holafly (Bosnia y Herzegovina no está en el roaming de la UE)",
+    "bestCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Aceptable – tranvías y autobuses en Sarajevo; muchos autobuses interurbanos y un tren panorámico Sarajevo – Mostar",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~1 - 1.50 $",
+    "dailyPassUsd": "~3 - 4 $",
+    "popularRideApps": [
+     "Crveni Taxi (Sarajevo)",
+     "Sarajevo Taxi"
+    ],
+    "taxiAdvice": "En Sarajevo no hay Uber ni Bolt; los trayectos urbanos en taxi suelen costar 4-8 $. Usa empresas conocidas pedidas por teléfono y comprueba que el taxímetro funcione."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "7 - 12 $",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "50 - 90 $",
+    "flightCostIndex": "Bajo (Estambul – Sarajevo directo ~1,5-2 h)",
+    "flightTip": "THY, Pegasus y AJet vuelan directo de Estambul a Sarajevo; en verano puede haber vuelos de temporada a Mostar. Puedes empezar en Sarajevo y seguir desde Mostar a la costa croata."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Bosnio, croata y serbio (muy parecidos entre sí; se usan los alfabetos latino y cirílico).",
+    "englishProficiency": "Bueno entre jóvenes y personal turístico en Sarajevo y Mostar; limitado en el campo. Muchas palabras vienen del turco (čaršija, kahva, ćevap).",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Buenos días / Hola",
+      "translation": "Buenos días / Hola",
+      "pronunciation": "DO-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Jednu kafu, molim",
+      "meaning": "Un café, por favor",
+      "translation": "Un café, por favor",
+      "pronunciation": "YED-noo KAH-foo MO-lim"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Конвертируемая марка (BAM / KM)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь; в июле – августе в Мостаре бывает выше 35 °C, июнь – сентябрь для купания у Кравицы, декабрь – март для лыж на Яхорине и Бьелашнице",
+   "safety": {
+    "crimeRateSummary": "Преступлений против туристов мало; Сараево и Мостар в целом спокойны. Главный риск — мины, оставшиеся после войны в сельской местности: не сходите с размеченных троп и асфальтовых дорог.",
+    "commonScams": [
+     "Такси в аэропорту и на автовокзале Сараево, не включающие счётчик",
+     "Карманники в толпе на Башчаршии и в трамвае",
+     "Завышенные счета в ресторанах без меню у Старого моста в Мостаре"
+    ],
+    "safeTravelTips": [
+     "Не ходите по сельской местности, заброшенным домам и неразмеченным участкам; всегда соблюдайте красные знаки «Mine!».",
+     "Выбирайте известные службы такси, вызванные по телефону или через приложение, и следите за счётчиком.",
+     "Темы войны и этнических отношений болезненны; если о них заговорят, слушайте и не занимайте ничью сторону."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "122"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в городах и вдоль трасс; в горных долинах и каньонах с перебоями",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Доступна – международные eSIM вроде Airalo и Holafly (Босния и Герцеговина не входит в роуминг ЕС)",
+    "bestCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне – трамваи и автобусы в Сараево; много междугородних автобусов и живописный поезд Сараево – Мостар",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "~1 - 1.50 $",
+    "dailyPassUsd": "~3 - 4 $",
+    "popularRideApps": [
+     "Crveni Taxi (Sarajevo)",
+     "Sarajevo Taxi"
+    ],
+    "taxiAdvice": "В Сараево нет Uber и Bolt; поездки на такси по городу обычно стоят 4-8 $. Вызывайте известные службы по телефону и следите, чтобы счётчик был включён."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 110 $",
+    "budgetMealUsd": "7 - 12 $",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "12 - 22 $",
+    "hotel3StarUsd": "50 - 90 $",
+    "flightCostIndex": "Низкий (Стамбул – Сараево прямой ~1,5-2 ч)",
+    "flightTip": "Из Стамбула в Сараево летают THY, Pegasus и AJet; летом бывают сезонные рейсы в Мостар. Можно начать в Сараево и из Мостара продолжить путь на хорватское побережье."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Боснийский, хорватский и сербский (очень близки; используются латиница и кириллица).",
+    "englishProficiency": "Хороший у молодёжи и в туризме в Сараево и Мостаре, в сёлах ограниченный. Многие слова пришли из турецкого (čaršija, kahva, ćevap).",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Добрый день",
+      "translation": "Добрый день",
+      "pronunciation": "DO-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Jednu kafu, molim",
+      "meaning": "Один кофе, пожалуйста",
+      "translation": "Один кофе, пожалуйста",
+      "pronunciation": "YED-noo KAH-foo MO-lim"
+     }
+    ]
+   }
+  }
+ }
+}

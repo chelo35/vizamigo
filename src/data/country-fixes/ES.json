@@ -1,0 +1,502 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Nisan – Haziran ve Eylül – Ekim; Temmuz–Ağustos’ta Endülüs ve Madrid 40 °C’yi aşabilir; Kanarya Adaları yıl boyu ılıman",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenlidir; şiddet suçu düşüktür. Ancak Barselona (La Rambla, metro, plajlar) ve Madrid merkezinde yankesicilik Avrupa’nın en yüksek seviyelerindendir.",
+    "commonScams": [
+     "Barselona La Rambla ve Gotik Mahalle’de cüzdan kontrolü bahanesiyle para çalan sahte sivil polisler",
+     "Üzerinize leke/sıvı sıçratıp temizleme bahanesiyle soyma",
+     "Plajlarda kumda bırakılan eşyaların ve kafe masalarındaki telefonların çalınması"
+    ],
+    "safeTravelTips": [
+     "Telefonunuzu kafe ve restoran masalarına bırakmayın.",
+     "Gerçek polis sokakta cüzdanınızı kontrol etmez; kimlik isteyen sivillere karakolda göstereceğinizi söyleyin.",
+     "Plajda değerli eşyalarınızı yanınıza almayın veya biri sürekli başında kalsın."
+    ],
+    "emergencyNumbers": {
+     "police": "091 (Policía Nacional) / 112",
+     "ambulance": "112 / 061",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G/5G)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Çok iyi (AVE hızlı trenler, Madrid ve Barselona metroları)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1.70 - 3.50 $ (Madrid ve Barselona metro tek bilet)",
+    "dailyPassUsd": "~9 - 12 $ (Madrid turist kartı, 1 gün)",
+    "popularRideApps": [
+     "Cabify",
+     "Uber",
+     "FreeNow",
+     "Bolt",
+     "Renfe"
+    ],
+    "taxiAdvice": "Resmî taksiler taksimetrelidir; Madrid havalimanı–şehir merkezi için sabit tarife vardır. Şehirlerarası AVE, Ouigo ve Iryo hızlı trenlerinde erken alınan biletler çok daha ucuzdur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 170 $",
+    "budgetMealUsd": "13 - 20 $ (öğle “menú del día”)",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (Barselona ve yazın adalarda daha pahalı)",
+    "flightCostIndex": "Düşük (direkt ~4 sa)",
+    "flightTip": "İstanbul’dan Madrid, Barselona, Valensiya, Málaga ve Sevilla’ya direkt uçuşlar vardır."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "¡Hola! / Buenos días",
+      "meaning": "Merhaba / Günaydın",
+      "translation": "Merhaba / Günaydın",
+      "pronunciation": "Ola / Buenos dias"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "Muças grasyas"
+     },
+     {
+      "phrase": "Perdone / Disculpe",
+      "meaning": "Affedersiniz",
+      "translation": "Affedersiniz",
+      "pronunciation": "Perdone / Diskulpe"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "Kuanto kuesta?"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Hesap, lütfen",
+      "translation": "Hesap, lütfen",
+      "pronunciation": "La kuenta, por fabor"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "April – June and September – October; Andalusia and Madrid can exceed 40 °C in July–August; the Canary Islands are mild all year",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe with low violent crime. However, pickpocketing in Barcelona (La Rambla, metro, beaches) and central Madrid is among the highest in Europe.",
+    "commonScams": [
+     "Fake plain-clothes police in Barcelona’s La Rambla and Gothic Quarter who “check” your wallet and take cash",
+     "The stain trick: someone squirts liquid on you and robs you while “helping” clean it",
+     "Theft of belongings left on the sand and of phones on café tables"
+    ],
+    "safeTravelTips": [
+     "Do not leave your phone on café or restaurant tables.",
+     "Real police do not check wallets in the street; offer to show ID at a police station instead.",
+     "Do not take valuables to the beach, or keep someone with your things at all times."
+    ],
+    "emergencyNumbers": {
+     "police": "091 (Policía Nacional) / 112",
+     "ambulance": "112 / 061",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Very good (AVE high-speed trains, Madrid and Barcelona metros)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1.70 - 3.50 $ (Madrid and Barcelona metro single)",
+    "dailyPassUsd": "~9 - 12 $ (Madrid tourist travel pass, 1 day)",
+    "popularRideApps": [
+     "Cabify",
+     "Uber",
+     "FreeNow",
+     "Bolt",
+     "Renfe"
+    ],
+    "taxiAdvice": "Official taxis are metered, and there is a flat fare between Madrid Airport and the city centre. Book AVE, Ouigo and Iryo high-speed trains early for much cheaper fares."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 170 $",
+    "budgetMealUsd": "13 - 20 $ (lunchtime “menú del día”)",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (more in Barcelona and on the islands in summer)",
+    "flightCostIndex": "Low (direct ~4 h)",
+    "flightTip": "There are direct flights from Istanbul to Madrid, Barcelona, Valencia, Málaga and Seville."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "¡Hola! / Buenos días",
+      "meaning": "Hello / Good morning",
+      "translation": "Hello / Good morning",
+      "pronunciation": "OH-lah / BWEH-nohs DEE-ahs"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     },
+     {
+      "phrase": "Perdone / Disculpe",
+      "meaning": "Excuse me",
+      "translation": "Excuse me",
+      "pronunciation": "pehr-DOH-neh / dees-KOOL-peh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAHN-toh KWEHS-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "lah KWEHN-tah, por fah-VOR"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "April – Juni und September – Oktober; in Andalusien und Madrid kann es im Juli–August über 40 °C heiß werden; die Kanaren sind ganzjährig mild",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher mit geringer Gewaltkriminalität. Taschendiebstahl in Barcelona (La Rambla, Metro, Strände) und im Zentrum Madrids gehört jedoch zu den höchsten in Europa.",
+    "commonScams": [
+     "Falsche Zivilpolizisten an der Rambla und im Gotischen Viertel von Barcelona, die die Geldbörse „kontrollieren“ und Bargeld stehlen",
+     "Der Fleckentrick: Jemand bespritzt dich und bestiehlt dich beim „Saubermachen“",
+     "Diebstahl von Sachen am Strand und von Handys auf Cafétischen"
+    ],
+    "safeTravelTips": [
+     "Lass dein Handy nicht auf Café- oder Restauranttischen liegen.",
+     "Echte Polizisten kontrollieren keine Geldbörsen auf der Straße; biete an, den Ausweis auf der Wache zu zeigen.",
+     "Keine Wertsachen an den Strand mitnehmen oder immer jemanden bei den Sachen lassen."
+    ],
+    "emergencyNumbers": {
+     "police": "091 (Policía Nacional) / 112",
+     "ambulance": "112 / 061",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G/5G)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sehr gut (AVE-Hochgeschwindigkeitszüge, Metros in Madrid und Barcelona)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1.70 - 3.50 $ (Einzelfahrt Metro Madrid/Barcelona)",
+    "dailyPassUsd": "~9 - 12 $ (Touristenticket Madrid, 1 Tag)",
+    "popularRideApps": [
+     "Cabify",
+     "Uber",
+     "FreeNow",
+     "Bolt",
+     "Renfe"
+    ],
+    "taxiAdvice": "Offizielle Taxis fahren mit Taxameter; zwischen Flughafen Madrid und Zentrum gilt ein Festpreis. Früh gebuchte Tickets für AVE, Ouigo und Iryo sind deutlich günstiger."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 170 $",
+    "budgetMealUsd": "13 - 20 $ (Mittagsmenü „menú del día“)",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (in Barcelona und auf den Inseln im Sommer teurer)",
+    "flightCostIndex": "Niedrig (Direktflug ~4 Std.)",
+    "flightTip": "Von Istanbul gibt es Direktflüge nach Madrid, Barcelona, Valencia, Málaga und Sevilla."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "¡Hola! / Buenos días",
+      "meaning": "Hallo / Guten Morgen",
+      "translation": "Hallo / Guten Morgen",
+      "pronunciation": "O-la / BUE-nos DI-as"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "MU-tschas GRA-thjas"
+     },
+     {
+      "phrase": "Perdone / Disculpe",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "per-DO-ne / dis-KUL-pe"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KUAN-to KUES-ta"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "la KUEN-ta, por fa-WOR"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Abril – junio y septiembre – octubre; en julio–agosto Andalucía y Madrid pueden superar los 40 °C; Canarias es templada todo el año",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro y con poca delincuencia violenta. Sin embargo, los carteristas en Barcelona (La Rambla, metro, playas) y en el centro de Madrid están entre los más activos de Europa.",
+    "commonScams": [
+     "Falsos policías de paisano en La Rambla y el Barrio Gótico de Barcelona que “revisan” tu cartera y se quedan el dinero",
+     "El truco de la mancha: te manchan y te roban mientras te “ayudan” a limpiarte",
+     "Robos de pertenencias dejadas en la arena y de móviles sobre las mesas de las terrazas"
+    ],
+    "safeTravelTips": [
+     "No dejes el móvil sobre la mesa en bares y restaurantes.",
+     "La policía real no revisa carteras en la calle; ofrécete a identificarte en comisaría.",
+     "No lleves objetos de valor a la playa o deja siempre a alguien vigilando."
+    ],
+    "emergencyNumbers": {
+     "police": "091 (Policía Nacional) / 112",
+     "ambulance": "112 / 061",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muy bueno (alta velocidad AVE, metros de Madrid y Barcelona)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.70 - 3.50 $ (billete sencillo de metro en Madrid y Barcelona)",
+    "dailyPassUsd": "~9 - 12 $ (Abono Turístico de Madrid, 1 día)",
+    "popularRideApps": [
+     "Cabify",
+     "Uber",
+     "FreeNow",
+     "Bolt",
+     "Renfe"
+    ],
+    "taxiAdvice": "Los taxis oficiales llevan taxímetro y hay tarifa fija entre el aeropuerto de Madrid y el centro. Comprar con antelación los billetes de AVE, Ouigo e Iryo sale mucho más barato."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 170 $",
+    "budgetMealUsd": "13 - 20 $ (menú del día)",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (más caro en Barcelona y en las islas en verano)",
+    "flightCostIndex": "Bajo (directo ~4 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Madrid, Barcelona, Valencia, Málaga y Sevilla."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "¡Hola! / Buenos días",
+      "meaning": "Saludo informal / formal de mañana",
+      "translation": "Saludo informal / formal de mañana",
+      "pronunciation": "O-la / BUE-nos DÍ-as"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Agradecimiento",
+      "translation": "Agradecimiento",
+      "pronunciation": "MU-chas GRA-cias"
+     },
+     {
+      "phrase": "Perdone / Disculpe",
+      "meaning": "Para pedir atención o disculpas",
+      "translation": "Para pedir atención o disculpas",
+      "pronunciation": "per-DO-ne / dis-KUL-pe"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Para preguntar el precio",
+      "translation": "Para preguntar el precio",
+      "pronunciation": "CUÁN-to CUES-ta"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Para pedir la cuenta",
+      "translation": "Para pedir la cuenta",
+      "pronunciation": "la CUEN-ta, por fa-VOR"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Апрель – июнь и сентябрь – октябрь; в июле–августе в Андалусии и Мадриде бывает выше 40 °C; на Канарах мягко круглый год",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно, насильственных преступлений мало. Однако карманные кражи в Барселоне (Рамбла, метро, пляжи) и в центре Мадрида — одни из самых частых в Европе.",
+    "commonScams": [
+     "Фальшивые полицейские в штатском на Рамбле и в Готическом квартале Барселоны, «проверяющие» кошелёк и забирающие деньги",
+     "Трюк с пятном: вас обливают чем-то и обкрадывают, «помогая» почиститься",
+     "Кражи вещей, оставленных на песке, и телефонов со столиков кафе"
+    ],
+    "safeTravelTips": [
+     "Не оставляйте телефон на столике в кафе или ресторане.",
+     "Настоящая полиция не проверяет кошельки на улице; предложите предъявить документы в участке.",
+     "Не берите ценности на пляж или оставляйте кого-то присматривать за вещами."
+    ],
+    "emergencyNumbers": {
+     "police": "091 (Policía Nacional) / 112",
+     "ambulance": "112 / 061",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G)",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Очень хороший (скоростные поезда AVE, метро Мадрида и Барселоны)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "1.70 - 3.50 $ (разовый билет метро Мадрида и Барселоны)",
+    "dailyPassUsd": "~9 - 12 $ (туристический проездной Мадрида на 1 день)",
+    "popularRideApps": [
+     "Cabify",
+     "Uber",
+     "FreeNow",
+     "Bolt",
+     "Renfe"
+    ],
+    "taxiAdvice": "Официальные такси работают по счётчику; между аэропортом Мадрида и центром действует фиксированный тариф. Билеты на AVE, Ouigo и Iryo заметно дешевле при ранней покупке."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 170 $",
+    "budgetMealUsd": "13 - 20 $ (обеденное «menú del día»)",
+    "coffeeUsd": "1.50 - 2.50 $",
+    "waterBottleUsd": "0.60 - 1.50 $",
+    "hostelDormUsd": "25 - 50 $",
+    "hotel3StarUsd": "90 - 160 $ (дороже в Барселоне и на островах летом)",
+    "flightCostIndex": "Низкий (прямой рейс ~4 ч)",
+    "flightTip": "Из Стамбула есть прямые рейсы в Мадрид, Барселону, Валенсию, Малагу и Севилью."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "¡Hola! / Buenos días",
+      "meaning": "Привет / Доброе утро",
+      "translation": "Привет / Доброе утро",
+      "pronunciation": "Ола / Буэнос диас"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "Мучас грасиас"
+     },
+     {
+      "phrase": "Perdone / Disculpe",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "Пердоне / Дискульпе"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "Куанто куэста?"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "Ла куэнта, пор фавор"
+     }
+    ]
+   }
+  }
+ }
+}

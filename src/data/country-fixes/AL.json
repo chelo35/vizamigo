@@ -1,0 +1,482 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Arnavutluk Leki (ALL)",
+   "bestMonths": "Mayıs – Haziran ve Eylül (Riviera’da deniz ılık, kalabalık az); Temmuz–Ağustos çok sıcak ve kalabalık; Arnavut Alpleri (Theth–Valbona) için Haziran – Eylül",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Turistler için genel olarak güvenlidir; şiddet olayları turistleri nadiren etkiler. Asıl riskler kaotik trafik, bakımsız dağ yolları ve kalabalık plajlarda küçük hırsızlıklardır.",
+    "commonScams": [
+     "Taksilerde, özellikle Tiran Havalimanı’nda fiyat şişirme",
+     "Ksamil ve Saranda plajlarında yüksek şezlong ücretleri",
+     "Euro ile ödemede uygulanan kötü kur ve yüksek ATM ücretleri"
+    ],
+    "safeTravelTips": [
+     "Gece şehirlerarası yollarda araç kullanmaktan kaçının; yaya ve hayvanlar yola çıkabilir.",
+     "Mümkünse lek ile ödeyin; Euro kabul edilse de kur genellikle aleyhinizedir.",
+     "ATM’de “dönüştürmeyi reddet” seçeneğini seçin ve yüksek komisyon alan cihazlardan kaçının."
+    ],
+    "emergencyNumbers": {
+     "police": "129",
+     "ambulance": "127",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%95+ (4G yaygın; dağlık bölgelerde kesintiler olabilir)",
+    "costPerGbUsd": "~0.30 - 1.00 $ (turist paketleri çok uygun)",
+    "esimAvailability": "İyi (uluslararası eSIM’ler çalışır)",
+    "bestCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (otobüs ve furgon minibüsler; yolcu treni neredeyse yok)",
+    "costLevel": "Çok ekonomik",
+    "singleTicketUsd": "~0.45 - 0.60 $ (Tiran şehir otobüsü); Tiran–Berat otobüsü ~5 - 7 $",
+    "dailyPassUsd": "Günlük kart yaygın değil",
+    "popularRideApps": [
+     "Speed Taxi",
+     "MerrTaxi",
+     "Yerel taksi (telefon / WhatsApp)"
+    ],
+    "taxiAdvice": "Uber yoktur. Taksiye binmeden fiyatı kararlaştırın; Tiran Havalimanı–şehir merkezi için sabit tarife vardır. Furgonlar ucuzdur ama tarifesizdir; Riviera ve Alpler için araç kiralamak pratiktir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "65 - 110 $",
+    "budgetMealUsd": "6 - 12 $ (byrek, qofte veya ev yemekleri)",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $ (Riviera’da yaz zirvesinde daha yüksek)",
+    "flightCostIndex": "Düşük (direkt ~1 sa 30 dk)",
+    "flightTip": "İstanbul’dan Tiran’a Turkish Airlines ve Pegasus ile direkt uçuşlar vardır. Tiran’dan Saranda’ya otobüsle yaklaşık 5 saat sürer."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "İyi günler / Merhaba",
+      "pronunciation": "Mirıdita"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "Faleminderit"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "Yu lutem"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "Sa kuşton?"
+     },
+     {
+      "phrase": "Llogarinë, ju lutem",
+      "meaning": "Hesap, lütfen",
+      "translation": "Hesap, lütfen",
+      "pronunciation": "Logarinı, yu lutem"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Albanian lek (ALL)",
+   "bestMonths": "May – June and September (warm sea on the Riviera, fewer crowds); July–August are very hot and busy; June – September for the Albanian Alps (Theth–Valbona)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe for tourists; violent incidents rarely involve visitors. The main risks are chaotic traffic, poorly maintained mountain roads and petty theft on crowded beaches.",
+    "commonScams": [
+     "Inflated taxi fares, especially at Tirana Airport",
+     "High sunbed fees on Ksamil and Sarandë beaches",
+     "Poor exchange rates when paying in euros and high ATM fees"
+    ],
+    "safeTravelTips": [
+     "Avoid driving intercity roads at night; pedestrians and animals may be on the road.",
+     "Pay in lek where possible; euros are often accepted but at a bad rate.",
+     "Choose “decline conversion” at ATMs and avoid machines with high fees."
+    ],
+    "emergencyNumbers": {
+     "police": "129",
+     "ambulance": "127",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G widespread; gaps in mountain areas)",
+    "costPerGbUsd": "~0.30 - 1.00 $ (tourist bundles are very cheap)",
+    "esimAvailability": "Good (international eSIMs work)",
+    "bestCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (buses and furgon minibuses; almost no passenger trains)",
+    "costLevel": "Very cheap",
+    "singleTicketUsd": "~0.45 - 0.60 $ (Tirana city bus); Tirana–Berat bus ~5 - 7 $",
+    "dailyPassUsd": "Day passes are not common",
+    "popularRideApps": [
+     "Speed Taxi",
+     "MerrTaxi",
+     "Local taxis (phone / WhatsApp)"
+    ],
+    "taxiAdvice": "There is no Uber. Agree the fare before getting in; there is a fixed rate between Tirana Airport and the city centre. Furgons are cheap but run without timetables; a rental car is practical for the Riviera and the Alps."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "65 - 110 $",
+    "budgetMealUsd": "6 - 12 $ (byrek, qofte or home-style dishes)",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $ (higher on the Riviera in peak summer)",
+    "flightCostIndex": "Low (direct ~1 h 30 min)",
+    "flightTip": "Turkish Airlines and Pegasus fly direct from Istanbul to Tirana. The bus from Tirana to Sarandë takes about 5 hours."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "Good day / Hello",
+      "translation": "Good day / Hello",
+      "pronunciation": "MEE-ruh-DEE-tah"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "fah-leh-meen-DEH-reet"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "yoo LOO-tem"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "sah koosh-TOHN"
+     },
+     {
+      "phrase": "Llogarinë, ju lutem",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "loh-gah-REE-nuh, yoo LOO-tem"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Albanischer Lek (ALL)",
+   "bestMonths": "Mai – Juni und September (warmes Meer an der Riviera, weniger Andrang); Juli–August sehr heiß und voll; Juni – September für die Albanischen Alpen (Theth–Valbona)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Für Touristen im Allgemeinen sicher; Gewaltvorfälle betreffen Besucher selten. Hauptrisiken sind chaotischer Verkehr, schlecht ausgebaute Bergstraßen und Kleindiebstahl an vollen Stränden.",
+    "commonScams": [
+     "Überhöhte Taxipreise, vor allem am Flughafen Tirana",
+     "Hohe Liegengebühren an den Stränden von Ksamil und Saranda",
+     "Schlechte Wechselkurse bei Zahlung in Euro und hohe Geldautomatengebühren"
+    ],
+    "safeTravelTips": [
+     "Überlandstraßen nachts meiden; Fußgänger und Tiere können auf der Fahrbahn sein.",
+     "Möglichst in Lek zahlen; Euro werden oft angenommen, aber zu schlechtem Kurs.",
+     "Am Geldautomaten „Umrechnung ablehnen“ wählen und Automaten mit hohen Gebühren meiden."
+    ],
+    "emergencyNumbers": {
+     "police": "129",
+     "ambulance": "127",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ (4G verbreitet; Lücken in den Bergen)",
+    "costPerGbUsd": "~0.30 - 1.00 $ (Touristenpakete sehr günstig)",
+    "esimAvailability": "Gut (internationale eSIMs funktionieren)",
+    "bestCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Busse und Furgon-Minibusse; kaum Personenzüge)",
+    "costLevel": "Sehr günstig",
+    "singleTicketUsd": "~0.45 - 0.60 $ (Stadtbus Tirana); Bus Tirana–Berat ~5 - 7 $",
+    "dailyPassUsd": "Tageskarten sind unüblich",
+    "popularRideApps": [
+     "Speed Taxi",
+     "MerrTaxi",
+     "Lokale Taxis (Telefon / WhatsApp)"
+    ],
+    "taxiAdvice": "Uber gibt es nicht. Den Preis vor der Fahrt vereinbaren; zwischen Flughafen Tirana und Zentrum gilt ein Festpreis. Furgons sind billig, fahren aber ohne Fahrplan; für Riviera und Alpen ist ein Mietwagen praktisch."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "65 - 110 $",
+    "budgetMealUsd": "6 - 12 $ (Byrek, Qofte oder Hausmannskost)",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $ (an der Riviera in der Hochsaison teurer)",
+    "flightCostIndex": "Niedrig (Direktflug ~1 Std. 30 Min.)",
+    "flightTip": "Turkish Airlines und Pegasus fliegen direkt von Istanbul nach Tirana. Der Bus von Tirana nach Saranda braucht etwa 5 Stunden."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "Guten Tag",
+      "translation": "Guten Tag",
+      "pronunciation": "MI-rö-DI-ta"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "fa-le-min-DE-rit"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "ju LU-tem"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "sa kusch-TON"
+     },
+     {
+      "phrase": "Llogarinë, ju lutem",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "lo-ga-RI-nö, ju LU-tem"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Lek albanés (ALL)",
+   "bestMonths": "Mayo – junio y septiembre (mar templado en la Riviera y menos gente); julio–agosto muy calurosos y llenos; junio – septiembre para los Alpes albaneses (Theth–Valbona)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro para turistas; los incidentes violentos rara vez afectan a visitantes. Los riesgos principales son el tráfico caótico, carreteras de montaña en mal estado y pequeños hurtos en playas abarrotadas.",
+    "commonScams": [
+     "Tarifas de taxi infladas, sobre todo en el aeropuerto de Tirana",
+     "Precios altos de hamacas en las playas de Ksamil y Sarandë",
+     "Mal tipo de cambio al pagar en euros y comisiones altas en cajeros"
+    ],
+    "safeTravelTips": [
+     "Evita conducir por carreteras interurbanas de noche; puede haber peatones y animales en la calzada.",
+     "Paga en lek cuando puedas; el euro se acepta a menudo, pero con mal cambio.",
+     "En el cajero elige “rechazar conversión” y evita los que cobran comisiones altas."
+    ],
+    "emergencyNumbers": {
+     "police": "129",
+     "ambulance": "127",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G extendido; zonas sin cobertura en la montaña)",
+    "costPerGbUsd": "~0.30 - 1.00 $ (paquetes turísticos muy baratos)",
+    "esimAvailability": "Buena (las eSIM internacionales funcionan)",
+    "bestCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Media (autobuses y microbuses furgon; casi sin trenes de pasajeros)",
+    "costLevel": "Muy barato",
+    "singleTicketUsd": "~0.45 - 0.60 $ (autobús urbano de Tirana); autobús Tirana–Berat ~5 - 7 $",
+    "dailyPassUsd": "Los abonos diarios no son habituales",
+    "popularRideApps": [
+     "Speed Taxi",
+     "MerrTaxi",
+     "Taxis locales (teléfono / WhatsApp)"
+    ],
+    "taxiAdvice": "No hay Uber. Acuerda el precio antes de subir; entre el aeropuerto de Tirana y el centro hay tarifa fija. Los furgones son baratos pero sin horario fijo; para la Riviera y los Alpes conviene alquilar coche."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "65 - 110 $",
+    "budgetMealUsd": "6 - 12 $ (byrek, qofte o comida casera)",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $ (más caro en la Riviera en pleno verano)",
+    "flightCostIndex": "Bajo (directo ~1 h 30 min)",
+    "flightTip": "Turkish Airlines y Pegasus vuelan directo de Estambul a Tirana. El autobús de Tirana a Sarandë tarda unas 5 horas."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "Buenos días / Hola",
+      "translation": "Buenos días / Hola",
+      "pronunciation": "MI-re-DI-ta"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "fa-le-min-DE-rit"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "yu LU-tem"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "sa kush-TON"
+     },
+     {
+      "phrase": "Llogarinë, ju lutem",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "lo-ga-RI-ne, yu LU-tem"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Албанский лек (ALL)",
+   "bestMonths": "Май – июнь и сентябрь (тёплое море на Ривьере, меньше туристов); июль–август очень жаркие и людные; для Албанских Альп (Тет–Валбона) — июнь – сентябрь",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно для туристов; насильственные инциденты редко касаются приезжих. Основные риски — хаотичное движение, плохие горные дороги и мелкие кражи на переполненных пляжах.",
+    "commonScams": [
+     "Завышенные цены в такси, особенно в аэропорту Тираны",
+     "Высокая плата за лежаки на пляжах Ксамиля и Саранды",
+     "Невыгодный курс при оплате в евро и высокие комиссии банкоматов"
+    ],
+    "safeTravelTips": [
+     "Не ездите по междугородним дорогам ночью: на проезжей части бывают пешеходы и животные.",
+     "По возможности платите в леках; евро часто принимают, но по плохому курсу.",
+     "В банкомате выбирайте «отказаться от конвертации» и избегайте аппаратов с высокой комиссией."
+    ],
+    "emergencyNumbers": {
+     "police": "129",
+     "ambulance": "127",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G повсеместно; в горах бывают провалы связи)",
+    "costPerGbUsd": "~0.30 - 1.00 $ (туристические пакеты очень дешёвые)",
+    "esimAvailability": "Хорошая (международные eSIM работают)",
+    "bestCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (автобусы и микроавтобусы-фургоны; пассажирских поездов почти нет)",
+    "costLevel": "Очень дёшево",
+    "singleTicketUsd": "~0.45 - 0.60 $ (городской автобус Тираны); автобус Тирана–Берат ~5 - 7 $",
+    "dailyPassUsd": "Дневные проездные не распространены",
+    "popularRideApps": [
+     "Speed Taxi",
+     "MerrTaxi",
+     "Местные такси (телефон / WhatsApp)"
+    ],
+    "taxiAdvice": "Uber нет. Договаривайтесь о цене до поездки; между аэропортом Тираны и центром действует фиксированный тариф. Фургоны дешёвые, но ходят без расписания; для Ривьеры и Альп удобнее арендовать машину."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "65 - 110 $",
+    "budgetMealUsd": "6 - 12 $ (бюрек, кофте или домашняя кухня)",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.40 - 0.70 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $ (дороже на Ривьере в разгар лета)",
+    "flightCostIndex": "Низкий (прямой рейс ~1 ч 30 мин)",
+    "flightTip": "Turkish Airlines и Pegasus летают из Стамбула в Тирану без пересадок. Автобус из Тираны в Саранду идёт около 5 часов."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "Добрый день",
+      "translation": "Добрый день",
+      "pronunciation": "Мирэдита"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "Фалеминдерит"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "Ю лутем"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "Са куштон?"
+     },
+     {
+      "phrase": "Llogarinë, ju lutem",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "Ллогаринэ, ю лутем"
+     }
+    ]
+   }
+  }
+ }
+}

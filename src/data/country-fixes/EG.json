@@ -1,0 +1,507 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Mısır Lirası (EGP)",
+   "bestMonths": "Ekim – Nisan (serin ve kurak; Luksor ve Asuan için ideal); Haziran – Ağustos’ta Güney Mısır’da sıcaklık 40°C’yi aşar, Kızıldeniz ise yıl boyu yüzmeye uygundur",
+   "safety": {
+    "crimeRateSummary": "Kahire, Luksor, Asuan ve Kızıldeniz tatil bölgeleri yoğun güvenlik önlemleriyle turistlere açıktır; şiddet suçu nadirdir ama ısrarcı satıcılar ve dolandırıcılık çok yaygındır. Kuzey Sinai ile Libya ve Sudan sınır bölgelerine resmî uyarılar nedeniyle gidilmemelidir.",
+    "commonScams": [
+     "Gize’de deve veya at sahiplerinin binerken düşük fiyat söyleyip inmek için çok daha fazla para istemesi",
+     "“Burası bugün kapalı” diyerek sizi papirüs, parfüm veya halı dükkânına götüren yardımsever yabancılar",
+     "Taksimetre açmayan taksiler ve bozuk para yok diyerek para üstü vermeme"
+    ],
+    "safeTravelTips": [
+     "Kahire’de Uber veya Careem kullanın; sokak taksisinde fiyatı binmeden netleştirin ve yanınızda bozuk lira bulundurun.",
+     "Deve, at ya da fotoğraf gibi her hizmette toplam fiyatı ve para birimini (lira mı dolar mı) önceden yüksek sesle teyit edin.",
+     "Haziran – Ağustos’ta açık hava alanlarını sabah erken gezin, öğle sıcağında gölgede kalın ve bol su için."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "123",
+     "general": "126"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde ve Nil vadisinde iyi 4G; çölde ve bazı antik alanlarda zayıf",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Mevcut – Airalo, Holafly ve Vodafone / Orange eSIM; havalimanında turist SIM’i de alınabilir",
+    "bestCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta – Kahire metrosu hızlı ve ucuz ama kalabalık; Nil boyunca trenler ve yataklı tren, şehirler arası otobüsler; trafik çok yoğun",
+    "costLevel": "Çok ucuz",
+    "singleTicketUsd": "~0.20 - 0.40 $",
+    "dailyPassUsd": "Günlük kart yok (tek biletler çok ucuz)",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "Kahire içinde Uber ile yolculuklar çoğunlukla 2-5 $, havalimanından Gize’ye 10-15 $ civarındadır. Luksor ve Asuan’da taksi ve faluka fiyatını mutlaka önceden pazarlık edin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.20 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 70 $",
+    "flightCostIndex": "Düşük-Orta (İstanbul – Kahire direkt ~2 sa)",
+    "flightTip": "İstanbul’dan Kahire’ye THY, EgyptAir, Pegasus ve AJet ile direkt uçuşlar var; Hurgada ve Şarm El-Şeyh’e de seferler bulunur. Antik alanların giriş ücretleri (özellikle Büyük Mısır Müzesi ve Krallar Vadisi) bütçede önemli yer tutar."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Arapça (günlük hayatta Mısır Arapçası konuşulur).",
+    "englishProficiency": "Turistik bölgelerde, otellerde ve rehberler arasında iyi; şehirlerin yerel mahallelerinde sınırlı.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (As-salamu alaykum)",
+      "meaning": "Selamünaleyküm / Merhaba",
+      "translation": "Selamünaleyküm / Merhaba",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "بكام؟ (Bikam?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "bi-KAAM"
+     },
+     {
+      "phrase": "لا، شكراً (La, shukran)",
+      "meaning": "Hayır, teşekkürler",
+      "translation": "Hayır, teşekkürler",
+      "pronunciation": "laa SHUK-ran"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Egyptian pound (EGP)",
+   "bestMonths": "October – April (cool and dry; ideal for Luxor and Aswan); in June – August southern Egypt often exceeds 40°C, while the Red Sea is swimmable year-round",
+   "safety": {
+    "crimeRateSummary": "Cairo, Luxor, Aswan and the Red Sea resorts are open to tourists under heavy security; violent crime is rare, but pushy touts and scams are very common. Official advisories warn against travel to North Sinai and the Libyan and Sudanese border areas.",
+    "commonScams": [
+     "Camel or horse handlers at Giza quoting a low price to get on, then demanding much more to let you off",
+     "Helpful strangers saying a site is “closed today” and steering you to papyrus, perfume or carpet shops",
+     "Taxis that won’t use the meter and drivers claiming to have no change"
+    ],
+    "safeTravelTips": [
+     "Use Uber or Careem in Cairo; with street taxis agree the fare first and carry small notes.",
+     "For any service – camel, horse or photo – confirm the total price and currency (pounds or dollars) out loud beforehand.",
+     "In June – August visit outdoor sites early in the morning, stay in the shade at midday and drink plenty of water."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "123",
+     "general": "126"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in cities and along the Nile valley; weak in the desert and at some ancient sites",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Available – Airalo, Holafly and Vodafone / Orange eSIMs; tourist SIMs are also sold at the airport",
+    "bestCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair – Cairo Metro is fast and cheap but crowded; trains and sleeper trains along the Nile, intercity buses; traffic is very heavy",
+    "costLevel": "Very cheap",
+    "singleTicketUsd": "~0.20 - 0.40 $",
+    "dailyPassUsd": "No day pass (single tickets are very cheap)",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber rides within Cairo usually cost $2-5, and the airport to Giza around $10-15. In Luxor and Aswan always negotiate taxi and felucca prices in advance."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.20 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 70 $",
+    "flightCostIndex": "Low to moderate (Istanbul – Cairo direct ~2 h)",
+    "flightTip": "THY, EgyptAir, Pegasus and AJet fly direct from Istanbul to Cairo, and there are also flights to Hurghada and Sharm El Sheikh. Entry fees for ancient sites (especially the Grand Egyptian Museum and the Valley of the Kings) are a significant part of the budget."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Arabic (Egyptian Arabic is spoken in everyday life).",
+    "englishProficiency": "Good in tourist areas, hotels and among guides; limited in local city neighbourhoods.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (As-salamu alaykum)",
+      "meaning": "Peace be upon you / Hello",
+      "translation": "Peace be upon you / Hello",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "بكام؟ (Bikam?)",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "bi-KAAM"
+     },
+     {
+      "phrase": "لا، شكراً (La, shukran)",
+      "meaning": "No, thank you",
+      "translation": "No, thank you",
+      "pronunciation": "laa SHUK-ran"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Ägyptisches Pfund (EGP)",
+   "bestMonths": "Oktober – April (kühl und trocken; ideal für Luxor und Assuan); im Juni – August oft über 40 °C im Süden, am Roten Meer kann man ganzjährig baden",
+   "safety": {
+    "crimeRateSummary": "Kairo, Luxor, Assuan und die Badeorte am Roten Meer sind unter starken Sicherheitsvorkehrungen für Touristen offen; Gewalt ist selten, aufdringliche Schlepper und Betrug sind aber sehr verbreitet. Offizielle Hinweise raten von Reisen in den Nord-Sinai sowie die Grenzgebiete zu Libyen und Sudan ab.",
+    "commonScams": [
+     "Kamel- oder Pferdeführer in Gizeh nennen einen niedrigen Preis zum Aufsteigen und verlangen dann viel mehr zum Absteigen",
+     "Hilfsbereite Fremde, die behaupten, eine Sehenswürdigkeit sei „heute geschlossen“, und Sie in Papyrus-, Parfüm- oder Teppichläden lotsen",
+     "Taxis ohne Taxameter und Fahrer, die angeblich kein Wechselgeld haben"
+    ],
+    "safeTravelTips": [
+     "In Kairo Uber oder Careem nutzen; bei Straßentaxis den Preis vorher klären und kleine Scheine dabeihaben.",
+     "Bei jeder Leistung – Kamel, Pferd oder Foto – Gesamtpreis und Währung (Pfund oder Dollar) vorher laut bestätigen.",
+     "Im Juni – August Freiluftstätten früh morgens besuchen, mittags im Schatten bleiben und viel trinken."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "123",
+     "general": "126"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Städten und im Niltal; schwach in der Wüste und an manchen antiken Stätten",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Verfügbar – Airalo, Holafly und eSIMs von Vodafone / Orange; Touristen-SIMs gibt es auch am Flughafen",
+    "bestCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel – die Metro in Kairo ist schnell und billig, aber voll; Züge und Schlafwagen entlang des Nils, Fernbusse; sehr dichter Verkehr",
+    "costLevel": "Sehr günstig",
+    "singleTicketUsd": "~0.20 - 0.40 $",
+    "dailyPassUsd": "Keine Tageskarte (Einzeltickets sind sehr billig)",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber-Fahrten in Kairo kosten meist 2-5 $, vom Flughafen nach Gizeh etwa 10-15 $. In Luxor und Assuan Taxi- und Feluken-Preise immer vorher aushandeln."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.20 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 70 $",
+    "flightCostIndex": "Niedrig bis mittel (Istanbul – Kairo direkt ~2 Std.)",
+    "flightTip": "THY, EgyptAir, Pegasus und AJet fliegen direkt von Istanbul nach Kairo, dazu gibt es Flüge nach Hurghada und Scharm El-Scheich. Eintrittspreise der antiken Stätten (vor allem Großes Ägyptisches Museum und Tal der Könige) machen einen großen Teil des Budgets aus."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Arabisch (im Alltag wird ägyptisches Arabisch gesprochen).",
+    "englishProficiency": "Gut in Touristengebieten, Hotels und bei Guides; in einheimischen Stadtvierteln begrenzt.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (As-salamu alaykum)",
+      "meaning": "Friede sei mit Ihnen / Hallo",
+      "translation": "Friede sei mit Ihnen / Hallo",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "بكام؟ (Bikam?)",
+      "meaning": "Wie viel?",
+      "translation": "Wie viel?",
+      "pronunciation": "bi-KAAM"
+     },
+     {
+      "phrase": "لا، شكراً (La, shukran)",
+      "meaning": "Nein, danke",
+      "translation": "Nein, danke",
+      "pronunciation": "laa SHUK-ran"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Libra egipcia (EGP)",
+   "bestMonths": "Octubre – abril (fresco y seco; ideal para Luxor y Asuán); en junio – agosto el sur supera a menudo los 40 °C, mientras el mar Rojo es apto para el baño todo el año",
+   "safety": {
+    "crimeRateSummary": "El Cairo, Luxor, Asuán y los centros turísticos del mar Rojo están abiertos al turismo con fuertes medidas de seguridad; la violencia es rara, pero los ganchos insistentes y las estafas son muy comunes. Los avisos oficiales desaconsejan viajar al norte del Sinaí y a las zonas fronterizas con Libia y Sudán.",
+    "commonScams": [
+     "Cameleros o guías de caballos en Guiza que piden poco para subir y mucho más para dejarte bajar",
+     "Desconocidos amables que dicen que un lugar “hoy está cerrado” y te llevan a tiendas de papiro, perfume o alfombras",
+     "Taxis que no usan taxímetro y conductores que dicen no tener cambio"
+    ],
+    "safeTravelTips": [
+     "En El Cairo usa Uber o Careem; con taxis de la calle acuerda el precio antes y lleva billetes pequeños.",
+     "Para cualquier servicio –camello, caballo o foto– confirma antes en voz alta el precio total y la moneda (libras o dólares).",
+     "En junio – agosto visita los sitios al aire libre temprano, quédate a la sombra al mediodía y bebe mucha agua."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "123",
+     "general": "126"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en ciudades y el valle del Nilo; débil en el desierto y en algunos yacimientos",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Disponible – Airalo, Holafly y eSIM de Vodafone / Orange; también hay SIM turísticas en el aeropuerto",
+    "bestCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Aceptable – el metro de El Cairo es rápido y barato pero va lleno; trenes y coches cama por el Nilo, autobuses interurbanos; tráfico muy denso",
+    "costLevel": "Muy barato",
+    "singleTicketUsd": "~0.20 - 0.40 $",
+    "dailyPassUsd": "Sin abono diario (los billetes sencillos son muy baratos)",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "Los trayectos en Uber por El Cairo suelen costar 2-5 $, y del aeropuerto a Guiza unos 10-15 $. En Luxor y Asuán negocia siempre antes el precio del taxi y la falúa."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.20 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 70 $",
+    "flightCostIndex": "Bajo a moderado (Estambul – El Cairo directo ~2 h)",
+    "flightTip": "THY, EgyptAir, Pegasus y AJet vuelan directo de Estambul a El Cairo, y también hay vuelos a Hurghada y Sharm el-Sheij. Las entradas a los yacimientos (sobre todo el Gran Museo Egipcio y el Valle de los Reyes) pesan bastante en el presupuesto."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Árabe (en la vida diaria se habla árabe egipcio).",
+    "englishProficiency": "Bueno en zonas turísticas, hoteles y entre guías; limitado en los barrios locales.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (As-salamu alaykum)",
+      "meaning": "La paz sea contigo / Hola",
+      "translation": "La paz sea contigo / Hola",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "بكام؟ (Bikam?)",
+      "meaning": "¿Cuánto?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "bi-KAAM"
+     },
+     {
+      "phrase": "لا، شكراً (La, shukran)",
+      "meaning": "No, gracias",
+      "translation": "No, gracias",
+      "pronunciation": "laa SHUK-ran"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Египетский фунт (EGP)",
+   "bestMonths": "Октябрь – апрель (прохладно и сухо; идеально для Луксора и Асуана); в июне – августе на юге часто выше 40 °C, а на Красном море купаться можно круглый год",
+   "safety": {
+    "crimeRateSummary": "Каир, Луксор, Асуан и курорты Красного моря открыты для туристов при усиленной охране; насилие редко, но навязчивые зазывалы и мошенничество очень распространены. Официальные рекомендации предостерегают от поездок на Северный Синай и в приграничные с Ливией и Суданом районы.",
+    "commonScams": [
+     "Погонщики верблюдов и лошадей в Гизе называют низкую цену за посадку, а потом требуют гораздо больше, чтобы отпустить",
+     "Услужливые незнакомцы, которые говорят, что объект «сегодня закрыт», и ведут в лавки папируса, духов или ковров",
+     "Такси без счётчика и водители, у которых якобы нет сдачи"
+    ],
+    "safeTravelTips": [
+     "В Каире пользуйтесь Uber или Careem; с уличным такси договаривайтесь о цене заранее и держите мелкие купюры.",
+     "Для любой услуги — верблюд, лошадь, фото — заранее вслух уточняйте итоговую цену и валюту (фунты или доллары).",
+     "В июне – августе осматривайте объекты под открытым небом рано утром, в полдень оставайтесь в тени и пейте много воды."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "123",
+     "general": "126"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в городах и долине Нила; слабый в пустыне и на некоторых раскопках",
+    "costPerGbUsd": "~0.30 - 1 $",
+    "esimAvailability": "Доступна – Airalo, Holafly и eSIM Vodafone / Orange; туристические SIM продаются и в аэропорту",
+    "bestCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне – каирское метро быстрое и дешёвое, но переполненное; поезда и спальные поезда вдоль Нила, междугородние автобусы; очень плотное движение",
+    "costLevel": "Очень дёшево",
+    "singleTicketUsd": "~0.20 - 0.40 $",
+    "dailyPassUsd": "Дневного билета нет (разовые билеты очень дешёвые)",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "Поездки на Uber по Каиру обычно стоят 2-5 $, из аэропорта до Гизы — около 10-15 $. В Луксоре и Асуане всегда заранее торгуйтесь о цене такси и фелуки."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.20 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 70 $",
+    "flightCostIndex": "Низкий–средний (Стамбул – Каир прямой ~2 ч)",
+    "flightTip": "Из Стамбула в Каир летают THY, EgyptAir, Pegasus и AJet, есть рейсы и в Хургаду и Шарм-эш-Шейх. Входные билеты на памятники (особенно Большой Египетский музей и Долину царей) — заметная часть бюджета."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Арабский (в быту говорят на египетском диалекте).",
+    "englishProficiency": "Хороший в туристических зонах, отелях и у гидов; ограниченный в местных кварталах.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (As-salamu alaykum)",
+      "meaning": "Мир вам / Здравствуйте",
+      "translation": "Мир вам / Здравствуйте",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "بكام؟ (Bikam?)",
+      "meaning": "Сколько?",
+      "translation": "Сколько?",
+      "pronunciation": "bi-KAAM"
+     },
+     {
+      "phrase": "لا، شكراً (La, shukran)",
+      "meaning": "Нет, спасибо",
+      "translation": "Нет, спасибо",
+      "pronunciation": "laa SHUK-ran"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,1512 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Çek Korunası (CZK)",
+   "plugType": "Tip C, E (230V, 50Hz)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim (ılık hava, daha az kalabalık); Aralık Noel pazarları için",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Şiddet suçu düşüktür; asıl risk Prag’ın Eski Şehir, Karl Köprüsü ve tramvay 22 hattındaki yankesiciliktir.",
+    "commonScams": [
+     "Turistik döviz bürolarında çok düşük kur ve sokakta ‘döviz bozan’ kişilerin geçersiz banknot vermesi",
+     "Euronet gibi ATM’lerde ‘kendi para biriminizde öde’ (DCC) seçeneğiyle gizli kur farkı",
+     "Sokaktan çevrilen taksilerde fahiş taksimetre ücretleri"
+    ],
+    "safeTravelTips": [
+     "Kartla öderken ve ATM’de her zaman ‘CZK ile öde / dönüşüm yapma’ seçeneğini seçin.",
+     "Taksi yerine Bolt, Uber veya Liftago uygulamasıyla araç çağırın.",
+     "Toplu taşımada bileti biniş öncesi doğrulayın; kontroller sıktır ve ceza yüksektir."
+    ],
+    "emergencyNumbers": {
+     "police": "158",
+     "ambulance": "155",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus kapsaması (4G yaygın, şehirlerde 5G)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Çok İyi (metro, tramvay ve yaygın tren ağı)",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "1.30 - 1.80 $ (30-40 CZK)",
+    "dailyPassUsd": "5.00 - 5.50 $ (24h, 120 CZK)",
+    "popularRideApps": [
+     "PID Lítačka",
+     "Bolt",
+     "Uber",
+     "Liftago",
+     "Mapy.com",
+     "IDOS"
+    ],
+    "taxiAdvice": "Prag’da sokaktan taksi çevirmek yerine Bolt, Uber veya Liftago kullanın; şehirlerarası yolculuklarda ČD, RegioJet ve Leo Express trenleri ucuz ve rahattır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "3.00 - 4.50 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Düşük (İstanbul – Prag direkt ~2,5 sa)",
+    "flightTip": "İstanbul’dan Prag’a direkt uçuşlar vardır; düşük sezonda (Kasım–Mart, Noel hariç) bilet ve otel fiyatları belirgin şekilde düşer."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Dükkâna veya asansöre girerken ‘Dobrý den’ diye selam vermek beklenir.",
+     "Kadeh tokuştururken ‘Na zdraví!’ deyip göz teması kurulur.",
+     "Evlere girerken ayakkabı çıkarılır; ev sahibi genellikle terlik verir.",
+     "Toplu taşımada yüksek sesle konuşmamaya ve yaşlılara yer vermeye özen gösterilir."
+    ],
+    "festivals": [
+     "Prag Baharı Uluslararası Müzik Festivali (Mayıs–Haziran)",
+     "Karlovy Vary Uluslararası Film Festivali (Temmuz)",
+     "Noel pazarları (Eski Şehir Meydanı, Aralık)"
+    ],
+    "lifestyle": "Bira kültürü ve hospoda (meyhane) sohbetleri, hafta sonu kır evlerine (chata/chalupa) kaçış, doğa yürüyüşü ve buz hokeyi tutkusu."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Prag Kalesi ve Aziz Vitus Katedrali",
+     "Karl Köprüsü",
+     "Eski Şehir Meydanı ve Astronomik Saat (Orloj)",
+     "Český Krumlov tarihi kenti ve şatosu (UNESCO)",
+     "Kutná Hora: Aziz Barbara Kilisesi ve Sedlec Kemik Şapeli",
+     "Karlovy Vary kaplıca kenti"
+    ],
+    "bestSeasons": "İlkbahar sonu ve erken sonbahar; kış ayları Noel pazarları ve daha ucuz oteller için",
+    "travelStyleTip": "Prag’ı yürüyerek ve tramvayla gezin; Kutná Hora ve Karlovy Vary günübirlik, Český Krumlov ise en az bir gece kalmaya değer."
+   },
+   "religion": {
+    "primaryReligions": "Nüfusun büyük kısmı dinsiz veya inancını belirtmiyor (~%75); Roma Katolik ~%9, diğer Hristiyanlar ~%3.",
+    "respectNorms": "Kiliselerde omuz ve dizler kapalı olmalı, ayin sırasında fotoğraf çekilmemeli; Yahudi Mahallesi’ndeki sinagoglarda sessizliğe dikkat edin.",
+    "sacredSites": [
+     "Aziz Vitus Katedrali (Prag)",
+     "Eski-Yeni Sinagog (Staronová synagoga, Prag)",
+     "Sedlec Kemik Şapeli (Kutná Hora)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Çekçe",
+    "englishProficiency": "Prag’da ve gençler arasında iyi; kırsalda sınırlı. Yaşlılar arasında Almanca veya Rusça da anlaşılabilir.",
+    "phrases": [
+     {
+      "phrase": "Dobrý den",
+      "meaning": "İyi günler / Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "DOB-ree den"
+     },
+     {
+      "phrase": "Děkuji",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkürler",
+      "pronunciation": "DYEH-koo-yi"
+     },
+     {
+      "phrase": "Prosím",
+      "meaning": "Lütfen / Buyurun",
+      "translation": "Lütfen",
+      "pronunciation": "PRO-seem"
+     },
+     {
+      "phrase": "Kolik to stojí?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Kaç para?",
+      "pronunciation": "KO-lik to STO-yee"
+     },
+     {
+      "phrase": "Na zdraví!",
+      "meaning": "Sağlığınıza! (Şerefe)",
+      "translation": "Şerefe!",
+      "pronunciation": "NA zdra-vee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bohemya Krallığı’nın merkezi Prag, IV. Karl döneminde Kutsal Roma İmparatorluğu’nun başkenti oldu. Habsburg yönetiminin ardından 1918’de Çekoslovakya kuruldu; 1989 Kadife Devrimi’nden sonra 1993’te Çek Cumhuriyeti barışçıl biçimde bağımsızlaştı ve 2004’te AB’ye katıldı.",
+    "milestones": [
+     "1348: IV. Karl, Orta Avrupa’nın ilk üniversitesini Prag’da kurdu",
+     "1918: Çekoslovakya’nın kuruluşu",
+     "1989: Kadife Devrim",
+     "1993: Çek Cumhuriyeti’nin bağımsızlığı; 2004: AB üyeliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Svíčková na smetaně (kremalı sebze sosunda dana fileto, knedlík ile)",
+     "Vepřo knedlo zelo (domuz rosto, knedlík ve lahana turşusu – domuz eti içerir)",
+     "Smažený sýr (pane edilmiş kızarmış peynir, tartar sos ile)"
+    ],
+    "traditionalDrinks": [
+     "Pilsner tipi Çek birası (Plzeň’in dünyaca ünlü bira geleneği)",
+     "Becherovka (Karlovy Vary’nin bitkisel likörü)",
+     "Kofola (yerel kola benzeri alkolsüz içecek)"
+    ],
+    "streetFoodAndDesserts": [
+     "Klobása (Václav Meydanı ve pazarlarda ızgara sosis)",
+     "Koláče (meyveli, haşhaşlı veya lor peynirli yuvarlak çörek)",
+     "Medovník (katmanlı ballı pasta)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Kafka (yazar)",
+     "Antonín Dvořák (besteci)",
+     "Miloš Forman (Oscar ödüllü yönetmen)"
+    ],
+    "strongSectors": [
+     "Otomotiv (Škoda Auto)",
+     "Makine ve elektronik imalatı",
+     "Bira üretimi ve Bohemya kristali"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Para birimi Çek korunasıdır (Euro geçmez veya kötü kurdan alınır). Temassız kart neredeyse her yerde geçer; küçük pazarlar için az miktarda nakit yeterlidir.",
+    "tippingCulture": "Restoranlarda hesabı yuvarlamak veya %10 civarı bahşiş bırakmak yaygındır; servis ücreti eklenmişse ek bahşiş gerekmez.",
+    "economicPillars": "Otomotiv ve sanayi ihracatı (özellikle Almanya’ya), turizm, hizmetler ve bilişim."
+   }
+  },
+  "itin": {
+   "routeName": "Bohemya Klasikleri: Prag, Kutná Hora ve Český Krumlov",
+   "routeSummary": "Prag’ın kale, köprü ve meydanlarıyla başlayan, ortaçağ gümüş kenti Kutná Hora’ya uzanan ve Vltava kıvrımındaki masalsı Český Krumlov’da biten 7 günlük rota.",
+   "totalDays": 7,
+   "idealDurationText": "7 Gün",
+   "bestSeason": "Mayıs – Haziran, Eylül – Ekim",
+   "transportMode": "Prag içinde metro/tramvay ve yürüyüş; şehirlerarası tren (ČD, RegioJet) ve otobüs (FlixBus, RegioJet)",
+   "paceLevel": "Dengeli",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Prag (Kale, Eski Şehir ve Malá Strana)",
+     "recommendedDuration": "4 gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Prag Kalesi ve Aziz Vitus Katedrali",
+      "Karl Köprüsü ve Malá Strana",
+      "Eski Şehir Meydanı ve Astronomik Saat",
+      "Josefov (Yahudi Mahallesi) ve Vyšehrad"
+     ],
+     "activities": [
+      "Karl Köprüsü’nü kalabalık başlamadan, sabah 7’den önce yürüyün.",
+      "Letná Parkı’ndaki bira bahçesinden Vltava köprülerini izleyin.",
+      "Petřín Tepesi’ne füniküler ile çıkıp gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Svíčková na smetaně (kremalı sebze sosunda dana fileto, knedlík ile)",
+      "Pilsner tipi Çek birası (Plzeň’in dünyaca ünlü bira geleneği)",
+      "Medovník (katmanlı ballı pasta)"
+     ],
+     "criticalTips": [
+      "Eski Şehir’deki döviz bürolarından uzak durun; kartla CZK üzerinden ödeyin.",
+      "PID Lítačka uygulamasından 24/72 saatlik kart alın ve biletin aktif olduğundan emin olun."
+     ],
+     "mapsQuery": "Prague, Czechia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Kutná Hora (Gümüş Kenti ve Kemik Şapeli)",
+     "recommendedDuration": "1 gün (Prag’dan günübirlik)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Sedlec Kemik Şapeli",
+      "Aziz Barbara Kilisesi",
+      "İtalyan Avlusu (eski kraliyet darphanesi)"
+     ],
+     "activities": [
+      "Hrádek’teki Gümüş Müzesi’nde ortaçağ maden tünellerine inin.",
+      "Barbora Caddesi boyunca yürüyüp kilisenin manzarasını fotoğraflayın.",
+      "Ortak biletle şapel, kilise ve katedrali tek günde gezin."
+     ],
+     "foodAndDrinks": [
+      "Smažený sýr (pane edilmiş kızarmış peynir, tartar sos ile)",
+      "Kofola (yerel kola benzeri alkolsüz içecek)"
+     ],
+     "criticalTips": [
+      "Prag hlavní nádraží’den tren yaklaşık 1 saat sürer; Sedlec için ‘Kutná Hora hl.n.’ istasyonunda inin.",
+      "Kemik Şapeli küçük bir kutsal mekândır; sessiz olun ve flaş kullanmayın."
+     ],
+     "mapsQuery": "Kutná Hora, Czechia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Český Krumlov (Güney Bohemya)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Český Krumlov Şatosu ve Kule",
+      "Pelerin Köprüsü (Plášťový most) manzarası",
+      "Barok Şato Tiyatrosu ve Şato Bahçeleri",
+      "Egon Schiele Sanat Merkezi"
+     ],
+     "activities": [
+      "Vltava üzerinde kano veya şişme botla kısa bir nehir turu yapın.",
+      "Şato kulesinden kırmızı çatılı kentin panoramasını izleyin.",
+      "Akşam kalabalık turlar ayrıldıktan sonra arnavut kaldırımlı sokaklarda yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Vltava alabalığı (pstruh) ızgara",
+      "Eggenberg birası (yerel bira fabrikası)",
+      "Koláče (meyveli, haşhaşlı veya lor peynirli yuvarlak çörek)"
+     ],
+     "criticalTips": [
+      "Prag’dan direkt otobüs (RegioJet/FlixBus) yaklaşık 3 saattir ve trenden genelde daha pratiktir.",
+      "Şato iç turları kasım–mart arasında kapalıdır; kışın gidiyorsanız saatleri kontrol edin."
+     ],
+     "mapsQuery": "Český Krumlov, Czechia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Svíčková na smetaně (kremalı sebze sosunda dana fileto, knedlík ile)",
+     "Vepřo knedlo zelo (domuz rosto, knedlík ve lahana turşusu – domuz eti içerir)",
+     "Smažený sýr (pane edilmiş kızarmış peynir, tartar sos ile)"
+    ],
+    "drinks": [
+     "Pilsner tipi Çek birası (Plzeň’in dünyaca ünlü bira geleneği)",
+     "Becherovka (Karlovy Vary’nin bitkisel likörü)",
+     "Kofola (yerel kola benzeri alkolsüz içecek)"
+    ],
+    "streetFoods": [
+     "Klobása (Václav Meydanı ve pazarlarda ızgara sosis)",
+     "Koláče (meyveli, haşhaşlı veya lor peynirli yuvarlak çörek)",
+     "Medovník (katmanlı ballı pasta)"
+    ],
+    "diningAdvice": "Hafta içi öğlenleri ‘denní menu’ (günün menüsü) çok uygun fiyatlıdır; masaya getirilen ekmek ve kuvert ücretli olabilir, hesabı kontrol edin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Arnavut kaldırımı için rahat ve kaymaz ayakkabı",
+     "Priz adaptörü (Tip E; Türk fişleri genelde uyar)",
+     "Kat kat giyim ve yağmurluk (hava hızla değişir)",
+     "Kış için sıcak mont, bere ve eldiven"
+    ],
+    "safetyAndEtiquette": [
+     "Kalabalık tramvaylarda ve Karl Köprüsü’nde çantanızı önde tutun.",
+     "Toplu taşımada bileti doğrulamadan binmeyin; kontrolörler sivil giyimlidir."
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Czech Koruna (CZK)",
+   "plugType": "Type C, E (230V, 50Hz)",
+   "bestMonths": "May – June and September – October (mild weather, fewer crowds); December for Christmas markets",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Violent crime is low; the main risk is pickpocketing in Prague’s Old Town, on Charles Bridge and on tram line 22.",
+    "commonScams": [
+     "Tourist exchange offices with poor rates and street changers handing over invalid banknotes",
+     "ATMs (e.g. Euronet) pushing dynamic currency conversion with hidden markups",
+     "Street-hailed taxis in the centre charging inflated fares"
+    ],
+    "safeTravelTips": [
+     "When paying by card or using an ATM, always choose to be charged in CZK (decline conversion).",
+     "Order rides via Bolt, Uber or Liftago instead of hailing taxis.",
+     "Validate tickets before boarding public transport; inspections are frequent and fines are steep."
+    ],
+    "emergencyNumbers": {
+     "police": "158",
+     "ambulance": "155",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% population coverage (4G nationwide, 5G in cities)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Very Good (metro, trams and dense rail network)",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "1.30 - 1.80 $ (30-40 CZK)",
+    "dailyPassUsd": "5.00 - 5.50 $ (24h, 120 CZK)",
+    "popularRideApps": [
+     "PID Lítačka",
+     "Bolt",
+     "Uber",
+     "Liftago",
+     "Mapy.com",
+     "IDOS"
+    ],
+    "taxiAdvice": "In Prague use Bolt, Uber or Liftago rather than street taxis; for intercity trips ČD, RegioJet and Leo Express trains are cheap and comfortable."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "3.00 - 4.50 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Low (Istanbul – Prague direct ~2.5 hrs)",
+    "flightTip": "There are direct flights from Istanbul to Prague; fares and hotel prices drop noticeably in the low season (November–March, except Christmas)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greet with ‘Dobrý den’ when entering a shop or lift.",
+     "When clinking glasses, say ‘Na zdraví!’ and keep eye contact.",
+     "Shoes come off when entering a home; hosts often offer slippers.",
+     "On public transport people keep their voices down and offer seats to the elderly."
+    ],
+    "festivals": [
+     "Prague Spring International Music Festival (May–June)",
+     "Karlovy Vary International Film Festival (July)",
+     "Christmas markets (Old Town Square, December)"
+    ],
+    "lifestyle": "Beer culture and pub (hospoda) chats, weekend escapes to country cottages (chata/chalupa), hiking and a passion for ice hockey."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Prague Castle & St. Vitus Cathedral",
+     "Charles Bridge",
+     "Old Town Square & Astronomical Clock (Orloj)",
+     "Český Krumlov old town and castle (UNESCO)",
+     "Kutná Hora: St. Barbara’s Church & Sedlec Ossuary",
+     "Karlovy Vary spa town"
+    ],
+    "bestSeasons": "Late spring and early autumn; winter for Christmas markets and cheaper hotels",
+    "travelStyleTip": "Explore Prague on foot and by tram; Kutná Hora and Karlovy Vary work as day trips, while Český Krumlov deserves at least one night."
+   },
+   "religion": {
+    "primaryReligions": "Most people are non-religious or undeclared (~75%); Roman Catholic ~9%, other Christians ~3%.",
+    "respectNorms": "Cover shoulders and knees in churches and avoid photos during services; keep quiet in the synagogues of the Jewish Quarter.",
+    "sacredSites": [
+     "St. Vitus Cathedral (Prague)",
+     "Old-New Synagogue (Staronová synagoga, Prague)",
+     "Sedlec Ossuary (Kutná Hora)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Czech",
+    "englishProficiency": "Good in Prague and among young people; limited in rural areas. Older people may understand German or Russian.",
+    "phrases": [
+     {
+      "phrase": "Dobrý den",
+      "meaning": "Good day / Hello",
+      "translation": "Hello",
+      "pronunciation": "DOB-ree den"
+     },
+     {
+      "phrase": "Děkuji",
+      "meaning": "Thank you",
+      "translation": "Thanks",
+      "pronunciation": "DYEH-koo-yi"
+     },
+     {
+      "phrase": "Prosím",
+      "meaning": "Please / Here you are",
+      "translation": "Please",
+      "pronunciation": "PRO-seem"
+     },
+     {
+      "phrase": "Kolik to stojí?",
+      "meaning": "How much is it?",
+      "translation": "How much?",
+      "pronunciation": "KO-lik to STO-yee"
+     },
+     {
+      "phrase": "Na zdraví!",
+      "meaning": "To your health! (Cheers)",
+      "translation": "Cheers!",
+      "pronunciation": "NA zdra-vee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Prague, seat of the Kingdom of Bohemia, became capital of the Holy Roman Empire under Charles IV. After Habsburg rule, Czechoslovakia was founded in 1918; following the 1989 Velvet Revolution, the Czech Republic peacefully became independent in 1993 and joined the EU in 2004.",
+    "milestones": [
+     "1348: Charles IV founds Central Europe’s first university in Prague",
+     "1918: Czechoslovakia is founded",
+     "1989: Velvet Revolution",
+     "1993: Independent Czech Republic; 2004: EU membership"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Svíčková na smetaně (beef sirloin in creamy vegetable sauce with dumplings)",
+     "Vepřo knedlo zelo (roast pork, dumplings and sauerkraut)",
+     "Smažený sýr (breaded fried cheese with tartar sauce)"
+    ],
+    "traditionalDrinks": [
+     "Czech lager (Pilsner tradition from Plzeň)",
+     "Becherovka (herbal liqueur from Karlovy Vary)",
+     "Kofola (local cola-style soft drink)"
+    ],
+    "streetFoodAndDesserts": [
+     "Klobása (grilled sausage from street stands)",
+     "Koláče (round pastries with fruit, poppy seed or quark)",
+     "Medovník (layered honey cake)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Kafka (writer)",
+     "Antonín Dvořák (composer)",
+     "Miloš Forman (Oscar-winning director)"
+    ],
+    "strongSectors": [
+     "Automotive (Škoda Auto)",
+     "Machinery and electronics manufacturing",
+     "Brewing and Bohemian crystal"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The currency is the Czech koruna (euros are rarely accepted, and only at poor rates). Contactless cards work almost everywhere; a little cash is enough for small markets.",
+    "tippingCulture": "Rounding up or tipping around 10% in restaurants is common; no extra tip is needed if service is already included.",
+    "economicPillars": "Automotive and industrial exports (especially to Germany), tourism, services and IT."
+   }
+  },
+  "itin": {
+   "routeName": "Bohemian Classics: Prague, Kutná Hora & Český Krumlov",
+   "routeSummary": "A 7-day route that starts with Prague’s castle, bridges and squares, continues to the medieval silver town of Kutná Hora and ends in fairy-tale Český Krumlov on a bend of the Vltava.",
+   "totalDays": 7,
+   "idealDurationText": "7 Days",
+   "bestSeason": "May – June, September – October",
+   "transportMode": "Metro/tram and walking in Prague; intercity trains (ČD, RegioJet) and buses (FlixBus, RegioJet)",
+   "paceLevel": "Balanced",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Prague (Castle, Old Town & Malá Strana)",
+     "recommendedDuration": "4 days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Prague Castle & St. Vitus Cathedral",
+      "Charles Bridge & Malá Strana",
+      "Old Town Square & Astronomical Clock",
+      "Josefov (Jewish Quarter) & Vyšehrad"
+     ],
+     "activities": [
+      "Walk Charles Bridge before 7 a.m., ahead of the crowds.",
+      "Watch the Vltava bridges from the Letná Park beer garden.",
+      "Take the funicular up Petřín Hill for sunset."
+     ],
+     "foodAndDrinks": [
+      "Svíčková na smetaně (beef sirloin in creamy vegetable sauce with dumplings)",
+      "Czech lager (Pilsner tradition from Plzeň)",
+      "Medovník (layered honey cake)"
+     ],
+     "criticalTips": [
+      "Avoid Old Town exchange offices; pay by card in CZK.",
+      "Buy a 24/72-hour pass in the PID Lítačka app and make sure it is activated."
+     ],
+     "mapsQuery": "Prague, Czechia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Kutná Hora (Silver Town & Bone Chapel)",
+     "recommendedDuration": "1 day (day trip from Prague)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Sedlec Ossuary",
+      "St. Barbara’s Church",
+      "Italian Court (former royal mint)"
+     ],
+     "activities": [
+      "Descend into medieval mine tunnels at the Hrádek Silver Museum.",
+      "Stroll along Barborská street and photograph the cathedral view.",
+      "Use a combined ticket to see the ossuary, church and cathedral in one day."
+     ],
+     "foodAndDrinks": [
+      "Smažený sýr (breaded fried cheese with tartar sauce)",
+      "Kofola (local cola-style soft drink)"
+     ],
+     "criticalTips": [
+      "Trains from Prague main station take about 1 hour; get off at ‘Kutná Hora hl.n.’ for Sedlec.",
+      "The ossuary is a small sacred space; stay quiet and do not use flash."
+     ],
+     "mapsQuery": "Kutná Hora, Czechia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Český Krumlov (South Bohemia)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Český Krumlov Castle & Tower",
+      "Cloak Bridge (Plášťový most) view",
+      "Baroque Castle Theatre & castle gardens",
+      "Egon Schiele Art Centrum"
+     ],
+     "activities": [
+      "Take a short canoe or raft trip on the Vltava.",
+      "Climb the castle tower for a panorama of the red rooftops.",
+      "Wander the cobbled lanes in the evening after the tour groups leave."
+     ],
+     "foodAndDrinks": [
+      "Grilled Vltava trout (pstruh)",
+      "Eggenberg beer (local brewery)",
+      "Koláče (round pastries with fruit, poppy seed or quark)"
+     ],
+     "criticalTips": [
+      "Direct buses from Prague (RegioJet/FlixBus) take about 3 hours and are usually more practical than the train.",
+      "Castle interior tours are closed November–March; check opening times in winter."
+     ],
+     "mapsQuery": "Český Krumlov, Czechia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Svíčková na smetaně (beef sirloin in creamy vegetable sauce with dumplings)",
+     "Vepřo knedlo zelo (roast pork, dumplings and sauerkraut)",
+     "Smažený sýr (breaded fried cheese with tartar sauce)"
+    ],
+    "drinks": [
+     "Czech lager (Pilsner tradition from Plzeň)",
+     "Becherovka (herbal liqueur from Karlovy Vary)",
+     "Kofola (local cola-style soft drink)"
+    ],
+    "streetFoods": [
+     "Klobása (grilled sausage from street stands)",
+     "Koláče (round pastries with fruit, poppy seed or quark)",
+     "Medovník (layered honey cake)"
+    ],
+    "diningAdvice": "On weekdays the lunchtime ‘denní menu’ (daily menu) is great value; bread or cover brought to the table may be charged, so check the bill."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Comfortable, non-slip shoes for cobblestones",
+     "Plug adapter (Type E; Schuko plugs usually fit)",
+     "Layers and a rain jacket (weather changes quickly)",
+     "Warm coat, hat and gloves for winter"
+    ],
+    "safetyAndEtiquette": [
+     "Keep your bag in front on crowded trams and Charles Bridge.",
+     "Never ride without a validated ticket; inspectors wear plain clothes."
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Tschechische Krone (CZK)",
+   "plugType": "Typ C, E (230V, 50Hz)",
+   "bestMonths": "Mai – Juni und September – Oktober (mildes Wetter, weniger Andrang); Dezember für Weihnachtsmärkte",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Gewaltkriminalität ist gering; Hauptrisiko sind Taschendiebe in Prags Altstadt, auf der Karlsbrücke und in der Tram 22.",
+    "commonScams": [
+     "Wechselstuben mit schlechten Kursen und Straßenwechsler, die ungültige Scheine ausgeben",
+     "Geldautomaten (z. B. Euronet) mit dynamischer Währungsumrechnung und versteckten Aufschlägen",
+     "Auf der Straße herangewinkte Taxis im Zentrum mit überhöhten Preisen"
+    ],
+    "safeTravelTips": [
+     "Beim Kartenzahlen und am Automaten immer in CZK abrechnen lassen (Umrechnung ablehnen).",
+     "Fahrten über Bolt, Uber oder Liftago bestellen statt Taxis heranzuwinken.",
+     "Fahrscheine vor dem Einsteigen entwerten; Kontrollen sind häufig und Strafen hoch."
+    ],
+    "emergencyNumbers": {
+     "police": "158",
+     "ambulance": "155",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % Bevölkerungsabdeckung (landesweit 4G, 5G in Städten)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sehr gut (Metro, Tram und dichtes Bahnnetz)",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "1.30 - 1.80 $ (30-40 CZK)",
+    "dailyPassUsd": "5.00 - 5.50 $ (24h, 120 CZK)",
+    "popularRideApps": [
+     "PID Lítačka",
+     "Bolt",
+     "Uber",
+     "Liftago",
+     "Mapy.com",
+     "IDOS"
+    ],
+    "taxiAdvice": "In Prag lieber Bolt, Uber oder Liftago statt Straßentaxis nutzen; für Fernstrecken sind die Züge von ČD, RegioJet und Leo Express günstig und bequem."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "3.00 - 4.50 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Niedrig (Istanbul – Prag direkt ~2,5 Std.)",
+    "flightTip": "Es gibt Direktflüge von Istanbul nach Prag; in der Nebensaison (November–März, außer Weihnachten) sinken Flug- und Hotelpreise deutlich."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Beim Betreten eines Geschäfts oder Aufzugs grüßt man mit ‘Dobrý den’.",
+     "Beim Anstoßen ‘Na zdraví!’ sagen und Blickkontakt halten.",
+     "In Wohnungen zieht man die Schuhe aus; oft gibt es Hausschuhe.",
+     "In Öffis spricht man leise und bietet Älteren den Sitzplatz an."
+    ],
+    "festivals": [
+     "Internationales Musikfestival Prager Frühling (Mai–Juni)",
+     "Internationales Filmfestival Karlovy Vary (Juli)",
+     "Weihnachtsmärkte (Altstädter Ring, Dezember)"
+    ],
+    "lifestyle": "Bierkultur und Gespräche in der Hospoda, Wochenenden im Landhaus (Chata/Chalupa), Wandern und Eishockey-Begeisterung."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Prager Burg & Veitsdom",
+     "Karlsbrücke",
+     "Altstädter Ring & Astronomische Uhr (Orloj)",
+     "Altstadt und Schloss Český Krumlov (UNESCO)",
+     "Kutná Hora: St.-Barbara-Kirche & Beinhaus Sedlec",
+     "Kurstadt Karlovy Vary"
+    ],
+    "bestSeasons": "Spätfrühling und Frühherbst; Winter für Weihnachtsmärkte und günstigere Hotels",
+    "travelStyleTip": "Prag zu Fuß und mit der Tram erkunden; Kutná Hora und Karlovy Vary eignen sich als Tagesausflug, Český Krumlov verdient mindestens eine Nacht."
+   },
+   "religion": {
+    "primaryReligions": "Die Mehrheit ist konfessionslos oder ohne Angabe (~75 %); römisch-katholisch ~9 %, andere Christen ~3 %.",
+    "respectNorms": "In Kirchen Schultern und Knie bedecken und während der Messe nicht fotografieren; in den Synagogen der Josefstadt leise sein.",
+    "sacredSites": [
+     "Veitsdom (Prag)",
+     "Altneu-Synagoge (Staronová synagoga, Prag)",
+     "Beinhaus Sedlec (Kutná Hora)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tschechisch",
+    "englishProficiency": "In Prag und bei Jüngeren gut, auf dem Land begrenzt. Ältere verstehen teils Deutsch oder Russisch.",
+    "phrases": [
+     {
+      "phrase": "Dobrý den",
+      "meaning": "Guten Tag / Hallo",
+      "translation": "Hallo",
+      "pronunciation": "DOB-ree den"
+     },
+     {
+      "phrase": "Děkuji",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "DYEH-koo-yi"
+     },
+     {
+      "phrase": "Prosím",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "PRO-seem"
+     },
+     {
+      "phrase": "Kolik to stojí?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel?",
+      "pronunciation": "KO-lik to STO-yee"
+     },
+     {
+      "phrase": "Na zdraví!",
+      "meaning": "Auf die Gesundheit! (Prost)",
+      "translation": "Prost!",
+      "pronunciation": "NA zdra-vee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Prag, Sitz des Königreichs Böhmen, wurde unter Karl IV. Hauptstadt des Heiligen Römischen Reiches. Nach der Habsburgerzeit entstand 1918 die Tschechoslowakei; nach der Samtenen Revolution 1989 wurde Tschechien 1993 friedlich unabhängig und trat 2004 der EU bei.",
+    "milestones": [
+     "1348: Karl IV. gründet in Prag die erste Universität Mitteleuropas",
+     "1918: Gründung der Tschechoslowakei",
+     "1989: Samtene Revolution",
+     "1993: Unabhängige Tschechische Republik; 2004: EU-Beitritt"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Svíčková na smetaně (Rinderlende in Rahmsauce mit Knödeln)",
+     "Vepřo knedlo zelo (Schweinebraten, Knödel und Sauerkraut)",
+     "Smažený sýr (panierter, gebratener Käse mit Tatarensauce)"
+    ],
+    "traditionalDrinks": [
+     "Tschechisches Lagerbier (Pilsner-Tradition aus Plzeň)",
+     "Becherovka (Kräuterlikör aus Karlovy Vary)",
+     "Kofola (einheimische Cola-Limonade)"
+    ],
+    "streetFoodAndDesserts": [
+     "Klobása (Grillwurst vom Straßenstand)",
+     "Koláče (runde Hefegebäcke mit Obst, Mohn oder Quark)",
+     "Medovník (Honigschichttorte)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Kafka (Schriftsteller)",
+     "Antonín Dvořák (Komponist)",
+     "Miloš Forman (oscarprämierter Regisseur)"
+    ],
+    "strongSectors": [
+     "Automobilindustrie (Škoda Auto)",
+     "Maschinenbau und Elektronik",
+     "Brauwesen und böhmisches Glas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Währung ist die Tschechische Krone (Euro selten und zu schlechtem Kurs). Kontaktlose Karten gehen fast überall; etwas Bargeld reicht für kleine Märkte.",
+    "tippingCulture": "Im Restaurant rundet man auf oder gibt etwa 10 %; ist der Service bereits enthalten, ist kein Extra nötig.",
+    "economicPillars": "Auto- und Industrieexporte (vor allem nach Deutschland), Tourismus, Dienstleistungen und IT."
+   }
+  },
+  "itin": {
+   "routeName": "Böhmische Klassiker: Prag, Kutná Hora & Český Krumlov",
+   "routeSummary": "Eine 7-tägige Route: Prager Burg, Brücken und Plätze, dann die mittelalterliche Silberstadt Kutná Hora und zum Abschluss das märchenhafte Český Krumlov an der Moldauschleife.",
+   "totalDays": 7,
+   "idealDurationText": "7 Tage",
+   "bestSeason": "Mai – Juni, September – Oktober",
+   "transportMode": "In Prag Metro/Tram und zu Fuß; Fernzüge (ČD, RegioJet) und Busse (FlixBus, RegioJet)",
+   "paceLevel": "Ausgewogen",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Prag (Burg, Altstadt & Kleinseite)",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Prager Burg & Veitsdom",
+      "Karlsbrücke & Kleinseite",
+      "Altstädter Ring & Astronomische Uhr",
+      "Josefov (Jüdisches Viertel) & Vyšehrad"
+     ],
+     "activities": [
+      "Die Karlsbrücke vor 7 Uhr überqueren, bevor der Andrang beginnt.",
+      "Vom Biergarten im Letná-Park die Moldaubrücken betrachten.",
+      "Mit der Standseilbahn auf den Petřín zum Sonnenuntergang fahren."
+     ],
+     "foodAndDrinks": [
+      "Svíčková na smetaně (Rinderlende in Rahmsauce mit Knödeln)",
+      "Tschechisches Lagerbier (Pilsner-Tradition aus Plzeň)",
+      "Medovník (Honigschichttorte)"
+     ],
+     "criticalTips": [
+      "Wechselstuben in der Altstadt meiden; mit Karte in CZK zahlen.",
+      "In der App PID Lítačka einen 24/72-Stunden-Pass kaufen und aktivieren."
+     ],
+     "mapsQuery": "Prague, Czechia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Kutná Hora (Silberstadt & Beinhaus)",
+     "recommendedDuration": "1 Tag (Tagesausflug ab Prag)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Beinhaus Sedlec",
+      "St.-Barbara-Kirche",
+      "Welscher Hof (ehemalige königliche Münze)"
+     ],
+     "activities": [
+      "Im Silbermuseum Hrádek in mittelalterliche Stollen steigen.",
+      "Die Barborská-Straße entlang spazieren und den Blick auf die Kirche fotografieren.",
+      "Mit Kombiticket Beinhaus, Kirche und Kathedrale an einem Tag besuchen."
+     ],
+     "foodAndDrinks": [
+      "Smažený sýr (panierter, gebratener Käse mit Tatarensauce)",
+      "Kofola (einheimische Cola-Limonade)"
+     ],
+     "criticalTips": [
+      "Züge ab Prag Hauptbahnhof brauchen etwa 1 Stunde; für Sedlec in ‘Kutná Hora hl.n.’ aussteigen.",
+      "Das Beinhaus ist ein kleiner sakraler Raum; leise sein und kein Blitz."
+     ],
+     "mapsQuery": "Kutná Hora, Czechia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Český Krumlov (Südböhmen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Schloss & Turm Český Krumlov",
+      "Blick von der Mantelbrücke (Plášťový most)",
+      "Barockes Schlosstheater & Schlossgarten",
+      "Egon Schiele Art Centrum"
+     ],
+     "activities": [
+      "Eine kurze Kanu- oder Schlauchboottour auf der Moldau machen.",
+      "Vom Schlossturm über die roten Dächer blicken.",
+      "Abends nach Abreise der Reisegruppen durch die Kopfsteinpflastergassen schlendern."
+     ],
+     "foodAndDrinks": [
+      "Gegrillte Moldauforelle (pstruh)",
+      "Eggenberg-Bier (lokale Brauerei)",
+      "Koláče (runde Hefegebäcke mit Obst, Mohn oder Quark)"
+     ],
+     "criticalTips": [
+      "Direktbusse ab Prag (RegioJet/FlixBus) brauchen etwa 3 Stunden und sind meist praktischer als der Zug.",
+      "Schlossführungen sind von November bis März geschlossen; im Winter Zeiten prüfen."
+     ],
+     "mapsQuery": "Český Krumlov, Czechia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Svíčková na smetaně (Rinderlende in Rahmsauce mit Knödeln)",
+     "Vepřo knedlo zelo (Schweinebraten, Knödel und Sauerkraut)",
+     "Smažený sýr (panierter, gebratener Käse mit Tatarensauce)"
+    ],
+    "drinks": [
+     "Tschechisches Lagerbier (Pilsner-Tradition aus Plzeň)",
+     "Becherovka (Kräuterlikör aus Karlovy Vary)",
+     "Kofola (einheimische Cola-Limonade)"
+    ],
+    "streetFoods": [
+     "Klobása (Grillwurst vom Straßenstand)",
+     "Koláče (runde Hefegebäcke mit Obst, Mohn oder Quark)",
+     "Medovník (Honigschichttorte)"
+    ],
+    "diningAdvice": "Werktags ist das mittägliche ‘denní menu’ (Tagesmenü) sehr günstig; Brot oder Gedeck können berechnet werden – Rechnung prüfen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Bequeme, rutschfeste Schuhe fürs Kopfsteinpflaster",
+     "Steckeradapter (Typ E; Schuko-Stecker passen meist)",
+     "Zwiebellook und Regenjacke (Wetter wechselt schnell)",
+     "Warme Jacke, Mütze und Handschuhe im Winter"
+    ],
+    "safetyAndEtiquette": [
+     "In vollen Trams und auf der Karlsbrücke die Tasche vorne tragen.",
+     "Nie ohne entwerteten Fahrschein fahren; Kontrolleure sind in Zivil."
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Corona checa (CZK)",
+   "plugType": "Tipo C, E (230V, 50Hz)",
+   "bestMonths": "Mayo – junio y septiembre – octubre (clima templado, menos gente); diciembre por los mercados navideños",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "La delincuencia violenta es baja; el principal riesgo son los carteristas en el casco antiguo de Praga, el Puente de Carlos y el tranvía 22.",
+    "commonScams": [
+     "Casas de cambio turísticas con tasas pésimas y cambistas callejeros que entregan billetes sin valor",
+     "Cajeros (p. ej. Euronet) que ofrecen conversión dinámica de divisa con recargos ocultos",
+     "Taxis parados en la calle en el centro con tarifas infladas"
+    ],
+    "safeTravelTips": [
+     "Al pagar con tarjeta o en el cajero, elija siempre cobrar en CZK (rechace la conversión).",
+     "Pida coche por Bolt, Uber o Liftago en lugar de parar taxis.",
+     "Valide el billete antes de subir al transporte; los controles son frecuentes y las multas altas."
+    ],
+    "emergencyNumbers": {
+     "police": "158",
+     "ambulance": "155",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura de población (4G en todo el país, 5G en ciudades)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muy bueno (metro, tranvía y densa red ferroviaria)",
+    "costLevel": "Económico",
+    "singleTicketUsd": "1.30 - 1.80 $ (30-40 CZK)",
+    "dailyPassUsd": "5.00 - 5.50 $ (24h, 120 CZK)",
+    "popularRideApps": [
+     "PID Lítačka",
+     "Bolt",
+     "Uber",
+     "Liftago",
+     "Mapy.com",
+     "IDOS"
+    ],
+    "taxiAdvice": "En Praga use Bolt, Uber o Liftago en lugar de taxis de calle; entre ciudades, los trenes de ČD, RegioJet y Leo Express son baratos y cómodos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "3.00 - 4.50 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Bajo (Estambul – Praga directo ~2,5 h)",
+    "flightTip": "Hay vuelos directos de Estambul a Praga; en temporada baja (noviembre–marzo, salvo Navidad) bajan bastante los precios de vuelos y hoteles."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Al entrar en una tienda o ascensor se saluda con ‘Dobrý den’.",
+     "Al brindar se dice ‘Na zdraví!’ mirando a los ojos.",
+     "Al entrar en una casa uno se quita los zapatos; suelen ofrecer zapatillas.",
+     "En el transporte público se habla en voz baja y se cede el asiento a los mayores."
+    ],
+    "festivals": [
+     "Festival Internacional de Música Primavera de Praga (mayo–junio)",
+     "Festival Internacional de Cine de Karlovy Vary (julio)",
+     "Mercados navideños (Plaza de la Ciudad Vieja, diciembre)"
+    ],
+    "lifestyle": "Cultura cervecera y charlas en la hospoda, escapadas de fin de semana a casas de campo (chata/chalupa), senderismo y pasión por el hockey sobre hielo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Castillo de Praga y Catedral de San Vito",
+     "Puente de Carlos",
+     "Plaza de la Ciudad Vieja y Reloj Astronómico (Orloj)",
+     "Casco antiguo y castillo de Český Krumlov (UNESCO)",
+     "Kutná Hora: Iglesia de Santa Bárbara y Osario de Sedlec",
+     "Ciudad balneario de Karlovy Vary"
+    ],
+    "bestSeasons": "Finales de primavera e inicio del otoño; invierno por los mercados navideños y hoteles más baratos",
+    "travelStyleTip": "Recorra Praga a pie y en tranvía; Kutná Hora y Karlovy Vary sirven como excursión de un día, Český Krumlov merece al menos una noche."
+   },
+   "religion": {
+    "primaryReligions": "La mayoría no es religiosa o no lo declara (~75 %); católicos romanos ~9 %, otros cristianos ~3 %.",
+    "respectNorms": "En las iglesias cubra hombros y rodillas y no haga fotos durante la misa; guarde silencio en las sinagogas del Barrio Judío.",
+    "sacredSites": [
+     "Catedral de San Vito (Praga)",
+     "Sinagoga Vieja-Nueva (Staronová synagoga, Praga)",
+     "Osario de Sedlec (Kutná Hora)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Checo",
+    "englishProficiency": "Bueno en Praga y entre los jóvenes; limitado en zonas rurales. Los mayores pueden entender alemán o ruso.",
+    "phrases": [
+     {
+      "phrase": "Dobrý den",
+      "meaning": "Buenos días / Hola",
+      "translation": "Hola",
+      "pronunciation": "DOB-ree den"
+     },
+     {
+      "phrase": "Děkuji",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "DYEH-koo-yi"
+     },
+     {
+      "phrase": "Prosím",
+      "meaning": "Por favor / Aquí tiene",
+      "translation": "Por favor",
+      "pronunciation": "PRO-seem"
+     },
+     {
+      "phrase": "Kolik to stojí?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "KO-lik to STO-yee"
+     },
+     {
+      "phrase": "Na zdraví!",
+      "meaning": "¡A su salud! (Salud)",
+      "translation": "¡Salud!",
+      "pronunciation": "NA zdra-vee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Praga, sede del Reino de Bohemia, fue capital del Sacro Imperio con Carlos IV. Tras el dominio de los Habsburgo nació Checoslovaquia en 1918; después de la Revolución de Terciopelo de 1989, la República Checa se independizó pacíficamente en 1993 y entró en la UE en 2004.",
+    "milestones": [
+     "1348: Carlos IV funda en Praga la primera universidad de Europa Central",
+     "1918: Fundación de Checoslovaquia",
+     "1989: Revolución de Terciopelo",
+     "1993: República Checa independiente; 2004: ingreso en la UE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Svíčková na smetaně (solomillo de ternera en salsa cremosa con knedlíky)",
+     "Vepřo knedlo zelo (cerdo asado, knedlíky y chucrut)",
+     "Smažený sýr (queso empanado frito con salsa tártara)"
+    ],
+    "traditionalDrinks": [
+     "Cerveza lager checa (tradición Pilsner de Plzeň)",
+     "Becherovka (licor de hierbas de Karlovy Vary)",
+     "Kofola (refresco local tipo cola)"
+    ],
+    "streetFoodAndDesserts": [
+     "Klobása (salchicha a la parrilla en puestos callejeros)",
+     "Koláče (bollos redondos con fruta, amapola o requesón)",
+     "Medovník (tarta de miel en capas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Franz Kafka (escritor)",
+     "Antonín Dvořák (compositor)",
+     "Miloš Forman (director ganador del Óscar)"
+    ],
+    "strongSectors": [
+     "Automoción (Škoda Auto)",
+     "Maquinaria y electrónica",
+     "Cerveza y cristal de Bohemia"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La moneda es la corona checa (el euro casi no se acepta o con mal cambio). Las tarjetas sin contacto funcionan en casi todas partes; basta algo de efectivo para mercados pequeños.",
+    "tippingCulture": "En restaurantes se suele redondear o dejar alrededor del 10 %; si el servicio ya está incluido no hace falta más.",
+    "economicPillars": "Exportaciones industriales y de automoción (sobre todo a Alemania), turismo, servicios e informática."
+   }
+  },
+  "itin": {
+   "routeName": "Clásicos de Bohemia: Praga, Kutná Hora y Český Krumlov",
+   "routeSummary": "Ruta de 7 días que empieza con el castillo, los puentes y las plazas de Praga, sigue por la ciudad medieval de la plata Kutná Hora y termina en el cuento de hadas de Český Krumlov, en un meandro del Moldava.",
+   "totalDays": 7,
+   "idealDurationText": "7 días",
+   "bestSeason": "Mayo – junio, septiembre – octubre",
+   "transportMode": "Metro/tranvía y a pie en Praga; trenes (ČD, RegioJet) y autobuses (FlixBus, RegioJet) entre ciudades",
+   "paceLevel": "Equilibrado",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Praga (Castillo, Ciudad Vieja y Malá Strana)",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Castillo de Praga y Catedral de San Vito",
+      "Puente de Carlos y Malá Strana",
+      "Plaza de la Ciudad Vieja y Reloj Astronómico",
+      "Josefov (Barrio Judío) y Vyšehrad"
+     ],
+     "activities": [
+      "Cruce el Puente de Carlos antes de las 7 de la mañana, antes de las multitudes.",
+      "Contemple los puentes del Moldava desde la cervecería al aire libre del parque Letná.",
+      "Suba en funicular a la colina de Petřín para ver el atardecer."
+     ],
+     "foodAndDrinks": [
+      "Svíčková na smetaně (solomillo de ternera en salsa cremosa con knedlíky)",
+      "Cerveza lager checa (tradición Pilsner de Plzeň)",
+      "Medovník (tarta de miel en capas)"
+     ],
+     "criticalTips": [
+      "Evite las casas de cambio del casco antiguo; pague con tarjeta en CZK.",
+      "Compre un abono de 24/72 horas en la app PID Lítačka y asegúrese de activarlo."
+     ],
+     "mapsQuery": "Prague, Czechia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kutná Hora (Ciudad de la plata y Osario)",
+     "recommendedDuration": "1 día (excursión desde Praga)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Osario de Sedlec",
+      "Iglesia de Santa Bárbara",
+      "Patio Italiano (antigua ceca real)"
+     ],
+     "activities": [
+      "Baje a las galerías mineras medievales en el Museo de la Plata de Hrádek.",
+      "Pasee por la calle Barborská y fotografíe la vista de la iglesia.",
+      "Con la entrada combinada visite el osario, la iglesia y la catedral en un día."
+     ],
+     "foodAndDrinks": [
+      "Smažený sýr (queso empanado frito con salsa tártara)",
+      "Kofola (refresco local tipo cola)"
+     ],
+     "criticalTips": [
+      "El tren desde la estación central de Praga tarda alrededor de 1 hora; baje en ‘Kutná Hora hl.n.’ para Sedlec.",
+      "El osario es un pequeño espacio sagrado: guarde silencio y no use flash."
+     ],
+     "mapsQuery": "Kutná Hora, Czechia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Český Krumlov (Bohemia del Sur)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Castillo y torre de Český Krumlov",
+      "Vista desde el Puente de la Capa (Plášťový most)",
+      "Teatro barroco del castillo y jardines",
+      "Centro de Arte Egon Schiele"
+     ],
+     "activities": [
+      "Haga un breve recorrido en canoa o balsa por el Moldava.",
+      "Suba a la torre del castillo para ver los tejados rojos.",
+      "Pasee por las calles empedradas al atardecer, cuando se van los grupos."
+     ],
+     "foodAndDrinks": [
+      "Trucha del Moldava a la parrilla (pstruh)",
+      "Cerveza Eggenberg (cervecería local)",
+      "Koláče (bollos redondos con fruta, amapola o requesón)"
+     ],
+     "criticalTips": [
+      "Los autobuses directos desde Praga (RegioJet/FlixBus) tardan unas 3 horas y suelen ser más prácticos que el tren.",
+      "Las visitas al interior del castillo cierran de noviembre a marzo; consulte horarios en invierno."
+     ],
+     "mapsQuery": "Český Krumlov, Czechia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Svíčková na smetaně (solomillo de ternera en salsa cremosa con knedlíky)",
+     "Vepřo knedlo zelo (cerdo asado, knedlíky y chucrut)",
+     "Smažený sýr (queso empanado frito con salsa tártara)"
+    ],
+    "drinks": [
+     "Cerveza lager checa (tradición Pilsner de Plzeň)",
+     "Becherovka (licor de hierbas de Karlovy Vary)",
+     "Kofola (refresco local tipo cola)"
+    ],
+    "streetFoods": [
+     "Klobása (salchicha a la parrilla en puestos callejeros)",
+     "Koláče (bollos redondos con fruta, amapola o requesón)",
+     "Medovník (tarta de miel en capas)"
+    ],
+    "diningAdvice": "Entre semana, el ‘denní menu’ (menú del día) del mediodía es muy económico; el pan o cubierto puede cobrarse, revise la cuenta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calzado cómodo y antideslizante para el empedrado",
+     "Adaptador de enchufe (tipo E; los Schuko suelen encajar)",
+     "Ropa por capas e impermeable (el tiempo cambia rápido)",
+     "Abrigo, gorro y guantes para el invierno"
+    ],
+    "safetyAndEtiquette": [
+     "Lleve la bolsa delante en tranvías llenos y en el Puente de Carlos.",
+     "No viaje sin billete validado; los revisores van de paisano."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Чешская крона (CZK)",
+   "plugType": "Тип C, E (230V, 50 Гц)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь (мягкая погода, меньше туристов); декабрь — рождественские ярмарки",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Насильственная преступность низкая; главный риск — карманники в Старом городе Праги, на Карловом мосту и в трамвае №22.",
+    "commonScams": [
+     "Обменники с грабительским курсом и уличные менялы, подсовывающие недействительные купюры",
+     "Банкоматы (например, Euronet) с динамической конвертацией и скрытой наценкой",
+     "Такси, пойманные на улице в центре, с завышенными тарифами"
+    ],
+    "safeTravelTips": [
+     "При оплате картой и в банкомате всегда выбирайте списание в CZK (откажитесь от конвертации).",
+     "Заказывайте машину через Bolt, Uber или Liftago, а не ловите такси.",
+     "Компостируйте билет до посадки: контроль частый, штрафы высокие."
+    ],
+    "emergencyNumbers": {
+     "police": "158",
+     "ambulance": "155",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Покрытие 99% населения (4G по всей стране, 5G в городах)",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Очень хорошее (метро, трамваи и густая сеть железных дорог)",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "1.30 - 1.80 $ (30-40 CZK)",
+    "dailyPassUsd": "5.00 - 5.50 $ (24h, 120 CZK)",
+    "popularRideApps": [
+     "PID Lítačka",
+     "Bolt",
+     "Uber",
+     "Liftago",
+     "Mapy.com",
+     "IDOS"
+    ],
+    "taxiAdvice": "В Праге пользуйтесь Bolt, Uber или Liftago вместо уличных такси; между городами дёшево и удобно ездить поездами ČD, RegioJet и Leo Express."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "3.00 - 4.50 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Низкая (Стамбул – Прага прямой рейс ~2,5 ч)",
+    "flightTip": "Из Стамбула в Прагу есть прямые рейсы; в низкий сезон (ноябрь–март, кроме Рождества) цены на билеты и отели заметно ниже."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Входя в магазин или лифт, принято здороваться: «Dobrý den».",
+     "Чокаясь, говорят «Na zdraví!» и смотрят в глаза.",
+     "В доме снимают обувь, хозяева обычно дают тапочки.",
+     "В транспорте говорят тихо и уступают место пожилым."
+    ],
+    "festivals": [
+     "Международный музыкальный фестиваль «Пражская весна» (май–июнь)",
+     "Международный кинофестиваль в Карловых Варах (июль)",
+     "Рождественские ярмарки (Староместская площадь, декабрь)"
+    ],
+    "lifestyle": "Пивная культура и посиделки в господе, выходные на даче (chata/chalupa), походы и любовь к хоккею."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Пражский Град и собор Святого Вита",
+     "Карлов мост",
+     "Староместская площадь и Пражские куранты (Орлой)",
+     "Старый город и замок Чески-Крумлов (ЮНЕСКО)",
+     "Кутна-Гора: храм Святой Варвары и костница в Седлеце",
+     "Курортный город Карловы Вары"
+    ],
+    "bestSeasons": "Поздняя весна и ранняя осень; зима — ради ярмарок и дешёвых отелей",
+    "travelStyleTip": "Прагу лучше осматривать пешком и на трамвае; Кутна-Гора и Карловы Вары — однодневные поездки, а в Чески-Крумлове стоит остаться хотя бы на ночь."
+   },
+   "religion": {
+    "primaryReligions": "Большинство неверующие или не указали религию (~75%); католики ~9%, другие христиане ~3%.",
+    "respectNorms": "В храмах прикрывайте плечи и колени, не фотографируйте во время службы; в синагогах Еврейского квартала соблюдайте тишину.",
+    "sacredSites": [
+     "Собор Святого Вита (Прага)",
+     "Староновая синагога (Прага)",
+     "Костница в Седлеце (Кутна-Гора)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Чешский",
+    "englishProficiency": "Хороший в Праге и у молодёжи, слабый в сельской местности. Пожилые могут понимать немецкий или русский.",
+    "phrases": [
+     {
+      "phrase": "Dobrý den",
+      "meaning": "Добрый день / Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "DOB-ree den"
+     },
+     {
+      "phrase": "Děkuji",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "DYEH-koo-yi"
+     },
+     {
+      "phrase": "Prosím",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "PRO-seem"
+     },
+     {
+      "phrase": "Kolik to stojí?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KO-lik to STO-yee"
+     },
+     {
+      "phrase": "Na zdraví!",
+      "meaning": "За здоровье!",
+      "translation": "Будем здоровы!",
+      "pronunciation": "NA zdra-vee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Прага, столица Чешского королевства, при Карле IV стала столицей Священной Римской империи. После власти Габсбургов в 1918 году возникла Чехословакия; после «бархатной революции» 1989 года Чехия мирно обрела независимость в 1993 году и вступила в ЕС в 2004-м.",
+    "milestones": [
+     "1348: Карл IV основывает в Праге первый университет Центральной Европы",
+     "1918: Образование Чехословакии",
+     "1989: «Бархатная революция»",
+     "1993: независимая Чехия; 2004: вступление в ЕС"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Свичкова на сметане (говяжья вырезка в сливочном соусе с кнедликами)",
+     "Вепрво кнедло зело (свинина, кнедлики и квашеная капуста)",
+     "Смаженый сыр (жареный сыр в панировке с соусом тартар)"
+    ],
+    "traditionalDrinks": [
+     "Чешское светлое пиво (пильзнерская традиция из Пльзеня)",
+     "Бехеровка (травяной ликёр из Карловых Вар)",
+     "Кофола (местный безалкогольный напиток в стиле колы)"
+    ],
+    "streetFoodAndDesserts": [
+     "Клобаса (жареная колбаска в уличных киосках)",
+     "Колаче (круглые булочки с фруктами, маком или творогом)",
+     "Медовник (медовый слоёный торт)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Франц Кафка (писатель)",
+     "Антонин Дворжак (композитор)",
+     "Милош Форман (режиссёр, лауреат «Оскара»)"
+    ],
+    "strongSectors": [
+     "Автопром (Škoda Auto)",
+     "Машиностроение и электроника",
+     "Пивоварение и богемское стекло"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Валюта — чешская крона (евро берут редко и по плохому курсу). Бесконтактные карты принимают почти везде; немного наличных нужно лишь для рынков.",
+    "tippingCulture": "В ресторанах принято округлять счёт или оставлять около 10%; если обслуживание включено, дополнительно не нужно.",
+    "economicPillars": "Экспорт автомобилей и промышленной продукции (прежде всего в Германию), туризм, услуги и ИТ."
+   }
+  },
+  "itin": {
+   "routeName": "Классика Богемии: Прага, Кутна-Гора и Чески-Крумлов",
+   "routeSummary": "7-дневный маршрут: замок, мосты и площади Праги, затем средневековый «серебряный» город Кутна-Гора и сказочный Чески-Крумлов в излучине Влтавы.",
+   "totalDays": 7,
+   "idealDurationText": "7 дней",
+   "bestSeason": "Май – июнь, сентябрь – октябрь",
+   "transportMode": "В Праге — метро, трамвай и пешком; между городами поезда (ČD, RegioJet) и автобусы (FlixBus, RegioJet)",
+   "paceLevel": "Сбалансированный",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Прага (Град, Старый город и Мала-Страна)",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Пражский Град и собор Святого Вита",
+      "Карлов мост и Мала-Страна",
+      "Староместская площадь и Орлой",
+      "Йозефов (Еврейский квартал) и Вышеград"
+     ],
+     "activities": [
+      "Пройдите по Карлову мосту до 7 утра, пока нет толп.",
+      "Полюбуйтесь мостами через Влтаву из пивного сада в парке Летна.",
+      "Поднимитесь на фуникулёре на Петршин к закату."
+     ],
+     "foodAndDrinks": [
+      "Свичкова на сметане (говяжья вырезка в сливочном соусе с кнедликами)",
+      "Чешское светлое пиво (пильзнерская традиция из Пльзеня)",
+      "Медовник (медовый слоёный торт)"
+     ],
+     "criticalTips": [
+      "Избегайте обменников в Старом городе, платите картой в кронах.",
+      "Купите проездной на 24/72 часа в приложении PID Lítačka и не забудьте его активировать."
+     ],
+     "mapsQuery": "Prague, Czechia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Кутна-Гора (Серебряный город и костница)",
+     "recommendedDuration": "1 день (поездка из Праги)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Костница в Седлеце",
+      "Храм Святой Варвары",
+      "Итальянский двор (бывший королевский монетный двор)"
+     ],
+     "activities": [
+      "Спуститесь в средневековые штольни в Музее серебра (Градек).",
+      "Прогуляйтесь по Барборской улице и сфотографируйте вид на храм.",
+      "По единому билету осмотрите костницу, храм и собор за один день."
+     ],
+     "foodAndDrinks": [
+      "Смаженый сыр (жареный сыр в панировке с соусом тартар)",
+      "Кофола (местный безалкогольный напиток в стиле колы)"
+     ],
+     "criticalTips": [
+      "Поезд с главного вокзала Праги идёт около часа; для Седлеца выходите на станции «Kutná Hora hl.n.».",
+      "Костница — небольшое святое место: соблюдайте тишину и не используйте вспышку."
+     ],
+     "mapsQuery": "Kutná Hora, Czechia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Чески-Крумлов (Южная Чехия)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Замок и башня Чески-Крумлова",
+      "Вид с Плащевого моста",
+      "Барочный замковый театр и сады",
+      "Арт-центр Эгона Шиле"
+     ],
+     "activities": [
+      "Сплавьтесь на каноэ или рафте по Влтаве.",
+      "Поднимитесь на замковую башню и посмотрите на красные крыши.",
+      "Вечером, когда уедут экскурсионные группы, погуляйте по мощёным улочкам."
+     ],
+     "foodAndDrinks": [
+      "Форель из Влтавы на гриле (pstruh)",
+      "Пиво Eggenberg (местная пивоварня)",
+      "Колаче (круглые булочки с фруктами, маком или творогом)"
+     ],
+     "criticalTips": [
+      "Прямой автобус из Праги (RegioJet/FlixBus) идёт около 3 часов и обычно удобнее поезда.",
+      "Экскурсии по интерьерам замка с ноября по март не проводятся — уточняйте расписание зимой."
+     ],
+     "mapsQuery": "Český Krumlov, Czechia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Свичкова на сметане (говяжья вырезка в сливочном соусе с кнедликами)",
+     "Вепрво кнедло зело (свинина, кнедлики и квашеная капуста)",
+     "Смаженый сыр (жареный сыр в панировке с соусом тартар)"
+    ],
+    "drinks": [
+     "Чешское светлое пиво (пильзнерская традиция из Пльзеня)",
+     "Бехеровка (травяной ликёр из Карловых Вар)",
+     "Кофола (местный безалкогольный напиток в стиле колы)"
+    ],
+    "streetFoods": [
+     "Клобаса (жареная колбаска в уличных киосках)",
+     "Колаче (круглые булочки с фруктами, маком или творогом)",
+     "Медовник (медовый слоёный торт)"
+    ],
+    "diningAdvice": "По будням обеденное «denní menu» (меню дня) очень выгодно; хлеб и куверт могут включить в счёт — проверяйте его."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Удобная нескользящая обувь для брусчатки",
+     "Переходник (тип E; европейские вилки обычно подходят)",
+     "Многослойная одежда и дождевик (погода быстро меняется)",
+     "Тёплая куртка, шапка и перчатки зимой"
+    ],
+    "safetyAndEtiquette": [
+     "В переполненных трамваях и на Карловом мосту держите сумку перед собой.",
+     "Не ездите без прокомпостированного билета — контролёры в штатском."
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,497 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "RSD (Sırp Dinarı)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim (ılık hava, festivaller); Temmuz – Ağustos Belgrad’da sıcak, Zlatibor’da kayak için Aralık – Mart",
+   "safety": {
+    "crimeRateSummary": "Turistlere yönelik suç oranı düşüktür ve Belgrad gece hayatı genel olarak güvenlidir. 2025’ten beri süren siyasi gösterilerden ve Kızılyıldız – Partizan derbileri çevresindeki kalabalıklardan uzak durun; Kosova sınır bölgesinde gerginlik yaşanabilir.",
+    "commonScams": [
+     "Havalimanı ve otogarda taksimetresiz ya da “turist tarifeli” korsan taksiler",
+     "Kalabalık Knez Mihailova Caddesi ve tramvaylarda yankesicilik",
+     "Bazı gece kulüplerinde masa rezervasyonu adı altında yüksek minimum harcama talebi"
+    ],
+    "safeTravelTips": [
+     "Havalimanından şehre resmî taksi kuponu (taksi bileti) veya CarGo / Yandex Go uygulamasıyla gidin.",
+     "Para bozdurmak için resmî “menjačnica” döviz bürolarını kullanın; sokakta para bozdurmayın.",
+     "Kosova, savaş dönemi ve siyaset konularında tartışmaya girmekten kaçının."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde ve otoyollarda güçlü 4G, Belgrad’da 5G; dağlık güneybatıda zayıf noktalar",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Mevcut – Airalo, Holafly ve yerel operatörlerin turist paketleri (Sırbistan AB dolaşımına dahil değildir)",
+    "bestCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi – Belgrad’da otobüs ve tramvay; Belgrad – Novi Sad arası hızlı tren (Soko); diğer yerlere otobüs",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "Belgrad’da ücretsiz (2025’ten beri)",
+    "dailyPassUsd": "Belgrad’da gerekmez (toplu taşıma ücretsiz)",
+    "popularRideApps": [
+     "CarGo",
+     "Yandex Go",
+     "Pink Taxi"
+    ],
+    "taxiAdvice": "Belgrad içinde taksi yolculukları çoğunlukla 4-8 $ tutar. Havalimanından merkeze resmî kuponla sabit fiyat ~25-30 $’dır; sokakta çevrilen taksilerde taksimetrenin açıldığından emin olun."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 130 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "0.70 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 100 $",
+    "flightCostIndex": "Düşük (İstanbul – Belgrad direkt ~1.5 sa)",
+    "flightTip": "İstanbul’dan Belgrad’a Air Serbia, THY, Pegasus ve AJet ile direkt uçuşlar var; erken alınan biletler çok uygun olabilir. Karayoluyla Bulgaristan üzerinden de gidilebilir."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Sırpça (hem Kiril hem Latin alfabesiyle yazılır); Voyvodina’da Macarca gibi azınlık dilleri de resmîdir.",
+    "englishProficiency": "İyi – özellikle Belgrad ve Novi Sad’da gençler rahat İngilizce konuşur.",
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "ZDRAH-vo"
+     },
+     {
+      "phrase": "Хвала (Hvala)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Молим (Molim)",
+      "meaning": "Lütfen / Buyurun",
+      "translation": "Lütfen / Buyurun",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Колико кошта? (Koliko košta?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Живели! (Živeli!)",
+      "meaning": "Şerefe!",
+      "translation": "Şerefe!",
+      "pronunciation": "ZHI-veh-li"
+     }
+    ]
+   }
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "RSD (Serbian dinar)",
+   "bestMonths": "May – June and September – October (mild weather, festivals); July – August is hot in Belgrade, December – March for skiing around Zlatibor",
+   "safety": {
+    "crimeRateSummary": "Crime against tourists is low and Belgrade’s nightlife is generally safe. Keep away from the political protests ongoing since 2025 and crowds around Red Star – Partizan derbies; tensions can flare near the Kosovo border.",
+    "commonScams": [
+     "Unlicensed taxis at the airport and bus station with no meter or a “tourist rate”",
+     "Pickpocketing on busy Knez Mihailova Street and on trams",
+     "Some nightclubs imposing a high minimum spend disguised as a table reservation"
+    ],
+    "safeTravelTips": [
+     "From the airport use the official taxi voucher desk or the CarGo / Yandex Go apps.",
+     "Change money at official “menjačnica” exchange offices, never on the street.",
+     "Avoid getting into arguments about Kosovo, the war years or politics."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Strong 4G in cities and along motorways, 5G in Belgrade; some weak spots in the mountainous southwest",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Available – Airalo, Holafly and local tourist packages (Serbia is not part of EU roaming)",
+    "bestCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good – buses and trams in Belgrade; Soko high-speed train Belgrade – Novi Sad; buses elsewhere",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "Free in Belgrade (since 2025)",
+    "dailyPassUsd": "Not needed in Belgrade (public transport is free)",
+    "popularRideApps": [
+     "CarGo",
+     "Yandex Go",
+     "Pink Taxi"
+    ],
+    "taxiAdvice": "Taxi rides within Belgrade usually cost $4-8. From the airport to the centre an official voucher gives a fixed fare of about $25-30; with street taxis make sure the meter is on."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 130 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "0.70 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 100 $",
+    "flightCostIndex": "Low (Istanbul – Belgrade direct ~1.5 h)",
+    "flightTip": "Air Serbia, THY, Pegasus and AJet fly direct from Istanbul to Belgrade; tickets booked early can be very cheap. You can also drive via Bulgaria."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Serbian (written in both Cyrillic and Latin script); minority languages such as Hungarian are also official in Vojvodina.",
+    "englishProficiency": "Good – especially young people in Belgrade and Novi Sad speak English comfortably.",
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "ZDRAH-vo"
+     },
+     {
+      "phrase": "Хвала (Hvala)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Молим (Molim)",
+      "meaning": "Please / You’re welcome",
+      "translation": "Please / You’re welcome",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Колико кошта? (Koliko košta?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Живели! (Živeli!)",
+      "meaning": "Cheers!",
+      "translation": "Cheers!",
+      "pronunciation": "ZHI-veh-li"
+     }
+    ]
+   }
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "RSD (Serbischer Dinar)",
+   "bestMonths": "Mai – Juni und September – Oktober (mildes Wetter, Festivals); Juli – August ist es in Belgrad heiß, Dezember – März Skisaison um Zlatibor",
+   "safety": {
+    "crimeRateSummary": "Kriminalität gegen Touristen ist gering, Belgrads Nachtleben gilt als sicher. Halten Sie Abstand zu den seit 2025 andauernden politischen Protesten und zu Menschenmengen bei Derbys Roter Stern – Partizan; an der Grenze zu Kosovo kann es Spannungen geben.",
+    "commonScams": [
+     "Illegale Taxis an Flughafen und Busbahnhof ohne Taxameter oder mit „Touristentarif“",
+     "Taschendiebstahl in der belebten Knez-Mihailova-Straße und in Straßenbahnen",
+     "Manche Clubs verlangen unter dem Vorwand einer Tischreservierung hohe Mindestumsätze"
+    ],
+    "safeTravelTips": [
+     "Vom Flughafen den offiziellen Taxi-Gutscheinschalter oder die Apps CarGo / Yandex Go nutzen.",
+     "Geld nur in offiziellen Wechselstuben („menjačnica“) tauschen, nie auf der Straße.",
+     "Diskussionen über Kosovo, die Kriegsjahre oder Politik vermeiden."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Starkes 4G in Städten und an Autobahnen, 5G in Belgrad; Funklöcher im bergigen Südwesten",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Verfügbar – Airalo, Holafly und lokale Touristenpakete (Serbien gehört nicht zum EU-Roaming)",
+    "bestCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut – Busse und Trams in Belgrad; Schnellzug Soko Belgrad – Novi Sad; sonst Busse",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "In Belgrad kostenlos (seit 2025)",
+    "dailyPassUsd": "In Belgrad nicht nötig (ÖPNV kostenlos)",
+    "popularRideApps": [
+     "CarGo",
+     "Yandex Go",
+     "Pink Taxi"
+    ],
+    "taxiAdvice": "Taxifahrten in Belgrad kosten meist 4-8 $. Vom Flughafen ins Zentrum gilt mit offiziellem Gutschein ein Festpreis von etwa 25-30 $; bei Straßentaxis auf das Taxameter achten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 130 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "0.70 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 100 $",
+    "flightCostIndex": "Niedrig (Istanbul – Belgrad direkt ~1,5 Std.)",
+    "flightTip": "Air Serbia, THY, Pegasus und AJet fliegen direkt von Istanbul nach Belgrad; früh gebuchte Tickets sind oft sehr günstig. Mit dem Auto geht es auch über Bulgarien."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Serbisch (in kyrillischer und lateinischer Schrift); in der Vojvodina sind auch Minderheitensprachen wie Ungarisch amtlich.",
+    "englishProficiency": "Gut – vor allem Jüngere in Belgrad und Novi Sad sprechen gut Englisch.",
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "ZDRAH-vo"
+     },
+     {
+      "phrase": "Хвала (Hvala)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Молим (Molim)",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Колико кошта? (Koliko košta?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Живели! (Živeli!)",
+      "meaning": "Prost!",
+      "translation": "Prost!",
+      "pronunciation": "ZHI-veh-li"
+     }
+    ]
+   }
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "RSD (dinar serbio)",
+   "bestMonths": "Mayo – junio y septiembre – octubre (clima suave, festivales); julio – agosto hace calor en Belgrado y diciembre – marzo es temporada de esquí en Zlatibor",
+   "safety": {
+    "crimeRateSummary": "La delincuencia contra turistas es baja y la vida nocturna de Belgrado suele ser segura. Mantente alejado de las protestas políticas que siguen desde 2025 y de las aglomeraciones en los derbis Estrella Roja – Partizán; puede haber tensión cerca de la frontera con Kosovo.",
+    "commonScams": [
+     "Taxis piratas en el aeropuerto y la estación de autobuses sin taxímetro o con “tarifa turista”",
+     "Carteristas en la concurrida calle Knez Mihailova y en los tranvías",
+     "Algunas discotecas imponen un consumo mínimo alto disfrazado de reserva de mesa"
+    ],
+    "safeTravelTips": [
+     "Desde el aeropuerto usa el mostrador oficial de vales de taxi o las apps CarGo / Yandex Go.",
+     "Cambia dinero en casas de cambio oficiales (“menjačnica”), nunca en la calle.",
+     "Evita discusiones sobre Kosovo, la guerra o la política."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido en ciudades y autopistas y 5G en Belgrado; algunas zonas débiles en el suroeste montañoso",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Disponible – Airalo, Holafly y paquetes turísticos locales (Serbia no está en el roaming de la UE)",
+    "bestCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno – autobuses y tranvías en Belgrado; tren rápido Soko Belgrado – Novi Sad; autobuses al resto",
+    "costLevel": "Barato",
+    "singleTicketUsd": "Gratis en Belgrado (desde 2025)",
+    "dailyPassUsd": "No hace falta en Belgrado (transporte gratuito)",
+    "popularRideApps": [
+     "CarGo",
+     "Yandex Go",
+     "Pink Taxi"
+    ],
+    "taxiAdvice": "Los trayectos en taxi por Belgrado suelen costar 4-8 $. Del aeropuerto al centro, con vale oficial, hay tarifa fija de unos 25-30 $; en taxis de la calle comprueba el taxímetro."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 130 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "0.70 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 100 $",
+    "flightCostIndex": "Bajo (Estambul – Belgrado directo ~1,5 h)",
+    "flightTip": "Air Serbia, THY, Pegasus y AJet vuelan directo de Estambul a Belgrado; los billetes comprados con antelación pueden ser muy baratos. También se puede ir por carretera vía Bulgaria."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Serbio (escrito en cirílico y en latino); en Voivodina también son oficiales lenguas minoritarias como el húngaro.",
+    "englishProficiency": "Bueno – sobre todo los jóvenes de Belgrado y Novi Sad hablan bien inglés.",
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "ZDRAH-vo"
+     },
+     {
+      "phrase": "Хвала (Hvala)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Молим (Molim)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Колико кошта? (Koliko košta?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Живели! (Živeli!)",
+      "meaning": "¡Salud!",
+      "translation": "¡Salud!",
+      "pronunciation": "ZHI-veh-li"
+     }
+    ]
+   }
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "RSD (сербский динар)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь (мягкая погода, фестивали); в июле – августе в Белграде жарко, декабрь – март — лыжный сезон в Златиборе",
+   "safety": {
+    "crimeRateSummary": "Преступлений против туристов мало, ночная жизнь Белграда в целом безопасна. Держитесь подальше от политических протестов, идущих с 2025 года, и от толп на дерби «Црвена звезда» – «Партизан»; у границы с Косово возможна напряжённость.",
+    "commonScams": [
+     "Нелегальные такси в аэропорту и на автовокзале без счётчика или с «туристическим тарифом»",
+     "Карманники на людной улице Князя Михаила и в трамваях",
+     "Некоторые клубы требуют высокий минимальный заказ под видом брони столика"
+    ],
+    "safeTravelTips": [
+     "Из аэропорта пользуйтесь официальной стойкой талонов на такси или приложениями CarGo / Yandex Go.",
+     "Меняйте деньги в официальных обменниках («menjačnica»), а не на улице.",
+     "Избегайте споров о Косово, годах войны и политике."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в городах и на автострадах, 5G в Белграде; слабые места на гористом юго-западе",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Доступна – Airalo, Holafly и местные туристические пакеты (Сербия не входит в роуминг ЕС)",
+    "bestCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошо – автобусы и трамваи в Белграде; скоростной поезд «Соко» Белград – Нови-Сад; в другие места автобусы",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "В Белграде бесплатно (с 2025 года)",
+    "dailyPassUsd": "В Белграде не нужен (транспорт бесплатный)",
+    "popularRideApps": [
+     "CarGo",
+     "Yandex Go",
+     "Pink Taxi"
+    ],
+    "taxiAdvice": "Поездки на такси по Белграду обычно стоят 4-8 $. Из аэропорта в центр по официальному талону фиксированная цена около 25-30 $; в уличных такси следите за счётчиком."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 130 $",
+    "budgetMealUsd": "8 - 14 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "0.70 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 100 $",
+    "flightCostIndex": "Низкий (Стамбул – Белград прямой ~1,5 ч)",
+    "flightTip": "Из Стамбула в Белград летают Air Serbia, THY, Pegasus и AJet; билеты, купленные заранее, бывают очень дешёвыми. Можно доехать и на машине через Болгарию."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Сербский (кириллица и латиница); в Воеводине официальны также языки меньшинств, например венгерский.",
+    "englishProficiency": "Хороший – особенно молодёжь в Белграде и Нови-Саде свободно говорит по-английски.",
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Привет / Здравствуйте",
+      "translation": "Привет / Здравствуйте",
+      "pronunciation": "ZDRAH-vo"
+     },
+     {
+      "phrase": "Хвала (Hvala)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Молим (Molim)",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Колико кошта? (Koliko košta?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Живели! (Živeli!)",
+      "meaning": "За здоровье!",
+      "translation": "За здоровье!",
+      "pronunciation": "ZHI-veh-li"
+     }
+    ]
+   }
+  }
+ }
+}
