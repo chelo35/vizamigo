@@ -2,7 +2,14 @@
   "_doc": "Arama sorularından eklenen, kaynaklı SSS. lang -> ülke kodu -> [{q,a,u (resmî kaynak),h (kaynak adı),d (kontrol tarihi YYYY-MM-DD),p? (yalnızca bu pasaportlar)}]. Günlük görev ekler; vize kategorisi verisini değiştirmez.",
   "tr": {
     "BA": [{ "q": "Bosna-Hersek'e kimlikle gidilir mi?", "a": "Hayır. Bosna-Hersek Türk vatandaşlarına pasaportla 90 gün vizesizdir. Kimlik kartıyla giriş 2022'de duyurulduysa da yürürlüğe girmedi; giriş için pasaport gerekir.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-05", "p": ["TR"] }],
-    "RS": [{ "q": "Sırbistan'a kimlikle gidilir mi?", "a": "Hayır. Sırbistan Türk vatandaşlarına pasaportla 90 gün vizesizdir. 2022'de imzalanan kimlik kartıyla seyahat protokolü henüz yürürlüğe girmedi; giriş için pasaport gerekir.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-05", "p": ["TR"] }]
+    "RS": [{ "q": "Sırbistan'a kimlikle gidilir mi?", "a": "Hayır. Sırbistan Türk vatandaşlarına pasaportla 90 gün vizesizdir. 2022'de imzalanan kimlik kartıyla seyahat protokolü henüz yürürlüğe girmedi; giriş için pasaport gerekir.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-05", "p": ["TR"] }],
+    "KZ": [
+      { "q": "Kazakistan'a kimlikle gidilir mi?", "a": "Hayır. Türk vatandaşları Kazakistan'a pasaportla gider ve her 180 günde 90 güne kadar vizesiz kalabilir. Dışişleri Bakanlığı'na göre kimlik kartıyla girilebilen ülkeler Azerbaycan, Gürcistan, KKTC ve Ukrayna'dır; Kazakistan bunlar arasında değildir.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-06", "p": ["TR"] },
+      { "q": "Kazakistan'a gitmeden önce elektronik izin (QazETA) almak gerekiyor mu?", "a": "1 Kasım 2026'dan itibaren Türk vatandaşlarından seyahatten en geç 72 saat önce ücretsiz elektronik izin (QazETA) başvurusu yapmaları isteniyor; izin 1 Temmuz 2027'den itibaren zorunlu olacak. 16 yaşından küçükler ve 65 yaşından büyükler muaftır. Vizesiz 90 gün kuralı değişmedi.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-06", "p": ["TR"] }
+    ],
+    "UZ": [
+      { "q": "Özbekistan'a kimlikle gidilir mi?", "a": "Hayır. Türk vatandaşları Özbekistan'a pasaportla 30 güne kadar vizesiz girer; kimlik kartıyla giriş yoktur. 3 günden uzun kalışta 3 gün içinde otelden geçici ikamet belgesi alınmalı (evde kalınıyorsa kayıt yaptırılmalı) ve çıkışta gösterilmelidir; aksi hâlde para cezası uygulanır.", "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa", "h": "T.C. Dışişleri Bakanlığı", "d": "2026-11-06", "p": ["TR"] }
+    ]
   },
   "en": {}, "de": {}, "es": {}, "ru": {}
 }
