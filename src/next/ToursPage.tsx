@@ -5,6 +5,7 @@ import { Icon } from './Icon';
 import { Picks, type PickItem } from './Picks';
 import { TOURS, toursPath, routeName, PACKAGES, TOUR_REGIONS, LIVE, tourRadarLink, type TourRegion } from '../data/tours';
 import { LiveTours } from './LiveTours';
+import { TourFlightAdd } from './TourFlightAdd';
 import { AdTag } from './ui';
 import { stay22, tpLinks, gygLink, gygSearch } from '../data/tpPartners';
 import { getOptimizedImageUrl } from '../data/countryVisuals';
@@ -120,8 +121,8 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                     </a>
                     <span className="vz-ad-line"><AdTag /></span>
                     {other.length > 0 && <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:')} items={other} k={p.id} />}
+                    <TourFlightAdd id={p.id} from={fromHub} to={(GEO_DATA[p.code]?.mainHub || '').split('/')[0]} days={p.days} />
                     <div className="vz-tour-links">
-                      <a href={tpLinks.flights(fromHub, (GEO_DATA[p.code]?.mainHub || "").split("/")[0])} target="_blank" rel="noopener noreferrer sponsored"><Icon name="plane" size={16} /> {l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Билеты')}</a>
                       {p.code !== passport && <button type="button" onClick={() => onOpenCountry(p.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд')}</button>}
                       <button type="button" onClick={() => share(p, `${p.name[i]} · ${p.days} · ${routeName(p.route, language)}`)}><Icon name="share" size={16} /> {copied === p.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</button>
                     </div>

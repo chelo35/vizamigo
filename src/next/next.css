@@ -1126,3 +1126,15 @@ html.dark .vz-fcal-day.lo { background: rgba(22,163,74,0.15); }
 .vz-gtable { max-width: 100%; -webkit-overflow-scrolling: touch; }
 .vz-gtable td { font-size: 13.5px; line-height: 1.4; }
 @media (max-width: 520px) { .vz-gtable table { min-width: 560px; } }
+
+/* Tura uçuş ekle */
+.vz-tour-fly { display: grid; gap: 6px; margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: var(--rd-sea-tint, #eef8f7); }
+.vz-tour-fly .vz-tour-links { border-top: 0; padding-top: 0; }
+.vz-tour-fly .vz-tour-links a { background: var(--rd-card, #fff); margin-top: 0; }
+.vz-tour-fly-h { margin: 0; display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 14px; color: var(--rd-sea-ink, #0b4f4a); }
+.vz-tour-fly-s { margin: 0; font-size: 12.5px; color: var(--rd-muted, #5b6b70); }
+.vz-tour-fly-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; }
+.vz-tour-fly-row input { font: inherit; padding: 4px 8px; border-radius: 8px; border: 1px solid var(--rd-line, #d5e3e5); background: var(--rd-card, #fff); color: inherit; }
+html.dark .vz-tour-fly { background: rgba(45, 212, 191, 0.08); }
+html.dark .vz-tour-fly-h { color: #c9f3ec; }
+html.dark .vz-tour-fly .vz-tour-links a, html.dark .vz-tour-fly-row input { background: rgba(255, 255, 255, 0.06); }
