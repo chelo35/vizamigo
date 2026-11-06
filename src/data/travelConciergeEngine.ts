@@ -17,7 +17,7 @@
 import { capitalName } from './capitalNames';
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
-import { TP, tpLinks, LOCKED, gygSearch, tourRadarLink, type TpId } from './tpPartners';
+import { TP, tpLinks, LOCKED, gygSearch, tourRadarLink, RAYNA_COUNTRIES, type TpId } from './tpPartners';
 
 export type ConciergeStageId = 'flights' | 'accommodation' | 'transit' | 'activities' | 'essentials';
 
@@ -432,6 +432,18 @@ export function getCountryConciergePlan(
       tEn: `Compare rental companies across ${countryNameEn}; free-cancellation options`,
       cTr: 'Araç kirala', cEn: 'Rent a car'
     }, undefined, 'coral'),
+    node('avitovip', 'transit', 3, tpLinks.avitovip(), {
+      bTr: 'VIP transfer', bEn: 'VIP transfer',
+      tTr: `${mainHub} havalimanından otele önceden ödenen özel araçla transfer`,
+      tEn: `Pre-booked private car from ${mainHub} airport to your hotel`,
+      cTr: 'Transfer fiyatı al', cEn: 'Get a transfer price'
+    }, undefined, 'slate'),
+    node('woopdrive', 'transit', 3, tpLinks.woopdrive(), {
+      bTr: 'Araç kiralama', bEn: 'Car rental',
+      tTr: 'Kiralık araç fiyatlarını karşılaştır; havalimanında teslim',
+      tEn: 'Compare rental car prices with airport pick-up',
+      cTr: 'Fiyatları gör', cEn: 'See prices'
+    }, undefined, 'coral'),
     node('localrent', 'transit', 4, tpLinks.localrent(), {
       bTr: 'Yerel kiralama', bEn: 'Local rentals',
       tTr: 'Yerel firmalardan depozitosuz veya kartsız araç kiralama seçenekleri',
@@ -445,6 +457,14 @@ export function getCountryConciergePlan(
   // 4. TUR, MÜZE VE AKTİVİTE
   // ============================================================================
   const activityPartnersRaw: ConciergePartnerNode[] = [
+    ...(RAYNA_COUNTRIES.has(code)
+      ? [node('raynatours', 'activities', 1, tpLinks.raynatours(), {
+          bTr: 'Çöl safarisi ve turlar', bEn: 'Desert safaris & tours',
+          tTr: `${countryNameTr} için çöl safarisi, şehir turları, tekne turları ve giriş biletleri`,
+          tEn: `Desert safaris, city tours, cruises and attraction tickets in ${countryNameEn}`,
+          cTr: 'Turlara bak', cEn: 'Browse tours'
+        }, undefined, 'amber')]
+      : []),
     node('getyourguide', 'activities', 1, gygSearch(countryNameEn, `country_${code.toLowerCase()}`), {
       bTr: 'Ücretsiz iptal', bEn: 'Free cancellation',
       tTr: `${countryNameTr} turları, müze biletleri ve günübirlik geziler`,
@@ -543,6 +563,20 @@ export function getCountryConciergePlan(
       tEn: 'Flight delayed, cancelled or bag lost? Claim your compensation',
       cTr: 'Tazminat sorgula', cEn: 'Check compensation'
     }, undefined, 'amber'),
+    node('compensair', 'essentials', 4, tpLinks.compensair(), {
+      bTr: 'Kazanamazsan ücret yok', bEn: 'No win, no fee',
+      tTr: 'Rötar, iptal veya aktarma kaçırma tazminatını ikinci bir şirketle de kontrol et',
+      tEn: 'Check delay, cancellation or missed-connection compensation with a second service',
+      cTr: 'Uçuşunu kontrol et', cEn: 'Check your flight'
+    }, undefined, 'teal'),
+    ...(isEurope
+      ? [node('lennuabi', 'essentials', 6, tpLinks.lennuabi(), {
+          bTr: 'AB tazminatı', bEn: 'EU compensation',
+          tTr: 'Avrupa uçuşlarında rötar ve iptal için 600 €’ya kadar tazminat talebi',
+          tEn: 'Claim up to €600 for delayed or cancelled European flights',
+          cTr: 'Talep oluştur', cEn: 'Start a claim'
+        }, undefined, 'slate')]
+      : []),
     node('radicalstorage', 'essentials', 5, tpLinks.radicalStorage(), {
       bTr: 'Bavul emanet', bEn: 'Luggage storage',
       tTr: 'Otele girmeden ya da çıkıştan sonra şehirde bavulunu güvenle bırak',

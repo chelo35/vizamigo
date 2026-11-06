@@ -2,7 +2,7 @@
  * Fenomen (iş ortağı) bağlantıları: vizamigo.com/...?ref=gezengenc
  * - Kod 30 gün tarayıcıda saklanır (son tıklanan bağlantı geçerli).
  * - Ziyaretçi bir ortak bağlantısına tıklayınca kod, ağın alt kimlik alanına eklenir:
- *   Daisycon → ws, Awin → clickref, Stay22 → campaign (sonuna "-r-kod"), GetYourGuide (Stay22) → cmp.
+ *   Daisycon → ws, Awin → clickref, Admitad (/g/… bağlantıları) → subid, Stay22 → campaign (sonuna "-r-kod"), GetYourGuide (Stay22) → cmp.
  * - Raporlarda satışlar koda göre ayrılır; komisyonun payı aylık hesaplanır.
  * Desteklenmeyen: VisaHQ portalı ve Travelpayouts Drive'ın kendi çevirdiği bağlantılar.
  */
@@ -57,6 +57,9 @@ export function tagRef(url: string, ref = currentRef()): string {
     u.searchParams.set('ws', tag);
   } else if (is('awin1.com')) {
     u.searchParams.set('clickref', tag);
+  } else if (/^\/g\/[a-z0-9]{20,}\/?$/.test(u.pathname)) {
+    // Admitad: her programın kendi kısa alan adı var, yol biçimi aynı
+    u.searchParams.set('subid', tag);
   } else if (is('stay22.com')) {
     const c = u.searchParams.get('campaign') || 'vizamigo_site';
     if (!c.includes(tag)) u.searchParams.set('campaign', `${c}-${tag}`.slice(0, 100));

@@ -51,6 +51,10 @@ export type TpId =
   | 'gigsky'
   | 'drimsim'
   | 'compensair'
+  | 'lennuabi'
+  | 'avitovip'
+  | 'woopdrive'
+  | 'raynatours'
   | 'hotelscom'
   | 'kayak'
   | 'bookingcars'
@@ -101,7 +105,12 @@ export const TP: Record<TpId, TpBrand> = {
   kkday: { name: 'KKday', domain: 'kkday.com', rate: '1–3%' },
   gigsky: { name: 'GigSky', domain: 'gigsky.com', rate: '20%' },
   drimsim: { name: 'Drimsim', domain: 'drimsim.com', rate: '€8' },
+  // Admitad (reklam alanı 3019244): bağlantılar /g/<kod>/ biçiminde, ulp= ile derin bağlantı
   compensair: { name: 'Compensair', domain: 'compensair.com', rate: '€5–12' },
+  lennuabi: { name: 'Lennuabi', domain: 'lennuabi.com', rate: '€20' },
+  avitovip: { name: 'AvitoVIP', domain: 'avitovip.com', rate: '$3' },
+  woopdrive: { name: 'WoopDrive', domain: 'woopdrive.com', rate: '4.2–6%' },
+  raynatours: { name: 'Rayna Tours', domain: 'raynatours.com', rate: '4.8–8%' },
   safetywing: { name: 'SafetyWing', domain: 'safetywing.com', rate: '10%' },
   hellosafe: { name: 'HelloSafe', domain: 'hellosafe.com', rate: '10–20%' },
   tourradar: { name: 'TourRadar', domain: 'tourradar.com', rate: 'TourRadar' },
@@ -225,6 +234,14 @@ export function routeLink(url: string): string {
 /** Markanın kendi simgesi (64px) */
 export const tpLogo = (id: TpId): string => `https://www.google.com/s2/favicons?domain=${TP[id].domain}&sz=64`;
 
+const ADMITAD_IDS: Record<string, TpId> = {
+  '5k6m2qm7z5e40c2b51fb90465e1588': 'compensair',
+  '913bhutj0ze40c2b51fba8b9cbb737': 'lennuabi',
+  '02swkf5uv6e40c2b51fbbabf13962c': 'avitovip',
+  ffzns2ktmfe40c2b51fbd80355ec70: 'woopdrive',
+  ofc53p8nise40c2b51fbe94db72a90: 'raynatours'
+};
+
 /** Bir bağlantının hangi Travelpayouts markasına gittiğini bulur (logo göstermek için) */
 export function tpIdFromUrl(url: string | undefined): TpId | undefined {
   if (!url) return undefined;
@@ -234,6 +251,8 @@ export function tpIdFromUrl(url: string | undefined): TpId | undefined {
   } catch {
     return undefined;
   }
+  const adm = ADMITAD_IDS[url.match(/\/g\/([a-z0-9]{20,})/)?.[1] || ''];
+  if (adm) return adm;
   if (host === 'stay22.com') {
     const prov = url.match(/\/allez\/([a-z]+)/)?.[1];
     return prov === 'hotelscom' ? 'hotelscom' : prov && prov in TP ? (prov as TpId) : 'booking';
@@ -261,6 +280,11 @@ const EU_RAIL = new Set([
   'AT', 'BE', 'BG', 'CH', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IT', 'LT', 'LU', 'LV', 'NL',
   'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SI', 'SK', 'BA', 'ME', 'MK', 'AL', 'TR', 'US', 'CA', 'BR', 'MX'
 ]);
+
+/** Admitad bağlantısı; ulp verilirse markanın o sayfasına gider. */
+const admitad = (base: string, ulp?: string) => (ulp ? `${base}?ulp=${encodeURIComponent(ulp)}` : base);
+/** Rayna Tours'un tur sattığı ülkeler (BAE, Umman, Suudi Arabistan, Singapur, Tayland, Malezya, Endonezya) */
+export const RAYNA_COUNTRIES = new Set(['AE', 'OM', 'SA', 'SG', 'TH', 'MY', 'ID']);
 
 /** Ülkeye ve hub havalimanına göre hazır arama bağlantıları */
 export const tpLinks = {
@@ -297,7 +321,12 @@ export const tpLinks = {
   kkday: () => `https://www.kkday.com/`,
   gigsky: () => `https://www.gigsky.com/`,
   drimsim: () => `https://drimsim.com/`,
-  compensair: () => `https://www.compensair.com/`,
+  // Compensair ana sayfası doğrudan açılınca site hatalı yönlendiriyor; ulp ile ana sayfaya gider
+  compensair: () => admitad('https://dbnua.com/g/5k6m2qm7z5e40c2b51fb90465e1588/', 'https://www.compensair.com/'),
+  lennuabi: () => admitad('https://cafxq.com/g/913bhutj0ze40c2b51fba8b9cbb737/'),
+  avitovip: () => admitad('https://kjuzv.com/g/02swkf5uv6e40c2b51fbbabf13962c/'),
+  woopdrive: () => admitad('https://dkfrh.com/g/ffzns2ktmfe40c2b51fbd80355ec70/'),
+  raynatours: () => admitad('https://xpuvo.com/g/ofc53p8nise40c2b51fbe94db72a90/'),
   safetywing: () => SAFETYWING,
   // HelloSafe (Awin, yayıncı 3138284): sigorta karşılaştırma, 20+ dil
   hellosafe: () => 'https://www.awin1.com/cread.php?awinmid=128757&awinaffid=3138284&clickref=vizamigo',

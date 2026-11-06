@@ -11,7 +11,7 @@ import type { SupportedLanguage } from '../i18n/types';
 import { AdTag, VisaBadge } from './ui';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 import { toursPath, TOURS } from '../data/tours';
@@ -119,6 +119,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   ];
   const carPicks: PickItem[] = [
     { id: 'economybookings', url: tpLinks.economybookings() },
+    { id: 'woopdrive', url: tpLinks.woopdrive() },
     { id: 'bookingcars', url: s22c.booking },
     { id: 'expediacars', url: s22c.expedia },
     { id: 'localrent', url: tpLinks.localrent() },
@@ -128,12 +129,14 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   ];
   const transferPicks: PickItem[] = [
     { id: 'kiwitaxi', url: tpLinks.kiwitaxi() },
+    { id: 'avitovip', url: tpLinks.avitovip() },
     ...(EU.has(to) ? [{ id: 'welcomepickups', url: tpLinks.welcomePickups() }] : []),
     { id: 'gettransfer', url: tpLinks.gettransfer() },
     { id: 'intui', url: 'https://intui.travel/' }
   ];
   const [tourCity, setTourCity] = useState(() => (TOURS.some((x) => x.search === city) ? city : 'Bangkok'));
   const tourPicks: PickItem[] = [
+    ...(RAYNA_COUNTRIES.has(TOURS.find((x) => x.search === tourCity)?.code || '') ? [{ id: 'raynatours' as const, url: tpLinks.raynatours() }] : []),
     { id: 'klook', url: tpLinks.tours(tourCity) },
     { id: 'getyourguide', url: (() => { const t = TOURS.find((x) => x.search === tourCity); return t ? gygLink(t.gyg, 'quick_tours') : stay22('getyourguide', { address: tourCity, campaign: 'quick_tours' }); })() },
     { id: 'tiqets', url: tpLinks.tiqets() },

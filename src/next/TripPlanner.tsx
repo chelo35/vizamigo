@@ -11,7 +11,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES } from '../data/tpPartners';
 import { TOURS } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 
@@ -206,6 +206,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
   ];
   const carPicks: PickItem[] = [
     { id: 'economybookings', url: tpLinks.economybookings() },
+    { id: 'woopdrive', url: tpLinks.woopdrive() },
     { id: 'bookingcars', url: s22c.booking },
     { id: 'expediacars', url: s22c.expedia },
     { id: 'localrent', url: tpLinks.localrent() },
@@ -364,6 +365,8 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               <Row key={`g-${s.to}`} lead={<PartnerLogo id="getyourguide" />} title={l('Günübirlik turlar', 'Day trips', 'Tagesausflüge', 'Excursiones', 'Однодневные туры')} sub={`GetYourGuide · ${city}`} href={(() => { const t = TOURS.find((x) => x.code === s.to); return t ? gygLink(t.gyg, 'planner') : stay22('getyourguide', { address: city, campaign: 'planner' }); })()} />
               <Row lead={<PartnerLogo id="radicalstorage" />} title={l('Bagaj emaneti', 'Luggage storage', 'Gepäckaufbewahrung', 'Consigna', 'Камера хранения')} sub={l('Radical Storage · şehirde çantanı bırak', 'Radical Storage · drop your bags in town', 'Radical Storage · Gepäck abgeben', 'Radical Storage · deja tu equipaje', 'Radical Storage · оставьте багаж')} href={tpLinks.radicalStorage()} />
               <Row lead={<PartnerLogo id="airhelp" />} title={l('Uçuş rötar ve iptal tazminatı', 'Flight delay compensation', 'Entschädigung bei Verspätung', 'Compensación por retraso', 'Компенсация за задержку')} sub={l('AirHelp · 3 saat+ rötarda 600 €’ya kadar', 'AirHelp · up to €600 for 3h+ delays', 'AirHelp · bis 600 € ab 3 Std.', 'AirHelp · hasta 600 € por +3 h', 'AirHelp · до 600 € при задержке 3+ ч')} href={tpLinks.airhelp()} />
+              <Row lead={<PartnerLogo id="compensair" />} title={l('Tazminat için ikinci seçenek', 'Second option for compensation', 'Zweite Option für Entschädigung', 'Segunda opción de compensación', 'Ещё один сервис компенсаций')} sub={l('Compensair · kazanamazsan ücret yok', 'Compensair · no win, no fee', 'Compensair · keine Gebühr ohne Erfolg', 'Compensair · sin éxito, sin coste', 'Compensair · без выплаты — без комиссии')} href={tpLinks.compensair()} />
+              {RAYNA_COUNTRIES.has(s.to) && <Row key={`r-${s.to}`} lead={<PartnerLogo id="raynatours" />} title={l('Çöl safarisi, şehir turları ve biletler', 'Desert safaris, city tours & tickets', 'Wüstensafaris, Stadttouren & Tickets', 'Safaris, tours y entradas', 'Сафари, экскурсии и билеты')} sub={`Rayna Tours · ${city}`} href={tpLinks.raynatours()} />}
             </List>
           </section>
 
