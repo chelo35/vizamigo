@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { getExtraFaq } from '../data/extraFaq';
 import { ruIn, ruOf } from '../data/ruCases';
-import { useI18n } from '../data/i18n';
+import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Bullets, Card, Chip, Chips, Flag, LinkBtn, List, Row, SecHead, Stat, Tags, Tile, TileGrid, VisaBadge, visaTone, Empty, Field, fmtNum, fmtPair } from './ui';
 import { stayDays } from './country';
@@ -19,6 +19,7 @@ import { OfferCard } from './OfferCard';
 import { tpIdFromUrl } from '../data/tpPartners';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
+import { capitalName } from '../data/capitalNames';
 import { getCountryGeography, GLOBAL_CURRENCIES } from '../data/countryGeography';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { getCountryConciergePlan } from '../data/travelConciergeEngine';
@@ -45,7 +46,7 @@ interface Props {
 
 type L3 = { tr: string; en: string; de: string };
 const usd = (v: string | number | undefined) => (v === undefined || v === '' ? '—' : /\$/.test(String(v)) ? String(v) : `$${v}`);
-const pick3 = (o: L3 | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : o.en || o.tr) : '');
+const pick3 = (o: (L3 & { es?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
 
 function useCountryTimeTz(code: string) {
   const geo = GEO_DATA[code];
@@ -202,7 +203,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, [code]);
 
-  const note = detail ? (language === 'tr' ? detail.n : language === 'de' ? detail.nDe || detail.nEn || detail.n : detail.nEn || detail.n) : '';
+  const note = detail ? (language === 'tr' ? detail.n : language === 'de' ? detail.nDe || detail.nEn || detail.n : lText(language, detail.n, detail.nEn || detail.n, detail.nDe)) : '';
   const emergency = {
     police: verified?.emergency.police.value || insights.safety.emergencyNumbers.police,
     ambulance: verified?.emergency.ambulance.value || insights.safety.emergencyNumbers.ambulance,
@@ -231,8 +232,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                 {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with a ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда ${ruIn(name, 'acc')}. Проверьте официальный источник.`)}</p>}
                 {detail?.u && (
                   <div className="vz-row-flex">
-                    <LinkBtn href={detail.u} small>{detail.h || l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник')}</LinkBtn>
-                    {detail.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Doğrulama', 'Checked', 'Geprüft', 'Verificado', 'Проверено')}: {detail.d}</span>}
+                    <LinkBtn href={detail.u} small>{(detail.h && sourceHost(detail.h, language)) || l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник')}</LinkBtn>
+                    {detail.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Doğrulama', 'Checked', 'Geprüft', 'Verificado', 'Проверено')}: {checkedLabel(detail.d, language)}</span>}
                   </div>
                 )}
               </Card>
@@ -639,7 +640,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with a ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
             <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.') : answer}</p>
             {passport !== code && (detail?.d ? (
-              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {detail.d}{detail.h ? ` · ${detail.h}` : ''}</span>
+              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {checkedLabel(detail.d, language)}{detail.h ? ` · ${sourceHost(detail.h, language)}` : ''}</span>
             ) : (
               <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Veri: Passport Index (Mart 2026) ve resmî kaynak kontrolleri (Kasım 2026). Vizamigo resmî bir kurum değildir; seyahatten önce resmî kaynaktan teyit et.', 'Data: Passport Index (March 2026) plus official-source checks (November 2026). Vizamigo is not a government site; confirm with the official source before travel.', 'Daten: Passport Index (März 2026) und Prüfung amtlicher Quellen (November 2026). Vor der Reise offiziell bestätigen.', 'Datos: Passport Index (marzo 2026) y revisión de fuentes oficiales (noviembre 2026). Confírmalo antes de viajar.', 'Данные: Passport Index (март 2026) и проверка официальных источников (ноябрь 2026). Уточните перед поездкой.')}</span>
             ))}
@@ -733,13 +734,28 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
 };
 
 /** Ülkenin dünyadaki yeri: gerçek harita (Google), pasaport ülkesinden kesik çizgi; açılmazsa nokta harita. */
+const TR_MONTHS = ['ocak', 'şubat', 'mart', 'nisan', 'mayıs', 'haziran', 'temmuz', 'ağustos', 'eylül', 'ekim', 'kasım', 'aralık'];
+/** "Ekim 2026" gibi Türkçe ay-yıl etiketini sayfa diline çevirir. */
+function checkedLabel(d: string, lang: string): string {
+  if (!d || lang === 'tr') return d;
+  const m = d.trim().match(/^(\p{L}+)\s+(\d{4})$/u);
+  const i = m ? TR_MONTHS.indexOf(m[1].toLocaleLowerCase('tr')) : -1;
+  if (i < 0) return d;
+  return new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' }).format(new Date(Number(m![2]), i, 1));
+}
+/** Kaynak etiketindeki Türkçe açıklamayı (parantez içi) diğer dillerde gösterme: alan adı yeterli. */
+function sourceHost(h: string, lang: string): string {
+  if (lang === 'tr') return h;
+  return h.replace(/\s*\([^)]*\)/g, '').replace(/ ve /g, ' · ').trim();
+}
+
 const CountryMap: React.FC<{ code: string; home: string }> = ({ code, home }) => {
   const { l, language } = useI18n();
   const g = GEO_DATA[code];
   const h = GEO_DATA[home];
   const points = React.useMemo<MapPoint[]>(() => {
     if (!g) return [];
-    const p: MapPoint[] = [{ id: code, lat: g.lat, lng: g.lng, color: '#D9534F', big: true, title: `${getCountryName(code, language)} · ${g.capital}`, tag: g.capital }];
+    const p: MapPoint[] = [{ id: code, lat: g.lat, lng: g.lng, color: '#D9534F', big: true, title: `${getCountryName(code, language)} · ${capitalName(code, language, g.capital)}`, tag: capitalName(code, language, g.capital) }];
     if (h && home !== code) p.unshift({ id: `home-${home}`, lat: h.lat, lng: h.lng, color: '#1095AE', title: getCountryName(home, language), tag: getCountryName(home, language) });
     return p;
   }, [code, home, language]); // eslint-disable-line react-hooks/exhaustive-deps

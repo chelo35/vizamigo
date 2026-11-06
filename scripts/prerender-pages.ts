@@ -15,7 +15,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-import { applyDict } from './data-i18n';
+import { applyDict, loadDict, makeSubstTranslator, mapStrings, DATA_LANGS } from './data-i18n';
+import { buildExtras } from './i18n-extras';
 const DIST = path.resolve(__dirname, '../dist');
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -56,9 +57,23 @@ async function main() {
   };
   const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
   const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
-  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups, guideIdsFor } = await import('../src/data/guides');
+  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups, guideIdsFor, sourceLabel } = await import('../src/data/guides');
 
   const { GEO_DATA } = await import('../src/data/geoData');
+  // İspanyolca/Rusça/Almanca otomatik çeviri sözlükleri tarayıcıda sonradan yüklenir; derlemede baştan yükle
+  {
+    const { loadLanguageDictionary } = await import('../src/i18n');
+    for (const l of ['de', 'es', 'ru'] as const) await loadLanguageDictionary(l);
+  }
+  const { capitalName } = await import('../src/data/capitalNames');
+  // Türkçe dışı sayfalarda Türkçe kalmış veri metinlerini çevir: sözlük (cümle içi parçalar dahi) + başkent adları
+  const SUBST: Record<string, (s: string) => string> = {};
+  const DICTS: Record<string, Record<string, string>> = {};
+  for (const l of DATA_LANGS) {
+    DICTS[l] = loadDict(path.resolve(DIST, '..'), l);
+    SUBST[l] = makeSubstTranslator(DICTS[l], await buildExtras(l));
+  }
+  const trOut = (lang: string, html: string) => (SUBST[lang] ? SUBST[lang](html) : html);
   const { getCountryName, countryToRegion, getRegionName } = await import('../src/data/passportData');
   const { getCountrySeoMeta } = await import('../src/utils/schemaGenerator');
   const { buildLocalizedPath, buildAbsoluteLocalizedUrl, getHreflangAlternatesForRoute, CORE_SEO_LANGUAGES, BASE_URL } = await import('../src/utils/seoRouter');
@@ -126,6 +141,13 @@ async function main() {
     `<h1 class="vzs-h1">${esc(main)}${rest ? `<span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> — ${esc(rest)}</span>` : ''}</h1>`;
   const lead = (t: string) => `<p class="vzs-lead">${esc(t)}</p>`;
 
+  const TPL_I18N: Record<string, { app: string; site: string; ogAlt: string; kw: string }> = {
+    en: { app: 'Visa-free access worldwide, passport comparison, Schengen 90/180-day calculator, consular emergency guide and travel safety updates.', site: 'Passport, Visa & Global Travel Guide', ogAlt: 'Passport & Visa Assistant', kw: 'visa requirements, visa-free countries, passport, Schengen 90/180 calculator, lost passport abroad, consular emergency, digital nomad visa, travel guide' },
+    de: { app: 'Visumfreie Einreise weltweit, Reisepass-Vergleich, Schengen-90/180-Tage-Rechner, Notfallhilfe der Konsulate und Reisesicherheit.', site: 'Reisepass-, Visa- & Reiseführer weltweit', ogAlt: 'Reisepass- & Visa-Assistent', kw: 'Einreisebestimmungen, Visum, visumfreie Länder, Reisepass, Schengen 90/180 Rechner, Reisepass verloren, Konsulat Notfall, Digital-Nomaden-Visum, Reiseführer' },
+    es: { app: 'Viajes sin visado en todo el mundo, comparación de pasaportes, calculadora Schengen 90/180 días, guía consular de emergencia y seguridad de viaje.', site: 'Guía mundial de pasaportes, visados y viajes', ogAlt: 'Asistente de pasaportes y visados', kw: 'requisitos de visado, países sin visa, pasaporte, calculadora Schengen 90/180, pasaporte perdido, emergencia consular, visa de nómada digital, guía de viaje' },
+    ru: { app: 'Безвизовые страны по всему миру, сравнение паспортов, калькулятор Шенгена 90/180 дней, консульская помощь и безопасность поездок.', site: 'Паспорта, визы и путешествия по всему миру', ogAlt: 'Помощник по паспортам и визам', kw: 'визовые требования, безвизовые страны, паспорт, калькулятор Шенгена 90/180, потеря паспорта, консульская помощь, виза цифрового кочевника, путеводитель' }
+  };
+
   type Opts = { lang: string; canonical: string; alts: { hreflang: string; href: string }[]; title: string; desc?: string; body?: string; nav?: string; noindex?: boolean; head?: string; hero?: string; ogImage?: string; ogAlt?: string };
   const build = ({ lang, canonical, alts, title, desc = '', body = '', nav = '', noindex, head = '', hero = '', ogImage, ogAlt }: Opts) => {
     let html = tpl;
@@ -135,6 +157,15 @@ async function main() {
       html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${ogImage}$2`);
       html = html.replace(/\s*<meta property="og:image:(width|height)" content="[^"]*" \/>/g, '');
       if (ogAlt) html = html.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, `$1${esc(ogAlt)}$2`);
+    }
+    if (lang !== 'tr') {
+      // şablonun Türkçe site tanımlarını sayfa diline çevir (JSON-LD ve paylaşım görseli metni)
+      const T = TPL_I18N[lang] || TPL_I18N.en;
+      html = html.replace('"Küresel vize serbestisi, çifte pasaport kıyaslama, Schengen 90/180 gün sayacı, acil durum konsolosluk rehberi ve seyahat güvenlik istihbaratı."', JSON.stringify(T.app));
+      html = html.replace('"Akıllı Pasaport, Vize & Küresel Seyahat Rehberi"', JSON.stringify(T.site));
+      html = html.replace('content="Vizamigo - Akıllı Pasaport & Vize Asistanı"', `content="${esc('Vizamigo - ' + T.ogAlt)}"`);
+      html = html.replace(/(<meta name="keywords" content=")[^"]*(")/, `$1${esc(T.kw)}$2`);
+      if (!desc) desc = T.app;
     }
     if (head) html = html.replace('</head>', `    ${head}\n  </head>`);
     html = html.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`);
@@ -162,8 +193,20 @@ async function main() {
       html = html.replace(/<section class="vzs-hero">[\s\S]*?<div class="vzs-sea"><\/div><\/section>/, `${hero}${nav}`);
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
     } else if (nav) html = html.replace('<div class="vzs-sea"></div></section>', `<div class="vzs-sea"></div></section>${nav}`);
+    if (lang !== 'tr' && !body && !hero) {
+      // ana sayfanın sabit karşılama metni: tarayıcıdaki küçük betiği beklemeden sayfa dilinde olsun
+      const m = html.match(/var t = (\{ en: \[[\s\S]*?\] \})\[m && m\[1\]\];/);
+      try {
+        const t = m ? (Function(`return ${m[1]}`)() as Record<string, string[]>)[lang] : null;
+        if (t) {
+          html = html.replace(/(<span class="vzs-eye" id="vzs-eye">)[^<]*(<\/span>)/, `$1${esc(t[0])}$2`);
+          html = html.replace(/(<h1 class="vzs-h1" id="vzs-h1">)[^<]*(<\/h1>)/, `$1${esc(t[1])}$2`);
+          html = html.replace(/(<p class="vzs-lead" id="vzs-lead">)[^<]*(<\/p>)/, `$1${esc(t[2])}$2`);
+        }
+      } catch {}
+    }
     if (noindex) html = html.replace(/(<meta name="robots" content=")[^"]*(")/, '$1noindex, follow$2');
-    return html;
+    return lang === 'tr' ? html : trOut(lang, html);
   };
   const write = (rel: string, html: string) => {
     const out = path.join(DIST, rel);
@@ -271,7 +314,7 @@ async function main() {
       const ul = (xs: string[]) => `<ul>${xs.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
       const check = c ? `<h2>${esc(c.title)}</h2><h3>${esc(c.commonTitle)}</h3>${ul(c.common)}${[...c.statuses, ...c.purposes].map((x) => `<h3>${esc(x.label)}</h3>${ul(x.docs)}`).join('')}<p>${esc(c.note)}</p>` : '';
       const faq = `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`;
-      const src = `<p>${meta.sources.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(x.label)}</a>`).join(' · ')} · ${esc(meta.checked)}</p>`;
+      const src = `<p>${meta.sources.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(sourceLabel(x.label, lang))}</a>`).join(' · ')} · ${esc(meta.checked)}</p>`;
       const GL: Record<string, string[]> = { tr: ['Kimlikle gidilebilen ülkeler', 'Vizesiz ülkeler', 'Kapıda vize', 'E-vize', 'Elektronik izin (ETA)'], en: ['ID card accepted', 'Visa-free countries', 'Visa on arrival', 'eVisa', 'Travel authorisation (ETA)'], de: ['Mit Personalausweis', 'Visumfreie Länder', 'Visum bei Ankunft', 'eVisum', 'Reisegenehmigung (ETA)'], es: ['Con DNI', 'Países sin visado', 'Visado a la llegada', 'eVisa', 'Autorización (ETA)'], ru: ['По ID-карте', 'Без визы', 'Виза по прилёте', 'Электронная виза', 'Разрешение ETA'] };
       const DAY: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
       const gr = guideGroups(id, lang);
@@ -292,10 +335,10 @@ async function main() {
 
     // turlar sayfası (sosyal medyada paylaşılacak): /tr/turlar, /en/tours …
     {
-      const { TOURS, TOURS_SLUG, toursPath, PACKAGES } = await import('../src/data/tours');
+      const { TOURS, TOURS_SLUG, toursPath, PACKAGES, routeName } = await import('../src/data/tours');
       const ix = ({ tr: 0, en: 1, de: 2, es: 3, ru: 4 } as Record<string, number>)[lang] ?? 1;
       const T = ({ tr: ['Paket turlar ve aktiviteler: Tayland, Balkanlar, Mısır, İtalya, Türkiye', 'Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlasında tur, müze bileti ve günübirlik geziler. Ücretsiz iptalli turları karşılaştır.'], en: ['Multi-day tours & activities: Thailand, the Balkans, Egypt, Italy, Türkiye', 'Tours, museum tickets and day trips in Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more. Compare tours with free cancellation.'], de: ['Touren & Aktivitäten: Thailand, Istanbul, Ägypten, Italien, Balkan', 'Touren, Museumstickets und Tagesausflüge in Thailand, Istanbul, Kappadokien, Ägypten, Italien, auf dem Balkan, in Dubai und mehr.'], es: ['Tours y actividades: Tailandia, Estambul, Egipto, Italia, los Balcanes', 'Tours, entradas y excursiones en Tailandia, Estambul, Capadocia, Egipto, Italia, los Balcanes, Dubái y más.'], ru: ['Экскурсии и туры: Таиланд, Стамбул, Египет, Италия, Балканы', 'Экскурсии, билеты в музеи и однодневные поездки: Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие.'] } as Record<string, [string, string]>)[lang];
-      const list = PACKAGES.map((p) => `<section id="${p.id}"><h2>${esc(p.name[ix])} (${p.days})</h2><p>${esc(p.route)}</p></section>`).join('') + TOURS.map((t) => `<section id="${t.id}"><h2>${esc(t.name[ix])}</h2><p>${esc(t.pitch[ix])}</p></section>`).join('');
+      const list = PACKAGES.map((p) => `<section id="${p.id}"><h2>${esc(p.name[ix])} (${p.days})</h2><p>${esc(routeName(p.route, lang))}</p></section>`).join('') + TOURS.map((t) => `<section id="${t.id}"><h2>${esc(t.name[ix])}</h2><p>${esc(t.pitch[ix])}</p></section>`).join('');
       write(path.join(lang, TOURS_SLUG[lang] || 'tours', 'index.html'), build({
         lang,
         canonical: `${BASE_URL}${toursPath(lang)}`,
@@ -335,9 +378,7 @@ async function main() {
     const { getCountryItinerary } = await import('../src/data/countryItineraries');
     const { getVerifiedCountryRecord } = await import('../src/data/verifiedCountryData');
     const { getCountryNomadApps } = await import('../src/data/rideAndDeliveryApps');
-    const { loadDict, DATA_LANGS } = await import('./data-i18n');
-    const dicts: Record<string, Record<string, string>> = {};
-    for (const l of DATA_LANGS) dicts[l] = loadDict(path.resolve(DIST, '..'), l);
+    const dicts = DICTS;
     const plugs: Record<string, string[]> = {};
     let files = 0;
     for (const code of allCodes) {
@@ -350,7 +391,12 @@ async function main() {
         const local = { insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) };
         const dict = dicts[lang];
         // Türkçe dışı dillerde, Türkçe kalmış metinleri sözlükten çevir (dilden bağımsız intel dahil)
-        const out = dict && Object.keys(dict).length ? { ...applyDict(local, dict), intel: applyDict(intel, dict) } : local;
+        let out = dict && Object.keys(dict).length ? { ...applyDict(local, dict), intel: applyDict(intel, dict) } : local;
+        if (lang !== 'tr' && SUBST[lang]) {
+          out = mapStrings(out, SUBST[lang]);
+          const geo = (out as { enc?: { geography?: { capital?: string } } }).enc?.geography;
+          if (geo && GEO_DATA[code]) geo.capital = capitalName(code, lang, GEO_DATA[code].capital);
+        }
         write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
         files++;
       }

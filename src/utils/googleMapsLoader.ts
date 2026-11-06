@@ -1,4 +1,5 @@
 import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
+import { getStoredLanguage } from '../i18n';
 
 export const GOOGLE_MAPS_API_KEY =
   (import.meta?.env?.VITE_GOOGLE_MAPS_API_KEY as string) ||
@@ -27,7 +28,11 @@ export function loadGoogleMaps(): Promise<void> {
   loadPromise = new Promise<void>((resolve, reject) => {
     try {
       if (!optionsSet) {
-        setOptions({ key: GOOGLE_MAPS_API_KEY, v: 'weekly' });
+        // Map labels follow the page language (/en, /de, /es, /ru; Turkish at the root),
+        // not the visitor's browser language.
+        const lang = getStoredLanguage();
+        (window as unknown as { __vzMapsLang?: string }).__vzMapsLang = lang;
+        setOptions({ key: GOOGLE_MAPS_API_KEY, v: 'weekly', language: lang });
         optionsSet = true;
       }
       // Google calls this global when the key is rejected (e.g. RefererNotAllowedMapError)

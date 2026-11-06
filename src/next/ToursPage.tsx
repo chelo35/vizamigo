@@ -3,7 +3,7 @@ import { useI18n } from '../data/i18n';
 import { Page, VisaBadge } from './ui';
 import { Icon } from './Icon';
 import { Picks, type PickItem } from './Picks';
-import { TOURS, toursPath, PACKAGES, TOUR_REGIONS, LIVE, tourRadarLink, type TourRegion } from '../data/tours';
+import { TOURS, toursPath, routeName, PACKAGES, TOUR_REGIONS, LIVE, tourRadarLink, type TourRegion } from '../data/tours';
 import { LiveTours } from './LiveTours';
 import { AdTag } from './ui';
 import { stay22, tpLinks, gygLink, gygSearch } from '../data/tpPartners';
@@ -112,7 +112,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                       <h2>{p.name[i]}</h2>
                       {p.code !== passport && <VisaBadge item={items.get(p.code) || null} />}
                     </div>
-                    <p className="vz-tour-route"><Icon name="pin" size={15} /> {p.route}</p>
+                    <p className="vz-tour-route"><Icon name="pin" size={15} /> {routeName(p.route, language)}</p>
                     {live && <LiveTours pkg={p.id} />}
                     <a className="vz-btn vz-btn-primary vz-tour-cta" href={main} target="_blank" rel="noopener noreferrer sponsored">
                       <span>{live ? l('Tüm tarihler ve turlar', 'All dates & tours', 'Alle Termine & Touren', 'Todas las fechas y tours', 'Все даты и туры') : l('Paket turları ve fiyatları gör', 'See tours & prices', 'Touren & Preise ansehen', 'Ver tours y precios', 'Туры и цены')}</span>
@@ -123,7 +123,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                     <div className="vz-tour-links">
                       <a href={tpLinks.flights(fromHub, (GEO_DATA[p.code]?.mainHub || "").split("/")[0])} target="_blank" rel="noopener noreferrer sponsored"><Icon name="plane" size={16} /> {l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Билеты')}</a>
                       {p.code !== passport && <button type="button" onClick={() => onOpenCountry(p.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд')}</button>}
-                      <button type="button" onClick={() => share(p, `${p.name[i]} · ${p.days} · ${p.route}`)}><Icon name="share" size={16} /> {copied === p.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</button>
+                      <button type="button" onClick={() => share(p, `${p.name[i]} · ${p.days} · ${routeName(p.route, language)}`)}><Icon name="share" size={16} /> {copied === p.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</button>
                     </div>
                   </div>
                 </article>

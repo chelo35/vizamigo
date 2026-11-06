@@ -1,6 +1,6 @@
 import { tpLinks } from '../data/tpPartners';
 import React, { useEffect, useMemo, useState } from 'react';
-import { useI18n } from '../data/i18n';
+import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, List, Page, Row, Segmented, Stat, Tags, Tile, TileGrid, VisaBadge, Bullets, OpenRequest, fmtNum } from './ui';
 import { CountryCard } from './country';
@@ -134,7 +134,7 @@ const PlannerView: React.FC<{ r: RouteApi; passport: string; onOpenCountry: (c: 
       if (seen.has(st.countryCode)) return;
       seen.add(st.countryCode);
       VISA_CHANGE_ALERTS.filter((x) => x.countryCode === st.countryCode && (x.impactPassport.length === 0 || x.impactPassport.includes(passport))).forEach((x) => {
-        const title = language === 'tr' ? x.title : language === 'de' ? x.titleDe || x.titleEn || x.title : x.titleEn || x.title;
+        const title = language === 'tr' ? x.title : language === 'de' ? x.titleDe || x.titleEn || x.title : lText(language, x.title, x.titleEn || x.title, x.titleDe);
         const when = language === 'tr' ? x.effectiveDate : x.effectiveDateEn || x.effectiveDate;
         out.push({ tone: x.category === 'critical' ? 'warn' : 'info', text: `${getCountryName(st.countryCode, language)} · ${when}: ${title}` });
       });

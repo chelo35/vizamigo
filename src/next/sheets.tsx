@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { useI18n } from '../data/i18n';
+import { useI18n, lText } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
 import { useModalA11y } from '../utils/useModalA11y';
 import { Icon, IconName } from './Icon';
@@ -242,9 +242,9 @@ export const AuditSheet: React.FC<{ open: boolean; onClose: () => void; onReport
   const { l, language } = useI18n();
   const [f, setF] = useState<'ALL' | 'MATCH' | 'ATTENTION'>('ALL');
   const [q, setQ] = useState('');
-  const nm = (r: (typeof AUDIT_DATABASE)[number]) => (language === 'tr' ? r.nameTr : language === 'de' ? r.nameDe : r.nameEn);
-  const st = (r: (typeof AUDIT_DATABASE)[number]) => (language === 'tr' ? r.verifiedStatusTr : language === 'de' ? r.verifiedStatusDe : r.verifiedStatusEn);
-  const nt = (r: (typeof AUDIT_DATABASE)[number]) => (language === 'tr' ? r.noteTr : language === 'de' ? r.noteDe : r.noteEn);
+  const nm = (r: (typeof AUDIT_DATABASE)[number]) => (language === 'tr' ? r.nameTr : language === 'de' ? r.nameDe : lText(language, r.nameTr, r.nameEn, r.nameDe));
+  const st = (r: (typeof AUDIT_DATABASE)[number]) => (language === 'tr' ? r.verifiedStatusTr : language === 'de' ? r.verifiedStatusDe : lText(language, r.verifiedStatusTr, r.verifiedStatusEn, r.verifiedStatusDe));
+  const nt = (r: (typeof AUDIT_DATABASE)[number]) => (language === 'tr' ? r.noteTr : language === 'de' ? r.noteDe : lText(language, r.noteTr, r.noteEn, r.noteDe));
   const list = AUDIT_DATABASE.filter((r) => f === 'ALL' || r.status === f).filter((r) => !q || norm(nm(r)).includes(norm(q)));
   return (
     <Sheet open={open} onClose={onClose} title={l('Doğrulama masası', 'Verification desk', 'Prüfpult', 'Mesa de verificación', 'Проверка правил')} icon="shield" wide>

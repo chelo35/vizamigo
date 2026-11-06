@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { loadGoogleMaps, isGoogleMapsAuthFailed } from '../utils/googleMapsLoader';
 import { WORLD_DOTS, WORLD_W, WORLD_H, project } from './worldDots';
 import { Icon } from './Icon';
+import { useI18n } from '../data/i18n';
 
 export interface MapPoint {
   id: string;
@@ -253,6 +254,7 @@ const DotMap: React.FC<{
   fitKey: string;
   interactive: boolean;
 }> = ({ points, path, ariaLabel, selectedId, focus, fitKey, interactive }) => {
+  const { l } = useI18n();
   const svgRef = useRef<SVGSVGElement>(null);
   const [size, setSize] = useState({ w: 800, h: 360 });
   useEffect(() => {
@@ -380,9 +382,9 @@ const DotMap: React.FC<{
       </svg>
       {interactive && (
         <div className="vz-map-ctrl">
-          <button type="button" onClick={() => zoomBy(1 / 1.5)} aria-label="Yakınlaştır / Zoom in"><Icon name="plus" size={16} duo={false} /></button>
-          <button type="button" onClick={() => zoomBy(1.5)} aria-label="Uzaklaştır / Zoom out"><span aria-hidden="true" style={{ fontSize: 20, lineHeight: 1 }}>−</span></button>
-          <button type="button" onClick={() => setVb(fit)} aria-label="Sığdır / Fit"><Icon name="globe" size={16} duo={false} /></button>
+          <button type="button" onClick={() => zoomBy(1 / 1.5)} aria-label={l('Yakınlaştır', 'Zoom in', 'Vergrößern', 'Acercar', 'Приблизить')}><Icon name="plus" size={16} duo={false} /></button>
+          <button type="button" onClick={() => zoomBy(1.5)} aria-label={l('Uzaklaştır', 'Zoom out', 'Verkleinern', 'Alejar', 'Отдалить')}><span aria-hidden="true" style={{ fontSize: 20, lineHeight: 1 }}>−</span></button>
+          <button type="button" onClick={() => setVb(fit)} aria-label={l('Tümünü göster', 'Fit to view', 'Alles anzeigen', 'Ver todo', 'Показать всё')}><Icon name="globe" size={16} duo={false} /></button>
         </div>
       )}
     </>

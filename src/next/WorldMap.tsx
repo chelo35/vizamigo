@@ -4,6 +4,7 @@ import { SeaMap, MapPoint, MapStyle } from './SeaMap';
 import { Btn, Chip, Chips, Flag, LinkBtn, Segmented, VisaBadge, fmtPair } from './ui';
 import { Icon } from './Icon';
 import { GEO_DATA } from '../data/geoData';
+import { capitalName } from '../data/capitalNames';
 import { CountryItem, REGIONS, countryToRegion, getCountryName, getRegionName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { stayDays } from './country';
@@ -223,7 +224,7 @@ const CountryMapCard: React.FC<{ code: string; item?: CountryItem; onClose: () =
           <Flag code={code} />
           <span className="vz-stack" style={{ gap: 0 }}>
             <b style={{ fontSize: 18 }}>{getCountryName(code, language)}</b>
-            <span className="vz-muted" style={{ fontSize: 13 }}>{[g?.capital, g?.mainHub && `✈ ${g.mainHub}`, getRegionName(countryToRegion[code] || '', language)].filter(Boolean).join(' · ')}</span>
+            <span className="vz-muted" style={{ fontSize: 13 }}>{[g?.capital && capitalName(code, language, g.capital), g?.mainHub && `✈ ${g.mainHub}`, getRegionName(countryToRegion[code] || '', language)].filter(Boolean).join(' · ')}</span>
           </span>
         </span>
         <button type="button" className="vz-iconbtn" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}><Icon name="close" size={16} duo={false} /></button>

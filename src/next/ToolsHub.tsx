@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useEffect, useMemo, useState } from 'react';
 const TripPlanner = lazy(() => import('./TripPlanner'));
 const MultiCity = lazy(() => import('./MultiCity'));
-import { useI18n } from '../data/i18n';
+import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
 import { Btn, Bullets, Card, Chip, Chips, Field, Flag, LinkBtn, List, Page, Row, Stat, Tags, Tile, TileGrid, VisaBadge, OpenRequest, fmtNum } from './ui';
 import { loadDestination } from '../components/redesign/LiveStrip';
@@ -21,7 +21,7 @@ import { getVerifiedCountryRecord } from '../data/verifiedCountryData';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 
 type L3 = { tr: string; en: string; de: string };
-const pick3 = (o: L3 | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : o.en || o.tr) : '');
+const pick3 = (o: (L3 & { es?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
 const countryOpts = (lang: string) => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, lang) })).sort((a, b) => a.n.localeCompare(b.n, lang));
 
 function useChecked(key: string) {

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useI18n } from '../../data/i18n';
+import { useI18n, lText } from '../../data/i18n';
 import { getPassportItems } from '../../utils/calculator';
 import { CountryItem } from '../../data/passportData';
 import { VISA_CHANGE_ALERTS } from '../../data/changeLog';
@@ -7,7 +7,7 @@ import { CountryCard } from '../country';
 import { Btn } from '../ui';
 import { Icon } from '../Icon';
 import { VisaBadge } from '../ui';
-import { PACKAGES, TOUR_REGIONS, toursPath, type TourPackage } from '../../data/tours';
+import { PACKAGES, TOUR_REGIONS, routeName, toursPath, type TourPackage } from '../../data/tours';
 import { getOptimizedImageUrl } from '../../data/countryVisuals';
 import { getCountryName } from '../../data/passportData';
 
@@ -46,7 +46,7 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
   };
   const free = useMemo(() => order(isFree), [items]); // eslint-disable-line react-hooks/exhaustive-deps
   const easy = useMemo(() => order(isEasy), [items]); // eslint-disable-line react-hooks/exhaustive-deps
-  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : en ?? tr);
+  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
   const alerts = VISA_CHANGE_ALERTS.filter((a) => a.impactPassport.length === 0 || a.impactPassport.includes(passport)).slice(0, 3);
   const more = l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все');
 
@@ -135,7 +135,7 @@ export const TourRail: React.FC<{ passport: string }> = ({ passport }) => {
               </span>
               <span className="vz-ccard-b">
                 <span className="vz-ccard-t"><span>{p.name[i]}</span></span>
-                <span className="vz-ccard-s">{p.route}</span>
+                <span className="vz-ccard-s">{routeName(p.route, language)}</span>
                 <span className="vz-ccard-s">{region}</span>
               </span>
             </a>

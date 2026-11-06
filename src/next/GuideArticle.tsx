@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useI18n } from '../data/i18n';
-import { GUIDE_META, getGuide, guideGroups, type GuideChecklist, type GuideId, type GuideListGroup } from '../data/guides';
+import { GUIDE_META, getGuide, guideGroups, sourceLabel, type GuideChecklist, type GuideId, type GuideListGroup } from '../data/guides';
 import { getCountryName } from '../data/passportData';
 import { buildLocalizedPath } from '../utils/seoRouter';
 import { Flag } from './ui';
@@ -109,7 +109,7 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
       </section>
       <section>
         <h2>{l('Kaynaklar', 'Sources', 'Quellen', 'Fuentes', 'Источники')}</h2>
-        <ul>{meta.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a></li>)}</ul>
+        <ul>{meta.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{sourceLabel(s.label, language)}</a></li>)}</ul>
         <p className="vz-muted" style={{ fontSize: 13 }}>{l('Kurallar değişebilir; seyahatten önce resmî kaynaktan teyit et.', 'Rules can change; confirm with the official source before you travel.', 'Regeln können sich ändern; prüfe vor der Reise die offizielle Quelle.', 'Las normas pueden cambiar; confírmalo en la fuente oficial antes de viajar.', 'Правила могут меняться; перед поездкой проверьте официальный источник.')}</p>
       </section>
     </div>

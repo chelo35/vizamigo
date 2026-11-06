@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { useI18n } from '../../data/i18n';
+import { useI18n, lText } from '../../data/i18n';
 import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, Row, List, SearchInput, Segmented, Stat, VisaBadge, fmtPair, visaTone } from '../ui';
 import { SeaMap, MapPoint } from '../SeaMap';
 import { VisaWorldMap } from '../WorldMap';
@@ -13,6 +13,7 @@ import { VISA_CHANGE_ALERTS } from '../../data/changeLog';
 import { getCountryConciergePlan } from '../../data/travelConciergeEngine';
 import { PartnerLogo } from '../PartnerLogo';
 import { GEO_DATA } from '../../data/geoData';
+import { capitalName } from '../../data/capitalNames';
 import { ALL_WORLD_HUBS, flagToIso } from '../../data/worldHubs';
 import { getHubCoords } from '../../utils/hubCoords';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../../utils/liveData';
@@ -187,7 +188,7 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
                 key={c}
                 lead={<Flag code={c} />}
                 title={getCountryName(c, language)}
-                sub={[getRegionName(countryToRegion[c] || '', language), GEO_DATA[c]?.capital, d ? l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`) : ''].filter(Boolean).join(' · ')}
+                sub={[getRegionName(countryToRegion[c] || '', language), GEO_DATA[c]?.capital && capitalName(c, language, GEO_DATA[c].capital), d ? l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`) : ''].filter(Boolean).join(' · ')}
                 right={<VisaBadge item={it} />}
                 onClick={() => onOpenCountry(c)}
               />
@@ -326,7 +327,7 @@ export const PopularView: React.FC<{ passport: string; onOpenCountry: (c: string
 export const ChangesView: React.FC<{ passport: string; onOpenAudit: () => void; onReport: () => void; onOpenCountry: (c: string) => void }> = ({ passport, onOpenAudit, onReport, onOpenCountry }) => {
   const { l, language } = useI18n();
   const [mine, setMine] = useState(true);
-  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : en ?? tr);
+  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
   const list = VISA_CHANGE_ALERTS.filter((a) => !mine || a.impactPassport.length === 0 || a.impactPassport.includes(passport));
   return (
     <div className="vz-stack">

@@ -136,11 +136,6 @@ export function generateCountryJsonLd({
           },
           {
             '@type': 'PropertyValue',
-            name: 'Passport Validity Requirement',
-            value: 'Minimum 6 months validity from date of entry'
-          },
-          {
-            '@type': 'PropertyValue',
             name: 'Mobile Internet Speed',
             value: `${insights.internet.mobileSpeedMbps} Mbps`,
             unitText: 'Mbps'
@@ -266,7 +261,7 @@ export function generateCountryJsonLd({
               : `What is the currency and exchange rate (USD/EUR/GBP) in ${countryName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `${countryName} (${geography.currencyName}, ${destCurrency} ${geography.currencySymbol}): 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
+              text: `${countryName} (${currencyLabel(destCurrency, language, geography.currencyName)}, ${destCurrency} ${geography.currencySymbol}): 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
             }
           },
           {
@@ -352,4 +347,13 @@ export function generateCountryJsonLd({
       }
     ]
   };
+}
+
+/** Para birimi adı sayfa dilinde (tarayıcı/Node Intl); bulunamazsa veri içindeki ad. */
+function currencyLabel(code: string, lang: string, fallback: string): string {
+  try {
+    const n = new Intl.DisplayNames([lang], { type: 'currency' }).of(code);
+    if (n && n !== code) return n;
+  } catch {}
+  return fallback;
 }

@@ -285,13 +285,13 @@ export function runTripDossierAgent(destinationCountry: string = 'TH', currentPa
     ? `**Konsolosluk & Giriş Güvenlik Özeti:**\n` +
       `• **Vize Rejimi:** ${item.cat === 'free' ? '✅ Vizesiz Giriş' : item.cat === 'evisa' ? '💻 Online e-Vize' : '🛂 Diplomatik Vize'} (${item.v} gün)\n` +
       `• **Priz & Donanım:** Tip ${destPlugs.join(', ')} (${isPlugMatch ? `✓ ${passportName} fişinizle uyumlu` : '⚠️ Evrensel seyahat adaptörü gerekli!'})\n` +
-      `• **24/7 Dış Temsilcilik Kriz Hattı:** ${consular.hotline247} (${consular.ministryName.tr})\n` +
+      `• **24/7 Dış Temsilcilik Kriz Hattı:** ${consular.hotline247 || "—"} (${consular.ministryName.tr})\n` +
       `• **Yerel Acil Hat:** Polis ${insights?.safety?.emergencyNumbers?.police || '112'} | Ambulans ${insights?.safety?.emergencyNumbers?.ambulance || '112'}\n` +
       `• **Para Birimi:** 1 USD = ${getCrossRate('USD', geo.currencyCode).toFixed(2)} ${geo.currencyCode} (${geo.currencySymbol})`
     : `**Consular & Border Entry Brief:**\n` +
       `• **Visa Regime:** ${item.cat === 'free' ? '✅ Visa-Free Access' : item.cat === 'evisa' ? '💻 eVisa Required' : '🛂 Embassy Visa'} (${item.v} days)\n` +
       `• **Electrical Plug:** Type ${destPlugs.join(', ')} (${isPlugMatch ? `✓ Compatible with your ${passportName} plugs` : '⚠️ Universal plug adapter needed!'})\n` +
-      `• **24/7 Diplomatic Support:** ${consular.hotline247} (${consular.ministryName.en})\n` +
+      `• **24/7 Diplomatic Support:** ${consular.hotline247 || "—"} (${consular.ministryName.en})\n` +
       `• **Emergency Police:** ${insights?.safety?.emergencyNumbers?.police || '112'}\n` +
       `• **Local Currency:** 1 USD = ${getCrossRate('USD', geo.currencyCode).toFixed(2)} ${geo.currencyCode} (${geo.currencySymbol})`;
 
@@ -343,7 +343,7 @@ export function runTripDossierAgent(destinationCountry: string = 'TH', currentPa
 
         <div class="sos-box">
           <div style="font-weight:900; color:#b91c1c; font-size:15px; margin-bottom:6px;">🚨 ACİL DURUM & DİPLOMATİK DESTEK</div>
-          <div><strong>24/7 Konsolosluk Hattı:</strong> ${consular.hotline247} (${consular.ministryName.tr})</div>
+          <div><strong>24/7 Konsolosluk Hattı:</strong> ${consular.hotline247 || "—"} (${consular.ministryName.tr})</div>
           <div><strong>Yerel Polis İmdat:</strong> ${insights?.safety?.emergencyNumbers?.police || '112'} | <strong>Ambulans:</strong> ${insights?.safety?.emergencyNumbers?.ambulance || '112'}</div>
         </div>
 

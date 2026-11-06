@@ -857,9 +857,9 @@ export async function processAssistantQuery(
       text: isTr
         ? `🚨 **Yurt Dışında Pasaport Kaybı & Acil Durum Adımları:**\n\n` +
           `1. **Yerel Polis Tutanağı:** En yakın yerel polis karakoluna giderek derhal resmi kayıp/çalıntı tutanağı (Police Report) tutturun.\n` +
-          `2. **24/7 Nöbetçi Konsolosluk Hattı:** ${consular.ministryName.tr} ${consular.crisisCenterTitle.tr}: **${consular.hotline247}**\n` +
+          `2. **24/7 Nöbetçi Konsolosluk Hattı:** ${consular.ministryName.tr} ${consular.crisisCenterTitle.tr}: **${consular.hotline247 || "—"}**\n` +
           `3. **Geçici Seyahat Belgesi:** 2 adet biyometrik fotoğraf ve kimliğinizle en yakın ${consular.countryName.tr} temsilciliğine başvurup ülkenize dönüş belgenizi (${consular.emergencyDocName.tr}) temin edin.`
-        : `🚨 **Lost Passport & Consular Emergency:**\n\n1. Obtain an official Police Report from the nearest local police station.\n2. **24/7 Hotline (${consular.ministryName.en}):** **${consular.hotline247}**\n3. Apply for an Emergency Travel Document (${consular.emergencyDocName.en}) at your nearest embassy.`,
+        : `🚨 **Lost Passport & Consular Emergency:**\n\n1. Obtain an official Police Report from the nearest local police station.\n2. **24/7 Hotline (${consular.ministryName.en}):** **${consular.hotline247 || "—"}**\n3. Apply for an Emergency Travel Document (${consular.emergencyDocName.en}) at your nearest embassy.`,
       timestamp: new Date(),
       actions: actions.slice(0, 2),
       detectedLang: activeLang,
@@ -1206,11 +1206,11 @@ export async function processAssistantQuery(
               `• **Güvenlik Derecesi:** **${insights?.safety?.safetyLevel || 'Güvenli'}** (${safetyScore}/100)\n` +
               `• **Polis İmdat:** **${em.police}** | **Ambulans:** **${em.ambulance}** | **Genel Acil:** **${em.general}**\n` +
               `• **Genel Durum:** ${insights?.safety?.crimeRateSummary || 'Temel seyahat kurallarına dikkat ediniz.'}\n\n` +
-              `🚨 *${consular.ministryName.tr} 24/7 Konsolosluk Hattı:* **${consular.hotline247}**`
+              `🚨 *${consular.ministryName.tr} 24/7 Konsolosluk Hattı:* **${consular.hotline247 || "—"}**`
             : `🛡️ **${flag} ${cName} Safety & Emergency Numbers:**\n\n` +
               `• **Safety Score:** ${safetyScore}/100 (${insights?.safety?.safetyLevel || 'Safe'})\n` +
               `• **Police:** ${em.police} | **Ambulance:** ${em.ambulance} | **Emergency:** ${em.general}\n\n` +
-              `🚨 *${consular.ministryName.en} 24/7 Emergency Consular Hotline:* **${consular.hotline247}**`;
+              `🚨 *${consular.ministryName.en} 24/7 Emergency Consular Hotline:* **${consular.hotline247 || "—"}**`;
         })(),
         timestamp: new Date(),
         actions: actions.slice(0, 2),

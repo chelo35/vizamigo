@@ -61,3 +61,33 @@ export function applyDict<T>(o: T, dict: Record<string, string>, key = ''): T {
   }
   return o;
 }
+
+/**
+ * Daha uzun metinlerin İÇİNDE geçen Türkçe parçaları da çevirir (ör. "2-3 gün - <yer adı>, <şehir>").
+ * Yalnızca Türkçe görünen sözlük anahtarları (en az 8 karakter ya da Türkçe harf içeren) kullanılır; kelime ortasında eşleşmez.
+ * `extra` ile ek eşlemeler (başkent adları gibi) verilebilir.
+ */
+export function makeSubstTranslator(dict: Record<string, string>, extra: Record<string, string> = {}): (s: string) => string {
+  const map: Record<string, string> = {};
+  for (const [k, v] of Object.entries(dict)) if ((k.length >= 8 || (k.length >= 3 && TR_CHARS.test(k))) && v && v !== k && looksTurkish(k)) map[k] = v;
+  for (const [k, v] of Object.entries(extra)) if (k && v && v !== k) map[k] = v;
+  const keys = Object.keys(map).sort((a, b) => b.length - a.length);
+  if (!keys.length) return (s) => s;
+  const esc = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const L = 'A-Za-zÀ-ÖØ-öø-ÿĀ-žА-яЁё';
+  const re = new RegExp(`(?<![${L}])(?:${keys.map(esc).join('|')})(?![${L}])`, 'g');
+  return (s: string) => (s && /[A-Za-zÀ-ž]/.test(s) ? s.replace(re, (m) => map[m] ?? m) : s);
+}
+
+/** Nesnedeki tüm metinlere bir dönüştürücü uygular (SKIP_KEYS ve *Tr alanları hariç). */
+export function mapStrings<T>(o: T, fn: (s: string) => string, key = ''): T {
+  if (SKIP_KEYS.has(key)) return o;
+  if (typeof o === 'string') return (fn(o) as unknown) as T;
+  if (Array.isArray(o)) return (o.map((v) => mapStrings(v, fn, key)) as unknown) as T;
+  if (o && typeof o === 'object') {
+    const r: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(o as Record<string, unknown>)) r[k] = /Tr$/.test(k) ? v : mapStrings(v, fn, k);
+    return r as T;
+  }
+  return o;
+}

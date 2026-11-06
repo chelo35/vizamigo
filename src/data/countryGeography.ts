@@ -5,6 +5,7 @@
  */
 
 import { GEO_DATA } from './geoData';
+import { capitalName } from './capitalNames';
 import { getCountryName } from './passportData';
 import { lText } from '../i18n';
 
@@ -640,12 +641,37 @@ export const CURATED_GEOGRAPHY: Record<string, CuratedGeographyItem> = {
  * 199 ülkenin tamamı için başkent, büyük şehirler, turistik bölgeler,
  * para birimi, priz tipi ve saat dilimi döndürür.
  */
+/** Saat dilimi ve priz açıklamalarındaki Türkçe ifadeleri sayfa diline çevirir. */
+const GEO_TEXT: Record<string, Record<string, string>> = {
+  'Yazın ': { en: 'summer ', de: 'Sommer ', es: 'verano ', ru: 'летом ' },
+  'Brasília Saati': { en: 'Brasília Time', de: 'Brasília-Zeit', es: 'hora de Brasilia', ru: 'время Бразилиа' },
+  ' ile ': { en: ' to ', de: ' bis ', es: ' a ', ru: ' до ' },
+  ' arası (Doğu/Pasifik)': { en: ' (Eastern/Pacific)', de: ' (Ost/Pazifik)', es: ' (Este/Pacífico)', ru: ' (восток/Тихоокеанское)' },
+  '3 uçlu İngiliz prizi': { en: 'British 3-pin socket', de: 'britischer 3-poliger Stecker', es: 'enchufe británico de 3 clavijas', ru: 'британская розетка с 3 штырями' },
+  'İngiliz tipi 3 uçlu': { en: 'British-style 3-pin', de: 'britischer Typ, 3-polig', es: 'tipo británico de 3 clavijas', ru: 'британский тип, 3 штыря' },
+  'İsviçre 3 uçlu prizi': { en: 'Swiss 3-pin socket', de: 'Schweizer 3-poliger Stecker', es: 'enchufe suizo de 3 clavijas', ru: 'швейцарская розетка с 3 штырями' }
+};
+function intlCurrency(code: string, lang: string): string {
+  try {
+    const n = new Intl.DisplayNames([lang], { type: 'currency' }).of(code);
+    return n && n !== code ? n.charAt(0).toLocaleUpperCase(lang) + n.slice(1) : '';
+  } catch {
+    return '';
+  }
+}
+function localizeGeoText(s: string, lang: string): string {
+  if (!s || lang === 'tr') return s;
+  let out = s;
+  for (const [tr, m] of Object.entries(GEO_TEXT)) out = out.split(tr).join(m[lang] || m.en);
+  return out;
+}
+
 export function getCountryGeography(countryCode: string, lang: string = 'tr'): CountryGeographyData {
   const code = countryCode.toUpperCase();
   const countryName = getCountryName(code, lang);
   const geo = GEO_DATA[code];
   const curated = CURATED_GEOGRAPHY[code];
-  const capital = geo ? geo.capital : (lang === 'de' ? 'Hauptstadt' : lang === 'es' ? 'Capital' : lang === 'ru' ? 'Столица' : lang === 'tr' ? 'Başkent' : 'Capital');
+  const capital = geo ? capitalName(code, lang, geo.capital) : (lang === 'de' ? 'Hauptstadt' : lang === 'es' ? 'Capital' : lang === 'ru' ? 'Столица' : lang === 'tr' ? 'Başkent' : 'Capital');
 
   if (curated) {
     const tField = (obj: { tr: string; en: string; de: string }): string => {
@@ -674,11 +700,11 @@ export function getCountryGeography(countryCode: string, lang: string = 'tr'): C
       majorCities: tArr(curated.majorCities),
       touristRegions: tArr(curated.touristRegions),
       currencyCode: curated.currencyCode,
-      currencyName: tField(curated.currencyName),
+      currencyName: lang === 'tr' || lang === 'en' ? tField(curated.currencyName) : intlCurrency(curated.currencyCode, lang) || tField(curated.currencyName),
       currencySymbol: curated.currencySymbol,
-      timeZone: curated.timeZone,
+      timeZone: localizeGeoText(curated.timeZone, lang),
       callingCode: curated.callingCode,
-      plugTypes: curated.plugTypes
+      plugTypes: localizeGeoText(curated.plugTypes, lang)
     };
   }
 
@@ -692,11 +718,11 @@ export function getCountryGeography(countryCode: string, lang: string = 'tr'): C
     majorCities: regionalMeta.majorCities,
     touristRegions: regionalMeta.touristRegions,
     currencyCode: regionalMeta.currencyCode,
-    currencyName: regionalMeta.currencyName,
+    currencyName: lang === 'tr' || lang === 'en' ? regionalMeta.currencyName : intlCurrency(regionalMeta.currencyCode, lang) || regionalMeta.currencyName,
     currencySymbol: regionalMeta.currencySymbol,
-    timeZone: regionalMeta.timeZone,
+    timeZone: localizeGeoText(regionalMeta.timeZone, lang),
     callingCode: regionalMeta.callingCode,
-    plugTypes: regionalMeta.plugTypes
+    plugTypes: localizeGeoText(regionalMeta.plugTypes, lang)
   };
 }
 

@@ -56,11 +56,12 @@ let deMap: Record<string, string> | null = null;
 export async function loadLanguageDictionary(lang: SupportedLanguage): Promise<void> {
   try {
     if (lang === 'es' && !esMap) {
-      const m = await import('./autoTranslateEs');
-      esMap = m.AUTO_TRANSLATE_ES;
+      const [m, x] = await Promise.all([import('./autoTranslateEs'), import('./extra-es.json')]);
+      // extra-*.json: sonradan eklenen çeviriler (İngilizce metin -> çeviri)
+      esMap = { ...m.AUTO_TRANSLATE_ES, ...(x.default as Record<string, string>) };
     } else if (lang === 'ru' && !ruMap) {
-      const m = await import('./autoTranslateRu');
-      ruMap = m.AUTO_TRANSLATE_RU;
+      const [m, x] = await Promise.all([import('./autoTranslateRu'), import('./extra-ru.json')]);
+      ruMap = { ...m.AUTO_TRANSLATE_RU, ...(x.default as Record<string, string>) };
     } else if (lang === 'de' && !deMap) {
       const m = await import('./autoTranslateDe');
       deMap = m.AUTO_TRANSLATE_DE;
@@ -187,6 +188,10 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         if (nextPath !== currentPath) {
           window.history.pushState({ lang }, '', nextPath);
         }
+        // Google Maps can only load once per page with one label language,
+        // so reload when a map was already shown in another language.
+        const mapsLang = (window as unknown as { __vzMapsLang?: string }).__vzMapsLang;
+        if (mapsLang && mapsLang !== lang) window.location.reload();
       } catch {}
     }
   };

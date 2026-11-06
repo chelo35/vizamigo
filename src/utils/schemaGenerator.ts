@@ -113,7 +113,7 @@ export function generateDirectAnswerSnippet(
     case 'tr': {
       if (cat === 'free' || cat === 'id') {
         const idClause = hasIdEntry ? ' ve yeni tip çipli kimlik kartıyla' : '';
-        return `2026 yılı güncel sınır kurallarına göre ${countryName}, ${passportName} pasaportu sahipleri için vizesizdir${idClause}. Ziyaretçiler tek seferde ${stayDurationText} boyunca vizesiz kalabilir. Giriş için en az 6 ay geçerli pasaport ve dönüş seyahat bileti ibraz edilmelidir.`;
+        return `2026 yılı güncel sınır kurallarına göre ${countryName}, ${passportName} pasaportu sahipleri için vizesizdir${idClause}. Ziyaretçiler tek seferde ${stayDurationText} boyunca vizesiz kalabilir. Pasaportun kalan geçerlilik süresi ve dönüş bileti şartı ülkeye göre değişir; yola çıkmadan resmî kaynaktan kontrol edin.`;
       }
       if (cat === 'voa') {
         return `2026 yılı kurallarına göre ${countryName}, ${passportName} pasaportu sahiplerine sınır kapısında veya havalimanında varışta vize (Visa on Arrival) vermektedir. İzin verilen kalış süresi ${stayDurationText} olup geçerli pasaport ve harç bedeli gereklidir.`;
@@ -129,7 +129,7 @@ export function generateDirectAnswerSnippet(
 
     case 'de': {
       if (cat === 'free' || cat === 'id') {
-        return `Stand 2026 ist die Einreise nach ${countryName} für Inhaber eines ${passportName}-Reisepasses visumfrei. Reisende dürfen sich bis zu ${stayDurationText} ohne Visum im Land aufhalten. Bei der Einreise ist ein mindestens 6 Monate gültiger Reisepass sowie ein Rückflugticket vorzulegen.`;
+        return `Stand 2026 ist die Einreise nach ${countryName} für Inhaber eines ${passportName}-Reisepasses visumfrei. Reisende dürfen sich bis zu ${stayDurationText} ohne Visum im Land aufhalten. Wie lange der Reisepass noch gültig sein muss und ob ein Rückflugticket verlangt wird, ist je nach Land verschieden; prüfe es vor der Reise bei der offiziellen Stelle.`;
       }
       if (cat === 'voa') {
         return `Stand 2026 erhalten Inhaber eines ${passportName}-Reisepasses für ${countryName} ein Visum bei der Ankunft (Visa on Arrival). Der erlaubte Aufenthalt beträgt ${stayDurationText}; ein gültiger Reisepass sowie Bargeld/Karte für die Gebühr sind erforderlich.`;
@@ -145,7 +145,7 @@ export function generateDirectAnswerSnippet(
 
     case 'es': {
       if (cat === 'free' || cat === 'id') {
-        return `A partir de 2026, la entrada a ${countryName} para titulares de pasaporte de ${passportName} está exenta de visado. Los viajeros pueden permanecer hasta ${stayDurationText} sin visa. Se requiere pasaporte con vigencia mínima de 6 meses y billete de regreso.`;
+        return `A partir de 2026, la entrada a ${countryName} para titulares de pasaporte de ${passportName} está exenta de visado. Los viajeros pueden permanecer hasta ${stayDurationText} sin visa. La validez mínima del pasaporte y la exigencia de billete de regreso varían según el país; compruébelo en la fuente oficial antes de viajar.`;
       }
       if (cat === 'voa') {
         return `A partir de 2026, ${countryName} otorga visado a la llegada (Visa on Arrival) a los ciudadanos con pasaporte de ${passportName}. La estancia autorizada es de ${stayDurationText}, requiriendo pasaporte vigente y pago de tasa en frontera.`;
@@ -161,7 +161,7 @@ export function generateDirectAnswerSnippet(
 
     case 'ru': {
       if (cat === 'free' || cat === 'id') {
-        return `По состоянию на 2026 год въезд ${ruIn(countryName, 'acc')} для владельцев паспортов (${passportName}) является безвизовым. Разрешенный срок пребывания составляет до ${stayDurationText}. При въезде требуется паспорт со сроком действия не менее 6 месяцев и обратный билет.`;
+        return `По состоянию на 2026 год въезд ${ruIn(countryName, 'acc')} для владельцев паспортов (${passportName}) является безвизовым. Разрешенный срок пребывания составляет до ${stayDurationText}. Требования к сроку действия паспорта и обратному билету зависят от страны; уточните их в официальном источнике перед поездкой.`;
       }
       if (cat === 'voa') {
         return `По состоянию на 2026 год граждане с паспортом (${passportName}) могут получить визу по прибытии (Visa on Arrival) ${ruIn(countryName, 'acc')}. Разрешенный срок пребывания составляет ${stayDurationText}.`;
@@ -178,7 +178,7 @@ export function generateDirectAnswerSnippet(
     // Default English
     default: {
       if (cat === 'free' || cat === 'id') {
-        return `As of 2026, travel to ${countryName} is visa-free for ${passportName} passport holders. Eligible travelers may stay up to ${stayDurationText} without a visa. A passport valid for at least 6 months and proof of return travel are required upon entry.`;
+        return `As of 2026, travel to ${countryName} is visa-free for ${passportName} passport holders. Eligible travelers may stay up to ${stayDurationText} without a visa. Passport validity and return-ticket rules vary by country; check the official source before you travel.`;
       }
       if (cat === 'voa') {
         return `As of 2026, ${countryName} grants a Visa on Arrival to ${passportName} passport holders at authorized border checkpoints. The permitted stay is ${stayDurationText}, requiring a valid passport and entry fee payment.`;

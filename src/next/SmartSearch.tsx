@@ -4,6 +4,7 @@ import { useI18n } from '../data/i18n';
 import { Icon, IconName } from './Icon';
 import { Flag, VisaBadge } from './ui';
 import { GEO_DATA } from '../data/geoData';
+import { capitalName } from '../data/capitalNames';
 import { getCountryName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import type { TabKey } from '../components/Navigation';
@@ -26,7 +27,7 @@ export interface SearchAction {
 export function useSearchIndex(passport: string) {
   const { l, language } = useI18n();
   const countries = useMemo(
-    () => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language), en: getCountryName(c, 'en'), cap: GEO_DATA[c].capital })),
+    () => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language), en: getCountryName(c, 'en'), cap: capitalName(c, language, GEO_DATA[c].capital), capKeys: `${GEO_DATA[c].capital} ${capitalName(c, language, GEO_DATA[c].capital)} ${capitalName(c, 'en', GEO_DATA[c].capital)}` })),
     [language]
   );
   const items = useMemo(() => new Map(getPassportItems(passport).map((x) => [x.c, x])), [passport]);
@@ -53,8 +54,8 @@ export function useSearchIndex(passport: string) {
     const nq = raw.replace(NOISE, ' ').replace(/\s+/g, ' ').trim() || raw;
     const scored = countries
       .map((x) => {
-        const a = norm(x.n), b = norm(x.en), cap = norm(x.cap || '');
-        const s = a.startsWith(nq) || b.startsWith(nq) ? 3 : a.includes(nq) || b.includes(nq) ? 2 : cap.startsWith(nq) ? 1 : 0;
+        const a = norm(x.n), b = norm(x.en), cap = norm(x.capKeys || '');
+        const s = a.startsWith(nq) || b.startsWith(nq) ? 3 : a.includes(nq) || b.includes(nq) ? 2 : cap.split(' ').some((w) => w.startsWith(nq)) || cap.startsWith(nq) ? 1 : 0;
         return { x, s };
       })
       .filter((r) => r.s > 0)
