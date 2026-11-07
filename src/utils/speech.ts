@@ -9,6 +9,14 @@ const LOCALE: Record<SpeechLang, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-D
 const KEY = (l: string) => `vz_voice2_${l}`;
 /** ses listesinde doğal (Piper) sesin adı */
 export const NATURAL_KEY = 'vizamigo-natural';
+/** Sunucudaki doğal sesler (ilk sıradaki varsayılan). Değer: "n:<kısa ad>" */
+export const NATURAL_VOICES: Record<SpeechLang, Array<[string, string]>> = {
+  tr: [['emel', 'Emel'], ['ahmet', 'Ahmet'], ['ava', 'Ava'], ['emma', 'Emma'], ['seraphina', 'Seraphina'], ['vivienne', 'Vivienne'], ['thalita', 'Thalita'], ['andrew', 'Andrew'], ['brian', 'Brian'], ['florian', 'Florian'], ['remy', 'Rémy'], ['william', 'William']],
+  en: [['ava', 'Ava'], ['emma', 'Emma'], ['jenny', 'Jenny'], ['aria', 'Aria'], ['sonia', 'Sonia (UK)'], ['libby', 'Libby (UK)'], ['andrew', 'Andrew'], ['brian', 'Brian'], ['ryan', 'Ryan (UK)']],
+  de: [['katja', 'Katja'], ['amala', 'Amala'], ['seraphina', 'Seraphina'], ['conrad', 'Conrad'], ['florian', 'Florian'], ['killian', 'Killian']],
+  es: [['elvira', 'Elvira'], ['ximena', 'Ximena'], ['dalia', 'Dalia (MX)'], ['alvaro', 'Álvaro'], ['jorge', 'Jorge (MX)']],
+  ru: [['svetlana', 'Светлана'], ['dmitry', 'Дмитрий']]
+};
 
 export const canSpeak = () => typeof window !== 'undefined' && 'speechSynthesis' in window;
 
@@ -37,8 +45,12 @@ function score(v: SpeechSynthesisVoice, lang: SpeechLang): number {
   return s;
 }
 
+// Kullanıcının istemediği cihaz sesleri (Apple'ın eğlence/eski sesleri ve Yelda): listede hiç gösterilmez
+const BLOCKED = /^(eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley|m[oó]nica|paulina|helena|martin|arthur|daniel|martha|aaron|bahh|[iİ]yi haber|good news|k[öo]t[üu] haber|bad news|nicky|org|organ|pipe organ|samantha|catherine|gordon|karen|moira|rishi|tessa|albert|bells|boing|bubbles|cellos|fred|jester|junior|kathy|ralph|superstar|trinoids|whisper|wobble|zarvox|yelda|hysterical|deranged|good|bad)\b/i;
 export function voicesFor(all: SpeechSynthesisVoice[], lang: SpeechLang): SpeechSynthesisVoice[] {
-  return all.filter((v) => v.lang.replace('_', '-').toLowerCase().startsWith(lang)).sort((a, b) => score(b, lang) - score(a, lang));
+  return all
+    .filter((v) => v.lang.replace('_', '-').toLowerCase().startsWith(lang) && !BLOCKED.test(v.name.trim()))
+    .sort((a, b) => score(b, lang) - score(a, lang));
 }
 
 export function savedVoice(lang: SpeechLang): string {
@@ -93,9 +105,9 @@ export function stopSpeech() {
 export async function speak(text: string, lang: SpeechLang, onEnd?: () => void) {
   stopSpeech();
   // doğal ses hazırsa onu kullan; değilse arka planda hazırlamaya başla, bu cevabı cihaz sesiyle oku
-  if (savedVoice(lang) === '' || savedVoice(lang) === NATURAL_KEY) {
-    if (await speakNatural(text, lang, onEnd).catch(() => false)) return;
-    void prepareNatural(lang);
+  const sv = savedVoice(lang);
+  if (sv === '' || sv === NATURAL_KEY || sv.startsWith('n:')) {
+    if (await speakNatural(text, lang, onEnd, sv.startsWith('n:') ? sv.slice(2) : '').catch(() => false)) return;
   }
   if (!canSpeak()) return;
   const all = await loadVoices();
@@ -143,7 +155,7 @@ let naturalDown = 0; // art arda hata olursa bir süre cihaz sesi kullan
 let audioEl: HTMLAudioElement | null = null;
 let playToken = 0;
 
-const ttsUrl = (lang: SpeechLang, t: string) => `/api/tts?l=${lang}&t=${encodeURIComponent(t)}`;
+const ttsUrl = (lang: SpeechLang, t: string, v: string) => `/api/tts?l=${lang}${v ? `&v=${v}` : ''}&t=${encodeURIComponent(t)}`;
 
 function chunks(text: string): string[] {
   // 400 karakteri aşmayan cümle grupları (ilk parça kısa olsun ki ses hemen başlasın)
@@ -161,13 +173,13 @@ function chunks(text: string): string[] {
   return out.map((x) => x.slice(0, 400));
 }
 
-async function speakNatural(text: string, lang: SpeechLang, onEnd?: () => void): Promise<boolean> {
+async function speakNatural(text: string, lang: SpeechLang, onEnd?: () => void, voice = ''): Promise<boolean> {
   if (!naturalSupported() || Date.now() < naturalDown) return false;
   const token = ++playToken;
   const parts = chunks(speakable(text, lang).slice(0, 1600));
   if (!parts.length) return true;
   const load = (t: string) =>
-    fetch(ttsUrl(lang, t)).then((r) => {
+    fetch(ttsUrl(lang, t, voice)).then((r) => {
       if (!r.ok) throw new Error(String(r.status));
       return r.blob();
     });

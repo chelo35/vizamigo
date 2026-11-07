@@ -13,6 +13,19 @@ const VOICE: Record<string, string> = {
   es: 'es-ES-ElviraNeural',
   ru: 'ru-RU-SvetlanaNeural'
 };
+// seçilebilir sesler (dil + kısa ad); çok dilli sesler Türkçe de konuşur
+const MULTI: Record<string, string> = {
+  ava: 'en-US-AvaMultilingualNeural', emma: 'en-US-EmmaMultilingualNeural', andrew: 'en-US-AndrewMultilingualNeural', brian: 'en-US-BrianMultilingualNeural',
+  seraphina: 'de-DE-SeraphinaMultilingualNeural', florian: 'de-DE-FlorianMultilingualNeural', vivienne: 'fr-FR-VivienneMultilingualNeural', remy: 'fr-FR-RemyMultilingualNeural',
+  thalita: 'pt-BR-ThalitaMultilingualNeural', william: 'en-AU-WilliamMultilingualNeural'
+};
+const CHOICE: Record<string, Record<string, string>> = {
+  tr: { emel: 'tr-TR-EmelNeural', ahmet: 'tr-TR-AhmetNeural', ...MULTI },
+  en: { ava: 'en-US-AvaNeural', emma: 'en-US-EmmaNeural', jenny: 'en-US-JennyNeural', aria: 'en-US-AriaNeural', sonia: 'en-GB-SoniaNeural', libby: 'en-GB-LibbyNeural', andrew: 'en-US-AndrewNeural', brian: 'en-US-BrianNeural', ryan: 'en-GB-RyanNeural' },
+  de: { katja: 'de-DE-KatjaNeural', amala: 'de-DE-AmalaNeural', seraphina: MULTI.seraphina, conrad: 'de-DE-ConradNeural', florian: MULTI.florian, killian: 'de-DE-KillianNeural' },
+  es: { elvira: 'es-ES-ElviraNeural', ximena: 'es-ES-XimenaNeural', dalia: 'es-MX-DaliaNeural', alvaro: 'es-ES-AlvaroNeural', jorge: 'es-MX-JorgeNeural' },
+  ru: { svetlana: 'ru-RU-SvetlanaNeural', dmitry: 'ru-RU-DmitryNeural' }
+};
 
 type Req = { query: Record<string, string | string[] | undefined>; headers: Record<string, string | string[] | undefined> };
 type Res = { status: (n: number) => Res; setHeader: (k: string, v: string) => void; send: (b: unknown) => void; end: (b?: unknown) => void };
@@ -62,12 +75,14 @@ export default async function handler(req: Req, res: Res) {
     res.status(403).end();
     return;
   }
+  const pick = one(req.query.v).toLowerCase();
+  const voice = (pick && CHOICE[lang]?.[pick]) || VOICE[lang];
   if (!VOICE[lang] || !text) {
     res.status(400).end();
     return;
   }
   try {
-    const mp3 = await synth(VOICE[lang], text);
+    const mp3 = await synth(voice, text);
     if (!mp3.length) throw new Error('empty');
     res.setHeader('Content-Type', 'audio/mpeg');
     res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=2592000, immutable');

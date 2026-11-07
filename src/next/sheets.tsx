@@ -11,7 +11,7 @@ import { saveUserReport, loadUserReports, deleteUserReport } from '../components
 import { getSupabase, GOOGLE_ENABLED } from '../context/AuthContext';
 import { AUDIT_DATABASE } from '../components/RegulationAuditModal';
 import { LegalInfoModal } from '../components/LegalInfoModal';
-import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech, unlockAudio, NATURAL_KEY, naturalSupported, prepareNatural, onNaturalStatus, naturalStatus } from '../utils/speech';
+import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech, unlockAudio, NATURAL_KEY, NATURAL_VOICES, naturalSupported, prepareNatural, onNaturalStatus, naturalStatus } from '../utils/speech';
 import { processAssistantQuery, AssistantMessage, AssistantActionPill, isSpeechRecognitionSupported, startVoiceRecognition, stopVoiceRecognition } from '../services/aiAssistantEngine';
 
 const norm = (s: string) => s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -370,7 +370,8 @@ export const AssistantSheet: React.FC<{
       if (!alive) return;
       const list = voicesFor(all, chatLang);
       setVoices(list);
-      setVoiceName(savedVoice(chatLang) || (natOk ? NATURAL_KEY : list[0]?.name || ''));
+      const sv = savedVoice(chatLang);
+      setVoiceName(sv && sv !== NATURAL_KEY ? sv : `n:${NATURAL_VOICES[chatLang][0][0]}`);
     });
     return () => {
       alive = false;
@@ -471,6 +472,18 @@ export const AssistantSheet: React.FC<{
             <button key={x} type="button" role="radio" aria-checked={chatLang === x} className={chatLang === x ? 'on' : ''} onClick={() => setChatLang(x)}>{x.toUpperCase()}</button>
           ))}
         </div>
+        {ttsOk && speakOn && (
+          <select className="vz-voice" value={voiceName} aria-label={cl('Ses', 'Voice', 'Stimme', 'Voz', 'Голос')} onChange={(e) => { setVoiceName(e.target.value); saveVoice(chatLang, e.target.value); speak(cl('Merhaba, ben Vizamigo asistanı. Size nasıl yardımcı olabilirim?', 'Hello, I am the Vizamigo assistant. How can I help?', 'Hallo, ich bin der Vizamigo-Assistent. Wie kann ich helfen?', 'Hola, soy el asistente de Vizamigo. ¿En qué puedo ayudarte?', 'Здравствуйте, я ассистент Vizamigo. Чем могу помочь?'), chatLang); }}>
+            <optgroup label={cl('Doğal sesler', 'Natural voices', 'Natürliche Stimmen', 'Voces naturales', 'Естественные голоса')}>
+              {NATURAL_VOICES[chatLang].map(([k, n]) => <option key={k} value={`n:${k}`}>{n}</option>)}
+            </optgroup>
+            {voices.length > 0 && (
+              <optgroup label={cl('Cihaz sesleri', 'Device voices', 'Gerätestimmen', 'Voces del dispositivo', 'Голоса устройства')}>
+                {voices.map((v) => <option key={v.name} value={v.name}>{v.name.replace(/^(Microsoft|Google)\s+/, '').replace(/\s*\(.*$/, '').replace(/ - .*$/, '').trim()}</option>)}
+              </optgroup>
+            )}
+          </select>
+        )}
       </div>
       <div className="vz-chat">
         {msgs.length === 0 && (
