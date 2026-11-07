@@ -35,6 +35,7 @@ import { getCrossRate } from '../data/currencyRates';
 import { GEO_DATA } from '../data/geoData';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { TabKey } from '../components/Navigation';
+import { answerCountryQuestion } from './assistantCountryAnswer';
 import {
   playNaturalSpeech,
   stopAllPlayback
@@ -83,38 +84,14 @@ export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr
   }
 
   const q = rawQuery.toLowerCase();
-
-  // 2. Spanish detection (unique symbols and vocabulary)
-  if (
-    /[¿¡]/.test(rawQuery) ||
-    /\b(visado|visados|viajar|viaje|puedo|necesito|donde|cuanto|cuantos|pais|paises|espana|como|abrir|mostrar|tiempo|clima|propinas|propina|enchufe|enchufes|seguro|idioma|pasaporte|gratis|vuelo|hotel|tarjeta|requisitos|dias)\b/i.test(q)
-  ) {
-    return 'es';
-  }
-
-  // 3. German detection (unique characters and vocabulary)
-  if (
-    (/[äöüß]/.test(rawQuery) && (q.includes('ä') || q.includes('ß') || q.includes('und') || q.includes('wie') || q.includes('für') || q.includes('fuer'))) ||
-    /\b(visum|visa|einreise|reise|reisen|nach|brauche|kann|ich|wie|viele|tage|kosten|stecker|trinkgeld|wetter|fluege|hotel|wann|welche|deutschland|pass|ohne|sicher|waehrung|offnen|oeffnen|zeigen|bitte)\b/i.test(q)
-  ) {
-    return 'de';
-  }
-
-  // 4. Turkish detection (unique characters and vocabulary)
-  if (
-    /[çğşı]/.test(rawQuery) ||
-    /\b(vize|vizesiz|pasaport|kimlik|kimlikle|kac|kaç|nasil|nasıl|nerede|nereye|nerelere|priz|prizi|bahsis|bahşiş|rota|rotasi|taksi|ac|aç|goster|göster|para|doviz|döviz|kur|kurlar|bavul|valiz|sigorta|kayip|kayıp|calinti|çalıntı|ucak|uçak|bilet|gun|gün|otel|oteller|guvenli|güvenli|pahali|pahalı|ucuz|var|mi|mı|mu|mü|gerekir|istiyor|mu|müyüm|hazirla|hazırla|bilgi)\b/i.test(q)
-  ) {
-    return 'tr';
-  }
-
-  // 5. English detection
-  if (
-    /\b(visa|visas|passport|travel|can|do|i|need|how|what|where|when|which|days|stay|plug|plugs|adapter|tipping|tip|taxi|ride|cost|safe|safety|route|itinerary|weather|best|time|flights|flight|hotel|hotels|lost|stolen|currency|open|show|compare)\b/i.test(q)
-  ) {
-    return 'en';
-  }
-
+  // Her dil için ipucu ara; sitenin dili de eşleşiyorsa onu koru (ör. "Budapest visa" İngilizce sayfada İngilizce kalsın)
+  const hits: string[] = [];
+  if (/[¿¡ñ]/.test(rawQuery) || /\b(visado|visados|viajar|viaje|puedo|necesito|donde|cuanto|cuantos|pais|paises|espana|como|abrir|mostrar|tiempo|clima|propinas|propina|enchufe|enchufes|seguro|idioma|pasaporte|gratis|vuelo|tarjeta|requisitos|dias)\b/i.test(q)) hits.push('es');
+  if ((/[äöüß]/.test(rawQuery) && (q.includes('ä') || q.includes('ß') || q.includes('und') || q.includes('wie') || q.includes('für') || q.includes('fuer'))) || /\b(visum|einreise|reise|reisen|nach|brauche|kann|ich|wie|viele|tage|kosten|stecker|trinkgeld|wetter|fluege|wann|welche|deutschland|ohne|sicher|waehrung|offnen|oeffnen|zeigen|bitte)\b/i.test(q)) hits.push('de');
+  if (/[çğşı]/.test(rawQuery) || /\b(vize|vizesiz|pasaport|kimlik|kimlikle|kac|kaç|nasil|nasıl|nerede|nereye|nerelere|priz|prizi|bahsis|bahşiş|rota|rotasi|taksi|ac|aç|goster|göster|para|doviz|döviz|kur|kurlar|bavul|valiz|sigorta|kayip|kayıp|calinti|çalıntı|ucak|uçak|bilet|gun|gün|otel|oteller|guvenli|güvenli|pahali|pahalı|ucuz|var|mi|mı|mu|mü|gerekir|istiyor|mu|müyüm|hazirla|hazırla|bilgi)\b/i.test(q)) hits.push('tr');
+  if (/\b(visa|visas|passport|travel|can|do|i|need|how|what|where|when|which|days|stay|plug|plugs|adapter|tipping|tip|taxi|ride|cost|safe|safety|route|itinerary|weather|best|time|flights|flight|hotel|hotels|lost|stolen|currency|open|show|compare)\b/i.test(q)) hits.push('en');
+  if (hits.includes(fallbackLang)) return fallbackLang;
+  if (hits.length) return hits[0];
   return fallbackLang;
 }
 
@@ -124,7 +101,8 @@ export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr
 
 const POPULAR_DESTINATION_ALIASES: Record<string, string> = {
   // Southeast Asia & Far East
-  'bali': 'ID', 'cakarta': 'ID', 'jakarta': 'ID', 'ubud': 'ID', 'lombok': 'ID', 'denpasar': 'ID', 'gili': 'ID',
+  'bosna': 'BA', 'makedonya': 'MK', 'amerika': 'US', 'karadag': 'ME', 'cekya': 'CZ', 'emirlikler': 'AE', 'hurgada': 'EG', 'sarm el seyh': 'EG',
+    'bali': 'ID', 'cakarta': 'ID', 'jakarta': 'ID', 'ubud': 'ID', 'lombok': 'ID', 'denpasar': 'ID', 'gili': 'ID',
   'bangkok': 'TH', 'phuket': 'TH', 'chiang mai': 'TH', 'pattaya': 'TH', 'krabi': 'TH', 'samui': 'TH', 'koh samui': 'TH',
   'hanoi': 'VN', 'ho chi minh': 'VN', 'saigon': 'VN', 'da nang': 'VN', 'hoi an': 'VN',
   'kuala lumpur': 'MY', 'penang': 'MY', 'langkawi': 'MY',
@@ -232,7 +210,7 @@ export function normalizeText(text: string): string {
     .replace(/[ş]/g, 's')
     .replace(/[ü]/g, 'u')
     .replace(/['’`-]/g, '') // remove apostrophes: norveç'e -> norvece
-    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/[^a-z0-9\u0400-\u04ff\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -294,14 +272,18 @@ export function extractDestinationCountry(query: string): string | null {
 
   const countryMap = getGlobalCountryMap();
   const sortedKeys = Object.keys(countryMap).sort((a, b) => b.length - a.length);
+  let origin: string | null = null;
 
   // Suffix patterns for Turkish, Russian, German, Spanish, English inflections
   const suffixPattern = '(?:ye|ya|e|a|de|da|te|ta|den|dan|ten|tan|in|un|nin|nun|i|ı|u|ü|yi|yı|yu|yü|si|sı|su|sü|lar|ler|ю|и|е|ей|ем|я|s|es|n|en)';
 
   for (const key of sortedKeys) {
     if (key.length < 3) continue;
-    const regex = new RegExp(`(?:^|\\s)${key}(?:${suffixPattern})?(?:\\s|$)`, 'i');
-    if (regex.test(norm)) {
+    const regex = new RegExp(`(?:^|\\s)${key}(${suffixPattern})?(?:\\s|$)`, 'i');
+    const m = norm.match(regex);
+    if (m) {
+      // "Türkiye'den Rusya'ya": çıkış yeri (-den/-dan/-ten/-tan) varış ülkesi sayılmaz, başka eşleşme aranır
+      if (/^(den|dan|ten|tan)$/.test(m[1] || '') && origin === null) { origin = countryMap[key]; continue; }
       return countryMap[key];
     }
   }
@@ -315,8 +297,18 @@ export function extractDestinationCountry(query: string): string | null {
     }
   }
 
-  // Prefix matching for longer root names (length >= 4)
+  // Rusça hâl ekleri: "Грузию", "Турции", "Италии" → ad kökü (son harf veya "ия" düşer)
   const words = norm.split(' ');
+  for (const w of words) {
+    if (!/[\u0400-\u04ff]/.test(w) || w.length < 4) continue;
+    for (const key of sortedKeys) {
+      if (!/[\u0400-\u04ff]/.test(key) || key.includes(' ') || key.length < 4) continue;
+      const stem = key.replace(/(ия|ая|а|я|ь|й|ы)$/, '');
+      if (stem.length >= 3 && w.startsWith(stem) && w.length - stem.length <= 3) return countryMap[key];
+    }
+  }
+
+  // Prefix matching for longer root names (length >= 4)
   for (const w of words) {
     if (w.length >= 4) {
       for (const key of sortedKeys) {
@@ -327,7 +319,7 @@ export function extractDestinationCountry(query: string): string | null {
     }
   }
 
-  return null;
+  return origin;
 }
 
 // ============================================================================
@@ -373,6 +365,23 @@ export async function processAssistantQuery(
   // Live Exchange Rates
   const usdRate = getCrossRate('USD', 'TRY').toFixed(2);
   const eurRate = getCrossRate('EUR', 'TRY').toFixed(2);
+
+  // ülke soruları: doğrulanmış ülke verisinden, sorunun konusuna göre 5 dilde cevap
+  const countryMsg = async (code: string): Promise<AssistantMessage> => {
+    const ans = await answerCountryQuestion(code, norm, activeLang, currentPassport);
+    return {
+      id: `msg-${Date.now()}`,
+      sender: 'assistant',
+      detectedCountry: { code, name: getCountryName(code, activeLang), flag: getFlag(code) },
+      text: ans.text,
+      timestamp: new Date(),
+      actions: ans.actions,
+      detectedLang: activeLang,
+      autoTriggerAction: /(^| )(ac|goster|open|show|offnen|abrir|mostrar|открыть|покажи)( |$)/.test(norm) ? ans.actions[0] : undefined
+    };
+  };
+  // ülke adı geçen sorular önce buraya gelir; Schengen sayacı, transit, pasaport kaybı, dijital göçebe gibi araç konuları hariç
+  if (targetCountry && !/(schengen|90 180|transit|aktarma|layover|umsteig|escala|пересадк|pasaport kay|pasaportumu kay|kaybettim|calindi|lost passport|stolen|konsolos|buyukelci|consul|embassy|botschaft|embajada|консульств|посольств|nomad|gocebe|remote work|saat farki|time zone|timezone|zeitzone)/.test(norm)) return countryMsg(targetCountry);
 
   // --------------------------------------------------------------------------
   // BROAD INTENT 1: PASSPORT POWER & STATS ("Kaç ülkeye vizesiz gidebilirim?", "Vize", "Vizeler")
@@ -896,437 +905,7 @@ export async function processAssistantQuery(
   // ==========================================================================
   // TARGET COUNTRY FOUND (ANY OF 199 COUNTRIES)
   // ==========================================================================
-  if (targetCountry) {
-    const cName = getCountryName(targetCountry, activeLang);
-    const flag = getFlag(targetCountry);
-    const item = passportItems.find((i) => i.c === targetCountry);
-    const geo = getCountryGeography(targetCountry, activeLang);
-    const insights = getCountryInsights(targetCountry, activeLang);
-    const itinerary = getCountryItinerary(targetCountry, activeLang);
-    const practical = getPracticalInfo(targetCountry, activeLang);
-    const badgeLabel = getCategoryBadgeLabel(item, activeLang);
-    const stayLimitText = item?.v === 'vf' ? (isTr ? 'Süresiz' : 'Indefinite') : /^\d+$/.test(item?.v || '') ? `${item?.v} ${isTr ? 'Gün' : 'Days'}` : '';
-
-    // Primary action: Always opens full 360 Country Dossier Modal
-    const primaryDossierAction: AssistantActionPill = {
-      id: `open-${targetCountry}`,
-      type: 'open_country',
-      countryCode: targetCountry,
-      label: isTr ? `${flag} ${cName} 360° Dosyası` : `${flag} Open ${cName} Dossier`,
-      accentTone: 'teal'
-    };
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT A: PLUGS, POWER & VOLTAGE
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('priz') ||
-      norm.includes('fis') ||
-      norm.includes('fiş') ||
-      norm.includes('voltaj') ||
-      norm.includes('plug') ||
-      norm.includes('stecker') ||
-      norm.includes('enchufe') ||
-      norm.includes('розетка') ||
-      norm.includes('elektrik') ||
-      norm.includes('adaptor')
-    ) {
-      const packingAction: AssistantActionPill = {
-        id: `tool-packing`,
-        type: 'open_tool',
-        toolKey: 'packing',
-        label: isTr ? '🧳 Valizine Adaptör Ekle' : '🧳 Add Adapter to Packing List',
-        accentTone: 'sky'
-      };
-      actions.push(primaryDossierAction, packingAction);
-
-      const plugText = typeof geo.plugTypes === 'string' ? geo.plugTypes : 'C, F';
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `🔌 **${flag} ${cName} Elektrik & Priz Standartları:**\n\n` +
-            `• **Priz Tipleri:** **${plugText}**\n` +
-            `• **Pratik Rehber:** ${practical.plugType}\n\n` +
-            `Türkiye standart C/F fişlerinizin uyumlu olup olmadığını kontrol etmek ve valizinize üniversal adaptör eklemek için araçlarımızı kullanabilirsiniz.`
-          : `🔌 **${flag} ${cName} Electrical & Plug Standards:**\n\n` +
-            `• **Plug Types:** **${plugText}**\n` +
-            `• **Practical Guide:** ${practical.plugType}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT B: TIPPING & GRATUITY ETIQUETTE
-    // ------------------------------------------------------------------------
-    if (norm.includes('bahsis') || norm.includes('tip') || norm.includes('trinkgeld') || norm.includes('propina') || norm.includes('чаевые')) {
-      const tipAction: AssistantActionPill = {
-        id: 'tool-tipping',
-        type: 'open_tool',
-        toolKey: 'tipping',
-        label: isTr ? '💸 Bahşiş Hesaplayıcı' : '💸 Tipping Calc',
-        accentTone: 'amber'
-      };
-      actions.push(primaryDossierAction, tipAction);
-
-      const tipAdvice = insights?.transport?.taxiAdvice || practical.localEtiquette;
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `💸 **${flag} ${cName} Bahşiş Adabı:**\n\n` +
-            `• **Genel Standart:** Restoran ve kafelerde hesabın %5 ila %10'u kadar bahşiş veya para üstünü yuvarlamak yeterlidir.\n` +
-            `• **Yerel Görgü Kuralı:** ${practical.localEtiquette}\n` +
-            `• **Taksi & Ulaşım:** ${tipAdvice}`
-          : `💸 **${flag} ${cName} Tipping Culture:**\n\n${practical.localEtiquette}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT C: TAXIS & RIDE-HAILING APPS
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('taksi') ||
-      norm.includes('taxi') ||
-      norm.includes('uber') ||
-      norm.includes('bolt') ||
-      norm.includes('grab') ||
-      norm.includes('careem') ||
-      norm.includes('yandex') ||
-      norm.includes('ulasim') ||
-      norm.includes('transport')
-    ) {
-      const isAsia = ['TH', 'VN', 'ID', 'MY', 'JP', 'KR', 'KH'].includes(targetCountry);
-      const transitLink: AssistantActionPill = {
-        id: isAsia ? 'aff-12go' : 'aff-omio',
-        type: 'affiliate',
-        url: isAsia ? 'https://12go.asia' : 'https://www.omio.com',
-        badge: isTr ? 'Bilet Karşılaştır' : 'Book Transit',
-        label: isTr ? '🚆 Tren & Otobüs Bileti Al' : '🚆 Compare Transit Tickets',
-        accentTone: 'sky'
-      };
-      actions.push(primaryDossierAction, transitLink);
-
-      const rideApps = insights?.transport?.popularRideApps?.join(', ') || 'Grab, Bolt, Uber';
-      const taxiAdvice = insights?.transport?.taxiAdvice || 'Taksimetre açtırmayı unutmayınız.';
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `🚖 **${flag} ${cName} Taksi & Şehir İçi Ulaşım Rehberi:**\n\n` +
-            `• **Popüler Araç Çağırma Uygulamaları:** **${rideApps}**\n` +
-            `• **Taksi Tavsiyesi:** ${taxiAdvice}\n` +
-            `• **Ulaşım Seviyesi:** ${insights?.transport?.costLevel || 'Ekonomik / Orta'}`
-          : `🚖 **${flag} ${cName} Taxi & Transit Guide:**\n\n` +
-            `• **Recommended Ride Apps:** **${rideApps}**\n` +
-            `• **Local Taxi Advice:** ${taxiAdvice}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT D: CLIMATE & BEST SEASON TO VISIT
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('ne zaman gidilir') ||
-      norm.includes('hangi ay') ||
-      norm.includes('iklim') ||
-      norm.includes('hava durumu') ||
-      norm.includes('hava') ||
-      norm.includes('mevsim') ||
-      norm.includes('weather') ||
-      norm.includes('climate') ||
-      norm.includes('best time')
-    ) {
-      const weatherAction: AssistantActionPill = {
-        id: 'radar-weather',
-        type: 'open_tool',
-        toolKey: 'radar',
-        radarMode: 'weather',
-        label: isTr ? '🌦️ Canlı Hava Durumu Radarı' : '🌦️ Live Weather Radar',
-        accentTone: 'sky'
-      };
-      actions.push(primaryDossierAction, weatherAction);
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `☀️ **${flag} ${cName} İçin En İdeal Ziyaret Dönemi:**\n\n` +
-            `• **En İyi Aylar:** **${practical.bestMonths}**\n` +
-            `• **Mevsim Tavsiyesi:** ${itinerary?.bestSeason || 'İlkbahar ve sonbahar ayları gezmek için en konforlu zamandır.'}`
-          : `☀️ **${flag} Best Time to Visit ${cName}:**\n\n` +
-            `• **Optimal Months:** **${practical.bestMonths}**\n` +
-            `• **Season Advice:** ${itinerary?.bestSeason || 'Spring and Autumn offer the most pleasant weather.'}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT E: GASTRONOMY & CUISINE
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('yemek') ||
-      norm.includes('mutfak') ||
-      norm.includes('ne yenir') ||
-      norm.includes('gastronomi') ||
-      norm.includes('food') ||
-      norm.includes('cuisine') ||
-      norm.includes('lezzet')
-    ) {
-      const routeAction: AssistantActionPill = {
-        id: 'tab-plan',
-        type: 'switch_tab',
-        tabKey: 'plan',
-        label: isTr ? '🗺️ Rota & Sinerji Planlayıcı' : '🗺️ Route Planner',
-        accentTone: 'coral'
-      };
-      actions.push(primaryDossierAction, routeAction);
-
-      const dishes = (itinerary?.signatureGastronomy?.dishes || []).slice(0, 4).map((d) => `• **${d}**`).join('\n');
-      const drinks = (itinerary?.signatureGastronomy?.drinks || []).slice(0, 2).map((d) => `• **${d}**`).join('\n');
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `🍜 **${flag} ${cName} Meşhur Lezzetleri & Mutfak Kültürü:**\n\n` +
-            `${dishes ? `**Öne Çıkan Yemekler:**\n${dishes}\n\n` : ''}` +
-            `${drinks ? `**Geleneksel İçecekler:**\n${drinks}\n\n` : ''}` +
-            `• *Gastronomi İpucu:* ${itinerary?.signatureGastronomy?.diningAdvice || 'Yerel sokak pazarlarında taze lezzetleri deneyebilirsiniz.'}`
-          : `🍜 **${flag} ${cName} Signature Gastronomy:**\n\n${dishes || 'Local specialties abound throughout the country.'}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT F: SIGHTSEEING ITINERARY & ROUTE
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('rota') ||
-      norm.includes('gezi') ||
-      norm.includes('plan') ||
-      norm.includes('durak') ||
-      norm.includes('itinerary') ||
-      norm.includes('gezilecek yerler') ||
-      norm.includes('kac gun')
-    ) {
-      const routeAction: AssistantActionPill = {
-        id: 'tab-plan',
-        type: 'switch_tab',
-        tabKey: 'plan',
-        label: isTr ? '🗺️ Rota Planlayıcıda Aç' : '🗺️ Open in Route Planner',
-        accentTone: 'sky'
-      };
-      actions.push(primaryDossierAction, routeAction);
-
-      const stopsSummary = (itinerary?.stops || [])
-        .slice(0, 3)
-        .map((s, idx) => `${idx + 1}. **${s.name}** (${s.durationBadge})`)
-        .join('\n');
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `🗺️ **${flag} ${cName} Gezi Rotası (${itinerary.idealDurationText}):**\n\n` +
-            `${itinerary.routeSummary}\n\n` +
-            `**Önemli Duraklar:**\n${stopsSummary}\n\n` +
-            `• *İdeal Süre:* ${itinerary.idealDurationText} | *Ulaşım:* ${itinerary.transportMode}`
-          : `🗺️ **${flag} ${cName} Itinerary Highlights (${itinerary.idealDurationText}):**\n\n` +
-            `${itinerary.routeSummary}\n\n` +
-            `**Key Stops:**\n${stopsSummary}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT G: SAFETY & EMERGENCY NUMBERS
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('guvenli') ||
-      norm.includes('guvenlik') ||
-      norm.includes('safety') ||
-      norm.includes('tehlikeli') ||
-      norm.includes('scam') ||
-      norm.includes('dolandirici') ||
-      norm.includes('polis') ||
-      norm.includes('ambulans') ||
-      norm.includes('acil') ||
-      norm.includes('emergency')
-    ) {
-      const consularAction: AssistantActionPill = {
-        id: 'tab-consular',
-        type: 'switch_tab',
-        tabKey: 'consular',
-        label: isTr ? '🚨 24/7 Acil Konsolosluk & Güvenlik' : '🚨 Emergency Services',
-        accentTone: 'coral'
-      };
-      actions.push(primaryDossierAction, consularAction);
-
-      const em = insights?.safety?.emergencyNumbers || { police: '112', ambulance: '112', general: '112' };
-      const safetyScore = insights?.safety?.safetyScore || 80;
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: (() => {
-          const consular = getConsularEmergencyInfo(currentPassport || 'TR', activeLang);
-          return isTr
-            ? `🛡️ **${flag} ${cName} Güvenlik & Acil Durum Bilgileri:**\n\n` +
-              `• **Güvenlik Derecesi:** **${insights?.safety?.safetyLevel || 'Güvenli'}** (${safetyScore}/100)\n` +
-              `• **Polis İmdat:** **${em.police}** | **Ambulans:** **${em.ambulance}** | **Genel Acil:** **${em.general}**\n` +
-              `• **Genel Durum:** ${insights?.safety?.crimeRateSummary || 'Temel seyahat kurallarına dikkat ediniz.'}\n\n` +
-              `🚨 *${consular.ministryName.tr} 24/7 Konsolosluk Hattı:* **${consular.hotline247 || "—"}**`
-            : `🛡️ **${flag} ${cName} Safety & Emergency Numbers:**\n\n` +
-              `• **Safety Score:** ${safetyScore}/100 (${insights?.safety?.safetyLevel || 'Safe'})\n` +
-              `• **Police:** ${em.police} | **Ambulance:** ${em.ambulance} | **Emergency:** ${em.general}\n\n` +
-              `🚨 *${consular.ministryName.en} 24/7 Emergency Consular Hotline:* **${consular.hotline247 || "—"}**`;
-        })(),
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT H: CURRENCY & EXPENSES
-    // ------------------------------------------------------------------------
-    if (
-      norm.includes('para') ||
-      norm.includes('currency') ||
-      norm.includes('doviz') ||
-      norm.includes('pahali') ||
-      norm.includes('ucuz') ||
-      norm.includes('maliyet') ||
-      norm.includes('butce')
-    ) {
-      actions.push(primaryDossierAction);
-
-      const costs = insights?.livingCosts;
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `💰 **${flag} ${cName} Para Birimi & Seyahat Maliyeti:**\n\n` +
-            `• **Resmi Para Birimi:** **${geo.currencyName}** (${geo.currencyCode})\n` +
-            `• **Günlük Ortalama Bütçe:** ${costs?.dailyBudgetMidrangeUsd || '60 - 90 $'}\n` +
-            `• **Ortalama Yemek:** ${costs?.budgetMealUsd || '5 - 12 $'}\n` +
-            `• **3 Yıldızlı Otel Gecelik:** ${costs?.hotel3StarUsd || '35 - 70 $'}`
-          : `💰 **${flag} ${cName} Currency & Costs:**\n\n` +
-            `• **Currency:** **${geo.currencyName}** (${geo.currencyCode})\n` +
-            `• **Daily Mid-range Budget:** ${costs?.dailyBudgetMidrangeUsd || '60 - 90 $'}\n` +
-            `• **Meal Cost:** ${costs?.budgetMealUsd || '5 - 12 $'}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // SUB-INTENT I: SIM CARD & ESIM
-    // ------------------------------------------------------------------------
-    if (norm.includes('esim') || norm.includes('sim kart') || norm.includes('internet') || norm.includes('roaming')) {
-      const airaloAction: AssistantActionPill = {
-        id: 'aff-airalo',
-        type: 'affiliate',
-        url: 'https://www.airalo.com',
-        badge: '5G eSIM',
-        label: isTr ? `📱 Airalo ${cName} eSIM Al` : `📱 Airalo ${cName} eSIM`,
-        accentTone: 'coral'
-      };
-      actions.push(primaryDossierAction, airaloAction);
-
-      return {
-        id: `msg-${Date.now()}`,
-        sender: 'assistant',
-        detectedCountry: { code: targetCountry, name: cName, flag },
-        text: isTr
-          ? `📱 **${flag} ${cName} İnternet & eSIM Önerisi:**\n\n${practical.esimTip}\n\nYurt dışı operatör roaming faturalarından kaçınmak için Airalo eSIM paketini uçağa binmeden kurmanızı tavsiye ederiz.`
-          : `📱 **${flag} ${cName} Mobile Internet & eSIM:**\n\n${practical.esimTip}`,
-        timestamp: new Date(),
-        actions: actions.slice(0, 2),
-        detectedLang: activeLang,
-        autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-      };
-    }
-
-    // ------------------------------------------------------------------------
-    // DEFAULT TARGET COUNTRY INTENT: 360 Full Overview (Single-word query or general question)
-    // ------------------------------------------------------------------------
-    const airaloPill: AssistantActionPill = {
-      id: 'aff-airalo',
-      type: 'affiliate',
-      url: 'https://www.airalo.com',
-      badge: '5G eSIM',
-      label: isTr ? `📱 Airalo ${cName} İnternet` : `📱 Airalo ${cName} eSIM`,
-      accentTone: 'sky'
-    };
-    actions.push(primaryDossierAction, airaloPill);
-
-    const plugText = typeof geo.plugTypes === 'string' ? geo.plugTypes : 'C, F';
-    const safetyScore = insights?.safety?.safetyScore || 80;
-    const safetyLevel = insights?.safety?.safetyLevel || (isTr ? 'Güvenli' : 'Safe');
-
-    return {
-      id: `msg-${Date.now()}`,
-      sender: 'assistant',
-      detectedCountry: { code: targetCountry, name: cName, flag },
-      text: isTr
-        ? `🌍 **${flag} ${cName} Vize & Seyahat Durumu (${originName} Pasaportu İle):**\n\n` +
-          `• **Vize Rejimi:** **${badgeLabel}** ${stayLimitText ? `(${stayLimitText})` : ''}\n` +
-          `• **Başkent:** ${geo.capital}\n` +
-          `• **Para Birimi:** ${geo.currencyName} (${geo.currencyCode})\n` +
-          `• **Priz & Voltaj:** ${plugText}\n` +
-          `• **Güvenlik:** ${safetyLevel} (${safetyScore}/100)\n` +
-          `• **İdeal Ziyaret Dönemi:** ${practical.bestMonths}\n\n` +
-          `Aşağıdaki butonları kullanarak ülkenin 360° detaylı dosyasını açabilir veya eSIM temin edebilirsiniz:`
-        : `🌍 **${flag} ${cName} Visa & Travel Brief (for ${originName} Passport):**\n\n` +
-          `• **Visa Status:** **${badgeLabel}** ${stayLimitText ? `(${stayLimitText})` : ''}\n` +
-          `• **Capital:** ${geo.capital}\n` +
-          `• **Currency:** ${geo.currencyName} (${geo.currencyCode})\n` +
-          `• **Power Plugs:** ${plugText}\n` +
-          `• **Safety Score:** ${safetyScore}/100 (${safetyLevel})\n` +
-          `• **Best Season:** ${practical.bestMonths}`,
-      timestamp: new Date(),
-      actions: actions.slice(0, 2),
-      detectedLang: activeLang,
-      autoTriggerAction: isOpenIntent ? primaryDossierAction : undefined
-    };
-  }
+  if (targetCountry) return countryMsg(targetCountry);
 
   // --------------------------------------------------------------------------
   // GENERAL FALLBACK: HIGH-PRECISION GUIDED SUGGESTIONS
