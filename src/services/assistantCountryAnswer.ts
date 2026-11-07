@@ -80,6 +80,8 @@ const T: Record<string, Record<Lang, string>> = {
   english: { tr: 'İngilizce', en: 'English', de: 'Englisch', es: 'Inglés', ru: 'Английский' },
   phrases: { tr: 'İşe yarar kelimeler', en: 'Useful phrases', de: 'Nützliche Wörter', es: 'Frases útiles', ru: 'Полезные фразы' },
   scam: { tr: 'Bilinen dolandırıcılıklar', en: 'Known scams', de: 'Bekannte Maschen', es: 'Estafas comunes', ru: 'Известные схемы обмана' },
+  info: { tr: 'Genel bilgi', en: 'Overview', de: 'Überblick', es: 'Resumen', ru: 'Обзор' },
+  home: { tr: 'Kendi ülken: vize gerekmez. Aşağıda şehir ve ülke için pratik bilgiler var.', en: 'This is your own country, so no visa is needed. Practical info below.', de: 'Dein eigenes Land – kein Visum nötig. Praktische Infos unten.', es: 'Es tu propio país: no necesitas visado. Información práctica abajo.', ru: 'Это ваша страна — виза не нужна. Практическая информация ниже.' },
   capital: { tr: 'Başkent', en: 'Capital', de: 'Hauptstadt', es: 'Capital', ru: 'Столица' },
   open: { tr: 'Ülke sayfasını aç', en: 'Open country page', de: 'Länderseite öffnen', es: 'Abrir página del país', ru: 'Открыть страницу страны' },
   esimBtn: { tr: 'eSIM al (Airalo)', en: 'Get an eSIM (Airalo)', de: 'eSIM holen (Airalo)', es: 'Comprar eSIM (Airalo)', ru: 'Купить eSIM (Airalo)' },
@@ -103,7 +105,8 @@ export async function answerCountryQuestion(
   code: string,
   norm: string,
   langIn: string,
-  passport: string
+  passport: string,
+  city = ''
 ): Promise<{ text: string; actions: AssistantActionPill[] }> {
   const lang = (['tr', 'en', 'de', 'es', 'ru'].includes(langIn) ? langIn : 'en') as Lang;
   const L = (k: keyof typeof T) => T[k][lang];
@@ -122,7 +125,7 @@ export async function answerCountryQuestion(
   if (overview) topics = ['visa'];
 
   const out: string[] = [];
-  const head = (t: string) => out.push(`**${flag} ${name} · ${t}**`);
+  const head = (t: string) => out.push(`**${flag} ${city ? `${city} (${name})` : name} · ${t}**`);
   const line = (k: string, v: string) => { if (v) out.push(`• **${k}:** ${v}`); };
 
   for (const t of topics) {
@@ -132,8 +135,10 @@ export async function answerCountryQuestion(
       case 'id': {
         const item = getPassportItems(passport).find((i) => i.c === code);
         const P = getCountryName(passport, lang);
-        head(L('visa'));
-        if (item) {
+        head(code === passport ? T.info[lang] : L('visa'));
+        if (code === passport) {
+          out.push(T.home[lang]);
+        } else if (item) {
           const stay = getStayDurationText(item.v, item.cat, lang as never);
           out.push(generateDirectAnswerSnippet(name, P, item.cat, stay, item.id, lang as never));
           if (passport === 'TR' && (t === 'id' || item.id)) out.push(item.id ? L('idY') : L('idN'));

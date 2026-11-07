@@ -111,6 +111,8 @@ const POPULAR_DESTINATION_ALIASES: Record<string, string> = {
   // Southeast Asia & Far East
   'bosna': 'BA', 'makedonya': 'MK', 'amerika': 'US', 'karadag': 'ME', 'cekya': 'CZ', 'emirlikler': 'AE', 'hurgada': 'EG', 'sarm el seyh': 'EG',
     'bali': 'ID', 'cakarta': 'ID', 'jakarta': 'ID', 'ubud': 'ID', 'lombok': 'ID', 'denpasar': 'ID', 'gili': 'ID',
+  'istanbul': 'TR', 'antalya': 'TR', 'izmir': 'TR', 'bodrum': 'TR', 'alanya': 'TR', 'fethiye': 'TR', 'marmaris': 'TR', 'kapadokya': 'TR', 'cappadocia': 'TR', 'kusadasi': 'TR', 'cesme': 'TR', 'trabzon': 'TR', 'bursa': 'TR', 'kas': 'TR', 'side': 'TR', 'belek': 'TR', 'pamukkale': 'TR', 'istambul': 'TR', 'стамбул': 'TR', 'анталья': 'TR', 'анталия': 'TR',
+  'бангкок': 'TH', 'пхукет': 'TH', 'паттайя': 'TH', 'дубай': 'AE', 'тбилиси': 'GE', 'батуми': 'GE', 'баку': 'AZ', 'бали': 'ID', 'хургада': 'EG', 'шарм эль шейх': 'EG', 'рим': 'IT', 'париж': 'FR', 'барселона': 'ES', 'лондон': 'GB', 'прага': 'CZ',
   'bangkok': 'TH', 'phuket': 'TH', 'chiang mai': 'TH', 'pattaya': 'TH', 'krabi': 'TH', 'samui': 'TH', 'koh samui': 'TH',
   'hanoi': 'VN', 'ho chi minh': 'VN', 'saigon': 'VN', 'da nang': 'VN', 'hoi an': 'VN',
   'kuala lumpur': 'MY', 'penang': 'MY', 'langkawi': 'MY',
@@ -377,8 +379,11 @@ export async function processAssistantQuery(
   const eurRate = getCrossRate('EUR', 'TRY').toFixed(2);
 
   // ülke soruları: doğrulanmış ülke verisinden, sorunun konusuna göre 5 dilde cevap
+  // soruda geçen şehir (ör. "Bangkok", "Antalya"): cevabın başlığında gösterilir
+  const cityKey = Object.keys(POPULAR_DESTINATION_ALIASES).sort((x, y) => y.length - x.length).find((k) => k.length >= 3 && new RegExp(`(^| )${k}`).test(norm));
+  const cityName = cityKey ? cityKey.replace(/(^| )\S/g, (m) => m.toLocaleUpperCase(activeLang === 'tr' ? 'tr' : 'en')) : '';
   const countryMsg = async (code: string): Promise<AssistantMessage> => {
-    const ans = await answerCountryQuestion(code, norm, activeLang, currentPassport);
+    const ans = await answerCountryQuestion(code, norm, activeLang, currentPassport, cityKey && POPULAR_DESTINATION_ALIASES[cityKey] === code ? cityName : '');
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
@@ -611,7 +616,7 @@ export function startVoiceRecognition(options: {
     recognition.lang = langCodeMap[options.lang] || 'tr-TR';
     recognition.continuous = Boolean(options.continuous);
     recognition.interimResults = true;
-    recognition.maxAlternatives = 1;
+    recognition.maxAlternatives = 5;
 
     recognition.onresult = (event: any) => {
       if (options.continuous) {
@@ -619,8 +624,14 @@ export function startVoiceRecognition(options: {
         let all = '';
         let allFinal = true;
         for (let i = 0; i < event.results.length; ++i) {
-          all += event.results[i][0].transcript;
-          if (!event.results[i].isFinal) allFinal = false;
+          // tanıyıcı birkaç olasılık verir: içinde bilinen bir ülke/şehir adı geçeni seç ("Bangkok" yerine "kanka" yazmasın)
+          const r = event.results[i];
+          let best = r[0].transcript;
+          for (let k = 0; k < r.length; k++) {
+            if (extractDestinationCountry(r[k].transcript)) { best = r[k].transcript; break; }
+          }
+          all += best;
+          if (!r.isFinal) allFinal = false;
         }
         if (all.trim()) options.onResult(all.replace(/\s+/g, ' ').trim(), allFinal);
         return;

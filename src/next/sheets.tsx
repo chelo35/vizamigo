@@ -399,7 +399,7 @@ export const AssistantSheet: React.FC<{
     if (!t || busy) return;
     setQ('');
     stopSpeech();
-    if (speakOn || viaVoice) unlockAudio();
+    if (speakOn) unlockAudio();
     setMsgs((m) => [...m, { id: `u-${Date.now()}`, sender: 'user', text: t, timestamp: new Date() }]);
     setBusy(true);
     try {
@@ -408,7 +408,7 @@ export const AssistantSheet: React.FC<{
       const rl = (r.detectedLang || chatLang) as CL;
       if (rl !== chatLang && (LANGS as readonly string[]).includes(rl)) setChatLang(rl);
       setMsgs((m) => [...m, r]);
-      if (speakOn || viaVoice) say(r.text, rl);
+      if (speakOn) say(r.text, rl);
     } catch {
       setMsgs((m) => [...m, { id: `e-${Date.now()}`, sender: 'assistant', text: cl('Şu an yanıt veremedim, birazdan tekrar dener misin?', 'I couldn’t answer just now, try again in a moment?', 'Gerade keine Antwort möglich.', 'No pude responder ahora.', 'Не удалось ответить.'), timestamp: new Date() }]);
     } finally {
