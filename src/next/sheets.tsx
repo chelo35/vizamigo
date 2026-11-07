@@ -11,7 +11,7 @@ import { saveUserReport, loadUserReports, deleteUserReport } from '../components
 import { getSupabase, GOOGLE_ENABLED } from '../context/AuthContext';
 import { AUDIT_DATABASE } from '../components/RegulationAuditModal';
 import { LegalInfoModal } from '../components/LegalInfoModal';
-import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech } from '../utils/speech';
+import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech, NATURAL_KEY, naturalSupported, prepareNatural, onNaturalStatus, naturalStatus } from '../utils/speech';
 import { processAssistantQuery, AssistantMessage, AssistantActionPill, isSpeechRecognitionSupported, startVoiceRecognition, stopVoiceRecognition } from '../services/aiAssistantEngine';
 
 const norm = (s: string) => s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -347,7 +347,13 @@ export const AssistantSheet: React.FC<{
   const [busy, setBusy] = useState(false);
   const [listening, setListening] = useState(false);
   // sesli cevap (cihazın en iyi sesi); tercih cihazda saklanır
-  const ttsOk = canSpeakFn();
+  const natOk = naturalSupported();
+  const ttsOk = canSpeakFn() || natOk;
+  const [nat, setNat] = useState(() => naturalStatus(chatLang));
+  useEffect(() => {
+    setNat(naturalStatus(chatLang));
+    return onNaturalStatus((st) => { if (st.lang === chatLang) setNat(st); });
+  }, [chatLang]);
   const [speakOn, setSpeakOn] = useState(() => {
     try {
       return localStorage.getItem('vz_assistant_voice') === '1';
@@ -364,12 +370,15 @@ export const AssistantSheet: React.FC<{
       if (!alive) return;
       const list = voicesFor(all, chatLang);
       setVoices(list);
-      setVoiceName(savedVoice(chatLang) || list[0]?.name || '');
+      setVoiceName(savedVoice(chatLang) || (natOk ? NATURAL_KEY : list[0]?.name || ''));
     });
     return () => {
       alive = false;
     };
   }, [chatLang, open, ttsOk]);
+  useEffect(() => {
+    if (open && speakOn && natOk && (savedVoice(chatLang) || NATURAL_KEY) === NATURAL_KEY) void prepareNatural(chatLang);
+  }, [open, speakOn, chatLang, natOk]);
   const toggleSpeak = () => {
     const n = !speakOn;
     setSpeakOn(n);
@@ -393,11 +402,11 @@ export const AssistantSheet: React.FC<{
     setBusy(true);
     try {
       // sesle sorulduysa seçili dilde cevap; yazıldıysa yazılan dil algılanır ve sohbet dili ona geçer
-      const r = await processAssistantQuery(t, passport, chatLang, viaVoice);
+      const r = await processAssistantQuery(t, passport, chatLang);
       const rl = (r.detectedLang || chatLang) as CL;
-      if (!viaVoice && rl !== chatLang && (LANGS as readonly string[]).includes(rl)) setChatLang(rl);
+      if (rl !== chatLang && (LANGS as readonly string[]).includes(rl)) setChatLang(rl);
       setMsgs((m) => [...m, r]);
-      if (speakOn) say(r.text, rl);
+      if (speakOn || viaVoice) say(r.text, rl);
     } catch {
       setMsgs((m) => [...m, { id: `e-${Date.now()}`, sender: 'assistant', text: cl('Şu an yanıt veremedim, birazdan tekrar dener misin?', 'I couldn’t answer just now, try again in a moment?', 'Gerade keine Antwort möglich.', 'No pude responder ahora.', 'Не удалось ответить.'), timestamp: new Date() }]);
     } finally {
@@ -460,10 +469,14 @@ export const AssistantSheet: React.FC<{
             <button key={x} type="button" role="radio" aria-checked={chatLang === x} className={chatLang === x ? 'on' : ''} onClick={() => setChatLang(x)}>{x.toUpperCase()}</button>
           ))}
         </div>
-        {ttsOk && speakOn && voices.length > 1 && (
-          <select className="vz-voice" value={voiceName} aria-label={cl('Ses', 'Voice', 'Stimme', 'Voz', 'Голос')} onChange={(e) => { setVoiceName(e.target.value); saveVoice(chatLang, e.target.value); speak(cl('Merhaba, ben Vizamigo asistanı.', 'Hello, I am the Vizamigo assistant.', 'Hallo, ich bin der Vizamigo-Assistent.', 'Hola, soy el asistente de Vizamigo.', 'Здравствуйте, я ассистент Vizamigo.'), chatLang); }}>
-            {voices.map((v) => <option key={v.name} value={v.name}>{v.name.replace(/^(Microsoft|Google)\s+/, '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/ - .*$/, '').trim()}</option>)}
+        {ttsOk && speakOn && (voices.length > 0 || natOk) && (
+          <select className="vz-voice" value={voiceName} aria-label={cl('Ses', 'Voice', 'Stimme', 'Voz', 'Голос')} onChange={(e) => { setVoiceName(e.target.value); saveVoice(chatLang, e.target.value); if (e.target.value === NATURAL_KEY) void prepareNatural(chatLang); speak(cl('Merhaba, ben Vizamigo asistanı.', 'Hello, I am the Vizamigo assistant.', 'Hallo, ich bin der Vizamigo-Assistent.', 'Hola, soy el asistente de Vizamigo.', 'Здравствуйте, я ассистент Vizamigo.'), chatLang); }}>
+            {natOk && <option value={NATURAL_KEY}>{cl('Vizamigo doğal ses', 'Vizamigo natural voice', 'Vizamigo natürliche Stimme', 'Voz natural de Vizamigo', 'Естественный голос Vizamigo')}</option>}
+            {voices.map((v) => <option key={v.name} value={v.name}>{cl('Cihaz', 'Device', 'Gerät', 'Dispositivo', 'Устройство')}: {v.name.replace(/^(Microsoft|Google)\s+/, '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/ - .*$/, '').trim()}</option>)}
           </select>
+        )}
+        {speakOn && voiceName === NATURAL_KEY && nat.state === 'loading' && (
+          <span className="vz-natload" role="status">{cl('Doğal ses hazırlanıyor', 'Preparing natural voice', 'Natürliche Stimme wird geladen', 'Preparando voz natural', 'Загружается голос')} {nat.pct ? `%${nat.pct}` : '…'} · {cl('yalnızca ilk sefer', 'first time only', 'nur beim ersten Mal', 'solo la primera vez', 'только в первый раз')}</span>
         )}
       </div>
       <div className="vz-chat">

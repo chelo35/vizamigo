@@ -7,6 +7,8 @@
 export type SpeechLang = 'tr' | 'en' | 'de' | 'es' | 'ru';
 const LOCALE: Record<SpeechLang, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
 const KEY = (l: string) => `vz_voice_${l}`;
+/** ses listesinde doğal (Piper) sesin adı */
+export const NATURAL_KEY = 'vizamigo-natural';
 
 export const canSpeak = () => typeof window !== 'undefined' && 'speechSynthesis' in window;
 
@@ -76,14 +78,23 @@ export function speakable(text: string, lang: SpeechLang): string {
 let queue: SpeechSynthesisUtterance[] = [];
 
 export function stopSpeech() {
+  playToken++;
+  try {
+    audioEl?.pause();
+  } catch {}
   if (!canSpeak()) return;
   queue = [];
   window.speechSynthesis.cancel();
 }
 
 export async function speak(text: string, lang: SpeechLang, onEnd?: () => void) {
-  if (!canSpeak()) return;
   stopSpeech();
+  // doğal ses hazırsa onu kullan; değilse arka planda hazırlamaya başla, bu cevabı cihaz sesiyle oku
+  if (savedVoice(lang) === '' || savedVoice(lang) === NATURAL_KEY) {
+    if (await speakNatural(text, lang, onEnd).catch(() => false)) return;
+    void prepareNatural(lang);
+  }
+  if (!canSpeak()) return;
   const all = await loadVoices();
   const list = voicesFor(all, lang);
   const want = savedVoice(lang);
@@ -101,4 +112,108 @@ export async function speak(text: string, lang: SpeechLang, onEnd?: () => void) 
     return u;
   });
   queue.forEach((u) => window.speechSynthesis.speak(u));
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Doğal ses (açık kaynak Piper, MIT): ziyaretçinin cihazında çalışır,  */
+/* hiçbir ayar istemez. Model ilk kullanımda bir kez indirilir ve       */
+/* tarayıcıda saklanır; hazır olana kadar cihaz sesi kullanılır.         */
+/* ------------------------------------------------------------------ */
+export const NATURAL_VOICE: Record<SpeechLang, string> = {
+  tr: 'tr_TR-dfki-medium',
+  en: 'en_US-hfc_female-medium',
+  de: 'de_DE-kerstin-low',
+  es: 'es_ES-sharvard-medium',
+  ru: 'ru_RU-irina-medium'
+};
+type Status = { lang: SpeechLang; state: 'idle' | 'loading' | 'ready' | 'error'; pct: number };
+const status: Record<string, Status> = {};
+const listeners = new Set<(s: Status) => void>();
+export function onNaturalStatus(fn: (s: Status) => void) {
+  listeners.add(fn);
+  return () => {
+    listeners.delete(fn);
+  };
+}
+const emit = (s: Status) => {
+  status[s.lang] = s;
+  listeners.forEach((f) => f(s));
+};
+export const naturalStatus = (lang: SpeechLang): Status => status[lang] || { lang, state: 'idle', pct: 0 };
+
+export function naturalSupported(): boolean {
+  try {
+    return typeof window !== 'undefined' && typeof WebAssembly === 'object' && !!navigator.storage?.getDirectory && typeof Worker !== 'undefined';
+  } catch {
+    return false;
+  }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let piper: any = null;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let session: any = null;
+let sessionVoice = '';
+const loading: Record<string, Promise<boolean>> = {};
+
+/** Dil için doğal sesi hazırla (indir + yükle). Hata olursa false döner, cihaz sesi kullanılır. */
+export function prepareNatural(lang: SpeechLang): Promise<boolean> {
+  if (!naturalSupported()) return Promise.resolve(false);
+  const id = NATURAL_VOICE[lang];
+  if (session && sessionVoice === id) return Promise.resolve(true);
+  if (lang in loading) return loading[lang];
+  emit({ lang, state: 'loading', pct: 0 });
+  loading[lang] = (async () => {
+    try {
+      piper = piper || (await import('@mintplex-labs/piper-tts-web'));
+      const have: string[] = await piper.stored().catch(() => []);
+      if (!have.includes(id)) {
+        await piper.download(id, (p: { loaded: number; total: number; url: string }) => {
+          if (p.total && /\.onnx$/.test(p.url)) emit({ lang, state: 'loading', pct: Math.min(99, Math.round((p.loaded * 100) / p.total)) });
+        });
+      }
+      piper.TtsSession._instance = null;
+      const s = await piper.TtsSession.create({ voiceId: id });
+      session = s;
+      sessionVoice = id;
+      emit({ lang, state: 'ready', pct: 100 });
+      return true;
+    } catch {
+      emit({ lang, state: 'error', pct: 0 });
+      return false;
+    } finally {
+      delete loading[lang];
+    }
+  })();
+  return loading[lang];
+}
+
+let audioEl: HTMLAudioElement | null = null;
+let playToken = 0;
+
+async function speakNatural(text: string, lang: SpeechLang, onEnd?: () => void): Promise<boolean> {
+  if (!(session && sessionVoice === NATURAL_VOICE[lang])) return false;
+  const token = ++playToken;
+  const clean = speakable(text, lang).slice(0, 1400);
+  const parts = clean.match(/[^.!?]+[.!?]?/g)?.map((x) => x.trim()).filter((x) => x.length > 1) || [clean];
+  // ilk cümle hemen, sonrakiler çalarken hazırlanır
+  let next: Promise<Blob> | null = session.predict(parts[0]);
+  for (let i = 0; i < parts.length; i++) {
+    const blob = await next!;
+    if (token !== playToken) return true;
+    next = i + 1 < parts.length ? session.predict(parts[i + 1]) : null;
+    const url = URL.createObjectURL(blob);
+    await new Promise<void>((res) => {
+      audioEl = audioEl || new Audio();
+      audioEl.src = url;
+      audioEl.onended = () => res();
+      audioEl.onerror = () => res();
+      audioEl.play().catch(() => res());
+    });
+    URL.revokeObjectURL(url);
+    if (token !== playToken) return true;
+  }
+  onEnd?.();
+  return true;
 }

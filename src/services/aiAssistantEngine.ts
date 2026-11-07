@@ -90,8 +90,16 @@ export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr
   if ((/[äöüß]/.test(rawQuery) && (q.includes('ä') || q.includes('ß') || q.includes('und') || q.includes('wie') || q.includes('für') || q.includes('fuer'))) || /\b(visum|einreise|reise|reisen|nach|brauche|kann|ich|wie|viele|tage|kosten|stecker|trinkgeld|wetter|fluege|wann|welche|deutschland|ohne|sicher|waehrung|offnen|oeffnen|zeigen|bitte)\b/i.test(q)) hits.push('de');
   if (/[çğşı]/.test(rawQuery) || /\b(vize|vizesiz|pasaport|kimlik|kimlikle|kac|kaç|nasil|nasıl|nerede|nereye|nerelere|priz|prizi|bahsis|bahşiş|rota|rotasi|taksi|ac|aç|goster|göster|para|doviz|döviz|kur|kurlar|bavul|valiz|sigorta|kayip|kayıp|calinti|çalıntı|ucak|uçak|bilet|gun|gün|otel|oteller|guvenli|güvenli|pahali|pahalı|ucuz|var|mi|mı|mu|mü|gerekir|istiyor|mu|müyüm|hazirla|hazırla|bilgi)\b/i.test(q)) hits.push('tr');
   if (/\b(visa|visas|passport|travel|can|do|i|need|how|what|where|when|which|days|stay|plug|plugs|adapter|tipping|tip|taxi|ride|cost|safe|safety|route|itinerary|weather|best|time|flights|flight|hotel|hotels|lost|stolen|currency|open|show|compare)\b/i.test(q)) hits.push('en');
+  if (/\b(tell|me|about|tips|hello|hi|please|the|is|are|of|with|without|my|you|info|guide|need|should|there|any|cheap|food|money|weather|safe|emergency)\b/i.test(q) && !hits.includes('en')) hits.push('en');
   if (hits.includes(fallbackLang)) return fallbackLang;
   if (hits.length) return hits[0];
+  // yalnızca ülke adı yazıldıysa ("Georgia", "Thailand", "Грузия"): adın hangi dilde yazıldığına bak
+  const nq = normalizeText(rawQuery);
+  const langsByName = ['tr', 'en', 'de', 'es', 'ru'].filter((lg) => Object.keys(GEO_DATA).some((c) => {
+    const n = normalizeText(getCountryName(c, lg));
+    return n.length >= 3 && new RegExp(`(^| )${n}`).test(nq);
+  }));
+  if (langsByName.length && !langsByName.includes(fallbackLang)) return langsByName[0];
   return fallbackLang;
 }
 
