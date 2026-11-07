@@ -1,0 +1,1787 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Batı Afrika CFA Frangı (XOF)",
+   "plugType": "C, E (220V, 50Hz)",
+   "bestMonths": "Kasım – Şubat (kurak mevsim; harmattan tozu olabilir) ve Temmuz – Ağustos (güneyde kısa kurak dönem)",
+   "safety": {
+    "crimeRateSummary": "Lomé'de kapkaç ve yankesicilik yaygındır; özellikle plajda ve Grand Marché çevresinde. Kuzeydeki Savanes bölgesinde, Burkina Faso sınırında cihatçı saldırılar olduğundan resmî uyarılar bu bölgeye gidilmemesini öneriyor.",
+    "commonScams": [
+     "Zemidjan (motosiklet taksi) sürücülerinin yolda fiyat artırması",
+     "Akodessewa fetiş pazarında fahiş 'ritüel' ve fotoğraf ücretleri",
+     "Plajda arkadaşça yaklaşıp dikkat dağıtan hırsızlar"
+    ],
+    "safeTravelTips": [
+     "Lomé plajında gece yürümeyin ve denize girmeyin (çok güçlü akıntılar).",
+     "Zemidjan'a binerseniz kask isteyin ve fiyatı önceden belirleyin.",
+     "Savanes bölgesine (Dapaong ve kuzeyi) gitmeyin, kuzeyde güncel uyarıları takip edin."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "8200",
+     "general": "117"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Lomé ve büyük kasabalarda iyi 4G; kırsalda ve kuzeyde zayıflar.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Sınırlı",
+    "bestCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Temel",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.30 - 1.50 $",
+    "dailyPassUsd": "Günlük bilet yok",
+    "popularRideApps": [
+     "Gozem",
+     "Zemidjan",
+     "Paylaşımlı taksi"
+    ],
+    "taxiAdvice": "Lomé'de Gozem uygulamasıyla sabit fiyatlı moto veya araç taksi çağırabilirsiniz. Sarı taksilerde taksimetre yoktur, fiyat önceden konuşulur; şehirlerarası yolculuk için kalabalık paylaşımlı taksiler ve otobüsler kullanılır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Orta – Yüksek",
+    "flightTip": "Lomé (LFW), ASKY Airlines ve Ethiopian Airlines'ın bölgesel merkezidir; İstanbul, Paris, Brüksel veya Addis Ababa aktarmalı biletleri karşılaştırın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Herkesi tek tek selamlamak ve hal hatır sormak önemlidir.",
+     "Yemekte ve bir şey uzatırken sağ eli kullanın.",
+     "Vodun tapınaklarına ve törenlerine yalnızca izinle girin; fotoğraf genellikle ücretlidir.",
+     "Köylerde şefe (chef du village) kısa bir ziyaret ve küçük bir hediye nezakettir."
+    ],
+    "festivals": [
+     "Epe Ekpe (Guin halkının yeni yıl töreni) – Eylül, Glidji/Aného",
+     "Evala (Kabiye güreş törenleri) – Temmuz, Kara",
+     "Bağımsızlık Günü – 27 Nisan"
+    ],
+    "lifestyle": "Hareketli pazarlar, renkli Hollanda baskı kumaşlar (pagne), canlı müzik ve Vodun gelenekleriyle iç içe Hristiyan ve Müslüman yaşam. Lomé'nin pazar kadınları ('Nana Benz') ünlüdür."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Koutammakou, Batammariba Ülkesi – UNESCO (takienta evleri)",
+     "Kpalimé ve Agou Dağı (ülkenin en yüksek noktası)",
+     "Togo Gölü ve Togoville",
+     "Akodessewa Fetiş Pazarı (Lomé)",
+     "Lomé Grand Marché ve Bağımsızlık Anıtı",
+     "Kpimé ve Womé şelaleleri"
+    ],
+    "bestSeasons": "Kasım – Şubat (kurak mevsim; harmattan tozu olabilir) ve Temmuz – Ağustos (güneyde kısa kurak dönem)",
+    "travelStyleTip": "Togo dar ve uzun bir ülkedir; güneyde Lomé–Kpalimé ikilisi birkaç günde gezilir, kuzeydeki Koutammakou için Kara üzerinden en az iki gün ayırın."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan (~%45), geleneksel inançlar/Vodun (~%35), Müslüman (~%15-20)",
+    "respectNorms": "Birçok kişi kilise ya da camiye giderken Vodun geleneklerini de sürdürür; kutsal ormanlara ve tapınaklara izinsiz girmeyin, ritüelleri alaya almayın.",
+    "sacredSites": [
+     "Togoville Katedrali ve Meryem Ana tapınağı",
+     "Lomé Sacré-Cœur Katedrali",
+     "Glidji'deki Vodun kutsal alanı"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Fransızca (resmî); Ewe ve Kabiye ulusal diller",
+    "englishProficiency": "Düşük; Fransızca bilmek çok işe yarar.",
+    "phrases": [
+     {
+      "phrase": "Woezɔ",
+      "meaning": "Hoş geldiniz",
+      "translation": "Hoş geldiniz",
+      "pronunciation": "wo-e-ZO"
+     },
+     {
+      "phrase": "Akpe",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "ak-PE"
+     },
+     {
+      "phrase": "Meɖe kuku",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "me-de KU-ku"
+     },
+     {
+      "phrase": "Ŋdi",
+      "meaning": "Günaydın",
+      "translation": "Günaydın",
+      "pronunciation": "n-DI"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Ne kadar? (Fransızca)",
+      "translation": "Ne kadar? (Fransızca)",
+      "pronunciation": "se kom-BYAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ewe halkı 17. yüzyılda Notsé'den güneye yayıldı. 1884'te Togoville'de imzalanan antlaşmayla Almanya'nın 'Togoland' himayesi kuruldu. Birinci Dünya Savaşı'ndan sonra bölge İngiltere ve Fransa arasında bölündü; Fransız Togo'su 27 Nisan 1960'ta bağımsız oldu. Lomé limanı bugün Batı Afrika'nın en önemli aktarma limanlarından biridir.",
+    "milestones": [
+     "17. yüzyıl – Ewe halkının Notsé'den göçü",
+     "1884 – Alman Togoland himayesi",
+     "1919 – İngiliz ve Fransız yönetimine bölünme",
+     "27 Nisan 1960 – Bağımsızlık"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fufu ve palm cevizi sosu (sauce graine)",
+     "Akoumé (mısır lapası) ve gboma sosu",
+     "Ayimolou (pirinç ve fasulye, kırmızı biber sosuyla)"
+    ],
+    "traditionalDrinks": [
+     "Tchoukoutou (darı birası, kuzeyde)",
+     "Sodabi (palmiye şarabından damıtılmış içki)",
+     "Bissap (hibiskus şerbeti)"
+    ],
+    "streetFoodAndDesserts": [
+     "Koliko (kızarmış yam)",
+     "Ablo (buharda pişmiş mısır-pirinç keki)",
+     "Izgara balık ve kızarmış plantain (alloco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Emmanuel Adebayor (futbolcu, Afrika'da Yılın Futbolcusu 2008)",
+     "Benjamin Boukpeti (2008 olimpiyat kano bronzu)",
+     "King Mensah (müzisyen)"
+    ],
+    "strongSectors": [
+     "Lomé Limanı ve lojistik",
+     "Fosfat madenciliği",
+     "Pamuk, kahve ve kakao"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit hâkimdir; kart büyük otel ve süpermarketlerde geçer. Mobil para (T-Money, Flooz/Moov Money) çok yaygındır. CFA frangı euroya sabittir, euro bozdurmak kolaydır.",
+    "economicPillars": "Liman ve transit ticaret, fosfat, tarım (pamuk, kahve, kakao) ve bankacılık (Ecobank genel merkezi Lomé'dedir).",
+    "tippingCulture": "Bahşiş zorunlu değildir; restoranlarda %5-10 ve rehberlere küçük bahşiş takdir edilir."
+   }
+  },
+  "itin": {
+   "routeName": "Togo Boydan Boya: Lomé, Kpalimé ve Koutammakou",
+   "routeSummary": "Lomé'nin pazarları ve Togo Gölü'yle başlayıp yeşil Kpalimé tepelerinde şelale yürüyüşleriyle devam eden ve kuzeyde UNESCO listesindeki Batammariba kale evleriyle biten 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "7-9 Günlük Rota",
+   "bestSeason": "Kasım – Şubat (kurak mevsim; harmattan tozu olabilir) ve Temmuz – Ağustos (güneyde kısa kurak dönem)",
+   "transportMode": "Şoförlü araç önerilir; alternatif olarak şehirlerarası otobüs/paylaşımlı taksi ve Lomé'de Gozem",
+   "paceLevel": "Dengeli (Kültür + Doğa)",
+   "stops": [
+    {
+     "name": "1. Durak: Lomé ve Togo Gölü (Pazarlar ve Vodun)",
+     "recommendedDuration": "2-3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Grand Marché ve Nana Benz kumaş tüccarları",
+      "Akodessewa Fetiş Pazarı",
+      "Pirogla Togoville'e geçiş",
+      "Bağımsızlık Anıtı"
+     ],
+     "activities": [
+      "Grand Marché'de pagne kumaş alıp terziye diktirin.",
+      "Togo Gölü'nde pirogla Togoville katedraline gidin.",
+      "Akşam canlı müzikli bir maquis'de (yerel lokanta) yemek yiyin."
+     ],
+     "foodAndDrinks": [
+      "Izgara balık ve akoumé",
+      "Ayimolou",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Lomé plajında güçlü akıntılar vardır; denize girmeyin, gece plajda yürümeyin.",
+      "Fetiş pazarında fiyatı ve fotoğraf ücretini girişte netleştirin."
+     ],
+     "mapsQuery": "Lomé, Togo",
+     "stopNumber": 1
+    },
+    {
+     "name": "2. Durak: Kpalimé (Tepeler, Şelaleler ve Kahve)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Agou Dağı (986 m)",
+      "Kpimé ve Womé şelaleleri",
+      "Klouto ormanı ve kelebekleri"
+     ],
+     "activities": [
+      "Rehberle Klouto ormanında kelebek yürüyüşü yapın.",
+      "Kahve ve kakao plantasyonlarını ziyaret edin.",
+      "Kpalimé zanaat merkezinde batik ve ahşap oymacılığına bakın."
+     ],
+     "foodAndDrinks": [
+      "Fufu ve palm cevizi sosu",
+      "Yerel kahve",
+      "Sodabi (dikkatli için)"
+     ],
+     "criticalTips": [
+      "Yağmur mevsiminde patikalar kayganlaşır; iyi tabanlı ayakkabı giyin.",
+      "Şelalelerde giriş ücreti ve rehber ücreti ayrı olabilir."
+     ],
+     "mapsQuery": "Kpalimé, Togo",
+     "stopNumber": 2
+    },
+    {
+     "name": "3. Durak: Kara ve Koutammakou (Batammariba Kale Evleri)",
+     "recommendedDuration": "2-3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Takienta kerpiç kale evleri (UNESCO)",
+      "Nadoba köyü",
+      "Kara'nın pazarları ve Kabiye kültürü"
+     ],
+     "activities": [
+      "Yerel rehberle bir takienta evinin içini gezin.",
+      "Kandé'den Koutammakou köylerine günübirlik tur yapın.",
+      "Temmuz'daysanız Kara'da Evala güreşlerini izleyin."
+     ],
+     "foodAndDrinks": [
+      "Tchoukoutou (darı birası)",
+      "Yam püresi (fufu) ve et sosu"
+     ],
+     "criticalTips": [
+      "Savanes bölgesine (Dapaong yönü) devam etmeyin; resmî uyarılar bu bölgeye gidilmemesini öneriyor.",
+      "Köylerde fotoğraf ve ziyaret ücretini rehberle önceden konuşun."
+     ],
+     "mapsQuery": "Koutammakou, Togo",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fufu ve sauce graine",
+     "Akoumé",
+     "Ayimolou"
+    ],
+    "drinks": [
+     "Tchoukoutou",
+     "Sodabi",
+     "Bissap"
+    ],
+    "streetFoods": [
+     "Koliko",
+     "Ablo",
+     "Alloco"
+    ],
+    "diningAdvice": "Yerel lezzetleri 'maquis' denen sade lokantalarda deneyin; sokakta taze pişen ve sıcak servis edilen yemekleri seçin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sarı humma aşı sertifikası (zorunlu)",
+     "Sıtma ilacı ve sivrisinek kovucu",
+     "Hafif, terletmeyen ve kapalı kıyafetler",
+     "Euro nakit ve küçük CFA banknotları"
+    ],
+    "safetyAndEtiquette": [
+     "Vodun törenlerinde ve köylerde fotoğraf için izin isteyin.",
+     "Gece karayoluyla seyahat etmeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Fransız tipi (C/E) iki yuvarlak pimli prizler; Türkiye fişleri genellikle sorunsuz takılır. Kesintiler için powerbank faydalıdır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su veya 'pure water' poşetleri yerine markalı şişe su tercih edin.",
+    "vaccines": [
+     "Sarı humma (giriş için sertifika zorunlu)",
+     "Hepatit A ve tifo",
+     "Menenjit (kuzeye gidecekler için)",
+     "Sıtma profilaksisi"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "8200"
+   },
+   "tipping": {
+    "custom": "Bahşiş isteğe bağlıdır; restoranlarda %5-10 bırakılabilir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Köy rehberlerine ve şoförlere günlük küçük bahşiş yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistler için KDV iadesi yok",
+    "minSpend": "—",
+    "customsNote": "Togo'da Tax-Free sistemi yoktur. Fildişi ve yaban hayvanı ürünlerini almayın; antik görünümlü maskeler için satıcıdan fatura isteyin."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "airportSimTrapWarning": "eSIM seçenekleri sınırlıdır; pasaportla şehirdeki Togocom veya Moov mağazasından SIM almak en ucuzudur. Sokak satıcılarından kayıtsız SIM almayın."
+   },
+   "touristScams": [
+    {
+     "title": "Zemidjan fiyat oyunu",
+     "desc": "Motosiklet taksi sürücüsü varışta başta konuşulandan fazlasını ister.",
+     "tip": "Gozem uygulamasıyla sabit fiyatlı yolculuk yapın veya bozuk parayla tam ücreti hazır tutun."
+    },
+    {
+     "title": "Fetiş pazarında 'özel ritüel'",
+     "desc": "Ziyaretçilere pahalı muska ve 'kişisel ritüel' satılmaya çalışılır.",
+     "tip": "Yalnızca giriş ücretini ödeyin; ilgilenmiyorsanız nazikçe ama net reddedin."
+    },
+    {
+     "title": "Plajda dikkat dağıtma",
+     "desc": "Sohbet ya da satış bahanesiyle yaklaşan biri dikkatinizi dağıtırken ortağı çantanızı alır.",
+     "tip": "Plaja değerli eşya götürmeyin ve gece plajdan uzak durun."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "West African CFA franc (XOF)",
+   "plugType": "C, E (220V, 50Hz)",
+   "bestMonths": "November – February (dry season; harmattan dust possible) and July – August (short dry spell in the south)",
+   "safety": {
+    "crimeRateSummary": "Bag snatching and pickpocketing are common in Lomé, especially on the beach and around the Grand Marché. Jihadist attacks near the Burkina Faso border in the northern Savanes region mean official advice is to avoid that area.",
+    "commonScams": [
+     "Zemidjan (motorbike taxi) drivers raising the price mid-ride",
+     "Inflated 'ritual' and photo fees at the Akodessewa fetish market",
+     "Friendly beach approaches used to distract and steal"
+    ],
+    "safeTravelTips": [
+     "Don't walk on Lomé beach at night or swim there (very strong currents).",
+     "If you take a zemidjan, ask for a helmet and fix the price first.",
+     "Don't go to the Savanes region (Dapaong and beyond); follow current advice for the north."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "8200",
+     "general": "117"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Lomé and large towns; weaker in rural areas and the north.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Limited",
+    "bestCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Basic",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.30 - 1.50 $",
+    "dailyPassUsd": "No day pass",
+    "popularRideApps": [
+     "Gozem",
+     "Zemidjan",
+     "Shared taxis"
+    ],
+    "taxiAdvice": "In Lomé you can book fixed-price moto or car taxis with the Gozem app. Yellow taxis are unmetered, so agree the price first; between towns there are crowded shared taxis and buses."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Moderate – High",
+    "flightTip": "Lomé (LFW) is a regional hub for ASKY Airlines and Ethiopian Airlines; compare connections via Istanbul, Paris, Brussels or Addis Ababa."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greeting everyone individually and asking how they are is important.",
+     "Use your right hand for eating and passing things.",
+     "Enter Vodun shrines and ceremonies only with permission; photos usually cost extra.",
+     "In villages, a short courtesy call on the chief with a small gift is polite."
+    ],
+    "festivals": [
+     "Epe Ekpe (Guin New Year) – September, Glidji/Aného",
+     "Evala (Kabye wrestling rites) – July, Kara",
+     "Independence Day – 27 April"
+    ],
+    "lifestyle": "Busy markets, colourful wax-print cloth (pagne), live music and Christian and Muslim life interwoven with Vodun traditions. Lomé's market women ('Nana Benz') are famous."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Koutammakou, Land of the Batammariba – UNESCO (takienta houses)",
+     "Kpalimé and Mount Agou (the country's highest point)",
+     "Lake Togo and Togoville",
+     "Akodessewa Fetish Market (Lomé)",
+     "Lomé Grand Marché and Independence Monument",
+     "Kpimé and Womé waterfalls"
+    ],
+    "bestSeasons": "November – February (dry season; harmattan dust possible) and July – August (short dry spell in the south)",
+    "travelStyleTip": "Togo is long and narrow; the Lomé–Kpalimé pair in the south takes a few days, and Koutammakou in the north needs at least two days via Kara."
+   },
+   "religion": {
+    "primaryReligions": "Christian (~45%), traditional beliefs/Vodun (~35%), Muslim (~15-20%)",
+    "respectNorms": "Many people attend church or mosque while keeping Vodun traditions; don't enter sacred forests or shrines without permission, and never mock rituals.",
+    "sacredSites": [
+     "Togoville Cathedral and Marian shrine",
+     "Sacred Heart Cathedral, Lomé",
+     "Vodun sacred site at Glidji"
+    ]
+   },
+   "language": {
+    "officialLanguages": "French (official); Ewe and Kabye are national languages",
+    "englishProficiency": "Low; French is very useful.",
+    "phrases": [
+     {
+      "phrase": "Woezɔ",
+      "meaning": "Welcome",
+      "translation": "Welcome",
+      "pronunciation": "wo-e-ZO"
+     },
+     {
+      "phrase": "Akpe",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "ak-PE"
+     },
+     {
+      "phrase": "Meɖe kuku",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "me-de KU-ku"
+     },
+     {
+      "phrase": "Ŋdi",
+      "meaning": "Good morning",
+      "translation": "Good morning",
+      "pronunciation": "n-DI"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "How much is it? (French)",
+      "translation": "How much is it? (French)",
+      "pronunciation": "se kom-BYAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Ewe spread south from Notsé in the 17th century. An 1884 treaty signed at Togoville created the German protectorate of 'Togoland'. After World War I the territory was split between Britain and France; French Togo became independent on 27 April 1960. Today the port of Lomé is one of West Africa's key transhipment hubs.",
+    "milestones": [
+     "17th century – Ewe migration from Notsé",
+     "1884 – German protectorate of Togoland",
+     "1919 – Division under British and French rule",
+     "27 April 1960 – Independence"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fufu with palm-nut sauce (sauce graine)",
+     "Akoumé (maize paste) with gboma sauce",
+     "Ayimolou (rice and beans with chilli sauce)"
+    ],
+    "traditionalDrinks": [
+     "Tchoukoutou (millet beer, in the north)",
+     "Sodabi (spirit distilled from palm wine)",
+     "Bissap (hibiscus drink)"
+    ],
+    "streetFoodAndDesserts": [
+     "Koliko (fried yam)",
+     "Ablo (steamed maize-rice cakes)",
+     "Grilled fish and fried plantain (alloco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Emmanuel Adebayor (footballer, African Footballer of the Year 2008)",
+     "Benjamin Boukpeti (2008 Olympic canoe slalom bronze)",
+     "King Mensah (musician)"
+    ],
+    "strongSectors": [
+     "Port of Lomé and logistics",
+     "Phosphate mining",
+     "Cotton, coffee and cocoa"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash dominates; cards work in large hotels and supermarkets. Mobile money (T-Money, Flooz/Moov Money) is very common. The CFA franc is pegged to the euro, so euros are easy to change.",
+    "economicPillars": "Port and transit trade, phosphates, agriculture (cotton, coffee, cocoa) and banking (Ecobank is headquartered in Lomé).",
+    "tippingCulture": "Tipping is optional; 5-10% in restaurants and small tips for guides are appreciated."
+   }
+  },
+  "itin": {
+   "routeName": "Togo End to End: Lomé, Kpalimé & Koutammakou",
+   "routeSummary": "An 8-day route from Lomé's markets and Lake Togo through waterfall hikes in the green Kpalimé hills to the UNESCO-listed Batammariba tower houses in the north.",
+   "totalDays": 8,
+   "idealDurationText": "7-9 Day Itinerary",
+   "bestSeason": "November – February (dry season; harmattan dust possible) and July – August (short dry spell in the south)",
+   "transportMode": "Car with driver recommended; alternatively intercity buses/shared taxis and Gozem in Lomé",
+   "paceLevel": "Balanced (Culture & Nature)",
+   "stops": [
+    {
+     "name": "Stop 1: Lomé & Lake Togo (Markets & Vodun)",
+     "recommendedDuration": "2-3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Grand Marché and the Nana Benz cloth traders",
+      "Akodessewa Fetish Market",
+      "Pirogue crossing to Togoville",
+      "Independence Monument"
+     ],
+     "activities": [
+      "Buy pagne cloth at the Grand Marché and have it tailored.",
+      "Take a pirogue across Lake Togo to Togoville's cathedral.",
+      "Dine at a maquis (local eatery) with live music in the evening."
+     ],
+     "foodAndDrinks": [
+      "Grilled fish with akoumé",
+      "Ayimolou",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Lomé beach has strong currents; don't swim, and don't walk there at night.",
+      "Settle the entry and photo fees at the fetish market up front."
+     ],
+     "mapsQuery": "Lomé, Togo",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stop 2: Kpalimé (Hills, Waterfalls & Coffee)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Mount Agou (986 m)",
+      "Kpimé and Womé waterfalls",
+      "Klouto forest and its butterflies"
+     ],
+     "activities": [
+      "Do a guided butterfly walk in Klouto forest.",
+      "Visit coffee and cocoa plantations.",
+      "See batik and woodcarving at the Kpalimé craft centre."
+     ],
+     "foodAndDrinks": [
+      "Fufu with palm-nut sauce",
+      "Local coffee",
+      "Sodabi (drink carefully)"
+     ],
+     "criticalTips": [
+      "Trails get slippery in the rainy season; wear shoes with good grip.",
+      "Waterfalls may charge separate entry and guide fees."
+     ],
+     "mapsQuery": "Kpalimé, Togo",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stop 3: Kara & Koutammakou (Batammariba Tower Houses)",
+     "recommendedDuration": "2-3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Takienta mud tower houses (UNESCO)",
+      "Nadoba village",
+      "Kara's markets and Kabye culture"
+     ],
+     "activities": [
+      "Tour the inside of a takienta house with a local guide.",
+      "Make a day trip from Kandé to the Koutammakou villages.",
+      "If you're there in July, watch the Evala wrestling in Kara."
+     ],
+     "foodAndDrinks": [
+      "Tchoukoutou (millet beer)",
+      "Pounded yam (fufu) with meat sauce"
+     ],
+     "criticalTips": [
+      "Don't continue into the Savanes region (towards Dapaong); official advice is to avoid it.",
+      "Agree village visit and photo fees with your guide in advance."
+     ],
+     "mapsQuery": "Koutammakou, Togo",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fufu with sauce graine",
+     "Akoumé",
+     "Ayimolou"
+    ],
+    "drinks": [
+     "Tchoukoutou",
+     "Sodabi",
+     "Bissap"
+    ],
+    "streetFoods": [
+     "Koliko",
+     "Ablo",
+     "Alloco"
+    ],
+    "diningAdvice": "Try local food in simple eateries called 'maquis'; on the street choose freshly cooked, hot dishes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yellow fever vaccination certificate (mandatory)",
+     "Malaria tablets and insect repellent",
+     "Light, breathable, modest clothing",
+     "Euro cash and small CFA notes"
+    ],
+    "safetyAndEtiquette": [
+     "Ask permission before photographing Vodun ceremonies and villages.",
+     "Avoid road travel at night."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "French-style (C/E) two-round-pin sockets; Turkish plugs usually fit. A power bank helps during outages."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn't drinkable; prefer branded bottled water over 'pure water' sachets.",
+    "vaccines": [
+     "Yellow fever (certificate required for entry)",
+     "Hepatitis A and typhoid",
+     "Meningitis (if going north)",
+     "Malaria prophylaxis"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "8200"
+   },
+   "tipping": {
+    "custom": "Tipping is optional; 5-10% can be left in restaurants.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Small daily tips for village guides and drivers are common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "—",
+    "customsNote": "Togo has no tax-free scheme. Don't buy ivory or wildlife products; ask for a receipt for antique-looking masks."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "airportSimTrapWarning": "eSIM options are limited; buying a Togocom or Moov SIM with your passport at an official shop is cheapest. Don't buy unregistered SIMs from street sellers."
+   },
+   "touristScams": [
+    {
+     "title": "Zemidjan fare games",
+     "desc": "The motorbike taxi driver demands more than agreed on arrival.",
+     "tip": "Use Gozem for fixed prices or have the exact fare ready in small change."
+    },
+    {
+     "title": "'Special ritual' at the fetish market",
+     "desc": "Visitors are pushed to buy expensive amulets and 'personal rituals'.",
+     "tip": "Pay only the entry fee; if not interested, decline politely but firmly."
+    },
+    {
+     "title": "Beach distraction theft",
+     "desc": "Someone chats or sells to distract you while an accomplice takes your bag.",
+     "tip": "Take no valuables to the beach and avoid it after dark."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Westafrikanischer CFA-Franc (XOF)",
+   "plugType": "C, E (220V, 50Hz)",
+   "bestMonths": "November – Februar (Trockenzeit; Harmattan-Staub möglich) und Juli – August (kurze Trockenphase im Süden)",
+   "safety": {
+    "crimeRateSummary": "In Lomé sind Taschendiebstahl und Handtaschenraub häufig, besonders am Strand und rund um den Grand Marché. Wegen dschihadistischer Angriffe an der Grenze zu Burkina Faso raten offizielle Hinweise von der nördlichen Region Savanes ab.",
+    "commonScams": [
+     "Zemidjan-Fahrer (Mototaxi) erhöhen unterwegs den Preis",
+     "Überhöhte 'Ritual'- und Fotogebühren am Fetischmarkt Akodessewa",
+     "Freundliche Annäherung am Strand zur Ablenkung und zum Diebstahl"
+    ],
+    "safeTravelTips": [
+     "Nachts nicht am Strand von Lomé spazieren und dort nicht baden (sehr starke Strömungen).",
+     "Bei Zemidjan-Fahrten Helm verlangen und Preis vorher festlegen.",
+     "Nicht in die Region Savanes (Dapaong und nördlich) reisen; aktuelle Hinweise für den Norden beachten."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "8200",
+     "general": "117"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Lomé und größeren Orten; schwächer auf dem Land und im Norden.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Eingeschränkt",
+    "bestCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Einfach",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "0.30 - 1.50 $",
+    "dailyPassUsd": "Keine Tageskarte",
+    "popularRideApps": [
+     "Gozem",
+     "Zemidjan",
+     "Sammeltaxis"
+    ],
+    "taxiAdvice": "In Lomé lassen sich mit der App Gozem Moto- oder Autotaxis zum Festpreis buchen. Gelbe Taxis haben kein Taxameter – Preis vorher vereinbaren; zwischen Städten fahren volle Sammeltaxis und Busse."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Mittel – Hoch",
+    "flightTip": "Lomé (LFW) ist regionales Drehkreuz von ASKY Airlines und Ethiopian Airlines; Verbindungen über Istanbul, Paris, Brüssel oder Addis Abeba vergleichen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Es ist wichtig, jeden einzeln zu grüßen und nach dem Befinden zu fragen.",
+     "Zum Essen und Reichen die rechte Hand benutzen.",
+     "Vodun-Schreine und Zeremonien nur mit Erlaubnis betreten; Fotos kosten meist extra.",
+     "In Dörfern gehört ein kurzer Höflichkeitsbesuch beim Dorfchef mit kleinem Geschenk dazu."
+    ],
+    "festivals": [
+     "Epe Ekpe (Neujahr der Guin) – September, Glidji/Aného",
+     "Evala (Ringkampf-Initiation der Kabiye) – Juli, Kara",
+     "Unabhängigkeitstag – 27. April"
+    ],
+    "lifestyle": "Lebhafte Märkte, bunte Wax-Print-Stoffe (Pagne), Livemusik und christliches wie muslimisches Leben, verwoben mit Vodun-Traditionen. Berühmt sind Lomés Marktfrauen ('Nana Benz')."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Koutammakou, Land der Batammariba – UNESCO (Takienta-Häuser)",
+     "Kpalimé und Mont Agou (höchster Punkt des Landes)",
+     "Togosee und Togoville",
+     "Fetischmarkt Akodessewa (Lomé)",
+     "Grand Marché und Unabhängigkeitsdenkmal in Lomé",
+     "Wasserfälle Kpimé und Womé"
+    ],
+    "bestSeasons": "November – Februar (Trockenzeit; Harmattan-Staub möglich) und Juli – August (kurze Trockenphase im Süden)",
+    "travelStyleTip": "Togo ist lang und schmal; Lomé und Kpalimé im Süden schafft man in wenigen Tagen, für Koutammakou im Norden mindestens zwei Tage über Kara einplanen."
+   },
+   "religion": {
+    "primaryReligions": "Christen (~45 %), traditionelle Religionen/Vodun (~35 %), Muslime (~15-20 %)",
+    "respectNorms": "Viele besuchen Kirche oder Moschee und pflegen zugleich Vodun-Traditionen; heilige Haine und Schreine nicht ohne Erlaubnis betreten, Rituale nie verspotten.",
+    "sacredSites": [
+     "Kathedrale und Marienheiligtum von Togoville",
+     "Herz-Jesu-Kathedrale, Lomé",
+     "Vodun-Heiligtum in Glidji"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Französisch (Amtssprache); Ewe und Kabiye sind Nationalsprachen",
+    "englishProficiency": "Gering; Französisch ist sehr nützlich.",
+    "phrases": [
+     {
+      "phrase": "Woezɔ",
+      "meaning": "Willkommen",
+      "translation": "Willkommen",
+      "pronunciation": "wo-e-ZO"
+     },
+     {
+      "phrase": "Akpe",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "ak-PE"
+     },
+     {
+      "phrase": "Meɖe kuku",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "me-de KU-ku"
+     },
+     {
+      "phrase": "Ŋdi",
+      "meaning": "Guten Morgen",
+      "translation": "Guten Morgen",
+      "pronunciation": "n-DI"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Wie viel kostet das? (Französisch)",
+      "translation": "Wie viel kostet das? (Französisch)",
+      "pronunciation": "se kom-BYAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Ewe breiteten sich im 17. Jahrhundert von Notsé nach Süden aus. Ein 1884 in Togoville unterzeichneter Vertrag begründete das deutsche Schutzgebiet 'Togoland'. Nach dem Ersten Weltkrieg wurde es zwischen Großbritannien und Frankreich geteilt; Französisch-Togo wurde am 27. April 1960 unabhängig. Der Hafen von Lomé ist heute ein wichtiger Umschlagplatz Westafrikas.",
+    "milestones": [
+     "17. Jh. – Auswanderung der Ewe aus Notsé",
+     "1884 – Deutsches Schutzgebiet Togoland",
+     "1919 – Teilung zwischen Großbritannien und Frankreich",
+     "27. April 1960 – Unabhängigkeit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fufu mit Palmnusssoße (Sauce graine)",
+     "Akoumé (Maisbrei) mit Gboma-Soße",
+     "Ayimolou (Reis und Bohnen mit Chilisoße)"
+    ],
+    "traditionalDrinks": [
+     "Tchoukoutou (Hirsebier, im Norden)",
+     "Sodabi (aus Palmwein destillierter Schnaps)",
+     "Bissap (Hibiskusgetränk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Koliko (frittierte Yamswurzel)",
+     "Ablo (gedämpfte Mais-Reis-Küchlein)",
+     "Gegrillter Fisch und frittierte Kochbananen (Alloco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Emmanuel Adebayor (Fußballer, Afrikas Fußballer des Jahres 2008)",
+     "Benjamin Boukpeti (Olympia-Bronze im Kanuslalom 2008)",
+     "King Mensah (Musiker)"
+    ],
+    "strongSectors": [
+     "Hafen Lomé und Logistik",
+     "Phosphatabbau",
+     "Baumwolle, Kaffee und Kakao"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld dominiert; Karten in großen Hotels und Supermärkten. Mobile Money (T-Money, Flooz/Moov Money) ist sehr verbreitet. Der CFA-Franc ist an den Euro gekoppelt, Euro lassen sich leicht tauschen.",
+    "economicPillars": "Hafen- und Transithandel, Phosphat, Landwirtschaft (Baumwolle, Kaffee, Kakao) und Bankwesen (Ecobank hat ihren Sitz in Lomé).",
+    "tippingCulture": "Trinkgeld ist freiwillig; 5-10 % in Restaurants und kleine Beträge für Guides werden geschätzt."
+   }
+  },
+  "itin": {
+   "routeName": "Togo von Süd nach Nord: Lomé, Kpalimé & Koutammakou",
+   "routeSummary": "8-tägige Route von Lomés Märkten und dem Togosee über Wasserfallwanderungen in den grünen Hügeln von Kpalimé bis zu den UNESCO-Turmhäusern der Batammariba im Norden.",
+   "totalDays": 8,
+   "idealDurationText": "7-9-Tage-Route",
+   "bestSeason": "November – Februar (Trockenzeit; Harmattan-Staub möglich) und Juli – August (kurze Trockenphase im Süden)",
+   "transportMode": "Auto mit Fahrer empfohlen; alternativ Überlandbusse/Sammeltaxis und Gozem in Lomé",
+   "paceLevel": "Ausgewogen (Kultur & Natur)",
+   "stops": [
+    {
+     "name": "Stopp 1: Lomé & Togosee (Märkte & Vodun)",
+     "recommendedDuration": "2-3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Grand Marché und die Stoffhändlerinnen 'Nana Benz'",
+      "Fetischmarkt Akodessewa",
+      "Pirogenfahrt nach Togoville",
+      "Unabhängigkeitsdenkmal"
+     ],
+     "activities": [
+      "Am Grand Marché Pagne-Stoff kaufen und schneidern lassen.",
+      "Mit der Piroge über den Togosee zur Kathedrale von Togoville fahren.",
+      "Abends in einem Maquis (Lokal) mit Livemusik essen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Fisch mit Akoumé",
+      "Ayimolou",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Am Strand von Lomé starke Strömungen; nicht baden und nachts nicht dort gehen.",
+      "Eintritts- und Fotogebühr am Fetischmarkt vorab klären."
+     ],
+     "mapsQuery": "Lomé, Togo",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stopp 2: Kpalimé (Hügel, Wasserfälle & Kaffee)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Mont Agou (986 m)",
+      "Wasserfälle Kpimé und Womé",
+      "Wald von Klouto und seine Schmetterlinge"
+     ],
+     "activities": [
+      "Eine geführte Schmetterlingswanderung im Wald von Klouto machen.",
+      "Kaffee- und Kakaoplantagen besuchen.",
+      "Im Kunsthandwerkszentrum Kpalimé Batik und Holzschnitzerei ansehen."
+     ],
+     "foodAndDrinks": [
+      "Fufu mit Palmnusssoße",
+      "Lokaler Kaffee",
+      "Sodabi (vorsichtig genießen)"
+     ],
+     "criticalTips": [
+      "In der Regenzeit werden Pfade rutschig; Schuhe mit gutem Profil tragen.",
+      "An Wasserfällen können Eintritt und Guide getrennt kosten."
+     ],
+     "mapsQuery": "Kpalimé, Togo",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stopp 3: Kara & Koutammakou (Turmhäuser der Batammariba)",
+     "recommendedDuration": "2-3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Takienta-Lehmturmhäuser (UNESCO)",
+      "Dorf Nadoba",
+      "Märkte von Kara und Kabiye-Kultur"
+     ],
+     "activities": [
+      "Mit lokalem Guide ein Takienta-Haus von innen besichtigen.",
+      "Tagesausflug von Kandé in die Dörfer von Koutammakou.",
+      "Im Juli die Evala-Ringkämpfe in Kara ansehen."
+     ],
+     "foodAndDrinks": [
+      "Tchoukoutou (Hirsebier)",
+      "Gestampfter Yams (Fufu) mit Fleischsoße"
+     ],
+     "criticalTips": [
+      "Nicht weiter in die Region Savanes (Richtung Dapaong) fahren; offizielle Hinweise raten davon ab.",
+      "Besuchs- und Fotogebühren in Dörfern vorher mit dem Guide klären."
+     ],
+     "mapsQuery": "Koutammakou, Togo",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fufu mit Sauce graine",
+     "Akoumé",
+     "Ayimolou"
+    ],
+    "drinks": [
+     "Tchoukoutou",
+     "Sodabi",
+     "Bissap"
+    ],
+    "streetFoods": [
+     "Koliko",
+     "Ablo",
+     "Alloco"
+    ],
+    "diningAdvice": "Lokale Küche in einfachen Lokalen namens 'Maquis' probieren; auf der Straße frisch gekochte, heiße Speisen wählen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Gelbfieber-Impfnachweis (Pflicht)",
+     "Malariatabletten und Mückenschutz",
+     "Leichte, atmungsaktive und dezente Kleidung",
+     "Euro in bar und kleine CFA-Scheine"
+    ],
+    "safetyAndEtiquette": [
+     "Vor Fotos bei Vodun-Zeremonien und in Dörfern um Erlaubnis bitten.",
+     "Nachts keine Überlandfahrten."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Französische Steckdosen (C/E) mit zwei Rundstiften; europäische Stecker passen meist. Powerbank für Stromausfälle hilfreich."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinkbar; Markenwasser in Flaschen statt 'Pure Water'-Beutel bevorzugen.",
+    "vaccines": [
+     "Gelbfieber (Nachweis bei Einreise Pflicht)",
+     "Hepatitis A und Typhus",
+     "Meningitis (bei Reisen in den Norden)",
+     "Malariaprophylaxe"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "8200"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist freiwillig; in Restaurants 5-10 %.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Kleine Tagestrinkgelder für Dorfguides und Fahrer sind üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "—",
+    "customsNote": "Togo hat kein Tax-Free-System. Kein Elfenbein oder Wildtierprodukte kaufen; für antik wirkende Masken eine Quittung verlangen."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "airportSimTrapWarning": "eSIM-Angebote sind begrenzt; am günstigsten ist eine Togocom- oder Moov-SIM mit Reisepass im offiziellen Shop. Keine unregistrierten SIMs von Straßenhändlern kaufen."
+   },
+   "touristScams": [
+    {
+     "title": "Preistricks bei Zemidjans",
+     "desc": "Der Mototaxifahrer verlangt bei Ankunft mehr als vereinbart.",
+     "tip": "Gozem für Festpreise nutzen oder den genauen Betrag in Kleingeld bereithalten."
+    },
+    {
+     "title": "'Spezialritual' am Fetischmarkt",
+     "desc": "Besuchern werden teure Amulette und 'persönliche Rituale' aufgedrängt.",
+     "tip": "Nur den Eintritt zahlen; bei Desinteresse höflich, aber bestimmt ablehnen."
+    },
+    {
+     "title": "Ablenkungsdiebstahl am Strand",
+     "desc": "Jemand verwickelt Sie ins Gespräch oder verkauft etwas, während ein Komplize die Tasche nimmt.",
+     "tip": "Keine Wertsachen an den Strand mitnehmen und ihn nachts meiden."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Franco CFA de África Occidental (XOF)",
+   "plugType": "C, E (220V, 50Hz)",
+   "bestMonths": "Noviembre – febrero (estación seca; posible polvo del harmattan) y julio – agosto (breve periodo seco en el sur)",
+   "safety": {
+    "crimeRateSummary": "En Lomé son frecuentes los tirones y carteristas, sobre todo en la playa y junto al Grand Marché. Por ataques yihadistas cerca de la frontera con Burkina Faso, los avisos oficiales desaconsejan la región norteña de Savanes.",
+    "commonScams": [
+     "Conductores de zemidjan (mototaxi) que suben el precio a mitad de viaje",
+     "Tarifas infladas de 'rituales' y fotos en el mercado de fetiches de Akodessewa",
+     "Acercamientos amistosos en la playa para distraer y robar"
+    ],
+    "safeTravelTips": [
+     "No pasee por la playa de Lomé de noche ni se bañe allí (corrientes muy fuertes).",
+     "Si usa un zemidjan, pida casco y fije el precio antes.",
+     "No vaya a la región de Savanes (Dapaong y más al norte); siga los avisos para el norte."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "8200",
+     "general": "117"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en Lomé y ciudades grandes; más débil en zonas rurales y el norte.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.30 - 1.50 $",
+    "dailyPassUsd": "No hay abono diario",
+    "popularRideApps": [
+     "Gozem",
+     "Zemidjan",
+     "Taxis compartidos"
+    ],
+    "taxiAdvice": "En Lomé puede pedir mototaxis o coches a precio fijo con la app Gozem. Los taxis amarillos no tienen taxímetro: acuerde el precio; entre ciudades hay taxis compartidos y autobuses llenos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Moderado – Alto",
+    "flightTip": "Lomé (LFW) es centro regional de ASKY Airlines y Ethiopian Airlines; compare conexiones vía Estambul, París, Bruselas o Adís Abeba."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Es importante saludar a cada persona y preguntar cómo está.",
+     "Use la mano derecha para comer y pasar cosas.",
+     "Entre a santuarios y ceremonias vudú solo con permiso; las fotos suelen pagarse aparte.",
+     "En las aldeas es cortés visitar brevemente al jefe con un pequeño regalo."
+    ],
+    "festivals": [
+     "Epe Ekpe (Año Nuevo guin) – septiembre, Glidji/Aného",
+     "Evala (luchas iniciáticas kabiyé) – julio, Kara",
+     "Día de la Independencia – 27 de abril"
+    ],
+    "lifestyle": "Mercados animados, telas estampadas de colores (pagne), música en vivo y vida cristiana y musulmana entrelazada con tradiciones vudú. Son famosas las comerciantes de Lomé ('Nana Benz')."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Koutammakou, tierra de los batammariba – UNESCO (casas takienta)",
+     "Kpalimé y el monte Agou (punto más alto del país)",
+     "Lago Togo y Togoville",
+     "Mercado de fetiches de Akodessewa (Lomé)",
+     "Grand Marché y Monumento a la Independencia de Lomé",
+     "Cascadas de Kpimé y Womé"
+    ],
+    "bestSeasons": "Noviembre – febrero (estación seca; posible polvo del harmattan) y julio – agosto (breve periodo seco en el sur)",
+    "travelStyleTip": "Togo es largo y estrecho; Lomé y Kpalimé en el sur se ven en pocos días, y Koutammakou en el norte requiere al menos dos días vía Kara."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos (~45 %), creencias tradicionales/vudú (~35 %), musulmanes (~15-20 %)",
+    "respectNorms": "Muchos van a la iglesia o la mezquita y mantienen tradiciones vudú; no entre en bosques sagrados ni santuarios sin permiso y no se burle de los rituales.",
+    "sacredSites": [
+     "Catedral y santuario mariano de Togoville",
+     "Catedral del Sagrado Corazón, Lomé",
+     "Lugar sagrado vudú de Glidji"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Francés (oficial); ewe y kabiyé son lenguas nacionales",
+    "englishProficiency": "Bajo; el francés es muy útil.",
+    "phrases": [
+     {
+      "phrase": "Woezɔ",
+      "meaning": "Bienvenido",
+      "translation": "Bienvenido",
+      "pronunciation": "wo-e-ZO"
+     },
+     {
+      "phrase": "Akpe",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "ak-PE"
+     },
+     {
+      "phrase": "Meɖe kuku",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "me-de KU-ku"
+     },
+     {
+      "phrase": "Ŋdi",
+      "meaning": "Buenos días",
+      "translation": "Buenos días",
+      "pronunciation": "n-DI"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "¿Cuánto cuesta? (francés)",
+      "translation": "¿Cuánto cuesta? (francés)",
+      "pronunciation": "se kom-BYAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los ewe se expandieron hacia el sur desde Notsé en el siglo XVII. Un tratado firmado en Togoville en 1884 creó el protectorado alemán de 'Togoland'. Tras la Primera Guerra Mundial se dividió entre Gran Bretaña y Francia; el Togo francés se independizó el 27 de abril de 1960. Hoy el puerto de Lomé es uno de los grandes centros de transbordo de África Occidental.",
+    "milestones": [
+     "Siglo XVII – Migración ewe desde Notsé",
+     "1884 – Protectorado alemán de Togoland",
+     "1919 – División entre Gran Bretaña y Francia",
+     "27 de abril de 1960 – Independencia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fufu con salsa de nuez de palma (sauce graine)",
+     "Akoumé (pasta de maíz) con salsa gboma",
+     "Ayimolou (arroz y frijoles con salsa picante)"
+    ],
+    "traditionalDrinks": [
+     "Tchoukoutou (cerveza de mijo, en el norte)",
+     "Sodabi (aguardiente de vino de palma)",
+     "Bissap (bebida de hibisco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Koliko (ñame frito)",
+     "Ablo (pastelitos de maíz y arroz al vapor)",
+     "Pescado a la parrilla y plátano frito (alloco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Emmanuel Adebayor (futbolista, Futbolista Africano del Año 2008)",
+     "Benjamin Boukpeti (bronce olímpico en piragüismo eslalon 2008)",
+     "King Mensah (músico)"
+    ],
+    "strongSectors": [
+     "Puerto de Lomé y logística",
+     "Minería de fosfatos",
+     "Algodón, café y cacao"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Domina el efectivo; las tarjetas funcionan en grandes hoteles y supermercados. El dinero móvil (T-Money, Flooz/Moov Money) es muy común. El franco CFA está vinculado al euro: es fácil cambiar euros.",
+    "economicPillars": "Comercio portuario y de tránsito, fosfatos, agricultura (algodón, café, cacao) y banca (Ecobank tiene su sede en Lomé).",
+    "tippingCulture": "La propina es opcional; se agradece un 5-10 % en restaurantes y algo para los guías."
+   }
+  },
+  "itin": {
+   "routeName": "Togo de punta a punta: Lomé, Kpalimé y Koutammakou",
+   "routeSummary": "Ruta de 8 días desde los mercados de Lomé y el lago Togo, pasando por cascadas en las verdes colinas de Kpalimé, hasta las casas-torre batammariba (UNESCO) del norte.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 7-9 días",
+   "bestSeason": "Noviembre – febrero (estación seca; posible polvo del harmattan) y julio – agosto (breve periodo seco en el sur)",
+   "transportMode": "Se recomienda coche con conductor; alternativa: autobuses/taxis compartidos y Gozem en Lomé",
+   "paceLevel": "Equilibrado (cultura y naturaleza)",
+   "stops": [
+    {
+     "name": "Parada 1: Lomé y lago Togo (mercados y vudú)",
+     "recommendedDuration": "2-3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Grand Marché y las comerciantes de telas Nana Benz",
+      "Mercado de fetiches de Akodessewa",
+      "Travesía en piragua a Togoville",
+      "Monumento a la Independencia"
+     ],
+     "activities": [
+      "Compre tela pagne en el Grand Marché y encargue una prenda.",
+      "Cruce el lago Togo en piragua hasta la catedral de Togoville.",
+      "Cene en un maquis (restaurante local) con música en vivo."
+     ],
+     "foodAndDrinks": [
+      "Pescado a la parrilla con akoumé",
+      "Ayimolou",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "La playa de Lomé tiene corrientes fuertes; no se bañe ni pasee de noche.",
+      "Acuerde la entrada y las fotos en el mercado de fetiches al llegar."
+     ],
+     "mapsQuery": "Lomé, Togo",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Kpalimé (colinas, cascadas y café)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Monte Agou (986 m)",
+      "Cascadas de Kpimé y Womé",
+      "Bosque de Klouto y sus mariposas"
+     ],
+     "activities": [
+      "Haga una caminata guiada de mariposas en el bosque de Klouto.",
+      "Visite plantaciones de café y cacao.",
+      "Vea batik y tallas de madera en el centro artesanal de Kpalimé."
+     ],
+     "foodAndDrinks": [
+      "Fufu con salsa de nuez de palma",
+      "Café local",
+      "Sodabi (con moderación)"
+     ],
+     "criticalTips": [
+      "En la estación de lluvias los senderos resbalan; lleve calzado con buen agarre.",
+      "En las cascadas la entrada y el guía pueden cobrarse aparte."
+     ],
+     "mapsQuery": "Kpalimé, Togo",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Kara y Koutammakou (casas-torre batammariba)",
+     "recommendedDuration": "2-3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Casas-torre de barro takienta (UNESCO)",
+      "Aldea de Nadoba",
+      "Mercados de Kara y cultura kabiyé"
+     ],
+     "activities": [
+      "Visite el interior de una casa takienta con guía local.",
+      "Excursión de un día desde Kandé a las aldeas de Koutammakou.",
+      "Si va en julio, vea las luchas Evala en Kara."
+     ],
+     "foodAndDrinks": [
+      "Tchoukoutou (cerveza de mijo)",
+      "Ñame machacado (fufu) con salsa de carne"
+     ],
+     "criticalTips": [
+      "No siga hacia la región de Savanes (hacia Dapaong); los avisos oficiales la desaconsejan.",
+      "Acuerde con el guía las tarifas de visita y fotos en las aldeas."
+     ],
+     "mapsQuery": "Koutammakou, Togo",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fufu con sauce graine",
+     "Akoumé",
+     "Ayimolou"
+    ],
+    "drinks": [
+     "Tchoukoutou",
+     "Sodabi",
+     "Bissap"
+    ],
+    "streetFoods": [
+     "Koliko",
+     "Ablo",
+     "Alloco"
+    ],
+    "diningAdvice": "Pruebe la comida local en los sencillos 'maquis'; en la calle elija platos recién hechos y calientes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de fiebre amarilla (obligatorio)",
+     "Antipalúdicos y repelente",
+     "Ropa ligera, transpirable y discreta",
+     "Euros en efectivo y billetes pequeños de CFA"
+    ],
+    "safetyAndEtiquette": [
+     "Pida permiso antes de fotografiar ceremonias vudú y aldeas.",
+     "Evite viajar por carretera de noche."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes de tipo francés (C/E) de dos clavijas; los enchufes europeos suelen encajar. Una batería externa ayuda en los cortes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; prefiera agua embotellada de marca a las bolsitas de 'pure water'.",
+    "vaccines": [
+     "Fiebre amarilla (certificado obligatorio para entrar)",
+     "Hepatitis A y fiebre tifoidea",
+     "Meningitis (si va al norte)",
+     "Profilaxis antipalúdica"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "8200"
+   },
+   "tipping": {
+    "custom": "La propina es opcional; en restaurantes un 5-10 %.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Es habitual dar pequeñas propinas diarias a guías locales y conductores."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay devolución de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "Togo no tiene sistema tax-free. No compre marfil ni productos de fauna; pida factura por máscaras de aspecto antiguo."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "airportSimTrapWarning": "Las eSIM son limitadas; lo más barato es una SIM de Togocom o Moov con pasaporte en tienda oficial. No compre SIM sin registrar a vendedores callejeros."
+   },
+   "touristScams": [
+    {
+     "title": "Trucos de tarifa en zemidjan",
+     "desc": "El mototaxista pide más de lo acordado al llegar.",
+     "tip": "Use Gozem para precio fijo o tenga el importe exacto en monedas."
+    },
+    {
+     "title": "'Ritual especial' en el mercado de fetiches",
+     "desc": "Se presiona a los visitantes para comprar amuletos caros y 'rituales personales'.",
+     "tip": "Pague solo la entrada; si no le interesa, rechace con educación y firmeza."
+    },
+    {
+     "title": "Robo con distracción en la playa",
+     "desc": "Alguien le da conversación o le vende algo mientras un cómplice se lleva su bolso.",
+     "tip": "No lleve objetos de valor a la playa y evítela de noche."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Западноафриканский франк КФА (XOF)",
+   "plugType": "C, E (220V, 50Hz)",
+   "bestMonths": "Ноябрь – февраль (сухой сезон; возможна пыль харматана) и июль – август (короткий сухой период на юге)",
+   "safety": {
+    "crimeRateSummary": "В Ломе часто вырывают сумки и воруют из карманов, особенно на пляже и у Гран-Марше. Из-за джихадистских нападений у границы с Буркина-Фасо официальные рекомендации советуют избегать северного региона Саван.",
+    "commonScams": [
+     "Водители земиджанов (мототакси) повышают цену в пути",
+     "Завышенные цены за «ритуалы» и фото на рынке фетишей Акодессева",
+     "«Дружелюбные» знакомства на пляже, чтобы отвлечь и обокрасть"
+    ],
+    "safeTravelTips": [
+     "Не гуляйте ночью по пляжу Ломе и не купайтесь там (очень сильные течения).",
+     "Если едете на земиджане, просите шлем и договоритесь о цене заранее.",
+     "Не ездите в регион Саван (Дапаонг и севернее); следите за актуальными предупреждениями по северу."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "8200",
+     "general": "117"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Ломе и крупных городах; слабее в сельской местности и на севере.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Ограничено",
+    "bestCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Базовое",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "0.30 - 1.50 $",
+    "dailyPassUsd": "Проездных нет",
+    "popularRideApps": [
+     "Gozem",
+     "Zemidjan",
+     "Маршрутные такси"
+    ],
+    "taxiAdvice": "В Ломе через приложение Gozem можно заказать мототакси или машину по фиксированной цене. В жёлтых такси нет счётчиков — договаривайтесь заранее; между городами ходят переполненные маршрутки и автобусы."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Средний – высокий",
+    "flightTip": "Ломе (LFW) — региональный хаб ASKY Airlines и Ethiopian Airlines; сравните стыковки через Стамбул, Париж, Брюссель или Аддис-Абебу."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Важно поздороваться с каждым и спросить, как дела.",
+     "Ешьте и передавайте вещи правой рукой.",
+     "Входите в святилища и на церемонии вудун только с разрешения; съёмка обычно платная.",
+     "В деревнях вежливо зайти к вождю с небольшим подарком."
+    ],
+    "festivals": [
+     "Эпе Экпе (Новый год народа гин) — сентябрь, Глиджи/Анехо",
+     "Эвала (обрядовая борьба кабье) — июль, Кара",
+     "День независимости — 27 апреля"
+    ],
+    "lifestyle": "Шумные рынки, яркие ткани с восковой печатью (пань), живая музыка и христианская и мусульманская жизнь, переплетённая с традициями вудун. Знамениты торговки Ломе — «Нана Бенц»."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Кутаммаку, земля батаммариба — ЮНЕСКО (дома такиента)",
+     "Кпалиме и гора Агу (высшая точка страны)",
+     "Озеро Того и Тоговиль",
+     "Рынок фетишей Акодессева (Ломе)",
+     "Гран-Марше и Монумент независимости в Ломе",
+     "Водопады Кпиме и Воме"
+    ],
+    "bestSeasons": "Ноябрь – февраль (сухой сезон; возможна пыль харматана) и июль – август (короткий сухой период на юге)",
+    "travelStyleTip": "Того — длинная узкая страна; Ломе и Кпалиме на юге осматривают за несколько дней, а на Кутаммаку на севере закладывайте минимум два дня через Кару."
+   },
+   "religion": {
+    "primaryReligions": "Христиане (~45 %), традиционные верования/вудун (~35 %), мусульмане (~15-20 %)",
+    "respectNorms": "Многие ходят в церковь или мечеть и при этом соблюдают традиции вудун; не входите в священные рощи и святилища без разрешения и не высмеивайте обряды.",
+    "sacredSites": [
+     "Собор и святилище Девы Марии в Тоговиле",
+     "Собор Святого Сердца, Ломе",
+     "Священное место вудун в Глиджи"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Французский (официальный); эве и кабье — национальные языки",
+    "englishProficiency": "Низкий; французский очень пригодится.",
+    "phrases": [
+     {
+      "phrase": "Woezɔ",
+      "meaning": "Добро пожаловать",
+      "translation": "Добро пожаловать",
+      "pronunciation": "wo-e-ZO"
+     },
+     {
+      "phrase": "Akpe",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "ak-PE"
+     },
+     {
+      "phrase": "Meɖe kuku",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "me-de KU-ku"
+     },
+     {
+      "phrase": "Ŋdi",
+      "meaning": "Доброе утро",
+      "translation": "Доброе утро",
+      "pronunciation": "n-DI"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Сколько стоит? (по-французски)",
+      "translation": "Сколько стоит? (по-французски)",
+      "pronunciation": "se kom-BYAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "В XVII веке эве расселились на юг из Нотсе. Договор 1884 года, подписанный в Тоговиле, создал германский протекторат «Тоголенд». После Первой мировой войны территорию разделили Великобритания и Франция; французское Того стало независимым 27 апреля 1960 года. Сегодня порт Ломе — один из главных перевалочных узлов Западной Африки.",
+    "milestones": [
+     "XVII в. — переселение эве из Нотсе",
+     "1884 — германский протекторат Тоголенд",
+     "1919 — раздел между Великобританией и Францией",
+     "27 апреля 1960 — независимость"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Фуфу с соусом из пальмовых орехов (сос грен)",
+     "Акуме (кукурузная масса) с соусом гбома",
+     "Айимолу (рис с фасолью и острым соусом)"
+    ],
+    "traditionalDrinks": [
+     "Чукуту (просяное пиво, на севере)",
+     "Содаби (крепкий напиток из пальмового вина)",
+     "Биссап (напиток из гибискуса)"
+    ],
+    "streetFoodAndDesserts": [
+     "Колико (жареный ямс)",
+     "Абло (паровые лепёшки из кукурузы и риса)",
+     "Рыба на гриле и жареные бананы (аллоко)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Эммануэль Адебайор (футболист, лучший игрок Африки 2008)",
+     "Бенжамен Букпети (бронза Олимпиады-2008 в гребном слаломе)",
+     "Кинг Менса (музыкант)"
+    ],
+    "strongSectors": [
+     "Порт Ломе и логистика",
+     "Добыча фосфатов",
+     "Хлопок, кофе и какао"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Преобладают наличные; карты — в крупных отелях и супермаркетах. Очень распространены мобильные деньги (T-Money, Flooz/Moov Money). Франк КФА привязан к евро, евро легко обменять.",
+    "economicPillars": "Портовая и транзитная торговля, фосфаты, сельское хозяйство (хлопок, кофе, какао) и банки (штаб-квартира Ecobank — в Ломе).",
+    "tippingCulture": "Чаевые по желанию; ценятся 5-10 % в ресторанах и небольшие суммы гидам."
+   }
+  },
+  "itin": {
+   "routeName": "Того с юга на север: Ломе, Кпалиме и Кутаммаку",
+   "routeSummary": "8-дневный маршрут от рынков Ломе и озера Того через водопады в зелёных холмах Кпалиме к башенным домам батаммариба (ЮНЕСКО) на севере.",
+   "totalDays": 8,
+   "idealDurationText": "Маршрут на 7-9 дней",
+   "bestSeason": "Ноябрь – февраль (сухой сезон; возможна пыль харматана) и июль – август (короткий сухой период на юге)",
+   "transportMode": "Рекомендуется машина с водителем; иначе — междугородние автобусы/маршрутки и Gozem в Ломе",
+   "paceLevel": "Сбалансированный (культура и природа)",
+   "stops": [
+    {
+     "name": "Остановка 1: Ломе и озеро Того (рынки и вудун)",
+     "recommendedDuration": "2-3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Гран-Марше и торговки тканями «Нана Бенц»",
+      "Рынок фетишей Акодессева",
+      "Переправа на пироге в Тоговиль",
+      "Монумент независимости"
+     ],
+     "activities": [
+      "Купите ткань пань на Гран-Марше и закажите пошив.",
+      "Переплывите озеро Того на пироге к собору Тоговиля.",
+      "Поужинайте вечером в маки (местной закусочной) с живой музыкой."
+     ],
+     "foodAndDrinks": [
+      "Рыба на гриле с акуме",
+      "Айимолу",
+      "Биссап"
+     ],
+     "criticalTips": [
+      "На пляже Ломе сильные течения; не купайтесь и не гуляйте там ночью.",
+      "На рынке фетишей сразу уточните цену входа и съёмки."
+     ],
+     "mapsQuery": "Lomé, Togo",
+     "stopNumber": 1
+    },
+    {
+     "name": "Остановка 2: Кпалиме (холмы, водопады и кофе)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Гора Агу (986 м)",
+      "Водопады Кпиме и Воме",
+      "Лес Клуто и его бабочки"
+     ],
+     "activities": [
+      "Пройдите с гидом по лесу Клуто, наблюдая за бабочками.",
+      "Посетите кофейные и какао-плантации.",
+      "Посмотрите батик и резьбу по дереву в ремесленном центре Кпалиме."
+     ],
+     "foodAndDrinks": [
+      "Фуфу с соусом из пальмовых орехов",
+      "Местный кофе",
+      "Содаби (осторожно, крепкий)"
+     ],
+     "criticalTips": [
+      "В сезон дождей тропы скользкие; нужна обувь с хорошим протектором.",
+      "У водопадов вход и услуги гида могут оплачиваться отдельно."
+     ],
+     "mapsQuery": "Kpalimé, Togo",
+     "stopNumber": 2
+    },
+    {
+     "name": "Остановка 3: Кара и Кутаммаку (башенные дома батаммариба)",
+     "recommendedDuration": "2-3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Глинобитные башенные дома такиента (ЮНЕСКО)",
+      "Деревня Надоба",
+      "Рынки Кары и культура кабье"
+     ],
+     "activities": [
+      "С местным гидом осмотрите дом такиента изнутри.",
+      "Съездите на день из Канде в деревни Кутаммаку.",
+      "Если вы там в июле, посмотрите борьбу эвала в Каре."
+     ],
+     "foodAndDrinks": [
+      "Чукуту (просяное пиво)",
+      "Толчёный ямс (фуфу) с мясным соусом"
+     ],
+     "criticalTips": [
+      "Не продолжайте путь в регион Саван (к Дапаонгу) — официально его советуют избегать.",
+      "Заранее обсудите с гидом плату за посещение деревень и съёмку."
+     ],
+     "mapsQuery": "Koutammakou, Togo",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Фуфу с сос грен",
+     "Акуме",
+     "Айимолу"
+    ],
+    "drinks": [
+     "Чукуту",
+     "Содаби",
+     "Биссап"
+    ],
+    "streetFoods": [
+     "Колико",
+     "Абло",
+     "Аллоко"
+    ],
+    "diningAdvice": "Пробуйте местную кухню в простых закусочных «маки»; на улице выбирайте только что приготовленные горячие блюда."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Сертификат о прививке от жёлтой лихорадки (обязательно)",
+     "Таблетки от малярии и репеллент",
+     "Лёгкая, дышащая и скромная одежда",
+     "Наличные евро и мелкие купюры КФА"
+    ],
+    "safetyAndEtiquette": [
+     "Спрашивайте разрешения на съёмку церемоний вудун и деревень.",
+     "Не путешествуйте по дорогам ночью."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки французского типа (C/E) с двумя круглыми штырями; европейские вилки обычно подходят. На случай отключений пригодится пауэрбанк."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; лучше брендовая бутилированная вода, чем пакетики «pure water».",
+    "vaccines": [
+     "Жёлтая лихорадка (сертификат обязателен для въезда)",
+     "Гепатит A и брюшной тиф",
+     "Менингит (при поездке на север)",
+     "Профилактика малярии"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "8200"
+   },
+   "tipping": {
+    "custom": "Чаевые по желанию; в ресторанах можно оставить 5-10 %.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Местным гидам и водителям принято давать небольшие чаевые за день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата НДС для туристов нет",
+    "minSpend": "—",
+    "customsNote": "В Того нет системы tax-free. Не покупайте слоновую кость и изделия из диких животных; для «старинных» масок просите чек."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Togocom",
+     "Moov Africa Togo"
+    ],
+    "airportSimTrapWarning": "Выбор eSIM мал; дешевле всего купить SIM Togocom или Moov по паспорту в официальном салоне. Не берите незарегистрированные SIM у уличных продавцов."
+   },
+   "touristScams": [
+    {
+     "title": "Уловки с ценой на земиджанах",
+     "desc": "Водитель мототакси по приезде требует больше оговорённого.",
+     "tip": "Пользуйтесь Gozem с фиксированной ценой или держите точную сумму мелочью."
+    },
+    {
+     "title": "«Особый ритуал» на рынке фетишей",
+     "desc": "Туристам навязывают дорогие амулеты и «личные ритуалы».",
+     "tip": "Платите только за вход; если не интересно — вежливо, но твёрдо откажитесь."
+    },
+    {
+     "title": "Кражи с отвлечением на пляже",
+     "desc": "Один заговаривает или что-то продаёт, а сообщник забирает сумку.",
+     "tip": "Не берите ценности на пляж и не ходите туда ночью."
+    }
+   ]
+  }
+ }
+}

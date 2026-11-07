@@ -1,0 +1,1787 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Zambiya Kvaçası (ZMW)",
+   "plugType": "Tip G (bazen C, D), 230V, 50Hz",
+   "bestMonths": "Mayıs – Ekim (kurak mevsim; safari için en iyisi Ağustos – Ekim); Victoria Şelalesi en gür hâlini Şubat – Mayıs'ta alır",
+   "safety": {
+    "crimeRateSummary": "Genel olarak güvenli ve sakin bir ülkedir; Lusaka ve Livingstone'da kapkaç, araçtan hırsızlık ve fırsat suçları görülür. Ciddi şiddet olayları turistlere nadiren yönelir.",
+    "commonScams": [
+     "Livingstone ve sınır kapılarında sokak döviz bozdurucularının sahte veya eksik para vermesi",
+     "Lusaka'daki otobüs terminallerinde (Intercity) çanta kapma ve sahte bilet satıcıları",
+     "Kendini rehber olarak tanıtıp şelale veya safari için lisanssız tur satanlar"
+    ],
+    "safeTravelTips": [
+     "Döviz bozdurmayı banka veya resmî bürolarda yapın; büyük tutarlarda kartla ödeyin.",
+     "Lusaka'da karanlıktan sonra yürümeyin; arabada eşya görünür bırakmayın.",
+     "Milli parklarda araçtan inmeyin ve kamp içinde vahşi hayvanlara karşı rehberin kurallarına uyun."
+    ],
+    "emergencyNumbers": {
+     "police": "991 / 999",
+     "ambulance": "992",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde ve ana yollarda 4G (Lusaka'da sınırlı 5G); milli parklarda çoğunlukla sinyal yok",
+    "costPerGbUsd": "0.80 - 2 $",
+    "esimAvailability": "Orta (uluslararası eSIM paketleri)",
+    "bestCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Temel (minibüs ve şehirlerarası otobüs; safari bölgelerine iç hat uçuşları)",
+    "costLevel": "Orta (safari transferleri pahalı)",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "Lusaka'da Yango gibi uygulamalar sabit fiyat sağlar; Livingstone'da otel taksisi veya önceden konuşulmuş fiyatlı taksi kullanın. Şehirlerarası yolculukta Mazhandu Family gibi köklü otobüs şirketlerini tercih edin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 200 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "60 - 110 $ (safari lodge'ları kişi başı 300 $ ve üzeri)",
+    "flightCostIndex": "Yüksek",
+    "flightTip": "Lusaka (LUN) ve Livingstone'a (LVI) genellikle Addis Ababa, Johannesburg, Nairobi veya Dubai aktarmasıyla ulaşılır; Victoria Şelalesi için doğrudan Livingstone'a uçmak zaman kazandırır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma uzun ve önemlidir; el sıkışırken sol el sağ dirseğe konarak saygı gösterilir.",
+     "Bir şey verip alırken iki el veya sağ el kullanın.",
+     "Devlet binaları, köprüler ve askerî alanların fotoğrafını çekmeyin."
+    ],
+    "festivals": [
+     "Kuomboka (Lozi kralının sudan göçü, Mart – Nisan)",
+     "Ncwala (Ngoni hasat töreni, Şubat)",
+     "Bağımsızlık Günü (24 Ekim)"
+    ],
+    "lifestyle": "70'ten fazla etnik grubun barış içinde yaşadığı, sakin ve misafirperver bir toplum; \"One Zambia, One Nation\" sloganı ulusal kimliğin temelidir. Futbol ve kilise sosyal hayatın merkezindedir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoria Şelalesi (Mosi-oa-Tunya)",
+     "Güney Luangwa Milli Parkı (yürüyüş safarisinin doğduğu yer)",
+     "Aşağı Zambezi Milli Parkı",
+     "Kafue Milli Parkı",
+     "Kariba Gölü",
+     "Kasanka yarasa göçü (Ekim – Aralık)"
+    ],
+    "bestSeasons": "Mayıs – Ekim (kurak mevsim; safari için en iyisi Ağustos – Ekim); Victoria Şelalesi en gür hâlini Şubat – Mayıs'ta alır",
+    "travelStyleTip": "Mesafeler uzun ve yollar zorlu olduğundan Livingstone ile safari parkları arasında iç hat uçuşları zaman kazandırır; lodge'larda çoğunlukla tam pansiyon ve oyun sürüşleri fiyata dahildir."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan ~%95 (Protestan ~%75, Katolik ~%20); küçük Müslüman ve Hindu toplulukları, geleneksel inançlar",
+    "respectNorms": "Anayasa ülkeyi \"Hristiyan ulus\" olarak tanımlar; kiliselerde ve geleneksel törenlerde ölçülü giyinin, şeflerin (chief) önünde saygılı davranın.",
+    "sacredSites": [
+     "Kutsal Haç Katedrali (Lusaka)",
+     "Chishimba Şelalesi (Bemba geleneğinde kutsal)",
+     "Victoria Şelalesi – Mosi-oa-Tunya (Tokaleya halkı için kutsal)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İngilizce (resmî); Bemba, Nyanja, Tonga, Lozi gibi 70'ten fazla yerel dil yaygındır.",
+    "englishProficiency": "İyi; şehirlerde ve turizmde İngilizce rahatça kullanılır.",
+    "phrases": [
+     {
+      "phrase": "Muli bwanji? (Nyanja)",
+      "meaning": "Nasılsınız?",
+      "translation": "Nasılsınız?",
+      "pronunciation": "MU-li BWAN-ji"
+     },
+     {
+      "phrase": "Zikomo (Nyanja)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "zi-KO-mo"
+     },
+     {
+      "phrase": "Muli shani? (Bemba)",
+      "meaning": "Nasılsınız? (Bemba)",
+      "translation": "Nasılsınız? (Bemba)",
+      "pronunciation": "MU-li SHA-ni"
+     },
+     {
+      "phrase": "Natotela (Bemba)",
+      "meaning": "Teşekkürler (Bemba)",
+      "translation": "Teşekkürler (Bemba)",
+      "pronunciation": "na-to-TE-la"
+     },
+     {
+      "phrase": "Ndi zingati? (Nyanja)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "ndi zin-GA-ti"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bantu halklarının krallıklarına ev sahipliği yapan bölgeye David Livingstone 1855'te ulaştı. Britanya Güney Afrika Şirketi yönetiminden sonra 1924'te Kuzey Rodezya protektorası oldu. 24 Ekim 1964'te Kenneth Kaunda önderliğinde bağımsızlığını kazandı; bakır madenciliği ekonominin bel kemiğidir.",
+    "milestones": [
+     "1855: Livingstone Victoria Şelalesi'ni gördü",
+     "1924: Kuzey Rodezya protektorası",
+     "1959: Kariba Barajı'nın tamamlanması",
+     "1964: Bağımsızlık (24 Ekim)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nshima (mısır lapası) ve sebzeli/etli \"relish\"",
+     "Kapenta (küçük kurutulmuş göl balığı)",
+     "Izgara bream (tilapia)"
+    ],
+    "traditionalDrinks": [
+     "Mosi birası",
+     "Munkoyo (köklerden yapılan hafif fermente içecek)",
+     "Maheu (mısırdan fermente içecek)"
+    ],
+    "streetFoodAndDesserts": [
+     "Vitumbuwa (kızarmış tatlı hamur topları)",
+     "Közlenmiş mısır",
+     "Chikanda (\"Afrika polonyası\", orkide kökü ve fıstıktan)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kenneth Kaunda (kurucu cumhurbaşkanı)",
+     "Kalusha Bwalya (efsanevi futbolcu)",
+     "Barbra Banda (kadın futbolu yıldızı)"
+    ],
+    "strongSectors": [
+     "Bakır ve kobalt madenciliği",
+     "Tarım (mısır, tütün, şeker)",
+     "Turizm ve hidroelektrik"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Şehirlerde ve lodge'larda kart ve Airtel Money/MTN MoMo gibi mobil ödemeler yaygındır; pazar ve minibüs için nakit kvaça gerekir. Lodge ve tur fiyatları çoğunlukla ABD Doları'dır.",
+    "tippingCulture": "Restoranlarda %10 yaygındır; safari rehberleri ve kamp personeli için günde kişi başı 10-20 $ önerilir.",
+    "economicPillars": "Bakır madenciliği (ihracatın büyük kısmı), tarım, turizm ve hidroelektrik enerji."
+   }
+  },
+  "itin": {
+   "routeName": "Gürleyen Duman ve Vahşi Doğa: Livingstone, Aşağı Zambezi ve Güney Luangwa",
+   "routeSummary": "Victoria Şelalesi'nin gürleyen sularından Aşağı Zambezi'nin kano safarilerine ve yürüyüş safarisinin anavatanı Güney Luangwa'ya uzanan 9 günlük doğa rotası.",
+   "totalDays": 9,
+   "idealDurationText": "9 Günlük Safari Rotası",
+   "bestSeason": "Mayıs – Ekim (kurak mevsim)",
+   "transportMode": "İç hat ve hafif uçak uçuşları (Livingstone – Lusaka – Mfuwe) + lodge transferleri",
+   "paceLevel": "Dengeli (macera + safari)",
+   "stops": [
+    {
+     "name": "1. Durak: Livingstone ve Victoria Şelalesi",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Mosi-oa-Tunya ve Knife-Edge Köprüsü",
+      "Livingstone Adası ve Şeytan Havuzu (Ağustos – Ocak)",
+      "Zambezi'de gün batımı teknesi",
+      "Mosi-oa-Tunya Milli Parkı'nda gergedan yürüyüşü"
+     ],
+     "activities": [
+      "Şelalenin kenarındaki patikada yağmurlukla yürüyün.",
+      "Batoka Kanyonu'nda rafting veya köprüden bungee deneyin.",
+      "Akşam Zambezi'de gün batımı turuna katılın."
+     ],
+     "foodAndDrinks": [
+      "Izgara bream (tilapia)",
+      "Mosi birası"
+     ],
+     "criticalTips": [
+      "Şeytan Havuzu yalnızca su seviyesi düşükken ve rehberli turla açıktır; önceden rezervasyon yapın.",
+      "Şubat – Mayıs arası yoğun su sisi nedeniyle telefonunuzu su geçirmez kılıfta taşıyın."
+     ],
+     "mapsQuery": "Victoria Falls, Livingstone, Zambia",
+     "stopNumber": 1
+    },
+    {
+     "name": "2. Durak: Lusaka ve Aşağı Zambezi",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Aşağı Zambezi'de kano safarisi",
+      "Fil sürüleri ve su aygırları",
+      "Lusaka Kabwata Kültür Köyü"
+     ],
+     "activities": [
+      "Lusaka'da Pazar pazarında (Arcades) zanaat ürünlerine bakın.",
+      "Nehirde kano ile hayvanları sessizce izleyin.",
+      "Kaplan balığı (tigerfish) avına çıkın (bırak-yakala)."
+     ],
+     "foodAndDrinks": [
+      "Nshima (mısır lapası) ve sebzeli/etli \"relish\"",
+      "Chikanda (\"Afrika polonyası\", orkide kökü ve fıstıktan)",
+      "Munkoyo (köklerden yapılan hafif fermente içecek)"
+     ],
+     "criticalTips": [
+      "Lusaka'dan parka yol ~3-4 saat sürer; küçük uçakla transfer daha hızlıdır.",
+      "Kano turlarında su aygırlarına mesafe konusunda rehbere kesinlikle uyun."
+     ],
+     "mapsQuery": "Lower Zambezi National Park, Zambia",
+     "stopNumber": 2
+    },
+    {
+     "name": "3. Durak: Güney Luangwa",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Yürüyüş safarisi",
+      "Leopar gözlemi için gece safarisi",
+      "Thornicroft zürafası ve Cookson antilobu"
+     ],
+     "activities": [
+      "Silahlı izci eşliğinde sabah yürüyüş safarisi yapın.",
+      "Akşam projektörle gece sürüşüne katılın.",
+      "Mfuwe'de yerel köy ve el sanatları atölyelerini ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Lodge'da ateş başı barbekü (braai)",
+      "Vitumbuwa (kızarmış tatlı hamur topları)"
+     ],
+     "criticalTips": [
+      "Mfuwe'ye Lusaka'dan uçmak (~1 saat) en pratik yoldur.",
+      "Yağmur mevsiminde (Aralık – Mart) birçok kamp kapanır ve yollar geçilmez olur."
+     ],
+     "mapsQuery": "Mfuwe, South Luangwa National Park, Zambia",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nshima (mısır lapası) ve sebzeli/etli \"relish\"",
+     "Kapenta (küçük kurutulmuş göl balığı)",
+     "Izgara bream (tilapia)"
+    ],
+    "drinks": [
+     "Mosi birası",
+     "Munkoyo (köklerden yapılan hafif fermente içecek)",
+     "Maheu (mısırdan fermente içecek)"
+    ],
+    "streetFoods": [
+     "Vitumbuwa (kızarmış tatlı hamur topları)",
+     "Közlenmiş mısır",
+     "Chikanda (\"Afrika polonyası\", orkide kökü ve fıstıktan)"
+    ],
+    "diningAdvice": "Nshima sağ elle küçük top yapılıp sosa batırılarak yenir; yerel lokantalarda öğün çok ucuzdur, lodge'larda yemekler genellikle fiyata dahildir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi priz adaptörü",
+     "Sıtma ilacı ve sivrisinek kovucu",
+     "Safari için nötr renkli giysiler ve dürbün",
+     "Şelale için yağmurluk ve su geçirmez kılıf"
+    ],
+    "safetyAndEtiquette": [
+     "Milli parklarda araçtan inmeyin ve kamp içinde vahşi hayvanlara karşı rehberin kurallarına uyun.",
+     "Döviz bozdurmayı banka veya resmî bürolarda yapın; büyük tutarlarda kartla ödeyin.",
+     "Selamlaşma uzun ve önemlidir; el sıkışırken sol el sağ dirseğe konarak saygı gösterilir."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Çoğunlukla İngiliz tipi üç köşeli G priz; eski binalarda D ve bazen C tipi görülür. Elektrik kesintileri (load-shedding) yaşanabilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmemelidir; kolera salgınları yaşanmıştır. Şişe veya arıtılmış su için; lodge'lar genelde filtrelenmiş su sağlar.",
+    "vaccines": [
+     "Sarıhumma: riskli ülkeden geliyorsanız sertifika zorunlu; Kuzeybatı ve Batı eyaletleri için aşı değerlendirilir",
+     "Tüm ülkede sıtma koruması",
+     "Hepatit A, tifo ve kuduz",
+     "Kolera aşısı değerlendirilebilir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "992"
+   },
+   "tipping": {
+    "custom": "Restoranlarda servis dahil değilse %10; safari rehberleri ve kamp personeline günlük bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Lodge'larda bahşiş genellikle ortak bir kutuya ABD Doları veya kvaça olarak bırakılır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (KDV %16)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Turistlere yaygın bir KDV iadesi uygulaması yoktur. Fildişi, boynuz ve korunan hayvan ürünlerini satın almak ve ülkeden çıkarmak yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.00",
+    "topCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "airportSimTrapWarning": "Havalimanında MTN ve Airtel SIM'leri pasaportla kayıt yapılarak makul fiyata alınabilir; parklarda sinyal olmayacağı için çevrimdışı harita indirin."
+   },
+   "touristScams": [
+    {
+     "title": "Sokak Döviz Bozdurucuları",
+     "desc": "Livingstone ve sınır kapılarında sokak döviz bozdurucularının sahte veya eksik para vermesi",
+     "tip": "Döviz bozdurmayı banka veya resmî bürolarda yapın; büyük tutarlarda kartla ödeyin."
+    },
+    {
+     "title": "Otobüs Terminali Kapkaççıları",
+     "desc": "Lusaka'daki otobüs terminallerinde (Intercity) çanta kapma ve sahte bilet satıcıları",
+     "tip": "Bileti şirketin kendi gişesinden veya çevrimiçi alın, çantanızı önünüzde taşıyın."
+    },
+    {
+     "title": "Lisanssız Tur Satıcıları",
+     "desc": "Kendini rehber olarak tanıtıp şelale veya safari için lisanssız tur satanlar",
+     "tip": "Turları oteliniz veya bilinen operatörler üzerinden ayırtın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Zambian Kwacha (ZMW)",
+   "plugType": "Type G (sometimes C, D), 230V, 50Hz",
+   "bestMonths": "May – October (dry season; best safari August – October); Victoria Falls is fullest February – May",
+   "safety": {
+    "crimeRateSummary": "Generally a safe and peaceful country, with bag snatching, theft from cars and opportunistic crime in Lusaka and Livingstone. Serious violence rarely targets tourists.",
+    "commonScams": [
+     "Street money changers in Livingstone and at border posts giving fake or short-changed notes",
+     "Bag snatching and fake ticket touts at Lusaka's Intercity bus terminal",
+     "Self-styled guides selling unlicensed falls or safari tours"
+    ],
+    "safeTravelTips": [
+     "Change money only at banks or bureaux, and pay larger sums by card.",
+     "Don't walk after dark in Lusaka and leave nothing visible in the car.",
+     "Stay in the vehicle in national parks and follow your guide's rules about wildlife in camp."
+    ],
+    "emergencyNumbers": {
+     "police": "991 / 999",
+     "ambulance": "992",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in cities and along main roads (limited 5G in Lusaka); often no signal in national parks",
+    "costPerGbUsd": "0.80 - 2 $",
+    "esimAvailability": "Moderate (international eSIM plans)",
+    "bestCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Basic (minibuses and intercity coaches; domestic flights to safari areas)",
+    "costLevel": "Moderate (safari transfers are expensive)",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Not available",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "In Lusaka, apps such as Yango give fixed fares; in Livingstone use hotel taxis or agree the fare first. For intercity trips choose established coach companies such as Mazhandu Family."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 200 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "60 - 110 $ (safari lodges 300 $+ per person)",
+    "flightCostIndex": "High",
+    "flightTip": "Lusaka (LUN) and Livingstone (LVI) are usually reached via Addis Ababa, Johannesburg, Nairobi or Dubai; flying straight into Livingstone saves time for Victoria Falls."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings are long and important; touching your right elbow with your left hand while shaking shows respect.",
+     "Give and receive with both hands or the right hand.",
+     "Don't photograph government buildings, bridges or military sites."
+    ],
+    "festivals": [
+     "Kuomboka (the Lozi king's journey from the floodplain, March – April)",
+     "Ncwala (Ngoni harvest ceremony, February)",
+     "Independence Day (24 October)"
+    ],
+    "lifestyle": "A calm, hospitable society of over 70 ethnic groups living peacefully; the motto \"One Zambia, One Nation\" underpins national identity. Football and church are central to social life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoria Falls (Mosi-oa-Tunya)",
+     "South Luangwa National Park (birthplace of the walking safari)",
+     "Lower Zambezi National Park",
+     "Kafue National Park",
+     "Lake Kariba",
+     "Kasanka bat migration (October – December)"
+    ],
+    "bestSeasons": "May – October (dry season; best safari August – October); Victoria Falls is fullest February – May",
+    "travelStyleTip": "Distances are long and roads tough, so domestic flights between Livingstone and the safari parks save time; lodges usually include full board and game drives."
+   },
+   "religion": {
+    "primaryReligions": "Christian ~95% (Protestant ~75%, Catholic ~20%); small Muslim and Hindu communities and traditional beliefs",
+    "respectNorms": "The constitution declares Zambia a \"Christian nation\"; dress modestly in churches and at traditional ceremonies and show respect to chiefs.",
+    "sacredSites": [
+     "Cathedral of the Holy Cross (Lusaka)",
+     "Chishimba Falls (sacred in Bemba tradition)",
+     "Victoria Falls – Mosi-oa-Tunya (sacred to the Toka-Leya people)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English (official); over 70 local languages such as Bemba, Nyanja, Tonga and Lozi are widely spoken.",
+    "englishProficiency": "Good; English is widely used in cities and tourism.",
+    "phrases": [
+     {
+      "phrase": "Muli bwanji? (Nyanja)",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "MU-li BWAN-ji"
+     },
+     {
+      "phrase": "Zikomo (Nyanja)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "zi-KO-mo"
+     },
+     {
+      "phrase": "Muli shani? (Bemba)",
+      "meaning": "How are you? (Bemba)",
+      "translation": "How are you? (Bemba)",
+      "pronunciation": "MU-li SHA-ni"
+     },
+     {
+      "phrase": "Natotela (Bemba)",
+      "meaning": "Thank you (Bemba)",
+      "translation": "Thank you (Bemba)",
+      "pronunciation": "na-to-TE-la"
+     },
+     {
+      "phrase": "Ndi zingati? (Nyanja)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "ndi zin-GA-ti"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Home to Bantu kingdoms, the region was reached by David Livingstone in 1855. After British South Africa Company rule it became the protectorate of Northern Rhodesia in 1924. It gained independence under Kenneth Kaunda on 24 October 1964; copper mining is the backbone of the economy.",
+    "milestones": [
+     "1855: Livingstone sees Victoria Falls",
+     "1924: Northern Rhodesia protectorate",
+     "1959: Kariba Dam completed",
+     "1964: Independence (24 October)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nshima (maize porridge) with relish",
+     "Kapenta (small dried lake fish)",
+     "Grilled bream (tilapia)"
+    ],
+    "traditionalDrinks": [
+     "Mosi lager",
+     "Munkoyo (lightly fermented root drink)",
+     "Maheu (fermented maize drink)"
+    ],
+    "streetFoodAndDesserts": [
+     "Vitumbuwa (sweet fried dough balls)",
+     "Roasted maize cobs",
+     "Chikanda (\"African polony\" of orchid tubers and peanuts)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kenneth Kaunda (founding president)",
+     "Kalusha Bwalya (football legend)",
+     "Barbra Banda (women's football star)"
+    ],
+    "strongSectors": [
+     "Copper and cobalt mining",
+     "Agriculture (maize, tobacco, sugar)",
+     "Tourism and hydropower"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and mobile money (Airtel Money, MTN MoMo) are common in cities and lodges; carry cash kwacha for markets and minibuses. Lodge and tour prices are mostly in US dollars.",
+    "tippingCulture": "10% is common in restaurants; for safari guides and camp staff 10-20 $ per person per day is suggested.",
+    "economicPillars": "Copper mining (most exports), agriculture, tourism and hydropower."
+   }
+  },
+  "itin": {
+   "routeName": "The Smoke that Thunders & the Wild: Livingstone, Lower Zambezi & South Luangwa",
+   "routeSummary": "A 9-day nature route from the thundering Victoria Falls to canoe safaris on the Lower Zambezi and South Luangwa, home of the walking safari.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Safari Route",
+   "bestSeason": "May – October (dry season)",
+   "transportMode": "Domestic and light-aircraft flights (Livingstone – Lusaka – Mfuwe) + lodge transfers",
+   "paceLevel": "Balanced (adventure + safari)",
+   "stops": [
+    {
+     "name": "Stop 1: Livingstone & Victoria Falls",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Mosi-oa-Tunya & Knife-Edge Bridge",
+      "Livingstone Island & Devil's Pool (August – January)",
+      "Zambezi sunset cruise",
+      "Rhino walk in Mosi-oa-Tunya National Park"
+     ],
+     "activities": [
+      "Walk the falls trail in a raincoat.",
+      "Raft the Batoka Gorge or bungee from the bridge.",
+      "Join an evening sunset cruise on the Zambezi."
+     ],
+     "foodAndDrinks": [
+      "Grilled bream (tilapia)",
+      "Mosi lager"
+     ],
+     "criticalTips": [
+      "Devil's Pool is only open at low water on guided tours; book ahead.",
+      "From February to May heavy spray soaks everything; keep your phone in a waterproof case."
+     ],
+     "mapsQuery": "Victoria Falls, Livingstone, Zambia",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stop 2: Lusaka & Lower Zambezi",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Canoe safari on the Lower Zambezi",
+      "Elephant herds and hippos",
+      "Kabwata Cultural Village (Lusaka)"
+     ],
+     "activities": [
+      "Browse crafts at Lusaka's Sunday market at Arcades.",
+      "Watch wildlife quietly from a canoe.",
+      "Go catch-and-release tigerfish fishing."
+     ],
+     "foodAndDrinks": [
+      "Nshima (maize porridge) with relish",
+      "Chikanda (\"African polony\" of orchid tubers and peanuts)",
+      "Munkoyo (lightly fermented root drink)"
+     ],
+     "criticalTips": [
+      "The drive from Lusaka takes ~3-4 hours; a light-aircraft transfer is quicker.",
+      "On canoe trips always follow the guide on keeping distance from hippos."
+     ],
+     "mapsQuery": "Lower Zambezi National Park, Zambia",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stop 3: South Luangwa",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Walking safari",
+      "Night drive for leopards",
+      "Thornicroft's giraffe and Cookson's wildebeest"
+     ],
+     "activities": [
+      "Do a morning walking safari with an armed scout.",
+      "Join an evening spotlight night drive.",
+      "Visit local villages and craft workshops in Mfuwe."
+     ],
+     "foodAndDrinks": [
+      "Fireside barbecue (braai) at the lodge",
+      "Vitumbuwa (sweet fried dough balls)"
+     ],
+     "criticalTips": [
+      "Flying from Lusaka to Mfuwe (~1 hour) is the easiest way in.",
+      "In the rainy season (December – March) many camps close and roads become impassable."
+     ],
+     "mapsQuery": "Mfuwe, South Luangwa National Park, Zambia",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nshima (maize porridge) with relish",
+     "Kapenta (small dried lake fish)",
+     "Grilled bream (tilapia)"
+    ],
+    "drinks": [
+     "Mosi lager",
+     "Munkoyo (lightly fermented root drink)",
+     "Maheu (fermented maize drink)"
+    ],
+    "streetFoods": [
+     "Vitumbuwa (sweet fried dough balls)",
+     "Roasted maize cobs",
+     "Chikanda (\"African polony\" of orchid tubers and peanuts)"
+    ],
+    "diningAdvice": "Nshima is rolled into a ball with the right hand and dipped in relish; local eateries are very cheap and lodges usually include meals."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G plug adapter",
+     "Malaria tablets and insect repellent",
+     "Neutral-coloured safari clothes and binoculars",
+     "Raincoat and waterproof case for the falls"
+    ],
+    "safetyAndEtiquette": [
+     "Stay in the vehicle in national parks and follow your guide's rules about wildlife in camp.",
+     "Change money only at banks or bureaux, and pay larger sums by card.",
+     "Greetings are long and important; touching your right elbow with your left hand while shaking shows respect."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mostly British three-pin Type G; older buildings may have Type D and sometimes C. Scheduled power cuts (load-shedding) can occur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water shouldn't be drunk; there have been cholera outbreaks. Drink bottled or treated water; lodges usually provide filtered water.",
+    "vaccines": [
+     "Yellow fever: certificate required if arriving from a risk country; consider the vaccine for North-Western and Western provinces",
+     "Malaria prophylaxis for the whole country",
+     "Hepatitis A, typhoid and rabies",
+     "Consider cholera vaccination"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "992"
+   },
+   "tipping": {
+    "custom": "10% in restaurants if service isn't included; daily tips are expected for safari guides and camp staff.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "At lodges tips usually go in a shared box, in dollars or kwacha."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (16% VAT)",
+    "minSpend": "Not applicable",
+    "customsNote": "There is no general tourist VAT refund scheme. Buying or exporting ivory, horn or protected wildlife products is illegal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.00",
+    "topCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "airportSimTrapWarning": "MTN and Airtel SIMs can be bought at the airport at fair prices with passport registration; download offline maps, as parks have no signal."
+   },
+   "touristScams": [
+    {
+     "title": "Street Money Changers",
+     "desc": "Street money changers in Livingstone and at border posts giving fake or short-changed notes",
+     "tip": "Change money only at banks or bureaux, and pay larger sums by card."
+    },
+    {
+     "title": "Bus Terminal Snatchers",
+     "desc": "Bag snatching and fake ticket touts at Lusaka's Intercity bus terminal",
+     "tip": "Buy tickets at the company's own office or online and keep your bag in front of you."
+    },
+    {
+     "title": "Unlicensed Tour Sellers",
+     "desc": "Self-styled guides selling unlicensed falls or safari tours",
+     "tip": "Book tours through your hotel or established operators."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Sambischer Kwacha (ZMW)",
+   "plugType": "Typ G (teils C, D), 230V, 50Hz",
+   "bestMonths": "Mai – Oktober (Trockenzeit; beste Safari August – Oktober); die Victoriafälle führen Februar – Mai am meisten Wasser",
+   "safety": {
+    "crimeRateSummary": "Allgemein ein sicheres, friedliches Land; in Lusaka und Livingstone gibt es Taschendiebstahl, Autoeinbrüche und Gelegenheitskriminalität. Schwere Gewalt trifft Touristen selten.",
+    "commonScams": [
+     "Straßengeldwechsler in Livingstone und an Grenzposten mit Falschgeld oder zu wenig Wechselgeld",
+     "Taschendiebstahl und falsche Ticketverkäufer am Intercity-Busbahnhof in Lusaka",
+     "Selbsternannte Guides verkaufen unlizenzierte Wasserfall- oder Safaritouren"
+    ],
+    "safeTravelTips": [
+     "Geld nur bei Banken oder Wechselstuben tauschen und größere Summen mit Karte zahlen.",
+     "In Lusaka nach Einbruch der Dunkelheit nicht zu Fuß gehen; nichts sichtbar im Auto lassen.",
+     "In Nationalparks im Fahrzeug bleiben und im Camp die Regeln des Guides zu Wildtieren befolgen."
+    ],
+    "emergencyNumbers": {
+     "police": "991 / 999",
+     "ambulance": "992",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in Städten und an Hauptstraßen (begrenzt 5G in Lusaka); in Nationalparks oft kein Netz",
+    "costPerGbUsd": "0.80 - 2 $",
+    "esimAvailability": "Mittel (internationale eSIMs)",
+    "bestCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Einfach (Minibusse und Überlandbusse; Inlandsflüge zu Safarigebieten)",
+    "costLevel": "Mittel (Safaritransfers teuer)",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Nicht verfügbar",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "In Lusaka bieten Apps wie Yango Festpreise; in Livingstone Hoteltaxis nutzen oder Preis vorher vereinbaren. Für Überlandfahrten etablierte Busfirmen wie Mazhandu Family wählen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 200 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "60 - 110 $ (Safari-Lodges ab 300 $ pro Person)",
+    "flightCostIndex": "Hoch",
+    "flightTip": "Lusaka (LUN) und Livingstone (LVI) erreicht man meist über Addis Abeba, Johannesburg, Nairobi oder Dubai; direkt nach Livingstone zu fliegen spart Zeit für die Victoriafälle."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind ausführlich; beim Handschlag die linke Hand an den rechten Ellbogen zu legen zeigt Respekt.",
+     "Mit beiden Händen oder der rechten geben und nehmen.",
+     "Keine Regierungsgebäude, Brücken oder Militäranlagen fotografieren."
+    ],
+    "festivals": [
+     "Kuomboka (Reise des Lozi-Königs aus der Flutebene, März – April)",
+     "Ncwala (Erntezeremonie der Ngoni, Februar)",
+     "Unabhängigkeitstag (24. Oktober)"
+    ],
+    "lifestyle": "Eine ruhige, gastfreundliche Gesellschaft aus über 70 Ethnien; das Motto „One Zambia, One Nation“ prägt die Identität. Fußball und Kirche stehen im Mittelpunkt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoriafälle (Mosi-oa-Tunya)",
+     "South-Luangwa-Nationalpark (Geburtsort der Walking-Safari)",
+     "Lower-Zambezi-Nationalpark",
+     "Kafue-Nationalpark",
+     "Karibasee",
+     "Flughundwanderung in Kasanka (Oktober – Dezember)"
+    ],
+    "bestSeasons": "Mai – Oktober (Trockenzeit; beste Safari August – Oktober); die Victoriafälle führen Februar – Mai am meisten Wasser",
+    "travelStyleTip": "Die Entfernungen sind groß und die Straßen schwierig; Inlandsflüge zwischen Livingstone und den Parks sparen Zeit, Lodges bieten meist Vollpension und Pirschfahrten."
+   },
+   "religion": {
+    "primaryReligions": "Christen ~95 % (Protestanten ~75 %, Katholiken ~20 %); kleine muslimische und hinduistische Gemeinden, traditionelle Glaubensformen",
+    "respectNorms": "Die Verfassung erklärt Sambia zur „christlichen Nation“; in Kirchen und bei Zeremonien dezent kleiden und Häuptlingen Respekt zeigen.",
+    "sacredSites": [
+     "Kathedrale vom Heiligen Kreuz (Lusaka)",
+     "Chishimba-Fälle (in der Bemba-Tradition heilig)",
+     "Victoriafälle – Mosi-oa-Tunya (den Toka-Leya heilig)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Englisch (Amtssprache); über 70 lokale Sprachen wie Bemba, Nyanja, Tonga und Lozi.",
+    "englishProficiency": "Gut; Englisch ist in Städten und im Tourismus verbreitet.",
+    "phrases": [
+     {
+      "phrase": "Muli bwanji? (Nyanja)",
+      "meaning": "Wie geht es Ihnen?",
+      "translation": "Wie geht es Ihnen?",
+      "pronunciation": "MU-li BWAN-ji"
+     },
+     {
+      "phrase": "Zikomo (Nyanja)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "zi-KO-mo"
+     },
+     {
+      "phrase": "Muli shani? (Bemba)",
+      "meaning": "Wie geht es Ihnen? (Bemba)",
+      "translation": "Wie geht es Ihnen? (Bemba)",
+      "pronunciation": "MU-li SHA-ni"
+     },
+     {
+      "phrase": "Natotela (Bemba)",
+      "meaning": "Danke (Bemba)",
+      "translation": "Danke (Bemba)",
+      "pronunciation": "na-to-TE-la"
+     },
+     {
+      "phrase": "Ndi zingati? (Nyanja)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "ndi zin-GA-ti"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Region der Bantu-Königreiche erreichte David Livingstone 1855. Nach der Herrschaft der British South Africa Company wurde sie 1924 Protektorat Nordrhodesien. Am 24. Oktober 1964 unabhängig unter Kenneth Kaunda; Kupferbergbau ist das Rückgrat der Wirtschaft.",
+    "milestones": [
+     "1855: Livingstone sieht die Victoriafälle",
+     "1924: Protektorat Nordrhodesien",
+     "1959: Fertigstellung des Kariba-Damms",
+     "1964: Unabhängigkeit (24. Oktober)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nshima (Maisbrei) mit Relish",
+     "Kapenta (kleine getrocknete Seefische)",
+     "Gegrillte Brasse (Tilapia)"
+    ],
+    "traditionalDrinks": [
+     "Mosi-Bier",
+     "Munkoyo (leicht vergorenes Wurzelgetränk)",
+     "Maheu (vergorenes Maisgetränk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Vitumbuwa (frittierte süße Teigbällchen)",
+     "Gerösteter Maiskolben",
+     "Chikanda („afrikanische Wurst“ aus Orchideenknollen und Erdnüssen)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kenneth Kaunda (Gründungspräsident)",
+     "Kalusha Bwalya (Fußballlegende)",
+     "Barbra Banda (Fußballstar)"
+    ],
+    "strongSectors": [
+     "Kupfer- und Kobaltbergbau",
+     "Landwirtschaft (Mais, Tabak, Zucker)",
+     "Tourismus und Wasserkraft"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "In Städten und Lodges sind Karten und Mobile Money (Airtel Money, MTN MoMo) verbreitet; für Märkte und Minibusse Bargeld (Kwacha). Lodges und Touren kosten meist US-Dollar.",
+    "tippingCulture": "In Restaurants sind 10 % üblich; für Safari-Guides und Camp-Personal 10-20 $ pro Person und Tag.",
+    "economicPillars": "Kupferbergbau (Großteil der Exporte), Landwirtschaft, Tourismus und Wasserkraft."
+   }
+  },
+  "itin": {
+   "routeName": "Donnernder Rauch & Wildnis: Livingstone, Lower Zambezi & South Luangwa",
+   "routeSummary": "Eine 9-tägige Naturroute von den donnernden Victoriafällen zu Kanu-Safaris am Lower Zambezi und nach South Luangwa, der Heimat der Walking-Safari.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Safariroute",
+   "bestSeason": "Mai – Oktober (Trockenzeit)",
+   "transportMode": "Inlands- und Kleinflugzeugflüge (Livingstone – Lusaka – Mfuwe) + Lodge-Transfers",
+   "paceLevel": "Ausgewogen (Abenteuer + Safari)",
+   "stops": [
+    {
+     "name": "Stopp 1: Livingstone & Victoriafälle",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Mosi-oa-Tunya & Knife-Edge-Brücke",
+      "Livingstone Island & Devil's Pool (August – Januar)",
+      "Sonnenuntergangsfahrt auf dem Sambesi",
+      "Nashorn-Walk im Mosi-oa-Tunya-Nationalpark"
+     ],
+     "activities": [
+      "Gehen Sie mit Regenjacke den Pfad an den Fällen entlang.",
+      "Raften Sie in der Batoka-Schlucht oder springen Sie Bungee von der Brücke.",
+      "Machen Sie abends eine Sonnenuntergangsfahrt."
+     ],
+     "foodAndDrinks": [
+      "Gegrillte Brasse (Tilapia)",
+      "Mosi-Bier"
+     ],
+     "criticalTips": [
+      "Devil's Pool ist nur bei Niedrigwasser mit Führung geöffnet; vorab buchen.",
+      "Von Februar bis Mai durchnässt die Gischt alles; Handy wasserdicht verpacken."
+     ],
+     "mapsQuery": "Victoria Falls, Livingstone, Zambia",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stopp 2: Lusaka & Lower Zambezi",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Kanu-Safari auf dem Lower Zambezi",
+      "Elefantenherden und Flusspferde",
+      "Kulturdorf Kabwata (Lusaka)"
+     ],
+     "activities": [
+      "Stöbern Sie auf dem Sonntagsmarkt im Arcades in Lusaka.",
+      "Beobachten Sie Tiere leise vom Kanu aus.",
+      "Angeln Sie Tigerfische (Catch & Release)."
+     ],
+     "foodAndDrinks": [
+      "Nshima (Maisbrei) mit Relish",
+      "Chikanda („afrikanische Wurst“ aus Orchideenknollen und Erdnüssen)",
+      "Munkoyo (leicht vergorenes Wurzelgetränk)"
+     ],
+     "criticalTips": [
+      "Die Fahrt ab Lusaka dauert ~3-4 Std.; ein Kleinflugzeug ist schneller.",
+      "Bei Kanutouren den Abstandsregeln des Guides zu Flusspferden folgen."
+     ],
+     "mapsQuery": "Lower Zambezi National Park, Zambia",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stopp 3: South Luangwa",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Walking-Safari",
+      "Nachtpirsch auf Leoparden",
+      "Thornicroft-Giraffe und Cookson-Gnu"
+     ],
+     "activities": [
+      "Machen Sie eine Morgen-Walking-Safari mit bewaffnetem Scout.",
+      "Nehmen Sie an einer abendlichen Nachtfahrt mit Scheinwerfer teil.",
+      "Besuchen Sie Dörfer und Kunsthandwerk in Mfuwe."
+     ],
+     "foodAndDrinks": [
+      "Grillabend (Braai) am Lagerfeuer",
+      "Vitumbuwa (frittierte süße Teigbällchen)"
+     ],
+     "criticalTips": [
+      "Der Flug von Lusaka nach Mfuwe (~1 Std.) ist am bequemsten.",
+      "In der Regenzeit (Dezember – März) schließen viele Camps und Straßen werden unpassierbar."
+     ],
+     "mapsQuery": "Mfuwe, South Luangwa National Park, Zambia",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nshima (Maisbrei) mit Relish",
+     "Kapenta (kleine getrocknete Seefische)",
+     "Gegrillte Brasse (Tilapia)"
+    ],
+    "drinks": [
+     "Mosi-Bier",
+     "Munkoyo (leicht vergorenes Wurzelgetränk)",
+     "Maheu (vergorenes Maisgetränk)"
+    ],
+    "streetFoods": [
+     "Vitumbuwa (frittierte süße Teigbällchen)",
+     "Gerösteter Maiskolben",
+     "Chikanda („afrikanische Wurst“ aus Orchideenknollen und Erdnüssen)"
+    ],
+    "diningAdvice": "Nshima wird mit der rechten Hand zu Bällchen geformt und in Relish getunkt; lokale Lokale sind sehr günstig, Lodges inkludieren meist die Mahlzeiten."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reisestecker Typ G",
+     "Malariatabletten und Mückenschutz",
+     "Neutralfarbene Safarikleidung und Fernglas",
+     "Regenjacke und wasserdichte Hülle für die Fälle"
+    ],
+    "safetyAndEtiquette": [
+     "In Nationalparks im Fahrzeug bleiben und im Camp die Regeln des Guides zu Wildtieren befolgen.",
+     "Geld nur bei Banken oder Wechselstuben tauschen und größere Summen mit Karte zahlen.",
+     "Begrüßungen sind ausführlich; beim Handschlag die linke Hand an den rechten Ellbogen zu legen zeigt Respekt."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Meist britische Steckdosen Typ G; in Altbauten auch D, teils C. Geplante Stromabschaltungen (Load-Shedding) kommen vor."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinken; es gab Cholera-Ausbrüche. Flaschen- oder aufbereitetes Wasser; Lodges stellen meist gefiltertes Wasser bereit.",
+    "vaccines": [
+     "Gelbfieber: Nachweis bei Einreise aus Risikoländern; Impfung für die Nordwest- und Westprovinz erwägen",
+     "Malariaprophylaxe landesweit",
+     "Hepatitis A, Typhus und Tollwut",
+     "Choleraimpfung erwägen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "992"
+   },
+   "tipping": {
+    "custom": "10 % im Restaurant, wenn kein Service enthalten ist; Safari-Guides und Camp-Personal erwarten tägliches Trinkgeld.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "In Lodges kommt Trinkgeld meist in eine gemeinsame Box, in Dollar oder Kwacha."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (16 % MwSt.)",
+    "minSpend": "Entfällt",
+    "customsNote": "Es gibt keine allgemeine MwSt.-Erstattung für Touristen. Kauf und Ausfuhr von Elfenbein, Horn oder geschützten Tierprodukten sind verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.00",
+    "topCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "airportSimTrapWarning": "MTN- und Airtel-SIMs gibt es am Flughafen fair mit Passregistrierung; Offline-Karten laden, da in Parks kein Netz ist."
+   },
+   "touristScams": [
+    {
+     "title": "Straßengeldwechsler",
+     "desc": "Straßengeldwechsler in Livingstone und an Grenzposten mit Falschgeld oder zu wenig Wechselgeld",
+     "tip": "Geld nur bei Banken oder Wechselstuben tauschen und größere Summen mit Karte zahlen."
+    },
+    {
+     "title": "Taschendiebe am Busbahnhof",
+     "desc": "Taschendiebstahl und falsche Ticketverkäufer am Intercity-Busbahnhof in Lusaka",
+     "tip": "Tickets am Schalter der Busfirma oder online kaufen und Tasche vorne tragen."
+    },
+    {
+     "title": "Unlizenzierte Tourverkäufer",
+     "desc": "Selbsternannte Guides verkaufen unlizenzierte Wasserfall- oder Safaritouren",
+     "tip": "Touren über das Hotel oder bekannte Veranstalter buchen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Kwacha zambiano (ZMW)",
+   "plugType": "Tipo G (a veces C, D), 230V, 50Hz",
+   "bestMonths": "Mayo – octubre (estación seca; mejor safari de agosto a octubre); las cataratas Victoria tienen más caudal de febrero a mayo",
+   "safety": {
+    "crimeRateSummary": "Un país en general seguro y tranquilo, con tirones, robos en coches y delitos oportunistas en Lusaka y Livingstone. La violencia grave rara vez afecta a turistas.",
+    "commonScams": [
+     "Cambistas callejeros en Livingstone y en la frontera que dan billetes falsos o de menos",
+     "Tirones y falsos vendedores de billetes en la terminal Intercity de Lusaka",
+     "Supuestos guías que venden excursiones sin licencia a las cataratas o de safari"
+    ],
+    "safeTravelTips": [
+     "Cambie solo en bancos o casas de cambio y pague las sumas grandes con tarjeta.",
+     "No camine de noche en Lusaka ni deje nada a la vista en el coche.",
+     "No baje del vehículo en los parques y siga las normas del guía sobre animales en el campamento."
+    ],
+    "emergencyNumbers": {
+     "police": "991 / 999",
+     "ambulance": "992",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G en ciudades y carreteras principales (5G limitado en Lusaka); a menudo sin señal en los parques",
+    "costPerGbUsd": "0.80 - 2 $",
+    "esimAvailability": "Moderada (eSIM internacionales)",
+    "bestCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico (minibuses y autocares; vuelos internos a zonas de safari)",
+    "costLevel": "Moderado (traslados de safari caros)",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "No disponible",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "En Lusaka, apps como Yango ofrecen tarifa fija; en Livingstone use taxis del hotel o pacte el precio. Para viajes interurbanos, elija compañías serias como Mazhandu Family."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 200 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "60 - 110 $ (lodges de safari desde 300 $ por persona)",
+    "flightCostIndex": "Alto",
+    "flightTip": "A Lusaka (LUN) y Livingstone (LVI) se llega vía Adís Abeba, Johannesburgo, Nairobi o Dubái; volar a Livingstone ahorra tiempo para las cataratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos son largos e importantes; tocar el codo derecho con la mano izquierda al dar la mano muestra respeto.",
+     "Dé y reciba con ambas manos o la derecha.",
+     "No fotografíe edificios oficiales, puentes ni zonas militares."
+    ],
+    "festivals": [
+     "Kuomboka (viaje del rey lozi desde la llanura inundada, marzo – abril)",
+     "Ncwala (ceremonia de cosecha ngoni, febrero)",
+     "Día de la Independencia (24 de octubre)"
+    ],
+    "lifestyle": "Una sociedad tranquila y hospitalaria de más de 70 etnias; el lema «One Zambia, One Nation» sostiene la identidad. El fútbol y la iglesia son centrales."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cataratas Victoria (Mosi-oa-Tunya)",
+     "Parque Nacional South Luangwa (cuna del safari a pie)",
+     "Parque Nacional Lower Zambezi",
+     "Parque Nacional Kafue",
+     "Lago Kariba",
+     "Migración de murciélagos de Kasanka (octubre – diciembre)"
+    ],
+    "bestSeasons": "Mayo – octubre (estación seca; mejor safari de agosto a octubre); las cataratas Victoria tienen más caudal de febrero a mayo",
+    "travelStyleTip": "Las distancias son largas y las carreteras duras; los vuelos internos entre Livingstone y los parques ahorran tiempo, y los lodges suelen incluir pensión completa y safaris."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ~95 % (protestantes ~75 %, católicos ~20 %); pequeñas comunidades musulmanas e hindúes y creencias tradicionales",
+    "respectNorms": "La Constitución declara a Zambia «nación cristiana»; vista con recato en iglesias y ceremonias y muestre respeto a los jefes.",
+    "sacredSites": [
+     "Catedral de la Santa Cruz (Lusaka)",
+     "Cataratas Chishimba (sagradas para los bemba)",
+     "Cataratas Victoria – Mosi-oa-Tunya (sagradas para los toka-leya)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglés (oficial); se hablan más de 70 lenguas como bemba, nyanja, tonga y lozi.",
+    "englishProficiency": "Bueno; el inglés se usa ampliamente en ciudades y turismo.",
+    "phrases": [
+     {
+      "phrase": "Muli bwanji? (Nyanja)",
+      "meaning": "¿Cómo está?",
+      "translation": "¿Cómo está?",
+      "pronunciation": "MU-li BWAN-ji"
+     },
+     {
+      "phrase": "Zikomo (Nyanja)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "zi-KO-mo"
+     },
+     {
+      "phrase": "Muli shani? (Bemba)",
+      "meaning": "¿Cómo está? (bemba)",
+      "translation": "¿Cómo está? (bemba)",
+      "pronunciation": "MU-li SHA-ni"
+     },
+     {
+      "phrase": "Natotela (Bemba)",
+      "meaning": "Gracias (bemba)",
+      "translation": "Gracias (bemba)",
+      "pronunciation": "na-to-TE-la"
+     },
+     {
+      "phrase": "Ndi zingati? (Nyanja)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "ndi zin-GA-ti"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Tierra de reinos bantúes, David Livingstone llegó en 1855. Tras el dominio de la British South Africa Company, en 1924 fue el protectorado de Rodesia del Norte. Se independizó con Kenneth Kaunda el 24 de octubre de 1964; el cobre es la base de la economía.",
+    "milestones": [
+     "1855: Livingstone contempla las cataratas Victoria",
+     "1924: protectorado de Rodesia del Norte",
+     "1959: se completa la presa de Kariba",
+     "1964: independencia (24 de octubre)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nshima (gacha de maíz) con guarnición",
+     "Kapenta (pescaditos secos de lago)",
+     "Tilapia a la parrilla"
+    ],
+    "traditionalDrinks": [
+     "Cerveza Mosi",
+     "Munkoyo (bebida fermentada de raíces)",
+     "Maheu (bebida de maíz fermentado)"
+    ],
+    "streetFoodAndDesserts": [
+     "Vitumbuwa (buñuelos dulces)",
+     "Mazorca asada",
+     "Chikanda («mortadela africana» de tubérculos de orquídea y cacahuete)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kenneth Kaunda (presidente fundador)",
+     "Kalusha Bwalya (leyenda del fútbol)",
+     "Barbra Banda (estrella del fútbol femenino)"
+    ],
+    "strongSectors": [
+     "Minería de cobre y cobalto",
+     "Agricultura (maíz, tabaco, azúcar)",
+     "Turismo e hidroelectricidad"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "En ciudades y lodges se usan tarjetas y dinero móvil (Airtel Money, MTN MoMo); lleve kwachas para mercados y minibuses. Lodges y tours suelen cotizar en dólares.",
+    "tippingCulture": "En restaurantes es habitual un 10 %; para guías y personal de safari, 10-20 $ por persona y día.",
+    "economicPillars": "Minería de cobre (la mayor parte de las exportaciones), agricultura, turismo e hidroelectricidad."
+   }
+  },
+  "itin": {
+   "routeName": "El humo que truena y la naturaleza: Livingstone, Lower Zambezi y South Luangwa",
+   "routeSummary": "Ruta de 9 días de las atronadoras cataratas Victoria a los safaris en canoa del Lower Zambezi y a South Luangwa, cuna del safari a pie.",
+   "totalDays": 9,
+   "idealDurationText": "Ruta de safari de 9 días",
+   "bestSeason": "Mayo – octubre (estación seca)",
+   "transportMode": "Vuelos internos y en avioneta (Livingstone – Lusaka – Mfuwe) + traslados de los lodges",
+   "paceLevel": "Equilibrado (aventura + safari)",
+   "stops": [
+    {
+     "name": "Parada 1: Livingstone y cataratas Victoria",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Mosi-oa-Tunya y puente Knife-Edge",
+      "Isla Livingstone y Devil's Pool (agosto – enero)",
+      "Crucero al atardecer por el Zambeze",
+      "Paseo de rinocerontes en Mosi-oa-Tunya"
+     ],
+     "activities": [
+      "Recorra el sendero de las cataratas con chubasquero.",
+      "Haga rafting en la garganta de Batoka o puenting desde el puente.",
+      "Haga el crucero al atardecer por el Zambeze."
+     ],
+     "foodAndDrinks": [
+      "Tilapia a la parrilla",
+      "Cerveza Mosi"
+     ],
+     "criticalTips": [
+      "Devil's Pool solo abre con aguas bajas y en tours guiados; reserve antes.",
+      "De febrero a mayo la bruma lo empapa todo; lleve el móvil en funda impermeable."
+     ],
+     "mapsQuery": "Victoria Falls, Livingstone, Zambia",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Lusaka y Lower Zambezi",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Safari en canoa por el Lower Zambezi",
+      "Manadas de elefantes e hipopótamos",
+      "Aldea cultural de Kabwata (Lusaka)"
+     ],
+     "activities": [
+      "Vea artesanía en el mercado dominical de Arcades en Lusaka.",
+      "Observe animales en silencio desde la canoa.",
+      "Pesque pez tigre (captura y suelta)."
+     ],
+     "foodAndDrinks": [
+      "Nshima (gacha de maíz) con guarnición",
+      "Chikanda («mortadela africana» de tubérculos de orquídea y cacahuete)",
+      "Munkoyo (bebida fermentada de raíces)"
+     ],
+     "criticalTips": [
+      "Por carretera desde Lusaka son ~3-4 h; en avioneta es más rápido.",
+      "En canoa siga al guía sobre la distancia a los hipopótamos."
+     ],
+     "mapsQuery": "Lower Zambezi National Park, Zambia",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: South Luangwa",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Safari a pie",
+      "Safari nocturno para ver leopardos",
+      "Jirafa de Thornicroft y ñu de Cookson"
+     ],
+     "activities": [
+      "Haga un safari a pie matinal con un guardabosques armado.",
+      "Haga un safari nocturno con foco.",
+      "Visite aldeas y talleres en Mfuwe."
+     ],
+     "foodAndDrinks": [
+      "Barbacoa (braai) junto al fuego",
+      "Vitumbuwa (buñuelos dulces)"
+     ],
+     "criticalTips": [
+      "Volar de Lusaka a Mfuwe (~1 h) es lo más práctico.",
+      "En la época de lluvias (diciembre – marzo) cierran muchos campamentos y los caminos se vuelven intransitables."
+     ],
+     "mapsQuery": "Mfuwe, South Luangwa National Park, Zambia",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nshima (gacha de maíz) con guarnición",
+     "Kapenta (pescaditos secos de lago)",
+     "Tilapia a la parrilla"
+    ],
+    "drinks": [
+     "Cerveza Mosi",
+     "Munkoyo (bebida fermentada de raíces)",
+     "Maheu (bebida de maíz fermentado)"
+    ],
+    "streetFoods": [
+     "Vitumbuwa (buñuelos dulces)",
+     "Mazorca asada",
+     "Chikanda («mortadela africana» de tubérculos de orquídea y cacahuete)"
+    ],
+    "diningAdvice": "La nshima se forma en bolitas con la mano derecha y se moja en la salsa; los locales son muy baratos y los lodges suelen incluir comidas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Antipalúdicos y repelente",
+     "Ropa de colores neutros y prismáticos",
+     "Chubasquero y funda impermeable para las cataratas"
+    ],
+    "safetyAndEtiquette": [
+     "No baje del vehículo en los parques y siga las normas del guía sobre animales en el campamento.",
+     "Cambie solo en bancos o casas de cambio y pague las sumas grandes con tarjeta.",
+     "Los saludos son largos e importantes; tocar el codo derecho con la mano izquierda al dar la mano muestra respeto."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mayormente enchufes británicos tipo G; en edificios antiguos, D y a veces C. Puede haber cortes programados (load-shedding)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "No beba agua del grifo; ha habido brotes de cólera. Tome agua embotellada o tratada; los lodges suelen dar agua filtrada.",
+    "vaccines": [
+     "Fiebre amarilla: certificado si llega de un país de riesgo; valore vacunarse para las provincias del Noroeste y Occidental",
+     "Profilaxis antipalúdica en todo el país",
+     "Hepatitis A, fiebre tifoidea y rabia",
+     "Valore la vacuna contra el cólera"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "992"
+   },
+   "tipping": {
+    "custom": "10 % en restaurantes si no incluye servicio; guías y personal de safari esperan propina diaria.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "En los lodges la propina va a una caja común, en dólares o kwachas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (IVA del 16 %)",
+    "minSpend": "No aplica",
+    "customsNote": "No existe devolución general de IVA. Comprar o exportar marfil, cuerno o productos de fauna protegida es ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.00",
+    "topCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto se compran SIM de MTN y Airtel a buen precio con registro de pasaporte; descargue mapas sin conexión, en los parques no hay señal."
+   },
+   "touristScams": [
+    {
+     "title": "Cambistas callejeros",
+     "desc": "Cambistas callejeros en Livingstone y en la frontera que dan billetes falsos o de menos",
+     "tip": "Cambie solo en bancos o casas de cambio y pague las sumas grandes con tarjeta."
+    },
+    {
+     "title": "Ladrones en la terminal",
+     "desc": "Tirones y falsos vendedores de billetes en la terminal Intercity de Lusaka",
+     "tip": "Compre el billete en la oficina de la compañía o en línea y lleve la bolsa delante."
+    },
+    {
+     "title": "Vendedores de tours sin licencia",
+     "desc": "Supuestos guías que venden excursiones sin licencia a las cataratas o de safari",
+     "tip": "Reserve tours a través del hotel u operadores conocidos."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Замбийская квача (ZMW)",
+   "plugType": "Тип G (иногда C, D), 230 В, 50 Гц",
+   "bestMonths": "Май – октябрь (сухой сезон; лучшее сафари в августе – октябре); водопад Виктория полноводнее всего в феврале – мае",
+   "safety": {
+    "crimeRateSummary": "В целом безопасная и спокойная страна; в Лусаке и Ливингстоне бывают рывки сумок, кражи из машин и мелкие преступления. Серьёзное насилие против туристов редко.",
+    "commonScams": [
+     "Уличные менялы в Ливингстоне и на границе дают фальшивые купюры или недодают",
+     "Рывки сумок и фальшивые продавцы билетов на автовокзале Intercity в Лусаке",
+     "Самозваные гиды продают нелицензированные экскурсии к водопаду и сафари"
+    ],
+    "safeTravelTips": [
+     "Меняйте деньги только в банках и обменниках; крупные суммы платите картой.",
+     "Не ходите пешком в Лусаке после темноты и не оставляйте вещи на виду в машине.",
+     "В нацпарках не выходите из машины и соблюдайте правила гида в лагере насчёт диких животных."
+    ],
+    "emergencyNumbers": {
+     "police": "991 / 999",
+     "ambulance": "992",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G в городах и вдоль трасс (ограниченный 5G в Лусаке); в нацпарках часто нет связи",
+    "costPerGbUsd": "0.80 - 2 $",
+    "esimAvailability": "Средняя (международные eSIM)",
+    "bestCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Базовый (маршрутки и междугородние автобусы; внутренние рейсы в районы сафари)",
+    "costLevel": "Средний (трансферы на сафари дорогие)",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "В Лусаке приложения вроде Yango дают фиксированную цену; в Ливингстоне берите такси от отеля или договаривайтесь заранее. Для междугородних поездок выбирайте проверенных перевозчиков, например Mazhandu Family."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 200 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "60 - 110 $ (сафари-лоджи от 300 $ с человека)",
+    "flightCostIndex": "Высокий",
+    "flightTip": "В Лусаку (LUN) и Ливингстон (LVI) обычно летят через Аддис-Абебу, Йоханнесбург, Найроби или Дубай; прилёт сразу в Ливингстон экономит время для водопада."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствия долгие и важные; при рукопожатии касание левой рукой правого локтя — знак уважения.",
+     "Передавайте и принимайте обеими руками или правой.",
+     "Не фотографируйте правительственные здания, мосты и военные объекты."
+    ],
+    "festivals": [
+     "Куомбока (переезд короля лози с поймы, март – апрель)",
+     "Нцвала (праздник урожая нгони, февраль)",
+     "День независимости (24 октября)"
+    ],
+    "lifestyle": "Спокойное, гостеприимное общество из более чем 70 народов; девиз «Одна Замбия — одна нация» лежит в основе идентичности. В центре жизни — футбол и церковь."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Водопад Виктория (Мози-оа-Тунья)",
+     "Нацпарк Южная Луангва (родина пешего сафари)",
+     "Нацпарк Нижняя Замбези",
+     "Нацпарк Кафуэ",
+     "Озеро Кариба",
+     "Миграция крыланов в Касанке (октябрь – декабрь)"
+    ],
+    "bestSeasons": "Май – октябрь (сухой сезон; лучшее сафари в августе – октябре); водопад Виктория полноводнее всего в феврале – мае",
+    "travelStyleTip": "Расстояния большие, дороги сложные — внутренние рейсы между Ливингстоном и парками экономят время; в лоджах обычно полный пансион и выезды на сафари."
+   },
+   "religion": {
+    "primaryReligions": "Христиане ~95% (протестанты ~75%, католики ~20%); небольшие мусульманская и индуистская общины, традиционные верования",
+    "respectNorms": "Конституция объявляет Замбию «христианской нацией»; в церквях и на церемониях одевайтесь скромно и проявляйте уважение к вождям.",
+    "sacredSites": [
+     "Собор Святого Креста (Лусака)",
+     "Водопад Чишимба (священный в традиции бемба)",
+     "Виктория – Мози-оа-Тунья (священный для народа тока-лея)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Английский (официальный); широко распространены более 70 местных языков: бемба, ньянджа, тонга, лози и др.",
+    "englishProficiency": "Хороший; английский широко используется в городах и туризме.",
+    "phrases": [
+     {
+      "phrase": "Muli bwanji? (Nyanja)",
+      "meaning": "Как дела?",
+      "translation": "Как дела?",
+      "pronunciation": "MU-li BWAN-ji"
+     },
+     {
+      "phrase": "Zikomo (Nyanja)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "zi-KO-mo"
+     },
+     {
+      "phrase": "Muli shani? (Bemba)",
+      "meaning": "Как дела? (бемба)",
+      "translation": "Как дела? (бемба)",
+      "pronunciation": "MU-li SHA-ni"
+     },
+     {
+      "phrase": "Natotela (Bemba)",
+      "meaning": "Спасибо (бемба)",
+      "translation": "Спасибо (бемба)",
+      "pronunciation": "na-to-TE-la"
+     },
+     {
+      "phrase": "Ndi zingati? (Nyanja)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "ndi zin-GA-ti"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Земли банту, куда в 1855 году пришёл Давид Ливингстон. После правления Британской Южно-Африканской компании в 1924 году стали протекторатом Северная Родезия. Независимость получена 24 октября 1964 года под руководством Кеннета Каунды; основа экономики — добыча меди.",
+    "milestones": [
+     "1855: Ливингстон видит водопад Виктория",
+     "1924: протекторат Северная Родезия",
+     "1959: завершена плотина Кариба",
+     "1964: независимость (24 октября)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Нсима (кукурузная каша) с подливой",
+     "Капента (мелкая сушёная озёрная рыба)",
+     "Жареная тилапия"
+    ],
+    "traditionalDrinks": [
+     "Пиво Mosi",
+     "Мункойо (слабоферментированный напиток из корней)",
+     "Махеу (ферментированный кукурузный напиток)"
+    ],
+    "streetFoodAndDesserts": [
+     "Витумбува (сладкие пончики)",
+     "Печёная кукуруза",
+     "Чиканда («африканская колбаса» из клубней орхидей и арахиса)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Кеннет Каунда (первый президент)",
+     "Калуша Бвалья (легенда футбола)",
+     "Барбра Банда (звезда женского футбола)"
+    ],
+    "strongSectors": [
+     "Добыча меди и кобальта",
+     "Сельское хозяйство (кукуруза, табак, сахар)",
+     "Туризм и гидроэнергетика"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В городах и лоджах распространены карты и мобильные деньги (Airtel Money, MTN MoMo); для рынков и маршруток нужны наличные квачи. Цены лоджей и туров обычно в долларах.",
+    "tippingCulture": "В ресторанах принято 10%; гидам и персоналу лагеря — 10-20 $ с человека в день.",
+    "economicPillars": "Добыча меди (большая часть экспорта), сельское хозяйство, туризм и гидроэнергетика."
+   }
+  },
+  "itin": {
+   "routeName": "Гремящий дым и дикая природа: Ливингстон, Нижняя Замбези и Южная Луангва",
+   "routeSummary": "9-дневный природный маршрут: грохочущий водопад Виктория, сафари на каноэ по Нижней Замбези и Южная Луангва — родина пешего сафари.",
+   "totalDays": 9,
+   "idealDurationText": "9-дневный маршрут-сафари",
+   "bestSeason": "Май – октябрь (сухой сезон)",
+   "transportMode": "Внутренние рейсы и малая авиация (Ливингстон – Лусака – Мфуве) + трансферы лоджей",
+   "paceLevel": "Сбалансированный (приключения + сафари)",
+   "stops": [
+    {
+     "name": "Остановка 1: Ливингстон и водопад Виктория",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Мози-оа-Тунья и мост Найф-Эдж",
+      "Остров Ливингстона и Дьявольский бассейн (август – январь)",
+      "Закатный круиз по Замбези",
+      "Пешая прогулка к носорогам в нацпарке Мози-оа-Тунья"
+     ],
+     "activities": [
+      "Пройдите тропу вдоль водопада в дождевике.",
+      "Сплав по ущелью Батока или банджи-джампинг с моста.",
+      "Вечером отправьтесь в закатный круиз по Замбези."
+     ],
+     "foodAndDrinks": [
+      "Жареная тилапия",
+      "Пиво Mosi"
+     ],
+     "criticalTips": [
+      "Дьявольский бассейн открыт только при низкой воде и с гидом; бронируйте заранее.",
+      "С февраля по май брызги промочат всё; держите телефон в водонепроницаемом чехле."
+     ],
+     "mapsQuery": "Victoria Falls, Livingstone, Zambia",
+     "stopNumber": 1
+    },
+    {
+     "name": "Остановка 2: Лусака и Нижняя Замбези",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Сафари на каноэ по Нижней Замбези",
+      "Стада слонов и бегемоты",
+      "Культурная деревня Кабвата (Лусака)"
+     ],
+     "activities": [
+      "Загляните на воскресный рынок ремёсел в Arcades в Лусаке.",
+      "Тихо наблюдайте за животными с каноэ.",
+      "Половите тигровую рыбу (поймал-отпустил)."
+     ],
+     "foodAndDrinks": [
+      "Нсима (кукурузная каша) с подливой",
+      "Чиканда («африканская колбаса» из клубней орхидей и арахиса)",
+      "Мункойо (слабоферментированный напиток из корней)"
+     ],
+     "criticalTips": [
+      "Дорога из Лусаки занимает ~3-4 часа; на малом самолёте быстрее.",
+      "На каноэ строго слушайтесь гида насчёт дистанции до бегемотов."
+     ],
+     "mapsQuery": "Lower Zambezi National Park, Zambia",
+     "stopNumber": 2
+    },
+    {
+     "name": "Остановка 3: Южная Луангва",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Пешее сафари",
+      "Ночное сафари за леопардами",
+      "Жираф Торникрофта и гну Куксона"
+     ],
+     "activities": [
+      "Отправьтесь на утреннее пешее сафари с вооружённым рейнджером.",
+      "Совершите вечерний выезд с прожектором.",
+      "Посетите деревни и мастерские в Мфуве."
+     ],
+     "foodAndDrinks": [
+      "Барбекю (брай) у костра в лодже",
+      "Витумбува (сладкие пончики)"
+     ],
+     "criticalTips": [
+      "Самый удобный путь — перелёт из Лусаки в Мфуве (~1 час).",
+      "В сезон дождей (декабрь – март) многие лагеря закрываются, дороги становятся непроезжими."
+     ],
+     "mapsQuery": "Mfuwe, South Luangwa National Park, Zambia",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Нсима (кукурузная каша) с подливой",
+     "Капента (мелкая сушёная озёрная рыба)",
+     "Жареная тилапия"
+    ],
+    "drinks": [
+     "Пиво Mosi",
+     "Мункойо (слабоферментированный напиток из корней)",
+     "Махеу (ферментированный кукурузный напиток)"
+    ],
+    "streetFoods": [
+     "Витумбува (сладкие пончики)",
+     "Печёная кукуруза",
+     "Чиканда («африканская колбаса» из клубней орхидей и арахиса)"
+    ],
+    "diningAdvice": "Нсиму скатывают правой рукой в шарик и макают в подливу; местные столовые очень дешёвые, в лоджах питание обычно включено."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник на розетку типа G",
+     "Противомалярийные таблетки и репеллент",
+     "Одежда нейтральных цветов и бинокль",
+     "Дождевик и водонепроницаемый чехол для водопада"
+    ],
+    "safetyAndEtiquette": [
+     "В нацпарках не выходите из машины и соблюдайте правила гида в лагере насчёт диких животных.",
+     "Меняйте деньги только в банках и обменниках; крупные суммы платите картой.",
+     "Приветствия долгие и важные; при рукопожатии касание левой рукой правого локтя — знак уважения."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "В основном британские розетки G; в старых зданиях — D, иногда C. Возможны плановые отключения (load-shedding)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пейте; бывали вспышки холеры. Пейте бутилированную или очищенную; в лоджах обычно есть фильтрованная вода.",
+    "vaccines": [
+     "Жёлтая лихорадка: сертификат обязателен при прибытии из страны риска; прививка — для Северо-Западной и Западной провинций",
+     "Профилактика малярии по всей стране",
+     "Гепатит A, брюшной тиф и бешенство",
+     "Рассмотрите прививку от холеры"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "992"
+   },
+   "tipping": {
+    "custom": "10% в ресторанах, если обслуживание не включено; гиды и персонал сафари ждут ежедневных чаевых.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "В лоджах чаевые обычно кладут в общую коробку, в долларах или квачах."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (НДС 16%)",
+    "minSpend": "Не применяется",
+    "customsNote": "Общей системы возврата НДС туристам нет. Покупка и вывоз слоновой кости, рога и продуктов охраняемых животных запрещены."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.00",
+    "topCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "airportSimTrapWarning": "SIM MTN и Airtel продаются в аэропорту по нормальной цене с регистрацией по паспорту; скачайте офлайн-карты — в парках нет связи."
+   },
+   "touristScams": [
+    {
+     "title": "Уличные менялы",
+     "desc": "Уличные менялы в Ливингстоне и на границе дают фальшивые купюры или недодают",
+     "tip": "Меняйте деньги только в банках и обменниках; крупные суммы платите картой."
+    },
+    {
+     "title": "Воры на автовокзале",
+     "desc": "Рывки сумок и фальшивые продавцы билетов на автовокзале Intercity в Лусаке",
+     "tip": "Покупайте билеты в кассе перевозчика или онлайн и держите сумку перед собой."
+    },
+    {
+     "title": "Продавцы нелицензированных туров",
+     "desc": "Самозваные гиды продают нелицензированные экскурсии к водопаду и сафари",
+     "tip": "Бронируйте туры через отель или известных операторов."
+    }
+   ]
+  }
+ }
+}

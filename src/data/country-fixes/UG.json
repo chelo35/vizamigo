@@ -1,0 +1,1907 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Uganda Şilini (UGX)",
+   "plugType": "G (240V, 50Hz)",
+   "bestMonths": "Haziran – Eylül ve Aralık – Şubat (kurak mevsimler; goril ve şempanze yürüyüşü için en iyi dönem)",
+   "safety": {
+    "crimeRateSummary": "Kampala'da gasp, kapkaç, araç içinden hırsızlık ve 'boda boda' ile çanta kapma yaygındır. Terör tehdidi vardır (2023'te Queen Elizabeth Milli Parkı'nda turistlere saldırı yaşandı); Kongo DC sınırı ve Karamoja bölgesi için resmî uyarılar mevcuttur. Eşcinselliği ağır biçimde cezalandıran 2023 yasası da yabancılar için risk oluşturur.",
+    "commonScams": [
+     "Sahte goril/şempanze izin belgesi satan aracılar",
+     "Boda boda sürücülerinin turiste fahiş fiyat söylemesi",
+     "Trafikte araç camından telefon ve çanta kapma"
+    ],
+    "safeTravelTips": [
+     "İzinleri yalnızca Uganda Yaban Hayatı İdaresi (UWA) veya lisanslı tur operatörleri üzerinden alın.",
+     "Gece karayolu yolculuğundan ve Kampala'da karanlıkta yürümekten kaçının; araç camlarını kapalı tutun.",
+     "Boda boda yerine SafeBoda/Uber gibi uygulamaları kullanın ve mutlaka kask takın."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Kampala ve büyük kasabalarda iyi 4G; milli parklarda ve dağlık bölgelerde kesintili.",
+    "costPerGbUsd": "~0.80 - 2 $",
+    "esimAvailability": "Orta (MTN eSIM ve uluslararası paketler)",
+    "bestCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Temel",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.50 - 2 $ (matatu minibüs)",
+    "dailyPassUsd": "Günlük bilet yok; safari aracı + şoför günü 100 - 180 $",
+    "popularRideApps": [
+     "SafeBoda",
+     "Uber",
+     "Bolt",
+     "Matatu (paylaşımlı minibüs)"
+    ],
+    "taxiAdvice": "Kampala'da Uber, Bolt ve SafeBoda (kasklı motosiklet taksi) yaygındır ve sabit fiyat sunar. Sokaktaki boda bodalar tehlikeli kazalarla bilinir. Milli parklar arasında şoförlü 4x4 en pratik ve güvenli seçenektir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Orta – Yüksek",
+    "flightTip": "Entebbe'ye (EBB) İstanbul'dan Türk Hava Yolları seferleri vardır (bazıları ara duraklı); Addis Ababa, Dubai, Doha ve Nairobi aktarmaları da yaygındır. Goril izinleri (~800 $) sınırlı olduğundan önce izni, sonra uçuşu ayarlayın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma çok önemlidir; konuya girmeden önce hal hatır sorun.",
+     "Bir şey verip alırken sağ eli veya iki eli kullanın.",
+     "Halka açık yerlerde sevgi gösterisinden kaçının ve kırsalda kapalı giyinin.",
+     "İnsanları, askerî ve resmî binaları izinsiz fotoğraflamayın."
+    ],
+    "festivals": [
+     "Uganda Şehitler Günü – 3 Haziran, Namugongo",
+     "Bağımsızlık Günü – 9 Ekim",
+     "Imbalu (Bamasaba sünnet törenleri; çift yıllarda Ağustos, Mbale)"
+    ],
+    "lifestyle": "Buganda, Bunyoro, Toro ve Ankole gibi geleneksel krallıkların kültürel olarak yaşadığı, 50'den fazla etnik grubun bulunduğu genç bir ülke. Kampala'nın canlı gece hayatı, müzik ve futbol sevgisi ile kırsalın muz ve kahve tarımı bir arada."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bwindi Geçilmez Ormanı – UNESCO (dağ gorilleri)",
+     "Murchison Şelaleleri Milli Parkı",
+     "Queen Elizabeth Milli Parkı (Kazinga Kanalı, ağaca tırmanan aslanlar)",
+     "Kibale Ormanı (şempanzeler)",
+     "Jinja ve Nil'in kaynağı (rafting)",
+     "Bunyonyi Gölü"
+    ],
+    "bestSeasons": "Haziran – Eylül ve Aralık – Şubat (kurak mevsimler; goril ve şempanze yürüyüşü için en iyi dönem)",
+    "travelStyleTip": "Uganda'yı en iyi şoförlü bir safari aracıyla güneybatıdaki parkları birleştirerek gezersiniz. Goril izinleri (~800 $) ve şempanze izinleri aylar önce tükenir; UWA veya lisanslı operatörle erken ayırtın."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan (~%84; Katolik ~%39, Anglikan ~%32, Pentekostal ve diğerleri), Müslüman (~%14)",
+    "respectNorms": "Din, günlük hayatta önemlidir; kilise ve camilere kapalı kıyafetle girin. Gaddafi Ulusal Camii'nde kadınlara örtü verilir.",
+    "sacredSites": [
+     "Namugongo Uganda Şehitleri Tapınağı",
+     "Gaddafi Ulusal Camii (Eski Kampala)",
+     "Kasubi Kraliyet Mezarları – UNESCO"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İngilizce ve Svahili (resmî); Luganda en yaygın yerel dildir, 40'tan fazla dil konuşulur",
+    "englishProficiency": "İyi; şehirlerde ve turizmde İngilizce yaygındır.",
+    "phrases": [
+     {
+      "phrase": "Oli otya?",
+      "meaning": "Nasılsın? (Luganda)",
+      "translation": "Nasılsın? (Luganda)",
+      "pronunciation": "oh-lee OH-tya"
+     },
+     {
+      "phrase": "Webale nnyo",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "weh-BAH-leh NYOH"
+     },
+     {
+      "phrase": "Mwattu",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "MWAH-too"
+     },
+     {
+      "phrase": "Ssente mmeka?",
+      "meaning": "Kaç para?",
+      "translation": "Kaç para?",
+      "pronunciation": "SEN-teh m-MEH-ka"
+     },
+     {
+      "phrase": "Weeraba",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "weh-eh-RAH-ba"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bölgede yüzyıllarca Buganda, Bunyoro, Toro ve Ankole gibi krallıklar hüküm sürdü. John Hanning Speke 1862'de Nil'in kaynağını Jinja'da kayda geçirdi; Uganda 1894'te İngiliz himayesine girdi. Ülke 9 Ekim 1962'de bağımsız oldu. 1971 – 1979 arası İdi Amin dönemi ağır insan hakları ihlalleriyle anılır; 1986'dan beri Yoweri Museveni iktidardadır.",
+    "milestones": [
+     "1862 – Speke'nin Nil'in kaynağını kaydetmesi",
+     "1894 – İngiliz himayesi",
+     "9 Ekim 1962 – Bağımsızlık",
+     "1971–1979 – İdi Amin dönemi"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Matoke (buharda pişmiş ezme yeşil muz)",
+     "Luwombo (muz yaprağında buharda pişen yahni)",
+     "Posho, fasulye ve fıstık sosu (binyebwa)"
+    ],
+    "traditionalDrinks": [
+     "Uganda kahvesi (Bugisu arabikası, Robusta)",
+     "Uganda Waragi (yerel cin)",
+     "Tonto (muz birası) ve Nile Special birası"
+    ],
+    "streetFoodAndDesserts": [
+     "Rolex (yumurtalı omlet sarılı çapati)",
+     "Nsenene (kızarmış çekirge, Mayıs ve Kasım)",
+     "Muchomo (ızgara et şiş) ve samosa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Akii-Bua (1972 olimpiyat şampiyonu, 400 m engelli)",
+     "Joshua Cheptegei (5.000 m ve 10.000 m dünya rekortmeni)",
+     "Eddy Kenzo (BET ödüllü müzisyen)"
+    ],
+    "strongSectors": [
+     "Kahve ihracatı",
+     "Goril ve safari turizmi",
+     "Altın ve gelişmekte olan petrol sektörü (Albert Gölü)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit ve mobil para (MTN MoMo, Airtel Money) hâkimdir; kart büyük otel ve süpermarketlerde geçer. ABD dolarında 2009 sonrası basılmış, temiz banknotlar daha iyi kurdan bozulur. İzin ve lojlar genellikle dolarla ödenir.",
+    "economicPillars": "Tarım (kahve, çay, muz, balık), turizm, altın, telekom ve mobil para hizmetleri; Albert Gölü çevresinde petrol yatırımları.",
+    "tippingCulture": "Restoranlarda %10 bahşiş yaygındır; safari rehberleri, şoförler ve goril yürüyüşündeki taşıyıcılar için bahşiş beklenir."
+   }
+  },
+  "itin": {
+   "routeName": "Uganda Primat ve Safari Rotası: Kampala, Kibale, Queen Elizabeth ve Bwindi",
+   "routeSummary": "Kampala ve Entebbe'den başlayıp Fort Portal yakınındaki Kibale'de şempanzelerle, Queen Elizabeth'te safari ve Kazinga Kanalı tekne turuyla devam eden, Bwindi'de dağ gorilleri ve Bunyonyi Gölü'nde dinlenmeyle biten 10 günlük güneybatı rotası.",
+   "totalDays": 10,
+   "idealDurationText": "9-12 Günlük Safari Rotası",
+   "bestSeason": "Haziran – Eylül ve Aralık – Şubat (kurak mevsimler; goril ve şempanze yürüyüşü için en iyi dönem)",
+   "transportMode": "Şoförlü 4x4 safari aracı; Kampala içinde Uber/Bolt/SafeBoda; isteğe bağlı iç hat uçuşları (Entebbe–Kihihi/Kisoro)",
+   "paceLevel": "Yoğun (Doğa + Yaban Hayatı)",
+   "stops": [
+    {
+     "name": "1. Durak: Kampala ve Entebbe (Başkent ve Victoria Gölü)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kasubi Kraliyet Mezarları",
+      "Gaddafi Ulusal Camii minaresinden şehir manzarası",
+      "Namugongo Şehitler Tapınağı",
+      "Entebbe Botanik Bahçesi ve Uganda Yaban Hayatı Eğitim Merkezi"
+     ],
+     "activities": [
+      "Gaddafi Camii minaresine çıkın.",
+      "Mabamba Bataklığı'nda kanoyla papyon gagalı leylek (shoebill) arayın.",
+      "Owino veya Nakasero pazarında yerel hayatı gözlemleyin."
+     ],
+     "foodAndDrinks": [
+      "Rolex",
+      "Luwombo",
+      "Nile Special birası"
+     ],
+     "criticalTips": [
+      "Trafikte telefonu camdan uzak tutun ve pencereleri kapalı tutun.",
+      "Kampala'da ulaşım için SafeBoda/Uber kullanın; gece yürümeyin."
+     ],
+     "mapsQuery": "Kampala, Uganda",
+     "stopNumber": 1
+    },
+    {
+     "name": "2. Durak: Kibale ve Fort Portal (Şempanzeler ve Krater Gölleri)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kibale Ormanı'nda şempanze yürüyüşü",
+      "Bigodi Bataklığı'nda primat ve kuş yürüyüşü",
+      "Fort Portal krater gölleri"
+     ],
+     "activities": [
+      "Sabah erken şempanze yürüyüşüne katılın (izin ~200-250 $).",
+      "Krater gölleri arasında yürüyüş veya bisiklet turu yapın.",
+      "Çay plantasyonlarını ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Matoke ve fıstık sosu",
+      "Yerel çay"
+     ],
+     "criticalTips": [
+      "Uzun kollu giysi ve su geçirmez ayakkabı giyin; patikalar çamurlu olabilir.",
+      "Primatlardan en az 7-8 metre uzak durun ve hastaysanız yürüyüşe katılmayın."
+     ],
+     "mapsQuery": "Kibale National Park, Uganda",
+     "stopNumber": 2
+    },
+    {
+     "name": "3. Durak: Queen Elizabeth Milli Parkı (Safari ve Kazinga Kanalı)",
+     "recommendedDuration": "2-3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Kazinga Kanalı'nda tekne turu (su aygırı, fil, kuşlar)",
+      "Ishasha'da ağaca tırmanan aslanlar",
+      "Kasenyi ovalarında sabah safarisi"
+     ],
+     "activities": [
+      "Öğleden sonra Kazinga Kanalı tekne turuna katılın.",
+      "Şafakta Kasenyi'de aslan ve Uganda kobu izleyin.",
+      "Ishasha bölümüne geçerken incir ağaçlarında aslan arayın."
+     ],
+     "foodAndDrinks": [
+      "Lojda tilapia balığı",
+      "Uganda Waragi kokteyli (gün batımında)"
+     ],
+     "criticalTips": [
+      "2023'te parkta turistlere saldırı yaşandı; güncel güvenlik durumunu operatörünüzle kontrol edin ve yalnızca rehberli/güvenlik eşliğinde gezin.",
+      "Bölgede sıtma riski yüksektir; profilaksi ve kovucu kullanın."
+     ],
+     "mapsQuery": "Queen Elizabeth National Park, Uganda",
+     "stopNumber": 3
+    },
+    {
+     "name": "4. Durak: Bwindi ve Bunyonyi Gölü (Dağ Gorilleri)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Dağ gorilleriyle bir saat (izin ~800 $)",
+      "Batwa topluluk deneyimi",
+      "Bunyonyi Gölü'nün 29 adası"
+     ],
+     "activities": [
+      "Rangerlarla goril yürüyüşüne çıkın (2-8 saat sürebilir).",
+      "Yerel taşıyıcı tutun; hem yükünüzü taşır hem de topluluğa gelir sağlar.",
+      "Bunyonyi'de kano ile adalar arasında dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Bunyonyi kerevitleri",
+      "Lojda Uganda kahvesi"
+     ],
+     "criticalTips": [
+      "Goril izinlerini aylar önce UWA veya lisanslı operatörden alın; izin olmadan yürüyüşe katılamazsınız.",
+      "Eldiven, yağmurluk ve iyi bot getirin; orman dik ve dikenlidir."
+     ],
+     "mapsQuery": "Bwindi Impenetrable National Park, Uganda",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Matoke",
+     "Luwombo",
+     "Posho ve fasulye"
+    ],
+    "drinks": [
+     "Uganda kahvesi",
+     "Uganda Waragi",
+     "Tonto"
+    ],
+    "streetFoods": [
+     "Rolex",
+     "Nsenene",
+     "Muchomo"
+    ],
+    "diningAdvice": "Rolex'i taze pişirildiği tezgâhlarda deneyin; çiğ salata ve kabuğu soyulmamış meyveden kaçının. Restoranlarda %10 bahşiş bırakın."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sarı humma aşı sertifikası (zorunlu)",
+     "G tipi (İngiliz) priz adaptörü",
+     "Yürüyüş botu, eldiven, yağmurluk ve uzun kollu giysiler",
+     "Sıtma ilacı ve sivrisinek kovucu"
+    ],
+    "safetyAndEtiquette": [
+     "Plastik poşet yasaktır; bagajınızda getirmeyin.",
+     "Siyasi gösterilerden uzak durun ve fotoğraf için izin isteyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G prizler (üç dikdörtgen pim). Türkiye fişleri takılmaz; adaptör şart. Lojlarda şarj saatleri jeneratör/güneş enerjisiyle sınırlı olabilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su veya filtrelenmiş/kaynatılmış su kullanın.",
+    "vaccines": [
+     "Sarı humma (giriş için sertifika zorunlu)",
+     "Hepatit A, tifo ve kuduz",
+     "Menenjit (kuzey bölgeler, kuru mevsim)",
+     "Sıtma profilaksisi (tüm ülke)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restoranlarda yaklaşık %10 bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Safari şoför-rehberine günlük 10-20 $, goril yürüyüşü rangerlarına ve taşıyıcılara ayrıca bahşiş vermek gelenektir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistler için KDV iadesi yok (KDV %18)",
+    "minSpend": "—",
+    "customsNote": "Uganda'da turistlere yönelik Tax-Free sistemi yoktur. Fildişi, yaban hayvanı ürünleri ve korunan ağaç türlerinden ürünler çıkarmak yasaktır; plastik poşet getirmek de yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2",
+    "topCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "airportSimTrapWarning": "Entebbe Havalimanı'ndaki MTN ve Airtel tezgâhlarında pasaportla kayıtlı SIM alınabilir ve fiyatlar makuldür. eSIM, varışta hemen bağlantı için pratiktir; parklarda kapsama zayıf olabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte goril izinleri",
+     "desc": "Sosyal medyada veya sokakta 'son dakika' ucuz izin satan kişiler.",
+     "tip": "İzni yalnızca UWA veya AUTO (Uganda Tur Operatörleri Birliği) üyesi operatörlerden alın."
+    },
+    {
+     "title": "Boda boda fiyatı ve kapkaç",
+     "desc": "Sokak boda bodaları turiste fazla fiyat söyler; bazı motosikletliler yayalardan çanta ve telefon kapar.",
+     "tip": "SafeBoda/Uber uygulamalarını kullanın, telefonu yol tarafında tutmayın."
+    },
+    {
+     "title": "Kur değişiminde sahte banknot",
+     "desc": "Sokakta döviz bozan kişiler sahte veya eksik şilin verebilir.",
+     "tip": "Yalnızca banka veya lisanslı döviz bürolarında bozdurun ve parayı orada sayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Ugandan shilling (UGX)",
+   "plugType": "G (240V, 50Hz)",
+   "bestMonths": "June – September and December – February (dry seasons; best for gorilla and chimp trekking)",
+   "safety": {
+    "crimeRateSummary": "Muggings, bag snatching, theft from cars and 'boda boda' snatch-thefts are common in Kampala. There is a terrorism threat (tourists were attacked in Queen Elizabeth National Park in 2023), and official advisories cover the DR Congo border and the Karamoja region. The 2023 law severely penalising homosexuality also poses risks for foreigners.",
+    "commonScams": [
+     "Middlemen selling fake gorilla/chimp permits",
+     "Boda boda riders quoting inflated tourist prices",
+     "Phone and bag snatching through car windows in traffic"
+    ],
+    "safeTravelTips": [
+     "Buy permits only through the Uganda Wildlife Authority (UWA) or licensed tour operators.",
+     "Avoid road travel at night and walking in Kampala after dark; keep car windows up.",
+     "Use apps like SafeBoda/Uber instead of street boda bodas and always wear a helmet."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Kampala and large towns; patchy in national parks and mountain areas.",
+    "costPerGbUsd": "~0.80 - 2 $",
+    "esimAvailability": "Moderate (MTN eSIM and international plans)",
+    "bestCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Basic",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.50 - 2 $ (matatu minibüs)",
+    "dailyPassUsd": "No day pass; safari vehicle with driver 100 - 180 $/day",
+    "popularRideApps": [
+     "SafeBoda",
+     "Uber",
+     "Bolt",
+     "Matatu (shared minibus)"
+    ],
+    "taxiAdvice": "In Kampala, Uber, Bolt and SafeBoda (motorbike taxis with helmets) are common and offer fixed prices. Street boda bodas are notorious for serious accidents. Between national parks a 4x4 with driver is the most practical and safest option."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Moderate – High",
+    "flightTip": "Entebbe (EBB) is served by Turkish Airlines from Istanbul (some flights with a stop); connections via Addis Ababa, Dubai, Doha and Nairobi are also common. Gorilla permits (~800 $) are limited, so secure the permit before booking flights."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings matter a lot; ask how someone is before getting to the point.",
+     "Give and receive with the right hand or both hands.",
+     "Avoid public displays of affection and dress modestly in rural areas.",
+     "Don't photograph people, military or government buildings without permission."
+    ],
+    "festivals": [
+     "Uganda Martyrs' Day – 3 June, Namugongo",
+     "Independence Day – 9 October",
+     "Imbalu (Bamasaba circumcision rites; August in even years, Mbale)"
+    ],
+    "lifestyle": "A young country of over 50 ethnic groups where traditional kingdoms such as Buganda, Bunyoro, Toro and Ankole live on culturally. Kampala's lively nightlife, music and love of football sit alongside rural banana and coffee farming."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bwindi Impenetrable Forest – UNESCO (mountain gorillas)",
+     "Murchison Falls National Park",
+     "Queen Elizabeth National Park (Kazinga Channel, tree-climbing lions)",
+     "Kibale Forest (chimpanzees)",
+     "Jinja and the source of the Nile (rafting)",
+     "Lake Bunyonyi"
+    ],
+    "bestSeasons": "June – September and December – February (dry seasons; best for gorilla and chimp trekking)",
+    "travelStyleTip": "Uganda is best explored by safari vehicle with driver, linking the southwestern parks. Gorilla (~800 $) and chimp permits sell out months ahead; book early through UWA or a licensed operator."
+   },
+   "religion": {
+    "primaryReligions": "Christian (~84%; Catholic ~39%, Anglican ~32%, Pentecostal and others), Muslim (~14%)",
+    "respectNorms": "Religion is important in daily life; enter churches and mosques modestly dressed. At the Gaddafi National Mosque women are given a head covering.",
+    "sacredSites": [
+     "Uganda Martyrs' Shrine, Namugongo",
+     "Gaddafi National Mosque (Old Kampala)",
+     "Kasubi Tombs – UNESCO"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English and Swahili (official); Luganda is the most widely spoken local language, over 40 languages in use",
+    "englishProficiency": "Good; English is widely spoken in towns and tourism.",
+    "phrases": [
+     {
+      "phrase": "Oli otya?",
+      "meaning": "How are you? (Luganda)",
+      "translation": "How are you? (Luganda)",
+      "pronunciation": "oh-lee OH-tya"
+     },
+     {
+      "phrase": "Webale nnyo",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "weh-BAH-leh NYOH"
+     },
+     {
+      "phrase": "Mwattu",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "MWAH-too"
+     },
+     {
+      "phrase": "Ssente mmeka?",
+      "meaning": "How much money?",
+      "translation": "How much money?",
+      "pronunciation": "SEN-teh m-MEH-ka"
+     },
+     {
+      "phrase": "Weeraba",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "weh-eh-RAH-ba"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Kingdoms such as Buganda, Bunyoro, Toro and Ankole ruled the region for centuries. John Hanning Speke recorded the source of the Nile at Jinja in 1862, and Uganda became a British protectorate in 1894. Independence came on 9 October 1962. The Idi Amin era (1971 – 1979) is remembered for grave human-rights abuses; Yoweri Museveni has been in power since 1986.",
+    "milestones": [
+     "1862 – Speke records the source of the Nile",
+     "1894 – British protectorate",
+     "9 October 1962 – Independence",
+     "1971–1979 – Idi Amin era"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Matoke (steamed, mashed green bananas)",
+     "Luwombo (stew steamed in banana leaves)",
+     "Posho with beans and groundnut sauce (binyebwa)"
+    ],
+    "traditionalDrinks": [
+     "Ugandan coffee (Bugisu arabica, robusta)",
+     "Uganda Waragi (local gin)",
+     "Tonto (banana beer) and Nile Special lager"
+    ],
+    "streetFoodAndDesserts": [
+     "Rolex (chapati rolled with an egg omelette)",
+     "Nsenene (fried grasshoppers, May and November)",
+     "Muchomo (grilled meat skewers) and samosas"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Akii-Bua (1972 Olympic 400 m hurdles champion)",
+     "Joshua Cheptegei (5,000 m and 10,000 m world-record holder)",
+     "Eddy Kenzo (BET award-winning musician)"
+    ],
+    "strongSectors": [
+     "Coffee exports",
+     "Gorilla and safari tourism",
+     "Gold and the emerging oil sector (Lake Albert)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash and mobile money (MTN MoMo, Airtel Money) dominate; cards work in large hotels and supermarkets. Clean US dollar notes printed after 2009 get better exchange rates. Permits and lodges are usually paid in dollars.",
+    "economicPillars": "Agriculture (coffee, tea, bananas, fish), tourism, gold, telecoms and mobile money; oil investments around Lake Albert.",
+    "tippingCulture": "A 10% tip is common in restaurants; tips are expected for safari guides, drivers and porters on gorilla treks."
+   }
+  },
+  "itin": {
+   "routeName": "Uganda Primates & Safari: Kampala, Kibale, Queen Elizabeth & Bwindi",
+   "routeSummary": "A 10-day southwestern route from Kampala and Entebbe to chimpanzees at Kibale near Fort Portal, safari and a Kazinga Channel boat trip in Queen Elizabeth, ending with mountain gorillas at Bwindi and rest at Lake Bunyonyi.",
+   "totalDays": 10,
+   "idealDurationText": "9-12 Day Safari Route",
+   "bestSeason": "June – September and December – February (dry seasons; best for gorilla and chimp trekking)",
+   "transportMode": "4x4 safari vehicle with driver; Uber/Bolt/SafeBoda in Kampala; optional domestic flights (Entebbe–Kihihi/Kisoro)",
+   "paceLevel": "Active (Nature & Wildlife)",
+   "stops": [
+    {
+     "name": "Stop 1: Kampala & Entebbe (Capital & Lake Victoria)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Kasubi Tombs",
+      "City views from the Gaddafi National Mosque minaret",
+      "Namugongo Martyrs' Shrine",
+      "Entebbe Botanical Gardens and Uganda Wildlife Education Centre"
+     ],
+     "activities": [
+      "Climb the minaret of the Gaddafi Mosque.",
+      "Look for shoebills by canoe in the Mabamba Swamp.",
+      "Experience local life at Owino or Nakasero market."
+     ],
+     "foodAndDrinks": [
+      "Rolex",
+      "Luwombo",
+      "Nile Special lager"
+     ],
+     "criticalTips": [
+      "In traffic keep your phone away from the window and windows closed.",
+      "Use SafeBoda/Uber to get around Kampala; don't walk at night."
+     ],
+     "mapsQuery": "Kampala, Uganda",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stop 2: Kibale & Fort Portal (Chimpanzees & Crater Lakes)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Chimpanzee trekking in Kibale Forest",
+      "Primate and bird walk in Bigodi Swamp",
+      "Fort Portal crater lakes"
+     ],
+     "activities": [
+      "Join an early-morning chimp trek (permit ~200-250 $).",
+      "Hike or cycle between the crater lakes.",
+      "Visit the tea plantations."
+     ],
+     "foodAndDrinks": [
+      "Matoke with groundnut sauce",
+      "Local tea"
+     ],
+     "criticalTips": [
+      "Wear long sleeves and waterproof shoes; trails can be muddy.",
+      "Keep at least 7-8 metres from primates and don't trek if you're ill."
+     ],
+     "mapsQuery": "Kibale National Park, Uganda",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stop 3: Queen Elizabeth National Park (Safari & Kazinga Channel)",
+     "recommendedDuration": "2-3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Kazinga Channel boat cruise (hippos, elephants, birds)",
+      "Tree-climbing lions in Ishasha",
+      "Morning game drive on the Kasenyi plains"
+     ],
+     "activities": [
+      "Take the afternoon Kazinga Channel boat cruise.",
+      "Watch lions and Uganda kob at dawn in Kasenyi.",
+      "Look for lions in the fig trees on the way through Ishasha."
+     ],
+     "foodAndDrinks": [
+      "Tilapia at the lodge",
+      "Uganda Waragi cocktail (at sundown)"
+     ],
+     "criticalTips": [
+      "Tourists were attacked in the park in 2023; check the current security situation with your operator and travel only guided or with escort.",
+      "Malaria risk is high here; use prophylaxis and repellent."
+     ],
+     "mapsQuery": "Queen Elizabeth National Park, Uganda",
+     "stopNumber": 3
+    },
+    {
+     "name": "Stop 4: Bwindi & Lake Bunyonyi (Mountain Gorillas)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "One hour with mountain gorillas (permit ~800 $)",
+      "Batwa community experience",
+      "The 29 islands of Lake Bunyonyi"
+     ],
+     "activities": [
+      "Go gorilla trekking with rangers (can take 2-8 hours).",
+      "Hire a local porter; they carry your bag and it supports the community.",
+      "Paddle a dugout canoe between Bunyonyi's islands."
+     ],
+     "foodAndDrinks": [
+      "Lake Bunyonyi crayfish",
+      "Ugandan coffee at the lodge"
+     ],
+     "criticalTips": [
+      "Get gorilla permits months ahead from UWA or a licensed operator; you can't trek without one.",
+      "Bring gloves, a rain jacket and good boots; the forest is steep and thorny."
+     ],
+     "mapsQuery": "Bwindi Impenetrable National Park, Uganda",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Matoke",
+     "Luwombo",
+     "Posho and beans"
+    ],
+    "drinks": [
+     "Ugandan coffee",
+     "Uganda Waragi",
+     "Tonto"
+    ],
+    "streetFoods": [
+     "Rolex",
+     "Nsenene",
+     "Muchomo"
+    ],
+    "diningAdvice": "Try a rolex at stalls where it's cooked fresh; avoid raw salads and unpeeled fruit. Tip 10% in restaurants."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yellow fever vaccination certificate (mandatory)",
+     "Type G (UK) plug adapter",
+     "Hiking boots, gloves, rain jacket and long sleeves",
+     "Malaria tablets and insect repellent"
+    ],
+    "safetyAndEtiquette": [
+     "Plastic bags are banned; don't pack them.",
+     "Stay away from political rallies and ask before taking photos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "UK-style Type G sockets (three rectangular pins). Turkish plugs don't fit; an adapter is essential. Lodges may limit charging hours to generator or solar power."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn't drinkable; use sealed bottled or filtered/boiled water.",
+    "vaccines": [
+     "Yellow fever (certificate required for entry)",
+     "Hepatitis A, typhoid and rabies",
+     "Meningitis (northern areas, dry season)",
+     "Malaria prophylaxis (whole country)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "About 10% is expected in restaurants.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "It's customary to tip safari driver-guides 10-20 $ a day and to tip rangers and porters separately on gorilla treks."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists (VAT 18%)",
+    "minSpend": "—",
+    "customsNote": "Uganda has no tourist tax-free scheme. Exporting ivory, wildlife products or items from protected tree species is prohibited, and bringing in plastic bags is banned."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2",
+    "topCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "airportSimTrapWarning": "MTN and Airtel desks at Entebbe Airport sell registered SIMs with your passport at fair prices. An eSIM is handy for instant connection on arrival; coverage can be weak in the parks."
+   },
+   "touristScams": [
+    {
+     "title": "Fake gorilla permits",
+     "desc": "People on social media or in the street selling cheap 'last-minute' permits.",
+     "tip": "Buy permits only from UWA or operators that are members of AUTO (Association of Uganda Tour Operators)."
+    },
+    {
+     "title": "Boda boda pricing and snatching",
+     "desc": "Street boda bodas overcharge tourists; some riders snatch bags and phones from pedestrians.",
+     "tip": "Use SafeBoda/Uber and don't hold your phone on the road side."
+    },
+    {
+     "title": "Fake notes when changing money",
+     "desc": "Street money-changers may hand over fake or short-counted shillings.",
+     "tip": "Change money only at banks or licensed bureaux and count it on the spot."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Uganda-Schilling (UGX)",
+   "plugType": "G (240V, 50Hz)",
+   "bestMonths": "Juni – September und Dezember – Februar (Trockenzeiten; ideal für Gorilla- und Schimpansen-Trekking)",
+   "safety": {
+    "crimeRateSummary": "In Kampala sind Überfälle, Taschenraub, Diebstahl aus Autos und Raub von 'Boda-Boda'-Motorrädern aus häufig. Es besteht Terrorgefahr (2023 wurden Touristen im Queen-Elizabeth-Nationalpark angegriffen); offizielle Hinweise betreffen die Grenze zur DR Kongo und die Region Karamoja. Das Gesetz von 2023, das Homosexualität hart bestraft, birgt auch für Ausländer Risiken.",
+    "commonScams": [
+     "Zwischenhändler, die gefälschte Gorilla-/Schimpansen-Genehmigungen verkaufen",
+     "Boda-Boda-Fahrer verlangen überhöhte Touristenpreise",
+     "Handy- und Taschenraub durchs Autofenster im Stau"
+    ],
+    "safeTravelTips": [
+     "Genehmigungen nur über die Uganda Wildlife Authority (UWA) oder lizenzierte Veranstalter kaufen.",
+     "Nachts keine Überlandfahrten und in Kampala nach Einbruch der Dunkelheit nicht zu Fuß gehen; Autofenster geschlossen halten.",
+     "Statt Straßen-Boda-Bodas Apps wie SafeBoda/Uber nutzen und immer Helm tragen."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Kampala und größeren Orten; lückenhaft in Nationalparks und Berggebieten.",
+    "costPerGbUsd": "~0.80 - 2 $",
+    "esimAvailability": "Mittel (MTN-eSIM und internationale Tarife)",
+    "bestCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Einfach",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "0.50 - 2 $ (matatu minibüs)",
+    "dailyPassUsd": "Keine Tageskarte; Safarifahrzeug mit Fahrer 100 - 180 $/Tag",
+    "popularRideApps": [
+     "SafeBoda",
+     "Uber",
+     "Bolt",
+     "Matatu (Sammelminibus)"
+    ],
+    "taxiAdvice": "In Kampala sind Uber, Bolt und SafeBoda (Mototaxis mit Helm) verbreitet und bieten Festpreise. Straßen-Boda-Bodas sind für schwere Unfälle bekannt. Zwischen den Nationalparks ist ein Geländewagen mit Fahrer am praktischsten und sichersten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Mittel – Hoch",
+    "flightTip": "Nach Entebbe (EBB) fliegt Turkish Airlines ab Istanbul (teils mit Zwischenstopp); auch Verbindungen über Addis Abeba, Dubai, Doha und Nairobi sind üblich. Gorilla-Genehmigungen (~800 $) sind knapp – erst die Genehmigung, dann den Flug buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind sehr wichtig; vor dem eigentlichen Anliegen nach dem Befinden fragen.",
+     "Mit der rechten oder beiden Händen geben und nehmen.",
+     "Zärtlichkeiten in der Öffentlichkeit vermeiden und auf dem Land dezent kleiden.",
+     "Menschen, Militär- und Regierungsgebäude nicht ohne Erlaubnis fotografieren."
+    ],
+    "festivals": [
+     "Tag der Märtyrer Ugandas – 3. Juni, Namugongo",
+     "Unabhängigkeitstag – 9. Oktober",
+     "Imbalu (Beschneidungsriten der Bamasaba; August in geraden Jahren, Mbale)"
+    ],
+    "lifestyle": "Junges Land mit über 50 Ethnien, in dem traditionelle Königreiche wie Buganda, Bunyoro, Toro und Ankole kulturell fortbestehen. Kampalas lebendiges Nachtleben, Musik und Fußballliebe stehen neben Bananen- und Kaffeeanbau auf dem Land."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bwindi Impenetrable Forest – UNESCO (Berggorillas)",
+     "Murchison-Falls-Nationalpark",
+     "Queen-Elizabeth-Nationalpark (Kazinga-Kanal, baumkletternde Löwen)",
+     "Kibale-Wald (Schimpansen)",
+     "Jinja und die Nilquelle (Rafting)",
+     "Bunyonyi-See"
+    ],
+    "bestSeasons": "Juni – September und Dezember – Februar (Trockenzeiten; ideal für Gorilla- und Schimpansen-Trekking)",
+    "travelStyleTip": "Uganda erkundet man am besten im Safarifahrzeug mit Fahrer und verbindet die Parks im Südwesten. Gorilla- (~800 $) und Schimpansen-Genehmigungen sind Monate vorher weg; früh über die UWA oder lizenzierte Veranstalter buchen."
+   },
+   "religion": {
+    "primaryReligions": "Christen (~84 %; Katholiken ~39 %, Anglikaner ~32 %, Pfingstler u. a.), Muslime (~14 %)",
+    "respectNorms": "Religion spielt im Alltag eine große Rolle; Kirchen und Moscheen dezent gekleidet betreten. In der Gaddafi-Nationalmoschee erhalten Frauen ein Kopftuch.",
+    "sacredSites": [
+     "Märtyrerschrein von Namugongo",
+     "Gaddafi-Nationalmoschee (Alt-Kampala)",
+     "Kasubi-Gräber – UNESCO"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Englisch und Suaheli (Amtssprachen); Luganda ist die verbreitetste lokale Sprache, über 40 Sprachen",
+    "englishProficiency": "Gut; Englisch ist in Städten und im Tourismus verbreitet.",
+    "phrases": [
+     {
+      "phrase": "Oli otya?",
+      "meaning": "Wie geht's? (Luganda)",
+      "translation": "Wie geht's? (Luganda)",
+      "pronunciation": "oh-lee OH-tya"
+     },
+     {
+      "phrase": "Webale nnyo",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "weh-BAH-leh NYOH"
+     },
+     {
+      "phrase": "Mwattu",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "MWAH-too"
+     },
+     {
+      "phrase": "Ssente mmeka?",
+      "meaning": "Wie viel kostet es?",
+      "translation": "Wie viel kostet es?",
+      "pronunciation": "SEN-teh m-MEH-ka"
+     },
+     {
+      "phrase": "Weeraba",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "weh-eh-RAH-ba"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Jahrhundertelang herrschten Königreiche wie Buganda, Bunyoro, Toro und Ankole. John Hanning Speke verzeichnete 1862 die Nilquelle bei Jinja; 1894 wurde Uganda britisches Protektorat. Die Unabhängigkeit folgte am 9. Oktober 1962. Die Ära Idi Amins (1971 – 1979) steht für schwere Menschenrechtsverletzungen; seit 1986 ist Yoweri Museveni an der Macht.",
+    "milestones": [
+     "1862 – Speke verzeichnet die Nilquelle",
+     "1894 – Britisches Protektorat",
+     "9. Oktober 1962 – Unabhängigkeit",
+     "1971–1979 – Ära Idi Amin"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Matoke (gedämpfte, gestampfte Kochbananen)",
+     "Luwombo (in Bananenblättern gedämpfter Eintopf)",
+     "Posho mit Bohnen und Erdnusssoße (Binyebwa)"
+    ],
+    "traditionalDrinks": [
+     "Ugandischer Kaffee (Bugisu-Arabica, Robusta)",
+     "Uganda Waragi (lokaler Gin)",
+     "Tonto (Bananenbier) und Nile-Special-Bier"
+    ],
+    "streetFoodAndDesserts": [
+     "Rolex (Chapati mit Omelett gerollt)",
+     "Nsenene (frittierte Heuschrecken, Mai und November)",
+     "Muchomo (gegrillte Fleischspieße) und Samosas"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Akii-Bua (Olympiasieger 1972 über 400 m Hürden)",
+     "Joshua Cheptegei (Weltrekordhalter über 5.000 und 10.000 m)",
+     "Eddy Kenzo (mit dem BET Award ausgezeichneter Musiker)"
+    ],
+    "strongSectors": [
+     "Kaffeeexport",
+     "Gorilla- und Safaritourismus",
+     "Gold und der entstehende Ölsektor (Albertsee)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld und Mobile Money (MTN MoMo, Airtel Money) dominieren; Karten in großen Hotels und Supermärkten. Saubere US-Dollar-Scheine ab Druckjahr 2009 erzielen bessere Kurse. Genehmigungen und Lodges werden meist in Dollar bezahlt.",
+    "economicPillars": "Landwirtschaft (Kaffee, Tee, Bananen, Fisch), Tourismus, Gold, Telekommunikation und Mobile Money; Ölinvestitionen am Albertsee.",
+    "tippingCulture": "In Restaurants sind 10 % üblich; Safari-Guides, Fahrer und Träger beim Gorilla-Trekking erwarten Trinkgeld."
+   }
+  },
+  "itin": {
+   "routeName": "Uganda Primaten & Safari: Kampala, Kibale, Queen Elizabeth & Bwindi",
+   "routeSummary": "10-tägige Route durch den Südwesten: von Kampala und Entebbe zu den Schimpansen in Kibale bei Fort Portal, Safari und Bootstour auf dem Kazinga-Kanal im Queen Elizabeth und zum Abschluss Berggorillas in Bwindi und Erholung am Bunyonyi-See.",
+   "totalDays": 10,
+   "idealDurationText": "9-12-Tage-Safariroute",
+   "bestSeason": "Juni – September und Dezember – Februar (Trockenzeiten; ideal für Gorilla- und Schimpansen-Trekking)",
+   "transportMode": "Safari-Geländewagen mit Fahrer; in Kampala Uber/Bolt/SafeBoda; optionale Inlandsflüge (Entebbe–Kihihi/Kisoro)",
+   "paceLevel": "Aktiv (Natur & Tierwelt)",
+   "stops": [
+    {
+     "name": "Stopp 1: Kampala & Entebbe (Hauptstadt & Victoriasee)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kasubi-Gräber",
+      "Stadtblick vom Minarett der Gaddafi-Nationalmoschee",
+      "Märtyrerschrein Namugongo",
+      "Botanischer Garten Entebbe und Uganda Wildlife Education Centre"
+     ],
+     "activities": [
+      "Das Minarett der Gaddafi-Moschee besteigen.",
+      "Im Mabamba-Sumpf per Kanu nach Schuhschnäbeln suchen.",
+      "Auf dem Owino- oder Nakasero-Markt das lokale Leben erleben."
+     ],
+     "foodAndDrinks": [
+      "Rolex",
+      "Luwombo",
+      "Nile-Special-Bier"
+     ],
+     "criticalTips": [
+      "Im Stau Handy vom Fenster fernhalten und Fenster geschlossen lassen.",
+      "In Kampala mit SafeBoda/Uber fahren; nachts nicht zu Fuß gehen."
+     ],
+     "mapsQuery": "Kampala, Uganda",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stopp 2: Kibale & Fort Portal (Schimpansen & Kraterseen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Schimpansen-Trekking im Kibale-Wald",
+      "Primaten- und Vogelwanderung im Bigodi-Sumpf",
+      "Kraterseen bei Fort Portal"
+     ],
+     "activities": [
+      "An einem frühmorgendlichen Schimpansen-Trekking teilnehmen (Genehmigung ~200-250 $).",
+      "Zwischen den Kraterseen wandern oder Rad fahren.",
+      "Teeplantagen besuchen."
+     ],
+     "foodAndDrinks": [
+      "Matoke mit Erdnusssoße",
+      "Lokaler Tee"
+     ],
+     "criticalTips": [
+      "Lange Ärmel und wasserdichte Schuhe tragen; Wege können matschig sein.",
+      "Mindestens 7-8 Meter Abstand zu Primaten halten und bei Krankheit nicht teilnehmen."
+     ],
+     "mapsQuery": "Kibale National Park, Uganda",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stopp 3: Queen-Elizabeth-Nationalpark (Safari & Kazinga-Kanal)",
+     "recommendedDuration": "2-3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Bootsfahrt auf dem Kazinga-Kanal (Flusspferde, Elefanten, Vögel)",
+      "Baumkletternde Löwen in Ishasha",
+      "Morgenpirsch in den Kasenyi-Ebenen"
+     ],
+     "activities": [
+      "An der nachmittäglichen Bootsfahrt auf dem Kazinga-Kanal teilnehmen.",
+      "In der Dämmerung in Kasenyi Löwen und Uganda-Kobs beobachten.",
+      "Auf dem Weg durch Ishasha in den Feigenbäumen nach Löwen suchen."
+     ],
+     "foodAndDrinks": [
+      "Tilapia in der Lodge",
+      "Uganda-Waragi-Cocktail (zum Sonnenuntergang)"
+     ],
+     "criticalTips": [
+      "2023 wurden Touristen im Park angegriffen; aktuelle Sicherheitslage mit dem Veranstalter prüfen und nur geführt bzw. mit Begleitschutz fahren.",
+      "Hohes Malariarisiko; Prophylaxe und Mückenschutz verwenden."
+     ],
+     "mapsQuery": "Queen Elizabeth National Park, Uganda",
+     "stopNumber": 3
+    },
+    {
+     "name": "Stopp 4: Bwindi & Bunyonyi-See (Berggorillas)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Eine Stunde bei Berggorillas (Genehmigung ~800 $)",
+      "Begegnung mit der Batwa-Gemeinschaft",
+      "Die 29 Inseln des Bunyonyi-Sees"
+     ],
+     "activities": [
+      "Mit Rangern zum Gorilla-Trekking (2-8 Stunden möglich).",
+      "Einen lokalen Träger anheuern; er trägt das Gepäck und unterstützt die Gemeinschaft.",
+      "Mit dem Einbaum zwischen den Inseln des Bunyonyi paddeln."
+     ],
+     "foodAndDrinks": [
+      "Flusskrebse vom Bunyonyi-See",
+      "Ugandischer Kaffee in der Lodge"
+     ],
+     "criticalTips": [
+      "Gorilla-Genehmigungen Monate vorher bei der UWA oder lizenzierten Veranstaltern besorgen; ohne geht es nicht.",
+      "Handschuhe, Regenjacke und gute Stiefel mitbringen; der Wald ist steil und dornig."
+     ],
+     "mapsQuery": "Bwindi Impenetrable National Park, Uganda",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Matoke",
+     "Luwombo",
+     "Posho mit Bohnen"
+    ],
+    "drinks": [
+     "Ugandischer Kaffee",
+     "Uganda Waragi",
+     "Tonto"
+    ],
+    "streetFoods": [
+     "Rolex",
+     "Nsenene",
+     "Muchomo"
+    ],
+    "diningAdvice": "Rolex an Ständen probieren, wo er frisch zubereitet wird; rohe Salate und ungeschältes Obst meiden. In Restaurants 10 % Trinkgeld."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Gelbfieber-Impfnachweis (Pflicht)",
+     "Steckeradapter Typ G (britisch)",
+     "Wanderstiefel, Handschuhe, Regenjacke und lange Ärmel",
+     "Malariatabletten und Mückenschutz"
+    ],
+    "safetyAndEtiquette": [
+     "Plastiktüten sind verboten; nicht einpacken.",
+     "Politischen Kundgebungen fernbleiben und vor Fotos fragen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G (drei rechteckige Stifte). Europäische Stecker passen nicht; Adapter nötig. In Lodges ist Laden oft auf Generator- oder Solarzeiten begrenzt."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; versiegeltes Flaschen- oder gefiltertes/abgekochtes Wasser nutzen.",
+    "vaccines": [
+     "Gelbfieber (Nachweis bei Einreise Pflicht)",
+     "Hepatitis A, Typhus und Tollwut",
+     "Meningitis (Norden, Trockenzeit)",
+     "Malariaprophylaxe (ganzes Land)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "In Restaurants werden etwa 10 % erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Üblich sind 10-20 $ pro Tag für Safari-Fahrer-Guides sowie separate Trinkgelder für Ranger und Träger beim Gorilla-Trekking."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen (MwSt. 18 %)",
+    "minSpend": "—",
+    "customsNote": "Uganda hat kein Tax-Free-System für Touristen. Die Ausfuhr von Elfenbein, Wildtierprodukten oder Waren aus geschützten Holzarten ist verboten; auch Plastiktüten dürfen nicht eingeführt werden."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2",
+    "topCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "airportSimTrapWarning": "An den MTN- und Airtel-Schaltern am Flughafen Entebbe gibt es registrierte SIMs mit Reisepass zu fairen Preisen. Eine eSIM ist praktisch für sofortige Verbindung; in den Parks kann der Empfang schwach sein."
+   },
+   "touristScams": [
+    {
+     "title": "Gefälschte Gorilla-Genehmigungen",
+     "desc": "Personen in sozialen Medien oder auf der Straße verkaufen billige 'Last-Minute'-Genehmigungen.",
+     "tip": "Genehmigungen nur bei der UWA oder bei Mitgliedern der AUTO (Association of Uganda Tour Operators) kaufen."
+    },
+    {
+     "title": "Boda-Boda-Preise und Raub",
+     "desc": "Straßen-Boda-Bodas verlangen von Touristen zu viel; manche Fahrer entreißen Fußgängern Taschen und Handys.",
+     "tip": "SafeBoda/Uber nutzen und das Handy nicht auf der Straßenseite halten."
+    },
+    {
+     "title": "Falschgeld beim Geldwechsel",
+     "desc": "Straßenwechsler geben gefälschte oder zu wenige Schilling heraus.",
+     "tip": "Nur bei Banken oder lizenzierten Wechselstuben tauschen und sofort nachzählen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Chelín ugandés (UGX)",
+   "plugType": "G (240V, 50Hz)",
+   "bestMonths": "Junio – septiembre y diciembre – febrero (estaciones secas; ideales para gorilas y chimpancés)",
+   "safety": {
+    "crimeRateSummary": "En Kampala son frecuentes los atracos, tirones, robos en coches y robos desde 'boda boda'. Existe amenaza terrorista (en 2023 se atacó a turistas en el Parque Nacional Queen Elizabeth) y hay avisos oficiales para la frontera con RD Congo y la región de Karamoja. La ley de 2023 que castiga duramente la homosexualidad también supone un riesgo para extranjeros.",
+    "commonScams": [
+     "Intermediarios que venden permisos falsos para gorilas o chimpancés",
+     "Conductores de boda boda que cobran precios inflados a turistas",
+     "Robo de móviles y bolsos por la ventanilla en atascos"
+    ],
+    "safeTravelTips": [
+     "Compre los permisos solo a la Uganda Wildlife Authority (UWA) o a operadores autorizados.",
+     "Evite viajar por carretera de noche y caminar por Kampala tras el anochecer; lleve las ventanillas subidas.",
+     "Use apps como SafeBoda/Uber en vez de boda boda de la calle y lleve siempre casco."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en Kampala y ciudades grandes; irregular en parques nacionales y zonas de montaña.",
+    "costPerGbUsd": "~0.80 - 2 $",
+    "esimAvailability": "Moderada (eSIM de MTN y planes internacionales)",
+    "bestCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.50 - 2 $ (matatu minibüs)",
+    "dailyPassUsd": "Sin abono; vehículo de safari con conductor 100 - 180 $/día",
+    "popularRideApps": [
+     "SafeBoda",
+     "Uber",
+     "Bolt",
+     "Matatu (minibús compartido)"
+    ],
+    "taxiAdvice": "En Kampala son comunes Uber, Bolt y SafeBoda (mototaxis con casco) con precio fijo. Los boda boda de la calle son conocidos por accidentes graves. Entre parques nacionales lo más práctico y seguro es un 4x4 con conductor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Moderado – Alto",
+    "flightTip": "Turkish Airlines vuela a Entebbe (EBB) desde Estambul (algunos vuelos con escala); también son habituales las conexiones vía Adís Abeba, Dubái, Doha y Nairobi. Los permisos para gorilas (~800 $) son limitados: asegure el permiso antes de reservar vuelos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos importan mucho; pregunte cómo está la persona antes de ir al grano.",
+     "Dé y reciba con la mano derecha o con ambas.",
+     "Evite muestras de afecto en público y vista con recato en zonas rurales.",
+     "No fotografíe personas ni edificios militares u oficiales sin permiso."
+    ],
+    "festivals": [
+     "Día de los Mártires de Uganda – 3 de junio, Namugongo",
+     "Día de la Independencia – 9 de octubre",
+     "Imbalu (ritos de circuncisión bamasaba; agosto en años pares, Mbale)"
+    ],
+    "lifestyle": "País joven con más de 50 etnias donde reinos tradicionales como Buganda, Bunyoro, Toro y Ankole perviven culturalmente. La animada vida nocturna de Kampala, la música y el fútbol conviven con el cultivo rural de plátano y café."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bosque Impenetrable de Bwindi – UNESCO (gorilas de montaña)",
+     "Parque Nacional de las Cataratas Murchison",
+     "Parque Nacional Queen Elizabeth (canal de Kazinga, leones trepadores)",
+     "Bosque de Kibale (chimpancés)",
+     "Jinja y el nacimiento del Nilo (rafting)",
+     "Lago Bunyonyi"
+    ],
+    "bestSeasons": "Junio – septiembre y diciembre – febrero (estaciones secas; ideales para gorilas y chimpancés)",
+    "travelStyleTip": "Uganda se recorre mejor en vehículo de safari con conductor, enlazando los parques del suroeste. Los permisos para gorilas (~800 $) y chimpancés se agotan con meses de antelación; reserve pronto con la UWA o un operador autorizado."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos (~84 %; católicos ~39 %, anglicanos ~32 %, pentecostales y otros), musulmanes (~14 %)",
+    "respectNorms": "La religión es importante en el día a día; entre en iglesias y mezquitas con ropa discreta. En la Mezquita Nacional Gadafi se presta un velo a las mujeres.",
+    "sacredSites": [
+     "Santuario de los Mártires de Uganda, Namugongo",
+     "Mezquita Nacional Gadafi (Old Kampala)",
+     "Tumbas de Kasubi – UNESCO"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglés y suajili (oficiales); el luganda es la lengua local más hablada, con más de 40 idiomas",
+    "englishProficiency": "Bueno; el inglés se habla mucho en ciudades y turismo.",
+    "phrases": [
+     {
+      "phrase": "Oli otya?",
+      "meaning": "¿Cómo estás? (luganda)",
+      "translation": "¿Cómo estás? (luganda)",
+      "pronunciation": "oh-lee OH-tya"
+     },
+     {
+      "phrase": "Webale nnyo",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "weh-BAH-leh NYOH"
+     },
+     {
+      "phrase": "Mwattu",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "MWAH-too"
+     },
+     {
+      "phrase": "Ssente mmeka?",
+      "meaning": "¿Cuánto dinero?",
+      "translation": "¿Cuánto dinero?",
+      "pronunciation": "SEN-teh m-MEH-ka"
+     },
+     {
+      "phrase": "Weeraba",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "weh-eh-RAH-ba"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Reinos como Buganda, Bunyoro, Toro y Ankole gobernaron la región durante siglos. John Hanning Speke registró el nacimiento del Nilo en Jinja en 1862 y Uganda fue protectorado británico desde 1894. Se independizó el 9 de octubre de 1962. La época de Idi Amin (1971 – 1979) se recuerda por graves violaciones de derechos humanos; Yoweri Museveni gobierna desde 1986.",
+    "milestones": [
+     "1862 – Speke registra el nacimiento del Nilo",
+     "1894 – Protectorado británico",
+     "9 de octubre de 1962 – Independencia",
+     "1971–1979 – Época de Idi Amin"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Matoke (plátano verde al vapor y machacado)",
+     "Luwombo (guiso cocido al vapor en hojas de plátano)",
+     "Posho con frijoles y salsa de cacahuete (binyebwa)"
+    ],
+    "traditionalDrinks": [
+     "Café ugandés (arábica de Bugisu, robusta)",
+     "Uganda Waragi (ginebra local)",
+     "Tonto (cerveza de plátano) y cerveza Nile Special"
+    ],
+    "streetFoodAndDesserts": [
+     "Rolex (chapati enrollado con tortilla de huevo)",
+     "Nsenene (saltamontes fritos, mayo y noviembre)",
+     "Muchomo (brochetas a la parrilla) y samosas"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Akii-Bua (campeón olímpico de 400 m vallas en 1972)",
+     "Joshua Cheptegei (plusmarquista mundial de 5.000 y 10.000 m)",
+     "Eddy Kenzo (músico ganador de un premio BET)"
+    ],
+    "strongSectors": [
+     "Exportación de café",
+     "Turismo de gorilas y safaris",
+     "Oro y el sector petrolero emergente (lago Alberto)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Dominan el efectivo y el dinero móvil (MTN MoMo, Airtel Money); las tarjetas funcionan en grandes hoteles y supermercados. Los billetes de dólar limpios posteriores a 2009 se cambian mejor. Permisos y lodges se pagan normalmente en dólares.",
+    "economicPillars": "Agricultura (café, té, plátano, pescado), turismo, oro, telecomunicaciones y dinero móvil; inversiones petroleras en torno al lago Alberto.",
+    "tippingCulture": "En restaurantes es habitual el 10 %; se espera propina para guías de safari, conductores y porteadores en los trekkings de gorilas."
+   }
+  },
+  "itin": {
+   "routeName": "Uganda primates y safari: Kampala, Kibale, Queen Elizabeth y Bwindi",
+   "routeSummary": "Ruta de 10 días por el suroeste: de Kampala y Entebbe a los chimpancés de Kibale, cerca de Fort Portal; safari y paseo en barca por el canal de Kazinga en Queen Elizabeth; y final con gorilas de montaña en Bwindi y descanso en el lago Bunyonyi.",
+   "totalDays": 10,
+   "idealDurationText": "Ruta de safari de 9-12 días",
+   "bestSeason": "Junio – septiembre y diciembre – febrero (estaciones secas; ideales para gorilas y chimpancés)",
+   "transportMode": "4x4 de safari con conductor; Uber/Bolt/SafeBoda en Kampala; vuelos domésticos opcionales (Entebbe–Kihihi/Kisoro)",
+   "paceLevel": "Activo (naturaleza y fauna)",
+   "stops": [
+    {
+     "name": "Parada 1: Kampala y Entebbe (capital y lago Victoria)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Tumbas de Kasubi",
+      "Vistas desde el minarete de la Mezquita Nacional Gadafi",
+      "Santuario de los Mártires de Namugongo",
+      "Jardín Botánico de Entebbe y Uganda Wildlife Education Centre"
+     ],
+     "activities": [
+      "Suba al minarete de la Mezquita Gadafi.",
+      "Busque picozapatos en canoa en el pantano de Mabamba.",
+      "Viva el ambiente local en los mercados de Owino o Nakasero."
+     ],
+     "foodAndDrinks": [
+      "Rolex",
+      "Luwombo",
+      "Cerveza Nile Special"
+     ],
+     "criticalTips": [
+      "En los atascos aleje el móvil de la ventanilla y llévela cerrada.",
+      "Muévase por Kampala con SafeBoda/Uber; no camine de noche."
+     ],
+     "mapsQuery": "Kampala, Uganda",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Kibale y Fort Portal (chimpancés y lagos de cráter)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Trekking de chimpancés en el bosque de Kibale",
+      "Paseo de primates y aves en el pantano de Bigodi",
+      "Lagos de cráter de Fort Portal"
+     ],
+     "activities": [
+      "Haga un trekking de chimpancés al amanecer (permiso ~200-250 $).",
+      "Camine o pedalee entre los lagos de cráter.",
+      "Visite las plantaciones de té."
+     ],
+     "foodAndDrinks": [
+      "Matoke con salsa de cacahuete",
+      "Té local"
+     ],
+     "criticalTips": [
+      "Lleve manga larga y calzado impermeable; los senderos pueden estar embarrados.",
+      "Manténgase al menos a 7-8 metros de los primates y no vaya si está enfermo."
+     ],
+     "mapsQuery": "Kibale National Park, Uganda",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Parque Nacional Queen Elizabeth (safari y canal de Kazinga)",
+     "recommendedDuration": "2-3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Paseo en barca por el canal de Kazinga (hipopótamos, elefantes, aves)",
+      "Leones trepadores en Ishasha",
+      "Safari matinal en las llanuras de Kasenyi"
+     ],
+     "activities": [
+      "Haga el paseo en barca por el canal de Kazinga por la tarde.",
+      "Observe leones y kobos de Uganda al amanecer en Kasenyi.",
+      "Busque leones en las higueras al pasar por Ishasha."
+     ],
+     "foodAndDrinks": [
+      "Tilapia en el lodge",
+      "Cóctel de Uganda Waragi (al atardecer)"
+     ],
+     "criticalTips": [
+      "En 2023 se atacó a turistas en el parque; consulte la situación con su operador y viaje solo con guía o escolta.",
+      "Alto riesgo de malaria; use profilaxis y repelente."
+     ],
+     "mapsQuery": "Queen Elizabeth National Park, Uganda",
+     "stopNumber": 3
+    },
+    {
+     "name": "Parada 4: Bwindi y lago Bunyonyi (gorilas de montaña)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Una hora con gorilas de montaña (permiso ~800 $)",
+      "Experiencia con la comunidad batwa",
+      "Las 29 islas del lago Bunyonyi"
+     ],
+     "activities": [
+      "Haga el trekking de gorilas con guardas (puede durar 2-8 horas).",
+      "Contrate un porteador local; lleva su mochila y ayuda a la comunidad.",
+      "Reme en canoa entre las islas del Bunyonyi."
+     ],
+     "foodAndDrinks": [
+      "Cangrejos de río del lago Bunyonyi",
+      "Café ugandés en el lodge"
+     ],
+     "criticalTips": [
+      "Consiga el permiso para gorilas con meses de antelación a través de la UWA u operador autorizado; sin él no se puede ir.",
+      "Lleve guantes, chubasquero y buenas botas; el bosque es empinado y espinoso."
+     ],
+     "mapsQuery": "Bwindi Impenetrable National Park, Uganda",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Matoke",
+     "Luwombo",
+     "Posho con frijoles"
+    ],
+    "drinks": [
+     "Café ugandés",
+     "Uganda Waragi",
+     "Tonto"
+    ],
+    "streetFoods": [
+     "Rolex",
+     "Nsenene",
+     "Muchomo"
+    ],
+    "diningAdvice": "Pruebe el rolex en puestos donde se prepare al momento; evite ensaladas crudas y fruta sin pelar. Deje un 10 % en restaurantes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de fiebre amarilla (obligatorio)",
+     "Adaptador tipo G (británico)",
+     "Botas de montaña, guantes, chubasquero y manga larga",
+     "Antipalúdicos y repelente"
+    ],
+    "safetyAndEtiquette": [
+     "Las bolsas de plástico están prohibidas; no las lleve.",
+     "Manténgase lejos de mítines políticos y pida permiso para fotos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos tipo G (tres clavijas rectangulares). Los enchufes europeos no encajan; adaptador imprescindible. En los lodges la carga puede limitarse a horas de generador o solar."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; use agua embotellada sellada o filtrada/hervida.",
+    "vaccines": [
+     "Fiebre amarilla (certificado obligatorio para entrar)",
+     "Hepatitis A, fiebre tifoidea y rabia",
+     "Meningitis (norte, estación seca)",
+     "Profilaxis antipalúdica (todo el país)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "En restaurantes se espera alrededor del 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Es costumbre dar 10-20 $ diarios al conductor-guía y propinas aparte a guardas y porteadores en los trekkings de gorilas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay devolución de IVA para turistas (IVA 18 %)",
+    "minSpend": "—",
+    "customsNote": "Uganda no tiene sistema tax-free para turistas. Está prohibido exportar marfil, productos de fauna o artículos de especies de árboles protegidas, y también introducir bolsas de plástico."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2",
+    "topCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "airportSimTrapWarning": "En los mostradores de MTN y Airtel del aeropuerto de Entebbe se compran SIM registradas con pasaporte a buen precio. Una eSIM es práctica para conectarse al llegar; en los parques la cobertura puede ser débil."
+   },
+   "touristScams": [
+    {
+     "title": "Permisos de gorila falsos",
+     "desc": "Personas en redes sociales o en la calle que venden permisos baratos 'de última hora'.",
+     "tip": "Compre permisos solo a la UWA o a operadores miembros de AUTO (Association of Uganda Tour Operators)."
+    },
+    {
+     "title": "Precios de boda boda y tirones",
+     "desc": "Los boda boda de la calle cobran de más; algunos motoristas roban bolsos y móviles a peatones.",
+     "tip": "Use SafeBoda/Uber y no lleve el móvil del lado de la calzada."
+    },
+    {
+     "title": "Billetes falsos al cambiar dinero",
+     "desc": "Los cambistas callejeros pueden dar chelines falsos o de menos.",
+     "tip": "Cambie solo en bancos u oficinas autorizadas y cuente el dinero allí mismo."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Угандийский шиллинг (UGX)",
+   "plugType": "G (240V, 50Hz)",
+   "bestMonths": "Июнь – сентябрь и декабрь – февраль (сухие сезоны; лучшее время для треккинга к гориллам и шимпанзе)",
+   "safety": {
+    "crimeRateSummary": "В Кампале часты грабежи, рывки сумок, кражи из машин и с проезжающих «бода-бода». Есть угроза терроризма (в 2023 году в нацпарке Королевы Елизаветы напали на туристов); официальные предупреждения касаются границы с ДР Конго и региона Карамоджа. Закон 2023 года с жёсткими наказаниями за гомосексуальность также создаёт риски для иностранцев.",
+    "commonScams": [
+     "Посредники, продающие поддельные разрешения к гориллам и шимпанзе",
+     "Водители бода-бода завышают цену для туристов",
+     "Вырывание телефонов и сумок через окна машин в пробках"
+    ],
+    "safeTravelTips": [
+     "Покупайте разрешения только через Управление дикой природы Уганды (UWA) или лицензированных операторов.",
+     "Не ездите по трассам ночью и не гуляйте по Кампале после темноты; держите окна машины закрытыми.",
+     "Вместо уличных бода-бода пользуйтесь приложениями SafeBoda/Uber и всегда надевайте шлем."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Кампале и крупных городах; в нацпарках и горах — с перебоями.",
+    "costPerGbUsd": "~0.80 - 2 $",
+    "esimAvailability": "Средне (eSIM MTN и международные тарифы)",
+    "bestCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Базовое",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "0.50 - 2 $ (matatu minibüs)",
+    "dailyPassUsd": "Проездных нет; сафари-машина с водителем 100 - 180 $ в день",
+    "popularRideApps": [
+     "SafeBoda",
+     "Uber",
+     "Bolt",
+     "Матату (маршрутка)"
+    ],
+    "taxiAdvice": "В Кампале распространены Uber, Bolt и SafeBoda (мототакси со шлемом) с фиксированной ценой. Уличные бода-бода печально известны серьёзными авариями. Между нацпарками удобнее и безопаснее всего ездить на внедорожнике с водителем."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 1 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Средний – высокий",
+    "flightTip": "В Энтеббе (EBB) летает Turkish Airlines из Стамбула (часть рейсов с промежуточной посадкой); распространены и стыковки через Аддис-Абебу, Дубай, Доху и Найроби. Разрешений к гориллам (~800 $) мало — сначала оформите разрешение, потом покупайте билеты."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствие очень важно; прежде чем перейти к делу, спросите, как дела.",
+     "Давайте и принимайте вещи правой рукой или обеими.",
+     "Избегайте проявлений чувств на людях и в сельской местности одевайтесь скромно.",
+     "Не фотографируйте людей, военные и государственные здания без разрешения."
+    ],
+    "festivals": [
+     "День угандийских мучеников — 3 июня, Намугонго",
+     "День независимости — 9 октября",
+     "Имбалу (обряды обрезания у бамасаба; август в чётные годы, Мбале)"
+    ],
+    "lifestyle": "Молодая страна с более чем 50 народами, где культурно живут традиционные королевства — Буганда, Буньоро, Торо и Анколе. Бурная ночная жизнь Кампалы, музыка и любовь к футболу соседствуют с сельскими плантациями бананов и кофе."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Непроходимый лес Бвинди — ЮНЕСКО (горные гориллы)",
+     "Национальный парк Мерчисон-Фолс",
+     "Национальный парк Королевы Елизаветы (канал Казинга, львы на деревьях)",
+     "Лес Кибале (шимпанзе)",
+     "Джинджа и исток Нила (рафтинг)",
+     "Озеро Буньоньи"
+    ],
+    "bestSeasons": "Июнь – сентябрь и декабрь – февраль (сухие сезоны; лучшее время для треккинга к гориллам и шимпанзе)",
+    "travelStyleTip": "Уганду лучше всего объезжать на сафари-машине с водителем, связывая парки на юго-западе. Разрешения к гориллам (~800 $) и шимпанзе раскупают за месяцы — бронируйте заранее через UWA или лицензированного оператора."
+   },
+   "religion": {
+    "primaryReligions": "Христиане (~84 %; католики ~39 %, англикане ~32 %, пятидесятники и др.), мусульмане (~14 %)",
+    "respectNorms": "Религия важна в повседневной жизни; в церкви и мечети входите в скромной одежде. В Национальной мечети Каддафи женщинам выдают платок.",
+    "sacredSites": [
+     "Святилище угандийских мучеников, Намугонго",
+     "Национальная мечеть Каддафи (Старая Кампала)",
+     "Гробницы Касуби — ЮНЕСКО"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Английский и суахили (официальные); самый распространённый местный язык — луганда, всего более 40 языков",
+    "englishProficiency": "Хороший; в городах и туризме широко говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Oli otya?",
+      "meaning": "Как дела? (луганда)",
+      "translation": "Как дела? (луганда)",
+      "pronunciation": "oh-lee OH-tya"
+     },
+     {
+      "phrase": "Webale nnyo",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "weh-BAH-leh NYOH"
+     },
+     {
+      "phrase": "Mwattu",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "MWAH-too"
+     },
+     {
+      "phrase": "Ssente mmeka?",
+      "meaning": "Сколько денег?",
+      "translation": "Сколько денег?",
+      "pronunciation": "SEN-teh m-MEH-ka"
+     },
+     {
+      "phrase": "Weeraba",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "weh-eh-RAH-ba"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Веками регионом правили королевства Буганда, Буньоро, Торо и Анколе. В 1862 году Джон Хеннинг Спик зафиксировал исток Нила у Джинджи, а в 1894 году Уганда стала британским протекторатом. Независимость — 9 октября 1962 года. Эпоха Иди Амина (1971 – 1979) запомнилась тяжёлыми нарушениями прав человека; с 1986 года у власти Йовери Мусевени.",
+    "milestones": [
+     "1862 — Спик фиксирует исток Нила",
+     "1894 — британский протекторат",
+     "9 октября 1962 — независимость",
+     "1971–1979 — эпоха Иди Амина"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Матоке (тушёные и размятые зелёные бананы)",
+     "Лувомбо (рагу, томлённое в банановых листьях)",
+     "Пошо с фасолью и арахисовым соусом (биньебва)"
+    ],
+    "traditionalDrinks": [
+     "Угандийский кофе (арабика бугису, робуста)",
+     "Уганда Варажи (местный джин)",
+     "Тонто (банановое пиво) и пиво Nile Special"
+    ],
+    "streetFoodAndDesserts": [
+     "Ролекс (чапати, свёрнутый с омлетом)",
+     "Нсенене (жареные кузнечики, май и ноябрь)",
+     "Мучомо (шашлычки) и самосы"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Джон Акии-Буа (олимпийский чемпион 1972 года в беге на 400 м с барьерами)",
+     "Джошуа Чептегеи (рекордсмен мира на 5000 и 10 000 м)",
+     "Эдди Кензо (музыкант, лауреат премии BET)"
+    ],
+    "strongSectors": [
+     "Экспорт кофе",
+     "Туризм: гориллы и сафари",
+     "Золото и формирующаяся нефтяная отрасль (озеро Альберт)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Преобладают наличные и мобильные деньги (MTN MoMo, Airtel Money); карты принимают в крупных отелях и супермаркетах. Чистые долларовые купюры после 2009 года меняют по лучшему курсу. Разрешения и лоджи обычно оплачивают в долларах.",
+    "economicPillars": "Сельское хозяйство (кофе, чай, бананы, рыба), туризм, золото, телеком и мобильные деньги; нефтяные инвестиции у озера Альберт.",
+    "tippingCulture": "В ресторанах принято 10 %; гиды, водители и носильщики на треккинге к гориллам ожидают чаевых."
+   }
+  },
+  "itin": {
+   "routeName": "Приматы и сафари в Уганде: Кампала, Кибале, Королева Елизавета и Бвинди",
+   "routeSummary": "10-дневный маршрут по юго-западу: из Кампалы и Энтеббе к шимпанзе в Кибале у Форт-Портала, сафари и прогулка по каналу Казинга в парке Королевы Елизаветы, а в конце — горные гориллы в Бвинди и отдых на озере Буньоньи.",
+   "totalDays": 10,
+   "idealDurationText": "Сафари-маршрут на 9-12 дней",
+   "bestSeason": "Июнь – сентябрь и декабрь – февраль (сухие сезоны; лучшее время для треккинга к гориллам и шимпанзе)",
+   "transportMode": "Сафари-внедорожник с водителем; в Кампале Uber/Bolt/SafeBoda; по желанию внутренние рейсы (Энтеббе–Кихихи/Кисоро)",
+   "paceLevel": "Активный (природа и дикие животные)",
+   "stops": [
+    {
+     "name": "Остановка 1: Кампала и Энтеббе (столица и озеро Виктория)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Гробницы Касуби",
+      "Вид на город с минарета мечети Каддафи",
+      "Святилище мучеников Намугонго",
+      "Ботанический сад Энтеббе и центр Uganda Wildlife Education Centre"
+     ],
+     "activities": [
+      "Поднимитесь на минарет мечети Каддафи.",
+      "Поищите на каноэ китоглава на болотах Мабамба.",
+      "Окунитесь в местную жизнь на рынках Овино или Накасеро."
+     ],
+     "foodAndDrinks": [
+      "Ролекс",
+      "Лувомбо",
+      "Пиво Nile Special"
+     ],
+     "criticalTips": [
+      "В пробках держите телефон подальше от окна и не открывайте окна.",
+      "По Кампале передвигайтесь на SafeBoda/Uber; ночью пешком не ходите."
+     ],
+     "mapsQuery": "Kampala, Uganda",
+     "stopNumber": 1
+    },
+    {
+     "name": "Остановка 2: Кибале и Форт-Портал (шимпанзе и кратерные озёра)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Треккинг к шимпанзе в лесу Кибале",
+      "Прогулка по болоту Бигоди: приматы и птицы",
+      "Кратерные озёра Форт-Портала"
+     ],
+     "activities": [
+      "Рано утром отправьтесь к шимпанзе (разрешение ~200-250 $).",
+      "Пройдитесь пешком или на велосипеде между кратерными озёрами.",
+      "Посетите чайные плантации."
+     ],
+     "foodAndDrinks": [
+      "Матоке с арахисовым соусом",
+      "Местный чай"
+     ],
+     "criticalTips": [
+      "Надевайте одежду с длинным рукавом и непромокаемую обувь — тропы бывают грязными.",
+      "Держитесь не ближе 7-8 метров от приматов и не идите на треккинг, если болеете."
+     ],
+     "mapsQuery": "Kibale National Park, Uganda",
+     "stopNumber": 2
+    },
+    {
+     "name": "Остановка 3: Национальный парк Королевы Елизаветы (сафари и канал Казинга)",
+     "recommendedDuration": "2-3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Прогулка на лодке по каналу Казинга (бегемоты, слоны, птицы)",
+      "Львы на деревьях в Ишаше",
+      "Утреннее сафари на равнинах Касеньи"
+     ],
+     "activities": [
+      "Отправьтесь на дневную прогулку по каналу Казинга.",
+      "На рассвете наблюдайте в Касеньи за львами и угандийскими кобами.",
+      "По пути через Ишашу ищите львов на фиговых деревьях."
+     ],
+     "foodAndDrinks": [
+      "Тилапия в лодже",
+      "Коктейль с Уганда Варажи (на закате)"
+     ],
+     "criticalTips": [
+      "В 2023 году в парке напали на туристов; уточните обстановку у оператора и передвигайтесь только с гидом или сопровождением.",
+      "Высокий риск малярии; принимайте профилактику и используйте репеллент."
+     ],
+     "mapsQuery": "Queen Elizabeth National Park, Uganda",
+     "stopNumber": 3
+    },
+    {
+     "name": "Остановка 4: Бвинди и озеро Буньоньи (горные гориллы)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Час с горными гориллами (разрешение ~800 $)",
+      "Знакомство с общиной батва",
+      "29 островов озера Буньоньи"
+     ],
+     "activities": [
+      "Отправьтесь к гориллам с рейнджерами (поход 2-8 часов).",
+      "Наймите местного носильщика — он понесёт рюкзак, а община получит доход.",
+      "Поплавайте на долблёнке между островами Буньоньи."
+     ],
+     "foodAndDrinks": [
+      "Раки озера Буньоньи",
+      "Угандийский кофе в лодже"
+     ],
+     "criticalTips": [
+      "Оформляйте разрешение к гориллам за несколько месяцев через UWA или лицензированного оператора — без него на треккинг не пустят.",
+      "Возьмите перчатки, дождевик и хорошие ботинки — лес крутой и колючий."
+     ],
+     "mapsQuery": "Bwindi Impenetrable National Park, Uganda",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Матоке",
+     "Лувомбо",
+     "Пошо с фасолью"
+    ],
+    "drinks": [
+     "Угандийский кофе",
+     "Уганда Варажи",
+     "Тонто"
+    ],
+    "streetFoods": [
+     "Ролекс",
+     "Нсенене",
+     "Мучомо"
+    ],
+    "diningAdvice": "Пробуйте ролекс там, где его готовят при вас; избегайте сырых салатов и неочищенных фруктов. В ресторанах оставляйте 10 %."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Сертификат о прививке от жёлтой лихорадки (обязательно)",
+     "Переходник типа G (британский)",
+     "Треккинговые ботинки, перчатки, дождевик и длинные рукава",
+     "Таблетки от малярии и репеллент"
+    ],
+    "safetyAndEtiquette": [
+     "Пластиковые пакеты запрещены — не берите их.",
+     "Держитесь подальше от политических митингов и спрашивайте разрешения на съёмку."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G (три прямоугольных штыря). Европейские вилки не подходят — нужен переходник. В лоджах зарядка может быть ограничена часами работы генератора или солнечных панелей."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте запечатанную бутилированную или фильтрованную/кипячёную.",
+    "vaccines": [
+     "Жёлтая лихорадка (сертификат обязателен для въезда)",
+     "Гепатит A, брюшной тиф и бешенство",
+     "Менингит (север, сухой сезон)",
+     "Профилактика малярии (вся страна)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "В ресторанах ожидают около 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Принято давать водителю-гиду 10-20 $ в день и отдельно — рейнджерам и носильщикам на треккинге к гориллам."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата НДС для туристов нет (НДС 18 %)",
+    "minSpend": "—",
+    "customsNote": "В Уганде нет системы tax-free. Запрещён вывоз слоновой кости, изделий из диких животных и охраняемых пород дерева, а также ввоз пластиковых пакетов."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2",
+    "topCarriers": [
+     "MTN Uganda",
+     "Airtel Uganda"
+    ],
+    "airportSimTrapWarning": "На стойках MTN и Airtel в аэропорту Энтеббе по паспорту продают SIM по нормальной цене. eSIM удобна для связи сразу по прилёте; в парках сигнал может быть слабым."
+   },
+   "touristScams": [
+    {
+     "title": "Поддельные разрешения к гориллам",
+     "desc": "В соцсетях или на улице продают дешёвые разрешения «в последний момент».",
+     "tip": "Покупайте разрешения только у UWA или операторов — членов AUTO (Ассоциации туроператоров Уганды)."
+    },
+    {
+     "title": "Цены бода-бода и рывки",
+     "desc": "Уличные бода-бода завышают цены, а некоторые мотоциклисты вырывают у пешеходов сумки и телефоны.",
+     "tip": "Пользуйтесь SafeBoda/Uber и не держите телефон со стороны дороги."
+    },
+    {
+     "title": "Фальшивые купюры при обмене",
+     "desc": "Уличные менялы могут подсунуть фальшивые шиллинги или недодать.",
+     "tip": "Меняйте только в банках или лицензированных обменниках и пересчитывайте на месте."
+    }
+   ]
+  }
+ }
+}

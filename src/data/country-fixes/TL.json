@@ -1,0 +1,1777 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "ABD Doları (USD); yerel centavo madenî paraları",
+   "plugType": "C, E, F, I (220V, 50Hz)",
+   "bestMonths": "Mayıs – Kasım (kurak mevsim; dalış ve dağ yürüyüşü için ideal)",
+   "safety": {
+    "crimeRateSummary": "Turistlere yönelik suç oranı düşüktür; ancak Dili'de kapkaç, araç içinden hırsızlık ve zaman zaman gençlik/dövüş grupları arasında kavgalar görülür. Asıl riskler kötü yollar, toprak kayması ve sınırlı sağlık hizmetidir.",
+    "commonScams": [
+     "Dili taksilerinde yabancılara yüksek fiyat söylenmesi",
+     "Plajda ve parkta bırakılan araçlardan eşya çalınması",
+     "Kayıtsız 'rehberlerin' fazla ücret istemesi"
+    ],
+    "safeTravelTips": [
+     "Dağ yollarında gece yolculuk yapmayın; yağmur mevsiminde toprak kayması sık görülür.",
+     "Denizde timsah riski vardır; yerlilerin önerdiği yerlerde yüzün.",
+     "Kapsamlı sağlık ve tahliye sigortası yaptırın; ciddi vakalar Darwin veya Bali'ye taşınır."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Dili'de 4G iyidir; ana yollar ve kasabalarda 3G/4G, dağlık bölgelerde kesintili.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Sınırlı",
+    "bestCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Temel",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.25 - 0.50 $ (mikrolet)",
+    "dailyPassUsd": "Günlük bilet yok",
+    "popularRideApps": [
+     "Mikrolet minibüsler",
+     "Sarı taksiler",
+     "Kiralık 4x4 / scooter"
+    ],
+    "taxiAdvice": "Uber veya Grab yok. Dili içinde taksimetresiz sarı taksilerle kısa yolculuk genellikle 2-5 $; binmeden fiyatı konuşun. Doğuya ve dağlara gitmek için şoförlü 4x4 en güvenli seçenektir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Yüksek",
+    "flightTip": "Dili'ye (DIL) uçuşlar kısıtlıdır: Bali (Denpasar), Darwin ve Singapur'dan seferler var. Türkiye'den gelirken Bali aktarmalı bileti genellikle en uygunudur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşmada gülümseyip el sıkışın; yaşlılara ve din adamlarına özel saygı gösterilir.",
+     "Kiliselerde ve köylerde omuz ve dizleri örtün.",
+     "Kutsal evlere (uma lulik) ve kutsal alanlara izinsiz girmeyin.",
+     "Bağımsızlık mücadelesi hassas bir konudur; dinlemeye açık olun, yorum yapmaktan kaçının."
+    ],
+    "festivals": [
+     "Restorasyon (Bağımsızlık) Günü – 20 Mayıs",
+     "Referandum Günü – 30 Ağustos",
+     "Tour de Timor bisiklet yarışı ve Dili Maratonu"
+    ],
+    "lifestyle": "Genç bir nüfus, güçlü Katolik inanç ve geleneksel klan yapısı (uma lulik evleri) bir arada. Portekiz mirası kahve kültüründe ve mimaride, Endonezya izleri ise mutfakta hissedilir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Atauro Adası (dünyanın en zengin resif balık çeşitliliğinden biri)",
+     "Cristo Rei heykeli (Dili)",
+     "Ramelau Dağı (2.986 m, gün doğumu tırmanışı)",
+     "Jaco Adası ve Nino Konis Santana Milli Parkı",
+     "Direniş Müzesi ve Arşivi (Dili)",
+     "Baucau eski şehri"
+    ],
+    "bestSeasons": "Mayıs – Kasım (kurak mevsim; dalış ve dağ yürüyüşü için ideal)",
+    "travelStyleTip": "Turistik altyapı yeni gelişiyor; konaklama basit ve yollar zorlu. Dili'yi üs yapıp Atauro'ya tekne, doğuya ve dağlara şoförlü 4x4 ile gitmek en verimli yoldur. Balina göçü Ekim – Kasım arasıdır."
+   },
+   "religion": {
+    "primaryReligions": "Katolik (~%97), küçük Protestan ve Müslüman topluluklar; geleneksel animist inançlar Katoliklikle iç içe",
+    "respectNorms": "Pazar ayinleri kalabalıktır; kiliselere uygun kıyafetle girin. Jaco Adası kutsal sayılır, adada gece kalınmaz.",
+    "sacredSites": [
+     "Cristo Rei (Dili)",
+     "Dili Immaculate Conception Katedrali",
+     "Ramelau Dağı zirvesindeki Meryem Ana heykeli"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tetum ve Portekizce; Endonezce ve İngilizce çalışma dilleri olarak yaygın",
+    "englishProficiency": "Orta; Dili'de genç kesim ve turizmciler İngilizce bilir, kırsalda Tetum veya Endonezce gerekir.",
+    "phrases": [
+     {
+      "phrase": "Bondia",
+      "meaning": "Günaydın / Merhaba",
+      "translation": "Günaydın / Merhaba",
+      "pronunciation": "bon-DI-a"
+     },
+     {
+      "phrase": "Obrigadu / Obrigada",
+      "meaning": "Teşekkürler (erkek / kadın söyler)",
+      "translation": "Teşekkürler (erkek / kadın söyler)",
+      "pronunciation": "o-bri-GA-du / o-bri-GA-da"
+     },
+     {
+      "phrase": "Favór ida",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "fa-VOR I-da"
+     },
+     {
+      "phrase": "Folin hira?",
+      "meaning": "Fiyatı ne kadar?",
+      "translation": "Fiyatı ne kadar?",
+      "pronunciation": "FO-lin HI-ra"
+     },
+     {
+      "phrase": "Di'ak ka lae?",
+      "meaning": "Nasılsın?",
+      "translation": "Nasılsın?",
+      "pronunciation": "di-AK ka LA-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Portekizliler 16. yüzyılda adaya geldi ve Timor'un doğusu 1975'e kadar Portekiz yönetiminde kaldı. 28 Kasım 1975'te ilan edilen bağımsızlığın ardından ülke 24 yıl Endonezya yönetiminde kaldı. 30 Ağustos 1999'daki BM gözetimli referandumda halk bağımsızlığı seçti; kısa bir BM geçiş yönetiminden sonra 20 Mayıs 2002'de bağımsızlık yeniden ilan edildi. Timor-Leste Ekim 2025'te ASEAN'ın 11. üyesi oldu.",
+    "milestones": [
+     "16. yüzyıl – Portekizlilerin gelişi (Lifau, Oecusse)",
+     "30 Ağustos 1999 – Bağımsızlık referandumu",
+     "20 Mayıs 2002 – Bağımsızlığın yeniden tesisi",
+     "Ekim 2025 – ASEAN üyeliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ikan sabuko (demirhindi ve biberli uskumru)",
+     "Batar da'an (mısır, fasulye ve balkabağı yahnisi)",
+     "Tukir (bambu içinde pişen et)"
+    ],
+    "traditionalDrinks": [
+     "Timor kahvesi (Ermera arabikası)",
+     "Tua mutin (palmiye şarabı)",
+     "Tua sabu (damıtılmış palmiye içkisi)"
+    ],
+    "streetFoodAndDesserts": [
+     "Sahilde ızgara balık (Areia Branca)",
+     "Közde mısır",
+     "Portekiz usulü pastel de nata ve ekmekler"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Ramos-Horta (1996 Nobel Barış Ödülü)",
+     "Xanana Gusmão (bağımsızlık lideri, ilk cumhurbaşkanı)",
+     "Luís Cardoso (romancı)"
+    ],
+    "strongSectors": [
+     "Petrol ve doğalgaz (Petrol Fonu)",
+     "Organik kahve ihracatı",
+     "Dalış ve eko-turizm"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Para birimi ABD dolarıdır; bozukluklar yerel centavo madenî paralarıyla verilir. Dili dışında kart neredeyse hiç geçmez ve ATM azdır; küçük banknotlu nakit taşıyın.",
+    "economicPillars": "Petrol ve gaz gelirleri (Petrol Fonu), kahve, tarım, kamu harcamaları ve gelişmekte olan turizm.",
+    "tippingCulture": "Bahşiş geleneği yoktur; iyi hizmette yuvarlamak veya rehbere küçük bir bahşiş vermek takdir edilir."
+   }
+  },
+  "itin": {
+   "routeName": "Timor-Leste Keşfi: Dili, Atauro ve Doğu Ucu",
+   "routeSummary": "Dili'nin tarihi ve Atauro'nun mercan resifleriyle başlayıp Portekiz izlerini taşıyan Baucau'dan geçen ve ülkenin doğu ucundaki kutsal Jaco Adası'nda biten 8 günlük rota. Ramelau Dağı tırmanışı için 1-2 gün eklenebilir.",
+   "totalDays": 8,
+   "idealDurationText": "7-10 Günlük Rota",
+   "bestSeason": "Mayıs – Kasım (kurak mevsim; dalış ve dağ yürüyüşü için ideal)",
+   "transportMode": "Atauro'ya feribot/sürat teknesi; doğuya şoförlü 4x4",
+   "paceLevel": "Macera (Deniz + Doğa + Tarih)",
+   "stops": [
+    {
+     "name": "1. Durak: Dili ve Atauro Adası (Tarih ve Resifler)",
+     "recommendedDuration": "3-4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Cristo Rei heykeli ve plajları",
+      "Direniş Müzesi ve Chega! sergisi",
+      "Atauro'nun mercan resifleri",
+      "Tais dokuma pazarı"
+     ],
+     "activities": [
+      "Gün batımında Cristo Rei'nin 500 basamağını çıkın.",
+      "Atauro'da şnorkel veya dalış yapın, eko-lojlarda kalın.",
+      "Ekim – Kasım'daysanız balina ve yunus turuna katılın."
+     ],
+     "foodAndDrinks": [
+      "Ikan sabuko",
+      "Yerel kahve (Dili kafeleri)",
+      "Sahilde ızgara balık"
+     ],
+     "criticalTips": [
+      "Atauro teknelerinin saatleri hava durumuna göre değişir; dönüş için bir gün pay bırakın.",
+      "Dili'de araçta değerli eşya bırakmayın."
+     ],
+     "mapsQuery": "Dili, Timor-Leste",
+     "stopNumber": 1
+    },
+    {
+     "name": "2. Durak: Baucau (Portekiz Mirası ve Plajlar)",
+     "recommendedDuration": "1-2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Eski Portekiz pazarı (Mercado Municipal)",
+      "Pousada de Baucau",
+      "Osolata plajı"
+     ],
+     "activities": [
+      "Sömürge dönemi binaları arasında yürüyün.",
+      "Kayalardan çıkan doğal kaynak havuzunda serinleyin.",
+      "Sahile inip yerel balıkçılarla sohbet edin."
+     ],
+     "foodAndDrinks": [
+      "Batar da'an",
+      "Pousada'da Portekiz-Timor karışık mutfak"
+     ],
+     "criticalTips": [
+      "Dili–Baucau yolu 3-4 saat sürer; gündüz yola çıkın.",
+      "ATM sayısı azdır; Dili'den yeterli nakit alın."
+     ],
+     "mapsQuery": "Baucau, Timor-Leste",
+     "stopNumber": 2
+    },
+    {
+     "name": "3. Durak: Tutuala ve Jaco Adası (Doğu Ucu)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Jaco Adası'nın beyaz kumu ve berrak suyu",
+      "Valu plajı",
+      "Ile Kére Kére mağarasındaki kaya resimleri"
+     ],
+     "activities": [
+      "Valu plajından balıkçı teknesiyle Jaco'ya gün içinde geçin.",
+      "Nino Konis Santana Milli Parkı'nda kuş gözlemi yapın.",
+      "Rehberle kaya resimlerine yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Taze balık ve pirinç (topluluk konaklamalarında)",
+      "Tua mutin"
+     ],
+     "criticalTips": [
+      "Jaco kutsaldır; adada gece kalınmaz ve çöp bırakılmaz.",
+      "Bölgede elektrik ve sinyal sınırlıdır; powerbank ve yeterli su getirin."
+     ],
+     "mapsQuery": "Jaco Island, Timor-Leste",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ikan sabuko",
+     "Batar da'an",
+     "Tukir"
+    ],
+    "drinks": [
+     "Timor kahvesi",
+     "Tua mutin",
+     "Tua sabu"
+    ],
+    "streetFoods": [
+     "Izgara balık",
+     "Közde mısır",
+     "Pastel de nata"
+    ],
+    "diningAdvice": "Yemekleri genellikle pilav ve sebzeyle birlikte servis edilir; budu (domates-biber-limon sosu) eşlik eder. Dili'deki küçük kafelerde Timor kahvesini mutlaka deneyin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "I tipi (Avustralya) priz adaptörü",
+     "Şnorkel maskesi ve resif dostu güneş kremi",
+     "Sivrisinek kovucu (dang ve sıtma riski)",
+     "Ramelau için sıcak mont (zirvede gece çok soğuk)"
+    ],
+    "safetyAndEtiquette": [
+     "Kutsal evlere ve alanlara izinsiz girmeyin.",
+     "Timsah uyarısı olan sularda yüzmeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizler karışıktır: Avustralya tipi I çok yaygın, Avrupa tipi C/E/F de görülür. Türkiye fişleri her yerde takılmayabilir; I tipi adaptör getirin."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; şişe veya arıtılmış su için. Birçok konaklama yerinde su doldurma istasyonu vardır.",
+    "vaccines": [
+     "Hepatit A ve tifo",
+     "Japon ensefaliti (kırsalda uzun kalış)",
+     "Rutin aşılar ve kuduz (uzun kalış)",
+     "Sarı humma: yalnızca riskli ülkeden gelişte sertifika"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "Bahşiş geleneği yoktur; turist mekânlarında küçük bahşiş takdir edilir.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Dalış rehberlerine ve şoförlere tur sonunda birkaç dolar bırakmak hoş karşılanır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistler için vergi iadesi yok",
+    "minSpend": "—",
+    "customsNote": "Timor-Leste'de turistlere yönelik Tax-Free sistemi yoktur. Mercan, kaplumbağa kabuğu ve yaban hayvanı ürünleri çıkarmayın; Avustralya'ya gidiyorsanız tais ve ahşap ürünlerin gümrük kurallarını kontrol edin."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "airportSimTrapWarning": "Uluslararası eSIM seçenekleri az ve pahalıdır; havalimanında veya Dili'deki mağazalarda pasaportla ucuz yerel SIM (Telkomcel, Telemor) alınabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Taksi fiyatı",
+     "desc": "Taksimetre olmadığından yabancılara kısa yol için yüksek fiyat söylenebilir.",
+     "tip": "Dili içi için 2-5 $ civarını bilin ve fiyatı binmeden konuşun."
+    },
+    {
+     "title": "Araçtan hırsızlık",
+     "desc": "Plaj ve manzara noktalarında park edilen araçlardan çanta ve telefon çalınabilir.",
+     "tip": "Hiçbir şeyi görünür bırakmayın, mümkünse araçta biri kalsın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "US dollar (USD); local centavo coins",
+   "plugType": "C, E, F, I (220V, 50Hz)",
+   "bestMonths": "May – November (dry season; ideal for diving and mountain hikes)",
+   "safety": {
+    "crimeRateSummary": "Crime against tourists is low, but bag snatching, theft from vehicles and occasional fights between youth/martial-arts groups occur in Dili. The main risks are poor roads, landslides and limited healthcare.",
+    "commonScams": [
+     "Dili taxis quoting high fares to foreigners",
+     "Theft from cars left at beaches and viewpoints",
+     "Unlicensed 'guides' overcharging"
+    ],
+    "safeTravelTips": [
+     "Avoid mountain roads at night; landslides are common in the wet season.",
+     "Saltwater crocodiles exist; swim only where locals advise.",
+     "Get full health and evacuation insurance; serious cases are flown to Darwin or Bali."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G is good in Dili; 3G/4G in towns and along main roads, patchy in the mountains.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Limited",
+    "bestCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Basic",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.25 - 0.50 $ (mikrolet)",
+    "dailyPassUsd": "No day pass",
+    "popularRideApps": [
+     "Mikrolet minibuses",
+     "Yellow taxis",
+     "Rental 4x4 / scooter"
+    ],
+    "taxiAdvice": "There's no Uber or Grab. Short rides in unmetered yellow taxis in Dili usually cost 2-5 $; agree before getting in. A 4x4 with driver is the safest way to the east and the mountains."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "High",
+    "flightTip": "Flights to Dili (DIL) are limited: services run from Bali (Denpasar), Darwin and Singapore. From Türkiye, a connection via Bali is usually the best value."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Smile and shake hands when greeting; elders and clergy are shown special respect.",
+     "Cover shoulders and knees in churches and villages.",
+     "Don't enter sacred houses (uma lulik) or sacred places without permission.",
+     "The independence struggle is a sensitive topic; listen rather than comment."
+    ],
+    "festivals": [
+     "Restoration of Independence Day – 20 May",
+     "Popular Consultation Day – 30 August",
+     "Tour de Timor cycling race and Dili Marathon"
+    ],
+    "lifestyle": "A young population, strong Catholic faith and traditional clan structures (uma lulik houses) coexist. Portuguese heritage shows in coffee culture and architecture, Indonesian influences in the food."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Atauro Island (one of the world's richest reef-fish diversities)",
+     "Cristo Rei statue (Dili)",
+     "Mount Ramelau (2,986 m, sunrise climb)",
+     "Jaco Island and Nino Konis Santana National Park",
+     "Resistance Museum and Archive (Dili)",
+     "Baucau old town"
+    ],
+    "bestSeasons": "May – November (dry season; ideal for diving and mountain hikes)",
+    "travelStyleTip": "Tourism infrastructure is still developing; accommodation is basic and roads are rough. Base yourself in Dili, take a boat to Atauro and a 4x4 with driver to the east and mountains. Whale migration runs October – November."
+   },
+   "religion": {
+    "primaryReligions": "Catholic (~97%), small Protestant and Muslim communities; traditional animist beliefs blend with Catholicism",
+    "respectNorms": "Sunday Masses are crowded; dress appropriately for church. Jaco Island is considered sacred and no one stays overnight there.",
+    "sacredSites": [
+     "Cristo Rei (Dili)",
+     "Immaculate Conception Cathedral, Dili",
+     "Statue of the Virgin Mary on the summit of Mount Ramelau"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tetum and Portuguese; Indonesian and English are widely used working languages",
+    "englishProficiency": "Moderate; young people and tourism staff in Dili speak English, rural areas need Tetum or Indonesian.",
+    "phrases": [
+     {
+      "phrase": "Bondia",
+      "meaning": "Good morning / Hello",
+      "translation": "Good morning / Hello",
+      "pronunciation": "bon-DI-a"
+     },
+     {
+      "phrase": "Obrigadu / Obrigada",
+      "meaning": "Thank you (said by a man / a woman)",
+      "translation": "Thank you (said by a man / a woman)",
+      "pronunciation": "o-bri-GA-du / o-bri-GA-da"
+     },
+     {
+      "phrase": "Favór ida",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "fa-VOR I-da"
+     },
+     {
+      "phrase": "Folin hira?",
+      "meaning": "How much does it cost?",
+      "translation": "How much does it cost?",
+      "pronunciation": "FO-lin HI-ra"
+     },
+     {
+      "phrase": "Di'ak ka lae?",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "di-AK ka LA-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Portuguese arrived in the 16th century and eastern Timor remained under Portuguese rule until 1975. After independence was declared on 28 November 1975, the country spent 24 years under Indonesian rule. In a UN-supervised referendum on 30 August 1999 the people chose independence; after a brief UN transitional administration, independence was restored on 20 May 2002. Timor-Leste became ASEAN's 11th member in October 2025.",
+    "milestones": [
+     "16th century – Arrival of the Portuguese (Lifau, Oecusse)",
+     "30 August 1999 – Independence referendum",
+     "20 May 2002 – Restoration of independence",
+     "October 2025 – ASEAN membership"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ikan sabuko (Spanish mackerel with tamarind and chilli)",
+     "Batar da'an (corn, bean and pumpkin stew)",
+     "Tukir (meat cooked inside bamboo)"
+    ],
+    "traditionalDrinks": [
+     "Timorese coffee (Ermera arabica)",
+     "Tua mutin (palm wine)",
+     "Tua sabu (distilled palm spirit)"
+    ],
+    "streetFoodAndDesserts": [
+     "Beachside grilled fish (Areia Branca)",
+     "Roasted corn on the cob",
+     "Portuguese-style pastéis de nata and bread"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Ramos-Horta (1996 Nobel Peace Prize)",
+     "Xanana Gusmão (independence leader, first president)",
+     "Luís Cardoso (novelist)"
+    ],
+    "strongSectors": [
+     "Oil and gas (Petroleum Fund)",
+     "Organic coffee exports",
+     "Dive and eco-tourism"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The currency is the US dollar; change is given in local centavo coins. Outside Dili cards are rarely accepted and ATMs are scarce; carry cash in small notes.",
+    "economicPillars": "Oil and gas revenue (Petroleum Fund), coffee, agriculture, public spending and emerging tourism.",
+    "tippingCulture": "There's no tipping tradition; rounding up or a small tip for guides is appreciated."
+   }
+  },
+  "itin": {
+   "routeName": "Timor-Leste Discovery: Dili, Atauro & the Far East",
+   "routeSummary": "An 8-day route starting with Dili's history and Atauro's coral reefs, passing Portuguese-flavoured Baucau and ending at sacred Jaco Island on the country's eastern tip. Add 1-2 days to climb Mount Ramelau.",
+   "totalDays": 8,
+   "idealDurationText": "7-10 Day Itinerary",
+   "bestSeason": "May – November (dry season; ideal for diving and mountain hikes)",
+   "transportMode": "Ferry/fast boat to Atauro; 4x4 with driver to the east",
+   "paceLevel": "Adventurous (Sea, Nature & History)",
+   "stops": [
+    {
+     "name": "Stop 1: Dili & Atauro Island (History & Reefs)",
+     "recommendedDuration": "3-4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Cristo Rei statue and beaches",
+      "Resistance Museum and the Chega! exhibition",
+      "Atauro's coral reefs",
+      "Tais weaving market"
+     ],
+     "activities": [
+      "Climb the 500 steps to Cristo Rei at sunset.",
+      "Snorkel or dive at Atauro and stay in an eco-lodge.",
+      "In October – November, join a whale and dolphin trip."
+     ],
+     "foodAndDrinks": [
+      "Ikan sabuko",
+      "Local coffee (Dili cafés)",
+      "Beach-grilled fish"
+     ],
+     "criticalTips": [
+      "Atauro boat schedules depend on the weather; leave a spare day for the return.",
+      "Don't leave valuables in cars in Dili."
+     ],
+     "mapsQuery": "Dili, Timor-Leste",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stop 2: Baucau (Portuguese Heritage & Beaches)",
+     "recommendedDuration": "1-2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Old Portuguese market (Mercado Municipal)",
+      "Pousada de Baucau",
+      "Osolata beach"
+     ],
+     "activities": [
+      "Walk among the colonial-era buildings.",
+      "Cool off in the natural spring-fed pool.",
+      "Head down to the coast and chat with local fishermen."
+     ],
+     "foodAndDrinks": [
+      "Batar da'an",
+      "Portuguese-Timorese cooking at the Pousada"
+     ],
+     "criticalTips": [
+      "The Dili–Baucau road takes 3-4 hours; travel by day.",
+      "ATMs are few; bring enough cash from Dili."
+     ],
+     "mapsQuery": "Baucau, Timor-Leste",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stop 3: Tutuala & Jaco Island (Eastern Tip)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Jaco Island's white sand and clear water",
+      "Valu beach",
+      "Rock art in the Ile Kére Kére cave"
+     ],
+     "activities": [
+      "Take a fishing boat from Valu beach to Jaco for the day.",
+      "Go birdwatching in Nino Konis Santana National Park.",
+      "Hike to the rock art with a guide."
+     ],
+     "foodAndDrinks": [
+      "Fresh fish and rice (at community guesthouses)",
+      "Tua mutin"
+     ],
+     "criticalTips": [
+      "Jaco is sacred; no overnight stays and leave no rubbish.",
+      "Electricity and signal are limited here; bring a power bank and enough water."
+     ],
+     "mapsQuery": "Jaco Island, Timor-Leste",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ikan sabuko",
+     "Batar da'an",
+     "Tukir"
+    ],
+    "drinks": [
+     "Timorese coffee",
+     "Tua mutin",
+     "Tua sabu"
+    ],
+    "streetFoods": [
+     "Grilled fish",
+     "Roasted corn",
+     "Pastel de nata"
+    ],
+    "diningAdvice": "Meals usually come with rice and vegetables plus budu (tomato-chilli-lime relish). Be sure to try Timorese coffee at Dili's small cafés."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type I (Australian) plug adapter",
+     "Snorkel mask and reef-safe sunscreen",
+     "Insect repellent (dengue and malaria risk)",
+     "Warm jacket for Ramelau (very cold at the summit at night)"
+    ],
+    "safetyAndEtiquette": [
+     "Don't enter sacred houses or sites without permission.",
+     "Don't swim where crocodile warnings exist."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sockets are mixed: Australian Type I is very common, with some European C/E/F. Turkish plugs won't fit everywhere; bring a Type I adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn't safe; drink bottled or filtered water. Many places to stay offer refill stations.",
+    "vaccines": [
+     "Hepatitis A and typhoid",
+     "Japanese encephalitis (long rural stays)",
+     "Routine vaccines and rabies (long stays)",
+     "Yellow fever: certificate only if arriving from a risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "There's no tipping tradition; small tips are appreciated in tourist venues.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Leaving a few dollars for dive guides and drivers at the end is welcome."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No tax refund for tourists",
+    "minSpend": "—",
+    "customsNote": "Timor-Leste has no tourist tax-free scheme. Don't export coral, turtle shell or wildlife products; if flying to Australia, check its strict customs rules for tais and wooden items."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "airportSimTrapWarning": "International eSIMs are few and pricey; cheap local SIMs (Telkomcel, Telemor) can be bought with a passport at the airport or Dili shops."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi pricing",
+     "desc": "With no meters, foreigners may be quoted high fares for short trips.",
+     "tip": "Know that Dili rides are around 2-5 $ and agree before getting in."
+    },
+    {
+     "title": "Theft from vehicles",
+     "desc": "Bags and phones may be stolen from cars parked at beaches and viewpoints.",
+     "tip": "Leave nothing visible and, if possible, have someone stay with the car."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "US-Dollar (USD); lokale Centavo-Münzen",
+   "plugType": "C, E, F, I (220V, 50Hz)",
+   "bestMonths": "Mai – November (Trockenzeit; ideal zum Tauchen und Bergwandern)",
+   "safety": {
+    "crimeRateSummary": "Kriminalität gegen Touristen ist gering, doch in Dili kommen Taschenraub, Diebstahl aus Autos und gelegentliche Schlägereien zwischen Jugend- bzw. Kampfsportgruppen vor. Hauptrisiken sind schlechte Straßen, Erdrutsche und begrenzte medizinische Versorgung.",
+    "commonScams": [
+     "Taxis in Dili nennen Ausländern hohe Preise",
+     "Diebstahl aus Autos an Stränden und Aussichtspunkten",
+     "Nicht lizenzierte 'Guides' verlangen zu viel"
+    ],
+    "safeTravelTips": [
+     "Nachts keine Bergstraßen befahren; in der Regenzeit sind Erdrutsche häufig.",
+     "Es gibt Salzwasserkrokodile; nur dort schwimmen, wo Einheimische es empfehlen.",
+     "Umfassende Kranken- und Rücktransportversicherung abschließen; ernste Fälle werden nach Darwin oder Bali geflogen."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in Dili gut; 3G/4G in Orten und an Hauptstraßen, in den Bergen lückenhaft.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Eingeschränkt",
+    "bestCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Einfach",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "0.25 - 0.50 $ (mikrolet)",
+    "dailyPassUsd": "Keine Tageskarte",
+    "popularRideApps": [
+     "Mikrolet-Minibusse",
+     "Gelbe Taxis",
+     "Mietgeländewagen / Roller"
+    ],
+    "taxiAdvice": "Es gibt kein Uber oder Grab. Kurze Fahrten mit gelben Taxis ohne Taxameter kosten in Dili meist 2-5 $; Preis vorher vereinbaren. In den Osten und die Berge am sichersten mit Geländewagen und Fahrer."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Hoch",
+    "flightTip": "Flüge nach Dili (DIL) sind begrenzt: Verbindungen ab Bali (Denpasar), Darwin und Singapur. Aus Europa ist ein Umstieg in Bali meist am günstigsten."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Zur Begrüßung lächeln und Hände schütteln; Älteren und Geistlichen wird besonderer Respekt gezeigt.",
+     "In Kirchen und Dörfern Schultern und Knie bedecken.",
+     "Heilige Häuser (Uma Lulik) und heilige Orte nicht ohne Erlaubnis betreten.",
+     "Der Unabhängigkeitskampf ist ein sensibles Thema; lieber zuhören als kommentieren."
+    ],
+    "festivals": [
+     "Tag der Wiederherstellung der Unabhängigkeit – 20. Mai",
+     "Tag der Volksbefragung – 30. August",
+     "Radrennen Tour de Timor und Dili-Marathon"
+    ],
+    "lifestyle": "Junge Bevölkerung, starker katholischer Glaube und traditionelle Clanstrukturen (Uma-Lulik-Häuser). Portugiesisches Erbe zeigt sich in Kaffeekultur und Architektur, indonesische Einflüsse in der Küche."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Insel Atauro (eine der artenreichsten Rifffischregionen der Welt)",
+     "Cristo-Rei-Statue (Dili)",
+     "Mount Ramelau (2.986 m, Sonnenaufgangsbesteigung)",
+     "Insel Jaco und Nino-Konis-Santana-Nationalpark",
+     "Museum und Archiv des Widerstands (Dili)",
+     "Altstadt von Baucau"
+    ],
+    "bestSeasons": "Mai – November (Trockenzeit; ideal zum Tauchen und Bergwandern)",
+    "travelStyleTip": "Die Infrastruktur entsteht erst; Unterkünfte sind einfach, Straßen holprig. Am besten Dili als Basis nutzen, per Boot nach Atauro und mit Geländewagen samt Fahrer in den Osten und die Berge. Walwanderung Oktober – November."
+   },
+   "religion": {
+    "primaryReligions": "Katholiken (~97 %), kleine protestantische und muslimische Gemeinden; traditionelle animistische Vorstellungen verbinden sich mit dem Katholizismus",
+    "respectNorms": "Sonntagsmessen sind voll; angemessen gekleidet in die Kirche gehen. Die Insel Jaco gilt als heilig, dort übernachtet niemand.",
+    "sacredSites": [
+     "Cristo Rei (Dili)",
+     "Kathedrale der Unbefleckten Empfängnis, Dili",
+     "Marienstatue auf dem Gipfel des Mount Ramelau"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tetum und Portugiesisch; Indonesisch und Englisch sind verbreitete Arbeitssprachen",
+    "englishProficiency": "Mittel; junge Leute und Tourismuspersonal in Dili sprechen Englisch, auf dem Land braucht man Tetum oder Indonesisch.",
+    "phrases": [
+     {
+      "phrase": "Bondia",
+      "meaning": "Guten Morgen / Hallo",
+      "translation": "Guten Morgen / Hallo",
+      "pronunciation": "bon-DI-a"
+     },
+     {
+      "phrase": "Obrigadu / Obrigada",
+      "meaning": "Danke (sagt ein Mann / eine Frau)",
+      "translation": "Danke (sagt ein Mann / eine Frau)",
+      "pronunciation": "o-bri-GA-du / o-bri-GA-da"
+     },
+     {
+      "phrase": "Favór ida",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "fa-VOR I-da"
+     },
+     {
+      "phrase": "Folin hira?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "FO-lin HI-ra"
+     },
+     {
+      "phrase": "Di'ak ka lae?",
+      "meaning": "Wie geht es dir?",
+      "translation": "Wie geht es dir?",
+      "pronunciation": "di-AK ka LA-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Portugiesen kamen im 16. Jahrhundert; Osttimor blieb bis 1975 portugiesisch. Nach der Unabhängigkeitserklärung am 28. November 1975 stand das Land 24 Jahre unter indonesischer Herrschaft. Beim UN-überwachten Referendum am 30. August 1999 stimmte die Bevölkerung für die Unabhängigkeit; nach kurzer UN-Übergangsverwaltung wurde sie am 20. Mai 2002 wiederhergestellt. Im Oktober 2025 wurde Timor-Leste 11. Mitglied der ASEAN.",
+    "milestones": [
+     "16. Jh. – Ankunft der Portugiesen (Lifau, Oecusse)",
+     "30. August 1999 – Unabhängigkeitsreferendum",
+     "20. Mai 2002 – Wiederherstellung der Unabhängigkeit",
+     "Oktober 2025 – ASEAN-Mitgliedschaft"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ikan sabuko (Königsmakrele mit Tamarinde und Chili)",
+     "Batar da'an (Eintopf aus Mais, Bohnen und Kürbis)",
+     "Tukir (in Bambus gegartes Fleisch)"
+    ],
+    "traditionalDrinks": [
+     "Timoresischer Kaffee (Arabica aus Ermera)",
+     "Tua mutin (Palmwein)",
+     "Tua sabu (destillierter Palmschnaps)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gegrillter Fisch am Strand (Areia Branca)",
+     "Gerösteter Maiskolben",
+     "Pastéis de Nata und Brot nach portugiesischer Art"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Ramos-Horta (Friedensnobelpreis 1996)",
+     "Xanana Gusmão (Unabhängigkeitsführer, erster Präsident)",
+     "Luís Cardoso (Romanautor)"
+    ],
+    "strongSectors": [
+     "Öl und Gas (Erdölfonds)",
+     "Export von Biokaffee",
+     "Tauch- und Ökotourismus"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Währung ist der US-Dollar; Wechselgeld gibt es in lokalen Centavo-Münzen. Außerhalb von Dili kaum Kartenzahlung und wenige Geldautomaten; Bargeld in kleinen Scheinen mitnehmen.",
+    "economicPillars": "Öl- und Gaseinnahmen (Erdölfonds), Kaffee, Landwirtschaft, Staatsausgaben und aufstrebender Tourismus.",
+    "tippingCulture": "Trinkgeld ist nicht üblich; Aufrunden oder ein kleines Trinkgeld für Guides wird geschätzt."
+   }
+  },
+  "itin": {
+   "routeName": "Timor-Leste entdecken: Dili, Atauro & der äußerste Osten",
+   "routeSummary": "8-tägige Route: Geschichte in Dili und Korallenriffe von Atauro, dann das portugiesisch geprägte Baucau und zum Schluss die heilige Insel Jaco an der Ostspitze. Für den Mount Ramelau 1-2 Tage ergänzen.",
+   "totalDays": 8,
+   "idealDurationText": "7-10-Tage-Route",
+   "bestSeason": "Mai – November (Trockenzeit; ideal zum Tauchen und Bergwandern)",
+   "transportMode": "Fähre/Schnellboot nach Atauro; Geländewagen mit Fahrer in den Osten",
+   "paceLevel": "Abenteuerlich (Meer, Natur & Geschichte)",
+   "stops": [
+    {
+     "name": "Stopp 1: Dili & Insel Atauro (Geschichte & Riffe)",
+     "recommendedDuration": "3-4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Cristo-Rei-Statue und Strände",
+      "Widerstandsmuseum und Ausstellung Chega!",
+      "Korallenriffe von Atauro",
+      "Tais-Webmarkt"
+     ],
+     "activities": [
+      "Bei Sonnenuntergang die 500 Stufen zum Cristo Rei hinaufsteigen.",
+      "Auf Atauro schnorcheln oder tauchen und in einer Öko-Lodge übernachten.",
+      "Im Oktober – November eine Wal- und Delfintour machen."
+     ],
+     "foodAndDrinks": [
+      "Ikan sabuko",
+      "Lokaler Kaffee (Cafés in Dili)",
+      "Gegrillter Fisch am Strand"
+     ],
+     "criticalTips": [
+      "Bootsfahrpläne nach Atauro sind wetterabhängig; für die Rückfahrt einen Puffertag einplanen.",
+      "In Dili keine Wertsachen im Auto lassen."
+     ],
+     "mapsQuery": "Dili, Timor-Leste",
+     "stopNumber": 1
+    },
+    {
+     "name": "Stopp 2: Baucau (Portugiesisches Erbe & Strände)",
+     "recommendedDuration": "1-2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Alter portugiesischer Markt (Mercado Municipal)",
+      "Pousada de Baucau",
+      "Strand Osolata"
+     ],
+     "activities": [
+      "Zwischen den Kolonialbauten spazieren.",
+      "Im natürlichen Quellbecken abkühlen.",
+      "Zur Küste hinunterfahren und mit Fischern plaudern."
+     ],
+     "foodAndDrinks": [
+      "Batar da'an",
+      "Portugiesisch-timoresische Küche in der Pousada"
+     ],
+     "criticalTips": [
+      "Die Strecke Dili–Baucau dauert 3-4 Stunden; tagsüber fahren.",
+      "Wenige Geldautomaten; genug Bargeld aus Dili mitnehmen."
+     ],
+     "mapsQuery": "Baucau, Timor-Leste",
+     "stopNumber": 2
+    },
+    {
+     "name": "Stopp 3: Tutuala & Insel Jaco (Ostspitze)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Weißer Sand und klares Wasser auf Jaco",
+      "Strand Valu",
+      "Felsmalereien in der Höhle Ile Kére Kére"
+     ],
+     "activities": [
+      "Mit einem Fischerboot vom Strand Valu für den Tag nach Jaco fahren.",
+      "Im Nationalpark Nino Konis Santana Vögel beobachten.",
+      "Mit Guide zu den Felsmalereien wandern."
+     ],
+     "foodAndDrinks": [
+      "Frischer Fisch mit Reis (in Gemeinde-Gästehäusern)",
+      "Tua mutin"
+     ],
+     "criticalTips": [
+      "Jaco ist heilig; keine Übernachtung und keinen Müll zurücklassen.",
+      "Strom und Netz sind begrenzt; Powerbank und genug Wasser mitnehmen."
+     ],
+     "mapsQuery": "Jaco Island, Timor-Leste",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ikan sabuko",
+     "Batar da'an",
+     "Tukir"
+    ],
+    "drinks": [
+     "Timoresischer Kaffee",
+     "Tua mutin",
+     "Tua sabu"
+    ],
+    "streetFoods": [
+     "Gegrillter Fisch",
+     "Gerösteter Mais",
+     "Pastel de Nata"
+    ],
+    "diningAdvice": "Gerichte kommen meist mit Reis und Gemüse sowie Budu (Tomaten-Chili-Limetten-Relish). Unbedingt timoresischen Kaffee in Dilis kleinen Cafés probieren."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Steckeradapter Typ I (Australien)",
+     "Schnorchelmaske und rifffreundliche Sonnencreme",
+     "Mückenschutz (Dengue- und Malariarisiko)",
+     "Warme Jacke für den Ramelau (nachts am Gipfel sehr kalt)"
+    ],
+    "safetyAndEtiquette": [
+     "Heilige Häuser und Orte nicht ohne Erlaubnis betreten.",
+     "Nicht dort schwimmen, wo vor Krokodilen gewarnt wird."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Gemischte Steckdosen: australischer Typ I sehr verbreitet, daneben europäische C/E/F. Europäische Stecker passen nicht überall; Adapter Typ I mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht sicher; Flaschen- oder gefiltertes Wasser trinken. Viele Unterkünfte haben Nachfüllstationen.",
+    "vaccines": [
+     "Hepatitis A und Typhus",
+     "Japanische Enzephalitis (längere Aufenthalte auf dem Land)",
+     "Standardimpfungen und Tollwut (Langzeitaufenthalt)",
+     "Gelbfieber: Nachweis nur bei Einreise aus Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht üblich; in Touristenlokalen werden kleine Beträge geschätzt.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Ein paar Dollar für Tauchguides und Fahrer am Ende sind willkommen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Steuererstattung für Touristen",
+    "minSpend": "—",
+    "customsNote": "Timor-Leste hat kein Tax-Free-System. Keine Korallen, Schildpatt oder Wildtierprodukte ausführen; bei Weiterflug nach Australien dessen strenge Zollregeln für Tais und Holzwaren prüfen."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "airportSimTrapWarning": "Internationale eSIMs sind rar und teuer; günstige lokale SIMs (Telkomcel, Telemor) gibt es mit Reisepass am Flughafen oder in Dili."
+   },
+   "touristScams": [
+    {
+     "title": "Taxipreise",
+     "desc": "Ohne Taxameter werden Ausländern für kurze Strecken hohe Preise genannt.",
+     "tip": "Für Fahrten in Dili mit etwa 2-5 $ rechnen und vorher vereinbaren."
+    },
+    {
+     "title": "Diebstahl aus Fahrzeugen",
+     "desc": "Aus geparkten Autos an Stränden und Aussichtspunkten werden Taschen und Handys gestohlen.",
+     "tip": "Nichts sichtbar liegen lassen und wenn möglich jemanden beim Auto lassen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar estadounidense (USD); monedas locales de centavo",
+   "plugType": "C, E, F, I (220V, 50Hz)",
+   "bestMonths": "Mayo – noviembre (estación seca; ideal para bucear y hacer senderismo)",
+   "safety": {
+    "crimeRateSummary": "La delincuencia contra turistas es baja, aunque en Dili hay tirones, robos en vehículos y peleas ocasionales entre grupos juveniles o de artes marciales. Los principales riesgos son las malas carreteras, los deslizamientos y la sanidad limitada.",
+    "commonScams": [
+     "Taxis de Dili que cobran de más a extranjeros",
+     "Robos en coches aparcados en playas y miradores",
+     "'Guías' sin licencia que cobran de más"
+    ],
+    "safeTravelTips": [
+     "Evite las carreteras de montaña de noche; en la estación húmeda hay deslizamientos frecuentes.",
+     "Hay cocodrilos marinos; báñese solo donde lo aconsejen los locales.",
+     "Contrate un seguro médico y de evacuación completo; los casos graves se trasladan a Darwin o Bali."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en Dili; 3G/4G en pueblos y carreteras principales, irregular en la montaña.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.25 - 0.50 $ (mikrolet)",
+    "dailyPassUsd": "No hay abono diario",
+    "popularRideApps": [
+     "Minibuses mikrolet",
+     "Taxis amarillos",
+     "4x4 o scooter de alquiler"
+    ],
+    "taxiAdvice": "No hay Uber ni Grab. Un trayecto corto en taxi amarillo sin taxímetro en Dili suele costar 2-5 $; acuérdelo antes. Para el este y la montaña lo más seguro es un 4x4 con conductor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Alto",
+    "flightTip": "Los vuelos a Dili (DIL) son limitados: hay servicios desde Bali (Denpasar), Darwin y Singapur. Desde Europa suele salir más barato conectar en Bali."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Salude con una sonrisa y un apretón de manos; a los mayores y al clero se les muestra especial respeto.",
+     "Cubra hombros y rodillas en iglesias y aldeas.",
+     "No entre en casas sagradas (uma lulik) ni lugares sagrados sin permiso.",
+     "La lucha por la independencia es un tema delicado; escuche más que opine."
+    ],
+    "festivals": [
+     "Día de la Restauración de la Independencia – 20 de mayo",
+     "Día de la Consulta Popular – 30 de agosto",
+     "Carrera ciclista Tour de Timor y Maratón de Dili"
+    ],
+    "lifestyle": "Población joven, fuerte fe católica y estructuras de clan tradicionales (casas uma lulik). La herencia portuguesa se nota en el café y la arquitectura; la indonesia, en la cocina."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Isla de Atauro (una de las mayores diversidades de peces de arrecife)",
+     "Estatua de Cristo Rei (Dili)",
+     "Monte Ramelau (2.986 m, subida al amanecer)",
+     "Isla de Jaco y Parque Nacional Nino Konis Santana",
+     "Museo y Archivo de la Resistencia (Dili)",
+     "Casco antiguo de Baucau"
+    ],
+    "bestSeasons": "Mayo – noviembre (estación seca; ideal para bucear y hacer senderismo)",
+    "travelStyleTip": "La infraestructura turística aún se desarrolla; alojamiento sencillo y carreteras difíciles. Use Dili como base, vaya en barco a Atauro y en 4x4 con conductor al este y la montaña. La migración de ballenas es en octubre – noviembre."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~97 %), pequeñas comunidades protestantes y musulmanas; creencias animistas tradicionales mezcladas con el catolicismo",
+    "respectNorms": "Las misas dominicales están llenas; vista adecuadamente. La isla de Jaco se considera sagrada y nadie pernocta allí.",
+    "sacredSites": [
+     "Cristo Rei (Dili)",
+     "Catedral de la Inmaculada Concepción, Dili",
+     "Estatua de la Virgen en la cima del monte Ramelau"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tetún y portugués; el indonesio y el inglés se usan mucho como lenguas de trabajo",
+    "englishProficiency": "Moderado; en Dili los jóvenes y el sector turístico hablan inglés; en el campo hace falta tetún o indonesio.",
+    "phrases": [
+     {
+      "phrase": "Bondia",
+      "meaning": "Buenos días / Hola",
+      "translation": "Buenos días / Hola",
+      "pronunciation": "bon-DI-a"
+     },
+     {
+      "phrase": "Obrigadu / Obrigada",
+      "meaning": "Gracias (lo dice un hombre / una mujer)",
+      "translation": "Gracias (lo dice un hombre / una mujer)",
+      "pronunciation": "o-bri-GA-du / o-bri-GA-da"
+     },
+     {
+      "phrase": "Favór ida",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "fa-VOR I-da"
+     },
+     {
+      "phrase": "Folin hira?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "FO-lin HI-ra"
+     },
+     {
+      "phrase": "Di'ak ka lae?",
+      "meaning": "¿Cómo estás?",
+      "translation": "¿Cómo estás?",
+      "pronunciation": "di-AK ka LA-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los portugueses llegaron en el siglo XVI y el Timor oriental fue portugués hasta 1975. Tras declararse la independencia el 28 de noviembre de 1975, el país pasó 24 años bajo dominio indonesio. En el referéndum supervisado por la ONU del 30 de agosto de 1999 la población eligió la independencia; tras una breve administración transitoria de la ONU, se restauró el 20 de mayo de 2002. En octubre de 2025 Timor Oriental se convirtió en el 11.º miembro de la ASEAN.",
+    "milestones": [
+     "Siglo XVI – Llegada de los portugueses (Lifau, Oecusse)",
+     "30 de agosto de 1999 – Referéndum de independencia",
+     "20 de mayo de 2002 – Restauración de la independencia",
+     "Octubre de 2025 – Ingreso en la ASEAN"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ikan sabuko (caballa con tamarindo y guindilla)",
+     "Batar da'an (guiso de maíz, frijoles y calabaza)",
+     "Tukir (carne cocinada dentro de bambú)"
+    ],
+    "traditionalDrinks": [
+     "Café timorense (arábica de Ermera)",
+     "Tua mutin (vino de palma)",
+     "Tua sabu (aguardiente de palma)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pescado a la parrilla en la playa (Areia Branca)",
+     "Mazorca asada",
+     "Pastéis de nata y pan de estilo portugués"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Ramos-Horta (Premio Nobel de la Paz 1996)",
+     "Xanana Gusmão (líder independentista, primer presidente)",
+     "Luís Cardoso (novelista)"
+    ],
+    "strongSectors": [
+     "Petróleo y gas (Fondo del Petróleo)",
+     "Exportación de café orgánico",
+     "Buceo y ecoturismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La moneda es el dólar estadounidense; el cambio se da en monedas locales de centavo. Fuera de Dili casi no se aceptan tarjetas y hay pocos cajeros; lleve efectivo en billetes pequeños.",
+    "economicPillars": "Ingresos de petróleo y gas (Fondo del Petróleo), café, agricultura, gasto público y turismo emergente.",
+    "tippingCulture": "No hay tradición de propina; se agradece redondear o dar algo al guía."
+   }
+  },
+  "itin": {
+   "routeName": "Descubre Timor Oriental: Dili, Atauro y el extremo este",
+   "routeSummary": "Ruta de 8 días: historia en Dili y arrecifes de Atauro, la Baucau de aire portugués y final en la sagrada isla de Jaco, en el extremo oriental. Añada 1-2 días para subir al monte Ramelau.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 7-10 días",
+   "bestSeason": "Mayo – noviembre (estación seca; ideal para bucear y hacer senderismo)",
+   "transportMode": "Ferry/lancha a Atauro; 4x4 con conductor hacia el este",
+   "paceLevel": "Aventura (mar, naturaleza e historia)",
+   "stops": [
+    {
+     "name": "Parada 1: Dili e isla de Atauro (historia y arrecifes)",
+     "recommendedDuration": "3-4 Días",
+     "durationBadge": "4 Días",
+     "highlights": [
+      "Estatua de Cristo Rei y playas",
+      "Museo de la Resistencia y exposición Chega!",
+      "Arrecifes de coral de Atauro",
+      "Mercado de tejidos tais"
+     ],
+     "activities": [
+      "Suba los 500 escalones a Cristo Rei al atardecer.",
+      "Haga snorkel o buceo en Atauro y alójese en un ecolodge.",
+      "En octubre – noviembre, haga una salida para ver ballenas y delfines."
+     ],
+     "foodAndDrinks": [
+      "Ikan sabuko",
+      "Café local (cafeterías de Dili)",
+      "Pescado a la brasa en la playa"
+     ],
+     "criticalTips": [
+      "Los horarios de los barcos a Atauro dependen del tiempo; deje un día de margen para volver.",
+      "No deje objetos de valor en el coche en Dili."
+     ],
+     "mapsQuery": "Dili, Timor-Leste",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Baucau (herencia portuguesa y playas)",
+     "recommendedDuration": "1-2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Antiguo mercado portugués (Mercado Municipal)",
+      "Pousada de Baucau",
+      "Playa de Osolata"
+     ],
+     "activities": [
+      "Pasee entre los edificios coloniales.",
+      "Refrésquese en la piscina natural de manantial.",
+      "Baje a la costa y charle con los pescadores."
+     ],
+     "foodAndDrinks": [
+      "Batar da'an",
+      "Cocina luso-timorense en la Pousada"
+     ],
+     "criticalTips": [
+      "El trayecto Dili–Baucau dura 3-4 horas; viaje de día.",
+      "Hay pocos cajeros; traiga suficiente efectivo desde Dili."
+     ],
+     "mapsQuery": "Baucau, Timor-Leste",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Tutuala e isla de Jaco (extremo este)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Arena blanca y agua cristalina de Jaco",
+      "Playa de Valu",
+      "Arte rupestre en la cueva Ile Kére Kére"
+     ],
+     "activities": [
+      "Cruce en barca de pescadores desde la playa de Valu a Jaco para el día.",
+      "Observe aves en el Parque Nacional Nino Konis Santana.",
+      "Camine con guía hasta el arte rupestre."
+     ],
+     "foodAndDrinks": [
+      "Pescado fresco con arroz (en alojamientos comunitarios)",
+      "Tua mutin"
+     ],
+     "criticalTips": [
+      "Jaco es sagrado; no se pernocta ni se deja basura.",
+      "La electricidad y la cobertura son limitadas; lleve batería externa y agua suficiente."
+     ],
+     "mapsQuery": "Jaco Island, Timor-Leste",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ikan sabuko",
+     "Batar da'an",
+     "Tukir"
+    ],
+    "drinks": [
+     "Café timorense",
+     "Tua mutin",
+     "Tua sabu"
+    ],
+    "streetFoods": [
+     "Pescado a la parrilla",
+     "Maíz asado",
+     "Pastel de nata"
+    ],
+    "diningAdvice": "Los platos suelen servirse con arroz, verduras y budu (salsa de tomate, guindilla y lima). No deje de probar el café timorense en las cafeterías de Dili."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo I (australiano)",
+     "Máscara de snorkel y protector solar respetuoso con el arrecife",
+     "Repelente (riesgo de dengue y malaria)",
+     "Chaqueta abrigada para el Ramelau (mucho frío de noche en la cima)"
+    ],
+    "safetyAndEtiquette": [
+     "No entre en casas o lugares sagrados sin permiso.",
+     "No se bañe donde haya avisos de cocodrilos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes mixtos: el tipo I australiano es muy común, con algunos europeos C/E/F. Los enchufes europeos no encajan en todas partes; lleve adaptador tipo I."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es segura; beba agua embotellada o filtrada. Muchos alojamientos tienen puntos de recarga.",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea",
+     "Encefalitis japonesa (estancias rurales largas)",
+     "Vacunas rutinarias y rabia (estancias largas)",
+     "Fiebre amarilla: certificado solo si llega de un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "No hay tradición de propina; en sitios turísticos se agradece algo.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Dejar unos dólares a guías de buceo y conductores al final se agradece."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay devolución de impuestos para turistas",
+    "minSpend": "—",
+    "customsNote": "Timor Oriental no tiene sistema tax-free. No exporte coral, carey ni productos de fauna; si vuela a Australia, revise sus estrictas normas para tais y objetos de madera."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "airportSimTrapWarning": "Hay pocas eSIM internacionales y son caras; en el aeropuerto o en tiendas de Dili se compran SIM locales baratas (Telkomcel, Telemor) con pasaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Precio del taxi",
+     "desc": "Sin taxímetro, a los extranjeros se les puede pedir mucho por trayectos cortos.",
+     "tip": "Sepa que en Dili cuesta unos 2-5 $ y acuérdelo antes."
+    },
+    {
+     "title": "Robos en vehículos",
+     "desc": "Pueden robar bolsos y móviles de coches aparcados en playas y miradores.",
+     "tip": "No deje nada a la vista y, si puede, que alguien se quede en el coche."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Доллар США (USD); местные монеты сентаво",
+   "plugType": "C, E, F, I (220V, 50Hz)",
+   "bestMonths": "Май – ноябрь (сухой сезон; идеально для дайвинга и горных походов)",
+   "safety": {
+    "crimeRateSummary": "Преступность против туристов низкая, но в Дили бывают рывки сумок, кражи из машин и иногда драки между молодёжными группировками и клубами единоборств. Главные риски — плохие дороги, оползни и ограниченная медицина.",
+    "commonScams": [
+     "Таксисты в Дили завышают цену для иностранцев",
+     "Кражи из машин у пляжей и смотровых площадок",
+     "Нелицензированные «гиды» берут слишком много"
+    ],
+    "safeTravelTips": [
+     "Не ездите по горным дорогам ночью; в сезон дождей часты оползни.",
+     "Встречаются гребнистые крокодилы; купайтесь только там, где советуют местные.",
+     "Оформите полную страховку с эвакуацией; тяжёлых пациентов везут в Дарвин или на Бали."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "В Дили хороший 4G; в городах и вдоль трасс 3G/4G, в горах — с перебоями.",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Ограничено",
+    "bestCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Базовое",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "0.25 - 0.50 $ (mikrolet)",
+    "dailyPassUsd": "Проездных нет",
+    "popularRideApps": [
+     "Маршрутки микролет",
+     "Жёлтые такси",
+     "Аренда внедорожника / скутера"
+    ],
+    "taxiAdvice": "Uber и Grab нет. Короткая поездка на жёлтом такси без счётчика по Дили обычно стоит 2-5 $; договаривайтесь заранее. На восток и в горы безопаснее всего на внедорожнике с водителем."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Высокий",
+    "flightTip": "Рейсов в Дили (DIL) мало: летают из Бали (Денпасар), Дарвина и Сингапура. Обычно выгоднее всего лететь с пересадкой на Бали."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Здороваясь, улыбайтесь и пожимайте руку; к старшим и священникам относятся с особым уважением.",
+     "В церквях и деревнях закрывайте плечи и колени.",
+     "Не входите в священные дома (ума лулик) и святые места без разрешения.",
+     "Борьба за независимость — чувствительная тема; лучше слушать, чем комментировать."
+    ],
+    "festivals": [
+     "День восстановления независимости — 20 мая",
+     "День референдума — 30 августа",
+     "Велогонка Tour de Timor и Марафон Дили"
+    ],
+    "lifestyle": "Молодое население, крепкая католическая вера и традиционный клановый уклад (дома ума лулик). Португальское наследие видно в кофейной культуре и архитектуре, индонезийское — в кухне."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Остров Атауро (одно из богатейших в мире разнообразий рифовых рыб)",
+     "Статуя Кришту-Рей (Дили)",
+     "Гора Рамелау (2986 м, восхождение к рассвету)",
+     "Остров Жаку и национальный парк Нину-Конис-Сантана",
+     "Музей и архив Сопротивления (Дили)",
+     "Старый город Баукау"
+    ],
+    "bestSeasons": "Май – ноябрь (сухой сезон; идеально для дайвинга и горных походов)",
+    "travelStyleTip": "Туристическая инфраструктура только развивается: жильё простое, дороги тяжёлые. Лучше жить в Дили, на Атауро плыть на лодке, а на восток и в горы ехать на внедорожнике с водителем. Миграция китов — октябрь – ноябрь."
+   },
+   "religion": {
+    "primaryReligions": "Католики (~97 %), небольшие протестантская и мусульманская общины; традиционный анимизм переплетён с католичеством",
+    "respectNorms": "Воскресные мессы многолюдны; одевайтесь соответствующе. Остров Жаку считается священным, ночевать там нельзя.",
+    "sacredSites": [
+     "Кришту-Рей (Дили)",
+     "Собор Непорочного Зачатия, Дили",
+     "Статуя Девы Марии на вершине горы Рамелау"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Тетум и португальский; индонезийский и английский широко используются как рабочие",
+    "englishProficiency": "Средний; в Дили молодёжь и работники туризма говорят по-английски, в сёлах нужен тетум или индонезийский.",
+    "phrases": [
+     {
+      "phrase": "Bondia",
+      "meaning": "Доброе утро / Здравствуйте",
+      "translation": "Доброе утро / Здравствуйте",
+      "pronunciation": "bon-DI-a"
+     },
+     {
+      "phrase": "Obrigadu / Obrigada",
+      "meaning": "Спасибо (говорит мужчина / женщина)",
+      "translation": "Спасибо (говорит мужчина / женщина)",
+      "pronunciation": "o-bri-GA-du / o-bri-GA-da"
+     },
+     {
+      "phrase": "Favór ida",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "fa-VOR I-da"
+     },
+     {
+      "phrase": "Folin hira?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "FO-lin HI-ra"
+     },
+     {
+      "phrase": "Di'ak ka lae?",
+      "meaning": "Как дела?",
+      "translation": "Как дела?",
+      "pronunciation": "di-AK ka LA-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Португальцы появились в XVI веке, и восточный Тимор оставался португальским до 1975 года. После провозглашения независимости 28 ноября 1975 года страна 24 года находилась под властью Индонезии. На референдуме под контролем ООН 30 августа 1999 года народ выбрал независимость; после короткого переходного управления ООН она была восстановлена 20 мая 2002 года. В октябре 2025 года Тимор-Лесте стал 11-м членом АСЕАН.",
+    "milestones": [
+     "XVI в. — прибытие португальцев (Лифау, Окуси)",
+     "30 августа 1999 — референдум о независимости",
+     "20 мая 2002 — восстановление независимости",
+     "Октябрь 2025 — вступление в АСЕАН"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Икан сабуко (макрель с тамариндом и чили)",
+     "Батар даан (рагу из кукурузы, фасоли и тыквы)",
+     "Тукир (мясо, приготовленное в бамбуке)"
+    ],
+    "traditionalDrinks": [
+     "Тиморский кофе (арабика из Эрмеры)",
+     "Туа мутин (пальмовое вино)",
+     "Туа сабу (дистиллированный пальмовый напиток)"
+    ],
+    "streetFoodAndDesserts": [
+     "Рыба на гриле у пляжа (Арея-Бранка)",
+     "Печёная кукуруза",
+     "Пирожные паштел-де-ната и хлеб по-португальски"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Жозе Рамуш-Ориа (Нобелевская премия мира 1996)",
+     "Шанана Гужмау (лидер борьбы за независимость, первый президент)",
+     "Луиш Кардозу (писатель)"
+    ],
+    "strongSectors": [
+     "Нефть и газ (Нефтяной фонд)",
+     "Экспорт органического кофе",
+     "Дайвинг и экотуризм"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Валюта — доллар США; сдачу дают местными монетами сентаво. За пределами Дили карты почти не принимают и банкоматов мало; берите наличные мелкими купюрами.",
+    "economicPillars": "Доходы от нефти и газа (Нефтяной фонд), кофе, сельское хозяйство, госрасходы и развивающийся туризм.",
+    "tippingCulture": "Чаевые не приняты; округлить сумму или дать немного гиду — приятно."
+   }
+  },
+  "itin": {
+   "routeName": "Открытие Тимор-Лесте: Дили, Атауро и крайний восток",
+   "routeSummary": "8-дневный маршрут: история Дили и коралловые рифы Атауро, затем Баукау с португальским колоритом и священный остров Жаку на восточной оконечности. Для восхождения на Рамелау добавьте 1-2 дня.",
+   "totalDays": 8,
+   "idealDurationText": "Маршрут на 7-10 дней",
+   "bestSeason": "Май – ноябрь (сухой сезон; идеально для дайвинга и горных походов)",
+   "transportMode": "Паром/скоростная лодка на Атауро; внедорожник с водителем на восток",
+   "paceLevel": "Приключенческий (море, природа и история)",
+   "stops": [
+    {
+     "name": "Остановка 1: Дили и остров Атауро (история и рифы)",
+     "recommendedDuration": "3-4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Статуя Кришту-Рей и пляжи",
+      "Музей Сопротивления и выставка Chega!",
+      "Коралловые рифы Атауро",
+      "Рынок тканей таис"
+     ],
+     "activities": [
+      "Поднимитесь на закате по 500 ступеням к Кришту-Рей.",
+      "Снорклинг или дайвинг на Атауро с ночёвкой в эко-лодже.",
+      "В октябре – ноябре сходите посмотреть китов и дельфинов."
+     ],
+     "foodAndDrinks": [
+      "Икан сабуко",
+      "Местный кофе (кафе Дили)",
+      "Рыба на гриле у моря"
+     ],
+     "criticalTips": [
+      "Расписание лодок на Атауро зависит от погоды; оставьте запасной день на возвращение.",
+      "Не оставляйте ценности в машине в Дили."
+     ],
+     "mapsQuery": "Dili, Timor-Leste",
+     "stopNumber": 1
+    },
+    {
+     "name": "Остановка 2: Баукау (португальское наследие и пляжи)",
+     "recommendedDuration": "1-2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Старый португальский рынок (Меркаду Мунисипал)",
+      "Поузада-де-Баукау",
+      "Пляж Осолата"
+     ],
+     "activities": [
+      "Прогуляйтесь среди зданий колониальной эпохи.",
+      "Освежитесь в природном бассейне с родниковой водой.",
+      "Спуститесь к побережью и пообщайтесь с рыбаками."
+     ],
+     "foodAndDrinks": [
+      "Батар даан",
+      "Португальско-тиморская кухня в Поузаде"
+     ],
+     "criticalTips": [
+      "Дорога Дили–Баукау занимает 3-4 часа; езжайте днём.",
+      "Банкоматов мало; возьмите достаточно наличных в Дили."
+     ],
+     "mapsQuery": "Baucau, Timor-Leste",
+     "stopNumber": 2
+    },
+    {
+     "name": "Остановка 3: Тутуала и остров Жаку (восточная оконечность)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Белый песок и прозрачная вода острова Жаку",
+      "Пляж Валу",
+      "Наскальные рисунки в пещере Иле-Кере-Кере"
+     ],
+     "activities": [
+      "Переправьтесь на рыбацкой лодке с пляжа Валу на Жаку на день.",
+      "Понаблюдайте за птицами в нацпарке Нину-Конис-Сантана.",
+      "Сходите с гидом к наскальным рисункам."
+     ],
+     "foodAndDrinks": [
+      "Свежая рыба с рисом (в общинных гостевых домах)",
+      "Туа мутин"
+     ],
+     "criticalTips": [
+      "Жаку священен: ночевать нельзя, мусор не оставляйте.",
+      "Электричество и связь ограничены; берите пауэрбанк и достаточно воды."
+     ],
+     "mapsQuery": "Jaco Island, Timor-Leste",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Икан сабуко",
+     "Батар даан",
+     "Тукир"
+    ],
+    "drinks": [
+     "Тиморский кофе",
+     "Туа мутин",
+     "Туа сабу"
+    ],
+    "streetFoods": [
+     "Рыба на гриле",
+     "Печёная кукуруза",
+     "Паштел-де-ната"
+    ],
+    "diningAdvice": "Блюда обычно подают с рисом, овощами и соусом буду (помидоры, чили, лайм). Обязательно попробуйте тиморский кофе в маленьких кафе Дили."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник типа I (австралийский)",
+     "Маска для снорклинга и безопасный для рифов крем",
+     "Репеллент (риск денге и малярии)",
+     "Тёплая куртка для Рамелау (ночью на вершине очень холодно)"
+    ],
+    "safetyAndEtiquette": [
+     "Не входите в священные дома и места без разрешения.",
+     "Не купайтесь там, где предупреждают о крокодилах."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки разные: очень распространён австралийский тип I, встречаются и европейские C/E/F. Европейские вилки подходят не везде; возьмите переходник типа I."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода небезопасна; пейте бутилированную или фильтрованную. Во многих гостиницах есть станции для наполнения бутылок.",
+    "vaccines": [
+     "Гепатит A и брюшной тиф",
+     "Японский энцефалит (долгое пребывание в сельской местности)",
+     "Плановые прививки и бешенство (долгое пребывание)",
+     "Жёлтая лихорадка: сертификат только при въезде из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "Чаевые не приняты; в туристических заведениях небольшие суммы ценятся.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Несколько долларов гидам-дайверам и водителям в конце будут кстати."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата налогов для туристов нет",
+    "minSpend": "—",
+    "customsNote": "В Тимор-Лесте нет системы tax-free. Не вывозите кораллы, черепаховый панцирь и изделия из диких животных; при полёте в Австралию проверьте её строгие правила для таис и деревянных изделий."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "airportSimTrapWarning": "Международных eSIM мало и они дорогие; дешёвую местную SIM (Telkomcel, Telemor) можно купить по паспорту в аэропорту или в Дили."
+   },
+   "touristScams": [
+    {
+     "title": "Цены на такси",
+     "desc": "Без счётчиков иностранцам могут назвать высокую цену за короткую поездку.",
+     "tip": "Знайте, что по Дили поездка стоит около 2-5 $, и договаривайтесь заранее."
+    },
+    {
+     "title": "Кражи из машин",
+     "desc": "Из машин у пляжей и смотровых площадок воруют сумки и телефоны.",
+     "tip": "Ничего не оставляйте на виду и по возможности не оставляйте машину без присмотра."
+    }
+   ]
+  }
+ }
+}
