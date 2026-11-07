@@ -42,11 +42,10 @@
     "singleTicketUsd": "0.20 - 0.50 $",
     "dailyPassUsd": "Yok; şehirlerarası louage (paylaşımlı minibüs) Tunus – Sousse ~4 - 6 $",
     "popularRideApps": [
-     "Bolt",
-     "inDrive",
-     "Yassir"
+     "Yassir",
+     "Sarı taksi (taksimetreli)"
     ],
-    "taxiAdvice": "Sarı şehir taksileri ucuzdur; binerken taksimetreyi (compteur) açtırın. Şehirlerarası en hızlı yol, dolunca hareket eden paylaşımlı louage'lardır. Bolt ve inDrive Tunus'ta yaygındır."
+    "taxiAdvice": "Sarı şehir taksileri ucuzdur; binerken taksimetreyi (compteur) açtırın. Şehirlerarası en hızlı yol, dolunca hareket eden paylaşımlı louage'lardır. Tunus 2025'te araç çağırma uygulamalarını kısıtladı; Bolt ülkeden çekildi, şu an en çok Yassir çalışıyor (özellikle Tunus şehrinde)."
    },
    "livingCosts": {
     "dailyBudgetBackpackerUsd": "25 - 45 $",
@@ -376,7 +375,7 @@
     {
      "title": "Taksimetresiz sarı taksi",
      "desc": "Sarı taksilerin özellikle havalimanında taksimetreyi açmaması.",
-     "tip": "Binmeden önce taksimetrenin açılmasını isteyin veya Bolt kullanın."
+     "tip": "Binmeden önce taksimetrenin açılmasını isteyin veya Yassir uygulamasını kullanın."
     },
     {
      "title": "Sidi Bou Said yasemin tuzağı",
@@ -429,11 +428,10 @@
     "singleTicketUsd": "0.20 - 0.50 $",
     "dailyPassUsd": "None; intercity louage (shared minibus) Tunis – Sousse ~4 - 6 $",
     "popularRideApps": [
-     "Bolt",
-     "inDrive",
-     "Yassir"
+     "Yassir",
+     "Yellow metered taxi"
     ],
-    "taxiAdvice": "Yellow city taxis are cheap; ask for the meter (compteur) when you get in. Between cities the fastest option is the shared louage, which leaves when full. Bolt and inDrive are common in Tunis."
+    "taxiAdvice": "Yellow city taxis are cheap; ask for the meter (compteur) when you get in. Between cities the fastest option is the shared louage, which leaves when full. Tunisia restricted ride-hailing apps in 2025 and Bolt has left the country; Yassir is the main app still working (mostly in Greater Tunis)."
    },
    "livingCosts": {
     "dailyBudgetBackpackerUsd": "25 - 45 $",
@@ -763,7 +761,7 @@
     {
      "title": "Yellow taxis without meters",
      "desc": "Yellow taxis do not switch on the meter, especially at the airport.",
-     "tip": "Ask for the meter before getting in or use Bolt."
+     "tip": "Ask for the meter before getting in or use the Yassir app."
     },
     {
      "title": "Sidi Bou Said jasmine trap",
@@ -816,11 +814,10 @@
     "singleTicketUsd": "0.20 - 0.50 $",
     "dailyPassUsd": "Keine; Louage (Sammelminibus) Tunis – Sousse ~4 - 6 $",
     "popularRideApps": [
-     "Bolt",
-     "inDrive",
-     "Yassir"
+     "Yassir",
+     "Gelbes Taxi mit Taxameter"
     ],
-    "taxiAdvice": "Gelbe Stadttaxis sind günstig; beim Einsteigen das Taxameter (compteur) verlangen. Zwischen Städten sind Sammel-Louages am schnellsten – sie fahren ab, wenn sie voll sind. In Tunis sind Bolt und inDrive verbreitet."
+    "taxiAdvice": "Gelbe Stadttaxis sind günstig; beim Einsteigen das Taxameter (compteur) verlangen. Zwischen Städten sind Sammel-Louages am schnellsten – sie fahren ab, wenn sie voll sind. Tunesien hat Fahrdienst-Apps 2025 eingeschränkt, Bolt hat sich zurückgezogen; vor allem Yassir funktioniert noch (meist im Großraum Tunis)."
    },
    "livingCosts": {
     "dailyBudgetBackpackerUsd": "25 - 45 $",
@@ -1150,7 +1147,7 @@
     {
      "title": "Gelbe Taxis ohne Taxameter",
      "desc": "Gelbe Taxis schalten vor allem am Flughafen das Taxameter nicht ein.",
-     "tip": "Vor dem Einsteigen das Taxameter verlangen oder Bolt nutzen."
+     "tip": "Vor dem Einsteigen das Taxameter verlangen oder die App Yassir nutzen."
     },
     {
      "title": "Jasminfalle in Sidi Bou Said",
@@ -1203,11 +1200,10 @@
     "singleTicketUsd": "0.20 - 0.50 $",
     "dailyPassUsd": "No hay; louage (minibús compartido) Túnez – Susa ~4 - 6 $",
     "popularRideApps": [
-     "Bolt",
-     "inDrive",
-     "Yassir"
+     "Yassir",
+     "Taxi amarillo con taxímetro"
     ],
-    "taxiAdvice": "Los taxis amarillos urbanos son baratos; pide el taxímetro (compteur) al subir. Entre ciudades lo más rápido es el louage compartido, que sale cuando se llena. Bolt e inDrive son habituales en Túnez."
+    "taxiAdvice": "Los taxis amarillos urbanos son baratos; pide el taxímetro (compteur) al subir. Entre ciudades lo más rápido es el louage compartido, que sale cuando se llena. Túnez restringió las apps de VTC en 2025 y Bolt dejó el país; la principal que sigue funcionando es Yassir (sobre todo en el Gran Túnez)."
    },
    "livingCosts": {
     "dailyBudgetBackpackerUsd": "25 - 45 $",
@@ -1537,7 +1533,7 @@
     {
      "title": "Taxis amarillos sin taxímetro",
      "desc": "Taxis amarillos que no encienden el taxímetro, sobre todo en el aeropuerto.",
-     "tip": "Pida el taxímetro antes de subir o use Bolt."
+     "tip": "Pida el taxímetro antes de subir o use la app Yassir."
     },
     {
      "title": "Trampa del jazmín en Sidi Bou Said",
@@ -1590,11 +1586,10 @@
     "singleTicketUsd": "0.20 - 0.50 $",
     "dailyPassUsd": "Нет; луаж (маршрутка) Тунис – Сус ~4 - 6 $",
     "popularRideApps": [
-     "Bolt",
-     "inDrive",
-     "Yassir"
+     "Yassir",
+     "Жёлтое такси со счётчиком"
     ],
-    "taxiAdvice": "Жёлтые городские такси дешёвые; при посадке просите включить счётчик (compteur). Между городами быстрее всего общий луаж, который отправляется, когда заполнится. В Тунисе распространены Bolt и inDrive."
+    "taxiAdvice": "Жёлтые городские такси дешёвые; при посадке просите включить счётчик (compteur). Между городами быстрее всего общий луаж, который отправляется, когда заполнится. В 2025 году Тунис ограничил приложения такси, Bolt ушёл из страны; сейчас в основном работает Yassir (прежде всего в столичном регионе)."
    },
    "livingCosts": {
     "dailyBudgetBackpackerUsd": "25 - 45 $",
@@ -1924,7 +1919,7 @@
     {
      "title": "Жёлтые такси без счётчика",
      "desc": "Жёлтые такси, особенно в аэропорту, не включают счётчик.",
-     "tip": "Требуйте включить счётчик до посадки или пользуйтесь Bolt."
+     "tip": "Требуйте включить счётчик до посадки или пользуйтесь приложением Yassir."
     },
     {
      "title": "Жасмин в Сиди-Бу-Саиде",

@@ -124,9 +124,9 @@
     "note": "Kafe ve taksilerde hesabı yuvarlamak yeterlidir."
    },
    "taxFree": {
-    "vatRefundPercent": "Yok (KDV %17, turiste iade sistemi yok)",
-    "minSpend": "—",
-    "customsNote": "Bosna-Hersek’te turistlere KDV iadesi uygulanmaz; alışveriş fiyatlarına KDV dahildir."
+    "vatRefundPercent": "%17 KDV (yurt dışına çıkarılan mallar için turiste iade edilir)",
+    "minSpend": "Fatura başına 200 BAM (Ağustos 2025’ten beri)",
+    "customsNote": "Mağazadan KDV iade formu isteyin; ülkeden çıkarken malları ve faturayı gümrüğe gösterip formu onaylatın. Akaryakıt, alkol ve tütün iade kapsamında değildir."
    },
    "connectivity": {
     "esimRecommended": true,
@@ -277,9 +277,9 @@
     "note": "Rounding up is enough in cafés and taxis."
    },
    "taxFree": {
-    "vatRefundPercent": "None (17% VAT, no tourist refund scheme)",
-    "minSpend": "—",
-    "customsNote": "Bosnia and Herzegovina does not refund VAT to tourists; prices already include VAT."
+    "vatRefundPercent": "17% VAT (refunded to non-residents on goods taken out of the country)",
+    "minSpend": "BAM 200 per invoice (since August 2025)",
+    "customsNote": "Ask the shop for a VAT refund form and have it certified by customs on exit, showing the goods and invoice. Fuel, alcohol and tobacco are excluded."
    },
    "connectivity": {
     "esimRecommended": true,
@@ -430,9 +430,9 @@
     "note": "In Cafés und Taxis reicht Aufrunden."
    },
    "taxFree": {
-    "vatRefundPercent": "Keine (17 % MwSt., keine Touristenerstattung)",
-    "minSpend": "—",
-    "customsNote": "Bosnien und Herzegowina erstattet Touristen keine Mehrwertsteuer; die Preise enthalten bereits MwSt."
+    "vatRefundPercent": "17 % MwSt. (Erstattung für Nicht-Ansässige bei Ausfuhr der Waren)",
+    "minSpend": "200 BAM pro Rechnung (seit August 2025)",
+    "customsNote": "Im Geschäft ein MwSt.-Erstattungsformular verlangen und bei der Ausreise mit Ware und Rechnung vom Zoll bestätigen lassen. Kraftstoff, Alkohol und Tabak sind ausgenommen."
    },
    "connectivity": {
     "esimRecommended": true,
@@ -583,9 +583,9 @@
     "note": "En cafeterías y taxis basta con redondear."
    },
    "taxFree": {
-    "vatRefundPercent": "No hay (IVA del 17 %, sin devolución a turistas)",
-    "minSpend": "—",
-    "customsNote": "Bosnia y Herzegovina no devuelve el IVA a los turistas; los precios ya lo incluyen."
+    "vatRefundPercent": "IVA del 17 % (se devuelve a no residentes por bienes que salen del país)",
+    "minSpend": "200 BAM por factura (desde agosto de 2025)",
+    "customsNote": "Pida en la tienda el formulario de devolución del IVA y hágalo sellar en la aduana al salir, mostrando la mercancía y la factura. Combustible, alcohol y tabaco quedan excluidos."
    },
    "connectivity": {
     "esimRecommended": true,
@@ -736,9 +736,9 @@
     "note": "В кафе и такси достаточно округлить сумму."
    },
    "taxFree": {
-    "vatRefundPercent": "Нет (НДС 17 %, возврата для туристов нет)",
-    "minSpend": "—",
-    "customsNote": "В Боснии и Герцеговине туристам НДС не возвращают; он уже включён в цены."
+    "vatRefundPercent": "НДС 17% (возвращается нерезидентам за вывозимые товары)",
+    "minSpend": "200 BAM на один чек (с августа 2025 года)",
+    "customsNote": "Попросите в магазине форму возврата НДС и заверьте её на таможне при выезде, предъявив товар и чек. Топливо, алкоголь и табак не возмещаются."
    },
    "connectivity": {
     "esimRecommended": true,
