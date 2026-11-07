@@ -156,6 +156,10 @@
     {
       "path": "/api/keepalive",
       "schedule": "17 6 * * *"
+    },
+    {
+      "path": "/api/alerts?a=run",
+      "schedule": "41 7 * * *"
     }
   ]
 }

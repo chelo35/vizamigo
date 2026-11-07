@@ -81,7 +81,8 @@ async function main() {
     SUBST[l] = makeSubstTranslator(DICTS[l], await buildExtras(l));
   }
   const trOut = (lang: string, html: string) => (SUBST[lang] ? SUBST[lang](html) : html);
-  const { getCountryName, countryToRegion, getRegionName } = await import('../src/data/passportData');
+  const { getCountryName, countryToRegion, getRegionName, getCategoryBadgeLabel } = await import('../src/data/passportData');
+  const { getPassportItems } = await import('../src/utils/calculator');
   const { getCountrySeoMeta } = await import('../src/utils/schemaGenerator');
   const { buildLocalizedPath, buildAbsoluteLocalizedUrl, getHreflangAlternatesForRoute, CORE_SEO_LANGUAGES, BASE_URL } = await import('../src/utils/seoRouter');
   const { getTabSeo } = await import('../src/utils/tabSeo');
@@ -162,7 +163,7 @@ async function main() {
       // ülkeye özel paylaşım görseli (sosyal medyada ve aramada daha çok tıklanır)
       html = html.replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${ogImage}$2`);
       html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${ogImage}$2`);
-      html = html.replace(/\s*<meta property="og:image:(width|height)" content="[^"]*" \/>/g, '');
+      if (!ogImage.includes('/api/og')) html = html.replace(/\s*<meta property="og:image:(width|height)" content="[^"]*" \/>/g, '');
       if (ogAlt) html = html.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, `$1${esc(ogAlt)}$2`);
     }
     if (lang !== 'tr') {
@@ -383,7 +384,15 @@ async function main() {
         alts: passPage ? [{ hreflang: lang, href: BASE_URL + relPath }] : getHreflangAlternatesForRoute('explore', code),
         title: meta.title,
         desc: meta.description,
-        ogImage: BASE_URL + getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 }),
+        ogImage: (() => {
+          // ülkeye özel paylaşım görseli: fotoğraf + bayrak + bu pasaportla vize durumu
+          const it = getPassportItems(pass).find((x) => x.c === code);
+          const P = getCountryName(pass, lang);
+          const sub = ({ tr: `${P} pasaportuyla · 2026`, en: `With a ${P} passport · 2026`, de: `Mit Pass aus ${P} · 2026`, es: `Con pasaporte de ${P} · 2026`, ru: `Паспорт: ${P} · 2026` } as Record<string, string>)[lang];
+          const tone = !it ? 'sea' : it.id || it.cat === 'free' ? 'ok' : it.cat === 'visa' ? 'warn' : 'sun';
+          const q = new URLSearchParams({ c: code, t: name, b: getCategoryBadgeLabel(it as never, lang), s: sub, tone, v: '1' });
+          return `${BASE_URL}/api/og?${q.toString()}`;
+        })(),
         ogAlt: [name, getCountryVisual(code, lang).landmark].filter(Boolean).join(': '),
         head: `<script type="application/ld+json" id="vizamigo-jsonld-schema" data-code="${code}" data-lang="${lang}" data-pass="${pass}">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.country}\n    <link rel="preload" as="image" fetchpriority="high" imagesrcset="${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 480 })} 480w, ${getOptimizedImageUrl(getCountryVisual(code, lang).image, { width: 720 })} 720w" imagesizes="100vw" />`,
         // uygulamanın ülke başlığıyla aynı ölçüde fotoğraflı başlık: ilk boyama erken, kayma yok

@@ -16,6 +16,8 @@ import { loadCountryBundle, CountryBundle } from './countryData';
 import { getCountryName, INFO } from '../data/passportData';
 import { PartnerLogo } from './PartnerLogo';
 import { ShareMenu } from './ShareMenu';
+import { FollowCountry } from './FollowCountry';
+import { TripChecklist, buildChecklist } from './TripChecklist';
 import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
 import { OfferCard } from './OfferCard';
 import { tpIdFromUrl } from '../data/tpPartners';
@@ -226,7 +228,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           },
           { h: `${l('Önerilen rota', 'Suggested itinerary', 'Empfohlene Route', 'Itinerario', 'Маршрут')}: ${itin.routeName || ''}`, items: itin.stops.map((st) => `${st.name.replace(/^[^:]{1,20}:\s*/, '')} (${st.durationBadge || st.recommendedDuration})`) },
           { h: l('Mutlaka görülecek yerler', 'Must-see places', 'Sehenswürdigkeiten', 'Imprescindibles', 'Что посмотреть'), items: (enc.tourism?.mustSeePlaces || []).slice(0, 8) },
-          { h: l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать'), items: (insights.safety?.safeTravelTips || []).slice(0, 5) }
+          { h: l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать'), items: (insights.safety?.safeTravelTips || []).slice(0, 5) },
+          { h: l('Hazırlık listesi', 'Trip checklist', 'Reise-Checkliste', 'Lista de preparación', 'Чек-лист поездки'), items: checklist.map((x) => `☐ ${x.title}${x.sub ? ` – ${x.sub}` : ''}`) }
         ]
       });
     } catch {
@@ -265,7 +268,30 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const NumRow: React.FC<{ label: string; num?: string | null; icon: string }> = ({ label, num, icon }) =>
     num ? <Row icon={icon} title={label} right={<a className="vz-btn vz-btn-soft sm" href={`tel:${num.replace(/[^\d+]/g, '')}`}>{num}</a>} /> : null;
 
+  const checklist = buildChecklist({
+    l,
+    name,
+    nameEn: getCountryName(code, 'en'),
+    visaCat: item?.cat,
+    idCard: !!item?.id,
+    needsAdapter,
+    plugs: intel.plugs.types.join(', '),
+    currency: insights.currency,
+    cashTip: enc.economy?.paymentCulture,
+    police: insights.safety?.emergencyNumbers?.police,
+    ambulance: insights.safety?.emergencyNumbers?.ambulance,
+    advisoryMax: official?.max ?? null,
+    tapWaterSafe: intel.waterAndHealth?.tapWaterSafe,
+    vaccines: intel.waterAndHealth?.vaccines
+  });
+
   const tiles: Tile[] = [
+    {
+      id: 'prep', icon: 'check',
+      title: l('Hazırlık listesi', 'Trip checklist', 'Reise-Checkliste', 'Lista de preparación', 'Чек-лист поездки'),
+      desc: l('Vize, sigorta, eSIM, priz, para', 'Visa, insurance, eSIM, plugs, money', 'Visum, Versicherung, eSIM, Stecker', 'Visado, seguro, eSIM, enchufes', 'Виза, страховка, eSIM, розетки'),
+      render: () => <TripChecklist code={code} passport={passport} items={checklist} />
+    },
     {
       id: 'visa', icon: 'shield',
       title: l('Vize & güvenlik', 'Visa & safety', 'Visum & Sicherheit', 'Visado y seguridad', 'Виза и безопасность'),
@@ -750,6 +776,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           <Btn variant="soft" icon="download" onClick={makePdf} disabled={pdfBusy}>{pdfBusy ? l('PDF hazırlanıyor…', 'Preparing PDF…', 'PDF wird erstellt…', 'Preparando PDF…', 'Готовим PDF…') : l('PDF indir', 'Download PDF', 'PDF herunterladen', 'Descargar PDF', 'Скачать PDF')}</Btn>
           <Btn variant="ghost" icon="flag" onClick={() => onReport(code, name)}>{l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar', 'Сообщить')}</Btn>
         </div>
+        <FollowCountry code={code} name={name} passport={passport} />
 
         <section className="vz-home-sec">
           <SecHead
