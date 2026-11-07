@@ -320,6 +320,65 @@
      "Ramazan'da gündüz kamusal alanda yiyip içmeyin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G priz (üç dikdörtgen uçlu); Türk fişleri takılmaz, G tipi adaptör alın. Eski binalarda D tipi prizler de görülebilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Arıtma ile elde edilen şebeke suyu standartlara uygundur ve içilebilir; yine de yerel halk çoğunlukla şişe su tercih eder.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 civarı bahşiş yaygındır (bazıları servis ücreti ekler); taksilerde hesabı yuvarlamak yeterlidir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Hesapta servis ücreti varsa ek bahşiş gerekmez; otel ve vale görevlilerine 5–10 QAR yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Yok",
+    "customsNote": "Katar’da KDV uygulanmadığı için turist vergi iadesi de yoktur. Ülkeye alkol ve domuz ürünü sokmak yasaktır; Hamad Havalimanı’nda gümrüksüz alışveriş yapılabilir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "airportSimTrapWarning": "Hamad Havalimanı’ndaki Ooredoo ve Vodafone stantlarında resmî “Visitor” paketleri satılır; fiyat makuldür ama önceden kurulan bir eSIM daha ucuz olabilir. Hat almak için pasaport gerekir."
+   },
+   "touristScams": [
+    {
+     "title": "Souq Waqif fiyatları",
+     "desc": "Pazarlık yapmayan turistlere hediyelik eşyaların kat kat pahalı satılması.",
+     "tip": "Birkaç dükkânda fiyat sorun ve pazarlık yapın; söylenen ilk fiyatın yarısından başlayın."
+    },
+    {
+     "title": "Ruhsatsız “limuzin”",
+     "desc": "Havalimanı ve otel çıkışlarında ruhsatsız araçların sabit, yüksek fiyat teklif etmesi.",
+     "tip": "Mowasalat (Karwa) taksi, Uber veya Careem kullanın; Doha Metrosu havalimanına bağlanır."
+    },
+    {
+     "title": "Oltalama mesajları",
+     "desc": "Banka, kargo veya trafik cezası adına gelen sahte SMS/WhatsApp mesajları.",
+     "tip": "Bağlantılara tıklamayın; cezaları yalnızca resmî Metrash uygulamasından kontrol edin."
+    }
+   ]
   }
  },
  "en": {
@@ -643,6 +702,65 @@
      "Do not eat or drink in public by day during Ramadan."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British-style Type G sockets (three rectangular pins); Turkish plugs do not fit, bring a Type G adapter. Older buildings may also have Type D sockets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Desalinated tap water meets safety standards and is drinkable, although most residents still prefer bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Around 10% is common in restaurants (some include a service charge); rounding up is enough in taxis.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "If a service charge is included no extra tip is needed; QAR 5–10 is enough for hotel and valet staff."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "None",
+    "customsNote": "Qatar has no VAT, so there is no tourist tax refund. Importing alcohol and pork products is banned; duty-free shopping is available at Hamad Airport."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "airportSimTrapWarning": "Ooredoo and Vodafone counters at Hamad Airport sell official “Visitor” packs at fair prices, but an eSIM installed beforehand can be cheaper. A passport is required for a SIM."
+   },
+   "touristScams": [
+    {
+     "title": "Souq Waqif prices",
+     "desc": "Souvenirs are sold at inflated prices to tourists who do not haggle.",
+     "tip": "Compare a few shops and bargain, starting at about half the first price."
+    },
+    {
+     "title": "Unlicensed “limousines”",
+     "desc": "Unlicensed cars outside the airport and hotels offer high flat fares.",
+     "tip": "Use Mowasalat (Karwa) taxis, Uber or Careem; the Doha Metro also serves the airport."
+    },
+    {
+     "title": "Phishing messages",
+     "desc": "Fake SMS/WhatsApp messages posing as banks, couriers or traffic fines.",
+     "tip": "Do not click links; check fines only in the official Metrash app."
+    }
+   ]
   }
  },
  "de": {
@@ -966,6 +1084,65 @@
      "Im Ramadan tagsüber nicht in der Öffentlichkeit essen oder trinken."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G (drei rechteckige Stifte); türkische Stecker passen nicht, Adapter Typ G mitnehmen. In älteren Gebäuden gibt es auch Steckdosen Typ D."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Entsalztes Leitungswasser erfüllt die Standards und ist trinkbar, auch wenn die meisten Einwohner Flaschenwasser bevorzugen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Etwa 10 % sind in Restaurants üblich (manche schlagen Service auf); im Taxi reicht Aufrunden.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Ist Service enthalten, ist kein Trinkgeld nötig; 5–10 QAR reichen für Hotel- und Parkpersonal."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Keine",
+    "customsNote": "Katar erhebt keine Mehrwertsteuer, daher gibt es keine Steuererstattung für Touristen. Die Einfuhr von Alkohol und Schweinefleisch ist verboten; am Flughafen Hamad kann zollfrei eingekauft werden."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "airportSimTrapWarning": "Die Stände von Ooredoo und Vodafone am Flughafen Hamad verkaufen offizielle „Visitor“-Pakete zu fairen Preisen, eine vorab installierte eSIM kann aber günstiger sein. Für eine SIM wird der Pass benötigt."
+   },
+   "touristScams": [
+    {
+     "title": "Preise im Souq Waqif",
+     "desc": "Souvenirs werden Touristen, die nicht handeln, überteuert verkauft.",
+     "tip": "Mehrere Läden vergleichen und handeln, bei etwa der Hälfte des ersten Preises beginnen."
+    },
+    {
+     "title": "Unlizenzierte „Limousinen“",
+     "desc": "Vor Flughafen und Hotels bieten unlizenzierte Wagen hohe Pauschalpreise an.",
+     "tip": "Mowasalat-(Karwa-)Taxis, Uber oder Careem nutzen; die Doha Metro fährt auch zum Flughafen."
+    },
+    {
+     "title": "Phishing-Nachrichten",
+     "desc": "Gefälschte SMS/WhatsApp-Nachrichten im Namen von Banken, Kurieren oder Strafzetteln.",
+     "tip": "Keine Links anklicken; Strafen nur in der offiziellen Metrash-App prüfen."
+    }
+   ]
   }
  },
  "es": {
@@ -1289,6 +1466,65 @@
      "No comas ni bebas en público de día durante el Ramadán."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos tipo G (tres clavijas rectangulares); los enchufes turcos no entran, lleve un adaptador tipo G. En edificios antiguos puede haber también enchufes tipo D."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo, desalinizada, cumple las normas y es potable, aunque la mayoría de residentes prefiere agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual un 10 % (algunos incluyen servicio); en taxis basta con redondear.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Si el servicio está incluido no hace falta más; 5–10 QAR bastan para el personal del hotel y aparcacoches."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No hay",
+    "customsNote": "Catar no tiene IVA, así que no hay devolución de impuestos para turistas. Está prohibido introducir alcohol y productos de cerdo; en el aeropuerto Hamad hay tiendas duty-free."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "airportSimTrapWarning": "Los mostradores de Ooredoo y Vodafone en el aeropuerto Hamad venden paquetes oficiales “Visitor” a buen precio, pero una eSIM instalada antes puede salir más barata. Para la SIM se necesita pasaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Precios del Souq Waqif",
+     "desc": "Se venden recuerdos a precios inflados a turistas que no regatean.",
+     "tip": "Compare varias tiendas y regatee empezando por la mitad del primer precio."
+    },
+    {
+     "title": "“Limusinas” sin licencia",
+     "desc": "Coches sin licencia ofrecen tarifas fijas altas a la salida del aeropuerto y hoteles.",
+     "tip": "Use taxis Mowasalat (Karwa), Uber o Careem; el metro de Doha llega al aeropuerto."
+    },
+    {
+     "title": "Mensajes de phishing",
+     "desc": "SMS o WhatsApp falsos en nombre de bancos, mensajerías o multas de tráfico.",
+     "tip": "No pulse enlaces; consulte las multas solo en la app oficial Metrash."
+    }
+   ]
   }
  },
  "ru": {
@@ -1612,6 +1848,65 @@
      "В Рамадан не ешьте и не пейте днём в общественных местах."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G (три прямоугольных штыря); турецкие вилки не подходят, возьмите переходник типа G. В старых зданиях встречаются и розетки типа D."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Опреснённая водопроводная вода соответствует нормам и пригодна для питья, хотя большинство жителей предпочитают бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято около 10 % (иногда сервисный сбор уже включён); в такси достаточно округлить сумму.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Если сервисный сбор включён, больше ничего не нужно; персоналу отеля и парковщикам хватит 5–10 QAR."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Нет",
+    "customsNote": "В Катаре нет НДС, поэтому возврата налога туристам нет. Ввоз алкоголя и свинины запрещён; в аэропорту Хамад работает duty-free."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "airportSimTrapWarning": "Стойки Ooredoo и Vodafone в аэропорту Хамад продают официальные пакеты «Visitor» по нормальным ценам, но заранее установленная eSIM может быть дешевле. Для SIM нужен паспорт."
+   },
+   "touristScams": [
+    {
+     "title": "Цены на Сук Вакиф",
+     "desc": "Туристам, которые не торгуются, продают сувениры втридорога.",
+     "tip": "Сравните цены в нескольких лавках и торгуйтесь, начиная примерно с половины первой цены."
+    },
+    {
+     "title": "Нелегальные «лимузины»",
+     "desc": "У аэропорта и отелей нелицензированные машины предлагают высокую фиксированную цену.",
+     "tip": "Пользуйтесь такси Mowasalat (Karwa), Uber или Careem; до аэропорта ходит метро Дохи."
+    },
+    {
+     "title": "Фишинговые сообщения",
+     "desc": "Поддельные SMS и сообщения в WhatsApp от имени банков, курьеров или о дорожных штрафах.",
+     "tip": "Не переходите по ссылкам; штрафы проверяйте только в официальном приложении Metrash."
+    }
+   ]
   }
  }
 }

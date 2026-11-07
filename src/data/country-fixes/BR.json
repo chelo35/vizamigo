@@ -1,0 +1,1797 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Brezilya Reali (BRL)",
+   "bestMonths": "Nisan – Haziran ve Ağustos – Ekim (daha ılıman, daha az kalabalık); Aralık – Mart Rio’da sıcak ve yağışlı yaz, Karnaval Şubat/Mart’ta; Amazon’da Haziran – Kasım daha kurak",
+   "safety": {
+    "crimeRateSummary": "Büyük şehirlerde silahlı soygun dahil şiddet suçu oranı yüksektir; resmî uyarılar favelalara rehbersiz girilmemesini ve gece tenha bölgelerden uzak durulmasını önerir. Rio ve São Paulo’da motosikletle telefon kapma ve plajlarda toplu kapkaç (arrastão) yaygındır.",
+    "commonScams": [
+     "Kart makinesinde (maquininha) tutarın fazladan sıfırla girilmesi veya ekranın gizlenmesi",
+     "Barlarda ve buluşma uygulamalarıyla tanışılan kişilerce içkiye ilaç katılması (“Boa noite, Cinderela”)",
+     "Rio plajlarında ve kalabalık caddelerde telefon kapma ve toplu kapkaç (arrastão)"
+    ],
+    "safeTravelTips": [
+     "Plaja yalnızca havlu, az nakit ve gerekirse eski bir telefon götürün; sokakta telefonla yürümeyin.",
+     "Gece Lapa ve Centro’da yürümek yerine 99 veya Uber ile kapıdan kapıya gidin; soyulursanız karşı koymayın.",
+     "Favelaları yalnızca topluluktan lisanslı rehberlerle ve kayıtlı turlarla ziyaret edin."
+    ],
+    "emergencyNumbers": {
+     "police": "190",
+     "ambulance": "192",
+     "general": "190"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde ve kıyı bölgelerinde iyi 4G/5G; Amazon ve Pantanal’da kapsama çok sınırlı",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "İyi",
+    "bestCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (São Paulo’da iyi metro, Rio’da metro ve VLT; mesafeler büyük olduğundan şehirlerarası iç hat uçuşu veya rodoviária otobüsleri)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "0.90 - 1.50 $ (São Paulo / Rio metrosu)",
+    "dailyPassUsd": "Günlük kart yok; metro ve 99/Uber ile günde ~4 - 8 $",
+    "popularRideApps": [
+     "99",
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "99 ve Uber ucuz ve güvenlidir; özellikle gece sokakta taksi çevirmek yerine bunları kullanın. Havalimanlarında resmî ön ödemeli taksi gişeleri veya uygulama alım noktaları vardır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "5 - 10 $ (prato feito veya kiloyla self-servis)",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Yüksek (direkt ~13 sa)",
+    "flightTip": "Türk Hava Yolları İstanbul – São Paulo (GRU) arasında direkt uçar. Ülke içi mesafeler çok büyük olduğu için LATAM, GOL ve Azul iç hat biletlerini erkenden alın; Karnaval ve yılbaşında fiyatlar katlanır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşmada sarılma ve yanaktan öpme yaygındır (São Paulo’da bir, Rio’da iki öpücük).",
+     "Brezilya’da İspanyolca değil Portekizce konuşulur; yerlilere İspanyolca hitap etmek hoş karşılanmayabilir.",
+     "Parmaklarla yapılan “OK” işareti kaba bir hareket sayılır; onay için baş parmak kullanın.",
+     "Sosyal davetlerde 15-30 dakika gecikme normaldir; iş toplantılarında dakiklik beklenir."
+    ],
+    "festivals": [
+     "Karnaval (Şubat/Mart; Rio, Salvador, Olinda)",
+     "Festa Junina (Haziran, özellikle kuzeydoğuda)",
+     "Réveillon – Copacabana’da yılbaşı kutlaması (31 Aralık)"
+    ],
+    "lifestyle": "Plaj, futbol ve müzik (samba, bossa nova, forró) etrafında dönen sıcak ve sosyal bir yaşam; pazar günleri ailece churrasco ve sokakta buz gibi bir bira yaygındır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kurtarıcı İsa Heykeli ve Şekerleme Dağı (Rio de Janeiro)",
+     "Iguaçu Şelaleleri",
+     "Pelourinho tarihi merkezi (Salvador)",
+     "Amazon ve Suların Buluşması (Manaus)",
+     "Lençóis Maranhenses kumulları ve lagünleri",
+     "Pantanal sulak alanı"
+    ],
+    "bestSeasons": "Rio için Nisan – Haziran ve Ağustos – Ekim en dengeli dönemdir; Lençóis lagünleri Haziran – Eylül’de dolu, Pantanal’da hayvan gözlemi Temmuz – Ekim’de en iyidir.",
+    "travelStyleTip": "Ülke bir kıta büyüklüğündedir: bölgeler arasında iç hat uçuşu kullanın, şehir içinde 99/Uber tercih edin ve birkaç temel Portekizce ifade öğrenin."
+   },
+   "religion": {
+    "primaryReligions": "Katolik ~%57, Evanjelik ~%27, dinsiz ~%9, Spiritist ~%2, Afro-Brezilya dinleri (Candomblé, Umbanda) ~%1 (2022 sayımı)",
+    "respectNorms": "Kiliselerde omuz ve dizleri örtün. Candomblé ibadethanelerinde (terreiro) fotoğraf çekmeden önce mutlaka izin isteyin.",
+    "sacredSites": [
+     "Nossa Senhora Aparecida Ulusal Mabedi Bazilikası (São Paulo eyaleti)",
+     "Senhor do Bonfim Kilisesi (Salvador)",
+     "Brasília Metropolitan Katedrali (Niemeyer)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portekizce (Brezilya Portekizcesi)",
+    "englishProficiency": "Turistik oteller dışında sınırlıdır; çeviri uygulaması ve temel Portekizce çok işe yarar. İspanyolca kısmen anlaşılır.",
+    "phrases": [
+     {
+      "phrase": "Oi, tudo bem?",
+      "meaning": "Selam, nasılsın?",
+      "translation": "Selam, nasılsın?",
+      "pronunciation": "oy, TOO-doo bayn"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Teşekkürler (konuşan erkekse / kadınsa)",
+      "translation": "Teşekkürler (konuşan erkekse / kadınsa)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     },
+     {
+      "phrase": "Com licença",
+      "meaning": "Affedersiniz / İzin verir misiniz",
+      "translation": "Affedersiniz / İzin verir misiniz",
+      "pronunciation": "kohn lee-SEN-sah"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KWAN-too KOOS-tah"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "ah KOHN-tah poor fah-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Yerli halkların yaşadığı topraklara 1500’de Pedro Álvares Cabral ulaştı ve bölge Portekiz sömürgesi oldu. 1808’de Portekiz kraliyet ailesi Rio’ya taşındı; Brezilya 1822’de imparatorluk olarak bağımsızlığını ilan etti, 1888’de köleliği kaldırdı ve 1889’da cumhuriyet oldu.",
+    "milestones": [
+     "1500: Cabral Brezilya kıyısına ulaşır",
+     "1822: Ipiranga Çığlığı ile bağımsızlık",
+     "1888: Altın Yasa (Lei Áurea) ile köleliğin kaldırılması",
+     "1960: Yeni başkent Brasília açılır"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Feijoada (siyah fasulye ve et yahnisi; geleneksel olarak domuz eti içerir)",
+     "Moqueca (hindistan cevizi sütlü balık güveci, Bahia)",
+     "Churrasco ve picanha (şişte ızgara et)"
+    ],
+    "traditionalDrinks": [
+     "Caipirinha (cachaça, misket limonu; alkollü)",
+     "Guaraná Antarctica (guarana gazozu)",
+     "Cafezinho (küçük, tatlı sade kahve)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pão de queijo (peynirli top ekmek)",
+     "Coxinha (tavuklu kroket)",
+     "Brigadeiro (çikolatalı yoğunlaştırılmış süt topu)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pelé (futbol efsanesi)",
+     "Ayrton Senna (F1 şampiyonu)",
+     "Oscar Niemeyer (mimar, Brasília)"
+    ],
+    "strongSectors": [
+     "Tarım ve gıda ihracatı (soya ve kahvede dünya lideri)",
+     "Madencilik ve petrol (Vale, Petrobras)",
+     "Havacılık (Embraer)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme yaygındır; yerliler anlık ödeme sistemi Pix’i kullanır. Kasada “crédito ou débito?” diye sorulur; plaj satıcıları ve pazarlar için az miktarda nakit real taşıyın.",
+    "tippingCulture": "Restoran hesaplarına genellikle %10 servis ücreti (“serviço”) eklenir; ödemesi yasal olarak isteğe bağlıdır ama beklenir. Ek bahşiş gerekmez.",
+    "economicPillars": "Tarım ve hayvancılık, madencilik ve petrol, imalat sanayii, hizmetler ve finans."
+   }
+  },
+  "itin": {
+   "routeName": "Brezilya Klasikleri: Salvador, Rio de Janeiro ve Iguaçu Şelaleleri",
+   "routeSummary": "Afro-Brezilya kültürünün kalbi Salvador’dan başlayıp Rio de Janeiro’nun ikonik manzaralarına ve plajlarına, ardından Iguaçu Şelaleleri’ne uzanan, iç hat uçuşlarıyla bağlanan 9 günlük rota.",
+   "totalDays": 9,
+   "idealDurationText": "9 Günlük Rota",
+   "bestSeason": "Nisan – Haziran ve Ağustos – Ekim",
+   "transportMode": "İç hat uçuşları (Salvador – Rio – Foz do Iguaçu) + şehir içinde 99/Uber ve metro",
+   "paceLevel": "Dengeli (Kültür, Şehir ve Doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Salvador (Bahia)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Pelourinho tarihi merkezi (UNESCO)",
+      "Elevador Lacerda ve Mercado Modelo",
+      "Senhor do Bonfim Kilisesi",
+      "Farol da Barra deniz feneri"
+     ],
+     "activities": [
+      "Bir capoeira gösterisi izleyin veya deneme dersine katılın.",
+      "Gün batımını Farol da Barra’da izleyin.",
+      "Salı akşamları Pelourinho’da Olodum davul provalarını dinleyin."
+     ],
+     "foodAndDrinks": [
+      "Acarajé (karabezelye köftesi, karides dolgulu)",
+      "Moqueca baiana",
+      "Cocada (hindistan cevizi tatlısı)"
+     ],
+     "criticalTips": [
+      "Pelourinho gündüz canlı ve güvenlidir; gece boş sokaklara girmeyin, ulaşımı 99/Uber ile yapın.",
+      "Bonfim kurdeleleri veya “hediye” takılar uzatanlar sonra para isteyebilir; kibarca reddedin."
+     ],
+     "mapsQuery": "Salvador, Bahia, Brasil"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Rio de Janeiro",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Kurtarıcı İsa Heykeli (Corcovado)",
+      "Pão de Açúcar teleferiği",
+      "Copacabana ve Ipanema plajları",
+      "Escadaria Selarón ve Santa Teresa"
+     ],
+     "activities": [
+      "Arpoador kayalıklarından gün batımını alkışlayın.",
+      "Lapa’da samba gecesine katılın (gidiş-dönüş Uber ile).",
+      "Maracanã’da bir maç izleyin veya stadyum turu yapın."
+     ],
+     "foodAndDrinks": [
+      "Feijoada (cumartesi geleneği; domuz eti içerir)",
+      "Açaí kâsesi",
+      "Caipirinha (alkollü)"
+     ],
+     "criticalTips": [
+      "Kurtarıcı İsa için Corcovado trenine biletinizi çevrimiçi alın ve sabah erken çıkın; öğleden sonra bulut kapatabilir.",
+      "Patika yürüyüşlerini (ör. Dois Irmãos) yalnızca yerel rehberle yapın."
+     ],
+     "mapsQuery": "Rio de Janeiro, Brasil"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Foz do Iguaçu (Iguaçu Şelaleleri)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Iguaçu Milli Parkı panoramik patikası (Brezilya tarafı)",
+      "Şeytan’ın Gırtlağı (Garganta do Diabo)",
+      "Parque das Aves kuş parkı",
+      "Itaipu Barajı"
+     ],
+     "activities": [
+      "Macuco Safari teknesiyle şelalelerin altına girin.",
+      "Bir günü Arjantin tarafına (Puerto Iguazú) ayırın.",
+      "Parque das Aves’te tukanları yakından görün."
+     ],
+     "foodAndDrinks": [
+      "Rodízio usulü churrasco",
+      "Tatlı su balığı (dourado, pintado)"
+     ],
+     "criticalTips": [
+      "Arjantin tarafına geçerken pasaportunuzu yanınızda taşıyın.",
+      "Yağmurluk getirin; koatileri beslemeyin, yiyeceklerinizi kapabilir ve ısırabilirler."
+     ],
+     "mapsQuery": "Foz do Iguaçu, Paraná, Brasil"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Feijoada (domuz eti içerir)",
+     "Moqueca",
+     "Picanha"
+    ],
+    "drinks": [
+     "Caipirinha (alkollü)",
+     "Guaraná",
+     "Hindistan cevizi suyu (água de coco)"
+    ],
+    "streetFoods": [
+     "Pão de queijo",
+     "Coxinha",
+     "Brigadeiro"
+    ],
+    "diningAdvice": "“Por quilo” restoranlarında tabağınızı tartıp ödersiniz; ucuz ve pratiktir. Churrascaria’larda masadaki yeşil/kırmızı kartla servis devam ya da durdurulur; hesaba %10 servis eklenir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tip N / C priz adaptörü (Schuko fişler N prizlere girmez)",
+     "Yüksek faktörlü güneş kremi ve sivrisinek kovucu",
+     "Sarıhumma aşı kartı (Amazon ve Iguaçu için önerilir)",
+     "Hafif yağmurluk / panço"
+    ],
+    "safetyAndEtiquette": [
+     "Değerli eşyaları otel kasasında bırakın ve sokakta telefonla dikkat çekmeyin.",
+     "Kart makinesinde tutarı onaylamadan önce ekranı kontrol edin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "N",
+     "C"
+    ],
+    "voltage": "127V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Brezilya’ya özgü üç yuvarlak uçlu, gömme Tip N prizler. İnce uçlu Avrupa fişleri (Tip C) genelde girer, ancak Türkiye’de yaygın kalın Schuko (F) fişler girmez; adaptör alın. Gerilim şehre göre değişir: Rio ve São Paulo 127V, Brasília, Fortaleza, Recife ve Florianópolis 220V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Büyük şehirlerde şebeke suyu arıtılır, ancak bina depoları ve borular nedeniyle şişe veya filtreli su içilmesi önerilir.",
+    "vaccines": [
+     "Sarıhumma: Amazon, Iguaçu ve birçok iç bölge için önerilir (en az 10 gün önce); Türkiye’den girişte zorunlu değildir",
+     "Hepatit A ve tifo",
+     "Dang ve chikungunya için sivrisinek korunması"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "Restoran hesaplarına genelde %10 servis ücreti eklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "“Taxa de serviço” yasal olarak isteğe bağlıdır; hizmetten memnun değilseniz çıkarılmasını isteyebilirsiniz. Taksi ve otel görevlilerine küçük yuvarlama yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (turistlere yaygın bir vergi iadesi sistemi bulunmaz)",
+    "minSpend": "Geçerli değil",
+    "customsNote": "Brezilya’da mağaza alışverişleri için turiste KDV iadesi uygulaması pratikte yoktur. Vergisiz alışveriş için havalimanlarındaki varış ve çıkış duty-free mağazalarını kullanın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "airportSimTrapWarning": "Yerel ön ödemeli hat kaydı için operatör mağazasında pasaport gerekir ve işlem uzun sürebilir; havalimanı kioskları pahalıdır. En pratiği yola çıkmadan eSIM kurmaktır."
+   },
+   "touristScams": [
+    {
+     "title": "Kart makinesi hilesi",
+     "desc": "Plaj satıcıları, bazı taksiler veya barlar maquininha’ya fazladan sıfır girip ekranı göstermeden şifre ister.",
+     "tip": "Tutarı ekranda görmeden onaylamayın; mümkünse temassız ödeyin ve banka bildirimlerini açık tutun."
+    },
+    {
+     "title": "İçkiye ilaç katma (“Boa noite, Cinderela”)",
+     "desc": "Barlarda veya buluşma uygulamasıyla tanışılan kişiler içkiye ilaç katıp kurbanı soyar.",
+     "tip": "İçkinizi gözünüzün önünden ayırmayın, yabancıların ısmarladığı içkiyi kabul etmeyin ve ilk buluşmaları kalabalık yerlerde yapın."
+    },
+    {
+     "title": "Telefon kapma ve arrastão",
+     "desc": "Motosikletli hırsızlar veya plajda koşarak geçen gruplar telefon, çanta ve takıları kapar.",
+     "tip": "Plaja değerli eşya götürmeyin, telefonu kaldırımın yol tarafında kullanmayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Brazilian Real (BRL)",
+   "bestMonths": "April – June and August – October (milder, fewer crowds); December – March is Rio’s hot, rainy summer with Carnival in February/March; June – November is drier in the Amazon",
+   "safety": {
+    "crimeRateSummary": "Violent crime, including armed robbery, is high in big cities; official advisories warn against entering favelas without a guide and against deserted areas at night. Motorbike phone snatching and mass beach robberies (arrastão) are common in Rio and São Paulo.",
+    "commonScams": [
+     "Card machines (maquininhas) with an extra zero keyed in or the screen hidden from you",
+     "Drink spiking in bars or by people met on dating apps (“Boa noite, Cinderela”)",
+     "Phone snatching and mass robberies (arrastão) on Rio’s beaches and busy streets"
+    ],
+    "safeTravelTips": [
+     "Take only a towel, a little cash and maybe an old phone to the beach; don’t walk around with your phone out.",
+     "At night take 99 or Uber door to door instead of walking in Lapa or Centro; if robbed, don’t resist.",
+     "Visit favelas only on registered tours with licensed community guides."
+    ],
+    "emergencyNumbers": {
+     "police": "190",
+     "ambulance": "192",
+     "general": "190"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G/5G in cities and along the coast; very limited coverage in the Amazon and Pantanal",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Good",
+    "bestCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair (good metro in São Paulo, metro and VLT tram in Rio; distances are huge, so fly or take long-distance buses from the rodoviária)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.90 - 1.50 $ (São Paulo / Rio metro)",
+    "dailyPassUsd": "No day pass; ~4 - 8 $ a day with metro plus 99/Uber",
+    "popularRideApps": [
+     "99",
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "99 and Uber are cheap and safe; use them instead of hailing taxis on the street, especially at night. Airports have official prepaid taxi counters or app pick-up points."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "5 - 10 $ (prato feito or pay-by-weight buffet)",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "High (direct ~13 h)",
+    "flightTip": "Turkish Airlines flies direct Istanbul – São Paulo (GRU). Distances inside Brazil are huge, so book LATAM, GOL and Azul domestic flights early; prices soar at Carnival and New Year."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Hugs and cheek kisses are common greetings (one kiss in São Paulo, two in Rio).",
+     "Brazilians speak Portuguese, not Spanish; assuming Spanish may not go down well.",
+     "The finger “OK” sign is considered rude; use a thumbs-up instead.",
+     "Arriving 15-30 minutes late to social events is normal; punctuality is expected for business."
+    ],
+    "festivals": [
+     "Carnival (February/March; Rio, Salvador, Olinda)",
+     "Festa Junina (June, especially in the Northeast)",
+     "Réveillon – New Year’s Eve on Copacabana (31 December)"
+    ],
+    "lifestyle": "A warm, social life built around the beach, football and music (samba, bossa nova, forró); Sunday family churrascos and ice-cold drinks on the street are typical."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Christ the Redeemer and Sugarloaf Mountain (Rio de Janeiro)",
+     "Iguaçu Falls",
+     "Pelourinho historic centre (Salvador)",
+     "The Amazon and Meeting of the Waters (Manaus)",
+     "Lençóis Maranhenses dunes and lagoons",
+     "Pantanal wetlands"
+    ],
+    "bestSeasons": "April – June and August – October are the most balanced for Rio; the Lençóis lagoons are full in June – September, and Pantanal wildlife viewing is best in July – October.",
+    "travelStyleTip": "Brazil is continent-sized: fly between regions, use 99/Uber in cities and learn a few basic Portuguese phrases."
+   },
+   "religion": {
+    "primaryReligions": "Catholic ~57%, Evangelical ~27%, no religion ~9%, Spiritist ~2%, Afro-Brazilian faiths (Candomblé, Umbanda) ~1% (2022 census)",
+    "respectNorms": "Cover shoulders and knees in churches. Always ask before taking photos in Candomblé temples (terreiros).",
+    "sacredSites": [
+     "Basilica of the National Shrine of Our Lady of Aparecida (São Paulo state)",
+     "Church of Senhor do Bonfim (Salvador)",
+     "Metropolitan Cathedral of Brasília (Niemeyer)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portuguese (Brazilian Portuguese)",
+    "englishProficiency": "Limited outside tourist hotels; a translation app and basic Portuguese help a lot. Spanish is partly understood.",
+    "phrases": [
+     {
+      "phrase": "Oi, tudo bem?",
+      "meaning": "Hi, how are you?",
+      "translation": "Hi, how are you?",
+      "pronunciation": "oy, TOO-doo bayn"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Thank you (said by a man / a woman)",
+      "translation": "Thank you (said by a man / a woman)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     },
+     {
+      "phrase": "Com licença",
+      "meaning": "Excuse me",
+      "translation": "Excuse me",
+      "pronunciation": "kohn lee-SEN-sah"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAN-too KOOS-tah"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "ah KOHN-tah poor fah-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Pedro Álvares Cabral reached these Indigenous lands in 1500 and they became a Portuguese colony. The Portuguese royal court moved to Rio in 1808; Brazil declared independence as an empire in 1822, abolished slavery in 1888 and became a republic in 1889.",
+    "milestones": [
+     "1500: Cabral reaches the Brazilian coast",
+     "1822: Cry of Ipiranga and independence",
+     "1888: Golden Law (Lei Áurea) abolishes slavery",
+     "1960: New capital Brasília inaugurated"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Feijoada (black bean and meat stew; traditionally includes pork)",
+     "Moqueca (coconut-milk fish stew, Bahia)",
+     "Churrasco and picanha (skewer-grilled beef)"
+    ],
+    "traditionalDrinks": [
+     "Caipirinha (cachaça and lime; alcoholic)",
+     "Guaraná Antarctica (guarana soda)",
+     "Cafezinho (small sweet black coffee)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pão de queijo (cheese bread balls)",
+     "Coxinha (chicken croquette)",
+     "Brigadeiro (chocolate fudge ball)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pelé (football legend)",
+     "Ayrton Senna (F1 champion)",
+     "Oscar Niemeyer (architect of Brasília)"
+    ],
+    "strongSectors": [
+     "Agribusiness exports (world leader in soy and coffee)",
+     "Mining and oil (Vale, Petrobras)",
+     "Aerospace (Embraer)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless are widespread; locals use the instant payment system Pix. At the till you’ll be asked “crédito ou débito?”; carry a little real cash for beach vendors and markets.",
+    "tippingCulture": "Restaurant bills usually include a 10% service charge (“serviço”); it is legally optional but expected. No extra tip is needed.",
+    "economicPillars": "Agriculture and livestock, mining and oil, manufacturing, services and finance."
+   }
+  },
+  "itin": {
+   "routeName": "Brazil Classics: Salvador, Rio de Janeiro & Iguaçu Falls",
+   "routeSummary": "A 9-day route linked by domestic flights, from Salvador, heart of Afro-Brazilian culture, to Rio de Janeiro’s iconic views and beaches, and on to the Iguaçu Falls.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Itinerary",
+   "bestSeason": "April – June and August – October",
+   "transportMode": "Domestic flights (Salvador – Rio – Foz do Iguaçu) + 99/Uber and metro in cities",
+   "paceLevel": "Balanced (Culture, City & Nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Salvador (Bahia)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Pelourinho historic centre (UNESCO)",
+      "Elevador Lacerda and Mercado Modelo",
+      "Church of Senhor do Bonfim",
+      "Farol da Barra lighthouse"
+     ],
+     "activities": [
+      "Watch a capoeira performance or join a taster class.",
+      "Watch the sunset at Farol da Barra.",
+      "Catch the Olodum drum rehearsals in Pelourinho on Tuesday evenings."
+     ],
+     "foodAndDrinks": [
+      "Acarajé (black-eyed pea fritter with shrimp)",
+      "Moqueca baiana",
+      "Cocada (coconut sweet)"
+     ],
+     "criticalTips": [
+      "Pelourinho is lively and safe by day; avoid empty streets at night and get around by 99/Uber.",
+      "People tying Bonfim ribbons or “gift” bracelets on you may then demand money; politely decline."
+     ],
+     "mapsQuery": "Salvador, Bahia, Brasil"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Rio de Janeiro",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Christ the Redeemer (Corcovado)",
+      "Sugarloaf cable car",
+      "Copacabana and Ipanema beaches",
+      "Selarón Steps and Santa Teresa"
+     ],
+     "activities": [
+      "Applaud the sunset from the Arpoador rocks.",
+      "Join a samba night in Lapa (go and return by Uber).",
+      "See a match or take a stadium tour at the Maracanã."
+     ],
+     "foodAndDrinks": [
+      "Feijoada (Saturday tradition; contains pork)",
+      "Açaí bowl",
+      "Caipirinha (alcoholic)"
+     ],
+     "criticalTips": [
+      "Buy Corcovado train tickets online and go early; clouds often cover the statue in the afternoon.",
+      "Do trail hikes (e.g. Dois Irmãos) only with a local guide."
+     ],
+     "mapsQuery": "Rio de Janeiro, Brasil"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Foz do Iguaçu (Iguaçu Falls)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Iguaçu National Park panoramic trail (Brazilian side)",
+      "Devil’s Throat (Garganta do Diabo)",
+      "Parque das Aves bird park",
+      "Itaipu Dam"
+     ],
+     "activities": [
+      "Ride the Macuco Safari boat right under the falls.",
+      "Spend a day on the Argentine side (Puerto Iguazú).",
+      "See toucans up close at Parque das Aves."
+     ],
+     "foodAndDrinks": [
+      "All-you-can-eat churrasco (rodízio)",
+      "River fish (dourado, pintado)"
+     ],
+     "criticalTips": [
+      "Carry your passport when crossing to the Argentine side.",
+      "Bring a rain poncho; don’t feed the coatis—they snatch food and can bite."
+     ],
+     "mapsQuery": "Foz do Iguaçu, Paraná, Brasil"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Feijoada (contains pork)",
+     "Moqueca",
+     "Picanha"
+    ],
+    "drinks": [
+     "Caipirinha (alcoholic)",
+     "Guaraná",
+     "Coconut water (água de coco)"
+    ],
+    "streetFoods": [
+     "Pão de queijo",
+     "Coxinha",
+     "Brigadeiro"
+    ],
+    "diningAdvice": "At “por quilo” restaurants you pay by the weight of your plate—cheap and practical. In churrascarias a green/red card on the table keeps the meat coming or stops it; a 10% service charge is added to the bill."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type N / C plug adapter (Schuko plugs don’t fit Type N sockets)",
+     "High-SPF sunscreen and mosquito repellent",
+     "Yellow fever vaccination card (recommended for the Amazon and Iguaçu)",
+     "Light rain jacket / poncho"
+    ],
+    "safetyAndEtiquette": [
+     "Leave valuables in the hotel safe and don’t flash your phone on the street.",
+     "Check the card machine screen before confirming any payment."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "N",
+     "C"
+    ],
+    "voltage": "127V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Brazil’s own recessed three-round-pin Type N sockets. Thin Europlugs (Type C) usually fit, but the thick Schuko (F) plugs common in Türkiye do not, so bring an adapter. Voltage varies by city: Rio and São Paulo 127V; Brasília, Fortaleza, Recife and Florianópolis 220V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Mains water in big cities is treated, but because of building tanks and pipes it is best to drink bottled or filtered water.",
+    "vaccines": [
+     "Yellow fever: recommended for the Amazon, Iguaçu and many inland areas (at least 10 days before); not required for entry from Türkiye",
+     "Hepatitis A and typhoid",
+     "Mosquito protection against dengue and chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "A 10% service charge is usually added to restaurant bills.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "The “taxa de serviço” is legally optional; you can ask for it to be removed if service was poor. For taxis and hotel staff, a small round-up is enough."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (no widespread tourist tax refund scheme)",
+    "minSpend": "Not applicable",
+    "customsNote": "In practice Brazil offers no tax refund to tourists on shop purchases. For tax-free shopping use the arrival and departure duty-free shops at airports."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "airportSimTrapWarning": "Registering a local prepaid line requires your passport at a carrier store and can take time; airport kiosks are pricey. Setting up an eSIM before you travel is easiest."
+   },
+   "touristScams": [
+    {
+     "title": "Card machine trick",
+     "desc": "Beach vendors, some taxis or bars key an extra zero into the maquininha and ask for your PIN without showing the screen.",
+     "tip": "Never confirm without seeing the amount; pay contactless where possible and keep bank alerts on."
+    },
+    {
+     "title": "Drink spiking (“Boa noite, Cinderela”)",
+     "desc": "In bars, or via people met on dating apps, drinks are drugged and the victim is robbed.",
+     "tip": "Never leave your drink unattended, don’t accept drinks from strangers and hold first dates in busy public places."
+    },
+    {
+     "title": "Phone snatching and arrastão",
+     "desc": "Thieves on motorbikes or groups running along the beach grab phones, bags and jewellery.",
+     "tip": "Take no valuables to the beach and don’t use your phone at the kerbside."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Brasilianischer Real (BRL)",
+   "bestMonths": "April – Juni und August – Oktober (milder, weniger Andrang); Dezember – März heißer, regnerischer Sommer in Rio mit Karneval im Februar/März; Juni – November im Amazonas trockener",
+   "safety": {
+    "crimeRateSummary": "Gewaltkriminalität einschließlich bewaffneter Raubüberfälle ist in Großstädten hoch; offizielle Hinweise raten davon ab, Favelas ohne Führer zu betreten oder nachts menschenleere Gegenden aufzusuchen. In Rio und São Paulo sind Handyraub vom Motorrad und Massenüberfälle am Strand (Arrastão) verbreitet.",
+    "commonScams": [
+     "Kartenlesegeräte (Maquininhas), bei denen eine Null zu viel eingetippt oder das Display verdeckt wird",
+     "K.-o.-Tropfen in Bars oder durch Bekanntschaften aus Dating-Apps („Boa noite, Cinderela“)",
+     "Handyraub und Massenüberfälle (Arrastão) an Rios Stränden und belebten Straßen"
+    ],
+    "safeTravelTips": [
+     "Zum Strand nur Handtuch, wenig Bargeld und notfalls ein altes Handy mitnehmen; nicht mit dem Handy in der Hand herumlaufen.",
+     "Nachts mit 99 oder Uber von Tür zu Tür statt zu Fuß durch Lapa oder Centro; bei einem Überfall keinen Widerstand leisten.",
+     "Favelas nur mit registrierten Touren und lizenzierten Guides aus der Gemeinde besuchen."
+    ],
+    "emergencyNumbers": {
+     "police": "190",
+     "ambulance": "192",
+     "general": "190"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G/5G in Städten und an der Küste; im Amazonas und Pantanal kaum Netz",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Gut",
+    "bestCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (gute Metro in São Paulo, Metro und VLT in Rio; riesige Distanzen – fliegen oder Fernbus ab der Rodoviária)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "0.90 - 1.50 $ (Metro São Paulo / Rio)",
+    "dailyPassUsd": "Keine Tageskarte; mit Metro und 99/Uber ~4 - 8 $ pro Tag",
+    "popularRideApps": [
+     "99",
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "99 und Uber sind günstig und sicher; besonders nachts statt Straßentaxis nutzen. An Flughäfen gibt es offizielle Prepaid-Taxischalter oder App-Abholpunkte."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "5 - 10 $ (Prato feito oder Buffet nach Gewicht)",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Hoch (direkt ~13 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt Istanbul – São Paulo (GRU). Die Entfernungen im Land sind riesig, daher Inlandsflüge mit LATAM, GOL und Azul früh buchen; zu Karneval und Silvester steigen die Preise stark."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Umarmungen und Wangenküsse sind üblich (in São Paulo einer, in Rio zwei).",
+     "In Brasilien spricht man Portugiesisch, nicht Spanisch; Spanisch vorauszusetzen kommt nicht gut an.",
+     "Das „OK“-Zeichen mit den Fingern gilt als obszön; lieber Daumen hoch.",
+     "Bei privaten Treffen sind 15-30 Minuten Verspätung normal; geschäftlich wird Pünktlichkeit erwartet."
+    ],
+    "festivals": [
+     "Karneval (Februar/März; Rio, Salvador, Olinda)",
+     "Festa Junina (Juni, besonders im Nordosten)",
+     "Réveillon – Silvester an der Copacabana (31. Dezember)"
+    ],
+    "lifestyle": "Ein herzliches, geselliges Leben rund um Strand, Fußball und Musik (Samba, Bossa Nova, Forró); typisch sind sonntägliche Familien-Churrascos und eiskalte Getränke auf der Straße."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cristo Redentor und Zuckerhut (Rio de Janeiro)",
+     "Iguaçu-Wasserfälle",
+     "Historisches Zentrum Pelourinho (Salvador)",
+     "Amazonas und Encontro das Águas (Manaus)",
+     "Dünen und Lagunen der Lençóis Maranhenses",
+     "Feuchtgebiet Pantanal"
+    ],
+    "bestSeasons": "Für Rio sind April – Juni und August – Oktober am ausgeglichensten; die Lagunen der Lençóis sind Juni – September gefüllt, Tierbeobachtung im Pantanal ist Juli – Oktober am besten.",
+    "travelStyleTip": "Brasilien ist so groß wie ein Kontinent: zwischen Regionen fliegen, in Städten 99/Uber nutzen und ein paar Sätze Portugiesisch lernen."
+   },
+   "religion": {
+    "primaryReligions": "Katholiken ~57 %, Evangelikale ~27 %, konfessionslos ~9 %, Spiritisten ~2 %, afrobrasilianische Religionen (Candomblé, Umbanda) ~1 % (Zensus 2022)",
+    "respectNorms": "In Kirchen Schultern und Knie bedecken. In Candomblé-Tempeln (Terreiros) vor dem Fotografieren immer fragen.",
+    "sacredSites": [
+     "Nationalheiligtum Nossa Senhora Aparecida (Bundesstaat São Paulo)",
+     "Kirche Senhor do Bonfim (Salvador)",
+     "Kathedrale von Brasília (Niemeyer)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portugiesisch (brasilianisches Portugiesisch)",
+    "englishProficiency": "Außerhalb von Touristenhotels gering; Übersetzungs-App und etwas Portugiesisch helfen sehr. Spanisch wird teilweise verstanden.",
+    "phrases": [
+     {
+      "phrase": "Oi, tudo bem?",
+      "meaning": "Hallo, wie geht’s?",
+      "translation": "Hallo, wie geht’s?",
+      "pronunciation": "oy, TOO-doo bayn"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Danke (als Mann / als Frau)",
+      "translation": "Danke (als Mann / als Frau)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     },
+     {
+      "phrase": "Com licença",
+      "meaning": "Entschuldigung / Darf ich vorbei?",
+      "translation": "Entschuldigung / Darf ich vorbei?",
+      "pronunciation": "kohn lee-SEN-sah"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KWAN-too KOOS-tah"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "ah KOHN-tah poor fah-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Pedro Álvares Cabral erreichte das von Indigenen bewohnte Land im Jahr 1500; es wurde portugiesische Kolonie. 1808 zog der portugiesische Hof nach Rio; Brasilien erklärte 1822 als Kaiserreich die Unabhängigkeit, schaffte 1888 die Sklaverei ab und wurde 1889 Republik.",
+    "milestones": [
+     "1500: Cabral erreicht die brasilianische Küste",
+     "1822: Schrei von Ipiranga – Unabhängigkeit",
+     "1888: Goldenes Gesetz (Lei Áurea) schafft die Sklaverei ab",
+     "1960: Einweihung der neuen Hauptstadt Brasília"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Feijoada (Eintopf aus schwarzen Bohnen und Fleisch, traditionell mit Schwein)",
+     "Moqueca (Fischeintopf mit Kokosmilch, Bahia)",
+     "Churrasco und Picanha (Rindfleisch vom Spieß)"
+    ],
+    "traditionalDrinks": [
+     "Caipirinha (Cachaça und Limette; alkoholisch)",
+     "Guaraná Antarctica (Guaraná-Limonade)",
+     "Cafezinho (kleiner, süßer schwarzer Kaffee)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pão de queijo (Käsebällchen)",
+     "Coxinha (Hähnchenkrokette)",
+     "Brigadeiro (Schokoladenpraline)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pelé (Fußballlegende)",
+     "Ayrton Senna (F1-Weltmeister)",
+     "Oscar Niemeyer (Architekt von Brasília)"
+    ],
+    "strongSectors": [
+     "Agrarexporte (Weltmarktführer bei Soja und Kaffee)",
+     "Bergbau und Öl (Vale, Petrobras)",
+     "Luftfahrt (Embraer)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und kontaktlos sind verbreitet; Einheimische nutzen das Sofortzahlungssystem Pix. An der Kasse fragt man „crédito ou débito?“; für Strandverkäufer und Märkte etwas Bargeld in Real mitnehmen.",
+    "tippingCulture": "Auf Restaurantrechnungen stehen meist 10 % Service („serviço“); rechtlich freiwillig, aber erwartet. Zusätzliches Trinkgeld ist nicht nötig.",
+    "economicPillars": "Landwirtschaft und Viehzucht, Bergbau und Öl, Industrie, Dienstleistungen und Finanzen."
+   }
+  },
+  "itin": {
+   "routeName": "Brasilien-Klassiker: Salvador, Rio de Janeiro & Iguaçu-Fälle",
+   "routeSummary": "Eine 9-tägige Route mit Inlandsflügen: von Salvador, dem Herzen der afrobrasilianischen Kultur, zu Rios ikonischen Aussichten und Stränden und weiter zu den Iguaçu-Fällen.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Route",
+   "bestSeason": "April – Juni und August – Oktober",
+   "transportMode": "Inlandsflüge (Salvador – Rio – Foz do Iguaçu) + 99/Uber und Metro in den Städten",
+   "paceLevel": "Ausgewogen (Kultur, Stadt & Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Salvador (Bahia)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Altstadt Pelourinho (UNESCO)",
+      "Elevador Lacerda und Mercado Modelo",
+      "Kirche Senhor do Bonfim",
+      "Leuchtturm Farol da Barra"
+     ],
+     "activities": [
+      "Eine Capoeira-Vorführung sehen oder eine Schnupperstunde machen.",
+      "Den Sonnenuntergang am Farol da Barra genießen.",
+      "Dienstagabends die Trommelproben von Olodum im Pelourinho erleben."
+     ],
+     "foodAndDrinks": [
+      "Acarajé (Bohnenkrapfen mit Garnelen)",
+      "Moqueca baiana",
+      "Cocada (Kokos-Süßigkeit)"
+     ],
+     "criticalTips": [
+      "Pelourinho ist tagsüber belebt und sicher; nachts leere Gassen meiden und mit 99/Uber fahren.",
+      "Wer Ihnen Bonfim-Bänder oder „Geschenk“-Armbänder umbindet, will danach oft Geld; höflich ablehnen."
+     ],
+     "mapsQuery": "Salvador, Bahia, Brasil"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Rio de Janeiro",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Cristo Redentor (Corcovado)",
+      "Seilbahn auf den Zuckerhut",
+      "Strände Copacabana und Ipanema",
+      "Selarón-Treppe und Santa Teresa"
+     ],
+     "activities": [
+      "Den Sonnenuntergang auf den Felsen von Arpoador beklatschen.",
+      "Eine Sambanacht in Lapa erleben (hin und zurück mit Uber).",
+      "Ein Spiel oder eine Stadionführung im Maracanã erleben."
+     ],
+     "foodAndDrinks": [
+      "Feijoada (Samstagstradition; mit Schwein)",
+      "Açaí-Bowl",
+      "Caipirinha (alkoholisch)"
+     ],
+     "criticalTips": [
+      "Tickets für die Corcovado-Bahn online kaufen und früh fahren; nachmittags ziehen oft Wolken auf.",
+      "Wanderungen (z. B. Dois Irmãos) nur mit lokalem Guide."
+     ],
+     "mapsQuery": "Rio de Janeiro, Brasil"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Foz do Iguaçu (Iguaçu-Fälle)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Panoramaweg im Nationalpark Iguaçu (brasilianische Seite)",
+      "Teufelsschlund (Garganta do Diabo)",
+      "Vogelpark Parque das Aves",
+      "Itaipú-Staudamm"
+     ],
+     "activities": [
+      "Mit dem Macuco-Safari-Boot direkt unter die Fälle fahren.",
+      "Einen Tag auf der argentinischen Seite (Puerto Iguazú) verbringen.",
+      "Im Parque das Aves Tukane aus nächster Nähe sehen."
+     ],
+     "foodAndDrinks": [
+      "Churrasco im Rodízio-Stil",
+      "Flussfisch (Dourado, Pintado)"
+     ],
+     "criticalTips": [
+      "Beim Wechsel auf die argentinische Seite den Reisepass mitnehmen.",
+      "Regenponcho mitbringen; Nasenbären nicht füttern – sie klauen Essen und können beißen."
+     ],
+     "mapsQuery": "Foz do Iguaçu, Paraná, Brasil"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Feijoada (mit Schwein)",
+     "Moqueca",
+     "Picanha"
+    ],
+    "drinks": [
+     "Caipirinha (alkoholisch)",
+     "Guaraná",
+     "Kokoswasser (água de coco)"
+    ],
+    "streetFoods": [
+     "Pão de queijo",
+     "Coxinha",
+     "Brigadeiro"
+    ],
+    "diningAdvice": "In „Por quilo“-Restaurants zahlt man nach Tellergewicht – günstig und praktisch. In Churrascarias steuert eine grüne/rote Karte, ob weiter Fleisch kommt; 10 % Service stehen auf der Rechnung."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reisestecker Typ N / C (Schuko passt nicht in Typ-N-Dosen)",
+     "Sonnencreme mit hohem LSF und Mückenschutz",
+     "Gelbfieber-Impfpass (für Amazonas und Iguaçu empfohlen)",
+     "Leichte Regenjacke / Poncho"
+    ],
+    "safetyAndEtiquette": [
+     "Wertsachen im Hotelsafe lassen und das Handy auf der Straße nicht zeigen.",
+     "Vor der Bestätigung das Display des Kartenlesers prüfen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "N",
+     "C"
+    ],
+    "voltage": "127V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Brasilianische, versenkte Dreipol-Steckdosen Typ N. Dünne Eurostecker (Typ C) passen meist, dicke Schuko-Stecker (F) nicht – Adapter mitnehmen. Spannung je nach Stadt: Rio und São Paulo 127 V; Brasília, Fortaleza, Recife und Florianópolis 220 V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser in Großstädten wird aufbereitet, wegen Hausspeicher und Leitungen aber besser Flaschen- oder Filterwasser trinken.",
+    "vaccines": [
+     "Gelbfieber: für Amazonas, Iguaçu und viele Regionen im Landesinneren empfohlen (mind. 10 Tage vorher); bei Einreise aus der Türkei nicht vorgeschrieben",
+     "Hepatitis A und Typhus",
+     "Mückenschutz gegen Dengue und Chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "Auf Restaurantrechnungen werden meist 10 % Service aufgeschlagen.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Die „Taxa de serviço“ ist rechtlich freiwillig und kann bei schlechtem Service gestrichen werden. Bei Taxis und Hotelpersonal reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (kein verbreitetes Steuererstattungssystem für Touristen)",
+    "minSpend": "Entfällt",
+    "customsNote": "In der Praxis erstattet Brasilien Touristen keine Steuern auf Einkäufe. Steuerfrei kauft man in den Duty-free-Shops bei Ankunft und Abflug an Flughäfen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "airportSimTrapWarning": "Für eine lokale Prepaid-SIM braucht man im Shop den Reisepass, und die Registrierung kann dauern; Flughafenkioske sind teuer. Am einfachsten ist eine vorab eingerichtete eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Trick mit dem Kartenlesegerät",
+     "desc": "Strandverkäufer, manche Taxis oder Bars tippen eine Null zu viel in die Maquininha und verlangen die PIN, ohne das Display zu zeigen.",
+     "tip": "Nie ohne sichtbaren Betrag bestätigen; möglichst kontaktlos zahlen und Bankbenachrichtigungen aktivieren."
+    },
+    {
+     "title": "K.-o.-Tropfen („Boa noite, Cinderela“)",
+     "desc": "In Bars oder durch Bekanntschaften aus Dating-Apps werden Getränke präpariert und die Opfer ausgeraubt.",
+     "tip": "Getränk nie unbeaufsichtigt lassen, keine Drinks von Fremden annehmen und erste Treffen an belebten Orten."
+    },
+    {
+     "title": "Handyraub und Arrastão",
+     "desc": "Diebe auf Motorrädern oder Gruppen, die über den Strand rennen, reißen Handys, Taschen und Schmuck an sich.",
+     "tip": "Keine Wertsachen an den Strand mitnehmen und das Handy nicht an der Bordsteinkante benutzen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Real brasileño (BRL)",
+   "bestMonths": "Abril – junio y agosto – octubre (más templado y con menos gente); de diciembre a marzo es el verano caluroso y lluvioso de Río, con Carnaval en febrero/marzo; de junio a noviembre es más seco en la Amazonia",
+   "safety": {
+    "crimeRateSummary": "La delincuencia violenta, incluidos los atracos a mano armada, es alta en las grandes ciudades; los avisos oficiales desaconsejan entrar a favelas sin guía y las zonas desiertas de noche. En Río y São Paulo son frecuentes los robos de móviles desde motos y los robos masivos en playas (arrastão).",
+    "commonScams": [
+     "Datáfonos (maquininhas) en los que se teclea un cero de más o se oculta la pantalla",
+     "Bebidas adulteradas en bares o por personas conocidas en apps de citas (“Boa noite, Cinderela”)",
+     "Robo de móviles y robos masivos (arrastão) en playas y calles concurridas de Río"
+    ],
+    "safeTravelTips": [
+     "Lleve a la playa solo toalla, poco efectivo y, si acaso, un móvil viejo; no camine con el móvil en la mano.",
+     "De noche use 99 o Uber puerta a puerta en vez de caminar por Lapa o Centro; si le asaltan, no se resista.",
+     "Visite favelas solo con tours registrados y guías locales con licencia."
+    ],
+    "emergencyNumbers": {
+     "police": "190",
+     "ambulance": "192",
+     "general": "190"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G/5G en ciudades y en la costa; cobertura muy limitada en la Amazonia y el Pantanal",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Buena",
+    "bestCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (buen metro en São Paulo, metro y VLT en Río; las distancias son enormes: avión o autobuses de larga distancia desde la rodoviária)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.90 - 1.50 $ (metro de São Paulo / Río)",
+    "dailyPassUsd": "No hay pase diario; ~4 - 8 $ al día con metro y 99/Uber",
+    "popularRideApps": [
+     "99",
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "99 y Uber son baratos y seguros; úselos en lugar de parar taxis en la calle, sobre todo de noche. En los aeropuertos hay mostradores oficiales de taxi prepagado o puntos de recogida de apps."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "5 - 10 $ (prato feito o bufé por kilo)",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Alto (directo ~13 h)",
+    "flightTip": "Turkish Airlines vuela directo Estambul – São Paulo (GRU). Las distancias dentro de Brasil son enormes: reserve pronto los vuelos nacionales de LATAM, GOL y Azul; en Carnaval y Año Nuevo los precios se disparan."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los abrazos y besos en la mejilla son habituales (uno en São Paulo, dos en Río).",
+     "En Brasil se habla portugués, no español; dar por hecho el español puede sentar mal.",
+     "El gesto de “OK” con los dedos se considera ofensivo; use el pulgar hacia arriba.",
+     "Llegar 15-30 minutos tarde a eventos sociales es normal; en los negocios se espera puntualidad."
+    ],
+    "festivals": [
+     "Carnaval (febrero/marzo; Río, Salvador, Olinda)",
+     "Festa Junina (junio, sobre todo en el Nordeste)",
+     "Réveillon – Nochevieja en Copacabana (31 de diciembre)"
+    ],
+    "lifestyle": "Una vida cálida y social en torno a la playa, el fútbol y la música (samba, bossa nova, forró); son típicos los churrascos familiares del domingo y las bebidas heladas en la calle."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cristo Redentor y Pan de Azúcar (Río de Janeiro)",
+     "Cataratas del Iguazú",
+     "Centro histórico de Pelourinho (Salvador)",
+     "La Amazonia y el Encuentro de las Aguas (Manaos)",
+     "Dunas y lagunas de Lençóis Maranhenses",
+     "Humedales del Pantanal"
+    ],
+    "bestSeasons": "Para Río, abril – junio y agosto – octubre son lo más equilibrado; las lagunas de Lençóis están llenas de junio a septiembre y la fauna del Pantanal se observa mejor de julio a octubre.",
+    "travelStyleTip": "Brasil es del tamaño de un continente: vuele entre regiones, use 99/Uber en las ciudades y aprenda algunas frases básicas en portugués."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~57 %, evangélicos ~27 %, sin religión ~9 %, espiritistas ~2 %, religiones afrobrasileñas (candomblé, umbanda) ~1 % (censo 2022)",
+    "respectNorms": "Cubra hombros y rodillas en las iglesias. Pida siempre permiso antes de fotografiar en templos de candomblé (terreiros).",
+    "sacredSites": [
+     "Santuario Nacional de Nuestra Señora Aparecida (estado de São Paulo)",
+     "Iglesia del Señor de Bonfim (Salvador)",
+     "Catedral Metropolitana de Brasilia (Niemeyer)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portugués (portugués de Brasil)",
+    "englishProficiency": "Limitado fuera de los hoteles turísticos; una app de traducción y algo de portugués ayudan mucho. El español se entiende en parte.",
+    "phrases": [
+     {
+      "phrase": "Oi, tudo bem?",
+      "meaning": "Hola, ¿qué tal?",
+      "translation": "Hola, ¿qué tal?",
+      "pronunciation": "oy, TOO-doo bayn"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Gracias (dicho por un hombre / una mujer)",
+      "translation": "Gracias (dicho por un hombre / una mujer)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     },
+     {
+      "phrase": "Com licença",
+      "meaning": "Con permiso",
+      "translation": "Con permiso",
+      "pronunciation": "kohn lee-SEN-sah"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KWAN-too KOOS-tah"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "ah KOHN-tah poor fah-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Pedro Álvares Cabral llegó a estas tierras indígenas en 1500 y se convirtieron en colonia portuguesa. La corte portuguesa se trasladó a Río en 1808; Brasil se independizó como imperio en 1822, abolió la esclavitud en 1888 y se proclamó república en 1889.",
+    "milestones": [
+     "1500: Cabral llega a la costa brasileña",
+     "1822: Grito de Ipiranga e independencia",
+     "1888: la Ley Áurea abole la esclavitud",
+     "1960: inauguración de la nueva capital, Brasilia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Feijoada (guiso de frijoles negros y carne; tradicionalmente con cerdo)",
+     "Moqueca (guiso de pescado con leche de coco, Bahía)",
+     "Churrasco y picaña (carne a la parrilla en espeto)"
+    ],
+    "traditionalDrinks": [
+     "Caipiriña (cachaza y lima; con alcohol)",
+     "Guaraná Antarctica (refresco de guaraná)",
+     "Cafezinho (café pequeño y dulce)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pão de queijo (panecillos de queso)",
+     "Coxinha (croqueta de pollo)",
+     "Brigadeiro (bombón de chocolate)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pelé (leyenda del fútbol)",
+     "Ayrton Senna (campeón de F1)",
+     "Oscar Niemeyer (arquitecto de Brasilia)"
+    ],
+    "strongSectors": [
+     "Exportaciones agroindustriales (líder mundial en soja y café)",
+     "Minería y petróleo (Vale, Petrobras)",
+     "Aeronáutica (Embraer)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas y el pago sin contacto están muy extendidos; los locales usan el sistema de pago instantáneo Pix. En caja le preguntarán “crédito ou débito?”; lleve algo de efectivo para vendedores de playa y mercados.",
+    "tippingCulture": "La cuenta suele incluir un 10 % de servicio (“serviço”); legalmente es opcional, pero se espera. No hace falta propina adicional.",
+    "economicPillars": "Agricultura y ganadería, minería y petróleo, industria, servicios y finanzas."
+   }
+  },
+  "itin": {
+   "routeName": "Clásicos de Brasil: Salvador, Río de Janeiro y cataratas del Iguazú",
+   "routeSummary": "Una ruta de 9 días unida por vuelos nacionales: de Salvador, corazón de la cultura afrobrasileña, a las vistas y playas icónicas de Río de Janeiro y, por último, a las cataratas del Iguazú.",
+   "totalDays": 9,
+   "idealDurationText": "Ruta de 9 días",
+   "bestSeason": "Abril – junio y agosto – octubre",
+   "transportMode": "Vuelos nacionales (Salvador – Río – Foz do Iguaçu) + 99/Uber y metro en las ciudades",
+   "paceLevel": "Equilibrado (cultura, ciudad y naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Salvador (Bahía)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Centro histórico de Pelourinho (UNESCO)",
+      "Elevador Lacerda y Mercado Modelo",
+      "Iglesia del Señor de Bonfim",
+      "Faro de Barra"
+     ],
+     "activities": [
+      "Vea una exhibición de capoeira o tome una clase de prueba.",
+      "Contemple el atardecer en el Faro de Barra.",
+      "Escuche los ensayos de tambores de Olodum los martes por la noche en Pelourinho."
+     ],
+     "foodAndDrinks": [
+      "Acarajé (buñuelo de frijol con camarón)",
+      "Moqueca baiana",
+      "Cocada (dulce de coco)"
+     ],
+     "criticalTips": [
+      "Pelourinho es animado y seguro de día; de noche evite calles vacías y muévase en 99/Uber.",
+      "Quien le ata cintas del Bonfim o pulseras “de regalo” puede pedirle dinero después; rechace con amabilidad."
+     ],
+     "mapsQuery": "Salvador, Bahia, Brasil"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Río de Janeiro",
+     "recommendedDuration": "4 Días",
+     "durationBadge": "4 Días",
+     "highlights": [
+      "Cristo Redentor (Corcovado)",
+      "Teleférico del Pan de Azúcar",
+      "Playas de Copacabana e Ipanema",
+      "Escalera Selarón y Santa Teresa"
+     ],
+     "activities": [
+      "Aplauda el atardecer desde las rocas de Arpoador.",
+      "Vaya a una noche de samba en Lapa (ida y vuelta en Uber).",
+      "Vea un partido o haga una visita al Maracaná."
+     ],
+     "foodAndDrinks": [
+      "Feijoada (tradición de los sábados; lleva cerdo)",
+      "Bol de açaí",
+      "Caipiriña (con alcohol)"
+     ],
+     "criticalTips": [
+      "Compre en línea el tren del Corcovado y suba temprano; por la tarde suele haber nubes.",
+      "Haga senderos (p. ej. Dois Irmãos) solo con guía local."
+     ],
+     "mapsQuery": "Rio de Janeiro, Brasil"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Foz do Iguaçu (cataratas del Iguazú)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Sendero panorámico del Parque Nacional do Iguaçu (lado brasileño)",
+      "Garganta del Diablo",
+      "Parque das Aves",
+      "Represa de Itaipú"
+     ],
+     "activities": [
+      "Métase bajo las cataratas en la lancha de Macuco Safari.",
+      "Dedique un día al lado argentino (Puerto Iguazú).",
+      "Vea tucanes de cerca en el Parque das Aves."
+     ],
+     "foodAndDrinks": [
+      "Churrasco en rodízio",
+      "Pescado de río (dorado, surubí)"
+     ],
+     "criticalTips": [
+      "Lleve el pasaporte para cruzar al lado argentino.",
+      "Lleve poncho; no alimente a los coatíes: roban comida y pueden morder."
+     ],
+     "mapsQuery": "Foz do Iguaçu, Paraná, Brasil"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Feijoada (lleva cerdo)",
+     "Moqueca",
+     "Picaña"
+    ],
+    "drinks": [
+     "Caipiriña (con alcohol)",
+     "Guaraná",
+     "Agua de coco"
+    ],
+    "streetFoods": [
+     "Pão de queijo",
+     "Coxinha",
+     "Brigadeiro"
+    ],
+    "diningAdvice": "En los restaurantes “por quilo” se paga según el peso del plato: barato y práctico. En las churrasquerías una tarjeta verde/roja indica si sigue llegando carne; la cuenta incluye un 10 % de servicio."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo N / C (los enchufes Schuko no entran en tipo N)",
+     "Protector solar alto y repelente de mosquitos",
+     "Certificado de fiebre amarilla (recomendado para la Amazonia e Iguazú)",
+     "Impermeable ligero / poncho"
+    ],
+    "safetyAndEtiquette": [
+     "Deje los objetos de valor en la caja fuerte y no muestre el móvil en la calle.",
+     "Revise la pantalla del datáfono antes de confirmar el pago."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "N",
+     "C"
+    ],
+    "voltage": "127V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes empotrados tipo N, propios de Brasil, con tres clavijas redondas. Los europlugs finos (tipo C) suelen entrar, pero los Schuko (F) gruesos no, así que lleve adaptador. El voltaje varía: Río y São Paulo 127 V; Brasilia, Fortaleza, Recife y Florianópolis 220 V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En las grandes ciudades el agua se trata, pero por los depósitos y tuberías conviene beber agua embotellada o filtrada.",
+    "vaccines": [
+     "Fiebre amarilla: recomendada para la Amazonia, Iguazú y muchas zonas del interior (al menos 10 días antes); no obligatoria al llegar desde Turquía",
+     "Hepatitis A y fiebre tifoidea",
+     "Protección contra mosquitos por dengue y chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "A la cuenta del restaurante se suele añadir un 10 % de servicio.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "La “taxa de serviço” es legalmente opcional; puede pedir que la quiten si el servicio fue malo. En taxis y hoteles basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (no existe un sistema extendido de devolución a turistas)",
+    "minSpend": "No aplica",
+    "customsNote": "En la práctica Brasil no devuelve impuestos a turistas por compras. Para comprar sin impuestos use las tiendas duty-free de llegada y salida de los aeropuertos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "airportSimTrapWarning": "Para registrar una línea prepago local hace falta el pasaporte en una tienda de la operadora y puede tardar; los quioscos del aeropuerto son caros. Lo más fácil es una eSIM configurada antes del viaje."
+   },
+   "touristScams": [
+    {
+     "title": "Truco del datáfono",
+     "desc": "Vendedores de playa, algunos taxis o bares teclean un cero de más en la maquininha y piden el PIN sin mostrar la pantalla.",
+     "tip": "No confirme sin ver el importe; pague sin contacto si puede y active las alertas del banco."
+    },
+    {
+     "title": "Bebidas adulteradas (“Boa noite, Cinderela”)",
+     "desc": "En bares o con personas conocidas en apps de citas, drogan la bebida y roban a la víctima.",
+     "tip": "No pierda de vista su bebida, no acepte copas de desconocidos y quede la primera vez en lugares concurridos."
+    },
+    {
+     "title": "Robo de móviles y arrastão",
+     "desc": "Ladrones en moto o grupos que corren por la playa arrancan móviles, bolsos y joyas.",
+     "tip": "No lleve objetos de valor a la playa ni use el móvil junto al bordillo."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Бразильский реал (BRL)",
+   "bestMonths": "Апрель – июнь и август – октябрь (мягче и меньше туристов); декабрь – март — жаркое дождливое лето в Рио, карнавал в феврале/марте; в Амазонии суше с июня по ноябрь",
+   "safety": {
+    "crimeRateSummary": "В крупных городах высокий уровень насильственных преступлений, включая вооружённые ограбления; официальные рекомендации предостерегают от посещения фавел без гида и безлюдных мест ночью. В Рио и Сан-Паулу часты рывки телефонов с мотоциклов и массовые ограбления на пляжах (аррастан).",
+    "commonScams": [
+     "Платёжные терминалы (макининья), где вбивают лишний ноль или прячут экран",
+     "Подсыпание препаратов в напитки в барах или знакомыми из приложений знакомств («Boa noite, Cinderela»)",
+     "Рывки телефонов и массовые ограбления (аррастан) на пляжах и людных улицах Рио"
+    ],
+    "safeTravelTips": [
+     "На пляж берите только полотенце, немного наличных и, возможно, старый телефон; не ходите по улице с телефоном в руке.",
+     "Ночью передвигайтесь на 99 или Uber от двери до двери, а не пешком по Лапе и Центру; при ограблении не сопротивляйтесь.",
+     "Посещайте фавелы только с зарегистрированными турами и лицензированными местными гидами."
+    ],
+    "emergencyNumbers": {
+     "police": "190",
+     "ambulance": "192",
+     "general": "190"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G/5G в городах и на побережье; в Амазонии и Пантанале связь очень ограничена",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Хорошо",
+    "bestCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (хорошее метро в Сан-Паулу, метро и трамвай VLT в Рио; расстояния огромны — летайте или берите междугородние автобусы с родовиарии)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "0.90 - 1.50 $ (метро Сан-Паулу / Рио)",
+    "dailyPassUsd": "Дневного билета нет; ~4 - 8 $ в день на метро и 99/Uber",
+    "popularRideApps": [
+     "99",
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "99 и Uber дешёвые и безопасные — пользуйтесь ими вместо уличных такси, особенно ночью. В аэропортах есть официальные кассы предоплаченного такси и точки посадки для приложений."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "5 - 10 $ (прато фейту или буфет «по весу»)",
+    "coffeeUsd": "1 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Высокий (прямой ~13 ч)",
+    "flightTip": "Turkish Airlines летает напрямую Стамбул – Сан-Паулу (GRU). Расстояния внутри страны огромны, поэтому заранее бронируйте внутренние рейсы LATAM, GOL и Azul; на карнавал и Новый год цены резко растут."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Принято обниматься и целоваться в щёку (в Сан-Паулу один поцелуй, в Рио — два).",
+     "В Бразилии говорят по-португальски, а не по-испански — не стоит обращаться к людям по-испански.",
+     "Жест «ОК» пальцами считается непристойным — используйте поднятый большой палец.",
+     "На дружеские встречи опаздывают на 15-30 минут; на деловые встречи — нужно приходить вовремя."
+    ],
+    "festivals": [
+     "Карнавал (февраль/март; Рио, Салвадор, Олинда)",
+     "Феста Жунина (июнь, особенно на северо-востоке)",
+     "Ревейон — встреча Нового года на Копакабане (31 декабря)"
+    ],
+    "lifestyle": "Тёплая и общительная жизнь вокруг пляжа, футбола и музыки (самба, босса-нова, форро); типичны воскресные семейные шураско и ледяные напитки на улице."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Статуя Христа-Искупителя и гора Сахарная Голова (Рио-де-Жанейро)",
+     "Водопады Игуасу",
+     "Исторический центр Пелоуриньо (Салвадор)",
+     "Амазония и Слияние вод (Манаус)",
+     "Дюны и лагуны Ленсойс-Мараньенсис",
+     "Водно-болотные угодья Пантанал"
+    ],
+    "bestSeasons": "Для Рио лучше всего апрель – июнь и август – октябрь; лагуны Ленсойс полны в июне – сентябре, а животных в Пантанале лучше всего наблюдать в июле – октябре.",
+    "travelStyleTip": "Бразилия размером с континент: между регионами летайте, в городах пользуйтесь 99/Uber и выучите несколько фраз по-португальски."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~57%, евангелисты ~27%, неверующие ~9%, спиритисты ~2%, афробразильские религии (кандомбле, умбанда) ~1% (перепись 2022)",
+    "respectNorms": "В церквях прикрывайте плечи и колени. В храмах кандомбле (террейру) обязательно спрашивайте разрешения на съёмку.",
+    "sacredSites": [
+     "Национальное святилище Богоматери Апаресиды (штат Сан-Паулу)",
+     "Церковь Сеньор-ду-Бонфинь (Салвадор)",
+     "Кафедральный собор Бразилиа (Нимейер)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Португальский (бразильский вариант)",
+    "englishProficiency": "За пределами туристических отелей английский слабый; помогут переводчик и базовый португальский. Испанский отчасти понимают.",
+    "phrases": [
+     {
+      "phrase": "Oi, tudo bem?",
+      "meaning": "Привет, как дела?",
+      "translation": "Привет, как дела?",
+      "pronunciation": "oy, TOO-doo bayn"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Спасибо (говорит мужчина / женщина)",
+      "translation": "Спасибо (говорит мужчина / женщина)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     },
+     {
+      "phrase": "Com licença",
+      "meaning": "Извините / Разрешите пройти",
+      "translation": "Извините / Разрешите пройти",
+      "pronunciation": "kohn lee-SEN-sah"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-too KOOS-tah"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "ah KOHN-tah poor fah-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Педру Алвариш Кабрал достиг этих земель коренных народов в 1500 г., и они стали португальской колонией. В 1808 г. королевский двор переехал в Рио; в 1822 г. Бразилия провозгласила независимость как империя, в 1888 г. отменила рабство и в 1889 г. стала республикой.",
+    "milestones": [
+     "1500: Кабрал достигает побережья Бразилии",
+     "1822: «Клич Ипиранги» и независимость",
+     "1888: «Золотой закон» отменяет рабство",
+     "1960: открытие новой столицы Бразилиа"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Фейжоада (рагу из чёрной фасоли и мяса, традиционно со свининой)",
+     "Мокека (рыбное рагу на кокосовом молоке, Баия)",
+     "Шураско и пиканья (говядина на шампуре)"
+    ],
+    "traditionalDrinks": [
+     "Кайпиринья (кашаса и лайм; алкогольный)",
+     "Гуарана Antarctica (газировка с гуараной)",
+     "Кафезинью (маленький сладкий чёрный кофе)"
+    ],
+    "streetFoodAndDesserts": [
+     "Пан-де-кейжу (сырные булочки)",
+     "Кошинья (крокет с курицей)",
+     "Бригадейру (шоколадная конфета из сгущёнки)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Пеле (легенда футбола)",
+     "Айртон Сенна (чемпион Формулы-1)",
+     "Оскар Нимейер (архитектор Бразилиа)"
+    ],
+    "strongSectors": [
+     "Агроэкспорт (мировой лидер по сое и кофе)",
+     "Добыча руды и нефти (Vale, Petrobras)",
+     "Авиастроение (Embraer)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата распространены; местные пользуются системой мгновенных платежей Pix. На кассе спросят «crédito ou débito?»; для пляжных торговцев и рынков возьмите немного наличных реалов.",
+    "tippingCulture": "В счёт обычно включено 10% за обслуживание («serviço»); по закону это необязательно, но ожидается. Дополнительные чаевые не нужны.",
+    "economicPillars": "Сельское хозяйство и животноводство, добыча руды и нефти, промышленность, услуги и финансы."
+   }
+  },
+  "itin": {
+   "routeName": "Классика Бразилии: Салвадор, Рио-де-Жанейро и водопады Игуасу",
+   "routeSummary": "9-дневный маршрут с внутренними перелётами: от Салвадора, сердца афробразильской культуры, к знаменитым видам и пляжам Рио-де-Жанейро и далее к водопадам Игуасу.",
+   "totalDays": 9,
+   "idealDurationText": "Маршрут на 9 дней",
+   "bestSeason": "Апрель – июнь и август – октябрь",
+   "transportMode": "Внутренние рейсы (Салвадор – Рио – Фос-ду-Игуасу) + 99/Uber и метро в городах",
+   "paceLevel": "Сбалансированный (культура, город и природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Салвадор (Баия)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Исторический центр Пелоуриньо (ЮНЕСКО)",
+      "Лифт Ласерда и рынок Модело",
+      "Церковь Сеньор-ду-Бонфинь",
+      "Маяк Фарол-да-Барра"
+     ],
+     "activities": [
+      "Посмотрите выступление капоэйры или запишитесь на пробное занятие.",
+      "Встретьте закат у маяка Фарол-да-Барра.",
+      "По вторникам вечером послушайте барабаны Olodum в Пелоуриньо."
+     ],
+     "foodAndDrinks": [
+      "Акараже (оладья из фасоли с креветками)",
+      "Мокека по-баиянски",
+      "Кокада (кокосовая сладость)"
+     ],
+     "criticalTips": [
+      "Днём Пелоуриньо оживлён и безопасен; ночью избегайте пустых улиц и ездите на 99/Uber.",
+      "Те, кто повязывает ленточки Бонфинь или «дарит» браслеты, потом просят денег — вежливо отказывайтесь."
+     ],
+     "mapsQuery": "Salvador, Bahia, Brasil"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Рио-де-Жанейро",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Статуя Христа-Искупителя (Корковаду)",
+      "Канатная дорога на Сахарную Голову",
+      "Пляжи Копакабана и Ипанема",
+      "Лестница Селарона и Санта-Тереза"
+     ],
+     "activities": [
+      "Поаплодируйте закату со скал Арпоадор.",
+      "Сходите на самба-вечер в Лапе (туда и обратно на Uber).",
+      "Посмотрите матч или сходите на экскурсию по Маракане."
+     ],
+     "foodAndDrinks": [
+      "Фейжоада (субботняя традиция; со свининой)",
+      "Асаи-боул",
+      "Кайпиринья (алкогольная)"
+     ],
+     "criticalTips": [
+      "Покупайте билеты на поезд Корковаду онлайн и приезжайте рано — днём статую часто закрывают облака.",
+      "В походы (например, на Дойс-Ирманс) ходите только с местным гидом."
+     ],
+     "mapsQuery": "Rio de Janeiro, Brasil"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Фос-ду-Игуасу (водопады Игуасу)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Панорамная тропа нацпарка Игуасу (бразильская сторона)",
+      "Глотка дьявола (Гарганта-ду-Диабу)",
+      "Парк птиц Parque das Aves",
+      "Плотина Итайпу"
+     ],
+     "activities": [
+      "Подплывите под самые струи на катере Macuco Safari.",
+      "Посвятите день аргентинской стороне (Пуэрто-Игуасу).",
+      "Посмотрите на туканов вблизи в Parque das Aves."
+     ],
+     "foodAndDrinks": [
+      "Шураско-родизиу (мясо без ограничений)",
+      "Речная рыба (дорадо, пинтадо)"
+     ],
+     "criticalTips": [
+      "Берите паспорт для перехода на аргентинскую сторону.",
+      "Возьмите дождевик; не кормите носух — они выхватывают еду и могут укусить."
+     ],
+     "mapsQuery": "Foz do Iguaçu, Paraná, Brasil"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Фейжоада (со свининой)",
+     "Мокека",
+     "Пиканья"
+    ],
+    "drinks": [
+     "Кайпиринья (алкогольная)",
+     "Гуарана",
+     "Кокосовая вода (агуа-де-коку)"
+    ],
+    "streetFoods": [
+     "Пан-де-кейжу",
+     "Кошинья",
+     "Бригадейру"
+    ],
+    "diningAdvice": "В ресторанах «пор кило» платят по весу тарелки — дёшево и удобно. В шураскариях зелёная/красная карточка на столе означает «несите ещё» или «хватит»; в счёт добавляют 10% за обслуживание."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник N / C (вилки Schuko не входят в розетки типа N)",
+     "Крем с высоким SPF и репеллент",
+     "Сертификат о прививке от жёлтой лихорадки (рекомендуется для Амазонии и Игуасу)",
+     "Лёгкий дождевик / пончо"
+    ],
+    "safetyAndEtiquette": [
+     "Оставляйте ценности в сейфе отеля и не светите телефоном на улице.",
+     "Проверяйте сумму на экране терминала перед подтверждением оплаты."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "N",
+     "C"
+    ],
+    "voltage": "127V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Бразильские утопленные розетки типа N с тремя круглыми контактами. Тонкие европейские вилки (тип C) обычно входят, а толстые Schuko (F) — нет, нужен переходник. Напряжение зависит от города: Рио и Сан-Паулу 127 В; Бразилиа, Форталеза, Ресифи и Флорианополис 220 В."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В крупных городах воду очищают, но из-за баков и труб в зданиях лучше пить бутилированную или фильтрованную.",
+    "vaccines": [
+     "Жёлтая лихорадка: рекомендуется для Амазонии, Игуасу и многих внутренних районов (минимум за 10 дней); при въезде из Турции не обязательна",
+     "Гепатит A и брюшной тиф",
+     "Защита от комаров из-за денге и чикунгуньи"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "К счёту в ресторане обычно добавляют 10% за обслуживание.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "«Taxa de serviço» по закону необязательна — при плохом обслуживании её можно попросить убрать. Таксистам и персоналу отеля достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (общей системы возврата налогов туристам нет)",
+    "minSpend": "Не применяется",
+    "customsNote": "На практике Бразилия не возвращает туристам налоги с покупок. Без налога можно купить в дьюти-фри зон прилёта и вылета в аэропортах."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "airportSimTrapWarning": "Для регистрации местной предоплаченной SIM нужен паспорт в салоне оператора, и это может занять время; киоски в аэропорту дорогие. Проще всего заранее установить eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Обман с платёжным терминалом",
+     "desc": "Пляжные торговцы, некоторые таксисты или бары вбивают в терминал лишний ноль и просят ПИН, не показывая экран.",
+     "tip": "Не подтверждайте, не видя суммы; платите бесконтактно и включите уведомления банка."
+    },
+    {
+     "title": "Подсыпание в напитки («Boa noite, Cinderela»)",
+     "desc": "В барах или через знакомства в приложениях в напиток подсыпают препарат и грабят жертву.",
+     "tip": "Не оставляйте напиток без присмотра, не принимайте угощения от незнакомцев, первые свидания — в людных местах."
+    },
+    {
+     "title": "Рывки телефонов и аррастан",
+     "desc": "Воры на мотоциклах или бегущие по пляжу группы выхватывают телефоны, сумки и украшения.",
+     "tip": "Не берите ценности на пляж и не пользуйтесь телефоном у края тротуара."
+    }
+   ]
+  }
+ }
+}

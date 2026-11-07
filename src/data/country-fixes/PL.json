@@ -324,6 +324,67 @@
      "Kırmızı ışıkta karşıdan karşıya geçmeyin; cezası vardır."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C/E tipi (topraklama pimli Fransız tipi) priz; Türk C fişleri ve hibrit E/F Schuko fişler takılır, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu standartlara uygundur ve içilebilir; eski binalarda borular nedeniyle tadı kötü olabilir, birçok yerli filtreli su tercih eder.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 civarı bahşiş adettir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Dikkat: parayı verirken “dziękuję” (teşekkürler) demek “para üstü kalsın” anlamına gelebilir; para üstü istiyorsanız teşekkürü sonra edin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%23 KDV (komisyon sonrası ~%12–17)",
+    "minSpend": "Fiş başına 200 PLN",
+    "customsNote": "Polonya’da Tax Free tamamen elektroniktir (TAX FREE PUESC): mağaza dijital belge düzenler, AB’den çıkarken havalimanında gümrük kioskunda veya gümrükte onaylatırsınız."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "airportSimTrapWarning": "Havalimanı döviz büroları ve kioskları pahalıdır; Orange, Play, Plus veya T-Mobile hatları marketlerde ve büfelerde (Żabka) pasaportla ucuza satılır, eSIM de mümkündür. Türk hatlarında AB roaming paketi yoktur."
+   },
+   "touristScams": [
+    {
+     "title": "Ruhsatsız taksi",
+     "desc": "Havalimanı ve garlarda ruhsatsız taksilerin fahiş ücret alması.",
+     "tip": "Bolt, Uber veya FreeNow kullanın ya da resmî taksi durağından binin."
+    },
+    {
+     "title": "Krakov kulüp hesabı",
+     "desc": "Krakov Eski Şehir’de sokak tanıtımcılarının götürdüğü kulüplerde yüzlerce euroluk hesap çıkması.",
+     "tip": "Sokaktan çağıran tanıtımcılara uymayın; içki fiyatlarını önceden görün."
+    },
+    {
+     "title": "Havalimanı kantor’u",
+     "desc": "Havalimanı döviz bürolarında (kantor) çok kötü kur.",
+     "tip": "Havalimanında yalnızca banka ATM’si kullanın ve ödemeyi zloti olarak seçin."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +712,67 @@
      "Don’t cross on red; jaywalking is fined."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C/E sockets (French type with an earth pin); Turkish C plugs and hybrid E/F Schuko plugs fit, no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water meets standards and is drinkable; in old buildings pipes can affect the taste, and many locals prefer filtered water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Around 10% is customary in restaurants.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Note: saying ‘dziękuję’ (thank you) when handing over money can be taken as ‘keep the change’; if you want change, thank them afterwards."
+   },
+   "taxFree": {
+    "vatRefundPercent": "23% VAT (~12–17% net after fees)",
+    "minSpend": "PLN 200 per receipt",
+    "customsNote": "Tax Free in Poland is fully electronic (TAX FREE PUESC): the store issues a digital document, which you validate at a customs kiosk or desk at the airport when leaving the EU."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "airportSimTrapWarning": "Airport exchange offices and kiosks are pricey; Orange, Play, Plus or T-Mobile SIMs are sold cheaply with a passport in shops and kiosks (Żabka), and eSIMs are available. Turkish SIMs have no EU roaming deal."
+   },
+   "touristScams": [
+    {
+     "title": "Unlicensed taxis",
+     "desc": "Unlicensed taxis at airports and stations charge inflated fares.",
+     "tip": "Use Bolt, Uber or FreeNow or take an official taxi from the rank."
+    },
+    {
+     "title": "Kraków club bills",
+     "desc": "Clubs in Kraków’s Old Town, reached via street promoters, present bills of hundreds of euros.",
+     "tip": "Ignore street promoters and see drink prices before ordering."
+    },
+    {
+     "title": "Airport kantor",
+     "desc": "Airport exchange offices (kantor) with very poor rates.",
+     "tip": "Use only bank ATMs at the airport and choose to pay in zloty."
+    }
+   ]
   }
  },
  "de": {
@@ -978,6 +1100,67 @@
      "Nicht bei Rot über die Straße gehen; das kostet Bußgeld."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/E (französischer Typ mit Erdungsstift); türkische C-Stecker und Hybrid-Schukostecker E/F passen, kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser entspricht den Normen und ist trinkbar; in Altbauten können Rohre den Geschmack beeinträchtigen, viele Einheimische trinken gefiltertes Wasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Etwa 10 % sind in Restaurants üblich.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Achtung: Wer beim Bezahlen „dziękuję“ (danke) sagt, meint oft „stimmt so“; wenn Sie Wechselgeld möchten, bedanken Sie sich erst danach."
+   },
+   "taxFree": {
+    "vatRefundPercent": "23 % MwSt. (netto ~12–17 % nach Gebühren)",
+    "minSpend": "200 PLN pro Beleg",
+    "customsNote": "Tax Free ist in Polen vollständig elektronisch (TAX FREE PUESC): Das Geschäft stellt ein digitales Dokument aus, das Sie bei der Ausreise aus der EU am Flughafen an einem Zollkiosk oder -schalter bestätigen lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "airportSimTrapWarning": "Wechselstuben und Kioske am Flughafen sind teuer; SIMs von Orange, Play, Plus oder T-Mobile gibt es mit Pass günstig in Läden und Kiosken (Żabka), eSIMs ebenfalls. Türkische SIMs haben kein EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Unlizenzierte Taxis",
+     "desc": "Unlizenzierte Taxis an Flughäfen und Bahnhöfen verlangen überhöhte Preise.",
+     "tip": "Bolt, Uber oder FreeNow nutzen oder ein offizielles Taxi am Stand nehmen."
+    },
+    {
+     "title": "Clubrechnungen in Krakau",
+     "desc": "Clubs in der Krakauer Altstadt, zu denen Straßenwerber locken, präsentieren Rechnungen über Hunderte Euro.",
+     "tip": "Straßenwerber ignorieren und Getränkepreise vor der Bestellung ansehen."
+    },
+    {
+     "title": "Kantor am Flughafen",
+     "desc": "Wechselstuben (Kantor) am Flughafen mit sehr schlechten Kursen.",
+     "tip": "Am Flughafen nur Bankautomaten nutzen und in Złoty zahlen."
+    }
+   ]
   }
  },
  "es": {
@@ -1305,6 +1488,67 @@
      "No cruce en rojo; se multa."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C/E (tipo francés con clavija de tierra); los enchufes turcos C y los Schuko híbridos E/F encajan, no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo cumple las normas y es potable; en edificios antiguos las tuberías pueden afectar al sabor y muchos locales prefieren agua filtrada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "En restaurantes es costumbre dejar alrededor de un 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Ojo: decir “dziękuję” (gracias) al entregar el dinero puede entenderse como “quédese con el cambio”; si quiere el cambio, dé las gracias después."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 23 % (~12–17 % neto tras comisiones)",
+    "minSpend": "200 PLN por ticket",
+    "customsNote": "En Polonia el Tax Free es totalmente electrónico (TAX FREE PUESC): la tienda emite un documento digital que se valida en un quiosco o mostrador de aduanas del aeropuerto al salir de la UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "airportSimTrapWarning": "Las casas de cambio y quioscos del aeropuerto son caros; las SIM de Orange, Play, Plus o T-Mobile se venden baratas con pasaporte en tiendas y quioscos (Żabka), y también hay eSIM. Las SIM turcas no tienen roaming de la UE."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis sin licencia",
+     "desc": "Taxis sin licencia en aeropuertos y estaciones cobran tarifas infladas.",
+     "tip": "Use Bolt, Uber o FreeNow o tome un taxi oficial en la parada."
+    },
+    {
+     "title": "Cuentas de clubes en Cracovia",
+     "desc": "Clubes del casco antiguo de Cracovia, a los que llevan los captadores callejeros, presentan cuentas de cientos de euros.",
+     "tip": "Ignore a los captadores y consulte los precios antes de pedir."
+    },
+    {
+     "title": "Kantor del aeropuerto",
+     "desc": "Casas de cambio (kantor) del aeropuerto con tasas muy malas.",
+     "tip": "En el aeropuerto use solo cajeros de bancos y elija pagar en zlotys."
+    }
+   ]
   }
  },
  "ru": {
@@ -1632,6 +1876,67 @@
      "Не переходите на красный — за это штрафуют."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C/E (французский тип с заземляющим штырём); турецкие вилки C и гибридные Schuko E/F подходят, переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода соответствует нормам и пригодна для питья; в старых домах трубы портят вкус, и многие местные пьют фильтрованную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять около 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Внимание: сказав «dziękuję» (спасибо) при передаче денег, вы можете дать понять «сдачи не надо»; если нужна сдача, благодарите после."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 23 % (~12–17 % за вычетом комиссий)",
+    "minSpend": "200 PLN на чек",
+    "customsNote": "Tax Free в Польше полностью электронный (TAX FREE PUESC): магазин оформляет цифровой документ, который при выезде из ЕС подтверждается в таможенном киоске или окне аэропорта."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "airportSimTrapWarning": "Обменники и киоски в аэропорту дорогие; SIM Orange, Play, Plus или T-Mobile дёшево продают по паспорту в магазинах и киосках (Żabka), есть и eSIM. У турецких SIM нет роуминга по тарифам ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Нелицензированные такси",
+     "desc": "Нелицензированные такси в аэропортах и на вокзалах завышают цены.",
+     "tip": "Пользуйтесь Bolt, Uber или FreeNow либо официальной стоянкой такси."
+    },
+    {
+     "title": "Счета в клубах Кракова",
+     "desc": "Клубы в Старом городе Кракова, куда заманивают уличные промоутеры, выставляют счета на сотни евро.",
+     "tip": "Игнорируйте промоутеров и смотрите цены на напитки до заказа."
+    },
+    {
+     "title": "Kantor в аэропорту",
+     "desc": "Обменники (kantor) в аэропорту с очень плохим курсом.",
+     "tip": "В аэропорту пользуйтесь только банкоматами банков и платите в злотых."
+    }
+   ]
   }
  }
 }

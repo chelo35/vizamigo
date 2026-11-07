@@ -1,0 +1,1782 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Kuveyt Dinarı (KWD) – dünyanın en değerli para birimi",
+   "plugType": "Tip G, C (240V, 50Hz)",
+   "bestMonths": "Kasım – Mart (ılık ve kuru) · Haziran – Eylül arası 50 °C’yi aşan sıcaklıklar ve kum fırtınaları",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Sokak suçu çok düşüktür; asıl riskler trafik kazaları ve aşırı yaz sıcağıdır. Bölgesel gerginlikler nedeniyle güncel resmî uyarıları takip edin. Yasalar çok katıdır: alkol tamamen yasaktır, uyuşturucuya ağır cezalar uygulanır.",
+    "commonScams": [
+     "Taksimetre kullanmayan taksicilerin havalimanında yüksek sabit fiyat istemesi",
+     "Sahte kurye/gümrük SMS’leriyle kart bilgisi isteyen dolandırıcılıklar",
+     "Altın çarşısında ayar ve gramajın tam belirtilmemesi"
+    ],
+    "safeTravelTips": [
+     "Alkol, domuz ürünü ve uyuşturucu getirmeyin; bazı ilaçlar için reçete taşıyın.",
+     "Yazın gün ortasında dışarıda kalmayın, bol su için.",
+     "Kamuda muhafazakâr giyinin ve Ramazan’da gündüz açıkta yiyip içmeyin."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus (4G / 5G)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Çok iyi (Zain, Ooredoo ve stc eSIM sunar)",
+    "bestCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf – Orta (KPTC ve CityBus otobüsleri var ama seyrek; taksi ve araç çağırma uygulamaları esastır)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Yok (Failaka feribotu gidiş-dönüş ~10 - 20 $)",
+    "popularRideApps": [
+     "Careem",
+     "Uber"
+    ],
+    "taxiAdvice": "Careem ve Uber pratik ve güvenlidir; sokak taksisinde fiyatı önceden konuşun. Şehirde yürümek yazın neredeyse imkânsızdır; kısa mesafeler için bile araç kullanılır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.70 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Orta (İstanbul – Kuveyt direkt THY ve Pegasus, ~3,5 saat)",
+    "flightTip": "THY, Pegasus ve Kuwait Airways İstanbul – Kuveyt arasında direkt uçar; kısa bir şehir molası olarak körfez turuna eklenebilir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Divaniye geleneği: erkeklerin akşamları evlerin misafir salonlarında toplanıp sohbet ettiği önemli bir sosyal kurumdur.",
+     "Karşı cinsle tokalaşmadan önce karşı tarafın el uzatmasını bekleyin.",
+     "Kahve ikramını kabul edin; yeterli olunca fincanı hafifçe sallayın.",
+     "Kamuda omuz ve dizleri örtün; sevgi gösterilerinden kaçının."
+    ],
+    "festivals": [
+     "Ulusal Gün ve Kurtuluş Günü (25–26 Şubat)",
+     "Hala Şubat Festivali (Şubat)",
+     "Gergean (Ramazan’ın ortasında çocuk bayramı)"
+    ],
+    "lifestyle": "Kuveyt’te hayat klimalı AVM’ler, sahil yolu Gulf Road ve akşam divaniyeleri etrafında döner. Hafta sonu Cuma–Cumartesi’dir; kış aylarında çölde kamp yapmak yaygındır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kuveyt Kuleleri",
+     "Mübarekiye Çarşısı",
+     "Kuveyt Ulu Camii",
+     "Şeyh Abdullah es-Salim Kültür Merkezi",
+     "Şehit Parkı (Al Shaheed Park)",
+     "Feylake Adası"
+    ],
+    "bestSeasons": "Kasım – Mart (ılık ve kuru) · Haziran – Eylül arası 50 °C’yi aşan sıcaklıklar ve kum fırtınaları",
+    "travelStyleTip": "Kuveyt 2-3 günlük bir şehir molası için idealdir; kış aylarında gidip Feylake Adası’na günübirlik feribot turu ekleyin."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%75; vatandaşlar arasında Sünni çoğunluk ve Şii azınlık), Hristiyanlık (~%18, göçmenler), Hinduizm ve diğerleri",
+    "respectNorms": "Ulu Cami ziyaretlerinde kadınlara abaya verilir; namaz saatlerinde ziyaret yapılmaz. Ramazan’da gündüz kamuda yemek, içmek ve sigara yasaktır.",
+    "sacredSites": [
+     "Kuveyt Ulu Camii",
+     "Kutsal Aile Katedrali (Kuveyt Şehri)",
+     "Halife Camii (ülkenin en eski camilerinden, 1737)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arapça resmî dildir; İngilizce iş ve ticarette yaygındır, ayrıca Hintçe, Urduca ve Tagalog konuşulur.",
+    "englishProficiency": "İyi; otellerde, restoranlarda ve AVM’lerde İngilizce kolayca konuşulur.",
+    "phrases": [
+     {
+      "phrase": "هلا والله (hala wallah)",
+      "meaning": "Hoş geldin! (sıcak karşılama)",
+      "translation": "Hoş geldin! (sıcak karşılama)",
+      "pronunciation": "ha-la wal-lah"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "Nasılsın?",
+      "translation": "Nasılsın?",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Sağ ol / Teşekkürler (Körfez lehçesi)",
+      "translation": "Sağ ol / Teşekkürler (Körfez lehçesi)",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بچم؟ (bicham?)",
+      "meaning": "Ne kadar? (Kuveyt lehçesi)",
+      "translation": "Ne kadar? (Kuveyt lehçesi)",
+      "pronunciation": "bi-cham"
+     },
+     {
+      "phrase": "زين (zēn)",
+      "meaning": "İyi / Tamam",
+      "translation": "İyi / Tamam",
+      "pronunciation": "zeyn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Feylake Adası antik Dilmun ve Helenistik (İkaros) yerleşimlerine ev sahipliği yaptı. 18. yüzyılda Beni Utbe kabileleri bölgeye yerleşti; Al Sabah ailesi 1752’den beri yönetimdedir. 1899’da İngiliz himayesi, 1938’de Burgan’da petrol keşfi ve 1961’de bağımsızlık modern Kuveyt’i şekillendirdi.",
+    "milestones": [
+     "1752: Al Sabah ailesinin yönetimi başladı",
+     "1899: İngiltere ile koruma anlaşması",
+     "1938: Burgan petrol sahasının keşfi",
+     "1961: Bağımsızlık"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mecbus (baharatlı pilav üstü et veya tavuk; milli yemek)",
+     "Mutabbag samak (pilav üstü balık)",
+     "Harees (buğday ve et lapası)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (kakuleli Arap kahvesi)",
+     "Karak çay",
+     "Laban (ayran)"
+    ],
+    "streetFoodAndDesserts": [
+     "Lokaimat (şuruplu hamur topları)",
+     "Gers ogaily (safran ve kakuleli kek)",
+     "Şavurma"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Şeyh Abdullah es-Salim es-Sabah (1962 anayasasının mimarı)",
+     "Abdullah er-Ruveyşid (ünlü şarkıcı)",
+     "Fehaid el-Deehani (olimpiyat atıcılık şampiyonu)"
+    ],
+    "strongSectors": [
+     "Petrol (ihracat gelirlerinin ~%90’ı; Burgan dünyanın en büyük sahalarından)",
+     "Ulusal varlık fonu (Kuwait Investment Authority, 1953)",
+     "Bankacılık ve finans"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme neredeyse her yerde geçer (yerel KNET sistemi yaygındır); çarşı ve küçük alışverişler için az miktarda nakit dinar yeterlidir.",
+    "tippingCulture": "Bahşiş zorunlu değildir; restoranlarda %10 takdir edilir, otel ve restoranlarda servis ücreti eklenmiş olabilir.",
+    "economicPillars": "Petrol ve doğal gaz, petrokimya, finans ve yatırım, perakende."
+   }
+  },
+  "itin": {
+   "routeName": "Kuveyt Şehir Molası: Mübarekiye, Kuveyt Kuleleri ve Feylake Adası",
+   "routeSummary": "Eski çarşı ve Ulu Cami’den Körfez kıyısındaki ikonik Kuveyt Kuleleri ile kültür merkezlerine, ardından tarihi Feylake Adası’na uzanan 3 günlük kısa rota.",
+   "totalDays": 3,
+   "idealDurationText": "3 günlük rota",
+   "bestSeason": "Kasım – Mart (ılık ve kuru) · Haziran – Eylül arası 50 °C’yi aşan sıcaklıklar ve kum fırtınaları",
+   "transportMode": "Careem/Uber ve taksi; Feylake için Ras Salmiya’dan feribot",
+   "paceLevel": "Sakin (kısa şehir molası)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Kuveyt Şehri Merkezi",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Mübarekiye Çarşısı",
+      "Kuveyt Ulu Camii",
+      "Seif Sarayı (dışarıdan)",
+      "Kuveyt Ulusal Müzesi ve Sadu Evi"
+     ],
+     "activities": [
+      "Mübarekiye’de baharat, hurma ve geleneksel kıyafet tezgâhlarını gezin.",
+      "Rehberli turla Ulu Cami’yi ziyaret edin.",
+      "Sadu Evi’nde Bedevi dokuma sanatını görün."
+     ],
+     "foodAndDrinks": [
+      "Mecbus",
+      "Mübarekiye’de taze meyve suyu ve lokaimat"
+     ],
+     "criticalTips": [
+      "Ulu Cami’ye namaz saatleri dışında ve kıyafet kurallarına uygun gidin.",
+      "Çarşıda pazarlık yapılabilir."
+     ],
+     "mapsQuery": "Souq Al-Mubarakiya, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Kuveyt Kuleleri ve Kültür Bölgesi",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Kuveyt Kuleleri ve dönen seyir terası",
+      "Şeyh Abdullah es-Salim Kültür Merkezi (müzeler)",
+      "Şehit Parkı",
+      "Gulf Road ve Salmiya sahili"
+     ],
+     "activities": [
+      "Kuveyt Kuleleri’nin seyir küresinden körfezi izleyin.",
+      "Kültür merkezindeki bilim ve doğa tarihi müzelerini gezin.",
+      "Akşam Salmiya’da sahil yürüyüşü yapıp Marina Mall’a uğrayın."
+     ],
+     "foodAndDrinks": [
+      "Mutabbag samak",
+      "Karak çay"
+     ],
+     "criticalTips": [
+      "Gün içinde müzelerde, akşam serinliğinde açık havada vakit geçirin.",
+      "Kültür merkezinde bazı bölümler için önceden bilet gerekebilir."
+     ],
+     "mapsQuery": "Kuwait Towers, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Feylake Adası",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Helenistik İkaros yerleşimi kalıntıları",
+      "Eski köy evleri ve kıyı",
+      "Adadaki tatil köyü ve plaj"
+     ],
+     "activities": [
+      "Ras Salmiya’dan feribotla adaya geçin.",
+      "Antik Yunan tapınak kalıntılarını ve Dilmun dönemi buluntularını görün.",
+      "Bisiklet veya golf arabasıyla adayı dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Adada ızgara balık",
+      "Gahwa ve hurma"
+     ],
+     "criticalTips": [
+      "Feribot saatlerini önceden kontrol edin; son dönüş seferini kaçırmayın.",
+      "Yazın ada çok sıcaktır; şapka ve su götürün."
+     ],
+     "mapsQuery": "Failaka Island, Kuwait"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mecbus (baharatlı pilav üstü et veya tavuk; milli yemek)",
+     "Mutabbag samak (pilav üstü balık)",
+     "Harees (buğday ve et lapası)"
+    ],
+    "drinks": [
+     "Gahwa (kakuleli Arap kahvesi)",
+     "Karak çay",
+     "Laban (ayran)"
+    ],
+    "streetFoods": [
+     "Lokaimat (şuruplu hamur topları)",
+     "Gers ogaily (safran ve kakuleli kek)",
+     "Şavurma"
+    ],
+    "diningAdvice": "Kuveyt’te alkol bulunmaz; yemek kültürü zengin kahvaltılar, büyük pilav tabakları ve geç saatlere kadar açık kafeler etrafında döner."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi adaptör",
+     "Güneş gözlüğü, şapka ve güneş kremi",
+     "Omuz ve dizi örten kıyafet",
+     "Reçeteli ilaçlar için reçete"
+    ],
+    "safetyAndEtiquette": [
+     "Alkol ve domuz ürünü getirmeyin.",
+     "Kamuda muhafazakâr giyinin.",
+     "Devlet binalarını ve petrol tesislerini fotoğraflamayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Çoğunlukla İngiliz tipi G prizi kullanılır; bazı yerlerde C de bulunur. Türk fişleri için adaptör getirin."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu arıtılmış deniz suyudur ve teknik olarak güvenlidir, ancak depolar nedeniyle yerel halk da şişe su içer.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, kızamık)",
+     "Hepatit A (önerilir)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Zorunlu değildir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Restoranlarda %10 takdir edilir; servis ücreti hesapta yoksa bırakılabilir. Taksilerde yuvarlama yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (Kuveyt’te KDV uygulanmaz)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Kuveyt’te KDV olmadığı için iade de yoktur. Alkol ve domuz ürünlerinin girişi kesinlikle yasaktır; bazı ilaçlar reçetesiz yasaklıdır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "airportSimTrapWarning": "Havalimanında Zain, Ooredoo ve stc mağazalarında pasaportla turist SIM’i alınır; eSIM de kolayca kurulabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksisi",
+     "desc": "Bazı taksiciler taksimetre kullanmadan yüksek sabit fiyat ister.",
+     "tip": "Careem/Uber kullanın veya fiyatı binmeden konuşun."
+    },
+    {
+     "title": "Sahte kargo SMS’i",
+     "desc": "Gümrük veya kurye kılığında kart bilgisi isteyen mesajlar gelir.",
+     "tip": "Bağlantılara tıklamayın, kart bilgisi paylaşmayın."
+    },
+    {
+     "title": "Altın gramajı",
+     "desc": "Altın çarşısında ayar ve işçilik ücreti belirsiz bırakılabilir.",
+     "tip": "Ayarı, gramı ve işçilik ücretini fatura üzerinde isteyin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Kuwaiti Dinar (KWD) – the world’s highest-valued currency",
+   "plugType": "Type G, C (240V, 50Hz)",
+   "bestMonths": "November – March (mild and dry) · June – September temperatures exceed 50 °C, with sandstorms",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Street crime is very low; the main risks are road accidents and extreme summer heat. Follow current official advisories due to regional tensions. Laws are very strict: alcohol is completely banned and drug offences carry severe penalties.",
+    "commonScams": [
+     "Taxi drivers at the airport not using the meter and asking a high fixed price",
+     "Fake courier/customs text messages asking for card details",
+     "Gold souq sellers not clearly stating purity and weight"
+    ],
+    "safeTravelTips": [
+     "Don’t bring alcohol, pork products or drugs; carry prescriptions for some medicines.",
+     "In summer stay indoors at midday and drink plenty of water.",
+     "Dress conservatively in public and don’t eat or drink in public by day during Ramadan."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% of population (4G / 5G)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Very good (Zain, Ooredoo and stc offer eSIM)",
+    "bestCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor – Moderate (KPTC and CityBus buses exist but are infrequent; taxis and ride-hailing apps are essential)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "None (Failaka ferry return ~10 - 20 $)",
+    "popularRideApps": [
+     "Careem",
+     "Uber"
+    ],
+    "taxiAdvice": "Careem and Uber are practical and safe; agree the price with street taxis beforehand. Walking is almost impossible in summer; cars are used even for short distances."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.70 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Moderate (Istanbul – Kuwait direct on Turkish Airlines and Pegasus, ~3.5 hours)",
+    "flightTip": "Turkish Airlines, Pegasus and Kuwait Airways fly direct Istanbul – Kuwait; it works well as a short city stop on a Gulf tour."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "The diwaniya tradition – men gathering in the evening in home reception halls to talk – is an important social institution.",
+     "Wait for the other person to offer a hand before shaking hands with the opposite sex.",
+     "Accept offered coffee; gently shake the cup when you have had enough.",
+     "Cover shoulders and knees in public; avoid public displays of affection."
+    ],
+    "festivals": [
+     "National Day and Liberation Day (25–26 February)",
+     "Hala February Festival (February)",
+     "Gergean (children’s festival in mid-Ramadan)"
+    ],
+    "lifestyle": "Life in Kuwait revolves around air-conditioned malls, the seafront Gulf Road and evening diwaniyas. The weekend is Friday–Saturday; desert camping is popular in winter."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kuwait Towers",
+     "Souq Al-Mubarakiya",
+     "Grand Mosque of Kuwait",
+     "Sheikh Abdullah Al-Salem Cultural Centre",
+     "Al Shaheed Park",
+     "Failaka Island"
+    ],
+    "bestSeasons": "November – March (mild and dry) · June – September temperatures exceed 50 °C, with sandstorms",
+    "travelStyleTip": "Kuwait is ideal for a 2-3 day city stop; go in winter and add a day trip by ferry to Failaka Island."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~75%; Sunni majority and Shia minority among citizens), Christianity (~18%, expatriates), Hinduism and others",
+    "respectNorms": "Women are given an abaya when visiting the Grand Mosque; there are no visits during prayer times. Eating, drinking and smoking in public by day are prohibited in Ramadan.",
+    "sacredSites": [
+     "Grand Mosque of Kuwait",
+     "Holy Family Cathedral (Kuwait City)",
+     "Al Khalifa Mosque (one of the country’s oldest, 1737)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arabic is the official language; English is common in business and trade, and Hindi, Urdu and Tagalog are also spoken.",
+    "englishProficiency": "Good; English is easily spoken in hotels, restaurants and malls.",
+    "phrases": [
+     {
+      "phrase": "هلا والله (hala wallah)",
+      "meaning": "Welcome! (warm greeting)",
+      "translation": "Welcome! (warm greeting)",
+      "pronunciation": "ha-la wal-lah"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Thanks (Gulf dialect)",
+      "translation": "Thanks (Gulf dialect)",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بچم؟ (bicham?)",
+      "meaning": "How much? (Kuwaiti dialect)",
+      "translation": "How much? (Kuwaiti dialect)",
+      "pronunciation": "bi-cham"
+     },
+     {
+      "phrase": "زين (zēn)",
+      "meaning": "Good / OK",
+      "translation": "Good / OK",
+      "pronunciation": "zeyn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Failaka Island hosted ancient Dilmun and Hellenistic (Ikaros) settlements. In the 18th century Bani Utbah tribes settled the area; the Al Sabah family has ruled since 1752. British protection in 1899, the discovery of oil at Burgan in 1938 and independence in 1961 shaped modern Kuwait.",
+    "milestones": [
+     "1752: Rule of the Al Sabah family begins",
+     "1899: Protection agreement with Britain",
+     "1938: Discovery of the Burgan oil field",
+     "1961: Independence"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machboos (spiced rice with meat or chicken; national dish)",
+     "Mutabbaq samak (fish on rice)",
+     "Harees (wheat and meat porridge)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (Arabic coffee with cardamom)",
+     "Karak tea",
+     "Laban (buttermilk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Luqaimat (syrupy dough balls)",
+     "Gers ogaily (saffron and cardamom cake)",
+     "Shawarma"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sheikh Abdullah Al-Salem Al-Sabah (architect of the 1962 constitution)",
+     "Abdullah Al-Rowaished (famous singer)",
+     "Fehaid Al-Deehani (Olympic shooting champion)"
+    ],
+    "strongSectors": [
+     "Oil (~90% of export revenue; Burgan is among the world’s largest fields)",
+     "Sovereign wealth fund (Kuwait Investment Authority, 1953)",
+     "Banking and finance"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless payment work almost everywhere (the local KNET system is common); a little cash in dinars is enough for souqs and small purchases.",
+    "tippingCulture": "Tipping isn’t mandatory; 10% is appreciated in restaurants, and a service charge may already be added in hotels and restaurants.",
+    "economicPillars": "Oil and gas, petrochemicals, finance and investment, retail."
+   }
+  },
+  "itin": {
+   "routeName": "Kuwait City Break: Mubarakiya, Kuwait Towers & Failaka Island",
+   "routeSummary": "A short 3-day route from the old souq and Grand Mosque to the iconic Kuwait Towers and cultural centres on the Gulf shore, then on to historic Failaka Island.",
+   "totalDays": 3,
+   "idealDurationText": "3-Day Itinerary",
+   "bestSeason": "November – March (mild and dry) · June – September temperatures exceed 50 °C, with sandstorms",
+   "transportMode": "Careem/Uber and taxis; ferry from Ras Salmiya to Failaka",
+   "paceLevel": "Relaxed (short city break)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Kuwait City Centre",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Souq Al-Mubarakiya",
+      "Grand Mosque of Kuwait",
+      "Seif Palace (from outside)",
+      "Kuwait National Museum and Sadu House"
+     ],
+     "activities": [
+      "Browse spice, date and traditional clothing stalls in Mubarakiya.",
+      "Visit the Grand Mosque on a guided tour.",
+      "See Bedouin weaving art at Sadu House."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Fresh juice and luqaimat in Mubarakiya"
+     ],
+     "criticalTips": [
+      "Visit the Grand Mosque outside prayer times and in line with the dress code.",
+      "Haggling is possible in the souq."
+     ],
+     "mapsQuery": "Souq Al-Mubarakiya, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Kuwait Towers & Cultural District",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Kuwait Towers and revolving observation deck",
+      "Sheikh Abdullah Al-Salem Cultural Centre (museums)",
+      "Al Shaheed Park",
+      "Gulf Road and Salmiya seafront"
+     ],
+     "activities": [
+      "Look out over the Gulf from the Kuwait Towers observation sphere.",
+      "Explore the science and natural history museums of the cultural centre.",
+      "Walk the Salmiya seafront in the evening and stop at Marina Mall."
+     ],
+     "foodAndDrinks": [
+      "Mutabbaq samak",
+      "Karak tea"
+     ],
+     "criticalTips": [
+      "Spend the day in museums and the cool evening outdoors.",
+      "Some sections of the cultural centre may require tickets in advance."
+     ],
+     "mapsQuery": "Kuwait Towers, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Failaka Island",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Ruins of the Hellenistic settlement of Ikaros",
+      "Old village houses and coastline",
+      "Island resort and beach"
+     ],
+     "activities": [
+      "Take the ferry from Ras Salmiya to the island.",
+      "See the ancient Greek temple remains and Dilmun-era finds.",
+      "Explore the island by bicycle or golf cart."
+     ],
+     "foodAndDrinks": [
+      "Grilled fish on the island",
+      "Gahwa and dates"
+     ],
+     "criticalTips": [
+      "Check ferry times in advance; don’t miss the last return sailing.",
+      "The island is very hot in summer; bring a hat and water."
+     ],
+     "mapsQuery": "Failaka Island, Kuwait"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machboos (spiced rice with meat or chicken; national dish)",
+     "Mutabbaq samak (fish on rice)",
+     "Harees (wheat and meat porridge)"
+    ],
+    "drinks": [
+     "Gahwa (Arabic coffee with cardamom)",
+     "Karak tea",
+     "Laban (buttermilk)"
+    ],
+    "streetFoods": [
+     "Luqaimat (syrupy dough balls)",
+     "Gers ogaily (saffron and cardamom cake)",
+     "Shawarma"
+    ],
+    "diningAdvice": "There is no alcohol in Kuwait; food culture revolves around rich breakfasts, big platters of rice and cafés open until late."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G adapter",
+     "Sunglasses, hat and sunscreen",
+     "Clothes covering shoulders and knees",
+     "Prescriptions for prescription medicines"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t bring alcohol or pork products.",
+     "Dress conservatively in public.",
+     "Don’t photograph government buildings or oil facilities."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mostly British Type G sockets are used; Type C is found in some places. Bring an adapter for Turkish plugs."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is desalinated and technically safe, but because of storage tanks locals also drink bottled water.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, measles)",
+     "Hepatitis A (recommended)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Not mandatory.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "10% is appreciated in restaurants if no service charge is on the bill. Rounding up is enough in taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (Kuwait has no VAT)",
+    "minSpend": "Not applicable",
+    "customsNote": "As Kuwait has no VAT there is no refund. Importing alcohol and pork products is strictly prohibited; some medicines are banned without a prescription."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "airportSimTrapWarning": "Tourist SIMs are sold with a passport at Zain, Ooredoo and stc shops at the airport; an eSIM is also easy to set up."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxi",
+     "desc": "Some drivers ask a high fixed price without using the meter.",
+     "tip": "Use Careem/Uber or agree the price before getting in."
+    },
+    {
+     "title": "Fake delivery SMS",
+     "desc": "Messages posing as customs or couriers ask for card details.",
+     "tip": "Don’t click links or share card details."
+    },
+    {
+     "title": "Gold weight",
+     "desc": "In the gold souq purity and making charges may be left vague.",
+     "tip": "Ask for purity, weight and making charge on the invoice."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Kuwait-Dinar (KWD) – die wertvollste Währung der Welt",
+   "plugType": "Typ G, C (240V, 50Hz)",
+   "bestMonths": "November – März (mild und trocken) · Juni – September über 50 °C und Sandstürme",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Die Straßenkriminalität ist sehr gering; Hauptrisiken sind Verkehrsunfälle und extreme Sommerhitze. Wegen regionaler Spannungen die aktuellen offiziellen Reisehinweise verfolgen. Die Gesetze sind sehr streng: Alkohol ist vollständig verboten, Drogendelikte werden hart bestraft.",
+    "commonScams": [
+     "Taxifahrer am Flughafen, die ohne Taxameter einen hohen Festpreis verlangen",
+     "Gefälschte Kurier-/Zoll-SMS, die Kartendaten abfragen",
+     "Händler im Goldsouk, die Feingehalt und Gewicht nicht klar angeben"
+    ],
+    "safeTravelTips": [
+     "Keinen Alkohol, kein Schweinefleisch und keine Drogen mitbringen; für manche Medikamente Rezepte mitführen.",
+     "Im Sommer mittags drinnen bleiben und viel trinken.",
+     "In der Öffentlichkeit zurückhaltend kleiden und im Ramadan tagsüber nicht öffentlich essen oder trinken."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % der Bevölkerung (4G / 5G)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Sehr gut (Zain, Ooredoo und stc bieten eSIM)",
+    "bestCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach – Mittel (Busse von KPTC und CityBus, aber selten; Taxis und Fahrdienst-Apps sind unerlässlich)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Keine (Fähre nach Failaka hin und zurück ~10 - 20 $)",
+    "popularRideApps": [
+     "Careem",
+     "Uber"
+    ],
+    "taxiAdvice": "Careem und Uber sind praktisch und sicher; bei Straßentaxis den Preis vorher vereinbaren. Zu Fuß gehen ist im Sommer kaum möglich; selbst für kurze Wege nimmt man das Auto."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.70 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Mittel (Istanbul – Kuwait direkt mit Turkish Airlines und Pegasus, ~3,5 Std.)",
+    "flightTip": "Turkish Airlines, Pegasus und Kuwait Airways fliegen direkt Istanbul – Kuwait; gut als kurzer Stadtstopp auf einer Golfreise."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Die Diwaniya – abendliche Männerrunden in den Empfangsräumen der Häuser – ist eine wichtige soziale Institution.",
+     "Beim Händeschütteln mit dem anderen Geschlecht abwarten, ob die Hand gereicht wird.",
+     "Angebotenen Kaffee annehmen; die Tasse leicht schwenken, wenn man genug hat.",
+     "In der Öffentlichkeit Schultern und Knie bedecken; Zärtlichkeiten in der Öffentlichkeit vermeiden."
+    ],
+    "festivals": [
+     "Nationalfeiertag und Tag der Befreiung (25.–26. Februar)",
+     "Hala-Februar-Festival (Februar)",
+     "Gergean (Kinderfest Mitte Ramadan)"
+    ],
+    "lifestyle": "Das Leben in Kuwait dreht sich um klimatisierte Malls, die Küstenstraße Gulf Road und abendliche Diwaniyas. Das Wochenende ist Freitag–Samstag; im Winter ist Wüstencamping beliebt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kuwait Towers",
+     "Souk Al-Mubarakiya",
+     "Große Moschee von Kuwait",
+     "Kulturzentrum Scheich Abdullah Al-Salem",
+     "Al-Shaheed-Park",
+     "Insel Failaka"
+    ],
+    "bestSeasons": "November – März (mild und trocken) · Juni – September über 50 °C und Sandstürme",
+    "travelStyleTip": "Kuwait eignet sich für einen Stadtstopp von 2-3 Tagen; im Winter reisen und einen Fährausflug nach Failaka einplanen."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~75 %; unter Staatsbürgern sunnitische Mehrheit und schiitische Minderheit), Christentum (~18 %, Expats), Hinduismus und andere",
+    "respectNorms": "Frauen erhalten beim Besuch der Großen Moschee eine Abaya; während der Gebetszeiten keine Besichtigung. Im Ramadan ist öffentliches Essen, Trinken und Rauchen tagsüber verboten.",
+    "sacredSites": [
+     "Große Moschee von Kuwait",
+     "Kathedrale der Heiligen Familie (Kuwait-Stadt)",
+     "Al-Khalifa-Moschee (eine der ältesten des Landes, 1737)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arabisch ist Amtssprache; Englisch ist in Wirtschaft und Handel verbreitet, außerdem werden Hindi, Urdu und Tagalog gesprochen.",
+    "englishProficiency": "Gut; in Hotels, Restaurants und Malls kommt man mit Englisch problemlos durch.",
+    "phrases": [
+     {
+      "phrase": "هلا والله (hala wallah)",
+      "meaning": "Willkommen! (herzlicher Gruß)",
+      "translation": "Willkommen! (herzlicher Gruß)",
+      "pronunciation": "ha-la wal-lah"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "Wie geht’s?",
+      "translation": "Wie geht’s?",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Danke (Golfdialekt)",
+      "translation": "Danke (Golfdialekt)",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بچم؟ (bicham?)",
+      "meaning": "Wie viel? (kuwaitischer Dialekt)",
+      "translation": "Wie viel? (kuwaitischer Dialekt)",
+      "pronunciation": "bi-cham"
+     },
+     {
+      "phrase": "زين (zēn)",
+      "meaning": "Gut / Okay",
+      "translation": "Gut / Okay",
+      "pronunciation": "zeyn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Insel Failaka beherbergte antike Dilmun- und hellenistische Siedlungen (Ikaros). Im 18. Jh. ließen sich Stämme der Bani Utbah nieder; die Familie Al Sabah regiert seit 1752. Britisches Schutzabkommen 1899, Ölfund in Burgan 1938 und Unabhängigkeit 1961 prägten das moderne Kuwait.",
+    "milestones": [
+     "1752: Beginn der Herrschaft der Familie Al Sabah",
+     "1899: Schutzabkommen mit Großbritannien",
+     "1938: Entdeckung des Ölfelds Burgan",
+     "1961: Unabhängigkeit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machbus (gewürzter Reis mit Fleisch oder Huhn; Nationalgericht)",
+     "Mutabbaq Samak (Fisch auf Reis)",
+     "Harees (Weizen-Fleisch-Brei)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (arabischer Kaffee mit Kardamom)",
+     "Karak-Tee",
+     "Laban (Buttermilch)"
+    ],
+    "streetFoodAndDesserts": [
+     "Luqaimat (Teigbällchen in Sirup)",
+     "Gers Ogaily (Safran-Kardamom-Kuchen)",
+     "Shawarma"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Scheich Abdullah Al-Salem Al-Sabah (Vater der Verfassung von 1962)",
+     "Abdullah Al-Rowaished (berühmter Sänger)",
+     "Fehaid Al-Deehani (Olympiasieger im Schießen)"
+    ],
+    "strongSectors": [
+     "Erdöl (~90 % der Exporterlöse; Burgan gehört zu den größten Feldern der Welt)",
+     "Staatsfonds (Kuwait Investment Authority, 1953)",
+     "Banken und Finanzen"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und kontaktloses Bezahlen funktionieren fast überall (das lokale KNET-System ist verbreitet); für Souks und Kleinkäufe genügt etwas Bargeld in Dinar.",
+    "tippingCulture": "Trinkgeld ist nicht Pflicht; im Restaurant werden 10 % geschätzt, in Hotels und Restaurants kann bereits eine Servicegebühr enthalten sein.",
+    "economicPillars": "Erdöl und Erdgas, Petrochemie, Finanzen und Investitionen, Einzelhandel."
+   }
+  },
+  "itin": {
+   "routeName": "Städtetrip Kuwait: Mubarakiya, Kuwait Towers & Insel Failaka",
+   "routeSummary": "Eine kurze 3-tägige Route vom alten Souk und der Großen Moschee zu den ikonischen Kuwait Towers und Kulturzentren an der Golfküste und weiter auf die historische Insel Failaka.",
+   "totalDays": 3,
+   "idealDurationText": "3-tägige Reise",
+   "bestSeason": "November – März (mild und trocken) · Juni – September über 50 °C und Sandstürme",
+   "transportMode": "Careem/Uber und Taxis; Fähre ab Ras Salmiya nach Failaka",
+   "paceLevel": "Gemächlich (kurzer Städtetrip)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Zentrum von Kuwait-Stadt",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Souk Al-Mubarakiya",
+      "Große Moschee von Kuwait",
+      "Seif-Palast (von außen)",
+      "Kuwait-Nationalmuseum und Sadu-Haus"
+     ],
+     "activities": [
+      "Durch die Gewürz-, Dattel- und Trachtenstände von Mubarakiya bummeln.",
+      "Die Große Moschee bei einer Führung besuchen.",
+      "Im Sadu-Haus die Webkunst der Beduinen ansehen."
+     ],
+     "foodAndDrinks": [
+      "Machbus",
+      "Frischer Saft und Luqaimat in Mubarakiya"
+     ],
+     "criticalTips": [
+      "Die Große Moschee außerhalb der Gebetszeiten und gemäß Kleiderordnung besuchen.",
+      "Im Souk kann gehandelt werden."
+     ],
+     "mapsQuery": "Souq Al-Mubarakiya, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Kuwait Towers & Kulturviertel",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Kuwait Towers mit drehender Aussichtsplattform",
+      "Kulturzentrum Scheich Abdullah Al-Salem (Museen)",
+      "Al-Shaheed-Park",
+      "Gulf Road und Strandpromenade von Salmiya"
+     ],
+     "activities": [
+      "Von der Aussichtskugel der Kuwait Towers über den Golf blicken.",
+      "Die Wissenschafts- und Naturkundemuseen des Kulturzentrums erkunden.",
+      "Abends an der Promenade von Salmiya spazieren und in der Marina Mall vorbeischauen."
+     ],
+     "foodAndDrinks": [
+      "Mutabbaq Samak",
+      "Karak-Tee"
+     ],
+     "criticalTips": [
+      "Tagsüber in Museen, am kühlen Abend draußen verbringen.",
+      "Für manche Bereiche des Kulturzentrums braucht man vorab Tickets."
+     ],
+     "mapsQuery": "Kuwait Towers, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Insel Failaka",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Ruinen der hellenistischen Siedlung Ikaros",
+      "Alte Dorfhäuser und Küste",
+      "Inselresort und Strand"
+     ],
+     "activities": [
+      "Mit der Fähre von Ras Salmiya auf die Insel fahren.",
+      "Die Reste des griechischen Tempels und Funde aus der Dilmun-Zeit ansehen.",
+      "Die Insel per Fahrrad oder Golfcart erkunden."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Fisch auf der Insel",
+      "Gahwa und Datteln"
+     ],
+     "criticalTips": [
+      "Fährzeiten vorab prüfen; die letzte Rückfahrt nicht verpassen.",
+      "Im Sommer ist die Insel sehr heiß; Hut und Wasser mitnehmen."
+     ],
+     "mapsQuery": "Failaka Island, Kuwait"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machbus (gewürzter Reis mit Fleisch oder Huhn; Nationalgericht)",
+     "Mutabbaq Samak (Fisch auf Reis)",
+     "Harees (Weizen-Fleisch-Brei)"
+    ],
+    "drinks": [
+     "Gahwa (arabischer Kaffee mit Kardamom)",
+     "Karak-Tee",
+     "Laban (Buttermilch)"
+    ],
+    "streetFoods": [
+     "Luqaimat (Teigbällchen in Sirup)",
+     "Gers Ogaily (Safran-Kardamom-Kuchen)",
+     "Shawarma"
+    ],
+    "diningAdvice": "In Kuwait gibt es keinen Alkohol; die Esskultur dreht sich um üppige Frühstücke, große Reisplatten und Cafés, die bis spät geöffnet haben."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ G",
+     "Sonnenbrille, Hut und Sonnencreme",
+     "Kleidung, die Schultern und Knie bedeckt",
+     "Rezepte für verschreibungspflichtige Medikamente"
+    ],
+    "safetyAndEtiquette": [
+     "Keinen Alkohol und kein Schweinefleisch mitbringen.",
+     "In der Öffentlichkeit zurückhaltend kleiden.",
+     "Regierungsgebäude und Ölanlagen nicht fotografieren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Meist werden britische Steckdosen Typ G verwendet, vereinzelt auch Typ C. Für Schuko-Stecker einen Adapter mitbringen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist entsalzt und technisch unbedenklich, wegen der Speichertanks trinken aber auch Einheimische Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, Masern)",
+     "Hepatitis A (empfohlen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Nicht verpflichtend.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Im Restaurant werden 10 % geschätzt, wenn keine Servicegebühr berechnet wird. Im Taxi genügt Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (Kuwait erhebt keine Mehrwertsteuer)",
+    "minSpend": "Nicht anwendbar",
+    "customsNote": "Da es keine Mehrwertsteuer gibt, gibt es auch keine Erstattung. Die Einfuhr von Alkohol und Schweinefleisch ist streng verboten; manche Medikamente sind ohne Rezept verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "airportSimTrapWarning": "Touristen-SIMs gibt es mit Pass in den Shops von Zain, Ooredoo und stc am Flughafen; eine eSIM ist ebenfalls schnell eingerichtet."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafentaxi",
+     "desc": "Manche Fahrer verlangen ohne Taxameter einen hohen Festpreis.",
+     "tip": "Careem/Uber nutzen oder den Preis vor dem Einsteigen festlegen."
+    },
+    {
+     "title": "Gefälschte Paket-SMS",
+     "desc": "Nachrichten im Namen von Zoll oder Kurierdiensten fragen nach Kartendaten.",
+     "tip": "Keine Links anklicken und keine Kartendaten teilen."
+    },
+    {
+     "title": "Goldgewicht",
+     "desc": "Im Goldsouk bleiben Feingehalt und Arbeitslohn manchmal unklar.",
+     "tip": "Feingehalt, Gewicht und Arbeitslohn auf der Rechnung verlangen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dinar kuwaití (KWD) – la moneda de mayor valor del mundo",
+   "plugType": "Tipo G, C (240V, 50Hz)",
+   "bestMonths": "Noviembre – marzo (templado y seco) · de junio a septiembre se superan los 50 °C y hay tormentas de arena",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "La delincuencia callejera es muy baja; los principales riesgos son los accidentes de tráfico y el calor extremo del verano. Sigue las advertencias oficiales actuales por las tensiones regionales. Las leyes son muy estrictas: el alcohol está totalmente prohibido y los delitos de drogas se castigan con dureza.",
+    "commonScams": [
+     "Taxistas del aeropuerto que no usan el taxímetro y piden un precio fijo alto",
+     "SMS falsos de mensajería o aduanas que piden datos de la tarjeta",
+     "Vendedores del zoco del oro que no indican claramente quilataje y peso"
+    ],
+    "safeTravelTips": [
+     "No lleves alcohol, productos de cerdo ni drogas; lleva receta para algunos medicamentos.",
+     "En verano quédate en interiores al mediodía y bebe mucha agua.",
+     "Viste de forma recatada en público y en Ramadán no comas ni bebas en público de día."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de la población (4G / 5G)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Muy buena (Zain, Ooredoo y stc ofrecen eSIM)",
+    "bestCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente – Media (hay autobuses de KPTC y CityBus pero poco frecuentes; taxis y apps son imprescindibles)",
+    "costLevel": "Medio",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "No hay (ferri a Failaka ida y vuelta ~10 - 20 $)",
+    "popularRideApps": [
+     "Careem",
+     "Uber"
+    ],
+    "taxiAdvice": "Careem y Uber son prácticos y seguros; con taxis de calle acuerda el precio antes. En verano caminar es casi imposible; se usa el coche incluso para distancias cortas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.70 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Medio (Estambul – Kuwait directo con Turkish Airlines y Pegasus, ~3,5 horas)",
+    "flightTip": "Turkish Airlines, Pegasus y Kuwait Airways vuelan directo Estambul – Kuwait; funciona bien como breve escala urbana en un viaje por el Golfo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "La diwaniya, reunión vespertina de hombres en el salón de recepción de las casas, es una institución social importante.",
+     "Espera a que la otra persona tienda la mano antes de saludar a alguien del sexo opuesto.",
+     "Acepta el café que te ofrecen; agita suavemente la taza cuando ya no quieras más.",
+     "Cubre hombros y rodillas en público; evita las muestras de afecto en público."
+    ],
+    "festivals": [
+     "Día Nacional y Día de la Liberación (25–26 de febrero)",
+     "Festival Hala Febrero (febrero)",
+     "Gergean (fiesta infantil a mitad del Ramadán)"
+    ],
+    "lifestyle": "La vida en Kuwait gira en torno a los centros comerciales climatizados, el paseo marítimo Gulf Road y las diwaniyas de la tarde. El fin de semana es viernes–sábado; en invierno es popular acampar en el desierto."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Torres de Kuwait",
+     "Zoco Al-Mubarakiya",
+     "Gran Mezquita de Kuwait",
+     "Centro Cultural Jeque Abdullah Al-Salem",
+     "Parque Al Shaheed",
+     "Isla de Failaka"
+    ],
+    "bestSeasons": "Noviembre – marzo (templado y seco) · de junio a septiembre se superan los 50 °C y hay tormentas de arena",
+    "travelStyleTip": "Kuwait es ideal para una escapada urbana de 2-3 días; viaja en invierno y añade una excursión en ferri a la isla de Failaka."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~75 %; mayoría suní y minoría chií entre los ciudadanos), cristianismo (~18 %, expatriados), hinduismo y otros",
+    "respectNorms": "En la Gran Mezquita prestan abaya a las mujeres; no hay visitas durante los rezos. En Ramadán está prohibido comer, beber y fumar en público de día.",
+    "sacredSites": [
+     "Gran Mezquita de Kuwait",
+     "Catedral de la Sagrada Familia (Ciudad de Kuwait)",
+     "Mezquita Al Khalifa (de las más antiguas del país, 1737)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El árabe es la lengua oficial; el inglés es común en negocios y comercio, y también se hablan hindi, urdu y tagalo.",
+    "englishProficiency": "Bueno; en hoteles, restaurantes y centros comerciales se habla inglés sin problema.",
+    "phrases": [
+     {
+      "phrase": "هلا والله (hala wallah)",
+      "meaning": "¡Bienvenido! (saludo cálido)",
+      "translation": "¡Bienvenido! (saludo cálido)",
+      "pronunciation": "ha-la wal-lah"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "¿Cómo estás?",
+      "translation": "¿Cómo estás?",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Gracias (dialecto del Golfo)",
+      "translation": "Gracias (dialecto del Golfo)",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بچم؟ (bicham?)",
+      "meaning": "¿Cuánto? (dialecto kuwaití)",
+      "translation": "¿Cuánto? (dialecto kuwaití)",
+      "pronunciation": "bi-cham"
+     },
+     {
+      "phrase": "زين (zēn)",
+      "meaning": "Bien / Vale",
+      "translation": "Bien / Vale",
+      "pronunciation": "zeyn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La isla de Failaka acogió asentamientos antiguos de Dilmún y helenísticos (Ikaros). En el siglo XVIII se asentaron tribus Bani Utbah; la familia Al Sabah gobierna desde 1752. La protección británica en 1899, el descubrimiento de petróleo en Burgan en 1938 y la independencia en 1961 dieron forma al Kuwait moderno.",
+    "milestones": [
+     "1752: Comienza el gobierno de la familia Al Sabah",
+     "1899: Acuerdo de protección con Gran Bretaña",
+     "1938: Descubrimiento del yacimiento de Burgan",
+     "1961: Independencia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machboos (arroz especiado con carne o pollo; plato nacional)",
+     "Mutabbaq samak (pescado sobre arroz)",
+     "Harees (gachas de trigo y carne)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (café árabe con cardamomo)",
+     "Té karak",
+     "Laban (suero de leche)"
+    ],
+    "streetFoodAndDesserts": [
+     "Luqaimat (bolitas de masa en almíbar)",
+     "Gers ogaily (bizcocho de azafrán y cardamomo)",
+     "Shawarma"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jeque Abdullah Al-Salem Al-Sabah (artífice de la Constitución de 1962)",
+     "Abdullah Al-Rowaished (cantante famoso)",
+     "Fehaid Al-Deehani (campeón olímpico de tiro)"
+    ],
+    "strongSectors": [
+     "Petróleo (~90 % de los ingresos por exportación; Burgan es de los mayores yacimientos del mundo)",
+     "Fondo soberano (Kuwait Investment Authority, 1953)",
+     "Banca y finanzas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas y el pago sin contacto funcionan casi en todas partes (el sistema local KNET es habitual); para zocos y compras pequeñas basta algo de efectivo en dinares.",
+    "tippingCulture": "La propina no es obligatoria; en restaurantes se agradece un 10 % y en hoteles y restaurantes puede estar ya incluido el servicio.",
+    "economicPillars": "Petróleo y gas, petroquímica, finanzas e inversión, comercio minorista."
+   }
+  },
+  "itin": {
+   "routeName": "Escapada a Kuwait: Mubarakiya, Torres de Kuwait e isla de Failaka",
+   "routeSummary": "Ruta corta de 3 días desde el viejo zoco y la Gran Mezquita hasta las icónicas Torres de Kuwait y los centros culturales de la costa del Golfo, y luego a la histórica isla de Failaka.",
+   "totalDays": 3,
+   "idealDurationText": "Itinerario de 3 días",
+   "bestSeason": "Noviembre – marzo (templado y seco) · de junio a septiembre se superan los 50 °C y hay tormentas de arena",
+   "transportMode": "Careem/Uber y taxis; ferri desde Ras Salmiya a Failaka",
+   "paceLevel": "Tranquilo (escapada urbana corta)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Centro de la Ciudad de Kuwait",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Zoco Al-Mubarakiya",
+      "Gran Mezquita de Kuwait",
+      "Palacio Seif (desde fuera)",
+      "Museo Nacional de Kuwait y Casa Sadu"
+     ],
+     "activities": [
+      "Recorre los puestos de especias, dátiles y ropa tradicional de Mubarakiya.",
+      "Visita la Gran Mezquita en una visita guiada.",
+      "Descubre el arte del tejido beduino en la Casa Sadu."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Zumo natural y luqaimat en Mubarakiya"
+     ],
+     "criticalTips": [
+      "Visita la Gran Mezquita fuera de las horas de rezo y respetando el código de vestimenta.",
+      "En el zoco se puede regatear."
+     ],
+     "mapsQuery": "Souq Al-Mubarakiya, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Torres de Kuwait y distrito cultural",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Torres de Kuwait y mirador giratorio",
+      "Centro Cultural Jeque Abdullah Al-Salem (museos)",
+      "Parque Al Shaheed",
+      "Gulf Road y paseo marítimo de Salmiya"
+     ],
+     "activities": [
+      "Contempla el Golfo desde la esfera mirador de las Torres de Kuwait.",
+      "Explora los museos de ciencia e historia natural del centro cultural.",
+      "Pasea por el litoral de Salmiya al anochecer y pásate por Marina Mall."
+     ],
+     "foodAndDrinks": [
+      "Mutabbaq samak",
+      "Té karak"
+     ],
+     "criticalTips": [
+      "Pasa el día en museos y la tarde fresca al aire libre.",
+      "Algunas secciones del centro cultural pueden requerir entrada anticipada."
+     ],
+     "mapsQuery": "Kuwait Towers, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Isla de Failaka",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Ruinas del asentamiento helenístico de Ikaros",
+      "Antiguas casas de pueblo y costa",
+      "Resort y playa de la isla"
+     ],
+     "activities": [
+      "Toma el ferri desde Ras Salmiya hasta la isla.",
+      "Contempla los restos del templo griego y hallazgos de la época de Dilmún.",
+      "Recorre la isla en bici o en carrito de golf."
+     ],
+     "foodAndDrinks": [
+      "Pescado a la parrilla en la isla",
+      "Gahwa y dátiles"
+     ],
+     "criticalTips": [
+      "Consulta los horarios del ferri con antelación; no pierdas el último de regreso.",
+      "En verano la isla es muy calurosa; lleva sombrero y agua."
+     ],
+     "mapsQuery": "Failaka Island, Kuwait"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machboos (arroz especiado con carne o pollo; plato nacional)",
+     "Mutabbaq samak (pescado sobre arroz)",
+     "Harees (gachas de trigo y carne)"
+    ],
+    "drinks": [
+     "Gahwa (café árabe con cardamomo)",
+     "Té karak",
+     "Laban (suero de leche)"
+    ],
+    "streetFoods": [
+     "Luqaimat (bolitas de masa en almíbar)",
+     "Gers ogaily (bizcocho de azafrán y cardamomo)",
+     "Shawarma"
+    ],
+    "diningAdvice": "En Kuwait no hay alcohol; la cultura gastronómica gira en torno a desayunos abundantes, grandes bandejas de arroz y cafés abiertos hasta tarde."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Gafas de sol, sombrero y protector solar",
+     "Ropa que cubra hombros y rodillas",
+     "Recetas de los medicamentos que lleves"
+    ],
+    "safetyAndEtiquette": [
+     "No lleves alcohol ni productos de cerdo.",
+     "Viste de forma recatada en público.",
+     "No fotografíes edificios oficiales ni instalaciones petroleras."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Se usan sobre todo enchufes británicos tipo G; en algunos sitios también tipo C. Lleva adaptador para enchufes Schuko."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo es desalada y técnicamente segura, pero por los depósitos también la población local bebe agua embotellada.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, sarampión)",
+     "Hepatitis A (recomendada)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "No es obligatoria.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En restaurantes se agradece un 10 % si no hay cargo de servicio. En taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (Kuwait no aplica IVA)",
+    "minSpend": "No aplica",
+    "customsNote": "Como no hay IVA, tampoco hay devolución. Está totalmente prohibido introducir alcohol y productos de cerdo; algunos medicamentos están prohibidos sin receta."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "airportSimTrapWarning": "En las tiendas de Zain, Ooredoo y stc del aeropuerto se compra una SIM turística con pasaporte; también es fácil activar una eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi del aeropuerto",
+     "desc": "Algunos conductores piden un precio fijo alto sin usar el taxímetro.",
+     "tip": "Usa Careem/Uber o acuerda el precio antes de subir."
+    },
+    {
+     "title": "SMS falso de paquetería",
+     "desc": "Mensajes que se hacen pasar por aduanas o mensajería piden datos de la tarjeta.",
+     "tip": "No pulses enlaces ni compartas datos de la tarjeta."
+    },
+    {
+     "title": "Peso del oro",
+     "desc": "En el zoco del oro a veces no queda claro el quilataje ni la mano de obra.",
+     "tip": "Pide quilataje, peso y mano de obra en la factura."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Кувейтский динар (KWD) — самая дорогая валюта мира",
+   "plugType": "Тип G, C (240V, 50Hz)",
+   "bestMonths": "Ноябрь – март (тепло и сухо) · с июня по сентябрь выше 50 °C и песчаные бури",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Уличная преступность очень низкая; главные риски — ДТП и экстремальная летняя жара. Из-за региональной напряжённости следите за актуальными официальными рекомендациями. Законы очень строгие: алкоголь полностью запрещён, за наркотики — суровые наказания.",
+    "commonScams": [
+     "Таксисты в аэропорту, не включающие счётчик и требующие высокую фиксированную цену",
+     "Фальшивые SMS от курьеров/таможни с запросом данных карты",
+     "Продавцы на золотом рынке, не указывающие чётко пробу и вес"
+    ],
+    "safeTravelTips": [
+     "Не ввозите алкоголь, свинину и наркотики; для некоторых лекарств берите рецепт.",
+     "Летом в полдень оставайтесь в помещении и пейте много воды.",
+     "На людях одевайтесь скромно, а в Рамадан днём не ешьте и не пейте публично."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % населения (4G / 5G)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Очень хорошая (Zain, Ooredoo и stc предлагают eSIM)",
+    "bestCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый – средний (есть автобусы KPTC и CityBus, но ходят редко; такси и приложения необходимы)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Нет (паром на Файлаку туда-обратно ~10 - 20 $)",
+    "popularRideApps": [
+     "Careem",
+     "Uber"
+    ],
+    "taxiAdvice": "Careem и Uber удобны и безопасны; с уличными такси договаривайтесь о цене заранее. Летом ходить пешком почти невозможно — даже на короткие расстояния ездят на машине."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.70 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Средний (Стамбул – Кувейт прямыми рейсами Turkish Airlines и Pegasus, ~3,5 ч)",
+    "flightTip": "Turkish Airlines, Pegasus и Kuwait Airways летают напрямую Стамбул – Кувейт; хороший вариант для короткой остановки в туре по Заливу."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Диванийя — вечерние мужские собрания в гостевых залах домов — важный общественный институт.",
+     "Здороваясь с человеком противоположного пола, подождите, протянет ли он руку.",
+     "Принимайте предложенный кофе; слегка покачайте чашкой, когда хватит.",
+     "На людях закрывайте плечи и колени; избегайте публичных проявлений чувств."
+    ],
+    "festivals": [
+     "Национальный день и День освобождения (25–26 февраля)",
+     "Фестиваль «Хала Февраль» (февраль)",
+     "Гаргиан (детский праздник в середине Рамадана)"
+    ],
+    "lifestyle": "Жизнь в Кувейте вращается вокруг кондиционированных торговых центров, набережной Gulf Road и вечерних диванийй. Выходные — пятница и суббота; зимой популярен кемпинг в пустыне."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Кувейтские башни",
+     "Рынок Аль-Мубаракия",
+     "Большая мечеть Кувейта",
+     "Культурный центр шейха Абдаллы ас-Салема",
+     "Парк Аш-Шахид",
+     "Остров Файлака"
+    ],
+    "bestSeasons": "Ноябрь – март (тепло и сухо) · с июня по сентябрь выше 50 °C и песчаные бури",
+    "travelStyleTip": "Кувейт идеален для городской остановки на 2-3 дня; приезжайте зимой и добавьте поездку на пароме на остров Файлака."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~75 %; среди граждан суннитское большинство и шиитское меньшинство), христианство (~18 %, экспаты), индуизм и другие",
+    "respectNorms": "В Большой мечети женщинам выдают абаю; во время молитвы экскурсий нет. В Рамадан днём запрещено публично есть, пить и курить.",
+    "sacredSites": [
+     "Большая мечеть Кувейта",
+     "Собор Святого Семейства (Эль-Кувейт)",
+     "Мечеть Аль-Халифа (одна из старейших в стране, 1737)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — арабский; английский распространён в бизнесе и торговле, также говорят на хинди, урду и тагальском.",
+    "englishProficiency": "Хороший; в отелях, ресторанах и торговых центрах легко объясниться по-английски.",
+    "phrases": [
+     {
+      "phrase": "هلا والله (hala wallah)",
+      "meaning": "Добро пожаловать! (тёплое приветствие)",
+      "translation": "Добро пожаловать! (тёплое приветствие)",
+      "pronunciation": "ha-la wal-lah"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "Как дела?",
+      "translation": "Как дела?",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Спасибо (диалект Залива)",
+      "translation": "Спасибо (диалект Залива)",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بچم؟ (bicham?)",
+      "meaning": "Сколько? (кувейтский диалект)",
+      "translation": "Сколько? (кувейтский диалект)",
+      "pronunciation": "bi-cham"
+     },
+     {
+      "phrase": "زين (zēn)",
+      "meaning": "Хорошо / Ладно",
+      "translation": "Хорошо / Ладно",
+      "pronunciation": "zeyn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "На острове Файлака существовали древние поселения Дильмуна и эллинистический Икарос. В XVIII веке здесь осели племена бану утба; семья Ас-Сабах правит с 1752 года. Британский протекторат 1899 года, открытие нефти в Бургане в 1938 году и независимость в 1961 году сформировали современный Кувейт.",
+    "milestones": [
+     "1752: Начало правления семьи Ас-Сабах",
+     "1899: Договор о покровительстве с Великобританией",
+     "1938: Открытие нефтяного месторождения Бурган",
+     "1961: Независимость"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Мачбус (пряный рис с мясом или курицей; национальное блюдо)",
+     "Мутаббак самак (рыба на рисе)",
+     "Харис (каша из пшеницы и мяса)"
+    ],
+    "traditionalDrinks": [
+     "Кахва (арабский кофе с кардамоном)",
+     "Чай карак",
+     "Лабан (пахта)"
+    ],
+    "streetFoodAndDesserts": [
+     "Лукаймат (шарики из теста в сиропе)",
+     "Герс огайли (кекс с шафраном и кардамоном)",
+     "Шаурма"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Шейх Абдалла ас-Салем ас-Сабах (автор конституции 1962 года)",
+     "Абдалла ар-Рувайшед (известный певец)",
+     "Фехаид ад-Дихани (олимпийский чемпион по стрельбе)"
+    ],
+    "strongSectors": [
+     "Нефть (~90 % экспортной выручки; Бурган — одно из крупнейших месторождений мира)",
+     "Суверенный фонд (Kuwait Investment Authority, 1953)",
+     "Банки и финансы"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата работают почти везде (распространена местная система KNET); для рынков и мелких покупок хватит немного наличных динаров.",
+    "tippingCulture": "Чаевые не обязательны; в ресторанах ценят 10 %, в отелях и ресторанах сервисный сбор может быть уже включён.",
+    "economicPillars": "Нефть и газ, нефтехимия, финансы и инвестиции, розничная торговля."
+   }
+  },
+  "itin": {
+   "routeName": "Кувейт за выходные: Мубаракия, Кувейтские башни и остров Файлака",
+   "routeSummary": "Короткий 3-дневный маршрут от старого рынка и Большой мечети к знаменитым Кувейтским башням и культурным центрам на берегу Залива, а затем на исторический остров Файлака.",
+   "totalDays": 3,
+   "idealDurationText": "3-дневный маршрут",
+   "bestSeason": "Ноябрь – март (тепло и сухо) · с июня по сентябрь выше 50 °C и песчаные бури",
+   "transportMode": "Careem/Uber и такси; паром из Рас-Сальмии на Файлаку",
+   "paceLevel": "Спокойный (короткая городская поездка)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Центр Эль-Кувейта",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Рынок Аль-Мубаракия",
+      "Большая мечеть Кувейта",
+      "Дворец Сейф (снаружи)",
+      "Национальный музей Кувейта и Дом Саду"
+     ],
+     "activities": [
+      "Пройдитесь по рядам специй, фиников и традиционной одежды Мубаракии.",
+      "Посетите Большую мечеть с экскурсией.",
+      "Посмотрите бедуинское ткачество в Доме Саду."
+     ],
+     "foodAndDrinks": [
+      "Мачбус",
+      "Свежий сок и лукаймат на Мубаракии"
+     ],
+     "criticalTips": [
+      "Посещайте Большую мечеть вне времени молитвы и с соблюдением дресс-кода.",
+      "На рынке можно торговаться."
+     ],
+     "mapsQuery": "Souq Al-Mubarakiya, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Кувейтские башни и культурный квартал",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Кувейтские башни и вращающаяся смотровая площадка",
+      "Культурный центр шейха Абдаллы ас-Салема (музеи)",
+      "Парк Аш-Шахид",
+      "Gulf Road и набережная Сальмии"
+     ],
+     "activities": [
+      "Полюбуйтесь Заливом со смотровой сферы Кувейтских башен.",
+      "Осмотрите научный и естественно-исторический музеи культурного центра.",
+      "Вечером прогуляйтесь по набережной Сальмии и загляните в Marina Mall."
+     ],
+     "foodAndDrinks": [
+      "Мутаббак самак",
+      "Чай карак"
+     ],
+     "criticalTips": [
+      "Днём — в музеях, прохладным вечером — на улице.",
+      "В некоторые разделы культурного центра могут понадобиться билеты заранее."
+     ],
+     "mapsQuery": "Kuwait Towers, Kuwait City, Kuwait"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Остров Файлака",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Руины эллинистического поселения Икарос",
+      "Старые деревенские дома и побережье",
+      "Курорт и пляж острова"
+     ],
+     "activities": [
+      "Доберитесь на пароме из Рас-Сальмии на остров.",
+      "Посмотрите остатки греческого храма и находки эпохи Дильмуна.",
+      "Объедьте остров на велосипеде или гольфкаре."
+     ],
+     "foodAndDrinks": [
+      "Рыба на гриле на острове",
+      "Кахва и финики"
+     ],
+     "criticalTips": [
+      "Заранее проверьте расписание парома; не пропустите последний обратный рейс.",
+      "Летом на острове очень жарко; возьмите шляпу и воду."
+     ],
+     "mapsQuery": "Failaka Island, Kuwait"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Мачбус (пряный рис с мясом или курицей; национальное блюдо)",
+     "Мутаббак самак (рыба на рисе)",
+     "Харис (каша из пшеницы и мяса)"
+    ],
+    "drinks": [
+     "Кахва (арабский кофе с кардамоном)",
+     "Чай карак",
+     "Лабан (пахта)"
+    ],
+    "streetFoods": [
+     "Лукаймат (шарики из теста в сиропе)",
+     "Герс огайли (кекс с шафраном и кардамоном)",
+     "Шаурма"
+    ],
+    "diningAdvice": "Алкоголя в Кувейте нет; гастрономическая культура строится вокруг сытных завтраков, больших блюд с рисом и кафе, открытых допоздна."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер типа G",
+     "Солнцезащитные очки, шляпа и крем",
+     "Одежда, закрывающая плечи и колени",
+     "Рецепты на рецептурные лекарства"
+    ],
+    "safetyAndEtiquette": [
+     "Не ввозите алкоголь и свинину.",
+     "На людях одевайтесь скромно.",
+     "Не фотографируйте правительственные здания и нефтяные объекты."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "В основном используются британские розетки типа G, местами встречается тип C. Для вилок Schuko возьмите адаптер."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода опреснённая и технически безопасна, но из-за баков местные тоже пьют бутилированную.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь)",
+     "Гепатит A (рекомендуется)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Не обязательны.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В ресторанах ценят 10 %, если в счёте нет сервисного сбора. В такси достаточно округлить."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (в Кувейте нет НДС)",
+    "minSpend": "Не применяется",
+    "customsNote": "Поскольку НДС нет, нет и возврата. Ввоз алкоголя и свинины строго запрещён; некоторые лекарства без рецепта запрещены."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Kuwait",
+     "Ooredoo Kuwait",
+     "stc Kuwait"
+    ],
+    "airportSimTrapWarning": "Туристическую SIM продают по паспорту в салонах Zain, Ooredoo и stc в аэропорту; eSIM тоже легко подключить."
+   },
+   "touristScams": [
+    {
+     "title": "Такси в аэропорту",
+     "desc": "Некоторые водители просят высокую фиксированную цену без счётчика.",
+     "tip": "Пользуйтесь Careem/Uber или договаривайтесь о цене до посадки."
+    },
+    {
+     "title": "Фальшивые SMS о посылке",
+     "desc": "Сообщения от имени таможни или курьеров просят данные карты.",
+     "tip": "Не переходите по ссылкам и не сообщайте данные карты."
+    },
+    {
+     "title": "Вес золота",
+     "desc": "На золотом рынке проба и стоимость работы могут остаться неясными.",
+     "tip": "Требуйте указать пробу, вес и стоимость работы в чеке."
+    }
+   ]
+  }
+ }
+}

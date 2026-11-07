@@ -325,6 +325,69 @@
      "Çantanızı kaldırım tarafında taşıyın (motosikletli kapkaç riski)."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G priz (üç dikdörtgen uçlu); Türk fişleri takılmaz, G tipi adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu arıtılır ama eski borular nedeniyle doğrudan içilmez; şişe veya filtreli su için, kaynatılmış su güvenlidir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Japon ensefaliti (kırsalda uzun kalış)",
+     "Sarıhumma sertifikası yalnızca sarıhumma riskli bir ülkeden geliyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Bahşiş beklenmez; restoran hesaplarına çoğu zaman %10 servis ücreti ve %6 SST eklenir.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Servis ücreti varsa ek bahşiş gerekmez; otel taşıyıcısına veya rehbere birkaç ringgit bırakmak nazik bir jesttir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Yok",
+    "customsNote": "Malezya’da turistlere KDV/SST iadesi yoktur (Tourist Refund Scheme 2018’de kaldırıldı). Langkawi ve Labuan gümrüksüz bölgedir; buradan çıkışta alkol ve tütün kotasına dikkat edin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "airportSimTrapWarning": "KLIA’daki operatör stantları resmî fiyatlıdır ama turist paketleri şehirdeki mağazalardan pahalı olabilir; CelcomDigi veya Hotlink eSIM’ini önceden alabilir ya da 7-Eleven’dan hat alabilirsiniz."
+   },
+   "touristScams": [
+    {
+     "title": "Pazarlıklı taksi",
+     "desc": "KL Sentral ve Bukit Bintang’da taksimetreyi açmayıp sabit, fahiş ücret isteyen taksiciler.",
+     "tip": "Grab kullanın; havalimanında kuponlu (teksi bajet) taksi veya KLIA Ekspres treni tercih edin."
+    },
+    {
+     "title": "Kart oyunu tuzağı",
+     "desc": "Samimi bir yerli sizi evine davet eder ve hileli bir kumar/kart oyununa çekerek para kaybettirir.",
+     "tip": "Yabancıların ev davetlerini kibarca geri çevirin; kumar teklifini hiç kabul etmeyin."
+    },
+    {
+     "title": "Sahte polis/banka araması",
+     "desc": "Kendini polis, banka ya da kurye olarak tanıtan kişiler telefon veya WhatsApp’tan ödeme ister.",
+     "tip": "Telefonda kimseye ödeme yapmayın; şüphede 999’u veya kurumu doğrudan arayın."
+    }
+   ]
   }
  },
  "en": {
@@ -653,6 +716,69 @@
      "Carry your bag on the pavement side (motorbike snatch-theft risk)."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British-style Type G sockets (three rectangular pins); Turkish plugs do not fit, bring a Type G adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is treated, but old pipes make it unsafe to drink straight from the tap; drink bottled or filtered water, boiled water is fine.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Japanese encephalitis (long rural stays)",
+     "Yellow fever certificate only if arriving from a yellow-fever-risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Tipping is not expected; restaurant bills often include a 10% service charge plus 6% SST.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "If service is included no extra tip is needed; a few ringgit for porters or guides is a kind gesture."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "None",
+    "customsNote": "Malaysia has no VAT/SST refund for tourists (the Tourist Refund Scheme ended in 2018). Langkawi and Labuan are duty-free islands; watch the alcohol and tobacco allowances when leaving them."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "airportSimTrapWarning": "Operator counters at KLIA charge official prices, but tourist packs can cost more than in town; buy a CelcomDigi or Hotlink eSIM in advance or a SIM at 7-Eleven."
+   },
+   "touristScams": [
+    {
+     "title": "Haggled taxi fares",
+     "desc": "Taxis at KL Sentral and Bukit Bintang refuse the meter and quote inflated flat fares.",
+     "tip": "Use Grab; at the airport take a coupon (teksi bajet) taxi or the KLIA Ekspres train."
+    },
+    {
+     "title": "Card game scam",
+     "desc": "A friendly local invites you home and lures you into a rigged gambling game.",
+     "tip": "Politely decline home invitations from strangers and never join a gambling game."
+    },
+    {
+     "title": "Fake police/bank calls",
+     "desc": "Callers posing as police, bank staff or couriers demand payment by phone or WhatsApp.",
+     "tip": "Never pay anyone over the phone; if in doubt call 999 or the institution directly."
+    }
+   ]
   }
  },
  "de": {
@@ -981,6 +1107,69 @@
      "Tasche auf der Gehwegseite tragen (Raub vom Motorrad aus)."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G (drei rechteckige Stifte); türkische Stecker passen nicht, Adapter Typ G mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser wird aufbereitet, ist wegen alter Rohre aber nicht direkt trinkbar; Flaschen- oder Filterwasser trinken, abgekochtes Wasser ist unbedenklich.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Japanische Enzephalitis (lange Aufenthalte auf dem Land)",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Gelbfieber-Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Trinkgeld wird nicht erwartet; Restaurantrechnungen enthalten oft 10 % Servicegebühr plus 6 % SST.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Ist der Service enthalten, ist kein Trinkgeld nötig; ein paar Ringgit für Gepäckträger oder Guides sind eine nette Geste."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Keine",
+    "customsNote": "Malaysia erstattet Touristen keine Mehrwert-/SST-Steuer (das Tourist Refund Scheme endete 2018). Langkawi und Labuan sind zollfreie Inseln; beim Verlassen auf die Freimengen für Alkohol und Tabak achten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "airportSimTrapWarning": "Die Anbieterstände am KLIA haben offizielle Preise, Touristenpakete können aber teurer sein als in der Stadt; vorab eine CelcomDigi- oder Hotlink-eSIM kaufen oder eine SIM bei 7-Eleven holen."
+   },
+   "touristScams": [
+    {
+     "title": "Verhandelte Taxipreise",
+     "desc": "Taxis an KL Sentral und Bukit Bintang schalten kein Taxameter ein und verlangen überhöhte Pauschalpreise.",
+     "tip": "Grab nutzen; am Flughafen Coupon-Taxi (teksi bajet) oder den KLIA Ekspres nehmen."
+    },
+    {
+     "title": "Kartenspiel-Masche",
+     "desc": "Ein freundlicher Einheimischer lädt Sie nach Hause ein und lockt Sie in ein manipuliertes Glücksspiel.",
+     "tip": "Einladungen von Fremden höflich ablehnen und nie an Glücksspielen teilnehmen."
+    },
+    {
+     "title": "Falsche Polizei-/Bankanrufe",
+     "desc": "Anrufer geben sich als Polizei, Bank oder Kurier aus und fordern Zahlungen per Telefon oder WhatsApp.",
+     "tip": "Nie am Telefon zahlen; im Zweifel 999 oder die Institution direkt anrufen."
+    }
+   ]
   }
  },
  "es": {
@@ -1309,6 +1498,69 @@
      "Lleva el bolso del lado de la acera (riesgo de tirones desde motos)."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos tipo G (tres clavijas rectangulares); los enchufes turcos no entran, lleve un adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo se trata, pero las tuberías antiguas hacen que no sea potable directamente; beba agua embotellada o filtrada, la hervida es segura.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Encefalitis japonesa (estancias rurales largas)",
+     "Certificado de fiebre amarilla solo si llega desde un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "No se espera propina; las cuentas de restaurante suelen incluir un 10 % de servicio más un 6 % de SST.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Si el servicio está incluido no hace falta más; unos ringgit para maleteros o guías son un buen gesto."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No hay",
+    "customsNote": "Malasia no devuelve el IVA/SST a los turistas (el Tourist Refund Scheme terminó en 2018). Langkawi y Labuan son islas libres de impuestos; al salir de ellas respete los cupos de alcohol y tabaco."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "airportSimTrapWarning": "Los mostradores de operadoras en KLIA tienen precios oficiales, pero los paquetes turísticos pueden costar más que en la ciudad; compre antes una eSIM de CelcomDigi o Hotlink o una SIM en 7-Eleven."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis sin taxímetro",
+     "desc": "Taxis en KL Sentral y Bukit Bintang que no usan taxímetro y piden tarifas fijas infladas.",
+     "tip": "Use Grab; en el aeropuerto tome taxi con cupón (teksi bajet) o el tren KLIA Ekspres."
+    },
+    {
+     "title": "Estafa del juego de cartas",
+     "desc": "Un local amable le invita a su casa y le arrastra a un juego de apuestas amañado.",
+     "tip": "Rechace con cortesía las invitaciones de desconocidos y no juegue nunca por dinero."
+    },
+    {
+     "title": "Falsas llamadas de policía/banco",
+     "desc": "Personas que dicen ser policía, banco o mensajería piden pagos por teléfono o WhatsApp.",
+     "tip": "No pague nunca por teléfono; ante la duda llame al 999 o a la entidad directamente."
+    }
+   ]
   }
  },
  "ru": {
@@ -1637,6 +1889,69 @@
      "Носите сумку со стороны тротуара (риск рывка с мотоцикла)."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G (три прямоугольных штыря); турецкие вилки не подходят, возьмите переходник типа G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода очищается, но из-за старых труб пить её из-под крана не стоит; пейте бутилированную или фильтрованную воду, кипячёная безопасна.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Японский энцефалит (долгое пребывание в сельской местности)",
+     "Сертификат о прививке от жёлтой лихорадки — только при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Чаевые не ожидаются; к счёту в ресторане часто добавляют 10 % за обслуживание и 6 % налога SST.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Если обслуживание включено, больше ничего не нужно; несколько ринггитов носильщику или гиду — приятный жест."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Нет",
+    "customsNote": "В Малайзии туристам не возвращают НДС/SST (программа Tourist Refund Scheme отменена в 2018 году). Лангкави и Лабуан — беспошлинные острова; при выезде с них соблюдайте нормы на алкоголь и табак."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "airportSimTrapWarning": "Стойки операторов в KLIA продают по официальным ценам, но туристические пакеты бывают дороже, чем в городе; купите eSIM CelcomDigi или Hotlink заранее либо SIM в 7-Eleven."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без счётчика",
+     "desc": "Таксисты у KL Sentral и Bukit Bintang не включают счётчик и называют завышенную фиксированную цену.",
+     "tip": "Пользуйтесь Grab; в аэропорту берите такси по купону (teksi bajet) или поезд KLIA Ekspres."
+    },
+    {
+     "title": "Карточная игра",
+     "desc": "Дружелюбный местный зовёт в гости и втягивает в подстроенную азартную игру.",
+     "tip": "Вежливо отказывайтесь от приглашений незнакомцев и не играйте на деньги."
+    },
+    {
+     "title": "Звонки «полиции» или «банка»",
+     "desc": "Мошенники от имени полиции, банка или курьерской службы требуют оплату по телефону или в WhatsApp.",
+     "tip": "Никогда не платите по телефону; при сомнениях звоните 999 или напрямую в организацию."
+    }
+   ]
   }
  }
 }

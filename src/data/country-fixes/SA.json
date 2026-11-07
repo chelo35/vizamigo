@@ -324,6 +324,66 @@
      "İnsanları ve resmî binaları izinsiz fotoğraflamayın."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G priz (üç dikdörtgen uçlu); Türk fişleri takılmaz, G tipi adaptör alın. Eski binalarda A/B (127V) prizlere de rastlanabilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Arıtma şebeke suyu teknik olarak işlenmiş olsa da çatı depoları nedeniyle içilmesi önerilmez; şişe su ucuz ve her yerde bulunur.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Meningokok ACWY (Umre/Hac için zorunlu)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir; restoranlarda %10 civarı veya hesabı yuvarlamak yaygındır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Otel görevlileri ve rehberlere küçük bahşişler memnuniyetle karşılanır; Umre’de otobüs şoförlerine birkaç riyal yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%15 KDV",
+    "minSpend": "500 SAR (aynı mağaza)",
+    "customsNote": "2025’te başlayan sistemde pasaportla ZATCA/Global Blue onaylı mağazalardan alışveriş yapın; Riyad, Cidde ve Dammam havalimanlarında Global Blue kiosklarında 90 gün içinde onaylatın. Hizmetler, otel ve yiyecek iade kapsamı dışındadır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki STC, Mobily ve Zain stantları resmî fiyatlıdır ama turist paketleri pahalı olabilir; hat almak için pasaport ve parmak izi kaydı gerekir, eSIM’i önceden kurmak zaman kazandırır."
+   },
+   "touristScams": [
+    {
+     "title": "Ruhsatsız Umre acenteleri",
+     "desc": "Sahte veya eksik hizmetli Umre paketleri satan ruhsatsız aracılar.",
+     "tip": "Paketi yalnızca Nusuk platformu veya lisanslı acentelerden alın."
+    },
+    {
+     "title": "Havalimanı korsan taksileri",
+     "desc": "Ruhsatsız şoförlerin havalimanında yüksek sabit ücret istemesi.",
+     "tip": "Uber, Careem veya Jeeny kullanın ya da resmî taksi kuyruğuna gidin."
+    },
+    {
+     "title": "Kalabalıkta yankesicilik",
+     "desc": "Mekke ve Medine kalabalığında yankesiciler ve sahte bağış toplayıcılar.",
+     "tip": "Değerli eşyaları otelde bırakın; bağışı yalnızca resmî kurumlara yapın."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +711,66 @@
      "Do not photograph people or official buildings without permission."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British-style Type G sockets (three rectangular pins); Turkish plugs do not fit, bring a Type G adapter. Older buildings may still have Type A/B (127V) sockets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Desalinated tap water is treated, but rooftop storage tanks make drinking it inadvisable; bottled water is cheap and everywhere.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Meningococcal ACWY (mandatory for Umrah/Hajj)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Tipping is not required; around 10% or rounding up is common in restaurants.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Small tips for hotel staff and guides are appreciated; a few riyals are enough for bus drivers on Umrah."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15% VAT",
+    "minSpend": "SAR 500 (same store)",
+    "customsNote": "Under the scheme launched in 2025, shop with your passport at ZATCA/Global Blue-certified stores and validate within 90 days at Global Blue kiosks at Riyadh, Jeddah or Dammam airports. Services, hotels and food are excluded."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "airportSimTrapWarning": "STC, Mobily and Zain counters at the airport charge official prices, but tourist packs can be pricey; a SIM requires a passport and fingerprint registration, so installing an eSIM in advance saves time."
+   },
+   "touristScams": [
+    {
+     "title": "Unlicensed Umrah agents",
+     "desc": "Unlicensed agents sell fake or incomplete Umrah packages.",
+     "tip": "Book only through the Nusuk platform or licensed agencies."
+    },
+    {
+     "title": "Airport pirate taxis",
+     "desc": "Unlicensed drivers at the airport quote high flat fares.",
+     "tip": "Use Uber, Careem or Jeeny, or go to the official taxi rank."
+    },
+    {
+     "title": "Pickpocketing in crowds",
+     "desc": "Pickpockets and fake charity collectors in the crowds of Mecca and Medina.",
+     "tip": "Leave valuables at the hotel and donate only to official organisations."
+    }
+   ]
   }
  },
  "de": {
@@ -978,6 +1098,66 @@
      "Menschen und Behördengebäude nicht ohne Erlaubnis fotografieren."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G (drei rechteckige Stifte); türkische Stecker passen nicht, Adapter Typ G mitnehmen. In älteren Gebäuden gibt es noch Steckdosen Typ A/B (127V)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Entsalztes Leitungswasser ist aufbereitet, wegen Dachtanks aber nicht zum Trinken empfohlen; Flaschenwasser ist billig und überall erhältlich.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Meningokokken ACWY (Pflicht für Umrah/Hadsch)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht; in Restaurants sind etwa 10 % oder Aufrunden üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Kleine Trinkgelder für Hotelpersonal und Guides werden geschätzt; Busfahrern bei der Umrah reichen ein paar Riyal."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15 % MwSt.",
+    "minSpend": "500 SAR (gleiches Geschäft)",
+    "customsNote": "Im 2025 gestarteten System mit Reisepass in ZATCA/Global-Blue-zertifizierten Geschäften einkaufen und binnen 90 Tagen an Global-Blue-Kiosken der Flughäfen Riad, Dschidda oder Dammam validieren. Dienstleistungen, Hotels und Lebensmittel sind ausgenommen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "airportSimTrapWarning": "Die Stände von STC, Mobily und Zain am Flughafen haben offizielle Preise, Touristenpakete können aber teuer sein; für eine SIM sind Pass und Fingerabdruck nötig, eine vorab installierte eSIM spart Zeit."
+   },
+   "touristScams": [
+    {
+     "title": "Unlizenzierte Umrah-Agenten",
+     "desc": "Unlizenzierte Vermittler verkaufen gefälschte oder unvollständige Umrah-Pakete.",
+     "tip": "Nur über die Nusuk-Plattform oder lizenzierte Agenturen buchen."
+    },
+    {
+     "title": "Piratentaxis am Flughafen",
+     "desc": "Unlizenzierte Fahrer verlangen am Flughafen hohe Pauschalpreise.",
+     "tip": "Uber, Careem oder Jeeny nutzen oder zum offiziellen Taxistand gehen."
+    },
+    {
+     "title": "Taschendiebe im Gedränge",
+     "desc": "Taschendiebe und falsche Spendensammler in den Menschenmengen von Mekka und Medina.",
+     "tip": "Wertsachen im Hotel lassen und nur an offizielle Organisationen spenden."
+    }
+   ]
   }
  },
  "es": {
@@ -1305,6 +1485,66 @@
      "No fotografíes a personas ni edificios oficiales sin permiso."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos tipo G (tres clavijas rectangulares); los enchufes turcos no entran, lleve un adaptador tipo G. En edificios antiguos aún hay enchufes tipo A/B (127V)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo desalinizada está tratada, pero los depósitos en azoteas hacen desaconsejable beberla; el agua embotellada es barata y está en todas partes.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Meningococo ACWY (obligatoria para Umrah/Hajj)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria; en restaurantes es habitual un 10 % o redondear.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se agradecen pequeñas propinas al personal del hotel y a los guías; en la Umrah bastan unos riales para los conductores de autobús."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 15 %",
+    "minSpend": "500 SAR (misma tienda)",
+    "customsNote": "Con el sistema lanzado en 2025, compre con pasaporte en tiendas certificadas por ZATCA/Global Blue y valide en un plazo de 90 días en los quioscos de Global Blue de los aeropuertos de Riad, Yeda o Dammam. Servicios, hoteles y comida quedan excluidos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "airportSimTrapWarning": "Los mostradores de STC, Mobily y Zain en el aeropuerto tienen precios oficiales, pero los paquetes turísticos pueden ser caros; la SIM exige pasaporte y huella dactilar, por lo que instalar una eSIM antes ahorra tiempo."
+   },
+   "touristScams": [
+    {
+     "title": "Agentes de Umrah sin licencia",
+     "desc": "Intermediarios sin licencia venden paquetes de Umrah falsos o incompletos.",
+     "tip": "Reserve solo a través de la plataforma Nusuk o agencias con licencia."
+    },
+    {
+     "title": "Taxis piratas en el aeropuerto",
+     "desc": "Conductores sin licencia piden tarifas fijas altas en el aeropuerto.",
+     "tip": "Use Uber, Careem o Jeeny, o vaya a la parada oficial de taxis."
+    },
+    {
+     "title": "Carteristas entre la multitud",
+     "desc": "Carteristas y falsos recaudadores de caridad en las multitudes de La Meca y Medina.",
+     "tip": "Deje los objetos de valor en el hotel y done solo a organizaciones oficiales."
+    }
+   ]
   }
  },
  "ru": {
@@ -1632,6 +1872,66 @@
      "Не фотографируйте людей и государственные здания без разрешения."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G (три прямоугольных штыря); турецкие вилки не подходят, возьмите переходник типа G. В старых зданиях ещё встречаются розетки типа A/B (127V)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Опреснённая водопроводная вода очищается, но из-за баков на крышах пить её не рекомендуется; бутилированная вода дешёвая и продаётся везде.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Менингококковая ACWY (обязательна для умры/хаджа)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны; в ресторанах принято около 10 % или округление счёта.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Небольшие чаевые персоналу отеля и гидам ценятся; водителям автобусов во время умры хватит нескольких риалов."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 15 %",
+    "minSpend": "500 SAR (в одном магазине)",
+    "customsNote": "По системе, запущенной в 2025 году, покупайте с паспортом в магазинах, сертифицированных ZATCA/Global Blue, и подтверждайте возврат в течение 90 дней в киосках Global Blue в аэропортах Эр-Рияда, Джидды или Даммама. Услуги, отели и еда не входят."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "airportSimTrapWarning": "Стойки STC, Mobily и Zain в аэропорту продают по официальным ценам, но туристические пакеты бывают дорогими; для SIM нужны паспорт и отпечатки пальцев, поэтому заранее установленная eSIM экономит время."
+   },
+   "touristScams": [
+    {
+     "title": "Нелицензированные агенты умры",
+     "desc": "Посредники без лицензии продают поддельные или неполные пакеты умры.",
+     "tip": "Бронируйте только через платформу Nusuk или лицензированные агентства."
+    },
+    {
+     "title": "Нелегальные такси в аэропорту",
+     "desc": "Нелицензированные водители называют в аэропорту высокую фиксированную цену.",
+     "tip": "Пользуйтесь Uber, Careem или Jeeny либо официальной стоянкой такси."
+    },
+    {
+     "title": "Карманники в толпе",
+     "desc": "Карманники и фальшивые сборщики пожертвований в толпах Мекки и Медины.",
+     "tip": "Оставляйте ценности в отеле и жертвуйте только официальным организациям."
+    }
+   ]
   }
  }
 }

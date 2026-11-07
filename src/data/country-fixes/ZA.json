@@ -1,0 +1,1932 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Güney Afrika Randı (ZAR)",
+   "plugType": "Tip M, N, C (230V, 50Hz)",
+   "bestMonths": "Kasım – Mart (Cape Town ve Garden Route için kurak yaz) · Mayıs – Eylül (Kruger safarisi için kurak kış; hayvan gözlemi en iyi)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Şiddet içeren suç oranı dünyanın en yükseklerindendir: silahlı soygun, araç gaspı (carjacking) ve kapkaç büyük şehirlerde ciddi risktir. Turistik bölgeler (V&A Waterfront, Garden Route, safari lodge’ları) genelde sorunsuzdur; ancak geceleri yürümemek ve bilmediğiniz mahallelere girmemek gerekir.",
+    "commonScams": [
+     "ATM başında “yardım etmek” isteyip kartınızı değiştiren ya da şifrenizi gören kişiler",
+     "Otoparklarda resmî olmayan “car guard”ların fahiş ücret istemesi veya aracınızı kilitlemenizi engellemesi (uzaktan kumanda sinyal kesici)",
+     "Havalimanında ruhsatsız taksi ya da “ucuz transfer” teklif edenler"
+    ],
+    "safeTravelTips": [
+     "Geceleri yürümek yerine Uber/Bolt kullanın; telefonunuzu sokakta açıkta tutmayın.",
+     "Araç kullanırken kapıları kilitli, camları kapalı tutun ve trafik ışıklarında çantayı koltukta bırakmayın.",
+     "ATM’leri yalnızca alışveriş merkezi veya banka içinde, gündüz kullanın."
+    ],
+    "emergencyNumbers": {
+     "police": "10111",
+     "ambulance": "10177",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus (4G; büyük şehirlerde 5G)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "İyi (Vodacom ve MTN eSIM sunar; SIM için pasaport ile RICA kaydı gerekir)",
+    "bestCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (Gautrain ve Cape Town MyCiTi iyi; genel toplu taşıma sınırlı, minibüs taksiler turiste önerilmez)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1 - 2 $",
+    "dailyPassUsd": "Yok (Gautrain havalimanı – Sandton tek yön ~11 - 13 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "Şehir içinde Uber ve Bolt en güvenli ve pratik seçenektir. Kırsal rotalar (Garden Route, Kruger) için araç kiralamak şarttır; trafik soldan akar."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Orta – Yüksek (İstanbul – Johannesburg direkt THY, ~10 saat)",
+    "flightTip": "THY İstanbul – Johannesburg ve Cape Town’a direkt uçar; Cape Town’a gidip Johannesburg’dan dönmek (açık uçlu bilet) zaman kazandırır. İç hatlarda FlySafair ve Airlink ucuzdur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşmadan önce “How are you?” diye hâl hatır sormak nezaket kuralıdır.",
+     "“Car guard”lara ve benzin istasyonu görevlilerine küçük bahşiş (5 - 10 R) vermek gelenektir.",
+     "Braai (mangal) davetinde et getirmek ya da içecek götürmek beklenir.",
+     "Köy ve kasaba ziyaretlerinde insanların fotoğrafını çekmeden önce izin isteyin."
+    ],
+    "festivals": [
+     "Cape Town Uluslararası Caz Festivali (Mart/Nisan)",
+     "Grahamstown/Makhanda Ulusal Sanat Festivali (Haziran–Temmuz)",
+     "Miras Günü – “Braai Day” (24 Eylül)"
+    ],
+    "lifestyle": "“Gökkuşağı ulusu” adıyla anılan çok kültürlü bir toplumdur: 12 resmî dil, rugby ve kriket tutkusu, hafta sonu braai’leri ve açık hava yaşamı gündelik hayatın merkezindedir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Masa Dağı (Table Mountain) ve Cape Town",
+     "Ümit Burnu (Cape Point) ve Boulders Beach penguenleri",
+     "Kruger Ulusal Parkı (Büyük Beşli safarisi)",
+     "Garden Route (Knysna, Plettenberg Bay, Tsitsikamma)",
+     "Stellenbosch ve Franschhoek şarap bölgesi",
+     "Robben Adası (UNESCO)"
+    ],
+    "bestSeasons": "Kasım – Mart (Cape Town ve Garden Route için kurak yaz) · Mayıs – Eylül (Kruger safarisi için kurak kış; hayvan gözlemi en iyi)",
+    "travelStyleTip": "Cape Town ve çevresini araçla, Kruger’i iç hat uçuşu + kiralık araç ya da lodge safarisiyle birleştirin; mesafeler büyüktür."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyanlık (~%80; çeşitli Protestan kiliseleri ve Afrika Bağımsız Kiliseleri), geleneksel Afrika inançları, İslam (~%2), Hinduizm (~%1)",
+    "respectNorms": "Cami ve tapınaklarda omuz ve dizler örtülür; Cape Malay mahallesi Bo-Kaap’ta sakin ve saygılı davranın, evlerin önünde poz verirken izin isteyin.",
+    "sacredSites": [
+     "Auwal Camii (Bo-Kaap; ülkenin en eski camii, 1794)",
+     "St. George Katedrali (Cape Town)",
+     "Juma Masjid (Durban)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "12 resmî dil: Zuluca, Xhosaca, Afrikaanca, İngilizce, Sotho, Tswana, Güney Afrika İşaret Dili ve diğerleri. Ortak dil İngilizcedir.",
+    "englishProficiency": "Çok iyi; İngilizce iş, turizm ve medyanın dilidir.",
+    "phrases": [
+     {
+      "phrase": "Howzit!",
+      "meaning": "Selam, nasılsın? (Güney Afrika İngilizcesi)",
+      "translation": "Selam, nasılsın? (Güney Afrika İngilizcesi)",
+      "pronunciation": "how-zit"
+     },
+     {
+      "phrase": "Sawubona",
+      "meaning": "Merhaba (Zuluca)",
+      "translation": "Merhaba (Zuluca)",
+      "pronunciation": "sa-wu-bo-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Teşekkür ederim (Zuluca)",
+      "translation": "Teşekkür ederim (Zuluca)",
+      "pronunciation": "ngi-ya-bon-ga"
+     },
+     {
+      "phrase": "Baie dankie",
+      "meaning": "Çok teşekkürler (Afrikaanca)",
+      "translation": "Çok teşekkürler (Afrikaanca)",
+      "pronunciation": "ba-ye dun-ki"
+     },
+     {
+      "phrase": "Lekker!",
+      "meaning": "Harika! / Çok güzel! (yerel argo)",
+      "translation": "Harika! / Çok güzel! (yerel argo)",
+      "pronunciation": "lek-ker"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bölge San ve Khoikhoi halklarının kadim yurdudur. 1652’de Hollandalılar Cape’e yerleşti, 19. yüzyılda İngiliz yönetimi ve Boer Savaşları yaşandı. 1948–1994 arasındaki apartheid rejimi, Nelson Mandela’nın cumhurbaşkanı seçildiği 1994 demokratik seçimleriyle sona erdi.",
+    "milestones": [
+     "1652: Hollanda Doğu Hindistan Şirketi Cape Town’u kurdu",
+     "1899–1902: İkinci Boer Savaşı",
+     "1994: İlk demokratik seçimler, Nelson Mandela cumhurbaşkanı",
+     "2010: FIFA Dünya Kupası’na ev sahipliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bobotie (yumurta kremalı, baharatlı kıyma fırını)",
+     "Bunny chow (Durban usulü ekmek içinde köri)",
+     "Braai (mangalda boerewors sucuk ve et)"
+    ],
+    "traditionalDrinks": [
+     "Rooibos çayı",
+     "Pinotage ve Stellenbosch şarapları",
+     "Amarula (marula meyvesi likörü)"
+    ],
+    "streetFoodAndDesserts": [
+     "Biltong (kurutulmuş baharatlı et)",
+     "Koeksister (şuruplu örgü hamur tatlısı)",
+     "Malva pudding (kayısı reçelli sünger tatlı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nelson Mandela (Nobel Barış Ödülü 1993)",
+     "Desmond Tutu (Nobel Barış Ödülü 1984)",
+     "Charlize Theron (Oscar ödüllü oyuncu)"
+    ],
+    "strongSectors": [
+     "Madencilik (platin, altın, krom; dünya lideri)",
+     "Şarap ve meyve ihracatı",
+     "Turizm ve finans (Johannesburg Borsası)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kartlar (temassız dahil) neredeyse her yerde geçer; kırsal tezgâhlar, car guard ve bahşişler için az miktarda nakit Rand bulundurun.",
+    "tippingCulture": "Restoranlarda %10 - 15 bahşiş beklenir; safari rehberi ve iz sürücüye günlük bahşiş gelenektir.",
+    "economicPillars": "Madencilik, finans hizmetleri, otomotiv üretimi, tarım ve şarap, turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Güney Afrika Klasikleri: Cape Town, Şarap Bölgesi, Garden Route ve Kruger",
+   "routeSummary": "Cape Town’dan başlayıp şarap vadilerinden Garden Route kıyısına uzanan, ardından uçakla geçilen Kruger’de Büyük Beşli safarisiyle biten 11 günlük rota.",
+   "totalDays": 11,
+   "idealDurationText": "11 günlük rota",
+   "bestSeason": "Kasım – Mart (Cape Town ve Garden Route için kurak yaz) · Mayıs – Eylül (Kruger safarisi için kurak kış; hayvan gözlemi en iyi)",
+   "transportMode": "Cape Town – Garden Route kiralık araç (soldan trafik); George/Gqeberha – Kruger (Skukuza/Nelspruit) iç hat uçuşu",
+   "paceLevel": "Dengeli (şehir, doğa ve safari)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Cape Town ve Ümit Burnu",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Masa Dağı (teleferik veya yürüyüş)",
+      "V&A Waterfront ve Robben Adası",
+      "Bo-Kaap’ın renkli evleri",
+      "Cape Point ve Boulders Beach penguenleri"
+     ],
+     "activities": [
+      "Açık havada Masa Dağı’na teleferikle çıkıp gün batımını izleyin.",
+      "Chapman’s Peak yolundan Ümit Burnu’na günübirlik araç turu yapın.",
+      "Robben Adası’nda Mandela’nın hücresini ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Cape Malay körisi (Bo-Kaap)",
+      "Taze balık ve patates (Kalk Bay)"
+     ],
+     "criticalTips": [
+      "Masa Dağı rüzgârda kapanır; teleferik durumunu sabah kontrol edin.",
+      "Robben Adası biletlerini günler öncesinden alın."
+     ],
+     "mapsQuery": "Table Mountain, Cape Town, South Africa"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Stellenbosch ve Franschhoek (Şarap Bölgesi)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Stellenbosch’un Cape Dutch mimarisi",
+      "Franschhoek Şarap Tramvayı",
+      "Boschendal ve Babylonstoren çiftlikleri"
+     ],
+     "activities": [
+      "Franschhoek Wine Tram ile bağ evleri arasında gezin.",
+      "Babylonstoren bahçesinde yürüyüp çiftlik restoranında öğle yemeği yiyin.",
+      "Stellenbosch’ta tarihi Dorp Caddesi’nde dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Pinotage ve Chenin Blanc tadımı",
+      "Peynir ve şarküteri tabağı"
+     ],
+     "criticalTips": [
+      "Tadım sonrası araç kullanmayın; şoförlü tur ya da tramvay tercih edin.",
+      "Popüler restoranlar için hafta sonu rezervasyon şarttır."
+     ],
+     "mapsQuery": "Stellenbosch, Western Cape, South Africa"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Garden Route (Knysna ve Plettenberg Bay)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Knysna Heads ve lagünü",
+      "Tsitsikamma Ulusal Parkı – Storms River asma köprüsü",
+      "Robberg Doğa Koruma Alanı (Plettenberg Bay)"
+     ],
+     "activities": [
+      "Tsitsikamma’da asma köprüye yürüyün ve kano yapın.",
+      "Bloukrans Köprüsü’nde dünyanın en yüksek köprü bungee atlayışlarından birini deneyin.",
+      "Plettenberg Bay’de tekne turuyla yunus ve (Temmuz–Kasım) balina izleyin."
+     ],
+     "foodAndDrinks": [
+      "Knysna istiridyesi",
+      "Deniz ürünleri tabağı"
+     ],
+     "criticalTips": [
+      "Mesafeler uzun; geceleri ana yollar dışında araç kullanmayın.",
+      "Balina sezonu Temmuz – Kasım arasıdır."
+     ],
+     "mapsQuery": "Knysna, Garden Route, South Africa"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Kruger Ulusal Parkı (Safari)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Büyük Beşli (aslan, leopar, fil, bufalo, gergedan)",
+      "Sabi Sand özel rezervleri",
+      "Panorama Route ve Blyde River Kanyonu"
+     ],
+     "activities": [
+      "Şafakta ve akşamüstü rehberli açık araç safarisine katılın.",
+      "Kendi aracınızla park içinde self-drive safari yapın.",
+      "Blyde River Kanyonu ve God’s Window manzara noktalarını gezin."
+     ],
+     "foodAndDrinks": [
+      "Lodge’da braai akşam yemeği",
+      "Biltong ve rooibos çayı"
+     ],
+     "criticalTips": [
+      "Park kapıları gün batımında kapanır; saatlere kesinlikle uyun.",
+      "Kruger sıtma riski olan bölgededir; özellikle Ekim – Mayıs arasında doktorunuza danışın."
+     ],
+     "mapsQuery": "Kruger National Park, South Africa"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bobotie (yumurta kremalı, baharatlı kıyma fırını)",
+     "Bunny chow (Durban usulü ekmek içinde köri)",
+     "Braai (mangalda boerewors sucuk ve et)"
+    ],
+    "drinks": [
+     "Rooibos çayı",
+     "Pinotage ve Stellenbosch şarapları",
+     "Amarula (marula meyvesi likörü)"
+    ],
+    "streetFoods": [
+     "Biltong (kurutulmuş baharatlı et)",
+     "Koeksister (şuruplu örgü hamur tatlısı)",
+     "Malva pudding (kayısı reçelli sünger tatlı)"
+    ],
+    "diningAdvice": "Restoranlarda %10 - 15 bahşiş bırakın; braai kültürünü deneyimlemek için yerel bir braai restoranı ya da Cape Town’daki Mzoli’s gibi mekânları deneyin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G/M tipi adaptör (M tipi üç kalın yuvarlak pim; Türk fişleri çoğu prize girmez)",
+     "Safari için nötr renkli, katmanlı kıyafet ve dürbün",
+     "Güneş kremi ve şapka",
+     "Sıtma bölgesi için sivrisinek kovucu"
+    ],
+    "safetyAndEtiquette": [
+     "Geceleri yürümeyin; Uber/Bolt kullanın.",
+     "Değerli eşyalarınızı araçta görünür bırakmayın.",
+     "Safaride araçtan inmeyin ve hayvanlara yaklaşmayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "N",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Ana priz M tipidir (üç kalın yuvarlak pim); yeni binalarda N tipi (SANS 164-2) yaygınlaşıyor. İnce iki pimli C fişleri bazı prizlere girer, Türk Schuko fişleri girmez; yerel M adaptörü süpermarketlerde ucuzdur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Cape Town, Johannesburg ve Pretoria’da musluk suyu içilebilir. Kırsal bölgelerde ve su kesintisi sonrası şişe su tercih edin.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, kızamık)",
+     "Hepatit A ve tifo",
+     "Kruger ve Kuzeydoğu için sıtma önlemi (doktora danışın)",
+     "Sarıhumma sertifikası yalnızca riskli bir ülkeden geliyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "10177"
+   },
+   "tipping": {
+    "custom": "Bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Restoranda %10 - 15; benzinci ve car guard’a 5 - 10 R; safari rehberine günlük bahşiş yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%15 KDV (işlem ücreti düşülür)",
+    "minSpend": "250 ZAR (toplam alışveriş)",
+    "customsNote": "Ürünleri 90 gün içinde ülkeden çıkarmalısınız; iade için faturalar ve ürünler havalimanındaki VAT Refund ofisine gösterilir. Fildişi, gergedan boynuzu ve korunan hayvan ürünleri yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "airportSimTrapWarning": "Havalimanı stantları pratik ve fiyatları makuldür; SIM için pasaport ve adres (otel) ile RICA kaydı gerekir."
+   },
+   "touristScams": [
+    {
+     "title": "ATM “yardımcıları”",
+     "desc": "ATM başında yardım teklif eden biri kartınızı değiştirir ya da şifrenizi görür.",
+     "tip": "Yardım teklifini reddedin; banka içindeki ATM’leri kullanın."
+    },
+    {
+     "title": "Sinyal kesici (remote jamming)",
+     "desc": "Otoparkta aracınızı kumandayla kilitlediğinizde sinyal engellenir, araç açık kalır.",
+     "tip": "Kilitlendiğini kapı kolunu çekerek kontrol edin."
+    },
+    {
+     "title": "Ruhsatsız taksi",
+     "desc": "Havalimanında “ucuz transfer” vaat eden ruhsatsız sürücüler fahiş ücret ister.",
+     "tip": "Uber/Bolt ya da otelinizin transferini kullanın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "South African Rand (ZAR)",
+   "plugType": "Type M, N, C (230V, 50Hz)",
+   "bestMonths": "November – March (dry summer for Cape Town and the Garden Route) · May – September (dry winter for Kruger safaris; best game viewing)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Violent crime rates are among the highest in the world: armed robbery, carjacking and snatch theft are serious risks in big cities. Tourist areas (V&A Waterfront, Garden Route, safari lodges) are generally fine, but avoid walking at night and entering unfamiliar neighbourhoods.",
+    "commonScams": [
+     "People at ATMs who offer to “help” and swap your card or watch your PIN",
+     "Unofficial “car guards” in car parks demanding high fees, or remote-jamming so your car fails to lock",
+     "Unlicensed taxis or “cheap transfers” offered at the airport"
+    ],
+    "safeTravelTips": [
+     "Use Uber/Bolt instead of walking at night; don’t keep your phone visible on the street.",
+     "Drive with doors locked and windows up, and never leave a bag on the seat at traffic lights.",
+     "Only use ATMs inside malls or banks, during the day."
+    ],
+    "emergencyNumbers": {
+     "police": "10111",
+     "ambulance": "10177",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% of population (4G; 5G in major cities)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Good (Vodacom and MTN offer eSIM; SIMs require RICA registration with passport)",
+    "bestCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (Gautrain and Cape Town MyCiTi are good; public transport is otherwise limited and minibus taxis are not recommended for visitors)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1 - 2 $",
+    "dailyPassUsd": "None (Gautrain airport – Sandton one way ~11 - 13 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber and Bolt are the safest and most practical option in cities. For rural routes (Garden Route, Kruger) a rental car is essential; traffic drives on the left."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Moderate – High (Istanbul – Johannesburg direct on Turkish Airlines, ~10 hours)",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Johannesburg and Cape Town; flying into Cape Town and out of Johannesburg (open-jaw) saves time. FlySafair and Airlink are cheap domestically."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Asking “How are you?” before getting to the point is basic courtesy.",
+     "Small tips (R5 - 10) for car guards and petrol attendants are customary.",
+     "At a braai (barbecue) invitation, bring meat or drinks.",
+     "Ask permission before photographing people in villages and townships."
+    ],
+    "festivals": [
+     "Cape Town International Jazz Festival (March/April)",
+     "National Arts Festival, Makhanda (June – July)",
+     "Heritage Day – “Braai Day” (24 September)"
+    ],
+    "lifestyle": "Known as the “Rainbow Nation”, a multicultural society with 12 official languages; rugby and cricket passion, weekend braais and outdoor life are at the heart of daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Table Mountain and Cape Town",
+     "Cape Point and the Boulders Beach penguins",
+     "Kruger National Park (Big Five safari)",
+     "Garden Route (Knysna, Plettenberg Bay, Tsitsikamma)",
+     "Stellenbosch and Franschhoek winelands",
+     "Robben Island (UNESCO)"
+    ],
+    "bestSeasons": "November – March (dry summer for Cape Town and the Garden Route) · May – September (dry winter for Kruger safaris; best game viewing)",
+    "travelStyleTip": "Explore Cape Town and surroundings by car, and combine Kruger with a domestic flight plus rental car or a lodge safari; distances are huge."
+   },
+   "religion": {
+    "primaryReligions": "Christianity (~80%; various Protestant and African Independent Churches), traditional African religions, Islam (~2%), Hinduism (~1%)",
+    "respectNorms": "Cover shoulders and knees in mosques and temples; in the Cape Malay quarter Bo-Kaap be quiet and respectful, and ask before posing in front of homes.",
+    "sacredSites": [
+     "Auwal Mosque (Bo-Kaap; oldest mosque in the country, 1794)",
+     "St George’s Cathedral (Cape Town)",
+     "Juma Masjid (Durban)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "12 official languages: Zulu, Xhosa, Afrikaans, English, Sotho, Tswana, South African Sign Language and others. English is the common language.",
+    "englishProficiency": "Very good; English is the language of business, tourism and media.",
+    "phrases": [
+     {
+      "phrase": "Howzit!",
+      "meaning": "Hi, how are you? (South African English)",
+      "translation": "Hi, how are you? (South African English)",
+      "pronunciation": "how-zit"
+     },
+     {
+      "phrase": "Sawubona",
+      "meaning": "Hello (Zulu)",
+      "translation": "Hello (Zulu)",
+      "pronunciation": "sa-wu-bo-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Thank you (Zulu)",
+      "translation": "Thank you (Zulu)",
+      "pronunciation": "ngi-ya-bon-ga"
+     },
+     {
+      "phrase": "Baie dankie",
+      "meaning": "Thank you very much (Afrikaans)",
+      "translation": "Thank you very much (Afrikaans)",
+      "pronunciation": "ba-ye dun-ki"
+     },
+     {
+      "phrase": "Lekker!",
+      "meaning": "Great! / Nice! (local slang)",
+      "translation": "Great! / Nice! (local slang)",
+      "pronunciation": "lek-ker"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The region is the ancient home of the San and Khoikhoi peoples. The Dutch settled at the Cape in 1652, followed by British rule and the Boer Wars in the 19th century. Apartheid (1948–1994) ended with the 1994 democratic elections that made Nelson Mandela president.",
+    "milestones": [
+     "1652: Dutch East India Company founds Cape Town",
+     "1899–1902: Second Boer War",
+     "1994: First democratic elections, Nelson Mandela becomes president",
+     "2010: Hosts the FIFA World Cup"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bobotie (spiced minced-meat bake with an egg topping)",
+     "Bunny chow (Durban curry in a hollowed-out loaf)",
+     "Braai (boerewors sausage and meat on the grill)"
+    ],
+    "traditionalDrinks": [
+     "Rooibos tea",
+     "Pinotage and Stellenbosch wines",
+     "Amarula (marula fruit cream liqueur)"
+    ],
+    "streetFoodAndDesserts": [
+     "Biltong (spiced dried meat)",
+     "Koeksister (syrup-soaked braided pastry)",
+     "Malva pudding (apricot-jam sponge pudding)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nelson Mandela (Nobel Peace Prize 1993)",
+     "Desmond Tutu (Nobel Peace Prize 1984)",
+     "Charlize Theron (Oscar-winning actress)"
+    ],
+    "strongSectors": [
+     "Mining (platinum, gold, chrome; world leader)",
+     "Wine and fruit exports",
+     "Tourism and finance (Johannesburg Stock Exchange)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards (including contactless) are accepted almost everywhere; carry a little cash in rand for rural stalls, car guards and tips.",
+    "tippingCulture": "10 - 15% is expected in restaurants; daily tips for safari guides and trackers are customary.",
+    "economicPillars": "Mining, financial services, automotive manufacturing, agriculture and wine, tourism."
+   }
+  },
+  "itin": {
+   "routeName": "South Africa Classics: Cape Town, Winelands, Garden Route & Kruger",
+   "routeSummary": "An 11-day route starting in Cape Town, running through the wine valleys to the Garden Route coast, then flying to Kruger for a Big Five safari.",
+   "totalDays": 11,
+   "idealDurationText": "11-Day Itinerary",
+   "bestSeason": "November – March (dry summer for Cape Town and the Garden Route) · May – September (dry winter for Kruger safaris; best game viewing)",
+   "transportMode": "Rental car Cape Town – Garden Route (drive on the left); domestic flight George/Gqeberha – Kruger (Skukuza/Nelspruit)",
+   "paceLevel": "Balanced (city, nature and safari)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Cape Town & Cape Point",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Table Mountain (cable car or hike)",
+      "V&A Waterfront and Robben Island",
+      "Colourful houses of Bo-Kaap",
+      "Cape Point and the Boulders Beach penguins"
+     ],
+     "activities": [
+      "Ride the cable car up Table Mountain on a clear day and watch the sunset.",
+      "Take a day drive to Cape Point via Chapman’s Peak Drive.",
+      "Visit Mandela’s cell on Robben Island."
+     ],
+     "foodAndDrinks": [
+      "Cape Malay curry (Bo-Kaap)",
+      "Fresh fish and chips (Kalk Bay)"
+     ],
+     "criticalTips": [
+      "Table Mountain closes in strong wind; check the cable car status in the morning.",
+      "Book Robben Island tickets days ahead."
+     ],
+     "mapsQuery": "Table Mountain, Cape Town, South Africa"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Stellenbosch & Franschhoek (Winelands)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Cape Dutch architecture of Stellenbosch",
+      "Franschhoek Wine Tram",
+      "Boschendal and Babylonstoren estates"
+     ],
+     "activities": [
+      "Hop between estates on the Franschhoek Wine Tram.",
+      "Walk the Babylonstoren garden and lunch at the farm restaurant.",
+      "Stroll historic Dorp Street in Stellenbosch."
+     ],
+     "foodAndDrinks": [
+      "Pinotage and Chenin Blanc tasting",
+      "Cheese and charcuterie platter"
+     ],
+     "criticalTips": [
+      "Don’t drive after tastings; use a chauffeured tour or the tram.",
+      "Popular restaurants need weekend reservations."
+     ],
+     "mapsQuery": "Stellenbosch, Western Cape, South Africa"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Garden Route (Knysna & Plettenberg Bay)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Knysna Heads and lagoon",
+      "Tsitsikamma National Park – Storms River suspension bridge",
+      "Robberg Nature Reserve (Plettenberg Bay)"
+     ],
+     "activities": [
+      "Hike to the suspension bridge and kayak in Tsitsikamma.",
+      "Try one of the world’s highest bridge bungee jumps at Bloukrans Bridge.",
+      "Spot dolphins and (July – November) whales on a boat trip in Plettenberg Bay."
+     ],
+     "foodAndDrinks": [
+      "Knysna oysters",
+      "Seafood platter"
+     ],
+     "criticalTips": [
+      "Distances are long; avoid driving off main roads at night.",
+      "Whale season runs July – November."
+     ],
+     "mapsQuery": "Knysna, Garden Route, South Africa"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Kruger National Park (Safari)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Big Five (lion, leopard, elephant, buffalo, rhino)",
+      "Sabi Sand private reserves",
+      "Panorama Route and Blyde River Canyon"
+     ],
+     "activities": [
+      "Join guided open-vehicle game drives at dawn and dusk.",
+      "Do a self-drive safari inside the park in your own car.",
+      "Visit Blyde River Canyon and God’s Window viewpoints."
+     ],
+     "foodAndDrinks": [
+      "Braai dinner at the lodge",
+      "Biltong and rooibos tea"
+     ],
+     "criticalTips": [
+      "Park gates close at sunset; stick to the times strictly.",
+      "Kruger is in a malaria area; consult your doctor, especially for October – May."
+     ],
+     "mapsQuery": "Kruger National Park, South Africa"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bobotie (spiced minced-meat bake with an egg topping)",
+     "Bunny chow (Durban curry in a hollowed-out loaf)",
+     "Braai (boerewors sausage and meat on the grill)"
+    ],
+    "drinks": [
+     "Rooibos tea",
+     "Pinotage and Stellenbosch wines",
+     "Amarula (marula fruit cream liqueur)"
+    ],
+    "streetFoods": [
+     "Biltong (spiced dried meat)",
+     "Koeksister (syrup-soaked braided pastry)",
+     "Malva pudding (apricot-jam sponge pudding)"
+    ],
+    "diningAdvice": "Leave 10 - 15% in restaurants; to experience braai culture try a local braai spot or places like Mzoli’s near Cape Town."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type M adapter (three thick round pins; Turkish/EU Schuko plugs don’t fit most sockets)",
+     "Neutral-coloured layers and binoculars for safari",
+     "Sunscreen and a hat",
+     "Insect repellent for malaria areas"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t walk at night; use Uber/Bolt.",
+     "Never leave valuables visible in the car.",
+     "On safari stay in the vehicle and never approach animals."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "N",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "The main socket is Type M (three thick round pins); Type N (SANS 164-2) is spreading in new buildings. Slim two-pin C plugs fit some sockets, Turkish Schuko plugs don’t; local M adapters are cheap in supermarkets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in Cape Town, Johannesburg and Pretoria. Prefer bottled water in rural areas and after supply outages.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, measles)",
+     "Hepatitis A and typhoid",
+     "Malaria precautions for Kruger and the north-east (consult a doctor)",
+     "Yellow fever certificate only if arriving from a risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "10177"
+   },
+   "tipping": {
+    "custom": "Tipping is expected.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 - 15% in restaurants; R5 - 10 for petrol attendants and car guards; daily tips for safari guides are common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15% VAT (minus handling fee)",
+    "minSpend": "250 ZAR (total purchases)",
+    "customsNote": "Goods must leave the country within 90 days; show invoices and items at the airport VAT Refund office. Ivory, rhino horn and protected wildlife products are prohibited."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "airportSimTrapWarning": "Airport counters are convenient and fairly priced; a SIM requires RICA registration with passport and an address (hotel)."
+   },
+   "touristScams": [
+    {
+     "title": "ATM “helpers”",
+     "desc": "Someone offering help at an ATM swaps your card or watches your PIN.",
+     "tip": "Decline help and use ATMs inside banks."
+    },
+    {
+     "title": "Remote jamming",
+     "desc": "When you lock your car with the remote in a car park, the signal is blocked and the car stays open.",
+     "tip": "Check it is locked by pulling the door handle."
+    },
+    {
+     "title": "Unlicensed taxis",
+     "desc": "Unlicensed drivers promising a “cheap transfer” at the airport charge inflated fares.",
+     "tip": "Use Uber/Bolt or your hotel transfer."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Südafrikanischer Rand (ZAR)",
+   "plugType": "Typ M, N, C (230V, 50Hz)",
+   "bestMonths": "November – März (trockener Sommer für Kapstadt und die Garden Route) · Mai – September (trockener Winter für Kruger-Safaris; beste Tierbeobachtung)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Die Gewaltkriminalität gehört zu den höchsten der Welt: bewaffnete Raubüberfälle, Carjacking und Taschenraub sind in Großstädten ein ernstes Risiko. Touristengebiete (V&A Waterfront, Garden Route, Safari-Lodges) sind meist unproblematisch, nachts sollte man aber nicht zu Fuß gehen und unbekannte Viertel meiden.",
+    "commonScams": [
+     "Personen am Geldautomaten, die „helfen“ wollen und die Karte tauschen oder die PIN ausspähen",
+     "Inoffizielle „Car Guards“ auf Parkplätzen mit überhöhten Forderungen oder Funkstörern, damit das Auto nicht verriegelt",
+     "Unlizenzierte Taxis oder „günstige Transfers“ am Flughafen"
+    ],
+    "safeTravelTips": [
+     "Nachts Uber/Bolt statt Fußwege nutzen; das Handy auf der Straße nicht offen zeigen.",
+     "Beim Fahren Türen verriegeln, Fenster schließen und an Ampeln keine Tasche auf dem Sitz liegen lassen.",
+     "Geldautomaten nur tagsüber in Einkaufszentren oder Banken benutzen."
+    ],
+    "emergencyNumbers": {
+     "police": "10111",
+     "ambulance": "10177",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % der Bevölkerung (4G; 5G in Großstädten)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Gut (Vodacom und MTN bieten eSIM; SIM-Karten erfordern RICA-Registrierung mit Reisepass)",
+    "bestCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Gautrain und MyCiTi in Kapstadt sind gut; sonst wenig ÖPNV, Minibustaxis sind für Besucher nicht zu empfehlen)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1 - 2 $",
+    "dailyPassUsd": "Keine (Gautrain Flughafen – Sandton einfach ~11 - 13 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber und Bolt sind in Städten die sicherste und praktischste Wahl. Für ländliche Routen (Garden Route, Kruger) ist ein Mietwagen unerlässlich; es herrscht Linksverkehr."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Mittel – Hoch (Istanbul – Johannesburg direkt mit Turkish Airlines, ~10 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Johannesburg und Kapstadt; Gabelflug (hin nach Kapstadt, zurück ab Johannesburg) spart Zeit. Inlands sind FlySafair und Airlink günstig."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Vor dem eigentlichen Anliegen „How are you?“ zu fragen, gehört zur Höflichkeit.",
+     "Kleine Trinkgelder (5 - 10 R) für Car Guards und Tankwarte sind üblich.",
+     "Zu einer Braai-Einladung (Grillfest) bringt man Fleisch oder Getränke mit.",
+     "In Dörfern und Townships vor dem Fotografieren von Menschen um Erlaubnis bitten."
+    ],
+    "festivals": [
+     "Cape Town International Jazz Festival (März/April)",
+     "National Arts Festival, Makhanda (Juni – Juli)",
+     "Heritage Day – „Braai Day“ (24. September)"
+    ],
+    "lifestyle": "Die „Regenbogennation“ ist eine multikulturelle Gesellschaft mit 12 Amtssprachen; Rugby- und Cricket-Begeisterung, Braais am Wochenende und das Leben im Freien prägen den Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Tafelberg und Kapstadt",
+     "Kap der Guten Hoffnung (Cape Point) und Pinguine am Boulders Beach",
+     "Kruger-Nationalpark (Big-Five-Safari)",
+     "Garden Route (Knysna, Plettenberg Bay, Tsitsikamma)",
+     "Weinland Stellenbosch und Franschhoek",
+     "Robben Island (UNESCO)"
+    ],
+    "bestSeasons": "November – März (trockener Sommer für Kapstadt und die Garden Route) · Mai – September (trockener Winter für Kruger-Safaris; beste Tierbeobachtung)",
+    "travelStyleTip": "Kapstadt und Umgebung mit dem Auto erkunden, Kruger per Inlandsflug plus Mietwagen oder als Lodge-Safari kombinieren; die Entfernungen sind riesig."
+   },
+   "religion": {
+    "primaryReligions": "Christentum (~80 %; verschiedene protestantische und afrikanische unabhängige Kirchen), traditionelle afrikanische Religionen, Islam (~2 %), Hinduismus (~1 %)",
+    "respectNorms": "In Moscheen und Tempeln Schultern und Knie bedecken; im kapmalaiischen Viertel Bo-Kaap ruhig und respektvoll sein und vor Fotos vor Wohnhäusern fragen.",
+    "sacredSites": [
+     "Auwal-Moschee (Bo-Kaap; älteste Moschee des Landes, 1794)",
+     "St. George’s Cathedral (Kapstadt)",
+     "Juma Masjid (Durban)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "12 Amtssprachen: Zulu, Xhosa, Afrikaans, Englisch, Sotho, Tswana, Südafrikanische Gebärdensprache u. a. Verkehrssprache ist Englisch.",
+    "englishProficiency": "Sehr gut; Englisch ist die Sprache von Wirtschaft, Tourismus und Medien.",
+    "phrases": [
+     {
+      "phrase": "Howzit!",
+      "meaning": "Hallo, wie geht’s? (südafrikanisches Englisch)",
+      "translation": "Hallo, wie geht’s? (südafrikanisches Englisch)",
+      "pronunciation": "how-zit"
+     },
+     {
+      "phrase": "Sawubona",
+      "meaning": "Hallo (Zulu)",
+      "translation": "Hallo (Zulu)",
+      "pronunciation": "sa-wu-bo-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Danke (Zulu)",
+      "translation": "Danke (Zulu)",
+      "pronunciation": "ngi-ya-bon-ga"
+     },
+     {
+      "phrase": "Baie dankie",
+      "meaning": "Vielen Dank (Afrikaans)",
+      "translation": "Vielen Dank (Afrikaans)",
+      "pronunciation": "ba-ye dun-ki"
+     },
+     {
+      "phrase": "Lekker!",
+      "meaning": "Super! / Lecker! (lokaler Slang)",
+      "translation": "Super! / Lecker! (lokaler Slang)",
+      "pronunciation": "lek-ker"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Region ist die uralte Heimat der San und Khoikhoi. 1652 ließen sich die Niederländer am Kap nieder, im 19. Jh. folgten britische Herrschaft und Burenkriege. Die Apartheid (1948–1994) endete mit den demokratischen Wahlen 1994, die Nelson Mandela zum Präsidenten machten.",
+    "milestones": [
+     "1652: Die Niederländische Ostindien-Kompanie gründet Kapstadt",
+     "1899–1902: Zweiter Burenkrieg",
+     "1994: Erste demokratische Wahlen, Nelson Mandela wird Präsident",
+     "2010: Austragung der FIFA-Weltmeisterschaft"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bobotie (würziger Hackfleischauflauf mit Eierguss)",
+     "Bunny Chow (Durban-Curry im ausgehöhlten Brotlaib)",
+     "Braai (Boerewors-Wurst und Fleisch vom Grill)"
+    ],
+    "traditionalDrinks": [
+     "Rooibos-Tee",
+     "Pinotage und Weine aus Stellenbosch",
+     "Amarula (Sahnelikör aus Marulafrüchten)"
+    ],
+    "streetFoodAndDesserts": [
+     "Biltong (gewürztes Trockenfleisch)",
+     "Koeksister (sirupgetränktes Hefezopfgebäck)",
+     "Malva Pudding (Biskuitpudding mit Aprikosenmarmelade)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nelson Mandela (Friedensnobelpreis 1993)",
+     "Desmond Tutu (Friedensnobelpreis 1984)",
+     "Charlize Theron (Oscar-Preisträgerin)"
+    ],
+    "strongSectors": [
+     "Bergbau (Platin, Gold, Chrom; Weltmarktführer)",
+     "Wein- und Obstexport",
+     "Tourismus und Finanzwesen (Johannesburger Börse)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten (auch kontaktlos) werden fast überall akzeptiert; etwas Bargeld in Rand für ländliche Stände, Car Guards und Trinkgelder mitnehmen.",
+    "tippingCulture": "In Restaurants werden 10 - 15 % erwartet; tägliches Trinkgeld für Safari-Guides und Fährtenleser ist üblich.",
+    "economicPillars": "Bergbau, Finanzdienstleistungen, Automobilproduktion, Landwirtschaft und Wein, Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Südafrika-Klassiker: Kapstadt, Weinland, Garden Route & Kruger",
+   "routeSummary": "Eine 11-tägige Route von Kapstadt durch die Weintäler an die Küste der Garden Route und per Flug weiter zum Kruger-Park für eine Big-Five-Safari.",
+   "totalDays": 11,
+   "idealDurationText": "11-tägige Reise",
+   "bestSeason": "November – März (trockener Sommer für Kapstadt und die Garden Route) · Mai – September (trockener Winter für Kruger-Safaris; beste Tierbeobachtung)",
+   "transportMode": "Mietwagen Kapstadt – Garden Route (Linksverkehr); Inlandsflug George/Gqeberha – Kruger (Skukuza/Nelspruit)",
+   "paceLevel": "Ausgewogen (Stadt, Natur und Safari)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Kapstadt & Kap der Guten Hoffnung",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Tafelberg (Seilbahn oder Wanderung)",
+      "V&A Waterfront und Robben Island",
+      "Bunte Häuser von Bo-Kaap",
+      "Cape Point und Pinguine am Boulders Beach"
+     ],
+     "activities": [
+      "An einem klaren Tag mit der Seilbahn auf den Tafelberg fahren und den Sonnenuntergang ansehen.",
+      "Tagesausflug über den Chapman’s Peak Drive zum Cape Point.",
+      "Mandelas Zelle auf Robben Island besichtigen."
+     ],
+     "foodAndDrinks": [
+      "Kapmalaiisches Curry (Bo-Kaap)",
+      "Frischer Fisch mit Pommes (Kalk Bay)"
+     ],
+     "criticalTips": [
+      "Bei starkem Wind schließt die Tafelberg-Seilbahn; morgens den Status prüfen.",
+      "Tickets für Robben Island Tage im Voraus buchen."
+     ],
+     "mapsQuery": "Table Mountain, Cape Town, South Africa"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Stellenbosch & Franschhoek (Weinland)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kapholländische Architektur in Stellenbosch",
+      "Franschhoek Wine Tram",
+      "Weingüter Boschendal und Babylonstoren"
+     ],
+     "activities": [
+      "Mit der Franschhoek Wine Tram von Weingut zu Weingut fahren.",
+      "Durch den Garten von Babylonstoren spazieren und im Farmrestaurant zu Mittag essen.",
+      "Die historische Dorp Street in Stellenbosch entlangbummeln."
+     ],
+     "foodAndDrinks": [
+      "Pinotage- und Chenin-Blanc-Verkostung",
+      "Käse- und Wurstplatte"
+     ],
+     "criticalTips": [
+      "Nach Verkostungen nicht selbst fahren; Tour mit Fahrer oder die Tram nutzen.",
+      "Beliebte Restaurants am Wochenende reservieren."
+     ],
+     "mapsQuery": "Stellenbosch, Western Cape, South Africa"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Garden Route (Knysna & Plettenberg Bay)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Knysna Heads und Lagune",
+      "Tsitsikamma-Nationalpark – Hängebrücke am Storms River",
+      "Naturreservat Robberg (Plettenberg Bay)"
+     ],
+     "activities": [
+      "Zur Hängebrücke wandern und in Tsitsikamma Kajak fahren.",
+      "An der Bloukrans-Brücke einen der höchsten Brücken-Bungeesprünge der Welt wagen.",
+      "In Plettenberg Bay bei einer Bootstour Delfine und (Juli – November) Wale beobachten."
+     ],
+     "foodAndDrinks": [
+      "Knysna-Austern",
+      "Meeresfrüchteplatte"
+     ],
+     "criticalTips": [
+      "Die Strecken sind lang; nachts nicht abseits der Hauptstraßen fahren.",
+      "Walsaison ist Juli – November."
+     ],
+     "mapsQuery": "Knysna, Garden Route, South Africa"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Kruger-Nationalpark (Safari)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Big Five (Löwe, Leopard, Elefant, Büffel, Nashorn)",
+      "Private Reservate in Sabi Sand",
+      "Panorama Route und Blyde River Canyon"
+     ],
+     "activities": [
+      "An geführten Pirschfahrten im offenen Wagen bei Sonnenaufgang und -untergang teilnehmen.",
+      "Mit dem eigenen Mietwagen eine Self-Drive-Safari im Park machen.",
+      "Blyde River Canyon und den Aussichtspunkt God’s Window besuchen."
+     ],
+     "foodAndDrinks": [
+      "Braai-Abendessen in der Lodge",
+      "Biltong und Rooibos-Tee"
+     ],
+     "criticalTips": [
+      "Die Parktore schließen bei Sonnenuntergang; Zeiten strikt einhalten.",
+      "Kruger liegt im Malariagebiet; besonders für Oktober – Mai ärztlich beraten lassen."
+     ],
+     "mapsQuery": "Kruger National Park, South Africa"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bobotie (würziger Hackfleischauflauf mit Eierguss)",
+     "Bunny Chow (Durban-Curry im ausgehöhlten Brotlaib)",
+     "Braai (Boerewors-Wurst und Fleisch vom Grill)"
+    ],
+    "drinks": [
+     "Rooibos-Tee",
+     "Pinotage und Weine aus Stellenbosch",
+     "Amarula (Sahnelikör aus Marulafrüchten)"
+    ],
+    "streetFoods": [
+     "Biltong (gewürztes Trockenfleisch)",
+     "Koeksister (sirupgetränktes Hefezopfgebäck)",
+     "Malva Pudding (Biskuitpudding mit Aprikosenmarmelade)"
+    ],
+    "diningAdvice": "In Restaurants 10 - 15 % geben; für echte Braai-Kultur ein lokales Grilllokal oder Orte wie Mzoli’s bei Kapstadt besuchen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ M (drei dicke Rundstifte; Schuko-Stecker passen in die meisten Dosen nicht)",
+     "Gedeckte Kleidung im Zwiebellook und Fernglas für die Safari",
+     "Sonnencreme und Hut",
+     "Mückenschutz für Malariagebiete"
+    ],
+    "safetyAndEtiquette": [
+     "Nachts nicht zu Fuß gehen; Uber/Bolt nutzen.",
+     "Keine Wertsachen sichtbar im Auto lassen.",
+     "Auf Safari im Fahrzeug bleiben und sich Tieren nie nähern."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "N",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Hauptsteckdose ist Typ M (drei dicke Rundstifte); in Neubauten setzt sich Typ N (SANS 164-2) durch. Flache Eurostecker (C) passen in manche Dosen, Schuko-Stecker nicht; M-Adapter gibt es günstig im Supermarkt."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Kapstadt, Johannesburg und Pretoria ist Leitungswasser trinkbar. Auf dem Land und nach Versorgungsausfällen besser Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, Masern)",
+     "Hepatitis A und Typhus",
+     "Malariaschutz für Kruger und den Nordosten (ärztlich beraten lassen)",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "10177"
+   },
+   "tipping": {
+    "custom": "Trinkgeld wird erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 - 15 % im Restaurant; 5 - 10 R für Tankwarte und Car Guards; tägliches Trinkgeld für Safari-Guides ist üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15 % MwSt. (abzüglich Bearbeitungsgebühr)",
+    "minSpend": "250 ZAR (Gesamteinkauf)",
+    "customsNote": "Waren müssen innerhalb von 90 Tagen ausgeführt werden; Rechnungen und Waren beim VAT-Refund-Büro am Flughafen vorzeigen. Elfenbein, Nashorn-Horn und geschützte Wildtierprodukte sind verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "airportSimTrapWarning": "Flughafenschalter sind bequem und fair bepreist; für eine SIM ist die RICA-Registrierung mit Pass und Adresse (Hotel) nötig."
+   },
+   "touristScams": [
+    {
+     "title": "„Helfer“ am Geldautomaten",
+     "desc": "Jemand bietet am Automaten Hilfe an, tauscht die Karte oder späht die PIN aus.",
+     "tip": "Hilfe ablehnen und Automaten in Banken nutzen."
+    },
+    {
+     "title": "Funkstörer",
+     "desc": "Beim Verriegeln per Fernbedienung wird das Signal blockiert, das Auto bleibt offen.",
+     "tip": "Am Türgriff prüfen, ob abgeschlossen ist."
+    },
+    {
+     "title": "Unlizenzierte Taxis",
+     "desc": "Fahrer ohne Lizenz versprechen am Flughafen einen „günstigen Transfer“ und verlangen dann Wucherpreise.",
+     "tip": "Uber/Bolt oder den Hoteltransfer nutzen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Rand sudafricano (ZAR)",
+   "plugType": "Tipo M, N, C (230V, 50Hz)",
+   "bestMonths": "Noviembre – marzo (verano seco para Ciudad del Cabo y la Ruta Jardín) · Mayo – septiembre (invierno seco para safaris en Kruger; mejor observación de fauna)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "La tasa de delitos violentos está entre las más altas del mundo: atracos a mano armada, robo de coches (carjacking) y tirones son un riesgo serio en las grandes ciudades. Las zonas turísticas (V&A Waterfront, Ruta Jardín, lodges de safari) suelen ser tranquilas, pero no camines de noche ni entres en barrios desconocidos.",
+    "commonScams": [
+     "Personas en cajeros que se ofrecen a “ayudar” y te cambian la tarjeta o miran tu PIN",
+     "“Car guards” no oficiales en aparcamientos que exigen tarifas altas, o inhibidores de señal para que el coche no se cierre",
+     "Taxis sin licencia o “traslados baratos” ofrecidos en el aeropuerto"
+    ],
+    "safeTravelTips": [
+     "De noche usa Uber/Bolt en lugar de caminar; no lleves el móvil a la vista en la calle.",
+     "Conduce con puertas bloqueadas y ventanillas cerradas; no dejes bolsos en el asiento en los semáforos.",
+     "Usa cajeros solo dentro de centros comerciales o bancos, de día."
+    ],
+    "emergencyNumbers": {
+     "police": "10111",
+     "ambulance": "10177",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de la población (4G; 5G en grandes ciudades)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Buena (Vodacom y MTN ofrecen eSIM; las SIM requieren registro RICA con pasaporte)",
+    "bestCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Media (Gautrain y MyCiTi en Ciudad del Cabo son buenos; el resto del transporte público es limitado y los minibuses no se recomiendan a visitantes)",
+    "costLevel": "Medio",
+    "singleTicketUsd": "1 - 2 $",
+    "dailyPassUsd": "No hay (Gautrain aeropuerto – Sandton solo ida ~11 - 13 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber y Bolt son la opción más segura y práctica en ciudades. Para rutas rurales (Ruta Jardín, Kruger) es imprescindible alquilar coche; se conduce por la izquierda."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Medio – Alto (Estambul – Johannesburgo directo con Turkish Airlines, ~10 horas)",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Johannesburgo y Ciudad del Cabo; llegar a Ciudad del Cabo y salir desde Johannesburgo ahorra tiempo. En vuelos internos, FlySafair y Airlink son baratos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Preguntar “How are you?” antes de ir al grano es cortesía básica.",
+     "Es costumbre dar pequeñas propinas (5 - 10 R) a los car guards y a los empleados de gasolineras.",
+     "Si te invitan a un braai (barbacoa), lleva carne o bebidas.",
+     "Pide permiso antes de fotografiar a personas en pueblos y townships."
+    ],
+    "festivals": [
+     "Festival Internacional de Jazz de Ciudad del Cabo (marzo/abril)",
+     "Festival Nacional de las Artes, Makhanda (junio – julio)",
+     "Día del Patrimonio – “Braai Day” (24 de septiembre)"
+    ],
+    "lifestyle": "La “Nación Arcoíris” es una sociedad multicultural con 12 lenguas oficiales; la pasión por el rugby y el críquet, los braais del fin de semana y la vida al aire libre marcan el día a día."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Montaña de la Mesa y Ciudad del Cabo",
+     "Cabo de Buena Esperanza (Cape Point) y pingüinos de Boulders Beach",
+     "Parque Nacional Kruger (safari de los Cinco Grandes)",
+     "Ruta Jardín (Knysna, Plettenberg Bay, Tsitsikamma)",
+     "Viñedos de Stellenbosch y Franschhoek",
+     "Isla Robben (UNESCO)"
+    ],
+    "bestSeasons": "Noviembre – marzo (verano seco para Ciudad del Cabo y la Ruta Jardín) · Mayo – septiembre (invierno seco para safaris en Kruger; mejor observación de fauna)",
+    "travelStyleTip": "Recorre Ciudad del Cabo en coche y combina Kruger con un vuelo interno más coche de alquiler o un safari en lodge; las distancias son enormes."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~80 %; diversas iglesias protestantes e independientes africanas), religiones tradicionales africanas, islam (~2 %), hinduismo (~1 %)",
+    "respectNorms": "Cubre hombros y rodillas en mezquitas y templos; en el barrio malayo de Bo-Kaap sé discreto y pide permiso antes de posar frente a las casas.",
+    "sacredSites": [
+     "Mezquita Auwal (Bo-Kaap; la más antigua del país, 1794)",
+     "Catedral de San Jorge (Ciudad del Cabo)",
+     "Juma Masjid (Durban)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "12 lenguas oficiales: zulú, xhosa, afrikáans, inglés, sotho, tswana, lengua de signos sudafricana y otras. El inglés es la lengua común.",
+    "englishProficiency": "Muy bueno; el inglés es la lengua de los negocios, el turismo y los medios.",
+    "phrases": [
+     {
+      "phrase": "Howzit!",
+      "meaning": "Hola, ¿qué tal? (inglés sudafricano)",
+      "translation": "Hola, ¿qué tal? (inglés sudafricano)",
+      "pronunciation": "how-zit"
+     },
+     {
+      "phrase": "Sawubona",
+      "meaning": "Hola (zulú)",
+      "translation": "Hola (zulú)",
+      "pronunciation": "sa-wu-bo-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Gracias (zulú)",
+      "translation": "Gracias (zulú)",
+      "pronunciation": "ngi-ya-bon-ga"
+     },
+     {
+      "phrase": "Baie dankie",
+      "meaning": "Muchas gracias (afrikáans)",
+      "translation": "Muchas gracias (afrikáans)",
+      "pronunciation": "ba-ye dun-ki"
+     },
+     {
+      "phrase": "Lekker!",
+      "meaning": "¡Genial! / ¡Qué bueno! (jerga local)",
+      "translation": "¡Genial! / ¡Qué bueno! (jerga local)",
+      "pronunciation": "lek-ker"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La región es el hogar ancestral de los pueblos san y khoikhoi. Los neerlandeses se asentaron en el Cabo en 1652; en el siglo XIX llegaron el dominio británico y las guerras bóeres. El apartheid (1948–1994) terminó con las elecciones democráticas de 1994, que llevaron a Nelson Mandela a la presidencia.",
+    "milestones": [
+     "1652: La Compañía Neerlandesa de las Indias Orientales funda Ciudad del Cabo",
+     "1899–1902: Segunda Guerra Bóer",
+     "1994: Primeras elecciones democráticas; Nelson Mandela, presidente",
+     "2010: Sede de la Copa Mundial de la FIFA"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bobotie (pastel de carne picada especiada con cobertura de huevo)",
+     "Bunny chow (curry de Durban dentro de una hogaza de pan)",
+     "Braai (salchicha boerewors y carne a la parrilla)"
+    ],
+    "traditionalDrinks": [
+     "Té rooibos",
+     "Pinotage y vinos de Stellenbosch",
+     "Amarula (licor de crema de fruta marula)"
+    ],
+    "streetFoodAndDesserts": [
+     "Biltong (carne seca especiada)",
+     "Koeksister (trenza de masa frita en almíbar)",
+     "Malva pudding (bizcocho con mermelada de albaricoque)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nelson Mandela (Premio Nobel de la Paz 1993)",
+     "Desmond Tutu (Premio Nobel de la Paz 1984)",
+     "Charlize Theron (actriz ganadora del Óscar)"
+    ],
+    "strongSectors": [
+     "Minería (platino, oro, cromo; líder mundial)",
+     "Exportación de vino y fruta",
+     "Turismo y finanzas (Bolsa de Johannesburgo)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas (incluido el pago sin contacto) se aceptan casi en todas partes; lleva algo de efectivo en rand para puestos rurales, car guards y propinas.",
+    "tippingCulture": "En restaurantes se espera un 10 - 15 %; es costumbre dar propina diaria a guías y rastreadores de safari.",
+    "economicPillars": "Minería, servicios financieros, fabricación de automóviles, agricultura y vino, turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Clásicos de Sudáfrica: Ciudad del Cabo, viñedos, Ruta Jardín y Kruger",
+   "routeSummary": "Ruta de 11 días que empieza en Ciudad del Cabo, cruza los valles del vino hasta la costa de la Ruta Jardín y termina, tras un vuelo, con un safari de los Cinco Grandes en Kruger.",
+   "totalDays": 11,
+   "idealDurationText": "Itinerario de 11 días",
+   "bestSeason": "Noviembre – marzo (verano seco para Ciudad del Cabo y la Ruta Jardín) · Mayo – septiembre (invierno seco para safaris en Kruger; mejor observación de fauna)",
+   "transportMode": "Coche de alquiler Ciudad del Cabo – Ruta Jardín (conducción por la izquierda); vuelo interno George/Gqeberha – Kruger (Skukuza/Nelspruit)",
+   "paceLevel": "Equilibrado (ciudad, naturaleza y safari)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Ciudad del Cabo y Cabo de Buena Esperanza",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Montaña de la Mesa (teleférico o senderismo)",
+      "V&A Waterfront e Isla Robben",
+      "Casas de colores de Bo-Kaap",
+      "Cape Point y pingüinos de Boulders Beach"
+     ],
+     "activities": [
+      "Sube en teleférico a la Montaña de la Mesa en un día despejado y mira el atardecer.",
+      "Haz una excursión en coche a Cape Point por Chapman’s Peak Drive.",
+      "Visita la celda de Mandela en la Isla Robben."
+     ],
+     "foodAndDrinks": [
+      "Curry malayo del Cabo (Bo-Kaap)",
+      "Pescado fresco con patatas (Kalk Bay)"
+     ],
+     "criticalTips": [
+      "El teleférico cierra con viento fuerte; consulta su estado por la mañana.",
+      "Reserva las entradas a la Isla Robben con días de antelación."
+     ],
+     "mapsQuery": "Table Mountain, Cape Town, South Africa"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Stellenbosch y Franschhoek (zona vinícola)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Arquitectura holandesa del Cabo en Stellenbosch",
+      "Franschhoek Wine Tram",
+      "Fincas Boschendal y Babylonstoren"
+     ],
+     "activities": [
+      "Recorre bodegas en el Franschhoek Wine Tram.",
+      "Pasea por el jardín de Babylonstoren y almuerza en su restaurante de granja.",
+      "Camina por la histórica Dorp Street de Stellenbosch."
+     ],
+     "foodAndDrinks": [
+      "Cata de Pinotage y Chenin Blanc",
+      "Tabla de quesos y embutidos"
+     ],
+     "criticalTips": [
+      "No conduzcas tras las catas; usa un tour con chófer o el tranvía.",
+      "Los restaurantes populares requieren reserva en fin de semana."
+     ],
+     "mapsQuery": "Stellenbosch, Western Cape, South Africa"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ruta Jardín (Knysna y Plettenberg Bay)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Knysna Heads y laguna",
+      "Parque Nacional Tsitsikamma – puente colgante de Storms River",
+      "Reserva Natural de Robberg (Plettenberg Bay)"
+     ],
+     "activities": [
+      "Camina hasta el puente colgante y haz kayak en Tsitsikamma.",
+      "Prueba uno de los puentings más altos del mundo en el puente Bloukrans.",
+      "Observa delfines y (julio – noviembre) ballenas en barco en Plettenberg Bay."
+     ],
+     "foodAndDrinks": [
+      "Ostras de Knysna",
+      "Bandeja de marisco"
+     ],
+     "criticalTips": [
+      "Las distancias son largas; evita conducir de noche fuera de las carreteras principales.",
+      "La temporada de ballenas es de julio a noviembre."
+     ],
+     "mapsQuery": "Knysna, Garden Route, South Africa"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Parque Nacional Kruger (safari)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Los Cinco Grandes (león, leopardo, elefante, búfalo, rinoceronte)",
+      "Reservas privadas de Sabi Sand",
+      "Panorama Route y Cañón del río Blyde"
+     ],
+     "activities": [
+      "Únete a safaris guiados en vehículo abierto al amanecer y al atardecer.",
+      "Haz un safari por tu cuenta dentro del parque con tu coche.",
+      "Visita el Cañón del río Blyde y el mirador God’s Window."
+     ],
+     "foodAndDrinks": [
+      "Cena braai en el lodge",
+      "Biltong y té rooibos"
+     ],
+     "criticalTips": [
+      "Las puertas del parque cierran al atardecer; respeta los horarios.",
+      "Kruger está en zona de malaria; consulta a tu médico, sobre todo de octubre a mayo."
+     ],
+     "mapsQuery": "Kruger National Park, South Africa"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bobotie (pastel de carne picada especiada con cobertura de huevo)",
+     "Bunny chow (curry de Durban dentro de una hogaza de pan)",
+     "Braai (salchicha boerewors y carne a la parrilla)"
+    ],
+    "drinks": [
+     "Té rooibos",
+     "Pinotage y vinos de Stellenbosch",
+     "Amarula (licor de crema de fruta marula)"
+    ],
+    "streetFoods": [
+     "Biltong (carne seca especiada)",
+     "Koeksister (trenza de masa frita en almíbar)",
+     "Malva pudding (bizcocho con mermelada de albaricoque)"
+    ],
+    "diningAdvice": "Deja un 10 - 15 % en restaurantes; para vivir la cultura braai prueba una parrilla local o lugares como Mzoli’s cerca de Ciudad del Cabo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo M (tres clavijas redondas gruesas; los enchufes Schuko no entran en la mayoría)",
+     "Ropa de colores neutros por capas y prismáticos para el safari",
+     "Protector solar y sombrero",
+     "Repelente de mosquitos para zonas de malaria"
+    ],
+    "safetyAndEtiquette": [
+     "No camines de noche; usa Uber/Bolt.",
+     "No dejes objetos de valor a la vista en el coche.",
+     "En el safari no bajes del vehículo ni te acerques a los animales."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "N",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "El enchufe principal es el tipo M (tres clavijas redondas gruesas); en edificios nuevos se extiende el tipo N (SANS 164-2). Las clavijas planas C entran en algunos enchufes, las Schuko no; los adaptadores M son baratos en supermercados."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en Ciudad del Cabo, Johannesburgo y Pretoria. En zonas rurales y tras cortes de suministro, mejor agua embotellada.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, sarampión)",
+     "Hepatitis A y fiebre tifoidea",
+     "Prevención de malaria para Kruger y el noreste (consulta a un médico)",
+     "Certificado de fiebre amarilla solo si llegas de un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "10177"
+   },
+   "tipping": {
+    "custom": "La propina se espera.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 - 15 % en restaurantes; 5 - 10 R a empleados de gasolinera y car guards; propina diaria a guías de safari."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15 % de IVA (menos comisión de gestión)",
+    "minSpend": "250 ZAR (compras totales)",
+    "customsNote": "Los artículos deben salir del país en 90 días; muestra facturas y productos en la oficina de VAT Refund del aeropuerto. Están prohibidos el marfil, el cuerno de rinoceronte y los productos de fauna protegida."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "airportSimTrapWarning": "Los mostradores del aeropuerto son prácticos y de precio razonable; la SIM requiere registro RICA con pasaporte y una dirección (hotel)."
+   },
+   "touristScams": [
+    {
+     "title": "“Ayudantes” en cajeros",
+     "desc": "Alguien se ofrece a ayudarte en el cajero, cambia tu tarjeta o mira tu PIN.",
+     "tip": "Rechaza la ayuda y usa cajeros dentro de bancos."
+    },
+    {
+     "title": "Inhibidor de señal",
+     "desc": "Al cerrar el coche con el mando en un aparcamiento, la señal se bloquea y el coche queda abierto.",
+     "tip": "Comprueba el cierre tirando de la manilla."
+    },
+    {
+     "title": "Taxis sin licencia",
+     "desc": "Conductores sin licencia prometen un “traslado barato” en el aeropuerto y cobran de más.",
+     "tip": "Usa Uber/Bolt o el traslado del hotel."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Южноафриканский рэнд (ZAR)",
+   "plugType": "Тип M, N, C (230V, 50Hz)",
+   "bestMonths": "Ноябрь – март (сухое лето для Кейптауна и Садового пути) · Май – сентябрь (сухая зима для сафари в Крюгере; лучшее время для наблюдения за животными)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Уровень насильственной преступности один из самых высоких в мире: вооружённые ограбления, угоны автомобилей с водителем (carjacking) и уличные рывки — серьёзный риск в крупных городах. Туристические зоны (V&A Waterfront, Садовый путь, сафари-лоджи) обычно спокойны, но ночью не ходите пешком и не заходите в незнакомые районы.",
+    "commonScams": [
+     "Люди у банкоматов, предлагающие «помочь», которые подменяют карту или подглядывают PIN-код",
+     "Неофициальные «car guards» на парковках, требующие большие деньги, или глушилки сигнала, из-за которых машина не запирается",
+     "Нелицензированные такси и «дешёвые трансферы» в аэропорту"
+    ],
+    "safeTravelTips": [
+     "Ночью вместо прогулок пользуйтесь Uber/Bolt; не держите телефон на виду на улице.",
+     "За рулём держите двери запертыми, окна закрытыми и не оставляйте сумку на сиденье на светофорах.",
+     "Пользуйтесь банкоматами только днём, внутри торговых центров или банков."
+    ],
+    "emergencyNumbers": {
+     "police": "10111",
+     "ambulance": "10177",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % населения (4G; 5G в крупных городах)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Хорошая (Vodacom и MTN предлагают eSIM; для SIM нужна регистрация RICA по паспорту)",
+    "bestCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (Gautrain и MyCiTi в Кейптауне хороши; в остальном общественный транспорт ограничен, маршрутки-минибасы туристам не рекомендуются)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "1 - 2 $",
+    "dailyPassUsd": "Нет (Gautrain аэропорт – Сэндтон в одну сторону ~11 - 13 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "В городах Uber и Bolt — самый безопасный и удобный вариант. Для поездок по сельской местности (Садовый путь, Крюгер) необходима аренда авто; движение левостороннее."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "100 - 180 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Средний – высокий (Стамбул – Йоханнесбург прямым рейсом Turkish Airlines, ~10 ч)",
+    "flightTip": "Turkish Airlines летает напрямую из Стамбула в Йоханнесбург и Кейптаун; прилёт в Кейптаун и вылет из Йоханнесбурга экономит время. Внутренние рейсы FlySafair и Airlink недороги."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Спросить «How are you?», прежде чем перейти к делу, — элементарная вежливость.",
+     "Небольшие чаевые (5 - 10 R) парковщикам («car guards») и заправщикам — обычай.",
+     "На брай (барбекю) принято приносить мясо или напитки.",
+     "В деревнях и тауншипах спрашивайте разрешения, прежде чем фотографировать людей."
+    ],
+    "festivals": [
+     "Международный джазовый фестиваль Кейптауна (март/апрель)",
+     "Национальный фестиваль искусств, Маханда (июнь – июль)",
+     "День наследия — «Braai Day» (24 сентября)"
+    ],
+    "lifestyle": "«Радужная нация» — многокультурное общество с 12 официальными языками; страсть к регби и крикету, барбекю-браи по выходным и жизнь на свежем воздухе — основа повседневности."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Столовая гора и Кейптаун",
+     "Мыс Доброй Надежды (Кейп-Пойнт) и пингвины пляжа Боулдерс",
+     "Национальный парк Крюгер (сафари «большой пятёрки»)",
+     "Садовый путь (Найсна, Плеттенберг-Бей, Цицикамма)",
+     "Винодельческие районы Стелленбос и Франсхук",
+     "Остров Роббен (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Ноябрь – март (сухое лето для Кейптауна и Садового пути) · Май – сентябрь (сухая зима для сафари в Крюгере; лучшее время для наблюдения за животными)",
+    "travelStyleTip": "Кейптаун и окрестности изучайте на машине, а Крюгер совмещайте с внутренним перелётом и арендой авто или сафари в лодже; расстояния огромны."
+   },
+   "religion": {
+    "primaryReligions": "Христианство (~80 %; различные протестантские и африканские независимые церкви), традиционные африканские верования, ислам (~2 %), индуизм (~1 %)",
+    "respectNorms": "В мечетях и храмах закрывайте плечи и колени; в капско-малайском квартале Бо-Каап ведите себя тихо и спрашивайте разрешения, прежде чем фотографироваться у домов.",
+    "sacredSites": [
+     "Мечеть Аувал (Бо-Каап; старейшая в стране, 1794)",
+     "Собор Святого Георгия (Кейптаун)",
+     "Мечеть Джума (Дурбан)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "12 официальных языков: зулу, коса, африкаанс, английский, сото, тсвана, южноафриканский жестовый язык и другие. Общий язык — английский.",
+    "englishProficiency": "Очень хороший; английский — язык бизнеса, туризма и СМИ.",
+    "phrases": [
+     {
+      "phrase": "Howzit!",
+      "meaning": "Привет, как дела? (южноафриканский английский)",
+      "translation": "Привет, как дела? (южноафриканский английский)",
+      "pronunciation": "how-zit"
+     },
+     {
+      "phrase": "Sawubona",
+      "meaning": "Здравствуйте (зулу)",
+      "translation": "Здравствуйте (зулу)",
+      "pronunciation": "sa-wu-bo-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Спасибо (зулу)",
+      "translation": "Спасибо (зулу)",
+      "pronunciation": "ngi-ya-bon-ga"
+     },
+     {
+      "phrase": "Baie dankie",
+      "meaning": "Большое спасибо (африкаанс)",
+      "translation": "Большое спасибо (африкаанс)",
+      "pronunciation": "ba-ye dun-ki"
+     },
+     {
+      "phrase": "Lekker!",
+      "meaning": "Классно! / Здорово! (местный сленг)",
+      "translation": "Классно! / Здорово! (местный сленг)",
+      "pronunciation": "lek-ker"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Регион — древняя родина народов сан и койкой. В 1652 году на мысе обосновались голландцы, в XIX веке последовали британское правление и англо-бурские войны. Апартеид (1948–1994) закончился демократическими выборами 1994 года, сделавшими Нельсона Манделу президентом.",
+    "milestones": [
+     "1652: Голландская Ост-Индская компания основывает Кейптаун",
+     "1899–1902: Вторая англо-бурская война",
+     "1994: Первые демократические выборы, президент — Нельсон Мандела",
+     "2010: Чемпионат мира по футболу FIFA"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Боботи (запеканка из пряного фарша с яичной заливкой)",
+     "Банни-чау (дурбанское карри в выдолбленной буханке)",
+     "Брай (колбаски бурворс и мясо на гриле)"
+    ],
+    "traditionalDrinks": [
+     "Чай ройбуш",
+     "Пинотаж и вина Стелленбоса",
+     "Амарула (сливочный ликёр из плодов марулы)"
+    ],
+    "streetFoodAndDesserts": [
+     "Билтонг (пряное вяленое мясо)",
+     "Куксистер (плетёная выпечка в сиропе)",
+     "Мальва-пудинг (бисквит с абрикосовым джемом)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Нельсон Мандела (Нобелевская премия мира 1993)",
+     "Десмонд Туту (Нобелевская премия мира 1984)",
+     "Шарлиз Терон (обладательница «Оскара»)"
+    ],
+    "strongSectors": [
+     "Горнодобыча (платина, золото, хром; мировой лидер)",
+     "Экспорт вина и фруктов",
+     "Туризм и финансы (Йоханнесбургская фондовая биржа)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты (в том числе бесконтактные) принимают почти везде; держите немного наличных рэндов для сельских лавок, парковщиков и чаевых.",
+    "tippingCulture": "В ресторанах ожидают 10 - 15 %; ежедневные чаевые гидам и следопытам на сафари — обычай.",
+    "economicPillars": "Горнодобыча, финансовые услуги, автомобилестроение, сельское хозяйство и вино, туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Классика ЮАР: Кейптаун, винные земли, Садовый путь и Крюгер",
+   "routeSummary": "11-дневный маршрут: от Кейптауна через винные долины к побережью Садового пути, затем перелёт в Крюгер на сафари «большой пятёрки».",
+   "totalDays": 11,
+   "idealDurationText": "11-дневный маршрут",
+   "bestSeason": "Ноябрь – март (сухое лето для Кейптауна и Садового пути) · Май – сентябрь (сухая зима для сафари в Крюгере; лучшее время для наблюдения за животными)",
+   "transportMode": "Аренда авто Кейптаун – Садовый путь (левостороннее движение); внутренний рейс Джордж/Гкеберха – Крюгер (Скукуза/Нелспрёйт)",
+   "paceLevel": "Сбалансированный (город, природа и сафари)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Кейптаун и мыс Доброй Надежды",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Столовая гора (канатная дорога или пеший подъём)",
+      "V&A Waterfront и остров Роббен",
+      "Разноцветные дома Бо-Каапа",
+      "Кейп-Пойнт и пингвины пляжа Боулдерс"
+     ],
+     "activities": [
+      "В ясный день поднимитесь на Столовую гору по канатной дороге и встретьте закат.",
+      "Съездите на Кейп-Пойнт по дороге Чепменс-Пик.",
+      "Посетите камеру Манделы на острове Роббен."
+     ],
+     "foodAndDrinks": [
+      "Капско-малайское карри (Бо-Каап)",
+      "Свежая рыба с картофелем фри (Калк-Бей)"
+     ],
+     "criticalTips": [
+      "При сильном ветре канатная дорога закрыта; проверяйте статус утром.",
+      "Билеты на остров Роббен бронируйте за несколько дней."
+     ],
+     "mapsQuery": "Table Mountain, Cape Town, South Africa"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Стелленбос и Франсхук (винные земли)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Капско-голландская архитектура Стелленбоса",
+      "Винный трамвай Франсхука",
+      "Поместья Бошендал и Бабилонсторен"
+     ],
+     "activities": [
+      "Объедьте винодельни на Franschhoek Wine Tram.",
+      "Прогуляйтесь по саду Бабилонсторен и пообедайте в фермерском ресторане.",
+      "Пройдитесь по исторической улице Дорп в Стелленбосе."
+     ],
+     "foodAndDrinks": [
+      "Дегустация пинотажа и шенен блан",
+      "Сырная и мясная тарелка"
+     ],
+     "criticalTips": [
+      "После дегустаций не садитесь за руль; берите тур с водителем или трамвай.",
+      "В популярные рестораны на выходные нужна бронь."
+     ],
+     "mapsQuery": "Stellenbosch, Western Cape, South Africa"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Садовый путь (Найсна и Плеттенберг-Бей)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Найсна-Хедс и лагуна",
+      "Национальный парк Цицикамма — подвесной мост Стормс-Ривер",
+      "Заповедник Робберг (Плеттенберг-Бей)"
+     ],
+     "activities": [
+      "Дойдите до подвесного моста и покатайтесь на каяке в Цицикамме.",
+      "Прыгните с одного из самых высоких мостовых банджи в мире на мосту Блукранс.",
+      "На лодке в Плеттенберг-Бей посмотрите на дельфинов и (июль – ноябрь) китов."
+     ],
+     "foodAndDrinks": [
+      "Устрицы Найсны",
+      "Ассорти из морепродуктов"
+     ],
+     "criticalTips": [
+      "Расстояния большие; ночью не ездите вне главных трасс.",
+      "Сезон китов — июль – ноябрь."
+     ],
+     "mapsQuery": "Knysna, Garden Route, South Africa"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Национальный парк Крюгер (сафари)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "«Большая пятёрка» (лев, леопард, слон, буйвол, носорог)",
+      "Частные заповедники Саби-Сэнд",
+      "Панорамный маршрут и каньон реки Блайд"
+     ],
+     "activities": [
+      "Отправьтесь на сафари с гидом в открытом джипе на рассвете и закате.",
+      "Проедьте по парку самостоятельно на своей машине.",
+      "Посетите каньон реки Блайд и смотровую площадку God’s Window."
+     ],
+     "foodAndDrinks": [
+      "Ужин-брай в лодже",
+      "Билтонг и чай ройбуш"
+     ],
+     "criticalTips": [
+      "Ворота парка закрываются на закате; строго соблюдайте время.",
+      "Крюгер находится в малярийной зоне; посоветуйтесь с врачом, особенно на октябрь – май."
+     ],
+     "mapsQuery": "Kruger National Park, South Africa"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Боботи (запеканка из пряного фарша с яичной заливкой)",
+     "Банни-чау (дурбанское карри в выдолбленной буханке)",
+     "Брай (колбаски бурворс и мясо на гриле)"
+    ],
+    "drinks": [
+     "Чай ройбуш",
+     "Пинотаж и вина Стелленбоса",
+     "Амарула (сливочный ликёр из плодов марулы)"
+    ],
+    "streetFoods": [
+     "Билтонг (пряное вяленое мясо)",
+     "Куксистер (плетёная выпечка в сиропе)",
+     "Мальва-пудинг (бисквит с абрикосовым джемом)"
+    ],
+    "diningAdvice": "В ресторанах оставляйте 10 - 15 %; чтобы почувствовать культуру брай, загляните в местный гриль-ресторан или места вроде Mzoli’s под Кейптауном."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер типа M (три толстых круглых штыря; вилки Schuko в большинство розеток не входят)",
+     "Одежда нейтральных цветов слоями и бинокль для сафари",
+     "Солнцезащитный крем и шляпа",
+     "Репеллент для малярийных районов"
+    ],
+    "safetyAndEtiquette": [
+     "Не ходите пешком ночью; пользуйтесь Uber/Bolt.",
+     "Не оставляйте ценности на виду в машине.",
+     "На сафари не выходите из машины и не приближайтесь к животным."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "N",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Основная розетка — тип M (три толстых круглых штыря); в новых зданиях распространяется тип N (SANS 164-2). Плоские вилки C подходят к некоторым розеткам, Schuko — нет; адаптер M дёшево продаётся в супермаркетах."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Кейптауне, Йоханнесбурге и Претории водопроводную воду можно пить. В сельской местности и после перебоев с водой лучше бутилированная.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь)",
+     "Гепатит A и брюшной тиф",
+     "Профилактика малярии для Крюгера и северо-востока (проконсультируйтесь с врачом)",
+     "Сертификат о прививке от жёлтой лихорадки — только при въезде из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "10177"
+   },
+   "tipping": {
+    "custom": "Чаевые ожидаются.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 - 15 % в ресторанах; 5 - 10 R заправщикам и парковщикам; ежедневные чаевые гидам на сафари — обычное дело."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 15 % (за вычетом сервисного сбора)",
+    "minSpend": "250 ZAR (общая сумма покупок)",
+    "customsNote": "Товары нужно вывезти в течение 90 дней; предъявите чеки и покупки в офисе VAT Refund в аэропорту. Слоновая кость, рог носорога и изделия из охраняемых животных запрещены."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "airportSimTrapWarning": "Стойки в аэропорту удобны и цены там разумные; для SIM нужна регистрация RICA по паспорту и адресу (отель)."
+   },
+   "touristScams": [
+    {
+     "title": "«Помощники» у банкомата",
+     "desc": "Человек предлагает помочь у банкомата, подменяет карту или подглядывает PIN.",
+     "tip": "Отказывайтесь от помощи и пользуйтесь банкоматами внутри банков."
+    },
+    {
+     "title": "Глушилка сигнала",
+     "desc": "Когда вы запираете машину брелоком на парковке, сигнал глушат, и машина остаётся открытой.",
+     "tip": "Проверяйте, заперта ли машина, дёрнув ручку двери."
+    },
+    {
+     "title": "Нелицензированные такси",
+     "desc": "Водители без лицензии в аэропорту обещают «дешёвый трансфер» и берут втридорога.",
+     "tip": "Пользуйтесь Uber/Bolt или трансфером отеля."
+    }
+   ]
+  }
+ }
+}

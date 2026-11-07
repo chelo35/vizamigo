@@ -323,6 +323,70 @@
      "Siyasi gösterilerden ve sınır bölgelerinden uzak durun."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Karışık priz sistemi: C/F (Avrupa), G (İngiliz), D ve J tipleri bir arada kullanılır. Otellerde çoğu zaman G veya çok amaçlı priz bulunur; üniversal adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu arıtılır ama haftalık depolarda bekletildiği için içilmez; şişe veya filtreli su tüketin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Servis ücreti eklenmemişse restoranlarda %10 bahşiş adettir; rehber ve şoförlere günlük birkaç dinar verilir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Hesapta “service” yazıyorsa ek bahşiş gerekmez; Petra ve Wadi Rum’da rehbere günlük 5–10 JOD yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%16 satış vergisi",
+    "minSpend": "Fatura başına en az 50 JOD vergi tutarı",
+    "customsNote": "Tax-free ağındaki (TAG Tax Free) mağazalardan alışveriş yapın; çıkışta gümrüğe ürün ve formları kaşeletip Kraliçe Alia Havalimanı’ndaki TAGI Tax Free gişesine başvurun. Akabe özel ekonomik bölgesinde fiyatlar zaten vergisizdir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "airportSimTrapWarning": "Kraliçe Alia Havalimanı’ndaki Zain, Orange ve Umniah stantları turist paketlerini resmî fiyatla satar; şehir mağazaları biraz daha ucuz olabilir. Hat için pasaport gerekir."
+   },
+   "touristScams": [
+    {
+     "title": "Taksimetre “bozuk”",
+     "desc": "Taksicilerin taksimetreyi açmaması veya bozuk olduğunu söyleyip fazla ücret istemesi.",
+     "tip": "Careem veya Uber kullanın; sokak taksisinde taksimetrede ısrar edin."
+    },
+    {
+     "title": "Petra’da “ücretsiz” binek",
+     "desc": "Petra’da “bedava” eşek, at veya deve binişi sonrası yüksek ücret talep edilmesi.",
+     "tip": "Bilete dahil olan yalnızca kısa at yürüyüşüdür; diğer binişlerde fiyatı önceden netleştirin."
+    },
+    {
+     "title": "Wadi Rum kamp yönlendirmesi",
+     "desc": "Wadi Rum girişinde karşılanıp rezervasyon yaptığınız yerine başka, pahalı bir kampa yönlendirilmek.",
+     "tip": "Kampınızın adını ve buluşma noktasını önceden teyit edin; yalnızca kamp sahibinin gönderdiği kişiyle gidin."
+    }
+   ]
   }
  },
  "en": {
@@ -649,6 +713,70 @@
      "Stay away from political demonstrations and border areas."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mixed socket system: C/F (European), G (British), D and J types are all used. Hotels often have G or universal sockets; bring a universal adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is treated but stored in weekly rooftop tanks, so it is not drinkable; use bottled or filtered water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "If no service charge is added, 10% is customary in restaurants; guides and drivers get a few dinars per day.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "If “service” is on the bill no extra tip is needed; JOD 5–10 per day for guides at Petra and Wadi Rum is common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "16% sales tax",
+    "minSpend": "At least JOD 50 of tax per invoice",
+    "customsNote": "Shop at stores in the tax-free network (TAG Tax Free); on departure have goods and forms stamped by customs, then claim at the TAGI Tax Free window at Queen Alia Airport. Prices in the Aqaba special economic zone are already tax-free."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "airportSimTrapWarning": "Zain, Orange and Umniah counters at Queen Alia Airport sell tourist packs at official prices; town shops can be slightly cheaper. A passport is required for a SIM."
+   },
+   "touristScams": [
+    {
+     "title": "“Broken” taxi meter",
+     "desc": "Taxi drivers do not switch on the meter or claim it is broken and overcharge.",
+     "tip": "Use Careem or Uber; in street taxis insist on the meter."
+    },
+    {
+     "title": "“Free” rides at Petra",
+     "desc": "“Free” donkey, horse or camel rides at Petra are followed by a demand for a high fee.",
+     "tip": "Only the short horse walk is included in the ticket; agree prices for other rides in advance."
+    },
+    {
+     "title": "Wadi Rum camp switch",
+     "desc": "You are met at the Wadi Rum entrance and steered to a different, pricier camp than the one you booked.",
+     "tip": "Confirm your camp’s name and meeting point in advance and go only with the person your camp sends."
+    }
+   ]
   }
  },
  "de": {
@@ -975,6 +1103,70 @@
      "Politische Demonstrationen und Grenzgebiete meiden."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Gemischtes Steckdosensystem: C/F (europäisch), G (britisch), D und J sind alle verbreitet. Hotels haben oft G- oder Universalsteckdosen; einen Universaladapter mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser wird aufbereitet, aber wöchentlich in Dachtanks gespeichert und ist daher nicht trinkbar; Flaschen- oder Filterwasser nutzen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Ohne Servicegebühr sind 10 % in Restaurants üblich; Guides und Fahrer bekommen ein paar Dinar pro Tag.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Steht „service“ auf der Rechnung, ist kein Trinkgeld nötig; in Petra und Wadi Rum sind 5–10 JOD pro Tag für Guides üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "16 % Umsatzsteuer",
+    "minSpend": "Mindestens 50 JOD Steuer pro Rechnung",
+    "customsNote": "In Geschäften des Tax-free-Netzes (TAG Tax Free) einkaufen; bei der Ausreise Waren und Formulare vom Zoll abstempeln lassen und am TAGI-Tax-Free-Schalter des Flughafens Queen Alia einreichen. In der Sonderwirtschaftszone Akaba sind die Preise bereits steuerfrei."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "airportSimTrapWarning": "Die Stände von Zain, Orange und Umniah am Flughafen Queen Alia verkaufen Touristenpakete zu offiziellen Preisen; Läden in der Stadt sind teils etwas günstiger. Für eine SIM wird der Pass benötigt."
+   },
+   "touristScams": [
+    {
+     "title": "„Kaputtes“ Taxameter",
+     "desc": "Taxifahrer schalten das Taxameter nicht ein oder behaupten, es sei kaputt, und verlangen zu viel.",
+     "tip": "Careem oder Uber nutzen; im Straßentaxi auf das Taxameter bestehen."
+    },
+    {
+     "title": "„Gratis“-Ritte in Petra",
+     "desc": "Nach „kostenlosen“ Esel-, Pferde- oder Kamelritten in Petra wird eine hohe Gebühr verlangt.",
+     "tip": "Nur der kurze Pferdeweg ist im Ticket enthalten; Preise für andere Ritte vorher vereinbaren."
+    },
+    {
+     "title": "Camp-Tausch im Wadi Rum",
+     "desc": "Am Eingang des Wadi Rum werden Sie abgefangen und in ein anderes, teureres Camp gelotst.",
+     "tip": "Camp-Namen und Treffpunkt vorab bestätigen und nur mit der vom Camp geschickten Person fahren."
+    }
+   ]
   }
  },
  "es": {
@@ -1301,6 +1493,70 @@
      "Mantente alejado de manifestaciones políticas y zonas fronterizas."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sistema mixto: se usan enchufes C/F (europeos), G (británicos), D y J. Los hoteles suelen tener G o enchufes universales; lleve un adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo se trata, pero se almacena semanalmente en depósitos en las azoteas y no es potable; use agua embotellada o filtrada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Si no se añade cargo de servicio, en restaurantes es costumbre un 10 %; guías y conductores reciben unos dinares por día.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Si la cuenta indica “service” no hace falta más; en Petra y Wadi Rum es habitual dar 5–10 JOD por día al guía."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Impuesto sobre ventas del 16 %",
+    "minSpend": "Al menos 50 JOD de impuesto por factura",
+    "customsNote": "Compre en tiendas de la red tax-free (TAG Tax Free); al salir haga sellar productos y formularios en aduana y reclame en la ventanilla TAGI Tax Free del aeropuerto Queen Alia. En la zona económica especial de Áqaba los precios ya están libres de impuestos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "airportSimTrapWarning": "Los mostradores de Zain, Orange y Umniah en el aeropuerto Queen Alia venden paquetes turísticos a precio oficial; en la ciudad pueden ser algo más baratos. Para la SIM se necesita pasaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Taxímetro “roto”",
+     "desc": "Taxistas que no encienden el taxímetro o dicen que está roto y cobran de más.",
+     "tip": "Use Careem o Uber; en taxis de la calle exija el taxímetro."
+    },
+    {
+     "title": "Paseos “gratis” en Petra",
+     "desc": "Tras un paseo “gratuito” en burro, caballo o camello en Petra le exigen una tarifa alta.",
+     "tip": "Solo el corto paseo a caballo está incluido en la entrada; acuerde antes el precio de los demás."
+    },
+    {
+     "title": "Cambio de campamento en Wadi Rum",
+     "desc": "Le reciben a la entrada de Wadi Rum y le llevan a otro campamento más caro que el reservado.",
+     "tip": "Confirme antes el nombre del campamento y el punto de encuentro, y vaya solo con la persona que envíe su campamento."
+    }
+   ]
   }
  },
  "ru": {
@@ -1627,6 +1883,70 @@
      "Держитесь подальше от политических акций и приграничных районов."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Смешанная система: используются розетки C/F (европейские), G (британские), D и J. В отелях часто стоят G или универсальные; возьмите универсальный переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода очищается, но хранится в баках на крышах, которые наполняют раз в неделю, поэтому пить её нельзя; используйте бутилированную или фильтрованную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Если сервисный сбор не добавлен, в ресторанах принято 10 %; гидам и водителям дают несколько динаров в день.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Если в счёте есть «service», больше ничего не нужно; гидам в Петре и Вади-Руме обычно дают 5–10 JOD в день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Налог с продаж 16 %",
+    "minSpend": "Не менее 50 JOD налога на чек",
+    "customsNote": "Покупайте в магазинах сети tax-free (TAG Tax Free); при выезде поставьте штамп таможни на товары и формы и обратитесь в окно TAGI Tax Free в аэропорту Королевы Алии. В особой экономической зоне Акабы цены уже без налога."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "airportSimTrapWarning": "Стойки Zain, Orange и Umniah в аэропорту Королевы Алии продают туристические пакеты по официальным ценам; в городе бывает чуть дешевле. Для SIM нужен паспорт."
+   },
+   "touristScams": [
+    {
+     "title": "«Сломанный» счётчик",
+     "desc": "Таксисты не включают счётчик или говорят, что он сломан, и завышают цену.",
+     "tip": "Пользуйтесь Careem или Uber; в уличном такси настаивайте на счётчике."
+    },
+    {
+     "title": "«Бесплатные» катания в Петре",
+     "desc": "После «бесплатной» поездки на осле, лошади или верблюде в Петре требуют крупную плату.",
+     "tip": "В билет входит только короткая прогулка на лошади; цену остального обговаривайте заранее."
+    },
+    {
+     "title": "Подмена лагеря в Вади-Руме",
+     "desc": "На въезде в Вади-Рум вас встречают и везут в другой, более дорогой лагерь.",
+     "tip": "Заранее уточните название лагеря и место встречи и уезжайте только с человеком от вашего лагеря."
+    }
+   ]
   }
  }
 }

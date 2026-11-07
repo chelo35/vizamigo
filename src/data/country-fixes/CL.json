@@ -1,0 +1,1942 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Şili Pesosu (CLP)",
+   "plugType": "Tip C, L (220V, 50Hz)",
+   "bestMonths": "Kasım – Mart (Patagonya ve Göller Bölgesi yazı); Atacama yıl boyu; Santiago için Eylül – Kasım ve Mart – Mayıs; kayak için Haziran – Eylül",
+   "safety": {
+    "crimeRateSummary": "Latin Amerika ortalamasına göre daha güvenlidir, ancak Santiago ve Valparaíso’da son yıllarda soygun, yankesicilik ve araç gaspı artmıştır. Turistlerin karşılaştığı en yaygın suç kalabalık yerlerde telefon ve çanta hırsızlığıdır. Ülke deprem ve tsunami bölgesidir; kıyıdaki tahliye tabelalarına dikkat edin.",
+    "commonScams": [
+     "Santiago merkezinde üzerinize leke döküp yardım bahanesiyle çanta çalma",
+     "Santiago havalimanında geliş salonunda müşteri arayan lisanssız taksiciler",
+     "Valparaíso tepelerinde ve Santiago metrosunda telefon kapma ve yankesicilik"
+    ],
+    "safeTravelTips": [
+     "Valparaíso’da Cerro Alegre ve Cerro Concepción gibi turistik tepelerde kalın, geceleri ıssız merdivenlerden uzak durun.",
+     "Havalimanında yalnızca içerideki resmî taksi veya transfer (Transvip) gişelerini kullanın.",
+     "Deprem anında “çök-kapan-tutun” yapın; kıyıda tsunami uyarısında yüksek bölgeye çıkın."
+    ],
+    "emergencyNumbers": {
+     "police": "133",
+     "ambulance": "131",
+     "general": "133"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde iyi 4G/5G; Patagonya, Carretera Austral ve Atacama’nın yüksek bölgelerinde kapsama zayıf",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "İyi",
+    "bestCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi (Santiago metrosu modern ve geniş; şehirlerarası Turbus ve Pullman otobüsleri; uzun mesafede LATAM, Sky ve JetSMART uçuşları)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "0.80 - 1 $ (Santiago metrosu, bip! kartı)",
+    "dailyPassUsd": "Günlük kart yok; bip! ile günde ~2 - 4 $",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber, Cabify ve DiDi yaygın ve ucuzdur. Siyah-sarı taksiler taksimetrelidir; havalimanında içerideki resmî gişelerden ön ödemeli taksi veya Transvip servisi alın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $ (öğle menüsü – menú del día)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 110 $ (yabancı kartla ödemede %19 KDV’siz)",
+    "flightCostIndex": "Yüksek (aktarmalı ~20-24 sa)",
+    "flightTip": "Türkiye’den direkt uçuş yoktur; São Paulo, Madrid veya diğer Avrupa merkezleri aktarmalı Santiago biletlerini karşılaştırın. Ülke çok uzun olduğundan kuzey ve güney arasında iç hat uçuşları (LATAM, Sky, JetSMART) şarttır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kadınlar ve tanıdıklar arasında yanaktan tek öpücükle selamlaşılır; erkekler genelde tokalaşır.",
+     "Şilililer komşularına göre daha ölçülü ve kibardır; büyüklere “usted” ile hitap edin.",
+     "Akşamüstü “once” (çay, ekmek ve peynir) önemli bir aile geleneğidir; davet edilirseniz kabul edin.",
+     "Rapa Nui’de (Paskalya Adası) moai heykellerine ve ahu platformlarına dokunmak veya üzerlerine çıkmak yasaktır ve ağır cezası vardır."
+    ],
+    "festivals": [
+     "Fiestas Patrias (18-19 Eylül, ulusal bayram ve “fonda” şenlikleri)",
+     "La Tirana Festivali (Temmuz, Tarapacá)",
+     "Tapati Rapa Nui (Şubat, Paskalya Adası)"
+    ],
+    "lifestyle": "Aile odaklı ve sakin bir yaşam: hafta sonu asadoları, akşam “once”si, dağ ve deniz arasında kısa kaçamaklar ve kendine özgü argo (“po”, “cachai”) gündelik hayatın parçasıdır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Torres del Paine Milli Parkı",
+     "San Pedro de Atacama ve Ay Vadisi",
+     "Valparaíso (UNESCO)",
+     "Paskalya Adası (Rapa Nui) moaileri",
+     "Göller Bölgesi: Puerto Varas ve Osorno Yanardağı",
+     "Chiloé ahşap kiliseleri"
+    ],
+    "bestSeasons": "Patagonya ve Göller Bölgesi için Kasım – Mart; Atacama yıl boyu (geceleri çok soğuk); Santiago için ilkbahar ve sonbahar; And Dağları’nda kayak Haziran – Eylül.",
+    "travelStyleTip": "Ülke 4.300 km uzunluğundadır: kuzey (Atacama) ve güney (Patagonya) arasında uçun, Santiago çevresinde otobüs kullanın. Torres del Paine kamp ve sığınak rezervasyonlarını aylar önce yapın."
+   },
+   "religion": {
+    "primaryReligions": "Katolik ~%45-55, dinsiz ~%25-35, Evanjelik ~%15 (anket ve sayımlara göre yaklaşık)",
+    "respectNorms": "Kiliselerde sade giyinin. Rapa Nui’de ahu ve moai alanları atalara ait kutsal yerlerdir; işaretli yollardan çıkmayın.",
+    "sacredSites": [
+     "Chiloé Kiliseleri (UNESCO)",
+     "Maipú Ulusal Mabedi (Templo Votivo, Santiago)",
+     "Ahu Tongariki (Rapa Nui)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İspanyolca (hızlı konuşulan, argo yoğun Şili İspanyolcası); yerli diller Mapudungun, Aymara ve Rapa Nui",
+    "englishProficiency": "Santiago’da ve turistik bölgelerde orta; diğer yerlerde sınırlıdır.",
+    "phrases": [
+     {
+      "phrase": "¿Cachai?",
+      "meaning": "Anladın mı? / Tamam mı? (Şili argosu)",
+      "translation": "Anladın mı? / Tamam mı? (Şili argosu)",
+      "pronunciation": "KAH-chai"
+     },
+     {
+      "phrase": "Sí, po",
+      "meaning": "Evet, tabii",
+      "translation": "Evet, tabii",
+      "pronunciation": "SEE poh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Bacán!",
+      "meaning": "Harika! (Şili argosu)",
+      "translation": "Harika! (Şili argosu)",
+      "pronunciation": "bah-KAHN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mapuche, Aymara ve Rapa Nui gibi yerli halkların yurdu olan topraklarda Pedro de Valdivia 1541’de Santiago’yu kurdu. 1810’daki ilk ulusal yönetimin ardından Şili 1818’de bağımsızlığını kazandı; 1888’de Paskalya Adası’nı topraklarına kattı. Ülke 1990’dan beri demokratik yönetime sahiptir.",
+    "milestones": [
+     "1541: Santiago kurulur",
+     "1818: Bağımsızlık ilanı",
+     "1888: Paskalya Adası Şili’ye katılır",
+     "1990: Demokrasiye dönüş"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pastel de choclo (mısır püresi kaplı kıymalı fırın yemeği)",
+     "Empanada de pino (kıyma, soğan, yumurta ve zeytinli börek)",
+     "Curanto (Chiloé’de çukurda pişen deniz ürünleri ve et)"
+    ],
+    "traditionalDrinks": [
+     "Pisco sour (alkollü)",
+     "Mote con huesillo (buğday ve kuru şeftali şerbeti)",
+     "Carménère şarabı (alkollü)"
+    ],
+    "streetFoodAndDesserts": [
+     "Completo (avokadolu sosisli sandviç)",
+     "Sopaipillas (balkabaklı kızarmış hamur)",
+     "Leche asada (fırın sütlü tatlı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pablo Neruda (Nobel ödüllü şair)",
+     "Gabriela Mistral (Latin Amerika’nın ilk Nobel edebiyat ödülü)",
+     "Violeta Parra (halk müziği sanatçısı)"
+    ],
+    "strongSectors": [
+     "Bakır madenciliği (dünyanın en büyük üreticisi)",
+     "Lityum",
+     "Meyve, şarap ve somon ihracatı"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme neredeyse her yerde geçer; küçük kasabalar ve pazarlar için az nakit yeterlidir. Otellerde pasaport ve giriş kaydınızla yabancı kartla ödeme yaparsanız %19 KDV alınmaz.",
+    "tippingCulture": "Restoranlarda hesaba %10 “propina sugerida” eklenir ve garson “¿Le incluyo la propina?” diye sorar; yasal olarak isteğe bağlıdır ama beklenir.",
+    "economicPillars": "Bakır ve lityum madenciliği, tarım (meyve, şarap), somon yetiştiriciliği, hizmetler ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Şili Kuzeyden Güneye: Atacama, Santiago, Valparaíso ve Torres del Paine",
+   "routeSummary": "Dünyanın en kurak çölü Atacama’dan başkent Santiago’ya, renkli liman kenti Valparaíso’ya ve Patagonya’daki Torres del Paine’in granit kulelerine uçuşlarla ilerleyen 10 günlük rota.",
+   "totalDays": 10,
+   "idealDurationText": "10 Günlük Rota",
+   "bestSeason": "Kasım – Mart",
+   "transportMode": "İç hat uçuşları (Calama – Santiago, Santiago – Punta Arenas/Puerto Natales) + Santiago – Valparaíso otobüsü + Patagonya’da tur veya kiralık araç",
+   "paceLevel": "Aktif (Doğa ve Şehir)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: San Pedro de Atacama (Çöl)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Ay Vadisi (Valle de la Luna)",
+      "El Tatio gayzerleri",
+      "Salar de Atacama ve Laguna Chaxa flamingoları",
+      "Miscanti ve Miñiques yüksek göller"
+     ],
+     "activities": [
+      "Dünyanın en berrak gökyüzünde yıldız gözlem turuna katılın.",
+      "El Tatio’da gün doğumunda gayzerleri izleyin (04:30 civarı yola çıkılır).",
+      "Ay Vadisi’nde gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Kinoalı And yemekleri",
+      "Rica rica çayı (yerel çöl bitkisi)"
+     ],
+     "criticalTips": [
+      "San Pedro 2.400 m, El Tatio 4.300 m rakımdadır; ilk gün dinlenin ve bol su için.",
+      "Gece sıcaklık sıfırın altına düşer; sabah turları için kalın mont alın."
+     ],
+     "mapsQuery": "San Pedro de Atacama, Chile"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Santiago",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Plaza de Armas ve Metropolitan Katedrali",
+      "Cerro San Cristóbal",
+      "La Moneda Sarayı",
+      "Lastarria ve Bellavista semtleri (Neruda’nın evi La Chascona)"
+     ],
+     "activities": [
+      "Füniküler veya teleferikle San Cristóbal’a çıkıp And manzarasını izleyin.",
+      "Maipo veya Casablanca vadisinde bağ turu yapın.",
+      "Mercado Central’da deniz ürünleri yiyin."
+     ],
+     "foodAndDrinks": [
+      "Pastel de choclo",
+      "Empanada de pino",
+      "Mote con huesillo"
+     ],
+     "criticalTips": [
+      "Metro ve otobüs için bip! kartı alın.",
+      "Centro ve Bellavista’da geceleri eşyalarınıza dikkat edin."
+     ],
+     "mapsQuery": "Santiago, Chile"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Valparaíso",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Cerro Alegre ve Cerro Concepción",
+      "Tarihi asansörler (ascensores)",
+      "La Sebastiana (Neruda’nın evi)",
+      "Viña del Mar sahili"
+     ],
+     "activities": [
+      "Ascensor Reina Victoria veya El Peral’a binin.",
+      "Sokak sanatı yürüyüş turuna katılın.",
+      "Akşamüstü Viña del Mar sahilinde yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Chorrillana (patates, et, soğan ve yumurta)",
+      "Deniz ürünlü veya peynirli empanada"
+     ],
+     "criticalTips": [
+      "Turistik tepelerin dışına, özellikle akşamları çıkmayın.",
+      "Liman bölgesinde ve otobüslerde yankesicilere dikkat edin."
+     ],
+     "mapsQuery": "Valparaíso, Chile"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Puerto Natales ve Torres del Paine",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Base de las Torres (kuleler)",
+      "Grey Buzulu",
+      "Pehoé Gölü ve Cuernos del Paine",
+      "Salto Grande şelalesi"
+     ],
+     "activities": [
+      "Base de las Torres’e günübirlik yürüyüş yapın (~20 km, zorlu).",
+      "Grey Gölü’nde buzula tekne turu yapın.",
+      "Deneyimliyseniz birkaç günlük W Trek’i yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Magallanes kuzusu (cordero magallánico)",
+      "Centolla (kral yengeç)",
+      "Calafate sour (alkollü)"
+     ],
+     "criticalTips": [
+      "Park girişi, kamp alanları ve sığınaklar önceden rezervasyon gerektirir.",
+      "Rüzgâr çok güçlü olabilir; su geçirmez ve rüzgâr geçirmez kıyafet alın."
+     ],
+     "mapsQuery": "Torres del Paine, Magallanes, Chile"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pastel de choclo",
+     "Empanada de pino",
+     "Curanto"
+    ],
+    "drinks": [
+     "Pisco sour (alkollü)",
+     "Mote con huesillo",
+     "Carménère (alkollü)"
+    ],
+    "streetFoods": [
+     "Completo",
+     "Sopaipillas",
+     "Churros"
+    ],
+    "diningAdvice": "Öğle yemeği (13:00 – 15:00) günün ana öğünüdür ve “menú del día” en ekonomik seçenektir. Hesaptaki %10 önerilen bahşişi kabul etmek nezakettir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tip C/L uyumlu adaptör (Schuko fişler için)",
+     "Rüzgâr geçirmez mont, polar ve bere",
+     "Yüksek faktörlü güneş kremi ve güneş gözlüğü",
+     "Su geçirmez yürüyüş botu"
+    ],
+    "safetyAndEtiquette": [
+     "Kalabalık yerlerde telefonunuzu ve çantanızı önde taşıyın.",
+     "Milli parklarda ateş yakmak yasaktır; Torres del Paine’de yangınlar büyük hasar verdi."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İtalyan tipi üç uçlu L ve iki uçlu C prizler. İnce Avrupa fişleri (Tip C) genelde girer, ancak Türkiye’de yaygın kalın Schuko (F) fişler için adaptör gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Santiago ve büyük şehirlerde şebeke suyu içilebilir, ancak mineral oranı yüksektir ve hassas midelere dokunabilir. Atacama’da şişe su tercih edin.",
+    "vaccines": [
+     "Rutin aşılar (tetanos-difteri, KKK)",
+     "Hepatit A önerilir",
+     "Sarıhumma aşısı gerekmez"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "131"
+   },
+   "tipping": {
+    "custom": "Restoranlarda hesaba %10 önerilen bahşiş eklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Bahşiş yasal olarak isteğe bağlıdır; garson eklemek isteyip istemediğinizi sorar. Taksilerde bahşiş beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Mağaza alışverişinde yok; otel konaklamasında %19 IVA muafiyeti",
+    "minSpend": "Geçerli değil",
+    "customsNote": "Şili’de turistlere genel bir mağaza KDV iadesi yoktur. Otelde pasaport ve dijital giriş kaydınızı (PDI) gösterip dövizle veya yabancı kartla ödediğinizde %19 IVA alınmaz. Iquique (ZOFRI) ve Punta Arenas’ta serbest bölge alışveriş merkezleri vardır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "airportSimTrapWarning": "Santiago havalimanındaki kiosklar pahalıdır; şehirde Entel veya WOM mağazalarından ya da süpermarketlerden ön ödemeli SIM alın veya önceden eSIM kurun. Patagonya ve Atacama için çevrimdışı harita indirin."
+   },
+   "touristScams": [
+    {
+     "title": "Leke dökme hilesi",
+     "desc": "Santiago merkezinde biri üzerinize sıvı döker, “yardım eden” ortağı çantanızı veya telefonunuzu alır.",
+     "tip": "Yardımı reddedin, eşyalarınızı tutun ve kalabalık bir mağazaya girin."
+    },
+    {
+     "title": "Havalimanı korsan taksileri",
+     "desc": "Geliş salonunda yaklaşan kişiler resmî tarifenin birkaç katını ister.",
+     "tip": "İçerideki resmî taksi/Transvip gişelerini veya uygulamaları kullanın."
+    },
+    {
+     "title": "Telefon kapma",
+     "desc": "Valparaíso’nun tepelerinde, Santiago metrosunda ve kafe masalarında telefonlar kapılır.",
+     "tip": "Telefonu masada bırakmayın ve sokakta fotoğraf çektikten sonra hemen kaldırın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Chilean Peso (CLP)",
+   "plugType": "Type C, L (220V, 50Hz)",
+   "bestMonths": "November – March (summer in Patagonia and the Lake District); Atacama year-round; September – November and March – May for Santiago; June – September for skiing",
+   "safety": {
+    "crimeRateSummary": "Safer than the Latin American average, but robberies, pickpocketing and carjackings have risen in Santiago and Valparaíso in recent years. The most common crime tourists face is phone and bag theft in crowded places. Chile is an earthquake and tsunami zone; note the evacuation signs on the coast.",
+    "commonScams": [
+     "Someone spilling something on you in central Santiago and stealing your bag while “helping”",
+     "Unlicensed taxi drivers touting in the arrivals hall at Santiago airport",
+     "Phone snatching and pickpocketing on Valparaíso’s hills and the Santiago metro"
+    ],
+    "safeTravelTips": [
+     "In Valparaíso stay on tourist hills such as Cerro Alegre and Cerro Concepción and avoid deserted stairways at night.",
+     "At the airport use only the official taxi or shuttle (Transvip) counters inside the terminal.",
+     "In an earthquake, drop, cover and hold on; on the coast, move to high ground if a tsunami alert sounds."
+    ],
+    "emergencyNumbers": {
+     "police": "133",
+     "ambulance": "131",
+     "general": "133"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G/5G in cities; weak coverage in Patagonia, on the Carretera Austral and in the high Atacama",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Good",
+    "bestCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good (modern, extensive Santiago metro; Turbus and Pullman intercity buses; LATAM, Sky and JetSMART flights for long distances)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.80 - 1 $ (Santiago metro, bip! card)",
+    "dailyPassUsd": "No day pass; ~2 - 4 $ a day with bip!",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber, Cabify and DiDi are common and cheap. Black-and-yellow taxis are metered; at the airport book a prepaid taxi or Transvip shuttle from the official counters inside."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $ (set lunch – menú del día)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 110 $ (19% VAT waived when paying with a foreign card)",
+    "flightCostIndex": "High (~20-24 h with a connection)",
+    "flightTip": "There are no direct flights from Türkiye; compare connections to Santiago via São Paulo, Madrid or other European hubs. Chile is very long, so domestic flights (LATAM, Sky, JetSMART) are essential between north and south."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Women and acquaintances greet with a single cheek kiss; men usually shake hands.",
+     "Chileans tend to be more reserved and formal than their neighbours; address elders as “usted”.",
+     "The early-evening “once” (tea, bread and cheese) is an important family tradition; accept if invited.",
+     "On Rapa Nui (Easter Island) touching or climbing on moai statues and ahu platforms is forbidden and heavily fined."
+    ],
+    "festivals": [
+     "Fiestas Patrias (18-19 September, national holidays with “fondas”)",
+     "Fiesta de La Tirana (July, Tarapacá)",
+     "Tapati Rapa Nui (February, Easter Island)"
+    ],
+    "lifestyle": "Family-centred and calm: weekend asados, the evening “once”, quick escapes between mountains and sea, and distinctive slang (“po”, “cachai”) are part of daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Torres del Paine National Park",
+     "San Pedro de Atacama and Valle de la Luna",
+     "Valparaíso (UNESCO)",
+     "Easter Island (Rapa Nui) moai",
+     "Lake District: Puerto Varas and Osorno Volcano",
+     "Wooden churches of Chiloé"
+    ],
+    "bestSeasons": "November – March for Patagonia and the Lake District; Atacama year-round (very cold nights); spring and autumn for Santiago; Andean skiing June – September.",
+    "travelStyleTip": "Chile is 4,300 km long: fly between the north (Atacama) and south (Patagonia), and use buses around Santiago. Book Torres del Paine campsites and refugios months ahead."
+   },
+   "religion": {
+    "primaryReligions": "Catholic ~45-55%, no religion ~25-35%, Evangelical ~15% (approximate, per surveys and census)",
+    "respectNorms": "Dress modestly in churches. On Rapa Nui, ahu and moai sites are sacred ancestral places; stay on marked paths.",
+    "sacredSites": [
+     "Churches of Chiloé (UNESCO)",
+     "National Shrine of Maipú (Templo Votivo, Santiago)",
+     "Ahu Tongariki (Rapa Nui)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Spanish (fast, slang-heavy Chilean Spanish); Indigenous languages include Mapudungun, Aymara and Rapa Nui",
+    "englishProficiency": "Moderate in Santiago and tourist areas; limited elsewhere.",
+    "phrases": [
+     {
+      "phrase": "¿Cachai?",
+      "meaning": "Get it? / You know? (Chilean slang)",
+      "translation": "Get it? / You know? (Chilean slang)",
+      "pronunciation": "KAH-chai"
+     },
+     {
+      "phrase": "Sí, po",
+      "meaning": "Yes, of course",
+      "translation": "Yes, of course",
+      "pronunciation": "SEE poh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Bacán!",
+      "meaning": "Cool! (Chilean slang)",
+      "translation": "Cool! (Chilean slang)",
+      "pronunciation": "bah-KAHN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "In the homeland of Indigenous peoples such as the Mapuche, Aymara and Rapa Nui, Pedro de Valdivia founded Santiago in 1541. After the first national junta in 1810, Chile won independence in 1818 and annexed Easter Island in 1888. The country has been a democracy since 1990.",
+    "milestones": [
+     "1541: Santiago founded",
+     "1818: Declaration of independence",
+     "1888: Easter Island becomes part of Chile",
+     "1990: Return to democracy"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pastel de choclo (corn-topped meat bake)",
+     "Empanada de pino (beef, onion, egg and olive pastry)",
+     "Curanto (seafood and meat cooked in an earth pit, Chiloé)"
+    ],
+    "traditionalDrinks": [
+     "Pisco sour (alcoholic)",
+     "Mote con huesillo (wheat and dried-peach drink)",
+     "Carménère wine (alcoholic)"
+    ],
+    "streetFoodAndDesserts": [
+     "Completo (hot dog loaded with avocado)",
+     "Sopaipillas (fried pumpkin dough)",
+     "Leche asada (baked milk custard)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pablo Neruda (Nobel Prize-winning poet)",
+     "Gabriela Mistral (Latin America’s first Nobel in Literature)",
+     "Violeta Parra (folk musician)"
+    ],
+    "strongSectors": [
+     "Copper mining (world’s largest producer)",
+     "Lithium",
+     "Fruit, wine and salmon exports"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless work almost everywhere; a little cash covers small towns and markets. Hotels waive the 19% VAT if you pay with a foreign card and show your passport and entry record.",
+    "tippingCulture": "Restaurants add a 10% “propina sugerida” and the waiter asks “¿Le incluyo la propina?”; it is legally optional but expected.",
+    "economicPillars": "Copper and lithium mining, agriculture (fruit, wine), salmon farming, services and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Chile North to South: Atacama, Santiago, Valparaíso & Torres del Paine",
+   "routeSummary": "A 10-day route by plane from the Atacama, the world’s driest desert, to the capital Santiago, the colourful port of Valparaíso and the granite towers of Torres del Paine in Patagonia.",
+   "totalDays": 10,
+   "idealDurationText": "10-Day Itinerary",
+   "bestSeason": "November – March",
+   "transportMode": "Domestic flights (Calama – Santiago, Santiago – Punta Arenas/Puerto Natales) + Santiago – Valparaíso bus + tours or rental car in Patagonia",
+   "paceLevel": "Active (Nature & City)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: San Pedro de Atacama (Desert)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Valle de la Luna",
+      "El Tatio geysers",
+      "Salar de Atacama and Laguna Chaxa flamingos",
+      "Miscanti and Miñiques altiplano lagoons"
+     ],
+     "activities": [
+      "Join a stargazing tour under some of the clearest skies on Earth.",
+      "Watch the El Tatio geysers at sunrise (departures around 4:30 am).",
+      "See the sunset over Valle de la Luna."
+     ],
+     "foodAndDrinks": [
+      "Andean quinoa dishes",
+      "Rica rica tea (local desert herb)"
+     ],
+     "criticalTips": [
+      "San Pedro is at 2,400 m and El Tatio at 4,300 m; rest on day one and drink plenty of water.",
+      "Nights drop below freezing; bring a warm jacket for early tours."
+     ],
+     "mapsQuery": "San Pedro de Atacama, Chile"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Santiago",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Plaza de Armas and Metropolitan Cathedral",
+      "Cerro San Cristóbal",
+      "La Moneda Palace",
+      "Lastarria and Bellavista (Neruda’s house La Chascona)"
+     ],
+     "activities": [
+      "Ride the funicular or cable car up San Cristóbal for Andes views.",
+      "Take a winery tour in the Maipo or Casablanca valley.",
+      "Eat seafood at the Mercado Central."
+     ],
+     "foodAndDrinks": [
+      "Pastel de choclo",
+      "Empanada de pino",
+      "Mote con huesillo"
+     ],
+     "criticalTips": [
+      "Get a bip! card for the metro and buses.",
+      "Watch your belongings in Centro and Bellavista at night."
+     ],
+     "mapsQuery": "Santiago, Chile"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Valparaíso",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Cerro Alegre and Cerro Concepción",
+      "Historic funiculars (ascensores)",
+      "La Sebastiana (Neruda’s house)",
+      "Viña del Mar seafront"
+     ],
+     "activities": [
+      "Ride the Reina Victoria or El Peral funicular.",
+      "Join a street-art walking tour.",
+      "Stroll the Viña del Mar seafront in the late afternoon."
+     ],
+     "foodAndDrinks": [
+      "Chorrillana (fries with beef, onion and egg)",
+      "Seafood or cheese empanadas"
+     ],
+     "criticalTips": [
+      "Don’t wander beyond the tourist hills, especially in the evening.",
+      "Beware of pickpockets around the port and on buses."
+     ],
+     "mapsQuery": "Valparaíso, Chile"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Puerto Natales & Torres del Paine",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Base de las Torres",
+      "Grey Glacier",
+      "Lake Pehoé and Cuernos del Paine",
+      "Salto Grande waterfall"
+     ],
+     "activities": [
+      "Hike to Base de las Torres (~20 km, strenuous day hike).",
+      "Take a boat across Lake Grey to the glacier.",
+      "If experienced, hike the multi-day W Trek."
+     ],
+     "foodAndDrinks": [
+      "Magellanic lamb (cordero magallánico)",
+      "Centolla (king crab)",
+      "Calafate sour (alcoholic)"
+     ],
+     "criticalTips": [
+      "Park entry, campsites and refugios must be booked in advance.",
+      "Winds can be extremely strong; bring waterproof, windproof clothing."
+     ],
+     "mapsQuery": "Torres del Paine, Magallanes, Chile"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pastel de choclo",
+     "Empanada de pino",
+     "Curanto"
+    ],
+    "drinks": [
+     "Pisco sour (alcoholic)",
+     "Mote con huesillo",
+     "Carménère (alcoholic)"
+    ],
+    "streetFoods": [
+     "Completo",
+     "Sopaipillas",
+     "Churros"
+    ],
+    "diningAdvice": "Lunch (1 – 3 pm) is the main meal and the “menú del día” is the cheapest option. Accepting the suggested 10% tip on the bill is polite."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type C/L adapter (for Schuko plugs)",
+     "Windproof jacket, fleece and hat",
+     "High-SPF sunscreen and sunglasses",
+     "Waterproof hiking boots"
+    ],
+    "safetyAndEtiquette": [
+     "Keep your phone and bag in front of you in crowded places.",
+     "Lighting fires in national parks is forbidden; wildfires have caused major damage in Torres del Paine."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Italian-style three-pin Type L and two-pin Type C sockets. Thin Europlugs (Type C) usually fit, but the thick Schuko (F) plugs common in Türkiye need an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is safe in Santiago and major cities, but it is high in minerals and may upset sensitive stomachs. Prefer bottled water in the Atacama.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, MMR)",
+     "Hepatitis A recommended",
+     "No yellow fever vaccination needed"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "131"
+   },
+   "tipping": {
+    "custom": "A suggested 10% tip is added to restaurant bills.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "The tip is legally voluntary; the waiter will ask whether to add it. Taxis don’t expect tips."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None on shopping; 19% IVA exemption on hotel stays",
+    "minSpend": "Not applicable",
+    "customsNote": "Chile has no general shop VAT refund for tourists. At hotels, showing your passport and digital entry record (PDI) and paying in foreign currency or with a foreign card exempts you from the 19% IVA. Iquique (ZOFRI) and Punta Arenas have duty-free zone shopping centres."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "airportSimTrapWarning": "Kiosks at Santiago airport are expensive; buy a prepaid SIM in town at Entel or WOM stores or supermarkets, or set up an eSIM in advance. Download offline maps for Patagonia and the Atacama."
+   },
+   "touristScams": [
+    {
+     "title": "Spill-and-steal trick",
+     "desc": "In central Santiago someone spills liquid on you and a “helpful” accomplice takes your bag or phone.",
+     "tip": "Refuse help, hold your belongings and step into a busy shop."
+    },
+    {
+     "title": "Airport pirate taxis",
+     "desc": "People approaching you in arrivals charge several times the official fare.",
+     "tip": "Use the official taxi/Transvip counters inside or ride-hailing apps."
+    },
+    {
+     "title": "Phone snatching",
+     "desc": "Phones are snatched on Valparaíso’s hills, on the Santiago metro and from café tables.",
+     "tip": "Don’t leave your phone on the table and put it away right after taking photos."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Chilenischer Peso (CLP)",
+   "plugType": "Typ C, L (220V, 50Hz)",
+   "bestMonths": "November – März (Sommer in Patagonien und im Seengebiet); Atacama ganzjährig; September – November und März – Mai für Santiago; Juni – September zum Skifahren",
+   "safety": {
+    "crimeRateSummary": "Sicherer als der lateinamerikanische Durchschnitt, doch Raubüberfälle, Taschendiebstahl und Autoraub haben in Santiago und Valparaíso zuletzt zugenommen. Am häufigsten trifft Touristen Handy- und Taschendiebstahl an belebten Orten. Chile ist Erdbeben- und Tsunamigebiet; auf Evakuierungsschilder an der Küste achten.",
+    "commonScams": [
+     "In Santiagos Zentrum wird man bekleckert und beim „Helfen“ bestohlen",
+     "Nicht lizenzierte Taxifahrer, die in der Ankunftshalle in Santiago Kunden anwerben",
+     "Handyraub und Taschendiebstahl in Valparaísos Hügeln und in der Metro Santiago"
+    ],
+    "safeTravelTips": [
+     "In Valparaíso auf den touristischen Hügeln wie Cerro Alegre und Cerro Concepción bleiben und nachts menschenleere Treppen meiden.",
+     "Am Flughafen nur die offiziellen Taxi- oder Transferschalter (Transvip) im Terminal nutzen.",
+     "Bei einem Erdbeben in Deckung gehen und festhalten; an der Küste bei Tsunamialarm höher gelegenes Gelände aufsuchen."
+    ],
+    "emergencyNumbers": {
+     "police": "133",
+     "ambulance": "131",
+     "general": "133"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G/5G in Städten; schwaches Netz in Patagonien, an der Carretera Austral und in der hohen Atacama",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Gut",
+    "bestCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut (moderne, große Metro in Santiago; Fernbusse von Turbus und Pullman; für lange Strecken Flüge mit LATAM, Sky und JetSMART)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "0.80 - 1 $ (Metro Santiago, bip!-Karte)",
+    "dailyPassUsd": "Keine Tageskarte; mit bip! ~2 - 4 $ pro Tag",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber, Cabify und DiDi sind verbreitet und günstig. Schwarz-gelbe Taxis haben Taxameter; am Flughafen ein Prepaid-Taxi oder Transvip an den offiziellen Schaltern im Terminal buchen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $ (Mittagsmenü – menú del día)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 110 $ (ohne 19 % MwSt. bei Zahlung mit ausländischer Karte)",
+    "flightCostIndex": "Hoch (~20-24 Std. mit Umstieg)",
+    "flightTip": "Keine Direktflüge aus der Türkei; Verbindungen nach Santiago über São Paulo, Madrid oder andere europäische Drehkreuze vergleichen. Chile ist sehr lang – zwischen Norden und Süden sind Inlandsflüge (LATAM, Sky, JetSMART) unerlässlich."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Frauen und Bekannte begrüßen sich mit einem Wangenkuss; Männer geben sich meist die Hand.",
+     "Chilenen sind meist zurückhaltender und förmlicher als ihre Nachbarn; Ältere mit „usted“ ansprechen.",
+     "Die „Once“ am frühen Abend (Tee, Brot und Käse) ist eine wichtige Familientradition; eine Einladung annehmen.",
+     "Auf Rapa Nui (Osterinsel) ist es verboten, Moai-Statuen und Ahu-Plattformen zu berühren oder zu besteigen; es drohen hohe Strafen."
+    ],
+    "festivals": [
+     "Fiestas Patrias (18.-19. September, Nationalfeiertage mit „Fondas“)",
+     "Fiesta de La Tirana (Juli, Tarapacá)",
+     "Tapati Rapa Nui (Februar, Osterinsel)"
+    ],
+    "lifestyle": "Familienorientiert und ruhig: Asados am Wochenende, die abendliche „Once“, kurze Ausflüge zwischen Bergen und Meer und ein eigener Slang („po“, „cachai“) gehören zum Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nationalpark Torres del Paine",
+     "San Pedro de Atacama und Valle de la Luna",
+     "Valparaíso (UNESCO)",
+     "Moai der Osterinsel (Rapa Nui)",
+     "Seengebiet: Puerto Varas und Vulkan Osorno",
+     "Holzkirchen von Chiloé"
+    ],
+    "bestSeasons": "November – März für Patagonien und das Seengebiet; Atacama ganzjährig (sehr kalte Nächte); Frühling und Herbst für Santiago; Skifahren in den Anden Juni – September.",
+    "travelStyleTip": "Chile ist 4.300 km lang: zwischen Norden (Atacama) und Süden (Patagonien) fliegen, rund um Santiago Busse nutzen. Zeltplätze und Refugios im Torres del Paine Monate vorher buchen."
+   },
+   "religion": {
+    "primaryReligions": "Katholiken ~45-55 %, konfessionslos ~25-35 %, Evangelikale ~15 % (ungefähr, laut Umfragen und Zensus)",
+    "respectNorms": "In Kirchen dezent kleiden. Auf Rapa Nui sind Ahu und Moai heilige Ahnenstätten; auf markierten Wegen bleiben.",
+    "sacredSites": [
+     "Kirchen von Chiloé (UNESCO)",
+     "Nationalheiligtum Maipú (Templo Votivo, Santiago)",
+     "Ahu Tongariki (Rapa Nui)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Spanisch (schnelles, slangreiches chilenisches Spanisch); indigene Sprachen u. a. Mapudungun, Aymara und Rapa Nui",
+    "englishProficiency": "In Santiago und Touristengebieten mittel, sonst gering.",
+    "phrases": [
+     {
+      "phrase": "¿Cachai?",
+      "meaning": "Verstehst du? (chilenischer Slang)",
+      "translation": "Verstehst du? (chilenischer Slang)",
+      "pronunciation": "KAH-chai"
+     },
+     {
+      "phrase": "Sí, po",
+      "meaning": "Ja, klar",
+      "translation": "Ja, klar",
+      "pronunciation": "SEE poh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Bacán!",
+      "meaning": "Cool! (chilenischer Slang)",
+      "translation": "Cool! (chilenischer Slang)",
+      "pronunciation": "bah-KAHN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "In der Heimat indigener Völker wie Mapuche, Aymara und Rapa Nui gründete Pedro de Valdivia 1541 Santiago. Nach der ersten Regierungsjunta 1810 wurde Chile 1818 unabhängig und gliederte 1888 die Osterinsel ein. Seit 1990 ist das Land eine Demokratie.",
+    "milestones": [
+     "1541: Gründung Santiagos",
+     "1818: Unabhängigkeitserklärung",
+     "1888: Osterinsel wird Teil Chiles",
+     "1990: Rückkehr zur Demokratie"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pastel de choclo (Hackfleischauflauf mit Maishaube)",
+     "Empanada de pino (Teigtasche mit Hack, Zwiebel, Ei und Olive)",
+     "Curanto (Meeresfrüchte und Fleisch aus dem Erdofen, Chiloé)"
+    ],
+    "traditionalDrinks": [
+     "Pisco Sour (alkoholisch)",
+     "Mote con huesillo (Getränk aus Weizen und getrockneten Pfirsichen)",
+     "Carménère-Wein (alkoholisch)"
+    ],
+    "streetFoodAndDesserts": [
+     "Completo (Hotdog mit Avocado)",
+     "Sopaipillas (frittierter Kürbisteig)",
+     "Leche asada (gebackene Milchcreme)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pablo Neruda (Literaturnobelpreisträger)",
+     "Gabriela Mistral (erster Literaturnobelpreis Lateinamerikas)",
+     "Violeta Parra (Folkmusikerin)"
+    ],
+    "strongSectors": [
+     "Kupferbergbau (größter Produzent der Welt)",
+     "Lithium",
+     "Export von Obst, Wein und Lachs"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und kontaktlos funktionieren fast überall; für kleine Orte und Märkte genügt wenig Bargeld. Hotels erlassen die 19 % MwSt., wenn man mit ausländischer Karte zahlt und Pass sowie Einreisebeleg vorlegt.",
+    "tippingCulture": "Restaurants schlagen 10 % „Propina sugerida“ auf, der Kellner fragt „¿Le incluyo la propina?“; rechtlich freiwillig, aber erwartet.",
+    "economicPillars": "Kupfer- und Lithiumbergbau, Landwirtschaft (Obst, Wein), Lachszucht, Dienstleistungen und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Chile von Nord nach Süd: Atacama, Santiago, Valparaíso & Torres del Paine",
+   "routeSummary": "Eine 10-tägige Route per Flugzeug von der Atacama, der trockensten Wüste der Welt, über die Hauptstadt Santiago und die bunte Hafenstadt Valparaíso zu den Granittürmen des Torres del Paine in Patagonien.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige Route",
+   "bestSeason": "November – März",
+   "transportMode": "Inlandsflüge (Calama – Santiago, Santiago – Punta Arenas/Puerto Natales) + Bus Santiago – Valparaíso + Touren oder Mietwagen in Patagonien",
+   "paceLevel": "Aktiv (Natur & Stadt)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: San Pedro de Atacama (Wüste)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Valle de la Luna (Mondtal)",
+      "Geysire von El Tatio",
+      "Salar de Atacama und Flamingos der Laguna Chaxa",
+      "Hochlandlagunen Miscanti und Miñiques"
+     ],
+     "activities": [
+      "Eine Sternbeobachtungstour unter einem der klarsten Himmel der Erde machen.",
+      "Die Geysire von El Tatio bei Sonnenaufgang sehen (Abfahrt gegen 4:30 Uhr).",
+      "Den Sonnenuntergang im Valle de la Luna erleben."
+     ],
+     "foodAndDrinks": [
+      "Andine Quinoa-Gerichte",
+      "Rica-Rica-Tee (lokales Wüstenkraut)"
+     ],
+     "criticalTips": [
+      "San Pedro liegt auf 2.400 m, El Tatio auf 4.300 m; am ersten Tag ausruhen und viel trinken.",
+      "Nachts Frost; für frühe Touren warme Jacke mitnehmen."
+     ],
+     "mapsQuery": "San Pedro de Atacama, Chile"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Santiago",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Plaza de Armas und Kathedrale",
+      "Cerro San Cristóbal",
+      "Palacio de La Moneda",
+      "Lastarria und Bellavista (Nerudas Haus La Chascona)"
+     ],
+     "activities": [
+      "Mit Standseilbahn oder Seilbahn auf den San Cristóbal und die Anden sehen.",
+      "Eine Weingutstour im Maipo- oder Casablanca-Tal machen.",
+      "Im Mercado Central Meeresfrüchte essen."
+     ],
+     "foodAndDrinks": [
+      "Pastel de choclo",
+      "Empanada de pino",
+      "Mote con huesillo"
+     ],
+     "criticalTips": [
+      "Für Metro und Busse eine bip!-Karte kaufen.",
+      "Nachts in Centro und Bellavista auf Wertsachen achten."
+     ],
+     "mapsQuery": "Santiago, Chile"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Valparaíso",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Cerro Alegre und Cerro Concepción",
+      "Historische Standseilbahnen (Ascensores)",
+      "La Sebastiana (Nerudas Haus)",
+      "Strandpromenade von Viña del Mar"
+     ],
+     "activities": [
+      "Mit dem Ascensor Reina Victoria oder El Peral fahren.",
+      "An einer Street-Art-Führung teilnehmen.",
+      "Am späten Nachmittag an der Promenade von Viña del Mar spazieren."
+     ],
+     "foodAndDrinks": [
+      "Chorrillana (Pommes mit Rindfleisch, Zwiebeln und Ei)",
+      "Empanadas mit Meeresfrüchten oder Käse"
+     ],
+     "criticalTips": [
+      "Besonders abends die touristischen Hügel nicht verlassen.",
+      "Am Hafen und in Bussen auf Taschendiebe achten."
+     ],
+     "mapsQuery": "Valparaíso, Chile"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Puerto Natales & Torres del Paine",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Base de las Torres",
+      "Grey-Gletscher",
+      "Lago Pehoé und Cuernos del Paine",
+      "Wasserfall Salto Grande"
+     ],
+     "activities": [
+      "Zur Base de las Torres wandern (~20 km, anstrengend).",
+      "Mit dem Boot über den Lago Grey zum Gletscher.",
+      "Mit Erfahrung den mehrtägigen W-Trek gehen."
+     ],
+     "foodAndDrinks": [
+      "Magellan-Lamm (Cordero magallánico)",
+      "Centolla (Königskrabbe)",
+      "Calafate Sour (alkoholisch)"
+     ],
+     "criticalTips": [
+      "Parkeintritt, Zeltplätze und Refugios müssen vorab gebucht werden.",
+      "Der Wind kann extrem stark sein; wasser- und winddichte Kleidung mitnehmen."
+     ],
+     "mapsQuery": "Torres del Paine, Magallanes, Chile"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pastel de choclo",
+     "Empanada de pino",
+     "Curanto"
+    ],
+    "drinks": [
+     "Pisco Sour (alkoholisch)",
+     "Mote con huesillo",
+     "Carménère (alkoholisch)"
+    ],
+    "streetFoods": [
+     "Completo",
+     "Sopaipillas",
+     "Churros"
+    ],
+    "diningAdvice": "Das Mittagessen (13 – 15 Uhr) ist die Hauptmahlzeit, das „Menú del día“ die günstigste Option. Die vorgeschlagenen 10 % Trinkgeld anzunehmen ist höflich."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ C/L (für Schuko-Stecker)",
+     "Winddichte Jacke, Fleece und Mütze",
+     "Sonnencreme mit hohem LSF und Sonnenbrille",
+     "Wasserdichte Wanderschuhe"
+    ],
+    "safetyAndEtiquette": [
+     "An belebten Orten Handy und Tasche vorne tragen.",
+     "Feuer machen ist in Nationalparks verboten; Brände haben im Torres del Paine große Schäden angerichtet."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Italienische Dreipol-Steckdosen Typ L und zweipolige Typ C. Dünne Eurostecker (Typ C) passen meist, dicke Schuko-Stecker (F) brauchen einen Adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Santiago und großen Städten ist Leitungswasser trinkbar, aber sehr mineralhaltig und für empfindliche Mägen gewöhnungsbedürftig. In der Atacama lieber Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Hepatitis A empfohlen",
+     "Keine Gelbfieberimpfung nötig"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "131"
+   },
+   "tipping": {
+    "custom": "Auf Restaurantrechnungen werden 10 % Trinkgeld vorgeschlagen.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Das Trinkgeld ist rechtlich freiwillig; der Kellner fragt, ob er es hinzufügen soll. Bei Taxis erwartet man keins."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine beim Einkauf; 19 % IVA-Befreiung bei Hotelübernachtungen",
+    "minSpend": "Entfällt",
+    "customsNote": "Chile hat keine allgemeine MwSt.-Erstattung für Touristen beim Einkauf. Im Hotel entfällt die 19 % IVA, wenn man Pass und digitalen Einreisebeleg (PDI) zeigt und in Devisen oder mit ausländischer Karte zahlt. In Iquique (ZOFRI) und Punta Arenas gibt es Freihandelszonen zum Einkaufen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "airportSimTrapWarning": "Kioske am Flughafen Santiago sind teuer; Prepaid-SIM in der Stadt bei Entel, WOM oder im Supermarkt kaufen oder vorab eine eSIM einrichten. Offline-Karten für Patagonien und Atacama laden."
+   },
+   "touristScams": [
+    {
+     "title": "Bekleckern-und-Klauen-Trick",
+     "desc": "In Santiagos Zentrum werden Sie bekleckert, ein „hilfsbereiter“ Komplize nimmt Tasche oder Handy.",
+     "tip": "Hilfe ablehnen, Sachen festhalten und in ein belebtes Geschäft gehen."
+    },
+    {
+     "title": "Piratentaxis am Flughafen",
+     "desc": "Personen in der Ankunftshalle verlangen ein Mehrfaches des offiziellen Tarifs.",
+     "tip": "Offizielle Taxi-/Transvip-Schalter im Terminal oder Fahrdienst-Apps nutzen."
+    },
+    {
+     "title": "Handyraub",
+     "desc": "Auf Valparaísos Hügeln, in der Metro Santiago und von Cafétischen werden Handys entrissen.",
+     "tip": "Handy nicht auf dem Tisch liegen lassen und nach dem Fotografieren sofort wegstecken."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Peso chileno (CLP)",
+   "plugType": "Tipo C, L (220V, 50Hz)",
+   "bestMonths": "Noviembre – marzo (verano en la Patagonia y la región de los lagos); Atacama todo el año; septiembre – noviembre y marzo – mayo para Santiago; junio – septiembre para esquiar",
+   "safety": {
+    "crimeRateSummary": "Más seguro que el promedio latinoamericano, aunque en Santiago y Valparaíso han aumentado los asaltos, los carteristas y los portonazos en los últimos años. El delito más común contra turistas es el robo de móviles y bolsos en lugares concurridos. Chile es zona de terremotos y tsunamis; fíjese en las señales de evacuación en la costa.",
+    "commonScams": [
+     "Le manchan la ropa en el centro de Santiago y le roban el bolso mientras le “ayudan”",
+     "Taxistas sin licencia que captan pasajeros en llegadas del aeropuerto de Santiago",
+     "Robo de celulares y carteristas en los cerros de Valparaíso y el metro de Santiago"
+    ],
+    "safeTravelTips": [
+     "En Valparaíso quédese en cerros turísticos como el Alegre y el Concepción y evite escaleras solitarias de noche.",
+     "En el aeropuerto use solo los mesones oficiales de taxi o transfer (Transvip).",
+     "Ante un sismo, agáchese, cúbrase y sujétese; en la costa, suba a zonas altas si hay alerta de tsunami."
+    ],
+    "emergencyNumbers": {
+     "police": "133",
+     "ambulance": "131",
+     "general": "133"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G/5G en ciudades; cobertura débil en la Patagonia, la Carretera Austral y el altiplano de Atacama",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Buena",
+    "bestCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno (metro de Santiago moderno y extenso; buses interurbanos Turbus y Pullman; vuelos LATAM, Sky y JetSMART para largas distancias)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.80 - 1 $ (metro de Santiago, tarjeta bip!)",
+    "dailyPassUsd": "No hay pase diario; ~2 - 4 $ al día con bip!",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber, Cabify y DiDi son comunes y baratos. Los taxis negros con techo amarillo tienen taxímetro; en el aeropuerto contrate taxi prepagado o Transvip en los mesones oficiales."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $ (menú del día / colación)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 110 $ (sin IVA del 19 % pagando con tarjeta extranjera)",
+    "flightCostIndex": "Alto (~20-24 h con escala)",
+    "flightTip": "No hay vuelos directos desde Turquía; compare conexiones a Santiago vía São Paulo, Madrid u otros hubs europeos. Chile es muy largo, así que los vuelos nacionales (LATAM, Sky, JetSMART) son imprescindibles entre norte y sur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Las mujeres y conocidos se saludan con un beso en la mejilla; los hombres suelen darse la mano.",
+     "Los chilenos suelen ser más reservados y formales que sus vecinos; trate de “usted” a los mayores.",
+     "La “once” (té, pan y queso al atardecer) es una tradición familiar importante; acepte si le invitan.",
+     "En Rapa Nui (Isla de Pascua) está prohibido tocar o subirse a los moáis y ahus; las multas son elevadas."
+    ],
+    "festivals": [
+     "Fiestas Patrias (18-19 de septiembre, con fondas)",
+     "Fiesta de La Tirana (julio, Tarapacá)",
+     "Tapati Rapa Nui (febrero, Isla de Pascua)"
+    ],
+    "lifestyle": "Una vida familiar y tranquila: asados el fin de semana, la once, escapadas entre cordillera y mar y una jerga muy propia (“po”, “cachai”)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional Torres del Paine",
+     "San Pedro de Atacama y el Valle de la Luna",
+     "Valparaíso (UNESCO)",
+     "Moáis de Isla de Pascua (Rapa Nui)",
+     "Región de los Lagos: Puerto Varas y volcán Osorno",
+     "Iglesias de madera de Chiloé"
+    ],
+    "bestSeasons": "Noviembre – marzo para la Patagonia y la región de los lagos; Atacama todo el año (noches muy frías); primavera y otoño para Santiago; esquí andino de junio a septiembre.",
+    "travelStyleTip": "Chile mide 4300 km: vuele entre el norte (Atacama) y el sur (Patagonia) y use buses en torno a Santiago. Reserve campings y refugios de Torres del Paine con meses de antelación."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~45-55 %, sin religión ~25-35 %, evangélicos ~15 % (aproximado, según encuestas y censo)",
+    "respectNorms": "Vista con sobriedad en las iglesias. En Rapa Nui los ahus y moáis son lugares sagrados de los ancestros; no salga de los senderos marcados.",
+    "sacredSites": [
+     "Iglesias de Chiloé (UNESCO)",
+     "Templo Votivo de Maipú (Santiago)",
+     "Ahu Tongariki (Rapa Nui)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Español (rápido y con mucho chilenismo); lenguas indígenas como el mapudungun, el aimara y el rapanui",
+    "englishProficiency": "Regular en Santiago y zonas turísticas; limitado en el resto.",
+    "phrases": [
+     {
+      "phrase": "¿Cachai?",
+      "meaning": "¿Entiendes? (chilenismo)",
+      "translation": "¿Entiendes? (chilenismo)",
+      "pronunciation": "KAH-chai"
+     },
+     {
+      "phrase": "Sí, po",
+      "meaning": "Sí, claro",
+      "translation": "Sí, claro",
+      "pronunciation": "SEE poh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Bacán!",
+      "meaning": "¡Genial! (chilenismo)",
+      "translation": "¡Genial! (chilenismo)",
+      "pronunciation": "bah-KAHN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "En tierra de pueblos originarios como los mapuches, aimaras y rapanui, Pedro de Valdivia fundó Santiago en 1541. Tras la Primera Junta Nacional de 1810, Chile se independizó en 1818 y anexó Isla de Pascua en 1888. Es una democracia desde 1990.",
+    "milestones": [
+     "1541: fundación de Santiago",
+     "1818: declaración de la independencia",
+     "1888: Isla de Pascua se incorpora a Chile",
+     "1990: retorno a la democracia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pastel de choclo",
+     "Empanada de pino",
+     "Curanto (Chiloé)"
+    ],
+    "traditionalDrinks": [
+     "Pisco sour (con alcohol)",
+     "Mote con huesillo",
+     "Vino carménère (con alcohol)"
+    ],
+    "streetFoodAndDesserts": [
+     "Completo",
+     "Sopaipillas",
+     "Leche asada"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pablo Neruda (poeta, premio Nobel)",
+     "Gabriela Mistral (primer Nobel de Literatura latinoamericano)",
+     "Violeta Parra (folclorista)"
+    ],
+    "strongSectors": [
+     "Minería del cobre (mayor productor mundial)",
+     "Litio",
+     "Exportación de fruta, vino y salmón"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La tarjeta y el pago sin contacto se aceptan casi en todas partes; poco efectivo basta para pueblos y ferias. Los hoteles no cobran el IVA del 19 % si paga con tarjeta extranjera y muestra pasaporte y registro de ingreso.",
+    "tippingCulture": "Los restaurantes sugieren un 10 % de propina y el garzón pregunta “¿Le incluyo la propina?”; es voluntaria pero se espera.",
+    "economicPillars": "Minería del cobre y litio, agricultura (fruta, vino), salmonicultura, servicios y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Chile de norte a sur: Atacama, Santiago, Valparaíso y Torres del Paine",
+   "routeSummary": "Una ruta de 10 días en avión desde Atacama, el desierto más árido del mundo, a la capital Santiago, el colorido puerto de Valparaíso y las torres de granito de Torres del Paine en la Patagonia.",
+   "totalDays": 10,
+   "idealDurationText": "Ruta de 10 días",
+   "bestSeason": "Noviembre – marzo",
+   "transportMode": "Vuelos nacionales (Calama – Santiago, Santiago – Punta Arenas/Puerto Natales) + bus Santiago – Valparaíso + excursiones o auto en la Patagonia",
+   "paceLevel": "Activo (naturaleza y ciudad)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: San Pedro de Atacama (desierto)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Valle de la Luna",
+      "Géiseres del Tatio",
+      "Salar de Atacama y flamencos de la Laguna Chaxa",
+      "Lagunas altiplánicas Miscanti y Miñiques"
+     ],
+     "activities": [
+      "Haga un tour astronómico bajo uno de los cielos más limpios del planeta.",
+      "Vea los géiseres del Tatio al amanecer (salida hacia las 4:30).",
+      "Contemple el atardecer en el Valle de la Luna."
+     ],
+     "foodAndDrinks": [
+      "Platos andinos con quínoa",
+      "Té de rica rica"
+     ],
+     "criticalTips": [
+      "San Pedro está a 2400 m y El Tatio a 4300 m; descanse el primer día y beba mucha agua.",
+      "De noche se baja de cero; lleve abrigo para los tours de madrugada."
+     ],
+     "mapsQuery": "San Pedro de Atacama, Chile"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Santiago",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Plaza de Armas y Catedral Metropolitana",
+      "Cerro San Cristóbal",
+      "Palacio de La Moneda",
+      "Lastarria y Bellavista (La Chascona de Neruda)"
+     ],
+     "activities": [
+      "Suba en funicular o teleférico al San Cristóbal para ver los Andes.",
+      "Haga un tour de viñas en el valle del Maipo o Casablanca.",
+      "Coma mariscos en el Mercado Central."
+     ],
+     "foodAndDrinks": [
+      "Pastel de choclo",
+      "Empanada de pino",
+      "Mote con huesillo"
+     ],
+     "criticalTips": [
+      "Compre la tarjeta bip! para metro y micros.",
+      "Cuide sus pertenencias en el Centro y Bellavista de noche."
+     ],
+     "mapsQuery": "Santiago, Chile"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Valparaíso",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Cerros Alegre y Concepción",
+      "Ascensores históricos",
+      "La Sebastiana (casa de Neruda)",
+      "Costanera de Viña del Mar"
+     ],
+     "activities": [
+      "Suba en el ascensor Reina Victoria o El Peral.",
+      "Haga un tour a pie de arte callejero.",
+      "Pasee al atardecer por la costanera de Viña del Mar."
+     ],
+     "foodAndDrinks": [
+      "Chorrillana",
+      "Empanadas de mariscos o queso"
+     ],
+     "criticalTips": [
+      "No salga de los cerros turísticos, sobre todo al anochecer.",
+      "Cuidado con los carteristas en el puerto y en las micros."
+     ],
+     "mapsQuery": "Valparaíso, Chile"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Puerto Natales y Torres del Paine",
+     "recommendedDuration": "4 Días",
+     "durationBadge": "4 Días",
+     "highlights": [
+      "Base de las Torres",
+      "Glaciar Grey",
+      "Lago Pehoé y Cuernos del Paine",
+      "Salto Grande"
+     ],
+     "activities": [
+      "Camine hasta la Base de las Torres (~20 km, exigente).",
+      "Navegue por el lago Grey hasta el glaciar.",
+      "Si tiene experiencia, haga el circuito W de varios días."
+     ],
+     "foodAndDrinks": [
+      "Cordero magallánico",
+      "Centolla",
+      "Calafate sour (con alcohol)"
+     ],
+     "criticalTips": [
+      "La entrada, los campings y refugios se reservan con antelación.",
+      "El viento puede ser muy fuerte; lleve ropa impermeable y cortaviento."
+     ],
+     "mapsQuery": "Torres del Paine, Magallanes, Chile"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pastel de choclo",
+     "Empanada de pino",
+     "Curanto"
+    ],
+    "drinks": [
+     "Pisco sour (con alcohol)",
+     "Mote con huesillo",
+     "Carménère (con alcohol)"
+    ],
+    "streetFoods": [
+     "Completo",
+     "Sopaipillas",
+     "Churros"
+    ],
+    "diningAdvice": "El almuerzo (13 – 15 h) es la comida principal y el menú del día la opción más barata. Aceptar la propina sugerida del 10 % es lo cortés."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo C/L (para enchufes Schuko)",
+     "Cortaviento, polar y gorro",
+     "Protector solar alto y lentes de sol",
+     "Botas de trekking impermeables"
+    ],
+    "safetyAndEtiquette": [
+     "En lugares concurridos lleve el celular y el bolso por delante.",
+     "Está prohibido hacer fuego en los parques nacionales; los incendios han dañado gravemente Torres del Paine."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes italianos tipo L de tres clavijas y tipo C de dos. Los europlugs finos (tipo C) suelen entrar, pero los Schuko (F) gruesos necesitan adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "En Santiago y las grandes ciudades el agua de la llave es potable, pero muy mineralizada y puede caer mal a estómagos sensibles. En Atacama prefiera agua embotellada.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, tres vírica)",
+     "Se recomienda hepatitis A",
+     "No se necesita vacuna contra la fiebre amarilla"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "131"
+   },
+   "tipping": {
+    "custom": "En restaurantes se sugiere un 10 % de propina en la cuenta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "La propina es voluntaria por ley; el garzón preguntará si la incluye. En taxis no se espera."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No en compras; exención del IVA del 19 % en hoteles",
+    "minSpend": "No aplica",
+    "customsNote": "Chile no tiene devolución general de IVA a turistas por compras. En hoteles, mostrando pasaporte y registro digital de ingreso (PDI) y pagando en divisas o con tarjeta extranjera, no se cobra el IVA del 19 %. En Iquique (ZOFRI) y Punta Arenas hay zonas francas comerciales."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto de Santiago son caros; compre un chip prepago en tiendas Entel o WOM o en supermercados, o configure una eSIM antes. Descargue mapas sin conexión para la Patagonia y Atacama."
+   },
+   "touristScams": [
+    {
+     "title": "El truco de la mancha",
+     "desc": "En el centro de Santiago le manchan y un cómplice “amable” se lleva su bolso o celular.",
+     "tip": "Rechace la ayuda, sujete sus cosas y entre a una tienda concurrida."
+    },
+    {
+     "title": "Taxis piratas en el aeropuerto",
+     "desc": "Quienes se le acercan en llegadas cobran varias veces la tarifa oficial.",
+     "tip": "Use los mesones oficiales de taxi/Transvip o apps."
+    },
+    {
+     "title": "Robo de celulares",
+     "desc": "Se arrebatan celulares en los cerros de Valparaíso, en el metro de Santiago y en mesas de cafés.",
+     "tip": "No deje el celular sobre la mesa y guárdelo apenas tome la foto."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Чилийское песо (CLP)",
+   "plugType": "Тип C, L (220V, 50Hz)",
+   "bestMonths": "Ноябрь – март (лето в Патагонии и озёрном крае); Атакама — круглый год; Сантьяго — сентябрь – ноябрь и март – май; лыжи — июнь – сентябрь",
+   "safety": {
+    "crimeRateSummary": "Безопаснее, чем в среднем по Латинской Америке, но в Сантьяго и Вальпараисо в последние годы выросло число грабежей, карманных краж и угонов машин. Чаще всего туристы сталкиваются с кражей телефонов и сумок в людных местах. Чили — зона землетрясений и цунами; обращайте внимание на знаки эвакуации на побережье.",
+    "commonScams": [
+     "В центре Сантьяго вас пачкают и, «помогая», крадут сумку",
+     "Нелегальные таксисты, зазывающие пассажиров в зоне прилёта аэропорта Сантьяго",
+     "Рывки телефонов и карманные кражи на холмах Вальпараисо и в метро Сантьяго"
+    ],
+    "safeTravelTips": [
+     "В Вальпараисо держитесь туристических холмов Серро-Алегре и Серро-Консепсьон и избегайте безлюдных лестниц ночью.",
+     "В аэропорту пользуйтесь только официальными стойками такси или трансфера (Transvip).",
+     "При землетрясении пригнитесь, укройтесь и держитесь; на побережье при угрозе цунами поднимайтесь на возвышенность."
+    ],
+    "emergencyNumbers": {
+     "police": "133",
+     "ambulance": "131",
+     "general": "133"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G/5G в городах; слабое покрытие в Патагонии, на Карретера-Аустраль и в высокогорной Атакаме",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Хорошо",
+    "bestCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хороший (современное разветвлённое метро Сантьяго; междугородние автобусы Turbus и Pullman; на дальние расстояния — рейсы LATAM, Sky и JetSMART)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "0.80 - 1 $ (метро Сантьяго, карта bip!)",
+    "dailyPassUsd": "Дневного билета нет; ~2 - 4 $ в день по bip!",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber, Cabify и DiDi распространены и недороги. Чёрно-жёлтые такси со счётчиком; в аэропорту заказывайте предоплаченное такси или Transvip у официальных стоек в терминале."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "90 - 150 $",
+    "budgetMealUsd": "8 - 14 $ (комплексный обед — menú del día)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 110 $ (без НДС 19% при оплате иностранной картой)",
+    "flightCostIndex": "Высокий (~20-24 ч с пересадкой)",
+    "flightTip": "Прямых рейсов из Турции нет; сравните стыковки в Сантьяго через Сан-Паулу, Мадрид или другие европейские хабы. Чили очень длинная, поэтому между севером и югом нужны внутренние рейсы (LATAM, Sky, JetSMART)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Женщины и знакомые здороваются поцелуем в щёку; мужчины обычно пожимают руки.",
+     "Чилийцы сдержаннее и формальнее соседей; к старшим обращайтесь на «устед».",
+     "«Онсе» ранним вечером (чай, хлеб и сыр) — важная семейная традиция; не отказывайтесь от приглашения.",
+     "На Рапа-Нуи (остров Пасхи) запрещено трогать статуи моаи и платформы аху или забираться на них — штрафы очень высокие."
+    ],
+    "festivals": [
+     "Фьестас Патриас (18-19 сентября, национальные праздники с ярмарками «фондас»)",
+     "Праздник Ла-Тирана (июль, Тарапака)",
+     "Тапати Рапа-Нуи (февраль, остров Пасхи)"
+    ],
+    "lifestyle": "Спокойная семейная жизнь: асадо по выходным, вечерний «онсе», короткие поездки между горами и морем и особый сленг («по», «качай»)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Национальный парк Торрес-дель-Пайне",
+     "Сан-Педро-де-Атакама и Лунная долина",
+     "Вальпараисо (ЮНЕСКО)",
+     "Моаи острова Пасхи (Рапа-Нуи)",
+     "Озёрный край: Пуэрто-Варас и вулкан Осорно",
+     "Деревянные церкви Чилоэ"
+    ],
+    "bestSeasons": "Ноябрь – март — Патагония и озёрный край; Атакама — круглый год (очень холодные ночи); Сантьяго — весной и осенью; горные лыжи в Андах — июнь – сентябрь.",
+    "travelStyleTip": "Чили тянется на 4300 км: между севером (Атакама) и югом (Патагония) летайте, вокруг Сантьяго ездите на автобусах. Кемпинги и приюты в Торрес-дель-Пайне бронируйте за месяцы."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~45-55%, неверующие ~25-35%, евангелисты ~15% (приблизительно, по опросам и переписи)",
+    "respectNorms": "В церквях одевайтесь скромно. На Рапа-Нуи аху и моаи — священные места предков; не сходите с отмеченных троп.",
+    "sacredSites": [
+     "Церкви Чилоэ (ЮНЕСКО)",
+     "Национальное святилище Майпу (Темпло-Вотиво, Сантьяго)",
+     "Аху Тонгарики (Рапа-Нуи)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Испанский (быстрый, со множеством чилийских словечек); языки коренных народов — мапудунгун, аймара, рапануи",
+    "englishProficiency": "Средний в Сантьяго и туристических местах, в остальных — слабый.",
+    "phrases": [
+     {
+      "phrase": "¿Cachai?",
+      "meaning": "Понимаешь? (чилийский сленг)",
+      "translation": "Понимаешь? (чилийский сленг)",
+      "pronunciation": "KAH-chai"
+     },
+     {
+      "phrase": "Sí, po",
+      "meaning": "Да, конечно",
+      "translation": "Да, конечно",
+      "pronunciation": "SEE poh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Bacán!",
+      "meaning": "Круто! (чилийский сленг)",
+      "translation": "Круто! (чилийский сленг)",
+      "pronunciation": "bah-KAHN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "На земле коренных народов — мапуче, аймара и рапануи — Педро де Вальдивия в 1541 г. основал Сантьяго. После первой национальной хунты 1810 г. Чили получила независимость в 1818 г., а в 1888 г. присоединила остров Пасхи. С 1990 г. страна — демократия.",
+    "milestones": [
+     "1541: основание Сантьяго",
+     "1818: провозглашение независимости",
+     "1888: остров Пасхи входит в состав Чили",
+     "1990: возвращение к демократии"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пастель де чокло (запеканка с мясом под кукурузным пюре)",
+     "Эмпанада де пино (пирожок с фаршем, луком, яйцом и оливкой)",
+     "Куранто (морепродукты и мясо, запечённые в яме, Чилоэ)"
+    ],
+    "traditionalDrinks": [
+     "Писко сауэр (алкогольный)",
+     "Моте кон уэсильо (напиток с пшеницей и сушёным персиком)",
+     "Вино карменер (алкогольное)"
+    ],
+    "streetFoodAndDesserts": [
+     "Комплето (хот-дог с авокадо)",
+     "Сопайпильяс (жареные лепёшки из тыквенного теста)",
+     "Лече асада (запечённый молочный десерт)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Пабло Неруда (поэт, нобелевский лауреат)",
+     "Габриэла Мистраль (первая Нобелевская премия по литературе в Латинской Америке)",
+     "Виолета Парра (фолк-музыкант)"
+    ],
+    "strongSectors": [
+     "Добыча меди (крупнейший производитель в мире)",
+     "Литий",
+     "Экспорт фруктов, вина и лосося"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата принимаются почти везде; для маленьких городков и рынков хватит немного наличных. Отели не берут НДС 19%, если платить иностранной картой и предъявить паспорт и запись о въезде.",
+    "tippingCulture": "В ресторанах предлагают 10% «пропина сухерида», официант спросит «¿Le incluyo la propina?»; по закону это добровольно, но ожидается.",
+    "economicPillars": "Добыча меди и лития, сельское хозяйство (фрукты, вино), разведение лосося, услуги и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Чили с севера на юг: Атакама, Сантьяго, Вальпараисо и Торрес-дель-Пайне",
+   "routeSummary": "10-дневный маршрут с перелётами: от Атакамы, самой сухой пустыни мира, к столице Сантьяго, яркому порту Вальпараисо и гранитным башням Торрес-дель-Пайне в Патагонии.",
+   "totalDays": 10,
+   "idealDurationText": "Маршрут на 10 дней",
+   "bestSeason": "Ноябрь – март",
+   "transportMode": "Внутренние рейсы (Калама – Сантьяго, Сантьяго – Пунта-Аренас/Пуэрто-Наталес) + автобус Сантьяго – Вальпараисо + туры или аренда авто в Патагонии",
+   "paceLevel": "Активный (природа и город)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Сан-Педро-де-Атакама (пустыня)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Лунная долина",
+      "Гейзеры Эль-Татио",
+      "Солончак Атакама и фламинго лагуны Чакса",
+      "Высокогорные лагуны Мисканти и Миньикес"
+     ],
+     "activities": [
+      "Сходите на астрономическую экскурсию под одним из самых чистых небес на Земле.",
+      "Посмотрите гейзеры Эль-Татио на рассвете (выезд около 4:30).",
+      "Встретьте закат в Лунной долине."
+     ],
+     "foodAndDrinks": [
+      "Андские блюда из киноа",
+      "Чай из рика-рика (местная пустынная трава)"
+     ],
+     "criticalTips": [
+      "Сан-Педро на высоте 2400 м, Эль-Татио — 4300 м; в первый день отдыхайте и пейте больше воды.",
+      "Ночью ниже нуля — на ранние туры берите тёплую куртку."
+     ],
+     "mapsQuery": "San Pedro de Atacama, Chile"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Сантьяго",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Пласа-де-Армас и кафедральный собор",
+      "Холм Сан-Кристобаль",
+      "Дворец Ла-Монеда",
+      "Районы Ластаррия и Бельявиста (дом Неруды «Ла-Часкона»)"
+     ],
+     "activities": [
+      "Поднимитесь на фуникулёре или канатке на Сан-Кристобаль ради вида на Анды.",
+      "Съездите на винодельни долины Майпо или Касабланка.",
+      "Поешьте морепродукты на Центральном рынке."
+     ],
+     "foodAndDrinks": [
+      "Пастель де чокло",
+      "Эмпанада де пино",
+      "Моте кон уэсильо"
+     ],
+     "criticalTips": [
+      "Купите карту bip! для метро и автобусов.",
+      "Ночью в Центре и Бельявисте следите за вещами."
+     ],
+     "mapsQuery": "Santiago, Chile"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Вальпараисо",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Холмы Серро-Алегре и Серро-Консепсьон",
+      "Исторические фуникулёры (асенсорес)",
+      "Ла-Себастьяна (дом Неруды)",
+      "Набережная Винья-дель-Мар"
+     ],
+     "activities": [
+      "Прокатитесь на фуникулёре Рейна-Виктория или Эль-Перал.",
+      "Сходите на пешеходную экскурсию по стрит-арту.",
+      "Ближе к вечеру прогуляйтесь по набережной Винья-дель-Мар."
+     ],
+     "foodAndDrinks": [
+      "Чорильяна (картофель с мясом, луком и яйцом)",
+      "Эмпанадас с морепродуктами или сыром"
+     ],
+     "criticalTips": [
+      "Не уходите с туристических холмов, особенно вечером.",
+      "Остерегайтесь карманников у порта и в автобусах."
+     ],
+     "mapsQuery": "Valparaíso, Chile"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Пуэрто-Наталес и Торрес-дель-Пайне",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Подножие башен (Base de las Torres)",
+      "Ледник Грей",
+      "Озеро Пеоэ и Куэрнос-дель-Пайне",
+      "Водопад Сальто-Гранде"
+     ],
+     "activities": [
+      "Пройдите к подножию башен (~20 км, тяжёлый однодневный поход).",
+      "Сплавайте по озеру Грей к леднику.",
+      "Если есть опыт — пройдите многодневный маршрут «W»."
+     ],
+     "foodAndDrinks": [
+      "Магелланов ягнёнок",
+      "Сентолья (королевский краб)",
+      "Калафате сауэр (алкогольный)"
+     ],
+     "criticalTips": [
+      "Вход в парк, кемпинги и приюты нужно бронировать заранее.",
+      "Ветер бывает очень сильным — берите непромокаемую и ветрозащитную одежду."
+     ],
+     "mapsQuery": "Torres del Paine, Magallanes, Chile"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Пастель де чокло",
+     "Эмпанада де пино",
+     "Куранто"
+    ],
+    "drinks": [
+     "Писко сауэр (алкогольный)",
+     "Моте кон уэсильо",
+     "Карменер (алкогольный)"
+    ],
+    "streetFoods": [
+     "Комплето",
+     "Сопайпильяс",
+     "Чуррос"
+    ],
+    "diningAdvice": "Обед (13:00 – 15:00) — главный приём пищи, а «меню дня» — самый выгодный вариант. Принимать предложенные 10% чаевых — вежливо."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник C/L (для вилок Schuko)",
+     "Ветровка, флиска и шапка",
+     "Крем с высоким SPF и солнцезащитные очки",
+     "Непромокаемые треккинговые ботинки"
+    ],
+    "safetyAndEtiquette": [
+     "В людных местах держите телефон и сумку перед собой.",
+     "Разводить огонь в нацпарках запрещено — пожары нанесли Торрес-дель-Пайне большой ущерб."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Итальянские трёхконтактные розетки типа L и двухконтактные типа C. Тонкие европейские вилки (тип C) обычно подходят, а для толстых Schuko (F) нужен переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Сантьяго и крупных городах воду из-под крана можно пить, но она сильно минерализована и может не подойти чувствительному желудку. В Атакаме лучше бутилированная.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь-краснуха-паротит)",
+     "Рекомендуется прививка от гепатита A",
+     "Прививка от жёлтой лихорадки не нужна"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "131"
+   },
+   "tipping": {
+    "custom": "В ресторанах к счёту предлагают 10% чаевых.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "По закону чаевые добровольны — официант спросит, добавить ли их. Таксистам не оставляют."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет для покупок; освобождение от IVA 19% за проживание в отеле",
+    "minSpend": "Не применяется",
+    "customsNote": "В Чили нет общего возврата НДС туристам за покупки. В отелях при предъявлении паспорта и электронной записи о въезде (PDI) и оплате валютой или иностранной картой IVA 19% не взимается. В Икике (ZOFRI) и Пунта-Аренасе есть торговые свободные зоны."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "0.50 - 1.50 $",
+    "topCarriers": [
+     "Entel",
+     "Movistar",
+     "Claro",
+     "WOM"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту Сантьяго дорогие; купите предоплаченную SIM в городе в салонах Entel или WOM либо в супермаркете, или заранее установите eSIM. Для Патагонии и Атакамы скачайте офлайн-карты."
+   },
+   "touristScams": [
+    {
+     "title": "Трюк с пятном",
+     "desc": "В центре Сантьяго вас обливают, а «помогающий» сообщник забирает сумку или телефон.",
+     "tip": "Откажитесь от помощи, держите вещи и зайдите в людный магазин."
+    },
+    {
+     "title": "Нелегальные такси в аэропорту",
+     "desc": "Зазывалы в зоне прилёта берут в несколько раз больше официального тарифа.",
+     "tip": "Пользуйтесь официальными стойками такси/Transvip или приложениями."
+    },
+    {
+     "title": "Рывки телефонов",
+     "desc": "Телефоны выхватывают на холмах Вальпараисо, в метро Сантьяго и со столиков кафе.",
+     "tip": "Не оставляйте телефон на столе и сразу убирайте после съёмки."
+    }
+   ]
+  }
+ }
+}

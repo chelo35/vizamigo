@@ -326,6 +326,66 @@
      "Kayalık kenarlarında selfie çekmeyin; zemin aniden çökebilir."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu tüm ülkede içilebilir ve denetlenir; Algarve gibi bölgelerde kireç oranı yüksek olduğundan tadı farklı gelebilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir; restoranlarda %5–10 veya hesabı yuvarlamak yeterlidir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Kafelerde birkaç bozuk para bırakmak yaygındır; taksilerde hesabı yuvarlayın."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%23 KDV (anakara; Madeira %22, Azorlar %16)",
+    "minSpend": "Fatura başına ~61,50 €",
+    "customsNote": "AB dışında yaşayanlar mağazadan Tax Free formu alır; ürünleri kullanılmamış hâlde AB’den çıkarken Lizbon, Porto veya Faro havalimanında check-in öncesi e-Taxfree kioskunda veya gümrükte onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.50",
+    "topCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki turist SIM stantları şehirdeki mağazalardan pahalıdır; MEO, NOS, Vodafone veya ucuz DIGI hatlarını şehirde pasaportla alın ya da önceden eSIM kurun. Türk hatlarında AB roaming paketi yoktur."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte uyuşturucu satıcıları",
+     "desc": "Baixa ve Bairro Alto’da turistlere sahte uyuşturucu satmaya çalışan sokak satıcıları.",
+     "tip": "Hiç muhatap olmayın, durmadan yürümeye devam edin; uyuşturucu satın almak yasa dışıdır."
+    },
+    {
+     "title": "Couvert ücreti",
+     "desc": "İstemediğiniz halde masaya konan ekmek, zeytin ve peynirin hesaba eklenmesi.",
+     "tip": "İstemiyorsanız dokunmadan geri gönderin; dokunduğunuz couvert ücretlidir."
+    },
+    {
+     "title": "Bağımsız ATM’ler",
+     "desc": "Euronet gibi bağımsız ATM’lerin yüksek ücret ve dinamik kur dönüşümü uygulaması.",
+     "tip": "Multibanco logolu banka ATM’lerini kullanın ve “euro olarak” işlem seçin."
+    }
+   ]
   }
  },
  "en": {
@@ -655,6 +715,66 @@
      "Don’t take selfies at cliff edges; the ground can give way suddenly."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable and monitored nationwide; in areas such as the Algarve it is hard and may taste different.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Tipping isn’t mandatory; 5–10% or rounding up in restaurants is enough.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Leaving a few coins in cafés is common; round up in taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "23% VAT (mainland; Madeira 22%, Azores 16%)",
+    "minSpend": "~EUR 61.50 per invoice",
+    "customsNote": "Non-EU residents get a Tax Free form at the store; have the unused goods validated at an e-Taxfree kiosk or customs at Lisbon, Porto or Faro airport before check-in when leaving the EU."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.50",
+    "topCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "airportSimTrapWarning": "Tourist SIM stands at the airport cost more than town shops; buy MEO, NOS, Vodafone or cheap DIGI SIMs in town with your passport, or install an eSIM in advance. Turkish SIMs have no EU roaming deal."
+   },
+   "touristScams": [
+    {
+     "title": "Fake drug sellers",
+     "desc": "Street sellers in Baixa and Bairro Alto offer tourists fake drugs.",
+     "tip": "Do not engage and keep walking; buying drugs is illegal."
+    },
+    {
+     "title": "Couvert charge",
+     "desc": "Unrequested bread, olives and cheese (couvert) are placed on the table and then charged.",
+     "tip": "Send them back untouched if you do not want them; any couvert you touch is charged."
+    },
+    {
+     "title": "Independent ATMs",
+     "desc": "Independent ATMs such as Euronet charge high fees and dynamic currency conversion.",
+     "tip": "Use bank ATMs with the Multibanco logo and choose to be charged in euros."
+    }
+   ]
   }
  },
  "de": {
@@ -984,6 +1104,66 @@
      "Keine Selfies an Klippenrändern; der Boden kann nachgeben."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist landesweit trinkbar und kontrolliert; in Regionen wie der Algarve ist es kalkhaltig und schmeckt anders.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht; 5–10 % oder Aufrunden im Restaurant reichen.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "In Cafés lässt man ein paar Münzen liegen; im Taxi aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "23 % MwSt. (Festland; Madeira 22 %, Azoren 16 %)",
+    "minSpend": "~61,50 € pro Rechnung",
+    "customsNote": "Nicht-EU-Bürger erhalten im Geschäft ein Tax-Free-Formular; die unbenutzten Waren bei der Ausreise aus der EU vor dem Check-in an einem e-Taxfree-Kiosk oder beim Zoll in Lissabon, Porto oder Faro bestätigen lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.50",
+    "topCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "airportSimTrapWarning": "Touristen-SIM-Stände am Flughafen sind teurer als Läden in der Stadt; MEO-, NOS-, Vodafone- oder günstige DIGI-SIMs mit Pass in der Stadt kaufen oder vorab eine eSIM installieren. Türkische SIMs haben kein EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Drogenverkäufer",
+     "desc": "Straßenverkäufer in Baixa und Bairro Alto bieten Touristen gefälschte Drogen an.",
+     "tip": "Nicht darauf eingehen und weitergehen; Drogenkauf ist illegal."
+    },
+    {
+     "title": "Couvert-Gebühr",
+     "desc": "Ungefragt gebrachtes Brot, Oliven und Käse (Couvert) werden berechnet.",
+     "tip": "Unberührt zurückgeben, wenn Sie es nicht möchten; angerührtes Couvert wird berechnet."
+    },
+    {
+     "title": "Unabhängige Geldautomaten",
+     "desc": "Unabhängige Automaten wie Euronet verlangen hohe Gebühren und Währungsumrechnung.",
+     "tip": "Bankautomaten mit Multibanco-Logo nutzen und in Euro abrechnen lassen."
+    }
+   ]
   }
  },
  "es": {
@@ -1313,6 +1493,66 @@
      "No se haga selfis al borde de los acantilados; el terreno puede ceder."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable y está controlada en todo el país; en zonas como el Algarve es dura y puede saber distinto.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria; en restaurantes basta un 5–10 % o redondear.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "En cafés es habitual dejar unas monedas; en taxis, redondee."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 23 % (continente; Madeira 22 %, Azores 16 %)",
+    "minSpend": "~61,50 € por factura",
+    "customsNote": "Los residentes fuera de la UE reciben en la tienda un formulario Tax Free; haga validar los productos sin usar en un quiosco e-Taxfree o en aduana de los aeropuertos de Lisboa, Oporto o Faro antes de facturar al salir de la UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.50",
+    "topCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "airportSimTrapWarning": "Los puestos de SIM turísticas del aeropuerto son más caros que las tiendas de la ciudad; compre SIM de MEO, NOS, Vodafone o la barata DIGI con pasaporte en la ciudad, o instale una eSIM antes. Las SIM turcas no tienen roaming de la UE."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos vendedores de drogas",
+     "desc": "Vendedores callejeros en Baixa y Bairro Alto ofrecen a turistas drogas falsas.",
+     "tip": "No entre en conversación y siga caminando; comprar drogas es ilegal."
+    },
+    {
+     "title": "Cargo del couvert",
+     "desc": "Pan, aceitunas y queso (couvert) no pedidos se ponen en la mesa y luego se cobran.",
+     "tip": "Devuélvalos sin tocar si no los quiere; el couvert que toque se cobra."
+    },
+    {
+     "title": "Cajeros independientes",
+     "desc": "Cajeros independientes como Euronet cobran comisiones altas y conversión dinámica.",
+     "tip": "Use cajeros de bancos con el logo Multibanco y elija el cargo en euros."
+    }
+   ]
   }
  },
  "ru": {
@@ -1642,6 +1882,66 @@
      "Не делайте селфи на краю скал — грунт может обвалиться."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода пригодна для питья и контролируется по всей стране; в таких регионах, как Алгарве, она жёсткая и может отличаться на вкус.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны; в ресторане достаточно 5–10 % или округления.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "В кафе принято оставлять несколько монет; в такси округляйте сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 23 % (континент; Мадейра 22 %, Азоры 16 %)",
+    "minSpend": "~61,50 € на счёт",
+    "customsNote": "Жители стран вне ЕС получают в магазине форму Tax Free; при выезде из ЕС до регистрации на рейс заверьте неиспользованные товары в киоске e-Taxfree или на таможне в аэропортах Лиссабона, Порту или Фару."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.80 - $2.50",
+    "topCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "airportSimTrapWarning": "Стойки с туристическими SIM в аэропорту дороже городских салонов; купите SIM MEO, NOS, Vodafone или дешёвую DIGI в городе по паспорту либо заранее установите eSIM. У турецких SIM нет роуминга по тарифам ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Продавцы поддельных наркотиков",
+     "desc": "Уличные продавцы в Байше и Байру-Алту предлагают туристам поддельные наркотики.",
+     "tip": "Не вступайте в разговор и идите дальше; покупка наркотиков незаконна."
+    },
+    {
+     "title": "Плата за кувер",
+     "desc": "Незаказанные хлеб, оливки и сыр (couvert) ставят на стол, а затем включают в счёт.",
+     "tip": "Если не хотите, верните нетронутым; тронутый кувер оплачивается."
+    },
+    {
+     "title": "Независимые банкоматы",
+     "desc": "Независимые банкоматы вроде Euronet берут высокие комиссии и навязывают конвертацию.",
+     "tip": "Пользуйтесь банкоматами банков с логотипом Multibanco и выбирайте списание в евро."
+    }
+   ]
   }
  }
 }

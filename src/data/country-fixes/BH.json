@@ -1,0 +1,1777 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Bahreyn Dinarı (BHD)",
+   "plugType": "Tip G (230V, 50Hz)",
+   "bestMonths": "Kasım – Mart (ılık ve kuru) · Haziran – Eylül çok sıcak ve nemli; Formula 1 Bahreyn Grand Prix’i genellikle ilkbaharda yapılır",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Suç oranı düşüktür ve turistler için şiddet olayları nadirdir. Bazı köylerde dönemsel gösteriler yaşanabilir; bunlardan uzak durun. Bölgesel gerginlikler nedeniyle güncel resmî uyarıları takip edin.",
+    "commonScams": [
+     "Taksimetresiz taksilerde yabancıya yüksek fiyat söylenmesi",
+     "Sahte kargo/teslimat SMS’leriyle kart bilgisi istenmesi",
+     "Gece mekânlarında menüde olmayan ek ücretler"
+    ],
+    "safeTravelTips": [
+     "Gösterilerden ve kalabalık siyasi toplantılardan uzak durun.",
+     "Yaz aylarında öğle saatlerinde dışarıda kalmayın ve bol su için.",
+     "Kamuda muhafazakâr giyinin; Ramazan’da gündüz açıkta yiyip içmeyin."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 nüfus (4G / 5G)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Çok iyi (Batelco, Zain ve stc eSIM sunar)",
+    "bestCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (Bahrain Bus ağı düzenli ama sınırlı; taksi ve Careem yaygın)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Günlük otobüs kartı ~2 - 3 $",
+    "popularRideApps": [
+     "Careem"
+    ],
+    "taxiAdvice": "Careem güvenilir ve sabit fiyatlıdır; sokak taksisinde taksimetre isteyin. Ada küçük olduğu için araç kiralayarak her yere 30-40 dakikada ulaşılabilir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.80 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Orta (İstanbul – Bahreyn direkt THY ve Gulf Air, ~4 saat)",
+    "flightTip": "THY ve Gulf Air İstanbul – Bahreyn arasında direkt uçar; F1 haftasında uçuş ve otel fiyatları çok yükselir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma uzun ve samimidir; hâl hatır sormak önemlidir.",
+     "Karşı cinsle tokalaşmak için karşı tarafın el uzatmasını bekleyin.",
+     "Kahve (gahwa) ikramını kabul edin; yeterince içince fincanı sallayın.",
+     "Kamuda omuz ve dizleri örtün; kutsal mekânlarda kadınlar başını örter."
+    ],
+    "festivals": [
+     "Formula 1 Bahreyn Grand Prix’i (ilkbahar)",
+     "Ulusal Gün (16–17 Aralık)",
+     "Kültür Baharı Festivali (Şubat – Nisan)"
+    ],
+    "lifestyle": "Bahreyn, Körfez’in en rahat atmosferli ülkelerindendir; hafta sonu Cuma–Cumartesi’dir ve Suudi Arabistan’dan Kral Fahd Köprüsü ile gelen ziyaretçilerle hareketlenir. Kafe, AVM ve sahil kulübü kültürü yaygındır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bahreyn Kalesi – Kal’at el-Bahreyn (UNESCO)",
+     "İnci Yolu, Muharrak (UNESCO)",
+     "Dilmun mezar tümülüsleri (UNESCO)",
+     "El-Fatih Ulu Camii",
+     "Bahreyn Ulusal Müzesi",
+     "Bab el-Bahreyn ve Manama Çarşısı"
+    ],
+    "bestSeasons": "Kasım – Mart (ılık ve kuru) · Haziran – Eylül çok sıcak ve nemli; Formula 1 Bahreyn Grand Prix’i genellikle ilkbaharda yapılır",
+    "travelStyleTip": "Bahreyn’i 2-3 günlük bir mola olarak planlayın; kış aylarında gidin ve Dilmun dönemi alanlarını tek bir günde gezin."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%70; Şii ve Sünni), Hristiyanlık (~%14), Hinduizm (~%10) ve diğerleri",
+    "respectNorms": "El-Fatih Ulu Camii ziyaretçilere açıktır ve kadınlara abaya verilir; namaz saatlerinde ziyaret yapılmaz.",
+    "sacredSites": [
+     "El-Fatih Ulu Camii (Manama)",
+     "Kutsal Kalp Kilisesi (Manama, 1939)",
+     "Arabistan Meryem Ana Katedrali (Avali)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arapça resmî dildir; İngilizce çok yaygındır, ayrıca Farsça, Urduca ve Hint dilleri konuşulur.",
+    "englishProficiency": "Çok iyi; iş hayatı, turizm ve tabelalarda İngilizce kullanılır.",
+    "phrases": [
+     {
+      "phrase": "أهلاً وسهلاً (ahlan wa sahlan)",
+      "meaning": "Hoş geldiniz",
+      "translation": "Hoş geldiniz",
+      "pronunciation": "ah-lan-wa-sah-lan"
+     },
+     {
+      "phrase": "شخبارك؟ (shakhbārak?)",
+      "meaning": "Ne haber? / Nasılsın? (Körfez lehçesi)",
+      "translation": "Ne haber? / Nasılsın? (Körfez lehçesi)",
+      "pronunciation": "shah-ba-rak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Sağ ol / Teşekkürler",
+      "translation": "Sağ ol / Teşekkürler",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بكم؟ (bikam?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "bi-kam"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "Kolay gelsin / Emeğine sağlık",
+      "translation": "Kolay gelsin / Emeğine sağlık",
+      "pronunciation": "ya-tik el-af-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bahreyn, Mezopotamya ile İndus arasında ticaret yapan antik Dilmun uygarlığının merkeziydi; Yunanlılar ona Tylos dedi. 1521–1602 arasında Portekiz yönetiminde kaldı; Al Halife ailesi 1783’ten beri yönetimdedir. 1932’de Arap Yarımadası’nın Körfez kıyısındaki ilk petrol burada bulundu ve 1971’de bağımsızlık kazanıldı.",
+    "milestones": [
+     "MÖ ~2000: Dilmun uygarlığının parlak dönemi",
+     "1783: Al Halife ailesinin yönetimi başladı",
+     "1932: Petrolün keşfi",
+     "1971: Bağımsızlık"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mecbus (baharatlı pilav üstü et veya balık; milli yemek)",
+     "Muhammar (hurma pekmezli tatlı pilav, balıkla)",
+     "Harees (buğday ve et lapası)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (kakuleli Arap kahvesi)",
+     "Karak çay",
+     "Laban (ayran)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bahreyn helvası (Şuveyter usulü)",
+     "Lokaimat (şuruplu hamur topları)",
+     "Sambusa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "İbrahim el-Arayyed (şair)",
+     "Raşid el-Oraifi (ressam, Dilmun temalı eserleri)",
+     "Ali Bahar (şarkıcı, El-Ekhwa grubu)"
+    ],
+    "strongSectors": [
+     "Petrol ve alüminyum (Alba, dünyanın en büyük izabe tesislerinden)",
+     "Bankacılık ve İslami finans",
+     "Turizm ve etkinlikler (Formula 1)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme neredeyse her yerde geçer; çarşılar ve küçük lokantalar için az miktarda nakit dinar taşıyın.",
+    "tippingCulture": "Bahşiş zorunlu değildir; otel ve restoranlarda servis ücreti çoğu zaman eklenir, yoksa %10 takdir edilir.",
+    "economicPillars": "Petrol ve gaz, alüminyum, finans ve bankacılık, turizm, lojistik."
+   }
+  },
+  "itin": {
+   "routeName": "Bahreyn Molası: Muharrak, Manama ve Dilmun Mirası",
+   "routeSummary": "Muharrak’ın UNESCO korumalı İnci Yolu’ndan Manama’nın çarşı ve müzelerine, ardından Bahreyn Kalesi, Dilmun tümülüsleri ve çöldeki Hayat Ağacı’na uzanan 3 günlük rota.",
+   "totalDays": 3,
+   "idealDurationText": "3 günlük rota",
+   "bestSeason": "Kasım – Mart (ılık ve kuru) · Haziran – Eylül çok sıcak ve nemli; Formula 1 Bahreyn Grand Prix’i genellikle ilkbaharda yapılır",
+   "transportMode": "Careem/taksi veya kiralık araç (ada küçük, mesafeler kısa)",
+   "paceLevel": "Sakin (kısa mola)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Muharrak (İnci Yolu)",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "İnci Yolu (UNESCO; inci ticareti dönemi evleri)",
+      "Şeyh İsa bin Ali Evi",
+      "Muharrak Çarşısı",
+      "Bin Matar Evi"
+     ],
+     "activities": [
+      "İnci Yolu boyunca restore edilmiş tüccar evlerini gezin.",
+      "Muharrak çarşısında Bahreyn helvası tadın.",
+      "Akşam eski evlerdeki kafelerde karak çay için."
+     ],
+     "foodAndDrinks": [
+      "Muhammar ve balık",
+      "Bahreyn helvası"
+     ],
+     "criticalTips": [
+      "İnci Yolu durakları farklı saatlerde açılır; programı önceden kontrol edin.",
+      "Yazın sabah erken veya akşamüstü gezin."
+     ],
+     "mapsQuery": "Pearling Path, Muharraq, Bahrain"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Manama",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Bab el-Bahreyn ve Manama Çarşısı",
+      "Bahreyn Ulusal Müzesi",
+      "El-Fatih Ulu Camii",
+      "Bahreyn Dünya Ticaret Merkezi silueti"
+     ],
+     "activities": [
+      "El-Fatih Ulu Camii’nde rehberli turla mimariyi öğrenin.",
+      "Ulusal Müze’de Dilmun eserlerini görün.",
+      "Akşam Bab el-Bahreyn çarşısında baharat ve altın dükkânlarını dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Mecbus",
+      "Sambusa ve taze meyve suyu"
+     ],
+     "criticalTips": [
+      "Camide kıyafet kurallarına uyun ve namaz saatlerinden kaçının.",
+      "Çarşıda pazarlık normaldir."
+     ],
+     "mapsQuery": "Bab Al Bahrain, Manama, Bahrain"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Bahreyn Kalesi ve Güney",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Kal’at el-Bahreyn (UNESCO) ve site müzesi",
+      "A’ali Dilmun mezar tümülüsleri (UNESCO)",
+      "Hayat Ağacı (çölde 400 yıllık ağaç)",
+      "Bahreyn Uluslararası Pisti (Sakhir)"
+     ],
+     "activities": [
+      "Gün batımında Bahreyn Kalesi’nde yürüyün.",
+      "A’ali’deki binlerce yıllık mezar tümülüslerini görün.",
+      "Sakhir’deki F1 pistinde tur veya sürüş deneyimi yapın."
+     ],
+     "foodAndDrinks": [
+      "Kale kafesinde kahve ve hurma",
+      "Lokaimat"
+     ],
+     "criticalTips": [
+      "Hayat Ağacı’na giderken yanınızda su bulundurun; çevrede tesis azdır.",
+      "F1 haftası dışında pist turlarını önceden rezerve edin."
+     ],
+     "mapsQuery": "Qal'at al-Bahrain, Bahrain"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mecbus (baharatlı pilav üstü et veya balık; milli yemek)",
+     "Muhammar (hurma pekmezli tatlı pilav, balıkla)",
+     "Harees (buğday ve et lapası)"
+    ],
+    "drinks": [
+     "Gahwa (kakuleli Arap kahvesi)",
+     "Karak çay",
+     "Laban (ayran)"
+    ],
+    "streetFoods": [
+     "Bahreyn helvası (Şuveyter usulü)",
+     "Lokaimat (şuruplu hamur topları)",
+     "Sambusa"
+    ],
+    "diningAdvice": "Bahreyn’de alkol otel ve lisanslı mekânlarda bulunur; geleneksel restoranlarda mecbus paylaşımlı büyük tabaklarda servis edilir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi adaptör",
+     "Güneş kremi, şapka ve su",
+     "Omuz ve dizi örten kıyafet",
+     "Cami ziyareti için kadınlara başörtüsü"
+    ],
+    "safetyAndEtiquette": [
+     "Gösterilerden uzak durun.",
+     "Kamuda muhafazakâr giyinin.",
+     "Devlet ve güvenlik binalarını fotoğraflamayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G prizi (üç dikdörtgen pim) kullanılır; Türk fişleri için adaptör gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu arıtılmış deniz suyudur; tadı ve depolar nedeniyle şişe su tercih edilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, kızamık)",
+     "Hepatit A (önerilir)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Zorunlu değildir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Servis ücreti yoksa restoranlarda %10 takdir edilir; taksilerde yuvarlama yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%10 KDV (turist iadesi yaygın değil)",
+    "minSpend": "Mağazaya sorun",
+    "customsNote": "Uyuşturucuya sıfır tolerans vardır; bazı reçeteli ilaçlar için reçete taşıyın. İnci ve altın alırken sertifika ve fatura isteyin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "airportSimTrapWarning": "Havalimanında Batelco, Zain ve stc kiosklarında pasaportla turist SIM’i alınır; eSIM de kolayca kurulur."
+   },
+   "touristScams": [
+    {
+     "title": "Taksimetresiz taksi",
+     "desc": "Bazı taksiler yabancıya taksimetre açmadan yüksek fiyat söyler.",
+     "tip": "Careem kullanın veya taksimetre isteyin."
+    },
+    {
+     "title": "Sahte teslimat SMS’i",
+     "desc": "Kargo veya gümrük kılığında kart bilgisi isteyen mesajlar gelir.",
+     "tip": "Bağlantılara tıklamayın."
+    },
+    {
+     "title": "Gece mekânı ek ücretleri",
+     "desc": "Menüde olmayan masa veya servis ücretleri hesaba eklenir.",
+     "tip": "Fiyatları önceden sorun ve hesabı kontrol edin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Bahraini Dinar (BHD)",
+   "plugType": "Type G (230V, 50Hz)",
+   "bestMonths": "November – March (mild and dry) · June – September very hot and humid; the Formula 1 Bahrain Grand Prix is usually held in spring",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Crime is low and violent incidents involving tourists are rare. Periodic demonstrations can occur in some villages; stay away from them. Follow current official advisories due to regional tensions.",
+    "commonScams": [
+     "Meterless taxis quoting foreigners high fares",
+     "Fake parcel/delivery text messages asking for card details",
+     "Unlisted extra charges in nightlife venues"
+    ],
+    "safeTravelTips": [
+     "Stay away from demonstrations and crowded political gatherings.",
+     "In summer stay indoors at midday and drink plenty of water.",
+     "Dress conservatively in public; don’t eat or drink in public by day during Ramadan."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% of population (4G / 5G)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Very good (Batelco, Zain and stc offer eSIM)",
+    "bestCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (the Bahrain Bus network is regular but limited; taxis and Careem are common)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Daily bus card ~2 - 3 $",
+    "popularRideApps": [
+     "Careem"
+    ],
+    "taxiAdvice": "Careem is reliable with fixed fares; ask for the meter in street taxis. The island is small, so with a rental car everything is 30-40 minutes away."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.80 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Moderate (Istanbul – Bahrain direct on Turkish Airlines and Gulf Air, ~4 hours)",
+    "flightTip": "Turkish Airlines and Gulf Air fly direct Istanbul – Bahrain; flight and hotel prices soar during F1 week."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings are long and warm; asking after someone’s well-being matters.",
+     "Wait for the other person to offer a hand before shaking hands with the opposite sex.",
+     "Accept offered coffee (gahwa); shake the cup when you have had enough.",
+     "Cover shoulders and knees in public; women cover their hair at holy sites."
+    ],
+    "festivals": [
+     "Formula 1 Bahrain Grand Prix (spring)",
+     "National Day (16–17 December)",
+     "Spring of Culture Festival (February – April)"
+    ],
+    "lifestyle": "Bahrain is one of the most relaxed countries in the Gulf; the weekend is Friday–Saturday and the island is busy with visitors arriving from Saudi Arabia over the King Fahd Causeway. Café, mall and beach-club culture is widespread."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bahrain Fort – Qal’at al-Bahrain (UNESCO)",
+     "Pearling Path, Muharraq (UNESCO)",
+     "Dilmun burial mounds (UNESCO)",
+     "Al Fateh Grand Mosque",
+     "Bahrain National Museum",
+     "Bab Al Bahrain and Manama Souq"
+    ],
+    "bestSeasons": "November – March (mild and dry) · June – September very hot and humid; the Formula 1 Bahrain Grand Prix is usually held in spring",
+    "travelStyleTip": "Plan Bahrain as a 2-3 day stopover; go in winter and see the Dilmun-era sites in a single day."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~70%; Shia and Sunni), Christianity (~14%), Hinduism (~10%) and others",
+    "respectNorms": "The Al Fateh Grand Mosque is open to visitors and lends abayas to women; there are no visits during prayer times.",
+    "sacredSites": [
+     "Al Fateh Grand Mosque (Manama)",
+     "Sacred Heart Church (Manama, 1939)",
+     "Cathedral of Our Lady of Arabia (Awali)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arabic is the official language; English is very widespread, and Persian, Urdu and Indian languages are also spoken.",
+    "englishProficiency": "Very good; English is used in business, tourism and on signs.",
+    "phrases": [
+     {
+      "phrase": "أهلاً وسهلاً (ahlan wa sahlan)",
+      "meaning": "Welcome",
+      "translation": "Welcome",
+      "pronunciation": "ah-lan-wa-sah-lan"
+     },
+     {
+      "phrase": "شخبارك؟ (shakhbārak?)",
+      "meaning": "What’s new? / How are you? (Gulf dialect)",
+      "translation": "What’s new? / How are you? (Gulf dialect)",
+      "pronunciation": "shah-ba-rak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Thanks",
+      "translation": "Thanks",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بكم؟ (bikam?)",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "bi-kam"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "May God give you strength (thanks for your effort)",
+      "translation": "May God give you strength (thanks for your effort)",
+      "pronunciation": "ya-tik el-af-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bahrain was the centre of the ancient Dilmun civilisation, which traded between Mesopotamia and the Indus; the Greeks called it Tylos. It was under Portuguese rule from 1521 to 1602; the Al Khalifa family has ruled since 1783. In 1932 the first oil on the Arabian side of the Gulf was found here, and independence came in 1971.",
+    "milestones": [
+     "c. 2000 BC: Golden age of the Dilmun civilisation",
+     "1783: Rule of the Al Khalifa family begins",
+     "1932: Discovery of oil",
+     "1971: Independence"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machboos (spiced rice with meat or fish; national dish)",
+     "Muhammar (sweet date-syrup rice, served with fish)",
+     "Harees (wheat and meat porridge)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (Arabic coffee with cardamom)",
+     "Karak tea",
+     "Laban (buttermilk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bahraini halwa (Showaiter style)",
+     "Luqaimat (syrupy dough balls)",
+     "Sambousa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ebrahim Al-Arrayedh (poet)",
+     "Rashid Al Oraifi (painter known for Dilmun-themed works)",
+     "Ali Bahar (singer, Al-Ekhwa band)"
+    ],
+    "strongSectors": [
+     "Oil and aluminium (Alba, one of the world’s largest smelters)",
+     "Banking and Islamic finance",
+     "Tourism and events (Formula 1)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless payment work almost everywhere; carry a little cash in dinars for souqs and small eateries.",
+    "tippingCulture": "Tipping isn’t mandatory; hotels and restaurants often add a service charge, otherwise 10% is appreciated.",
+    "economicPillars": "Oil and gas, aluminium, finance and banking, tourism, logistics."
+   }
+  },
+  "itin": {
+   "routeName": "Bahrain Stopover: Muharraq, Manama & Dilmun Heritage",
+   "routeSummary": "A 3-day route from Muharraq’s UNESCO-listed Pearling Path to Manama’s souq and museums, then on to Bahrain Fort, the Dilmun burial mounds and the Tree of Life in the desert.",
+   "totalDays": 3,
+   "idealDurationText": "3-Day Itinerary",
+   "bestSeason": "November – March (mild and dry) · June – September very hot and humid; the Formula 1 Bahrain Grand Prix is usually held in spring",
+   "transportMode": "Careem/taxi or rental car (small island, short distances)",
+   "paceLevel": "Relaxed (short stopover)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Muharraq (Pearling Path)",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Pearling Path (UNESCO; houses from the pearl-trading era)",
+      "Shaikh Isa bin Ali House",
+      "Muharraq Souq",
+      "Bin Matar House"
+     ],
+     "activities": [
+      "Explore the restored merchant houses along the Pearling Path.",
+      "Taste Bahraini halwa in Muharraq souq.",
+      "Drink karak tea in cafés in the old houses in the evening."
+     ],
+     "foodAndDrinks": [
+      "Muhammar with fish",
+      "Bahraini halwa"
+     ],
+     "criticalTips": [
+      "Pearling Path sites open at different times; check the schedule in advance.",
+      "In summer visit early in the morning or late afternoon."
+     ],
+     "mapsQuery": "Pearling Path, Muharraq, Bahrain"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Manama",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Bab Al Bahrain and Manama Souq",
+      "Bahrain National Museum",
+      "Al Fateh Grand Mosque",
+      "Bahrain World Trade Center skyline"
+     ],
+     "activities": [
+      "Learn about the architecture on a guided tour of Al Fateh Grand Mosque.",
+      "See Dilmun treasures at the National Museum.",
+      "Browse spice and gold shops in the Bab Al Bahrain souq in the evening."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Sambousa and fresh juice"
+     ],
+     "criticalTips": [
+      "Follow the mosque dress code and avoid prayer times.",
+      "Haggling is normal in the souq."
+     ],
+     "mapsQuery": "Bab Al Bahrain, Manama, Bahrain"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Bahrain Fort & the South",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Qal’at al-Bahrain (UNESCO) and site museum",
+      "A’ali Dilmun burial mounds (UNESCO)",
+      "Tree of Life (400-year-old tree in the desert)",
+      "Bahrain International Circuit (Sakhir)"
+     ],
+     "activities": [
+      "Walk around Bahrain Fort at sunset.",
+      "See the millennia-old burial mounds at A’ali.",
+      "Take a tour or driving experience at the Sakhir F1 circuit."
+     ],
+     "foodAndDrinks": [
+      "Coffee and dates at the fort café",
+      "Luqaimat"
+     ],
+     "criticalTips": [
+      "Carry water when visiting the Tree of Life; there are few facilities nearby.",
+      "Outside F1 week, book circuit tours in advance."
+     ],
+     "mapsQuery": "Qal'at al-Bahrain, Bahrain"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machboos (spiced rice with meat or fish; national dish)",
+     "Muhammar (sweet date-syrup rice, served with fish)",
+     "Harees (wheat and meat porridge)"
+    ],
+    "drinks": [
+     "Gahwa (Arabic coffee with cardamom)",
+     "Karak tea",
+     "Laban (buttermilk)"
+    ],
+    "streetFoods": [
+     "Bahraini halwa (Showaiter style)",
+     "Luqaimat (syrupy dough balls)",
+     "Sambousa"
+    ],
+    "diningAdvice": "Alcohol is available in hotels and licensed venues in Bahrain; at traditional restaurants machboos is served on large shared platters."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G adapter",
+     "Sunscreen, hat and water",
+     "Clothes covering shoulders and knees",
+     "Headscarf for women visiting mosques"
+    ],
+    "safetyAndEtiquette": [
+     "Stay away from demonstrations.",
+     "Dress conservatively in public.",
+     "Don’t photograph government or security buildings."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British Type G sockets (three rectangular pins) are used; Turkish plugs need an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is desalinated; bottled water is preferred because of taste and storage tanks.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, measles)",
+     "Hepatitis A (recommended)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Not mandatory.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "10% is appreciated in restaurants if there is no service charge; rounding up is enough in taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10% VAT (tourist refund not widespread)",
+    "minSpend": "Ask the shop",
+    "customsNote": "There is zero tolerance for drugs; carry prescriptions for some prescription medicines. Ask for a certificate and invoice when buying pearls and gold."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "airportSimTrapWarning": "Tourist SIMs are sold with a passport at Batelco, Zain and stc kiosks at the airport; an eSIM is also easy to set up."
+   },
+   "touristScams": [
+    {
+     "title": "Meterless taxi",
+     "desc": "Some taxis quote foreigners high prices without switching on the meter.",
+     "tip": "Use Careem or ask for the meter."
+    },
+    {
+     "title": "Fake delivery SMS",
+     "desc": "Messages posing as couriers or customs ask for card details.",
+     "tip": "Don’t click the links."
+    },
+    {
+     "title": "Nightlife extras",
+     "desc": "Unlisted table or service charges are added to the bill.",
+     "tip": "Ask prices in advance and check the bill."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Bahrain-Dinar (BHD)",
+   "plugType": "Typ G (230V, 50Hz)",
+   "bestMonths": "November – März (mild und trocken) · Juni – September sehr heiß und schwül; der Formel-1-Grand-Prix von Bahrain findet meist im Frühjahr statt",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Die Kriminalität ist gering, Gewalt gegen Touristen selten. In einigen Dörfern kann es zeitweise zu Demonstrationen kommen; Abstand halten. Wegen regionaler Spannungen die aktuellen offiziellen Reisehinweise verfolgen.",
+    "commonScams": [
+     "Taxis ohne Taxameter, die Ausländern hohe Preise nennen",
+     "Gefälschte Paket-/Liefer-SMS, die Kartendaten abfragen",
+     "Nicht ausgewiesene Zusatzgebühren in Nachtlokalen"
+    ],
+    "safeTravelTips": [
+     "Demonstrationen und politische Menschenansammlungen meiden.",
+     "Im Sommer mittags drinnen bleiben und viel trinken.",
+     "In der Öffentlichkeit zurückhaltend kleiden; im Ramadan tagsüber nicht öffentlich essen oder trinken."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % der Bevölkerung (4G / 5G)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Sehr gut (Batelco, Zain und stc bieten eSIM)",
+    "bestCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (das Netz von Bahrain Bus ist regelmäßig, aber begrenzt; Taxis und Careem sind verbreitet)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Tagesbuskarte ~2 - 3 $",
+    "popularRideApps": [
+     "Careem"
+    ],
+    "taxiAdvice": "Careem ist zuverlässig und hat Festpreise; bei Straßentaxis das Taxameter verlangen. Die Insel ist klein – mit dem Mietwagen ist alles in 30-40 Minuten erreichbar."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.80 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Mittel (Istanbul – Bahrain direkt mit Turkish Airlines und Gulf Air, ~4 Std.)",
+    "flightTip": "Turkish Airlines und Gulf Air fliegen direkt Istanbul – Bahrain; in der Formel-1-Woche steigen Flug- und Hotelpreise stark."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind lang und herzlich; nach dem Befinden zu fragen ist wichtig.",
+     "Beim Händeschütteln mit dem anderen Geschlecht abwarten, ob die Hand gereicht wird.",
+     "Angebotenen Kaffee (Gahwa) annehmen; die Tasse schwenken, wenn man genug hat.",
+     "In der Öffentlichkeit Schultern und Knie bedecken; an heiligen Stätten bedecken Frauen das Haar."
+    ],
+    "festivals": [
+     "Formel-1-Grand-Prix von Bahrain (Frühjahr)",
+     "Nationalfeiertag (16.–17. Dezember)",
+     "Festival „Spring of Culture“ (Februar – April)"
+    ],
+    "lifestyle": "Bahrain gehört zu den entspanntesten Ländern am Golf; das Wochenende ist Freitag–Samstag, und viele Besucher kommen über den König-Fahd-Damm aus Saudi-Arabien. Café-, Mall- und Beachclub-Kultur sind weit verbreitet."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bahrain-Fort – Qal’at al-Bahrain (UNESCO)",
+     "Perlenpfad in Muharraq (UNESCO)",
+     "Dilmun-Grabhügel (UNESCO)",
+     "Al-Fateh-Moschee",
+     "Bahrain-Nationalmuseum",
+     "Bab al-Bahrain und Souk von Manama"
+    ],
+    "bestSeasons": "November – März (mild und trocken) · Juni – September sehr heiß und schwül; der Formel-1-Grand-Prix von Bahrain findet meist im Frühjahr statt",
+    "travelStyleTip": "Bahrain als Zwischenstopp von 2-3 Tagen planen; im Winter reisen und die Stätten der Dilmun-Zeit an einem Tag besichtigen."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~70 %; Schiiten und Sunniten), Christentum (~14 %), Hinduismus (~10 %) und andere",
+    "respectNorms": "Die Al-Fateh-Moschee ist für Besucher geöffnet und verleiht Frauen Abayas; während der Gebetszeiten keine Besichtigung.",
+    "sacredSites": [
+     "Al-Fateh-Moschee (Manama)",
+     "Herz-Jesu-Kirche (Manama, 1939)",
+     "Kathedrale Unserer Lieben Frau von Arabien (Awali)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arabisch ist Amtssprache; Englisch ist sehr verbreitet, außerdem werden Persisch, Urdu und indische Sprachen gesprochen.",
+    "englishProficiency": "Sehr gut; Englisch wird in Wirtschaft, Tourismus und auf Schildern verwendet.",
+    "phrases": [
+     {
+      "phrase": "أهلاً وسهلاً (ahlan wa sahlan)",
+      "meaning": "Willkommen",
+      "translation": "Willkommen",
+      "pronunciation": "ah-lan-wa-sah-lan"
+     },
+     {
+      "phrase": "شخبارك؟ (shakhbārak?)",
+      "meaning": "Was gibt’s Neues? / Wie geht’s? (Golfdialekt)",
+      "translation": "Was gibt’s Neues? / Wie geht’s? (Golfdialekt)",
+      "pronunciation": "shah-ba-rak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بكم؟ (bikam?)",
+      "meaning": "Wie viel?",
+      "translation": "Wie viel?",
+      "pronunciation": "bi-kam"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "Gott gebe dir Kraft (Dank für die Mühe)",
+      "translation": "Gott gebe dir Kraft (Dank für die Mühe)",
+      "pronunciation": "ya-tik el-af-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bahrain war Zentrum der antiken Dilmun-Kultur, die zwischen Mesopotamien und dem Indus Handel trieb; die Griechen nannten es Tylos. Von 1521 bis 1602 stand es unter portugiesischer Herrschaft; die Familie Al Khalifa regiert seit 1783. 1932 wurde hier das erste Öl auf der arabischen Seite des Golfs gefunden, 1971 folgte die Unabhängigkeit.",
+    "milestones": [
+     "um 2000 v. Chr.: Blütezeit der Dilmun-Kultur",
+     "1783: Beginn der Herrschaft der Familie Al Khalifa",
+     "1932: Entdeckung von Erdöl",
+     "1971: Unabhängigkeit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machbus (gewürzter Reis mit Fleisch oder Fisch; Nationalgericht)",
+     "Muhammar (süßer Reis mit Dattelsirup, zu Fisch)",
+     "Harees (Weizen-Fleisch-Brei)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (arabischer Kaffee mit Kardamom)",
+     "Karak-Tee",
+     "Laban (Buttermilch)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bahrainische Halwa (nach Showaiter-Art)",
+     "Luqaimat (Teigbällchen in Sirup)",
+     "Sambusa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ebrahim Al-Arrayedh (Dichter)",
+     "Rashid Al Oraifi (Maler, bekannt für Dilmun-Motive)",
+     "Ali Bahar (Sänger der Band Al-Ekhwa)"
+    ],
+    "strongSectors": [
+     "Erdöl und Aluminium (Alba, eine der größten Hütten der Welt)",
+     "Banken und islamisches Finanzwesen",
+     "Tourismus und Events (Formel 1)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und kontaktloses Bezahlen funktionieren fast überall; etwas Bargeld in Dinar für Souks und kleine Lokale mitnehmen.",
+    "tippingCulture": "Trinkgeld ist nicht Pflicht; Hotels und Restaurants berechnen oft eine Servicegebühr, sonst werden 10 % geschätzt.",
+    "economicPillars": "Erdöl und Gas, Aluminium, Finanzen und Banken, Tourismus, Logistik."
+   }
+  },
+  "itin": {
+   "routeName": "Zwischenstopp Bahrain: Muharraq, Manama & Dilmun-Erbe",
+   "routeSummary": "Eine 3-tägige Route vom UNESCO-Perlenpfad in Muharraq zum Souk und zu den Museen Manamas und weiter zum Bahrain-Fort, zu den Dilmun-Grabhügeln und zum Baum des Lebens in der Wüste.",
+   "totalDays": 3,
+   "idealDurationText": "3-tägige Reise",
+   "bestSeason": "November – März (mild und trocken) · Juni – September sehr heiß und schwül; der Formel-1-Grand-Prix von Bahrain findet meist im Frühjahr statt",
+   "transportMode": "Careem/Taxi oder Mietwagen (kleine Insel, kurze Wege)",
+   "paceLevel": "Gemächlich (kurzer Zwischenstopp)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Muharraq (Perlenpfad)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Perlenpfad (UNESCO; Häuser aus der Zeit des Perlenhandels)",
+      "Haus von Scheich Isa bin Ali",
+      "Souk von Muharraq",
+      "Bin-Matar-Haus"
+     ],
+     "activities": [
+      "Die restaurierten Kaufmannshäuser entlang des Perlenpfads erkunden.",
+      "Im Souk von Muharraq bahrainische Halwa probieren.",
+      "Abends in Cafés in den alten Häusern Karak-Tee trinken."
+     ],
+     "foodAndDrinks": [
+      "Muhammar mit Fisch",
+      "Bahrainische Halwa"
+     ],
+     "criticalTips": [
+      "Die Stationen des Perlenpfads öffnen zu unterschiedlichen Zeiten; Programm vorab prüfen.",
+      "Im Sommer früh morgens oder am späten Nachmittag besichtigen."
+     ],
+     "mapsQuery": "Pearling Path, Muharraq, Bahrain"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Manama",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Bab al-Bahrain und Souk von Manama",
+      "Bahrain-Nationalmuseum",
+      "Al-Fateh-Moschee",
+      "Skyline mit dem Bahrain World Trade Center"
+     ],
+     "activities": [
+      "Bei einer Führung durch die Al-Fateh-Moschee die Architektur kennenlernen.",
+      "Im Nationalmuseum Schätze aus der Dilmun-Zeit ansehen.",
+      "Abends durch die Gewürz- und Goldläden im Souk von Bab al-Bahrain bummeln."
+     ],
+     "foodAndDrinks": [
+      "Machbus",
+      "Sambusa und frischer Saft"
+     ],
+     "criticalTips": [
+      "Kleiderordnung der Moschee beachten und Gebetszeiten meiden.",
+      "Handeln ist im Souk normal."
+     ],
+     "mapsQuery": "Bab Al Bahrain, Manama, Bahrain"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Bahrain-Fort & der Süden",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Qal’at al-Bahrain (UNESCO) mit Museum",
+      "Dilmun-Grabhügel von A’ali (UNESCO)",
+      "Baum des Lebens (400 Jahre alter Baum in der Wüste)",
+      "Bahrain International Circuit (Sakhir)"
+     ],
+     "activities": [
+      "Bei Sonnenuntergang um das Bahrain-Fort spazieren.",
+      "Die jahrtausendealten Grabhügel von A’ali ansehen.",
+      "Auf der Formel-1-Strecke in Sakhir eine Tour oder Fahrerlebnis buchen."
+     ],
+     "foodAndDrinks": [
+      "Kaffee und Datteln im Fort-Café",
+      "Luqaimat"
+     ],
+     "criticalTips": [
+      "Zum Baum des Lebens Wasser mitnehmen; in der Nähe gibt es kaum Einrichtungen.",
+      "Außerhalb der F1-Woche Streckentouren vorab buchen."
+     ],
+     "mapsQuery": "Qal'at al-Bahrain, Bahrain"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machbus (gewürzter Reis mit Fleisch oder Fisch; Nationalgericht)",
+     "Muhammar (süßer Reis mit Dattelsirup, zu Fisch)",
+     "Harees (Weizen-Fleisch-Brei)"
+    ],
+    "drinks": [
+     "Gahwa (arabischer Kaffee mit Kardamom)",
+     "Karak-Tee",
+     "Laban (Buttermilch)"
+    ],
+    "streetFoods": [
+     "Bahrainische Halwa (nach Showaiter-Art)",
+     "Luqaimat (Teigbällchen in Sirup)",
+     "Sambusa"
+    ],
+    "diningAdvice": "Alkohol gibt es in Bahrain in Hotels und lizenzierten Lokalen; in traditionellen Restaurants wird Machbus auf großen Gemeinschaftsplatten serviert."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ G",
+     "Sonnencreme, Hut und Wasser",
+     "Kleidung, die Schultern und Knie bedeckt",
+     "Kopftuch für Frauen beim Moscheebesuch"
+    ],
+    "safetyAndEtiquette": [
+     "Demonstrationen meiden.",
+     "In der Öffentlichkeit zurückhaltend kleiden.",
+     "Regierungs- und Sicherheitsgebäude nicht fotografieren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Es werden britische Steckdosen Typ G (drei rechteckige Stifte) verwendet; für Schuko-Stecker ist ein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist entsalzt; wegen Geschmack und Speichertanks wird Flaschenwasser bevorzugt.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, Masern)",
+     "Hepatitis A (empfohlen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Nicht verpflichtend.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Ohne Servicegebühr werden im Restaurant 10 % geschätzt; im Taxi genügt Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10 % MwSt. (Erstattung für Touristen nicht verbreitet)",
+    "minSpend": "Im Geschäft nachfragen",
+    "customsNote": "Bei Drogen gilt Nulltoleranz; für manche verschreibungspflichtige Medikamente Rezepte mitführen. Beim Kauf von Perlen und Gold Zertifikat und Rechnung verlangen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "airportSimTrapWarning": "Touristen-SIMs gibt es mit Pass an den Kiosken von Batelco, Zain und stc am Flughafen; eine eSIM ist ebenfalls schnell eingerichtet."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi ohne Taxameter",
+     "desc": "Manche Taxis nennen Ausländern hohe Preise, ohne das Taxameter einzuschalten.",
+     "tip": "Careem nutzen oder das Taxameter verlangen."
+    },
+    {
+     "title": "Gefälschte Liefer-SMS",
+     "desc": "Nachrichten im Namen von Kurierdiensten oder Zoll fragen nach Kartendaten.",
+     "tip": "Keine Links anklicken."
+    },
+    {
+     "title": "Zusatzkosten im Nachtleben",
+     "desc": "Nicht ausgewiesene Tisch- oder Servicegebühren landen auf der Rechnung.",
+     "tip": "Preise vorab erfragen und die Rechnung prüfen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dinar bareiní (BHD)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Noviembre – marzo (templado y seco) · junio – septiembre muy caluroso y húmedo; el Gran Premio de Fórmula 1 de Baréin suele celebrarse en primavera",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "La delincuencia es baja y los incidentes violentos contra turistas son raros. En algunos pueblos puede haber manifestaciones puntuales; mantente alejado. Sigue las advertencias oficiales actuales por las tensiones regionales.",
+    "commonScams": [
+     "Taxis sin taxímetro que piden tarifas altas a extranjeros",
+     "SMS falsos de paquetería o entregas que piden datos de la tarjeta",
+     "Cargos extra no indicados en locales nocturnos"
+    ],
+    "safeTravelTips": [
+     "Mantente alejado de manifestaciones y concentraciones políticas.",
+     "En verano quédate en interiores al mediodía y bebe mucha agua.",
+     "Viste de forma recatada en público; en Ramadán no comas ni bebas en público de día."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de la población (4G / 5G)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Muy buena (Batelco, Zain y stc ofrecen eSIM)",
+    "bestCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Media (la red de Bahrain Bus es regular pero limitada; taxis y Careem son habituales)",
+    "costLevel": "Medio",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Abono diario de autobús ~2 - 3 $",
+    "popularRideApps": [
+     "Careem"
+    ],
+    "taxiAdvice": "Careem es fiable y con precio fijo; en taxis de calle pide el taxímetro. La isla es pequeña: con coche de alquiler todo queda a 30-40 minutos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.80 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Medio (Estambul – Baréin directo con Turkish Airlines y Gulf Air, ~4 horas)",
+    "flightTip": "Turkish Airlines y Gulf Air vuelan directo Estambul – Baréin; durante la semana de la F1 los precios de vuelos y hoteles se disparan."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos son largos y cálidos; preguntar por el bienestar del otro es importante.",
+     "Espera a que la otra persona tienda la mano antes de saludar a alguien del sexo opuesto.",
+     "Acepta el café (gahwa) que te ofrecen; agita la taza cuando no quieras más.",
+     "Cubre hombros y rodillas en público; en lugares sagrados las mujeres se cubren el pelo."
+    ],
+    "festivals": [
+     "Gran Premio de Fórmula 1 de Baréin (primavera)",
+     "Día Nacional (16–17 de diciembre)",
+     "Festival Primavera de la Cultura (febrero – abril)"
+    ],
+    "lifestyle": "Baréin es uno de los países más relajados del Golfo; el fin de semana es viernes–sábado y la isla se llena de visitantes que llegan de Arabia Saudí por la Calzada del Rey Fahd. La cultura de cafés, centros comerciales y clubes de playa está muy extendida."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Fuerte de Baréin – Qal’at al-Bahrain (UNESCO)",
+     "Ruta de las Perlas, Muharraq (UNESCO)",
+     "Túmulos funerarios de Dilmún (UNESCO)",
+     "Gran Mezquita Al Fateh",
+     "Museo Nacional de Baréin",
+     "Bab Al Bahrain y zoco de Manama"
+    ],
+    "bestSeasons": "Noviembre – marzo (templado y seco) · junio – septiembre muy caluroso y húmedo; el Gran Premio de Fórmula 1 de Baréin suele celebrarse en primavera",
+    "travelStyleTip": "Plantea Baréin como escala de 2-3 días; viaja en invierno y recorre los sitios de la época de Dilmún en un solo día."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~70 %; chiíes y suníes), cristianismo (~14 %), hinduismo (~10 %) y otros",
+    "respectNorms": "La Gran Mezquita Al Fateh está abierta a visitantes y presta abayas a las mujeres; no hay visitas durante los rezos.",
+    "sacredSites": [
+     "Gran Mezquita Al Fateh (Manama)",
+     "Iglesia del Sagrado Corazón (Manama, 1939)",
+     "Catedral de Nuestra Señora de Arabia (Awali)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El árabe es la lengua oficial; el inglés está muy extendido y también se hablan persa, urdu e idiomas de la India.",
+    "englishProficiency": "Muy bueno; el inglés se usa en negocios, turismo y carteles.",
+    "phrases": [
+     {
+      "phrase": "أهلاً وسهلاً (ahlan wa sahlan)",
+      "meaning": "Bienvenido",
+      "translation": "Bienvenido",
+      "pronunciation": "ah-lan-wa-sah-lan"
+     },
+     {
+      "phrase": "شخبارك؟ (shakhbārak?)",
+      "meaning": "¿Qué hay de nuevo? / ¿Cómo estás? (dialecto del Golfo)",
+      "translation": "¿Qué hay de nuevo? / ¿Cómo estás? (dialecto del Golfo)",
+      "pronunciation": "shah-ba-rak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بكم؟ (bikam?)",
+      "meaning": "¿Cuánto?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "bi-kam"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "Que Dios te dé fuerzas (gracias por el esfuerzo)",
+      "translation": "Que Dios te dé fuerzas (gracias por el esfuerzo)",
+      "pronunciation": "ya-tik el-af-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Baréin fue el centro de la antigua civilización de Dilmún, que comerciaba entre Mesopotamia y el Indo; los griegos la llamaron Tylos. Estuvo bajo dominio portugués de 1521 a 1602; la familia Al Jalifa gobierna desde 1783. En 1932 se halló aquí el primer petróleo de la orilla árabe del Golfo, y la independencia llegó en 1971.",
+    "milestones": [
+     "h. 2000 a. C.: Esplendor de la civilización de Dilmún",
+     "1783: Comienza el gobierno de la familia Al Jalifa",
+     "1932: Descubrimiento de petróleo",
+     "1971: Independencia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machboos (arroz especiado con carne o pescado; plato nacional)",
+     "Muhammar (arroz dulce con sirope de dátil, con pescado)",
+     "Harees (gachas de trigo y carne)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (café árabe con cardamomo)",
+     "Té karak",
+     "Laban (suero de leche)"
+    ],
+    "streetFoodAndDesserts": [
+     "Halwa bareiní (estilo Showaiter)",
+     "Luqaimat (bolitas de masa en almíbar)",
+     "Sambusa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ebrahim Al-Arrayedh (poeta)",
+     "Rashid Al Oraifi (pintor conocido por obras sobre Dilmún)",
+     "Ali Bahar (cantante del grupo Al-Ekhwa)"
+    ],
+    "strongSectors": [
+     "Petróleo y aluminio (Alba, una de las mayores fundiciones del mundo)",
+     "Banca y finanzas islámicas",
+     "Turismo y eventos (Fórmula 1)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas y el pago sin contacto funcionan casi en todas partes; lleva algo de efectivo en dinares para zocos y comedores pequeños.",
+    "tippingCulture": "La propina no es obligatoria; hoteles y restaurantes suelen añadir cargo por servicio, si no, se agradece un 10 %.",
+    "economicPillars": "Petróleo y gas, aluminio, finanzas y banca, turismo, logística."
+   }
+  },
+  "itin": {
+   "routeName": "Escala en Baréin: Muharraq, Manama y legado de Dilmún",
+   "routeSummary": "Ruta de 3 días desde la Ruta de las Perlas de Muharraq, Patrimonio de la UNESCO, al zoco y los museos de Manama, y luego al Fuerte de Baréin, los túmulos de Dilmún y el Árbol de la Vida en el desierto.",
+   "totalDays": 3,
+   "idealDurationText": "Itinerario de 3 días",
+   "bestSeason": "Noviembre – marzo (templado y seco) · junio – septiembre muy caluroso y húmedo; el Gran Premio de Fórmula 1 de Baréin suele celebrarse en primavera",
+   "transportMode": "Careem/taxi o coche de alquiler (isla pequeña, distancias cortas)",
+   "paceLevel": "Tranquilo (escala corta)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Muharraq (Ruta de las Perlas)",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Ruta de las Perlas (UNESCO; casas de la época del comercio de perlas)",
+      "Casa del jeque Isa bin Ali",
+      "Zoco de Muharraq",
+      "Casa Bin Matar"
+     ],
+     "activities": [
+      "Recorre las casas de mercaderes restauradas de la Ruta de las Perlas.",
+      "Prueba halwa bareiní en el zoco de Muharraq.",
+      "Por la tarde toma té karak en cafés instalados en casas antiguas."
+     ],
+     "foodAndDrinks": [
+      "Muhammar con pescado",
+      "Halwa bareiní"
+     ],
+     "criticalTips": [
+      "Los puntos de la Ruta de las Perlas abren en horarios distintos; consulta el programa antes.",
+      "En verano visita a primera hora o al final de la tarde."
+     ],
+     "mapsQuery": "Pearling Path, Muharraq, Bahrain"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Manama",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Bab Al Bahrain y zoco de Manama",
+      "Museo Nacional de Baréin",
+      "Gran Mezquita Al Fateh",
+      "Perfil urbano con el Bahrain World Trade Center"
+     ],
+     "activities": [
+      "Conoce la arquitectura en una visita guiada a la Gran Mezquita Al Fateh.",
+      "Admira tesoros de Dilmún en el Museo Nacional.",
+      "Por la tarde recorre las tiendas de especias y oro del zoco de Bab Al Bahrain."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Sambusa y zumo natural"
+     ],
+     "criticalTips": [
+      "Respeta el código de vestimenta de la mezquita y evita las horas de rezo.",
+      "Regatear es normal en el zoco."
+     ],
+     "mapsQuery": "Bab Al Bahrain, Manama, Bahrain"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Fuerte de Baréin y el sur",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Qal’at al-Bahrain (UNESCO) y su museo",
+      "Túmulos funerarios de Dilmún en A’ali (UNESCO)",
+      "Árbol de la Vida (árbol de 400 años en el desierto)",
+      "Circuito Internacional de Baréin (Sakhir)"
+     ],
+     "activities": [
+      "Pasea alrededor del Fuerte de Baréin al atardecer.",
+      "Contempla los túmulos milenarios de A’ali.",
+      "Haz una visita o experiencia de conducción en el circuito de F1 de Sakhir."
+     ],
+     "foodAndDrinks": [
+      "Café y dátiles en la cafetería del fuerte",
+      "Luqaimat"
+     ],
+     "criticalTips": [
+      "Lleva agua al Árbol de la Vida; hay pocos servicios cerca.",
+      "Fuera de la semana de la F1, reserva las visitas al circuito con antelación."
+     ],
+     "mapsQuery": "Qal'at al-Bahrain, Bahrain"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machboos (arroz especiado con carne o pescado; plato nacional)",
+     "Muhammar (arroz dulce con sirope de dátil, con pescado)",
+     "Harees (gachas de trigo y carne)"
+    ],
+    "drinks": [
+     "Gahwa (café árabe con cardamomo)",
+     "Té karak",
+     "Laban (suero de leche)"
+    ],
+    "streetFoods": [
+     "Halwa bareiní (estilo Showaiter)",
+     "Luqaimat (bolitas de masa en almíbar)",
+     "Sambusa"
+    ],
+    "diningAdvice": "En Baréin hay alcohol en hoteles y locales con licencia; en los restaurantes tradicionales el machboos se sirve en grandes bandejas compartidas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Protector solar, sombrero y agua",
+     "Ropa que cubra hombros y rodillas",
+     "Pañuelo para mujeres que visiten mezquitas"
+    ],
+    "safetyAndEtiquette": [
+     "Mantente alejado de manifestaciones.",
+     "Viste de forma recatada en público.",
+     "No fotografíes edificios oficiales ni de seguridad."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Se usan enchufes británicos tipo G (tres clavijas rectangulares); los Schuko necesitan adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo es desalada; se prefiere la embotellada por el sabor y los depósitos.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, sarampión)",
+     "Hepatitis A (recomendada)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "No es obligatoria.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Si no hay cargo por servicio, en restaurantes se agradece un 10 %; en taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10 % de IVA (devolución a turistas poco extendida)",
+    "minSpend": "Pregunta en la tienda",
+    "customsNote": "Tolerancia cero con las drogas; lleva receta para algunos medicamentos. Al comprar perlas y oro pide certificado y factura."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "airportSimTrapWarning": "En los quioscos de Batelco, Zain y stc del aeropuerto se compra una SIM turística con pasaporte; también es fácil activar una eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi sin taxímetro",
+     "desc": "Algunos taxis piden precios altos a extranjeros sin encender el taxímetro.",
+     "tip": "Usa Careem o pide el taxímetro."
+    },
+    {
+     "title": "SMS falso de entrega",
+     "desc": "Mensajes que se hacen pasar por mensajería o aduanas piden datos de la tarjeta.",
+     "tip": "No pulses los enlaces."
+    },
+    {
+     "title": "Extras en la noche",
+     "desc": "Se añaden a la cuenta cargos de mesa o servicio no indicados.",
+     "tip": "Pregunta los precios antes y revisa la cuenta."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Бахрейнский динар (BHD)",
+   "plugType": "Тип G (230V, 50Hz)",
+   "bestMonths": "Ноябрь – март (тепло и сухо) · июнь – сентябрь очень жарко и влажно; Гран-при Бахрейна «Формулы-1» обычно проходит весной",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Преступность низкая, насилие в отношении туристов редкость. В некоторых деревнях периодически бывают демонстрации; держитесь от них подальше. Из-за региональной напряжённости следите за актуальными официальными рекомендациями.",
+    "commonScams": [
+     "Такси без счётчика, называющие иностранцам высокие цены",
+     "Фальшивые SMS о посылках/доставке с запросом данных карты",
+     "Неуказанные дополнительные сборы в ночных заведениях"
+    ],
+    "safeTravelTips": [
+     "Держитесь подальше от демонстраций и политических собраний.",
+     "Летом в полдень оставайтесь в помещении и пейте много воды.",
+     "На людях одевайтесь скромно; в Рамадан днём не ешьте и не пейте публично."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % населения (4G / 5G)",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Очень хорошая (Batelco, Zain и stc предлагают eSIM)",
+    "bestCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (сеть Bahrain Bus регулярная, но ограниченная; распространены такси и Careem)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "0.80 - 1 $",
+    "dailyPassUsd": "Дневной автобусный проездной ~2 - 3 $",
+    "popularRideApps": [
+     "Careem"
+    ],
+    "taxiAdvice": "Careem надёжен и с фиксированной ценой; в уличном такси требуйте счётчик. Остров маленький — на арендованной машине до всего 30-40 минут."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "0.30 - 0.80 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Средний (Стамбул – Бахрейн прямыми рейсами Turkish Airlines и Gulf Air, ~4 ч)",
+    "flightTip": "Turkish Airlines и Gulf Air летают напрямую Стамбул – Бахрейн; в неделю «Формулы-1» цены на билеты и отели резко растут."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствия долгие и тёплые; важно расспросить о самочувствии.",
+     "Здороваясь с человеком противоположного пола, подождите, протянет ли он руку.",
+     "Принимайте предложенный кофе (кахва); покачайте чашкой, когда хватит.",
+     "На людях закрывайте плечи и колени; в святых местах женщины покрывают волосы."
+    ],
+    "festivals": [
+     "Гран-при Бахрейна «Формулы-1» (весна)",
+     "Национальный день (16–17 декабря)",
+     "Фестиваль «Весна культуры» (февраль – апрель)"
+    ],
+    "lifestyle": "Бахрейн — одна из самых раскрепощённых стран Залива; выходные — пятница и суббота, и остров полон гостей, приезжающих из Саудовской Аравии по дамбе короля Фахда. Широко распространена культура кафе, торговых центров и пляжных клубов."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Бахрейнский форт — Калат-эль-Бахрейн (ЮНЕСКО)",
+     "Жемчужный путь в Мухарраке (ЮНЕСКО)",
+     "Курганы Дильмуна (ЮНЕСКО)",
+     "Большая мечеть Аль-Фатих",
+     "Национальный музей Бахрейна",
+     "Баб-эль-Бахрейн и рынок Манамы"
+    ],
+    "bestSeasons": "Ноябрь – март (тепло и сухо) · июнь – сентябрь очень жарко и влажно; Гран-при Бахрейна «Формулы-1» обычно проходит весной",
+    "travelStyleTip": "Планируйте Бахрейн как остановку на 2-3 дня; приезжайте зимой и осмотрите памятники эпохи Дильмуна за один день."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~70 %; шииты и сунниты), христианство (~14 %), индуизм (~10 %) и другие",
+    "respectNorms": "Большая мечеть Аль-Фатих открыта для посетителей, женщинам выдают абаю; во время молитвы экскурсий нет.",
+    "sacredSites": [
+     "Большая мечеть Аль-Фатих (Манама)",
+     "Церковь Святого Сердца (Манама, 1939)",
+     "Собор Богоматери Аравийской (Авали)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — арабский; английский очень распространён, также говорят на персидском, урду и языках Индии.",
+    "englishProficiency": "Очень хороший; английский используют в бизнесе, туризме и на вывесках.",
+    "phrases": [
+     {
+      "phrase": "أهلاً وسهلاً (ahlan wa sahlan)",
+      "meaning": "Добро пожаловать",
+      "translation": "Добро пожаловать",
+      "pronunciation": "ah-lan-wa-sah-lan"
+     },
+     {
+      "phrase": "شخبارك؟ (shakhbārak?)",
+      "meaning": "Что нового? / Как дела? (диалект Залива)",
+      "translation": "Что нового? / Как дела? (диалект Залива)",
+      "pronunciation": "shah-ba-rak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بكم؟ (bikam?)",
+      "meaning": "Сколько?",
+      "translation": "Сколько?",
+      "pronunciation": "bi-kam"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "Дай Бог тебе сил (спасибо за труд)",
+      "translation": "Дай Бог тебе сил (спасибо за труд)",
+      "pronunciation": "ya-tik el-af-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Бахрейн был центром древней цивилизации Дильмун, торговавшей между Месопотамией и Индом; греки называли его Тилос. С 1521 по 1602 год он был под властью Португалии; семья Аль Халифа правит с 1783 года. В 1932 году здесь нашли первую нефть на арабском берегу Залива, а в 1971 году страна стала независимой.",
+    "milestones": [
+     "ок. 2000 до н. э.: Расцвет цивилизации Дильмун",
+     "1783: Начало правления семьи Аль Халифа",
+     "1932: Открытие нефти",
+     "1971: Независимость"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Мачбус (пряный рис с мясом или рыбой; национальное блюдо)",
+     "Мухаммар (сладкий рис с финиковым сиропом, к рыбе)",
+     "Харис (каша из пшеницы и мяса)"
+    ],
+    "traditionalDrinks": [
+     "Кахва (арабский кофе с кардамоном)",
+     "Чай карак",
+     "Лабан (пахта)"
+    ],
+    "streetFoodAndDesserts": [
+     "Бахрейнская халва (в стиле Showaiter)",
+     "Лукаймат (шарики из теста в сиропе)",
+     "Самбуса"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ибрахим аль-Арайид (поэт)",
+     "Рашид аль-Ораифи (художник, известный работами о Дильмуне)",
+     "Али Бахар (певец группы Al-Ekhwa)"
+    ],
+    "strongSectors": [
+     "Нефть и алюминий (Alba — один из крупнейших заводов в мире)",
+     "Банки и исламские финансы",
+     "Туризм и мероприятия («Формула-1»)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата работают почти везде; держите немного наличных динаров для рынков и небольших кафе.",
+    "tippingCulture": "Чаевые не обязательны; отели и рестораны часто добавляют сервисный сбор, иначе ценят 10 %.",
+    "economicPillars": "Нефть и газ, алюминий, финансы и банки, туризм, логистика."
+   }
+  },
+  "itin": {
+   "routeName": "Остановка в Бахрейне: Мухаррак, Манама и наследие Дильмуна",
+   "routeSummary": "3-дневный маршрут от Жемчужного пути Мухаррака (ЮНЕСКО) к рынку и музеям Манамы, затем к Бахрейнскому форту, курганам Дильмуна и Дереву жизни в пустыне.",
+   "totalDays": 3,
+   "idealDurationText": "3-дневный маршрут",
+   "bestSeason": "Ноябрь – март (тепло и сухо) · июнь – сентябрь очень жарко и влажно; Гран-при Бахрейна «Формулы-1» обычно проходит весной",
+   "transportMode": "Careem/такси или арендованная машина (маленький остров, короткие расстояния)",
+   "paceLevel": "Спокойный (короткая остановка)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Мухаррак (Жемчужный путь)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Жемчужный путь (ЮНЕСКО; дома эпохи торговли жемчугом)",
+      "Дом шейха Исы бин Али",
+      "Рынок Мухаррака",
+      "Дом Бин Матар"
+     ],
+     "activities": [
+      "Осмотрите отреставрированные купеческие дома вдоль Жемчужного пути.",
+      "Попробуйте бахрейнскую халву на рынке Мухаррака.",
+      "Вечером выпейте чай карак в кафе в старинных домах."
+     ],
+     "foodAndDrinks": [
+      "Мухаммар с рыбой",
+      "Бахрейнская халва"
+     ],
+     "criticalTips": [
+      "Объекты Жемчужного пути открываются в разное время; проверьте расписание заранее.",
+      "Летом гуляйте рано утром или ближе к вечеру."
+     ],
+     "mapsQuery": "Pearling Path, Muharraq, Bahrain"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Манама",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Баб-эль-Бахрейн и рынок Манамы",
+      "Национальный музей Бахрейна",
+      "Большая мечеть Аль-Фатих",
+      "Панорама с Bahrain World Trade Center"
+     ],
+     "activities": [
+      "На экскурсии по Большой мечети Аль-Фатих узнайте об её архитектуре.",
+      "Посмотрите сокровища Дильмуна в Национальном музее.",
+      "Вечером пройдитесь по лавкам специй и золота на рынке Баб-эль-Бахрейн."
+     ],
+     "foodAndDrinks": [
+      "Мачбус",
+      "Самбуса и свежий сок"
+     ],
+     "criticalTips": [
+      "Соблюдайте дресс-код мечети и избегайте времени молитвы.",
+      "Торговаться на рынке — норма."
+     ],
+     "mapsQuery": "Bab Al Bahrain, Manama, Bahrain"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Бахрейнский форт и юг",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Калат-эль-Бахрейн (ЮНЕСКО) и музей при нём",
+      "Курганы Дильмуна в Аали (ЮНЕСКО)",
+      "Дерево жизни (400-летнее дерево в пустыне)",
+      "Международный автодром Бахрейна (Сахир)"
+     ],
+     "activities": [
+      "Прогуляйтесь у Бахрейнского форта на закате.",
+      "Посмотрите тысячелетние курганы в Аали.",
+      "Съездите на экскурсию или покатайтесь на трассе «Формулы-1» в Сахире."
+     ],
+     "foodAndDrinks": [
+      "Кофе и финики в кафе у форта",
+      "Лукаймат"
+     ],
+     "criticalTips": [
+      "Берите воду к Дереву жизни — рядом почти нет инфраструктуры.",
+      "Вне недели «Формулы-1» бронируйте туры по трассе заранее."
+     ],
+     "mapsQuery": "Qal'at al-Bahrain, Bahrain"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Мачбус (пряный рис с мясом или рыбой; национальное блюдо)",
+     "Мухаммар (сладкий рис с финиковым сиропом, к рыбе)",
+     "Харис (каша из пшеницы и мяса)"
+    ],
+    "drinks": [
+     "Кахва (арабский кофе с кардамоном)",
+     "Чай карак",
+     "Лабан (пахта)"
+    ],
+    "streetFoods": [
+     "Бахрейнская халва (в стиле Showaiter)",
+     "Лукаймат (шарики из теста в сиропе)",
+     "Самбуса"
+    ],
+    "diningAdvice": "Алкоголь в Бахрейне есть в отелях и лицензированных заведениях; в традиционных ресторанах мачбус подают на больших общих блюдах."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер типа G",
+     "Солнцезащитный крем, шляпа и вода",
+     "Одежда, закрывающая плечи и колени",
+     "Платок для женщин при посещении мечетей"
+    ],
+    "safetyAndEtiquette": [
+     "Держитесь подальше от демонстраций.",
+     "На людях одевайтесь скромно.",
+     "Не фотографируйте правительственные и охраняемые здания."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Используются британские розетки типа G (три прямоугольных штыря); для вилок Schuko нужен адаптер."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода опреснённая; из-за вкуса и баков предпочитают бутилированную.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь)",
+     "Гепатит A (рекомендуется)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Не обязательны.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Если нет сервисного сбора, в ресторанах ценят 10 %; в такси достаточно округлить."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 10 % (возврат туристам не распространён)",
+    "minSpend": "Уточняйте в магазине",
+    "customsNote": "К наркотикам — нулевая терпимость; для некоторых рецептурных лекарств берите рецепт. При покупке жемчуга и золота требуйте сертификат и чек."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "airportSimTrapWarning": "Туристическую SIM продают по паспорту в киосках Batelco, Zain и stc в аэропорту; eSIM тоже легко подключить."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без счётчика",
+     "desc": "Некоторые такси называют иностранцам высокие цены, не включая счётчик.",
+     "tip": "Пользуйтесь Careem или требуйте счётчик."
+    },
+    {
+     "title": "Фальшивые SMS о доставке",
+     "desc": "Сообщения от имени курьеров или таможни просят данные карты.",
+     "tip": "Не переходите по ссылкам."
+    },
+    {
+     "title": "Доплаты в ночных заведениях",
+     "desc": "В счёт добавляют неуказанные сборы за столик или обслуживание.",
+     "tip": "Узнавайте цены заранее и проверяйте счёт."
+    }
+   ]
+  }
+ }
+}

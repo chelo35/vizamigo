@@ -298,6 +298,66 @@
      "Hamamlarda sessiz olun ve havuza girmeden önce duş alın."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Budapeşte ve tüm ülkede şebeke suyu içilebilir ve kalitelidir; eski binalarda birkaç saniye akıttıktan sonra için.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10–15 bahşiş yaygındır; hesapta “szervízdíj” (servis ücreti) varsa ek bahşiş gerekmez.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Bahşişi masaya bırakmak yerine ödeme sırasında toplam tutarı söyleyin; servis ücreti çoğu zaman %10–15’tir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%27 KDV (AB’nin en yükseği)",
+    "minSpend": "Aynı gün, aynı mağazada 70.000 HUF",
+    "customsNote": "AB dışında yaşayanlar mağazadan Tax Free formu alır; ürünleri kullanılmamış hâlde AB’den çıkarken Budapeşte Havalimanı’nda (dijital NAV sistemi) gümrüğe onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3.50",
+    "topCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary"
+    ],
+    "airportSimTrapWarning": "Havalimanı kioskları pahalıdır; Magyar Telekom, Yettel veya One mağazalarından pasaportla hat alın ya da önceden eSIM kurun. Türk hatlarında AB roaming paketi yoktur."
+   },
+   "touristScams": [
+    {
+     "title": "Bar hesabı tuzağı",
+     "desc": "Sokakta tanışılan kişilerin sizi götürdüğü barda yüzlerce euroluk hesap çıkması.",
+     "tip": "Yabancıların davet ettiği barlara gitmeyin; menüde fiyat görmeden sipariş vermeyin."
+    },
+    {
+     "title": "Váci utca menü tuzağı",
+     "desc": "Váci utca çevresinde fiyatsız menü ve şişirilmiş hesap.",
+     "tip": "Fiyatlı menü isteyin ve hesabı kalem kalem kontrol edin."
+    },
+    {
+     "title": "“Komisyonsuz” döviz",
+     "desc": "“No commission” yazan turistik bürolarda çok kötü kur.",
+     "tip": "Kuru önceden sorun, banka ATM’si kullanın ve forint olarak ödeme seçin."
+    }
+   ]
   }
  },
  "en": {
@@ -599,6 +659,66 @@
      "Keep your voice down in the baths and shower before entering the pools."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable and of good quality in Budapest and across the country; in old buildings let it run for a few seconds first.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "Tipping 10–15% is common in restaurants; if the bill includes ‘szervízdíj’ (service charge), no extra tip is needed.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Instead of leaving the tip on the table, tell the waiter the total when paying; the service charge is usually 10–15%."
+   },
+   "taxFree": {
+    "vatRefundPercent": "27% VAT (highest in the EU)",
+    "minSpend": "HUF 70,000 in the same store on the same day",
+    "customsNote": "Non-EU residents get a Tax Free form at the store; have the unused goods validated by customs at Budapest Airport (digital NAV system) when leaving the EU."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3.50",
+    "topCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary"
+    ],
+    "airportSimTrapWarning": "Airport kiosks are pricey; buy a SIM with your passport at Magyar Telekom, Yettel or One stores or install an eSIM in advance. Turkish SIMs have no EU roaming deal."
+   },
+   "touristScams": [
+    {
+     "title": "Bar bill scam",
+     "desc": "Strangers invite you to a bar that then presents a bill of hundreds of euros.",
+     "tip": "Do not follow strangers to bars and never order without seeing prices."
+    },
+    {
+     "title": "Váci utca menu trap",
+     "desc": "Restaurants around Váci utca with unpriced menus and padded bills.",
+     "tip": "Ask for a priced menu and check the bill line by line."
+    },
+    {
+     "title": "“No commission” exchange",
+     "desc": "Tourist exchange booths with bad rates behind “no commission” signs.",
+     "tip": "Ask for the rate first, use bank ATMs and choose to pay in forints."
+    }
+   ]
   }
  },
  "de": {
@@ -900,6 +1020,66 @@
      "In den Bädern leise sein und vor dem Becken duschen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist in Budapest und im ganzen Land trinkbar und von guter Qualität; in Altbauten erst ein paar Sekunden laufen lassen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "10–15 % Trinkgeld sind in Restaurants üblich; steht „szervízdíj“ (Servicegebühr) auf der Rechnung, ist kein Trinkgeld nötig.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Trinkgeld nicht auf dem Tisch lassen, sondern beim Bezahlen den Gesamtbetrag nennen; die Servicegebühr beträgt meist 10–15 %."
+   },
+   "taxFree": {
+    "vatRefundPercent": "27 % MwSt. (höchste der EU)",
+    "minSpend": "70.000 HUF am selben Tag im selben Geschäft",
+    "customsNote": "Nicht-EU-Bürger erhalten im Geschäft ein Tax-Free-Formular; die unbenutzten Waren bei der Ausreise aus der EU am Flughafen Budapest (digitales NAV-System) vom Zoll bestätigen lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3.50",
+    "topCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary"
+    ],
+    "airportSimTrapWarning": "Flughafenkioske sind teuer; mit Pass eine SIM in Shops von Magyar Telekom, Yettel oder One kaufen oder vorab eine eSIM installieren. Türkische SIMs haben kein EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Bar-Rechnungs-Masche",
+     "desc": "Fremde laden Sie in eine Bar ein, die dann eine Rechnung über Hunderte Euro vorlegt.",
+     "tip": "Fremden nicht in Bars folgen und nie ohne Preise bestellen."
+    },
+    {
+     "title": "Menüfalle Váci utca",
+     "desc": "Restaurants rund um die Váci utca mit Speisekarten ohne Preise und aufgeblähten Rechnungen.",
+     "tip": "Karte mit Preisen verlangen und die Rechnung Posten für Posten prüfen."
+    },
+    {
+     "title": "„Provisionsfreier“ Wechsel",
+     "desc": "Touristische Wechselstuben mit schlechten Kursen hinter „no commission“-Schildern.",
+     "tip": "Vorher nach dem Kurs fragen, Bankautomaten nutzen und in Forint zahlen."
+    }
+   ]
   }
  },
  "es": {
@@ -1201,6 +1381,66 @@
      "En los baños hable bajo y dúchese antes de entrar en las piscinas."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable y de buena calidad en Budapest y en todo el país; en edificios antiguos déjela correr unos segundos.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "Es habitual dejar un 10–15 % en restaurantes; si la cuenta incluye “szervízdíj” (servicio), no hace falta más.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "En lugar de dejar la propina en la mesa, diga el total al pagar; el cargo de servicio suele ser del 10–15 %."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 27 % (el más alto de la UE)",
+    "minSpend": "70.000 HUF el mismo día en la misma tienda",
+    "customsNote": "Los residentes fuera de la UE reciben en la tienda un formulario Tax Free; haga validar los productos sin usar en la aduana del aeropuerto de Budapest (sistema digital NAV) al salir de la UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3.50",
+    "topCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto son caros; compre una SIM con pasaporte en tiendas de Magyar Telekom, Yettel o One o instale una eSIM antes. Las SIM turcas no tienen roaming de la UE."
+   },
+   "touristScams": [
+    {
+     "title": "Estafa de la cuenta del bar",
+     "desc": "Desconocidos le invitan a un bar que luego presenta una cuenta de cientos de euros.",
+     "tip": "No siga a desconocidos a bares ni pida sin ver los precios."
+    },
+    {
+     "title": "Trampa del menú en Váci utca",
+     "desc": "Restaurantes de Váci utca con cartas sin precios y cuentas infladas.",
+     "tip": "Pida una carta con precios y revise la cuenta línea por línea."
+    },
+    {
+     "title": "Cambio “sin comisión”",
+     "desc": "Casetas de cambio turísticas con malas tasas tras carteles de “no commission”.",
+     "tip": "Pregunte antes la tasa, use cajeros de bancos y elija pagar en forintos."
+    }
+   ]
   }
  },
  "ru": {
@@ -1502,6 +1742,66 @@
      "В купальнях говорите тихо и принимайте душ перед бассейном."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода в Будапеште и по всей стране пригодна для питья и хорошего качества; в старых домах дайте ей стечь несколько секунд.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять 10–15 %; если в счёте есть «szervízdíj» (сервисный сбор), больше ничего не нужно.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Не оставляйте чаевые на столе, а назовите итоговую сумму при оплате; сервисный сбор обычно 10–15 %."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 27 % (самый высокий в ЕС)",
+    "minSpend": "70 000 HUF в один день в одном магазине",
+    "customsNote": "Жители стран вне ЕС получают в магазине форму Tax Free; при выезде из ЕС заверьте неиспользованные товары на таможне в аэропорту Будапешта (цифровая система NAV)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3.50",
+    "topCarriers": [
+     "Magyar Telekom",
+     "Yettel",
+     "One Hungary"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту дорогие; купите SIM по паспорту в салонах Magyar Telekom, Yettel или One или заранее установите eSIM. У турецких SIM нет роуминга по тарифам ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Барный счёт",
+     "desc": "Незнакомцы зовут в бар, где потом выставляют счёт на сотни евро.",
+     "tip": "Не ходите в бары с незнакомцами и не заказывайте, не увидев цен."
+    },
+    {
+     "title": "Меню на Вацкой улице",
+     "desc": "Рестораны у Váci utca с меню без цен и раздутыми счетами.",
+     "tip": "Просите меню с ценами и проверяйте счёт построчно."
+    },
+    {
+     "title": "Обмен «без комиссии»",
+     "desc": "Туристические обменники с плохим курсом под вывеской «no commission».",
+     "tip": "Сначала узнайте курс, пользуйтесь банкоматами банков и платите в форинтах."
+    }
+   ]
   }
  }
 }

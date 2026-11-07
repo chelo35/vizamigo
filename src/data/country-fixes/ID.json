@@ -324,6 +324,70 @@
      "Kaçak arak ve şüpheli ucuz içkilerden kaçının."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez, diş fırçalarken bile şişe su kullanın; buz genellikle fabrika üretimidir ama küçük tezgâhlarda dikkatli olun.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Kuduz (kırsal bölge veya uzun kalış)",
+     "Japon ensefaliti (kırsalda uzun kalış)",
+     "Sarıhumma sertifikası yalnızca sarıhumma riskli bir ülkeden geliyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118 / 119"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir; menüde “++” yazıyorsa servis ve %10 vergi fiyata eklenir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Şoför ve rehberlere 20.000–50.000 IDR bahşiş memnuniyetle karşılanır; Bali’de spa ve otel çalışanlarına küçük bahşiş yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%11 KDV (PPN)",
+    "minSpend": "5.000.000 IDR (fiş başına en az 500.000 IDR)",
+    "customsNote": "Yalnızca “VAT Refund for Tourists” logolu mağazalarda pasaportla alışveriş yapın; Soekarno-Hatta, Ngurah Rai (Bali) gibi uluslararası havalimanlarında check-in öncesi VAT Refund ofisine fatura ve ürünleri gösterin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "airportSimTrapWarning": "Havalimanı kioskları (özellikle Bali) hat ve paket için şehirdekinin iki-üç katını ister; Telkomsel/by.U eSIM’ini önceden alın veya resmî GraPARI mağazasına gidin. Yerel hatlar pasaport ve IMEI kaydı gerektirir."
+   },
+   "touristScams": [
+    {
+     "title": "Döviz bürosunda el çabukluğu",
+     "desc": "Bali’deki küçük döviz bürolarında sayarken banknot gizleyerek eksik para verilmesi.",
+     "tip": "Yalnızca “PT” unvanlı yetkili bürolarda bozdurun ve parayı tezgâhta kendiniz sayın."
+    },
+    {
+     "title": "Scooter hasar tuzağı",
+     "desc": "Kiralık scooter iadesinde önceden var olan çizikler için hasar ücreti istenmesi.",
+     "tip": "Teslim almadan önce aracın her yerini videoya çekin; pasaportunuzu rehin bırakmayın."
+    },
+    {
+     "title": "Komisyonlu “kahve turu”",
+     "desc": "Şoför ve rehberlerin sizi pahalı kopi luwak çiftliklerine ve hediyelik dükkânlarına götürmesi.",
+     "tip": "Rotayı önceden netleştirin; ilgilenmediğiniz durakları kibarca reddedin."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +715,70 @@
      "Avoid bootleg arak and suspiciously cheap drinks."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; use bottled water even for brushing teeth. Ice is usually factory-made, but be careful at small stalls.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Rabies (rural areas or long stays)",
+     "Japanese encephalitis (long rural stays)",
+     "Yellow fever certificate only if arriving from a yellow-fever-risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118 / 119"
+   },
+   "tipping": {
+    "custom": "Tipping is not required; prices marked “++” add service and 10% tax.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Drivers and guides appreciate IDR 20,000–50,000; small tips for spa and hotel staff are common in Bali."
+   },
+   "taxFree": {
+    "vatRefundPercent": "11% VAT (PPN)",
+    "minSpend": "IDR 5,000,000 (at least IDR 500,000 per receipt)",
+    "customsNote": "Shop with your passport at stores displaying the “VAT Refund for Tourists” logo, then show invoices and goods at the VAT Refund office before check-in at international airports such as Soekarno-Hatta or Ngurah Rai (Bali)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "airportSimTrapWarning": "Airport kiosks (especially in Bali) charge two to three times the town price; buy a Telkomsel/by.U eSIM in advance or go to an official GraPARI store. Local SIMs require passport and IMEI registration."
+   },
+   "touristScams": [
+    {
+     "title": "Money changer sleight of hand",
+     "desc": "Small money changers in Bali hide notes while counting and hand over less cash.",
+     "tip": "Use only licensed changers with “PT” in their name and count the money yourself at the counter."
+    },
+    {
+     "title": "Scooter damage scam",
+     "desc": "Rental shops charge “damage” fees for scratches that were already there.",
+     "tip": "Video the whole scooter before riding off and never leave your passport as a deposit."
+    },
+    {
+     "title": "Commission “coffee tour”",
+     "desc": "Drivers and guides steer you to overpriced kopi luwak plantations and souvenir shops.",
+     "tip": "Agree on the route in advance and politely skip stops you did not ask for."
+    }
+   ]
   }
  },
  "de": {
@@ -978,6 +1106,70 @@
      "Schwarzgebrannten Arak und verdächtig billige Getränke meiden."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; selbst zum Zähneputzen Flaschenwasser nehmen. Eis ist meist industriell hergestellt, an kleinen Ständen aber vorsichtig sein.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Tollwut (ländliche Gebiete oder lange Aufenthalte)",
+     "Japanische Enzephalitis (lange Aufenthalte auf dem Land)",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Gelbfieber-Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118 / 119"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht; bei Preisen mit „++“ kommen Service und 10 % Steuer hinzu.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Fahrer und Guides freuen sich über 20.000–50.000 IDR; auf Bali sind kleine Trinkgelder für Spa- und Hotelpersonal üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "11 % MwSt. (PPN)",
+    "minSpend": "5.000.000 IDR (mindestens 500.000 IDR pro Beleg)",
+    "customsNote": "Mit Reisepass in Geschäften mit dem Logo „VAT Refund for Tourists“ einkaufen und Rechnungen samt Waren vor dem Check-in am VAT-Refund-Schalter internationaler Flughäfen wie Soekarno-Hatta oder Ngurah Rai (Bali) vorzeigen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "airportSimTrapWarning": "Flughafenkioske (vor allem auf Bali) verlangen das Zwei- bis Dreifache des Stadtpreises; vorab eine Telkomsel/by.U-eSIM kaufen oder einen offiziellen GraPARI-Shop aufsuchen. Lokale SIMs erfordern Pass- und IMEI-Registrierung."
+   },
+   "touristScams": [
+    {
+     "title": "Tricks beim Geldwechsel",
+     "desc": "Kleine Wechselstuben auf Bali lassen beim Zählen Scheine verschwinden und zahlen zu wenig aus.",
+     "tip": "Nur lizenzierte Wechselstuben mit „PT“ im Namen nutzen und das Geld selbst am Schalter nachzählen."
+    },
+    {
+     "title": "Roller-Schadensmasche",
+     "desc": "Verleiher verlangen „Schadensgebühren“ für Kratzer, die schon vorher da waren.",
+     "tip": "Den Roller vor der Fahrt rundum filmen und nie den Pass als Pfand hinterlegen."
+    },
+    {
+     "title": "Provisions-„Kaffeetour“",
+     "desc": "Fahrer und Guides lotsen Sie zu überteuerten Kopi-Luwak-Plantagen und Souvenirläden.",
+     "tip": "Route vorher festlegen und ungewollte Stopps höflich ablehnen."
+    }
+   ]
   }
  },
  "es": {
@@ -1305,6 +1497,70 @@
      "Evita el arak casero y las bebidas sospechosamente baratas."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; use agua embotellada incluso para lavarse los dientes. El hielo suele ser industrial, pero tenga cuidado en puestos pequeños.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Rabia (zonas rurales o estancias largas)",
+     "Encefalitis japonesa (estancias rurales largas)",
+     "Certificado de fiebre amarilla solo si llega desde un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118 / 119"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria; los precios con “++” suman servicio y un 10 % de impuesto.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Conductores y guías agradecen 20.000–50.000 IDR; en Bali es habitual dejar algo al personal del spa y del hotel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 11 % (PPN)",
+    "minSpend": "5.000.000 IDR (mínimo 500.000 IDR por ticket)",
+    "customsNote": "Compre con pasaporte en tiendas con el logo “VAT Refund for Tourists” y muestre facturas y productos en la oficina de VAT Refund antes de facturar en aeropuertos internacionales como Soekarno-Hatta o Ngurah Rai (Bali)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto (sobre todo en Bali) cobran dos o tres veces el precio de la ciudad; compre antes una eSIM de Telkomsel/by.U o vaya a una tienda oficial GraPARI. Las SIM locales exigen registro de pasaporte e IMEI."
+   },
+   "touristScams": [
+    {
+     "title": "Truco en la casa de cambio",
+     "desc": "En pequeñas casas de cambio de Bali esconden billetes al contar y le dan menos dinero.",
+     "tip": "Cambie solo en casas autorizadas con “PT” en el nombre y cuente usted el dinero en el mostrador."
+    },
+    {
+     "title": "Estafa de daños en la moto",
+     "desc": "El local de alquiler cobra “daños” por arañazos que ya existían.",
+     "tip": "Grabe en vídeo toda la moto antes de salir y no deje nunca el pasaporte como fianza."
+    },
+    {
+     "title": "“Tour del café” con comisión",
+     "desc": "Conductores y guías le llevan a plantaciones de kopi luwak caras y tiendas de recuerdos.",
+     "tip": "Acuerde la ruta antes y rechace con cortesía las paradas que no pidió."
+    }
+   ]
   }
  },
  "ru": {
@@ -1632,6 +1888,70 @@
      "Избегайте самодельного арака и подозрительно дешёвых напитков."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; даже для чистки зубов используйте бутилированную. Лёд обычно заводской, но в мелких лавках будьте осторожны.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Бешенство (сельская местность или долгое пребывание)",
+     "Японский энцефалит (долгое пребывание в сельской местности)",
+     "Сертификат о прививке от жёлтой лихорадки — только при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118 / 119"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны; к ценам с пометкой «++» добавляются сервисный сбор и 10 % налога.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Водителям и гидам приятно получить 20 000–50 000 IDR; на Бали принято оставлять немного персоналу спа и отеля."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 11 % (PPN)",
+    "minSpend": "5 000 000 IDR (не менее 500 000 IDR на чек)",
+    "customsNote": "Покупайте с паспортом в магазинах с логотипом «VAT Refund for Tourists», затем до регистрации на рейс предъявите чеки и товары в офисе VAT Refund международных аэропортов, например Сукарно-Хатта или Нгурах-Рай (Бали)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту (особенно на Бали) берут в два-три раза больше, чем в городе; купите eSIM Telkomsel/by.U заранее или идите в официальный салон GraPARI. Местные SIM требуют регистрации паспорта и IMEI."
+   },
+   "touristScams": [
+    {
+     "title": "Ловкость рук в обменнике",
+     "desc": "В мелких обменниках на Бали при пересчёте прячут купюры и выдают меньше.",
+     "tip": "Меняйте только в лицензированных пунктах с «PT» в названии и сами пересчитывайте деньги у стойки."
+    },
+    {
+     "title": "Мошенничество с прокатом скутера",
+     "desc": "Прокат требует плату за «повреждения» — царапины, которые были до вас.",
+     "tip": "Снимите скутер на видео со всех сторон перед поездкой и не оставляйте паспорт в залог."
+    },
+    {
+     "title": "«Кофейный тур» с комиссией",
+     "desc": "Водители и гиды везут на дорогие плантации копи-лювак и в сувенирные лавки.",
+     "tip": "Заранее согласуйте маршрут и вежливо отказывайтесь от лишних остановок."
+    }
+   ]
   }
  }
 }

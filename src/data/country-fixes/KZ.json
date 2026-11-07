@@ -324,6 +324,67 @@
      "Büyüklere saygı gösterin; sofrada ekmeği ters koymayın."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Almatı ve Astana’da şebeke suyu arıtılır ama eski borular nedeniyle şişe veya filtreli su önerilir; dağ derelerinden içmeden önce suyu kaynatın.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restoran hesaplarına çoğu zaman %10–15 servis ücreti eklenir; yoksa %10 bahşiş adettir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Hesapta “обслуживание” satırı varsa ek bahşiş gerekmez; taksilerde bahşiş beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%16 KDV (pilot Tax Free projesi)",
+    "minSpend": "Fiş başına 10 AEK (~43.000 KZT)",
+    "customsNote": "Pilot Tax Free projesine katılan mağazalardan (ör. büyük AVM’ler) gıda dışı ürün alın; ürünü Avrasya Ekonomik Birliği dışına çıkarırken havalimanında gümrüğe onaylatın. Katılımcı mağaza sayısı sınırlıdır, önceden sorun."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "airportSimTrapWarning": "Havalimanı stantları turist paketlerini şehre göre pahalı satar; şehirdeki Beeline, Kcell veya Tele2 mağazalarında pasaportla ucuz hat alın. Yabancı hatların IMEI kaydı gerekebilir."
+   },
+   "touristScams": [
+    {
+     "title": "Korsan taksi",
+     "desc": "Havalimanı ve garlarda ruhsatsız taksicilerin fahiş ücret istemesi.",
+     "tip": "Yandex Go veya inDrive kullanın; fiyatı uygulamada görün."
+    },
+    {
+     "title": "Sahte polis",
+     "desc": "Belge kontrolü bahanesiyle para isteyen sahte polisler.",
+     "tip": "Kimlik isteyin, para vermeyin; pasaportun fotokopisini taşıyın ve şüphede 102’yi arayın."
+    },
+    {
+     "title": "Bar hesabı ve içki",
+     "desc": "Bazı barlarda şişirilmiş hesap veya içkiye ilaç katılması.",
+     "tip": "İçkinizi gözden ayırmayın, menüde fiyatı görmeden sipariş vermeyin."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +712,67 @@
      "Respect elders and never place bread upside down at the table."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water in Almaty and Astana is treated, but old pipes make bottled or filtered water advisable; boil water from mountain streams before drinking.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restaurant bills often include a 10–15% service charge; if not, a 10% tip is customary.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "If the bill has an “обслуживание” (service) line no extra tip is needed; taxi drivers do not expect tips."
+   },
+   "taxFree": {
+    "vatRefundPercent": "16% VAT (pilot Tax Free project)",
+    "minSpend": "10 MRP per receipt (~KZT 43,000)",
+    "customsNote": "Buy non-food goods at stores taking part in the pilot Tax Free project (e.g. large malls) and have them validated by customs at the airport when taking them out of the Eurasian Economic Union. Participating stores are few, so ask first."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "airportSimTrapWarning": "Airport counters sell tourist packs above town prices; buy a cheap SIM with your passport at Beeline, Kcell or Tele2 stores in town. Foreign phones may need IMEI registration."
+   },
+   "touristScams": [
+    {
+     "title": "Unofficial taxis",
+     "desc": "Unlicensed drivers at airports and stations quote inflated fares.",
+     "tip": "Use Yandex Go or inDrive and see the price in the app."
+    },
+    {
+     "title": "Fake police",
+     "desc": "Fake officers ask for money on the pretext of checking documents.",
+     "tip": "Ask for ID and do not hand over money; carry a passport copy and call 102 if in doubt."
+    },
+    {
+     "title": "Bar bills and drinks",
+     "desc": "Inflated bills or spiked drinks in some bars.",
+     "tip": "Never leave your drink unattended and do not order without seeing prices."
+    }
+   ]
   }
  },
  "de": {
@@ -978,6 +1100,67 @@
      "Älteren Respekt zeigen und Brot nie verkehrt herum auf den Tisch legen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser in Almaty und Astana wird aufbereitet, wegen alter Rohre aber besser Flaschen- oder Filterwasser trinken; Wasser aus Bergbächen vorher abkochen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restaurantrechnungen enthalten oft 10–15 % Servicegebühr; sonst sind 10 % Trinkgeld üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Steht „обслуживание“ (Service) auf der Rechnung, ist kein Trinkgeld nötig; Taxifahrer erwarten keins."
+   },
+   "taxFree": {
+    "vatRefundPercent": "16 % MwSt. (Tax-Free-Pilotprojekt)",
+    "minSpend": "10 MRP pro Beleg (~43.000 KZT)",
+    "customsNote": "Non-Food-Waren in Geschäften kaufen, die am Tax-Free-Pilotprojekt teilnehmen (z. B. große Malls), und bei der Ausfuhr aus der Eurasischen Wirtschaftsunion am Flughafen vom Zoll bestätigen lassen. Es gibt nur wenige teilnehmende Geschäfte, vorher fragen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "airportSimTrapWarning": "Flughafenstände verkaufen Touristenpakete teurer als in der Stadt; in Beeline-, Kcell- oder Tele2-Shops in der Stadt gibt es mit Pass günstige SIMs. Ausländische Handys brauchen eventuell eine IMEI-Registrierung."
+   },
+   "touristScams": [
+    {
+     "title": "Inoffizielle Taxis",
+     "desc": "Unlizenzierte Fahrer an Flughäfen und Bahnhöfen verlangen überhöhte Preise.",
+     "tip": "Yandex Go oder inDrive nutzen und den Preis in der App sehen."
+    },
+    {
+     "title": "Falsche Polizei",
+     "desc": "Falsche Polizisten verlangen unter dem Vorwand einer Dokumentenkontrolle Geld.",
+     "tip": "Dienstausweis verlangen und kein Geld geben; Passkopie mitführen und im Zweifel 102 anrufen."
+    },
+    {
+     "title": "Barrechnungen und Getränke",
+     "desc": "Überhöhte Rechnungen oder präparierte Getränke in manchen Bars.",
+     "tip": "Getränk nie unbeaufsichtigt lassen und nicht ohne Preise bestellen."
+    }
+   ]
   }
  },
  "es": {
@@ -1305,6 +1488,67 @@
      "Respeta a los mayores y nunca pongas el pan boca abajo en la mesa."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En Almaty y Astaná el agua del grifo se trata, pero por las tuberías antiguas conviene beber agua embotellada o filtrada; hierva el agua de arroyos de montaña antes de beberla.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Las cuentas de restaurante suelen incluir un 10–15 % de servicio; si no, es costumbre dejar un 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Si la cuenta tiene una línea “обслуживание” (servicio) no hace falta más; los taxistas no esperan propina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 16 % (proyecto piloto Tax Free)",
+    "minSpend": "10 MRP por ticket (~43.000 KZT)",
+    "customsNote": "Compre productos no alimentarios en tiendas adheridas al proyecto piloto Tax Free (p. ej. grandes centros comerciales) y valídelos en la aduana del aeropuerto al sacarlos de la Unión Económica Euroasiática. Hay pocas tiendas adheridas, pregunte antes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "airportSimTrapWarning": "Los mostradores del aeropuerto venden paquetes turísticos más caros que en la ciudad; compre una SIM barata con pasaporte en tiendas de Beeline, Kcell o Tele2. Los móviles extranjeros pueden necesitar registro IMEI."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis no oficiales",
+     "desc": "Conductores sin licencia en aeropuertos y estaciones piden tarifas infladas.",
+     "tip": "Use Yandex Go o inDrive y vea el precio en la app."
+    },
+    {
+     "title": "Falsa policía",
+     "desc": "Falsos agentes piden dinero con la excusa de revisar documentos.",
+     "tip": "Pida la identificación y no entregue dinero; lleve copia del pasaporte y llame al 102 si duda."
+    },
+    {
+     "title": "Cuentas y bebidas en bares",
+     "desc": "Cuentas infladas o bebidas adulteradas en algunos bares.",
+     "tip": "No pierda de vista su bebida y no pida sin ver los precios."
+    }
+   ]
   }
  },
  "ru": {
@@ -1632,6 +1876,67 @@
      "Уважайте старших и не кладите хлеб на стол вверх дном."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В Алматы и Астане водопроводная вода очищается, но из-за старых труб лучше пить бутилированную или фильтрованную; воду из горных ручьёв кипятите.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "В счёт ресторана часто включён сервисный сбор 10–15 %; если нет, принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Если в счёте есть строка «обслуживание», больше ничего не нужно; таксисты чаевых не ждут."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 16 % (пилотный проект Tax Free)",
+    "minSpend": "10 МРП на чек (~43 000 KZT)",
+    "customsNote": "Покупайте непродовольственные товары в магазинах-участниках пилотного проекта Tax Free (например, крупных ТЦ) и заверяйте их на таможне в аэропорту при вывозе за пределы ЕАЭС. Участников немного, уточняйте заранее."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "airportSimTrapWarning": "Стойки в аэропорту продают туристические пакеты дороже, чем в городе; дешёвую SIM по паспорту купите в салонах Beeline, Kcell или Tele2. Иностранным телефонам может понадобиться регистрация IMEI."
+   },
+   "touristScams": [
+    {
+     "title": "Нелегальные такси",
+     "desc": "Нелицензированные водители в аэропортах и на вокзалах завышают цену.",
+     "tip": "Пользуйтесь Yandex Go или inDrive и смотрите цену в приложении."
+    },
+    {
+     "title": "Фальшивые полицейские",
+     "desc": "Лжеполицейские требуют деньги под предлогом проверки документов.",
+     "tip": "Попросите удостоверение и не давайте денег; носите копию паспорта и при сомнениях звоните 102."
+    },
+    {
+     "title": "Счета и напитки в барах",
+     "desc": "В некоторых барах завышают счёт или подмешивают что-то в напитки.",
+     "tip": "Не оставляйте напиток без присмотра и не заказывайте, не увидев цен."
+    }
+   ]
   }
  }
 }

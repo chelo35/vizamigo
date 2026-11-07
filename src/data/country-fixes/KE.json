@@ -1,0 +1,1922 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Kenya Şilini (KES)",
+   "plugType": "Tip G (240V, 50Hz)",
+   "bestMonths": "Haziran – Ekim (kurak sezon; Masai Mara’da Büyük Göç Temmuz – Ekim) ve Ocak – Şubat · Mart – Mayıs uzun yağmurlar, Kasım kısa yağmurlar",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Nairobi’de kapkaç, gasp ve araç soygunları yaygındır; özellikle şehir merkezi (CBD) ve gecekondu bölgelerinde geceleri risk yüksektir. Resmî uyarılar Somali sınırı ve kuzeydoğu bölgeleri için seyahati önermez, terör tehdidi de bulunur. Safari parkları ve sahil tatil köyleri genelde sorunsuzdur.",
+    "commonScams": [
+     "Sahte safari şirketleri ve önceden kaparo isteyip ortadan kaybolan “acenteler”",
+     "Nairobi merkezinde acıklı hikâye anlatıp para isteyen “öğrenci” veya “mülteci” dolandırıcılığı",
+     "Diani ve Mombasa’da “beach boy”ların aşırı fiyatlı gezi ve hediyelik satması"
+    ],
+    "safeTravelTips": [
+     "Safariyi KATO (Kenya Tur Operatörleri Birliği) üyesi şirketlerden ayarlayın.",
+     "Nairobi’de gece yürümeyin; Uber/Bolt ya da otel taksisi kullanın.",
+     "Somali sınırı, Lamu ilçesinin kara bölgeleri ve kuzeydoğudaki resmî uyarı bölgelerinden uzak durun."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%95+ nüfus (4G; Nairobi ve Mombasa’da 5G)",
+    "costPerGbUsd": "0.50 - 1.50 $",
+    "esimAvailability": "İyi (Safaricom eSIM sunar; SIM için pasaport ile kayıt zorunlu)",
+    "bestCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (matatu minibüsleri ve Nairobi – Mombasa SGR treni; şehir içinde araç çağırma uygulamaları en pratik)",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Yok (SGR Nairobi – Mombasa ekonomi ~12 - 15 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Little"
+    ],
+    "taxiAdvice": "Nairobi’de Uber, Bolt ve Little güvenilirdir; sokak taksilerinde fiyatı önceden pazarlık edin. Safari parklarına ulaşım için tur aracı ya da iç hat uçuşu (Safarilink, AirKenya) kullanılır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 170 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Orta (İstanbul – Nairobi direkt THY, ~6,5 saat)",
+    "flightTip": "THY İstanbul – Nairobi ve Mombasa’ya direkt uçar; Masai Mara’ya Nairobi Wilson Havalimanı’ndan küçük uçaklarla 45 dakikada gidilir (bagaj limiti ~15 kg yumuşak çanta)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma önemlidir: konuya girmeden önce “Habari?” diye hâl hatır sorun.",
+     "Masai ve diğer toplulukların fotoğrafını çekmeden önce izin isteyin; bazen ücret talep edilir.",
+     "Para ve yiyecek verirken sağ eli kullanın; büyüklere saygı gösterilir.",
+     "Plastik poşetler yasaktır; ülkeye poşet getirmeyin."
+    ],
+    "festivals": [
+     "Lamu Kültür Festivali (Kasım)",
+     "Mashujaa (Kahramanlar) Günü (20 Ekim)",
+     "Safari Rallisi – WRC (Naivasha, Mart)"
+    ],
+    "lifestyle": "Kenyalılar sıcak, esprili ve girişimcidir; M-Pesa ile mobil ödeme hayatın her yerindedir. Nairobi’de hareketli bir müzik ve kafe kültürü, kırsalda ise topluluk ve aile bağları ön plandadır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Masai Mara Ulusal Rezervi (Büyük Göç)",
+     "Amboseli Ulusal Parkı (Kilimanjaro manzarası ve filler)",
+     "Nairobi Ulusal Parkı ve Sheldrick fil yetimhanesi",
+     "Naivasha ve Nakuru gölleri",
+     "Diani Plajı",
+     "Lamu Eski Kenti (UNESCO)"
+    ],
+    "bestSeasons": "Haziran – Ekim (kurak sezon; Masai Mara’da Büyük Göç Temmuz – Ekim) ve Ocak – Şubat · Mart – Mayıs uzun yağmurlar, Kasım kısa yağmurlar",
+    "travelStyleTip": "Safariyi en az 3 gece ayırarak planlayın, ardından Hint Okyanusu kıyısında (Diani veya Watamu) dinlenin."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyanlık (~%85; Protestan ve Katolik), İslam (~%11; özellikle sahil ve kuzeydoğu), geleneksel inançlar",
+    "respectNorms": "Sahildeki Müslüman kasabalarda (Lamu, Mombasa Eski Kent) omuz ve dizleri örtün; Ramazan’da sokakta yiyip içmekten kaçının.",
+    "sacredSites": [
+     "Jamia Camii (Nairobi)",
+     "Kutsal Aile Bazilikası (Nairobi)",
+     "Mijikenda Kaya kutsal ormanları (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Svahili ve İngilizce resmî dillerdir; ayrıca Kikuyu, Luo, Luhya, Kalenjin ve Maa gibi 40’tan fazla yerel dil konuşulur.",
+    "englishProficiency": "İyi; şehirlerde ve turizm bölgelerinde İngilizce rahatlıkla konuşulur.",
+    "phrases": [
+     {
+      "phrase": "Jambo! / Habari?",
+      "meaning": "Merhaba! / Ne haber? (Svahili)",
+      "translation": "Merhaba! / Ne haber? (Svahili)",
+      "pronunciation": "jam-bo / ha-ba-ri"
+     },
+     {
+      "phrase": "Asante sana",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "a-san-te sa-na"
+     },
+     {
+      "phrase": "Karibu",
+      "meaning": "Hoş geldiniz / Buyurun",
+      "translation": "Hoş geldiniz / Buyurun",
+      "pronunciation": "ka-ri-bu"
+     },
+     {
+      "phrase": "Bei gani?",
+      "meaning": "Fiyatı ne kadar?",
+      "translation": "Fiyatı ne kadar?",
+      "pronunciation": "bey ga-ni"
+     },
+     {
+      "phrase": "Pole pole",
+      "meaning": "Yavaş yavaş / Acele yok",
+      "translation": "Yavaş yavaş / Acele yok",
+      "pronunciation": "po-le po-le"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Sahil şeritleri yüzyıllar boyunca Arap, Fars ve Hint tüccarlarıyla Svahili kültürünü oluşturdu. 1498’de Vasco da Gama Malindi’ye ulaştı; 1895’te İngiliz Doğu Afrika Protektoratı kuruldu. Mau Mau ayaklanmasının ardından 1963’te bağımsızlık kazanıldı.",
+    "milestones": [
+     "1498: Vasco da Gama Malindi’ye ulaştı",
+     "1895: İngiliz Doğu Afrika Protektoratı",
+     "1952–1960: Mau Mau ayaklanması",
+     "1963: Bağımsızlık, Jomo Kenyatta ilk lider"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nyama choma (közde ızgara keçi veya sığır eti)",
+     "Ugali ve sukuma wiki (mısır unu lapası ve kara lahana)",
+     "Pilau (sahil usulü baharatlı pilav)"
+    ],
+    "traditionalDrinks": [
+     "Kenya çayı – chai (sütlü, baharatlı)",
+     "Kenya AA kahvesi",
+     "Tusker birası ve Dawa kokteyli"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandazi (Svahili pişi)",
+     "Mahindi choma (közde mısır)",
+     "Samosa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Wangari Maathai (Nobel Barış Ödülü 2004)",
+     "Eliud Kipchoge (olimpiyat maraton şampiyonu)",
+     "Lupita Nyong’o (Oscar ödüllü oyuncu)"
+    ],
+    "strongSectors": [
+     "Çay ihracatı (dünyanın önde gelen ihracatçılarından)",
+     "Kesme çiçek (Naivasha)",
+     "Mobil ödeme ve teknoloji (M-Pesa, “Silicon Savannah”)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kartlar otel, lodge ve AVM’lerde geçer; günlük hayatta M-Pesa hâkimdir. Pazar, matatu ve bahşiş için nakit şilin taşıyın; safari ücretleri çoğunlukla USD ile ödenir.",
+    "tippingCulture": "Restoranlarda %10 bahşiş yaygındır; safari rehberi ve şoföre kişi başı günlük ~10 - 20 $ bahşiş gelenektir.",
+    "economicPillars": "Tarım (çay, kahve, çiçek), turizm, mobil finans ve teknoloji, lojistik (Mombasa Limanı)."
+   }
+  },
+  "itin": {
+   "routeName": "Kenya Safari ve Sahil: Nairobi, Naivasha, Masai Mara ve Diani",
+   "routeSummary": "Nairobi’nin fil yetimhanesi ve ulusal parkından Naivasha Gölü’ne, Masai Mara’da Büyük Göç safarisine ve Diani’nin beyaz kumsallarına uzanan 9 günlük rota.",
+   "totalDays": 9,
+   "idealDurationText": "9 günlük rota",
+   "bestSeason": "Haziran – Ekim (kurak sezon; Masai Mara’da Büyük Göç Temmuz – Ekim) ve Ocak – Şubat · Mart – Mayıs uzun yağmurlar, Kasım kısa yağmurlar",
+   "transportMode": "Nairobi – Naivasha – Masai Mara tur aracı (4x4); Mara – Diani küçük uçak (Wilson/Ukunda) veya Nairobi – Mombasa SGR treni",
+   "paceLevel": "Dengeli (safari ve plaj)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Nairobi",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Nairobi Ulusal Parkı (şehir manzaralı safari)",
+      "Sheldrick Fil Yetimhanesi",
+      "Giraffe Centre (zürafa merkezi)",
+      "Karen Blixen Müzesi"
+     ],
+     "activities": [
+      "Sabah fil yetimhanesinde yavru fillerin beslenmesini izleyin (11:00).",
+      "Giraffe Centre’da Rothschild zürafalarını elinizle besleyin.",
+      "Akşamüstü Nairobi Ulusal Parkı’nda gökdelen arka planlı safari yapın."
+     ],
+     "foodAndDrinks": [
+      "Nyama choma (Carnivore restoranı)",
+      "Kenya çayı ve mandazi"
+     ],
+     "criticalTips": [
+      "Sheldrick ziyareti önceden online rezervasyon gerektirir.",
+      "Şehir merkezinde gece yürümeyin; Uber kullanın."
+     ],
+     "mapsQuery": "Nairobi National Park, Nairobi, Kenya"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Naivasha Gölü",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Naivasha Gölü’nde su aygırları ve kuşlar",
+      "Crescent Adası yürüyüş safarisi",
+      "Hell’s Gate Ulusal Parkı"
+     ],
+     "activities": [
+      "Tekneyle göle açılıp su aygırlarını ve balık kartallarını izleyin.",
+      "Crescent Adası’nda zürafa ve zebraların arasında yürüyün.",
+      "Hell’s Gate’te bisikletle kanyonlar arasında gezin."
+     ],
+     "foodAndDrinks": [
+      "Göl tilapyası",
+      "Taze meyve suyu"
+     ],
+     "criticalTips": [
+      "Su aygırlarına kıyıda yaklaşmayın; çok tehlikelidirler.",
+      "Hell’s Gate’te kanyon yürüyüşünü yerel rehberle yapın."
+     ],
+     "mapsQuery": "Lake Naivasha, Kenya"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Masai Mara",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Büyük Göç ve Mara Nehri geçişleri (Temmuz – Ekim)",
+      "Aslan, leopar ve çita",
+      "Masai köyü ziyareti",
+      "Sıcak hava balonu safarisi"
+     ],
+     "activities": [
+      "Şafakta ve akşamüstü oyun sürüşlerine (game drive) çıkın.",
+      "Sabah erken sıcak hava balonuyla savan üzerinde uçun.",
+      "Masai topluluğunun köyünü rehber eşliğinde ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Lodge’da açık büfe ve mangal",
+      "Kenya kahvesi"
+     ],
+     "criticalTips": [
+      "Koruma alanı ücreti yüksektir (yüksek sezonda kişi başı günlük ~200 $); bütçenize ekleyin.",
+      "Sabah serin, öğlen sıcaktır; katmanlı giyinin ve nötr renkler seçin."
+     ],
+     "mapsQuery": "Maasai Mara National Reserve, Kenya"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Diani Plajı",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Beyaz kumlu Diani sahili",
+      "Kisite-Mpunguti Deniz Parkı (yunus ve şnorkel)",
+      "Colobus Conservation (maymun koruma merkezi)",
+      "Shimba Hills Ulusal Parkı"
+     ],
+     "activities": [
+      "Wasini Adası tekne turunda yunus izleyip şnorkel yapın.",
+      "Kitesurf veya geleneksel dhow teknesiyle gün batımı turu deneyin.",
+      "Mombasa Eski Kenti ve Fort Jesus’u (UNESCO) günübirlik gezin."
+     ],
+     "foodAndDrinks": [
+      "Svahili usulü balık körisi",
+      "Hindistan cevizli pilav ve taze deniz ürünleri"
+     ],
+     "criticalTips": [
+      "Beach boy’ların teklif ettiği turlar yerine otelinizin önerdiği lisanslı operatörleri seçin.",
+      "Sahil sıtma riskli bölgedir; sivrisinek kovucu kullanın."
+     ],
+     "mapsQuery": "Diani Beach, Kenya"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nyama choma (közde ızgara keçi veya sığır eti)",
+     "Ugali ve sukuma wiki (mısır unu lapası ve kara lahana)",
+     "Pilau (sahil usulü baharatlı pilav)"
+    ],
+    "drinks": [
+     "Kenya çayı – chai (sütlü, baharatlı)",
+     "Kenya AA kahvesi",
+     "Tusker birası ve Dawa kokteyli"
+    ],
+    "streetFoods": [
+     "Mandazi (Svahili pişi)",
+     "Mahindi choma (közde mısır)",
+     "Samosa"
+    ],
+    "diningAdvice": "Yerel lokantalarda (“hoteli”) ugali ve nyama choma ucuz ve lezzetlidir; yemeği sağ elle yemek gelenektir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi (İngiliz) priz adaptörü",
+     "Safari için haki/bej katmanlı kıyafet ve dürbün",
+     "Sıtma ilacı (doktor önerisiyle) ve sivrisinek kovucu",
+     "Plastik poşet getirmeyin (ülkede yasak)"
+    ],
+    "safetyAndEtiquette": [
+     "Masai ve diğer kişilerin fotoğrafını izin almadan çekmeyin.",
+     "Safaride rehberin talimatlarına uyun, araçtan inmeyin.",
+     "Nairobi’de değerli eşyalarınızı göstermeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G prizi (üç dikdörtgen pim) kullanılır; Türk fişleri için adaptör şarttır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; şişe veya filtrelenmiş su kullanın, buz ve çiğ salataya dikkat edin.",
+    "vaccines": [
+     "Sarıhumma (önerilir; riskli bir ülkeden geliyorsanız sertifika istenir)",
+     "Sıtma profilaksisi (Nairobi dışı ve sahil)",
+     "Hepatit A ve tifo",
+     "Kuduz (uzun süreli veya kırsal seyahatte)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Restoranda %10; safari rehberine kişi başı günlük 10 - 20 $; hamal ve lodge personeline küçük bahşiş."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (KDV %16)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Kenya’da turistlere KDV iadesi yoktur. Fildişi, hayvan derisi ve deniz kabuğu/mercan çıkarmak yasaktır; plastik poşet ithali yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki Safaricom ve Airtel mağazaları güvenilirdir; pasaportla kayıt yapılır. Sokakta kayıtsız SIM satanlardan almayın."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte safari acentesi",
+     "desc": "İnternette çok ucuz safari ilanı verip kaparoyu alan şirketler ortadan kaybolur.",
+     "tip": "KATO üyeliğini ve yorumları kontrol edin."
+    },
+    {
+     "title": "Acıklı hikâye",
+     "desc": "Nairobi merkezinde “öğrenci” ya da “mülteci” olduğunu söyleyen kişiler bağış ister veya sizi bir yere götürmek ister.",
+     "tip": "Kibarca reddedip yolunuza devam edin."
+    },
+    {
+     "title": "Beach boy turları",
+     "desc": "Sahilde yaklaşan satıcılar lisanssız, fahiş fiyatlı tekne turları satar.",
+     "tip": "Turları otel veya lisanslı operatörden alın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Kenyan Shilling (KES)",
+   "plugType": "Type G (240V, 50Hz)",
+   "bestMonths": "June – October (dry season; Great Migration in the Masai Mara July – October) and January – February · long rains March – May, short rains in November",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Snatch theft, mugging and car robberies are common in Nairobi, especially in the city centre (CBD) and informal settlements at night. Official advisories warn against travel to the Somali border and north-eastern areas, and there is a terrorism threat. Safari parks and coastal resorts are generally fine.",
+    "commonScams": [
+     "Fake safari companies and “agents” who take a deposit and disappear",
+     "“Student” or “refugee” sob stories asking for money in central Nairobi",
+     "“Beach boys” in Diani and Mombasa selling overpriced trips and souvenirs"
+    ],
+    "safeTravelTips": [
+     "Book safaris with members of KATO (Kenya Association of Tour Operators).",
+     "Don’t walk at night in Nairobi; use Uber/Bolt or a hotel taxi.",
+     "Stay away from the Somali border, mainland Lamu County and other areas covered by official warnings."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ of population (4G; 5G in Nairobi and Mombasa)",
+    "costPerGbUsd": "0.50 - 1.50 $",
+    "esimAvailability": "Good (Safaricom offers eSIM; SIM registration with passport is mandatory)",
+    "bestCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (matatu minibuses and the Nairobi – Mombasa SGR train; ride-hailing is most practical in cities)",
+    "costLevel": "Budget",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "None (SGR Nairobi – Mombasa economy ~12 - 15 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Little"
+    ],
+    "taxiAdvice": "Uber, Bolt and Little are reliable in Nairobi; agree the fare with street taxis beforehand. Safari parks are reached by tour vehicle or domestic flight (Safarilink, AirKenya)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 170 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Moderate (Istanbul – Nairobi direct on Turkish Airlines, ~6.5 hours)",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Nairobi and Mombasa; small planes from Nairobi Wilson Airport reach the Masai Mara in 45 minutes (luggage limit ~15 kg in soft bags)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings matter: ask “Habari?” before getting to business.",
+     "Ask permission before photographing Maasai and other communities; a fee is sometimes requested.",
+     "Use the right hand to give money and food; elders are shown respect.",
+     "Plastic bags are banned; don’t bring them into the country."
+    ],
+    "festivals": [
+     "Lamu Cultural Festival (November)",
+     "Mashujaa (Heroes’) Day (20 October)",
+     "Safari Rally – WRC (Naivasha, March)"
+    ],
+    "lifestyle": "Kenyans are warm, witty and entrepreneurial; mobile payments via M-Pesa are everywhere. Nairobi has a lively music and café scene, while rural life centres on community and family ties."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Masai Mara National Reserve (Great Migration)",
+     "Amboseli National Park (Kilimanjaro views and elephants)",
+     "Nairobi National Park and the Sheldrick elephant orphanage",
+     "Lakes Naivasha and Nakuru",
+     "Diani Beach",
+     "Lamu Old Town (UNESCO)"
+    ],
+    "bestSeasons": "June – October (dry season; Great Migration in the Masai Mara July – October) and January – February · long rains March – May, short rains in November",
+    "travelStyleTip": "Plan at least 3 nights on safari, then relax on the Indian Ocean coast (Diani or Watamu)."
+   },
+   "religion": {
+    "primaryReligions": "Christianity (~85%; Protestant and Catholic), Islam (~11%; mainly the coast and north-east), traditional beliefs",
+    "respectNorms": "In Muslim coastal towns (Lamu, Mombasa Old Town) cover shoulders and knees; avoid eating and drinking in the street during Ramadan.",
+    "sacredSites": [
+     "Jamia Mosque (Nairobi)",
+     "Holy Family Basilica (Nairobi)",
+     "Sacred Mijikenda Kaya Forests (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Swahili and English are official; more than 40 local languages such as Kikuyu, Luo, Luhya, Kalenjin and Maa are also spoken.",
+    "englishProficiency": "Good; English is widely spoken in cities and tourist areas.",
+    "phrases": [
+     {
+      "phrase": "Jambo! / Habari?",
+      "meaning": "Hello! / How are you? (Swahili)",
+      "translation": "Hello! / How are you? (Swahili)",
+      "pronunciation": "jam-bo / ha-ba-ri"
+     },
+     {
+      "phrase": "Asante sana",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "a-san-te sa-na"
+     },
+     {
+      "phrase": "Karibu",
+      "meaning": "Welcome / You’re welcome",
+      "translation": "Welcome / You’re welcome",
+      "pronunciation": "ka-ri-bu"
+     },
+     {
+      "phrase": "Bei gani?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "bey ga-ni"
+     },
+     {
+      "phrase": "Pole pole",
+      "meaning": "Slowly / No rush",
+      "translation": "Slowly / No rush",
+      "pronunciation": "po-le po-le"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "For centuries the coast traded with Arab, Persian and Indian merchants, creating Swahili culture. Vasco da Gama reached Malindi in 1498; the British East Africa Protectorate was established in 1895. After the Mau Mau uprising, Kenya gained independence in 1963.",
+    "milestones": [
+     "1498: Vasco da Gama reaches Malindi",
+     "1895: British East Africa Protectorate",
+     "1952–1960: Mau Mau uprising",
+     "1963: Independence, Jomo Kenyatta the first leader"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nyama choma (charcoal-grilled goat or beef)",
+     "Ugali and sukuma wiki (maize porridge and collard greens)",
+     "Pilau (spiced coastal rice)"
+    ],
+    "traditionalDrinks": [
+     "Kenyan chai (spiced milk tea)",
+     "Kenya AA coffee",
+     "Tusker beer and the Dawa cocktail"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandazi (Swahili doughnut)",
+     "Mahindi choma (roasted maize)",
+     "Samosa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Wangari Maathai (Nobel Peace Prize 2004)",
+     "Eliud Kipchoge (Olympic marathon champion)",
+     "Lupita Nyong’o (Oscar-winning actress)"
+    ],
+    "strongSectors": [
+     "Tea exports (among the world’s leading exporters)",
+     "Cut flowers (Naivasha)",
+     "Mobile money and tech (M-Pesa, “Silicon Savannah”)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards work in hotels, lodges and malls; daily life runs on M-Pesa. Carry cash shillings for markets, matatus and tips; safari fees are mostly paid in USD.",
+    "tippingCulture": "10% is common in restaurants; ~10 - 20 $ per person per day for safari guides and drivers is customary.",
+    "economicPillars": "Agriculture (tea, coffee, flowers), tourism, mobile finance and tech, logistics (Port of Mombasa)."
+   }
+  },
+  "itin": {
+   "routeName": "Kenya Safari & Coast: Nairobi, Naivasha, Masai Mara & Diani",
+   "routeSummary": "A 9-day route from Nairobi’s elephant orphanage and national park to Lake Naivasha, a Great Migration safari in the Masai Mara and the white beaches of Diani.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Itinerary",
+   "bestSeason": "June – October (dry season; Great Migration in the Masai Mara July – October) and January – February · long rains March – May, short rains in November",
+   "transportMode": "Tour vehicle (4x4) Nairobi – Naivasha – Masai Mara; small plane Mara – Diani (Wilson/Ukunda) or SGR train Nairobi – Mombasa",
+   "paceLevel": "Balanced (safari and beach)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Nairobi",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Nairobi National Park (safari with a skyline)",
+      "Sheldrick Elephant Orphanage",
+      "Giraffe Centre",
+      "Karen Blixen Museum"
+     ],
+     "activities": [
+      "Watch baby elephants being fed at the orphanage in the morning (11:00).",
+      "Hand-feed Rothschild giraffes at the Giraffe Centre.",
+      "Do an afternoon game drive in Nairobi National Park against the skyscrapers."
+     ],
+     "foodAndDrinks": [
+      "Nyama choma (Carnivore restaurant)",
+      "Kenyan chai and mandazi"
+     ],
+     "criticalTips": [
+      "The Sheldrick visit requires an online booking.",
+      "Don’t walk in the centre at night; use Uber."
+     ],
+     "mapsQuery": "Nairobi National Park, Nairobi, Kenya"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Lake Naivasha",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Hippos and birdlife on Lake Naivasha",
+      "Crescent Island walking safari",
+      "Hell’s Gate National Park"
+     ],
+     "activities": [
+      "Take a boat out to watch hippos and fish eagles.",
+      "Walk among giraffes and zebras on Crescent Island.",
+      "Cycle through the gorges of Hell’s Gate."
+     ],
+     "foodAndDrinks": [
+      "Lake tilapia",
+      "Fresh fruit juice"
+     ],
+     "criticalTips": [
+      "Don’t approach hippos on the shore; they are very dangerous.",
+      "Hike the Hell’s Gate gorge with a local guide."
+     ],
+     "mapsQuery": "Lake Naivasha, Kenya"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Masai Mara",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Great Migration and Mara River crossings (July – October)",
+      "Lion, leopard and cheetah",
+      "Maasai village visit",
+      "Hot-air balloon safari"
+     ],
+     "activities": [
+      "Go on game drives at dawn and late afternoon.",
+      "Float over the savannah in a hot-air balloon at sunrise.",
+      "Visit a Maasai community village with a guide."
+     ],
+     "foodAndDrinks": [
+      "Lodge buffet and barbecue",
+      "Kenyan coffee"
+     ],
+     "criticalTips": [
+      "Reserve fees are high (~200 $ per person per day in peak season); budget for it.",
+      "Mornings are cool, midday hot; dress in layers and neutral colours."
+     ],
+     "mapsQuery": "Maasai Mara National Reserve, Kenya"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Diani Beach",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "White-sand Diani coast",
+      "Kisite-Mpunguti Marine Park (dolphins and snorkelling)",
+      "Colobus Conservation",
+      "Shimba Hills National Park"
+     ],
+     "activities": [
+      "Spot dolphins and snorkel on a Wasini Island boat trip.",
+      "Try kitesurfing or a sunset dhow cruise.",
+      "Make a day trip to Mombasa Old Town and Fort Jesus (UNESCO)."
+     ],
+     "foodAndDrinks": [
+      "Swahili fish curry",
+      "Coconut rice and fresh seafood"
+     ],
+     "criticalTips": [
+      "Choose licensed operators recommended by your hotel rather than beach-boy tours.",
+      "The coast is a malaria area; use repellent."
+     ],
+     "mapsQuery": "Diani Beach, Kenya"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nyama choma (charcoal-grilled goat or beef)",
+     "Ugali and sukuma wiki (maize porridge and collard greens)",
+     "Pilau (spiced coastal rice)"
+    ],
+    "drinks": [
+     "Kenyan chai (spiced milk tea)",
+     "Kenya AA coffee",
+     "Tusker beer and the Dawa cocktail"
+    ],
+    "streetFoods": [
+     "Mandazi (Swahili doughnut)",
+     "Mahindi choma (roasted maize)",
+     "Samosa"
+    ],
+    "diningAdvice": "Local eateries (“hoteli”) serve cheap, tasty ugali and nyama choma; eating with the right hand is customary."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G (British) plug adapter",
+     "Khaki/beige layers and binoculars for safari",
+     "Malaria tablets (on medical advice) and insect repellent",
+     "No plastic bags (banned in the country)"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t photograph Maasai or other people without permission.",
+     "Follow your guide’s instructions on safari and stay in the vehicle.",
+     "Don’t display valuables in Nairobi."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British Type G sockets (three rectangular pins) are used; Turkish plugs need an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn’t drinkable; use bottled or filtered water and be careful with ice and raw salads.",
+    "vaccines": [
+     "Yellow fever (recommended; a certificate is required if arriving from a risk country)",
+     "Malaria prophylaxis (outside Nairobi and on the coast)",
+     "Hepatitis A and typhoid",
+     "Rabies (for long or rural trips)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Tipping is expected.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10% in restaurants; 10 - 20 $ per person per day for safari guides; small tips for porters and lodge staff."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (VAT 16%)",
+    "minSpend": "Not applicable",
+    "customsNote": "Kenya has no VAT refund for tourists. Exporting ivory, animal skins and shells/coral is prohibited; importing plastic bags is banned."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "airportSimTrapWarning": "Safaricom and Airtel shops at the airport are reliable; registration is done with your passport. Don’t buy unregistered SIMs from street sellers."
+   },
+   "touristScams": [
+    {
+     "title": "Fake safari agency",
+     "desc": "Companies advertising very cheap safaris online take the deposit and vanish.",
+     "tip": "Check KATO membership and reviews."
+    },
+    {
+     "title": "Sob story",
+     "desc": "People in central Nairobi claiming to be “students” or “refugees” ask for donations or want to take you somewhere.",
+     "tip": "Politely decline and keep walking."
+    },
+    {
+     "title": "Beach-boy tours",
+     "desc": "Vendors on the beach sell unlicensed, overpriced boat trips.",
+     "tip": "Book tours through your hotel or a licensed operator."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Kenia-Schilling (KES)",
+   "plugType": "Typ G (240V, 50Hz)",
+   "bestMonths": "Juni – Oktober (Trockenzeit; Große Migration in der Masai Mara Juli – Oktober) sowie Januar – Februar · lange Regenzeit März – Mai, kurze Regenzeit im November",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "In Nairobi sind Taschenraub, Überfälle und Autodiebstähle häufig, besonders nachts im Stadtzentrum (CBD) und in informellen Siedlungen. Offizielle Reisehinweise raten von Reisen an die somalische Grenze und in den Nordosten ab; es besteht Terrorgefahr. Safariparks und Küstenresorts sind meist unproblematisch.",
+    "commonScams": [
+     "Gefälschte Safarifirmen und „Agenten“, die eine Anzahlung kassieren und verschwinden",
+     "Mitleidsgeschichten von „Studenten“ oder „Flüchtlingen“ im Zentrum Nairobis",
+     "„Beach Boys“ in Diani und Mombasa, die überteuerte Ausflüge und Souvenirs verkaufen"
+    ],
+    "safeTravelTips": [
+     "Safaris bei Mitgliedern der KATO (Kenya Association of Tour Operators) buchen.",
+     "In Nairobi nachts nicht zu Fuß gehen; Uber/Bolt oder ein Hoteltaxi nutzen.",
+     "Somalische Grenze, das Festland des Lamu County und weitere Warngebiete meiden."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ der Bevölkerung (4G; 5G in Nairobi und Mombasa)",
+    "costPerGbUsd": "0.50 - 1.50 $",
+    "esimAvailability": "Gut (Safaricom bietet eSIM; SIM-Registrierung mit Reisepass ist Pflicht)",
+    "bestCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Matatu-Minibusse und SGR-Zug Nairobi – Mombasa; in Städten sind Fahrdienst-Apps am praktischsten)",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Keine (SGR Nairobi – Mombasa Economy ~12 - 15 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Little"
+    ],
+    "taxiAdvice": "Uber, Bolt und Little sind in Nairobi zuverlässig; bei Straßentaxis den Preis vorher aushandeln. Safariparks erreicht man mit dem Tourfahrzeug oder per Inlandsflug (Safarilink, AirKenya)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 170 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Mittel (Istanbul – Nairobi direkt mit Turkish Airlines, ~6,5 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Nairobi und Mombasa; Kleinflugzeuge ab Nairobi-Wilson erreichen die Masai Mara in 45 Minuten (Gepäcklimit ~15 kg in weichen Taschen)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind wichtig: vor dem Anliegen „Habari?“ fragen.",
+     "Vor Fotos von Massai und anderen Gemeinschaften um Erlaubnis bitten; manchmal wird ein Entgelt verlangt.",
+     "Geld und Essen mit der rechten Hand reichen; Älteren wird Respekt erwiesen.",
+     "Plastiktüten sind verboten; keine ins Land mitbringen."
+    ],
+    "festivals": [
+     "Lamu Cultural Festival (November)",
+     "Mashujaa-Tag (Heldentag, 20. Oktober)",
+     "Safari Rally – WRC (Naivasha, März)"
+    ],
+    "lifestyle": "Kenianer sind herzlich, humorvoll und unternehmerisch; mobiles Bezahlen per M-Pesa ist allgegenwärtig. Nairobi hat eine lebendige Musik- und Cafészene, auf dem Land zählen Gemeinschaft und Familie."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Masai-Mara-Nationalreservat (Große Migration)",
+     "Amboseli-Nationalpark (Kilimandscharo-Blick und Elefanten)",
+     "Nairobi-Nationalpark und Sheldrick-Elefantenwaisenhaus",
+     "Naivasha- und Nakurusee",
+     "Diani Beach",
+     "Altstadt von Lamu (UNESCO)"
+    ],
+    "bestSeasons": "Juni – Oktober (Trockenzeit; Große Migration in der Masai Mara Juli – Oktober) sowie Januar – Februar · lange Regenzeit März – Mai, kurze Regenzeit im November",
+    "travelStyleTip": "Mindestens 3 Nächte Safari einplanen und danach an der Küste des Indischen Ozeans (Diani oder Watamu) entspannen."
+   },
+   "religion": {
+    "primaryReligions": "Christentum (~85 %; protestantisch und katholisch), Islam (~11 %; v. a. Küste und Nordosten), traditionelle Glaubensformen",
+    "respectNorms": "In muslimischen Küstenorten (Lamu, Altstadt Mombasa) Schultern und Knie bedecken; im Ramadan nicht auf der Straße essen und trinken.",
+    "sacredSites": [
+     "Jamia-Moschee (Nairobi)",
+     "Basilika der Heiligen Familie (Nairobi)",
+     "Heilige Kaya-Wälder der Mijikenda (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Swahili und Englisch sind Amtssprachen; zudem werden über 40 Lokalsprachen wie Kikuyu, Luo, Luhya, Kalenjin und Maa gesprochen.",
+    "englishProficiency": "Gut; in Städten und Touristengebieten wird viel Englisch gesprochen.",
+    "phrases": [
+     {
+      "phrase": "Jambo! / Habari?",
+      "meaning": "Hallo! / Wie geht’s? (Swahili)",
+      "translation": "Hallo! / Wie geht’s? (Swahili)",
+      "pronunciation": "jam-bo / ha-ba-ri"
+     },
+     {
+      "phrase": "Asante sana",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "a-san-te sa-na"
+     },
+     {
+      "phrase": "Karibu",
+      "meaning": "Willkommen / Bitte sehr",
+      "translation": "Willkommen / Bitte sehr",
+      "pronunciation": "ka-ri-bu"
+     },
+     {
+      "phrase": "Bei gani?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "bey ga-ni"
+     },
+     {
+      "phrase": "Pole pole",
+      "meaning": "Langsam / Keine Eile",
+      "translation": "Langsam / Keine Eile",
+      "pronunciation": "po-le po-le"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Jahrhundertelang handelte die Küste mit arabischen, persischen und indischen Kaufleuten – so entstand die Swahili-Kultur. 1498 erreichte Vasco da Gama Malindi; 1895 wurde das Britisch-Ostafrikanische Protektorat errichtet. Nach dem Mau-Mau-Aufstand wurde Kenia 1963 unabhängig.",
+    "milestones": [
+     "1498: Vasco da Gama erreicht Malindi",
+     "1895: Britisch-Ostafrikanisches Protektorat",
+     "1952–1960: Mau-Mau-Aufstand",
+     "1963: Unabhängigkeit, Jomo Kenyatta erster Staatschef"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nyama Choma (über Holzkohle gegrilltes Ziegen- oder Rindfleisch)",
+     "Ugali und Sukuma Wiki (Maisbrei und Blattkohl)",
+     "Pilau (gewürzter Küstenreis)"
+    ],
+    "traditionalDrinks": [
+     "Kenianischer Chai (gewürzter Milchtee)",
+     "Kenia-AA-Kaffee",
+     "Tusker-Bier und Dawa-Cocktail"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandazi (Swahili-Krapfen)",
+     "Mahindi Choma (gerösteter Mais)",
+     "Samosa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Wangari Maathai (Friedensnobelpreis 2004)",
+     "Eliud Kipchoge (Olympiasieger im Marathon)",
+     "Lupita Nyong’o (Oscar-Preisträgerin)"
+    ],
+    "strongSectors": [
+     "Teeexport (einer der weltweit führenden Exporteure)",
+     "Schnittblumen (Naivasha)",
+     "Mobile Payment und Tech (M-Pesa, „Silicon Savannah“)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten funktionieren in Hotels, Lodges und Malls; der Alltag läuft über M-Pesa. Bargeld in Schilling für Märkte, Matatus und Trinkgelder mitführen; Safarigebühren meist in USD.",
+    "tippingCulture": "10 % sind im Restaurant üblich; ~10 - 20 $ pro Person und Tag für Safari-Guides und Fahrer sind Brauch.",
+    "economicPillars": "Landwirtschaft (Tee, Kaffee, Blumen), Tourismus, mobile Finanzdienste und Tech, Logistik (Hafen Mombasa)."
+   }
+  },
+  "itin": {
+   "routeName": "Kenia Safari & Küste: Nairobi, Naivasha, Masai Mara & Diani",
+   "routeSummary": "Eine 9-tägige Route vom Elefantenwaisenhaus und Nationalpark Nairobis über den Naivashasee und eine Migrations-Safari in der Masai Mara bis zu den weißen Stränden von Diani.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Reise",
+   "bestSeason": "Juni – Oktober (Trockenzeit; Große Migration in der Masai Mara Juli – Oktober) sowie Januar – Februar · lange Regenzeit März – Mai, kurze Regenzeit im November",
+   "transportMode": "Tourfahrzeug (4x4) Nairobi – Naivasha – Masai Mara; Kleinflugzeug Mara – Diani (Wilson/Ukunda) oder SGR-Zug Nairobi – Mombasa",
+   "paceLevel": "Ausgewogen (Safari und Strand)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Nairobi",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Nairobi-Nationalpark (Safari vor Skyline)",
+      "Sheldrick-Elefantenwaisenhaus",
+      "Giraffe Centre",
+      "Karen-Blixen-Museum"
+     ],
+     "activities": [
+      "Morgens die Fütterung der Elefantenbabys im Waisenhaus ansehen (11:00).",
+      "Im Giraffe Centre Rothschild-Giraffen aus der Hand füttern.",
+      "Nachmittags eine Pirschfahrt im Nairobi-Nationalpark vor Hochhauskulisse."
+     ],
+     "foodAndDrinks": [
+      "Nyama Choma (Restaurant Carnivore)",
+      "Kenianischer Chai und Mandazi"
+     ],
+     "criticalTips": [
+      "Der Sheldrick-Besuch erfordert eine Online-Buchung.",
+      "Nachts im Zentrum nicht zu Fuß gehen; Uber nutzen."
+     ],
+     "mapsQuery": "Nairobi National Park, Nairobi, Kenya"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Naivashasee",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Flusspferde und Vogelwelt am Naivashasee",
+      "Fußsafari auf Crescent Island",
+      "Hell’s-Gate-Nationalpark"
+     ],
+     "activities": [
+      "Mit dem Boot hinausfahren und Flusspferde sowie Schreiseeadler beobachten.",
+      "Auf Crescent Island zwischen Giraffen und Zebras wandern.",
+      "Mit dem Fahrrad durch die Schluchten von Hell’s Gate fahren."
+     ],
+     "foodAndDrinks": [
+      "Tilapia aus dem See",
+      "Frischer Fruchtsaft"
+     ],
+     "criticalTips": [
+      "Flusspferden am Ufer nicht nähern; sie sind sehr gefährlich.",
+      "Die Schlucht in Hell’s Gate mit lokalem Guide erwandern."
+     ],
+     "mapsQuery": "Lake Naivasha, Kenya"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Masai Mara",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Große Migration und Mara-Flussüberquerungen (Juli – Oktober)",
+      "Löwe, Leopard und Gepard",
+      "Besuch eines Massai-Dorfes",
+      "Ballonsafari"
+     ],
+     "activities": [
+      "Pirschfahrten bei Sonnenaufgang und am späten Nachmittag.",
+      "Bei Sonnenaufgang im Heißluftballon über die Savanne schweben.",
+      "Mit Guide ein Massai-Dorf besuchen."
+     ],
+     "foodAndDrinks": [
+      "Lodge-Buffet und Grill",
+      "Kenianischer Kaffee"
+     ],
+     "criticalTips": [
+      "Die Reservatsgebühren sind hoch (~200 $ pro Person und Tag in der Hochsaison); einplanen.",
+      "Morgens kühl, mittags heiß; Zwiebellook in gedeckten Farben."
+     ],
+     "mapsQuery": "Maasai Mara National Reserve, Kenya"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Diani Beach",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Weißer Sandstrand von Diani",
+      "Kisite-Mpunguti-Meerespark (Delfine und Schnorcheln)",
+      "Colobus Conservation",
+      "Shimba-Hills-Nationalpark"
+     ],
+     "activities": [
+      "Bei einer Bootstour nach Wasini Island Delfine sehen und schnorcheln.",
+      "Kitesurfen oder eine Dhau-Fahrt zum Sonnenuntergang.",
+      "Tagesausflug in die Altstadt von Mombasa und zum Fort Jesus (UNESCO)."
+     ],
+     "foodAndDrinks": [
+      "Swahili-Fischcurry",
+      "Kokosreis und frische Meeresfrüchte"
+     ],
+     "criticalTips": [
+      "Lizenzierte Anbieter über das Hotel statt Beach-Boy-Touren wählen.",
+      "Die Küste ist Malariagebiet; Mückenschutz verwenden."
+     ],
+     "mapsQuery": "Diani Beach, Kenya"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nyama Choma (über Holzkohle gegrilltes Ziegen- oder Rindfleisch)",
+     "Ugali und Sukuma Wiki (Maisbrei und Blattkohl)",
+     "Pilau (gewürzter Küstenreis)"
+    ],
+    "drinks": [
+     "Kenianischer Chai (gewürzter Milchtee)",
+     "Kenia-AA-Kaffee",
+     "Tusker-Bier und Dawa-Cocktail"
+    ],
+    "streetFoods": [
+     "Mandazi (Swahili-Krapfen)",
+     "Mahindi Choma (gerösteter Mais)",
+     "Samosa"
+    ],
+    "diningAdvice": "Einfache Lokale („Hoteli“) servieren günstiges, leckeres Ugali und Nyama Choma; gegessen wird traditionell mit der rechten Hand."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ G (britisch)",
+     "Khaki/beige Kleidung im Zwiebellook und Fernglas für die Safari",
+     "Malariatabletten (nach ärztlicher Beratung) und Mückenschutz",
+     "Keine Plastiktüten (im Land verboten)"
+    ],
+    "safetyAndEtiquette": [
+     "Massai und andere Menschen nicht ohne Erlaubnis fotografieren.",
+     "Auf Safari den Anweisungen des Guides folgen und im Fahrzeug bleiben.",
+     "In Nairobi keine Wertsachen zeigen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Es werden britische Steckdosen Typ G (drei rechteckige Stifte) verwendet; für Schuko-Stecker ist ein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; Flaschen- oder gefiltertes Wasser nutzen, bei Eis und Rohkost vorsichtig sein.",
+    "vaccines": [
+     "Gelbfieber (empfohlen; Nachweis bei Einreise aus einem Risikoland erforderlich)",
+     "Malariaprophylaxe (außerhalb Nairobis und an der Küste)",
+     "Hepatitis A und Typhus",
+     "Tollwut (bei langen oder ländlichen Reisen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Trinkgeld wird erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 % im Restaurant; 10 - 20 $ pro Person und Tag für Safari-Guides; kleine Trinkgelder für Träger und Lodge-Personal."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (MwSt. 16 %)",
+    "minSpend": "Nicht anwendbar",
+    "customsNote": "Kenia erstattet Touristen keine Mehrwertsteuer. Die Ausfuhr von Elfenbein, Tierfellen und Muscheln/Korallen ist verboten; die Einfuhr von Plastiktüten ist untersagt."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "airportSimTrapWarning": "Die Safaricom- und Airtel-Shops am Flughafen sind zuverlässig; registriert wird mit dem Reisepass. Keine unregistrierten SIMs von Straßenhändlern kaufen."
+   },
+   "touristScams": [
+    {
+     "title": "Gefälschte Safari-Agentur",
+     "desc": "Firmen werben online mit sehr billigen Safaris, kassieren die Anzahlung und verschwinden.",
+     "tip": "KATO-Mitgliedschaft und Bewertungen prüfen."
+    },
+    {
+     "title": "Mitleidsgeschichte",
+     "desc": "Angebliche „Studenten“ oder „Flüchtlinge“ im Zentrum Nairobis bitten um Spenden oder wollen Sie irgendwohin führen.",
+     "tip": "Höflich ablehnen und weitergehen."
+    },
+    {
+     "title": "Beach-Boy-Touren",
+     "desc": "Händler am Strand verkaufen unlizenzierte, überteuerte Bootstouren.",
+     "tip": "Touren über das Hotel oder lizenzierte Anbieter buchen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Chelín keniano (KES)",
+   "plugType": "Tipo G (240V, 50Hz)",
+   "bestMonths": "Junio – octubre (estación seca; Gran Migración en el Masai Mara de julio a octubre) y enero – febrero · lluvias largas de marzo a mayo, lluvias cortas en noviembre",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "En Nairobi son frecuentes los tirones, atracos y robos de coches, sobre todo de noche en el centro (CBD) y en asentamientos informales. Las advertencias oficiales desaconsejan viajar a la frontera con Somalia y al noreste, y existe amenaza terrorista. Los parques de safari y los resorts de la costa suelen ser tranquilos.",
+    "commonScams": [
+     "Falsas empresas de safari y “agentes” que cobran un depósito y desaparecen",
+     "Historias lacrimógenas de “estudiantes” o “refugiados” pidiendo dinero en el centro de Nairobi",
+     "“Beach boys” en Diani y Mombasa que venden excursiones y souvenirs a precios inflados"
+    ],
+    "safeTravelTips": [
+     "Reserva safaris con miembros de KATO (Asociación de Operadores Turísticos de Kenia).",
+     "No camines de noche en Nairobi; usa Uber/Bolt o un taxi del hotel.",
+     "Evita la frontera somalí, la parte continental del condado de Lamu y otras zonas con advertencias oficiales."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ de la población (4G; 5G en Nairobi y Mombasa)",
+    "costPerGbUsd": "0.50 - 1.50 $",
+    "esimAvailability": "Buena (Safaricom ofrece eSIM; el registro de la SIM con pasaporte es obligatorio)",
+    "bestCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Media (minibuses matatu y el tren SGR Nairobi – Mombasa; en ciudades lo más práctico son las apps de transporte)",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "No hay (SGR Nairobi – Mombasa clase económica ~12 - 15 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Little"
+    ],
+    "taxiAdvice": "Uber, Bolt y Little son fiables en Nairobi; con taxis de calle acuerda el precio antes. A los parques de safari se llega en vehículo de tour o en vuelo interno (Safarilink, AirKenya)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 170 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Medio (Estambul – Nairobi directo con Turkish Airlines, ~6,5 horas)",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Nairobi y Mombasa; avionetas desde el aeropuerto Wilson de Nairobi llegan al Masai Mara en 45 minutos (límite de equipaje ~15 kg en bolsa blanda)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos importan: pregunta “Habari?” antes de ir al asunto.",
+     "Pide permiso antes de fotografiar a los masáis y otras comunidades; a veces piden una tarifa.",
+     "Da dinero y comida con la mano derecha; a los mayores se les muestra respeto.",
+     "Las bolsas de plástico están prohibidas; no las lleves al país."
+    ],
+    "festivals": [
+     "Festival Cultural de Lamu (noviembre)",
+     "Día de Mashujaa (Día de los Héroes, 20 de octubre)",
+     "Safari Rally – WRC (Naivasha, marzo)"
+    ],
+    "lifestyle": "Los kenianos son cálidos, ingeniosos y emprendedores; el pago móvil con M-Pesa está en todas partes. Nairobi tiene una animada escena musical y de cafés; en el campo prima la comunidad y la familia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Reserva Nacional Masai Mara (Gran Migración)",
+     "Parque Nacional Amboseli (vistas del Kilimanjaro y elefantes)",
+     "Parque Nacional de Nairobi y orfanato de elefantes Sheldrick",
+     "Lagos Naivasha y Nakuru",
+     "Playa de Diani",
+     "Ciudad vieja de Lamu (UNESCO)"
+    ],
+    "bestSeasons": "Junio – octubre (estación seca; Gran Migración en el Masai Mara de julio a octubre) y enero – febrero · lluvias largas de marzo a mayo, lluvias cortas en noviembre",
+    "travelStyleTip": "Planea al menos 3 noches de safari y luego descansa en la costa del Índico (Diani o Watamu)."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~85 %; protestante y católico), islam (~11 %; sobre todo costa y noreste), creencias tradicionales",
+    "respectNorms": "En las ciudades musulmanas de la costa (Lamu, ciudad vieja de Mombasa) cubre hombros y rodillas; en Ramadán evita comer y beber en la calle.",
+    "sacredSites": [
+     "Mezquita Jamia (Nairobi)",
+     "Basílica de la Sagrada Familia (Nairobi)",
+     "Bosques sagrados kaya de los mijikenda (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El suajili y el inglés son oficiales; además se hablan más de 40 lenguas locales como kikuyu, luo, luhya, kalenjin y maa.",
+    "englishProficiency": "Bueno; en ciudades y zonas turísticas se habla mucho inglés.",
+    "phrases": [
+     {
+      "phrase": "Jambo! / Habari?",
+      "meaning": "¡Hola! / ¿Qué tal? (suajili)",
+      "translation": "¡Hola! / ¿Qué tal? (suajili)",
+      "pronunciation": "jam-bo / ha-ba-ri"
+     },
+     {
+      "phrase": "Asante sana",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "a-san-te sa-na"
+     },
+     {
+      "phrase": "Karibu",
+      "meaning": "Bienvenido / De nada",
+      "translation": "Bienvenido / De nada",
+      "pronunciation": "ka-ri-bu"
+     },
+     {
+      "phrase": "Bei gani?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "bey ga-ni"
+     },
+     {
+      "phrase": "Pole pole",
+      "meaning": "Despacio / Sin prisa",
+      "translation": "Despacio / Sin prisa",
+      "pronunciation": "po-le po-le"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Durante siglos la costa comerció con mercaderes árabes, persas e indios, dando origen a la cultura suajili. Vasco da Gama llegó a Malindi en 1498; en 1895 se creó el Protectorado de África Oriental Británica. Tras la rebelión del Mau Mau, Kenia se independizó en 1963.",
+    "milestones": [
+     "1498: Vasco da Gama llega a Malindi",
+     "1895: Protectorado de África Oriental Británica",
+     "1952–1960: Rebelión del Mau Mau",
+     "1963: Independencia; Jomo Kenyatta, primer líder"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nyama choma (cabra o ternera a la brasa)",
+     "Ugali y sukuma wiki (gachas de maíz y berza)",
+     "Pilau (arroz especiado de la costa)"
+    ],
+    "traditionalDrinks": [
+     "Chai keniano (té con leche especiado)",
+     "Café Kenia AA",
+     "Cerveza Tusker y cóctel Dawa"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandazi (buñuelo suajili)",
+     "Mahindi choma (mazorca asada)",
+     "Samosa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Wangari Maathai (Premio Nobel de la Paz 2004)",
+     "Eliud Kipchoge (campeón olímpico de maratón)",
+     "Lupita Nyong’o (actriz ganadora del Óscar)"
+    ],
+    "strongSectors": [
+     "Exportación de té (entre los mayores exportadores del mundo)",
+     "Flores cortadas (Naivasha)",
+     "Dinero móvil y tecnología (M-Pesa, “Silicon Savannah”)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas funcionan en hoteles, lodges y centros comerciales; la vida diaria funciona con M-Pesa. Lleva chelines en efectivo para mercados, matatus y propinas; las tarifas de safari suelen pagarse en USD.",
+    "tippingCulture": "En restaurantes es habitual un 10 %; ~10 - 20 $ por persona y día para guías y conductores de safari.",
+    "economicPillars": "Agricultura (té, café, flores), turismo, finanzas móviles y tecnología, logística (puerto de Mombasa)."
+   }
+  },
+  "itin": {
+   "routeName": "Safari y costa de Kenia: Nairobi, Naivasha, Masai Mara y Diani",
+   "routeSummary": "Ruta de 9 días desde el orfanato de elefantes y el parque nacional de Nairobi al lago Naivasha, un safari de la Gran Migración en el Masai Mara y las playas blancas de Diani.",
+   "totalDays": 9,
+   "idealDurationText": "Itinerario de 9 días",
+   "bestSeason": "Junio – octubre (estación seca; Gran Migración en el Masai Mara de julio a octubre) y enero – febrero · lluvias largas de marzo a mayo, lluvias cortas en noviembre",
+   "transportMode": "Vehículo de tour (4x4) Nairobi – Naivasha – Masai Mara; avioneta Mara – Diani (Wilson/Ukunda) o tren SGR Nairobi – Mombasa",
+   "paceLevel": "Equilibrado (safari y playa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Nairobi",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Parque Nacional de Nairobi (safari con rascacielos de fondo)",
+      "Orfanato de elefantes Sheldrick",
+      "Giraffe Centre",
+      "Museo Karen Blixen"
+     ],
+     "activities": [
+      "Por la mañana mira cómo alimentan a los elefantes huérfanos (11:00).",
+      "Da de comer a jirafas de Rothschild en el Giraffe Centre.",
+      "Haz un safari de tarde en el Parque Nacional de Nairobi con los rascacielos al fondo."
+     ],
+     "foodAndDrinks": [
+      "Nyama choma (restaurante Carnivore)",
+      "Chai keniano y mandazi"
+     ],
+     "criticalTips": [
+      "La visita a Sheldrick requiere reserva online.",
+      "No camines por el centro de noche; usa Uber."
+     ],
+     "mapsQuery": "Nairobi National Park, Nairobi, Kenya"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lago Naivasha",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Hipopótamos y aves en el lago Naivasha",
+      "Safari a pie en Crescent Island",
+      "Parque Nacional Hell’s Gate"
+     ],
+     "activities": [
+      "Sal en barca a ver hipopótamos y águilas pescadoras.",
+      "Camina entre jirafas y cebras en Crescent Island.",
+      "Recorre en bici las gargantas de Hell’s Gate."
+     ],
+     "foodAndDrinks": [
+      "Tilapia del lago",
+      "Zumo de fruta fresca"
+     ],
+     "criticalTips": [
+      "No te acerques a los hipopótamos en la orilla; son muy peligrosos.",
+      "Haz la garganta de Hell’s Gate con un guía local."
+     ],
+     "mapsQuery": "Lake Naivasha, Kenya"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Masai Mara",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Gran Migración y cruces del río Mara (julio – octubre)",
+      "León, leopardo y guepardo",
+      "Visita a una aldea masái",
+      "Safari en globo"
+     ],
+     "activities": [
+      "Sal de safari al amanecer y a última hora de la tarde.",
+      "Sobrevuela la sabana en globo al amanecer.",
+      "Visita una aldea masái con un guía."
+     ],
+     "foodAndDrinks": [
+      "Bufé y barbacoa en el lodge",
+      "Café keniano"
+     ],
+     "criticalTips": [
+      "Las tasas de la reserva son altas (~200 $ por persona y día en temporada alta); inclúyelas en el presupuesto.",
+      "Las mañanas son frescas y el mediodía caluroso; viste por capas y en colores neutros."
+     ],
+     "mapsQuery": "Maasai Mara National Reserve, Kenya"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Playa de Diani",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Costa de arena blanca de Diani",
+      "Parque Marino Kisite-Mpunguti (delfines y esnórquel)",
+      "Colobus Conservation",
+      "Parque Nacional Shimba Hills"
+     ],
+     "activities": [
+      "Observa delfines y haz esnórquel en una excursión a la isla Wasini.",
+      "Prueba el kitesurf o un paseo en dhow al atardecer.",
+      "Excursión de un día a la ciudad vieja de Mombasa y Fort Jesus (UNESCO)."
+     ],
+     "foodAndDrinks": [
+      "Curry de pescado suajili",
+      "Arroz con coco y marisco fresco"
+     ],
+     "criticalTips": [
+      "Elige operadores con licencia recomendados por tu hotel en lugar de los tours de los beach boys.",
+      "La costa es zona de malaria; usa repelente."
+     ],
+     "mapsQuery": "Diani Beach, Kenya"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nyama choma (cabra o ternera a la brasa)",
+     "Ugali y sukuma wiki (gachas de maíz y berza)",
+     "Pilau (arroz especiado de la costa)"
+    ],
+    "drinks": [
+     "Chai keniano (té con leche especiado)",
+     "Café Kenia AA",
+     "Cerveza Tusker y cóctel Dawa"
+    ],
+    "streetFoods": [
+     "Mandazi (buñuelo suajili)",
+     "Mahindi choma (mazorca asada)",
+     "Samosa"
+    ],
+    "diningAdvice": "Los comedores locales (“hoteli”) sirven ugali y nyama choma baratos y sabrosos; es costumbre comer con la mano derecha."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (británico)",
+     "Ropa caqui/beige por capas y prismáticos para el safari",
+     "Pastillas contra la malaria (con consejo médico) y repelente",
+     "Nada de bolsas de plástico (prohibidas en el país)"
+    ],
+    "safetyAndEtiquette": [
+     "No fotografíes a masáis ni a otras personas sin permiso.",
+     "En el safari sigue las indicaciones del guía y no bajes del vehículo.",
+     "No muestres objetos de valor en Nairobi."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Se usan enchufes británicos tipo G (tres clavijas rectangulares); los enchufes Schuko necesitan adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa agua embotellada o filtrada y ten cuidado con el hielo y las ensaladas crudas.",
+    "vaccines": [
+     "Fiebre amarilla (recomendada; se exige certificado si llegas de un país de riesgo)",
+     "Profilaxis de malaria (fuera de Nairobi y en la costa)",
+     "Hepatitis A y fiebre tifoidea",
+     "Rabia (viajes largos o rurales)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "La propina se espera.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 % en restaurantes; 10 - 20 $ por persona y día para guías de safari; pequeñas propinas a maleteros y personal del lodge."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (IVA 16 %)",
+    "minSpend": "No aplica",
+    "customsNote": "Kenia no devuelve el IVA a turistas. Está prohibido exportar marfil, pieles de animales y conchas/coral; también importar bolsas de plástico."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "airportSimTrapWarning": "Las tiendas de Safaricom y Airtel en el aeropuerto son fiables; el registro se hace con pasaporte. No compres SIM sin registrar a vendedores callejeros."
+   },
+   "touristScams": [
+    {
+     "title": "Falsa agencia de safari",
+     "desc": "Empresas anuncian safaris muy baratos en internet, cobran el depósito y desaparecen.",
+     "tip": "Comprueba la afiliación a KATO y las reseñas."
+    },
+    {
+     "title": "Historia lacrimógena",
+     "desc": "Supuestos “estudiantes” o “refugiados” en el centro de Nairobi piden donativos o quieren llevarte a algún sitio.",
+     "tip": "Declina con educación y sigue tu camino."
+    },
+    {
+     "title": "Tours de beach boys",
+     "desc": "Vendedores en la playa ofrecen excursiones en barco sin licencia y caras.",
+     "tip": "Reserva a través del hotel o de operadores con licencia."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Кенийский шиллинг (KES)",
+   "plugType": "Тип G (240V, 50Hz)",
+   "bestMonths": "Июнь – октябрь (сухой сезон; Великая миграция в Масаи-Мара в июле – октябре) и январь – февраль · сезон долгих дождей март – май, коротких — ноябрь",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "В Найроби распространены уличные рывки, грабежи и кражи автомобилей, особенно ночью в центре (CBD) и в трущобах. Официальные рекомендации не советуют ездить к границе с Сомали и на северо-восток; существует террористическая угроза. Сафари-парки и курорты на побережье в целом спокойны.",
+    "commonScams": [
+     "Фальшивые сафари-компании и «агенты», которые берут предоплату и исчезают",
+     "Жалостливые истории «студентов» или «беженцев», просящих деньги в центре Найроби",
+     "«Пляжные мальчики» в Диани и Момбасе, продающие экскурсии и сувениры втридорога"
+    ],
+    "safeTravelTips": [
+     "Бронируйте сафари у членов KATO (Ассоциации туроператоров Кении).",
+     "Не ходите пешком ночью в Найроби; пользуйтесь Uber/Bolt или такси от отеля.",
+     "Избегайте границы с Сомали, материковой части округа Ламу и других районов из официальных предупреждений."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ населения (4G; 5G в Найроби и Момбасе)",
+    "costPerGbUsd": "0.50 - 1.50 $",
+    "esimAvailability": "Хорошая (Safaricom предлагает eSIM; регистрация SIM по паспорту обязательна)",
+    "bestCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (маршрутки-матату и поезд SGR Найроби – Момбаса; в городах удобнее всего приложения такси)",
+    "costLevel": "Недорого",
+    "singleTicketUsd": "0.30 - 1 $",
+    "dailyPassUsd": "Нет (SGR Найроби – Момбаса эконом ~12 - 15 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Little"
+    ],
+    "taxiAdvice": "В Найроби надёжны Uber, Bolt и Little; с уличными таксистами договаривайтесь о цене заранее. До сафари-парков добираются на машине тура или внутренним рейсом (Safarilink, AirKenya)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 170 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Средний (Стамбул – Найроби прямым рейсом Turkish Airlines, ~6,5 ч)",
+    "flightTip": "Turkish Airlines летает напрямую из Стамбула в Найроби и Момбасу; маленькие самолёты из аэропорта Уилсон в Найроби долетают до Масаи-Мара за 45 минут (лимит багажа ~15 кг в мягкой сумке)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствие важно: прежде чем перейти к делу, спросите «Habari?».",
+     "Спрашивайте разрешения, прежде чем фотографировать масаев и другие общины; иногда просят плату.",
+     "Деньги и еду передавайте правой рукой; к старшим относятся с уважением.",
+     "Пластиковые пакеты запрещены; не ввозите их в страну."
+    ],
+    "festivals": [
+     "Культурный фестиваль Ламу (ноябрь)",
+     "День героев Машуджаа (20 октября)",
+     "Сафари-ралли — WRC (Найваша, март)"
+    ],
+    "lifestyle": "Кенийцы приветливы, остроумны и предприимчивы; мобильные платежи M-Pesa повсюду. В Найроби оживлённая музыкальная и кофейная жизнь, в сельской местности главное — община и семья."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Национальный резерват Масаи-Мара (Великая миграция)",
+     "Национальный парк Амбосели (вид на Килиманджаро и слоны)",
+     "Национальный парк Найроби и слоновий приют Шелдрик",
+     "Озёра Найваша и Накуру",
+     "Пляж Диани",
+     "Старый город Ламу (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Июнь – октябрь (сухой сезон; Великая миграция в Масаи-Мара в июле – октябре) и январь – февраль · сезон долгих дождей март – май, коротких — ноябрь",
+    "travelStyleTip": "Заложите минимум 3 ночи на сафари, а затем отдохните на побережье Индийского океана (Диани или Ватаму)."
+   },
+   "religion": {
+    "primaryReligions": "Христианство (~85 %; протестанты и католики), ислам (~11 %; в основном побережье и северо-восток), традиционные верования",
+    "respectNorms": "В мусульманских городах побережья (Ламу, Старый город Момбасы) закрывайте плечи и колени; в Рамадан не ешьте и не пейте на улице.",
+    "sacredSites": [
+     "Мечеть Джамия (Найроби)",
+     "Базилика Святого Семейства (Найроби)",
+     "Священные леса кайя народа миджикенда (ЮНЕСКО)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальные языки — суахили и английский; также говорят более чем на 40 местных языках: кикуйю, луо, лухья, календжин, маа.",
+    "englishProficiency": "Хороший; в городах и туристических районах английским владеют широко.",
+    "phrases": [
+     {
+      "phrase": "Jambo! / Habari?",
+      "meaning": "Привет! / Как дела? (суахили)",
+      "translation": "Привет! / Как дела? (суахили)",
+      "pronunciation": "jam-bo / ha-ba-ri"
+     },
+     {
+      "phrase": "Asante sana",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "a-san-te sa-na"
+     },
+     {
+      "phrase": "Karibu",
+      "meaning": "Добро пожаловать / Пожалуйста",
+      "translation": "Добро пожаловать / Пожалуйста",
+      "pronunciation": "ka-ri-bu"
+     },
+     {
+      "phrase": "Bei gani?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "bey ga-ni"
+     },
+     {
+      "phrase": "Pole pole",
+      "meaning": "Потихоньку / Не спеша",
+      "translation": "Потихоньку / Не спеша",
+      "pronunciation": "po-le po-le"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Веками побережье торговало с арабскими, персидскими и индийскими купцами — так сложилась культура суахили. В 1498 году Васко да Гама достиг Малинди; в 1895 году был создан протекторат Британская Восточная Африка. После восстания мау-мау Кения обрела независимость в 1963 году.",
+    "milestones": [
+     "1498: Васко да Гама достигает Малинди",
+     "1895: Протекторат Британская Восточная Африка",
+     "1952–1960: Восстание мау-мау",
+     "1963: Независимость, первый лидер — Джомо Кениата"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ньяма чома (козлятина или говядина на углях)",
+     "Угали и сукума вики (кукурузная каша и листовая капуста)",
+     "Пилау (пряный рис побережья)"
+    ],
+    "traditionalDrinks": [
+     "Кенийский чай (пряный чай с молоком)",
+     "Кофе Kenya AA",
+     "Пиво Tusker и коктейль Дава"
+    ],
+    "streetFoodAndDesserts": [
+     "Мандази (пончик суахили)",
+     "Махинди чома (печёная кукуруза)",
+     "Самоса"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Вангари Маатаи (Нобелевская премия мира 2004)",
+     "Элиуд Кипчоге (олимпийский чемпион по марафону)",
+     "Лупита Нионго (обладательница «Оскара»)"
+    ],
+    "strongSectors": [
+     "Экспорт чая (один из крупнейших экспортёров мира)",
+     "Срезанные цветы (Найваша)",
+     "Мобильные деньги и технологии (M-Pesa, «Кремниевая саванна»)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты принимают в отелях, лоджах и торговых центрах; повседневная жизнь идёт через M-Pesa. Держите наличные шиллинги для рынков, матату и чаевых; сборы за сафари обычно платят в USD.",
+    "tippingCulture": "В ресторанах принято 10 %; гидам и водителям на сафари — ~10 - 20 $ с человека в день.",
+    "economicPillars": "Сельское хозяйство (чай, кофе, цветы), туризм, мобильные финансы и технологии, логистика (порт Момбаса)."
+   }
+  },
+  "itin": {
+   "routeName": "Сафари и побережье Кении: Найроби, Найваша, Масаи-Мара и Диани",
+   "routeSummary": "9-дневный маршрут: слоновий приют и национальный парк Найроби, озеро Найваша, сафари Великой миграции в Масаи-Мара и белые пляжи Диани.",
+   "totalDays": 9,
+   "idealDurationText": "9-дневный маршрут",
+   "bestSeason": "Июнь – октябрь (сухой сезон; Великая миграция в Масаи-Мара в июле – октябре) и январь – февраль · сезон долгих дождей март – май, коротких — ноябрь",
+   "transportMode": "Машина тура (4x4) Найроби – Найваша – Масаи-Мара; маленький самолёт Мара – Диани (Уилсон/Укунда) или поезд SGR Найроби – Момбаса",
+   "paceLevel": "Сбалансированный (сафари и пляж)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Найроби",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальный парк Найроби (сафари на фоне небоскрёбов)",
+      "Слоновий приют Шелдрик",
+      "Жирафий центр",
+      "Музей Карен Бликсен"
+     ],
+     "activities": [
+      "Утром посмотрите кормление слонят в приюте (11:00).",
+      "Покормите с руки жирафов Ротшильда в Жирафьем центре.",
+      "Днём отправьтесь на сафари в Национальный парк Найроби на фоне небоскрёбов."
+     ],
+     "foodAndDrinks": [
+      "Ньяма чома (ресторан Carnivore)",
+      "Кенийский чай и мандази"
+     ],
+     "criticalTips": [
+      "Посещение Шелдрика требует онлайн-брони.",
+      "Не гуляйте по центру ночью; пользуйтесь Uber."
+     ],
+     "mapsQuery": "Nairobi National Park, Nairobi, Kenya"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Озеро Найваша",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Бегемоты и птицы на озере Найваша",
+      "Пешее сафари на острове Кресент",
+      "Национальный парк Хеллс-Гейт"
+     ],
+     "activities": [
+      "Выйдите на лодке понаблюдать за бегемотами и орланами-крикунами.",
+      "Прогуляйтесь среди жирафов и зебр на острове Кресент.",
+      "Проедьте на велосипеде по ущельям Хеллс-Гейт."
+     ],
+     "foodAndDrinks": [
+      "Озёрная тилапия",
+      "Свежий фруктовый сок"
+     ],
+     "criticalTips": [
+      "Не подходите к бегемотам на берегу — они очень опасны.",
+      "Ущелье Хеллс-Гейт проходите с местным гидом."
+     ],
+     "mapsQuery": "Lake Naivasha, Kenya"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Масаи-Мара",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Великая миграция и переправы через реку Мара (июль – октябрь)",
+      "Лев, леопард и гепард",
+      "Посещение деревни масаев",
+      "Сафари на воздушном шаре"
+     ],
+     "activities": [
+      "Выезжайте на сафари на рассвете и ближе к вечеру.",
+      "На рассвете пролетите над саванной на воздушном шаре.",
+      "Посетите деревню масаев с гидом."
+     ],
+     "foodAndDrinks": [
+      "Шведский стол и барбекю в лодже",
+      "Кенийский кофе"
+     ],
+     "criticalTips": [
+      "Сборы резервата высокие (~200 $ с человека в день в высокий сезон); учитывайте в бюджете.",
+      "Утром прохладно, днём жарко; одевайтесь слоями и в нейтральные цвета."
+     ],
+     "mapsQuery": "Maasai Mara National Reserve, Kenya"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Пляж Диани",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Белый песок побережья Диани",
+      "Морской парк Кисите-Мпунгути (дельфины и снорклинг)",
+      "Центр защиты колобусов",
+      "Национальный парк Шимба-Хиллс"
+     ],
+     "activities": [
+      "На лодочной экскурсии к острову Васини посмотрите на дельфинов и поплавайте с маской.",
+      "Попробуйте кайтсёрфинг или прогулку на доу на закате.",
+      "Съездите на день в Старый город Момбасы и форт Иисуса (ЮНЕСКО)."
+     ],
+     "foodAndDrinks": [
+      "Рыбное карри суахили",
+      "Кокосовый рис и свежие морепродукты"
+     ],
+     "criticalTips": [
+      "Выбирайте лицензированных операторов по совету отеля, а не туры «пляжных мальчиков».",
+      "Побережье — малярийная зона; пользуйтесь репеллентом."
+     ],
+     "mapsQuery": "Diani Beach, Kenya"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ньяма чома (козлятина или говядина на углях)",
+     "Угали и сукума вики (кукурузная каша и листовая капуста)",
+     "Пилау (пряный рис побережья)"
+    ],
+    "drinks": [
+     "Кенийский чай (пряный чай с молоком)",
+     "Кофе Kenya AA",
+     "Пиво Tusker и коктейль Дава"
+    ],
+    "streetFoods": [
+     "Мандази (пончик суахили)",
+     "Махинди чома (печёная кукуруза)",
+     "Самоса"
+    ],
+    "diningAdvice": "Местные закусочные («hoteli») подают дешёвые и вкусные угали и ньяма чома; есть принято правой рукой."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер типа G (британский)",
+     "Одежда цвета хаки/беж слоями и бинокль для сафари",
+     "Таблетки от малярии (по совету врача) и репеллент",
+     "Никаких пластиковых пакетов (в стране запрещены)"
+    ],
+    "safetyAndEtiquette": [
+     "Не фотографируйте масаев и других людей без разрешения.",
+     "На сафари слушайтесь гида и не выходите из машины.",
+     "Не показывайте ценности в Найроби."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Используются британские розетки типа G (три прямоугольных штыря); для вилок Schuko нужен адаптер."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте бутилированную или фильтрованную, осторожнее со льдом и сырыми салатами.",
+    "vaccines": [
+     "Жёлтая лихорадка (рекомендуется; сертификат обязателен при въезде из страны риска)",
+     "Профилактика малярии (за пределами Найроби и на побережье)",
+     "Гепатит A и брюшной тиф",
+     "Бешенство (для долгих или сельских поездок)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Чаевые ожидаются.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 % в ресторанах; 10 - 20 $ с человека в день гидам на сафари; немного носильщикам и персоналу лоджа."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (НДС 16 %)",
+    "minSpend": "Не применяется",
+    "customsNote": "В Кении туристам НДС не возвращают. Вывоз слоновой кости, шкур животных, ракушек и кораллов запрещён; ввоз пластиковых пакетов запрещён."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Safaricom",
+     "Airtel Kenya",
+     "Telkom Kenya"
+    ],
+    "airportSimTrapWarning": "Магазины Safaricom и Airtel в аэропорту надёжны; регистрация по паспорту. Не покупайте незарегистрированные SIM у уличных продавцов."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивое сафари-агентство",
+     "desc": "Компании рекламируют в интернете очень дешёвые сафари, берут предоплату и исчезают.",
+     "tip": "Проверяйте членство в KATO и отзывы."
+    },
+    {
+     "title": "Жалостливая история",
+     "desc": "«Студенты» или «беженцы» в центре Найроби просят пожертвование или хотят куда-то вас отвести.",
+     "tip": "Вежливо откажитесь и идите дальше."
+    },
+    {
+     "title": "Туры «пляжных мальчиков»",
+     "desc": "Продавцы на пляже предлагают нелицензированные и дорогие лодочные туры.",
+     "tip": "Бронируйте туры через отель или у лицензированных операторов."
+    }
+   ]
+  }
+ }
+}

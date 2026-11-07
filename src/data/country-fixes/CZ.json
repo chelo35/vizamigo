@@ -299,6 +299,66 @@
      "Toplu taşımada bileti doğrulamadan binmeyin; kontrolörler sivil giyimlidir."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C/E tipi (topraklama pimli Fransız tipi) priz; Türk C fişleri ve hibrit E/F Schuko fişler takılır, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu tüm ülkede içilebilir ve sıkı denetlenir; restoranda ücretsiz musluk suyu istemek (kohoutková voda) yaygınlaşmaktadır.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "155"
+   },
+   "tipping": {
+    "custom": "Restoranlarda hesabı yuvarlamak veya %10 civarı bahşiş yaygındır; servis dahilse ek bahşiş gerekmez.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Bahşişi masaya bırakmak yerine ödeme yaparken toplam tutarı söyleyin; hesapta “servis” satırını kontrol edin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%21 KDV (komisyon sonrası ~%12–15)",
+    "minSpend": "Fiş başına 2.001 CZK",
+    "customsNote": "AB dışında yaşayanlar Tax Free formunu mağazadan alır; ürünler kullanılmamış hâlde AB’den çıkarken son AB ülkesinin gümrüğünde (ör. Prag Havalimanı) onaylatılır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ"
+    ],
+    "airportSimTrapWarning": "Prag Havalimanı’ndaki kiosklar pahalı turist paketleri satar; O2, T-Mobile veya Vodafone mağazalarından ya da önceden eSIM alın. Türk hatlarında AB roaming paketi yoktur, dikkat edin."
+   },
+   "touristScams": [
+    {
+     "title": "Döviz bürosu tuzağı",
+     "desc": "Turistik döviz bürolarında kötü kur ve sokak dövizcilerinin geçersiz banknot vermesi.",
+     "tip": "Bankalarda veya “0% komisyon” yerine gerçek kuru yazan bürolarda bozdurun; sokakta asla bozdurmayın."
+    },
+    {
+     "title": "Dinamik kur dönüşümü",
+     "desc": "Euronet gibi ATM’lerin gizli marjlı döviz dönüşümü önermesi.",
+     "tip": "Banka ATM’si kullanın ve her zaman “dönüşümsüz / CZK” seçeneğini seçin."
+    },
+    {
+     "title": "Merkezde çevrilen taksi",
+     "desc": "Merkezde sokaktan çevrilen taksilerin fahiş ücret alması.",
+     "tip": "Bolt, Uber veya Liftago kullanın."
+    }
+   ]
   }
  },
  "en": {
@@ -601,6 +661,66 @@
      "Never ride without a validated ticket; inspectors wear plain clothes."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C/E sockets (French type with an earth pin); Turkish C plugs and hybrid E/F Schuko plugs fit, no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable across the country and strictly monitored; asking for free tap water (kohoutková voda) in restaurants is increasingly common.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "155"
+   },
+   "tipping": {
+    "custom": "Rounding up or tipping around 10% in restaurants is common; no extra tip is needed if service is already included.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Instead of leaving the tip on the table, tell the waiter the total when paying; check the bill for a service line."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21% VAT (~12–15% net after fees)",
+    "minSpend": "CZK 2,001 per receipt",
+    "customsNote": "Non-EU residents get a Tax Free form at the store; the unused goods are validated by customs of the last EU country when leaving the EU (e.g. at Prague Airport)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ"
+    ],
+    "airportSimTrapWarning": "Kiosks at Prague Airport sell pricey tourist packs; buy from O2, T-Mobile or Vodafone stores or get an eSIM in advance. Turkish SIMs have no EU roaming deal, so be careful."
+   },
+   "touristScams": [
+    {
+     "title": "Exchange office trap",
+     "desc": "Tourist exchange offices with poor rates and street changers handing over invalid notes.",
+     "tip": "Change at banks or offices that show the real rate instead of “0% commission”; never change on the street."
+    },
+    {
+     "title": "Dynamic currency conversion",
+     "desc": "ATMs such as Euronet push currency conversion with hidden markups.",
+     "tip": "Use bank ATMs and always choose “without conversion / CZK”."
+    },
+    {
+     "title": "Street-hailed taxis",
+     "desc": "Taxis hailed in the centre charge inflated fares.",
+     "tip": "Use Bolt, Uber or Liftago."
+    }
+   ]
   }
  },
  "de": {
@@ -903,6 +1023,66 @@
      "Nie ohne entwerteten Fahrschein fahren; Kontrolleure sind in Zivil."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/E (französischer Typ mit Erdungsstift); türkische C-Stecker und Hybrid-Schukostecker E/F passen, kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist im ganzen Land trinkbar und streng kontrolliert; kostenloses Leitungswasser (kohoutková voda) im Restaurant zu bestellen wird immer üblicher.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "155"
+   },
+   "tipping": {
+    "custom": "Aufrunden oder etwa 10 % Trinkgeld sind in Restaurants üblich; ist Service enthalten, ist kein Trinkgeld nötig.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Trinkgeld nicht auf dem Tisch lassen, sondern beim Bezahlen den Gesamtbetrag nennen; Rechnung auf eine Servicezeile prüfen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21 % MwSt. (netto ~12–15 % nach Gebühren)",
+    "minSpend": "2.001 CZK pro Beleg",
+    "customsNote": "Nicht-EU-Bürger erhalten im Geschäft ein Tax-Free-Formular; die unbenutzten Waren werden bei der Ausreise vom Zoll des letzten EU-Landes bestätigt (z. B. am Flughafen Prag)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ"
+    ],
+    "airportSimTrapWarning": "Kioske am Flughafen Prag verkaufen teure Touristenpakete; besser in O2-, T-Mobile- oder Vodafone-Shops kaufen oder vorab eine eSIM holen. Türkische SIMs haben kein EU-Roaming, Vorsicht."
+   },
+   "touristScams": [
+    {
+     "title": "Wechselstuben-Falle",
+     "desc": "Touristische Wechselstuben mit schlechten Kursen und Straßenwechsler mit ungültigen Scheinen.",
+     "tip": "Bei Banken oder Stuben mit echtem Kurs statt „0 % Provision“ tauschen, nie auf der Straße."
+    },
+    {
+     "title": "Dynamische Währungsumrechnung",
+     "desc": "Geldautomaten wie Euronet drängen zur Umrechnung mit versteckten Aufschlägen.",
+     "tip": "Bankautomaten nutzen und immer „ohne Umrechnung / CZK“ wählen."
+    },
+    {
+     "title": "Herangewinkte Taxis",
+     "desc": "Im Zentrum herangewinkte Taxis verlangen überhöhte Preise.",
+     "tip": "Bolt, Uber oder Liftago nutzen."
+    }
+   ]
   }
  },
  "es": {
@@ -1205,6 +1385,66 @@
      "No viaje sin billete validado; los revisores van de paisano."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C/E (tipo francés con clavija de tierra); los enchufes turcos C y los Schuko híbridos E/F encajan, no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en todo el país y está muy controlada; pedir agua del grifo gratis (kohoutková voda) en restaurantes es cada vez más común.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "155"
+   },
+   "tipping": {
+    "custom": "Redondear o dejar alrededor de un 10 % en restaurantes es habitual; si el servicio está incluido no hace falta más.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En lugar de dejar la propina en la mesa, diga el total al pagar; revise si la cuenta incluye servicio."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 21 % (~12–15 % neto tras comisiones)",
+    "minSpend": "2.001 CZK por ticket",
+    "customsNote": "Los residentes fuera de la UE reciben en la tienda un formulario Tax Free; los productos sin usar se validan en la aduana del último país de la UE al salir (p. ej. en el aeropuerto de Praga)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto de Praga venden paquetes turísticos caros; compre en tiendas de O2, T-Mobile o Vodafone o lleve una eSIM. Las SIM turcas no tienen roaming de la UE, cuidado."
+   },
+   "touristScams": [
+    {
+     "title": "Trampa de las casas de cambio",
+     "desc": "Casas de cambio turísticas con malas tasas y cambistas callejeros con billetes no válidos.",
+     "tip": "Cambie en bancos u oficinas que muestren la tasa real en lugar de “0 % comisión”; nunca en la calle."
+    },
+    {
+     "title": "Conversión dinámica de divisas",
+     "desc": "Cajeros como Euronet ofrecen conversión con recargos ocultos.",
+     "tip": "Use cajeros de bancos y elija siempre “sin conversión / CZK”."
+    },
+    {
+     "title": "Taxis parados en la calle",
+     "desc": "Taxis tomados en la calle en el centro cobran tarifas infladas.",
+     "tip": "Use Bolt, Uber o Liftago."
+    }
+   ]
   }
  },
  "ru": {
@@ -1507,6 +1747,66 @@
      "Не ездите без прокомпостированного билета — контролёры в штатском."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C/E (французский тип с заземляющим штырём); турецкие вилки C и гибридные Schuko E/F подходят, переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода пригодна для питья по всей стране и строго контролируется; бесплатную воду из-под крана (kohoutková voda) в ресторанах просят всё чаще.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "155"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято округлять или оставлять около 10 %; если обслуживание включено, больше ничего не нужно.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Не оставляйте чаевые на столе, а назовите итоговую сумму при оплате; проверьте, нет ли в счёте строки за обслуживание."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 21 % (~12–15 % за вычетом комиссий)",
+    "minSpend": "2 001 CZK на чек",
+    "customsNote": "Жители стран вне ЕС получают в магазине форму Tax Free; неиспользованные товары заверяет таможня последней страны ЕС при выезде (например, в аэропорту Праги)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "O2 Czech Republic",
+     "T-Mobile CZ",
+     "Vodafone CZ"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту Праги продают дорогие туристические пакеты; покупайте в салонах O2, T-Mobile или Vodafone или заранее оформите eSIM. У турецких SIM нет роуминга по тарифам ЕС, будьте осторожны."
+   },
+   "touristScams": [
+    {
+     "title": "Ловушка обменников",
+     "desc": "Туристические обменники с плохим курсом и уличные менялы с недействительными купюрами.",
+     "tip": "Меняйте в банках или пунктах, где указан реальный курс, а не «0 % комиссии»; никогда на улице."
+    },
+    {
+     "title": "Динамическая конвертация",
+     "desc": "Банкоматы вроде Euronet навязывают конвертацию со скрытой наценкой.",
+     "tip": "Пользуйтесь банкоматами банков и всегда выбирайте «без конвертации / CZK»."
+    },
+    {
+     "title": "Такси с улицы",
+     "desc": "Такси, пойманные на улице в центре, берут завышенную плату.",
+     "tip": "Пользуйтесь Bolt, Uber или Liftago."
+    }
+   ]
   }
  }
 }

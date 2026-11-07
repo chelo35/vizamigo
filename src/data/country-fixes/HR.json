@@ -326,6 +326,66 @@
      "Kayalık plajlarda ve açık denizde yüzerken tekne trafiğine dikkat edin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu tüm ülkede içilebilir ve kalitelidir; bazı küçük adalarda su tankerle taşındığından yerel tavsiyeye uyun.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 civarı bahşiş adettir; kafelerde hesabı yuvarlamak yeterlidir.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Kartla ödediyseniz bahşişi nakit bırakmak garsona ulaşmasını garantiler."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%25 KDV (komisyon sonrası ~%12–17)",
+    "minSpend": "Fatura başına 100 €",
+    "customsNote": "AB dışında yaşayanlar mağazadan PDV-P (Tax Free) formu alır; ürünleri kullanılmamış hâlde AB’den çıkarken Zagreb, Split veya Dubrovnik havalimanında ya da sınır kapısında gümrüğe onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach"
+    ],
+    "airportSimTrapWarning": "Havalimanı ve feribot limanı kioskları pahalıdır; Hrvatski Telekom, A1 veya Telemach turist paketlerini büfelerden (Tisak) ve marketlerden alın ya da önceden eSIM kurun. Türk hatlarında AB roaming paketi yoktur."
+   },
+   "touristScams": [
+    {
+     "title": "Kiloyla balık tuzağı",
+     "desc": "Kiloyla satılan taze balıkta hesaba şişirilmiş ağırlık yazılması.",
+     "tip": "Balığı sipariş öncesi tarttırın ve gramajı ile fiyatını yazılı isteyin."
+    },
+    {
+     "title": "Liman ve otogar taksileri",
+     "desc": "Liman ve otogarlarda ruhsatsız taksiler ve “sabit fiyat” oyunları.",
+     "tip": "Uber veya Bolt kullanın; fiyatı binmeden netleştirin."
+    },
+    {
+     "title": "Gece kulübü hesabı",
+     "desc": "Gece kulüplerinde ve striptiz barlarında fahiş içki hesapları.",
+     "tip": "Menüde fiyat görmeden sipariş vermeyin; tanımadığınız kişilerin önerdiği mekânlara gitmeyin."
+    }
+   ]
   }
  },
  "en": {
@@ -655,6 +715,66 @@
      "Watch out for boat traffic when swimming off rocks or in open water."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable and of good quality nationwide; on some small islands water is delivered by tanker, so follow local advice.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "Around 10% is customary in restaurants; rounding up is enough in cafés.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "If you paid by card, leaving the tip in cash ensures it reaches the waiter."
+   },
+   "taxFree": {
+    "vatRefundPercent": "25% VAT (~12–17% net after fees)",
+    "minSpend": "EUR 100 per invoice",
+    "customsNote": "Non-EU residents get a PDV-P (Tax Free) form at the store; have the unused goods validated by customs at Zagreb, Split or Dubrovnik airport or at the border when leaving the EU."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach"
+    ],
+    "airportSimTrapWarning": "Kiosks at the airport and ferry ports are pricey; buy Hrvatski Telekom, A1 or Telemach tourist packs at newsstands (Tisak) and supermarkets, or install an eSIM in advance. Turkish SIMs have no EU roaming deal."
+   },
+   "touristScams": [
+    {
+     "title": "Fish by the kilo",
+     "desc": "Fresh fish sold by the kilo with an inflated weight on the bill.",
+     "tip": "Have the fish weighed before ordering and ask for the weight and price in writing."
+    },
+    {
+     "title": "Port and bus station taxis",
+     "desc": "Unlicensed taxis and “fixed price” tricks at ports and bus stations.",
+     "tip": "Use Uber or Bolt and agree the price before getting in."
+    },
+    {
+     "title": "Nightclub bills",
+     "desc": "Exorbitant drink bills in nightclubs and strip bars.",
+     "tip": "Never order without seeing prices and avoid venues recommended by strangers."
+    }
+   ]
   }
  },
  "de": {
@@ -984,6 +1104,66 @@
      "Beim Schwimmen vor Felsen oder im offenen Meer auf Bootsverkehr achten."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist landesweit trinkbar und von guter Qualität; auf einigen kleinen Inseln wird Wasser per Tankschiff geliefert, daher lokale Hinweise beachten.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "Etwa 10 % sind in Restaurants üblich; in Cafés reicht Aufrunden.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Bei Kartenzahlung das Trinkgeld bar geben, damit es sicher beim Kellner ankommt."
+   },
+   "taxFree": {
+    "vatRefundPercent": "25 % MwSt. (netto ~12–17 % nach Gebühren)",
+    "minSpend": "100 € pro Rechnung",
+    "customsNote": "Nicht-EU-Bürger erhalten im Geschäft ein PDV-P-(Tax-Free-)Formular; die unbenutzten Waren bei der Ausreise aus der EU am Flughafen Zagreb, Split oder Dubrovnik oder an der Grenze vom Zoll bestätigen lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach"
+    ],
+    "airportSimTrapWarning": "Kioske an Flughafen und Fährhäfen sind teuer; Touristenpakete von Hrvatski Telekom, A1 oder Telemach an Zeitungskiosken (Tisak) und in Supermärkten kaufen oder vorab eine eSIM installieren. Türkische SIMs haben kein EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Fisch nach Kilo",
+     "desc": "Bei kiloweise verkauftem frischem Fisch steht ein überhöhtes Gewicht auf der Rechnung.",
+     "tip": "Fisch vor der Bestellung wiegen lassen und Gewicht sowie Preis schriftlich verlangen."
+    },
+    {
+     "title": "Taxis an Häfen und Busbahnhöfen",
+     "desc": "Unlizenzierte Taxis und „Festpreis“-Tricks an Häfen und Busbahnhöfen.",
+     "tip": "Uber oder Bolt nutzen und den Preis vor dem Einsteigen klären."
+    },
+    {
+     "title": "Nachtclub-Rechnungen",
+     "desc": "Horrende Getränkerechnungen in Nachtclubs und Stripbars.",
+     "tip": "Nie ohne Preise bestellen und von Fremden empfohlene Lokale meiden."
+    }
+   ]
   }
  },
  "es": {
@@ -1313,6 +1493,66 @@
      "Cuidado con el tráfico de barcos al nadar desde rocas o en mar abierto."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable y de buena calidad en todo el país; en algunas islas pequeñas llega en barco cisterna, así que siga las indicaciones locales.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "En restaurantes es costumbre dejar alrededor de un 10 %; en cafés basta con redondear.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Si paga con tarjeta, dejar la propina en efectivo garantiza que llegue al camarero."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 25 % (~12–17 % neto tras comisiones)",
+    "minSpend": "100 € por factura",
+    "customsNote": "Los residentes fuera de la UE reciben en la tienda un formulario PDV-P (Tax Free); haga validar los productos sin usar en la aduana de los aeropuertos de Zagreb, Split o Dubrovnik o en la frontera al salir de la UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto y los puertos de ferri son caros; compre paquetes turísticos de Hrvatski Telekom, A1 o Telemach en quioscos de prensa (Tisak) y supermercados, o instale una eSIM antes. Las SIM turcas no tienen roaming de la UE."
+   },
+   "touristScams": [
+    {
+     "title": "Pescado al peso",
+     "desc": "Pescado fresco vendido por kilo con un peso inflado en la cuenta.",
+     "tip": "Pida que pesen el pescado antes de pedir y que le den el peso y el precio por escrito."
+    },
+    {
+     "title": "Taxis de puertos y estaciones",
+     "desc": "Taxis sin licencia y trucos de “precio fijo” en puertos y estaciones de autobús.",
+     "tip": "Use Uber o Bolt y acuerde el precio antes de subir."
+    },
+    {
+     "title": "Cuentas de discotecas",
+     "desc": "Cuentas de bebidas desorbitadas en discotecas y clubes de striptease.",
+     "tip": "No pida sin ver los precios y evite los locales recomendados por desconocidos."
+    }
+   ]
   }
  },
  "ru": {
@@ -1642,6 +1882,66 @@
      "Купаясь у скал или в открытом море, следите за лодками."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода по всей стране пригодна для питья и хорошего качества; на некоторых небольших островах воду завозят танкерами, следуйте местным рекомендациям.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять около 10 %; в кафе достаточно округлить.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Если платите картой, оставьте чаевые наличными — так они точно дойдут до официанта."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 25 % (~12–17 % за вычетом комиссий)",
+    "minSpend": "100 € на счёт",
+    "customsNote": "Жители стран вне ЕС получают в магазине форму PDV-P (Tax Free); при выезде из ЕС заверьте неиспользованные товары на таможне в аэропортах Загреба, Сплита или Дубровника либо на границе."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Hrvatski Telekom",
+     "A1 Hrvatska",
+     "Telemach"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту и паромных портах дорогие; туристические пакеты Hrvatski Telekom, A1 или Telemach покупайте в газетных киосках (Tisak) и супермаркетах либо заранее установите eSIM. У турецких SIM нет роуминга по тарифам ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Рыба на вес",
+     "desc": "Свежую рыбу продают на вес и вписывают в счёт завышенный вес.",
+     "tip": "Попросите взвесить рыбу до заказа и указать вес и цену письменно."
+    },
+    {
+     "title": "Такси в портах и на автовокзалах",
+     "desc": "Нелицензированные такси и уловки с «фиксированной ценой» в портах и на автовокзалах.",
+     "tip": "Пользуйтесь Uber или Bolt и согласуйте цену до посадки."
+    },
+    {
+     "title": "Счета в ночных клубах",
+     "desc": "Грабительские счета за напитки в ночных клубах и стрип-барах.",
+     "tip": "Не заказывайте, не увидев цен, и избегайте заведений, которые советуют незнакомцы."
+    }
+   ]
   }
  }
 }

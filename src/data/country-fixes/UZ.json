@@ -325,6 +325,68 @@
      "Ekmeği ters koymayın ve yere düşürmeyin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu içilmez; şişe veya kaynatılmış su için. Çay ve sıcak yemekler güvenlidir, çiğ salata ve meyveleri iyi yıkayın.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restoran hesaplarına çoğu zaman %10–15 servis ücreti eklenir; ek bahşiş beklenmez.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Servis ücreti yoksa hesabı yuvarlamak yeterli; rehber ve şoförlere küçük bahşiş memnuniyetle karşılanır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%12 KDV (iade nakitte ~%85, karta ~%90)",
+    "minSpend": "300.000 UZS",
+    "customsNote": "Tax Free logolu mağazalardan pasaportla alışveriş yapın ve fişi alın; tüm uluslararası havalimanlarındaki Tax Free gişelerinde gümrük onayından sonra iadeyi nakit veya karta alın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "airportSimTrapWarning": "Taşkent Havalimanı’ndaki Beeline ve Ucell stantları resmî fiyatlıdır ama kuyruk uzun olabilir; şehirdeki resmî mağazalarda pasaportla birkaç dakikada ucuz hat alınır, eSIM de mümkündür."
+   },
+   "touristScams": [
+    {
+     "title": "Uygulamasız taksi",
+     "desc": "Uygulama kullanmayan taksicilerin yabancılardan normal ücretin birkaç katını istemesi.",
+     "tip": "Yandex Go veya MyTaxi kullanın; havalimanı ve garda sokak taksisinden kaçının."
+    },
+    {
+     "title": "Sokak döviz bürosu",
+     "desc": "Resmî olmayan sokak dövizcilerinde eksik para veya sahte banknot verilmesi.",
+     "tip": "Yalnızca banka ve resmî döviz bürolarında bozdurun ya da ATM kullanın."
+    },
+    {
+     "title": "Gayriresmî minare turu",
+     "desc": "Bazı tarihî mekânlarda “gizli minare tırmanışı” gibi resmî olmayan ücretler istenmesi.",
+     "tip": "Yalnızca gişeden bilet alın; kayıt dışı turları reddedin."
+    }
+   ]
   }
  },
  "en": {
@@ -653,6 +715,68 @@
      "Never place bread upside down or let it fall to the ground."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; drink bottled or boiled water. Tea and hot dishes are safe; wash raw salads and fruit well.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restaurant bills often include a 10–15% service charge; extra tipping is not expected.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Without a service charge rounding up is enough; small tips for guides and drivers are appreciated."
+   },
+   "taxFree": {
+    "vatRefundPercent": "12% VAT (refund ~85% in cash, ~90% to card)",
+    "minSpend": "UZS 300,000",
+    "customsNote": "Shop with your passport at stores with the Tax Free logo and keep the receipt; after customs validation, collect the refund in cash or to your card at Tax Free counters at all international airports."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "airportSimTrapWarning": "Beeline and Ucell counters at Tashkent Airport charge official prices but queues can be long; official stores in town sell cheap SIMs in minutes with your passport, and eSIMs are available."
+   },
+   "touristScams": [
+    {
+     "title": "Non-app taxis",
+     "desc": "Non-app taxis charge foreigners several times the normal fare.",
+     "tip": "Use Yandex Go or MyTaxi and avoid street taxis at the airport and stations."
+    },
+    {
+     "title": "Street money changers",
+     "desc": "Unofficial street changers short-change you or hand over fake notes.",
+     "tip": "Change money only at banks and official exchange offices, or use ATMs."
+    },
+    {
+     "title": "Unofficial minaret tours",
+     "desc": "Unofficial fees at some historic sites, such as “secret minaret climbs”.",
+     "tip": "Buy tickets only at the ticket office and decline off-the-books tours."
+    }
+   ]
   }
  },
  "de": {
@@ -981,6 +1105,68 @@
      "Brot nie verkehrt herum hinlegen oder auf den Boden fallen lassen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; Flaschen- oder abgekochtes Wasser trinken. Tee und warme Gerichte sind sicher; rohe Salate und Obst gut waschen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restaurantrechnungen enthalten oft 10–15 % Servicegebühr; zusätzliches Trinkgeld wird nicht erwartet.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Ohne Servicegebühr reicht Aufrunden; kleine Trinkgelder für Guides und Fahrer werden geschätzt."
+   },
+   "taxFree": {
+    "vatRefundPercent": "12 % MwSt. (Erstattung bar ~85 %, auf Karte ~90 %)",
+    "minSpend": "300.000 UZS",
+    "customsNote": "Mit Pass in Geschäften mit Tax-Free-Logo einkaufen und den Beleg aufbewahren; nach der Zollbestätigung die Erstattung an den Tax-Free-Schaltern aller internationalen Flughäfen bar oder auf Karte erhalten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "airportSimTrapWarning": "Die Stände von Beeline und Ucell am Flughafen Taschkent haben offizielle Preise, aber oft lange Schlangen; offizielle Shops in der Stadt verkaufen mit Pass in Minuten günstige SIMs, eSIM ist ebenfalls möglich."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis ohne App",
+     "desc": "Taxis ohne App verlangen von Ausländern ein Vielfaches des normalen Preises.",
+     "tip": "Yandex Go oder MyTaxi nutzen und Straßentaxis an Flughafen und Bahnhöfen meiden."
+    },
+    {
+     "title": "Geldwechsler auf der Straße",
+     "desc": "Inoffizielle Wechsler zahlen zu wenig aus oder geben Falschgeld.",
+     "tip": "Nur bei Banken und offiziellen Wechselstuben tauschen oder Geldautomaten nutzen."
+    },
+    {
+     "title": "Inoffizielle Minarett-Touren",
+     "desc": "An manchen historischen Stätten werden inoffizielle Gebühren verlangt, etwa für „geheime Minarettbesteigungen“.",
+     "tip": "Tickets nur an der Kasse kaufen und inoffizielle Touren ablehnen."
+    }
+   ]
   }
  },
  "es": {
@@ -1309,6 +1495,68 @@
      "Nunca pongas el pan boca abajo ni lo dejes caer al suelo."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba agua embotellada o hervida. El té y los platos calientes son seguros; lave bien ensaladas y fruta cruda.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Las cuentas de restaurante suelen incluir un 10–15 % de servicio; no se espera propina adicional.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Sin cargo de servicio basta redondear; se agradecen pequeñas propinas a guías y conductores."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 12 % (reembolso ~85 % en efectivo, ~90 % a tarjeta)",
+    "minSpend": "300.000 UZS",
+    "customsNote": "Compre con pasaporte en tiendas con el logo Tax Free y guarde el recibo; tras la validación aduanera, cobre el reembolso en efectivo o a tarjeta en los mostradores Tax Free de todos los aeropuertos internacionales."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "airportSimTrapWarning": "Los mostradores de Beeline y Ucell en el aeropuerto de Taskent tienen precios oficiales, pero hay colas largas; en tiendas oficiales de la ciudad se compra una SIM barata en minutos con pasaporte, y también hay eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis sin app",
+     "desc": "Taxis sin aplicación cobran a los extranjeros varias veces la tarifa normal.",
+     "tip": "Use Yandex Go o MyTaxi y evite los taxis de la calle en aeropuerto y estaciones."
+    },
+    {
+     "title": "Cambistas callejeros",
+     "desc": "Cambistas no oficiales dan de menos o entregan billetes falsos.",
+     "tip": "Cambie solo en bancos y casas de cambio oficiales, o use cajeros."
+    },
+    {
+     "title": "Subidas no oficiales a minaretes",
+     "desc": "Cobros no oficiales en algunos lugares históricos, como “subidas secretas al minarete”.",
+     "tip": "Compre entradas solo en taquilla y rechace los tours informales."
+    }
+   ]
   }
  },
  "ru": {
@@ -1637,6 +1885,68 @@
      "Не кладите хлеб вверх дном и не роняйте его на землю."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте бутилированную или кипячёную. Чай и горячие блюда безопасны, сырые овощи и фрукты тщательно мойте.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "В счёт ресторана часто включён сервисный сбор 10–15 %; дополнительных чаевых не ждут.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Если сбора нет, достаточно округлить; небольшие чаевые гидам и водителям ценятся."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 12 % (возврат ~85 % наличными, ~90 % на карту)",
+    "minSpend": "300 000 UZS",
+    "customsNote": "Покупайте с паспортом в магазинах с логотипом Tax Free и сохраняйте чек; после подтверждения таможни получите возврат наличными или на карту в окнах Tax Free во всех международных аэропортах."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "airportSimTrapWarning": "Стойки Beeline и Ucell в аэропорту Ташкента работают по официальным ценам, но очереди бывают длинными; в официальных салонах в городе дешёвую SIM оформят за минуты по паспорту, доступна и eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без приложения",
+     "desc": "Таксисты без приложения берут с иностранцев в несколько раз больше.",
+     "tip": "Пользуйтесь Yandex Go или MyTaxi и избегайте уличных такси в аэропорту и на вокзалах."
+    },
+    {
+     "title": "Уличные менялы",
+     "desc": "Неофициальные менялы обсчитывают или подсовывают фальшивые купюры.",
+     "tip": "Меняйте деньги только в банках и официальных обменниках или снимайте в банкоматах."
+    },
+    {
+     "title": "Неофициальные подъёмы на минарет",
+     "desc": "На некоторых памятниках берут неофициальную плату, например за «тайный подъём на минарет».",
+     "tip": "Покупайте билеты только в кассе и отказывайтесь от неофициальных экскурсий."
+    }
+   ]
   }
  }
 }

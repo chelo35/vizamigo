@@ -321,6 +321,68 @@
      "Tacikistan sınırına yakın bölgelere gitmeden önce resmî uyarıları kontrol edin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Bişkek’te şebeke suyu dağ kaynaklıdır ama borular eskidir; şişe veya kaynatılmış su için. Kırsalda ve yaylalarda suyu mutlaka kaynatın veya filtreleyin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Kuduz (kırsal bölge veya uzun kalış)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Bişkek restoranları genellikle %10–15 servis ücreti ekler, ek bahşiş beklenmez.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Rehber, şoför ve yurt (çadır) kamplarındaki ev sahiplerine küçük bahşiş memnuniyetle karşılanır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Yok",
+    "customsNote": "Kırgızistan’da turistlere KDV iadesi (Tax Free) sistemi yoktur. Antika ve kültürel değeri olan ürünlerin çıkışı için izin belgesi gerekebilir; halı ve keçe ürünlerin faturasını saklayın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.80",
+    "topCarriers": [
+     "Beeline (Sky Mobile)",
+     "MegaCom",
+     "O! (Nur Telecom)"
+    ],
+    "airportSimTrapWarning": "Manas Havalimanı’ndaki stantlar turist paketlerini şehirden pahalı satar; Bişkek’teki O!, MegaCom veya Beeline mağazalarında pasaportla ucuz hat alın. Dağlarda kapsama en iyi O! ve MegaCom’dadır."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksicileri",
+     "desc": "Manas Havalimanı ve otogarlarda taksicilerin turistlerden fazla ücret istemesi.",
+     "tip": "Yandex Go veya inDrive kullanın; havalimanından şehre resmî servis minibüsü de vardır."
+    },
+    {
+     "title": "Sahte veya rüşvetçi polis",
+     "desc": "Belge kontrolü bahanesiyle para isteyen polisler.",
+     "tip": "Pasaportunuzu elinizden bırakmadan gösterin, para vermeyin; ısrar ederlerse büyükelçiliği arayacağınızı söyleyin."
+    },
+    {
+     "title": "Oş Pazarı’nda yankesicilik",
+     "desc": "Oş Pazarı kalabalığında yankesiciler.",
+     "tip": "Telefon ve cüzdanı ön cepte taşıyın; sırt çantasını önünüze alın."
+    }
+   ]
   }
  },
  "en": {
@@ -645,6 +707,68 @@
      "Check official advisories before visiting areas near the Tajik border."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Bishkek tap water comes from mountain sources but the pipes are old; drink bottled or boiled water. In the countryside and high pastures always boil or filter water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Rabies (rural areas or long stays)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Bishkek restaurants often add a 10–15% service charge, so no extra tip is expected.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Small tips for guides, drivers and yurt camp hosts are appreciated."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "None",
+    "customsNote": "Kyrgyzstan has no tourist VAT refund (Tax Free) system. Antiques and items of cultural value may need an export permit; keep receipts for carpets and felt goods."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.80",
+    "topCarriers": [
+     "Beeline (Sky Mobile)",
+     "MegaCom",
+     "O! (Nur Telecom)"
+    ],
+    "airportSimTrapWarning": "Counters at Manas Airport sell tourist packs above town prices; buy a cheap SIM with your passport at O!, MegaCom or Beeline stores in Bishkek. In the mountains coverage is best with O! and MegaCom."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxi drivers",
+     "desc": "Taxi drivers at Manas Airport and bus stations overcharge tourists.",
+     "tip": "Use Yandex Go or inDrive; an official shuttle minibus also runs from the airport to town."
+    },
+    {
+     "title": "Fake or corrupt police",
+     "desc": "Officers ask for money under the pretext of document checks.",
+     "tip": "Show your passport without handing it over and do not pay; if they insist, say you will call your embassy."
+    },
+    {
+     "title": "Pickpockets at Osh Bazaar",
+     "desc": "Pickpockets work the crowds at Osh Bazaar.",
+     "tip": "Keep phone and wallet in front pockets and wear your backpack on your front."
+    }
+   ]
   }
  },
  "de": {
@@ -969,6 +1093,68 @@
      "Vor Reisen in Gebiete nahe der tadschikischen Grenze offizielle Hinweise prüfen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Bischkeks Leitungswasser stammt aus Bergquellen, die Rohre sind aber alt; Flaschen- oder abgekochtes Wasser trinken. Auf dem Land und auf Hochweiden Wasser immer abkochen oder filtern.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Tollwut (ländliche Gebiete oder lange Aufenthalte)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restaurants in Bischkek schlagen oft 10–15 % Service auf, zusätzliches Trinkgeld wird nicht erwartet.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Kleine Trinkgelder für Guides, Fahrer und Gastgeber in Jurtencamps werden geschätzt."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Keine",
+    "customsNote": "Kirgisistan hat kein Tax-Free-System für Touristen. Für Antiquitäten und Kulturgüter kann eine Ausfuhrgenehmigung nötig sein; Belege für Teppiche und Filzwaren aufbewahren."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.80",
+    "topCarriers": [
+     "Beeline (Sky Mobile)",
+     "MegaCom",
+     "O! (Nur Telecom)"
+    ],
+    "airportSimTrapWarning": "Die Stände am Flughafen Manas verkaufen Touristenpakete teurer als in der Stadt; in Bischkek gibt es in O!-, MegaCom- oder Beeline-Shops mit Pass günstige SIMs. In den Bergen ist die Abdeckung bei O! und MegaCom am besten."
+   },
+   "touristScams": [
+    {
+     "title": "Taxifahrer am Flughafen",
+     "desc": "Taxifahrer am Flughafen Manas und an Busbahnhöfen verlangen von Touristen zu viel.",
+     "tip": "Yandex Go oder inDrive nutzen; vom Flughafen fährt auch ein offizieller Shuttle-Minibus in die Stadt."
+    },
+    {
+     "title": "Falsche oder korrupte Polizei",
+     "desc": "Polizisten verlangen unter dem Vorwand einer Dokumentenkontrolle Geld.",
+     "tip": "Pass zeigen, aber nicht aus der Hand geben, und nicht zahlen; bei Druck ankündigen, die Botschaft anzurufen."
+    },
+    {
+     "title": "Taschendiebe im Osch-Basar",
+     "desc": "Taschendiebe im Gedränge des Osch-Basars.",
+     "tip": "Handy und Geldbörse vorne tragen und den Rucksack vor dem Bauch."
+    }
+   ]
   }
  },
  "es": {
@@ -1293,6 +1479,68 @@
      "Consulte las alertas oficiales antes de ir a zonas cercanas a la frontera tayika."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo de Biskek procede de manantiales de montaña, pero las tuberías son antiguas; beba agua embotellada o hervida. En el campo y los pastos de altura hierva o filtre siempre el agua.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Rabia (zonas rurales o estancias largas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Los restaurantes de Biskek suelen añadir un 10–15 % de servicio, así que no se espera más propina.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Se agradecen pequeñas propinas a guías, conductores y anfitriones de campamentos de yurtas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No hay",
+    "customsNote": "Kirguistán no tiene sistema de devolución del IVA (Tax Free) para turistas. Las antigüedades y bienes culturales pueden requerir permiso de exportación; guarde las facturas de alfombras y fieltros."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.80",
+    "topCarriers": [
+     "Beeline (Sky Mobile)",
+     "MegaCom",
+     "O! (Nur Telecom)"
+    ],
+    "airportSimTrapWarning": "Los mostradores del aeropuerto Manas venden paquetes turísticos más caros que en la ciudad; compre una SIM barata con pasaporte en tiendas de O!, MegaCom o Beeline en Biskek. En la montaña la mejor cobertura es de O! y MegaCom."
+   },
+   "touristScams": [
+    {
+     "title": "Taxistas del aeropuerto",
+     "desc": "Taxistas del aeropuerto Manas y estaciones de autobús cobran de más a los turistas.",
+     "tip": "Use Yandex Go o inDrive; también hay un minibús oficial del aeropuerto a la ciudad."
+    },
+    {
+     "title": "Policía falsa o corrupta",
+     "desc": "Agentes piden dinero con la excusa de revisar documentos.",
+     "tip": "Muestre el pasaporte sin soltarlo y no pague; si insisten, diga que llamará a su embajada."
+    },
+    {
+     "title": "Carteristas en el bazar de Osh",
+     "desc": "Carteristas entre la multitud del bazar de Osh.",
+     "tip": "Lleve móvil y cartera en bolsillos delanteros y la mochila por delante."
+    }
+   ]
   }
  },
  "ru": {
@@ -1617,6 +1865,68 @@
      "Перед поездкой в районы у таджикской границы проверьте официальные рекомендации."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода в Бишкеке из горных источников, но трубы старые; пейте бутилированную или кипячёную. В сельской местности и на джайлоо воду всегда кипятите или фильтруйте.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Бешенство (сельская местность или долгое пребывание)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Рестораны Бишкека часто добавляют 10–15 % за обслуживание, поэтому дополнительных чаевых не ждут.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Небольшие чаевые гидам, водителям и хозяевам юрточных лагерей ценятся."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Нет",
+    "customsNote": "В Кыргызстане нет системы возврата НДС (Tax Free) для туристов. Для вывоза антиквариата и культурных ценностей может понадобиться разрешение; сохраняйте чеки на ковры и войлочные изделия."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.80",
+    "topCarriers": [
+     "Beeline (Sky Mobile)",
+     "MegaCom",
+     "O! (Nur Telecom)"
+    ],
+    "airportSimTrapWarning": "Стойки в аэропорту Манас продают туристические пакеты дороже городских; дешёвую SIM по паспорту купите в салонах O!, MegaCom или Beeline в Бишкеке. В горах лучшая связь у O! и MegaCom."
+   },
+   "touristScams": [
+    {
+     "title": "Таксисты в аэропорту",
+     "desc": "Таксисты в аэропорту Манас и на автовокзалах завышают цены для туристов.",
+     "tip": "Пользуйтесь Yandex Go или inDrive; из аэропорта в город ходит и официальный маршрутный автобус."
+    },
+    {
+     "title": "Фальшивые или продажные полицейские",
+     "desc": "Полицейские требуют деньги под предлогом проверки документов.",
+     "tip": "Показывайте паспорт, не выпуская из рук, и не платите; если настаивают, скажите, что позвоните в посольство."
+    },
+    {
+     "title": "Карманники на Ошском базаре",
+     "desc": "Карманники орудуют в толпе Ошского базара.",
+     "tip": "Держите телефон и кошелёк в передних карманах, рюкзак носите спереди."
+    }
+   ]
   }
  }
 }

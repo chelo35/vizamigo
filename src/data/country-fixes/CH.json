@@ -321,6 +321,61 @@
      "Trende ‘Ruhezone’ (sessiz bölüm) vagonlarında telefonla konuşmayın."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "J",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İsviçre’ye özgü J tipi priz (üç yuvarlak pim). İnce C tipi (Europlug) fişler takılır, ama Türkiye’deki kalın gövdeli F/Schuko fişler takılmaz; J tipi adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu mükemmel kalitededir; şehirlerdeki binlerce çeşmeden (aksi yazmadıkça) içebilir, şişenizi doldurabilirsiniz.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Servis fiyatlara dahildir; memnun kaldıysanız hesabı yuvarlayın veya %5–10 bırakın.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Bahşiş zorunlu değildir; kartla öderken terminalde bahşiş ekleme seçeneği çıkabilir, “0” seçmek de kabul edilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%8,1 KDV",
+    "minSpend": "Fiş başına 300 CHF (aynı mağaza, aynı gün)",
+    "customsNote": "İsviçre AB üyesi olmadığı için iade doğrudan İsviçre çıkışında yapılır: Tax Free formunu ve kullanılmamış ürünleri Zürih veya Cenevre Havalimanı’nda gümrüğe onaylatın (dijital onay da mümkündür)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $6.00",
+    "topCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "İsviçre AB roaming bölgesinde değildir ve havalimanı paketleri çok pahalıdır; Swisscom, Sunrise veya Salt ön ödemeli hat (pasaport gerekir) ya da önceden alınmış eSIM en ekonomik yoldur."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte imza/bağış toplayıcılar",
+     "desc": "Cenevre’de sahte dilekçe veya bağış isteyenlerin dikkat dağıtıp hırsızlık yapması.",
+     "tip": "Durmadan kibarca reddedin; telefonu ve cüzdanı ortada bırakmayın."
+    },
+    {
+     "title": "Trende bagaj hırsızlığı",
+     "desc": "Özellikle havalimanı hatlarında bagaj raflarından çanta çalınması.",
+     "tip": "Bavulunuzu görebileceğiniz yere koyun, değerli eşyayı yanınızda taşıyın."
+    }
+   ]
   }
  },
  "en": {
@@ -645,6 +700,61 @@
      "Don’t make phone calls in the ‘quiet zone’ carriages on trains."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "J",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Swiss-specific Type J sockets (three round pins). Slim Type C Europlugs fit, but the thick-bodied F/Schuko plugs used in Turkey do not; bring a Type J adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is of excellent quality; you can drink from and refill bottles at the thousands of city fountains (unless marked otherwise).",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Service is included in prices; if satisfied, round up or leave 5–10%.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Tipping is not required; card terminals may offer a tip option, and choosing “0” is perfectly acceptable."
+   },
+   "taxFree": {
+    "vatRefundPercent": "8.1% VAT",
+    "minSpend": "CHF 300 per receipt (same store, same day)",
+    "customsNote": "Switzerland is not in the EU, so the refund is handled when leaving Switzerland: have the Tax Free form and unused goods validated by customs at Zurich or Geneva Airport (digital validation is also possible)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $6.00",
+    "topCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "Switzerland is outside the EU roaming zone and airport packs are very expensive; a Swisscom, Sunrise or Salt prepaid SIM (passport required) or an eSIM bought in advance is the cheapest option."
+   },
+   "touristScams": [
+    {
+     "title": "Fake petition/charity collectors",
+     "desc": "Fake petition or charity collectors in Geneva are used as a distraction for theft.",
+     "tip": "Decline politely without stopping and do not leave your phone or wallet out."
+    },
+    {
+     "title": "Luggage theft on trains",
+     "desc": "Bags are stolen from luggage racks, especially on airport routes.",
+     "tip": "Keep your suitcase where you can see it and carry valuables on you."
+    }
+   ]
   }
  },
  "de": {
@@ -969,6 +1079,61 @@
      "In der Ruhezone im Zug nicht telefonieren."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "J",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Schweizer Steckdosen Typ J (drei runde Stifte). Flache Eurostecker Typ C passen, die in der Türkei üblichen dicken F/Schuko-Stecker nicht; Adapter Typ J mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser hat ausgezeichnete Qualität; aus den Tausenden Stadtbrunnen kann man trinken und Flaschen füllen (sofern nicht anders angegeben).",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Der Service ist im Preis enthalten; bei Zufriedenheit aufrunden oder 5–10 % geben.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Trinkgeld ist nicht Pflicht; Kartenterminals bieten oft eine Trinkgeldoption, „0“ zu wählen ist völlig in Ordnung."
+   },
+   "taxFree": {
+    "vatRefundPercent": "8,1 % MwSt.",
+    "minSpend": "300 CHF pro Beleg (gleiches Geschäft, gleicher Tag)",
+    "customsNote": "Die Schweiz ist nicht in der EU, die Erstattung erfolgt bei der Ausreise aus der Schweiz: Tax-Free-Formular und unbenutzte Waren am Flughafen Zürich oder Genf vom Zoll bestätigen lassen (auch digital möglich)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $6.00",
+    "topCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "Die Schweiz gehört nicht zur EU-Roamingzone, Flughafenpakete sind sehr teuer; eine Prepaid-SIM von Swisscom, Sunrise oder Salt (Pass nötig) oder eine vorab gekaufte eSIM ist am günstigsten."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Unterschriften-/Spendensammler",
+     "desc": "Falsche Petitions- oder Spendensammler in Genf lenken ab, um zu stehlen.",
+     "tip": "Höflich ablehnen, ohne stehen zu bleiben, und Handy und Geldbörse nicht offen liegen lassen."
+    },
+    {
+     "title": "Gepäckdiebstahl im Zug",
+     "desc": "Taschen werden aus Gepäckablagen gestohlen, besonders auf Flughafenstrecken.",
+     "tip": "Koffer in Sichtweite abstellen und Wertsachen am Körper tragen."
+    }
+   ]
   }
  },
  "es": {
@@ -1293,6 +1458,61 @@
      "No hable por teléfono en los vagones de ‘zona de silencio’."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "J",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes suizos tipo J (tres clavijas redondas). Los Europlug planos tipo C encajan, pero los gruesos F/Schuko usados en Turquía no; lleve un adaptador tipo J."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es de excelente calidad; puede beber y rellenar botellas en las miles de fuentes urbanas (salvo indicación contraria).",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "El servicio está incluido en los precios; si queda satisfecho, redondee o deje un 5–10 %.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "La propina no es obligatoria; los datáfonos pueden ofrecer añadir propina y elegir “0” es perfectamente aceptable."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 8,1 %",
+    "minSpend": "300 CHF por ticket (misma tienda, mismo día)",
+    "customsNote": "Suiza no está en la UE, así que el reembolso se tramita al salir de Suiza: haga validar el formulario Tax Free y los productos sin usar en la aduana de los aeropuertos de Zúrich o Ginebra (también hay validación digital)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $6.00",
+    "topCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "Suiza está fuera de la zona de roaming de la UE y los paquetes del aeropuerto son muy caros; una SIM prepago de Swisscom, Sunrise o Salt (con pasaporte) o una eSIM comprada antes es lo más barato."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos recolectores de firmas o donativos",
+     "desc": "Falsos recolectores de firmas o donativos en Ginebra distraen para robar.",
+     "tip": "Rechace con cortesía sin detenerse y no deje el móvil ni la cartera a la vista."
+    },
+    {
+     "title": "Robo de equipaje en trenes",
+     "desc": "Robos de maletas en los portaequipajes, sobre todo en rutas al aeropuerto.",
+     "tip": "Coloque la maleta donde pueda verla y lleve los objetos de valor encima."
+    }
+   ]
   }
  },
  "ru": {
@@ -1617,6 +1837,61 @@
      "Не разговаривайте по телефону в вагонах «тихой зоны»."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "J",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Швейцарские розетки типа J (три круглых штыря). Плоские европейские вилки типа C подходят, а толстые вилки F/Schuko, как в Турции, — нет; возьмите переходник типа J."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода отличного качества; из тысяч городских фонтанов можно пить и набирать воду (если нет таблички об обратном).",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Обслуживание включено в цены; если вам понравилось, округлите или оставьте 5–10 %.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Чаевые не обязательны; терминалы часто предлагают добавить чаевые, выбрать «0» вполне нормально."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 8,1 %",
+    "minSpend": "300 CHF на чек (один магазин, один день)",
+    "customsNote": "Швейцария не входит в ЕС, поэтому возврат оформляется при выезде из Швейцарии: заверьте форму Tax Free и неиспользованные товары на таможне в аэропортах Цюриха или Женевы (возможно и цифровое подтверждение)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $6.00",
+    "topCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "Швейцария не входит в зону роуминга ЕС, а пакеты в аэропорту очень дорогие; дешевле всего предоплаченная SIM Swisscom, Sunrise или Salt (нужен паспорт) или купленная заранее eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивые сборщики подписей",
+     "desc": "Фальшивые сборщики подписей или пожертвований в Женеве отвлекают внимание ради кражи.",
+     "tip": "Вежливо откажитесь, не останавливаясь, и не оставляйте телефон и кошелёк на виду."
+    },
+    {
+     "title": "Кражи багажа в поездах",
+     "desc": "Сумки крадут с багажных полок, особенно на маршрутах в аэропорт.",
+     "tip": "Ставьте чемодан в зоне видимости, ценности держите при себе."
+    }
+   ]
   }
  }
 }

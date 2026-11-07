@@ -295,6 +295,66 @@
      "Askerî personel, kontrol noktaları ve altyapıyı fotoğraflamayın."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu kaynatmadan içilmez; şişe su veya mahallelerdeki arıtılmış su otomatlarını kullanın. Savaş nedeniyle bazı bölgelerde su kesintileri yaşanabilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kafelerde para üstünü bırakmak yeterli; taksilerde (Uklon, Bolt) bahşiş beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Yok",
+    "customsNote": "Ukrayna’da turistlere işleyen bir KDV iadesi (Tax Free) sistemi yoktur. Ülkeye girişte Ukrayna’da geçerli sağlık sigortası istenebilir; değerli eşyalar ve büyük miktarda nakit için gümrük beyanı gerekir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "airportSimTrapWarning": "Hava sahası kapalı olduğundan giriş kara sınırından yapılır; Kyivstar, Vodafone ve lifecell hatları şehirlerdeki resmî mağazalarda ve marketlerde ucuzdur, sınırdaki aracılardan hat almayın. eSIM’i operatörün uygulamasından kurabilirsiniz."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte bağış kampanyaları",
+     "desc": "İnternette ve sokakta sahte gönüllü ve yardım toplama kampanyaları.",
+     "tip": "Yalnızca resmî kuruluşların doğrulanmış hesaplarına bağış yapın."
+    },
+    {
+     "title": "Sınır kapısı aracıları",
+     "desc": "Sınır geçişlerinde gayriresmî şoför ve “aracıların” fahiş ücret istemesi.",
+     "tip": "Ulaşımı önceden lisanslı otobüs veya tren (Ukrzaliznytsia) ile ayarlayın."
+    },
+    {
+     "title": "Sokak dövizcileri",
+     "desc": "Sokak dövizcilerinin sahte veya eksik para vermesi.",
+     "tip": "Yalnızca banka ve lisanslı döviz bürolarını kullanın."
+    }
+   ]
   }
  },
  "en": {
@@ -593,6 +653,66 @@
      "Don’t photograph military personnel, checkpoints or infrastructure."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Do not drink tap water unboiled; use bottled water or the purified-water vending machines found in neighbourhoods. Because of the war, some areas may have water outages.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Tipping 10% in restaurants is common.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Leaving the change is enough in cafés; taxi drivers (Uklon, Bolt) do not expect tips."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "None",
+    "customsNote": "Ukraine has no working tourist VAT refund (Tax Free) system. Health insurance valid in Ukraine may be required at entry; valuables and large amounts of cash must be declared at customs."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "airportSimTrapWarning": "Airspace is closed, so you enter by land; Kyivstar, Vodafone and lifecell SIMs are cheap at official stores and supermarkets in cities, so do not buy from middlemen at the border. eSIMs can be set up via the operator’s app."
+   },
+   "touristScams": [
+    {
+     "title": "Fake charity drives",
+     "desc": "Fake volunteer and charity fundraising, online and on the street.",
+     "tip": "Donate only to verified accounts of official organisations."
+    },
+    {
+     "title": "Border “fixers”",
+     "desc": "Unofficial drivers and fixers charge inflated prices at border crossings.",
+     "tip": "Book transport in advance with licensed buses or trains (Ukrzaliznytsia)."
+    },
+    {
+     "title": "Street money changers",
+     "desc": "Street changers hand over fake or short amounts.",
+     "tip": "Use only banks and licensed exchange offices."
+    }
+   ]
   }
  },
  "de": {
@@ -891,6 +1011,66 @@
      "Keine Soldaten, Checkpoints oder Infrastruktur fotografieren."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht unabgekocht trinken; Flaschenwasser oder die Automaten mit gereinigtem Wasser in den Wohnvierteln nutzen. Wegen des Krieges kann es regional zu Wasserausfällen kommen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "10 % Trinkgeld sind in Restaurants üblich.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "In Cafés reicht das Wechselgeld; Taxifahrer (Uklon, Bolt) erwarten kein Trinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Keine",
+    "customsNote": "Die Ukraine hat kein funktionierendes Tax-Free-System für Touristen. Bei der Einreise kann eine in der Ukraine gültige Krankenversicherung verlangt werden; Wertsachen und größere Bargeldbeträge sind beim Zoll anzumelden."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "airportSimTrapWarning": "Der Luftraum ist geschlossen, die Einreise erfolgt auf dem Landweg; SIMs von Kyivstar, Vodafone und lifecell sind in offiziellen Shops und Supermärkten der Städte billig, also nicht bei Vermittlern an der Grenze kaufen. eSIMs lassen sich über die Betreiber-App einrichten."
+   },
+   "touristScams": [
+    {
+     "title": "Gefälschte Spendenaktionen",
+     "desc": "Falsche Freiwilligen- und Spendensammlungen online und auf der Straße.",
+     "tip": "Nur an verifizierte Konten offizieller Organisationen spenden."
+    },
+    {
+     "title": "„Vermittler“ an der Grenze",
+     "desc": "Inoffizielle Fahrer und Vermittler verlangen an Grenzübergängen überhöhte Preise.",
+     "tip": "Transport vorab mit lizenzierten Bussen oder Zügen (Ukrsalisnyzja) buchen."
+    },
+    {
+     "title": "Geldwechsler auf der Straße",
+     "desc": "Straßenwechsler geben Falschgeld oder zu wenig heraus.",
+     "tip": "Nur Banken und lizenzierte Wechselstuben nutzen."
+    }
+   ]
   }
  },
  "es": {
@@ -1189,6 +1369,66 @@
      "No fotografíe militares, puestos de control ni infraestructuras."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "No beba agua del grifo sin hervir; use agua embotellada o las máquinas de agua purificada de los barrios. Por la guerra puede haber cortes de agua en algunas zonas.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Es habitual dejar un 10 % en restaurantes.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "En cafés basta con dejar el cambio; los taxistas (Uklon, Bolt) no esperan propina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No hay",
+    "customsNote": "Ucrania no tiene un sistema de devolución del IVA (Tax Free) operativo para turistas. A la entrada pueden pedir un seguro médico válido en Ucrania; los objetos de valor y grandes sumas de efectivo deben declararse en aduana."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "airportSimTrapWarning": "El espacio aéreo está cerrado, así que se entra por tierra; las SIM de Kyivstar, Vodafone y lifecell son baratas en tiendas oficiales y supermercados de las ciudades, no las compre a intermediarios en la frontera. La eSIM se configura desde la app del operador."
+   },
+   "touristScams": [
+    {
+     "title": "Falsas campañas benéficas",
+     "desc": "Recaudaciones falsas de voluntarios y caridad, en internet y en la calle.",
+     "tip": "Done solo a cuentas verificadas de organizaciones oficiales."
+    },
+    {
+     "title": "“Gestores” en la frontera",
+     "desc": "Conductores e intermediarios no oficiales cobran precios inflados en los pasos fronterizos.",
+     "tip": "Reserve con antelación autobuses con licencia o trenes (Ukrzaliznytsia)."
+    },
+    {
+     "title": "Cambistas callejeros",
+     "desc": "Cambistas en la calle entregan billetes falsos o de menos.",
+     "tip": "Use solo bancos y casas de cambio autorizadas."
+    }
+   ]
   }
  },
  "ru": {
@@ -1487,6 +1727,66 @@
      "Не фотографируйте военных, блокпосты и инфраструктуру."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду без кипячения не пейте; используйте бутилированную или автоматы с очищенной водой во дворах. Из-за войны в некоторых районах возможны перебои с водой.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "В кафе достаточно оставить сдачу; таксисты (Uklon, Bolt) чаевых не ждут."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Нет",
+    "customsNote": "В Украине нет действующей системы возврата НДС (Tax Free) для туристов. На въезде могут потребовать медицинскую страховку, действующую в Украине; ценности и крупные суммы наличных нужно декларировать."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "airportSimTrapWarning": "Воздушное пространство закрыто, въезд только по суше; SIM Kyivstar, Vodafone и lifecell дёшевы в официальных салонах и супермаркетах городов, не покупайте их у посредников на границе. eSIM можно оформить в приложении оператора."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивые благотворительные сборы",
+     "desc": "Поддельные волонтёрские и благотворительные сборы в интернете и на улице.",
+     "tip": "Жертвуйте только на проверенные счета официальных организаций."
+    },
+    {
+     "title": "«Решалы» на границе",
+     "desc": "Неофициальные водители и посредники на пунктах пропуска берут завышенные суммы.",
+     "tip": "Заранее бронируйте лицензированные автобусы или поезда «Укрзализныци»."
+    },
+    {
+     "title": "Уличные менялы",
+     "desc": "Уличные менялы выдают фальшивые купюры или недодают.",
+     "tip": "Пользуйтесь только банками и лицензированными обменниками."
+    }
+   ]
   }
  }
 }

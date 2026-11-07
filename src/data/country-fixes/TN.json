@@ -323,6 +323,67 @@
      "İnsanları ve güvenlik güçlerini izinsiz fotoğraflamayın."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C/E tipi (topraklama pimli Fransız tipi) priz; Türk C fişleri ve hibrit E/F Schuko fişler takılır, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şehirlerde şebeke suyu arıtılır ama tadı ağırdır ve mide rahatsızlığı yapabilir; şişe su tüketin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "190"
+   },
+   "tipping": {
+    "custom": "Kafelerde para üstünü bırakmak, restoranlarda %10 civarı bahşiş adettir.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Otel görevlileri ve rehberlere birkaç dinar yeterlidir; çoğu yerde bahşiş nakit verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%19 KDV",
+    "minSpend": "Mağaza başına 200 TND (KDV dahil)",
+    "customsNote": "“Credit card sales, tax back” işareti olan mağazalardan kredi kartıyla alışveriş yapın; satış fişini çıkışta Tunus-Kartaca, Cerbe, Monastir veya Enfidha havalimanında gümrüğe onaylatın. İade banka havalesiyle yapılır, nakit verilmez."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Ooredoo Tunisie",
+     "Orange Tunisie",
+     "Tunisie Telecom"
+    ],
+    "airportSimTrapWarning": "Havalimanı stantlarında Ooredoo ve Orange turist hattı satar, fiyat şehre göre biraz yüksektir; şehirdeki resmî mağazalarda pasaportla daha ucuz paket alabilirsiniz."
+   },
+   "touristScams": [
+    {
+     "title": "“Bugün Berberi pazarı var”",
+     "desc": "Medinede yardımsever görünen kişilerin “bugün özel pazar var” diyerek sizi halı dükkânına götürmesi.",
+     "tip": "Bu tür davetleri reddedin; satın alma baskısı hissederseniz dükkândan çıkın."
+    },
+    {
+     "title": "Taksimetresiz sarı taksi",
+     "desc": "Sarı taksilerin özellikle havalimanında taksimetreyi açmaması.",
+     "tip": "Binmeden önce taksimetrenin açılmasını isteyin veya Bolt kullanın."
+    },
+    {
+     "title": "Sidi Bou Said yasemin tuzağı",
+     "desc": "Elinize yasemin tutuşturan veya fotoğrafa giren kişilerin ardından para istemesi.",
+     "tip": "Uzatılan çiçeği almayın; fotoğraf için önceden izin ve fiyat konuşun."
+    }
+   ]
   }
  },
  "en": {
@@ -649,6 +710,67 @@
      "Do not photograph people or security forces without permission."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C/E sockets (French type with an earth pin); Turkish C plugs and hybrid E/F Schuko plugs fit, no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "City tap water is treated but heavy-tasting and can upset stomachs; drink bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "190"
+   },
+   "tipping": {
+    "custom": "Leaving the change in cafés and around 10% in restaurants is customary.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "A few dinars are enough for hotel staff and guides; tips are usually given in cash."
+   },
+   "taxFree": {
+    "vatRefundPercent": "19% VAT",
+    "minSpend": "TND 200 per store (VAT included)",
+    "customsNote": "Pay by credit card in shops showing the “Credit card sales, tax back” sign and have the sales slip validated by customs on departure at Tunis-Carthage, Djerba, Monastir or Enfidha airport. Refunds are paid by bank transfer, not in cash."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Ooredoo Tunisie",
+     "Orange Tunisie",
+     "Tunisie Telecom"
+    ],
+    "airportSimTrapWarning": "Airport counters of Ooredoo and Orange sell tourist SIMs at slightly higher prices than in town; official stores in the city sell cheaper packs with your passport."
+   },
+   "touristScams": [
+    {
+     "title": "“There is a Berber market today”",
+     "desc": "“Helpful” strangers in the medina claim there is a special market today and lead you to a carpet shop.",
+     "tip": "Decline such invitations and leave the shop if you feel pressured to buy."
+    },
+    {
+     "title": "Yellow taxis without meters",
+     "desc": "Yellow taxis do not switch on the meter, especially at the airport.",
+     "tip": "Ask for the meter before getting in or use Bolt."
+    },
+    {
+     "title": "Sidi Bou Said jasmine trap",
+     "desc": "People hand you jasmine or pose in your photos and then ask for money.",
+     "tip": "Do not accept offered flowers and agree on permission and price before photos."
+    }
+   ]
   }
  },
  "de": {
@@ -975,6 +1097,67 @@
      "Menschen und Sicherheitskräfte nicht ohne Erlaubnis fotografieren."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/E (französischer Typ mit Erdungsstift); türkische C-Stecker und Hybrid-Schukostecker E/F passen, kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser in Städten wird aufbereitet, schmeckt aber schwer und kann den Magen reizen; Flaschenwasser trinken.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "190"
+   },
+   "tipping": {
+    "custom": "In Cafés lässt man das Wechselgeld liegen, in Restaurants sind etwa 10 % üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Ein paar Dinar reichen für Hotelpersonal und Guides; Trinkgeld meist in bar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "19 % MwSt.",
+    "minSpend": "200 TND pro Geschäft (inkl. MwSt.)",
+    "customsNote": "In Geschäften mit dem Schild „Credit card sales, tax back“ mit Kreditkarte zahlen und den Kaufbeleg bei der Ausreise am Flughafen Tunis-Karthago, Djerba, Monastir oder Enfidha vom Zoll bestätigen lassen. Die Erstattung erfolgt per Überweisung, nicht in bar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Ooredoo Tunisie",
+     "Orange Tunisie",
+     "Tunisie Telecom"
+    ],
+    "airportSimTrapWarning": "Die Flughafenstände von Ooredoo und Orange verkaufen Touristen-SIMs etwas teurer als in der Stadt; offizielle Shops in der Stadt verkaufen mit Pass günstigere Pakete."
+   },
+   "touristScams": [
+    {
+     "title": "„Heute ist Berbermarkt“",
+     "desc": "„Hilfsbereite“ Fremde in der Medina behaupten, heute sei ein besonderer Markt, und führen Sie in einen Teppichladen.",
+     "tip": "Solche Einladungen ablehnen und den Laden verlassen, wenn Kaufdruck entsteht."
+    },
+    {
+     "title": "Gelbe Taxis ohne Taxameter",
+     "desc": "Gelbe Taxis schalten vor allem am Flughafen das Taxameter nicht ein.",
+     "tip": "Vor dem Einsteigen das Taxameter verlangen oder Bolt nutzen."
+    },
+    {
+     "title": "Jasminfalle in Sidi Bou Said",
+     "desc": "Man drückt Ihnen Jasmin in die Hand oder posiert im Foto und verlangt dann Geld.",
+     "tip": "Angebotene Blumen nicht annehmen und vor Fotos Erlaubnis und Preis klären."
+    }
+   ]
   }
  },
  "es": {
@@ -1301,6 +1484,67 @@
      "No fotografíes a personas ni a fuerzas de seguridad sin permiso."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C/E (tipo francés con clavija de tierra); los enchufes turcos C y los Schuko híbridos E/F encajan, no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En las ciudades el agua del grifo se trata, pero tiene un sabor fuerte y puede sentar mal; beba agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "190"
+   },
+   "tipping": {
+    "custom": "Es costumbre dejar el cambio en los cafés y alrededor de un 10 % en restaurantes.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Unos dinares bastan para el personal del hotel y los guías; las propinas suelen darse en efectivo."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 19 %",
+    "minSpend": "200 TND por tienda (IVA incluido)",
+    "customsNote": "Pague con tarjeta de crédito en tiendas con el cartel “Credit card sales, tax back” y haga validar el recibo en aduana al salir por los aeropuertos de Túnez-Cartago, Djerba, Monastir o Enfidha. El reembolso se hace por transferencia, no en efectivo."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Ooredoo Tunisie",
+     "Orange Tunisie",
+     "Tunisie Telecom"
+    ],
+    "airportSimTrapWarning": "Los mostradores de Ooredoo y Orange en el aeropuerto venden SIM turísticas algo más caras que en la ciudad; en tiendas oficiales del centro hay paquetes más baratos con pasaporte."
+   },
+   "touristScams": [
+    {
+     "title": "“Hoy hay mercado bereber”",
+     "desc": "Desconocidos “amables” en la medina dicen que hoy hay un mercado especial y le llevan a una tienda de alfombras.",
+     "tip": "Rechace estas invitaciones y salga de la tienda si le presionan para comprar."
+    },
+    {
+     "title": "Taxis amarillos sin taxímetro",
+     "desc": "Taxis amarillos que no encienden el taxímetro, sobre todo en el aeropuerto.",
+     "tip": "Pida el taxímetro antes de subir o use Bolt."
+    },
+    {
+     "title": "Trampa del jazmín en Sidi Bou Said",
+     "desc": "Le ponen jazmín en la mano o posan en sus fotos y luego piden dinero.",
+     "tip": "No acepte flores ofrecidas y acuerde permiso y precio antes de fotografiar."
+    }
+   ]
   }
  },
  "ru": {
@@ -1627,6 +1871,67 @@
      "Не фотографируйте людей и силовые структуры без разрешения."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C/E (французский тип с заземляющим штырём); турецкие вилки C и гибридные Schuko E/F подходят, переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В городах водопроводная вода очищается, но она жёсткая на вкус и может вызвать расстройство желудка; пейте бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "190"
+   },
+   "tipping": {
+    "custom": "В кафе принято оставлять сдачу, в ресторанах — около 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Персоналу отеля и гидам достаточно нескольких динаров; чаевые обычно дают наличными."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 19 %",
+    "minSpend": "200 TND в одном магазине (с НДС)",
+    "customsNote": "Платите кредитной картой в магазинах с табличкой «Credit card sales, tax back» и заверяйте чек на таможне при вылете из аэропортов Тунис-Карфаген, Джерба, Монастир или Энфида. Возврат приходит банковским переводом, не наличными."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Ooredoo Tunisie",
+     "Orange Tunisie",
+     "Tunisie Telecom"
+    ],
+    "airportSimTrapWarning": "Стойки Ooredoo и Orange в аэропорту продают туристические SIM немного дороже, чем в городе; в официальных салонах в центре пакеты дешевле, нужен паспорт."
+   },
+   "touristScams": [
+    {
+     "title": "«Сегодня берберский рынок»",
+     "desc": "«Услужливые» незнакомцы в медине говорят про особый рынок и ведут в ковровую лавку.",
+     "tip": "Отказывайтесь от таких приглашений и уходите, если на вас давят."
+    },
+    {
+     "title": "Жёлтые такси без счётчика",
+     "desc": "Жёлтые такси, особенно в аэропорту, не включают счётчик.",
+     "tip": "Требуйте включить счётчик до посадки или пользуйтесь Bolt."
+    },
+    {
+     "title": "Жасмин в Сиди-Бу-Саиде",
+     "desc": "Вам вручают жасмин или встают в кадр, а потом просят денег.",
+     "tip": "Не берите протянутые цветы и договаривайтесь о фото и цене заранее."
+    }
+   ]
   }
  }
 }

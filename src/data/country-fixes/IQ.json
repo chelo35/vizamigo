@@ -1,0 +1,1912 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Irak Dinarı (IQD) – büyük alışverişlerde ABD doları da geçer",
+   "plugType": "Tip C, D, G (230V, 50Hz)",
+   "bestMonths": "Mart – Nisan ve Ekim – Kasım (ılıman) · Haziran – Eylül arası 45 - 50 °C’ye varan sıcaklıklar; Kürdistan Bölgesi’nde dağlar baharda en güzel hâlindedir",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Seyahat Uyarısı (Kırmızı Bölge)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "ABD ve UK FCDO resmî uyarıları Irak’ın büyük bölümüne seyahati önermez: terör, adam kaçırma, silahlı grupların saldırıları ve bölgesel çatışmanın yayılma riski sürer. Kürdistan Bölgesi (Erbil, Süleymaniye) görece daha sakindir; Suriye sınırı, kuzey sınır bölgeleri ile Anbar, Ninova, Selahaddin, Kerkük ve Diyala gibi illerde risk çok yüksektir.",
+    "commonScams": [
+     "Taksimetresi olmayan taksilerde yabancıya yüksek fiyat söylenmesi",
+     "Sokak döviz bozucularının eksik dinar vermesi veya kuru şişirmesi",
+     "Arkeolojik alanlarda resmî olmayan “rehberlerin” sonradan yüksek ücret istemesi"
+    ],
+    "safeTravelTips": [
+     "Seyahat etmeden önce güncel resmî uyarıları kontrol edin ve büyükelçiliğe kayıt yaptırın.",
+     "Şehirlerarası yolculuğu yalnızca güvenilir yerel rehber/şoförle yapın; kontrol noktalarında pasaportunuzu hazır tutun.",
+     "Gösterilerden, askerî alanlardan ve gece yolculuğundan kaçının; kontrol noktalarını fotoğraflamayın."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "122",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%90 nüfus (şehirlerde 4G; kırsalda kesintili)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Orta (bazı uluslararası eSIM’ler çalışır; yerel SIM pasaportla alınır)",
+    "bestCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (metro ve düzenli şehir içi toplu taşıma yok; taksi, araç çağırma ve şoförlü araç kullanılır)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "Yok (kısa taksi yolculuğu ~3 - 6 $)",
+    "dailyPassUsd": "Yok (şoförlü araç günlük ~60 - 120 $)",
+    "popularRideApps": [
+     "Careem",
+     "Baly"
+    ],
+    "taxiAdvice": "Bağdat, Erbil ve Basra’da Careem ve Baly uygulamaları sabit fiyat sunar; sokak taksisinde fiyatı binmeden pazarlık edin. Şehirlerarası yolculukta güvenilir bir şoför tutun."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.25 - 0.60 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "40 - 90 $",
+    "flightCostIndex": "Düşük – Orta (İstanbul – Bağdat, Erbil, Basra ve Necef’e direkt uçuşlar, ~2,5 - 3 saat)",
+    "flightTip": "THY ve Pegasus İstanbul’dan Erbil, Bağdat, Basra, Necef ve Süleymaniye’ye uçar; bölgesel gerilimde hava sahası kapanabileceği için esnek bilet alın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Misafirperverlik çok güçlüdür; çay ikramını reddetmemek nezakettir.",
+     "Sol eli yemek ve ikram için kullanmayın; selamlaşmada kadınlar el uzatmadıkça tokalaşmayın.",
+     "Türbe ve camilerde kadınlar başörtüsü (Kerbela ve Necef’te abaya) takar, ayakkabılar çıkarılır.",
+     "Kontrol noktalarını, askerî alanları ve resmî binaları fotoğraflamayın."
+    ],
+    "festivals": [
+     "Erbain yürüyüşü (Kerbela’ya milyonlarca hacının yürüdüğü anma)",
+     "Nevruz (21 Mart; Kürdistan Bölgesi’nde büyük kutlamalar)",
+     "Babil Uluslararası Festivali (antik tiyatroda konserler)"
+    ],
+    "lifestyle": "Aile ve kabile bağları güçlüdür; akşamları çayhaneler ve Dicle kıyısındaki parklar hareketlenir. Bağdat’ta Cuma sabahları Mütenebbi Caddesi’ndeki kitap pazarı kültür hayatının kalbidir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Erbil Kalesi (UNESCO)",
+     "Babil Antik Kenti (UNESCO)",
+     "Ur Zigguratı (Nasiriye)",
+     "Irak Müzesi ve Mütenebbi Caddesi (Bağdat)",
+     "Mezopotamya Bataklıkları – Ahvar (UNESCO)",
+     "Kerbela ve Necef türbeleri"
+    ],
+    "bestSeasons": "Mart – Nisan ve Ekim – Kasım (ılıman) · Haziran – Eylül arası 45 - 50 °C’ye varan sıcaklıklar; Kürdistan Bölgesi’nde dağlar baharda en güzel hâlindedir",
+    "travelStyleTip": "Türk gezginler için en pratik başlangıç Erbil’dir; güneydeki tarihi ve dinî alanlar için iç hat uçuşu ile güvenilir yerel rehber kullanın."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%95–98; ~%60–65 Şii, ~%30–35 Sünni), Hristiyanlar (Keldani, Süryani), Ezidiler ve Sabiî Mandenler",
+    "respectNorms": "Kerbela ve Necef’te kadınlar abaya giyer (girişte ödünç verilir); türbelerde kameralı çanta kontrolü vardır, Ramazan’da gündüz açıkta yiyip içmeyin.",
+    "sacredSites": [
+     "İmam Ali Türbesi (Necef)",
+     "İmam Hüseyin ve Hz. Abbas Türbeleri (Kerbela)",
+     "Abdülkadir Geylani Türbesi ve İmam-ı Azam Camii (Bağdat)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arapça ve Kürtçe resmî dillerdir; Türkmence ve Süryanice bazı bölgelerde resmî statüdedir.",
+    "englishProficiency": "Sınırlı; otellerde ve genç kuşakta artıyor. Erbil ve Kerkük’te Türkçe (Türkmence) sıkça anlaşılır.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Selamünaleyküm (selam)",
+      "translation": "Selamünaleyküm (selam)",
+      "pronunciation": "es-se-la-mu a-ley-kum"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "Nasılsın? (Irak lehçesi)",
+      "translation": "Nasılsın? (Irak lehçesi)",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "shuk-ran"
+     },
+     {
+      "phrase": "بيش هذا؟ (bēsh hādha?)",
+      "meaning": "Bu ne kadar? (Irak lehçesi)",
+      "translation": "Bu ne kadar? (Irak lehçesi)",
+      "pronunciation": "beysh ha-za"
+     },
+     {
+      "phrase": "سوپاس (supās)",
+      "meaning": "Teşekkürler (Kürtçe – Kürdistan Bölgesi)",
+      "translation": "Teşekkürler (Kürtçe – Kürdistan Bölgesi)",
+      "pronunciation": "su-pas"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Dicle ve Fırat arasındaki Mezopotamya, yazının ve ilk şehirlerin doğduğu yerdir: Sümer, Akad, Babil ve Asur burada yükseldi. 762’de kurulan Bağdat Abbasilerin başkenti ve “Beytü’l-Hikme” ile bilim merkezi oldu. 1534’ten 1918’e kadar Osmanlı yönetiminde kalan topraklar 1932’de bağımsız oldu.",
+    "milestones": [
+     "MÖ ~3200: Uruk’ta çivi yazısı",
+     "MÖ ~1754: Hammurabi Kanunları (Babil)",
+     "762: Abbasi Halifesi Mansur Bağdat’ı kurdu",
+     "1534: Kanuni Sultan Süleyman Bağdat’ı Osmanlı’ya kattı"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mesguf (Dicle kıyısında közde pişen sazan, milli yemek)",
+     "Irak dolması (sebze ve yaprak dolması karışımı)",
+     "Kuzi (pilav üstü bütün kuzu)"
+    ],
+    "traditionalDrinks": [
+     "Irak çayı (istikanda koyu, kakule ile)",
+     "Şinena (ayran)",
+     "Numi Basra (kurutulmuş limon çayı)"
+    ],
+    "streetFoodAndDesserts": [
+     "Samun ekmeğinde falafel ve amba sosu",
+     "Kahi ve gaymak (kaymaklı hamur işi kahvaltısı)",
+     "Kleiça (hurmalı kurabiye)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hammurabi (Babil kralı)",
+     "Harun Reşid (Abbasi halifesi)",
+     "Zaha Hadid (Pritzker ödüllü mimar)"
+    ],
+    "strongSectors": [
+     "Petrol (devlet gelirlerinin ~%90’ı; OPEC’in büyük üreticilerinden)",
+     "Hurma üretimi",
+     "Dinî turizm (Kerbela, Necef)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit esastır; dinar ve temiz, yeni basım ABD doları taşıyın. Kartlar Erbil ve Bağdat’taki büyük otel ve AVM’lerle sınırlıdır; ATM sayısı azdır.",
+    "tippingCulture": "Restoranlarda hesabı yuvarlamak veya %10 bırakmak yaygındır; şoför ve rehbere günlük bahşiş beklenir.",
+    "economicPillars": "Petrol ve doğal gaz, tarım (hurma, buğday), dinî turizm, inşaat."
+   }
+  },
+  "itin": {
+   "routeName": "Mezopotamya Mirası: Erbil, Bağdat, Babil, Kerbela ve Necef",
+   "routeSummary": "Erbil Kalesi’nden başlayıp Abbasi başkenti Bağdat’a, Babil’in kalıntılarına ve Kerbela ile Necef’in kutsal türbelerine uzanan 7 günlük rota; yalnızca resmî uyarılar elverdiğinde ve yerel rehberle.",
+   "totalDays": 7,
+   "idealDurationText": "7 günlük rota",
+   "bestSeason": "Mart – Nisan ve Ekim – Kasım (ılıman) · Haziran – Eylül arası 45 - 50 °C’ye varan sıcaklıklar; Kürdistan Bölgesi’nde dağlar baharda en güzel hâlindedir",
+   "transportMode": "Erbil – Bağdat iç hat uçuşu; Bağdat – Babil – Kerbela – Necef şoförlü araç ve yerel rehber",
+   "paceLevel": "Sakin (güvenlik nedeniyle esnek plan)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Erbil (Kürdistan Bölgesi)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Erbil Kalesi (UNESCO; dünyanın kesintisiz yerleşilen en eski yerlerinden)",
+      "Kayseri Çarşısı",
+      "Sami Abdulrahman Parkı"
+     ],
+     "activities": [
+      "Kaleyi ve Kürt Tekstil Müzesi’ni gezin.",
+      "Çarşıda çay içip kuruyemiş ve bal alın.",
+      "Akşam Şanidar Parkı’nda yerel halkla piknik havasına katılın."
+     ],
+     "foodAndDrinks": [
+      "Kürt kebabı ve dolma",
+      "Çay ve baklava"
+     ],
+     "criticalTips": [
+      "Kürdistan Bölgesi’nde Türkçe sıkça anlaşılır.",
+      "İran ve kuzey sınır bölgelerine yaklaşmayın."
+     ],
+     "mapsQuery": "Erbil Citadel, Erbil, Iraq"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Bağdat",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Irak Ulusal Müzesi",
+      "Mütenebbi Caddesi ve Şabender Kahvehanesi",
+      "Abdülkadir Geylani Türbesi",
+      "Abbasi Sarayı ve Müstansıriye Medresesi"
+     ],
+     "activities": [
+      "Cuma sabahı Mütenebbi kitap pazarında dolaşın.",
+      "Irak Müzesi’nde Sümer ve Asur eserlerini görün.",
+      "Dicle kıyısında akşam mesguf yiyin."
+     ],
+     "foodAndDrinks": [
+      "Mesguf (Abu Nuwas Caddesi)",
+      "Kahi ve gaymak kahvaltısı"
+     ],
+     "criticalTips": [
+      "Şehirde yerel rehberle dolaşın ve gece geç saatte dışarıda kalmayın.",
+      "Kontrol noktalarında pasaportunuzu gösterin, fotoğraf çekmeyin."
+     ],
+     "mapsQuery": "Al-Mutanabbi Street, Baghdad, Iraq"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Babil ve Kerbela",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Babil kalıntıları ve İştar Kapısı replikası",
+      "İmam Hüseyin ve Hz. Abbas Türbeleri",
+      "Beyne’l-Haremeyn meydanı"
+     ],
+     "activities": [
+      "Babil’de rehberle Nebukadnezar dönemi kalıntılarını gezin.",
+      "Kerbela’da iki türbe arasındaki meydanda akşam ışıklarını izleyin.",
+      "Türbe çevresindeki çarşıda tespih ve hediyelik alın."
+     ],
+     "foodAndDrinks": [
+      "Kerbela usulü kebap ve pilav",
+      "Kakuleli çay"
+     ],
+     "criticalTips": [
+      "Antik alanlardan taş ya da çanak çömlek parçası almayın; ağır ceza vardır.",
+      "Erbain döneminde şehir aşırı kalabalıktır; tarihleri kontrol edin."
+     ],
+     "mapsQuery": "Babylon Archaeological Site, Hillah, Iraq"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Necef",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "İmam Ali Türbesi",
+      "Vadi’s-Selam Mezarlığı (dünyanın en büyük mezarlıklarından)",
+      "Kufe Camii"
+     ],
+     "activities": [
+      "İmam Ali Türbesi’nin altın kubbesini ziyaret edin.",
+      "Kufe Camii ve tarihi kenti görün.",
+      "Necef’ten İstanbul’a direkt uçuşla dönün."
+     ],
+     "foodAndDrinks": [
+      "Necef usulü pilav ve et yemekleri",
+      "Taze hurma"
+     ],
+     "criticalTips": [
+      "Türbede kadınlar abaya giymelidir; kamera ve çantalar kontrol edilir.",
+      "Dinî kurallara saygı gösterin ve ziyaretçi akışını engellemeyin."
+     ],
+     "mapsQuery": "Imam Ali Shrine, Najaf, Iraq"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mesguf (Dicle kıyısında közde pişen sazan, milli yemek)",
+     "Irak dolması (sebze ve yaprak dolması karışımı)",
+     "Kuzi (pilav üstü bütün kuzu)"
+    ],
+    "drinks": [
+     "Irak çayı (istikanda koyu, kakule ile)",
+     "Şinena (ayran)",
+     "Numi Basra (kurutulmuş limon çayı)"
+    ],
+    "streetFoods": [
+     "Samun ekmeğinde falafel ve amba sosu",
+     "Kahi ve gaymak (kaymaklı hamur işi kahvaltısı)",
+     "Kleiça (hurmalı kurabiye)"
+    ],
+    "diningAdvice": "Mesguf’u Dicle kıyısındaki lokantalarda deneyin; yemekler paylaşımlı tabaklarla gelir ve misafire ısrarla ikram edilir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G/D/C uyumlu çok tipli adaptör",
+     "Yeterli nakit USD (temiz, yeni basım banknot)",
+     "Muhafazakâr kıyafet; kadınlar için başörtüsü",
+     "Güneş koruması (yaz aylarında aşırı sıcak)"
+    ],
+    "safetyAndEtiquette": [
+     "Resmî uyarıları sürekli takip edin.",
+     "Kontrol noktalarını fotoğraflamayın.",
+     "Antik eser veya parça toplamayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Karışık sistem: İngiliz G (üç dikdörtgen pim), Hint D (üç yuvarlak pim) ve Avrupa C prizleri bulunur; çok tipli adaptör getirin. Elektrik kesintileri yaygındır, oteller jeneratör kullanır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; yalnızca şişe su tüketin, buz ve çiğ salataya dikkat edin.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, kızamık)",
+     "Hepatit A ve tifo",
+     "Kuduz (kırsal veya uzun seyahatte)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "122"
+   },
+   "tipping": {
+    "custom": "Hesabı yuvarlamak yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Restoranda %10 veya yuvarlama; şoför ve rehbere günlük bahşiş beklenir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (Irak’ta KDV uygulanmaz)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Irak’ta turistlere vergi iadesi yoktur. Antik eser, hatta arkeolojik alanlardan toplanan çanak çömlek parçalarını çıkarmak yasaktır ve hapis cezasına yol açabilir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "airportSimTrapWarning": "Bağdat ve Erbil havalimanlarında Zain, Asiacell ve Korek SIM’leri pasaportla satılır; Kürdistan Bölgesi’nde Korek ve Asiacell daha iyi çeker."
+   },
+   "touristScams": [
+    {
+     "title": "Taksimetresiz taksi",
+     "desc": "Sokak taksileri yabancıya çok yüksek fiyat söyler.",
+     "tip": "Careem/Baly kullanın veya fiyatı binmeden netleştirin."
+    },
+    {
+     "title": "Sokak döviz bozucuları",
+     "desc": "Kur şişirilir ya da deste içinde eksik banknot verilir.",
+     "tip": "Resmî döviz bürosunda bozdurun ve parayı orada sayın."
+    },
+    {
+     "title": "Resmî olmayan rehberler",
+     "desc": "Babil gibi alanlarda yaklaşan kişiler turun sonunda fahiş ücret ister.",
+     "tip": "Rehberi önceden, fiyatı yazılı olarak ayarlayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Iraqi Dinar (IQD) – US dollars are accepted for larger purchases",
+   "plugType": "Type C, D, G (230V, 50Hz)",
+   "bestMonths": "March – April and October – November (mild) · June – September temperatures reach 45 - 50 °C; the mountains of the Kurdistan Region are at their best in spring",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Do Not Travel (Conflict Zone)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "US and UK FCDO advisories advise against travel to most of Iraq: terrorism, kidnapping, attacks by armed groups and spill-over from regional conflict remain risks. The Kurdistan Region (Erbil, Sulaymaniyah) is comparatively calmer; risk is very high along the Syrian border, northern border areas and in provinces such as Anbar, Nineveh, Salahuddin, Kirkuk and Diyala.",
+    "commonScams": [
+     "Meterless taxis quoting foreigners high fares",
+     "Street money changers giving short dinar or inflating the rate",
+     "Unofficial “guides” at archaeological sites demanding high fees afterwards"
+    ],
+    "safeTravelTips": [
+     "Check current official advisories before travelling and register with your embassy.",
+     "Travel between cities only with a trusted local guide/driver; keep your passport ready at checkpoints.",
+     "Avoid demonstrations, military areas and night travel; never photograph checkpoints."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "122",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90% of population (4G in cities; patchy in rural areas)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Moderate (some international eSIMs work; local SIMs are bought with a passport)",
+    "bestCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (no metro or regular urban public transport; taxis, ride-hailing and private drivers are used)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "None (short taxi ride ~3 - 6 $)",
+    "dailyPassUsd": "None (car with driver ~60 - 120 $ per day)",
+    "popularRideApps": [
+     "Careem",
+     "Baly"
+    ],
+    "taxiAdvice": "Careem and Baly give fixed fares in Baghdad, Erbil and Basra; with street taxis agree the price before getting in. Hire a trusted driver for intercity travel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.25 - 0.60 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "40 - 90 $",
+    "flightCostIndex": "Low – Moderate (direct flights from Istanbul to Baghdad, Erbil, Basra and Najaf, ~2.5 - 3 hours)",
+    "flightTip": "Turkish Airlines and Pegasus fly from Istanbul to Erbil, Baghdad, Basra, Najaf and Sulaymaniyah; buy flexible tickets as airspace can close during regional tension."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Hospitality is strong; accepting offered tea is polite.",
+     "Don’t use the left hand for eating or offering; don’t shake hands with women unless they offer.",
+     "At shrines and mosques women cover their hair (abaya in Karbala and Najaf) and shoes come off.",
+     "Never photograph checkpoints, military sites or government buildings."
+    ],
+    "festivals": [
+     "Arbaeen walk (commemoration in which millions of pilgrims walk to Karbala)",
+     "Nowruz (21 March; big celebrations in the Kurdistan Region)",
+     "Babylon International Festival (concerts in the ancient theatre)"
+    ],
+    "lifestyle": "Family and tribal ties are strong; in the evenings tea houses and the parks along the Tigris come alive. In Baghdad, the Friday-morning book market on Al-Mutanabbi Street is the heart of cultural life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Erbil Citadel (UNESCO)",
+     "Ancient Babylon (UNESCO)",
+     "Ziggurat of Ur (Nasiriyah)",
+     "Iraq Museum and Al-Mutanabbi Street (Baghdad)",
+     "Mesopotamian Marshes – Ahwar (UNESCO)",
+     "Shrines of Karbala and Najaf"
+    ],
+    "bestSeasons": "March – April and October – November (mild) · June – September temperatures reach 45 - 50 °C; the mountains of the Kurdistan Region are at their best in spring",
+    "travelStyleTip": "Erbil is the most practical starting point; for the historic and religious sites in the south use domestic flights and a trusted local guide."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~95–98%; ~60–65% Shia, ~30–35% Sunni), Christians (Chaldean, Assyrian), Yazidis and Sabean-Mandaeans",
+    "respectNorms": "In Karbala and Najaf women wear an abaya (lent at the entrance); shrines have bag and camera checks, and during Ramadan don’t eat or drink in public by day.",
+    "sacredSites": [
+     "Imam Ali Shrine (Najaf)",
+     "Shrines of Imam Hussein and Al-Abbas (Karbala)",
+     "Shrine of Abdul Qadir Gilani and Abu Hanifa Mosque (Baghdad)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arabic and Kurdish are official; Turkmen and Syriac have official status in some areas.",
+    "englishProficiency": "Limited; growing in hotels and among younger people. Turkish (Turkmen) is widely understood in Erbil and Kirkuk.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Peace be upon you (greeting)",
+      "translation": "Peace be upon you (greeting)",
+      "pronunciation": "es-se-la-mu a-ley-kum"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "How are you? (Iraqi dialect)",
+      "translation": "How are you? (Iraqi dialect)",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "shuk-ran"
+     },
+     {
+      "phrase": "بيش هذا؟ (bēsh hādha?)",
+      "meaning": "How much is this? (Iraqi dialect)",
+      "translation": "How much is this? (Iraqi dialect)",
+      "pronunciation": "beysh ha-za"
+     },
+     {
+      "phrase": "سوپاس (supās)",
+      "meaning": "Thank you (Kurdish – Kurdistan Region)",
+      "translation": "Thank you (Kurdish – Kurdistan Region)",
+      "pronunciation": "su-pas"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mesopotamia, between the Tigris and Euphrates, is where writing and the first cities were born: Sumer, Akkad, Babylon and Assyria rose here. Founded in 762, Baghdad became the Abbasid capital and a centre of science with the “House of Wisdom”. Under Ottoman rule from 1534 to 1918, the country became independent in 1932.",
+    "milestones": [
+     "c. 3200 BC: Cuneiform writing in Uruk",
+     "c. 1754 BC: Code of Hammurabi (Babylon)",
+     "762: Abbasid Caliph al-Mansur founds Baghdad",
+     "1534: Suleiman the Magnificent brings Baghdad into the Ottoman Empire"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Masgouf (carp grilled over fire on the Tigris bank; national dish)",
+     "Iraqi dolma (mixed stuffed vegetables and vine leaves)",
+     "Quzi (whole lamb on rice)"
+    ],
+    "traditionalDrinks": [
+     "Iraqi tea (strong, in an istikan glass, with cardamom)",
+     "Shineena (yoghurt drink)",
+     "Noomi Basra (dried lime tea)"
+    ],
+    "streetFoodAndDesserts": [
+     "Falafel with amba sauce in samoon bread",
+     "Kahi and geymar (pastry with clotted cream for breakfast)",
+     "Kleicha (date cookies)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hammurabi (king of Babylon)",
+     "Harun al-Rashid (Abbasid caliph)",
+     "Zaha Hadid (Pritzker Prize-winning architect)"
+    ],
+    "strongSectors": [
+     "Oil (~90% of state revenue; one of OPEC’s major producers)",
+     "Date production",
+     "Religious tourism (Karbala, Najaf)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash is king; carry dinars and clean, newly printed US dollars. Cards are limited to big hotels and malls in Erbil and Baghdad; ATMs are few.",
+    "tippingCulture": "Rounding up or leaving 10% in restaurants is common; drivers and guides expect a daily tip.",
+    "economicPillars": "Oil and gas, agriculture (dates, wheat), religious tourism, construction."
+   }
+  },
+  "itin": {
+   "routeName": "Mesopotamian Heritage: Erbil, Baghdad, Babylon, Karbala & Najaf",
+   "routeSummary": "A 7-day route from Erbil Citadel to the Abbasid capital Baghdad, the ruins of Babylon and the holy shrines of Karbala and Najaf; only when official advisories allow and with a local guide.",
+   "totalDays": 7,
+   "idealDurationText": "7-Day Itinerary",
+   "bestSeason": "March – April and October – November (mild) · June – September temperatures reach 45 - 50 °C; the mountains of the Kurdistan Region are at their best in spring",
+   "transportMode": "Domestic flight Erbil – Baghdad; car with driver and local guide Baghdad – Babylon – Karbala – Najaf",
+   "paceLevel": "Relaxed (flexible plan for security reasons)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Erbil (Kurdistan Region)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Erbil Citadel (UNESCO; one of the oldest continuously inhabited places on earth)",
+      "Qaysari Bazaar",
+      "Sami Abdulrahman Park"
+     ],
+     "activities": [
+      "Explore the citadel and the Kurdish Textile Museum.",
+      "Drink tea in the bazaar and buy nuts and honey.",
+      "Join the picnic atmosphere with locals in Shanidar Park in the evening."
+     ],
+     "foodAndDrinks": [
+      "Kurdish kebab and dolma",
+      "Tea and baklava"
+     ],
+     "criticalTips": [
+      "Turkish is widely understood in the Kurdistan Region.",
+      "Stay away from the Iranian and northern border areas."
+     ],
+     "mapsQuery": "Erbil Citadel, Erbil, Iraq"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Baghdad",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Iraq National Museum",
+      "Al-Mutanabbi Street and Shabandar Café",
+      "Shrine of Abdul Qadir Gilani",
+      "Abbasid Palace and Mustansiriya Madrasa"
+     ],
+     "activities": [
+      "Browse the Friday-morning book market on Al-Mutanabbi Street.",
+      "See Sumerian and Assyrian treasures at the Iraq Museum.",
+      "Eat masgouf on the Tigris bank in the evening."
+     ],
+     "foodAndDrinks": [
+      "Masgouf (Abu Nuwas Street)",
+      "Kahi and geymar breakfast"
+     ],
+     "criticalTips": [
+      "Explore the city with a local guide and don’t stay out late at night.",
+      "Show your passport at checkpoints and don’t take photos."
+     ],
+     "mapsQuery": "Al-Mutanabbi Street, Baghdad, Iraq"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Babylon & Karbala",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Ruins of Babylon and the Ishtar Gate replica",
+      "Shrines of Imam Hussein and Al-Abbas",
+      "Bayn al-Haramayn square"
+     ],
+     "activities": [
+      "Tour the Nebuchadnezzar-era ruins of Babylon with a guide.",
+      "Watch the evening lights in the square between the two shrines in Karbala.",
+      "Buy prayer beads and souvenirs in the bazaar around the shrines."
+     ],
+     "foodAndDrinks": [
+      "Karbala-style kebab and rice",
+      "Cardamom tea"
+     ],
+     "criticalTips": [
+      "Don’t take stones or pottery shards from ancient sites; penalties are severe.",
+      "The city is extremely crowded during Arbaeen; check the dates."
+     ],
+     "mapsQuery": "Babylon Archaeological Site, Hillah, Iraq"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Najaf",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Imam Ali Shrine",
+      "Wadi al-Salam Cemetery (one of the largest in the world)",
+      "Great Mosque of Kufa"
+     ],
+     "activities": [
+      "Visit the golden dome of the Imam Ali Shrine.",
+      "See the Mosque of Kufa and the historic town.",
+      "Fly back to Istanbul direct from Najaf."
+     ],
+     "foodAndDrinks": [
+      "Najaf-style rice and meat dishes",
+      "Fresh dates"
+     ],
+     "criticalTips": [
+      "Women must wear an abaya at the shrine; cameras and bags are checked.",
+      "Respect religious rules and don’t block the flow of pilgrims."
+     ],
+     "mapsQuery": "Imam Ali Shrine, Najaf, Iraq"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Masgouf (carp grilled over fire on the Tigris bank; national dish)",
+     "Iraqi dolma (mixed stuffed vegetables and vine leaves)",
+     "Quzi (whole lamb on rice)"
+    ],
+    "drinks": [
+     "Iraqi tea (strong, in an istikan glass, with cardamom)",
+     "Shineena (yoghurt drink)",
+     "Noomi Basra (dried lime tea)"
+    ],
+    "streetFoods": [
+     "Falafel with amba sauce in samoon bread",
+     "Kahi and geymar (pastry with clotted cream for breakfast)",
+     "Kleicha (date cookies)"
+    ],
+    "diningAdvice": "Try masgouf at riverside restaurants on the Tigris; food comes on shared platters and guests are pressed to eat more."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Multi-type adapter for G/D/C",
+     "Enough cash in USD (clean, newly printed notes)",
+     "Conservative clothing; headscarf for women",
+     "Sun protection (extreme summer heat)"
+    ],
+    "safetyAndEtiquette": [
+     "Follow official advisories constantly.",
+     "Never photograph checkpoints.",
+     "Don’t collect antiquities or fragments."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mixed system: British G (three rectangular pins), Indian D (three round pins) and European C sockets are found; bring a multi-type adapter. Power cuts are common and hotels run generators."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn’t drinkable; drink only bottled water and be careful with ice and raw salads.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, measles)",
+     "Hepatitis A and typhoid",
+     "Rabies (rural or long trips)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "122"
+   },
+   "tipping": {
+    "custom": "Rounding up is common.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "10% or rounding up in restaurants; drivers and guides expect a daily tip."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (Iraq has no VAT)",
+    "minSpend": "Not applicable",
+    "customsNote": "Iraq has no tax refund for tourists. Exporting antiquities – even pottery shards picked up at archaeological sites – is prohibited and can lead to prison."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "airportSimTrapWarning": "Zain, Asiacell and Korek SIMs are sold with a passport at Baghdad and Erbil airports; Korek and Asiacell have better coverage in the Kurdistan Region."
+   },
+   "touristScams": [
+    {
+     "title": "Meterless taxi",
+     "desc": "Street taxis quote foreigners very high prices.",
+     "tip": "Use Careem/Baly or fix the price before getting in."
+    },
+    {
+     "title": "Street money changers",
+     "desc": "The rate is inflated or notes are missing from the bundle.",
+     "tip": "Exchange at an official bureau and count the money there."
+    },
+    {
+     "title": "Unofficial guides",
+     "desc": "People approaching at sites like Babylon demand a steep fee at the end of the tour.",
+     "tip": "Arrange a guide in advance with the price in writing."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Irakischer Dinar (IQD) – für größere Käufe werden auch US-Dollar akzeptiert",
+   "plugType": "Typ C, D, G (230V, 50Hz)",
+   "bestMonths": "März – April und Oktober – November (mild) · Juni – September bis 45 - 50 °C; die Berge der Region Kurdistan sind im Frühling am schönsten",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Kriegsgebiet (Reisewarnung)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Offizielle Reisehinweise (Auswärtiges Amt, USA, UK FCDO) raten von Reisen in den größten Teil des Irak ab: Terrorismus, Entführungen, Angriffe bewaffneter Gruppen und das Übergreifen regionaler Konflikte bleiben Risiken. Die Region Kurdistan (Erbil, Sulaimaniyya) ist vergleichsweise ruhiger; sehr hoch ist das Risiko an der syrischen Grenze, in nördlichen Grenzgebieten und in Provinzen wie Anbar, Ninawa, Salah ad-Din, Kirkuk und Diyala.",
+    "commonScams": [
+     "Taxis ohne Taxameter, die Ausländern hohe Preise nennen",
+     "Straßengeldwechsler, die zu wenig Dinar auszahlen oder den Kurs aufblähen",
+     "Inoffizielle „Führer“ an archäologischen Stätten, die nachher hohe Gebühren verlangen"
+    ],
+    "safeTravelTips": [
+     "Vor der Reise aktuelle offizielle Hinweise prüfen und sich bei der Botschaft registrieren.",
+     "Überlandfahrten nur mit vertrauenswürdigem lokalem Guide/Fahrer; an Kontrollpunkten den Pass bereithalten.",
+     "Demonstrationen, Militärgelände und Nachtfahrten meiden; Kontrollpunkte nie fotografieren."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "122",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 % der Bevölkerung (4G in Städten; auf dem Land lückenhaft)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Mittel (einige internationale eSIMs funktionieren; lokale SIMs gibt es mit Reisepass)",
+    "bestCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (keine U-Bahn und kein regulärer Stadtverkehr; Taxis, Fahrdienste und Privatfahrer)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "Keine (kurze Taxifahrt ~3 - 6 $)",
+    "dailyPassUsd": "Keine (Auto mit Fahrer ~60 - 120 $ pro Tag)",
+    "popularRideApps": [
+     "Careem",
+     "Baly"
+    ],
+    "taxiAdvice": "Careem und Baly bieten in Bagdad, Erbil und Basra Festpreise; bei Straßentaxis den Preis vor dem Einsteigen vereinbaren. Für Überlandfahrten einen vertrauenswürdigen Fahrer engagieren."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.25 - 0.60 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "40 - 90 $",
+    "flightCostIndex": "Niedrig – Mittel (Direktflüge Istanbul – Bagdad, Erbil, Basra und Nadschaf, ~2,5 - 3 Std.)",
+    "flightTip": "Turkish Airlines und Pegasus fliegen ab Istanbul nach Erbil, Bagdad, Basra, Nadschaf und Sulaimaniyya; flexible Tickets buchen, da der Luftraum bei regionalen Spannungen schließen kann."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Gastfreundschaft wird großgeschrieben; angebotenen Tee anzunehmen ist höflich.",
+     "Die linke Hand nicht zum Essen oder Anbieten benutzen; Frauen nur die Hand geben, wenn sie sie reichen.",
+     "In Schreinen und Moscheen bedecken Frauen das Haar (in Kerbela und Nadschaf Abaya), Schuhe werden ausgezogen.",
+     "Kontrollpunkte, Militäranlagen und Regierungsgebäude nie fotografieren."
+    ],
+    "festivals": [
+     "Arbain-Pilgermarsch (Gedenken, bei dem Millionen nach Kerbela pilgern)",
+     "Nouruz (21. März; große Feiern in der Region Kurdistan)",
+     "Internationales Babylon-Festival (Konzerte im antiken Theater)"
+    ],
+    "lifestyle": "Familien- und Stammesbande sind eng; abends beleben sich Teehäuser und die Parks am Tigris. In Bagdad ist der Büchermarkt am Freitagmorgen in der Al-Mutanabbi-Straße das Herz des Kulturlebens."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Zitadelle von Erbil (UNESCO)",
+     "Antikes Babylon (UNESCO)",
+     "Zikkurat von Ur (Nasiriyya)",
+     "Irak-Museum und Al-Mutanabbi-Straße (Bagdad)",
+     "Mesopotamische Marschen – Ahwar (UNESCO)",
+     "Schreine von Kerbela und Nadschaf"
+    ],
+    "bestSeasons": "März – April und Oktober – November (mild) · Juni – September bis 45 - 50 °C; die Berge der Region Kurdistan sind im Frühling am schönsten",
+    "travelStyleTip": "Erbil ist der praktischste Ausgangspunkt; für die historischen und religiösen Stätten im Süden Inlandsflüge und einen vertrauenswürdigen lokalen Guide nutzen."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~95–98 %; ~60–65 % Schiiten, ~30–35 % Sunniten), Christen (Chaldäer, Assyrer), Jesiden und Mandäer",
+    "respectNorms": "In Kerbela und Nadschaf tragen Frauen eine Abaya (am Eingang ausgeliehen); in Schreinen gibt es Taschen- und Kamerakontrollen, im Ramadan tagsüber nicht öffentlich essen und trinken.",
+    "sacredSites": [
+     "Imam-Ali-Schrein (Nadschaf)",
+     "Schreine von Imam Hussein und al-Abbas (Kerbela)",
+     "Schrein von Abd al-Qadir al-Dschilani und Abu-Hanifa-Moschee (Bagdad)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Arabisch und Kurdisch sind Amtssprachen; Turkmenisch und Syrisch haben in einigen Gebieten offiziellen Status.",
+    "englishProficiency": "Begrenzt; in Hotels und bei Jüngeren zunehmend. In Erbil und Kirkuk wird Türkisch (Turkmenisch) oft verstanden.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Friede sei mit euch (Gruß)",
+      "translation": "Friede sei mit euch (Gruß)",
+      "pronunciation": "es-se-la-mu a-ley-kum"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "Wie geht’s? (irakischer Dialekt)",
+      "translation": "Wie geht’s? (irakischer Dialekt)",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "shuk-ran"
+     },
+     {
+      "phrase": "بيش هذا؟ (bēsh hādha?)",
+      "meaning": "Was kostet das? (irakischer Dialekt)",
+      "translation": "Was kostet das? (irakischer Dialekt)",
+      "pronunciation": "beysh ha-za"
+     },
+     {
+      "phrase": "سوپاس (supās)",
+      "meaning": "Danke (Kurdisch – Region Kurdistan)",
+      "translation": "Danke (Kurdisch – Region Kurdistan)",
+      "pronunciation": "su-pas"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mesopotamien zwischen Euphrat und Tigris ist die Wiege der Schrift und der ersten Städte: Sumer, Akkad, Babylon und Assyrien entstanden hier. Das 762 gegründete Bagdad wurde Hauptstadt der Abbasiden und mit dem „Haus der Weisheit“ ein Zentrum der Wissenschaft. Von 1534 bis 1918 osmanisch, wurde das Land 1932 unabhängig.",
+    "milestones": [
+     "um 3200 v. Chr.: Keilschrift in Uruk",
+     "um 1754 v. Chr.: Codex Hammurapi (Babylon)",
+     "762: Abbasidenkalif al-Mansur gründet Bagdad",
+     "1534: Süleyman der Prächtige gliedert Bagdad ins Osmanische Reich ein"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Masguf (über Feuer gegrillter Karpfen am Tigrisufer; Nationalgericht)",
+     "Irakische Dolma (gefülltes Gemüse und Weinblätter gemischt)",
+     "Quzi (ganzes Lamm auf Reis)"
+    ],
+    "traditionalDrinks": [
+     "Irakischer Tee (stark, im Istikan-Glas, mit Kardamom)",
+     "Schinina (Joghurtgetränk)",
+     "Numi Basra (Tee aus getrockneten Limetten)"
+    ],
+    "streetFoodAndDesserts": [
+     "Falafel mit Amba-Soße im Samun-Brot",
+     "Kahi und Geymar (Gebäck mit Kaymak zum Frühstück)",
+     "Kleicha (Dattelkekse)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hammurapi (König von Babylon)",
+     "Harun ar-Raschid (Abbasidenkalif)",
+     "Zaha Hadid (Pritzker-Preisträgerin, Architektin)"
+    ],
+    "strongSectors": [
+     "Erdöl (~90 % der Staatseinnahmen; einer der großen OPEC-Förderer)",
+     "Dattelproduktion",
+     "Religiöser Tourismus (Kerbela, Nadschaf)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld regiert; Dinar und saubere, neu gedruckte US-Dollar mitführen. Karten nur in großen Hotels und Malls in Erbil und Bagdad; Geldautomaten sind rar.",
+    "tippingCulture": "Aufrunden oder 10 % im Restaurant ist üblich; Fahrer und Guides erwarten ein tägliches Trinkgeld.",
+    "economicPillars": "Erdöl und Gas, Landwirtschaft (Datteln, Weizen), religiöser Tourismus, Bauwesen."
+   }
+  },
+  "itin": {
+   "routeName": "Mesopotamisches Erbe: Erbil, Bagdad, Babylon, Kerbela & Nadschaf",
+   "routeSummary": "Eine 7-tägige Route von der Zitadelle Erbil in die Abbasidenhauptstadt Bagdad, zu den Ruinen Babylons und den heiligen Schreinen von Kerbela und Nadschaf – nur wenn die offiziellen Hinweise es zulassen und mit lokalem Guide.",
+   "totalDays": 7,
+   "idealDurationText": "7-tägige Reise",
+   "bestSeason": "März – April und Oktober – November (mild) · Juni – September bis 45 - 50 °C; die Berge der Region Kurdistan sind im Frühling am schönsten",
+   "transportMode": "Inlandsflug Erbil – Bagdad; Auto mit Fahrer und lokalem Guide Bagdad – Babylon – Kerbela – Nadschaf",
+   "paceLevel": "Gemächlich (flexibler Plan aus Sicherheitsgründen)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Erbil (Region Kurdistan)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Zitadelle von Erbil (UNESCO; einer der ältesten durchgehend bewohnten Orte der Erde)",
+      "Qaysari-Basar",
+      "Sami-Abdulrahman-Park"
+     ],
+     "activities": [
+      "Die Zitadelle und das Kurdische Textilmuseum erkunden.",
+      "Im Basar Tee trinken und Nüsse sowie Honig kaufen.",
+      "Abends im Schanidar-Park die Picknickstimmung mit Einheimischen erleben."
+     ],
+     "foodAndDrinks": [
+      "Kurdischer Kebab und Dolma",
+      "Tee und Baklava"
+     ],
+     "criticalTips": [
+      "In der Region Kurdistan wird Türkisch oft verstanden.",
+      "Iranische und nördliche Grenzgebiete meiden."
+     ],
+     "mapsQuery": "Erbil Citadel, Erbil, Iraq"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Bagdad",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Irakisches Nationalmuseum",
+      "Al-Mutanabbi-Straße und Café Schabandar",
+      "Schrein von Abd al-Qadir al-Dschilani",
+      "Abbasidenpalast und Mustansiriyya-Madrasa"
+     ],
+     "activities": [
+      "Am Freitagmorgen über den Büchermarkt der Al-Mutanabbi-Straße bummeln.",
+      "Im Irak-Museum sumerische und assyrische Schätze ansehen.",
+      "Abends am Tigrisufer Masguf essen."
+     ],
+     "foodAndDrinks": [
+      "Masguf (Abu-Nuwas-Straße)",
+      "Frühstück mit Kahi und Geymar"
+     ],
+     "criticalTips": [
+      "Die Stadt mit lokalem Guide erkunden und nicht bis spät nachts unterwegs sein.",
+      "An Kontrollpunkten den Pass zeigen und nicht fotografieren."
+     ],
+     "mapsQuery": "Al-Mutanabbi Street, Baghdad, Iraq"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Babylon & Kerbela",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Ruinen von Babylon und Nachbau des Ischtar-Tors",
+      "Schreine von Imam Hussein und al-Abbas",
+      "Platz Bayn al-Haramayn"
+     ],
+     "activities": [
+      "Mit Guide die Ruinen aus der Zeit Nebukadnezars besichtigen.",
+      "In Kerbela die abendlichen Lichter auf dem Platz zwischen den beiden Schreinen erleben.",
+      "Im Basar rund um die Schreine Gebetsketten und Souvenirs kaufen."
+     ],
+     "foodAndDrinks": [
+      "Kebab und Reis nach Kerbela-Art",
+      "Kardamomtee"
+     ],
+     "criticalTips": [
+      "Keine Steine oder Scherben von antiken Stätten mitnehmen; es drohen harte Strafen.",
+      "Während Arbain ist die Stadt extrem voll; Termine prüfen."
+     ],
+     "mapsQuery": "Babylon Archaeological Site, Hillah, Iraq"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Nadschaf",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Imam-Ali-Schrein",
+      "Friedhof Wadi as-Salam (einer der größten der Welt)",
+      "Große Moschee von Kufa"
+     ],
+     "activities": [
+      "Die goldene Kuppel des Imam-Ali-Schreins besuchen.",
+      "Die Moschee von Kufa und die historische Stadt besichtigen.",
+      "Von Nadschaf direkt nach Istanbul zurückfliegen."
+     ],
+     "foodAndDrinks": [
+      "Reis- und Fleischgerichte nach Nadschaf-Art",
+      "Frische Datteln"
+     ],
+     "criticalTips": [
+      "Frauen müssen im Schrein eine Abaya tragen; Kameras und Taschen werden kontrolliert.",
+      "Religiöse Regeln respektieren und den Pilgerstrom nicht blockieren."
+     ],
+     "mapsQuery": "Imam Ali Shrine, Najaf, Iraq"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Masguf (über Feuer gegrillter Karpfen am Tigrisufer; Nationalgericht)",
+     "Irakische Dolma (gefülltes Gemüse und Weinblätter gemischt)",
+     "Quzi (ganzes Lamm auf Reis)"
+    ],
+    "drinks": [
+     "Irakischer Tee (stark, im Istikan-Glas, mit Kardamom)",
+     "Schinina (Joghurtgetränk)",
+     "Numi Basra (Tee aus getrockneten Limetten)"
+    ],
+    "streetFoods": [
+     "Falafel mit Amba-Soße im Samun-Brot",
+     "Kahi und Geymar (Gebäck mit Kaymak zum Frühstück)",
+     "Kleicha (Dattelkekse)"
+    ],
+    "diningAdvice": "Masguf in Lokalen am Tigrisufer probieren; das Essen kommt auf geteilten Platten und Gästen wird eifrig nachgereicht."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Mehrfachadapter für G/D/C",
+     "Genug Bargeld in USD (saubere, neu gedruckte Scheine)",
+     "Zurückhaltende Kleidung; Kopftuch für Frauen",
+     "Sonnenschutz (extreme Sommerhitze)"
+    ],
+    "safetyAndEtiquette": [
+     "Offizielle Hinweise ständig verfolgen.",
+     "Kontrollpunkte nie fotografieren.",
+     "Keine Antiquitäten oder Fragmente sammeln."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Gemischtes System: britische G (drei rechteckige Stifte), indische D (drei runde Stifte) und europäische C-Steckdosen; Mehrfachadapter mitbringen. Stromausfälle sind häufig, Hotels nutzen Generatoren."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; nur Flaschenwasser trinken, bei Eis und Rohkost vorsichtig sein.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, Masern)",
+     "Hepatitis A und Typhus",
+     "Tollwut (ländliche oder lange Reisen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "122"
+   },
+   "tipping": {
+    "custom": "Aufrunden ist üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "10 % oder Aufrunden im Restaurant; Fahrer und Guides erwarten ein tägliches Trinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (im Irak gibt es keine Mehrwertsteuer)",
+    "minSpend": "Nicht anwendbar",
+    "customsNote": "Der Irak kennt keine Steuererstattung für Touristen. Die Ausfuhr von Antiquitäten – selbst an Ausgrabungsstätten aufgelesener Scherben – ist verboten und kann zu Haft führen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "airportSimTrapWarning": "SIMs von Zain, Asiacell und Korek gibt es mit Pass an den Flughäfen Bagdad und Erbil; in der Region Kurdistan haben Korek und Asiacell besseren Empfang."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi ohne Taxameter",
+     "desc": "Straßentaxis nennen Ausländern sehr hohe Preise.",
+     "tip": "Careem/Baly nutzen oder den Preis vor dem Einsteigen festlegen."
+    },
+    {
+     "title": "Straßengeldwechsler",
+     "desc": "Der Kurs wird aufgebläht oder im Bündel fehlen Scheine.",
+     "tip": "In einer offiziellen Wechselstube tauschen und dort nachzählen."
+    },
+    {
+     "title": "Inoffizielle Führer",
+     "desc": "Personen an Stätten wie Babylon verlangen am Ende der Tour eine hohe Gebühr.",
+     "tip": "Den Guide vorab mit schriftlichem Preis buchen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dinar iraquí (IQD) – en compras grandes también se aceptan dólares",
+   "plugType": "Tipo C, D, G (230V, 50Hz)",
+   "bestMonths": "Marzo – abril y octubre – noviembre (templado) · de junio a septiembre se alcanzan 45 - 50 °C; las montañas de la Región del Kurdistán lucen mejor en primavera",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de Conflicto (No Viajar)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Las advertencias oficiales de EE. UU. y del UK FCDO desaconsejan viajar a la mayor parte de Irak: persisten el terrorismo, los secuestros, los ataques de grupos armados y el riesgo de contagio de conflictos regionales. La Región del Kurdistán (Erbil, Solimania) es relativamente más tranquila; el riesgo es muy alto en la frontera siria, las zonas fronterizas del norte y provincias como Anbar, Nínive, Saladino, Kirkuk y Diyala.",
+    "commonScams": [
+     "Taxis sin taxímetro que piden tarifas altas a extranjeros",
+     "Cambistas callejeros que dan menos dinares o inflan el tipo de cambio",
+     "“Guías” no oficiales en yacimientos que luego exigen tarifas altas"
+    ],
+    "safeTravelTips": [
+     "Consulta las advertencias oficiales actuales antes de viajar y regístrate en tu embajada.",
+     "Viaja entre ciudades solo con un guía/conductor local de confianza; ten el pasaporte a mano en los controles.",
+     "Evita manifestaciones, zonas militares y viajar de noche; nunca fotografíes los controles."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "122",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 % de la población (4G en ciudades; irregular en zonas rurales)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Media (algunas eSIM internacionales funcionan; la SIM local se compra con pasaporte)",
+    "bestCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (sin metro ni transporte urbano regular; se usan taxis, apps y conductores privados)",
+    "costLevel": "Medio",
+    "singleTicketUsd": "No hay (trayecto corto en taxi ~3 - 6 $)",
+    "dailyPassUsd": "No hay (coche con conductor ~60 - 120 $ al día)",
+    "popularRideApps": [
+     "Careem",
+     "Baly"
+    ],
+    "taxiAdvice": "Careem y Baly ofrecen tarifas fijas en Bagdad, Erbil y Basora; con taxis de calle acuerda el precio antes de subir. Para viajes entre ciudades contrata un conductor de confianza."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.25 - 0.60 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "40 - 90 $",
+    "flightCostIndex": "Bajo – Medio (vuelos directos de Estambul a Bagdad, Erbil, Basora y Nayaf, ~2,5 - 3 horas)",
+    "flightTip": "Turkish Airlines y Pegasus vuelan de Estambul a Erbil, Bagdad, Basora, Nayaf y Solimania; compra billetes flexibles porque el espacio aéreo puede cerrarse en momentos de tensión regional."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "La hospitalidad es muy fuerte; aceptar el té que te ofrecen es cortés.",
+     "No uses la mano izquierda para comer u ofrecer; no des la mano a mujeres salvo que ellas la ofrezcan.",
+     "En santuarios y mezquitas las mujeres se cubren el pelo (abaya en Kerbala y Nayaf) y hay que descalzarse.",
+     "Nunca fotografíes controles, instalaciones militares ni edificios oficiales."
+    ],
+    "festivals": [
+     "Peregrinación de Arbaín (conmemoración en la que millones de peregrinos caminan a Kerbala)",
+     "Nouruz (21 de marzo; grandes celebraciones en la Región del Kurdistán)",
+     "Festival Internacional de Babilonia (conciertos en el teatro antiguo)"
+    ],
+    "lifestyle": "Los lazos familiares y tribales son fuertes; por la tarde se animan las casas de té y los parques junto al Tigris. En Bagdad, el mercado de libros del viernes por la mañana en la calle Al-Mutanabbi es el corazón de la vida cultural."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ciudadela de Erbil (UNESCO)",
+     "Antigua Babilonia (UNESCO)",
+     "Zigurat de Ur (Nasiriya)",
+     "Museo de Irak y calle Al-Mutanabbi (Bagdad)",
+     "Marismas de Mesopotamia – Ahwar (UNESCO)",
+     "Santuarios de Kerbala y Nayaf"
+    ],
+    "bestSeasons": "Marzo – abril y octubre – noviembre (templado) · de junio a septiembre se alcanzan 45 - 50 °C; las montañas de la Región del Kurdistán lucen mejor en primavera",
+    "travelStyleTip": "Erbil es el punto de partida más práctico; para los lugares históricos y religiosos del sur usa vuelos internos y un guía local de confianza."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~95–98 %; ~60–65 % chií, ~30–35 % suní), cristianos (caldeos, asirios), yazidíes y mandeos",
+    "respectNorms": "En Kerbala y Nayaf las mujeres llevan abaya (la prestan en la entrada); en los santuarios revisan bolsos y cámaras, y en Ramadán no comas ni bebas en público de día.",
+    "sacredSites": [
+     "Santuario del imán Alí (Nayaf)",
+     "Santuarios del imán Husein y de Al-Abbas (Kerbala)",
+     "Santuario de Abdul Qadir Gilani y mezquita de Abu Hanifa (Bagdad)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El árabe y el kurdo son oficiales; el turcomano y el siríaco tienen estatus oficial en algunas zonas.",
+    "englishProficiency": "Limitado; crece en hoteles y entre los jóvenes. En Erbil y Kirkuk se entiende bastante el turco (turcomano).",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "La paz sea contigo (saludo)",
+      "translation": "La paz sea contigo (saludo)",
+      "pronunciation": "es-se-la-mu a-ley-kum"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "¿Cómo estás? (dialecto iraquí)",
+      "translation": "¿Cómo estás? (dialecto iraquí)",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "shuk-ran"
+     },
+     {
+      "phrase": "بيش هذا؟ (bēsh hādha?)",
+      "meaning": "¿Cuánto cuesta esto? (dialecto iraquí)",
+      "translation": "¿Cuánto cuesta esto? (dialecto iraquí)",
+      "pronunciation": "beysh ha-za"
+     },
+     {
+      "phrase": "سوپاس (supās)",
+      "meaning": "Gracias (kurdo – Región del Kurdistán)",
+      "translation": "Gracias (kurdo – Región del Kurdistán)",
+      "pronunciation": "su-pas"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mesopotamia, entre el Tigris y el Éufrates, vio nacer la escritura y las primeras ciudades: allí surgieron Sumer, Acad, Babilonia y Asiria. Fundada en 762, Bagdad fue capital abasí y centro científico con la “Casa de la Sabiduría”. Bajo dominio otomano de 1534 a 1918, el país se independizó en 1932.",
+    "milestones": [
+     "h. 3200 a. C.: Escritura cuneiforme en Uruk",
+     "h. 1754 a. C.: Código de Hammurabi (Babilonia)",
+     "762: El califa abasí al-Mansur funda Bagdad",
+     "1534: Solimán el Magnífico incorpora Bagdad al Imperio otomano"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Masgouf (carpa asada al fuego a orillas del Tigris; plato nacional)",
+     "Dolma iraquí (verduras y hojas de parra rellenas)",
+     "Quzi (cordero entero sobre arroz)"
+    ],
+    "traditionalDrinks": [
+     "Té iraquí (fuerte, en vaso istikan, con cardamomo)",
+     "Shineena (bebida de yogur)",
+     "Noomi Basra (té de lima seca)"
+    ],
+    "streetFoodAndDesserts": [
+     "Falafel con salsa amba en pan samoon",
+     "Kahi y geymar (hojaldre con nata espesa para desayunar)",
+     "Kleicha (galletas de dátil)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hammurabi (rey de Babilonia)",
+     "Harún al-Rashid (califa abasí)",
+     "Zaha Hadid (arquitecta, Premio Pritzker)"
+    ],
+    "strongSectors": [
+     "Petróleo (~90 % de los ingresos del Estado; uno de los grandes productores de la OPEP)",
+     "Producción de dátiles",
+     "Turismo religioso (Kerbala, Nayaf)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Manda el efectivo; lleva dinares y dólares limpios y de emisión reciente. Las tarjetas se limitan a grandes hoteles y centros comerciales de Erbil y Bagdad; hay pocos cajeros.",
+    "tippingCulture": "En restaurantes es habitual redondear o dejar un 10 %; conductores y guías esperan propina diaria.",
+    "economicPillars": "Petróleo y gas, agricultura (dátiles, trigo), turismo religioso, construcción."
+   }
+  },
+  "itin": {
+   "routeName": "Herencia mesopotámica: Erbil, Bagdad, Babilonia, Kerbala y Nayaf",
+   "routeSummary": "Ruta de 7 días desde la ciudadela de Erbil a la capital abasí Bagdad, las ruinas de Babilonia y los santuarios de Kerbala y Nayaf; solo si las advertencias oficiales lo permiten y con guía local.",
+   "totalDays": 7,
+   "idealDurationText": "Itinerario de 7 días",
+   "bestSeason": "Marzo – abril y octubre – noviembre (templado) · de junio a septiembre se alcanzan 45 - 50 °C; las montañas de la Región del Kurdistán lucen mejor en primavera",
+   "transportMode": "Vuelo interno Erbil – Bagdad; coche con conductor y guía local Bagdad – Babilonia – Kerbala – Nayaf",
+   "paceLevel": "Tranquilo (plan flexible por seguridad)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Erbil (Región del Kurdistán)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Ciudadela de Erbil (UNESCO; uno de los lugares habitados sin interrupción más antiguos del mundo)",
+      "Bazar Qaysari",
+      "Parque Sami Abdulrahman"
+     ],
+     "activities": [
+      "Recorre la ciudadela y el Museo Textil Kurdo.",
+      "Toma té en el bazar y compra frutos secos y miel.",
+      "Únete al ambiente de pícnic de los locales en el parque Shanidar por la tarde."
+     ],
+     "foodAndDrinks": [
+      "Kebab kurdo y dolma",
+      "Té y baklava"
+     ],
+     "criticalTips": [
+      "En la Región del Kurdistán se entiende bastante el turco.",
+      "Aléjate de las zonas fronterizas con Irán y del norte."
+     ],
+     "mapsQuery": "Erbil Citadel, Erbil, Iraq"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bagdad",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Museo Nacional de Irak",
+      "Calle Al-Mutanabbi y Café Shabandar",
+      "Santuario de Abdul Qadir Gilani",
+      "Palacio abasí y madrasa Mustansiriya"
+     ],
+     "activities": [
+      "Pasea por el mercado de libros del viernes en la calle Al-Mutanabbi.",
+      "Contempla tesoros sumerios y asirios en el Museo de Irak.",
+      "Cena masgouf a orillas del Tigris."
+     ],
+     "foodAndDrinks": [
+      "Masgouf (calle Abu Nuwas)",
+      "Desayuno de kahi y geymar"
+     ],
+     "criticalTips": [
+      "Recorre la ciudad con un guía local y no te quedes fuera hasta tarde.",
+      "Muestra el pasaporte en los controles y no hagas fotos."
+     ],
+     "mapsQuery": "Al-Mutanabbi Street, Baghdad, Iraq"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Babilonia y Kerbala",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Ruinas de Babilonia y réplica de la Puerta de Ishtar",
+      "Santuarios del imán Husein y de Al-Abbas",
+      "Plaza Bayn al-Haramayn"
+     ],
+     "activities": [
+      "Recorre con guía las ruinas de la época de Nabucodonosor.",
+      "Contempla las luces nocturnas en la plaza entre los dos santuarios de Kerbala.",
+      "Compra rosarios y recuerdos en el bazar junto a los santuarios."
+     ],
+     "foodAndDrinks": [
+      "Kebab y arroz al estilo de Kerbala",
+      "Té con cardamomo"
+     ],
+     "criticalTips": [
+      "No te lleves piedras ni fragmentos de cerámica de los yacimientos; las penas son duras.",
+      "Durante el Arbaín la ciudad está abarrotada; revisa las fechas."
+     ],
+     "mapsQuery": "Babylon Archaeological Site, Hillah, Iraq"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Nayaf",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Santuario del imán Alí",
+      "Cementerio Wadi al-Salam (uno de los mayores del mundo)",
+      "Gran Mezquita de Kufa"
+     ],
+     "activities": [
+      "Visita la cúpula dorada del santuario del imán Alí.",
+      "Conoce la mezquita de Kufa y la ciudad histórica.",
+      "Regresa a Estambul en vuelo directo desde Nayaf."
+     ],
+     "foodAndDrinks": [
+      "Arroz y platos de carne al estilo de Nayaf",
+      "Dátiles frescos"
+     ],
+     "criticalTips": [
+      "Las mujeres deben llevar abaya en el santuario; revisan cámaras y bolsos.",
+      "Respeta las normas religiosas y no bloquees el paso de los peregrinos."
+     ],
+     "mapsQuery": "Imam Ali Shrine, Najaf, Iraq"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Masgouf (carpa asada al fuego a orillas del Tigris; plato nacional)",
+     "Dolma iraquí (verduras y hojas de parra rellenas)",
+     "Quzi (cordero entero sobre arroz)"
+    ],
+    "drinks": [
+     "Té iraquí (fuerte, en vaso istikan, con cardamomo)",
+     "Shineena (bebida de yogur)",
+     "Noomi Basra (té de lima seca)"
+    ],
+    "streetFoods": [
+     "Falafel con salsa amba en pan samoon",
+     "Kahi y geymar (hojaldre con nata espesa para desayunar)",
+     "Kleicha (galletas de dátil)"
+    ],
+    "diningAdvice": "Prueba el masgouf en los restaurantes junto al Tigris; la comida llega en bandejas compartidas y se insiste mucho a los invitados."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador múltiple para G/D/C",
+     "Suficiente efectivo en USD (billetes limpios y recientes)",
+     "Ropa recatada; pañuelo para mujeres",
+     "Protección solar (calor extremo en verano)"
+    ],
+    "safetyAndEtiquette": [
+     "Sigue de cerca las advertencias oficiales.",
+     "Nunca fotografíes los controles.",
+     "No recojas antigüedades ni fragmentos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sistema mixto: enchufes británicos G (tres clavijas rectangulares), indios D (tres redondas) y europeos C; lleva un adaptador múltiple. Los cortes de luz son frecuentes y los hoteles usan generadores."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; bebe solo agua embotellada y ten cuidado con el hielo y las ensaladas crudas.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, sarampión)",
+     "Hepatitis A y fiebre tifoidea",
+     "Rabia (viajes rurales o largos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "122"
+   },
+   "tipping": {
+    "custom": "Es habitual redondear.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "10 % o redondeo en restaurantes; conductores y guías esperan propina diaria."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (Irak no aplica IVA)",
+    "minSpend": "No aplica",
+    "customsNote": "Irak no tiene devolución de impuestos para turistas. Exportar antigüedades, incluso fragmentos de cerámica recogidos en yacimientos, está prohibido y puede acarrear cárcel."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "airportSimTrapWarning": "En los aeropuertos de Bagdad y Erbil se venden SIM de Zain, Asiacell y Korek con pasaporte; en la Región del Kurdistán Korek y Asiacell tienen mejor cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi sin taxímetro",
+     "desc": "Los taxis de calle piden precios muy altos a extranjeros.",
+     "tip": "Usa Careem/Baly o fija el precio antes de subir."
+    },
+    {
+     "title": "Cambistas callejeros",
+     "desc": "Inflan el tipo de cambio o faltan billetes en el fajo.",
+     "tip": "Cambia en una casa oficial y cuenta el dinero allí."
+    },
+    {
+     "title": "Guías no oficiales",
+     "desc": "Personas que te abordan en lugares como Babilonia exigen una tarifa alta al final.",
+     "tip": "Contrata el guía con antelación y con el precio por escrito."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Иракский динар (IQD) — при крупных покупках принимают и доллары США",
+   "plugType": "Тип C, D, G (230V, 50Hz)",
+   "bestMonths": "Март – апрель и октябрь – ноябрь (мягкая погода) · в июне – сентябре до 45 - 50 °C; горы Иракского Курдистана лучше всего весной",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Зона конфликта (Не въезжать)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Официальные рекомендации США и UK FCDO не советуют ездить в большую часть Ирака: сохраняются риски терроризма, похищений, нападений вооружённых группировок и перекидывания региональных конфликтов. Регион Курдистан (Эрбиль, Сулеймания) сравнительно спокойнее; очень высокий риск у сирийской границы, в северных приграничных районах и провинциях Анбар, Найнава, Салах-эд-Дин, Киркук и Дияла.",
+    "commonScams": [
+     "Такси без счётчика, называющие иностранцам высокие цены",
+     "Уличные менялы, недодающие динары или завышающие курс",
+     "Неофициальные «гиды» на археологических объектах, требующие потом большую плату"
+    ],
+    "safeTravelTips": [
+     "Перед поездкой проверьте актуальные официальные предупреждения и зарегистрируйтесь в посольстве.",
+     "Между городами ездите только с надёжным местным гидом/водителем; держите паспорт наготове на блокпостах.",
+     "Избегайте демонстраций, военных объектов и ночных поездок; не фотографируйте блокпосты."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "122",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 % населения (4G в городах; в сельской местности с перебоями)",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Средняя (некоторые международные eSIM работают; местную SIM покупают по паспорту)",
+    "bestCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (нет метро и регулярного городского транспорта; пользуются такси, приложениями и частными водителями)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "Нет (короткая поездка на такси ~3 - 6 $)",
+    "dailyPassUsd": "Нет (машина с водителем ~60 - 120 $ в день)",
+    "popularRideApps": [
+     "Careem",
+     "Baly"
+    ],
+    "taxiAdvice": "В Багдаде, Эрбиле и Басре Careem и Baly дают фиксированные цены; с уличными такси договаривайтесь о цене до посадки. Для поездок между городами нанимайте надёжного водителя."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 60 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 4 $",
+    "waterBottleUsd": "0.25 - 0.60 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "40 - 90 $",
+    "flightCostIndex": "Низкий – средний (прямые рейсы из Стамбула в Багдад, Эрбиль, Басру и Наджаф, ~2,5 - 3 ч)",
+    "flightTip": "Turkish Airlines и Pegasus летают из Стамбула в Эрбиль, Багдад, Басру, Наджаф и Сулейманию; берите гибкие билеты, так как воздушное пространство может закрываться при региональной напряжённости."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Гостеприимство очень сильное; принять предложенный чай — вежливо.",
+     "Не используйте левую руку для еды и угощения; не подавайте руку женщинам, если они сами не протянут.",
+     "В мавзолеях и мечетях женщины покрывают волосы (в Кербеле и Наджафе — абая), обувь снимают.",
+     "Никогда не фотографируйте блокпосты, военные объекты и правительственные здания."
+    ],
+    "festivals": [
+     "Паломничество Арбаин (поминовение, когда миллионы паломников идут пешком в Кербелу)",
+     "Навруз (21 марта; большие праздники в Регионе Курдистан)",
+     "Международный фестиваль Вавилона (концерты в античном театре)"
+    ],
+    "lifestyle": "Семейные и племенные связи сильны; вечером оживают чайханы и парки на берегу Тигра. В Багдаде книжный рынок на улице Аль-Мутанабби по пятницам утром — сердце культурной жизни."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Цитадель Эрбиля (ЮНЕСКО)",
+     "Древний Вавилон (ЮНЕСКО)",
+     "Зиккурат в Уре (Насирия)",
+     "Музей Ирака и улица Аль-Мутанабби (Багдад)",
+     "Месопотамские болота — Ахвар (ЮНЕСКО)",
+     "Святыни Кербелы и Наджафа"
+    ],
+    "bestSeasons": "Март – апрель и октябрь – ноябрь (мягкая погода) · в июне – сентябре до 45 - 50 °C; горы Иракского Курдистана лучше всего весной",
+    "travelStyleTip": "Удобнее всего начинать с Эрбиля; к историческим и религиозным местам юга добирайтесь внутренними рейсами и с надёжным местным гидом."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~95–98 %; ~60–65 % шииты, ~30–35 % сунниты), христиане (халдеи, ассирийцы), езиды и мандеи",
+    "respectNorms": "В Кербеле и Наджафе женщины носят абаю (выдают на входе); в святынях проверяют сумки и камеры, в Рамадан днём не ешьте и не пейте на людях.",
+    "sacredSites": [
+     "Мавзолей имама Али (Наджаф)",
+     "Мавзолеи имама Хусейна и аль-Аббаса (Кербела)",
+     "Мавзолей Абдул-Кадира Гиляни и мечеть Абу Ханифы (Багдад)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальные языки — арабский и курдский; туркменский и сирийский имеют официальный статус в отдельных районах.",
+    "englishProficiency": "Ограниченный; растёт в отелях и среди молодёжи. В Эрбиле и Киркуке часто понимают турецкий (туркменский).",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Мир вам (приветствие)",
+      "translation": "Мир вам (приветствие)",
+      "pronunciation": "es-se-la-mu a-ley-kum"
+     },
+     {
+      "phrase": "شلونك؟ (shlōnak?)",
+      "meaning": "Как дела? (иракский диалект)",
+      "translation": "Как дела? (иракский диалект)",
+      "pronunciation": "shlo-nak"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "shuk-ran"
+     },
+     {
+      "phrase": "بيش هذا؟ (bēsh hādha?)",
+      "meaning": "Сколько это стоит? (иракский диалект)",
+      "translation": "Сколько это стоит? (иракский диалект)",
+      "pronunciation": "beysh ha-za"
+     },
+     {
+      "phrase": "سوپاس (supās)",
+      "meaning": "Спасибо (курдский — Регион Курдистан)",
+      "translation": "Спасибо (курдский — Регион Курдистан)",
+      "pronunciation": "su-pas"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Месопотамия между Тигром и Евфратом — колыбель письменности и первых городов: здесь возникли Шумер, Аккад, Вавилон и Ассирия. Основанный в 762 году Багдад стал столицей Аббасидов и научным центром с «Домом мудрости». Под властью Османов с 1534 по 1918 год, страна стала независимой в 1932 году.",
+    "milestones": [
+     "ок. 3200 до н. э.: клинопись в Уруке",
+     "ок. 1754 до н. э.: Законы Хаммурапи (Вавилон)",
+     "762: Халиф аль-Мансур основывает Багдад",
+     "1534: Сулейман Великолепный присоединяет Багдад к Османской империи"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Масгуф (карп, запечённый на огне на берегу Тигра; национальное блюдо)",
+     "Иракская долма (фаршированные овощи и виноградные листья)",
+     "Кузи (целый ягнёнок на рисе)"
+    ],
+    "traditionalDrinks": [
+     "Иракский чай (крепкий, в стаканчике истикан, с кардамоном)",
+     "Шинина (йогуртовый напиток)",
+     "Нуми Басра (чай из сушёного лайма)"
+    ],
+    "streetFoodAndDesserts": [
+     "Фалафель с соусом амба в хлебе самун",
+     "Кахи и геймар (выпечка со сливками на завтрак)",
+     "Клейча (печенье с финиками)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Хаммурапи (царь Вавилона)",
+     "Харун ар-Рашид (аббасидский халиф)",
+     "Заха Хадид (архитектор, лауреат Притцкеровской премии)"
+    ],
+    "strongSectors": [
+     "Нефть (~90 % госдоходов; один из крупнейших производителей ОПЕК)",
+     "Производство фиников",
+     "Религиозный туризм (Кербела, Наджаф)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Главное — наличные; берите динары и чистые доллары нового образца. Карты принимают лишь крупные отели и торговые центры Эрбиля и Багдада; банкоматов мало.",
+    "tippingCulture": "В ресторанах принято округлять или оставлять 10 %; водители и гиды ждут ежедневных чаевых.",
+    "economicPillars": "Нефть и газ, сельское хозяйство (финики, пшеница), религиозный туризм, строительство."
+   }
+  },
+  "itin": {
+   "routeName": "Наследие Месопотамии: Эрбиль, Багдад, Вавилон, Кербела и Наджаф",
+   "routeSummary": "7-дневный маршрут от цитадели Эрбиля к аббасидской столице Багдаду, руинам Вавилона и святыням Кербелы и Наджафа — только если позволяют официальные рекомендации и с местным гидом.",
+   "totalDays": 7,
+   "idealDurationText": "7-дневный маршрут",
+   "bestSeason": "Март – апрель и октябрь – ноябрь (мягкая погода) · в июне – сентябре до 45 - 50 °C; горы Иракского Курдистана лучше всего весной",
+   "transportMode": "Внутренний рейс Эрбиль – Багдад; машина с водителем и местным гидом Багдад – Вавилон – Кербела – Наджаф",
+   "paceLevel": "Спокойный (гибкий план из соображений безопасности)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Эрбиль (Регион Курдистан)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Цитадель Эрбиля (ЮНЕСКО; одно из старейших непрерывно населённых мест на Земле)",
+      "Базар Кайсари",
+      "Парк Сами Абдулрахмана"
+     ],
+     "activities": [
+      "Осмотрите цитадель и Музей курдского текстиля.",
+      "Выпейте чаю на базаре и купите орехи и мёд.",
+      "Вечером окунитесь в атмосферу пикников с местными в парке Шанидар."
+     ],
+     "foodAndDrinks": [
+      "Курдский кебаб и долма",
+      "Чай и пахлава"
+     ],
+     "criticalTips": [
+      "В Регионе Курдистан часто понимают турецкий.",
+      "Держитесь подальше от иранской и северной приграничных зон."
+     ],
+     "mapsQuery": "Erbil Citadel, Erbil, Iraq"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Багдад",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальный музей Ирака",
+      "Улица Аль-Мутанабби и кафе Шабандар",
+      "Мавзолей Абдул-Кадира Гиляни",
+      "Аббасидский дворец и медресе Мустансирия"
+     ],
+     "activities": [
+      "В пятницу утром пройдитесь по книжному рынку на улице Аль-Мутанабби.",
+      "Посмотрите шумерские и ассирийские сокровища в Музее Ирака.",
+      "Вечером отведайте масгуф на берегу Тигра."
+     ],
+     "foodAndDrinks": [
+      "Масгуф (улица Абу-Нувас)",
+      "Завтрак кахи с геймаром"
+     ],
+     "criticalTips": [
+      "Гуляйте по городу с местным гидом и не задерживайтесь допоздна.",
+      "На блокпостах показывайте паспорт и не фотографируйте."
+     ],
+     "mapsQuery": "Al-Mutanabbi Street, Baghdad, Iraq"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Вавилон и Кербела",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Руины Вавилона и копия ворот Иштар",
+      "Мавзолеи имама Хусейна и аль-Аббаса",
+      "Площадь Бейн аль-Харамейн"
+     ],
+     "activities": [
+      "С гидом осмотрите руины эпохи Навуходоносора.",
+      "Полюбуйтесь вечерними огнями на площади между двумя святынями Кербелы.",
+      "Купите чётки и сувениры на базаре у святынь."
+     ],
+     "foodAndDrinks": [
+      "Кебаб и рис по-кербельски",
+      "Чай с кардамоном"
+     ],
+     "criticalTips": [
+      "Не берите камни и черепки с древних памятников — наказания суровые.",
+      "Во время Арбаина город переполнен; проверяйте даты."
+     ],
+     "mapsQuery": "Babylon Archaeological Site, Hillah, Iraq"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Наджаф",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Мавзолей имама Али",
+      "Кладбище Вади-ус-Салам (одно из крупнейших в мире)",
+      "Большая мечеть Куфы"
+     ],
+     "activities": [
+      "Посетите золотой купол мавзолея имама Али.",
+      "Осмотрите мечеть Куфы и исторический город.",
+      "Вернитесь в Стамбул прямым рейсом из Наджафа."
+     ],
+     "foodAndDrinks": [
+      "Рис и мясные блюда по-наджафски",
+      "Свежие финики"
+     ],
+     "criticalTips": [
+      "Женщинам в мавзолее нужна абая; камеры и сумки проверяют.",
+      "Соблюдайте религиозные правила и не мешайте потоку паломников."
+     ],
+     "mapsQuery": "Imam Ali Shrine, Najaf, Iraq"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Масгуф (карп, запечённый на огне на берегу Тигра; национальное блюдо)",
+     "Иракская долма (фаршированные овощи и виноградные листья)",
+     "Кузи (целый ягнёнок на рисе)"
+    ],
+    "drinks": [
+     "Иракский чай (крепкий, в стаканчике истикан, с кардамоном)",
+     "Шинина (йогуртовый напиток)",
+     "Нуми Басра (чай из сушёного лайма)"
+    ],
+    "streetFoods": [
+     "Фалафель с соусом амба в хлебе самун",
+     "Кахи и геймар (выпечка со сливками на завтрак)",
+     "Клейча (печенье с финиками)"
+    ],
+    "diningAdvice": "Попробуйте масгуф в ресторанчиках на берегу Тигра; еду подают на общих блюдах, а гостей настойчиво угощают."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Универсальный адаптер для G/D/C",
+     "Достаточно наличных USD (чистые купюры нового образца)",
+     "Скромная одежда; платок для женщин",
+     "Защита от солнца (сильная летняя жара)"
+    ],
+    "safetyAndEtiquette": [
+     "Постоянно следите за официальными рекомендациями.",
+     "Не фотографируйте блокпосты.",
+     "Не собирайте древности и обломки."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Смешанная система: британские G (три прямоугольных штыря), индийские D (три круглых) и европейские C; возьмите универсальный адаптер. Отключения электричества часты, отели используют генераторы."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте только бутилированную, осторожнее со льдом и сырыми салатами.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь)",
+     "Гепатит A и брюшной тиф",
+     "Бешенство (сельские или долгие поездки)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "122"
+   },
+   "tipping": {
+    "custom": "Принято округлять.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "10 % или округление в ресторанах; водители и гиды ждут ежедневных чаевых."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (в Ираке нет НДС)",
+    "minSpend": "Не применяется",
+    "customsNote": "В Ираке нет возврата налогов туристам. Вывоз древностей — даже черепков, подобранных на раскопках, — запрещён и может закончиться тюрьмой."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Zain Iraq",
+     "Asiacell",
+     "Korek Telecom"
+    ],
+    "airportSimTrapWarning": "SIM Zain, Asiacell и Korek продают по паспорту в аэропортах Багдада и Эрбиля; в Регионе Курдистан лучше связь у Korek и Asiacell."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без счётчика",
+     "desc": "Уличные такси называют иностранцам очень высокие цены.",
+     "tip": "Пользуйтесь Careem/Baly или фиксируйте цену до посадки."
+    },
+    {
+     "title": "Уличные менялы",
+     "desc": "Завышают курс или недокладывают купюры в пачку.",
+     "tip": "Меняйте в официальном обменнике и пересчитывайте там же."
+    },
+    {
+     "title": "Неофициальные гиды",
+     "desc": "Люди на объектах вроде Вавилона требуют в конце большую плату.",
+     "tip": "Договаривайтесь с гидом заранее и с ценой в письменном виде."
+    }
+   ]
+  }
+ }
+}

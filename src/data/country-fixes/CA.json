@@ -1,0 +1,1917 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Kanada Doları (CAD)",
+   "plugType": "Tip A, B (120V, 60Hz)",
+   "bestMonths": "Haziran – Eylül (yaz, Rocky Dağları ve şehirler); Eylül sonu – Ekim ortası sonbahar renkleri; Aralık – Mart kayak",
+   "safety": {
+    "crimeRateSummary": "Şiddet suçu düşüktür ve turistik bölgeler genelde güvenlidir. Büyük şehirlerde araçtan eşya hırsızlığı ve bisiklet hırsızlığı yaygındır; Vancouver Downtown Eastside gibi bazı semtlerde açık uyuşturucu kullanımı görülür. Doğada ayı, kış koşulları ve yaz orman yangınları başlıca risklerdir.",
+    "commonScams": [
+     "Toronto Pearson ve Montréal havalimanlarında geliş salonunda müşteri arayan lisanssız şoförler",
+     "Benzin istasyonu pompalarında ve bağımsız ATM’lerde kart kopyalama",
+     "Niagara ve Banff gibi yerlerde otoparktaki araçlardan eşya çalınması"
+    ],
+    "safeTravelTips": [
+     "Rocky Dağları’nda yürürken ayı spreyi taşıyın, gürültü yapın ve yiyecekleri açıkta bırakmayın.",
+     "Temmuz – Ağustos’ta orman yangını ve duman uyarılarını (Parks Canada, DriveBC) takip edin.",
+     "Sağlık hizmetleri turistler için çok pahalıdır; kapsamlı seyahat sağlık sigortası yaptırın."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Nüfusun yaşadığı güney kuşakta %99 (LTE/5G); kuzeyde ve dağ otoyollarının bazı kesimlerinde sinyal yoktur",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Şehirlerde iyi (Toronto TTC, Montréal metrosu, Vancouver SkyTrain); şehirlerarası mesafeler çok büyük: Québec – Windsor koridorunda VIA Rail, diğer yerlerde iç hat uçuşu veya araç",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "2.30 - 3 $ (Toronto TTC / Montréal STM)",
+    "dailyPassUsd": "8 - 10 $ (TTC günlük / STM 24 saat)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft"
+    ],
+    "taxiAdvice": "Uber ve Lyft büyük şehirlerde yaygındır; havalimanlarında yalnızca resmî taksi/limuzin sırasını kullanın. Taksilere ve uygulama yolculuklarına %10-15 bahşiş verilir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $ (vergi ve bahşiş hariç)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "30 - 60 $",
+    "hotel3StarUsd": "120 - 200 $",
+    "flightCostIndex": "Orta-Yüksek (direkt ~10-11 sa)",
+    "flightTip": "Türk Hava Yolları İstanbul’dan Toronto, Montréal ve Vancouver’a direkt uçar; yaz ve Noel dönemi için biletleri birkaç ay önceden alın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kanadalılar çok naziktir: sıraya girmek, “sorry” ve “thank you” demek önemlidir.",
+     "Québec’te konuşmaya Fransızca “Bonjour” ile başlamak saygı göstergesidir.",
+     "Fiyatlara vergi (%5-15) dahil değildir; restoranlarda vergi öncesi tutar üzerinden %15-20 bahşiş beklenir.",
+     "Yerli halklara (First Nations, Inuit, Métis) ait kültürel alanlarda fotoğraf için izin isteyin."
+    ],
+    "festivals": [
+     "Kanada Günü (1 Temmuz)",
+     "Calgary Stampede (Temmuz, rodeo festivali)",
+     "Québec Kış Karnavalı (Şubat)"
+    ],
+    "lifestyle": "Çok kültürlü, doğayla iç içe ve sakin bir yaşam; buz hokeyi tutkusu, kamp ve göl evleri (cottage) hafta sonları ile Tim Hortons kahve molaları gündelik hayatın parçasıdır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Niagara Şelalesi",
+     "Banff, Lake Louise ve Moraine Gölü",
+     "Eski Québec (UNESCO)",
+     "Vancouver ve Stanley Park",
+     "Toronto ve CN Tower",
+     "Icefields Parkway ve Jasper"
+    ],
+    "bestSeasons": "Rocky Dağları ve göller için Haziran – Eylül; Ontario ve Québec’te sonbahar renkleri için Eylül sonu – Ekim; kayak için Aralık – Mart (Whistler, Banff, Mont-Tremblant).",
+    "travelStyleTip": "Mesafeler çok büyük olduğundan doğu ve batıyı tek seferde gezmeye çalışmayın. Doğuda VIA Rail treni, batıda iç hat uçuşu + kiralık araç idealdir; milli parklar için Parks Canada Discovery Pass alın."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan ~%53 (Katolik ~%30), dinsiz ~%35, Müslüman ~%5, Hindu ~%2, Sih ~%2 (2021 sayımı)",
+    "respectNorms": "Dinî yapılar ziyarete açıktır; ayin sırasında sessiz olun ve flaşlı fotoğraf çekmeyin. Yerli halkların tören alanlarına izinsiz girmeyin.",
+    "sacredSites": [
+     "Notre-Dame Bazilikası (Montréal)",
+     "Saint Joseph Oratoryosu (Montréal)",
+     "Sainte-Anne-de-Beaupré Bazilikası (Québec yakını)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İngilizce ve Fransızca (Québec’te ağırlıklı dil Fransızca)",
+    "englishProficiency": "Québec dışında ana dil; Montréal iki dillidir, Québec kırsalında Fransızca baskındır.",
+    "phrases": [
+     {
+      "phrase": "Bonjour-Hi",
+      "meaning": "Merhaba (Montréal’in iki dilli selamı)",
+      "translation": "Merhaba (Montréal’in iki dilli selamı)",
+      "pronunciation": "bon-ZHOOR hai"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "mehr-SEE boh-KOO"
+     },
+     {
+      "phrase": "Parlez-vous anglais ?",
+      "meaning": "İngilizce konuşuyor musunuz?",
+      "translation": "İngilizce konuşuyor musunuz?",
+      "pronunciation": "par-LAY voo ahn-GLAY"
+     },
+     {
+      "phrase": "L’addition, s’il vous plaît",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "lah-dee-SYON seel voo PLAY"
+     },
+     {
+      "phrase": "A double-double, please",
+      "meaning": "İki krema iki şekerli kahve lütfen (Tim Hortons klasiği)",
+      "translation": "İki krema iki şekerli kahve lütfen (Tim Hortons klasiği)",
+      "pronunciation": "uh DUB-ul DUB-ul pleez"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Binlerce yıldır yerli halkların yaşadığı topraklarda 1608’de Québec şehri kurularak Yeni Fransa doğdu; 1763’te bölge İngiliz yönetimine geçti. Kanada 1867 Konfederasyonu ile bir dominyon olarak kuruldu ve 1982 Anayasa Yasası ile tam anayasal bağımsızlığını tamamladı.",
+    "milestones": [
+     "1608: Samuel de Champlain Québec şehrini kurar",
+     "1763: Paris Antlaşması ile Yeni Fransa İngiltere’ye geçer",
+     "1867: Kanada Konfederasyonu kurulur",
+     "1982: Anayasa Yasası ve Haklar Şartı"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poutine (patates kızartması, peynir parçaları ve sos)",
+     "Montréal tütsülenmiş dana göğüs sandviçi (smoked meat)",
+     "Pasifik somonu (British Columbia)"
+    ],
+    "traditionalDrinks": [
+     "Tim Hortons kahvesi (double-double)",
+     "Buz şarabı – Icewine (alkollü)",
+     "Caesar kokteyli (alkollü)"
+    ],
+    "streetFoodAndDesserts": [
+     "BeaverTails (kızarmış hamur tatlısı)",
+     "Butter tart (tereyağlı tart)",
+     "Tire d’érable (karda akçaağaç şekerlemesi)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Frederick Banting (insülinin keşfi, Nobel)",
+     "Terry Fox (Umut Maratonu)",
+     "Wayne Gretzky (buz hokeyi efsanesi)"
+    ],
+    "strongSectors": [
+     "Enerji ve doğal kaynaklar (petrol, hidroelektrik, madencilik)",
+     "Teknoloji ve yapay zekâ (Toronto, Montréal)",
+     "Havacılık (Bombardier, CAE)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme (Visa, Mastercard, Interac) neredeyse her yerde geçer; etiket fiyatlarına kasada %5-15 satış vergisi eklenir.",
+    "tippingCulture": "Restoranlarda %15-20, barlarda içki başına 1-2 CAD, taksi ve kuaförde %10-15 bahşiş beklenir; kart makineleri bahşiş oranını sorar.",
+    "economicPillars": "Enerji, madencilik ve ormancılık, finans ve hizmetler, otomotiv imalatı, teknoloji ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Doğu Kanada Rotası: Niagara, Toronto, Montréal ve Québec",
+   "routeSummary": "Niagara Şelalesi’nden başlayıp Toronto’nun gökdelenlerine, ardından trenle Fransızca konuşulan Montréal’e ve surlarla çevrili Eski Québec’e uzanan 9 günlük rota.",
+   "totalDays": 9,
+   "idealDurationText": "9 Günlük Rota",
+   "bestSeason": "Haziran – Ekim",
+   "transportMode": "GO Transit tren/otobüs (Niagara – Toronto) + VIA Rail treni (Toronto – Montréal – Québec) + şehir içi metro",
+   "paceLevel": "Dengeli (Şehir ve Doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Niagara Şelalesi",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Horseshoe (At Nalı) Şelalesi",
+      "Niagara City Cruises tekne turu",
+      "Journey Behind the Falls tünelleri",
+      "Niagara-on-the-Lake kasabası"
+     ],
+     "activities": [
+      "Tekneyle şelalenin dibine kadar gidin (yağmurluk verilir).",
+      "Niagara Parkway boyunca yürüyün veya bisiklet sürün.",
+      "Niagara-on-the-Lake’de bağ ziyareti yapın."
+     ],
+     "foodAndDrinks": [
+      "Buz şarabı (alkollü)",
+      "BeaverTails"
+     ],
+     "criticalTips": [
+      "Yaz hafta sonlarında Toronto’dan GO treni doğrudan Niagara’ya gider; diğer günlerde GO otobüsü kullanın.",
+      "Clifton Hill çok turistik ve pahalıdır; manzara için Table Rock çevresi daha iyidir."
+     ],
+     "mapsQuery": "Niagara Falls, Ontario, Canada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Toronto",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "CN Tower",
+      "Distillery District",
+      "St. Lawrence Market",
+      "Royal Ontario Museum"
+     ],
+     "activities": [
+      "Feribotla Toronto Adaları’na geçip şehir silüetini izleyin.",
+      "Kensington Market ve Chinatown’da sokak yemeği deneyin.",
+      "CN Tower’ın cam zeminli seyir terasına çıkın."
+     ],
+     "foodAndDrinks": [
+      "Jamaika usulü dana etli börek (beef patty)",
+      "Butter tart"
+     ],
+     "criticalTips": [
+      "Pearson Havalimanı’ndan Union İstasyonu’na UP Express treni ~25 dakikadır.",
+      "TTC’de PRESTO kartı veya temassız banka kartıyla ödeyin."
+     ],
+     "mapsQuery": "Toronto, Ontario, Canada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Montréal",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Eski Montréal ve Notre-Dame Bazilikası",
+      "Mont Royal tepesi",
+      "Jean-Talon Pazarı",
+      "Plateau-Mont-Royal ve Mile End semtleri"
+     ],
+     "activities": [
+      "Notre-Dame Bazilikası’nda AURA ışık gösterisini izleyin.",
+      "Mont Royal’e yürüyüp Kondiaronk seyir terasından şehri izleyin.",
+      "Mile End’de odun fırınında pişen Montréal simidini (bagel) tadın."
+     ],
+     "foodAndDrinks": [
+      "Poutine",
+      "Smoked meat sandviçi",
+      "Montréal bagel’ı"
+     ],
+     "criticalTips": [
+      "Tabelalar Fransızcadır; “Bonjour” ile selamlaşmak iletişimi kolaylaştırır.",
+      "STM metrosu için OPUS kartı veya günlük bilet alın."
+     ],
+     "mapsQuery": "Montréal, Québec, Canada"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Québec Şehri (Eski Québec)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Château Frontenac ve Dufferin Terası",
+      "Petit-Champlain sokakları",
+      "Şehir surları (UNESCO)",
+      "Montmorency Şelalesi"
+     ],
+     "activities": [
+      "Surların üzerinde yürüyüp Funiculaire ile aşağı şehre inin.",
+      "Île d’Orléans’a günübirlik gidip çiftlik ürünlerini tadın.",
+      "Montmorency Şelalesi’nin asma köprüsünden geçin."
+     ],
+     "foodAndDrinks": [
+      "Akçaağaç şurubu ürünleri ve tire d’érable",
+      "Buz elma şarabı – cidre de glace (alkollü)"
+     ],
+     "criticalTips": [
+      "Arnavut kaldırımlı yokuşlar için rahat ayakkabı giyin.",
+      "Kışın sıcaklık -20 °C’ye düşebilir; Şubat karnavalı için termal giysi şarttır."
+     ],
+     "mapsQuery": "Québec City, Québec, Canada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poutine",
+     "Montréal smoked meat",
+     "Pasifik somonu"
+    ],
+    "drinks": [
+     "Tim Hortons kahvesi",
+     "Buz şarabı (alkollü)",
+     "Caesar (alkollü)"
+    ],
+    "streetFoods": [
+     "BeaverTails",
+     "Butter tart",
+     "Nanaimo bar"
+    ],
+    "diningAdvice": "Menü fiyatlarına vergi dahil değildir; bahşişi vergi öncesi tutar üzerinden %15-20 olarak hesaplayın. Kart makineleri bahşiş seçeneklerini otomatik gösterir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tip A/B priz adaptörü (cihazınızın 100-240V desteklediğini kontrol edin)",
+     "Kat kat giysi ve yağmurluk",
+     "Sivrisinek ve kara sinek kovucu (Haziran)",
+     "Kış için termal içlik, bere ve eldiven"
+    ],
+    "safetyAndEtiquette": [
+     "Milli parklarda vahşi hayvanlara yaklaşmayın ve onları beslemeyin.",
+     "Québec’te önce Fransızca selam verin; kısa bir “Merci” bile memnuniyetle karşılanır."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Kuzey Amerika tipi iki yassı uçlu (B tipinde ek yuvarlak topraklı) prizler. Türkiye fişleri için adaptör gerekir; telefon ve laptop şarj cihazları genelde 100-240V desteklediği için dönüştürücü gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu tüm şehirlerde güvenle içilebilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanos-difteri, KKK)",
+     "Özel bir aşı zorunluluğu yoktur"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Restoranlarda vergi öncesi tutarın %15-20’si bahşiş beklenir.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Kalabalık gruplarda (genelde 6+ kişi) servis ücreti faturaya eklenebilir; fişi kontrol edin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (GST/HST %5-15 turiste iade edilmez)",
+    "minSpend": "Geçerli değil",
+    "customsNote": "Kanada’da 2007’den beri genel bir turist vergi iadesi programı yoktur; vergisiz alışveriş için havalimanı ve sınır duty-free mağazalarını kullanın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "1.50 - 4 $",
+    "topCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "airportSimTrapWarning": "Kanada’da mobil veri pahalıdır ve havalimanı kioskları daha da pahalıdır; eSIM’i önceden kurun veya şehirde Fido, Koodo, Freedom Mobile gibi uygun markaların ön ödemeli paketlerine bakın."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanında lisanssız şoförler",
+     "desc": "Geliş salonunda yaklaşıp “taksi” teklif eden kişiler sabit tarifenin çok üzerinde ücret ister.",
+     "tip": "Yalnızca işaretli resmî taksi sırasını, UP Express’i veya uygulama araçlarını kullanın."
+    },
+    {
+     "title": "Benzin pompasında kart kopyalama",
+     "desc": "Pompalara veya bağımsız ATM’lere takılan cihazlarla kart bilgileri kopyalanır.",
+     "tip": "Temassız ödeyin veya içeride kasada ödeme yapın; bankaların kendi ATM’lerini tercih edin."
+    },
+    {
+     "title": "Park halindeki araçtan hırsızlık",
+     "desc": "Vancouver, Toronto ve milli park otoparklarında araç camı kırılıp eşya çalınır.",
+     "tip": "Araçta görünür hiçbir eşya bırakmayın, bagajı bile boş tutun."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Canadian Dollar (CAD)",
+   "plugType": "Type A, B (120V, 60Hz)",
+   "bestMonths": "June – September (summer, Rockies and cities); late September – mid October for autumn colours; December – March for skiing",
+   "safety": {
+    "crimeRateSummary": "Violent crime is low and tourist areas are generally safe. Car break-ins and bike theft are common in big cities, and some areas such as Vancouver’s Downtown Eastside have visible drug use. In nature, bears, winter conditions and summer wildfires are the main risks.",
+    "commonScams": [
+     "Unlicensed drivers soliciting passengers in the arrivals halls at Toronto Pearson and Montréal airports",
+     "Card skimming at gas-station pumps and standalone ATMs",
+     "Theft from parked cars at places like Niagara and Banff"
+    ],
+    "safeTravelTips": [
+     "In the Rockies carry bear spray, make noise on the trail and never leave food out.",
+     "In July – August check wildfire and smoke alerts (Parks Canada, DriveBC).",
+     "Healthcare is very expensive for visitors; get comprehensive travel medical insurance."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% across the populated southern belt (LTE/5G); no signal in the north and on stretches of mountain highways",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good in cities (Toronto TTC, Montréal métro, Vancouver SkyTrain); intercity distances are vast: VIA Rail in the Québec – Windsor corridor, otherwise domestic flights or a car",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "2.30 - 3 $ (Toronto TTC / Montréal STM)",
+    "dailyPassUsd": "8 - 10 $ (TTC day pass / STM 24-hour)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft"
+    ],
+    "taxiAdvice": "Uber and Lyft are common in big cities; at airports use only the official taxi/limo stand. Taxis and app rides are tipped 10-15%."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $ (before tax and tip)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "30 - 60 $",
+    "hotel3StarUsd": "120 - 200 $",
+    "flightCostIndex": "Medium-High (direct ~10-11 h)",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Toronto, Montréal and Vancouver; book a few months ahead for summer and Christmas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Canadians are very polite: queuing and saying “sorry” and “thank you” matter.",
+     "In Québec, opening with a French “Bonjour” is a sign of respect.",
+     "Prices exclude sales tax (5-15%); restaurants expect a 15-20% tip on the pre-tax amount.",
+     "Ask permission before photographing at Indigenous (First Nations, Inuit, Métis) cultural sites."
+    ],
+    "festivals": [
+     "Canada Day (1 July)",
+     "Calgary Stampede (July, rodeo festival)",
+     "Québec Winter Carnival (February)"
+    ],
+    "lifestyle": "Multicultural, outdoorsy and easy-going: a passion for ice hockey, camping and cottage weekends, and Tim Hortons coffee runs are part of daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Niagara Falls",
+     "Banff, Lake Louise and Moraine Lake",
+     "Old Québec (UNESCO)",
+     "Vancouver and Stanley Park",
+     "Toronto and the CN Tower",
+     "Icefields Parkway and Jasper"
+    ],
+    "bestSeasons": "June – September for the Rockies and lakes; late September – October for autumn colours in Ontario and Québec; December – March for skiing (Whistler, Banff, Mont-Tremblant).",
+    "travelStyleTip": "Distances are huge, so don’t try to cover east and west in one trip. Use VIA Rail in the east and a domestic flight plus rental car in the west; buy a Parks Canada Discovery Pass for national parks."
+   },
+   "religion": {
+    "primaryReligions": "Christian ~53% (Catholic ~30%), no religion ~35%, Muslim ~5%, Hindu ~2%, Sikh ~2% (2021 census)",
+    "respectNorms": "Religious buildings welcome visitors; keep quiet during services and avoid flash photography. Do not enter Indigenous ceremonial grounds without permission.",
+    "sacredSites": [
+     "Notre-Dame Basilica (Montréal)",
+     "Saint Joseph’s Oratory (Montréal)",
+     "Basilica of Sainte-Anne-de-Beaupré (near Québec City)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English and French (French is the main language in Québec)",
+    "englishProficiency": "Native outside Québec; Montréal is bilingual, rural Québec is mostly French-speaking.",
+    "phrases": [
+     {
+      "phrase": "Bonjour-Hi",
+      "meaning": "Hello (Montréal’s bilingual greeting)",
+      "translation": "Hello (Montréal’s bilingual greeting)",
+      "pronunciation": "bon-ZHOOR hai"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "mehr-SEE boh-KOO"
+     },
+     {
+      "phrase": "Parlez-vous anglais ?",
+      "meaning": "Do you speak English?",
+      "translation": "Do you speak English?",
+      "pronunciation": "par-LAY voo ahn-GLAY"
+     },
+     {
+      "phrase": "L’addition, s’il vous plaît",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "lah-dee-SYON seel voo PLAY"
+     },
+     {
+      "phrase": "A double-double, please",
+      "meaning": "Coffee with two creams and two sugars, please (Tim Hortons classic)",
+      "translation": "Coffee with two creams and two sugars, please (Tim Hortons classic)",
+      "pronunciation": "uh DUB-ul DUB-ul pleez"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "On lands inhabited by Indigenous peoples for millennia, New France began with the founding of Québec City in 1608; the territory passed to Britain in 1763. Canada was created as a dominion by Confederation in 1867 and completed full constitutional independence with the Constitution Act of 1982.",
+    "milestones": [
+     "1608: Samuel de Champlain founds Québec City",
+     "1763: Treaty of Paris transfers New France to Britain",
+     "1867: Canadian Confederation",
+     "1982: Constitution Act and Charter of Rights"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poutine (fries with cheese curds and gravy)",
+     "Montréal smoked meat sandwich (beef brisket)",
+     "Pacific salmon (British Columbia)"
+    ],
+    "traditionalDrinks": [
+     "Tim Hortons coffee (double-double)",
+     "Icewine (alcoholic)",
+     "Caesar cocktail (alcoholic)"
+    ],
+    "streetFoodAndDesserts": [
+     "BeaverTails (fried pastry)",
+     "Butter tarts",
+     "Tire d’érable (maple taffy on snow)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Frederick Banting (co-discoverer of insulin, Nobel)",
+     "Terry Fox (Marathon of Hope)",
+     "Wayne Gretzky (ice hockey legend)"
+    ],
+    "strongSectors": [
+     "Energy and natural resources (oil, hydropower, mining)",
+     "Technology and AI (Toronto, Montréal)",
+     "Aerospace (Bombardier, CAE)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless (Visa, Mastercard, Interac) work almost everywhere; 5-15% sales tax is added to shelf prices at checkout.",
+    "tippingCulture": "Expect to tip 15-20% in restaurants, CAD 1-2 per drink in bars and 10-15% for taxis and hairdressers; card terminals prompt for the tip.",
+    "economicPillars": "Energy, mining and forestry, finance and services, automotive manufacturing, technology and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Eastern Canada Route: Niagara, Toronto, Montréal & Québec City",
+   "routeSummary": "A 9-day route from Niagara Falls to Toronto’s skyline, then by train to French-speaking Montréal and the walled city of Old Québec.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Itinerary",
+   "bestSeason": "June – October",
+   "transportMode": "GO Transit train/bus (Niagara – Toronto) + VIA Rail (Toronto – Montréal – Québec) + city metro",
+   "paceLevel": "Balanced (City & Nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Niagara Falls",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Horseshoe Falls",
+      "Niagara City Cruises boat tour",
+      "Journey Behind the Falls tunnels",
+      "Niagara-on-the-Lake town"
+     ],
+     "activities": [
+      "Ride the boat to the foot of the falls (ponchos provided).",
+      "Walk or cycle along the Niagara Parkway.",
+      "Visit a winery in Niagara-on-the-Lake."
+     ],
+     "foodAndDrinks": [
+      "Icewine (alcoholic)",
+      "BeaverTails"
+     ],
+     "criticalTips": [
+      "On summer weekends GO trains run straight from Toronto to Niagara; otherwise take the GO bus.",
+      "Clifton Hill is touristy and pricey; the area around Table Rock has the best views."
+     ],
+     "mapsQuery": "Niagara Falls, Ontario, Canada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Toronto",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "CN Tower",
+      "Distillery District",
+      "St. Lawrence Market",
+      "Royal Ontario Museum"
+     ],
+     "activities": [
+      "Take the ferry to the Toronto Islands for skyline views.",
+      "Try street food in Kensington Market and Chinatown.",
+      "Go up to the CN Tower’s glass-floor observation deck."
+     ],
+     "foodAndDrinks": [
+      "Jamaican beef patty",
+      "Butter tart"
+     ],
+     "criticalTips": [
+      "The UP Express train links Pearson Airport to Union Station in ~25 minutes.",
+      "Pay on the TTC with a PRESTO card or contactless bank card."
+     ],
+     "mapsQuery": "Toronto, Ontario, Canada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Montréal",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Old Montréal and Notre-Dame Basilica",
+      "Mount Royal",
+      "Jean-Talon Market",
+      "Plateau-Mont-Royal and Mile End"
+     ],
+     "activities": [
+      "Watch the AURA light show in Notre-Dame Basilica.",
+      "Walk up Mount Royal to the Kondiaronk lookout.",
+      "Taste wood-fired Montréal bagels in Mile End."
+     ],
+     "foodAndDrinks": [
+      "Poutine",
+      "Smoked meat sandwich",
+      "Montréal bagel"
+     ],
+     "criticalTips": [
+      "Signs are in French; greeting with “Bonjour” makes things easier.",
+      "Get an OPUS card or a day ticket for the STM métro."
+     ],
+     "mapsQuery": "Montréal, Québec, Canada"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Québec City (Old Québec)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Château Frontenac and Dufferin Terrace",
+      "Petit-Champlain quarter",
+      "City fortifications (UNESCO)",
+      "Montmorency Falls"
+     ],
+     "activities": [
+      "Walk the ramparts and ride the Funiculaire down to the lower town.",
+      "Take a day trip to Île d’Orléans for farm produce.",
+      "Cross the suspension bridge over Montmorency Falls."
+     ],
+     "foodAndDrinks": [
+      "Maple products and tire d’érable",
+      "Ice cider – cidre de glace (alcoholic)"
+     ],
+     "criticalTips": [
+      "Wear comfortable shoes for the steep cobbled streets.",
+      "In winter temperatures can drop to -20 °C; thermal gear is essential for the February carnival."
+     ],
+     "mapsQuery": "Québec City, Québec, Canada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poutine",
+     "Montréal smoked meat",
+     "Pacific salmon"
+    ],
+    "drinks": [
+     "Tim Hortons coffee",
+     "Icewine (alcoholic)",
+     "Caesar (alcoholic)"
+    ],
+    "streetFoods": [
+     "BeaverTails",
+     "Butter tart",
+     "Nanaimo bar"
+    ],
+    "diningAdvice": "Menu prices exclude tax; tip 15-20% on the pre-tax amount. Card terminals show tip options automatically."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type A/B plug adapter (check your device supports 100-240V)",
+     "Layers and a rain jacket",
+     "Mosquito and black-fly repellent (June)",
+     "Thermal base layers, hat and gloves for winter"
+    ],
+    "safetyAndEtiquette": [
+     "Never approach or feed wildlife in national parks.",
+     "In Québec greet in French first; even a short “Merci” is appreciated."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "North American sockets with two flat pins (Type B adds a round earth pin). Turkish plugs need an adapter; phone and laptop chargers are usually 100-240V so no converter is needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is safe to drink in all cities.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, MMR)",
+     "No special vaccinations required"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "A 15-20% tip on the pre-tax amount is expected in restaurants.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Large groups (usually 6+) may have a service charge added; check the bill."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (5-15% GST/HST is not refunded to visitors)",
+    "minSpend": "Not applicable",
+    "customsNote": "Canada has had no general visitor tax refund programme since 2007; use airport and land-border duty-free shops for tax-free purchases."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "1.50 - 4 $",
+    "topCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "airportSimTrapWarning": "Mobile data is expensive in Canada and airport kiosks cost even more; set up an eSIM beforehand or look for prepaid plans from cheaper brands such as Fido, Koodo or Freedom Mobile in the city."
+   },
+   "touristScams": [
+    {
+     "title": "Unlicensed airport drivers",
+     "desc": "People approaching you in arrivals offering a “taxi” charge far above the official flat rates.",
+     "tip": "Use only the marked official taxi stand, the UP Express or ride-hailing apps."
+    },
+    {
+     "title": "Gas-pump card skimming",
+     "desc": "Devices fitted to pumps or standalone ATMs copy card details.",
+     "tip": "Pay contactless or inside at the counter, and prefer bank-branch ATMs."
+    },
+    {
+     "title": "Theft from parked cars",
+     "desc": "Car windows are smashed for valuables in Vancouver, Toronto and national-park car parks.",
+     "tip": "Leave nothing visible in the car, and ideally keep the trunk empty too."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Kanadischer Dollar (CAD)",
+   "plugType": "Typ A, B (120V, 60Hz)",
+   "bestMonths": "Juni – September (Sommer, Rocky Mountains und Städte); Ende September – Mitte Oktober Indian Summer; Dezember – März Skifahren",
+   "safety": {
+    "crimeRateSummary": "Gewaltkriminalität ist gering, Touristengebiete gelten als sicher. In Großstädten sind Autoaufbrüche und Fahrraddiebstahl verbreitet; in Vierteln wie Vancouvers Downtown Eastside ist offener Drogenkonsum sichtbar. In der Natur sind Bären, Winterbedingungen und sommerliche Waldbrände die Hauptrisiken.",
+    "commonScams": [
+     "Nicht lizenzierte Fahrer, die in den Ankunftshallen von Toronto Pearson und Montréal Fahrgäste anwerben",
+     "Kartenskimming an Zapfsäulen und freistehenden Geldautomaten",
+     "Diebstahl aus geparkten Autos etwa an den Niagarafällen und in Banff"
+    ],
+    "safeTravelTips": [
+     "In den Rockies Bärenspray mitführen, auf dem Weg Geräusche machen und kein Essen offen liegen lassen.",
+     "Im Juli – August Waldbrand- und Rauchwarnungen (Parks Canada, DriveBC) beachten.",
+     "Medizinische Versorgung ist für Besucher sehr teuer; eine umfassende Reisekrankenversicherung abschließen."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % im besiedelten Süden (LTE/5G); im Norden und auf Abschnitten der Bergstraßen kein Netz",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "In Städten gut (TTC Toronto, Métro Montréal, SkyTrain Vancouver); riesige Entfernungen: VIA Rail im Korridor Québec – Windsor, sonst Inlandsflüge oder Auto",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "2.30 - 3 $ (Toronto TTC / Montréal STM)",
+    "dailyPassUsd": "8 - 10 $ (TTC-Tageskarte / STM 24 Std.)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft"
+    ],
+    "taxiAdvice": "Uber und Lyft sind in Großstädten verbreitet; an Flughäfen nur den offiziellen Taxi-/Limousinenstand nutzen. Bei Taxis und App-Fahrten 10-15 % Trinkgeld."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $ (ohne Steuer und Trinkgeld)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "30 - 60 $",
+    "hotel3StarUsd": "120 - 200 $",
+    "flightCostIndex": "Mittel bis hoch (direkt ~10-11 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Toronto, Montréal und Vancouver; für Sommer und Weihnachten einige Monate vorher buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kanadier sind sehr höflich: Anstehen sowie „sorry“ und „thank you“ sind wichtig.",
+     "In Québec ist ein französisches „Bonjour“ zur Begrüßung ein Zeichen von Respekt.",
+     "Preise verstehen sich ohne Umsatzsteuer (5-15 %); im Restaurant erwartet man 15-20 % Trinkgeld auf den Nettobetrag.",
+     "An Kulturstätten indigener Völker (First Nations, Inuit, Métis) vor dem Fotografieren um Erlaubnis fragen."
+    ],
+    "festivals": [
+     "Canada Day (1. Juli)",
+     "Calgary Stampede (Juli, Rodeofestival)",
+     "Winterkarneval von Québec (Februar)"
+    ],
+    "lifestyle": "Multikulturell, naturverbunden und gelassen: Eishockey-Leidenschaft, Camping, Wochenenden im Cottage und Kaffee bei Tim Hortons gehören zum Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Niagarafälle",
+     "Banff, Lake Louise und Moraine Lake",
+     "Altstadt von Québec (UNESCO)",
+     "Vancouver und Stanley Park",
+     "Toronto und CN Tower",
+     "Icefields Parkway und Jasper"
+    ],
+    "bestSeasons": "Juni – September für Rockies und Seen; Ende September – Oktober für Herbstfarben in Ontario und Québec; Dezember – März zum Skifahren (Whistler, Banff, Mont-Tremblant).",
+    "travelStyleTip": "Die Entfernungen sind riesig – Ost und West nicht in einer Reise kombinieren. Im Osten VIA Rail, im Westen Inlandsflug plus Mietwagen; für Nationalparks den Parks Canada Discovery Pass kaufen."
+   },
+   "religion": {
+    "primaryReligions": "Christen ~53 % (Katholiken ~30 %), konfessionslos ~35 %, Muslime ~5 %, Hindus ~2 %, Sikhs ~2 % (Zensus 2021)",
+    "respectNorms": "Gotteshäuser sind offen für Besucher; während Gottesdiensten ruhig sein und nicht mit Blitz fotografieren. Zeremonialstätten der Indigenen nicht ohne Erlaubnis betreten.",
+    "sacredSites": [
+     "Basilika Notre-Dame (Montréal)",
+     "Oratorium Saint-Joseph (Montréal)",
+     "Basilika Sainte-Anne-de-Beaupré (bei Québec)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Englisch und Französisch (in Québec überwiegend Französisch)",
+    "englishProficiency": "Außerhalb Québecs Muttersprache; Montréal ist zweisprachig, das ländliche Québec überwiegend frankophon.",
+    "phrases": [
+     {
+      "phrase": "Bonjour-Hi",
+      "meaning": "Hallo (zweisprachiger Gruß in Montréal)",
+      "translation": "Hallo (zweisprachiger Gruß in Montréal)",
+      "pronunciation": "bon-ZHOOR hai"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "mehr-SEE boh-KOO"
+     },
+     {
+      "phrase": "Parlez-vous anglais ?",
+      "meaning": "Sprechen Sie Englisch?",
+      "translation": "Sprechen Sie Englisch?",
+      "pronunciation": "par-LAY voo ahn-GLAY"
+     },
+     {
+      "phrase": "L’addition, s’il vous plaît",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "lah-dee-SYON seel voo PLAY"
+     },
+     {
+      "phrase": "A double-double, please",
+      "meaning": "Kaffee mit zwei Sahne und zwei Zucker, bitte (Tim-Hortons-Klassiker)",
+      "translation": "Kaffee mit zwei Sahne und zwei Zucker, bitte (Tim-Hortons-Klassiker)",
+      "pronunciation": "uh DUB-ul DUB-ul pleez"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Auf seit Jahrtausenden von Indigenen bewohntem Land begann Neufrankreich 1608 mit der Gründung von Québec; 1763 fiel das Gebiet an Großbritannien. Kanada entstand 1867 durch die Konföderation als Dominion und erlangte mit dem Verfassungsgesetz von 1982 die volle verfassungsrechtliche Unabhängigkeit.",
+    "milestones": [
+     "1608: Samuel de Champlain gründet Québec",
+     "1763: Pariser Frieden – Neufrankreich geht an Großbritannien",
+     "1867: Kanadische Konföderation",
+     "1982: Verfassungsgesetz und Grundrechtecharta"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poutine (Pommes mit Käsebruch und Bratensoße)",
+     "Montréal Smoked Meat (geräuchertes Rinderbrust-Sandwich)",
+     "Pazifiklachs (British Columbia)"
+    ],
+    "traditionalDrinks": [
+     "Tim-Hortons-Kaffee (Double-Double)",
+     "Eiswein (alkoholisch)",
+     "Caesar-Cocktail (alkoholisch)"
+    ],
+    "streetFoodAndDesserts": [
+     "BeaverTails (frittiertes Gebäck)",
+     "Butter Tarts",
+     "Tire d’érable (Ahornsirup-Toffee auf Schnee)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Frederick Banting (Mitentdecker des Insulins, Nobelpreis)",
+     "Terry Fox (Marathon of Hope)",
+     "Wayne Gretzky (Eishockeylegende)"
+    ],
+    "strongSectors": [
+     "Energie und Rohstoffe (Öl, Wasserkraft, Bergbau)",
+     "Technologie und KI (Toronto, Montréal)",
+     "Luft- und Raumfahrt (Bombardier, CAE)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und kontaktlos (Visa, Mastercard, Interac) funktionieren fast überall; an der Kasse kommen 5-15 % Umsatzsteuer auf den Preis.",
+    "tippingCulture": "Erwartet werden 15-20 % im Restaurant, 1-2 CAD pro Getränk in Bars und 10-15 % bei Taxi und Friseur; Kartenterminals fragen nach dem Trinkgeld.",
+    "economicPillars": "Energie, Bergbau und Forstwirtschaft, Finanzen und Dienstleistungen, Autoindustrie, Technologie und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Ostkanada-Route: Niagara, Toronto, Montréal & Québec",
+   "routeSummary": "Eine 9-tägige Route von den Niagarafällen zur Skyline Torontos und dann mit dem Zug ins französischsprachige Montréal und in die ummauerte Altstadt von Québec.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Route",
+   "bestSeason": "Juni – Oktober",
+   "transportMode": "GO-Transit-Zug/Bus (Niagara – Toronto) + VIA Rail (Toronto – Montréal – Québec) + Metro in den Städten",
+   "paceLevel": "Ausgewogen (Stadt & Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Niagarafälle",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Horseshoe Falls",
+      "Bootstour mit Niagara City Cruises",
+      "Tunnel „Journey Behind the Falls“",
+      "Städtchen Niagara-on-the-Lake"
+     ],
+     "activities": [
+      "Mit dem Boot bis an den Fuß der Fälle fahren (Regenponchos inklusive).",
+      "Am Niagara Parkway spazieren oder Rad fahren.",
+      "Ein Weingut in Niagara-on-the-Lake besuchen."
+     ],
+     "foodAndDrinks": [
+      "Eiswein (alkoholisch)",
+      "BeaverTails"
+     ],
+     "criticalTips": [
+      "An Sommerwochenenden fahren GO-Züge direkt von Toronto nach Niagara, sonst GO-Busse.",
+      "Clifton Hill ist touristisch und teuer; die beste Aussicht hat man bei Table Rock."
+     ],
+     "mapsQuery": "Niagara Falls, Ontario, Canada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Toronto",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "CN Tower",
+      "Distillery District",
+      "St. Lawrence Market",
+      "Royal Ontario Museum"
+     ],
+     "activities": [
+      "Mit der Fähre zu den Toronto Islands und die Skyline bewundern.",
+      "Streetfood in Kensington Market und Chinatown probieren.",
+      "Auf die Aussichtsplattform mit Glasboden des CN Tower fahren."
+     ],
+     "foodAndDrinks": [
+      "Jamaikanische Beef Patty",
+      "Butter Tart"
+     ],
+     "criticalTips": [
+      "Der UP Express verbindet den Flughafen Pearson in ~25 Minuten mit der Union Station.",
+      "Im TTC mit PRESTO-Karte oder kontaktloser Bankkarte zahlen."
+     ],
+     "mapsQuery": "Toronto, Ontario, Canada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Montréal",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Altstadt und Basilika Notre-Dame",
+      "Mont Royal",
+      "Marché Jean-Talon",
+      "Plateau-Mont-Royal und Mile End"
+     ],
+     "activities": [
+      "Die Lichtshow AURA in der Basilika Notre-Dame erleben.",
+      "Auf den Mont Royal zum Aussichtspunkt Kondiaronk wandern.",
+      "Im Mile End holzofengebackene Montréal-Bagels probieren."
+     ],
+     "foodAndDrinks": [
+      "Poutine",
+      "Smoked-Meat-Sandwich",
+      "Montréal-Bagel"
+     ],
+     "criticalTips": [
+      "Schilder sind auf Französisch; ein „Bonjour“ öffnet Türen.",
+      "Für die STM-Métro eine OPUS-Karte oder Tageskarte kaufen."
+     ],
+     "mapsQuery": "Montréal, Québec, Canada"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Québec (Altstadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Château Frontenac und Terrasse Dufferin",
+      "Viertel Petit-Champlain",
+      "Stadtbefestigung (UNESCO)",
+      "Montmorency-Fälle"
+     ],
+     "activities": [
+      "Auf den Stadtmauern spazieren und mit der Funiculaire in die Unterstadt fahren.",
+      "Tagesausflug auf die Île d’Orléans zu Hofläden.",
+      "Über die Hängebrücke an den Montmorency-Fällen gehen."
+     ],
+     "foodAndDrinks": [
+      "Ahornprodukte und Tire d’érable",
+      "Eiscidre – Cidre de glace (alkoholisch)"
+     ],
+     "criticalTips": [
+      "Bequeme Schuhe für die steilen Kopfsteinpflastergassen tragen.",
+      "Im Winter bis -20 °C; für den Karneval im Februar ist Thermokleidung Pflicht."
+     ],
+     "mapsQuery": "Québec City, Québec, Canada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poutine",
+     "Montréal Smoked Meat",
+     "Pazifiklachs"
+    ],
+    "drinks": [
+     "Tim-Hortons-Kaffee",
+     "Eiswein (alkoholisch)",
+     "Caesar (alkoholisch)"
+    ],
+    "streetFoods": [
+     "BeaverTails",
+     "Butter Tart",
+     "Nanaimo Bar"
+    ],
+    "diningAdvice": "Menüpreise sind ohne Steuer; Trinkgeld 15-20 % auf den Nettobetrag. Kartenterminals zeigen Trinkgeldoptionen automatisch an."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reisestecker Typ A/B (prüfen, ob das Gerät 100-240 V unterstützt)",
+     "Kleidung im Zwiebelprinzip und Regenjacke",
+     "Mücken- und Kriebelmückenschutz (Juni)",
+     "Thermounterwäsche, Mütze und Handschuhe für den Winter"
+    ],
+    "safetyAndEtiquette": [
+     "Wildtieren in Nationalparks nie nähern und sie nicht füttern.",
+     "In Québec zuerst auf Französisch grüßen; schon ein kurzes „Merci“ kommt gut an."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Nordamerikanische Steckdosen mit zwei Flachstiften (Typ B zusätzlich mit rundem Erdungsstift). Türkische Stecker brauchen einen Adapter; Handy- und Laptop-Netzteile sind meist 100-240 V, ein Spannungswandler ist nicht nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist in allen Städten trinkbar.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Keine besonderen Impfungen vorgeschrieben"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Im Restaurant werden 15-20 % Trinkgeld auf den Nettobetrag erwartet.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Bei größeren Gruppen (meist ab 6) kann eine Servicepauschale berechnet werden; Rechnung prüfen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (5-15 % GST/HST werden nicht erstattet)",
+    "minSpend": "Entfällt",
+    "customsNote": "Kanada hat seit 2007 kein allgemeines Steuererstattungsprogramm für Besucher; steuerfrei kauft man in Duty-free-Shops an Flughäfen und Grenzen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "1.50 - 4 $",
+    "topCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "airportSimTrapWarning": "Mobile Daten sind in Kanada teuer, Flughafenkioske noch teurer; vorab eine eSIM einrichten oder in der Stadt Prepaid-Tarife günstigerer Marken wie Fido, Koodo oder Freedom Mobile nutzen."
+   },
+   "touristScams": [
+    {
+     "title": "Nicht lizenzierte Fahrer am Flughafen",
+     "desc": "Personen, die in der Ankunftshalle ein „Taxi“ anbieten, verlangen weit mehr als die offiziellen Tarife.",
+     "tip": "Nur den offiziellen Taxistand, den UP Express oder Fahrdienst-Apps nutzen."
+    },
+    {
+     "title": "Kartenskimming an der Zapfsäule",
+     "desc": "An Zapfsäulen oder freistehenden Automaten angebrachte Geräte kopieren Kartendaten.",
+     "tip": "Kontaktlos oder drinnen an der Kasse zahlen und Bankautomaten in Filialen bevorzugen."
+    },
+    {
+     "title": "Diebstahl aus geparkten Autos",
+     "desc": "In Vancouver, Toronto und auf Nationalpark-Parkplätzen werden Autoscheiben für Wertsachen eingeschlagen.",
+     "tip": "Nichts sichtbar im Auto lassen, möglichst auch den Kofferraum leer halten."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar canadiense (CAD)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Junio – septiembre (verano, Rocosas y ciudades); finales de septiembre – mediados de octubre para los colores de otoño; diciembre – marzo para esquiar",
+   "safety": {
+    "crimeRateSummary": "La delincuencia violenta es baja y las zonas turísticas son en general seguras. En las grandes ciudades son frecuentes los robos en coches y de bicicletas, y en zonas como el Downtown Eastside de Vancouver hay consumo de drogas visible. En la naturaleza, los osos, el invierno y los incendios forestales de verano son los riesgos principales.",
+    "commonScams": [
+     "Conductores sin licencia que captan pasajeros en las llegadas de los aeropuertos de Toronto Pearson y Montreal",
+     "Clonado de tarjetas en surtidores de gasolina y cajeros independientes",
+     "Robos en coches aparcados en lugares como Niagara y Banff"
+    ],
+    "safeTravelTips": [
+     "En las Rocosas lleve espray antiosos, haga ruido en el sendero y no deje comida a la vista.",
+     "En julio – agosto consulte las alertas de incendios y humo (Parks Canada, DriveBC).",
+     "La atención médica es muy cara para visitantes; contrate un seguro médico de viaje completo."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % en la franja sur poblada (LTE/5G); sin señal en el norte y en tramos de carreteras de montaña",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno en las ciudades (TTC de Toronto, metro de Montreal, SkyTrain de Vancouver); distancias enormes: VIA Rail en el corredor Quebec – Windsor y, fuera de él, vuelos nacionales o coche",
+    "costLevel": "Caro",
+    "singleTicketUsd": "2.30 - 3 $ (TTC de Toronto / STM de Montreal)",
+    "dailyPassUsd": "8 - 10 $ (pase diario TTC / STM 24 h)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft"
+    ],
+    "taxiAdvice": "Uber y Lyft son habituales en las grandes ciudades; en los aeropuertos use solo la parada oficial de taxis/limusinas. Se deja un 10-15 % de propina en taxis y viajes por app."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $ (sin impuestos ni propina)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "30 - 60 $",
+    "hotel3StarUsd": "120 - 200 $",
+    "flightCostIndex": "Medio-alto (directo ~10-11 h)",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Toronto, Montreal y Vancouver; para verano y Navidad reserve con varios meses de antelación."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los canadienses son muy educados: hacer cola y decir “sorry” y “thank you” es importante.",
+     "En Quebec, empezar con un “Bonjour” en francés es una muestra de respeto.",
+     "Los precios no incluyen impuestos (5-15 %); en restaurantes se espera un 15-20 % de propina sobre el importe sin impuestos.",
+     "Pida permiso antes de fotografiar en lugares culturales indígenas (Primeras Naciones, inuit, métis)."
+    ],
+    "festivals": [
+     "Día de Canadá (1 de julio)",
+     "Calgary Stampede (julio, festival de rodeo)",
+     "Carnaval de Invierno de Quebec (febrero)"
+    ],
+    "lifestyle": "Multicultural, al aire libre y tranquilo: la pasión por el hockey sobre hielo, la acampada, los fines de semana en la cabaña y el café de Tim Hortons forman parte de la vida diaria."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cataratas del Niágara",
+     "Banff, Lake Louise y el lago Moraine",
+     "Viejo Quebec (UNESCO)",
+     "Vancouver y Stanley Park",
+     "Toronto y la CN Tower",
+     "Icefields Parkway y Jasper"
+    ],
+    "bestSeasons": "Junio – septiembre para las Rocosas y los lagos; finales de septiembre – octubre para el otoño en Ontario y Quebec; diciembre – marzo para esquiar (Whistler, Banff, Mont-Tremblant).",
+    "travelStyleTip": "Las distancias son enormes: no intente ver el este y el oeste en un solo viaje. En el este use VIA Rail y en el oeste vuelo nacional más coche de alquiler; compre el Parks Canada Discovery Pass para los parques nacionales."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ~53 % (católicos ~30 %), sin religión ~35 %, musulmanes ~5 %, hindúes ~2 %, sijes ~2 % (censo 2021)",
+    "respectNorms": "Los templos admiten visitas; guarde silencio durante los oficios y no use flash. No entre sin permiso en lugares ceremoniales indígenas.",
+    "sacredSites": [
+     "Basílica de Notre-Dame (Montreal)",
+     "Oratorio de San José (Montreal)",
+     "Basílica de Sainte-Anne-de-Beaupré (cerca de Quebec)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglés y francés (en Quebec predomina el francés)",
+    "englishProficiency": "Nativo fuera de Quebec; Montreal es bilingüe y el Quebec rural es mayoritariamente francófono.",
+    "phrases": [
+     {
+      "phrase": "Bonjour-Hi",
+      "meaning": "Hola (saludo bilingüe de Montreal)",
+      "translation": "Hola (saludo bilingüe de Montreal)",
+      "pronunciation": "bon-ZHOOR hai"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "mehr-SEE boh-KOO"
+     },
+     {
+      "phrase": "Parlez-vous anglais ?",
+      "meaning": "¿Habla usted inglés?",
+      "translation": "¿Habla usted inglés?",
+      "pronunciation": "par-LAY voo ahn-GLAY"
+     },
+     {
+      "phrase": "L’addition, s’il vous plaît",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "lah-dee-SYON seel voo PLAY"
+     },
+     {
+      "phrase": "A double-double, please",
+      "meaning": "Un café con dos de crema y dos de azúcar, por favor (clásico de Tim Hortons)",
+      "translation": "Un café con dos de crema y dos de azúcar, por favor (clásico de Tim Hortons)",
+      "pronunciation": "uh DUB-ul DUB-ul pleez"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "En tierras habitadas por pueblos indígenas desde hace milenios, la Nueva Francia nació con la fundación de Quebec en 1608; el territorio pasó a Gran Bretaña en 1763. Canadá se creó como dominio con la Confederación de 1867 y completó su plena independencia constitucional con la Ley Constitucional de 1982.",
+    "milestones": [
+     "1608: Samuel de Champlain funda Quebec",
+     "1763: el Tratado de París cede Nueva Francia a Gran Bretaña",
+     "1867: Confederación canadiense",
+     "1982: Ley Constitucional y Carta de Derechos"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poutine (patatas fritas con queso en grano y salsa)",
+     "Sándwich de smoked meat de Montreal (pecho de res)",
+     "Salmón del Pacífico (Columbia Británica)"
+    ],
+    "traditionalDrinks": [
+     "Café de Tim Hortons (double-double)",
+     "Vino de hielo (con alcohol)",
+     "Cóctel Caesar (con alcohol)"
+    ],
+    "streetFoodAndDesserts": [
+     "BeaverTails (masa frita dulce)",
+     "Butter tarts (tartaletas de mantequilla)",
+     "Tire d’érable (caramelo de arce sobre nieve)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Frederick Banting (codescubridor de la insulina, Nobel)",
+     "Terry Fox (Maratón de la Esperanza)",
+     "Wayne Gretzky (leyenda del hockey)"
+    ],
+    "strongSectors": [
+     "Energía y recursos naturales (petróleo, hidroelectricidad, minería)",
+     "Tecnología e IA (Toronto, Montreal)",
+     "Aeroespacial (Bombardier, CAE)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas y el pago sin contacto (Visa, Mastercard, Interac) se aceptan casi en todas partes; en caja se añade un 5-15 % de impuesto al precio marcado.",
+    "tippingCulture": "Se espera un 15-20 % en restaurantes, 1-2 CAD por bebida en bares y 10-15 % en taxis y peluquerías; los datáfonos piden la propina.",
+    "economicPillars": "Energía, minería y silvicultura, finanzas y servicios, industria automotriz, tecnología y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta por el este de Canadá: Niágara, Toronto, Montreal y Quebec",
+   "routeSummary": "Una ruta de 9 días desde las cataratas del Niágara hasta el skyline de Toronto y luego en tren a la francófona Montreal y al amurallado Viejo Quebec.",
+   "totalDays": 9,
+   "idealDurationText": "Ruta de 9 días",
+   "bestSeason": "Junio – octubre",
+   "transportMode": "Tren/autobús GO Transit (Niágara – Toronto) + VIA Rail (Toronto – Montreal – Quebec) + metro urbano",
+   "paceLevel": "Equilibrado (ciudad y naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Cataratas del Niágara",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Cataratas Horseshoe",
+      "Paseo en barco Niagara City Cruises",
+      "Túneles Journey Behind the Falls",
+      "Pueblo de Niagara-on-the-Lake"
+     ],
+     "activities": [
+      "Navegue hasta el pie de las cataratas (se entregan ponchos).",
+      "Pasee o vaya en bici por el Niagara Parkway.",
+      "Visite una bodega en Niagara-on-the-Lake."
+     ],
+     "foodAndDrinks": [
+      "Vino de hielo (con alcohol)",
+      "BeaverTails"
+     ],
+     "criticalTips": [
+      "Los fines de semana de verano hay trenes GO directos desde Toronto; el resto del tiempo, autobús GO.",
+      "Clifton Hill es turístico y caro; las mejores vistas están junto a Table Rock."
+     ],
+     "mapsQuery": "Niagara Falls, Ontario, Canada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Toronto",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "CN Tower",
+      "Distillery District",
+      "Mercado St. Lawrence",
+      "Royal Ontario Museum"
+     ],
+     "activities": [
+      "Tome el ferry a las islas de Toronto para ver el skyline.",
+      "Pruebe comida callejera en Kensington Market y Chinatown.",
+      "Suba al mirador con suelo de cristal de la CN Tower."
+     ],
+     "foodAndDrinks": [
+      "Empanada jamaicana de carne (beef patty)",
+      "Butter tart"
+     ],
+     "criticalTips": [
+      "El tren UP Express une el aeropuerto Pearson con Union Station en ~25 minutos.",
+      "En el TTC pague con tarjeta PRESTO o bancaria sin contacto."
+     ],
+     "mapsQuery": "Toronto, Ontario, Canada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Montreal",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Viejo Montreal y basílica de Notre-Dame",
+      "Monte Real (Mont Royal)",
+      "Mercado Jean-Talon",
+      "Plateau-Mont-Royal y Mile End"
+     ],
+     "activities": [
+      "Vea el espectáculo de luces AURA en la basílica de Notre-Dame.",
+      "Suba al Mont Royal hasta el mirador Kondiaronk.",
+      "Pruebe los bagels de Montreal horneados a leña en Mile End."
+     ],
+     "foodAndDrinks": [
+      "Poutine",
+      "Sándwich de smoked meat",
+      "Bagel de Montreal"
+     ],
+     "criticalTips": [
+      "Los carteles están en francés; saludar con “Bonjour” facilita todo.",
+      "Compre una tarjeta OPUS o un billete diario para el metro STM."
+     ],
+     "mapsQuery": "Montréal, Québec, Canada"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Ciudad de Quebec (Viejo Quebec)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Château Frontenac y terraza Dufferin",
+      "Barrio Petit-Champlain",
+      "Murallas de la ciudad (UNESCO)",
+      "Cataratas Montmorency"
+     ],
+     "activities": [
+      "Recorra las murallas y baje en el Funiculaire a la ciudad baja.",
+      "Haga una excursión a la Île d’Orléans para probar productos de granja.",
+      "Cruce el puente colgante sobre las cataratas Montmorency."
+     ],
+     "foodAndDrinks": [
+      "Productos de arce y tire d’érable",
+      "Sidra de hielo – cidre de glace (con alcohol)"
+     ],
+     "criticalTips": [
+      "Lleve calzado cómodo para las empinadas calles empedradas.",
+      "En invierno se puede bajar a -20 °C; para el carnaval de febrero hace falta ropa térmica."
+     ],
+     "mapsQuery": "Québec City, Québec, Canada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poutine",
+     "Smoked meat de Montreal",
+     "Salmón del Pacífico"
+    ],
+    "drinks": [
+     "Café de Tim Hortons",
+     "Vino de hielo (con alcohol)",
+     "Caesar (con alcohol)"
+    ],
+    "streetFoods": [
+     "BeaverTails",
+     "Butter tart",
+     "Nanaimo bar"
+    ],
+    "diningAdvice": "Los precios de la carta no incluyen impuestos; deje un 15-20 % de propina sobre el importe sin impuestos. Los datáfonos muestran las opciones de propina."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (compruebe que su aparato admite 100-240 V)",
+     "Ropa por capas e impermeable",
+     "Repelente de mosquitos y moscas negras (junio)",
+     "Ropa térmica, gorro y guantes para el invierno"
+    ],
+    "safetyAndEtiquette": [
+     "No se acerque ni alimente a la fauna en los parques nacionales.",
+     "En Quebec salude primero en francés; incluso un breve “Merci” se agradece."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes norteamericanos de dos clavijas planas (el tipo B añade toma de tierra redonda). Los enchufes turcos necesitan adaptador; los cargadores de móvil y portátil suelen ser de 100-240 V y no requieren transformador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en todas las ciudades.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, triple vírica)",
+     "No se exigen vacunas especiales"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "En restaurantes se espera un 15-20 % de propina sobre el importe sin impuestos.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "En grupos grandes (normalmente 6+) puede añadirse un cargo por servicio; revise la cuenta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (el GST/HST del 5-15 % no se reembolsa)",
+    "minSpend": "No aplica",
+    "customsNote": "Canadá no tiene un programa general de devolución de impuestos a visitantes desde 2007; para compras libres de impuestos use las tiendas duty-free de aeropuertos y fronteras."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "1.50 - 4 $",
+    "topCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "airportSimTrapWarning": "Los datos móviles son caros en Canadá y en los quioscos del aeropuerto aún más; configure una eSIM antes o busque en la ciudad planes prepago de marcas más baratas como Fido, Koodo o Freedom Mobile."
+   },
+   "touristScams": [
+    {
+     "title": "Conductores sin licencia en el aeropuerto",
+     "desc": "Quienes se le acercan en llegadas ofreciendo “taxi” cobran muy por encima de las tarifas oficiales.",
+     "tip": "Use solo la parada oficial, el UP Express o apps de transporte."
+    },
+    {
+     "title": "Clonado de tarjetas en surtidores",
+     "desc": "Dispositivos instalados en surtidores o cajeros independientes copian los datos de la tarjeta.",
+     "tip": "Pague sin contacto o dentro en caja y use cajeros de sucursales bancarias."
+    },
+    {
+     "title": "Robo en coches aparcados",
+     "desc": "En Vancouver, Toronto y aparcamientos de parques nacionales se rompen ventanillas para robar.",
+     "tip": "No deje nada a la vista y, si puede, tampoco en el maletero."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Канадский доллар (CAD)",
+   "plugType": "Тип A, B (120V, 60Hz)",
+   "bestMonths": "Июнь – сентябрь (лето, Скалистые горы и города); конец сентября – середина октября — осенние краски; декабрь – март — лыжи",
+   "safety": {
+    "crimeRateSummary": "Насильственных преступлений мало, туристические районы в целом безопасны. В крупных городах часты кражи из машин и велосипедов, а в районах вроде Даунтаун-Истсайд в Ванкувере заметно открытое употребление наркотиков. На природе главные риски — медведи, зимние условия и летние лесные пожары.",
+    "commonScams": [
+     "Нелицензированные водители, зазывающие пассажиров в зонах прилёта аэропортов Торонто-Пирсон и Монреаля",
+     "Скимминг карт на колонках АЗС и отдельно стоящих банкоматах",
+     "Кражи из припаркованных машин в таких местах, как Ниагара и Банф"
+    ],
+    "safeTravelTips": [
+     "В Скалистых горах носите спрей от медведей, шумите на тропе и не оставляйте еду на виду.",
+     "В июле – августе следите за предупреждениями о пожарах и дыме (Parks Canada, DriveBC).",
+     "Медицина для туристов очень дорогая — оформите полную медицинскую страховку."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% на населённом юге (LTE/5G); на севере и на участках горных трасс связи нет",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хороший в городах (TTC в Торонто, метро Монреаля, SkyTrain в Ванкувере); расстояния огромные: VIA Rail в коридоре Квебек – Виндзор, в остальных случаях — внутренние рейсы или машина",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "2.30 - 3 $ (TTC в Торонто / STM в Монреале)",
+    "dailyPassUsd": "8 - 10 $ (дневной TTC / STM на 24 часа)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft"
+    ],
+    "taxiAdvice": "Uber и Lyft распространены в крупных городах; в аэропортах пользуйтесь только официальной стоянкой такси/лимузинов. Таксистам и водителям приложений дают 10-15% чаевых."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $ (без налога и чаевых)",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "30 - 60 $",
+    "hotel3StarUsd": "120 - 200 $",
+    "flightCostIndex": "Средне-высокий (прямой ~10-11 ч)",
+    "flightTip": "Turkish Airlines летает напрямую из Стамбула в Торонто, Монреаль и Ванкувер; на лето и Рождество бронируйте за несколько месяцев."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Канадцы очень вежливы: важно соблюдать очередь и говорить «sorry» и «thank you».",
+     "В Квебеке начинать разговор с французского «Bonjour» — знак уважения.",
+     "Цены указаны без налога (5-15%); в ресторанах ожидают 15-20% чаевых от суммы до налога.",
+     "Спрашивайте разрешения на съёмку в культурных местах коренных народов (Первые нации, инуиты, метисы)."
+    ],
+    "festivals": [
+     "День Канады (1 июля)",
+     "Калгари Стампид (июль, фестиваль родео)",
+     "Зимний карнавал в Квебеке (февраль)"
+    ],
+    "lifestyle": "Мультикультурный и спокойный образ жизни на природе: хоккей, кемпинги, выходные на даче у озера и кофе из Tim Hortons — часть повседневности."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ниагарский водопад",
+     "Банф, озеро Луиз и озеро Морейн",
+     "Старый Квебек (ЮНЕСКО)",
+     "Ванкувер и Стэнли-парк",
+     "Торонто и Си-Эн Тауэр",
+     "Айсфилдс-Паркуэй и Джаспер"
+    ],
+    "bestSeasons": "Июнь – сентябрь — Скалистые горы и озёра; конец сентября – октябрь — осенние краски Онтарио и Квебека; декабрь – март — лыжи (Уистлер, Банф, Мон-Тремблан).",
+    "travelStyleTip": "Расстояния огромны — не пытайтесь объехать восток и запад за одну поездку. На востоке — поезда VIA Rail, на западе — внутренний рейс и аренда авто; для нацпарков купите Parks Canada Discovery Pass."
+   },
+   "religion": {
+    "primaryReligions": "Христиане ~53% (католики ~30%), неверующие ~35%, мусульмане ~5%, индуисты ~2%, сикхи ~2% (перепись 2021)",
+    "respectNorms": "Храмы открыты для посетителей; во время служб соблюдайте тишину и не снимайте со вспышкой. Не заходите без разрешения на церемониальные места коренных народов.",
+    "sacredSites": [
+     "Базилика Нотр-Дам (Монреаль)",
+     "Оратория Святого Иосифа (Монреаль)",
+     "Базилика Сент-Анн-де-Бопре (под Квебеком)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Английский и французский (в Квебеке преобладает французский)",
+    "englishProficiency": "Родной язык за пределами Квебека; Монреаль двуязычен, в сельском Квебеке говорят в основном по-французски.",
+    "phrases": [
+     {
+      "phrase": "Bonjour-Hi",
+      "meaning": "Здравствуйте (двуязычное приветствие Монреаля)",
+      "translation": "Здравствуйте (двуязычное приветствие Монреаля)",
+      "pronunciation": "bon-ZHOOR hai"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "mehr-SEE boh-KOO"
+     },
+     {
+      "phrase": "Parlez-vous anglais ?",
+      "meaning": "Вы говорите по-английски?",
+      "translation": "Вы говорите по-английски?",
+      "pronunciation": "par-LAY voo ahn-GLAY"
+     },
+     {
+      "phrase": "L’addition, s’il vous plaît",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "lah-dee-SYON seel voo PLAY"
+     },
+     {
+      "phrase": "A double-double, please",
+      "meaning": "Кофе с двумя сливками и двумя сахарами, пожалуйста (классика Tim Hortons)",
+      "translation": "Кофе с двумя сливками и двумя сахарами, пожалуйста (классика Tim Hortons)",
+      "pronunciation": "uh DUB-ul DUB-ul pleez"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "На землях, тысячелетиями населённых коренными народами, в 1608 г. основан Квебек — начало Новой Франции; в 1763 г. территория перешла к Британии. Канада возникла как доминион в результате Конфедерации 1867 г. и обрела полную конституционную независимость с Конституционным актом 1982 г.",
+    "milestones": [
+     "1608: Самюэль де Шамплен основывает Квебек",
+     "1763: по Парижскому миру Новая Франция переходит к Британии",
+     "1867: образование Канадской конфедерации",
+     "1982: Конституционный акт и Хартия прав"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Путин (картофель фри с сырными кусочками и соусом)",
+     "Монреальский сэндвич со смоук-митом (копчёная говяжья грудинка)",
+     "Тихоокеанский лосось (Британская Колумбия)"
+    ],
+    "traditionalDrinks": [
+     "Кофе Tim Hortons (дабл-дабл)",
+     "Ледяное вино (алкогольное)",
+     "Коктейль «Цезарь» (алкогольный)"
+    ],
+    "streetFoodAndDesserts": [
+     "BeaverTails (жареное тесто)",
+     "Баттер-тарт (тарталетки с масляной начинкой)",
+     "Тир д’эрабль (кленовая ириска на снегу)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Фредерик Бантинг (сооткрыватель инсулина, Нобелевская премия)",
+     "Терри Фокс («Марафон надежды»)",
+     "Уэйн Гретцки (легенда хоккея)"
+    ],
+    "strongSectors": [
+     "Энергетика и природные ресурсы (нефть, ГЭС, добыча)",
+     "Технологии и ИИ (Торонто, Монреаль)",
+     "Авиастроение (Bombardier, CAE)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата (Visa, Mastercard, Interac) принимаются почти везде; на кассе к ценам добавляется налог 5-15%.",
+    "tippingCulture": "Ожидаются чаевые 15-20% в ресторанах, 1-2 CAD за напиток в баре и 10-15% таксистам и парикмахерам; терминал сам предложит процент.",
+    "economicPillars": "Энергетика, добыча и лесное хозяйство, финансы и услуги, автопром, технологии и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Восточная Канада: Ниагара, Торонто, Монреаль и Квебек",
+   "routeSummary": "9-дневный маршрут: от Ниагарского водопада к небоскрёбам Торонто, затем поездом во франкоязычный Монреаль и в окружённый стенами Старый Квебек.",
+   "totalDays": 9,
+   "idealDurationText": "Маршрут на 9 дней",
+   "bestSeason": "Июнь – октябрь",
+   "transportMode": "Поезд/автобус GO Transit (Ниагара – Торонто) + VIA Rail (Торонто – Монреаль – Квебек) + городское метро",
+   "paceLevel": "Сбалансированный (город и природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Ниагарский водопад",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Водопад Подкова",
+      "Прогулка на катере Niagara City Cruises",
+      "Туннели Journey Behind the Falls",
+      "Городок Ниагара-он-те-Лейк"
+     ],
+     "activities": [
+      "Подплывите на катере к подножию водопада (дождевики выдают).",
+      "Прогуляйтесь или прокатитесь на велосипеде по Ниагара-Паркуэй.",
+      "Посетите винодельню в Ниагара-он-те-Лейк."
+     ],
+     "foodAndDrinks": [
+      "Ледяное вино (алкогольное)",
+      "BeaverTails"
+     ],
+     "criticalTips": [
+      "Летом по выходным из Торонто ходят прямые поезда GO, в остальные дни — автобусы GO.",
+      "Клифтон-Хилл — туристический и дорогой; лучшие виды у Тейбл-Рок."
+     ],
+     "mapsQuery": "Niagara Falls, Ontario, Canada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Торонто",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Си-Эн Тауэр",
+      "Дистиллери-Дистрикт",
+      "Рынок Сент-Лоуренс",
+      "Королевский музей Онтарио"
+     ],
+     "activities": [
+      "Переправьтесь на пароме на острова Торонто ради вида на город.",
+      "Попробуйте уличную еду в Кенсингтон-Маркет и Чайна-тауне.",
+      "Поднимитесь на смотровую площадку Си-Эн Тауэр со стеклянным полом."
+     ],
+     "foodAndDrinks": [
+      "Ямайский пирожок с говядиной (beef patty)",
+      "Баттер-тарт"
+     ],
+     "criticalTips": [
+      "Поезд UP Express доезжает от аэропорта Пирсон до Юнион-Стейшн за ~25 минут.",
+      "В TTC платите картой PRESTO или бесконтактной банковской картой."
+     ],
+     "mapsQuery": "Toronto, Ontario, Canada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Монреаль",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Старый Монреаль и базилика Нотр-Дам",
+      "Гора Мон-Руаяль",
+      "Рынок Жан-Талон",
+      "Районы Плато-Мон-Руаяль и Майл-Энд"
+     ],
+     "activities": [
+      "Посмотрите световое шоу AURA в базилике Нотр-Дам.",
+      "Поднимитесь на Мон-Руаяль к смотровой площадке Кондиаронк.",
+      "Попробуйте монреальские бейглы из дровяной печи в Майл-Энде."
+     ],
+     "foodAndDrinks": [
+      "Путин",
+      "Сэндвич со смоук-митом",
+      "Монреальский бейгл"
+     ],
+     "criticalTips": [
+      "Указатели на французском; приветствие «Bonjour» облегчает общение.",
+      "Для метро STM купите карту OPUS или дневной билет."
+     ],
+     "mapsQuery": "Montréal, Québec, Canada"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Квебек (Старый город)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Шато-Фронтенак и терраса Дафферин",
+      "Квартал Пти-Шамплен",
+      "Городские укрепления (ЮНЕСКО)",
+      "Водопад Монморанси"
+     ],
+     "activities": [
+      "Пройдитесь по стенам и спуститесь на фуникулёре в Нижний город.",
+      "Съездите на день на остров Орлеан за фермерскими продуктами.",
+      "Пройдите по подвесному мосту над водопадом Монморанси."
+     ],
+     "foodAndDrinks": [
+      "Кленовые продукты и тир д’эрабль",
+      "Ледяной сидр (алкогольный)"
+     ],
+     "criticalTips": [
+      "Наденьте удобную обувь — улицы крутые и мощёные.",
+      "Зимой бывает до -20 °C — на февральский карнавал нужна термоодежда."
+     ],
+     "mapsQuery": "Québec City, Québec, Canada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Путин",
+     "Монреальский смоук-мит",
+     "Тихоокеанский лосось"
+    ],
+    "drinks": [
+     "Кофе Tim Hortons",
+     "Ледяное вино (алкогольное)",
+     "Коктейль «Цезарь» (алкогольный)"
+    ],
+    "streetFoods": [
+     "BeaverTails",
+     "Баттер-тарт",
+     "Пирожное «Нанаймо»"
+    ],
+    "diningAdvice": "Цены в меню без налога; чаевые 15-20% считаются от суммы до налога. Терминал сам предлагает варианты чаевых."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник A/B (проверьте, что устройство поддерживает 100-240 В)",
+     "Многослойная одежда и дождевик",
+     "Репеллент от комаров и мошки (июнь)",
+     "Термобельё, шапка и перчатки для зимы"
+    ],
+    "safetyAndEtiquette": [
+     "Не приближайтесь к диким животным в нацпарках и не кормите их.",
+     "В Квебеке сначала здоровайтесь по-французски — даже короткое «Merci» ценят."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Североамериканские розетки с двумя плоскими контактами (тип B — с круглым заземлением). Для турецких вилок нужен переходник; зарядки телефонов и ноутбуков обычно на 100-240 В, трансформатор не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода пригодна для питья во всех городах.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь-краснуха-паротит)",
+     "Специальных прививок не требуется"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "В ресторанах ожидают 15-20% чаевых от суммы до налога.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Для больших компаний (обычно от 6 человек) могут добавить сервисный сбор — проверяйте счёт."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (GST/HST 5-15% не возвращается)",
+    "minSpend": "Не применяется",
+    "customsNote": "С 2007 года в Канаде нет общей программы возврата налогов туристам; без налога можно купить в дьюти-фри аэропортов и сухопутных границ."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "1.50 - 4 $",
+    "topCarriers": [
+     "Rogers",
+     "Bell",
+     "Telus"
+    ],
+    "airportSimTrapWarning": "Мобильный интернет в Канаде дорогой, а в киосках аэропорта ещё дороже; заранее установите eSIM или купите в городе предоплаченный тариф недорогих брендов вроде Fido, Koodo или Freedom Mobile."
+   },
+   "touristScams": [
+    {
+     "title": "Нелегальные водители в аэропорту",
+     "desc": "Люди, предлагающие «такси» в зоне прилёта, берут гораздо больше официального тарифа.",
+     "tip": "Пользуйтесь только официальной стоянкой такси, UP Express или приложениями."
+    },
+    {
+     "title": "Скимминг на бензоколонке",
+     "desc": "Устройства на колонках или отдельных банкоматах копируют данные карты.",
+     "tip": "Платите бесконтактно или на кассе внутри; пользуйтесь банкоматами в отделениях банков."
+    },
+    {
+     "title": "Кражи из припаркованных машин",
+     "desc": "В Ванкувере, Торонто и на парковках нацпарков бьют стёкла ради ценностей.",
+     "tip": "Ничего не оставляйте на виду, по возможности держите и багажник пустым."
+    }
+   ]
+  }
+ }
+}

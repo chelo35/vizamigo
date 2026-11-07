@@ -1,0 +1,1897 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Küba Pesosu (CUP)",
+   "plugType": "Tip A, B, C (110V / 220V, 60Hz)",
+   "bestMonths": "Kasım – Nisan (kurak ve daha serin); Haziran – Kasım kasırga sezonu, en riskli dönem Ağustos – Ekim",
+   "safety": {
+    "crimeRateSummary": "Turistlere yönelik şiddet suçu görece düşüktür, ancak ekonomik kriz nedeniyle Havana’da kapkaç ve hırsızlık artmıştır. Ülke çapında uzun elektrik kesintileri, yakıt, gıda, ilaç ve su kıtlığı yaşanmaktadır; kasırgalar da ciddi risk oluşturur.",
+    "commonScams": [
+     "“Jinetero” denilen samimi yerlilerin sizi komisyon aldıkları pahalı bar, restoran veya sahte puro satışına götürmesi",
+     "Para üstünün USD yerine değeri çok düşük CUP olarak verilmesi",
+     "Klasik araba taksilerde ve at arabalarında fiyatın yolculuk sonunda katlanması"
+    ],
+    "safeTravelTips": [
+     "Yeterli nakit (EUR veya USD, temiz ve yırtıksız banknot) getirin; ABD bankalarının kartları çalışmaz, diğer yabancı kartlar da sıkça reddedilir.",
+     "Elektrik kesintilerine karşı fener, powerbank ve temel ilaçlarınızı yanınızda getirin.",
+     "Puroları yalnızca resmî Casa del Habano mağazalarından fişli olarak alın."
+    ],
+    "emergencyNumbers": {
+     "police": "106",
+     "ambulance": "104",
+     "general": "106"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde yavaş 3G/4G; elektrik kesintilerinde baz istasyonları da kapanabilir; kırsalda kapsama zayıf",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Sınırlı",
+    "bestCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Zayıf (şehirlerarası Viazul otobüsleri ve paylaşımlı “colectivo” taksiler; trenler güvenilmez; yakıt kıtlığı seferleri aksatabilir)",
+    "costLevel": "Orta (turist fiyatları dövizle)",
+    "singleTicketUsd": "0.10 - 0.50 $ (yerel otobüs; kalabalık ve düzensiz)",
+    "dailyPassUsd": "Günlük kart yok; şehir içi taksi yolculuğu ~5 - 15 $",
+    "popularRideApps": [
+     "La Nave",
+     "Bajanda"
+    ],
+    "taxiAdvice": "Uber ve uluslararası uygulamalar çalışmaz; yerel La Nave ve Bajanda uygulamaları sınırlı hizmet verir. Taksiler genelde taksimetresizdir; fiyatı ve para birimini (USD/CUP) binmeden netleştirin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 140 $",
+    "budgetMealUsd": "5 - 12 $ (paladar – özel restoran)",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "1 - 2 $ (zaman zaman bulunamayabilir)",
+    "hostelDormUsd": "25 - 40 $ (casa particular odası)",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Yüksek (aktarmalı ~16-20 sa)",
+    "flightTip": "Türkiye’den aktarmasız uçuş yoktur; Türk Hava Yolları’nın Caracas üzerinden Havana seferlerini veya Madrid (Iberia, Air Europa) ve Paris (Air France) aktarmalı uçuşları karşılaştırın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşmada yanaktan tek öpücük ve sıcak tokalaşma yaygındır; Kübalılar samimi ve konuşkandır.",
+     "Kıtlık nedeniyle ev sahiplerine küçük hediyeler (sabun, diş macunu, temel ilaçlar) büyük memnuniyetle karşılanır.",
+     "İnsanları fotoğraflamadan önce izin isteyin; poz veren sokak sanatçıları küçük bir bahşiş bekler."
+    ],
+    "festivals": [
+     "Havana Uluslararası Caz Festivali (Ocak)",
+     "Santiago de Cuba Karnavalı (Temmuz)",
+     "Yeni Latin Amerika Sineması Festivali (Aralık, Havana)"
+    ],
+    "lifestyle": "Müzik ve dans her yerdedir (son, salsa, rumba); beyzbol, domino ve Malecón’da akşam buluşmaları gündelik hayatın parçasıdır. Kübalılar kıtlıklara rağmen yaratıcılık ve dayanışmayla yaşar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Eski Havana (UNESCO)",
+     "Viñales Vadisi",
+     "Trinidad ve Valle de los Ingenios",
+     "Cienfuegos",
+     "Varadero plajları",
+     "Santiago de Cuba"
+    ],
+    "bestSeasons": "Kasım – Nisan kurak ve güneşlidir; Aralık – Mart en yoğun dönemdir. Yaz sıcak ve nemlidir, Ağustos – Ekim kasırga riski en yüksek aylardır.",
+    "travelStyleTip": "Ev pansiyonlarında (casa particular) kalın; hem daha otantik hem de elektrik kesintisinde ev sahibi yardımcı olur. Viazul biletlerini önceden alın, çevrimdışı harita indirin ve tüm yolculuk için yeterli nakit getirin."
+   },
+   "religion": {
+    "primaryReligions": "Katolik ~%55-60 (çoğu düzenli ibadet etmez), dinsiz ~%20-25, Protestan ~%9; Afro-Küba Santería (Regla de Ocha) inancı yaygındır ve Katoliklikle iç içedir",
+    "respectNorms": "Kiliselerde omuzları örtün. Beyaz giyinmiş Santería adaylarını (iyawó) fotoğraflamayın ve ritüellere izinsiz katılmayın.",
+    "sacredSites": [
+     "El Cobre Bazilikası (Santiago de Cuba yakını)",
+     "Havana Katedrali",
+     "Regla Kilisesi (Virgen de Regla – Yemayá)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İspanyolca (hızlı ve argo yüklü Küba İspanyolcası)",
+    "englishProficiency": "Otellerde ve turizm çalışanlarında temel–orta; diğer yerlerde sınırlıdır.",
+    "phrases": [
+     {
+      "phrase": "¿Qué bolá?",
+      "meaning": "N’aber? (Küba argosu)",
+      "translation": "N’aber? (Küba argosu)",
+      "pronunciation": "keh boh-LAH"
+     },
+     {
+      "phrase": "Asere",
+      "meaning": "Dostum / Kanka (Küba argosu)",
+      "translation": "Dostum / Kanka (Küba argosu)",
+      "pronunciation": "ah-SEH-reh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Taíno halkının yurdu olan ada, 1492’de Kolomb’un gelişiyle İspanyol sömürgesi oldu ve Havana 1519’da bugünkü yerinde kuruldu. Şeker ve tütün ekonomisi Afrikalı köle emeğine dayandı. 1868 – 1898 bağımsızlık savaşlarından sonra Küba 1902’de bağımsız cumhuriyet oldu; 1959 Devrimi ülkenin modern tarihini belirledi.",
+    "milestones": [
+     "1492: Kolomb Küba’ya ulaşır",
+     "1519: Havana bugünkü yerinde kurulur",
+     "1902: Bağımsız Küba Cumhuriyeti",
+     "1959: Küba Devrimi"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ropa vieja (didiklenmiş dana eti, domatesli sos)",
+     "Moros y cristianos (siyah fasulyeli pilav)",
+     "Lechón asado (fırın domuz eti)"
+    ],
+    "traditionalDrinks": [
+     "Café cubano (koyu ve şekerli espresso)",
+     "Guarapo (taze şeker kamışı suyu)",
+     "Mojito ve rom (alkollü)"
+    ],
+    "streetFoodAndDesserts": [
+     "Tostones (kızarmış yeşil muz)",
+     "Flan (karamelli puding)",
+     "Cucurucho (palmiye yaprağında hindistan cevizi tatlısı, Baracoa)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Martí (şair ve ulusal kahraman)",
+     "Celia Cruz (salsa kraliçesi)",
+     "Alicia Alonso (balerin)"
+    ],
+    "strongSectors": [
+     "Turizm",
+     "Nikel madenciliği",
+     "Puro (Habanos) ve rom üretimi"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Büyük ölçüde nakit ekonomisi: ABD bankalarının kartları çalışmaz, diğer kartlar da sık reddedilir ve ATM’ler güvenilmezdir. Fiyatlar CUP veya USD olarak verilebilir; resmî döviz için banka ve CADECA bürolarını kullanın, temiz EUR/USD banknotları getirin.",
+    "tippingCulture": "Bahşiş yerel gelirler için çok önemlidir: restoranlarda %10, müzisyenlere, rehberlere, kat görevlilerine ve tuvalet görevlilerine küçük banknotlar bırakılır.",
+    "economicPillars": "Turizm, yurt dışından gelen dövizler, sağlık hizmeti ihracatı, nikel, tütün ve şeker."
+   }
+  },
+  "itin": {
+   "routeName": "Küba Batıdan Doğuya: Viñales, Havana, Cienfuegos ve Trinidad",
+   "routeSummary": "Havana’ya indikten sonra önce batıdaki tütün tarlalarıyla Viñales Vadisi’ne, ardından Eski Havana’nın sokaklarına, “Güneyin İncisi” Cienfuegos’a ve sömürge kasabası Trinidad’a uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Rota",
+   "bestSeason": "Kasım – Nisan",
+   "transportMode": "Viazul otobüsleri ve paylaşımlı colectivo taksiler (önceden ayırtın)",
+   "paceLevel": "Rahat (Kültür, Müzik ve Doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Viñales Vadisi",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Mogote adı verilen kireçtaşı tepeleri",
+      "Tütün çiftliği (vega)",
+      "Cueva del Indio mağarası",
+      "Los Jazmines seyir noktası"
+     ],
+     "activities": [
+      "Vadide at sırtında tur yapın.",
+      "Bir tütün çiftliğinde puronun nasıl sarıldığını izleyin.",
+      "Los Jazmines’ten gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Çiftlik usulü öğle yemeği (pilav, fasulye, tavuk)",
+      "Guayabita del Pinar likörü (alkollü)"
+     ],
+     "criticalTips": [
+      "Havana’dan colectivo taksiyle ~3 saat sürer; dönüş yerinizi önceden ayırtın.",
+      "Çiftlikte satılan bandrolsüz purolar için çıkışta miktar sınırı vardır."
+     ],
+     "mapsQuery": "Viñales, Pinar del Río, Cuba"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Havana",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Eski Havana: Plaza Vieja ve Plaza de la Catedral",
+      "Malecón sahil yolu",
+      "Capitolio",
+      "Fusterlandia (mozaik sanatı mahallesi)"
+     ],
+     "activities": [
+      "Klasik bir Amerikan arabasıyla Malecón boyunca tur atın.",
+      "Eski Havana’daki barlarda canlı son ve salsa müziği dinleyin.",
+      "Fábrica de Arte Cubano’da (FAC) sanat ve müzik gecesine katılın."
+     ],
+     "foodAndDrinks": [
+      "Ropa vieja",
+      "Moros y cristianos",
+      "Mojito (alkollü)"
+     ],
+     "criticalTips": [
+      "Obispo Caddesi’nde yaklaşan “rehber” ve puro satıcılarına kibarca hayır deyin.",
+      "Elektrik kesintilerinde fener ve powerbank işinize yarar; asansörlerden kaçının."
+     ],
+     "mapsQuery": "La Habana, Cuba"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Cienfuegos (Güneyin İncisi)",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "José Martí Parkı (UNESCO)",
+      "Tomás Terry Tiyatrosu",
+      "Palacio de Valle ve Punta Gorda yarımadası"
+     ],
+     "activities": [
+      "Prado bulvarı ve Malecón’da yürüyün.",
+      "Gün batımını Palacio de Valle’nin terasından izleyin.",
+      "El Nicho şelalelerine günübirlik gidin."
+     ],
+     "foodAndDrinks": [
+      "Deniz ürünleri ve ıstakoz (langosta)",
+      "Tostones"
+     ],
+     "criticalTips": [
+      "Sakin bir şehirdir ve Havana – Trinidad arasında iyi bir mola noktasıdır.",
+      "El Nicho için ulaşımı önceden ayarlayın; toplu taşıma yoktur."
+     ],
+     "mapsQuery": "Cienfuegos, Cuba"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Trinidad",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Plaza Mayor ve sömürge dönemi sokakları (UNESCO)",
+      "Valle de los Ingenios ve Manaca Iznaga kulesi",
+      "Playa Ancón",
+      "Casa de la Música merdivenleri"
+     ],
+     "activities": [
+      "Akşam Casa de la Música merdivenlerinde salsa yapın.",
+      "At sırtında veya turistik trenle Valle de los Ingenios’a gidin.",
+      "Playa Ancón’da yüzün."
+     ],
+     "foodAndDrinks": [
+      "Canchánchara (bal, misket limonu ve rom; alkollü)",
+      "Izgara ıstakoz"
+     ],
+     "criticalTips": [
+      "Arnavut kaldırımları çok engebelidir; rahat ayakkabı giyin.",
+      "Kart neredeyse hiç geçmez; konaklama ve yemek için nakit ayırın."
+     ],
+     "mapsQuery": "Trinidad, Sancti Spíritus, Cuba"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado (domuz eti)"
+    ],
+    "drinks": [
+     "Café cubano",
+     "Guarapo",
+     "Mojito (alkollü)"
+    ],
+    "streetFoods": [
+     "Tostones",
+     "Flan",
+     "Cucurucho"
+    ],
+    "diningAdvice": "En iyi yemekler özel restoranlarda (paladar) ve casa particular’larda bulunur; menüdeki her şey her zaman mevcut olmayabilir. Fiyatın USD mi CUP mu olduğunu sipariş vermeden sorun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tip A/B priz adaptörü (cihazın 110V desteklediğini kontrol edin)",
+     "Tüm gezi için yeterli nakit EUR/USD (temiz banknotlar)",
+     "Fener, powerbank ve temel ilaçlar",
+     "Sivrisinek kovucu ve güneş kremi"
+    ],
+    "safetyAndEtiquette": [
+     "Seyahat sağlık sigortası girişte zorunludur; poliçenizin çıktısını yanınızda taşıyın.",
+     "Ev sahiplerine küçük hediyeler getirin ve bahşişi küçük banknotlarla verin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "110V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizlerin çoğu Amerikan tipi (A/B) ve 110V’tur; bazı yeni otellerde Avrupa tipi C prizler ve 220V bulunur. Prizin üzerindeki gerilim etiketine bakın ve adaptör götürün."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyunu içmeyin; şişe su zaman zaman bulunamadığından su arıtma tableti veya filtreli şişe getirin.",
+    "vaccines": [
+     "Hepatit A ve tifo önerilir",
+     "Dang, chikungunya ve Oropouche salgınlarına karşı sivrisinek korunması",
+     "Kişisel ilaçlarınızı yeterli miktarda getirin (eczanelerde kıtlık var)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş beklenir; hizmet sektöründe bahşiş gelirin önemli bir parçasıdır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Müzisyenler, rehberler, kat görevlileri ve tuvalet görevlileri için küçük USD/EUR veya CUP banknotları hazır bulundurun."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (turistlere vergi iadesi yapılmaz)",
+    "minSpend": "Geçerli değil",
+    "customsNote": "Küba’da turiste KDV iadesi yoktur. Puro çıkarırken belirli sayının üzerindeki miktar için resmî mağaza faturası ve orijinal mühürlü kutu gerekir; varış ülkenizin gümrük limitlerini de kontrol edin."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "2 - 5 $",
+    "topCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "airportSimTrapWarning": "Tek operatör devlete ait ETECSA’dır; turist hattı Cubacel Tur pasaportla havalimanında veya ETECSA ofislerinde alınır (önceden çevrimiçi sipariş edilebilir) ve kuyruklar uzundur. Uluslararası eSIM’ler çoğu zaman çalışmaz veya çok pahalıdır; ABD yaptırımları nedeniyle birçok uygulama ve banka sitesi Küba’dan erişimi engellediği için VPN kurun ve çevrimdışı harita indirin."
+   },
+   "touristScams": [
+    {
+     "title": "Jinetero yönlendirmesi",
+     "desc": "Samimi bir yerli sohbet açıp sizi “bugün puro festivali var” gibi bahanelerle komisyon aldığı bar, restoran veya sahte puro satıcısına götürür.",
+     "tip": "Kibarca teşekkür edip yolunuza devam edin; restoran ve puroyu kendiniz seçin."
+    },
+    {
+     "title": "Yanlış para birimiyle para üstü",
+     "desc": "USD ile ödediğinizde para üstü çok daha değersiz CUP olarak verilir veya kur keyfî hesaplanır.",
+     "tip": "Fiyatın hangi para biriminde olduğunu baştan sorun ve küçük banknot taşıyın."
+    },
+    {
+     "title": "Taksi fiyatının katlanması",
+     "desc": "Taksimetresiz klasik araçlar ve at arabaları yolculuk bitince başta söylenenin katlarını ister.",
+     "tip": "Fiyatı ve para birimini binmeden netleştirin; mümkünse konaklama yerinizden taksi ayarlatın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Cuban Peso (CUP)",
+   "plugType": "Type A, B, C (110V / 220V, 60Hz)",
+   "bestMonths": "November – April (dry and cooler); June – November is hurricane season, riskiest August – October",
+   "safety": {
+    "crimeRateSummary": "Violent crime against tourists is relatively low, but bag snatching and theft have risen in Havana with the economic crisis. The country suffers long nationwide blackouts and shortages of fuel, food, medicine and water, and hurricanes are a serious risk.",
+    "commonScams": [
+     "Friendly “jineteros” steering you to overpriced bars, restaurants or fake cigar sales for a commission",
+     "Change given in low-value CUP instead of US dollars",
+     "Classic-car taxis and horse carts multiplying the price at the end of the ride"
+    ],
+    "safeTravelTips": [
+     "Bring enough cash (EUR or USD in clean, untorn notes); US-issued cards don’t work and other foreign cards are often declined.",
+     "Pack a torch, power bank and your basic medicines for blackouts and shortages.",
+     "Buy cigars only from official Casa del Habano shops, with a receipt."
+    ],
+    "emergencyNumbers": {
+     "police": "106",
+     "ambulance": "104",
+     "general": "106"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Slow 3G/4G in cities; cell towers can go down during blackouts; weak rural coverage",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Limited",
+    "bestCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Poor (Viazul intercity buses and shared “colectivo” taxis; trains are unreliable; fuel shortages can disrupt services)",
+    "costLevel": "Moderate (tourist prices in foreign currency)",
+    "singleTicketUsd": "0.10 - 0.50 $ (local bus; crowded and irregular)",
+    "dailyPassUsd": "No day pass; city taxi rides ~5 - 15 $",
+    "popularRideApps": [
+     "La Nave",
+     "Bajanda"
+    ],
+    "taxiAdvice": "Uber and international apps don’t work; the local La Nave and Bajanda apps offer limited service. Taxis are usually unmetered, so agree the price and the currency (USD/CUP) before getting in."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 140 $",
+    "budgetMealUsd": "5 - 12 $ (paladar – private restaurant)",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "1 - 2 $ (sometimes hard to find)",
+    "hostelDormUsd": "25 - 40 $ (casa particular room)",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "High (~16-20 h with a connection)",
+    "flightTip": "There are no non-stop flights from Türkiye; compare Turkish Airlines’ Havana service via Caracas with connections through Madrid (Iberia, Air Europa) or Paris (Air France)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A single cheek kiss and warm handshake are common greetings; Cubans are friendly and talkative.",
+     "Because of shortages, small gifts for hosts (soap, toothpaste, basic medicines) are greatly appreciated.",
+     "Ask before photographing people; street performers who pose expect a small tip."
+    ],
+    "festivals": [
+     "Havana International Jazz Festival (January)",
+     "Santiago de Cuba Carnival (July)",
+     "Festival of New Latin American Cinema (December, Havana)"
+    ],
+    "lifestyle": "Music and dance are everywhere (son, salsa, rumba); baseball, dominoes and evenings on the Malecón are part of daily life. Cubans get by on resourcefulness and solidarity despite shortages."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Old Havana (UNESCO)",
+     "Viñales Valley",
+     "Trinidad and the Valle de los Ingenios",
+     "Cienfuegos",
+     "Varadero beaches",
+     "Santiago de Cuba"
+    ],
+    "bestSeasons": "November – April is dry and sunny, with December – March the busiest. Summer is hot and humid, and August – October carries the highest hurricane risk.",
+    "travelStyleTip": "Stay in casas particulares—more authentic, and your host can help during blackouts. Book Viazul tickets ahead, download offline maps and bring enough cash for the whole trip."
+   },
+   "religion": {
+    "primaryReligions": "Catholic ~55-60% (most non-practising), no religion ~20-25%, Protestant ~9%; Afro-Cuban Santería (Regla de Ocha) is widespread and intertwined with Catholicism",
+    "respectNorms": "Cover shoulders in churches. Don’t photograph white-clad Santería initiates (iyawó) or join rituals without permission.",
+    "sacredSites": [
+     "Basilica of El Cobre (near Santiago de Cuba)",
+     "Havana Cathedral",
+     "Church of Regla (Virgen de Regla – Yemayá)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Spanish (fast, slang-rich Cuban Spanish)",
+    "englishProficiency": "Basic to moderate among hotel and tourism staff; limited elsewhere.",
+    "phrases": [
+     {
+      "phrase": "¿Qué bolá?",
+      "meaning": "What’s up? (Cuban slang)",
+      "translation": "What’s up? (Cuban slang)",
+      "pronunciation": "keh boh-LAH"
+     },
+     {
+      "phrase": "Asere",
+      "meaning": "Buddy / Mate (Cuban slang)",
+      "translation": "Buddy / Mate (Cuban slang)",
+      "pronunciation": "ah-SEH-reh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Home to the Taíno people, the island became a Spanish colony after Columbus arrived in 1492, and Havana was founded at its present site in 1519. The sugar and tobacco economy relied on enslaved African labour. After the 1868 – 1898 wars of independence, Cuba became an independent republic in 1902; the 1959 Revolution shaped its modern history.",
+    "milestones": [
+     "1492: Columbus reaches Cuba",
+     "1519: Havana founded at its present site",
+     "1902: Independent Republic of Cuba",
+     "1959: Cuban Revolution"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ropa vieja (shredded beef in tomato sauce)",
+     "Moros y cristianos (black beans and rice)",
+     "Lechón asado (roast pork)"
+    ],
+    "traditionalDrinks": [
+     "Café cubano (strong sweet espresso)",
+     "Guarapo (fresh sugarcane juice)",
+     "Mojito and rum (alcoholic)"
+    ],
+    "streetFoodAndDesserts": [
+     "Tostones (fried green plantain)",
+     "Flan (caramel custard)",
+     "Cucurucho (coconut sweet in a palm-leaf cone, Baracoa)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Martí (poet and national hero)",
+     "Celia Cruz (Queen of Salsa)",
+     "Alicia Alonso (prima ballerina)"
+    ],
+    "strongSectors": [
+     "Tourism",
+     "Nickel mining",
+     "Cigars (Habanos) and rum"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Largely a cash economy: US-issued cards don’t work, other cards are often declined and ATMs are unreliable. Prices may be quoted in CUP or USD; use banks and CADECA bureaus for official exchange and bring clean EUR/USD notes.",
+    "tippingCulture": "Tips matter a lot to local incomes: 10% in restaurants, and small notes for musicians, guides, housekeepers and toilet attendants.",
+    "economicPillars": "Tourism, remittances, medical-services exports, nickel, tobacco and sugar."
+   }
+  },
+  "itin": {
+   "routeName": "Cuba West to East: Viñales, Havana, Cienfuegos & Trinidad",
+   "routeSummary": "An 8-day route: after landing in Havana, head west first to the tobacco fields of the Viñales Valley, then explore Old Havana, the “Pearl of the South” Cienfuegos and the colonial town of Trinidad.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Itinerary",
+   "bestSeason": "November – April",
+   "transportMode": "Viazul buses and shared colectivo taxis (book ahead)",
+   "paceLevel": "Relaxed (Culture, Music & Nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Viñales Valley",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Limestone hills called mogotes",
+      "Tobacco farm (vega)",
+      "Cueva del Indio cave",
+      "Los Jazmines viewpoint"
+     ],
+     "activities": [
+      "Take a horseback ride through the valley.",
+      "Watch how cigars are rolled on a tobacco farm.",
+      "Watch the sunset from Los Jazmines."
+     ],
+     "foodAndDrinks": [
+      "Farm-style lunch (rice, beans, chicken)",
+      "Guayabita del Pinar liqueur (alcoholic)"
+     ],
+     "criticalTips": [
+      "It’s ~3 hours from Havana by colectivo taxi; book your onward seat in advance.",
+      "Cigars sold on farms without official seals are subject to export quantity limits."
+     ],
+     "mapsQuery": "Viñales, Pinar del Río, Cuba"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Havana",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Old Havana: Plaza Vieja and Plaza de la Catedral",
+      "The Malecón seafront",
+      "El Capitolio",
+      "Fusterlandia (mosaic art neighbourhood)"
+     ],
+     "activities": [
+      "Ride along the Malecón in a classic American car.",
+      "Hear live son and salsa in Old Havana’s bars.",
+      "Spend an evening of art and music at the Fábrica de Arte Cubano (FAC)."
+     ],
+     "foodAndDrinks": [
+      "Ropa vieja",
+      "Moros y cristianos",
+      "Mojito (alcoholic)"
+     ],
+     "criticalTips": [
+      "Politely say no to “guides” and cigar sellers who approach you on Calle Obispo.",
+      "A torch and power bank help during blackouts; avoid lifts."
+     ],
+     "mapsQuery": "La Habana, Cuba"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Cienfuegos (Pearl of the South)",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Parque José Martí (UNESCO)",
+      "Tomás Terry Theatre",
+      "Palacio de Valle and the Punta Gorda peninsula"
+     ],
+     "activities": [
+      "Stroll the Prado boulevard and Malecón.",
+      "Watch the sunset from the Palacio de Valle terrace.",
+      "Take a day trip to the El Nicho waterfalls."
+     ],
+     "foodAndDrinks": [
+      "Seafood and lobster (langosta)",
+      "Tostones"
+     ],
+     "criticalTips": [
+      "It’s a calm city and a good stopover between Havana and Trinidad.",
+      "Arrange transport to El Nicho in advance; there is no public transport."
+     ],
+     "mapsQuery": "Cienfuegos, Cuba"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Trinidad",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Plaza Mayor and colonial streets (UNESCO)",
+      "Valle de los Ingenios and Manaca Iznaga tower",
+      "Playa Ancón",
+      "Casa de la Música steps"
+     ],
+     "activities": [
+      "Dance salsa on the Casa de la Música steps in the evening.",
+      "Visit the Valle de los Ingenios on horseback or by tourist train.",
+      "Swim at Playa Ancón."
+     ],
+     "foodAndDrinks": [
+      "Canchánchara (honey, lime and rum; alcoholic)",
+      "Grilled lobster"
+     ],
+     "criticalTips": [
+      "The cobblestones are very uneven; wear comfortable shoes.",
+      "Cards are almost never accepted; set aside cash for lodging and meals."
+     ],
+     "mapsQuery": "Trinidad, Sancti Spíritus, Cuba"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado (pork)"
+    ],
+    "drinks": [
+     "Café cubano",
+     "Guarapo",
+     "Mojito (alcoholic)"
+    ],
+    "streetFoods": [
+     "Tostones",
+     "Flan",
+     "Cucurucho"
+    ],
+    "diningAdvice": "The best food is found in private restaurants (paladares) and casas particulares; not everything on the menu is always available. Ask whether prices are in USD or CUP before ordering."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type A/B plug adapter (check your device supports 110V)",
+     "Enough EUR/USD cash for the whole trip (clean notes)",
+     "Torch, power bank and basic medicines",
+     "Mosquito repellent and sunscreen"
+    ],
+    "safetyAndEtiquette": [
+     "Travel medical insurance is mandatory for entry; carry a printed copy of your policy.",
+     "Bring small gifts for hosts and tip in small notes."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "110V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Most sockets are American-style (A/B) at 110V; some newer hotels have European Type C sockets at 220V. Check the voltage label by the socket and bring an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Don’t drink tap water; since bottled water is sometimes scarce, bring purification tablets or a filter bottle.",
+    "vaccines": [
+     "Hepatitis A and typhoid recommended",
+     "Mosquito protection against dengue, chikungunya and Oropouche outbreaks",
+     "Bring enough of your personal medicines (pharmacies face shortages)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "A 10% tip is expected in restaurants; tips are a major part of income in the service sector.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Keep small USD/EUR or CUP notes ready for musicians, guides, housekeepers and toilet attendants."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (no tax refunds for tourists)",
+    "minSpend": "Not applicable",
+    "customsNote": "Cuba has no VAT refund for tourists. When exporting cigars, quantities above a set limit require an official store receipt and original sealed boxes; also check your destination country’s customs limits."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "2 - 5 $",
+    "topCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "airportSimTrapWarning": "The only operator is state-owned ETECSA; the Cubacel Tur tourist SIM is sold with your passport at the airport or ETECSA offices (it can be pre-ordered online) and queues are long. International eSIMs often don’t work or are very expensive; because many apps and banking sites block Cuban IPs under US sanctions, install a VPN and download offline maps."
+   },
+   "touristScams": [
+    {
+     "title": "Jinetero hustle",
+     "desc": "A friendly local strikes up a chat and, with lines like “there’s a cigar festival today”, leads you to a bar, restaurant or fake cigar seller that pays him commission.",
+     "tip": "Thank them politely and move on; choose restaurants and cigar shops yourself."
+    },
+    {
+     "title": "Change in the wrong currency",
+     "desc": "You pay in USD and get change in much lower-value CUP, or at an arbitrary rate.",
+     "tip": "Ask which currency the price is in up front and carry small notes."
+    },
+    {
+     "title": "Inflated taxi fares",
+     "desc": "Unmetered classic cars and horse carts demand several times the quoted fare at the end.",
+     "tip": "Agree price and currency before getting in; ideally have your casa arrange the taxi."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Kubanischer Peso (CUP)",
+   "plugType": "Typ A, B, C (110V / 220V, 60Hz)",
+   "bestMonths": "November – April (trocken und kühler); Juni – November Hurrikansaison, am riskantesten August – Oktober",
+   "safety": {
+    "crimeRateSummary": "Gewaltkriminalität gegen Touristen ist relativ gering, doch mit der Wirtschaftskrise haben Taschenraub und Diebstahl in Havanna zugenommen. Landesweit gibt es lange Stromausfälle sowie Mangel an Treibstoff, Lebensmitteln, Medikamenten und Wasser; Hurrikane sind ein ernstes Risiko.",
+    "commonScams": [
+     "Freundliche „Jineteros“, die gegen Provision in teure Bars, Restaurants oder zu gefälschten Zigarren führen",
+     "Wechselgeld in wertlosen CUP statt in US-Dollar",
+     "Oldtimer-Taxis und Pferdekutschen, die am Ende ein Vielfaches verlangen"
+    ],
+    "safeTravelTips": [
+     "Genug Bargeld (EUR oder USD in sauberen, unbeschädigten Scheinen) mitbringen; US-Karten funktionieren nicht, andere ausländische Karten werden oft abgelehnt.",
+     "Taschenlampe, Powerbank und eigene Grundmedikamente für Stromausfälle und Engpässe einpacken.",
+     "Zigarren nur in offiziellen Casa-del-Habano-Läden mit Quittung kaufen."
+    ],
+    "emergencyNumbers": {
+     "police": "106",
+     "ambulance": "104",
+     "general": "106"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Langsames 3G/4G in Städten; bei Stromausfällen fallen auch Sendemasten aus; schwaches Netz auf dem Land",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Eingeschränkt",
+    "bestCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Schwach (Viazul-Fernbusse und Sammeltaxis „Colectivo“; Züge unzuverlässig; Treibstoffmangel kann den Betrieb stören)",
+    "costLevel": "Mittel (Touristenpreise in Devisen)",
+    "singleTicketUsd": "0.10 - 0.50 $ (Stadtbus; voll und unregelmäßig)",
+    "dailyPassUsd": "Keine Tageskarte; Taxifahrten in der Stadt ~5 - 15 $",
+    "popularRideApps": [
+     "La Nave",
+     "Bajanda"
+    ],
+    "taxiAdvice": "Uber und internationale Apps funktionieren nicht; die lokalen Apps La Nave und Bajanda bieten begrenzten Service. Taxis haben meist kein Taxameter – Preis und Währung (USD/CUP) vorher vereinbaren."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 140 $",
+    "budgetMealUsd": "5 - 12 $ (Paladar – Privatrestaurant)",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "1 - 2 $ (zeitweise knapp)",
+    "hostelDormUsd": "25 - 40 $ (Zimmer in einer Casa particular)",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Hoch (~16-20 Std. mit Umstieg)",
+    "flightTip": "Keine Nonstop-Flüge aus der Türkei; Turkish Airlines nach Havanna über Caracas mit Verbindungen über Madrid (Iberia, Air Europa) oder Paris (Air France) vergleichen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ein Wangenkuss und herzlicher Handschlag sind üblich; Kubaner sind freundlich und gesprächig.",
+     "Wegen der Engpässe freuen sich Gastgeber sehr über kleine Geschenke (Seife, Zahnpasta, einfache Medikamente).",
+     "Vor dem Fotografieren fragen; posierende Straßenkünstler erwarten ein kleines Trinkgeld."
+    ],
+    "festivals": [
+     "Internationales Jazzfestival Havanna (Januar)",
+     "Karneval von Santiago de Cuba (Juli)",
+     "Festival des Neuen Lateinamerikanischen Films (Dezember, Havanna)"
+    ],
+    "lifestyle": "Musik und Tanz sind allgegenwärtig (Son, Salsa, Rumba); Baseball, Domino und Abende am Malecón gehören zum Alltag. Trotz Engpässen leben Kubaner von Einfallsreichtum und Zusammenhalt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Altstadt von Havanna (UNESCO)",
+     "Tal von Viñales",
+     "Trinidad und das Valle de los Ingenios",
+     "Cienfuegos",
+     "Strände von Varadero",
+     "Santiago de Cuba"
+    ],
+    "bestSeasons": "November – April ist trocken und sonnig, Dezember – März am vollsten. Der Sommer ist heiß und feucht, August – Oktober mit dem höchsten Hurrikanrisiko.",
+    "travelStyleTip": "In Casas particulares übernachten – authentischer, und die Gastgeber helfen bei Stromausfällen. Viazul-Tickets vorab buchen, Offline-Karten laden und Bargeld für die ganze Reise mitnehmen."
+   },
+   "religion": {
+    "primaryReligions": "Katholiken ~55-60 % (meist nicht praktizierend), konfessionslos ~20-25 %, Protestanten ~9 %; die afrokubanische Santería (Regla de Ocha) ist verbreitet und mit dem Katholizismus verwoben",
+    "respectNorms": "In Kirchen Schultern bedecken. Weiß gekleidete Santería-Novizen (Iyawó) nicht fotografieren und nicht ungefragt an Ritualen teilnehmen.",
+    "sacredSites": [
+     "Basilika El Cobre (bei Santiago de Cuba)",
+     "Kathedrale von Havanna",
+     "Kirche von Regla (Virgen de Regla – Yemayá)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Spanisch (schnelles, slangreiches kubanisches Spanisch)",
+    "englishProficiency": "Bei Hotel- und Tourismuspersonal einfach bis mittel, sonst gering.",
+    "phrases": [
+     {
+      "phrase": "¿Qué bolá?",
+      "meaning": "Was geht? (kubanischer Slang)",
+      "translation": "Was geht? (kubanischer Slang)",
+      "pronunciation": "keh boh-LAH"
+     },
+     {
+      "phrase": "Asere",
+      "meaning": "Kumpel (kubanischer Slang)",
+      "translation": "Kumpel (kubanischer Slang)",
+      "pronunciation": "ah-SEH-reh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Insel der Taíno wurde nach der Ankunft von Kolumbus 1492 spanische Kolonie; Havanna wurde 1519 am heutigen Ort gegründet. Die Zucker- und Tabakwirtschaft beruhte auf der Arbeit versklavter Afrikaner. Nach den Unabhängigkeitskriegen 1868 – 1898 wurde Kuba 1902 unabhängige Republik; die Revolution von 1959 prägte die moderne Geschichte.",
+    "milestones": [
+     "1492: Kolumbus erreicht Kuba",
+     "1519: Havanna am heutigen Standort gegründet",
+     "1902: Unabhängige Republik Kuba",
+     "1959: Kubanische Revolution"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ropa vieja (gezupftes Rindfleisch in Tomatensoße)",
+     "Moros y cristianos (Reis mit schwarzen Bohnen)",
+     "Lechón asado (Spanferkel)"
+    ],
+    "traditionalDrinks": [
+     "Café cubano (starker süßer Espresso)",
+     "Guarapo (frischer Zuckerrohrsaft)",
+     "Mojito und Rum (alkoholisch)"
+    ],
+    "streetFoodAndDesserts": [
+     "Tostones (frittierte Kochbananen)",
+     "Flan (Karamellpudding)",
+     "Cucurucho (Kokos-Süßigkeit in Palmblatttüte, Baracoa)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Martí (Dichter und Nationalheld)",
+     "Celia Cruz (Königin des Salsa)",
+     "Alicia Alonso (Primaballerina)"
+    ],
+    "strongSectors": [
+     "Tourismus",
+     "Nickelbergbau",
+     "Zigarren (Habanos) und Rum"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Weitgehend Bargeldwirtschaft: US-Karten funktionieren nicht, andere Karten werden oft abgelehnt, Geldautomaten sind unzuverlässig. Preise in CUP oder USD; offiziell tauscht man bei Banken und CADECA, saubere EUR/USD-Scheine mitbringen.",
+    "tippingCulture": "Trinkgeld ist für Einheimische sehr wichtig: 10 % im Restaurant und kleine Scheine für Musiker, Guides, Zimmerpersonal und Toilettenpersonal.",
+    "economicPillars": "Tourismus, Rücküberweisungen, Export medizinischer Dienstleistungen, Nickel, Tabak und Zucker."
+   }
+  },
+  "itin": {
+   "routeName": "Kuba von West nach Ost: Viñales, Havanna, Cienfuegos & Trinidad",
+   "routeSummary": "Eine 8-tägige Route: Nach der Landung in Havanna zuerst westwärts zu den Tabakfeldern im Tal von Viñales, dann Altstadt Havanna, Cienfuegos, die „Perle des Südens“, und die Kolonialstadt Trinidad.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Route",
+   "bestSeason": "November – April",
+   "transportMode": "Viazul-Busse und Sammeltaxis (Colectivos; vorab buchen)",
+   "paceLevel": "Entspannt (Kultur, Musik & Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Tal von Viñales",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kalksteinhügel (Mogotes)",
+      "Tabakfarm (Vega)",
+      "Höhle Cueva del Indio",
+      "Aussichtspunkt Los Jazmines"
+     ],
+     "activities": [
+      "Einen Ausritt durch das Tal machen.",
+      "Auf einer Tabakfarm beim Zigarrenrollen zusehen.",
+      "Den Sonnenuntergang von Los Jazmines aus genießen."
+     ],
+     "foodAndDrinks": [
+      "Mittagessen auf dem Hof (Reis, Bohnen, Huhn)",
+      "Guayabita-del-Pinar-Likör (alkoholisch)"
+     ],
+     "criticalTips": [
+      "Mit dem Colectivo ~3 Std. ab Havanna; Weiterfahrt vorab buchen.",
+      "Für auf Farmen ohne Siegel verkaufte Zigarren gelten Ausfuhrmengengrenzen."
+     ],
+     "mapsQuery": "Viñales, Pinar del Río, Cuba"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Havanna",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Altstadt: Plaza Vieja und Plaza de la Catedral",
+      "Uferpromenade Malecón",
+      "Capitolio",
+      "Fusterlandia (Mosaikkunst-Viertel)"
+     ],
+     "activities": [
+      "Mit einem amerikanischen Oldtimer den Malecón entlangfahren.",
+      "In den Bars der Altstadt Live-Son und Salsa hören.",
+      "Einen Kunst- und Musikabend in der Fábrica de Arte Cubano (FAC) verbringen."
+     ],
+     "foodAndDrinks": [
+      "Ropa vieja",
+      "Moros y cristianos",
+      "Mojito (alkoholisch)"
+     ],
+     "criticalTips": [
+      "Auf der Calle Obispo „Guides“ und Zigarrenverkäufer höflich abweisen.",
+      "Bei Stromausfällen helfen Taschenlampe und Powerbank; Aufzüge meiden."
+     ],
+     "mapsQuery": "La Habana, Cuba"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Cienfuegos (Perle des Südens)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Parque José Martí (UNESCO)",
+      "Teatro Tomás Terry",
+      "Palacio de Valle und Halbinsel Punta Gorda"
+     ],
+     "activities": [
+      "Über den Prado und den Malecón spazieren.",
+      "Den Sonnenuntergang von der Terrasse des Palacio de Valle aus sehen.",
+      "Tagesausflug zu den Wasserfällen von El Nicho."
+     ],
+     "foodAndDrinks": [
+      "Meeresfrüchte und Languste",
+      "Tostones"
+     ],
+     "criticalTips": [
+      "Eine ruhige Stadt und guter Zwischenstopp zwischen Havanna und Trinidad.",
+      "Transport nach El Nicho vorab organisieren; es gibt keinen Nahverkehr."
+     ],
+     "mapsQuery": "Cienfuegos, Cuba"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Trinidad",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Plaza Mayor und koloniale Gassen (UNESCO)",
+      "Valle de los Ingenios und Turm Manaca Iznaga",
+      "Playa Ancón",
+      "Treppe der Casa de la Música"
+     ],
+     "activities": [
+      "Abends auf der Treppe der Casa de la Música Salsa tanzen.",
+      "Das Valle de los Ingenios zu Pferd oder mit dem Touristenzug besuchen.",
+      "An der Playa Ancón baden."
+     ],
+     "foodAndDrinks": [
+      "Canchánchara (Honig, Limette und Rum; alkoholisch)",
+      "Gegrillte Languste"
+     ],
+     "criticalTips": [
+      "Das Kopfsteinpflaster ist sehr uneben; bequeme Schuhe tragen.",
+      "Karten werden fast nie akzeptiert; Bargeld für Unterkunft und Essen einplanen."
+     ],
+     "mapsQuery": "Trinidad, Sancti Spíritus, Cuba"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado (Schwein)"
+    ],
+    "drinks": [
+     "Café cubano",
+     "Guarapo",
+     "Mojito (alkoholisch)"
+    ],
+    "streetFoods": [
+     "Tostones",
+     "Flan",
+     "Cucurucho"
+    ],
+    "diningAdvice": "Das beste Essen gibt es in Privatrestaurants (Paladares) und Casas particulares; nicht alles auf der Karte ist immer verfügbar. Vor der Bestellung fragen, ob die Preise in USD oder CUP sind."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reisestecker Typ A/B (prüfen, ob das Gerät 110 V unterstützt)",
+     "Genug Bargeld in EUR/USD für die ganze Reise (saubere Scheine)",
+     "Taschenlampe, Powerbank und Grundmedikamente",
+     "Mückenschutz und Sonnencreme"
+    ],
+    "safetyAndEtiquette": [
+     "Eine Reisekrankenversicherung ist bei der Einreise Pflicht; den Nachweis ausgedruckt mitführen.",
+     "Kleine Geschenke für Gastgeber mitbringen und Trinkgeld in kleinen Scheinen geben."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "110V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Die meisten Steckdosen sind amerikanisch (A/B) mit 110 V; einige neuere Hotels haben Eurosteckdosen (C) mit 220 V. Spannungsangabe an der Dose prüfen und Adapter mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Kein Leitungswasser trinken; da Flaschenwasser manchmal knapp ist, Entkeimungstabletten oder eine Filterflasche mitbringen.",
+    "vaccines": [
+     "Hepatitis A und Typhus empfohlen",
+     "Mückenschutz wegen Ausbrüchen von Dengue, Chikungunya und Oropouche",
+     "Eigene Medikamente in ausreichender Menge mitbringen (Apotheken haben Engpässe)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "Im Restaurant werden 10 % erwartet; Trinkgeld ist im Service ein wichtiger Teil des Einkommens.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kleine USD/EUR- oder CUP-Scheine für Musiker, Guides, Zimmerpersonal und Toilettenpersonal bereithalten."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (keine Steuererstattung für Touristen)",
+    "minSpend": "Entfällt",
+    "customsNote": "Kuba erstattet Touristen keine Mehrwertsteuer. Bei der Ausfuhr von Zigarren über eine bestimmte Menge hinaus sind eine offizielle Quittung und versiegelte Originalkisten nötig; auch die Zollgrenzen des Ziellandes beachten."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "2 - 5 $",
+    "topCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "airportSimTrapWarning": "Einziger Anbieter ist die staatliche ETECSA; die Touristen-SIM Cubacel Tur gibt es mit Pass am Flughafen oder in ETECSA-Büros (Online-Vorbestellung möglich), die Schlangen sind lang. Internationale eSIMs funktionieren oft nicht oder sind sehr teuer; da viele Apps und Bankseiten wegen US-Sanktionen kubanische IPs sperren, VPN installieren und Offline-Karten laden."
+   },
+   "touristScams": [
+    {
+     "title": "Jinetero-Masche",
+     "desc": "Ein freundlicher Einheimischer beginnt ein Gespräch und lockt mit Sprüchen wie „heute ist Zigarrenfest“ in Bars, Restaurants oder zu falschen Zigarren – gegen Provision.",
+     "tip": "Höflich danken und weitergehen; Restaurants und Zigarrenläden selbst wählen."
+    },
+    {
+     "title": "Wechselgeld in falscher Währung",
+     "desc": "Man zahlt in USD und erhält Wechselgeld in viel weniger wertvollen CUP oder zu einem willkürlichen Kurs.",
+     "tip": "Vorher fragen, in welcher Währung der Preis gilt, und kleine Scheine dabeihaben."
+    },
+    {
+     "title": "Überhöhte Taxipreise",
+     "desc": "Oldtimer ohne Taxameter und Pferdekutschen verlangen am Ende ein Vielfaches des genannten Preises.",
+     "tip": "Preis und Währung vor dem Einsteigen vereinbaren; am besten das Taxi über die Unterkunft buchen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Peso cubano (CUP)",
+   "plugType": "Tipo A, B, C (110V / 220V, 60Hz)",
+   "bestMonths": "Noviembre – abril (seco y más fresco); de junio a noviembre es temporada de huracanes, la más riesgosa de agosto a octubre",
+   "safety": {
+    "crimeRateSummary": "La delincuencia violenta contra turistas es relativamente baja, pero con la crisis económica han aumentado los arrebatos y robos en La Habana. Hay largos apagones en todo el país y escasez de combustible, alimentos, medicinas y agua; los huracanes son un riesgo serio.",
+    "commonScams": [
+     "Jineteros amables que le llevan a bares, paladares caros o venta de tabacos falsos a cambio de comisión",
+     "Dar el cambio en CUP de poco valor en lugar de dólares",
+     "Taxis en almendrones y coches de caballos que multiplican el precio al final"
+    ],
+    "safeTravelTips": [
+     "Lleve efectivo suficiente (EUR o USD en billetes limpios y sin roturas); las tarjetas emitidas en EE. UU. no funcionan y otras extranjeras suelen fallar.",
+     "Lleve linterna, batería externa y sus medicinas básicas por los apagones y la escasez.",
+     "Compre tabacos solo en las Casas del Habano oficiales, con factura."
+    ],
+    "emergencyNumbers": {
+     "police": "106",
+     "ambulance": "104",
+     "general": "106"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "3G/4G lento en ciudades; con los apagones las antenas pueden caer; poca cobertura rural",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Deficiente (buses Viazul y taxis colectivos; los trenes no son fiables; la escasez de combustible afecta los servicios)",
+    "costLevel": "Moderado (precios turísticos en divisas)",
+    "singleTicketUsd": "0.10 - 0.50 $ (guagua local; llena e irregular)",
+    "dailyPassUsd": "No hay pase diario; un taxi urbano cuesta ~5 - 15 $",
+    "popularRideApps": [
+     "La Nave",
+     "Bajanda"
+    ],
+    "taxiAdvice": "Uber y las apps internacionales no funcionan; las locales La Nave y Bajanda tienen servicio limitado. Los taxis no suelen tener taxímetro: acuerde precio y moneda (USD/CUP) antes de subir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 140 $",
+    "budgetMealUsd": "5 - 12 $ (paladar)",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "1 - 2 $ (a veces escasea)",
+    "hostelDormUsd": "25 - 40 $ (habitación en casa particular)",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Alto (~16-20 h con escala)",
+    "flightTip": "No hay vuelos sin escala desde Turquía; compare el servicio de Turkish Airlines a La Habana vía Caracas con conexiones por Madrid (Iberia, Air Europa) o París (Air France)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Se saluda con un beso en la mejilla o un apretón cálido; los cubanos son cercanos y conversadores.",
+     "Por la escasez, pequeños regalos para los anfitriones (jabón, pasta de dientes, medicinas básicas) se agradecen mucho.",
+     "Pida permiso antes de fotografiar; los artistas callejeros que posan esperan una propina."
+    ],
+    "festivals": [
+     "Festival Internacional Jazz Plaza (enero, La Habana)",
+     "Carnaval de Santiago de Cuba (julio)",
+     "Festival del Nuevo Cine Latinoamericano (diciembre, La Habana)"
+    ],
+    "lifestyle": "La música y el baile están en todas partes (son, salsa, rumba); la pelota, el dominó y las tardes en el Malecón forman parte de la vida diaria. Los cubanos resuelven con ingenio y solidaridad pese a la escasez."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "La Habana Vieja (UNESCO)",
+     "Valle de Viñales",
+     "Trinidad y el Valle de los Ingenios",
+     "Cienfuegos",
+     "Playas de Varadero",
+     "Santiago de Cuba"
+    ],
+    "bestSeasons": "De noviembre a abril es seco y soleado, con diciembre – marzo como temporada alta. El verano es caluroso y húmedo, y agosto – octubre tiene el mayor riesgo de huracanes.",
+    "travelStyleTip": "Alójese en casas particulares: es más auténtico y el anfitrión ayuda en los apagones. Reserve Viazul con antelación, descargue mapas sin conexión y lleve efectivo para todo el viaje."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~55-60 % (mayoría no practicante), sin religión ~20-25 %, protestantes ~9 %; la santería afrocubana (Regla de Ocha) está muy extendida y mezclada con el catolicismo",
+    "respectNorms": "Cubra los hombros en las iglesias. No fotografíe a los iyawós vestidos de blanco ni se sume a rituales sin permiso.",
+    "sacredSites": [
+     "Basílica del Cobre (cerca de Santiago de Cuba)",
+     "Catedral de La Habana",
+     "Iglesia de Regla (Virgen de Regla – Yemayá)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Español (cubano, rápido y con mucha jerga)",
+    "englishProficiency": "Básico a regular en hoteles y turismo; limitado en el resto.",
+    "phrases": [
+     {
+      "phrase": "¿Qué bolá?",
+      "meaning": "¿Qué tal? (cubanismo)",
+      "translation": "¿Qué tal? (cubanismo)",
+      "pronunciation": "keh boh-LAH"
+     },
+     {
+      "phrase": "Asere",
+      "meaning": "Amigo / compadre (cubanismo)",
+      "translation": "Amigo / compadre (cubanismo)",
+      "pronunciation": "ah-SEH-reh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Tierra del pueblo taíno, la isla pasó a ser colonia española tras la llegada de Colón en 1492, y La Habana se fundó en su sitio actual en 1519. La economía del azúcar y el tabaco se basó en el trabajo de africanos esclavizados. Tras las guerras de independencia de 1868 – 1898, Cuba fue república independiente en 1902; la Revolución de 1959 marcó su historia moderna.",
+    "milestones": [
+     "1492: Colón llega a Cuba",
+     "1519: La Habana se funda en su sitio actual",
+     "1902: República de Cuba independiente",
+     "1959: Revolución cubana"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado"
+    ],
+    "traditionalDrinks": [
+     "Café cubano (cafecito)",
+     "Guarapo",
+     "Mojito y ron (con alcohol)"
+    ],
+    "streetFoodAndDesserts": [
+     "Tostones",
+     "Flan",
+     "Cucurucho de Baracoa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Martí (poeta y héroe nacional)",
+     "Celia Cruz (la reina de la salsa)",
+     "Alicia Alonso (prima ballerina)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Minería del níquel",
+     "Tabacos (Habanos) y ron"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Economía mayormente en efectivo: las tarjetas de EE. UU. no funcionan, otras suelen fallar y los cajeros no son fiables. Los precios pueden estar en CUP o USD; cambie oficialmente en bancos y CADECA y lleve billetes de EUR/USD en buen estado.",
+    "tippingCulture": "La propina es clave para los ingresos locales: 10 % en restaurantes y billetes pequeños para músicos, guías, camareras de piso y encargados de baños.",
+    "economicPillars": "Turismo, remesas, exportación de servicios médicos, níquel, tabaco y azúcar."
+   }
+  },
+  "itin": {
+   "routeName": "Cuba de oeste a este: Viñales, La Habana, Cienfuegos y Trinidad",
+   "routeSummary": "Una ruta de 8 días: tras aterrizar en La Habana, primero al oeste a los vegueríos del Valle de Viñales, luego La Habana Vieja, Cienfuegos, la “Perla del Sur”, y la villa colonial de Trinidad.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 8 días",
+   "bestSeason": "Noviembre – abril",
+   "transportMode": "Buses Viazul y taxis colectivos (reserve con antelación)",
+   "paceLevel": "Relajado (cultura, música y naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Valle de Viñales",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Mogotes de piedra caliza",
+      "Vega de tabaco",
+      "Cueva del Indio",
+      "Mirador de Los Jazmines"
+     ],
+     "activities": [
+      "Recorra el valle a caballo.",
+      "Vea cómo se tuerce un tabaco en una vega.",
+      "Disfrute el atardecer desde Los Jazmines."
+     ],
+     "foodAndDrinks": [
+      "Almuerzo campesino (arroz, frijoles, pollo)",
+      "Licor de guayabita del Pinar (con alcohol)"
+     ],
+     "criticalTips": [
+      "Son ~3 h desde La Habana en colectivo; reserve antes su siguiente traslado.",
+      "Los tabacos de vega sin sello oficial tienen límite de cantidad para exportar."
+     ],
+     "mapsQuery": "Viñales, Pinar del Río, Cuba"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: La Habana",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "La Habana Vieja: Plaza Vieja y Plaza de la Catedral",
+      "El Malecón",
+      "El Capitolio",
+      "Fusterlandia"
+     ],
+     "activities": [
+      "Recorra el Malecón en un almendrón clásico.",
+      "Escuche son y salsa en vivo en los bares de La Habana Vieja.",
+      "Pase una noche de arte y música en la Fábrica de Arte Cubano (FAC)."
+     ],
+     "foodAndDrinks": [
+      "Ropa vieja",
+      "Moros y cristianos",
+      "Mojito (con alcohol)"
+     ],
+     "criticalTips": [
+      "Diga que no con amabilidad a “guías” y vendedores de tabaco en la calle Obispo.",
+      "En los apagones ayudan la linterna y la batería; evite los ascensores."
+     ],
+     "mapsQuery": "La Habana, Cuba"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cienfuegos (la Perla del Sur)",
+     "recommendedDuration": "1 Día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Parque José Martí (UNESCO)",
+      "Teatro Tomás Terry",
+      "Palacio de Valle y Punta Gorda"
+     ],
+     "activities": [
+      "Pasee por el Prado y el Malecón.",
+      "Vea el atardecer desde la terraza del Palacio de Valle.",
+      "Haga una excursión a las cascadas de El Nicho."
+     ],
+     "foodAndDrinks": [
+      "Mariscos y langosta",
+      "Tostones"
+     ],
+     "criticalTips": [
+      "Es una ciudad tranquila y buena parada entre La Habana y Trinidad.",
+      "Organice antes el transporte a El Nicho; no hay transporte público."
+     ],
+     "mapsQuery": "Cienfuegos, Cuba"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Trinidad",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Plaza Mayor y calles coloniales (UNESCO)",
+      "Valle de los Ingenios y torre Manaca Iznaga",
+      "Playa Ancón",
+      "Escalinata de la Casa de la Música"
+     ],
+     "activities": [
+      "Baile salsa de noche en la escalinata de la Casa de la Música.",
+      "Vaya al Valle de los Ingenios a caballo o en tren turístico.",
+      "Báñese en Playa Ancón."
+     ],
+     "foodAndDrinks": [
+      "Canchánchara (con alcohol)",
+      "Langosta a la parrilla"
+     ],
+     "criticalTips": [
+      "El empedrado es muy irregular; use calzado cómodo.",
+      "Casi no se aceptan tarjetas; reserve efectivo para alojamiento y comidas."
+     ],
+     "mapsQuery": "Trinidad, Sancti Spíritus, Cuba"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado (cerdo)"
+    ],
+    "drinks": [
+     "Café cubano",
+     "Guarapo",
+     "Mojito (con alcohol)"
+    ],
+    "streetFoods": [
+     "Tostones",
+     "Flan",
+     "Cucurucho"
+    ],
+    "diningAdvice": "La mejor comida está en paladares y casas particulares; no siempre hay de todo lo que dice la carta. Pregunte si los precios son en USD o CUP antes de pedir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (compruebe que su aparato admite 110 V)",
+     "Efectivo suficiente en EUR/USD para todo el viaje (billetes limpios)",
+     "Linterna, batería externa y medicinas básicas",
+     "Repelente y protector solar"
+    ],
+    "safetyAndEtiquette": [
+     "El seguro médico de viaje es obligatorio para entrar; lleve la póliza impresa.",
+     "Lleve pequeños regalos para los anfitriones y dé propinas en billetes pequeños."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "110V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "La mayoría de los enchufes son americanos (A/B) a 110 V; algunos hoteles nuevos tienen tipo C europeo a 220 V. Mire la etiqueta de voltaje y lleve adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "No beba agua del grifo; como a veces escasea el agua embotellada, lleve pastillas potabilizadoras o una botella con filtro.",
+    "vaccines": [
+     "Se recomiendan hepatitis A y fiebre tifoidea",
+     "Protección contra mosquitos por brotes de dengue, chikungunya y Oropouche",
+     "Lleve suficientes medicinas personales (hay escasez en farmacias)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "En restaurantes se espera un 10 %; la propina es parte importante de los ingresos en los servicios.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Tenga a mano billetes pequeños en USD/EUR o CUP para músicos, guías, camareras y baños."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (sin devolución de impuestos a turistas)",
+    "minSpend": "No aplica",
+    "customsNote": "Cuba no devuelve impuestos a turistas. Para sacar tabacos por encima de cierto límite se necesita factura de tienda oficial y cajas originales selladas; consulte también los límites aduaneros de su país de destino."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "2 - 5 $",
+    "topCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "airportSimTrapWarning": "El único operador es la estatal ETECSA; el chip turístico Cubacel Tur se compra con pasaporte en el aeropuerto u oficinas de ETECSA (se puede reservar en línea) y hay largas colas. Las eSIM internacionales a menudo no funcionan o son muy caras; como muchas apps y webs bancarias bloquean las IP cubanas por las sanciones de EE. UU., instale una VPN y descargue mapas sin conexión."
+   },
+   "touristScams": [
+    {
+     "title": "El jinetero",
+     "desc": "Un local amable le da conversación y, con frases como “hoy hay festival del tabaco”, le lleva a un bar, paladar o vendedor de tabacos falsos que le paga comisión.",
+     "tip": "Agradezca con amabilidad y siga; elija usted los restaurantes y tiendas."
+    },
+    {
+     "title": "Cambio en otra moneda",
+     "desc": "Paga en USD y le dan el cambio en CUP de mucho menor valor o a un tipo arbitrario.",
+     "tip": "Pregunte antes en qué moneda es el precio y lleve billetes pequeños."
+    },
+    {
+     "title": "Taxis con precio inflado",
+     "desc": "Almendrones sin taxímetro y coches de caballos piden al final varias veces lo acordado.",
+     "tip": "Acuerde precio y moneda antes de subir; mejor que la casa le pida el taxi."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Кубинское песо (CUP)",
+   "plugType": "Тип A, B, C (110V / 220V, 60Hz)",
+   "bestMonths": "Ноябрь – апрель (сухо и прохладнее); июнь – ноябрь — сезон ураганов, самые опасные месяцы — август – октябрь",
+   "safety": {
+    "crimeRateSummary": "Насильственных преступлений против туристов относительно мало, но из-за экономического кризиса в Гаване участились рывки сумок и кражи. По всей стране долгие отключения электричества, нехватка топлива, продуктов, лекарств и воды; серьёзный риск представляют ураганы.",
+    "commonScams": [
+     "Дружелюбные «хинетерос», которые за комиссию ведут в дорогие бары, рестораны или к поддельным сигарам",
+     "Сдача дешёвыми CUP вместо долларов США",
+     "Ретро-такси и конные повозки, которые в конце поездки требуют в разы больше"
+    ],
+    "safeTravelTips": [
+     "Везите достаточно наличных (EUR или USD, чистые и целые купюры): карты банков США не работают, другие иностранные карты часто отклоняются.",
+     "Возьмите фонарик, пауэрбанк и базовые лекарства — на случай отключений и дефицита.",
+     "Покупайте сигары только в официальных магазинах Casa del Habano с чеком."
+    ],
+    "emergencyNumbers": {
+     "police": "106",
+     "ambulance": "104",
+     "general": "106"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Медленный 3G/4G в городах; при отключениях электричества вышки тоже отключаются; в глубинке связь слабая",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Ограничено",
+    "bestCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Слабый (междугородние автобусы Viazul и маршрутные такси «колективо»; поезда ненадёжны; нехватка топлива срывает рейсы)",
+    "costLevel": "Средний (туристические цены в валюте)",
+    "singleTicketUsd": "0.10 - 0.50 $ (городской автобус; переполнен и нерегулярен)",
+    "dailyPassUsd": "Дневного билета нет; поездка на такси по городу ~5 - 15 $",
+    "popularRideApps": [
+     "La Nave",
+     "Bajanda"
+    ],
+    "taxiAdvice": "Uber и международные приложения не работают; местные La Nave и Bajanda работают ограниченно. Такси обычно без счётчика — заранее договоритесь о цене и валюте (USD/CUP)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 140 $",
+    "budgetMealUsd": "5 - 12 $ (паладар — частный ресторан)",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "1 - 2 $ (временами в дефиците)",
+    "hostelDormUsd": "25 - 40 $ (комната в каса-партикуляр)",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Высокий (~16-20 ч с пересадкой)",
+    "flightTip": "Беспосадочных рейсов из Турции нет; сравните рейс Turkish Airlines в Гавану через Каракас со стыковками через Мадрид (Iberia, Air Europa) или Париж (Air France)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Здороваются поцелуем в щёку или тёплым рукопожатием; кубинцы дружелюбны и разговорчивы.",
+     "Из-за дефицита хозяева очень ценят небольшие подарки (мыло, зубная паста, простые лекарства).",
+     "Спрашивайте разрешения на съёмку; уличные артисты, позирующие для фото, ждут небольших чаевых."
+    ],
+    "festivals": [
+     "Международный джазовый фестиваль в Гаване (январь)",
+     "Карнавал в Сантьяго-де-Куба (июль)",
+     "Фестиваль нового латиноамериканского кино (декабрь, Гавана)"
+    ],
+    "lifestyle": "Музыка и танцы повсюду (сон, сальса, румба); бейсбол, домино и вечера на Малеконе — часть повседневности. Несмотря на дефицит, кубинцы живут изобретательностью и взаимопомощью."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Старая Гавана (ЮНЕСКО)",
+     "Долина Виньялес",
+     "Тринидад и Долина сахарных заводов",
+     "Сьенфуэгос",
+     "Пляжи Варадеро",
+     "Сантьяго-де-Куба"
+    ],
+    "bestSeasons": "Ноябрь – апрель — сухо и солнечно, пик сезона — декабрь – март. Лето жаркое и влажное, наибольший риск ураганов — август – октябрь.",
+    "travelStyleTip": "Останавливайтесь в каса-партикуляр — это аутентичнее, и хозяева помогут при отключениях. Билеты Viazul берите заранее, скачайте офлайн-карты и везите наличные на всю поездку."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~55-60% (в основном непрактикующие), неверующие ~20-25%, протестанты ~9%; широко распространена афрокубинская сантерия (Регла-де-Оча), переплетённая с католичеством",
+    "respectNorms": "В церквях прикрывайте плечи. Не фотографируйте одетых в белое посвящённых сантерии (ияво) и не присоединяйтесь к обрядам без разрешения.",
+    "sacredSites": [
+     "Базилика Эль-Кобре (под Сантьяго-де-Куба)",
+     "Гаванский собор",
+     "Церковь Регла (Дева Регла — Йемайя)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Испанский (быстрый кубинский вариант со множеством сленга)",
+    "englishProficiency": "Базовый или средний у персонала отелей и туризма, в остальном слабый.",
+    "phrases": [
+     {
+      "phrase": "¿Qué bolá?",
+      "meaning": "Как дела? (кубинский сленг)",
+      "translation": "Как дела? (кубинский сленг)",
+      "pronunciation": "keh boh-LAH"
+     },
+     {
+      "phrase": "Asere",
+      "meaning": "Дружище (кубинский сленг)",
+      "translation": "Дружище (кубинский сленг)",
+      "pronunciation": "ah-SEH-reh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Остров народа таино стал испанской колонией после прибытия Колумба в 1492 г.; Гавана основана на нынешнем месте в 1519 г. Сахарная и табачная экономика держалась на труде порабощённых африканцев. После войн за независимость 1868 – 1898 гг. Куба в 1902 г. стала независимой республикой; революция 1959 г. определила её новейшую историю.",
+    "milestones": [
+     "1492: Колумб достигает Кубы",
+     "1519: Гавана основана на нынешнем месте",
+     "1902: независимая Республика Куба",
+     "1959: Кубинская революция"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ропа вьеха (тушёная рваная говядина в томатном соусе)",
+     "Морос и кристианос (рис с чёрной фасолью)",
+     "Лечон асадо (запечённая свинина)"
+    ],
+    "traditionalDrinks": [
+     "Кубинский кофе (крепкий сладкий эспрессо)",
+     "Гуарапо (свежий сок сахарного тростника)",
+     "Мохито и ром (алкогольные)"
+    ],
+    "streetFoodAndDesserts": [
+     "Тостонес (жареные зелёные бананы)",
+     "Флан (карамельный пудинг)",
+     "Кукуручо (кокосовая сладость в кульке из пальмового листа, Баракоа)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Хосе Марти (поэт и национальный герой)",
+     "Селия Крус (королева сальсы)",
+     "Алисия Алонсо (прима-балерина)"
+    ],
+    "strongSectors": [
+     "Туризм",
+     "Добыча никеля",
+     "Сигары (Habanos) и ром"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В основном наличная экономика: карты банков США не работают, другие часто отклоняются, банкоматы ненадёжны. Цены могут быть в CUP или USD; официально меняйте в банках и обменниках CADECA, привозите чистые купюры EUR/USD.",
+    "tippingCulture": "Чаевые очень важны для доходов местных: 10% в ресторанах и мелкие купюры музыкантам, гидам, горничным и смотрителям туалетов.",
+    "economicPillars": "Туризм, денежные переводы, экспорт медицинских услуг, никель, табак и сахар."
+   }
+  },
+  "itin": {
+   "routeName": "Куба с запада на восток: Виньялес, Гавана, Сьенфуэгос и Тринидад",
+   "routeSummary": "8-дневный маршрут: после прилёта в Гавану сначала на запад, к табачным плантациям долины Виньялес, затем Старая Гавана, «Жемчужина юга» Сьенфуэгос и колониальный Тринидад.",
+   "totalDays": 8,
+   "idealDurationText": "Маршрут на 8 дней",
+   "bestSeason": "Ноябрь – апрель",
+   "transportMode": "Автобусы Viazul и маршрутные такси «колективо» (бронируйте заранее)",
+   "paceLevel": "Спокойный (культура, музыка и природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Долина Виньялес",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Известняковые холмы-моготы",
+      "Табачная ферма (вега)",
+      "Пещера Куэва-дель-Индио",
+      "Смотровая площадка Лос-Хасминес"
+     ],
+     "activities": [
+      "Прокатитесь по долине верхом.",
+      "Посмотрите, как скручивают сигары на табачной ферме.",
+      "Встретьте закат на Лос-Хасминес."
+     ],
+     "foodAndDrinks": [
+      "Фермерский обед (рис, фасоль, курица)",
+      "Ликёр гуаябита-дель-Пинар (алкогольный)"
+     ],
+     "criticalTips": [
+      "Из Гаваны ~3 часа на «колективо»; дальнейший трансфер бронируйте заранее.",
+      "Сигары с ферм без официальной пломбы вывозятся в ограниченном количестве."
+     ],
+     "mapsQuery": "Viñales, Pinar del Río, Cuba"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Гавана",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Старая Гавана: Пласа-Вьеха и Пласа-де-ла-Катедраль",
+      "Набережная Малекон",
+      "Капитолий",
+      "Фустерландия (квартал мозаичного искусства)"
+     ],
+     "activities": [
+      "Прокатитесь по Малекону на классическом американском автомобиле.",
+      "Послушайте живые сон и сальсу в барах Старой Гаваны.",
+      "Проведите вечер искусства и музыки на Fábrica de Arte Cubano (FAC)."
+     ],
+     "foodAndDrinks": [
+      "Ропа вьеха",
+      "Морос и кристианос",
+      "Мохито (алкогольный)"
+     ],
+     "criticalTips": [
+      "Вежливо отказывайте «гидам» и продавцам сигар на улице Обиспо.",
+      "При отключениях выручат фонарик и пауэрбанк; избегайте лифтов."
+     ],
+     "mapsQuery": "La Habana, Cuba"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Сьенфуэгос («Жемчужина юга»)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Парк Хосе Марти (ЮНЕСКО)",
+      "Театр Томаса Терри",
+      "Дворец Валье и полуостров Пунта-Горда"
+     ],
+     "activities": [
+      "Прогуляйтесь по бульвару Прадо и набережной.",
+      "Встретьте закат на террасе дворца Валье.",
+      "Съездите на день к водопадам Эль-Ничо."
+     ],
+     "foodAndDrinks": [
+      "Морепродукты и лангуст",
+      "Тостонес"
+     ],
+     "criticalTips": [
+      "Спокойный город и удобная остановка между Гаваной и Тринидадом.",
+      "Транспорт до Эль-Ничо организуйте заранее — общественного нет."
+     ],
+     "mapsQuery": "Cienfuegos, Cuba"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Тринидад",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Пласа-Майор и колониальные улочки (ЮНЕСКО)",
+      "Долина сахарных заводов и башня Манака-Иснага",
+      "Пляж Анкон",
+      "Ступени Каса-де-ла-Мусика"
+     ],
+     "activities": [
+      "Вечером потанцуйте сальсу на ступенях Каса-де-ла-Мусика.",
+      "Съездите в Долину сахарных заводов верхом или на туристическом поезде.",
+      "Искупайтесь на пляже Анкон."
+     ],
+     "foodAndDrinks": [
+      "Канчанчара (мёд, лайм и ром; алкогольный)",
+      "Лангуст на гриле"
+     ],
+     "criticalTips": [
+      "Брусчатка очень неровная — наденьте удобную обувь.",
+      "Карты почти не принимают — держите наличные на жильё и еду."
+     ],
+     "mapsQuery": "Trinidad, Sancti Spíritus, Cuba"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ропа вьеха",
+     "Морос и кристианос",
+     "Лечон асадо (свинина)"
+    ],
+    "drinks": [
+     "Кубинский кофе",
+     "Гуарапо",
+     "Мохито (алкогольный)"
+    ],
+    "streetFoods": [
+     "Тостонес",
+     "Флан",
+     "Кукуручо"
+    ],
+    "diningAdvice": "Лучшая еда — в частных ресторанах (паладарах) и каса-партикуляр; не всё из меню всегда есть в наличии. Перед заказом уточните, в USD или CUP указаны цены."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник A/B (проверьте, что устройство работает от 110 В)",
+     "Достаточно наличных EUR/USD на всю поездку (чистые купюры)",
+     "Фонарик, пауэрбанк и базовые лекарства",
+     "Репеллент и солнцезащитный крем"
+    ],
+    "safetyAndEtiquette": [
+     "Медицинская страховка обязательна для въезда — имейте распечатку полиса.",
+     "Привезите хозяевам небольшие подарки и давайте чаевые мелкими купюрами."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "110V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Большинство розеток американские (A/B) на 110 В; в некоторых новых отелях есть европейские типа C на 220 В. Смотрите маркировку напряжения у розетки и возьмите переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Не пейте воду из-под крана; бутилированной воды временами нет, поэтому возьмите таблетки для обеззараживания или бутылку с фильтром.",
+    "vaccines": [
+     "Рекомендуются прививки от гепатита A и брюшного тифа",
+     "Защита от комаров из-за вспышек денге, чикунгуньи и оропуче",
+     "Возьмите достаточный запас своих лекарств (в аптеках дефицит)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "В ресторанах ожидают 10%; в сфере услуг чаевые — значительная часть дохода.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Держите мелкие купюры USD/EUR или CUP для музыкантов, гидов, горничных и смотрителей туалетов."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (возврата налогов туристам нет)",
+    "minSpend": "Не применяется",
+    "customsNote": "На Кубе нет возврата НДС туристам. Для вывоза сигар сверх установленного лимита нужны чек официального магазина и оригинальные опломбированные коробки; проверьте и таможенные нормы страны назначения."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "2 - 5 $",
+    "topCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "airportSimTrapWarning": "Единственный оператор — государственная ETECSA; туристическую SIM Cubacel Tur продают по паспорту в аэропорту или офисах ETECSA (можно заказать онлайн), очереди длинные. Международные eSIM часто не работают или очень дороги; многие приложения и банковские сайты блокируют кубинские IP из-за санкций США, поэтому установите VPN и скачайте офлайн-карты."
+   },
+   "touristScams": [
+    {
+     "title": "Уловки хинетерос",
+     "desc": "Приветливый местный заводит разговор и под предлогом «сегодня фестиваль сигар» ведёт вас в бар, ресторан или к продавцу поддельных сигар, получая комиссию.",
+     "tip": "Вежливо поблагодарите и идите дальше; рестораны и магазины выбирайте сами."
+    },
+    {
+     "title": "Сдача в другой валюте",
+     "desc": "Вы платите в USD, а сдачу получаете в гораздо более дешёвых CUP или по произвольному курсу.",
+     "tip": "Заранее уточняйте валюту цены и носите мелкие купюры."
+    },
+    {
+     "title": "Завышенная цена такси",
+     "desc": "Ретро-машины без счётчика и конные повозки в конце требуют в разы больше оговорённого.",
+     "tip": "Договоритесь о цене и валюте до посадки; лучше пусть такси вызовет хозяин жилья."
+    }
+   ]
+  }
+ }
+}

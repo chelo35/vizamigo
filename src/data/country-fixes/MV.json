@@ -322,6 +322,67 @@
      "Mercanlara dokunmayın; mercan ve deniz kabuğu toplamak yasaktır."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Çoğunlukla İngiliz tipi G priz; resortlarda çok amaçlı prizler de bulunur. Türk fişleri G prize takılmaz, G tipi adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Resortlarda su arıtılmış/damıtılmış olsa da musluktan içmeyin; resortların verdiği cam şişe veya kapalı şişe suyu tercih edin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Sarıhumma sertifikası yalnızca sarıhumma riskli bir ülkeden geliyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "Hesaplara genellikle %10 servis ücreti eklenir; resortlarda oda görevlisine ve tekne ekibine ayrıca bahşiş vermek yaygındır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Resortta kalış sonunda oda görevlisine günlük 5–10 USD civarı bahşiş yaygındır; ödeme genellikle USD ile yapılır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Yok",
+    "customsNote": "Maldivler’de turistlere KDV (GST/TGST) iadesi yoktur. Ülkeye alkol, domuz ürünü ve dinî içerikli yayın sokmak yasaktır; havalimanında alınan alkol bagajda el konulur."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Dhiraagu",
+     "Ooredoo Maldives"
+    ],
+    "airportSimTrapWarning": "Velana Havalimanı’ndaki Dhiraagu ve Ooredoo stantları resmî turist paketlerini satar, fiyatlar makul; ancak resort Wi-Fi’ı yavaş olabileceği için paketi gelişte alın, uluslararası eSIM’ler pahalı olabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı simsarları",
+     "desc": "Havalimanında “ucuz transfer veya pansiyon” teklif eden aracılar.",
+     "tip": "Transferi konaklama yerinizle önceden ayarlayın; feribot ve sürat teknesi saatlerini resmî kaynaktan kontrol edin."
+    },
+    {
+     "title": "Belirsiz tur fiyatları",
+     "desc": "Yerel adalarda gezi fiyatının kişi başı mı tekne başı mı olduğu bilerek belirsiz bırakılır.",
+     "tip": "Fiyatı yazılı ve kişi başı olarak netleştirin; vergiler dahil mi sorun."
+    },
+    {
+     "title": "Gizli vergiler",
+     "desc": "İlan edilen fiyatın üzerine servis ücreti, TGST ve yeşil vergi eklenmesi.",
+     "tip": "Rezervasyonda “tüm vergiler dahil” toplam fiyatı isteyin."
+    }
+   ]
   }
  },
  "en": {
@@ -647,6 +708,67 @@
      "Do not touch coral; collecting coral and shells is illegal."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mostly British-style Type G sockets; resorts often also have universal sockets. Turkish plugs do not fit Type G, bring a Type G adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Resort water is treated or desalinated, but do not drink from the tap; use the glass-bottled or sealed water resorts provide.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Yellow fever certificate only if arriving from a yellow-fever-risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "A 10% service charge is usually added; at resorts it is common to tip room attendants and boat crews separately.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Around USD 5–10 per day for your room attendant at the end of a resort stay is common; tips are usually given in USD."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "None",
+    "customsNote": "The Maldives has no VAT (GST/TGST) refund for tourists. Importing alcohol, pork products and religious material is banned; duty-free alcohol is confiscated on arrival."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Dhiraagu",
+     "Ooredoo Maldives"
+    ],
+    "airportSimTrapWarning": "Dhiraagu and Ooredoo counters at Velana Airport sell official tourist packs at fair prices; buy one on arrival since resort Wi-Fi can be slow, and international eSIMs can be expensive here."
+   },
+   "touristScams": [
+    {
+     "title": "Airport touts",
+     "desc": "Touts at the airport offering “cheap transfers or guesthouses”.",
+     "tip": "Arrange transfers with your accommodation in advance and check ferry and speedboat times from official sources."
+    },
+    {
+     "title": "Vague excursion prices",
+     "desc": "On local islands excursion prices are left vague: per person or per boat?",
+     "tip": "Get the price in writing and per person, and ask whether taxes are included."
+    },
+    {
+     "title": "Hidden taxes",
+     "desc": "Service charge, TGST and green tax are added on top of the advertised price.",
+     "tip": "Ask for the all-inclusive total price when booking."
+    }
+   ]
   }
  },
  "de": {
@@ -972,6 +1094,67 @@
      "Korallen nicht berühren; Sammeln von Korallen und Muscheln ist verboten."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Meist britische Steckdosen Typ G; Resorts haben oft zusätzlich Universalsteckdosen. Türkische Stecker passen nicht in Typ G, Adapter Typ G mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Resortwasser wird aufbereitet oder entsalzt, aber nicht aus der Leitung trinken; das von den Resorts gestellte Glasflaschen- oder versiegelte Wasser nutzen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Gelbfieber-Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "Meist werden 10 % Servicegebühr aufgeschlagen; in Resorts gibt man Zimmerpersonal und Bootscrews zusätzlich Trinkgeld.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Am Ende eines Resortaufenthalts sind etwa 5–10 USD pro Tag für das Zimmerpersonal üblich; Trinkgeld meist in USD."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Keine",
+    "customsNote": "Die Malediven erstatten Touristen keine Mehrwertsteuer (GST/TGST). Die Einfuhr von Alkohol, Schweinefleischprodukten und religiösem Material ist verboten; Duty-free-Alkohol wird bei der Ankunft eingezogen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Dhiraagu",
+     "Ooredoo Maldives"
+    ],
+    "airportSimTrapWarning": "Die Stände von Dhiraagu und Ooredoo am Flughafen Velana verkaufen offizielle Touristenpakete zu fairen Preisen; gleich bei Ankunft kaufen, da Resort-WLAN langsam sein kann und internationale eSIMs hier teuer sind."
+   },
+   "touristScams": [
+    {
+     "title": "Schlepper am Flughafen",
+     "desc": "Schlepper bieten am Flughafen „günstige Transfers oder Gästehäuser“ an.",
+     "tip": "Transfers vorab mit der Unterkunft buchen und Fähr- und Speedboatzeiten bei offiziellen Quellen prüfen."
+    },
+    {
+     "title": "Unklare Ausflugspreise",
+     "desc": "Auf Inseln bleibt bewusst offen, ob der Preis pro Person oder pro Boot gilt.",
+     "tip": "Preis schriftlich und pro Person festhalten und fragen, ob Steuern enthalten sind."
+    },
+    {
+     "title": "Versteckte Steuern",
+     "desc": "Servicegebühr, TGST und Green Tax kommen auf den beworbenen Preis.",
+     "tip": "Bei der Buchung den Gesamtpreis inklusive aller Steuern verlangen."
+    }
+   ]
   }
  },
  "es": {
@@ -1297,6 +1480,67 @@
      "No toques el coral; recoger coral y conchas es ilegal."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sobre todo enchufes británicos tipo G; los resorts suelen tener también enchufes universales. Los enchufes turcos no entran en el tipo G, lleve un adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En los resorts el agua se trata o desaliniza, pero no beba del grifo; use el agua en botella de cristal o sellada que ofrecen.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Certificado de fiebre amarilla solo si llega desde un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "Suele añadirse un 10 % de servicio; en los resorts es habitual dar propina aparte al personal de habitaciones y a la tripulación de las lanchas.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Al final de una estancia es habitual dejar unos 5–10 USD por día al personal de habitaciones; las propinas suelen darse en USD."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No hay",
+    "customsNote": "Maldivas no devuelve el IVA (GST/TGST) a los turistas. Está prohibido introducir alcohol, productos de cerdo y material religioso; el alcohol duty-free se confisca a la llegada."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Dhiraagu",
+     "Ooredoo Maldives"
+    ],
+    "airportSimTrapWarning": "Los mostradores de Dhiraagu y Ooredoo en el aeropuerto de Velana venden paquetes turísticos oficiales a buen precio; cómprelo al llegar porque el wifi del resort puede ser lento y las eSIM internacionales salen caras aquí."
+   },
+   "touristScams": [
+    {
+     "title": "Gancheros del aeropuerto",
+     "desc": "Intermediarios ofrecen en el aeropuerto “traslados o guesthouses baratos”.",
+     "tip": "Reserve el traslado con su alojamiento y consulte horarios de ferris y lanchas en fuentes oficiales."
+    },
+    {
+     "title": "Precios de excursiones ambiguos",
+     "desc": "En islas locales no aclaran si el precio es por persona o por barco.",
+     "tip": "Pida el precio por escrito y por persona, y pregunte si incluye impuestos."
+    },
+    {
+     "title": "Impuestos ocultos",
+     "desc": "Al precio anunciado se suman cargo de servicio, TGST e impuesto verde.",
+     "tip": "Al reservar, pida el precio total con todos los impuestos."
+    }
+   ]
   }
  },
  "ru": {
@@ -1622,6 +1866,67 @@
      "Не трогайте кораллы; собирать кораллы и ракушки запрещено."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "В основном британские розетки типа G; в резортах часто есть и универсальные. Турецкие вилки в G не подходят, возьмите переходник типа G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В резортах вода очищается или опресняется, но из-под крана её не пейте; пользуйтесь водой в стеклянных или запечатанных бутылках от отеля.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Сертификат о прививке от жёлтой лихорадки — только при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "К счёту обычно добавляют 10 % за обслуживание; в резортах принято отдельно благодарить горничных и экипаж лодок.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В конце отдыха горничной обычно оставляют около 5–10 USD за день; чаевые чаще дают в долларах."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Нет",
+    "customsNote": "На Мальдивах туристам не возвращают НДС (GST/TGST). Ввоз алкоголя, свинины и религиозной литературы запрещён; алкоголь из duty-free изымают по прилёте."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Dhiraagu",
+     "Ooredoo Maldives"
+    ],
+    "airportSimTrapWarning": "Стойки Dhiraagu и Ooredoo в аэропорту Велана продают официальные туристические пакеты по нормальным ценам; берите сразу по прилёте — Wi-Fi в резортах бывает медленным, а международные eSIM здесь дорогие."
+   },
+   "touristScams": [
+    {
+     "title": "Зазывалы в аэропорту",
+     "desc": "В аэропорту предлагают «дешёвый трансфер или гестхаус».",
+     "tip": "Заранее договоритесь о трансфере с отелем и проверяйте расписание паромов и катеров в официальных источниках."
+    },
+    {
+     "title": "Размытые цены на экскурсии",
+     "desc": "На местных островах намеренно не уточняют, цена за человека или за лодку.",
+     "tip": "Фиксируйте цену письменно и за человека, уточняйте, включены ли налоги."
+    },
+    {
+     "title": "Скрытые налоги",
+     "desc": "К рекламной цене добавляют сервисный сбор, TGST и «зелёный» налог.",
+     "tip": "При бронировании просите итоговую цену со всеми налогами."
+    }
+   ]
   }
  }
 }

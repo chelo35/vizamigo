@@ -323,6 +323,61 @@
      "Otoyollarda araç kullanacaksanız dijital ‘Vignette’ (otoyol pulu) zorunludur."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu Alp kaynaklıdır ve Avrupa’nın en temiz suları arasındadır; Viyana’da sokak çeşmelerinden bile içilebilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Hesabı %5–10 yuvarlamak adettir; ödeme yaparken garsona ödemek istediğiniz toplamı söyleyin (ör. 18,50 € için “20”).",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Bahşiş masaya bırakılmaz, ödeme sırasında verilir; taksilerde de hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%20 KDV (komisyon sonrası ~%10–15)",
+    "minSpend": "Fiş başına 75,01 €",
+    "customsNote": "AB dışında yaşayanlar mağazadan Tax Free formu alır; ürünleri kullanılmamış hâlde AB’den çıkarken Viyana Havalimanı’nda check-in öncesi gümrüğe onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2.00",
+    "topCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki satış noktaları pahalıdır; A1, Magenta veya Drei mağazalarından ya da süpermarketlerden ön ödemeli hat alın veya önceden eSIM kurun. Türk hatlarında AB roaming paketi yoktur."
+   },
+   "touristScams": [
+    {
+     "title": "“Mozart” konser biletçileri",
+     "desc": "Stephansdom çevresinde kostümlü “Mozart” satıcılarının pahalı ve düşük kaliteli konser bileti satması.",
+     "tip": "Biletleri doğrudan Musikverein, Staatsoper veya resmî gişelerden alın."
+    },
+    {
+     "title": "Tramvayda yankesicilik",
+     "desc": "Kalabalık tramvay ve U-Bahn’da dikkat dağıtarak hırsızlık.",
+     "tip": "Çantanızın fermuarını kapalı ve önünüzde tutun."
+    }
+   ]
   }
  },
  "en": {
@@ -649,6 +704,61 @@
      "If driving, a digital ‘Vignette’ (motorway sticker) is mandatory on motorways."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water comes from Alpine springs and is among the cleanest in Europe; in Vienna you can even drink from street fountains.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Round up by 5–10%; when paying, tell the waiter the total you want to pay (e.g. ‘20’ for €18.50).",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Tips are not left on the table but given when paying; rounding up is enough in taxis too."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20% VAT (~10–15% net after fees)",
+    "minSpend": "EUR 75.01 per receipt",
+    "customsNote": "Non-EU residents get a Tax Free form at the store; have the unused goods validated by customs at Vienna Airport before check-in when leaving the EU."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2.00",
+    "topCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)"
+    ],
+    "airportSimTrapWarning": "Airport outlets are pricey; buy a prepaid SIM at A1, Magenta or Drei stores or supermarkets, or install an eSIM in advance. Turkish SIMs have no EU roaming deal."
+   },
+   "touristScams": [
+    {
+     "title": "“Mozart” concert sellers",
+     "desc": "Costumed “Mozart” sellers around St. Stephen’s push overpriced, low-quality concert tickets.",
+     "tip": "Buy tickets directly from the Musikverein, Staatsoper or official box offices."
+    },
+    {
+     "title": "Pickpockets on trams",
+     "desc": "Distraction pickpocketing on crowded trams and U-Bahn trains.",
+     "tip": "Keep your bag zipped and in front of you."
+    }
+   ]
   }
  },
  "de": {
@@ -975,6 +1085,61 @@
      "Wer Auto fährt, braucht auf Autobahnen die (digitale) Vignette."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser stammt aus Alpenquellen und gehört zu den saubersten Europas; in Wien kann man sogar aus Trinkbrunnen auf der Straße trinken.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Man rundet um 5–10 % auf und nennt beim Bezahlen den Gesamtbetrag (z. B. „20“ bei 18,50 €).",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Trinkgeld wird nicht auf dem Tisch gelassen, sondern beim Bezahlen gegeben; auch im Taxi reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20 % MwSt. (netto ~10–15 % nach Gebühren)",
+    "minSpend": "75,01 € pro Beleg",
+    "customsNote": "Nicht-EU-Bürger erhalten im Geschäft ein Tax-Free-Formular; die unbenutzten Waren bei der Ausreise aus der EU vor dem Check-in am Flughafen Wien vom Zoll bestätigen lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2.00",
+    "topCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)"
+    ],
+    "airportSimTrapWarning": "Verkaufsstellen am Flughafen sind teuer; Prepaid-SIM in A1-, Magenta- oder Drei-Shops bzw. Supermärkten kaufen oder vorab eine eSIM installieren. Türkische SIMs haben kein EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "„Mozart“-Kartenverkäufer",
+     "desc": "Kostümierte „Mozart“-Verkäufer rund um den Stephansdom verkaufen überteuerte, schwache Konzertkarten.",
+     "tip": "Karten direkt beim Musikverein, der Staatsoper oder offiziellen Kassen kaufen."
+    },
+    {
+     "title": "Taschendiebe in der Straßenbahn",
+     "desc": "Ablenkungsdiebstahl in vollen Straßenbahnen und U-Bahnen.",
+     "tip": "Tasche geschlossen und vor dem Körper tragen."
+    }
+   ]
   }
  },
  "es": {
@@ -1301,6 +1466,61 @@
      "Si conduce, la ‘Vignette’ digital es obligatoria en autopistas."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo procede de manantiales alpinos y está entre las más limpias de Europa; en Viena se puede beber incluso de las fuentes de la calle.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Se redondea un 5–10 %; al pagar, diga al camarero el total que quiere pagar (p. ej. “20” por 18,50 €).",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "La propina no se deja en la mesa, se da al pagar; en taxis también basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 20 % (~10–15 % neto tras comisiones)",
+    "minSpend": "75,01 € por ticket",
+    "customsNote": "Los residentes fuera de la UE reciben en la tienda un formulario Tax Free; haga validar los productos sin usar en la aduana del aeropuerto de Viena antes de facturar al salir de la UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2.00",
+    "topCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)"
+    ],
+    "airportSimTrapWarning": "Los puntos de venta del aeropuerto son caros; compre una SIM prepago en tiendas de A1, Magenta o Drei o en supermercados, o instale una eSIM antes. Las SIM turcas no tienen roaming de la UE."
+   },
+   "touristScams": [
+    {
+     "title": "Vendedores “Mozart”",
+     "desc": "Vendedores disfrazados de “Mozart” junto a la catedral de San Esteban venden entradas caras y de baja calidad.",
+     "tip": "Compre entradas directamente en el Musikverein, la Staatsoper o taquillas oficiales."
+    },
+    {
+     "title": "Carteristas en el tranvía",
+     "desc": "Robos por distracción en tranvías y metro abarrotados.",
+     "tip": "Lleve el bolso cerrado y por delante."
+    }
+   ]
   }
  },
  "ru": {
@@ -1627,6 +1847,61 @@
      "Для поездок по автобанам обязательна (цифровая) виньетка."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода поступает из альпийских источников и считается одной из самых чистых в Европе; в Вене можно пить даже из уличных фонтанчиков.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Принято округлять на 5–10 %; при оплате назовите официанту итоговую сумму (например, «20» при счёте 18,50 €).",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Чаевые не оставляют на столе, а дают при оплате; в такси тоже достаточно округлить."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 20 % (~10–15 % за вычетом комиссий)",
+    "minSpend": "75,01 € на чек",
+    "customsNote": "Жители стран вне ЕС получают в магазине форму Tax Free; при выезде из ЕС до регистрации на рейс заверьте неиспользованные товары на таможне в аэропорту Вены."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2.00",
+    "topCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)"
+    ],
+    "airportSimTrapWarning": "Точки продаж в аэропорту дорогие; купите предоплаченную SIM в салонах A1, Magenta или Drei или в супермаркете либо заранее установите eSIM. У турецких SIM нет роуминга по тарифам ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Продавцы «Моцарта»",
+     "desc": "Ряженые «Моцарты» у собора Святого Стефана продают дорогие билеты на посредственные концерты.",
+     "tip": "Покупайте билеты напрямую в Musikverein, Staatsoper или официальных кассах."
+    },
+    {
+     "title": "Карманники в трамваях",
+     "desc": "Кражи с отвлечением внимания в переполненных трамваях и метро.",
+     "tip": "Держите сумку закрытой и перед собой."
+    }
+   ]
   }
  }
 }

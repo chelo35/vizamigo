@@ -324,6 +324,68 @@
      "İnsanları fotoğraflamadan önce izin isteyin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C/E tipi (topraklama pimli Fransız tipi) priz; Türk C fişleri ve hibrit E/F Schuko fişler takılır, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Büyük şehirlerde şebeke suyu klorlanır ama alışık olmayan mideler için şişe su önerilir; kırsalda ve medinelerde mutlaka şişe su için.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Kuduz (kırsal bölge veya uzun kalış)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 civarı, kafelerde birkaç dirhem bırakmak adettir; rehber, şoför ve hamam görevlileri bahşiş bekler.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Fotoğraf çektirdiğiniz sokak sanatçıları ve yol gösteren çocuklar da para isteyebilir; yanınızda bozuk dirhem bulundurun."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%20 KDV",
+    "minSpend": "Fatura başına 2.000 MAD (KDV dahil)",
+    "customsNote": "Tax-free hizmeti veren mağazalardan pasaportla alışveriş yapın; ürünler kullanılmamış olmalı. Kazablanka, Marakeş gibi havalimanlarında check-in öncesi gümrüğe formu onaylatıp iadeyi alın. Gıda, ilaç ve tütün kapsam dışıdır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "airportSimTrapWarning": "Havalimanında Maroc Telecom, Orange ve inwi stantları turistlere ücretsiz/ucuz hat verip pahalı paket yükler; şehirde bayilerden 10–20 MAD’lık “*3” paketleri çok daha ekonomiktir."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte rehber",
+     "desc": "Medinede “bu sokak kapalı, size göstereyim” diyerek sizi dükkâna veya tabakhaneye götüren kişiler.",
+     "tip": "Kibarca reddedin ve yürümeye devam edin; çevrimdışı harita kullanın veya lisanslı rehber tutun."
+    },
+    {
+     "title": "Jemaa el-Fnaa ücret tuzağı",
+     "desc": "İzinsiz kına yapan veya yılan/maymunla fotoğraf çektiren kişilerin yüksek ücret istemesi.",
+     "tip": "Elinizi uzatmayın, fotoğraf öncesi fiyatı netleştirin; 10–20 MAD makul bir tutardır."
+    },
+    {
+     "title": "Taksimetresiz taksi",
+     "desc": "Taksicilerin taksimetre açmaması veya havalimanında fahiş sabit ücret istemesi.",
+     "tip": "Petit taxi’de “compteur” isteyin; havalimanında resmî tarife panosunu kontrol edin veya inDrive kullanın."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +713,68 @@
      "Ask permission before photographing people."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C/E sockets (French type with an earth pin); Turkish C plugs and hybrid E/F Schuko plugs fit, no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is chlorinated in big cities, but bottled water is recommended for unaccustomed stomachs; always drink bottled water in rural areas and medinas.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Rabies (rural areas or long stays)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Around 10% in restaurants and a few dirhams in cafés are customary; guides, drivers and hammam attendants expect tips.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Street performers you photograph and kids who show you the way may also ask for money; carry small dirham coins."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20% VAT",
+    "minSpend": "MAD 2,000 per invoice (VAT included)",
+    "customsNote": "Shop with your passport at stores offering tax-free; goods must be unused. Have the form validated by customs before check-in at airports such as Casablanca or Marrakech and collect your refund. Food, medicines and tobacco are excluded."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "airportSimTrapWarning": "At the airport Maroc Telecom, Orange and inwi counters hand out free or cheap SIMs but load expensive packs; MAD 10–20 “*3” packs from shops in town are far cheaper."
+   },
+   "touristScams": [
+    {
+     "title": "Fake guides",
+     "desc": "People in the medina say “this street is closed, I’ll show you” and lead you to a shop or tannery.",
+     "tip": "Decline politely and keep walking; use an offline map or hire a licensed guide."
+    },
+    {
+     "title": "Jemaa el-Fnaa fee trap",
+     "desc": "People apply henna uninvited or pose you with snakes or monkeys, then demand high fees.",
+     "tip": "Keep your hands to yourself and agree a price before photos; MAD 10–20 is reasonable."
+    },
+    {
+     "title": "Taxis without meters",
+     "desc": "Taxis refuse the meter or demand inflated flat fares at the airport.",
+     "tip": "Ask for the “compteur” in petit taxis; check the official fare board at the airport or use inDrive."
+    }
+   ]
   }
  },
  "de": {
@@ -978,6 +1102,68 @@
      "Vor dem Fotografieren von Menschen um Erlaubnis fragen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/E (französischer Typ mit Erdungsstift); türkische C-Stecker und Hybrid-Schukostecker E/F passen, kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "In Großstädten wird Leitungswasser gechlort, für ungewohnte Mägen wird aber Flaschenwasser empfohlen; auf dem Land und in Medinas immer Flaschenwasser trinken.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Tollwut (ländliche Gebiete oder lange Aufenthalte)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Etwa 10 % in Restaurants und ein paar Dirham in Cafés sind üblich; Guides, Fahrer und Hammam-Personal erwarten Trinkgeld.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Auch fotografierte Straßenkünstler und Kinder, die den Weg zeigen, verlangen oft Geld; kleine Dirham-Münzen dabeihaben."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20 % MwSt.",
+    "minSpend": "2.000 MAD pro Rechnung (inkl. MwSt.)",
+    "customsNote": "Mit Pass in Geschäften mit Tax-free-Service einkaufen; die Waren müssen unbenutzt sein. Das Formular vor dem Check-in an Flughäfen wie Casablanca oder Marrakesch vom Zoll bestätigen lassen und die Erstattung abholen. Lebensmittel, Medikamente und Tabak sind ausgenommen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "airportSimTrapWarning": "Am Flughafen geben Maroc Telecom, Orange und inwi kostenlose oder billige SIMs aus, laden aber teure Pakete auf; „*3“-Pakete für 10–20 MAD in Läden in der Stadt sind viel günstiger."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Guides",
+     "desc": "In der Medina heißt es „diese Gasse ist gesperrt, ich zeige es Ihnen“, und man landet im Laden oder in der Gerberei.",
+     "tip": "Höflich ablehnen und weitergehen; Offline-Karte nutzen oder lizenzierten Guide buchen."
+    },
+    {
+     "title": "Gebührenfalle Jemaa el-Fnaa",
+     "desc": "Ungefragt wird Henna aufgetragen oder man posiert mit Schlangen oder Affen, danach folgen hohe Forderungen.",
+     "tip": "Hände bei sich behalten und vor Fotos den Preis vereinbaren; 10–20 MAD sind angemessen."
+    },
+    {
+     "title": "Taxis ohne Taxameter",
+     "desc": "Taxis schalten kein Taxameter ein oder verlangen am Flughafen überhöhte Pauschalpreise.",
+     "tip": "Im Petit Taxi den „compteur“ verlangen; am Flughafen die offizielle Preistafel prüfen oder inDrive nutzen."
+    }
+   ]
   }
  },
  "es": {
@@ -1305,6 +1491,68 @@
      "Pide permiso antes de fotografiar a la gente."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C/E (tipo francés con clavija de tierra); los enchufes turcos C y los Schuko híbridos E/F encajan, no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En las grandes ciudades el agua del grifo está clorada, pero se recomienda agua embotellada a estómagos no habituados; en zonas rurales y medinas beba siempre agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Rabia (zonas rurales o estancias largas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "En restaurantes es costumbre un 10 % y en cafés unos dírhams; guías, conductores y personal del hammam esperan propina.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Los artistas callejeros a los que fotografíe y los niños que le indiquen el camino también pueden pedir dinero; lleve monedas pequeñas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 20 %",
+    "minSpend": "2.000 MAD por factura (IVA incluido)",
+    "customsNote": "Compre con pasaporte en tiendas con servicio tax-free; los productos deben estar sin usar. Valide el formulario en aduana antes de facturar en aeropuertos como Casablanca o Marrakech y cobre el reembolso. Alimentos, medicamentos y tabaco quedan excluidos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto Maroc Telecom, Orange e inwi regalan o venden barata la SIM pero cargan paquetes caros; los paquetes “*3” de 10–20 MAD en tiendas de la ciudad son mucho más baratos."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos guías",
+     "desc": "En la medina le dicen “esta calle está cerrada, se lo enseño” y le llevan a una tienda o curtiduría.",
+     "tip": "Rechace con cortesía y siga caminando; use un mapa sin conexión o contrate un guía oficial."
+    },
+    {
+     "title": "Trampa en Jemaa el-Fnaa",
+     "desc": "Le ponen henna sin pedirlo o le hacen posar con serpientes o monos y luego exigen mucho dinero.",
+     "tip": "No ofrezca la mano y pacte el precio antes de la foto; 10–20 MAD es razonable."
+    },
+    {
+     "title": "Taxis sin taxímetro",
+     "desc": "Taxis que no usan taxímetro o piden tarifas fijas infladas en el aeropuerto.",
+     "tip": "Pida el “compteur” en los petit taxis; consulte la tabla oficial de tarifas en el aeropuerto o use inDrive."
+    }
+   ]
   }
  },
  "ru": {
@@ -1632,6 +1880,68 @@
      "Спрашивайте разрешения, прежде чем фотографировать людей."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C/E (французский тип с заземляющим штырём); турецкие вилки C и гибридные Schuko E/F подходят, переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В крупных городах водопроводную воду хлорируют, но непривычному желудку лучше пить бутилированную; в сельской местности и мединах — только бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Бешенство (сельская местность или долгое пребывание)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято около 10 %, в кафе — несколько дирхамов; гиды, водители и банщики в хаммаме ждут чаевых.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Уличные артисты, которых вы сфотографировали, и дети, показавшие дорогу, тоже могут попросить денег; держите мелкие монеты."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 20 %",
+    "minSpend": "2 000 MAD на чек (с НДС)",
+    "customsNote": "Покупайте с паспортом в магазинах с услугой tax-free; товары должны быть неиспользованными. До регистрации на рейс в аэропортах Касабланки или Марракеша заверьте форму на таможне и получите возврат. Еда, лекарства и табак не входят."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "airportSimTrapWarning": "В аэропорту Maroc Telecom, Orange и inwi раздают бесплатные или дешёвые SIM, но подключают дорогие пакеты; пакеты «*3» за 10–20 MAD в городских точках гораздо дешевле."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивые гиды",
+     "desc": "В медине говорят «эта улица закрыта, я покажу дорогу» и ведут в лавку или кожевенную мастерскую.",
+     "tip": "Вежливо откажитесь и идите дальше; пользуйтесь офлайн-картой или наймите лицензированного гида."
+    },
+    {
+     "title": "Ловушка на Джемаа-эль-Фна",
+     "desc": "Без спроса рисуют хну или дают подержать змею или обезьяну, а потом требуют крупную сумму.",
+     "tip": "Не протягивайте руки и обговаривайте цену до фото; 10–20 MAD — разумная сумма."
+    },
+    {
+     "title": "Такси без счётчика",
+     "desc": "Таксисты не включают счётчик или называют завышенную фиксированную цену в аэропорту.",
+     "tip": "В petit taxi просите «compteur»; в аэропорту сверяйтесь с официальной таблицей тарифов или используйте inDrive."
+    }
+   ]
   }
  }
 }

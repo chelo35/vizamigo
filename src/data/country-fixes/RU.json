@@ -300,6 +300,68 @@
      "Ukrayna sınırına yakın bölgelere gitmeyin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Moskova ve St. Petersburg’da şebeke suyu arıtılır ama eski borular nedeniyle kaynatmadan içmeyin; şişe su ucuzdur. St. Petersburg’da Giardia riski nedeniyle musluk suyundan özellikle kaçının.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygındır; nakit bırakmak en kolayıdır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kartla bahşiş çoğu yerde QR kodlu “чаевые” uygulamalarıyla verilir; taksilerde bahşiş beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%22 KDV (komisyon sonrası daha az)",
+    "minSpend": "Katılımcı mağazada 10.000 RUB",
+    "customsNote": "Tax Free formu veren mağazalardan pasaportla alışveriş yapın; çıkışta ürün, fiş ve formu gümrüğe onaylatın. Yabancı kartlara iade aksadığı için iadeyi çoğu zaman nakit ruble olarak almanız gerekir; Avrasya Ekonomik Birliği vatandaşları kapsam dışıdır."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "airportSimTrapWarning": "Uluslararası eSIM seçenekleri sınırlıdır ve Visa/Mastercard Rusya’da çalışmadığı için yerinde ödeme zordur. Yabancılara hat pasaport ve biyometrik kayıtla resmî MTS/MegaFon/Beeline/T2 mağazasında satılır; havalimanında kayıtsız hat satan aracılardan uzak durun."
+   },
+   "touristScams": [
+    {
+     "title": "Kayıtsız taksi",
+     "desc": "Havalimanı ve garlarda resmî görünen kayıtsız taksicilerin fahiş ücret istemesi.",
+     "tip": "Yandex Go kullanın veya resmî taksi gişesinden sabit fiyatlı taksi alın."
+    },
+    {
+     "title": "Kızıl Meydan kostüm fotoğrafı",
+     "desc": "Kızıl Meydan çevresinde kostümlü karakterlerin fotoğraf sonrası yüksek ücret istemesi.",
+     "tip": "Fotoğraftan önce fiyatı sorun ya da kibarca reddedin."
+    },
+    {
+     "title": "Sokakta döviz",
+     "desc": "Sokakta veya lisanssız noktalarda döviz bozdurma teklifleri.",
+     "tip": "Yalnızca bankalarda bozdurun; Rusya’da yabancı kart geçmediğinden yeterli nakit taşıyın."
+    }
+   ]
   }
  },
  "en": {
@@ -603,6 +665,68 @@
      "Do not travel to regions near the Ukrainian border."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water in Moscow and St Petersburg is treated, but old pipes mean you should not drink it unboiled; bottled water is cheap. Avoid tap water in St Petersburg in particular due to Giardia risk.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Tipping 10% in restaurants is common; leaving cash is easiest.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Card tips are usually given through QR-code “чаевые” (tips) apps; taxi drivers do not expect tips."
+   },
+   "taxFree": {
+    "vatRefundPercent": "22% VAT (less after fees)",
+    "minSpend": "RUB 10,000 in a participating store",
+    "customsNote": "Shop with your passport at stores issuing Tax Free forms and have goods, receipt and form validated by customs on departure. Refunds to foreign cards are disrupted, so you will often need to take cash roubles; Eurasian Economic Union citizens are excluded."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "airportSimTrapWarning": "International eSIM options are limited and Visa/Mastercard do not work in Russia, so paying locally is hard. Foreigners can buy SIMs only with a passport and biometric registration at official MTS/MegaFon/Beeline/T2 stores; avoid touts selling unregistered SIMs at the airport."
+   },
+   "touristScams": [
+    {
+     "title": "Unregistered taxis",
+     "desc": "Unregistered drivers posing as official taxis at airports and stations charge huge fares.",
+     "tip": "Use Yandex Go or take a fixed-price taxi from the official desk."
+    },
+    {
+     "title": "Red Square costume photos",
+     "desc": "Costumed characters around Red Square demand high fees after photos.",
+     "tip": "Ask the price before the photo or politely decline."
+    },
+    {
+     "title": "Street money exchange",
+     "desc": "Offers to exchange money on the street or at unlicensed points.",
+     "tip": "Change money only at banks; foreign cards do not work in Russia, so bring enough cash."
+    }
+   ]
   }
  },
  "de": {
@@ -906,6 +1030,68 @@
      "Nicht in Regionen nahe der ukrainischen Grenze reisen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser in Moskau und Sankt Petersburg wird aufbereitet, wegen alter Rohre aber nicht unabgekocht trinken; Flaschenwasser ist billig. Besonders in Sankt Petersburg wegen Giardien-Risiko kein Leitungswasser trinken.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "10 % Trinkgeld sind in Restaurants üblich; Bargeld liegen zu lassen ist am einfachsten.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kartentrinkgeld läuft meist über QR-Code-Apps („чаевые“); Taxifahrer erwarten keins."
+   },
+   "taxFree": {
+    "vatRefundPercent": "22 % MwSt. (abzüglich Gebühren weniger)",
+    "minSpend": "10.000 RUB in einem teilnehmenden Geschäft",
+    "customsNote": "Mit Pass in Geschäften mit Tax-Free-Formular einkaufen und Ware, Beleg und Formular bei der Ausreise vom Zoll bestätigen lassen. Erstattungen auf ausländische Karten sind gestört, oft gibt es nur Bargeld in Rubel; Bürger der Eurasischen Wirtschaftsunion sind ausgeschlossen."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "airportSimTrapWarning": "Internationale eSIM-Optionen sind begrenzt, und Visa/Mastercard funktionieren in Russland nicht, was das Bezahlen vor Ort erschwert. Ausländer erhalten SIMs nur mit Pass und biometrischer Registrierung in offiziellen Shops von MTS, MegaFon, Beeline oder T2; Händler mit unregistrierten SIMs am Flughafen meiden."
+   },
+   "touristScams": [
+    {
+     "title": "Unregistrierte Taxis",
+     "desc": "Unregistrierte Fahrer geben sich an Flughäfen und Bahnhöfen als offizielle Taxis aus und verlangen enorme Preise.",
+     "tip": "Yandex Go nutzen oder ein Festpreistaxi am offiziellen Schalter nehmen."
+    },
+    {
+     "title": "Kostümfotos am Roten Platz",
+     "desc": "Kostümierte Figuren am Roten Platz verlangen nach Fotos hohe Gebühren.",
+     "tip": "Vor dem Foto nach dem Preis fragen oder höflich ablehnen."
+    },
+    {
+     "title": "Geldwechsel auf der Straße",
+     "desc": "Angebote, auf der Straße oder an unlizenzierten Stellen Geld zu tauschen.",
+     "tip": "Nur bei Banken tauschen; ausländische Karten funktionieren in Russland nicht, also genug Bargeld mitbringen."
+    }
+   ]
   }
  },
  "es": {
@@ -1209,6 +1395,68 @@
      "No viaje a regiones cercanas a la frontera con Ucrania."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En Moscú y San Petersburgo el agua del grifo se trata, pero por las tuberías antiguas no conviene beberla sin hervir; el agua embotellada es barata. En San Petersburgo evítela especialmente por riesgo de Giardia.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Es habitual dejar un 10 % en restaurantes; lo más fácil es dejarlo en efectivo.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Las propinas con tarjeta suelen darse por apps con código QR (“чаевые”); los taxistas no esperan propina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 22 % (menos tras comisiones)",
+    "minSpend": "10.000 RUB en una tienda adherida",
+    "customsNote": "Compre con pasaporte en tiendas que emitan formularios Tax Free y valide productos, recibo y formulario en aduana al salir. Los reembolsos a tarjetas extranjeras fallan, por lo que a menudo tendrá que cobrar en rublos en efectivo; los ciudadanos de la Unión Económica Euroasiática quedan excluidos."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "airportSimTrapWarning": "Hay pocas eSIM internacionales y Visa/Mastercard no funcionan en Rusia, lo que dificulta pagar allí. Los extranjeros solo pueden comprar SIM con pasaporte y registro biométrico en tiendas oficiales de MTS, MegaFon, Beeline o T2; evite a los vendedores de SIM sin registrar en el aeropuerto."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis no registrados",
+     "desc": "Conductores no registrados se hacen pasar por taxis oficiales en aeropuertos y estaciones y cobran tarifas enormes.",
+     "tip": "Use Yandex Go o tome un taxi de precio fijo en el mostrador oficial."
+    },
+    {
+     "title": "Fotos con disfraces en la Plaza Roja",
+     "desc": "Personajes disfrazados alrededor de la Plaza Roja exigen mucho dinero tras la foto.",
+     "tip": "Pregunte el precio antes de la foto o rechace con cortesía."
+    },
+    {
+     "title": "Cambio de dinero en la calle",
+     "desc": "Ofertas de cambio de divisas en la calle o en puntos sin licencia.",
+     "tip": "Cambie solo en bancos; las tarjetas extranjeras no funcionan en Rusia, así que lleve suficiente efectivo."
+    }
+   ]
   }
  },
  "ru": {
@@ -1512,6 +1760,68 @@
      "Не посещайте регионы у границы с Украиной."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В Москве и Санкт-Петербурге водопроводная вода очищается, но из-за старых труб некипячёной её лучше не пить; бутилированная вода дешёвая. В Петербурге особенно избегайте воды из-под крана из-за риска лямблий.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять 10 %; проще всего — наличными.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Чаевые картой обычно оставляют через сервисы с QR-кодом; таксисты чаевых не ждут."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 22 % (за вычетом комиссии меньше)",
+    "minSpend": "10 000 RUB в магазине-участнике",
+    "customsNote": "Покупайте с паспортом в магазинах, оформляющих Tax Free, и при выезде заверяйте товары, чек и форму на таможне. Возврат на иностранные карты работает с перебоями, часто его выдают только наличными рублями; граждане стран ЕАЭС не имеют права на возврат."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "airportSimTrapWarning": "Международных eSIM мало, а Visa/Mastercard в России не работают, поэтому оплатить связь на месте сложно. Иностранцам SIM продают только по паспорту с биометрической регистрацией в официальных салонах МТС, МегаФон, Билайн или T2; избегайте продавцов незарегистрированных SIM в аэропорту."
+   },
+   "touristScams": [
+    {
+     "title": "Незарегистрированные такси",
+     "desc": "Незарегистрированные водители выдают себя за официальное такси в аэропортах и на вокзалах и берут огромные суммы.",
+     "tip": "Пользуйтесь Яндекс Go или берите такси по фиксированной цене у официальной стойки."
+    },
+    {
+     "title": "Фото с ростовыми куклами",
+     "desc": "Костюмированные персонажи у Красной площади требуют крупную плату после фото.",
+     "tip": "Уточняйте цену до съёмки или вежливо отказывайтесь."
+    },
+    {
+     "title": "Обмен валюты на улице",
+     "desc": "Предложения обменять деньги на улице или в нелицензированных пунктах.",
+     "tip": "Меняйте только в банках; иностранные карты в России не работают, поэтому берите достаточно наличных."
+    }
+   ]
   }
  }
 }

@@ -1,0 +1,802 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "IRR (İran Riyali / Tümen - Nakit USD/EUR Esastır)",
+   "plugType": "Tip C, F (230V, 50Hz)",
+   "bestMonths": "Mart – Mayıs ve Eylül – Kasım (ılıman) · Yaz iç bölgelerde çok sıcak; Nevruz dönemi (21 Mart civarı) kalabalık ve pahalıdır",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Seyahat Uyarısı (Kırmızı Bölge)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Sokak suçu düşük, halk son derece misafirperverdir; ancak resmî uyarılar (TC Dışişleri, UK FCDO, ABD) İran’a seyahati önermemektedir: bölgesel çatışma ve hava saldırısı riski, ani hava sahası kapanmaları ve yabancı uyrukluların keyfi gözaltı riski bulunur. Afganistan, Pakistan ve Irak sınır bölgelerine kesinlikle gidilmemelidir.",
+    "commonScams": [
+     "Sokaktaki gayriresmî döviz bozucuların eksik para veya tedavülden kalkmış banknot vermesi",
+     "Fiyat söylenirken Riyal ile Tümen (1 Tümen = 10 Riyal) farkının bilerek belirsiz bırakılması",
+     "Sivil polis kılığında pasaport ve cüzdan kontrolü isteyen sahte “polisler”"
+    ],
+    "safeTravelTips": [
+     "Yabancı Visa/Mastercard kartları çalışmaz; tüm seyahat için yeterli nakit USD veya EUR getirin.",
+     "Kılık kıyafet kurallarına uyun ve devlet binaları, askeri alanlar ile köprüleri fotoğraflamayın.",
+     "Seyahatten önce güncel resmî uyarıları kontrol edin ve büyükelçiliğe kayıt yaptırın."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "115",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%90 nüfus (4G; şehirlerde sınırlı 5G)",
+    "costPerGbUsd": "0.30 - 1 $",
+    "esimAvailability": "Zayıf (yabancı eSIM’ler çoğu zaman çalışmaz; havalimanında pasaportla MCI veya Irancell turist SIM’i)",
+    "bestCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "vpnRequired": true,
+    "vpnNote": "Instagram, WhatsApp, Telegram, YouTube ve birçok site engellidir; dönemsel geniş çaplı internet kesintileri yaşanabilir. VPN uygulamalarını ülkeye girmeden önce kurun."
+   },
+   "transport": {
+    "transportQuality": "İyi (Tahran, İsfahan, Meşhed, Şiraz ve Tebriz’de metro; geniş VIP otobüs ve tren ağı)",
+    "costLevel": "Çok ucuz",
+    "singleTicketUsd": "0.05 - 0.20 $",
+    "dailyPassUsd": "Yok (VIP otobüs Tahran – İsfahan ~5 - 10 $)",
+    "popularRideApps": [
+     "Snapp",
+     "Tapsi"
+    ],
+    "taxiAdvice": "Snapp ve Tapsi sabit fiyat verir ve dil engelini azaltır; ancak İran SIM kartı gerekir, ödeme sürücüye nakit yapılabilir. Havalimanında resmî taksi gişesini kullanın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 90 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Düşük (İstanbul – Tahran direkt, ~3,5 saat)",
+    "flightTip": "İstanbul’dan Tahran’a ve Tebriz, Şiraz, Meşhed’e direkt uçuşlar vardır; ancak bölgesel gerilim nedeniyle uçuşlar kısa sürede iptal edilebilir. İade edilebilir bilet ve esnek plan yapın."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "سلام (salām)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "sa-lam"
+     },
+     {
+      "phrase": "خیلی ممنون (kheyli mamnun)",
+      "meaning": "Çok teşekkür ederim",
+      "translation": "Çok teşekkür ederim",
+      "pronunciation": "hey-li mam-nun"
+     },
+     {
+      "phrase": "ببخشید (bebakhshid)",
+      "meaning": "Affedersiniz / Özür dilerim",
+      "translation": "Affedersiniz / Özür dilerim",
+      "pronunciation": "be-bah-shid"
+     },
+     {
+      "phrase": "قیمتش چنده؟ (gheymatesh chande?)",
+      "meaning": "Fiyatı ne kadar?",
+      "translation": "Fiyatı ne kadar?",
+      "pronunciation": "ghey-ma-tesh chan-de"
+     },
+     {
+      "phrase": "خداحافظ (khodāhāfez)",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "ho-da-ha-fez"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye ile aynı C/F (Avrupa) prizler kullanılır; adaptöre gerek yoktur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tahran ve büyük şehirlerde musluk suyu arıtılır ve yerel halk içer; yine de tat ve tesisat farkı nedeniyle şişe su önerilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, kızamık)",
+     "Hepatit A ve B",
+     "Tifo (kırsal seyahatte)",
+     "Seyahat sağlık sigortası: çoğu yabancı poliçe İran’ı kapsamaz, kapsamı mutlaka kontrol edin"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "115"
+   },
+   "tipping": {
+    "custom": "Zorunlu değildir, iyi hizmet için takdir edilir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Restoranda %5 - 10; rehber ve şoföre günlük küçük bahşiş yaygındır. “Taarof” ile ilk teklif reddedilse de ödemede ısrar edin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (turist KDV iadesi pratikte uygulanmaz)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "El dokuma halılarda faturayı saklayın; antika ve tarihi eser çıkarmak yasaktır. Bazı ülkeler İran menşeli ürünlerin (halı, safran, havyar) girişine yaptırım uygular; dönüş ülkenizin kurallarını kontrol edin."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "airportSimTrapWarning": "İmam Humeyni Havalimanı’ndaki turist SIM’leri pasaportla anında aktive edilir ve şehir fiyatlarına yakındır; uluslararası eSIM’lere güvenmeyin."
+   },
+   "touristScams": [
+    {
+     "title": "Sokak döviz bozucuları",
+     "desc": "Kalabalık caddelerde yaklaşanlar kur hilesi yapar ya da eksik para verir.",
+     "tip": "Yalnızca resmî “sarrafi” döviz bürolarını kullanın ve parayı orada sayın."
+    },
+    {
+     "title": "Sahte polis",
+     "desc": "Sivil giyimli biri polis olduğunu söyleyip pasaport ve cüzdanınızı ister.",
+     "tip": "Hiçbir şey vermeyin; resmî karakola ya da otelinize gitmeyi teklif edin."
+    },
+    {
+     "title": "Riyal–Tümen karmaşası",
+     "desc": "Esnaf fiyatı Tümen söyleyip Riyal, ya da tersini kastederek fazla para alır.",
+     "tip": "Fiyatı yazdırın veya hesap makinesinde gösterin; 1 Tümen = 10 Riyal."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "IRR (Iranian Rial / Toman - Cash USD/EUR Is Essential)",
+   "plugType": "Type C, F (230V, 50Hz)",
+   "bestMonths": "March – May and September – November (mild) · summers are very hot inland; the Nowruz period (around 21 March) is crowded and expensive",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Do Not Travel (Conflict Zone)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Street crime is low and people are extremely hospitable, but official advisories (UK FCDO, US) advise against travel to Iran: there is a risk of regional conflict and air strikes, sudden airspace closures and arbitrary detention of foreign nationals. Never go to the border areas with Afghanistan, Pakistan and Iraq.",
+    "commonScams": [
+     "Informal street money changers giving short change or withdrawn banknotes",
+     "Prices deliberately left vague between rial and toman (1 toman = 10 rials)",
+     "Fake plain-clothes “police” asking to check your passport and wallet"
+    ],
+    "safeTravelTips": [
+     "Foreign Visa/Mastercard cards don’t work; bring enough cash in USD or EUR for the whole trip.",
+     "Follow the dress code and never photograph government buildings, military sites or bridges.",
+     "Check current official advisories before travelling and register with your embassy."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "115",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90% of population (4G; limited 5G in cities)",
+    "costPerGbUsd": "0.30 - 1 $",
+    "esimAvailability": "Poor (foreign eSIMs often don’t work; MCI or Irancell tourist SIMs at the airport with passport)",
+    "bestCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "vpnRequired": true,
+    "vpnNote": "Instagram, WhatsApp, Telegram, YouTube and many sites are blocked, and periodic large-scale internet shutdowns can occur. Install VPN apps before entering the country."
+   },
+   "transport": {
+    "transportQuality": "Good (metros in Tehran, Isfahan, Mashhad, Shiraz and Tabriz; extensive VIP bus and rail network)",
+    "costLevel": "Very cheap",
+    "singleTicketUsd": "0.05 - 0.20 $",
+    "dailyPassUsd": "None (VIP bus Tehran – Isfahan ~5 - 10 $)",
+    "popularRideApps": [
+     "Snapp",
+     "Tapsi"
+    ],
+    "taxiAdvice": "Snapp and Tapsi give fixed prices and ease the language barrier, but need an Iranian SIM; you can pay the driver in cash. Use the official taxi desk at the airport."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 90 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Low (Istanbul – Tehran direct, ~3.5 hours)",
+    "flightTip": "There are direct flights from Istanbul to Tehran as well as Tabriz, Shiraz and Mashhad, but flights can be cancelled at short notice due to regional tension. Book refundable tickets and keep plans flexible."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "سلام (salām)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "sa-lam"
+     },
+     {
+      "phrase": "خیلی ممنون (kheyli mamnun)",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "hey-li mam-nun"
+     },
+     {
+      "phrase": "ببخشید (bebakhshid)",
+      "meaning": "Excuse me / Sorry",
+      "translation": "Excuse me / Sorry",
+      "pronunciation": "be-bah-shid"
+     },
+     {
+      "phrase": "قیمتش چنده؟ (gheymatesh chande?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "ghey-ma-tesh chan-de"
+     },
+     {
+      "phrase": "خداحافظ (khodāhāfez)",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "ho-da-ha-fez"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "The same C/F (European) sockets as in Turkey are used; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water in Tehran and big cities is treated and locals drink it, but bottled water is recommended because of taste and plumbing differences.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, measles)",
+     "Hepatitis A and B",
+     "Typhoid (for rural travel)",
+     "Travel health insurance: most foreign policies exclude Iran, so check the cover carefully"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "115"
+   },
+   "tipping": {
+    "custom": "Not mandatory, appreciated for good service.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 - 10% in restaurants; small daily tips for guides and drivers are common. Even if “taarof” leads to a first refusal, insist on paying."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (tourist VAT refund is not applied in practice)",
+    "minSpend": "Not applicable",
+    "customsNote": "Keep invoices for hand-woven carpets; exporting antiques and historical artefacts is prohibited. Some countries sanction imports of Iranian-origin goods (carpets, saffron, caviar); check your home country’s rules."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "airportSimTrapWarning": "Tourist SIMs at Imam Khomeini Airport are activated instantly with a passport and cost close to city prices; don’t rely on international eSIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Street money changers",
+     "desc": "People approaching on busy streets play rate tricks or hand over short change.",
+     "tip": "Use only official “sarrafi” exchange offices and count the money there."
+    },
+    {
+     "title": "Fake police",
+     "desc": "Someone in plain clothes claims to be police and asks for your passport and wallet.",
+     "tip": "Hand nothing over; offer to go to an official police station or your hotel."
+    },
+    {
+     "title": "Rial–toman confusion",
+     "desc": "Shopkeepers quote in toman and mean rial, or vice versa, to overcharge.",
+     "tip": "Have the price written down or shown on a calculator; 1 toman = 10 rials."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "IRR (Iranischer Rial / Toman – Bargeld in USD/EUR ist entscheidend)",
+   "plugType": "Typ C, F (230V, 50Hz)",
+   "bestMonths": "März – Mai und September – November (mild) · Sommer im Landesinneren sehr heiß; die Nouruz-Zeit (um den 21. März) ist voll und teuer",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Kriegsgebiet (Reisewarnung)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Die Straßenkriminalität ist gering und die Menschen sind äußerst gastfreundlich, doch offizielle Reisehinweise (Auswärtiges Amt, UK FCDO, USA) raten von Reisen in den Iran ab: Es bestehen das Risiko regionaler Konflikte und Luftangriffe, kurzfristige Luftraumsperrungen und willkürliche Festnahmen ausländischer Staatsangehöriger. Grenzgebiete zu Afghanistan, Pakistan und Irak unbedingt meiden.",
+    "commonScams": [
+     "Inoffizielle Straßengeldwechsler, die zu wenig oder ungültige Scheine herausgeben",
+     "Bewusst unklare Preise zwischen Rial und Toman (1 Toman = 10 Rial)",
+     "Falsche „Zivilpolizisten“, die Pass und Geldbörse kontrollieren wollen"
+    ],
+    "safeTravelTips": [
+     "Ausländische Visa-/Mastercard-Karten funktionieren nicht; genug Bargeld in USD oder EUR für die ganze Reise mitnehmen.",
+     "Kleiderordnung einhalten und keine Regierungsgebäude, Militäranlagen oder Brücken fotografieren.",
+     "Vor der Reise aktuelle offizielle Hinweise prüfen und sich bei der Botschaft registrieren."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "115",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 % der Bevölkerung (4G; begrenzt 5G in Städten)",
+    "costPerGbUsd": "0.30 - 1 $",
+    "esimAvailability": "Schwach (ausländische eSIMs funktionieren oft nicht; Touristen-SIM von MCI oder Irancell am Flughafen mit Reisepass)",
+    "bestCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "vpnRequired": true,
+    "vpnNote": "Instagram, WhatsApp, Telegram, YouTube und viele Websites sind gesperrt; zeitweise kommt es zu großflächigen Internetabschaltungen. VPN-Apps vor der Einreise installieren."
+   },
+   "transport": {
+    "transportQuality": "Gut (U-Bahnen in Teheran, Isfahan, Maschhad, Schiras und Täbris; dichtes Netz an VIP-Bussen und Zügen)",
+    "costLevel": "Sehr günstig",
+    "singleTicketUsd": "0.05 - 0.20 $",
+    "dailyPassUsd": "Keine (VIP-Bus Teheran – Isfahan ~5 - 10 $)",
+    "popularRideApps": [
+     "Snapp",
+     "Tapsi"
+    ],
+    "taxiAdvice": "Snapp und Tapsi bieten Festpreise und erleichtern die Verständigung, benötigen aber eine iranische SIM; bezahlt werden kann bar beim Fahrer. Am Flughafen den offiziellen Taxischalter nutzen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 90 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Niedrig (Istanbul – Teheran direkt, ~3,5 Std.)",
+    "flightTip": "Es gibt Direktflüge von Istanbul nach Teheran sowie nach Täbris, Schiras und Maschhad; wegen regionaler Spannungen können Flüge jedoch kurzfristig ausfallen. Erstattbare Tickets buchen und flexibel planen."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "سلام (salām)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "sa-lam"
+     },
+     {
+      "phrase": "خیلی ممنون (kheyli mamnun)",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "hey-li mam-nun"
+     },
+     {
+      "phrase": "ببخشید (bebakhshid)",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "be-bah-shid"
+     },
+     {
+      "phrase": "قیمتش چنده؟ (gheymatesh chande?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "ghey-ma-tesh chan-de"
+     },
+     {
+      "phrase": "خداحافظ (khodāhāfez)",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "ho-da-ha-fez"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Es werden dieselben C/F-Steckdosen (Europa) wie in der Türkei verwendet; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser in Teheran und Großstädten wird aufbereitet und von Einheimischen getrunken; wegen Geschmack und Leitungen ist Flaschenwasser trotzdem zu empfehlen.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, Masern)",
+     "Hepatitis A und B",
+     "Typhus (bei Reisen aufs Land)",
+     "Reisekrankenversicherung: viele ausländische Policen schließen den Iran aus, Deckung genau prüfen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "115"
+   },
+   "tipping": {
+    "custom": "Nicht verpflichtend, für guten Service geschätzt.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 - 10 % im Restaurant; kleine tägliche Trinkgelder für Guides und Fahrer sind üblich. Auch wenn „Taarof“ zur ersten Ablehnung führt, auf dem Bezahlen bestehen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (Mehrwertsteuererstattung für Touristen wird praktisch nicht angewandt)",
+    "minSpend": "Nicht anwendbar",
+    "customsNote": "Rechnungen für handgeknüpfte Teppiche aufbewahren; die Ausfuhr von Antiquitäten und historischen Artefakten ist verboten. Manche Länder sanktionieren die Einfuhr iranischer Waren (Teppiche, Safran, Kaviar); Regeln des Heimatlandes prüfen."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "airportSimTrapWarning": "Touristen-SIMs am Flughafen Imam Khomeini werden mit Pass sofort aktiviert und kosten fast so viel wie in der Stadt; nicht auf internationale eSIMs verlassen."
+   },
+   "touristScams": [
+    {
+     "title": "Straßengeldwechsler",
+     "desc": "Personen auf belebten Straßen tricksen beim Kurs oder zahlen zu wenig aus.",
+     "tip": "Nur offizielle „Sarrafi“-Wechselstuben nutzen und das Geld dort nachzählen."
+    },
+    {
+     "title": "Falsche Polizei",
+     "desc": "Jemand in Zivil gibt sich als Polizist aus und verlangt Pass und Geldbörse.",
+     "tip": "Nichts aushändigen; anbieten, zur offiziellen Wache oder zum Hotel zu gehen."
+    },
+    {
+     "title": "Rial-Toman-Verwirrung",
+     "desc": "Händler nennen den Preis in Toman, meinen aber Rial – oder umgekehrt – und verlangen zu viel.",
+     "tip": "Preis aufschreiben oder im Taschenrechner zeigen lassen; 1 Toman = 10 Rial."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "IRR (rial iraní / tomán; imprescindible efectivo en USD/EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Marzo – mayo y septiembre – noviembre (templado) · en verano el interior es muy caluroso; el periodo de Nouruz (hacia el 21 de marzo) está lleno y es caro",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de Conflicto (No Viajar)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "La delincuencia callejera es baja y la gente es muy hospitalaria, pero las advertencias oficiales (UK FCDO, EE. UU.) desaconsejan viajar a Irán: existe riesgo de conflicto regional y ataques aéreos, cierres repentinos del espacio aéreo y detenciones arbitrarias de extranjeros. No vayas nunca a las zonas fronterizas con Afganistán, Pakistán e Irak.",
+    "commonScams": [
+     "Cambistas callejeros informales que dan cambio de menos o billetes retirados",
+     "Precios ambiguos a propósito entre rial y tomán (1 tomán = 10 riales)",
+     "Falsos “policías” de paisano que piden revisar tu pasaporte y cartera"
+    ],
+    "safeTravelTips": [
+     "Las tarjetas Visa/Mastercard extranjeras no funcionan; lleva suficiente efectivo en USD o EUR para todo el viaje.",
+     "Respeta el código de vestimenta y no fotografíes edificios oficiales, zonas militares ni puentes.",
+     "Consulta las advertencias oficiales actuales antes de viajar y regístrate en tu embajada."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "115",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 % de la población (4G; 5G limitado en ciudades)",
+    "costPerGbUsd": "0.30 - 1 $",
+    "esimAvailability": "Escasa (las eSIM extranjeras a menudo no funcionan; SIM turística de MCI o Irancell en el aeropuerto con pasaporte)",
+    "bestCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "vpnRequired": true,
+    "vpnNote": "Instagram, WhatsApp, Telegram, YouTube y muchas webs están bloqueadas, y puede haber apagones de internet a gran escala. Instala las apps de VPN antes de entrar al país."
+   },
+   "transport": {
+    "transportQuality": "Bueno (metro en Teherán, Isfahán, Mashhad, Shiraz y Tabriz; amplia red de autobuses VIP y trenes)",
+    "costLevel": "Muy barato",
+    "singleTicketUsd": "0.05 - 0.20 $",
+    "dailyPassUsd": "No hay (autobús VIP Teherán – Isfahán ~5 - 10 $)",
+    "popularRideApps": [
+     "Snapp",
+     "Tapsi"
+    ],
+    "taxiAdvice": "Snapp y Tapsi ofrecen precio fijo y facilitan el idioma, pero necesitan una SIM iraní; se puede pagar en efectivo al conductor. En el aeropuerto usa el mostrador oficial de taxis."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 90 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Bajo (Estambul – Teherán directo, ~3,5 horas)",
+    "flightTip": "Hay vuelos directos de Estambul a Teherán y también a Tabriz, Shiraz y Mashhad, pero pueden cancelarse con poca antelación por la tensión regional. Compra billetes reembolsables y mantén planes flexibles."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "سلام (salām)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "sa-lam"
+     },
+     {
+      "phrase": "خیلی ممنون (kheyli mamnun)",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "hey-li mam-nun"
+     },
+     {
+      "phrase": "ببخشید (bebakhshid)",
+      "meaning": "Disculpe / Perdón",
+      "translation": "Disculpe / Perdón",
+      "pronunciation": "be-bah-shid"
+     },
+     {
+      "phrase": "قیمتش چنده؟ (gheymatesh chande?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "ghey-ma-tesh chan-de"
+     },
+     {
+      "phrase": "خداحافظ (khodāhāfez)",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "ho-da-ha-fez"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Se usan los mismos enchufes C/F (europeos) que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo en Teherán y grandes ciudades está tratada y la población la bebe, pero se recomienda agua embotellada por el sabor y las tuberías.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, sarampión)",
+     "Hepatitis A y B",
+     "Fiebre tifoidea (viajes rurales)",
+     "Seguro médico de viaje: muchas pólizas extranjeras excluyen Irán, revisa bien la cobertura"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "115"
+   },
+   "tipping": {
+    "custom": "No es obligatoria; se agradece si el servicio es bueno.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 - 10 % en restaurantes; pequeñas propinas diarias a guías y conductores. Aunque por “taarof” rechacen el primer pago, insiste en pagar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (la devolución del IVA a turistas no se aplica en la práctica)",
+    "minSpend": "No aplica",
+    "customsNote": "Guarda las facturas de las alfombras hechas a mano; está prohibido exportar antigüedades y piezas históricas. Algunos países sancionan la importación de productos iraníes (alfombras, azafrán, caviar); revisa las normas de tu país."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "airportSimTrapWarning": "Las SIM turísticas del aeropuerto Imam Jomeini se activan al momento con el pasaporte y cuestan casi lo mismo que en la ciudad; no confíes en las eSIM internacionales."
+   },
+   "touristScams": [
+    {
+     "title": "Cambistas callejeros",
+     "desc": "En calles concurridas te abordan con trucos de cambio o te dan menos dinero.",
+     "tip": "Usa solo casas de cambio oficiales (“sarrafi”) y cuenta el dinero allí."
+    },
+    {
+     "title": "Falsa policía",
+     "desc": "Alguien de paisano dice ser policía y pide tu pasaporte y cartera.",
+     "tip": "No entregues nada; propón ir a una comisaría oficial o a tu hotel."
+    },
+    {
+     "title": "Confusión rial–tomán",
+     "desc": "Los comerciantes dan el precio en tomanes queriendo decir riales, o al revés, para cobrar de más.",
+     "tip": "Pide el precio por escrito o en la calculadora; 1 tomán = 10 riales."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "IRR (иранский риал / туман — основа расчётов наличные USD/EUR)",
+   "plugType": "Тип C, F (230V, 50Hz)",
+   "bestMonths": "Март – май и сентябрь – ноябрь (мягкая погода) · летом внутри страны очень жарко; период Навруза (около 21 марта) многолюдный и дорогой",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Зона конфликта (Не въезжать)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Уличная преступность низкая, а люди исключительно гостеприимны, однако официальные рекомендации (UK FCDO, США) не советуют ездить в Иран: существует риск регионального конфликта и авиаударов, внезапного закрытия воздушного пространства и произвольных задержаний иностранцев. Ни в коем случае не посещайте приграничные районы с Афганистаном, Пакистаном и Ираком.",
+    "commonScams": [
+     "Неофициальные уличные менялы, недодающие сдачу или подсовывающие выведенные из оборота купюры",
+     "Намеренная путаница в ценах между риалом и туманом (1 туман = 10 риалов)",
+     "Фальшивые «полицейские» в штатском, требующие показать паспорт и кошелёк"
+    ],
+    "safeTravelTips": [
+     "Иностранные карты Visa/Mastercard не работают; возьмите достаточно наличных USD или EUR на всю поездку.",
+     "Соблюдайте дресс-код и не фотографируйте правительственные здания, военные объекты и мосты.",
+     "Перед поездкой проверьте актуальные официальные предупреждения и зарегистрируйтесь в посольстве."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "115",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 % населения (4G; ограниченный 5G в городах)",
+    "costPerGbUsd": "0.30 - 1 $",
+    "esimAvailability": "Слабая (иностранные eSIM часто не работают; туристическая SIM MCI или Irancell в аэропорту по паспорту)",
+    "bestCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "vpnRequired": true,
+    "vpnNote": "Instagram, WhatsApp, Telegram, YouTube и многие сайты заблокированы; возможны периодические масштабные отключения интернета. Установите VPN-приложения до въезда в страну."
+   },
+   "transport": {
+    "transportQuality": "Хороший (метро в Тегеране, Исфахане, Мешхеде, Ширазе и Тебризе; широкая сеть VIP-автобусов и поездов)",
+    "costLevel": "Очень дёшево",
+    "singleTicketUsd": "0.05 - 0.20 $",
+    "dailyPassUsd": "Нет (VIP-автобус Тегеран – Исфахан ~5 - 10 $)",
+    "popularRideApps": [
+     "Snapp",
+     "Tapsi"
+    ],
+    "taxiAdvice": "Snapp и Tapsi дают фиксированную цену и снимают языковой барьер, но требуют иранскую SIM; платить водителю можно наличными. В аэропорту пользуйтесь официальной стойкой такси."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 90 $",
+    "budgetMealUsd": "2 - 6 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Низкий (Стамбул – Тегеран напрямую, ~3,5 ч)",
+    "flightTip": "Есть прямые рейсы из Стамбула в Тегеран, а также в Тебриз, Шираз и Мешхед, но из-за региональной напряжённости рейсы могут отменить в последний момент. Берите возвратные билеты и планируйте гибко."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "سلام (salām)",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "sa-lam"
+     },
+     {
+      "phrase": "خیلی ممنون (kheyli mamnun)",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "hey-li mam-nun"
+     },
+     {
+      "phrase": "ببخشید (bebakhshid)",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "be-bah-shid"
+     },
+     {
+      "phrase": "قیمتش چنده؟ (gheymatesh chande?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "ghey-ma-tesh chan-de"
+     },
+     {
+      "phrase": "خداحافظ (khodāhāfez)",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "ho-da-ha-fez"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Используются те же розетки C/F (европейские), что и в Турции; адаптер не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода в Тегеране и крупных городах очищается, и местные её пьют, но из-за вкуса и состояния труб лучше пить бутилированную.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь)",
+     "Гепатит A и B",
+     "Брюшной тиф (для поездок по сельской местности)",
+     "Медицинская страховка: многие иностранные полисы не покрывают Иран — внимательно проверьте условия"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "115"
+   },
+   "tipping": {
+    "custom": "Не обязательны, но ценятся за хороший сервис.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 - 10 % в ресторанах; небольшие ежедневные чаевые гидам и водителям — обычное дело. Даже если из «таарофа» от оплаты сначала отказываются, настаивайте."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (возврат НДС туристам на практике не применяется)",
+    "minSpend": "Не применяется",
+    "customsNote": "Сохраняйте чеки на ковры ручной работы; вывоз антиквариата и исторических артефактов запрещён. Некоторые страны ограничивают ввоз иранских товаров (ковры, шафран, икра); проверьте правила своей страны."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$0.30 - $1.00",
+    "topCarriers": [
+     "MCI (Hamrah-e Aval)",
+     "MTN Irancell",
+     "RighTel"
+    ],
+    "airportSimTrapWarning": "Туристические SIM в аэропорту Имама Хомейни активируются сразу по паспорту и стоят почти как в городе; не полагайтесь на международные eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Уличные менялы",
+     "desc": "Подходящие на оживлённых улицах люди жульничают с курсом или недодают деньги.",
+     "tip": "Меняйте только в официальных обменниках («sarrafi») и пересчитывайте деньги на месте."
+    },
+    {
+     "title": "Фальшивая полиция",
+     "desc": "Человек в штатском называет себя полицейским и требует паспорт и кошелёк.",
+     "tip": "Ничего не отдавайте; предложите пройти в официальный участок или в отель."
+    },
+    {
+     "title": "Путаница риал–туман",
+     "desc": "Продавцы называют цену в туманах, имея в виду риалы, или наоборот, чтобы взять больше.",
+     "tip": "Просите написать цену или показать на калькуляторе; 1 туман = 10 риалов."
+    }
+   ]
+  }
+ }
+}
